@@ -1,0 +1,890 @@
+{
+ "mission": "ALPHA1-CLAUDE-G83-MED",
+ "code": "G83",
+ "type_audit": "medical",
+ "base_sha": "103745baaa38c76f18288758cc7f689e5091ccdb",
+ "source_snapshot_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "base_note": "Base de travail donnée par le coordinateur (103745ba) ; le manifeste fige les sources à 523832d9 ; empreintes SHA-256 des sept fichiers identiques au manifeste.",
+ "generation": 1,
+ "branche": "claude/alpha1/g83-med-g1",
+ "worktree": ".",
+ "conversation": "alpha1-claude-g83-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-16T09:18:04Z",
+ "date_fin": "2026-10-16T09:50:13Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G83/G83_a.html",
+   "chapters/G83/G83_b.html",
+   "chapters/G83/G83_c.html",
+   "chapters/G83/G83_d.html",
+   "chapters/G83/G83_pop1.html",
+   "chapters/G83/G83_pop2.html",
+   "glossary/g83.py"
+  ],
+  "empreintes_conformes": true,
+  "empreintes": {
+   "chapters/G83/G83_a.html": {
+    "sha256": "88ec382964404b421b95a967ed9c6e0d4cdd1574647fe3b5c685cb9a1147ed69",
+    "manifeste": "88ec382964404b421b95a967ed9c6e0d4cdd1574647fe3b5c685cb9a1147ed69",
+    "conforme": true
+   },
+   "chapters/G83/G83_b.html": {
+    "sha256": "4464e998ebd105ed050fb8d38cb236c0c1e9ac9bd223a5b3044868b46e68f83a",
+    "manifeste": "4464e998ebd105ed050fb8d38cb236c0c1e9ac9bd223a5b3044868b46e68f83a",
+    "conforme": true
+   },
+   "chapters/G83/G83_c.html": {
+    "sha256": "30dc4f6c38596723f271293a3c7172bf4bd108883b7a64e76ff81ceb4e57da0f",
+    "manifeste": "30dc4f6c38596723f271293a3c7172bf4bd108883b7a64e76ff81ceb4e57da0f",
+    "conforme": true
+   },
+   "chapters/G83/G83_d.html": {
+    "sha256": "3f352e64e65deeba4066653d6c99915a40e49c8e61fb9e55fbf17d2ce163310a",
+    "manifeste": "3f352e64e65deeba4066653d6c99915a40e49c8e61fb9e55fbf17d2ce163310a",
+    "conforme": true
+   },
+   "chapters/G83/G83_pop1.html": {
+    "sha256": "dad0036767a4517026b70ae67d4da0dcf02aa4cf1c6dc7cc1e574aa62c37c675",
+    "manifeste": "dad0036767a4517026b70ae67d4da0dcf02aa4cf1c6dc7cc1e574aa62c37c675",
+    "conforme": true
+   },
+   "chapters/G83/G83_pop2.html": {
+    "sha256": "baf826595029449df37c9073cf7e5aa6b3bcbb57fd21ed3c9bbb5504c20b6f6c",
+    "manifeste": "baf826595029449df37c9073cf7e5aa6b3bcbb57fd21ed3c9bbb5504c20b6f6c",
+    "conforme": true
+   },
+   "glossary/g83.py": {
+    "sha256": "f344ab883fc606267a42d75c07e023f35d946d863a2e52a9451adaa7ee81805d",
+    "manifeste": "f344ab883fc606267a42d75c07e023f35d946d863a2e52a9451adaa7ee81805d",
+    "conforme": true
+   }
+  }
+ },
+ "premiere_source_lue": {
+  "source_id": "S10",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/32475252/",
+  "section": "résumé (Results) : bilateral sciatica 32.4 % ; PVR ≥ 200 ml sensitivity 94.1 %, specificity 66.8 %, PPV 29.9 %, NPV 98.7 %"
+ },
+ "synthese": {
+  "BLOQUANT": 0,
+  "MAJEUR": 7,
+  "MINEUR": 11,
+  "ENRICHISSEMENT": 5
+ },
+ "calculs": {
+  "total_releves": 783,
+  "calculables": 417,
+  "recalcules": 417,
+  "correct": 405,
+  "arrondi": 5,
+  "faux": 0,
+  "non_verifiables": 7,
+  "script": "calculs/verifier.py",
+  "inventaire": "calculs/inventaire.py → calculs/inventaire.json",
+  "resultats": "calculs/resultats.json",
+  "enrichissements_recalcules": [
+   "E01",
+   "E02",
+   "E03",
+   "E04",
+   "E05",
+   "E06",
+   "E07",
+   "E08",
+   "E09"
+  ],
+  "observations": [
+   "Aucun calcul faux dans la leçon ; 7 occurrences NON_VERIFIABLE (série de 1986 : sommes 137 et 138 ≠ 139) → constat C13.",
+   "Tableau 2 × 2 de S10 reconstruit en entiers (VP 32, FN 2, FP 75, VN 151) : prévalence 13,08 %, VPN recalculée 98,69 % ; sciatique bilatérale VP 11, FP 53 (spécificité déduite 76,5 %).",
+   "Incohérences des sources confirmées par calcul : spécificité 65 % hors de l’IC publié 0,70–0,90 (S11) ; κ 0,34 hors de l’IC publié 0,27–0,31 (S12).",
+   "Baclofène : série 25-50-75 µg = 3 doses, 2 intervalles, ≥ 48 h, sous le plafond FI de 100 µg (que la leçon omet : C03).",
+   "Seuil réglementaire : thrombolyse « jusqu’à 24 h » exacte pour l’ESO mais hors autorisation suisse (4,5 h) → C02 ; doses d’Actilyse® recalculées conformes à la table FI (E03, E09)."
+  ]
+ },
+ "controles": {
+  "test_v7_static": "G83 mots 13922 fenêtres 55 quiz 5 pareto 18 — OK",
+  "audit_sciences": "failed : g83-s-anat aucune figure ; g83-s-anat, g83-s-tronc, g83-s-stat « À retenir. » absent ; g83-s-tronc trop brève (C05)",
+  "image_clo_finder_inventory": "5 figures SVG, 0 image",
+  "propositions_ancres_uniques": "30/30",
+  "propositions_appliquees_test_v7_static": "G83 mots 19185 fenêtres 63 quiz 8 pareto 18 / OK",
+  "propositions_marqueurs": "Les marqueurs [Sx] des propositions sont des références d’audit (sources.json) ; ils sont retirés à l’intégration, les liens restant dans les paragraphes « Références » (test_v7 les compte sinon comme abréviations)."
+ },
+ "constats": [
+  {
+   "id": "C01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G83/G83_c.html",
+   "ancre": "data-s=\"g83-s-anat\"",
+   "constat": "Le sous-onglet « Sémiologie fondamentale et analytique » est absent : le panneau pS compte trois boutons data-s (g83-s-anat, g83-s-tronc, g83-s-stat) et aucun g83-s-semio. Dans l’onglet 1, l’îlot g83-5 décrit l’anamnèse et l’examen en deux cartes, sans technique, sans mécanisme par signe et sans raisonnement analytique ; aucune sémiologie n’est donnée pour la paralysie faciale centrale (lacune déclarée), le locked-in syndrome (sauf la définition) ni la parésie de Todd.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Anatomie ; tableau 1",
+     "citation_courte": "S2–S5 : bladder, bowel, perineal sensation, sexual function"
+    },
+    {
+     "source_id": "S10",
+     "section": "résumé",
+     "citation_courte": "bilateral sciatica sensitivity 32.4%, PPV 17.2%"
+    },
+    {
+     "source_id": "S31",
+     "section": "résumé",
+     "citation_courte": "sensitivity of anal tone 0.23 to 0.53"
+    },
+    {
+     "source_id": "S26",
+     "section": "Clinical features",
+     "citation_courte": "(paraphrase) front normal et face moyenne et inférieure faible : lésion probablement centrale"
+    },
+    {
+     "source_id": "S17",
+     "section": "Clinical presentation",
+     "citation_courte": "(paraphrase) mouvements verticaux des yeux et clignement préservés"
+    }
+   ],
+   "proposition": "propositions/G83_c_semio.html (bouton g83-tab-semio et panneau g83-s-semio, neuf sections data-semiology, figure non anatomique, trois cas corrigés) ; propositions/G83_a_semio_clinique.html (bloc data-semiology-clinical=\"G83\" dans g83-5) ; propositions/G83_pop1_semio.html (huit fenêtres g83-sm-*). Application sur copie : test_v7.py --static G83 → OK.",
+   "justification": "Mécanisme : la valeur d’un signe sacré (rétention) diffère radicalement de celle d’un signe radiculaire (sciatique) ou d’un signe « classique » mais peu sensible (tonus anal). Conséquence : sans sémiologie analytique, l’étudiant apprend à se rassurer sur des signes faibles. Décision : ajouter la discipline exigée par le contrat (absence = MAJEUR).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G83/G83_b.html",
+   "ancre": "thrombolyse jusqu’à 24 heures (consensus)",
+   "constat": "Les paramètres clés (g83-13), l’îlot g83-10, la fenêtre g83-eso, le Pareto et l’onglet pP (g83-p-3) enseignent une thrombolyse « jusqu’à 24 heures » de l’occlusion basilaire sans dire qu’en Suisse l’altéplase (Actilyse®, FI 06/2025) et la ténectéplase (Metalyse® 5000 U, FI 05/2025) ne sont autorisées que dans les 4,5 heures suivant le dernier état asymptomatique connu. La leçon déclare l’information professionnelle « non lue » alors qu’elle est accessible.",
+   "preuve": [
+    {
+     "source_id": "S27",
+     "section": "Indications ; Posologie AVC",
+     "citation_courte": "dans les 4,5 heures suivant le dernier état asymptomatique connu"
+    },
+    {
+     "source_id": "S28",
+     "section": "Indications ; Posologie",
+     "citation_courte": "fenêtre de 4,5 heures … max 25 mg"
+    },
+    {
+     "source_id": "S18",
+     "section": "résumé",
+     "citation_courte": "Expert Consensus suggests using IVT up to 24 h"
+    }
+   ],
+   "proposition": "propositions/G83_d_1.html (C02-1, C02-2 : texte, tableau des deux FI avec doses recalculées) ; propositions/G83_b_1.html (C02-4, C02-5 : paramètres clés et g83-10).",
+   "justification": "Mécanisme : un paramètre clé est mémorisé comme règle. Conséquence : « thrombolyse jusqu’à 24 heures » sans mention de l’autorisation suisse pousse à un usage hors autorisation non identifié comme tel. Décision : conserver la suggestion ESO (consensus) en la confrontant explicitement aux FI suisses datées.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C03",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G83/G83_d.html",
+   "ancre": "jusqu’à un effet de 4 à 8 heures ; enfant : 25 µg",
+   "constat": "Le schéma de test du baclofène intrathécal omet trois éléments décisionnels de la FI suisse (04/2024) : pas de dose test au-delà de 100 µg (non-répondeur exclu de la pompe), coma possible après une dose unique de 25 µg, injection sur au moins 1 minute ; la titration après implantation (double de la dose test efficace sur 24 heures, pas d’augmentation les 24 premières heures) est renvoyée au « protocole du centre ». Les signes du sevrage et les interactions sont déclarés « non extraits » alors que la FI les détaille.",
+   "preuve": [
+    {
+     "source_id": "S22",
+     "section": "Posologie, phase de test",
+     "citation_courte": "Les sujets qui ne répondent pas à une dose test de 100 µg ne doivent pas en recevoir davantage"
+    },
+    {
+     "source_id": "S22",
+     "section": "Posologie",
+     "citation_courte": "coma … après une dose test unique de 25 µg"
+    },
+    {
+     "source_id": "S22",
+     "section": "Mises en garde, arrêt de la médication",
+     "citation_courte": "augmentation de la spasticité, un prurit, des paresthésies ainsi qu’une hypotonie"
+    },
+    {
+     "source_id": "S22",
+     "section": "Interactions",
+     "citation_courte": "lévodopa/inhibiteurs de la DDC ; anesthésiques ; morphine"
+    }
+   ],
+   "proposition": "propositions/G83_d_1.html (C03-1 à C03-5) ; propositions/G83_b_1.html (C03-6, paramètres clés).",
+   "justification": "Mécanisme : la sensibilité au baclofène intrathécal est très variable et la marge entre dose efficace et dépression du système nerveux central est étroite. Conséquence : un test sans plafond ni alerte sur le coma à 25 µg est un schéma incomplet. Décision : intégrer les plafonds, la titration et le sevrage de la FI.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G83/G83_a.html",
+   "ancre": "Le toucher rectal et la mesure du résidu post-mictionnel complètent l’évaluation.",
+   "constat": "La leçon présente le toucher rectal comme un complément de l’évaluation, sans dire que le tonus anal a une sensibilité de 0,23 à 0,53, qu’il ne distingue pas les patients avec et sans compression (35 % contre 31 %) et que le parcours britannique actuel ne le requiert plus pour ce seul but.",
+   "preuve": [
+    {
+     "source_id": "S31",
+     "section": "résumé",
+     "citation_courte": "sensitivity of anal tone was low … not recommended in any clinical setting"
+    },
+    {
+     "source_id": "S33",
+     "section": "résumé",
+     "citation_courte": "35% of MRI + ve patients and 31% of MRI −ve patients had reduced anal tone"
+    },
+    {
+     "source_id": "S32",
+     "section": "résumé",
+     "citation_courte": "Routine digital rectal examination solely to assess resting anal tone is not required"
+    }
+   ],
+   "proposition": "propositions/G83_a_semio_clinique.html, bloc (A) ; fenêtre g83-sm-tonus.",
+   "justification": "Mécanisme : un test peu sensible produit des faux négatifs. Conséquence : un tonus « normal » rassure à tort et retarde l’IRM. Décision : dire la valeur réelle du toucher rectal et rappeler que l’IRM se décide sur les symptômes sacrés.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C05",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G83/G83_c.html",
+   "ancre": "data-s=\"g83-s-tronc\"",
+   "constat": "Les sciences fondamentales sont insuffisantes : trois disciplines seulement (le contrat sémiologique attend la sémiologie plus cinq disciplines, soit au moins six boutons data-s), 865 mots au total ; tests/audit_sciences.py échoue avec cinq erreurs (g83-s-anat sans figure ; g83-s-tronc trop brève, 249 mots ; « À retenir. » absent des trois disciplines). Aucune discipline n’explique la physiologie de la miction et de la continence, alors que la rétention indolore et le regorgement sont le cœur du cours.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "CESR",
+     "citation_courte": "bladder no longer under executive control, painless retention and overflow"
+    }
+   ],
+   "proposition": "propositions/G83_c_sciences.html (trois clés « À retenir. » et extension de g83-s-tronc à partir de S17). La discipline de physiologie neuro-urologique reste à rédiger après lecture d’une source neuro-urologique (LACUNE).",
+   "justification": "Mécanisme : sans physiologie du réflexe mictionnel, la rétention indolore n’est qu’une liste. Conséquence : le lien science → clinique exigé par STYLE_REDACTION § 6 manque pour le signe décisif. Décision : compléter les disciplines et corriger les libellés exigés par audit_sciences.py.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C06",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G83/G83_a.html",
+   "ancre": "aria-label=\"Figure 1 — Moelle, cône et queue de cheval\"",
+   "constat": "La figure 1 dessine la moelle, le cône terminal et les racines : structure anatomique en SVG sans source iconographique, introduite par le commit 71fdb467 (auteur Claude, injection Betta des cycles 31 à 40). Origine IA démontrée : ANATOMIQUE_IA.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Anatomie",
+     "citation_courte": "cauda equina comprises all the roots … terminates at around L2"
+    }
+   ],
+   "proposition": "propositions/G83_figures.html (C06 : remplacement par un paragraphe sans perte d’information, en attendant un original sourcé). Commons : HTTP 429, aucun candidat.",
+   "justification": "Règle de Vial du 15.10.2026 : une anatomie dessinée par IA n’est pas recevable ; elle doit être remplacée par un original existant, sourcé et licencié.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C07",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G83/G83_b.html",
+   "ancre": "aria-label=\"Figure 3 — Tronc cérébral et locked-in syndrome\"",
+   "constat": "La figure 3 dessine trois étages du tronc cérébral et un trajet : structure anatomique en SVG sans source, même commit 71fdb467. Origine IA démontrée : ANATOMIQUE_IA.",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "Anatomy",
+     "citation_courte": "vertical eye movements are controlled by mesencephalic structures"
+    }
+   ],
+   "proposition": "propositions/G83_figures.html (C07).",
+   "justification": "Même règle que C06.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C08",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G83/G83_b.html",
+   "ancre": "Elle recommande la thrombolyse intraveineuse jusqu’à 24 heures sauf contre-indication (consensus)",
+   "constat": "La leçon écrit que l’ESO/ESMINT « recommande » la thrombolyse jusqu’à 24 heures ; le résumé dit « Expert Consensus suggests » (suggestion faible). L’énoncé de consensus contre la reperfusion en cas de lésions ischémiques étendues, bilatérales ou du tronc, est omis.",
+   "preuve": [
+    {
+     "source_id": "S18",
+     "section": "résumé",
+     "citation_courte": "Expert Consensus suggests using IVT up to 24 h … suggesting against reperfusion therapy in those with extensive bilateral and/or brainstem ischaemic changes"
+    }
+   ],
+   "proposition": "propositions/G83_b_1.html (C02-5 et C08) ; propositions/G83_d_1.html (C02-1 et C08).",
+   "justification": "La force d’une recommandation conditionne la décision partagée ; une suggestion par consensus ne vaut pas recommandation forte.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C09",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G83/G83_b.html",
+   "ancre": "IRM immédiate (standard BASS, dans l’heure).",
+   "constat": "Le délai d’IRM enseigné (« dans l’heure », BASS, résumé de 2023) n’est plus le seul repère britannique : le parcours GIRFT mis à jour en mars 2026 fixe l’IRM d’urgence au plus tard 4 heures après la demande. La référence suisse (RMS 2010) parle d’« urgence chirurgicale immédiate ».",
+   "preuve": [
+    {
+     "source_id": "S25",
+     "section": "résumé",
+     "citation_courte": "within 1 hour of presentation"
+    },
+    {
+     "source_id": "S32",
+     "section": "résumé",
+     "citation_courte": "within four hours of the radiology request"
+    },
+    {
+     "source_id": "S3",
+     "section": "Conclusions",
+     "citation_courte": "urgence chirurgicale immédiate"
+    }
+   ],
+   "proposition": "propositions/G83_b_1.html (C09-1, C09-2).",
+   "justification": "La source primaire applicable la plus récente l’emporte (consignes d’interaction) ; présenter les deux repères évite une contradiction avec la pratique actuelle.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C10",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G83/G83_b.html",
+   "ancre": "Décompression urgente, au plus tard dans les 48 heures",
+   "constat": "L’encadré « À retenir » de g83-7 et le Pareto (« 24 à 48 heures au plus ») transforment le seuil statistique de 48 heures en délai permis, alors que le piège du même îlot l’interdit et que la source suisse parle d’urgence immédiate.",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "Conclusions",
+     "citation_courte": "urgence chirurgicale immédiate"
+    },
+    {
+     "source_id": "S8",
+     "section": "résumé",
+     "citation_courte": "greatest urgency for patients who retain voluntary voiding"
+    }
+   ],
+   "proposition": "propositions/G83_b_1.html (C10, C10-2).",
+   "justification": "Un épilogue est la phrase retenue ; il doit dire la même chose que le piège.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C11",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G83/G83_a.html",
+   "ancre": "Une revue de 212 articles a recensé 17 définitions.",
+   "constat": "Attributions fusionnées : les 17 définitions sont celles de Fraser ; les 212 articles sont la revue de Lavy et coll. qui les confirme. De même, les séquelles 43/31/53/38 % et la dysfonction sexuelle de 40 % viennent de Kumar 2022, reprises par Kögl, et non d’une « synthèse de Kögl ». Valeurs numériques exactes (calculs F03, F24).",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Introduction",
+     "citation_courte": "Fraser … identified no less than 17 definitions … produced 212 papers"
+    },
+    {
+     "source_id": "S4",
+     "section": "eTable",
+     "citation_courte": "Kumar 2022 … 43% residual urinary incontinence"
+    }
+   ],
+   "proposition": "propositions/G83_mineurs.html (C11-1 à C11-4).",
+   "justification": "Précision de la source citée ; sans conséquence décisionnelle.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C12",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G83/G83_pop1.html",
+   "ancre": "Des valeurs de 0,34 et de 0,17 sont donc proches de l’accord du hasard.",
+   "constat": "Interprétations forcées ou non sourcées : 0,34 est un accord « minimal » selon les auteurs, non un accord proche du hasard ; 0,17 est l’accord des consultants toutes catégories confondues, non sur la question « rétention contre autres » ; l’aire sous la courbe de 0,777 est jugée « excellente » par les auteurs, la leçon la dit « moyenne » sans source. L’intervalle de confiance publié du kappa (0,27–0,31) n’inclut pas 0,34 (erreur de la source, F04).",
+   "preuve": [
+    {
+     "source_id": "S12",
+     "section": "résumé",
+     "citation_courte": "kappa 0.34 … minimal agreement … Consultant spinal surgeons had the lowest inter-rater agreement (kappa 0.17)"
+    },
+    {
+     "source_id": "S20",
+     "section": "résumé",
+     "citation_courte": "excellent diagnostic performance … AUROC 0.777"
+    }
+   ],
+   "proposition": "propositions/G83_mineurs.html (C12-1 à C12-4).",
+   "justification": "Une interprétation statistique non sourcée est une affirmation de mémoire.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C13",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G83/G83_b.html",
+   "ancre": "85 hommes pour 52 femmes ; 89 formes classiques, 46 incomplètes, 3 complètes",
+   "constat": "Énoncé incomplet (calcul F25, NON_VERIFIABLE) : 85 + 52 = 137 et 89 + 46 + 3 = 138 ne redonnent pas 139 cas ; la source précise une forme non classée et ne donne pas le sexe de deux cas.",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "Epidemiology",
+     "citation_courte": "(paraphrase) 89 classiques, 46 incomplets, 3 complets et 1 non classé ; 85 hommes, 52 femmes"
+    }
+   ],
+   "proposition": "propositions/G83_b_1.html (C13).",
+   "justification": "Un lecteur qui additionne trouve une incohérence ; la phrase doit la lever.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C14",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G83/G83_b.html",
+   "ancre": "Plum et Posner l’ont décrit en 1972.",
+   "constat": "Le terme a été introduit par Plum et Posner en 1966 ; 1972 correspond à l’édition citée par la revue de la leçon.",
+   "preuve": [
+    {
+     "source_id": "S34",
+     "section": "Introduction",
+     "citation_courte": "locked-in syndrome (LIS; Plum and Posner, 1966)"
+    },
+    {
+     "source_id": "S17",
+     "section": "Introduction",
+     "citation_courte": "first described by Plum and Posner 1972"
+    }
+   ],
+   "proposition": "propositions/G83_b_1.html (C14).",
+   "justification": "Datation historique ; sans conséquence clinique.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C15",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G83/G83_c.html",
+   "ancre": "de la série suisse (8 cas sur 24 patients opérés après 48 heures)",
+   "constat": "La série de 24 patients opérés après 48 heures n’est pas suisse : la Revue Médicale Suisse la cite d’après une revue de 44 patients (sa référence 26). Valeurs exactes (F23 : 4 + 20 = 24 ; 7 + 8 + 5 = 20).",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "Syndrome de la queue-de-cheval",
+     "citation_courte": "Dans cette même étude, sur les 24 patients opérés tardivement"
+    }
+   ],
+   "proposition": "propositions/G83_mineurs.html (C15).",
+   "justification": "Une « spécificité suisse » inexacte fausse la rubrique 16.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C16",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G83/G83_a.html",
+   "ancre": "Rapporter la complication au geste (cas publiés)",
+   "constat": "Le cas de Morges a suivi des blocs faits sous fluoroscopie ; la conséquence pratique que tirent les auteurs est de ne pas employer de stéroïdes particulaires dans les injections rachidiennes axiales, non de « rapporter la complication au geste ».",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "résumé",
+     "citation_courte": "particulate steroid preparations should not be used in axial spinal injection"
+    }
+   ],
+   "proposition": "propositions/G83_mineurs.html (C16).",
+   "justification": "La prévention citée doit être celle de la source.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C17",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G83/G83_c.html",
+   "ancre": "mesuré par échographie vésicale (scanner vésical)",
+   "constat": "« Scanner vésical » traduit « bladder scan » (échographe portatif) mais se confond en français avec la tomodensitométrie, que la même leçon déconseille ; l’ambiguïté se répète dans g83-6 et la fenêtre g83-pvr.",
+   "preuve": [
+    {
+     "source_id": "S10",
+     "section": "résumé",
+     "citation_courte": "transabdominal ultrasound bladder scans"
+    }
+   ],
+   "proposition": "propositions/G83_mineurs.html (C17).",
+   "justification": "Terminologie ambiguë sur un examen décisionnel.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C18",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G83/G83_b.html",
+   "ancre": "<section class=\"ilot\" id=\"g83-6\">",
+   "constat": "Répartition des fichiers hors contrat : G83_b.html contient la suite de l’onglet pA (îlots g83-6 à g83-13) et G83_c.html les panneaux pE et pS. test_v7.py --static G83 passe.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "—",
+     "citation_courte": "sans objet (contrat HTML interne)"
+    }
+   ],
+   "proposition": "propositions/G83_mineurs.html (C18) : laisser en l’état si le moteur l’accepte, sinon redistribuer en mission d’intégration.",
+   "justification": "Lisibilité de la maintenance ; aucun effet médical.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C19",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G83/G83_b.html",
+   "ancre": "Ce qu’elles n’établissent pas",
+   "constat": "La distinction clinique entre paralysie faciale centrale (G83.6) et périphérique (G51.0), point classique d’examen fédéral, est déclarée non lue ; elle est disponible dans une source européenne et deux articles de la Revue Médicale Suisse.",
+   "preuve": [
+    {
+     "source_id": "S26",
+     "section": "Clinical features",
+     "citation_courte": "involvement of the muscles of the forehead as well"
+    },
+    {
+     "source_id": "S36",
+     "section": "chapeau",
+     "citation_courte": "signe des cils de Souques"
+    },
+    {
+     "source_id": "S35",
+     "section": "résumé",
+     "citation_courte": "drapeaux rouges … borréliose"
+    }
+   ],
+   "proposition": "propositions/G83_enrichissements.html (C19) ; fenêtre g83-sm-front.",
+   "justification": "Rubrique 8 et 20 de la matrice.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C20",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G83/G83_a.html",
+   "ancre": "Le détail des trois types n’a pas pu être lu dans le texte disponible.",
+   "constat": "Les trois types de Tandon et Sankaran sont décrits dans la source de la leçon (S5) ; le parcours britannique de 2025 a déclassé le syndrome, ce qui relativise l’usage clinique des catégories.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Classification",
+     "citation_courte": "Type 1 … Type 2 … Type 3"
+    },
+    {
+     "source_id": "S7",
+     "section": "résumé",
+     "citation_courte": "declassification of CES"
+    }
+   ],
+   "proposition": "propositions/G83_enrichissements.html (C20).",
+   "justification": "Rubrique 3 de la matrice.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C21",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G83/G83_b.html",
+   "ancre": "La fréquence et la durée propres à la parésie de Todd n’ont pas été extraites",
+   "constat": "La fréquence (13,4 %), la latéralisation et la durée de la parésie postcritique, ainsi que la conduite européenne devant un AVC avec crise au début (PICO 14.2), sont disponibles.",
+   "preuve": [
+    {
+     "source_id": "S30",
+     "section": "résumé",
+     "citation_courte": "PP was found in 44 patients (13.4%) … median duration of 173.5 seconds"
+    },
+    {
+     "source_id": "S29",
+     "section": "PICO 14.2",
+     "citation_courte": "we suggest intravenous thrombolysis with alteplase"
+    }
+   ],
+   "proposition": "propositions/G83_enrichissements.html (C21) ; fenêtre g83-sm-todd.",
+   "justification": "Rubriques 7, 11 et 12 de la matrice.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C22",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G83/G83_b.html",
+   "ancre": "aucune recommandation suisse ou européenne dédiée au syndrome de la queue de cheval",
+   "constat": "Spécificités suisses absentes : aptitude à la conduite, LAA/Suva, assurance-invalidité, directives anticipées et directives ASSM, remboursement des aides à la communication (LiMA). Aucune source n’a été lue dans cet audit : LACUNE.",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "Quality of life",
+     "citation_courte": "The wish for euthanasia was only expressed by 7%"
+    }
+   ],
+   "proposition": "propositions/G83_enrichissements.html (C22, sujets à rechercher ; aucune affirmation proposée).",
+   "justification": "Rubrique 16 de la matrice.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C23",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G83/G83_d.html",
+   "ancre": "Après traumatisme crânien",
+   "constat": "Situations particulières absentes : grossesse, enfant, sujet âgé, insuffisance rénale. La FI du baclofène intrathécal fournit les données pédiatriques (sécurité non démontrée avant 4 ans) et rénales (prudence).",
+   "preuve": [
+    {
+     "source_id": "S22",
+     "section": "Enfants et adolescents ; Insuffisance rénale",
+     "citation_courte": "sécurité … chez les enfants de moins de 4 ans n’a jusqu’à présent pas été démontrée"
+    }
+   ],
+   "proposition": "propositions/G83_enrichissements.html (C23).",
+   "justification": "Rubrique 15 de la matrice.",
+   "ancre_occurrences": 1
+  }
+ ],
+ "matrice_20": [
+  {
+   "rang": 1,
+   "rubrique": "Question clinique et enjeu pour l’examen fédéral",
+   "statut": "couvert",
+   "ancre": "g83-0"
+  },
+  {
+   "rang": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "couvert",
+   "ancre": "g83-1, g83-codage, g83-codage-ces (conformes à S1 ; libellé G83.1 GM « Monoparese und Monoplegie », OFS « Monoplégie »)"
+  },
+  {
+   "rang": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "partiel",
+   "ancre": "g83-3 ; types de Tandon et Sankaran et déclassification GIRFT absents (C20)"
+  },
+  {
+   "rang": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "partiel",
+   "ancre": "g83-4, g83-10 ; donnée suisse de 2010 seulement ; aucune incidence européenne"
+  },
+  {
+   "rang": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "partiel",
+   "ancre": "g83-2, g83-9, g83-s-* ; physiologie de la miction absente (C05)"
+  },
+  {
+   "rang": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "partiel",
+   "ancre": "g83-4, g83-10 ; monoparésies et diplégie brachiale non documentées"
+  },
+  {
+   "rang": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "partiel",
+   "ancre": "g83-5 ; rétention chiffrée, autres symptômes non"
+  },
+  {
+   "rang": 8,
+   "rubrique": "Examen clinique (signes, Se/Sp)",
+   "statut": "partiel",
+   "ancre": "g83-5 ; toucher rectal présenté à tort (C04) ; techniques absentes (C01)"
+  },
+  {
+   "rang": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "couvert",
+   "ancre": "g83-5, alert g83-7"
+  },
+  {
+   "rang": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "couvert",
+   "ancre": "g83-e-1 à g83-e-4 ; terminologie « scanner vésical » (C17)"
+  },
+  {
+   "rang": 11,
+   "rubrique": "Diagnostic différentiel",
+   "statut": "partiel",
+   "ancre": "g83-10, g83-11 ; paralysie faciale absente (C19)"
+  },
+  {
+   "rang": 12,
+   "rubrique": "Prise en charge suisse (FI datées)",
+   "statut": "partiel",
+   "ancre": "g83-7, g83-p-* ; thrombolyse hors autorisation non signalée (C02) ; FI baclofène incomplète (C03)"
+  },
+  {
+   "rang": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "couvert",
+   "ancre": "g83-8, g83-10"
+  },
+  {
+   "rang": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "partiel",
+   "ancre": "g83-8, g83-e-4 ; bilan neuro-urologique non détaillé"
+  },
+  {
+   "rang": 15,
+   "rubrique": "Situations particulières",
+   "statut": "absent",
+   "ancre": "C23"
+  },
+  {
+   "rang": 16,
+   "rubrique": "Spécificités suisses",
+   "statut": "partiel",
+   "ancre": "g83-7 (RMS) ; série « suisse » erronée (C15) ; LAA, AI, conduite absents (C22)"
+  },
+  {
+   "rang": 17,
+   "rubrique": "Critères formels du diagnostic",
+   "statut": "couvert",
+   "ancre": "g83-13, div.alert"
+  },
+  {
+   "rang": 18,
+   "rubrique": "Paramètres clés chiffrés",
+   "statut": "couvert",
+   "ancre": "g83-13, div.key ; corrections C02, C03, C09"
+  },
+  {
+   "rang": 19,
+   "rubrique": "Sous-codes CIM-10-GM couverts",
+   "statut": "couvert",
+   "ancre": "g83-1 (G83.0 à G83.9 ; G83.0–G83.3 en définition seule)"
+  },
+  {
+   "rang": 20,
+   "rubrique": "Points d’examen fédéral",
+   "statut": "partiel",
+   "ancre": "paralysie faciale centrale contre périphérique absente (C19)"
+  },
+  {
+   "rang": 21,
+   "rubrique": "Sémiologie fondamentale et analytique",
+   "statut": "absent",
+   "ancre": "C01"
+  }
+ ],
+ "semiologie": {
+  "statut": "absente",
+  "decompte_data_s": 3,
+  "data_s": [
+   "g83-s-anat",
+   "g83-s-tronc",
+   "g83-s-stat"
+  ],
+  "sous_onglet_semio": false,
+  "gravite": "MAJEUR",
+  "constat_id": "C01",
+  "fondamentale": {
+   "statut": "partielle dans l’onglet 1, absente comme discipline",
+   "ancres": [
+    "g83-5",
+    "g83-retention",
+    "g83-drapeaux",
+    "g83-9"
+   ],
+   "manques": "technique, mécanisme par signe, valeur du tonus anal et du Lasègue, sémiologie du locked-in syndrome, du front dans la paralysie faciale et de la parésie de Todd"
+  },
+  "analytique": {
+   "statut": "absente",
+   "ancres": [],
+   "manques": "regroupement syndromique, raisonnement en cinq étapes, examen systématique, synthèse présentée, trois cas corrigés"
+  },
+  "proposition": [
+   "propositions/G83_c_semio.html",
+   "propositions/G83_a_semio_clinique.html",
+   "propositions/G83_pop1_semio.html"
+  ],
+  "grille_SEM": {
+   "SEM-01": "non (aucun data-s g83-s-semio)",
+   "SEM-02": "non",
+   "SEM-03": "non (audit_sciences.py échoue : 5 erreurs)",
+   "SEM-04": "oui (test_v7.py --static G83 : OK sur la leçon actuelle)",
+   "SEM-05": "non",
+   "SEM-06": "non",
+   "SEM-07": "non",
+   "SEM-08": "non",
+   "SEM-09": "non",
+   "SEM-10": "non",
+   "SEM-11": "non",
+   "SEM-12": "non",
+   "SEM-13": "non (pas d’alert sémiologique ; alert g83-7 présente)",
+   "SEM-14": "non",
+   "SEM-15": "non",
+   "SEM-16": "non",
+   "SEM-17": "non",
+   "SEM-18": "non",
+   "SEM-19": "non évaluable (absente)",
+   "SEM-20": "non évaluable",
+   "SEM-21": "non évaluable",
+   "SEM-22": "non (bouton absent)",
+   "SEM-23": "non (aucune capture possible)",
+   "SEM-24": "oui (statut « Revue par intelligence artificielle · Aucune validation médicale humaine »)"
+  },
+  "lacune_valeurs": "Sensibilité non chiffrée dans les sources lues pour l’hypoesthésie en selle, le front épargné, le regard vertical volontaire ; sémiologie de la diplégie brachiale et des monoparésies (G83.0–G83.3) non trouvée.",
+  "controle_application": "Copie temporaire avec propositions appliquées : test_v7.py --static G83 → « G83 mots 19185 fenêtres 63 quiz 8 pareto 18 / OK » ; structure vérifiée par script (premier data-s g83-s-semio, titre h3 exact, neuf sections, g83-s-anat hidden, marqueur data-semiology-clinical). Le validateur tools/starter_codex.py exigerait en plus six boutons data-s (C05).",
+  "cibles": {
+   "propositions/G83_c_semio.html": "chapters/G83/G83_c.html",
+   "propositions/G83_a_semio_clinique.html": "chapters/G83/G83_a.html",
+   "propositions/G83_pop1_semio.html": "chapters/G83/G83_pop1.html"
+  }
+ },
+ "figures": [
+  {
+   "ancre": "aria-label=\"Figure 1 — Moelle, cône et queue de cheval\"",
+   "fichier": "chapters/G83/G83_a.html",
+   "classe": "ANATOMIQUE_IA",
+   "constat_id": "C06",
+   "verification": "SVG en ligne sans source ; commit 71fdb467 (Claude, Betta cycles 31–40)",
+   "candidats": [],
+   "statut_candidats": "Commons : HTTP 429 (délai d’attente enregistré, aucun nouvel essai)",
+   "ancre_occurrences": 1
+  },
+  {
+   "ancre": "aria-label=\"Figure 2 — Séquence diagnostique\"",
+   "fichier": "chapters/G83/G83_b.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "constat_id": null,
+   "verification": "algorithme en quatre boîtes, contenu sourcé dans le texte de g83-6",
+   "ancre_occurrences": 1
+  },
+  {
+   "ancre": "aria-label=\"Figure 3 — Tronc cérébral et locked-in syndrome\"",
+   "fichier": "chapters/G83/G83_b.html",
+   "classe": "ANATOMIQUE_IA",
+   "constat_id": "C07",
+   "verification": "SVG en ligne sans source ; commit 71fdb467",
+   "candidats": [],
+   "statut_candidats": "non recherché (Commons en délai d’attente)",
+   "ancre_occurrences": 1
+  },
+  {
+   "ancre": "aria-label=\"Figure 4 — Regard horizontal et vertical\"",
+   "fichier": "chapters/G83/G83_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "constat_id": null,
+   "verification": "deux boîtes fonctionnelles et flèches ; contenu conforme à S17",
+   "ancre_occurrences": 1
+  },
+  {
+   "ancre": "aria-label=\"Figure 5 — Tableau diagnostique\"",
+   "fichier": "chapters/G83/G83_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "constat_id": null,
+   "verification": "tableau 2 × 2",
+   "ancre_occurrences": 1
+  }
+ ],
+ "figures_synthese": {
+  "total": 5,
+  "ANATOMIQUE_IA": 2,
+  "ORIGINE_INCONNUE": 0,
+  "SCHEMA_NON_ANATOMIQUE": 3,
+  "IMAGE_SOURCEE": 0,
+  "regle": "Règle de Vial du 15.10.2026"
+ },
+ "verifications_conformes": [
+  "Codage G83 (note d’usage, G83.4- et G95.8-, G83.6/G51.0, Todd en G83.8) conforme à S1",
+  "Valeurs de S3, S4, S5, S6, S8, S10–S14, S17, S19–S21, S23, S24 conformes (calculs/resultats.json)",
+  "Indication, contre-indications, phase de test (25/50 µg, paliers de 25 µg, 4–8 h, enfant 25 µg) et arrêt progressif du baclofène intrathécal conformes à S22",
+  "ESO/ESMINT : 1–2 %, seuil NIHSS 10, IVT + EVT plutôt qu’EVT direct conformes au résumé S18"
+ ],
+ "lacunes": [
+  "Aucune recommandation suisse ou européenne propre au syndrome de la queue de cheval : référence suisse = Rev Med Suisse 2010 (S3) ; standards britanniques lus en résumé (S7, S25, S32) ; le document GIRFT 2026 lui-même n’a pas été lu.",
+  "Lecture en résumé seulement : S6–S16, S19–S21, S23–S25, S30–S33, S35 ; S17 et S18 lus sur les 100 000 premiers caractères (encadrés formels de force de recommandation ESO/ESMINT non lus) ; S36 et S35 : texte intégral réservé aux abonnés.",
+  "Aucune source neuro-urologique lue : physiologie de la miction (discipline manquante, C05), valeur normale du résidu post-mictionnel, contenu du bilan neuro-urologique.",
+  "Sensibilité non chiffrée dans les sources lues : hypoesthésie en selle, front épargné, regard vertical volontaire ; sémiologie, causes et conduite de la diplégie brachiale et des monoparésies (G83.0–G83.3) non trouvées.",
+  "Spécificités suisses (aptitude à la conduite, LAA/Suva, AI, directives ASSM, LiMA) et situations particulières (grossesse, âgé) non recherchées : C22, C23.",
+  "Figures : aucun original candidat (Commons HTTP 429, consigne « aucun nouvel essai en boucle ») ; contrôle visuel à 390 px et captures (SEM-22, SEM-23) non réalisés.",
+  "« 1 sur 10 000 » (S3) non recalculable exactement : la spécificité de la rétention n’est pas publiée ; plausibilité bayésienne seulement (F08).",
+  "Contre-indications complètes d’Actilyse® et de Metalyse® non extraites (seules l’indication, la fenêtre et la posologie AVC ont été lues).",
+  "Le validateur tools/starter_codex.py (semiology) n’a pas été exécuté : il exige un reçu SEMIO de Codex ; la structure a été vérifiée par script sur une copie. tests/audit_sciences.py n’a pas été relancé sur la copie (exige une base git)."
+ ],
+ "propositions": [
+  "G83_a_semio_clinique.html",
+  "G83_b_1.html",
+  "G83_c_sciences.html",
+  "G83_c_semio.html",
+  "G83_d_1.html",
+  "G83_enrichissements.html",
+  "G83_figures.html",
+  "G83_mineurs.html",
+  "G83_pop1_semio.html",
+  "verification_ancres.json",
+  "verifier_ancres.py"
+ ],
+ "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+}
