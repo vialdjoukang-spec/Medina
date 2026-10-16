@@ -1,0 +1,267 @@
+{
+  "mission": "ALPHA1-CLAUDE-G82-LANG",
+  "code": "G82",
+  "type_audit": "linguistique",
+  "base_sha": "103745baaa38c76f18288758cc7f689e5091ccdb",
+  "generation": 1,
+  "branche": "claude/alpha1/g82-lang-g1",
+  "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G82-LANG",
+  "conversation": "alpha1-claude-g82-lang",
+  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+  "modele_effort": "conforme au manifeste",
+  "date_debut": null,
+  "date_debut_note": "Heure de début non relevée au démarrage ; aucune valeur estimée n’est présentée comme observée.",
+  "date_fin": "2026-10-16T09:27:00Z",
+  "lecture": {
+    "fichiers": [
+      "chapters/G82/G82_a.html",
+      "chapters/G82/G82_b.html",
+      "chapters/G82/G82_c.html",
+      "chapters/G82/G82_d.html",
+      "chapters/G82/G82_pop1.html",
+      "chapters/G82/G82_pop2.html",
+      "glossary/g82.py"
+    ],
+    "empreintes_conformes": true,
+    "empreintes_calculees": {
+      "chapters/G82/G82_a.html": "78e8a28ab2e64daba1120eb72912dfd4385b4fc862ac17e9a45bba51b1753a57",
+      "chapters/G82/G82_b.html": "c7ce7326d6be7cff9fb8c933afdc31ce05eafec23357e1d2a8223a016a8a8b00",
+      "chapters/G82/G82_c.html": "732c6b37730dd5382fc04045abb09b42c79e255f3608713cbe292e5aff4d4c0f",
+      "chapters/G82/G82_d.html": "c94ef60c5631e582a6d13c6366f735cd007026dacb33c55b2bfb5a56e5760d5b",
+      "chapters/G82/G82_pop1.html": "cadc0a134c2034807081310e4a9eb273ff46863254b24445ebdb2abe3238e034",
+      "chapters/G82/G82_pop2.html": "cfde5f6fbfd23646d337095f0527ea4290f43180f510958adac4168c1c217eed",
+      "glossary/g82.py": "51ab3631a1ae8cf2ae537924c743169dde829d1b8245e67790ff85914830e166"
+    }
+  },
+  "premiere_verification": "Recalcul des SHA-256 des 7 fichiers contre .medina/missions/ALPHA1-CLAUDE-G82-LANG.json (tous conformes) ; lecture intégrale des 7 fichiers ; contrôle des abréviations par build_medina.audit() (chargeur de glossaire du dépôt) sur les sources avant et après application simulée des propositions (résultat {} dans les deux cas).",
+  "synthese": {
+    "nombre_propositions": 80,
+    "renvois_medicaux": 17,
+    "propositions_par_categorie": {
+      "registre": 20,
+      "syntaxe": 22,
+      "ambiguité": 13,
+      "cohérence": 6,
+      "répétition": 3,
+      "ponctuation": 3,
+      "grammaire": 6,
+      "orthographe": 2,
+      "typographie": 5
+    },
+    "propositions_par_fichier": {
+      "chapters/G82/G82_a.html": 17,
+      "chapters/G82/G82_b.html": 23,
+      "chapters/G82/G82_c.html": 12,
+      "chapters/G82/G82_d.html": 13,
+      "chapters/G82/G82_pop1.html": 3,
+      "chapters/G82/G82_pop2.html": 11,
+      "glossary/g82.py": 1
+    },
+    "renvois_par_fichier": {
+      "chapters/G82/G82_a.html": 4,
+      "chapters/G82/G82_b.html": 3,
+      "chapters/G82/G82_c.html": 3,
+      "chapters/G82/G82_d.html": 2,
+      "chapters/G82/G82_pop1.html": 2,
+      "chapters/G82/G82_pop2.html": 3
+    },
+    "constats_hors_perimetre": 1
+  },
+  "propositions_fichier": "propositions.json",
+  "verification_unicite": {
+    "methode": "script Python : ancien.count(contenu du fichier) == 1 pour chacune des 80 propositions ; absence de chevauchement entre propositions d’un même fichier (positions de début et de fin) ; application simulée en mémoire ; équilibre des balises button, td, p et template conservé ; build_medina.audit() == {} sur les six fichiers HTML avant et après ; analyse syntaxique (ast) du glossaire modifié. Chaque ancre de renvoi apparaît exactement une fois.",
+    "toutes_uniques": true,
+    "sans_chevauchement": true,
+    "audit_abreviations_avant": {},
+    "audit_abreviations_apres_application": {},
+    "glossaire_syntaxe_valide": true
+  },
+  "constats": [
+    {
+      "id": "R-01",
+      "fichier": "chapters/G82/G82_a.html",
+      "ancre": "La <button class=\"w\" data-k=\"g82-zpp\">zone de préservation partielle</button> complète la description des lésions où la fonction s’arrête de façon incomplète sous le niveau.",
+      "categorie": "sens médical",
+      "explication": "La formule « lésions où la fonction s’arrête de façon incomplète sous le niveau » est obscure et ne coïncide pas avec la fenêtre associée (la zone de préservation partielle concerne l’absence de fonction sacrée). Toute reformulation fixe un champ d’application clinique : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-02",
+      "fichier": "chapters/G82/G82_a.html",
+      "ancre": "ce qui rappelle que la vessie neurogène est une cause directe de décès évitable",
+      "categorie": "causalité",
+      "explication": "« Cause directe de décès évitable » est une inférence causale que les rapports standardisés de mortalité n’établissent pas ; la phrase suivante du piège d’interprétation affirme d’ailleurs qu’il s’agit d’associations. Atténuer ou retirer relève de l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-03",
+      "fichier": "chapters/G82/G82_a.html",
+      "ancre": "(démontrée dans des données précliniques)",
+      "categorie": "rattachement",
+      "explication": "L’incise s’accroche grammaticalement à « l’atteinte secondaire », alors que, selon la fenêtre associée, ce sont les données précliniques qui justifient la décompression. Corriger le rattachement précise ce qui est démontré : décision médicale.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-04",
+      "fichier": "chapters/G82/G82_a.html",
+      "ancre": "<td>Sensitif incomplet</td>",
+      "categorie": "critère",
+      "explication": "Dans la ligne AIS B, « sans motricité » ne précise pas le territoire (segments sacrés S4-S5 ou ensemble sous le niveau). Préciser modifie un critère de classification : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-05",
+      "fichier": "chapters/G82/G82_b.html",
+      "ancre": "Les racines forment un nerf périphérique",
+      "categorie": "anatomie",
+      "explication": "Les racines ne « forment » pas un nerf périphérique ; elles font partie du système nerveux périphérique et donnent naissance aux nerfs. Toute reformulation engage un énoncé anatomique : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-06",
+      "fichier": "chapters/G82/G82_b.html",
+      "ancre": "la borne haute évite une surcharge sans bénéfice démontré",
+      "categorie": "sens médical",
+      "explication": "« Surcharge » (de quoi : volume, pression, risque hémorragique ?) n’est pas défini ; le mot choisi engage un mécanisme. À trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-07",
+      "fichier": "chapters/G82/G82_b.html",
+      "ancre": "Le détail de la grossesse et de la dysréflexie qui l’accompagne n’a pas été lu.",
+      "categorie": "sens médical",
+      "explication": "« La dysréflexie qui l’accompagne » présente la dysréflexie comme un accompagnement systématique de la grossesse chez la femme lésée ; la formulation conditionnelle (« qui peut l’accompagner ») modifie le fond. À trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-08",
+      "fichier": "chapters/G82/G82_c.html",
+      "ancre": "des extenseurs du coude cotés 2 et des muscles inférieurs cotés 0",
+      "categorie": "cohérence de la vignette",
+      "explication": "La vignette ne cite que trois muscles pour le côté droit, puis des « muscles inférieurs » cotés 0, alors que le calcul qui suit (5 + 4 + 2 + 0 + 0 = 11) additionne cinq muscles du membre supérieur (les deux derniers, C8 et T1, ne sont pas nommés) ; la fenêtre du calcul parle de « membres inférieurs, cotés 0 » à part. Corriger la description modifie les données de la vignette : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-09",
+      "fichier": "chapters/G82/G82_c.html",
+      "ancre": "Ce délai montre que le diagnostic repose d’abord sur la suspicion clinique d’une lésion médullaire lente.",
+      "categorie": "raisonnement",
+      "explication": "Non-sequitur : un délai de 12,5 mois jusqu’à l’IRM montre un retard diagnostique, non que le diagnostic « repose d’abord sur la suspicion clinique ». De même, « plus tard qu’elle ne devrait » énonce une norme non sourcée. Toute reformulation change l’énoncé : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-10",
+      "fichier": "chapters/G82/G82_c.html",
+      "ancre": "structurent le bilan en deux niveaux",
+      "categorie": "structure",
+      "explication": "Deux niveaux sont annoncés, mais seul le « bilan initial » est nommé ; le second niveau n’est pas identifié (l’urodynamique invasive, qui suit, n’est pas explicitement rattachée au second niveau). Nommer le second niveau ajoute un fait : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-11",
+      "fichier": "chapters/G82/G82_d.html",
+      "ancre": "<td>Alpha-bloquants</td><td>Information professionnelle non relue</td>",
+      "categorie": "terminologie des sources",
+      "explication": "La leçon alterne « non lue » et « non relue » (tableau de la stratégie pharmacologique, fenêtres du codage, de la toxine botulique, de l’auto-sondage, de la spasticité). « Relue » suppose une première lecture. Choisir le bon terme revient à établir si l’information professionnelle a été lue : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-12",
+      "fichier": "chapters/G82/G82_d.html",
+      "ancre": "le médicament freine la contraction des muscles lisses, ce qui est utile pour la vessie, mais dangereux là où un tonus musculaire est nécessaire",
+      "categorie": "mécanisme",
+      "explication": "L’explication évoque les muscles lisses, alors que deux des contre-indications citées (myasthénie, glaucome à angle étroit) ne relèvent pas de ce mécanisme. Reformuler engage la justification pharmacologique : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-13",
+      "fichier": "chapters/G82/G82_pop1.html",
+      "ancre": "Un tiers des patients sont à haut risque cardiovasculaire à la sortie de réadaptation",
+      "categorie": "terminologie",
+      "explication": "La fenêtre dit « risque cardiovasculaire », le texte principal (section 4) dit « risque cardiométabolique » pour le même chiffre (« un tiers »). Aligner suppose de savoir lequel des deux a été mesuré : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-14",
+      "fichier": "chapters/G82/G82_pop1.html",
+      "ancre": "2 : mouvement sans pesanteur",
+      "categorie": "cotation",
+      "explication": "« Mouvement sans pesanteur » peut se lire comme un mouvement en apesanteur ; la cotation ISNCSCI parle de mouvement actif avec pesanteur éliminée. Reformuler précise une échelle de cotation : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-15",
+      "fichier": "chapters/G82/G82_pop2.html",
+      "ancre": "chez 43,3 % des patients lésés au 6e segment thoracique ou au-dessus dans une étude",
+      "categorie": "unité d’analyse",
+      "explication": "Le texte principal, l’onglet des examens et la fenêtre de la dysréflexie disent « dans 43,3 % des urodynamiques (examens) » ; cette fenêtre dit « chez 43,3 % des patients ». L’unité (examens ou patients) ne se choisit que par la source : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-16",
+      "fichier": "chapters/G82/G82_pop2.html",
+      "ancre": "Le score moteur gagne 4,50 points de plus.",
+      "categorie": "comparateur",
+      "explication": "« De plus » appelle un comparateur (que la chirurgie tardive ?) qui n’est pas nommé. Ajouter le comparateur ajoute un fait : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-17",
+      "fichier": "chapters/G82/G82_pop2.html",
+      "ancre": "Les hommes dont la lésion se situe au 6e segment thoracique ou au-dessus et les centres de fertilité sont informés du risque de dysréflexie.",
+      "categorie": "statut de la phrase",
+      "explication": "La phrase est à l’indicatif (« sont informés ») ; l’intention de la recommandation est probablement obligative (« doivent être informés »). Le changement de mode modifie la nature de l’énoncé : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    }
+  ],
+  "observations": [
+    "Espaces insécables : les sept fichiers ne contiennent aucun U+00A0 ni U+202F. Environ 477 espaces ordinaires précèdent « ; : ? ! » dans le texte visible, 13 paires de guillemets « » et environ 51 pourcentages sont écrits avec une espace ordinaire. La correction est mécanique et globale (remplacement par U+00A0 ou U+202F) ; elle n’est pas répartie en propositions locales mais constitue une règle d’intégration unique, à décider avec les autres leçons (la décision est différée dans les audits de référence G71).",
+    "Registre méta : le mot « dossier » apparaît 25 fois dans le texte visible (« le dossier ne détaille pas », « n’a pas été documenté dans le dossier »), ainsi que « lecture du cours » (4 fois). Ces formules décrivent la fabrication du cours (STYLE_REDACTION, § 3) mais portent aussi la déclaration des lacunes de sources, exigée par le prompt de vérité. Leur reformulation relève d’une décision éditoriale commune avec l’audit médical (par exemple « aucune source lue ne précise… »). Aucune proposition locale n’est faite.",
+    "Phrases nominales et infinitifs injonctifs : plusieurs cellules de tableau (section 9, « Viser au moins… »), les rubriques « Signes », « Séquence », « Priorités », « Choix selon le type » des fenêtres et les encadrés « Critères formels » et « Paramètres clés » sont nominaux ou à l’infinitif. Le guide de rédaction (§ 2) les proscrit hors titres et cellules brèves introduites ; leur réécriture complète dépasse la formulation locale et n’a pas été proposée, à l’exception des deux phrases nominales du corps de texte (sections 9, urgences 2 et 3) et de l’encadré « Science → examen » de la physiologie autonome.",
+    "Libellés des mots verts : plusieurs libellés incorporent des parenthèses explicatives longues (par exemple « incidence des lésions médullaires traumatiques (chiffres hospitaliers et sous-couverture) ») qui entrent dans la phrase comme sujet ou complément ; la convention du moteur impose ces destinations annoncées, aucune proposition n’a été faite.",
+    "Terminologie : « lorsque c’est faisable » (onglet des examens, fenêtre de l’IRM) et « lorsqu’elle est réalisable » (partie 8) désignent la même condition ; les guillemets de l’onglet des examens signalent une citation, ils n’ont pas été modifiés.",
+    "Intitulé d’encadré : la rubrique « Science → traitement » de la neuroanatomie classificatoire porte sur le codage du niveau fonctionnel et non sur un traitement ; le gabarit à trois encadrés est conservé, l’intitulé relève d’un choix de structure.",
+    "Hors périmètre linguistique (transmis à l’audit MED) : les figures 1 à 4 sont accompagnées d’une légende mais pas d’un paragraphe de lecture distinct (guide de rédaction, § 4).",
+    "Base : le manifeste porte la base 523832d9ef6097607d3443f4398deee9cd0add11 ; la branche a été créée sur 103745baaa38c76f18288758cc7f689e5091ccdb. Aucun fichier de la leçon ne diffère entre ces deux commits (git diff vide sur chapters/G82 et glossary/g82.py)."
+  ],
+  "differes": [
+    "Espaces insécables globales (avant ; : ! ?, dans les guillemets « », dans les nombres et devant %) : non appliquées, ni proposées une à une (voir observations).",
+    "Réécriture des phrases nominales des fenêtres et des cellules de tableau : non proposée (dépasse la formulation locale).",
+    "Aucune modification d’un fait, d’un chiffre, d’une dose, d’une source ou d’un code CIM : les formulations qui y touchent sont en renvoi médical."
+  ],
+  "lacunes": [
+    "Aucune vérification médicale n’a été faite : les renvois_medicaux signalent des formulations dont la correction changerait le fond ; ils ne sont ni confirmés ni infirmés.",
+    "Aucun contrôle de rendu navigateur des propositions : l’application simulée a été faite en mémoire, aucun fichier canonique n’est modifié.",
+    "Aucune lecture des sources primaires citées : les écarts avec les sources sont établis seulement par comparaison interne entre les sept fichiers de la leçon.",
+    "Le contrôle de l’accord des libellés de mots verts avec la phrase qui les contient repose sur la lecture ; il n’a pas été exhaustif pour les 73 mots verts des quatre onglets."
+  ],
+  "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée",
+  "figures": {
+    "portee_controle": "Le contrôle a porté sur le texte des figures (légendes, étiquettes), pas sur leur provenance. La vérification de la provenance est transmise à l’audit MED.",
+    "inventaire": [
+      {
+        "figure": "Figures 1 à 4 (G82_a.html, G82_c.html)",
+        "classe": "schémas SVG non anatomiques d’après leurs légendes (« schéma didactique »)",
+        "statut": "transmis à l’audit MED",
+        "note": "Aucune provenance vérifiée ; aucune faute dans les étiquettes."
+      }
+    ]
+  }
+}
