@@ -156,40 +156,7 @@
 § .mc .mc-chap-head h1{letter-spacing:-.018em!important;line-height:1.12!important}
 § .mc .mc-ilot :is(h2,h3,h4){letter-spacing:-.008em}
 
-/* ---------- Navigo : bouton sobre, plan dépliable, position de lecture ---------- */
-§ .mc-navigo .mc-navigo-trigger{background:var(--mp-surface)!important;background-image:none!important;color:var(--mp-ink)!important;border:1px solid var(--mp-rule-strong)!important;
- box-shadow:0 2px 6px rgb(16 24 36 / .08),0 10px 24px -16px rgb(16 24 36 / .35)!important;
- transition:background-color var(--mp-dur) var(--mp-ease),transform var(--mp-dur) var(--mp-ease),border-color var(--mp-dur) var(--mp-ease)!important}
-§ .mc-navigo .mc-navigo-trigger *{color:var(--mp-ink)!important}
-§ .mc-navigo .mc-navigo-trigger:is(:hover,:focus-visible){background:var(--mp-tint)!important;border-color:var(--mp-accent)!important;transform:scale(1.02)}
-§ .mc-navigo .mc-navigo-panel{border:1px solid var(--mp-rule)!important;box-shadow:0 2px 6px rgb(16 24 36 / .06),0 22px 44px -26px rgb(16 24 36 / .4)!important;background:var(--mp-surface)!important}
-§ .mc-navigo :is(.mc-navigo-head,.mc-navigo-tabs){border-bottom:1px solid var(--mp-rule)!important;background:var(--mp-surface)!important;background-image:none!important}
-§ .mc-navigo .mc-navigo-foot{border-top:1px solid var(--mp-rule)!important;background:var(--mp-paper)!important}
-§ .mc-navigo .mc-navigo-tabs button{background:var(--mp-surface)!important;border:1px solid var(--mp-rule)!important;color:var(--mp-text)!important;transition:background-color var(--mp-dur) var(--mp-ease),border-color var(--mp-dur) var(--mp-ease)!important}
-§ .mc-navigo .mc-navigo-tabs button.is-active{background:var(--mp-tint)!important;color:var(--mp-accent-ink)!important;border-color:var(--mp-accent)!important;font-weight:700}
-§ .mc-navigo .mc-navigo-search{border:1px solid var(--mp-rule-strong)!important;box-shadow:none!important}
-§ .mc-navigo .mc-navigo-search:focus{border-color:var(--mp-accent)!important;box-shadow:0 0 0 3px color-mix(in srgb,var(--mp-accent) 16%,transparent)!important;outline:none!important}
-§ .mc-navigo .mp-progress{position:relative;height:2px;margin:0 16px;background:var(--mp-rule-soft);border-radius:2px;overflow:hidden}
-§ .mc-navigo .mp-progress>i{position:absolute;inset:0;background:var(--mp-accent-ink);transform-origin:0 50%;transform:scaleX(var(--mp-read,0));transition:transform var(--mp-dur) var(--mp-ease)}
-§ .mc-navigo .mp-progress-label{display:block;margin:6px 16px 2px;font-size:11.5px;line-height:1.3;color:var(--mp-muted);font-variant-numeric:tabular-nums}
-§ .mc-navigo .mc-navigo-list{position:relative}
-§ .mc-navigo .mc-navigo-item{position:relative;border-radius:8px!important;color:var(--mp-text)!important;
- transition:background-color var(--mp-dur) var(--mp-ease),color var(--mp-dur) var(--mp-ease),box-shadow var(--mp-dur) var(--mp-ease),max-height var(--mp-dur) var(--mp-ease),opacity var(--mp-dur) var(--mp-ease),transform var(--mp-dur) var(--mp-ease),padding var(--mp-dur) var(--mp-ease)!important}
-§ .mc-navigo .mc-navigo-item:is(:hover,:focus-visible){background:var(--mp-paper)!important}
-§ .mc-navigo .mc-navigo-item.mp-part{padding-right:30px!important}
-§ .mc-navigo .mc-navigo-item.mp-part:not([aria-current]):is(:hover,:focus-visible){box-shadow:none!important;border-left-color:transparent!important}
-§ .mc-navigo .mc-navigo-item.mp-part[data-mp-has-sub]::after{content:"";position:absolute;right:12px;top:50%;width:7px;height:7px;margin-top:-5px;
- border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;opacity:.6;transform:rotate(-45deg);transition:transform var(--mp-dur) var(--mp-ease),opacity var(--mp-dur) var(--mp-ease)}
-§ .mc-navigo .mc-navigo-item.mp-part[aria-expanded="true"]::after{transform:rotate(45deg);opacity:.9}
-§ .mc-navigo .mc-navigo-item.mp-sub{max-height:8em;opacity:1;overflow:hidden;transform:none;border-left:1px solid var(--mp-rule-strong)!important;border-radius:0 8px 8px 0!important;margin-left:14px!important;transition-delay:calc(var(--mp-i,0) * var(--mp-stagger,15ms))!important}
-§ .mc-navigo .mc-navigo-item.mp-sub.mc-navigo-h3{padding-left:16px!important}
-§ .mc-navigo .mc-navigo-item.mp-sub.mc-navigo-h4{padding-left:30px!important;color:var(--mp-muted)!important}
-§ .mc-navigo .mc-navigo-item.mp-sub.mc-navigo-h4::before{content:"";position:absolute;left:16px;top:50%;width:8px;border-top:1px solid var(--mp-rule)}
-§ .mc-navigo .mc-navigo-item.mp-sub.mp-collapsed{max-height:0!important;padding-top:0!important;padding-bottom:0!important;margin-top:0!important;margin-bottom:0!important;
- opacity:0;transform:translateY(-3px);visibility:hidden;pointer-events:none;transition-delay:0ms!important}
-§ .mc-navigo .mc-navigo-item[aria-current]{background:var(--mp-tint)!important;color:var(--mp-accent-ink)!important;font-weight:700!important;
- box-shadow:inset 3px 0 0 var(--mp-accent-ink)!important;border-left-color:var(--mp-accent-ink)!important}
-§ .mc-navigo .mc-navigo-item.mp-part.mp-active-part:not([aria-current]){color:var(--mp-ink)!important;box-shadow:inset 3px 0 0 color-mix(in srgb,var(--mp-accent) 45%,#fff)!important}
+/* Navigo : voir engine/navigo_premium.css (couche dédiée, injectée en dernier). */
 
 /* ---------- Retours du regard visuel ---------- */
 § .mcg-block .mcg-lesson:has(.is-available){background:var(--mp-surface)!important;filter:none!important}
@@ -209,7 +176,7 @@
 § .mc.book .mc-pager{position:sticky!important;bottom:16px;z-index:6;align-items:center;justify-content:center;gap:12px;width:max-content;max-width:100%;margin:14px auto 0!important;padding:6px!important;
  background:rgb(255 255 255 / .97)!important;border:1px solid var(--mp-rule-strong)!important;border-radius:12px!important;box-shadow:0 10px 26px -18px rgb(16 24 36 / .45)!important}
 § .mc.book .mc-pager>span{font-variant-numeric:tabular-nums;color:var(--mp-muted)!important;font-weight:700}
-@media (max-width:1479px){§ .mc.book .mc-pager{bottom:76px}}
+@media (max-width:760px){§ .mc.book .mc-pager{bottom:76px}}
 /* Onglets collants : alignés exactement sous la barre supérieure, sans bande où le texte défile. */
 § .mc .mc-tabs{top:var(--mdn-top,77px)!important}
 /* Barre latérale : filtre d’abord, puis liste complète des catégories, la barre défilant d’un seul tenant. */
@@ -226,4 +193,4 @@
  § .mcg-category-grid{gap:12px!important}}
 @media (prefers-reduced-motion:reduce){§{--mp-dur:0ms;--mp-stagger:0ms}
  § *,§ *::before,§ *::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}
- § :is(.mcg-category-card,.mcg-lesson,.medina-home,.mc-navigo-trigger,.mcg-primary-action,.mcg-explore-action):is(:hover,:focus-visible,:focus-within){transform:none!important}}
+ § :is(.mcg-category-card,.mcg-lesson,.medina-home,.mcg-primary-action,.mcg-explore-action):is(:hover,:focus-visible,:focus-within){transform:none!important}}

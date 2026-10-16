@@ -1,0 +1,188 @@
+/* MEDINA — Navigo premium, plan de la leçon (16.10.2026).
+   Dernière couche de la cascade (build_front.py) : « § » devient le préfixe premium dans les fragments
+   et « :root body » dans MEDINA.html. Les déclarations sont marquées !important parce que six couches
+   historiques (polish, reading_v3, atlas_v2, harmonie_v5, category_organisation, couleurs_premium)
+   stylent les mêmes classes. Couleurs : custom properties de engine/couleurs_premium.css
+   (docs/frontend/couleurs/PALETTE.md), avec repli neutre quand elles sont absentes.
+   Modes (attribut data-mc-navigo de <body>, posé par engine/medina_course.js) :
+   drawer = tiroir sous la barre supérieure ; sheet = feuille basse ≤ 760 px ; pinned = panneau latéral
+   épinglé ≥ 1440 px, qui réserve sa largeur à droite du texte. Transitions ≤ 180 ms. */
+§{--nv-surface:var(--n-surface,#fff);--nv-paper:var(--n-paper,#f5f8fa);--nv-sunken:var(--n-sunken,#e9f1f6);
+ --nv-line:var(--n-line-soft,#cfdbe4);--nv-line-strong:var(--n-line-strong,#4f6f84);
+ --nv-ink:var(--ink-1,#161a1d);--nv-ink2:var(--ink-2,#383e42);
+ --nv-accent:var(--accent-ink,#1f3428);--nv-tint:var(--accent-tint,#eef6f1);--nv-sel:var(--accent-sel,#dbeae1);
+ --nv-focus:var(--focus-ring,var(--nv-accent));
+ --nv-accent-text:color-mix(in srgb,var(--nv-accent) 80%,var(--nv-ink));
+ --nv-pop:var(--shadow-pop,0 2px 6px rgb(20 30 40 / .08),0 24px 48px -24px rgb(20 30 40 / .38));
+ --nv-float:var(--shadow-float,0 2px 6px rgb(20 30 40 / .1),0 12px 28px -14px rgb(20 30 40 / .4));
+ --nv-ease:cubic-bezier(.2,.7,.2,1);--nv-dur:160ms;
+ --mc-navigo-w:clamp(280px,calc(21vw * min(var(--mc-scale,1),1.2)),360px)}
+
+/* ---------- Hôte : il ne positionne plus rien, chaque partie est placée seule ---------- */
+§ .mc-navigo[data-navigo]{position:static!important;inset:auto!important;width:auto!important;height:auto!important;transform:none!important;
+ font-size:calc(14px * var(--mc-scale,1))!important;color:var(--nv-ink)!important}
+§ .mc-navigo[data-navigo] :is(button,input){font-family:inherit}
+§ .mc-navigo[data-navigo] .mc-navigo-sr{position:absolute!important;width:1px!important;height:1px!important;margin:-1px!important;padding:0!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important;border:0!important}
+
+/* ---------- Déclencheur : dans la barre supérieure sur bureau, bouton flottant au pouce sur mobile ---------- */
+§ .mc-navigo-trigger[data-navigo]{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;flex:none!important;
+ min-width:44px!important;min-height:44px!important;height:44px!important;margin:0!important;padding:0 14px 0 12px!important;
+ border:1px solid var(--nv-line-strong)!important;border-radius:12px!important;background:var(--nv-surface)!important;background-image:none!important;
+ color:var(--nv-ink)!important;font:inherit;font-size:15px!important;font-weight:700!important;line-height:1!important;letter-spacing:0!important;
+ writing-mode:horizontal-tb!important;transform:none!important;box-shadow:none!important;cursor:pointer;white-space:nowrap;
+ transition:background-color var(--nv-dur) var(--nv-ease),border-color var(--nv-dur) var(--nv-ease),color var(--nv-dur) var(--nv-ease)!important}
+§ .mc-navigo-trigger[data-navigo] *{color:inherit!important}
+§ .mc-navigo-trigger[data-navigo] svg{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+§ .mc-navigo-trigger[data-navigo]:hover{background:var(--nv-tint)!important;border-color:var(--nv-accent-text)!important}
+§ .mc-navigo-trigger[data-navigo][aria-expanded="true"]{background:var(--nv-sel)!important;border-color:var(--nv-accent-text)!important;color:var(--nv-accent-text)!important}
+§ .mc-navigo-trigger[data-navigo]:focus-visible{outline:2px solid var(--nv-focus)!important;outline-offset:2px!important}
+§ .mc-navigo-trigger[data-navigo] .mc-navigo-trigger-pct{padding-left:8px;border-left:1px solid var(--nv-line);font-size:13px;font-weight:600;color:var(--nv-ink2)!important;font-variant-numeric:tabular-nums}
+§ .mc-navigo-trigger[data-navigo].is-docked{margin-right:8px!important}
+@media (max-width:1279px){§ .mc-navigo-trigger[data-navigo] .mc-navigo-trigger-pct{display:none!important}}
+@media (min-width:761px) and (max-width:1023px){§ .mc-navigo-trigger[data-navigo].is-docked{padding:0!important;width:44px!important}
+ § .mc-navigo-trigger[data-navigo].is-docked .mc-navigo-trigger-label{display:none!important}}
+/* Hors de la barre supérieure (feuille basse ou coque sans barre) : bouton flottant en bas à droite. */
+§ .mc-navigo[data-navigo]>.mc-navigo-trigger[data-navigo]{position:fixed!important;z-index:150!important;right:max(12px,env(safe-area-inset-right))!important;
+ bottom:calc(12px + env(safe-area-inset-bottom))!important;top:auto!important;left:auto!important;height:52px!important;min-height:52px!important;
+ padding:0 18px 0 16px!important;border-radius:26px!important;box-shadow:var(--nv-float)!important}
+§[data-mc-navigo="pinned"] .mc-navigo-trigger[data-navigo]{display:none!important}
+
+/* ---------- Panneau ---------- */
+§ .mc-navigo[data-navigo] .mc-navigo-panel{position:fixed!important;z-index:160!important;display:flex!important;flex-direction:column!important;overflow:hidden!important;
+ margin:0!important;padding:0!important;max-height:none!important;min-height:0!important;background:var(--nv-surface)!important;background-image:none!important;
+ border:1px solid var(--nv-line)!important;border-radius:16px!important;box-shadow:var(--nv-pop)!important;color:var(--nv-ink)!important;transform:none}
+§ .mc-navigo[data-navigo] .mc-navigo-panel[hidden]{display:none!important}
+§[data-mc-navigo="drawer"] .mc-navigo[data-navigo] .mc-navigo-panel{inset:calc(var(--mdn-top,77px) + 8px) 16px 16px auto!important;
+ width:min(calc(400px * min(var(--mc-scale,1),1.25)),calc(100vw - 32px))!important;height:auto!important}
+§[data-mc-navigo="sheet"] .mc-navigo[data-navigo] .mc-navigo-panel{inset:auto 8px calc(8px + env(safe-area-inset-bottom)) 8px!important;width:auto!important;
+ height:min(86dvh,calc(100dvh - var(--mdn-top,76px) - 16px))!important;border-radius:20px!important}
+§[data-mc-navigo="pinned"] .mc-navigo[data-navigo] .mc-navigo-panel{inset:calc(var(--mdn-top,77px) + 16px) 16px 16px auto!important;width:var(--mc-navigo-w)!important;
+ height:auto!important;z-index:30!important;box-shadow:var(--shadow-1,0 1px 2px rgb(20 30 40 / .06))!important}
+@media (prefers-reduced-motion:no-preference){
+ § .mc-navigo[data-navigo] .mc-navigo-panel:not([hidden]){animation:mc-navigo-in 180ms var(--nv-ease)}
+ §[data-mc-navigo="sheet"] .mc-navigo[data-navigo] .mc-navigo-panel:not([hidden]){animation-name:mc-navigo-up}
+ §[data-mc-navigo="pinned"] .mc-navigo[data-navigo] .mc-navigo-panel{animation:none}}
+@keyframes mc-navigo-in{from{translate:0 -6px}to{translate:0 0}}
+@keyframes mc-navigo-up{from{translate:0 24px}to{translate:0 0}}
+/* Le panneau épinglé occupe sa propre colonne : le texte ne passe jamais dessous. */
+§[data-mc-navigo="pinned"] #content:has(.mc){padding-right:calc(var(--mc-navigo-w) + 32px)!important}
+@media (min-width:1440px){§[data-mc-navigo="drawer"] #content:has(.mc){padding-right:3vw!important}}
+§ .mc-navigo[data-navigo] .mc-navigo-scrim{position:fixed!important;inset:0!important;z-index:155!important;background:color-mix(in srgb,var(--n-veil,#1d2b34) 12%,transparent)!important}
+§[data-mc-navigo="sheet"] .mc-navigo[data-navigo] .mc-navigo-scrim{background:color-mix(in srgb,var(--n-veil,#1d2b34) 30%,transparent)!important}
+§ .mc-navigo[data-navigo] .mc-navigo-scrim[hidden]{display:none!important}
+
+/* En-tête : rôle du panneau, titre de la leçon, épingle et fermeture. */
+§ .mc-navigo[data-navigo] .mc-navigo-head{position:relative;display:flex!important;align-items:flex-start!important;gap:8px!important;flex:none;
+ padding:14px 12px 12px 18px!important;margin:0!important;background:var(--nv-surface)!important;background-image:none!important;border:0!important;border-bottom:1px solid var(--nv-line)!important;color:var(--nv-ink)!important}
+§ .mc-navigo[data-navigo] .mc-navigo-headtext{flex:1 1 auto;min-width:0}
+§ .mc-navigo[data-navigo] .mc-navigo-head small{display:block!important;margin:0!important;font-size:12px!important;font-weight:700!important;line-height:1.3!important;letter-spacing:.06em!important;text-transform:uppercase;color:var(--nv-accent-text)!important}
+§ .mc-navigo[data-navigo] .mc-navigo-title{display:-webkit-box!important;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;margin:4px 0 0!important;
+ font-size:calc(15px * var(--mc-scale,1))!important;font-weight:700!important;line-height:1.3!important;color:var(--nv-ink)!important}
+§ .mc-navigo[data-navigo] :is(.mc-navigo-pin,.mc-navigo-close){display:inline-grid!important;place-items:center!important;flex:none!important;width:40px!important;height:40px!important;min-width:40px!important;min-height:40px!important;
+ margin:0!important;padding:0!important;border:1px solid var(--nv-line)!important;border-radius:10px!important;background:var(--nv-surface)!important;background-image:none!important;color:var(--nv-ink2)!important;
+ font-size:0!important;line-height:0!important;box-shadow:none!important;cursor:pointer;transition:background-color var(--nv-dur) var(--nv-ease),border-color var(--nv-dur) var(--nv-ease)!important}
+§ .mc-navigo[data-navigo] :is(.mc-navigo-pin,.mc-navigo-close) svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+§ .mc-navigo[data-navigo] :is(.mc-navigo-pin,.mc-navigo-close):hover{background:var(--nv-sunken)!important;border-color:var(--nv-line-strong)!important;color:var(--nv-ink)!important}
+§ .mc-navigo[data-navigo] .mc-navigo-pin[aria-pressed="true"]{background:var(--nv-sel)!important;border-color:var(--nv-accent-text)!important;color:var(--nv-accent-text)!important}
+§ .mc-navigo[data-navigo] :is(.mc-navigo-pin,.mc-navigo-close):focus-visible{outline:2px solid var(--nv-focus)!important;outline-offset:2px!important}
+@media (max-width:1439px){§ .mc-navigo[data-navigo] .mc-navigo-pin{display:none!important}}
+§[data-mc-navigo="pinned"] .mc-navigo[data-navigo] .mc-navigo-close{display:none!important}
+
+/* Position de lecture : onglet, partie courante et pourcentage de l'onglet. */
+§ .mc-navigo[data-navigo] .mc-navigo-reading{flex:none;padding:10px 18px 12px}
+§ .mc-navigo[data-navigo] .mc-navigo-where{display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:2px 10px;font-size:12.5px;line-height:1.4}
+§ .mc-navigo[data-navigo] .mc-navigo-where-label{font-weight:700;color:var(--nv-ink2)!important}
+§ .mc-navigo[data-navigo] .mc-navigo-pct{font-weight:700;color:var(--nv-accent-text)!important;font-variant-numeric:tabular-nums}
+§ .mc-navigo[data-navigo] .mc-navigo-where-text{grid-column:1 / -1;grid-row:2;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:var(--nv-ink)!important}
+§ .mc-navigo[data-navigo] .mc-navigo-progress{position:relative;height:4px;margin-top:8px;border-radius:2px;background:var(--gauge-track,var(--nv-line));overflow:hidden}
+§ .mc-navigo[data-navigo] .mc-navigo-progress>i{position:absolute;inset:0;border-radius:2px;background:var(--nv-accent);transform-origin:0 50%;transform:scaleX(var(--mc-nav-read,0));transition:transform var(--nv-dur) var(--nv-ease)}
+
+/* Recherche : instantanée, sans accents, sur les quatre onglets. */
+§ .mc-navigo[data-navigo] .mc-navigo-searchbox{position:relative;flex:none;margin:0 12px 8px}
+§ .mc-navigo[data-navigo] .mc-navigo-searchbox>svg{position:absolute;left:12px;top:50%;width:18px;height:18px;margin-top:-9px;fill:none;stroke:var(--nv-ink2);stroke-width:2;stroke-linecap:round;pointer-events:none}
+§ .mc-navigo[data-navigo] .mc-navigo-search{display:block!important;width:100%!important;min-width:0!important;min-height:40px!important;margin:0!important;padding:0 12px 0 38px!important;
+ border:1px solid var(--nv-line-strong)!important;border-radius:10px!important;background:var(--nv-surface)!important;color:var(--nv-ink)!important;
+ font-size:calc(14.5px * var(--mc-scale,1))!important;line-height:1.3!important;box-shadow:none!important;outline:none!important}
+§ .mc-navigo[data-navigo] .mc-navigo-search::placeholder{color:var(--nv-ink2);opacity:1}
+§ .mc-navigo[data-navigo] .mc-navigo-search:focus-visible,§ .mc-navigo[data-navigo] .mc-navigo-search:focus{border-color:var(--nv-accent-text)!important;outline:2px solid var(--nv-focus)!important;outline-offset:1px!important}
+
+/* ---------- Arbre : onglets → sections → parties → sous-parties ---------- */
+§ .mc-navigo[data-navigo] .mc-navigo-list{display:block!important;flex:1 1 auto!important;min-height:0!important;max-height:none!important;overflow-y:auto!important;overscroll-behavior:contain;
+ margin:0!important;padding:4px 8px 12px!important;list-style:none!important;border-top:1px solid var(--nv-line);scrollbar-width:thin;scrollbar-color:var(--nv-line-strong) transparent}
+§ .mc-navigo[data-navigo] :is(.mc-navigo-node,.mc-navigo-group){display:block;list-style:none!important;margin:0!important;padding:0!important}
+§ .mc-navigo[data-navigo] .mc-navigo-group{position:relative}
+§ .mc-navigo[data-navigo] .mc-navigo-group::before{content:"";position:absolute;top:2px;bottom:4px;left:16px;border-left:1px solid var(--nv-line)}
+§ .mc-navigo[data-navigo] [aria-level="2"]>.mc-navigo-group::before{left:32px}
+§ .mc-navigo[data-navigo] [aria-level="3"]>.mc-navigo-group::before{left:48px}
+§ .mc-navigo[data-navigo] [aria-level="4"]>.mc-navigo-group::before{left:64px}
+§ .mc-navigo[data-navigo] .mc-navigo-list>.mc-navigo-node+.mc-navigo-node{margin-top:4px!important;padding-top:4px!important;border-top:1px solid var(--nv-line)}
+§ .mc-navigo[data-navigo] .mc-navigo-list.is-search>.mc-navigo-node+.mc-navigo-node{margin-top:0!important;padding-top:0!important;border-top:0}
+§ .mc-navigo[data-navigo] [role="treeitem"]{outline:none!important}
+§ .mc-navigo[data-navigo] .mc-navigo-item{position:relative;display:flex!important;align-items:flex-start!important;gap:6px!important;width:100%!important;min-height:34px!important;
+ margin:1px 0!important;padding:7px 10px 7px 6px!important;border:0!important;border-radius:8px!important;background:transparent!important;background-image:none!important;
+ color:var(--nv-ink)!important;font-size:calc(14px * var(--mc-scale,1))!important;font-weight:400!important;line-height:1.35!important;text-align:left!important;
+ box-shadow:none!important;cursor:pointer;opacity:1!important;visibility:visible!important;max-height:none!important;transform:none!important;
+ transition:background-color var(--nv-dur) var(--nv-ease)!important}
+§ .mc-navigo[data-navigo] [aria-level="2"]>.mc-navigo-item{padding-left:22px!important}
+§ .mc-navigo[data-navigo] [aria-level="3"]>.mc-navigo-item{padding-left:38px!important}
+§ .mc-navigo[data-navigo] [aria-level="4"]>.mc-navigo-item{padding-left:54px!important}
+§ .mc-navigo[data-navigo] [aria-level="5"]>.mc-navigo-item{padding-left:70px!important}
+§ .mc-navigo[data-navigo] .is-search .mc-navigo-item{padding-left:12px!important}
+§ .mc-navigo[data-navigo] .mc-navigo-item::before,§ .mc-navigo[data-navigo] .mc-navigo-item::after{display:none!important}
+@media (hover:hover){§ .mc-navigo[data-navigo] .mc-navigo-item:hover{background:var(--nv-sunken)!important}}
+§ .mc-navigo[data-navigo] [role="treeitem"]:focus-visible>.mc-navigo-item{outline:2px solid var(--nv-focus)!important;outline-offset:-2px!important;background:var(--nv-tint)!important}
+§ .mc-navigo[data-navigo] .mc-navigo-twisty{position:relative;flex:none;width:20px;height:20px;margin-top:calc((1.35em - 20px) / 2);color:var(--nv-ink2)}
+§ .mc-navigo[data-navigo] .mc-navigo-twisty[data-toggle]{cursor:pointer;border-radius:6px}
+§ .mc-navigo[data-navigo] .mc-navigo-twisty[data-toggle]::after{content:"";position:absolute;inset:-7px -4px}
+@media (hover:hover){§ .mc-navigo[data-navigo] .mc-navigo-twisty[data-toggle]:hover{background:var(--nv-line)}}
+§ .mc-navigo[data-navigo] .mc-navigo-twisty[data-toggle]::before{content:"";position:absolute;left:6px;top:6px;width:6px;height:6px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;
+ transform:rotate(-45deg);transition:transform var(--nv-dur) var(--nv-ease)}
+§ .mc-navigo[data-navigo] [aria-expanded="true"]>.mc-navigo-item>.mc-navigo-twisty::before{transform:translate(1px,-1px) rotate(45deg)}
+§ .mc-navigo[data-navigo] .mc-navigo-num{flex:none;min-width:2em;font-weight:600;color:var(--nv-ink2)!important;font-variant-numeric:tabular-nums}
+§ .mc-navigo[data-navigo] .mc-navigo-text{flex:1 1 auto;min-width:0}
+§ .mc-navigo[data-navigo] .mc-navigo-label{display:-webkit-box!important;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;overflow-wrap:anywhere;hyphens:auto}
+§ .mc-navigo[data-navigo] .mc-navigo-path{display:block;margin-top:2px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:.86em;color:var(--nv-ink2)!important}
+§ .mc-navigo[data-navigo] .mc-navigo-badge{flex:none;align-self:center;min-width:24px;padding:2px 7px;border-radius:999px;background:var(--nv-sunken);color:var(--nv-ink2)!important;
+ font-size:12px;font-weight:700;line-height:1.3;text-align:center;font-variant-numeric:tabular-nums}
+/* Hiérarchie typographique : onglet, partie, sous-partie, détail. */
+§ .mc-navigo[data-navigo] .mc-navigo-tab{font-weight:700!important;letter-spacing:.005em}
+§ .mc-navigo[data-navigo] .is-tab-active>.mc-navigo-tab{color:var(--nv-accent-text)!important}
+§ .mc-navigo[data-navigo] .is-tab-active>.mc-navigo-tab .mc-navigo-badge{background:var(--nv-sel);color:var(--nv-accent-text)!important}
+§ .mc-navigo[data-navigo] .mc-navigo-sci{font-weight:600!important}
+§ .mc-navigo[data-navigo] .mc-navigo-h2{font-weight:600!important}
+§ .mc-navigo[data-navigo] .mc-navigo-h2 .mc-navigo-num{font-weight:700;color:var(--nv-accent-text)!important}
+§ .mc-navigo[data-navigo] .mc-navigo-h4{font-size:calc(13.5px * var(--mc-scale,1))!important;color:var(--nv-ink2)!important}
+/* Partie en cours de lecture : chemin marqué, titre courant surligné. */
+§ .mc-navigo[data-navigo] .is-path>.mc-navigo-item:not(.mc-navigo-tab){font-weight:700!important}
+§ .mc-navigo[data-navigo] .is-path>.mc-navigo-item .mc-navigo-num{color:var(--nv-accent-text)!important}
+§ .mc-navigo[data-navigo] [aria-current]>.mc-navigo-item{background:var(--nv-sel)!important;color:var(--nv-ink)!important;font-weight:700!important;box-shadow:inset 3px 0 0 var(--nv-accent)!important}
+§ .mc-navigo[data-navigo] [aria-current]>.mc-navigo-item .mc-navigo-num{color:var(--nv-accent-text)!important}
+§ .mc-navigo[data-navigo] mark{padding:0 1px;border-radius:3px;background:color-mix(in srgb,var(--gold-300,#f1cf62) 60%,#fff);color:inherit!important;
+ box-shadow:0 0 0 1px color-mix(in srgb,var(--gold-600,#a87b12) 35%,transparent)}
+
+/* Pied : compteur et rappel du clavier. */
+§ .mc-navigo[data-navigo] .mc-navigo-foot{display:flex!important;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;flex:none;margin:0!important;padding:9px 16px!important;
+ border:0!important;border-top:1px solid var(--nv-line)!important;background:var(--nv-paper)!important;color:var(--nv-ink2)!important;font-size:12.5px!important;line-height:1.4!important}
+§ .mc-navigo[data-navigo] .mc-navigo-foot *{color:inherit!important}
+§ .mc-navigo[data-navigo] .mc-navigo-keys kbd{display:inline-block;min-width:1.6em;margin:0 1px;padding:0 4px;border:1px solid var(--nv-line);border-bottom-width:2px;border-radius:4px;background:var(--nv-surface);
+ font:inherit;font-size:11.5px;line-height:1.5;text-align:center}
+@media (pointer:coarse){§ .mc-navigo[data-navigo] .mc-navigo-keys{display:none!important}}
+§[data-mc-navigo="pinned"] .mc-navigo[data-navigo] .mc-navigo-keys{display:none!important}
+
+/* ---------- Feuille basse (≤ 760 px) : cibles de 44 px, poignée, texte un peu plus grand ---------- */
+§[data-mc-navigo="sheet"] .mc-navigo[data-navigo] .mc-navigo-head{padding-top:20px!important}
+§[data-mc-navigo="sheet"] .mc-navigo[data-navigo] .mc-navigo-head::before{content:"";position:absolute;left:50%;top:7px;width:40px;height:4px;margin-left:-20px;border-radius:2px;background:var(--nv-line-strong);opacity:.55}
+§[data-mc-navigo="sheet"] .mc-navigo[data-navigo] .mc-navigo-close{width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important}
+§[data-mc-navigo="sheet"] .mc-navigo[data-navigo] .mc-navigo-search{min-height:44px!important;font-size:max(16px,calc(15px * var(--mc-scale,1)))!important}
+§[data-mc-navigo="sheet"] .mc-navigo[data-navigo] .mc-navigo-item{min-height:44px!important;padding-top:11px!important;padding-bottom:11px!important;font-size:calc(15px * var(--mc-scale,1))!important}
+§[data-mc-navigo="sheet"] .mc-navigo[data-navigo] .mc-navigo-twisty[data-toggle]::after{inset:-12px -8px}
+§[data-mc-navigo="sheet"] .mc-navigo[data-navigo] .mc-navigo-keys{display:none!important}
+
+/* Titres ciblés par Navigo ou par un renvoi : ils s'arrêtent sous les barres collantes. */
+§ .mc :is(h2,h3,h4),§ .mc .mc-ilot[id]{scroll-margin-top:var(--mc-nav-offset,150px)!important}
+
+@media (prefers-reduced-motion:reduce){
+ §{--nv-dur:0ms}
+ § :is(.mc-navigo[data-navigo],.mc-navigo-trigger[data-navigo]),§ :is(.mc-navigo[data-navigo],.mc-navigo-trigger[data-navigo]) *,
+ § .mc-navigo[data-navigo] *::before,§ .mc-navigo[data-navigo] *::after{transition:none!important;animation:none!important}}
+@media print{§ :is(.mc-navigo[data-navigo],.mc-navigo-trigger[data-navigo]){display:none!important}}
