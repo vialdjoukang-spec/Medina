@@ -1,0 +1,929 @@
+{
+ "mission": "ALPHA1-CLAUDE-G97-MED",
+ "code": "G97",
+ "type_audit": "medical",
+ "base_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "worktree_base": "103745baaa38c76f18288758cc7f689e5091ccdb",
+ "worktree_base_note": "HEAD du worktree au démarrage (fusion PR #203) ; sources figées identiques au manifeste : empreintes SHA-256 conformes.",
+ "source_snapshot_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "generation": 1,
+ "branche": "claude/alpha1/g97-med-g1",
+ "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G97-MED",
+ "conversation": "alpha1-claude-g97-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-16T09:45:00Z",
+ "date_fin": "2026-10-16T10:17:50Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G97/G97_a.html",
+   "chapters/G97/G97_b.html",
+   "chapters/G97/G97_c.html",
+   "chapters/G97/G97_d.html",
+   "chapters/G97/G97_pop1.html",
+   "chapters/G97/G97_pop2.html",
+   "glossary/g97.py"
+  ],
+  "empreintes_conformes": true,
+  "empreintes": {
+   "chapters/G97/G97_a.html": {
+    "sha256": "81eb1e9113f0035e2f0f1fd7e520cf5ad537405a04e70990d7842c0d7bc0c601",
+    "manifeste": "81eb1e9113f0035e2f0f1fd7e520cf5ad537405a04e70990d7842c0d7bc0c601",
+    "conforme": true
+   },
+   "chapters/G97/G97_b.html": {
+    "sha256": "8f74e0debcc7efa9e93cada45a674ff43e21bba4de86ec6b0ff4e67ce8ead4b1",
+    "manifeste": "8f74e0debcc7efa9e93cada45a674ff43e21bba4de86ec6b0ff4e67ce8ead4b1",
+    "conforme": true
+   },
+   "chapters/G97/G97_c.html": {
+    "sha256": "6ed9de0e98182e395ce0f3c8eefa68cf6d0946c75f2289898bab1ec6b0d06731",
+    "manifeste": "6ed9de0e98182e395ce0f3c8eefa68cf6d0946c75f2289898bab1ec6b0d06731",
+    "conforme": true
+   },
+   "chapters/G97/G97_d.html": {
+    "sha256": "169a56301d4d798dc3ad728465b9bb1dcfd85c0a6211b787374249be9322775e",
+    "manifeste": "169a56301d4d798dc3ad728465b9bb1dcfd85c0a6211b787374249be9322775e",
+    "conforme": true
+   },
+   "chapters/G97/G97_pop1.html": {
+    "sha256": "b4ff22df21afd76dcd961ed1ba2c675ce0f976ff259ba2cb9854df8903ffb17e",
+    "manifeste": "b4ff22df21afd76dcd961ed1ba2c675ce0f976ff259ba2cb9854df8903ffb17e",
+    "conforme": true
+   },
+   "chapters/G97/G97_pop2.html": {
+    "sha256": "6659ed3214a5e10a2598f19f3b97b2b475249f955c04fd9293bacb6382749e1e",
+    "manifeste": "6659ed3214a5e10a2598f19f3b97b2b475249f955c04fd9293bacb6382749e1e",
+    "conforme": true
+   },
+   "glossary/g97.py": {
+    "sha256": "39bb4776484c8c26ba3aeee0134609c9f301644849f406f923daf47631cb0b1a",
+    "manifeste": "39bb4776484c8c26ba3aeee0134609c9f301644849f406f923daf47631cb0b1a",
+    "conforme": true
+   }
+  }
+ },
+ "premiere_source_lue": {
+  "source_id": "S5",
+  "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2808365",
+  "section": "Introduction et questions 5 à 10 (caféine, bloc occipital ≤ 22 G après rachianesthésie, blood patch, imagerie, suivi)"
+ },
+ "synthese": {
+  "BLOQUANT": 0,
+  "MAJEUR": 4,
+  "MINEUR": 18,
+  "ENRICHISSEMENT": 4
+ },
+ "controles": {
+  "test_v7_static": "G97 mots 14132 fenêtres 54 quiz 6 pareto 14 — OK",
+  "audit_sciences": "échec : 12 erreurs (C02), exécuté avec tests/audit_sciences.py de main sur la base 103745ba",
+  "image_clo_finder_inventory": "3 figures SVG, aucune image",
+  "propositions_classes_fermees": "conformes, aucun style en ligne, toutes les clés data-k des propositions ont une fenêtre",
+  "anciens_uniques": "chaque « ancien » des propositions présent exactement une fois dans son fichier cible (script)"
+ },
+ "calculs": {
+  "total_releves": 699,
+  "par_nature": {
+   "valeur": 492,
+   "vignette": 8,
+   "code_ou_rubrique": 51,
+   "numerotation": 70,
+   "date": 78
+  },
+  "valeurs_medicales": 492,
+  "controle_des_valeurs": {
+   "recalcul_script": 198,
+   "confronte_source": 275,
+   "contexte_seul": 19
+  },
+  "calculables": 76,
+  "recalcules": 76,
+  "correct": 41,
+  "arrondi": 30,
+  "faux": 1,
+  "non_verifiables": 4,
+  "script": "calculs/verifier.py",
+  "inventaire": "calculs/inventaire.json",
+  "resultats": "calculs/resultats.json",
+  "faux_detail": [
+   {
+    "id": "K57",
+    "description": "Paracétamol, insuffisance hépatique, alcoolisme, malnutrition, déshydratation : plafond",
+    "constat": "C03"
+   }
+  ],
+  "non_verifiables_detail": [
+   {
+    "id": "K30",
+    "description": "EPiMAP second patch 126 → 19,8 %",
+    "constat": null
+   },
+   {
+    "id": "K37",
+    "description": "20,4 % « avec blood patch » (n = 56) : numérateur entier possible ?",
+    "constat": "C11"
+   },
+   {
+    "id": "K43",
+    "description": "Estimation dans son IC publié (tumeur)",
+    "constat": "C12"
+   },
+   {
+    "id": "K44",
+    "description": "Estimation dans son IC publié (anticoagulation)",
+    "constat": "C12"
+   }
+  ],
+  "contradictions_inter_fichiers": 0,
+  "note": "ARRONDI = résultat exact après l’arrondi affiché par la leçon (tolérance explicite par contrôle) ; les valeurs non calculables sont confrontées aux sources lues (inventaire, champ controle)."
+ },
+ "constats": [
+  {
+   "id": "C01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G97/G97_c.html",
+   "ancre": "data-s=\"g97-s-anat\"",
+   "constat": "Le sous-onglet « Sémiologie fondamentale et analytique » est absent. Décompte réel des data-s de G97_c.html : 3 (g97-s-anat, g97-s-physio, g97-s-preuves) ; aucun g97-s-semio, aucun marqueur data-semiology ni data-semiology-clinical. La sémiologie existante se limite aux îlots g97-5 et g97-6 de l’onglet 1 : signes énumérés sans technique codifiée, sans chronologie chiffrée, sans valeur, sans regroupement syndromique ni examen systématique ; les composantes du syndrome de mutisme cérébelleux autres que la parole (troubles émotionnels, ataxie, hypotonie) manquent.",
+   "preuve": [
+    {
+     "source_id": "S31",
+     "section": "résumé",
+     "citation_courte": "65% developed symptoms within 24 hours of the lumbar punctures and 92% developed symptoms within 48 hours"
+    },
+    {
+     "source_id": "S18",
+     "section": "introduction",
+     "citation_courte": "four domains: (1) postoperative speech impairment (POSI)… (2) emotional disturbances; (3) ataxia and (4) hypotonia"
+    },
+    {
+     "source_id": "S33",
+     "section": "p. 7",
+     "citation_courte": "0 No contraction … 5 Normal power"
+    },
+    {
+     "source_id": "S2",
+     "section": "note 1",
+     "citation_courte": "cannot be relied upon as a diagnostic criterion"
+    }
+   ],
+   "proposition": "propositions/G97_c_semio.html (bouton g97-tab-semio et panneau g97-s-semio role=tabpanel, neuf sections data-semiology g97-sm-1 à -9, trois cas corrigés) ; propositions/G97_a_semio_clinique.html (bloc data-semiology-clinical=\"G97\" dans g97-6) ; propositions/G97_pop1_semio.html (cinq fenêtres g97-sm-*, à ajouter à G97_pop1.html) ; propositions/glossary_g97_ajouts.py.",
+   "justification": "Mécanisme : sans délai chiffré, sans technique de cotation ni regroupement, le lecteur ne transforme pas une plainte postopératoire en hypothèse datée. Conséquence : retard de diagnostic de la compression ou imagerie inutile. Décision : exigence de Vial du 15.10.2026 et contrat SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE ; MAJEUR, bloquant pour la clôture du cours.",
+   "bloquant_cloture": true,
+   "decompte_data_s": 3,
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G97/G97_c.html",
+   "ancre": "<b>Anatomie → clinique.</b>",
+   "constat": "tests/audit_sciences.py (base 103745ba, exécuté) échoue sur G97 : 12 erreurs. Aucune des trois disciplines ne porte « Science → clinique. », « Science → examen. », « Science → traitement. » ni « À retenir. » ; les encadrés s’intitulent « Anatomie → clinique. », « Physiologie → traitement. », « Preuves → décision. ». La leçon n’a que trois disciplines, dont « Preuves chiffrées », qui relève de la biostatistique ; aucune histologie, biochimie ni génétique.",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "introduction",
+     "citation_courte": "reduced cerebrospinal fluid (CSF) pressure and volume together with compensatory intracranial vasodilation are thought to be responsible"
+    },
+    {
+     "source_id": "S5",
+     "section": "question 9",
+     "citation_courte": "an EBP should be performed ideally at or 1 space below this level"
+    }
+   ],
+   "proposition": "propositions/G97_c_2.html (quatre encadrés par discipline, sourcés, sans changer le fond).",
+   "justification": "Mécanisme : le contrôle automatique vérifie le lien science → décision. Conséquence : la leçon échoue au contrat des sciences. Décision : renommer et compléter les encadrés.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C03",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G97/G97_d.html",
+   "ancre": "Appliquer le plafond de 4000 mg de paracétamol sans vérifier la fonction rénale",
+   "constat": "La leçon donne un plafond unique de 4000 mg/j de paracétamol (g97-p-2, g97-12, Pareto, fenêtre g97-paracetamol). L’information professionnelle suisse impose 2000 mg/j au plus en cas de maladie hépatique chronique ou d’insuffisance hépatique légère à modérée, d’alcoolisme chronique, de malnutrition chronique, de déshydratation ou de cachexie. La déshydratation concerne directement les patients de la leçon (vomissements, apport réduit, hydratation recommandée par le consensus). Le piège G97-C0315 cite l’alcoolisme et la dénutrition sans donner le plafond réduit. Recalcul K57 : attendu 2000 mg, trouvé 4000 mg (FAUX pour cette population).",
+   "preuve": [
+    {
+     "source_id": "S21",
+     "section": "Posologie, Troubles hépatiques",
+     "citation_courte": "alcoolisme chronique, déficit d'alimentation chronique … ou déshydratation … La dose quotidienne ne doit pas dépasser 2 g"
+    },
+    {
+     "source_id": "S5",
+     "section": "question 5",
+     "citation_courte": "adequate hydration should be maintained with oral fluids"
+    }
+   ],
+   "proposition": "propositions/G97_d_1.html (ligne de tableau, piège, encadré, fenêtre et g97-12).",
+   "justification": "Mécanisme : faibles réserves de glutathion hépatique → accumulation du métabolite toxique à dose habituelle. Conséquence : hépatotoxicité à 4 g/j chez une patiente déshydratée ou dénutrie. Décision : plafond de 2000 mg/j dans ces situations, selon la FI suisse.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G97/G97_b.html",
+   "ancre": "Berne pour la forme chronique et son imagerie",
+   "constat": "La leçon présente comme suisses (« série bernoise », « cohorte bernoise », « Fribourg en Brisgau et Berne », et, au 11.7 « Spécificités suisses », « Berne pour la forme chronique et son imagerie ») deux séries de Fribourg-en-Brisgau (Allemagne). Kraus 2024 est une analyse « retrospective, single center » approuvée par le comité d’éthique de l’Université Albert-Ludwig de Fribourg ; Zander 2025 inclut 86 patients consécutifs « from a tertiary medical care center in Freiburg, Germany ». Le « score de Berne » est le nom du score, non le lieu de l’étude. Occurrences : G97-C0472, G97-C0475, G97-C0477 (_b), titre de fenêtre, G97-C0493, G97-C0504 (_pop2), libellé du mot vert.",
+   "preuve": [
+    {
+     "source_id": "S26",
+     "section": "Methods",
+     "citation_courte": "In a retrospective, single center analysis … Ethics Committee of the Albert-Ludwigs-Universität Freiburg"
+    },
+    {
+     "source_id": "S29",
+     "section": "Methods",
+     "citation_courte": "86 consecutive patients from a tertiary medical care center in Freiburg, Germany"
+    }
+   ],
+   "proposition": "propositions/G97_a_1.html (sept remplacements locaux).",
+   "justification": "Mécanisme : une provenance erronée transforme une donnée allemande en spécificité suisse. Conséquence : la rubrique 16 et l’épidémiologie suisse sont surestimées. Décision : attribuer les deux séries à Fribourg-en-Brisgau, retirer la forme chronique des données suisses.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C05",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G97/G97_a.html",
+   "ancre": "L’aiguille coupante, le gros calibre, le nombre de tentatives et l’expérience de l’opérateur augmentent le risque, avec une certitude modérée.",
+   "constat": "Deux inexactitudes : (1) la certitude est élevée, non modérée, pour l’aiguille coupante et pour le calibre d’une aiguille coupante ; (2) « l’expérience de l’opérateur augmente le risque » inverse le sens : une plus grande expérience le diminue. Même erreur dans la fenêtre g97-facteurs-patient (G97-C0376).",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "tableau 4",
+     "citation_courte": "Compared with cutting needles, noncutting spinal needles are associated with decreased PDPH risk (high)"
+    },
+    {
+     "source_id": "S5",
+     "section": "tableau 4",
+     "citation_courte": "a higher level of operator experience level reduces the incidence of PDPH (moderate)"
+    }
+   ],
+   "proposition": "propositions/G97_mineurs.html, C05.",
+   "justification": "Mécanisme : niveau de certitude et sens de l’association mal recopiés. Conséquence : le lecteur sous-estime la force de la preuve sur l’aiguille et lit un contresens. Décision : corriger.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C06",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G97/G97_a.html",
+   "ancre": "Le niveau de ponction n’a pas d’effet.",
+   "constat": "Le consensus ne trouve pas d’association avec le niveau d’insertion d’une péridurale ; il ne se prononce pas sur l’espace de ponction lombaire. Par ailleurs, EPiMAP associe une brèche haute (L1–L3) à l’échec du blood patch.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "tableau 4",
+     "citation_courte": "Evidence does not suggest an association of PDPH with the level of epidural insertion"
+    },
+    {
+     "source_id": "S27",
+     "section": "résultats",
+     "citation_courte": "accidental dural puncture occurred between lumbar levels L1/L3 compared with L3/L5"
+    }
+   ],
+   "proposition": "propositions/G97_mineurs.html, C06.",
+   "justification": "Généralisation d’un énoncé limité à la péridurale ; sans conséquence décisionnelle directe.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C07",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G97/G97_b.html",
+   "ancre": "Cathéter intrathécal après brèche accidentelle",
+   "constat": "Le cathéter intrathécal figure dans le tableau de prévention de la céphalée. Le consensus le propose pour l’anesthésie ou l’analgésie (grade C) et déclare les preuves insuffisantes pour affirmer qu’il réduit la céphalée post-ponction.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "question 4",
+     "citation_courte": "an intrathecal catheter may be considered to provide anesthesia or analgesia"
+    },
+    {
+     "source_id": "S5",
+     "section": "question 4",
+     "citation_courte": "evidence was insufficient to confirm that placement of an intrathecal catheter decreased the risk of PDPH"
+    }
+   ],
+   "proposition": "propositions/G97_mineurs.html, C07.",
+   "justification": "Le classement suggère un effet préventif non démontré.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C08",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G97/G97_b.html",
+   "ancre": "est possible après une aiguille de 22 G ou moins (grade C)",
+   "constat": "Le bloc du nerf grand occipital est recommandé pour une céphalée survenue « after spinal anesthesia with a narrower-gauge (≤22 G) needle ». La leçon omet la restriction à la rachianesthésie et écrit « 22 G ou moins », ambigu car un nombre de gauge plus petit désigne une aiguille plus grosse. La recommandation ne couvre pas la brèche accidentelle à l’aiguille de péridurale du cas 11.6.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "question 6",
+     "citation_courte": "greater occipital nerve blocks may be offered to patients with PDPH after spinal anesthesia … with a narrower-gauge (≤22 G) needle"
+    }
+   ],
+   "proposition": "propositions/G97_mineurs.html, C08 (trois fichiers).",
+   "justification": "Champ d’indication élargi et notation ambiguë.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C09",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G97/G97_b.html",
+   "ancre": "La probabilité d’amélioration du mutisme atteint 50 % vers le jour 16.",
+   "constat": "La source situe la probabilité d’amélioration de 50 % « around 16 days after mutism onset », non au jour 16 postopératoire. La leçon écrit aussi « amélioration de 50 % » (g97-12, Pareto physiologie), ce qui se lit comme une amélioration de moitié, et « s’améliore pour moitié des enfants vers le jour 16 » (sciences).",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "résultats",
+     "citation_courte": "Probability of speech improvement from mutism reached 50% around 16 days after mutism onset"
+    }
+   ],
+   "proposition": "propositions/G97_mineurs.html, C09 (cinq occurrences).",
+   "justification": "Repère temporel et nature de la grandeur imprécis.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C10",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G97/G97_a.html",
+   "ancre": "Une hydrocéphalie préopératoire est présente chez 64 % des enfants,",
+   "constat": "Le chiffre de 64 % vient de l’extension de l’étude européenne (515 sur 800 enfants, 35 centres, 13 pays), non de la cohorte de 376 enfants citée dans le même paragraphe. Recalcul K15 : 515/800 = 64,4 %.",
+   "preuve": [
+    {
+     "source_id": "S18",
+     "section": "résultats",
+     "citation_courte": "Of 800 patients, 515 (64%) had pHC"
+    }
+   ],
+   "proposition": "propositions/G97_mineurs.html, C10.",
+   "justification": "Confusion de dénominateurs entre deux publications.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C11",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G97/G97_b.html",
+   "ancre": "20,4 % des femmes ayant reçu un blood patch et 21,4 % de celles qui n’en ont pas reçu",
+   "constat": "Recalcul K37 : avec 56 femmes traitées et 54 non traitées, 20,4 % n’est atteignable que sur 54 (11/54) et 21,4 % que sur 56 (12/56), alors que les témoins correspondent exactement aux effectifs initiaux (6/113 ; 1/113). L’étiquetage du résumé, recopié fidèlement, est probablement inversé ou repose sur des perdues de vue non publiées. Verdict NON_VERIFIABLE sans le texte intégral.",
+   "preuve": [
+    {
+     "source_id": "S28",
+     "section": "résumé",
+     "citation_courte": "54 women with PDPH … not treated with an epidural blood patch, and 56 … treated"
+    },
+    {
+     "source_id": "S28",
+     "section": "résumé",
+     "citation_courte": "20.4% with an epidural blood patch and 21.4% without"
+    }
+   ],
+   "proposition": "propositions/G97_mineurs.html, C11 (phrase de réserve).",
+   "justification": "Sans conséquence décisionnelle : les deux groupes ont une fréquence voisine ; la réserve empêche une conclusion sur l’effet du patch.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C12",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G97/G97_a.html",
+   "ancre": "L’anticoagulation périopératoire ne modifie pas l’incidence dans cette méta-analyse (0,44 % contre 0,42 %).",
+   "constat": "Recalculs K43 et K44 : dans le résumé de la méta-analyse, l’IC publié pour la tumeur (0,30 %) et pour l’anticoagulation (0,44 %) est 0,006–0,084, intervalle qui ne contient pas l’estimation (recopie apparente de l’IC de la déformation). La conclusion « ne modifie pas » repose donc sur une donnée internement incohérente. La méta-analyse ne porte que sur les hématomes ayant exigé une évacuation chirurgicale.",
+   "preuve": [
+    {
+     "source_id": "S10",
+     "section": "résultats",
+     "citation_courte": "(0.44%, 95% CI 0.006-0.084 versus 0.42%, 95% CI 0.003-0.006)"
+    },
+    {
+     "source_id": "S10",
+     "section": "titre",
+     "citation_courte": "requiring surgical evacuation"
+    }
+   ],
+   "proposition": "propositions/G97_mineurs.html, C12.",
+   "justification": "Une absence de différence ne se lit pas comme une absence d’effet, surtout sur un IC erroné.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C13",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G97/G97_c.html",
+   "ancre": "du liquide épidural lombaire était visible chez 11 % d’entre eux.",
+   "constat": "Le dénominateur est 83 patients à imagerie adéquate, non 86. Recalculs K49 (9/83 = 10,8 %) et K50 (9/86 = 10,5 %).",
+   "preuve": [
+    {
+     "source_id": "S29",
+     "section": "résultats",
+     "citation_courte": "Local epidural fluid was present in 9/83 (11%) cases with adequate imaging"
+    }
+   ],
+   "proposition": "propositions/G97_mineurs.html, C13.",
+   "justification": "Arrondi et dénominateur imprécis, sans conséquence.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C14",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G97/G97_a.html",
+   "ancre": "réduit les complications pulmonaires sans augmenter la fuite, la céphalée hypotensive, la reprise chirurgicale ni la pseudoméningocèle.",
+   "constat": "Pour la fuite de LCR, le risque relatif est de 1,34 (0,83 à 2,14) : la différence n’est pas significative, mais « sans augmenter » affirme une absence d’effet que l’IC ne démontre pas. Même formulation en G97-C0155 et G97-C0411.",
+   "preuve": [
+    {
+     "source_id": "S20",
+     "section": "résultats",
+     "citation_courte": "CSF leak (RR 1.34; 95% CI 0.83-2.14; p = 0.23)"
+    }
+   ],
+   "proposition": "propositions/G97_mineurs.html, C14.",
+   "justification": "Non-significativité lue comme équivalence.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C15",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G97/G97_pop2.html",
+   "ancre": "L’échec désigne l’absence de soulagement complet : il ne signifie pas que le patch est inutile",
+   "constat": "Dans EPiMAP, l’échec est une douleur cotée au moins 7 sur 10 debout à 4, 24 ou 48 h ou un second patch ; le succès partiel regroupe les autres cas. La définition de la fenêtre est celle de Genève ; comparer 25,9 % et 28,3 % sans le dire mélange deux définitions.",
+   "preuve": [
+    {
+     "source_id": "S27",
+     "section": "méthodes",
+     "citation_courte": "Failed epidural blood patch was defined as headache intensity numeric rating scale (NRS) score ≥7 in the upright position at 4, 24, or 48 h, or the need for a second epidural blood patch"
+    },
+    {
+     "source_id": "S24",
+     "section": "méthodes",
+     "citation_courte": "The absence of full symptom relief and the need for further treatment was defined as an EBP failure"
+    }
+   ],
+   "proposition": "propositions/G97_mineurs.html, C15.",
+   "justification": "Définitions d’échec non comparables.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C16",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G97/G97_d.html",
+   "ancre": "24 premières heures ; aucune information professionnelle suisse de caféine seule trouvée",
+   "constat": "Une information professionnelle suisse de caféine seule existe (Peyona®, citrate de caféine), mais pour l’apnée du prématuré : il n’existe donc pas de FI suisse pour l’indication de l’adulte, ce que la leçon doit dire exactement. Le mécanisme, déclaré « non détaillé dans les sources lues » (G97-C0404), figure dans le texte intégral de la revue déjà citée : inhibition de la phosphodiestérase et antagonisme de l’adénosine, opposés à la vasodilatation intracrânienne. Cette revue rapporte aussi 300 à 500 mg deux fois par jour, au-delà possible du plafond de 900 mg du consensus.",
+   "preuve": [
+    {
+     "source_id": "S32",
+     "section": "fiche AmiKo",
+     "citation_courte": "apnée primaire du nouveau-né prématuré"
+    },
+    {
+     "source_id": "S8",
+     "section": "Methylxanthines",
+     "citation_courte": "inhibit phosphodiesterase and to antagonize adenosine, thereby counteracting PDPH-associated intracranial vasodilation"
+    },
+    {
+     "source_id": "S8",
+     "section": "Methylxanthines",
+     "citation_courte": "dosages between 300 and 500 mg twice daily"
+    }
+   ],
+   "proposition": "propositions/G97_d_1.html, C16.",
+   "justification": "Exactitude réglementaire et mécanisme sourcé ; le plafond de 900 mg reste la référence.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C17",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G97/G97_d.html",
+   "ancre": "troisième trimestre de grossesse, ulcère ou hémorragie digestive",
+   "constat": "L’alerte g97-p-3 omet deux points de la FI suisse de l’ibuprofène : la contre-indication en cas d’antécédent de bronchospasme, d’urticaire ou d’allergie après acide acétylsalicylique ou autre AINS, et la mise en garde dès la 20e semaine (oligohydramnios, rétrécissement du canal artériel), pertinente pour une ponction pendant la grossesse.",
+   "preuve": [
+    {
+     "source_id": "S22",
+     "section": "Contre-indications",
+     "citation_courte": "Antécédents de spasme bronchique, d'urticaire ou de symptômes allergiques après administration d'acide acétylsalicylique"
+    },
+    {
+     "source_id": "S22",
+     "section": "Grossesse",
+     "citation_courte": "La prise d'AINS à partir de la 20e semaine de grossesse peut provoquer des troubles de la fonction rénale du fœtus"
+    }
+   ],
+   "proposition": "propositions/G97_d_1.html, C17.",
+   "justification": "Contre-indication et mise en garde de la FI suisse absentes.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C18",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G97/G97_b.html",
+   "ancre": "la catégorie ne porte aucune exclusion ni indication de codage dans la version 2024",
+   "constat": "Exact au niveau de G97, mais la céphalée après anesthésie rachidienne ou péridurale pendant la grossesse, le travail ou le post-partum se code O29.4, O74.5 ou O89.4 dans la CIM-10-GM 2024. La vignette d’ouverture (césarienne), les cas 2 et 4 et le cas 11.6 sont obstétricaux.",
+   "preuve": [
+    {
+     "source_id": "S34",
+     "section": "bloc O85–O92",
+     "citation_courte": "O89.4 Kopfschmerzen nach Spinal- oder Periduralanästhesie im Wochenbett"
+    },
+    {
+     "source_id": "S34",
+     "section": "bloc O60–O75",
+     "citation_courte": "O74.5 Kopfschmerzen nach Spinal- oder Periduralanästhesie während der Wehentätigkeit und bei der Entbindung"
+    }
+   ],
+   "proposition": "propositions/G97_mineurs.html, C18 (paragraphe pour la fenêtre g97-cim).",
+   "justification": "Périmètre CIM (rubrique 2) incomplet pour la population principale du cours.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C19",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G97/G97_pop1.html",
+   "ancre": "La classification s’applique aux adultes et aux enfants.",
+   "constat": "L’affirmation n’a pas été retrouvée dans les pages ICHD-3 7.2 et 7.2.1 lues (texte intégral) ; aucune autre source du dossier ne la porte. Même phrase dans G97_c.html (G97-C0201).",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "texte intégral",
+     "citation_courte": "Diagnostic criteria … low cerebrospinal fluid (CSF) pressure (<60 mm CSF)"
+    }
+   ],
+   "proposition": "propositions/G97_mineurs.html, C19.",
+   "justification": "Affirmation non sourcée.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C20",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G97/G97_d.html",
+   "ancre": "Non reproduite",
+   "constat": "La dose par prise de l’enfant de 9 à 12 ans est disponible dans la FI : 400 à 600 mg par prise, intervalle de 6 à 8 heures, au plus 2000 mg/j et 75 mg/kg/j (recalcul K54).",
+   "preuve": [
+    {
+     "source_id": "S21",
+     "section": "Posologie",
+     "citation_courte": "30 à 40 kg (9 à 12 ans) 400 à 600 mg soit 1 comprimé par prise 2 g"
+    }
+   ],
+   "proposition": "propositions/G97_d_1.html, C20.",
+   "justification": "Donnée posologique disponible et utile.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C21",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G97/G97_c.html",
+   "ancre": "font-size=\"14\" text-anchor=\"middle\"><text x=\"120\" y=\"14\">Axe du rachis</text>",
+   "constat": "Les trois figures (viewBox de 640, police de 13 à 14) rendent un texte d’environ 7,3 à 7,8 px dans un conteneur de 358 px (calcul, non mesuré au navigateur). La légende gauche de la figure 1, centrée à x = 140, déborde probablement le bord gauche. Les trois figures sont des schémas non anatomiques, conformes à la règle des figures.",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "résultats",
+     "citation_courte": "11·0% … 4·2%"
+    }
+   ],
+   "proposition": "propositions/G97_c_figures.html (viewBox 360, mêmes valeurs, recalculs K69 et K70).",
+   "justification": "Lisibilité à 390 px.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C22",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G97/G97_pop2.html",
+   "ancre": "Le consensus de 2023 propose des AINS en post-partum.",
+   "constat": "Le consensus propose paracétamol et AINS à tout patient atteint de céphalée post-ponction, sauf contre-indication ; il ne traite pas spécifiquement le post-partum ni l’allaitement pour les AINS. Le contentieux reste réel, mais sa formulation prête au consensus une position qu’il ne prend pas.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "question 5",
+     "citation_courte": "regular multimodal analgesia, including acetaminophen and nonsteroidal anti-inflammatory drugs … should be offered to all patients with PDPH unless contraindicated"
+    }
+   ],
+   "proposition": "propositions/G97_d_1.html, C22.",
+   "justification": "Attribution exacte du contentieux.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C23",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G97/G97_a.html",
+   "ancre": "En revanche, le mécanisme intime par lequel la baisse de pression produit la douleur n’est pas détaillé dans les sources lues",
+   "constat": "Le mécanisme admis (baisse de pression et de volume, vasodilatation intracrânienne compensatrice ; mécanisme exact inconnu) figure dans le texte intégral de S8, que la production n’avait lu qu’en résumé.",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "introduction",
+     "citation_courte": "reduced cerebrospinal fluid (CSF) pressure and volume together with compensatory intracranial vasodilation are thought to be responsible, the exact mechanisms causing PDPH remain unknown"
+    }
+   ],
+   "proposition": "propositions/G97_mineurs.html, C23.",
+   "justification": "Rubrique 5 (normal → pathologique) renforcée sans affirmer plus que la source.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C24",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G97/G97_a.html",
+   "ancre": "Pour la <b>céphalée post-ponction</b>, on recherche le délai (dans les 5 jours)",
+   "constat": "La chronologie réelle n’est pas chiffrée : 65 % des céphalées débutent dans les 24 heures et 92 % dans les 48 heures ; durée moyenne de 5 jours (1 à 12) chez les guérisons spontanées (60 %).",
+   "preuve": [
+    {
+     "source_id": "S31",
+     "section": "résumé",
+     "citation_courte": "65% developed symptoms within 24 hours … 92% … within 48 hours … mean duration of the PDPHs was 5 days, with a range of 1-12"
+    }
+   ],
+   "proposition": "propositions/G97_mineurs.html, C24 ; propositions/G97_a_semio_clinique.html.",
+   "justification": "Rubrique 7 (fréquences) passe de partiel à couvert pour la chronologie.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C25",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G97/G97_a.html",
+   "ancre": "Le trouble de la parole postopératoire, abrégé",
+   "constat": "Le syndrome de mutisme cérébelleux est réduit au trouble de la parole ; ses quatre domaines et la définition opératoire de la parole réduite manquent.",
+   "preuve": [
+    {
+     "source_id": "S18",
+     "section": "introduction",
+     "citation_courte": "POSI is classified into (1) reduced speech, limited to single words or short sentences, only elicited by vigorous stimulation, and (2) mutism"
+    }
+   ],
+   "proposition": "propositions/G97_mineurs.html, C25 ; fenêtre g97-sm-cms.",
+   "justification": "Définition complète du tableau G97.81.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C26",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G97/G97_pop2.html",
+   "ancre": "Seul le résumé de la recommandation 2022 a été lu",
+   "constat": "Les intervalles ESAIC/ESRA entre antithrombotique et geste neuraxial, décisionnels pour un blood patch ou une ponction chez un patient anticoagulé, restent absents. L’audit n’a pas pu lire le texte intégral (HTTP 402) ; aucun intervalle n’est proposé de mémoire.",
+   "preuve": [
+    {
+     "source_id": "S9",
+     "section": "résumé",
+     "citation_courte": "These time intervals vary according to the type and dose of anticoagulant drugs, renal function and whether a traumatic puncture has occured"
+    }
+   ],
+   "proposition": "Lacune maintenue : obtenir le texte intégral (abonnement institutionnel) avant toute rédaction des intervalles.",
+   "justification": "Point décisionnel non documentable avec les accès disponibles.",
+   "ancre_occurrences": 1
+  }
+ ],
+ "matrice_20": [
+  {
+   "rang": 1,
+   "rubrique": "Question clinique et enjeu pour l’examen fédéral",
+   "statut": "couvert",
+   "ancre": "g97-0 ; g97-11 (11.8)"
+  },
+  {
+   "rang": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "partiel",
+   "ancre": "g97-1, fenêtre g97-cim (G97.0 à G97.9 conformes à S1) ; renvoi obstétrical O29.4/O74.5/O89.4 absent (C18)"
+  },
+  {
+   "rang": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "couvert",
+   "ancre": "g97-1 (ICHD-3 7.2, 7.2.1, 7.2.2 conformes à S2–S4 ; parole)"
+  },
+  {
+   "rang": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "partiel",
+   "ancre": "g97-2 ; seule donnée suisse : Genève (blood patch) ; séries chroniques faussement attribuées à Berne (C04)"
+  },
+  {
+   "rang": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "partiel",
+   "ancre": "g97-3, g97-s-physio ; mécanisme de vasodilatation disponible (C23) ; pas de valeur normale de pression"
+  },
+  {
+   "rang": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "couvert",
+   "ancre": "g97-4 ; certitudes et sens inexacts (C05, C06)"
+  },
+  {
+   "rang": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "partiel",
+   "ancre": "g97-5 ; chronologie non chiffrée (C24) ; composantes du mutisme absentes (C25)"
+  },
+  {
+   "rang": 8,
+   "rubrique": "Examen clinique (signes, Se/Sp)",
+   "statut": "partiel",
+   "ancre": "g97-6 ; aucune technique ni cotation ; sémiologie absente (C01) ; Se/Sp non publiées (LACUNE)"
+  },
+  {
+   "rang": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "couvert",
+   "ancre": "g97-8 alert, 8.1, 8.2 ; conformes à S5 et S11"
+  },
+  {
+   "rang": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "couvert",
+   "ancre": "g97-e-1 à e-4 ; dénominateur 83 (C13)"
+  },
+  {
+   "rang": 11,
+   "rubrique": "Diagnostic différentiel",
+   "statut": "couvert",
+   "ancre": "g97-7 (7.4), g97-e-3, fenêtre g97-postpartum"
+  },
+  {
+   "rang": 12,
+   "rubrique": "Prise en charge suisse",
+   "statut": "partiel",
+   "ancre": "g97-9, g97-p-1 à p-4 ; plafond paracétamol 2 g absent (C03) ; FI ibuprofène incomplète (C17) ; intervalles ESAIC/ESRA absents (C26)"
+  },
+  {
+   "rang": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "couvert",
+   "ancre": "g97-8 (8.3, 8.4), g97-10 ; réserves C09, C11"
+  },
+  {
+   "rang": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "couvert",
+   "ancre": "g97-10 ; conforme à S5 question 10"
+  },
+  {
+   "rang": 15,
+   "rubrique": "Situations particulières",
+   "statut": "partiel",
+   "ancre": "g97-11 ; grossesse (20e semaine) absente (C17) ; sujet âgé non documenté"
+  },
+  {
+   "rang": 16,
+   "rubrique": "Spécificités suisses",
+   "statut": "partiel",
+   "ancre": "g97-11 (11.7) ; provenance bernoise erronée (C04) ; déclaration, LAA, AI, conduite : LACUNE déclarée"
+  },
+  {
+   "rang": 17,
+   "rubrique": "Critères formels du diagnostic",
+   "statut": "couvert",
+   "ancre": "g97-12 alert (ICHD-3 7.2.1 et 7.2.2, conformes à S3 et S4)"
+  },
+  {
+   "rang": 18,
+   "rubrique": "Paramètres clés chiffrés",
+   "statut": "partiel",
+   "ancre": "g97-12 key ; plafond paracétamol (C03) et repère du mutisme (C09) à corriger"
+  },
+  {
+   "rang": 19,
+   "rubrique": "Sous-codes CIM-10-GM couverts",
+   "statut": "couvert",
+   "ancre": "fenêtre g97-cim ; G97.83, G97.84, G97.88, G97.9 par libellé seul (LACUNE de production)"
+  },
+  {
+   "rang": 20,
+   "rubrique": "Points d’examen fédéral",
+   "statut": "partiel",
+   "ancre": "g97-11.8, g97-e-4 ; objectifs PROFILES non consultés (LACUNE)"
+  }
+ ],
+ "rubrique_21_semiologie": "absente (C01)",
+ "semiologie": {
+  "statut": "absente",
+  "decompte_data_s": 3,
+  "data_s": [
+   "g97-s-anat",
+   "g97-s-physio",
+   "g97-s-preuves"
+  ],
+  "sous_onglet_semio": false,
+  "marqueurs_data_semiology": 0,
+  "gravite": "MAJEUR",
+  "bloquant_cloture_cours_et_lot": true,
+  "constat_id": "C01",
+  "fondamentale": {
+   "statut": "partielle dans l’onglet 1, absente comme discipline",
+   "ancres": [
+    "g97-5",
+    "g97-6",
+    "g97-orthostatique",
+    "g97-cppd-def"
+   ],
+   "manques": "chronologie chiffrée, technique de la manœuvre posturale, cotation motrice, mécanisme de chaque signe, composantes du mutisme cérébelleux, valeur chiffrée (Se/Sp non publiées : LACUNE)"
+  },
+  "analytique": {
+   "statut": "absente",
+   "ancres": [],
+   "manques": "regroupement syndromique, raisonnement en cinq étapes, examen systématique, synthèse présentée, trois cas corrigés"
+  },
+  "proposition": [
+   "propositions/G97_c_semio.html",
+   "propositions/G97_a_semio_clinique.html",
+   "propositions/G97_pop1_semio.html",
+   "propositions/glossary_g97_ajouts.py"
+  ],
+  "grille_SEM": {
+   "SEM-01": "non (data-s : 3, aucun g97-s-semio)",
+   "SEM-02": "non",
+   "SEM-03": "non (audit_sciences : 12 erreurs, C02)",
+   "SEM-04": "oui (test_v7 --static G97 : OK sur la leçon actuelle)",
+   "SEM-05": "non",
+   "SEM-06": "non",
+   "SEM-07": "non",
+   "SEM-08": "non",
+   "SEM-09": "non",
+   "SEM-10": "partiel (pièges g97-5, g97-6)",
+   "SEM-11": "non",
+   "SEM-12": "non",
+   "SEM-13": "partiel (alert g97-8 cohérente avec S5 et S11 ; pas d’alert sémiologique)",
+   "SEM-14": "partiel (g97-7.4 : discriminants partiellement sourcés)",
+   "SEM-15": "non",
+   "SEM-16": "non",
+   "SEM-17": "non",
+   "SEM-18": "non évaluable (absente)",
+   "SEM-19": "non évaluable (absente)",
+   "SEM-20": "non évaluable",
+   "SEM-21": "non évaluable",
+   "SEM-22": "non (bouton absent)",
+   "SEM-23": "non (aucune capture possible)",
+   "SEM-24": "oui (statut « Revue par intelligence artificielle · Audit différé · Aucune validation médicale humaine »)"
+  },
+  "lacune_valeurs": "Aucune sensibilité, spécificité ni rapport de vraisemblance pour l’orthostatisme, la raideur de nuque, les acouphènes, la séquence de l’hématome ou la classification de la parole dans les sources lues (S2, S3, S5, S8, S11, S16, S18, S26, S31) ; la proposition l’écrit.",
+  "cibles": {
+   "propositions/G97_c_semio.html": "chapters/G97/G97_c.html",
+   "propositions/G97_a_semio_clinique.html": "chapters/G97/G97_a.html",
+   "propositions/G97_pop1_semio.html": "chapters/G97/G97_pop1.html",
+   "propositions/glossary_g97_ajouts.py": "glossary/g97.py"
+  }
+ },
+ "figures": [
+  {
+   "ancre": "aria-label=\"Figure 1 — Orientation du biseau par rapport à l’axe du rachis\"",
+   "fichier": "chapters/G97/G97_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Deux axes pointillés et deux traits épais (biseau parallèle et perpendiculaire).",
+   "verification": "SVG lu ; aucune structure anatomique ; texte ≈ 7,8 px à 390 px (calcul viewBox 640, police 14) ; légende gauche probablement rognée.",
+   "constat_id": "C21",
+   "ancre_occurrences": 1
+  },
+  {
+   "ancre": "aria-label=\"Figure 2 — Chaîne de la céphalée post-ponction\"",
+   "fichier": "chapters/G97/G97_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Quatre boîtes reliées par des flèches.",
+   "verification": "Texte ≈ 7,3 px à 390 px (calcul).",
+   "constat_id": "C21",
+   "ancre_occurrences": 1
+  },
+  {
+   "ancre": "aria-label=\"Figure 3 — Incidences comparées de la céphalée post-ponction\"",
+   "fichier": "chapters/G97/G97_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Deux barres (11,0 % et 4,2 %).",
+   "verification": "Proportions recalculées (K10 : 330 × 4,2 / 11,0 = 126) ; texte ≈ 7,8 px (calcul).",
+   "constat_id": "C21",
+   "ancre_occurrences": 1
+  }
+ ],
+ "figures_synthese": {
+  "total": 3,
+  "ANATOMIQUE_IA": 0,
+  "SCHEMA_NON_ANATOMIQUE": 3,
+  "IMAGE_SOURCEE": 0,
+  "methode": "python3 tools/image_clo_finder.py inventory G97 ; lecture du SVG ; calcul de la taille rendue (police × 358 / viewBox)"
+ },
+ "verifications_conformes": [
+  "ICHD-3 7.2, 7.2.1, 7.2.2 : critères, délai de 5 jours, rémission en 2 semaines, facteurs de risque [S2–S4]",
+  "Nath 2018 : 110 essais, 31 412 participants, 11,0 % (9,1–13,3) contre 4,2 % (3,3–5,2), RR 0,40 (0,34–0,47) ; critères secondaires [S7]",
+  "Consensus 2023 : grades et certitudes de la caféine (900 mg ; 200–300 mg), du blood patch (15–20 mL, > 30 mL, 33–91 %, < 48 h, niveau), plaquettes 70 × 10⁹/L, imagerie, suivi [S5]",
+  "Chen 2022 : 0,52 % et tous les sous-groupes recopiés fidèlement [S10]",
+  "Grønbæk 2021 : 26 centres, 9 pays, 112/376, 53, 59, OR [S16]",
+  "Tomala 2023 (Genève) et EPiMAP 2022 : chiffres et facteurs [S24 ; S27]",
+  "FI suisses : paracétamol (4000, 3000, 2000 mg ; contre-indications ; allaitement) et ibuprofène (400–800 mg ; 2400 mg ; contre-indications ; allaitement, concordant sur trois FI) [S21 ; S22]",
+  "CIM-10-GM 2024 : G97.0 à G97.9 et inclusion du syndrome de la fosse postérieure [S1]"
+ ],
+ "lacunes": [
+  "Aucune recommandation ni source de sémiologie suisse sur la céphalée post-ponction, l’hématome rachidien postopératoire, le mutisme cérébelleux ou le surdrainage : WebSearch « Revue Médicale Suisse céphalée post-ponction durale blood patch » sans résultat suisse.",
+  "Texte intégral ESAIC/ESRA 2022 (S9) refusé (HTTP 402) : intervalles antithrombotiques non lus, non proposés (C26).",
+  "Définition Delphi du mutisme (S15) : texte Springer non accessible (redirection d’authentification) ; les quatre domaines viennent de S18.",
+  "S5 (consensus 2023) lu par extraction ciblée sur 129 083 caractères ; tableau 1 des grades (définitions USPSTF) non relu.",
+  "Résumés seuls pour S6, S7, S9 à S17, S19, S20, S23 à S25, S27, S28, S31 ; résumé de S31 tronqué par PubMed (gravité, signes associés détaillés non lus).",
+  "Weiss 2025 (S28) : attribution des pourcentages de céphalée chronique aux groupes avec ou sans blood patch non tranchable sans le texte intégral (K37).",
+  "Codage de la céphalée post-ponction hors grossesse (G97.0 ou G97.1) : index alphabétique de la CIM-10-GM non consulté.",
+  "S30 (libellés français de l’OFS) non relu ; libellés contrôlés par concordance avec S1.",
+  "Objectifs PROFILES, statut LAA/AI, aptitude à la conduite : non recherchés au-delà du dossier de production (lacune déclarée par la production, maintenue).",
+  "Valeur normale de pression d’ouverture du LCR : non trouvée dans les sources lues ; seule la conversion du seuil (≈ 0,6 kPa) est proposée.",
+  "Lisibilité des figures : estimée par calcul du viewBox, non mesurée au navigateur ; aucune capture réelle prise (SEM-22, SEM-23).",
+  "Sensibilité, spécificité et rapports de vraisemblance des signes : non publiés dans les sources lues (SEM-08)."
+ ],
+ "propositions": [
+  "G97_a_1.html",
+  "G97_a_semio_clinique.html",
+  "G97_c_2.html",
+  "G97_c_figures.html",
+  "G97_c_semio.html",
+  "G97_d_1.html",
+  "G97_mineurs.html",
+  "G97_pop1_semio.html",
+  "glossary_g97_ajouts.py"
+ ],
+ "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+}
