@@ -2,16 +2,19 @@
  "mission": "ALPHA1-CLAUDE-G64-LANG",
  "code": "G64",
  "type_audit": "linguistique",
- "base_sha": "32416a2080e67537641040a81252dec0b3e6d137",
+ "base_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "worktree_base": "32416a2080e67537641040a81252dec0b3e6d137",
+ "worktree_base_note": "START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste.",
  "generation": 1,
  "branche": "claude/alpha1/g64-lang-g1",
  "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-G64-LANG-g1",
  "conversation": "alpha1-claude-g64-lang",
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
- "date_debut": "2026-10-16T08:00:00Z",
- "date_fin": "2026-10-16T06:02:05Z",
- "note_base": "Le manifeste indique source_snapshot_sha d1a488ad4f0031d7f2a4b47a0721e89a93475d77 ; le commit de base du worktree est 32416a2080e67537641040a81252dec0b3e6d137. Les sept fichiers de la leçon ont des empreintes SHA-256 identiques au manifeste.",
+ "date_debut": null,
+ "date_debut_note": "L'heure de début n'a pas été relevée avec date -u au démarrage ; aucune valeur n'est inventée.",
+ "date_fin": "2026-10-16T06:12:29Z",
+ "note_base": "base_sha = celui du manifeste (d1a488ad) ; worktree_base = 32416a20. Sources figées identiques, empreintes conformes.",
  "lecture": {
   "fichiers": [
    {
@@ -66,49 +69,46 @@
   "date": "2026-10-16"
  },
  "synthese": {
-  "nombre_propositions": 74,
-  "renvois_medicaux": 27,
+  "nombre_propositions": 64,
+  "renvois_medicaux": 37,
   "observations_globales": 7,
   "par_fichier": {
-   "a": 18,
-   "b": 10,
-   "c": 5,
-   "d": 8,
+   "a": 14,
+   "b": 8,
+   "c": 4,
+   "d": 6,
    "p1": 7,
-   "p2": 9,
+   "p2": 8,
    "g": 17
   },
   "par_categorie": {
    "phrase nominale": 23,
-   "ambiguïté": 13,
+   "ambiguïté": 9,
    "grammaire": 7,
    "syntaxe": 5,
    "lexique": 4,
    "abréviation": 3,
    "répétition": 2,
-   "cohérence terminologique": 2,
-   "précision": 2,
    "ponctuation": 2,
    "registre": 2,
    "lourdeur": 1,
    "personnification": 1,
    "infinitif injonctif": 1,
    "cohérence": 1,
-   "tautologie": 1,
    "typographie": 1,
    "méta-discours": 1,
-   "terminologie": 1,
    "anglicisme": 1
   }
  },
+ "controle_obligations_cliniques": "Aucune proposition n'affaiblit une obligation clinique ; les propositions touchant une notion clinique (classification, population, portée, mesure statistique) sont des renvois médicaux.",
  "choix_differes": [
   "Espaces insécables globales (G64-LANG-OG-01)",
   "Usage « fibrillation atriale / auriculaire » (G64-LANG-OG-02, aucune occurrence)"
  ],
  "verification_mecanique": {
   "script": "verification_unicite.py",
-  "regle": "chaque champ « ancien » apparaît exactement une fois dans le fichier cible ; les propositions sont appliquées sans chevauchement ; les balises sont inchangées (sauf <b> ajouté dans G64-LANG-c-03 pour remplacer des majuscules d’insistance) ; aucun nombre ajouté ou retiré (hors répétition des valeurs 46 et 10 déjà présentes dans la même phrase et mention de « G64 » dans G64-LANG-a-04) ; le glossaire modifié compile en Python.",
-  "resultat": "74/74 propositions à ancien unique ; aucun chevauchement"
+  "regle": "chaque champ « ancien » apparaît exactement une fois dans le fichier cible ; les propositions sont appliquées sans chevauchement ; les balises sont inchangées (sauf <b> ajouté dans G64-LANG-c-03 pour remplacer des majuscules d’insistance) ; aucun nombre ajouté ou retiré (hors mention de « G64 » dans G64-LANG-a-04) ; le glossaire modifié compile en Python.",
+  "resultat": "64/64 propositions à ancien unique ; aucun chevauchement"
  },
  "constats": [
   {
@@ -326,6 +326,86 @@
    "type": "information étrangère à la leçon",
    "constat": "La définition des QST (« épreuves psychophysiques », « seuils de perception ») ne figure pas dans les passages de la leçon ; elle vient d’un savoir non cité. À sourcer ou à restreindre à la phrase de la fenêtre (diagnostic des petites fibres).",
    "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-28",
+   "fichier": "chapters/G64/G64_a.html",
+   "ancre": "la distribution (symétrique distale, radiculaire, multifocale)",
+   "type": "changement de notion clinique",
+   "constat": "Changement de terme de classification : « radiculaire » deviendrait « polyradiculaire » (profil polyradiculonévrite). Décision clinique réservée à l'audit MED. Proposition initiale : « la distribution (symétrique distale, radiculaire, multifocale) » remplacé par « la distribution (symétrique distale, polyradiculaire, multifocale) ».",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-29",
+   "fichier": "chapters/G64/G64_a.html",
+   "ancre": "sans anémie macrocytaire chez environ 50 % des patients neurologiques",
+   "type": "changement de notion clinique",
+   "constat": "Préciser la population (« concernés ») modifie la portée du 50 % : patients neurologiques ou patients carencés. À trancher par l'audit MED. Proposition initiale : « sans anémie macrocytaire chez environ 50 % des patients neurologiques » remplacé par « sans anémie macrocytaire chez environ 50 % des patients neurologiques concernés ».",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-30",
+   "fichier": "chapters/G64/G64_a.html",
+   "ancre": "<td>Incidences faibles</td>",
+   "type": "changement de notion clinique",
+   "constat": "Remplacer « incidences » par « fréquences » modifie la mesure épidémiologique (incidence / prévalence). À trancher par l'audit MED. Proposition initiale : « <td>Incidences faibles</td> » remplacé par « <td>Fréquences faibles</td> ».",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-31",
+   "fichier": "chapters/G64/G64_a.html",
+   "ancre": "<td>Le positionnement est en cause dans 20 à 30 % des cas</td>",
+   "type": "changement de notion clinique",
+   "constat": "Préciser le dénominateur (« neuropathies postopératoires ») modifie la population du 20 à 30 %. À vérifier à la source. Proposition initiale : « <td>Le positionnement est en cause dans 20 à 30 % des cas</td> » remplacé par « <td>Le positionnement est en cause dans 20 à 30 % des neuropathies postopératoir ».",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-32",
+   "fichier": "chapters/G64/G64_b.html",
+   "ancre": "inhibiteurs de points de contrôle immunitaire, neuropathie sévère sans cause.",
+   "type": "changement de notion clinique",
+   "constat": "Changer l'objet du signal (traitement par inhibiteurs) modifie la notion de drapeau rouge. À trancher par l'audit MED. Proposition initiale : « inhibiteurs de points de contrôle immunitaire, neuropathie sévère sans cause. » remplacé par « traitement par inhibiteurs de points de contrôle immunitaire, neuropathie sévère ».",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-33",
+   "fichier": "chapters/G64/G64_b.html",
+   "ancre": "prégabaline : 150 à 600 mg/jour selon la dose et la fonction rénale",
+   "type": "changement de notion clinique",
+   "constat": "Remplacer « selon la dose » par « selon la titration » modifie le paramètre décisionnel de la plage posologique. À vérifier dans l'information professionnelle. Proposition initiale : « prégabaline : 150 à 600 mg/jour selon la dose et la fonction rénale » remplacé par « prégabaline : 150 à 600 mg/jour selon la titration et la fonction rénale ».",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-34",
+   "fichier": "chapters/G64/G64_c.html",
+   "ancre": "cause une neuropathie, sans anémie macrocytaire chez environ la moitié des patients neurologiques.",
+   "type": "changement de notion clinique",
+   "constat": "Préciser la population (« concernés ») modifie la portée du 50 % : patients neurologiques ou patients carencés. À trancher par l'audit MED. Proposition initiale : « cause une neuropathie, sans anémie macrocytaire chez environ la moitié des patie » remplacé par « cause une neuropathie ; elle existe sans anémie macrocytaire chez environ la moi ».",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-35",
+   "fichier": "chapters/G64/G64_d.html",
+   "ancre": "Le rapport des risques absolus donne une idée du bénéfice relatif à l’inconvénient.",
+   "type": "changement de notion clinique",
+   "constat": "Renommer le rapport en « différences de risque absolu » modifie la mesure statistique. À confirmer par l'audit MED. Proposition initiale : « Le rapport des risques absolus donne une idée du bénéfice relatif à l’inconvénie » remplacé par « Le rapport des différences de risque absolu donne une idée du bénéfice par rappo ».",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-36",
+   "fichier": "chapters/G64/G64_d.html",
+   "ancre": "Réponse B. 46 ÷ 4,6 = 10 patients répondeurs supplémentaires.",
+   "type": "changement de notion clinique",
+   "constat": "Reformuler « 10 patients répondeurs supplémentaires » touche la lecture du NNT. À confirmer par l'audit MED. Proposition initiale : « Réponse B. 46 ÷ 4,6 = 10 patients répondeurs supplémentaires. » remplacé par « Réponse B. 46 ÷ 4,6 = 10 : en traitant 46 patients, on obtient environ 10 répond ».",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-37",
+   "fichier": "chapters/G64/G64_pop2.html",
+   "ancre": "symétrique distale, radiculaire, multifocale",
+   "type": "changement de notion clinique",
+   "constat": "Changement de terme de classification : « radiculaire » deviendrait « polyradiculaire » (profil polyradiculonévrite). Décision clinique réservée à l'audit MED. Proposition initiale : « symétrique distale, radiculaire, multifocale » remplacé par « symétrique distale, polyradiculaire, multifocale ».",
+   "statut": "renvoi_medical"
   }
  ],
  "observations_globales": [
@@ -363,24 +443,25 @@
   },
   {
    "id": "G64-LANG-OG-06",
-   "objet": "Structure de l’onglet Sciences (hors périmètre linguistique)",
-   "constat": "Hors périmètre linguistique, MAJEUR, transmis à l'audit MED : le fichier G64_c.html compte 4 attributs data-s (Anatomie, Histologie, Physiologie, Biochimie), soit 4 disciplines réelles au lieu de 5, et aucun sous-onglet « Sémiologie fondamentale et analytique » en premier bouton .sci-bar.",
+   "objet": "Sixième sous-onglet Sémiologie (hors périmètre linguistique)",
+   "constat": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md), transmis à l'audit MED : G64_c.html compte 4 attributs data-s (Anatomie, Histologie, Physiologie, Biochimie), soit 4 disciplines réelles au lieu de 5, et aucun sous-onglet « Sémiologie fondamentale et analytique » en premier bouton .sci-bar.",
+   "gravite": "MAJEUR",
+   "bloquant": true,
    "statut": "transmis_MED"
   },
   {
    "id": "G64-LANG-OG-07",
    "objet": "Figures",
-   "constat": "La leçon compte une seule figure dessinée : la figure 1 de G64_b.html (SVG, schéma de la démarche en cinq encadrés). Aucune figure anatomique (G64_c.html ne contient que des pictogrammes d'icônes). Classement provisoire : SCHEMA_NON_ANATOMIQUE, origine du dessin ORIGINE_INCONNUE avec réserve. Le contrôle linguistique a porté sur le texte de la figure et de sa légende, pas sur leur provenance ; la vérification de provenance (image_clo_finder) est transmise à l'audit MED.",
+   "constat": "Une seule figure dessinée : la figure 1 de G64_b.html (SVG, schéma de démarche), SCHEMA_NON_ANATOMIQUE ; origine ORIGINE_INCONNUE avec réserve. Aucune figure anatomique. Le contrôle a porté sur le texte de la figure, pas sur sa provenance, transmise à l'audit MED.",
    "statut": "transmis_MED"
   }
  ],
  "lacunes": [
   "Aucune source médicale n’a été relue : un audit linguistique ne vérifie pas les faits. Les citations (Sommer 2018, Sopacua 2019, Lauria 2010, Collins 2010, Soliman 2025, Lyrica, Duloxetin-Mepha via AmiKo, revues suisses de 2023 et 2026) ne sont ni confirmées ni infirmées ici.",
-  "Les formulations qui touchent à un sens médical possible (causalité, fréquence, chronologie, critères) sont renvoyées (27 renvois) et non reformulées.",
+  "Les formulations qui touchent à un sens médical possible (causalité, fréquence, chronologie, critères) sont renvoyées (37 renvois) et non reformulées.",
   "Aucun test en navigateur : l’effet des propositions sur l’affichage (largeur des tableaux, justification) n’a pas été mesuré.",
   "Les espaces insécables et l’usage « fibrillation atriale/auriculaire » sont différés par instruction.",
   "Pas de correcteur externe (Antidote, LanguageTool) : relecture par lecture intégrale, avec contrôles mécaniques sur l’unicité des extraits, les nombres et les balises."
  ],
- "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée",
- "controle_obligations_cliniques": "Aucune proposition n'affaiblit une obligation clinique : les formulations impératives ou prescriptives de la leçon sont conservées ou renforcées en phrase active (ex. G64-LANG-b-02 : « le médecin surveille »)."
+ "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
 }
