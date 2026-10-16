@@ -1,0 +1,907 @@
+{
+ "mission": "ALPHA1-CLAUDE-C72-MED",
+ "code": "C72",
+ "type_audit": "medical",
+ "base_sha": "32416a2080e67537641040a81252dec0b3e6d137",
+ "base_sha_manifeste_sources": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "generation": 1,
+ "branche": "claude/alpha1/c72-med-g1",
+ "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-C72-MED-g1",
+ "conversation": "alpha1-claude-c72-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-16T05:49:58Z",
+ "date_fin": "2026-10-16T06:03:44Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/C72/C72_a.html",
+   "chapters/C72/C72_b.html",
+   "chapters/C72/C72_c.html",
+   "chapters/C72/C72_d.html",
+   "chapters/C72/C72_pop1.html",
+   "chapters/C72/C72_pop2.html",
+   "glossary/c72.py"
+  ],
+  "empreintes_conformes": true,
+  "detail_empreintes": {
+   "chapters/C72/C72_a.html": {
+    "attendu": "61f1e5b6546203dff263a254d4ce4d1b75f0c58f111237d9e4d7319f4bda2a3b",
+    "calcule": "61f1e5b6546203dff263a254d4ce4d1b75f0c58f111237d9e4d7319f4bda2a3b",
+    "conforme": true
+   },
+   "chapters/C72/C72_b.html": {
+    "attendu": "ed523b09dd861f69865aeac53d0997d115bc87753561655f9c85fe7bed518edd",
+    "calcule": "ed523b09dd861f69865aeac53d0997d115bc87753561655f9c85fe7bed518edd",
+    "conforme": true
+   },
+   "chapters/C72/C72_c.html": {
+    "attendu": "a100855b7613bc9b1233bc183e682854e2cfb29bf93c5b0c5d46c1fa31087d73",
+    "calcule": "a100855b7613bc9b1233bc183e682854e2cfb29bf93c5b0c5d46c1fa31087d73",
+    "conforme": true
+   },
+   "chapters/C72/C72_d.html": {
+    "attendu": "96fc32e80a72746959bb0b7d9321213b08b1cd96d4b64ad0a524dcf62ed73aa6",
+    "calcule": "96fc32e80a72746959bb0b7d9321213b08b1cd96d4b64ad0a524dcf62ed73aa6",
+    "conforme": true
+   },
+   "chapters/C72/C72_pop1.html": {
+    "attendu": "aaa43aea83d40278ee04551db9862094f04859c12dc6ab33ffc6e6e006280440",
+    "calcule": "aaa43aea83d40278ee04551db9862094f04859c12dc6ab33ffc6e6e006280440",
+    "conforme": true
+   },
+   "chapters/C72/C72_pop2.html": {
+    "attendu": "2e52a53cc60772328277c7026f5e635377d9b8b08a2c7a6e98bc1dbaea26c0c9",
+    "calcule": "2e52a53cc60772328277c7026f5e635377d9b8b08a2c7a6e98bc1dbaea26c0c9",
+    "conforme": true
+   },
+   "glossary/c72.py": {
+    "attendu": "185664974a2e7229c14467056c627462f056a4c39ba8a449d50c4cd748e390eb",
+    "calcule": "185664974a2e7229c14467056c627462f056a4c39ba8a449d50c4cd748e390eb",
+    "conforme": true
+   }
+  },
+  "note": "Les sept fichiers ont été lus en entier (texte, tableaux, figures, quiz, fenêtres, Pareto, alert, key, glossaire)."
+ },
+ "premiere_source_lue": {
+  "source_id": "S1",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5909649/",
+  "section": "Treatment of ependymal tumors of the spinal cord ; Table 1 et Table 5 (EANO 2018)"
+ },
+ "synthese": {
+  "BLOQUANT": 0,
+  "MAJEUR": 5,
+  "MINEUR": 8,
+  "ENRICHISSEMENT": 12
+ },
+ "constats": [
+  {
+   "id": "MAJ-01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "<div class=\"sci-bar ui\" role=\"tablist\">",
+   "constat": "Sémiologie fondamentale et analytique absente : aucun bouton data-s=\"c72-s-semio\", aucun div.sci homonyme ; les signes de l’onglet 1 (c72-5, c72-6) sont énumérés sans technique, sans valeur sémiologique et sans regroupement syndromique raisonné. Absence = MAJEUR (exigence de Vial du 15.10.2026).",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "Clinical presentation",
+     "citation_courte": "axial back pain, unspecific sensations, or radiculopathy ; ataxia, nonradicular paresis, and/or sensory deficits"
+    },
+    {
+     "source_id": "S5",
+     "section": "Cauda equina syndrome",
+     "citation_courte": "generally requires the presence of at least two hallmark features"
+    }
+   ],
+   "proposition": "propositions/C72_c_semio.html ; propositions/C72_pop3_semio.html",
+   "justification": "Le mécanisme du signe (voies longues, cône, racines) fixe le niveau lésionnel → le niveau fixe le champ de l’IRM et l’urgence → sans sémiologie analytique, la leçon ne forme pas au raisonnement de l’examen fédéral (troubles de la marche, parésie, rétention).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "MAJ-02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "data-s=\"c72-s-radio\"",
+   "constat": "L’onglet Sciences ne compte que quatre disciplines réelles (Anatomie, Neuropathologie, Génétique, Radiobiologie) au lieu de cinq avant le sous-onglet de sémiologie (AGENTS.md, addendum lot 2, point 1).",
+   "preuve": [
+    {
+     "source_id": "S13",
+     "section": "Résumé",
+     "citation_courte": "impairment of spinothalamic sensation and preservation of deep sensation"
+    },
+    {
+     "source_id": "S12",
+     "section": "Résumé",
+     "citation_courte": "anterior spinal cord syndromes … long pathway syndrome … Brown-Séquard's syndrome"
+    }
+   ],
+   "proposition": "propositions/C72_c_physio.html",
+   "justification": "La physiologie des voies médullaires et du contrôle sacré explique la majorité des signes de C72 (parésie non radiculaire, ataxie, dissociation, cône/queue de cheval) → c’est la discipline manquante la plus utile → elle relie Anatomie et Sémiologie.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "MAJ-03",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "<h2>Génétique et biologie moléculaire des tumeurs spinales</h2>",
+   "constat": "tests/audit_sciences.py --codes C72 échoue (base 32416a20) : 788 mots pour 4 disciplines (223, 179, 183, 195 mots, minimum 280 chacune), libellés « Science → clinique », « Science → examen », « Science → traitement » et « À retenir » absents des quatre disciplines, Génétique sans figure.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "contrôle mécanique",
+     "citation_courte": "audit_sciences.py : result failed, 21 erreurs (contrôle interne, non une source médicale)"
+    }
+   ],
+   "proposition": "propositions/C72_c_liens.html",
+   "justification": "Le contrat des sciences exige la corrélation science → décision → sans ces libellés, la discipline reste descriptive et la leçon ne passe pas le contrôle d’intégration.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "MAJ-04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/C72/C72_b.html",
+   "ancre": "Épendymome myxopapillaire, distinction cône et queue de cheval, diagnostic différentiel (îlots 3, 5, 6, 7 et 9)",
+   "constat": "Périmètre de codage inexact : la leçon range l’épendymome myxopapillaire sous C72.1 et le gliome des voies optiques de la NF1 sous C72.3 (tableau 12.1 ; aussi c72-1). Selon l’aide-mémoire du registre national, la catégorie CIM-10 découle du code de comportement CIM-O : /1 → D37–D48, dont D43 pour l’encéphale, les nerfs crâniens et la moelle. Le support du réseau européen des registres donne 9394/1 au myxopapillaire et 9421/1 à l’astrocytome pilocytique (forme habituelle du gliome optique de l’enfant) : ces tumeurs relèvent alors de D43.4 et D43.3, non de C72. Le grade 2 OMS 2021 ne modifie pas à lui seul la catégorie. Seconde ancre : « Gliome des voies optiques en neurofibromatose de type 1 ; gliome malin de l’adulte non documenté (lacune) ».",
+   "preuve": [
+    {
+     "source_id": "S20",
+     "section": "§ 2–3",
+     "citation_courte": "Für die richtige Zuordnung zur ICD-10-Kategorie ist der Dignitätscode … verbindlich ; /1 → D37-D48 ; D43 Gehirn, Hirnnerven, Rückenmark"
+    },
+    {
+     "source_id": "S21",
+     "section": "Tables of morphology",
+     "citation_courte": "Myxopapillary ependymoma 9394/1 ; Pilocytic astrocytoma 9421/1 ; Ependymoma 9391/3"
+    }
+   ],
+   "proposition": "propositions/C72_b_1.html",
+   "justification": "Le code de comportement décide de la catégorie → une tumeur /1 codée en C72 fausse le périmètre de la leçon et le codage → piège d’examen et de déclaration ; réserve : table CIM-O-3.2 en vigueur et Blue Book OMS 2021 non lus.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "MAJ-05",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "aria-label=\"Figure 5 — Risque de myélopathie selon la dose\"",
+   "constat": "Figure 5 illisible à 390 px : viewBox de 640 de large ; texte rendu à 7,3 px (mesure Chromium, colonne de 358 px). Les valeurs décisionnelles (0,2 %, 6 %, 50 % ; 50, 60, 69 Gy) deviennent illisibles.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Spinal cord tolerance",
+     "citation_courte": "the likelihood of myelopathy is projected at 0.2%, 6%, and 50% for dose levels of 50Gy, 60Gy, and 69Gy"
+    }
+   ],
+   "proposition": "propositions/C72_figures.html",
+   "justification": "Une valeur de dose-risque illisible sur téléphone ne peut plus guider la lecture → règle de l’addendum (MAJEUR si valeur décisionnelle) → viewBox 360, texte 18.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "MIN-01",
+   "gravite": "MINEUR",
+   "fichier": "chapters/C72/C72_pop2.html",
+   "ancre": "Neurofibromes plexiformes symptomatiques inopérables de NF1 dès 3 ans",
+   "constat": "Indication suisse de Koselugo® incomplète : la FI de juin 2026 vise les patients adultes et pédiatriques dès 3 ans ; la formulation « dès 3 ans » laisse croire à une indication pédiatrique seule. Dose maximale de 50 mg par prise non citée.",
+   "preuve": [
+    {
+     "source_id": "S19",
+     "section": "Indications/Possibilités d’emploi",
+     "citation_courte": "chez les patients adultes et pédiatriques âgés de 3 ans et plus"
+    },
+    {
+     "source_id": "S19",
+     "section": "Posologie",
+     "citation_courte": "jusqu’à une dose maximale par prise de 50 mg"
+    }
+   ],
+   "proposition": "propositions/C72_pop2_2.html",
+   "justification": "Indication élargie à l’adulte → contexte de la NF1 adulte (MPNST, 20–40 ans) → précision utile, sans effet sur une décision C72.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "MIN-02",
+   "gravite": "MINEUR",
+   "fichier": "chapters/C72/C72_d.html",
+   "ancre": "Les interactions médicamenteuses complètes du témozolomide, de la dexaméthasone et du sélumétinib n’ont pas été lues",
+   "constat": "Les interactions du témozolomide figurent dans la FI suisse (acide valproïque, substances myélosuppressives, médicaments induisant une anémie aplasique) ; la leçon les déclare non lues. Les tests hépatiques avant et pendant le traitement (hépatotoxicité parfois mortelle) manquent dans l’alerte de sécurité.",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "Interactions",
+     "citation_courte": "L'emploi simultané d'acide valproïque a conduit à une diminution faible mais statistiquement significative de la clairance"
+    },
+    {
+     "source_id": "S17",
+     "section": "Mises en garde et précautions",
+     "citation_courte": "déterminer les valeurs hépatiques initiales par des tests fonctionnels hépatiques avant le début du traitement"
+    }
+   ],
+   "proposition": "propositions/C72_d_1.html",
+   "justification": "Usage hors indication en C72 → la sécurité d’emploi reste celle de la FI → omission d’une surveillance obligatoire, sans erreur de dose.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "MIN-03",
+   "gravite": "MINEUR",
+   "fichier": "glossary/c72.py",
+   "ancre": "Code de tumeur bénigne du système nerveux central cité dans l’aide-mémoire de déclaration",
+   "constat": "D35.2 désigne l’hypophyse, non le système nerveux central ; la fenêtre c72-nkrs omet aussi les règles propres aux moins de 20 ans (tout D35 ; D61 et D76 pour /1) et l’exclusion de la gammapathie monoclonale.",
+   "preuve": [
+    {
+     "source_id": "S20",
+     "section": "§ 3",
+     "citation_courte": "/0 D32-D33, D35.2 (adultes) ; /0 D32-D33, D35 et /1 D37-D48, D61, D76 (Kinder / Adoleszente) ; D35.2 Hypophyse"
+    }
+   ],
+   "proposition": "propositions/C72_pop2_1.html",
+   "justification": "Libellé imprécis → risque de confusion sur la déclaration pédiatrique → sans effet thérapeutique.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "MIN-04",
+   "gravite": "MINEUR",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "Dans le bas grade, des doses supérieures ou égales à 40–45 Gy sont associées à un meilleur contrôle.",
+   "constat": "Portée de la source élargie : la revue lue rapporte des relations dose-effet pour les gliomes spinaux (40 Gy ou plus contre moins de 40 Gy ; seuil de 45 Gy dans une autre série) sans que la partie extraite les restreigne au bas grade. Même phrase dans la fenêtre c72-rt-astro.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Glioma dose relations",
+     "citation_courte": "Similar dose relations were found for 40Gy or more versus less than 40Gy"
+    }
+   ],
+   "proposition": "Remplacer par : « Dans des séries de gliomes spinaux, une dose de 40 Gy ou plus, et dans une autre série un seuil de 45 Gy, ont été associés à un meilleur contrôle [S4]. »",
+   "justification": "Association rétrospective, non mécanisme → ne pas l’attribuer à un sous-groupe que la source ne nomme pas.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "MIN-05",
+   "gravite": "MINEUR",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "aria-label=\"Figure 3 — Cône médullaire et queue de cheval\"",
+   "constat": "Figures 1, 3 et 4 rendues à 7,3–7,8 px à 390 px (viewBox 640). Figure 3 : le libellé « Queue de cheval : racines, signes périphériques » déborde de la viewBox (x = 647 pour 640) et le libellé « T12–L1 » chevauche le trait pointillé. Ancres associées : aria-label=\"Figure 1 — Deux manières de croître dans la moelle\" (C72_a.html) et aria-label=\"Figure 4 — Les quatre couches du diagnostic intégré\".",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Anatomy",
+     "citation_courte": "typically resides at the T12–L1 vertebral level"
+    }
+   ],
+   "proposition": "propositions/C72_figures.html",
+   "justification": "Lisibilité dégradée et texte tronqué, mais les mêmes informations figurent dans le texte → MINEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "MIN-06",
+   "gravite": "MINEUR",
+   "fichier": "chapters/C72/C72_a.html",
+   "ancre": "parce que la moelle concentre dans un très petit volume toutes les voies motrices et sensitives",
+   "constat": "Causalité non établie par une source lue (rédactionnelle). Deux autres phrases du même type : « ce qui s’explique en partie par le caractère peu évocateur de ces plaintes sensitives diffuses » (C72_a.html, c72-5) et « parce que la lésion intramédullaire, par sa situation, ne se biopsie pas à l’aveugle » (C72_c.html, c72-e-1).",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Clinical presentation",
+     "citation_courte": "a significant delay of months, sometimes years until the definitive diagnosis (sans cause énoncée)"
+    }
+   ],
+   "proposition": "propositions/C72_a_1.html",
+   "justification": "Addendum point 3 : une relation causale non sourcée se reformule ou se déclare interprétation.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "MIN-07",
+   "gravite": "MINEUR",
+   "fichier": "chapters/C72/C72_pop2.html",
+   "ancre": "Un déficit neurologique d’installation rapide ou un syndrome de la queue de cheval impose une imagerie sans délai.",
+   "constat": "Conduite attribuée à Nersesyan 2025 seul, qui qualifie le syndrome de la queue de cheval d’urgence neurologique sans rien dire de l’imagerie ; la synthèse suisse de Spirig (intervention rapide dès l’apparition d’un déficit) fonde mieux l’urgence et n’est pas citée dans cette fenêtre.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Cauda equina syndrome",
+     "citation_courte": "a neurological emergency"
+    },
+    {
+     "source_id": "S11",
+     "section": "Résumé",
+     "citation_courte": "if neurological deficits appear, a fast surgical intervention is indicated"
+    }
+   ],
+   "proposition": "propositions/C72_b_3.html",
+   "justification": "La conduite est juste mais sa source est mal attribuée → réattribution, sans changement de conduite.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "MIN-08",
+   "gravite": "MINEUR",
+   "fichier": "chapters/C72/C72_b.html",
+   "ancre": "l’épendymome est adulte, central et bien limité, l’astrocytome est pédiatrique, excentré et infiltrant",
+   "constat": "Généralisation inexacte dans les neuf pièges : l’astrocytome est la tumeur intramédullaire la plus fréquente de l’enfant, mais il forme aussi 30 à 40 % des gliomes intramédullaires de l’adulte, et le haut grade y est plus fréquent ; le pilocytique est bien limité.",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "Epidemiology",
+     "citation_courte": "nearly 30–40% of all tumors are of astrocytic origin ; 40–60% of all pediatric spinal cord neoplasms"
+    }
+   ],
+   "proposition": "Remplacer par : « l’épendymome est la tumeur intramédullaire la plus fréquente de l’adulte, central et bien limité ; l’astrocytome, le plus fréquent chez l’enfant mais présent aussi chez l’adulte, est excentré et infiltrant, sauf le pilocytique, mieux limité ; »",
+   "justification": "Un piège d’examen ne doit pas créer une fausse règle d’âge → l’adulte jeune de la vignette peut porter un astrocytome de haut grade.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "ENR-01",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "<div class=\"sci-bar ui\" role=\"tablist\">",
+   "constat": "Sixième sous-onglet de sémiologie, 7 îlots, figure lisible, trois cas",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S3",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S5",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S9",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S11",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S12",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S13",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S14",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S15",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S16",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    }
+   ],
+   "proposition": "propositions/C72_c_semio.html",
+   "justification": "Rubrique absente ou insuffisante de la matrice ou de la grille SEM ; proposition rédigée et sourcée [Sx].",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "ENR-02",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "<div class=\"sci-bar ui\" role=\"tablist\">",
+   "constat": "Neuf fenêtres sémiologiques c72-sm-* (C72_pop3.html)",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S3",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S5",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S6",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S9",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S11",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S14",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S15",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    }
+   ],
+   "proposition": "propositions/C72_pop3_semio.html",
+   "justification": "Rubrique absente ou insuffisante de la matrice ou de la grille SEM ; proposition rédigée et sourcée [Sx].",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "ENR-03",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "data-s=\"c72-s-radio\"",
+   "constat": "Cinquième discipline : Physiologie des voies médullaires et du contrôle sacré, avec Pareto",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S11",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S12",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S13",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    }
+   ],
+   "proposition": "propositions/C72_c_physio.html",
+   "justification": "Rubrique absente ou insuffisante de la matrice ou de la grille SEM ; proposition rédigée et sourcée [Sx].",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "ENR-04",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "<div class=\"key\"><b>Corrélation clinique.</b> Le panel moléculaire n’est pas un luxe",
+   "constat": "Libellés Science → clinique / examen / traitement / À retenir des quatre disciplines",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S2",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S4",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S5",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S6",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S7",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    }
+   ],
+   "proposition": "propositions/C72_c_liens.html",
+   "justification": "Rubrique absente ou insuffisante de la matrice ou de la grille SEM ; proposition rédigée et sourcée [Sx].",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "ENR-05",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/C72/C72_b.html",
+   "ancre": "<h3>12.1 Couverture des sous-codes CIM-10-GM</h3>",
+   "constat": "Piège de codage CIM-O → CIM-10 (D43.3, D43.4) dans l’îlot 12",
+   "preuve": [
+    {
+     "source_id": "S20",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S21",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    }
+   ],
+   "proposition": "propositions/C72_b_1.html",
+   "justification": "Rubrique absente ou insuffisante de la matrice ou de la grille SEM ; proposition rédigée et sourcée [Sx].",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "ENR-06",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/C72/C72_pop2.html",
+   "ancre": "<template data-pop=\"c72-nkrs\" data-title=\"Déclaration au registre des tumeurs\">",
+   "constat": "Fenêtre c72-nkrs : règles adultes et moins de 20 ans",
+   "preuve": [
+    {
+     "source_id": "S20",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    }
+   ],
+   "proposition": "propositions/C72_pop2_1.html",
+   "justification": "Rubrique absente ou insuffisante de la matrice ou de la grille SEM ; proposition rédigée et sourcée [Sx].",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "ENR-07",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/C72/C72_pop2.html",
+   "ancre": "<template data-pop=\"c72-d-selumetinib\" data-title=\"Sélumétinib (Koselugo®)\">",
+   "constat": "Indication suisse actualisée de Koselugo®",
+   "preuve": [
+    {
+     "source_id": "S19",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    }
+   ],
+   "proposition": "propositions/C72_pop2_2.html",
+   "justification": "Rubrique absente ou insuffisante de la matrice ou de la grille SEM ; proposition rédigée et sourcée [Sx].",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "ENR-08",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/C72/C72_d.html",
+   "ancre": "<div class=\"alert\"><b>Témozolomide : sécurité d’emploi.</b>",
+   "constat": "Interactions et surveillance hépatique du témozolomide",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    }
+   ],
+   "proposition": "propositions/C72_d_1.html",
+   "justification": "Rubrique absente ou insuffisante de la matrice ou de la grille SEM ; proposition rédigée et sourcée [Sx].",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "ENR-09",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/C72/C72_b.html",
+   "ancre": "Survie globale médiane d’environ 24 mois (13–40), survie sans progression médiane de 14 mois",
+   "constat": "Hétérogénéité pronostique du gliome H3 K27-altéré spinal (grades historiques)",
+   "preuve": [
+    {
+     "source_id": "S10",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    }
+   ],
+   "proposition": "propositions/C72_b_2.html",
+   "justification": "Rubrique absente ou insuffisante de la matrice ou de la grille SEM ; proposition rédigée et sourcée [Sx].",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "ENR-10",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/C72/C72_a.html",
+   "ancre": "<section class=\"ilot\" id=\"c72-6\">",
+   "constat": "Valeur chiffrée de deux gestes : résidu post-mictionnel (seuil 200 ml, Se 82 %, Sp 65 %) et toucher rectal (Se 0,23–0,53)",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S15",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    }
+   ],
+   "proposition": "propositions/C72_pop3_semio.html",
+   "justification": "Rubrique absente ou insuffisante de la matrice ou de la grille SEM ; proposition rédigée et sourcée [Sx].",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "ENR-11",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/C72/C72_b.html",
+   "ancre": "<div class=\"alert\"><b>La gravité vient d’abord.</b>",
+   "constat": "Réattribution de l’urgence d’imagerie à la synthèse suisse",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S11",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    }
+   ],
+   "proposition": "propositions/C72_b_3.html",
+   "justification": "Rubrique absente ou insuffisante de la matrice ou de la grille SEM ; proposition rédigée et sourcée [Sx].",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "ENR-12",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "aria-label=\"Figure 5 — Risque de myélopathie selon la dose\"",
+   "constat": "Figures 1, 3, 4 et 5 redessinées pour 390 px",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    },
+    {
+     "source_id": "S5",
+     "section": "voir sources.json",
+     "citation_courte": ""
+    }
+   ],
+   "proposition": "propositions/C72_figures.html",
+   "justification": "Rubrique absente ou insuffisante de la matrice ou de la grille SEM ; proposition rédigée et sourcée [Sx].",
+   "ancre_occurrences": 1
+  }
+ ],
+ "figures": [
+  {
+   "rang": 1,
+   "fichier": "chapters/C72/C72_a.html",
+   "ancre": "aria-label=\"Figure 1 — Deux manières de croître dans la moelle\"",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "viewbox_largeur": 640,
+   "texte_rendu_390px": "7,3 px",
+   "constat_id": "MIN-05"
+  },
+  {
+   "rang": 2,
+   "fichier": "chapters/C72/C72_b.html",
+   "ancre": "aria-label=\"Figure 2 — Séquence diagnostique\"",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "viewbox_largeur": 380,
+   "texte_rendu_390px": "13,2 px",
+   "constat_id": null
+  },
+  {
+   "rang": 3,
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "aria-label=\"Figure 3 — Cône médullaire et queue de cheval\"",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "note": "schéma topographique vectoriel codé à la main (traits, aucune image) ; aucune origine IA d’image démontrée",
+   "viewbox_largeur": 640,
+   "texte_rendu_390px": "7,3 px ; débordement du libellé (x = 647)",
+   "constat_id": "MIN-05"
+  },
+  {
+   "rang": 4,
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "aria-label=\"Figure 4 — Les quatre couches du diagnostic intégré\"",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "viewbox_largeur": 640,
+   "texte_rendu_390px": "7,8 px",
+   "constat_id": "MIN-05"
+  },
+  {
+   "rang": 5,
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "aria-label=\"Figure 5 — Risque de myélopathie selon la dose\"",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "viewbox_largeur": 640,
+   "texte_rendu_390px": "7,3 px (valeurs décisionnelles)",
+   "constat_id": "MAJ-05"
+  }
+ ],
+ "figures_note": "tools/image_clo_finder.py inventory C72 : 5 figures SVG vectorielles, aucune image matricielle ; indice « vectoriel_a_examiner_visuellement ». Mesure de lisibilité par rendu Chromium sans interface (colonne 358 px), non par capture de l’application.",
+ "semiologie": {
+  "statut": "absente",
+  "ancres": [
+   "C72_c.html : div.sci-bar sans c72-s-semio",
+   "C72_a.html#c72-5 (anamnèse)",
+   "C72_a.html#c72-6 (examen clinique)"
+  ],
+  "fondamentale": {
+   "constat": "Symptômes et signes cités (dysesthésies, douleur, parésie non radiculaire, ataxie, déficit sensitif, troubles en selle et sphinctériens, signes d’alarme NF1) sans technique, sans normal décrit, sans valeur chiffrée et sans piège par signe. Aucune fréquence ni sensibilité/spécificité.",
+   "signes_decisionnels_manquants": [
+    "valeur du résidu post-mictionnel",
+    "valeur limitée du toucher rectal",
+    "dissociation spinothalamique / lemniscale",
+    "choc spinal initial"
+   ]
+  },
+  "analytique": {
+   "constat": "Pas d’examen systématique numéroté, pas de tableau des syndromes, pas de raisonnement en cinq étapes, pas de cas corrigés de sémiologie. Le tableau 7.3 donne un différentiel d’imagerie, non un raisonnement clinique."
+  },
+  "gravite": "MAJEUR",
+  "constat_id": "MAJ-01",
+  "grille": {
+   "SEM-01": "non",
+   "SEM-02": "non",
+   "SEM-03": "non (audit_sciences.py échoue : 4 disciplines < 280 mots, libellés absents)",
+   "SEM-04": "oui (test_v7.py --static C72 : OK, 15 548 mots, 72 fenêtres)",
+   "SEM-05": "non",
+   "SEM-06": "non",
+   "SEM-07": "non",
+   "SEM-08": "non (aucune valeur sémiologique ; lacune déclarée dans c72-lacunes)",
+   "SEM-09": "non",
+   "SEM-10": "partiel (pièges c72-5 et c72-6, sans lien à chaque signe)",
+   "SEM-11": "non",
+   "SEM-12": "non",
+   "SEM-13": "non (alerte présente dans l’onglet 1, c72-8, mais pas dans une discipline de sémiologie)",
+   "SEM-14": "partiel (tableau 7.3 avec discriminants)",
+   "SEM-15": "non",
+   "SEM-16": "non",
+   "SEM-17": "non",
+   "SEM-18": "non",
+   "SEM-19": "oui pour les sources de la leçon (aucune recommandation américaine retenue)",
+   "SEM-20": "sans objet (discipline absente)",
+   "SEM-21": "sans objet",
+   "SEM-22": "non vérifiable (bouton absent ; aucune capture)",
+   "SEM-23": "non (aucune capture : discipline absente)",
+   "SEM-24": "oui (statut « revue par intelligence artificielle, validation médicale humaine en attente »)"
+  },
+  "proposition": [
+   "propositions/C72_c_semio.html",
+   "propositions/C72_pop3_semio.html",
+   "propositions/C72_c_physio.html"
+  ],
+  "sources_semiologie": [
+   "S12 (Inselspital Berne, résumé)",
+   "S13 (CHUV Lausanne, résumé)",
+   "S11 (St-Gall, résumé)",
+   "S5",
+   "S3",
+   "S2",
+   "S14",
+   "S15",
+   "S16"
+  ],
+  "limite": "Aucune source de sémiologie universitaire suisse en texte intégral n’a pu être lue ; les gestes standard (réflexes, Babinski, niveau sensitif) ne sont pas décrits faute de source lue et renvoient au parcours Sémiologie CS du fragment S01."
+ },
+ "matrice_20": [
+  {
+   "rubrique": "1. Question clinique et enjeu pour l’examen fédéral",
+   "statut": "couvert",
+   "ancre": "C72_a.html#c72-0 ; C72_b.html#c72-12"
+  },
+  {
+   "rubrique": "2. Définition et périmètre CIM-10-GM",
+   "statut": "partiel",
+   "ancre": "C72_a.html#c72-1 ; C72_b.html#c72-12 — périmètre /1 → D43 à corriger (MAJ-04) ; note 5 BfArM non lue"
+  },
+  {
+   "rubrique": "3. Classifications et stades",
+   "statut": "couvert",
+   "ancre": "C72_a.html#c72-1 ; C72_c.html#c72-s-histo-cours"
+  },
+  {
+   "rubrique": "4. Épidémiologie suisse puis européenne",
+   "statut": "partiel",
+   "ancre": "C72_a.html#c72-2 — aucun chiffre suisse propre à C72 (déclaré)"
+  },
+  {
+   "rubrique": "5. Normal → pathologique",
+   "statut": "partiel",
+   "ancre": "C72_a.html#c72-3 ; sciences à 4 disciplines brèves (MAJ-02, MAJ-03)"
+  },
+  {
+   "rubrique": "6. Étiologies et facteurs de risque",
+   "statut": "couvert",
+   "ancre": "C72_a.html#c72-4"
+  },
+  {
+   "rubrique": "7. Anamnèse et symptômes",
+   "statut": "partiel",
+   "ancre": "C72_a.html#c72-5 — fréquences non chiffrées (déclaré), sans sémiologie (MAJ-01)"
+  },
+  {
+   "rubrique": "8. Examen clinique",
+   "statut": "partiel",
+   "ancre": "C72_a.html#c72-6 — sans technique ni valeur des signes (MAJ-01, ENR-10)"
+  },
+  {
+   "rubrique": "9. Drapeaux rouges et urgences",
+   "statut": "partiel",
+   "ancre": "C72_b.html#c72-8 — délai horaire non sourcé ; attribution (MIN-07)"
+  },
+  {
+   "rubrique": "10. Examens complémentaires",
+   "statut": "couvert",
+   "ancre": "C72_c.html#c72-e-1 à c72-e-5 ; C72_b.html#c72-7"
+  },
+  {
+   "rubrique": "11. Diagnostic différentiel",
+   "statut": "couvert",
+   "ancre": "C72_b.html#c72-7 (tableau 7.3)"
+  },
+  {
+   "rubrique": "12. Prise en charge suisse",
+   "statut": "partiel",
+   "ancre": "C72_b.html#c72-9 ; C72_d.html — recommandation suisse dédiée absente ; FI datées"
+  },
+  {
+   "rubrique": "13. Complications et pronostic",
+   "statut": "couvert",
+   "ancre": "C72_b.html#c72-8, c72-10"
+  },
+  {
+   "rubrique": "14. Suivi, prévention, dépistage",
+   "statut": "couvert",
+   "ancre": "C72_b.html#c72-10"
+  },
+  {
+   "rubrique": "15. Situations particulières",
+   "statut": "partiel",
+   "ancre": "C72_b.html#c72-11 — insuffisance rénale ou hépatique limitée au témozolomide"
+  },
+  {
+   "rubrique": "16. Spécificités suisses",
+   "statut": "partiel",
+   "ancre": "C72_b.html#c72-12 — conduite automobile, AI, LAA, LS non documentés (déclaré)"
+  },
+  {
+   "rubrique": "17. Critères formels du diagnostic",
+   "statut": "couvert",
+   "ancre": "C72_b.html#c72-13 (div.alert)"
+  },
+  {
+   "rubrique": "18. Paramètres clés chiffrés",
+   "statut": "couvert",
+   "ancre": "C72_b.html#c72-13 (div.key)"
+  },
+  {
+   "rubrique": "19. Sous-codes CIM-10-GM couverts",
+   "statut": "partiel",
+   "ancre": "C72_b.html#c72-12 (tableau 12.1) — C72.2 à C72.5 par la classification seulement ; MPE et gliome optique pilocytique hors C72 (MAJ-04)"
+  },
+  {
+   "rubrique": "20. Points d’examen fédéral",
+   "statut": "couvert",
+   "ancre": "C72_b.html#c72-12 (12.3, neuf pièges, quiz) — un piège à corriger (MIN-08)"
+  }
+ ],
+ "controles": {
+  "test_v7_static": "OK (C72 mots 15548 fenêtres 72 quiz 6 pareto 16)",
+  "audit_sciences": "failed (788 mots, 4 disciplines, 21 erreurs)",
+  "json_valide": true,
+  "ancres_verifiees": "chaque ancre apparaît au moins une fois dans son fichier (clé ancre_occurrences)"
+ },
+ "lacunes": [
+  "Aucune source de sémiologie universitaire suisse ou européenne en texte intégral lue ; Hess 2005, Novy 2012 et Spirig 2011 lus en résumé seulement (E-utilities).",
+  "Table CIM-O-3.2 en vigueur et Blue Book OMS 2021 non lus : les codes de comportement (9394/1, 9421/1) viennent du support ENCR 2021 (grades OMS 2016) ; requête WebSearch « WHO CNS5 ICD-O codes myxopapillary ependymoma 9394/1 » ; pathologyoutlines.com inaccessible (redirection HTTP 307).",
+  "Code CIM-O de l’hémangioblastome (D33.4 affirmé dans c72-differentiel) non vérifié.",
+  "Nerfs crâniens (esthésioneuroblastome, gliome malin du nerf optique de l’adulte, MPNST des nerfs crâniens) : aucune source lue dans cet audit non plus.",
+  "Délai d’imagerie en heures, dose de corticoïde pour l’œdème médullaire, aptitude à la conduite, AI, LAA, LS : non recherchés à nouveau.",
+  "Grade 4 du gliome H3 K27-altéré : absent des 100 000 premiers caractères du résumé OMS lu ; confirmé indirectement par le résumé de Watanabe (S10).",
+  "Affirmation de c72-neuromonitorage « Westphal et Mohme jugent son apport discuté » non retrouvée dans l’extraction de S2 (qui décrit l’onde D comme le paramètre le plus stable) ; non classée en constat faute de lecture intégrale.",
+  "Lectures PMC par extraction ciblée de passages (outil web), pas de lecture humaine intégrale ; textes longs limités aux 100 000 premiers caractères (S1, S5, S6, S7, S9).",
+  "Captures réelles (SEM-22, SEM-23) non réalisées : la discipline de sémiologie n’existe pas encore."
+ ],
+ "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+}
