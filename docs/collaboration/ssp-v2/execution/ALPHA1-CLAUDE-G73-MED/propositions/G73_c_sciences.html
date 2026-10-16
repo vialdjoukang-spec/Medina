@@ -1,0 +1,32 @@
+<!-- Proposition ALPHA1-CLAUDE-G73-MED : C02 (MAJEUR) contrôle tests/audit_sciences.py en échec (14 erreurs) ; C20 (MINEUR) figure qui déborde à 390 px.
+     Contrôle exécuté : python3 tests/audit_sciences.py --base 103745baaa38c76f18288758cc7f689e5091ccdb --codes G73 → result: failed.
+     Erreurs : chaque discipline manque « Science → examen. », « Science → traitement. » et « À retenir. » ; g73-s-immu n’a aucune figure ; g73-s-elec compte 245 mots (< 280).
+     Les encadrés ci-dessous s’ajoutent à la fin de chaque section, avant le p.src. Références [Sx] : sources.json de ce dossier. -->
+
+<!-- g73-s-physio-body -->
+<div class="key"><b>Science → examen.</b> Un défaut de libération présynaptique abaisse l’amplitude de repos du potentiel d’action musculaire composé, que l’effort bref augmente : l’électrophysiologie mesure directement ce maillon [S5 ; S24]. Une membrane rendue inexcitable par l’hypokaliémie se reconnaît à la kaliémie et à l’ECG [S15].</div>
+<div class="key"><b>Science → traitement.</b> L’amifampridine prolonge la dépolarisation présynaptique et augmente l’entrée de calcium [S16]. Dans la paralysie thyréotoxique, le transfert du potassium vers les cellules s’inverse quand l’épisode cesse : une correction massive expose à l’hyperkaliémie de rebond [S27].</div>
+<div class="key"><b>À retenir.</b> La faiblesse naît soit d’un premier maillon qui libère trop peu d’acétylcholine, soit d’un dernier maillon dont la membrane ne répond plus ; l’examen et le traitement visent le maillon atteint.</div>
+
+<!-- g73-s-immu-body -->
+<div class="key"><b>Science → examen.</b> Les anticorps anti-VGCC se dosent par immunoprécipitation ou radio-immunodosage ; l’immunohistochimie cérébrale n’est pas utile pour eux [S4 ; S3]. Un résultat SOX1 obtenu par line-blot commercial se confirme dans un laboratoire de référence [S3].</div>
+<div class="key"><b>Science → traitement.</b> Dans les syndromes paranéoplasiques, le traitement de la tumeur est le levier le plus important ; l’immunothérapie et le traitement symptomatique le complètent [S3 ; S24].</div>
+<div class="key"><b>À retenir.</b> L’anticorps anti-VGCC explique le mécanisme sans dire s’il existe un cancer ; SOX1 et SOX2 orientent vers un cancer bronchique à petites cellules, que seule l’imagerie prouve.</div>
+<!-- figure manquante : un schéma non anatomique (tableau-arbre « anticorps → question à laquelle il répond ») suffit ; ne pas dessiner de structure anatomique (règle de Vial du 15.10.2026). -->
+
+<!-- g73-s-elec-body : compléter le texte (245 → plus de 280 mots) par le paragraphe C21 de propositions/G73_a_codage_differentiel.html, puis : -->
+<div class="key"><b>Science → examen.</b> Le rapport de vraisemblance positif d’un incrément d’au moins 60 % vaut environ 72, et le rapport négatif environ 0,22, calculés sur 49 vrais positifs parmi 63 malades et 1 faux positif parmi 93 témoins [S5].</div>
+<div class="key"><b>Science → traitement.</b> L’information suisse demande de surveiller l’efficacité de l’amifampridine sur le plan clinique et électrophysiologique, par la mesure du potentiel d’action musculaire composé [S16].</div>
+<div class="key"><b>À retenir.</b> L’incrément se calcule (A1 − A0) ÷ A0 × 100 ; au moins 60 % appuie le diagnostic, et une valeur inférieure ne l’exclut pas chez un patient sur cinq environ.</div>
+
+<!-- g73-s-bioch-body -->
+<div class="key"><b>Science → examen.</b> La créatine kinase traduit la nécrose des fibres : normale ou peu élevée dans l’atrophie cortisonique, elle dépasse plusieurs milliers d’unités dans une myopathie nécrosante ou une myosite virale [S26 ; S20 ; S12].</div>
+<div class="key"><b>Science → traitement.</b> Réduire le glucocorticoïde lève l’inhibition de la synthèse et l’activation de la dégradation ; les exercices de résistance et d’endurance relancent la synthèse [S26].</div>
+<div class="key"><b>À retenir.</b> Une créatine kinase normale n’exclut pas une myopathie ; une créatine kinase qui ne baisse pas sous traitement de la cause oblige à chercher une autre maladie.</div>
+
+<!-- C20 — figure « Myopathie cortisonique » (G73_c.html) : la deuxième ligne déborde du cadre à 390 px (mesure Chromium : texte de 9,1 à 410,9 pour un cadre de 12 à 408).
+ANCIEN : <text x="210" y="97">Synthèse basse (mTOR, IGF-1) · dégradation haute (FOXO)</text>
+NOUVEAU : -->
+<text x="210" y="89">Synthèse basse (mTOR, IGF-1)</text><text x="210" y="107">Dégradation haute (FOXO)</text>
+<!-- et figure « Chaîne de la transmission neuromusculaire » : le dernier cadre « Contraction : SMLE au premier maillon » mêle le maillon et la maladie ;
+     NOUVEAU : <text x="210" y="271">Contraction (SMLE : maillon 1 ; myopathie : maillon 5)</text> — à remesurer à 390 px après insertion. -->
