@@ -16,21 +16,27 @@ def add_if_absent(key, letters, full, definition, window):
                   'def': '<p>' + definition + '</p>', 'ref': window}
 
 for _code, _lib, _txt in [
-    ('G63.0', 'infectieuses et parasitaires classées ailleurs', 'maladie de Lyme, diphtérie, lèpre, syphilis tardive, zona'),
-    ('G63.1', 'tumorales', 'syndromes paranéoplasiques, paraprotéines, traitement anticancéreux'),
+    ('G63.0', 'au cours de maladies infectieuses et parasitaires classées ailleurs', 'maladie de Lyme, diphtérie, lèpre, syphilis tardive, zona'),
+    ('G63.1', 'au cours de maladies tumorales', 'syndromes paranéoplasiques, paraprotéines ; la neuropathie du traitement anticancéreux relève de G62.0'),
     ('G63.2', 'diabétique', 'diabète sucré, quatrième position .4'),
-    ('G63.3', 'd’autres maladies endocriniennes et métaboliques', 'amylose à transthyrétine dans ce cours'),
-    ('G63.4', 'par carence nutritionnelle', 'vitamine B12, thiamine, alcool'),
-    ('G63.5', 'd’affections disséminées du tissu conjonctif', 'vasculite, syndrome de Sjögren'),
-    ('G63.6', 'd’autres affections ostéo-articulaires et des muscles', 'aucun contenu dans les sources lues'),
-    ('G63.8', 'd’autres maladies classées ailleurs', 'neuropathie urémique'),
+    ('G63.3', 'au cours d’autres maladies endocriniennes et métaboliques', 'amylose à transthyrétine dans ce cours'),
+    ('G63.4', 'par carence nutritionnelle', 'carences en vitamine B12 et en thiamine ; la neuropathie alcoolique relève de G62.1'),
+    ('G63.5', 'au cours d’affections disséminées du tissu conjonctif', 'vasculite, syndrome de Sjögren'),
+    ('G63.6', 'au cours d’autres affections ostéo-articulaires et des muscles', 'aucun contenu dans les sources lues'),
+    ('G63.8', 'au cours d’autres maladies classées ailleurs', 'neuropathie urémique'),
 ]:
     add_if_absent(_code, [(_code[:3], 'catégorie de la classification internationale des maladies'), (_code[3:], 'sous-rubrique')],
                   'Polynévrite ' + _lib + ' (' + _code + '*)',
                   'Sous-rubrique astérisque de la catégorie G63 dans la CIM-10-GM 2024. Maladies de base citées : ' + _txt + '. Elle ne s’emploie qu’avec le code primaire de la maladie de base.', 'g63-croix')
 add_if_absent('G62.0', [('G62', 'autres polyneuropathies'), ('.0', 'polynévrite médicamenteuse')],
               'Polynévrite médicamenteuse (G62.0)',
-              'Code envisagé pour la neuropathie causée par un médicament. Son rattachement, par rapport à G63.1 pour le traitement anticancéreux, n’a pas été vérifié dans les sources lues.', 'g63-chimio')
+              'Catégorie de la CIM-10-GM 2024 pour la polyneuropathie induite par un médicament, y compris un traitement anticancéreux ; un code du chapitre XX précise la substance. Elle se situe hors de la catégorie G63.', 'g63-chimio')
+add_if_absent('G62.1', [('G62', 'autres polyneuropathies'), ('.1', 'polynévrite alcoolique')],
+              'Polynévrite alcoolique (G62.1)',
+              'Catégorie de la CIM-10-GM 2024 pour la polyneuropathie due à l’alcool ; elle se situe hors de la catégorie G63.', 'g63-croix')
+add_if_absent('G62.2', [('G62', 'autres polyneuropathies'), ('.2', 'polynévrite due à d’autres agents toxiques')],
+              'Polynévrite due à d’autres agents toxiques (G62.2)',
+              'Catégorie de la CIM-10-GM 2024 pour la polyneuropathie due à un toxique autre que l’alcool ou un médicament ; un code du chapitre XX précise l’agent.', 'g63-croix')
 add_if_absent('ALDH2', [('ALDH', 'Aldehyde Dehydrogenase (acétaldéhyde déshydrogénase)'), ('2', 'isoforme 2')],
               'Aldéhyde déshydrogénase 2',
               'Enzyme dont le variant ALDH2*2 est cité par la revue de Julian et coll. parmi les éléments qui font intervenir l’acétaldéhyde dans la neuropathie alcoolique.', 'g63-alcool')
@@ -51,13 +57,13 @@ add_if_absent('Anti-Hu', [('Anti', 'dirigé contre'), ('Hu', 'antigène neuronal
               'Anticorps à haut risque de cancer : il s’associe à plus de 85 % de cancers bronchiques à petites cellules (Graus et coll., 2021).', 'g63-neuronopathie')
 add_if_absent('CV2', [('CV2', 'nom conventionnel d’un anticorps, non développé dans les sources lues')],
               'Anticorps CV2/CRMP5',
-              'Anticorps cité par Sommer et coll. avec l’anti-Hu et l’amphiphysine parmi les anticorps des neuronopathies sensitives paranéoplasiques.', 'g63-neuronopathie')
+              'Anticorps cité par Graus et coll. (2021) avec l’anti-Hu et l’amphiphysine parmi les anticorps des neuronopathies sensitives paranéoplasiques.', 'g63-neuronopathie')
 add_if_absent('CRMP5', [('C', 'Collapsin'), ('R', 'Response'), ('M', 'Mediator'), ('P', 'Protein'), ('5', 'numéro 5')],
               'Protéine médiatrice de la réponse à la collapsine 5',
               'Cible de l’anticorps CV2/CRMP5, associé aux neuronopathies sensitives paranéoplasiques.', 'g63-neuronopathie')
 add_if_absent('anti-GM1', [('anti', 'dirigé contre'), ('GM1', 'ganglioside GM1')],
               'Anticorps dirigé contre le ganglioside GM1',
-              'Anticorps présent d’environ 50 % des neuropathies motrices multifocales (IgM).', 'g63-pidc')
+              'Anticorps présent dans environ 50 % des neuropathies motrices multifocales (IgM).', 'g63-pidc')
 add_if_absent('anti-GQ1b', [('anti', 'dirigé contre'), ('GQ1b', 'ganglioside GQ1b')],
               'Anticorps dirigé contre le ganglioside GQ1b',
               'Anticorps inscrit au bilan étendu de la revue de Sommer et coll.', 'g63-labo')
@@ -88,6 +94,15 @@ add_if_absent('RAGE', [('R', 'Receptor for'), ('A', 'Advanced'), ('G', 'Glycatio
 add_if_absent('NNT', [('N', 'Nombre'), ('N', 'de patients'), ('T', 'à Traiter')],
               'Nombre de patients à traiter',
               'Nombre de patients à traiter pour obtenir un répondeur de plus qu’avec le placebo ; plus il est bas, plus le traitement est efficace en moyenne.', 'g63-nnt')
+add_if_absent('NNH', [('N', 'Number'), ('N', 'Needed to'), ('H', 'Harm (nombre de patients à traiter pour nuire)')],
+              'Nombre de patients à traiter pour observer un effet nuisible',
+              'Dans la révision NeuPSIG de 2025, nombre de patients à traiter pour observer un arrêt de traitement dû à un effet indésirable de plus qu’avec le placebo ; plus il est élevé, meilleure est la tolérance.', 'g63-nnt')
+add_if_absent('CYP1A2', [('CYP', 'cytochrome P450'), ('1', 'famille 1'), ('A', 'sous-famille A'), ('2', 'isoenzyme 2')],
+              'Isoenzyme 1A2 du cytochrome P450',
+              'Enzyme hépatique qui métabolise la duloxétine ; ses inhibiteurs (fluvoxamine, ciprofloxacine, énoxacine) sont contre-indiqués avec elle.', 'g63-duloxetine')
+add_if_absent('mEGRIS', [('m', 'modified'), ('E', 'Erasmus'), ('G', 'GBS (Guillain-Barré syndrome)'), ('R', 'Respiratory'), ('I', 'Insufficiency'), ('S', 'Score')],
+              'Score modifié d’Erasmus de l’insuffisance respiratoire du syndrome de Guillain-Barré',
+              'Score proposé par la recommandation EAN/PNS de 2023 pour estimer le risque de ventilation artificielle.', 'g63-pidc')
 add_if_absent('PNS', [('P', 'Peripheral'), ('N', 'Nerve'), ('S', 'Society')],
               'Peripheral Nerve Society (société du nerf périphérique)',
               'Société savante coauteure de la recommandation européenne de la polyradiculoneuropathie chronique et auteure de la recommandation sur la neuropathie vasculitique.', 'g63-pidc')
@@ -108,7 +123,7 @@ add_if_absent('EONS-EANO', [('EONS', 'European Oncology Nursing Society'), ('EAN
               'Coauteures, avec la Société européenne d’oncologie médicale, de la recommandation de 2020 sur la neurotoxicité des traitements anticancéreux, non lue.', 'g63-chimio')
 add_if_absent('NeuPSIG', [('Neu', 'Neuropathic'), ('P', 'Pain'), ('S', 'Special'), ('I', 'Interest'), ('G', 'Group')],
               'Groupe d’intérêt spécialisé sur la douleur neuropathique',
-              'Groupe de l’Association internationale pour l’étude de la douleur, auteur de la méta-analyse de 2015 sur la pharmacothérapie de la douleur neuropathique.', 'g63-douleur')
+              'Groupe de l’Association internationale pour l’étude de la douleur, auteur des méta-analyses de 2015 et de 2025 sur le traitement de la douleur neuropathique ; la révision de 2025 est en vigueur.', 'g63-douleur')
 add_if_absent('JRSM', [('J', 'Journal'), ('R', 'of the Royal'), ('S', 'Society of'), ('M', 'Medicine')],
               'Journal of the Royal Society of Medicine',
               'Famille de revues dont JRSM Cardiovascular Disease, qui a publié la revue sur les complications neurologiques de la maladie rénale chronique.', 'g63-uremie')
