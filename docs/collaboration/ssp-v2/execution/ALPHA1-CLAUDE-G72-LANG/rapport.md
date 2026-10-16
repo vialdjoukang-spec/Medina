@@ -1,18 +1,18 @@
 # Audit linguistique G72 « Autres myopathies » (ALPHA1-CLAUDE-G72-LANG)
 
-Base `32416a20`, branche `claude/alpha1/g72-lang-g1`, fin 2026-10-16T06:03:07Z. Empreintes des 7 fichiers conformes au manifeste : oui.
+Base `d1a488ad4f0031d7f2a4b47a0721e89a93475d77` (manifeste) ; worktree_base `32416a2080e67537641040a81252dec0b3e6d137` : START exécuté sur le premier main contenant l’approbation de la mission (PR #181), sources figées identiques, empreintes conformes. Branche `claude/alpha1/g72-lang-g1`, début non relevé (null), fin 2026-10-16T06:12:07Z (UTC). Empreintes des 7 fichiers conformes au manifeste : oui.
 
 ## Tableau de bord
 
 | Propositions locales | Renvois médicaux | Hors périmètre |
 |---|---|---|
-| 107 | 38 | 2 (sémiologie, figures) |
+| 96 | 49 | 2 (sémiologie, figures) |
 
-Répartition : phrase_nominale 54, ambiguite 15, grammaire 12, registre 7, ponctuation 6, lourdeur 6, typographie 3, accord 2, repetition 1, conjugaison 1
+Répartition : phrase_nominale 48, ambiguite 14, grammaire 9, ponctuation 6, lourdeur 6, registre 6, typographie 3, accord 2, repetition 1, conjugaison 1
 
 ## Hors périmètre linguistique
 
-- **MAJEUR, transmis à l’audit MED** : `G72_c.html` compte 4 `data-s` (g72-s-anat, g72-s-histo, g72-s-physio, g72-s-bioch), donc 4 disciplines réelles et aucun sous-onglet « Sémiologie fondamentale et analytique ».
+- **MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md), transmis à l’audit MED** : `G72_c.html` compte 4 `data-s` (g72-s-anat, g72-s-histo, g72-s-physio, g72-s-bioch), donc 4 disciplines réelles et aucun sous-onglet « Sémiologie fondamentale et analytique ».
 - **ORIGINE_INCONNUE (réserve)** : figures 1 à 4 (SVG dessinés, la figure 1 est une silhouette anatomique). Mon contrôle a porté sur le texte des figures, non sur leur provenance ; vérification transmise à l’audit MED.
 
 ## Renvois médicaux (non appliqués)
@@ -59,10 +59,21 @@ Formulations créant ou supposant une causalité, une fréquence, une chronologi
 | RM-036 | G72_pop1.html | portee | Les critères ENMC ont été révisés en 2024 (IRM, échographie, anticorps | Le contenu des critères ENMC 2024 est décrit (IRM, échographie, anticorps anti-cN1A) alors que le cours déclare ne pas l’avoir lu (îlot e-4, même fenêtre). |
 | RM-037 | G72_pop1.html | portee | Le cas suisse de myopathie nécrosante avait une créatine kinase à 400  | Un cas suisse non réanimatoire est cité juste après la description de la créatine kinase « nettement élevée avec myoglobinurie » de la myopathie nécrosante de réanimation, ce qui laisse croire que 400 U/L illustre cette catégorie. |
 | RM-038 | G72_pop2.html | portee | Le dichlorphénamide est approuvé par l’autorité américaine, hors Suiss | Le statut suisse est affirmé (« hors Suisse ») alors que la même phrase indique qu’aucune information professionnelle suisse n’a été lue. |
+| RM-039 | G72_a.html | reformulation_touchant_notion_clinique | l’arrêt du traitement atteint 75 % à deux ans | Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : la proportion d’arrêts du traitement atteint 75 % à deux ans (Un acte (« l’arrêt ») ne peut pas « atteindre 75 % » : sujet impropre, la grandeur est une proportion.) |
+| RM-040 | G72_b.html | reformulation_touchant_notion_clinique | l’acidose tubulaire, les diurétiques et les laxatifs | Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : l’acidose tubulaire, la prise de diurétiques ou de laxatifs (On exclut une prise médicamenteuse, non les médicaments eux-mêmes ; « et » devient « ou » dans une liste de causes alternatives.) |
+| RM-041 | G72_c.html | reformulation_touchant_notion_clinique | ou la décroissance de l’agent (atrophie toxique) | Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : ou la réduction ou l’arrêt de l’agent (atrophie toxique) (« décroissance de l’agent » n’est pas une expression usuelle ; alignement sur la prise en charge (« réduction progressive ou arrêt »).) |
+| RM-042 | G72_d.html | reformulation_touchant_notion_clinique | La réponse à l’acétazolamide est d’environ 50 % ; elle est de 56 % pou | Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : Le taux de réponse à l’acétazolamide est d’environ 50 % ; il est de 56 % pour <i>CACNA1S</i> et de 16 % pour <i>SCN4A</i> (Une « réponse » n’est pas « de 50 % » : c’est un taux.) |
+| RM-043 | G72_pop2.html | reformulation_touchant_notion_clinique | La réponse est d’environ 50 % (56 % avec | Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : Le taux de réponse est d’environ 50 % (56 % avec (Une « réponse » n’est pas « de 50 % » : c’est un taux.) |
+| RM-044 | G72_pop2.html | reformulation_touchant_notion_clinique | <li>Symptômes musculaires sous statine : 7 à 29 % en registres ; myopa | Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : <li>Les symptômes musculaires touchent 7 à 29 % des patients sous statine en registres ; la myopathie sévère touche 1 sur 1000 à 1 sur 10 000 personnes.</li> (Puce nominale ou à l’infinitif remplacée par une phrase complète (STYLE_REDACTION § 2) ; contenu inchangé.) |
+| RM-045 | G72_pop2.html | reformulation_touchant_notion_clinique | <li>Réanimation : environ 40 % (9 à 86 %).</li> | Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : <li>En réanimation, l’incidence rapportée est d’environ 40 % (9 à 86 %).</li> (Puce nominale ou à l’infinitif remplacée par une phrase complète (STYLE_REDACTION § 2) ; contenu inchangé.) |
+| RM-046 | G72_pop2.html | reformulation_touchant_notion_clinique | <li>Faiblesse proximale symétrique ; douleur (statines, alcool) ou non | Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : <li>La faiblesse est proximale et symétrique ; elle s’accompagne de douleur avec les statines et l’alcool, non avec la cortisone et en réanimation.</li> (Puce nominale ou à l’infinitif remplacée par une phrase complète (STYLE_REDACTION § 2) ; contenu inchangé.) |
+| RM-047 | G72_pop2.html | reformulation_touchant_notion_clinique | <li>Accès : paralysie périodique.</li> | Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : <li>Des accès de faiblesse évoquent une paralysie périodique.</li> (Puce nominale ou à l’infinitif remplacée par une phrase complète (STYLE_REDACTION § 2) ; contenu inchangé.) |
+| RM-048 | G72_pop2.html | reformulation_touchant_notion_clinique | <li>Face épargnée en réanimation ; fléchisseurs des doigts : myosite à | Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : <li>La face est épargnée en réanimation ; la faiblesse des fléchisseurs des doigts évoque la myosite à inclusions.</li> (Puce nominale ou à l’infinitif remplacée par une phrase complète (STYLE_REDACTION § 2) ; contenu inchangé.) |
+| RM-049 | G72_pop2.html | reformulation_touchant_notion_clinique | <li>Vacuoles bordées : myosite à inclusions.</li> | Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : <li>Les vacuoles bordées caractérisent la myosite à inclusions.</li> (Puce nominale ou à l’infinitif remplacée par une phrase complète (STYLE_REDACTION § 2) ; contenu inchangé.) |
 
 ## Propositions locales
 
-Détail complet dans `propositions.json` (ancien exact, nouveau, motif). Points marquants : accord « déclenché(s) » (LANG des cartes paralysies périodiques), « l’arrêt … atteint 75 % », « Chez la fibre normale », « fut rédigé », parenthèses imbriquées, signes « = » dans le texte, métaphore « arme » (2 occurrences, dans b et d), phrases nominales des cartes, des listes d’examen et des puces Pareto.
+Détail complet dans `propositions.json` (ancien exact, nouveau, motif). Points marquants : accord « déclenché(s) » (LANG des cartes paralysies périodiques), « l’arrêt … atteint 75 % », « Chez la fibre normale », « fut rédigé », parenthèses imbriquées, signes « = » dans le texte, métaphore « arme » (x3 occurrences, 2 corrigées dans b et d), phrases nominales des cartes, des listes d’examen et des puces Pareto.
 
 ## Choix différés (non appliqués)
 

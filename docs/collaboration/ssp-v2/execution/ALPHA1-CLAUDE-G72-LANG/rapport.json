@@ -2,15 +2,18 @@
  "mission": "ALPHA1-CLAUDE-G72-LANG",
  "code": "G72",
  "type_audit": "linguistique",
- "base_sha": "32416a2080e67537641040a81252dec0b3e6d137",
+ "base_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "worktree_base": "32416a2080e67537641040a81252dec0b3e6d137",
+ "worktree_base_note": "START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste.",
  "generation": 1,
  "branche": "claude/alpha1/g72-lang-g1",
  "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-G72-LANG-g1",
  "conversation": "alpha1-claude-g72-lang",
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
- "date_debut": "2026-10-16T05:30:00Z (estimation ; heure non relevée au démarrage)",
- "date_fin": "2026-10-16T06:03:07Z",
+ "date_debut": null,
+ "date_debut_note": "Heure de démarrage non relevée à l’exécution ; aucune estimation n’est présentée comme observée.",
+ "date_fin": "2026-10-16T06:12:07Z",
  "lecture": {
   "fichiers": [
    "chapters/G72/G72_a.html",
@@ -22,20 +25,20 @@
    "glossary/g72.py"
   ],
   "empreintes_conformes": true,
-  "note": "SHA-256 des 7 fichiers recalculés et comparés au manifeste (snapshot d1a488ad) ; HEAD du worktree = base_sha ci-dessus."
+  "note": "SHA-256 des 7 fichiers recalculés et comparés au manifeste (snapshot d1a488ad) ; base_sha = snapshot du manifeste ; worktree_base = 32416a20."
  },
  "premiere_verification": "Recalcul SHA-256 des 7 fichiers contre .medina/missions/ALPHA1-CLAUDE-G72-LANG.json : conformes.",
  "synthese": {
-  "nombre_propositions": 107,
-  "renvois_medicaux": 38,
+  "nombre_propositions": 96,
+  "renvois_medicaux": 49,
   "par_categorie": {
    "ponctuation": 6,
-   "ambiguite": 15,
-   "grammaire": 12,
+   "ambiguite": 14,
+   "grammaire": 9,
    "lourdeur": 6,
-   "phrase_nominale": 54,
+   "phrase_nominale": 48,
    "accord": 2,
-   "registre": 7,
+   "registre": 6,
    "typographie": 3,
    "repetition": 1,
    "conjugaison": 1
@@ -384,14 +387,113 @@
    "explication": "Le statut suisse est affirmé (« hors Suisse ») alors que la même phrase indique qu’aucune information professionnelle suisse n’a été lue.",
    "action": "renvoi_medical",
    "applique": false
+  },
+  {
+   "id": "RM-039",
+   "fichier": "chapters/G72/G72_a.html",
+   "ancre": "l’arrêt du traitement atteint 75 % à deux ans",
+   "type": "reformulation_touchant_notion_clinique",
+   "explication": "Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : la proportion d’arrêts du traitement atteint 75 % à deux ans (Un acte (« l’arrêt ») ne peut pas « atteindre 75 % » : sujet impropre, la grandeur est une proportion.)",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-040",
+   "fichier": "chapters/G72/G72_b.html",
+   "ancre": "l’acidose tubulaire, les diurétiques et les laxatifs",
+   "type": "reformulation_touchant_notion_clinique",
+   "explication": "Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : l’acidose tubulaire, la prise de diurétiques ou de laxatifs (On exclut une prise médicamenteuse, non les médicaments eux-mêmes ; « et » devient « ou » dans une liste de causes alternatives.)",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-041",
+   "fichier": "chapters/G72/G72_c.html",
+   "ancre": "ou la décroissance de l’agent (atrophie toxique)",
+   "type": "reformulation_touchant_notion_clinique",
+   "explication": "Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : ou la réduction ou l’arrêt de l’agent (atrophie toxique) (« décroissance de l’agent » n’est pas une expression usuelle ; alignement sur la prise en charge (« réduction progressive ou arrêt »).)",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-042",
+   "fichier": "chapters/G72/G72_d.html",
+   "ancre": "La réponse à l’acétazolamide est d’environ 50 % ; elle est de 56 % pour <i>CACNA1S</i> et de 16 % pour <i>SCN4A</i>",
+   "type": "reformulation_touchant_notion_clinique",
+   "explication": "Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : Le taux de réponse à l’acétazolamide est d’environ 50 % ; il est de 56 % pour <i>CACNA1S</i> et de 16 % pour <i>SCN4A</i> (Une « réponse » n’est pas « de 50 % » : c’est un taux.)",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-043",
+   "fichier": "chapters/G72/G72_pop2.html",
+   "ancre": "La réponse est d’environ 50 % (56 % avec",
+   "type": "reformulation_touchant_notion_clinique",
+   "explication": "Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : Le taux de réponse est d’environ 50 % (56 % avec (Une « réponse » n’est pas « de 50 % » : c’est un taux.)",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-044",
+   "fichier": "chapters/G72/G72_pop2.html",
+   "ancre": "<li>Symptômes musculaires sous statine : 7 à 29 % en registres ; myopathie sévère 1/1000 à 1/10 000.</li>",
+   "type": "reformulation_touchant_notion_clinique",
+   "explication": "Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : <li>Les symptômes musculaires touchent 7 à 29 % des patients sous statine en registres ; la myopathie sévère touche 1 sur 1000 à 1 sur 10 000 personnes.</li> (Puce nominale ou à l’infinitif remplacée par une phrase complète (STYLE_REDACTION § 2) ; contenu inchangé.)",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-045",
+   "fichier": "chapters/G72/G72_pop2.html",
+   "ancre": "<li>Réanimation : environ 40 % (9 à 86 %).</li>",
+   "type": "reformulation_touchant_notion_clinique",
+   "explication": "Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : <li>En réanimation, l’incidence rapportée est d’environ 40 % (9 à 86 %).</li> (Puce nominale ou à l’infinitif remplacée par une phrase complète (STYLE_REDACTION § 2) ; contenu inchangé.)",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-046",
+   "fichier": "chapters/G72/G72_pop2.html",
+   "ancre": "<li>Faiblesse proximale symétrique ; douleur (statines, alcool) ou non (cortisone, réanimation).</li>",
+   "type": "reformulation_touchant_notion_clinique",
+   "explication": "Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : <li>La faiblesse est proximale et symétrique ; elle s’accompagne de douleur avec les statines et l’alcool, non avec la cortisone et en réanimation.</li> (Puce nominale ou à l’infinitif remplacée par une phrase complète (STYLE_REDACTION § 2) ; contenu inchangé.)",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-047",
+   "fichier": "chapters/G72/G72_pop2.html",
+   "ancre": "<li>Accès : paralysie périodique.</li>",
+   "type": "reformulation_touchant_notion_clinique",
+   "explication": "Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : <li>Des accès de faiblesse évoquent une paralysie périodique.</li> (Puce nominale ou à l’infinitif remplacée par une phrase complète (STYLE_REDACTION § 2) ; contenu inchangé.)",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-048",
+   "fichier": "chapters/G72/G72_pop2.html",
+   "ancre": "<li>Face épargnée en réanimation ; fléchisseurs des doigts : myosite à inclusions.</li>",
+   "type": "reformulation_touchant_notion_clinique",
+   "explication": "Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : <li>La face est épargnée en réanimation ; la faiblesse des fléchisseurs des doigts évoque la myosite à inclusions.</li> (Puce nominale ou à l’infinitif remplacée par une phrase complète (STYLE_REDACTION § 2) ; contenu inchangé.)",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-049",
+   "fichier": "chapters/G72/G72_pop2.html",
+   "ancre": "<li>Vacuoles bordées : myosite à inclusions.</li>",
+   "type": "reformulation_touchant_notion_clinique",
+   "explication": "Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : <li>Les vacuoles bordées caractérisent la myosite à inclusions.</li> (Puce nominale ou à l’infinitif remplacée par une phrase complète (STYLE_REDACTION § 2) ; contenu inchangé.)",
+   "action": "renvoi_medical",
+   "applique": false
   }
  ],
  "constats_hors_perimetre": [
   {
    "id": "HP-001",
-   "gravite": "MAJEUR",
+   "gravite": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md)",
    "sujet": "Sixième sous-onglet Sémiologie",
-   "constat": "Hors périmètre linguistique, MAJEUR, transmis à l’audit MED. Décompte réel des data-s de G72_c.html : 4 (g72-s-anat, g72-s-histo, g72-s-physio, g72-s-bioch), soit 4 disciplines réelles (Anatomie, Histologie, Physiologie, Biochimie et génétique) ; AGENTS.md exige cinq disciplines puis « Sémiologie fondamentale et analytique » comme premier bouton .sci-bar. Aucun sous-onglet Sémiologie n’existe."
+   "constat": "Hors périmètre linguistique, MAJEUR bloquant, transmis à l’audit MED. Décompte réel des data-s de G72_c.html : 4 (g72-s-anat, g72-s-histo, g72-s-physio, g72-s-bioch), soit 4 disciplines réelles (Anatomie, Histologie, Physiologie, Biochimie et génétique) ; AGENTS.md exige cinq disciplines puis « Sémiologie fondamentale et analytique » comme premier bouton .sci-bar. Aucun sous-onglet Sémiologie n’existe."
   },
   {
    "id": "HP-002",
