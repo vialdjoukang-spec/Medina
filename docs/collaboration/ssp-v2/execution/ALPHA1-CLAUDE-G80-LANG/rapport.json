@@ -1,0 +1,238 @@
+{
+  "mission": "ALPHA1-CLAUDE-G80-LANG",
+  "code": "G80",
+  "type_audit": "linguistique",
+  "base_sha": "103745baaa38c76f18288758cc7f689e5091ccdb",
+  "generation": 1,
+  "branche": "claude/alpha1/g80-lang-g1",
+  "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G80-LANG",
+  "conversation": "alpha1-claude-g80-lang",
+  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+  "modele_effort": "conforme au manifeste",
+  "date_debut": null,
+  "date_debut_note": "Heure de début non consignée par le sous-agent.",
+  "date_fin": "2026-10-16T09:24:54Z",
+  "lecture": {
+    "fichiers": [
+      "chapters/G80/G80_a.html",
+      "chapters/G80/G80_b.html",
+      "chapters/G80/G80_c.html",
+      "chapters/G80/G80_d.html",
+      "chapters/G80/G80_pop1.html",
+      "chapters/G80/G80_pop2.html",
+      "glossary/g80.py"
+    ],
+    "empreintes_conformes": true,
+    "empreintes_calculees": {
+      "chapters/G80/G80_a.html": "cad9dd72661d6b509fdd10a06d25d2057272782afab8e010ec522354bafd087a",
+      "chapters/G80/G80_b.html": "63f07e77bb15e4487f3e57cdd1ede0f408d965d7b2ed2d5dd000b97b1c631fb8",
+      "chapters/G80/G80_c.html": "19d10885ea19a1ee1eba930acf29a76a5de23af0b53fec819906182f4738ec67",
+      "chapters/G80/G80_d.html": "d03cc7f27cd08a10b104702f80d2b803d178852b63fb7b8d14e0c496b580f02d",
+      "chapters/G80/G80_pop1.html": "0ab5479f9568c502b32e90f94137f9d65cc87b0363fa938391e66361d06b0c7f",
+      "chapters/G80/G80_pop2.html": "79371d82860460b99ef4d2fd8f31ec259d52022905d915bf02c596796ca028e9",
+      "glossary/g80.py": "5d1d0a760eae6bfc3c8af36e249ca226524b2a44525a7d2f9dbc337648b1a8fb"
+    },
+    "note_manifeste": "Le champ base_sha du manifeste (523832d9…) précède d’un merge la base d’exécution (103745ba…) ; les sept fichiers de la leçon sont identiques à leurs empreintes de manifeste."
+  },
+  "premiere_verification": "Recalcul des SHA-256 des 7 fichiers contre .medina/missions/ALPHA1-CLAUDE-G80-LANG.json (tous conformes) ; lecture intégrale des 7 fichiers ; contrôle des abréviations par build_medina.audit() sur les sources avant et après application simulée des propositions (résultat {} dans les deux cas).",
+  "synthese": {
+    "nombre_propositions": 74,
+    "renvois_medicaux": 13,
+    "propositions_par_categorie": {
+      "syntaxe": 32,
+      "registre": 13,
+      "répétition": 3,
+      "ambiguité": 9,
+      "grammaire": 6,
+      "typographie": 5,
+      "cohérence": 3,
+      "ponctuation": 3
+    },
+    "propositions_par_fichier": {
+      "chapters/G80/G80_a.html": 16,
+      "chapters/G80/G80_b.html": 25,
+      "chapters/G80/G80_c.html": 18,
+      "chapters/G80/G80_d.html": 8,
+      "chapters/G80/G80_pop1.html": 4,
+      "chapters/G80/G80_pop2.html": 2,
+      "glossary/g80.py": 1
+    }
+  },
+  "propositions_fichier": "propositions.json",
+  "verification_unicite": {
+    "methode": "script Python : ancien.count(fichier) == 1 pour chacune des 74 propositions et chacune des 13 ancres de renvoi ; absence de chevauchement entre propositions d’un même fichier ; application simulée en mémoire, équilibre des balises HTML conservé, puis build_medina.audit() == {} sur les six fichiers HTML ; compilation du glossaire modifié.",
+    "toutes_uniques": true,
+    "sans_chevauchement": true,
+    "balises_equilibrees": true,
+    "audit_abreviations_avant": {
+      "chapters/G80/G80_a.html": {},
+      "chapters/G80/G80_b.html": {},
+      "chapters/G80/G80_c.html": {},
+      "chapters/G80/G80_d.html": {},
+      "chapters/G80/G80_pop1.html": {},
+      "chapters/G80/G80_pop2.html": {}
+    },
+    "audit_abreviations_apres_application": {
+      "chapters/G80/G80_a.html": {},
+      "chapters/G80/G80_b.html": {},
+      "chapters/G80/G80_c.html": {},
+      "chapters/G80/G80_d.html": {},
+      "chapters/G80/G80_pop1.html": {},
+      "chapters/G80/G80_pop2.html": {}
+    }
+  },
+  "constats": [
+    {
+      "id": "R-01",
+      "fichier": "chapters/G80/G80_a.html",
+      "ancre": "Le schéma de la fenêtre <button class=\"w\" data-k=\"g80-vulnerabilite\">Fenêtres de vulnérabilité</button> résume cette correspondance.",
+      "categorie": "référence à un schéma inexistant",
+      "explication": "La phrase annonce un « schéma » dans la fenêtre « Fenêtres de vulnérabilité » ; la fenêtre G80_pop1 (g80-vulnerabilite) ne contient que du texte. Deux corrections sont possibles (supprimer « schéma » ou produire la figure) ; la seconde modifie le contenu. L’expression « la fenêtre Fenêtres de vulnérabilité » est en outre redondante. À trancher par l’audit médical / l’intégration.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-02",
+      "fichier": "chapters/G80/G80_c.html",
+      "ancre": "La classification <button class=\"w\" data-k=\"g80-mrics\">MRICS</button> répartit les images en cinq groupes selon le moment du développement où l’atteinte est survenue",
+      "categorie": "logique du critère de classement",
+      "explication": "La phrase dit que les cinq groupes sont répartis selon le moment de l’atteinte, mais seuls trois (A, B, C) correspondent à un moment ; D (divers) et E (normale) n’en ont pas. La même formulation figure dans la légende de la figure 1 (« Cinq groupes d’imagerie selon le moment de l’atteinte »). Toute reformulation précise un fait de classification : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-03",
+      "fichier": "chapters/G80/G80_b.html",
+      "ancre": "sectionne 50 à 75 % des fibres afférentes des racines lombaires et sacrées de la première racine lombaire à la première racine sacrée",
+      "categorie": "niveaux radiculaires de la rhizotomie",
+      "explication": "La fourchette « de la première racine lombaire à la première racine sacrée » (également dans G80_pop2, g80-rhizotomie) est un fait chiffré anatomique que ce rôle n’a pas vérifié ; la reformulation locale proposée (P-30) ne la modifie pas. À vérifier dans la source primaire par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-04",
+      "fichier": "chapters/G80/G80_b.html",
+      "ancre": "Une <button class=\"w\" data-k=\"g80-irm\">IRM</button> est préférée à l’échographie transfontanellaire, que l’on réserve au nourrisson.",
+      "categorie": "portée de « réserve au nourrisson »",
+      "explication": "L’IRM étant aussi pratiquée chez le nourrisson (tableau 7.1 : « IRM à terme »), la proposition relative « que l’on réserve au nourrisson » ne dit pas ce qui distingue l’échographie ; la fenêtre G80_pop1 (g80-irm) écrit « peut être utilisée chez le nourrisson ». Toute précision (âge, situation) est un fait médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-05",
+      "fichier": "chapters/G80/G80_b.html",
+      "ancre": "Consensus européen sur la toxine botulique : Heinen F et al., 2010 (résumé).",
+      "categorie": "cohérence des dates de sources",
+      "explication": "Le consensus est daté de 2009 dans le texte (section 9.2 ; G80_pop2 g80-consensus : « Consensus européen de 2009 », « Ancien (2009) ») et de 2010 dans les références. De même, la « synthèse de preuves de 2019 » (section 9.1, fenêtre « Synthèse feux tricolores de 2019 ») est référencée « Novak I et al., 2020 ». Il peut s’agir d’année de consensus et d’année de publication, mais le lecteur ne le sait pas : harmonisation à décider par l’audit médical après lecture des sources.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-06",
+      "fichier": "chapters/G80/G80_c.html",
+      "ancre": "Le baclofène agit sur la moelle et touche donc l’ensemble du corps",
+      "categorie": "cohérence logique du « donc »",
+      "explication": "La phrase déduit une action sur « l’ensemble du corps » de l’action médullaire du baclofène, alors que la même phrase indique ensuite la voie intrathécale (doses en microgrammes), voie locale. La déduction est contestable ; toute reformulation modifie l’énoncé pharmacologique.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-07",
+      "fichier": "chapters/G80/G80_c.html",
+      "ancre": "Les intervalles de surveillance du programme européen n’ont pas été lus.",
+      "categorie": "référent non introduit",
+      "explication": "« Le programme européen » n’a été défini nulle part dans la leçon (la fenêtre G80_pop1 g80-hanche écrit seulement « Les intervalles précis n’ont pas été lus »). Nommer le programme exige la source.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-08",
+      "fichier": "chapters/G80/G80_d.html",
+      "ancre": "Moyenne 276 µg/jour à 12 mois ; avant 12 ans : 24–1199 µg/jour",
+      "categorie": "contenu d’une colonne intitulée « Maximum »",
+      "explication": "Dans le tableau des doses, la colonne « Maximum » du Liorésal intrathécal® contient une moyenne (276 µg/jour) et une plage (24–1199 µg/jour) qui ne sont pas des maxima ; la ligne du Dysport® membre supérieur laisse « Selon la fiche » en dose initiale et cible. Toute correction modifie des données posologiques.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-09",
+      "fichier": "chapters/G80/G80_d.html",
+      "ancre": "Pour le baclofène intrathécal, le patient non répondeur à un bolus de 100 µg est exclu du traitement.",
+      "categorie": "cohérence de la séquence de bolus",
+      "explication": "Le tableau donne un bolus test de 25 µg chez l’enfant, la phrase suivante exclut le non-répondeur à 100 µg : la séquence d’escalade entre 25 et 100 µg n’est pas écrite. L’expliciter est un ajout de fond.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-10",
+      "fichier": "chapters/G80/G80_c.html",
+      "ancre": "<text x=\"480\" y=\"115\" font-size=\"16\" font-weight=\"bold\">Spastique</text>",
+      "categorie": "figure 3 : placement de la forme spastique",
+      "explication": "Dans la figure 3, « Spastique » (tonus augmenté) est placé au-dessus de l’axe horizontal, donc dans la zone « Mouvement augmenté (hyperkinétique) », alors que le texte précédent dit seulement que le tonus est augmenté. Le placement relève de la figure, non de la rédaction ; à signaler à l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-11",
+      "fichier": "chapters/G80/G80_pop1.html",
+      "ancre": "il est lu ici comme définition et non comme recommandation de conduite américaine",
+      "categorie": "formulation de la politique des sources",
+      "explication": "La proposition peut se lire « conduite américaine » (le rapport serait américain) ou « recommandation de conduite, [d’origine] américaine ». La phrase énonce une règle de sources du projet, non un fait médical ; la reformuler exige de connaître l’intention (le rapport de 2006 est présenté comme issu d’un atelier international).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-12",
+      "fichier": "chapters/G80/G80_b.html",
+      "ancre": "(4) confirmation après 4 à 5 ans dans les registres.",
+      "categorie": "cohérence des âges de confirmation",
+      "explication": "Le cours donne tour à tour « souvent 4–5 ans » (section 0, P-01), « 5 ans » pour les registres avec « au moins 4 ans recommandés » (section 7.1) et « après 4 à 5 ans » (critères formels). Les formulations ne sont pas équivalentes (âge de la confirmation, durée d’observation) ; harmonisation à décider par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-13",
+      "fichier": "chapters/G80/G80_pop2.html",
+      "ancre": "<div class=\"lab\">Source</div><p>Informations professionnelles suisses du Liorésal® (janvier 2025) et du Liorésal intrathécal® (avril 2024).</p>",
+      "categorie": "graphie du nom commercial",
+      "explication": "Le nom « Liorésal® » (avec accent) est employé dans toute la leçon. La graphie du nom commercial dans l’information professionnelle suisse n’a pas été vérifiée par ce rôle ; à contrôler dans le texte de la fiche (Swissmedic / compendium.ch).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    }
+  ],
+  "observations": [
+    "Espaces insécables : les sept fichiers ne contiennent aucun U+00A0 ni U+202F (0 occurrence). On dénombre, avant tout traitement automatique, environ 20 occurrences d’espace simple avant « ; » dans G80_a, 28 dans G80_b, 32 dans G80_c, 21 dans G80_d, 36 dans G80_pop1, 46 dans G80_pop2 et 8 dans g80.py, ainsi que des espaces simples avant « : » ; la typographie française exige une espace insécable (fine avant « ; », « ! », « ? » ; forte avant « : ») et à l’intérieur des guillemets « » : non proposé en propositions locales (traitement global à décider par l’intégration ou par le moteur). Une seule proposition (P-73) applique l’espace fine insécable à un nombre de cinq chiffres.",
+    "Nombres : « 3818 », « 6107 », « 1500 g », « 1400 µg » s’écrivent sans séparateur ; « 10 000 » (pop2) avec espace simple. Choix à harmoniser globalement (cf. observation ci-dessus).",
+    "Phrases nominales et infinitifs dans les encadrés « Piège » et « Erreur fréquente » : douze encadrés (G80_a 2.3, 4.4, 6 ; G80_b 7.3 (deux), 8.1, 9.3 (deux) ; G80_c e-1 ; G80_d p-1, p-2, p-4) commencent par un infinitif sans sujet (« Réduire la PC… », « Chercher une cause unique… ») ; la règle STYLE_REDACTION § 2 les proscrit, mais la forme est homogène dans le corpus et son remplacement uniforme relève de l’intégration : non proposé cas par cas.",
+    "Terminologie : « quadriplégique » (intitulé G80.0, titre officiel OFS) alterne avec « tétraplégie » / « tétra- » dans le texte courant ; « Paralysie cérébrale » (G80.0, G80.1, G80.3, G80.4, G80.9) alterne avec « Infirmité motrice cérébrale » (G80.2, G80.8, titre de la leçon) : les intitulés CIM sont ceux de l’OFS et ne sont pas modifiés.",
+    "Emploi de « GMFCS IV–V », « en GMFCS V » sans « niveau » dans de nombreuses occurrences (G80_a, G80_b, G80_c, G80_d, pop) : raccourci cohérent dans la leçon, non proposé ; seules les occurrences où « GMFCS plus élevé » prête à confusion ont été corrigées (P-10, P-15).",
+    "Pareto : le bouton « Loi de Pareto — Anamnèse et manifestations » (G80_a 5) ouvre la fenêtre intitulée « Pareto — Anamnèse et examen » (G80_pop2, couvrant g80-5 et g80-6) : les deux intitulés diffèrent ; l’harmonisation relève de l’intégration.",
+    "Abréviations : build_medina.audit() renvoie {} sur les six fichiers HTML avant et après application simulée des propositions. Aucune proposition n’introduit de sigle nouveau.",
+    "Graphie « l’HINE » (élision devant un sigle commençant par H) : employée dans toute la leçon, cohérente, non modifiée."
+  ],
+  "lacunes": [
+    "Aucune vérification médicale n’a été faite : les renvois_medicaux signalent des formulations dont la correction changerait le fond ; ils ne sont ni confirmés ni infirmés.",
+    "Aucun contrôle de rendu navigateur des propositions : l’application simulée a été faite en mémoire (alignement des balises, audit des abréviations), aucun fichier canonique n’est modifié.",
+    "Aucune lecture des sources primaires citées dans la leçon : les écarts signalés sont établis par comparaison interne entre les sept fichiers.",
+    "Aucun correcteur orthographique automatique (aspell, hunspell ou pyenchant) n’est disponible dans l’environnement : l’orthographe a été relue manuellement sur les sept fichiers ; une faute isolée a pu passer.",
+    "Le manifeste fixe la base d’exécution à un SHA antérieur d’un merge ; la branche de travail repose sur la base indiquée dans la consigne ; les sept fichiers sont identiques aux empreintes du manifeste."
+  ],
+  "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée",
+  "figures": {
+    "portee_controle": "Le contrôle a porté sur le texte des figures (légendes, étiquettes), pas sur leur provenance. La vérification de la provenance est transmise à l'audit MED.",
+    "inventaire": [
+      {
+        "figure": "Figure 2 (G80_c.html, hanche centrée et hanche déplacée)",
+        "classe": "ORIGINE_INCONNUE",
+        "statut": "réserve",
+        "note": "Seule figure anatomique dessinée (SVG, cercles et arcs) ; sa légende la dit « schéma didactique non à l’échelle ». Provenance et justesse anatomique à vérifier par l'audit MED ; remplacement par une image réelle sourcée (image-clo-finder) à envisager."
+      },
+      {
+        "figure": "Figures 1, 3, 4, 5 (SVG)",
+        "classe": "non évaluée par ce rôle (schémas non anatomiques d'après leur légende)",
+        "statut": "transmis à l'audit MED",
+        "note": "Aucune provenance vérifiée ; le placement de « Spastique » dans la figure 3 est signalé en R-09."
+      }
+    ]
+  }
+}
