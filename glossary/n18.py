@@ -42,3 +42,8 @@ _add('CKD', [('CKD', 'Chronic kidney disease ; maladie rénale chronique')],
      'Chronic kidney disease ; maladie rénale chronique',
      'Sigle anglais de la maladie rénale chronique, conservé seulement dans le titre original d’une figure publiée citée entre guillemets.',
      'n18-chronologie')
+# Génération 2 (paquet g2, glossaire_ajouts.json) : gène podocytaire cité dans S05.
+_add('NPHS2', [('NPHS', 'NePHrotic Syndrome (syndrome néphrotique)'), ('2', 'type 2')],
+     'Gène du syndrome néphrotique de type 2',
+     'Gène podocytaire, l’une des causes les plus fréquentes de syndrome néphrotique corticorésistant héréditaire de l’enfant chez les patients européens (Knoers et coll. 2022).',
+     'n18-s05-fenetre-1')
