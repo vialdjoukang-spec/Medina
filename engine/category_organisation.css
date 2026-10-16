@@ -238,20 +238,21 @@ html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medi
    survol ou focus clavier de la zone (fond teinté, contour 2 px, indicateur). Les jauges
    informatives restent plates et ne réagissent jamais. Tactile : aucun état de survol. */
 html[data-medina-fragment] body:not(#mcg-zones){
- --mz-ink:var(--mp-accent-ink,color-mix(in srgb,var(--atlas-accent,#317765) 70%,#0b1016));
- --mz-line:#7a828d;--mz-tint:color-mix(in srgb,var(--atlas-accent,#317765) 9%,#fff);
+ --mz-ink:var(--accent-ink);
+ --mz-line:var(--n-line-strong);--mz-tint:var(--accent-tint);
  --mz-dur:180ms;--mz-ease:cubic-bezier(.2,.75,.25,1)}
 /* Jauges informatives (cartes et pages de catégorie) : un encart plat, sans contour ni ombre de bouton. */
-html[data-medina-fragment] body:not(#mcg-zones) .mcg-category-gauge{background:rgb(40 48 60 / .035)!important;border-color:transparent!important;box-shadow:none!important;cursor:inherit}
+html[data-medina-fragment] body:not(#mcg-zones) .mcg-category-gauge{background:color-mix(in srgb,var(--ink-1) 4%,transparent)!important;border-color:transparent!important;box-shadow:none!important;cursor:inherit}
 /* Jauges-filtres du fragment : de vrais boutons, repérables au repos par leur chevron. */
-html[data-medina-fragment] body:not(#mcg-zones) .nosology-progress:is([data-mcg-filter],[data-mcg-global]){position:relative;padding-right:34px!important;background:#fff!important;cursor:pointer;
+html[data-medina-fragment] body:not(#mcg-zones) .nosology-progress:is([data-mcg-filter],[data-mcg-global]){position:relative;padding-right:34px!important;background:var(--n-surface)!important;cursor:pointer;
  transition:background-color var(--mz-dur) var(--mz-ease),border-color var(--mz-dur) var(--mz-ease),box-shadow var(--mz-dur) var(--mz-ease)!important}
 html[data-medina-fragment] body:not(#mcg-zones) .nosology-progress:is([data-mcg-filter],[data-mcg-global])::after{content:"";position:absolute;right:15px;top:50%;width:7px;height:7px;margin-top:-4px;
  border-right:2px solid var(--mz-line);border-bottom:2px solid var(--mz-line);transform:rotate(-45deg);transition:transform var(--mz-dur) var(--mz-ease),border-color var(--mz-dur) var(--mz-ease)}
 html[data-medina-fragment] body:not(#mcg-zones) .nosology-progress[aria-current="page"]{background:var(--mz-tint)!important;border-color:var(--mz-ink)!important;box-shadow:inset 3px 0 0 var(--mz-ink)!important}
 /* Leçons : le lien principal et le résumé des variantes ont leur propre surface, sans décalage. */
+/* Le contour de focus apparaît sans transition : indicateur immédiat au clavier (16.10.2026). */
 html[data-medina-fragment] body:not(#mcg-zones) .mcg-lesson-main{border-radius:12px;outline:1px solid transparent!important;outline-offset:-6px!important;
- transition:background-color var(--mz-dur) var(--mz-ease),outline-color var(--mz-dur) var(--mz-ease)!important}
+ transition:background-color var(--mz-dur) var(--mz-ease)!important}
 html[data-medina-fragment] body:not(#mcg-zones) .mcg-lesson-title{text-decoration:underline 1px transparent;text-underline-offset:4px;transition:text-decoration-color var(--mz-dur) var(--mz-ease)}
 html[data-medina-fragment] body:not(#mcg-zones) .mcg-lesson-state>[aria-hidden]{display:inline-block;transition:transform var(--mz-dur) var(--mz-ease)}
 html[data-medina-fragment] body:not(#mcg-zones) .mcg-lesson .mcg-variants>summary{width:fit-content;max-width:100%;margin-left:-10px;padding:3px 10px;border-radius:8px;box-shadow:inset 0 0 0 1px transparent;
@@ -266,10 +267,10 @@ html[data-medina-fragment] body:not(#mcg-zones) .mcg-category-foot .mcg-arrow{tr
 html[data-medina-fragment] body:not(#mcg-zones) :is(.mcg-category-card,.mcg-lesson):is(:hover,:focus-visible,:focus-within){transform:none!important}
 
 /* États « zone » : identiques au survol (souris fine) et au focus clavier. */
-html[data-medina-fragment] body:not(#mcg-zones) .mcg-category-card:focus-visible{box-shadow:var(--mp-shadow-hover,0 8px 22px -14px rgb(16 24 36 / .35))!important;border-color:var(--mz-ink)!important;border-left-color:var(--mp-cat,var(--mz-ink))!important}
-html[data-medina-fragment] body:not(#mcg-zones) .mcg-category-card:focus-visible .mcg-category-foot{background:var(--mz-tint);color:var(--mp-ink,#141a22)!important}
+html[data-medina-fragment] body:not(#mcg-zones) .mcg-category-card:focus-visible{box-shadow:var(--shadow-2)!important;border-color:var(--mz-ink)!important;border-left-color:var(--mp-cat,var(--mz-ink))!important}
+html[data-medina-fragment] body:not(#mcg-zones) .mcg-category-card:focus-visible .mcg-category-foot{background:var(--mz-tint);color:var(--ink-1)!important}
 html[data-medina-fragment] body:not(#mcg-zones) .mcg-category-card:focus-visible .mcg-category-foot>span:first-child{text-decoration:underline 1px;text-underline-offset:3px}
-html[data-medina-fragment] body:not(#mcg-zones) .mcg-category-card:focus-visible .mcg-arrow{background:var(--mz-ink)!important;border-color:var(--mz-ink)!important;color:#fff!important;transform:translate(2px,-2px)}
+html[data-medina-fragment] body:not(#mcg-zones) .mcg-category-card:focus-visible .mcg-arrow{background:var(--mz-ink)!important;border-color:var(--mz-ink)!important;color:var(--on-accent)!important;transform:translate(2px,-2px)}
 html[data-medina-fragment] body:not(#mcg-zones) .nosology-progress:is([data-mcg-filter],[data-mcg-global]):focus-visible{background:var(--mz-tint)!important;border-color:var(--mz-ink)!important;box-shadow:inset 0 0 0 1px var(--mz-ink)!important;outline:2px solid var(--mz-ink)!important;outline-offset:2px!important}
 html[data-medina-fragment] body:not(#mcg-zones) .nosology-progress:is([data-mcg-filter],[data-mcg-global]):focus-visible::after{border-color:var(--mz-ink);transform:translateX(3px) rotate(-45deg)}
 html[data-medina-fragment] body:not(#mcg-zones) .mcg-lesson-main:focus-visible{background:var(--mz-tint)!important;outline:2px solid var(--mz-ink)!important;outline-offset:-6px!important}
@@ -281,12 +282,12 @@ html[data-medina-fragment] body:not(#mcg-zones) .mcg-lesson .mcg-variants a:focu
 @media (hover:hover){
  /* Niveau 2 : survol du rectangle. Relief discret ; chaque zone cliquable se détache. */
  html[data-medina-fragment] body:not(#mcg-zones) .mcg-category-card:hover{border-color:var(--mz-line)!important;border-left-color:var(--mp-cat,var(--mz-line))!important}
- html[data-medina-fragment] body:not(#mcg-zones) .mcg-category-card:hover .mcg-category-foot{background:var(--mz-tint);color:var(--mp-ink,#141a22)!important}
+ html[data-medina-fragment] body:not(#mcg-zones) .mcg-category-card:hover .mcg-category-foot{background:var(--mz-tint);color:var(--ink-1)!important}
  html[data-medina-fragment] body:not(#mcg-zones) .mcg-category-card:hover .mcg-category-foot>span:first-child{text-decoration:underline 1px;text-underline-offset:3px}
- html[data-medina-fragment] body:not(#mcg-zones) .mcg-category-card:hover .mcg-arrow{background:var(--mz-ink)!important;border-color:var(--mz-ink)!important;color:#fff!important;transform:translate(2px,-2px)}
+ html[data-medina-fragment] body:not(#mcg-zones) .mcg-category-card:hover .mcg-arrow{background:var(--mz-ink)!important;border-color:var(--mz-ink)!important;color:var(--on-accent)!important;transform:translate(2px,-2px)}
  html[data-medina-fragment] body:not(#mcg-zones) .nosology-gauges:hover>.nosology-progress:is([data-mcg-filter],[data-mcg-global]):not(:hover){border-color:var(--mz-line)!important}
  html[data-medina-fragment] body:not(#mcg-zones) .mcg-lesson:hover .mcg-lesson-main:not(:hover){outline-color:var(--mz-line)!important}
- html[data-medina-fragment] body:not(#mcg-zones) .mcg-lesson:hover .mcg-lesson-title{text-decoration-color:rgb(40 48 60 / .45)}
+ html[data-medina-fragment] body:not(#mcg-zones) .mcg-lesson:hover .mcg-lesson-title{text-decoration-color:var(--n-line-strong)}
  html[data-medina-fragment] body:not(#mcg-zones) .mcg-lesson:hover .mcg-variants>summary:not(:hover){box-shadow:inset 0 0 0 1px var(--mz-line)}
  html[data-medina-fragment] body:not(#mcg-zones) .mcg-lesson:hover .mcg-variants a{text-decoration-color:currentColor}
  /* Niveau 3 : survol de la zone elle-même, même rendu que le focus clavier (hors anneau). */
@@ -301,9 +302,9 @@ html[data-medina-fragment] body:not(#mcg-zones) .mcg-lesson .mcg-variants a:focu
 }
 @media (hover:none){
  /* Tactile : neutralise les survols collants des couches antérieures (aucun état fantôme). */
- html[data-medina-fragment] body:not(#mcg-zones) .mcg-category-card:hover:not(:focus-visible){box-shadow:var(--mp-shadow,none)!important;border-color:var(--mp-rule,#e6e4dc)!important;border-left-color:var(--mp-cat,var(--mp-rule,#e6e4dc))!important}
- html[data-medina-fragment] body:not(#mcg-zones) .mcg-category-card:hover:not(:focus-visible) .mcg-arrow{color:var(--atlas-muted,#73726b);border-color:var(--atlas-line,#e8e6df)}
- html[data-medina-fragment] body:not(#mcg-zones) .mcg-lesson:hover:not(:focus-within){box-shadow:var(--mp-shadow,none)!important;border-color:var(--mp-rule,#e6e4dc)!important}
+ html[data-medina-fragment] body:not(#mcg-zones) .mcg-category-card:hover:not(:focus-visible){box-shadow:var(--shadow-1)!important;border-color:var(--n-line)!important;border-left-color:var(--mp-cat,var(--n-line))!important}
+ html[data-medina-fragment] body:not(#mcg-zones) .mcg-category-card:hover:not(:focus-visible) .mcg-arrow{color:var(--ink-3);border-color:var(--n-line-strong)}
+ html[data-medina-fragment] body:not(#mcg-zones) .mcg-lesson:hover:not(:focus-within){box-shadow:var(--shadow-1)!important;border-color:var(--n-line)!important}
  html[data-medina-fragment] body:not(#mcg-zones) .mcg-lesson:hover:not(:focus-within) .mcg-lesson-state{text-decoration-color:transparent}
  html[data-medina-fragment] body:not(#mcg-zones) .nosology-progress:hover:not(:focus-visible) :is(span,b){text-shadow:none!important}
 }
