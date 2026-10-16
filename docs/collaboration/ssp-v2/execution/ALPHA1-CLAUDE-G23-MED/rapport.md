@@ -14,13 +14,13 @@ La leçon est solide sur les critères MDS, la neuropathologie et la pharmacolog
 
 Aucun constat n’est classé BLOQUANT au sens médical : aucune dose dangereuse n’est prescrite. En revanche, **C01 (sémiologie absente) est MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md)**.
 
-Horodatages UTC : début non relevé au démarrage (`null` ; premier horodatage observé 2026-10-16T05:57:35Z) ; fin 2026-10-16T06:12:19Z, relevée juste avant le commit.
+Horodatages UTC : début non relevé au démarrage (`null` ; premier horodatage observé 2026-10-16T05:57:35Z) ; fin 2026-10-16T06:21:34Z, relevée juste avant le commit.
 
 ## Constats majeurs
 
 **C01** — `G23_c.html` — La leçon ne possède pas de sous-onglet « Sémiologie fondamentale et analytique » : la barre #pS ne contient que les cinq disciplines (anatomie, histologie, physiologie, biochimie, génétique). Les symptômes et signes existent en liste (g23-5, g23-6), sans technique, sans mécanisme par signe, sans normal préalable, sans regroupement syndromique ni raisonnement en cinq étapes. SEM-01, SEM-02, SEM-03 (pour cette discipline) et SEM-13 sont non satisfaits.  
 *Preuve :* [S1] Supportive features ; Cardiovascular Autonomic Failure; [S3] Cardiovascular autonomic failure; [S5] Conclusion on diagnostic criteria.  
-*Proposition :* Insérer la discipline complète de propositions/G23_c_1.html (bouton en tête de .sci-bar, div.sci g23-s-semio, îlots g23-sm-1 à g23-sm-7, figure 8) et créer chapters/G23/G23_pop3.html à partir de propositions/G23_pop3_1.html (8 fenêtres g23-sm-*).
+*Proposition :* Insérer la discipline complète de propositions/G23_c_1.html (bouton en tête de .sci-bar, div.sci g23-s-semio, neuf sections data-semiology g23-sm-1 à g23-sm-9, bouton g23-tab-semio, panneau role=tabpanel, figure 8) et créer chapters/G23/G23_pop3.html à partir de propositions/G23_pop3_1.html (8 fenêtres g23-sm-*).
 
 **C02** — `G23_c.html` — tests/audit_sciences.py échoue sur G23 (base 32416a20) : quatre disciplines sur cinq ont moins de 280 mots (histologie 221, physiologie 234, biochimie 229, génétique 205) et neuf encadrés de corrélation exigés manquent (Science → traitement en anatomie, histologie et génétique ; Science → examen en physiologie et biochimie ; À retenir dans les cinq).  
 *Preuve :* [S4] Biologisch und neuropathologisch basierte Krankheitsdefinition; [S4] Ätiopathogenese; [S3] Supportive laboratory findings.  
@@ -132,7 +132,7 @@ Horodatages UTC : début non relevé au démarrage (`null` ; premier horodatage 
 
 ## 21 — Sémiologie fondamentale et analytique
 
-**Statut : absente (constat C01, MAJEUR, bloquant pour la clôture du cours et du lot, AGENTS.md).** Ce n’est pas une simple lacune. L’onglet 1 cite les symptômes (g23-5) et les signes (g23-6) sous forme de listes et de fenêtres. Il ne décrit pas la technique d’examen, ni l’état normal, ni le mécanisme de chaque signe, ni sa valeur chiffrée. Il ne regroupe pas les signes en syndromes, ne propose pas de raisonnement en cinq étapes et ne donne aucun cas corrigé. La proposition `propositions/G23_c_1.html` ajoute la discipline complète : sept îlots, une figure lisible à 390 px et trois cas corrigés. Elle compte environ 3 700 mots. La proposition `propositions/G23_pop3_1.html` ajoute huit fenêtres. Toutes les valeurs proviennent de MDS 2022, de MDS 2017, de la revue d’Innsbruck, de la revue de Munich, du consensus de Bologne, de l’ERN-RND et de Parkinson Suisse.
+**Statut : absente (constat C01, MAJEUR, bloquant pour la clôture du cours et du lot, AGENTS.md).** Ce n’est pas une simple lacune. L’onglet 1 cite les symptômes (g23-5) et les signes (g23-6) sous forme de listes et de fenêtres. Il ne décrit pas la technique d’examen, ni l’état normal, ni le mécanisme de chaque signe, ni sa valeur chiffrée. Il ne regroupe pas les signes en syndromes, ne propose pas de raisonnement en cinq étapes et ne donne aucun cas corrigé. La proposition `propositions/G23_c_1.html` ajoute la discipline complète selon le contrat `SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE_2026-10-15.yaml` et le modèle D50 : bouton `g23-tab-semio`, panneau `g23-s-semio` (`role="tabpanel"`), neuf sections `data-semiology` (normal à sources), une figure lisible à 390 px et trois cas corrigés. Elle compte environ 3 700 mots. La proposition `propositions/G23_pop3_1.html` ajoute huit fenêtres. Toutes les valeurs proviennent de MDS 2022, de MDS 2017, de la revue d’Innsbruck, de la revue de Munich, du consensus de Bologne, de l’ERN-RND et de Parkinson Suisse.
 
 | Critère | Résultat |
 |---|---|
