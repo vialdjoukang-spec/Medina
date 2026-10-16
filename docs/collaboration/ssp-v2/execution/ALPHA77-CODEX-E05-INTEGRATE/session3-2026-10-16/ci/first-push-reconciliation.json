@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-16T05:51:47.974071+00:00",
+  "pr": 182,
+  "initial_head": "0c9612315555f8e78dc8012b4c6764dfcab1ddc2",
+  "trusted_PR_base": "32416a2080e67537641040a81252dec0b3e6d137",
+  "initial_push_before": "721b86af6bde93f751d8e785e1506b1836841b32",
+  "push_garde_job": 116833177350,
+  "push_garde_result": "failure",
+  "actual_message": "Publication Alpha : commit absent ou hors ascendance : 131536dcea744fd0571cf6ef787c3d5f63fd9871",
+  "explanation": "La base du premier push est la dernière tête E05 avant intégration des reçus plus récents déjà fusionnés dans main. La garde Alpha impose que les bases de tous nouveaux reçus préexistent dans sa comparaison de confiance ; la base du reçu Claude E11 0002 est postérieure à721b. La garde de PR sur main32416 passe. Le push suivant part de0c961, qui contient déjà ces reçus et leurs bases ; aucun contrôle n’est affaibli ni ignoré.",
+  "resolution": "Checkpoint documentaire et nouveau push normal depuis cette tête intégrée ; attendre les nouveaux résultats réels de tous les contrôles avant fusion.",
+  "source_bytes_changed_by_this_checkpoint": false,
+  "guard_changed": false,
+  "force_push": false,
+  "medical_human_validation": false,
+  "closed_lessons": 0,
+  "log_sha256": "17f6bfc3f8edc375df27c9caf4b84040be30c411aa2d9f481970cda8863a1d54"
+}
