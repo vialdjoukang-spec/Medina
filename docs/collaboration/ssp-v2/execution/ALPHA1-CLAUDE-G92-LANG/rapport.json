@@ -1,0 +1,337 @@
+{
+  "mission": "ALPHA1-CLAUDE-G92-LANG",
+  "code": "G92",
+  "type_audit": "linguistique",
+  "base_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+  "generation": 1,
+  "branche": "claude/alpha1/g92-lang-g1",
+  "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G92-LANG",
+  "conversation": "alpha1-claude-g92-lang",
+  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+  "modele_effort": "conforme au manifeste",
+  "date_debut": null,
+  "date_debut_note": "Heure de début non relevée par date -u au démarrage ; aucune valeur estimée n'est présentée comme observée.",
+  "date_fin": "2026-10-16T10:02:48Z",
+  "worktree_base": "103745baaa38c76f18288758cc7f689e5091ccdb",
+  "worktree_base_note": "HEAD du worktree au démarrage de l'audit (fusion de la PR #203, descendante du base_sha du manifeste 523832d9). Sources figées identiques : empreintes SHA-256 conformes au manifeste.",
+  "lecture": {
+    "fichiers": [
+      "chapters/G92/G92_a.html",
+      "chapters/G92/G92_b.html",
+      "chapters/G92/G92_c.html",
+      "chapters/G92/G92_d.html",
+      "chapters/G92/G92_pop1.html",
+      "chapters/G92/G92_pop2.html",
+      "glossary/g92.py"
+    ],
+    "empreintes_conformes": true,
+    "empreintes_calculees": {
+      "chapters/G92/G92_a.html": "bd52231d20553285a1d1b8dc68a3f46833143ef307af5e5d61de032f805a885a",
+      "chapters/G92/G92_b.html": "6ec86bee3f63dd9eb0501515748eb04c01d255a8fbbf690164d8f509faa9ab8e",
+      "chapters/G92/G92_c.html": "a66f4f227ca0002e4425344026dd67e5f7ab836d6bfbfbe717ac51dbfdf33a4f",
+      "chapters/G92/G92_d.html": "7be2c2febd6347672321c63d915e757c9f2b33f9d951578eedc669c2f7a81281",
+      "chapters/G92/G92_pop1.html": "918f0564a6d8018117192a835f9faaef5f88004adf6fe213238568cde82e4b07",
+      "chapters/G92/G92_pop2.html": "bfe85b36e228f311f20142b260c9b63e0e91b3aac01e84eb4669e0e6e761fcc9",
+      "glossary/g92.py": "8fae9927b31322feb6bacf80bfff1d4eef6f336b6a011a900516f383d1ad17f1"
+    }
+  },
+  "premiere_verification": "Recalcul des SHA-256 des 7 fichiers contre .medina/missions/ALPHA1-CLAUDE-G92-LANG.json (tous conformes) ; lecture intégrale des 7 fichiers ; contrôles scriptés (espaces insécables, doublons de mots, typographie, abréviations) ; contrôle des abréviations par build_medina.audit() sur les six fichiers HTML avant et après application simulée des propositions (résultat {} dans les deux cas).",
+  "synthese": {
+    "nombre_propositions": 104,
+    "renvois_medicaux": 26,
+    "propositions_par_categorie": {
+      "syntaxe": 51,
+      "registre": 16,
+      "grammaire": 10,
+      "terminologie": 7,
+      "ambiguité": 7,
+      "cohérence": 5,
+      "typographie": 4,
+      "ponctuation": 3,
+      "répétition": 1
+    },
+    "constats_hors_perimetre": 2
+  },
+  "propositions_fichier": "propositions.json",
+  "verification_unicite": {
+    "methode": "script Python : ancien.count(fichier) == 1 pour chacune des 104 propositions et chacun des 26 renvois ; absence de chevauchement entre propositions d'un même fichier ; balises HTML identiques entre ancien et nouveau ; chiffres identiques entre ancien et nouveau ; application simulée en mémoire puis build_medina.audit() == {} sur les six fichiers HTML ; syntaxe Python du glossaire valide après application.",
+    "toutes_uniques": true,
+    "sans_chevauchement": true,
+    "balises_et_chiffres_inchanges": true,
+    "audit_abreviations_apres_application": {}
+  },
+  "constats": [
+    {
+      "id": "R-01",
+      "fichier": "chapters/G92/G92_a.html",
+      "ancre": "Le médicament le plus récemment introduit ou dosé",
+      "categorie": "ambiguïté médicale",
+      "explication": "« Dosé » peut signifier « dont la dose vient d’être modifiée » ou « dont la concentration a été mesurée » ; les deux lectures conduisent à des conduites différentes. À trancher par l’audit médical avant toute reformulation.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-02",
+      "fichier": "chapters/G92/G92_a.html",
+      "ancre": "ainsi que le méthotrexate",
+      "categorie": "attribution des sources",
+      "explication": "La phrase range le méthotrexate à la suite des encéphalopathies « décrites par l’information professionnelle suisse », alors que la source citée pour le méthotrexate est une revue de 2025 (section 4, références, et fenêtre g92-methotrexate : « Source : résumé d’une revue de 2025 »). Reformuler l’attribution revient à trancher un fait de sourcing.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-03",
+      "fichier": "chapters/G92/G92_a.html",
+      "ancre": "Soixante-quinze pour cent surviennent dans les sept premiers jours",
+      "categorie": "unité de la proportion",
+      "explication": "Le nombre est écrit en toutes lettres (début de phrase) et son sujet implicite est ambigu : 75 % des effets neurologiques ou 75 % des patients. La reformulation « Dans 75 % des cas, ils surviennent… » ou « 75 % des patients… » fixerait l’unité statistique, ce qui relève de la source (information professionnelle de Yescarta).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-04",
+      "fichier": "chapters/G92/G92_a.html",
+      "ancre": "Le délai moyen d’apparition est d’environ 5 jours après la perfusion.",
+      "categorie": "cohérence chiffrée",
+      "explication": "Cette phrase donne un délai moyen d’environ 5 jours ; la section 2 cite un délai médian de 6 jours pour Yescarta et le bloc « Paramètres clés » (section 12) un délai médian de 6 à 7 jours avec un début « vers le jour 5 ». Moyenne, médiane et début typique sont des grandeurs différentes : l’audit médical doit dire laquelle chaque source donne.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-05",
+      "fichier": "chapters/G92/G92_a.html",
+      "ancre": "indiquent une élimination rénale",
+      "categorie": "raisonnement",
+      "explication": "La phrase déduit une élimination rénale de deux données : l’adaptation à la clairance de la créatinine (pertinente) et l’épuration par hémodialyse (68 % en trois heures), qui prouve que le produit est dialysable, non qu’il est éliminé par le rein. La phrase signale elle-même qu’il s’agit d’une déduction ; toute correction est un choix de fond.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-06",
+      "fichier": "chapters/G92/G92_a.html",
+      "ancre": "est très spécifique : elle a été observée chez 19 des 22 patients",
+      "categorie": "sémantique médicale (spécificité ou fréquence)",
+      "explication": "« Très spécifique » est appuyé par une fréquence observée (19 des 22 patients atteints de neurotoxicité sévère), c’est-à-dire une sensibilité parmi les cas sévères, non une spécificité. Le choix du mot dépend de la source primaire, que cet audit n’a pas lue. La fenêtre g92-ecriture et la synthèse Pareto reprennent « très spécifique ».",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-07",
+      "fichier": "chapters/G92/G92_a.html",
+      "ancre": "Le point commun de nombreuses encéphalopathies médicamenteuses est la",
+      "categorie": "généralisation",
+      "explication": "« Nombreuses » généralise à partir de deux agents (céfépime, ifosfamide) pour lesquels le tableau cite l’insuffisance rénale comme facteur de risque ; le valproate, le métronidazole et le méthotrexate n’ont pas le même facteur. Reformulation = changement de portée à décider par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-08",
+      "fichier": "chapters/G92/G92_a.html",
+      "ancre": "L’inflammation cytokinique explique le calendrier de l’ICANS (début vers le jour 5, pic des cytokines aux jours 7 à 14)",
+      "categorie": "chronologie / causalité",
+      "explication": "Le début de l’ICANS (jour 5) précède le pic des cytokines (jours 7 à 14) : le pic ne peut donc expliquer à lui seul le début. La même phrase de l’onglet Sciences (« Cette chronologie explique le calendrier clinique ») pose le même problème. Toute correction modifie le lien causal affirmé.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-09",
+      "fichier": "chapters/G92/G92_b.html",
+      "ancre": "Diagnostic différentiel</b>, du plus dangereux au moins urgent",
+      "categorie": "intitulé / critère de classement",
+      "explication": "L’intitulé associe deux critères différents (dangerosité puis urgence) ; la liste suivante n’est classée explicitement selon aucun des deux. Choisir « du plus urgent au moins urgent » ou « du plus dangereux au moins dangereux », ou retirer la promesse de classement, est une décision de fond.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-10",
+      "fichier": "chapters/G92/G92_b.html",
+      "ancre": "d’arrêter ou de corriger l’agent",
+      "categorie": "sens de « corriger l’agent »",
+      "explication": "On corrige une dose, une exposition ou un trouble, non un agent. La reformulation (« adapter la dose », « supprimer l’exposition », « corriger l’accumulation ») dépend de l’agent considéré (antibiotique, chimiothérapie, toxique) et change la conduite énoncée.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-11",
+      "fichier": "chapters/G92/G92_b.html",
+      "ancre": "Ils imposent les soins intensifs, l’avis d’un neurologue et un traitement immédiat",
+      "categorie": "portée du pronom",
+      "explication": "Le pronom « Ils » suit une phrase qui énumère des situations de grade 4 puis un score ICE de 0 à 2 (grade 3). On ne sait pas si les soins intensifs s’appliquent aux deux grades ou au seul grade 4 ; la table de la section 9.1 ne les mentionne qu’à partir du grade 3. Clarifier la portée est une décision de fond.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-12",
+      "fichier": "chapters/G92/G92_b.html",
+      "ancre": "pendant deux semaines au moins ou jusqu’à disparition des effets neurologiques",
+      "categorie": "portée de la durée",
+      "explication": "La phrase ne dit pas si l’interdit de conduite dure « le plus long » des deux délais (deux semaines ou disparition des effets) ou « le premier atteint ». La formulation de l’information professionnelle de Yescarta, non relue ici, tranche ce point.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-13",
+      "fichier": "chapters/G92/G92_b.html",
+      "ancre": "persistent jusqu’au décès, sans lien avec le traitement",
+      "categorie": "rattachement de la négation",
+      "explication": "« Sans lien avec le traitement » peut qualifier la persistance des effets ou le décès. Les deux lectures ont un sens médical et réglementaire différent ; la correction suppose de relire l’information professionnelle de Yescarta.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-14",
+      "fichier": "chapters/G92/G92_b.html",
+      "ancre": "n’a pas réduit l’ICANS (35 % contre 25 %, p = 0,464)",
+      "categorie": "données comparatives incomplètes",
+      "explication": "Les deux proportions ne sont pas rattachées à leurs groupes (anakinra ou témoin) ; le lecteur ne sait pas lequel des deux groupes a présenté 35 % d’ICANS. Compléter l’énoncé ajoute un fait de la source primaire (Schmid et coll.). Même énoncé dans la fenêtre g92-anakinra.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-15",
+      "fichier": "chapters/G92/G92_b.html",
+      "ancre": "a été associé à moins de complications composites (p = 0,039)",
+      "categorie": "critère composite non défini",
+      "explication": "« Complications composites » est un calque de « composite endpoint » ; le contenu du critère n’est pas défini dans le chapitre. La fenêtre g92-tocilizumab dit seulement « moins de complications ». La reformulation exige de lire la source primaire (Stolz et coll.).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-16",
+      "fichier": "chapters/G92/G92_b.html",
+      "ancre": "Méthotrexate</b> : hydratation, acide folinique (leucovorine) et glucarpidase en prévention ou atténuation.",
+      "categorie": "objet de la prévention",
+      "explication": "La phrase ne précise pas ce que ces mesures préviennent ou atténuent (toxicité générale du méthotrexate ou seule neurotoxicité). La section 9.3 et la fenêtre g92-methotrexate (« Prévention ») ne tranchent pas. Une reformulation en phrase complète imposerait de choisir.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-17",
+      "fichier": "chapters/G92/G92_b.html",
+      "ancre": "Le diagnostic d’ICANS est d’exclusion.",
+      "categorie": "cohérence interne",
+      "explication": "La section 7 dit « Le diagnostic d’ICANS est clinique » ; ce piège dit « d’exclusion » ; la synthèse Pareto « clinique et d’exclusion » et le bloc des critères (section 12) « diagnostic d’exclusion clinique ». Les deux qualificatifs ne sont pas exclusifs mais la hiérarchie entre eux n’est pas posée. À harmoniser par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-18",
+      "fichier": "chapters/G92/G92_b.html",
+      "ancre": "Début de l’ICANS vers le jour 5 (délai médian 6 à 7 jours), 75 % dans les 7 jours.",
+      "categorie": "cohérence chiffrée",
+      "explication": "Le délai médian donné ici (6 à 7 jours) diffère de celui de la section 2 (médian de 6 jours, extrêmes 1 à 133) et de la phrase « délai moyen … environ 5 jours ». À sourcer et harmoniser.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-19",
+      "fichier": "chapters/G92/G92_b.html",
+      "ancre": "Les crises surviennent souvent après l’aphasie globale.",
+      "categorie": "fréquence / chronologie",
+      "explication": "« Souvent » et la succession « après l’aphasie globale » sont des affirmations de fréquence et de chronologie dont la source n’est pas indiquée dans la phrase. Même énoncé dans l’onglet Sciences (neurophysiologie) et, sous une forme plus forte, dans la synthèse Pareto (« L’aphasie précède les crises et l’œdème »).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-20",
+      "fichier": "chapters/G92/G92_c.html",
+      "ancre": "Sa PCR (HSV, CMV, EBV, HHV-6, VZV) exclut une infection.",
+      "categorie": "portée d’un examen négatif",
+      "explication": "Une PCR négative pour cinq virus ne peut exclure « une infection » en général (bactérienne, fongique, autres virus, LEMP). Le glossaire (CMV : « dont la PCR … exclut une infection du système nerveux central ») reprend la même formule. La portée exacte relève de l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-21",
+      "fichier": "chapters/G92/G92_c.html",
+      "ancre": "Cette chronologie explique le calendrier clinique",
+      "categorie": "chronologie / causalité",
+      "explication": "Même difficulté que dans l’onglet Pathologie (section 3.3, bloc de corrélation) : les symptômes débutent vers le jour 5, avant le pic des cytokines (jours 7 à 14), de sorte que le pic n’explique pas le début.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-22",
+      "fichier": "chapters/G92/G92_pop2.html",
+      "ancre": "L’aphasie précède les crises et l’œdème.",
+      "categorie": "généralisation",
+      "explication": "La synthèse Pareto généralise en « précède » une relation que le texte principal exprime par « surviennent souvent après l’aphasie globale ». Retirer « souvent » changerait la portée ; à décider par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-23",
+      "fichier": "chapters/G92/G92_pop2.html",
+      "ancre": "(35 % contre 25 %, p = 0,464)",
+      "categorie": "données comparatives incomplètes",
+      "explication": "Voir le renvoi de la section 10 de l’onglet Pathologie : groupes non nommés.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-24",
+      "fichier": "chapters/G92/G92_pop2.html",
+      "ancre": "a été associé à moins de complications (p = 0,039)",
+      "categorie": "critère composite non défini",
+      "explication": "Cette fenêtre dit « moins de complications » alors que la section 10 dit « moins de complications composites » : la nature du critère est à établir par la source primaire (Stolz et coll.).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-25",
+      "fichier": "glossary/g92.py",
+      "ancre": "Virus dont la PCR dans le liquide cérébrospinal exclut une infection du système nerveux central en cas de doute.",
+      "categorie": "portée d’un examen négatif",
+      "explication": "Le CMV est défini par la portée de sa PCR (« exclut une infection ») ; les définitions voisines (EBV, HSV, VZV) disent seulement « virus recherché par PCR ». Même difficulté que dans l’onglet Examens (fiche Liquide cérébrospinal).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-26",
+      "fichier": "glossary/g92.py",
+      "ancre": "Maladie dont la forme grave en réanimation s’accompagne souvent d’une encéphalopathie aiguë.",
+      "categorie": "fréquence",
+      "explication": "« Souvent » n’est pas repris dans le texte principal (section 3.3 : « est associée à l’hypoxémie… »), qui n’indique aucune fréquence. À sourcer ou à retirer par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "H-01",
+      "fichier": "chapters/G92/G92_c.html",
+      "ancre": "data-s=\"g92-s-immuno\"",
+      "gravite": "MAJEUR",
+      "nature": "hors_perimetre_linguistique",
+      "explication": "Hors périmètre linguistique, MAJEUR, transmis à l'audit MED. Décompte réel de la barre .sci-bar de G92_c.html : quatre disciplines (g92-s-immuno, g92-s-neuro, g92-s-bioch, g92-s-imagerie : Immunologie, Neurophysiologie, Biochimie, Imagerie). Le sous-onglet « Sémiologie fondamentale et analytique » (6e sous-onglet de Sciences selon l'exigence Vial) est absent : aucune occurrence de « sémiologie » dans les sept fichiers.",
+      "bloquant_cloture": true
+    },
+    {
+      "id": "H-02",
+      "fichier": "chapters/G92/G92_a.html",
+      "ancre": "href=\"https://amiko.oddb.org (GTIN 7680669860011)\"",
+      "gravite": "MINEUR",
+      "nature": "hors_perimetre_linguistique",
+      "explication": "Les liens vers l'information professionnelle suisse sont de la forme href=\"https://amiko.oddb.org (GTIN …)\" : l'URL contient une espace et des parenthèses, donc n'est pas une adresse valide et ne renvoie pas à la monographie. 49 occurrences dans les six fichiers HTML (GTIN Yescarta 7680669860011, Actemra 7680588680011, Cefepim Leman 7680700080019, Holoxan 7680412170817, Depakine 7680347340125, MetronidazoleSINT i.v. 7680708870018). Correction à confier à une mission d'intégration ; non proposée ici car elle modifie une référence.",
+      "bloquant_cloture": false
+    }
+  ],
+  "differes": [
+    "Espaces insécables globales (avant ; : ! ?, dans les guillemets « », dans les nombres et devant %, mg, mL) : non appliquées, ni proposées une à une. Les sept fichiers ne contiennent aucun U+00A0 ni U+202F.",
+    "Séparateur des milliers : « 1000 mg » est écrit sans espace dans les six fichiers (tableaux de dosage, quiz, fenêtres) ; relève du choix différé sur les espaces insécables et les nombres.",
+    "Style des nombres : « deux fois par jour » (lettres) voisine avec « 3 à 4 fois par jour » (chiffres) dans le tableau 9.1 ; harmonisation non proposée pour ne toucher à aucun chiffre."
+  ],
+  "observations": [
+    "Description du plan ou de la fabrication du cours dans le texte (guide de rédaction § 3, non local donc non proposé) : section 0 (« Le chapitre commence donc par ce socle commun, puis développe… », « Objectifs. À la fin du chapitre, le lecteur sait… »), mentions « sources lues » (11), « source lue » (3), « n'a pas été lu » et variantes (5), « le dossier » (3). Ces formules relèvent de la méthode et non de la médecine ; leur retrait demande une réécriture de paragraphes.",
+    "Introduction de tableau (guide § 4) : « Le tableau suivant relie les agents aux examens qui orientent le diagnostic. » (onglet Examens) paraphrase les en-têtes du tableau ; non reformulé car sans faute et non local.",
+    "Cartes et listes nominales (guide § 2) : les cartes « Forme typique » et « Formes atypiques », ainsi que certaines cellules de tableau, restent télégraphiques ; seules les listes en texte courant, les alertes et les fenêtres ont fait l'objet de propositions.",
+    "Termes étrangers non balisés : « Toxische Enzephalopathie », « Cornell Assessment of Pediatric Delirium », « Immune effector Cell-associated Encephalopathy », « Swiss Medical Forum » sont écrits sans italique ni attribut de langue ; convention typographique à décider globalement.",
+    "Figures : six schémas SVG (figures 1 à 6), tous des diagrammes de processus à cases et flèches, aucune anatomie dessinée ; le contrôle a porté sur le texte des étiquettes. Étiquette de la figure 2 « leptoméninges » conservée : une forme plus complète (« atteinte leptoméningée ») dépasserait la largeur de la case du schéma.",
+    "Cohérence terminologique résiduelle : « syndrome de neurotoxicité associé aux cellules effectrices immunitaires » (glossaire ICANS) ; « neurotoxicité des cellules effectrices immunitaires » corrigé en P-01 et dans le glossaire ASTCT."
+  ],
+  "lacunes": [
+    "Aucune vérification médicale n'a été faite : les renvois_medicaux signalent des formulations dont la correction changerait le fond ; ils ne sont ni confirmés ni infirmés.",
+    "Aucun contrôle de rendu navigateur des propositions : l'application simulée a été faite en mémoire, aucun fichier canonique n'est modifié.",
+    "Aucune lecture des sources primaires citées : les écarts avec les sources sont établis seulement par comparaison interne entre les sept fichiers de la leçon.",
+    "Aucun contrôle de l'exactitude des liens (les adresses ne sont pas consultées)."
+  ],
+  "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+}
