@@ -1,0 +1,393 @@
+{
+  "mission": "ALPHA1-CLAUDE-G97-LANG",
+  "code": "G97",
+  "fragment": "S08",
+  "type_audit": "linguistique",
+  "base_sha": "103745baaa38c76f18288758cc7f689e5091ccdb",
+  "base_sha_manifeste": "523832d9ef6097607d3443f4398deee9cd0add11",
+  "generation": 1,
+  "branche": "claude/alpha1/g97-lang-g1",
+  "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G97-LANG",
+  "conversation": "alpha1-claude-g97-lang",
+  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+  "modele_effort": "conforme au manifeste",
+  "date_debut": null,
+  "date_fin": "2026-10-16T10:05:35Z",
+  "date_debut_note": "Heure de début non relevée au démarrage ; aucune valeur estimée n’est présentée comme observée.",
+  "lecture": {
+    "fichiers": [
+      "chapters/G97/G97_a.html",
+      "chapters/G97/G97_b.html",
+      "chapters/G97/G97_c.html",
+      "chapters/G97/G97_d.html",
+      "chapters/G97/G97_pop1.html",
+      "chapters/G97/G97_pop2.html",
+      "glossary/g97.py"
+    ],
+    "empreintes_conformes": true,
+    "empreintes_calculees": {
+      "chapters/G97/G97_a.html": "81eb1e9113f0035e2f0f1fd7e520cf5ad537405a04e70990d7842c0d7bc0c601",
+      "chapters/G97/G97_b.html": "8f74e0debcc7efa9e93cada45a674ff43e21bba4de86ec6b0ff4e67ce8ead4b1",
+      "chapters/G97/G97_c.html": "6ed9de0e98182e395ce0f3c8eefa68cf6d0946c75f2289898bab1ec6b0d06731",
+      "chapters/G97/G97_d.html": "169a56301d4d798dc3ad728465b9bb1dcfd85c0a6211b787374249be9322775e",
+      "chapters/G97/G97_pop1.html": "b4ff22df21afd76dcd961ed1ba2c675ce0f976ff259ba2cb9854df8903ffb17e",
+      "chapters/G97/G97_pop2.html": "6659ed3214a5e10a2598f19f3b97b2b475249f955c04fd9293bacb6382749e1e",
+      "glossary/g97.py": "39bb4776484c8c26ba3aeee0134609c9f301644849f406f923daf47631cb0b1a"
+    }
+  },
+  "premiere_verification": "Recalcul des SHA-256 des 7 fichiers contre .medina/missions/ALPHA1-CLAUDE-G97-LANG.json (tous conformes) ; lecture intégrale des 7 fichiers ; contrôles mécaniques (apostrophes droites, mots doublons, ponctuation, espaces insécables, longueur des phrases) ; build_medina.audit() sur les sources avant (résultat {}) et après application simulée des propositions (résultat {}).",
+  "synthese": {
+    "nombre_propositions": 105,
+    "renvois_medicaux": 27,
+    "propositions_par_categorie": {
+      "syntaxe": 38,
+      "registre": 16,
+      "ambiguïté": 13,
+      "ponctuation": 9,
+      "lexique": 9,
+      "grammaire": 8,
+      "répétition": 5,
+      "cohérence": 4,
+      "lourdeur": 1,
+      "terminologie": 1,
+      "typographie": 1
+    },
+    "propositions_par_fichier": {
+      "chapters/G97/G97_a.html": 19,
+      "chapters/G97/G97_b.html": 32,
+      "chapters/G97/G97_c.html": 17,
+      "chapters/G97/G97_d.html": 12,
+      "chapters/G97/G97_pop1.html": 10,
+      "chapters/G97/G97_pop2.html": 14,
+      "glossary/g97.py": 1
+    },
+    "renvois_par_fichier": {
+      "chapters/G97/G97_a.html": 7,
+      "chapters/G97/G97_b.html": 12,
+      "chapters/G97/G97_d.html": 1,
+      "chapters/G97/G97_c.html": 4,
+      "chapters/G97/G97_pop2.html": 1,
+      "glossary/g97.py": 1,
+      "chapters/G97/G97_pop1.html": 1
+    },
+    "constats_hors_perimetre": 2
+  },
+  "propositions_fichier": "propositions.json",
+  "verification_unicite": {
+    "methode": "script Python : ancien.count(fichier) == 1 pour chacune des 105 propositions ; absence de chevauchement entre propositions d’un même fichier ; application simulée en mémoire ; balises HTML comptées avant/après (identiques) ; liste des data-evidence et des data-k identique avant/après ; build_medina.audit() == {} sur l’ensemble des six fichiers HTML ; compile() du glossaire modifié.",
+    "toutes_uniques": true,
+    "sans_chevauchement": true,
+    "balises_identiques": true,
+    "data_evidence_et_data_k_conserves": true,
+    "audit_abreviations_avant": {},
+    "audit_abreviations_apres_application": {}
+  },
+  "constats": [
+    {
+      "id": "R-01",
+      "fichier": "chapters/G97/G97_a.html",
+      "ancre": "la seule cohorte suisse chiffrée (Genève)",
+      "categorie": "cohérence interne",
+      "explication": "L’encadré affirme que la seule cohorte suisse chiffrée est celle de Genève et qu’elle ne porte pas sur l’incidence. La partie 8.4 (G97_b) chiffre pourtant une cohorte de Fribourg-en-Brisgau et de Berne (séjour médian de 31 jours, arrêt de travail médian de 381 jours) et la partie 11.7 cite Genève, Berne et Lausanne. La reformulation (« la seule cohorte suisse d’efficacité » ou autre) relève de l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-02",
+      "fichier": "chapters/G97/G97_a.html",
+      "ancre": "l’incidence rapportée va de moins de 2 % à 40 %",
+      "categorie": "incohérence chiffrée",
+      "explication": "La borne basse est « moins de 2 % » dans la partie 2 et « 2 % » dans l’encadré qui suit (« l’étendue de 2 % à 40 % »). Un chiffre est à corriger ou à sourcer ; le rôle linguistique ne touche pas aux chiffres.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-03",
+      "fichier": "chapters/G97/G97_a.html",
+      "ancre": "Le médulloblastome multiplie le risque par 2,85",
+      "categorie": "statistique",
+      "explication": "Le texte écrit « multiplie le risque » pour un rapport de cotes, alors que l’encadré qui suit (« Une cote de 2,85… mesure une association… pas une probabilité absolue ») et la partie sur les preuves (« Il compare des cotes, non des risques ») disent le contraire. Remplacer « le risque » par « la cote » change l’énoncé statistique : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-04",
+      "fichier": "chapters/G97/G97_a.html",
+      "ancre": "Une composante posturale absente n’exclut pas le diagnostic, mais impose de chercher une autre cause",
+      "categorie": "cohérence interne",
+      "explication": "La fenêtre g97-orthostatique (G97_pop1) dit « ne permet pas d’affirmer la céphalée post-ponction ; elle justifie d’envisager l’imagerie ». « N’exclut pas… mais impose de chercher une autre cause » et « ne permet pas d’affirmer… justifie d’envisager » ne portent pas le même niveau d’obligation. Harmoniser suppose de choisir un énoncé clinique.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-05",
+      "fichier": "chapters/G97/G97_a.html",
+      "ancre": "circule dans l’espace entouré par la dure-mère",
+      "categorie": "anatomie",
+      "explication": "Formulation imprécise (« l’espace entouré par la dure-mère » pour le compartiment du LCR) ; la partie c emploie « l’enveloppe qui contient le LCR ». Une formule anatomique plus précise (espace sous-arachnoïdien, sac dural) est une affirmation d’anatomie à valider par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-06",
+      "fichier": "chapters/G97/G97_a.html",
+      "ancre": "les tumeurs cérébrales sont les tumeurs solides les plus fréquentes de l’enfant, et la moitié siège dans la fosse postérieure",
+      "categorie": "antécédent / chiffre",
+      "explication": "Le sujet de « la moitié » est ambigu : la moitié des tumeurs cérébrales ou la moitié des tumeurs solides de l’enfant ? Le même énoncé figure en G97_c (« la moitié siège dans la fosse postérieure »). La précision modifie le chiffre rapporté.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-07",
+      "fichier": "chapters/G97/G97_b.html",
+      "ancre": "aide à retenir les deux durées",
+      "categorie": "ambiguïté",
+      "explication": "Une seule durée (5 jours) est citée dans le paragraphe ; « les deux durées » (5 jours et 2 semaines) n’est expliqué que dans la fenêtre g97-mnemo. Expliciter les chiffres dans la phrase est un ajout d’information : à décider par l’auteur ou l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-08",
+      "fichier": "chapters/G97/G97_b.html",
+      "ancre": "Diagnostic différentiel, de la menace vitale à l’explication bénigne",
+      "categorie": "ordre / promesse",
+      "explication": "L’intitulé annonce un classement de la menace vitale à l’explication bénigne ; la liste n’est pas ordonnée ainsi (hématome sous-dural et thrombose veineuse cérébrale, puis thrombose veineuse cérébrale et vasoconstriction, puis hématome épidural, hypotension spontanée, autres troubles de la parole). La thrombose veineuse cérébrale figure dans deux puces, et la cinquième puce (« pour le mutisme, la définition reste débattue ») n’énonce aucun diagnostic différentiel. Réordonner ou retirer la promesse est un choix de fond.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-09",
+      "fichier": "chapters/G97/G97_b.html",
+      "ancre": "est donc la mesure de sécurité principale",
+      "categorie": "connecteur causal",
+      "explication": "« Donc » fait découler la surveillance de la phrase précédente (« Les sources lues ne chiffrent aucun délai »), ce qui n’est pas une conséquence logique ; le lien réel est « le pronostic dépend du délai ». Retirer ou remplacer le connecteur change le raisonnement.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-10",
+      "fichier": "chapters/G97/G97_b.html",
+      "ancre": "Les opioïdes sont donc un recours bref, pas une option de fond.",
+      "categorie": "connecteur causal",
+      "explication": "« Donc » tire une conclusion sur les opioïdes d’une phrase qui énumère des traitements sans soutien (grade I) parmi lesquels les opioïdes ne figurent pas ; les opioïdes sont traités plus haut (courts : grade C ; long cours : grade D). La place de la phrase ou son connecteur est à revoir par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-11",
+      "fichier": "chapters/G97/G97_b.html",
+      "ancre": "Les opioïdes courts sont réservés à l’échec (grade C)",
+      "categorie": "terminologie",
+      "explication": "« Opioïdes courts » (ici et dans le tableau de G97_d, « Opioïdes courts ») peut désigner une durée de traitement ou une courte durée d’action. Le contexte (« au long cours », « recours bref », « pas d’usage prolongé ») oriente vers la durée, mais le choix « de courte durée » ou « à courte durée d’action » est un énoncé pharmacologique.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-12",
+      "fichier": "chapters/G97/G97_b.html",
+      "ancre": "La rééducation cognitive et la physiothérapie sont les seules options établies.",
+      "categorie": "cohérence interne",
+      "explication": "La phrase précédente dit « Aucun traitement efficace n’est défini » ; celle-ci parle d’« options établies ». Le lecteur ne sait pas si ces options sont efficaces. À trancher par l’audit médical (même formulation dans la fenêtre g97-mutisme-therapie : « seules options établies »).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-13",
+      "fichier": "chapters/G97/G97_b.html",
+      "ancre": "La céphalée post-ponction durale évolue favorablement",
+      "categorie": "cohérence interne",
+      "explication": "L’énoncé s’oppose, quelques lignes plus bas, à « Le pronostic n’est pas toujours favorable » (suivi de 5 ans, forme chronique). Concilier les deux (évolution le plus souvent favorable, avec une minorité chronique) ajoute une nuance de fréquence non établie.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-14",
+      "fichier": "chapters/G97/G97_b.html",
+      "ancre": "Le mutisme cérébelleux est la complication neurologique de l’enfant opéré",
+      "categorie": "exclusivité",
+      "explication": "« La » complication neurologique de l’enfant opéré suggère qu’il n’y en a qu’une ; la catégorie G97 en compte d’autres (surdrainage de dérivation, hématome). Remplacer par « une complication » ou « une complication typique » est un choix de portée clinique.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-15",
+      "fichier": "chapters/G97/G97_b.html",
+      "ancre": "A. Céphalée remplissant les critères de 7.2 et le critère C.",
+      "categorie": "exactitude de la citation",
+      "explication": "Le critère A de 7.2.1 est reproduit comme « céphalée remplissant les critères de 7.2 et le critère C », alors que la fenêtre g97-ichd donne pour 7.2 « A. Toute céphalée remplissant le critère C ». Le rapport entre critères de 7.2 et de 7.2.1 est à vérifier dans le texte intégral d’ICHD-3 par l’audit médical ; le rôle linguistique ne corrige pas une citation de critères.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-16",
+      "fichier": "chapters/G97/G97_b.html",
+      "ancre": "Hématome épidural rachidien postopératoire : 0,52 % (0,10 à 0,69 %)",
+      "categorie": "lisibilité d’un chiffre",
+      "explication": "La parenthèse (0,10 à 0,69 %) est placée après la moyenne comme un intervalle de confiance, alors qu’il s’agit de l’étendue des séries (partie 2). Le lecteur peut la prendre pour un intervalle de confiance. Préciser (« étendue des séries ») est un énoncé statistique.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-17",
+      "fichier": "chapters/G97/G97_b.html",
+      "ancre": "est cosigné par des sociétés européennes mais dirigé par des sociétés majoritairement américaines",
+      "categorie": "sources",
+      "explication": "Le paragraphe affirme utiliser des recommandations « européennes ou internationales » alors que le consensus est dirigé par des sociétés majoritairement américaines et gradué selon l’échelle d’un organisme américain (G97_pop2). Règle de projet : jamais de recommandation américaine comme référence de conduite. L’arbitrage (maintenir, remplacer, ou ne présenter que comme éclairage) relève de l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-18",
+      "fichier": "chapters/G97/G97_b.html",
+      "ancre": "un déficit focal, un trouble visuel ou une convulsion imposent une imagerie urgente",
+      "categorie": "terminologie clinique",
+      "explication": "« Convulsion » ici, « crise » partout ailleurs (parties 6, 7.2, 8.2, tableaux, quiz). Crise et convulsion ne sont pas strictement synonymes (une crise peut être non convulsive) ; unifier est un choix clinique.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-19",
+      "fichier": "chapters/G97/G97_a.html",
+      "ancre": "L’influence de l’aiguille est la donnée la mieux établie.",
+      "categorie": "terminologie",
+      "explication": "L’aiguille est dite « conventionnelle biseautée » dans la partie 2, « coupante » en 3.1, 4.2, 9.1 et dans l’encadré des paramètres de G97_b, « conventionnelle » dans G97_c et dans les fenêtres. Rien n’indique que ces termes recouvrent exactement la même catégorie d’aiguille. L’unification est un choix de terminologie médicale.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-20",
+      "fichier": "chapters/G97/G97_d.html",
+      "ancre": "Intervalle de 6 heures",
+      "categorie": "structure de tableau",
+      "explication": "Dans le tableau p-2, la colonne « Dose par prise » contient « Intervalle de 6 heures » et « Intervalle de 8 heures » pour les insuffisances rénales ; ce sont des intervalles entre prises, non des doses. Corriger l’intitulé de colonne ou déplacer ces valeurs change le sens du tableau.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-21",
+      "fichier": "chapters/G97/G97_c.html",
+      "ancre": "une pression d’ouverture supérieure à ce seuil n’est pas une valeur normale, simplement non pathologique selon ce critère",
+      "categorie": "logique",
+      "explication": "Pour un critère de diagnostic, « non pathologique » et « normal » se confondent ; la phrase oppose deux notions sans définir la différence, et les sources lues ne donnent pas de valeur normale. Reformuler suppose une assertion clinique.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-22",
+      "fichier": "chapters/G97/G97_c.html",
+      "ancre": "Une céphalée qui persiste malgré le blood patch ou change de caractère sort du cadre.",
+      "categorie": "cohérence interne",
+      "explication": "Les « drapeaux rouges » de la partie 8.2 sont « une aggravation malgré un blood patch » ; ici « persiste malgré le blood patch » suffit à sortir du cadre. Persistance et aggravation ne sont pas équivalentes (la leçon chiffre l’échec du blood patch à 25,9 % et à 28,3 %, ce qui rend la persistance fréquente).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-23",
+      "fichier": "chapters/G97/G97_c.html",
+      "ancre": "tandis que l’hématome et les facteurs de pression artérielle reposent sur des preuves de faible qualité",
+      "categorie": "portée de la preuve",
+      "explication": "La phrase range « l’hématome » tout entier dans les preuves de faible qualité, alors que la partie 4.3 ne qualifie ainsi que les facteurs tensionnels et que l’incidence provient d’une méta-analyse de 40 études. Le périmètre exact des « preuves de faible qualité » est à fixer par l’audit médical (la proposition de ce rôle ne corrige que la syntaxe).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-24",
+      "fichier": "chapters/G97/G97_c.html",
+      "ancre": "C. Répéter un blood patch.",
+      "categorie": "cohérence du cas",
+      "explication": "Le cas 2 ne mentionne aucun blood patch préalable ; « répéter » suppose un patch déjà réalisé. Le distracteur est peut-être volontaire ; si non, le verbe est à changer (« Réaliser un blood patch »), ce qui modifie le leurre du quiz.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-25",
+      "fichier": "chapters/G97/G97_pop2.html",
+      "ancre": "Avec des plaquettes d’au moins 70 × 10⁹/L et une fonction normale",
+      "categorie": "ellipse",
+      "explication": "« Une fonction normale » n’a pas de complément : fonction plaquettaire ? fonction de coagulation ? La source (consensus de 2023, texte non lu) doit trancher ; la précision change le sens.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-26",
+      "fichier": "glossary/g97.py",
+      "ancre": "('GRADE','nom d’un système de cotation de la certitude de la preuve')",
+      "categorie": "développement des sigles",
+      "explication": "Le champ « lit » ne développe pas GRADE lettre à lettre (convention du glossaire : définition littérale lettre à lettre). Le développement (Grading of Recommendations Assessment, Development and Evaluation) n’a pas été vérifié dans une source lue ici ; de même pour AIPS (« développement lettre à lettre non établi »). À sourcer par l’audit médical ou l’intégrateur du glossaire.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-27",
+      "fichier": "chapters/G97/G97_pop1.html",
+      "ancre": "B. Basse pression du LCR (moins de 60 mm de LCR) et/ou fuite de LCR à l’imagerie.",
+      "categorie": "cohérence interne",
+      "explication": "La fenêtre g97-ichd écrit « et/ou » pour le critère B de la rubrique 7.2, alors que la partie 1.1 écrit « ou » (« ou une fuite visible à l’imagerie »). Les deux énoncés ne sont pas équivalents (cumul possible ou non). Le texte d’ICHD-3 doit trancher.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    }
+  ],
+  "differes": [
+    "Espaces insécables (avant ; : ! ? et » ; après « ; dans les nombres de plus de quatre chiffres ; entre un nombre et % ou une unité) : non appliquées, ni proposées. Les sept fichiers ne contiennent aucun U+00A0 ni U+202F, et le moteur de rendu (build_medina.py) n’en insère aucun. Relevé pour l’intégrateur : 405 espaces ordinaires avant ; : ? ! , 21 guillemets « suivis d’une espace ordinaire, 109 occurrences de « nombre, espace ordinaire, % », 5 nombres de cinq chiffres ou plus (31 412, 47 920…). Une correction globale par script (et non par 500 propositions locales) est préférable.",
+    "Toponyme « Fribourg en Brisgau » (G97_b 8.4 ; G97_pop2 g97-cppd-chronique) : la graphie correcte est « Fribourg-en-Brisgau ». Non proposé : build_medina.audit() signale le mot à trait d’union comme abréviation non couverte (deux majuscules) ; il faudrait d’abord une entrée de glossaire.",
+    "Harmonisation « 2 semaines » / « deux semaines » (7 et 5 occurrences) et « convulsion » / « crise » : non appliquée (voir R-18 pour crise et convulsion).",
+    "Phrases longues sans coupure sûre : G97-C0035 (53 mots), G97-C0039 (49), G97-C0062 (45), G97-C0473 (60), G97-C0475 (48), pop1 G97-C0326 (56) et G97-C0485 (67, liste de libellés CIM). Seule G97-C0474 (74 mots) a pu être coupée sans toucher au fond (P-49)."
+  ],
+  "observations": [
+    "Style nominal des fenêtres : la plupart des fenêtres (G97_pop1, G97_pop2) emploient, sous l’étiquette « Définition », « Fréquence », « Facteurs », des segments nominaux (« Âge avancé, coagulopathie… », « Aggravation rapide… »). STYLE_REDACTION § 2 les proscrit, mais la convention « lab + fragment » est systématique dans le moteur ; seules les phrases franchement incomplètes ont été reprises. Les puces Pareto (contraction voulue) n’ont pas été corrigées, sauf une (infinitif injonctif).",
+    "Objectifs de la partie 0 (G97-C0016) : une suite d’infinitifs (« Reconnaître… ; savoir… ; maîtriser… ») ; STYLE_REDACTION § 2 interdit l’infinitif injonctif. Non corrigé : une reformulation (« Le lecteur sait… ») est proscrite par § 3 et le choix revient à l’auteur.",
+    "Tableaux sans introduction : le tableau de prévention (9.1) et celui des diagnostics associés (e-3) suivent directement leur titre, sans phrase d’ouverture (STYLE_REDACTION § 4). Ils sont commentés après coup. Ajouter une phrase d’introduction est un ajout de contenu.",
+    "Annonce de plan : « La suite détaille le raisonnement pour… » (G97-C0097) et « Le cours le signale chaque fois » (G97-C0066) décrivent la fabrication du cours (STYLE_REDACTION § 3). Non modifiés : la suppression retire une phrase entière.",
+    "Répétition : la mention « 50 % vers le jour 16 » (amélioration du mutisme) figure six fois (G97_b ×3, G97_c ×1, G97_pop2 ×2) ; l’énoncé « les tumeurs cérébrales sont les tumeurs solides les plus fréquentes de l’enfant » figure deux fois (G97_a, G97_c).",
+    "Métadiscours : « sources lues » (22 occurrences), « n’a pas été lu », « dossier ». C’est la convention de transparence du projet (voir PROMPT_VERITE) et non une faute ; seules les occurrences de « dossier » et d’« îlot » (qui désignent la fabrication du cours) font l’objet de propositions.",
+    "Anglicisme admis : « drapeaux rouges » (parties 8.2 et 9.7) et « sagging » (entre guillemets, traduction absente). Non modifiés.",
+    "Libellé « Lésions élémentaires » de la fiche 2 (c) : terme de dermatologie appliqué à des signes d’imagerie ; rubrique de gabarit, non modifiée.",
+    "Les libellés de liens interactifs portent systématiquement une parenthèse de destination (« libellé (destination) », STYLE_REDACTION § 5) ; seules les parenthèses imbriquées ont donné lieu à des propositions (P-03, P-21, P-54)."
+  ],
+  "constats_hors_perimetre": [
+    {
+      "id": "H-01",
+      "gravite_signalee": "MAJEUR (à instruire par l’audit MED)",
+      "fichier": "chapters/G97/G97_c.html",
+      "constat": "Le panneau « Sciences fondamentales spécialisées » compte trois sous-onglets (Anatomie, Physiologie, Preuves chiffrées : data-s = g97-s-anat, g97-s-physio, g97-s-preuves). Le sous-onglet « Sémiologie fondamentale et analytique » (6e sous-onglet exigé, AGENTS.md) est absent, de même que histologie, biochimie ou immunologie, et génétique ou microbiologie (STYLE_REDACTION § 6)."
+    },
+    {
+      "id": "H-02",
+      "gravite_signalee": "réserve",
+      "fichier": "chapters/G97/G97_c.html",
+      "constat": "Trois figures SVG dessinées dans le dépôt : Figure 1 (orientation du biseau), Figure 2 (chaîne de la céphalée post-ponction), Figure 3 (barres d’incidences). Leur légende les dit schémas didactiques non calibrés ; aucune n’est une illustration anatomique réelle. Le contrôle a porté sur le texte des légendes, pas sur leur provenance ; la vérification est transmise à l’audit MED."
+    }
+  ],
+  "figures": {
+    "portee_controle": "Le contrôle a porté sur le texte des figures (légendes, étiquettes), pas sur leur provenance. La vérification de la provenance est transmise à l’audit MED.",
+    "inventaire": [
+      {
+        "figure": "Figure 1 (G97_c.html, orientation du biseau par rapport à l’axe du rachis)",
+        "classe": "non évaluée par ce rôle (schéma non anatomique d’après sa légende)",
+        "statut": "transmis à l’audit MED",
+        "note": "Légende : « Dessin non calibré, qui ne représente ni une anatomie réelle ni un geste complet » (P-60)."
+      },
+      {
+        "figure": "Figure 2 (G97_c.html, chaîne brèche durale, fuite, basse pression, céphalée orthostatique)",
+        "classe": "non évaluée par ce rôle (schéma non anatomique d’après sa légende)",
+        "statut": "transmis à l’audit MED",
+        "note": "Aucune provenance vérifiée."
+      },
+      {
+        "figure": "Figure 3 (G97_c.html, barres proportionnelles aux incidences 11,0 % et 4,2 %)",
+        "classe": "non évaluée par ce rôle (graphique schématique)",
+        "statut": "transmis à l’audit MED",
+        "note": "Les largeurs des barres (330 et 126 unités) sont bien proportionnelles à 11,0 et 4,2 (30 unités par point de pourcentage) : contrôle arithmétique de rendu seulement."
+      }
+    ]
+  },
+  "lacunes": [
+    "Aucune vérification médicale n’a été faite : les renvois_medicaux signalent des formulations dont la correction changerait le fond ; ils ne sont ni confirmés ni infirmés.",
+    "Aucune lecture des sources primaires citées (ICHD-3, consensus de 2023, méta-analyses, informations professionnelles) : les écarts avec les sources ne sont établis que par comparaison interne entre les sept fichiers de la leçon.",
+    "Aucun contrôle de rendu navigateur des propositions : l’application a été simulée en mémoire (comptage des balises, conservation des data-evidence et des data-k, build_medina.audit() sur le résultat), aucun fichier canonique n’est modifié.",
+    "Les espaces insécables, la graphie « Fribourg-en-Brisgau » et l’harmonisation chiffres/lettres sont différés (voir la rubrique « differes »).",
+    "La grille de sémiologie et l’exigence de calculs relèvent de l’audit MED et n’ont pas été traitées par ce rôle.",
+    "Le manifeste (base_sha 523832d9) et le HEAD du worktree (103745ba) diffèrent ; les empreintes des sept fichiers sont conformes au manifeste."
+  ],
+  "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+}
