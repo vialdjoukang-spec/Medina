@@ -1,0 +1,23 @@
+<!-- Proposition — glossary/g58.py : sigles introduits par les propositions G58_c_1, G58_c_2, G58_d_1, G58_pop2_1 et G58_pop2_2.
+     Format conforme à add_if_absent(key, letters, full, definition, window). Ne s’ajoutent que si la clé est absente des glossaires existants.
+     Contrôle grep du 16.10.2026 : IL-5 (j45), C5a et C5aR1 (m31), CD20 (i40), HBs et HBc (b18, b24, m06) existent déjà ; aucune clé nouvelle n’est donc strictement requise ; ces lignes restent sans effet si elles sont conservées et servent de garde si un glossaire voisin change. -->
+<pre>
+add_if_absent('IL-5', [('IL', 'InterLeukine'), ('5', 'cinq')],
+              'Interleukine 5',
+              'Cytokine principale de la croissance, du recrutement, de l’activation et de la survie des éosinophiles ; cible du mépolizumab.', 'g58-mepo')
+add_if_absent('C5a', [('C5', 'cinquième fraction du Complément'), ('a', 'fragment a')],
+              'Fraction C5a du complément',
+              'Anaphylatoxine qui active les neutrophiles par le récepteur C5aR1 dans les vascularites associées aux ANCA.', 'g58-anca')
+add_if_absent('C5aR1', [('C5a', 'fraction C5a du complément'), ('R', 'Récepteur'), ('1', 'de type 1')],
+              'Récepteur de type 1 de la fraction C5a du complément',
+              'Récepteur des neutrophiles bloqué par l’avacopan.', 'g58-anca')
+add_if_absent('CD20', [('CD', 'Cluster of Differentiation'), ('20', 'vingt')],
+              'Antigène de différenciation 20',
+              'Antigène transmembranaire des lymphocytes B, du stade pré-B au stade mature ; cible du rituximab.', 'g58-ritux')
+add_if_absent('HBs', [('H', 'Hépatite'), ('B', 'B'), ('s', 'surface')],
+              'Antigène de surface du virus de l’hépatite B',
+              'Recherché avec l’anti-HBc avant toute perfusion de rituximab.', 'g58-ritux')
+add_if_absent('HBc', [('H', 'Hépatite'), ('B', 'B'), ('c', 'core, capside')],
+              'Antigène de capside du virus de l’hépatite B',
+              'Ses anticorps signent une infection actuelle ou ancienne ; dépistage obligatoire avant le rituximab.', 'g58-ritux')
+</pre>

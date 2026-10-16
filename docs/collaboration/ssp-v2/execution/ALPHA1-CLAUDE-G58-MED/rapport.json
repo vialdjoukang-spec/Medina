@@ -1,0 +1,827 @@
+{
+ "mission": "ALPHA1-CLAUDE-G58-MED",
+ "code": "G58",
+ "type_audit": "medical",
+ "base_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "worktree_base": "32416a2080e67537641040a81252dec0b3e6d137",
+ "worktree_base_note": "START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste.",
+ "source_snapshot_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "generation": 1,
+ "branche": "claude/alpha1/g58-med-g1",
+ "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-G58-MED-g1",
+ "conversation": "alpha1-claude-g58-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-16T05:50:16Z",
+ "date_fin": "2026-10-16T06:35:53Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G58/G58_a.html",
+   "chapters/G58/G58_b.html",
+   "chapters/G58/G58_c.html",
+   "chapters/G58/G58_d.html",
+   "chapters/G58/G58_pop1.html",
+   "chapters/G58/G58_pop2.html",
+   "glossary/g58.py"
+  ],
+  "empreintes_conformes": true,
+  "empreintes": {
+   "chapters/G58/G58_a.html": {
+    "sha256": "ab85b9cbe6a06c0778d39b193fc662fd020e0bf751aee0ac793f2f5836b6e699",
+    "manifeste": "ab85b9cbe6a06c0778d39b193fc662fd020e0bf751aee0ac793f2f5836b6e699",
+    "conforme": true
+   },
+   "chapters/G58/G58_b.html": {
+    "sha256": "dac8f40b07949ec96ff2cdc3f019a1cbdd4ddf20dfa36efdfb70a75a5ba9124d",
+    "manifeste": "dac8f40b07949ec96ff2cdc3f019a1cbdd4ddf20dfa36efdfb70a75a5ba9124d",
+    "conforme": true
+   },
+   "chapters/G58/G58_c.html": {
+    "sha256": "5b3b01c49d1213b89e0ef2ccc5c2b44c48209f7d4e83d83a69c7de6db7befa00",
+    "manifeste": "5b3b01c49d1213b89e0ef2ccc5c2b44c48209f7d4e83d83a69c7de6db7befa00",
+    "conforme": true
+   },
+   "chapters/G58/G58_d.html": {
+    "sha256": "9a95b52653e579e594b68fec55610323566a606a43b4a17013811989a22c80de",
+    "manifeste": "9a95b52653e579e594b68fec55610323566a606a43b4a17013811989a22c80de",
+    "conforme": true
+   },
+   "chapters/G58/G58_pop1.html": {
+    "sha256": "9d862c7a0f28d908d51ebff67e3137d45afd12313a4960a9fbd5d5712020f7b0",
+    "manifeste": "9d862c7a0f28d908d51ebff67e3137d45afd12313a4960a9fbd5d5712020f7b0",
+    "conforme": true
+   },
+   "chapters/G58/G58_pop2.html": {
+    "sha256": "809975dabf4ed5363c482348d1264978a3b88efeb6c04ad4782651ad64f240e4",
+    "manifeste": "809975dabf4ed5363c482348d1264978a3b88efeb6c04ad4782651ad64f240e4",
+    "conforme": true
+   },
+   "glossary/g58.py": {
+    "sha256": "ec367748aa21184855c46fef75b9d437ca0d74e7d904f6c993e4e9b6bfb205b1",
+    "manifeste": "ec367748aa21184855c46fef75b9d437ca0d74e7d904f6c993e4e9b6bfb205b1",
+    "conforme": true
+   }
+  },
+  "lu_en_entier": true
+ },
+ "premiere_source_lue": {
+  "source_id": "S13",
+  "url": "https://amiko.oddb.org (Lyrica®, GTIN 7680570570016, via tools/swissmedic_fi.py)",
+  "section": "Indications ; Posologie, tableau 1 « Adaptation de la posologie selon la fonction rénale »"
+ },
+ "synthese": {
+  "BLOQUANT": 0,
+  "MAJEUR": 6,
+  "MINEUR": 9,
+  "ENRICHISSEMENT": 3
+ },
+ "constats": [
+  {
+   "id": "C01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "<div class=\"sci-bar ui\" role=\"tablist\">",
+   "ancre_occurrences": 1,
+   "constat": "Sémiologie fondamentale et analytique absente : aucun bouton data-s=\"g58-s-semio\", aucun div.sci homonyme, aucune formule « Pour la leçon : quelle est la sémiologie fondamentale et analytique ? ». Les îlots g58-5 et g58-6 listent symptômes et signes sans mécanisme par signe, sans technique (cotation de la force, cartographie sensitive), sans normal, sans tableau de syndromes, sans raisonnement en cinq étapes ni cas consacrés au signe. Le signe de Carnett, critère publié de l’ACNES, manque.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Présentation et examen clinique",
+     "citation_courte": "signes sensitifs positifs … signes négatifs … sensibilités épicritique et protopathique"
+    },
+    {
+     "source_id": "S2",
+     "section": "Introduction, Motor testing",
+     "citation_courte": "0 No contraction … 5 Normal power"
+    },
+    {
+     "source_id": "S3",
+     "section": "Methods",
+     "citation_courte": "increased tenderness after abdominal muscle tensing (Carnett’s test)"
+    }
+   ],
+   "proposition": "Insérer propositions/G58_c_1.html (bouton en tête de barre et div.sci g58-s-semio, neuf sections data-semiology g58-sm-1 à -9, une figure non anatomique, trois cas) et ajouter en fin de chapters/G58/G58_pop2.html les fenêtres de propositions/G58_pop2_2.html.",
+   "justification": "Mécanisme : chaque signe traduit une famille de fibres et un tronc nerveux précis. Conséquence : sans technique ni regroupement, l’asymétrie initiale d’une mononévrite multiple passe inaperçue, surtout quand le tableau devient confluent. Décision : ajouter la discipline exigée par Vial (option A), sourcée en Suisse puis en Europe.",
+   "bloquant_cloture": true,
+   "statut_cloture": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md ; addendum lot 2, point 1)"
+  },
+  {
+   "id": "C02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "aria-controls=\"g58-s-bioch\" data-s=\"g58-s-bioch\"",
+   "ancre_occurrences": 1,
+   "constat": "L’onglet Sciences ne compte que quatre disciplines réelles (data-s : g58-s-anat, g58-s-histo, g58-s-physio, g58-s-bioch) ; l’addendum du lot 2 en exige cinq, plus la sémiologie. Les mécanismes immunitaires visés par le rituximab, l’avacopan et le mépolizumab ne sont expliqués nulle part.",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "Mécanisme d’action",
+     "citation_courte": "se lie spécifiquement à l’antigène transmembranaire CD20"
+    },
+    {
+     "source_id": "S19",
+     "section": "Mécanisme d’action",
+     "citation_courte": "C5a et C5aR1 jouent un rôle central dans la pathogénèse de la vascularite associée aux ANCA"
+    },
+    {
+     "source_id": "S18",
+     "section": "Mécanisme d’action",
+     "citation_courte": "dirigé … spécifiquement contre l’interleukine 5"
+    }
+   ],
+   "proposition": "Ajouter la discipline « Immunologie » de propositions/G58_c_2.html (bouton après Biochimie, div.sci g58-s-immuno, figure 7 non anatomique, quatre libellés, fenêtre Pareto).",
+   "justification": "Mécanisme : la neuropathie vasculitique est entretenue par le complément, les neutrophiles, les lymphocytes B et les éosinophiles. Conséquence : chaque biothérapie vise une cible et n’est autorisée en Suisse que pour la maladie correspondante. Décision : l’immunologie est la discipline manquante la plus utile.",
+   "bloquant_cloture": true,
+   "statut_cloture": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md ; addendum lot 2, point 1)"
+  },
+  {
+   "id": "C03",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "<b>Histologie → clinique.</b> Perte axonale = neuropathie axonale.",
+   "ancre_occurrences": 1,
+   "constat": "tests/audit_sciences.py échoue (19 erreurs, base 32416a20) : histologie 236 mots, physiologie 219, biochimie 235 (minimum 280) ; dans les quatre disciplines, les libellés « Science → clinique. », « Science → examen. », « Science → traitement. » et « À retenir. » manquent (remplacés par « Anatomie → clinique. » etc.) et les encadrés contiennent des phrases nominales (« Perte axonale = neuropathie axonale. »).",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "Sensibilité de la biopsie",
+     "citation_courte": "no more than 50–60%"
+    },
+    {
+     "source_id": "S1",
+     "section": "Présentation et examen clinique",
+     "citation_courte": "fibres nerveuses de gros calibre puis les cordons médullaires postérieurs"
+    },
+    {
+     "source_id": "S15",
+     "section": "Posologie",
+     "citation_courte": "le mesna forme avec l’acroléine un produit d’addition non toxique"
+    }
+   ],
+   "proposition": "Appliquer propositions/G58_c_3.html : remplacer les quatre encadrés par les libellés conformes et ajouter trois paragraphes sourcés (rendement de la biopsie, deux familles de fibres et asymétrie d’amplitude, mesna et élimination rénale de la prégabaline).",
+   "justification": "Mécanisme : le contrat des sciences impose la corrélation explicite vers la clinique, l’examen et le traitement. Conséquence : en l’état, la leçon ne passe pas le contrôle automatique. Décision : conformer sans changer le fond et compléter par des faits lus."
+  },
+  {
+   "id": "C04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G58/G58_d.html",
+   "ancre": "Pour un traitement non couvert par l’information professionnelle suisse lue",
+   "ancre_occurrences": 1,
+   "constat": "Les emplois hors indication en Suisse ne sont jamais signalés (addendum, point 5). Rituximab : la FI ne couvre que la GPA et la polyangéite microscopique ; la leçon le propose dans la cryoglobulinémie, la vascularite rhumatoïde et la NSVN. Méthotrexate : aucune indication de vascularite. Azathioprine : indiquée dans la périartérite noueuse, non dans l’entretien de la GPA, de la MPA ou de la NSVN. Duloxétine et gabapentine : douleur diabétique (et postherpétique pour la gabapentine) seulement. Lidocaïne en emplâtre : névralgie postherpétique, non recommandée avant 12 ans, alors que la leçon cite l’ACNES de l’enfant.",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "Indications",
+     "citation_courte": "GPA/PAM … vascularite associée aux ANCA sévère active"
+    },
+    {
+     "source_id": "S21",
+     "section": "Indications",
+     "citation_courte": "Polyarthrite rhumatoïde … psoriasis … maladie de Crohn"
+    },
+    {
+     "source_id": "S20",
+     "section": "Indications",
+     "citation_courte": "Périartérite noueuse"
+    },
+    {
+     "source_id": "S23",
+     "section": "Indications",
+     "citation_courte": "Traitement de la douleur neuropathique diabétique"
+    },
+    {
+     "source_id": "S24",
+     "section": "Indications ; Enfants",
+     "citation_courte": "névralgie post-herpétique … pas recommandé pour les enfants de moins de 12 ans"
+    }
+   ],
+   "proposition": "Remplacer le paragraphe par le tableau de statut suisse de propositions/G58_d_1.html et mettre à jour la fenêtre g58-ritux avec propositions/G58_pop2_1.html.",
+   "justification": "Mécanisme : une indication suisse résulte d’une évaluation de Swissmedic pour une population donnée. Conséquence : l’emploi hors indication engage la responsabilité du prescripteur, l’information du patient et la prise en charge. Décision : nommer chaque emploi hors indication."
+  },
+  {
+   "id": "C05",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G58/G58_d.html",
+   "ancre": "(2) Cyclophosphamide : cystite hémorragique",
+   "ancre_occurrences": 1,
+   "constat": "Les précautions décisionnelles avant immunosuppression manquent : dépistage de l’hépatite B (HBsAg et anti-HBc) obligatoire avant le rituximab, prophylaxie de la pneumonie à Pneumocystis jirovecii recommandée dans les vascularites à ANCA sous rituximab, numération leucocytaire avant chaque cyclophosphamide avec seuils d’abstention (leucocytes < 2500/µl, plaquettes < 50 000/µl), bilan hépatique et sérologie VHB avant l’avacopan.",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "Mises en garde, hépatite B",
+     "citation_courte": "au moins la détection de l’antigène HBs et celle de l’anti-HBc"
+    },
+    {
+     "source_id": "S17",
+     "section": "Posologie GPA/PAM",
+     "citation_courte": "une prophylaxie contre la pneumonie à Pneumocystis jiroveci (PCP) est recommandée"
+    },
+    {
+     "source_id": "S15",
+     "section": "Mises en garde",
+     "citation_courte": "ne doit pas être administré aux patients ayant un taux de leucocytes inférieur à 2'500/µl"
+    },
+    {
+     "source_id": "S19",
+     "section": "Posologie",
+     "citation_courte": "sérologie … hépatite B"
+    }
+   ],
+   "proposition": "Ajouter l’encadré alert « Avant d’immunosupprimer » de propositions/G58_d_1.html dans l’îlot g58-p-1 (ou g58-p-3).",
+   "justification": "Mécanisme : l’immunosuppression réactive l’hépatite B et expose aux infections opportunistes ; le cyclophosphamide est myélotoxique. Conséquence : une réactivation fulminante ou une pneumocystose sont évitables. Décision : ces gestes précèdent la première dose."
+  },
+  {
+   "id": "C06",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G58/G58_d.html",
+   "ancre": "(1) Prégabaline avec opioïdes : dépression respiratoire et surmortalité (rapport de cotes ajusté 1,68).",
+   "ancre_occurrences": 1,
+   "constat": "La gabapentine est présentée sans ses mises en garde suisses : dépression du SNC et respiratoire avec les opiacés (alors que la leçon rapporte l’association gabapentine-opioïdes comme « utile » selon l’EFNS) et risque de malformations au premier trimestre. La carte Grossesse de l’îlot g58-11 et l’îlot g58-p-4 ne visent que la prégabaline, ce qui peut orienter à tort vers la gabapentine chez la femme enceinte.",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "Mises en garde",
+     "citation_courte": "la prudence est de rigueur lorsque la gabapentine est prescrite en association avec des opiacés"
+    },
+    {
+     "source_id": "S14",
+     "section": "Mises en garde",
+     "citation_courte": "L’utilisation de gabapentine pendant le premier trimestre peut provoquer des malformations sévères"
+    },
+    {
+     "source_id": "S11",
+     "section": "Résumé",
+     "citation_courte": "Combination therapy appears useful for TCA-gabapentin and gabapentin-opioids"
+    }
+   ],
+   "proposition": "Appliquer les quatre remplacements de propositions/G58_d_2.html (G58_d.html g58-p-3 et g58-p-4, G58_b.html g58-11, fenêtre g58-neurontin).",
+   "justification": "Mécanisme : les deux gabapentinoïdes dépriment le SNC et s’additionnent aux opioïdes. Conséquence : un changement de molécule ne supprime ni le risque respiratoire ni le risque tératogène. Décision : énoncer les mêmes précautions pour les deux."
+  },
+  {
+   "id": "C07",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G58/G58_pop1.html",
+   "ancre": "Dans la polyangéite microscopique, environ 80 % des patients ont des ANCA anti-MPO",
+   "ancre_occurrences": 1,
+   "constat": "Koike donne une positivité des ANCA d’environ 80 % dans la MPA comme dans la GPA, sans chiffre propre au sous-type MPO ou PR3. La leçon (même erreur dans G58_c.html, extrait « <td>MPA (environ 80 % des cas), EGPA (30–40 %) ») attribue 80 % à chaque sous-type.",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "Laboratory findings",
+     "citation_courte": "approximately 80% in both MPA and GPA"
+    }
+   ],
+   "proposition": "Remplacer par : « Les ANCA sont présents chez environ 80 % des patients avec polyangéite microscopique ou granulomatose avec polyangéite ; les anti-MPO s’associent à la première, les anti-PR3 à la seconde ; dans l’EGPA, la positivité n’est que de 30 à 40 % (Koike). »",
+   "justification": "Mécanisme : la source mesure la positivité globale. Conséquence : le chiffre par sous-type est une surinterprétation. Décision : citer la donnée telle qu’elle est publiée."
+  },
+  {
+   "id": "C08",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G58/G58_a.html",
+   "ancre": "la mortalité à cinq ans est de 25 % avec neuropathie et de 18 % sans, différence non significative (Blaes ; Koike)",
+   "ancre_occurrences": 1,
+   "constat": "Le chiffre ne figure pas chez Blaes ; Koike le rapporte pour des patients avec MPA et GPA (10 décès sur 40 avec neuropathie), non pour toutes les vascularites à ANCA.",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "Prognosis",
+     "citation_courte": "10 (25%) of 40 patients with vasculitic neuropathy at baseline died within 5 years"
+    },
+    {
+     "source_id": "S6",
+     "section": "Texte intégral",
+     "citation_courte": "chiffres 25 % et 18 % absents"
+    }
+   ],
+   "proposition": "Remplacer « (Blaes ; Koike) » par « chez des patients avec MPA ou GPA (Koike) ».",
+   "justification": "Mécanisme : attribution et population fixent la portée d’un chiffre. Conséquence : extrapolation à l’EGPA non fondée. Décision : préciser la population et la source."
+  },
+  {
+   "id": "C09",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G58/G58_d.html",
+   "ancre": "Les effets fréquents de la prégabaline sont les vertiges (30,7 %)",
+   "ancre_occurrences": 1,
+   "constat": "La FI suisse parle d’« étourdissements (30,7 %) » ; « vertiges » y désigne un autre effet (rubrique oreille et labyrinthe, fréquent). Même terme dans la fenêtre g58-lyrica (« Vertiges (30,7 %), somnolence (16,4 %) »).",
+   "preuve": [
+    {
+     "source_id": "S13",
+     "section": "Effets indésirables",
+     "citation_courte": "les étourdissements (30,7%), la somnolence (16,4%)"
+    }
+   ],
+   "proposition": "Remplacer « vertiges (30,7 %) » par « étourdissements (30,7 %) » dans G58_d.html et G58_pop2.html.",
+   "justification": "Mécanisme : étourdissement et vertige rotatoire sont des symptômes distincts. Conséquence : confusion sémiologique. Décision : reprendre le terme de la FI."
+  },
+  {
+   "id": "C10",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "Le mécanisme est mécanique : tout mouvement qui étire ou comprime le nerf réveille la douleur.",
+   "ancre_occurrences": 1,
+   "constat": "Relation causale non établie par la source (addendum, point 3) : Shamoun décrit l’aggravation par l’inspiration profonde, la toux et la rotation, sans en donner le mécanisme. Même causalité dans G58_c.html (« étirent ou compriment le nerf intercostal, ce qui explique leur effet déclenchant »).",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Clinical presentation",
+     "citation_courte": "pain is often worsened by deep inspiration, coughing, or trunk rotation (sans mécanisme)"
+    }
+   ],
+   "proposition": "Remplacer par : « La source décrit cette aggravation sans en préciser le mécanisme. » et, en physiologie, supprimer la proposition causale.",
+   "justification": "Mécanisme : non démontré dans les sources lues. Conséquence : une hypothèse est présentée comme un fait. Décision : décrire sans expliquer."
+  },
+  {
+   "id": "C11",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "La nature neuropathique de la douleur explique son ton (brûlure, éclair), sa persistance après la cicatrisation et la réponse aux molécules ciblant la douleur neuropathique.",
+   "ancre_occurrences": 1,
+   "constat": "Trois relations causales sans source lue ; la persistance après cicatrisation n’est pas décrite par Shamoun.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Texte intégral",
+     "citation_courte": "aucune phrase correspondante"
+    }
+   ],
+   "proposition": "Remplacer par : « La douleur a les caractères d’une douleur neuropathique (brûlure, éclair) et répond aux molécules de première ligne de la douleur neuropathique [Shamoun]. »",
+   "justification": "Mécanisme : association descriptive, non mécanisme démontré. Conséquence : surinterprétation. Décision : formulation descriptive."
+  },
+  {
+   "id": "C12",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "Débuter la corticothérapie avant d’avoir demandé l’électrophysiologie, le bilan et la biopsie peut rendre la preuve histologique plus difficile.",
+   "ancre_occurrences": 1,
+   "constat": "Affirmation non sourcée : Ruffer, Blaes et la PNS 2010 (résumé) lus ne la contiennent pas.",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "Texte intégral",
+     "citation_courte": "aucune mention d’un effet des corticoïdes sur le rendement de la biopsie"
+    }
+   ],
+   "proposition": "Remplacer par : « Les sources lues ne chiffrent pas l’effet d’une corticothérapie préalable sur la biopsie ; le médecin programme néanmoins l’électrophysiologie, le bilan et la biopsie le plus tôt possible. » La suite de l’encadré est conservée.",
+   "justification": "Mécanisme : non documenté. Conséquence : un argument non sourcé peut retarder le traitement. Décision : conserver la conduite, retirer la causalité."
+  },
+  {
+   "id": "C13",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "efficaces aussi en cas d’atteinte périphérique (niveau A, EFNS)",
+   "ancre_occurrences": 1,
+   "constat": "L’EFNS dit que doxycycline orale et ceftriaxone IV sont équivalentes lorsque les symptômes sont limités au système nerveux périphérique, méningite comprise ; les manifestations centrales relèvent de la ceftriaxone IV, et la doxycycline est contre-indiquée avant 8 ans.",
+   "preuve": [
+    {
+     "source_id": "S12",
+     "section": "Recommendations",
+     "citation_courte": "equally effective in patients with symptoms confined to the peripheral nervous system, including meningitis (level A)"
+    }
+   ],
+   "proposition": "Remplacer par : « équivalentes lorsque l’atteinte est limitée au système nerveux périphérique, méningite comprise (niveau A, EFNS) ; une atteinte centrale relève de la ceftriaxone IV pendant 14 jours, et la doxycycline est contre-indiquée avant 8 ans. »",
+   "justification": "Mécanisme : la diffusion et l’efficacité diffèrent selon le compartiment atteint. Conséquence : choix d’antibiotique. Décision : reprendre la nuance de la source."
+  },
+  {
+   "id": "C14",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "La radiofréquence a une efficacité moyenne de 84 % (32 études, 620 patients)",
+   "ancre_occurrences": 1,
+   "constat": "La revue systématique citée porte sur les douleurs chroniques abdominales et thoraciques (fourchette 55,8–100 %), non sur la seule névralgie intercostale.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Treatment",
+     "citation_courte": "average efficacy of 84% for chronic abdominal and thoracic pain"
+    }
+   ],
+   "proposition": "Ajouter « dans les douleurs chroniques abdominales et thoraciques (55,8 à 100 %) ».",
+   "justification": "Mécanisme : la population définit la validité externe. Conséquence : surestimation possible. Décision : préciser."
+  },
+  {
+   "id": "C15",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G58/G58_a.html",
+   "ancre": "Jusqu’à 50 % (Ruffer, 2024)",
+   "ancre_occurrences": 1,
+   "constat": "Ruffer rapporte une neuropathie chez « environ 50 % » des patients avec périartérite noueuse, non « jusqu’à 50 % ».",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "Klinik",
+     "citation_courte": "bei etwa 50 % der Erkrankten"
+    }
+   ],
+   "proposition": "Remplacer par « Environ 50 % (Ruffer, 2024) ».",
+   "justification": "Correction de fidélité à la source, sans conséquence décisionnelle."
+  },
+  {
+   "id": "C16",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "Dans l’<button class=\"w\" data-k=\"g58-acnes\">ACNES</button>, une zone d’altération de la sensibilité cutanée recouvre un point douloureux maximal",
+   "ancre_occurrences": 1,
+   "constat": "Les critères cliniques publiés de l’ACNES (point douloureux < 2 cm au bord latéral du grand droit, trouble sensitif, pincement, signe de Carnett, réponse à l’infiltration) sont absents.",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "Methods",
+     "citation_courte": "a small (< 2 cm diameter) area of maximal intensity … within the lateral boundaries of the rectus abdominis"
+    }
+   ],
+   "proposition": "Remplacer la phrase par propositions/G58_b_1.html ; fenêtres g58-sm-carnett et g58-sm-pincement dans G58_pop2_2.html.",
+   "justification": "Mécanisme : le piégeage d’une branche cutanée produit une douleur ponctuelle aggravée par la contraction musculaire. Conséquence : diagnostic clinique possible sans imagerie. Décision : enseigner les critères."
+  },
+  {
+   "id": "C17",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "Leur absence ne rassure donc pas.</p>",
+   "ancre_occurrences": 1,
+   "constat": "Rubrique 16 (spécificités suisses) absente et seule source suisse de clinique non exploitée : drapeaux rouges de la médecine interne suisse, vascularite possible avec biologie normale, lèpre importée, inaptitude possible à la conduite automobile.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Implications pratiques",
+     "citation_courte": "Les drapeaux rouges … asymétrie des déficits, une évolution aiguë"
+    },
+    {
+     "source_id": "S1",
+     "section": "Vasculites",
+     "citation_courte": "limitées au nerf périphérique, avec des paramètres biologiques et sanguins normaux"
+    },
+    {
+     "source_id": "S1",
+     "section": "Prise en charge spécifique",
+     "citation_courte": "incapacité à la conduite automobile"
+    }
+   ],
+   "proposition": "Insérer les trois ajouts de propositions/G58_b_2.html (îlots g58-5, g58-7, g58-10).",
+   "justification": "Mécanisme : une vascularite limitée au nerf n’élève pas les marqueurs systémiques. Conséquence : une biologie normale peut faussement rassurer. Décision : l’énoncer avec la source suisse."
+  },
+  {
+   "id": "C18",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G58/G58_a.html",
+   "ancre": "la sensibilité de la paroi inflammatoire est faible",
+   "ancre_occurrences": 1,
+   "constat": "La faiblesse de la biopsie n’est pas chiffrée alors qu’une source lue la donne : au plus 50 à 60 % pour une vascularite certaine.",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "Nerve biopsy",
+     "citation_courte": "no more than 50–60%"
+    }
+   ],
+   "proposition": "Compléter : « la sensibilité de la biopsie nerveuse pour une vascularite certaine ne dépasse pas 50 à 60 % (Koike) ». Voir aussi propositions/G58_c_3.html (histologie).",
+   "justification": "Mécanisme : lésions segmentaires et focales. Conséquence : un négatif sur deux peut être faux. Décision : chiffrer la limite."
+  }
+ ],
+ "matrice_20": [
+  {
+   "rang": 1,
+   "rubrique": "Question clinique et enjeu pour l’examen fédéral",
+   "statut": "couvert",
+   "ancre": "g58-0"
+  },
+  {
+   "rang": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "couvert",
+   "ancre": "g58-1, fenêtre g58-cim (vérifié BfArM 2024 [S25])"
+  },
+  {
+   "rang": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "couvert",
+   "ancre": "g58-1 (deux tableaux PNS 2010)"
+  },
+  {
+   "rang": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "partiel",
+   "ancre": "g58-2 ; aucune donnée suisse (lacune déclarée)"
+  },
+  {
+   "rang": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "couvert",
+   "ancre": "g58-3, sciences g58-s-anat à g58-s-bioch"
+  },
+  {
+   "rang": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "couvert",
+   "ancre": "g58-4"
+  },
+  {
+   "rang": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "partiel",
+   "ancre": "g58-5 ; seule fréquence : signes généraux 80 % / 50 %"
+  },
+  {
+   "rang": 8,
+   "rubrique": "Examen clinique (signes, Se/Sp)",
+   "statut": "partiel",
+   "ancre": "g58-6 ; Se/Sp du seul scratch collapse test ; technique et Carnett absents (C01, C16)"
+  },
+  {
+   "rang": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "partiel",
+   "ancre": "g58-8 alert ; délai non chiffré, drapeaux rouges suisses absents (C17)"
+  },
+  {
+   "rang": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "couvert",
+   "ancre": "g58-e-1 à g58-e-6"
+  },
+  {
+   "rang": 11,
+   "rubrique": "Diagnostic différentiel",
+   "statut": "couvert",
+   "ancre": "g58-7 (tableau à discriminants)"
+  },
+  {
+   "rang": 12,
+   "rubrique": "Prise en charge suisse",
+   "statut": "partiel",
+   "ancre": "g58-9, onglet Pharmacologie ; emplois hors indication non signalés (C04), sécurité (C05, C06)"
+  },
+  {
+   "rang": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "couvert",
+   "ancre": "g58-2, g58-8, g58-10"
+  },
+  {
+   "rang": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "partiel",
+   "ancre": "g58-10 ; prévention du zona non traitée (lacune)"
+  },
+  {
+   "rang": 15,
+   "rubrique": "Situations particulières",
+   "statut": "partiel",
+   "ancre": "g58-11 ; gabapentine et grossesse absente (C06)"
+  },
+  {
+   "rang": 16,
+   "rubrique": "Spécificités suisses",
+   "statut": "absent",
+   "ancre": "aucune (conduite automobile, LAA/Suva, AI) ; proposition C17"
+  },
+  {
+   "rang": 17,
+   "rubrique": "Critères formels du diagnostic",
+   "statut": "couvert",
+   "ancre": "g58-12 div.alert"
+  },
+  {
+   "rang": 18,
+   "rubrique": "Paramètres clés chiffrés",
+   "statut": "couvert",
+   "ancre": "g58-12 div.key"
+  },
+  {
+   "rang": 19,
+   "rubrique": "Sous-codes CIM-10-GM couverts",
+   "statut": "partiel",
+   "ancre": "G58.0 et G58.7 traités ; G58.8 et G58.9 seulement définis"
+  },
+  {
+   "rang": 20,
+   "rubrique": "Points d’examen fédéral",
+   "statut": "partiel",
+   "ancre": "quiz g58-7, g58-11, g58-e-6 ; objectifs PROFILES non cités (lacune)"
+  }
+ ],
+ "rubrique_21": {
+  "rubrique": "Sémiologie fondamentale et analytique",
+  "statut": "absent",
+  "ancre": "aucune discipline g58-s-semio",
+  "constat_id": "C01",
+  "gravite": "MAJEUR, bloquant pour la clôture du cours et du lot"
+ },
+ "semiologie": {
+  "statut": "absente",
+  "gravite": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md)",
+  "constat_id": "C01",
+  "fondamentale": {
+   "statut": "partielle_hors_discipline",
+   "ancres": [
+    "g58-5",
+    "g58-6",
+    "g58-e-5"
+   ],
+   "present": [
+    "liste des symptômes de la mononévrite multiple (carte g58-5)",
+    "signes généraux 80 % / 50 %",
+    "Schepelmann, palpation (Tinel), scratch collapse test Se 95 % Sp 100 %"
+   ],
+   "manque": [
+    "mécanisme par signe (signes positifs et négatifs, fibres de gros et petit calibre)",
+    "normal avant pathologique (cotation 5/5, Rydel-Seiffer)",
+    "technique de la force et de la sensibilité par nerf",
+    "signe de Carnett, pincement cutané",
+    "valeur déclarée « non chiffrée dans les sources lues » pour chaque symptôme"
+   ]
+  },
+  "analytique": {
+   "statut": "absente",
+   "ancres": [
+    "g58-7 (différentiel seulement)"
+   ],
+   "manque": [
+    "tableau des syndromes",
+    "raisonnement en cinq étapes",
+    "examen systématique numéroté",
+    "synthèse présentée",
+    "trois cas consacrés au signe"
+   ]
+  },
+  "grille_SEM": {
+   "SEM-01": "non",
+   "SEM-02": "non",
+   "SEM-03": "non (discipline absente ; disciplines existantes en échec, C03)",
+   "SEM-04": "oui (test_v7.py --static G58 : OK, état actuel)",
+   "SEM-05": "non",
+   "SEM-06": "non",
+   "SEM-07": "non",
+   "SEM-08": "non (une seule valeur chiffrée, sans section dédiée)",
+   "SEM-09": "non",
+   "SEM-10": "partiel (pièges g58-5, g58-7)",
+   "SEM-11": "non",
+   "SEM-12": "non",
+   "SEM-13": "non (alert g58-8 hors discipline, sans seuil ni délai)",
+   "SEM-14": "oui pour g58-7",
+   "SEM-15": "non",
+   "SEM-16": "non",
+   "SEM-17": "non",
+   "SEM-18": "non vérifié au navigateur",
+   "SEM-19": "partiel (Shamoun nord-américain pour faits descriptifs)",
+   "SEM-20": "sans objet",
+   "SEM-21": "sans objet",
+   "SEM-22": "non vérifié (aucune capture)",
+   "SEM-23": "non (aucune capture)",
+   "SEM-24": "oui (statut « revue IA, aucune validation médicale humaine »)"
+  },
+  "proposition": [
+   "propositions/G58_c_1.html",
+   "propositions/G58_a_semio_clinique.html",
+   "propositions/G58_pop2_2.html"
+  ],
+  "sources": [
+   "S1",
+   "S2",
+   "S3",
+   "S4",
+   "S5",
+   "S6",
+   "S7",
+   "S9",
+   "S12",
+   "S28"
+  ]
+ },
+ "figures": [
+  {
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "Figure 1 — Chaîne physiopathologique de la mononévrite vasculitique",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "viewBox": "0 0 380 242",
+   "texte_rendu_px_390": 13.2,
+   "debordement": false
+  },
+  {
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "Figure 2 — Séquence diagnostique",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "viewBox": "0 0 380 242",
+   "texte_rendu_px_390": 13.2,
+   "debordement": false
+  },
+  {
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "Figure 3 — Siège des lésions dans le tronc nerveux",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "viewBox": "0 0 380 184",
+   "texte_rendu_px_390": 13.2,
+   "debordement": false,
+   "remarque": "trois boîtes de texte, aucun dessin anatomique"
+  },
+  {
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "Figure 4 — Lecture histologique",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "viewBox": "0 0 380 184",
+   "texte_rendu_px_390": 13.2,
+   "debordement": false
+  },
+  {
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "Figure 5 — Du mécanisme au signe",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "viewBox": "0 0 380 184",
+   "texte_rendu_px_390": 13.2,
+   "debordement": false
+  },
+  {
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "Figure 6 — Voies biochimiques",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "viewBox": "0 0 380 184",
+   "texte_rendu_px_390": 13.2,
+   "debordement": false
+  }
+ ],
+ "figures_synthese": {
+  "total": 6,
+  "ANATOMIQUE_IA": 0,
+  "ORIGINE_INCONNUE": 0,
+  "SCHEMA_NON_ANATOMIQUE": 6,
+  "IMAGE_SOURCEE": 0,
+  "icones_svg_barre_sciences": 4,
+  "methode": "tools/image_clo_finder.py inventory G58, puis mesure Chromium à 390 px (getBBox) : aucun texte hors de son cadre, taille rendue 13,2 px",
+  "remarque": "les quatre icônes SVG des boutons de la barre Sciences n’ont pas d’aria-hidden (accessibilité, hors champ médical)"
+ },
+ "controles": {
+  "test_v7_static": "OK (G58 mots 12337 fenêtres 43 quiz 6 pareto 12)",
+  "audit_sciences": "échec : 19 erreurs (voir C03)",
+  "ancres_uniques": "33 ancres et blocs ANCIEN vérifiés : une occurrence chacun (script Python)",
+  "contrat_semiologie": "grep : g58-tab-semio, aria-labelledby, role tabpanel, 9 data-semiology ordonnés, 0 h2, data-semiology-clinical présent, 0 fichier pop3 ; sources.json et rapport.json valides ; simulation semiology() conforme"
+ },
+ "verifications_conformes": [
+  "Sous-codes, exclusions et codes voisins G50–G59 [S25]",
+  "Critères PNS 2010 certaine/probable/cliniquement probable, exclusion NSVN (VS ≥ 100 mm/h) et cinq recommandations thérapeutiques [S9]",
+  "Résumé EULAR 2022 : induction, cible 5 mg/j en 4–5 mois, avacopan, échanges plasmatiques, entretien, mépolizumab [S10]",
+  "Blaes 2015 : incidences, 1 % des biopsies, 80 %/50 % de signes généraux, 35–65 % et 10–40 %, VHB, VHC, anti-Hu, tableau 2, doses de prednisolone, cyclophosphamide, méthotrexate, azathioprine, rituximab, 44 % de 87, 50–300 µm, zone frontière, médicaments inducteurs, pANCA [S6]",
+  "Ruffer 2024 : asymétrie ≥ 50 %, suspicion de PAN, fréquences, absence d’excès d’atteintes menaçantes, biopsie combinée, ulcère, ≥ 3 couches, douleur, NfL, imagerie, IgIV hors indication, nerfs crâniens [S7]",
+  "Koike 2022 : 58/17/77 %, 70–90 %, 955 patients MPO, autopsie de 8 MPA, LCR normal, mépolizumab 136 patients, symptômes résiduels [S8]",
+  "Shamoun 2026 : épidémiologie, causes, Tinel, Schepelmann, absence de critères, bloc diagnostique, neurographie IRM 19/28, première ligne, cryoneurolyse, 20–40 % [S5]",
+  "Scratch collapse test 19/20, Se 95 % (75–99), Sp 100 % (83–100) [S4]",
+  "ACNES : PRF environ 1 sur 5, neurectomie environ 2 sur 3 [S26] ; lidocaïne chez 12 enfants [S27]",
+  "EFNS douleur neuropathique 2010, niveaux A [S11] ; EFNS neuroborréliose : critères et 14 jours [S12]",
+  "FI Lyrica : indication, titration, Clcr 30–60 : 75–300 mg/j, non utilisée < 30 mL/min, < 18 ans, aOR 1,68, grossesse [S13]",
+  "FI Neurontin : indication, titration J1–J3, 900–3600 mg/j, tableau rénal, DRESS [S14]",
+  "FI Endoxan : indication, mesna > 10 mg/kg, cystite, stérilité [S15]",
+  "FI Prednisone Streuli : 5–60 mg/j, sevrage au-delà de 8–10 jours, seuil de Cushing > 7,5 mg, surveillance, contre-indications prolongées [S16]"
+ ],
+ "non_reverifie": [
+  "Théaudin 2022 (RMS, petites fibres) ; Pereira 2025 ; Pacut 2024 ; Soulages 2022 ; Aladawi 2022 ; Redmond 2025 ; Benditz 2025 ; Chaudhuri 1997 ; Tascón Padrón 2025 ; Yavuz 2026 ; Kidoguchi 2026 : faits repris du dossier Betta 38, non relus dans cet audit"
+ ],
+ "lacunes": [
+  "Texte intégral EULAR 2022 inaccessible (HTTP 403 ard.bmj.com ; non libre dans Europe PMC) : statut de la neuropathie comme atteinte menaçant un organe non vérifié",
+  "Aucune recommandation de société suisse (SSN, SSR) sur la neuropathie vasculitique ni sur la névralgie intercostale lue",
+  "Recommandation OFSP de vaccination contre le zona : téléchargement du PDF OFSP refusé (HTTP 502, 16.10.2026) ; non rédigée",
+  "Critères suisses d’aptitude à la conduite en cas de neuropathie non lus",
+  "Objectifs PROFILES de l’examen fédéral non consultés",
+  "Fréquences, sensibilités et spécificités des symptômes de la mononévrite multiple : non chiffrées dans les sources lues",
+  "Muscles testant le nerf tibial : non relevés dans le guide MRC lu ; Koike lu sur ses 100 000 premiers caractères seulement",
+  "Mise à jour de la ligne directrice PNS 2010 : recherche PubMed sans résultat exploitable"
+ ],
+ "propositions": [
+  "G58_a_semio_clinique.html",
+  "G58_b_1.html",
+  "G58_b_2.html",
+  "G58_c_1.html",
+  "G58_c_2.html",
+  "G58_c_3.html",
+  "G58_d_1.html",
+  "G58_d_2.html",
+  "G58_glossary_1.html",
+  "G58_pop2_1.html",
+  "G58_pop2_2.html"
+ ],
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée",
+ "date_debut_note": "Première heure UTC réellement relevée (date -u) au début de l’analyse, après la lecture des protocoles et des sept fichiers ; l’heure d’ouverture de la session n’a pas été relevée.",
+ "correctifs_revue_codex": {
+  "pr": 194,
+  "date": "2026-10-16T06:35:53Z",
+  "consigne": "Correctifs de contrat, audits MED du lot 2 (revue Codex)",
+  "constats": [
+   {
+    "id": "R1",
+    "objet": "G58_c_1.html non conforme au contrat de sémiologie",
+    "statut": "corrigé",
+    "preuve": "Bouton id g58-tab-semio (role tab, aria-selected true, aria-controls et data-s g58-s-semio) ; panneau div.sci g58-s-semio role tabpanel aria-labelledby g58-tab-semio, sans hidden ; neuf sections data-semiology dans l’ordre normal → sources, titres h3, aucun h2 ; première section titrée « Pour la leçon : quelle est la sémiologie fondamentale et analytique ? » ; section sources : tableau affirmation ↔ passage et 11 liens https. Marqueur clinique : propositions/G58_a_semio_clinique.html, section data-semiology-clinical=\"G58\" à insérer dans l’îlot g58-6 de chapters/G58/G58_b.html (panneau pA). Simulation de la fonction semiology de tools/starter_codex.py sur une copie fusionnée : bouton, panneau, titre, neuf sections, liens et marqueur clinique conformes ; la barre compte 6 boutons avec la proposition G58_c_2.html (Immunologie)."
+   },
+   {
+    "id": "R2",
+    "objet": "sources.json sans passage, population ni limites",
+    "statut": "corrigé",
+    "preuve": "Chaque entrée S1–S28 porte id, url, editeur/organisme, version, date_consultation, section_ou_page, passage_paraphrase, population, limites, niveau_lecture, verification et affirmations_rattachees (affirmation, fichier, ancre) extraites des propositions ; S25–S27, non citées par les propositions, sont rattachées aux vérifications de rapport.json. S1, S3, S5, S6 et S7 relus en texte intégral le 16.10.2026 pour vérifier les passages, populations et limites ; les autres entrées reprennent les notes de lecture et le déclarent."
+   },
+   {
+    "id": "R3",
+    "objet": "G58_pop3_1.html non admis",
+    "statut": "corrigé",
+    "preuve": "Renommé propositions/G58_pop2_2.html (ajout en fin de chapters/G58/G58_pop2.html) ; références mises à jour dans rapport.json, rapport.md, G58_b_1.html, G58_c_1.html et G58_glossary_1.html ; aucun fichier ni mention pop3 ; contrôle par script : aucune clé data-k orpheline (fenêtres des propositions et de chapters/G58), aucun href=\"#…\" orphelin, aucune clé g58-sm-* en double avec les fenêtres canoniques."
+   }
+  ],
+  "ajustements_de_fond": "Restructuration sans fait nouveau non sourcé ; formulations alignées sur les passages relus : causes de polyneuropathie selon S1 (alcool, diabète, vitamine B12, chimiothérapie, paraprotéinémie), « confluence » au lieu de « chevauchement » (S1), électrophysiologie « axonale multifocale aux amplitudes réduites » (S6) au lieu de « vitesses conservées », drapeaux rouges d’adressage de S1 ajoutés à la section urgency, examen des autres organes limité à peau, poumon et rein."
+ }
+}
