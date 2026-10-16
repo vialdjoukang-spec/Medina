@@ -60,8 +60,10 @@ async function courseSnapshot(page,code){await page.locator('.mc[data-code="'+co
    for(const filter of ['frequent','federal_exam']){
     await route(page,'#/home');await page.locator('.mcg-cover').waitFor();const trigger=page.locator('.sidebar-note [data-mcg-filter="'+filter+'"]');await trigger.focus();await page.keyboard.press('Enter');await page.locator('.mcg-filter-notice').waitFor();
     check(fragment.id+' '+filter+' activation clavier',new URLSearchParams((await page.evaluate(()=>location.hash)).split('?')[1]).get('filter')===filter);
-    const selected=new Set(expectedSets[filter]),expectedBlocks=O.blocks.map(b=>({...b,lessons:b.lessons.filter(l=>selected.has(l.code))})).filter(b=>b.lessons.length);
-    equal(fragment.id+' '+filter+' catégories conservées dans ordre original',await page.locator('[data-mcg-category]').evaluateAll(nodes=>nodes.map(n=>n.dataset.mcgCategory)),expectedBlocks.map(b=>b.code));
+    const selected=new Set(expectedSets[filter]),weight=b=>new Set(b.lessons.map(l=>l.code)).size;
+    // Each filtered view ranks its categories by their visible lessons, then keeps the global order on ties.
+    const expectedBlocks=O.blocks.map(b=>({...b,lessons:b.lessons.filter(l=>selected.has(l.code))})).filter(b=>b.lessons.length).sort((x,y)=>weight(y)-weight(x)||x.order-y.order);
+    equal(fragment.id+' '+filter+' catégories triées par poids du filtre puis ordre global',await page.locator('[data-mcg-category]').evaluateAll(nodes=>nodes.map(n=>n.dataset.mcgCategory)),expectedBlocks.map(b=>b.code));
     equal(fragment.id+' '+filter+' barre latérale restreinte',await page.locator('[data-mcg-sidebar-lesson]').evaluateAll(nodes=>nodes.map(n=>n.dataset.mcgSidebarLesson)),expectedBlocks.flatMap(b=>b.lessons.map(l=>l.code)));
     const links=await page.locator('[data-mcg-category],[data-mcg-sidebar-lesson],.mcg-lesson-main').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('href')));check(fragment.id+' '+filter+' liens conservent filtre',links.every(href=>new URLSearchParams(href.split('?')[1]).get('filter')===filter));
     if(expectedBlocks.length){await page.locator('[data-mcg-category]').first().click();await page.locator('[data-mcg-block="'+expectedBlocks[0].code+'"]').waitFor();check(fragment.id+' '+filter+' clic catégorie conserve filtre',(await page.evaluate(()=>location.hash)).includes('filter='+filter));}
