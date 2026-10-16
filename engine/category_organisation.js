@@ -66,7 +66,8 @@
  const rankLabel = block => 'Catégorie ' + displayRank(block) + (activeFilter() ? ' sur ' + visibleBlocks().length + ' · ' + filterNames[activeFilter()] : '');
  // Concise display name on screen; the official CIM label (when present) for tooltips, aria-labels and search.
  const officialTitle = block => block.official_title || block.title;
- const officialHint = block => block.official_title && block.official_title !== block.title ? ' title="' + h(block.official_title) + '" aria-label="' + h(block.official_title) + '"' : '';
+ // WCAG 2.5.3 : le nom accessible reprend le nom affiché ; le libellé officiel reste en info-bulle.
+ const officialHint = block => block.official_title && block.official_title !== block.title ? ' title="' + h(block.official_title) + '"' : '';
  const name = lesson => lesson.code + ' — ' + lesson.title;
  let goldIconIndex = 0;
  const gold = lesson => {
@@ -133,7 +134,7 @@
  const rule = () => '<details class="mcg-rule"><summary>Un mot souligné ? Explorez son explication.</summary><p>Dans les cours, les mots interactifs ouvrent les mécanismes, les précisions et leurs sources. Les quatre onglets vous accompagnent du raisonnement à la prise en charge.</p></details>';
  function categoryCard(block) {
   const count = block.lessons.filter(own).length;
-  return '<a class="mcg-category-card" href="' + h(categoryUrl(block)) + '" data-mcg-category="' + h(block.code) + '" data-mcg-rank="' + displayRank(block) + '" title="' + h(officialTitle(block)) + '" aria-label="' + h(rankLabel(block)) + ' : ' + h(officialTitle(block)) + ' — ' + h(block.code) + '"><div class="mcg-category-top"><span class="mcg-category-number" data-mcg-rank-value>' + rank(displayRank(block)) + '</span><span class="mcg-code">' + h(block.code) + '</span></div><h2>' + h(block.title) + '</h2>' + weightNote(block) + categoryProgress(block) + '<span class="mcg-category-foot"><span>' + block.lessons.length + ' chapitre' + (block.lessons.length > 1 ? 's' : '') + (count ? '<i class="mcg-available-dot"></i>' + count + ' disponible' + (count > 1 ? 's' : '') : '') + '</span>' + arrow + '</span></a>';
+  return '<a class="mcg-category-card" href="' + h(categoryUrl(block)) + '" data-mcg-category="' + h(block.code) + '" data-mcg-rank="' + displayRank(block) + '" title="' + h(officialTitle(block)) + '" aria-label="' + h(rankLabel(block)) + ' : ' + h(block.title) + ' — ' + h(block.code) + '"><div class="mcg-category-top"><span class="mcg-category-number" data-mcg-rank-value>' + rank(displayRank(block)) + '</span><span class="mcg-code">' + h(block.code) + '</span></div><h2>' + h(block.title) + '</h2>' + weightNote(block) + categoryProgress(block) + '<span class="mcg-category-foot"><span>' + block.lessons.length + ' chapitre' + (block.lessons.length > 1 ? 's' : '') + (count ? '<i class="mcg-available-dot"></i>' + count + ' disponible' + (count > 1 ? 's' : '') : '') + '</span>' + arrow + '</span></a>';
  }
  function variants(lesson) {
   const listed = lesson.searchVariants || lesson.variants;
