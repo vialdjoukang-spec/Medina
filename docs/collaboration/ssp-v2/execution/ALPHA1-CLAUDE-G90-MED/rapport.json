@@ -1,0 +1,965 @@
+{
+ "mission": "ALPHA1-CLAUDE-G90-MED",
+ "code": "G90",
+ "type_audit": "medical",
+ "base_sha": "103745baaa38c76f18288758cc7f689e5091ccdb",
+ "source_snapshot_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "worktree_base_note": "Worktree créé sur la base 103745ba ; les sept fichiers sont identiques à l’instantané 523832d9 du manifeste (empreintes SHA-256 recalculées et conformes).",
+ "generation": 1,
+ "branche": "claude/alpha1/g90-med-g1",
+ "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G90-MED",
+ "conversation": "alpha1-claude-g90-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-16T09:14:00Z",
+ "date_fin": "2026-10-16T09:43:19Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G90/G90_a.html",
+   "chapters/G90/G90_b.html",
+   "chapters/G90/G90_c.html",
+   "chapters/G90/G90_d.html",
+   "chapters/G90/G90_pop1.html",
+   "chapters/G90/G90_pop2.html",
+   "glossary/g90.py"
+  ],
+  "empreintes_conformes": true,
+  "empreintes": {
+   "chapters/G90/G90_a.html": {
+    "sha256": "fdaaebb2dcb13a81cc4bd7c4dd906e993dfcd089b5ff04cbe58e5fde1e9b7e54",
+    "manifeste": "fdaaebb2dcb13a81cc4bd7c4dd906e993dfcd089b5ff04cbe58e5fde1e9b7e54",
+    "conforme": true
+   },
+   "chapters/G90/G90_b.html": {
+    "sha256": "6ff54866a1cf9160409501d2fa408871d6b5b9191702e663b3b65a2f546954f3",
+    "manifeste": "6ff54866a1cf9160409501d2fa408871d6b5b9191702e663b3b65a2f546954f3",
+    "conforme": true
+   },
+   "chapters/G90/G90_c.html": {
+    "sha256": "904b67f35bb6b69fc30c47293381c07bed1ce4f911aa9f398732ff8a66be634b",
+    "manifeste": "904b67f35bb6b69fc30c47293381c07bed1ce4f911aa9f398732ff8a66be634b",
+    "conforme": true
+   },
+   "chapters/G90/G90_d.html": {
+    "sha256": "a3ac03dd846222d3cb0feeb28d288c326290b57883d5580661f644aa28a6c1f1",
+    "manifeste": "a3ac03dd846222d3cb0feeb28d288c326290b57883d5580661f644aa28a6c1f1",
+    "conforme": true
+   },
+   "chapters/G90/G90_pop1.html": {
+    "sha256": "14390a528d6368ca795f96630086496cd8c4351cf165da930cfeb50ef2a476e7",
+    "manifeste": "14390a528d6368ca795f96630086496cd8c4351cf165da930cfeb50ef2a476e7",
+    "conforme": true
+   },
+   "chapters/G90/G90_pop2.html": {
+    "sha256": "1539d41f3809060c9eae10d179b9d5101020214ba975d161865753adbf5b6a8d",
+    "manifeste": "1539d41f3809060c9eae10d179b9d5101020214ba975d161865753adbf5b6a8d",
+    "conforme": true
+   },
+   "glossary/g90.py": {
+    "sha256": "529495ade0c5d43c613ffa9f1ebb83d4e91387c24f9fcbada4f90560aac5b5df",
+    "manifeste": "529495ade0c5d43c613ffa9f1ebb83d4e91387c24f9fcbada4f90560aac5b5df",
+    "conforme": true
+   }
+  },
+  "lectures_obligatoires": [
+   "CONSIGNE_AUDITEUR.md",
+   "PROTOCOLE_ALPHA1_CLAUDE.md",
+   "EXIGENCE_CALCULS.md",
+   "EXIGENCE_SEMIOLOGIE.md",
+   ".medina/missions/ALPHA1-CLAUDE-G90-MED.json",
+   "docs/collaboration/betta/PROMPT_VERITE.md",
+   "docs/STYLE_REDACTION.md",
+   "docs/collaboration/instructions/SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE_2026-10-15.yaml",
+   "docs/collaboration/instructions/FIGURES_ANATOMIQUES_IA_2026-10-15.md",
+   "docs/collaboration/instructions/CLARTE_BASES_CALCULS_VIAL_2026-10-11.md"
+  ]
+ },
+ "premiere_source_lue": {
+  "source_id": "S11",
+  "url": "https://amiko.oddb.org (tools/swissmedic_fi.py texte 7680693840058)",
+  "section": "Posologie/Mode d’emploi et Contre-indications de MIDODRIN SUBSTIPHARM, mise à jour mai 2024"
+ },
+ "synthese": {
+  "BLOQUANT": 0,
+  "MAJEUR": 6,
+  "MINEUR": 15,
+  "ENRICHISSEMENT": 6
+ },
+ "calculs": {
+  "total_releves": 755,
+  "valeurs": 402,
+  "reperes_non_calculables": 353,
+  "calculables": 39,
+  "recalcules": 39,
+  "controles_contre_source": 26,
+  "correct": 59,
+  "arrondi": 2,
+  "faux": 3,
+  "non_verifiables": 1,
+  "script": "calculs/verifier.py",
+  "inventaire": "calculs/inventaire.json (script calculs/inventaire.py)",
+  "resultats": "calculs/resultats.json",
+  "faux_detail": {
+   "K43": "C02",
+   "K55": "M01",
+   "K56": "M02"
+  },
+  "non_verifiable_detail": {
+   "K13": "M08"
+  },
+  "note": "Les contrôles P01 à P07 recalculent les exemples nouveaux des propositions."
+ },
+ "controles": {
+  "test_v7_static": "G90 mots 14019 fenêtres 52 quiz 8 pareto 16 — OK",
+  "audit_sciences": "échec : « lien absent : À retenir. » dans g90-s-anat, g90-s-physio, g90-s-genet (C08)",
+  "image_clo_finder_inventory": "6 figures SVG, 3 icônes de 24 px",
+  "remplacements_unicite": "36 remplacements, chaque « ancien » présent exactement une fois (propositions/remplacements.py)",
+  "propositions_classes_fermees": "w, card, ui, sci, quiz, alert, two, src, fb, key, t, ilot ; aucun style en ligne ; aucune collision de clé"
+ },
+ "constats": [
+  {
+   "id": "C01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G90/G90_c.html",
+   "ancre": "data-s=\"g90-s-anat\"",
+   "constat": "Le sous-onglet « Sémiologie fondamentale et analytique » est absent. Décompte réel des data-s de G90_c.html : 3 (g90-s-anat, g90-s-physio, g90-s-genet) ; aucun g90-s-semio, aucun data-semiology, aucun data-semiology-clinical dans l’onglet 1. La sémiologie existe de façon descriptive dans g90-5 et g90-6 (mesure couchée-debout, pupilles, membre douloureux, blessé médullaire), sans normal explicite par geste, sans mécanisme par signe, sans valeur chiffrée regroupée ni raisonnement analytique.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "§ 4.2.2.1",
+     "citation_courte": "Orthostatic heart rate increase is blunted or absent [usually not > 10 b.p.m.]"
+    },
+    {
+     "source_id": "S4",
+     "section": "Miosis",
+     "citation_courte": "The affected pupil stays small for the first 5 seconds"
+    },
+    {
+     "source_id": "S3",
+     "section": "Tableau 1, note c",
+     "citation_courte": "A ΔHR/ΔSBP ratio < 0.5 bpm/mmHg argues for neurogenic OH"
+    }
+   ],
+   "proposition": "propositions/G90_c_semio.html (bouton g90-tab-semio, panneau g90-s-semio role=tabpanel, neuf sections data-semiology, figure S1 non anatomique, trois cas corrigés) ; propositions/G90_pop_semio.html (six fenêtres g90-sm-*) ; marqueur data-semiology-clinical sur g90-6 (remplacements.json, C01).",
+   "justification": "Mécanisme : sans technique, normal et valeur de chaque signe, le lecteur ne sait pas transformer une mesure en hypothèse. Conséquence : l’examen fédéral et la pratique exigent ce passage. Décision : exigence de Vial du 15.10.2026 ; constat MAJEUR, bloquant pour la clôture du cours.",
+   "bloquant_cloture": true,
+   "decompte_data_s": 3,
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G90/G90_b.html",
+   "ancre": "un nitrate (pâte de nitroglycérine à 2 % au-dessus du niveau lésionnel, retirée dès l’effet) est décrit",
+   "constat": "La conduite aiguë de la dysréflexie autonome cite un dérivé nitré sans la contre-indication des inhibiteurs de la phosphodiestérase de type 5, fréquents chez l’homme blessé médullaire, et propose une forme (pâte de nitroglycérine à 2 %) sans information professionnelle suisse. Même omission dans les fenêtres g90-da-urgence et g90-pharma-da. Le calcul K43 est FAUX à ce titre.",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "Contre-indications ; Interactions",
+     "citation_courte": "L'administration concomitante d'inhibiteurs de la PDE5 … est contre-indiquée ; … contre-indiquée pendant les 24 heures qui suivent la prise"
+    },
+    {
+     "source_id": "S5",
+     "section": "§ 4.1",
+     "citation_courte": "apply 2% nitroglycerin paste onto the skin above the level of SCI"
+    },
+    {
+     "source_id": "S21",
+     "section": "recherche AmiKo nitroglycérine",
+     "citation_courte": "aucune pâte à 2 %"
+    }
+   ],
+   "proposition": "remplacements.json, C02 (trois remplacements : G90_b.html g90-8, G90_pop1.html g90-da-urgence, G90_pop2.html g90-pharma-da) ; priorité clinique de G90_c_semio.html, section urgency.",
+   "justification": "Mécanisme : l’inhibiteur de la PDE5 bloque la dégradation du GMPc et potentialise la vasodilatation des nitrés. Conséquence : hypotension grave et réfractaire chez un patient déjà sujet à l’hypotension. Décision : demander la prise d’un inhibiteur de la PDE5 avant tout nitré ; suivre le protocole du centre.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C03",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G90/G90_d.html",
+   "ancre": "Contre-indications : cardiopathie organique sévère (bradycardie, coronaropathie",
+   "constat": "Les contre-indications de la midodrine sont incomplètes : la FI suisse lue par le cours (Midodrin Substipharm, mai 2024) contre-indique aussi la grossesse et l’allaitement, le phéochromocytome, l’hyperthyroïdie et le glaucome à angle fermé, et exclut l’enfant et l’adolescent. La phrase de g90-12 « Aucune source lue ne traite la grossesse, l’insuffisance rénale ou hépatique » est contredite par cette FI. L’antagonisme de la midodrine par la prazosine, citée pour la dysréflexie, n’est pas signalé.",
+   "preuve": [
+    {
+     "source_id": "S11",
+     "section": "Contre-indications",
+     "citation_courte": "Phéochromocytome · Hyperthyroïdie · Glaucome à angle fermé · Grossesse et allaitement"
+    },
+    {
+     "source_id": "S11",
+     "section": "Posologies particulières",
+     "citation_courte": "ne doit donc pas être utilisé dans cette tranche d'âge"
+    },
+    {
+     "source_id": "S11",
+     "section": "Interactions",
+     "citation_courte": "L'effet de la midodrine peut être antagonisé par des α-bloquants, tels que la prazosine"
+    }
+   ],
+   "proposition": "remplacements.json, C03 (G90_d.html g90-p-2 ; G90_b.html g90-12) et M10.",
+   "justification": "Mécanisme : agoniste alpha-1 périphérique, la midodrine élève les résistances et peut aggraver un phéochromocytome, une hyperthyroïdie ou un glaucome par fermeture de l’angle. Conséquence : prescription dangereuse dans ces situations et chez la femme enceinte. Décision : contre-indications complètes selon la FI suisse.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G90/G90_pop1.html",
+   "ancre": "Les seuils chiffrés de fréquence cardiaque et de durée n’ont pas été lus et ne sont pas donnés ici",
+   "constat": "La tachycardie posturale (G90.80) n’a aucun critère chiffré dans la leçon (« accélération excessive »), alors que la source déjà citée par le cours (Thijs 2021, tableau 1) les donne : plus de 30 battements par minute ou plus de 120 par minute dans les 10 minutes, plus de 40 de 12 à 19 ans, sans hypotension orthostatique, avec symptômes.",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "Tableau 1, notes d et e",
+     "citation_courte": "> 30 bpm or > 120 bpm … within 10 min standing ; For individuals aged 12–19 years, the required increment is > 40 bpm"
+    }
+   ],
+   "proposition": "remplacements.json, C04 (g90-pots, tableau g90-1) ; propositions/G90_c_examens_formes.html ; fenêtre g90-sm-pots.",
+   "justification": "Mécanisme : la définition repose sur la seule fréquence cardiaque. Conséquence : sans seuil ni durée, ni le diagnostic ni le différentiel avec l’hypotension orthostatique ne sont possibles. Décision : intégrer les critères du consensus européen.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C05",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G90/G90_a.html",
+   "ancre": "initiale (dans les premières secondes, elle exige une mesure continue battement par battement)",
+   "constat": "Les formes initiale et retardée sont nommées sans critères chiffrés ; le rapport ΔFC/ΔPAS < 0,5 bpm/mmHg, critère neurogène du consensus de 2021, est absent.",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "Tableau 1",
+     "citation_courte": "Initial OH > 40 mmHg > 20 mmHg … within 15 s upon standing"
+    },
+    {
+     "source_id": "S3",
+     "section": "Tableau 1, note c",
+     "citation_courte": "ΔHR/ΔSBP ratio < 0.5 bpm/mmHg"
+    }
+   ],
+   "proposition": "remplacements.json, C05 ; propositions/G90_c_examens_formes.html (tableau des quatre formes, exemple chiffré P04).",
+   "justification": "Mécanisme : chaque forme a sa fenêtre temporelle. Conséquence : la technique de mesure en dépend. Décision : tableau des gradations, règle de Vial du 11.10.2026 § 4.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C06",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G90/G90_c.html",
+   "ancre": "La technique et les contre-indications détaillées n’ont pas été lues ; elles ne sont donc pas décrites ici.",
+   "constat": "Le massage du sinus carotidien est présenté comme indiqué après 40 ans sans précaution, alors que la source citée par le cours (Thijs 2021, « Safety ») rapporte des AVC et un décès et rappelle la prudence de l’ESC après AVC, AIT ou en cas de sténose carotidienne de plus de 70 %.",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "Safety",
+     "citation_courte": "CSM should be undertaken with caution in patients with previous stroke, TIA or known carotid stenosis > 70 %"
+    },
+    {
+     "source_id": "S1",
+     "section": "§ 4.2.1",
+     "citation_courte": "TIAs or strokes were observed in 21 (0.24 %)"
+    }
+   ],
+   "proposition": "remplacements.json, C06.",
+   "justification": "Mécanisme : la compression carotidienne peut mobiliser une plaque ou réduire le débit d’une carotide sténosée. Conséquence : AVC iatrogène. Décision : écarter ou adapter le geste chez ces patients.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C07",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G90/G90_c.html",
+   "ancre": "Une bradycardie devant une hypertension chez un blessé médullaire dénonce la dysréflexie.",
+   "constat": "La leçon fait de la bradycardie un élément de définition et de reconnaissance de la dysréflexie (G90_a.html tableau g90-1, fenêtre g90-da, encadré Science → clinique). La source lue indique que la tachycardie est aussi fréquente dans la série de Lindan et plus fréquente dans d’autres : un pouls rapide ne doit pas faire écarter le diagnostic.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "§ 2.2",
+     "citation_courte": "Lindan et al. (1980) reported an equal incidence of bradycardia and tachycardia … others report that tachycardia is more common"
+    }
+   ],
+   "proposition": "remplacements.json, C07 (trois remplacements) ; fenêtre g90-sm-da.",
+   "justification": "Mécanisme : le sens de la variation de fréquence dépend du niveau lésionnel (propagation vers les neurones cardiaques T1–T4). Conséquence : une crise avec tachycardie serait méconnue. Décision : diagnostic sur la hausse tensionnelle, le niveau lésionnel et le déclencheur.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C08",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G90/G90_c.html",
+   "ancre": "id=\"g90-s-anat-cours\"",
+   "constat": "Contrôle tests/audit_sciences.py --codes G90 en échec : « lien absent : À retenir. » dans g90-s-anat, g90-s-physio et g90-s-genet. Trois disciplines seulement (pas d’histologie ni de biochimie dédiées).",
+   "preuve": [
+    {
+     "source_id": "S10",
+     "section": "—",
+     "citation_courte": "contrôle technique, non médical"
+    }
+   ],
+   "proposition": "remplacements.json, C08 (trois encadrés « À retenir. »).",
+   "justification": "Contrat CHAPTER_SPEC § 4 et audit_sciences ; sans conséquence médicale.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M01",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G90/G90_b.html",
+   "ancre": "environ 15 % ne sont pas améliorés à 2 ans",
+   "constat": "Le chiffre « 15 % non améliorés à 2 ans » (îlot g90-11 et paramètres clés g90-13) ne figure pas dans les standards européens cités ; ceux-ci donnent environ 40 % de séquelles et 15 à 20 % de SDRC non résolu, sans horizon de 2 ans (calcul K55 FAUX).",
+   "preuve": [
+    {
+     "source_id": "S6",
+     "section": "Long-term management",
+     "citation_courte": "ongoing consequences … (about 40 %) … unresolved CRPS (about 15 %‐20 %)"
+    }
+   ],
+   "proposition": "remplacements.json, M01 (deux remplacements).",
+   "justification": "Chiffre pronostique non sourcé ; sans conséquence thérapeutique immédiate.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M02",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G90/G90_c.html",
+   "ancre": "dans 25 % ; angioscanner",
+   "constat": "Figure 3 : « malignité dans 25 % » ; la source donne « jusqu’à 25 % » des Horner préganglionnaires (calcul K56 FAUX).",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Preganglionic",
+     "citation_courte": "malignancies … are the cause of up to 25 % of preganglionic HS"
+    }
+   ],
+   "proposition": "remplacements.json, M02.",
+   "justification": "Une borne présentée comme une fréquence surestime la probabilité.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M03",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G90/G90_pop2.html",
+   "ancre": "Le consensus de 2018 a introduit le seuil de 90 mmHg",
+   "constat": "Attribution incohérente avec g90-1 : le seuil de 90 mmHg est ajouté par l’ESC 2018 au consensus de 2011, non par « le consensus de 2018 ».",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "Tableau 1, note b",
+     "citation_courte": "the ESC guidelines added an additional (optional) criterion of SBP < 90 mmHg"
+    }
+   ],
+   "proposition": "remplacements.json, M03.",
+   "justification": "Cohérence inter-fichiers (SEM-20).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M04",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G90/G90_b.html",
+   "ancre": "Une hypertension de décubitus sévère (au moins 180/110 mmHg)",
+   "constat": "Le consensus définit chaque grade par la systolique OU la diastolique ; l’écriture « 180/110 » laisse croire qu’il faut les deux.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Definitions",
+     "citation_courte": "Severe nSH: systolic BP values of ≥ 180 mmHg or diastolic BP values of ≥ 110 mmHg"
+    }
+   ],
+   "proposition": "remplacements.json, M04.",
+   "justification": "Un patient à 185/95 mmHg est sévère selon la source ; l’écriture actuelle le classerait mal.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M05",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G90/G90_b.html",
+   "ancre": "(cible de pression systolique de 140 mmHg chez l’hypertendu âgé)",
+   "constat": "La cible systolique de 140 mmHg vient de la section de l’ESC sur la syncope réflexe (message clé 15), non de la section sur l’hypotension orthostatique, où la stratégie principale est le retrait du médicament en cause.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "§ 5.2.2 et message clé 15",
+     "citation_courte": "targeting a systolic BP of 140 mmHg in old hypertensive patients"
+    },
+    {
+     "source_id": "S1",
+     "section": "§ 5.3.3",
+     "citation_courte": "eliminating the offending agent"
+    }
+   ],
+   "proposition": "remplacements.json, M05.",
+   "justification": "Transposition de contexte sans conséquence dangereuse.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M06",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G90/G90_d.html",
+   "ancre": "L’ESC 2018 la propose à 0,1–0,3 mg une fois par jour",
+   "constat": "La borne haute de l’ESC (0,3 mg/j) dépasse la posologie usuelle maximale de la FI suisse de Florinef (0,2 mg/j ; norme 0,1 mg/j) ; la leçon ne le signale pas (calcul K41).",
+   "preuve": [
+    {
+     "source_id": "S13",
+     "section": "Posologie usuelle",
+     "citation_courte": "doses de 0,1 mg 3 fois par semaine à 0,2 mg par jour. La norme journalière est de 0,1 mg"
+    }
+   ],
+   "proposition": "remplacements.json, M06.",
+   "justification": "Usage hors étiquette déjà signalé ; la dose doit rester lisible par rapport à la FI.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M07",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G90/G90_pop1.html",
+   "ancre": "G90.4- dysréflexie autonome (G90.40 crises hypertensives, G90.41 crises de transpiration)",
+   "constat": "La fenêtre de codage omet G90.48 et G90.49 et la subdivision par localisation de G90.5-, G90.6- et G90.7- (G90.50/51/59, G90.60/61/69, G90.70/71/79).",
+   "preuve": [
+    {
+     "source_id": "S10",
+     "section": "Bloc G90–G99",
+     "citation_courte": "G90.48 Sonstige autonome Dysreflexie ; G90.50 … obere Extremität"
+    }
+   ],
+   "proposition": "remplacements.json, M07.",
+   "justification": "Rubrique 19 incomplète.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M08",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G90/G90_c.html",
+   "ancre": "blessé médullaire au niveau du 5e segment thoracique, a une céphalée violente",
+   "constat": "Cas 4 : énoncé incomplet ; la définition de la dysréflexie (hausse de 20 à 40 mmHg au-dessus de la base) ne peut être recalculée sans pression de base (calcul K13 NON_VERIFIABLE).",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "§ 2.2",
+     "citation_courte": "abrupt elevation in systolic blood pressure of 20–40 mmHg above baseline"
+    }
+   ],
+   "proposition": "remplacements.json, M08 (pression habituelle 100/60 mmHg ; recalcul P06).",
+   "justification": "Exigence CALCULS : un énoncé doit permettre de refaire le calcul.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M09",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G90/G90_c.html",
+   "ancre": "Un homme de 68 ans sans syncope présente une pause de 4 secondes",
+   "constat": "Cas 6 : un massage sinocarotidien réalisé chez un homme sans syncope contredit l’indication enseignée (syncope d’origine inconnue après 40 ans) sans explication.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "message clé 6",
+     "citation_courte": "Perform CSM in patients > 40 years of age with syncope of unknown origin"
+    }
+   ],
+   "proposition": "remplacements.json, M09.",
+   "justification": "Cohérence pédagogique.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M10",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G90/G90_d.html",
+   "ancre": "Toxine botulique ou fésotérodine sur la suractivité détrusorienne ; prazosine",
+   "constat": "La prazosine est citée sans signaler qu’aucune information professionnelle suisse n’a été trouvée et qu’elle antagonise la midodrine.",
+   "preuve": [
+    {
+     "source_id": "S21",
+     "section": "prazosine, Minipress",
+     "citation_courte": "aucun résultat"
+    },
+    {
+     "source_id": "S11",
+     "section": "Interactions",
+     "citation_courte": "antagonisé par des α-bloquants, tels que la prazosine"
+    }
+   ],
+   "proposition": "remplacements.json, M10.",
+   "justification": "Applicabilité suisse et interaction.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M11",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G90/G90_a.html",
+   "ancre": "Fréquente chez l’homme âgé sans syncope (jusqu’à 40 %)",
+   "constat": "L’ESC donne « ≤ 40 % » de réponses anormales chez les patients sans syncope et qualifie l’hypersensibilité de fréquente chez l’homme âgé, sans attribuer les 40 % à ce seul groupe.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "§ 4.2.1",
+     "citation_courte": "abnormal responses are frequently observed (≤ 40 %) in patients without syncope"
+    }
+   ],
+   "proposition": "remplacements.json, M11.",
+   "justification": "Précision de population.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M12",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G90/G90_a.html",
+   "ancre": "Pour les formes neurogènes, le consensus AAS/EFAS 2018 relève le seuil à 30 mmHg",
+   "constat": "Le seuil de 30 mmHg en cas d’hypertension de décubitus appartient à la définition de 2011, reprise par le consensus de 2018.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Introduction",
+     "citation_courte": "defined in 2011 as a sustained reduction of systolic BP of ≥ 20 mmHg (≥ 30 mmHg in patients with supine hypertension)"
+    }
+   ],
+   "proposition": "remplacements.json, M12.",
+   "justification": "Attribution exacte.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M13",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G90/G90_b.html",
+   "ancre": "ou systolique < 90 mmHg, progressive",
+   "constat": "Quatre caractères « < » non échappés dans le HTML (G90_b.html × 2, G90_c.html, G90_pop2.html) ; tolérés par HTML5 mais fragiles pour les outils d’extraction.",
+   "preuve": [
+    {
+     "source_id": "S10",
+     "section": "—",
+     "citation_courte": "contrôle technique"
+    }
+   ],
+   "proposition": "remplacements.json, M13 (exemple) ; même correction pour les trois autres occurrences.",
+   "justification": "Robustesse technique.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M14",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G90/G90_b.html",
+   "ancre": "mesurer assis et debout avant d’intensifier un traitement",
+   "constat": "Le consensus précise la règle : mesure assise, puis debout si la différence systolique couché-assis dépasse 10 mmHg.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Diagnostic work-up",
+     "citation_courte": "measured seated and, if the systolic difference exceeds 10 mmHg, standing as well"
+    }
+   ],
+   "proposition": "remplacements.json, M14 (recalcul de l’exemple P05).",
+   "justification": "Seuil décisionnel précis disponible.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E02",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G90/G90_b.html",
+   "ancre": "Horner : traitement de la cause",
+   "constat": "La prise en charge d’un Horner sur dissection cervicale n’est pas décrite ; la recommandation européenne (auteurs bernois et bâlois) laisse le choix antiplaquettaire ou anticoagulant et maintient thrombolyse et thrombectomie.",
+   "preuve": [
+    {
+     "source_id": "S20",
+     "section": "Résumé",
+     "citation_courte": "we strongly recommend that clinicians can prescribe either option"
+    }
+   ],
+   "proposition": "remplacements.json, E02.",
+   "justification": "Conduite décisionnelle de l’urgence principale de la leçon.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E03",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G90/G90_d.html",
+   "ancre": "La midodrine est le seul médicament de l’hypotension orthostatique avec indication suisse documentée dans les sources lues.",
+   "constat": "Rubrique 16 (spécificités suisses) : la forme en gouttes Gutron (10 mg/mL, 30 gouttes/mL, liste des spécialités) et le statut de remboursement (Midodrin Substipharm sans mention SL ; Florinef SL) ne sont pas mentionnés.",
+   "preuve": [
+    {
+     "source_id": "S12",
+     "section": "Composition ; Présentation",
+     "citation_courte": "1 ml correspond à 30 gouttes ; [B, SL]"
+    },
+    {
+     "source_id": "S11",
+     "section": "Présentation",
+     "citation_courte": "[B]"
+    }
+   ],
+   "proposition": "remplacements.json, E03 (recalculs K39, P07).",
+   "justification": "Accès et coût pour le patient suisse.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E04",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G90/G90_pop2.html",
+   "ancre": "La description du protocole (durée, pression expiratoire) n’a pas été lue et n’est pas donnée ici.",
+   "constat": "Le protocole du Valsalva et de la respiration profonde est disponible dans une source déjà citée.",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "Valsalva manoeuvre and deep breathing",
+     "citation_courte": "maximally forced expiration for 15 s … resistance of 40 mmHg … six breaths per minute for 1 min"
+    }
+   ],
+   "proposition": "remplacements.json, E04.",
+   "justification": "Technique reproductible de l’examen qui prouve le défaut neurogène.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E05",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G90/G90_a.html",
+   "ancre": "Sur 88 Horner isolés, 7 étaient des dissections, dont 6 douloureux",
+   "constat": "La fréquence inverse (Horner dans jusqu’à 58 % des dissections carotidiennes) et la répartition 13/44/43 % des niveaux lésionnels manquent.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Postganglionic ; Etiology",
+     "citation_courte": "Unilateral HS is the third most common symptom present in up to 58 % of carotid artery dissection"
+    }
+   ],
+   "proposition": "remplacements.json, E05.",
+   "justification": "Probabilité pré-test du signe dans la maladie urgente.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E06",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G90/G90_c.html",
+   "ancre": "Apraclonidine 0,5 % (préférée)",
+   "constat": "Statut suisse de l’apraclonidine non précisé : Iopidine 0,5 % est autorisée pour le glaucome ; le test du Horner est hors étiquette.",
+   "preuve": [
+    {
+     "source_id": "S21",
+     "section": "Iopidine",
+     "citation_courte": "Iopidine 0,5% — Glaukom"
+    }
+   ],
+   "proposition": "remplacements.json, E06.",
+   "justification": "Applicabilité suisse d’un test de confirmation.",
+   "ancre_occurrences": 1
+  }
+ ],
+ "matrice_20": [
+  {
+   "rang": 1,
+   "rubrique": "Question clinique et enjeu pour l’examen fédéral",
+   "statut": "couvert",
+   "ancre": "g90-0 (vignette chiffrée, objectifs)"
+  },
+  {
+   "rang": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "couvert",
+   "ancre": "g90-1, fenêtre g90-codage, glossaire ; sous-codes partiels (M07)"
+  },
+  {
+   "rang": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "partiel",
+   "ancre": "g90-1 (formes d’OH sans seuils, C05 ; grades de l’HDn ; ordres du Horner ; types de SDRC)"
+  },
+  {
+   "rang": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "partiel",
+   "ancre": "g90-2 ; aucune donnée suisse lue (lacune déclarée par le cours et confirmée)"
+  },
+  {
+   "rang": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "couvert",
+   "ancre": "g90-3, g90-s-anat, g90-s-physio, g90-s-genet"
+  },
+  {
+   "rang": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "couvert",
+   "ancre": "g90-4"
+  },
+  {
+   "rang": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "partiel",
+   "ancre": "g90-5 ; fréquences seulement pour la dysréflexie (88 %) et le Horner"
+  },
+  {
+   "rang": 8,
+   "rubrique": "Examen clinique (signes, Se/Sp)",
+   "statut": "partiel",
+   "ancre": "g90-6 ; aucune valeur des gestes, technique du massage absente (C06), sémiologie analytique absente (C01)"
+  },
+  {
+   "rang": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "partiel",
+   "ancre": "g90-8 ; PDE5 omis (C02), pouls de la dysréflexie (C07), précautions du massage (C06)"
+  },
+  {
+   "rang": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "partiel",
+   "ancre": "g90-e-1 à g90-e-6 ; critères POTS et OH initiale absents (C04, C05)"
+  },
+  {
+   "rang": 11,
+   "rubrique": "Diagnostic différentiel",
+   "statut": "partiel",
+   "ancre": "g90-7 ; discriminants présents pour OH, Horner, POTS ; liste sans discriminant pour le SDRC"
+  },
+  {
+   "rang": 12,
+   "rubrique": "Prise en charge suisse",
+   "statut": "partiel",
+   "ancre": "g90-9, g90-10, g90-p-1 à g90-p-4 ; contre-indications de la midodrine incomplètes (C03) ; aucune recommandation suisse"
+  },
+  {
+   "rang": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "partiel",
+   "ancre": "g90-11 ; chiffre de 15 % à 2 ans non sourcé (M01)"
+  },
+  {
+   "rang": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "couvert",
+   "ancre": "g90-11 (dépistage de l’HDn, prévention vésicale)"
+  },
+  {
+   "rang": 15,
+   "rubrique": "Situations particulières",
+   "statut": "partiel",
+   "ancre": "g90-12 ; affirmation erronée sur la grossesse (C03)"
+  },
+  {
+   "rang": 16,
+   "rubrique": "Spécificités suisses",
+   "statut": "partiel",
+   "ancre": "hors étiquette de la fludrocortisone signalé ; liste des spécialités, Gutron, aptitude à la conduite, Suva absents (E03 ; lacune)"
+  },
+  {
+   "rang": 17,
+   "rubrique": "Critères formels du diagnostic (div.alert)",
+   "statut": "partiel",
+   "ancre": "g90-13 alert ; tachycardie posturale sans critère (C04)"
+  },
+  {
+   "rang": 18,
+   "rubrique": "Paramètres clés chiffrés (div.key)",
+   "statut": "couvert",
+   "ancre": "g90-13 key ; corrections M01, M04"
+  },
+  {
+   "rang": 19,
+   "rubrique": "Sous-codes CIM-10-GM couverts",
+   "statut": "partiel",
+   "ancre": "g90-codage, glossaire ; G90.48, G90.49 et sous-codes de localisation absents (M07)"
+  },
+  {
+   "rang": 20,
+   "rubrique": "Points d’examen fédéral",
+   "statut": "partiel",
+   "ancre": "g90-0 objectifs ; aucun objectif PROFILES cité"
+  },
+  {
+   "rang": 21,
+   "rubrique": "Sémiologie fondamentale et analytique",
+   "statut": "absent",
+   "ancre": "aucun g90-s-semio (C01) ; proposition G90_c_semio.html"
+  }
+ ],
+ "semiologie": {
+  "statut": "absente",
+  "decompte_data_s": 3,
+  "data_s": [
+   "g90-s-anat",
+   "g90-s-physio",
+   "g90-s-genet"
+  ],
+  "sous_onglet_semio": false,
+  "gravite": "MAJEUR",
+  "constat_id": "C01",
+  "bloquant_cloture_cours_et_lot": true,
+  "fondamentale": {
+   "statut": "partielle dans l’onglet 1, absente comme discipline",
+   "ancres": [
+    "g90-5",
+    "g90-6",
+    "g90-horner",
+    "g90-stand",
+    "g90-budapest"
+   ],
+   "manques": "normal par geste, mécanisme par signe, valeurs chiffrées regroupées (fréquences des symptômes de l’OH non chiffrées dans les sources lues : LACUNE), pièges par signe"
+  },
+  "analytique": {
+   "statut": "absente",
+   "ancres": [
+    "g90-7 (démarche, partielle)"
+   ],
+   "manques": "regroupement syndromique, raisonnement en cinq étapes, examen systématique numéroté, synthèse présentée, cas corrigés consacrés au signe"
+  },
+  "grille_SEM": {
+   "SEM-01": [
+    false,
+    "aucun data-s=\"g90-s-semio\""
+   ],
+   "SEM-02": [
+    false,
+    "—"
+   ],
+   "SEM-03": [
+    false,
+    "audit_sciences en échec (C08)"
+   ],
+   "SEM-04": [
+    true,
+    "test_v7 --static G90 : OK (mots 14019, fenêtres 52, quiz 8, Pareto 16)"
+   ],
+   "SEM-05": [
+    false,
+    "pas de tableau des symptômes"
+   ],
+   "SEM-06": [
+    false,
+    "technique pour la mesure couchée-debout seulement (g90-6)"
+   ],
+   "SEM-07": [
+    false,
+    "mécanismes regroupés en g90-3, non par signe"
+   ],
+   "SEM-08": [
+    false,
+    "valeurs éparses (Horner, Budapest) ; absences non déclarées par signe"
+   ],
+   "SEM-09": [
+    false,
+    "normal non explicite par geste"
+   ],
+   "SEM-10": [
+    true,
+    "pièges g90-6, g90-e-2, g90-e-5"
+   ],
+   "SEM-11": [
+    false,
+    "aucun tableau des syndromes"
+   ],
+   "SEM-12": [
+    false,
+    "aucune séquence en cinq étapes"
+   ],
+   "SEM-13": [
+    true,
+    "alert g90-8 (seuil, délai, action) ; à compléter (C02, C07)"
+   ],
+   "SEM-14": [
+    false,
+    "SDRC : liste sans discriminant (g90-7)"
+   ],
+   "SEM-15": [
+    false,
+    "examen non numéroté de la préparation à la synthèse"
+   ],
+   "SEM-16": [
+    false,
+    "aucune synthèse présentée"
+   ],
+   "SEM-17": [
+    false,
+    "huit cas, aucun consacré à la valeur d’un signe ni à la formulation d’une limite"
+   ],
+   "SEM-18": [
+    false,
+    "non vérifié au navigateur par cet audit"
+   ],
+   "SEM-19": [
+    false,
+    "conduite de la dysréflexie d’origine américaine, signalée comme telle par le cours"
+   ],
+   "SEM-20": [
+    false,
+    "incohérence d’attribution du seuil de 90 mmHg (M03)"
+   ],
+   "SEM-21": [
+    true,
+    "sans objet en l’absence de discipline"
+   ],
+   "SEM-22": [
+    false,
+    "non mesuré (pas de discipline)"
+   ],
+   "SEM-23": [
+    false,
+    "aucune capture"
+   ],
+   "SEM-24": [
+    true,
+    "statut « Revue par intelligence artificielle · Aucune validation médicale humaine »"
+   ]
+  },
+  "proposition": [
+   "propositions/G90_c_semio.html",
+   "propositions/G90_pop_semio.html",
+   "remplacements.json C01 (data-semiology-clinical sur g90-6)"
+  ]
+ },
+ "figures": [
+  {
+   "ancre": "aria-label=\"Figure 1 — Voie oculosympathique\"",
+   "fichier": "chapters/G90/G90_a.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "4 rectangles, 3 flèches, 9 textes : chaîne de boîtes, aucune structure dessinée ; valeurs sourcées S4 ; police 13/380"
+  },
+  {
+   "ancre": "aria-label=\"Figure 2 — Séquence devant une suspicion d’hypotension orthostatique\"",
+   "fichier": "chapters/G90/G90_b.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "algorithme ; seuils S1, S2"
+  },
+  {
+   "ancre": "aria-label=\"Figure 3 — Niveau de la lésion et conduite\"",
+   "fichier": "chapters/G90/G90_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "chaîne de boîtes ; « dans 25 % » inexact (M02)"
+  },
+  {
+   "ancre": "aria-label=\"Figure 4 — Arc du baroréflexe et sites de l’échec\"",
+   "fichier": "chapters/G90/G90_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "chaîne causale ; S2"
+  },
+  {
+   "ancre": "aria-label=\"Figure 5 — Réflexe de la dysréflexie autonome\"",
+   "fichier": "chapters/G90/G90_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "chaîne causale ; « bradycardie » à nuancer (C07) ; 85 % S15"
+  },
+  {
+   "ancre": "aria-label=\"Figure 6 — Mécanismes du syndrome douloureux régional complexe\"",
+   "fichier": "chapters/G90/G90_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "chaîne causale ; S7"
+  }
+ ],
+ "figures_synthese": {
+  "total": 6,
+  "ANATOMIQUE_IA": 0,
+  "ORIGINE_INCONNUE": 0,
+  "SCHEMA_NON_ANATOMIQUE": 6,
+  "IMAGE_SOURCEE": 0,
+  "icones_sci_bar_24px": 3,
+  "methode": "python3 tools/image_clo_finder.py inventory G90 ; décompte des balises SVG par script (rect, path, text uniquement)",
+  "remarque": "Une planche anatomique réelle de la voie oculosympathique (Wikimedia Commons, domaine public) serait un enrichissement ; non recherchée dans cet audit."
+ },
+ "lacunes": [
+  "Aucune recommandation suisse (Société suisse de neurologie, Swiss Medical Forum, centre suisse de paraplégie) trouvée pour la dysréflexie : WebSearch « autonome Dysreflexie Leitlinie DMGP Notfall Nitroglycerin Nifedipin Querschnittlähmung AWMF » sans recommandation européenne ni suisse.",
+  "Revue médicale suisse 2025 (hypotension orthostatique du sujet âgé) : texte intégral non accessible (WebFetch revmed.ch : délai dépassé) ; résumé PubMed 41163457 seul lu. Aucune prévalence suisse lue.",
+  "ESC 2018 : tableaux de recommandations (classes et niveaux) publiés en images, non lus ; la « classe IIa » du sinus carotidien et les « deux essais randomisés » restent vérifiés par le seul texte (déclassement depuis la classe I).",
+  "Fedorowski 2019, González-Duarte 2023, Krivoborodov 2025, ESO 2021 : résumés seuls.",
+  "Nifédipine à libération immédiate : seules des formes retard apparaissent dans AmiKo ; prazosine : aucune FI suisse trouvée. Une absence de résultat n’est pas une preuve absolue de non-commercialisation.",
+  "Revue systématique 2026 (Le, Denys, Joussain), stimulation médullaire 2026, ganglionopathie, biomarqueurs du SDRC, Rev Med Suisse 2026 (vadémécum SDRC) : non relus par l’auditeur ; les affirmations correspondantes ne contiennent pas de chiffre recalculable.",
+  "Aptitude à la conduite après syncope, Suva/LAA pour le SDRC post-traumatique, AI : non recherchés (rubrique 16 partielle).",
+  "Contrôles navigateur (SEM-18, SEM-22, SEM-23) et captures non réalisés par cet audit en lecture seule."
+ ],
+ "propositions": [
+  "G90_c_examens_formes.html",
+  "G90_c_semio.html",
+  "G90_pop_semio.html",
+  "remplacements.json",
+  "remplacements.py"
+ ],
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+}
