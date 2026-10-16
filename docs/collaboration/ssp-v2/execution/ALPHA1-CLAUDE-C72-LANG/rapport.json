@@ -1,0 +1,512 @@
+{
+ "mission": "ALPHA1-CLAUDE-C72-LANG",
+ "code": "C72",
+ "type_audit": "linguistique",
+ "base_sha": "32416a20",
+ "base_sha_complet": "32416a2080e67537641040a81252dec0b3e6d137",
+ "generation": 1,
+ "branche": "claude/alpha1/c72-lang-g1",
+ "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-C72-LANG-g1",
+ "conversation": "alpha1-claude-c72-lang",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-16 (heure de début non relevée)",
+ "date_fin": "2026-10-16T05:59Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/C72/C72_a.html",
+   "chapters/C72/C72_b.html",
+   "chapters/C72/C72_c.html",
+   "chapters/C72/C72_d.html",
+   "chapters/C72/C72_pop1.html",
+   "chapters/C72/C72_pop2.html",
+   "glossary/c72.py"
+  ],
+  "empreintes_conformes": true,
+  "detail_empreintes": {
+   "chapters/C72/C72_a.html": true,
+   "chapters/C72/C72_b.html": true,
+   "chapters/C72/C72_c.html": true,
+   "chapters/C72/C72_d.html": true,
+   "chapters/C72/C72_pop1.html": true,
+   "chapters/C72/C72_pop2.html": true,
+   "glossary/c72.py": true
+  },
+  "documents_lus": [
+   ".medina/missions/ALPHA1-CLAUDE-C72-LANG.json",
+   "docs/STYLE_REDACTION.md (sections 1 à 4 et début, lues ; sections 5 à 8 lues en extrait)",
+   "les 7 fichiers de la leçon (lus en entier)"
+  ],
+  "note_base": "Le manifeste donne base_sha d1a488ad… ; le worktree est sur 32416a20 (base de la consigne). Les sept empreintes SHA-256 des fichiers de leçon sont néanmoins conformes au manifeste. docs/collaboration/betta/PROMPT_VERITE.md n’a pas été relu pour cette mission linguistique : les cinq lois relèvent de l’audit médical."
+ },
+ "premiere_verification": {
+  "nature": "recalcul des 7 empreintes SHA-256 contre le manifeste, puis lecture intégrale et vérifications mécaniques par script (unicité des extraits, absence de chevauchement, équilibre des balises HTML, syntaxe Python du glossaire)",
+  "source_typographie": "aucune source externe consultée ; la règle des espaces insécables relève d’un choix différé par Vial et n’a pas été appliquée"
+ },
+ "synthese": {
+  "nombre_propositions": 87,
+  "renvois_medicaux": 49,
+  "choix_differes_vial": 2,
+  "par_categorie": {
+   "registre": 27,
+   "ambiguite": 11,
+   "phrase_nominale": 10,
+   "grammaire": 9,
+   "lourdeur": 8,
+   "syntaxe": 6,
+   "repetition": 4,
+   "coherence_terminologique": 4,
+   "accord": 2,
+   "infinitif_injonctif": 2,
+   "ponctuation": 1,
+   "parallelisme": 1,
+   "typographie": 1,
+   "abreviation": 1
+  },
+  "par_fichier": {
+   "chapters/C72/C72_a.html": 18,
+   "chapters/C72/C72_b.html": 23,
+   "chapters/C72/C72_c.html": 17,
+   "chapters/C72/C72_d.html": 10,
+   "chapters/C72/C72_pop1.html": 7,
+   "chapters/C72/C72_pop2.html": 11,
+   "glossary/c72.py": 1
+  }
+ },
+ "verification_mecanique": {
+  "unicite_ancien": "chaque ancien (87) et chaque ancre de renvoi (49) apparaît exactement une fois dans son fichier (vérifié par script)",
+  "chevauchements": "aucun chevauchement entre deux extraits d’un même fichier",
+  "balises_html": "après application simulée des 87 propositions, le nombre de balises ouvrantes et fermantes div, p, button, section, table, tr, td, template et figure est inchangé",
+  "glossaire": "après application simulée, glossary/c72.py reste syntaxiquement valide (ast.parse)",
+  "application": "les propositions ne sont pas appliquées aux sources ; aucune source canonique modifiée"
+ },
+ "constats": [
+  {
+   "id": "R1",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_a.html",
+   "ancre": "ne le permet presque jamais chez l’adulte",
+   "constat": "« presque jamais » contredit la donnée de la section 3.1 (exérèse complète possible dans 13 à 38 % des astrocytomes de grade 2 à 4) et l’exception du pilocytique. La fréquence est une affirmation médicale : à trancher par l’audit médical, la formulation n’est pas modifiée.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R2",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_a.html",
+   "ancre": "la limite floue de l’astrocytome l’interdit le plus souvent",
+   "constat": "Fréquence (« le plus souvent ») qu’aucune source lue ne chiffre, en tension avec « presque jamais » (R1) et 13 à 38 % (section 3.1). Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R3",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_a.html",
+   "ancre": "parce que la moelle concentre dans un très petit volume toutes les voies motrices et sensitives",
+   "constat": "Relation causale (« parce que ») entre taille de la moelle et gravité du retentissement, et universel « toutes les voies » : aucune source lue ne l’établit. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R4",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_a.html",
+   "ancre": "et ceux de haut grade (3 et 4) environ 25 %",
+   "constat": "Dénominateur ambigu : 25 % des astrocytomes, des gliomes intramédullaires ou des tumeurs intramédullaires ? La fenêtre « Astrocytomes médullaires » écrit « le haut grade représente environ 25 % » sans préciser. Seule la source (Tonn et al. 2024) tranche.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R5",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_a.html",
+   "ancre": "Il s’entoure souvent de kystes polaires et de dépôts d’hémosidérine formant une coiffe, et s’accompagne fréquemment d’une syringomyélie.",
+   "constat": "« souvent » et « fréquemment » : fréquences non chiffrées ; la fenêtre « Lacunes des sources » reconnaît que les fréquences de signes ne figurent pas dans les sources lues. Même remarque pour « souvent » dans la carte Examen (e-2) et dans le tableau Imagerie (7.1).",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R6",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_a.html",
+   "ancre": "chez l’adulte, aucun plan de clivage n’existe",
+   "constat": "Absolu (« aucun ») appliqué à « l’astrocytome » en général, alors que la phrase suivante et la fenêtre « Plan de clivage » le restreignent à l’astrocytome diffus de l’adulte et que le pilocytique fait exception. À restreindre ou à confirmer par l’audit médical.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R7",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_a.html",
+   "ancre": "ce qui explique le <button class=\"w\" data-k=\"c72-h3k27\">",
+   "constat": "Relation causale « MGMT non méthylé → bénéfice incertain du témozolomide » : la fenêtre H3 K27 précise que le « lien mécanistique [est] tiré des recommandations sur les gliomes de l’adulte, sans section spécifique pour la moelle ». Association présentée comme mécanisme. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R8",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_a.html",
+   "ancre": "prime ici sur l’aspect favorable d’une lésion bien limitée",
+   "constat": "Hiérarchie entre facteurs pronostiques (« prime ») non établie par une source lue ; l’« aspect favorable d’une lésion bien limitée » est une interprétation. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R9",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_a.html",
+   "ancre": "Jusqu’à 15 % des enfants avec gliome optique",
+   "constat": "Le libellé inverse le dénominateur : la fenêtre NF1 écrit « jusqu’à 15 % des enfants atteints » (de NF1) d’un gliome des voies optiques, non « 15 % des enfants avec gliome optique ». Interprétation à confirmer dans ERN GENTURIS 2023 avant toute reformulation.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R10",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_a.html",
+   "ancre": "40 à 50 % deviennent symptomatiques et 15 à 20 % sont traités",
+   "constat": "Sujet et dénominateur absents (40 à 50 % des gliomes des voies optiques ? des enfants NF1 ?). Le verbe « deviennent » introduit en outre une chronologie. À préciser d’après ERN GENTURIS 2023.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R11",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_a.html",
+   "ancre": "ce qui explique les retards diagnostiques de plusieurs mois à plusieurs années",
+   "constat": "Causalité (« ce qui explique ») entre début non spécifique et retard diagnostique, et fréquence (« souvent ») : ni l’une ni l’autre n’est chiffrée ni établie par une source lue (fenêtre « Lacunes des sources »). Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R12",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_a.html",
+   "ancre": "ce qui s’explique en partie par le caractère peu évocateur de ces plaintes sensitives diffuses",
+   "constat": "Causalité ajoutée par le rédacteur (« s’explique en partie ») sans source ; « souvent retardé de mois à années » est une fréquence non chiffrée. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R13",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_a.html",
+   "ancre": "L’examen suit l’ordre habituel : état général, puis examen neurologique complet, puis recherche des signes du syndrome du cône ou de la queue de cheval.",
+   "constat": "Chronologie de l’examen (« ordre habituel », « puis… puis ») et ordre « d’abord localiser, ensuite mesurer » : aucune source lue ne la fonde. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R14",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_a.html",
+   "ancre": "signe une atteinte intramédullaire étendue",
+   "constat": "« signe » (est le signe de) va au-delà de la source (« un syndrome transverse progressif impose un bilan ») et ajoute « intramédullaire étendue », absente de la source. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R15",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_a.html",
+   "ancre": "apparaissent plus tard.",
+   "constat": "Chronologie (« plus tard ») : la source dit seulement que les troubles sphinctériens sont « rares au début » d’un astrocytome. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R16",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_a.html",
+   "ancre": "exige au moins deux éléments cardinaux : troubles sensitifs en selle, dysfonction vésicale, intestinale ou sexuelle",
+   "constat": "Ambiguïté de décompte : la liste après les deux-points compte soit deux éléments (selle ; dysfonction), soit quatre (selle, vésicale, intestinale, sexuelle). « Au moins deux » n’a pas le même sens. Même formulation dans l’îlot 13 (alerte). À trancher par Nersesyan et al. 2025.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R17",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_b.html",
+   "ancre": "exige au moins deux éléments cardinaux (troubles sensitifs en selle ; dysfonction vésicale, intestinale ou sexuelle)",
+   "constat": "Même ambiguïté de décompte que R16 (îlot 13, alerte « Critères formels »). Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R18",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_b.html",
+   "ancre": "l’immunohistochimie est alors positive avec perte de H3K27me3",
+   "constat": "« alors » suggère que l’immunohistochimie H3 K27M est toujours positive et s’accompagne toujours d’une perte de H3K27me3 ; or l’altération par surexpression d’EZHIP donne une perte de H3K27me3 sans mutation K27M. Précision de fond : audit médical.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R19",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_b.html",
+   "ancre": "plus tôt la moelle est décomprimée, plus la fonction est préservée",
+   "constat": "Relation dose-effet (« plus tôt… plus ») : la source (résumé de Spirig et al. 2011) dit que le pronostic « dépend de la durée et de la sévérité du déficit préopératoire », non que la décompression plus précoce préserve davantage la fonction. Causalité ajoutée. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R20",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_b.html",
+   "ancre": "car les récidives peuvent être tardives et asymptomatiques",
+   "constat": "Causalité (« car ») et chronologie (« tardives ») : l’EANO 2018 ne fixe pas d’intervalle de suivi (la phrase suivante le dit) et aucune source lue n’est citée pour la nature des récidives. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R21",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_b.html",
+   "ancre": "du type moléculaire plus que du siège.",
+   "constat": "Comparaison d’importance relative (« plus que ») : la fenêtre « Lecture du pronostic » écrit « plus que du seul siège ». Association pronostique présentée comme hiérarchie causale sur des séries rétrospectives. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R22",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_b.html",
+   "ancre": "La radiothérapie fait passer la survie sans progression à dix ans du myxopapillaire de moins de 40 % à environ 70 %.",
+   "constat": "« fait passer » énonce un effet causal ; la fenêtre associée précise « séries rétrospectives » (comparaison non randomisée, biais de sélection possible). Association → causalité. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R23",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_b.html",
+   "ancre": "une réadaptation intensive a permis la reprise de la marche et de la continence",
+   "constat": "Causalité attribuée à la seule réadaptation ; la fenêtre « Synthèses suisses de la Praxis » l’attribue à l’exérèse « et » à la réadaptation. Cas isolé (résumé Stienen et al. 2019). Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R24",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_b.html",
+   "ancre": "Neuf pièges reviennent à l’examen",
+   "constat": "Fréquence/reprise à l’examen fédéral (« reviennent ») : aucune source lue (PROFILES, annales) ne l’établit. La phrase de 150 mots ne se réécrit pas localement (STYLE_REDACTION § 2 : une idée par phrase) ; réécriture à confier à un audit de rédaction.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R25",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_b.html",
+   "ancre": "l’astrocytome est pédiatrique, excentré et infiltrant",
+   "constat": "Simplification contredite par le cours : les astrocytomes de haut grade sont plus fréquents chez l’adulte (îlot 2) et le pilocytique est bien limité (îlot 3). « est pédiatrique » vaut pour une tendance, non une définition. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R26",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_b.html",
+   "ancre": "est un MPNST jusqu’à preuve du contraire",
+   "constat": "Formulation catégorique (« est un… ») : le cours ailleurs parle de suspicion et de signal d’alarme (« soupçon », « suspicion de MPNST »). Non modifié ; à aligner sur la source (ERN GENTURIS 2023).",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R27",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "parce que la lésion intramédullaire, par sa situation, ne se biopsie pas à l’aveugle",
+   "constat": "Justification du rédacteur (« parce que ») pour la place de l’imagerie, non sourcée ; « vient ensuite » ajoute une chronologie. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R28",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "Ces éléments traduisent une croissance limitée.",
+   "constat": "Inférence (« traduisent ») entre signes d’imagerie et mode de croissance, non sourcée dans la fiche. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R29",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "Ne pas attendre un statut IDH comme en intracrânien",
+   "constat": "Ambiguïté de sens : ne pas attendre un résultat IDH (délai) ou ne pas s’attendre à une mutation IDH (probabilité) ? L’infinitif injonctif (STYLE_REDACTION § 2) ne se corrige donc pas localement sans trancher.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R30",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "elle fixe le grade et le traitement",
+   "constat": "« fixe le traitement » est excessif : le grade OMS 2021 dépend de la biologie, le traitement de la décision collégiale (colloque). Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R31",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "Une cytologie du LCR trop précoce après l’opération est difficile à interpréter.",
+   "constat": "Raison énoncée comme un fait alors que la phrase suivante dit que « la source n’en donne pas la raison » : le texte est contradictoire sur le statut de l’explication. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R32",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "ou, après deux ans,",
+   "constat": "« après deux ans » : deux ans de quoi (âge, durée de suivi, durée de non-conclusion) ? Précision clinique, non modifiée.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R33",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "ce qui explique qu’il irrite les racines (dysesthésies, douleurs) sans produire de parésie, très inhabituelle dans cette forme",
+   "constat": "Causalité anatomique (« ce qui explique ») non sourcée dans la fenêtre « Du cône médullaire à la queue de cheval ». Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R34",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "ils touchent d’emblée les voies sensitives et motrices longues",
+   "constat": "Chronologie (« d’emblée ») qui contredit les cartes de l’anamnèse (dysesthésies diffuses, parésie « occasionnelle »). Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R35",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "n’est pas encore un MPNST",
+   "constat": "« pas encore » suggère une évolution fatale vers le MPNST : la source (OMS 2021 / ERN GENTURIS) dit que l’ANNUBP est une entité distincte, de potentiel biologique incertain. Chronologie ajoutée. Même formulation dans la clé de glossaire ANNUBP et dans le Pareto de neuropathologie.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R36",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "montre un principe : le grade suit le risque de récidive",
+   "constat": "Généralisation d’un exemple unique (passage du myxopapillaire de 1 à 2) en principe (« le grade suit le risque de récidive, non l’aspect microscopique seul ») : inférence du rédacteur, non sourcée. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R37",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "Le statut MGMT non méthylé explique le bénéfice incertain du témozolomide.",
+   "constat": "Même causalité que R7 (MGMT → témozolomide), présentée sans réserve dans l’onglet Sciences. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R38",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "pourquoi les doses spinales citées pour l’épendymome (45 à 54 Gy) restent en deçà de celles du gliome de la ligne médiane de l’encéphale (54 à 60 Gy) : à 60 Gy, le risque de myélopathie atteint 6 %",
+   "constat": "Explication causale avouée « lecture du rédacteur » ; de plus 54 Gy appartient aux deux fourchettes, donc « en deçà » est inexact au sommet. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R39",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_d.html",
+   "ancre": "aucun médicament ne se substitue à l’exérèse chez l’épendymome",
+   "constat": "Universel négatif (« aucun médicament ») non sourcé. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R40",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_d.html",
+   "ancre": "car elles guident le choix d’associer un médicament",
+   "constat": "Causalité (« car ») sur le rôle des doses de radiothérapie dans le choix d’un médicament associé : non sourcée. De plus, la phrase précédente dit que le tableau « ne donne que les doses lues dans les informations professionnelles suisses », or deux lignes viennent de l’EANO. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R41",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_d.html",
+   "ancre": "puis 6 cycles de 150 puis 200 mg/m²",
+   "constat": "La fenêtre Temodal® écrit « 6 cycles de 150 à 200 mg/m² » : deux formulations d’une posologie (« puis » suggère un palier, « à » une fourchette). Dose : seule l’information professionnelle suisse tranche. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R42",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_pop1.html",
+   "ancre": "son bénéfice au-delà de la radiothérapie n’est donc pas établi",
+   "constat": "« donc » : de « agit moins » (mécanisme) à « bénéfice non établi » (niveau de preuve), l’inférence n’est pas valide ; l’un relève de la biologie, l’autre des essais. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R43",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_pop1.html",
+   "ancre": "la survie globale médiane moyenne est de 24 mois (13 à 40)",
+   "constat": "« médiane moyenne » est contradictoire : moyenne de médianes de plusieurs séries ? Statistique à vérifier dans Watanabe et al. 2024. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R44",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_pop1.html",
+   "ancre": "meilleure que la forme intracrânienne",
+   "constat": "Accord et portée : l’adjectif singulier ne dit pas si les deux survies (globale et sans progression) sont meilleures. Le pluriel changerait le fond. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R45",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_pop2.html",
+   "ancre": "sa reconnaissance évite une biopsie ou un traitement inutile",
+   "constat": "Bénéfice clinique affirmé (« évite ») sans source dans la fenêtre. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R46",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_pop2.html",
+   "ancre": "les métastases intramédullaires du cône, du poumon ou du sein",
+   "constat": "Sens ambigu : métastases du cône (siège) ou issues du cône ? Une métastase vient du poumon ou du sein ; « du cône » désigne vraisemblablement le siège, mais la phrase ne le dit pas. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R47",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_pop2.html",
+   "ancre": "La radiothérapie fait passer la survie sans progression à 10 ans de moins de 40 % à environ 70 %.",
+   "constat": "Même causalité que R22 (séries rétrospectives). Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R48",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_pop2.html",
+   "ancre": "ANNUBP n’est pas encore un MPNST.",
+   "constat": "Même chronologie que R35. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R49",
+   "type": "renvoi_medical",
+   "fichier": "glossary/c72.py",
+   "ancre": "Ce neurofibrome atypique de la neurofibromatose de type 1 n’est pas encore un MPNST.",
+   "constat": "Même chronologie que R35. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "D1",
+   "type": "choix_differe_vial",
+   "fichier": "(global)",
+   "ancre": "Espaces insécables avant « ; : ! ? » et dans « 12 mg », « 5 % », « 50 Gy », « 1,8 Gy », etc.",
+   "constat": "Aucune espace insécable (U+00A0 ou U+202F) dans les sept fichiers ; espaces simples avant les signes doubles et entre nombre et unité ou symbole % (environ 128 occurrences de « nombre % » ; 59 « nombre Gy »). Règle non appliquée ici.",
+   "statut": "différé par Vial (choix global)",
+   "renvoi_medical": false
+  },
+  {
+   "id": "D2",
+   "type": "choix_differe_vial",
+   "fichier": "(global)",
+   "ancre": "« fibrillation atriale » ou « fibrillation auriculaire »",
+   "constat": "Terme absent de la leçon C72 (0 occurrence dans les sept fichiers) : sans objet pour cette mission.",
+   "statut": "différé par Vial (choix global)",
+   "renvoi_medical": false
+  }
+ ],
+ "observations_non_locales": [
+  "Onglet Sciences : quatre disciplines réelles (Anatomie, Neuropathologie, Génétique, Radiobiologie, soit 4 attributs data-s) et aucun sous-onglet « Sémiologie fondamentale et analytique » : hors périmètre linguistique, à traiter dans l’audit médical (addendum lot 2, point 1).",
+  "Onglet Diagnostic, tableau 7.1 : la ligne « Subépendymome » place un énoncé de tomodensitométrie dans la colonne « Aspect IRM » ; incohérence de structure, non corrigeable localement.",
+  "Onglet Pathologie, carte « Enfant » (section 2) : elle contient une phrase sur l’adulte (« Chez l’adulte, les astrocytomes de haut grade… ») ; placement à revoir.",
+  "Section 7.3 : le titre annonce un classement « par gravité » et le texte introductif un ordre danger immédiat → infection → inflammation → autre tumeur, mais le tableau est ordonné par niveau anatomique.",
+  "Section 12.3 : la phrase « Neuf pièges reviennent à l’examen » (environ 150 mots, neuf propositions) dépasse la règle d’une idée par phrase (STYLE_REDACTION § 2) ; réécriture non locale, non proposée (voir R24).",
+  "Fenêtres (pop1, pop2) : de nombreuses lignes sous étiquette « .lab » sont des énumérations nominales (« Liste », « Signes », « Recommandation »…) et les fenêtres « Pareto » sont des listes de propositions nominales. Elles sont conformes à leur fonction de listes ; seules les phrases nominales de texte courant ont été corrigées."
+ ],
+ "lacunes": [
+  "Aucun correcteur orthographique automatique (Antidote, LanguageTool) n’a été exécuté : la relecture est humaine-IA, par lecture intégrale ; des fautes isolées peuvent subsister.",
+  "Aucun ouvrage de référence (Grevisse, Dictionnaire de l’Académie, Office québécois de la langue française, Lexique de l’Imprimerie nationale) n’a été consulté pendant cette mission : les corrections de grammaire, d’accord et de registre reposent sur la lecture et sur la cohérence interne de la leçon (corps, fenêtres, glossaire), non sur une règle citée.",
+  "Les espaces insécables et les formes « fibrillation atriale/auriculaire » sont des choix différés par Vial : non traités (voir D1 et D2).",
+  "Aucune source médicale n’a été lue : les 49 renvois signalent des formulations, non des erreurs démontrées ; leur statut médical reste à établir par l’audit médical.",
+  "Les textes alternatifs et le texte des figures SVG (aria-label, texte interne) ont été lus mais non soumis à une analyse de lisibilité à 390 px (hors périmètre de cette mission).",
+  "Le glossaire n’a pas été exécuté ; la présence des clés des abréviations a été contrôlée par recherche textuelle dans glossary/*.py ; aucune clé manquante n’a été trouvée hors l’unité « Gy »."
+ ],
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+}
