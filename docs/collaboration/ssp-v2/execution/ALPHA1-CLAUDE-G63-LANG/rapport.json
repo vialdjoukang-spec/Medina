@@ -12,7 +12,7 @@
  "note_base": "START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste.",
  "date_debut": null,
  "note_date_debut": "Heure de début non relevée au démarrage (la consigne d’horodatage est arrivée en cours de mission) ; aucune valeur n’est inventée.",
- "date_fin": "2026-10-16T06:12:25Z",
+ "date_fin": "2026-10-16T06:12:41Z",
  "lecture": {
   "fichiers": [
    {
@@ -114,8 +114,8 @@
  },
  "verification_mecanique": {
   "script": "verification_unicite.py",
-  "regle": "chaque champ « ancien » apparaît exactement une fois dans le fichier cible ; application sans chevauchement ; seule conversion de nombre : « deux à trois » en « 2 à 3 » (OG-05). Les 22 reformulations touchant une notion clinique ont été reclassées en renvois médicaux.",
-  "resultat": "59/59 propositions à ancien unique ; aucun chevauchement"
+  "regle": "chaque « ancien » apparaît exactement une fois dans le fichier cible ; application sans chevauchement ; comparaison des nombres écrits en chiffres entre « ancien » et « nouveau » (même multiset, écarts listés par le script). Un seul écart, justifié : « deux à trois » devient « 2 à 3 » (G63-LANG-d-04, OG-05). Les 22 reformulations touchant une notion clinique ont été reclassées en renvois médicaux.",
+  "resultat": "59/59 propositions à ancien unique ; aucun chevauchement ; 1 écart numérique (conversion lettres/chiffres, G63-LANG-d-04)"
  },
  "constats": [
   {
@@ -706,7 +706,7 @@
   {
    "id": "G63-LANG-OG-05",
    "sujet": "Unités et nombres",
-   "detail": "Les propositions ne changent aucune valeur. Seule conversion : « deux à trois fois » en « 2 à 3 fois » dans l’encadré de piège de l’hydroxocobalamine ; les décomptes de chiffres du texte visible de G63_d.html passent de 10 à 11 (« 3 ») et de 11 à 12 (« 2 ») pour cette seule raison."
+   "detail": "Les propositions ne changent aucune valeur. Seule conversion : « deux à trois fois » en « 2 à 3 fois » dans l’encadré de piège (G63-LANG-d-04) de l’hydroxocobalamine ; les décomptes de chiffres du texte visible de G63_d.html passent de 10 à 11 (« 3 ») et de 11 à 12 (« 2 ») pour cette seule raison."
   },
   {
    "id": "G63-LANG-OG-06",

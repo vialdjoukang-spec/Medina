@@ -2,7 +2,7 @@
 
 Mission ALPHA1-CLAUDE-G63-LANG, génération 1, branche `claude/alpha1/g63-lang-g1`. Base de la mission (manifeste) : `d1a488ad4f0031d7f2a4b47a0721e89a93475d77`. Base du worktree : `32416a2080e67537641040a81252dec0b3e6d137`. START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste. Audit IA : revue distincte d’une validation médicale humaine ; aucune source canonique modifiée.
 
-Horodatage : début non relevé (`date_debut` à `null`, l’heure n’ayant pas été notée au démarrage) ; fin 2026-10-16T06:12:25Z.
+Horodatage : début non relevé (`date_debut` à `null`, l’heure n’ayant pas été notée au démarrage) ; fin 2026-10-16T06:12:41Z.
 
 ## Résumé pour Vial
 
@@ -78,7 +78,7 @@ Les renvois signalent des formulations posant une causalité, une fréquence, un
 
 - Empreintes SHA-256 des 7 fichiers : conformes au manifeste.
 - Unicité : 59 sur 59 `ancien` exactement une fois dans leur fichier ; aucun chevauchement (`verification_unicite.py`).
-- Nombres : identiques avant et après, hors « deux à trois » en « 2 à 3 » (OG-05).
+- Nombres : le script compare les nombres entre `ancien` et `nouveau` ; un seul écart, justifié (G63-LANG-d-04).
 - Validation JSON : `python3 -m json.tool`.
 
 ## Lacunes
