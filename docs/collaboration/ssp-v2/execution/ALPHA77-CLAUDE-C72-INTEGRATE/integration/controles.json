@@ -518,5 +518,57 @@
  "non_fait": [
   "Revues finales MED, LANG et SEMIO, generer_recu.py et reçu Alpha : rôle de l’Agent P."
  ],
- "mention": "Contrôles mécaniques et rendu réel ; revue par IA, distincte d’une validation médicale humaine."
+ "mention": "Contrôles mécaniques et rendu réel ; revue par IA, distincte d’une validation médicale humaine.",
+ "revue_agent_P": {
+  "date": "2026-10-16",
+  "agent": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+  "commit_revu_de_W": "efe30f8c",
+  "empreintes_finales_sha256": {
+   "chapters/C72/C72_a.html": "266c16e1cd767548f3e62937bd4af31df98929636ba8395b6392ff9ef055d43c",
+   "chapters/C72/C72_b.html": "92d89cbe4fc361012a93d5562e0f91cdd5963293f0543a10cdcabec3704f83e9",
+   "chapters/C72/C72_c.html": "2fb440b80b889276d23e252f40fd4192e31794709360edf43e281b91fd199153",
+   "chapters/C72/C72_d.html": "07f6c0adeb5cd6c0b82a7a06f3aa396aa6cbdae6dfe944222887ac9a71239211",
+   "chapters/C72/C72_pop1.html": "dd87aabf0e307f6ec2ab91407177a131f29bedc385ae2aadae5ab646975c4317",
+   "chapters/C72/C72_pop2.html": "8f3f9002753350d61643b6ec6f13e77a2c35cca7abd0376ee2efc41bc6bb6735",
+   "glossary/c72.py": "32d9cc80b0ad811165166cac0a064ef23fdccd8d2f3e6661f7aa73cae1917539"
+  },
+  "controles": {
+   "test_v7_static": {
+    "commande": "python3 test_v7.py --static C72",
+    "resultat": "OK",
+    "detail": "C72 mots 23305 fenêtres 83 quiz 9 pareto 17 ; build_medina.audit() renvoie {} (appelé par test_v7 --static)"
+   },
+   "test_v7_navigateur": {
+    "commande": "MEDINA_CHROMIUM=/opt/pw-browsers/chromium-1194/chrome-linux/chrome python3 test_v7.py --url http://127.0.0.1:8794/MEDINA_S08_nerveux.html C72",
+    "resultat": "OK",
+    "construction": "MEDINA_OUT=<scratchpad>/c72p/build python3 build_front.py --fragment S08 (14 402 054 octets, compressé 7 635 926), hors dépôt"
+   },
+   "audit_sciences": {
+    "commande": "python3 tests/audit_sciences.py --base 523832d9ef6097607d3443f4398deee9cd0add11 --codes C72 --out docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-C72-INTEGRATE/integration/audit_sciences.json",
+    "resultat": "failed",
+    "erreurs": [
+     "C72/c72-s-anat: aucune figure"
+    ],
+    "lecture": "Résultat écrit tel quel. Seule erreur : la discipline Anatomie n’a plus de figure, conséquence du retrait de la figure 3 dessinée par IA (MAJ-06, décision de Vial). Aucun SVG factice ni anatomie redessinée n’est ajouté. Aucun schéma non anatomique n’est ajouté non plus : la topographie moelle, cône et queue de cheval est déjà schématisée par la figure 8 (Sémiologie) et la figure 7 (Physiologie) ; un troisième schéma en cases serait redondant.",
+    "ci_et_publication": "tests/audit_sciences.py n’est appelé par aucun des douze workflows de .github/workflows (recherche « audit_sciences » sans résultat) ni par tools/alpha_publication.py, tools/ai_session_guard.py ou tools/espace.py. Son échec ne bloque donc ni la CI ni le reçu Alpha ; il reste une lacune déclarée."
+   },
+   "validateur_semiologie": {
+    "commande": "python3 docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-C72-INTEGRATE/integration/outils/semio_check.py . C72",
+    "resultat": "passed",
+    "detail": "rejoué par P sur les fichiers finaux"
+   },
+   "rendu_chromium": {
+    "script": "integration/outils/render.py (port 8794)",
+    "resultat": "passed",
+    "rapport": "revue/rendu_chromium.json",
+    "captures": "revue/captures/",
+    "detail": "bureau 1300 × 900 et 390 × 844 : Sémiologie premier sous-onglet sélectionné, 9 sections, figures lisibles, aucun défilement horizontal, toutes les fenêtres data-k visibles ouvertes sans « Fiche absente », aucune erreur JavaScript"
+   },
+   "fenetre_nouvelle": {
+    "data_k": "c72-mpe-festonnage",
+    "resultat": "passed",
+    "detail": "ouverte depuis pE (carte e-2) au bureau et à 390 px ; lien aussi présent dans pA (tableau 7.1) ; captures revue/captures/C72_P_fenetre_divergence_festonnage_*.png"
+   }
+  }
+ }
 }
