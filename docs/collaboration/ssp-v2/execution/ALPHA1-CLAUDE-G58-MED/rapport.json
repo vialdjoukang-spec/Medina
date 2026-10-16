@@ -2,7 +2,9 @@
  "mission": "ALPHA1-CLAUDE-G58-MED",
  "code": "G58",
  "type_audit": "medical",
- "base_sha": "32416a2080e67537641040a81252dec0b3e6d137",
+ "base_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "worktree_base": "32416a2080e67537641040a81252dec0b3e6d137",
+ "worktree_base_note": "START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste.",
  "source_snapshot_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
  "generation": 1,
  "branche": "claude/alpha1/g58-med-g1",
@@ -10,8 +12,8 @@
  "conversation": "alpha1-claude-g58-med",
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
- "date_debut": "2026-10-16T05:45:00Z",
- "date_fin": "2026-10-16T06:11:11Z",
+ "date_debut": "2026-10-16T05:50:16Z",
+ "date_fin": "2026-10-16T06:12:08Z",
  "lecture": {
   "fichiers": [
    "chapters/G58/G58_a.html",
@@ -99,7 +101,9 @@
     }
    ],
    "proposition": "Insérer propositions/G58_c_1.html (bouton en tête de barre et div.sci g58-s-semio, sept îlots g58-sm-1 à -7, une figure non anatomique, trois cas) et créer chapters/G58/G58_pop3.html depuis propositions/G58_pop3_1.html.",
-   "justification": "Mécanisme : chaque signe traduit une famille de fibres et un tronc nerveux précis. Conséquence : sans technique ni regroupement, l’asymétrie initiale d’une mononévrite multiple passe inaperçue, surtout quand le tableau devient confluent. Décision : ajouter la discipline exigée par Vial (option A), sourcée en Suisse puis en Europe."
+   "justification": "Mécanisme : chaque signe traduit une famille de fibres et un tronc nerveux précis. Conséquence : sans technique ni regroupement, l’asymétrie initiale d’une mononévrite multiple passe inaperçue, surtout quand le tableau devient confluent. Décision : ajouter la discipline exigée par Vial (option A), sourcée en Suisse puis en Europe.",
+   "bloquant_cloture": true,
+   "statut_cloture": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md ; addendum lot 2, point 1)"
   },
   {
    "id": "C02",
@@ -126,7 +130,9 @@
     }
    ],
    "proposition": "Ajouter la discipline « Immunologie » de propositions/G58_c_2.html (bouton après Biochimie, div.sci g58-s-immuno, figure 7 non anatomique, quatre libellés, fenêtre Pareto).",
-   "justification": "Mécanisme : la neuropathie vasculitique est entretenue par le complément, les neutrophiles, les lymphocytes B et les éosinophiles. Conséquence : chaque biothérapie vise une cible et n’est autorisée en Suisse que pour la maladie correspondante. Décision : l’immunologie est la discipline manquante la plus utile."
+   "justification": "Mécanisme : la neuropathie vasculitique est entretenue par le complément, les neutrophiles, les lymphocytes B et les éosinophiles. Conséquence : chaque biothérapie vise une cible et n’est autorisée en Suisse que pour la maladie correspondante. Décision : l’immunologie est la discipline manquante la plus utile.",
+   "bloquant_cloture": true,
+   "statut_cloture": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md ; addendum lot 2, point 1)"
   },
   {
    "id": "C03",
@@ -597,11 +603,12 @@
   "rubrique": "Sémiologie fondamentale et analytique",
   "statut": "absent",
   "ancre": "aucune discipline g58-s-semio",
-  "constat_id": "C01"
+  "constat_id": "C01",
+  "gravite": "MAJEUR, bloquant pour la clôture du cours et du lot"
  },
  "semiologie": {
   "statut": "absente",
-  "gravite": "MAJEUR",
+  "gravite": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md)",
   "constat_id": "C01",
   "fondamentale": {
    "statut": "partielle_hors_discipline",
@@ -786,5 +793,6 @@
   "G58_pop2_1.html",
   "G58_pop3_1.html"
  ],
- "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée",
+ "date_debut_note": "Première heure UTC réellement relevée (date -u) au début de l’analyse, après la lecture des protocoles et des sept fichiers ; l’heure d’ouverture de la session n’a pas été relevée."
 }

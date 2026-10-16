@@ -1,6 +1,6 @@
 # Audit médical Alpha, tour 1 — G58 Autres mononévrites (S08, N-05-Neurologie)
 
-Mission `ALPHA1-CLAUDE-G58-MED` · branche `claude/alpha1/g58-med-g1` · base `32416a20` · génération 1 · effort conforme au manifeste · 16 octobre 2026.
+Mission `ALPHA1-CLAUDE-G58-MED` · branche `claude/alpha1/g58-med-g1` · base du manifeste `d1a488ad4f0031d7f2a4b47a0721e89a93475d77` · base du worktree `32416a2080e67537641040a81252dec0b3e6d137` (START exécuté sur le premier main contenant l'approbation de la mission, PR #181 ; sources figées identiques : empreintes SHA-256 conformes au manifeste) · génération 1 · début 2026-10-16T05:50:16Z (première heure relevée) · fin 2026-10-16T06:12:08Z · effort conforme au manifeste · 16 octobre 2026.
 
 Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée.
 
@@ -18,11 +18,11 @@ Le fond médical vérifié est solide : les critères de la Peripheral Nerve Soc
 
 ## Constats majeurs
 
-**C01 — `chapters/G58/G58_c.html`.** Sémiologie fondamentale et analytique absente : aucun bouton data-s="g58-s-semio", aucun div.sci homonyme, aucune formule « Pour la leçon : quelle est la sémiologie fondamentale et analytique ? ». Les îlots g58-5 et g58-6 listent symptômes et signes sans mécanisme par signe, sans technique (cotation de la force, cartographie sensitive), sans normal, sans tableau de syndromes, sans raisonnement en cinq étapes ni cas consacrés au signe. Le signe de Carnett, critère publié de l’ACNES, manque.  
+**C01 — `chapters/G58/G58_c.html` — bloquant pour la clôture du cours et du lot.** Sémiologie fondamentale et analytique absente : aucun bouton data-s="g58-s-semio", aucun div.sci homonyme, aucune formule « Pour la leçon : quelle est la sémiologie fondamentale et analytique ? ». Les îlots g58-5 et g58-6 listent symptômes et signes sans mécanisme par signe, sans technique (cotation de la force, cartographie sensitive), sans normal, sans tableau de syndromes, sans raisonnement en cinq étapes ni cas consacrés au signe. Le signe de Carnett, critère publié de l’ACNES, manque.  
 *Proposition :* Insérer propositions/G58_c_1.html (bouton en tête de barre et div.sci g58-s-semio, sept îlots g58-sm-1 à -7, une figure non anatomique, trois cas) et créer chapters/G58/G58_pop3.html depuis propositions/G58_pop3_1.html.  
 *Preuves :* S1 (Présentation et examen clinique) ; S2 (Introduction, Motor testing) ; S3 (Methods)
 
-**C02 — `chapters/G58/G58_c.html`.** L’onglet Sciences ne compte que quatre disciplines réelles (data-s : g58-s-anat, g58-s-histo, g58-s-physio, g58-s-bioch) ; l’addendum du lot 2 en exige cinq, plus la sémiologie. Les mécanismes immunitaires visés par le rituximab, l’avacopan et le mépolizumab ne sont expliqués nulle part.  
+**C02 — `chapters/G58/G58_c.html` — bloquant pour la clôture du cours et du lot.** L’onglet Sciences ne compte que quatre disciplines réelles (data-s : g58-s-anat, g58-s-histo, g58-s-physio, g58-s-bioch) ; l’addendum du lot 2 en exige cinq, plus la sémiologie. Les mécanismes immunitaires visés par le rituximab, l’avacopan et le mépolizumab ne sont expliqués nulle part.  
 *Proposition :* Ajouter la discipline « Immunologie » de propositions/G58_c_2.html (bouton après Biochimie, div.sci g58-s-immuno, figure 7 non anatomique, quatre libellés, fenêtre Pareto).  
 *Preuves :* S17 (Mécanisme d’action) ; S19 (Mécanisme d’action) ; S18 (Mécanisme d’action)
 
@@ -121,7 +121,7 @@ Le fond médical vérifié est solide : les critères de la Peripheral Nerve Soc
 
 ## 21 — Sémiologie fondamentale et analytique
 
-**Statut : absente (MAJEUR, C01).** La leçon ne possède ni bouton `g58-s-semio`, ni discipline sémiologique. Les îlots `g58-5` et `g58-6` donnent une liste de symptômes et quelques signes (Schepelmann, palpation, scratch collapse test chiffré), sans mécanisme par signe, sans technique, sans normal, sans syndromes ni raisonnement. La proposition `propositions/G58_c_1.html` (sept îlots, figure non anatomique, trois cas) et `propositions/G58_pop3_1.html` (dix fenêtres) comblent l’ensemble, sur une source suisse en texte intégral (Revue Médicale Suisse 2019), le guide européen du Medical Research Council et les critères néerlandais de l’ACNES.
+**Statut : absente — MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md ; C01).** Ce n’est pas une simple lacune. La leçon ne possède ni bouton `g58-s-semio`, ni discipline sémiologique. Les îlots `g58-5` et `g58-6` donnent une liste de symptômes et quelques signes (Schepelmann, palpation, scratch collapse test chiffré), sans mécanisme par signe, sans technique, sans normal, sans syndromes ni raisonnement. La proposition `propositions/G58_c_1.html` (sept îlots, figure non anatomique, trois cas) et `propositions/G58_pop3_1.html` (dix fenêtres) comblent l’ensemble, sur une source suisse en texte intégral (Revue Médicale Suisse 2019), le guide européen du Medical Research Council et les critères néerlandais de l’ACNES.
 
 | Critère | Résultat |
 |---|---|
@@ -180,7 +180,7 @@ Faits repris du dossier Betta 38 sans relecture dans cet audit : Théaudin 2022 
 | Propositions | 10 fichiers dans `propositions/` |
 | Contrôles | `test_v7.py --static` OK ; `audit_sciences.py` en échec (C03) ; 33 ancres uniques vérifiées |
 | Figures | 6 schémas non anatomiques, lisibles à 390 px |
-| Sémiologie (rubrique 21) | absente → proposition complète |
+| Sémiologie (rubrique 21) | absente : MAJEUR bloquant pour la clôture ; proposition complète |
 | Alerte | Aucune erreur dangereuse ; intégrer C04 à C06 avant toute republication de l’onglet Pharmacologie |
 
 Audit différé — revue IA, distincte d’une validation médicale humaine.
