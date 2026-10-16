@@ -1,0 +1,916 @@
+{
+ "mission": "ALPHA1-CLAUDE-G96-MED",
+ "code": "G96",
+ "type_audit": "medical",
+ "base_sha": "103745baaa38c76f18288758cc7f689e5091ccdb",
+ "base_note": "Base du worktree (HEAD). Le manifeste fige les sources à 523832d9ef6097607d3443f4398deee9cd0add11 ; empreintes SHA-256 des sept fichiers conformes.",
+ "source_snapshot_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "generation": 1,
+ "branche": "claude/alpha1/g96-med-g1",
+ "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G96-MED",
+ "conversation": "alpha1-claude-g96-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-16T09:50:00Z",
+ "date_debut_note": "première heure observée, non relevée au lancement",
+ "date_fin": "2026-10-16T10:18:36Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G96/G96_a.html",
+   "chapters/G96/G96_b.html",
+   "chapters/G96/G96_c.html",
+   "chapters/G96/G96_d.html",
+   "chapters/G96/G96_pop1.html",
+   "chapters/G96/G96_pop2.html",
+   "glossary/g96.py"
+  ],
+  "empreintes_conformes": true,
+  "empreintes": {
+   "chapters/G96/G96_a.html": {
+    "sha256": "113ef031198da128e77014cdebe14197de703252c52685dd3c81f352553f9f3e",
+    "manifeste": "113ef031198da128e77014cdebe14197de703252c52685dd3c81f352553f9f3e",
+    "conforme": true
+   },
+   "chapters/G96/G96_b.html": {
+    "sha256": "20bf46cc58410587c37db6dd4441a48ad20bf6a94b81a6a1b8268c1dd69aba90",
+    "manifeste": "20bf46cc58410587c37db6dd4441a48ad20bf6a94b81a6a1b8268c1dd69aba90",
+    "conforme": true
+   },
+   "chapters/G96/G96_c.html": {
+    "sha256": "9c5f0454223cbe99bc6bc317c01cb4b309d084b057caed85bc366830253d37e8",
+    "manifeste": "9c5f0454223cbe99bc6bc317c01cb4b309d084b057caed85bc366830253d37e8",
+    "conforme": true
+   },
+   "chapters/G96/G96_d.html": {
+    "sha256": "1890ce09d37565650d36101c65d97bb02303329a78fdba2137a990d1d9bb83c7",
+    "manifeste": "1890ce09d37565650d36101c65d97bb02303329a78fdba2137a990d1d9bb83c7",
+    "conforme": true
+   },
+   "chapters/G96/G96_pop1.html": {
+    "sha256": "06ba448da9a432338c8c5c0bf5b103883d8a0f75357ea385d841f6b0b5deb536",
+    "manifeste": "06ba448da9a432338c8c5c0bf5b103883d8a0f75357ea385d841f6b0b5deb536",
+    "conforme": true
+   },
+   "chapters/G96/G96_pop2.html": {
+    "sha256": "7dbda920f55e5ba9b809f3a7d7ae1797418849e64f9eaa44e08d088e161cb7eb",
+    "manifeste": "7dbda920f55e5ba9b809f3a7d7ae1797418849e64f9eaa44e08d088e161cb7eb",
+    "conforme": true
+   },
+   "glossary/g96.py": {
+    "sha256": "6ce7baf084ee783ccd14aa421c746258cdf114221f82923a5db9393775fcae52",
+    "manifeste": "6ce7baf084ee783ccd14aa421c746258cdf114221f82923a5db9393775fcae52",
+    "conforme": true
+   }
+  }
+ },
+ "premiere_source_lue": {
+  "source_id": "S2",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10511987/",
+  "section": "Introduction, « Background » (incidence 3,7/100 000, signes IRM chez environ 80 %)"
+ },
+ "synthese": {
+  "BLOQUANT": 0,
+  "MAJEUR": 12,
+  "MINEUR": 8,
+  "ENRICHISSEMENT": 5
+ },
+ "calculs": {
+  "total_releves": 270,
+  "calculables": 103,
+  "recalcules": 103,
+  "correct": 88,
+  "arrondi": 5,
+  "faux": 10,
+  "non_verifiable": 0,
+  "script": "calculs/verifier.py",
+  "couverture": "chaque occurrence de calculs/inventaire.json est rattachée à au moins un contrôle (champ controles) ; occurrences_non_couvertes = []",
+  "faux_constats": {
+   "P04": "C07",
+   "P07": "C04",
+   "T01": "C08",
+   "F02": "C05",
+   "F03": "C17",
+   "F04": "C17",
+   "S01": "C13",
+   "D01": "C03",
+   "Q04": "C11",
+   "Q07": "C09"
+  }
+ },
+ "controles": {
+  "test_v7_static": "G96 mots 11601 fenêtres 42 quiz 7 pareto 12 — OK",
+  "audit_sciences": "échec, 15 erreurs (voir C02)",
+  "image_clo_finder_inventory": "5 éléments : 3 icônes de 24 px non anatomiques (cercle et croix), 2 figures SVG",
+  "ancres": "chaque ancre de constat présente exactement une fois dans son fichier (contrôle scripté)"
+ },
+ "constats": [
+  {
+   "id": "C01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G96/G96_c.html",
+   "ancre": "data-s=\"g96-s-anat\"",
+   "constat": "Le sous-onglet « Sémiologie fondamentale et analytique » est absent. Décompte réel des data-s de G96_c.html : 3 (g96-s-anat, g96-s-physio, g96-s-bioch) ; aucun g96-s-semio, aucun marqueur data-semiology-clinical dans pA. La sémiologie existante (îlots g96-5 et g96-6) est descriptive : pas de mécanisme par signe, pas de regroupement syndromique, pas de raisonnement en cinq étapes, pas d’examen systématique ni de cas corrigés.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Q1 et tableau 3",
+     "citation_courte": "We recommend a working definition of orthostatic headache"
+    },
+    {
+     "source_id": "S24",
+     "section": "Physiology of Craniospinal CSF Dynamics",
+     "citation_courte": "hydrostatic indifferent point (HIP). It is physiologically situated between C7 and T5"
+    },
+    {
+     "source_id": "S28",
+     "section": "Results, tableau 1",
+     "citation_courte": "most commonly orthostatic (92%"
+    }
+   ],
+   "proposition": "propositions/G96_c_semio.html (bouton g96-tab-semio, panneau g96-s-semio role=tabpanel, neuf sections data-semiology, titres h3, figure non anatomique lisible à 390 px, trois cas corrigés, sources liées en https) ; propositions/G96_pop1_semio.html (sept fenêtres g96-sm-*, cible G96_pop1.html) ; propositions/G96_a_semio_clinique.html (marqueur data-semiology-clinical=\"G96\" dans pA, îlot g96-6).",
+   "justification": "Mécanisme : sans chaîne volume perdu → compliance → transfert postural → traction, le lecteur ne comprend pas pourquoi la douleur suit la posture. Conséquence : l’examen fédéral et la pratique exigent de qualifier une céphalée posturale et d’en écarter les imitateurs. Décision : exigence de Vial du 15.10.2026 ; MAJEUR, bloquant pour la clôture du cours et du lot.",
+   "bloquant_cloture": true,
+   "decompte_data_s": 3,
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G96/G96_c.html",
+   "ancre": "<b>Corrélation clinique.</b> Le lieu anatomique de la fuite détermine l’imagerie",
+   "constat": "tests/audit_sciences.py (base 103745ba) échoue avec 15 erreurs : physiologie 247 mots et biochimie 186 mots (< 280), biochimie sans figure, aucune discipline ne porte les libellés « Science → clinique. », « Science → examen. », « Science → traitement. », « À retenir. » (encadrés « Corrélation clinique. »). Seules trois disciplines existent ; le validateur tools/starter_codex.py exige au moins six boutons data-s dans pS.",
+   "preuve": [
+    {
+     "source_id": "S24",
+     "section": "Craniospinal Compliance",
+     "citation_courte": "Craniospinal compliance ( C ) is a measure of distensibility"
+    },
+    {
+     "source_id": "S6",
+     "section": "Diagnostic workup",
+     "citation_courte": "Radiation exposure, however, is significant and has been reported with 19.7"
+    }
+   ],
+   "proposition": "propositions/G96_c_liens.html (quatre libellés par discipline, compléments sourcés de physiologie et de biochimie, tableau introduit et commenté) ; propositions/G96_c_biomeca.html (quatrième discipline « Biomécanique craniospinale », 5e bouton avec la sémiologie). Sixième discipline : à sourcer (lacune).",
+   "justification": "Mécanisme : le contrôle vérifie le lien science → décision. Conséquence : la leçon échoue au contrat des sciences et au validateur de clôture. Décision : renommer et compléter les encadrés, ajouter des disciplines sourcées.",
+   "audit_sciences_erreurs": 15,
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C03",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G96/G96_b.html",
+   "ancre": "propose un traitement conservateur de moins de deux semaines",
+   "constat": "Le cas récapitulatif (g96-11) reprend la patiente de la vignette, qui souffre depuis six semaines, et propose un traitement conservateur de moins de deux semaines avant le patch. Le consensus limite le traitement conservateur à deux semaines au plus à partir du début des symptômes et demande d’offrir un patch non ciblé après au plus deux semaines de traitement conservateur. Recalcul D01 : 6 semaines > 2 semaines.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Q10",
+     "citation_courte": "implemented for up to 2 weeks from symptom onset"
+    },
+    {
+     "source_id": "S2",
+     "section": "Q11",
+     "citation_courte": "after no more than 2 weeks of conservative management"
+    },
+    {
+     "source_id": "S3",
+     "section": "7.2.3, commentaires",
+     "citation_courte": "after exclusion of postural orthostatic tachycardia syndrome (POTS), it is reasonable"
+    }
+   ],
+   "proposition": "propositions/G96_b_1.html (cas réécrit et quiz de décision).",
+   "justification": "Mécanisme : chaque semaine de fuite prolonge l’hypovolémie et le handicap ; le délai thérapeutique plus long est associé à une récupération plus lente (g96-10). Conséquence : le cas enseigne un retard d’au moins deux semaines pour un geste recommandé. Décision : patch non ciblé sans nouveau délai, après exclusion d’une tachycardie orthostatique.",
+   "calcul": "D01",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G96/G96_b.html",
+   "ancre": "La pression est inférieure à 60 mm de liquide chez un tiers seulement des patients.",
+   "constat": "La leçon juxtapose « pression inférieure à 60 mm chez un tiers seulement » et « pression normale chez 31,9 % » (g96-7, g96-e-4, g96-s-physio-cours, tableau g96-12, fenêtre g96-pl) comme s’ils concordaient. Recalcul P07 : 33,3 % + 31,9 % laisserait environ 35 % de pressions élevées, contre 3 % dans la méta-analyse de 2021 (basse 67 %, normale 32 %, élevée 3 %). Le « tiers » vient d’une cohorte de 106 patients (34 % ≤ 6 cm, 61 % normale) ; les deux méta-analyses trouvent environ un tiers de pressions normales.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Diagnostic",
+     "citation_courte": "Only approximately one-third of patients with SIH have a CSF opening pressure below 60 mm H2O"
+    },
+    {
+     "source_id": "S27",
+     "section": "résumé",
+     "citation_courte": "Sixty-one percent of patients had a PCSF between 6 and 20 cm H2O; only 34%"
+    },
+    {
+     "source_id": "S28",
+     "section": "résumé",
+     "citation_courte": "low, normal (60-200 mm H2O), and high in 67%"
+    },
+    {
+     "source_id": "S15",
+     "section": "résumé",
+     "citation_courte": "31.9% of patients with SIH had normal opening pressure"
+    }
+   ],
+   "proposition": "propositions/G96_b_2.html (six remplacements localisés, divergence attribuée).",
+   "justification": "Mécanisme : deux séries différentes donnent des proportions de pressions basses opposées (34 % contre 67 %). Conséquence : le lecteur retient une arithmétique impossible et un paramètre clé faux. Décision : présenter la divergence, conserver le message décisionnel (une pression normale n’exclut pas).",
+   "calcul": "P07",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C05",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G96/G96_c.html",
+   "ancre": "aria-label=\"Figure 2 — Volumes intracrâniens avant et après perte de liquide, schéma\"",
+   "constat": "Figure 2 (Monro-Kellie) : le rectangle « Sang / Perte » (x=460, hauteur 40) est plus bas que « Sang / Normal » (x=360, hauteur 80). La figure montre une diminution du sang après la fuite, à l’inverse de sa légende et de la doctrine. Recalcul F02 par lecture des attributs SVG.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Pathophysiology (compensation veineuse)",
+     "citation_courte": "the so-called Monro–Kellie doctrine"
+    }
+   ],
+   "proposition": "propositions/G96_c_figures.html (1) : figure corrigée, barre du sang croissante, police 11,7 px à 390 px.",
+   "justification": "Mécanisme : la compensation veineuse explique les signes de l’IRM. Conséquence : une figure inversée enseigne le contraire du texte. Décision : corriger les hauteurs.",
+   "calcul": "F02",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C06",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G96/G96_c.html",
+   "ancre": "aria-label=\"Figure 1 — Types de fuite spinale, schéma\"",
+   "constat": "Figure 1 : dessin SVG de la dure-mère, de l’espace du liquide et des trois types de fuite, sans source iconographique, créé par l’agent de rédaction du cycle Betta 41 (commits 8a43e918 et 0c4827d5, rapport de rédaction : « 2 figures SVG ») : classe ANATOMIQUE_IA, origine IA démontrée (règle de Vial du 15.10.2026). Texte rendu à 7,8 px à 390 px.",
+   "preuve": [
+    {
+     "source_id": "historique_git",
+     "section": "git log -- chapters/G96/G96_c.html",
+     "citation_courte": "0c4827d5 Claude 2026-10-15 Betta : injection directe du cycle 41"
+    },
+    {
+     "source_id": "S6",
+     "section": "Fig. 2, 4, 6 ; licence",
+     "citation_courte": "licensed under a Creative Commons Attribution 4.0 International License"
+    }
+   ],
+   "proposition": "propositions/G96_c_figures.html (2) : retrait du SVG et trois candidats réels CC BY 4.0 (Luetzen 2021, figures 2, 4 et 6), attribution proposée ; contrôle visuel à faire par l’intégrateur.",
+   "justification": "Mécanisme : une anatomie dessinée approximativement enseigne une topographie fausse. Conséquence : règle de Vial. Décision : original existant, sourcé et licencié.",
+   "classe_figure": "ANATOMIQUE_IA",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C07",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G96/G96_a.html",
+   "ancre": "Dans chaque série les pourcentages totalisent plus de 100 %",
+   "constat": "Recalcul P03 et P04 : la série traumatique totalise 46 + 44 + 15 + 11 = 116 %, mais la série non traumatique totalise 30 + 17 + 16 = 63 %. L’affirmation « dans chaque série les pourcentages totalisent plus de 100 % » est fausse. De plus, la source décrit pour la première série les sites de lésion des fractures de la base antérieure, non les sites de fuite.",
+   "preuve": [
+    {
+     "source_id": "S12",
+     "section": "Introduction",
+     "citation_courte": "ethmoid/cribriform plate (46%), frontal sinus (44%), orbital roof (15%), and sphenoid sinus (11%)"
+    },
+    {
+     "source_id": "S12",
+     "section": "Introduction",
+     "citation_courte": "sphenoid sinus (30%), ethmoid sinus (17%), and cribriform plate (16%)"
+    }
+   ],
+   "proposition": "propositions/G96_a_1.html (1).",
+   "justification": "Mécanisme : erreur arithmétique et glissement de définition. Conséquence : le lecteur apprend une incohérence inexistante. Décision : corriger la somme et le sens des pourcentages.",
+   "calcul": "P04",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C08",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G96/G96_b.html",
+   "ancre": "Pression d’ouverture supérieure à 200 mm de liquide (250 si l’indice de masse corporelle dépasse 30)",
+   "constat": "Le seuil de l’hypertension intracrânienne idiopathique (tableau du différentiel g96-7 et fenêtre g96-hii) reprend la revue de 2020 (> 200 mm chez le non-obèse). La source la plus récente de la leçon (Oxford 2025) retient > 25 cm de liquide selon les critères de Friedman modifiés. Recalcul T01.",
+   "preuve": [
+    {
+     "source_id": "S12",
+     "section": "Investigations",
+     "citation_courte": "with >25 cm of CSF consistent with a diagnosis of IIH"
+    },
+    {
+     "source_id": "S5",
+     "section": "Differential diagnosis",
+     "citation_courte": "for non-obese patients, >200 mm H2O; for patients with BMI >30, >250 mm H2O"
+    }
+   ],
+   "proposition": "propositions/G96_b_3.html.",
+   "justification": "Mécanisme : un seuil plus bas classe à tort des pressions normales hautes en hypertension. Conséquence : erreur de diagnostic différentiel. Décision : la source primaire applicable la plus récente l’emporte ; divergence présentée en fenêtre.",
+   "calcul": "T01",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C09",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G96/G96_b.html",
+   "ancre": "Des doses de caféine de 200 mg trois fois par jour à 300 mg quatre fois par jour sont rapportées",
+   "constat": "Les doses de caféine citées (g96-9, g96-p-1, g96-p-4, g96-cafeine) correspondent à 600 à 1200 mg par jour et 200 à 300 mg par prise (recalcul Q07), soit 1,5 à 3 fois le niveau jugé sans risque par l’EFSA (400 mg/j, 200 mg par prise ; 200 mg/j pendant la grossesse). Aucune FI suisse ne les couvre et le consensus britannique ne fixe aucune dose. La leçon ne signale pas ce dépassement.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Conservative treatment",
+     "citation_courte": "caffeine (200 mg po tid to 300 mg po qid)"
+    },
+    {
+     "source_id": "S29",
+     "section": "Adults",
+     "citation_courte": "Intakes up to 400mg per day (about 5.7mg/kg bw per day) consumed throughout the day do not raise safety concerns"
+    },
+    {
+     "source_id": "S2",
+     "section": "Q10",
+     "citation_courte": "oral caffeine or intravenous caffeine could be considered"
+    }
+   ],
+   "proposition": "propositions/G96_d_1.html (1).",
+   "justification": "Mécanisme : la caféine à forte dose expose à des effets indésirables au-delà du niveau de sécurité européen. Conséquence : une dose reprise d’une revue pourrait être prescrite telle quelle. Décision : ne pas présenter ces doses comme posologie, citer le plafond européen.",
+   "calcul": "Q07",
+   "securite": true,
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C10",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G96/G96_d.html",
+   "ancre": "Les sources lues ne contiennent pas de tableau d’interactions.",
+   "constat": "L’alerte de g96-p-2 affirme l’absence d’interactions dans les sources, alors que la FI suisse Diamox (juillet 2026) comporte une rubrique Interactions : association déconseillée à un autre inhibiteur de l’anhydrase carbonique (le topiramate, cité par le consensus pour le rebond), acidose métabolique sévère avec l’acide acétylsalicylique à forte dose, phénytoïne, ciclosporine, lithium, digoxine, sulfonylurées, anticoagulants oraux. La contre-indication du glaucome chronique à angle fermé non congestif (long cours), l’œdème pulmonaire non cardiogénique et l’indication « fistules pancréatiques » manquent.",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "Interactions",
+     "citation_courte": "L’utilisation concomitante avec d’autres inhibiteurs de l’anhydrase carbonique n’est pas recommandée"
+    },
+    {
+     "source_id": "S16",
+     "section": "Interactions",
+     "citation_courte": "peut conduire à une acidose métabolique sévère"
+    },
+    {
+     "source_id": "S2",
+     "section": "Q19",
+     "citation_courte": "anecdotal use of acetazolamide, topiramate and diuretics"
+    }
+   ],
+   "proposition": "propositions/G96_d_1.html (2).",
+   "justification": "Mécanisme : effets additifs sur l’anhydrase carbonique et sur l’équilibre acido-basique. Conséquence : une association citée par le consensus (acétazolamide, topiramate) est déconseillée par la FI. Décision : remplacer l’alerte par le contenu de la FI.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C11",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G96/G96_b.html",
+   "ancre": "Paracétamol contre-indiqué si elle est grave",
+   "constat": "Situation particulière « insuffisance hépatique » (g96-11) : la FI suisse limite le paracétamol à 2000 mg par jour en cas de maladie hépatique chronique ou compensée, d’alcoolisme chronique, de dénutrition ou de déshydratation, et le contre-indique en cas de maladie hépatique décompensée active ; la leçon ne mentionne que l’atteinte grave (recalcul Q04). La leçon affirme aussi que les extraits ne contiennent pas d’interactions (g96-p-4), alors que la FI liste inducteurs enzymatiques, phénytoïne et flucloxacilline.",
+   "preuve": [
+    {
+     "source_id": "S20",
+     "section": "Posologie, Troubles hépatiques",
+     "citation_courte": "La dose quotidienne ne doit pas dépasser 2 g"
+    },
+    {
+     "source_id": "S20",
+     "section": "Interactions",
+     "citation_courte": "aggravent l’hépatotoxicité du paracétamol"
+    }
+   ],
+   "proposition": "propositions/G96_d_1.html (3).",
+   "justification": "Mécanisme : réserves de glutathion basses, métabolite hépatotoxique. Conséquence : surdosage relatif possible chez le patient hépatique ou dénutri. Décision : ajouter le plafond et la rubrique des interactions.",
+   "calcul": "Q04",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C12",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G96/G96_d.html",
+   "ancre": "Troisième trimestre de grossesse, ulcère ou hémorragie digestive, maladie inflammatoire chronique active de l’intestin",
+   "constat": "La liste des contre-indications de l’ibuprofène omet la tendance accrue aux saignements, l’allergie à l’acide acétylsalicylique ou aux anti-inflammatoires, l’hémorragie digestive liée à un anti-inflammatoire et la douleur après pontage aorto-coronarien ; la posologie pédiatrique n’est pas donnée. La tendance aux saignements pèse chez un patient exposé à l’hématome sous-dural ou qui vient de recevoir un geste rachidien.",
+   "preuve": [
+    {
+     "source_id": "S21",
+     "section": "Contre-indications",
+     "citation_courte": "Tendance accrue aux saignements."
+    },
+    {
+     "source_id": "S21",
+     "section": "Posologie",
+     "citation_courte": "Céphalées, migraines Dose simple de 400 mg"
+    }
+   ],
+   "proposition": "propositions/G96_d_1.html (4).",
+   "justification": "Mécanisme : inhibition plaquettaire. Conséquence : risque hémorragique dans une maladie dont une complication est l’hématome sous-dural. Décision : compléter la liste selon la FI.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C13",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G96/G96_b.html",
+   "ancre": "le sealing étant le plus rapide (139 et 169 minutes selon le groupe)",
+   "constat": "L’ordre de la phrase (« la suture et le patch-sealing … 139 et 169 minutes ») attribue 139 min à la suture ; la source donne 139 ± 48 min au sealing et 169 ± 51 min à la suture (recalcul S01).",
+   "preuve": [
+    {
+     "source_id": "S9",
+     "section": "résumé",
+     "citation_courte": "shorter in the sealing group than in the suture group (139 ± 48 vs 169 ± 51 minutes"
+    }
+   ],
+   "proposition": "propositions/G96_mineurs.html (C13).",
+   "justification": "Imprécision d’attribution sans conséquence décisionnelle.",
+   "calcul": "S01",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C14",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G96/G96_b.html",
+   "ancre": "La seule consigne retrouvée est de ne pas conduire après un patch sanguin.",
+   "constat": "Le consensus dit que le patient ne doit pas conduire lui-même pour rentrer après le geste ; la leçon en fait une interdiction de conduire sans limite (g96-9 « et ne conduit pas », g96-10).",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Q13",
+     "citation_courte": "Patients should not drive themselves home."
+    }
+   ],
+   "proposition": "propositions/G96_mineurs.html (C14).",
+   "justification": "Surinterprétation d’une consigne de sortie.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C15",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G96/G96_d.html",
+   "ancre": "La grossesse, l’allaitement et un antécédent d’agranulocytose sont des contre-indications.",
+   "constat": "FI Ferriprox incomplète : manquent les contre-indications « épisodes répétés de neutropénie », « femme en âge de procréer sans contraception sûre », « médicaments pouvant provoquer une neutropénie », la règle de ne pas commencer sous 1,5 × 10⁹/L, la dose maximale de 100 mg/kg/j et la condition d’indication (déféroxamine contre-indiquée ou inadaptée).",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "Contre-indications",
+     "citation_courte": "Antécédents d’épisodes récurrents de neutropénie"
+    },
+    {
+     "source_id": "S17",
+     "section": "Posologie",
+     "citation_courte": "des doses supérieures à 100 mg/kg/jour ne sont pas recommandées"
+    }
+   ],
+   "proposition": "propositions/G96_d_1.html (5).",
+   "justification": "Médicament hors indication, d’usage spécialisé : imprécision sans conséquence décisionnelle immédiate.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C16",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G96/G96_a.html",
+   "ancre": "présente chez 75 à 80 % des patients",
+   "constat": "La méta-analyse européenne de 2021 (144 études) n’est pas exploitée : céphalée 97 %, orthostatique 92 %, IRM normale 19 %, succès conservateur 28 %, premier patch 64 %, patchs > 20 mL 77 % contre 66 %.",
+   "preuve": [
+    {
+     "source_id": "S28",
+     "section": "résumé",
+     "citation_courte": "a single epidural blood patch was successful in 64%"
+    }
+   ],
+   "proposition": "propositions/G96_mineurs.html (C16).",
+   "justification": "Données poolées plus récentes et plus larges que l’encadré de 2020.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C17",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G96/G96_c.html",
+   "ancre": "<g fill=\"currentColor\" font-size=\"14\">",
+   "constat": "Figures 1 et 2 illisibles à 390 px : police rendue 7,8 px et 7,3 px (viewBox 640, conteneur 358 px ; recalculs F03 et F04).",
+   "preuve": [
+    {
+     "source_id": "calcul",
+     "section": "calculs/resultats.json F03, F04",
+     "citation_courte": "14 × 358 / 640 = 7,8 px"
+    }
+   ],
+   "proposition": "propositions/G96_c_figures.html.",
+   "justification": "Lisibilité mobile.",
+   "calcul": "F03",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C18",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G96/G96_a.html",
+   "ancre": "est estimée à 3,7 pour 100 000 personnes par an dans le consensus britannique de 2023",
+   "constat": "L’incidence de 3,7/100 000 est une étude communautaire de Beverly Hills citée par le consensus, non une donnée britannique ; les deux incidences citées viennent de Californie.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Introduction et référence 2",
+     "citation_courte": "Incidence of spontaneous intracranial hypotension in a community: Beverly Hills, California, 2006-2020"
+    }
+   ],
+   "proposition": "propositions/G96_a_1.html (2).",
+   "justification": "Origine de la donnée épidémiologique.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C19",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G96/G96_a.html",
+   "ancre": "l’écoulement après ponction lombaire en est exclu et relève de G97.0",
+   "constat": "La CIM-10-GM 2024 range la fistule postopératoire en G97.80 et la baisse de pression après dérivation ventriculaire en G97.2 ; la leçon ne les signale pas alors qu’elle traite la fuite iatrogène.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "G97.-",
+     "citation_courte": "G97.80 Postoperative Liquorfistel"
+    },
+    {
+     "source_id": "S1",
+     "section": "G97.-",
+     "citation_courte": "G97.2 Intrakranielle Druckminderung nach ventrikulärem Shunt"
+    }
+   ],
+   "proposition": "propositions/G96_a_1.html (3).",
+   "justification": "Précision du codage.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C20",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G96/G96_b.html",
+   "ancre": "Il consulte en urgence en cas de douleur dorsale ou de la jambe, de déficit, de troubles sphinctériens ou de fièvre.",
+   "constat": "La liste des signes d’alarme après patch omet la rétention urinaire, le trouble sensitif du périnée et les nausées et vomissements.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Q13",
+     "citation_courte": "urinary retention, perineal sensory disturbance, nausea and vomiting or fever"
+    }
+   ],
+   "proposition": "propositions/G96_mineurs.html (C20).",
+   "justification": "Exhaustivité d’une consigne de sécurité déjà présente pour l’essentiel.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C21",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G96/G96_b.html",
+   "ancre": "si on choisit la surveillance, l’IRM est répétée tous les un à deux ans",
+   "constat": "Le consensus demande aussi d’adresser le patient asymptomatique à un centre et de lui proposer d’explorer et de traiter une fuite avec collection extradurale ; l’IRM de surveillance comprend le cerveau avec séquences sensibles au sang et le rachis.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Q16",
+     "citation_courte": "offer to investigate and treat asymptomatic spinal CSF leak with SLEC"
+    }
+   ],
+   "proposition": "propositions/G96_mineurs.html (C21).",
+   "justification": "Conduite incomplète sans danger immédiat.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C22",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G96/G96_pop1.html",
+   "ancre": "le vaccin polysaccharidique 23-valent n’est plus recommandé en Suisse depuis 2014",
+   "constat": "Le choix du vaccin conjugué selon l’âge (plan 2026) n’est pas donné : PCV13 ou PCV15 de 2 à 59 mois, PCV15 ou PCV20 de 5 à 17 ans, PCV20 ou PCV21 de 18 à 64 ans et dès 65 ans ; dose unique de valence plus élevée après PCV13 ou PCV15.",
+   "preuve": [
+    {
+     "source_id": "S22",
+     "section": "Vaccins recommandés",
+     "citation_courte": "2 – 59 mois : PCV13 ou PCV15"
+    }
+   ],
+   "proposition": "propositions/G96_mineurs.html (C22).",
+   "justification": "Spécificité suisse utile à la prescription.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C23",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G96/G96_a.html",
+   "ancre": "L’examen vise d’abord à écarter une cause concurrente d’intolérance à la station debout.",
+   "constat": "L’échographie de la gaine du nerf optique (diminution de plus de 5 % du couché au debout, absente dans la tachycardie orthostatique) fait partie du schéma diagnostique non invasif bernois ; la leçon ne la mentionne pas.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Transorbital ultrasonography",
+     "citation_courte": "Decreases of more than 5% are considered pathological"
+    },
+    {
+     "source_id": "S30",
+     "section": "texte",
+     "citation_courte": "transorbitalen Ultraschall der Opticusscheide"
+    }
+   ],
+   "proposition": "propositions/G96_c_semio.html (étape 7) et G96_pop1_semio.html (g96-sm-gaineoptique).",
+   "justification": "Spécificité suisse et examen au lit en centre.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C24",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G96/G96_b.html",
+   "ancre": "La valeur prédictive négative d’une IRM cérébrale négative pour une fistule liquido-veineuse est d’environ 0,89",
+   "constat": "La même revue donne une valeur prédictive négative de 0,81 pour un score de Berne de faible probabilité et de 0,65 pour le score de la Mayo Clinic (fistule chez 18,3 % des scores de Berne faibles).",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "résumé",
+     "citation_courte": "0.81 (95% CI, 0.77-0.87) for the Bern score"
+    }
+   ],
+   "proposition": "propositions/G96_mineurs.html (C24).",
+   "justification": "Valeur diagnostique utile au raisonnement.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C25",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G96/G96_b.html",
+   "ancre": "Les aspects assurantiels suisses",
+   "constat": "Rubrique 16 (spécificités suisses) partielle : assurance-accidents, assurance-invalidité, aptitude à la conduite et remboursement ne sont documentés par aucune source lue, par la leçon comme par l’audit. Les centres suisses (Berne) et leur schéma diagnostique peuvent être cités.",
+   "preuve": [
+    {
+     "source_id": "S30",
+     "section": "texte",
+     "citation_courte": "Mittlerweile würden SIH-Patienten aus verschiedenen europäischen Ländern zur Abklärung und Behandlung nach Bern überwiesen"
+    }
+   ],
+   "proposition": "Aucune proposition rédigée : lacune à combler par une recherche Suva, AI, OFROU.",
+   "justification": "Rubrique obligatoire de la matrice.",
+   "ancre_occurrences": 1
+  }
+ ],
+ "matrice_20": [
+  {
+   "rang": 1,
+   "rubrique": "Question clinique et enjeu pour l’examen fédéral",
+   "statut": "couvert",
+   "ancre": "g96-0 (vignette fictive, objectifs)"
+  },
+  {
+   "rang": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "couvert",
+   "ancre": "g96-1 ; G97.80 et G97.2 absents (C19)"
+  },
+  {
+   "rang": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "couvert",
+   "ancre": "g96-1 (types 1–3, score de Berne, ICHD 7.2.1–7.2.3), g96-e-2"
+  },
+  {
+   "rang": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "partiel",
+   "ancre": "g96-2 ; aucune donnée suisse ou européenne, origine californienne (C18)"
+  },
+  {
+   "rang": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "partiel",
+   "ancre": "g96-3, g96-s-physio-cours ; figure 2 inversée (C05) ; normal craniospinal absent (C01)"
+  },
+  {
+   "rang": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "couvert",
+   "ancre": "g96-4"
+  },
+  {
+   "rang": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "couvert",
+   "ancre": "g96-5 (tableau 3 du consensus, valeurs exactes)"
+  },
+  {
+   "rang": 8,
+   "rubrique": "Examen clinique (signes, Se/Sp)",
+   "statut": "partiel",
+   "ancre": "g96-6 ; aucune Se/Sp dans les sources (lacune) ; sémiologie absente (C01)"
+  },
+  {
+   "rang": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "couvert",
+   "ancre": "g96-8 (alert, tableau, orientation)"
+  },
+  {
+   "rang": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "partiel",
+   "ancre": "g96-7, g96-e-1 à g96-e-6 ; contradiction sur la pression d’ouverture (C04)"
+  },
+  {
+   "rang": 11,
+   "rubrique": "Diagnostic différentiel",
+   "statut": "partiel",
+   "ancre": "g96-7 ; seuil obsolète de l’hypertension intracrânienne idiopathique (C08) ; discriminants de la migraine et de la céphalée cervicogène pourtant présents dans S2 Q2"
+  },
+  {
+   "rang": 12,
+   "rubrique": "Prise en charge suisse",
+   "statut": "partiel",
+   "ancre": "g96-9, g96-p-1 à g96-p-4 ; C03, C09, C10, C11, C12"
+  },
+  {
+   "rang": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "couvert",
+   "ancre": "g96-8, g96-10"
+  },
+  {
+   "rang": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "couvert",
+   "ancre": "g96-10, g96-vaccin ; C21, C22"
+  },
+  {
+   "rang": 15,
+   "rubrique": "Situations particulières",
+   "statut": "partiel",
+   "ancre": "g96-11 ; grossesse et enfant non traités par les sources ; plafond hépatique manquant (C11)"
+  },
+  {
+   "rang": 16,
+   "rubrique": "Spécificités suisses",
+   "statut": "partiel",
+   "ancre": "g96-vaccin, FI ; assurances et conduite absentes (C25)"
+  },
+  {
+   "rang": 17,
+   "rubrique": "Critères formels du diagnostic",
+   "statut": "couvert",
+   "ancre": "g96-12 (div.alert ICHD-3 7.2 ; conformes à S3 et S18)"
+  },
+  {
+   "rang": 18,
+   "rubrique": "Paramètres clés chiffrés",
+   "statut": "partiel",
+   "ancre": "g96-12 (tableau et div.key) ; ligne de la pression d’ouverture à corriger (C04)"
+  },
+  {
+   "rang": 19,
+   "rubrique": "Sous-codes CIM-10-GM couverts",
+   "statut": "couvert",
+   "ancre": "g96-1 (G96.0, G96.1, G96.8, G96.9)"
+  },
+  {
+   "rang": 20,
+   "rubrique": "Points d’examen fédéral",
+   "statut": "partiel",
+   "ancre": "pièges et quiz ; objectifs PROFILES non consultés (lacune)"
+  }
+ ],
+ "semiologie": {
+  "statut": "absente",
+  "decompte_data_s": 3,
+  "data_s": [
+   "g96-s-anat",
+   "g96-s-physio",
+   "g96-s-bioch"
+  ],
+  "sous_onglet_semio": false,
+  "gravite": "MAJEUR",
+  "bloquant_cloture_cours_et_lot": true,
+  "constat_id": "C01",
+  "fondamentale": {
+   "statut": "partielle dans l’onglet 1, absente comme discipline",
+   "ancres": [
+    "g96-5",
+    "g96-6",
+    "g96-orthostatique",
+    "g96-symptomes",
+    "g96-reservoir",
+    "g96-halo",
+    "g96-pots"
+   ],
+   "manques": "normal craniospinal, mécanisme par signe, valeur (Se/Sp non chiffrées dans les sources lues : LACUNE), pièges systématiques"
+  },
+  "analytique": {
+   "statut": "absente",
+   "ancres": [],
+   "manques": "regroupement syndromique, raisonnement en cinq étapes, examen systématique, synthèse présentée, trois cas corrigés"
+  },
+  "proposition": [
+   "propositions/G96_c_semio.html",
+   "propositions/G96_pop1_semio.html",
+   "propositions/G96_a_semio_clinique.html"
+  ],
+  "grille_SEM": {
+   "SEM-01": "non",
+   "SEM-02": "non",
+   "SEM-03": "non",
+   "SEM-04": "oui (test_v7 --static G96 : OK sur la leçon actuelle)",
+   "SEM-05": "non",
+   "SEM-06": "non",
+   "SEM-07": "non",
+   "SEM-08": "non",
+   "SEM-09": "non",
+   "SEM-10": "partiel (pièges de g96-5 et g96-6)",
+   "SEM-11": "non",
+   "SEM-12": "non",
+   "SEM-13": "non (alert de g96-8 seulement, pas d’alert sémiologique)",
+   "SEM-14": "partiel (tableau g96-7, deux lignes sans discriminant)",
+   "SEM-15": "non",
+   "SEM-16": "non",
+   "SEM-17": "non",
+   "SEM-18": "non",
+   "SEM-19": "non évaluable (absente)",
+   "SEM-20": "non évaluable",
+   "SEM-21": "non évaluable",
+   "SEM-22": "non (bouton absent)",
+   "SEM-23": "non (aucune capture possible)",
+   "SEM-24": "oui (statut « Revue par intelligence artificielle … Aucune validation médicale humaine »)"
+  }
+ },
+ "figures": [
+  {
+   "ancre": "aria-label=\"Figure 1 — Types de fuite spinale, schéma\"",
+   "fichier": "chapters/G96/G96_c.html",
+   "classe": "ANATOMIQUE_IA",
+   "constat_id": "C06",
+   "verification": "SVG inline sans source iconographique ; origine IA démontrée (commits 8a43e918, 0c4827d5 ; rapport de rédaction du cycle 41) ; police 7,8 px à 390 px.",
+   "candidats": [
+    {
+     "page": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8528761/figure/Fig2/",
+     "auteur": "Luetzen N et al.",
+     "licence": "CC BY 4.0",
+     "attribution": "Luetzen N et al., Neuroradiology 2021, fig. 2, CC BY 4.0"
+    },
+    {
+     "page": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8528761/figure/Fig4/",
+     "auteur": "Luetzen N et al.",
+     "licence": "CC BY 4.0",
+     "attribution": "Luetzen N et al., Neuroradiology 2021, fig. 4, CC BY 4.0"
+    },
+    {
+     "page": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8528761/figure/Fig6/",
+     "auteur": "Luetzen N et al.",
+     "licence": "CC BY 4.0",
+     "attribution": "Luetzen N et al., Neuroradiology 2021, fig. 6, CC BY 4.0"
+    }
+   ],
+   "statut_candidats": "licence de l’article lue dans le XML PMC ; contrôle visuel non réalisé"
+  },
+  {
+   "ancre": "aria-label=\"Figure 2 — Volumes intracrâniens avant et après perte de liquide, schéma\"",
+   "fichier": "chapters/G96/G96_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "constat_id": "C05",
+   "verification": "Hauteurs des rectangles lues par script : sang 80 → 40, contraire à la légende ; police 7,3 px à 390 px."
+  }
+ ],
+ "figures_synthese": {
+  "total": 2,
+  "ANATOMIQUE_IA": 1,
+  "ORIGINE_INCONNUE": 0,
+  "SCHEMA_NON_ANATOMIQUE": 1,
+  "IMAGE_SOURCEE": 0,
+  "icones_sci_bar_24px": 3,
+  "methode": "python3 tools/image_clo_finder.py inventory G96 ; lecture des attributs SVG ; git log pour l’origine",
+  "regle": "Règle de Vial du 15.10.2026"
+ },
+ "verifications_conformes": [
+  "Score de Berne : six signes, pondérations, seuils 4,0 / 5,0 / 6,5 mm, classes ≤ 2, 3–4, ≥ 5, maximum 9 [S4 ; S6]",
+  "ICHD-3 7.2, 7.2.1, 7.2.3 : critères, cinq jours, deux semaines, ponction durale dans le mois, ponction inutile si IRM positive, rapport sexuel codé 7.2.3 [S3 ; S18]",
+  "Consensus britannique : définition opérationnelle, tableau 3 (17 valeurs recontrôlées par script), seuils de tachycardie et d’hypotension orthostatiques, protocole IRM, orientation 2–4 semaines / 48 h / urgence / un mois, patch ≤ 40 mL et ≥ 20 mL, chlorhexidine > 0,5 %, suites 2–24 h, 1–3 jours, 4–6 semaines, suivi 24–48 h, 10–14 j, 3–6 semaines, 3–6 mois, complications [S2]",
+  "Fribourg : incidence 5/100 000, 2 : 1, 40 ans, un quart des hématomes sous-duraux avant 60 ans, trois mois, 75–80 %, < 10 %, 5–10 %, types 60/20/20 %, collection 60 %, 30–70 %, < 10 %, 90 %, > 95 %, < 5 %, rebond 17 % et un sur cinq, > 10 semaines et obésité, 19,7 et 6,6 mSv [S5 ; S6]",
+  "Berne : 15,3 → 18,0 mL, 18,8 %, quatre jours, 6,9 → 2,9 [S7] ; 220 patients, 51 ± 14 ans, 65 % [S8] ; 89 % et 94 % [S9] ; 54,8 % et 45,6 % [S10] ; < 6 cm d’eau et 10–15 % [S24]",
+  "Rhinorrhée : 25 %, sites, 30°, 3 + 3 jours puis 7 jours, antibioprophylaxie non recommandée, endoscopie > 90 %, six semaines, spray salin, IMC > 30 et ≥ 35 [S12] ; 10–37 % [S13]",
+  "FI Diamox (indications, posologie du glaucome 250–1000 mg, contre-indications, mises en garde, grossesse, juillet 2026) [S16] ; FI Ferriprox (25 mg/kg × 3, 1,1 %, 4,9 %, contrôle hebdomadaire la première année, mars 2022) [S17] ; FI Paracétamol Stada (4000 mg, 2000 mg de 9 à 12 ans, ajustement rénal, Gilbert) [S20] ; FI Ibuprofen-Mepha Teva (400–800 mg, 2400 mg, contre-indications citées) [S21]",
+  "Plan de vaccination 2026 : fistule cérébro-spinale, schéma par âge, PPV23 non recommandé depuis 2014 [S22]",
+  "CIM-10-GM 2024 : G96.0–G96.9, exclusion G97.0 [S1]"
+ ],
+ "lacunes": [
+  "Aucune recommandation suisse (Société suisse de neurologie, Société suisse des céphalées, Swiss Medical Forum) ni européenne (EAN) dédiée trouvée ; WebSearch « Swiss Medical Forum spontane intrakranielle Hypotension » : seul un compte rendu suisse (S30).",
+  "Sensibilité et spécificité des signes cliniques : non chiffrées dans les sources lues (S2, S5, S6, S28).",
+  "Mécanisme des symptômes cochléovestibulaires et des nausées : non précisé par les sources lues.",
+  "Sixième discipline des sciences exigée par le validateur : aucune source lue suffisante pour une histologie ou une génétique (tissu conjonctif) de la leçon ; à rechercher.",
+  "S19 (ICHD-3 7.2.2) et S23 (recommandations pneumocoques 2014) non relues par l’audit.",
+  "S4, S7–S11, S13–S15, S25–S27 lues en résumé seulement ; S5 lu par extraits via la page PMC (texte intégral non téléchargeable par E-utilities).",
+  "Spécificités suisses (Suva, assurance-invalidité, aptitude à la conduite, remboursement) : non recherchées dans les textes officiels (C25).",
+  "Objectifs PROFILES non consultés.",
+  "Figures candidates (Luetzen 2021) : contrôle visuel et licence propre à chaque figure non vérifiés au-delà de la licence de l’article.",
+  "Captures réelles (SEM-23) non réalisées : la sémiologie n’existe pas encore dans la leçon."
+ ],
+ "propositions": [
+  "G96_a_1.html",
+  "G96_a_semio_clinique.html",
+  "G96_b_1.html",
+  "G96_b_2.html",
+  "G96_b_3.html",
+  "G96_c_biomeca.html",
+  "G96_c_figures.html",
+  "G96_c_liens.html",
+  "G96_c_semio.html",
+  "G96_d_1.html",
+  "G96_mineurs.html",
+  "G96_pop1_semio.html"
+ ],
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+}

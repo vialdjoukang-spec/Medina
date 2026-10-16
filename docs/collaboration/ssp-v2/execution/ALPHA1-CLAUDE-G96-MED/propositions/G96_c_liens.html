@@ -1,0 +1,29 @@
+<!-- Proposition ALPHA1-CLAUDE-G96-MED, constat C02 : contrat des sciences (tests/audit_sciences.py, base 103745ba : 15 erreurs).
+     Chaque discipline doit porter les quatre libellés « Science → clinique. », « Science → examen. », « Science → traitement. », « À retenir. »,
+     dépasser 280 mots et contenir une figure accessible. Les encadrés existants « Corrélation clinique. » sont remplacés ; le fond est conservé
+     et complété par des faits sourcés. Références [Sx] : sources.json de ce dossier. Revue IA, aucune validation médicale humaine. -->
+
+<!-- (A) g96-s-anat-cours : remplacer le div.key « Corrélation clinique. Le lieu anatomique… » par : -->
+<div class="key" data-src="S6"><b>Science → clinique.</b> Le lieu anatomique de la fuite décide de sa traduction : une déchirure ventrale ou un diverticule proximal étale du liquide dans l’espace extradural, une fistule liquido-veineuse n’en étale pas.</div>
+<div class="key" data-src="S6 S2"><b>Science → examen.</b> La présence d’une collection extradurale oriente vers une myélographie dynamique en procubitus ; son absence vers une myélographie en décubitus latéral, hanches plus hautes que les épaules, pendant l’inspiration.</div>
+<div class="key" data-src="S5 S6 S30"><b>Science → traitement.</b> La déchirure ventrale, souvent liée à un microéperon discal calcifié (71 % des lésions durales de la série bernoise de patients réfractaires), exige une fermeture chirurgicale dans 90 % des cas ; la fistule liquido-veineuse relève de la ligature, de la colle de fibrine ou de l’embolisation par le système azygos.</div>
+<div class="key"><b>À retenir.</b> Trois lieux, trois signatures d’imagerie, trois gestes : face ventrale de la dure-mère, gaine radiculaire, veine.</div>
+
+<!-- (B) g96-s-physio-cours (247 mots) : ajouter avant le div.key final ce paragraphe sourcé, puis remplacer le div.key « Corrélation clinique. » par les quatre encadrés : -->
+<p data-src="S24">La posture modifie la distribution du liquide. Couché, la pression est égale le long de l’axe craniospinal ; debout, elle devient légèrement négative dans le crâne et positive dans le rachis, avec un point hydrostatique indifférent situé entre C7 et T5. Le système contient environ 150 mL de liquide, dont deux tiers dans le rachis. Lorsque la fuite diminue le volume, la compliance augmente et le transfert du crâne vers le rachis au lever devient plus important : c’est la base physiologique de la céphalée orthostatique.</p>
+<div class="key" data-src="S5 S24"><b>Science → clinique.</b> La compensation veineuse et le transfert postural expliquent ensemble les deux faces de la maladie : une céphalée qui suit la posture et une IRM aux méninges et aux sinus engorgés.</div>
+<div class="key" data-src="S3 S28"><b>Science → examen.</b> Couché, la pression d’ouverture reflète la pression intracrânienne, mais elle reste normale chez environ un tiers des patients : une pression normale n’exclut pas la fuite.</div>
+<div class="key" data-src="S7 S2"><b>Science → traitement.</b> La fermeture de la brèche restaure le volume ventriculaire, de 15,3 à 18,0 mL, et fait baisser le score de Berne de 6,9 à 2,9 ; le patch sanguin cherche à obturer la brèche ou à élever la pression épidurale, mécanisme encore discuté [S6].</div>
+<div class="key"><b>À retenir.</b> Le volume perdu, la compliance accrue et la compensation veineuse expliquent la céphalée posturale et les signes d’imagerie.</div>
+
+<!-- (C) g96-s-bioch-cours (186 mots, aucune figure) : ajouter le paragraphe, le tableau introduit et commenté, puis les quatre encadrés : -->
+<p data-src="S12 S13">Deux questions biologiques et physiques organisent les examens. La première est la nature du liquide nasal : seule une protéine propre au liquide céphalorachidien, la bêta-2-transferrine ou la protéine bêta-trace, la confirme. La seconde est l’image du défaut : le scanner haute résolution montre l’os, l’IRM fortement pondérée en T2 montre le liquide.</p>
+<p>Le tableau compare l’exposition aux rayonnements des deux myélographies dynamiques, lorsque toutes deux répondent à la même question.</p>
+<table class="t"><tr><th>Technique</th><th>Dose efficace médiane (étendue)</th><th>Source</th></tr><tr><td>Myélographie dynamique par tomodensitométrie</td><td>19,7 mSv (3,2 à 82,4)</td><td>S6</td></tr><tr><td>Myélographie par soustraction numérique</td><td>6,6 mSv (1,2 à 17,7)</td><td>S6</td></tr></table>
+<p data-src="S6">Le tableau se lit par la colonne des doses : la tomodensitométrie expose environ trois fois plus. L’équipe de Fribourg commence donc presque toujours par la soustraction numérique et réserve la tomodensitométrie au rachis thoracique haut, mal visible derrière les épaules.</p>
+<div class="key" data-src="S12 S13"><b>Science → clinique.</b> Un écoulement nasal clair n’est pas forcément du liquide céphalorachidien : la protéine marqueuse tranche.</div>
+<div class="key" data-src="S6 S2"><b>Science → examen.</b> La soustraction numérique irradie trois fois moins ; elle est le premier choix lorsqu’elle peut répondre.</div>
+<div class="key" data-src="S12"><b>Science → traitement.</b> La localisation du défaut par le scanner guide la réparation endoscopique, dont le succès dépasse 90 %.</div>
+<div class="key"><b>À retenir.</b> Biologie pour la nature du liquide, scanner pour l’os, IRM pour le liquide, myélographie pour le site spinal.</div>
+<!-- Une figure accessible reste exigée par audit_sciences dans g96-s-bioch : réutiliser une image réelle sourcée (voir propositions/G96_c_figures.html),
+     jamais un SVG anatomique dessiné. -->
