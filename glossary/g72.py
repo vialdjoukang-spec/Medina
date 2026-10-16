@@ -38,7 +38,7 @@ for _code, _txt in [
     ('Q74.3', 'Arthrogrypose multiple congénitale, exclue de G72.'),
 ]:
     add_if_absent(_code, [(_code, 'code de la CIM-10-GM, non une abréviation développable')], 'Code ' + _code + ' de la CIM-10-GM 2024', _txt, 'g72-cim')
-add_if_absent('ABCDEF', [('ABCDEF', 'sigle d’un ensemble de mesures de réanimation ; les lettres ne sont pas développées dans les passages lus')],
+add_if_absent('ABCDEF', [('A', 'Assess, prevent, and manage pain (évaluer, prévenir et traiter la douleur)'), ('B', 'Both spontaneous awakening and breathing trials (épreuves d’éveil et de respiration spontanés)'), ('C', 'Choice of analgesia and sedation (choix de l’analgésie et de la sédation)'), ('D', 'Delirium: assess, prevent, and manage (délire : évaluer, prévenir et traiter)'), ('E', 'Early mobility and exercise (mobilité et exercice précoces)'), ('F', 'Family engagement and empowerment (implication de la famille)')],
               'Approche ABCDEF de réanimation', 'Ensemble de mesures citées par Latronico et coll. (2023) pour la prévention de la faiblesse acquise en réanimation (mobilisation précoce, sédation légère).', 'g72-rea-criteres')
 add_if_absent('B6', [('B', 'vitamine du groupe B'), ('6', 'numéro 6')], 'Vitamine B6', 'Vitamine citée parmi les carences qui contribuent à la myopathie alcoolique.', 'g72-alcool')
 add_if_absent('CACNA1S', [('CACN', 'Calcium Channel (canal calcique dépendant du voltage)'), ('A1', 'sous-unité alpha 1'), ('S', 'isoforme du muscle squelettique')],
@@ -48,7 +48,7 @@ add_if_absent('SCN4A', [('SCN', 'Sodium Channel (canal sodique dépendant du vol
 add_if_absent('KCNJ2', [('K', 'Potassium'), ('CN', 'Channel (canal)'), ('J', 'sous-famille J'), ('2', 'membre 2')],
               'Gène du canal potassique Kir2.1', 'Gène muté dans le syndrome d’Andersen-Tawil.', 'g72-canaux')
 add_if_absent('KCNJ18', [('K', 'Potassium'), ('CN', 'Channel (canal)'), ('J', 'sous-famille J'), ('18', 'membre 18')],
-              'Gène du canal potassique Kir2.6', 'Gène retrouvé dans jusqu’à 3 % des formes thyrotoxiques de paralysie périodique (Statland et coll., 2018).', 'g72-canaux')
+              'Gène du canal potassique Kir2.6', 'Gène le plus souvent associé à la forme thyrotoxique de paralysie périodique, retrouvé chez jusqu’à 3 % des patients atteints de la forme hypokaliémique (Statland et coll., 2018).', 'g72-canaux')
 add_if_absent('Nav1.4', [('Na', 'sodium'), ('v', 'voltage-dépendant'), ('1.4', 'sous-type 1.4')], 'Canal sodique voltage-dépendant du muscle squelettique',
               'Canal dont la perte de disponibilité contribue à l’inexcitabilité de la fibre dans la myopathie de réanimation (modèles animaux et in vitro).', 'g72-canaux')
 add_if_absent('SLCO1B1', [('SLCO', 'Solute Carrier Organic anion transporter'), ('1B1', 'famille 1, membre B1')], 'Gène du transporteur OATP1B1',
@@ -96,3 +96,13 @@ add_if_absent('Atorvastatin-Mepha', [('Atorvastatin', 'atorvastatine'), ('Mepha'
               'Générique de l’atorvastatine dont l’information professionnelle suisse (avril 2025) a été lue.', 'g72-atorva')
 add_if_absent('Acétyl-CoA', [('Acétyl', 'groupe acétyle'), ('CoA', 'coenzyme A')], 'Acétyl-coenzyme A',
               'Précurseur de la voie du mévalonate, point de départ de la synthèse du cholestérol.', 'g72-atorva')
+add_if_absent('M63.3', [('M63.3', 'code de la CIM-10-GM, non une abréviation développable')], 'Code M63.3 de la CIM-10-GM 2024',
+              'Myosite au cours de la sarcoïdose (M63.3-*, avec le code étiologique D86.8†), codée hors de G72.', 'g72-cim')
+add_if_absent('KCl', [('K', 'kalium, symbole chimique du potassium'), ('Cl', 'chlore, sous forme de chlorure')], 'Chlorure de potassium',
+              'Sel de potassium ; la solution à 7,45 % de Sintetica, à diluer avant perfusion, a une information professionnelle suisse datée de février 2024.', 'g72-potassium')
+add_if_absent('CTT', [('C', 'Cholesterol'), ('T', 'Treatment'), ('T', 'Trialists’ (collaboration des investigateurs des essais)')], 'Cholesterol Treatment Trialists’ Collaboration',
+              'Collaboration qui a publié en 2022 la méta-analyse des symptômes musculaires dans 19 essais en double aveugle de statine contre placebo.', 'g72-alternatives')
+add_if_absent('PL7', [('PL7', 'nom de l’antigène cible ; les lettres ne sont pas développées dans le passage lu')], 'Antigène PL7',
+              'Cible d’un autoanticorps spécifique des myosites, recueilli mais non retenu dans les critères EULAR/ACR 2017 faute d’observations suffisantes (Lundberg et coll., 2017).', 'g72-anticorps')
+add_if_absent('PL12', [('PL12', 'nom de l’antigène cible ; les lettres ne sont pas développées dans le passage lu')], 'Antigène PL12',
+              'Cible d’un autoanticorps spécifique des myosites, recueilli mais non retenu dans les critères EULAR/ACR 2017 faute d’observations suffisantes (Lundberg et coll., 2017).', 'g72-anticorps')

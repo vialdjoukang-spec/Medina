@@ -77,6 +77,8 @@ add_if_absent('JAM2', [('JAM2', 'symbole de gène : Junctional Adhesion Molecule
               'Un des trois gènes récessifs de la calcification cérébrale primaire familiale.', 'g23-pfbc-meca')
 add_if_absent('LIQ', [('LIQ', 'suffixe de nom commercial (forme liquide de Madopar®), non une abréviation')], 'Madopar LIQ',
               'Forme liquide de Madopar®, indiquée en cas de dysphagie.', 'g23-madopar')
+add_if_absent('MAPT', [('MAPT', 'symbole de gène : Microtubule-Associated Protein Tau (protéine tau associée aux microtubules)')], 'Gène MAPT de la protéine tau',
+              'Gène de la protéine tau ; l’homozygotie pour son haplotype H1 est le principal facteur de risque génétique de la PSP et de la DCB.', None)
 add_if_absent('MDS', [('M', 'Movement'), ('D', 'Disorder'), ('S', 'Society')], 'International Parkinson and Movement Disorder Society (Société internationale de la maladie de Parkinson et des troubles du mouvement)',
               'Société savante qui a publié les critères de la PSP (2017) et de l’AMS (2022).', 'g23-ams-criteres')
 add_if_absent('MDS-ES', [('MDS', 'Movement Disorder Society'), ('ES', 'European Section')], 'Section européenne de la Movement Disorder Society',
@@ -129,6 +131,8 @@ add_if_absent('PSP-P', [('PSP', 'Paralysie supranucléaire progressive'), ('P', 
               'Phénotype probable de PSP (O-1 ou O-2 avec A-2 ou A-3).', 'g23-phenotypes-psp')
 add_if_absent('PSP-PGF', [('PSP', 'Paralysie supranucléaire progressive'), ('PGF', 'Progressive Gait Freezing (freezing progressif de la marche)')], 'Phénotype PSP à freezing progressif de la marche',
               'Phénotype de PSP (O-1 ou O-2 avec A-1).', 'g23-phenotypes-psp')
+add_if_absent('PSP-PI', [('PSP', 'Paralysie supranucléaire progressive'), ('PI', 'Postural Instability (instabilité posturale)')], 'Phénotype PSP à prédominance d’instabilité posturale',
+              'Phénotype de PSP retenu au niveau « évocateur » des critères MDS 2017 (P-1 ou P-2 isolés).', 'g23-phenotypes-psp')
 add_if_absent('PSP-QoL', [('PSP', 'Paralysie supranucléaire progressive'), ('QoL', 'Quality of Life (qualité de vie)')], 'Échelle de qualité de vie de la PSP',
               'Échelle de suivi de la PSP.', 'g23-phenotypes-psp')
 add_if_absent('PSP-RS', [('PSP', 'Paralysie supranucléaire progressive'), ('RS', 'Richardson’s Syndrome (syndrome de Richardson)')], 'Phénotype PSP de Richardson',
