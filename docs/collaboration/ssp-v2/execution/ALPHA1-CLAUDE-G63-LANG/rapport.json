@@ -1,0 +1,552 @@
+{
+ "mission": "ALPHA1-CLAUDE-G63-LANG",
+ "code": "G63",
+ "type_audit": "linguistique",
+ "base_sha": "32416a20",
+ "generation": 1,
+ "branche": "claude/alpha1/g63-lang-g1",
+ "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-G63-LANG-g1",
+ "conversation": "alpha1-claude-g63-lang",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "note_base": "Le manifeste porte source_snapshot_sha d1a488ad4f0031d7f2a4b47a0721e89a93475d77 ; la tête du worktree est 32416a20 (consigne). Les sept fichiers sont identiques au manifeste, empreintes SHA-256 à l’appui.",
+ "date_debut": null,
+ "note_date_debut": "Heure de début non relevée au démarrage (la consigne d’horodatage est arrivée en cours de mission) ; aucune valeur n’est inventée.",
+ "date_fin": "2026-10-16T06:05:01Z",
+ "lecture": {
+  "fichiers": [
+   {
+    "fichier": "chapters/G63/G63_a.html",
+    "sha256": "82947f41b70256a0116f4ed9d27fcc38b17ae8ae0eecd6b7e50f69566298b399",
+    "conforme_au_manifeste": true,
+    "octets": 25980
+   },
+   {
+    "fichier": "chapters/G63/G63_b.html",
+    "sha256": "0764b4e3f495f3773b981371bab52f547c2b21ce727d1e10839571b1395f8c4c",
+    "conforme_au_manifeste": true,
+    "octets": 32009
+   },
+   {
+    "fichier": "chapters/G63/G63_c.html",
+    "sha256": "1721d42e03ee2466d639da5ce5d2fc1bb43db49c84d0c56d7ab483dcb1c717c1",
+    "conforme_au_manifeste": true,
+    "octets": 33882
+   },
+   {
+    "fichier": "chapters/G63/G63_d.html",
+    "sha256": "9455938e0c123895aae03c84d14fc3ab88b2356af6a6856b5d499cc7c5655ad9",
+    "conforme_au_manifeste": true,
+    "octets": 12085
+   },
+   {
+    "fichier": "chapters/G63/G63_pop1.html",
+    "sha256": "72f33f6f6bebb81829c6859326fc7574530c342c06061a0edea163bc353993b4",
+    "conforme_au_manifeste": true,
+    "octets": 24197
+   },
+   {
+    "fichier": "chapters/G63/G63_pop2.html",
+    "sha256": "d86e6392e8a33720a78693401d262b6f4af43532807af144d1702ea7040ac9c3",
+    "conforme_au_manifeste": true,
+    "octets": 23131
+   },
+   {
+    "fichier": "glossary/g63.py",
+    "sha256": "6ee9cabc547337e28ce806bed53d56ee5e338cbd37fa6aff7dd25139f324d666",
+    "conforme_au_manifeste": true,
+    "octets": 11669
+   }
+  ],
+  "empreintes_conformes": true,
+  "lecture_integrale": "Les sept fichiers ont été lus en entier (onglets a, b, c, d, fenêtres pop1 et pop2, glossaire), ainsi que le protocole, l’addendum, le manifeste et STYLE_REDACTION.md (début). PROMPT_VERITE.md non relu : un audit linguistique ne vérifie pas les faits."
+ },
+ "premiere_verification": {
+  "description": "Recalcul des SHA-256 des sept fichiers de la leçon et comparaison avec .medina/missions/ALPHA1-CLAUDE-G63-LANG.json (source_files_sha256).",
+  "resultat": "sept empreintes conformes",
+  "date": "2026-10-16"
+ },
+ "synthese": {
+  "nombre_propositions": 81,
+  "renvois_medicaux": 45,
+  "constats_transmis_audit_MED": 3,
+  "observations_globales": 6,
+  "differes": [
+   "espaces insécables globales",
+   "alternative « fibrillation atriale/auriculaire »"
+  ],
+  "par_fichier": {
+   "chapters/G63/G63_a.html": 17,
+   "chapters/G63/G63_b.html": 21,
+   "chapters/G63/G63_c.html": 18,
+   "chapters/G63/G63_d.html": 8,
+   "chapters/G63/G63_pop1.html": 5,
+   "chapters/G63/G63_pop2.html": 5,
+   "glossary/g63.py": 7
+  },
+  "renvois_par_fichier": {
+   "chapters/G63/G63_a.html": 15,
+   "chapters/G63/G63_b.html": 11,
+   "chapters/G63/G63_c.html": 9,
+   "chapters/G63/G63_d.html": 7,
+   "chapters/G63/G63_pop1.html": 1,
+   "glossary/g63.py": 2
+  },
+  "par_categorie": {
+   "grammaire": 11,
+   "répétition": 10,
+   "lourdeur": 9,
+   "phrase nominale": 9,
+   "ambiguïté": 8,
+   "lexique": 6,
+   "syntaxe": 5,
+   "anglicisme": 4,
+   "cohérence": 3,
+   "méta-discours": 2,
+   "précision": 2,
+   "ponctuation": 2,
+   "registre": 2,
+   "cohérence terminologique": 2,
+   "contresens": 2,
+   "calque": 1,
+   "unités": 1,
+   "nombres": 1,
+   "intitulé": 1
+  }
+ },
+ "verification_mecanique": {
+  "script": "verification_unicite.py",
+  "regle": "chaque champ « ancien » apparaît exactement une fois dans le fichier cible (comptage de sous-chaînes) ; application sans chevauchement ; les nombres du texte visible sont identiques avant et après, sauf la conversion « deux à trois » en « 2 à 3 » et l’ajout de « mL/min » (OG-05).",
+  "resultat": "81/81 propositions à ancien unique ; aucun chevauchement"
+ },
+ "constats": [
+  {
+   "id": "G63-LANG-RM-01",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "Quelle que soit la maladie de base, ce sont d’abord les axones les plus longs qui souffrent.",
+   "type": "généralisation contredite",
+   "constat": "Énoncé universel (« quelle que soit la maladie de base ») contredit par la section 3.5 (neuronopathie paranéoplasique, déficit non dépendant de la longueur). Reformuler change la portée médicale : décision de l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-02",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "Deux faits d’examen s’y rattachent : les réflexes achilléens disparaissent tôt, et la faiblesse des pieds n’apparaît que tardivement.",
+   "type": "causalité et chronologie",
+   "constat": "« s’y rattachent » crée un lien causal entre la dégénérescence dépendante de la longueur et le moment d’apparition des signes. La chronologie (« tôt », « tardivement ») et le lien doivent être confirmés par la source (Feldman 2019). Reprise en c (Anatomie) : « C’est la même logique qui explique que… ».",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-03",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "L’hypothèse de l’insulinorésistance neuronale explique le moindre bénéfice du contrôle glycémique dans le type 2.",
+   "type": "causalité (hypothèse présentée comme explication)",
+   "constat": "Une hypothèse est présentée comme explication établie. Même énoncé dans la fenêtre g63-diab-meca (« Conséquence thérapeutique »), dans g63-contglyc (« Explication »), dans la section Biochimie (« explique que le contrôle glycémique protège moins ») : à vérifier dans la source, sans transformer l’hypothèse en fait.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-04",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "La séquence clinique en découle.",
+   "type": "causalité et chronologie",
+   "constat": "« en découle » rattache la séquence petites fibres puis grosses fibres puis faiblesse aux voies métaboliques décrites avant ; la source donne-t-elle ce lien et cet ordre ? Figure 1 reprend la chronologie.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-05",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "Plusieurs mécanismes s’additionnent dans la <button class=\"w\" data-k=\"g63-alcool\">",
+   "type": "causalité",
+   "constat": "« s’additionnent » affirme une sommation de mécanismes, alors que la phrase suivante dit que le mécanisme n’est pas résolu (Julian 2019) : formulation à trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-06",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "Le besoin en thiamine croît donc avec l’apport glucidique.",
+   "type": "inférence causale",
+   "constat": "« donc » : conclusion tirée de la donnée « 0,4 mg pour 4200 kJ » ; reprise dans g63-thiamine (Raison) et Physiologie. Inférence arithmétique de l’auteur, non attribuée à la monographie.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-07",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "une carence nutritionnelle met des années à apparaître",
+   "type": "chronologie",
+   "constat": "Délai d’installation (« des années ») déduit des réserves de B12 ; la monographie Vitarubine Dépôt le donne-t-elle ? Reprise dans Physiologie et g63-b12 (« met donc des années »).",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-08",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "Comme le diabète est fréquent, il coexiste souvent avec une polyneuropathie d’une autre origine",
+   "type": "fréquence et causalité",
+   "constat": "Fréquence (« souvent ») et lien causal (« comme… ») ajoutés : la source établit-elle que la coexistence est fréquente ? La phrase suivante (« La coexistence n’établit pas la causalité ») est, elle, une règle de prudence.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-09",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "Deuxièmement, les fréquences varient d’une étude à l’autre parce que la définition diffère",
+   "type": "causalité",
+   "constat": "« parce que » donne la cause de la variabilité des fréquences. L’explication par la définition (examen clinique, neurographie, questionnaire) est-elle dans Sommer 2018 ou Julian 2019, ou est-ce une inférence du cours ?",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-10",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "La rétinopathie et la néphropathie témoignent d’une microangiopathie, un des mécanismes de l’atteinte nerveuse",
+   "type": "causalité",
+   "constat": "Lien causal rétinopathie, néphropathie, microangiopathie, atteinte nerveuse affirmé en une phrase ; reprise dans Histologie (« rend cohérent que… »). À confirmer dans Feldman 2019.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-11",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "<td>Dont la neuropathie urémique (N18.-†)</td>",
+   "type": "codage",
+   "constat": "La maladie de base de G63.8* est l’insuffisance rénale chronique (N18.-†), non la neuropathie urémique, qui est la manifestation. Corriger l’intitulé est un choix de fond (la fenêtre g63-croix écrit d’ailleurs « le code primaire relève de N18.-† »).",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-12",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "huit sous-rubriques, huit maladies de base sans lien entre elles",
+   "type": "chiffre et assertion",
+   "constat": "« huit maladies de base » est un décompte approximatif (G63.1 couvre C00–D48, G63.8 « autres maladies ») ; « sans lien entre elles » est une assertion. À reformuler seulement après vérification.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-13",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "<td>Vasculite ; syndrome de Sjögren (1,3 % de la cohorte des petites fibres) ; sarcoïdose (3,0 %) ; maladie cœliaque (0,5 %)</td>",
+   "type": "codage",
+   "constat": "Le tableau classe sous G63.5* (M30–M35†) la sarcoïdose et la maladie cœliaque, qui ne relèvent pas des affections disséminées du tissu conjonctif de la CIM-10-GM citée plus haut.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-14",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "environ 40 % des patients gardent une douleur chronique",
+   "type": "référent",
+   "constat": "« des patients » : quels patients (traités par platines ? ayant un coasting ?) ; le dénominateur n’est pas nommé. Même phrase dans la fenêtre g63-chimio.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-15",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "aucune source clinique n’a été lue ; il en va de même pour l’hypothyroïdie",
+   "type": "incohérence de codage",
+   "constat": "« infection par le virus de l’immunodéficience humaine » est citée comme maladie « citée par la classification », alors que le tableau de G63.0* ne la contient pas (il cite mononucléose, oreillons, tuberculose, que ce passage omet).",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-16",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "Parmi les signes vitaux, une hypotension orthostatique ou une tachycardie de repos signent une atteinte autonomique",
+   "type": "certitude",
+   "constat": "« signent » affirme un lien diagnostique plus fort que « orientent vers ». Choix du degré de certitude : audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-17",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "pieds nus des deux côtés, avec les chaussures habituelles du patient.",
+   "type": "ambiguïté clinique",
+   "constat": "« pieds nus… avec les chaussures habituelles » : examiner les pieds nus et inspecter les chaussures, ou examiner avec les chaussures ? La source (QualiCCare) doit trancher.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-18",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "le patient ne sent plus la blessure et ne la protège pas",
+   "type": "causalité",
+   "constat": "Mécanisme (insensibilité, absence de protection, ulcère) formulé par le cours ; à rattacher à QualiCCare ou à le signaler comme explication pédagogique.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-19",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "Les <button class=\"w\" data-k=\"g63-labo\">examens de laboratoire de base et étendus (liste et indications)</button> comprennent",
+   "type": "incohérence interne",
+   "constat": "La liste qui suit est celle du bilan de base seul ; le « bilan étendu » est ensuite défini autrement (B12, thyroïde, immunofixation, LCR, IRM, génétique, biopsie) que dans la section e-3 et la fenêtre g63-labo (holotranscobalamine, vitamines B1/B6/E, ANCA, etc.).",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-20",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "la définition exige un phénotype compatible, un anticorps et un cancer, selon le score PNS-Care",
+   "type": "exigence diagnostique",
+   "constat": "Le score est additif (définitif à partir de 8) : « exige un anticorps et un cancer » est plus restrictif que le score décrit dans la fenêtre g63-pnscare.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-21",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "Cet ordre n’est pas arbitraire : seul le traitement de la cause peut modifier l’évolution du nerf",
+   "type": "causalité absolue",
+   "constat": "« seul » : affirmation exclusive, reprise dans p-1 (« ne modifie pas l’évolution du nerf »). Contredit le bénéfice incertain du contrôle glycémique (type 2) et le fait que la substitution vitaminique est parfois incomplète.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-22",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "sont voisins : 6,4 pour les inhibiteurs de la recapture de la sérotonine et de la noradrénaline",
+   "type": "incohérence chiffrée",
+   "constat": "« voisins » regroupe 6,4 à 10,6 (capsaïcine, deuxième ligne) ; la phrase « le choix dépend donc du terrain… non d’un avantage net d’efficacité » est une inférence. Dans p-1 et la clé de la section 9 : « quatre classes de première ligne… 6,4 à 7,7 » alors que les tricycliques n’ont pas de NNT cité.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-23",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "si le patient a moins de 65 ans (homme) ou de 64 ans (femme)",
+   "type": "donnée à vérifier",
+   "constat": "Limite d’âge de la prise en charge par l’assurance-invalidité : source non relue par cet audit et âge de référence pouvant avoir évolué ; formulation « moins de… ou de… » ambiguë. Même énoncé dans g63-pied.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-24",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "le risque de récidive est jusqu’à 36 fois plus élevé après un ulcère",
+   "type": "référent",
+   "constat": "Par rapport à quelle population (diabétiques sans ulcère antérieur ?) ; la comparaison n’est pas nommée. Même énoncé dans g63-pronostic-pied.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-25",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "Les gabapentinoïdes (prégabaline, gabapentine) se règlent sur la clairance de la créatinine",
+   "type": "incohérence interne",
+   "constat": "Le tableau p-2 dit que, pour la prégabaline sous 30 mL/min, « l’information consultée ne prévoit pas l’emploi » : « se règlent » n’est donc vrai que pour une partie des paliers.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-26",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "à dose progressive, choisie selon la clairance de la créatinine.",
+   "type": "ambiguïté",
+   "constat": "« choisie » se rapporte-t-il au médicament, à la dose, ou au choix entre duloxétine et prégabaline ? Le sens médical diffère.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-27",
+   "fichier": "chapters/G63/G63_c.html",
+   "ancre": "les fibres atteintes ne sont pas explorées par la conduction nerveuse standard",
+   "type": "causalité",
+   "constat": "Explication de la normalité de la neurographie dans la neuropathie des petites fibres : inférence ou énoncé de Feldman 2019 ?",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-28",
+   "fichier": "chapters/G63/G63_c.html",
+   "ancre": "Le dépistage de la perte de sensibilité protectrice est le seul examen de cette liste à réaliser systématiquement chez un diabétique de type 2.",
+   "type": "incohérence interne",
+   "constat": "Le tableau e-1 note aussi « Indiqué » pour le laboratoire de base et le premier niveau (anamnèse/examen) : « seul » est contredit.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-29",
+   "fichier": "chapters/G63/G63_c.html",
+   "ancre": "un résultat pathologique manque parfois le risque réel",
+   "type": "logique statistique",
+   "constat": "Une sensibilité inférieure à 100 % signifie qu’un résultat normal (négatif) peut manquer un risque réel ; un résultat pathologique ne « manque » rien. Formulation correcte attendue : « un résultat normal manque parfois le risque réel ». Changement de sens, donc renvoyé.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-30",
+   "fichier": "chapters/G63/G63_c.html",
+   "ancre": "<td>Le contrôle glycémique ne suffit pas à lui seul à exclure une autre cause</td>",
+   "type": "sens incertain",
+   "constat": "Le lien entre « hémoglobine glyquée » et « exclure une autre cause » n’est pas clair (un bon contrôle n’exclut pas une autre cause ? le diabète ne prouve pas la causalité ?).",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-31",
+   "fichier": "chapters/G63/G63_c.html",
+   "ancre": "aux membres inférieurs avant les membres supérieurs",
+   "type": "chronologie",
+   "constat": "« avant » est chronologique ; la section Physiologie écrit « plus aux membres inférieurs qu’aux membres supérieurs » (degré). Les deux ne disent pas la même chose.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-32",
+   "fichier": "chapters/G63/G63_c.html",
+   "ancre": "les sources lues n’en précisent pas les indications chiffrées",
+   "type": "sens incertain",
+   "constat": "« indications chiffrées » : des indications ne se chiffrent pas ; s’agit-il de sensibilité, de spécificité, de seuils ?",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-33",
+   "fichier": "chapters/G63/G63_c.html",
+   "ancre": "Cette réversibilité fonde la restriction potassique, piste évoquée par la revue.",
+   "type": "causalité",
+   "constat": "« fonde » est plus fort que « piste » : la restriction potassique est une piste à étudier (section 9.1). À aligner par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-34",
+   "fichier": "chapters/G63/G63_c.html",
+   "ancre": "dans la neuropathie paranéoplasique, le neurone du ganglion rachidien dorsal est la cible",
+   "type": "terminologie",
+   "constat": "« neuropathie paranéoplasique » (générique) au lieu de « neuronopathie sensitive paranéoplasique » : le choix change l’étendue (polyradiculonévrite paranéoplasique incluse ?).",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-35",
+   "fichier": "chapters/G63/G63_c.html",
+   "ancre": "Les anticorps neuronaux (anti-Hu, CV2/CRMP5, amphiphysine) définissent le risque de cancer",
+   "type": "certitude",
+   "constat": "« définissent » surestime : ils indiquent un risque (haut risque, plus de 70 %).",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-36",
+   "fichier": "chapters/G63/G63_d.html",
+   "ancre": "de bloc ou de trouble du rythme, d’insuffisance coronarienne",
+   "type": "ambiguïté",
+   "constat": "« bloc » seul : bloc de conduction auriculo-ventriculaire, de branche ? Même libellé dans g63-amitriptyline.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-37",
+   "fichier": "chapters/G63/G63_d.html",
+   "ancre": "l’hémoglobine glyquée augmente de 0,3 % à 52 semaines par rapport au placebo",
+   "type": "unité",
+   "constat": "« 0,3 % » : point de pourcentage (absolu) ou variation relative ? Reformuler change le fait. Même énoncé dans g63-duloxetine.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-38",
+   "fichier": "chapters/G63/G63_d.html",
+   "ancre": "il ne nécessite donc pas de dépression associée",
+   "type": "inférence",
+   "constat": "« donc » : l’indépendance de l’effet analgésique n’implique pas, en soi, une indication hors dépression ; l’indication « douleurs neuropathiques » est dans la monographie (à vérifier : statut d’indication).",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-39",
+   "fichier": "chapters/G63/G63_d.html",
+   "ancre": "sans électrocardiogramme ni évaluation du risque",
+   "type": "conduite non sourcée",
+   "constat": "L’électrocardiogramme avant tricyclique n’apparaît pas dans les sources citées dans le cours ; à sourcer ou retirer.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-40",
+   "fichier": "chapters/G63/G63_d.html",
+   "ancre": "Les inhibiteurs de la monoamine oxydase sont contre-indiqués avec la duloxétine et l’amitriptyline.",
+   "type": "précision",
+   "constat": "Plus haut : « inhibiteurs irréversibles » pour la duloxétine, « inhibiteurs » sans précision pour l’amitriptyline ; la clé généralise.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-41",
+   "fichier": "chapters/G63/G63_d.html",
+   "ancre": "Capsaïcine 8 % (Qutenza)</td><td>Jusqu’à 4 patchs</td><td>30 minutes sur les pieds, 60 minutes ailleurs</td>",
+   "type": "structure du tableau",
+   "constat": "La durée d’application figure dans la colonne « Dose cible ou maximale » ; mise en forme du tableau, pas du texte.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-42",
+   "fichier": "chapters/G63/G63_d.html",
+   "ancre": "Amitriptyline (Saroten)</td><td>10 à 25 mg le soir",
+   "type": "redondance",
+   "constat": "« départ à 10 à 25 mg chez le sujet âgé » (colonne 4) répète la dose initiale de l’adulte (colonne 2), de même en section 11 : le sujet âgé n’a pas de dose distincte. Incohérence à trancher.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-43",
+   "fichier": "chapters/G63/G63_pop1.html",
+   "ancre": "Elle survient de façon paradoxale après une correction rapide de la glycémie",
+   "type": "certitude",
+   "constat": "Section 3.2 : « peut apparaître » ; fenêtre : « survient » (absolu). Choix du degré de certitude.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-44",
+   "fichier": "glossary/g63.py",
+   "ancre": "[('ALDH', 'Aldehyde Dehydrogenase (acétaldéhyde déshydrogénase)')",
+   "type": "terminologie",
+   "constat": "Lettre littérale « acétaldéhyde déshydrogénase » alors que le nom complet de l’entrée est « aldéhyde déshydrogénase 2 » : à aligner par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-45",
+   "fichier": "glossary/g63.py",
+   "ancre": "Maladies de base citées : ' + _txt",
+   "type": "gabarit de glossaire",
+   "constat": "Le gabarit « Maladies de base citées : … » reçoit, pour G63.3, G63.6, G63.2, des textes qui ne sont pas des maladies de base (« aucun contenu dans les sources lues », « quatrième position .4 »).",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-HP-01",
+   "fichier": "chapters/G63/G63_c.html",
+   "ancre": "<div class=\"sci-bar ui\" role=\"tablist\">",
+   "type": "sous-onglet Sémiologie absent",
+   "constat": "Hors périmètre linguistique, MAJEUR, transmis à l’audit MED. Décompte réel des attributs data-s de G63_c.html : 4 (g63-s-anat, g63-s-histo, g63-s-physio, g63-s-bioch). Aucun sous-onglet « Sémiologie fondamentale et analytique » n’existe, et le nombre de disciplines réelles est de 4 au lieu de 5 : ni la sixième entrée ni la cinquième discipline n’est présente. Aucune proposition linguistique n’est faite ; ce constat n’est pas un jugement sur le fond.",
+   "statut": "transmis_audit_MED",
+   "gravite": "MAJEUR"
+  },
+  {
+   "id": "G63-LANG-FIG-01",
+   "fichier": "chapters/G63/G63_c.html",
+   "ancre": "Figure 3 — Principe de l’axonopathie dépendante de la longueur.",
+   "type": "ORIGINE_INCONNUE",
+   "gravite": "réserve",
+   "constat": "Les six figures de G63 sont des SVG dessinés dans le fichier : aucune ne comporte de légende de provenance (auteur, outil, source). Les figures 3 (axones de longueurs différentes, figure la plus proche d’une représentation anatomique) et 4 (biopsie cutanée et nerveuse) sont ouvertes en ORIGINE_INCONNUE avec réserve ; les figures 1, 2, 5 et 6 sont des schémas non anatomiques (organigrammes, histogramme). Le contrôle linguistique ne porte que sur le texte des figures et de leurs légendes, pas sur leur provenance ; la vérification de provenance (tools/image_clo_finder.py inventory G63) est transmise à l’audit MED, qui devra aussi contrôler la lisibilité à 390 px (viewBox 640 pour les figures 3 à 5, police de 13 px, soit environ 8 px rendus).",
+   "statut": "transmis_audit_MED"
+  },
+  {
+   "id": "G63-LANG-FIG-02",
+   "fichier": "chapters/G63/G63_c.html",
+   "ancre": "Les hauteurs sont proportionnelles aux valeurs",
+   "type": "cohérence figure et légende",
+   "gravite": "à vérifier par MED",
+   "constat": "La légende de la figure 5 affirme que les hauteurs sont proportionnelles aux valeurs ; le rapport hauteur/valeur calculé d’après le SVG (120, 134, 128 et 188 pour 6,4 ; 7,7 ; 7,2 et 10,6) varie de 17,4 à 18,8 : la proportionnalité n’est qu’approximative. Texte de figure non modifié.",
+   "statut": "transmis_audit_MED"
+  }
+ ],
+ "observations_globales": [
+  {
+   "id": "G63-LANG-OG-01",
+   "sujet": "Espaces insécables (différé)",
+   "detail": "573 occurrences de ponctuation double précédée d’une espace ordinaire (avant ; : ! ?), 10 guillemets « » sans espace insécable, et séparateurs de milliers absents (2700, 3600, 4200, 100 000). Choix différé par la coordination : aucune proposition."
+  },
+  {
+   "id": "G63-LANG-OG-02",
+   "sujet": "Alternative « fibrillation atriale/auriculaire » (différé)",
+   "detail": "Aucune occurrence de « fibrillation » dans les sept fichiers de G63 ; rien à appliquer, choix différé conformément à la consigne."
+  },
+  {
+   "id": "G63-LANG-OG-03",
+   "sujet": "Noms de genre en italique",
+   "detail": "« Borrelia » est écrit en romain dans toute la leçon ; la convention typographique demande l’italique. Non proposé (modification de balisage)."
+  },
+  {
+   "id": "G63-LANG-OG-04",
+   "sujet": "Phrases nominales dans les encadrés « À retenir »",
+   "detail": "Les encadrés clés procèdent par énumération de groupes nominaux (« Reins : adapter… », « Âge et cœur : prudence… »). Choix de style de la leçon ; non modifié pour ne pas affaiblir de consigne clinique."
+  },
+  {
+   "id": "G63-LANG-OG-05",
+   "sujet": "Unités et nombres",
+   "detail": "Les propositions ne changent aucune valeur. Seule conversion : « deux à trois fois » en « 2 à 3 fois » dans l’encadré de piège de l’hydroxocobalamine (G63-LANG-d-05) et ajout de l’unité mL/min à la première tranche de clairance de la gabapentine : les décomptes de chiffres du texte visible passent de 10 à 11 (« 3 ») et de 11 à 12 (« 2 ») dans G63_d.html pour cette seule raison."
+  },
+  {
+   "id": "G63-LANG-OG-06",
+   "sujet": "Abréviations sans clé dans g63.py",
+   "detail": "CDT, TSH, ANCA, HDL, NMDA, VIH, IgM, IgG, ESMO, QualiCCare et AL n’ont pas de clé dans g63.py mais en ont une dans d’autres glossaires du dépôt (recherche textuelle de la clé dans glossary/*.py). La conformité à build_medina.audit() n’a pas été exécutée."
+  }
+ ],
+ "lacunes": [
+  "Aucune source médicale n’a été relue : un audit linguistique ne vérifie pas les faits. Les 45 renvois médicaux sont posés sur la seule lecture du texte, sans avoir ouvert Sommer 2018, Feldman 2019, Julian 2019, Graus 2021, Adams 2016, Arnold 2016, Finnerup 2015, QualiCCare ni les informations professionnelles : « causalité / fréquence / chronologie » signifie « à confirmer dans la source », non « faux ».",
+  "Aucun test en navigateur : l’effet des propositions sur l’affichage n’a pas été mesuré.",
+  "build_medina.audit() n’a pas été exécuté ; la présence d’abréviations sans clé a été contrôlée par recherche textuelle.",
+  "Les choix différés (espaces insécables, fibrillation) ne sont pas traités.",
+  "Les figures n’ont pas été ouvertes en navigateur ; leur texte a été lu dans le SVG.",
+  "Pas de correcteur externe (Antidote, LanguageTool) : lecture intégrale et contrôles mécaniques seulement."
+ ],
+ "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+}
