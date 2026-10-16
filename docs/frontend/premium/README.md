@@ -32,7 +32,7 @@
 
 ## Vérifications
 
-`python3 test_v7.py --static N18 E12` OK ; `python -m unittest discover -s tests` : 737 tests OK ; `verify_fragment_bootstrap`, `verify_fragment_filters`, `verify_category_progress` (23 fragments) OK ; `verify_organisation --targeted` OK ; `tools/front_garde.py` (branche du second agent) : 0 échec sur S04/N18 et S08/G45, axe non exécuté (paquet absent hors ligne).
+`python3 test_v7.py --static N18 E12` OK ; `python -m unittest discover -s tests` : 737 tests OK ; sur la construction complète (portail, 23 fragments, `MEDINA.html`) : `verify_fragment_bootstrap`, `verify_fragment_filters`, `verify_category_progress`, `audit_fragments.py` (dont reproductibilité) et `verify_organisation --targeted` OK ; `tools/front_garde.py` (branche du second agent) : 0 échec sur S04/N18, S08/G45 et S01, axe non exécuté (paquet absent hors ligne) ; 0 erreur JavaScript sur `MEDINA.html`. L’Accueil passe de 691 ko à 244 ko (Anthropic Serif retirée du portail).
 
 ## Corrections des défauts hérités de main
 
@@ -41,8 +41,9 @@
 - Onglets collants : alignés sur `--mdn-top`, sans bande où le texte défile.
 - Accueil : jauges sur un seul niveau, séparées par des filets.
 
-## Réserve
+## Réserves (tests historiques hors workflow Pages, déjà en échec sur main)
 
+- `tests/verify_categories.cjs` cherche `.mcg-lesson-rank`, absent du balisage actuel des leçons ; les contrôles de couleurs distinctes et de contraste des cartes, en amont, passent.
 - `tests/verify_fragment_frontends.cjs` attend 23 liens `fragments/` sur l’Accueil ; main en publie déjà 92 (jauges cliquables) : échec antérieur à cette branche, hors du workflow Pages.
 
 ## Recommandations
