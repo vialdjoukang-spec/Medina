@@ -1,6 +1,8 @@
 # Audit médical Alpha, tour 1 — G63, Polynévrite au cours de maladies classées ailleurs (S08)
 
-Mission `ALPHA1-CLAUDE-G63-MED` · branche `claude/alpha1/g63-med-g1` · base `32416a20` · génération 1 · du 2026-10-16T05:51:52Z au 2026-10-16T06:07:40Z. Effort et modèle conformes au manifeste.
+Mission `ALPHA1-CLAUDE-G63-MED` · branche `claude/alpha1/g63-med-g1` · base de mission `d1a488ad` (manifeste) · worktree créé sur `32416a20` · génération 1 · du 2026-10-16T05:51:52Z au 2026-10-16T06:12:06Z. Effort et modèle conformes au manifeste.
+
+START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste. Horodatages UTC relevés par `date -u` ; la fin est relevée juste avant le commit de traçabilité.
 
 > Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée.
 
@@ -8,7 +10,7 @@ Mission `ALPHA1-CLAUDE-G63-MED` · branche `claude/alpha1/g63-med-g1` · base `3
 
 La leçon G63 est solide sur sa charpente : classification clinique, chiffres de Sommer et coll., règles suisses du pied diabétique, doses des informations professionnelles. L’audit relève **0 constat bloquant, 11 majeurs, 13 mineurs et 6 enrichissements**. Aucune dose dangereuse n’a été démontrée. Les défauts majeurs portent sur quatre points.
 
-1. **La sémiologie manque** : aucune discipline « Sémiologie fondamentale et analytique », et l’onglet Sciences ne compte que quatre disciplines réelles (C01, C02).
+1. **La sémiologie manque — constat MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md)** : aucune discipline « Sémiologie fondamentale et analytique », et l’onglet Sciences ne compte que quatre disciplines réelles (C01, C02).
 2. **Le périmètre CIM est faux pour deux causes majeures** : la neuropathie alcoolique se code G62.1 et la neuropathie médicamenteuse, dont celle de la chimiothérapie, G62.0, non G63.4* ni G63.1* (C03).
 3. **La douleur neuropathique repose sur une stratégie dépassée et un chiffre incomplet** : NeuPSIG a révisé ses lignes en 2025 (tramadol relégué en troisième ligne) et les tricycliques ont un NNT plus bas que les autres classes, contrairement à l’« efficacité comparable » affirmée (C04, C05, C11).
 4. **La sécurité médicamenteuse est incomplète face au patient type** : contre-indications de la duloxétine (inhibiteurs du CYP1A2, hypertension non équilibrée), prégabaline exclue sous 30 mL/min, mésusage des gabapentinoïdes chez le patient alcoolique, dose et ordre de la thiamine dans l’encéphalopathie de Wernicke (C06 à C09). S’y ajoute un délai de dépistage du type 1 tiré d’une recommandation nord-américaine (C10).
@@ -21,7 +23,7 @@ Aucun.
 
 ## Constats majeurs (11)
 
-**C01 — `chapters/G63/G63_c.html`.** Sémiologie absente de l’onglet Sciences : aucune discipline « Sémiologie fondamentale et analytique » (bouton data-s="g63-s-semio" en tête de .sci-bar). Les éléments sémiologiques existent seulement de façon descriptive dans g63-5 et g63-6 (tableau des fibres, signe clé, monofilament, diapason) : pas de mécanisme par signe, pas de valeur chiffrée hors prédiction de l’ulcère, pas de tableau des syndromes, pas d’examen systématique en étapes, pas de cas corrigés consacrés aux signes. SEM-01, SEM-02, SEM-13 et SEM-19 à « non ».  
+**C01 — `chapters/G63/G63_c.html` (bloquant pour la clôture).** Sémiologie absente de l’onglet Sciences : aucune discipline « Sémiologie fondamentale et analytique » (bouton data-s="g63-s-semio" en tête de .sci-bar). Les éléments sémiologiques existent seulement de façon descriptive dans g63-5 et g63-6 (tableau des fibres, signe clé, monofilament, diapason) : pas de mécanisme par signe, pas de valeur chiffrée hors prédiction de l’ulcère, pas de tableau des syndromes, pas d’examen systématique en étapes, pas de cas corrigés consacrés aux signes. SEM-01, SEM-02, SEM-13 et SEM-19 à « non ».  
 *Preuve :* [S1] tableau 1 (symptômes, signes) ; [S4] notes (5) et (6) ; [S14] résumé.  
 *Proposition :* Insérer la discipline complète de propositions/G63_c_1.html (sept îlots g63-sm-1 à g63-sm-7, figure S1, trois cas corrigés) et les fenêtres de propositions/G63_pop3_1.html dans un nouveau G63_pop3.html.
 
@@ -172,7 +174,7 @@ Aucun.
 
 ## 21 — Sémiologie fondamentale et analytique
 
-**Statut : absente** (constat C01, MAJEUR). La sémiologie fondamentale est **partielle** : elle se limite à g63-5 (tableau des familles de fibres), g63-6 (signe clé, monofilament, diapason), g63-signes, g63-mono, g63-diapason. Il manque : mécanisme causal par signe, valeur chiffrée hors prédiction de l’ulcère, réflexe achilléen isolé et sa limite, réflexes vifs et signes pyramidaux de la myéloneuropathie, pouls du pied et leur valeur. La sémiologie analytique est **absente** ; il manque : tableau des syndromes, raisonnement en cinq étapes, examen systématique numéroté, synthèse présentée, trois cas corrigés sur les signes.
+**Statut : absente** (constat C01, MAJEUR, bloquant pour la clôture du cours et du lot, AGENTS.md). La sémiologie fondamentale est **partielle** : elle se limite à g63-5 (tableau des familles de fibres), g63-6 (signe clé, monofilament, diapason), g63-signes, g63-mono, g63-diapason. Il manque : mécanisme causal par signe, valeur chiffrée hors prédiction de l’ulcère, réflexe achilléen isolé et sa limite, réflexes vifs et signes pyramidaux de la myéloneuropathie, pouls du pied et leur valeur. La sémiologie analytique est **absente** ; il manque : tableau des syndromes, raisonnement en cinq étapes, examen systématique numéroté, synthèse présentée, trois cas corrigés sur les signes.
 
 La proposition `propositions/G63_c_1.html` rédige la discipline complète en sept îlots, selon la structure du § 4 b : priorité clinique (Guillain-Barré, Wernicke, pied urgent), tableau des symptômes avec mécanisme et valeur, signes physiques (monofilament, diapason, achilléen, pouls, signes pyramidaux), tableau de sept syndromes, raisonnement en cinq étapes, examen systématique en onze étapes avec présentation type, trois cas corrigés. Les fenêtres des nouveaux mots verts sont dans `propositions/G63_pop3_1.html`. Chaque valeur absente des sources est écrite comme telle.
 
@@ -302,7 +304,7 @@ L’inventaire `tools/image_clo_finder.py inventory G63` trouve six figures, tou
 | Catégories traitées | G63.0* à G63.8* ; frontière G62.0, G62.1, G62.2 |
 | Fichiers audités | 7, empreintes conformes |
 | Constats | 0 bloquant · 11 majeurs · 13 mineurs · 6 enrichissements |
-| Sémiologie (rubrique 21) | absente → proposition complète en 7 îlots |
+| Sémiologie (rubrique 21) | absente : MAJEUR bloquant la clôture du cours et du lot ; proposition complète en 7 îlots |
 | Disciplines des sciences | 4 réelles → proposition Immunologie (5e) |
 | Figures | 6 schémas non anatomiques ; 3 illisibles à 390 px |
 | Sources lues | 25 (8 FI suisses datées et 1 liste AmiKo, 4 documents suisses, 12 européens ou internationaux) |

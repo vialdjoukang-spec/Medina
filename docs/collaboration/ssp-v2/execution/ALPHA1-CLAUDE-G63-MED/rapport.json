@@ -2,7 +2,9 @@
  "mission": "ALPHA1-CLAUDE-G63-MED",
  "code": "G63",
  "type_audit": "medical",
- "base_sha": "32416a2080e67537641040a81252dec0b3e6d137",
+ "base_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "worktree_base": "32416a2080e67537641040a81252dec0b3e6d137",
+ "worktree_base_note": "START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste.",
  "source_snapshot_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
  "generation": 1,
  "branche": "claude/alpha1/g63-med-g1",
@@ -11,7 +13,7 @@
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
  "date_debut": "2026-10-16T05:51:52Z",
- "date_fin": "2026-10-16T06:07:40Z",
+ "date_fin": "2026-10-16T06:12:06Z",
  "lecture": {
   "fichiers": [
    "chapters/G63/G63_a.html",
@@ -79,7 +81,7 @@
    "gravite": "MAJEUR",
    "fichier": "chapters/G63/G63_c.html",
    "ancre": "<div class=\"sci-bar ui\" role=\"tablist\"><button role=\"tab\" aria-selected=\"true\" aria-controls=\"g63-s-anat\" data-s=\"g63-s-anat\">",
-   "constat": "Sémiologie absente de l’onglet Sciences : aucune discipline « Sémiologie fondamentale et analytique » (bouton data-s=\"g63-s-semio\" en tête de .sci-bar). Les éléments sémiologiques existent seulement de façon descriptive dans g63-5 et g63-6 (tableau des fibres, signe clé, monofilament, diapason) : pas de mécanisme par signe, pas de valeur chiffrée hors prédiction de l’ulcère, pas de tableau des syndromes, pas d’examen systématique en étapes, pas de cas corrigés consacrés aux signes. SEM-01, SEM-02, SEM-13 et SEM-19 à « non ».",
+   "constat": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md) : le sixième sous-onglet « Sémiologie fondamentale et analytique » est absent. Sémiologie absente de l’onglet Sciences : aucune discipline « Sémiologie fondamentale et analytique » (bouton data-s=\"g63-s-semio\" en tête de .sci-bar). Les éléments sémiologiques existent seulement de façon descriptive dans g63-5 et g63-6 (tableau des fibres, signe clé, monofilament, diapason) : pas de mécanisme par signe, pas de valeur chiffrée hors prédiction de l’ulcère, pas de tableau des syndromes, pas d’examen systématique en étapes, pas de cas corrigés consacrés aux signes. SEM-01, SEM-02, SEM-13 et SEM-19 à « non ».",
    "preuve": [
     {
      "source_id": "S1",
@@ -99,7 +101,8 @@
    ],
    "proposition": "Insérer la discipline complète de propositions/G63_c_1.html (sept îlots g63-sm-1 à g63-sm-7, figure S1, trois cas corrigés) et les fenêtres de propositions/G63_pop3_1.html dans un nouveau G63_pop3.html.",
    "justification": "Mécanisme : chaque signe traduit la fonction d’une famille de fibres et le motif dépendant de la longueur. Conséquence : sans cette discipline, le lecteur ne sait ni pourquoi un signe apparaît, ni ce qu’il vaut, ni ce qui rompt le motif. Décision : ajouter la discipline exigée par Vial (option A, décision du 15.10.2026).",
-   "ancre_occurrences": 1
+   "ancre_occurrences": 1,
+   "bloquant_cloture": true
   },
   {
    "id": "C02",
@@ -808,7 +811,7 @@
  "semiologie": {
   "statut": "absente",
   "constat": "C01",
-  "gravite": "MAJEUR",
+  "gravite": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md)",
   "fondamentale": {
    "statut": "partielle",
    "ancres": [
@@ -887,7 +890,8 @@
    "Technique du réflexe achilléen et du testing de la force non décrites dans les sources lues.",
    "Seuil de l’hypotension orthostatique : consensus de 2011 (Freeman et coll.) sans résumé accessible ; seuil non écrit.",
    "Sensibilité et spécificité des symptômes (brûlure, engourdissement, ataxie) non chiffrées dans les sources lues."
-  ]
+  ],
+  "bloquant_cloture": true
  },
  "figures": {
   "outil": "tools/image_clo_finder.py inventory G63 puis mesure Chromium à 390 px (scratchpad fig390.py)",
@@ -996,5 +1000,6 @@
   "propositions/G63_d_2.html",
   "propositions/G63_pop3_1.html"
  ],
- "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée",
+ "horodatage_note": "date_debut relevée par date -u au début de la recherche ; date_fin relevée par date -u juste avant le commit de traçabilité (UTC)."
 }
