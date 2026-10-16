@@ -1,0 +1,447 @@
+{
+ "mission": "ALPHA77-CLAUDE-G71-INTEGRATE",
+ "phase": 1,
+ "agent": "W",
+ "code": "G71",
+ "date": "2026-10-16",
+ "base": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "controles": {
+  "test_v7_static": {
+   "commande": "python3 test_v7.py --static G71",
+   "resultat": "OK",
+   "detail": "G71 mots 25301 fenêtres 78 quiz 10 pareto 20\nOK"
+  },
+  "build_medina_audit": {
+   "resultat": "{} (appelé par test_v7 --static ; abréviations couvertes)"
+  },
+  "audit_sciences": {
+   "commande": "python3 tests/audit_sciences.py --base 523832d9ef6097607d3443f4398deee9cd0add11 --codes G71",
+   "resultat": "failed",
+   "erreurs": [
+    "G71/g71-s-anat: aucune figure"
+   ],
+   "totaux": {
+    "before": {
+     "words": 1185,
+     "figures": 5,
+     "disciplines": 5
+    },
+    "after": {
+     "words": 5143,
+     "figures": 5,
+     "disciplines": 6
+    }
+   },
+   "lecture": "Seule erreur : g71-s-anat sans figure, conséquence directe du retrait de la figure 2 ANATOMIQUE_IA sans remplacement (décision de Vial). Aucun SVG factice ajouté. g71-s-semio, g71-s-histo, g71-s-physio, g71-s-bioch et g71-s-gen satisfont au contrôle (≥ 280 mots, figure accessible, quatre libellés).",
+   "mots_par_discipline": {
+    "g71-s-semio": 3372,
+    "g71-s-anat": 353,
+    "g71-s-histo": 350,
+    "g71-s-physio": 350,
+    "g71-s-bioch": 314,
+    "g71-s-gen": 391
+   }
+  },
+  "validateur_semiologique": {
+   "commande": "réplique de la partie structurelle de starter_codex.semiology (HTMLTree de tools/starter_codex.py) sur les fichiers finaux",
+   "resultat": "passed",
+   "detail": {
+    "premier sous-onglet sélectionné": true,
+    "panneau unique dans pS": true,
+    "panneau visible": true,
+    "titre du premier îlot": true,
+    "neuf sections non vides": true,
+    "sources liées https": true,
+    "marqueur clinique dans pA": true,
+    "six data-s": true
+   },
+   "limite": "La partie preuve (rapport SEMIO de l’Agent P, empreintes) relève de la revue finale."
+  },
+  "fenetres": {
+   "resultat": "passed",
+   "detail": "78 clés data-k, 78 fenêtres résolues dans le rendu, aucune « Fiche absente », aucun lien orphelin, aucun identifiant ni gabarit dupliqué"
+  },
+  "construction": {
+   "commande": "MEDINA_OUT=<scratchpad>/dist8 python3 build_front.py --fragment S08",
+   "hors_depot": true
+  },
+  "rendu_chromium": {
+   "navigateur": "/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
+   "url": "file://…/MEDINA_S08_nerveux.html#/entry/G71",
+   "fenetres_videos": [
+    "1440 × 1000",
+    "390 × 844"
+   ],
+   "resultat": "passed",
+   "controles": {
+    "bureau.cours_affiche": {
+     "ok": true
+    },
+    "bureau.bloc_clinique_present": {
+     "ok": true
+    },
+    "bureau.bloc_clinique_visible": {
+     "ok": true
+    },
+    "bureau.fenetre_g71-sm-faiblesse": {
+     "ok": true,
+     "detail": "Faiblesse musculaire : topographie et cotation\nFermer ✕\nDÉ­FI­NI­TION\n\nLa fai­blesse est une di­mi­nu­tion de la force mus­cu­laire, me­su­r"
+    },
+    "bureau.premier_bouton_semio": {
+     "ok": true,
+     "detail": "Sémiologie fondamentale et analytique"
+    },
+    "bureau.aria_selected": {
+     "ok": true,
+     "detail": [
+      [
+       "g71-s-semio",
+       "true"
+      ],
+      [
+       "g71-s-anat",
+       "false"
+      ],
+      [
+       "g71-s-histo",
+       "false"
+      ],
+      [
+       "g71-s-physio",
+       "false"
+      ],
+      [
+       "g71-s-bioch",
+       "false"
+      ],
+      [
+       "g71-s-gen",
+       "false"
+      ]
+     ]
+    },
+    "bureau.semio_visible_seule": {
+     "ok": true,
+     "detail": [
+      [
+       "g71-s-semio",
+       false
+      ],
+      [
+       "g71-s-anat",
+       true
+      ],
+      [
+       "g71-s-histo",
+       true
+      ],
+      [
+       "g71-s-physio",
+       true
+      ],
+      [
+       "g71-s-bioch",
+       true
+      ],
+      [
+       "g71-s-gen",
+       true
+      ]
+     ]
+    },
+    "bureau.six_disciplines": {
+     "ok": true,
+     "detail": 6
+    },
+    "bureau.titre_exact": {
+     "ok": true,
+     "detail": "Pour la leçon : quelle est la sémiologie fondamentale et analytique ?"
+    },
+    "bureau.neuf_sections": {
+     "ok": true,
+     "detail": [
+      "normal",
+      "signs",
+      "mechanisms",
+      "examination",
+      "interpretation",
+      "differentials",
+      "urgency",
+      "limits",
+      "sources"
+     ]
+    },
+    "bureau.figure_semio_lisible": {
+     "ok": true,
+     "detail": {
+      "largeur": 717.0625,
+      "police_px": 31.869444444444444
+     }
+    },
+    "bureau.figure_semio_sans_debord": {
+     "ok": true,
+     "detail": [
+      "144..216/360",
+      "75..285/360",
+      "93..267/360",
+      "135..225/360",
+      "124..236/360",
+      "86..274/360",
+      "124..236/360",
+      "105..255/360",
+      "93..267/360",
+      "137..223/360"
+     ]
+    },
+    "bureau.figure6_lisible": {
+     "ok": true,
+     "detail": {
+      "largeur": 717.0625,
+      "seuils_px": 43.82048611111111,
+      "legende_px": 31.869444444444444
+     }
+    },
+    "bureau.figure6_sans_debord": {
+     "ok": true,
+     "detail": [
+      "107..133/360",
+      "226..254/360",
+      "70..290/360",
+      "68..292/360",
+      "52..308/360"
+     ]
+    },
+    "bureau.figure2_retiree": {
+     "ok": true,
+     "detail": 0
+    },
+    "bureau.figure5_lisible": {
+     "ok": true,
+     "detail": {
+      "largeur": 717.0625,
+      "texte_px": 31.869444444444444
+     }
+    },
+    "bureau.figure5_sans_debord": {
+     "ok": true,
+     "detail": [
+      "139..221/360",
+      "136..224/360",
+      "133..227/360",
+      "134..226/360",
+      "138..222/360",
+      "83..277/360",
+      "109..251/360",
+      "105..255/360"
+     ]
+    },
+    "bureau.erreurs_js": {
+     "ok": true,
+     "detail": []
+    },
+    "mobile390.cours_affiche": {
+     "ok": true
+    },
+    "mobile390.bloc_clinique_present": {
+     "ok": true
+    },
+    "mobile390.bloc_clinique_visible": {
+     "ok": true
+    },
+    "mobile390.fenetre_g71-sm-faiblesse": {
+     "ok": true,
+     "detail": "Faiblesse musculaire : topographie et cotation\nFermer ✕\nDÉ­FI­NI­TION\n\nLa fai­blesse est une di­mi­nu­tion de la force mus­cu­laire, me­su­r"
+    },
+    "mobile390.premier_bouton_semio": {
+     "ok": true,
+     "detail": "Sémiologie fondamentale et analytique"
+    },
+    "mobile390.aria_selected": {
+     "ok": true,
+     "detail": [
+      [
+       "g71-s-semio",
+       "true"
+      ],
+      [
+       "g71-s-anat",
+       "false"
+      ],
+      [
+       "g71-s-histo",
+       "false"
+      ],
+      [
+       "g71-s-physio",
+       "false"
+      ],
+      [
+       "g71-s-bioch",
+       "false"
+      ],
+      [
+       "g71-s-gen",
+       "false"
+      ]
+     ]
+    },
+    "mobile390.semio_visible_seule": {
+     "ok": true,
+     "detail": [
+      [
+       "g71-s-semio",
+       false
+      ],
+      [
+       "g71-s-anat",
+       true
+      ],
+      [
+       "g71-s-histo",
+       true
+      ],
+      [
+       "g71-s-physio",
+       true
+      ],
+      [
+       "g71-s-bioch",
+       true
+      ],
+      [
+       "g71-s-gen",
+       true
+      ]
+     ]
+    },
+    "mobile390.six_disciplines": {
+     "ok": true,
+     "detail": 6
+    },
+    "mobile390.titre_exact": {
+     "ok": true,
+     "detail": "Pour la leçon : quelle est la sémiologie fondamentale et analytique ?"
+    },
+    "mobile390.neuf_sections": {
+     "ok": true,
+     "detail": [
+      "normal",
+      "signs",
+      "mechanisms",
+      "examination",
+      "interpretation",
+      "differentials",
+      "urgency",
+      "limits",
+      "sources"
+     ]
+    },
+    "mobile390.figure_semio_lisible": {
+     "ok": true,
+     "detail": {
+      "largeur": 295.984375,
+      "police_px": 13.154861111111112
+     }
+    },
+    "mobile390.figure_semio_sans_debord": {
+     "ok": true,
+     "detail": [
+      "144..216/360",
+      "75..285/360",
+      "93..267/360",
+      "135..225/360",
+      "124..237/360",
+      "86..274/360",
+      "124..236/360",
+      "105..256/360",
+      "94..267/360",
+      "138..222/360"
+     ]
+    },
+    "mobile390.figure6_lisible": {
+     "ok": true,
+     "detail": {
+      "largeur": 295.984375,
+      "seuils_px": 18.087934027777777,
+      "legende_px": 13.154861111111112
+     }
+    },
+    "mobile390.figure6_sans_debord": {
+     "ok": true,
+     "detail": [
+      "107..133/360",
+      "226..254/360",
+      "70..290/360",
+      "68..292/360",
+      "52..308/360"
+     ]
+    },
+    "mobile390.figure2_retiree": {
+     "ok": true,
+     "detail": 0
+    },
+    "mobile390.figure5_lisible": {
+     "ok": true,
+     "detail": {
+      "largeur": 295.984375,
+      "texte_px": 13.154861111111112
+     }
+    },
+    "mobile390.figure5_sans_debord": {
+     "ok": true,
+     "detail": [
+      "139..221/360",
+      "136..224/360",
+      "133..227/360",
+      "134..227/360",
+      "138..222/360",
+      "83..277/360",
+      "110..250/360",
+      "105..255/360"
+     ]
+    },
+    "mobile390.erreurs_js": {
+     "ok": true,
+     "detail": []
+    },
+    "fenetres.toutes_presentes": {
+     "ok": true,
+     "detail": {
+      "cles": 78,
+      "resolues": 78,
+      "absentes": []
+     }
+    },
+    "fenetres.aucune_fiche_absente": {
+     "ok": true
+    }
+   }
+  },
+  "captures": [
+   "G71_01_ouverture_bureau.png",
+   "G71_02_bloc_clinique_bureau.png",
+   "G71_03_fenetre_semiologie_bureau.png",
+   "G71_04_sous_onglet_semiologie_bureau.png",
+   "G71_05_schema_semiologie_bureau.png",
+   "G71_06_figure6_bureau.png",
+   "G71_07_figure5_bureau.png",
+   "G71_08_ouverture_mobile390.png",
+   "G71_09_bloc_clinique_mobile390.png",
+   "G71_10_fenetre_semiologie_mobile390.png",
+   "G71_11_sous_onglet_semiologie_mobile390.png",
+   "G71_12_schema_semiologie_mobile390.png",
+   "G71_13_figure6_mobile390.png",
+   "G71_14_figure5_mobile390.png"
+  ]
+ },
+ "empreintes_sha256": {
+  "chapters/G71/G71_a.html": "59bf1bfa17cc62897efd88cdb9a4aa017ddbeac461c5b23228eb730129259ad7",
+  "chapters/G71/G71_b.html": "e2c318f6ae35e9138b5bf16d6998ead5061c526e8e5fd36caa233b5f43d4e816",
+  "chapters/G71/G71_c.html": "9ebbe077908977991768c93bda4d6d53f2224f8bfb24cad95415cef443869db0",
+  "chapters/G71/G71_d.html": "7256447244399e608e40609aad959ccf3aecba06bef3ac127cf1cbcbd4c28e8b",
+  "chapters/G71/G71_pop1.html": "b477048cc9c6d8ad3c5cb706921bf5199361bb03355d126a7fce7c09853c31f8",
+  "chapters/G71/G71_pop2.html": "1971e4904f7cfb6fbf97efa72a0e7e8cd6d812eca0f418877cf2bab8b73a6333",
+  "glossary/g71.py": "97b6c3a63329cfea433f537ffc8d8587e7db4d59a16912f4b92aab95b47b6a87"
+ },
+ "mention": "Contrôles techniques ; ils ne certifient ni l’exactitude médicale ni une validation par un médecin."
+}

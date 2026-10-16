@@ -1,0 +1,87 @@
+{
+ "actor": "Claude",
+ "code": "G71",
+ "kind": "LANG",
+ "mission": "ALPHA77-CLAUDE-G71-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "reviewed_commit": "00d06374ce91059f075c1fb46f02f79821cc0d4a",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/G71/G71_a.html": "340952bfc78183bc71f3c75da5b7ffea5bbf2b6ae46cbd80476a88b6657f455f",
+  "chapters/G71/G71_b.html": "d9c14212393548209c4bc382d1bb3f1fbd9953846ec65fc5efef80cb235a65d3",
+  "chapters/G71/G71_c.html": "f62cfef7715eaa515e153ee7b7dce2ec80ae6b8454e876b55dbdaac2e969f880",
+  "chapters/G71/G71_d.html": "05995b523a95b6fa35dcc48430841156aa1e0e4ffc69de0c3803d767effc92a7",
+  "chapters/G71/G71_pop1.html": "a129be27fe0e9f3af32d0823424c141e5aa16b4621548ff917673d0069939873",
+  "chapters/G71/G71_pop2.html": "4102e940bdf1ba40c881716bc5c9c299b0ffba04df54abc9d7f8d01f453b9afd",
+  "glossary/g71.py": "b270b6e75234c30ee4bb078483df1e3651feef40a3ea4d9e9bdd20dd65eb6a3d"
+ },
+ "reviewed_files_sha256": {
+  "chapters/G71/G71_a.html": "6c35793d7bf6d050436c5740eed68757cc00a0c5e0e35e57dab187e2c42446f2",
+  "chapters/G71/G71_b.html": "eeb478aa8ea383bea463eff1185e43462e671b876054f51c330fccb2b902b041",
+  "chapters/G71/G71_c.html": "9ebbe077908977991768c93bda4d6d53f2224f8bfb24cad95415cef443869db0",
+  "chapters/G71/G71_d.html": "d861c40d19f2658fd76bae378d90c1160190f00d7550f2320fe843d0645d85bc",
+  "chapters/G71/G71_pop1.html": "6f6bd51457b5233ea4d255d563042ca0a7dc5ea4c0be2a8d2bacdc8de4915b2f",
+  "chapters/G71/G71_pop2.html": "2fd764ac5635a15848598d6e270e47d34c80a06aaf161793908717fa5753f69e",
+  "glossary/g71.py": "97b6c3a63329cfea433f537ffc8d8587e7db4d59a16912f4b92aab95b47b6a87"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "scope": "Propositions LANG appliquées et non appliquées (corrections.json) ; phrases nouvelles intégrées par W et par P ; sous-onglet et fenêtres de sémiologie.",
+ "findings": [
+  {
+   "id": "LANG-propositions",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "56 propositions fond_inchange marquées « applique ».",
+   "verification": "Vérification automatique : le texte « nouveau » de chacune des 56 propositions de ALPHA1-CLAUDE-G71-LANG/propositions.json est présent dans les fichiers finaux.",
+   "evidence": [
+    "Script hors dépôt (scratchpad g71p)."
+   ]
+  },
+  {
+   "id": "LANG-renvois",
+   "severite": "—",
+   "status": "non_blocking",
+   "constat": "Renvois médicaux R-01 à R-34 non appliqués, sauf R-26 (levé par C02) et R-31 (couvert par C13).",
+   "verification": "Conforme au protocole : un renvoi_medical n’est appliqué que si l’audit MED le tranche.",
+   "justification_non_bloquant": "Hors périmètre de l’intégration.",
+   "evidence": [
+    "integration/corrections.json, refus_ou_non_appliques."
+   ]
+  },
+  {
+   "id": "P-LANG-01",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "constat": "Harmonisation succinylcholine / suxaméthonium laissée ouverte par W.",
+   "verification": "Tranchée par P au profit de la dénomination de la FI suisse (suxaméthonium) ; aucune occurrence restante.",
+   "evidence": [
+    "Commit 00d06374."
+   ]
+  },
+  {
+   "id": "P-LANG-02",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Style des phrases nouvelles (STYLE_REDACTION).",
+   "verification": "Phrases complètes, sans première personne, sans métaphore ni formule de chantier ; le normal précède le pathologique dans g71-sm-1 ; tableaux introduits puis commentés (g71-sm-2, g71-sm-3). Aucune correction nécessaire au-delà de P-LANG-01.",
+   "evidence": [
+    "Lecture du sous-onglet g71-s-semio et des phrases ajoutées par la différence."
+   ]
+  }
+ ],
+ "choix_differes": [
+  "Espaces insécables et « fibrillation atriale / auriculaire » : choix éditoriaux différés, hors mission."
+ ],
+ "evidence": [
+  "integration/corrections.json (141 entrées) relu.",
+  "Différence textuelle base → final."
+ ],
+ "conclusion": "Aucun constat bloquant : les 56 propositions fond_inchange sont présentes ; la dénomination suxaméthonium est harmonisée.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
