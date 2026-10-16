@@ -59,6 +59,8 @@ def fragment_shell(fragment):
     s=s.replace('<title>Medina · Atlas médical</title>','<title>Medina · '+name+'</title>',1)
     s=s.replace('<span><strong>Medina</strong><small>ATLAS DE MÉDECINE</small></span>',
                 '<span><strong>'+name+'</strong><small>FRAGMENT '+fragment['id']+'</small></span>',1)
+    # Le logo MEDINA d'un fragment ramène à l'accueil général (portail), jamais à l'accueil de la spécialité.
+    s=s.replace('<a class="brand" href="#/home">','<a class="brand" href="../index.html" aria-label="MEDINA, accueil général" title="Accueil général MEDINA">',1)
     chapter_by_code={c['code']:c for c in fragment_chapters(fragment,data['entries'])}
     groups={}
     for entry in sorted(data['entries'],key=lambda x:x['code']):
