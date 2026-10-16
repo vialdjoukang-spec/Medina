@@ -1,0 +1,96 @@
+<!-- Proposition ALPHA1-CLAUDE-G82-MED, constat C01 (MAJEUR) : sous-onglet « Sémiologie fondamentale et analytique ».
+     Contrat : docs/collaboration/instructions/SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE_2026-10-15.yaml (neuf sections data-semiology, titres h3)
+     et EXIGENCE_SEMIOLOGIE § 4 b (libellés exigés par tests/audit_sciences.py : Science → clinique / examen / traitement, À retenir).
+     Insertion dans chapters/G82/G82_c.html, panneau #pS :
+     (1) en tête de div.sci-bar, avant le bouton data-s="g82-s-anat", le bouton ci-dessous ; le bouton g82-s-anat passe à aria-selected="false" ;
+     (2) en tête de div.chap-body.sci-body, avant <div class="sci" id="g82-s-anat">, le div.sci ci-dessous, visible à l'ouverture de pS ;
+         div.sci id="g82-s-anat" reçoit alors l'attribut hidden.
+     Fenêtres g82-sm-* : propositions/G82_pop3_semio.html (nouveau fichier chapters/G82/G82_pop3.html, ou fin de G82_pop2.html).
+     Aucun nouveau sigle : les termes sont écrits en toutes lettres (IRM et AIS existent déjà dans la leçon).
+     Références [Sx] : sources.json de ce dossier (numérotation de la mission, distincte des liens du chapitre).
+     Sensibilité, spécificité et rapports de vraisemblance : non chiffrés dans les sources lues (LACUNE consignée dans rapport.json).
+     La figure est un schéma de raisonnement (SCHEMA_NON_ANATOMIQUE), sans structure anatomique ; viewBox 360 de large, texte de 13 unités.
+     Aucune écriture canonique faite par l'audit. -->
+
+<!-- (1) barre -->
+<button type="button" id="g82-tab-semio" role="tab" aria-selected="true" aria-controls="g82-s-semio" data-s="g82-s-semio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8"/><path d="M6 12h12M12 6v12"/></svg>Sémiologie fondamentale et analytique</button>
+
+<!-- (2) corps -->
+<div class="sci" id="g82-s-semio" role="tabpanel" aria-labelledby="g82-tab-semio">
+
+<section class="ilot" id="g82-sm-1" data-semiology="normal"><h3>Pour la leçon : quelle est la sémiologie fondamentale et analytique ?</h3>
+<p>Une paralysie des deux jambes ou des quatre membres pose d’abord une question de siège. Elle peut venir de la moelle, des racines de la queue de cheval, d’un plexus ou des nerfs périphériques ; seule l’atteinte de la moelle dans le canal vertébral répond à la définition de la paraplégie ou de la tétraplégie [S2]. Trois constatations décident : un <button class="w" data-k="g82-sm-niveau">niveau sensitif (technique et valeur)</button>, un <button class="w" data-k="g82-sm-pyramidal">syndrome pyramidal sous-lésionnel (signes et mécanisme)</button> et l’état des fonctions sacrées [S34 ; S2].</p>
+<p>Le normal sert de référence à chaque geste. Chez le sujet sain, chacun des dix muscles clés de chaque côté est coté 5, chacun des 28 points sensitifs est coté 2 au tact léger et à la piqûre, et les fonctions des 4e et 5e segments sacrés sont présentes [S2]. La moelle s’étend du trou occipital au bord supérieur de la 2e vertèbre lombaire ; elle est plus courte que le canal, si bien qu’un segment médullaire ne se trouve pas en face de la vertèbre de même nom [S34].</p>
+<div class="key"><b>À retenir.</b> La sémiologie d’une paraplégie cherche un niveau, un siège et une complétude. Le niveau se lit sur la sensibilité et la motricité, le siège sur le tonus et les réflexes, la complétude sur les segments sacrés.</div>
+</section>
+
+<section class="ilot" id="g82-sm-2" data-semiology="signs"><h3>Sémiologie fondamentale : symptômes et signes de la lésion médullaire</h3>
+<p>Le tableau réunit ce que le patient décrit et ce que l’examen trouve. Il répond à une question précise : quel signe désigne la moelle, et lequel désigne une autre structure ?</p>
+<table class="t"><thead><tr><th>Symptôme ou signe</th><th>Mécanisme</th><th>Fréquence ou valeur (source)</th><th>Piège</th></tr></thead><tbody>
+<tr><td>Douleur radiculaire de topographie fixe</td><td>Racine comprimée au niveau de la lésion</td><td>Non chiffrée dans les sources lues [S34]</td><td>Elle donne le siège, pas la gravité</td></tr>
+<tr><td>Déficit moteur sous-lésionnel</td><td>Moelle privée du contrôle central</td><td>Plus souvent une paraparésie spasmodique qu’une vraie paraplégie [S34]</td><td>Un déficit limité ne signifie pas une lésion bénigne</td></tr>
+<tr><td>Troubles sensitifs sous-lésionnels</td><td>Interruption des voies sensitives longues</td><td>Non chiffrée dans les sources lues [S34]</td><td>La limite supérieure donne le niveau sensitif</td></tr>
+<tr><td><button class="w" data-k="g82-sm-sphincter">Troubles génito-sphinctériens</button></td><td>Perte du contrôle de la miction et de la défécation</td><td>Hyperactivité et dyssynergie jusqu’à 95 %, hypoactivité jusqu’à 83 % selon le niveau [S1, tableau 2]</td><td>L’urodynamique seule type la vessie [S1]</td></tr>
+<tr><td>Céphalée violente, vision floue, sudation au-dessus de la lésion</td><td>Réponse autonome exagérée à un stimulus sous la lésion</td><td>Définition : hausse systolique de plus de 20 mmHg [S1, § 3.3.6.a]</td><td>Elle se reconnaît mal sans pression de base connue</td></tr>
+</tbody></table>
+<p>Le tableau se lit de haut en bas, comme une lésion. La douleur radiculaire marque l’étage, les signes sous-lésionnels décrivent ce que la moelle ne commande plus, et les troubles sphinctériens rappellent que les segments sacrés sont les plus bas. L’erreur fréquente est de s’arrêter à la force : un patient qui marche encore peut avoir une compression médullaire évolutive [S34].</p>
+<div class="key"><b>À retenir.</b> Les symptômes de lésion médullaire s’organisent en trois étages : lésionnel, sous-lésionnel et rachidien. Aucune source lue ne chiffre leur sensibilité ni leur spécificité.</div>
+</section>
+
+<section class="ilot" id="g82-sm-3" data-semiology="mechanisms"><h3>Du mécanisme au signe</h3>
+<p>Chaque signe découle de l’organisation de la moelle. Le faisceau pyramidal croise dans la moelle allongée puis descend dans le cordon latéral. Les fibres de la sensibilité thermo-algique croisent à chaque niveau et montent dans le cordon latéral opposé. Les fibres du tact épicritique et de la sensibilité profonde montent du même côté dans le cordon postérieur et ne croisent qu’au bulbe [S34].</p>
+<p>Ces trajets expliquent les signes. Une moelle privée du contrôle central donne une hypertonie élastique, des réflexes ostéotendineux vifs, diffusés et polycinétiques, une trépidation épileptoïde du pied et un signe de Babinski [S34]. Une hémisection donne un déficit moteur et proprioceptif du côté lésé et un déficit thermo-algique du côté opposé, car les deux voies sensitives ne croisent pas au même étage [S2 ; S34]. Une atteinte des racines de la queue de cheval donne au contraire une paralysie flasque, une amyotrophie et une aréflexie, avec une anesthésie en selle [S34].</p>
+<figure><svg viewBox="0 0 360 300" role="img" aria-label="Figure — Du signe au siège : la présence de signes pyramidaux et d’un niveau sensitif oriente vers la moelle ; une paralysie flasque aréflexique avec anesthésie en selle oriente vers la queue de cheval ; l’absence de signe pyramidal oriente vers une atteinte périphérique." font-size="13"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="40" y="8" width="280" height="40" rx="5"/><path d="M180 48v16m-4-5l4 5 4-5"/><rect x="40" y="64" width="280" height="40" rx="5"/><path d="M120 104l-40 24m0 0l7-1m-7 1l3-6M240 104l40 24m0 0l-7-1m7 1l-3-6"/><rect x="8" y="128" width="166" height="74" rx="5"/><rect x="186" y="128" width="166" height="74" rx="5"/><path d="M269 202v16m-4-5l4 5 4-5"/><rect x="186" y="218" width="166" height="74" rx="5"/></g><g fill="currentColor" text-anchor="middle"><text x="180" y="33">Paralysie des membres</text><text x="180" y="89">Signes pyramidaux ?</text><text x="91" y="152">Oui, avec niveau</text><text x="91" y="170">sensitif : moelle</text><text x="91" y="188">→ IRM en urgence</text><text x="269" y="152">Non : flasque,</text><text x="269" y="170">aréflexique</text><text x="269" y="188">(périphérique)</text><text x="269" y="242">Anesthésie en selle,</text><text x="269" y="260">troubles sphinctériens :</text><text x="269" y="278">queue de cheval</text></g></svg>
+<figcaption>Figure — Du signe au siège. Lecture : le tonus et les réflexes séparent la moelle des racines ; la topographie sensitive précise ensuite l’étage. Schéma pédagogique non anatomique d’après S34 et S2.</figcaption></figure>
+<p>La figure se lit en deux questions. La première porte sur les signes pyramidaux : leur présence désigne la moelle, leur absence oriente vers une atteinte périphérique [S34]. La seconde porte sur la topographie sensitive et sphinctérienne : une anesthésie en selle avec troubles sphinctériens oriente vers la queue de cheval [S34].</p>
+<div class="key"><b>Science → clinique.</b> Le croisement des voies à des étages différents explique les dissociations sensitives ; le contrôle central perdu explique la spasticité.</div>
+</section>
+
+<section class="ilot" id="g82-sm-4" data-semiology="examination"><h3>Examen clinique systématique de la moelle épinière</h3>
+<p>L’examen suit un ordre fixe, car le classement ISNCSCI exige des données complètes [S2]. Il va de l’état général à la synthèse :</p>
+<ol><li>Préparation : le médecin explique l’examen, installe le patient à plat et prévoit le toucher rectal, indispensable au classement [S2].</li><li>Constantes : il mesure la pression artérielle de base, car la dysréflexie se définit par rapport à elle [S1, § 3.3.6.a]. Chez une lésion haute, il cherche une chute de pression au passage en position assise [S1, § 3.3.6].</li><li>Motricité : il cote de 0 à 5 les dix muscles clés de chaque côté [S2].</li><li>Sensibilité : il cote de 0 à 2 les 28 points clés de chaque côté, au tact léger puis à la piqûre, et note la limite supérieure du déficit [S2 ; S34].</li><li>Réflexes : il teste les réflexes rotuliens et achilléens, la réponse plantaire, puis les <button class="w" data-k="g82-sm-sacre">réflexes bulbocaverneux et anal</button> [S1, tableau 6].</li><li>Toucher rectal : il note le tonus du sphincter, la pression anale profonde et la contraction anale volontaire [S2 ; S1, tableau 6].</li><li>Rachis et vessie : il recherche une douleur rachidienne et un globe vésical [S34 ; S1].</li><li>Synthèse : il établit le niveau neurologique lésionnel, la complétude, le grade AIS et, si besoin, la zone de préservation partielle [S2].</li></ol>
+<div class="card"><b>Exemple de présentation.</b><p>« Constatations : force cotée 0 aux membres inférieurs, niveau sensitif thoracique net, réflexes vifs et signe de Babinski bilatéral, tact et pression anale profonde présents, contraction anale volontaire absente. Interprétation : syndrome médullaire thoracique, sensitif incomplet. Limites : le grade AIS dépend aussi de la motricité au-delà de trois niveaux sous le niveau moteur. Examen qui répond à l’incertitude : IRM médullaire en urgence. »</p></div>
+<div class="key"><b>Science → examen.</b> Le niveau se lit sur dix muscles et 28 points par côté ; la complétude se lit au toucher rectal.</div>
+</section>
+
+<section class="ilot" id="g82-sm-5" data-semiology="interpretation"><h3>Valeur des signes et sens de leur absence</h3>
+<p>Les sources lues ne chiffrent ni la sensibilité ni la spécificité du niveau sensitif, du signe de Babinski ou de l’anesthésie en selle. La leçon le déclare plutôt que d’importer un chiffre d’une autre population. Ce qui est établi est qualitatif : aucun signe pyramidal n’est observé lors d’une compression périphérique [S34].</p>
+<p>La force d’une association dépasse celle d’un signe isolé. Un niveau sensitif accompagné d’un syndrome pyramidal et de troubles sphinctériens forme le tableau caractéristique de compression médullaire [S34]. À l’inverse, l’épargne sacrée prouve qu’une fonction traverse la lésion ; elle classe la lésion comme incomplète [S2].</p>
+<div class="key"><b>À retenir.</b> En l’absence de chiffres validés, le raisonnement s’appuie sur l’association des signes et sur leur topographie, puis l’IRM tranche.</div>
+</section>
+
+<section class="ilot" id="g82-sm-6" data-semiology="differentials"><h3>Sémiologie analytique : syndromes et diagnostic différentiel</h3>
+<p>Les signes se regroupent en syndromes. Chaque syndrome possède un mécanisme commun et une orientation propre.</p>
+<table class="t"><thead><tr><th>Syndrome</th><th>Signes constitutifs</th><th>Mécanisme commun</th><th>Orientation</th></tr></thead><tbody>
+<tr><td>Lésionnel radiculaire</td><td>Douleur de topographie fixe, hypoesthésie, amyotrophie, aréflexie</td><td>Racine atteinte à l’étage de la lésion</td><td>Siège [S34]</td></tr>
+<tr><td>Sous-lésionnel</td><td>Déficit moteur, troubles sensitifs, signes pyramidaux, troubles sphinctériens</td><td>Moelle privée du contrôle central</td><td>Moelle [S34]</td></tr>
+<tr><td>Queue de cheval</td><td>Paralysie flasque, aréflexie, anesthésie en selle, troubles périnéaux</td><td>Atteinte pluriradiculaire sous le cône</td><td>Racines, code G83.4 [S34 ; S3]</td></tr>
+<tr><td>Centromédullaire</td><td>Membres supérieurs plus faibles que les inférieurs</td><td>Souvent hyperextension</td><td>Moelle cervicale [S2]</td></tr>
+<tr><td>Brown-Séquard</td><td>Moteur et proprioceptif homolatéraux, thermo-algique controlatéral</td><td>Hémisection</td><td>Forme pure rare [S2]</td></tr>
+<tr><td>Antérieur</td><td>Perte motrice et thermo-algique, cordons postérieurs épargnés</td><td>Baisse de perfusion des deux tiers antérieurs</td><td>Moelle antérieure [S2]</td></tr>
+</tbody></table>
+<p>Le tableau se lit par la colonne des signes. Une paralysie flasque aréflexique avec anesthésie en selle n’est pas une lésion médullaire haute : c’est une atteinte des racines [S34]. Une compression périphérique se distingue par l’absence de tout signe pyramidal [S34].</p>
+<p>Le raisonnement suit cinq étapes :</p>
+<ol><li>Je reconnais la gravité : déficit récent, troubles sphinctériens ou dysréflexie [S34 ; S1].</li><li>Je qualifie le signe : central ou périphérique, selon le tonus et les réflexes [S34].</li><li>Je le localise : le niveau sensitif donne l’étage médullaire [S34].</li><li>Je regroupe : syndrome lésionnel, sous-lésionnel et rachidien [S34].</li><li>Je hiérarchise et je choisis l’examen qui tranche : l’IRM, technique de référence, demandée en urgence [S34].</li></ol>
+<div class="two"><div class="card"><b>Oriente vers la moelle</b><p>Un niveau sensitif, des signes pyramidaux et des troubles sphinctériens [S34].</p></div><div class="card"><b>Oriente ailleurs</b><p>L’absence de signe pyramidal oriente vers une compression périphérique [S34]. Une atteinte du plexus ou des nerfs est exclue de la définition [S2].</p></div></div>
+<div class="key"><b>Science → traitement.</b> Le siège commande la conduite : compression médullaire ou de la queue de cheval relèvent d’une prise en charge urgente, chirurgicale ou médicale selon la cause [S34].</div>
+</section>
+
+<section class="ilot" id="g82-sm-7" data-semiology="urgency"><h3>Drapeaux rouges</h3>
+<div class="alert"><b>Priorité clinique.</b> Une compression médullaire non traumatique et un syndrome de la queue de cheval sont des urgences diagnostiques et thérapeutiques ; l’IRM se demande en urgence [S34]. Chez un patient lésé au 6e segment thoracique ou au-dessus, une hausse systolique de plus de 20 mmHg par rapport à la base définit une dysréflexie autonome [S1, § 3.3.6.a].</div>
+<p>Les sources lues ne fixent pas de délai horaire pour l’IRM d’une compression non traumatique ; elles disent « en urgence » [S34]. Le délai de 24 heures de la leçon concerne la décompression de la lésion traumatique [S4].</p>
+</section>
+
+<section class="ilot" id="g82-sm-8" data-semiology="limits"><h3>Limites et applicabilité suisse</h3>
+<p>Aucune source suisse de sémiologie médullaire n’a été lue. Les descriptions viennent d’un référentiel universitaire français de 2016 [S34], de la classification internationale de 2019 [S2] et des recommandations européennes de neuro-urologie de 2026 [S1]. Les valeurs diagnostiques chiffrées manquent ; cette limite est déclarée.</p>
+<div class="quiz ui"><p>Cas 1 — Une femme de 62 ans présente une faiblesse des jambes avec réflexes vifs, signe de Babinski bilatéral et hypoesthésie des jambes et de l’abdomen à limite supérieure nette. Quel est le siège le plus probable ?</p><button data-ok="1">La moelle thoracique, au-dessus du niveau sensitif</button><button data-ok="0">Les racines de la queue de cheval</button><button data-ok="0">Un nerf périphérique</button><p class="fb" hidden>Un syndrome pyramidal avec niveau sensitif désigne la moelle [S34]. La queue de cheval donne une paralysie flasque et aréflexique [S34].</p></div>
+<div class="quiz ui"><p>Cas 2 — Un homme présente une paralysie flasque des jambes, une aréflexie achilléenne et une anesthésie en selle. Quel tableau ?</p><button data-ok="1">Syndrome de la queue de cheval</button><button data-ok="0">Lésion médullaire cervicale</button><button data-ok="0">Syndrome centromédullaire</button><p class="fb" hidden>La paralysie flasque, l’aréflexie et l’anesthésie en selle traduisent une atteinte pluriradiculaire sous le cône [S34].</p></div>
+<div class="quiz ui"><p>Cas 3 — Un étudiant demande la sensibilité du signe de Babinski pour une compression médullaire. Quelle réponse est honnête ?</p><button data-ok="1">Les sources lues ne la chiffrent pas ; le signe s’interprète avec le niveau sensitif et les troubles sphinctériens</button><button data-ok="0">Elle est de 95 %</button><button data-ok="0">Elle est nulle</button><p class="fb" hidden>Aucune des sources lues ne donne de sensibilité. Importer un chiffre d’une autre population serait une erreur ; l’association des signes forme le tableau caractéristique [S34].</p></div>
+</section>
+
+<section class="ilot" id="g82-sm-9" data-semiology="sources"><h3>Sources de la sémiologie</h3>
+<div class="src"><b>Sources de la sémiologie</b> (consultées le 16.10.2026) : [S34] Collège français des enseignants en rhumatologie, abrégé 2016, chapitre 2, item 91 (UNESS) : signes de la queue de cheval, syndromes lésionnel et sous-lésionnel, diagnostic différentiel, IRM ; [S2] ISNCSCI révision 2019 (Rupp et coll., 2021) : définitions, cotations, syndromes cliniques ; [S1] EAU, neuro-urologie, mise à jour limitée de mars 2026 : § 3.3.6, § 3.3.6.a, tableaux 2 et 6 ; [S3] BfArM, CIM-10-GM 2024, G83.4 ; [S4] AO Spine et Praxis 2024, décompression.</div>
+<div class="key"><b>À retenir.</b> Chaque signe de cette partie renvoie à un passage lu ; les valeurs chiffrées absentes sont déclarées comme lacunes.</div>
+</section>
+
+</div>
