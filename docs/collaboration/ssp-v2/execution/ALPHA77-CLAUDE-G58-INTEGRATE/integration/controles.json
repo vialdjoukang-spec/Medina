@@ -1,0 +1,655 @@
+{
+ "mission": "ALPHA77-CLAUDE-G58-INTEGRATE",
+ "phase": 1,
+ "agent": "W",
+ "code": "G58",
+ "date": "2026-10-16",
+ "base": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "empreintes_sha256": {
+  "chapters/G58/G58_a.html": "162a6d303525c3e1293dc68d7e75ccee668a80448bc2b0d03cc6fcfb3960891e",
+  "chapters/G58/G58_b.html": "21612cf8d74099bf852c318378bb59ca8113fc0ca1dd3cecc87910bd08abfca9",
+  "chapters/G58/G58_c.html": "3c37fc8cb4201248964c3912ce200de55236d41c8025ee971f9aaf2166f7f4ea",
+  "chapters/G58/G58_d.html": "9c717bdc5cde27ce7671460772a1395403c7b36be235859ccbf49b6bd4929aab",
+  "chapters/G58/G58_pop1.html": "e36eb3ab9964f85d6b5708ef64b3a9fc3c954e12cfb51f69dc30cab0789e80b2",
+  "chapters/G58/G58_pop2.html": "f0b7d74765e4b8fa1c70e1775af6fdabe4cbe400b0e031d3de45d54b42a3a312",
+  "glossary/g58.py": "6495a17905f441d0dd5923c79779942e1c6c6f88bc7b4f56e255927613e0a9f1"
+ },
+ "controles": {
+  "test_v7_static": {
+   "commande": "python3 test_v7.py --static G58",
+   "resultat": "OK",
+   "detail": "G58 mots 20307 fenêtres 54 quiz 9 pareto 13\nOK"
+  },
+  "build_medina_audit": {
+   "resultat": "{} (appelé par test_v7 --static ; première exécution : Methotrexat-Mepha non couvert, clé ajoutée)"
+  },
+  "audit_sciences_G58": {
+   "commande": "python3 tests/audit_sciences.py --base 523832d9ef6097607d3443f4398deee9cd0add11 --codes G58",
+   "resultat": "passed",
+   "erreurs": [],
+   "mesures": {
+    "baseline_present": true,
+    "production_proof": null,
+    "before": {
+     "words": 979,
+     "figures": 4,
+     "disciplines": 4
+    },
+    "after": {
+     "words": 5724,
+     "figures": 6,
+     "disciplines": 6
+    },
+    "units": [
+     {
+      "id": "g58-s-semio",
+      "words": 3674,
+      "figures": 1
+     },
+     {
+      "id": "g58-s-anat",
+      "words": 322,
+      "figures": 1
+     },
+     {
+      "id": "g58-s-histo",
+      "words": 385,
+      "figures": 1
+     },
+     {
+      "id": "g58-s-physio",
+      "words": 383,
+      "figures": 1
+     },
+     {
+      "id": "g58-s-bioch",
+      "words": 385,
+      "figures": 1
+     },
+     {
+      "id": "g58-s-immuno",
+      "words": 562,
+      "figures": 1
+     }
+    ]
+   }
+  },
+  "audit_sciences_global": {
+   "commande": "python3 tests/audit_sciences.py --base 523832d9ef6097607d3443f4398deee9cd0add11",
+   "resultat": "failed",
+   "erreurs_total": 2198,
+   "erreurs_G58": 0,
+   "lecture": "Échecs antérieurs dans d’autres cours (par exemple I67, G53, G37), hors périmètre ; aucune erreur pour G58. Aucun SVG factice ajouté."
+  },
+  "validateur_semiologie": {
+   "commande": "rejeu de la partie structurelle de tools/starter_codex.py:Repository.semiology (HTMLTree du dépôt) sur les fichiers finaux",
+   "resultat": "passed",
+   "controles": {
+    "premier_sous_onglet_selectionne": {
+     "ok": true,
+     "detail": [
+      [
+       "g58-s-semio",
+       "true"
+      ],
+      [
+       "g58-s-anat",
+       "false"
+      ],
+      [
+       "g58-s-histo",
+       "false"
+      ],
+      [
+       "g58-s-physio",
+       "false"
+      ],
+      [
+       "g58-s-bioch",
+       "false"
+      ],
+      [
+       "g58-s-immuno",
+       "false"
+      ]
+     ]
+    },
+    "panneau_unique_dans_pS": {
+     "ok": true,
+     "detail": 1
+    },
+    "panneau_visible_initialement": {
+     "ok": true,
+     "detail": null
+    },
+    "titre_premier_ilot": {
+     "ok": true,
+     "detail": "Pour la leçon : quelle est la sémiologie fondamentale et analytique ?"
+    },
+    "neuf_sections_non_vides": {
+     "ok": true,
+     "detail": [
+      [
+       "normal",
+       345
+      ],
+      [
+       "signs",
+       511
+      ],
+      [
+       "mechanisms",
+       473
+      ],
+      [
+       "examination",
+       640
+      ],
+      [
+       "interpretation",
+       518
+      ],
+      [
+       "differentials",
+       267
+      ],
+      [
+       "urgency",
+       139
+      ],
+      [
+       "limits",
+       244
+      ],
+      [
+       "sources",
+       539
+      ]
+     ]
+    },
+    "ordre_des_sections": {
+     "ok": true,
+     "detail": null
+    },
+    "sources_liens_https": {
+     "ok": true,
+     "detail": 11
+    },
+    "autres_disciplines_masquees": {
+     "ok": true,
+     "detail": [
+      "g58-s-anat",
+      "g58-s-histo",
+      "g58-s-physio",
+      "g58-s-bioch",
+      "g58-s-immuno"
+     ]
+    },
+    "aucun_pareto_dans_semio": {
+     "ok": true,
+     "detail": null
+    },
+    "aucun_h2_dans_semio": {
+     "ok": true,
+     "detail": null
+    },
+    "marqueur_clinique_dans_pA": {
+     "ok": true,
+     "detail": null
+    }
+   }
+  },
+  "construction": {
+   "commande": "MEDINA_OUT=<scratchpad> python3 build_front.py --fragment S08",
+   "sortie": "MEDINA_S08_nerveux.html (14 415 429 octets, compressé 7 638 687)",
+   "hors_depot": true
+  },
+  "rendu_chromium": {
+   "navigateur": "/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
+   "url": "file://…/MEDINA_S08_nerveux.html#/entry/G58",
+   "resultat": "passed",
+   "controles": {
+    "desktop.cours_affiche": {
+     "ok": true,
+     "detail": null
+    },
+    "desktop.bloc_clinique_present": {
+     "ok": true,
+     "detail": null
+    },
+    "desktop.bloc_clinique_visible": {
+     "ok": true,
+     "detail": null
+    },
+    "desktop.six_sous_onglets": {
+     "ok": true,
+     "detail": [
+      [
+       "g58-s-semio",
+       "true",
+       "Sémiologie fondamentale et analytique"
+      ],
+      [
+       "g58-s-anat",
+       "false",
+       "Anatomie"
+      ],
+      [
+       "g58-s-histo",
+       "false",
+       "Histologie"
+      ],
+      [
+       "g58-s-physio",
+       "false",
+       "Physiologie"
+      ],
+      [
+       "g58-s-bioch",
+       "false",
+       "Biochimie"
+      ],
+      [
+       "g58-s-immuno",
+       "false",
+       "Immunologie"
+      ]
+     ]
+    },
+    "desktop.premier_bouton_semio": {
+     "ok": true,
+     "detail": [
+      "g58-s-semio",
+      "true",
+      "Sémiologie fondamentale et analytique"
+     ]
+    },
+    "desktop.aria_selected": {
+     "ok": true,
+     "detail": [
+      [
+       "g58-s-semio",
+       "true"
+      ],
+      [
+       "g58-s-anat",
+       "false"
+      ],
+      [
+       "g58-s-histo",
+       "false"
+      ],
+      [
+       "g58-s-physio",
+       "false"
+      ],
+      [
+       "g58-s-bioch",
+       "false"
+      ],
+      [
+       "g58-s-immuno",
+       "false"
+      ]
+     ]
+    },
+    "desktop.semio_visible_autres_masquees": {
+     "ok": true,
+     "detail": [
+      [
+       "g58-s-semio",
+       false
+      ],
+      [
+       "g58-s-anat",
+       true
+      ],
+      [
+       "g58-s-histo",
+       true
+      ],
+      [
+       "g58-s-physio",
+       true
+      ],
+      [
+       "g58-s-bioch",
+       true
+      ],
+      [
+       "g58-s-immuno",
+       true
+      ]
+     ]
+    },
+    "desktop.titre_exact": {
+     "ok": true,
+     "detail": "Pour la leçon : quelle est la sémiologie fondamentale et analytique ?"
+    },
+    "desktop.neuf_sections": {
+     "ok": true,
+     "detail": [
+      [
+       "normal",
+       358
+      ],
+      [
+       "signs",
+       545
+      ],
+      [
+       "mechanisms",
+       480
+      ],
+      [
+       "examination",
+       647
+      ],
+      [
+       "interpretation",
+       527
+      ],
+      [
+       "differentials",
+       262
+      ],
+      [
+       "urgency",
+       143
+      ],
+      [
+       "limits",
+       248
+      ],
+      [
+       "sources",
+       542
+      ]
+     ]
+    },
+    "desktop.police_rendue_schemas_visibles_px": {
+     "ok": true,
+     "detail": [
+      [
+       "Figure S1 — ",
+       16,
+       360
+      ]
+     ]
+    },
+    "desktop.fenetre_g58-sm-mrc": {
+     "ok": true,
+     "detail": "ÉCHELLE\n\n0 : au­cune contrac­tion ; 1 : ébauche de contrac­tion ; 2 : mou­ve­ment actif sans pe­san­teur ; 3 : mou­ve­me"
+    },
+    "desktop.bascule_immunologie": {
+     "ok": true,
+     "detail": [
+      "g58-s-immuno"
+     ]
+    },
+    "desktop.police_rendue_figure7_px": {
+     "ok": true,
+     "detail": [
+      16
+     ]
+    },
+    "desktop.retour_semio": {
+     "ok": true,
+     "detail": [
+      "g58-s-semio"
+     ]
+    },
+    "desktop.pas_de_defilement_horizontal": {
+     "ok": true,
+     "detail": 1440
+    },
+    "desktop.toutes_fenetres_data_k": {
+     "ok": true,
+     "detail": {
+      "cles": 54,
+      "echecs": [],
+      "gabarits_absents": []
+     }
+    },
+    "desktop.abreviations_ouvrent_leur_fiche": {
+     "ok": true,
+     "detail": {
+      "abreviations": 57,
+      "echecs": []
+     }
+    },
+    "desktop.ancres_internes_resolues": {
+     "ok": true,
+     "detail": []
+    },
+    "desktop.erreurs_js": {
+     "ok": true,
+     "detail": []
+    },
+    "desktop.erreurs_console": {
+     "ok": true,
+     "detail": []
+    },
+    "mobile390.cours_affiche": {
+     "ok": true,
+     "detail": null
+    },
+    "mobile390.bloc_clinique_present": {
+     "ok": true,
+     "detail": null
+    },
+    "mobile390.bloc_clinique_visible": {
+     "ok": true,
+     "detail": null
+    },
+    "mobile390.six_sous_onglets": {
+     "ok": true,
+     "detail": [
+      [
+       "g58-s-semio",
+       "true",
+       "Sémiologie fondamentale et analytique"
+      ],
+      [
+       "g58-s-anat",
+       "false",
+       "Anatomie"
+      ],
+      [
+       "g58-s-histo",
+       "false",
+       "Histologie"
+      ],
+      [
+       "g58-s-physio",
+       "false",
+       "Physiologie"
+      ],
+      [
+       "g58-s-bioch",
+       "false",
+       "Biochimie"
+      ],
+      [
+       "g58-s-immuno",
+       "false",
+       "Immunologie"
+      ]
+     ]
+    },
+    "mobile390.premier_bouton_semio": {
+     "ok": true,
+     "detail": [
+      "g58-s-semio",
+      "true",
+      "Sémiologie fondamentale et analytique"
+     ]
+    },
+    "mobile390.aria_selected": {
+     "ok": true,
+     "detail": [
+      [
+       "g58-s-semio",
+       "true"
+      ],
+      [
+       "g58-s-anat",
+       "false"
+      ],
+      [
+       "g58-s-histo",
+       "false"
+      ],
+      [
+       "g58-s-physio",
+       "false"
+      ],
+      [
+       "g58-s-bioch",
+       "false"
+      ],
+      [
+       "g58-s-immuno",
+       "false"
+      ]
+     ]
+    },
+    "mobile390.semio_visible_autres_masquees": {
+     "ok": true,
+     "detail": [
+      [
+       "g58-s-semio",
+       false
+      ],
+      [
+       "g58-s-anat",
+       true
+      ],
+      [
+       "g58-s-histo",
+       true
+      ],
+      [
+       "g58-s-physio",
+       true
+      ],
+      [
+       "g58-s-bioch",
+       true
+      ],
+      [
+       "g58-s-immuno",
+       true
+      ]
+     ]
+    },
+    "mobile390.titre_exact": {
+     "ok": true,
+     "detail": "Pour la leçon : quelle est la sémiologie fondamentale et analytique ?"
+    },
+    "mobile390.neuf_sections": {
+     "ok": true,
+     "detail": [
+      [
+       "normal",
+       358
+      ],
+      [
+       "signs",
+       545
+      ],
+      [
+       "mechanisms",
+       480
+      ],
+      [
+       "examination",
+       647
+      ],
+      [
+       "interpretation",
+       527
+      ],
+      [
+       "differentials",
+       262
+      ],
+      [
+       "urgency",
+       143
+      ],
+      [
+       "limits",
+       248
+      ],
+      [
+       "sources",
+       542
+      ]
+     ]
+    },
+    "mobile390.police_rendue_schemas_visibles_px": {
+     "ok": true,
+     "detail": [
+      [
+       "Figure S1 — ",
+       13.2,
+       296
+      ]
+     ]
+    },
+    "mobile390.fenetre_g58-sm-mrc": {
+     "ok": true,
+     "detail": "ÉCHELLE\n\n0 : au­cune contrac­tion ; 1 : ébauche de contrac­tion ; 2 : mou­ve­ment actif sans pe­san­teur ; 3 : mou­ve­me"
+    },
+    "mobile390.bascule_immunologie": {
+     "ok": true,
+     "detail": [
+      "g58-s-immuno"
+     ]
+    },
+    "mobile390.police_rendue_figure7_px": {
+     "ok": true,
+     "detail": [
+      13.2
+     ]
+    },
+    "mobile390.retour_semio": {
+     "ok": true,
+     "detail": [
+      "g58-s-semio"
+     ]
+    },
+    "mobile390.pas_de_defilement_horizontal": {
+     "ok": true,
+     "detail": 390
+    },
+    "mobile390.erreurs_js": {
+     "ok": true,
+     "detail": []
+    },
+    "mobile390.erreurs_console": {
+     "ok": true,
+     "detail": []
+    }
+   },
+   "captures": [
+    "captures/G58_desktop_01_ouverture.png",
+    "captures/G58_desktop_02_bloc_clinique.png",
+    "captures/G58_desktop_03_sous_onglet_semiologie.png",
+    "captures/G58_desktop_04_schema_semiologie.png",
+    "captures/G58_desktop_05_fenetre_semiologie.png",
+    "captures/G58_desktop_06_immunologie_figure7.png",
+    "captures/G58_mobile390_01_ouverture.png",
+    "captures/G58_mobile390_02_bloc_clinique.png",
+    "captures/G58_mobile390_03_sous_onglet_semiologie.png",
+    "captures/G58_mobile390_04_schema_semiologie.png",
+    "captures/G58_mobile390_05_fenetre_semiologie.png",
+    "captures/G58_mobile390_06_immunologie_figure7.png"
+   ]
+  }
+ },
+ "pareto": "Aucun bouton Pareto dans le sous-onglet sémiologie ; Pareto Immunologie ajouté ; Pareto Définition, Histologie, Physiologie, Biochimie et Pharmacologie mis à jour.",
+ "fichiers": "Sept fichiers admis seulement (G58_a…_d, _pop1, _pop2, glossary/g58.py) ; aucun _pop3 ; aucun asset.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
