@@ -166,13 +166,14 @@ try:
             # Shell scripts also contain literal body tags; append at the real document end.
             i=s.rindex('</body>')
             s=s[:i]+notice+s[i:]
-        # The actual Anthropic fonts travel with every standalone page.
-        import base64
+        # The actual Anthropic fonts travel with every standalone page (ou dossier commun polices/,
+        # MEDINA_POLICES_PARTAGEES=1, voir tools/polices_partagees.py).
+        from tools import polices_partagees
         typography=open(ROOT+'/shell/typography.css',encoding='utf-8').read()
         for style in ('Roman','Italic'):
             font_path='assets/fonts/AnthropicSerif-'+style+'-Web.woff2'
-            with open(ROOT+'/'+font_path,'rb') as font:
-                typography=typography.replace('../'+font_path,'data:font/woff2;base64,'+base64.b64encode(font.read()).decode())
+            typography=typography.replace('../'+font_path,polices_partagees.url_police(ROOT,font_path,1 if selected else 0))
+        polices_partagees.copier(ROOT,OUT)
         s=s.replace('</head>','<style id="medina-typography">'+typography+'</style></head>',1)
         cycle_style=open(ROOT+'/engine/tetrade_cycle.css',encoding='utf-8').read()
         s=s.replace('</head>','<style id="medina-tetrade-cycle">'+cycle_style+'</style></head>',1)
@@ -207,11 +208,20 @@ try:
             tpls.append(m.group(0));return ''
         s2=re.sub(r'<template (?:id="ch-[^"]+"|data-pop="[^"]+")[\s\S]*?</template>',grab,s)
         if tpls:
-            pack=base64.b64encode(gzip.compress(''.join(tpls).encode('utf-8'),9,mtime=0)).decode()  # mtime=0 : construction reproductible
-            loader=('<div id="mdn-tpl" hidden></div><script id="mdn-pack" type="application/octet-stream">'+pack+'</script>'
-             '<script>(async()=>{try{const b=Uint8Array.from(atob(document.getElementById("mdn-pack").textContent),c=>c.charCodeAt(0));'
-             'const t=await new Response(new Blob([b]).stream().pipeThrough(new DecompressionStream("gzip"))).text();'
+            # Figures incorporées : une seule copie par image (jetons @mdn-img-N@), WebP sans perte
+            # quand les pixels restent identiques ; le chargeur restitue les URI avant l'insertion.
+            from tools.gabarits_images import extraire
+            texte,images,stats=extraire(''.join(tpls),webp=os.environ.get('MEDINA_WEBP','1')!='0')
+            pack=base64.b64encode(gzip.compress(texte.encode('utf-8'),9,mtime=0)).decode()  # mtime=0 : construction reproductible
+            table=('<script id="mdn-img" type="application/json">'+json.dumps(images,separators=(',',':'))+'</script>') if images else ''
+            loader=('<div id="mdn-tpl" hidden></div><script id="mdn-pack" type="application/octet-stream">'+pack+'</script>'+table+
+             '<script>(async()=>{try{const s=atob(document.getElementById("mdn-pack").textContent),n=s.length,b=new Uint8Array(n);for(let i=0;i<n;i++)b[i]=s.charCodeAt(i);'
+             'let t=await new Response(new Blob([b]).stream().pipeThrough(new DecompressionStream("gzip"))).text();'
+             'const g=document.getElementById("mdn-img");if(g){const m=JSON.parse(g.textContent);t=t.replace(/@mdn-img-(\\d+)@/g,(x,k)=>m[k]);}'
              'document.getElementById("mdn-tpl").innerHTML=t;window.MDN_READY=true;if(typeof render==="function")render();}catch(e){console.error("MEDINA décompression",e)}})()</script>')
+            if images:
+                print('images des gabarits :',stats['occurrences'],'occurrences →',stats['uniques'],'uniques ;',stats['webp'],'en WebP ;',
+                      stats['octets_origine'],'→',stats['octets_table'],'octets')
             i=s2.rindex('<script id="medina-glossary"') if '<script id="medina-glossary"' in s2 else s2.rindex('</body>')
             s2=s2[:i]+loader+s2[i:]
             with open(out, 'w', encoding='utf-8') as output:

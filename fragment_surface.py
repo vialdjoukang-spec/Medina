@@ -482,9 +482,9 @@ def finish_surface(source, fragment, root):
     source = source.replace('Chargement du registre médical…',
                             'Ouverture de ' + html.escape(own_data['fragment']['display_name']) + '…', 1)
     source = source.replace('</head>', '<style id="medina-category-organisation-css">' + category_css + '</style></head>', 1)
-    import base64
-    faces = ''.join("@font-face{font-family:'Atkinson Hyperlegible Next';font-style:%s;font-weight:%s;font-display:swap;src:url(data:font/woff2;base64,%s) format('woff2')}"
-                    % (style, weight, base64.b64encode((Path(root) / 'shell/fonts' / name).read_bytes()).decode())
+    from tools.polices_partagees import url_police
+    faces = ''.join("@font-face{font-family:'Atkinson Hyperlegible Next';font-style:%s;font-weight:%s;font-display:swap;src:url(%s) format('woff2')}"
+                    % (style, weight, url_police(root, 'shell/fonts/' + name, 1))
                     for name, style, weight in (('ahn-400.woff2', 'normal', '400'), ('ahn-400i.woff2', 'italic', '400'),
                                                 ('ahn-600.woff2', 'normal', '600'), ('ahn-700.woff2', 'normal', '700')))
     atlas_css = (Path(root) / 'engine/atlas_v2.css').read_text(encoding='utf-8') + (Path(root) / 'engine/atlas_v3.css').read_text(encoding='utf-8') + (Path(root) / 'engine/atlas_v4.css').read_text(encoding='utf-8') + fragment_motif(fragment['id'])

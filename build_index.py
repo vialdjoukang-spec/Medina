@@ -6,9 +6,12 @@ import gzip
 import html
 import json
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT))
+from tools import polices_partagees  # noqa: E402
 
 # Portal illustrations identify destinations; teaching stays in each fragment.
 ICONS = {
@@ -108,8 +111,8 @@ SCRIPT = r"""
 
 
 def portal_v2():
-    faces = ''.join("@font-face{font-family:'Atkinson Hyperlegible Next';font-style:%s;font-weight:%s;font-display:swap;src:url(data:font/woff2;base64,%s) format('woff2')}"
-                    % (style, weight, base64.b64encode((ROOT / 'shell/fonts' / name).read_bytes()).decode('ascii'))
+    faces = ''.join("@font-face{font-family:'Atkinson Hyperlegible Next';font-style:%s;font-weight:%s;font-display:swap;src:url(%s) format('woff2')}"
+                    % (style, weight, polices_partagees.url_police(ROOT, 'shell/fonts/' + name, 0))
                     for name, style, weight in (('ahn-400.woff2', 'normal', '400'), ('ahn-400i.woff2', 'italic', '400'),
                                                 ('ahn-600.woff2', 'normal', '600'), ('ahn-700.woff2', 'normal', '700')))
     return faces + ''.join((ROOT / 'engine' / name).read_text(encoding='utf-8')
@@ -235,6 +238,7 @@ def main():
 '''
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(page, encoding='utf-8')
+    polices_partagees.copier(ROOT, args.output.parent)
     print(f'index {args.output} ({len(fragments)} spécialités, {total_courses} cours intégrés)')
 
 
