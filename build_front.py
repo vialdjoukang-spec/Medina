@@ -207,11 +207,17 @@ try:
         def grab(m):
             tpls.append(m.group(0));return ''
         s2=re.sub(r'<template (?:id="ch-[^"]+"|data-pop="[^"]+")[\s\S]*?</template>',grab,s)
+        IMG_RACINE=re.compile(r'''(\b(?:src|href|srcset|data-src|poster)=)(["'])((?:images|assets/img)/)''')
+        if selected: s2=IMG_RACINE.sub(r'\1\2../\3',s2)
         if tpls:
             # Figures incorporées : une seule copie par image (jetons @mdn-img-N@), WebP sans perte
             # quand les pixels restent identiques ; le chargeur restitue les URI avant l'insertion.
             from tools.gabarits_images import extraire
-            texte,images,stats=extraire(''.join(tpls),webp=os.environ.get('MEDINA_WEBP','1')!='0')
+            gabarits=''.join(tpls)
+            if selected:
+                # Fragments servis depuis fragments/ : les figures pointent vers le dossier racine publié une seule fois.
+                gabarits=IMG_RACINE.sub(r'\1\2../\3',gabarits)
+            texte,images,stats=extraire(gabarits,webp=os.environ.get('MEDINA_WEBP','1')!='0')
             pack=base64.b64encode(gzip.compress(texte.encode('utf-8'),9,mtime=0)).decode()  # mtime=0 : construction reproductible
             table=('<script id="mdn-img" type="application/json">'+json.dumps(images,separators=(',',':'))+'</script>') if images else ''
             loader=('<div id="mdn-tpl" hidden></div><script id="mdn-pack" type="application/octet-stream">'+pack+'</script>'+table+
