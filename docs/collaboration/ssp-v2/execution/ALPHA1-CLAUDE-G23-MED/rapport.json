@@ -2,17 +2,18 @@
  "mission": "ALPHA1-CLAUDE-G23-MED",
  "code": "G23",
  "type_audit": "medical",
- "base_sha": "32416a2080e67537641040a81252dec0b3e6d137",
+ "base_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "worktree_base": "32416a2080e67537641040a81252dec0b3e6d137",
+ "worktree_base_note": "START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste.",
  "source_snapshot_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
- "manifeste_base_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
  "generation": 1,
  "branche": "claude/alpha1/g23-med-g1",
  "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-G23-MED-g1",
  "conversation": "alpha1-claude-g23-med",
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
- "date_debut": "2026-10-16",
- "date_fin": "2026-10-16T06:05:13Z",
+ "date_debut": null,
+ "date_fin": "2026-10-16T06:12:19Z",
  "lecture": {
   "fichiers": [
    "chapters/G23/G23_a.html",
@@ -72,7 +73,10 @@
   "BLOQUANT": 0,
   "MAJEUR": 11,
   "MINEUR": 11,
-  "ENRICHISSEMENT": 5
+  "ENRICHISSEMENT": 5,
+  "MAJEUR_bloquant_cloture": [
+   "C01"
+  ]
  },
  "constats": [
   {
@@ -80,7 +84,7 @@
    "gravite": "MAJEUR",
    "fichier": "chapters/G23/G23_c.html",
    "ancre": "<div class=\"sci-bar ui\" role=\"tablist\">",
-   "constat": "La leçon ne possède pas de sous-onglet « Sémiologie fondamentale et analytique » : la barre #pS ne contient que les cinq disciplines (anatomie, histologie, physiologie, biochimie, génétique). Les symptômes et signes existent en liste (g23-5, g23-6), sans technique, sans mécanisme par signe, sans normal préalable, sans regroupement syndromique ni raisonnement en cinq étapes. SEM-01, SEM-02, SEM-03 (pour cette discipline) et SEM-13 sont non satisfaits.",
+   "constat": "La leçon ne possède pas de sous-onglet « Sémiologie fondamentale et analytique » : la barre #pS ne contient que les cinq disciplines (anatomie, histologie, physiologie, biochimie, génétique). Les symptômes et signes existent en liste (g23-5, g23-6), sans technique, sans mécanisme par signe, sans normal préalable, sans regroupement syndromique ni raisonnement en cinq étapes. SEM-01, SEM-02, SEM-03 (pour cette discipline) et SEM-13 sont non satisfaits. Ce constat est MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md) : il ne s'agit pas d'une simple lacune.",
    "preuve": [
     {
      "source_id": "S1",
@@ -100,7 +104,9 @@
    ],
    "proposition": "Insérer la discipline complète de propositions/G23_c_1.html (bouton en tête de .sci-bar, div.sci g23-s-semio, îlots g23-sm-1 à g23-sm-7, figure 8) et créer chapters/G23/G23_pop3.html à partir de propositions/G23_pop3_1.html (8 fenêtres g23-sm-*).",
    "justification": "Mécanisme : la valeur d’un parkinsonisme atypique repose sur des signes mesurés (rapport pouls/pression, résidu, saccades) dont la technique conditionne la sensibilité. Conséquence : sans technique ni valeur chiffrée, le lecteur ne sait ni objectiver ni pondérer ces signes. Décision : ajouter la discipline exigée par Vial et l’addendum, entièrement sourcée.",
-   "ancre_occurrences": 1
+   "ancre_occurrences": 1,
+   "bloquant_cloture": true,
+   "statut_cloture": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md)"
   },
   {
    "id": "C02",
@@ -797,7 +803,9 @@
    "SEM-22": "non vérifié (aucune capture réelle prise par l’audit)",
    "SEM-23": "non (aucune capture réelle prise par l’audit)",
    "SEM-24": "oui (bandeau « Aucune validation médicale humaine »)"
-  }
+  },
+  "bloquant_cloture": true,
+  "statut_cloture": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md)"
  },
  "figures": [
   {
@@ -918,5 +926,7 @@
   "G23_d_2.html",
   "G23_pop3_1.html"
  ],
- "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+ "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée",
+ "date_debut_note": "Heure de début non relevée au démarrage (UTC) ; le premier horodatage réellement observé pendant l'exécution est 2026-10-16T05:57:35Z (date -u), après les lectures d'entrée.",
+ "date_fin_note": "Relevée par date -u juste avant le commit de traçabilité."
 }

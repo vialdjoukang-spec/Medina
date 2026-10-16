@@ -1,8 +1,8 @@
 # Audit médical Alpha, tour 1 — G23, « Autres maladies dégénératives des noyaux gris centraux » (S08)
 
-Mission **ALPHA1-CLAUDE-G23-MED** · branche `claude/alpha1/g23-med-g1` · base `32416a20` · génération 1 · modèle et effort conformes au manifeste · exécuté par un sous-agent Claude Code.
+Mission **ALPHA1-CLAUDE-G23-MED** · branche `claude/alpha1/g23-med-g1` · base de mission `d1a488ad` (manifeste) · worktree créé sur `32416a20` · génération 1 · modèle et effort conformes au manifeste · exécuté par un sous-agent Claude Code.
 
-Les empreintes SHA-256 des sept fichiers de la leçon sont **conformes** au manifeste. La lecture a porté sur les sept fichiers en entier, et chaque ancre a été vérifiée par script : elle apparaît une seule fois dans son fichier.
+Les empreintes SHA-256 des sept fichiers de la leçon sont **conformes** au manifeste. START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste. La lecture a porté sur les sept fichiers en entier, et chaque ancre a été vérifiée par script : elle apparaît une seule fois dans son fichier.
 
 ## Synthèse
 
@@ -12,7 +12,9 @@ La leçon est solide sur les critères MDS, la neuropathologie et la pharmacolog
 |---|---|---|---|
 | 0 | 11 | 11 | 5 |
 
-Aucun constat n’est bloquant : aucune dose dangereuse n’est prescrite, et les omissions portent sur la surveillance et les mises en garde.
+Aucun constat n’est classé BLOQUANT au sens médical : aucune dose dangereuse n’est prescrite. En revanche, **C01 (sémiologie absente) est MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md)**.
+
+Horodatages UTC : début non relevé au démarrage (`null` ; premier horodatage observé 2026-10-16T05:57:35Z) ; fin 2026-10-16T06:12:19Z, relevée juste avant le commit.
 
 ## Constats majeurs
 
@@ -130,7 +132,7 @@ Aucun constat n’est bloquant : aucune dose dangereuse n’est prescrite, et le
 
 ## 21 — Sémiologie fondamentale et analytique
 
-**Statut : absente (constat C01, MAJEUR).** L’onglet 1 cite les symptômes (g23-5) et les signes (g23-6) sous forme de listes et de fenêtres. Il ne décrit pas la technique d’examen, ni l’état normal, ni le mécanisme de chaque signe, ni sa valeur chiffrée. Il ne regroupe pas les signes en syndromes, ne propose pas de raisonnement en cinq étapes et ne donne aucun cas corrigé. La proposition `propositions/G23_c_1.html` ajoute la discipline complète : sept îlots, une figure lisible à 390 px et trois cas corrigés. Elle compte environ 3 700 mots. La proposition `propositions/G23_pop3_1.html` ajoute huit fenêtres. Toutes les valeurs proviennent de MDS 2022, de MDS 2017, de la revue d’Innsbruck, de la revue de Munich, du consensus de Bologne, de l’ERN-RND et de Parkinson Suisse.
+**Statut : absente (constat C01, MAJEUR, bloquant pour la clôture du cours et du lot, AGENTS.md).** Ce n’est pas une simple lacune. L’onglet 1 cite les symptômes (g23-5) et les signes (g23-6) sous forme de listes et de fenêtres. Il ne décrit pas la technique d’examen, ni l’état normal, ni le mécanisme de chaque signe, ni sa valeur chiffrée. Il ne regroupe pas les signes en syndromes, ne propose pas de raisonnement en cinq étapes et ne donne aucun cas corrigé. La proposition `propositions/G23_c_1.html` ajoute la discipline complète : sept îlots, une figure lisible à 390 px et trois cas corrigés. Elle compte environ 3 700 mots. La proposition `propositions/G23_pop3_1.html` ajoute huit fenêtres. Toutes les valeurs proviennent de MDS 2022, de MDS 2017, de la revue d’Innsbruck, de la revue de Munich, du consensus de Bologne, de l’ERN-RND et de Parkinson Suisse.
 
 | Critère | Résultat |
 |---|---|
@@ -246,6 +248,6 @@ La première source lue est le poster ERN-RND/EAN/MDS-ES de 2025 [S7], lu en ent
 | Constats | 11 majeurs, 11 mineurs, 5 enrichissements, 0 bloquant |
 | Propositions | 16 fichiers HTML, dont la discipline Sémiologie (≈ 3 700 mots) et 8 fenêtres |
 | Sources | 18, dont 7 informations professionnelles suisses datées |
-| Alertes | Sémiologie absente ; audit_sciences en échec ; quatre erreurs de critères (C04 à C07) ; trois omissions de sécurité tirées des FI (C08 à C10) |
+| Alertes | Sémiologie absente (MAJEUR bloquant la clôture) ; audit_sciences en échec ; quatre erreurs de critères (C04 à C07) ; trois omissions de sécurité tirées des FI (C08 à C10) |
 
 *Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée.*
