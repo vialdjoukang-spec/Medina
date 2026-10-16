@@ -13,7 +13,7 @@
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
  "date_debut": null,
- "date_fin": "2026-10-16T06:12:10Z",
+ "date_fin": "2026-10-16T06:31:03Z",
  "lecture": {
   "fichiers": [
    "chapters/G64/G64_a.html",
@@ -178,9 +178,14 @@
      "source_id": "S10",
      "section": "Mésusage, usage nocif et dépendance",
      "citation_courte": "pouvant également survenir à des doses thérapeutiques"
+    },
+    {
+     "source_id": "S10",
+     "section": "Posologie/Mode d’emploi, troubles de la fonction rénale, tableau 1 (relu le 16.10.2026, version 110 F, juillet 2026)",
+     "citation_courte": "Clcr 30-60 : dose initiale 75 mg/jour, dose maximale 300 mg/jour, en 2 ou 3 prises unitaires"
     }
    ],
-   "proposition": "propositions/G64_d_1.html : tableau des risques avec lecture, rubrique Sécurité de la fenêtre g64-pregabaline.",
+   "proposition": "propositions/G64_d_1.html : tableau des risques avec lecture, rubrique Sécurité de la fenêtre g64-pregabaline. Revue Codex PR #193 : la dose de la vignette (clairance 45 ml/min) est conditionnée à la fonction rénale selon le tableau 1 de la FI (75 mg/jour au départ, 300 mg/jour au maximum, en 2 ou 3 prises ; ne doit pas être utilisée sous 30 ml/min).",
    "justification": "Le ligand α2δ déprime le système nerveux central → chute, accident de la route et dépression respiratoire sont les risques graves du sujet âgé → la prescription exige un avertissement explicite et la vérification des co-prescriptions.",
    "ancre_occurrences": 1
   },
@@ -256,7 +261,7 @@
      "citation_courte": "History taking and clinical examination represent key features"
     }
    ],
-   "proposition": "propositions/G64_c_1.html (sept îlots g64-sm-1 à g64-sm-7, figure accessible, trois cas corrigés) et propositions/G64_pop3_1.html (huit fenêtres).",
+   "proposition": "propositions/G64_c_1.html (bouton g64-tab-semio, panneau g64-s-semio role=tabpanel, neuf sections data-semiology dans l’ordre normal → sources, titres h3, liens https dans la section sources), propositions/G64_pop2_1.html (huit fenêtres, à ajouter à G64_pop2.html) et propositions/G64_a_semio_clinique.html (section data-semiology-clinical=\"G64\" dans pA, îlot g64-6).",
    "justification": "La décision devant une atteinte périphérique part de l’examen → sans technique, mécanisme ni valeur des signes, le lecteur ne peut ni localiser ni hiérarchiser → l’absence est un manque structurel MAJEUR selon l’exigence du 15.10.2026.",
    "ancre_occurrences": 1,
    "bloquant_cloture": true
@@ -800,7 +805,7 @@
   ],
   "proposition": [
    "propositions/G64_c_1.html",
-   "propositions/G64_pop3_1.html",
+   "propositions/G64_pop2_1.html",
    "propositions/G64_glossaire_1.html"
   ],
   "valeurs_chiffrees_proposees": [
@@ -939,6 +944,7 @@
  ],
  "propositions": [
   "propositions/G64_a_1.html",
+  "propositions/G64_a_semio_clinique.html",
   "propositions/G64_b_1.html",
   "propositions/G64_b_2.html",
   "propositions/G64_b_3.html",
@@ -950,9 +956,57 @@
   "propositions/G64_d_3.html",
   "propositions/G64_d_4.html",
   "propositions/G64_glossaire_1.html",
-  "propositions/G64_pop3_1.html"
+  "propositions/G64_pop2_1.html"
  ],
  "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée",
  "date_debut_note": "Heure de début non relevée au lancement. Premier horodatage réellement observé : 2026-10-16T05:55:35Z (réponse d'Europe PMC, première requête réseau de l'audit) ; le début est antérieur de quelques minutes.",
- "date_fin_note": "Relevée avec date -u juste avant le commit de traçabilité."
+ "date_fin_note": "Relevée avec date -u juste avant le commit des correctifs de contrat (revue Codex PR #193).",
+ "revue_codex_pr193": {
+  "date": "2026-10-16T06:31:03Z",
+  "constats": [
+   {
+    "id": "A",
+    "objet": "propositions/G64_d_1.html L19 : prégabaline 75 mg ×2/j prescrite à la patiente de 67 ans (Clcr 45 ml/min) avant vérification rénale",
+    "statut": "resolved",
+    "correction": "Dose conditionnée à la clairance : 75 mg/jour au départ, 300 mg/jour au maximum, en 2 ou 3 prises (p. ex. 25 mg 3×/j) ; ne doit pas être utilisée sous 30 ml/min ; piège ajouté ; cellule « Étourdissements », phrase de g64-p-3 et fenêtre g64-pregabaline alignées.",
+    "evidence": {
+     "source_id": "S10",
+     "url": "https://amiko.oddb.org/fr/fi?gtin=7680570570016",
+     "version": "Lyrica®, Viatris, mise à jour juillet 2026, version 110 F",
+     "date_consultation": "16.10.2026",
+     "sha256_page": "c65b74a4e3c3f957cac942c639ecb431c4290006b069a9663d2375d8da704ee2",
+     "passages": [
+      "la posologie sera réduite individuellement chez les patients présentant une insuffisance rénale en tenant compte de la clairance de la créatinine (Clcr)",
+      "La prégabaline ne doit pas être utilisée chez les patients présentant une insuffisance rénale sévère (Clcr <30 ml/min)",
+      "Tableau 1 : ≥60 → 150 / 600 mg/jour ; 30-60 → 75 / 300 mg/jour, en 2 ou 3 prises unitaires",
+      "Une réduction de la posologie n'est nécessaire chez les patients âgés (plus de 65 ans) que s'ils présentent une insuffisance rénale"
+     ]
+    }
+   },
+   {
+    "id": "B1",
+    "objet": "Sémiologie non conforme (h2, pas d’id/aria/role, aucun data-semiology, aucun lien https)",
+    "statut": "resolved",
+    "correction": "G64_c_1.html restructuré : bouton id=g64-tab-semio role=tab aria-selected=true aria-controls/data-s=g64-s-semio ; panneau role=tabpanel aria-labelledby=g64-tab-semio sans hidden ; neuf sections data-semiology dans l’ordre ; 0 h2 ; 10 liens https dans la section sources. Contrôle par HTMLTree de tools/starter_codex.py sur une insertion simulée dans G64_c.html : bouton, panneau, titre du premier îlot, neuf sections non vides et liens https conformes ; 5 boutons data-s dans pS, 6 avec la proposition C06 (génétique), seuil du validateur ≥ 6."
+   },
+   {
+    "id": "B2",
+    "objet": "data-semiology-clinical=\"G64\" absent",
+    "statut": "resolved",
+    "correction": "propositions/G64_a_semio_clinique.html : section insérée dans G64_a.html (#pA, îlot g64-6) avant le bouton pareto-g64-clinique (ancre unique)."
+   },
+   {
+    "id": "B3",
+    "objet": "Proposition _pop3",
+    "statut": "resolved",
+    "correction": "G64_pop3_1.html renommé G64_pop2_1.html (fenêtres à ajouter à G64_pop2.html) ; références mises à jour dans rapport.json et rapport.md ; huit clés data-k de la sémiologie résolues, aucun href=\"#…\"."
+   },
+   {
+    "id": "B4",
+    "objet": "sources.json incomplet",
+    "statut": "resolved",
+    "correction": "Vingt entrées complétées : editeur, version, section_ou_page, passage_paraphrase, population, limites, niveau_lecture (texte intégral ou résumé) ; URL AmiKo par GTIN pour S10–S13."
+   }
+  ]
+ }
 }
