@@ -1,14 +1,14 @@
 # Audit linguistique G72 « Autres myopathies » (ALPHA1-CLAUDE-G72-LANG)
 
-Base `d1a488ad4f0031d7f2a4b47a0721e89a93475d77` (manifeste) ; worktree_base `32416a2080e67537641040a81252dec0b3e6d137` : START exécuté sur le premier main contenant l’approbation de la mission (PR #181), sources figées identiques, empreintes conformes. Branche `claude/alpha1/g72-lang-g1`, début non relevé (null), fin 2026-10-16T06:12:07Z (UTC). Empreintes des 7 fichiers conformes au manifeste : oui.
+Base `d1a488ad4f0031d7f2a4b47a0721e89a93475d77` (manifeste) ; worktree_base `32416a2080e67537641040a81252dec0b3e6d137` : START exécuté sur le premier main contenant l’approbation de la mission (PR #181), sources figées identiques, empreintes conformes. Branche `claude/alpha1/g72-lang-g1`, début non relevé (null), fin 2026-10-16T06:12:34Z (UTC). Empreintes des 7 fichiers conformes au manifeste : oui.
 
 ## Tableau de bord
 
 | Propositions locales | Renvois médicaux | Hors périmètre |
 |---|---|---|
-| 96 | 49 | 2 (sémiologie, figures) |
+| 95 | 50 | 2 (sémiologie, figures) |
 
-Répartition : phrase_nominale 48, ambiguite 14, grammaire 9, ponctuation 6, lourdeur 6, registre 6, typographie 3, accord 2, repetition 1, conjugaison 1
+Répartition : phrase_nominale 47, ambiguite 14, grammaire 9, ponctuation 6, lourdeur 6, registre 6, typographie 3, accord 2, repetition 1, conjugaison 1
 
 ## Hors périmètre linguistique
 
@@ -70,6 +70,7 @@ Formulations créant ou supposant une causalité, une fréquence, une chronologi
 | RM-047 | G72_pop2.html | reformulation_touchant_notion_clinique | <li>Accès : paralysie périodique.</li> | Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : <li>Des accès de faiblesse évoquent une paralysie périodique.</li> (Puce nominale ou à l’infinitif remplacée par une phrase complète (STYLE_REDACTION § 2) ; contenu inchangé.) |
 | RM-048 | G72_pop2.html | reformulation_touchant_notion_clinique | <li>Face épargnée en réanimation ; fléchisseurs des doigts : myosite à | Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : <li>La face est épargnée en réanimation ; la faiblesse des fléchisseurs des doigts évoque la myosite à inclusions.</li> (Puce nominale ou à l’infinitif remplacée par une phrase complète (STYLE_REDACTION § 2) ; contenu inchangé.) |
 | RM-049 | G72_pop2.html | reformulation_touchant_notion_clinique | <li>Vacuoles bordées : myosite à inclusions.</li> | Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : <li>Les vacuoles bordées caractérisent la myosite à inclusions.</li> (Puce nominale ou à l’infinitif remplacée par une phrase complète (STYLE_REDACTION § 2) ; contenu inchangé.) |
+| RM-050 | G72_pop2.html | reformulation_touchant_notion_clinique | <li>Potassium lent : rebond possible.</li> | Reformulation qui touche une mesure statistique, une population, une portée ou une conduite ; retirée des propositions applicables. Formulation envisagée : <li>Il faut donner le potassium lentement, car un rebond est possible.</li> (Puce nominale ou à l’infinitif remplacée par une phrase complète (STYLE_REDACTION § 2) ; contenu inchangé.) |
 
 ## Propositions locales
 
