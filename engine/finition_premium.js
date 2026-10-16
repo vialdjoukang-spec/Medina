@@ -42,7 +42,7 @@
    list.before(bar);
   }
   if (!list.dataset.mpBound) bind(host, list);
-  host.mpState = host.mpState || {hover: null, focus: null, pinned: new Set(), active: null};
+  host.mpState = host.mpState || {hover: null, focus: null, pinned: new Set(), closed: new Set(), active: null};
   apply(host);
   track();
  }
@@ -53,6 +53,8 @@
   const search = host.querySelector('.mc-navigo-search');
   const searching = !!(search && search.value.trim());
   const open = new Set([state.hover, state.focus, state.active, ...state.pinned].filter(v => v !== null && v !== undefined).map(String));
+  // Un repli explicite au clavier (flèche gauche) l'emporte sur le focus, la partie active et l'épingle.
+  state.closed.forEach(part => open.delete(part));
   list.querySelectorAll('.mp-sub').forEach(item => item.classList.toggle('mp-collapsed', !searching && !open.has(item.dataset.mpParent)));
   list.querySelectorAll('.mp-part[data-mp-has-sub]').forEach(item => item.setAttribute('aria-expanded', String(searching || open.has(item.dataset.mpPart))));
   list.querySelectorAll('.mp-part').forEach(item => item.classList.toggle('mp-active-part', item.dataset.mpPart === String(state.active)));
@@ -70,12 +72,12 @@
    pointer = event.pointerType || 'mouse';
    if (pointer !== 'mouse') return;
    const part = partOf(event.target.closest('.mc-navigo-item'));
-   if (part !== null && state().hover !== part) { state().hover = part; apply(host); }
+   if (part !== null && state().hover !== part) { state().hover = part; state().closed.delete(part); apply(host); }
   });
   list.addEventListener('pointerleave', () => { if (state().hover !== null) { state().hover = null; apply(host); } });
   list.addEventListener('pointerdown', event => { pointer = event.pointerType || 'mouse'; }, true);
   list.addEventListener('focusin', event => { const part = partOf(event.target.closest('.mc-navigo-item')); if (part !== null) { state().focus = part; apply(host); } });
-  list.addEventListener('focusout', event => { if (!list.contains(event.relatedTarget)) { state().focus = null; apply(host); } });
+  list.addEventListener('focusout', event => { if (!list.contains(event.relatedTarget)) { state().focus = null; state().closed.clear(); apply(host); } });
   // Tactile : le premier toucher d'une partie repliée la déplie ; le second ouvre la partie.
   list.addEventListener('click', event => {
    const item = event.target.closest('.mp-part[data-mp-has-sub]');
@@ -83,14 +85,14 @@
    const search = host.querySelector('.mc-navigo-search');
    if (search && search.value.trim()) return;
    event.preventDefault(); event.stopPropagation();
-   state().pinned = new Set([item.dataset.mpPart]); apply(host);
+   state().pinned = new Set([item.dataset.mpPart]); state().closed.delete(item.dataset.mpPart); apply(host);
   }, true);
   list.addEventListener('keydown', event => {
    const item = event.target.closest('.mc-navigo-item');
    if (!item) return;
    const part = partOf(item);
-   if (event.key === 'ArrowRight' && item.dataset.mpHasSub !== undefined) { event.preventDefault(); state().pinned.add(part); apply(host); const next = item.nextElementSibling; if (next && next.dataset.mpParent === part) next.focus(); }
-   else if (event.key === 'ArrowLeft' && part !== null) { event.preventDefault(); state().pinned.delete(part); const head = list.querySelector('.mp-part[data-mp-part="' + part + '"]'); if (head) head.focus(); apply(host); }
+   if (event.key === 'ArrowRight' && item.dataset.mpHasSub !== undefined) { event.preventDefault(); state().closed.delete(part); state().pinned.add(part); apply(host); const next = item.nextElementSibling; if (next && next.dataset.mpParent === part) next.focus(); }
+   else if (event.key === 'ArrowLeft' && part !== null) { event.preventDefault(); state().pinned.delete(part); state().closed.add(part); const head = list.querySelector('.mp-part[data-mp-part="' + part + '"]'); if (head) head.focus(); apply(host); }
    else if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
     const visible = Array.from(list.querySelectorAll('.mc-navigo-item')).filter(b => !b.hidden && !b.classList.contains('mp-collapsed'));
     const i = visible.indexOf(item), next = visible[i + (event.key === 'ArrowDown' ? 1 : -1)];
