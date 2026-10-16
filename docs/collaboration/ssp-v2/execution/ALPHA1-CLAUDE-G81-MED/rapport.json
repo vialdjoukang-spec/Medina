@@ -1,0 +1,943 @@
+{
+ "mission": "ALPHA1-CLAUDE-G81-MED",
+ "code": "G81",
+ "type_audit": "medical",
+ "base_sha": "103745baaa38c76f18288758cc7f689e5091ccdb",
+ "source_snapshot_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "base_note": "Worktree créé sur 103745ba (consigne du coordinateur) ; manifeste figé sur 523832d9 ; empreintes SHA-256 des 7 fichiers identiques au manifeste.",
+ "generation": 1,
+ "branche": "claude/alpha1/g81-med-g1",
+ "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G81-MED",
+ "conversation": "alpha1-claude-g81-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-16T09:12:00Z",
+ "date_fin": "2026-10-16T09:40:32Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G81/G81_a.html",
+   "chapters/G81/G81_b.html",
+   "chapters/G81/G81_c.html",
+   "chapters/G81/G81_d.html",
+   "chapters/G81/G81_pop1.html",
+   "chapters/G81/G81_pop2.html",
+   "glossary/g81.py"
+  ],
+  "empreintes_conformes": true,
+  "empreintes": {
+   "chapters/G81/G81_a.html": {
+    "sha256": "344cce244a5da2a9b5dce1422e45b147b70bc5a67eb2a83a5ce97cc241eb1529",
+    "manifeste": "344cce244a5da2a9b5dce1422e45b147b70bc5a67eb2a83a5ce97cc241eb1529",
+    "conforme": true
+   },
+   "chapters/G81/G81_b.html": {
+    "sha256": "7ee69ceba5caac9a22a33e7c83ee0f1915219519b718e53969a51269c72b1b02",
+    "manifeste": "7ee69ceba5caac9a22a33e7c83ee0f1915219519b718e53969a51269c72b1b02",
+    "conforme": true
+   },
+   "chapters/G81/G81_c.html": {
+    "sha256": "82ff88a1c0b60430bee6ac6d4545bc14ec888d7be7890b4e2e8734c2a8463d72",
+    "manifeste": "82ff88a1c0b60430bee6ac6d4545bc14ec888d7be7890b4e2e8734c2a8463d72",
+    "conforme": true
+   },
+   "chapters/G81/G81_d.html": {
+    "sha256": "266495a90c3b3cc393b07c4bcde1f5fb1c7540e1410c962229716fc64a6b8aa1",
+    "manifeste": "266495a90c3b3cc393b07c4bcde1f5fb1c7540e1410c962229716fc64a6b8aa1",
+    "conforme": true
+   },
+   "chapters/G81/G81_pop1.html": {
+    "sha256": "880f69b98d06cb8e1435dd70d41cfbd1eac00d7d40bb80c769f00a5a23d806b4",
+    "manifeste": "880f69b98d06cb8e1435dd70d41cfbd1eac00d7d40bb80c769f00a5a23d806b4",
+    "conforme": true
+   },
+   "chapters/G81/G81_pop2.html": {
+    "sha256": "14db67d061cdf9bea0e2283b9321a9a7a9d9986695e77a50c1c2d05133687339",
+    "manifeste": "14db67d061cdf9bea0e2283b9321a9a7a9d9986695e77a50c1c2d05133687339",
+    "conforme": true
+   },
+   "glossary/g81.py": {
+    "sha256": "c556b8bab3d1dd3638ca552ede266ad5c5ecccba0d86f29c2de26eea8551db2d",
+    "manifeste": "c556b8bab3d1dd3638ca552ede266ad5c5ecccba0d86f29c2de26eea8551db2d",
+    "conforme": true
+   }
+  },
+  "lecture_integrale": "les 7 fichiers lus en entier (texte, tableaux, figures, quiz, fenêtres, Pareto, alert, key, glossaire)"
+ },
+ "premiere_source_lue": {
+  "source_id": "S15",
+  "url": "https://amiko.oddb.org/fr/fi?gtin=7680524330017",
+  "section": "Posologie, « Spasticité focale des membres supérieurs », adultes (doses par muscle, 360 U, 6 U/kg)"
+ },
+ "synthese": {
+  "BLOQUANT": 1,
+  "MAJEUR": 11,
+  "MINEUR": 13,
+  "ENRICHISSEMENT": 2
+ },
+ "calculs": {
+  "total_releves": 582,
+  "calculables": 271,
+  "occurrences_rattachees": 381,
+  "controles_scriptes": 62,
+  "recalcules": 271,
+  "correct": 49,
+  "arrondi": 1,
+  "faux": 4,
+  "non_verifiables": 8,
+  "faux_ids": [
+   "K11",
+   "K25",
+   "K26",
+   "K34"
+  ],
+  "faux_constats": {
+   "K11": "C14",
+   "K25": "C02",
+   "K26": "C01",
+   "K34": "C08"
+  },
+  "non_verifiables_ids": [
+   "K03",
+   "K05",
+   "K06",
+   "K08",
+   "K14",
+   "K32",
+   "K35",
+   "K61"
+  ],
+  "unite_des_verdicts": "correct, arrondi, faux et non_verifiables comptent les 62 contrôles scriptés, non les occurrences",
+  "script": "calculs/verifier.py",
+  "inventaire": "calculs/inventaire.json",
+  "resultats": "calculs/resultats.json",
+  "note": "Chacune des 271 occurrences calculables (nombre + unité) est rattachée à l’un des 62 contrôles scriptés (assertion du script) ; 110 nombres sans unité immédiate sont rattachés par valeur ; les 201 restants sont des années, paginations, numéros d’îlots ou de section, codes ou bornes inférieures d’intervalles, relus manuellement."
+ },
+ "controles": {
+  "test_v7_static": "G81 mots 12563 fenêtres 56 quiz 4 pareto 13 — OK",
+  "audit_sciences": "échec sur g81-s-anat, g81-s-histo, g81-s-physio, g81-s-bioch (trop brèves, aucune figure, libellés « Science → » absents) — exécuté en lecture seule depuis le clone principal, fichiers G81 identiques (SHA conforme), base 103745ba",
+  "image_clo_finder_inventory": "2 figures (schémas non anatomiques) + 4 icônes de barre de 24 px",
+  "propositions_classes_fermees": "classes de la liste fermée uniquement, aucun style en ligne, aucun JavaScript",
+  "propositions_svg_390px": "figure S1 : viewBox 360, police 12 → ≈ 11,9 px"
+ },
+ "constats": [
+  {
+   "id": "C01",
+   "gravite": "BLOQUANT",
+   "fichier": "chapters/G81/G81_b.html",
+   "ancre": "BOTOX : membre supérieur ≤ 360 U, membre inférieur ≤ 400 U par séance",
+   "constat": "Les paramètres clés (g81-12), l’îlot g81-p-2, ses encadrés et la fenêtre g81-botox donnent deux maxima séparés (≤ 360 U au membre supérieur, ≤ 400 U au membre inférieur) et un intervalle de 2 mois au membre supérieur, sans jamais citer le plafond cumulé de l’information professionnelle : 400 U au plus sur 12 semaines chez l’adulte, toutes indications confondues. Recalcul K26 : 360 + 400 = 760 U pour les deux membres, ou 2 × 360 = 720 U en cas de réinjection du membre supérieur à 2 mois, soit 1,8 à 1,9 fois la dose autorisée.",
+   "preuve": [
+    {
+     "source_id": "S15",
+     "section": "Posologie, fin de la rubrique (doses maximales cumulées)",
+     "citation_courte": "la dose maximale cumulée sur une période de 12 semaines ne doit pas dépasser 400 unités"
+    },
+    {
+     "source_id": "S15",
+     "section": "Mises en garde",
+     "citation_courte": "Dans quelques cas, ces effets ont été fatals"
+    },
+    {
+     "source_id": "S15",
+     "section": "Mises en garde",
+     "citation_courte": "adultes traités par de fortes doses pour cause de spasticité"
+    }
+   ],
+   "proposition": "propositions/G81_d_botox.html (sept remplacements : tableau, paragraphe, encadrés g81-p-2 et g81-p-5, paramètres g81-12, fenêtre g81-botox, Pareto pareto-g81-pharma).",
+   "justification": "Mécanisme : la toxine diffuse à distance du site au-delà d’une certaine charge, avec dysphagie, pneumonie et faiblesse parfois mortelles. Conséquence : un lecteur qui applique les deux maxima présentés injecterait jusqu’à 760 U. Décision : écrire le plafond cumulé de 400 U par 12 semaines partout où un maximum par membre apparaît.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G81/G81_d.html",
+   "ancre": "<th>Membre</th><th>Muscle</th><th>Dose initiale</th>",
+   "constat": "Le tableau du membre inférieur, intitulé « Dose initiale », énumère sept muscles dont la somme fait 425 U, alors que le maximum par traitement est de 400 U (recalcul K25, dépassement de 25 U). L’information professionnelle donne une dose par muscle traité, à répartir « entre les muscles concernés » dans une enveloppe de 300 à 400 U ; la règle de sélection manque dans la leçon.",
+   "preuve": [
+    {
+     "source_id": "S15",
+     "section": "Posologie, spasticité focale des membres inférieurs, adultes",
+     "citation_courte": "300 à 400 unités réparties entre les muscles concernés"
+    },
+    {
+     "source_id": "S15",
+     "section": "Posologie, même rubrique",
+     "citation_courte": "La dose totale maximale par traitement est de 400 unités"
+    }
+   ],
+   "proposition": "propositions/G81_d_botox.html § 1 et 2.",
+   "justification": "Mécanisme : addition de toutes les lignes. Conséquence : dépassement possible du maximum autorisé. Décision : intitulé « dose par muscle traité » et phrase de sélection explicite.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C03",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G81/G81_pop1.html",
+   "ancre": "le dossier ne dit pas à partir de quel seuil il autoriserait la thrombolyse",
+   "constat": "La patiente de la vignette prend un anticoagulant oral direct, mais la leçon ne donne ni la règle de l’information professionnelle (contre-indication sous anticoagulation efficace), ni celle de l’ESO 2021 (pas de thrombolyse si prise < 48 h sans test spécifique ; anti-Xa < 0,5 U/mL ou temps de thrombine < 60 s : thrombolyse proposée par consensus), ni l’heure de la dernière prise dans l’énoncé (K03 non vérifiable). La donnée suisse de Berne (S26) est absente.",
+   "preuve": [
+    {
+     "source_id": "S9",
+     "section": "PICO 12.3, tableau 12",
+     "citation_courte": "we suggest no intravenous thrombolysis"
+    },
+    {
+     "source_id": "S9",
+     "section": "PICO 12.3, consensus d’experts",
+     "citation_courte": "anti-Xa activity <0.5 U/ml"
+    },
+    {
+     "source_id": "S25",
+     "section": "Contre-indications",
+     "citation_courte": "patients sous traitement efficace par anticoagulants oraux"
+    },
+    {
+     "source_id": "S26",
+     "section": "Résultats",
+     "citation_courte": "adjusted odds ratio, 0.57"
+    }
+   ],
+   "proposition": "propositions/G81_b_reperfusion.html § 1 (paragraphe « Anticoagulant oral direct »), § 2 (donnée d’énoncé : dernière prise la veille à 20 h, K62) et § 3 (fenêtre g81-aod).",
+   "justification": "Mécanisme : l’anticoagulant résiduel majore le risque d’hémorragie sous fibrinolytique. Conséquence : la décision de thrombolyse dépend de l’heure de prise et d’un test spécifique. Décision : écrire la règle et rendre la vignette calculable.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G81/G81_b.html",
+   "ancre": "l’information professionnelle de l’altéplase n’a pas été lue dans ce dossier",
+   "constat": "L’information professionnelle suisse d’Actilyse® (juin 2025) est disponible et fixe la posologie : 0,9 mg/kg, maximum 90 mg, 10 % en bolus d’une minute, reste en 60 minutes, dans les 4,5 h suivant le dernier état asymptomatique connu ; pression > 185/110 mmHg à traiter, glycémie < 2,8 ou > 22,2 mmol/L à corriger ; symptômes mineurs et NIHSS > 25 en contre-indication. La leçon ne donne que « 0,9 mg/kg dans les essais » et « environ 56 mg » (K04 correct à l’arrondi), sans plafond ni schéma (K05).",
+   "preuve": [
+    {
+     "source_id": "S25",
+     "section": "Posologie, AVC ischémique aigu",
+     "citation_courte": "dose maximale totale: 90 mg"
+    },
+    {
+     "source_id": "S25",
+     "section": "Posologie, AVC ischémique aigu",
+     "citation_courte": "10% de la dose totale en bolus intraveineux initial"
+    },
+    {
+     "source_id": "S25",
+     "section": "Mises en garde",
+     "citation_courte": "PA systolique > 185 mmHG ou PA diastolique > 110 mmHG"
+    },
+    {
+     "source_id": "S25",
+     "section": "Mises en garde",
+     "citation_courte": "Glycémie <50 mg/dl ou >400 mg/dl (<2,8 ou >22,2 mmol/l)"
+    }
+   ],
+   "proposition": "propositions/G81_b_reperfusion.html § 1 et § 4 (vignette : 5,6 mg en bolus puis 50,2 mg en 60 min ; K05, K57, K58).",
+   "justification": "Mécanisme : la fibrinolyse dépend de la dose et du délai ; le risque hémorragique croît avec la dose. Conséquence : une posologie sans plafond ni schéma est incomplète sur un geste à haut risque. Décision : citer la FI suisse datée.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C05",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G81/G81_pop2.html",
+   "ancre": "La ténectéplase n’est pas couverte.",
+   "constat": "La ténectéplase est autorisée en Suisse dans l’AVC ischémique aigu (Metalyse® 5000 U, FI mai 2025 : bolus unique selon le poids, 3500 U = 17,5 mg de 60 à < 70 kg, maximum 5000 U = 25 mg) et l’ESO 2023 la recommande comme alternative à l’altéplase (forte, modérée), préférée en cas d’occlusion d’un gros vaisseau. La leçon l’exclut explicitement.",
+   "preuve": [
+    {
+     "source_id": "S22",
+     "section": "Indications",
+     "citation_courte": "accident vasculaire cérébral (AVC) ischémique aigu chez l'adulte dans une fenêtre de 4,5 heures"
+    },
+    {
+     "source_id": "S22",
+     "section": "Posologie, tableau 1",
+     "citation_courte": "≥60 à < 70 … 3500 … 17.5"
+    },
+    {
+     "source_id": "S23",
+     "section": "Résumé",
+     "citation_courte": "tenecteplase 0.25 mg/kg can be used as a safe and effective alternative"
+    }
+   ],
+   "proposition": "propositions/G81_b_reperfusion.html § 1 et § 4 (K06, K59, K60).",
+   "justification": "Mécanisme : la ténectéplase, plus fibrino-spécifique, s’administre en un bolus. Conséquence : son absence prive le lecteur d’une option suisse autorisée et recommandée. Décision : l’ajouter avec sa posologie par tranche de poids.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C06",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G81/G81_b.html",
+   "ancre": "<h3>9.1 Phase aiguë : thrombolyse</h3>",
+   "constat": "La thrombectomie mécanique n’apparaît jamais comme traitement de l’hémiparésie aiguë par occlusion d’un gros vaisseau ; elle n’est citée que comme condition d’une thrombolyse tardive. L’ESO–ESMINT 2019 la recommande dans les 6 h (qualité haute) et de 6 à 24 h chez les patients éligibles (qualité modérée). L’imagerie vasculaire manque dans la hiérarchie des examens (g81-e-1).",
+   "preuve": [
+    {
+     "source_id": "S27",
+     "section": "Résumé, résultats",
+     "citation_courte": "high quality evidence to recommend MT plus best medical management"
+    },
+    {
+     "source_id": "S27",
+     "section": "Résumé, résultats",
+     "citation_courte": "moderate quality of evidence to recommend MT plus BMM in the 6-24h time window"
+    }
+   ],
+   "proposition": "propositions/G81_b_reperfusion.html § 1 (paragraphe « Thrombectomie mécanique ») et § 5 (ligne du tableau g81-e-1).",
+   "justification": "Mécanisme : une occlusion proximale répond mal à la seule fibrinolyse. Conséquence : omettre la thrombectomie retire le traitement le plus efficace des déficits sévères. Décision : l’ajouter, avec la lacune de lecture déclarée.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C07",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G81/G81_c.html",
+   "ancre": "data-s=\"g81-s-anat\"",
+   "constat": "Le sous-onglet « Sémiologie fondamentale et analytique » est absent : quatre data-s seulement (g81-s-anat, g81-s-histo, g81-s-physio, g81-s-bioch), aucun g81-s-semio. L’onglet 1 (g81-5, g81-6) contient des éléments épars (rolling, Babinski, Ashworth) sans cotation de force, sans syndrome pyramidal, sans topographie, sans technique, sans raisonnement ni cas corrigés. Grille SEM : 22 « non » sur 24.",
+   "preuve": [
+    {
+     "source_id": "S28",
+     "section": "§ 2.4 Syndrome pyramidal",
+     "citation_courte": "Au maximum les troubles de la commande motrice peuvent entraîner une impossibilité totale"
+    },
+    {
+     "source_id": "S28",
+     "section": "§ 1.1 Cotation",
+     "citation_courte": "0 = Aucune contraction"
+    },
+    {
+     "source_id": "S13",
+     "section": "Résumé",
+     "citation_courte": "Thumb rolling is more sensitive (88%) than pronator drift (47%)"
+    }
+   ],
+   "proposition": "propositions/G81_c_semio.html (bouton et discipline g81-s-semio, îlots g81-sm-1 à -7, figure de raisonnement non anatomique, trois cas), propositions/G81_pop_semio.html (huit fenêtres g81-sm-*), propositions/glossary_g81_ajouts.py.",
+   "justification": "Mécanisme : la sémiologie relie le signe au niveau lésionnel. Conséquence : sans elle, l’hémiparésie n’est ni qualifiée ni localisée, point central de l’examen fédéral. Décision : ajouter la discipline en tête de l’onglet Sciences.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C08",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G81/G81_b.html",
+   "ancre": "baclofène : prudence en insuffisance rénale terminale",
+   "constat": "La leçon réduit la prudence rénale du baclofène à l’insuffisance rénale terminale. La FI suisse exige la prudence à tout stade, un début vers 5 mg/j chez l’hémodialysé et signale une encéphalopathie toxique au-delà de 5 mg/j chez l’insuffisant rénal ; la dose initiale standard de la leçon (15 mg/j) est le triple de ce seuil (K34).",
+   "preuve": [
+    {
+     "source_id": "S20",
+     "section": "Posologie, insuffisance rénale",
+     "citation_courte": "commencer le traitement avec une posologie particulièrement faible de Liorésal - environ 5 mg/j"
+    },
+    {
+     "source_id": "S20",
+     "section": "Mises en garde",
+     "citation_courte": "doses supérieures à 5 mg par jour, des signes neurologiques et des symptômes d'un surdosage"
+    }
+   ],
+   "proposition": "propositions/G81_d_oraux.html § 3 et § 5.",
+   "justification": "Mécanisme : élimination rénale sous forme inchangée. Conséquence : accumulation et encéphalopathie chez un sujet âgé post-AVC à fonction rénale réduite. Décision : écrire le seuil de 5 mg/j.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C09",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G81/G81_d.html",
+   "ancre": "<b>Contre-indications.</b> Insuffisance hépatique sévère",
+   "constat": "La tizanidine est présentée sans la surveillance hépatique imposée par la FI (contrôle mensuel pendant 4 mois dès 12 mg/j, arrêt si transaminases > 3 × la normale de façon prolongée) alors que toute la plage optimale citée (12–24 mg/j) y est soumise (K32). L’interaction avec les antihypertenseurs (hypotension, bradycardie, rebond), fréquente après un AVC, manque aussi.",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "Mises en garde",
+     "citation_courte": "contrôler la fonction hépatique chaque mois pendant les quatre premiers mois"
+    },
+    {
+     "source_id": "S16",
+     "section": "Interactions",
+     "citation_courte": "antihypertenseurs, y compris de diurétiques, peut occasionnellement entraîner une hypotension"
+    }
+   ],
+   "proposition": "propositions/G81_d_oraux.html § 2.",
+   "justification": "Mécanisme : métabolisme hépatique (CYP1A2) et effet alpha-2 central. Conséquence : hépatite et hypotension non surveillées. Décision : ajouter la surveillance prescrite par la FI.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C10",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G81/G81_a.html",
+   "ancre": "Le dossier de recherche ne distingue pas hémiparésie et hémiplégie par un seuil de force musculaire",
+   "constat": "La distinction existe dans les sources de sémiologie : hémiplégie = paralysie totale, hémiparésie = paralysie incomplète, le degré se cotant de 0 à 5. La leçon déclare l’absence de distinction et ne donne aucune cotation de force, y compris dans les critères formels (g81-12).",
+   "preuve": [
+    {
+     "source_id": "S28",
+     "section": "§ 2.4 Topographie des atteintes pyramidales",
+     "citation_courte": "L'hémiplégie correspond à une paralysie totale et l'hémiparésie à une paralysie"
+    },
+    {
+     "source_id": "S28",
+     "section": "§ 1.1",
+     "citation_courte": "5 = Force musculaire normale"
+    }
+   ],
+   "proposition": "propositions/G81_a_definition.html.",
+   "justification": "Mécanisme : le degré du déficit se mesure groupe par groupe. Conséquence : définition centrale du titre absente. Décision : définir et coter.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C11",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G81/G81_c.html",
+   "ancre": "<h2>Anatomie de l’hémiparésie</h2>",
+   "constat": "L’anatomie ne décrit pas la voie motrice (cortex, capsule interne, tronc cérébral, croisement avant la moelle) ni la topographie clinique qui en découle (corticale non proportionnelle, capsulaire proportionnelle, syndromes alternes, Brown-Séquard homolatéral). Le côté de la lésion, notion de base, n’apparaît nulle part (« controlatéral » absent des sept fichiers). Le NIHSS, utilisé par les sources lues (FI Actilyse : contre-indication NIHSS > 25), n’est jamais nommé.",
+   "preuve": [
+    {
+     "source_id": "S28",
+     "section": "§ 2.4",
+     "citation_courte": "Atteinte corticale : provoque une hémiplégie partielle controlatérale, non proportionnelle"
+    },
+    {
+     "source_id": "S28",
+     "section": "§ 2.10 Syndromes alternés",
+     "citation_courte": "Syndrome de Weber : paralysie du III ipsilatérale, hémiplégie controlatérale"
+    },
+    {
+     "source_id": "S28",
+     "section": "§ 2.8",
+     "citation_courte": "un syndrome pyramidal et un syndrome cordonnal postérieur homolatéral à la lésion"
+    },
+    {
+     "source_id": "S25",
+     "section": "Contre-indications",
+     "citation_courte": "NIHSS >25"
+    }
+   ],
+   "proposition": "propositions/G81_c_anatomie.html § 1 et § 3 ; propositions/G81_c_semio.html (îlots g81-sm-3 et -4, figure S1).",
+   "justification": "Mécanisme : le trajet croisé de la voie pyramidale. Conséquence : sans lui, le lecteur ne localise pas la lésion. Décision : ajouter le trajet et sa traduction clinique.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C12",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G81/G81_c.html",
+   "ancre": "class=\"sci\" id=\"g81-s-histo\"",
+   "constat": "tests/audit_sciences.py (base 103745ba) échoue sur les quatre disciplines : « discipline trop brève » (< 280 mots), « aucune figure », et absence des libellés « Science → clinique. », « Science → examen. », « Science → traitement. ». Aucune discipline ne cite sa source (pas de p.src dans G81_c). La génétique est absente sans justification.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Sections 7 à 9",
+     "citation_courte": "Spasticity is maintained through the facilitatory influences conducted by the medial reticulospinal tract"
+    }
+   ],
+   "proposition": "propositions/G81_c_anatomie.html § 3 et § 4 (encadrés « Science → » sourcés) ; complément de rédaction à confier à une mission de production.",
+   "justification": "Mécanisme : le contrat des sciences impose corrélation et figure. Conséquence : la leçon échoue au contrôle automatique. Décision : compléter les encadrés et les figures.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C13",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G81/G81_b.html",
+   "ancre": "Pour le <b>pronostic</b>, le dossier ne contient aucun modèle de prédiction de la récupération motrice",
+   "constat": "Le pronostic moteur, la prévention secondaire de l’AVC et les spécificités suisses (conduite automobile, assurance invalidité) restent des lacunes déclarées ; l’audit n’a pas trouvé de source suisse lue pour les combler (requêtes consignées en lacunes).",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Recommandations",
+     "citation_courte": "additional minimal dose of 20 h"
+    }
+   ],
+   "proposition": "Aucune proposition sourcée ; lacune conservée et signalée.",
+   "justification": "Lacune de couverture sans erreur ; décision : mission de recherche ultérieure.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C14",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G81/G81_b.html",
+   "ancre": "La sécurité de la thrombolyse chez un pseudo-AVC est rassurante",
+   "constat": "Les chiffres 0,7 % contre 9,4 % (hémorragie) et 1,9 % contre 11,3 % (décès) portent sur l’ensemble des patients de la revue, dont 26,3 % des pseudo-AVC seulement ont été thrombolysés ; la leçon les présente comme des résultats de thrombolyse (K11 : dénominateur mal attribué). Le terme exact est « hémorragie intracrânienne ».",
+   "preuve": [
+    {
+     "source_id": "S6",
+     "section": "Résumé",
+     "citation_courte": "Overall intracranial hemorrhage was reported in 9.4% of stroke vs. 0.7% in SM patients"
+    },
+    {
+     "source_id": "S6",
+     "section": "Résumé",
+     "citation_courte": "61.7% of ischemic stroke patients were thrombolysed vs. 26.3% among SMs"
+    }
+   ],
+   "proposition": "propositions/G81_mineurs.html (C14).",
+   "justification": "Mécanisme : confusion de population. Conséquence : surestimation de la preuve de sécurité. Décision : reformuler avec le bon dénominateur.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C15",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G81/G81_c.html",
+   "ancre": "le faisceau réticulospinal médian et le faisceau vestibulospinal le facilitent",
+   "constat": "Le faisceau vestibulospinal est présenté à égalité avec le réticulospinal médian ; la source précise qu’il ne joue qu’un rôle mineur chez l’homme.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Section 9",
+     "citation_courte": "The vestibulospinal tract plays only a minor role"
+    }
+   ],
+   "proposition": "propositions/G81_c_anatomie.html § 2.",
+   "justification": "Précision de la source primaire, sans conséquence décisionnelle.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C16",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G81/G81_d.html",
+   "ancre": "la libération d’acides aminés excitateurs (<button class=\"w\" data-k=\"g81-tizanidine\">récepteurs NMDA</button>) diminue",
+   "constat": "La formulation laisse croire que la tizanidine agit sur les récepteurs NMDA ; la FI dit qu’elle diminue la libération des acides aminés excitateurs qui stimulent ces récepteurs. Même ambiguïté dans g81-s-bioch et g81-tizanidine.",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "Propriétés/Effets",
+     "citation_courte": "diminue la libération d’acides aminés excitateurs qui stimulent les récepteurs NMDA"
+    }
+   ],
+   "proposition": "propositions/G81_d_oraux.html § 1 ; G81_mineurs.html (C16).",
+   "justification": "Précision mécanistique.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C17",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G81/G81_pop2.html",
+   "ancre": "AVC du réveil avec discordance diffusion/FLAIR : altéplase (forte, haute qualité)",
+   "constat": "La condition « thrombectomie non indiquée ou non prévue » de la recommandation de l’AVC du réveil est omise ; la qualité basse de la recommandation 4,5–9 h n’est pas dite.",
+   "preuve": [
+    {
+     "source_id": "S9",
+     "section": "Recommandations, AVC du réveil",
+     "citation_courte": "for whom mechanical thrombectomy is either not indicated or not planned"
+    }
+   ],
+   "proposition": "propositions/G81_mineurs.html (C17).",
+   "justification": "Condition d’application omise.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C18",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G81/G81_a.html",
+   "ancre": "26,7 % après un premier AVC et 39,5 % chez les patients avec parésie",
+   "constat": "Le 39,5 % de Zeng est l’incidence après un premier AVC avec parésie, non une prévalence chez tous les parétiques.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Résumé",
+     "citation_courte": "The incidence of spasticity after the first-ever stroke with paresis was 39.5%"
+    }
+   ],
+   "proposition": "propositions/G81_mineurs.html (C18).",
+   "justification": "Population exacte de l’estimation.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C19",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G81/G81_b.html",
+   "ancre": "dont 41,2 % reclassés ensuite en signes précoces",
+   "constat": "Les pourcentages de Zehnder ne partagent pas le même dénominateur (dénominateurs implicites ≈ 400, 400, 494 et 34 ; K14) ; la leçon devrait citer les effectifs.",
+   "preuve": [
+    {
+     "source_id": "S10",
+     "section": "Résumé",
+     "citation_courte": "41.2% (n = 14)"
+    }
+   ],
+   "proposition": "propositions/G81_mineurs.html (C19).",
+   "justification": "Lisibilité de la statistique.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C20",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G81/G81_b.html",
+   "ancre": "souvent 3 à 5 séances par semaine sur 4 à 6 semaines",
+   "constat": "La précision « 3 à 5 séances sur 4 à 6 semaines » n’a pas été retrouvée dans la section lue de l’ESO 2025 ; elle impliquerait 40 à 100 min par séance supplémentaire (K35), donnée absente.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Recommandations",
+     "citation_courte": "additional minimal dose of 20 h"
+    }
+   ],
+   "proposition": "propositions/G81_mineurs.html (C20).",
+   "justification": "Énoncé incomplet ou non vérifié.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C21",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G81/G81_d.html",
+   "ancre": "L’information ne comporte <b>aucune indication cérébrale ou post-AVC</b>",
+   "constat": "L’affirmation est exacte pour les indications, mais la FI de Liorésal prévoit, dans sa posologie, des augmentations particulièrement lentes « chez les patients présentant une spasticité d’origine cérébrale » ; la leçon ne le dit pas.",
+   "preuve": [
+    {
+     "source_id": "S20",
+     "section": "Posologie, patients âgés et spasticité d’origine cérébrale",
+     "citation_courte": "augmentations de doses particulièrement lentes"
+    }
+   ],
+   "proposition": "propositions/G81_d_oraux.html § 4.",
+   "justification": "Nuance de la FI.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C22",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G81/G81_pop1.html",
+   "ancre": "Seul le résumé a été lu. Ces chiffres décrivent l’AVC",
+   "constat": "Un erratum de l’étude de Genève a été publié en 2026 ; la leçon ne le mentionne pas et son contenu n’a pas pu être lu.",
+   "preuve": [
+    {
+     "source_id": "S7b",
+     "section": "Notice PubMed",
+     "citation_courte": "Erratum for Neurology. 2025 Mar 11;104(5):e213353"
+    }
+   ],
+   "proposition": "propositions/G81_mineurs.html (C22).",
+   "justification": "Traçabilité de la donnée épidémiologique.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C23",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G81/G81_b.html",
+   "ancre": "la source lue ne détaille pas les autres causes",
+   "constat": "La FI de BOTOX®, déjà citée, énumère les causes d’échec (sélection des muscles, dose, technique, contracture fixée, antagonistes faibles, anticorps).",
+   "preuve": [
+    {
+     "source_id": "S15",
+     "section": "Posologie, échec thérapeutique",
+     "citation_courte": "mauvaise sélection des muscles à traiter, dose insuffisante, technique d'injection inadaptée"
+    }
+   ],
+   "proposition": "propositions/G81_mineurs.html (C23).",
+   "justification": "Information disponible dans une source déjà retenue.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C24",
+   "gravite": "MINEUR",
+   "fichier": "glossary/g81.py",
+   "ancre": "('N', 'supérieur (Neurone)')",
+   "constat": "La décomposition littérale de SMNS attribue à la lettre N le sens « supérieur (Neurone) » ; elle est incohérente (règle 3 : définition littérale lettre à lettre).",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Titre et section 1",
+     "citation_courte": "upper motor neuron syndrome"
+    }
+   ],
+   "proposition": "propositions/glossary_g81_ajouts.py.",
+   "justification": "Exactitude du glossaire.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C25",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G81/G81_a.html",
+   "ancre": "<text x=\"210\" y=\"48\">faiblesse, hypotonie</text>",
+   "constat": "Le libellé (≈ 125 unités estimées à 13 px) dépasse le cadre de 120 unités de la figure 1 (K48, estimation non mesurée au navigateur). La figure est un schéma non anatomique conforme à la règle des figures.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Section 3",
+     "citation_courte": "weakness and loss of dexterity are immediately apparent"
+    }
+   ],
+   "proposition": "propositions/G81_mineurs.html (C25).",
+   "justification": "Lisibilité à 390 px.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C26",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G81/G81_d.html",
+   "ancre": "Dysport® et Xeomin ont une indication de spasticité focale en Suisse, mais leurs textes n’ont pas été lus dans ce dossier",
+   "constat": "Les FI suisses de Dysport® (mai 2026) et Xeomin (mars 2026) sont lisibles et fixent des maxima propres (Dysport : 1000 U au MS, 1500 U avec épaule, 1500 U MI ou MS + MI ; Xeomin : 500 U MS dont 250 U épaule, 400 U MI, 500 puis 600 U combinés) ; intervalles de 12 semaines (Xeomin : minimum 10).",
+   "preuve": [
+    {
+     "source_id": "S29",
+     "section": "Posologie c)",
+     "citation_courte": "il ne faut pas dépasser une dose totale de 1500 U"
+    },
+    {
+     "source_id": "S30",
+     "section": "Posologie, spasticité des membres supérieurs",
+     "citation_courte": "ne doit pas excéder 500 unités et pas plus de 250 unités dans les muscles de l'épaule"
+    }
+   ],
+   "proposition": "propositions/G81_d_toxines.html (K61).",
+   "justification": "Rubrique 12 (médicaments FI datés) incomplète ; décision : ajouter les maxima propres à chaque toxine.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C27",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G81/G81_a.html",
+   "ancre": "<a href=\"#g81-6\">Examen clinique</a>",
+   "constat": "Points d’examen fédéral absents : cotation 0–5, syndrome pyramidal, dissociation automatico-volontaire, paralysie faciale centrale contre périphérique, syndromes alternes, Brown-Séquard, examen systématique en urgence. Ils sont couverts par la proposition de sémiologie.",
+   "preuve": [
+    {
+     "source_id": "S28",
+     "section": "§ 2.4",
+     "citation_courte": "Dissociation automatico-volontaire"
+    }
+   ],
+   "proposition": "propositions/G81_c_semio.html ; propositions/G81_pop_semio.html.",
+   "justification": "Rubriques 8 et 20 de la matrice.",
+   "ancre_occurrences": 1
+  }
+ ],
+ "matrice_20": [
+  {
+   "rang": 1,
+   "rubrique": "Question clinique et enjeu pour l’examen fédéral",
+   "statut": "couvert",
+   "ancre": "g81-0 (vignette, trois questions)"
+  },
+  {
+   "rang": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "partiel",
+   "ancre": "g81-1 ; distinction hémiplégie/hémiparésie déclarée absente à tort (C10) ; libellés OFS non lus"
+  },
+  {
+   "rang": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "partiel",
+   "ancre": "g81-1 (flasque/spastique) ; cotation 0–5 et topographie absentes (C10, C11)"
+  },
+  {
+   "rang": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "partiel",
+   "ancre": "g81-2 (Genève : AVC, non hémiparésie) ; erratum non lu (C22)"
+  },
+  {
+   "rang": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "partiel",
+   "ancre": "g81-3, g81-s-physio (tonus) ; trajet de la voie motrice absent (C11)"
+  },
+  {
+   "rang": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "partiel",
+   "ancre": "g81-4 ; causes non vasculaires non sourcées (lacune déclarée)"
+  },
+  {
+   "rang": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "partiel",
+   "ancre": "g81-5 ; fréquences non chiffrées ; heure de prise de l’anticoagulant absente (C03)"
+  },
+  {
+   "rang": 8,
+   "rubrique": "Examen clinique (signes, Se/Sp)",
+   "statut": "partiel",
+   "ancre": "g81-6 (rolling : sensibilités ; Ashworth) ; syndrome pyramidal, cotation, topographie absents (C07)"
+  },
+  {
+   "rang": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "partiel",
+   "ancre": "g81-8 (alert) ; règle anticoagulant, pression, glycémie, thrombectomie absentes (C03, C04, C06)"
+  },
+  {
+   "rang": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "partiel",
+   "ancre": "g81-e-1 à e-4 ; imagerie vasculaire absente (C06)"
+  },
+  {
+   "rang": 11,
+   "rubrique": "Diagnostic différentiel",
+   "statut": "partiel",
+   "ancre": "g81-7 (pseudo-AVC, Todd) ; mauvaise attribution des chiffres de sécurité (C14) ; causes non vasculaires non sourcées"
+  },
+  {
+   "rang": 12,
+   "rubrique": "Prise en charge suisse (FI datées)",
+   "statut": "partiel",
+   "ancre": "g81-9, g81-p-1 à p-5 ; plafond BOTOX cumulé (C01), Actilyse (C04), Metalyse (C05), thrombectomie (C06), Dysport/Xeomin (C26)"
+  },
+  {
+   "rang": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "partiel",
+   "ancre": "g81-8, g81-10 ; pronostic moteur non sourcé (C13)"
+  },
+  {
+   "rang": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "partiel",
+   "ancre": "g81-10 ; prévention secondaire de l’AVC non sourcée (C13) ; surveillance tizanidine absente (C09)"
+  },
+  {
+   "rang": 15,
+   "rubrique": "Situations particulières",
+   "statut": "partiel",
+   "ancre": "g81-11 ; baclofène et insuffisance rénale (C08) ; grossesse non sourcée"
+  },
+  {
+   "rang": 16,
+   "rubrique": "Spécificités suisses",
+   "statut": "absent",
+   "ancre": "aucune mention de conduite automobile, AI, Suva ou remboursement (lacune, C13)"
+  },
+  {
+   "rang": 17,
+   "rubrique": "Critères formels du diagnostic (div.alert)",
+   "statut": "partiel",
+   "ancre": "g81-12 alert ; définition clinique manquante (C10)"
+  },
+  {
+   "rang": 18,
+   "rubrique": "Paramètres clés chiffrés (div.key)",
+   "statut": "partiel",
+   "ancre": "g81-12 key ; plafond BOTOX cumulé et altéplase 90 mg absents (C01, C04)"
+  },
+  {
+   "rang": 19,
+   "rubrique": "Sous-codes CIM-10-GM couverts",
+   "statut": "couvert",
+   "ancre": "g81-1 : G81.0, G81.1, G81.9 ; voisins G83.1/.2/.5/.6/.8, G80, G51.0, G11.4"
+  },
+  {
+   "rang": 20,
+   "rubrique": "Points d’examen fédéral",
+   "statut": "partiel",
+   "ancre": "quiz g81-5, g81-6, g81-7, g81-9 ; sémiologie topographique absente (C27)"
+  },
+  {
+   "rang": 21,
+   "rubrique": "Sémiologie fondamentale et analytique",
+   "statut": "absent",
+   "ancre": "aucun g81-s-semio (C07)"
+  }
+ ],
+ "semiologie": {
+  "statut": "absente",
+  "decompte_data_s": 4,
+  "data_s": [
+   "g81-s-anat",
+   "g81-s-histo",
+   "g81-s-physio",
+   "g81-s-bioch"
+  ],
+  "sous_onglet_semio": false,
+  "gravite": "MAJEUR",
+  "constat_id": "C07",
+  "fondamentale": {
+   "statut": "partielle dans l’onglet 1, absente comme discipline",
+   "ancres": [
+    "g81-5",
+    "g81-6",
+    "g81-thumb",
+    "g81-babinski",
+    "g81-mas"
+   ],
+   "manques": "définition hémiplégie/hémiparésie, cotation 0–5, technique du réflexe cutané plantaire, tonus à deux vitesses, dissociation automatico-volontaire, face centrale/périphérique ; mécanisme par signe ; valeurs chiffrées (seules les sensibilités des épreuves de rolling sont sourcées)"
+  },
+  "analytique": {
+   "statut": "absente",
+   "ancres": [],
+   "manques": "regroupement syndromique (pyramidal, alterne, Brown-Séquard), raisonnement en cinq étapes, examen systématique, synthèse, trois cas corrigés"
+  },
+  "proposition": [
+   "propositions/G81_c_semio.html",
+   "propositions/G81_pop_semio.html",
+   "propositions/glossary_g81_ajouts.py"
+  ],
+  "grille_SEM": {
+   "SEM-01": "non",
+   "SEM-02": "non",
+   "SEM-03": "non (audit_sciences échoue sur les quatre disciplines existantes, C12)",
+   "SEM-04": "oui (test_v7.py --static G81 : « G81 mots 12563 fenêtres 56 quiz 4 pareto 13 — OK » sur la leçon actuelle)",
+   "SEM-05": "non",
+   "SEM-06": "non (rolling sans technique, g81-thumb)",
+   "SEM-07": "non",
+   "SEM-08": "non (seules les sensibilités de Nowak sont chiffrées)",
+   "SEM-09": "non (sauf tonus normal, g81-3)",
+   "SEM-10": "non",
+   "SEM-11": "non",
+   "SEM-12": "non",
+   "SEM-13": "non (pas d’alert sémiologique ; l’alert g81-8 existe)",
+   "SEM-14": "non",
+   "SEM-15": "non",
+   "SEM-16": "non",
+   "SEM-17": "non",
+   "SEM-18": "non",
+   "SEM-19": "non évaluable (absente)",
+   "SEM-20": "non évaluable",
+   "SEM-21": "non évaluable",
+   "SEM-22": "non (bouton absent)",
+   "SEM-23": "non (aucune capture possible)",
+   "SEM-24": "oui (statut « Revue par intelligence artificielle · Audit différé · Aucune validation médicale humaine »)"
+  },
+  "lacune_valeurs": "Aucune sensibilité, spécificité ni rapport de vraisemblance pour la spasticité, l’hyperréflexie, le signe de Babinski, l’asymétrie faciale ou la cotation de force dans les sources lues (S4, S13, S28) ; la proposition l’écrit explicitement.",
+  "cibles": {
+   "propositions/G81_c_semio.html": "chapters/G81/G81_c.html",
+   "propositions/G81_pop_semio.html": "chapters/G81/G81_pop1.html",
+   "propositions/glossary_g81_ajouts.py": "glossary/g81.py"
+  }
+ },
+ "figures": [
+  {
+   "fichier": "chapters/G81/G81_a.html",
+   "ancre": "aria-label=\"Figure 1 — Chronologie du syndrome du motoneurone supérieur\"",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Frise en trois cadres (lésion → signes négatifs → signes positifs).",
+   "verification": "viewBox 420, police 13 → ≈ 11,1 px à 390 px (K46) ; libellé « faiblesse, hypotonie » débordant estimé (K48, C25).",
+   "constat_id": "C25",
+   "ancre_occurrences": 1
+  },
+  {
+   "fichier": "chapters/G81/G81_b.html",
+   "ancre": "aria-label=\"Figure 2 — Séquence diagnostique devant une faiblesse d’un hémicorps\"",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Arbre séquentiel en cinq cadres.",
+   "verification": "viewBox 400, police 13 → ≈ 11,6 px à 390 px (K47).",
+   "constat_id": null,
+   "ancre_occurrences": 1
+  }
+ ],
+ "figures_synthese": {
+  "total": 2,
+  "ANATOMIQUE_IA": 0,
+  "SCHEMA_NON_ANATOMIQUE": 2,
+  "IMAGE_SOURCEE": 0,
+  "methode": "python3 tools/image_clo_finder.py inventory G81 ; calcul de la taille rendue (K46–K48)",
+  "regle": "Règle de Vial du 15.10.2026 ; aucune figure anatomique dans la leçon, aucune proposée (la figure S1 est un schéma de raisonnement)"
+ },
+ "propositions": [
+  "G81_a_definition.html",
+  "G81_b_reperfusion.html",
+  "G81_c_anatomie.html",
+  "G81_c_semio.html",
+  "G81_d_botox.html",
+  "G81_d_oraux.html",
+  "G81_d_toxines.html",
+  "G81_mineurs.html",
+  "G81_pop_semio.html",
+  "glossary_g81_ajouts.py"
+ ],
+ "lacunes": [
+  "BfArM CIM-10-GM 2024 (S1 du dossier Betta) et version française OFS : non relus par l’audit ; libellés repris de la leçon sans contrôle.",
+  "Erratum Dirren 2026 (S7b) : texte inaccessible (neurology.org, HTTP 403) ; les chiffres de Genève n’ont pu être confrontés qu’au résumé original.",
+  "ESO–ESMINT 2019 (S27), ESO 2023 ténectéplase (S23), Meinel 2023 (S26), Dziewas 2021 (S11) : résumés seuls ; critères d’imagerie de la thrombectomie non lus.",
+  "ESO 2021 (S9) : caractères 100 000–200 000 et 300 000–407 724 non lus.",
+  "ESO 2025 rééducation (S2) : caractères 100 000–198 578 non lus ; la mention « 3 à 5 séances sur 4 à 6 semaines » n’a pas été retrouvée (C20).",
+  "Consensus épaule (Jacinto 2022, S17 du dossier Betta) et registre Swiss-CP-Reg (S21 du dossier Betta) : non relus.",
+  "Spécificités suisses (conduite automobile après AVC, AI, Suva) : WebSearch « Fahreignung nach Hirnschlag Empfehlungen Schweizerische Neurologische Gesellschaft » sans recommandation suisse lisible ; rubrique 16 absente.",
+  "Sensibilité/spécificité des signes pyramidaux (Babinski, hyperréflexie, spasticité, asymétrie faciale) et technique de l’épreuve de pronation : non trouvées dans les sources lues.",
+  "NIHSS : grille non lue ; seule sa mention dans la FI Actilyse (NIHSS > 25) est sourcée.",
+  "Sémiologie universitaire suisse : aucune source suisse de sémiologie neurologique trouvée (WebSearch Revue médicale suisse hémiparésie) ; source européenne francophone retenue (UMVF 2013, ancienne).",
+  "Lisibilité des figures : estimation géométrique (K46–K48), sans capture navigateur ; SEM-22 et SEM-23 non réalisables (discipline absente).",
+  "Baclofène intrathécal : FI téléchargée mais non analysée ; aucun constat.",
+  "Calculs : 8 contrôles NON_VERIFIABLE (K03, K05, K06, K08, K14, K32, K35, K61), tous convertis en constats ou propositions ; aucun calculable sans contrôle."
+ ],
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+}
