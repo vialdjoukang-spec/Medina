@@ -25,8 +25,29 @@
  const filterCodes = new Map(Object.entries(O.nosology?.filters || {}).map(([key, codes]) => [key, new Set(codes)]));
  const activeFilter = () => filterCodes.has(route?.q.get('filter')) ? route.q.get('filter') : '';
  const included = lesson => !activeFilter() || filterCodes.get(activeFilter()).has(lesson.code);
- // Project the display only. Canonical lessons, variants and course bodies remain intact.
- const visibleBlocks = () => activeFilter() ? O.blocks.map(block => ({...block, lessons:block.lessons.filter(included)})).filter(block => block.lessons.length) : O.blocks;
+ // Each view numbers its categories 1..n. Global keeps the embedded order; a filtered view
+ // ranks by the number of its own lessons shown in the category, then by the global order.
+ // Codes, lessons and course bodies never change: only the displayed rank does.
+ const viewOrders = {
+  frequent:{label:'Ordre : leçons fréquentes d’abord, puis ordre global', unit:['pathologie fréquente','pathologies fréquentes'],
+   reason:'Dans ce filtre, les catégories qui réunissent le plus de pathologies fréquentes viennent d’abord ; à égalité, l’ordre global de la spécialité est conservé. Les numéros sont recalculés de 1 à n pour cette vue ; le code CIM de chaque catégorie ne change pas.'},
+  federal_exam:{label:'Ordre : leçons fédérales d’abord, puis ordre global', unit:['pathologie de l’Examen fédéral','pathologies de l’Examen fédéral'],
+   reason:'Dans ce filtre, les catégories qui réunissent le plus de leçons étoilées (correspondances PROFILES 2017 / SSP) viennent d’abord ; à égalité, l’ordre global de la spécialité est conservé. Les numéros sont recalculés de 1 à n pour cette vue ; le code CIM de chaque catégorie ne change pas.'}
+ };
+ const views = new Map();
+ const visibleBlocks = () => {
+  const filter = activeFilter();
+  if (!views.has(filter)) {
+   const codes = filterCodes.get(filter);
+   const blocks = filter ? O.blocks.map(block => ({...block, lessons:block.lessons.filter(included)})).filter(block => block.lessons.length)
+    .map(block => ({...block, view_weight:new Set(block.lessons.filter(lesson => codes.has(lesson.code)).map(lesson => lesson.code)).size}))
+    .sort((a, b) => b.view_weight - a.view_weight || a.order - b.order) : O.blocks.map(block => ({...block}));
+   blocks.forEach((block, index) => {block.rank = index + 1;});
+   views.set(filter, blocks);
+  }
+  return views.get(filter);
+ };
+ const displayRank = block => block.rank || block.order;
  const visibleAvailable = () => available.filter(item => included(item.lesson));
  const filteredUrl = value => {
   const [path, query = ''] = value.split('?'), params = new URLSearchParams(query);
@@ -36,8 +57,17 @@
  const filterNotice = () => activeFilter() ? '<div class="mcg-filter-notice" role="status"><strong>Filtre : ' + h(filterNames[activeFilter()]) + '</strong><a class="mcg-back" href="#/home">← Toutes les leçons</a></div>' : '';
  const pad = value => String(value).padStart(2, '0');
  const rank = value => String(value) + '.';
- const orderNote = () => O.category_order ? '<p class="mcg-order-note" title="' + h(O.category_order.reason) + '">' + h(O.category_order.label) + '</p>' : '';
- const weightNote = block => typeof block.federal_weight === 'number' ? '<span class="mcg-order-weight">' + (block.federal_weight ? block.federal_weight + ' pathologie' + (block.federal_weight > 1 ? 's' : '') + ' de l’Examen fédéral' : 'Hors Examen fédéral') + '</span>' : '';
+ const orderNote = () => {
+  const view = activeFilter(), order = view ? viewOrders[view] : O.category_order;
+  return order ? '<p class="mcg-order-note" data-mcg-order-view="' + (view || 'global') + '" title="' + h(order.reason) + '">' + h(order.label) + '</p>' : '';
+ };
+ const ordinal = value => value + '<sup>' + (value === 1 ? 're' : 'e') + '</sup>';
+ const weightNote = block => activeFilter() && typeof block.view_weight === 'number' ? '<span class="mcg-order-weight" data-mcg-view-weight="' + block.view_weight + '">' + block.view_weight + ' ' + viewOrders[activeFilter()].unit[block.view_weight > 1 ? 1 : 0] + (block.order !== block.rank ? ' · ' + ordinal(block.order) + ' en vue globale' : '') + '</span>' : typeof block.federal_weight === 'number' ? '<span class="mcg-order-weight">' + (block.federal_weight ? block.federal_weight + ' pathologie' + (block.federal_weight > 1 ? 's' : '') + ' de l’Examen fédéral' : 'Hors Examen fédéral') + '</span>' : '';
+ const rankLabel = block => 'Catégorie ' + displayRank(block) + (activeFilter() ? ' sur ' + visibleBlocks().length + ' · ' + filterNames[activeFilter()] : '');
+ // Concise display name on screen; the official CIM label (when present) for tooltips, aria-labels and search.
+ const officialTitle = block => block.official_title || block.title;
+ // WCAG 2.5.3 : le nom accessible reprend le nom affiché ; le libellé officiel reste en info-bulle.
+ const officialHint = block => block.official_title && block.official_title !== block.title ? ' title="' + h(block.official_title) + '"' : '';
  const name = lesson => lesson.code + ' — ' + lesson.title;
  let goldIconIndex = 0;
  const gold = lesson => {
@@ -104,7 +134,7 @@
  const rule = () => '<details class="mcg-rule"><summary>Un mot souligné ? Explorez son explication.</summary><p>Dans les cours, les mots interactifs ouvrent les mécanismes, les précisions et leurs sources. Les quatre onglets vous accompagnent du raisonnement à la prise en charge.</p></details>';
  function categoryCard(block) {
   const count = block.lessons.filter(own).length;
-  return '<a class="mcg-category-card" href="' + h(categoryUrl(block)) + '" data-mcg-category="' + h(block.code) + '" aria-label="Catégorie ' + block.order + ' : ' + h(block.title) + ' — ' + h(block.code) + '"><div class="mcg-category-top"><span class="mcg-category-number">' + rank(block.order) + '</span><span class="mcg-code">' + h(block.code) + '</span></div><h2>' + h(block.title) + '</h2>' + weightNote(block) + categoryProgress(block) + '<span class="mcg-category-foot"><span>' + block.lessons.length + ' chapitre' + (block.lessons.length > 1 ? 's' : '') + (count ? '<i class="mcg-available-dot"></i>' + count + ' disponible' + (count > 1 ? 's' : '') : '') + '</span>' + arrow + '</span></a>';
+  return '<a class="mcg-category-card" href="' + h(categoryUrl(block)) + '" data-mcg-category="' + h(block.code) + '" data-mcg-rank="' + displayRank(block) + '"' + officialHint(block) + ' aria-label="' + h(rankLabel(block)) + ' : ' + h(block.title) + ' — ' + h(block.code) + '"><div class="mcg-category-top"><span class="mcg-category-number" data-mcg-rank-value>' + rank(displayRank(block)) + '</span><span class="mcg-code">' + h(block.code) + '</span></div><h2>' + h(block.title) + '</h2>' + weightNote(block) + categoryProgress(block) + '<span class="mcg-category-foot"><span>' + block.lessons.length + ' chapitre' + (block.lessons.length > 1 ? 's' : '') + (count ? '<i class="mcg-available-dot"></i>' + count + ' disponible' + (count > 1 ? 's' : '') : '') + '</span>' + arrow + '</span></a>';
  }
  function variants(lesson) {
   const listed = lesson.searchVariants || lesson.variants;
@@ -117,7 +147,7 @@
   return '<article class="mcg-lesson' + (featured ? ' mcg-featured-lesson' : '') + '" data-mcg-lesson="' + h(lesson.code) + '" data-mcg-reference="false"><a class="mcg-lesson-main" href="' + h(lessonUrl(block, lesson)) + '" aria-label="' + h(name(lesson)) + ' · ' + status(lesson) + '"><span class="mcg-lesson-icon">' + book + '</span><span class="mcg-course-copy"><span class="mcg-code">' + h(lesson.code) + '</span><span class="mcg-lesson-title">' + markedTitle(lesson) + '</span><span class="mcg-lesson-state ' + (own(lesson) ? 'is-available' : 'is-planned') + '">' + status(lesson) + ' <span aria-hidden="true">→</span></span></span></a>' + (!featured ? variants(lesson) : '') + '</article>';
  }
  function blockSection(block) {
-  return '<section class="mcg-block" data-mcg-block="' + h(block.code) + '"><header class="mcg-block-heading"><div><span class="mcg-eyebrow">Catégorie ' + block.order + ' · ' + h(block.code) + '</span><h2>' + h(block.title) + '</h2></div><span class="mcg-section-count">' + block.lessons.length + ' chapitre' + (block.lessons.length > 1 ? 's' : '') + '</span></header>' + categoryProgress(block) + '<div class="mcg-lessons">' + block.lessons.map(lesson => lessonCard(block, lesson)).join('') + '</div></section>';
+  return '<section class="mcg-block" data-mcg-block="' + h(block.code) + '" data-mcg-rank="' + displayRank(block) + '"><header class="mcg-block-heading"><div><span class="mcg-eyebrow">Catégorie <span data-mcg-rank-value>' + displayRank(block) + '</span> · ' + h(block.code) + '</span><h2' + officialHint(block) + '>' + h(block.title) + '</h2></div><span class="mcg-section-count">' + block.lessons.length + ' chapitre' + (block.lessons.length > 1 ? 's' : '') + '</span></header>' + categoryProgress(block) + '<div class="mcg-lessons">' + block.lessons.map(lesson => lessonCard(block, lesson)).join('') + '</div></section>';
  }
  function cover(compact = false) {
   const count = visibleAvailable().length, categories = visibleBlocks().length;
@@ -166,7 +196,7 @@
   const query = route.q.get('q') || '', needle = norm(query), onlyAvailable = route.q.get('available') === '1', matches = new Map();
   visibleBlocks().forEach(block => block.lessons.forEach(lesson => {
    if (onlyAvailable && !own(lesson)) return;
-   const text = [block.code, block.title, lesson.code, lesson.title, ...lesson.variants.flatMap(v => [v.code, v.title, ...v.subcodes.flatMap(s => [s.code, s.title])])].join(' ');
+   const text = [block.code, block.title, block.official_title || '', lesson.code, lesson.title, ...lesson.variants.flatMap(v => [v.code, v.title, ...v.subcodes.flatMap(s => [s.code, s.title])])].join(' ');
    if (!needle || norm(text).includes(needle)) {
     const previous = matches.get(lesson.code), merged = new Map((previous?.lesson.searchVariants || []).map(v => [v.code, v]));
     lesson.variants.forEach(v => merged.set(v.code, v));
@@ -208,7 +238,7 @@
  footer = () => (!activeFilter() && O.nosology?.secondary_references?.length ? '<details class="mcg-variants"><summary>Renvois associés à cette spécialité · ' + O.nosology.secondary_references.length + '</summary><ul>' + O.nosology.secondary_references.map(link=>'<li><a href="'+h(link.url)+'">'+h(link.code)+' · '+h(link.fragment)+'</a></li>').join('')+'</ul></details>' : '') + '<footer class="mcg-footer"><span>MEDINA <span aria-hidden="true">/</span> ' + h(title) + '</span><span>' + h(O.version) + ' <span aria-hidden="true">·</span> <a href="../index.html">Toutes les spécialités ↗</a></span></footer>';
  drawSidebar = function() {
   const active = aliases.get(route?.id), category = route?.q.get('category') || active?.block.code;
-  document.getElementById('spec-nav').innerHTML = visibleBlocks().map(block => '<details class="mcg-sidebar-block" ' + (category === block.code ? 'open' : '') + ' data-mcg-sidebar-category="' + h(block.code) + '"><summary><span>' + rank(block.order) + '</span><b>' + h(block.title) + '</b></summary><a class="mcg-sidebar-all" href="' + h(categoryUrl(block)) + '">Tous les chapitres <span aria-hidden="true">→</span></a>' + block.lessons.map(lesson => '<a class="mcg-sidebar-lesson ' + (active?.lesson.code === lesson.code ? 'active' : '') + '" href="' + h(lessonUrl(block, lesson)) + '" aria-label="' + h(name(lesson)) + '" data-fragment-chapter="' + (own(lesson) ? h(lesson.code) : '') + '" data-mcg-sidebar-lesson="' + h(lesson.code) + '"><span>' + '<span class="mcg-sidebar-title">' + markedTitle(lesson) + '</span><small>' + h(lesson.code) + ' · ' + (own(lesson) ? 'Disponible' : 'En préparation') + '</small></span></a>').join('') + '</details>').join('') || '<p class="mcg-sidebar-empty">Aucune catégorie à afficher.</p>';
+  document.getElementById('spec-nav').innerHTML = visibleBlocks().map(block => '<details class="mcg-sidebar-block" ' + (category === block.code ? 'open' : '') + ' data-mcg-sidebar-category="' + h(block.code) + '" data-mcg-rank="' + displayRank(block) + '"><summary><span data-mcg-rank-value>' + rank(displayRank(block)) + '</span><b>' + h(block.title) + '</b></summary><a class="mcg-sidebar-all" href="' + h(categoryUrl(block)) + '">Tous les chapitres <span aria-hidden="true">→</span></a>' + block.lessons.map(lesson => '<a class="mcg-sidebar-lesson ' + (active?.lesson.code === lesson.code ? 'active' : '') + '" href="' + h(lessonUrl(block, lesson)) + '" aria-label="' + h(name(lesson)) + '" data-fragment-chapter="' + (own(lesson) ? h(lesson.code) : '') + '" data-mcg-sidebar-lesson="' + h(lesson.code) + '"><span>' + '<span class="mcg-sidebar-title">' + markedTitle(lesson) + '</span><small>' + h(lesson.code) + ' · ' + (own(lesson) ? 'Disponible' : 'En préparation') + '</small></span></a>').join('') + '</details>').join('') || '<p class="mcg-sidebar-empty">Aucune catégorie à afficher.</p>';
   document.querySelectorAll('.nav-main a').forEach(link => {
    const base = link.dataset.mcgBaseHref || link.getAttribute('href');
    link.dataset.mcgBaseHref = base;
@@ -301,6 +331,46 @@
   const observer=new MutationObserver(()=>{if(!m.isConnected)MC_navigoDestroy();});observer.observe(document.getElementById('content'),{childList:true});
   MC_NAV_CLEANUP=()=>{observer.disconnect();desktop.removeEventListener('change',resize);document.removeEventListener('keydown',onKey);document.removeEventListener('pointerdown',outside);host.remove();};
   open(desktop.matches,false);return refresh;
+ };
+ // FLIP transition between views: cards and side entries glide to their new place and a
+ // changed number rolls in. Positions are measured relative to their own container, so the
+ // scroll reset of render() does not distort them. Reduced motion: no animation at all.
+ const motionAllowed = () => typeof Element.prototype.animate === 'function' && !matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const flipEasing = 'cubic-bezier(.2,.7,.2,1)', flipDuration = 200, rankDuration = 220;
+ const offset = (element, origin) => {const a = element.getBoundingClientRect(), b = origin.getBoundingClientRect(); return {x:a.left - b.left, y:a.top - b.top};};
+ const flipGroups = () => [['cards', document.querySelector('#content .mcg-category-grid'), '[data-mcg-category]', 'mcgCategory'], ['side', document.getElementById('spec-nav'), '[data-mcg-sidebar-category]', 'mcgSidebarCategory']]
+  .filter(([, container]) => container && container.getClientRects().length);
+ let shownRanks = null;
+ function layoutSnapshot() {
+  return new Map(flipGroups().map(([group, container, selector, key]) => [group, new Map([...container.querySelectorAll(selector)].map(item => [item.dataset[key], offset(item, container)]))]));
+ }
+ function playTransition(before, previousRanks) {
+  flipGroups().forEach(([group, container, selector, key]) => {
+   const previous = before.get(group);
+   if (!previous?.size) return;
+   const limit = Math.max(innerHeight, 600) * 1.5;
+   container.querySelectorAll(selector).forEach(item => {
+    const from = previous.get(item.dataset[key]), to = offset(item, container);
+    if (from && Math.abs(from.y - to.y) <= limit) {
+     const dx = from.x - to.x, dy = from.y - to.y;
+     if (Math.abs(dx) >= 1 || Math.abs(dy) >= 1) item.animate([{translate:dx + 'px ' + dy + 'px'}, {translate:'0 0'}], {duration:flipDuration, easing:flipEasing});
+    } else item.animate([{opacity:0, scale:'.96'}, {opacity:1, scale:'1'}], {duration:flipDuration, easing:flipEasing});
+   });
+  });
+  document.querySelectorAll('#content [data-mcg-rank], #spec-nav [data-mcg-rank]').forEach(holder => {
+   const code = holder.dataset.mcgCategory || holder.dataset.mcgBlock || holder.dataset.mcgSidebarCategory, from = previousRanks.get(code);
+   const value = holder.querySelector('[data-mcg-rank-value]');
+   if (!value || !from || String(from) === holder.dataset.mcgRank) return;
+   value.dataset.mcgRankFrom = from;
+   value.animate([{opacity:0, translate:'0 -.65em', scale:'1.3'}, {opacity:1, translate:'0 0', scale:'1'}], {duration:rankDuration, easing:flipEasing});
+  });
+ }
+ const renderView = render;
+ render = function() {
+  const animate = shownRanks && motionAllowed(), before = animate ? layoutSnapshot() : null, previousRanks = shownRanks;
+  renderView.apply(this, arguments);
+  shownRanks = new Map(visibleBlocks().map(block => [block.code, displayRank(block)]));
+  if (before) playTransition(before, previousRanks);
  };
  window.MEDINA_CATEGORY_ORGANISATION = O;
  render();
