@@ -13,6 +13,26 @@ Tu reprends le travail de la session `session_012rLPEdW6E6hLqqjusnCoMF`. Lis ce 
 ## 2. Gouvernance (ne jamais contourner)
 Mission approuvée dans `main` (`.medina/missions/`), puis `python3 tools/ai_session_guard.py acquire <ID> --base <SHA main>`, puis `git worktree add -b <branche exacte> <dossier> <SHA>`, puis `start … --actor Claude --conversation <manifeste> --worktree <dossier>`. Aucune auto-approbation. Ne jamais forcer `main`. Une leçon n'est **close** que par son reçu Alpha dans main (`organisation/alpha-publications/Claude/<CODE>/`, phase `completed`, `audits.SEMIO`). Des rapports seuls ne clôturent rien.
 
+## 0. État au 16.10.2026, à la fin de la session session_012rLPEdW6E6hLqqjusnCoMF (prime sur la suite)
+
+- **Lot 2 CLOS** (C72, G23, G58, G63, G64, G71, G72).
+  - Audits ALPHA1 MED et LANG fusionnés : PR #183 à #196.
+  - Missions d'intégration approuvées par la PR #202, sous le mandat GOUVERNANCE-01.
+  - Intégrations et reçus Alpha fusionnés : #220 (G63), #221 (C72), #222 (G71), #223 (G58), #224 (G23), #225 (G64), #226 (G72).
+  - Toutes les réservations sont libérées.
+- **7_Starter : 14 leçons closes sur 77.**
+- **Répartition convenue avec la session `session_015STHmuYWNmuSZzRgs2rHdW`.**
+  - Elle prend les audits des tours 3 à 7 (G73 à D74), le frontend et le relais GOUVERNANCE-02 g2 (PR #203).
+  - Ne pas acquérir GOUVERNANCE-02 sans la prévenir.
+  - Avant de libérer le dernier mandat de gouvernance, approuver son relais. Erreur commise le 16.10 avec GOUVERNANCE-01 g2, réparée par la PR #203.
+- **Méthode d'intégration**, dans le scratchpad perdu : W intègre, P relit de façon indépendante, rédige les trois revues (MED, LANG, SEMIO) au schéma G45, puis le reçu. Les modèles sont dans les dossiers `ALPHA77-CLAUDE-<CODE>-INTEGRATE` du lot 2.
+- **`espace.py garde`.** Sur une branche linéaire, il rejoue chaque commit et refuse ceux qui modifient les sources avant le reçu. Fusionner `origin/main` dans la branche avant la PR : l'évaluation devient globale et passe. Ce n'est pas un contournement.
+- **Décision de Vial (16.10) : les figures anatomiques dessinées par IA sont retirées sans remplacement et déclarées comme lacune.**
+  - Retraits effectués : C72 fig. 1 et 3, G71 fig. 2, G72 fig. 1 et 2.
+  - Il faudra des originaux sourcés.
+  - `tests/audit_sciences.py`, qui n'est pas dans la CI, signale donc « aucune figure » pour ces disciplines.
+- **Test fragile `tests/test_alpha_publication.py`** (`.git/objects` non vide au nettoyage) : la correction est confiée à l'autre session, sous OUTILS-AUTONOMES.
+
 ## 3. État exact au moment de la transition
 - Lot 1 (I61, G45, E11, E12, N18, D50, C77) : 14 audits ALPHA1 fusionnés (PR #124–#137), réservations libérées. Outil PR #141 fusionné.
 - Missions **ALPHA77-CLAUDE-<CODE>-INTEGRATE** acquises et démarrées (base `abd681e5175db8c89e87dd7b83f96d0249d81cd7`), branches `claude/alpha77/<code>-integrate-g1`.
