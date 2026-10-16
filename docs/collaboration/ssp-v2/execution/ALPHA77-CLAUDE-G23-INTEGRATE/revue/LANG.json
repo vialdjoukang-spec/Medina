@@ -1,0 +1,83 @@
+{
+ "actor": "Claude",
+ "code": "G23",
+ "kind": "LANG",
+ "mission": "ALPHA77-CLAUDE-G23-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "reviewed_commit": "d654ab4109eb31bd8bb37e1dff2c463b4d4196f4",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/G23/G23_a.html": "01b75db8e5863831f254431e7fd39a1398abfdf060268eb0efdc9647b8b03d58",
+  "chapters/G23/G23_b.html": "a3ffac31116e26c0d12da0c8a7639e0e5d3038bbd7331d4126e54020f21901a6",
+  "chapters/G23/G23_c.html": "b7827cbbe754a4d47bfdf6cdc3e601f887384a1cf08b25488b1ef00e4367a128",
+  "chapters/G23/G23_d.html": "9a43c9eed9a053d4360d97207c4c5263ec335c6e8e3eec1f3762ab2313b6b56a",
+  "chapters/G23/G23_pop1.html": "3bdde9dad267fa2b1d73a9c938b4237369ba76d8fa17af55c114b01fbbb3c861",
+  "chapters/G23/G23_pop2.html": "b24db510e24e288d053faa6bdf2485bfc27da46bf31f93f955a0b46ff4c17379",
+  "glossary/g23.py": "7314efa443b4e96c72f9ea2b9d7517c0e65d4f7299f92151510b40d68878fa07"
+ },
+ "reviewed_files_sha256": {
+  "chapters/G23/G23_a.html": "59e01d6f0bea8df55e2618d5570fcd76f7c0bfd14e64d906c520227fd766aa26",
+  "chapters/G23/G23_b.html": "00164de4639bf1e02035325807e6a239c2137eb20b008f69b7451cde51468db8",
+  "chapters/G23/G23_c.html": "3e6300f10211ff1635bc1a772e72670e7e1849370998b7fb51685f5f2873329b",
+  "chapters/G23/G23_d.html": "031ec86c999988b5ea908db05ae399e6b1dbc86d9c328f28f9730543869a409c",
+  "chapters/G23/G23_pop1.html": "c691e722d0e2164be5b2670e0df07fb34ed425126f80a7f4b0ee14e0360635f9",
+  "chapters/G23/G23_pop2.html": "19e8f874a027a5f28278e04d564f2e745cf0ad296a7d18d74ec050edba65a44f",
+  "glossary/g23.py": "4d202922e8abb9e50f06b61b5a597e7523b6f07c7d00e70bf0d94f0dddca5686"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "scope": "Propositions LANG appliquées et non appliquées ; phrases nouvelles de W et de P ; sous-onglet et fenêtres de sémiologie.",
+ "findings": [
+  {
+   "id": "P-LANG-01",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G23/G23_pop2.html",
+   "constat": "Anglicisme « le patient agit ses rêves ».",
+   "verification": "STYLE_REDACTION : phrase complète, terme français.",
+   "correction": "« le patient met ses rêves en actes ».",
+   "evidence": [
+    "G23_pop2.html, fenêtre g23-sm-rbd"
+   ]
+  },
+  {
+   "id": "P-LANG-02",
+   "severite": "—",
+   "status": "resolved",
+   "fichier": "toutes",
+   "constat": "Propositions LANG : 59 appliquées, 4 absorbées par des corrections MED, 1 renvoi tranché (031 par C15), 15 renvois médicaux non appliqués.",
+   "verification": "Statuts relus dans integration/corrections.json (lang_statut) ; renvois non appliqués conformes au protocole (non tranchés par l’audit MED).",
+   "correction": "Aucune.",
+   "evidence": [
+    "integration/corrections.json"
+   ]
+  },
+  {
+   "id": "P-LANG-03",
+   "severite": "—",
+   "status": "resolved",
+   "fichier": "toutes",
+   "constat": "Phrases nouvelles de W et de P.",
+   "verification": "Phrases complètes, troisième personne, annonces avant tableaux et listes, normal avant pathologique dans la sémiologie, aucune métaphore ; formules de chantier retirées.",
+   "correction": "Aucune autre.",
+   "evidence": [
+    "Différence textuelle base → HEAD"
+   ]
+  }
+ ],
+ "choix_differes": [
+  "15 renvois médicaux LANG non tranchés par l’audit MED (004, 005, 006, 007, 012, 015, 030, 032, 043, 051, 052, 057, 059, 062, 063)"
+ ],
+ "evidence": [
+  "integration/corrections.json relu.",
+  "Différence textuelle base → HEAD.",
+  "python3 test_v7.py --static G23 : OK (abréviations couvertes ; MAPT et PSP-PI ajoutées au glossaire)."
+ ],
+ "conclusion": "Aucun constat bloquant ; un anglicisme corrigé.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}

@@ -5,16 +5,16 @@ def a(key, letters, full, definition, window):
 a('SGB', [('S', 'Syndrome'), ('G', 'de Guillain-'), ('B', 'Barré')], 'Syndrome de Guillain-Barré',
   'Neuropathie aiguë dysimmune dont le nadir est atteint en quatre semaines au plus, d’après la revue allemande de 2018. Elle apparaît souvent comme une paralysie ascendante après une infection digestive ou respiratoire.', 'sgb')
 a('PIDC', [('P', 'Polyradiculoneuropathie'), ('I', 'Inflammatoire'), ('D', 'Démyélinisante'), ('C', 'Chronique')], 'Polyradiculoneuropathie inflammatoire démyélinisante chronique',
-  'Neuropathie dysimmune dont l’évolution dépasse huit semaines, ce qui la distingue du syndrome de Guillain-Barré. Le dossier cite 2 à 3 cas pour 100 000, sans préciser s’il s’agit d’une incidence ou d’une prévalence.', 'pidc')
+  'Neuropathie dysimmune dont l’évolution dépasse huit semaines, ce qui la distingue du syndrome de Guillain-Barré. La revue allemande de 2018 cite une prévalence de 2 à 3 pour 100 000.', 'pidc')
 a('QST', [('Q', 'Quantitative'), ('S', 'Sensory'), ('T', 'Testing (tests sensitifs quantitatifs)')], 'Tests sensitifs quantitatifs',
   'Ensemble d’épreuves psychophysiques qui mesurent les seuils de perception sensitive. Avec la densité des fibres intraépidermiques, ils soutiennent le diagnostic de neuropathie des petites fibres.', 'petites-fibres')
 a('NeuPSIG', [('Neu', 'Neuropathic (douleur neuropathique)'), ('P', 'Pain'), ('SIG', 'Special Interest Group (groupe d’intérêt)')], 'Groupe d’intérêt sur la douleur neuropathique de l’association internationale pour l’étude de la douleur',
   'Ce groupe a publié en 2025, dans Lancet Neurology, une méta-analyse de 313 essais sur les traitements de la douleur neuropathique. Ses résultats valent pour toutes les causes, non pour G64 en particulier.', 'neupsig')
 a('IRSN', [('I', 'Inhibiteurs de la'), ('R', 'Recapture de la'), ('S', 'Sérotonine et de la'), ('N', 'Noradrénaline')], 'Inhibiteurs de la recapture de la sérotonine et de la noradrénaline',
-  'Classe d’antidépresseurs dont fait partie la duloxétine. La méta-analyse NeuPSIG 2025 la place en première ligne forte pour la douleur neuropathique.', 'neupsig')
-a('ANCA', [('A', 'Anticorps'), ('N', 'Anti-'), ('C', 'Cytoplasme des'), ('A', 'neutrophiles')], 'Anticorps anti-cytoplasme des neutrophiles',
+  'Classe d’antidépresseurs dont fait partie la duloxétine. La méta-analyse NeuPSIG 2025 place cette classe en première ligne forte pour la douleur neuropathique.', 'neupsig')
+a('ANCA', [('A', 'Anti- (anti-)'), ('N', 'Neutrophil (neutrophiles)'), ('C', 'Cytoplasmic (cytoplasme)'), ('A', 'Antibodies (anticorps)')], 'Anticorps anti-cytoplasme des neutrophiles',
   'Auto-anticorps dosés dans le bilan d’une suspicion de vascularite. Leur présence figure parmi les critères en faveur d’une vascularite systémique selon la guideline PNS 2010. Le dossier cite les variantes p-ANCA et c-ANCA.', 'vasc-criteres')
-a('ANA', [('A', 'Anticorps'), ('N', 'Anti-'), ('A', 'Noyaux')], 'Anticorps antinucléaires',
+a('ANA', [('A', 'Anti- (anti-)'), ('N', 'Nuclear (nucléaires)'), ('A', 'Antibodies (anticorps)')], 'Anticorps antinucléaires',
   'Auto-anticorps dosés dans la biologie élargie orientée de la revue allemande de 2018.', 'biologie')
 a('VS', [('V', 'Vitesse de'), ('S', 'Sédimentation')], 'Vitesse de sédimentation',
   'Marqueur inflammatoire exprimé en mm/h. Une valeur de 100 mm/h ou plus figure parmi les critères en faveur d’une vascularite systémique selon la guideline PNS 2010.', 'vasc-criteres')
@@ -35,11 +35,11 @@ a('ENG', [('E', 'Électro-'), ('N', 'Neuro-'), ('G', 'Graphie')], 'Électroneuro
 a('IRM', [('I', 'Imagerie par'), ('R', 'Résonance'), ('M', 'Magnétique')], 'Imagerie par résonance magnétique',
   'Technique d’imagerie dont la neurographie par IRM figure à l’étape 4 de la démarche de la revue allemande de 2018.', 'imagerie')
 a('TA', [('T', 'Tension'), ('A', 'Artérielle')], 'Tension artérielle',
-  'Pression artérielle. La Duloxetin-Mepha® élève en moyenne la tension de 1 à 2 mmHg et des crises hypertensives sont décrites, d’où une surveillance.', 'duloxetine')
+  'Pression artérielle. La duloxétine (Duloxetin-Mepha®) élève en moyenne la tension de 1 à 2 mmHg et des crises hypertensives sont décrites, d’où une surveillance.', 'duloxetine')
 a('NNT', [('N', 'Number'), ('N', 'Needed'), ('T', 'to Treat (nombre de patients à traiter)')], 'Nombre de patients à traiter',
   'Nombre de patients à traiter pour qu’un patient de plus qu’avec le comparateur obtienne le bénéfice mesuré. Plus il est bas, plus le traitement est efficace.', 'neupsig')
 a('NNH', [('N', 'Number'), ('N', 'Needed'), ('H', 'to Harm (nombre de patients à traiter pour un préjudice)')], 'Nombre de patients à traiter pour observer un effet nocif',
-  'Nombre de patients à traiter pour qu’un patient de plus qu’avec le comparateur subisse l’événement indésirable mesuré. Plus il est haut, mieux le traitement est toléré. Le résumé lu de la méta-analyse ne précise pas l’événement retenu.', 'neupsig')
+  'Nombre de patients à traiter pour qu’un patient de plus qu’avec le comparateur subisse l’événement indésirable mesuré. Plus il est haut, mieux le traitement est toléré. Dans la méta-analyse NeuPSIG 2025, l’événement compté est l’arrêt du traitement pour effet indésirable.', 'neupsig')
 a('POEMS', [('P', 'Polyneuropathy (polyneuropathie)'), ('O', 'Organomegaly (organomégalie)'), ('E', 'Endocrinopathy (endocrinopathie)'), ('M', 'Monoclonal protein (protéine monoclonale)'), ('S', 'Skin changes (lésions cutanées)')], 'Syndrome POEMS',
   'Association d’une polyneuropathie, d’une paraprotéine, d’une organomégalie, d’une endocrinopathie et de lésions cutanées ou ostéosclérotiques. La revue allemande de 2018 la cite parmi les drapeaux rouges.', 'poems')
 a('MAG', [('M', 'Myelin-'), ('A', 'Associated (associée à la myéline)'), ('G', 'Glycoprotein (glycoprotéine)')], 'Glycoprotéine associée à la myéline',
@@ -55,36 +55,51 @@ a('IgG', [('Ig', 'Immunoglobuline'), ('G', 'classe G')], 'Immunoglobuline G',
 a('VIH', [('V', 'Virus de l’'), ('I', 'Immunodéficience'), ('H', 'Humaine')], 'Virus de l’immunodéficience humaine',
   'Sérologie incluse dans la biologie élargie orientée de la revue allemande de 2018.', 'biologie')
 a('B12', [('B12', 'Vitamine B12, nom de la cobalamine, non une abréviation à développer')], 'Vitamine B12',
-  'Sa carence cause une neuropathie, et peut exister sans anémie macrocytaire.', 'biologie')
+  'Sa carence cause une neuropathie et peut exister sans anémie macrocytaire.', 'biologie')
 a('Clcr', [('Cl', 'Clairance de la'), ('cr', 'créatinine')], 'Clairance de la créatinine',
-  'Mesure ou estimation de la fonction rénale exprimée en ml/min. La Lyrica® impose une adaptation de dose entre 30 et 60 ml/min et n’est pas recommandée en dessous de 30 ml/min.', 'pregabaline')
-a('FI', [('F', 'Fachinformation'), ('I', 'Information, soit l’information professionnelle')], 'Information professionnelle suisse',
-  'Texte de référence du médicament approuvé par Swissmedic, lu dans la base AIPS via AmiKo.', 'pregabaline')
+  'Mesure ou estimation de la fonction rénale exprimée en ml/min. La prégabaline (Lyrica®) impose une adaptation de dose entre 30 et 60 ml/min et ne doit pas être utilisée en dessous de 30 ml/min.', 'pregabaline')
+a('FI', [('F', 'Fach- (professionnelle)'), ('I', 'information')], 'Information professionnelle suisse',
+  'Il s’agit du texte de référence du médicament approuvé par Swissmedic ; il a été lu dans la base AIPS via AmiKo.', 'pregabaline')
 a('EFNS', [('E', 'European'), ('F', 'Federation of'), ('N', 'Neurological'), ('S', 'Societies')], 'Fédération européenne des sociétés de neurologie',
   'Elle est aujourd’hui l’Académie européenne de neurologie (EAN). Elle a publié avec la PNS la guideline 2010 sur la biopsie cutanée.', 'biopsie-cutanee')
 a('EAN', [('E', 'European'), ('A', 'Academy of'), ('N', 'Neurology')], 'Académie européenne de neurologie',
-  'Successeur de l’EFNS. Le dossier n’a lu aucune guideline EAN récente sur la neuropathie non étiquetée.', 'biopsie-cutanee')
+  'Elle succède à l’EFNS. Le dossier n’a lu aucune guideline EAN récente sur la neuropathie non étiquetée.', 'biopsie-cutanee')
 a('PNS', [('P', 'Peripheral'), ('N', 'Nerve'), ('S', 'Society')], 'Société du nerf périphérique',
-  'Société internationale. Elle a publié en 2010 la guideline sur la vascularite non systémique et, avec l’EFNS, celle sur la biopsie cutanée.', 'vasc-criteres')
+  'La PNS est une société internationale. Elle a publié en 2010 la guideline sur la vascularite non systémique et, avec l’EFNS, celle sur la biopsie cutanée.', 'vasc-criteres')
 a('GM', [('G', 'German'), ('M', 'Modification')], 'Modification allemande de la classification',
   'Suffixe de CIM-10-GM : adaptation allemande de la classification internationale, publiée par le BfArM et reprise par l’OFS.', 'code')
 a('OFS', [('O', 'Office'), ('F', 'fédéral de la'), ('S', 'statistique')], 'Office fédéral de la statistique',
-  'Éditeur suisse de la CIM-10-GM.', 'code')
+  'L’OFS édite la CIM-10-GM en Suisse.', 'code')
 a('BfArM', [('BfArM', 'Bundesinstitut für Arzneimittel und Medizinprodukte, nom propre de l’institut allemand, non une abréviation à développer en français')], 'Institut fédéral allemand des médicaments et des dispositifs médicaux',
-  'Éditeur allemand de la CIM-10-GM 2024.', 'code')
+  'Le BfArM édite la CIM-10-GM 2024 en Allemagne.', 'code')
 a('CIM', [('C', 'Classification'), ('I', 'Internationale des'), ('M', 'Maladies')], 'Classification internationale des maladies',
-  'Ici la CIM-10-GM 2024, dont G64 est une catégorie.', 'code')
+  'Dans la leçon, il s’agit de la CIM-10-GM 2024, dont G64 est une catégorie.', 'code')
 a('Nav', [('Na', 'Sodium (natrium)'), ('v', 'voltage-dépendant')], 'Canal sodique voltage-dépendant',
   'Les variants à gain de fonction des canaux Nav1.7, 1.8 et 1.9 sont associés à la neuropathie des petites fibres.', 'nav')
 a('PMP22', [('PMP22', 'Peripheral Myelin Protein 22, nom de gène, non développé lettre à lettre')], 'Gène PMP22',
-  'Un des gènes de la liste génétique de la revue allemande de 2018.', 'genetique')
+  'Ce gène figure dans la liste génétique de la revue allemande de 2018.', 'genetique')
 a('GJB1', [('GJB1', 'Gap Junction Beta 1, nom de gène, non développé lettre à lettre')], 'Gène GJB1',
-  'Un des gènes de la liste génétique de la revue allemande de 2018.', 'genetique')
+  'Ce gène figure dans la liste génétique de la revue allemande de 2018.', 'genetique')
 a('MPZ', [('MPZ', 'Myelin Protein Zero, nom de gène, non développé lettre à lettre')], 'Gène MPZ',
-  'Un des gènes de la liste génétique de la revue allemande de 2018.', 'genetique')
+  'Ce gène figure dans la liste génétique de la revue allemande de 2018.', 'genetique')
 a('MFN2', [('MFN2', 'Mitofusin 2, nom de gène, non développé lettre à lettre')], 'Gène MFN2',
-  'Un des gènes de la liste génétique de la revue allemande de 2018.', 'genetique')
+  'Ce gène figure dans la liste génétique de la revue allemande de 2018.', 'genetique')
 a('Dtsch Arztebl', [('Dtsch Arztebl', 'Deutsches Ärzteblatt, nom propre de revue, non une abréviation')], 'Deutsches Ärzteblatt, revue médicale allemande',
   'Elle a publié en 2018 la revue narrative « Polyneuropathies », source principale de la leçon.', 'code')
 a('AmiKo', [('AmiKo', 'nom propre d’une application de consultation des informations professionnelles, non une abréviation')], 'AmiKo, application de consultation des informations professionnelles suisses',
   'Elle donne accès aux informations professionnelles de Swissmedic.', 'pregabaline')
+# Ajouts de l’intégration ALPHA77 (clés absentes du glossaire commun ; les clés déjà définies ailleurs ne sont pas redéfinies).
+a('G62.9', [('G62', 'autres polyneuropathies'), ('.9', 'sans précision')], 'Polyneuropathie, sans précision (G62.9)',
+  'Sous-catégorie de la CIM-10-GM 2024 pour une polyneuropathie reconnue dont la cause reste inconnue ; identifiant de classification, non une abréviation lettre à lettre.', 'code')
+a('G62.80', [('G62', 'autres polyneuropathies'), ('.80', 'polyneuropathie de réanimation')], 'Polyneuropathie de réanimation (G62.80)',
+  'Sous-catégorie de la CIM-10-GM 2024 pour la polyneuropathie acquise en soins intensifs (critical illness) ; identifiant de classification, non une abréviation lettre à lettre.', 'code')
+a('mEGRIS', [('m', 'modified (modifié)'), ('E', 'Erasmus'), ('G', 'GBS (Guillain-Barré syndrome)'), ('R', 'Respiratory (respiratoire)'), ('I', 'Insufficiency (insuffisance)'), ('S', 'Score')], 'Score d’Erasmus modifié d’insuffisance respiratoire du syndrome de Guillain-Barré',
+  'Selon la guideline EAN/PNS de 2023, ce score estime le risque qu’un patient atteint du syndrome de Guillain-Barré ait besoin d’une ventilation artificielle.', 'sgb')
+a('SCN9A', [('SCN9A', 'nom du gène de la sous-unité alpha du canal sodique Nav1.7, non développé lettre à lettre')], 'Gène SCN9A',
+  'Gène du canal sodique Nav1.7. Selon la guideline allemande de 2025, un variant rare de SCN9A, SCN10A ou SCN11A est trouvé dans 10 à 30 % des neuropathies des petites fibres selon les études.', 'nav')
+a('SCN10A', [('SCN10A', 'nom du gène de la sous-unité alpha du canal sodique Nav1.8, non développé lettre à lettre')], 'Gène SCN10A',
+  'Gène du canal sodique Nav1.8, analysé dans la neuropathie des petites fibres selon la guideline allemande de 2025.', 'nav')
+a('SCN11A', [('SCN11A', 'nom du gène de la sous-unité alpha du canal sodique Nav1.9, non développé lettre à lettre')], 'Gène SCN11A',
+  'Gène du canal sodique Nav1.9, analysé dans la neuropathie des petites fibres selon la guideline allemande de 2025.', 'nav')
+a('SPTLC1', [('SPTLC1', 'nom de gène, non développé lettre à lettre')], 'Gène SPTLC1',
+  'Selon la guideline allemande de 2025, une neuropathie héréditaire liée à ce gène peut imiter une neuropathie inflammatoire à la neurographie.', 'genetique')

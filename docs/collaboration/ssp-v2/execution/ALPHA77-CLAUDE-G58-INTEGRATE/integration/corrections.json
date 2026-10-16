@@ -1,0 +1,1381 @@
+{
+ "mission": "ALPHA77-CLAUDE-G58-INTEGRATE",
+ "phase": 1,
+ "agent": "W",
+ "code": "G58",
+ "date": "2026-10-16",
+ "base": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "rapports": [
+  "docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-G58-MED/rapport.json",
+  "docs/collaboration/ssp-v2/execution/ALPHA1-CLAUDE-G58-LANG/rapport.json"
+ ],
+ "med_statut": {
+  "C01": "integre",
+  "C02": "integre",
+  "C03": "integre",
+  "C04": "integre",
+  "C05": "integre",
+  "C06": "integre",
+  "C07": "integre",
+  "C08": "integre",
+  "C09": "integre",
+  "C10": "integre",
+  "C11": "integre",
+  "C12": "integre",
+  "C13": "integre_et_complete",
+  "C14": "integre",
+  "C15": "integre_avec_reserve",
+  "C16": "integre_adapte",
+  "C17": "integre",
+  "C18": "integre"
+ },
+ "lang_statut": {
+  "G58-LANG-P01": "applique",
+  "G58-LANG-P02": "applique",
+  "G58-LANG-P03": "applique",
+  "G58-LANG-P04": "applique",
+  "G58-LANG-P05": "applique",
+  "G58-LANG-P06": "applique",
+  "G58-LANG-P07": "applique",
+  "G58-LANG-P08": "applique",
+  "G58-LANG-P09": "applique",
+  "G58-LANG-P10": "absorbe_par_C11",
+  "G58-LANG-P11": "applique",
+  "G58-LANG-P12": "applique",
+  "G58-LANG-P13": "applique",
+  "G58-LANG-P14": "applique",
+  "G58-LANG-P15": "applique",
+  "G58-LANG-P16": "applique",
+  "G58-LANG-P17": "applique",
+  "G58-LANG-P18": "applique",
+  "G58-LANG-P19": "applique",
+  "G58-LANG-P20": "applique",
+  "G58-LANG-P21": "applique",
+  "G58-LANG-P22": "applique",
+  "G58-LANG-P23": "applique",
+  "G58-LANG-P24": "applique",
+  "G58-LANG-P25": "applique",
+  "G58-LANG-P26": "applique",
+  "G58-LANG-P27": "applique",
+  "G58-LANG-P28": "applique",
+  "G58-LANG-P29": "applique",
+  "G58-LANG-P30": "applique",
+  "G58-LANG-P31": "applique",
+  "G58-LANG-P32": "applique",
+  "G58-LANG-P33": "applique",
+  "G58-LANG-P34": "absorbe_par_C03",
+  "G58-LANG-P35": "absorbe_par_C03",
+  "G58-LANG-P36": "absorbe_par_C03",
+  "G58-LANG-P37": "absorbe_par_C03",
+  "G58-LANG-P38": "absorbe_par_C03",
+  "G58-LANG-P39": "absorbe_par_C03",
+  "G58-LANG-P40": "applique",
+  "G58-LANG-P41": "applique",
+  "G58-LANG-P42": "applique",
+  "G58-LANG-P43": "applique",
+  "G58-LANG-P44": "applique",
+  "G58-LANG-P45": "applique",
+  "G58-LANG-P46": "applique",
+  "G58-LANG-P47": "applique",
+  "G58-LANG-P48": "applique",
+  "G58-LANG-P49": "applique",
+  "G58-LANG-P50": "applique",
+  "G58-LANG-P51": "applique",
+  "G58-LANG-P52": "applique",
+  "G58-LANG-P53": "applique",
+  "G58-LANG-P54": "applique",
+  "G58-LANG-P55": "applique",
+  "G58-LANG-P56": "applique",
+  "G58-LANG-P57": "applique",
+  "G58-LANG-P58": "applique",
+  "G58-LANG-P59": "applique",
+  "G58-LANG-P60": "adapte",
+  "G58-LANG-P61": "applique",
+  "G58-LANG-P62": "absorbe_par_C06",
+  "G58-LANG-P63": "applique",
+  "G58-LANG-P64": "applique",
+  "G58-LANG-P65": "applique",
+  "G58-LANG-P66": "applique",
+  "G58-LANG-P67": "applique",
+  "G58-LANG-P68": "applique",
+  "G58-LANG-P69": "applique",
+  "G58-LANG-P70": "applique"
+ },
+ "renvois_medicaux_statut": {
+  "G58-LANG-RM01": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM02": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM03": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM04": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM05": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM06": "applique_tranche_par_C18",
+  "G58-LANG-RM07": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM08": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM09": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM10": "applique_tranche_par_C11",
+  "G58-LANG-RM11": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM12": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM13": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM14": "applique_tranche_par_C10",
+  "G58-LANG-RM15": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM16": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM17": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM18": "applique_tranche_par_C12",
+  "G58-LANG-RM19": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM20": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM21": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM22": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM23": "applique_tranche_par_C18",
+  "G58-LANG-RM24": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM25": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM26": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM27": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM28": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM29": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM30": "applique_tranche_par_C06",
+  "G58-LANG-RM31": "applique_tranche_par_C04",
+  "G58-LANG-RM32": "applique_tranche_par_C06",
+  "G58-LANG-RM33": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM34": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM35": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM36": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM37": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM38": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM39": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM40": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM41": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM42": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM43": "non_applique_non_tranche_par_MED",
+  "G58-LANG-RM44": "applique_tranche_par_C09"
+ },
+ "corrections": [
+  {
+   "constat": "G58-LANG-P01",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Méta-discours sur la fabrication du cours, proscrit par le guide de rédaction (§ 3) ; la mention « vignette fictive » suffit.",
+   "fichier": "chapters/G58/G58_a.html",
+   "ancre": " Ces données pédagogiques servent à poser la question centrale du cours.",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P02",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Construction impropre : on prouve l’atteinte d’un nerf, non « le nerf atteint ».",
+   "fichier": "chapters/G58/G58_a.html",
+   "ancre": "obtenir la preuve du nerf atteint",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P03",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Formule passive et lourde ; la lecture du tableau est annoncée directement (guide § 4).",
+   "fichier": "chapters/G58/G58_a.html",
+   "ancre": "Ce tableau est commenté ainsi : la neuropathie n’est pas une maladie à part, c’est un mode de présentation de maladies différentes",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P04",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : « Découler » exprime une conséquence logique ; un tableau s’appuie sur des sources. Même formulation que dans l’onglet Examens.",
+   "fichier": "chapters/G58/G58_a.html",
+   "ancre": "Il découle des revues de Ruffer et coll. (2024) et de Blaes (2015)",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P05",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Ambiguïté : « tableau » désigne ici l’ensemble des données cliniques, non le tableau de la page.",
+   "fichier": "chapters/G58/G58_a.html",
+   "ancre": "Le clinicien raisonne à partir du tableau global.",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P06",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Pronom « Il » ambigu (société ou degré de certitude) ; sujet explicité.",
+   "fichier": "chapters/G58/G58_a.html",
+   "ancre": "(2010, résumé lu). Il distingue ce que la biopsie démontre",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P07",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Construction « ne… que aux » lourde ; « que dans les troncs » est plus naturel.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "n’apparaissait qu’aux troncs sciatique-tibial et médian proximo-moyens",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P08",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Cohérence terminologique : « proximo-moyen » est la forme des figures, des encadrés et des fenêtres Pareto.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "au tiers proximal-moyen du nerf : c’est là",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P09",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Cohérence terminologique : le cours emploie « mononévrite multiple » ; la fenêtre de définition donne les deux termes comme synonymes.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "produisent une mononeuropathie multiple ischémique",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P10",
+   "action": "Proposition LANG non appliquée telle quelle : le passage est réécrit par la correction médicale C11 ; le motif linguistique est respecté dans la nouvelle rédaction.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "explique son ton (brûlure, éclair)",
+   "source": "propositions.json LANG",
+   "statut": "absorbe_par_C11"
+  },
+  {
+   "constat": "G58-LANG-P11",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Registre : une électrophysiologie ne « dit » pas ; elle ne permet pas d’affirmer.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "mais ne dit pas qu’elle est vasculitique",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P12",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : « Cacher un traitement » est incorrect : c’est une cause qui se cache derrière la présentation.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "car la même présentation peut cacher un traitement très différent",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P13",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Accord : le participe « complétée » se rapporte à « liste » ; « découler » remplacé par « s’appuyer sur ».",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "Cette liste découle de Blaes (2015) et de Ruffer et coll. (2024), complétées par des cas et séries",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P14",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Coordination fautive de « ce que » et de « dont » ; deux propositions distinctes.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "décrit ce que le patient ressent et dont l’<b>ordre d’apparition</b> est le premier indice",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P15",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Trois pourcentages mal articulés dans une même phrase ; parenthèse et conjonction. Chiffres inchangés.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "représente 35 à 65 % des cas, 70 à 90 % dans les vascularites à ANCA, et 10 à 40 % des cas prouvés par biopsie se présentent comme",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P16",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Passif sans agent et article fautif (« liste de nerfs ») ; agent explicité (guide § 2).",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "Le nerf atteint est nommé, car la liste de nerfs touchés",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P17",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Infinitifs injonctifs proscrits par le guide (§ 2) ; sujet explicite.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "<b>À retenir.</b> Nommer chaque nerf atteint, noter l’asymétrie et chercher d’autres organes. Pour la paroi, reproduire la douleur par la pa",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P18",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Adjectif substantivé familier ; terme complet.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "l’ACNES sont les différentiels.",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P19",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Cohérence lexicale : le cours dit partout que les territoires « se chevauchent ».",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "parce que les déficits finissent par se rejoindre",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P20",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Énumération ambiguë (cystite et stérilité rattachées à la corticothérapie ?) ; « du cyclophosphamide » précisé en « dues au ».",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "la cystite hémorragique et la stérilité du cyclophosphamide (",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P21",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Passif sans agent ; pronom « Elles » éloigné de son antécédent.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "Elles sont attendues, surveillées et prévenues, non découvertes après coup.",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P22",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Registre : « sauver » est figuré ; le guide proscrit les images.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "pour sauver les axones",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P23",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Articles manquants devant les noms de médicaments.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "débuter prégabaline, gabapentine, duloxétine ou amitriptyline",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P24",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Énumération nominale proscrite par le guide (§ 2) ; phrase complète. Chiffres inchangés.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": ": 17 cas, soulagement immédiat, deux réinjections.",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P25",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Articles manquants dans une énumération ; virgule superflue devant « et ».",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "surveillance des médicaments reconnus comme inducteurs, traitement des infections virales, et prévention de la douleur chronique",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P26",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : « Orienter » est transitif indirect ; « ce qu’il oriente » est incorrect.",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "<th>Ce qu’il oriente</th>",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P27",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : « Orienter » est transitif indirect (orienter vers).",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "décrivent ce que chaque résultat oriente.",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P28",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Faute d’orthographe : « orientent ».",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "ANCA</button> oriennent le diagnostic",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P29",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Expression imprécise : « preuve de routine ».",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "signifie que la preuve de routine manque",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P30",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : « Découler » exprime une conséquence logique, non une source.",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "Il découle de Ruffer et coll. (2024) pour les granulomes",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P31",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Cohérence terminologique (« proximo-moyen »).",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "se concentrent au tiers proximal-moyen du nerf",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P32",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Cohérence terminologique (« proximo-moyen »).",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "Tiers proximal-moyen : zone frontière",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P33",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : « Dose prolongée » est impropre : c’est la durée de traitement qui est prolongée.",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "Les glucocorticoïdes à dose prolongée suppriment",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P34",
+   "action": "Proposition LANG non appliquée telle quelle : le passage est réécrit par la correction médicale C03 ; le motif linguistique est respecté dans la nouvelle rédaction.",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "<b>Histologie → clinique.</b> Perte axonale = neuropathie axonale.",
+   "source": "propositions.json LANG",
+   "statut": "absorbe_par_C03"
+  },
+  {
+   "constat": "G58-LANG-P35",
+   "action": "Proposition LANG non appliquée telle quelle : le passage est réécrit par la correction médicale C03 ; le motif linguistique est respecté dans la nouvelle rédaction.",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "Combiner nerf et muscle augmente le rendement.",
+   "source": "propositions.json LANG",
+   "statut": "absorbe_par_C03"
+  },
+  {
+   "constat": "G58-LANG-P36",
+   "action": "Proposition LANG non appliquée telle quelle : le passage est réécrit par la correction médicale C03 ; le motif linguistique est respecté dans la nouvelle rédaction.",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "Axones détruits = déficit permanent si le traitement tarde.",
+   "source": "propositions.json LANG",
+   "statut": "absorbe_par_C03"
+  },
+  {
+   "constat": "G58-LANG-P37",
+   "action": "Proposition LANG non appliquée telle quelle : le passage est réécrit par la correction médicale C03 ; le motif linguistique est respecté dans la nouvelle rédaction.",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "<b>Physiologie → examen.</b> Amplitude basse et vitesse conservée.",
+   "source": "propositions.json LANG",
+   "statut": "absorbe_par_C03"
+  },
+  {
+   "constat": "G58-LANG-P38",
+   "action": "Proposition LANG non appliquée telle quelle : le passage est réécrit par la correction médicale C03 ; le motif linguistique est respecté dans la nouvelle rédaction.",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "<b>Biochimie → clinique.</b> Anti-MPO et neuropathie vasculitique. <b>Biochimie → examen.</b> ANCA, cryoglobulines, C3, C4, VHC.",
+   "source": "propositions.json LANG",
+   "statut": "absorbe_par_C03"
+  },
+  {
+   "constat": "G58-LANG-P39",
+   "action": "Proposition LANG non appliquée telle quelle : le passage est réécrit par la correction médicale C03 ; le motif linguistique est respecté dans la nouvelle rédaction.",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "Mesna contre la toxicité du cyclophosphamide ; sevrage des glucocorticoïdes pour préserver l’axe surrénalien.",
+   "source": "propositions.json LANG",
+   "statut": "absorbe_par_C03"
+  },
+  {
+   "constat": "G58-LANG-P40",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Registre : « éteindre » est une image ; le guide proscrit les métaphores.",
+   "fichier": "chapters/G58/G58_d.html",
+   "ancre": "<b>éteindre l’inflammation vasculaire</b>",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P41",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : « Plus » seul est ambigu ; la fenêtre sur la prednisone écrit « davantage à court terme ».",
+   "fichier": "chapters/G58/G58_d.html",
+   "ancre": "5–60 mg/j, plus à court terme",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P42",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Cohérence terminologique : l’onglet Pathologie écrit « kaliémie » ; on surveille la kaliémie, non le potassium.",
+   "fichier": "chapters/G58/G58_d.html",
+   "ancre": "la tension, le poids et le potassium",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P43",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : « Vidanges » seul est ambigu ; précision de l’organe.",
+   "fichier": "chapters/G58/G58_d.html",
+   "ancre": "hydratation, vidanges fréquentes et mesna",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P44",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Infinitifs injonctifs proscrits par le guide (§ 2) ; « rappeler que » sans complément est incorrect.",
+   "fichier": "chapters/G58/G58_d.html",
+   "ancre": "<b>À retenir.</b> Choisir le traitement par le mécanisme, adapter la dose à la fonction rénale, vérifier les interactions et rappeler que le",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P45",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Cohérence terminologique.",
+   "fichier": "chapters/G58/G58_pop1.html",
+   "ancre": "peut causer une mononeuropathie multiple ischémique",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P46",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Tournure « est un imitateur » lourde.",
+   "fichier": "chapters/G58/G58_pop1.html",
+   "ancre": "Elle est un imitateur de la vascularite",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P47",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Cohérence terminologique (« proximo-moyen »).",
+   "fichier": "chapters/G58/G58_pop1.html",
+   "ancre": "au tiers proximal-moyen du nerf, où survient",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P48",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Verbe pronominal impropre (« se présentent comme »).",
+   "fichier": "chapters/G58/G58_pop1.html",
+   "ancre": "Elles se présentent comme des fourchettes, non comme des probabilités exactes.",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P49",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : « Une perte de jusqu’à » est incorrect.",
+   "fichier": "chapters/G58/G58_pop1.html",
+   "ancre": "Une perte de jusqu’à 40 % du volume herniaire",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P50",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Nombres : chiffres en toutes lettres dans une fraction, comme dans l’onglet Pathologie.",
+   "fichier": "chapters/G58/G58_pop1.html",
+   "ancre": "(environ 1 patient sur 5 réussit sous radiofréquence pulsée, environ 2 sur 3 après neurectomie)",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P51",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Orthographe : « aide-mémoire » prend un trait d’union.",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "data-title=\"Aide mémoire des arguments contre la NSVN\"",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P52",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Tournure « est une alternative » lourde.",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "Il est une alternative au cyclophosphamide",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P53",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Préposition manquante.",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "La cible EULAR 2022 est 5 mg/j en 4 à 5 mois.",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P54",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Énumération nominale proscrite (guide § 2) ; « kaliémie » comme dans l’onglet Pathologie. Les deux contenus figurent dans l’onglet Pathologie.",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "Urines, glycémie, tension, poids, potassium. Prophylaxie de l’ostéoporose si la corticothérapie dépasse deux semaines.",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P55",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Énumération nominale proscrite (guide § 2) ; le contenu est inchangé.",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "Sevrage progressif au-delà de 8 à 10 jours (insuffisance surrénale) ; seuil de 7,5 mg/j pour le syndrome de Cushing ; contre-indications rel",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P56",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Phrase nominale proscrite (guide § 2).",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "Prednisone Streuli® : posologie initiale usuelle de 5 à 60 mg/j, davantage à court terme, puis dose minimale efficace.",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P57",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Énumération nominale proscrite ; formulation alignée sur l’encadré « Dangers à connaître » de l’onglet Pharmacologie.",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "Cystite hémorragique (hydratation, vidanges fréquentes, mesna ; interruption en cas d’hématurie) ; stérilité possible dans les deux sexes.",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P58",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Phrase nominale proscrite (guide § 2).",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "<p>Douleurs neuropathiques périphériques et centrales de l’adulte.</p>",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P59",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Phrases nominales proscrites (guide § 2) ; doses inchangées.",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "<p>Début à 150 mg/j (75 mg × 2 ou 50 mg × 3), 300 mg/j après 3 à 7 jours, maximum 600 mg/j après 7 jours supplémentaires. Clairance 30–60 mL",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P60",
+   "action": "Proposition LANG adaptée (fond inchangé, alignée sur la FI) : Phrases nominales proscrites (guide § 2).",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "<p>À éviter pendant la grossesse (malformations au premier trimestre) avec contraception efficace ; non recommandée avant 18 ans.</p>",
+   "source": "propositions.json LANG",
+   "statut": "adapte"
+  },
+  {
+   "constat": "G58-LANG-P61",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Phrase nominale proscrite (guide § 2).",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "<p>Douleurs neuropathiques de l’adulte (neuropathie diabétique, névralgie postherpétique).</p>",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P62",
+   "action": "Proposition LANG non appliquée telle quelle : le passage est réécrit par la correction médicale C06 ; le motif linguistique est respecté dans la nouvelle rédaction.",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "<p>Syndrome DRESS signalé ; non recommandée avant 18 ans.</p>",
+   "source": "propositions.json LANG",
+   "statut": "absorbe_par_C06"
+  },
+  {
+   "constat": "G58-LANG-P63",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Infinitif injonctif proscrit (guide § 2).",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "selon la maladie ; les présenter comme fourchettes.",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P64",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Infinitif injonctif proscrit (guide § 2).",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "<li>Chercher une cause : vascularite, infection, médicament, tumeur.</li>",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P65",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Infinitifs injonctifs et phrase nominale proscrits (guide § 2).",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "<li>Reconstituer l’ordre d’apparition des déficits nerf par nerf.</li><li>Nommer chaque nerf atteint ; chercher poumon, rein, peau, cœur, œi",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P66",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Infinitif injonctif proscrit (guide § 2).",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "<li>Éliminer d’abord ce qui est urgent : vascularite systémique.</li>",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P67",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Infinitifs injonctifs proscrits (guide § 2).",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "<li>Traiter la douleur neuropathique en parallèle.</li><li>Adapter prégabaline et gabapentine à la fonction rénale.</li>",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P68",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Infinitif injonctif proscrit (guide § 2).",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "<li>Choisir par mécanisme : inflammation, cause, douleur.</li>",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P69",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Phrase nominale proscrite (guide § 2).",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "<li>Prégabaline et opioïdes : danger ; doses des revues, notice suisse à confirmer.</li>",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "G58-LANG-P70",
+   "action": "Proposition LANG appliquée telle quelle (fond inchangé) : Orthographe : « aide-mémoire » prend un trait d’union.",
+   "fichier": "glossary/g58.py",
+   "ancre": "'Aide mémoire O-A-C-V'",
+   "source": "propositions.json LANG",
+   "statut": "applique"
+  },
+  {
+   "constat": "C08",
+   "action": "Population et attribution précisées : 10 décès sur 40 (MPA et GPA) chez Koike ; chiffre absent de Blaes.",
+   "fichier": "chapters/G58/G58_a.html",
+   "ancre": "la mortalité à cinq ans est de 25 % avec neuropathie et de 18 % sans, différence non significative (Blaes ; Koike).",
+   "source": "S8 Prognosis ; S6 texte intégral",
+   "statut": "applique"
+  },
+  {
+   "constat": "C08",
+   "action": "Attribution de la première proposition à Blaes (Suppiah 2011 cité), relue par W.",
+   "fichier": "chapters/G58/G58_a.html",
+   "ancre": "Dans les vascularites à ANCA, environ 15 % des patients ont une neuropathie et environ 40 % d’entre eux s’améliorent ; ",
+   "source": "S6 Treatment",
+   "statut": "applique"
+  },
+  {
+   "constat": "C15",
+   "action": "Fréquence reprise du texte de Ruffer (« bei etwa 50 % der Erkrankten ») ; le tableau 1 de la même revue écrit « bis zu 50 % ».",
+   "fichier": "chapters/G58/G58_a.html",
+   "ancre": "<td>Jusqu’à 50 % (Ruffer, 2024)</td>",
+   "source": "S7 Klinik (PAN)",
+   "statut": "applique"
+  },
+  {
+   "constat": "C18",
+   "action": "Sensibilité chiffrée (RM06 tranché par le constat MED).",
+   "fichier": "chapters/G58/G58_a.html",
+   "ancre": "n’exclut pas la maladie : la sensibilité de la paroi inflammatoire est faible.",
+   "source": "S8 Nerve biopsy : « no more than 50–60% » ; « locality of the lesions »",
+   "statut": "applique"
+  },
+  {
+   "constat": "C11",
+   "action": "Trois relations causales non sourcées remplacées par une description (RM10 tranché ; LANG-P10 absorbé).",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "La nature neuropathique de la douleur explique son ton (brûlure, éclair), sa persistance après la cicatrisation et la réponse aux molécules ",
+   "source": "S5 Clinical presentation, Treatment",
+   "statut": "applique"
+  },
+  {
+   "constat": "C10",
+   "action": "Causalité mécanique non établie par la source supprimée (RM14 tranché).",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "Le mécanisme est mécanique : tout mouvement qui étire ou comprime le nerf réveille la douleur.",
+   "source": "S5 Clinical presentation : « exacerbated by movements that engage the thoracic cage »",
+   "statut": "applique"
+  },
+  {
+   "constat": "C17",
+   "action": "Drapeaux rouges suisses ajoutés (îlot g58-5).",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "Leur absence ne rassure donc pas.</p>",
+   "source": "S1 Implications pratiques ; Vasculites",
+   "statut": "applique"
+  },
+  {
+   "constat": "C16",
+   "action": "Critères cliniques publiés de l’ACNES et signe de Carnett ajoutés ; le nombre « cinq » de la proposition n’est pas repris.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "Dans l’<button class=\"w\" data-k=\"g58-acnes\">ACNES</button>, une zone d’altération de la sensibilité cutanée recouvre un point douloureux max",
+   "source": "S3 Introduction et Methods",
+   "statut": "applique"
+  },
+  {
+   "constat": "C01",
+   "action": "Bloc clinique data-semiology-clinical=\"G58\" inséré dans l’îlot g58-6 (panneau pA), avant l’encadré À retenir ; répétitions avec g58-5 et g58-6 réduites, citations [Sx] converties en auteurs.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "<div class=\"key\"><b>À retenir.</b> Le médecin nomme chaque nerf atteint",
+   "source": "S1 ; S2 ; S3 ; S5 ; S6 ; S7",
+   "statut": "applique"
+  },
+  {
+   "constat": "C17",
+   "action": "Vascularite à biologie normale et lèpre importée (source suisse) ajoutées dans g58-7.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "plus de la moitié des cas restent sans étiologie (Théaudin, 2022).",
+   "source": "S1 Vasculites ; Lèpre",
+   "statut": "applique"
+  },
+  {
+   "constat": "C12",
+   "action": "Affirmation causale non sourcée retirée, conduite conservée (RM18 tranché).",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "<div class=\"trap\"><span class=\"k\">Piège</span> Débuter la corticothérapie avant d’avoir demandé l’électrophysiologie, le bilan et la biopsie",
+   "source": "S7 texte intégral (aucune mention) ; S6",
+   "statut": "applique"
+  },
+  {
+   "constat": "C04",
+   "action": "Statut suisse de l’entretien signalé dans le tableau de g58-9.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "<td>Revue (Blaes, 2015) ; FI non lues</td>",
+   "source": "S20 Indications ; S21 Indications",
+   "statut": "applique"
+  },
+  {
+   "constat": "C04",
+   "action": "Statut suisse du rituximab signalé dans le tableau de g58-9.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "<td>Revue (Blaes, 2015) ; FI non lue</td>",
+   "source": "S17 Indications ; Posologie GPA/PAM",
+   "statut": "applique"
+  },
+  {
+   "constat": "C04",
+   "action": "Emplois hors indication signalés dans l’onglet Pathologie.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "Il se lit comme un repère de grandeur à confronter à l’information professionnelle suisse avant toute prescription.</p>",
+   "source": "S17 ; S20 ; S21 Indications",
+   "statut": "applique"
+  },
+  {
+   "constat": "C04",
+   "action": "Emplois hors indication des antalgiques signalés pour la névralgie intercostale.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "la lidocaïne ou la capsaïcine topiques viennent en deuxième ligne.",
+   "source": "S14 ; S23 ; S24 Indications",
+   "statut": "applique"
+  },
+  {
+   "constat": "C04",
+   "action": "Restriction pédiatrique de l’emplâtre de lidocaïne ajoutée.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "Chez l’enfant, un patch de lidocaïne a été étudié.</p>",
+   "source": "S24 Enfants",
+   "statut": "applique"
+  },
+  {
+   "constat": "C04",
+   "action": "ACNES de l’enfant : emploi hors indication signalé.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "L’ACNES pédiatrique a été traitée par patch de lidocaïne (12 enfants).</p>",
+   "source": "S24 Indications ; Enfants",
+   "statut": "applique"
+  },
+  {
+   "constat": "C06",
+   "action": "Carte Grossesse étendue à la gabapentine.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "La <button class=\"w\" data-k=\"g58-lyrica\">prégabaline</button> est à éviter (malformations au premier trimestre) ; une contraception efficace",
+   "source": "S13 ; S14 Grossesse",
+   "statut": "applique"
+  },
+  {
+   "constat": "C13",
+   "action": "Nuance de compartiment et restriction pédiatrique (EFNS) ; W ajoute la FI suisse de la doxycycline lue (restriction avant 12 ans, indication limitée : emploi hors indication pour la radiculonévrite).",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "En Europe, la neuroborréliose se traite par 14 jours de doxycycline 200 mg/j ou de ceftriaxone 2 g/j par voie intraveineuse, efficaces aussi",
+   "source": "S12 Recommendations ; FI Doxycyclin-Mepha (février 2024, GTIN 7680659520017), Indications et Mises en garde",
+   "statut": "applique"
+  },
+  {
+   "constat": "C17",
+   "action": "Rubrique 16 (spécificités suisses) : conduite automobile et rééducation.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "justifie une information préopératoire.</p>",
+   "source": "S1 Prise en charge spécifique",
+   "statut": "applique"
+  },
+  {
+   "constat": "W-ORTHO",
+   "action": "Orthographe harmonisée avec LANG-P51 et LANG-P70.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "(<button class=\"w\" data-k=\"g58-mnemo\">aide mémoire</button>)",
+   "source": "",
+   "statut": "applique"
+  },
+  {
+   "constat": "C07",
+   "action": "Chiffre par sous-type retiré : Koike donne environ 80 % de positivité globale dans la MPA et la GPA.",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "<td>MPA (environ 80 % des cas), EGPA (30–40 %) ; associés à la neuropathie vasculitique dans une étude de 955 patients</td>",
+   "source": "S8 Laboratory findings",
+   "statut": "applique"
+  },
+  {
+   "constat": "C07",
+   "action": "Même correction pour les anti-PR3.",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "<td>GPA (environ 80 %)</td>",
+   "source": "S8 Laboratory findings",
+   "statut": "applique"
+  },
+  {
+   "constat": "C18",
+   "action": "Même chiffrage dans l’onglet Examens (RM23 tranché).",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "La sensibilité de la paroi inflammatoire reste faible, ce qui explique les séries où la vascularite n’est que probable ou possible.",
+   "source": "S8 Nerve biopsy",
+   "statut": "applique"
+  },
+  {
+   "constat": "C10",
+   "action": "Causalité retirée en physiologie.",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "Dans la névralgie intercostale, l’inspiration profonde, la toux et la rotation du tronc étirent ou compriment le nerf intercostal, ce qui ex",
+   "source": "S5 Clinical presentation",
+   "statut": "applique"
+  },
+  {
+   "constat": "C03",
+   "action": "Encadré anat remplacé par les quatre libellés conformes en phrases complètes (LANG-P34 à P39 absorbés).",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "<div class=\"key\"><b>Anatomie → clinique.</b> Vasa nervorum de 50–300 µm et zone frontière expliquent les déficits asymétriques par nerf. <b>",
+   "source": "contrat audit_sciences ; STYLE_REDACTION § 6",
+   "statut": "applique"
+  },
+  {
+   "constat": "C03",
+   "action": "Encadré histo remplacé par les quatre libellés conformes en phrases complètes (LANG-P34 à P39 absorbés).",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "<div class=\"key\"><b>Histologie → clinique.</b> Perte axonale = neuropathie axonale. <b>Histologie → examen.</b> Combiner nerf et muscle augm",
+   "source": "contrat audit_sciences ; STYLE_REDACTION § 6",
+   "statut": "applique"
+  },
+  {
+   "constat": "C03",
+   "action": "Encadré physio remplacé par les quatre libellés conformes en phrases complètes (LANG-P34 à P39 absorbés).",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "<div class=\"key\"><b>Physiologie → clinique.</b> Axones détruits = déficit permanent si le traitement tarde. <b>Physiologie → examen.</b> Amp",
+   "source": "contrat audit_sciences ; STYLE_REDACTION § 6",
+   "statut": "applique"
+  },
+  {
+   "constat": "C03",
+   "action": "Encadré bioch remplacé par les quatre libellés conformes en phrases complètes (LANG-P34 à P39 absorbés).",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "<div class=\"key\"><b>Biochimie → clinique.</b> Anti-MPO et neuropathie vasculitique. <b>Biochimie → examen.</b> ANCA, cryoglobulines, C3, C4,",
+   "source": "contrat audit_sciences ; STYLE_REDACTION § 6",
+   "statut": "applique"
+  },
+  {
+   "constat": "C03",
+   "action": "Paragraphe sourcé ajouté en histologie (rendement de la biopsie) ; la phrase causale de la proposition est remplacée par la raison donnée par Koike.",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "<figure><svg viewBox=\"0 0 380 184\" role=\"img\" aria-label=\"Figure 4",
+   "source": "S8 Nerve biopsy",
+   "statut": "applique"
+  },
+  {
+   "constat": "C03",
+   "action": "Paragraphe sourcé ajouté en physiologie (deux familles de fibres, asymétrie d’amplitude).",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "<figure><svg viewBox=\"0 0 380 184\" role=\"img\" aria-label=\"Figure 5",
+   "source": "S1 Présentation et examen clinique ; S7 Diagnostik",
+   "statut": "applique"
+  },
+  {
+   "constat": "C03",
+   "action": "Paragraphe sourcé ajouté en biochimie (mesna, élimination rénale de la prégabaline).",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "<figure><svg viewBox=\"0 0 380 184\" role=\"img\" aria-label=\"Figure 6",
+   "source": "S15 Posologie, Mises en garde ; S13 Pharmacocinétique",
+   "statut": "applique"
+  },
+  {
+   "constat": "C01",
+   "action": "Bouton g58-tab-semio en tête de .sci-bar (aria-selected=\"true\") ; Anatomie passe à aria-selected=\"false\".",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "<div class=\"sci-bar ui\" role=\"tablist\"><button role=\"tab\" aria-selected=\"true\" aria-controls=\"g58-s-anat\" data-s=\"g58-s-anat\">",
+   "source": "contrat SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE",
+   "statut": "applique"
+  },
+  {
+   "constat": "C02",
+   "action": "Bouton Immunologie ajouté après Biochimie (sixième sous-onglet).",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "Biochimie</button></div>",
+   "source": "G58_c_2.html",
+   "statut": "applique"
+  },
+  {
+   "constat": "W-A11Y",
+   "action": "5 icônes SVG décoratives de la barre des sciences marquées aria-hidden=\"true\" (remarque d’accessibilité de l’audit MED).",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "sci-bar",
+   "source": "rapport MED, Figures",
+   "statut": "applique"
+  },
+  {
+   "constat": "C01",
+   "action": "Panneau g58-s-semio (neuf sections data-semiology) en tête de .sci-body ; g58-s-anat masqué à l’ouverture.",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "<div class=\"chap-body sci-body\"><div class=\"sci\" id=\"g58-s-anat\">",
+   "source": "G58_c_1.html, sources S1–S12, S28",
+   "statut": "applique"
+  },
+  {
+   "constat": "C01",
+   "action": "Panneau g58-s-histo masqué à l’ouverture (la sémiologie est sélectionnée).",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "<div class=\"sci\" id=\"g58-s-histo\">",
+   "source": "",
+   "statut": "applique"
+  },
+  {
+   "constat": "C01",
+   "action": "Panneau g58-s-physio masqué à l’ouverture (la sémiologie est sélectionnée).",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "<div class=\"sci\" id=\"g58-s-physio\">",
+   "source": "",
+   "statut": "applique"
+  },
+  {
+   "constat": "C01",
+   "action": "Panneau g58-s-bioch masqué à l’ouverture (la sémiologie est sélectionnée).",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "<div class=\"sci\" id=\"g58-s-bioch\">",
+   "source": "",
+   "statut": "applique"
+  },
+  {
+   "constat": "C02",
+   "action": "Discipline Immunologie (g58-s-immuno) ajoutée après Biochimie.",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "<button class=\"pareto-btn ui\" data-k=\"pareto-g58-bioch\">▲ Loi de Pareto — Biochimie</button>\n</section></div>",
+   "source": "S17 ; S18 ; S19 ; S7 ; S9 ; S10",
+   "statut": "applique"
+  },
+  {
+   "constat": "W-FIG",
+   "action": "Schémas non anatomiques élargis (viewBox 480, police 16) pour la lisibilité à 390 px.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "svg viewBox 380",
+   "source": "protocole, point 5",
+   "statut": "applique"
+  },
+  {
+   "constat": "W-FIG",
+   "action": "Schémas non anatomiques élargis (viewBox 480, police 16) pour la lisibilité à 390 px.",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "svg viewBox 380",
+   "source": "protocole, point 5",
+   "statut": "applique"
+  },
+  {
+   "constat": "W-FIG",
+   "action": "Source ajoutée à la légende de la figure 1.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "Figure 1.",
+   "source": "sources déjà citées dans le paragraphe voisin",
+   "statut": "applique"
+  },
+  {
+   "constat": "W-FIG",
+   "action": "Source ajoutée à la légende de la figure 2.",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "Figure 2.",
+   "source": "sources déjà citées dans le paragraphe voisin",
+   "statut": "applique"
+  },
+  {
+   "constat": "W-FIG",
+   "action": "Source ajoutée à la légende de la figure 3.",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "Figure 3.",
+   "source": "sources déjà citées dans le paragraphe voisin",
+   "statut": "applique"
+  },
+  {
+   "constat": "W-FIG",
+   "action": "Source ajoutée à la légende de la figure 4.",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "Figure 4.",
+   "source": "sources déjà citées dans le paragraphe voisin",
+   "statut": "applique"
+  },
+  {
+   "constat": "W-FIG",
+   "action": "Source ajoutée à la légende de la figure 5.",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "Figure 5.",
+   "source": "sources déjà citées dans le paragraphe voisin",
+   "statut": "applique"
+  },
+  {
+   "constat": "W-FIG",
+   "action": "Source ajoutée à la légende de la figure 6.",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "Figure 6.",
+   "source": "sources déjà citées dans le paragraphe voisin",
+   "statut": "applique"
+  },
+  {
+   "constat": "C04+C05",
+   "action": "Tableau de statut d’indication suisse (douze FI datées) et encadré « Avant d’immunosupprimer » insérés dans g58-p-1 ; paragraphe devenu inexact remplacé.",
+   "fichier": "chapters/G58/G58_d.html",
+   "ancre": "<p>Le tableau classe par phénotype ce que les sources permettent de dire. Pour un traitement non couvert par l’information professionnelle s",
+   "source": "S13–S24, S17 Mises en garde (hépatite B), Posologie GPA/PAM (PCP) ; S15 Mises en garde ; S19 Posologie ; relu par W dans les FI AmiKo",
+   "statut": "applique"
+  },
+  {
+   "constat": "C04",
+   "action": "Mépolizumab : FI lue.",
+   "fichier": "chapters/G58/G58_d.html",
+   "ancre": "<td>Essai de phase 3 de 136 patients (Koike) ; FI non lue</td>",
+   "source": "S18 Indications",
+   "statut": "applique"
+  },
+  {
+   "constat": "C06",
+   "action": "« Interdits » remplacé par la formulation des FI (RM30 tranché par la lecture des FI S13 et S14).",
+   "fichier": "chapters/G58/G58_d.html",
+   "ancre": "<td>Adaptation rénale, interdits chez l’enfant</td>",
+   "source": "S13 ; S14 Enfants et adolescents",
+   "statut": "applique"
+  },
+  {
+   "constat": "C04",
+   "action": "Rituximab : dose de la FI suisse (GPA, MPA) et délai de l’entretien.",
+   "fichier": "chapters/G58/G58_d.html",
+   "ancre": "<td>375 mg/m² par semaine pendant 4 semaines</td><td>—</td><td>Blaes, 2015</td>",
+   "source": "S17 Posologie GPA/PAM",
+   "statut": "applique"
+  },
+  {
+   "constat": "C04",
+   "action": "Lecture du tableau mise à jour.",
+   "fichier": "chapters/G58/G58_d.html",
+   "ancre": "Le tableau distingue les doses <b>suisses</b> (trois premières lignes) des doses <b>citées par une revue</b> (quatre suivantes).",
+   "source": "S17",
+   "statut": "applique"
+  },
+  {
+   "constat": "C06",
+   "action": "Mise en garde de la gabapentine avec les opiacés ajoutée.",
+   "fichier": "chapters/G58/G58_d.html",
+   "ancre": "(1) Prégabaline avec opioïdes : dépression respiratoire et surmortalité (rapport de cotes ajusté 1,68).",
+   "source": "S13 Mises en garde ; S14 Interactions, Mises en garde",
+   "statut": "applique"
+  },
+  {
+   "constat": "C09",
+   "action": "Terme de la FI suisse repris.",
+   "fichier": "chapters/G58/G58_d.html",
+   "ancre": "Les effets fréquents de la prégabaline sont les vertiges (30,7 %)",
+   "source": "S13 Effets indésirables",
+   "statut": "applique"
+  },
+  {
+   "constat": "C06",
+   "action": "Grossesse : gabapentine ajoutée.",
+   "fichier": "chapters/G58/G58_d.html",
+   "ancre": "La prégabaline est à éviter pendant la grossesse (malformations au premier trimestre, contraception efficace requise).",
+   "source": "S13 ; S14 Grossesse",
+   "statut": "applique"
+  },
+  {
+   "constat": "C04",
+   "action": "Limite des sources mise à jour (FI désormais lues).",
+   "fichier": "chapters/G58/G58_d.html",
+   "ancre": "Les limites des sources sont explicites : les informations professionnelles du rituximab, de l’azathioprine, du méthotrexate, du mépolizumab",
+   "source": "S15 ; S17–S21",
+   "statut": "applique"
+  },
+  {
+   "constat": "C07",
+   "action": "Positivité globale, non par sous-type.",
+   "fichier": "chapters/G58/G58_pop1.html",
+   "ancre": "Dans la polyangéite microscopique, environ 80 % des patients ont des ANCA anti-MPO ; dans la granulomatose avec polyangéite, environ 80 % on",
+   "source": "S8 Laboratory findings",
+   "statut": "applique"
+  },
+  {
+   "constat": "C18",
+   "action": "Fenêtre Biopsie : sensibilité chiffrée.",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "La sensibilité de la paroi inflammatoire est faible ; dans la série brésilienne",
+   "source": "S8 Nerve biopsy",
+   "statut": "applique"
+  },
+  {
+   "constat": "C14",
+   "action": "Population de la revue systématique précisée.",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "La radiofréquence a une efficacité moyenne de 84 % (32 études, 620 patients)",
+   "source": "S5 Treatment, tableau (Vachirakorntong 2023)",
+   "statut": "applique"
+  },
+  {
+   "constat": "C09",
+   "action": "Terme de la FI suisse (RM44 tranché).",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "<p>Vertiges (30,7 %), somnolence (16,4 %) ; dépression respiratoire ;",
+   "source": "S13 Effets indésirables",
+   "statut": "applique"
+  },
+  {
+   "constat": "C06",
+   "action": "Fenêtre Neurontin : mises en garde suisses (LANG-P62 absorbé, RM32 tranché).",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "<div class=\"lab\">Effets indésirables</div><p>Syndrome DRESS signalé ; non recommandée avant 18 ans.</p>",
+   "source": "S14 Mises en garde ; Grossesse",
+   "statut": "applique"
+  },
+  {
+   "constat": "C04",
+   "action": "Emploi hors indication nommé (RM31 tranché).",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "Les indications citées sont la neuropathie diabétique et la névralgie postherpétique ; l’usage dans la mononévrite vasculitique relève des l",
+   "source": "S14 Indications",
+   "statut": "applique"
+  },
+  {
+   "constat": "C04+C05",
+   "action": "Fenêtre Rituximab : FI suisse lue (G58_pop2_1.html).",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "<div class=\"lab\">Limite</div><p>L’information professionnelle suisse du rituximab n’a pas été lue : la posologie, les contre-indications et ",
+   "source": "S17 Indications, Posologie, Mises en garde, Mécanisme d’action",
+   "statut": "applique"
+  },
+  {
+   "constat": "C04",
+   "action": "Référence FI MabThera® ajoutée à la fenêtre Rituximab.",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "Blaes, Therapeutic Advances in Musculoskeletal Disease 2015 (revue)</a>.</p></template>\n<template data-pop=\"g58-mepo\"",
+   "source": "S17",
+   "statut": "applique"
+  },
+  {
+   "constat": "C04",
+   "action": "Fenêtre Mépolizumab : FI suisse lue.",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "<div class=\"lab\">Limite</div><p>L’information professionnelle suisse n’a pas été lue ; le cas rapporté est illustratif, non démonstratif.</p",
+   "source": "S18 Indications, Posologie, Mécanisme d’action",
+   "statut": "applique"
+  },
+  {
+   "constat": "C04",
+   "action": "Référence FI Nucala® ajoutée.",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "Kidoguchi et coll., Modern Rheumatology Case Reports 2026 (résumé)</a>.</p>",
+   "source": "S18",
+   "statut": "applique"
+  },
+  {
+   "constat": "C04+C17",
+   "action": "Fenêtre Sources et limites mise à jour (FI lues, lacunes de l’audit MED).",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "<div class=\"lab\">Ce qui a été lu</div><p>Trente et une sources : classifications (BfArM, OFS), lignes directrices PNS 2010 et EULAR 2022 (ré",
+   "source": "rapport MED, Lacunes ; S1 ; S13–S24",
+   "statut": "applique"
+  },
+  {
+   "constat": "C18",
+   "action": "Pareto Définition mis à jour.",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "<li>La biopsie donne la certitude ; sa sensibilité est faible.</li>",
+   "source": "S8",
+   "statut": "applique"
+  },
+  {
+   "constat": "C03",
+   "action": "Pareto Histologie mis à jour.",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "<li>Négatif n’exclut pas.</li>",
+   "source": "S8",
+   "statut": "applique"
+  },
+  {
+   "constat": "C10+C03",
+   "action": "Pareto Physiologie aligné sur la correction C10 et le paragraphe ajouté.",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "<li>Douleur mécanique dans la névralgie intercostale.</li>",
+   "source": "S5 ; S1",
+   "statut": "applique"
+  },
+  {
+   "constat": "C03",
+   "action": "Pareto Biochimie mis à jour.",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "<li>Mesna contre la toxicité du cyclophosphamide.</li>",
+   "source": "S15 ; S13",
+   "statut": "applique"
+  },
+  {
+   "constat": "C04+C06",
+   "action": "Pareto Pharmacologie mis à jour.",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "<li>L’association prégabaline-opioïdes est dangereuse ; les doses des revues sont à confirmer dans la notice suisse.</li>",
+   "source": "S13 ; S14 ; S17",
+   "statut": "applique"
+  },
+  {
+   "constat": "C01+C02",
+   "action": "Dix fenêtres g58-sm-* (G58_pop2_2.html, citations converties, références liées) et fenêtre pareto-g58-immuno ajoutées en fin de G58_pop2.html.",
+   "fichier": "chapters/G58/G58_pop2.html",
+   "ancre": "fin de fichier",
+   "source": "S1 ; S2 ; S3 ; S5 ; S6 ; S7 ; S9 ; S17–S19",
+   "statut": "applique"
+  },
+  {
+   "constat": "W-GLOSS",
+   "action": "Clé Methotrexat-Mepha ajoutée (nom de marque signalé par build_medina.audit) ; aucune autre clé requise : IL-5, C5a, C5aR1, CD20, HBs, HBc, SNC, VHB, CRP et FI existent déjà dans les glossaires voisins (proposition G58_glossary_1.html sans effet).",
+   "fichier": "glossary/g58.py",
+   "ancre": "fin de fichier",
+   "source": "build_medina.audit",
+   "statut": "applique"
+  },
+  {
+   "constat": "W-FIG",
+   "action": "Les huit schémas en chaîne (figures 1 à 7 et S1) sont recomposés : viewBox 360, largeur intrinsèque 360, police 16, texte sur deux lignes au besoin ; rendu 16 px au bureau et 13,2 px à 390 px, sans défilement horizontal.",
+   "fichier": "chapters/G58/G58_b.html ; chapters/G58/G58_c.html",
+   "ancre": "svg role=\"img\"",
+   "source": "protocole, point 5 ; mesure Chromium",
+   "statut": "applique"
+  }
+ ],
+ "figures": {
+  "inventaire_audit_MED": "6 SCHEMA_NON_ANATOMIQUE, 0 ANATOMIQUE_IA, 0 image",
+  "retirees": [],
+  "ajoutees": [
+   "Figure S1 (sémiologie, schéma de raisonnement)",
+   "Figure 7 (immunologie, voie C5a–C5aR1, d’après la FI Tavneos®)"
+  ],
+  "note": "Aucune figure anatomique générée ou dessinée ; aucune figure à retirer selon la décision de Vial, puisque l’audit n’en classe aucune ANATOMIQUE_IA."
+ },
+ "cinquieme_discipline": "Immunologie (g58-s-immuno), proposition G58_c_2.html de l’audit MED, relue sur les FI MabThera®, Nucala® et Tavneos®",
+ "semiologie": {
+  "sous_onglet": "g58-s-semio en tête de .sci-bar, sélectionné, neuf sections data-semiology, aucun Pareto",
+  "marqueur_clinique": "chapters/G58/G58_b.html, îlot g58-6, section g58-6-semio (panneau pA)",
+  "fenetres": "10 fenêtres g58-sm-* en fin de G58_pop2.html"
+ },
+ "empreintes_sha256_base": {
+  "chapters/G58/G58_a.html": "ab85b9cbe6a06c0778d39b193fc662fd020e0bf751aee0ac793f2f5836b6e699",
+  "chapters/G58/G58_b.html": "dac8f40b07949ec96ff2cdc3f019a1cbdd4ddf20dfa36efdfb70a75a5ba9124d",
+  "chapters/G58/G58_c.html": "5b3b01c49d1213b89e0ef2ccc5c2b44c48209f7d4e83d83a69c7de6db7befa00",
+  "chapters/G58/G58_d.html": "9a95b52653e579e594b68fec55610323566a606a43b4a17013811989a22c80de",
+  "chapters/G58/G58_pop1.html": "9d862c7a0f28d908d51ebff67e3137d45afd12313a4960a9fbd5d5712020f7b0",
+  "chapters/G58/G58_pop2.html": "809975dabf4ed5363c482348d1264978a3b88efeb6c04ad4782651ad64f240e4",
+  "glossary/g58.py": "ec367748aa21184855c46fef75b9d437ca0d74e7d904f6c993e4e9b6bfb205b1"
+ },
+ "empreintes_sha256_apres": {
+  "chapters/G58/G58_a.html": "162a6d303525c3e1293dc68d7e75ccee668a80448bc2b0d03cc6fcfb3960891e",
+  "chapters/G58/G58_b.html": "21612cf8d74099bf852c318378bb59ca8113fc0ca1dd3cecc87910bd08abfca9",
+  "chapters/G58/G58_c.html": "3c37fc8cb4201248964c3912ce200de55236d41c8025ee971f9aaf2166f7f4ea",
+  "chapters/G58/G58_d.html": "9c717bdc5cde27ce7671460772a1395403c7b36be235859ccbf49b6bd4929aab",
+  "chapters/G58/G58_pop1.html": "e36eb3ab9964f85d6b5708ef64b3a9fc3c954e12cfb51f69dc30cab0789e80b2",
+  "chapters/G58/G58_pop2.html": "f0b7d74765e4b8fa1c70e1775af6fdabe4cbe400b0e031d3de45d54b42a3a312",
+  "glossary/g58.py": "6495a17905f441d0dd5923c79779942e1c6c6f88bc7b4f56e255927613e0a9f1"
+ },
+ "synthese": {
+  "MAJEUR": "C01 à C06 intégrés (sémiologie, immunologie, conformité des sciences, statut d’indication suisse, précautions avant immunosuppression, mises en garde de la gabapentine)",
+  "MINEUR": "C07 à C15 intégrés ; C13 complété par la FI Doxycyclin-Mepha lue par W ; C15 avec réserve (le texte de Ruffer écrit « etwa 50 % », son tableau 1 « bis zu 50 % »)",
+  "ENRICHISSEMENT": "C16 à C18 intégrés (C16 sans le nombre « cinq » ; C17 en trois ajouts ; C18 dans trois onglets)",
+  "LANG": "61 propositions appliquées telles quelles, 1 adaptée (P60, alignée sur la FI Lyrica), 8 absorbées par une correction médicale (P10, P34–P39, P62)",
+  "RENVOIS_MEDICAUX": "9 tranchés par l’audit MED et appliqués ; 35 non appliqués faute d’arbitrage MED",
+  "REFUSES": "aucun constat MED refusé"
+ },
+ "adaptations_W": [
+  "Citations [Sx] des propositions converties en citations d’auteur ou de FI, conformes au reste de la leçon ; formules de chantier retirées (« registre sources.json de la mission », « cette discipline »).",
+  "Sémiologie : première personne (« Je reconnais… ») remplacée par « Le médecin… » ; grade 5 du MRC corrigé (force normale ; 4−, 4, 4+ = résistance faible, modérée, forte, d’après le guide MRC relu).",
+  "Sémiologie : trois cellules de « piège » non sourcées remplacées par des faits lus (MRC ; Shamoun : environ cinq médecins avant le diagnostic).",
+  "Immunologie : « le complément est une cascade de protéines plasmatiques » (non lu) retiré ; distribution de CD20, rôle de l’IL-5 et effets de C5a recopiés au plus près des FI ; deux inférences causales non sourcées remplacées.",
+  "Histologie : la raison du faible rendement de la biopsie suit Koike (lésions localisées, nerfs habituellement prélevés épargnés) et non la phrase de la proposition.",
+  "Bloc clinique : répétitions avec g58-5 et g58-6 réduites ; la liste des drapeaux rouges figure une seule fois (g58-5).",
+  "C13 : W a lu la FI Doxycyclin-Mepha (février 2024) : réservée avant 12 ans aux situations graves sans alternative ; indication suisse limitée à la maladie de Lyme des stades I et II avec atteinte neurologique passagère limitée au visage.",
+  "C04 : emplois hors indication signalés aussi dans l’onglet Pathologie (g58-9, g58-11) et dans les fenêtres Rituximab, Mépolizumab et Neurontin."
+ ],
+ "lacunes": [
+  "Venlafaxine : information professionnelle suisse non lue ; son statut d’indication n’est pas affirmé.",
+  "Critères suisses d’aptitude à la conduite automobile en cas de neuropathie : non lus.",
+  "Recommandation OFSP de vaccination contre le zona : non lue (lacune de l’audit MED maintenue).",
+  "Recommandations suisses de société savante (neuropathie vasculitique, névralgie intercostale) : aucune lue.",
+  "EULAR 2022, PNS 2010 et EFNS : résumés seulement (texte intégral inaccessible selon l’audit MED ; non retenté par W).",
+  "Faits repris de l’audit MED sans relecture par W : S4 et S28 relus au résumé PubMed ; S2 relu en texte OCR ; les autres sources relues par W aux passages cités dans corrections.json.",
+  "Les 35 renvois médicaux LANG non tranchés par l’audit MED restent non appliqués (liste dans renvois_medicaux_statut)."
+ ],
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
