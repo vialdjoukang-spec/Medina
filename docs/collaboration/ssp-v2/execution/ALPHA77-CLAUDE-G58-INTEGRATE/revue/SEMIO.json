@@ -1,0 +1,206 @@
+{
+ "actor": "Claude",
+ "code": "G58",
+ "kind": "SEMIO",
+ "mission": "ALPHA77-CLAUDE-G58-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "reviewed_commit": "1c44a7036fc48cd1c4dcbd13f669326d602955e8",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/G58/G58_a.html": "ab85b9cbe6a06c0778d39b193fc662fd020e0bf751aee0ac793f2f5836b6e699",
+  "chapters/G58/G58_b.html": "dac8f40b07949ec96ff2cdc3f019a1cbdd4ddf20dfa36efdfb70a75a5ba9124d",
+  "chapters/G58/G58_c.html": "5b3b01c49d1213b89e0ef2ccc5c2b44c48209f7d4e83d83a69c7de6db7befa00",
+  "chapters/G58/G58_d.html": "9a95b52653e579e594b68fec55610323566a606a43b4a17013811989a22c80de",
+  "chapters/G58/G58_pop1.html": "9d862c7a0f28d908d51ebff67e3137d45afd12313a4960a9fbd5d5712020f7b0",
+  "chapters/G58/G58_pop2.html": "809975dabf4ed5363c482348d1264978a3b88efeb6c04ad4782651ad64f240e4",
+  "glossary/g58.py": "ec367748aa21184855c46fef75b9d437ca0d74e7d904f6c993e4e9b6bfb205b1"
+ },
+ "reviewed_files_sha256": {
+  "chapters/G58/G58_a.html": "1bb3668b2a19834a1f3097303f36788eeddcd2b797023e73e6b75c4537cbc64e",
+  "chapters/G58/G58_b.html": "3354760784aa5aabc30923b6496f747b40a4233affcee0863e264a6426931101",
+  "chapters/G58/G58_c.html": "46e903ab9778d8d830b772cffca2fa326dd95258c2c9e9c7bac26ef446d978d7",
+  "chapters/G58/G58_d.html": "58624b6d0a5855b17ff5c8a35848b3a0bd1c62b4283c0c4d513157ecb36b80be",
+  "chapters/G58/G58_pop1.html": "e36eb3ab9964f85d6b5708ef64b3a9fc3c954e12cfb51f69dc30cab0789e80b2",
+  "chapters/G58/G58_pop2.html": "f620abe44fb78cf431cd85091a42fb650a3dd7558ffaaa1cddff37484507dbe7",
+  "glossary/g58.py": "6495a17905f441d0dd5923c79779942e1c6c6f88bc7b4f56e255927613e0a9f1"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "requirement": "fundamental_analytical_semiology",
+ "tab_id": "g58-s-semio",
+ "source_path": "chapters/G58/G58_c.html",
+ "clinical_marker": {
+  "fichier": "chapters/G58/G58_b.html",
+  "selecteur": "section#g58-6-semio[data-semiology-clinical=\"G58\"] dans l’îlot g58-6",
+  "dans_pA": true
+ },
+ "sections": {
+  "normal": "g58-sm-1",
+  "signs": "g58-sm-2",
+  "mechanisms": "g58-sm-3",
+  "examination": "g58-sm-4",
+  "interpretation": "g58-sm-5",
+  "differentials": "g58-sm-6",
+  "urgency": "g58-sm-7",
+  "limits": "g58-sm-8",
+  "sources": "g58-sm-9"
+ },
+ "grille_SEM": [
+  {
+   "critere": "SEM-01",
+   "resultat": "oui",
+   "preuve": "bouton #g58-tab-semio premier de .sci-bar, libellé exact, aria-selected=\"true\", div#g58-s-semio"
+  },
+  {
+   "critere": "SEM-02",
+   "resultat": "oui",
+   "preuve": "premier h3 exact « Pour la leçon : quelle est la sémiologie fondamentale et analytique ? »"
+  },
+  {
+   "critere": "SEM-03",
+   "resultat": "oui",
+   "preuve": "audit_sciences G58 passed : g58-s-semio 3 907 mots environ, figure S1 SVG non anatomique avec légende et source ; aucun SVG factice"
+  },
+  {
+   "critere": "SEM-04",
+   "resultat": "oui",
+   "preuve": "test_v7.py --static G58 : OK"
+  },
+  {
+   "critere": "SEM-05",
+   "resultat": "oui",
+   "preuve": "g58-sm-2 : tableau symptôme / mécanisme / fréquence ou valeur / piège, introduit et lu"
+  },
+  {
+   "critere": "SEM-06",
+   "resultat": "oui",
+   "preuve": "g58-sm-4 : technique d’examen (MRC muscle par muscle, coton, épingle, Rydel-Seiffer, Schepelmann, Carnett, pincement)"
+  },
+  {
+   "critere": "SEM-07",
+   "resultat": "oui",
+   "preuve": "g58-sm-2 et g58-sm-3 : mécanisme de chaque signe en phrase complète (signes positifs et négatifs, ischémie de troncs nerveux)"
+  },
+  {
+   "critere": "SEM-08",
+   "resultat": "oui",
+   "preuve": "absences écrites « non chiffrée dans les sources lues » ; seul le scratch collapse test est chiffré, avec son intervalle de confiance"
+  },
+  {
+   "critere": "SEM-09",
+   "resultat": "oui",
+   "preuve": "g58-sm-1 (normal : MRC 5, voies, seuils de Rydel-Seiffer) précède les signes"
+  },
+  {
+   "critere": "SEM-10",
+   "resultat": "oui",
+   "preuve": "colonne Piège, div.trap de g58-sm-5, rubriques Piège des fenêtres"
+  },
+  {
+   "critere": "SEM-11",
+   "resultat": "oui",
+   "preuve": "g58-sm-3 : tableau des syndromes et figure S1"
+  },
+  {
+   "critere": "SEM-12",
+   "resultat": "oui",
+   "preuve": "g58-sm-5 : raisonnement en cinq étapes ordonnées"
+  },
+  {
+   "critere": "SEM-13",
+   "resultat": "oui",
+   "preuve": "g58-sm-7 : drapeaux rouges de la Revue Médicale Suisse, cohérents avec l’onglet Pathologie (îlots 5 et 8)"
+  },
+  {
+   "critere": "SEM-14",
+   "resultat": "oui",
+   "preuve": "g58-sm-6 : discriminants sourcés (Schepelmann, Carnett, symétrie, petites fibres, neuroborréliose)"
+  },
+  {
+   "critere": "SEM-15",
+   "resultat": "oui",
+   "preuve": "g58-sm-4 : examen systématique ordonné"
+  },
+  {
+   "critere": "SEM-16",
+   "resultat": "oui",
+   "preuve": "g58-sm-4 : exemple de présentation constatations / interprétation / limites / examens"
+  },
+  {
+   "critere": "SEM-17",
+   "resultat": "oui",
+   "preuve": "3 cas (valeur d’un signe, formuler une limite, regroupement) avec correction"
+  },
+  {
+   "critere": "SEM-18",
+   "resultat": "oui",
+   "preuve": "10 fenêtres g58-sm-* ouvertes au navigateur, contenu réel, aucune « Fiche absente »"
+  },
+  {
+   "critere": "SEM-19",
+   "resultat": "oui",
+   "preuve": "sources suisses puis européennes ; la revue nord-américaine (Shamoun) limitée aux faits descriptifs ; aucune recommandation américaine"
+  },
+  {
+   "critere": "SEM-20",
+   "resultat": "oui",
+   "preuve": "chiffres concordants avec l’onglet 1 (10–40 %, 50–60 %, drapeaux rouges)"
+  },
+  {
+   "critere": "SEM-21",
+   "resultat": "oui",
+   "preuve": "renvoi textuel à l’onglet Pathologie (îlots 5 et 6) ; mécanismes et valeur seulement"
+  },
+  {
+   "critere": "SEM-22",
+   "resultat": "oui",
+   "preuve": "390 px : largeur de page égale à la fenêtre, aucun défilement horizontal"
+  },
+  {
+   "critere": "SEM-23",
+   "resultat": "oui",
+   "preuve": "captures réelles de W (integration/captures/G58_*_03_sous_onglet_semiologie.png, _05_fenetre_semiologie.png) et de P (revue/captures)"
+  },
+  {
+   "critere": "SEM-24",
+   "resultat": "oui",
+   "preuve": "statut « revue IA, aucune validation médicale humaine »"
+  }
+ ],
+ "findings": [
+  {
+   "id": "SEMIO-STRUCTURE",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Contrat structurel du sous-onglet et du bloc clinique.",
+   "verification": "Validateur rejoué par P sur les fichiers finaux : six boutons data-s, Sémiologie première et sélectionnée, cinq autres disciplines aria-selected=\"false\" ; panneau unique visible ; neuf sections data-semiology non vides avec h3 ; liens https dans la section sources ; aucun Pareto ni h2 dans la sémiologie ; bloc clinique dans pA.",
+   "evidence": [
+    "Validateur sémiologique (structure de tools/starter_codex.py:Repository.semiology, HTMLTree du dépôt) rejoué par P sur les fichiers finaux : bouton g58-tab-semio premier et sélectionné, 6 boutons data-s, panneau unique visible, titre exact, neuf sections non vides (g58-sm-1 à g58-sm-9), liens https, bloc clinique data-semiology-clinical=\"G58\" dans pA (G58_b.html).",
+    "Construction hors dépôt (MEDINA_OUT=scratchpad, build_front.py --fragment S08) et rendu Chromium 1194 à 1300 × 900 et 390 × 844 : 54 clés data-k G58 cliquées, aucune « Fiche absente », largeur de page égale à la fenêtre (aucun défilement horizontal) ; captures revue/captures/G58_P_*.png."
+   ]
+  },
+  {
+   "id": "SEMIO-CONTENU",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Faits de la sémiologie contre-vérifiés.",
+   "verification": "Voir MED.json P-MED-03 et P-MED-05 (Bernard-Valnet, Jacobs, Shamoun, Bakermans, Koike).",
+   "evidence": [
+    "Sources primaires relues par P le 16.10.2026."
+   ]
+  }
+ ],
+ "evidence": [
+  "python3 test_v7.py --static G58 : OK (G58 mots 20389, fenêtres 54, quiz 9, pareto 13 ; build_medina.audit appelé, aucune abréviation non couverte).",
+  "python3 tests/audit_sciences.py --base 523832d9 --codes G58 : passed, aucune erreur (6 disciplines, 6 figures).",
+  "Validateur sémiologique (structure de tools/starter_codex.py:Repository.semiology, HTMLTree du dépôt) rejoué par P sur les fichiers finaux : bouton g58-tab-semio premier et sélectionné, 6 boutons data-s, panneau unique visible, titre exact, neuf sections non vides (g58-sm-1 à g58-sm-9), liens https, bloc clinique data-semiology-clinical=\"G58\" dans pA (G58_b.html).",
+  "Construction hors dépôt (MEDINA_OUT=scratchpad, build_front.py --fragment S08) et rendu Chromium 1194 à 1300 × 900 et 390 × 844 : 54 clés data-k G58 cliquées, aucune « Fiche absente », largeur de page égale à la fenêtre (aucun défilement horizontal) ; captures revue/captures/G58_P_*.png."
+ ],
+ "conclusion": "Aucun constat bloquant pour la sémiologie fondamentale et analytique : la Sémiologie est le premier sous-onglet sélectionné, suivie de cinq disciplines réelles (dont l’Immunologie) ; rendu réel contrôlé au bureau et à 390 px.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
