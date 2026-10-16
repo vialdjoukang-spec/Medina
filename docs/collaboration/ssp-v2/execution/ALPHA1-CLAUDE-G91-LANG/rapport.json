@@ -1,0 +1,376 @@
+{
+  "mission": "ALPHA1-CLAUDE-G91-LANG",
+  "code": "G91",
+  "type_audit": "linguistique",
+  "base_sha": "103745baaa38c76f18288758cc7f689e5091ccdb",
+  "generation": 1,
+  "branche": "claude/alpha1/g91-lang-g1",
+  "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G91-LANG",
+  "conversation": "alpha1-claude-g91-lang",
+  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+  "modele_effort": "conforme au manifeste",
+  "date_debut": null,
+  "date_fin": "2026-10-16T09:27:47Z",
+  "lecture": {
+    "fichiers": [
+      "chapters/G91/G91_a.html",
+      "chapters/G91/G91_b.html",
+      "chapters/G91/G91_c.html",
+      "chapters/G91/G91_d.html",
+      "chapters/G91/G91_pop1.html",
+      "chapters/G91/G91_pop2.html",
+      "glossary/g91.py"
+    ],
+    "empreintes_conformes": true,
+    "empreintes_calculees": {
+      "chapters/G91/G91_a.html": "a98860131104456b3a4733c245f4a526962cbc6b7fdcbb736015ecbb8d837bb9",
+      "chapters/G91/G91_b.html": "527324d272458707f7d72ce30202615bf924dfe9e14a1fe3f0990539641d0cf5",
+      "chapters/G91/G91_c.html": "9377b43d1d79ab41beedb2c3ba167c0d3fcdfad7da2812e6563879b943aea052",
+      "chapters/G91/G91_d.html": "3c42ce3e299046159b115d84edd577639015dfcfc20c995cf20f0d7245398b1d",
+      "chapters/G91/G91_pop1.html": "07e288fdeabacdfd74c9bfa29ca947a6221b3ee70c269327e5ca8c24ec0b363c",
+      "chapters/G91/G91_pop2.html": "592496a74f3f0648c4339364ffe1865652569666fef43731ede635aef1fe34e6",
+      "glossary/g91.py": "059ae1961c774bc37c5b691fd51d13b84ad20cd6f1945f8a366ba0de89e166a7"
+    }
+  },
+  "premiere_verification": "Recalcul des SHA-256 des 7 fichiers contre .medina/missions/ALPHA1-CLAUDE-G91-LANG.json (tous conformes) ; lecture intégrale des 7 fichiers ; contrôle des abréviations par build_medina.audit() sur les six fichiers HTML avant et après application simulée des propositions (résultat {} dans les deux cas).",
+  "synthese": {
+    "nombre_propositions": 89,
+    "renvois_medicaux": 27,
+    "propositions_par_categorie": {
+      "syntaxe": 45,
+      "registre": 17,
+      "ambiguïté": 7,
+      "cohérence": 6,
+      "grammaire": 5,
+      "terminologie": 4,
+      "ponctuation": 2,
+      "répétition": 2,
+      "typographie": 1
+    },
+    "constats_hors_perimetre": 2
+  },
+  "propositions_fichier": "propositions.json",
+  "verification_unicite": {
+    "methode": "script Python : ancien.count(fichier) == 1 pour chacune des 89 propositions ; absence de chevauchement entre propositions d’un même fichier ; application simulée en mémoire puis build_medina.audit() == {} sur les six fichiers HTML et compilation du glossaire modifié ; même contrôle d’unicité pour les 27 ancres de renvois",
+    "toutes_uniques": true,
+    "sans_chevauchement": true,
+    "audit_abreviations_avant": {
+      "G91_a": {},
+      "G91_b": {},
+      "G91_c": {},
+      "G91_d": {},
+      "G91_pop1": {},
+      "G91_pop2": {}
+    },
+    "audit_abreviations_apres_application": {
+      "G91_a": {},
+      "G91_b": {},
+      "G91_c": {},
+      "G91_d": {},
+      "G91_pop1": {},
+      "G91_pop2": {}
+    }
+  },
+  "constats": [
+    {
+      "id": "R-01",
+      "fichier": "chapters/G91/G91_a.html",
+      "ancre": "Deux patients, deux urgences de nature opposée",
+      "categorie": "classification clinique",
+      "explication": "La phrase présente les deux vignettes comme deux « urgences », alors que la partie 1 décrit l’iNPH comme un « tableau lent » et la partie 0 la qualifie elle-même de « cause traitable ». Qualifier l’iNPH d’urgence ou non est un choix clinique, pas une correction de forme.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-02",
+      "fichier": "chapters/G91/G91_a.html",
+      "ancre": "possible, c’est-à-dire une cause traitable de troubles de la marche et de déclin cognitif",
+      "categorie": "certitude diagnostique",
+      "explication": "« Possible, c’est-à-dire une cause traitable » identifie le niveau « possible » (hypothèse à tester, partie 6) à une cause traitable ; le niveau de certitude de traitabilité n’est atteint qu’après la dérivation. La formulation exacte relève du fond.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-03",
+      "fichier": "chapters/G91/G91_a.html",
+      "ancre": "Ici, le liquide cérébrospinal (LCS) ne s’écoule plus",
+      "categorie": "généralisation",
+      "explication": "Formule absolue appliquée à la vignette du nourrisson, sans préciser la forme (obstructive ou communicante) ; la partie 3 avertit que « le liquide ne passe plus » ne décrit que la forme obstructive. Préciser la forme suppose un choix médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-04",
+      "fichier": "chapters/G91/G91_a.html",
+      "ancre": "La conduite diffère entièrement.",
+      "categorie": "généralisation",
+      "explication": "« Entièrement » est un absolu ; de même, « forme aiguë chez l’enfant » généralise (la partie 5 distingue l’enfant plus âgé, à boîte crânienne rigide). Nuancer suppose de décider de la portée clinique.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-05",
+      "fichier": "chapters/G91/G91_a.html",
+      "ancre": "Institut fédéral allemand des médicaments (BfArM)",
+      "categorie": "dénomination",
+      "explication": "Le texte désigne le BfArM comme « Institut fédéral allemand des médicaments » ; la dénomination officielle complète de l’institut n’a pas été vérifiée dans une source lue. À confirmer sur la source avant correction.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-06",
+      "fichier": "chapters/G91/G91_a.html",
+      "ancre": "La rubrique G91 inclut l’hydrocéphalie acquise.",
+      "categorie": "classification",
+      "explication": "La phrase suit l’énumération des exclusions, dont P91.7 (hydrocéphalie acquise du nouveau-né) : le lecteur peut croire à une contradiction. La limite exacte de l’inclusion (acquise de l’enfant et de l’adulte hors période néonatale) est un fait de classification à confirmer.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-07",
+      "fichier": "chapters/G91/G91_a.html",
+      "ancre": "L’hémorragie sous-arachnoïdienne produit une hydrocéphalie chez environ un patient sur quatre",
+      "categorie": "portée",
+      "explication": "Le tableau de la partie 2 et la fenêtre « Hydrocéphalie aiguë après hémorragie sous-arachnoïdienne » limitent la valeur d’environ 25 % à l’hémorragie sous-arachnoïdienne anévrismale ; l’encadré la généralise à toute hémorragie sous-arachnoïdienne. « Produit » énonce de plus une causalité plus forte que « se complique de ».",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-08",
+      "fichier": "chapters/G91/G91_a.html",
+      "ancre": "elle suit 0,7–3,7 % des traumatismes crâniens",
+      "categorie": "antécédent",
+      "explication": "Dans la phrase, « elle » reprend grammaticalement « l’hydrocéphalie post-hémorragique » ; la fenêtre « Épidémiologie pédiatrique » rattache ce chiffre à l’hydrocéphalie post-traumatique. Corriger l’antécédent exige de trancher entre les deux entités.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-09",
+      "fichier": "chapters/G91/G91_a.html",
+      "ancre": "sans valeur prédictive négative démontrée de la réponse à la dérivation",
+      "categorie": "terminologie statistique",
+      "explication": "« Valeur prédictive négative » est un terme de performance diagnostique, ici employé au sens de « ne prédit pas une mauvaise réponse » (formulation de la fenêtre associée). Remplacer le terme change le contenu statistique affirmé.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-10",
+      "fichier": "chapters/G91/G91_a.html",
+      "ancre": "Manifestation : crâne qui s’élargit chez le nourrisson, pression et triade lente chez l’adulte.",
+      "categorie": "ellipse",
+      "explication": "L’ellipse masque une assertion : « pression … chez l’adulte » (hypertension intracrânienne ? elle caractérise surtout l’enfant plus âgé, selon la partie 3, alors que l’iNPH est à pression normale). Rédiger la phrase complète oblige à choisir le sens.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-11",
+      "fichier": "chapters/G91/G91_a.html",
+      "ancre": "hyperactivité détrusorienne d’environ 70 %",
+      "categorie": "dénominateur absent",
+      "explication": "Le pourcentage n’a ni dénominateur (patients iNPH ? patients avec trouble urinaire ?) ni source ; il ne figure pas dans la fenêtre « Cognition de l’iNPH ». À sourcer avant de reformuler.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-12",
+      "fichier": "chapters/G91/G91_a.html",
+      "ancre": "Elle n’est complète que chez environ 60 % des iNPH.",
+      "categorie": "fréquence",
+      "explication": "L’encadré donne « environ 60 % » comme valeur unique ; le tableau précédent rapporte aussi 12,1 % dans une enquête japonaise de 1524 patients. Le choix de la valeur de synthèse est un jugement de fond.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-13",
+      "fichier": "chapters/G91/G91_b.html",
+      "ancre": "Diagnostic différentiel, par ordre de gravité décroissante.",
+      "categorie": "ordre annoncé",
+      "explication": "L’intitulé annonce un classement par gravité décroissante, mais la phrase suivante justifie l’ordre par l’influence sur le traitement (« parce qu’elles changent le traitement ») et le tableau ne classe pas les entités par gravité. Retirer la promesse ou classer la liste change le fond.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-14",
+      "fichier": "chapters/G91/G91_b.html",
+      "ancre": "L’amélioration après tap test confirme l’hypothèse",
+      "categorie": "force de l’assertion",
+      "explication": "« Confirme » est plus fort que « Soutient l’iNPH probable » (tableau de la partie e-3) et que « soutient » des critères japonais ; la hiérarchie des termes (confirmer, soutenir, suggérer) est un choix médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-15",
+      "fichier": "chapters/G91/G91_b.html",
+      "ancre": "Parcours de sélection (modèle suisse).",
+      "categorie": "portée",
+      "explication": "Un seul centre (Lausanne) est décrit ; « modèle suisse » généralise à la Suisse. Le titre exact dépend de ce que la source autorise à affirmer.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-16",
+      "fichier": "chapters/G91/G91_b.html",
+      "ancre": "92 % des 16 opérés en ont une à 6 semaines",
+      "categorie": "cohérence arithmétique",
+      "explication": "92 % de 16 n’est pas un nombre entier (14,7) ; 15 sur 16 donne 93,75 %, 12 sur 13 donne 92,3 %. Soit le pourcentage, soit l’effectif est inexact (la fenêtre associée reprend « 92 % … chez 16 opérés »). À vérifier dans la source.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-17",
+      "fichier": "chapters/G91/G91_b.html",
+      "ancre": "(rapport de risque 0,38)",
+      "categorie": "terminologie statistique",
+      "explication": "Le texte écrit « rapport de risque » ici, alors que la partie p-4 et les fenêtres emploient « HR » (hazard ratio, rapport de risques instantanés). Les deux mesures ne sont pas interchangeables ; le choix du terme dépend de la source.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-18",
+      "fichier": "chapters/G91/G91_b.html",
+      "ancre": "67 % ont une scolarité ordinaire",
+      "categorie": "antécédent",
+      "explication": "Le sujet des trois pourcentages (« 67 % », « 56 % », « 42 % ») n’est pas précisé : population de la cohorte, survivants, ou sujets évalués. Préciser la population est une affirmation de fond.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-19",
+      "fichier": "chapters/G91/G91_b.html",
+      "ancre": "pour 13 000 €",
+      "categorie": "dénominateur absent",
+      "explication": "Le coût de 13 000 € n’est rapporté ni à un patient ni à une période (par patient ? sur la vie restante ?) ; la formulation « pour 13 000 € » est ambiguë. À préciser d’après le modèle suédois.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-20",
+      "fichier": "chapters/G91/G91_b.html",
+      "ancre": "La recommandation européenne souhaite des centres",
+      "categorie": "force de la recommandation",
+      "explication": "« Souhaite » ne correspond à aucun degré de recommandation usuel (recommande, suggère, propose) ; le choix du verbe dépend du libellé de la recommandation.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-21",
+      "fichier": "chapters/G91/G91_c.html",
+      "ancre": "Évitée en cas d’obstruction par une masse",
+      "categorie": "force de l’assertion",
+      "explication": "La ligne du tableau écrit « Évitée » dans la colonne Examen et « Contre-indiquée dans ce cas » dans la colonne Statut : éviter et contre-indiquer n’ont pas la même portée. Harmoniser suppose de trancher.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-22",
+      "fichier": "chapters/G91/G91_c.html",
+      "ancre": "ces volumes ne diffèrent pas",
+      "categorie": "ambiguïté de fond",
+      "explication": "La phrase dit que les volumes (30 mL, 50 mL) ne diffèrent pas, ce qui est faux littéralement ; la source (fenêtre : « sans différence entre les deux volumes ») ne précise pas sur quoi porte l’absence de différence (réponse clinique, valeur prédictive). Toute reformulation ajoute un fait.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-23",
+      "fichier": "chapters/G91/G91_c.html",
+      "ancre": "sa spécificité de 75 % (33–100)",
+      "categorie": "mesure d’incertitude",
+      "explication": "Les parenthèses « (26–87) » et « (33–100) » ne précisent pas leur nature (intervalle de confiance, étendue des études). La nature de ces bornes est un fait de source.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-24",
+      "fichier": "chapters/G91/G91_c.html",
+      "ancre": "accessible à l’ETV",
+      "categorie": "exclusivité",
+      "explication": "L’encadré attribue l’ETV à la forme obstructive et la dérivation à la forme communicante, alors que la partie 9 fait de la dérivation ventriculo-péritonéale le pilier du traitement de l’enfant dans les deux formes. « Accessible à » est de plus un calque. La correction suppose de trancher la portée clinique.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-25",
+      "fichier": "chapters/G91/G91_c.html",
+      "ancre": "nulle sur l’hydrocéphalie post-hémorragique du prématuré",
+      "categorie": "force de l’assertion",
+      "explication": "« Nulle » (de même « sans effet » dans la fenêtre « Acétazolamide (Diamox®) : fiche rapide ») est plus fort que « n’ont pas réduit l’hydrocéphalie post-hémorragique » (parties 9 et p-4) : absence de preuve d’efficacité ou efficacité nulle.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-26",
+      "fichier": "chapters/G91/G91_c.html",
+      "ancre": "Réponse B. DESH avec trouble typique de la marche et pression ≤ 200 mmH2O font une iNPH probable",
+      "categorie": "critère omis",
+      "explication": "Les critères de l’iNPH probable exigent aussi un « contenu normal » du LCS (parties 6 et 13) ; l’énoncé du cas et la correction ne le mentionnent pas. Ajouter ce critère modifie le cas.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-27",
+      "fichier": "chapters/G91/G91_pop1.html",
+      "ancre": "Données issues d’un résumé (S11)",
+      "categorie": "référence interne",
+      "explication": "« S11 » est un identifiant interne de source, sans signification pour le lecteur. Le remplacer exige de retrouver la référence bibliographique exacte.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    }
+  ],
+  "constats_hors_perimetre": [
+    {
+      "id": "H-01",
+      "gravite": "MAJEUR (transmis à l’audit MED)",
+      "fichier": "chapters/G91/G91_c.html",
+      "constat": "L’onglet Sciences compte 4 sous-onglets (data-s : Anatomie, Histologie, Physiologie, Biochimie) ; le sous-onglet « Sémiologie fondamentale et analytique » est absent, ainsi que la discipline génétique ou microbiologie prévue par le guide (§ 6)."
+    },
+    {
+      "id": "H-02",
+      "gravite": "réserve (transmis à l’audit MED)",
+      "fichier": "chapters/G91/G91_a.html ; G91_c.html",
+      "constat": "Les cinq figures sont des schémas SVG dessinés ; leur provenance n’a pas été vérifiée par ce rôle (voir clé figures)."
+    }
+  ],
+  "differes": [
+    "Espaces insécables : non appliquées, ni proposées. Les sept fichiers ne contiennent aucun U+00A0 ni U+202F. Relevé pour la décision globale : 436 espaces simples avant « ; : ? ! » dans le texte visible, 46 guillemets « » sans insécable intérieure, 184 occurrences « nombre % » sans insécable. Une application mécanique par le moteur est préférable à des propositions locales.",
+    "Choix « tap test » / « test de soustraction de LCS » : non tranché ; une équivalence est posée à la première occurrence du terme (P-23), le reste du cours conserve les deux termes."
+  ],
+  "observations": [
+    "Vocabulaire de fabrication et de provenance : « dossier » (16 occurrences), « lu », « lue », « lues », « lus » (35 occurrences) et, dans l’en-tête de la leçon, « Cycle Betta 40 … audit différé » décrivent la fabrication du cours, ce que le guide de rédaction (§ 3) proscrit ; ils portent aussi les mentions de lacune exigées par la règle de vérité. Le retrait ou la reformulation est un choix éditorial pour l’intégrateur ; seules les occurrences personnifiant le chapitre (« Ce chapitre apprend », « Il nomme ») et le terme « îlot » ont fait l’objet de propositions.",
+    "Objectifs de la partie 0 : cinq infinitifs injonctifs (« Définir… », « Distinguer… », « Poser… », « Reconnaître… », « Choisir… ») que le guide de rédaction (§ 2) proscrit ; non reformulés, car un objectif pédagogique à l’infinitif est un usage établi et sa réécriture relèverait d’un choix de conception de la leçon (sauf le zeugme de l’objectif 5, proposé).",
+    "Répétitions entre parties : la phrase sur les ponctions lombaires répétées, l’acétazolamide et les fibrinolytiques apparaît quatre fois (partie 9 ×2, tableau p-1, partie p-4) ; le suivi lausannois à 6 semaines, 6 et 12 mois figure dans les parties 8 et 11 ; la dysfonction par obstruction proximale dans les parties 7 et 10 ; la supplémentation en folates dans les parties 4 et 11. Seule la redite immédiate de la partie 9 a fait l’objet d’une proposition ; les autres relèvent de la structure du cours.",
+    "Le bouton Pareto « Anamnèse et examen » est placé à la fin de la partie 5 mais sa fenêtre couvre aussi la partie 6 (data-cover g91-5,g91-6) ; la position du bouton relève de la structure.",
+    "Partie e-2 : le paragraphe commence par l’étiquette « Normal avant pathologique. », qui reprend une règle d’écriture du guide, puis précise que le dossier ne donne pas de valeur normale de l’index d’Evans ; l’étiquette est sans objet pour le lecteur.",
+    "Nombres : « 6000 », « 1500 g », « 1605 », « 1524 », « 1000 » sont écrits sans espace, « 100 000 » et « 13 000 € » avec espace ; l’harmonisation dépend du choix différé sur les espaces insécables.",
+    "Notation chimique et unités : « mmH2O », « cmH2O », « HCO3- », « Na+/K+-ATPase » sont écrits sans indice ni exposant ; les clés du glossaire reposent sur ces graphies, qu’un changement de balisage casserait. Non proposé.",
+    "HTML : 10 caractères « < » non échappés dans le texte courant (G91_a ×1, G91_b ×3, G91_c ×3, G91_pop1 ×2, G91_pop2 ×1) et 5 « > » ; ils sont tolérés par l’analyseur tant qu’ils sont suivis d’un espace ou d’un chiffre, mais « &lt; » et « &gt; » sont attendus. Relève de l’intégrateur.",
+    "Anglicismes conservés : « freezing » (G91_a ×2, G91_pop1 ×1), « board » (parcours lausannois), « Timed Up and Go », « tap test » (employé 16 fois avec « test de soustraction » ; équivalence posée à la première occurrence par la proposition P-23), « double tâche ». Le choix d’un terme unique est éditorial.",
+    "Glossaire : la clé CT devient inutilisée dans le texte si la proposition sur « Imagerie (CT, CT de perfusion) » est appliquée ; neuf définitions de codes répètent « Code CIM-10-GM 2024. » sans plus ; plusieurs définitions sont des phrases nominales (« Test cognitif global. », « Mesure d’efficience. ») ; acceptables pour un glossaire, non modifiées."
+  ],
+  "lacunes": [
+    "Aucune vérification médicale n’a été faite : les renvois_medicaux signalent des formulations dont la correction changerait le fond ; ils ne sont ni confirmés ni infirmés.",
+    "Aucun contrôle de rendu navigateur des propositions : l’application simulée a été faite en mémoire, aucun fichier canonique n’est modifié.",
+    "Aucune lecture des sources primaires citées : les écarts avec les sources sont établis seulement par comparaison interne entre les sept fichiers de la leçon.",
+    "Le manifeste porte base_sha 523832d9 alors que la consigne et la branche reposent sur 103745ba ; les empreintes des sept fichiers sont conformes au manifeste, donc les sources figées sont identiques.",
+    "Heure de début non relevée au démarrage de l’audit : date_debut est laissé à null plutôt que d’être estimé."
+  ],
+  "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée",
+  "figures": {
+    "portee_controle": "Le contrôle a porté sur le texte des figures (légendes, étiquettes), pas sur leur provenance. La vérification de la provenance est transmise à l'audit MED.",
+    "inventaire": [
+      {
+        "figure": "Figure 2 (G91_c.html, voies du LCS et sites d’obstacle)",
+        "classe": "ORIGINE_INCONNUE",
+        "statut": "réserve",
+        "note": "Seule figure légendée « schéma anatomique » (SVG dessiné : ellipses et rectangles) ; sa légende la dit non calibrée à l’échelle et d’après la revue pédiatrique 2024. Provenance à vérifier par l’audit MED."
+      },
+      {
+        "figure": "Figures 1 (G91_a.html), 3, 4, 5 (G91_c.html)",
+        "classe": "non évaluée par ce rôle (schémas conceptuels d’après leur légende)",
+        "statut": "transmis à l'audit MED",
+        "note": "Aucune provenance vérifiée. Texte des étiquettes lu : aucune faute relevée."
+      }
+    ]
+  },
+  "worktree_base": "103745baaa38c76f18288758cc7f689e5091ccdb",
+  "base_note": "La consigne du coordinateur donne 103745ba ; le manifeste porte 523832d9. Sources figées identiques : empreintes SHA-256 conformes au manifeste."
+}
