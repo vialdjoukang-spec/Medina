@@ -8,7 +8,7 @@ python3 tools/front_poids.py --out /tmp/site --json /tmp/front_poids.json \
   --scenarios file-brut,file-mobile,http-brut,http-mobile [--budget budget.json] [--proposer-budget b.json]
 ```
 
-Le code retour vaut 1 si un budget est dépassé. L’option `--sans-navigateur` limite la mesure aux poids. Chromium est pris dans `/opt/pw-browsers` ; `playwright install` n’est jamais appelé. La compression brotli est mesurée si le module `brotli` est installé.
+Le code retour vaut 1 si un budget est dépassé ou si une métrique du budget n’a pas été mesurée (`--tolerer-non-mesurees` pour l’accepter). L’option `--sans-navigateur` limite la mesure aux poids. Chromium est pris dans `/opt/pw-browsers` ; `playwright install` n’est jamais appelé. La compression brotli est mesurée si le module `brotli` est installé.
 
 ## Résultats
 

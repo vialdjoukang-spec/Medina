@@ -189,7 +189,20 @@ class BudgetTests(unittest.TestCase):
                 self.assertEqual(F.principal(args + ['--budget', str(budget)]), 1)
                 budget.write_text(json.dumps({'max': {'site.total.brut': 10 ** 6}}), encoding='utf-8')
                 self.assertEqual(F.principal(args + ['--budget', str(budget)]), 0)
-            self.assertEqual(json.loads(sortie.read_text(encoding='utf-8'))['budget']['verifies'], 1)
+                self.assertEqual(json.loads(sortie.read_text(encoding='utf-8'))['budget']['verifies'], 1)
+                # Métrique demandée mais non mesurée (navigateur absent, chemin erroné) : échec.
+                budget.write_text(json.dumps({'max': {'temps.accueil.http-mobile.fcp_ms': 10}}), encoding='utf-8')
+                self.assertEqual(F.principal(args + ['--budget', str(budget)]), 1)
+                self.assertEqual(F.principal(args + ['--budget', str(budget), '--tolerer-non-mesurees']), 0)
+
+    def test_svg_compresse(self):
+        self.assertTrue(F.compressible('a/b.svg'))
+        self.assertFalse(F.compressible('a/b.png'))
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / 'x.svg').write_text('<svg>' + '<path d="M0 0"/>' * 500 + '</svg>', encoding='utf-8')
+            r = F.inventaire(Path(d), journal=lambda m: None)
+            f = r['plus_gros_fichiers'][0]
+            self.assertLess(f['gzip'], f['brut'] / 10)
 
 
 if __name__ == '__main__':

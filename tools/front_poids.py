@@ -15,7 +15,7 @@ L'outil ne modifie rien dans le dossier mesuré. Il produit :
     en file:// et via ``python3 -m http.server``, avec limitation CPU et réseau CDP ;
   * l'audit du chargement des polices (font-display, préchargement).
 
-Code retour : 0 conforme, 1 budget dépassé, 2 erreur d'utilisation.
+Code retour : 0 conforme, 1 budget dépassé ou métrique du budget non mesurée, 2 erreur d'utilisation.
 Chromium : celui de Playwright sous /opt/pw-browsers (ou MEDINA_CHROMIUM) ;
 l'outil n'exécute jamais ``playwright install``.
 """
@@ -44,6 +44,13 @@ except Exception:  # pragma: no cover - dépend de l'environnement
 VERSION = 1
 CATEGORIES = ('html', 'css', 'js', 'donnees', 'polices', 'images', 'autres')
 TEXT_CATEGORIES = {'html', 'css', 'js', 'donnees'}
+TEXT_EXTENSIONS = {'.svg'}  # images textuelles, compressées par le serveur
+
+
+def compressible(chemin: str, taille: int = 0) -> bool:
+    cat = categorie_fichier(chemin)
+    return (cat in TEXT_CATEGORIES or Path(chemin).suffix.lower() in TEXT_EXTENSIONS
+            or (cat == 'autres' and taille < 1 << 20))
 EXTENSIONS = {
     '.html': 'html', '.htm': 'html',
     '.css': 'css',
@@ -247,8 +254,7 @@ def inventaire(out: Path, gzip_niveau: int = 6, brotli_qualite: int = 9, journal
         rel = chemin.relative_to(out).as_posix()
         data = chemin.read_bytes()
         cat = categorie_fichier(rel)
-        m = mesures(data, cat in TEXT_CATEGORIES or cat == 'autres' and len(data) < 1 << 20,
-                    gzip_niveau, brotli_qualite)
+        m = mesures(data, compressible(rel, len(data)), gzip_niveau, brotli_qualite)
         fichier = {'chemin': rel, 'categorie': cat, 'sha256': empreinte(data), **m}
         fichiers.append(fichier)
         agg = par_categorie[cat]
@@ -274,7 +280,7 @@ def inventaire(out: Path, gzip_niveau: int = 6, brotli_qualite: int = 9, journal
                 d = ref.read_bytes()
                 c = categorie_fichier(ref.name)
                 externes.append({'chemin': ref.relative_to(out).as_posix(), 'categorie': c,
-                                 **mesures(d, c in TEXT_CATEGORIES, gzip_niveau, brotli_qualite)})
+                                 **mesures(d, compressible(ref.name, len(d)), gzip_niveau, brotli_qualite)})
             pages[rel] = {
                 'total': {'brut': m['brut'], 'gzip': m['gzip'], 'brotli': m['brotli']},
                 'categories': cats,
@@ -776,6 +782,7 @@ def resume(r: dict) -> str:
     if b:
         lignes.append(f"Budget : {b['verifies']} métriques vérifiées, {len(b['depassements'])} dépassements")
         lignes += [f"  DÉPASSÉ {d['metrique']} = {d['valeur']} > {d['limite']}" for d in b['depassements']]
+        lignes += [f"  NON MESURÉE {m}" for m in b['non_mesurees']]
     return '\n'.join(lignes)
 
 
@@ -803,6 +810,8 @@ def principal(argv=None) -> int:
     ap.add_argument('--page', action='append', help='nom=chemin[#route]|condition JS|couverture (répétable)')
     ap.add_argument('--scenarios', default='file-brut,file-mobile,http-mobile',
                     help='parmi ' + ','.join(SCENARIOS))
+    ap.add_argument('--tolerer-non-mesurees', action='store_true',
+                    help='ne pas échouer quand une métrique du budget est absente du rapport')
     ap.add_argument('--sans-navigateur', action='store_true', help='poids seulement')
     ap.add_argument('--delai', type=float, default=900, help='délai maximal par mesure (s)')
     ap.add_argument('--gzip-niveau', type=int, default=6)
@@ -830,7 +839,9 @@ def principal(argv=None) -> int:
     if a.budget:
         rapport['budget'] = verifier_budget(rapport, json.loads(Path(a.budget).read_text(encoding='utf-8')))
         rapport['budget']['fichier'] = a.budget
-        code = 1 if rapport['budget']['depassements'] else 0
+        b = rapport['budget']
+        # Une métrique demandée mais non mesurée ne doit pas laisser passer la CI.
+        code = 1 if b['depassements'] or (b['non_mesurees'] and not a.tolerer_non_mesurees) else 0
     if a.proposer_budget:
         Path(a.proposer_budget).write_text(json.dumps(proposer_budget(rapport, a.marge, a.marge_temps), ensure_ascii=False, indent=2) + '\n',
                                            encoding='utf-8')
