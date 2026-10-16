@@ -1,22 +1,22 @@
 # Audit linguistique agressif — C72 (fragment S08)
 
-*Mission ALPHA1-CLAUDE-C72-LANG · branche `claude/alpha1/c72-lang-g1` · base 32416a20 · génération 1 · 2026-10-16T05:59Z*
+*Mission ALPHA1-CLAUDE-C72-LANG · branche `claude/alpha1/c72-lang-g1` · base d1a488ad (manifeste) · worktree sur 32416a20 · génération 1 · 2026-10-16T06:12Z*
 
 > Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée.
 
 ## Synthèse
 
-La leçon C72 (tumeur maligne de la moelle épinière, des nerfs crâniens et d’autres parties du système nerveux central) a été relue en entier : quatre onglets, deux fichiers de fenêtres et le glossaire. Les sept empreintes SHA-256 sont conformes au manifeste. La relecture produit **87 propositions locales**, sans modification du fond, et **49 renvois médicaux** : ce sont des formulations qui créent une causalité, une fréquence ou une chronologie qu’aucune source lue n’établit. Ces dernières ne sont pas corrigées.
+La leçon C72 (tumeur maligne de la moelle épinière, des nerfs crâniens et d’autres parties du système nerveux central) a été relue en entier : quatre onglets, deux fichiers de fenêtres et le glossaire. Les sept empreintes SHA-256 sont conformes au manifeste. La relecture produit **83 propositions locales**, sans modification du fond, et **53 renvois médicaux** : ce sont des formulations qui créent une causalité, une fréquence ou une chronologie qu’aucune source lue n’établit. Ces dernières ne sont pas corrigées.
 
 | Indicateur | Valeur |
 |---|---|
-| Propositions locales | 87 |
-| Renvois médicaux | 49 |
+| Propositions locales | 83 |
+| Renvois médicaux | 53 |
 | Choix différés de Vial (listés, non appliqués) | 2 |
 | Catégorie « registre » | 27 |
-| Catégorie « ambiguite » | 11 |
-| Catégorie « phrase_nominale » | 10 |
 | Catégorie « grammaire » | 9 |
+| Catégorie « phrase_nominale » | 9 |
+| Catégorie « ambiguite » | 8 |
 | Catégorie « lourdeur » | 8 |
 | Catégorie « syntaxe » | 6 |
 | Catégorie « repetition » | 4 |
@@ -31,8 +31,8 @@ La leçon C72 (tumeur maligne de la moelle épinière, des nerfs crâniens et d�
 | Fichier | Propositions | Renvois |
 |---|---|---|
 | `chapters/C72/C72_a.html` | 18 | 16 |
-| `chapters/C72/C72_b.html` | 23 | 10 |
-| `chapters/C72/C72_c.html` | 17 | 12 |
+| `chapters/C72/C72_b.html` | 20 | 13 |
+| `chapters/C72/C72_c.html` | 16 | 13 |
 | `chapters/C72/C72_d.html` | 10 | 3 |
 | `chapters/C72/C72_pop1.html` | 7 | 3 |
 | `chapters/C72/C72_pop2.html` | 11 | 4 |
@@ -118,9 +118,22 @@ Chaque entrée cite l’extrait exact, présent une seule fois dans son fichier,
 
 - **R49** — « Ce neurofibrome atypique de la neurofibromatose de type 1 n’est pas encore un MPNST. » : Même chronologie que R35. Non modifié.
 
+### `chapters/C72/C72_b.html`
+
+- **R50** — « Hypersignal T2 du cône jusqu’à 90 %, « flow voids » serpigineux ; angiographie de référence » : Dénominateur manquant (« jusqu’à 90 % » de quoi ?) : ajouter « des cas » précise une population statistique ; la fenêtre FDAV écrit « 90 % des cas », mais la précision relève de la source. Proposition retirée (revue Codex) ; non modifié.
+
+### `chapters/C72/C72_c.html`
+
+- **R51** — « Hypersignal T2 du cône (jusqu’à 90 %), « flow voids » serpigineux » : Même dénominateur manquant que R50, dans l’onglet Examens. Non modifié.
+
+### `chapters/C72/C72_b.html`
+
+- **R52** — « de 48 mois seule, 96 mois » : « seule » sans support : écrire « après chirurgie seule » fixe le comparateur de la série de 348 patients, notion statistique à confirmer dans la source. Non modifié.
+- **R53** — « Le témozolomide est contre-indiqué. Pour l’homme traité » : La carte est titrée « Grossesse et allaitement » et la phrase ne dit pas pour quelle situation le témozolomide est contre-indiqué ; la préciser fixe la portée d’une contre-indication, qui relève de la fiche suisse. Non modifié.
+
 ## Propositions locales
 
-Les 87 propositions complètes (ancien, nouveau, motif, catégorie) figurent dans `propositions.json`. Les plus significatives :
+Les 83 propositions complètes (ancien, nouveau, motif, catégorie) figurent dans `propositions.json`. Les plus significatives :
 
 - `C72-LANG-0001` (repetition) — « Leur rareté contraste avec leur retentissement : malgré sa fréquence faible, une tumeur » → « Leur rareté contraste avec leur retentissement : une tumeur ». Répétition : « rareté » et « fréquence faible » disent la même chose dans la même phrase.
 - `C72-LANG-0002` (ambiguite) — « &lt;/button> change selon la tumeur. » → « &lt;/button> diffère entre l’adulte et l’enfant. ». Tautologie : une répartition « par type » ne peut pas « changer selon la tumeur » ; la phrase suivante, qui oppose adulte et enfant, donne le sens.
@@ -128,18 +141,18 @@ Les 87 propositions complètes (ancien, nouveau, motif, catégorie) figurent dan
 - `C72-LANG-0022` (registre) — « Une IRM postopératoire juge l’étendue de l’exérèse. » → « Une IRM postopératoire évalue l’étendue de l’exérèse. ». Impropriété : une IRM ne « juge » pas ; elle évalue.
 - `C72-LANG-0023` (registre) — « la jeune femme porte une lésion intramédullaire » → « la jeune femme présente une lésion intramédullaire ». Registre : un patient « présente » une lésion ; il ne la « porte » pas.
 - `C72-LANG-0027` (registre) — « définitive en règle, » → « définitive en règle générale, ». Locution incomplète : on dit « en règle générale ».
-- `C72-LANG-0028` (ambiguite) — « Hypersignal T2 du cône jusqu’à 90 %, « flow voids » serpigineux ; angiographie de référence » → « Hypersignal T2 du cône (jusqu’à 90 % des cas), « flow voids » serpigineux ; angiographie de référence ». Dénominateur manquant : « jusqu’à 90 % » de quoi ? La fenêtre « Fistule durale artérioveineuse » écrit « 90 % des cas » ; la correction reprend ce libellé sans ajouter de donnée.
-- `C72-LANG-0035` (phrase_nominale) — « Le témozolomide est contre-indiqué. Pour l’homme traité, aucune procréation pendant le traitement et trois moi » → « Le témozolomide est contre-indiqué pendant la grossesse et l’allaitement. Chez l’homme traité, aucune procréat ». Phrase sans verbe (STYLE_REDACTION § 2) et contre-indication non située : le titre de la carte (grossesse et allaitement) et la section pharmacologie donnent le contexte, la formulation « aucune procréation n’est permise » est celle de la leçon pharmacologie.
-- `C72-LANG-0036` (phrase_nominale) — « : tableau d’épendymome. » → « : ce tableau évoque un épendymome. ». Phrase nominale (STYLE_REDACTION § 2).
-- `C72-LANG-0039` (registre) — « Il signale aussi ce que les sources lues ne permettent pas d’affirmer. » → « Les limites des sources lues y sont aussi signalées. ». Méta-discours proscrit (STYLE_REDACTION § 3) : « Il » renvoyait à « Cet îlot ».
-- `C72-LANG-0041` (lourdeur) — « usage hors indication&lt;/button>), et l’obligation s’étend aux tumeurs » → « usage hors indication&lt;/button>). L’obligation s’étend aux tumeurs ». Phrase trop longue (STYLE_REDACTION § 2, une idée par phrase) : deux informations sans rapport (témozolomide, déclaration) sont soudées par « et ».
-- `C72-LANG-0066` (ambiguite) — « cette absence ne prouve pas l’absence d’autorisation et se vérifie sur le site de Swissmedic. » → « cette absence ne prouve pas l’absence d’autorisation, qui se vérifie sur le site de Swissmedic. ». Antécédent ambigu : « se vérifie » se rapporterait à « cette absence » ; c’est l’autorisation qui se vérifie.
-- `C72-LANG-0076` (grammaire) — « Le document consulté est une aide-mémoire » → « Le document consulté est un aide-mémoire ». Genre : « aide-mémoire » est masculin.
-- `C72-LANG-0087` (abreviation) — « [('MG','MéthylGuanine'),('M','Méthyl'),('T','Transférase')] » → « [('M','Méthyl'),('G','Guanine'),('M','Méthyl'),('T','Transférase')] ». Définition littérale lettre à lettre (règle 3 du projet) : le sigle MGMT compte quatre lettres, M-G-M-T ; la clé les découpait en trois éléments dont un « MG » qui n’est pas une lettre. Le développement complet (« O6-méthylguanine-ADN méthyltransférase ») est inchangé.
+- `C72-LANG-0028` (coherence_terminologique) — « sont utilisées pour un risque d’environ 1 à 2 %. » → « sont utilisées avec un risque d’environ 1 à 2 %. ». Préposition : on utilise une dose « avec » un risque ; « pour » suggère un but (la fenêtre associée écrit « avec »).
+- `C72-LANG-0035` (registre) — « Cet îlot réunit trois éléments utiles à l’examen fédéral : » → « Trois éléments servent à l’examen fédéral : ». Méta-discours proscrit (STYLE_REDACTION § 3 : « cet îlot présente » est interdit).
+- `C72-LANG-0036` (registre) — « Il signale aussi ce que les sources lues ne permettent pas d’affirmer. » → « Les limites des sources lues y sont aussi signalées. ». Méta-discours proscrit (STYLE_REDACTION § 3) : « Il » renvoyait à « Cet îlot ».
+- `C72-LANG-0039` (registre) — « Le &lt;b>gold standard&lt;/b> de ce chapitre est double » → « La &lt;b>référence diagnostique&lt;/b> de ce chapitre est double ». Anglicisme : « gold standard » a un équivalent français.
+- `C72-LANG-0041` (phrase_nominale) — « &lt;p>Bords plus nets que l’astrocytome diffus, rehaussement, kystes polaires, coiffe hémosidérinique, syringomyé » → « &lt;p>L’épendymome présente des bords plus nets que l’astrocytome diffus, un rehaussement, des kystes polaires, u ». Phrase nominale (STYLE_REDACTION § 2). Les éléments d’imagerie sont repris à l’identique.
+- `C72-LANG-0066` (registre) — « Aucun chiffre de risque propre à la moelle n’est donné dans le dossier. » → « Aucun chiffre de risque propre à la moelle n’est donné dans les sources lues. ». Méta-discours de fabrication (« le dossier »).
+- `C72-LANG-0076` (registre) — « Une méthylprednisolone peropératoire est un avis d’auteur sans essai randomisé. » → « L’emploi peropératoire de méthylprednisolone relève d’un avis d’auteur, sans essai randomisé. ». Impropriété : « une méthylprednisolone » est un médicament pris pour une prescription ; l’énoncé porte sur l’emploi.
+- `C72-LANG-0083` (abreviation) — « [('MG','MéthylGuanine'),('M','Méthyl'),('T','Transférase')] » → « [('M','Méthyl'),('G','Guanine'),('M','Méthyl'),('T','Transférase')] ». Définition littérale lettre à lettre (règle 3 du projet) : le sigle MGMT compte quatre lettres, M-G-M-T ; la clé les découpait en trois éléments dont un « MG » qui n’est pas une lettre. Le développement complet (« O6-méthylguanine-ADN méthyltransférase ») est inchangé.
 
 ## Observations non locales (aucune proposition)
 
-- Onglet Sciences : quatre disciplines réelles (Anatomie, Neuropathologie, Génétique, Radiobiologie, soit 4 attributs data-s) et aucun sous-onglet « Sémiologie fondamentale et analytique » : hors périmètre linguistique, à traiter dans l’audit médical (addendum lot 2, point 1).
+- Constat S1 (MAJEUR, bloquant pour la clôture du cours et du lot) : sixième sous-onglet « Sémiologie fondamentale et analytique » absent ; quatre disciplines data-s seulement.
 - Onglet Diagnostic, tableau 7.1 : la ligne « Subépendymome » place un énoncé de tomodensitométrie dans la colonne « Aspect IRM » ; incohérence de structure, non corrigeable localement.
 - Onglet Pathologie, carte « Enfant » (section 2) : elle contient une phrase sur l’adulte (« Chez l’adulte, les astrocytomes de haut grade… ») ; placement à revoir.
 - Section 7.3 : le titre annonce un classement « par gravité » et le texte introductif un ordre danger immédiat → infection → inflammation → autre tumeur, mais le tableau est ordonné par niveau anatomique.
@@ -148,14 +161,14 @@ Les 87 propositions complètes (ancien, nouveau, motif, catégorie) figurent dan
 
 ## Rubrique 21 — Sémiologie fondamentale et analytique
 
-Hors périmètre d’un audit linguistique. Constat de structure à transmettre à l’audit médical : l’onglet Sciences compte quatre disciplines réelles et aucun sous-onglet de sémiologie (voir observation 1).
+**Constat S1 — MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md).** Le sixième sous-onglet « Sémiologie fondamentale et analytique » est absent : l’onglet Sciences compte quatre disciplines réelles (Anatomie, Neuropathologie, Génétique, Radiobiologie) et aucun bouton de sémiologie. Le contenu relève de l’audit médical ; la mention est portée ici pour la traçabilité.
 
 ## Lacunes
 
 - Aucun correcteur orthographique automatique (Antidote, LanguageTool) n’a été exécuté : la relecture est humaine-IA, par lecture intégrale ; des fautes isolées peuvent subsister.
 - Aucun ouvrage de référence (Grevisse, Dictionnaire de l’Académie, Office québécois de la langue française, Lexique de l’Imprimerie nationale) n’a été consulté pendant cette mission : les corrections de grammaire, d’accord et de registre reposent sur la lecture et sur la cohérence interne de la leçon (corps, fenêtres, glossaire), non sur une règle citée.
 - Les espaces insécables et les formes « fibrillation atriale/auriculaire » sont des choix différés par Vial : non traités (voir D1 et D2).
-- Aucune source médicale n’a été lue : les 49 renvois signalent des formulations, non des erreurs démontrées ; leur statut médical reste à établir par l’audit médical.
+- Aucune source médicale n’a été lue : les %d renvois signalent des formulations, non des erreurs démontrées ; leur statut médical reste à établir par l’audit médical.
 - Les textes alternatifs et le texte des figures SVG (aria-label, texte interne) ont été lus mais non soumis à une analyse de lisibilité à 390 px (hors périmètre de cette mission).
 - Le glossaire n’a pas été exécuté ; la présence des clés des abréviations a été contrôlée par recherche textuelle dans glossary/*.py ; aucune clé manquante n’a été trouvée hors l’unité « Gy ».
 
@@ -164,7 +177,7 @@ Hors périmètre d’un audit linguistique. Constat de structure à transmettre 
 | Élément | État |
 |---|---|
 | Empreintes des 7 fichiers | conformes au manifeste |
-| Propositions / renvois | 87 / 49 |
+| Propositions / renvois | 83 / 53 |
 | Unicité des extraits | contrôlée par script, 136 extraits uniques |
 | Sources canoniques modifiées | aucune |
 | Choix de Vial respectés | espaces insécables et fibrillation : différés, listés |

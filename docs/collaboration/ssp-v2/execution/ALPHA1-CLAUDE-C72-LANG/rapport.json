@@ -2,16 +2,18 @@
  "mission": "ALPHA1-CLAUDE-C72-LANG",
  "code": "C72",
  "type_audit": "linguistique",
- "base_sha": "32416a20",
- "base_sha_complet": "32416a2080e67537641040a81252dec0b3e6d137",
+ "base_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "worktree_base": "32416a2080e67537641040a81252dec0b3e6d137",
+ "note_base_worktree": "START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste.",
  "generation": 1,
  "branche": "claude/alpha1/c72-lang-g1",
  "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-C72-LANG-g1",
  "conversation": "alpha1-claude-c72-lang",
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
- "date_debut": "2026-10-16 (heure de début non relevée)",
- "date_fin": "2026-10-16T05:59Z",
+ "date_debut": null,
+ "date_debut_note": "Heure de début non relevée au lancement de la mission ; aucune valeur reconstituée (UTC).",
+ "date_fin": "2026-10-16T06:12Z",
  "lecture": {
   "fichiers": [
    "chapters/C72/C72_a.html",
@@ -44,14 +46,14 @@
   "source_typographie": "aucune source externe consultée ; la règle des espaces insécables relève d’un choix différé par Vial et n’a pas été appliquée"
  },
  "synthese": {
-  "nombre_propositions": 87,
-  "renvois_medicaux": 49,
+  "nombre_propositions": 83,
+  "renvois_medicaux": 53,
   "choix_differes_vial": 2,
   "par_categorie": {
    "registre": 27,
-   "ambiguite": 11,
-   "phrase_nominale": 10,
    "grammaire": 9,
+   "phrase_nominale": 9,
+   "ambiguite": 8,
    "lourdeur": 8,
    "syntaxe": 6,
    "repetition": 4,
@@ -65,8 +67,8 @@
   },
   "par_fichier": {
    "chapters/C72/C72_a.html": 18,
-   "chapters/C72/C72_b.html": 23,
-   "chapters/C72/C72_c.html": 17,
+   "chapters/C72/C72_b.html": 20,
+   "chapters/C72/C72_c.html": 16,
    "chapters/C72/C72_d.html": 10,
    "chapters/C72/C72_pop1.html": 7,
    "chapters/C72/C72_pop2.html": 11,
@@ -74,9 +76,9 @@
   }
  },
  "verification_mecanique": {
-  "unicite_ancien": "chaque ancien (87) et chaque ancre de renvoi (49) apparaît exactement une fois dans son fichier (vérifié par script)",
+  "unicite_ancien": "chaque ancien (83) et chaque ancre de renvoi (53) apparaît exactement une fois dans son fichier (vérifié par script)",
   "chevauchements": "aucun chevauchement entre deux extraits d’un même fichier",
-  "balises_html": "après application simulée des 87 propositions, le nombre de balises ouvrantes et fermantes div, p, button, section, table, tr, td, template et figure est inchangé",
+  "balises_html": "après application simulée des 83 propositions, le nombre de balises ouvrantes et fermantes div, p, button, section, table, tr, td, template et figure est inchangé",
   "glossaire": "après application simulée, glossary/c72.py reste syntaxiquement valide (ast.parse)",
   "application": "les propositions ne sont pas appliquées aux sources ; aucune source canonique modifiée"
  },
@@ -474,6 +476,48 @@
    "renvoi_medical": true
   },
   {
+   "id": "R50",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_b.html",
+   "ancre": "Hypersignal T2 du cône jusqu’à 90 %, « flow voids » serpigineux ; angiographie de référence",
+   "constat": "Dénominateur manquant (« jusqu’à 90 % » de quoi ?) : ajouter « des cas » précise une population statistique ; la fenêtre FDAV écrit « 90 % des cas », mais la précision relève de la source. Proposition retirée (revue Codex) ; non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R51",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "Hypersignal T2 du cône (jusqu’à 90 %), « flow voids » serpigineux",
+   "constat": "Même dénominateur manquant que R50, dans l’onglet Examens. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R52",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_b.html",
+   "ancre": "de 48 mois seule, 96 mois",
+   "constat": "« seule » sans support : écrire « après chirurgie seule » fixe le comparateur de la série de 348 patients, notion statistique à confirmer dans la source. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "R53",
+   "type": "renvoi_medical",
+   "fichier": "chapters/C72/C72_b.html",
+   "ancre": "Le témozolomide est contre-indiqué. Pour l’homme traité",
+   "constat": "La carte est titrée « Grossesse et allaitement » et la phrase ne dit pas pour quelle situation le témozolomide est contre-indiqué ; la préciser fixe la portée d’une contre-indication, qui relève de la fiche suisse. Non modifié.",
+   "renvoi_medical": true
+  },
+  {
+   "id": "S1",
+   "type": "semiologie",
+   "gravite": "MAJEUR",
+   "bloquant": "bloquant pour la clôture du cours et du lot (AGENTS.md)",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "sci-bar : data-s c72-s-anat, c72-s-histo, c72-s-gen, c72-s-radio",
+   "constat": "Sixième sous-onglet « Sémiologie fondamentale et analytique » absent ; l’onglet Sciences compte quatre disciplines réelles et aucun bouton de sémiologie. À traiter dans l’audit médical (proposition de discipline manquante incluse).",
+   "renvoi_medical": false
+  },
+  {
    "id": "D1",
    "type": "choix_differe_vial",
    "fichier": "(global)",
@@ -493,7 +537,7 @@
   }
  ],
  "observations_non_locales": [
-  "Onglet Sciences : quatre disciplines réelles (Anatomie, Neuropathologie, Génétique, Radiobiologie, soit 4 attributs data-s) et aucun sous-onglet « Sémiologie fondamentale et analytique » : hors périmètre linguistique, à traiter dans l’audit médical (addendum lot 2, point 1).",
+  "Constat S1 (MAJEUR, bloquant pour la clôture du cours et du lot) : sixième sous-onglet « Sémiologie fondamentale et analytique » absent ; quatre disciplines data-s seulement.",
   "Onglet Diagnostic, tableau 7.1 : la ligne « Subépendymome » place un énoncé de tomodensitométrie dans la colonne « Aspect IRM » ; incohérence de structure, non corrigeable localement.",
   "Onglet Pathologie, carte « Enfant » (section 2) : elle contient une phrase sur l’adulte (« Chez l’adulte, les astrocytomes de haut grade… ») ; placement à revoir.",
   "Section 7.3 : le titre annonce un classement « par gravité » et le texte introductif un ordre danger immédiat → infection → inflammation → autre tumeur, mais le tableau est ordonné par niveau anatomique.",
@@ -504,7 +548,7 @@
   "Aucun correcteur orthographique automatique (Antidote, LanguageTool) n’a été exécuté : la relecture est humaine-IA, par lecture intégrale ; des fautes isolées peuvent subsister.",
   "Aucun ouvrage de référence (Grevisse, Dictionnaire de l’Académie, Office québécois de la langue française, Lexique de l’Imprimerie nationale) n’a été consulté pendant cette mission : les corrections de grammaire, d’accord et de registre reposent sur la lecture et sur la cohérence interne de la leçon (corps, fenêtres, glossaire), non sur une règle citée.",
   "Les espaces insécables et les formes « fibrillation atriale/auriculaire » sont des choix différés par Vial : non traités (voir D1 et D2).",
-  "Aucune source médicale n’a été lue : les 49 renvois signalent des formulations, non des erreurs démontrées ; leur statut médical reste à établir par l’audit médical.",
+  "Aucune source médicale n’a été lue : les %d renvois signalent des formulations, non des erreurs démontrées ; leur statut médical reste à établir par l’audit médical.",
   "Les textes alternatifs et le texte des figures SVG (aria-label, texte interne) ont été lus mais non soumis à une analyse de lisibilité à 390 px (hors périmètre de cette mission).",
   "Le glossaire n’a pas été exécuté ; la présence des clés des abréviations a été contrôlée par recherche textuelle dans glossary/*.py ; aucune clé manquante n’a été trouvée hors l’unité « Gy »."
  ],
