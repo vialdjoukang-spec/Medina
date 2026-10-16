@@ -1,0 +1,75 @@
+{
+ "actor": "Claude",
+ "code": "G72",
+ "kind": "LANG",
+ "mission": "ALPHA77-CLAUDE-G72-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "reviewed_commit": "82c343c67aa81a7a87c92edb5399c725642b4054",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/G72/G72_a.html": "ecea94c73bbd784028f23bf4d70e45d06ade2d39d30df7822580ae8d538d3b75",
+  "chapters/G72/G72_b.html": "9caa050090a7f738c4ff5ab6b1b44c8eaab0410d1825873c36a44d8547792ca4",
+  "chapters/G72/G72_c.html": "7f6c7f913bda9780d9db931c2f787e3e2514c175160915f94c84fec2f234fdf5",
+  "chapters/G72/G72_d.html": "b1baecd57d9b7c06c03084b58b3daac17d81bb106f5a38accef97d80348ce050",
+  "chapters/G72/G72_pop1.html": "45439842d5b7fff8f79dcc194c83b2139761b817a1e0327df074328917a1713a",
+  "chapters/G72/G72_pop2.html": "57ad293c83c6fc29e15e230ecb27b5f5ca017300593f68f7c137278e400665b8",
+  "glossary/g72.py": "c860d1c96290c8c09ffa1a41d67d35ace994ffc7644146198066cf1869df96ac"
+ },
+ "reviewed_files_sha256": {
+  "chapters/G72/G72_a.html": "763dd0a3b260f66c9e23b15cc067a191ff483a0fc4f3ec4d60423db7c9f309ba",
+  "chapters/G72/G72_b.html": "3a58f79a9ff4f8e8b5aced654d47fbd5da59e61704ea2c58256db8ef0ad198ee",
+  "chapters/G72/G72_c.html": "7fcb4a6bb425c13b416662f406995bccc6f7c35155219cdef1e9c3630079da30",
+  "chapters/G72/G72_d.html": "52d9ac610e117fbcb52fac44117b977ebf22ac60993fdc2f3d697ac4408307d8",
+  "chapters/G72/G72_pop1.html": "bf2bdb76142f5b0652491edda1caab5e4fa6fb181796fe2580bdc77ae98d1205",
+  "chapters/G72/G72_pop2.html": "6f79f749c682ab245d3408ab3568054f55323d88cf80eb542815f836bb6c958a",
+  "glossary/g72.py": "39db7a2c98fef9e685c44966436ee83cc8ddc7515f083172ad2df3cb8349cb45"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "scope": "Propositions LANG appliquées par W (95/95, fond_inchange) ; phrases nouvelles des corrections MED ; sous-onglet et fenêtres de sémiologie ; corrections de P.",
+ "findings": [
+  {
+   "id": "LANG-propositions",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "95 propositions fond_inchange appliquées ; renvois médicaux non tranchés par l’audit MED non appliqués, RM-002 et RM-013 appliqués par M10 et C07.",
+   "verification": "corrections.json (clé lang) relu ; échantillonnage des phrases nouvelles : phrases complètes, verbes conjugués, tableaux introduits et commentés, aucune métaphore ; normal avant pathologique dans g72-sm-1.",
+   "evidence": [
+    "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-G72-INTEGRATE/integration/corrections.json",
+    "Différence textuelle base → final."
+   ]
+  },
+  {
+   "id": "P-LANG-01",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "constat": "Redondance « ENMC (myosite à inclusions, critères de 2024 non lus) ont été révisés en 2024, mais leur contenu n’a pas été lu » (G72_c.html, îlot EULAR/ACR).",
+   "verification": "Reformulé : « Les critères de l’ENMC pour la myosite à inclusions ont été révisés en 2024 ; leur contenu n’a pas été lu. » Fond inchangé ; fenêtre g72-ibm conservée.",
+   "evidence": [
+    "G72_c.html à 82c343c6 ; test_v7.py --static G72 : OK."
+   ]
+  },
+  {
+   "id": "P-LANG-02",
+   "severite": "—",
+   "status": "non_blocking",
+   "constat": "Densité des renvois bibliographiques entre parenthèses dans la sémiologie.",
+   "verification": "La justification par source est exigée (PROMPT_VERITE) ; la lecture reste fluide au rendu 390 px.",
+   "evidence": [
+    "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-G72-INTEGRATE/revue/captures/G72_P_mobile390_02_semiologie.png"
+   ],
+   "justification_non_bloquant": "Exigence de traçabilité prioritaire sur l’allègement."
+  }
+ ],
+ "evidence": [
+  "Rendu Chromium du fragment S08 construit par build_front.py hors dépôt (SHA-256 a909024cefedf29bf9470391fda05fce4a1c2137f6a494f4f273ce34bbe95471), 1440 × 1000 et 390 × 844, 16.10.2026.",
+  "python3 test_v7.py --static G72 : OK."
+ ],
+ "conclusion": "Aucun constat bloquant ; P-LANG-01 corrigé à 82c343c6.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}

@@ -1,0 +1,104 @@
+{
+ "actor": "Claude",
+ "code": "C72",
+ "kind": "LANG",
+ "mission": "ALPHA77-CLAUDE-C72-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "reviewed_commit": "25e29e3c4f8474baec8f161192da655b44612102",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/C72/C72_a.html": "61f1e5b6546203dff263a254d4ce4d1b75f0c58f111237d9e4d7319f4bda2a3b",
+  "chapters/C72/C72_b.html": "ed523b09dd861f69865aeac53d0997d115bc87753561655f9c85fe7bed518edd",
+  "chapters/C72/C72_c.html": "a100855b7613bc9b1233bc183e682854e2cfb29bf93c5b0c5d46c1fa31087d73",
+  "chapters/C72/C72_d.html": "96fc32e80a72746959bb0b7d9321213b08b1cd96d4b64ad0a524dcf62ed73aa6",
+  "chapters/C72/C72_pop1.html": "aaa43aea83d40278ee04551db9862094f04859c12dc6ab33ffc6e6e006280440",
+  "chapters/C72/C72_pop2.html": "2e52a53cc60772328277c7026f5e635377d9b8b08a2c7a6e98bc1dbaea26c0c9",
+  "glossary/c72.py": "185664974a2e7229c14467056c627462f056a4c39ba8a449d50c4cd748e390eb"
+ },
+ "reviewed_files_sha256": {
+  "chapters/C72/C72_a.html": "266c16e1cd767548f3e62937bd4af31df98929636ba8395b6392ff9ef055d43c",
+  "chapters/C72/C72_b.html": "92d89cbe4fc361012a93d5562e0f91cdd5963293f0543a10cdcabec3704f83e9",
+  "chapters/C72/C72_c.html": "2fb440b80b889276d23e252f40fd4192e31794709360edf43e281b91fd199153",
+  "chapters/C72/C72_d.html": "07f6c0adeb5cd6c0b82a7a06f3aa396aa6cbdae6dfe944222887ac9a71239211",
+  "chapters/C72/C72_pop1.html": "dd87aabf0e307f6ec2ab91407177a131f29bedc385ae2aadae5ab646975c4317",
+  "chapters/C72/C72_pop2.html": "8f3f9002753350d61643b6ec6f13e77a2c35cca7abd0376ee2efc41bc6bb6735",
+  "glossary/c72.py": "32d9cc80b0ad811165166cac0a064ef23fdccd8d2f3e6661f7aa73cae1917539"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "scope": "Propositions LANG (83) et leur statut dans corrections.json ; phrases nouvelles de W ; sous-onglet Sémiologie, discipline Physiologie et fenêtres c72-sm-*.",
+ "findings": [
+  {
+   "id": "LANG-propositions",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "81 propositions appliquées, 2 remplacées par la correction MED MIN-04.",
+   "verification": "Vérification automatique : le texte « nouveau » de 76 propositions appliquées est présent dans le fichier final. Les cinq autres (0043, 0044, 0049, 0052, 0054) portent sur des blocs réécrits ensuite par l’intégration MED ou par P ; leur intention (articles restitués, registre direct, suppression du méta-discours « le dossier ») est respectée dans le texte final.",
+   "evidence": [
+    "ALPHA1-CLAUDE-C72-LANG/propositions.json confronté aux fichiers finaux, 16.10.2026."
+   ]
+  },
+  {
+   "id": "P-LANG-01",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "c72-e-3",
+   "constat": "Double deux-points dans une même phrase.",
+   "correction": "« la biologie moléculaire est déterminante, car elle fixe le grade et le traitement ».",
+   "evidence": [
+    "Commit 25e29e3c."
+   ]
+  },
+  {
+   "id": "P-LANG-02",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "c72-s-physio-cours",
+   "constat": "« L’erreur fréquente » : la fréquence de cette confusion n’est pas sourcée.",
+   "correction": "« Le piège consiste à prendre un choc spinal aigu pour une polyradiculonévrite, que la synthèse bernoise place justement dans le diagnostic différentiel. »",
+   "evidence": [
+    "Hess 2005 (résumé PubMed 16117470).",
+    "Commit 25e29e3c."
+   ]
+  },
+  {
+   "id": "P-LANG-03",
+   "severite": "—",
+   "status": "non_blocking",
+   "constat": "Renvois médicaux LANG non tranchés par l’audit MED (47) non appliqués.",
+   "verification": "Conforme au protocole : un renvoi_medical n’est appliqué que si l’audit MED le tranche.",
+   "evidence": [
+    "integration/corrections.json, lang_renvois_medicaux."
+   ],
+   "justification_non_bloquant": "Règle du protocole."
+  },
+  {
+   "id": "P-LANG-04",
+   "severite": "—",
+   "status": "non_blocking",
+   "constat": "Espaces insécables (D1) non appliqués.",
+   "verification": "Choix différé de Vial.",
+   "evidence": [
+    "integration/corrections.json, comptes.LANG_choix_differes."
+   ],
+   "justification_non_bloquant": "Choix éditorial différé."
+  }
+ ],
+ "choix_differes": [
+  "espaces insécables globales"
+ ],
+ "evidence": [
+  "Différence base → final relue phrase par phrase.",
+  "python3 test_v7.py --static C72 : OK (abréviations couvertes, classes fermées).",
+  "Construction hors dépôt : MEDINA_OUT=<scratchpad>/c72p/build python3 build_front.py --fragment S08 (14 402 054 octets) ; Playwright, Chromium 1194, 1300 × 900 et 390 × 844, 16.10.2026."
+ ],
+ "conclusion": "Aucun constat bloquant : P-LANG-01 et P-LANG-02 sont corrigés au commit 25e29e3c ; le français suit STYLE_REDACTION (phrases complètes, tableaux introduits et commentés, aucune métaphore).",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}

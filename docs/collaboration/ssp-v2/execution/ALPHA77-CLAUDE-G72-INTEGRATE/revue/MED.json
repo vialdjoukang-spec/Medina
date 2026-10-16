@@ -1,0 +1,126 @@
+{
+ "actor": "Claude",
+ "code": "G72",
+ "kind": "MED",
+ "mission": "ALPHA77-CLAUDE-G72-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "reviewed_commit": "82c343c67aa81a7a87c92edb5399c725642b4054",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/G72/G72_a.html": "ecea94c73bbd784028f23bf4d70e45d06ade2d39d30df7822580ae8d538d3b75",
+  "chapters/G72/G72_b.html": "9caa050090a7f738c4ff5ab6b1b44c8eaab0410d1825873c36a44d8547792ca4",
+  "chapters/G72/G72_c.html": "7f6c7f913bda9780d9db931c2f787e3e2514c175160915f94c84fec2f234fdf5",
+  "chapters/G72/G72_d.html": "b1baecd57d9b7c06c03084b58b3daac17d81bb106f5a38accef97d80348ce050",
+  "chapters/G72/G72_pop1.html": "45439842d5b7fff8f79dcc194c83b2139761b817a1e0327df074328917a1713a",
+  "chapters/G72/G72_pop2.html": "57ad293c83c6fc29e15e230ecb27b5f5ca017300593f68f7c137278e400665b8",
+  "glossary/g72.py": "c860d1c96290c8c09ffa1a41d67d35ace994ffc7644146198066cf1869df96ac"
+ },
+ "reviewed_files_sha256": {
+  "chapters/G72/G72_a.html": "763dd0a3b260f66c9e23b15cc067a191ff483a0fc4f3ec4d60423db7c9f309ba",
+  "chapters/G72/G72_b.html": "3a58f79a9ff4f8e8b5aced654d47fbd5da59e61704ea2c58256db8ef0ad198ee",
+  "chapters/G72/G72_c.html": "7fcb4a6bb425c13b416662f406995bccc6f7c35155219cdef1e9c3630079da30",
+  "chapters/G72/G72_d.html": "52d9ac610e117fbcb52fac44117b977ebf22ac60993fdc2f3d697ac4408307d8",
+  "chapters/G72/G72_pop1.html": "bf2bdb76142f5b0652491edda1caab5e4fa6fb181796fe2580bdc77ae98d1205",
+  "chapters/G72/G72_pop2.html": "6f79f749c682ab245d3408ab3568054f55323d88cf80eb542815f836bb6c958a",
+  "glossary/g72.py": "39db7a2c98fef9e685c44966436ee83cc8ddc7515f083172ad2df3cb8349cb45"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "scope": "Différence base 523832d9 → ec4928d1 (W) relue phrase par phrase sur les sept fichiers (extraction textuelle hors dépôt), puis corrections de P (82c343c6). Chaque posologie contre-vérifiée dans sa FI suisse ; chaque fait médical nouveau confronté à sa source primaire (texte intégral PMC ou résumé PubMed selon la disponibilité). Les passages inchangés depuis l’audit ALPHA1-CLAUDE-G72-MED n’ont pas été relus en totalité.",
+ "findings": [
+  {
+   "id": "P-MED-01",
+   "severite": "MAJEUR",
+   "status": "resolved",
+   "constat": "C02 : W avait retiré la mention des anticorps anti-SRP, anti-Mi-2, anti-PL7 et anti-PL12, faute d’avoir pu relire EULAR/ACR 2017 (HTTP 500).",
+   "verification": "Texte intégral PMC5736307 relu (pmc.ncbi.nlm.nih.gov, 16.10.2026) : « Five myositis-specific autoantibodies were included: anti-Jo-1, anti-Mi-2, anti-SRP, anti-PL7 and anti-PL12 antibodies and all were strongly associated with IIM. However, only anti-Jo-1 autoantibody had a significant number of observations (n=1,062) to permit analyses and inclusion in the classification criteria. » Passage rétabli dans g72-s-immuno (G72_c.html) avec la citation Lundberg et coll., 2017 ; clés PL7 et PL12 ajoutées au glossaire (lettres non développées dans le passage lu, aucune expansion de mémoire).",
+   "evidence": [
+    "Lundberg et coll., Ann Rheum Dis 2017, PMC5736307, page HTML PMC (SHA-256 f2977c7e2d564896e45336bea8167d4071a16ae3f6e67a6883874f0fb0a72477), section Discussion.",
+    "test_v7.py --static G72 : OK après ajout des clés PL7 et PL12.",
+    "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-G72-INTEGRATE/revue/captures/G72_P_mobile390_03_immunologie_anticorps.png"
+   ]
+  },
+  {
+   "id": "P-MED-02",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "constat": "Fenêtre g72-alternatives : l’ézétimibe est présenté, d’après ESC/EAS 2025, comme thérapie au bénéfice cardiovasculaire démontré ; la FI suisse Ezetrol (mars 2024) dit le contraire.",
+   "verification": "FI Ezetrol, Indications : « Aucun effet bénéfique d’Ezetrol sur la morbidité et la mortalité cardiovasculaires n’a encore été démontré. » Précision ajoutée à la phrase Ezetrol de G72_pop2.html ; la recommandation européenne reste citée comme telle.",
+   "evidence": [
+    "FI Ezetrol (Organon, GTIN 7680561950025), mise à jour mars 2024, FI suisses via tools/swissmedic_fi.py (AmiKo), lues par l’Agent P le 16.10.2026.",
+    "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-G72-INTEGRATE/revue/captures/G72_P_bureau_05_fenetre_alternatives.png"
+   ]
+  },
+  {
+   "id": "P-MED-03",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Potassium oral et intraveineux (C05).",
+   "verification": "Potassium Hausmann et KCl Retard Hausmann (décembre 2021) : « Dose quotidienne maximale : adultes 150 mmol de potassium. » KCl 7,45 % Sintetica (février 2024) : K⁺ > 2,5 mmol/L → 200 mmol/j, 40 mmol/L, 10 mmol/h ; K⁺ < 2,0 mmol/L → 400 mmol/j, 80 mmol/L, 40 mmol/h ; ECG surveillé ; solutés vecteurs glucose 5 %, NaCl 0,9 %, gluco-salin 2:1, Ringer, Ringer-lactate. Statland 2018 (PMC5867231) : oral 0,2–0,4 mEq/kg toutes les 30 min, ≤ 200–250 mEq/j ; IV 40 mEq/L dans du mannitol 5 %, ≤ 20 mEq/h, ≤ 200 mEq/j ; solutés glucosés et salés à éviter ; formes retard à éviter pour l’accès ; prévention 30–60 mEq/j. Mannitol : seules les solutions à 10 % et 20 % figurent dans AmiKo. Toutes les valeurs du cours concordent.",
+   "evidence": [
+    "FI suisses via tools/swissmedic_fi.py (AmiKo), lues par l’Agent P le 16.10.2026 (GTIN 7680212780179, 7680363600111, 7680565210019 ; recherche « Mannitol »).",
+    "Statland et coll., Muscle Nerve 2018, PMC5867231, texte intégral (efetch PMC)."
+   ]
+  },
+  {
+   "id": "P-MED-04",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Atorvastatine : posologie, contre-indications et interactions (C03, C04).",
+   "verification": "FI Atorvastatin-Mepha (avril 2025, version 3.2) : 10 mg au départ, paliers ≥ 4 semaines, 80 mg au maximum ; contre-indications (pathologie hépatique active ou transaminases > 3 fois, cholestase, myopathie, grossesse et allaitement, glécaprévir/pibrentasvir) ; tableau 1 : gemfibrozil et acide fusidique systémique à éviter, ≤ 10 mg avec ciclosporine, tipranavir/ritonavir, télaprévir, ≤ 20 mg avec létermovir ; elbasvir/grazoprévir ≤ 20 mg (rubrique Interactions) ; létermovir + ciclosporine non recommandé ; daptomycine : interruption ou CK 2 à 3 fois par semaine ; reprise 7 jours après l’acide fusidique ; AUC × 8,7 avec ciclosporine 5,2 mg/kg/j ; CK > 5 fois avant traitement : contrôle en 5 à 7 jours, puis renoncer ; arrêt si > 5 fois sous traitement ; IMNM « très rares cas ». Tout concorde.",
+   "evidence": [
+    "FI Atorvastatin-Mepha (GTIN 7680693140011), FI suisses via tools/swissmedic_fi.py (AmiKo), lues par l’Agent P le 16.10.2026."
+   ]
+  },
+  {
+   "id": "P-MED-05",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Emplois hors indication (C06) et acétazolamide (C10, M09).",
+   "verification": "Indications lues : MabThera (décembre 2025 : LNH, LLC, PR, vascularites à ANCA, pemphigus vulgaris) ; Privigen (juillet 2025 : DIP, DIS, TIP, Guillain-Barré, Kawasaki, PIDC, NMM, greffe) ; Octagam 10 % (juillet 2022 : idem et dermatomyosite active) ; Orencia (septembre 2024 : PR, AJI polyarticulaire) ; Ventolin (janvier 2026 : bronchospasme de l’asthme et de la bronchite chronique) ; Esidrex (mai 2022 : hypertension, insuffisance cardiaque, œdèmes, diabète insipide néphrogénique, hypercalciurie) ; Diamox (juillet 2026 : sans paralysie périodique ; contre-indications et effets « ataxie, paralysie flasque et convulsions » lors de traitements prolongés conformes). Aucune ne cite la myopathie nécrosante, la myosite sous inhibiteur de point de contrôle ni la paralysie périodique : la mention « hors indication » est exacte. Statland 2018 : acétazolamide 46 % sur 74 patients, 56 % (31/55) CACNA1S, 16 % (3/19) SCN4A, aggravation rapportée avec SCN4A ; salbutamol 2 bouffées de 0,1 mg ; hydrochlorothiazide 25–75 mg/j ; antiarythmiques « used cautiously » dans l’Andersen-Tawil (M04).",
+   "evidence": [
+    "FI suisses via tools/swissmedic_fi.py (AmiKo), lues par l’Agent P le 16.10.2026 (GTIN 7680543780176, 7680583140015, 7680603230016, 7680577690014, 7680373970242, 7680249580438, 7680211910195).",
+    "Statland et coll., 2018, PMC5867231."
+   ]
+  },
+  {
+   "id": "P-MED-06",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Faits nouveaux non médicamenteux (C07, C08, C09, M03, M06, M08, sémiologie).",
+   "verification": "Simon 2017 (PMC5513686) : « up to 85 percent of patients with biopsy-proven alcoholic myopathy demonstrate objective functional improvement in muscle strength within the first year … complete normalization of strength by the fifth year », 2 à 12 mois, > 10 kg d’alcool pur/kg. CTT 2022 (PubMed 36049498, résumé) : 19 essais, 123 940 participants, + 7 % la première année, 11 pour 1000 personnes-années, « one in 15 », > 90 % non dus à la statine. Gente 2026 (PubMed 42844401, résumé) : début < 1 mois, incidence 0,5–1 %, chevauchement 3,7 → 8,3 %, ventilation 50–80 %, mortalité 40 %, abatacept en sauvetage. Soriano 2026 (PubMed 42878911, résumé) : 103 patients, ptosis 71,8 %, faiblesse 62,1 %, évaluation multisystémique. Statland : KCNJ18 « up to 3% of patients with HypoPP », durées > 2 h, < 2 h, 1–36 h, réflexes conservés, test d’effort ≥ 40 %, 68 % de faiblesse permanente (66 patients), > 80 % après 40 ans (HyperPP). Rodriguez 2022 (PMC8958813) : MRC 12 groupes, < 48, au moins deux nerfs, bloc exclu, CMAP réduit de plus de 20 % de la limite, SNAP < 20 %, myosine/actine < 1,7, jour 5, 4 % par jour, cytokines. Latronico 2023 (PMC10644573) : préhension < 7 kg et < 11 kg, grimace, test péronier, ABCDEF. Stroes 2015 (PMC4416140) : 7–29 %, STOMP 9,4 % contre 4,6 % (P = 0,054), seuils 4/10/40, imputabilité, HMGCR et facteurs (exposition, sexe masculin, diabète, génétique). Schubert et Schreiner 2023 (PubMed 37632430) : faiblesse vraie distinguée de la fatigue. Tout concorde.",
+   "evidence": [
+    "Textes intégraux PMC5513686, PMC4416140, PMC5867231, PMC8958813, PMC10644573 (efetch PMC, 16.10.2026) ; résumés PubMed 36049498, 42844401, 42878911, 37632430."
+   ]
+  }
+ ],
+ "lacunes_declarees": [
+  {
+   "objet": "Anatomie et Histologie sans figure",
+   "statut": "maintenue",
+   "detail": "Figures 1 et 2 historiques classées ANATOMIQUE_IA retirées sans remplacement (décision de Vial) ; aucun SVG factice ; aucun schéma non anatomique ajouté par P, car ces disciplines décrivent une distribution et des lésions dont la représentation serait anatomique."
+  },
+  {
+   "objet": "ESMO 2022, ESC/EAS 2025 (classes), FI triamtérène, spironolactone, éplérénone, prise en charge suisse des emplois hors étiquette, E03",
+   "statut": "maintenue",
+   "detail": "Lacunes de W reprises telles quelles (corrections.json, clé lacunes)."
+  },
+  {
+   "objet": "EULAR/ACR 2017",
+   "statut": "levée par l’Agent P",
+   "detail": "Texte intégral relu ; voir P-MED-01."
+  }
+ ],
+ "evidence": [
+  "Lecture différentielle base 523832d9 → ec4928d1 → 82c343c6 des sept fichiers (scripts hors dépôt).",
+  "FI suisses via tools/swissmedic_fi.py (AmiKo), lues par l’Agent P le 16.10.2026.",
+  "python3 test_v7.py --static G72 : OK (G72 mots 23509 fenêtres 61 quiz 9 pareto 16)."
+ ],
+ "conclusion": "Aucun constat bloquant : P-MED-01 (C02) et P-MED-02 sont corrigés à 82c343c6 ; les posologies du potassium et de l’atorvastatine et les statuts hors indication sont conformes aux FI suisses lues.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
