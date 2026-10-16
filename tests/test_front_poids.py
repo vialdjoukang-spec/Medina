@@ -168,8 +168,8 @@ class BudgetTests(unittest.TestCase):
         self.assertEqual(b['non_mesurees'], ['temps.lecon.file-mobile.tti_ms'])
 
     def test_proposer_budget_puis_le_respecter(self):
-        budget = F.proposer_budget(self.rapport, 0.10)
-        self.assertEqual(budget['max']['temps.lecon.file-mobile.fcp_ms'], 1400)
+        budget = F.proposer_budget(self.rapport, 0.10, 0.25)
+        self.assertEqual(budget['max']['temps.lecon.file-mobile.fcp_ms'], 1600)
         self.assertEqual(budget['max']['pages.[MEDINA.html].total.brut'], 100000)
         self.assertEqual(F.verifier_budget(self.rapport, budget)['depassements'], [])
         self.assertEqual(F.arrondir_haut(1.01e6, 1e6), 2e6)

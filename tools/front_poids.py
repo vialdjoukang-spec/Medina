@@ -497,14 +497,18 @@ def arrondir_haut(valeur: float, pas: float) -> float:
     return float(int(-(-valeur // pas)) * pas)
 
 
-def proposer_budget(rapport: dict, marge: float = 0.10) -> dict:
-    """Budget de non-régression : mesure actuelle + marge, arrondie (100 ko / 100 ms)."""
+def proposer_budget(rapport: dict, marge: float = 0.10, marge_temps: float = 0.25) -> dict:
+    """Budget de non-régression : mesure actuelle + marge, arrondie (100 ko / 100 ms).
+
+    Les temps varient davantage d'une machine à l'autre : marge propre (25 % par défaut).
+    """
     limites = {}
 
     def poser(chemin, pas):
         v = lire_metrique(rapport, chemin)
         if v is not None:
-            limites[chemin] = arrondir_haut(v * (1 + marge), pas)
+            m = marge_temps if chemin.startswith('temps.') else marge
+            limites[chemin] = arrondir_haut(v * (1 + m), pas)
             if pas >= 1:
                 limites[chemin] = int(limites[chemin])
 
@@ -520,7 +524,8 @@ def proposer_budget(rapport: dict, marge: float = 0.10) -> dict:
         for s in scen:
             for m in ('fcp_ms', 'tti_ms', 'pret_ms'):
                 poser(f'temps.{nom}.{s}.{m}', 100)
-    return {'description': f'Non-régression : mesure du {rapport.get("date", "?")} + {int(marge * 100)} %',
+    return {'description': f'Non-régression : mesure du {rapport.get("date", "?")} + {round(marge * 100)} % (poids),'
+                           f' + {round(marge_temps * 100)} % (temps)',
             'max': limites}
 
 
@@ -793,7 +798,8 @@ def principal(argv=None) -> int:
     ap.add_argument('--budget', help='budget JSON {"max": {"chemin.metrique": limite}}')
     ap.add_argument('--json', help='rapport JSON (défaut : <out>/../front_poids.json)')
     ap.add_argument('--proposer-budget', help='écrit un budget de non-régression (mesure + marge) dans ce fichier')
-    ap.add_argument('--marge', type=float, default=0.10)
+    ap.add_argument('--marge', type=float, default=0.10, help='marge du budget proposé pour les poids')
+    ap.add_argument('--marge-temps', type=float, default=0.25, help='marge du budget proposé pour les temps')
     ap.add_argument('--page', action='append', help='nom=chemin[#route]|condition JS|couverture (répétable)')
     ap.add_argument('--scenarios', default='file-brut,file-mobile,http-mobile',
                     help='parmi ' + ','.join(SCENARIOS))
@@ -826,7 +832,7 @@ def principal(argv=None) -> int:
         rapport['budget']['fichier'] = a.budget
         code = 1 if rapport['budget']['depassements'] else 0
     if a.proposer_budget:
-        Path(a.proposer_budget).write_text(json.dumps(proposer_budget(rapport, a.marge), ensure_ascii=False, indent=2) + '\n',
+        Path(a.proposer_budget).write_text(json.dumps(proposer_budget(rapport, a.marge, a.marge_temps), ensure_ascii=False, indent=2) + '\n',
                                            encoding='utf-8')
     cible = Path(a.json) if a.json else out.resolve().parent / 'front_poids.json'
     cible.write_text(json.dumps(rapport, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
