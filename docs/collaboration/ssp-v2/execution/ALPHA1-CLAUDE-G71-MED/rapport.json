@@ -1,0 +1,898 @@
+{
+ "mission": "ALPHA1-CLAUDE-G71-MED",
+ "code": "G71",
+ "type_audit": "medical",
+ "base_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "worktree_base": "32416a2080e67537641040a81252dec0b3e6d137",
+ "worktree_base_note": "START exécuté sur le premier main contenant l’approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste.",
+ "source_snapshot_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "generation": 1,
+ "branche": "claude/alpha1/g71-med-g1",
+ "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-G71-MED-g1",
+ "conversation": "alpha1-claude-g71-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-16T05:55:18Z",
+ "date_fin": "2026-10-16T06:18:58Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G71/G71_a.html",
+   "chapters/G71/G71_b.html",
+   "chapters/G71/G71_c.html",
+   "chapters/G71/G71_d.html",
+   "chapters/G71/G71_pop1.html",
+   "chapters/G71/G71_pop2.html",
+   "glossary/g71.py"
+  ],
+  "empreintes_conformes": true,
+  "empreintes": {
+   "chapters/G71/G71_a.html": {
+    "sha256": "340952bfc78183bc71f3c75da5b7ffea5bbf2b6ae46cbd80476a88b6657f455f",
+    "manifeste": "340952bfc78183bc71f3c75da5b7ffea5bbf2b6ae46cbd80476a88b6657f455f",
+    "conforme": true
+   },
+   "chapters/G71/G71_b.html": {
+    "sha256": "d9c14212393548209c4bc382d1bb3f1fbd9953846ec65fc5efef80cb235a65d3",
+    "manifeste": "d9c14212393548209c4bc382d1bb3f1fbd9953846ec65fc5efef80cb235a65d3",
+    "conforme": true
+   },
+   "chapters/G71/G71_c.html": {
+    "sha256": "f62cfef7715eaa515e153ee7b7dce2ec80ae6b8454e876b55dbdaac2e969f880",
+    "manifeste": "f62cfef7715eaa515e153ee7b7dce2ec80ae6b8454e876b55dbdaac2e969f880",
+    "conforme": true
+   },
+   "chapters/G71/G71_d.html": {
+    "sha256": "05995b523a95b6fa35dcc48430841156aa1e0e4ffc69de0c3803d767effc92a7",
+    "manifeste": "05995b523a95b6fa35dcc48430841156aa1e0e4ffc69de0c3803d767effc92a7",
+    "conforme": true
+   },
+   "chapters/G71/G71_pop1.html": {
+    "sha256": "a129be27fe0e9f3af32d0823424c141e5aa16b4621548ff917673d0069939873",
+    "manifeste": "a129be27fe0e9f3af32d0823424c141e5aa16b4621548ff917673d0069939873",
+    "conforme": true
+   },
+   "chapters/G71/G71_pop2.html": {
+    "sha256": "4102e940bdf1ba40c881716bc5c9c299b0ffba04df54abc9d7f8d01f453b9afd",
+    "manifeste": "4102e940bdf1ba40c881716bc5c9c299b0ffba04df54abc9d7f8d01f453b9afd",
+    "conforme": true
+   },
+   "glossary/g71.py": {
+    "sha256": "b270b6e75234c30ee4bb078483df1e3651feef40a3ea4d9e9bdd20dd65eb6a3d",
+    "manifeste": "b270b6e75234c30ee4bb078483df1e3651feef40a3ea4d9e9bdd20dd65eb6a3d",
+    "conforme": true
+   }
+  }
+ },
+ "premiere_source_lue": {
+  "source_id": "S17",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12976599/",
+  "section": "Méthodes, « Setting and Participants » : sept centres neuromusculaires suisses de référence accrédités"
+ },
+ "synthese": {
+  "BLOQUANT": 0,
+  "MAJEUR": 9,
+  "MINEUR": 10,
+  "ENRICHISSEMENT": 6
+ },
+ "controles": {
+  "test_v7_static": "G71 mots 17561 fenêtres 72 quiz 7 pareto 20 — OK",
+  "audit_sciences": "échec (voir C02)",
+  "image_clo_finder_inventory": "6 figures",
+  "propositions_classes_fermees": "conformes, aucun style en ligne",
+  "propositions_svg_390px": "texte rendu 11,9 à 13,9 px"
+ },
+ "constats": [
+  {
+   "id": "C01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G71/G71_c.html",
+   "ancre": "data-s=\"g71-s-anat\"",
+   "constat": "Le sixième sous-onglet « Sémiologie fondamentale et analytique » est absent. Décompte réel des data-s de G71_c.html : 5 (g71-s-anat, g71-s-histo, g71-s-physio, g71-s-bioch, g71-s-gen) ; aucun g71-s-semio. Les cinq disciplines réelles sont présentes ; la discipline manquante est donc la sémiologie, en première position. Des éléments sémiologiques épars existent dans l’onglet 1 (îlots g71-5 et g71-6 : Gowers, myotonie de préhension, Beevor, œil, cœur), sans technique, sans valeur chiffrée ni raisonnement analytique.",
+   "preuve": [
+    {
+     "source_id": "S22",
+     "section": "p. 7",
+     "citation_courte": "0 No contraction … 5 Normal power"
+    },
+    {
+     "source_id": "S21",
+     "section": "résumé",
+     "citation_courte": "Le signe principal est la faiblesse musculaire, dont la distribution peut orienter le diagnostic"
+    },
+    {
+     "source_id": "S4",
+     "section": "Skeletal muscle myotonia",
+     "citation_courte": "Myotonia can cause muscle stiffness, prolonged hand grip"
+    }
+   ],
+   "proposition": "propositions/G71_c_semio.html (sept îlots g71-sm-1 à -7, figure non anatomique lisible à 390 px), propositions/G71_pop3.html (six fenêtres g71-sm-*), propositions/glossary_g71_ajouts.py (MRC, ENMG).",
+   "justification": "Mécanisme : sans technique d’examen ni raisonnement du signe au syndrome, le lecteur ne sait pas transformer une faiblesse en hypothèse. Conséquence : l’examen fédéral et la pratique exigent ce passage. Décision : exigence de Vial du 15.10.2026 et AGENTS.md ; constat MAJEUR, bloquant pour la clôture du cours et du lot.",
+   "bloquant_cloture": true,
+   "decompte_data_s": 5,
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G71/G71_c.html",
+   "ancre": "Corrélation clinique.</b> La carte de la faiblesse",
+   "constat": "tests/audit_sciences.py (base 32416a20) échoue : quatre disciplines sur cinq sont sous 280 mots (histologie 219, physiologie 249, biochimie 172, génétique 231 ; anatomie 305), et aucune ne porte les libellés « Science → clinique. », « Science → examen. », « Science → traitement. », « À retenir. » ; les encadrés s’intitulent « Corrélation clinique. ».",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Respiratory management",
+     "citation_courte": "percentage predicted on the basis of arm span or ulnar length"
+    },
+    {
+     "source_id": "S1",
+     "section": "Diagnosis",
+     "citation_courte": "an inappropriate focus on hepatic dysfunction"
+    }
+   ],
+   "proposition": "propositions/G71_c_2.html (quatre encadrés par discipline, sourcés).",
+   "justification": "Mécanisme : le contrôle automatique vérifie le lien science → décision. Conséquence : la leçon échoue au contrat des sciences. Décision : renommer et compléter les encadrés.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C03",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G71/G71_b.html",
+   "ancre": "Sous vamorolone, l’insuffisance surrénale est possible",
+   "constat": "La partie 8.1 donne les doses de stress pour la prednisone et le déflazacort, mais n’indique pas que, sous vamorolone, la FI suisse exige de compléter temporairement le traitement par de l’hydrocortisone systémique en phase de stress (infection aiguë, traumatisme, chirurgie) et déconseille le vamorolone seul, car il est antagoniste des récepteurs minéralocorticoïdes. La décroissance par paliers d’environ 20 % manque aussi.",
+   "preuve": [
+    {
+     "source_id": "S6",
+     "section": "Mises en garde — Risque d’insuffisance surrénale",
+     "citation_courte": "le traitement régulier par AGAMREE doit être temporairement complété par de l’hydrocortisone par voie systémique"
+    },
+    {
+     "source_id": "S6",
+     "section": "Mises en garde",
+     "citation_courte": "Un traitement uniquement par AGAMREE pendant les phases de stress accru est déconseillé"
+    },
+    {
+     "source_id": "S6",
+     "section": "Posologie",
+     "citation_courte": "par paliers d’environ 20 % par rapport à la dose précédente"
+    }
+   ],
+   "proposition": "propositions/G71_b_1.html",
+   "justification": "Mécanisme : l’axe corticotrope est freiné et le vamorolone ne couvre pas le besoin minéralocorticoïde du stress. Conséquence : crise surrénalienne potentiellement mortelle. Décision : hydrocortisone systémique ajoutée en phase de stress, décroissance lente.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G71/G71_b.html",
+   "ancre": "Dans la dystrophie myotonique de type 1, les réactions aux anesthésiques",
+   "constat": "La leçon décrit des « réactions aux anesthésiques » dans la DM1 sans dire que la FI suisse du suxaméthonium le contre-indique dans les maladies myotoniques (myotonie congénitale, dystrophie myotonique), dans les myopathies dont la Duchenne et en cas d’antécédent d’hyperthermie maligne, ni qu’elle le déconseille avant 12 ans.",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "Contre-indications",
+     "citation_courte": "Antécédents personnels ou familiaux de maladies myotoniques congénitales telles que la myotonie congénitale et la dystrophie myotonique (risque de spasmes myotoniques sévères et de rigidité)"
+    },
+    {
+     "source_id": "S7",
+     "section": "Contre-indications",
+     "citation_courte": "Patients atteints de myopathies des muscles squelettiques (par ex. dystrophie musculaire de Duchenne)"
+    },
+    {
+     "source_id": "S7",
+     "section": "Population pédiatrique",
+     "citation_courte": "n’est pas recommandé chez des enfants de moins de 12 ans"
+    }
+   ],
+   "proposition": "propositions/G71_b_2.html",
+   "justification": "Mécanisme : la dépolarisation prolongée déclenche spasmes myotoniques et rigidité, ou une rhabdomyolyse hyperkaliémique sur fibre fragile. Conséquence : intubation impossible, arrêt cardiaque. Décision : contre-indication explicite, connue de l’anesthésiste.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C05",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G71/G71_b.html",
+   "ancre": "Le consensus européen recommande de débuter rapidement un traitement antiépileptique",
+   "constat": "La partie 8.6 omet que, dans un épisode pseudo-vasculaire, antiplaquettaires et thrombolyse ne sont pas indiqués, que des corticoïdes IV peuvent être envisagés au cas par cas, et ne définit pas l’épisode (aigu ou subaigu, tout âge, lésions hors territoire vasculaire). La fenêtre g71-melas déclare n’avoir lu que le résumé, alors que le texte intégral est en libre accès.",
+   "preuve": [
+    {
+     "source_id": "S10",
+     "section": "Prise en charge aiguë",
+     "citation_courte": "therapies targeting vascular ischemia, including antiplatelet agents and thrombolysis, are not indicated"
+    },
+    {
+     "source_id": "S10",
+     "section": "Prise en charge aiguë",
+     "citation_courte": "Intravenous corticosteroids may be considered in the acute phase on a case‐by‐case basis"
+    },
+    {
+     "source_id": "S10",
+     "section": "énoncé 4.36",
+     "citation_courte": "acute/subacute, evolving brain syndrome that can manifest at any age"
+    }
+   ],
+   "proposition": "propositions/G71_b_3.html ; propositions/G71_mineurs.html (C24).",
+   "justification": "Mécanisme : l’épisode n’est pas ischémique artériel. Conséquence : une thrombolyse exposerait au risque hémorragique sans bénéfice. Décision : écrire l’interdiction et la conduite de soutien.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C06",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G71/G71_pop2.html",
+   "ancre": "Autorisation conditionnelle européenne en 2014",
+   "constat": "L’ataluren figure comme moyen pour « cibler la mutation » (tableau p-1 et fenêtre g71-ataluren) avec un statut européen « non vérifié ». L’autorisation conditionnelle européenne n’a pas été renouvelée, faute d’efficacité confirmée, et a expiré le 28.03.2025.",
+   "preuve": [
+    {
+     "source_id": "S11",
+     "section": "EPAR Translarna",
+     "citation_courte": "This medicine's authorisation has expired"
+    },
+    {
+     "source_id": "S11",
+     "section": "EPAR Translarna",
+     "citation_courte": "recommended to not renew the authorisation because the effectiveness of the medicine has not been confirmed"
+    }
+   ],
+   "proposition": "propositions/G71_d_1.html (ligne du tableau et paragraphe) ; propositions/G71_c_2.html (génétique, Science → traitement).",
+   "justification": "Mécanisme : une thérapie sans efficacité confirmée perd son autorisation. Conséquence : la leçon présente une option qui n’existe plus en Europe. Décision : statut daté et retrait comme option.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C07",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G71/G71_pop2.html",
+   "ancre": "Somnolence diurne excessive si une cause centrale est suspectée",
+   "constat": "Trois emplois hors indication ne sont pas signalés comme tels : modafinil dans la somnolence de la DM1 (FI suisse Modasomil : narcolepsie seulement), lamotrigine contre la myotonie (antiépileptique en Suisse), mexilétine dans la DM1 (indication européenne de Namuscla limitée à la myotonie non dystrophique de l’adulte ; aucune FI suisse trouvée).",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "Indications/Possibilités d’emploi",
+     "citation_courte": "Somnolence excessive associée à une narcolepsie avec ou sans cataplexie"
+    },
+    {
+     "source_id": "S13",
+     "section": "EPAR Namuscla",
+     "citation_courte": "symptomatic treatment of myotonia in adult patients with non-dystrophic myotonic disorders"
+    },
+    {
+     "source_id": "S25",
+     "section": "champ indication AIPS",
+     "citation_courte": "Antiepilepticum (Swissmedic)"
+    }
+   ],
+   "proposition": "propositions/G71_d_1.html (paragraphe 4) ; mention à reprendre dans les fenêtres g71-modafinil et g71-mexiletine.",
+   "justification": "Mécanisme : l’emploi hors indication engage la responsabilité et le remboursement. Conséquence : le lecteur croit prescrire dans l’indication. Décision : addendum lot 2, point 5 : signaler le statut.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C08",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G71/G71_c.html",
+   "ancre": "aria-label=\"Figure 2 — Topographies de faiblesse selon la famille\"",
+   "constat": "Figure 2 : silhouette humaine en traits (tête, tronc, membres) dessinée en SVG, sans source iconographique, dans une leçon injectée par le commit 71fdb467 (auteur Claude, « Betta : injection directe des cycles 31 à 40 ») : figure anatomique d’origine IA démontrée (règle de Vial du 15.10.2026). Son texte est rendu à 7,3 px à 390 px (viewBox 640).",
+   "preuve": [
+    {
+     "source_id": "historique_git",
+     "section": "git log -- chapters/G71/G71_c.html",
+     "citation_courte": "71fdb467 Claude 2026-10-15 Betta : injection directe des cycles 31 à 40 (79 leçons, audit différé non effectué)"
+    }
+   ],
+   "proposition": "propositions/G71_c_figures.html (1) : retrait, tableau de remplacement provisoire ; original sourcé à rechercher (Commons HTTP 429 le 16.10.2026).",
+   "justification": "Mécanisme : une anatomie approximative enseigne une topographie fausse. Conséquence : règle de Vial. Décision : remplacer par un original existant, sourcé et licencié.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C09",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G71/G71_c.html",
+   "ancre": "aria-label=\"Figure 6 — Seuils de répétitions CTG dans DMPK\"",
+   "constat": "Figure 6 : viewBox de 640 de large ; à 390 px, les seuils décisionnels « 35 » et « 50 » sont rendus à 7,3 px et leurs légendes à 6,7 px (mesure Chromium).",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Purpose of review",
+     "citation_courte": "DM1 … triplet-repeat expansion disorder"
+    }
+   ],
+   "proposition": "propositions/G71_c_figures.html (2) : figure recomposée sur 360 de large, texte à 12–14 px, valeurs inchangées.",
+   "justification": "Mécanisme : la réduction d’échelle rend le chiffre illisible. Conséquence : un seuil diagnostique n’est plus lisible sur téléphone. Décision : addendum lot 2, point 2 : MAJEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C10",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G71/G71_d.html",
+   "ancre": "Vamorolone (40 kg ou plus)",
+   "constat": "Le tableau p-2 indique « Dose maximale tolérée » comme dose initiale dès 40 kg ; la FI recommande 240 mg (6 ml) une fois par jour, en traitant à la dose maximale tolérée.",
+   "preuve": [
+    {
+     "source_id": "S6",
+     "section": "Posologie",
+     "citation_courte": "Chez les patients pesant 40 kg ou plus, la dose recommandée de vamorolone est de 240 mg (équivalant à 6 ml) une fois par jour."
+    }
+   ],
+   "proposition": "propositions/G71_d_1.html (2).",
+   "justification": "Mécanisme : une dose initiale non chiffrée laisse le prescripteur sans repère. Décision : citer la FI.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C11",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G71/G71_pop1.html",
+   "ancre": "éplérénone d’intérêt à confirmer",
+   "constat": "L’éplérénone est citée pour le cœur de la Duchenne sans l’interaction de la FI AGAMREE : risque d’hyperkaliémie avec les antagonistes minéralocorticoïdes, potassium contrôlé un mois après le début de l’association ; inducteurs puissants du CYP3A4 absents aussi.",
+   "preuve": [
+    {
+     "source_id": "S6",
+     "section": "Interactions pharmacodynamiques",
+     "citation_courte": "Il est recommandé de surveiller le taux de potassium un mois après le début d’une combinaison"
+    },
+    {
+     "source_id": "S6",
+     "section": "Inducteurs du CYP3A4",
+     "citation_courte": "peuvent diminuer les concentrations plasmatiques de vamorolone"
+    }
+   ],
+   "proposition": "propositions/G71_d_1.html (3).",
+   "justification": "Mécanisme : double antagonisme minéralocorticoïde. Conséquence : hyperkaliémie possible. Décision : contrôle du potassium à un mois.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C12",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G71/G71_c.html",
+   "ancre": "aria-label=\"Figure 5 — Les cinq complexes de la phosphorylation oxydative\"",
+   "constat": "Figure 5 : viewBox de 640 ; texte rendu à 7,3 px à 390 px, sans valeur décisionnelle.",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "résumé",
+     "citation_courte": "primary mitochondrial myopathies"
+    }
+   ],
+   "proposition": "propositions/G71_c_figures.html (3).",
+   "justification": "Lisibilité sur téléphone ; aucune valeur décisionnelle.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C13",
+   "gravite": "MINEUR",
+   "fichier": "glossary/g71.py",
+   "ancre": "('M','Muscle')",
+   "constat": "La clé ENMC décompose le sigle en « European Neuromuscular Muscle Centre » ; le sigle désigne le European Neuromuscular Centre.",
+   "preuve": [
+    {
+     "source_id": "S24",
+     "section": "titre",
+     "citation_courte": "The impact of European Neuromuscular Centre (ENMC) workshops"
+    }
+   ],
+   "proposition": "propositions/glossary_g71_ajouts.py (1).",
+   "justification": "Règle 3 : définition littérale lettre à lettre exacte.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C19",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G71/G71_pop1.html",
+   "ancre": "la forme autosomique récessive de l’enfant de type Duchenne ou Becker",
+   "constat": "La CIM-10-GM inclut une forme « Duchenne- oder Becker-ähnlich » (ressemblant à), non « de type ».",
+   "preuve": [
+    {
+     "source_id": "S9",
+     "section": "G71.0 Inkl.",
+     "citation_courte": "autosomal-rezessiv, Beginn in der frühen Kindheit, Duchenne- oder Becker-ähnlich"
+    }
+   ],
+   "proposition": "propositions/G71_mineurs.html (C19).",
+   "justification": "Une forme récessive ne peut pas être « de type Duchenne », maladie liée à l’X.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C20",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G71/G71_b.html",
+   "ancre": "justifie une biopsie musculaire si la CK atteint au moins 3 fois la normale",
+   "constat": "L’EFNS écrit que la biopsie « peut » être réalisée si au moins un critère est présent ; « justifie » durcit la force d’une recommandation de classe IV.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Recommendations",
+     "citation_courte": "may be investigated with a muscle biopsy if one or more of the following are present"
+    }
+   ],
+   "proposition": "propositions/G71_mineurs.html (C20).",
+   "justification": "Fidélité à la force de recommandation.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C21",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G71/G71_b.html",
+   "ancre": "<td>ECG annuel ou bisannuel</td>",
+   "constat": "« Bisannuel » (tous les deux ans) est souvent compris « deux fois par an » ; la source dit « annual or biennial ». Même formule dans G71_pop1 et G71_pop2.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Cardiac",
+     "citation_courte": "abnormal annual or biennial ECG"
+    }
+   ],
+   "proposition": "propositions/G71_mineurs.html (C21).",
+   "justification": "Lever une ambiguïté de rythme de suivi.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C22",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G71/G71_c.html",
+   "ancre": "Les valeurs de référence sont exprimées en pourcentage de la valeur théorique (population, âge, taille) et ne sont pas détaillées dans les sources lues",
+   "constat": "La source précise que la capacité vitale forcée assise est exprimée en valeur absolue et en pourcentage prédit d’après l’envergure ou la longueur de l’ulna, non d’après la taille.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Respiratory management",
+     "citation_courte": "percentage predicted on the basis of arm span or ulnar length"
+    }
+   ],
+   "proposition": "propositions/G71_mineurs.html (C22).",
+   "justification": "Précision de mesure utile chez le non-ambulant.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C24",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G71/G71_pop1.html",
+   "ancre": "Seul l’abstract du consensus a été lu ; les seuils diagnostiques détaillés manquent.",
+   "constat": "Le texte intégral du consensus MELAS est en libre accès ; la limite déclarée n’est plus exacte.",
+   "preuve": [
+    {
+     "source_id": "S10",
+     "section": "PMC",
+     "citation_courte": "texte intégral PMC13090769"
+    }
+   ],
+   "proposition": "propositions/G71_mineurs.html (C24).",
+   "justification": "Portée de la source.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C25",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G71/G71_pop2.html",
+   "ancre": "Dystrophie de Duchenne typique : CK supérieure à 1000 U/L.",
+   "constat": "Le seuil de CK > 1000 U/L, l’hypertrophie des mollets et la GGT normale sont référencés notamment à Birnkrant partie 1 ; une recherche dans son texte intégral ne les retrouve pas. Ils viennent probablement de Jayaraman et Ghosh (Continuum 2025), non relu par l’audit.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "texte intégral (recherche « 1000 », « calf », « GGT »)",
+     "citation_courte": "aucune occurrence pertinente"
+    }
+   ],
+   "proposition": "Attribuer ces éléments à la seule source qui les contient, après relecture de Continuum 2025.",
+   "justification": "Traçabilité : une référence doit contenir le fait qu’elle porte.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C14",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G71/G71_b.html",
+   "ancre": "Aucune recommandation suisse n’a été lue ; les conduites ci-dessous",
+   "constat": "Organisation suisse absente : sept centres neuromusculaires de référence accrédités, registre Swiss-Reg-NMD, filière vers un neurologue expert, bilans cardiaque et respiratoire indispensables.",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "Setting and Participants",
+     "citation_courte": "7 neuromuscular centers … accredited by the National Coordination of Rare Diseases"
+    },
+    {
+     "source_id": "S18",
+     "section": "Methods",
+     "citation_courte": "population-based registry"
+    },
+    {
+     "source_id": "S21",
+     "section": "résumé",
+     "citation_courte": "Les bilans cardiaque et respiratoire sont indispensables dans tous les cas"
+    }
+   ],
+   "proposition": "propositions/G71_b_4.html",
+   "justification": "Rubriques 12 et 16 : prise en charge suisse.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C15",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G71/G71_pop2.html",
+   "ancre": "Aucune information professionnelle suisse trouvée ; essai financé par le fabricant",
+   "constat": "Statut européen du givinostat absent : autorisation conditionnelle du 06.06.2025 (ambulant, ≥ 6 ans, sous corticoïdes).",
+   "preuve": [
+    {
+     "source_id": "S12",
+     "section": "EPAR Duvyzat",
+     "citation_courte": "conditional marketing authorisation valid throughout the EU on 6 June 2025"
+    }
+   ],
+   "proposition": "propositions/G71_d_1.html (1) et (4).",
+   "justification": "Statut réglementaire daté.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C16",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G71/G71_a.html",
+   "ancre": "La Suisse n’a pas de chiffre dans ce dossier",
+   "constat": "Données suisses lisibles : prévalence de la dystrophie liée à LAMA2 (≥ 0,8/100 000 de 0 à 23 ans) et mutation fondatrice de dysferline en Suisse centrale.",
+   "preuve": [
+    {
+     "source_id": "S19",
+     "section": "Results",
+     "citation_courte": "at least 0.8 : 100 000"
+    },
+    {
+     "source_id": "S20",
+     "section": "Conclusion",
+     "citation_courte": "two mutations appear endemic in central Switzerland"
+    }
+   ],
+   "proposition": "propositions/G71_a_1.html",
+   "justification": "Rubrique 4 : épidémiologie suisse.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C17",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G71/G71_a.html",
+   "ancre": "sont des myopathies héréditaires marquées par une hypotonie",
+   "constat": "Définition ENMC 2026 des myopathies congénitales (structurelles non dystrophiques, nomenclature gène–transmission–histologie, génétique d’abord) absente ; écart avec la CIM-10-GM (G71.2 inclut la dystrophie congénitale).",
+   "preuve": [
+    {
+     "source_id": "S15",
+     "section": "résumé",
+     "citation_courte": "distinctive structural, non-dystrophic histopathological features"
+    },
+    {
+     "source_id": "S9",
+     "section": "G71.2 Inkl.",
+     "citation_courte": "Angeborene Muskeldystrophie"
+    }
+   ],
+   "proposition": "propositions/G71_a_2.html (a)",
+   "justification": "Rubriques 2 et 3.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C18",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G71/G71_a.html",
+   "ancre": "Les termes « MELAS-like » et « spectre MELAS » sont déconseillés par ce consensus.",
+   "constat": "Définition ENMC 2025 des myopathies mitochondriales primaires et de leurs deux phénotypes absente.",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "résumé",
+     "citation_courte": "two major phenotypes: mitochondrial myopathy (MiMy) either with or without chronic progressive external ophthalmoplegia"
+    }
+   ],
+   "proposition": "propositions/G71_a_2.html (b)",
+   "justification": "Rubrique 3.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C23",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G71/G71_b.html",
+   "ancre": "aucun traitement modificateur n’est autorisé et des essais ciblant DUX4 sont en cours",
+   "constat": "L’essai de phase 3 REACH (losmapimod) est négatif sur tous les critères d’efficacité.",
+   "preuve": [
+    {
+     "source_id": "S23",
+     "section": "résumé",
+     "citation_courte": "none of the efficacy endpoints were met"
+    }
+   ],
+   "proposition": "propositions/G71_mineurs.html (C23).",
+   "justification": "Actualisation thérapeutique.",
+   "ancre_occurrences": 1
+  }
+ ],
+ "matrice_20": [
+  {
+   "rang": 1,
+   "rubrique": "Question clinique et enjeu pour l’examen fédéral",
+   "statut": "couvert",
+   "ancre": "g71-0 (deux vignettes, trois questions)"
+  },
+  {
+   "rang": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "couvert",
+   "ancre": "g71-1, fenêtre g71-sousgroupes (conformes à S9) ; libellé C19 ; définitions ENMC récentes absentes (C17, C18)"
+  },
+  {
+   "rang": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "partiel",
+   "ancre": "g71-1 (familles) ; nomenclatures ENMC LGMD 2017 non lue, CMYO 2026 et PMM 2025 absentes"
+  },
+  {
+   "rang": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "partiel",
+   "ancre": "g71-2 ; aucune donnée suisse (C16)"
+  },
+  {
+   "rang": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "couvert",
+   "ancre": "g71-3, g71-s-* (dystrophine, myotonie, CVF)"
+  },
+  {
+   "rang": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "couvert",
+   "ancre": "g71-4 (transmission ; DM2, FSHD et MELAS « non précisée », lacune)"
+  },
+  {
+   "rang": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "partiel",
+   "ancre": "g71-5 ; fréquences des symptômes non chiffrées"
+  },
+  {
+   "rang": 8,
+   "rubrique": "Examen clinique (signes, Se/Sp)",
+   "statut": "partiel",
+   "ancre": "g71-6 ; aucune technique ni valeur ; sémiologie absente (C01)"
+  },
+  {
+   "rang": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "partiel",
+   "ancre": "g71-8 alert ; manques C03, C04, C05"
+  },
+  {
+   "rang": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "couvert",
+   "ancre": "G71_b-e1 à e-7 ; C22"
+  },
+  {
+   "rang": 11,
+   "rubrique": "Diagnostic différentiel",
+   "statut": "partiel",
+   "ancre": "g71-7.1 ; discriminants peu sourcés (myosite, myasthénie)"
+  },
+  {
+   "rang": 12,
+   "rubrique": "Prise en charge suisse",
+   "statut": "partiel",
+   "ancre": "g71-9, G71_d ; organisation suisse absente (C14) ; statuts C06, C07"
+  },
+  {
+   "rang": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "couvert",
+   "ancre": "g71-8, g71-10, fenêtre g71-pronostic"
+  },
+  {
+   "rang": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "couvert",
+   "ancre": "g71-10 (tableau), g71-11 (dépistage néonatal)"
+  },
+  {
+   "rang": 15,
+   "rubrique": "Situations particulières",
+   "statut": "partiel",
+   "ancre": "g71-11 (conductrices, grossesse DM1, DM1 congénitale) ; âgé, rein, foie hors vamorolone absents"
+  },
+  {
+   "rang": 16,
+   "rubrique": "Spécificités suisses",
+   "statut": "absent",
+   "ancre": "aucune mention de l’AI, de l’aptitude à la conduite (DM1, somnolence), du remboursement ; organisation C14"
+  },
+  {
+   "rang": 17,
+   "rubrique": "Critères formels du diagnostic",
+   "statut": "couvert",
+   "ancre": "g71-12 div.alert"
+  },
+  {
+   "rang": 18,
+   "rubrique": "Paramètres clés chiffrés",
+   "statut": "couvert",
+   "ancre": "g71-12 div.key"
+  },
+  {
+   "rang": 19,
+   "rubrique": "Sous-codes CIM-10-GM couverts",
+   "statut": "couvert",
+   "ancre": "fenêtre g71-sousgroupes ; G71.0 à G71.9"
+  },
+  {
+   "rang": 20,
+   "rubrique": "Points d’examen fédéral",
+   "statut": "partiel",
+   "ancre": "question clinique et quiz ; aucun renvoi aux objectifs SSP/PROFILES"
+  }
+ ],
+ "semiologie": {
+  "statut": "absente",
+  "decompte_data_s": 5,
+  "data_s": [
+   "g71-s-anat",
+   "g71-s-histo",
+   "g71-s-physio",
+   "g71-s-bioch",
+   "g71-s-gen"
+  ],
+  "disciplines_reelles": 5,
+  "sous_onglet_semio": false,
+  "gravite": "MAJEUR",
+  "bloquant_cloture_cours_et_lot": true,
+  "constat_id": "C01",
+  "fondamentale": {
+   "statut": "partielle dans l’onglet 1, absente comme discipline",
+   "ancres": [
+    "g71-5",
+    "g71-6",
+    "g71-gowers",
+    "g71-fshd"
+   ],
+   "manques": "définitions, normal, technique, mécanisme par signe, valeur chiffrée (non disponible dans les sources lues : LACUNE), pièges"
+  },
+  "analytique": {
+   "statut": "absente",
+   "ancres": [],
+   "manques": "regroupement syndromique, raisonnement en cinq étapes, examen systématique, trois cas corrigés"
+  },
+  "proposition": [
+   "propositions/G71_c_semio.html",
+   "propositions/G71_pop3.html",
+   "propositions/glossary_g71_ajouts.py"
+  ],
+  "grille_SEM": {
+   "SEM-01": "non",
+   "SEM-02": "non",
+   "SEM-03": "non",
+   "SEM-04": "oui (test_v7 --static G71 : OK sur la leçon actuelle)",
+   "SEM-05": "non",
+   "SEM-06": "non",
+   "SEM-07": "non",
+   "SEM-08": "non",
+   "SEM-09": "non",
+   "SEM-10": "non",
+   "SEM-11": "non",
+   "SEM-12": "non",
+   "SEM-13": "non (pas d’alert sémiologique ; l’alert g71-8 existe)",
+   "SEM-14": "non",
+   "SEM-15": "non",
+   "SEM-16": "non",
+   "SEM-17": "non",
+   "SEM-18": "non",
+   "SEM-19": "non évaluable (absente)",
+   "SEM-20": "non évaluable",
+   "SEM-21": "non évaluable",
+   "SEM-22": "non (bouton absent)",
+   "SEM-23": "non (aucune capture possible)",
+   "SEM-24": "oui (statut « Revue par intelligence artificielle · Aucune validation médicale humaine »)"
+  },
+  "lacune_valeurs": "Aucune sensibilité, spécificité ni rapport de vraisemblance pour le signe de Gowers, la myotonie de préhension, la cotation MRC ou les symptômes d’hypoventilation dans les sources lues (S1, S2, S4, S21, S22) ; la proposition l’écrit explicitement."
+ },
+ "figures": [
+  {
+   "ancre": "aria-label=\"Figure 1 — Du gène à l’insuffisance d’organe\"",
+   "fichier": "chapters/G71/G71_a.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Chaîne causale en six boîtes (génome → organe).",
+   "verification": "SVG examiné ; viewBox 420, texte 11,1 px à 390 px : lisible.",
+   "constat_id": null,
+   "ancre_occurrences": 1
+  },
+  {
+   "ancre": "aria-label=\"Figure 2 — Topographies de faiblesse selon la famille\"",
+   "fichier": "chapters/G71/G71_c.html",
+   "classe": "ANATOMIQUE_IA",
+   "description": "Silhouette humaine en traits avec six régions légendées.",
+   "verification": "Origine IA démontrée : SVG inline sans source iconographique, introduit par le commit 71fdb467 (auteur Claude, injection Betta des cycles 31 à 40). Texte 7,3 px à 390 px.",
+   "constat_id": "C08",
+   "candidats": [],
+   "statut_candidats": "Commons : HTTP 429 (délai d’attente enregistré, aucun nouvel essai) ; Europe PMC : 5 articles sans figure exploitable vérifiée. Aucun candidat proposé.",
+   "ancre_occurrences": 1
+  },
+  {
+   "ancre": "aria-label=\"Figure 3 — Proportions de fibres anormales à la biopsie, myopathie mitochondriale de l’adulte\"",
+   "fichier": "chapters/G71/G71_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Histogramme de trois proportions (5,1 %, 1,4 %, 0,5 %).",
+   "verification": "Valeurs attribuées à Beecher 2024 (non relu par l’audit) ; texte 11,1 px : lisible.",
+   "constat_id": null,
+   "ancre_occurrences": 1
+  },
+  {
+   "ancre": "aria-label=\"Figure 4 — Évolution de la capacité vitale forcée dans la dystrophie de Duchenne\"",
+   "fichier": "chapters/G71/G71_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Courbe qualitative croissance–plateau–déclin.",
+   "verification": "Conforme à S2 (FVC croît puis décline après la perte de la marche) ; lisible.",
+   "constat_id": null,
+   "ancre_occurrences": 1
+  },
+  {
+   "ancre": "aria-label=\"Figure 5 — Les cinq complexes de la phosphorylation oxydative\"",
+   "fichier": "chapters/G71/G71_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Cinq boîtes alignées.",
+   "verification": "Texte 7,3 px à 390 px.",
+   "constat_id": "C12",
+   "ancre_occurrences": 1
+  },
+  {
+   "ancre": "aria-label=\"Figure 6 — Seuils de répétitions CTG dans DMPK\"",
+   "fichier": "chapters/G71/G71_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Axe avec seuils 35 et 50.",
+   "verification": "Seuils décisionnels rendus à 7,3 px à 390 px.",
+   "constat_id": "C09",
+   "ancre_occurrences": 1
+  }
+ ],
+ "figures_synthese": {
+  "total": 6,
+  "ANATOMIQUE_IA": 1,
+  "ORIGINE_INCONNUE": 0,
+  "SCHEMA_NON_ANATOMIQUE": 5,
+  "IMAGE_SOURCEE": 0,
+  "images_img": 0,
+  "icones_sci_bar_24px": 5,
+  "methode": "python3 tools/image_clo_finder.py inventory G71 (6 figures, 5 icônes de 24 px non anatomiques : cercle et croix) ; rendu Chromium à 390 px (conteneur 358 px) et mesure de la taille de police rendue ; git log pour l’origine.",
+  "regle": "Règle de Vial du 15.10.2026"
+ },
+ "verifications_conformes": [
+  "CIM-10-GM 2024 : six sous-catégories, inclusions et exclusions de G71, exclusions de G72 [S9]",
+  "Prévalence de la Duchenne 15,9 et 19,5/100 000 naissances masculines (États-Unis, Royaume-Uni) [S1]",
+  "Perte de la marche 10,0 / 11,2 / 13,9 ans ; doses de l’essai de phase 3 [S1]",
+  "Hydrocortisone IM 50 mg avant 2 ans, 100 mg dès 2 ans ; stress 50–100 mg/m²/j au-delà de 12 mg/m²/j ; décroissance sur semaines à mois [S1]",
+  "Croissance < 4 cm/an ou < 3e percentile ; seuils fonctionnels après 7 ans (325 m, 30 s, 8 s, 10–12 s, NSAA ≤ 34) [S1]",
+  "Seuils respiratoires, SpO2 < 95 %, règle des trois signes sur cinq, oxygène seul à éviter, ventilation non invasive plutôt que pression positive continue [S2 ; S3]",
+  "IRM cardiaque, échocardiographie jusqu’à 6–7 ans, bilan annuel, IEC vers 10 ans (NHLBI), défibrillateur FE < 35 % [S2]",
+  "Embolie graisseuse : conscience, détresse respiratoire, tachycardie ; soutien respiratoire et corticoïdes à forte dose [S2]",
+  "Anesthésiques inhalés et suxaméthonium : rhabdomyolyse et hyperkaliémie dans la Duchenne [S2 ; S7]",
+  "DM1 : 1/3000 à 1/8000 ; anesthésie et opioïdes ; complications surtout postanesthésiques ; ECG < 50/min, PR > 200 ms, QRS > 100 ms ; orientation > 40 ans ; mexilétine contre-indiquée en cas d’atteinte cardiaque ; cataracte chez la plupart ; modafinil si cause centrale [S4]",
+  "HyperCKémie > 1,5 × LSN ; critères de biopsie ; test ADN chez la femme ; statine [S5]",
+  "Vamorolone : indication ≥ 4 ans, 6 mg/kg, réductions 4 et 2 mg/kg, Child-Pugh B 2 mg/kg ou 80 mg, Child-Pugh C contre-indiqué, CYP3A4 puissant 4 mg/kg, vaccins vivants 6 semaines, varicelle, passage à 6 mg/kg sans interruption, effets indésirables (92,6 %, 28,6 %, 16,7 %), mise à jour octobre 2026 [S6]",
+  "MELAS : définition, termes déconseillés, suppléments non prouvés, antiépileptiques [S10]",
+  "Mexilétine dans la DM1 : DM 1,37 s, certitude modérée, qualité de vie sans différence ; 17 essais, 392 participants [S14]",
+  "Ataluren autorisé conditionnellement en 2014 selon le consensus de 2018 [S1] (statut actuel corrigé en C06)"
+ ],
+ "lacunes": [
+  "Aucune recommandation clinique suisse spécifique (SSN, centres neuromusculaires, Swiss Medical Forum) trouvée : WebSearch « Swiss neuromuscular centre … myotonic dystrophy Swiss Medical Forum » et « medicalforum.ch myotone Dystrophie » sans résultat suisse ; PubMed « Swiss-Reg-NMD … » : 18 résultats, surtout amyotrophie spinale.",
+  "Rev Med Suisse 2022 (S21) : texte intégral réservé aux abonnés ; seul le résumé de l’éditeur est lu.",
+  "229e atelier ENMC (LGMD, 2017) : ni résumé ni texte accessibles (Europe PMC sans résumé ; éditeur HTTP 403). 259e (anesthésie), 263e (conductrices) et 268e (FSHD) ateliers ENMC : aucun résumé disponible.",
+  "ESC 2022 arythmies ventriculaires : section 7.1.3.6 et tableau 33 non extraits (page tronquée) ; ESC 2021 stimulation non lue.",
+  "Statut suisse de la mexilétine, du givinostat, du déflazacort et de l’ataluren : absents d’AmiKo et de la recherche web ; non vérifiés auprès de Swissmedic ni de la liste des spécialités.",
+  "FI de la lamotrigine et du dantrolène non lues en texte ; FI de l’hydrocortisone injectable non lue.",
+  "Transmission de la DM2, de la FSHD (FSHD1/FSHD2) et rang épidémiologique de la FSHD : aucune source européenne lisible lue (Hamel 2020, Knox 2025 non relus).",
+  "Jayaraman et Ghosh (Continuum 2025), Beecher 2024, Riguzzi 2025, registre russe 2026 : non relus par l’audit ; leurs chiffres restent sous la responsabilité de la leçon (voir C25).",
+  "Sensibilité, spécificité et rapports de vraisemblance des signes (Gowers, myotonie de préhension, cotation MRC, symptômes d’hypoventilation) : non chiffrés dans les sources lues.",
+  "Spécificités suisses (AI, aptitude à la conduite, remboursement) : aucune source lue ; rubrique 16 absente.",
+  "Images de remplacement de la figure 2 : Commons HTTP 429 (aucun nouvel essai), Europe PMC sans figure exploitable vérifiée."
+ ],
+ "propositions": [
+  "G71_a_1.html",
+  "G71_a_2.html",
+  "G71_b_1.html",
+  "G71_b_2.html",
+  "G71_b_3.html",
+  "G71_b_4.html",
+  "G71_c_2.html",
+  "G71_c_figures.html",
+  "G71_c_semio.html",
+  "G71_d_1.html",
+  "G71_mineurs.html",
+  "G71_pop3.html",
+  "glossary_g71_ajouts.py"
+ ],
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+}
