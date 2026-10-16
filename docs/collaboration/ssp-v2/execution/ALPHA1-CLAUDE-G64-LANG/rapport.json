@@ -1,0 +1,467 @@
+{
+ "mission": "ALPHA1-CLAUDE-G64-LANG",
+ "code": "G64",
+ "type_audit": "linguistique",
+ "base_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "worktree_base": "32416a2080e67537641040a81252dec0b3e6d137",
+ "worktree_base_note": "START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste.",
+ "generation": 1,
+ "branche": "claude/alpha1/g64-lang-g1",
+ "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-G64-LANG-g1",
+ "conversation": "alpha1-claude-g64-lang",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": null,
+ "date_debut_note": "L'heure de début n'a pas été relevée avec date -u au démarrage ; aucune valeur n'est inventée.",
+ "date_fin": "2026-10-16T06:12:29Z",
+ "note_base": "base_sha = celui du manifeste (d1a488ad) ; worktree_base = 32416a20. Sources figées identiques, empreintes conformes.",
+ "lecture": {
+  "fichiers": [
+   {
+    "fichier": "chapters/G64/G64_a.html",
+    "sha256": "8bc623ff680af7398ae4267d6ea63b9721c444b30e07b431327a0d7303f3e130",
+    "conforme_au_manifeste": true,
+    "octets": 21906
+   },
+   {
+    "fichier": "chapters/G64/G64_b.html",
+    "sha256": "0b7ae0a8aa0bff4549da44ce4451932997eb899e15d95a457b27c102049ba50d",
+    "conforme_au_manifeste": true,
+    "octets": 15612
+   },
+   {
+    "fichier": "chapters/G64/G64_c.html",
+    "sha256": "22705b4969e050d4328c440b0a1b96fd706d62d9ec310b119a406bc5b8ae3774",
+    "conforme_au_manifeste": true,
+    "octets": 21075
+   },
+   {
+    "fichier": "chapters/G64/G64_d.html",
+    "sha256": "2b5d6ea964cc0bb8763d38d835445b602471acfeaad3d4c3efed05370d28be78",
+    "conforme_au_manifeste": true,
+    "octets": 11994
+   },
+   {
+    "fichier": "chapters/G64/G64_pop1.html",
+    "sha256": "15f903ac4bb6636b1ffc64916bb532502d58c66dfbb0bf32e3b2c65e8bf6aeb3",
+    "conforme_au_manifeste": true,
+    "octets": 13232
+   },
+   {
+    "fichier": "chapters/G64/G64_pop2.html",
+    "sha256": "ecafb6d49c8d137165c65499acf271d36bcfecc8fad33aab7a8d7c85398f27e1",
+    "conforme_au_manifeste": true,
+    "octets": 13796
+   },
+   {
+    "fichier": "glossary/g64.py",
+    "sha256": "bcf05a588a68438ffa95ecaffd506355e922aedd0392a9e82b26f204ba7d3b8d",
+    "conforme_au_manifeste": true,
+    "octets": 12271
+   }
+  ],
+  "empreintes_conformes": true,
+  "lecture_integrale": "Les sept fichiers ont été lus en entier (onglets a, b, c, d, fenêtres pop1 et pop2, glossaire), ainsi que docs/STYLE_REDACTION.md, docs/collaboration/betta/PROMPT_VERITE.md et le manifeste."
+ },
+ "premiere_verification": {
+  "description": "Recalcul des SHA-256 des sept fichiers de la leçon et comparaison avec .medina/missions/ALPHA1-CLAUDE-G64-LANG.json (source_files_sha256).",
+  "resultat": "sept empreintes conformes",
+  "date": "2026-10-16"
+ },
+ "synthese": {
+  "nombre_propositions": 64,
+  "renvois_medicaux": 37,
+  "observations_globales": 7,
+  "par_fichier": {
+   "a": 14,
+   "b": 8,
+   "c": 4,
+   "d": 6,
+   "p1": 7,
+   "p2": 8,
+   "g": 17
+  },
+  "par_categorie": {
+   "phrase nominale": 23,
+   "ambiguïté": 9,
+   "grammaire": 7,
+   "syntaxe": 5,
+   "lexique": 4,
+   "abréviation": 3,
+   "répétition": 2,
+   "ponctuation": 2,
+   "registre": 2,
+   "lourdeur": 1,
+   "personnification": 1,
+   "infinitif injonctif": 1,
+   "cohérence": 1,
+   "typographie": 1,
+   "méta-discours": 1,
+   "anglicisme": 1
+  }
+ },
+ "controle_obligations_cliniques": "Aucune proposition n'affaiblit une obligation clinique ; les propositions touchant une notion clinique (classification, population, portée, mesure statistique) sont des renvois médicaux.",
+ "choix_differes": [
+  "Espaces insécables globales (G64-LANG-OG-01)",
+  "Usage « fibrillation atriale / auriculaire » (G64-LANG-OG-02, aucune occurrence)"
+ ],
+ "verification_mecanique": {
+  "script": "verification_unicite.py",
+  "regle": "chaque champ « ancien » apparaît exactement une fois dans le fichier cible ; les propositions sont appliquées sans chevauchement ; les balises sont inchangées (sauf <b> ajouté dans G64-LANG-c-03 pour remplacer des majuscules d’insistance) ; aucun nombre ajouté ou retiré (hors mention de « G64 » dans G64-LANG-a-04) ; le glossaire modifié compile en Python.",
+  "resultat": "64/64 propositions à ancien unique ; aucun chevauchement"
+ },
+ "constats": [
+  {
+   "id": "G64-LANG-RM-01",
+   "fichier": "chapters/G64/G64_a.html",
+   "ancre": "presque toujours pour une atteinte identifiée",
+   "type": "fréquence absente de la source",
+   "constat": "« presque toujours » chiffre une fréquence (qu’une catégorie voisine plus précise existe) que ni la CIM-10-GM ni les sources citées ne donnent. À l’audit médical : reformuler sans fréquence (« une catégorie voisine plus précise existe en général » reste une fréquence) ou le sourcer.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-02",
+   "fichier": "chapters/G64/G64_a.html",
+   "ancre": "Évolution par poussées",
+   "type": "chronologie / cohérence",
+   "constat": "La ligne « Subaiguë » associe la vascularite à une « évolution par poussées » ; la même expression revient dans le tableau des mécanismes (« aux membres inférieurs, par poussées »). Une évolution par poussées est une chronologie distincte d’une évolution subaiguë, et « aux membres inférieurs » est une localisation. Aucune de ces deux précisions n’est reprise ailleurs dans la leçon ; leur source (guideline PNS 2010 ?) n’est pas vérifiée ici.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-03",
+   "fichier": "chapters/G64/G64_a.html",
+   "ancre": "Le tableau regroupe les causes citées par la revue allemande de 2018, avec leurs chiffres.",
+   "type": "attribution des chiffres",
+   "constat": "Le tableau mêle des chiffres que les fenêtres rattachent à d’autres sources (petites fibres : Sopacua 2019 ; chimiothérapie, postopératoire : revues suisses). La phrase les attribue tous à la revue allemande de 2018. À vérifier ligne par ligne par l’audit médical.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-04",
+   "fichier": "chapters/G64/G64_a.html",
+   "ancre": "le positionnement opératoire est responsable de 20 à 30 % d’entre elles",
+   "type": "causalité",
+   "constat": "« Une cause évitable existe aussi », « est responsable de », « dues au positionnement » (section 11), « en cause dans 20 à 30 % des cas » (anamnèse) et « la prévention passe par le positionnement » (4.4) établissent un lien de causalité et une évitabilité. Le texte indique que ce chiffre vient du résumé d’une revue suisse : un résumé donne souvent une association ou une attribution, non une preuve causale. Aucune reformulation n’est proposée ici.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-05",
+   "fichier": "chapters/G64/G64_a.html",
+   "ancre": "Par déduction, une atteinte qui suit la distribution des vaisseaux touche des nerfs isolés, d’où le profil asymétrique multifocal.",
+   "type": "causalité / chronologie",
+   "constat": "La « séquence » du 4.2 (inflammation, lésion du vaisseau, chute de l’irrigation, ischémie, dégénérescence) et le « d’où » du profil multifocal sont présentés comme un mécanisme, la déduction étant signalée mais retombant en conclusion causale. La chute de l’irrigation n’apparaît pas dans le tableau des mécanismes. Le même enchaînement est répété dans l’onglet Sciences (Anatomie : « produit l’ischémie nerveuse » ; Physiologie : « réduit l’irrigation du nerf »).",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-06",
+   "fichier": "chapters/G64/G64_a.html",
+   "ancre": "rendent les nocicepteurs hyperexcitables",
+   "type": "association présentée comme mécanisme",
+   "constat": "La section 3 et la fenêtre Nav écrivent que les variants sont « associés » à la neuropathie des petites fibres ; le 4.3 écrit qu’ils « rendent » les nocicepteurs hyperexcitables, la fenêtre Nav qu’ils « provoquent » l’hyperexcitabilité « dont dépend la douleur », l’onglet Sciences que la douleur « suit ce mécanisme ». Le passage de l’association au mécanisme est à confirmer, d’autant que la source citée est un résumé (Sopacua 2019).",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-07",
+   "fichier": "chapters/G64/G64_a.html",
+   "ancre": "L’interrogatoire fournit la plupart des causes curables avant tout examen complémentaire.",
+   "type": "fréquence absente de la source",
+   "constat": "« la plupart » est une fréquence que la revue allemande de 2018 n’énonce pas dans le texte du dossier.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-08",
+   "fichier": "chapters/G64/G64_a.html",
+   "ancre": "Carence ou excès de B6 et de B12",
+   "type": "contenu incohérent avec la leçon",
+   "constat": "Le tableau d’anamnèse affirme « carence ou excès de B6 et de B12 » et « les deux directions sont neuropathiques ». Le reste de la leçon cite la carence en B12 et la carence ou l’excès de B6 uniquement. Un excès de B12 n’est établi nulle part dans le dossier.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-09",
+   "fichier": "chapters/G64/G64_a.html",
+   "ancre": "le signe le plus utile",
+   "type": "comparatif absent de la source",
+   "constat": "« le signe le plus utile » (encadré « À retenir » de la section 6) est un superlatif ; la source donne une sensibilité et une spécificité élevées, non un classement des signes.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-10",
+   "fichier": "chapters/G64/G64_b.html",
+   "ancre": "son pronostic est le plus souvent bon",
+   "type": "fréquence et périmètre",
+   "constat": "« le plus souvent bon » est une fréquence ; de plus, il s’agit ici de « la polyneuropathie cryptogénique » alors que le tableau des causes et la section 10 parlent de la polyneuropathie « sensitive » cryptogénique, de « bon pronostic » sans fréquence.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-11",
+   "fichier": "chapters/G64/G64_b.html",
+   "ancre": "La biopsie nerveuse est le dernier recours",
+   "type": "cohérence interne",
+   "constat": "Le piège nomme la biopsie nerveuse « dernier recours », alors que la démarche en sept étapes place après elle les petites fibres (étape 6) et la génétique (étape 7), et que la fenêtre de pharmacologie indique « du moins au plus invasif ». À arbitrer par l’audit médical.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-12",
+   "fichier": "chapters/G64/G64_b.html",
+   "ancre": "Traiter la cause passe toujours en premier, car elle seule peut arrêter l’évolution.",
+   "type": "absolu et causalité",
+   "constat": "« toujours » et « elle seule peut arrêter l’évolution » sont des affirmations absolues. Les urgences (SGB, vascularite) ou la douleur intense peuvent justifier un traitement symptomatique ou en parallèle. Même remarque pour « complètent toujours le traitement » (encadré de la section 9).",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-13",
+   "fichier": "chapters/G64/G64_b.html",
+   "ancre": "Environ la moitié des polyneuropathies sont douloureuses.",
+   "type": "fréquence absente de la source",
+   "constat": "La fréquence n’est rattachée à aucune source dans la leçon ni dans les fenêtres.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-14",
+   "fichier": "chapters/G64/G64_b.html",
+   "ancre": "l’activité physique est préventive et curative selon une revue suisse de 2026",
+   "type": "portée de la source",
+   "constat": "« préventive et curative » attribue un effet causal ; la section 11 ne décrit qu’un programme supervisé recommandé. À confirmer au niveau de lecture (résumé ou texte intégral) de la revue de 2026.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-15",
+   "fichier": "chapters/G64/G64_b.html",
+   "ancre": "L’oxaliplatine donne une neurotoxicité aiguë réversible, puis des lésions persistantes.",
+   "type": "chronologie et fréquence",
+   "constat": "« puis » présente la persistance comme la suite de l’atteinte aiguë chez tout patient ; la section 10 donne deux fréquences distinctes (60 à 80 % de réversibilité en 2 à 3 jours ; 73 % de lésions persistantes sous traitement prolongé).",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-16",
+   "fichier": "chapters/G64/G64_b.html",
+   "ancre": "Les neuropathies compressives touchent 0,14 % des patients après chirurgie orthopédique",
+   "type": "cohérence interne",
+   "constat": "La section 3 attribue le 0,14 % aux « neuropathies postopératoires » ; la section 11 aux « neuropathies compressives ». Les deux populations ne se recouvrent pas nécessairement. Non harmonisé ici pour ne pas changer le périmètre du chiffre.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-17",
+   "fichier": "chapters/G64/G64_b.html",
+   "ancre": "Une paraprotéine isolée n’est pas une cause : elle est souvent fortuite.",
+   "type": "absolu",
+   "constat": "« n’est pas une cause » est plus catégorique que le tableau des causes (« n’explique pas toujours la neuropathie ») et que la fenêtre Paraprotéines, qui énumèrent trois exceptions. Même nuance pour « n’explique pas la neuropathie » dans cette fenêtre.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-18",
+   "fichier": "chapters/G64/G64_b.html",
+   "ancre": "probable</b> si cinq prédicteurs sont réunis",
+   "type": "ambiguïté de sens du critère",
+   "constat": "« cinq prédicteurs sont réunis » se lit comme une exigence cumulative des cinq. La section e-5 et la fenêtre listent cinq prédicteurs histologiques de la vascularite « probable » sans dire s’il faut les cinq ou l’un d’entre eux. La formulation doit être confrontée à la guideline PNS 2010 par l’audit médical ; elle n’est pas reformulée ici.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-19",
+   "fichier": "chapters/G64/G64_c.html",
+   "ancre": "Elle est sûre : environ 35 000 biopsies ont été faites sans effet grave",
+   "type": "portée de la source",
+   "constat": "« Elle est sûre » conclut d’une absence d’effet grave dans environ 35 000 biopsies à une sécurité absolue. Source : résumé de la guideline EFNS/PNS 2010.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-20",
+   "fichier": "chapters/G64/G64_c.html",
+   "ancre": "classe la vascularite nerveuse en trois niveaux",
+   "type": "contenu incohérent avec la leçon",
+   "constat": "La phrase annonce trois niveaux mais n’en décrit que deux (certaine, probable). Le niveau manquant (possible ?) n’est pas dans la leçon.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-21",
+   "fichier": "chapters/G64/G64_c.html",
+   "ancre": "L’alcool cause une neuropathie au-delà d’environ 100 g par jour pendant des années",
+   "type": "causalité renforcée",
+   "constat": "La section 3 et l’anamnèse écrivent « risque au-delà d’environ 100 g/jour pendant des années » ; l’onglet Sciences écrit « cause ». Le passage de risque à cause est un changement de sens.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-22",
+   "fichier": "chapters/G64/G64_c.html",
+   "ancre": "Science → traitement.",
+   "type": "causalité implicite",
+   "constat": "L’encadré relie la physiologie des canaux Nav (excitabilité nociceptive) à la première ligne forte des ligands α2δ et des IRSN. Aucune source du dossier n’établit ce lien mécanistique (la méta-analyse porte sur la douleur neuropathique toutes causes). De même, l’encadré d’Anatomie (« expliquent pourquoi le profil clinique varie ») attribue une valeur explicative non démontrée.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-23",
+   "fichier": "chapters/G64/G64_c.html",
+   "ancre": "le <button class=\"w\" data-k=\"g64-lcr\">LCR</button> contient moins de 10 leucocytes par microlitre et des protéines élevées, mais ces critères ne sont pas obligatoires",
+   "type": "modalité",
+   "constat": "Le texte affirme une valeur (« contient ») puis dit qu’elle n’est pas obligatoire ; la fenêtre LCR écrit « typiquement ». La modalité exacte (fréquent, typique, constant) est à fixer par l’audit médical.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-24",
+   "fichier": "chapters/G64/G64_d.html",
+   "ancre": "<td>Entretien</td><td>18 à 24 mois après rémission sous association</td>",
+   "type": "ambiguïté du délai",
+   "constat": "« 18 à 24 mois après rémission » peut se lire comme une durée de traitement d’entretien commençant à la rémission ou comme un délai d’arrêt. À confronter à la guideline PNS 2010 (même formulation dans la fenêtre Immunosuppression).",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-25",
+   "fichier": "chapters/G64/G64_pop2.html",
+   "ancre": "Ces variants provoquent une hyperexcitabilité nociceptive, dont dépend la douleur neuropathique.",
+   "type": "association présentée comme mécanisme",
+   "constat": "Voir le renvoi G64-LANG-RM-06 : « provoquent » et « dont dépend » vont plus loin que « associés » de la phrase précédente.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-26",
+   "fichier": "glossary/g64.py",
+   "ancre": "Elle apparaît souvent comme une paralysie ascendante après une infection digestive ou respiratoire.",
+   "type": "fréquence absente de la source",
+   "constat": "« souvent » est une fréquence ; la leçon écrit « Une paralysie ascendante après une infection … rend le SGB très probable » sans fréquence du tableau inverse.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-27",
+   "fichier": "glossary/g64.py",
+   "ancre": "Ensemble d’épreuves psychophysiques qui mesurent les seuils de perception sensitive.",
+   "type": "information étrangère à la leçon",
+   "constat": "La définition des QST (« épreuves psychophysiques », « seuils de perception ») ne figure pas dans les passages de la leçon ; elle vient d’un savoir non cité. À sourcer ou à restreindre à la phrase de la fenêtre (diagnostic des petites fibres).",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-28",
+   "fichier": "chapters/G64/G64_a.html",
+   "ancre": "la distribution (symétrique distale, radiculaire, multifocale)",
+   "type": "changement de notion clinique",
+   "constat": "Changement de terme de classification : « radiculaire » deviendrait « polyradiculaire » (profil polyradiculonévrite). Décision clinique réservée à l'audit MED. Proposition initiale : « la distribution (symétrique distale, radiculaire, multifocale) » remplacé par « la distribution (symétrique distale, polyradiculaire, multifocale) ».",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-29",
+   "fichier": "chapters/G64/G64_a.html",
+   "ancre": "sans anémie macrocytaire chez environ 50 % des patients neurologiques",
+   "type": "changement de notion clinique",
+   "constat": "Préciser la population (« concernés ») modifie la portée du 50 % : patients neurologiques ou patients carencés. À trancher par l'audit MED. Proposition initiale : « sans anémie macrocytaire chez environ 50 % des patients neurologiques » remplacé par « sans anémie macrocytaire chez environ 50 % des patients neurologiques concernés ».",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-30",
+   "fichier": "chapters/G64/G64_a.html",
+   "ancre": "<td>Incidences faibles</td>",
+   "type": "changement de notion clinique",
+   "constat": "Remplacer « incidences » par « fréquences » modifie la mesure épidémiologique (incidence / prévalence). À trancher par l'audit MED. Proposition initiale : « <td>Incidences faibles</td> » remplacé par « <td>Fréquences faibles</td> ».",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-31",
+   "fichier": "chapters/G64/G64_a.html",
+   "ancre": "<td>Le positionnement est en cause dans 20 à 30 % des cas</td>",
+   "type": "changement de notion clinique",
+   "constat": "Préciser le dénominateur (« neuropathies postopératoires ») modifie la population du 20 à 30 %. À vérifier à la source. Proposition initiale : « <td>Le positionnement est en cause dans 20 à 30 % des cas</td> » remplacé par « <td>Le positionnement est en cause dans 20 à 30 % des neuropathies postopératoir ».",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-32",
+   "fichier": "chapters/G64/G64_b.html",
+   "ancre": "inhibiteurs de points de contrôle immunitaire, neuropathie sévère sans cause.",
+   "type": "changement de notion clinique",
+   "constat": "Changer l'objet du signal (traitement par inhibiteurs) modifie la notion de drapeau rouge. À trancher par l'audit MED. Proposition initiale : « inhibiteurs de points de contrôle immunitaire, neuropathie sévère sans cause. » remplacé par « traitement par inhibiteurs de points de contrôle immunitaire, neuropathie sévère ».",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-33",
+   "fichier": "chapters/G64/G64_b.html",
+   "ancre": "prégabaline : 150 à 600 mg/jour selon la dose et la fonction rénale",
+   "type": "changement de notion clinique",
+   "constat": "Remplacer « selon la dose » par « selon la titration » modifie le paramètre décisionnel de la plage posologique. À vérifier dans l'information professionnelle. Proposition initiale : « prégabaline : 150 à 600 mg/jour selon la dose et la fonction rénale » remplacé par « prégabaline : 150 à 600 mg/jour selon la titration et la fonction rénale ».",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-34",
+   "fichier": "chapters/G64/G64_c.html",
+   "ancre": "cause une neuropathie, sans anémie macrocytaire chez environ la moitié des patients neurologiques.",
+   "type": "changement de notion clinique",
+   "constat": "Préciser la population (« concernés ») modifie la portée du 50 % : patients neurologiques ou patients carencés. À trancher par l'audit MED. Proposition initiale : « cause une neuropathie, sans anémie macrocytaire chez environ la moitié des patie » remplacé par « cause une neuropathie ; elle existe sans anémie macrocytaire chez environ la moi ».",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-35",
+   "fichier": "chapters/G64/G64_d.html",
+   "ancre": "Le rapport des risques absolus donne une idée du bénéfice relatif à l’inconvénient.",
+   "type": "changement de notion clinique",
+   "constat": "Renommer le rapport en « différences de risque absolu » modifie la mesure statistique. À confirmer par l'audit MED. Proposition initiale : « Le rapport des risques absolus donne une idée du bénéfice relatif à l’inconvénie » remplacé par « Le rapport des différences de risque absolu donne une idée du bénéfice par rappo ».",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-36",
+   "fichier": "chapters/G64/G64_d.html",
+   "ancre": "Réponse B. 46 ÷ 4,6 = 10 patients répondeurs supplémentaires.",
+   "type": "changement de notion clinique",
+   "constat": "Reformuler « 10 patients répondeurs supplémentaires » touche la lecture du NNT. À confirmer par l'audit MED. Proposition initiale : « Réponse B. 46 ÷ 4,6 = 10 patients répondeurs supplémentaires. » remplacé par « Réponse B. 46 ÷ 4,6 = 10 : en traitant 46 patients, on obtient environ 10 répond ».",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G64-LANG-RM-37",
+   "fichier": "chapters/G64/G64_pop2.html",
+   "ancre": "symétrique distale, radiculaire, multifocale",
+   "type": "changement de notion clinique",
+   "constat": "Changement de terme de classification : « radiculaire » deviendrait « polyradiculaire » (profil polyradiculonévrite). Décision clinique réservée à l'audit MED. Proposition initiale : « symétrique distale, radiculaire, multifocale » remplacé par « symétrique distale, polyradiculaire, multifocale ».",
+   "statut": "renvoi_medical"
+  }
+ ],
+ "observations_globales": [
+  {
+   "id": "G64-LANG-OG-01",
+   "objet": "Espaces insécables",
+   "constat": "Les sept fichiers ne contiennent aucune espace insécable (0 occurrence de U+00A0) : les espaces avant « ; : ! ? », à l’intérieur des guillemets « » et avant « % », ainsi que dans les nombres à milliers (100 000, 500 000, 35 000), sont des espaces ordinaires. Le SVG de la figure 1 est concerné (« Drapeau rouge ? »).",
+   "statut": "differe",
+   "decision": "Choix global différé par le coordinateur ; aucune proposition émise."
+  },
+  {
+   "id": "G64-LANG-OG-02",
+   "objet": "Usage « fibrillation atriale / auriculaire »",
+   "constat": "Aucune occurrence de « fibrillation » dans la leçon (recherche insensible à la casse dans les sept fichiers).",
+   "statut": "differe",
+   "decision": "Choix global différé par le coordinateur ; sans objet pour G64."
+  },
+  {
+   "id": "G64-LANG-OG-03",
+   "objet": "Boutons imbriqués (technique, hors périmètre linguistique)",
+   "constat": "Plusieurs mots verts contiennent un autre mot vert (tests sensitifs quantitatifs (QST) en 2.3 ; « Neurographie et EMG », « Biologie élargie orientée et LCR », « Échographie nerveuse, neurographie par IRM », « Petites fibres : QST, biopsie cutanée » dans le tableau de la démarche ; LCR et SGB doublés dans l’alerte et le tableau ; « syndrome POEMS » ; mêmes motifs dans l’onglet Examens). Un bouton dans un bouton est invalide en HTML. Non traité : modifier les balises sort d’un audit de formulation.",
+   "statut": "signale"
+  },
+  {
+   "id": "G64-LANG-OG-04",
+   "objet": "Terminologie",
+   "constat": "« guideline » (près de 25 occurrences) alterne avec « recommandations » ; en français de Suisse « information professionnelle » est employé dans le texte mais « FI » dans les tableaux et la clé de glossaire (en français, l’abréviation usuelle est IP). Choix éditorial transversal non appliqué.",
+   "statut": "signale"
+  },
+  {
+   "id": "G64-LANG-OG-05",
+   "objet": "Forme",
+   "constat": "Les listes Pareto, les cellules de tableaux et les définitions du glossaire sont majoritairement nominales : seuls les cas où la phrase nominale gênait la lecture ont été reformulés. Plusieurs tableaux (causes, mécanismes, biologie, biopsies) n’ont pas de paragraphe de lecture après eux, contrairement à la section 4 du guide de rédaction : ajout de contenu, donc hors propositions locales. Les unités « ml/min », « µl » suivent l’usage des informations professionnelles suisses et ne sont pas modifiées.",
+   "statut": "signale"
+  },
+  {
+   "id": "G64-LANG-OG-06",
+   "objet": "Sixième sous-onglet Sémiologie (hors périmètre linguistique)",
+   "constat": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md), transmis à l'audit MED : G64_c.html compte 4 attributs data-s (Anatomie, Histologie, Physiologie, Biochimie), soit 4 disciplines réelles au lieu de 5, et aucun sous-onglet « Sémiologie fondamentale et analytique » en premier bouton .sci-bar.",
+   "gravite": "MAJEUR",
+   "bloquant": true,
+   "statut": "transmis_MED"
+  },
+  {
+   "id": "G64-LANG-OG-07",
+   "objet": "Figures",
+   "constat": "Une seule figure dessinée : la figure 1 de G64_b.html (SVG, schéma de démarche), SCHEMA_NON_ANATOMIQUE ; origine ORIGINE_INCONNUE avec réserve. Aucune figure anatomique. Le contrôle a porté sur le texte de la figure, pas sur sa provenance, transmise à l'audit MED.",
+   "statut": "transmis_MED"
+  }
+ ],
+ "lacunes": [
+  "Aucune source médicale n’a été relue : un audit linguistique ne vérifie pas les faits. Les citations (Sommer 2018, Sopacua 2019, Lauria 2010, Collins 2010, Soliman 2025, Lyrica, Duloxetin-Mepha via AmiKo, revues suisses de 2023 et 2026) ne sont ni confirmées ni infirmées ici.",
+  "Les formulations qui touchent à un sens médical possible (causalité, fréquence, chronologie, critères) sont renvoyées (37 renvois) et non reformulées.",
+  "Aucun test en navigateur : l’effet des propositions sur l’affichage (largeur des tableaux, justification) n’a pas été mesuré.",
+  "Les espaces insécables et l’usage « fibrillation atriale/auriculaire » sont différés par instruction.",
+  "Pas de correcteur externe (Antidote, LanguageTool) : relecture par lecture intégrale, avec contrôles mécaniques sur l’unicité des extraits, les nombres et les balises."
+ ],
+ "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+}
