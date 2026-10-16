@@ -1,0 +1,522 @@
+{
+ "mission": "ALPHA77-CLAUDE-C72-INTEGRATE",
+ "agent": "W",
+ "code": "C72",
+ "date": "2026-10-16",
+ "base": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "empreintes_sha256": {
+  "chapters/C72/C72_a.html": "266c16e1cd767548f3e62937bd4af31df98929636ba8395b6392ff9ef055d43c",
+  "chapters/C72/C72_b.html": "6830fcd41d5bbd797a3ed9fbb83d7df319bac1877855dfaf1faa154697189ed5",
+  "chapters/C72/C72_c.html": "e86a181835aa100207b44b4c3342b100c4bedbfc9d140cfa28580e6c75aa1ea4",
+  "chapters/C72/C72_d.html": "187190d7d4661ee36d496790f88d3e246790de6259aa5aea3c02e71b98a337dc",
+  "chapters/C72/C72_pop1.html": "dd87aabf0e307f6ec2ab91407177a131f29bedc385ae2aadae5ab646975c4317",
+  "chapters/C72/C72_pop2.html": "9a862719c414e0e26bb6999fad55a3d8e3c54f7b219e8b29997e7784a8c42b4c",
+  "glossary/c72.py": "32d9cc80b0ad811165166cac0a064ef23fdccd8d2f3e6661f7aa73cae1917539"
+ },
+ "controles": {
+  "test_v7_static": {
+   "commande": "python3 test_v7.py --static C72",
+   "resultat": "OK",
+   "detail": "C72 mots 23011 fenêtres 82 quiz 9 pareto 17\nOK"
+  },
+  "build_medina_audit": {
+   "resultat": "{} (appelé par test_v7 --static)"
+  },
+  "test_v7_navigateur": {
+   "commande": "MEDINA_CHROMIUM=/opt/pw-browsers/chromium-1194/chrome-linux/chrome python3 test_v7.py --url http://127.0.0.1:8793/MEDINA_S08_nerveux.html C72",
+   "resultat": "OK"
+  },
+  "audit_sciences": {
+   "commande": "python3 tests/audit_sciences.py --base 523832d9ef6097607d3443f4398deee9cd0add11 --codes C72 --out docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-C72-INTEGRATE/integration/audit_sciences.json",
+   "resultat": "failed",
+   "erreurs": [
+    "C72/c72-s-anat: aucune figure"
+   ],
+   "avant": {
+    "words": 788,
+    "figures": 3,
+    "disciplines": 4
+   },
+   "apres": {
+    "words": 5617,
+    "figures": 5,
+    "disciplines": 6
+   },
+   "unites": [
+    {
+     "id": "c72-s-semio",
+     "words": 3368,
+     "figures": 1
+    },
+    {
+     "id": "c72-s-anat",
+     "words": 415,
+     "figures": 0
+    },
+    {
+     "id": "c72-s-histo",
+     "words": 375,
+     "figures": 1
+    },
+    {
+     "id": "c72-s-gen",
+     "words": 528,
+     "figures": 1
+    },
+    {
+     "id": "c72-s-radio",
+     "words": 456,
+     "figures": 1
+    },
+    {
+     "id": "c72-s-physio",
+     "words": 462,
+     "figures": 1
+    }
+   ],
+   "lecture": "Seule erreur : c72-s-anat sans figure, conséquence directe du retrait de la figure 3 (anatomie dessinée par IA, MAJ-06, décision de Vial). Aucun SVG factice ni anatomie redessinée ajoutés ; lacune déclarée."
+  },
+  "validateur_semiologie": {
+   "commande": "python3 docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-C72-INTEGRATE/integration/outils/semio_check.py . C72 (structure de tools/starter_codex.py:semiology, fichiers finaux)",
+   "resultat": "passed",
+   "detail": "docs/collaboration/ssp-v2/execution/ALPHA77-CLAUDE-C72-INTEGRATE/integration/validateur_semiologie.json",
+   "limite": "Partie documentaire du validateur (rapport SEMIO final, empreintes, reçu) non rejouée : elle relève de l’Agent P."
+  },
+  "construction": {
+   "commande": "MEDINA_OUT=<scratchpad>/c72w/build python3 build_front.py --fragment S08",
+   "sortie": "MEDINA_S08_nerveux.html (14 399 410 octets, compressé 7 634 997)",
+   "sha256": "242970a61790ffdbd123ac5d05980b88d277aa7a04218d730fe63dfa1d321786",
+   "hors_depot": true
+  },
+  "rendu_chromium": {
+   "navigateur": "/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
+   "url": "http://127.0.0.1:8793/MEDINA_S08_nerveux.html#/entry/C72 (construction hors dépôt)",
+   "resultat": "passed",
+   "controles": {
+    "bureau.cours_affiche": {
+     "ok": true
+    },
+    "bureau.bloc_clinique_present": {
+     "ok": true
+    },
+    "bureau.bloc_clinique_visible": {
+     "ok": true
+    },
+    "bureau.premier_bouton_semio": {
+     "ok": true,
+     "detail": [
+      "c72-tab-semio",
+      "Sémiologie fondamentale et analytique"
+     ]
+    },
+    "bureau.aria_selected": {
+     "ok": true,
+     "detail": [
+      [
+       "c72-s-semio",
+       "true"
+      ],
+      [
+       "c72-s-anat",
+       "false"
+      ],
+      [
+       "c72-s-histo",
+       "false"
+      ],
+      [
+       "c72-s-gen",
+       "false"
+      ],
+      [
+       "c72-s-radio",
+       "false"
+      ],
+      [
+       "c72-s-physio",
+       "false"
+      ]
+     ]
+    },
+    "bureau.semio_seul_visible": {
+     "ok": true,
+     "detail": [
+      [
+       "c72-s-semio",
+       true
+      ],
+      [
+       "c72-s-anat",
+       false
+      ],
+      [
+       "c72-s-histo",
+       false
+      ],
+      [
+       "c72-s-gen",
+       false
+      ],
+      [
+       "c72-s-radio",
+       false
+      ],
+      [
+       "c72-s-physio",
+       false
+      ]
+     ]
+    },
+    "bureau.titre_exact": {
+     "ok": true
+    },
+    "bureau.neuf_sections": {
+     "ok": true,
+     "detail": [
+      [
+       "normal",
+       301
+      ],
+      [
+       "signs",
+       547
+      ],
+      [
+       "mechanisms",
+       332
+      ],
+      [
+       "examination",
+       340
+      ],
+      [
+       "interpretation",
+       506
+      ],
+      [
+       "differentials",
+       392
+      ],
+      [
+       "urgency",
+       217
+      ],
+      [
+       "limits",
+       260
+      ],
+      [
+       "sources",
+       503
+      ]
+     ]
+    },
+    "bureau.pas_de_defilement_horizontal": {
+     "ok": true,
+     "detail": 1300
+    },
+    "bureau.figure8_texte_lisible": {
+     "ok": true,
+     "detail": 35
+    },
+    "bureau.fenetre_c72-sm-residu": {
+     "ok": true,
+     "detail": "TECH­NIQUE\n\nAprès une mic­tion, l’écho­gra­phie vé­si­cale me­sure le vo­lume d’urine res­tant, en mil­li­litres.\n\nVA­LE"
+    },
+    "bureau.bascule_c72-s-anat": {
+     "ok": true
+    },
+    "bureau.pas_de_defilement_c72-s-anat": {
+     "ok": true
+    },
+    "bureau.bascule_c72-s-histo": {
+     "ok": true
+    },
+    "bureau.texte_figure_c72-s-histo_0": {
+     "ok": true,
+     "detail": 33
+    },
+    "bureau.pas_de_defilement_c72-s-histo": {
+     "ok": true
+    },
+    "bureau.bascule_c72-s-gen": {
+     "ok": true
+    },
+    "bureau.texte_figure_c72-s-gen_0": {
+     "ok": true,
+     "detail": 33
+    },
+    "bureau.pas_de_defilement_c72-s-gen": {
+     "ok": true
+    },
+    "bureau.bascule_c72-s-radio": {
+     "ok": true
+    },
+    "bureau.texte_figure_c72-s-radio_0": {
+     "ok": true,
+     "detail": 38
+    },
+    "bureau.pas_de_defilement_c72-s-radio": {
+     "ok": true
+    },
+    "bureau.bascule_c72-s-physio": {
+     "ok": true
+    },
+    "bureau.texte_figure_c72-s-physio_0": {
+     "ok": true,
+     "detail": 33
+    },
+    "bureau.pas_de_defilement_c72-s-physio": {
+     "ok": true
+    },
+    "bureau.retour_semio": {
+     "ok": true
+    },
+    "bureau.toutes_fenetres_ouvertes": {
+     "ok": true,
+     "detail": {
+      "ouvertures": 95,
+      "echecs": []
+     }
+    },
+    "mobile390.cours_affiche": {
+     "ok": true
+    },
+    "mobile390.bloc_clinique_present": {
+     "ok": true
+    },
+    "mobile390.bloc_clinique_visible": {
+     "ok": true
+    },
+    "mobile390.premier_bouton_semio": {
+     "ok": true,
+     "detail": [
+      "c72-tab-semio",
+      "Sémiologie fondamentale et analytique"
+     ]
+    },
+    "mobile390.aria_selected": {
+     "ok": true,
+     "detail": [
+      [
+       "c72-s-semio",
+       "true"
+      ],
+      [
+       "c72-s-anat",
+       "false"
+      ],
+      [
+       "c72-s-histo",
+       "false"
+      ],
+      [
+       "c72-s-gen",
+       "false"
+      ],
+      [
+       "c72-s-radio",
+       "false"
+      ],
+      [
+       "c72-s-physio",
+       "false"
+      ]
+     ]
+    },
+    "mobile390.semio_seul_visible": {
+     "ok": true,
+     "detail": [
+      [
+       "c72-s-semio",
+       true
+      ],
+      [
+       "c72-s-anat",
+       false
+      ],
+      [
+       "c72-s-histo",
+       false
+      ],
+      [
+       "c72-s-gen",
+       false
+      ],
+      [
+       "c72-s-radio",
+       false
+      ],
+      [
+       "c72-s-physio",
+       false
+      ]
+     ]
+    },
+    "mobile390.titre_exact": {
+     "ok": true
+    },
+    "mobile390.neuf_sections": {
+     "ok": true,
+     "detail": [
+      [
+       "normal",
+       301
+      ],
+      [
+       "signs",
+       547
+      ],
+      [
+       "mechanisms",
+       332
+      ],
+      [
+       "examination",
+       340
+      ],
+      [
+       "interpretation",
+       506
+      ],
+      [
+       "differentials",
+       392
+      ],
+      [
+       "urgency",
+       217
+      ],
+      [
+       "limits",
+       260
+      ],
+      [
+       "sources",
+       503
+      ]
+     ]
+    },
+    "mobile390.pas_de_defilement_horizontal": {
+     "ok": true,
+     "detail": 390
+    },
+    "mobile390.figure8_texte_lisible": {
+     "ok": true,
+     "detail": 15
+    },
+    "mobile390.fenetre_c72-sm-residu": {
+     "ok": true,
+     "detail": "TECH­NIQUE\n\nAprès une mic­tion, l’écho­gra­phie vé­si­cale me­sure le vo­lume d’urine res­tant, en mil­li­litres.\n\nVA­LE"
+    },
+    "mobile390.bascule_c72-s-anat": {
+     "ok": true
+    },
+    "mobile390.pas_de_defilement_c72-s-anat": {
+     "ok": true
+    },
+    "mobile390.bascule_c72-s-histo": {
+     "ok": true
+    },
+    "mobile390.texte_figure_c72-s-histo_0": {
+     "ok": true,
+     "detail": 13
+    },
+    "mobile390.pas_de_defilement_c72-s-histo": {
+     "ok": true
+    },
+    "mobile390.bascule_c72-s-gen": {
+     "ok": true
+    },
+    "mobile390.texte_figure_c72-s-gen_0": {
+     "ok": true,
+     "detail": 13
+    },
+    "mobile390.pas_de_defilement_c72-s-gen": {
+     "ok": true
+    },
+    "mobile390.bascule_c72-s-radio": {
+     "ok": true
+    },
+    "mobile390.texte_figure_c72-s-radio_0": {
+     "ok": true,
+     "detail": 16.0
+    },
+    "mobile390.pas_de_defilement_c72-s-radio": {
+     "ok": true
+    },
+    "mobile390.bascule_c72-s-physio": {
+     "ok": true
+    },
+    "mobile390.texte_figure_c72-s-physio_0": {
+     "ok": true,
+     "detail": 13
+    },
+    "mobile390.pas_de_defilement_c72-s-physio": {
+     "ok": true
+    },
+    "mobile390.retour_semio": {
+     "ok": true
+    }
+   },
+   "erreurs_js": [],
+   "erreurs_console": [],
+   "captures": [
+    "captures/C72_01_ouverture_bureau.png",
+    "captures/C72_02_bloc_clinique_bureau.png",
+    "captures/C72_03_sous_onglet_semiologie_bureau.png",
+    "captures/C72_04_figure8_semiologie_bureau.png",
+    "captures/C72_05_fenetre_semiologie_bureau.png",
+    "captures/C72_06_figure_c72-s-histo_bureau.png",
+    "captures/C72_06_figure_c72-s-gen_bureau.png",
+    "captures/C72_06_figure_c72-s-radio_bureau.png",
+    "captures/C72_06_figure_c72-s-physio_bureau.png",
+    "captures/C72_11_ouverture_mobile390.png",
+    "captures/C72_12_bloc_clinique_mobile390.png",
+    "captures/C72_13_sous_onglet_semiologie_mobile390.png",
+    "captures/C72_14_figure8_semiologie_mobile390.png",
+    "captures/C72_15_fenetre_semiologie_mobile390.png",
+    "captures/C72_16_figure_c72-s-histo_mobile390.png",
+    "captures/C72_16_figure_c72-s-gen_mobile390.png",
+    "captures/C72_16_figure_c72-s-radio_mobile390.png",
+    "captures/C72_16_figure_c72-s-physio_mobile390.png"
+   ]
+  },
+  "fenetres": {
+   "orphelines": [],
+   "gabarits_inutilises": [],
+   "identifiants_dupliques": [],
+   "ancres_href_orphelines": [],
+   "ouvertures_bureau": {
+    "ouvertures": 95,
+    "echecs": []
+   }
+  },
+  "figures": {
+   "retirees": [
+    "Figure 1 (C72_a.html, c72-3)",
+    "Figure 3 (C72_c.html, c72-s-anat)"
+   ],
+   "redessinees": [
+    "Figure 4 (viewBox 360, texte 16)",
+    "Figure 5 (viewBox 360, texte 18)"
+   ],
+   "ajoutees_non_anatomiques": [
+    "Figure 6 — génétique (viewBox 360, texte 16)",
+    "Figure 7 — physiologie (viewBox 360, texte 16)",
+    "Figure 8 — sémiologie (viewBox 360, texte 17)"
+   ],
+   "texte_rendu_390px": {
+    "figure8_texte_lisible": 15,
+    "texte_figure_c72-s-histo_0": 13,
+    "texte_figure_c72-s-gen_0": 13,
+    "texte_figure_c72-s-radio_0": 16.0,
+    "texte_figure_c72-s-physio_0": 13
+   }
+  }
+ },
+ "non_fait": [
+  "Revues finales MED, LANG et SEMIO, generer_recu.py et reçu Alpha : rôle de l’Agent P."
+ ],
+ "mention": "Contrôles mécaniques et rendu réel ; revue par IA, distincte d’une validation médicale humaine."
+}
