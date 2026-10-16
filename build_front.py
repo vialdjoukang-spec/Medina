@@ -178,6 +178,7 @@ try:
             # Finition premium : dernière couche des fragments (séparations, catégories, Navigo).
             premium_css=open(ROOT+'/engine/finition_premium.css',encoding='utf-8').read().replace('§',PREMIUM_PREFIX)
             s=s.replace('</head>','<style id="medina-finition-premium">'+premium_css+'</style></head>',1)
+            s=s.replace('</head>','<style id="medina-couleurs-premium">'+open(ROOT+'/engine/couleurs_premium.css',encoding='utf-8').read().replace('§',PREMIUM_PREFIX)+'</style></head>',1)
             i=s.rindex('</body>')
             s=s[:i]+'<script id="medina-finition-premium-runtime">'+open(ROOT+'/engine/finition_premium.js',encoding='utf-8').read()+'</script>'+s[i:]
         if selected:

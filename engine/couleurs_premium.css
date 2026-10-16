@@ -1,0 +1,445 @@
+/* MEDINA — système de couleurs premium (16.10.2026). Dernière couche de la cascade.
+   Portail : injectée en dernier par build_index.py (« § » → html:root:root:root:root body).
+   Fragments : injectée par build_front.py après medina-finition-premium (« § » → préfixe premium).
+   Source unique : docs/frontend/couleurs/palette.py (OKLCH → sRGB, contrôles, validate_palette.js).
+   Les blocs <tokens>, <specialites> et <categories> sont générés (palette.py --ecrire).
+   Règle : toutes les règles ci-dessous lisent des custom properties de :root, jamais une valeur
+   littérale ; un thème peut redéfinir les tokens sur :root sans toucher à ce fichier.
+   Teintes de spécialité et de catégorie : repères fins (filets, pastilles, icônes, soulignés),
+   jamais de grande surface ; toujours accompagnées du nom ou du numéro. Thème clair uniquement. */
+
+/* <tokens> — généré par docs/frontend/couleurs/palette.py --ecrire ; ne pas éditer à la main. */
+:root{
+ --n-surface:#ffffff;
+ --n-paper:#f5f8f6;
+ --n-sunken:#eff2f0;
+ --n-line-soft:#dfe2e6;
+ --n-line:#ced2d7;
+ --n-line-strong:#7a8188;
+ --ink-3:#565e69;
+ --ink-2:#353e4a;
+ --ink-1:#141a22;
+ --brand-50:#f1f9f4;
+ --brand-100:#e2f3e8;
+ --brand-200:#c8e5d3;
+ --brand-300:#a2cdb3;
+ --brand-400:#71aa89;
+ --brand-500:#488a67;
+ --brand-600:#2d684a;
+ --brand-700:#1f3428;
+ --brand-800:#122219;
+ --cat-01:#7e77c7;
+ --cat-01-ink:#4c428d;
+ --cat-01-tint:#f7f7ff;
+ --cat-01-sel:#ebebff;
+ --cat-02:#a74c52;
+ --cat-02-ink:#852d36;
+ --cat-02-tint:#fff3f3;
+ --cat-02-sel:#ffe6e6;
+ --cat-03:#6a438c;
+ --cat-03-ink:#613a82;
+ --cat-03-tint:#f8f3fe;
+ --cat-03-sel:#f2e8fc;
+ --cat-04:#c1645f;
+ --cat-04-ink:#852e2e;
+ --cat-04-tint:#fff4f3;
+ --cat-04-sel:#ffe6e4;
+ --cat-05:#035e8a;
+ --cat-05-ink:#00567e;
+ --cat-05-tint:#edf7ff;
+ --cat-05-sel:#ddf0fe;
+ --cat-06:#7c8d2e;
+ --cat-06-ink:#4b5700;
+ --cat-06-tint:#f7faef;
+ --cat-06-sel:#ebf0db;
+ --cat-07:#4887c9;
+ --cat-07-ink:#0b518f;
+ --cat-07-tint:#f1f9ff;
+ --cat-07-sel:#e0efff;
+ --cat-08:#707304;
+ --cat-08-ink:#525400;
+ --cat-08-tint:#f7f8ed;
+ --cat-08-sel:#edefda;
+ --cat-09:#a06bb2;
+ --cat-09-ink:#6a377a;
+ --cat-09-tint:#fcf5ff;
+ --cat-09-sel:#f5e7fa;
+ --cat-10:#8e3648;
+ --cat-10-ink:#842d40;
+ --cat-10-tint:#fff2f3;
+ --cat-10-sel:#ffe6e8;
+ --cat-11:#b8638d;
+ --cat-11-ink:#7e2e59;
+ --cat-11-tint:#fff4f9;
+ --cat-11-sel:#fde6ef;
+ --cat-12:#45509a;
+ --cat-12-ink:#3e4790;
+ --cat-12-tint:#f2f5ff;
+ --cat-12-sel:#e7ecff;
+ --cat-13:#a07e12;
+ --cat-13-ink:#634c00;
+ --cat-13-tint:#fcf8ed;
+ --cat-13-sel:#f4ecd8;
+ --cat-14:#5766b2;
+ --cat-14-ink:#3b4891;
+ --cat-14-tint:#f3f6ff;
+ --cat-14-sel:#e6ecff;
+ --cat-15:#874304;
+ --cat-15-ink:#7b3c00;
+ --cat-15-tint:#fef3ec;
+ --cat-15-sel:#fde8dc;
+ --cat-16:#0c93ab;
+ --cat-16-ink:#005a6a;
+ --cat-16-tint:#edfbff;
+ --cat-16-sel:#d9f2f9;
+ --cat-17:#2e6720;
+ --cat-17-ink:#255f17;
+ --cat-17-tint:#f0f8ef;
+ --cat-17-sel:#e3f2e0;
+ --cat-18:#4a9759;
+ --cat-18-ink:#086126;
+ --cat-18-tint:#f2fbf3;
+ --cat-18-sel:#e1f2e3;
+ --cat-19:#7c5aa6;
+ --cat-19-ink:#5e3c85;
+ --cat-19-tint:#f9f5ff;
+ --cat-19-sel:#f1e9fd;
+ --cat-20:#b86e32;
+ --cat-20-ink:#793e00;
+ --cat-20-tint:#fff6ef;
+ --cat-20-sel:#fce9db;
+ --cat-21:#06779f;
+ --cat-21-ink:#005876;
+ --cat-21-tint:#edf9ff;
+ --cat-21-sel:#dbf1fc;
+ --cat-22:#9a5d04;
+ --cat-22-ink:#734300;
+ --cat-22-tint:#fef5ec;
+ --cat-22-sel:#faeada;
+ --cat-23:#099885;
+ --cat-23-ink:#005e51;
+ --cat-23-tint:#eefcf8;
+ --cat-23-sel:#daf3ed;
+ --cat-24:#6e4383;
+ --cat-24-ink:#653b7a;
+ --cat-24-tint:#faf3fd;
+ --cat-24-sel:#f4e8fa;
+ --cat-25:#727212;
+ --cat-25-ink:#545300;
+ --cat-25-tint:#f8f9ed;
+ --cat-25-sel:#eeefda;
+ --cat-26:#298eb9;
+ --cat-26-ink:#005777;
+ --cat-26-tint:#effbff;
+ --cat-26-sel:#dbf1fd;
+ --cat-27:#883a54;
+ --cat-27-ink:#7e314c;
+ --cat-27-tint:#fff2f5;
+ --cat-27-sel:#fee6eb;
+ --cat-28:#467d3e;
+ --cat-28-ink:#275e20;
+ --cat-28-tint:#f2faf1;
+ --cat-28-sel:#e3f2e1;
+ --cat-29:#757bc4;
+ --cat-29-ink:#44478a;
+ --cat-29-tint:#f6f8ff;
+ --cat-29-sel:#e8ebff;
+ --cat-30:#844501;
+ --cat-30-ink:#783e00;
+ --cat-30-tint:#fef4ed;
+ --cat-30-sel:#fce9db;
+ --cat-31:#038065;
+ --cat-31-ink:#005e4a;
+ --cat-31-tint:#eefbf6;
+ --cat-31-sel:#dbf3ea;
+ --cat-32:#a86aa2;
+ --cat-32-ink:#71366c;
+ --cat-32-tint:#fff5fe;
+ --cat-32-sel:#f8e6f6;
+ --status-ok:#296a3b;
+ --status-ok-bg:#e7f8e9;
+ --status-prep:#565e69;
+ --status-prep-bg:#eff2f0;
+ --status-prov:#8a5111;
+ --status-prov-bg:#fef1db;
+ --gauge-400:#71aa89;
+ --gauge-500:#488a67;
+ --gauge-600:#2d684a;
+ --gauge-700:#234c36;
+ --gold-100:#fff3ce;
+ --gold-300:#f8d376;
+ --gold-500:#e1a52c;
+ --gold-600:#bc7d19;
+ --gold-700:#925a1a;
+ --gold-800:#643d17;
+ --lesson-ink:#0f2c66;
+ --lesson-title:#b3261e;
+ --lesson-term:#9b3900;
+ --lesson-word:#187349;
+ --lesson-abbr:#205d55;
+ --sp-s01:var(--cat-04);--sp-s01-ink:var(--cat-04-ink);--sp-s01-tint:var(--cat-04-tint);--sp-s01-sel:var(--cat-04-sel);
+ --sp-s02:var(--cat-07);--sp-s02-ink:var(--cat-07-ink);--sp-s02-tint:var(--cat-07-tint);--sp-s02-sel:var(--cat-07-sel);
+ --sp-s03:var(--cat-06);--sp-s03-ink:var(--cat-06-ink);--sp-s03-tint:var(--cat-06-tint);--sp-s03-sel:var(--cat-06-sel);
+ --sp-s04:var(--cat-21);--sp-s04-ink:var(--cat-21-ink);--sp-s04-tint:var(--cat-21-tint);--sp-s04-sel:var(--cat-21-sel);
+ --sp-s05:var(--cat-20);--sp-s05-ink:var(--cat-20-ink);--sp-s05-tint:var(--cat-20-tint);--sp-s05-sel:var(--cat-20-sel);
+ --sp-s06:var(--cat-10);--sp-s06-ink:var(--cat-10-ink);--sp-s06-tint:var(--cat-10-tint);--sp-s06-sel:var(--cat-10-sel);
+ --sp-s07:var(--cat-12);--sp-s07-ink:var(--cat-12-ink);--sp-s07-tint:var(--cat-12-tint);--sp-s07-sel:var(--cat-12-sel);
+ --sp-s08:var(--cat-01);--sp-s08-ink:var(--cat-01-ink);--sp-s08-tint:var(--cat-01-tint);--sp-s08-sel:var(--cat-01-sel);
+ --sp-s09:var(--cat-03);--sp-s09-ink:var(--cat-03-ink);--sp-s09-tint:var(--cat-03-tint);--sp-s09-sel:var(--cat-03-sel);
+ --sp-s10:var(--cat-13);--sp-s10-ink:var(--cat-13-ink);--sp-s10-tint:var(--cat-13-tint);--sp-s10-sel:var(--cat-13-sel);
+ --sp-s11:var(--cat-19);--sp-s11-ink:var(--cat-19-ink);--sp-s11-tint:var(--cat-19-tint);--sp-s11-sel:var(--cat-19-sel);
+ --sp-s12:var(--cat-23);--sp-s12-ink:var(--cat-23-ink);--sp-s12-tint:var(--cat-23-tint);--sp-s12-sel:var(--cat-23-sel);
+ --sp-s13:var(--cat-14);--sp-s13-ink:var(--cat-14-ink);--sp-s13-tint:var(--cat-14-tint);--sp-s13-sel:var(--cat-14-sel);
+ --sp-s14:var(--cat-11);--sp-s14-ink:var(--cat-11-ink);--sp-s14-tint:var(--cat-11-tint);--sp-s14-sel:var(--cat-11-sel);
+ --sp-s15:var(--cat-05);--sp-s15-ink:var(--cat-05-ink);--sp-s15-tint:var(--cat-05-tint);--sp-s15-sel:var(--cat-05-sel);
+ --sp-s16:var(--cat-15);--sp-s16-ink:var(--cat-15-ink);--sp-s16-tint:var(--cat-15-tint);--sp-s16-sel:var(--cat-15-sel);
+ --sp-t1:var(--cat-17);--sp-t1-ink:var(--cat-17-ink);--sp-t1-tint:var(--cat-17-tint);--sp-t1-sel:var(--cat-17-sel);
+ --sp-t2:var(--cat-08);--sp-t2-ink:var(--cat-08-ink);--sp-t2-tint:var(--cat-08-tint);--sp-t2-sel:var(--cat-08-sel);
+ --sp-t3:var(--cat-02);--sp-t3-ink:var(--cat-02-ink);--sp-t3-tint:var(--cat-02-tint);--sp-t3-sel:var(--cat-02-sel);
+ --sp-t4:var(--cat-22);--sp-t4-ink:var(--cat-22-ink);--sp-t4-tint:var(--cat-22-tint);--sp-t4-sel:var(--cat-22-sel);
+ --sp-t5:var(--cat-16);--sp-t5-ink:var(--cat-16-ink);--sp-t5-tint:var(--cat-16-tint);--sp-t5-sel:var(--cat-16-sel);
+ --sp-t6:var(--cat-18);--sp-t6-ink:var(--cat-18-ink);--sp-t6-tint:var(--cat-18-tint);--sp-t6-sel:var(--cat-18-sel);
+ --sp-t7:var(--cat-09);--sp-t7-ink:var(--cat-09-ink);--sp-t7-tint:var(--cat-09-tint);--sp-t7-sel:var(--cat-09-sel);
+ --accent:var(--brand-600);
+ --accent-ink:var(--brand-700);
+ --accent-tint:var(--brand-50);
+ --accent-sel:var(--brand-100);
+ --focus-ring:var(--accent-ink);
+ --on-accent:var(--n-surface);
+ --shadow-color:rgb(16 24 36);
+ --shadow-1:inset 0 1px 0 var(--n-surface),0 1px 2px color-mix(in srgb,var(--shadow-color) 5%,transparent),0 8px 22px -16px color-mix(in srgb,var(--shadow-color) 26%,transparent);
+ --shadow-2:inset 0 1px 0 var(--n-surface),0 2px 5px color-mix(in srgb,var(--shadow-color) 7%,transparent),0 14px 30px -18px color-mix(in srgb,var(--shadow-color) 32%,transparent);
+ --shadow-pop:0 2px 6px color-mix(in srgb,var(--shadow-color) 6%,transparent),0 22px 44px -26px color-mix(in srgb,var(--shadow-color) 40%,transparent);
+ --backdrop:rgb(20 24 34 / .55);
+ --gauge-track:var(--brand-50);
+ --gauge-edge:var(--n-line-strong);
+ --gauge-fill:var(--gauge-600);
+ --gauge-fill-top:var(--gauge-500);
+ --star-edge:var(--gold-700);
+ --star-fill:var(--gold-500);
+ --star-light:var(--gold-300);
+ --star-shade:var(--gold-600);
+}
+/* </tokens> */
+
+/* ---------- Fragments : variables historiques ramenées sur les tokens ---------- */
+html[data-medina-fragment]{--atlas-accent:var(--accent-ink)!important;--atlas-bg:var(--n-paper)!important;--atlas-paper:var(--n-surface)!important;
+ --atlas-ink:var(--ink-1)!important;--atlas-muted:var(--ink-3)!important;--atlas-line:var(--n-line)!important;--atlas-tint:var(--accent-tint)!important;
+ --bg:var(--n-paper)!important;--surface:var(--n-surface)!important;--surface2:var(--n-sunken)!important;--ink:var(--ink-1)!important;
+ --muted:var(--ink-3)!important;--line:var(--n-line)!important;--focus-ring:var(--accent-ink)}
+/* <specialites> — généré : la teinte de spécialité devient l’accent du fragment. */
+html[data-medina-fragment="S01"]{--accent:var(--sp-s01);--accent-ink:var(--sp-s01-ink);--accent-tint:var(--sp-s01-tint);--accent-sel:var(--sp-s01-sel)}
+html[data-medina-fragment="S02"]{--accent:var(--sp-s02);--accent-ink:var(--sp-s02-ink);--accent-tint:var(--sp-s02-tint);--accent-sel:var(--sp-s02-sel)}
+html[data-medina-fragment="S03"]{--accent:var(--sp-s03);--accent-ink:var(--sp-s03-ink);--accent-tint:var(--sp-s03-tint);--accent-sel:var(--sp-s03-sel)}
+html[data-medina-fragment="S04"]{--accent:var(--sp-s04);--accent-ink:var(--sp-s04-ink);--accent-tint:var(--sp-s04-tint);--accent-sel:var(--sp-s04-sel)}
+html[data-medina-fragment="S05"]{--accent:var(--sp-s05);--accent-ink:var(--sp-s05-ink);--accent-tint:var(--sp-s05-tint);--accent-sel:var(--sp-s05-sel)}
+html[data-medina-fragment="S06"]{--accent:var(--sp-s06);--accent-ink:var(--sp-s06-ink);--accent-tint:var(--sp-s06-tint);--accent-sel:var(--sp-s06-sel)}
+html[data-medina-fragment="S07"]{--accent:var(--sp-s07);--accent-ink:var(--sp-s07-ink);--accent-tint:var(--sp-s07-tint);--accent-sel:var(--sp-s07-sel)}
+html[data-medina-fragment="S08"]{--accent:var(--sp-s08);--accent-ink:var(--sp-s08-ink);--accent-tint:var(--sp-s08-tint);--accent-sel:var(--sp-s08-sel)}
+html[data-medina-fragment="S09"]{--accent:var(--sp-s09);--accent-ink:var(--sp-s09-ink);--accent-tint:var(--sp-s09-tint);--accent-sel:var(--sp-s09-sel)}
+html[data-medina-fragment="S10"]{--accent:var(--sp-s10);--accent-ink:var(--sp-s10-ink);--accent-tint:var(--sp-s10-tint);--accent-sel:var(--sp-s10-sel)}
+html[data-medina-fragment="S11"]{--accent:var(--sp-s11);--accent-ink:var(--sp-s11-ink);--accent-tint:var(--sp-s11-tint);--accent-sel:var(--sp-s11-sel)}
+html[data-medina-fragment="S12"]{--accent:var(--sp-s12);--accent-ink:var(--sp-s12-ink);--accent-tint:var(--sp-s12-tint);--accent-sel:var(--sp-s12-sel)}
+html[data-medina-fragment="S13"]{--accent:var(--sp-s13);--accent-ink:var(--sp-s13-ink);--accent-tint:var(--sp-s13-tint);--accent-sel:var(--sp-s13-sel)}
+html[data-medina-fragment="S14"]{--accent:var(--sp-s14);--accent-ink:var(--sp-s14-ink);--accent-tint:var(--sp-s14-tint);--accent-sel:var(--sp-s14-sel)}
+html[data-medina-fragment="S15"]{--accent:var(--sp-s15);--accent-ink:var(--sp-s15-ink);--accent-tint:var(--sp-s15-tint);--accent-sel:var(--sp-s15-sel)}
+html[data-medina-fragment="S16"]{--accent:var(--sp-s16);--accent-ink:var(--sp-s16-ink);--accent-tint:var(--sp-s16-tint);--accent-sel:var(--sp-s16-sel)}
+html[data-medina-fragment="T1"]{--accent:var(--sp-t1);--accent-ink:var(--sp-t1-ink);--accent-tint:var(--sp-t1-tint);--accent-sel:var(--sp-t1-sel)}
+html[data-medina-fragment="T2"]{--accent:var(--sp-t2);--accent-ink:var(--sp-t2-ink);--accent-tint:var(--sp-t2-tint);--accent-sel:var(--sp-t2-sel)}
+html[data-medina-fragment="T3"]{--accent:var(--sp-t3);--accent-ink:var(--sp-t3-ink);--accent-tint:var(--sp-t3-tint);--accent-sel:var(--sp-t3-sel)}
+html[data-medina-fragment="T4"]{--accent:var(--sp-t4);--accent-ink:var(--sp-t4-ink);--accent-tint:var(--sp-t4-tint);--accent-sel:var(--sp-t4-sel)}
+html[data-medina-fragment="T5"]{--accent:var(--sp-t5);--accent-ink:var(--sp-t5-ink);--accent-tint:var(--sp-t5-tint);--accent-sel:var(--sp-t5-sel)}
+html[data-medina-fragment="T6"]{--accent:var(--sp-t6);--accent-ink:var(--sp-t6-ink);--accent-tint:var(--sp-t6-tint);--accent-sel:var(--sp-t6-sel)}
+html[data-medina-fragment="T7"]{--accent:var(--sp-t7);--accent-ink:var(--sp-t7-ink);--accent-tint:var(--sp-t7-tint);--accent-sel:var(--sp-t7-sel)}
+/* </specialites> */
+§{--mp-paper:var(--n-paper);--mp-surface:var(--n-surface);--mp-ink:var(--ink-1);--mp-text:var(--ink-2);--mp-muted:var(--ink-3);
+ --mp-rule:var(--n-line);--mp-rule-soft:var(--n-line-soft);--mp-rule-strong:var(--n-line-strong);
+ --mp-accent:var(--accent);--mp-accent-ink:var(--accent-ink);--mp-tint:var(--accent-tint);
+ --mp-shadow:var(--shadow-1);--mp-shadow-hover:var(--shadow-2);
+ --mz-ink:var(--accent-ink);--mz-line:var(--n-line-strong);--mz-tint:var(--accent-tint)}
+/* Couleurs de catégorie : rang n → emplacement n (ordre fixe validé), fond, encre et sélection homogènes en OKLCH. */
+/* <categories> — généré : couleur du rang n (atlas_v2.js) → emplacement n. Rangs 1 à 23 : séquence validée ;
+   rangs 24 à 40 : teinte d’angle d’or d’atlas_v2.js ramenée en OKLCH sur les mêmes paliers (débordement). */
+[style*="--cat: #C2185B" i]{--cat:var(--cat-01)!important;--cat-tint:var(--cat-01-tint)!important;--cat-ink:var(--cat-01-ink);--cat-sel:var(--cat-01-sel);--mp-cat:var(--cat-01)!important;--mp-cat-ink:var(--cat-01-ink)!important;--mp-cat-tint:var(--cat-01-tint)!important}
+[style*="--cat: #1565C0" i]{--cat:var(--cat-02)!important;--cat-tint:var(--cat-02-tint)!important;--cat-ink:var(--cat-02-ink);--cat-sel:var(--cat-02-sel);--mp-cat:var(--cat-02)!important;--mp-cat-ink:var(--cat-02-ink)!important;--mp-cat-tint:var(--cat-02-tint)!important}
+[style*="--cat: #2E7D32" i]{--cat:var(--cat-03)!important;--cat-tint:var(--cat-03-tint)!important;--cat-ink:var(--cat-03-ink);--cat-sel:var(--cat-03-sel);--mp-cat:var(--cat-03)!important;--mp-cat-ink:var(--cat-03-ink)!important;--mp-cat-tint:var(--cat-03-tint)!important}
+[style*="--cat: #BF360C" i]{--cat:var(--cat-04)!important;--cat-tint:var(--cat-04-tint)!important;--cat-ink:var(--cat-04-ink);--cat-sel:var(--cat-04-sel);--mp-cat:var(--cat-04)!important;--mp-cat-ink:var(--cat-04-ink)!important;--mp-cat-tint:var(--cat-04-tint)!important}
+[style*="--cat: #6A1B9A" i]{--cat:var(--cat-05)!important;--cat-tint:var(--cat-05-tint)!important;--cat-ink:var(--cat-05-ink);--cat-sel:var(--cat-05-sel);--mp-cat:var(--cat-05)!important;--mp-cat-ink:var(--cat-05-ink)!important;--mp-cat-tint:var(--cat-05-tint)!important}
+[style*="--cat: #00796B" i]{--cat:var(--cat-06)!important;--cat-tint:var(--cat-06-tint)!important;--cat-ink:var(--cat-06-ink);--cat-sel:var(--cat-06-sel);--mp-cat:var(--cat-06)!important;--mp-cat-ink:var(--cat-06-ink)!important;--mp-cat-tint:var(--cat-06-tint)!important}
+[style*="--cat: #C62828" i]{--cat:var(--cat-07)!important;--cat-tint:var(--cat-07-tint)!important;--cat-ink:var(--cat-07-ink);--cat-sel:var(--cat-07-sel);--mp-cat:var(--cat-07)!important;--mp-cat-ink:var(--cat-07-ink)!important;--mp-cat-tint:var(--cat-07-tint)!important}
+[style*="--cat: #283593" i]{--cat:var(--cat-08)!important;--cat-tint:var(--cat-08-tint)!important;--cat-ink:var(--cat-08-ink);--cat-sel:var(--cat-08-sel);--mp-cat:var(--cat-08)!important;--mp-cat-ink:var(--cat-08-ink)!important;--mp-cat-tint:var(--cat-08-tint)!important}
+[style*="--cat: #8E5A00" i]{--cat:var(--cat-09)!important;--cat-tint:var(--cat-09-tint)!important;--cat-ink:var(--cat-09-ink);--cat-sel:var(--cat-09-sel);--mp-cat:var(--cat-09)!important;--mp-cat-ink:var(--cat-09-ink)!important;--mp-cat-tint:var(--cat-09-tint)!important}
+[style*="--cat: #AD1457" i]{--cat:var(--cat-10)!important;--cat-tint:var(--cat-10-tint)!important;--cat-ink:var(--cat-10-ink);--cat-sel:var(--cat-10-sel);--mp-cat:var(--cat-10)!important;--mp-cat-ink:var(--cat-10-ink)!important;--mp-cat-tint:var(--cat-10-tint)!important}
+[style*="--cat: #0277BD" i]{--cat:var(--cat-11)!important;--cat-tint:var(--cat-11-tint)!important;--cat-ink:var(--cat-11-ink);--cat-sel:var(--cat-11-sel);--mp-cat:var(--cat-11)!important;--mp-cat-ink:var(--cat-11-ink)!important;--mp-cat-tint:var(--cat-11-tint)!important}
+[style*="--cat: #1B5E20" i]{--cat:var(--cat-12)!important;--cat-tint:var(--cat-12-tint)!important;--cat-ink:var(--cat-12-ink);--cat-sel:var(--cat-12-sel);--mp-cat:var(--cat-12)!important;--mp-cat-ink:var(--cat-12-ink)!important;--mp-cat-tint:var(--cat-12-tint)!important}
+[style*="--cat: #7B1FA2" i]{--cat:var(--cat-13)!important;--cat-tint:var(--cat-13-tint)!important;--cat-ink:var(--cat-13-ink);--cat-sel:var(--cat-13-sel);--mp-cat:var(--cat-13)!important;--mp-cat-ink:var(--cat-13-ink)!important;--mp-cat-tint:var(--cat-13-tint)!important}
+[style*="--cat: #9E2A2B" i]{--cat:var(--cat-14)!important;--cat-tint:var(--cat-14-tint)!important;--cat-ink:var(--cat-14-ink);--cat-sel:var(--cat-14-sel);--mp-cat:var(--cat-14)!important;--mp-cat-ink:var(--cat-14-ink)!important;--mp-cat-tint:var(--cat-14-tint)!important}
+[style*="--cat: #00695C" i]{--cat:var(--cat-15)!important;--cat-tint:var(--cat-15-tint)!important;--cat-ink:var(--cat-15-ink);--cat-sel:var(--cat-15-sel);--mp-cat:var(--cat-15)!important;--mp-cat-ink:var(--cat-15-ink)!important;--mp-cat-tint:var(--cat-15-tint)!important}
+[style*="--cat: #5D4037" i]{--cat:var(--cat-16)!important;--cat-tint:var(--cat-16-tint)!important;--cat-ink:var(--cat-16-ink);--cat-sel:var(--cat-16-sel);--mp-cat:var(--cat-16)!important;--mp-cat-ink:var(--cat-16-ink)!important;--mp-cat-tint:var(--cat-16-tint)!important}
+[style*="--cat: #4527A0" i]{--cat:var(--cat-17)!important;--cat-tint:var(--cat-17-tint)!important;--cat-ink:var(--cat-17-ink);--cat-sel:var(--cat-17-sel);--mp-cat:var(--cat-17)!important;--mp-cat-ink:var(--cat-17-ink)!important;--mp-cat-tint:var(--cat-17-tint)!important}
+[style*="--cat: #00777F" i]{--cat:var(--cat-18)!important;--cat-tint:var(--cat-18-tint)!important;--cat-ink:var(--cat-18-ink);--cat-sel:var(--cat-18-sel);--mp-cat:var(--cat-18)!important;--mp-cat-ink:var(--cat-18-ink)!important;--mp-cat-tint:var(--cat-18-tint)!important}
+[style*="--cat: #B23C0E" i]{--cat:var(--cat-19)!important;--cat-tint:var(--cat-19-tint)!important;--cat-ink:var(--cat-19-ink);--cat-sel:var(--cat-19-sel);--mp-cat:var(--cat-19)!important;--mp-cat-ink:var(--cat-19-ink)!important;--mp-cat-tint:var(--cat-19-tint)!important}
+[style*="--cat: #37602B" i]{--cat:var(--cat-20)!important;--cat-tint:var(--cat-20-tint)!important;--cat-ink:var(--cat-20-ink);--cat-sel:var(--cat-20-sel);--mp-cat:var(--cat-20)!important;--mp-cat-ink:var(--cat-20-ink)!important;--mp-cat-tint:var(--cat-20-tint)!important}
+[style*="--cat: hsl(230 72% 27%)" i]{--cat:var(--cat-21)!important;--cat-tint:var(--cat-21-tint)!important;--cat-ink:var(--cat-21-ink);--cat-sel:var(--cat-21-sel);--mp-cat:var(--cat-21)!important;--mp-cat-ink:var(--cat-21-ink)!important;--mp-cat-tint:var(--cat-21-tint)!important}
+[style*="--cat: hsl(8 72% 27%)" i]{--cat:var(--cat-22)!important;--cat-tint:var(--cat-22-tint)!important;--cat-ink:var(--cat-22-ink);--cat-sel:var(--cat-22-sel);--mp-cat:var(--cat-22)!important;--mp-cat-ink:var(--cat-22-ink)!important;--mp-cat-tint:var(--cat-22-tint)!important}
+[style*="--cat: hsl(145 72% 27%)" i]{--cat:var(--cat-23)!important;--cat-tint:var(--cat-23-tint)!important;--cat-ink:var(--cat-23-ink);--cat-sel:var(--cat-23-sel);--mp-cat:var(--cat-23)!important;--mp-cat-ink:var(--cat-23-ink)!important;--mp-cat-tint:var(--cat-23-tint)!important}
+[style*="--cat: hsl(283 72% 27%)" i]{--cat:var(--cat-24)!important;--cat-tint:var(--cat-24-tint)!important;--cat-ink:var(--cat-24-ink);--cat-sel:var(--cat-24-sel);--mp-cat:var(--cat-24)!important;--mp-cat-ink:var(--cat-24-ink)!important;--mp-cat-tint:var(--cat-24-tint)!important}
+[style*="--cat: hsl(60 72% 27%)" i]{--cat:var(--cat-25)!important;--cat-tint:var(--cat-25-tint)!important;--cat-ink:var(--cat-25-ink);--cat-sel:var(--cat-25-sel);--mp-cat:var(--cat-25)!important;--mp-cat-ink:var(--cat-25-ink)!important;--mp-cat-tint:var(--cat-25-tint)!important}
+[style*="--cat: hsl(198 72% 27%)" i]{--cat:var(--cat-26)!important;--cat-tint:var(--cat-26-tint)!important;--cat-ink:var(--cat-26-ink);--cat-sel:var(--cat-26-sel);--mp-cat:var(--cat-26)!important;--mp-cat-ink:var(--cat-26-ink)!important;--mp-cat-tint:var(--cat-26-tint)!important}
+[style*="--cat: hsl(335 72% 27%)" i]{--cat:var(--cat-27)!important;--cat-tint:var(--cat-27-tint)!important;--cat-ink:var(--cat-27-ink);--cat-sel:var(--cat-27-sel);--mp-cat:var(--cat-27)!important;--mp-cat-ink:var(--cat-27-ink)!important;--mp-cat-tint:var(--cat-27-tint)!important}
+[style*="--cat: hsl(113 72% 27%)" i]{--cat:var(--cat-28)!important;--cat-tint:var(--cat-28-tint)!important;--cat-ink:var(--cat-28-ink);--cat-sel:var(--cat-28-sel);--mp-cat:var(--cat-28)!important;--mp-cat-ink:var(--cat-28-ink)!important;--mp-cat-tint:var(--cat-28-tint)!important}
+[style*="--cat: hsl(250 72% 27%)" i]{--cat:var(--cat-29)!important;--cat-tint:var(--cat-29-tint)!important;--cat-ink:var(--cat-29-ink);--cat-sel:var(--cat-29-sel);--mp-cat:var(--cat-29)!important;--mp-cat-ink:var(--cat-29-ink)!important;--mp-cat-tint:var(--cat-29-tint)!important}
+[style*="--cat: hsl(28 72% 27%)" i]{--cat:var(--cat-30)!important;--cat-tint:var(--cat-30-tint)!important;--cat-ink:var(--cat-30-ink);--cat-sel:var(--cat-30-sel);--mp-cat:var(--cat-30)!important;--mp-cat-ink:var(--cat-30-ink)!important;--mp-cat-tint:var(--cat-30-tint)!important}
+[style*="--cat: hsl(165 72% 27%)" i]{--cat:var(--cat-31)!important;--cat-tint:var(--cat-31-tint)!important;--cat-ink:var(--cat-31-ink);--cat-sel:var(--cat-31-sel);--mp-cat:var(--cat-31)!important;--mp-cat-ink:var(--cat-31-ink)!important;--mp-cat-tint:var(--cat-31-tint)!important}
+[style*="--cat: hsl(303 72% 27%)" i]{--cat:var(--cat-32)!important;--cat-tint:var(--cat-32-tint)!important;--cat-ink:var(--cat-32-ink);--cat-sel:var(--cat-32-sel);--mp-cat:var(--cat-32)!important;--mp-cat-ink:var(--cat-32-ink)!important;--mp-cat-tint:var(--cat-32-tint)!important}
+/* </categories> */
+
+/* ---------- Coque des fragments : fond, barres, recherche, liens ---------- */
+§{background:var(--n-paper)!important;color:var(--ink-2)}
+§ .main{background:var(--n-paper)!important}
+§ .topbar{background:color-mix(in srgb,var(--n-surface) 96%,transparent)!important;border-bottom-color:var(--n-line)!important}
+§ .sidebar{background:var(--n-surface)!important;border-right-color:var(--n-line)!important}
+§ .sidebar :is(.sidebar-note,.version,.nav-title){color:var(--ink-3)!important;border-color:var(--n-line-soft)!important}
+§ .sidebar .sidebar-note{background:var(--n-paper)!important;border:1px solid var(--n-line-soft)!important}
+§ :is(.iconbtn,.searchwrap,.mcg-home-search input,#mcg-home-query,.mc-navigo-search){border-color:var(--n-line-strong)!important;background:var(--n-surface)!important;color:var(--ink-1)!important}
+§ :is(.searchwrap,.mcg-home-search input,.mc-navigo-search):focus-within{border-color:var(--accent-ink)!important;box-shadow:0 0 0 3px var(--accent-sel)!important}
+§ .iconbtn{color:var(--ink-2)!important}
+§ :is(.mcg-text-link,.mcg-back,.mcg-sidebar-all,.mcg-variants a,.mcg-breadcrumbs a){color:var(--accent-ink)!important}
+§ .mcg-breadcrumbs{color:var(--ink-3)!important}
+§ .mcg-title-dot{color:var(--accent)!important}
+§ .brandmark{color:var(--accent-ink)!important}
+§ .nav-main a:is(.active,[aria-current]){background:var(--accent-tint)!important;color:var(--accent-ink)!important;box-shadow:inset 3px 0 0 var(--accent)!important}
+§ :is(a,button,summary,input,select,textarea,[tabindex]):focus-visible{outline:2px solid var(--focus-ring)!important;outline-offset:2px!important}
+
+/* ---------- Accueil du fragment ---------- */
+§ .mcg-cover{background:var(--n-surface)!important;border-color:var(--n-line)!important;border-top:3px solid var(--accent)!important;box-shadow:var(--shadow-1)!important}
+§ .mcg-cover .mcg-eyebrow{color:var(--accent-ink)!important}
+§ .mcg-cover-art{color:var(--accent)!important}
+§ .mcg-counts>span{background:var(--n-paper)!important;border-color:var(--n-line)!important;color:var(--ink-3)!important}
+§ .mcg-counts>span b{color:var(--ink-1)!important}
+§ .mcg-available-dot{background:var(--accent)!important}
+§ .mcg-primary-action,§ .mcg-home-search button{background:var(--accent-ink)!important;color:var(--on-accent)!important;border-color:var(--accent-ink)!important}
+§ :is(.mcg-primary-action,.mcg-home-search button) *{color:var(--on-accent)!important}
+§ .mcg-explore-action{background:var(--n-surface)!important;border-color:var(--n-line-strong)!important;color:var(--ink-1)!important}
+§ .mcg-explore-action:is(:hover,:focus-visible){background:var(--accent-tint)!important}
+§ .mcg-filters{background:var(--n-sunken)!important;border-color:var(--n-line)!important}
+§ .mcg-filters a{background:var(--n-surface)!important;border-color:var(--n-line-strong)!important;color:var(--ink-2)!important}
+§ .mcg-filters :is(a[aria-current],.active){background:var(--accent-sel)!important;color:var(--accent-ink)!important;border-color:var(--accent-ink)!important}
+§ :is(.mcg-order-note,.mcg-order-weight,.mcg-section-count){color:var(--ink-3)!important}
+
+/* ---------- Catégories : filet et numéro à la teinte du rang, fond à peine teinté ---------- */
+§ .mcg-category-card{background:var(--cat-tint,var(--n-surface))!important;border-color:var(--n-line)!important;border-left:3px solid var(--mp-cat,var(--accent))!important;box-shadow:var(--shadow-1)!important}
+§ .mcg-category-card:is(:hover,:focus-visible){border-color:var(--n-line-strong)!important;border-left-color:var(--mp-cat,var(--accent))!important;box-shadow:var(--shadow-2)!important}
+§ .mcg-category-card h2{color:var(--ink-1)!important}
+§ .mcg-category-number{background:var(--cat-sel,var(--accent-sel))!important;color:var(--mp-cat-ink,var(--accent-ink))!important;border-color:var(--mp-cat,var(--accent))!important}
+§ .mcg-category-foot{color:var(--ink-3)!important;border-top-color:var(--n-line-soft)!important}
+§ .mcg-arrow{background:var(--n-surface)!important;border-color:var(--n-line-strong)!important;color:var(--ink-2)!important}
+§ .mcg-sidebar-block>summary{border-left-color:var(--mp-cat,var(--accent))!important;color:var(--ink-2)!important}
+§ .mcg-sidebar-block>summary>span{color:var(--mp-cat-ink,var(--accent-ink))!important}
+§ .mcg-sidebar-block[open]>summary{background:var(--mp-cat-tint,var(--accent-tint))!important;color:var(--ink-1)!important}
+§ .mcg-sidebar-block>summary:is(:hover,:focus-visible){background:var(--n-paper)!important}
+§ .mcg-sidebar-lesson{color:var(--ink-2)!important;background:transparent!important}
+§ .mcg-sidebar-lesson.active{background:var(--accent-tint)!important;box-shadow:inset 2px 0 0 var(--accent)!important;color:var(--ink-1)!important}
+§ .mcg-block-heading{background:var(--n-surface)!important;border-color:var(--n-line)!important;border-left:3px solid var(--mp-cat,var(--accent))!important}
+§ .mcg-block-heading .mcg-eyebrow{color:var(--mp-cat-ink,var(--accent-ink))!important}
+§ .mcg-planned-panel{border-left-color:var(--mp-cat,var(--accent))!important;background:var(--n-surface)!important;color:var(--ink-2)!important}
+
+/* ---------- Leçons d’une catégorie et statuts (libellé + forme, jamais la couleur seule) ---------- */
+§ .mcg-lesson{background:var(--n-surface)!important;border-color:var(--n-line)!important}
+§ .mcg-lesson:is(:hover,:focus-within){border-color:var(--n-line-strong)!important}
+§ .mcg-lesson .mcg-lesson-icon{background:var(--accent-tint)!important;color:var(--accent-ink)!important;border-color:var(--n-line-soft)!important}
+§ :is(.mcg-category-card,.mcg-lesson) .mcg-code{background:var(--n-paper)!important;color:var(--ink-3)!important;border-color:var(--n-line-soft)!important}
+§ .mcg-lesson .mcg-lesson-state{color:var(--status-prep)!important}
+§ .mcg-lesson .mcg-lesson-state.is-available,§ .mcg-block .mcg-lesson:has(.is-available) .mcg-lesson-state{color:var(--status-ok)!important}
+§ .mcg-lesson-state::before{content:"";display:inline-block;width:.55em;height:.55em;margin-right:.45em;border-radius:50%;vertical-align:.05em;box-shadow:inset 0 0 0 1.5px currentColor}
+§ .mcg-lesson-state.is-available::before{background:currentColor}
+§ .mc[data-provisional-notice] .mc-status{background:var(--status-prov-bg)!important;color:var(--status-prov)!important;border:1px solid var(--status-prov)!important}
+§ .mc[data-provisional-notice] .mc-status::before{content:"";display:inline-block;width:.6em;height:.6em;margin-right:.45em;border-radius:50%;vertical-align:.02em;
+ background:linear-gradient(90deg,currentColor 50%,transparent 50%);box-shadow:inset 0 0 0 1.5px currentColor}
+
+/* ---------- Jauges : rampe séquentielle à une teinte (marque), piste lisible ---------- */
+§ .gauge,§ :is(.nosology-progress,.mcg-category-gauge,.mcg-fragment-gauge){border-color:var(--n-line)!important;background:var(--n-surface)!important;color:var(--ink-2)!important}
+§ .mcg-category-gauge{background:var(--n-paper)!important;border-color:transparent!important}
+§ .gauge :is(.gauge-label,.gauge-value),§ :is(.nosology-progress,.mcg-category-gauge) :is(span,b),§ .mcg-filter-label{color:var(--ink-2)!important}
+§ .gauge-track{background:var(--gauge-track)!important;border:1px solid var(--gauge-edge)!important;box-shadow:none!important}
+§ .gauge-fluid{background:linear-gradient(180deg,var(--gauge-fill-top),var(--gauge-fill))!important}
+§ :is(.nosology-progress,.mcg-category-gauge) progress{accent-color:var(--gauge-fill);background:var(--gauge-track)!important;border:1px solid var(--gauge-edge)!important;box-shadow:none!important}
+§ :is(.nosology-progress,.mcg-category-gauge) progress::-webkit-progress-bar{background:var(--gauge-track)}
+§ :is(.nosology-progress,.mcg-category-gauge) progress::-webkit-progress-value{background:linear-gradient(180deg,var(--gauge-fill-top),var(--gauge-fill))}
+§ :is(.nosology-progress,.mcg-category-gauge) progress::-moz-progress-bar{background:linear-gradient(180deg,var(--gauge-fill-top),var(--gauge-fill))}
+§ .nosology-progress[aria-current="page"]{background:var(--accent-tint)!important;border-color:var(--accent-ink)!important;box-shadow:inset 3px 0 0 var(--accent-ink)!important}
+
+/* ---------- Étoile d’or (Examen fédéral) ---------- */
+§ .nosology-gold svg>path:first-of-type{stroke:var(--star-edge)}
+§ .nosology-course-star{background:var(--gold-100)!important;background-image:none!important;border:1px solid var(--gold-300)!important;color:var(--gold-800)!important}
+§ .nosology-course-star *{color:inherit!important}
+
+/* ---------- Leçon : outils, onglets, îlots, fenêtres, Navigo, mode Livre ---------- */
+§ .mc .mc-chap-head{border-top-color:var(--accent)!important}
+§ .mc :is(.mc-toolbar,.mc-chap-head,.mc-tabs,.mc-toc,.mc-sci-bar,.mc-ilot){border-color:var(--n-line)!important;background-color:var(--n-surface)!important}
+§ .mc .mc-chap-head{border-top:3px solid var(--accent)!important}
+§ .mc-toolbar :is(.btn,select,button,.mc-size-toggle,.mc-book,.mc-font){background:var(--n-surface)!important;border:1px solid var(--n-line-strong)!important;color:var(--ink-2)!important}
+§ .mc-toolbar :is(button,.btn):is([aria-pressed="true"],[aria-expanded="true"]){background:var(--accent-sel)!important;border-color:var(--accent-ink)!important;color:var(--accent-ink)!important}
+§ .mc .mc-tabs button:is([aria-selected="true"],.is-active){background:var(--accent-tint)!important;color:var(--accent-ink)!important;border-color:var(--accent)!important;box-shadow:inset 0 -2px 0 var(--accent)!important}
+§ .mc .mc-tabs button:is([aria-selected="true"],.is-active) *{color:var(--accent-ink)!important}
+§ .mc .mc-tabs button:not([aria-selected="true"]):not(.is-active){color:var(--ink-2)!important}
+§ .mc .mc-sci-bar button{background:var(--n-surface)!important;border:1px solid var(--n-line-strong)!important;color:var(--ink-2)!important}
+§ .mc .mc-sci-bar button[aria-selected="true"]{background:var(--accent-sel)!important;border-color:var(--accent-ink)!important;color:var(--accent-ink)!important}
+§ .mc .mc-sci-bar button *{color:inherit!important}
+§ .mc :is(.mc-pager button,.mc-prev,.mc-next){background:var(--n-surface)!important;border:1px solid var(--n-line-strong)!important;color:var(--ink-1)!important}
+§ .mc .mc-quiz .mc-opt{border-color:var(--n-line-strong)!important}
+§ .mc .mc-pareto-btn{background:var(--gold-100)!important;border:1px solid var(--gold-600)!important;color:var(--gold-800)!important}
+§ .mc .mc-pareto-btn *{color:inherit!important}
+§ .mc .mc-ilot :is(table,.mc-t) :is(td,th){border-color:var(--n-line)!important}
+§ dialog.mc-dlg,§ #mc-dialog{background:var(--n-surface)!important;box-shadow:var(--shadow-pop)!important}
+§ dialog.mc-dlg::backdrop{background:var(--backdrop)}
+§ .mc-dlg .mc-dlg-h{background:var(--n-surface)!important;border-bottom-color:var(--n-line)!important}
+§ .mc-dlg .mc-dlg-h button,§ .mc-dlg .mc-x{background:var(--n-surface)!important;border:1px solid var(--n-line-strong)!important;color:var(--ink-1)!important}
+§ .mc-navigo .mc-navigo-trigger{background:var(--n-surface)!important;border-color:var(--n-line-strong)!important;color:var(--ink-1)!important}
+§ .mc-navigo .mc-navigo-trigger:is(:hover,:focus-visible){background:var(--accent-tint)!important;border-color:var(--accent-ink)!important}
+§ .mc-navigo .mc-navigo-panel{background:var(--n-surface)!important;border-color:var(--n-line)!important;box-shadow:var(--shadow-pop)!important}
+§ .mc-navigo :is(.mc-navigo-head,.mc-navigo-tabs){background:var(--n-surface)!important;border-bottom-color:var(--n-line)!important}
+§ .mc-navigo .mc-navigo-foot{background:var(--n-paper)!important;border-top-color:var(--n-line)!important}
+§ .mc-navigo :is(.mc-navigo-tabs button,.mc-navigo-close){background:var(--n-surface)!important;border:1px solid var(--n-line-strong)!important;color:var(--ink-2)!important}
+§ .mc-navigo .mc-navigo-tabs button.is-active{background:var(--accent-sel)!important;border-color:var(--accent-ink)!important;color:var(--accent-ink)!important}
+§ .mc-navigo .mc-navigo-item[aria-current]{background:var(--accent-tint)!important;color:var(--accent-ink)!important;box-shadow:inset 3px 0 0 var(--accent-ink)!important}
+§ .mc-navigo .mp-progress{background:var(--gauge-track)}
+§ .mc-navigo .mp-progress>i{background:var(--accent-ink)}
+§ .mc.book .mc-body>:is(.mc-ilot,.mc-sci){background:var(--n-surface)!important;border-color:var(--n-line)!important}
+§ .mc.book .mc-pager{background:color-mix(in srgb,var(--n-surface) 97%,transparent)!important;border-color:var(--n-line-strong)!important}
+§ .toast,§ .mdn-toast{background:var(--ink-1)!important;color:var(--n-surface)!important}
+
+/* ---------- Portail (Accueil) ---------- */
+:root{--p-paper:var(--n-paper);--p-surface:var(--n-surface);--p-ink:var(--ink-1);--p-text:var(--ink-2);--p-muted:var(--ink-3);
+ --p-rule:var(--n-line);--p-rule-strong:var(--n-line-strong);--p-accent:var(--accent-ink);--p-tint:var(--accent-tint);
+ --p-shadow:var(--shadow-1);--p-shadow-hover:var(--shadow-2);--paper:var(--n-paper);--ink:var(--ink-1);--muted:var(--ink-3);--line:var(--n-line)}
+§[data-testid="medina-portal"]{background:var(--n-paper)!important;color:var(--ink-2)!important}
+§[data-testid="medina-portal"] :is(.hero h1,.library-head h2,.brand-name){color:var(--ink-1)!important}
+§[data-testid="medina-portal"] :is(.hero h1 em,.eyebrow,.section-kicker){color:var(--accent-ink)!important}
+§[data-testid="medina-portal"] :is(.brand-caption,.section-copy,.hero-copy,.search-status,.legend-note,.footer-note,.footer,.order-note){color:var(--ink-3)!important}
+§[data-testid="medina-portal"] .nav-marker{background:var(--accent)!important}
+§[data-testid="medina-portal"] .eyebrow::before{background:var(--accent)!important}
+§[data-testid="medina-portal"] .brand-symbol{color:var(--accent-ink)!important;border-color:var(--n-line)!important;background:var(--n-surface)!important}
+§[data-testid="medina-portal"] .search input{border-color:var(--n-line-strong)!important;background:var(--n-surface)!important;color:var(--ink-1)!important}
+§[data-testid="medina-portal"] .search input:focus{border-color:var(--accent-ink)!important;box-shadow:0 0 0 3px var(--accent-sel)!important}
+§[data-testid="medina-portal"] :is(.overview,.motifs li,.hero-meta span){background:var(--n-surface)!important;border-color:var(--n-line)!important}
+§[data-testid="medina-portal"] .overview-item{background:var(--n-paper)!important;border-color:var(--n-line-soft)!important}
+§[data-testid="medina-portal"] .motifs li svg{color:var(--accent-ink)!important}
+§[data-testid="medina-portal"] .specialty-card{background:var(--n-surface)!important;border-color:var(--n-line)!important;border-left:3px solid var(--card-accent,var(--accent))!important;box-shadow:var(--shadow-1)!important}
+§[data-testid="medina-portal"] .specialty-card:is(:hover,:focus-within){border-color:var(--n-line-strong)!important;border-left-color:var(--card-accent,var(--accent))!important;box-shadow:var(--shadow-2)!important}
+§[data-testid="medina-portal"] .specialty-card :is(h3,.card-description){color:var(--ink-1)!important}
+§[data-testid="medina-portal"] .specialty-card :is(.card-count,.card-rank,.card-count *){color:var(--ink-3)!important}
+§[data-testid="medina-portal"] .specialty-card .count-dot{background:var(--card-accent,var(--accent))!important}
+§[data-testid="medina-portal"] .specialty-card[data-course-count="0"] .count-dot{background:transparent!important;box-shadow:inset 0 0 0 1.5px var(--ink-3)}
+§[data-testid="medina-portal"] .specialty-card .card-symbol{background:var(--card-tint,var(--accent-tint))!important;border:1px solid var(--card-sel,var(--accent-sel))!important;box-shadow:none!important}
+§[data-testid="medina-portal"] .specialty-card .card-symbol,§[data-testid="medina-portal"] .specialty-card .card-symbol *{color:var(--card-ink,var(--accent-ink))!important}
+§[data-testid="medina-portal"] .specialty-card .card-arrow{background:var(--n-surface)!important;border-color:var(--n-line-strong)!important;color:var(--ink-2)!important}
+§[data-testid="medina-portal"] .specialty-card .card-arrow:is(:hover,:focus-visible){color:var(--card-ink,var(--accent-ink))!important;border-color:var(--card-ink,var(--accent-ink))!important}
+§[data-testid="medina-portal"] .gauge{background:transparent!important}
+§[data-testid="medina-portal"] .gauge:is(a):is(:hover,:focus-visible) .gauge-label{text-decoration:underline 1px;text-underline-offset:3px}
+§[data-testid="medina-portal"] :is(.specialty-card,.overview-item) .gauge,§[data-testid="medina-portal"] .specialty-card .gauges{border-top-color:var(--n-line-soft)!important}
+§[data-testid="medina-portal"] .empty{background:var(--n-surface)!important;border-color:var(--n-line-strong)!important}
+§[data-testid="medina-portal"] :is(.masthead,.footer){border-color:var(--n-line)!important}
+§[data-testid="medina-portal"] :is(.masthead nav a,.footer a){color:var(--ink-1)!important}
+§[data-testid="medina-portal"] :is(a,button,input):focus-visible{outline:2px solid var(--focus-ring)!important;outline-offset:3px!important}
+§[data-testid="medina-portal"] .skip{background:var(--n-surface)!important;border-color:var(--accent-ink)!important;color:var(--ink-1)!important}

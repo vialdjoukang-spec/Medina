@@ -116,6 +116,11 @@ def portal_v2():
                           for name in ('portal_v2.css', 'portal_v3.css', 'progress_gauges.css', 'portal_premium.css'))
 
 
+def couleurs_premium():
+    """Dernière couche : tokens de couleur partagés avec les fragments (engine/couleurs_premium.css)."""
+    return (ROOT / 'engine/couleurs_premium.css').read_text(encoding='utf-8').replace('§', 'html:root:root:root:root body')
+
+
 def progress(catalogue):
     """Catégories couvertes et leçons intégrées, d'après l'organisation du fragment construit."""
     lessons = [lesson for block in catalogue.get('blocks', []) for lesson in block.get('lessons', [])]
@@ -197,7 +202,7 @@ def main():
                                         ('Avancement global', 'global')]) + '</span>'
         weight = (catalogue.get('nosology', {}).get('gauges', {}).get('federal_exam', {}) or {}).get('total', 0)
         cards.append((-weight, names[ident]['order'], f'''<li class="specialty" data-specialty-item data-search="{html.escape(search_text, quote=True)}">
- <article class="specialty-card" data-testid="specialty-card" data-fragment-id="{ident}" data-course-count="{count}" aria-labelledby="specialty-title-{ident}" style="--card-accent:{accent};--card-tint:color-mix(in srgb,{accent} 7%,#fffefa)" title="{html.escape(names[ident]['label'], quote=True)}">
+ <article class="specialty-card" data-testid="specialty-card" data-fragment-id="{ident}" data-course-count="{count}" aria-labelledby="specialty-title-{ident}" style="--card-accent:var(--sp-{ident.lower()});--card-tint:var(--sp-{ident.lower()}-tint);--card-ink:var(--sp-{ident.lower()}-ink);--card-sel:var(--sp-{ident.lower()}-sel)" title="{html.escape(names[ident]['label'], quote=True)}">
   <div class="card-top"><span class="card-symbol" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round">{symbol}</svg></span><a class="card-arrow" href="fragments/{filename}#/home" aria-label="Accueil de {html.escape(specialty, quote=True)}" title="Accueil du fragment"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M4 12 12 4M4 4h8v8"/></svg></a></div>
   <h3 id="specialty-title-{ident}">{html.escape(specialty)}</h3><p class="card-description">{html.escape(description)}</p>
   <span class="card-count"><i class="count-dot" aria-hidden="true"></i><span>{count} {label}</span></span>
@@ -218,7 +223,7 @@ def main():
     page = f'''<!doctype html>
 <html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light">
 <meta name="description" content="Explorez MEDINA : 23 espaces de spécialité pour lire, comprendre et relier les connaissances médicales.">
-<title>MEDINA — Une spécialité, un espace de lecture</title><style>{STYLE}</style><style id="medina-portal-v2">{portal_v2()}</style></head><body data-testid="medina-portal">
+<title>MEDINA — Une spécialité, un espace de lecture</title><style>{STYLE}</style><style id="medina-portal-v2">{portal_v2()}</style><style id="medina-couleurs-premium">{couleurs_premium()}</style></head><body data-testid="medina-portal">
 <a class="skip" href="#specialites">Aller aux spécialités</a><div class="wrap">
 <header class="masthead"><a class="brand" href="index.html" aria-label="MEDINA, accueil"><span class="brand-symbol" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 20V5l9 11 9-11v15M3 5l9 7 9-7"/></svg></span><span><span class="brand-name">MEDINA</span><span class="brand-caption">Atlas médical interactif</span></span></a><nav aria-label="Navigation principale"><a href="#specialites"><span class="nav-marker" aria-hidden="true"></span>Les spécialités</a><a href="organisation.html">L’atlas</a></nav></header>
 <main><section class="hero" aria-labelledby="welcome-title" data-testid="portal-hero"><div><p class="eyebrow">Un espace pour apprendre</p><h1 id="welcome-title">Explorer la médecine,<br><em>une spécialité à la fois.</em></h1><p class="hero-copy">Prenez le temps de comprendre et de relier les savoirs. Choisissez une spécialité pour ouvrir votre espace de lecture.</p><div class="hero-meta"><span><strong>23</strong> spécialités</span><span data-testid="portal-course-total"><strong>{total_courses}</strong> cours intégrés</span></div></div>
