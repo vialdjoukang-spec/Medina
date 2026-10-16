@@ -2,8 +2,9 @@
  "mission": "ALPHA1-CLAUDE-C72-MED",
  "code": "C72",
  "type_audit": "medical",
- "base_sha": "32416a2080e67537641040a81252dec0b3e6d137",
- "base_sha_manifeste_sources": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "base_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "worktree_base": "32416a2080e67537641040a81252dec0b3e6d137",
+ "worktree_base_note": "START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste.",
  "generation": 1,
  "branche": "claude/alpha1/c72-med-g1",
  "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-C72-MED-g1",
@@ -11,7 +12,7 @@
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
  "date_debut": "2026-10-16T05:49:58Z",
- "date_fin": "2026-10-16T06:03:44Z",
+ "date_fin": "2026-10-16T06:12:08Z",
  "lecture": {
   "fichiers": [
    "chapters/C72/C72_a.html",
@@ -79,7 +80,7 @@
    "gravite": "MAJEUR",
    "fichier": "chapters/C72/C72_c.html",
    "ancre": "<div class=\"sci-bar ui\" role=\"tablist\">",
-   "constat": "Sémiologie fondamentale et analytique absente : aucun bouton data-s=\"c72-s-semio\", aucun div.sci homonyme ; les signes de l’onglet 1 (c72-5, c72-6) sont énumérés sans technique, sans valeur sémiologique et sans regroupement syndromique raisonné. Absence = MAJEUR (exigence de Vial du 15.10.2026).",
+   "constat": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md) : le sixième sous-onglet « Sémiologie fondamentale et analytique » est absent. Sémiologie fondamentale et analytique absente : aucun bouton data-s=\"c72-s-semio\", aucun div.sci homonyme ; les signes de l’onglet 1 (c72-5, c72-6) sont énumérés sans technique, sans valeur sémiologique et sans regroupement syndromique raisonné. Absence = MAJEUR (exigence de Vial du 15.10.2026).",
    "preuve": [
     {
      "source_id": "S3",
@@ -94,7 +95,8 @@
    ],
    "proposition": "propositions/C72_c_semio.html ; propositions/C72_pop3_semio.html",
    "justification": "Le mécanisme du signe (voies longues, cône, racines) fixe le niveau lésionnel → le niveau fixe le champ de l’IRM et l’urgence → sans sémiologie analytique, la leçon ne forme pas au raisonnement de l’examen fédéral (troubles de la marche, parésie, rétention).",
-   "ancre_occurrences": 1
+   "ancre_occurrences": 1,
+   "bloquant_cloture": true
   },
   {
    "id": "MAJ-02",
@@ -782,7 +784,9 @@
    "S15",
    "S16"
   ],
-  "limite": "Aucune source de sémiologie universitaire suisse en texte intégral n’a pu être lue ; les gestes standard (réflexes, Babinski, niveau sensitif) ne sont pas décrits faute de source lue et renvoient au parcours Sémiologie CS du fragment S01."
+  "limite": "Aucune source de sémiologie universitaire suisse en texte intégral n’a pu être lue ; les gestes standard (réflexes, Babinski, niveau sensitif) ne sont pas décrits faute de source lue et renvoient au parcours Sémiologie CS du fragment S01.",
+  "bloquant_cloture": true,
+  "note_gravite": "Absence du sixième sous-onglet : constat MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md), non une simple lacune."
  },
  "matrice_20": [
   {
@@ -901,7 +905,8 @@
   "Grade 4 du gliome H3 K27-altéré : absent des 100 000 premiers caractères du résumé OMS lu ; confirmé indirectement par le résumé de Watanabe (S10).",
   "Affirmation de c72-neuromonitorage « Westphal et Mohme jugent son apport discuté » non retrouvée dans l’extraction de S2 (qui décrit l’onde D comme le paramètre le plus stable) ; non classée en constat faute de lecture intégrale.",
   "Lectures PMC par extraction ciblée de passages (outil web), pas de lecture humaine intégrale ; textes longs limités aux 100 000 premiers caractères (S1, S5, S6, S7, S9).",
-  "Captures réelles (SEM-22, SEM-23) non réalisées : la discipline de sémiologie n’existe pas encore."
+  "Captures réelles (SEM-22, SEM-23) non réalisées, conséquence du constat MAJ-01 (sixième sous-onglet absent, bloquant pour la clôture)."
  ],
- "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+ "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée",
+ "date_debut_note": "Heure relevée par date -u au début de l'analyse (avant la première source lue)."
 }

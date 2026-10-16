@@ -1,6 +1,6 @@
 # Audit médical Alpha, tour 1 — C72, tumeur maligne de la moelle épinière, des nerfs crâniens et d’autres parties du système nerveux central (S08)
 
-Mission `ALPHA1-CLAUDE-C72-MED`, branche `claude/alpha1/c72-med-g1`, base `32416a20`. Audit médical agressif avec enrichissement, effort élevé, modèle conforme au manifeste. Revue du 16 octobre 2026.
+Mission `ALPHA1-CLAUDE-C72-MED`, branche `claude/alpha1/c72-med-g1`, base de la mission `d1a488ad4f0031d7f2a4b47a0721e89a93475d77` (manifeste) ; base du worktree `32416a2080e67537641040a81252dec0b3e6d137` : START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste. Audit médical agressif avec enrichissement, effort élevé, modèle conforme au manifeste. Revue du 16 octobre 2026.
 
 ## Lecture et empreintes
 
@@ -19,7 +19,7 @@ Le fond médical est solide. Il n’y a **aucun constat bloquant**. Les points v
 
 ## Constats majeurs
 
-1. **MAJ-01 — La sémiologie fondamentale et analytique est absente** (`C72_c.html`, `div.sci-bar`). Les signes de l’onglet 1 sont cités sans technique, sans valeur ni regroupement syndromique. La proposition complète figure dans `propositions/C72_c_semio.html`, avec ses neuf fenêtres dans `propositions/C72_pop3_semio.html`.
+1. **MAJ-01 — MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md) : le sixième sous-onglet « Sémiologie fondamentale et analytique » est absent** (`C72_c.html`, `div.sci-bar`). Les signes de l’onglet 1 sont cités sans technique, sans valeur ni regroupement syndromique. La proposition complète figure dans `propositions/C72_c_semio.html`, avec ses neuf fenêtres dans `propositions/C72_pop3_semio.html`.
 2. **MAJ-02 — Les sciences comptent quatre disciplines au lieu de cinq.** La discipline proposée est la *Physiologie des voies médullaires et du contrôle sacré* (`propositions/C72_c_physio.html`). C’est elle qui explique la parésie non radiculaire, l’ataxie, la dissociation des sensibilités et la différence entre cône et queue de cheval [S12] [S13] [S5].
 3. **MAJ-03 — `tests/audit_sciences.py` échoue.** Les quatre disciplines totalisent 788 mots, et chacune reste sous le minimum de 280. Les libellés « Science → clinique / examen / traitement » manquent, et la Génétique n’a pas de figure. Les libellés proposés sont dans `propositions/C72_c_liens.html`.
 4. **MAJ-04 — Le périmètre de codage est inexact.** La catégorie CIM-10 découle du code de comportement CIM-O [S20]. L’épendymome myxopapillaire (9394/1) et l’astrocytome pilocytique du nerf optique (9421/1) ont un comportement /1 [S21] : ils relèvent donc de D43.4 et D43.3, non de C72.1 et C72.3. Ces tumeurs restent toutefois à déclarer au registre. **Réserve** : la table CIM-O-3.2 en vigueur n’a pas été lue. Proposition : `propositions/C72_b_1.html`.
@@ -42,7 +42,7 @@ ENR-01 à ENR-12 : sous-onglet de sémiologie, fenêtres, discipline de physiolo
 
 ## 21 — Sémiologie fondamentale et analytique
 
-**Statut : absente → MAJEUR (MAJ-01).**
+**Statut : absente → MAJEUR, bloquant pour la clôture du cours et du lot (MAJ-01, AGENTS.md).** Ce n'est pas une simple lacune.
 
 - **Sémiologie fondamentale.** Les symptômes sont nommés dans c72-5 et c72-6, mais aucune entrée ne comporte ses six éléments : définition, normal, technique, mécanisme, valeur et piège. Les sources lues ne donnent aucune fréquence chiffrée de symptôme. Cette lacune est déclarée par la leçon elle-même (c72-lacunes). Deux gestes ont pu être chiffrés pour cet audit, d’après des résumés. Le résidu post-mictionnel au seuil de 200 ml a une sensibilité de 82 % et une spécificité de 65 % [S14]. Le tonus anal a une sensibilité de 0,23 à 0,53 [S15].
 - **Sémiologie analytique.** Il manque l’examen systématique numéroté, le tableau des syndromes, le raisonnement en cinq étapes et les cas corrigés. Les syndromes proposés (antérieur, voies longues, transverse, cône, queue de cheval) s’appuient sur deux synthèses universitaires suisses, de l’Inselspital [S12] et du CHUV [S13], lues en résumé.
