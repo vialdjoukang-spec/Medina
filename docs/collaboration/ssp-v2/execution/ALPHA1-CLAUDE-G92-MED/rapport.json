@@ -1,0 +1,905 @@
+{
+ "mission": "ALPHA1-CLAUDE-G92-MED",
+ "code": "G92",
+ "type_audit": "medical",
+ "base_sha": "103745baaa38c76f18288758cc7f689e5091ccdb",
+ "source_snapshot_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "manifest_base_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "worktree_base_note": "Base = HEAD du worktree (103745ba, main contenant le relais GOUVERNANCE-02) ; sources figées identiques : empreintes SHA-256 conformes au manifeste (instantané 523832d9).",
+ "generation": 1,
+ "branche": "claude/alpha1/g92-med-g1",
+ "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G92-MED",
+ "conversation": "alpha1-claude-g92-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-16T09:52:37Z",
+ "date_fin": "2026-10-16T10:23:48Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G92/G92_a.html",
+   "chapters/G92/G92_b.html",
+   "chapters/G92/G92_c.html",
+   "chapters/G92/G92_d.html",
+   "chapters/G92/G92_pop1.html",
+   "chapters/G92/G92_pop2.html",
+   "glossary/g92.py"
+  ],
+  "empreintes_conformes": true,
+  "empreintes": {
+   "chapters/G92/G92_a.html": {
+    "sha256": "bd52231d20553285a1d1b8dc68a3f46833143ef307af5e5d61de032f805a885a",
+    "manifeste": "bd52231d20553285a1d1b8dc68a3f46833143ef307af5e5d61de032f805a885a",
+    "conforme": true
+   },
+   "chapters/G92/G92_b.html": {
+    "sha256": "6ec86bee3f63dd9eb0501515748eb04c01d255a8fbbf690164d8f509faa9ab8e",
+    "manifeste": "6ec86bee3f63dd9eb0501515748eb04c01d255a8fbbf690164d8f509faa9ab8e",
+    "conforme": true
+   },
+   "chapters/G92/G92_c.html": {
+    "sha256": "a66f4f227ca0002e4425344026dd67e5f7ab836d6bfbfbe717ac51dbfdf33a4f",
+    "manifeste": "a66f4f227ca0002e4425344026dd67e5f7ab836d6bfbfbe717ac51dbfdf33a4f",
+    "conforme": true
+   },
+   "chapters/G92/G92_d.html": {
+    "sha256": "7be2c2febd6347672321c63d915e757c9f2b33f9d951578eedc669c2f7a81281",
+    "manifeste": "7be2c2febd6347672321c63d915e757c9f2b33f9d951578eedc669c2f7a81281",
+    "conforme": true
+   },
+   "chapters/G92/G92_pop1.html": {
+    "sha256": "918f0564a6d8018117192a835f9faaef5f88004adf6fe213238568cde82e4b07",
+    "manifeste": "918f0564a6d8018117192a835f9faaef5f88004adf6fe213238568cde82e4b07",
+    "conforme": true
+   },
+   "chapters/G92/G92_pop2.html": {
+    "sha256": "bfe85b36e228f311f20142b260c9b63e0e91b3aac01e84eb4669e0e6e761fcc9",
+    "manifeste": "bfe85b36e228f311f20142b260c9b63e0e91b3aac01e84eb4669e0e6e761fcc9",
+    "conforme": true
+   },
+   "glossary/g92.py": {
+    "sha256": "8fae9927b31322feb6bacf80bfff1d4eef6f336b6a011a900516f383d1ad17f1",
+    "manifeste": "8fae9927b31322feb6bacf80bfff1d4eef6f336b6a011a900516f383d1ad17f1",
+    "conforme": true
+   }
+  }
+ },
+ "premiere_source_lue": {
+  "source_id": "S1",
+  "url": "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-g90-g99.htm",
+  "section": "G92.- Toxische Enzephalopathie : Kodierhinweis, G92.0 (Inkl. Immuneffektorzell-assoziiertes Neurotoxizitätssyndrom), G92.9"
+ },
+ "synthese": {
+  "BLOQUANT": 0,
+  "MAJEUR": 7,
+  "MINEUR": 13,
+  "ENRICHISSEMENT": 4
+ },
+ "controles": {
+  "test_v7_static": "G92 mots 9968 fenêtres 32 quiz 5 pareto 11 — OK (leçon actuelle) ; après simulation de toutes les propositions et conversion des repères [Sx] : mots 15834 fenêtres 38 quiz 8 — OK",
+  "audit_sciences": "leçon actuelle : failed, 20 erreurs (4 disciplines de 122 à 219 mots, quatre libellés absents) ; simulation des propositions : passed (6 disciplines, 291 à 2680 mots)",
+  "validateur_semiologie_simule": "6 boutons data-s, g92-tab-semio premier et sélectionné, panneau visible, titre exact, 9 sections non vides, liens https, marqueur data-semiology-clinical dans pA : conformes",
+  "image_clo_finder_inventory": "6 figures SVG non anatomiques, aucune image, 4 icônes de 24 px",
+  "rendu_390px": "Chromium headless : figures existantes 7,8 px rendus (viewBox 640, police 14) ; figures proposées 11,9 px, aucun texte hors cadre",
+  "propositions_ancres_uniques": "37 remplacements uniques vérifiés par script (1 occurrence chacun) ; 6 remplacements globaux (49 liens)",
+  "citations_calculs": "96/96 citations retrouvées mot pour mot dans la copie locale des sources lues"
+ },
+ "calculs": {
+  "total_releves": 537,
+  "grandeurs": 330,
+  "non_calculables": 129,
+  "libelles_de_grade": 78,
+  "concordance_source": 307,
+  "valeurs_de_vignette_ou_unite": 23,
+  "non_rapprochees": 0,
+  "calculables": 30,
+  "recalcules": 30,
+  "correct": 20,
+  "arrondi": 2,
+  "faux": 5,
+  "non_verifiables": 3,
+  "informatifs_audit": 6,
+  "script": "calculs/verifier.py",
+  "faux_constats": [
+   "C03 (R06)",
+   "C02 (R08)",
+   "C13 (R15)",
+   "C14 (R17, R18)"
+  ],
+  "note": "Aucune dose, aucun débit ni seuil faux pouvant conduire à un surdosage ; la seule dose fausse est la décroissance de méthylprednisolone sous-dosée de moitié (C02). Les trois NON_VERIFIABLE (R13, R14, R29) sont des énoncés incomplets traités en C12 et C11."
+ },
+ "constats": [
+  {
+   "id": "C01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G92/G92_c.html",
+   "ancre": "data-s=\"g92-s-immuno\"",
+   "constat": "Le sous-onglet « Sémiologie fondamentale et analytique » est absent. Décompte réel des boutons data-s du panneau pS de G92_c.html : 4 (g92-s-immuno, g92-s-neuro, g92-s-bioch, g92-s-imagerie) ; aucun g92-s-semio, aucun marqueur data-semiology ni data-semiology-clinical. La sémiologie existante (g92-5, g92-6, g92-ecriture) est descriptive : aucune technique de geste, aucun mécanisme par signe, aucune valeur chiffrée, aucun raisonnement analytique ni cas corrigé de sémiologie.",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "description clinique ; tableau 5",
+     "citation_courte": "The earliest manifestations of ICANS are tremor, dysgraphia, mild difficulty with expressive speech"
+    },
+    {
+     "source_id": "S3",
+     "section": "description clinique",
+     "citation_courte": "developing in 19 of 22 patients who went on to develop severe neurotoxicity"
+    },
+    {
+     "source_id": "S2",
+     "section": "§ 10, Key surveillance points",
+     "citation_courte": "ICE screening every 8–12 hours during the first 7 days; handwriting test at each neurological assessment"
+    }
+   ],
+   "proposition": "propositions/G92_c_semio.html (bouton g92-tab-semio, panneau g92-s-semio, neuf sections data-semiology, trois cas corrigés, figure non anatomique de 11,9 px à 390 px) ; propositions/G92_pop1_semio.html (six fenêtres g92-sm-*, dans _pop1) ; propositions/G92_a_semio_clinique.html (section data-semiology-clinical=\"G92\" dans pA, îlot g92-6) ; propositions/glossary_g92_ajouts.py. Simulation : validateur semiology de tools/starter_codex.py satisfait (6 boutons, titre exact, 9 sections, liens https, marqueur clinique).",
+   "justification": "Mécanisme : sans technique d’examen ni lecture du signe vers le grade, le lecteur ne sait pas transformer une dysgraphie ou une aphasie en décision. Conséquence : le grade, donc la corticothérapie, est mal fixé. Décision : exigence de Vial du 15.10.2026 (contrat SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE) ; absence = MAJEUR, bloquant pour la clôture du cours.",
+   "bloquant_cloture": true,
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G92/G92_b.html",
+   "ancre": "125 mg pendant 2 jours, 60 mg pendant 2 jours ; osmothérapie",
+   "constat": "Décroissance de méthylprednisolone au grade 4 mal transcrite : la source prévoit 250 mg, puis 125 mg, puis 60 mg toutes les 12 heures pendant 2 jours chacun ; la leçon écrit « toutes les 12 heures » pour 250 mg seulement. Lue littéralement, la dose quotidienne est divisée par deux pour 125 et 60 mg (cumul de la décroissance 1370 mg au lieu de 1740 mg ; recalcul R08, verdict FAUX). Même erreur en G92_d.html (g92-p-2) et G92_pop2.html (g92-methylpred).",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "tableau 3, grade 4",
+     "citation_courte": "taper at 250 mg every 12 hrs for 2 days, then 125 mg every 12 hrs for 2 days, then 60 mg every 12 hrs for 2 days"
+    }
+   ],
+   "proposition": "propositions/G92_remplacements.json P01, P02, P03 : « puis 125 mg toutes les 12 heures pendant 2 jours, puis 60 mg toutes les 12 heures pendant 2 jours ».",
+   "justification": "Mécanisme : une décroissance trop rapide des corticoïdes après un grade 4 expose à la récidive de la neurotoxicité. Conséquence : sous-dosage de moitié sur quatre jours. Décision : corriger les trois occurrences ; pas de surdosage, donc MAJEUR et non BLOQUANT.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C03",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G92/G92_b.html",
+   "ancre": "grade 3 = 0 à 2, grade 4 = 0 ou non évaluable.",
+   "constat": "Grille ICE mal formulée dans les paramètres clés (div.key de g92-12) : « grade 4 = 0 ou non évaluable » classe tout ICE à 0 en grade 4. Le consensus classe l’ICE à 0 d’un patient éveillé avec aphasie globale en grade 3, et réserve le grade 4 au patient inaccessible incapable de passer l’ICE (recalcul R06, FAUX). Le piège de g92-6 (« très bas ou non évaluable ») ne tranche pas ; les formulations de g92-e-2 et g92-ice sont exactes mais muettes sur ce cas.",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "tableau 6, note ^",
+     "citation_courte": "A patient with an ICE score of 0 may be classified as having Grade 3 ICANS if the patient is awake with global aphasia"
+    },
+    {
+     "source_id": "S3",
+     "section": "tableau 6",
+     "citation_courte": "0 (patient is unarousable and unable to perform ICE)"
+    }
+   ],
+   "proposition": "propositions/G92_remplacements.json P04 (g92-12), P05 (g92-6), P06 (g92-e-2), P07 (g92-ice).",
+   "justification": "Mécanisme : l’aphasie globale éveillée annule l’ICE sans coma. Conséquence : le surclassement en grade 4 impose à tort la méthylprednisolone à 1 g et l’osmothérapie, ou masque la nuance d’examen. Décision : grille du consensus, score mal compté = MAJEUR (EXIGENCE_CALCULS § 3).",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G92/G92_pop2.html",
+   "ancre": "<p>Déficit du cycle de l’urée ; prudence avec mutations de POLG.</p>",
+   "constat": "Contre-indications du valproate incomplètes et inexactes : l’information professionnelle classe les maladies mitochondriales connues dues à des mutations de POLG (et l’enfant de moins de 2 ans suspect d’une telle maladie) en contre-indication, non en « prudence » ; le déficit systémique primaire en carnitine non corrigé et la grossesse (hors absence d’alternative) sont aussi des contre-indications absentes de la leçon. g92-11 déclare que la grossesse n’est « pas abordée » alors que la source lue par la leçon la contre-indique.",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "Contre-indications",
+     "citation_courte": "Patients connus pour avoir des maladies mitochondriales causées par des mutations du gène nucléaire codant pour l'enzyme mitochondriale polymérase gamma (POLG"
+    },
+    {
+     "source_id": "S8",
+     "section": "Contre-indications",
+     "citation_courte": "Patients présentant une déficience systémique primaire en carnitine sans correction de ce déficit"
+    },
+    {
+     "source_id": "S8",
+     "section": "Contre-indications",
+     "citation_courte": "Chez les femmes enceintes, sauf si aucune alternative thérapeutique ne rentre en ligne de compte"
+    }
+   ],
+   "proposition": "propositions/G92_remplacements.json P09 (g92-valproate), P10 (g92-3), P11 (g92-11, grossesse) ; P33 (sciences).",
+   "justification": "Mécanisme : POLG et déficit en carnitine aggravent l’atteinte mitochondriale et l’hyperammoniémie que le valproate provoque. Conséquence : risque d’insuffisance hépatique fatale et d’encéphalopathie. Décision : FI suisse datée (septembre 2025) ; contre-indication sous-évaluée = MAJEUR.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C05",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G92/G92_d.html",
+   "ancre": "<td>Jusqu’à 12 mg/kg/jour, typiquement 800 mg/jour par voie intraveineuse</td>",
+   "constat": "Posologies de l’ICANS présentées sans statut réglementaire suisse : dexaméthasone, méthylprednisolone, anakinra i.v. et triple intrathécale viennent d’une revue européenne ; l’ICANS n’est l’indication d’aucune information professionnelle suisse lue. Aucune FI suisse d’anakinra n’a été retrouvée sur AmiKo (« Kineret », « anakinra », 16.10.2026). Les règles d’administration de Solu-Medrol (doses > 250 mg en ≥ 30 minutes ; lésions hépatiques à partir d’environ 1 g/j ; fortes doses normalement ≤ 48–72 h) sont absentes (R29, NON_VERIFIABLE). Les recalculs arithmétiques sont exacts (R10, R11, R12).",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "§ 5.4, srICANS",
+     "citation_courte": "High-dose IV anakinra (up to 12 mg/kg/day, typically 800 mg/day)"
+    },
+    {
+     "source_id": "S10",
+     "section": "Posologie",
+     "citation_courte": "celle de doses supérieures à 250 mg, de 30 minutes au minimum"
+    },
+    {
+     "source_id": "S10",
+     "section": "Mises en garde",
+     "citation_courte": "Lorsque la méthylprednisolone était utilisée à des doses élevées (généralement à partir d'1 g par jour), des lésions hépatiques"
+    },
+    {
+     "source_id": "S11",
+     "section": "Posologie",
+     "citation_courte": "administrer la dose initiale de 40 à 100 mg i.v."
+    }
+   ],
+   "proposition": "propositions/G92_d_1.html (tableau « Ce que dit l’information professionnelle suisse » et tableau de dose du céfépime).",
+   "justification": "Mécanisme : une dose citée par une revue n’engage pas l’autorisation suisse. Conséquence : le lecteur peut croire ces schémas approuvés et ignorer la durée de perfusion et la surveillance hépatique. Décision : loi 3 du PROMPT_VERITE (médicament = FI suisse datée) ; point décisionnel non sourcé = MAJEUR.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C06",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G92/G92_b.html",
+   "ancre": "puis une dose de charge de lévétiracétam. Un état de mal exige un avis neurologique urgent.",
+   "constat": "Le lévétiracétam est proposé en dose de charge pour les crises et à l’approche de l’état de mal, sans signaler que l’information professionnelle suisse de Keppra en perfusion déclare son efficacité non démontrée dans l’état de mal épileptique et ne l’y recommande pas. Même omission dans le tableau de g92-9 (« lorazépam puis lévétiracétam en cas de crise ») et g92-p-1.",
+   "preuve": [
+    {
+     "source_id": "S12",
+     "section": "Mises en garde, État de mal épileptique",
+     "citation_courte": "L'efficacité pour le traitement de l'état de mal épileptique n'a pas été démontrée"
+    },
+    {
+     "source_id": "S2",
+     "section": "tableau 3, grade 3",
+     "citation_courte": "Treat seizures with lorazepam IV or other benzodiazepines as needed, followed by loading with levetiracetam"
+    }
+   ],
+   "proposition": "propositions/G92_remplacements.json P12 ; propositions/G92_d_1.html (ligne lévétiracétam).",
+   "justification": "Mécanisme : la FI suisse fixe le cadre d’usage. Conséquence : un état de mal traité par un produit non recommandé sans décision neurologique explicite. Décision : signaler la divergence et confier le choix au neurologue ; MAJEUR.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C07",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G92/G92_c.html",
+   "ancre": "<div class=\"key\"><b>Corrélation clinique.</b> Une écriture dégradée est un signe précoce",
+   "constat": "tests/audit_sciences.py (base 103745ba) échoue : les quatre disciplines comptent 219, 166, 122 et 123 mots (seuil 280) et aucune ne porte les quatre libellés « Science → clinique. », « Science → examen. », « Science → traitement. », « À retenir. » (20 erreurs). Les sciences ne présentent pas le fonctionnement normal du cerveau ni la pharmacocinétique qui explique l’accumulation. Avec la seule sémiologie, la barre compterait 5 boutons ; le validateur semiology en exige 6.",
+   "preuve": [
+    {
+     "source_id": "S6",
+     "section": "Pharmacocinétique",
+     "citation_courte": "Cela indique que la céfépime est presque exclusivement éliminée par voie rénale"
+    },
+    {
+     "source_id": "S7",
+     "section": "Interactions",
+     "citation_courte": "L’inhibition du CYP3A4 peut aussi entraîner la formation accrue d’un métabolite d’ifosfamide associé à des effets toxiques sur le SNC"
+    }
+   ],
+   "proposition": "propositions/G92_c_pharmacocinetique.html (sixième discipline, 557 mots) ; propositions/G92_remplacements.json P31 à P37 (quatre libellés par discipline et paragraphes sourcés). Simulation de toutes les propositions : audit_sciences « passed » (345, 346, 304, 291, 557 et 2680 mots), test_v7 --static G92 « OK » après conversion des repères [Sx].",
+   "justification": "Mécanisme : sans corrélations explicites, la science ne guide ni l’examen ni le traitement. Conséquence : contrôle automatique en échec et contrat Temps Betta non tenu. Décision : MAJEUR.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C08",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G92/G92_b.html",
+   "ancre": "L’IRM (ou à défaut le scanner) est demandée en cas de grade 3 ou plus.",
+   "constat": "Indication de l’IRM restreinte au grade 3 ou plus ; la source la demande aussi devant un signe focal, une crise ou une absence d’amélioration, et son calendrier de surveillance la prévoit dès le grade 2 ou devant tout nouveau signe neurologique. Même restriction en g92-e-1.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "§ 5.4",
+     "citation_courte": "brain MRI should be obtained whenever focal signs, seizures, or failure to improve raise the possibility of a structural or alternative cause"
+    },
+    {
+     "source_id": "S2",
+     "section": "tableau 7",
+     "citation_courte": "Brain MRI if ICANS ≥ G2 or new neurological signs"
+    }
+   ],
+   "proposition": "propositions/G92_remplacements.json P13, P14.",
+   "justification": "Mécanisme : un signe focal évoque une lésion structurelle. Conséquence : retard d’imagerie au grade 2. Décision : MINEUR (la leçon prévoit déjà l’imagerie pour exclure d’autres causes).",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C09",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G92/G92_b.html",
+   "ancre": "et la proximité du centre pendant au moins deux semaines.",
+   "constat": "Le cadre suisse (FI : 7 jours de surveillance quotidienne, 2 semaines de proximité) est exact, mais la pratique européenne rapportée par la revue (14 jours d’hospitalisation selon le manuel EBMT-EHA ; environ 4 semaines près du centre avec un proche) n’est pas mentionnée.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Posologie/Mode d'emploi",
+     "citation_courte": "Les patients doivent rester à proximité d'un centre de traitement qualifié ou d'un établissement clinique disposant d'un personnel adéquatement formé pendant au moins 2 semaines"
+    },
+    {
+     "source_id": "S2",
+     "section": "§ 10",
+     "citation_courte": "patients are generally advised to remain close to the treating center with a caregiver for approximately four weeks given the risk of late ICANS"
+    }
+   ],
+   "proposition": "propositions/G92_remplacements.json P15.",
+   "justification": "Mécanisme : l’ICANS tardif survient au-delà de 2 semaines. Conséquence : planification de sortie. Décision : MINEUR, la FI restant le minimum réglementaire.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C10",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G92/G92_c.html",
+   "ancre": "Le barème des points par item n’a pas été lu dans une source accessible et n’est pas reproduit ici.",
+   "constat": "La leçon déclare le barème du score ICE « non lu », alors que la source qu’elle cite comme lue en texte intégral (consensus ASTCT) le donne : orientation 4, dénomination 3, ordres 1, écriture 1, attention 1 (total recalculé 10, R07). Même mention en g92-ice.",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "tableau 5",
+     "citation_courte": "Orientation: Orientation to year, month, city, hospital: 4 points"
+    }
+   ],
+   "proposition": "propositions/G92_remplacements.json P06, P08.",
+   "justification": "Mécanisme : le barème permet de coter et de comparer. Conséquence : lacune déclarée à tort. Décision : MINEUR.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C11",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G92/G92_b.html",
+   "ancre": "méthylprednisolone 1000 mg par jour pendant 3 jours puis décroissance rapide ;",
+   "constat": "Grade 3 : la condition « jusqu’à amélioration au grade 1 » et l’exemple de décroissance (250, 125 puis 60 mg, un jour chacun) manquent (R09, ARRONDI) ; la durée de perfusion d’un bolus de 1000 mg n’est donnée nulle part (R29).",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "tableau 3, grade 3",
+     "citation_courte": "methylprednisolone 1000 mg/day for 3 days until improvement to Grade 1"
+    }
+   ],
+   "proposition": "propositions/G92_remplacements.json P16 ; propositions/G92_d_1.html.",
+   "justification": "Mécanisme et conséquence : schéma incomplet sans erreur de dose. Décision : MINEUR.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C12",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G92/G92_a.html",
+   "ancre": "dont le débit de filtration glomérulaire estimé est de 24 mL/min/1,73 m², reçoit du céfépime à dose standard pour une pneumonie.",
+   "constat": "Vignette du céfépime incalculable : l’information professionnelle adapte la dose à la clairance de Cockcroft (mL/min), que ni le poids ni la créatinine de l’énoncé ne permettent de calculer ; le DFGe normalisé n’est pas la grandeur de l’IP (R13, R14 NON_VERIFIABLE). Le tableau de dose de l’IP manque à la leçon.",
+   "preuve": [
+    {
+     "source_id": "S6",
+     "section": "Posologie",
+     "citation_courte": "La clairance de la créatinine peut être déterminée approximativement au moyen de l'équation de Cockcroft"
+    }
+   ],
+   "proposition": "propositions/G92_remplacements.json P17 (65 kg, créatinine 220 µmol/L : Cockcroft-Gault 21,1 mL/min, DFGe CKD-EPI 2021 25,2 ; 1 g/24 h contre 4 g/j, recalcul R36) ; propositions/G92_d_1.html (tableau de l’IP).",
+   "justification": "Mécanisme : la dose dépend de la clairance réelle, non normalisée. Conséquence : exemple inutilisable pour décider. Décision : énoncé incomplet = MINEUR.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C13",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G92/G92_pop2.html",
+   "ancre": "<p>Dans 85 % des cas d’une série de 73 patients, résolution en 1 à 5 jours.</p>",
+   "constat": "Dénominateurs faux : dans la revue de 73 cas, 71 % (début aux jours 2 à 5) et 85 % (résolution aux jours 1 à 5) portent chacun sur 29 cas, donc sur environ 41 et 34 cas documentés, non sur 73 (R15, FAUX). Même ambiguïté en g92-2.",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "résumé",
+     "citation_courte": "Most cases of cefepime-induced neurotoxicity occurred between days two and five (n=29, 71%)"
+    }
+   ],
+   "proposition": "propositions/G92_remplacements.json P18, P19.",
+   "justification": "Mécanisme : un pourcentage sans dénominateur surestime la précision. Décision : MINEUR.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C14",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G92/G92_b.html",
+   "ancre": "le tocilizumab donné une heure avant la perfusion chez 26 patients de 70 ans et plus",
+   "constat": "Effectifs faux : à Zurich, seuls 7 des 26 patients ont reçu le tocilizumab prophylactique, contre 19 témoins (R17, FAUX) ; même erreur en g92-tocilizumab. Le registre CIBMTR : les 95 % de début avant le jour 15 portent sur 150 patients dont la date est connue, non sur les 877 (R18, FAUX).",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "résumé",
+     "citation_courte": "comparing those who received prophylactic Tocilizumab (N = 7) versus standard treatment (N = 19)"
+    },
+    {
+     "source_id": "S17",
+     "section": "résumé",
+     "citation_courte": "Of 150 patients with reported onset date, 95% had onset ≤day 15 after infusion"
+    }
+   ],
+   "proposition": "propositions/G92_remplacements.json P20, P21, P22.",
+   "justification": "Mécanisme : un effectif gonflé donne un faux poids à une série minuscule. Décision : MINEUR (aucune recommandation n’en découle).",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C15",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G92/G92_a.html",
+   "ancre": "et les formes de grade 3 ou plus concernent 3 à 30 % d’entre eux, selon le produit.",
+   "constat": "La fourchette « 20 à 60 % » (et « 3 à 30 % » pour le grade ≥ 3) est contredite par le tableau qu’elle introduit : axicabtagène 64 %, brexucabtagène 69 %, idécabtagène 18 % ; grade ≥ 3 : 28–32 % et 31 % (R19). L’incohérence vient de la source, reprise sans le signaler ; même phrase dans le Pareto.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "§ 5.1 et tableau 1",
+     "citation_courte": "ICANS occurs in 20–60% of all CAR-T recipients"
+    }
+   ],
+   "proposition": "propositions/G92_remplacements.json P23.",
+   "justification": "Décision : signaler l’écart ; MINEUR.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C16",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G92/G92_b.html",
+   "ancre": "dans la population de comparaison citée, que le dossier ne précise pas.",
+   "constat": "Deux paraphrases inexactes de la FI Yescarta : la population de comparaison de l’œdème cérébral est précisée (« LDGCB et d’autres indications ») ; les 3,6 % sont 10 patients morts « pour des raisons qui n’étaient pas en rapport » avec les effets neurologiques, non « sans lien avec le traitement » (R20, R21 exacts sur les chiffres).",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Mises en garde",
+     "citation_courte": "par rapport à 0,7% au total (0,2% de cas fatals) chez les patients atteints de LDGCB et d'autres indications"
+    },
+    {
+     "source_id": "S4",
+     "section": "Effets indésirables",
+     "citation_courte": "à l'exception de 10 patients (3,6% des patients traités par YESCARTA dans ZUMA-1 et ZUMA-7)"
+    }
+   ],
+   "proposition": "propositions/G92_remplacements.json P24, P25.",
+   "justification": "Décision : MINEUR.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C17",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G92/G92_a.html",
+   "ancre": "Il s’agit d’un raisonnement déduit de ces deux données, non d’une affirmation de la source.",
+   "constat": "L’élimination rénale du céfépime est présentée comme une déduction de l’auteur ; l’information professionnelle l’affirme et donne la pharmacocinétique (clairance rénale 110 sur 120 mL/min, t½ 1,7 h, 13 h chez le dialysé).",
+   "preuve": [
+    {
+     "source_id": "S6",
+     "section": "Pharmacocinétique",
+     "citation_courte": "La demi-vie moyenne chez les patients dialysés est de 13 h lors d'hémodialyse"
+    }
+   ],
+   "proposition": "propositions/G92_remplacements.json P26 ; propositions/G92_c_pharmacocinetique.html.",
+   "justification": "Décision : MINEUR.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C18",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G92/G92_a.html",
+   "ancre": "L’inflammation cytokinique explique le calendrier de l’ICANS (début vers le jour 5, pic des cytokines aux jours 7 à 14)",
+   "constat": "Lien causal non soutenu : le début des signes (jour 5 environ) précède le pic des cytokines (jours 7 à 14) ; la source décrit une corrélation avec l’expansion des CAR-T, non une explication du calendrier. Même formulation en g92-s-immuno-cours.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "§ 3",
+     "citation_courte": "Peak cytokine levels typically occur within 7–14 days of infusion and correlate with CAR-T in vivo expansion kinetics"
+    }
+   ],
+   "proposition": "propositions/G92_remplacements.json P27, P28.",
+   "justification": "Mécanisme : association temporelle ≠ causalité (consigne de Vial du 07.10.2026). Décision : MINEUR.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C19",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G92/G92_a.html",
+   "ancre": "href=\"https://amiko.oddb.org (GTIN 7680669860011)\"",
+   "constat": "49 liens vers les informations professionnelles ont un href invalide (espace et parenthèse : « https://amiko.oddb.org (GTIN …) ») dans les six fichiers HTML ; le lecteur n’atteint pas la monographie.",
+   "preuve": [
+    {
+     "source_id": "tools/swissmedic_fi.py",
+     "section": "fonction texte (adresse réelle d’une IP sur AmiKo)",
+     "citation_courte": "page = get(f\"{BASE}/{lang}/fi?gtin={urllib.parse.quote(gtin)}\")"
+    }
+   ],
+   "proposition": "propositions/G92_remplacements.json G01 à G06 (remplacement global par https://amiko.oddb.org/fr/fi?gtin=<GTIN>).",
+   "justification": "Décision : MINEUR (traçabilité des sources).",
+   "ancre_occurrences": 4,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C20",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G92/G92_a.html",
+   "ancre": "font-size=\"14\"><defs><marker id=\"g92-ar1\"",
+   "constat": "Les six figures SVG (schémas non anatomiques, viewBox de 640 de large, police de 14 unités) rendent un texte de 7,8 px à 390 px (mesure Chromium, conteneur 358 px), sous le seuil de lisibilité retenu par les audits précédents ; aucun débordement.",
+   "preuve": [
+    {
+     "source_id": "AUDIT",
+     "section": "controles.rendu_390px (Chromium headless, conteneur 358 px)",
+     "citation_courte": "police_rendue_px 7,8 pour les six figures ; viewBox 640, font-size 14"
+    }
+   ],
+   "proposition": "Redessiner sur une largeur de 360 unités avec une police de 12 unités (11,9 px rendus), comme les deux figures proposées, ou porter la police à 24 unités en élargissant les cadres.",
+   "justification": "Décision : MINEUR (forme).",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C21",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G92/G92_b.html",
+   "ancre": "Ils imposent les soins intensifs, l’avis d’un neurologue et un traitement immédiat, sans attendre le bilan complet.</div>",
+   "constat": "Rubrique 16 (spécificités suisses) partielle : Tox Info Suisse (145, 24 h sur 24) n’est pas cité pour une catégorie consacrée aux encéphalopathies toxiques ; aucune donnée suisse sur les centres CAR-T ou le remboursement n’a été lue (lacune).",
+   "preuve": [
+    {
+     "source_id": "S29",
+     "section": "page d’accueil",
+     "citation_courte": "Notfall Telefon 145 (24/7)"
+    }
+   ],
+   "proposition": "propositions/G92_remplacements.json P29 ; alerte de la sémiologie (G92_c_semio.html, g92-sm-7).",
+   "justification": "Décision : ENRICHISSEMENT.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C22",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G92/G92_pop2.html",
+   "ancre": "le bleu de méthylène peut être envisagé (posologie non lue).</p>",
+   "constat": "La FI d’Holoxan contient des données utiles absentes : encéphalopathie très fréquente (10–20 %), récidive possible après plusieurs cycles sans incident, majoration du métabolite neurotoxique par les inhibiteurs du CYP3A4, hémodialyse rapide en cas de surdosage.",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "Effets indésirables",
+     "citation_courte": "Très fréquent : Encéphalopathie (10-20%)"
+    },
+    {
+     "source_id": "S7",
+     "section": "Mises en garde",
+     "citation_courte": "Une récidive d'encéphalopathie-toxicité du SNC après plusieurs cycles de traitement sans incident a été rapportée"
+    }
+   ],
+   "proposition": "propositions/G92_remplacements.json P30.",
+   "justification": "Décision : ENRICHISSEMENT.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C23",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G92/G92_a.html",
+   "ancre": "<b>Vigilance</b> : éveil spontané, à la voix, au seul stimulus tactile, stupeur ou coma.",
+   "constat": "Pour G92.9 (encéphalopathie médicamenteuse du sujet âgé), aucun outil de dépistage du délire n’est proposé : le score ICE n’est validé que pour l’ICANS. Le 4AT (sensibilité 0,88, spécificité 0,88 chez les 65 ans et plus) et le score FOUR en cas de coma (EAN) manquent.",
+   "preuve": [
+    {
+     "source_id": "S24",
+     "section": "résumé",
+     "citation_courte": "The pooled sensitivity was 0.88"
+    },
+    {
+     "source_id": "S26",
+     "section": "résumé",
+     "citation_courte": "use the Full Outline of Unresponsiveness score instead of the Glasgow Coma Scale in the acute setting"
+    }
+   ],
+   "proposition": "propositions/G92_c_semio.html (g92-sm-2, g92-sm-4) ; propositions/G92_pop1_semio.html (g92-sm-4at, g92-sm-vigilance) ; propositions/G92_a_semio_clinique.html.",
+   "justification": "Décision : ENRICHISSEMENT.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  },
+  {
+   "id": "C24",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G92/G92_a.html",
+   "ancre": "faute de source lue.</p>",
+   "constat": "Rubrique 6 partielle : lithium, monoxyde de carbone, solvants, métaux lourds et encéphalite sous inhibiteurs de points de contrôle ne sont pas traités (lacune déclarée par la leçon). L’audit n’a pas lu de source sur ces agents : aucune proposition de contenu n’est faite.",
+   "preuve": [
+    {
+     "source_id": "S20",
+     "section": "résumé",
+     "citation_courte": "drugs of abuse, and environmental toxins"
+    }
+   ],
+   "proposition": "Mission de production dédiée : lire la FI suisse du lithium, une source de Tox Info Suisse et une recommandation européenne sur l’intoxication au monoxyde de carbone avant toute rédaction.",
+   "justification": "Décision : ENRICHISSEMENT, sans contenu inventé.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": false
+  }
+ ],
+ "matrice_20": [
+  {
+   "rang": 1,
+   "rubrique": "Question clinique et enjeu pour l’examen fédéral",
+   "statut": "couvert",
+   "ancre": "g92-0 (deux vignettes, objectifs) ; vignette céfépime incalculable (C12)"
+  },
+  {
+   "rang": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "couvert",
+   "ancre": "g92-1 ; G92.0, G92.9, note de codage et exclusion G93.4 conformes à S1"
+  },
+  {
+   "rang": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "couvert",
+   "ancre": "g92-1, g92-grade (grille ASTCT) ; formulation de l’ICE à 0 (C03)"
+  },
+  {
+   "rang": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "partiel",
+   "ancre": "g92-2 ; aucune donnée suisse (lacune déclarée) ; fourchette incohérente (C15)"
+  },
+  {
+   "rang": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "partiel",
+   "ancre": "g92-3, g92-bhe ; aucune discipline du normal, pharmacocinétique absente (C07)"
+  },
+  {
+   "rang": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "partiel",
+   "ancre": "g92-4 ; lithium, CO, solvants absents (C24)"
+  },
+  {
+   "rang": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "partiel",
+   "ancre": "g92-5 ; fréquences de la FI Yescarta exactes ; dénominateurs (C13)"
+  },
+  {
+   "rang": 8,
+   "rubrique": "Examen clinique (signes, Se/Sp)",
+   "statut": "partiel",
+   "ancre": "g92-6 ; aucune technique ni valeur ; sémiologie absente (C01)"
+  },
+  {
+   "rang": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "couvert",
+   "ancre": "g92-8 alert ; lévétiracétam (C06), Tox Info Suisse (C21)"
+  },
+  {
+   "rang": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "couvert",
+   "ancre": "g92-e-1, g92-e-2 ; indication de l’IRM (C08)"
+  },
+  {
+   "rang": 11,
+   "rubrique": "Diagnostic différentiel",
+   "statut": "couvert",
+   "ancre": "g92-7 (infection, AVC, crise, leptoméninges, métabolique)"
+  },
+  {
+   "rang": 12,
+   "rubrique": "Prise en charge suisse",
+   "statut": "partiel",
+   "ancre": "g92-9 ; décroissance de méthylprednisolone (C02) ; statut FI (C05, C06)"
+  },
+  {
+   "rang": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "couvert",
+   "ancre": "g92-8, g92-10 ; paraphrase de la FI (C16)"
+  },
+  {
+   "rang": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "couvert",
+   "ancre": "g92-10 ; proximité européenne (C09) ; effectifs zurichois (C14)"
+  },
+  {
+   "rang": 15,
+   "rubrique": "Situations particulières",
+   "statut": "partiel",
+   "ancre": "g92-11 ; grossesse déclarée non abordée alors que la FI du valproate la contre-indique (C04)"
+  },
+  {
+   "rang": 16,
+   "rubrique": "Spécificités suisses",
+   "statut": "partiel",
+   "ancre": "g92-9.2 (FI Yescarta, conduite) ; Tox Info Suisse absent (C21)"
+  },
+  {
+   "rang": 17,
+   "rubrique": "Critères formels du diagnostic",
+   "statut": "couvert",
+   "ancre": "g92-12 alert (ASTCT ; faisceau de synthèse pour G92.9 déclaré comme tel)"
+  },
+  {
+   "rang": 18,
+   "rubrique": "Paramètres clés chiffrés",
+   "statut": "partiel",
+   "ancre": "g92-12 key ; grade 4 « 0 ou non évaluable » (C03)"
+  },
+  {
+   "rang": 19,
+   "rubrique": "Sous-codes CIM-10-GM couverts",
+   "statut": "couvert",
+   "ancre": "G92.0 et G92.9 (S1)"
+  },
+  {
+   "rang": 20,
+   "rubrique": "Points d’examen fédéral",
+   "statut": "partiel",
+   "ancre": "objectifs de g92-0 ; aucun rattachement PROFILES"
+  },
+  {
+   "rang": 21,
+   "rubrique": "Sémiologie fondamentale et analytique",
+   "statut": "absent",
+   "ancre": "aucun g92-s-semio (C01)"
+  }
+ ],
+ "semiologie": {
+  "statut": "absente",
+  "decompte_data_s": 4,
+  "data_s": [
+   "g92-s-immuno",
+   "g92-s-neuro",
+   "g92-s-bioch",
+   "g92-s-imagerie"
+  ],
+  "sous_onglet_semio": false,
+  "gravite": "MAJEUR",
+  "bloquant_cloture_cours_et_lot": true,
+  "constat_id": "C01",
+  "fondamentale": {
+   "statut": "partielle dans l’onglet 1, absente comme discipline",
+   "ancres": [
+    "g92-5",
+    "g92-6",
+    "g92-ecriture",
+    "g92-ice",
+    "g92-grade"
+   ],
+   "manques": "normal avant pathologique, technique par geste, mécanisme par signe, valeur chiffrée (aphasie 19/22 disponible ; autres signes non chiffrés dans les sources lues : LACUNE), pièges"
+  },
+  "analytique": {
+   "statut": "absente",
+   "ancres": [],
+   "manques": "regroupement syndromique, raisonnement en cinq étapes, examen systématique numéroté, synthèse présentée, trois cas corrigés"
+  },
+  "proposition": [
+   "propositions/G92_c_semio.html",
+   "propositions/G92_pop1_semio.html",
+   "propositions/G92_a_semio_clinique.html",
+   "propositions/glossary_g92_ajouts.py",
+   "propositions/G92_c_pharmacocinetique.html (sixième data-s)"
+  ],
+  "grille_SEM": {
+   "SEM-01": "non (4 data-s, aucun g92-s-semio)",
+   "SEM-02": "non",
+   "SEM-03": "non (audit_sciences échoue, C07)",
+   "SEM-04": "oui (test_v7 --static G92 : OK sur la leçon actuelle)",
+   "SEM-05": "non",
+   "SEM-06": "non",
+   "SEM-07": "non",
+   "SEM-08": "non",
+   "SEM-09": "non",
+   "SEM-10": "non (pièges présents en g92-5, g92-6, hors sémiologie)",
+   "SEM-11": "non",
+   "SEM-12": "non",
+   "SEM-13": "non (pas d’alert sémiologique ; l’alert g92-8 existe)",
+   "SEM-14": "non",
+   "SEM-15": "non",
+   "SEM-16": "non",
+   "SEM-17": "non (trois quiz en g92-e-2, aucun sur la valeur d’un signe)",
+   "SEM-18": "non",
+   "SEM-19": "non évaluable (absente)",
+   "SEM-20": "non évaluable",
+   "SEM-21": "non évaluable",
+   "SEM-22": "non (bouton absent)",
+   "SEM-23": "non (aucune capture possible)",
+   "SEM-24": "oui (chap-head : « Revue par intelligence artificielle · Aucune validation médicale humaine »)"
+  }
+ },
+ "figures": [
+  {
+   "ancre": "aria-label=\"Figure 1 —",
+   "fichier": "chapters/G92/G92_a.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "SVG examiné : boîtes et flèches ; texte rendu 7,8 px à 390 px",
+   "constat_id": "C20"
+  },
+  {
+   "ancre": "aria-label=\"Figure 2 —",
+   "fichier": "chapters/G92/G92_b.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "SVG examiné : boîtes et flèches ; texte rendu 7,8 px à 390 px",
+   "constat_id": "C20"
+  },
+  {
+   "ancre": "aria-label=\"Figure 3 —",
+   "fichier": "chapters/G92/G92_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "SVG examiné : boîtes et flèches ; texte rendu 7,8 px à 390 px",
+   "constat_id": "C20"
+  },
+  {
+   "ancre": "aria-label=\"Figure 4 —",
+   "fichier": "chapters/G92/G92_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "SVG examiné : boîtes et flèches ; texte rendu 7,8 px à 390 px",
+   "constat_id": "C20"
+  },
+  {
+   "ancre": "aria-label=\"Figure 5 —",
+   "fichier": "chapters/G92/G92_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "SVG examiné : boîtes et flèches ; texte rendu 7,8 px à 390 px",
+   "constat_id": "C20"
+  },
+  {
+   "ancre": "aria-label=\"Figure 6 —",
+   "fichier": "chapters/G92/G92_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "SVG examiné : boîtes et flèches ; texte rendu 7,8 px à 390 px",
+   "constat_id": "C20"
+  }
+ ],
+ "figures_synthese": {
+  "total": 6,
+  "ANATOMIQUE_IA": 0,
+  "ORIGINE_INCONNUE": 0,
+  "SCHEMA_NON_ANATOMIQUE": 6,
+  "IMAGE_SOURCEE": 0,
+  "images_img": 0,
+  "methode": "python3 tools/image_clo_finder.py inventory G92 ; rendu Chromium à 390 px (conteneur 358 px)",
+  "regle": "Règle de Vial du 15.10.2026 (aucune figure anatomique dessinée par IA) : non concernée, aucune figure anatomique"
+ },
+ "verifications_conformes": [
+  "CIM-10-GM 2024 : G92.- (note de codage chapitre XX), G92.0 avec inclusion de l’ICANS, G92.9 ; aucune autre position ; G93.4 exclut G31.2 et G92.- [S1]",
+  "Définition consensuelle de l’ICANS, symptômes exclus, aphasie expressive 19/22, crises après l’aphasie globale [S3]",
+  "Grille ASTCT adulte (ICE, vigilance, crises, motricité, œdème) et pédiatrique (ICE dès 12 ans, CAPD ≥ 9 = grade 3) [S3]",
+  "Taux par produit du tableau 1, début vers le jour 5, ~10 % plus de 3 semaines après le SRC, complications du jour 7 au jour 30, ICANS tardif jusqu’à 6–8 semaines [S2]",
+  "Dexaméthasone 10–20 mg toutes les 6 h (grades 2–3), méthylprednisolone 1000 mg/j 3 jours, anakinra jusqu’à 12 mg/kg/j (800 mg/j), réponse 77 %, triple intrathécale 50/12/50 mg [S2]",
+  "FI Yescarta (août 2026) : 4 doses de tocilizumab, 7 jours, 2 semaines, conduite, 62 %/25 %, 75 % en 7 jours, médiane 6 jours (1–133), durée 10 jours, ZUMA-5 56 %/15 %, 51/33/28/22/13 %, état de mal 0,3 %, œdème 1,6 % (0,8 %) contre 0,7 % (0,2 %), pic des cytokines ≤ 14 jours et retour en 28 jours [S4]",
+  "FI Actemra (septembre 2026) : 8 mg/kg ≥ 30 kg, 12 mg/kg < 30 kg, 60 min, 3 doses supplémentaires, ≥ 8 h, ≤ 800 mg [S5]",
+  "FI Cefepim Leman (septembre 2025) : adaptation ≤ 50 mL/min, 68 % en 3 h d’hémodialyse, encéphalopathie, myoclonies, état de mal non convulsif [S6]",
+  "FI Holoxan (avril 2023) : 48–72 h, facteurs de risque, dépresseurs du SNC, bleu de méthylène [S7]",
+  "FI Depakine (septembre 2025) : carnitine, bêta-oxydation, cycle de l’urée, topiramate et acétazolamide, hyperammoniémie asymptomatique sans arrêt, carnitine i.v. et hémodialyse en surdosage [S8]",
+  "FI MetronidazoleSINT (février 2026) : arrêt sur convulsions, myoclonies, neuropathie, ataxie, vertiges, confusion ; insuffisance hépatique sévère [S9]",
+  "Hardi 2025 : DFGe < 30, RC 10,06 (IC 5,05–20,03, intervalle log-symétrique R22), creux 20 mg/L et Css 63 mg/L [S13]",
+  "Schmid 2026 (Berne) : 80 patients, 100 mg s.c. jours 0–6, 35 % contre 25 %, p = 0,464 (R16) [S15]",
+  "Imagerie des leucoencéphalopathies toxiques (T2/FLAIR symétrique, diffusion, réversibilité, différentiels) [S20] ; tableaux pédiatriques [S22]"
+ ],
+ "lacunes": [
+  "Aucune information professionnelle suisse d’anakinra (Kineret) trouvée : requêtes AmiKo « Kineret » et « anakinra » (fr et de) vides le 16.10.2026, compendium.ch inaccessible sans connexion, AIPS du 08.10.2026 partiel ; statut d’autorisation suisse non vérifié.",
+  "Aucune source suisse de sémiologie neurologique de l’encéphalopathie toxique ou du délire : WebSearch « Forum Médical Suisse délirium dépistage 4AT recommandations suisses » sans résultat suisse.",
+  "Sensibilité et spécificité de la dysgraphie, de l’aphasie et de l’astérixis non chiffrées dans les sources lues ; seul 19/22 (aphasie expressive) est disponible.",
+  "Recommandations EBMT-JACIE-EHA 2021 et manuel européen des CAR-T non lus en texte intégral par l’audit ; leurs contenus ne sont cités qu’au travers de la revue [S2].",
+  "Disponibilité suisse du lorazépam intraveineux et de la glucarpidase non vérifiée.",
+  "Lithium, monoxyde de carbone, solvants, métaux lourds, encéphalite sous inhibiteurs de points de contrôle : aucune source lue (C24).",
+  "Résumés seulement pour S13 à S24, S26 et S27 ; aucune conduite n’est fondée sur un résumé seul, sauf les seuils de suivi du céfépime, déjà présentés par la leçon comme proposition d’une méta-analyse.",
+  "Captures réelles SEM-22 et SEM-23 non réalisables : le sous-onglet n’existe pas encore dans la leçon."
+ ],
+ "propositions": [
+  "G92_a_semio_clinique.html",
+  "G92_c_pharmacocinetique.html",
+  "G92_c_semio.html",
+  "G92_d_1.html",
+  "G92_pop1_semio.html",
+  "G92_remplacements.json",
+  "glossary_g92_ajouts.py"
+ ],
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+}
