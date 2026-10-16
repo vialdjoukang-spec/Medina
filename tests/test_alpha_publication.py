@@ -21,6 +21,9 @@ class AlphaTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
         self.git('init', '-q')
+        # Aucun gc ni maintenance en arrière-plan : ils écrivent dans .git/objects pendant le nettoyage du dossier.
+        self.git('config', 'gc.auto', '0')
+        self.git('config', 'maintenance.auto', 'false')
         self.git('config', 'user.name', 'Technical fixture')
         self.git('config', 'user.email', 'test@example.invalid')
         self.code, self.actor = 'E11', 'Claude'
