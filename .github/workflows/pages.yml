@@ -51,12 +51,16 @@ jobs:
           python3 tools/espace.py garde "$base" HEAD
       - name: Vérifier les tests Python
         run: python -m unittest discover -s tests -p 'test_*.py'
+      - name: Installer Pillow pour les figures WebP sans perte
+        # Avant la construction : sans Pillow, build_front.py garde les figures d'origine (dédoublonnées seulement).
+        run: python -m pip install Pillow==11.3.0
       - name: Construire MEDINA et ses fragments
         env:
           MEDINA_OUT: ${{ github.workspace }}/dist
         run: |
-          python build_front.py
-          python build_front.py --all-fragments
+          # Polices communes (dossier polices/ publié une fois et mis en cache), pour les pages publiées seulement.
+          MEDINA_POLICES_PARTAGEES=1 python build_front.py
+          MEDINA_POLICES_PARTAGEES=1 python build_front.py --all-fragments
           python tools/build_fragment_work_preview.py --output dist/apercus/infectiologie.html
       - name: Assembler le site
         run: |
@@ -64,17 +68,16 @@ jobs:
           cp dist/MEDINA.html _site/MEDINA.html
           cp dist/fragments/*.html _site/fragments/
           cp dist/apercus/*.html _site/apercus/
-          # Images des cours (C-01 cardiologie) : servies à côté de MEDINA.html et des fragments.
-          mkdir -p _site/images _site/fragments/images
+          # Images des cours, publiées une seule fois à la racine : les fragments y pointent par ../ (build_front.py).
+          mkdir -p _site/images
           cp -R assets/images/. _site/images/
-          cp -R assets/images/. _site/fragments/images/
           # Figures publiées sous licence ouverte des cours du Cycle 2 et suivants.
           if test -d assets/img; then
-            mkdir -p _site/assets/img _site/fragments/assets/img
+            mkdir -p _site/assets/img
             cp -R assets/img/. _site/assets/img/
-            cp -R assets/img/. _site/fragments/assets/img/
           fi
-          python build_index.py --fragments-dir _site/fragments --output _site/index.html
+          if test -d dist/polices; then cp -R dist/polices _site/polices; fi
+          MEDINA_POLICES_PARTAGEES=1 python build_index.py --fragments-dir _site/fragments --output _site/index.html
           python tools/build_tetrade_publication_index.py --output _site/audit
           python tools/build_organisation.py --output _site/organisation.html
           # Plan demandé par Vial : PDF, HTML autonome et données de planification.
