@@ -1,0 +1,1000 @@
+{
+ "mission": "ALPHA1-CLAUDE-G63-MED",
+ "code": "G63",
+ "type_audit": "medical",
+ "base_sha": "32416a2080e67537641040a81252dec0b3e6d137",
+ "source_snapshot_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "generation": 1,
+ "branche": "claude/alpha1/g63-med-g1",
+ "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-G63-MED-g1",
+ "conversation": "alpha1-claude-g63-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-16T05:51:52Z",
+ "date_fin": "2026-10-16T06:07:40Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G63/G63_a.html",
+   "chapters/G63/G63_b.html",
+   "chapters/G63/G63_c.html",
+   "chapters/G63/G63_d.html",
+   "chapters/G63/G63_pop1.html",
+   "chapters/G63/G63_pop2.html",
+   "glossary/g63.py"
+  ],
+  "empreintes_conformes": true,
+  "empreintes": {
+   "chapters/G63/G63_a.html": {
+    "sha256": "82947f41b70256a0116f4ed9d27fcc38b17ae8ae0eecd6b7e50f69566298b399",
+    "manifeste": "82947f41b70256a0116f4ed9d27fcc38b17ae8ae0eecd6b7e50f69566298b399",
+    "conforme": true
+   },
+   "chapters/G63/G63_b.html": {
+    "sha256": "0764b4e3f495f3773b981371bab52f547c2b21ce727d1e10839571b1395f8c4c",
+    "manifeste": "0764b4e3f495f3773b981371bab52f547c2b21ce727d1e10839571b1395f8c4c",
+    "conforme": true
+   },
+   "chapters/G63/G63_c.html": {
+    "sha256": "1721d42e03ee2466d639da5ce5d2fc1bb43db49c84d0c56d7ab483dcb1c717c1",
+    "manifeste": "1721d42e03ee2466d639da5ce5d2fc1bb43db49c84d0c56d7ab483dcb1c717c1",
+    "conforme": true
+   },
+   "chapters/G63/G63_d.html": {
+    "sha256": "9455938e0c123895aae03c84d14fc3ab88b2356af6a6856b5d499cc7c5655ad9",
+    "manifeste": "9455938e0c123895aae03c84d14fc3ab88b2356af6a6856b5d499cc7c5655ad9",
+    "conforme": true
+   },
+   "chapters/G63/G63_pop1.html": {
+    "sha256": "72f33f6f6bebb81829c6859326fc7574530c342c06061a0edea163bc353993b4",
+    "manifeste": "72f33f6f6bebb81829c6859326fc7574530c342c06061a0edea163bc353993b4",
+    "conforme": true
+   },
+   "chapters/G63/G63_pop2.html": {
+    "sha256": "d86e6392e8a33720a78693401d262b6f4af43532807af144d1702ea7040ac9c3",
+    "manifeste": "d86e6392e8a33720a78693401d262b6f4af43532807af144d1702ea7040ac9c3",
+    "conforme": true
+   },
+   "glossary/g63.py": {
+    "sha256": "6ee9cabc547337e28ce806bed53d56ee5e338cbd37fa6aff7dd25139f324d666",
+    "manifeste": "6ee9cabc547337e28ce806bed53d56ee5e338cbd37fa6aff7dd25139f324d666",
+    "conforme": true
+   }
+  },
+  "methode": "Lecture intégrale des 7 fichiers ; ancres vérifiées par script (une occurrence exacte chacune)."
+ },
+ "premiere_source_lue": {
+  "source_id": "S8",
+  "url": "https://doi.org/10.1016/S1474-4422(14)70251-0",
+  "section": "Résumé PubMed 25575710 (NNT et lignes de traitement)"
+ },
+ "synthese": {
+  "BLOQUANT": 0,
+  "MAJEUR": 11,
+  "MINEUR": 13,
+  "ENRICHISSEMENT": 6
+ },
+ "constats": [
+  {
+   "id": "C01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G63/G63_c.html",
+   "ancre": "<div class=\"sci-bar ui\" role=\"tablist\"><button role=\"tab\" aria-selected=\"true\" aria-controls=\"g63-s-anat\" data-s=\"g63-s-anat\">",
+   "constat": "Sémiologie absente de l’onglet Sciences : aucune discipline « Sémiologie fondamentale et analytique » (bouton data-s=\"g63-s-semio\" en tête de .sci-bar). Les éléments sémiologiques existent seulement de façon descriptive dans g63-5 et g63-6 (tableau des fibres, signe clé, monofilament, diapason) : pas de mécanisme par signe, pas de valeur chiffrée hors prédiction de l’ulcère, pas de tableau des syndromes, pas d’examen systématique en étapes, pas de cas corrigés consacrés aux signes. SEM-01, SEM-02, SEM-13 et SEM-19 à « non ».",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "tableau 1 (symptômes, signes)",
+     "citation_courte": "the combination of distal reflex loss and reduced vibration or pinprick sensitivity is a sensitive and specific clinical sign"
+    },
+    {
+     "source_id": "S4",
+     "section": "notes (5) et (6)",
+     "citation_courte": "Sensitivität und Spezifität ... 65-90% resp. 35-85%"
+    },
+    {
+     "source_id": "S14",
+     "section": "résumé",
+     "citation_courte": "a missing Achilles' tendon reflex (68.6% vs. 24.8%)"
+    }
+   ],
+   "proposition": "Insérer la discipline complète de propositions/G63_c_1.html (sept îlots g63-sm-1 à g63-sm-7, figure S1, trois cas corrigés) et les fenêtres de propositions/G63_pop3_1.html dans un nouveau G63_pop3.html.",
+   "justification": "Mécanisme : chaque signe traduit la fonction d’une famille de fibres et le motif dépendant de la longueur. Conséquence : sans cette discipline, le lecteur ne sait ni pourquoi un signe apparaît, ni ce qu’il vaut, ni ce qui rompt le motif. Décision : ajouter la discipline exigée par Vial (option A, décision du 15.10.2026).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G63/G63_c.html",
+   "ancre": "Biochimie et génétique</button></div>",
+   "constat": "L’onglet Sciences ne compte que quatre disciplines réelles (Anatomie, Histologie, Physiologie, Biochimie et génétique) ; l’addendum du lot 2 en exige cinq, puis la Sémiologie. La discipline la plus utile manquante est l’immunologie : elle explique G63.1* (anticorps neuronaux, paraprotéines), G63.5* (vasculite) et les trois diagnostics immunitaires à exclure (Guillain-Barré, PIDC, neuropathie motrice multifocale).",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "texte, phénotypes et anticorps",
+     "citation_courte": "high risk (>70% associated with cancer)"
+    },
+    {
+     "source_id": "S1",
+     "section": "paraprotéines",
+     "citation_courte": "this finding is usually a random coincidence that has no implications for the treatment of PNP"
+    },
+    {
+     "source_id": "S11",
+     "section": "résumé",
+     "citation_courte": "sedimentation rate ≥100 mm/h"
+    }
+   ],
+   "proposition": "Ajouter la discipline Immunologie de propositions/G63_c_2.html (≥ 280 mots, figure accessible, quatre libellés).",
+   "justification": "Mécanisme : trois cibles immunitaires (neurone, myéline ou axone, vaisseau) produisent trois syndromes distincts. Conséquence : sans elles, la catégorie G63.1*/G63.5* n’a pas de science explicative. Décision : cinquième discipline Immunologie.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C03",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "<td>Carences, E40–E64†</td><td>Vitamine B12, thiamine, alcool</td>",
+   "constat": "Périmètre CIM-10-GM inexact : la leçon range la neuropathie alcoolique sous G63.4* et la neuropathie du traitement anticancéreux sous G63.1* (tableaux de g63-1 et g63-4). La CIM-10-GM 2024 code la polyneuropathie alcoolique en G62.1 et la polyneuropathie médicamenteuse en G62.0 (avec code de substance). La « lacune de codage » déclarée dans le piège de g63-1, dans g63-chimio et dans le glossaire (G62.0) est donc tranchée par la source.",
+   "preuve": [
+    {
+     "source_id": "S15",
+     "section": "G62.0, G62.1, G62.2",
+     "citation_courte": "G62.1 Alkohol-Polyneuropathie ; G62.0 Arzneimittelinduzierte Polyneuropathie"
+    },
+    {
+     "source_id": "S15",
+     "section": "G63.1*",
+     "citation_courte": "Polyneuropathie bei Neubildungen (C00-D48†)"
+    }
+   ],
+   "proposition": "Appliquer propositions/G63_a_1.html (cellules corrigées, paragraphe et tableau G62/G63, piège réécrit) ; reporter dans g63-4, g63-chimio et glossary/g63.py.",
+   "justification": "Mécanisme : le code suit la cause de la neuropathie, non le terrain. Conséquence : rubrique 2 (périmètre) faussée sur deux des causes les plus fréquentes du cours. Décision : corriger les rattachements et lever la lacune.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G63/G63_d.html",
+   "ancre": "Quatre classes de première ligne à efficacité comparable (nombre de patients à traiter de 6,4 à 7,7)",
+   "constat": "Affirmation inexacte sur un point décisionnel : la leçon présente les quatre classes de première ligne comme d’efficacité comparable (NNT 6,4 à 7,7) et omet le NNT des antidépresseurs tricycliques, plus bas. Le résumé de 2015 précise que les NNT étaient plus bas pour les tricycliques ; la mise à jour de 2025 donne 4,6 pour les tricycliques, 8,9 pour les ligands α2δ et 7,4 pour les inhibiteurs de la recapture. Même erreur dans g63-9.2 (« Le choix ... non d’un avantage net d’efficacité »), dans la fenêtre g63-nnt, le Pareto g63-pharma, l’encadré key de g63-9 et la figure 5.",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "résumé",
+     "citation_courte": "NNTs were lower for tricyclic antidepressants, strong opioids, tramadol, and botulinum toxin A"
+    },
+    {
+     "source_id": "S9",
+     "section": "résumé",
+     "citation_courte": "tricyclic antidepressants (TCAs) NNT=4·6 (95% CI 3·2-7·7), NNH=17·1"
+    }
+   ],
+   "proposition": "Remplacer l’encadré key de g63-p-1 et insérer le tableau NNT/NNH de propositions/G63_d_1.html ; corriger g63-9.2, g63-nnt, la figure 5 et le Pareto en conséquence.",
+   "justification": "Mécanisme : NNT et NNH mesurent ensemble bénéfice et tolérance. Conséquence : affirmer l’équivalence masque que le tricyclique soulage davantage mais gêne davantage. Décision : présenter NNT et NNH de la source la plus récente.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C05",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "repose sur la méta-analyse du groupe d’intérêt spécialisé sur la douleur neuropathique (NeuPSIG) de 2015 et sur la recommandation européenne de 2010",
+   "constat": "Source obsolète sur la stratégie de la douleur neuropathique : NeuPSIG a révisé ses recommandations en 2025 (313 essais). La deuxième ligne devient capsaïcine 8 %, capsaïcine crème et lidocaïne 5 % ; les opioïdes (dont le tramadol, deuxième ligne en 2015) passent en troisième ligne avec la toxine botulique A et la stimulation magnétique transcrânienne répétée. La leçon place encore le tramadol en deuxième ligne (g63-9.2, g63-p-1, g63-douleur).",
+   "preuve": [
+    {
+     "source_id": "S9",
+     "section": "résumé",
+     "citation_courte": "weak recommendation for BTX-A, rTMS, and opioids as third-line treatments"
+    },
+    {
+     "source_id": "S8",
+     "section": "résumé",
+     "citation_courte": "weak recommendation ... second line for lidocaine patches, capsaicin high-concentration patches, and tramadol"
+    }
+   ],
+   "proposition": "Fonder la stratégie sur Soliman et coll. 2025 (propositions/G63_d_1.html) ; mentionner 2015 comme version antérieure dans la fenêtre g63-douleur.",
+   "justification": "Mécanisme : la source primaire applicable la plus récente l’emporte (consigne de Vial). Conséquence : le tramadol reste présenté comme option précoce alors que la révision le relègue. Décision : actualiser les lignes.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C06",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G63/G63_d.html",
+   "ancre": "Les sources lues ne listent pas d’autres interactions ; la monographie complète doit être consultée.",
+   "constat": "Contre-indications de la duloxétine incomplètes alors que la FI suisse lue les donne : association aux inhibiteurs du CYP1A2 (fluvoxamine, ciprofloxacine, énoxacine) et instauration en cas d’hypertension artérielle non équilibrée. La phrase « Les sources lues ne listent pas d’autres interactions » est contredite par la source citée. La ciprofloxacine est d’usage courant chez le diabétique (infection du pied, infection urinaire).",
+   "preuve": [
+    {
+     "source_id": "S18",
+     "section": "Contre-indications",
+     "citation_courte": "ne doit pas être associé à des inhibiteurs du CYP1A2 comme la fluvoxamine, la ciprofloxacine ou l'énoxacine"
+    },
+    {
+     "source_id": "S18",
+     "section": "Contre-indications",
+     "citation_courte": "hypertension artérielle non équilibrée qui pourrait les exposer à un risque potentiel de crise hypertensive"
+    }
+   ],
+   "proposition": "Remplacer l’alert de g63-p-3 par le bloc 1 de propositions/G63_d_2.html ; compléter la fenêtre g63-duloxetine.",
+   "justification": "Mécanisme : l’inhibition du CYP1A2 augmente les concentrations de duloxétine. Conséquence : risque de surdosage lors d’une antibiothérapie banale. Décision : énoncer toutes les contre-indications de la FI.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C07",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "Les gabapentinoïdes (prégabaline, gabapentine) se règlent sur la clairance de la créatinine ; la duloxétine est contre-indiquée au-dessous de 30 mL/min.",
+   "constat": "Dans le paragraphe « Insuffisance rénale et dialyse », la leçon laisse entendre que la prégabaline s’adapte chez le dialysé. La FI suisse de Lyrica (juillet 2026) dit que la prégabaline « ne doit pas être utilisée » si la clairance est inférieure à 30 mL/min. Le tableau g63-p-2 et la fenêtre g63-pregabaline adoucissent la formule (« l’information consultée ne prévoit pas l’emploi »). Le cas 5 (clairance 25 mL/min) est cohérent pour la duloxétine mais ne dit pas que la prégabaline est elle aussi exclue.",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "Posologie, troubles de la fonction rénale",
+     "citation_courte": "La prégabaline ne doit pas être utilisée chez les patients présentant une insuffisance rénale sévère (Clcr <30 ml/min)."
+    },
+    {
+     "source_id": "S17",
+     "section": "Posologie, hémodialyse",
+     "citation_courte": "dose initiale (loading dose) de 300-400 mg ... 200-300 mg ... après chaque période d'hémodialyse de 4 heures"
+    }
+   ],
+   "proposition": "Paragraphe 1 de propositions/G63_b_2.html ; remplacer dans g63-p-2 et g63-pregabaline « l’information consultée ne prévoit pas l’emploi » par « ne doit pas être utilisée » ; ajouter dans la correction du cas 5 que la prégabaline est aussi exclue.",
+   "justification": "Mécanisme : la prégabaline est éliminée sous forme inchangée par le rein et s’accumule. Conséquence : un dialysé pourrait recevoir un produit exclu par la monographie. Décision : formulation de la FI et gabapentine adaptée comme seule option α2δ.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C08",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G63/G63_d.html",
+   "ancre": "<p><b>Effets indésirables à surveiller.</b> Sous prégabaline, une prise de poids de 7 % ou plus a été observée chez 5,2 % des diabétiques",
+   "constat": "Mises en garde majeures absentes pour les gabapentinoïdes, alors qu’un patient type du cours est dépendant de l’alcool : mésusage et dépendance (y compris aux doses thérapeutiques), évaluation du risque avant prescription, arrêt progressif sur des semaines à des mois, dépression respiratoire et décès en association avec les opioïdes (désormais troisième ligne).",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "Mises en garde",
+     "citation_courte": "Des cas de mésusage, d'usage nocif et de dépendance pouvant également survenir à des doses thérapeutiques ont été rapportés"
+    },
+    {
+     "source_id": "S16",
+     "section": "Posologie, arrêt",
+     "citation_courte": "réduction progressive sur plusieurs semaines, voire plusieurs mois"
+    },
+    {
+     "source_id": "S17",
+     "section": "Mises en garde",
+     "citation_courte": "La gabapentine a été associée à une dépression respiratoire sévère"
+    }
+   ],
+   "proposition": "Insérer le bloc 2 de propositions/G63_d_2.html après « Effets indésirables à surveiller » et l’ajouter aux fenêtres g63-pregabaline et g63-gabapentine.",
+   "justification": "Mécanisme : effet dépresseur central additif et potentiel d’usage nocif. Conséquence : risque élevé chez le patient alcoolique ou sous opioïde. Décision : rendre la mise en garde visible dans l’onglet et les fenêtres.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C09",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "(4) Une avitaminose sévère en thiamine (béribéri, encéphalopathie de Wernicke, cardiomyopathie alcoolique) : thiamine par voie intramusculaire ou intraveineuse lente.",
+   "constat": "L’urgence thiamine est incomplète : ni critères cliniques de l’encéphalopathie de Wernicke chez l’alcoolique (deux signes sur quatre), ni règle « thiamine avant tout glucide », ni dose de la recommandation européenne (200 mg trois fois par jour, de préférence IV). La leçon ne donne que le plafond de la FI Benerva de 2019 (jusqu’à 200 mg par jour). Le contentieux FI/recommandation n’est pas présenté, contrairement à la consigne sur les contentieux.",
+   "preuve": [
+    {
+     "source_id": "S10",
+     "section": "résumé, recommandations 2 et 5",
+     "citation_courte": "200 mg thrice daily, preferably intravenously ... before any carbohydrate"
+    },
+    {
+     "source_id": "S22",
+     "section": "Posologie",
+     "citation_courte": "à raison de doses quotidiennes pouvant atteindre 200 mg"
+    }
+   ],
+   "proposition": "Appliquer propositions/G63_b_1.html (alert reformulée, fenêtre de contentieux).",
+   "justification": "Mécanisme : le glucose augmente la consommation de thiamine chez un patient carencé. Conséquence : une perfusion glucosée avant la thiamine peut précipiter ou aggraver l’encéphalopathie, et une dose basse peut être insuffisante. Décision : critères, ordre d’administration et contentieux de dose explicites.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C10",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "dans le type 1, cinq ans après le diagnostic puis chaque année (Feldman et coll., 2019)",
+   "constat": "Conduite fondée sur une recommandation nord-américaine : le délai de dépistage dans le diabète de type 1 (cinq ans après le diagnostic) est, dans la revue de Feldman et coll., attribué à l’ADA et à la Canadian Diabetes Association. Aucune source suisse ou européenne lue ne fixe ce délai.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "section dépistage",
+     "citation_courte": "ADA ... recommend screening ... 5 years after diagnosis and then annually for type 1"
+    },
+    {
+     "source_id": "S3",
+     "section": "§ 1",
+     "citation_courte": "Ab Diagnosezeitpunkt des DM2 mindestens einmal jährlich"
+    }
+   ],
+   "proposition": "Paragraphe 2 de propositions/G63_b_2.html ; déclarer la lacune pour le type 1 et rechercher une source SSED ou européenne.",
+   "justification": "Mécanisme : règle du projet (aucune recommandation américaine comme fondement d’une conduite). Conséquence : un intervalle de dépistage décisionnel repose sur une source exclue. Décision : garder la règle suisse du type 2 et déclarer la lacune du type 1.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C11",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G63/G63_c.html",
+   "ancre": "aria-label=\"Figure 5 — Nombres de patients à traiter dans la douleur neuropathique\"",
+   "constat": "Figure 5 illisible à 390 px et incomplète : viewBox de 640 de large, texte rendu à 7,3 px (mesure Chromium), étiquettes « Recapture sérotonine et noradrénaline » et « Prégabaline » qui se chevauchent ; elle porte des valeurs décisionnelles (NNT) et omet la classe au NNT le plus bas (tricycliques). Les hauteurs ne sont pas exactement proportionnelles (6,4 → 120 ; 7,7 → 134). Données de 2015 dépassées (C05).",
+   "preuve": [
+    {
+     "source_id": "S9",
+     "section": "résumé",
+     "citation_courte": "TCAs NNT=4·6 ... α2δ-ligands NNT=8·9 ... SNRIs NNT=7·4"
+    },
+    {
+     "source_id": "S8",
+     "section": "résumé",
+     "citation_courte": "NNTs were lower for tricyclic antidepressants"
+    }
+   ],
+   "proposition": "Remplacer la figure par le tableau NNT/NNH de propositions/G63_d_1.html, ou redessiner un SVG de 360 de large à 14 px avec les quatre classes de première et deuxième ligne de 2025, étiquettes sur deux lignes.",
+   "justification": "Mécanisme : un SVG de 640 réduit à 350 px divise la police par 1,8. Conséquence : valeurs et étiquettes illisibles sur téléphone, comparaison faussée par l’omission. Décision : figure redessinée ou remplacée.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C12",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G63/G63_c.html",
+   "ancre": "aria-label=\"Figure 3 — Fibres longues et distribution en chaussettes\"",
+   "constat": "Figures 3 et 4 : viewBox de 640 de large, texte rendu à 7,3 px à 390 px (mesure Chromium). Aucune valeur décisionnelle, mais lecture difficile sur téléphone.",
+   "preuve": [],
+   "proposition": "Redessiner en viewBox 360 de large, font-size 14, textes sur deux lignes (modèle des figures 1, 2 et 6, rendues à 13,2 px).",
+   "justification": "Mécanisme : réduction d’échelle. Conséquence : confort de lecture. Décision : redessin.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C13",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "L’hypothèse de l’insulinorésistance neuronale explique le moindre bénéfice du contrôle glycémique dans le type 2.",
+   "constat": "Causalité surévaluée : Feldman et coll. écrivent que l’insulinorésistance neuronale « pourrait expliquer en partie » le moindre bénéfice. Même formulation dans g63-diab-meca, g63-contglyc et le key « Science → clinique » de g63-s-bioch.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "section mécanismes",
+     "citation_courte": "might be, in part, due to"
+    }
+   ],
+   "proposition": "« L’insulinorésistance neuronale pourrait expliquer en partie ce moindre bénéfice ; c’est une hypothèse. »",
+   "justification": "Addendum § 3 : ne pas transformer une hypothèse en mécanisme établi.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C14",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "l’incapacité de sentir le filament est associée à une neuropathie des grosses fibres, alors que la neuropathie des petites fibres laisse la neurographie normale (Feldman et coll., 2019)",
+   "constat": "Attribution erronée : le lien entre monofilament manqué et neuropathie des grosses fibres ne figure pas dans Feldman et coll. ; il vient du document suisse QualiCCare 2016 (note 5).",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "note (5)",
+     "citation_courte": "Das Unvermögen, den Druck des 10g Nylonfilaments an ≥ 1 Stelle zu spüren, ist mit dem Vorhandensein einer klinisch signifikanten ‚large-fiber’- Neuropathie assoziiert"
+    },
+    {
+     "source_id": "S2",
+     "section": "section diagnostic",
+     "citation_courte": "higher insensitivities predict a high risk of foot ulceration"
+    }
+   ],
+   "proposition": "Citer QualiCCare 2016 pour le monofilament et Feldman et coll. pour la neurographie normale des petites fibres.",
+   "justification": "Traçabilité des sources (loi 1 du prompt de vérité).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C15",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "Troisièmement, une étude de population norvégienne attribue environ 10 % des polyneuropathies à l’alcool.",
+   "constat": "Chiffre non attribué : il vient de l’étude de Mygland (Vest-Agder) citée par Julian et coll. 2019. De même, le couple « environ 30 % contre 11 % » (g63-4, g63-5, g63-alcool) vient de Wetterling cité par Julian et coll. (29,6 % continus, 29,9 % fréquents, 11,3 % épisodiques), non de Sommer et coll., qui ne donne pas ces chiffres.",
+   "preuve": [
+    {
+     "source_id": "S6",
+     "section": "section prévalence",
+     "citation_courte": "represented 10% of polyneuropathies in the region"
+    },
+    {
+     "source_id": "S6",
+     "section": "section facteurs de risque",
+     "citation_courte": "continuous and frequent heavy drinkers (29.6 and 29.9% respectively) than episodic drinkers (11.3%)"
+    }
+   ],
+   "proposition": "Ajouter « (Mygland, cité par Julian et coll., 2019) » et « (Wetterling, cité par Julian et coll., 2019) ».",
+   "justification": "Traçabilité.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C16",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G63/G63_pop1.html",
+   "ancre": "Sommer et coll. citent aussi CV2/CRMP5 et l’amphiphysine",
+   "constat": "Attribution erronée (fenêtre g63-neuronopathie ; aussi g63-s-bioch « selon Sommer et coll. » et glossaire CV2) : Sommer et coll. 2018 ne mentionnent ni anti-Hu, ni CV2/CRMP5, ni amphiphysine, ni syndrome paranéoplasique. Les faits sont exacts, mais leur source est Graus et coll. 2021.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "recherche plein texte",
+     "citation_courte": "aucune occurrence de Hu, CV2, CRMP5, amphiphysin, paraneoplastic"
+    },
+    {
+     "source_id": "S7",
+     "section": "phénotypes",
+     "citation_courte": "Hu ... followed by CV2/CRMP5 and amphiphysin ... SCLC, or breast cancer"
+    }
+   ],
+   "proposition": "Remplacer « Sommer et coll. citent aussi » par « Graus et coll. citent aussi » dans g63-neuronopathie, g63-s-bioch et glossary/g63.py (CV2).",
+   "justification": "Traçabilité.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C17",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "si le patient a moins de 65 ans (homme) ou de 64 ans (femme)",
+   "constat": "Limite d’âge obsolète : le document QualiCCare de 2013 retient 64 ans pour les femmes, âge de la retraite de l’époque. Depuis la réforme AVS 21, l’âge de référence des femmes nées en 1962 est de 64 ans et 6 mois (2026) et atteint 65 ans dès la génération 1964. Même phrase dans g63-pied.",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "tableau, catégorie 1",
+     "citation_courte": "IV-Anmeldung für diabetesgerechte Schuhe bei Patient <65J M / <64J W"
+    },
+    {
+     "source_id": "S24",
+     "section": "calendrier",
+     "citation_courte": "2026 : année de naissance 1962 : 64 ans et 6 mois"
+    }
+   ],
+   "proposition": "« L’assurance-invalidité peut prendre en charge des chaussures adaptées au diabète avant l’âge de référence AVS (65 ans ; pour les femmes nées de 1961 à 1963, 64 ans et 3 à 9 mois). La correspondance exacte avec la circulaire AI reste à vérifier. »",
+   "justification": "Spécificité suisse datée ; correction sans conséquence clinique.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C18",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G63/G63_d.html",
+   "ancre": "<td>Intervalle minimal de 60 jours entre applications</td>",
+   "constat": "Posologie de Qutenza incomplète : la FI suisse précise qu’un renouvellement avant 90 jours ne s’envisage qu’après une évaluation minutieuse, avec un minimum de 60 jours, et une réévaluation après 3 traitements.",
+   "preuve": [
+    {
+     "source_id": "S20",
+     "section": "Posologie",
+     "citation_courte": "Un renouvellement de traitement après moins de 90 jours ne peut être envisagé ... qu'après une évaluation minutieuse ... Un intervalle minimum de 60 jours"
+    }
+   ],
+   "proposition": "« Intervalle habituel de 90 jours ; 60 jours au minimum après évaluation minutieuse ; réévaluation après 3 traitements. »",
+   "justification": "Fidélité à la FI.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C19",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G63/G63_d.html",
+   "ancre": "<td>Opioïdes forts, toxine botulique A</td>",
+   "constat": "Emplois hors indication non signalés (addendum § 5) : la toxine botulique A n’a pas d’indication suisse de douleur neuropathique ; aucune spécialité de lidocaïne 5 % en emplâtre n’a été trouvée dans AmiKo ; la gabapentine n’est autorisée que pour la douleur de la neuropathie diabétique et de la névralgie postherpétique (pas pour les neuropathies alcoolique, urémique ou chimio-induites).",
+   "preuve": [
+    {
+     "source_id": "S25",
+     "section": "champ indication",
+     "citation_courte": "aucune douleur neuropathique"
+    },
+    {
+     "source_id": "S17",
+     "section": "Indications",
+     "citation_courte": "Traitement des douleurs neuropathiques de l'adulte lors de neuropathie diabétique ou de névralgie postherpétique."
+    }
+   ],
+   "proposition": "Ajouter la colonne « Statut en Suisse » du tableau de propositions/G63_d_1.html et la mention « hors indication » partout où ces produits sont cités.",
+   "justification": "Règle de l’addendum sur le statut des indications.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C20",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G63/G63_c.html",
+   "ancre": "<div class=\"key\"><b>Science → traitement.</b> Les vitamines se substituent selon la carence ; l’éviction du toxique est le traitement cité en cas d’exposition.</div>",
+   "constat": "Contrat des sciences non satisfait : tests/audit_sciences.py échoue sur les quatre disciplines (« lien absent : À retenir. »). Aucune discipline ne se ferme par un encadré « À retenir. ».",
+   "preuve": [],
+   "proposition": "Ajouter un encadré <div class=\"key\"><b>À retenir.</b> …</div> à la fin de chaque discipline (g63-s-anat, -histo, -physio, -bioch).",
+   "justification": "Contrôle mécanique du projet (audit_sciences.py, base 32416a20).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C21",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "Une paraprotéine oriente vers une hémopathie traitable",
+   "constat": "Formulation trop affirmative : selon Sommer et coll., une paraprotéine trouvée chez un patient atteint de polyneuropathie est le plus souvent une coïncidence sans conséquence thérapeutique ; seuls un taux élevé ou un phénotype évocateur (IgM anti-MAG, POEMS) orientent vers une hémopathie.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "paraprotéines",
+     "citation_courte": "this finding is usually a random coincidence that has no implications for the treatment of PNP"
+    }
+   ],
+   "proposition": "« Une paraprotéine est souvent une coïncidence ; un taux élevé ou un phénotype évocateur (neuropathie démyélinisante distale à IgM anti-MAG, POEMS) oriente vers une hémopathie. »",
+   "justification": "Addendum § 4 : ne pas transformer une association en cause.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C22",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "Le suivi est au moins hebdomadaire à tous les niveaux.",
+   "constat": "Ambiguïté : dans le guide QualiCCare 2023, le suivi au moins hebdomadaire concerne le pied diabétique aigu (ulcère, Charcot), non tout pied à risque. Placée après les drapeaux rouges sans ce contexte, la phrase peut contredire les fréquences annuelles à trimestrielles de g63-9.3.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "stratification",
+     "citation_courte": "Unabdingbar ist ein enges Follow-up auf allen Stufen (mind. wöchentlich)!"
+    }
+   ],
+   "proposition": "« Pour un ulcère ou un pied aigu, le suivi est au moins hebdomadaire, quel que soit le niveau de soins. »",
+   "justification": "Clarté d’une règle de fréquence.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C23",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "La deuxième porte sur la metformine, qui impose de contrôler la vitamine B12, et sur une exposition au protoxyde d’azote.",
+   "constat": "Hiérarchie des sources : la règle sur la metformine est attribuée à une revue nord-américaine (Feldman et coll.) alors que la FI suisse de Glucophage (octobre 2025) la fonde : contrôle régulier, par exemple annuel, surtout en cas d’anémie ou de neuropathie périphérique ; risque croissant avec la dose et la durée.",
+   "preuve": [
+    {
+     "source_id": "S23",
+     "section": "Mises en garde",
+     "citation_courte": "Il est recommandé de contrôler le taux sérique de vitamine B12 à intervalles réguliers (par ex. chaque année), en particulier chez les patients souffrant d’anémie ou de neuropathie périphérique."
+    }
+   ],
+   "proposition": "« La deuxième porte sur la metformine : son information professionnelle suisse recommande de contrôler la vitamine B12 régulièrement, par exemple chaque année, surtout en cas de neuropathie, car le risque de carence croît avec la dose et la durée. »",
+   "justification": "Loi 2 et 3 du prompt de vérité (source suisse, FI).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C24",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "Corticoïdes en monothérapie pendant au moins 6 mois en première ligne ; cyclophosphamide, azathioprine ou méthotrexate en cas de progression rapide ; entretien de 18 à 24 mois",
+   "constat": "Nuance omise : l’entretien de 18 à 24 mois concerne les patients en rémission après une association, et se fait par azathioprine ou méthotrexate ; le cyclophosphamide est réservé aux formes sévères, de préférence en bolus intraveineux.",
+   "preuve": [
+    {
+     "source_id": "S11",
+     "section": "résumé, recommandations 4 et 5",
+     "citation_courte": "in patients achieving clinical remission with combination therapy, maintenance therapy should be continued for 18-24 months with azathioprine or methotrexate"
+    }
+   ],
+   "proposition": "« … ; après rémission sous association, entretien de 18 à 24 mois par azathioprine ou méthotrexate ; cyclophosphamide pour les formes sévères, en bolus intraveineux. »",
+   "justification": "Fidélité à la recommandation.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C25",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "<td>Hospitalisation rapide : risque de troubles conductifs cardiaques et d’insuffisance respiratoire</td>",
+   "constat": "Le diagnostic différentiel du Guillain-Barré ne donne ni le traitement européen (IgIV, échanges plasmatiques), ni l’outil de risque respiratoire, ni la requalification en PIDC à début aigu au-delà de 8 semaines.",
+   "preuve": [
+    {
+     "source_id": "S12",
+     "section": "résumé",
+     "citation_courte": "IVIg 0.4 g/kg for 5 days, in patients within 2 weeks ... if unable to walk unaided ... mEGRIS"
+    },
+    {
+     "source_id": "S12",
+     "section": "résumé",
+     "citation_courte": "acute-onset CIDP ... if progression continues after 8 weeks ... around 5%"
+    }
+   ],
+   "proposition": "Paragraphe 3 de propositions/G63_b_2.html ; phrase sur A-CIDP dans g63-pidc.",
+   "justification": "Point d’examen fédéral (urgence neurologique) sourcé en Europe.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C26",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G63/G63_d.html",
+   "ancre": "<td>Réponse insuffisante : penser à une carence associée en fer ou en folates</td>",
+   "constat": "Surveillance de la substitution en vitamine B12 incomplète : la FI de Vitarubine Dépôt demande de contrôler régulièrement la kaliémie (érythropoïèse relancée) et de traiter une carence en folates associée ; elle signale aussi un risque thromboembolique transitoire chez les patients prédisposés.",
+   "preuve": [
+    {
+     "source_id": "S21",
+     "section": "Mises en garde",
+     "citation_courte": "il est indispensable de vérifier régulièrement le taux sérique de potassium"
+    },
+    {
+     "source_id": "S21",
+     "section": "Indications",
+     "citation_courte": "Il est nécessaire de dépister et de traiter en conséquence un manque en acide folique"
+    }
+   ],
+   "proposition": "Bloc 3 de propositions/G63_d_2.html dans g63-hydroxocobalamine.",
+   "justification": "Sécurité de la substitution.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C27",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "Ces éléments permettent de classer le risque du pied",
+   "constat": "Valeur sémiologique des pouls et de l’index de pression systolique absente de l’examen du pied : pouls pédieux absent chez jusqu’à 8 % des sujets sains, tibial postérieur chez jusqu’à 3 % ; IPS < 0,9 hautement suspect ; IPS > 1,3 (médiacalcose) chez 30 % des patients avec ulcère.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "notes (3) et (4)",
+     "citation_courte": "bei bis zu 8% gesunder Personen der dorsalis pedis Puls und bei bis zu 3% der tibialis posterior Puls ... Ein ABI < 0,9 ist hochsuspekt"
+    }
+   ],
+   "proposition": "Fenêtre g63-sm-pouls de propositions/G63_pop3_1.html, reliée depuis g63-6.",
+   "justification": "SEM-08 et rubrique 8.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C28",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "est la combinaison d’une aréflexie distale et d’une diminution de la perception vibratoire ou de la piqûre, sensible et spécifique selon Sommer et coll. (2018)",
+   "constat": "La limite du réflexe achilléen isolé n’est pas chiffrée : dans une cohorte autrichienne de 2022 diabétiques, il manquait chez 24,8 % des patients à vibration normale (68,6 % si vibration anormale).",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "résumé",
+     "citation_courte": "a missing Achilles' tendon reflex (68.6% vs. 24.8%, P < 0.0001)"
+    }
+   ],
+   "proposition": "Fenêtre g63-sm-achille de propositions/G63_pop3_1.html ; une phrase dans g63-signes.",
+   "justification": "Valeur d’un signe isolé (SEM-08, SEM-10).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C29",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G63/G63_c.html",
+   "ancre": "Biopsie cutanée (étalon) ; tests sensitifs quantitatifs",
+   "constat": "L’onglet des examens ne présente pas la place des anticorps antigangliosides dans le Guillain-Barré : valeur limitée dans la forme typique, anti-GQ1b seulement si un syndrome de Miller Fisher est suspecté ; anticorps nodaux et paranodaux si une nodopathie auto-immune est suspectée.",
+   "preuve": [
+    {
+     "source_id": "S12",
+     "section": "résumé",
+     "citation_courte": "testing for anti-ganglioside antibodies is of limited clinical value ... anti-GQ1b antibody testing should be considered when Miller Fisher syndrome (MFS) is suspected"
+    }
+   ],
+   "proposition": "Une ligne dans le tableau de g63-e-1 (« Une forme aiguë immunitaire est-elle suspectée ? ») et la discipline Immunologie (propositions/G63_c_2.html).",
+   "justification": "Proportionnalité des examens.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C30",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G63/G63_d.html",
+   "ancre": "<td>Duloxétine (Duloxetin-Mepha)</td>",
+   "constat": "Mises en garde utiles de la duloxétine absentes : hausse moyenne de la pression artérielle de 1 à 2 mmHg, crises hypertensives rapportées, hyponatrémie (surtout chez le sujet âgé).",
+   "preuve": [
+    {
+     "source_id": "S18",
+     "section": "Mises en garde",
+     "citation_courte": "élévation moyenne de la pression artérielle de 1-2 mm Hg"
+    },
+    {
+     "source_id": "S18",
+     "section": "Mises en garde",
+     "citation_courte": "Des cas d'hyponatrémie ... ont été rarement rapportés"
+    }
+   ],
+   "proposition": "Ajouter dans g63-duloxetine : « Surveillance : pression artérielle (hausse moyenne de 1 à 2 mmHg, crises hypertensives rapportées) et natrémie chez le sujet âgé. »",
+   "justification": "Terrain diabétique hypertendu et âgé.",
+   "ancre_occurrences": 1
+  }
+ ],
+ "matrice_20": [
+  {
+   "rang": 1,
+   "rubrique": "Question clinique et enjeu pour l’examen fédéral",
+   "statut": "couvert",
+   "ancre": "g63-0 (trois vignettes)"
+  },
+  {
+   "rang": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "partiel",
+   "ancre": "g63-1 ; rattachements G62.1 (alcool) et G62.0 (médicaments) erronés (C03)"
+  },
+  {
+   "rang": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "couvert",
+   "ancre": "g63-1 (distribution, fibres, évolution ; quatre formes du diabète)"
+  },
+  {
+   "rang": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "partiel",
+   "ancre": "g63-2 ; aucune donnée suisse (lacune déclarée par la leçon)"
+  },
+  {
+   "rang": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "partiel",
+   "ancre": "g63-3, g63-s-anat, g63-s-histo ; structure normale du nerf non décrite (déclaré)"
+  },
+  {
+   "rang": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "couvert",
+   "ancre": "g63-4 ; G63.0 hors Lyme, G63.3 hors amylose et G63.6 sans source (déclaré)"
+  },
+  {
+   "rang": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "partiel",
+   "ancre": "g63-5 ; seules les fréquences de la douleur sont chiffrées"
+  },
+  {
+   "rang": 8,
+   "rubrique": "Examen clinique (sensibilité/spécificité)",
+   "statut": "partiel",
+   "ancre": "g63-6, g63-e-2 ; valeurs seulement pour la prédiction de l’ulcère (C27, C28)"
+  },
+  {
+   "rang": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "partiel",
+   "ancre": "g63-8 ; Wernicke incomplet (C09), traitement du Guillain-Barré absent (C25)"
+  },
+  {
+   "rang": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "couvert",
+   "ancre": "g63-e-1 à g63-e-4 ; valeurs de référence de laboratoire non données (déclaré)"
+  },
+  {
+   "rang": 11,
+   "rubrique": "Diagnostic différentiel",
+   "statut": "couvert",
+   "ancre": "g63-7 (tableau avec éléments discriminants)"
+  },
+  {
+   "rang": 12,
+   "rubrique": "Prise en charge suisse (FI datées)",
+   "statut": "partiel",
+   "ancre": "g63-9, g63-p-1 à g63-p-4 ; C04 à C08, C18, C19"
+  },
+  {
+   "rang": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "couvert",
+   "ancre": "g63-10, g63-pronostic-pied"
+  },
+  {
+   "rang": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "partiel",
+   "ancre": "g63-10 ; délai type 1 d’origine nord-américaine (C10)"
+  },
+  {
+   "rang": 15,
+   "rubrique": "Situations particulières",
+   "statut": "partiel",
+   "ancre": "g63-11 (grossesse, âgé, rein, protoxyde d’azote) ; enfant absent"
+  },
+  {
+   "rang": 16,
+   "rubrique": "Spécificités suisses",
+   "statut": "partiel",
+   "ancre": "g63-9.3 (AI, âge obsolète C17), QualiCCare ; Suva, aptitude à la conduite et remboursement absents"
+  },
+  {
+   "rang": 17,
+   "rubrique": "Critères formels du diagnostic",
+   "statut": "couvert",
+   "ancre": "g63-12 div.alert"
+  },
+  {
+   "rang": 18,
+   "rubrique": "Paramètres clés chiffrés",
+   "statut": "couvert",
+   "ancre": "g63-12 div.key (NNT à corriger, C04)"
+  },
+  {
+   "rang": 19,
+   "rubrique": "Sous-codes CIM-10-GM couverts",
+   "statut": "partiel",
+   "ancre": "tableau de g63-1 ; G63.6 sans contenu ; frontière G62 non traitée (C03)"
+  },
+  {
+   "rang": 20,
+   "rubrique": "Points d’examen fédéral",
+   "statut": "partiel",
+   "ancre": "pièges et cas présents (g63-7, g63-e-5) ; aucune correspondance PROFILES explicite"
+  }
+ ],
+ "semiologie": {
+  "statut": "absente",
+  "constat": "C01",
+  "gravite": "MAJEUR",
+  "fondamentale": {
+   "statut": "partielle",
+   "ancres": [
+    "g63-5 (tableau des familles de fibres)",
+    "g63-6 (signe clé, monofilament, diapason)",
+    "g63-signes",
+    "g63-mono",
+    "g63-diapason"
+   ],
+   "manques": [
+    "mécanisme causal par signe",
+    "valeur chiffrée hors prédiction de l’ulcère",
+    "réflexe achilléen isolé et sa limite",
+    "réflexes vifs et signes pyramidaux de la myéloneuropathie",
+    "pouls du pied et leur valeur"
+   ]
+  },
+  "analytique": {
+   "statut": "absente",
+   "ancres": [
+    "g63-7 (quatre questions, figure 2)"
+   ],
+   "manques": [
+    "tableau des syndromes",
+    "raisonnement en cinq étapes",
+    "examen systématique numéroté",
+    "synthèse présentée",
+    "trois cas corrigés sur les signes"
+   ]
+  },
+  "grille_SEM": {
+   "SEM-01": "non",
+   "SEM-02": "non",
+   "SEM-03": "non (audit_sciences.py échoue déjà sur les quatre disciplines, C20)",
+   "SEM-04": "oui pour l’existant (test_v7.py --static G63 : OK) ; sans objet pour la discipline absente",
+   "SEM-05": "non (tableau de g63-5 sans colonnes mécanisme, valeur et piège)",
+   "SEM-06": "partiel : technique du monofilament et du diapason seulement (g63-mono, g63-diapason)",
+   "SEM-07": "non",
+   "SEM-08": "partiel : valeurs du monofilament sourcées (S4) ; absences non déclarées pour les autres signes",
+   "SEM-09": "partiel (normes du monofilament et du diapason)",
+   "SEM-10": "partiel (pièges du monofilament, de la callosité, des petites fibres)",
+   "SEM-11": "non",
+   "SEM-12": "non (g63-7 donne quatre questions, pas les cinq étapes)",
+   "SEM-13": "non dans les Sciences ; alert présent dans g63-8",
+   "SEM-14": "oui dans g63-7 (tableau du différentiel)",
+   "SEM-15": "non",
+   "SEM-16": "non",
+   "SEM-17": "non (aucun cas consacré à la valeur d’un signe)",
+   "SEM-18": "sans objet (vérification navigateur non réalisée)",
+   "SEM-19": "non pour la discipline absente ; non pour l’existant (C10, C23)",
+   "SEM-20": "sans objet",
+   "SEM-21": "sans objet",
+   "SEM-22": "non réalisé (capture non prise par ce rôle d’audit)",
+   "SEM-23": "non réalisé",
+   "SEM-24": "oui (bandeau : revue par intelligence artificielle, aucune validation médicale humaine)"
+  },
+  "proposition": "propositions/G63_c_1.html et propositions/G63_pop3_1.html",
+  "sources": [
+   "S1",
+   "S2",
+   "S3",
+   "S4",
+   "S5",
+   "S6",
+   "S7",
+   "S10",
+   "S11",
+   "S12",
+   "S13",
+   "S14",
+   "S21",
+   "S23"
+  ],
+  "lacunes": [
+   "Aucune source universitaire suisse de sémiologie neurologique périphérique n’a pu être lue (diapositives Unisanté 2023 de J.-B. Epiney : redirection 301, contenu non lu).",
+   "Technique du réflexe achilléen et du testing de la force non décrites dans les sources lues.",
+   "Seuil de l’hypotension orthostatique : consensus de 2011 (Freeman et coll.) sans résumé accessible ; seuil non écrit.",
+   "Sensibilité et spécificité des symptômes (brûlure, engourdissement, ataxie) non chiffrées dans les sources lues."
+  ]
+ },
+ "figures": {
+  "outil": "tools/image_clo_finder.py inventory G63 puis mesure Chromium à 390 px (scratchpad fig390.py)",
+  "inventaire": [
+   {
+    "fichier": "G63_a.html",
+    "figure": "Figure 1",
+    "classe": "SCHEMA_NON_ANATOMIQUE",
+    "viewbox_largeur": 380,
+    "texte_px_390": 13.2,
+    "constat": null
+   },
+   {
+    "fichier": "G63_b.html",
+    "figure": "Figure 2",
+    "classe": "SCHEMA_NON_ANATOMIQUE",
+    "viewbox_largeur": 380,
+    "texte_px_390": 13.2,
+    "constat": null
+   },
+   {
+    "fichier": "G63_c.html",
+    "figure": "Figure 3",
+    "classe": "SCHEMA_NON_ANATOMIQUE",
+    "viewbox_largeur": 640,
+    "texte_px_390": 7.3,
+    "constat": "C12"
+   },
+   {
+    "fichier": "G63_c.html",
+    "figure": "Figure 4",
+    "classe": "SCHEMA_NON_ANATOMIQUE",
+    "viewbox_largeur": 640,
+    "texte_px_390": 7.3,
+    "constat": "C12"
+   },
+   {
+    "fichier": "G63_c.html",
+    "figure": "Figure 5",
+    "classe": "SCHEMA_NON_ANATOMIQUE",
+    "viewbox_largeur": 640,
+    "texte_px_390": 7.3,
+    "chevauchement": true,
+    "constat": "C11"
+   },
+   {
+    "fichier": "G63_c.html",
+    "figure": "Figure 6",
+    "classe": "SCHEMA_NON_ANATOMIQUE",
+    "viewbox_largeur": 380,
+    "texte_px_390": 13.2,
+    "constat": null
+   }
+  ],
+  "icones_sci_bar": "4 SVG d’icônes de boutons, non comptés comme figures",
+  "synthese": {
+   "ANATOMIQUE_IA": 0,
+   "ORIGINE_INCONNUE": 0,
+   "SCHEMA_NON_ANATOMIQUE": 6,
+   "IMAGE_SOURCEE": 0
+  }
+ },
+ "controles": {
+  "test_v7_static": "OK (G63 mots 16667 fenêtres 49 quiz 7 pareto 14)",
+  "audit_sciences": "échec : « lien absent : À retenir. » sur g63-s-anat, -histo, -physio, -bioch (C20)"
+ },
+ "verifications_conformes": [
+  "Prévalence 5–8 %, cause non trouvée ≤ 30 %, diabète type 1 8–54 %, type 2 13–46 %, alcoolisme 22–66 %, chimiothérapie 30–40 % [S1]",
+  "Signe clé aréflexie + pallesthésie ou piqûre [S1]",
+  "Alcool > 100 g/j pendant des années [S1] ; méta-analyse 44,2 % et 46,3 %, douleur 42 %, Koike < 1 mois dans 56 %, récupération [S6]",
+  "B12 : ~50 % sans anémie macrocytaire ; myéloneuropathie [S1] ; besoin, réserve, N2O, posologie Vitarubine [S21]",
+  "Oxaliplatine 60–80 % réversible en 2–3 j, 73 % persistant, coasting, 40 % douleur chronique [S1]",
+  "Guillain-Barré 1–2/100 000/an, nadir ≤ 4 semaines ; PIDC LCR < 10/µL et protéines élevées ; anti-GM1 50 % [S1]",
+  "Vasculite à suspecter dans la PNP distale symétrique subaiguë [S1] ; critères et traitement PNS 2010 [S11]",
+  "Anticorps à haut risque > 70 %, anti-Hu > 85 % CBPC, dépistage 4–6 mois pendant 2 ans, PNS-Care ≥ 8, GBS/PIDC non paranéoplasiques sans anticorps [S7]",
+  "Feldman : 6100 et 2800/100 000 années-personnes, 1–4 % dont 40–55 % diabète, douleur 30–50 %, sural > 6 µV et > 39 m/s, différences de risque −1,84 et −0,58, HbA1c < 6 % [S2]",
+  "QualiCCare : catégories IWGDF et fréquences, monofilament (technique, Se 65–90 %, Sp 35–85 %), diapason ≤ 4/8, ≥ 5/8, récidive ×36 et 40 %, réamputation 27/48/61 %, mortalité 46 %, drapeaux rouges et seuils IPS/tcPO2/orteil [S3 ; S4 ; S5]",
+  "Lyrica : posologie 150/300/600, tableau rénal 30–60, poids 5,2 %, grossesse 2700 expositions [S16]",
+  "Neurontin : titration, 900–3600 mg, tableau rénal exact [S17]",
+  "Duloxétine : 60 mg, pas de bénéfice > 60 mg, évaluation 2 mois puis 3 mois, HbA1c + 0,3 % à 52 semaines [S18]",
+  "Saroten : indication douleurs neuropathiques, 10–25 mg, 25–75 mg, > 100 mg précaution, 2–4 semaines, contre-indications, mécanisme analgésique indépendant [S19]",
+  "Qutenza : 4 patchs, 30/60 min, gants nitrile, examen des pieds [S20]",
+  "Benerva : 100 mg/2 j, 100 mg/j, 200–300 mg/j, parentéral ≤ 200 mg/j, 0,4 mg pour 4200 kJ [S22]",
+  "CIM-10-GM : G63.0*–G63.8* et codes primaires, exclusions du bloc [S15]"
+ ],
+ "lacunes": [
+  "Sommer et coll. 2018 : lu par outil de lecture de la page PMC (passages ciblés), non par téléchargement intégral (le serveur PMC renvoie une page reCAPTCHA à curl).",
+  "Feldman et coll. 2019, Julian et coll. 2019 et Graus et coll. 2021 : seuls les 100 000 premiers caractères ont été lus ; les tableaux en image de Graus (1, 5) non lus.",
+  "Recommandation ESMO-EONS-EANO 2020 sur la neurotoxicité des traitements anticancéreux : non relue (inaccessible lors du cycle Betta) ; aucune conduite de prévention vérifiable.",
+  "Seuil d’hypotension orthostatique : aucune source lue (consensus 2011 sans résumé).",
+  "Délai de dépistage dans le diabète de type 1 : aucune source suisse ou européenne lue (requête PubMed et documents SSED).",
+  "Lidocaïne 5 % en emplâtre : aucune spécialité trouvée par la recherche AmiKo (« lidocain », « emplâtre », « Pflaster », « versatis ») ; statut suisse à confirmer.",
+  "Correspondance exacte entre la limite d’âge AI pour les chaussures et l’âge de référence AVS 21 : circulaire AI non lue.",
+  "Source universitaire suisse de sémiologie (Unisanté, Epiney 2023) : redirection 301, non lue.",
+  "Aucune donnée épidémiologique suisse ; aucune source sur Suva (neuropathies toxiques professionnelles), aptitude à la conduite ni remboursement LS.",
+  "Recommandations actuelles de l’amylose à transthyrétine (silenceurs de gène) non lues ; consensus 2016 seul.",
+  "Vérification navigateur des fenêtres, captures à 390 px avec police 24 px : non réalisées par ce rôle d’audit (SEM-18, SEM-22, SEM-23)."
+ ],
+ "propositions": [
+  "propositions/G63_a_1.html",
+  "propositions/G63_b_1.html",
+  "propositions/G63_b_2.html",
+  "propositions/G63_c_1.html",
+  "propositions/G63_c_2.html",
+  "propositions/G63_d_1.html",
+  "propositions/G63_d_2.html",
+  "propositions/G63_pop3_1.html"
+ ],
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+}
