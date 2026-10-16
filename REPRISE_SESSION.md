@@ -8,6 +8,7 @@ Toute nouvelle session Claude lit **ce fichier seul** et reprend sans relire l'h
 L'état réel se lit dans `organisation/CYCLES_CLAUDE.json` (ne jamais se fier à une jauge recopiée ici).
 
 ## Règles permanentes
+- 🔴 **RÉFLEXE ABSOLU (Vial, 16.10.2026) — après CHAQUE fusion dans `main`, vérifier d'abord le déploiement « Publier MEDINA sur GitHub Pages »** (`actions_list` sur `pages.yml`). Échec → lire le journal (`get_job_logs`, `failed_only`), reproduire en local, isoler le commit fautif par dichotomie (skill `engineering:debug`), corriger la cause racine, notifier Vial. Ne jamais déclarer une PR « en ligne » sans déploiement vert. Ne jamais forcer. 🔴
 - **Notification obligatoire (Vial, 16.10.2026)** : chaque fois que Vial doit intervenir (fusion de PR, décision, permission, blocage), envoyer aussitôt une notification push (outil PushNotification) d'une ligne : action attendue + lien ou numéro de PR. Ne jamais attendre qu'il relise le fil.
 - **Cours sur blanc, quel que soit le thème — invariant définitif (Vial, 16.10.2026 : « Ne change jamais »)** : leçon, îlots, onglets, tableaux, encadrés, quiz, fenêtres explicatives et mode Livre sur #ffffff ; encre Noir ou Bleu au choix du lecteur ; termes interactifs vert, soulignés d'un trait interrompu fluorescent très fin. Aucun thème ne redéfinit `--cours-fond`, `--ink-cours*`, `--titre-cours` ni `--terme*` ; garde : `tests/test_cours_blanc.py`.
 - Réponses au propriétaire : ultra-concises ; « captures + FIN PUBLIÉ + lien » et jauge en leçons publiées / 120 et cycles Novo / 9.
