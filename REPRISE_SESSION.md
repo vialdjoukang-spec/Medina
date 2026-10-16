@@ -9,6 +9,7 @@ L'état réel se lit dans `organisation/CYCLES_CLAUDE.json` (ne jamais se fier �
 
 ## Règles permanentes
 - **Notification obligatoire (Vial, 16.10.2026)** : chaque fois que Vial doit intervenir (fusion de PR, décision, permission, blocage), envoyer aussitôt une notification push (outil PushNotification) d'une ligne : action attendue + lien ou numéro de PR. Ne jamais attendre qu'il relise le fil.
+- **Cours sur blanc, quel que soit le thème — invariant définitif (Vial, 16.10.2026 : « Ne change jamais »)** : leçon, îlots, onglets, tableaux, encadrés, quiz, fenêtres explicatives et mode Livre sur #ffffff ; encre Noir ou Bleu au choix du lecteur ; termes interactifs vert, soulignés d'un trait interrompu fluorescent très fin. Aucun thème ne redéfinit `--cours-fond`, `--ink-cours*`, `--titre-cours` ni `--terme*` ; garde : `tests/test_cours_blanc.py`.
 - Réponses au propriétaire : ultra-concises ; « captures + FIN PUBLIÉ + lien » et jauge en leçons publiées / 120 et cycles Novo / 9.
 - **Projet Novo_12** (`organisation/novo_12/PLAN_NOVO_12.json`) : 12 leçons par cycle (3 par système), préparées ensemble ;
   publication par la garde existante, quatre leçons à la fois, dans l'ordre du plan tétrade.
