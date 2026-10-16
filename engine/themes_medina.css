@@ -1,0 +1,185 @@
+/* MEDINA — thèmes de lecture optionnels (16.10.2026). Couche injectée après medina-couleurs-premium
+   (portail : build_index.py ; fragments : build_front.py). Aucun contenu médical n'est touché.
+   « Par défaut » : aucun attribut, le thème de couleurs_premium.css s'applique tel quel.
+   Un thème = html[data-medina-theme="…"], posé avant le premier rendu par engine/themes_medina.js
+   (clé localStorage « medina.theme », partagée par le portail et les fragments).
+   Deux familles :
+   - Géométrique pâle (geo-*) : fond de page d'une couleur primaire ou secondaire, extrêmement pâle
+     (OKLCH L ≥ 0,975, C ≤ 0,02), motif géométrique propre au thème en SVG data-URI, à faible
+     opacité, sur un calque fixe derrière la page ; cartes et îlots restent sur surface claire.
+   - Multicolore iconique (multi-*) : cinq teintes distribuées par régions (a : barre supérieure et
+     accent, b : fin de la barre supérieure, c : barre latérale, d : couverture, e : jauges) ;
+     chaque carte garde sa teinte propre ; aux frontières, A s'atténue jusqu'à disparaître
+     exactement là où B naît : linear-gradient(θ, A 0%, transparent x%) superposé à
+     linear-gradient(θ, transparent x%, B 100%), sans mélange.
+   Le texte reste achromatique (--ink-*), les rôles des cours (--lesson-*) ne sont jamais modifiés.
+   Préfixe :not(#mth-z) : une colonne d'identifiant, au-dessus des préfixes des couches antérieures.
+   Valeurs, contrastes et procédure d'ajout : docs/frontend/themes/THEMES.md. */
+
+/* ---------- Sélecteur de thème (portail et fragments) ---------- */
+html:not(#mth-z) .mth-root{position:relative;display:inline-flex;align-items:center;flex:0 0 auto}
+html:not(#mth-z) .mth-btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;min-width:44px;padding:0 14px;margin:0;
+ border:1px solid var(--n-line-strong);border-radius:12px;background:var(--n-surface);color:var(--ink-1);
+ font-family:inherit;font-weight:600;font-size:14px;line-height:1;letter-spacing:0;cursor:pointer;box-shadow:none;transition:background-color .15s ease,border-color .15s ease}
+html:not(#mth-z) .mth-btn:hover{background:var(--accent-tint);border-color:var(--accent-ink)}
+html:not(#mth-z) .mth-btn[aria-expanded="true"]{background:var(--accent-sel);border-color:var(--accent-ink);color:var(--accent-ink)}
+html:not(#mth-z) .mth-btn:focus-visible{outline:2px solid var(--focus-ring,var(--accent-ink));outline-offset:2px}
+html:not(#mth-z) .mth-btn svg{width:18px;height:18px;flex:0 0 auto}
+html:not(#mth-z) .mth-btn .mth-btn-dot{fill:var(--accent)}
+html:not(#mth-z) .masthead .mth-btn{min-height:40px;font-size:15px}
+html:not(#mth-z) .mth-panel{position:absolute;top:calc(100% + 8px);right:0;z-index:1200;box-sizing:border-box;width:min(680px,calc(100vw - 24px));
+ max-height:min(80vh,760px);overflow:auto;overscroll-behavior:contain;padding:18px 18px 16px;text-align:left;
+ background:var(--n-surface);color:var(--ink-1);border:1px solid var(--n-line);border-radius:16px;box-shadow:var(--shadow-pop);
+ font-family:inherit;font-weight:400;font-size:14px;line-height:1.45;opacity:1;transform:none;transition:opacity .16s ease,transform .16s ease}
+html:not(#mth-z) .mth-panel[hidden]{display:none}
+html:not(#mth-z) .mth-panel.is-entering{opacity:0;transform:translateY(-4px)}
+html:not(#mth-z) .mth-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin:0 0 12px}
+html:not(#mth-z) .mth-title{margin:0;font-family:inherit;font-weight:700;font-size:17px;line-height:1.25;color:var(--ink-1);letter-spacing:0;text-transform:none}
+html:not(#mth-z) .mth-note{margin:4px 0 0;font-size:13px;color:var(--ink-3)}
+html:not(#mth-z) .mth-close{display:inline-grid;place-items:center;width:44px;height:44px;margin:-6px -6px 0 0;padding:0;border:1px solid var(--n-line-strong);
+ border-radius:12px;background:var(--n-surface);color:var(--ink-2);font-family:inherit;font-weight:400;font-size:22px;line-height:1;cursor:pointer}
+html:not(#mth-z) .mth-close:hover{background:var(--n-sunken)}
+html:not(#mth-z) .mth-group{margin:14px 0 0;padding:0;border:0}
+html:not(#mth-z) .mth-group-title{margin:0 0 2px;font-family:inherit;font-weight:700;font-size:12px;line-height:1.3;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
+html:not(#mth-z) .mth-group-note{margin:0 0 8px;font-size:12.5px;color:var(--ink-3)}
+html:not(#mth-z) .mth-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(142px,1fr));gap:10px;margin:0;padding:0;list-style:none}
+html:not(#mth-z) .mth-swatch{display:flex;flex-direction:column;align-items:stretch;gap:7px;width:100%;min-height:44px;margin:0;padding:6px 6px 8px;
+ border:1px solid var(--n-line);border-radius:12px;background:var(--n-surface);color:var(--ink-1);font-family:inherit;font-weight:600;font-size:13px;line-height:1.3;text-align:left;cursor:pointer;
+ box-shadow:none;transition:border-color .15s ease,box-shadow .15s ease}
+html:not(#mth-z) .mth-swatch:hover{border-color:var(--n-line-strong)}
+html:not(#mth-z) .mth-swatch[aria-pressed="true"]{border-color:var(--ink-1);box-shadow:inset 0 0 0 1px var(--ink-1)}
+html:not(#mth-z) .mth-swatch:focus-visible{outline:2px solid var(--ink-1);outline-offset:2px}
+html:not(#mth-z) .mth-name{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:0 3px;color:var(--ink-1)}
+html:not(#mth-z) .mth-name svg{width:16px;height:16px;flex:0 0 auto;visibility:hidden}
+html:not(#mth-z) .mth-swatch[aria-pressed="true"] .mth-name svg{visibility:visible}
+/* Aperçu : un fond de page, une barre, deux cartes ; lit les tokens posés sur la pastille elle-même. */
+html:not(#mth-z) .mth-prev{position:relative;display:block;height:74px;overflow:hidden;border-radius:8px;border:1px solid var(--n-line);
+ background-color:var(--n-paper);background-image:var(--mth-page,none);background-size:var(--mth-page-size,auto)}
+html:not(#mth-z) .mth-prev-bar{position:absolute;left:0;right:0;top:0;height:14px;background:var(--n-surface);box-shadow:inset 0 -1px 0 var(--n-line)}
+html:not(#mth-z) .mth-prev-card{position:absolute;top:24px;bottom:8px;width:38%;border-radius:5px;background:var(--n-surface);
+ border:1px solid var(--n-line);border-left:3px solid var(--mth-pc,var(--accent))}
+html:not(#mth-z) .mth-prev-card:nth-of-type(2){left:8%}
+html:not(#mth-z) .mth-prev-card:nth-of-type(3){left:52%;--mth-pc:var(--mth-d,var(--accent))}
+html:not(#mth-z) .mth-prev-card::before,html:not(#mth-z) .mth-prev-card::after{content:"";position:absolute;left:6px;height:4px;border-radius:2px;background:var(--ink-1)}
+html:not(#mth-z) .mth-prev-card::before{top:9px;width:62%}
+html:not(#mth-z) .mth-prev-card::after{top:19px;width:44%;background:var(--accent-ink)}
+.mth-live{position:absolute!important;width:1px!important;height:1px!important;margin:-1px!important;padding:0!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important;border:0!important}
+@media (max-width:1023px){
+ html:not(#mth-z) .topbar .mth-btn{padding:0;width:44px;justify-content:center}
+ html:not(#mth-z) .topbar .mth-btn .mth-btn-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+}
+@media (max-width:700px){
+ html:not(#mth-z) body .topbar:has(>.mth-root){grid-template-columns:auto 44px minmax(0,1fr) 44px!important}
+ html:not(#mth-z) .mth-btn{padding:0;width:44px;justify-content:center}
+ html:not(#mth-z) .mth-btn .mth-btn-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+ html:not(#mth-z) .mth-panel{position:fixed;top:72px;left:12px;right:12px;width:auto;max-height:calc(100vh - 88px)}
+ html:not(#mth-z) .mth-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (prefers-reduced-motion:reduce){
+ html:not(#mth-z) :is(.mth-btn,.mth-panel,.mth-swatch){transition:none!important}
+ html:not(#mth-z) .mth-panel.is-entering{transform:none}
+}
+
+/* <themes> — généré (valeurs OKLCH → sRGB, contrôlées) ; voir docs/frontend/themes/THEMES.md. */
+/* Rouge · losanges — fond #fff6f5 (OKLCH 0.980 0.010 25), motif : losanges (treillis à 45°, maille 32 px) */
+:root[data-medina-theme="geo-rouge"],.mth-swatch[data-mth-swatch="geo-rouge"]{--n-paper:#fff6f5;--n-sunken:#fdeceb;--n-line-soft:#eddedd;--n-line:#dfcdcb;--n-line-strong:#926f6b;--n-shadow:#2b1c1a;--n-veil:rgb(37 22 21 / 0.55);--brand-50:#fff4f3;--brand-100:#ffe9e6;--brand-200:#ffd4cf;--brand-300:#f7b4ad;--brand-400:#da827b;--brand-500:#c05f59;--brand-600:#a54743;--brand-700:#7c322f;--brand-800:#53211f;--accent:#aa4c47;--accent-ink:#803531;--accent-tint:#fff2f1;--accent-sel:#ffe2df;--gauge-400:#cd7670;--gauge-500:#b55954;--gauge-600:#98443f;--gauge-700:#72302d;--gauge-track:#fff1ef;--mth-motif:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg fill='none' stroke='%23a03f3c' stroke-opacity='0.17' stroke-width='1'%3E%3Cpath d='M16 0L32 16L16 32L0 16Z'/%3E%3C/g%3E%3C/svg%3E");--mth-motif-size:32px 32px;--accent-ink-on:var(--n-surface);}
+/* Orange · cercles concentriques — fond #fff6f1 (OKLCH 0.979 0.012 51), motif : cercles concentriques (trois anneaux, maille 96 px) */
+:root[data-medina-theme="geo-orange"],.mth-swatch[data-mth-swatch="geo-orange"]{--n-paper:#fff6f1;--n-sunken:#fbeee6;--n-line-soft:#ebdfd8;--n-line:#ddcfc6;--n-line-strong:#8e7260;--n-shadow:#2a1d15;--n-veil:rgb(36 24 15 / 0.55);--brand-50:#fff4ee;--brand-100:#ffeadc;--brand-200:#fed7be;--brand-300:#f1ba96;--brand-400:#d38b59;--brand-500:#b8692c;--brand-600:#9e5209;--brand-700:#773a00;--brand-800:#4f2704;--accent:#a35612;--accent-ink:#7a3d02;--accent-tint:#fff3ec;--accent-sel:#ffe3d2;--gauge-400:#c67f4d;--gauge-500:#ae6329;--gauge-600:#924d10;--gauge-700:#6d3706;--gauge-track:#fff2e9;--mth-motif:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%23974c00' stroke-opacity='0.15' stroke-width='1'%3E%3Ccircle cx='48' cy='48' r='14'/%3E%3Ccircle cx='48' cy='48' r='28'/%3E%3Ccircle cx='48' cy='48' r='42'/%3E%3C/g%3E%3C/svg%3E");--mth-motif-size:96px 96px;--accent-ink-on:var(--n-surface);}
+/* Jaune · hexagones — fond #fcf8ec (OKLCH 0.979 0.016 92), motif : hexagones en nid d’abeille (côté 14 px) */
+:root[data-medina-theme="geo-jaune"],.mth-swatch[data-mth-swatch="geo-jaune"]{--n-paper:#fcf8ec;--n-sunken:#f5f1e4;--n-line-soft:#e6e2d6;--n-line:#d6d2c3;--n-line-strong:#82785a;--n-shadow:#252012;--n-veil:rgb(31 26 13 / 0.55);--brand-50:#fbf7e8;--brand-100:#f7eed5;--brand-200:#eddfb7;--brand-300:#dac68b;--brand-400:#b79c46;--brand-500:#9b7d00;--brand-600:#7f6600;--brand-700:#5e4b00;--brand-800:#3f3100;--accent:#846a00;--accent-ink:#614e00;--accent-tint:#fbf6e6;--accent-sel:#f3e9ca;--gauge-400:#aa9039;--gauge-500:#927600;--gauge-600:#775f00;--gauge-700:#584600;--gauge-track:#faf4e4;--mth-motif:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='24.249' viewBox='0 0 42 24.249'%3E%3Cg fill='none' stroke='%23786100' stroke-opacity='0.2' stroke-width='1'%3E%3Cpath d='M0 12.124L7.0 0H21.0L28 12.124L21.0 24.249H7.0ZM28 12.124H42'/%3E%3C/g%3E%3C/svg%3E");--mth-motif-size:42px 24.249px;--accent-ink-on:var(--n-surface);}
+/* Vert · triangles — fond #f1fbf3 (OKLCH 0.978 0.015 152), motif : triangles équilatéraux (réseau isométrique, côté 32 px) */
+:root[data-medina-theme="geo-vert"],.mth-swatch[data-mth-swatch="geo-vert"]{--n-paper:#f1fbf3;--n-sunken:#e9f4eb;--n-line-soft:#dbe5dc;--n-line:#c9d6cb;--n-line-strong:#66816b;--n-shadow:#18241a;--n-veil:rgb(18 30 20 / 0.55);--brand-50:#eefbf0;--brand-100:#dff6e2;--brand-200:#c7ebcd;--brand-300:#a2d7ac;--brand-400:#69b27a;--brand-500:#3f9557;--brand-600:#237c40;--brand-700:#135c2c;--brand-800:#0f3d1d;--accent:#298144;--accent-ink:#175f2f;--accent-tint:#ecfaee;--accent-sel:#d7f2db;--gauge-400:#5da56e;--gauge-500:#3b8c51;--gauge-600:#24733d;--gauge-700:#17552a;--gauge-track:#ebf9ed;--mth-motif:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='55.426' viewBox='0 0 32 55.426'%3E%3Cg fill='none' stroke='%23137738' stroke-opacity='0.14' stroke-width='1'%3E%3Cpath d='M0 0L32 55.426M32 0L0 55.426M0 .5H32M0 27.713H32'/%3E%3C/g%3E%3C/svg%3E");--mth-motif-size:32px 55.426px;--accent-ink-on:var(--n-surface);}
+/* Cyan · ondes — fond #ecfcfd (OKLCH 0.980 0.017 201), motif : ondes douces (période 64 px) */
+:root[data-medina-theme="geo-cyan"],.mth-swatch[data-mth-swatch="geo-cyan"]{--n-paper:#ecfcfd;--n-sunken:#e4f5f7;--n-line-soft:#d6e5e7;--n-line:#c3d6d8;--n-line-strong:#598185;--n-shadow:#112426;--n-veil:rgb(11 30 32 / 0.55);--brand-50:#e8fbfd;--brand-100:#d4f6fa;--brand-200:#b5ebf1;--brand-300:#86d7e0;--brand-400:#2cb2bf;--brand-500:#00919d;--brand-600:#007781;--brand-700:#005860;--brand-800:#003b40;--accent:#007c86;--accent-ink:#005b63;--accent-tint:#e6fafd;--accent-sel:#caf2f7;--gauge-400:#13a5b2;--gauge-500:#008994;--gauge-600:#006f79;--gauge-700:#005259;--gauge-track:#e4f9fb;--mth-motif:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='20' viewBox='0 0 64 20'%3E%3Cg fill='none' stroke='%2300717a' stroke-opacity='0.18' stroke-width='1'%3E%3Cpath d='M0 10Q16 2 32 10T64 10'/%3E%3C/g%3E%3C/svg%3E");--mth-motif-size:64px 20px;--accent-ink-on:var(--n-surface);}
+/* Bleu · grille fine — fond #f4f9ff (OKLCH 0.980 0.010 253), motif : grille millimétrée (pas 24 px, trait fort tous les 96 px) */
+:root[data-medina-theme="geo-bleu"],.mth-swatch[data-mth-swatch="geo-bleu"]{--n-paper:#f4f9ff;--n-sunken:#e9f2fd;--n-line-soft:#dbe3ed;--n-line:#c9d3df;--n-line-strong:#677b94;--n-shadow:#18212c;--n-veil:rgb(19 27 38 / 0.55);--brand-50:#f2f7ff;--brand-100:#e4f0ff;--brand-200:#cbe2ff;--brand-300:#a5cafb;--brand-400:#6ea1e2;--brand-500:#4982c9;--brand-600:#316aaf;--brand-700:#204d85;--brand-800:#153358;--accent:#356eb4;--accent-ink:#235088;--accent-tint:#f0f6ff;--accent-sel:#dcebff;--gauge-400:#6295d4;--gauge-500:#447abe;--gauge-600:#3063a2;--gauge-700:#20487a;--gauge-track:#eef5ff;--mth-motif:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%232863ab' stroke-width='1'%3E%3Cpath stroke-opacity='0.110' d='M24 0V96M0 24H96M48 0V96M0 48H96M72 0V96M0 72H96'/%3E%3Cpath stroke-opacity='0.2' d='M0 .5H96M.5 0V96'/%3E%3C/g%3E%3C/svg%3E");--mth-motif-size:96px 96px;--accent-ink-on:var(--n-surface);}
+/* Violet · chevrons — fond #f9f6ff (OKLCH 0.978 0.012 301), motif : chevrons (zigzag, rangées de 24 px) */
+:root[data-medina-theme="geo-violet"],.mth-swatch[data-mth-swatch="geo-violet"]{--n-paper:#f9f6ff;--n-sunken:#f2eefb;--n-line-soft:#e3e0eb;--n-line:#d3cfdd;--n-line-strong:#7d7390;--n-shadow:#221e2b;--n-veil:rgb(28 24 37 / 0.55);--brand-50:#f8f5ff;--brand-100:#f1ebff;--brand-200:#e5d8ff;--brand-300:#cfbcf4;--brand-400:#a98ed9;--brand-500:#8c6dbf;--brand-600:#7556a5;--brand-700:#563d7d;--brand-800:#392953;--accent:#795aaa;--accent-ink:#594080;--accent-tint:#f7f4ff;--accent-sel:#ede5ff;--gauge-400:#9d82cc;--gauge-500:#8467b5;--gauge-600:#6c5199;--gauge-700:#503a73;--gauge-track:#f6f2ff;--mth-motif:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='24' viewBox='0 0 36 24'%3E%3Cg fill='none' stroke='%236f4fa1' stroke-opacity='0.17' stroke-width='1'%3E%3Cpath d='M0 18L18 6L36 18'/%3E%3C/g%3E%3C/svg%3E");--mth-motif-size:36px 24px;--accent-ink-on:var(--n-surface);}
+/* Magenta · points — fond #fff5fa (OKLCH 0.979 0.013 345), motif : points en quinconce (pas 11 px) */
+:root[data-medina-theme="geo-magenta"],.mth-swatch[data-mth-swatch="geo-magenta"]{--n-paper:#fff5fa;--n-sunken:#faecf3;--n-line-soft:#eadee4;--n-line:#dccdd5;--n-line-strong:#8d6e7f;--n-shadow:#291c23;--n-veil:rgb(35 22 29 / 0.55);--brand-50:#fff3f9;--brand-100:#ffe7f3;--brand-200:#fcd2e8;--brand-300:#eeb3d3;--brand-400:#cf82ae;--brand-500:#b45f91;--brand-600:#9a4879;--brand-700:#74325a;--brand-800:#4d213b;--accent:#9e4c7e;--accent-ink:#77355d;--accent-tint:#fff1f8;--accent-sel:#ffdff0;--gauge-400:#c276a2;--gauge-500:#aa5989;--gauge-600:#8e4471;--gauge-700:#6a3053;--gauge-track:#ffeff7;--mth-motif:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22'%3E%3Cg fill='%23954074' fill-opacity='0.19'%3E%3Ccircle cx='5.5' cy='5.5' r='1.6'/%3E%3Ccircle cx='16.5' cy='16.5' r='1.6'/%3E%3C/g%3E%3C/svg%3E");--mth-motif-size:22px 22px;--accent-ink-on:var(--n-surface);}
+/* Vitrail — rubis #9c4343, saphir #436cb9, émeraude #009772, ambre #8f5300, améthyste #8656a6 ; angle 115° */
+:root[data-medina-theme="multi-vitrail"],.mth-swatch[data-mth-swatch="multi-vitrail"]{--n-paper:#fcf7f6;--n-sunken:#f8eeee;--n-line-soft:#e9dfdf;--n-line:#d9cfce;--n-line-strong:#8a7271;--n-shadow:#291d1c;--accent:#9c4343;--accent-ink:#7e3636;--accent-tint:#fff2f2;--accent-sel:#ffe2e0;--mth-a:#9c4343;--mth-a-ink:#7e3636;--mth-a-tint:#fff2f2;--mth-a-wash:#ffeeed;--mth-b:#436cb9;--mth-b-ink:#304e86;--mth-b-tint:#f1f6ff;--mth-b-wash:#ecf3ff;--mth-c:#009772;--mth-c-ink:#005f46;--mth-c-tint:#e8fbf3;--mth-c-wash:#e0f9ef;--mth-d:#8f5300;--mth-d-ink:#744200;--mth-d-tint:#fff4e9;--mth-d-wash:#ffefe2;--mth-e:#8656a6;--mth-e-ink:#613e78;--mth-e-tint:#f9f3ff;--mth-e-wash:#f7eeff;--gauge-track:#fdf1f1;--gauge-700:#613e78;--gauge-fill:#8656a6;--gauge-fill-top:#009772;--mth-angle:115deg;}
+/* Bauhaus — bleu #2b58b1, jaune #a97f00, rouge #a9231e, bleu #2b58b1, jaune #a97f00 ; angle 90° */
+:root[data-medina-theme="multi-bauhaus"],.mth-swatch[data-mth-swatch="multi-bauhaus"]{--n-paper:#f6f8fc;--n-sunken:#edf1f8;--n-line-soft:#dee2e9;--n-line:#cdd2da;--n-line-strong:#6f798b;--n-shadow:#1b212a;--accent:#2b58b1;--accent-ink:#304e86;--accent-tint:#f1f6ff;--accent-sel:#deeaff;--mth-a:#2b58b1;--mth-a-ink:#304e86;--mth-a-tint:#f1f6ff;--mth-a-wash:#ecf3ff;--mth-b:#a97f00;--mth-b-ink:#664b00;--mth-b-tint:#fdf5e6;--mth-b-wash:#fcf1dc;--mth-c:#a9231e;--mth-c-ink:#7e372f;--mth-c-tint:#fff3f1;--mth-c-wash:#ffeeeb;--mth-d:#2b58b1;--mth-d-ink:#304e86;--mth-d-tint:#f1f6ff;--mth-d-wash:#ecf3ff;--mth-e:#a97f00;--mth-e-ink:#664b00;--mth-e-tint:#fdf5e6;--mth-e-wash:#fcf1dc;--gauge-track:#f0f5fd;--gauge-700:#664b00;--gauge-fill:#a97f00;--gauge-fill-top:#a9231e;--mth-angle:90deg;}
+/* Minéral — glacier #009a9a, argile #9f4f25, ardoise #3e8cc9, lichen #71943f, quartz rose #9d486c ; angle 135° */
+:root[data-medina-theme="multi-mineral"],.mth-swatch[data-mth-swatch="multi-mineral"]{--n-paper:#f4f9f9;--n-sunken:#eaf3f3;--n-line-soft:#dbe4e4;--n-line:#c9d4d4;--n-line-strong:#657f7e;--n-shadow:#152423;--accent:#009a9a;--accent-ink:#005c5c;--accent-tint:#e6fbfa;--accent-sel:#caf3f2;--mth-a:#009a9a;--mth-a-ink:#005c5c;--mth-a-tint:#e6fbfa;--mth-a-wash:#dcf9f9;--mth-b:#9f4f25;--mth-b-ink:#7b3b19;--mth-b-tint:#fff3ee;--mth-b-wash:#ffefe7;--mth-c:#3e8cc9;--mth-c-ink:#105483;--mth-c-tint:#eef7ff;--mth-c-wash:#e8f4ff;--mth-d:#71943f;--mth-d-ink:#405a13;--mth-d-tint:#f1f9e9;--mth-d-wash:#edf7e1;--mth-e:#9d486c;--mth-e-ink:#793553;--mth-e-tint:#fff2f6;--mth-e-wash:#ffedf3;--gauge-track:#ecf7f7;--gauge-700:#793553;--gauge-fill:#9d486c;--gauge-fill-top:#3e8cc9;--mth-angle:135deg;}
+/* Aurore boréale — vert #2e9052, violet #6959ae, cyan #009b8f, magenta #9b467a, bleu #3265af ; angle 160° */
+:root[data-medina-theme="multi-aurore"],.mth-swatch[data-mth-swatch="multi-aurore"]{--n-paper:#f5f9f6;--n-sunken:#ecf3ed;--n-line-soft:#dde4df;--n-line:#ccd4ce;--n-line-strong:#6c7e70;--n-shadow:#19231c;--accent:#2e9052;--accent-ink:#175f33;--accent-tint:#ecfaef;--accent-sel:#d6f2dc;--mth-a:#2e9052;--mth-a-ink:#175f33;--mth-a-tint:#ecfaef;--mth-a-wash:#e4f9e9;--mth-b:#6959ae;--mth-b-ink:#504482;--mth-b-tint:#f5f4ff;--mth-b-wash:#f2f1ff;--mth-c:#009b8f;--mth-c-ink:#005d55;--mth-c-tint:#e6fbf8;--mth-c-wash:#ddfaf5;--mth-d:#9b467a;--mth-d-ink:#75375c;--mth-d-tint:#fff1f8;--mth-d-wash:#ffedf6;--mth-e:#3265af;--mth-e-ink:#2a4f86;--mth-e-tint:#f0f6ff;--mth-e-wash:#ebf3ff;--gauge-track:#eff7f0;--gauge-700:#2a4f86;--gauge-fill:#3265af;--gauge-fill-top:#009b8f;--mth-angle:160deg;}
+/* Agrumes et lagon — orange #c16e2d, menthe #0f9b89, corail #9f4d47, lagon #0081a1, citron vert #7c9135 ; angle 100° */
+:root[data-medina-theme="multi-agrumes"],.mth-swatch[data-mth-swatch="multi-agrumes"]{--n-paper:#fbf7f4;--n-sunken:#f6efeb;--n-line-soft:#e7e0dc;--n-line:#d8d0ca;--n-line-strong:#877568;--n-shadow:#281e17;--accent:#c16e2d;--accent-ink:#783e0b;--accent-tint:#fff3ec;--accent-sel:#ffe3d2;--mth-a:#c16e2d;--mth-a-ink:#783e0b;--mth-a-tint:#fff3ec;--mth-a-wash:#ffefe5;--mth-b:#0f9b89;--mth-b-ink:#005d51;--mth-b-tint:#e7fbf6;--mth-b-wash:#defaf3;--mth-c:#9f4d47;--mth-c-ink:#7e3732;--mth-c-tint:#fff3f1;--mth-c-wash:#ffeeec;--mth-d:#0081a1;--mth-d-ink:#005970;--mth-d-tint:#e9f9ff;--mth-d-wash:#e1f7ff;--mth-e:#7c9135;--mth-e-ink:#485706;--mth-e-tint:#f3f8e8;--mth-e-wash:#eff6e0;--gauge-track:#fbf3ed;--gauge-700:#485706;--gauge-fill:#7c9135;--gauge-fill-top:#9f4d47;--mth-angle:100deg;}
+/* </themes> */
+
+/* ---------- Familles : calque de fond ---------- */
+:root[data-medina-theme^="geo-"],.mth-swatch[data-mth-swatch^="geo-"]{--mth-page:var(--mth-motif);--mth-page-size:var(--mth-motif-size)}
+:root[data-medina-theme^="multi-"],.mth-swatch[data-mth-swatch^="multi-"]{
+ --mth-page:linear-gradient(var(--mth-angle),var(--mth-a-wash) 0%,transparent 55%),linear-gradient(var(--mth-angle),transparent 55%,var(--mth-b-wash) 100%);
+ --mth-page-size:auto;--mth-pc:var(--mth-c)}
+.mth-swatch[data-mth-swatch^="multi-"] .mth-prev-bar{background:
+ linear-gradient(90deg,var(--mth-a) 0%,transparent 50%) left bottom/100% 3px no-repeat,
+ linear-gradient(90deg,transparent 50%,var(--mth-b) 100%) left bottom/100% 3px no-repeat,var(--n-surface);box-shadow:none}
+
+/* Page : le motif ou le voile porte sur un calque fixe derrière tout le contenu (défilement fluide) ;
+   la zone principale devient transparente, les cartes, îlots et barres gardent leur surface claire. */
+html[data-medina-theme]:not(#mth-z) body{background-color:var(--n-paper)!important;background-image:none!important}
+html[data-medina-theme]:not(#mth-z) body::after{content:""!important;display:block!important;position:fixed!important;inset:0!important;z-index:-1!important;
+ pointer-events:none!important;opacity:1!important;background-color:var(--n-paper)!important;background-image:var(--mth-page)!important;
+ background-size:var(--mth-page-size)!important;background-repeat:repeat!important;background-position:0 0!important}
+html[data-medina-theme]:not(#mth-z) body .main{background:transparent!important}
+
+/* ---------- Contenu des cours : fond blanc immaculé, quel que soit le thème (règle de Vial, 16.10.2026) ----------
+   Leçon (.mc : outils, en-tête, onglets, îlots, tableaux, Sciences, mode Livre) et fenêtres explicatives :
+   #ffffff, sans teinte ni motif ; les fonds teintés du thème (papier, encart, survol, sélection) y redeviennent
+   blancs. L'encre des cours, les termes interactifs (--lesson-*) et Navigo (.mc-navigo*) ne sont pas touchés. */
+html[data-medina-theme]:not(#mth-z) body :is(.mc,dialog.mc-dlg,#mc-dialog){--n-paper:#ffffff;--n-sunken:#ffffff;--accent-tint:#ffffff;--accent-sel:#ffffff;
+ --mth-page:none;background-color:#ffffff!important;background-image:none!important}
+
+/* ---------- Géométrique pâle : accents et bords accordés ---------- */
+html[data-medina-theme^="geo-"]:not(#mth-z) body .mcg-cover{border-top-color:var(--accent)!important}
+html[data-medina-theme^="geo-"]:not(#mth-z) body .topbar{border-bottom-color:var(--n-line)!important}
+
+/* ---------- Multicolore iconique : régions et fondus « évanouissement et renaissance » ---------- */
+/* Les liserés sont des pseudo-éléments de 3 à 4 px (ou une bordure pour la barre latérale) : la surface
+   de chaque région reste claire ; seuls des voiles très pâles (L ≈ 0,97) teintent les fonds. */
+html[data-medina-theme^="multi-"]:not(#mth-z){
+ --mth-strip-ab:linear-gradient(90deg,var(--mth-a) 0%,transparent 50%) left top/100% 3px no-repeat,linear-gradient(90deg,transparent 50%,var(--mth-b) 100%) left top/100% 3px no-repeat;
+ --mth-strip-de:linear-gradient(90deg,var(--mth-d) 0%,transparent 50%) left top/100% 3px no-repeat,linear-gradient(90deg,transparent 50%,var(--mth-e) 100%) left top/100% 3px no-repeat;
+ --mth-strip:var(--mth-strip-ab);
+ --mth-fill-ce:linear-gradient(90deg,var(--mth-c) 0%,transparent 50%),linear-gradient(90deg,transparent 50%,var(--mth-e) 100%)}
+html[data-medina-theme^="multi-"]:not(#mth-z) body :where(.topbar,.masthead,.mcg-cover,.overview,.mcg-category-card,.specialty-card)::after{
+ content:""!important;display:block!important;position:absolute!important;left:0!important;right:0!important;top:0!important;bottom:auto!important;
+ width:auto!important;height:24px!important;margin:0!important;padding:0!important;border:0!important;opacity:1!important;transform:none!important;
+ filter:none!important;animation:none!important;transition:none!important;box-shadow:none!important;pointer-events:none!important;z-index:2!important;
+ border-radius:0!important;border-top-left-radius:inherit!important;border-top-right-radius:inherit!important;
+ background:var(--mth-strip)!important}
+/* Barre supérieure (fragments) et en-tête (portail) : a → b, voile pâle, liseré inférieur de 3 px. */
+html[data-medina-theme^="multi-"]:not(#mth-z) body :is(.topbar,.masthead){border-bottom-color:transparent!important;background:
+ linear-gradient(90deg,var(--mth-a-tint) 0%,transparent 50%),linear-gradient(90deg,transparent 50%,var(--mth-b-tint) 100%),var(--n-surface)!important}
+html[data-medina-theme^="multi-"]:not(#mth-z) body .masthead{position:relative}
+html[data-medina-theme^="multi-"]:not(#mth-z) body :is(.topbar,.masthead)::after{top:auto!important;bottom:0!important;height:3px!important}
+html[data-medina-theme^="multi-"]:not(#mth-z) body .masthead::after{bottom:-1px!important}
+html[data-medina-theme^="multi-"]:not(#mth-z) body :is(.mcg-top-title,.brandmark){color:var(--mth-a-ink)!important}
+/* Barre latérale : c → d, voile vertical et liseré droit (bordure en dégradé : A 0 %, transparent 50 %, B 100 %,
+   équivalent exact des deux calques superposés, une bordure n'acceptant qu'une image). */
+html[data-medina-theme^="multi-"]:not(#mth-z) body .sidebar{border-right:3px solid transparent!important;
+ border-image:linear-gradient(180deg,var(--mth-c) 0%,transparent 50%,var(--mth-d) 100%) 1!important;background:
+ linear-gradient(180deg,var(--mth-c-tint) 0%,transparent 50%),linear-gradient(180deg,transparent 50%,var(--mth-d-tint) 100%),var(--n-surface)!important}
+html[data-medina-theme^="multi-"]:not(#mth-z) body .sidebar .nav-main a:is(.active,[aria-current]){background:var(--mth-c-tint)!important;color:var(--mth-c-ink)!important;box-shadow:inset 3px 0 0 var(--mth-c)!important}
+/* Couverture du fragment et bloc de progression du portail : d → e. */
+html[data-medina-theme^="multi-"]:not(#mth-z) body .mcg-cover{border-top-width:1px!important;border-top-color:var(--n-line)!important}
+html[data-medina-theme^="multi-"]:not(#mth-z) body .mcg-cover{background:linear-gradient(120deg,var(--mth-d-tint) 0%,transparent 40%),var(--n-surface)!important}
+html[data-medina-theme^="multi-"]:not(#mth-z) body :is(.mcg-cover,.overview){--mth-strip:var(--mth-strip-de)}
+html[data-medina-theme^="multi-"]:not(#mth-z) body .mcg-cover :is(.mcg-eyebrow,.mcg-cover-art){color:var(--mth-d-ink)!important}
+/* Cartes : chaque carte garde sa teinte (catégorie ou spécialité) ; son liseré supérieur s'éteint
+   là où naît la teinte de la carte suivante (--mth-next, posé par themes_medina.js). */
+html[data-medina-theme^="multi-"]:not(#mth-z) body .mcg-category-card{--mth-strip:
+ linear-gradient(90deg,var(--mp-cat,var(--mth-a)) 0%,transparent 50%) left top/100% 4px no-repeat,
+ linear-gradient(90deg,transparent 50%,var(--mth-next,var(--mth-b)) 100%) left top/100% 4px no-repeat}
+html[data-medina-theme^="multi-"]:not(#mth-z) body .specialty-card{--mth-strip:
+ linear-gradient(90deg,var(--card-accent,var(--mth-a)) 0%,transparent 50%) left top/100% 4px no-repeat,
+ linear-gradient(90deg,transparent 50%,var(--mth-next,var(--mth-b)) 100%) left top/100% 4px no-repeat}
+html[data-medina-theme^="multi-"]:not(#mth-z) body .specialty-card{background:linear-gradient(160deg,var(--card-tint,var(--n-surface)) 0%,transparent 45%),var(--n-surface)!important}
+/* Jauges et barre de lecture de page : c → e (lecture : a → b) ; la piste reste pâle et cernée. Navigo n'est pas touché. */
+html[data-medina-theme^="multi-"]:not(#mth-z) body .gauge-fluid{background:var(--mth-fill-ce)!important;border-right-color:var(--mth-e-ink)!important}
+html[data-medina-theme^="multi-"]:not(#mth-z) body progress::-webkit-progress-value{background:var(--mth-fill-ce)!important}
+html[data-medina-theme^="multi-"]:not(#mth-z) body progress::-moz-progress-bar{background:var(--mth-fill-ce)!important}
+html[data-medina-theme^="multi-"]:not(#mth-z) body #mdn-progress{background:var(--mth-strip-ab)!important}

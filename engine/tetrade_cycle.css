@@ -1,13 +1,16 @@
-/* Cours du cycle autorisé : corps bleu marine renforcé (#0f2c66, contraste 13,4:1 sur blanc contre 10,1:1 auparavant), termes orange foncé.
-   La portée est activée seulement pour les cours déclarés production_cycle entre 1 et 30.
-   Le plan de progression conserve sa palette sans bleu. */
+/* Cours du cycle autorisé (production_cycle 1 à 30) : couleurs fixées des leçons, lues sur les tokens de
+   engine/couleurs_premium.css (16.10.2026) : corps à l’encre choisie par le lecteur (--ink-cours, Noir ou Bleu
+   marine, ≥ 12:1 sur blanc ; repli historique #0f2c66), titres rouges soulignés (--titre-cours, 6,5:1),
+   abréviations et liens en orange brûlé (--lesson-term, 7,1:1), fond blanc immaculé (--cours-fond).
+   Les termes interactifs (.mc-w[data-k]) suivent la règle commune des cours (vert franc, soulignement
+   fluorescent) : ils ne sont plus en orange. Le plan de progression conserve sa palette sans bleu. */
 html[data-medina-active-cycle="1"] body #content .mc,
 html[data-medina-active-cycle="1"] body #mc-dialog{
- --cycle-ink:#0f2c66;--cycle-link:#9b3900;--cycle-title:#b3261e;color:var(--cycle-ink)!important;
+ --cycle-ink:var(--ink-cours,#0f2c66);--cycle-link:var(--lesson-term,#9b3900);--cycle-title:var(--titre-cours,#b3261e);color:var(--cycle-ink)!important;
 }
 html[data-medina-active-cycle="1"] body #content .mc :is(.mc-ilot,.mc-card,.mc-key,.mc-trap,.mc-alert,.mc-quiz),
 html[data-medina-active-cycle="1"] body #mc-dialog,
-html[data-medina-active-cycle="1"] body #mc-dialog .mc-dlg-h{background:#fff!important}
+html[data-medina-active-cycle="1"] body #mc-dialog .mc-dlg-h{background:var(--cours-fond,#fff)!important}
 html[data-medina-active-cycle="1"] body #content .mc :is(p,li,td,th,figcaption,.mc-key,.mc-trap,.mc-alert,.mc-src,.mc-code,.mc-status,.mc-fb),
 html[data-medina-active-cycle="1"] body #mc-dialog :is(p,li,td,th,figcaption,.mc-full,.mc-key,.mc-trap,.mc-alert,.mc-src,.mc-fb){
  color:var(--cycle-ink)!important;
@@ -16,13 +19,13 @@ html[data-medina-active-cycle="1"] body #content .mc :is(h1,h2,h3,h4,h5,h6),
 html[data-medina-active-cycle="1"] body #mc-dialog :is(h1,h2,h3,h4,h5,h6){
  color:var(--cycle-title)!important;
 }
-html[data-medina-active-cycle="1"] body #content .mc :is(.mc-w,.mc-ab,a),
-html[data-medina-active-cycle="1"] body #mc-dialog :is(.mc-w,.mc-ab,a){
+html[data-medina-active-cycle="1"] body #content .mc :is(.mc-ab,a),
+html[data-medina-active-cycle="1"] body #mc-dialog :is(.mc-ab,a){
  color:var(--cycle-link)!important;border-color:var(--cycle-link)!important;
  text-decoration-color:var(--cycle-link)!important;
 }
-html[data-medina-active-cycle="1"] body #content .mc :is(.mc-w,.mc-ab,a):hover,
-html[data-medina-active-cycle="1"] body #mc-dialog :is(.mc-w,.mc-ab,a):hover{background:#fff3e8!important}
+html[data-medina-active-cycle="1"] body #content .mc :is(.mc-ab,a):hover,
+html[data-medina-active-cycle="1"] body #mc-dialog :is(.mc-ab,a):hover{background:color-mix(in srgb,var(--cycle-link) 8%,var(--cours-fond,#fff))!important}
 html[data-medina-active-cycle="1"] body #content .mc svg :is(text,tspan),
 html[data-medina-active-cycle="1"] body #mc-dialog svg :is(text,tspan){
  fill:var(--cycle-ink)!important;font-family:var(--mc-font,'Atkinson Hyperlegible Next',sans-serif)!important;

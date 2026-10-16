@@ -179,8 +179,10 @@ try:
             premium_css=open(ROOT+'/engine/finition_premium.css',encoding='utf-8').read().replace('§',PREMIUM_PREFIX)
             s=s.replace('</head>','<style id="medina-finition-premium">'+premium_css+'</style></head>',1)
             s=s.replace('</head>','<style id="medina-couleurs-premium">'+open(ROOT+'/engine/couleurs_premium.css',encoding='utf-8').read().replace('§',PREMIUM_PREFIX)+'</style></head>',1)
+            s=s.replace('</head>','<style id="medina-themes">'+open(ROOT+'/engine/themes_medina.css',encoding='utf-8').read()+'</style><script id="medina-themes-runtime">'+open(ROOT+'/engine/themes_medina.js',encoding='utf-8').read()+'</script></head>',1)
             i=s.rindex('</body>')
             s=s[:i]+'<script id="medina-finition-premium-runtime">'+open(ROOT+'/engine/finition_premium.js',encoding='utf-8').read()+'</script>'+s[i:]
+            i=s.rindex('</body>');s=s[:i]+'<script id="medina-encre-lecture">'+open(ROOT+'/engine/encre_lecture.js',encoding='utf-8').read()+'</script>'+s[i:]
         s=s.replace('</head>','<style id="medina-navigo-premium">'+open(ROOT+'/engine/navigo_premium.css',encoding='utf-8').read().replace('§',PREMIUM_PREFIX if selected else ':root body')+'</style></head>',1)
         if selected:
             present={c['code'] for c in chap}
