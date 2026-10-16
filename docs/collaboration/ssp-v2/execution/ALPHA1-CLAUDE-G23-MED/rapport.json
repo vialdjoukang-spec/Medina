@@ -1,0 +1,933 @@
+{
+ "mission": "ALPHA1-CLAUDE-G23-MED",
+ "code": "G23",
+ "type_audit": "medical",
+ "base_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "worktree_base": "32416a2080e67537641040a81252dec0b3e6d137",
+ "worktree_base_note": "START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste.",
+ "source_snapshot_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "generation": 1,
+ "branche": "claude/alpha1/g23-med-g1",
+ "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-G23-MED-g1",
+ "conversation": "alpha1-claude-g23-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": null,
+ "date_fin": "2026-10-16T06:28:50Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G23/G23_a.html",
+   "chapters/G23/G23_b.html",
+   "chapters/G23/G23_c.html",
+   "chapters/G23/G23_d.html",
+   "chapters/G23/G23_pop1.html",
+   "chapters/G23/G23_pop2.html",
+   "glossary/g23.py"
+  ],
+  "empreintes_conformes": true,
+  "empreintes": {
+   "chapters/G23/G23_a.html": {
+    "sha256": "01b75db8e5863831f254431e7fd39a1398abfdf060268eb0efdc9647b8b03d58",
+    "manifeste": "01b75db8e5863831f254431e7fd39a1398abfdf060268eb0efdc9647b8b03d58",
+    "conforme": true
+   },
+   "chapters/G23/G23_b.html": {
+    "sha256": "a3ffac31116e26c0d12da0c8a7639e0e5d3038bbd7331d4126e54020f21901a6",
+    "manifeste": "a3ffac31116e26c0d12da0c8a7639e0e5d3038bbd7331d4126e54020f21901a6",
+    "conforme": true
+   },
+   "chapters/G23/G23_c.html": {
+    "sha256": "b7827cbbe754a4d47bfdf6cdc3e601f887384a1cf08b25488b1ef00e4367a128",
+    "manifeste": "b7827cbbe754a4d47bfdf6cdc3e601f887384a1cf08b25488b1ef00e4367a128",
+    "conforme": true
+   },
+   "chapters/G23/G23_d.html": {
+    "sha256": "9a43c9eed9a053d4360d97207c4c5263ec335c6e8e3eec1f3762ab2313b6b56a",
+    "manifeste": "9a43c9eed9a053d4360d97207c4c5263ec335c6e8e3eec1f3762ab2313b6b56a",
+    "conforme": true
+   },
+   "chapters/G23/G23_pop1.html": {
+    "sha256": "3bdde9dad267fa2b1d73a9c938b4237369ba76d8fa17af55c114b01fbbb3c861",
+    "manifeste": "3bdde9dad267fa2b1d73a9c938b4237369ba76d8fa17af55c114b01fbbb3c861",
+    "conforme": true
+   },
+   "chapters/G23/G23_pop2.html": {
+    "sha256": "b24db510e24e288d053faa6bdf2485bfc27da46bf31f93f955a0b46ff4c17379",
+    "manifeste": "b24db510e24e288d053faa6bdf2485bfc27da46bf31f93f955a0b46ff4c17379",
+    "conforme": true
+   },
+   "glossary/g23.py": {
+    "sha256": "7314efa443b4e96c72f9ea2b9d7517c0e65d4f7299f92151510b40d68878fa07",
+    "manifeste": "7314efa443b4e96c72f9ea2b9d7517c0e65d4f7299f92151510b40d68878fa07",
+    "conforme": true
+   }
+  },
+  "methode": "Lecture intégrale des 7 fichiers (HTML converti en texte avec identifiants, ancres vérifiées sur les fichiers d’origine par script : chaque ancre apparaît exactement une fois)."
+ },
+ "premiere_source_lue": {
+  "source_id": "S7",
+  "url": "https://www.ern-rnd.eu/wp-content/uploads/2025/10/11_ERN-RND_AM2025_Poster_GuidelineMSAandPSP_APS.pdf",
+  "section": "poster entier (statut de la ligne directrice ERN-RND/EAN/MDS-ES)"
+ },
+ "synthese": {
+  "BLOQUANT": 0,
+  "MAJEUR": 11,
+  "MINEUR": 11,
+  "ENRICHISSEMENT": 5,
+  "MAJEUR_bloquant_cloture": [
+   "C01"
+  ]
+ },
+ "constats": [
+  {
+   "id": "C01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G23/G23_c.html",
+   "ancre": "<div class=\"sci-bar ui\" role=\"tablist\">",
+   "constat": "La leçon ne possède pas de sous-onglet « Sémiologie fondamentale et analytique » : la barre #pS ne contient que les cinq disciplines (anatomie, histologie, physiologie, biochimie, génétique). Les symptômes et signes existent en liste (g23-5, g23-6), sans technique, sans mécanisme par signe, sans normal préalable, sans regroupement syndromique ni raisonnement en cinq étapes. SEM-01, SEM-02, SEM-03 (pour cette discipline) et SEM-13 sont non satisfaits. Ce constat est MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md) : il ne s'agit pas d'une simple lacune.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Supportive features ; Cardiovascular Autonomic Failure",
+     "citation_courte": "postural instability within the first 3 years ... sensitivity: 27%–45%, specificity: 88.7%"
+    },
+    {
+     "source_id": "S3",
+     "section": "Cardiovascular autonomic failure",
+     "citation_courte": "sensitivity: 91.3%; specificity: 88.4% for head-up tilt test"
+    },
+    {
+     "source_id": "S5",
+     "section": "Conclusion on diagnostic criteria",
+     "citation_courte": "strained, high-pitched, harsh respiratory sound, mainly inspiratory"
+    }
+   ],
+   "proposition": "Insérer la discipline complète de propositions/G23_c_1.html (bouton en tête de .sci-bar, div.sci g23-s-semio, neuf sections data-semiology g23-sm-1 à g23-sm-9, bouton g23-tab-semio, panneau role=tabpanel, figure 8) ajouter en fin de chapters/G23/G23_pop2.html les 8 fenêtres g23-sm-* de propositions/G23_pop2_1.html (seuls _pop1 et _pop2 sont des fichiers admis) ; insérer dans chapters/G23/G23_a.html (panneau pA, îlot g23-6, avant l’encadré « À retenir ») la section data-semiology-clinical=\"G23\" de propositions/G23_a_semio_clinique.html.",
+   "justification": "Mécanisme : la valeur d’un parkinsonisme atypique repose sur des signes mesurés (rapport pouls/pression, résidu, saccades) dont la technique conditionne la sensibilité. Conséquence : sans technique ni valeur chiffrée, le lecteur ne sait ni objectiver ni pondérer ces signes. Décision : ajouter la discipline exigée par Vial et l’addendum, entièrement sourcée.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": true,
+   "statut_cloture": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md)"
+  },
+  {
+   "id": "C02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G23/G23_c.html",
+   "ancre": "id=\"g23-s-histo-cours\"",
+   "constat": "tests/audit_sciences.py échoue sur G23 (base 32416a20) : quatre disciplines sur cinq ont moins de 280 mots (histologie 221, physiologie 234, biochimie 229, génétique 205) et neuf encadrés de corrélation exigés manquent (Science → traitement en anatomie, histologie et génétique ; Science → examen en physiologie et biochimie ; À retenir dans les cinq).",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Biologisch und neuropathologisch basierte Krankheitsdefinition",
+     "citation_courte": "astrozytäre Plaques ... in den proximalen Astrozyten-Fortsätzen"
+    },
+    {
+     "source_id": "S4",
+     "section": "Ätiopathogenese",
+     "citation_courte": "Klassifikation ... in sechs konsekutiven Stadien"
+    },
+    {
+     "source_id": "S3",
+     "section": "Supportive laboratory findings",
+     "citation_courte": "faster aggregation rate, but overall lower maximum Thioflavin T fluorescence"
+    }
+   ],
+   "proposition": "Ajouter les paragraphes et encadrés de propositions/G23_c_2.html (cinq disciplines) et la clé MAPT au glossaire.",
+   "justification": "Mécanisme : le contrat des sciences exige profondeur et corrélations explicites. Conséquence : contrôle bloquant en échec et sciences réduites à des tableaux. Décision : compléter avec des faits lus en texte intégral.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C03",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G23/G23_a.html",
+   "ancre": "Ce phénotype est le plus connu, mais pas le plus fréquent",
+   "constat": "Erreur factuelle : la revue de Munich, citée par la leçon, présente le syndrome de Richardson comme le phénotype clinique le plus fréquent à ce jour, bien qu’il ne concerne qu’environ 25 % des cas. La leçon affirme l’inverse.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Klinische Manifestationen",
+     "citation_courte": "den bis heute häufigsten klinischen Phänotyp, Richardson-Syndrom (RS) ... in etwa 25% der PSP-Fälle"
+    }
+   ],
+   "proposition": "Remplacer par le texte de propositions/G23_a_1.html et ajouter PSP-PI à la fenêtre g23-phenotypes-psp.",
+   "justification": "Mécanisme : les phénotypes variants convergent souvent vers le Richardson. Conséquence : affirmer qu’il n’est pas le plus fréquent fausse un point classique d’examen. Décision : corriger selon la source.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G23/G23_a.html",
+   "ancre": "Dans l’AMS, les critères exigent cette chute dans les 3 minutes pour la forme établie",
+   "constat": "La leçon applique à l’AMS la définition ESC (chute systolique ≥ 20 ou diastolique ≥ 10 ou systolique < 90 mmHg). Les critères MDS 2022 exigent une chute systolique ≥ 20 mmHg, acceptent le critère systolique seul et précisent que la chute diastolique isolée n’est pas spécifique et ne doit pas être utilisée seule. Même formulation en g23-e-2 (G23_c.html), dans le tableau de g23-e-2 et dans la fenêtre g23-ho.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Cardiovascular Autonomic Failure",
+     "citation_courte": "we allow a diagnosis of nOH if only the systolic criterion is fulfilled. The DBP drop criterion is non‐specific and should not be used in isolation"
+    }
+   ],
+   "proposition": "Remplacer par le texte de propositions/G23_a_2.html aux trois emplacements.",
+   "justification": "Mécanisme : 95 % des hypotensions neurogènes sont reconnues par le seul critère systolique. Conséquence : une chute diastolique isolée ferait retenir à tort un critère cardinal. Décision : aligner sur MDS 2022.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C05",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G23/G23_c.html",
+   "ancre": "Sensibilité de 91,3 % et spécificité de 88,4 % pour l’hypotension orthostatique",
+   "constat": "Attribution erronée : 91,3 % et 88,4 % (et 79 % en station active) sont la sensibilité et la spécificité du rapport ΔFC/ΔPAS < 0,5 pour distinguer l’hypotension neurogène des causes non neurogènes, et non celles du test d’inclinaison pour l’hypotension orthostatique. Même erreur dans la fenêtre g23-ho (G23_pop1.html : « Le test d’inclinaison a une sensibilité de 91,3 % »).",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "Cardiovascular autonomic failure",
+     "citation_courte": "An increase in heart rate < 0.5 beats per minute/mmHg ... reliably distinguishes neurogenic OH from non-neurogenic causes (sensitivity: 91.3%; specificity: 88.4% for head-up tilt test; sensitivity: 79% for standing test)"
+    }
+   ],
+   "proposition": "Remplacer par propositions/G23_c_3.html dans g23-e-2 et dans la fenêtre g23-ho.",
+   "justification": "Mécanisme : le rapport mesure l’absence de compensation baroréflexe. Conséquence : le lecteur surestime la valeur du test d’inclinaison et ignore celle du calcul, qui est le geste décisif. Décision : rattacher les chiffres au bon objet.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C06",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G23/G23_b.html",
+   "ancre": "ou impériosité inexpliquée",
+   "constat": "Le critère autonome MDS 2022 est l’incontinence urinaire par impériosité inexpliquée (fuite involontaire), non l’impériosité. Formulé « impériosité » dans l’alerte de g23-12, dans la fenêtre g23-ams-criteres (« ou impériosité urinaire inexpliquée ») et dans g23-retention (« ou une impériosité inexpliquée sont des critères autonomes »). L’exclusion des causes prostatiques et pelviennes n’est pas mentionnée.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Tableau 1 ; tableau 3 (lexique)",
+     "citation_courte": "Unexplained urinary urge incontinence ... Complaint of involuntary urine leakage associated with urgency"
+    },
+    {
+     "source_id": "S1",
+     "section": "Urogenital Failure",
+     "citation_courte": "urinary urge incontinence is more sensitive but less specific (sensitivity: 48%, specificity: 34%)"
+    }
+   ],
+   "proposition": "Remplacer par propositions/G23_b_1.html aux trois emplacements.",
+   "justification": "Mécanisme : l’impériosité sans fuite est très fréquente chez l’homme âgé. Conséquence : surdiagnostic d’AMS probable. Décision : reprendre le libellé exact et ses exclusions.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C07",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G23/G23_b.html",
+   "ancre": "l’entretien de 3 à 6 fois 125 mg par jour",
+   "constat": "Ambiguïté de dose : « 125 mg » est le nom de dosage de Madopar® « 125 » (100 mg de lévodopa + 25 mg de bensérazide), alors que l’essai diagnostique s’exprime en lévodopa (jusqu’à 1000 mg par jour). Juxtaposés sans conversion (9.2 et tableau g23-p-2 : « entretien de Madopar® : 3 à 6 fois 125 mg par jour »), ils laissent croire que l’entretien de 750 mg de Madopar approche l’essai ; 1000 mg de lévodopa correspondent à dix unités « 125 ».",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "Forme pharmaceutique",
+     "citation_courte": "Comprimés (roses) à 100 mg de lévodopa + 25 mg de bensérazide"
+    },
+    {
+     "source_id": "S14",
+     "section": "Posologie",
+     "citation_courte": "1 comprimé de Madopar «125» ... trois à six fois par jour"
+    },
+    {
+     "source_id": "S1",
+     "section": "Parkinsonism",
+     "citation_courte": "<30% improvement on the MDS‐UPDRS III on 1000 mg L‐dopa if tolerated or required"
+    }
+   ],
+   "proposition": "Remplacer par propositions/G23_b_2.html (9.2) et adapter la ligne lévodopa de g23-p-2.",
+   "justification": "Mécanisme : le critère de non-réponse suppose 1000 mg de lévodopa. Conséquence : un essai sous-dosé conclut à tort à une dopa-résistance. Décision : exprimer les doses en lévodopa et convertir explicitement.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C08",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G23/G23_d.html",
+   "ancre": "Anémie (21 % dans TIRCON) ; déglutition",
+   "constat": "La surveillance de la défériprone omet le risque majeur de l’information professionnelle suisse : neutropénie et agranulocytose parfois mortelles, avec numération des neutrophiles hebdomadaire la première année, arrêt en cas d’infection, contre-indications (agranulocytose, neutropénies récidivantes, médicaments neutropéniants).",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "Mises en garde et précautions",
+     "citation_courte": "Le nombre absolu des polynucléaires neutrophiles (PNN) du patient doit être surveillé chaque semaine pendant la première année"
+    },
+    {
+     "source_id": "S17",
+     "section": "Contre-indications",
+     "citation_courte": "Antécédents d'agranulocytose"
+    }
+   ],
+   "proposition": "Remplacer la ligne par propositions/G23_d_1.html et ajouter le bloc Sécurité à la fenêtre g23-ferriprox.",
+   "justification": "Mécanisme : toxicité médullaire idiosyncrasique. Conséquence : un usage hors indication chez l’enfant PKAN sans surveillance expose à une agranulocytose mortelle. Décision : reprendre la surveillance de la FI.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C09",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G23/G23_d.html",
+   "ancre": "L’amantadine est contre-indiquée en cas de QTc supérieur à 420 ms",
+   "constat": "L’alerte « Interactions et contre-indications dangereuses » donne une liste incomplète des contre-indications de PK-Merz® sans le signaler : manquent l’insuffisance cardiaque NYHA IV, la cardiomyopathie ou myocardite, les ondes U et le QT long congénital familial, les arythmies ventriculaires graves, l’association à un médicament allongeant le QT et les antécédents de délire ; l’exclusion sous traitement (allongement > 60 ms ou QTc > 480 ms) manque aussi. L’indication suisse des comprimés (« Morbus Parkinson verschiedener Genese ») n’est pas qualifiée pour la PSP et la DCB.",
+   "preuve": [
+    {
+     "source_id": "S13",
+     "section": "Contre-indications",
+     "citation_courte": "traitement concomitant par des médicaments allongeant l'intervalle QT"
+    },
+    {
+     "source_id": "S13",
+     "section": "Posologie",
+     "citation_courte": "un allongement du QTc de plus de 60 ms, ou un QTc >480 ms ... doivent être exclus du traitement"
+    }
+   ],
+   "proposition": "Remplacer la phrase par propositions/G23_d_2.html et préciser dans g23-pkmerz que l’indication suisse vise la maladie de Parkinson « quelle que soit son origine » ; son extension aux tauopathies 4R reste à documenter comme usage hors indication probable.",
+   "justification": "Mécanisme : l’amantadine allonge le QT et expose aux torsades de pointes. Conséquence : une association à un autre allongeur du QT n’est pas repérée. Décision : liste complète issue de la FI.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C10",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G23/G23_b.html",
+   "ancre": "fludrocortisone de 0,1 à 0,3 mg par jour",
+   "constat": "La séquence thérapeutique propose midodrine et fludrocortisone sans signaler que la FI de Gutron® décrit une hypertension de décubitus fréquente aux fortes doses, surtout en association avec la fludrocortisone, ni que la moitié des patients AMS avec hypotension neurogène ont une hypertension de décubitus ou nocturne. L’arrêt en cas de hausse excessive de la pression couchée n’est pas mentionné.",
+   "preuve": [
+    {
+     "source_id": "S12",
+     "section": "Effets indésirables",
+     "citation_courte": "Cela se produit surtout en cas d’association avec la fludrocortisone"
+    },
+    {
+     "source_id": "S12",
+     "section": "Posologie",
+     "citation_courte": "en cas d’augmentation excessive de la pression artérielle en position couchée, le chlorhydrate de midodrine doit être arrêté"
+    },
+    {
+     "source_id": "S3",
+     "section": "Cardiovascular autonomic failure",
+     "citation_courte": "Every second person with MSA and neurogenic OH shows ... supine and nocturnal hypertension"
+    }
+   ],
+   "proposition": "Ajouter l’encadré trap de propositions/G23_b_3.html après la séquence ESC (9.5) et le rappeler dans g23-p-3.",
+   "justification": "Mécanisme : la défaillance baroréflexe empêche aussi de tamponner la pression couchée. Conséquence : l’association la plus prescrite majore un effet indésirable dangereux. Décision : signaler l’interaction et la conduite de la FI.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C11",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G23/G23_b.html",
+   "ancre": "La toxine botulique de type A, renouvelée tous les trois mois",
+   "constat": "La toxine botulique est proposée dans la PSP et la DCB, dont la dysphagie est la cause principale de mortalité, sans mentionner l’aggravation possible de la dysphagie (revue de Munich) ni la mise en garde de la FI Xeomin® (dysphagie pendant 2 à 3 semaines, diffusion à distance parfois mortelle, prudence en cas d’antécédent d’aspiration).",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Tableau des traitements symptomatiques",
+     "citation_courte": "passagere Verschlechterung einer Dysphagie möglich"
+    },
+    {
+     "source_id": "S15",
+     "section": "Mises en garde",
+     "citation_courte": "Une dysphagie peut persister pendant deux à trois semaines après l’injection"
+    }
+   ],
+   "proposition": "Ajouter le paragraphe de propositions/G23_b_4.html en 9.3 et dans la fenêtre g23-xeomin (mettre à jour la date de la FI : mars 2026).",
+   "justification": "Mécanisme : diffusion de la toxine aux muscles pharyngés. Conséquence : risque d’aspiration chez des patients déjà dysphagiques. Décision : rendre la mise en garde visible au point de décision.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C12",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G23/G23_d.html",
+   "ancre": "La midodrine est contre-indiquée en cas de rétention urinaire",
+   "constat": "La liste des contre-indications de Gutron® omet les arythmies, la maladie rénale aiguë, les maladies vasculaires oblitérantes sévères, la rétinopathie diabétique proliférante, la réaction hypertonique au test de station debout et l’allaitement ; l’indication suisse comprend aussi les formes fonctionnelles et iatrogènes. Un générique suisse (Midodrin Substipharm, mai 2024) existe.",
+   "preuve": [
+    {
+     "source_id": "S12",
+     "section": "Contre-indications",
+     "citation_courte": "-Arythmies ... -Rétinopathie diabétique proliférant"
+    },
+    {
+     "source_id": "S18",
+     "section": "Indications",
+     "citation_courte": "Hypotension orthostatique idiopathique avec manifestation neurologique (syndrome de Shy-Drager/SSD)"
+    }
+   ],
+   "proposition": "Compléter l’alerte de g23-p-3 et la fenêtre g23-gutron avec la liste intégrale de la FI (mars 2021) et mentionner le générique.",
+   "justification": "Liste incomplète sans mention de son caractère partiel ; risque faible car l’AMS rend surtout la rétention pertinente, d’où MINEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C13",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G23/G23_b.html",
+   "ancre": "Maladie de Wilson, maladie de Niemann-Pick de type C",
+   "constat": "Avant 45 ans, les critères MDS 2017 font aussi chercher une hypoparathyroïdie, une neuroacanthocytose et une neurosyphilis. Le seuil d’exclusion de la dysautonomie dans la PSP (30/15 mmHg en 3 minutes) n’est donné nulle part (« dysautonomie prédominante » seulement).",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Tableau 1, exclusions dépendant du contexte et obligatoires",
+     "citation_courte": "Wilson's disease, Niemann-Pick C, hypoparathyroidism, neuroacanthocytosis, and neurosyphilis under age 45 ; systolic drop of 30 mm Hg or diastolic drop of 15 mm Hg within 3 minutes"
+    }
+   ],
+   "proposition": "Compléter la ligne du tableau 7.5 et la fenêtre g23-psp-criteres : « avant 45 ans : maladie de Wilson, Niemann-Pick C, hypoparathyroïdie, neuroacanthocytose, neurosyphilis » ; « dysautonomie : hypotension orthostatique d’au moins 30/15 mmHg en 3 minutes ».",
+   "justification": "Différentiel traitable incomplet ; seuil d’exclusion décisionnel absent mais rarement en cause.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C14",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G23/G23_pop1.html",
+   "ancre": "PSP-CBS (syndrome corticobasal)",
+   "constat": "La liste des phénotypes MDS 2017 omet la PSP à prédominance d’instabilité posturale (PSP-PI), présente dans les critères et dans la revue de Munich.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Predominance Types",
+     "citation_courte": "These include PSP-RS, PSP-OM, PSP-PI, PSP-P, PSP-F, PSP-PGF, PSP-CBS, and PSP-SL"
+    }
+   ],
+   "proposition": "Voir propositions/G23_a_1.html (ajout PSP-PI et clé de glossaire).",
+   "justification": "Complétude de classification.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C15",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G23/G23_b.html",
+   "ancre": "Le bénéfice de la droxidopa est perdu à 8 semaines.",
+   "constat": "Formulation plus précise que le passage lu de l’ESC 2018, qui dit seulement que les preuves sont insuffisantes pour confirmer l’efficacité à long terme. Le statut suisse de la droxidopa n’a pas été vérifié.",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "§ 5.3.10",
+     "citation_courte": "current evidence is insufficient to confirm the efficacy of droxidopa for long-term use"
+    }
+   ],
+   "proposition": "Écrire : « Les preuves sont insuffisantes pour confirmer l’efficacité de la droxidopa à long terme (lignes directrices ESC sur la syncope, 2018) ; aucune autorisation suisse n’a été vérifiée. »",
+   "justification": "Chiffre non retrouvé dans la section lue ; aucune conséquence décisionnelle en Suisse.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C16",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G23/G23_b.html",
+   "ancre": "la chirurgie oculomotrice n’est pas indiquée",
+   "constat": "La source dit « aucune recommandation » pour la chirurgie des muscles oculomoteurs, et non qu’elle n’est pas indiquée.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Tableau des traitements symptomatiques",
+     "citation_courte": "keine Empfehlung zu Augenmuskeloperationen"
+    }
+   ],
+   "proposition": "Écrire : « la revue de Munich ne recommande pas de chirurgie des muscles oculomoteurs ».",
+   "justification": "Surinterprétation légère de la source.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C17",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G23/G23_a.html",
+   "ancre": "Or, dans l’AMS parkinsonienne et la PSP, la dégénérescence touche ces neurones post-synaptiques",
+   "constat": "Relation causale étendue à l’AMS sans source lue (addendum, point 3) : les sources citées établissent la dégénérescence dopaminergique post-synaptique comme indice d’imagerie de la PSP (IF2) ; aucune source lue ne l’établit comme mécanisme de la mauvaise réponse dans l’AMS.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Tableau 3",
+     "citation_courte": "IF2 postsynaptic striatal dopaminergic degeneration"
+    },
+    {
+     "source_id": "S3",
+     "section": "Parkinsonism",
+     "citation_courte": "Patients with MSA have in general poorer response to L-Dopa compared to patients with PD"
+    }
+   ],
+   "proposition": "Écrire : « Dans la PSP, la dégénérescence dopaminergique striatale post-synaptique est un indice d’imagerie (IF2) ; elle est cohérente avec la faible réponse à la lévodopa. Dans l’AMS, la faible réponse est constatée ; son mécanisme n’est pas détaillé dans les sources lues. »",
+   "justification": "Ne pas transformer une association en mécanisme.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C18",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G23/G23_a.html",
+   "ancre": "est le geste le plus rentable",
+   "constat": "Jugement comparatif non sourcé (« le geste le plus rentable »).",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Cardiovascular Autonomic Failure",
+     "citation_courte": "Sensitivity of nOH within 3 minutes ... is modest to moderate at early stages"
+    }
+   ],
+   "proposition": "Écrire : « La pression artérielle couchée puis debout, avec le pouls, objective le critère autonome cardiovasculaire des critères MDS. »",
+   "justification": "Retirer un jugement de valeur sans source.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C19",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G23/G23_pop2.html",
+   "ancre": "L’information professionnelle n’a pas été lue en détail",
+   "constat": "Les FI suisses de Florinef® et de Xeomin® portent la date de mise à jour mars 2026 ; la leçon écrit « date non relevée » (g23-florinef, g23-xeomin : « Posologie et date de mise à jour non relevées. »). L’indication suisse de Florinef® comprend aussi le syndrome de perte de sel du syndrome adrénogénital.",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "Indications ; mise à jour",
+     "citation_courte": "Traitement substitutif lors d'insuffisance corticosurrénale prononcée ... Mars 2026"
+    },
+    {
+     "source_id": "S15",
+     "section": "Mise à jour",
+     "citation_courte": "Mars 2026"
+    }
+   ],
+   "proposition": "Inscrire « information professionnelle suisse Florinef®, mars 2026 » et « Xeomin®, mars 2026 » ; compléter l’indication de Florinef®.",
+   "justification": "Traçabilité des FI (loi 3 du prompt de vérité).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C20",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G23/G23_a.html",
+   "ancre": "aria-label=\"Figure 1 — De la protéine anormale au signe clinique\"",
+   "constat": "Figure 1 : texte en font-size 11 dans une viewBox de 420 de large ; rendu à environ 9,4 px dans une colonne de 358 px (écran de 390 px avec gouttières de 16 px), sous le seuil d’environ 10 px. Aucune valeur chiffrée décisionnelle n’y figure.",
+   "preuve": [],
+   "proposition": "Porter le texte à font-size 13 au minimum, ou réduire la viewBox à 360 de large en scindant les libellés sur deux lignes.",
+   "justification": "Lisibilité mobile (addendum, point 2).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C21",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G23/G23_b.html",
+   "ancre": "La rétention urinaire est très spécifique de l’AMS (",
+   "constat": "La spécificité de la rétention vaut contre la maladie de Parkinson ; elle est moins discriminante contre la PSP, où une vessie neurogène peut aussi apparaître. La précision est donnée en 5.2 mais pas en 8.3 ni dans l’alerte de 9.5.",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "Disorders presenting with autonomic failure",
+     "citation_courte": "highly specific of MSA versus PD, but less accurate in distinguishing MSA from PSP"
+    },
+    {
+     "source_id": "S1",
+     "section": "Urogenital Failure",
+     "citation_courte": "is not useful to distinguish MSA from progressive supranuclear palsy (PSP)"
+    }
+   ],
+   "proposition": "Ajouter « par rapport à la maladie de Parkinson, mais non par rapport à la PSP » en 8.3 et 9.5.",
+   "justification": "Précision de portée.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C22",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G23/G23_c.html",
+   "ancre": "Atrophie du putamen ou infratentorielle",
+   "constat": "Pour l’AMS cérébelleuse établie, MDS 2022 retient l’atrophie ou la diffusivité accrue du putamen, l’atrophie du pont ou du pédoncule cérébelleux moyen, ou le signe de la croix ; « infratentorielle » englobe à tort l’atrophie cérébelleuse, que la ligne exclut ensuite.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Brain MRI markers",
+     "citation_courte": "at least one of atrophy or increased diffusivity of putamen, atrophy of the pons or MCP, or the “hot‐cross bun” sign"
+    }
+   ],
+   "proposition": "Écrire : « Atrophie ou diffusivité accrue du putamen, atrophie du pont ou du pédoncule cérébelleux moyen, signe de la croix ».",
+   "justification": "Libellé exact d’un marqueur requis.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E01",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G23/G23_a.html",
+   "ancre": "aucune donnée épidémiologique suisse</b>",
+   "constat": "Rubrique 4 : des estimations suisses existent (fiches Parkinson Suisse rédigées par des neurologues suisses) ; la leçon déclare l’absence de toute donnée suisse.",
+   "preuve": [
+    {
+     "source_id": "S10",
+     "section": "Fiche entière",
+     "citation_courte": "prévalence d’environ 4 / 100 000 ... entre six et dix ans après l’apparition des symptômes"
+    },
+    {
+     "source_id": "S11",
+     "section": "Fiche entière",
+     "citation_courte": "rare (4-6%) ... (2-12 ans, en moyenne 5-7 ans)"
+    }
+   ],
+   "proposition": "Texte de propositions/G23_a_3.html.",
+   "justification": "Hiérarchie suisse d’abord, avec la limite méthodologique explicitée.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E02",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G23/G23_b.html",
+   "ancre": "La prise en charge spécifique du stridor et des apnées",
+   "constat": "Lacune déclarée par la leçon (stridor) comblée par un consensus européen en texte intégral : définition, examens, ventilation en pression positive continue, trachéotomie, incertitude sur la survie.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Treatment of stridor",
+     "citation_courte": "Tracheostomy is currently preferred in the advanced disease stage for severe stridor ... CPAP ... for mild and moderate intensity stridor occurring during sleep"
+    }
+   ],
+   "proposition": "Texte de propositions/G23_b_5.html.",
+   "justification": "Complication grave de l’AMS, point de décision.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E03",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G23/G23_c.html",
+   "ancre": "Le résidu post-mictionnel se mesure par échographie ou sondage",
+   "constat": "Le bilan urinaire initial recommandé par MDS 2022 (calendrier de 3 jours, toucher rectal, échographie prostatique, résidu échographique) et le piège de la chirurgie prostatique inutile (43 % des hommes) manquent.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Urogenital Failure",
+     "citation_courte": "completing a 3‐day bladder diary ... digital rectal examination and ultrasonography"
+    },
+    {
+     "source_id": "S3",
+     "section": "Disorders presenting with autonomic failure",
+     "citation_courte": "43% of males had undergone futile prostatic or bladder neck surgery"
+    }
+   ],
+   "proposition": "Texte de propositions/G23_c_4.html.",
+   "justification": "Piège classique à conséquence chirurgicale.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E04",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G23/G23_b.html",
+   "ancre": "une ligne directrice ERN-RND/EAN/MDS-ES est annoncée comme en cours",
+   "constat": "Critères européens d’adressage au spécialiste (ERN-RND 2020) absents ; statut de la ligne directrice ERN-RND/EAN/MDS-ES non daté.",
+   "preuve": [
+    {
+     "source_id": "S6",
+     "section": "Section 1",
+     "citation_courte": "debe ser remitido a un especialista en trastornos del movimiento"
+    },
+    {
+     "source_id": "S7",
+     "section": "Project timeline",
+     "citation_courte": "Submission of the guideline drafts (EJN, MDJ)"
+    }
+   ],
+   "proposition": "Texte de propositions/G23_b_6.html.",
+   "justification": "Rubriques 9 et 12 : niveau de soins et orientation.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E05",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G23/G23_a.html",
+   "ancre": "Chutes en arrière précoces, dès la première année",
+   "constat": "Le piège des chutes précoces dans l’AMS (28 % la première année ; latence médiane 24 mois contre 118 mois dans la maladie de Parkinson) n’est pas donné ; les chutes seules ne distinguent pas PSP et AMS.",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "Disorders presenting with parkinsonism",
+     "citation_courte": "28% of MSA patients also develop falls within the first year"
+    },
+    {
+     "source_id": "S1",
+     "section": "Supportive features",
+     "citation_courte": "Median latency to falls was shorter in MSA (24 months) than in PD (118 months)"
+    }
+   ],
+   "proposition": "Ajouter à la carte : « Dans l’AMS, 28 % des patients tombent aussi dès la première année ; la chute précoce isolée ne tranche pas (revue d’Innsbruck, 2023). » Repris dans la fenêtre g23-sm-chutes (propositions/G23_pop2_1.html).",
+   "justification": "Discriminant sourcé d’un différentiel (README-V2 § 7).",
+   "ancre_occurrences": 1
+  }
+ ],
+ "matrice_20": [
+  {
+   "rang": 1,
+   "rubrique": "Question clinique et enjeu pour l’examen fédéral",
+   "statut": "couvert",
+   "ancre": "g23-0"
+  },
+  {
+   "rang": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "partiel",
+   "ancre": "g23-1, fenêtre g23-cim ; rattachement de la DCB à G23.8 non vérifié (index alphabétique non lu, ni par la leçon ni par l’audit)"
+  },
+  {
+   "rang": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "couvert",
+   "ancre": "g23-7.1 à 7.3, fenêtres g23-ams-criteres, g23-psp-criteres, g23-scb-criteres ; erreurs C04, C06, C14"
+  },
+  {
+   "rang": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "partiel",
+   "ancre": "g23-2 ; estimations suisses absentes (E01) ; AMS chiffrée par une cohorte américaine de seconde main"
+  },
+  {
+   "rang": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "partiel",
+   "ancre": "g23-3, g23-s-physio ; disciplines trop brèves (C02) ; normal peu décrit pour les signes (C01)"
+  },
+  {
+   "rang": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "couvert",
+   "ancre": "g23-4, g23-s-gene ; haplotype MAPT H1 absent (proposé en C02)"
+  },
+  {
+   "rang": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "partiel",
+   "ancre": "g23-5 (cohorte de 30 patients) ; valeurs MDS 2022 et Innsbruck absentes (C01)"
+  },
+  {
+   "rang": 8,
+   "rubrique": "Examen clinique (signes, Se/Sp)",
+   "statut": "partiel",
+   "ancre": "g23-6 et fenêtres ; techniques et sensibilités absentes, attribution erronée C05"
+  },
+  {
+   "rang": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "partiel",
+   "ancre": "div.alert de g23-8 ; critères d’adressage (E04) et stridor (E02) absents"
+  },
+  {
+   "rang": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "couvert",
+   "ancre": "g23-e-1 à g23-e-5 ; corrections C05, C22, E03"
+  },
+  {
+   "rang": 11,
+   "rubrique": "Diagnostic différentiel",
+   "statut": "couvert",
+   "ancre": "g23-7.5 ; liste avant 45 ans incomplète (C13)"
+  },
+  {
+   "rang": 12,
+   "rubrique": "Prise en charge suisse (FI datées)",
+   "statut": "partiel",
+   "ancre": "g23-9, g23-p-1 à g23-p-4 ; sécurité incomplète C08 à C12 ; urologie non sourcée"
+  },
+  {
+   "rang": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "couvert",
+   "ancre": "g23-8, g23-10"
+  },
+  {
+   "rang": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "couvert",
+   "ancre": "g23-10"
+  },
+  {
+   "rang": 15,
+   "rubrique": "Situations particulières",
+   "statut": "partiel",
+   "ancre": "g23-11 ; sujet âgé sans recommandation"
+  },
+  {
+   "rang": 16,
+   "rubrique": "Spécificités suisses (AI, conduite, remboursement)",
+   "statut": "absent",
+   "ancre": "aucune ancre ; seules les ressources de Parkinson Suisse (g23-9.1) ; lacune non comblée par l’audit"
+  },
+  {
+   "rang": 17,
+   "rubrique": "Critères formels du diagnostic (div.alert)",
+   "statut": "couvert",
+   "ancre": "div.alert de g23-12 ; corrections C04 et C06"
+  },
+  {
+   "rang": 18,
+   "rubrique": "Paramètres clés (div.key)",
+   "statut": "couvert",
+   "ancre": "div.key de g23-12"
+  },
+  {
+   "rang": 19,
+   "rubrique": "Sous-codes CIM-10-GM couverts",
+   "statut": "couvert",
+   "ancre": "tableau de g23-1 (G23.0 à G23.9)"
+  },
+  {
+   "rang": 20,
+   "rubrique": "Points d’examen fédéral",
+   "statut": "partiel",
+   "ancre": "vignette g23-0, cas g23-11, quiz ; aucune correspondance PROFILES vérifiée"
+  }
+ ],
+ "semiologie": {
+  "statut": "absente",
+  "constat_id": "C01",
+  "gravite": "MAJEUR",
+  "fondamentale": {
+   "statut": "partielle dans l’onglet 1, absente comme discipline",
+   "ancres": [
+    "g23-5",
+    "g23-6",
+    "fenêtres g23-ho, g23-pulltest, g23-oculomoteur, g23-cerebelleux, g23-corticaux"
+   ],
+   "manques": "technique et normal pour chaque signe, mécanisme par signe, sensibilités et spécificités de MDS 2022 et d’Innsbruck, piège par signe"
+  },
+  "analytique": {
+   "statut": "absente",
+   "ancres": [
+    "g23-7.5 (différentiel seul)"
+   ],
+   "manques": "examen systématique numéroté, tableau des syndromes, raisonnement en cinq étapes, synthèse présentée, trois cas corrigés"
+  },
+  "proposition": "propositions/G23_c_1.html, propositions/G23_pop2_1.html et propositions/G23_a_semio_clinique.html",
+  "grille_SEM": {
+   "SEM-01": "non",
+   "SEM-02": "non",
+   "SEM-03": "non (discipline absente ; audit_sciences.py en échec sur les cinq disciplines existantes)",
+   "SEM-04": "oui pour l’état actuel (test_v7.py --static G23 : OK) ; non applicable à la discipline absente",
+   "SEM-05": "non (tableau g23-5.2 sans mécanisme ni piège)",
+   "SEM-06": "non",
+   "SEM-07": "non",
+   "SEM-08": "partiel (valeurs g23-5.2 sourcées, population indiquée ; attribution erronée C05)",
+   "SEM-09": "non",
+   "SEM-10": "partiel (div.trap de g23-5, g23-6)",
+   "SEM-11": "non",
+   "SEM-12": "non",
+   "SEM-13": "non pour la discipline ; div.alert de g23-8 présente",
+   "SEM-14": "partiel (tableau g23-7.5)",
+   "SEM-15": "non",
+   "SEM-16": "non",
+   "SEM-17": "non (quiz existants hors sémiologie)",
+   "SEM-18": "non vérifiable (aucun mot vert sémiologique)",
+   "SEM-19": "oui pour l’existant (sources européennes ; cohorte américaine signalée)",
+   "SEM-20": "non (C04, C05, C06 : seuils divergents de MDS 2022)",
+   "SEM-21": "sans objet",
+   "SEM-22": "non vérifié (aucune capture réelle prise par l’audit)",
+   "SEM-23": "non (aucune capture réelle prise par l’audit)",
+   "SEM-24": "oui (bandeau « Aucune validation médicale humaine »)"
+  },
+  "bloquant_cloture": true,
+  "statut_cloture": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md)"
+ },
+ "figures": [
+  {
+   "ancre": "Figure 1 — De la protéine anormale au signe clinique",
+   "fichier": "chapters/G23/G23_a.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "viewBox": "0 0 420 252",
+   "font_size": "11 et 13",
+   "lisibilite_390px": "texte 11 → environ 9,4 px : constat C20",
+   "constat_id": "C20"
+  },
+  {
+   "ancre": "Figure 2 — Séquence diagnostique",
+   "fichier": "chapters/G23/G23_b.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "viewBox": "0 0 380 282",
+   "font_size": "14",
+   "lisibilite_390px": "conforme",
+   "constat_id": null
+  },
+  {
+   "ancre": "Figure 3 — Correspondance entre structures et signes",
+   "fichier": "chapters/G23/G23_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "viewBox": "0 0 400 230",
+   "font_size": "13",
+   "lisibilite_390px": "environ 11,6 px, conforme",
+   "constat_id": null
+  },
+  {
+   "ancre": "Figure 4 — Lésions par type cellulaire",
+   "fichier": "chapters/G23/G23_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "viewBox": "0 0 400 150",
+   "font_size": "13",
+   "lisibilite_390px": "conforme",
+   "constat_id": null,
+   "remarque": "pictogrammes cellulaires génériques, légende « non à l’échelle » ; aucune représentation anatomique réaliste"
+  },
+  {
+   "ancre": "Figure 5 — Arc autonome",
+   "fichier": "chapters/G23/G23_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "viewBox": "0 0 400 130",
+   "font_size": "13",
+   "lisibilite_390px": "conforme",
+   "constat_id": null
+  },
+  {
+   "ancre": "Figure 6 — Voie de la PKAN",
+   "fichier": "chapters/G23/G23_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "viewBox": "0 0 420 110",
+   "font_size": "13",
+   "lisibilite_390px": "environ 11,1 px, conforme",
+   "constat_id": null
+  },
+  {
+   "ancre": "Figure 7 — Origine génétique ou sporadique",
+   "fichier": "chapters/G23/G23_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "viewBox": "0 0 400 120",
+   "font_size": "13",
+   "lisibilite_390px": "conforme",
+   "constat_id": null
+  }
+ ],
+ "figures_synthese": {
+  "ANATOMIQUE_IA": 0,
+  "ORIGINE_INCONNUE": 0,
+  "SCHEMA_NON_ANATOMIQUE": 7,
+  "IMAGE_SOURCEE": 0,
+  "icones_sci_bar": "5 pictogrammes 24×24 de la barre des sciences, hors inventaire pédagogique",
+  "outil": "python3 tools/image_clo_finder.py inventory G23"
+ },
+ "verifications_conformes": [
+  "Critères MDS 2022 AMS : âge > 30 ans, résidu > 100 mL, < 30 % au MDS-UPDRS III jusqu’à 1000 mg, rapport < 0,5, signes de soutien, exclusions [S1]",
+  "Critères MDS 2017 PSP : domaines O/P/A/C, combinaisons probable et possible, CC1 à CC4, IF1 et IF2 [S2]",
+  "Prévalence PSP 5–6/100 000, DCB ≈ 1/100 000, survie 6–9 ans, délai diagnostique 3–4 ans [S4]",
+  "Syndrome corticobasal : un quart PSP, un quart Alzheimer [S4]",
+  "Lévodopa 1000 mg ≥ 1 mois, amantadine ≤ 600 mg, agonistes non recommandés, anticholinergiques à éviter, inhibiteurs de cholinestérase sans bénéfice [S4]",
+  "MIBG et noradrénaline > 100 pg/mL normales, NfL > 1400 pg/mL, réponse transitoire 42–57 %, réponse médiocre 74 %, score ≥ 2 Se 78 % Sp 86 %, prolongation à 10 min +18 % [S3]",
+  "Gutron® : contre-indication rétention, dernière dose ≥ 4 h avant le coucher, maximum 30 mg/j [S12]",
+  "PK-Merz® : titration, ECG à J0, 1 et 3 semaines puis annuel, sevrage brutal et crise akinétique, réduction rénale [S13]",
+  "Madopar® : prise 30 min avant ou 1 h après le repas, contre-indication avant 25 ans [S14]",
+  "ESC 2018 : définition de l’hypotension orthostatique, 2–3 L, 10 g de NaCl, tête surélevée > 10°, midodrine 2,5–10 mg × 3, fludrocortisone 0,1–0,3 mg [S8]",
+  "Ferriprox® : indication thalassémie majeure, usage PKAN hors indication [S17]"
+ ],
+ "lacunes": [
+  "Aucune recommandation suisse ni européenne publiée de traitement de l’AMS, de la PSP ou de la DCB : la ligne directrice ERN-RND/EAN/MDS-ES restait en préparation en 2025 [S7] ; recherche PubMed (guideline AND MSA/PSP AND EAN/MDS-ES/ERN-RND, depuis 2023) : 0 résultat pertinent.",
+  "Protocole national français de l’AMS (HAS 2015) non lu : téléchargement refusé (certificat puis HTTP 503).",
+  "Aucune source de sémiologie universitaire suisse (RMS, facultés) trouvée ; recherche web « Revue Médicale Suisse syndromes parkinsoniens atypiques » sans résultat RMS ; fiches Parkinson Suisse utilisées à la place.",
+  "Fréquences de la dysarthrie, de la dysphagie et de la photophobie : non chiffrées dans les sources lues.",
+  "Prise en charge urologique (autosondage, traitement de l’hyperactivité vésicale) : aucune source suisse ou européenne lue.",
+  "Statut suisse de la droxidopa non vérifié.",
+  "Spécificités suisses (aptitude à la conduite, AI, remboursement LS) : non recherchées dans des sources officielles, rubrique 16 absente.",
+  "Rattachement de la DCB à G23.8 dans l’index alphabétique de la CIM-10-GM : non vérifié.",
+  "Fiches Parkinson Suisse n° 129 et 130 : date de publication non relevée.",
+  "Tableaux de MDS 2017 lus par extraction résumée de la page PMC, non verbatim.",
+  "Captures réelles (SEM-22, SEM-23) non prises : discipline absente.",
+  "Essai TIRCON, Lancet Neurology 2024, Nature Reviews Disease Primers 2022, Armstrong 2013 : non relus par l’audit (résumés du dossier de la leçon)."
+ ],
+ "propositions": [
+  "G23_a_1.html",
+  "G23_a_2.html",
+  "G23_a_3.html",
+  "G23_a_semio_clinique.html",
+  "G23_b_1.html",
+  "G23_b_2.html",
+  "G23_b_3.html",
+  "G23_b_4.html",
+  "G23_b_5.html",
+  "G23_b_6.html",
+  "G23_c_1.html",
+  "G23_c_2.html",
+  "G23_c_3.html",
+  "G23_c_4.html",
+  "G23_d_1.html",
+  "G23_d_2.html",
+  "G23_pop2_1.html"
+ ],
+ "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée",
+ "date_debut_note": "Heure de début non relevée au démarrage (UTC) ; le premier horodatage réellement observé pendant l'exécution est 2026-10-16T05:57:35Z (date -u), après les lectures d'entrée.",
+ "date_fin_note": "Relevée par date -u juste avant le commit de traçabilité."
+}
