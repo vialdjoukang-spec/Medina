@@ -1,0 +1,111 @@
+<!-- Proposition ALPHA1-CLAUDE-G98-MED, constat C01 (MAJEUR) : sous-onglet « Sémiologie fondamentale et analytique ».
+     Contrat : docs/collaboration/instructions/SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE_2026-10-15.yaml.
+     Insertion dans chapters/G98/G98_c.html, panneau #pS :
+     (1) en tête de div.sci-bar, avant <button role="tab" aria-selected="true" aria-controls="g98-s-anat" data-s="g98-s-anat">,
+         le bouton ci-dessous ; le bouton g98-s-anat passe à aria-selected="false" ;
+     (2) en tête de div.chap-body.sci-body, avant <div class="sci" id="g98-s-anat">, le div.sci ci-dessous, visible à l'ouverture
+         de pS (ni hidden ni aria-hidden) ; div.sci id="g98-s-anat" reçoit alors l'attribut hidden si le moteur l'exige.
+     Neuf sections data-semiology, titres h3. Fenêtres g98-sm-* : propositions/G98_pop1_semio.html (à ajouter à la fin de
+     chapters/G98/G98_pop1.html). Clés existantes réutilisées : g98-thermometrie, g98-stade0, g98-irm, g98-osteomyelite, g98-bascule, g98-decharge.
+     Références [Sx] : sources.json de la mission. Aucun sigle nouveau (indice cheville-bras écrit en toutes lettres).
+     Les valeurs chiffrées sont recalculées dans calculs/verifier.py (P01–P03, P08). La figure est un schéma de raisonnement
+     (SCHEMA_NON_ANATOMIQUE), sans aucune structure anatomique ; viewBox de 360 de large, texte de 12 unités.
+     Aucune écriture canonique faite par l'audit. -->
+
+<!-- (1) barre -->
+<button type="button" id="g98-tab-semio" role="tab" aria-selected="true" aria-controls="g98-s-semio" data-s="g98-s-semio">Sémiologie fondamentale et analytique</button>
+
+<!-- (2) corps -->
+<div class="sci" id="g98-s-semio" role="tabpanel" aria-labelledby="g98-tab-semio">
+
+<section class="ilot" id="g98-sm-1" data-semiology="normal"><h3>Pour la leçon : quelle est la sémiologie fondamentale et analytique ?</h3>
+<p>Le pied de Charcot actif se reconnaît par trois signes comparés au pied opposé : il est plus chaud, plus gonflé et plus rouge, alors que la peau est intacte et que le patient est neuropathe [S1, recommandation 1]. Le paradoxe est sémiologique : la douleur, qui alerte d’ordinaire, est absente ou modérée parce que la neuropathie l’éteint [S1, justification des recommandations 1 à 5]. Le patient consulte donc tard, parfois seulement quand la chaussure ne rentre plus [S1, justification des recommandations 15 à 20].</p>
+<p>Chaque signe se lit par écart à un normal précis. Chez le sujet sain, la température cutanée des deux pieds est symétrique [S1, justification des recommandations 1 à 5]. La sensibilité protectrice est présente lorsque le patient perçoit le <button class="w" data-k="g98-sm-monofilament">monofilament de 10 g</button> à deux applications sur trois à chaque site testé [S13, annexe 1]. La vibration du <button class="w" data-k="g98-sm-diapason">diapason de 128 Hz</button> est perçue au dos de la phalange distale du gros orteil [S13, annexe 1]. Sur la radiographie de profil en charge, l’angle de Meary vaut environ 0°, la hauteur du cuboïde environ 1,2 cm et la pente calcanéenne 20 à 30° [S2, rôle des radiographies]. Un indice cheville-bras compris entre 0,9 et 1,3 rend une artériopathie moins probable [S13, section 4.1].</p>
+<div class="key"><b>À retenir.</b> Le normal de référence est le pied opposé du même patient : même température, même volume, même couleur. Les gestes de base sont le monofilament de 10 g, le diapason de 128 Hz, le réflexe achilléen, la palpation des pouls et l’inspection du pied couché puis debout.</div></section>
+
+<section class="ilot" id="g98-sm-2" data-semiology="signs"><h3>Sémiologie fondamentale : symptômes et signes</h3>
+<p>Devant un pied gonflé chez un diabétique, la question est la suivante : le signe traduit-il une inflammation osseuse stérile, une infection, ou la séquelle mécanique d’une ancienne destruction ? Le tableau relie chaque manifestation à son mécanisme et à sa valeur connue.</p>
+<table class="t"><tr><th>Manifestation</th><th>Mécanisme</th><th>Valeur (source)</th><th>Piège</th></tr>
+<tr><td><button class="w" data-k="g98-sm-chaleur">Chaleur unilatérale (écart thermique)</button></td><td>Inflammation stérile de l’os et des articulations [S13, section 5]</td><td>Écart généralement supérieur à 2 °C [S3] ; précision diagnostique jamais démontrée [S1]</td><td>Une hausse isolée, sans rougeur ni œdème, n’est pas toujours un Charcot [S1]</td></tr>
+<tr><td><button class="w" data-k="g98-sm-oedeme">Tuméfaction (œdème)</button></td><td>Œdème des parties molles et de la moelle osseuse [S2, IRM précoce]</td><td>Non chiffrée ; ne suffit pas seule à juger la rémission [S1, recommandation 12]</td><td>L’œdème peut persister malgré la consolidation [S1]</td></tr>
+<tr><td>Érythème léger unilatéral</td><td>Hyperhémie inflammatoire [S1]</td><td>Non chiffré dans les sources lues</td><td>Il évoque d’abord une dermo-hypodermite [S3]</td></tr>
+<tr><td><button class="w" data-k="g98-sm-douleur">Douleur absente ou modérée</button></td><td>Neuropathie sensitive [S1]</td><td>Non chiffrée ; une douleur sévère existe chez certains patients [S1]</td><td>Une douleur franche n’exclut pas le diagnostic [S1]</td></tr>
+<tr><td>Traumatisme mineur souvent non remarqué</td><td>Perte de la sensibilité protectrice [S3]</td><td>Non chiffré</td><td>Son absence à l’anamnèse n’exclut rien [S3]</td></tr>
+<tr><td><button class="w" data-k="g98-sm-deformation">Déformation (pied à bascule)</button></td><td>Effondrement de l’arche ; cuboïde devenu le point le plus bas [S2]</td><td>Signe du pied chronique, diagnostic « généralement évident » [S3]</td><td>Elle signe une séquelle, pas l’activité [S3]</td></tr>
+</table>
+<p>Le tableau se lit de haut en bas : les trois premières lignes décrivent l’activité, la dernière la séquelle. L’erreur fréquente consiste à attendre la douleur ou la déformation, c’est-à-dire à reconnaître la maladie quand le stade 0 est dépassé [S4]. Dans la vignette du cours, la chaleur, la tuméfaction et une peau intacte chez un neuropathe suffisent à poser la suspicion.</p>
+<div class="key"><b>À retenir.</b> Chaleur, œdème et rougeur, comparés au pied opposé, définissent l’activité ; la déformation définit la séquelle. Aucun de ces signes n’a de sensibilité ni de spécificité chiffrée dans les sources lues.</div></section>
+
+<section class="ilot" id="g98-sm-3" data-semiology="mechanisms"><h3>Du mécanisme au signe</h3>
+<p>La chaîne commence par la neuropathie. La baisse de la sensibilité douloureuse et de la proprioception supprime le signal qui ferait ménager le pied [S2, introduction]. Un traumatisme, perçu ou non, déclenche alors une réponse inflammatoire ; les cytokines activent NF-κB par la voie RANKL et recrutent des ostéoclastes agressifs [S1, introduction]. La chaleur et l’œdème traduisent cette inflammation : l’écart de température cutanée est corrélé à la captation locale du traceur osseux, ce qui en fait un reflet indirect de l’activité [S1, justification des recommandations 1 à 5].</p>
+<p>La destruction suit la mécanique. L’ostéopénie transitoire de la phase active favorise fractures et luxations, souvent à l’articulation de Lisfranc, puis l’arche longitudinale s’effondre [S2, histoire naturelle]. Le cuboïde devient le point le plus bas du pied ; il concentre la pression et produit callosités, phlyctènes et ulcère sous-cuboïdien [S2, complications].</p>
+<div class="key"><b>Science → clinique.</b> Le pied est chaud parce que l’os est enflammé ; il n’est pas douloureux parce que le nerf ne transmet plus. Cette dissociation est le signe d’appel.</div>
+<div class="key"><b>Science → examen.</b> L’écart thermique suit l’activité inflammatoire ; il sert donc au suivi en série, mais l’imagerie reste nécessaire pour voir l’os [S1, recommandations 8 et 11].</div>
+<div class="key"><b>Science → traitement.</b> Les contraintes mécaniques entretiennent l’inflammation ; la décharge jusqu’au genou les supprime dès la suspicion [S1, recommandations 5 et 15].</div></section>
+
+<section class="ilot" id="g98-sm-4" data-semiology="examination"><h3>Examen clinique systématique du pied neuropathique</h3>
+<ol>
+<li>Préparation. Les deux pieds et les deux jambes sont découverts. Les études de thermométrie prévoyaient une acclimatation de 15 minutes pieds nus [S1, identification de la rémission].</li>
+<li>Inspection, couché puis debout. Le médecin compare couleur, volume et forme des deux pieds. Il recherche orteils en griffe, saillies osseuses, callosités, signes préulcéreux et ulcère [S13, section 3.2].</li>
+<li>Température. Il compare le point le plus chaud du pied atteint au même point du pied opposé, à la main ou avec un <button class="w" data-k="g98-thermometrie">thermomètre infrarouge</button> [S1, recommandation 3]. Sans pied opposé utilisable, il compare l’orteil au genou [S1, recommandation 4].</li>
+<li>Œdème. Il le compare au pied opposé ; une étude mesurait la circonférence au médio-pied et à la cheville [S1, identification de la rémission].</li>
+<li>Neuropathie. Il applique le monofilament de 10 g sur trois sites par pied, puis le diapason de 128 Hz sur le gros orteil, et teste le réflexe achilléen [S13, annexe 1 ; S3]. Sans matériel, il réalise le test du toucher d’Ipswich [S13, annexe 1].</li>
+<li>Vascularisation. Il palpe les pouls pédieux et tibiaux postérieurs. En cas de pouls absent, il mesure les pressions de cheville au Doppler et calcule l’<button class="w" data-k="g98-sm-icb">indice cheville-bras</button> [S13, section 3.2 et annexe 2].</li>
+<li>Chaussures. Il inspecte les chaussures, qui révèlent une déformation ou une zone d’appui anormale [S3, pied chronique].</li>
+<li>Synthèse. Il sépare ce qu’il a constaté, ce qu’il en déduit et ce qui reste incertain, puis demande les radiographies en charge des deux pieds [S1, recommandations 6 et 7].</li>
+</ol>
+<div class="card"><b>Exemple de présentation.</b><p>« Constatations : pied droit plus chaud de 3 °C au médio-pied, tuméfié, peu rouge, peau intacte ; monofilament non perçu aux trois sites des deux pieds ; pouls pédieux perçus. Interprétation : tableau de Charcot actif chez un neuropathe, à confirmer par l’imagerie. Limites : l’écart thermique n’a pas de seuil validé et ne distingue pas une infection. Conduite : décharge jusqu’au genou dès maintenant, radiographies en charge bilatérales, IRM si elles sont normales. » [S1 ; S3]</p></div>
+<div class="key"><b>À retenir.</b> Huit temps suffisent : préparer, inspecter, comparer la température, comparer l’œdème, prouver la neuropathie, évaluer les pouls, regarder les chaussures, conclure.</div></section>
+
+<section class="ilot" id="g98-sm-5" data-semiology="interpretation"><h3>Sémiologie analytique : valeur des signes et raisonnement</h3>
+<p>Le raisonnement suit cinq étapes ordonnées, que la figure résume.</p>
+<ol>
+<li>Je reconnais la gravité : un pied chaud et tuméfié de neuropathe est une urgence médicale, avec ou sans plaie [S3].</li>
+<li>Je qualifie le signe : la chaleur est-elle unilatérale, associée à un œdème et à une rougeur ? [S1, recommandation 1]</li>
+<li>Je le localise : médio-pied, avant-pied ou arrière-pied ; les zones II et III de Sanders et Frykberg réunissent environ 80 % des atteintes [S2].</li>
+<li>Je regroupe : inflammation locale, neuropathie prouvée et peau intacte forment le syndrome du Charcot actif [S1 ; S3].</li>
+<li>Je hiérarchise et je choisis l’examen qui tranche : radiographies en charge, puis IRM si elles sont normales [S1, recommandation 8].</li>
+</ol>
+<figure><svg role="img" aria-label="Schéma du raisonnement : du pied chaud à la confirmation par l’imagerie, en cinq étapes successives" viewBox="0 0 360 300" font-size="12"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="20" y="8" width="320" height="40" rx="6"/><rect x="20" y="66" width="320" height="40" rx="6"/><rect x="20" y="124" width="320" height="40" rx="6"/><rect x="20" y="182" width="320" height="40" rx="6"/><rect x="20" y="240" width="320" height="40" rx="6"/><path d="M180 48v18M180 106v18M180 164v18M180 222v18"/></g><g fill="currentColor" text-anchor="middle"><text x="180" y="33">1. Urgence : pied chaud de neuropathe</text><text x="180" y="91">2. Chaleur, œdème, rougeur unilatéraux</text><text x="180" y="149">3. Siège : médio-pied le plus souvent</text><text x="180" y="207">4. Neuropathie prouvée, peau intacte</text><text x="180" y="265">5. Radiographies, puis IRM si normales</text></g></svg>
+<figcaption>Figure — Du signe au diagnostic. Lecture : la décharge commence à l’étape 1, sans attendre l’étape 5 [S1, recommandation 5 ; S2 ; S3]. Schéma de raisonnement, sans représentation anatomique.</figcaption></figure>
+<p>La figure se lit de haut en bas. Son erreur fréquente est de s’arrêter à l’étape 5 sur une radiographie normale, alors que le stade 0 se définit précisément ainsi [S1, définitions].</p>
+<p><b>Valeur des signes.</b> L’écart thermique de 2 °C est le seuil le plus employé, mais sa précision diagnostique n’a jamais été démontrée [S1, recherche future]. Plus l’écart est grand, plus l’activité est probable ; plus il diminue, plus la rémission est probable [S1, identification de la rémission]. Dans une étude rétrospective, le site de l’écart maximal correspondait à l’atteinte radiographique dans 92 % des cas au diagnostic et dans 72 % au suivi [S1]. Aucune sensibilité ni spécificité n’est donnée pour la rougeur, l’œdème ou l’absence de douleur dans les sources lues. L’absence de douleur n’a aucune valeur d’exclusion, et sa présence non plus [S1].</p>
+<p><b>Indice cheville-bras.</b> Il se calcule en divisant la plus basse des deux pressions de cheville par la plus haute des deux pressions brachiales ; une valeur inférieure à 0,9 ou supérieure à 1,3 est anormale [S13, annexe 2]. Exemple : pressions brachiales 142 et 138 mmHg, pressions de cheville 118 et 126 mmHg ; l’indice vaut 118/142 = 0,83, ce qui oriente vers une artériopathie.</p>
+<div class="quiz ui"><p><b>Cas 1.</b> Un neuropathe a un pied tuméfié et rouge ; l’écart thermique mesuré est de 1,8 °C. Que conclure ?</p><button data-ok="0">A. Le Charcot est exclu, car l’écart est inférieur à 2 °C.</button><button data-ok="1">B. Le Charcot reste possible : le seuil de 2 °C n’a pas de précision démontrée, et la décision repose sur l’ensemble des signes et sur l’imagerie.</button><button data-ok="0">C. Le diagnostic est posé, car tout écart thermique suffit.</button><p class="fb" hidden>Le seuil de 2 °C est un usage, non un critère validé [S1, recherche future]. La recommandation est de considérer le Charcot devant chaleur, œdème ou rougeur, puis d’imager [S1, recommandations 1 et 8].</p></div>
+<div class="quiz ui"><p><b>Cas 2.</b> Pressions brachiales 130 et 126 mmHg ; pressions de cheville 196 et 188 mmHg. Comment lire l’indice cheville-bras ?</p><button data-ok="0">A. 1,45 : la perfusion est excellente.</button><button data-ok="1">B. 188/130 = 1,45 : valeur supérieure à 1,3, donc anormale, à explorer.</button><button data-ok="0">C. Le calcul doit utiliser la pression de cheville la plus haute : 196/126.</button><p class="fb" hidden>Chez le diabétique, l’indice se calcule avec la plus basse des pressions de cheville et la plus haute des pressions brachiales ; une valeur supérieure à 1,3 est anormale [S13, annexe 2].</p></div>
+<div class="key"><b>À retenir.</b> Les signes cliniques orientent, l’imagerie tranche. L’écart thermique n’a pas de seuil validé ; il se lit avec la rougeur, l’œdème et le terrain.</div></section>
+
+<section class="ilot" id="g98-sm-6" data-semiology="differentials"><h3>Regrouper et distinguer</h3>
+<p>Le pied rouge, chaud et gonflé du diabétique a plusieurs causes. Le document suisse cite la dermo-hypodermite, le traumatisme, la crise de goutte, la thrombose veineuse profonde, l’ostéomyélite et l’arthrose dégénérative activée [S3]. Le tableau donne les discriminants que les sources lues documentent réellement.</p>
+<table class="t"><tr><th>Syndrome ou diagnostic</th><th>Signes constitutifs</th><th>Discriminant documenté</th></tr>
+<tr><td>Charcot actif</td><td>Chaleur, œdème, rougeur ; neuropathie ; peau intacte</td><td>IRM : atteinte périarticulaire de plusieurs os et articulations [S2, tableau 1]</td></tr>
+<tr><td><button class="w" data-k="g98-osteomyelite">Ostéomyélite</button></td><td>Souvent ulcère et trajet fistuleux</td><td>Un seul os, sous l’ulcère, propagation par contiguïté ; « signe du fantôme » [S2, tableau 1]</td></tr>
+<tr><td>Charcot chronique</td><td>Déformation, écart thermique inférieur à 2 °C, pas d’œdème</td><td>Kystes sous-chondraux et corps intra-articulaires plaident contre l’infection [S2, tableau 1 ; S3]</td></tr>
+<tr><td>Dermo-hypodermite, goutte, thrombose veineuse profonde</td><td>Rougeur, chaleur, œdème</td><td>Aucun discriminant clinique chiffré dans les sources lues : ils doivent être exclus [S1, justification des recommandations 1 à 5]</td></tr>
+</table>
+<p>Le tableau se lit par sa dernière colonne. Il montre qu’à l’examen clinique seul, le Charcot actif ressemble à l’infection : c’est l’imagerie qui distingue. L’erreur fréquente est de conclure à une dermo-hypodermite et de prescrire un antibiotique sans décharger le pied.</p>
+<div class="quiz ui"><p><b>Cas 3.</b> Un neuropathe a un ulcère plantaire sous le cuboïde et un pied chaud. Que dit le document suisse ?</p><button data-ok="0">A. La plaie exclut un Charcot aigu.</button><button data-ok="1">B. La plaie n’exclut pas un Charcot aigu ; le différentiel est l’ulcère avec infection profonde ou la cellulite, et la situation reste une urgence.</button><p class="fb" hidden>Le document suisse classe cette situation comme une urgence médicale dans tous les cas [S3]. Le cuboïde abaissé du pied à bascule est le siège typique de l’ulcère et de l’ostéomyélite [S2].</p></div>
+<div class="key"><b>À retenir.</b> Cliniquement, le Charcot actif et l’infection se ressemblent. Le siège de l’atteinte, l’ulcère, le trajet fistuleux et l’IRM les distinguent.</div></section>
+
+<section class="ilot" id="g98-sm-7" data-semiology="urgency"><h3>Priorité clinique</h3>
+<div class="alert"><b>Priorité clinique.</b> Un pied légèrement rouge, plus chaud, tuméfié et peu douloureux chez un neuropathe est un pied de Charcot aigu jusqu’à preuve du contraire. C’est une urgence médicale, même si une plaie existe. Le médecin débute immédiatement une décharge jusqu’au genou, oriente vers une équipe spécialisée de niveau 2 ou 3 et poursuit le bilan en parallèle [S3 ; S1, recommandation 5].</div>
+<p>Le délai compte en semaines. Dans la série de Düsseldorf, des radiographies normales non complétées par une IRM avaient retardé l’adressage à cinq mois, avec des fractures corticales dans 12 cas sur 13 [S4].</p>
+<div class="key"><b>À retenir.</b> Le signe qui décide est la chaleur unilatérale d’un pied neuropathe ; la conduite qui protège est la décharge immédiate.</div></section>
+
+<section class="ilot" id="g98-sm-8" data-semiology="limits"><h3>Limites et applicabilité</h3>
+<p>Les recommandations internationales portent sur le diabétique à peau intacte ; les patients avec ulcère en sont exclus [S1, méthodes]. Le Charcot non diabétique, qui relève précisément du code G98, n’y est pas traité. Les thermomètres diffèrent, leur exactitude est incertaine, et la température ambiante comme le temps d’acclimatation modifient la mesure [S1, justification des recommandations 1 à 5]. Un ulcère ou une infection limitent l’usage de la température, et une atteinte bilatérale rend l’écart peu fiable [S1].</p>
+<p>La formulation honnête d’un examen est donc la suivante : « écart de 2,5 °C au médio-pied, mesuré après acclimatation ; valeur compatible avec une activité, sans seuil validé ; à confronter à l’imagerie ».</p>
+<div class="key"><b>À retenir.</b> Une sémiologie sans valeur chiffrée s’écrit comme telle. Elle oriente vers l’imagerie ; elle ne la remplace pas.</div></section>
+
+<section class="ilot" id="g98-sm-9" data-semiology="sources"><h3>Sources : correspondance entre affirmations et passages lus</h3>
+<p>Chaque ligne relie une source réellement consultée le 16 octobre 2026 aux affirmations qu’elle fonde. Le détail figure dans le registre des sources de la mission.</p>
+<table class="t"><tr><th>Source</th><th>Passage lu</th><th>Affirmations fondées</th></tr>
+<tr><td>[S1] <a href="https://iwgdfguidelines.org/wp-content/uploads/2023/07/IWGDF-2023-08-Charcot-Guideline.pdf" target="_blank" rel="noopener">IWGDF 2023, Charcot actif (Wukich et coll.)</a></td><td>Recommandations 1 à 26 et justifications ; définitions ; méthodes ; recherche future</td><td>Signes d’appel, symétrie thermique normale, seuil de 2 °C non validé, concordance 92 % et 72 %, limites de la thermométrie, décharge immédiate</td></tr>
+<tr><td>[S2] <a href="https://doi.org/10.1186/s13244-019-0768-9" target="_blank" rel="noopener">Rosskopf et coll., Insights Imaging 2019 (Balgrist)</a></td><td>Introduction, histoire naturelle, rôle des radiographies, IRM, tableau 1</td><td>Neuropathie et proprioception, valeurs radiographiques normales, cuboïde, discriminants avec l’ostéomyélite</td></tr>
+<tr><td>[S3] <a href="https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/65_Fussversorgung/210721_QCARE_Charcot_Fuss_A5_FR.pdf" target="_blank" rel="noopener">QualiCCare / SSED, Pied de Charcot (2020)</a></td><td>Logigramme initial ; pied de Charcot aigu : examen, différentiel ; pied chronique</td><td>Urgence, écart supérieur à 2 °C, différentiel, plaie n’excluant pas, chaussures</td></tr>
+<tr><td>[S4] <a href="https://doi.org/10.4414/smw.2013.13831" target="_blank" rel="noopener">Chantelau et Richter, Swiss Med Wkly 2013</a> (résumé)</td><td>Résultats</td><td>Retard à cinq mois, 12 fractures corticales sur 13</td></tr>
+<tr><td>[S13] <a href="https://iwgdfguidelines.org/wp-content/uploads/2023/07/IWGDF-2023-01-Practical-Guidelines.pdf" target="_blank" rel="noopener">IWGDF 2023, recommandations pratiques (Schaper et coll.)</a></td><td>Sections 3.1, 3.2, 4.1 et 5 ; annexes 1 et 2</td><td>Monofilament, diapason, test d’Ipswich, inspection, indice cheville-bras et ses bornes</td></tr>
+</table>
+<div class="key"><b>À retenir.</b> Chaque affirmation du sous-onglet renvoie à un passage lu ; la série de Düsseldorf n’a été lue qu’en résumé.</div></section>
+
+</div>
