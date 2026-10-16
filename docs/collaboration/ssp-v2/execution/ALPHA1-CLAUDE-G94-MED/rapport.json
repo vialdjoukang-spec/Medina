@@ -1,0 +1,883 @@
+{
+ "mission": "ALPHA1-CLAUDE-G94-MED",
+ "code": "G94",
+ "type_audit": "medical",
+ "base_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "source_snapshot_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "worktree_base": "103745baaa38c76f18288758cc7f689e5091ccdb",
+ "worktree_base_note": "Worktree créé sur main 103745ba (après fusion de la PR #203) ; sources figées identiques : empreintes SHA-256 conformes au manifeste. Contrôles test_v7 et audit_sciences exécutés sur le checkout principal (main 116e9d3e), dont les sept fichiers G94 ont les mêmes empreintes.",
+ "generation": 1,
+ "branche": "claude/alpha1/g94-med-g1",
+ "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G94-MED",
+ "conversation": "alpha1-claude-g94-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-16T09:50:00Z",
+ "date_fin": "2026-10-16T10:18:30Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G94/G94_a.html",
+   "chapters/G94/G94_b.html",
+   "chapters/G94/G94_c.html",
+   "chapters/G94/G94_d.html",
+   "chapters/G94/G94_pop1.html",
+   "chapters/G94/G94_pop2.html",
+   "glossary/g94.py"
+  ],
+  "empreintes_conformes": true,
+  "empreintes": {
+   "chapters/G94/G94_a.html": {
+    "sha256": "aaf39f1711235dbd2bba87ba783c7ccf8d140f0481392d111b480324f69e82f9",
+    "manifeste": "aaf39f1711235dbd2bba87ba783c7ccf8d140f0481392d111b480324f69e82f9",
+    "conforme": true
+   },
+   "chapters/G94/G94_b.html": {
+    "sha256": "f02424776cf20457405eb099932daa7a65580df4bec51b90dfdb4309b4f86c5f",
+    "manifeste": "f02424776cf20457405eb099932daa7a65580df4bec51b90dfdb4309b4f86c5f",
+    "conforme": true
+   },
+   "chapters/G94/G94_c.html": {
+    "sha256": "5dc6eadb460966db80798bbc21d9e560ca716100f3cc346f73b152402aa386fb",
+    "manifeste": "5dc6eadb460966db80798bbc21d9e560ca716100f3cc346f73b152402aa386fb",
+    "conforme": true
+   },
+   "chapters/G94/G94_d.html": {
+    "sha256": "31a88b94264b6b09c9b0bfa39caff77f3389d4ce5d87a61e0da54e6457e450f4",
+    "manifeste": "31a88b94264b6b09c9b0bfa39caff77f3389d4ce5d87a61e0da54e6457e450f4",
+    "conforme": true
+   },
+   "chapters/G94/G94_pop1.html": {
+    "sha256": "cf197693b89a0b1cab204f9cefa074deee1659a75f03d9d3eeea4c5d644ec051",
+    "manifeste": "cf197693b89a0b1cab204f9cefa074deee1659a75f03d9d3eeea4c5d644ec051",
+    "conforme": true
+   },
+   "chapters/G94/G94_pop2.html": {
+    "sha256": "1d019766dbc666a326450dbb3edf5a94e9eaadfa6f4f9e5888a15dc12cc50c98",
+    "manifeste": "1d019766dbc666a326450dbb3edf5a94e9eaadfa6f4f9e5888a15dc12cc50c98",
+    "conforme": true
+   },
+   "glossary/g94.py": {
+    "sha256": "bcfcd5bfcfdfd91c530e42dfa9c626ee095f8cef260cdc646012ac72e299e74f",
+    "manifeste": "bcfcd5bfcfdfd91c530e42dfa9c626ee095f8cef260cdc646012ac72e299e74f",
+    "conforme": true
+   }
+  },
+  "documents_de_cadrage": [
+   "CONSIGNE_AUDITEUR.md",
+   "PROTOCOLE_ALPHA1_CLAUDE.md",
+   "EXIGENCE_CALCULS.md",
+   "EXIGENCE_SEMIOLOGIE.md",
+   "docs/collaboration/betta/PROMPT_VERITE.md",
+   "docs/STYLE_REDACTION.md",
+   "docs/collaboration/instructions/FIGURES_ANATOMIQUES_IA_2026-10-15.md"
+  ]
+ },
+ "premiere_source_lue": {
+  "source_id": "S10",
+  "url": "https://amiko.oddb.org/fr/fi?gtin=7680109890271",
+  "section": "Information professionnelle Benerva®, « Posologie/Mode d’emploi » (doses parentérales pouvant atteindre 200 mg ; 200–300 mg/j per os), mise à jour avril 2019"
+ },
+ "synthese": {
+  "BLOQUANT": 1,
+  "MAJEUR": 8,
+  "MINEUR": 13,
+  "ENRICHISSEMENT": 6
+ },
+ "controles": {
+  "test_v7_static": "G94 mots 10448 fenêtres 35 quiz 4 pareto 8 — OK",
+  "audit_sciences": "échec : 3 disciplines trop brèves, 6 libellés absents (C02)",
+  "image_clo_finder_inventory": "5 éléments vectoriels (figures 1 à 4 + 3 icônes de barre) ; figure 2 ANATOMIQUE_IA",
+  "propositions_ancres_uniques": "33 remplacements vérifiés : chaque « ancien » présent exactement une fois",
+  "propositions_classes_fermees": "conformes (liste fermée), aucun style en ligne"
+ },
+ "calculs": {
+  "total_releves": 532,
+  "grandeurs": 388,
+  "non_calculables": 144,
+  "concordance_source": 371,
+  "valeurs_de_vignette": 7,
+  "renvoi_recalcul": 6,
+  "non_rapprochees": 0,
+  "calculables": 38,
+  "recalcules": 38,
+  "correct": 18,
+  "arrondi": 16,
+  "faux": 3,
+  "non_verifiables": 1,
+  "informatifs_audit": 25,
+  "script": "calculs/verifier.py",
+  "faux_constats": [
+   "C07 (R09, R10)",
+   "C04 (R18e)"
+  ],
+  "note": "Doses recalculées : thiamine 3 × 200 = 600 mg/j (EFNS), 3 × 500 = 1500 mg/j (ESPEN, 15 ampoules de 100 mg) ; dexaméthasone enfant 0,6 et 0,8 mg/kg/j (FI) ; adulte 16 mg/j d’entretien (FI) ; méningite adulte 160 mg sur 4 jours (essai, absent de la leçon). Aucun débit ni vitesse de correction dans la leçon. Intervalles de confiance cohérents (moyenne géométrique). R16 : IC de la source incohérent (1,09–1,38), non repris par la leçon."
+ },
+ "constats": [
+  {
+   "id": "C03",
+   "gravite": "BLOQUANT",
+   "fichier": "chapters/G94/G94_c.html",
+   "ancre": "B. De la thiamine avant tout glucide, après prélèvement sanguin de thiamine.",
+   "constat": "Cas 4 de g94-e-5 : chez un alcoolique confus ET hypoglycémique, la réponse attendue est « thiamine avant tout glucide, après prélèvement sanguin de thiamine ». Elle enseigne de retarder la correction d’une hypoglycémie jusqu’au prélèvement puis à l’injection de thiamine. La règle EFNS « avant tout glucide » vise les apports glucidiques ; la revue de la littérature consacrée à cette question conclut qu’un retard du glucose chez l’hypoglycémique ne peut pas être recommandé. Les nuances manquent aussi dans l’alerte g94-8, le tableau des urgences, l’alerte g94-p-3 et le moyen mnémotechnique.",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "résumé (revue américaine, signalée comme telle)",
+     "citation_courte": "a delay in giving glucose to hypoglycemic patients cannot be recommended at this time, although prompt thiamine supplementation after or concurrent with a return to normoglycemia is recommended"
+    },
+    {
+     "source_id": "S14",
+     "section": "résumé",
+     "citation_courte": "prolonged glucose supplementation without the addition of thiamine can be a risk factor"
+    },
+    {
+     "source_id": "S7",
+     "section": "résumé, recommandation 5",
+     "citation_courte": "It should be given, before any carbohydrate, 200 mg thrice daily"
+    }
+   ],
+   "proposition": "propositions/G94_c_e5_cas4.html : nouvelle réponse B « corriger l’hypoglycémie sans délai et injecter la thiamine parentérale dans le même temps ; prélèvement seulement s’il ne retarde rien », correction raisonnée, et quatre nuances locales (G94_b.html ×2, G94_d.html, G94_pop2.html).",
+   "justification": "Mécanisme : l’hypoglycémie prive immédiatement le neurone de son substrat, alors que le risque de Wernicke vient d’apports glucidiques prolongés sans thiamine. Conséquence : retarder le glucose pour une séquence de prélèvement expose à une lésion cérébrale évitable. Décision : conduite dangereuse enseignée comme bonne réponse → BLOQUANT. Limite : aucune source suisse ou européenne lue ne traite explicitement l’hypoglycémie (LACUNE) ; la revue S14 n’est pas une recommandation."
+  },
+  {
+   "id": "C01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G94/G94_c.html",
+   "ancre": "data-s=\"g94-s-anat\"",
+   "constat": "Le sixième sous-onglet « Sémiologie fondamentale et analytique » est absent. Décompte réel des data-s de G94_c.html : 3 (g94-s-anat, g94-s-physio, g94-s-bioch) ; aucun g94-s-semio. La sémiologie existante se limite à l’anamnèse (g94-5) et à l’examen (g94-6) de l’onglet 1 : signes énumérés sans technique, sans valeur chiffrée par signe (hors délire), sans regroupement syndromique ni raisonnement en cinq étapes, sans cas corrigés consacrés aux signes.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Clinical evaluation",
+     "citation_courte": "Clinical evaluation involves assessing the patient's mental status, motor responses, brainstem reflexes, and presence of abnormal movements"
+    },
+    {
+     "source_id": "S6",
+     "section": "Clinical evaluation",
+     "citation_courte": "Multifocal clinical impairment is highly suggestive of LM"
+    },
+    {
+     "source_id": "S17",
+     "section": "résumé",
+     "citation_courte": "The classic triad … was present in only 44 percent of episodes; however, 95 percent had at least two of the four symptoms"
+    }
+   ],
+   "proposition": "propositions/G94_c_semio.html (bouton g94-s-semio en tête de sci-bar ; sept îlots g94-sm-1 à -7 : priorité clinique, symptômes, signes, syndromes, raisonnement en cinq étapes, examen systématique, trois cas corrigés) ; propositions/G94_pop2_semio.html (sept fenêtres g94-sm-*, destinées à G94_pop2.html) ; propositions/glossary_g94_ajouts.py (CAM-ICU, ICDSC).",
+   "justification": "Mécanisme : sans technique ni raisonnement du signe au syndrome, le lecteur ne distingue pas une encéphalopathie diffuse d’une hypertension intracrânienne ou d’une atteinte leptoméningée. Conséquence : la station clinique et l’examen fédéral exigent ce passage. Décision : exigence de Vial du 15.10.2026 ; absence = MAJEUR, bloquant pour la clôture du cours et du lot.",
+   "bloquant_cloture": true,
+   "decompte_data_s": 3
+  },
+  {
+   "id": "C02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G94/G94_c.html",
+   "ancre": "id=\"g94-s-anat\"",
+   "constat": "tests/audit_sciences.py échoue (exécuté sur un checkout dont les sept fichiers G94 ont des empreintes identiques au manifeste) : les trois disciplines sont sous 280 mots (anatomie 263, physiologie 221, biochimie 256 ; décompte de l’audit), et il manque les libellés « Science → examen. », « Science → traitement. », « À retenir. » (anatomie), « Science → clinique. », « À retenir. » (physiologie), « À retenir. » (biochimie). Histologie et génétique sont absentes (trois disciplines seulement).",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Pathophysiology (résumé de la revue)",
+     "citation_courte": "neuroinflammation and ischemia"
+    },
+    {
+     "source_id": "S10",
+     "section": "Propriétés/Effets",
+     "citation_courte": "Sous forme de pyrophosphate de thiamine, la thiamine constitue le groupe actif de diverses enzymes"
+    }
+   ],
+   "proposition": "Compléter chaque discipline jusqu’à 280 mots par des faits déjà sourcés (S2, S3, S10, S12), ajouter les quatre encadrés exigés ; la discipline sémiologique proposée (C01) porte déjà ses quatre libellés.",
+   "justification": "Mécanisme : un contrôle automatique bloque la publication conforme. Conséquence : l’onglet Sciences ne relie pas chaque science à l’examen et au traitement. Décision : MAJEUR, à corriger avec C01."
+  },
+  {
+   "id": "C04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G94/G94_d.html",
+   "ancre": "l’information professionnelle suisse, plus basse pour la thiamine, reste le texte de référence en Suisse.",
+   "constat": "La posologie de la thiamine dans le Wernicke repose sur l’EFNS 2010 (présentée comme « la plus récente lue ») et sur l’information professionnelle Benerva®, dont la dose parentérale (jusqu’à 200 mg/j) est désignée par le piège p-4 comme « texte de référence ». La recommandation européenne la plus récente (ESPEN 2022, première autrice CHUV) propose 500 mg × 3/j IV dans l’encéphalopathie d’étiologie incertaine dont le Wernicke, et 100–300 mg/j IV dès l’admission aux urgences ou en soins intensifs (grade B). Le paramètre clé « au plus 200 mg par jour (information professionnelle suisse) » est inexact hors voie parentérale : la FI admet 200–300 mg/j per os dans l’hypovitaminose grave (calcul R18e FAUX). La conduite « préférer la voie orale » (p-3) contredit la FI pour les carences graves (voie parentérale d’abord) et l’ESPEN (absorption faible chez l’alcoolique).",
+   "preuve": [
+    {
+     "source_id": "S12",
+     "section": "§ 13, tableau 8",
+     "citation_courte": "Encephalopathy of uncertain etiology including Wernicke encephalopathy — 500 mg, 3 times a day, IV"
+    },
+    {
+     "source_id": "S12",
+     "section": "recommandation 14.5",
+     "citation_courte": "thiamine (100–300 mg/day IV) should be prescribed without hesitation from admission for 3–4 days. Grade B"
+    },
+    {
+     "source_id": "S10",
+     "section": "Posologie",
+     "citation_courte": "200-300 mg par jour par voie orale en présence de graves symptômes … par voie parentérale … doses quotidiennes pouvant atteindre 200 mg"
+    },
+    {
+     "source_id": "S10",
+     "section": "Instructions spéciales",
+     "citation_courte": "Dans les cas graves de carence en thiamine, il est recommandé d'avoir d'abord recours à la voie parentérale"
+    },
+    {
+     "source_id": "S7",
+     "section": "résumé, recommandation 6",
+     "citation_courte": "The overall safety of thiamine is very good (Level B)"
+    }
+   ],
+   "proposition": "propositions/G94_d_thiamine.html (ligne ESPEN dans g94-p-2, paragraphe de divergence, cellule p-3, piège p-4, paramètre g94-12, phrase g94-9, fenêtre g94-thiamine avec contre-indications et interactions).",
+   "justification": "Mécanisme : la thiamine est la coenzyme du métabolisme du glucose ; un apport insuffisant laisse persister la lésion. Conséquence : le piège oriente vers 200 mg/j, trois à sept fois moins que les deux recommandations européennes. Décision : MAJEUR (source plus récente ignorée sur une dose d’urgence) ; à arbitrer par Vial, potentiellement bloquant si l’orientation vers la dose FI est maintenue."
+  },
+  {
+   "id": "C05",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G94/G94_d.html",
+   "ancre": "<td>Dexaméthasone</td><td>Méningite de l’adulte</td><td>Non détaillée dans les lignes lues</td><td>Lacune</td>",
+   "constat": "La dexaméthasone adjuvante de la méningite bactérienne de l’adulte, point décisionnel majeur d’une leçon qui traite l’hydrocéphalie de la méningite, est déclarée lacune. L’essai randomisé européen de référence fixe 10 mg 15–20 minutes avant ou avec la première dose d’antibiotique, puis toutes les 6 heures pendant 4 jours.",
+   "preuve": [
+    {
+     "source_id": "S13",
+     "section": "résumé",
+     "citation_courte": "Dexamethasone (10 mg) or placebo was administered 15 to 20 minutes before or with the first dose of antibiotic and was given every 6 hours for four days"
+    },
+    {
+     "source_id": "S13",
+     "section": "résumé",
+     "citation_courte": "relative risk of death, 0.48 … pneumococcal meningitis … 26 percent … as compared with 52 percent"
+    },
+    {
+     "source_id": "S11",
+     "section": "Administration systémique",
+     "citation_courte": "formes subaiguës … méningo-encéphalites: … 8 à 12 mg i.v. ; … 4 mg … à 6 heures d'intervalle"
+    }
+   ],
+   "proposition": "propositions/G94_d_dexa_meningite.html (ligne du tableau g94-p-2 et fenêtre g94-dexa).",
+   "justification": "Mécanisme : la dexaméthasone réduit la réaction inflammatoire méningée déclenchée par la lyse bactérienne. Conséquence : réduction de la mortalité et des séquelles, surtout à pneumocoque. Décision : MAJEUR (lacune comblable par une source européenne primaire)."
+  },
+  {
+   "id": "C06",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G94/G94_b.html",
+   "ancre": "type II probable ou possible (cytologie négative ou douteuse avec clinique ou imagerie évocatrice)",
+   "constat": "Critères formels (div.alert g94-12, e-3, fenêtre g94-ml) : le type II est défini « avec clinique ou imagerie évocatrice ». La recommandation EANO-ESMO exige un cancer histologiquement prouvé et distingue « probable » (clinique typique ET imagerie typique) de « possible » (l’une sans l’autre, ou clinique typique avec imagerie normale ou hydrocéphalie seule), et exclut tout diagnostic devant une clinique atypique avec imagerie normale ou hydrocéphalie seule (« lack of evidence »).",
+   "preuve": [
+    {
+     "source_id": "S6",
+     "section": "Diagnostic criteria",
+     "citation_courte": "The diagnosis is probable in the presence of typical clinical findings and typical MRI findings … possible in the presence of typical MRI findings but without typical clinical findings or … hydrocephalus only or a normal MRI"
+    },
+    {
+     "source_id": "S6",
+     "section": "Diagnostic criteria",
+     "citation_courte": "presenting with atypical clinical signs of LM only and with normal MRI or hydrocephalus only, a diagnosis of LM should not be made"
+    }
+   ],
+   "proposition": "propositions/G94_b_1.html (trois remplacements : G94_b.html, G94_c.html, G94_pop2.html).",
+   "justification": "Mécanisme : la combinaison clinique + imagerie hiérarchise la probabilité. Conséquence : la formulation « ou » assimile probable et possible et fait passer une clinique atypique pour un diagnostic. Décision : MAJEUR (critère formel inexact)."
+  },
+  {
+   "id": "C07",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G94/G94_b.html",
+   "ancre": "dans la méningite bactérienne, 15 % des patients ont reçu une dérivation externe et 8 % des ponctions lombaires répétées",
+   "constat": "Erreur de dénominateur : 15 % (4 patients) et 8 % (2 patients) se rapportent aux 26 patients hydrocéphales, non aux 577 méningites. Rapportés aux méningites, ces taux valent 0,7 % et 0,3 % (calculs R09 et R10 : FAUX).",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "résumé",
+     "citation_courte": "Six patients underwent an intervention: 2 patients (8%) had serial lumbar punctures; 4 patients (15%) underwent external ventricular CSF catheter placement"
+    }
+   ],
+   "proposition": "propositions/G94_b_1.html : « dans la cohorte néerlandaise, parmi les 26 patients hydrocéphales (sur 577 méningites), 4 (15 %) ont reçu un drain ventriculaire externe et 2 (8 %) des ponctions lombaires répétées ».",
+   "justification": "Mécanisme : un pourcentage n’a de sens qu’avec son dénominateur. Conséquence : le lecteur surestime d’un facteur vingt la fréquence des dérivations dans la méningite. Décision : résultat de calcul faux → MAJEUR (EXIGENCE_CALCULS § 3)."
+  },
+  {
+   "id": "C08",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G94/G94_a.html",
+   "ancre": "<td>Encéphalopathie de Wernicke (carence en thiamine)</td>",
+   "constat": "La leçon présente l’encéphalopathie de Wernicke comme « exemple documenté » du pôle métabolique de G94 (G94.30) et sa fenêtre g94-cim avoue ne pas avoir vérifié le codage. Dans la CIM-10-GM 2024, E51.2 « Wernicke-Enzephalopathie » est un code autonome sans croix ni astérisque ; seul le béribéri humide (E51.1†) renvoie à un astérisque (I98.8*). Un tiers de la leçon repose ainsi sur une entité qui n’est pas un sous-code de G94.",
+   "preuve": [
+    {
+     "source_id": "S20",
+     "section": "E51.-",
+     "citation_courte": "E51.2 Wernicke-Enzephalopathie (sans †)"
+    },
+    {
+     "source_id": "S1",
+     "section": "G94.30*",
+     "citation_courte": "Enzephalopathie bei anderenorts klassifizierten endokrinen und Stoffwechselkrankheiten"
+    }
+   ],
+   "proposition": "propositions/G94_a_perimetre.html (cellule du tableau g94-1 ; limite de la fenêtre g94-cim). Le contenu clinique sur le Wernicke reste utile comme urgence du diagnostic différentiel.",
+   "justification": "Mécanisme : un code astérisque n’existe qu’en association avec la cause codée. Conséquence : confusion de périmètre pour l’examinateur (rubriques 2 et 19). Décision : MAJEUR de périmètre, contenu médical conservé."
+  },
+  {
+   "id": "C09",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G94/G94_c.html",
+   "ancre": "aria-label=\"Figure 2 — Régions cérébrales vulnérables et espaces du liquide\"",
+   "constat": "Figure 2 (g94-s-anat-cours) : contour cérébral, ventricules, tronc et méninges dessinés en SVG, déclarés « schéma établi pour la leçon, non issu d’une source anatomique ». Classe ANATOMIQUE_IA (déclaration de l’auteur) selon la règle de Vial du 15.10.2026.",
+   "preuve": [
+    {
+     "source_id": "S21",
+     "section": "métadonnées Commons",
+     "citation_courte": "Gray 720-emphasizing-corpus-callosum.png ; Gray727 latin.svg ; Gyrus cinguli.png — Henry Vandyke Carter, domaine public"
+    }
+   ],
+   "proposition": "propositions/G94_c_figure2.html : remplacement par une planche réelle (trois candidats du domaine public, contrôle visuel à faire) ; aucun candidat trouvé pour ventricules et artère basilaire (LACUNE).",
+   "justification": "Mécanisme : un dessin anatomique généré trahit les proportions et les rapports. Conséquence : apprentissage d’une anatomie inexacte. Décision : MAJEUR par règle."
+  },
+  {
+   "id": "C10",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G94/G94_c.html",
+   "ancre": "Cytologie : <b>gold standard</b> du type I (confirmé)",
+   "constat": "Anglicisme et attribution inexacte : la source réserve « gold standard » à la résonance magnétique cérébrospinale ; la cytologie positive définit le type I.",
+   "preuve": [
+    {
+     "source_id": "S6",
+     "section": "Neuroimaging",
+     "citation_courte": "Cerebrospinal magnetic resonance imaging … is the gold standard imaging method"
+    }
+   ],
+   "proposition": "propositions/G94_mineurs.html (C10).",
+   "justification": "Terminologie exacte, sans conséquence décisionnelle."
+  },
+  {
+   "id": "C11",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G94/G94_a.html",
+   "ancre": "Le besoin quotidien est d’environ 0,4 mg pour 4200 kJ de glucides ingérés",
+   "constat": "La FI dit « 0,4 mg de thiamine pour que soient produits environ 4200 kJ lors du métabolisme glucidique », sans « quotidien » ni « ingérés » ; l’équivalence 4200 kJ ≈ 1000 kcal (R19) aide le lecteur ; le délai d’épuisement des réserves (20 jours) est sourcé par l’ESPEN.",
+   "preuve": [
+    {
+     "source_id": "S10",
+     "section": "Propriétés/Effets",
+     "citation_courte": "il faut en moyenne 0,4 mg de thiamine pour que soient produits environ 4200 kJ"
+    },
+    {
+     "source_id": "S12",
+     "section": "§ 13.1",
+     "citation_courte": "thiamine reserves are depleted as early as 20 days of inadequate oral intake"
+    }
+   ],
+   "proposition": "propositions/G94_mineurs.html (C11).",
+   "justification": "Précision de citation et unité usuelle."
+  },
+  {
+   "id": "C12",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G94/G94_d.html",
+   "ancre": "Les contre-indications de la thiamine et de la dexaméthasone ne figurent pas dans les lignes lues des informations professionnelles",
+   "constat": "Lacune factice : la FI Benerva® lue contient contre-indications (hypersensibilité ; lactose et saccharose des comprimés) et interactions (thiosemicarbazone, 5-fluorouracile, antiacides). Le 5-fluorouracile concerne le patient oncologique de la leçon.",
+   "preuve": [
+    {
+     "source_id": "S10",
+     "section": "Contre-indications",
+     "citation_courte": "Hypersensibilité connue au principe actif ou à l'un des excipients"
+    },
+    {
+     "source_id": "S10",
+     "section": "Interactions",
+     "citation_courte": "La thiosemicarbazone et le 5-fluorouracil, antagonistes de la thiamine, annulent l'action de la thiamine. Les antiacides inhibent l'absorption"
+    }
+   ],
+   "proposition": "propositions/G94_mineurs.html (C12, C12 bis).",
+   "justification": "Information réglementaire disponible, sans conséquence décisionnelle majeure."
+  },
+  {
+   "id": "C13",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G94/G94_b.html",
+   "ancre": "hémoglobine supérieure à 7 g/dL",
+   "constat": "Unité non suisse : les laboratoires suisses expriment l’hémoglobine en g/L (7 g/dL = 70 g/L, R23). Même occurrence dans g94-cibles (G94_pop1.html).",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Table 2",
+     "citation_courte": "Hemoglobin > 7g/dL"
+    }
+   ],
+   "proposition": "propositions/G94_mineurs.html (C13).",
+   "justification": "Conversion exacte ; évite une erreur de lecture d’un facteur 10."
+  },
+  {
+   "id": "C15",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G94/G94_pop2.html",
+   "ancre": "Une valeur de glucose du liquide paraît erronée dans la transcription de la source et n’est pas reprise.",
+   "constat": "La valeur de la source (glucose < 600 mg/L dans 22–38 %) est écartée comme « erronée » sans preuve ; 600 mg/L = 3,33 mmol/L (R26), seuil plausible.",
+   "preuve": [
+    {
+     "source_id": "S6",
+     "section": "CSF",
+     "citation_courte": "decreased glucose (<600 mg/l) in 22%-38% of patients"
+    }
+   ],
+   "proposition": "propositions/G94_mineurs.html (C15).",
+   "justification": "Une donnée lue ne se supprime pas sans démonstration ; conversion fournie."
+  },
+  {
+   "id": "C16",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G94/G94_pop2.html",
+   "ancre": "Survie médiane des métastases leptoméningées : 4 à 8 mois selon la tumeur.",
+   "constat": "Arrondi incohérent avec la source et avec g94-10 (3,8–8,1 mois ; R29, R29b ARRONDI).",
+   "preuve": [
+    {
+     "source_id": "S6",
+     "section": "Prognosis",
+     "citation_courte": "3.8-5.4 months in breast cancer, 4.2-8.1 months in lung cancer, 4.8 months in melanoma"
+    }
+   ],
+   "proposition": "propositions/G94_mineurs.html (C16).",
+   "justification": "Cohérence SEM-20 entre Pareto et texte."
+  },
+  {
+   "id": "C17",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G94/G94_b.html",
+   "ancre": "Les auteurs n’en déduisent pas une inefficacité : les effectifs sont minimes et les patients dérivés étaient les plus graves.",
+   "constat": "Interprétation attribuée aux auteurs mais absente du résumé lu (seul niveau de lecture déclaré) : « les patients dérivés étaient les plus graves » n’est pas sourcé.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "résumé",
+     "citation_courte": "A minority of patients underwent neurosurgery and outcome was uniformly poor in these patients"
+    }
+   ],
+   "proposition": "propositions/G94_b_1.html (C17).",
+   "justification": "Loi 1 du prompt de vérité : rien au-delà de la lecture."
+  },
+  {
+   "id": "C18",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G94/G94_c.html",
+   "ancre": "<td>Lésions chez plus de 50 % des patients</td>",
+   "constat": "Population omise : plus de 50 % concerne les patients à encéphalopathie persistante, crises ou signes focaux, non tous les septiques.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "résumé",
+     "citation_courte": "In septic patients with persistent encephalopathy, seizures, and/or focal signs, magnetic resonance imaging detects brain injury in more than 50% of cases"
+    }
+   ],
+   "proposition": "propositions/G94_mineurs.html (C18).",
+   "justification": "Un pourcentage sans population induit en erreur."
+  },
+  {
+   "id": "C19",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G94/G94_c.html",
+   "ancre": "Dosage de la thiamine totale sanguine, résonance magnétique",
+   "constat": "Préciser le milieu : sang total ou érythrocytes (pyrophosphate de thiamine) ; le plasma ne convient pas ; le traitement n’attend pas le résultat.",
+   "preuve": [
+    {
+     "source_id": "S12",
+     "section": "§ 13.2",
+     "citation_courte": "Plasma measurement is not used since virtually all circulating ThDP is in the erythrocytes … treatment should not be delayed by waiting for the laboratory result"
+    }
+   ],
+   "proposition": "propositions/G94_mineurs.html (C19).",
+   "justification": "Évite un prélèvement inutilisable."
+  },
+  {
+   "id": "C20",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G94/G94_a.html",
+   "ancre": "Affections du cerveau au cours de maladies classées ailleurs</h1>",
+   "constat": "Intitulé de l’en-tête sans « Autres » alors que la fenêtre g94-cim donne le libellé officiel « Autres affections… » (Sonstige Krankheiten …) ; K72.7 est un code secondaire « K72.7-! ».",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "G94.-*",
+     "citation_courte": "Sonstige Krankheiten des Gehirns bei anderenorts klassifizierten Krankheiten ; Exkl.: Hepatische Enzephalopathie (K72.7-!)"
+    }
+   ],
+   "proposition": "propositions/G94_a_perimetre.html (C20).",
+   "justification": "Cohérence de libellé."
+  },
+  {
+   "id": "C21",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G94/G94_a.html",
+   "ancre": "Le score de Glasgow quantifie la gravité",
+   "constat": "Le score de Glasgow est employé en total (« Glasgow à 9 ») ; la référence recommande de décrire le patient par ses trois composantes ; le cas 1 (9/15) n’appartient à aucune des deux strates de risque citées (R31).",
+   "preuve": [
+    {
+     "source_id": "S15",
+     "section": "résumé",
+     "citation_courte": "Individual patients are best described by the three components of the coma scale; whereas the derived total coma score should be used to characterise groups"
+    }
+   ],
+   "proposition": "propositions/G94_mineurs.html (C21).",
+   "justification": "Précision sémiologique."
+  },
+  {
+   "id": "C22",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G94/G94_c.html",
+   "ancre": "Le dosage de thiamine se fait avant la première dose, car la recommandation demande de la doser immédiatement avant l’administration.",
+   "constat": "Justification circulaire (« car la recommandation le demande ») dans un encadré Science → examen ; le mécanisme est que le taux post-injection reflète l’apport.",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "résumé, recommandation 3",
+     "citation_courte": "Total thiamine in blood sample should be measured immediately before its administration (GPP)"
+    },
+    {
+     "source_id": "S12",
+     "section": "§ 13.2",
+     "citation_courte": "treatment should not be delayed by waiting for the laboratory result"
+    }
+   ],
+   "proposition": "propositions/G94_mineurs.html (C22).",
+   "justification": "STYLE_REDACTION § 1 : dire pourquoi. Le mécanisme proposé est une inférence de l’audit, signalée comme telle."
+  },
+  {
+   "id": "C23",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G94/G94_c.html",
+   "ancre": "<text x=\"215\" y=\"298\" font-size=\"0\"> </text>",
+   "constat": "Artefacts techniques de la figure 2 : texte SVG invisible (font-size 0) et liste ol placée dans figure après figcaption.",
+   "preuve": [],
+   "proposition": "propositions/G94_c_figure2.html (C23).",
+   "justification": "Propreté du contrat HTML ; sans conséquence médicale."
+  },
+  {
+   "id": "C14",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G94/G94_pop1.html",
+   "ancre": "La conduite thérapeutique précise (ajustement ou arrêt) n’est pas détaillée dans le dossier.",
+   "constat": "Conduite face à la neurotoxicité du céfépime disponible : FI suisse (adaptation dès ClCr ≤ 50 mL/min, hémodialyse en surdosage) et revue (réduction ou arrêt, amélioration médiane 3 jours, dosage sérique, électroencéphalogramme).",
+   "preuve": [
+    {
+     "source_id": "S19",
+     "section": "Posologie, insuffisance rénale",
+     "citation_courte": "taux de filtration glomérulaire ≤50 ml/min … requièrent une adaptation de la posologie"
+    },
+    {
+     "source_id": "S19",
+     "section": "Surdosage",
+     "citation_courte": "les taux sériques de céfépime peuvent être abaissés par une hémodialyse"
+    },
+    {
+     "source_id": "S2",
+     "section": "Antibiotics",
+     "citation_courte": "Symptoms usually improve with dose reduction or discontinuation of cefepime, with a median time to improvement of 3 days"
+    }
+   ],
+   "proposition": "propositions/G94_enrichissements.html (C14).",
+   "justification": "Rubrique 12 (prise en charge suisse, FI datée)."
+  },
+  {
+   "id": "C24",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G94/G94_a.html",
+   "ancre": "id=\"g94-5\"",
+   "constat": "La sémiologie de la méningite bactérienne (première cause d’hydrocéphalie de la leçon) n’est pas donnée : triade 44 %, au moins deux des quatre signes 95 %, coma 14 %.",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "résumé",
+     "citation_courte": "classic triad … only 44 percent … 95 percent had at least two of the four symptoms … 14 percent of patients were comatose"
+    }
+   ],
+   "proposition": "propositions/G94_enrichissements.html (C24).",
+   "justification": "Rubrique 7 et point d’examen fédéral."
+  },
+  {
+   "id": "C25",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G94/G94_a.html",
+   "ancre": "L’examen évalue l’<b>état mental</b> par un outil validé de dépistage du délire",
+   "constat": "L’« outil validé » n’est ni nommé ni chiffré ; la méthode CAM-ICU a une sensibilité de 80,0 % et une spécificité de 95,9 %.",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "résumé",
+     "citation_courte": "The pooled sensitivity of the CAM-ICU was 80.0% … pooled specificity was 95.9%"
+    }
+   ],
+   "proposition": "propositions/G94_enrichissements.html (C25) ; glossaire CAM-ICU.",
+   "justification": "Rubrique 8 (sensibilité/spécificité)."
+  },
+  {
+   "id": "C26",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G94/G94_b.html",
+   "ancre": "La thiamine parentérale est recommandée pour tous les sujets à risque admis aux urgences",
+   "constat": "Prévention précisable par l’ESPEN 2022 : 100–300 mg/j IV dès l’admission aux urgences ou en soins intensifs pendant 3–4 jours (grade B) ; déplétion > 90 % en maladie critique.",
+   "preuve": [
+    {
+     "source_id": "S12",
+     "section": "recommandation 14.5 et § 13.1",
+     "citation_courte": "100–300 mg/day IV … from admission for 3–4 days ; deficiency or depletion may be found in >90% of patients"
+    }
+   ],
+   "proposition": "propositions/G94_enrichissements.html (C26).",
+   "justification": "Rubrique 14 (prévention)."
+  },
+  {
+   "id": "C27",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G94/G94_b.html",
+   "ancre": "id=\"g94-11\"",
+   "constat": "Spécificités suisses absentes (rubrique 16) : déclaration obligatoire à l’OFSP des infections invasives à méningocoque, pneumocoque, de la listériose et de la tuberculose, causes de G94.0. Source non lue (guide OFSP inaccessible) : LACUNE, aucun texte proposé.",
+   "preuve": [],
+   "proposition": "Lire le guide OFSP de la déclaration obligatoire (OMDT, RS 818.101.126) puis ajouter un paragraphe dans g94-11.",
+   "justification": "Rubrique 16 obligatoire du prompt de vérité."
+  },
+  {
+   "id": "C28",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G94/G94_a.html",
+   "ancre": "L’interrogatoire cherche d’abord la maladie primaire, car elle désigne le pôle.",
+   "constat": "Raisonnement inverse non enseigné : une encéphalopathie nouvelle peut être le premier signe d’un sepsis et impose de chercher une infection.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Clinical evaluation",
+     "citation_courte": "SAE may be the first sign of early sepsis, and any new-onset encephalopathy must prompt clinicians to screen their patients for infection"
+    }
+   ],
+   "proposition": "propositions/G94_enrichissements.html (C28).",
+   "justification": "Rubrique 9 (drapeaux rouges)."
+  }
+ ],
+ "matrice_20": [
+  {
+   "rang": 1,
+   "rubrique": "Question clinique et enjeu pour l’examen fédéral",
+   "statut": "couvert",
+   "ancre": "g94-0 (trois vignettes, cinq objectifs)"
+  },
+  {
+   "rang": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "partiel",
+   "ancre": "g94-1, g94-cim ; codes conformes à S1, mais Wernicke hors G94 (C08) et intitulé (C20)"
+  },
+  {
+   "rang": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "partiel",
+   "ancre": "g94-12 (types I/II des métastases imprécis, C06) ; types A–D d’imagerie absents"
+  },
+  {
+   "rang": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "partiel",
+   "ancre": "g94-2 : européenne seulement ; aucune donnée suisse (déclaré)"
+  },
+  {
+   "rang": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "partiel",
+   "ancre": "g94-3, g94-s-physio ; physiologie du liquide cérébrospinal absente (déclaré)"
+  },
+  {
+   "rang": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "couvert",
+   "ancre": "g94-4"
+  },
+  {
+   "rang": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "partiel",
+   "ancre": "g94-5 ; fréquences du délire seulement ; méningite non chiffrée (C24)"
+  },
+  {
+   "rang": 8,
+   "rubrique": "Examen clinique (sensibilité/spécificité)",
+   "statut": "partiel",
+   "ancre": "g94-6 ; aucun outil nommé ni chiffré (C25) ; sémiologie absente (C01)"
+  },
+  {
+   "rang": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "partiel",
+   "ancre": "g94-8 ; hypoglycémie mal traitée (C03)"
+  },
+  {
+   "rang": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "couvert",
+   "ancre": "g94-e-1 à g94-e-4 ; précisions C18, C19, C15"
+  },
+  {
+   "rang": 11,
+   "rubrique": "Diagnostic différentiel",
+   "statut": "couvert",
+   "ancre": "g94-7 (tableau hiérarchisé)"
+  },
+  {
+   "rang": 12,
+   "rubrique": "Prise en charge suisse",
+   "statut": "partiel",
+   "ancre": "g94-9, g94-p-2 ; thiamine (C04), dexaméthasone adulte (C05), céfépime (C14)"
+  },
+  {
+   "rang": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "couvert",
+   "ancre": "g94-8, g94-10 ; dénominateur faux (C07)"
+  },
+  {
+   "rang": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "couvert",
+   "ancre": "g94-10 ; ESPEN (C26)"
+  },
+  {
+   "rang": 15,
+   "rubrique": "Situations particulières",
+   "statut": "partiel",
+   "ancre": "g94-11 : grossesse et sujet âgé absents (déclaré)"
+  },
+  {
+   "rang": 16,
+   "rubrique": "Spécificités suisses",
+   "statut": "absent",
+   "ancre": "aucune (C27)"
+  },
+  {
+   "rang": 17,
+   "rubrique": "Critères formels du diagnostic (div.alert)",
+   "statut": "partiel",
+   "ancre": "g94-12 : type II inexact (C06)"
+  },
+  {
+   "rang": 18,
+   "rubrique": "Paramètres clés chiffrés (div.key)",
+   "statut": "partiel",
+   "ancre": "g94-12 : thiamine inexacte (C04)"
+  },
+  {
+   "rang": 19,
+   "rubrique": "Sous-codes CIM-10-GM couverts",
+   "statut": "partiel",
+   "ancre": "G94.0–G94.8 listés (g94-cim, glossaire) ; G94.30 sans entité sourcée, G94.39 et G94.8 non développés (déclaré)"
+  },
+  {
+   "rang": 20,
+   "rubrique": "Points d’examen fédéral",
+   "statut": "partiel",
+   "ancre": "pièges présents ; dexaméthasone de la méningite et sémiologie de la méningite absentes"
+  }
+ ],
+ "semiologie": {
+  "statut": "absente",
+  "decompte_data_s": 3,
+  "data_s": [
+   "g94-s-anat",
+   "g94-s-physio",
+   "g94-s-bioch"
+  ],
+  "sous_onglet_semio": false,
+  "gravite": "MAJEUR",
+  "bloquant_cloture_cours_et_lot": true,
+  "constat_id": "C01",
+  "fondamentale": {
+   "statut": "partielle dans l’onglet 1, absente comme discipline",
+   "ancres": [
+    "g94-5",
+    "g94-6",
+    "g94-delire",
+    "g94-gcs",
+    "g94-sae-def"
+   ],
+   "manques": "technique des gestes, mécanisme par signe, normal avant pathologique, valeur chiffrée hors délire (méningite S17, CAM-ICU S16 disponibles), pièges ; céphalées et signes leptoméningés non chiffrés dans les sources lues (LACUNE)"
+  },
+  "analytique": {
+   "statut": "absente",
+   "ancres": [],
+   "manques": "regroupement syndromique, raisonnement en cinq étapes, examen systématique, synthèse présentée, trois cas corrigés"
+  },
+  "proposition": [
+   "propositions/G94_c_semio.html",
+   "propositions/G94_pop2_semio.html (fenêtres destinées à G94_pop2.html)",
+   "propositions/glossary_g94_ajouts.py"
+  ],
+  "grille_SEM": {
+   "SEM-01": "non (aucun data-s g94-s-semio ; 3 data-s)",
+   "SEM-02": "non",
+   "SEM-03": "non (audit_sciences échoue, C02)",
+   "SEM-04": "oui (test_v7.py --static G94 : « G94 mots 10448 fenêtres 35 quiz 4 pareto 8 — OK »)",
+   "SEM-05": "non (tableau g94-5 sans colonnes mécanisme ni piège)",
+   "SEM-06": "non",
+   "SEM-07": "non",
+   "SEM-08": "partiel (fréquences du délire sourcées ; autres signes non chiffrés et non déclarés)",
+   "SEM-09": "non",
+   "SEM-10": "partiel (pièges g94-5 et g94-6)",
+   "SEM-11": "non",
+   "SEM-12": "non",
+   "SEM-13": "non (pas d’alert sémiologique ; l’alert g94-8 existe mais omet l’hypoglycémie, C03)",
+   "SEM-14": "partiel (g94-7 donne des indices, sans discriminant sémiologique sourcé)",
+   "SEM-15": "non",
+   "SEM-16": "non",
+   "SEM-17": "non (quatre quiz en e-5, aucun sur la valeur d’un signe ni sur une limite)",
+   "SEM-18": "non vérifiable sans navigateur ; mots verts g94-delire, g94-gcs existants",
+   "SEM-19": "non évaluable (absente)",
+   "SEM-20": "non évaluable",
+   "SEM-21": "non évaluable",
+   "SEM-22": "non (bouton absent)",
+   "SEM-23": "non (aucune capture possible)",
+   "SEM-24": "oui (chap-head : « Revue par intelligence artificielle · Aucune validation médicale humaine »)"
+  }
+ },
+ "figures": [
+  {
+   "fichier": "chapters/G94/G94_b.html",
+   "figure": "Figure 1 — Séquence diagnostique",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verdict": "recevable (étapes sourcées S2, S6, S7)"
+  },
+  {
+   "fichier": "chapters/G94/G94_c.html",
+   "figure": "Figure 2 — Régions cérébrales vulnérables",
+   "classe": "ANATOMIQUE_IA",
+   "verdict": "MAJEUR (C09)"
+  },
+  {
+   "fichier": "chapters/G94/G94_c.html",
+   "figure": "Figure 3 — Chaîne physiopathologique",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verdict": "recevable (S2, S3)"
+  },
+  {
+   "fichier": "chapters/G94/G94_c.html",
+   "figure": "Figure 4 — Thiamine et métabolisme",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verdict": "recevable (S10)"
+  },
+  {
+   "fichier": "chapters/G94/G94_c.html",
+   "figure": "icônes de la barre des sciences (cercle et croix)",
+   "classe": "icône non anatomique",
+   "verdict": "recevable"
+  }
+ ],
+ "lacunes": [
+  "Aucune source suisse de société savante (neurologie, médecine intensive, infectiologie) ni épidémiologie suisse lue ; guide OFSP de la déclaration obligatoire inaccessible (HTTP 502/403) : rubrique 16 non documentée (C27).",
+  "Recommandation ESCMID 2016 sur la méningite bactérienne non lue (HTTP 403) ; dexaméthasone de l’adulte fondée sur l’essai de Gans 2002 (résumé).",
+  "Aucune source suisse ou européenne lue sur l’ordre glucose/thiamine dans l’hypoglycémie : C03 repose sur une revue américaine (S14), signalée comme telle.",
+  "EFNS 2010 et texte intégral EFNS inaccessibles (403) : lecture au niveau du résumé.",
+  "Grille détaillée du score de Glasgow, technique des réflexes du tronc et items du CAM-ICU non lus dans une source de sémiologie suisse ou européenne ; aucune valeur sémiologique chiffrée pour les céphalées et vomissements d’hydrocéphalie ni pour les signes leptoméningés.",
+  "Images candidates de la figure 2 : métadonnées seulement, contrôle visuel non réalisé ; aucun candidat pour ventricules et artère basilaire.",
+  "Contrôle navigateur (SEM-18, SEM-22, SEM-23) et captures non réalisés dans ce rôle d’audit.",
+  "Calculs : recalcules = calculables (38/38) ; aucune lacune de recalcul."
+ ],
+ "propositions": [
+  "propositions/G94_c_semio.html",
+  "propositions/G94_pop2_semio.html",
+  "propositions/G94_c_e5_cas4.html",
+  "propositions/G94_d_thiamine.html",
+  "propositions/G94_d_dexa_meningite.html",
+  "propositions/G94_b_1.html",
+  "propositions/G94_a_perimetre.html",
+  "propositions/G94_c_figure2.html",
+  "propositions/G94_mineurs.html",
+  "propositions/G94_enrichissements.html",
+  "propositions/glossary_g94_ajouts.py"
+ ],
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+}
