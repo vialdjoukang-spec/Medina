@@ -2,15 +2,15 @@
  "mission": "ALPHA1-CLAUDE-G58-LANG",
  "code": "G58",
  "type_audit": "linguistique",
- "base_sha": "32416a2080e67537641040a81252dec0b3e6d137",
+ "base_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
  "generation": 1,
  "branche": "claude/alpha1/g58-lang-g1",
  "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-G58-LANG-g1",
  "conversation": "alpha1-claude-g58-lang",
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
- "date_debut": "2026-10-16T05:30:00Z",
- "date_fin": "2026-10-16T06:10:00Z",
+ "date_debut": null,
+ "date_fin": "2026-10-16T06:12:11Z",
  "lecture": {
   "fichiers": [
    "chapters/G58/G58_a.html",
@@ -35,48 +35,12 @@
  },
  "premiere_verification": "Recalcul des sept empreintes SHA-256 des fichiers de la leçon et comparaison avec le manifeste (conformes) ; puis vérification mécanique, par script Python, que chaque extrait « ancien » apparaît exactement une fois dans son fichier.",
  "synthese": {
-  "nombre_propositions": 78,
-  "renvois_medicaux": 36,
-  "par_categorie": {
-   "style_meta": 1,
-   "syntaxe": 4,
-   "lourdeur": 3,
-   "registre": 9,
-   "ambiguite": 12,
-   "coherence_terminologique": 8,
-   "lexique": 2,
-   "accord": 1,
-   "style_passif": 2,
-   "style_infinitif": 9,
-   "grammaire": 6,
-   "style_nominal": 17,
-   "orthographe": 3,
-   "typographie_nombres": 1
-  },
-  "par_fichier": {
-   "G58_a.html": 6,
-   "G58_b.html": 23,
-   "G58_c.html": 16,
-   "G58_d.html": 5,
-   "G58_pop1.html": 7,
-   "G58_pop2.html": 20,
-   "g58.py": 1
-  },
-  "renvois_par_nature": {
-   "ambiguite_de_sens": 2,
-   "frequence": 5,
-   "causalite": 13,
-   "portee_source": 6,
-   "chronologie": 4,
-   "terminologie_medicale": 1,
-   "coherence_medicale": 3,
-   "indication": 1,
-   "structure": 1
-  }
+  "nombre_propositions": 70,
+  "renvois_medicaux": 44
  },
  "verification_mecanique": {
   "methode": "Python : str.count(ancien) sur le contenu exact de chaque fichier ; puis application séquentielle de toutes les propositions en mémoire (sans écrire dans chapters/ ni glossary/).",
-  "propositions_verifiees": 78,
+  "propositions_verifiees": 70,
   "ancien_unique_dans_fichier": true,
   "application_sequentielle_sans_conflit": true,
   "ancres_renvois_uniques_et_au_plus_200_caracteres": true
@@ -85,11 +49,11 @@
   {
    "type": "proposition",
    "ref": "propositions.json",
-   "nombre": 78
+   "nombre": 70
   },
   {
    "type": "renvoi_medical",
-   "nombre": 36,
+   "nombre": 44,
    "liste": [
     {
      "id": "G58-LANG-RM01",
@@ -378,8 +342,79 @@
      "nature": "portee_source",
      "explication": "La VS est un marqueur indirect de l’inflammation ; la définition « mesure de l’inflammation » est imprécise, mais sa correction relève du médical.",
      "gravite": "renvoi_medical"
+    },
+    {
+     "fichier": "chapters/G58/G58_b.html",
+     "ancre": "soutenue par un <button class=\"w\" data-k=\"g58-acnes\">scratch collapse test</button> positif",
+     "nature": "portee_clinique",
+     "explication": "Reformulation proposée puis retirée (revue Codex, point 4) : Portée du test (étayer le diagnostic). Texte envisagé : dont le diagnostic est étayé par un <button class=\"w\" data-k=\"g58-acnes\">scratch collapse test</button> positif",
+     "gravite": "renvoi_medical",
+     "id": "G58-LANG-RM37"
+    },
+    {
+     "fichier": "chapters/G58/G58_b.html",
+     "ancre": "VHC (cryoglobulinémie, environ 15 % avec vascularite clinique)",
+     "nature": "portee_clinique",
+     "explication": "Reformulation proposée puis retirée (revue Codex, point 4) : Précision de la population (dénominateur du pourcentage). Texte envisagé : VHC (cryoglobulinémie ; environ 15 % des patients VHC ont une vascularite clinique)",
+     "gravite": "renvoi_medical",
+     "id": "G58-LANG-RM38"
+    },
+    {
+     "fichier": "chapters/G58/G58_b.html",
+     "ancre": "L’atteinte des nerfs crâniens est rare, surtout dans la GPA.",
+     "nature": "portee_clinique",
+     "explication": "Reformulation proposée puis retirée (revue Codex, point 4) : Portée de la fréquence (GPA). Texte envisagé : L’atteinte des nerfs crâniens est rare ; elle s’observe surtout dans la GPA.",
+     "gravite": "renvoi_medical",
+     "id": "G58-LANG-RM39"
+    },
+    {
+     "fichier": "chapters/G58/G58_b.html",
+     "ancre": "(GPA et MPA) et les échanges plasmatiques en cas de glomérulonéphrite rapidement progressive",
+     "nature": "portee_clinique",
+     "explication": "Reformulation proposée puis retirée (revue Codex, point 4) : Portée de la recommandation (envisageable) pour les échanges plasmatiques. Texte envisagé : (GPA et MPA) ; les échanges plasmatiques sont également envisageables en cas de glomérulonéphrite rapidement progressive",
+     "gravite": "renvoi_medical",
+     "id": "G58-LANG-RM40"
+    },
+    {
+     "fichier": "chapters/G58/G58_c.html",
+     "ancre": "dans le muscle y sont liés",
+     "nature": "portee_clinique",
+     "explication": "Reformulation proposée puis retirée (revue Codex, point 4) : Association histologique à une vascularite précise. Texte envisagé : dans le muscle sont associés à cette vascularite",
+     "gravite": "renvoi_medical",
+     "id": "G58-LANG-RM41"
+    },
+    {
+     "fichier": "chapters/G58/G58_c.html",
+     "ancre": "une voussure de la paroi abdominale, qui se résout complètement en 3 à 12 mois",
+     "nature": "portee_clinique",
+     "explication": "Reformulation proposée puis retirée (revue Codex, point 4) : Attribution de la résolution à la radiculopathie. Texte envisagé : une voussure de la paroi abdominale ; cette radiculopathie se résout complètement en 3 à 12 mois",
+     "gravite": "renvoi_medical",
+     "id": "G58-LANG-RM42"
+    },
+    {
+     "fichier": "chapters/G58/G58_pop1.html",
+     "ancre": "survenant sous traitement ; un traitement rapide",
+     "nature": "portee_clinique",
+     "explication": "Reformulation proposée puis retirée (revue Codex, point 4) : Population concernée (inhibiteurs de point de contrôle). Texte envisagé : survenant sous inhibiteur de point de contrôle ; un traitement rapide",
+     "gravite": "renvoi_medical",
+     "id": "G58-LANG-RM43"
+    },
+    {
+     "fichier": "chapters/G58/G58_pop2.html",
+     "ancre": "<p>Vertiges (30,7 %), somnolence (16,4 %) ; dépression respiratoire ; surmortalité en association aux opioïdes (rapport de cotes ajusté 1,68).</p>",
+     "nature": "portee_clinique",
+     "explication": "Reformulation proposée puis retirée (revue Codex, point 4) : Mesure statistique (association/surmortalité). Texte envisagé : <p>Les effets indésirables comprennent des vertiges (30,7 %), de la somnolence (16,4 %) et une dépression respiratoire ; l’association aux opioïdes comporte une surmortalité (rapport de cotes ajusté 1,68).</p>",
+     "gravite": "renvoi_medical",
+     "id": "G58-LANG-RM44"
     }
    ]
+  },
+  {
+   "type": "semiologie",
+   "gravite": "MAJEUR",
+   "bloquant": "bloquant pour la clôture du cours et du lot (AGENTS.md)",
+   "constat": "Sixième sous-onglet « Sémiologie fondamentale et analytique » absent : Sciences compte quatre disciplines (Anatomie, Histologie, Physiologie, Biochimie) et aucun bouton Sémiologie.",
+   "fichier": "chapters/G58/G58_c.html"
   }
  ],
  "differes": [
@@ -395,12 +430,13 @@
   }
  ],
  "lacunes": [
-  "Sixième sous-onglet (Sémiologie) : l’onglet Sciences compte quatre disciplines (Anatomie, Histologie, Physiologie, Biochimie) et aucun bouton Sémiologie ; constat relevant de l’audit médical, non traité en mission linguistique.",
   "Abréviations sans clé de glossaire repérées par balayage automatique des fichiers : « MPO-ANCA » (composé, utilisé avant toute définition ; la clé « MPO » existe ailleurs) et « E10–E14 » (code CIM de la fenêtre g58-cim). Aucune modification de glossaire proposée au-delà de l’orthographe (« aide-mémoire »). Le balayage est automatique : un oubli reste possible.",
   "Listes nominales des cartes (onglet Pathologie, « Symptômes », « Antécédents », « Examen neurologique », « Signes extra-neurologiques ») et énumérations de causes dans la fenêtre « Névralgie intercostale » : non réécrites ; la réécriture en phrases complètes dépasse une reformulation locale. Les paragraphes télégraphiques des fenêtres médicament ont été traités pour la prégabaline, la gabapentine, la prednisone et le cyclophosphamide ; ceux du rituximab, du mépolizumab, de l’EULAR et des fenêtres Pareto d’anatomie, d’histologie, de physiologie, de biochimie et d’examens restent en l’état.",
   "Lisibilité des figures 1 à 6 (viewBox de 380 de large, police de 14) : non mesurée par rendu. Plusieurs libellés dépassent 50 caractères (par exemple « Électrophysiologie : amplitude réduite, vitesse conservée ») et pourraient déborder des cadres de 356 unités ; à vérifier au rendu.",
-  "Aucune vérification médicale n’a été faite ; aucune source externe n’a été consultée. Les renvois médicaux signalent seulement ce que les fichiers ne démontrent pas par eux-mêmes.",
-  "Divergence de base : la consigne cite la base 32416a20, le manifeste indique la base d1a488ad. Le worktree est bien sur 32416a20 et les sept empreintes SHA-256 correspondent au manifeste."
+  "Aucune vérification médicale n’a été faite ; aucune source externe n’a été consultée. Les renvois médicaux signalent seulement ce que les fichiers ne démontrent pas par eux-mêmes."
  ],
- "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée",
+ "worktree_base": "32416a2080e67537641040a81252dec0b3e6d137",
+ "worktree_base_note": "START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste.",
+ "date_debut_note": "Heure de début non relevée au moment de l'exécution ; l'estimation précédente n'était pas observée."
 }

@@ -1,6 +1,6 @@
 # Audit linguistique agressif — G58, « Autres mononévrites » (S08)
 
-Mission ALPHA1-CLAUDE-G58-LANG · génération 1 · branche `claude/alpha1/g58-lang-g1` · base 32416a20.
+Mission ALPHA1-CLAUDE-G58-LANG · génération 1 · branche `claude/alpha1/g58-lang-g1` · base de la mission d1a488ad (worktree démarré sur 32416a20 : START exécuté sur le premier main contenant l'approbation de la mission, PR #181 ; sources figées identiques, empreintes SHA-256 conformes au manifeste).
 
 > Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée.
 
@@ -146,12 +146,10 @@ Chaque renvoi cite un extrait exact et explique pourquoi une reformulation local
 
 ## Lacunes
 
-- Sixième sous-onglet (Sémiologie) : l’onglet Sciences compte quatre disciplines (Anatomie, Histologie, Physiologie, Biochimie) et aucun bouton Sémiologie ; constat relevant de l’audit médical, non traité en mission linguistique.
 - Abréviations sans clé de glossaire repérées par balayage automatique des fichiers : « MPO-ANCA » (composé, utilisé avant toute définition ; la clé « MPO » existe ailleurs) et « E10–E14 » (code CIM de la fenêtre g58-cim). Aucune modification de glossaire proposée au-delà de l’orthographe (« aide-mémoire »). Le balayage est automatique : un oubli reste possible.
 - Listes nominales des cartes (onglet Pathologie, « Symptômes », « Antécédents », « Examen neurologique », « Signes extra-neurologiques ») et énumérations de causes dans la fenêtre « Névralgie intercostale » : non réécrites ; la réécriture en phrases complètes dépasse une reformulation locale. Les paragraphes télégraphiques des fenêtres médicament ont été traités pour la prégabaline, la gabapentine, la prednisone et le cyclophosphamide ; ceux du rituximab, du mépolizumab, de l’EULAR et des fenêtres Pareto d’anatomie, d’histologie, de physiologie, de biochimie et d’examens restent en l’état.
 - Lisibilité des figures 1 à 6 (viewBox de 380 de large, police de 14) : non mesurée par rendu. Plusieurs libellés dépassent 50 caractères (par exemple « Électrophysiologie : amplitude réduite, vitesse conservée ») et pourraient déborder des cadres de 356 unités ; à vérifier au rendu.
 - Aucune vérification médicale n’a été faite ; aucune source externe n’a été consultée. Les renvois médicaux signalent seulement ce que les fichiers ne démontrent pas par eux-mêmes.
-- Divergence de base : la consigne cite la base 32416a20, le manifeste indique la base d1a488ad. Le worktree est bien sur 32416a20 et les sept empreintes SHA-256 correspondent au manifeste.
 
 ## Tableau de bord
 
@@ -163,3 +161,12 @@ Chaque renvoi cite un extrait exact et explique pourquoi une reformulation local
 | Renvois médicaux | 36 |
 | Extraits « ancien » uniques dans leur fichier | 78 sur 78 |
 | Écritures hors du dossier réservé | 0 |
+
+## Constat MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md)
+
+Sixième sous-onglet « Sémiologie fondamentale et analytique » absent : l'onglet Sciences compte quatre disciplines (Anatomie, Histologie, Physiologie, Biochimie).
+
+## Correctifs de traçabilité (revue Codex)
+
+- Huit reformulations touchant la portée clinique sont passées en renvois médicaux ; les compteurs du tableau de bord ci-dessus sont à lire ainsi : 70 propositions applicables, 44 renvois médicaux (voir rapport.json).
+- date_debut : null (heure non relevée) ; date_fin : 2026-10-16T06:12:11Z.
