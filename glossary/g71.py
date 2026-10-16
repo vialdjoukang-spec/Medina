@@ -51,8 +51,12 @@ _add('LGMD1', [('LGMD','dystrophie des ceintures'),('1','transmission dominante,
      'Appellation ancienne des dystrophies des ceintures de transmission autosomique dominante.', 'g71-lgmd')
 _add('LGMD2', [('LGMD','dystrophie des ceintures'),('2','transmission récessive, ancienne nomenclature')], 'Ancienne nomenclature récessive',
      'Appellation ancienne des dystrophies des ceintures de transmission autosomique récessive.', 'g71-lgmd')
-_add('ENMC', [('E','European'),('N','Neuromuscular'),('M','Muscle'),('C','Centre')], 'Centre européen du muscle et des maladies neuromusculaires',
-     'Organisme qui organise des ateliers internationaux ; le 229<sup>e</sup> atelier de 2017 a réformé la nomenclature des dystrophies des ceintures.')
+_add('ENMC', [('E','European'),('N','Neuro'),('M','Muscular'),('C','Centre')], 'Centre neuromusculaire européen (European Neuromuscular Centre)',
+     'Organisme qui tient des ateliers internationaux ; le 229<sup>e</sup> atelier de 2017 a réformé la nomenclature des dystrophies des ceintures, le 277<sup>e</sup> celle des myopathies congénitales.')
+_add('MRC', [('M','Medical'),('R','Research'),('C','Council')], 'Medical Research Council (conseil britannique de la recherche médicale)',
+     'Auteur de l’échelle de cotation de la force musculaire de 0 à 5 (Aids to the examination of the peripheral nervous system, p. 7).', 'g71-sm-faiblesse')
+_add('ENMG', [('E','Électro'),('N','Neuro'),('M','Myo'),('G','Gramme')], 'Électroneuromyogramme',
+     'Exploration électrique des nerfs et des muscles qui distingue une atteinte myogène d’une atteinte neurogène.', 'g71-emg')
 _add('EFNS', [('E','European'),('F','Federation of'),('N','Neurological'),('S','Societies')], 'Fédération européenne des sociétés de neurologie',
      'Elle a publié en 2010 la recommandation lue sur l’hyperCKémie.')
 _add('EMHG', [('E','European'),('M','Malignant'),('H','Hyperthermia'),('G','Group')], 'Groupe européen d’hyperthermie maligne',
@@ -67,7 +71,7 @@ _add('NHLBI', [('N','National'),('H','Heart,'),('L','Lung, and'),('B','Blood'),(
      'Institution dont proviennent en partie les recommandations cardiaques du consensus sur la dystrophie de Duchenne ; source américaine.')
 _add('ICD-10-GM', [('ICD','International Classification of Diseases'),('10','dixième révision'),('GM','German Modification')], 'Classification internationale des maladies, 10e révision, modification allemande',
      'Version allemande de la classification, source du bloc G70–G73 consulté.')
-_add('25-OH-vitamine', [('25','position 25'),('OH','hydroxy'),('vitamine','vitamine')], '25-hydroxy-vitamine',
+_add('25-OH-vitamine', [('25','position 25'),('OH','hydroxy'),('vitamine','vitamine')], '25-hydroxyvitamine D',
      'Forme circulante dosée dans le suivi nutritionnel annuel de la dystrophie de Duchenne.')
 _add('NEB', [('NEB','nébuline')], 'Gène de la nébuline', 'Un des huit gènes majeurs des myopathies congénitales.', 'g71-congenitales')
 _add('ACTA1', [('ACTA1','actine alpha 1 du muscle squelettique')], 'Gène de l’actine alpha 1', 'Un des huit gènes majeurs des myopathies congénitales.', 'g71-congenitales')
@@ -86,3 +90,15 @@ _add('Curschmann-Batten-Steinert', [('Curschmann-Batten-Steinert','éponyme (nom
 _add('Isaacs-Mertens', [('Isaacs-Mertens','éponyme (noms de médecins), non une abréviation')], 'Neuromyotonie d’Isaacs-Mertens', 'Entité citée parmi les affections myotoniques de la classification.')
 for _c, _t in (('G71.0','dystrophie musculaire'),('G71.1','affections myotoniques'),('G71.2','myopathies congénitales'),('G71.3','myopathie mitochondriale non classée ailleurs'),('G71.8','autres affections musculaires primitives'),('G71.9','affection musculaire primitive, sans précision')):
     _add(_c, [(_c, 'code de la CIM-10-GM 2024 : ' + _t)], _t[0].upper() + _t[1:], 'Sous-catégorie de G71 dans la CIM-10-GM 2024.', 'g71-sousgroupes')
+_add('EPAR', [('E','European'),('P','Public'),('A','Assessment'),('R','Report')], 'Rapport européen public d’évaluation',
+     'Page de l’Agence européenne des médicaments qui présente l’autorisation d’un médicament dans l’Union européenne, son indication et son statut ; consultée pour l’ataluren, le givinostat et la mexilétine.')
+_add('LAMA2', [('LAMA2','gène de la chaîne alpha 2 de la laminine')], 'Gène LAMA2',
+     'Gène de la dystrophie musculaire liée à LAMA2, dont le registre suisse estime la prévalence à au moins 0,8 pour 100 000 personnes de 0 à 23 ans.')
+_add('Swiss-Reg-NMD', [('Swiss-Reg','Swiss Registry for'),('NMD','NeuroMuscular Disorders')], 'Registre suisse des maladies neuromusculaires',
+     'Registre de population qui recueille les données de santé des patients atteints d’une maladie neuromusculaire vivant en Suisse.')
+_add('Care-NMD-CH', [('Care','soins'),('NMD','NeuroMuscular Diseases'),('CH','Suisse')], 'Étude suisse sur les soins des maladies neuromusculaires',
+     'Étude qui décrit les sept centres neuromusculaires suisses de référence et évalue un modèle de gestion de cas mis en place en 2023.')
+_add('REACH', [('REACH','nom de l’essai de phase 3 du losmapimod, non développé dans la source lue')], 'Essai REACH',
+     'Essai de phase 3 contre placebo du losmapimod dans la dystrophie facio-scapulo-humérale : 260 patients, 48 semaines, aucun critère d’efficacité atteint.')
+_add('JMIR', [('J','Journal of'),('M','Medical'),('I','Internet'),('R','Research')], 'Journal of Medical Internet Research',
+     'Éditeur de la revue JMIR Research Protocols, où est publié le protocole Care-NMD-CH.')
