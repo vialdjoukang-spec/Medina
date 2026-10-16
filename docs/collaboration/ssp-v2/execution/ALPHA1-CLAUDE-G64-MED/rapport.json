@@ -1,0 +1,1012 @@
+{
+ "mission": "ALPHA1-CLAUDE-G64-MED",
+ "code": "G64",
+ "type_audit": "medical",
+ "base_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "worktree_base": "32416a2080e67537641040a81252dec0b3e6d137",
+ "worktree_base_note": "START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste.",
+ "source_snapshot_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "generation": 1,
+ "branche": "claude/alpha1/g64-med-g1",
+ "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-G64-MED-g1",
+ "conversation": "alpha1-claude-g64-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": null,
+ "date_fin": "2026-10-16T06:31:03Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G64/G64_a.html",
+   "chapters/G64/G64_b.html",
+   "chapters/G64/G64_c.html",
+   "chapters/G64/G64_d.html",
+   "chapters/G64/G64_pop1.html",
+   "chapters/G64/G64_pop2.html",
+   "glossary/g64.py"
+  ],
+  "empreintes_conformes": true,
+  "empreintes": {
+   "chapters/G64/G64_a.html": {
+    "sha256": "8bc623ff680af7398ae4267d6ea63b9721c444b30e07b431327a0d7303f3e130",
+    "manifeste": "8bc623ff680af7398ae4267d6ea63b9721c444b30e07b431327a0d7303f3e130",
+    "conforme": true
+   },
+   "chapters/G64/G64_b.html": {
+    "sha256": "0b7ae0a8aa0bff4549da44ce4451932997eb899e15d95a457b27c102049ba50d",
+    "manifeste": "0b7ae0a8aa0bff4549da44ce4451932997eb899e15d95a457b27c102049ba50d",
+    "conforme": true
+   },
+   "chapters/G64/G64_c.html": {
+    "sha256": "22705b4969e050d4328c440b0a1b96fd706d62d9ec310b119a406bc5b8ae3774",
+    "manifeste": "22705b4969e050d4328c440b0a1b96fd706d62d9ec310b119a406bc5b8ae3774",
+    "conforme": true
+   },
+   "chapters/G64/G64_d.html": {
+    "sha256": "2b5d6ea964cc0bb8763d38d835445b602471acfeaad3d4c3efed05370d28be78",
+    "manifeste": "2b5d6ea964cc0bb8763d38d835445b602471acfeaad3d4c3efed05370d28be78",
+    "conforme": true
+   },
+   "chapters/G64/G64_pop1.html": {
+    "sha256": "15f903ac4bb6636b1ffc64916bb532502d58c66dfbb0bf32e3b2c65e8bf6aeb3",
+    "manifeste": "15f903ac4bb6636b1ffc64916bb532502d58c66dfbb0bf32e3b2c65e8bf6aeb3",
+    "conforme": true
+   },
+   "chapters/G64/G64_pop2.html": {
+    "sha256": "ecafb6d49c8d137165c65499acf271d36bcfecc8fad33aab7a8d7c85398f27e1",
+    "manifeste": "ecafb6d49c8d137165c65499acf271d36bcfecc8fad33aab7a8d7c85398f27e1",
+    "conforme": true
+   },
+   "glossary/g64.py": {
+    "sha256": "bcf05a588a68438ffa95ecaffd506355e922aedd0392a9e82b26f204ba7d3b8d",
+    "manifeste": "bcf05a588a68438ffa95ecaffd506355e922aedd0392a9e82b26f204ba7d3b8d",
+    "conforme": true
+   }
+  },
+  "methode": "Lecture intégrale des 7 fichiers ; empreintes recalculées dans le worktree (base 32416a20) et identiques au manifeste (instantané d1a488ad) ; ancres vérifiées par script (chaque ancre présente exactement une fois)."
+ },
+ "premiere_source_lue": {
+  "source_id": "S2",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5832891/",
+  "section": "Résumé PubMed 29478436, puis texte intégral PMC (épidémiologie, causes, démarche, SGB)"
+ },
+ "synthese": {
+  "BLOQUANT": 0,
+  "MAJEUR": 8,
+  "MINEUR": 6,
+  "ENRICHISSEMENT": 5
+ },
+ "constats": [
+  {
+   "id": "C01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G64/G64_a.html",
+   "ancre": "Il peut seulement écrire : atteinte du système nerveux périphérique sans autre indication",
+   "constat": "La vignette décrit une polyneuropathie distale symétrique (aréflexie achilléenne, hypopallesthésie, hypoalgésie) et la leçon affirme que le seul code possible est G64. La CIM-10-GM 2024 possède G62.9 « Polyneuropathie, nicht näher bezeichnet » pour une polyneuropathie reconnue de cause inconnue ; G64 couvre une « affection du système nerveux périphérique sans autre indication ». Le tableau de g64-1 omet G62.9 et G62.80 (polyneuropathie de réanimation). Toute la leçon repose donc sur un rattachement de codage inexact.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "bloc G60–G64, G62.-",
+     "citation_courte": "G62.9 Polyneuropathie, nicht näher bezeichnet"
+    },
+    {
+     "source_id": "S1",
+     "section": "G64",
+     "citation_courte": "Inkl.: Krankheit des peripheren Nervensystems o.n.A."
+    },
+    {
+     "source_id": "S1",
+     "section": "G62.8-",
+     "citation_courte": "G62.80 Critical-illness-Polyneuropathie"
+    }
+   ],
+   "proposition": "propositions/G64_a_1.html : réécriture du second paragraphe et de l’encadré de g64-0, deux lignes G62.9 et G62.80 dans le tableau de g64-1, piège de codage.",
+   "justification": "Le code dit ce que le médecin sait ; une polyneuropathie identifiée est déjà plus qu’une atteinte non précisée → G62.9 est la destination exacte tant que la cause manque → le lecteur doit reclasser dès l’examen, non après la découverte de la cause.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G64/G64_b.html",
+   "ancre": "<b>probable</b> si cinq prédicteurs sont réunis",
+   "constat": "Le critère formel (div.alert de g64-12, repris en g64-e-5 et dans la fenêtre g64-vasc-criteres) exige que les cinq prédicteurs histologiques soient « réunis » pour une vascularite probable. Le résumé exécutif PNS 2010 dit seulement que les critères de vascularite probable « incluent cinq prédicteurs » ; il n’exige pas leur réunion. La définition « cliniquement probable » sans biopsie est absente. Le seuil inventé est plus strict que la source et peut faire écarter un diagnostic traitable.",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "résumé exécutif",
+     "citation_courte": "Diagnostic criteria for pathologically probable vasculitic neuropathy included five predictors"
+    },
+    {
+     "source_id": "S3",
+     "section": "résumé exécutif",
+     "citation_courte": "A case definition of clinically probable vasculitic neuropathy in patients lacking biopsy proof"
+    }
+   ],
+   "proposition": "propositions/G64_b_1.html : trois remplacements (alert g64-12, g64-e-5, fenêtre g64-vasc-criteres) ; nombre exigé déclaré non lu (LACUNE L03).",
+   "justification": "Un prédicteur histologique augmente la probabilité d’une vascularite → exiger les cinq élève artificiellement le seuil → risque de méconnaître une neuropathie vascularitique qui relève d’une corticothérapie d’au moins six mois.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C03",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G64/G64_b.html",
+   "ancre": "Le dossier ne précise pas le traitement du ",
+   "constat": "Le drapeau rouge le plus grave (syndrome de Guillain-Barré) n’a pour conduite qu’une « évaluation spécialisée urgente ». La leçon affirme que la source ne donne pas le traitement, alors que la revue de 2018, lue par le dossier, prescrit une hospitalisation rapide, souvent en soins intensifs, et cite immunoglobulines intraveineuses et échanges plasmatiques. La guideline EAN/PNS 2023 précise les doses et délais. La même mention erronée figure dans la fenêtre g64-sgb (« Le dossier ne contient pas le traitement du »).",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "section syndrome de Guillain-Barré",
+     "citation_courte": "requires rapid hospitalization"
+    },
+    {
+     "source_id": "S15",
+     "section": "résumé, traitement",
+     "citation_courte": "IVIg 0.4 g/kg for 5 days … if unable to walk unaided"
+    },
+    {
+     "source_id": "S14",
+     "section": "§ 3.3.1",
+     "citation_courte": "fortschreitende Verschlechterung nicht länger als 4 Wochen"
+    }
+   ],
+   "proposition": "propositions/G64_b_2.html : cellule de conduite, encadré « Ce que fait l’hôpital », rubrique Conduite de la fenêtre g64-sgb.",
+   "justification": "La défaillance respiratoire et les troubles de conduction cardiaque peuvent survenir en quelques jours → la conduite décisive est le lieu de soins (hôpital, soins intensifs) → le médecin de premier recours doit l’énoncer sans ambiguïté.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G64/G64_d.html",
+   "ancre": "Quatre mises en garde figurent dans l’information professionnelle.",
+   "constat": "L’îlot prégabaline ne cite que quatre mises en garde (arrêt progressif, insuffisance cardiaque, poids, angio-œdème). Il omet des précautions décisionnelles pour la patiente de 67 ans de la vignette : étourdissements et somnolence avec chutes chez la personne âgée, abstention de conduite, dépression respiratoire, prudence avec les opiacés (odds ratio ajusté 1,68 de décès lié aux opioïdes), mésusage et dépendance aux doses thérapeutiques.",
+   "preuve": [
+    {
+     "source_id": "S10",
+     "section": "Mises en garde, étourdissements",
+     "citation_courte": "traumatismes liés à des chutes chez les personnes âgées"
+    },
+    {
+     "source_id": "S10",
+     "section": "Effet sur l’aptitude à la conduite",
+     "citation_courte": "conseillé aux patients de ne pas conduire"
+    },
+    {
+     "source_id": "S10",
+     "section": "Mises en garde, opiacés",
+     "citation_courte": "aOR 1,68"
+    },
+    {
+     "source_id": "S10",
+     "section": "Mésusage, usage nocif et dépendance",
+     "citation_courte": "pouvant également survenir à des doses thérapeutiques"
+    },
+    {
+     "source_id": "S10",
+     "section": "Posologie/Mode d’emploi, troubles de la fonction rénale, tableau 1 (relu le 16.10.2026, version 110 F, juillet 2026)",
+     "citation_courte": "Clcr 30-60 : dose initiale 75 mg/jour, dose maximale 300 mg/jour, en 2 ou 3 prises unitaires"
+    }
+   ],
+   "proposition": "propositions/G64_d_1.html : tableau des risques avec lecture, rubrique Sécurité de la fenêtre g64-pregabaline. Revue Codex PR #193 : la dose de la vignette (clairance 45 ml/min) est conditionnée à la fonction rénale selon le tableau 1 de la FI (75 mg/jour au départ, 300 mg/jour au maximum, en 2 ou 3 prises ; ne doit pas être utilisée sous 30 ml/min).",
+   "justification": "Le ligand α2δ déprime le système nerveux central → chute, accident de la route et dépression respiratoire sont les risques graves du sujet âgé → la prescription exige un avertissement explicite et la vérification des co-prescriptions.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C05",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G64/G64_d.html",
+   "ancre": "<td>Contre-indication</td><td>Insuffisance rénale sévère (renvoi à l’information professionnelle)</td>",
+   "constat": "La duloxétine n’a qu’une contre-indication citée. L’information professionnelle (décembre 2024) en énumère d’autres : inhibiteurs irréversibles de la monoamine oxydase, maladie hépatique avec insuffisance hépatique, inhibiteurs du CYP1A2 (fluvoxamine, ciprofloxacine, énoxacine), hypertension non équilibrée ; le seuil rénal est une clairance inférieure à 30 ml/min. Les précautions (saignements, hyponatrémie du sujet âgé) et l’évaluation à deux mois manquent.",
+   "preuve": [
+    {
+     "source_id": "S11",
+     "section": "Contre-indications",
+     "citation_courte": "inhibiteurs irréversibles de la monoamine oxydase … Maladie hépatique entraînant une insuffisance hépatique"
+    },
+    {
+     "source_id": "S11",
+     "section": "Contre-indications",
+     "citation_courte": "inhibiteurs du CYP1A2 comme la fluvoxamine, la ciprofloxacine"
+    },
+    {
+     "source_id": "S11",
+     "section": "Posologie",
+     "citation_courte": "L’efficacité du traitement par duloxétine devra être évaluée après 2 mois"
+    }
+   ],
+   "proposition": "propositions/G64_d_2.html : lignes Contre-indications, Précautions, Évaluation, lecture du tableau, fenêtre g64-duloxetine.",
+   "justification": "Une contre-indication omise expose à un syndrome sérotoninergique, à une accumulation hépatique ou pharmacocinétique → danger évitable → la liste complète de la FI est une information de sécurité, non un détail.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C06",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G64/G64_c.html",
+   "ancre": "aria-controls=\"g64-s-bioch\" data-s=\"g64-s-bioch\"",
+   "constat": "L’onglet Sciences ne compte que quatre disciplines réelles (data-s : g64-s-anat, g64-s-histo, g64-s-physio, g64-s-bioch) ; AGENTS.md et l’addendum du lot 2 en exigent cinq, plus la sémiologie. La génétique est la discipline manquante la plus utile : elle répond à la polyneuropathie restée sans cause (environ 25 %) et à la neuropathie douloureuse des petites fibres, avec des conséquences thérapeutiques (Fabry, amylose à transthyrétine).",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "§ 3.2.4 Génétique",
+     "citation_courte": "Einzelgenanalyse … vorgeschaltete Analyse auf Duplikationen des PMP22-Gens"
+    },
+    {
+     "source_id": "S14",
+     "section": "§ 3.6.3",
+     "citation_courte": "Circa 25% der PNP bleiben letztlich ätiologisch unklar"
+    },
+    {
+     "source_id": "S14",
+     "section": "§ 3.2.4 TTR",
+     "citation_courte": "Red Flags für eine hATTRv-Neuropathie"
+    }
+   ],
+   "proposition": "propositions/G64_c_2.html : discipline Génétique complète (cours, tableau introduit et lu, piège, trois encadrés science → clinique/examen/traitement, Pareto).",
+   "justification": "La cause héréditaire explique une part des polyneuropathies « idiopathiques » → la reconnaître clôt une recherche coûteuse et ouvre des traitements spécifiques → la discipline sert directement la décision.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C07",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G64/G64_c.html",
+   "ancre": "<div class=\"sci-bar ui\" role=\"tablist\">",
+   "constat": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md). La partie « Sémiologie fondamentale et analytique » est absente : aucun bouton g64-s-semio en tête de .sci-bar, aucun div.sci homonyme (SEM-01, SEM-02, SEM-03, SEM-04 non). La sémiologie existante se limite à l’îlot g64-6 (un signe chiffré qualitativement, un tableau constatation → interprétation) : pas de mécanisme par signe, pas de technique des gestes, pas de valeur chiffrée, pas d’examen systématique ni de raisonnement en cinq étapes.",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "§ 3.1 Klinische Diagnostik",
+     "citation_courte": "Die klinische Diagnose einer PNP beruht auf der Anamnese … sowie dem klinischen Befund"
+    },
+    {
+     "source_id": "S17",
+     "section": "résumé",
+     "citation_courte": "History taking and clinical examination represent key features"
+    }
+   ],
+   "proposition": "propositions/G64_c_1.html (bouton g64-tab-semio, panneau g64-s-semio role=tabpanel, neuf sections data-semiology dans l’ordre normal → sources, titres h3, liens https dans la section sources), propositions/G64_pop2_1.html (huit fenêtres, à ajouter à G64_pop2.html) et propositions/G64_a_semio_clinique.html (section data-semiology-clinical=\"G64\" dans pA, îlot g64-6).",
+   "justification": "La décision devant une atteinte périphérique part de l’examen → sans technique, mécanisme ni valeur des signes, le lecteur ne peut ni localiser ni hiérarchiser → l’absence est un manque structurel MAJEUR selon l’exigence du 15.10.2026.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": true
+  },
+  {
+   "id": "C08",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G64/G64_b.html",
+   "ancre": "(3) Neuropathie des petites fibres : densité des fibres intraépidermiques réduite",
+   "constat": "Le critère formel de neuropathie des petites fibres repose sur la seule biopsie et/ou les QST. Les sources suisses et européennes lues fondent d’abord le diagnostic positif sur des signes cliniques thermoalgiques et/ou dysautonomiques avec une électroneurographie normale ; la biopsie confirme. Le critère de la leçon autorise un diagnostic sur une biopsie isolée.",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "résumé",
+     "citation_courte": "Le diagnostic positif repose sur la présence de signes sensitifs thermo-algiques déficitaires et/ou de signes dysautonomiques avec des neurographies normales"
+    },
+    {
+     "source_id": "S14",
+     "section": "§ 3.2.8",
+     "citation_courte": "sollte zunächst klinisch auf Beteiligung der kleinen Nervenfasern untersucht werden"
+    },
+    {
+     "source_id": "S6",
+     "section": "résumé",
+     "citation_courte": "established by the assessment of intraepidermal nerve fiber density and/or quantitative sensory testing"
+    }
+   ],
+   "proposition": "propositions/G64_b_3.html : point (3) du div.alert de g64-12.",
+   "justification": "La densité intraépidermique varie avec l’âge et le laboratoire → une biopsie isolée sans clinique compatible risque le surdiagnostic → le critère doit associer clinique, électroneurographie normale et confirmation.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C09",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G64/G64_d.html",
+   "ancre": "Le résumé lu ne précise pas l’événement mesuré par le ",
+   "constat": "Le résumé NeuPSIG 2025 précise l’événement du NNH (arrêt pour effet indésirable) et chiffre la capsaïcine crème (NNT 6,1), la lidocaïne 5 % (NNT 14,5), la toxine botulique A (NNT 2,7, troisième ligne), la stimulation magnétique transcrânienne et les opioïdes (troisième ligne). La leçon écrit « non cité » et « événements indésirables de plus », et classe la toxine sans ligne. Même erreur dans l’entrée NNH du glossaire.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "résumé, méthodes",
+     "citation_courte": "The primary safety outcome was the number of participants who withdrew from the treatment owing to adverse events"
+    },
+    {
+     "source_id": "S5",
+     "section": "résumé, résultats",
+     "citation_courte": "capsaicin cream NNT=6·1 … lidocaine 5% plasters NNT=14·5"
+    },
+    {
+     "source_id": "S5",
+     "section": "résumé, interprétation",
+     "citation_courte": "weak recommendation for BTX-A, rTMS, and opioids as third-line"
+    }
+   ],
+   "proposition": "propositions/G64_d_4.html : lignes du tableau, phrase sur le NNH, lecture, entrée NNH du glossaire.",
+   "justification": "Le NNH mesure les arrêts, non tous les effets → le calcul « 10 événements indésirables de plus » surestime ce qu’il compte → correction sans changement de conduite (MINEUR).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C10",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G64/G64_a.html",
+   "ancre": "<td>Incidences faibles</td>",
+   "constat": "Les chiffres de la PIDC (2 à 3 pour 100 000) et de la neuropathie motrice multifocale (0,6 à 2 pour 100 000) sont des prévalences dans la source ; la leçon les range sous « Incidences faibles », et la fenêtre g64-pidc ainsi que le glossaire (PIDC) écrivent que la source ne précise pas s’il s’agit d’une incidence ou d’une prévalence.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "causes dysimmunitaires",
+     "citation_courte": "Its prevalence is reported at 2–3/100 000"
+    },
+    {
+     "source_id": "S2",
+     "section": "causes dysimmunitaires",
+     "citation_courte": "The prevalence of multifocal motor neuropathy (MMN) is 0.6–2/100 000 cases"
+    }
+   ],
+   "proposition": "Remplacer « Incidences faibles » par « SGB : incidence annuelle ; PIDC et neuropathie motrice multifocale : prévalences » ; dans la fenêtre g64-pidc et le glossaire, remplacer « sans préciser si le chiffre est une incidence ou une prévalence » par « il s’agit d’une prévalence [S2] ».",
+   "justification": "Incidence et prévalence ne mesurent pas la même chose → confusion sans conséquence décisionnelle → MINEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C11",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G64/G64_a.html",
+   "ancre": "22 à 66 % des personnes avec alcoolisme chronique ; risque au-delà d’environ 100 g/jour pendant des années",
+   "constat": "La leçon présente « plus d’environ 100 g par jour pendant des années » comme seuil de risque. La guideline allemande de 2025, plus récente, précise qu’aucun seuil net n’existe et qu’un usage nocif non excessif impose de chercher une autre cause. Selon la règle de la source applicable la plus récente, les deux doivent être présentées.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "alcool",
+     "citation_courte": "A quantity of >100 g/day over a number of years is considered likely to be pathogenic"
+    },
+    {
+     "source_id": "S14",
+     "section": "§ 3.6.1",
+     "citation_courte": "dass es keine eindeutigen Grenzwerte für den täglichen Alkoholkonsum … gibt"
+    }
+   ],
+   "proposition": "propositions/G64_b_4.html (points 2 et 3) : cellule « Lecture » de la ligne Alcool et encadré « Attribution prudente » dans g64-5.",
+   "justification": "Un seuil présenté comme net pousse à imputer l’atteinte à l’alcool → risque de manquer une autre cause → nuance à ajouter ; le reste de la leçon dit déjà que dose et durée comptent (MINEUR).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C12",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G64/G64_d.html",
+   "ancre": "Non recommandée selon la ",
+   "constat": "Pour une clairance de la créatinine inférieure à 30 ml/min, l’information professionnelle Lyrica® écrit que la prégabaline « ne doit pas être utilisée », formulation plus forte que « non recommandée ». La fenêtre g64-pregabaline et le glossaire (Clcr) reprennent la formulation faible.",
+   "preuve": [
+    {
+     "source_id": "S10",
+     "section": "Posologie, troubles de la fonction rénale",
+     "citation_courte": "La prégabaline ne doit pas être utilisée chez les patients présentant une insuffisance rénale sévère (Clcr <30 ml/min)"
+    }
+   ],
+   "proposition": "propositions/G64_d_1.html (point 1 et rubrique Sécurité) ; glossaire Clcr : remplacer « n’est pas recommandée » par « ne doit pas être utilisée ».",
+   "justification": "La conduite (ne pas prescrire) ne change pas → formulation à aligner sur la FI → MINEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C13",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G64/G64_b.html",
+   "ancre": "avec amylose</td><td>Amylose</td>",
+   "constat": "La ligne « IgG avec amylose → Amylose » est circulaire. La revue de 2018 dit qu’un taux élevé d’IgG peut orienter vers une amylose AL liée au myélome ; la guideline de 2025 précise qu’une gammapathie IgG ou IgA n’est en général pas liée à la polyneuropathie, sauf POEMS, et qu’une gammapathie IgM fait chercher les anticorps anti-MAG.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "paraprotéines",
+     "citation_courte": "high IgG may point to myeloma-related AL amyloidosis"
+    },
+    {
+     "source_id": "S14",
+     "section": "§ 3.2.2 Antikörperdiagnostik",
+     "citation_courte": "IgG-, IgA-Gammopathie kein Zusammenhang mit einer Polyneuropathie, es sei denn, es handelt sich um ein POEMS-Syndrom"
+    }
+   ],
+   "proposition": "Remplacer la ligne par : « Paraprotéine IgG ou IgA | Le plus souvent sans lien avec la neuropathie ; lien seulement en cas de POEMS ou d’amylose AL liée au myélome | Électrophorèse, immunofixation, avis hématologique [S14][S2] » ; et ligne IgM : « Paraprotéine IgM | Neuropathie anti-MAG, maladie de Waldenström | Dosage des anticorps anti-MAG [S14][S2] ».",
+   "justification": "Une gammapathie IgG est fréquente chez le sujet âgé et souvent fortuite → l’associer d’emblée à une amylose induit un faux lien → précision sans danger immédiat (MINEUR).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C14",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G64/G64_b.html",
+   "ancre": "<button class=\"w\" data-k=\"g64-neurographie\">Neurographie et <button class=\"w\" data-k=\"g64-neurographie\">EMG</button></button>",
+   "constat": "Dix mots verts sont imbriqués (un bouton dans un bouton) : 1 dans G64_a.html (QST), 6 dans G64_b.html, 3 dans G64_c.html (exemple : Neurographie et EMG, LCR, SGB, POEMS). Le HTML est invalide : le navigateur ferme le premier bouton, ce qui peut ouvrir la mauvaise fenêtre ou casser le libellé. Le contrôle statique affiche OK, mais SEM-18 exige une vérification au navigateur.",
+   "preuve": [],
+   "proposition": "Désimbriquer : un seul bouton par libellé, par exemple <button class=\"w\" data-k=\"g64-neurographie\">Neurographie et EMG</button> ; pour les doublons (LCR, SGB, POEMS), garder le bouton intérieur seulement.",
+   "justification": "Défaut technique sans effet sur le fond médical → MINEUR ; signalé car il touche l’accès aux fenêtres.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E01",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G64/G64_d.html",
+   "ancre": "l’information professionnelle de l’amitriptyline n’a pas été relue",
+   "constat": "La classe au meilleur NNT (tricycliques) reste sans dose ni contre-indication. L’information professionnelle suisse Saroten® (octobre 2022) indique l’amitriptyline dans les douleurs neuropathiques de l’adulte et donne doses et contre-indications cardiaques.",
+   "preuve": [
+    {
+     "source_id": "S12",
+     "section": "Indications",
+     "citation_courte": "le traitement des douleurs neuropathiques chez l’adulte"
+    },
+    {
+     "source_id": "S12",
+     "section": "Posologie",
+     "citation_courte": "La dose initiale recommandée est de 10 mg à 25 mg, le soir"
+    },
+    {
+     "source_id": "S12",
+     "section": "Contre-indications",
+     "citation_courte": "Infarctus du myocarde récent. Bloc cardiaque"
+    }
+   ],
+   "proposition": "propositions/G64_d_3.html : encadré trap de g64-p-2 et nouvel îlot g64-p-4b.",
+   "justification": "Le médicament le plus efficace a les contre-indications les plus dangereuses chez le sujet âgé → la dose et l’ECG préalable doivent figurer dans la leçon.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E02",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G64/G64_d.html",
+   "ancre": "Ligands α2δ (dont la prégabaline)",
+   "constat": "La gabapentine, citée par la revue de 2018 parmi les premiers choix, est absente. Son indication suisse se limite à la neuropathie diabétique et à la névralgie postherpétique : hors de ces cas, elle sort de l’indication, information utile au même titre que pour la duloxétine.",
+   "preuve": [
+    {
+     "source_id": "S13",
+     "section": "Indications",
+     "citation_courte": "Traitement des douleurs neuropathiques de l’adulte lors de neuropathie diabétique ou de névralgie postherpétique"
+    },
+    {
+     "source_id": "S2",
+     "section": "tableau 2",
+     "citation_courte": "Gabapentin, pregabalin, duloxetine, and tricyclika are the drugs of first choice"
+    }
+   ],
+   "proposition": "propositions/G64_d_3.html : colonne gabapentine du tableau.",
+   "justification": "Le statut d’indication décide de la prescription en Suisse → le lecteur doit savoir que la gabapentine n’est pas l’équivalent réglementaire de la prégabaline.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E03",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G64/G64_b.html",
+   "ancre": "Le dossier ne contient pas de calendrier de consultations de suivi",
+   "constat": "La guideline allemande de 2025 fournit le calendrier qui manque : contrôle après six mois à un an, plus tôt si l’atteinte est inhabituelle, sévère ou rapide ; environ 25 % de polyneuropathies idiopathiques, de bon pronostic ; diagnostics tardifs fréquents (vascularite, B12, paraprotéine).",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "§ 3.6.3",
+     "citation_courte": "Nachuntersuchung nach ½ bis 1 Jahr"
+    },
+    {
+     "source_id": "S14",
+     "section": "§ 3.6.3",
+     "citation_courte": "Am häufigsten werden im Verlauf die Diagnosen vaskulitische PNP … PNP bei Vitamin-B12-Mangel oder PNP bei Paraproteinämie gestellt"
+    }
+   ],
+   "proposition": "propositions/G64_b_4.html (point 1).",
+   "justification": "Le suivi rattrape les causes manquées au premier bilan → un calendrier sourcé remplace une lacune déclarée.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E04",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G64/G64_b.html",
+   "ancre": "<td>Neuropathie sévère sans cause</td>",
+   "constat": "Les drapeaux rouges n’incluent pas l’amylose héréditaire à transthyrétine, que la guideline de 2025 signale chez le sujet de plus de 60 ans (dysautonomie, cardiomyopathie, troubles digestifs, canal carpien bilatéral). La patiente de 67 ans de la vignette entre dans cette tranche d’âge.",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "§ 3.6.3",
+     "citation_courte": "Amyloid-Polyneuropathie kann sich spät manifestieren (Beginn >60 Jahre)"
+    },
+    {
+     "source_id": "S14",
+     "section": "§ 3.2.4 TTR",
+     "citation_courte": "bilaterales Karpaltunnelsyndrom"
+    }
+   ],
+   "proposition": "Ajouter une ligne : « Neuropathie progressive après 60 ans avec dysautonomie, cardiopathie, troubles digestifs ou canal carpien bilatéral | Amylose à transthyrétine | Avis neurologique, recherche génétique TTR ou biopsie [S14] » ; voir aussi propositions/G64_c_2.html.",
+   "justification": "Une amylose reconnue tôt dispose de traitements → l’âge et les signes associés de la vignette doivent la faire évoquer.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E05",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G64/G64_pop2.html",
+   "ancre": "Association d’une polyneuropathie, d’une paraprotéine monoclonale, d’une organomégalie",
+   "constat": "La fenêtre POEMS ne cite ni la maladie de Castleman, ni le facteur de croissance de l’endothélium vasculaire, ni le traitement de première ligne mentionné par la revue de 2018 (autogreffe de cellules souches).",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "POEMS",
+     "citation_courte": "paraproteinemia with Castleman’s disease, osteosclerotic lesions, or raised vascular endothelial growth factor"
+    },
+    {
+     "source_id": "S2",
+     "section": "POEMS",
+     "citation_courte": "First-line treatment is autologous stem cell transplantation"
+    }
+   ],
+   "proposition": "Ajouter : « Une maladie de Castleman, des lésions ostéocondensantes ou un facteur de croissance de l’endothélium vasculaire élevé orientent vers ce syndrome ; le traitement de première ligne cité est l’autogreffe de cellules souches [S2]. »",
+   "justification": "Le dosage du facteur de croissance de l’endothélium vasculaire est l’examen qui distingue POEMS d’une gammapathie fortuite → il appartient à la décision.",
+   "ancre_occurrences": 1
+  }
+ ],
+ "matrice_20": [
+  {
+   "rang": 1,
+   "rubrique": "Question clinique et enjeu pour l’examen fédéral",
+   "statut": "couvert",
+   "ancre": "g64-0 (vignette) ; rattachement de codage inexact (C01)"
+  },
+  {
+   "rang": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "partiel",
+   "ancre": "g64-1 ; G62.9 et G62.80 absents, vignette mal codée (C01)"
+  },
+  {
+   "rang": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "couvert",
+   "ancre": "g64-2 (profils de distribution et d’évolution)"
+  },
+  {
+   "rang": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "partiel",
+   "ancre": "g64-2, g64-3 ; aucune donnée suisse ; incidences et prévalences confondues (C10) ; prévalence > 30 % chez la personne âgée [S18] absente"
+  },
+  {
+   "rang": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "partiel",
+   "ancre": "g64-4, g64-s-physio ; physiologie normale du nerf déclarée absente par la leçon"
+  },
+  {
+   "rang": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "couvert",
+   "ancre": "g64-3 ; seuil d’alcool à nuancer (C11)"
+  },
+  {
+   "rang": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "partiel",
+   "ancre": "g64-5 ; symptômes non décrits un à un, fréquences absentes (C07)"
+  },
+  {
+   "rang": 8,
+   "rubrique": "Examen clinique (signes, sensibilité/spécificité)",
+   "statut": "partiel",
+   "ancre": "g64-6 ; un signe qualitatif, aucune technique ni valeur chiffrée (C07)"
+  },
+  {
+   "rang": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "partiel",
+   "ancre": "g64-8 ; conduite du SGB incomplète (C03), amylose à transthyrétine absente (E04)"
+  },
+  {
+   "rang": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "couvert",
+   "ancre": "g64-7, g64-e-1 à g64-e-5"
+  },
+  {
+   "rang": 11,
+   "rubrique": "Diagnostic différentiel",
+   "statut": "partiel",
+   "ancre": "g64-6, g64-8 ; myélopathie, myopathie, motoneurone et discriminants absents (C07)"
+  },
+  {
+   "rang": 12,
+   "rubrique": "Prise en charge suisse (FI datées)",
+   "statut": "partiel",
+   "ancre": "g64-9, g64-p-1 à g64-p-5 ; mises en garde et contre-indications incomplètes (C04, C05), amitriptyline et gabapentine absentes (E01, E02), dates de FI absentes"
+  },
+  {
+   "rang": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "partiel",
+   "ancre": "g64-10 ; pronostic de la forme idiopathique seulement qualitatif"
+  },
+  {
+   "rang": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "partiel",
+   "ancre": "g64-10, g64-11 ; calendrier de suivi absent (E03)"
+  },
+  {
+   "rang": 15,
+   "rubrique": "Situations particulières",
+   "statut": "partiel",
+   "ancre": "g64-11 ; personne âgée, grossesse et insuffisance rénale peu traitées"
+  },
+  {
+   "rang": 16,
+   "rubrique": "Spécificités suisses",
+   "statut": "absent",
+   "ancre": "Aucune mention de l’aptitude à la conduite sous prégabaline [S10], de l’AI, de la Suva ou du remboursement"
+  },
+  {
+   "rang": 17,
+   "rubrique": "Critères formels du diagnostic (div.alert)",
+   "statut": "partiel",
+   "ancre": "g64-12 ; vascularite probable surévaluée (C02), petites fibres sans clinique (C08)"
+  },
+  {
+   "rang": 18,
+   "rubrique": "Paramètres clés chiffrés (div.key)",
+   "statut": "couvert",
+   "ancre": "g64-12"
+  },
+  {
+   "rang": 19,
+   "rubrique": "Sous-codes CIM-10-GM couverts",
+   "statut": "sans_objet",
+   "ancre": "G64 n’a aucun sous-code [S1] ; la leçon le dit (g64-1)"
+  },
+  {
+   "rang": 20,
+   "rubrique": "Points d’examen fédéral",
+   "statut": "partiel",
+   "ancre": "Quiz g64-e-6 et g64-p-6 ; pas de liste d’objectifs PROFILES ; pièges utiles présents"
+  }
+ ],
+ "semiologie": {
+  "statut": "absente",
+  "constat_id": "C07",
+  "gravite": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md)",
+  "fondamentale": {
+   "statut": "partielle",
+   "ancres": [
+    "g64-5",
+    "g64-6"
+   ],
+   "observations": "Symptômes et signes cités sans définition, normal, technique, mécanisme par signe ni valeur chiffrée ; seul l’ensemble aréflexie distale + hypopallesthésie ou hypoalgésie est qualifié « sensible et spécifique » sans chiffre [S2]. Signes de gravité présents en g64-8."
+  },
+  "analytique": {
+   "statut": "absente",
+   "ancres": [
+    "g64-2",
+    "g64-6"
+   ],
+   "observations": "Profils de distribution utiles mais pas de regroupement syndromique avec mécanisme, pas de raisonnement en cinq étapes, pas d’examen systématique, pas de cas corrigés de sémiologie."
+  },
+  "grille": [
+   {
+    "id": "SEM-01",
+    "resultat": "non",
+    "preuve": "Aucun bouton g64-s-semio dans .sci-bar"
+   },
+   {
+    "id": "SEM-02",
+    "resultat": "non",
+    "preuve": "Absent"
+   },
+   {
+    "id": "SEM-03",
+    "resultat": "non",
+    "preuve": "Absent"
+   },
+   {
+    "id": "SEM-04",
+    "resultat": "non",
+    "preuve": "Discipline absente ; test_v7 --static OK sur la leçon actuelle"
+   },
+   {
+    "id": "SEM-05",
+    "resultat": "non",
+    "preuve": "Aucun tableau des symptômes"
+   },
+   {
+    "id": "SEM-06",
+    "resultat": "non",
+    "preuve": "Aucune technique de geste"
+   },
+   {
+    "id": "SEM-07",
+    "resultat": "non",
+    "preuve": "Mécanismes généraux en g64-4, non par signe"
+   },
+   {
+    "id": "SEM-08",
+    "resultat": "non",
+    "preuve": "Le seul signe valorisé (g64-6) n’a pas de chiffre ; aucune LACUNE déclarée"
+   },
+   {
+    "id": "SEM-09",
+    "resultat": "non",
+    "preuve": "Normal non décrit"
+   },
+   {
+    "id": "SEM-10",
+    "resultat": "oui",
+    "preuve": "Pièges g64-6 et g64-11"
+   },
+   {
+    "id": "SEM-11",
+    "resultat": "non",
+    "preuve": "Tableaux de profils en g64-2, sans mécanisme commun par syndrome"
+   },
+   {
+    "id": "SEM-12",
+    "resultat": "non",
+    "preuve": "Pas de raisonnement en cinq étapes"
+   },
+   {
+    "id": "SEM-13",
+    "resultat": "oui",
+    "preuve": "div.alert de g64-8 (sans seuil chiffré de gravité ; cohérence à vérifier après C03)"
+   },
+   {
+    "id": "SEM-14",
+    "resultat": "non",
+    "preuve": "Différentiels sans discriminant hors drapeaux rouges"
+   },
+   {
+    "id": "SEM-15",
+    "resultat": "non",
+    "preuve": "Pas d’examen systématique numéroté"
+   },
+   {
+    "id": "SEM-16",
+    "resultat": "non",
+    "preuve": "Pas de synthèse présentée"
+   },
+   {
+    "id": "SEM-17",
+    "resultat": "non",
+    "preuve": "Les quiz g64-e-6 ne portent pas sur la valeur d’un signe"
+   },
+   {
+    "id": "SEM-18",
+    "resultat": "non",
+    "preuve": "Sans objet tant que la discipline manque ; mots verts imbriqués (C14)"
+   },
+   {
+    "id": "SEM-19",
+    "resultat": "oui",
+    "preuve": "Sources de la leçon suisses, européennes et revues ; aucune recommandation américaine"
+   },
+   {
+    "id": "SEM-20",
+    "resultat": "oui",
+    "preuve": "Chiffres cohérents entre onglet 1, fenêtres et Pareto"
+   },
+   {
+    "id": "SEM-21",
+    "resultat": "non",
+    "preuve": "Sans objet tant que la discipline manque"
+   },
+   {
+    "id": "SEM-22",
+    "resultat": "non",
+    "preuve": "Non vérifiable : discipline absente"
+   },
+   {
+    "id": "SEM-23",
+    "resultat": "non",
+    "preuve": "Aucune capture : discipline absente"
+   },
+   {
+    "id": "SEM-24",
+    "resultat": "oui",
+    "preuve": "Statut « Revue par intelligence artificielle · Aucune validation médicale humaine »"
+   }
+  ],
+  "bloquants_grille": [
+   "SEM-01",
+   "SEM-02",
+   "SEM-03",
+   "SEM-04",
+   "SEM-08",
+   "SEM-13 (oui)",
+   "SEM-19 (oui)"
+  ],
+  "proposition": [
+   "propositions/G64_c_1.html",
+   "propositions/G64_pop2_1.html",
+   "propositions/G64_glossaire_1.html"
+  ],
+  "valeurs_chiffrees_proposees": [
+   {
+    "signe": "Abolition du réflexe achilléen",
+    "valeur": "Se 72 %, Sp 91 %, RV+ 7,6, RV− 0,3, kappa 0,6",
+    "population": "Patients adressés pour neurophysiologie, Australie",
+    "source": "S19",
+    "niveau": "resume"
+   },
+   {
+    "signe": "Gradient thermique (petites fibres)",
+    "valeur": "Se 87 %, Sp 14 %, RV proches de 1",
+    "population": "Idem",
+    "source": "S19",
+    "niveau": "resume"
+   },
+   {
+    "signe": "Douleur",
+    "valeur": "environ 50 % des polyneuropathies",
+    "population": "Revue allemande",
+    "source": "S2",
+    "niveau": "texte_integral"
+   }
+  ],
+  "note": "Les sources suisses de sémiologie lues (Rev Med Suisse 2019 et 2022) ne sont accessibles qu’en résumé ; la structure de l’examen vient de la guideline DGN 2025 lue en texte intégral.",
+  "bloquant_cloture": true
+ },
+ "figures": [
+  {
+   "fichier": "chapters/G64/G64_b.html",
+   "ancre": "Figure 1 — Séquence de la démarche",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Organigramme vectoriel en cinq cases de la démarche diagnostique",
+   "lisibilite_390px": "viewBox 380 de large ; texte rendu à 13,2 px dans un viewport de 390 px avec gouttière de 16 px ; aucun débordement (mesure Chromium headless, 16.10.2026)",
+   "constat_id": null
+  },
+  {
+   "fichier": "chapters/G64/G64_c.html",
+   "ancre": "4 icônes SVG de la barre .sci-bar",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Pictogramme décoratif (cercle et croix), sans texte",
+   "lisibilite_390px": "sans objet",
+   "constat_id": null
+  }
+ ],
+ "figures_synthese": {
+  "total": 5,
+  "SCHEMA_NON_ANATOMIQUE": 5,
+  "ANATOMIQUE_IA": 0,
+  "ORIGINE_INCONNUE": 0,
+  "IMAGE_SOURCEE": 0,
+  "outil": "python3 tools/image_clo_finder.py inventory G64"
+ },
+ "sciences": {
+  "disciplines_reelles": [
+   "g64-s-anat",
+   "g64-s-histo",
+   "g64-s-physio",
+   "g64-s-bioch"
+  ],
+  "nombre": 4,
+  "exige": 5,
+  "constat_id": "C06",
+  "discipline_proposee": "Génétique"
+ },
+ "controles": {
+  "test_v7_static": "OK (mots 9106, fenêtres 34, quiz 5, pareto 14)",
+  "ancres_uniques": true,
+  "json_valide": true
+ },
+ "verifications_conformes": [
+  "Libellé, inclusion unique et exclusions du bloc G60–G64 conformes [S1]",
+  "Prévalence 5–8 %, diabète 8–54 % (type 1) et 13–46 % (type 2), alcool 22–66 %, chimiothérapie 30–40 % (10–90 %), B12 sans macrocytose ≈ 50 %, B6 carence et surdosage, cause indéterminée jusqu’à 30 % conformes [S2]",
+  "SGB 1–2/100 000 par an, nadir ≤ 4 semaines ; PIDC ≥ 8 semaines ; LCR < 10 leucocytes/µl non obligatoire conformes [S2]",
+  "Oxaliplatine : réversible en 2–3 jours chez 60–80 %, 73 % de lésions persistantes avec la durée du traitement conformes [S2]",
+  "Biopsie nerveuse réservée à la neuropathie modérée à sévère progressive ; biopsie combinée nerf, muscle et peau conformes [S2]",
+  "Biopsie cutanée : niveaux A, B, C, 35 000 biopsies, 0,19 % conformes [S4]",
+  "Critères en faveur d’une vascularite systémique (VS ≥ 100 mm/h, ANCA, cryoglobulines…) et six recommandations thérapeutiques PNS conformes [S3]",
+  "NNT et NNH des trois classes de première ligne conformes [S5]",
+  "Prégabaline : indication, schéma 150 → 300 → 600 mg, plage 75–300 mg pour Clcr 30–60 conformes [S10]",
+  "Duloxétine : indication diabétique seule, 60 mg, +1–2 mm Hg conformes [S11]",
+  "Neuropathies postopératoires 0,14 % et 20–30 % de positionnement conformes [S8]",
+  "Programme 8–12 semaines, 3 à 5 séances de 30–60 min conformes [S9]",
+  "Petites fibres : Aδ et C, Nav1.7–1.9, plus de la moitié sans cause conformes [S6]"
+ ],
+ "lacunes": [
+  {
+   "id": "L01",
+   "objet": "Texte intégral de la guideline PNS 2010 sur la vascularite",
+   "requete": "WebFetch onlinelibrary.wiley.com/doi/full/10.1111/j.1529-8027.2010.00281.x → HTTP 403 ; PubMed : résumé seul",
+   "consequence": "Nombre de prédicteurs exigé pour la vascularite probable non lu (C02)"
+  },
+  {
+   "id": "L02",
+   "objet": "eTableau d’immunosuppression de Sommer 2018",
+   "requete": "Page PMC lue par outil de lecture : mise en page illisible ; Europe PMC fullTextXML → erreur 500 ; E-utilities PMC → texte non distribué",
+   "consequence": "Évidences par indication non vérifiées"
+  },
+  {
+   "id": "L03",
+   "objet": "Seuils de la pallesthésie (diapason gradué) et du test de Schellong",
+   "requete": "DGN 2025 sans seuil ; PubMed « Rydel-Seiffer sensitivity specificity » : résumés sans norme d’âge",
+   "consequence": "Seuils déclarés non lus dans la proposition sémiologique"
+  },
+  {
+   "id": "L04",
+   "objet": "Valeur chiffrée suisse ou européenne des signes cliniques de polyneuropathie",
+   "requete": "PubMed (tuning fork OR ankle reflex OR pinprick) AND sensitivity AND specificity AND neuropathy : seule une étude australienne exploitable (S19)",
+   "consequence": "Valeur d’un seul signe chiffrée, source non européenne signalée"
+  },
+  {
+   "id": "L05",
+   "objet": "Texte intégral des revues suisses (Rev Med Suisse 2019, 2022 ; Ther Umsch 2025)",
+   "requete": "revmed.ch : contenu réservé aux abonnés ; page du numéro 672 : délai dépassé",
+   "consequence": "Lecture au niveau résumé seulement"
+  },
+  {
+   "id": "L06",
+   "objet": "Spécificités suisses (AI, Suva, conduite, remboursement LS)",
+   "requete": "Non recherchées au-delà de la FI Lyrica (rubrique conduite)",
+   "consequence": "Rubrique 16 absente, non enrichie hors conduite"
+  },
+  {
+   "id": "L07",
+   "objet": "Affirmations non revérifiées de la leçon",
+   "requete": "Non relues dans cet audit : 40 % de douleurs chroniques après chimiothérapie, blocs de conduction et prédominance masculine de la neuropathie motrice multifocale, mesures non médicamenteuses de g64-9 (tension, lipides, tabac, pieds)",
+   "consequence": "Ni confirmées ni infirmées"
+  },
+  {
+   "id": "L08",
+   "objet": "Captures réelles SEM-22 et SEM-23",
+   "requete": "Non réalisables : la discipline sémiologique n’existe pas dans les sources canoniques",
+   "consequence": "À faire à l’intégration"
+  }
+ ],
+ "propositions": [
+  "propositions/G64_a_1.html",
+  "propositions/G64_a_semio_clinique.html",
+  "propositions/G64_b_1.html",
+  "propositions/G64_b_2.html",
+  "propositions/G64_b_3.html",
+  "propositions/G64_b_4.html",
+  "propositions/G64_c_1.html",
+  "propositions/G64_c_2.html",
+  "propositions/G64_d_1.html",
+  "propositions/G64_d_2.html",
+  "propositions/G64_d_3.html",
+  "propositions/G64_d_4.html",
+  "propositions/G64_glossaire_1.html",
+  "propositions/G64_pop2_1.html"
+ ],
+ "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée",
+ "date_debut_note": "Heure de début non relevée au lancement. Premier horodatage réellement observé : 2026-10-16T05:55:35Z (réponse d'Europe PMC, première requête réseau de l'audit) ; le début est antérieur de quelques minutes.",
+ "date_fin_note": "Relevée avec date -u juste avant le commit des correctifs de contrat (revue Codex PR #193).",
+ "revue_codex_pr193": {
+  "date": "2026-10-16T06:31:03Z",
+  "constats": [
+   {
+    "id": "A",
+    "objet": "propositions/G64_d_1.html L19 : prégabaline 75 mg ×2/j prescrite à la patiente de 67 ans (Clcr 45 ml/min) avant vérification rénale",
+    "statut": "resolved",
+    "correction": "Dose conditionnée à la clairance : 75 mg/jour au départ, 300 mg/jour au maximum, en 2 ou 3 prises (p. ex. 25 mg 3×/j) ; ne doit pas être utilisée sous 30 ml/min ; piège ajouté ; cellule « Étourdissements », phrase de g64-p-3 et fenêtre g64-pregabaline alignées.",
+    "evidence": {
+     "source_id": "S10",
+     "url": "https://amiko.oddb.org/fr/fi?gtin=7680570570016",
+     "version": "Lyrica®, Viatris, mise à jour juillet 2026, version 110 F",
+     "date_consultation": "16.10.2026",
+     "sha256_page": "c65b74a4e3c3f957cac942c639ecb431c4290006b069a9663d2375d8da704ee2",
+     "passages": [
+      "la posologie sera réduite individuellement chez les patients présentant une insuffisance rénale en tenant compte de la clairance de la créatinine (Clcr)",
+      "La prégabaline ne doit pas être utilisée chez les patients présentant une insuffisance rénale sévère (Clcr <30 ml/min)",
+      "Tableau 1 : ≥60 → 150 / 600 mg/jour ; 30-60 → 75 / 300 mg/jour, en 2 ou 3 prises unitaires",
+      "Une réduction de la posologie n'est nécessaire chez les patients âgés (plus de 65 ans) que s'ils présentent une insuffisance rénale"
+     ]
+    }
+   },
+   {
+    "id": "B1",
+    "objet": "Sémiologie non conforme (h2, pas d’id/aria/role, aucun data-semiology, aucun lien https)",
+    "statut": "resolved",
+    "correction": "G64_c_1.html restructuré : bouton id=g64-tab-semio role=tab aria-selected=true aria-controls/data-s=g64-s-semio ; panneau role=tabpanel aria-labelledby=g64-tab-semio sans hidden ; neuf sections data-semiology dans l’ordre ; 0 h2 ; 10 liens https dans la section sources. Contrôle par HTMLTree de tools/starter_codex.py sur une insertion simulée dans G64_c.html : bouton, panneau, titre du premier îlot, neuf sections non vides et liens https conformes ; 5 boutons data-s dans pS, 6 avec la proposition C06 (génétique), seuil du validateur ≥ 6."
+   },
+   {
+    "id": "B2",
+    "objet": "data-semiology-clinical=\"G64\" absent",
+    "statut": "resolved",
+    "correction": "propositions/G64_a_semio_clinique.html : section insérée dans G64_a.html (#pA, îlot g64-6) avant le bouton pareto-g64-clinique (ancre unique)."
+   },
+   {
+    "id": "B3",
+    "objet": "Proposition _pop3",
+    "statut": "resolved",
+    "correction": "G64_pop3_1.html renommé G64_pop2_1.html (fenêtres à ajouter à G64_pop2.html) ; références mises à jour dans rapport.json et rapport.md ; huit clés data-k de la sémiologie résolues, aucun href=\"#…\"."
+   },
+   {
+    "id": "B4",
+    "objet": "sources.json incomplet",
+    "statut": "resolved",
+    "correction": "Vingt entrées complétées : editeur, version, section_ou_page, passage_paraphrase, population, limites, niveau_lecture (texte intégral ou résumé) ; URL AmiKo par GTIN pour S10–S13."
+   }
+  ]
+ }
+}
