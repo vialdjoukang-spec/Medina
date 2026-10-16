@@ -1,7 +1,9 @@
 # Audit Alpha tour 1 — ALPHA1-CLAUDE-G64-MED
 
 **Leçon : G64 — Autres affections du système nerveux périphérique (S08, N-05-Neurologie).**
-Audit médical agressif avec enrichissement, effort élevé, conforme au manifeste. Branche `claude/alpha1/g64-med-g1`, base `32416a20`, instantané des sources `d1a488ad`. Date : 16 octobre 2026.
+Audit médical agressif avec enrichissement, effort élevé, conforme au manifeste. Branche `claude/alpha1/g64-med-g1`. Base de la mission (manifeste) : `d1a488ad4f0031d7f2a4b47a0721e89a93475d77`. Base du worktree : `32416a2080e67537641040a81252dec0b3e6d137` ; START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste.
+
+Horodatages UTC : début non relevé (premier horodatage observé 2026-10-16T05:55:35Z) ; fin 2026-10-16T06:12:10Z.
 
 > Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée.
 
@@ -38,7 +40,7 @@ La leçon est prudente et transparente sur ses limites. Elle n’invente aucun c
 
 **C06 — L’onglet Sciences compte quatre disciplines réelles au lieu de cinq** : anatomie, histologie, physiologie et biochimie. Je propose la **génétique**, qui répond aux deux questions ouvertes de la leçon. La première est la polyneuropathie restée sans cause (environ 25 %). La seconde est la neuropathie douloureuse des petites fibres. La génétique a en outre des conséquences thérapeutiques : maladie de Fabry et amylose à transthyrétine [S14]. La discipline complète se trouve dans `G64_c_2.html`.
 
-**C07 — La sémiologie fondamentale et analytique est absente.** Voir la rubrique 21 ci-dessous. La proposition se trouve dans `G64_c_1.html` et `G64_pop3_1.html`.
+**C07 — La sémiologie fondamentale et analytique est absente. MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md).** Voir la rubrique 21 ci-dessous. La proposition se trouve dans `G64_c_1.html` et `G64_pop3_1.html`.
 
 **C08 — Le critère formel de la neuropathie des petites fibres ne comporte pas la clinique** (`G64_b.html` g64-12). Les sources suisses et européennes posent d’abord le diagnostic sur des signes thermoalgiques ou dysautonomiques, avec une électroneurographie normale. La biopsie ou les QST confirment ensuite [S16][S14][S6]. La correction se trouve dans `G64_b_3.html`.
 
@@ -86,7 +88,7 @@ La leçon est prudente et transparente sur ses limites. Elle n’invente aucun c
 
 ## 21. Sémiologie fondamentale et analytique
 
-**Statut : absente — constat C07, MAJEUR.** La barre `.sci-bar` ne contient aucun bouton `g64-s-semio` et il n’existe aucun `div.sci` homonyme. La sémiologie existante se réduit à deux îlots. L’îlot g64-5 présente l’anamnèse comme une liste de causes. L’îlot g64-6 contient un seul signe qualifié de « sensible et spécifique », sans chiffre [S2], et un tableau d’interprétation. On n’y trouve ni technique des gestes, ni mécanisme par signe, ni valeur chiffrée, ni examen systématique, ni raisonnement en cinq étapes.
+**Statut : absente — constat C07, MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md).** La barre `.sci-bar` ne contient aucun bouton `g64-s-semio` et il n’existe aucun `div.sci` homonyme. La sémiologie existante se réduit à deux îlots. L’îlot g64-5 présente l’anamnèse comme une liste de causes. L’îlot g64-6 contient un seul signe qualifié de « sensible et spécifique », sans chiffre [S2], et un tableau d’interprétation. On n’y trouve ni technique des gestes, ni mécanisme par signe, ni valeur chiffrée, ni examen systématique, ni raisonnement en cinq étapes.
 
 | Critère | Résultat | Preuve |
 |---|---|---|
@@ -151,7 +153,7 @@ L’outil `tools/image_clo_finder.py inventory G64` recense cinq SVG, tous de ty
 | Empreintes | 7/7 conformes |
 | Contrôle statique | OK |
 | Constats | 0 bloquant, 8 majeurs, 6 mineurs, 5 enrichissements |
-| Sémiologie | absente (MAJEUR), proposition complète en 7 îlots |
+| Sémiologie | absente (MAJEUR, bloquant pour la clôture du cours et du lot), proposition complète en 7 îlots |
 | Disciplines Sciences | 4/5, génétique proposée |
 | Sources | 20 (2 en texte intégral, 4 informations professionnelles par section, 14 en résumé) |
 | Propositions | 13 fichiers dans `propositions/` |

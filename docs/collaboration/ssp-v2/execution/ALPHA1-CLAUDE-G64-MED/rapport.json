@@ -2,7 +2,9 @@
  "mission": "ALPHA1-CLAUDE-G64-MED",
  "code": "G64",
  "type_audit": "medical",
- "base_sha": "32416a20",
+ "base_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "worktree_base": "32416a2080e67537641040a81252dec0b3e6d137",
+ "worktree_base_note": "START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste.",
  "source_snapshot_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
  "generation": 1,
  "branche": "claude/alpha1/g64-med-g1",
@@ -10,8 +12,8 @@
  "conversation": "alpha1-claude-g64-med",
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
- "date_debut": "2026-10-16T05:50:00Z",
- "date_fin": "2026-10-16T06:10:28Z",
+ "date_debut": null,
+ "date_fin": "2026-10-16T06:12:10Z",
  "lecture": {
   "fichiers": [
    "chapters/G64/G64_a.html",
@@ -241,7 +243,7 @@
    "gravite": "MAJEUR",
    "fichier": "chapters/G64/G64_c.html",
    "ancre": "<div class=\"sci-bar ui\" role=\"tablist\">",
-   "constat": "La partie « Sémiologie fondamentale et analytique » est absente : aucun bouton g64-s-semio en tête de .sci-bar, aucun div.sci homonyme (SEM-01, SEM-02, SEM-03, SEM-04 non). La sémiologie existante se limite à l’îlot g64-6 (un signe chiffré qualitativement, un tableau constatation → interprétation) : pas de mécanisme par signe, pas de technique des gestes, pas de valeur chiffrée, pas d’examen systématique ni de raisonnement en cinq étapes.",
+   "constat": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md). La partie « Sémiologie fondamentale et analytique » est absente : aucun bouton g64-s-semio en tête de .sci-bar, aucun div.sci homonyme (SEM-01, SEM-02, SEM-03, SEM-04 non). La sémiologie existante se limite à l’îlot g64-6 (un signe chiffré qualitativement, un tableau constatation → interprétation) : pas de mécanisme par signe, pas de technique des gestes, pas de valeur chiffrée, pas d’examen systématique ni de raisonnement en cinq étapes.",
    "preuve": [
     {
      "source_id": "S14",
@@ -256,7 +258,8 @@
    ],
    "proposition": "propositions/G64_c_1.html (sept îlots g64-sm-1 à g64-sm-7, figure accessible, trois cas corrigés) et propositions/G64_pop3_1.html (huit fenêtres).",
    "justification": "La décision devant une atteinte périphérique part de l’examen → sans technique, mécanisme ni valeur des signes, le lecteur ne peut ni localiser ni hiérarchiser → l’absence est un manque structurel MAJEUR selon l’exigence du 15.10.2026.",
-   "ancre_occurrences": 1
+   "ancre_occurrences": 1,
+   "bloquant_cloture": true
   },
   {
    "id": "C08",
@@ -647,7 +650,7 @@
  "semiologie": {
   "statut": "absente",
   "constat_id": "C07",
-  "gravite": "MAJEUR",
+  "gravite": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md)",
   "fondamentale": {
    "statut": "partielle",
    "ancres": [
@@ -823,7 +826,8 @@
     "niveau": "texte_integral"
    }
   ],
-  "note": "Les sources suisses de sémiologie lues (Rev Med Suisse 2019 et 2022) ne sont accessibles qu’en résumé ; la structure de l’examen vient de la guideline DGN 2025 lue en texte intégral."
+  "note": "Les sources suisses de sémiologie lues (Rev Med Suisse 2019 et 2022) ne sont accessibles qu’en résumé ; la structure de l’examen vient de la guideline DGN 2025 lue en texte intégral.",
+  "bloquant_cloture": true
  },
  "figures": [
   {
@@ -948,5 +952,7 @@
   "propositions/G64_glossaire_1.html",
   "propositions/G64_pop3_1.html"
  ],
- "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+ "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée",
+ "date_debut_note": "Heure de début non relevée au lancement. Premier horodatage réellement observé : 2026-10-16T05:55:35Z (réponse d'Europe PMC, première requête réseau de l'audit) ; le début est antérieur de quelques minutes.",
+ "date_fin_note": "Relevée avec date -u juste avant le commit de traçabilité."
 }
