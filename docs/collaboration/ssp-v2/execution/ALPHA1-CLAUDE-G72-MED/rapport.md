@@ -85,7 +85,7 @@ Aucune erreur n’atteint le seuil d’une conduite dangereuse inventée. Les do
 
 Aucune sensibilité ni spécificité des signes ne figure dans les sources lues. La proposition l’écrit explicitement.
 
-Réserve : le validateur `tools/starter_codex.py` exige au moins six boutons `data-s` dans pS ; `G72_c.html` en compte quatre, cinq après insertion.
+Réserve : Le validateur exige au moins six boutons data-s dans pS : 4 existants, plus l'Immunologie (G72_c_2), plus la Sémiologie (G72_c_1) = 6. Les deux propositions doivent être intégrées ensemble.
 
 ## Correctifs de la revue Codex (PR #195)
 
