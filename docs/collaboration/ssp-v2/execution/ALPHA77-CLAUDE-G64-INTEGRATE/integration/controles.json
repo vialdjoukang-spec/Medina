@@ -1,0 +1,256 @@
+{
+ "mission": "ALPHA77-CLAUDE-G64-INTEGRATE",
+ "agent": "W",
+ "code": "G64",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "controles": {
+  "test_v7_static": {
+   "commande": "python3 test_v7.py --static G64",
+   "resultat": "OK",
+   "detail": "G64 mots 17298 fenêtres 43 quiz 8 pareto 15\nOK"
+  },
+  "build_medina_audit": {
+   "resultat": "{} (appelé par test_v7 --static : aucune abréviation non couverte)"
+  },
+  "audit_sciences": {
+   "commande": "python3 tests/audit_sciences.py --base 523832d9ef6097607d3443f4398deee9cd0add11 --codes G64",
+   "resultat": "failed",
+   "sortie": {
+    "result": "failed",
+    "courses": 1,
+    "totals": {
+     "before": {
+      "words": 725,
+      "figures": 0,
+      "disciplines": 4
+     },
+     "after": {
+      "words": 4787,
+      "figures": 2,
+      "disciplines": 6
+     }
+    },
+    "errors": [
+     "G64/g64-s-anat: discipline trop brève pour ce contrôle",
+     "G64/g64-s-anat: aucune figure",
+     "G64/g64-s-histo: discipline trop brève pour ce contrôle",
+     "G64/g64-s-histo: aucune figure",
+     "G64/g64-s-physio: discipline trop brève pour ce contrôle",
+     "G64/g64-s-physio: aucune figure",
+     "G64/g64-s-bioch: discipline trop brève pour ce contrôle",
+     "G64/g64-s-bioch: aucune figure"
+    ]
+   },
+   "lecture": "g64-s-semio et g64-s-gen conformes (figure accessible, quatre libellés, longueur). Les huit erreurs restantes visent les quatre disciplines historiques (moins de 280 mots, aucune figure) ; elles préexistaient à la base. Aucun SVG factice ni remplissage ajouté."
+  },
+  "validateur_semiologique": {
+   "methode": "Rejeu de la partie structurelle de tools/starter_codex.py (Starter.semiology) avec sa classe HTMLTree sur les fichiers finaux",
+   "resultat": {
+    "resultats": {
+     "premier_onglet_semio_selectionne_et_au_moins_6_data_s": true,
+     "panneau_unique_dans_pS": true,
+     "panneau_visible": true,
+     "titre_premier_ilot": true,
+     "neuf_sections_non_vides": true,
+     "liens_https_dans_sources": true,
+     "marqueur_clinique_dans_pA": true
+    },
+    "boutons_data_s": [
+     "g64-s-semio",
+     "g64-s-anat",
+     "g64-s-histo",
+     "g64-s-physio",
+     "g64-s-bioch",
+     "g64-s-gen"
+    ],
+    "ordre_sections": [
+     "normal",
+     "signs",
+     "mechanisms",
+     "examination",
+     "interpretation",
+     "differentials",
+     "urgency",
+     "limits",
+     "sources"
+    ],
+    "pareto_dans_semiologie": 0,
+    "passe": true
+   }
+  },
+  "identifiants_et_fenetres": {
+   "ids_dupliques": [],
+   "ancres_orphelines": [],
+   "cles_data_k_sans_fenetre": [],
+   "boutons_imbriques": 0
+  },
+  "construction": "MEDINA_OUT=<scratchpad> python3 build_front.py --fragment S08 → fragments/MEDINA_S08_nerveux.html (14 405 948 octets avant compression) ; aucune sortie dans le dépôt",
+  "test_v7_navigateur": {
+   "commande": "python3 test_v7.py --url http://127.0.0.1:8794/MEDINA_S08_nerveux.html G64",
+   "chromium": "/opt/pw-browsers/chromium-1194",
+   "resultat": "OK",
+   "detail": "1300 px et 390 px ; clic de chaque mot vert visible sans « Fiche absente » ; quatre onglets ; Navigo ; Police Taille ; aucune erreur JavaScript"
+  },
+  "rendu_chromium": {
+   "bureau": {
+    "cours_affiche": 1,
+    "bloc_clinique": 1,
+    "bloc_clinique_visible": true,
+    "boutons": [
+     "Sémiologie fondamentale et analytique",
+     "Anatomie",
+     "Histologie",
+     "Physiologie",
+     "Biochimie",
+     "Génétique"
+    ],
+    "aria_selected": [
+     "true",
+     "false",
+     "false",
+     "false",
+     "false",
+     "false"
+    ],
+    "semio_visible": true,
+    "autres_visibles": {
+     "g64-s-anat": false,
+     "g64-s-histo": false,
+     "g64-s-physio": false,
+     "g64-s-bioch": false,
+     "g64-s-gen": false
+    },
+    "sections": [
+     "normal",
+     "signs",
+     "mechanisms",
+     "examination",
+     "interpretation",
+     "differentials",
+     "urgency",
+     "limits",
+     "sources"
+    ],
+    "titre": "Pour la leçon : quelle est la sémiologie fondamentale et analytique ?",
+    "largeur_doc": 1300,
+    "largeur_vue": 1300,
+    "figure2": {
+     "largeur_px": 717.0625,
+     "police_rendue_px": 35.853125,
+     "textes_debordants": 0
+    },
+    "fenetre_texte": "NOR­MAL\n\nLe ré­flexe est pré­sent et sy­mé­trique.\n\nPA­THO­LO­GIQUE\n\nDans la po­ly­neu­ro­pa­thie, les ré­flexes s’af­fai­blissent puis dis­pa­raissent, en règl",
+    "fiche_absente": false,
+    "gen_visible": true,
+    "semio_apres_clic_gen": false,
+    "figure3": {
+     "largeur_px": 717.046875,
+     "police_rendue_px": 35.85234375,
+     "textes_debordants": 0
+    },
+    "figure1": {
+     "largeur_px": 717.0625,
+     "police_rendue_px": 35.853125,
+     "textes_debordants": 0
+    },
+    "erreurs_js": []
+   },
+   "mobile390": {
+    "cours_affiche": 1,
+    "bloc_clinique": 1,
+    "bloc_clinique_visible": true,
+    "boutons": [
+     "Sémiologie fondamentale et analytique",
+     "Anatomie",
+     "Histologie",
+     "Physiologie",
+     "Biochimie",
+     "Génétique"
+    ],
+    "aria_selected": [
+     "true",
+     "false",
+     "false",
+     "false",
+     "false",
+     "false"
+    ],
+    "semio_visible": true,
+    "autres_visibles": {
+     "g64-s-anat": false,
+     "g64-s-histo": false,
+     "g64-s-physio": false,
+     "g64-s-bioch": false,
+     "g64-s-gen": false
+    },
+    "sections": [
+     "normal",
+     "signs",
+     "mechanisms",
+     "examination",
+     "interpretation",
+     "differentials",
+     "urgency",
+     "limits",
+     "sources"
+    ],
+    "titre": "Pour la leçon : quelle est la sémiologie fondamentale et analytique ?",
+    "largeur_doc": 390,
+    "largeur_vue": 390,
+    "figure2": {
+     "largeur_px": 295.984375,
+     "police_rendue_px": 14.79921875,
+     "textes_debordants": 0
+    },
+    "fenetre_texte": "NOR­MAL\n\nLe ré­flexe est pré­sent et sy­mé­trique.\n\nPA­THO­LO­GIQUE\n\nDans la po­ly­neu­ro­pa­thie, les ré­flexes s’af­fai­blissent puis dis­pa­raissent, en règl",
+    "fiche_absente": false,
+    "gen_visible": true,
+    "semio_apres_clic_gen": false,
+    "figure3": {
+     "largeur_px": 295.984375,
+     "police_rendue_px": 14.79921875,
+     "textes_debordants": 0
+    },
+    "figure1": {
+     "largeur_px": 295.984375,
+     "police_rendue_px": 14.79921875,
+     "textes_debordants": 0
+    },
+    "erreurs_js": []
+   }
+  },
+  "note_mesure_police": "Les figures sont à font-size 18 : la police rendue vaut 18 × largeur / 360, soit environ 14,8 px à 390 px et 35,9 px au bureau."
+ },
+ "captures": [
+  "G64_01_ouverture_bureau.png",
+  "G64_01_ouverture_mobile390.png",
+  "G64_02_bloc_clinique_bureau.png",
+  "G64_02_bloc_clinique_mobile390.png",
+  "G64_03_sous_onglet_semiologie_bureau.png",
+  "G64_03_sous_onglet_semiologie_mobile390.png",
+  "G64_04_figure2_semiologie_bureau.png",
+  "G64_04_figure2_semiologie_mobile390.png",
+  "G64_05_fenetre_semiologie_bureau.png",
+  "G64_05_fenetre_semiologie_mobile390.png",
+  "G64_06_figure3_genetique_bureau.png",
+  "G64_06_figure3_genetique_mobile390.png",
+  "G64_07_figure1_demarche_bureau.png",
+  "G64_07_figure1_demarche_mobile390.png",
+  "G64_08_pregabaline_clairance_bureau.png",
+  "G64_08_pregabaline_clairance_mobile390.png"
+ ],
+ "empreintes_sha256": {
+  "chapters/G64/G64_a.html": "07ea535c5395efa0a61eaf32703b874f246aa4049d98b44dba4f4d2716526856",
+  "chapters/G64/G64_b.html": "114a7d98760d33d72fd0af12f3cfb2fe2fd4dfd7951cf7f85a063d25c295732b",
+  "chapters/G64/G64_c.html": "aa5d84e98bc01403a035f5f9e45735f31848a33b542fb2fb903ae17357fd0cdc",
+  "chapters/G64/G64_d.html": "aeb68fbd0dc254ae439c2851e6fffd7381ae9b1977833cf0db2373445186b991",
+  "chapters/G64/G64_pop1.html": "f3642820cacc39527b40a91520af579e0b18bc35f21fad3e96628012aa64acf2",
+  "chapters/G64/G64_pop2.html": "6ad693652e59e518c92b97872af07c3397c6b8e1f12f38a33e908cb4fa6afb19",
+  "glossary/g64.py": "ceb119c28ed7a6d9dcaf3d01afc6f386e434335b5be87ecfe4d8b660a13f88f8"
+ },
+ "non_fait": [
+  "Revues MED, LANG et SEMIO finales et reçu Alpha : rôle de l’Agent P"
+ ],
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}

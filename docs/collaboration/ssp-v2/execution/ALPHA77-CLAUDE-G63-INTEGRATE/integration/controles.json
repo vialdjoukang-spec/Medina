@@ -1,0 +1,394 @@
+{
+ "mission": "ALPHA77-CLAUDE-G63-INTEGRATE",
+ "phase": 1,
+ "agent": "W",
+ "code": "G63",
+ "date": "2026-10-16",
+ "base": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "empreintes_sha256": {
+  "chapters/G63/G63_a.html": "5599fb2285795e111172ab0af7fc9ce8a269ad36c730ad564d66270f8c665579",
+  "chapters/G63/G63_b.html": "60ee35aaa076a3e2099050bf4e92b45ce8cc0843460eb26f500633afaa7eb863",
+  "chapters/G63/G63_c.html": "613996e11309b9a39f4acd155352df6a970174fb29ad48bbea43641749bff471",
+  "chapters/G63/G63_d.html": "4eeedb1232e639f87c04b35afd2351b0d7f25982ddfc91e5ceb0c182c033618e",
+  "chapters/G63/G63_pop1.html": "9c0485be1a3864ea26027078106b1fb6a775b672bf36dcc57f39f72ba6451e84",
+  "chapters/G63/G63_pop2.html": "edefe593bbe83f544f9b3530588bd17be3946f839020b1750cd96f8a4afe6c81",
+  "glossary/g63.py": "60fa2dbaae8b274bc428831a34692999e9a6f9a22b1e6c20e7e90b927e04d4a7"
+ },
+ "controles": {
+  "test_v7_static": {
+   "commande": "python3 test_v7.py --static G63",
+   "resultat": "OK",
+   "detail": "G63 mots 25009 fenêtres 55 quiz 10 pareto 15\nOK"
+  },
+  "build_medina_audit": {
+   "resultat": "{} (appelé par test_v7 --static)"
+  },
+  "audit_sciences": {
+   "commande": "python3 tests/audit_sciences.py --base 523832d9ef6097607d3443f4398deee9cd0add11 --codes G63",
+   "resultat_brut": {
+    "result": "passed",
+    "courses": 1,
+    "totals": {
+     "before": {
+      "words": 1441,
+      "figures": 4,
+      "disciplines": 4
+     },
+     "after": {
+      "words": 6110,
+      "figures": 6,
+      "disciplines": 6
+     }
+    },
+    "errors": []
+   }
+  },
+  "validateur_semiologique": {
+   "methode": "partie structurelle de tools/starter_codex.py (Starter.semiology : boutons, panneau, titres, neuf sections, liens https, marqueur clinique dans pA) rejouée sur les fichiers finaux avec HTMLTree du projet ; la partie preuve (rapport SEMIO, reçu) relève de l’Agent P",
+   "resultat": {
+    "premier_onglet_semiologie_selectionne": true,
+    "panneau_unique_dans_pS": true,
+    "panneau_visible_initialement": true,
+    "titre_premier_ilot": true,
+    "neuf_sections_non_vides": true,
+    "sources_liens_https": true,
+    "marqueur_clinique_dans_pA": true,
+    "boutons_data_s": 6,
+    "ordre": [
+     "g63-s-semio",
+     "g63-s-anat",
+     "g63-s-histo",
+     "g63-s-physio",
+     "g63-s-bioch",
+     "g63-s-immuno"
+    ],
+    "resultat": "passed"
+   }
+  },
+  "fenetres_et_ancres": {
+   "data_k": 55,
+   "templates": 55,
+   "orphelins": [],
+   "templates_non_appeles": [],
+   "ancres_href_orphelines": [],
+   "ids_dupliques": [],
+   "data_cover_orphelins": [],
+   "references_Sx_restantes": 0
+  },
+  "construction": {
+   "commande": "MEDINA_OUT=<scratchpad>/build python3 build_front.py --fragment S08",
+   "sortie": "MEDINA_S08_nerveux.html (14 409 774 octets, compressé 7 639 024)",
+   "hors_depot": true
+  },
+  "rendu_chromium": {
+   "navigateur": "/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
+   "url": "file://…/MEDINA_S08_nerveux.html#/entry/G63",
+   "controles": {
+    "desktop.cours_affiche": {
+     "ok": true,
+     "detail": "Polynévrite au cours de maladies classées ailleurs"
+    },
+    "desktop.bloc_clinique_present": {
+     "ok": true
+    },
+    "desktop.bloc_clinique_visible": {
+     "ok": true
+    },
+    "desktop.fenetre_g63-sm-achille": {
+     "ok": true,
+     "detail": "Aréflexie achilléenne : valeur et limite\nFermer ✕\nVA­LEUR\n\nL’aré­flexie dis­tale as­so­ciée à une baisse de la pal­les­thé­sie ou de la pi­qûre est un signe sen"
+    },
+    "desktop.premier_bouton_semio": {
+     "ok": true,
+     "detail": "Sémiologie fondamentale et analytique"
+    },
+    "desktop.aria_selected": {
+     "ok": true,
+     "detail": [
+      [
+       "g63-s-semio",
+       "true"
+      ],
+      [
+       "g63-s-anat",
+       "false"
+      ],
+      [
+       "g63-s-histo",
+       "false"
+      ],
+      [
+       "g63-s-physio",
+       "false"
+      ],
+      [
+       "g63-s-bioch",
+       "false"
+      ],
+      [
+       "g63-s-immuno",
+       "false"
+      ]
+     ]
+    },
+    "desktop.autres_disciplines_masquees": {
+     "ok": true,
+     "detail": [
+      [
+       "g63-s-semio",
+       false
+      ],
+      [
+       "g63-s-anat",
+       true
+      ],
+      [
+       "g63-s-histo",
+       true
+      ],
+      [
+       "g63-s-physio",
+       true
+      ],
+      [
+       "g63-s-bioch",
+       true
+      ],
+      [
+       "g63-s-immuno",
+       true
+      ]
+     ]
+    },
+    "desktop.sous_onglet_visible_par_defaut": {
+     "ok": true
+    },
+    "desktop.titre_exact": {
+     "ok": true,
+     "detail": "Pour la leçon : quelle est la sémiologie fondamentale et analytique ?"
+    },
+    "desktop.neuf_sections": {
+     "ok": true,
+     "detail": [
+      [
+       "normal",
+       255
+      ],
+      [
+       "signs",
+       510
+      ],
+      [
+       "mechanisms",
+       472
+      ],
+      [
+       "examination",
+       572
+      ],
+      [
+       "interpretation",
+       593
+      ],
+      [
+       "differentials",
+       377
+      ],
+      [
+       "urgency",
+       180
+      ],
+      [
+       "limits",
+       227
+      ],
+      [
+       "sources",
+       554
+      ]
+     ]
+    },
+    "desktop.bascule_immunologie": {
+     "ok": true
+    },
+    "desktop.retour_semio": {
+     "ok": true
+    },
+    "desktop.toutes_fenetres_data_k": {
+     "ok": true,
+     "detail": {
+      "n": 55,
+      "bad": []
+     }
+    },
+    "mobile.cours_affiche": {
+     "ok": true,
+     "detail": "Polynévrite au cours de maladies classées ailleurs"
+    },
+    "mobile.bloc_clinique_present": {
+     "ok": true
+    },
+    "mobile.bloc_clinique_visible": {
+     "ok": true
+    },
+    "mobile.fenetre_g63-sm-achille": {
+     "ok": true,
+     "detail": "Aréflexie achilléenne : valeur et limite\nFermer ✕\nVA­LEUR\n\nL’aré­flexie dis­tale as­so­ciée à une baisse de la pal­les­thé­sie ou de la pi­qûre est un signe sen"
+    },
+    "mobile.premier_bouton_semio": {
+     "ok": true,
+     "detail": "Sémiologie fondamentale et analytique"
+    },
+    "mobile.aria_selected": {
+     "ok": true,
+     "detail": [
+      [
+       "g63-s-semio",
+       "true"
+      ],
+      [
+       "g63-s-anat",
+       "false"
+      ],
+      [
+       "g63-s-histo",
+       "false"
+      ],
+      [
+       "g63-s-physio",
+       "false"
+      ],
+      [
+       "g63-s-bioch",
+       "false"
+      ],
+      [
+       "g63-s-immuno",
+       "false"
+      ]
+     ]
+    },
+    "mobile.autres_disciplines_masquees": {
+     "ok": true,
+     "detail": [
+      [
+       "g63-s-semio",
+       false
+      ],
+      [
+       "g63-s-anat",
+       true
+      ],
+      [
+       "g63-s-histo",
+       true
+      ],
+      [
+       "g63-s-physio",
+       true
+      ],
+      [
+       "g63-s-bioch",
+       true
+      ],
+      [
+       "g63-s-immuno",
+       true
+      ]
+     ]
+    },
+    "mobile.sous_onglet_visible_par_defaut": {
+     "ok": true
+    },
+    "mobile.titre_exact": {
+     "ok": true,
+     "detail": "Pour la leçon : quelle est la sémiologie fondamentale et analytique ?"
+    },
+    "mobile.neuf_sections": {
+     "ok": true,
+     "detail": [
+      [
+       "normal",
+       255
+      ],
+      [
+       "signs",
+       510
+      ],
+      [
+       "mechanisms",
+       472
+      ],
+      [
+       "examination",
+       572
+      ],
+      [
+       "interpretation",
+       593
+      ],
+      [
+       "differentials",
+       377
+      ],
+      [
+       "urgency",
+       180
+      ],
+      [
+       "limits",
+       227
+      ],
+      [
+       "sources",
+       554
+      ]
+     ]
+    },
+    "mobile.hauteur_texte_figure_S1_px": {
+     "ok": true,
+     "detail": 13
+    },
+    "mobile.bascule_immunologie": {
+     "ok": true
+    },
+    "mobile.hauteur_texte_figures_sciences_px": {
+     "ok": true,
+     "detail": [
+      0,
+      0,
+      0,
+      13,
+      0,
+      0
+     ]
+    },
+    "mobile.retour_semio": {
+     "ok": true
+    },
+    "mobile.pas_de_defilement_horizontal": {
+     "ok": true,
+     "detail": 390
+    }
+   },
+   "erreurs_js": [],
+   "erreurs_console": [],
+   "captures": [
+    "captures/G63_01_ouverture_desktop.png",
+    "captures/G63_02_bloc_clinique.png",
+    "captures/G63_03_fenetre_semiologie.png",
+    "captures/G63_04_sous_onglet_semiologie_desktop.png",
+    "captures/G63_05_schema_semiologie.png",
+    "captures/G63_06_immunologie_desktop.png",
+    "captures/G63_07_semiologie_mobile_390.png",
+    "captures/G63_08_schema_semiologie_390.png",
+    "captures/G63_09_figure7_immunologie_390.png",
+    "captures/G63_10_figure5_NNT_390.png"
+   ],
+   "resultat": "passed"
+  },
+  "pareto": "Aucun bouton Pareto dans le sous-onglet sémiologie ; Pareto Immunologie ajouté (data-cover g63-s-immuno-cours) ; Pareto de la prise en charge, du suivi, de la physiologie et de la pharmacologie mis à jour (15 Pareto).",
+  "fichiers": "Sept fichiers admis seulement (G63_a…_d, _pop1, _pop2, glossary/g63.py) ; fenêtres g63-sm-* ajoutées à G63_pop2.html ; aucun _pop3 ; aucune image ajoutée."
+ },
+ "mention": "Contrôles de structure et de rendu : ils ne certifient ni l’exactitude médicale ni une validation par un médecin."
+}
