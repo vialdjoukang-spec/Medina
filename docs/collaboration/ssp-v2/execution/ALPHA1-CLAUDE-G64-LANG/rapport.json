@@ -10,7 +10,7 @@
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
  "date_debut": "2026-10-16T08:00:00Z",
- "date_fin": "2026-10-16T06:01:44Z",
+ "date_fin": "2026-10-16T06:02:05Z",
  "note_base": "Le manifeste indique source_snapshot_sha d1a488ad4f0031d7f2a4b47a0721e89a93475d77 ; le commit de base du worktree est 32416a2080e67537641040a81252dec0b3e6d137. Les sept fichiers de la leçon ont des empreintes SHA-256 identiques au manifeste.",
  "lecture": {
   "fichiers": [
@@ -68,7 +68,7 @@
  "synthese": {
   "nombre_propositions": 74,
   "renvois_medicaux": 27,
-  "observations_globales": 6,
+  "observations_globales": 7,
   "par_fichier": {
    "a": 18,
    "b": 10,
@@ -364,8 +364,14 @@
   {
    "id": "G64-LANG-OG-06",
    "objet": "Structure de l’onglet Sciences (hors périmètre linguistique)",
-   "constat": "Le bandeau .sci-bar compte quatre disciplines (Anatomie, Histologie, Physiologie, Biochimie) et aucun bouton « Sémiologie fondamentale et analytique ». À traiter par l’audit médical (G64-MED).",
-   "statut": "signale"
+   "constat": "Hors périmètre linguistique, MAJEUR, transmis à l'audit MED : le fichier G64_c.html compte 4 attributs data-s (Anatomie, Histologie, Physiologie, Biochimie), soit 4 disciplines réelles au lieu de 5, et aucun sous-onglet « Sémiologie fondamentale et analytique » en premier bouton .sci-bar.",
+   "statut": "transmis_MED"
+  },
+  {
+   "id": "G64-LANG-OG-07",
+   "objet": "Figures",
+   "constat": "La leçon compte une seule figure dessinée : la figure 1 de G64_b.html (SVG, schéma de la démarche en cinq encadrés). Aucune figure anatomique (G64_c.html ne contient que des pictogrammes d'icônes). Classement provisoire : SCHEMA_NON_ANATOMIQUE, origine du dessin ORIGINE_INCONNUE avec réserve. Le contrôle linguistique a porté sur le texte de la figure et de sa légende, pas sur leur provenance ; la vérification de provenance (image_clo_finder) est transmise à l'audit MED.",
+   "statut": "transmis_MED"
   }
  ],
  "lacunes": [
@@ -375,5 +381,6 @@
   "Les espaces insécables et l’usage « fibrillation atriale/auriculaire » sont différés par instruction.",
   "Pas de correcteur externe (Antidote, LanguageTool) : relecture par lecture intégrale, avec contrôles mécaniques sur l’unicité des extraits, les nombres et les balises."
  ],
- "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+ "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée",
+ "controle_obligations_cliniques": "Aucune proposition n'affaiblit une obligation clinique : les formulations impératives ou prescriptives de la leçon sont conservées ou renforcées en phrase active (ex. G64-LANG-b-02 : « le médecin surveille »)."
 }

@@ -9,7 +9,7 @@ Mission ALPHA1-CLAUDE-G64-LANG, branche `claude/alpha1/g64-lang-g1`, base `32416
 | Empreintes SHA-256 des 7 fichiers | conformes au manifeste |
 | Propositions locales (`propositions.json`) | 74, ancien unique vérifié mécaniquement |
 | Renvois médicaux | 27 |
-| Observations globales | 6 |
+| Observations globales | 7 |
 | Choix différés (non appliqués) | espaces insécables globales ; « fibrillation atriale/auriculaire » (aucune occurrence) |
 | Propositions, fichier chapters/G64/G64_a.html | 18 |
 | Propositions, fichier chapters/G64/G64_b.html | 10 |
@@ -76,7 +76,11 @@ Le détail (extrait ancien, nouveau, motif, catégorie) figure dans `proposition
 
 ## Rubrique 21 — Sémiologie fondamentale et analytique
 
-Sans objet pour un audit linguistique (mission -LANG). Constat structurel signalé en G64-LANG-OG-06.
+Sans objet pour un audit linguistique (mission -LANG). Hors périmètre linguistique, MAJEUR, transmis à l'audit MED : 4 disciplines réelles (data-s) au lieu de 5 et aucun sous-onglet Sémiologie (G64-LANG-OG-06).
+
+## Figures
+
+Une seule figure dessinée (figure 1, schéma SVG de la démarche, G64_b.html), classée SCHEMA_NON_ANATOMIQUE ; origine ORIGINE_INCONNUE avec réserve. Le contrôle a porté sur le texte de la figure, non sur sa provenance, transmise à l'audit MED (G64-LANG-OG-07).
 
 ## Lacunes
 
