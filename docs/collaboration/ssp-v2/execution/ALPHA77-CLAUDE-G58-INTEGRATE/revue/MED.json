@@ -1,0 +1,126 @@
+{
+ "actor": "Claude",
+ "code": "G58",
+ "kind": "MED",
+ "mission": "ALPHA77-CLAUDE-G58-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "reviewed_commit": "1c44a7036fc48cd1c4dcbd13f669326d602955e8",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/G58/G58_a.html": "ab85b9cbe6a06c0778d39b193fc662fd020e0bf751aee0ac793f2f5836b6e699",
+  "chapters/G58/G58_b.html": "dac8f40b07949ec96ff2cdc3f019a1cbdd4ddf20dfa36efdfb70a75a5ba9124d",
+  "chapters/G58/G58_c.html": "5b3b01c49d1213b89e0ef2ccc5c2b44c48209f7d4e83d83a69c7de6db7befa00",
+  "chapters/G58/G58_d.html": "9a95b52653e579e594b68fec55610323566a606a43b4a17013811989a22c80de",
+  "chapters/G58/G58_pop1.html": "9d862c7a0f28d908d51ebff67e3137d45afd12313a4960a9fbd5d5712020f7b0",
+  "chapters/G58/G58_pop2.html": "809975dabf4ed5363c482348d1264978a3b88efeb6c04ad4782651ad64f240e4",
+  "glossary/g58.py": "ec367748aa21184855c46fef75b9d437ca0d74e7d904f6c993e4e9b6bfb205b1"
+ },
+ "reviewed_files_sha256": {
+  "chapters/G58/G58_a.html": "1bb3668b2a19834a1f3097303f36788eeddcd2b797023e73e6b75c4537cbc64e",
+  "chapters/G58/G58_b.html": "3354760784aa5aabc30923b6496f747b40a4233affcee0863e264a6426931101",
+  "chapters/G58/G58_c.html": "46e903ab9778d8d830b772cffca2fa326dd95258c2c9e9c7bac26ef446d978d7",
+  "chapters/G58/G58_d.html": "58624b6d0a5855b17ff5c8a35848b3a0bd1c62b4283c0c4d513157ecb36b80be",
+  "chapters/G58/G58_pop1.html": "e36eb3ab9964f85d6b5708ef64b3a9fc3c954e12cfb51f69dc30cab0789e80b2",
+  "chapters/G58/G58_pop2.html": "f620abe44fb78cf431cd85091a42fb650a3dd7558ffaaa1cddff37484507dbe7",
+  "glossary/g58.py": "6495a17905f441d0dd5923c79779942e1c6c6f88bc7b4f56e255927613e0a9f1"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "scope": "Différence base 523832d9 → 6b5a896d (W) des sept fichiers, relue phrase par phrase (738 phrases nouvelles ou modifiées extraites par différence de texte), puis corrections de P (1c44a703). Contre-lecture des sources primaires pour chaque fait médical nouveau et des FI suisses pour chaque posologie ou indication nouvelle ; les passages inchangés depuis l’audit ALPHA1-CLAUDE-G58-MED n’ont pas été relus en totalité.",
+ "findings": [
+  {
+   "id": "P-MED-01",
+   "severite": "MAJEUR",
+   "status": "resolved",
+   "constat": "C13 : l’emploi de la doxycycline dans la neuroborréliose au-delà de l’indication suisse n’était pas nommé « hors indication » (protocole : tout emploi hors indication est signalé) ; la restriction pédiatrique omettait « menaçant le pronostic vital ».",
+   "fichier": "chapters/G58/G58_b.html",
+   "ancre": "g58-11, carte Neuroborréliose",
+   "verification": "FI Doxycyclin-Mepha (février 2024, GTIN 7680659520017, AmiKo, lue le 16.10.2026) : indication « Maladie de Lyme aux stades I et II … manifestations neurologiques passagères et limitées au visage » ; « Chez les patients pédiatriques âgés de 12 ans ou moins, la doxycycline ne doit être utilisée que dans les situations graves et dangereuses pour le pronostic vital … uniquement lorsqu’aucun autre traitement n’est disponible ». EFNS 2010 (Mygland, PMID 19930447, résumé relu) : « equally effective … confined to the peripheral nervous system, including meningitis (level A) », SNC : ceftriaxone IV 14 jours, doxycycline « contraindicated under 8 years of age ». Correction de P : emploi dans une radiculonévrite ou une méningite de Lyme déclaré hors indication en Suisse ; indication suisse de la ceftriaxone ajoutée (FI Rocephin®, juin 2025 : « maladie de Lyme disséminée (stades II et III) », 2 g au maximum une fois par jour pendant 14 jours).",
+   "evidence": [
+    "FI Doxycyclin-Mepha, rubriques Indications, Mises en garde (Administration chez l’enfant), Pharmacocinétique (enfants) ; AmiKo 16.10.2026.",
+    "FI Rocephin® (GTIN 7680446250011), Indications et Posologie ; AmiKo 16.10.2026.",
+    "PubMed 19930447, résumé.",
+    "Commit 1c44a703."
+   ]
+  },
+  {
+   "id": "P-MED-02",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "constat": "C15 : W avait repris « Environ 50 % » ; la revue de Ruffer écrit « bei etwa 50 % der Erkrankten » dans le texte (section PAN) et « Bis zu 50 % » dans son tableau 1.",
+   "fichier": "chapters/G58/G58_a.html",
+   "ancre": "g58-2, tableau, ligne Périartérite noueuse",
+   "verification": "Texte intégral Europe PMC PMC11965222 relu : « Klinische Zeichen einer peripheren Neuropathie treten bei etwa 50 % der Erkrankten auf, am häufigsten als MM » ; Tab. 1, colonne Neuropathie, Polyarteriitis nodosa : « Bis zu 50 % ». Correction de P : « Environ 50 % selon le texte, jusqu’à 50 % selon le tableau 1 (Ruffer, 2024) », fidèle aux deux.",
+   "evidence": [
+    "Europe PMC fullTextXML PMC11965222, 16.10.2026.",
+    "Commit 1c44a703."
+   ]
+  },
+  {
+   "id": "P-MED-03",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "constat": "C16 : retrait de « cinq » par W vérifié ; il reste « Cinq critères de l’ACNES, … infiltration diagnostique » dans le tableau des sources, formulation qui pouvait compter l’infiltration parmi les critères.",
+   "fichier": "chapters/G58/G58_c.html",
+   "ancre": "g58-sm-9, tableau des sources",
+   "verification": "Jacobs et coll., Hernia 2024 (PMC10891241, texte intégral relu) : la section Methods énumère cinq items (point douloureux < 2 cm dans les limites latérales du grand droit ; point uni- ou bilatéral ; perturbation somatosensorielle cutanée ; pincement ; signe de Carnett) ; le soulagement après injection d’anesthésique local figure dans l’introduction comme argument de soutien, non parmi les critères. La phrase de W (îlot 6), qui énumère les cinq items en quatre propositions sans les compter et présente l’infiltration à part, respecte la source ; la fenêtre g58-sm-carnett (« l’un des cinq critères ») est exacte. Correction de P du tableau des sources : « Critères publiés de l’ACNES (cinq items de la section « Methods », dont le signe de Carnett et le pincement) ; infiltration diagnostique (introduction) ».",
+   "evidence": [
+    "Europe PMC fullTextXML PMC10891241, 16.10.2026.",
+    "Commit 1c44a703."
+   ]
+  },
+  {
+   "id": "P-MED-04",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "constat": "Prophylaxie de la pneumocystose sous rituximab écrite « est recommandée au besoin » (d, encadré Avant d’immunosupprimer ; pop2, fenêtre g58-ritux).",
+   "fichier": "chapters/G58/G58_d.html ; chapters/G58/G58_pop2.html",
+   "verification": "FI MabThera® (décembre 2025, GTIN 7680543780176) : « Chez les patients avec vascularite associée aux ANCA, une prophylaxie contre la pneumonie à Pneumocystis jiroveci (PCP) peut être recommandée pendant et après le traitement par MabThera le cas échéant. » Correction de P : « peut être recommandée, le cas échéant, pendant et après le traitement ».",
+   "evidence": [
+    "FI MabThera®, Posologie (AAV), AmiKo 16.10.2026.",
+    "Commit 1c44a703."
+   ]
+  },
+  {
+   "id": "P-MED-05",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Contre-vérification des faits nouveaux de W sans écart.",
+   "verification": "Conformes : Koike 2022 (PMC8857368, texte intégral) — positivité des ANCA « approximately 80% in both MPA and GPA », EGPA 30–40 % à MPO prédominant, mortalité 10/40 (25 %) contre 80/450 (18 %) non significative chez MPA et GPA, sensibilité de la biopsie « no more than 50–60% », nerfs sural, péronier superficiel et radial superficiel parfois épargnés, muscle ou peau associés ; Bernard-Valnet 2019 (revmed.ch, texte intégral) — signes positifs et négatifs, voies épicritique et protopathique, Rydel-Seiffer 6,9/5,5 et 6,2/4,7, vascularite limitée au nerf avec biologie normale, lèpre importée, rééducation, conduite automobile, drapeaux rouges ; Shamoun 2026 (PMC13459936) — aggravation par inspiration, toux et rotation sans mécanisme, Tinel, Schepelmann, 5 médecins en moyenne, 84 % (55,8–100 %, 32 études, 620 patients) ; Jacobs Scand J Pain 2024 (PMID 39215453) et Bakermans 2026 (PMID 42544523) — SCT 19/20, 0/40, 95 % (75–99), 100 % (83–100). FI suisses relues pour les indications et posologies nouvelles : MabThera® (GPA/PAM, 375 mg/m² × 4, entretien ≥ 16 semaines, HBsAg et anti-HBc), Nucala® (GEPA récidivante ou résistante, 300 mg toutes les 4 semaines), Tavneos® (30 mg deux fois par jour, bilan hépatique et sérologie VHB), Endoxan® (mesna > 10 mg/kg = 400 mg/m², numération avant chaque administration, seuils 2500/µl et 50 000/µl), Imurek® (périartérite noueuse), Methotrexat-Mepha (aucune vascularite), Duloxetin-Mepha (douleur neuropathique diabétique), Saroten® (douleurs neuropathiques de l’adulte), Neurodol® (névralgie postherpétique, non recommandé avant 12 ans), Lyrica® (150–600 mg/j, < 30 mL/min, étourdissements 30,7 %, aOR 1,68, grossesse, < 18 ans), Neurontin® (neuropathie diabétique et postherpétique, opiacés, DRESS, grossesse, enfants), Prednisone Streuli® (5–60 mg/j, 8–10 jours, seuil 7,5 mg/j).",
+   "evidence": [
+    "Textes intégraux Europe PMC (PMC8857368, PMC13459936), revmed.ch, résumés PubMed, FI AmiKo, tous consultés le 16.10.2026 par P."
+   ]
+  }
+ ],
+ "lacunes_declarees": [
+  {
+   "objet": "Blaes 2015 (PMC4357592)",
+   "statut": "maintenue",
+   "detail": "Texte intégral inaccessible à P (Europe PMC : erreur 500 ; PMC : 429) ; les faits attribués à Blaes (15 % et 40 %, 80 % et 50 % de signes généraux, 10–40 % de formes symétriques) restent vérifiés par l’audit MED et par W."
+  },
+  {
+   "objet": "Medical Research Council 1976",
+   "statut": "maintenue",
+   "detail": "Non relu par P ; échelle et techniques reprises de l’audit MED et de W."
+  },
+  {
+   "objet": "Lacunes de W",
+   "statut": "maintenues",
+   "detail": "Venlafaxine, critères suisses d’aptitude à la conduite, recommandation OFSP contre le zona, recommandations suisses de société savante, textes intégraux EULAR, PNS et EFNS : non lus, déclarés dans le cours."
+  }
+ ],
+ "evidence": [
+  "Lecture différentielle base 523832d9 → 6b5a896d puis → 1c44a703 des sept fichiers (scripts hors dépôt, scratchpad g58p).",
+  "python3 test_v7.py --static G58 : OK (G58 mots 20389, fenêtres 54, quiz 9, pareto 13 ; build_medina.audit appelé, aucune abréviation non couverte).",
+  "python3 tests/audit_sciences.py --base 523832d9 --codes G58 : passed, aucune erreur (6 disciplines, 6 figures).",
+  "Validateur sémiologique (structure de tools/starter_codex.py:Repository.semiology, HTMLTree du dépôt) rejoué par P sur les fichiers finaux : bouton g58-tab-semio premier et sélectionné, 6 boutons data-s, panneau unique visible, titre exact, neuf sections non vides (g58-sm-1 à g58-sm-9), liens https, bloc clinique data-semiology-clinical=\"G58\" dans pA (G58_b.html).",
+  "Construction hors dépôt (MEDINA_OUT=scratchpad, build_front.py --fragment S08) et rendu Chromium 1194 à 1300 × 900 et 390 × 844 : 54 clés data-k G58 cliquées, aucune « Fiche absente », largeur de page égale à la fenêtre (aucun défilement horizontal) ; captures revue/captures/G58_P_*.png."
+ ],
+ "conclusion": "Aucun constat bloquant restant : P-MED-01 à 04 sont corrigés à 1c44a703 et vérifiés dans les FI suisses et les sources primaires ; les autres faits nouveaux de W sont conformes. Réserve non bloquante : Blaes et le guide du MRC non relus par P.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
