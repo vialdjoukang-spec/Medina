@@ -1,0 +1,471 @@
+﻿2026-10-16T05:49:59.5279356Z Current runner version: '2.337.0'
+2026-10-16T05:49:59.5296042Z ##[group]Runner Image Provisioner
+2026-10-16T05:49:59.5296666Z Hosted Compute Agent
+2026-10-16T05:49:59.5297003Z Version: 20261012.601
+2026-10-16T05:49:59.5297350Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+2026-10-16T05:49:59.5297806Z Build Date: 2026-10-12T17:48:21Z
+2026-10-16T05:49:59.5298224Z Worker ID: {56fc0afa-ab15-4368-b76e-b5af947885b1}
+2026-10-16T05:49:59.5298641Z Region: centralus
+2026-10-16T05:49:59.5298968Z Cloud: Azure
+2026-10-16T05:49:59.5299286Z ##[endgroup]
+2026-10-16T05:49:59.5300105Z ##[group]Operating System
+2026-10-16T05:49:59.5300503Z Ubuntu
+2026-10-16T05:49:59.5300834Z 24.04.5
+2026-10-16T05:49:59.5301138Z LTS
+2026-10-16T05:49:59.5301432Z ##[endgroup]
+2026-10-16T05:49:59.5301775Z ##[group]Runner Image
+2026-10-16T05:49:59.5302153Z Image: ubuntu-24.04
+2026-10-16T05:49:59.5302469Z Version: 20261012.334.1
+2026-10-16T05:49:59.5303225Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-16T05:49:59.5304086Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+2026-10-16T05:49:59.5304691Z ##[endgroup]
+2026-10-16T05:49:59.5305512Z ##[group]GITHUB_TOKEN Permissions
+2026-10-16T05:49:59.5306633Z Contents: read
+2026-10-16T05:49:59.5306952Z Metadata: read
+2026-10-16T05:49:59.5307372Z ##[endgroup]
+2026-10-16T05:49:59.5308587Z Secret source: Actions
+2026-10-16T05:49:59.5309162Z Cache mode: write
+2026-10-16T05:49:59.5309556Z Prepare workflow directory
+2026-10-16T05:49:59.6693701Z Prepare all required actions
+2026-10-16T05:49:59.6735678Z Getting action download info
+2026-10-16T05:49:59.8908221Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-10-16T05:50:00.0496178Z Download action repository 'actions/setup-python@v7' (SHA:5fda3b95a4ea91299a34e894583c3862153e4b97)
+2026-10-16T05:50:00.3306725Z Complete job name: garde-espace
+2026-10-16T05:50:00.3872115Z ##[group]Run actions/checkout@v7
+2026-10-16T05:50:00.3872566Z with:
+2026-10-16T05:50:00.3872809Z   fetch-depth: 0
+2026-10-16T05:50:00.3873093Z   ref: 0c9612315555f8e78dc8012b4c6764dfcab1ddc2
+2026-10-16T05:50:00.3873450Z   repository: vialdjoukang-spec/Medina
+2026-10-16T05:50:00.3875797Z   token: ***
+2026-10-16T05:50:00.3876045Z   ssh-strict: true
+2026-10-16T05:50:00.3876304Z   ssh-user: git
+2026-10-16T05:50:00.3876563Z   persist-credentials: true
+2026-10-16T05:50:00.3876843Z   clean: true
+2026-10-16T05:50:00.3877105Z   sparse-checkout-cone-mode: true
+2026-10-16T05:50:00.3877407Z   fetch-tags: false
+2026-10-16T05:50:00.3877668Z   show-progress: true
+2026-10-16T05:50:00.3877937Z   lfs: false
+2026-10-16T05:50:00.3878184Z   submodules: false
+2026-10-16T05:50:00.3878447Z   set-safe-directory: true
+2026-10-16T05:50:00.3878734Z   allow-unsafe-pr-checkout: false
+2026-10-16T05:50:00.3879117Z ##[endgroup]
+2026-10-16T05:50:00.4558302Z Syncing repository: vialdjoukang-spec/Medina
+2026-10-16T05:50:00.4559568Z ##[group]Getting Git version info
+2026-10-16T05:50:00.4559966Z Working directory is '/home/runner/work/Medina/Medina'
+2026-10-16T05:50:00.4560510Z [command]/usr/bin/git version
+2026-10-16T05:50:00.4654217Z git version 2.55.0
+2026-10-16T05:50:00.4661760Z ##[endgroup]
+2026-10-16T05:50:00.4668992Z Temporarily overriding HOME='/home/runner/work/_temp/3aa64686-ee69-4666-9fe3-c35eebacb492' before making global git config changes
+2026-10-16T05:50:00.4670432Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-16T05:50:00.4673613Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Medina/Medina
+2026-10-16T05:50:00.4737231Z Deleting the contents of '/home/runner/work/Medina/Medina'
+2026-10-16T05:50:00.4738532Z ##[group]Determining repository object format
+2026-10-16T05:50:00.4739668Z ##[endgroup]
+2026-10-16T05:50:00.4740161Z ##[group]Initializing the repository
+2026-10-16T05:50:00.4745021Z [command]/usr/bin/git init /home/runner/work/Medina/Medina
+2026-10-16T05:50:00.5029074Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-16T05:50:00.5030415Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-16T05:50:00.5031301Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-16T05:50:00.5031968Z hint: call:
+2026-10-16T05:50:00.5032328Z hint:
+2026-10-16T05:50:00.5032804Z hint: 	git config --global init.defaultBranch <name>
+2026-10-16T05:50:00.5033157Z hint:
+2026-10-16T05:50:00.5033492Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-16T05:50:00.5034038Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-16T05:50:00.5034455Z hint:
+2026-10-16T05:50:00.5034696Z hint: 	git branch -m <name>
+2026-10-16T05:50:00.5035135Z hint:
+2026-10-16T05:50:00.5036150Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-16T05:50:00.5036776Z Initialized empty Git repository in /home/runner/work/Medina/Medina/.git/
+2026-10-16T05:50:00.5039866Z [command]/usr/bin/git remote add origin https://github.com/vialdjoukang-spec/Medina
+2026-10-16T05:50:00.5294422Z ##[endgroup]
+2026-10-16T05:50:00.5295158Z ##[group]Disabling automatic garbage collection
+2026-10-16T05:50:00.5297539Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-16T05:50:00.5519201Z ##[endgroup]
+2026-10-16T05:50:00.5519862Z ##[group]Setting up auth
+2026-10-16T05:50:00.5520270Z Removing SSH command configuration
+2026-10-16T05:50:00.5523055Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-16T05:50:00.5552510Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-16T05:50:00.5853732Z Removing HTTP extra header
+2026-10-16T05:50:00.5858795Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-16T05:50:00.5887850Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-16T05:50:00.6067331Z Removing includeIf entries pointing to credentials config files
+2026-10-16T05:50:00.6071032Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-16T05:50:00.6099452Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-16T05:50:00.6269432Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-de773425-b9b8-43f4-8e4b-4091db0ea23d.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-16T05:50:00.6482522Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Medina/Medina/.git.path /home/runner/work/_temp/git-credentials-de773425-b9b8-43f4-8e4b-4091db0ea23d.config
+2026-10-16T05:50:00.6511106Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Medina/Medina/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-de773425-b9b8-43f4-8e4b-4091db0ea23d.config
+2026-10-16T05:50:00.7112783Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-de773425-b9b8-43f4-8e4b-4091db0ea23d.config
+2026-10-16T05:50:00.7737198Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-de773425-b9b8-43f4-8e4b-4091db0ea23d.config
+2026-10-16T05:50:00.8902564Z ##[endgroup]
+2026-10-16T05:50:00.8903251Z ##[group]Fetching the repository
+2026-10-16T05:50:00.8909875Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+2026-10-16T05:50:11.7267548Z From https://github.com/vialdjoukang-spec/Medina
+2026-10-16T05:50:11.7268133Z  * [new branch]        claude/affectionate-fermi-xpf9yz -> origin/claude/affectionate-fermi-xpf9yz
+2026-10-16T05:50:11.7268753Z  * [new branch]        claude/alpha1/c77-lang-g1 -> origin/claude/alpha1/c77-lang-g1
+2026-10-16T05:50:11.7269091Z  * [new branch]        claude/alpha1/c77-med-g1 -> origin/claude/alpha1/c77-med-g1
+2026-10-16T05:50:11.7269397Z  * [new branch]        claude/alpha1/d50-lang-g1 -> origin/claude/alpha1/d50-lang-g1
+2026-10-16T05:50:11.7269719Z  * [new branch]        claude/alpha1/d50-med-g1 -> origin/claude/alpha1/d50-med-g1
+2026-10-16T05:50:11.7270019Z  * [new branch]        claude/alpha1/e11-lang-g1 -> origin/claude/alpha1/e11-lang-g1
+2026-10-16T05:50:11.7270334Z  * [new branch]        claude/alpha1/e11-med-g1 -> origin/claude/alpha1/e11-med-g1
+2026-10-16T05:50:11.7270638Z  * [new branch]        claude/alpha1/e12-lang-g1 -> origin/claude/alpha1/e12-lang-g1
+2026-10-16T05:50:11.7270960Z  * [new branch]        claude/alpha1/e12-med-g1 -> origin/claude/alpha1/e12-med-g1
+2026-10-16T05:50:11.7271284Z  * [new branch]        claude/alpha1/g45-lang-g1 -> origin/claude/alpha1/g45-lang-g1
+2026-10-16T05:50:11.7271596Z  * [new branch]        claude/alpha1/g45-med-g1 -> origin/claude/alpha1/g45-med-g1
+2026-10-16T05:50:11.7271910Z  * [new branch]        claude/alpha1/i61-lang-g1 -> origin/claude/alpha1/i61-lang-g1
+2026-10-16T05:50:11.7272273Z  * [new branch]        claude/alpha1/i61-med-g1 -> origin/claude/alpha1/i61-med-g1
+2026-10-16T05:50:11.7272682Z  * [new branch]        claude/alpha1/image-clo-finder-g1 -> origin/claude/alpha1/image-clo-finder-g1
+2026-10-16T05:50:11.7273079Z  * [new branch]        claude/alpha1/n18-lang-g1 -> origin/claude/alpha1/n18-lang-g1
+2026-10-16T05:50:11.7273385Z  * [new branch]        claude/alpha1/n18-med-g1 -> origin/claude/alpha1/n18-med-g1
+2026-10-16T05:50:11.7273711Z  * [new branch]        claude/alpha77/c77-integrate-g1 -> origin/claude/alpha77/c77-integrate-g1
+2026-10-16T05:50:11.7274182Z  * [new branch]        claude/alpha77/d50-integrate-g1 -> origin/claude/alpha77/d50-integrate-g1
+2026-10-16T05:50:11.7274540Z  * [new branch]        claude/alpha77/e11-integrate-g1 -> origin/claude/alpha77/e11-integrate-g1
+2026-10-16T05:50:11.7274879Z  * [new branch]        claude/alpha77/e11-integrate-g2 -> origin/claude/alpha77/e11-integrate-g2
+2026-10-16T05:50:11.7275222Z  * [new branch]        claude/alpha77/e12-integrate-g1 -> origin/claude/alpha77/e12-integrate-g1
+2026-10-16T05:50:11.7276037Z  * [new branch]        claude/alpha77/g45-integrate-g1 -> origin/claude/alpha77/g45-integrate-g1
+2026-10-16T05:50:11.7276389Z  * [new branch]        claude/alpha77/gouvernance-01-g1 -> origin/claude/alpha77/gouvernance-01-g1
+2026-10-16T05:50:11.7276767Z  * [new branch]        claude/alpha77/i61-integrate-g1 -> origin/claude/alpha77/i61-integrate-g1
+2026-10-16T05:50:11.7277236Z  * [new branch]        claude/alpha77/i61-integrate-g2 -> origin/claude/alpha77/i61-integrate-g2
+2026-10-16T05:50:11.7277609Z  * [new branch]        claude/alpha77/n18-integrate-g1 -> origin/claude/alpha77/n18-integrate-g1
+2026-10-16T05:50:11.7277994Z  * [new branch]        claude/alpha77/n18-integrate-g2 -> origin/claude/alpha77/n18-integrate-g2
+2026-10-16T05:50:11.7278339Z  * [new branch]        claude/bold-edison-glmbv7 -> origin/claude/bold-edison-glmbv7
+2026-10-16T05:50:11.7278918Z  * [new branch]        claude/clonage-4-fragments-medina-18242941218339053507 -> origin/claude/clonage-4-fragments-medina-18242941218339053507
+2026-10-16T05:50:11.7279393Z  * [new branch]        claude/cool-bohr-kcji9o -> origin/claude/cool-bohr-kcji9o
+2026-10-16T05:50:11.7279702Z  * [new branch]        claude/frontend-garde-g1 -> origin/claude/frontend-garde-g1
+2026-10-16T05:50:11.7280007Z  * [new branch]        claude/frontend-poids-g1 -> origin/claude/frontend-poids-g1
+2026-10-16T05:50:11.7280310Z  * [new branch]        claude/great-cerf-uizsml -> origin/claude/great-cerf-uizsml
+2026-10-16T05:50:11.7280644Z  * [new branch]        claude/inspiring-maxwell-rjor0z -> origin/claude/inspiring-maxwell-rjor0z
+2026-10-16T05:50:11.7280991Z  * [new branch]        claude/keen-clarke-sat8mh -> origin/claude/keen-clarke-sat8mh
+2026-10-16T05:50:11.7281406Z  * [new branch]        claude/kind-hawking-7s3lse -> origin/claude/kind-hawking-7s3lse
+2026-10-16T05:50:11.7281736Z  * [new branch]        claude/loving-shannon-spwrhc -> origin/claude/loving-shannon-spwrhc
+2026-10-16T05:50:11.7282123Z  * [new branch]        claude/medina-alpha-integration-7dul4i -> origin/claude/medina-alpha-integration-7dul4i
+2026-10-16T05:50:11.7282543Z  * [new branch]        claude/mission-justification-20261007 -> origin/claude/mission-justification-20261007
+2026-10-16T05:50:11.7282942Z  * [new branch]        claude/review-i48-esc2024-20261007 -> origin/claude/review-i48-esc2024-20261007
+2026-10-16T05:50:11.7283328Z  * [new branch]        claude/review-medina-global-20261007 -> origin/claude/review-medina-global-20261007
+2026-10-16T05:50:11.7284191Z  * [new branch]        claude/vibrant-hamilton-ywf6ja -> origin/claude/vibrant-hamilton-ywf6ja
+2026-10-16T05:50:11.7284895Z  * [new branch]        claude/vibrant-johnson-7k5okg -> origin/claude/vibrant-johnson-7k5okg
+2026-10-16T05:50:11.7285538Z  * [new branch]        claude/vigilant-faraday-x8bwa8 -> origin/claude/vigilant-faraday-x8bwa8
+2026-10-16T05:50:11.7286050Z  * [new branch]        claude/vigilant-mayer-cevhwj -> origin/claude/vigilant-mayer-cevhwj
+2026-10-16T05:50:11.7286570Z  * [new branch]        codex/a41-corrections-20261008 -> origin/codex/a41-corrections-20261008
+2026-10-16T05:50:11.7287059Z  * [new branch]        codex/accueil-qcm-20260929 -> origin/codex/accueil-qcm-20260929
+2026-10-16T05:50:11.7287684Z  * [new branch]        codex/ajouter-options-de-generation-de-fragments -> origin/codex/ajouter-options-de-generation-de-fragments
+2026-10-16T05:50:11.7288217Z  * [new branch]        codex/alpha1/d64-lang-g1 -> origin/codex/alpha1/d64-lang-g1
+2026-10-16T05:50:11.7288673Z  * [new branch]        codex/alpha1/d64-med-g1 -> origin/codex/alpha1/d64-med-g1
+2026-10-16T05:50:11.7289262Z  * [new branch]        codex/alpha1/d69-lang-g1 -> origin/codex/alpha1/d69-lang-g1
+2026-10-16T05:50:11.7289688Z  * [new branch]        codex/alpha1/d69-med-g1 -> origin/codex/alpha1/d69-med-g1
+2026-10-16T05:50:11.7290148Z  * [new branch]        codex/alpha1/e05-lang-g1 -> origin/codex/alpha1/e05-lang-g1
+2026-10-16T05:50:11.7290614Z  * [new branch]        codex/alpha1/e05-med-g1 -> origin/codex/alpha1/e05-med-g1
+2026-10-16T05:50:11.7291091Z  * [new branch]        codex/alpha1/e10-lang-g1 -> origin/codex/alpha1/e10-lang-g1
+2026-10-16T05:50:11.7291559Z  * [new branch]        codex/alpha1/e10-med-g1 -> origin/codex/alpha1/e10-med-g1
+2026-10-16T05:50:11.7292016Z  * [new branch]        codex/alpha1/g01-lang-g1 -> origin/codex/alpha1/g01-lang-g1
+2026-10-16T05:50:11.7292467Z  * [new branch]        codex/alpha1/g01-med-g1 -> origin/codex/alpha1/g01-med-g1
+2026-10-16T05:50:11.7293008Z  * [new branch]        codex/alpha1/gouvernance-relais-03 -> origin/codex/alpha1/gouvernance-relais-03
+2026-10-16T05:50:11.7293566Z  * [new branch]        codex/alpha1/gouvernance-relais-04 -> origin/codex/alpha1/gouvernance-relais-04
+2026-10-16T05:50:11.7294029Z  * [new branch]        codex/alpha1/i63-lang-g1 -> origin/codex/alpha1/i63-lang-g1
+2026-10-16T05:50:11.7294481Z  * [new branch]        codex/alpha1/i63-med-g1 -> origin/codex/alpha1/i63-med-g1
+2026-10-16T05:50:11.7295014Z  * [new branch]        codex/alpha1/image-codex-finder-g1 -> origin/codex/alpha1/image-codex-finder-g1
+2026-10-16T05:50:11.7295712Z  * [new branch]        codex/alpha1/n17-lang-g1 -> origin/codex/alpha1/n17-lang-g1
+2026-10-16T05:50:11.7296175Z  * [new branch]        codex/alpha1/n17-med-g1 -> origin/codex/alpha1/n17-med-g1
+2026-10-16T05:50:11.7296730Z  * [new branch]        codex/alpha77/bootstrap-server-g3 -> origin/codex/alpha77/bootstrap-server-g3
+2026-10-16T05:50:11.7297198Z  * [new branch]        codex/alpha77/ci-api-g2 -> origin/codex/alpha77/ci-api-g2
+2026-10-16T05:50:11.7297694Z  * [new branch]        codex/alpha77/d64-integrate-g1 -> origin/codex/alpha77/d64-integrate-g1
+2026-10-16T05:50:11.7298211Z  * [new branch]        codex/alpha77/d69-integrate-g1 -> origin/codex/alpha77/d69-integrate-g1
+2026-10-16T05:50:11.7298955Z  * [new branch]        codex/alpha77/e05-integrate-g1 -> origin/codex/alpha77/e05-integrate-g1
+2026-10-16T05:50:11.7299302Z  * [new branch]        codex/alpha77/e10-integrate-g1 -> origin/codex/alpha77/e10-integrate-g1
+2026-10-16T05:50:11.7299641Z  * [new branch]        codex/alpha77/g01-integrate-g1 -> origin/codex/alpha77/g01-integrate-g1
+2026-10-16T05:50:11.7300012Z  * [new branch]        codex/alpha77/gouvernance-relais-05 -> origin/codex/alpha77/gouvernance-relais-05
+2026-10-16T05:50:11.7300404Z  * [new branch]        codex/alpha77/gouvernance-relais-06 -> origin/codex/alpha77/gouvernance-relais-06
+2026-10-16T05:50:11.7300800Z  * [new branch]        codex/alpha77/gouvernance-reprise-g2 -> origin/codex/alpha77/gouvernance-reprise-g2
+2026-10-16T05:50:11.7301172Z  * [new branch]        codex/alpha77/i63-integrate-g1 -> origin/codex/alpha77/i63-integrate-g1
+2026-10-16T05:50:11.7301515Z  * [new branch]        codex/alpha77/lot01-coord-g1 -> origin/codex/alpha77/lot01-coord-g1
+2026-10-16T05:50:11.7301864Z  * [new branch]        codex/alpha77/n17-integrate-g1 -> origin/codex/alpha77/n17-integrate-g1
+2026-10-16T05:50:11.7302203Z  * [new branch]        codex/alpha77/outil-jauge-g1 -> origin/codex/alpha77/outil-jauge-g1
+2026-10-16T05:50:11.7302575Z  * [new branch]        codex/alpha77/outil-publication-g1 -> origin/codex/alpha77/outil-publication-g1
+2026-10-16T05:50:11.7302956Z  * [new branch]        codex/alpha77/outil-publication-g2 -> origin/codex/alpha77/outil-publication-g2
+2026-10-16T05:50:11.7303323Z  * [new branch]        codex/alpha77/outil-sciences-g1 -> origin/codex/alpha77/outil-sciences-g1
+2026-10-16T05:50:11.7303675Z  * [new branch]        codex/alpha77/outil-starter-g1 -> origin/codex/alpha77/outil-starter-g1
+2026-10-16T05:50:11.7304017Z  * [new branch]        codex/alpha77/parite-veto-g1 -> origin/codex/alpha77/parite-veto-g1
+2026-10-16T05:50:11.7304939Z  * [new branch]        codex/alpha77/parite-veto-implementation-g1 -> origin/codex/alpha77/parite-veto-implementation-g1
+2026-10-16T05:50:11.7305784Z  * [new branch]        codex/assainissement-conversations-20261015 -> origin/codex/assainissement-conversations-20261015
+2026-10-16T05:50:11.7306229Z  * [new branch]        codex/assainissement-tetrade-20261015 -> origin/codex/assainissement-tetrade-20261015
+2026-10-16T05:50:11.7306671Z  * [new branch]        codex/b50-brouillon-avant-reprise-20261008 -> origin/codex/b50-brouillon-avant-reprise-20261008
+2026-10-16T05:50:11.7307085Z  * [new branch]        codex/categories-jauges-20261011 -> origin/codex/categories-jauges-20261011
+2026-10-16T05:50:11.7307423Z  * [new branch]        codex/cim10gm-captures  -> origin/codex/cim10gm-captures
+2026-10-16T05:50:11.7307728Z  * [new branch]        codex/cim10gm-cardiologie -> origin/codex/cim10gm-cardiologie
+2026-10-16T05:50:11.7308048Z  * [new branch]        codex/cim10gm-dermatologie -> origin/codex/cim10gm-dermatologie
+2026-10-16T05:50:11.7308370Z  * [new branch]        codex/cim10gm-diagnostic -> origin/codex/cim10gm-diagnostic
+2026-10-16T05:50:11.7308746Z  * [new branch]        codex/cim10gm-endocrinologie-metabolisme -> origin/codex/cim10gm-endocrinologie-metabolisme
+2026-10-16T05:50:11.7309188Z  * [new branch]        codex/cim10gm-ethique-droit-communication -> origin/codex/cim10gm-ethique-droit-communication
+2026-10-16T05:50:11.7309639Z  * [new branch]        codex/cim10gm-gastroenterologie-hepatologie -> origin/codex/cim10gm-gastroenterologie-hepatologie
+2026-10-16T05:50:11.7310063Z  * [new branch]        codex/cim10gm-gynecologie-senologie -> origin/codex/cim10gm-gynecologie-senologie
+2026-10-16T05:50:11.7310407Z  * [new branch]        codex/cim10gm-hematologie -> origin/codex/cim10gm-hematologie
+2026-10-16T05:50:11.7310994Z  * [new branch]        codex/cim10gm-immunologie-allergologie -> origin/codex/cim10gm-immunologie-allergologie
+2026-10-16T05:50:11.7311546Z  * [new branch]        codex/cim10gm-import-outils -> origin/codex/cim10gm-import-outils
+2026-10-16T05:50:11.7364339Z  * [new branch]        codex/cim10gm-infectiologie -> origin/codex/cim10gm-infectiologie
+2026-10-16T05:50:11.7365452Z  * [new branch]        codex/cim10gm-medecine-ages -> origin/codex/cim10gm-medecine-ages
+2026-10-16T05:50:11.7366085Z  * [new branch]        codex/cim10gm-nephrologie -> origin/codex/cim10gm-nephrologie
+2026-10-16T05:50:11.7366532Z  * [new branch]        codex/cim10gm-neurologie -> origin/codex/cim10gm-neurologie
+2026-10-16T05:50:11.7367108Z  * [new branch]        codex/cim10gm-obstetrique-neonatologie -> origin/codex/cim10gm-obstetrique-neonatologie
+2026-10-16T05:50:11.7367856Z  * [new branch]        codex/cim10gm-oncologie-genetique-palliatif -> origin/codex/cim10gm-oncologie-genetique-palliatif
+2026-10-16T05:50:11.7368467Z  * [new branch]        codex/cim10gm-ophtalmologie -> origin/codex/cim10gm-ophtalmologie
+2026-10-16T05:50:11.7369108Z  * [new branch]        codex/cim10gm-orl-medecine-bucco-dentaire -> origin/codex/cim10gm-orl-medecine-bucco-dentaire
+2026-10-16T05:50:11.7369698Z  * [new branch]        codex/cim10gm-pneumologie -> origin/codex/cim10gm-pneumologie
+2026-10-16T05:50:11.7370411Z  * [new branch]        codex/cim10gm-premier-recours-sante-publique -> origin/codex/cim10gm-premier-recours-sante-publique
+2026-10-16T05:50:11.7371090Z  * [new branch]        codex/cim10gm-rhumatologie-orthopedie -> origin/codex/cim10gm-rhumatologie-orthopedie
+2026-10-16T05:50:11.7371655Z  * [new branch]        codex/cim10gm-urgence-traumatologie-toxicologie -> origin/codex/cim10gm-urgence-traumatologie-toxicologie
+2026-10-16T05:50:11.7372088Z  * [new branch]        codex/cim10gm-urologie-andrologie -> origin/codex/cim10gm-urologie-andrologie
+2026-10-16T05:50:11.7372568Z  * [new branch]        codex/configurer-publication-github-pages-automatique -> origin/codex/configurer-publication-github-pages-automatique
+2026-10-16T05:50:11.7373018Z  * [new branch]        codex/cycle1-cloture-20261011 -> origin/codex/cycle1-cloture-20261011
+2026-10-16T05:50:11.7373487Z  * [new branch]        codex/cycle1-injection-20261012 -> origin/codex/cycle1-injection-20261012
+2026-10-16T05:50:11.7373875Z  * [new branch]        codex/cycle1-publication-fix-20261012 -> origin/codex/cycle1-publication-fix-20261012
+2026-10-16T05:50:11.7374246Z  * [new branch]        codex/cycle1-tetrade-20261011 -> origin/codex/cycle1-tetrade-20261011
+2026-10-16T05:50:11.7374616Z  * [new branch]        codex/cycle2-remise-claude-20261014 -> origin/codex/cycle2-remise-claude-20261014
+2026-10-16T05:50:11.7374991Z  * [new branch]        codex/cycles-20261014-0800 -> origin/codex/cycles-20261014-0800
+2026-10-16T05:50:11.7375509Z  * [new branch]        codex/decision-i83-20261008 -> origin/codex/decision-i83-20261008
+2026-10-16T05:50:11.7375897Z  * [new branch]        codex/etancheite-complete-des-fragments -> origin/codex/etancheite-complete-des-fragments
+2026-10-16T05:50:11.7376346Z  * [new branch]        codex/fragment-s01-accueil-navigo-20261005 -> origin/codex/fragment-s01-accueil-navigo-20261005
+2026-10-16T05:50:11.7376755Z  * [new branch]        codex/frontend-filtres-20261011 -> origin/codex/frontend-filtres-20261011
+2026-10-16T05:50:11.7377111Z  * [new branch]        codex/frontend-lecture-20261009 -> origin/codex/frontend-lecture-20261009
+2026-10-16T05:50:11.7377524Z  * [new branch]        codex/instruction-starter-nuit-77-2026-10-16 -> origin/codex/instruction-starter-nuit-77-2026-10-16
+2026-10-16T05:50:11.7377962Z  * [new branch]        codex/jauges-contours-blancs-20261011 -> origin/codex/jauges-contours-blancs-20261011
+2026-10-16T05:50:11.7378342Z  * [new branch]        codex/jauges-controle-20261012 -> origin/codex/jauges-controle-20261012
+2026-10-16T05:50:11.7378702Z  * [new branch]        codex/jauges-espacement-20261012 -> origin/codex/jauges-espacement-20261012
+2026-10-16T05:50:11.7379053Z  * [new branch]        codex/jauges-fiables-20261012 -> origin/codex/jauges-fiables-20261012
+2026-10-16T05:50:11.7379385Z  * [new branch]        codex/liens-cartes-20261012 -> origin/codex/liens-cartes-20261012
+2026-10-16T05:50:11.7379707Z  * [new branch]        codex/mechanismes-20261007 -> origin/codex/mechanismes-20261007
+2026-10-16T05:50:11.7380256Z  * [new branch]        codex/medina-betta-novo-extraction-20261015 -> origin/codex/medina-betta-novo-extraction-20261015
+2026-10-16T05:50:11.7380802Z  * [new branch]        codex/medina-chargeur-publication-20261015 -> origin/codex/medina-chargeur-publication-20261015
+2026-10-16T05:50:11.7381213Z  * [new branch]        codex/medina-jauges-chat-20261015 -> origin/codex/medina-jauges-chat-20261015
+2026-10-16T05:50:11.7381599Z  * [new branch]        codex/medina-moteur-souple-20261015 -> origin/codex/medina-moteur-souple-20261015
+2026-10-16T05:50:11.7382015Z  * [new branch]        codex/medina-reparations-novo12-20261015 -> origin/codex/medina-reparations-novo12-20261015
+2026-10-16T05:50:11.7382464Z  * [new branch]        codex/plan-audit-alpha-production-20261015 -> origin/codex/plan-audit-alpha-production-20261015
+2026-10-16T05:50:11.7382900Z  * [new branch]        codex/plan-tetrade-30-cycles-20261011 -> origin/codex/plan-tetrade-30-cycles-20261011
+2026-10-16T05:50:11.7383303Z  * [new branch]        codex/protocole-fragments-20261008 -> origin/codex/protocole-fragments-20261008
+2026-10-16T05:50:11.7383699Z  * [new branch]        codex/repartition-fragments-20261008 -> origin/codex/repartition-fragments-20261008
+2026-10-16T05:50:11.7384147Z  * [new branch]        codex/reprise-monographique-syphilis-20261008 -> origin/codex/reprise-monographique-syphilis-20261008
+2026-10-16T05:50:11.7384646Z  * [new branch]        codex/reprises-pertinentes-tetrade-20261015 -> origin/codex/reprises-pertinentes-tetrade-20261015
+2026-10-16T05:50:11.7385115Z  * [new branch]        codex/sciences-cs-fragments-20261007 -> origin/codex/sciences-cs-fragments-20261007
+2026-10-16T05:50:11.7385793Z  * [new branch]        codex/sentinella-release-20261008 -> origin/codex/sentinella-release-20261008
+2026-10-16T05:50:11.7386525Z  * [new branch]        codex/ssp-anticonflits-v2-20261015 -> origin/codex/ssp-anticonflits-v2-20261015
+2026-10-16T05:50:11.7386997Z  * [new branch]        codex/ssp-v2-gouvernance-activation-01 -> origin/codex/ssp-v2-gouvernance-activation-01
+2026-10-16T05:50:11.7387468Z  * [new branch]        codex/ssp-v2-gouvernance-attributions-02 -> origin/codex/ssp-v2-gouvernance-attributions-02
+2026-10-16T05:50:11.7387897Z  * [new branch]        codex/transition-cardio-20261008 -> origin/codex/transition-cardio-20261008
+2026-10-16T05:50:11.7388345Z  * [new branch]        course/cardiologie      -> origin/course/cardiologie
+2026-10-16T05:50:11.7388653Z  * [new branch]        course/gastro-hepatologie -> origin/course/gastro-hepatologie
+2026-10-16T05:50:11.7389113Z  * [new branch]        course/infectiologie    -> origin/course/infectiologie
+2026-10-16T05:50:11.7389406Z  * [new branch]        course/pneumologie      -> origin/course/pneumologie
+2026-10-16T05:50:11.7389741Z  * [new branch]        fix/scroll-stutter      -> origin/fix/scroll-stutter
+2026-10-16T05:50:11.7390061Z  * [new branch]        main                    -> origin/main
+2026-10-16T05:50:11.7390372Z  * [new branch]        medina/7-starter-codex  -> origin/medina/7-starter-codex
+2026-10-16T05:50:11.7390683Z  * [new branch]        medina/session-registry -> origin/medina/session-registry
+2026-10-16T05:50:11.7391645Z [command]/usr/bin/git rev-parse --verify --quiet 0c9612315555f8e78dc8012b4c6764dfcab1ddc2^{object}
+2026-10-16T05:50:11.7391936Z 0c9612315555f8e78dc8012b4c6764dfcab1ddc2
+2026-10-16T05:50:11.7392430Z ##[endgroup]
+2026-10-16T05:50:11.7392695Z ##[group]Determining the checkout info
+2026-10-16T05:50:11.7392954Z ##[endgroup]
+2026-10-16T05:50:11.7393120Z [command]/usr/bin/git sparse-checkout disable
+2026-10-16T05:50:11.7393578Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-16T05:50:11.7416352Z ##[group]Checking out the ref
+2026-10-16T05:50:11.7418994Z [command]/usr/bin/git checkout --progress --force 0c9612315555f8e78dc8012b4c6764dfcab1ddc2
+2026-10-16T05:50:12.7539173Z Updating files:  34% (3807/10894)
+2026-10-16T05:50:12.8011587Z Updating files:  35% (3813/10894)
+2026-10-16T05:50:12.8381847Z Updating files:  36% (3922/10894)
+2026-10-16T05:50:12.8417004Z Updating files:  37% (4031/10894)
+2026-10-16T05:50:12.8447751Z Updating files:  38% (4140/10894)
+2026-10-16T05:50:12.8527140Z Updating files:  39% (4249/10894)
+2026-10-16T05:50:12.8633904Z Updating files:  40% (4358/10894)
+2026-10-16T05:50:12.8937944Z Updating files:  41% (4467/10894)
+2026-10-16T05:50:12.9187103Z Updating files:  42% (4576/10894)
+2026-10-16T05:50:12.9415669Z Updating files:  43% (4685/10894)
+2026-10-16T05:50:12.9638607Z Updating files:  44% (4794/10894)
+2026-10-16T05:50:12.9956270Z Updating files:  45% (4903/10894)
+2026-10-16T05:50:13.0181865Z Updating files:  46% (5012/10894)
+2026-10-16T05:50:13.0460690Z Updating files:  47% (5121/10894)
+2026-10-16T05:50:13.0660031Z Updating files:  48% (5230/10894)
+2026-10-16T05:50:13.0977764Z Updating files:  49% (5339/10894)
+2026-10-16T05:50:13.1284584Z Updating files:  50% (5447/10894)
+2026-10-16T05:50:13.1641803Z Updating files:  51% (5556/10894)
+2026-10-16T05:50:13.1704354Z Updating files:  52% (5665/10894)
+2026-10-16T05:50:13.1813052Z Updating files:  53% (5774/10894)
+2026-10-16T05:50:13.1942066Z Updating files:  54% (5883/10894)
+2026-10-16T05:50:13.2033578Z Updating files:  55% (5992/10894)
+2026-10-16T05:50:13.2141686Z Updating files:  56% (6101/10894)
+2026-10-16T05:50:13.2291128Z Updating files:  57% (6210/10894)
+2026-10-16T05:50:13.2419826Z Updating files:  58% (6319/10894)
+2026-10-16T05:50:13.2508006Z Updating files:  59% (6428/10894)
+2026-10-16T05:50:13.2566303Z Updating files:  60% (6537/10894)
+2026-10-16T05:50:13.2652286Z Updating files:  61% (6646/10894)
+2026-10-16T05:50:13.2701139Z Updating files:  62% (6755/10894)
+2026-10-16T05:50:13.2751200Z Updating files:  63% (6864/10894)
+2026-10-16T05:50:13.2806980Z Updating files:  64% (6973/10894)
+2026-10-16T05:50:13.2987702Z Updating files:  65% (7082/10894)
+2026-10-16T05:50:13.3050549Z Updating files:  66% (7191/10894)
+2026-10-16T05:50:13.3117094Z Updating files:  67% (7299/10894)
+2026-10-16T05:50:13.3209906Z Updating files:  68% (7408/10894)
+2026-10-16T05:50:13.3309805Z Updating files:  69% (7517/10894)
+2026-10-16T05:50:13.3456778Z Updating files:  70% (7626/10894)
+2026-10-16T05:50:13.3576872Z Updating files:  71% (7735/10894)
+2026-10-16T05:50:13.3864384Z Updating files:  72% (7844/10894)
+2026-10-16T05:50:13.3960696Z Updating files:  73% (7953/10894)
+2026-10-16T05:50:13.4051471Z Updating files:  74% (8062/10894)
+2026-10-16T05:50:13.4146481Z Updating files:  75% (8171/10894)
+2026-10-16T05:50:13.4242324Z Updating files:  76% (8280/10894)
+2026-10-16T05:50:13.4909976Z Updating files:  77% (8389/10894)
+2026-10-16T05:50:13.5084142Z Updating files:  78% (8498/10894)
+2026-10-16T05:50:13.5306942Z Updating files:  79% (8607/10894)
+2026-10-16T05:50:13.5627975Z Updating files:  80% (8716/10894)
+2026-10-16T05:50:13.5834696Z Updating files:  81% (8825/10894)
+2026-10-16T05:50:13.5878421Z Updating files:  82% (8934/10894)
+2026-10-16T05:50:13.6033088Z Updating files:  83% (9043/10894)
+2026-10-16T05:50:13.6236522Z Updating files:  84% (9151/10894)
+2026-10-16T05:50:13.6689147Z Updating files:  85% (9260/10894)
+2026-10-16T05:50:13.7130586Z Updating files:  86% (9369/10894)
+2026-10-16T05:50:13.7535856Z Updating files:  87% (9478/10894)
+2026-10-16T05:50:13.7566560Z Updating files:  87% (9559/10894)
+2026-10-16T05:50:13.7716556Z Updating files:  88% (9587/10894)
+2026-10-16T05:50:13.7840690Z Updating files:  89% (9696/10894)
+2026-10-16T05:50:13.8195821Z Updating files:  90% (9805/10894)
+2026-10-16T05:50:13.8377664Z Updating files:  91% (9914/10894)
+2026-10-16T05:50:13.8734833Z Updating files:  92% (10023/10894)
+2026-10-16T05:50:13.8992529Z Updating files:  93% (10132/10894)
+2026-10-16T05:50:13.9073474Z Updating files:  94% (10241/10894)
+2026-10-16T05:50:13.9173884Z Updating files:  95% (10350/10894)
+2026-10-16T05:50:13.9226548Z Updating files:  96% (10459/10894)
+2026-10-16T05:50:13.9941610Z Updating files:  97% (10568/10894)
+2026-10-16T05:50:14.1143420Z Updating files:  98% (10677/10894)
+2026-10-16T05:50:14.1211982Z Updating files:  99% (10786/10894)
+2026-10-16T05:50:14.1212345Z Updating files: 100% (10894/10894)
+2026-10-16T05:50:14.1212492Z Updating files: 100% (10894/10894), done.
+2026-10-16T05:50:14.1405974Z Note: switching to '0c9612315555f8e78dc8012b4c6764dfcab1ddc2'.
+2026-10-16T05:50:14.1406389Z 
+2026-10-16T05:50:14.1406613Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-10-16T05:50:14.1407013Z changes and commit them, and you can discard any commits you make in this
+2026-10-16T05:50:14.1407395Z state without impacting any branches by switching back to a branch.
+2026-10-16T05:50:14.1407621Z 
+2026-10-16T05:50:14.1407775Z If you want to create a new branch to retain commits you create, you may
+2026-10-16T05:50:14.1408021Z do so (now or later) by using -c with the switch command. Example:
+2026-10-16T05:50:14.1408153Z 
+2026-10-16T05:50:14.1408217Z   git switch -c <new-branch-name>
+2026-10-16T05:50:14.1408308Z 
+2026-10-16T05:50:14.1408376Z Or undo this operation with:
+2026-10-16T05:50:14.1408460Z 
+2026-10-16T05:50:14.1408516Z   git switch -
+2026-10-16T05:50:14.1408584Z 
+2026-10-16T05:50:14.1408694Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-10-16T05:50:14.1408852Z 
+2026-10-16T05:50:14.1409005Z HEAD is now at 0c961231 Merge remote-tracking branch 'origin/main' into codex/alpha77/e05-integrate-g1
+2026-10-16T05:50:14.1508176Z ##[endgroup]
+2026-10-16T05:50:14.1550912Z [command]/usr/bin/git log -1 --format=%H
+2026-10-16T05:50:14.1577745Z 0c9612315555f8e78dc8012b4c6764dfcab1ddc2
+2026-10-16T05:50:14.2085385Z ##[group]Run actions/setup-python@v7
+2026-10-16T05:50:14.2085538Z with:
+2026-10-16T05:50:14.2085659Z   python-version: 3.x
+2026-10-16T05:50:14.2085781Z   check-latest: false
+2026-10-16T05:50:14.2087204Z   token: ***
+2026-10-16T05:50:14.2087320Z   update-environment: true
+2026-10-16T05:50:14.2087457Z   allow-prereleases: false
+2026-10-16T05:50:14.2087584Z   freethreaded: false
+2026-10-16T05:50:14.2087704Z ##[endgroup]
+2026-10-16T05:50:14.2831310Z ##[group]Installed versions
+2026-10-16T05:50:14.2919390Z Successfully set up CPython (3.14.8)
+2026-10-16T05:50:14.2919783Z ##[endgroup]
+2026-10-16T05:50:14.3569853Z ##[group]Run python3 -m unittest discover -s tests -p test_espace_fragments.py
+2026-10-16T05:50:14.3570206Z [36;1mpython3 -m unittest discover -s tests -p test_espace_fragments.py[0m
+2026-10-16T05:50:14.4094711Z shell: /usr/bin/bash -e {0}
+2026-10-16T05:50:14.4094864Z env:
+2026-10-16T05:50:14.4095020Z   pythonLocation: /opt/hostedtoolcache/Python/3.14.8/x64
+2026-10-16T05:50:14.4095402Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib/pkgconfig
+2026-10-16T05:50:14.4095619Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+2026-10-16T05:50:14.4095817Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+2026-10-16T05:50:14.4096015Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+2026-10-16T05:50:14.4096211Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib
+2026-10-16T05:50:14.4096379Z ##[endgroup]
+2026-10-16T05:50:18.8790271Z .............................
+2026-10-16T05:50:18.8790632Z ----------------------------------------------------------------------
+2026-10-16T05:50:18.8790832Z Ran 29 tests in 1.914s
+2026-10-16T05:50:18.8790922Z 
+2026-10-16T05:50:18.8805906Z OK
+2026-10-16T05:50:18.8963786Z ##[group]Run python3 -m unittest discover -s tests -p test_tetrade_cycle.py
+2026-10-16T05:50:18.8964080Z [36;1mpython3 -m unittest discover -s tests -p test_tetrade_cycle.py[0m
+2026-10-16T05:50:18.9014340Z shell: /usr/bin/bash -e {0}
+2026-10-16T05:50:18.9014476Z env:
+2026-10-16T05:50:18.9014619Z   pythonLocation: /opt/hostedtoolcache/Python/3.14.8/x64
+2026-10-16T05:50:18.9014844Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib/pkgconfig
+2026-10-16T05:50:18.9015060Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+2026-10-16T05:50:18.9015680Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+2026-10-16T05:50:18.9015985Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+2026-10-16T05:50:18.9016464Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib
+2026-10-16T05:50:18.9016723Z ##[endgroup]
+2026-10-16T05:50:18.9827163Z ...........................
+2026-10-16T05:50:18.9827466Z ----------------------------------------------------------------------
+2026-10-16T05:50:18.9827668Z Ran 27 tests in 0.018s
+2026-10-16T05:50:18.9827753Z 
+2026-10-16T05:50:18.9827801Z OK
+2026-10-16T05:50:18.9935212Z ##[group]Run python3 -m unittest tests.test_night_cycle tests.test_publication_manifest
+2026-10-16T05:50:18.9935717Z [36;1mpython3 -m unittest tests.test_night_cycle tests.test_publication_manifest[0m
+2026-10-16T05:50:18.9983923Z shell: /usr/bin/bash -e {0}
+2026-10-16T05:50:18.9984057Z env:
+2026-10-16T05:50:18.9984200Z   pythonLocation: /opt/hostedtoolcache/Python/3.14.8/x64
+2026-10-16T05:50:18.9984428Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib/pkgconfig
+2026-10-16T05:50:18.9984647Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+2026-10-16T05:50:18.9984845Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+2026-10-16T05:50:18.9985050Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+2026-10-16T05:50:18.9985245Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib
+2026-10-16T05:50:18.9985560Z ##[endgroup]
+2026-10-16T05:50:19.1006960Z ................................................
+2026-10-16T05:50:19.1007467Z ----------------------------------------------------------------------
+2026-10-16T05:50:19.1007831Z Ran 48 tests in 0.037s
+2026-10-16T05:50:19.1007972Z 
+2026-10-16T05:50:19.1008052Z OK
+2026-10-16T05:50:19.1138133Z ##[group]Run base="$BASE_SHA"
+2026-10-16T05:50:19.1138317Z [36;1mbase="$BASE_SHA"[0m
+2026-10-16T05:50:19.1138539Z [36;1mif test -z "$base" || test "$base" = 0000000000000000000000000000000000000000; then[0m
+2026-10-16T05:50:19.1138787Z [36;1m  base=$(git merge-base "$HEAD_SHA" origin/main)[0m
+2026-10-16T05:50:19.1138955Z [36;1mfi[0m
+2026-10-16T05:50:19.1139101Z [36;1mpython3 tools/espace.py garde "$base" "$HEAD_SHA"[0m
+2026-10-16T05:50:19.1190584Z shell: /usr/bin/bash -e {0}
+2026-10-16T05:50:19.1190720Z env:
+2026-10-16T05:50:19.1190867Z   pythonLocation: /opt/hostedtoolcache/Python/3.14.8/x64
+2026-10-16T05:50:19.1191100Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib/pkgconfig
+2026-10-16T05:50:19.1191322Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+2026-10-16T05:50:19.1191729Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+2026-10-16T05:50:19.1207292Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+2026-10-16T05:50:19.1207535Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib
+2026-10-16T05:50:19.1207737Z   BASE_SHA: 721b86af6bde93f751d8e785e1506b1836841b32
+2026-10-16T05:50:19.1207918Z   HEAD_SHA: 0c9612315555f8e78dc8012b4c6764dfcab1ddc2
+2026-10-16T05:50:19.1208072Z ##[endgroup]
+2026-10-16T05:50:21.4777253Z REFUS garde-espace : Publication Alpha : commit absent ou hors ascendance : 131536dcea744fd0571cf6ef787c3d5f63fd9871
+2026-10-16T05:50:21.4990117Z ##[error]Process completed with exit code 1.
+2026-10-16T05:50:21.5426612Z Post job cleanup.
+2026-10-16T05:50:21.5972361Z [command]/usr/bin/git version
+2026-10-16T05:50:21.6003674Z git version 2.55.0
+2026-10-16T05:50:21.6025394Z Temporarily overriding HOME='/home/runner/work/_temp/52ad145c-e3eb-41d8-8318-f37865843309' before making global git config changes
+2026-10-16T05:50:21.6026174Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-16T05:50:21.6029186Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Medina/Medina
+2026-10-16T05:50:21.6059270Z Removing SSH command configuration
+2026-10-16T05:50:21.6064774Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-16T05:50:21.6094598Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-16T05:50:21.6306428Z Removing HTTP extra header
+2026-10-16T05:50:21.6311921Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-16T05:50:21.6344926Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-16T05:50:21.6544103Z Removing includeIf entries pointing to credentials config files
+2026-10-16T05:50:21.6550429Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-16T05:50:21.6576716Z includeif.gitdir:/home/runner/work/Medina/Medina/.git.path
+2026-10-16T05:50:21.6577129Z includeif.gitdir:/home/runner/work/Medina/Medina/.git/worktrees/*.path
+2026-10-16T05:50:21.6577375Z includeif.gitdir:/github/workspace/.git.path
+2026-10-16T05:50:21.6577573Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-16T05:50:21.6582301Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Medina/Medina/.git.path
+2026-10-16T05:50:21.6604304Z /home/runner/work/_temp/git-credentials-de773425-b9b8-43f4-8e4b-4091db0ea23d.config
+2026-10-16T05:50:21.6612517Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Medina/Medina/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-de773425\-b9b8\-43f4\-8e4b\-4091db0ea23d\.config
+2026-10-16T05:50:21.6933933Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Medina/Medina/.git/worktrees/*.path
+2026-10-16T05:50:21.6953798Z /home/runner/work/_temp/git-credentials-de773425-b9b8-43f4-8e4b-4091db0ea23d.config
+2026-10-16T05:50:21.6960503Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Medina/Medina/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-de773425\-b9b8\-43f4\-8e4b\-4091db0ea23d\.config
+2026-10-16T05:50:21.7724233Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-10-16T05:50:21.7753516Z /github/runner_temp/git-credentials-de773425-b9b8-43f4-8e4b-4091db0ea23d.config
+2026-10-16T05:50:21.7768944Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-de773425\-b9b8\-43f4\-8e4b\-4091db0ea23d\.config
+2026-10-16T05:50:21.8014210Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-16T05:50:21.8042142Z /github/runner_temp/git-credentials-de773425-b9b8-43f4-8e4b-4091db0ea23d.config
+2026-10-16T05:50:21.8052659Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-de773425\-b9b8\-43f4\-8e4b\-4091db0ea23d\.config
+2026-10-16T05:50:21.8607091Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-16T05:50:21.8801462Z Removing credentials config '/home/runner/work/_temp/git-credentials-de773425-b9b8-43f4-8e4b-4091db0ea23d.config'
+2026-10-16T05:50:21.9005845Z Cleaning up orphan processes
