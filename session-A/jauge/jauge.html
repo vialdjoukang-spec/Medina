@@ -1,0 +1,89 @@
+<title>Jauge Alpha77</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout : une bande de 39 carreaux (2 leçons chacun), séparés par une fente de publication ; résumé au-dessus, liste des leçons en cours dessous. */
+:root{
+  --bg:#f3f8fb; --surface:#ffffff; --ink:#0e1a22; --muted:#4a5b66; --line:#c9d8e2;
+  --fill:#1f6f8b; --fill-soft:#bfe0ec; --pub:#2f8f4e; --pub-off:#d5dde3; --run:#c77c12;
+  --display:"Atkinson Hyperlegible Next","Atkinson Hyperlegible",system-ui,sans-serif;
+  --mono:ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0e161b; --surface:#152129; --ink:#e7f0f5; --muted:#9db0bc; --line:#2b3c47;
+  --fill:#5fb6d4; --fill-soft:#24495a; --pub:#5cc97f; --pub-off:#33434d; --run:#f0a53a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e161b; --surface:#152129; --ink:#e7f0f5; --muted:#9db0bc; --line:#2b3c47;
+  --fill:#5fb6d4; --fill-soft:#24495a; --pub:#5cc97f; --pub-off:#33434d; --run:#f0a53a; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--display);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px}
+main{max-width:980px;margin:0 auto;display:grid;gap:18px}
+h1{font-size:1.35rem;margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:4px 0 0;font-size:.92rem}
+.stats{display:flex;flex-wrap:wrap;gap:10px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-variant-numeric:tabular-nums}
+.stat b{font-size:1.15rem}
+.stat span{display:block;color:var(--muted);font-size:.78rem;letter-spacing:.04em;text-transform:uppercase}
+.band{display:flex;flex-wrap:wrap;align-items:center;row-gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px}
+.tile{width:26px;height:26px;border:2px solid var(--fill);border-radius:5px;background:var(--surface);position:relative;overflow:hidden;flex:none}
+.tile.half{background:linear-gradient(90deg,var(--fill) 50%,var(--surface) 50%)}
+.tile.full{background:var(--fill)}
+.tile.run{border-color:var(--run);box-shadow:0 0 0 2px color-mix(in srgb,var(--run) 30%,transparent)}
+.tile.prod{border-style:dashed}
+.slot{width:12px;height:26px;display:grid;place-items:center;flex:none}
+.slot i{width:4px;height:14px;border-radius:2px;background:var(--pub-off)}
+.slot.half i{background:linear-gradient(180deg,var(--pub) 50%,var(--pub-off) 50%)}
+.slot.on i{background:var(--pub)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;color:var(--muted);font-size:.85rem;align-items:center}
+.legend .tile,.legend .slot{transform:scale(.8)}
+.legend div{display:flex;align-items:center;gap:6px}
+table{width:100%;border-collapse:collapse;font-size:.88rem;background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-size:.75rem;text-transform:uppercase;letter-spacing:.05em}
+td.code{font-family:var(--mono)}
+.pill{display:inline-block;padding:1px 8px;border-radius:999px;font-size:.78rem;border:1px solid var(--line)}
+.pill.publie{color:var(--pub);border-color:var(--pub)}
+.pill.audite{color:var(--fill);border-color:var(--fill)}
+.pill.en_cours{color:var(--run);border-color:var(--run)}
+.wrap{overflow-x:auto}
+.empty{color:var(--muted)}
+</style>
+<main>
+  <header>
+    <h1>Campagne Alpha77 · 77 leçons Claude</h1>
+    <p class="sub" id="maj">En attente des données de la campagne…</p>
+  </header>
+  <section class="stats" id="stats" aria-label="Résumé"></section>
+  <section class="band" id="band" aria-label="Jauge : un carreau = 2 leçons auditées ; la fente qui suit = publication"></section>
+  <div class="legend">
+    <div><span class="tile full"></span>2 leçons auditées</div>
+    <div><span class="tile half"></span>1 leçon auditée</div>
+    <div><span class="tile run"></span>cycle en cours</div>
+    <div><span class="tile prod"></span>leçons à produire</div>
+    <div><span class="slot on"><i></i></span>publié (moitié : 1 sur 2)</div>
+  </div>
+  <div class="wrap"><table aria-label="Leçons du cycle en cours et prochaines">
+    <thead><tr><th>Cycle</th><th>Leçon</th><th>Session</th><th>État</th><th>PR</th></tr></thead>
+    <tbody id="rows"><tr><td colspan="5" class="empty">La liste apparaîtra dès la première mise à jour de l'automate.</td></tr></tbody>
+  </table></div>
+</main>
+<script>
+const LIB={a_faire:'À faire',en_cours:'En cours',audite:'Audité',publie:'Publié'};
+const done=p=>p==='audite'||p==='publie';
+function render(e){
+  const L=e.lecons||[];const band=document.getElementById('band');band.textContent='';
+  const nAud=L.filter(l=>done(l.phase)).length,nPub=L.filter(l=>l.phase==='publie').length,nRun=L.filter(l=>l.phase==='en_cours').length;
+  document.getElementById('maj').textContent='Mise à jour : '+(e.maj||'—')+(e.note?' · '+e.note:'');
+  document.getElementById('stats').innerHTML=[['Auditées',nAud+' / '+L.length],['Publiées',nPub+' / '+L.length],['En cours',nRun],['Carreaux pleins',Math.floor(nAud/2)+' / '+Math.ceil(L.length/2)]]
+    .map(([k,v])=>'<div class="stat"><b>'+v+'</b><span>'+k+'</span></div>').join('');
+  for(let i=0;i<L.length;i+=2){
+    const pair=L.slice(i,i+2),a=pair.filter(l=>done(l.phase)).length,p=pair.filter(l=>l.phase==='publie').length;
+    const t=document.createElement('span');t.className='tile'+(a===pair.length&&a?' full':a?' half':'')+(pair.some(l=>l.phase==='en_cours')?' run':'')+(pair.every(l=>l.type==='production')?' prod':'');
+    t.title='Cycle '+(i/2+1)+' : '+pair.map(l=>l.code+' ('+LIB[l.phase]+')').join(', ');band.append(t);
+    const s=document.createElement('span');s.className='slot'+(p===pair.length&&p?' on':p?' half':'');s.title='Publication du cycle '+(i/2+1)+' : '+p+'/'+pair.length;s.innerHTML='<i></i>';band.append(s);
+  }
+  const show=L.map((l,i)=>({...l,i})).filter(l=>l.phase==='en_cours'||(l.phase==='audite'));
+  document.getElementById('rows').innerHTML=show.length?show.map(l=>'<tr><td>'+(Math.floor(l.i/2)+1)+'</td><td class="code">'+l.code+'</td><td>'+(l.session||'—')+'</td><td><span class="pill '+l.phase+'">'+LIB[l.phase]+'</span></td><td>'+(l.pr?'<a href="https://github.com/vialdjoukang-spec/Medina/pull/'+l.pr+'" target="_blank" rel="noopener">#'+l.pr+'</a>':'—')+'</td></tr>').join(''):'<tr><td colspan="5" class="empty">Aucune leçon en cours ou en attente de fusion.</td></tr>';
+}
+(async()=>{const db=await claude.use('db');if(!db){document.getElementById('maj').textContent='Données indisponibles dans cette vue.';return}
+  db.doc('campagne/etat').onSnapshot(s=>{const d=s&&(s.data?s.data():s);if(d&&d.lecons)render(d)});})();
+</script>

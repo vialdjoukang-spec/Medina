@@ -1,0 +1,111 @@
+<title>Simulation Alpha77</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout : commandes en tête, la file des 38 leçons (registre) au centre, deux couloirs de sessions et le journal des événements dessous. */
+:root{--bg:#f3f8fb;--surface:#fff;--ink:#0e1a22;--muted:#4a5b66;--line:#c9d8e2;--a:#1f6f8b;--b:#b0571a;--ok:#2f8f4e;--warn:#b42318;--free:#e8eef2;
+ --font:"Atkinson Hyperlegible Next","Atkinson Hyperlegible",system-ui,sans-serif;--mono:ui-monospace,Menlo,monospace}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0e161b;--surface:#152129;--ink:#e7f0f5;--muted:#9db0bc;--line:#2b3c47;--a:#5fb6d4;--b:#f0a060;--ok:#5cc97f;--warn:#ff7b6b;--free:#203039;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e161b;--surface:#152129;--ink:#e7f0f5;--muted:#9db0bc;--line:#2b3c47;--a:#5fb6d4;--b:#f0a060;--ok:#5cc97f;--warn:#ff7b6b;--free:#203039;color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px}
+main{max-width:1040px;margin:0 auto;display:grid;gap:14px}
+h1{font-size:1.3rem;margin:0}p{margin:0;color:var(--muted);line-height:1.5;max-width:70ch}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+button{font:inherit;padding:7px 14px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+button:focus-visible{outline:2px solid var(--a);outline-offset:2px}
+button.primary{background:var(--a);color:var(--surface);border-color:var(--a)}
+label{color:var(--muted);font-size:.9rem;display:flex;gap:6px;align-items:center}
+section{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;display:grid;gap:10px;min-width:0}
+h2{font-size:1rem;margin:0}
+.reg{display:grid;grid-template-columns:repeat(auto-fill,minmax(54px,1fr));gap:6px}
+.cell{font-family:var(--mono);font-size:.8rem;text-align:center;padding:6px 0;border-radius:6px;background:var(--free);border:2px solid transparent;transition:background .3s,border-color .3s}
+.cell.A{border-color:var(--a)}.cell.B{border-color:var(--b)}
+.cell.doneA{background:var(--a);color:var(--surface)}.cell.doneB{background:var(--b);color:var(--surface)}
+.cell.merged{box-shadow:inset 0 -4px 0 var(--ok)}
+.cell.clash{animation:clash .6s}
+@keyframes clash{0%,100%{transform:none}25%{transform:translateX(-3px)}75%{transform:translateX(3px)}}
+@media (prefers-reduced-motion: reduce){.cell{transition:none}.cell.clash{animation:none;outline:2px solid var(--warn)}}
+.lanes{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:640px){.lanes{grid-template-columns:1fr}}
+.lane{display:grid;gap:8px;min-width:0}
+.agent{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;font-size:.9rem}
+.agent code{font-family:var(--mono)}
+.track{height:10px;background:var(--free);border-radius:5px;overflow:hidden}
+.track i{display:block;height:100%;width:0}
+.A .track i{background:var(--a)}.B .track i{background:var(--b)}
+.tag{font-size:.75rem;color:var(--muted)}
+.stats{display:flex;flex-wrap:wrap;gap:10px;font-variant-numeric:tabular-nums}
+.stat{border:1px solid var(--line);border-radius:8px;padding:6px 10px}
+.stat b{font-size:1.1rem}.stat span{display:block;font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.log{font-family:var(--mono);font-size:.8rem;max-height:220px;overflow:auto;display:grid;gap:2px}
+.log .refus{color:var(--warn)}.log .ok{color:var(--ok)}
+.legend{display:flex;flex-wrap:wrap;gap:12px;font-size:.82rem;color:var(--muted)}
+.legend span.sw{display:inline-block;width:14px;height:14px;border-radius:4px;vertical-align:-2px;margin-right:4px}
+</style>
+<main>
+<header style="display:grid;gap:6px"><h1>Simulation dynamique du chaînage Alpha77</h1>
+<p>Deux sessions parcourent les 38 leçons en sens inverse, deux agents par cycle. Chaque agent doit réserver sa leçon dans le registre avant d'écrire ; une réservation déjà prise est refusée et l'agent passe à la suivante. Simulation illustrative et stable : les durées sont fixées une fois pour toutes, chaque lancement rejoue le même déroulé.</p></header>
+<div class="bar">
+ <button class="primary" id="play" type="button">Lancer</button>
+ <button id="step" type="button">Pas à pas</button>
+ <button id="reset" type="button">Recommencer</button>
+ <label for="speed">Vitesse <input id="speed" type="range" min="1" max="8" value="4"></label>
+</div>
+<div class="stats" id="stats"></div>
+<section><h2>Registre central · 38 leçons</h2>
+ <div class="legend"><span><span class="sw" style="background:var(--free);border:2px solid var(--a)"></span>réservée par A</span><span><span class="sw" style="background:var(--free);border:2px solid var(--b)"></span>réservée par B</span><span><span class="sw" style="background:var(--a)"></span>PR prête (A)</span><span><span class="sw" style="background:var(--b)"></span>PR prête (B)</span><span><span class="sw" style="background:var(--free);box-shadow:inset 0 -4px 0 var(--ok)"></span>fusionnée par Vial</span></div>
+ <div class="reg" id="reg"></div></section>
+<div class="lanes">
+ <section class="lane A"><h2 style="color:var(--a)">Session A · G73 → D74</h2><div id="laneA"></div></section>
+ <section class="lane B"><h2 style="color:var(--b)">Session B · D74 → G73</h2><div id="laneB"></div></section>
+</div>
+<section><h2>Journal</h2><div class="log" id="log" aria-live="polite"></div></section>
+</main>
+<script>
+const CODES='G73 G80 G81 G82 G83 G90 G91 G92 G93 G94 G96 G97 G98 G99 I62 I65 I67 R26 R27 E34 E41 E45 E46 E50 E51 E52 E54 E56 E58 E59 N12 N27 C93 C94 C96 D71 D73 D74'.split(' ');
+let S,timer=null,seed=7;
+const rnd=()=>{seed=(seed*16807)%2147483647;return seed/2147483647};
+function init(){seed=20261016;
+ S={t:0,reg:{},done:{},merged:{},refus:0,log:[],
+  sess:{A:{order:CODES.slice(),ptr:0,refusSuite:0,stop:false,agents:[null,null]},
+        B:{order:CODES.slice().reverse(),ptr:0,refusSuite:0,stop:false,agents:[null,null]}}};
+ const reg=document.getElementById('reg');reg.innerHTML=CODES.map(c=>'<div class="cell" id="c-'+c+'">'+c+'</div>').join('');
+ document.getElementById('log').innerHTML='';render();}
+function log(m,cls){S.log.unshift({m:'t='+String(S.t).padStart(3,' ')+'  '+m,cls});S.log=S.log.slice(0,80);}
+function acquire(name,code){ // transaction atomique : une seule réservation gagne
+ if(S.reg[code]){S.refus++;const el=document.getElementById('c-'+code);el.classList.remove('clash');void el.offsetWidth;el.classList.add('clash');
+  log(name+' acquire '+code+' → refusé (déjà réservé par '+S.reg[code]+')','refus');return false}
+ S.reg[code]=name;log(name+' acquire '+code+' → accordé, branche claude/alpha77/'+code.toLowerCase()+'-integrate-g1','ok');return true}
+function nextFor(name){const s=S.sess[name];
+ while(s.ptr<s.order.length&&!s.stop){const c=s.order[s.ptr++];
+  if(acquire(name,c)){s.refusSuite=0;return c}
+  if(++s.refusSuite>=2){s.stop=true;log(name+' : deux refus de suite, les files se sont rejointes → arrêt de la session');}}
+ if(s.ptr>=s.order.length)s.stop=true;return null}
+function tick(){S.t++;
+ for(const name of ['A','B']){const s=S.sess[name];
+  // un cycle = deux agents ; le suivant démarre quand les deux ont fini
+  if(s.agents.every(a=>!a)&&!s.stop){for(let i=0;i<2;i++){const c=nextFor(name);if(c)s.agents[i]={code:c,p:0,d:6+Math.floor(rnd()*10)}}}
+  s.agents.forEach((a,i)=>{if(!a)return;a.p++;if(a.p>=a.d){S.done[a.code]=name;log(name+' '+a.code+' : audit + intégration finis, PR ouverte, chemins disjoints','ok');s.agents[i]=null}})}
+ // Vial fusionne les PR prêtes, dans n'importe quel ordre : aucun conflit possible
+ const pending=Object.keys(S.done).filter(c=>!S.merged[c]);
+ if(pending.length&&rnd()<.35){const c=pending[Math.floor(rnd()*pending.length)];S.merged[c]=1;log('Vial fusionne '+c+' (merge commit) sans conflit','ok')}
+ render();
+ const fini=['A','B'].every(n=>S.sess[n].stop&&S.sess[n].agents.every(a=>!a))&&Object.keys(S.done).length===Object.keys(S.merged).length;
+ if(fini){stop();log('Campagne terminée : '+Object.keys(S.done).length+' leçons, 0 collision, '+S.refus+' réservations refusées','ok');render()}}
+function render(){
+ for(const c of CODES){const el=document.getElementById('c-'+c);const r=S.reg[c],d=S.done[c];
+  el.className='cell'+(el.classList.contains('clash')?' clash':'')+(r&&!d?' '+r:'')+(d?' done'+d:'')+(S.merged[c]?' merged':'')}
+ for(const name of ['A','B']){document.getElementById('lane'+name).innerHTML=S.sess[name].agents.map((a,i)=>
+  '<div class="agent"><span class="tag">agent '+(i+1)+'</span><div class="track"><i style="width:'+(a?Math.round(100*a.p/a.d):0)+'%"></i></div><code>'+(a?a.code:(S.sess[name].stop?'arrêt':'—'))+'</code></div>').join('')}
+ const nd=Object.keys(S.done).length,nm=Object.keys(S.merged).length,dA=Object.values(S.done).filter(x=>x==='A').length;
+ document.getElementById('stats').innerHTML=[['PR prêtes',nd+' / 38'],['Fusionnées',nm],['Faites par A / B',dA+' / '+(nd-dA)],['Réservations refusées',S.refus],['Collisions',0]]
+  .map(([k,v])=>'<div class="stat"><b>'+v+'</b><span>'+k+'</span></div>').join('');
+ document.getElementById('log').innerHTML=S.log.map(l=>'<div class="'+(l.cls||'')+'">'+l.m+'</div>').join('')}
+function speed(){return 900/Number(document.getElementById('speed').value)}
+function play(){if(timer)return stop();timer=setInterval(tick,speed());document.getElementById('play').textContent='Pause'}
+function stop(){clearInterval(timer);timer=null;document.getElementById('play').textContent='Lancer'}
+document.getElementById('play').onclick=play;
+document.getElementById('step').onclick=()=>{stop();tick()};
+document.getElementById('reset').onclick=()=>{stop();init()};
+document.getElementById('speed').oninput=()=>{if(timer){stop();play()}};
+init();for(let i=0;i<12;i++)tick();
+</script>
