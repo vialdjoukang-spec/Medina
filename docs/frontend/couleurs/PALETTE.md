@@ -9,7 +9,10 @@
 | `docs/frontend/couleurs/recuit.py` | Recuit simulé des 23 emplacements (bande de luminosité, contraintes du validateur, écart toutes paires, cibles sémantiques) ; `--emettre` produit les constantes à reporter dans `palette.py`. Non exécuté au build. |
 | `docs/frontend/couleurs/sonde.py` | Sonde du rendu réel (Chromium) : part de surface en gris bleuâtre, bordures et ombres bleuâtres, texte bleu saturé de l’interface. |
 | `docs/frontend/couleurs/validation.txt` | Sortie brute du validateur (`palette.py --valider --rapport …`). |
-| `build_front.py` | Une ligne : injection de `medina-couleurs-premium` après `medina-finition-premium` (préfixe de spécificité premium). |
+| `build_front.py` | Une ligne : injection de `medina-couleurs-premium` après `medina-finition-premium` (préfixe de spécificité premium) ; une ligne : script `medina-encre-lecture` en fin de document. |
+| `engine/encre_lecture.js` | Contrôle « Encre : Noir \| Bleu » de la barre d’outils des leçons ; choix mémorisé (`localStorage`, clé `medina.encre`, try/catch) et porté par `html[data-medina-encre]`. |
+| `engine/tetrade_cycle.css` | Couleurs fixées des cours du cycle, désormais lues sur les tokens des cours (`--ink-cours`, `--titre-cours`, `--lesson-term`, `--cours-fond`), avec replis historiques. |
+| `engine/medina_course.css` | Rouge des titres lu sur `--titre-cours` ; mise en forme du contrôle d’encre. |
 | `build_index.py` | Couche injectée en dernier sur le portail ; cartes de spécialité branchées sur `--sp-<id>`. |
 | `engine/category_organisation.css` | Couche « survol » : valeurs littérales remplacées par les tokens ; contour de focus des leçons sans transition (indicateur immédiat). |
 
@@ -62,6 +65,50 @@ Contrôles du thème (`palette.py`, section « Vision photopique ») : surfaces 
 
 Point signalé : la cardiologie reçoit le **carmin** (357,5°, `#b32a6a`) et l’hématologie la **garance** (15,7°, `#ce3e55`) ; l’échange des deux fait échouer la séparation daltonienne de l’ordre de l’Accueil (ΔE 0,9), il n’est donc pas appliqué.
 
+## Contraste renforcé et cours sur blanc immaculé — demandes de Vial (16 octobre 2026)
+
+> Caractères plus contrastés partout pour une identification évidente ; les cours sur fond blanc immaculé, en encre noire ou bleue au choix ; les termes interactifs en vert fluorescent souligné en interrompu très fin.
+
+**Interface (portail, accueils de fragment, catégories, barres).** Les trois encres neutres sont plus foncées et chaque rôle a son seuil, vérifié sur la surface, le papier et l’encart :
+
+| Encre | Avant | Après | Contraste après (surface / papier / encart) | Seuil |
+|---|---|---|---|---|
+| `--ink-1` primaire, titres | `#161a1d` (L 0,215) | `#0e1215` (L 0,180) | 18,8 / 18,2 / 17,2:1 | ≥ 12:1 |
+| `--ink-2` courant, secondaire | `#383e42` (L 0,360) | `#292f32` (L 0,300) | 13,6 / 13,1 / 12,4:1 | ≥ 7:1 |
+| `--ink-3` atténué | `#585f63` (L 0,480) | `#4d5357` (L 0,440) | 7,8 / 7,5 / 7,1:1 | ≥ 4,5:1 |
+| `--cat-NN-ink` encres de teinte | L 0,430 | L 0,400 | 7,5 à 9,4:1 sur fond teinté et sélection | ≥ 4,5:1 |
+| `--status-*` statuts | L 0,47–0,49 | L 0,42–0,44 | 7,1 à 8,1:1 | ≥ 4,5:1 |
+
+Les variables de la couche de finition (`--mp-ink`, `--mp-text`, `--mp-muted`) sont ramenées sur ces encres. Graisses : titres de carte, de catégorie et d’accueil en Atkinson Hyperlegible Next 700 ; libellés (sur-titres, codes, filtres, statuts, menus, onglets et outils de la leçon) en 600 ; texte courant en 400 (faces embarquées 400, 600, 700, aucune graisse synthétisée). Mesure du rendu (Chromium, 1 280 px, tous les textes visibles) : contraste minimal **7,1:1** sur l’accueil S08 et sur une page de catégorie, médiane 14:1.
+
+**Cours (contenu de la leçon).** `.mc`, îlots, onglets de contenu, sommaire, tableaux, encadrés (clé, piège, alerte), quiz, fenêtres explicatives `.mc-dlg` et mode Livre sont posés sur `--cours-fond` (`#ffffff`), sans teinte ni motif, même sous un thème (préfixe d’identifiant). Les encadrés gardent leur filet gauche de couleur, plus leur fond teinté. Le texte principal suit le choix du lecteur :
+
+| Rôle | Token | Valeur | OKLCH | Contraste sur `#ffffff` |
+|---|---|---|---|---|
+| Encre « Noir » (défaut) | `--ink-cours-noir` | `#111111` | 0,178 0 — | 18,9:1 |
+| Encre « Bleu » (marine) | `--ink-cours-bleu` | `#152a52` | 0,290 0,078 262 | 14,1:1 |
+| Secondaire « Noir » (légendes, sources) | `--ink-cours-noir-2` | `#424242` | 0,380 0 — | 10,1:1 |
+| Secondaire « Bleu » | `--ink-cours-bleu-2` | `#33476d` | 0,400 0,070 262 | 9,3:1 |
+| Titres et numéros rouges soulignés | `--titre-cours` → `--lesson-title` | `#b3261e` | 0,501 0,178 28,7 | 6,5:1 |
+| Abréviations à clé, liens | `--lesson-term` | `#9b3900` | 0,477 0,142 42,6 | 7,1:1 |
+
+Le contrôle « Encre : Noir | Bleu » (`engine/encre_lecture.js`) s’insère dans la barre d’outils après « Police / Police Taille » : deux boutons natifs à `aria-pressed`, groupe nommé « Encre du texte du cours », choix mémorisé dans `localStorage` (clé `medina.encre`, lecture et écriture sous try/catch, défaut Noir sans stockage) et appliqué par `html[data-medina-encre="noir|bleu"]` (`--ink-cours` et `--ink-cours-2` basculent). Il vaut pour toutes les leçons et fenêtres du fragment, et se synchronise entre onglets du navigateur.
+
+**Termes interactifs.** Un vert fluorescent pur (`#39ff14`, 1,4:1 sur blanc) est illisible comme texte : le texte reste en vert franc, la fluorescence ne porte que le filet et le surlignage.
+
+| Élément | Token | Valeur | Contraste |
+|---|---|---|---|
+| Texte du terme (`.mc-w[data-k]`, cours et fenêtres), graisse 600 | `--terme` | `#1a7426` (0,490 0,140 145) | 5,9:1 sur blanc ; 5,5:1 sur surlignage |
+| Soulignement interrompu (`dashed`, 1 px, décalage 3 px) | `--terme-trait` | `#27fd31` (0,866 0,280 143) | décor non textuel |
+| Survol et focus : surlignage derrière le mot | `--terme-surlignage` | `#e0ffdc` (0,968 0,055 142) | — |
+| Survol et focus : texte | `--terme-survol` | `#075a22` (0,410 0,115 148) | 7,8:1 sur surlignage |
+| Focus clavier : anneau 2 px, décalage 2 px | `--terme-focus` | `#075a22` | 8,4:1 |
+| Mot de justification ou de contentieux (`button[data-justification]`) | `--terme-justif` | `#0a553d` (0,400 0,080 165) | 8,8:1 ; pointillé fin historique, distinct du terme |
+
+Les abréviations à clé (`.mc-ab`) restent en orange brûlé pointillé, les liens en orange brûlé souligné : aucun autre mot vert ne se confond avec un terme.
+
+**Contrôles (16 octobre 2026).** `palette.py --ecrire --doc --valider` : 0 échec (contrastes par rôle, gamut, contrôles photopiques et des cours) ; séquences contractuelles du validateur dataviz inchangées (ALL CHECKS PASS). `tools/front_garde.py` S08 (G45) et S05 : 0 échec à 390 et 1 280 px. `node tests/verify_categories.cjs` (S05, S08) : OK, 244 contrôles. `python3 -m unittest discover -s tests` : 813 tests OK. Rendu mesuré (tous les textes visibles, 1 280 px) : portail ≥ 7,5:1, accueil S08 ≥ 7,1:1, catégorie ≥ 7,5:1 ; leçon G45 : texte principal 18,9:1 (Noir) ou 14,1:1 (Bleu), minimum 5,9:1 (termes) ; fenêtre ≥ 6,5:1 (titre rouge) ; aucun défilement horizontal à 390 px.
+
 ### Cartes compactes (16 octobre 2026)
 
 Cartes de leçon (page de catégorie, recherche, « Les cours à explorer ») et cartes de catégorie : la hauteur suit le contenu (titre complet, code, statut « Lire le cours » / « En préparation », « Entités détaillées », étoile d’or, jauges), sans `min-height` ; seule la largeur diminue : 1 colonne sous 560 px, 2 jusqu’à 1 023 px, 3 de 1 024 à 1 599 px, 4 au-delà (« Les cours à explorer » reste à 3). Les jauges des cartes de catégorie tiennent sur deux lignes (libellé et compte, puis barre et pourcentage) ; l’étoile d’or est décalée sans agrandir la ligne. Règles : `engine/couleurs_premium.css`, section « Cartes compactes ».
@@ -80,10 +127,10 @@ De jour, la vision est **photopique** : les cônes L, M et S travaillent, les b�
 | Rôle | `L` OKLCH | Écart mesuré |
 |---|---|---|
 | Repères des 23 emplacements (`--cat-NN`, `--sp-<id>`) : filets, pastilles, icônes | 0,522 à 0,578 | 0,058 (avant : 0,151) |
-| Encres de teinte (`--cat-NN-ink`) : texte en couleur | 0,430 | 0,002 |
+| Encres de teinte (`--cat-NN-ink`) : texte en couleur | 0,400 (0,430 avant le contraste renforcé) | 0,002 |
 | Fonds teintés (`--cat-NN-tint`) | 0,975 ± 0,003 (suivi à 1/10 du repère) | 0,008 |
 | Sélections (`--cat-NN-sel`) | 0,945 ± 0,003 | 0,007 |
-| Statuts (`--status-ok`, `-prep`, `-prov`) | 0,47 à 0,49 | 0,02 |
+| Statuts (`--status-ok`, `-prep`, `-prov`) | 0,42 à 0,44 (0,47 à 0,49 avant) | 0,02 |
 
   L’ancienne palette étageait les repères sur trois paliers (0,46 / 0,535 / 0,61) : à l’Accueil, le bleu de Prusse de l’urologie pesait visiblement plus lourd que le corail de la cardiologie. Les repères sont désormais dans une bande de ± 0,03 : aucune spécialité ne « crie » plus qu’une autre.
 - **Pas de bleu saturé pour le texte ni pour un détail fin.** Les cônes S sont rares (environ 5 %) et absents de la fovéola : un texte bleu saturé paraît flou et vibre. Le texte courant de l’interface (`--ink-1/2/3`) et le statut « En préparation » sont achromatiques (C ≤ 0,006, contre 0,018 à 0,024 en bleu ardoise auparavant). Les encres des teintes bleues à violettes (215° à 300°) sont plafonnées à C 0,080 : leur lisibilité repose sur le contraste de luminance (voies L + M), toujours ≥ 4,5:1.
@@ -167,16 +214,17 @@ Spécialités, avant et après (l’identité sémantique est conservée pour la
 
 ## Règles d’emploi
 
-- **Encre / repère / fond.** Chaque teinte existe en quatre pas : repère (`--cat-NN`, filets, pastilles, icônes ; ≥ 3:1), encre (`-ink`, L 0,43, texte ≥ 4,5:1), fond teinté (`-tint`, L 0,975, C 0,015) et sélection (`-sel`, L 0,945, C 0,028). Aucune grande surface saturée.
+- **Encre / repère / fond.** Chaque teinte existe en quatre pas : repère (`--cat-NN`, filets, pastilles, icônes ; ≥ 3:1), encre (`-ink`, L 0,40, texte ≥ 7:1 sur son fond), fond teinté (`-tint`, L 0,975, C 0,015) et sélection (`-sel`, L 0,945, C 0,028). Aucune grande surface saturée.
 - **Accent du contexte.** `--accent`, `--accent-ink`, `--accent-tint`, `--accent-sel` valent la marque sur l’Accueil et la teinte de la spécialité dans un fragment (`html[data-medina-fragment="S08"]{--accent:var(--sp-s08)…}`). Les variables historiques (`--atlas-accent`, `--mp-*`, `--mz-*`, `--p-*`, `--bg`, `--ink`…) sont ramenées sur ces tokens.
 - **Catégories.** `engine/atlas_v2.js` pose `--cat` en style en ligne (20 couleurs vives par rang). La couche les remappe par sélecteur d’attribut (`[style*="--cat: #C2185B" i]` → `--cat-01`) avec `!important` : le rang *n* prend l’emplacement *n*. Au-delà du 23ᵉ rang (S08 : 29 catégories, S10 : 30, T1 : 25, T3 : 26), les rangs 24 à 32 reçoivent des tokens de débordement `--cat-24` … `--cat-32` : la teinte d’angle d’or posée par atlas_v2.js, ramenée en OKLCH dans la même bande de luminosité ; ces rangs, les moins prioritaires pour l’Examen fédéral, ne sont pas couverts par le validateur (aucune palette de plus de 23 teintes ne peut l’être) et restent portés par leur numéro et leur intitulé.
 - **Statuts** (`--status-ok`, `--status-prep`, `--status-prov`) : toujours avec leur libellé et une forme (disque plein « Lire le cours », cercle vide « En préparation », demi-disque sur la mention de publication provisoire) ; jamais la couleur seule.
 - **Jauges** : rampe séquentielle à une teinte (marque, 158,4°), piste `--gauge-track` cernée de `--gauge-edge` (≥ 3:1), remplissage dégradé `--gauge-fill-top` → `--gauge-fill` (5,7:1 sur la piste).
 - **Étoile d’or** : facettes conservées, contour `--star-edge` (5,7:1) ; bandeau PROFILES et bouton Pareto en aplat `--gold-100`, texte `--gold-800` (8,5:1).
-- **Leçon** : les rôles sémantiques fixés par Vial sont conservés à l’identique (`--lesson-*` : bleu marine du cycle, titres rouges soulignés, termes orange foncé, mot vert, abréviations). Point signalé à Vial : le corps des cours du cycle (`#0f2c66`, bleu marine, C ≈ 0,11) est un bleu assez saturé ; son contraste de luminance (13,4:1) garantit la lisibilité, mais un marine désaturé (C ≈ 0,06) serait plus fidèle à la règle photopique. Non modifié ici : c’est une règle de Vial portée par `engine/tetrade_cycle.css`, hors périmètre de ce chantier.
+- **Leçon** : voir « Cours sur blanc immaculé » ci-dessus. Les cours lisent `--cours-fond`, `--ink-cours`, `--ink-cours-2`, `--titre-cours`, `--terme*` et `--lesson-term` ; jamais `--n-paper`, `--n-sunken` ni un motif (contrôle de `palette.py` sur le bloc `<cours>`). L’ancien corps bleu marine du cycle (`#0f2c66`, C ≈ 0,11) est remplacé par l’encre « Bleu » désaturée (`--ink-cours-bleu`, C 0,078), comme le suggérait la règle photopique ; `--lesson-ink`, `--lesson-word` et `--lesson-abbr` restent déclarés pour l’historique.
+- **Fluorescent** : `--terme-trait` (C 0,28) est la seule exception au plafond « néon », limitée à un filet de 1 px ; `palette.py` vérifie qu’il n’est jamais employé comme couleur de texte (`color`/`fill`).
 - **Contours interactifs** : boutons, champs, onglets d’outils, options de quiz, pagination du Livre, Navigo → `--n-line-strong` (≥ 3:1 sur surface, papier et encart).
 - **Ombres** : uniquement par les rôles `--shadow-*` ; jamais une couleur d’ombre littérale.
-- **Thèmes futurs** : tout est redéfinissable sur `:root` ; un thème peut remplacer les primitives (`--n-*` dont `--n-shadow` et `--n-veil`, `--ink-*`, `--brand-*`, `--cat-NN*`, `--gold-*`, `--gauge-*`, `--status-*`) ou les rôles (`--accent*`, `--focus-ring`, `--shadow-*`, `--gauge-*`, `--star-*`). Dans un fragment, l’accent est fixé par la règle `html[data-medina-fragment="…"]` : un thème qui veut le changer redéfinit `--sp-<id>` (ou `--cat-NN`). Pour qu’un thème garde la règle photopique, il suffit de modifier les constantes de `palette.py` (`NEUTRE_H`, `NEUTRES`, `OMBRE`, `BANDE_REPERES`, `EMPLACEMENTS`) et de relancer les contrôles.
+- **Thèmes futurs** : tout est redéfinissable sur `:root`, sauf les tokens des cours (`--cours-fond`, `--ink-cours-*`, `--terme*`), qu’un thème ne doit pas redéfinir : les règles des cours portent un préfixe d’identifiant (`#content`, `#modal-body`, `#mc-dialog`) pour garder le blanc immaculé sous n’importe quel thème ; un thème peut remplacer les primitives (`--n-*` dont `--n-shadow` et `--n-veil`, `--ink-*`, `--brand-*`, `--cat-NN*`, `--gold-*`, `--gauge-*`, `--status-*`) ou les rôles (`--accent*`, `--focus-ring`, `--shadow-*`, `--gauge-*`, `--star-*`). Dans un fragment, l’accent est fixé par la règle `html[data-medina-fragment="…"]` : un thème qui veut le changer redéfinit `--sp-<id>` (ou `--cat-NN`). Pour qu’un thème garde la règle photopique, il suffit de modifier les constantes de `palette.py` (`NEUTRE_H`, `NEUTRES`, `OMBRE`, `BANDE_REPERES`, `EMPLACEMENTS`) et de relancer les contrôles.
 
 ## Tokens (valeurs du thème par défaut)
 
@@ -194,9 +242,9 @@ L / C / h : valeurs OKLCH mesurées sur l’hexadécimal arrondi. TCP : tempéra
 | `--n-line-soft` | `#c8dbe7` | 0.881 / 0.026 / 235.4 | 8005 K · +0.0074 | Séparations décoratives (non interactives), même teinte que le filet |
 | `--n-line` | `#90b0c4` | 0.740 / 0.045 / 235.7 | 10265 K · +0.0118 | Bordures de cartes, de tableaux et d’îlots (ravivées) |
 | `--n-line-strong` | `#437592` | 0.539 / 0.071 / 235.6 | 15000 K · +0.0238 | Contours interactifs (≥ 3:1 sur surface, papier et encart) |
-| `--ink-3` | `#585f63` | 0.481 / 0.011 / 232.6 | 7590 K · +0.0067 | Texte atténué (≥ 4,5:1 sur encart) |
-| `--ink-2` | `#383e42` | 0.360 / 0.011 / 236.9 | 7995 K · +0.0071 | Texte courant de l’interface |
-| `--ink-1` | `#161a1d` | 0.215 / 0.008 / 240.3 | 8635 K · +0.0077 | Encre primaire, titres de l’interface |
+| `--ink-3` | `#4d5357` | 0.438 / 0.010 / 236.8 | 7630 K · +0.0063 | Texte atténué (≥ 4,5:1 visé, ≥ 7:1 mesuré sur encart) |
+| `--ink-2` | `#292f32` | 0.301 / 0.010 / 229.2 | 8160 K · +0.0089 | Texte courant et secondaire de l’interface (≥ 7:1) |
+| `--ink-1` | `#0e1215` | 0.179 / 0.009 / 240.5 | 9355 K · +0.0089 | Encre primaire, titres de l’interface (≥ 12:1) |
 | `--n-shadow` | `#152631` | 0.259 / 0.031 / 238.0 | 15000 K · +0.0199 | Couleur des ombres (papier ciel assombri) |
 | `--n-veil` | `rgb(14 31 41 / 0.55)` | oklch(0.230 0.030 235.5 / 0.55) |  | Voile des fenêtres (papier ciel assombri, 55 %) |
 | `--brand-50` | `#f0faf3` | 0.976 / 0.014 / 155.6 |  | Rampe de la marque |
@@ -208,11 +256,11 @@ L / C / h : valeurs OKLCH mesurées sur l’hexadécimal arrondi. TCP : tempéra
 | `--brand-600` | `#0f6c44` | 0.470 / 0.104 / 158.3 |  | Rampe de la marque |
 | `--brand-700` | `#1f3428` | 0.303 / 0.035 / 158.4 |  | Rampe de la marque |
 | `--brand-800` | `#0e2318` | 0.235 / 0.035 / 159.2 |  | Rampe de la marque |
-| `--status-ok` | `#046e30` | 0.471 / 0.129 / 149.8 |  | Statut « Disponible » (disque plein) |
+| `--status-ok` | `#015e28` | 0.421 / 0.116 / 149.9 |  | Statut « Disponible » (disque plein) |
 | `--status-ok-bg` | `#e3f9e7` | 0.961 / 0.033 / 150.9 |  | Fond du statut |
-| `--status-prep` | `#585f63` | 0.481 / 0.011 / 232.6 |  | Statut « En préparation » (cercle vide) |
+| `--status-prep` | `#4d5357` | 0.438 / 0.010 / 236.8 |  | Statut « En préparation » (cercle vide) |
 | `--status-prep-bg` | `#e7f7ff` | 0.967 / 0.020 / 229.0 |  | Fond du statut |
-| `--status-prov` | `#924b02` | 0.491 / 0.119 / 56.0 |  | Statut « Provisoire » (demi-disque) |
+| `--status-prov` | `#7d4005` | 0.440 / 0.105 / 55.8 |  | Statut « Provisoire » (demi-disque) |
 | `--status-prov-bg` | `#fff1d9` | 0.963 / 0.035 / 81.3 |  | Fond du statut |
 | `--gauge-400` | `#60ae84` | 0.689 / 0.100 / 158.7 |  | Rampe séquentielle des jauges |
 | `--gauge-500` | `#2f8e60` | 0.579 / 0.114 / 158.4 |  | Rampe séquentielle des jauges |
@@ -224,11 +272,22 @@ L / C / h : valeurs OKLCH mesurées sur l’hexadécimal arrondi. TCP : tempéra
 | `--gold-600` | `#bc7d19` | 0.640 / 0.130 / 71.9 |  | Étoile d’or, Pareto |
 | `--gold-700` | `#925a1a` | 0.520 / 0.105 / 64.3 |  | Étoile d’or, Pareto |
 | `--gold-800` | `#643d17` | 0.399 / 0.075 / 61.7 |  | Étoile d’or, Pareto |
-| `--lesson-ink` | `#0f2c66` | 0.310 / 0.108 / 262.2 |  | Corps des cours du cycle (bleu marine renforcé) |
-| `--lesson-title` | `#b3261e` | 0.501 / 0.178 / 28.7 |  | Titres et numéros rouges soulignés |
-| `--lesson-term` | `#9b3900` | 0.477 / 0.142 / 42.6 |  | Termes interactifs des cours du cycle |
-| `--lesson-word` | `#187349` | 0.493 / 0.107 / 157.7 |  | Mot vert : fenêtre explicative ou contentieux |
-| `--lesson-abbr` | `#205d55` | 0.437 / 0.064 / 183.2 |  | Abréviation à clé du glossaire |
+| `--lesson-ink` | `#0f2c66` | 0.310 / 0.108 / 262.2 |  | Historique : ancien corps bleu marine des cours du cycle (remplacé par --ink-cours-bleu) |
+| `--lesson-title` | `#b3261e` | 0.501 / 0.178 / 28.7 |  | Titres et numéros rouges soulignés (règle typographique historique) |
+| `--lesson-term` | `#9b3900` | 0.477 / 0.142 / 42.6 |  | Abréviations à clé et liens dans les cours (orange brûlé, distinct des termes verts) |
+| `--lesson-word` | `#187349` | 0.493 / 0.107 / 157.7 |  | Historique : ancien mot vert (remplacé par --terme et --terme-justif) |
+| `--lesson-abbr` | `#205d55` | 0.437 / 0.064 / 183.2 |  | Historique : ancienne abréviation à clé (remplacée par --lesson-term) |
+| `--cours-fond` | `#ffffff` | 1.000 / 0.000 / — |  | Fond des cours et des fenêtres : blanc immaculé D65, sans teinte ni motif |
+| `--ink-cours-noir` | `#111111` | 0.178 / 0.000 / — | 6505 K · +0.0033 | Encre « Noir » du texte principal des cours (≥ 12:1) |
+| `--ink-cours-bleu` | `#152a52` | 0.292 / 0.078 / 261.9 | 15000 K · +0.0581 | Encre « Bleu » : marine lisible, C ≤ 0,08 (≥ 12:1) |
+| `--ink-cours-noir-2` | `#424242` | 0.379 / 0.000 / — | 6505 K · +0.0033 | Encre secondaire « Noir » : légendes, sources (≥ 7:1) |
+| `--ink-cours-bleu-2` | `#33476d` | 0.399 / 0.069 / 262.5 | 15000 K · +0.0276 | Encre secondaire « Bleu » : légendes, sources (≥ 7:1) |
+| `--terme` | `#1a7426` | 0.491 / 0.140 / 144.9 |  | Terme interactif (.mc-w[data-k]) : texte vert franc (≥ 4,5:1 sur blanc et sur surlignage) |
+| `--terme-survol` | `#075a22` | 0.409 / 0.115 / 148.0 |  | Terme interactif au survol et au focus : vert plus profond |
+| `--terme-justif` | `#0a553d` | 0.400 / 0.080 / 165.2 |  | Mot de justification ou de contentieux (button[data-justification]) : vert sapin, distinct |
+| `--terme-trait` | `#27fd31` | 0.865 / 0.279 / 143.0 |  | Soulignement interrompu de 1 px en vert fluorescent (décor, jamais du texte) |
+| `--terme-surlignage` | `#e0ffdc` | 0.969 / 0.056 / 142.0 |  | Surlignage fluorescent pâle derrière le terme au survol et au focus |
+| `--terme-focus` | `#075a22` | 0.409 / 0.115 / 148.0 |  | Anneau de focus clavier des termes (2 px, ≥ 3:1) |
 
 ### Rôles (alias)
 
@@ -256,45 +315,48 @@ L / C / h : valeurs OKLCH mesurées sur l’hexadécimal arrondi. TCP : tempéra
 | `--star-fill` | `var(--gold-500)` | Corps de l’étoile d’or |
 | `--star-light` | `var(--gold-300)` | Facette éclairée de l’étoile |
 | `--star-shade` | `var(--gold-600)` | Facette ombrée de l’étoile |
+| `--ink-cours` | `var(--ink-cours-noir)` | Encre du texte principal des cours ; html[data-medina-encre="bleu"] la porte sur --ink-cours-bleu |
+| `--ink-cours-2` | `var(--ink-cours-noir-2)` | Encre secondaire des cours (légendes, sources) ; suit le choix Noir ou Bleu |
+| `--titre-cours` | `var(--lesson-title)` | Titres et numéros rouges soulignés des cours (≥ 4,5:1 sur --cours-fond) |
 
 ### Emplacements catégoriels (ordre fixe) et spécialités
 
-Chaque emplacement `--cat-NN` a ses variantes `--cat-NN-ink` (texte), `--cat-NN-tint` (fond) et `--cat-NN-sel` (sélection). Chaque spécialité a `--sp-<id>`, `--sp-<id>-ink`, `--sp-<id>-tint`, `--sp-<id>-sel` (alias de son emplacement). Repères : L 0.522–0.578 ; encres : L 0.43 ; fonds : L 0.975 ; sélections : L 0.945.
+Chaque emplacement `--cat-NN` a ses variantes `--cat-NN-ink` (texte), `--cat-NN-tint` (fond) et `--cat-NN-sel` (sélection). Chaque spécialité a `--sp-<id>`, `--sp-<id>-ink`, `--sp-<id>-tint`, `--sp-<id>-sel` (alias de son emplacement). Repères : L 0.522–0.578 ; encres : L 0.4 ; fonds : L 0.975 ; sélections : L 0.945.
 
 | N° | Nom | Repère | L / C / h | Encre | L / C / h encre | Fond | Repère / papier | Encre / fond | Spécialité |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | sapin | `#089327` | 0.577 / 0.180 / 144.9 | `#006216` | 0.431 / 0.136 / 145.0 | `#f0fbf0` | 3.89:1 | 7.16:1 | `--sp-t1` I-03-Infectiologie |
-| 2 | azur | `#0382bf` | 0.578 / 0.132 / 239.9 | `#005580` | 0.429 / 0.099 / 240.4 | `#edfaff` | 4.10:1 | 7.55:1 | `--sp-s12` O-17-Oto-rhino-laryngologie et médecine bucco-dentaire |
-| 3 | framboise | `#c73e79` | 0.577 / 0.180 / 358.0 | `#93004f` | 0.431 / 0.175 / 358.3 | `#fff3f8` | 4.61:1 | 8.25:1 | `--sp-s11` D-16-Dermatologie |
-| 4 | lagon | `#0288a0` | 0.578 / 0.102 / 216.0 | `#005a6a` | 0.430 / 0.076 / 215.2 | `#eafbff` | 4.03:1 | 7.39:1 | `--sp-s04` N-07-Néphrologie |
-| 5 | carmin | `#b32a6a` | 0.521 / 0.180 / 357.3 | `#920050` | 0.429 / 0.175 / 357.5 | `#fff1f6` | 5.86:1 | 8.20:1 | `--sp-s01` C-01-Cardiologie |
-| 6 | olive | `#706d01` | 0.521 / 0.112 / 107.8 | `#555300` | 0.430 / 0.093 / 108.1 | `#f7f7e9` | 5.23:1 | 7.41:1 | `--sp-t2` M-12-Médecine des âges de la vie |
-| 7 | amethyste | `#875cd5` | 0.579 / 0.179 / 296.8 | `#564280` | 0.430 / 0.101 / 296.8 | `#f9f5ff` | 4.48:1 | 7.86:1 | `--sp-s15` U-15-Urologie et andrologie |
-| 8 | ocre | `#987401` | 0.578 / 0.118 / 86.8 | `#654c00` | 0.431 / 0.088 / 86.8 | `#fdf7ea` | 4.19:1 | 7.60:1 | `--sp-s05` E-06-Endocrinologie et métabolisme |
-| 9 | outremer | `#5a68df` | 0.570 / 0.180 / 274.2 | `#404a86` | 0.431 / 0.100 / 274.3 | `#f3f7ff` | 4.52:1 | 7.70:1 | `--sp-s07` I-13-Immunologie et allergologie |
-| 10 | garance | `#ce3e55` | 0.579 / 0.180 / 15.8 | `#97002e` | 0.430 / 0.172 / 15.8 | `#fff3f3` | 4.56:1 | 8.22:1 | `--sp-s06` H-08-Hématologie |
-| 11 | jade | `#028d81` | 0.578 / 0.102 / 184.4 | `#005d55` | 0.430 / 0.076 / 184.7 | `#eafcf9` | 3.95:1 | 7.34:1 | `--sp-s03` G-04-Gastroentérologie et hépatologie |
-| 12 | orchidee | `#a2399c` | 0.530 / 0.181 / 330.1 | `#82147d` | 0.431 / 0.181 / 330.3 | `#fef2fc` | 5.63:1 | 8.24:1 | `--sp-t7` E-22-Éthique médicale, droit et communication |
-| 13 | malachite | `#007f5f` | 0.530 / 0.108 / 167.6 | `#005f46` | 0.431 / 0.088 / 167.3 | `#ebfbf4` | 4.82:1 | 7.21:1 | `--sp-t6` M-21-Médecine de premier recours et santé publique |
-| 14 | violet | `#8245ba` | 0.521 / 0.179 / 305.0 | `#68279c` | 0.430 / 0.179 / 305.2 | `#f9f3ff` | 5.78:1 | 8.18:1 | `--sp-s09` P-23-Psychiatrie et psychothérapie |
-| 15 | cuivre | `#b06401` | 0.577 / 0.133 / 61.7 | `#764100` | 0.431 / 0.100 / 61.6 | `#fff5eb` | 4.34:1 | 7.72:1 | `--sp-s16` O-11-Obstétrique et néonatologie |
-| 16 | bleuet | `#007add` | 0.578 / 0.176 / 252.5 | `#215185` | 0.429 / 0.101 / 252.8 | `#eff9ff` | 4.20:1 | 7.62:1 | `--sp-s02` P-02-Pneumologie |
-| 17 | corail | `#cd4517` | 0.577 / 0.180 / 37.1 | `#8d2700` | 0.430 / 0.143 / 37.2 | `#fff4ef` | 4.55:1 | 8.02:1 | `--sp-t3` M-19-Médecine d’urgence, traumatologie et toxicologie |
-| 18 | emeraude | `#02915d` | 0.579 / 0.132 / 159.3 | `#00603c` | 0.431 / 0.099 / 159.3 | `#eefcf3` | 3.89:1 | 7.25:1 | `--sp-t5` D-20-Diagnostic clinique et examens complémentaires |
-| 19 | rose | `#bb449a` | 0.578 / 0.180 / 340.3 | `#8a0a6d` | 0.431 / 0.180 / 340.6 | `#fff3fc` | 4.60:1 | 8.31:1 | `--sp-s14` G-10-Gynécologie et sénologie |
-| 20 | prairie | `#008237` | 0.530 / 0.149 / 149.2 | `#006127` | 0.430 / 0.121 / 149.2 | `#eefaef` | 4.77:1 | 7.14:1 | `--sp-s10` R-14-Rhumatologie et orthopédie |
-| 21 | saphir | `#0365ce` | 0.522 / 0.181 / 256.6 | `#285086` | 0.430 / 0.101 / 256.6 | `#eef7ff` | 5.40:1 | 7.51:1 | `--sp-s13` O-18-Ophtalmologie |
-| 22 | brique | `#ba3102` | 0.522 / 0.180 / 35.5 | `#8f2300` | 0.430 / 0.149 / 35.6 | `#fff2ed` | 5.75:1 | 7.96:1 | `--sp-t4` O-09-Oncologie, génétique médicale et soins palliatifs |
-| 23 | pervenche | `#6352cb` | 0.523 / 0.180 / 284.7 | `#4b4684` | 0.430 / 0.100 / 285.0 | `#f4f4ff` | 5.63:1 | 7.67:1 | `--sp-s08` N-05-Neurologie |
-| 24 | debord-24 | `#975db3` | 0.577 / 0.141 / 313.8 | `#6a3284` | 0.429 / 0.139 / 313.6 | `#fef6ff` | 4.47:1 | 8.26:1 | débordement |
-| 25 | debord-25 | `#6e6e02` | 0.521 / 0.113 / 109.8 | `#545300` | 0.429 / 0.093 / 109.0 | `#f8f9ea` | 5.20:1 | 7.55:1 | débordement |
-| 26 | debord-26 | `#017ca6` | 0.550 / 0.111 / 231.0 | `#005777` | 0.429 / 0.088 / 232.0 | `#ecfbff` | 4.57:1 | 7.53:1 | débordement |
-| 27 | debord-27 | `#ba5174` | 0.578 / 0.140 / 1.5 | `#89234b` | 0.431 / 0.140 / 1.3 | `#fff4f8` | 4.49:1 | 8.13:1 | débordement |
-| 28 | debord-28 | `#327c29` | 0.521 / 0.139 / 141.5 | `#116104` | 0.430 / 0.140 / 141.5 | `#f0fbef` | 5.00:1 | 7.22:1 | débordement |
-| 29 | debord-29 | `#6265c1` | 0.549 / 0.141 / 279.3 | `#454885` | 0.430 / 0.100 / 279.2 | `#f5f7ff` | 4.88:1 | 7.79:1 | débordement |
-| 30 | debord-30 | `#b46102` | 0.578 / 0.138 / 58.1 | `#783e00` | 0.429 / 0.103 / 57.6 | `#fff6ed` | 4.36:1 | 7.90:1 | débordement |
-| 31 | debord-31 | `#007c62` | 0.522 / 0.102 / 171.4 | `#005e4a` | 0.429 / 0.083 / 171.7 | `#ebfcf5` | 4.99:1 | 7.32:1 | débordement |
-| 32 | debord-32 | `#9e4f97` | 0.550 / 0.140 / 330.7 | `#782b73` | 0.430 / 0.141 / 330.3 | `#fff4fe` | 5.04:1 | 8.20:1 | débordement |
+| 1 | sapin | `#089327` | 0.577 / 0.180 / 144.9 | `#005812` | 0.400 / 0.127 / 144.8 | `#f0fbf0` | 3.89:1 | 8.22:1 | `--sp-t1` I-03-Infectiologie |
+| 2 | azur | `#0382bf` | 0.578 / 0.132 / 239.9 | `#004d74` | 0.401 / 0.092 / 240.1 | `#edfaff` | 4.10:1 | 8.52:1 | `--sp-s12` O-17-Oto-rhino-laryngologie et médecine bucco-dentaire |
+| 3 | framboise | `#c73e79` | 0.577 / 0.180 / 358.0 | `#850047` | 0.401 / 0.163 / 358.3 | `#fff3f8` | 4.61:1 | 9.30:1 | `--sp-s11` D-16-Dermatologie |
+| 4 | lagon | `#0288a0` | 0.578 / 0.102 / 216.0 | `#005160` | 0.401 / 0.071 / 215.7 | `#eafbff` | 4.03:1 | 8.42:1 | `--sp-s04` N-07-Néphrologie |
+| 5 | carmin | `#b32a6a` | 0.521 / 0.180 / 357.3 | `#850048` | 0.401 / 0.163 / 357.7 | `#fff1f6` | 5.86:1 | 9.17:1 | `--sp-s01` C-01-Cardiologie |
+| 6 | olive | `#706d01` | 0.521 / 0.112 / 107.8 | `#4d4b00` | 0.402 / 0.087 / 108.0 | `#f7f7e9` | 5.23:1 | 8.37:1 | `--sp-t2` M-12-Médecine des âges de la vie |
+| 7 | amethyste | `#875cd5` | 0.579 / 0.179 / 296.8 | `#4e3a76` | 0.400 / 0.099 / 297.1 | `#f9f5ff` | 4.48:1 | 8.92:1 | `--sp-s15` U-15-Urologie et andrologie |
+| 8 | ocre | `#987401` | 0.578 / 0.118 / 86.8 | `#5b4400` | 0.400 / 0.082 / 86.6 | `#fdf7ea` | 4.19:1 | 8.66:1 | `--sp-s05` E-06-Endocrinologie et métabolisme |
+| 9 | outremer | `#5a68df` | 0.570 / 0.180 / 274.2 | `#38417d` | 0.399 / 0.101 / 274.5 | `#f3f7ff` | 4.52:1 | 8.81:1 | `--sp-s07` I-13-Immunologie et allergologie |
+| 10 | garance | `#ce3e55` | 0.579 / 0.180 / 15.8 | `#890029` | 0.400 / 0.160 / 15.7 | `#fff3f3` | 4.56:1 | 9.24:1 | `--sp-s06` H-08-Hématologie |
+| 11 | jade | `#028d81` | 0.578 / 0.102 / 184.4 | `#00544c` | 0.401 / 0.071 / 183.9 | `#eafcf9` | 3.95:1 | 8.34:1 | `--sp-s03` G-04-Gastroentérologie et hépatologie |
+| 12 | orchidee | `#a2399c` | 0.530 / 0.181 / 330.1 | `#780374` | 0.400 / 0.180 / 330.1 | `#fef2fc` | 5.63:1 | 9.36:1 | `--sp-t7` E-22-Éthique médicale, droit et communication |
+| 13 | malachite | `#007f5f` | 0.530 / 0.108 / 167.6 | `#00553f` | 0.399 / 0.081 / 168.0 | `#ebfbf4` | 4.82:1 | 8.28:1 | `--sp-t6` M-21-Médecine de premier recours et santé publique |
+| 14 | violet | `#8245ba` | 0.521 / 0.179 / 305.0 | `#5f1c93` | 0.400 / 0.180 / 304.7 | `#f9f3ff` | 5.78:1 | 9.30:1 | `--sp-s09` P-23-Psychiatrie et psychothérapie |
+| 15 | cuivre | `#b06401` | 0.577 / 0.133 / 61.7 | `#6a3a00` | 0.400 / 0.092 / 61.8 | `#fff5eb` | 4.34:1 | 8.80:1 | `--sp-s16` O-11-Obstétrique et néonatologie |
+| 16 | bleuet | `#007add` | 0.578 / 0.176 / 252.5 | `#18497b` | 0.400 / 0.099 / 252.1 | `#eff9ff` | 4.20:1 | 8.63:1 | `--sp-s02` P-02-Pneumologie |
+| 17 | corail | `#cd4517` | 0.577 / 0.180 / 37.1 | `#802200` | 0.400 / 0.134 / 37.0 | `#fff4ef` | 4.55:1 | 9.06:1 | `--sp-t3` M-19-Médecine d’urgence, traumatologie et toxicologie |
+| 18 | emeraude | `#02915d` | 0.579 / 0.132 / 159.3 | `#005635` | 0.400 / 0.092 / 159.1 | `#eefcf3` | 3.89:1 | 8.33:1 | `--sp-t5` D-20-Diagnostic clinique et examens complémentaires |
+| 19 | rose | `#bb449a` | 0.578 / 0.180 / 340.3 | `#7e0063` | 0.400 / 0.173 / 340.6 | `#fff3fc` | 4.60:1 | 9.42:1 | `--sp-s14` G-10-Gynécologie et sénologie |
+| 20 | prairie | `#008237` | 0.530 / 0.149 / 149.2 | `#005722` | 0.399 / 0.112 / 149.1 | `#eefaef` | 4.77:1 | 8.19:1 | `--sp-s10` R-14-Rhumatologie et orthopédie |
+| 21 | saphir | `#0365ce` | 0.522 / 0.181 / 256.6 | `#20477c` | 0.399 / 0.100 / 256.8 | `#eef7ff` | 5.40:1 | 8.60:1 | `--sp-s13` O-18-Ophtalmologie |
+| 22 | brique | `#ba3102` | 0.522 / 0.180 / 35.5 | `#821f00` | 0.401 / 0.139 / 35.6 | `#fff2ed` | 5.75:1 | 8.94:1 | `--sp-t4` O-09-Oncologie, génétique médicale et soins palliatifs |
+| 23 | pervenche | `#6352cb` | 0.523 / 0.180 / 284.7 | `#433e7b` | 0.401 / 0.100 / 284.6 | `#f4f4ff` | 5.63:1 | 8.69:1 | `--sp-s08` N-05-Neurologie |
+| 24 | debord-24 | `#975db3` | 0.577 / 0.141 / 313.8 | `#62297b` | 0.400 / 0.140 / 313.9 | `#fef6ff` | 4.47:1 | 9.35:1 | débordement |
+| 25 | debord-25 | `#6e6e02` | 0.521 / 0.113 / 109.8 | `#4b4b00` | 0.400 / 0.087 / 109.8 | `#f8f9ea` | 5.20:1 | 8.56:1 | débordement |
+| 26 | debord-26 | `#017ca6` | 0.550 / 0.111 / 231.0 | `#004f6b` | 0.401 / 0.080 / 230.7 | `#ecfbff` | 4.57:1 | 8.50:1 | débordement |
+| 27 | debord-27 | `#ba5174` | 0.578 / 0.140 / 1.5 | `#7f1843` | 0.400 / 0.141 / 1.2 | `#fff4f8` | 4.49:1 | 9.25:1 | débordement |
+| 28 | debord-28 | `#327c29` | 0.521 / 0.139 / 141.5 | `#0b5800` | 0.401 / 0.133 / 141.5 | `#f0fbef` | 5.00:1 | 8.19:1 | débordement |
+| 29 | debord-29 | `#6265c1` | 0.549 / 0.141 / 279.3 | `#3d407c` | 0.400 / 0.100 / 278.7 | `#f5f7ff` | 4.88:1 | 8.83:1 | débordement |
+| 30 | debord-30 | `#b46102` | 0.578 / 0.138 / 58.1 | `#6d3800` | 0.401 / 0.096 / 57.9 | `#fff6ed` | 4.36:1 | 8.87:1 | débordement |
+| 31 | debord-31 | `#007c62` | 0.522 / 0.102 / 171.4 | `#005542` | 0.400 / 0.078 / 171.0 | `#ebfcf5` | 4.99:1 | 8.32:1 | débordement |
+| 32 | debord-32 | `#9e4f97` | 0.550 / 0.140 / 330.7 | `#6f226a` | 0.400 / 0.140 / 330.6 | `#fff4fe` | 5.04:1 | 9.29:1 | débordement |
 
 <!-- </tokens-doc> -->
 
