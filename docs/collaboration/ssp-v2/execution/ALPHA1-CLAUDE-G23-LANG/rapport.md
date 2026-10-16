@@ -37,6 +37,13 @@ Ces formulations créent ou supposent une causalité, une fréquence ou une chro
 - Fréquence et chronologie : « précède souvent le syndrome moteur », « survie… après le diagnostic » (point de départ de la survie), « dont l’atteinte corticale est plus fréquente » (comparatif sans second terme, dans G23_a et dans la fenêtre `g23-dcb`).
 - Autres : la phrase sur la droxidopa, sans source ni statut suisse ; l’incohérence sur l’amantadine, traitée en 9.2 comme antiparkinsonien mais décrite en p-1 comme répondant à une complication ; la causalité générale « Deux physiologies expliquent les échecs thérapeutiques… ».
 
+## Constats hors périmètre linguistique, transmis à l'audit MED
+
+- **MAJEUR, sémiologie** : `G23_c.html` compte 5 boutons `data-s` (anatomie, neuropathologie, physiologie, biochimie, génétique). Le sous-onglet « Sémiologie fondamentale et analytique » est absent, alors qu'AGENTS.md l'exige pour tout audit S08.
+- **Réserve ORIGINE_INCONNUE, figure 4** (neurone, oligodendrocyte, astrocyte) : figure anatomique dessinée, origine non documentée ; vérification de provenance transmise à l'audit MED, sans jugement sur le fond.
+- **Réserve ORIGINE_INCONNUE, figure 5** (arc autonome, ganglion) : même réserve.
+- Figures 1, 2, 3, 6 et 7 : schémas non anatomiques, classement provisoire. Mon contrôle a porté sur le texte des figures, pas sur leur provenance.
+
 ## Choix différés, non appliqués
 
 - Espaces insécables globales avant « ; : ! ? » et dans les nombres : aucun espace insécable dans les six fichiers, correction globale différée.
@@ -50,7 +57,7 @@ Ces formulations créent ou supposent une causalité, une fréquence ou une chro
 ## Lacunes
 
 - Aucune source médicale relue : les renvois sont conditionnels.
-- Rendu navigateur et lisibilité à 390 px non contrôlés ; boutons `.sci-bar` non audités.
+- Rendu navigateur et lisibilité à 390 px non contrôlés ; contrôle des figures limité à leur texte, non à leur provenance.
 - Propositions non appliquées ni compilées : leur intégration relève d’une mission d’intégration.
 
 ## Tableau de bord

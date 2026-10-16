@@ -10,7 +10,7 @@
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
  "date_debut": "2026-10-16T05:30:00Z",
- "date_fin": "2026-10-16T06:10:00Z",
+ "date_fin": "2026-10-16T06:01:55Z",
  "lecture": {
   "fichiers": [
    "chapters/G23/G23_a.html",
@@ -260,8 +260,36 @@
  ],
  "lacunes": [
   "Aucune source médicale n’a été relue : les 16 renvois médicaux signalent des formulations dont la causalité, la fréquence ou la chronologie doivent être confrontées à la source par un relecteur médical ; la présence de ces relations dans la source n’est ni affirmée ni infirmée.",
-  "Rendu dans un navigateur et lisibilité à 390 px non contrôlés (mission linguistique) ; les libellés des boutons .sci-bar de la Sciences ne sont pas audités ici.",
-  "Les propositions n’ont pas été appliquées ni compilées dans MEDINA.html ; leur intégration relève d’une mission d’intégration."
+  "Les propositions n’ont pas été appliquées ni compilées dans MEDINA.html ; leur intégration relève d’une mission d’intégration.",
+  "Rendu navigateur et lisibilité à 390 px non contrôlés ; contrôle des figures limité à leur texte, non à leur provenance."
  ],
- "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée",
+ "constats_hors_perimetre": [
+  {
+   "id": "HP-01",
+   "gravite": "MAJEUR",
+   "objet": "Sémiologie",
+   "constat": "Hors périmètre linguistique, MAJEUR, transmis à l’audit MED. G23_c.html compte 5 boutons data-s (g23-s-anat, g23-s-histo, g23-s-physio, g23-s-bioch, g23-s-gene) ; aucun sous-onglet « Sémiologie fondamentale et analytique » n’existe, alors qu’AGENTS.md l’exige comme premier bouton .sci-bar de tout audit S08."
+  },
+  {
+   "id": "HP-02",
+   "gravite": "RESERVE",
+   "objet": "Figure 4 (G23_c, SVG inline : neurone, oligodendrocyte, astrocyte)",
+   "classe": "ORIGINE_INCONNUE",
+   "constat": "Figure anatomique dessinée, origine non documentée -> ORIGINE_INCONNUE (réserve) ; vérification de provenance transmise à l’audit MED. Aucun jugement sur le fond."
+  },
+  {
+   "id": "HP-03",
+   "gravite": "RESERVE",
+   "objet": "Figure 5 (G23_c, SVG inline : centre, ganglion, organe cible)",
+   "classe": "ORIGINE_INCONNUE",
+   "constat": "Figure anatomique dessinée (arc autonome), origine non documentée -> ORIGINE_INCONNUE (réserve) ; vérification de provenance transmise à l’audit MED."
+  },
+  {
+   "id": "HP-04",
+   "gravite": "INFO",
+   "objet": "Figures 1, 2, 3, 6, 7",
+   "constat": "Schémas à encadrés et flèches, non anatomiques selon leur apparence et la légende de la figure 3 ; classement provisoire SCHEMA_NON_ANATOMIQUE, à confirmer par l’audit MED. Mon contrôle a porté sur le texte des figures, pas sur leur provenance."
+  }
+ ]
 }
