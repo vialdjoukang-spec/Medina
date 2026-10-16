@@ -257,7 +257,34 @@ def category_organisation_data(source, fragment, root):
                         for course in courses.values()],
             'organisation_url': '../organisation.html'}
     from nosologyEngine import attach_surface
-    return attach_surface(result_data, root)
+    return order_blocks(attach_surface(result_data, root))
+
+
+CATEGORY_ORDER = {
+    'id': 'examen-federal-puis-cim',
+    'label': 'Ordre : priorité Examen fédéral, puis CIM-10-GM',
+    'reason': ('Les catégories qui réunissent le plus de pathologies de l’Examen fédéral '
+               '(correspondances PROFILES 2017 / SSP) viennent d’abord ; à égalité, '
+               'l’ordre de la CIM-10-GM garde ensemble les familles voisines.'),
+}
+
+
+def order_blocks(organisation):
+    """Display order only: federal-exam weight first, CIM-10-GM order on ties.
+
+    Neither the lessons, their codes nor any medical content change; the
+    numbering (1., 2., …) follows this single order everywhere in the fragment.
+    """
+    def weight(block):
+        return sum(1 for lesson in block['lessons'] if (lesson.get('gold_star') or {}).get('enabled'))
+    blocks = sorted(organisation['blocks'], key=lambda block: (-weight(block), block['order']))
+    for index, block in enumerate(blocks, 1):
+        block['cim_order'] = block['order']
+        block['order'] = index
+        block['federal_weight'] = weight(block)
+    organisation['blocks'] = blocks
+    organisation['category_order'] = CATEGORY_ORDER
+    return organisation
 
 
 def isolated_glossary(source, glossary):

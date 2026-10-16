@@ -21,6 +21,7 @@ if fragments:
     for f in fragments:
         f['nom']=public_names[f['id']]['label']
         f['production_order']=public_names[f['id']]['order']
+PREMIUM_PREFIX=':root'+'[data-medina-fragment]'*6+' body'
 explicit={x:f['id'] for f in fragments for x in f['rattachements'] if re.fullmatch(r'[A-Z][0-9]{2}',x)}
 
 def fragment_chapters(fragment,entries):
@@ -134,6 +135,10 @@ try:
         data={'systems':sysd,'build':build,'news':[{'code':c['code'],'title':c['title'],'complete':c['code'] in DONE_COURSES} for c in chap if c.get('added')==build],
               'doneNames':[t for n,t,_ in WAVES if n in DONE_SYS],'ecgCat':CAT,'complete':completed}
         s=open(out,encoding='utf-8').read()
+        if not selected and "import('./lesson-core.js')" in s:
+            # lesson-core.js n'est pas publié à côté de MEDINA.html : le module embarqué est importé depuis un blob.
+            core=json.loads(re.search(r'<script type="application/json" id="medina-portable-resources">(.*?)</script>',s,re.S).group(1))['assets/lesson-core.js']['base64']
+            s=s.replace("import('./lesson-core.js')","import(URL.createObjectURL(new Blob([Uint8Array.from(atob('"+core+"'),c=>c.charCodeAt(0))],{type:'text/javascript'})))",1)
         # Icône « stomach » de la coque : chemin SVG incomplet (erreur de console au premier rendu) ; source intacte.
         s=s.replace("1-5 1-7V3z'","1-5 1-7 0V3z'",1)
         # Insigne « 100 % rédigé » : seuls les chapitres de DONE_COURSES (audités), distincts des chapitres intégrés.
@@ -169,6 +174,12 @@ try:
         s=s.replace('</head>','<style id="medina-typography">'+typography+'</style></head>',1)
         cycle_style=open(ROOT+'/engine/tetrade_cycle.css',encoding='utf-8').read()
         s=s.replace('</head>','<style id="medina-tetrade-cycle">'+cycle_style+'</style></head>',1)
+        if selected:
+            # Finition premium : dernière couche des fragments (séparations, catégories, Navigo).
+            premium_css=open(ROOT+'/engine/finition_premium.css',encoding='utf-8').read().replace('§',PREMIUM_PREFIX)
+            s=s.replace('</head>','<style id="medina-finition-premium">'+premium_css+'</style></head>',1)
+            i=s.rindex('</body>')
+            s=s[:i]+'<script id="medina-finition-premium-runtime">'+open(ROOT+'/engine/finition_premium.js',encoding='utf-8').read()+'</script>'+s[i:]
         if selected:
             present={c['code'] for c in chap}
             absent={c['code'] for c in cfg}-present
