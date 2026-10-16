@@ -14,7 +14,7 @@
  "modele_effort": "conforme au manifeste",
  "date_debut": null,
  "date_debut_note": "Heure de début non relevée au lancement ; première heure UTC réellement observée pendant l'audit : 2026-10-16T06:08:41Z (borne supérieure du début).",
- "date_fin": "2026-10-16T06:12:39Z",
+ "date_fin": "2026-10-16T06:32:09Z",
  "lecture": {
   "fichiers": [
    "chapters/G72/G72_a.html",
@@ -100,7 +100,7 @@
      "citation_courte": "CIW cannot be reliably assessed if the patient is delirious"
     }
    ],
-   "proposition": "Insérer la discipline complète de propositions/G72_c_1.html (sept îlots g72-sm-1 à g72-sm-7, figure non anatomique conforme à 390 px, cinq fenêtres g72-sm-* dans un nouveau G72_pop3.html), selon la structure EXIGENCE_SEMIOLOGIE § 4 b.",
+   "proposition": "Insérer dans chapters/G72/G72_c.html (panneau pS) le sous-onglet de propositions/G72_c_1.html : bouton g72-tab-semio en tête de .sci-bar (aria-selected=\"true\", les autres boutons à \"false\"), panneau div.sci g72-s-semio role=\"tabpanel\" aria-labelledby=\"g72-tab-semio\", neuf sections data-semiology (normal, signs, mechanisms, examination, interpretation, differentials, urgency, limits, sources) titrées en h3, sources reliées par liens https ; ajouter les cinq fenêtres g72-sm-* de propositions/G72_pop2_3.html en fin de chapters/G72/G72_pop2.html ; insérer dans chapters/G72/G72_a.html (pA, après l’îlot g72-6) la section data-semiology-clinical=\"G72\" de propositions/G72_a_semio_clinique.html.",
    "justification": "Mécanisme : chaque signe de G72 traduit une voie lésionnelle précise (nécrose, inexcitabilité, atrophie). Conséquence : sans sémiologie analytique, le lecteur ne relie pas l’urine foncée au rein ni la réflexie au diagnostic différentiel. Décision : exigence de Vial du 15.10.2026, absence = MAJEUR.",
    "bloquant_cloture": true,
    "statut_blocage": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md)",
@@ -247,7 +247,7 @@
      "citation_courte": "Hypertension, insuffisance cardiaque, œdèmes, diabète insipide néphrogénique, hypercalciurie"
     }
    ],
-   "proposition": "Ajouter le paragraphe de propositions/G72_d_3.html (ou une colonne « Statut en Suisse ») à l’îlot p-1 et la mention « hors étiquette » dans les fenêtres g72-ig, g72-cortico-ici, g72-salbutamol et g72-hctz.",
+   "proposition": "Ajouter le paragraphe de propositions/G72_d_3.html (ou une colonne « Statut en Suisse ») à l’îlot p-1 et la mention « hors étiquette » dans les fenêtres g72-ig, g72-cortico-ici, g72-salbutamol et g72-hctz. L’exigence d’une garantie de prise en charge a été retirée de la proposition (aucune source suisse lue) et reste en lacune.",
    "justification": "Mécanisme : l’autorisation suisse fixe le cadre de responsabilité et de remboursement. Conséquence : un lecteur peut croire ces emplois autorisés. Décision : addendum lot 2, point 5 : signaler tout emploi hors indication.",
    "ancre_occurrences": 1
   },
@@ -715,7 +715,11 @@
   "gravite": "MAJEUR",
   "bloquant_cloture": true,
   "statut_blocage": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md)",
-  "proposition": "propositions/G72_c_1.html",
+  "proposition": [
+   "propositions/G72_c_1.html",
+   "propositions/G72_pop2_3.html",
+   "propositions/G72_a_semio_clinique.html"
+  ],
   "grille_SEM": {
    "SEM-01": "non",
    "SEM-02": "non",
@@ -741,7 +745,13 @@
    "SEM-22": "sans objet (aucun bouton)",
    "SEM-23": "non (aucune capture possible d’une discipline absente)",
    "SEM-24": "oui (statut « Aucune validation médicale humaine »)"
-  }
+  },
+  "cibles": {
+   "propositions/G72_c_1.html": "chapters/G72/G72_c.html",
+   "propositions/G72_pop2_3.html": "chapters/G72/G72_pop2.html",
+   "propositions/G72_a_semio_clinique.html": "chapters/G72/G72_a.html"
+  },
+  "reserve_validateur": "tools/starter_codex.py (semiology) exige au moins six boutons data-s dans pS ; G72_c.html en compte quatre, cinq après insertion. Le sixième relève d’une mission de production ; aucun contenu n’est inventé ici."
  },
  "figures": [
   {
@@ -816,5 +826,27 @@
   "Solé 2026, Allenbach 2020, Hunziker 2022, Giezendanner 2024, Bosma 2026, Pasnoor 2018, Lilleker 2024, Piva 2019, Latronico et Bolton 2011 : non relus dans cet audit ; les faits du cours qui en dépendent sont repris sans contre-vérification.",
   "Paralysie périodique thyréotoxique : aucune source de conduite thérapeutique lue."
  ],
- "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée",
+ "correctifs_revue_codex_pr195": [
+  {
+   "constat": "A",
+   "objet": "Contrat de sémiologie",
+   "traitement": "G72_c_1.html restructuré : id g72-tab-semio, role=tabpanel, aria-labelledby, neuf data-semiology dans l’ordre, titres h3, aucun h2, section sources avec liens https et correspondance affirmation ↔ passage ; fenêtres déplacées dans G72_pop2_3.html (aucun _pop3) ; marqueur clinique proposé dans G72_a_semio_clinique.html."
+  },
+  {
+   "constat": "B",
+   "objet": "Réflexes conservés",
+   "traitement": "Reformulé fidèlement à S17 (« should raise the possibility of a different cause ») : les réflexes conservés font évoquer une autre cause et n’écartent pas à eux seuls une paralysie périodique ; même correction dans l’examen systématique et la fenêtre g72-sm-acces."
+  },
+  {
+   "constat": "C",
+   "objet": "Garantie de prise en charge",
+   "traitement": "Exigence retirée de G72_d_3.html avec les mentions non sourcées « décision spécialisée » et « information du patient » ; lacune maintenue (lacunes, rubrique 16)."
+  },
+  {
+   "constat": "D",
+   "objet": "Registre des sources",
+   "traitement": "sources.json : 29 entrées avec id, url, editeur/organisme, version, date_consultation, section_ou_page, passage_paraphrase, population, limites, niveau_lecture ; données inconnues déclarées « non précisé par la source »."
+  }
+ ]
 }

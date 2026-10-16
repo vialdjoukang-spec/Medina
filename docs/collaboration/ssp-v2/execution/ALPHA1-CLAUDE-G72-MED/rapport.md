@@ -22,7 +22,7 @@ Aucune erreur n’atteint le seuil d’une conduite dangereuse inventée. Les do
 
 ## Constats MAJEURS
 
-1. **C01 — Sémiologie absente. MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md).** Le bouton `g72-s-semio` et sa discipline n’existent pas. La grille est négative sur SEM-01 à 04, SEM-08 et SEM-13. Une discipline complète est proposée dans `propositions/G72_c_1.html` : sept îlots, une figure non anatomique lisible à 390 px et cinq fenêtres.
+1. **C01 — Sémiologie absente. MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md).** Le bouton `g72-s-semio` et sa discipline n’existent pas. La grille est négative sur SEM-01 à 04, SEM-08 et SEM-13. Un sous-onglet conforme au contrat est proposé dans `propositions/G72_c_1.html` (bouton `g72-tab-semio`, panneau `role="tabpanel"`, neuf sections `data-semiology` titrées en `h3`, sources reliées par liens https), avec une figure non anatomique lisible à 390 px ; ses cinq fenêtres sont dans `propositions/G72_pop2_3.html` (cible `G72_pop2.html`) et le marqueur clinique `data-semiology-clinical="G72"` dans `propositions/G72_a_semio_clinique.html` (cible `G72_a.html`, pA).
 2. **C02 — Quatre disciplines seulement.** `tests/audit_sciences.py` échoue avec cinq erreurs : aucun « À retenir » et une histologie de 265 mots. Une cinquième discipline, **Immunologie**, est proposée dans `G72_c_2.html`. Elle explique la forme anti-HMGCR, la myosite sous inhibiteur de point de contrôle et l’absence d’infiltrat dans la myopathie de réanimation.
 3. **C03 — Interactions de l’atorvastatine incomplètes (FI avril 2025).** L’association au glécaprévir/pibrentasvir est **contre-indiquée**. Les plafonds sont de 10 mg/j avec la ciclosporine et de 20 mg/j avec le letermovir. Il faut éviter le gemfibrozil. Avec la daptomycine, la FI demande une interruption temporaire ou une CK deux à trois fois par semaine.
 4. **C04 — Posologie de la statine déclarée absente, alors que la FI la donne.** La dose initiale est de 10 mg, la dose maximale de 80 mg, avec un palier d’au moins 4 semaines. Si une CK supérieure à 5 fois la limite se confirme avant traitement, la statine n’est pas commencée.
@@ -34,7 +34,7 @@ Aucune erreur n’atteint le seuil d’une conduite dangereuse inventée. Les do
    | Intraveineuse | 20 mmol/h | 10 mmol/h et 40 mmol/L si K⁺ > 2,5 mmol/L |
 
    Le mannitol à 5 % n’est pas enregistré en Suisse.
-6. **C06 — Usages hors étiquette non signalés.** Le rituximab, les IgIV, l’abatacept, le salbutamol et l’hydrochlorothiazide sont dans ce cas ; les FI suisses datées ont été vérifiées.
+6. **C06 — Usages hors étiquette non signalés.** Le rituximab, les IgIV, l’abatacept, le salbutamol et l’hydrochlorothiazide sont dans ce cas ; les FI suisses datées ont été vérifiées. Les conditions de prise en charge de ces emplois ne sont fondées sur aucune source suisse lue : elles restent en lacune.
 7. **C07 — Le chiffre de « 85 % » est faux à quatre endroits, dont le `div.key`.**
 8. **C08 — Alternatives aux statines obsolètes.** L’acide bempédoïque manque (Nilemdo, indiqué en cas d’intolérance aux statines ; ESC/EAS 2025 ; CLEAR Outcomes). Les données en aveugle de la CTT 2022 manquent aussi : plus de 90 % des plaintes ne sont pas dues à la statine.
 9. **C09 — « Ptosis → myasthénie » est trompeur sous immunothérapie.** Le ptosis est présent chez 71,8 % des chevauchements publiés, dont la mortalité avoisine 40 %. L’évaluation cardiaque n’est pas prévue.
@@ -85,6 +85,15 @@ Aucune erreur n’atteint le seuil d’une conduite dangereuse inventée. Les do
 
 Aucune sensibilité ni spécificité des signes ne figure dans les sources lues. La proposition l’écrit explicitement.
 
+Réserve : le validateur `tools/starter_codex.py` exige au moins six boutons `data-s` dans pS ; `G72_c.html` en compte quatre, cinq après insertion.
+
+## Correctifs de la revue Codex (PR #195)
+
+- **A — Contrat de sémiologie.** Proposition restructurée selon le contrat et le validateur ; fenêtres déplacées vers `_pop2` ; marqueur clinique proposé pour pA.
+- **B — Réflexes conservés.** Reformulé fidèlement à S17 : ils font évoquer une autre cause et n’écartent pas à eux seuls une paralysie périodique.
+- **C — Garantie de prise en charge.** Exigence retirée de `G72_d_3.html` ; lacune maintenue.
+- **D — Registre des sources.** Les 29 entrées de `sources.json` portent tous les champs exigés ; les inconnues sont déclarées.
+
 ## Matrice des 20 rubriques (résumé)
 
 - **Couvertes :** 1, 3, 6, 10, 13, 14, 17, 19.
@@ -110,7 +119,7 @@ Le détail des ancres figure dans `rapport.json`.
 | Fichiers lus | 7/7 en entier ; empreintes conformes au manifeste |
 | Contrôles | `test_v7 --static` OK ; `audit_sciences` en échec (5 erreurs) |
 | Sources lues | 29, dont 15 FI suisses datées et 7 en texte intégral |
-| Propositions | 11 fichiers dans `propositions/` |
+| Propositions | 13 fichiers dans `propositions/` (aucun `_pop3`) |
 | Figures | 2 ANATOMIQUE_IA, 2 SCHEMA_NON_ANATOMIQUE |
 | Alertes | Sémiologie absente (bloquant pour la clôture) ; potassium au-delà des FI ; contre-indication glécaprévir/pibrentasvir absente |
 
