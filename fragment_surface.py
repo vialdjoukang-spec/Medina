@@ -257,7 +257,9 @@ def category_organisation_data(source, fragment, root):
                         for course in courses.values()],
             'organisation_url': '../organisation.html'}
     from nosologyEngine import attach_surface
-    return order_blocks(attach_surface(result_data, root))
+    # Noms d'affichage concis des catégories ; le libellé CIM officiel reste dans official_title.
+    from noms_categories import apply_category_names
+    return apply_category_names(order_blocks(attach_surface(result_data, root)))
 
 
 CATEGORY_ORDER = {
