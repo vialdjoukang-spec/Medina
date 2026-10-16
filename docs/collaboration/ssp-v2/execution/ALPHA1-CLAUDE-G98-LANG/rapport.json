@@ -1,0 +1,385 @@
+{
+  "mission": "ALPHA1-CLAUDE-G98-LANG",
+  "code": "G98",
+  "type_audit": "linguistique",
+  "base_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+  "generation": 1,
+  "branche": "claude/alpha1/g98-lang-g1",
+  "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G98-LANG",
+  "conversation": "alpha1-claude-g98-lang",
+  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+  "modele_effort": "conforme au manifeste",
+  "date_debut": null,
+  "date_fin": "2026-10-16T10:30:00Z",
+  "lecture": {
+    "fichiers": [
+      "chapters/G98/G98_a.html",
+      "chapters/G98/G98_b.html",
+      "chapters/G98/G98_c.html",
+      "chapters/G98/G98_d.html",
+      "chapters/G98/G98_pop1.html",
+      "chapters/G98/G98_pop2.html",
+      "glossary/g98.py"
+    ],
+    "empreintes_conformes": true,
+    "empreintes_calculees": {
+      "chapters/G98/G98_a.html": "b259d4893ecb7c671957b7ebf5af2d5c0749d77298a22e69d8c47a5fdba76d5e",
+      "chapters/G98/G98_b.html": "62a86053b3cd321530b2ef6a3985de32b5bb25718d79b1285e1b1643d164bdca",
+      "chapters/G98/G98_c.html": "3ff9b3b31fe349bd46c828ee508ab09dc86f1da5f8867864aa6c2eada859e558",
+      "chapters/G98/G98_d.html": "c6edefb91f0aac77ae005e7ecffaa47557fc78ecac0f2483fda39c58a3c72b56",
+      "chapters/G98/G98_pop1.html": "4dcbae2e918e8d219c90c91da6efac98f73f2292dee0525af0383ff9ff6c8702",
+      "chapters/G98/G98_pop2.html": "eb3fd509ed951418baa14d06ce3ea568dd3c0c3a416a374517499759edfa5d9e",
+      "glossary/g98.py": "0bc2b6990308ed64c120fb4b430a5c999048807b6d1c7f59cd55d51bbb9fabc8"
+    }
+  },
+  "premiere_verification": "Recalcul des SHA-256 des 7 fichiers contre .medina/missions/ALPHA1-CLAUDE-G98-LANG.json (tous conformes) ; lecture intégrale des 7 fichiers ; contrôle orthographique automatisé (pyspellchecker fr, 158 formes inconnues examinées : noms propres, termes médicaux et sigles, aucune faute) ; contrôle des abréviations par build_medina.audit() sur les six fichiers HTML avant (résultat {} partout) et après application simulée des 95 propositions (résultat {} partout).",
+  "synthese": {
+    "nombre_propositions": 95,
+    "renvois_medicaux": 21,
+    "propositions_par_categorie": {
+      "registre": 30,
+      "syntaxe": 28,
+      "cohérence": 16,
+      "répétition": 6,
+      "ambiguité": 5,
+      "grammaire": 5,
+      "ponctuation": 3,
+      "conjugaison": 2
+    },
+    "propositions_par_fichier": {
+      "chapters/G98/G98_a.html": 23,
+      "chapters/G98/G98_b.html": 25,
+      "chapters/G98/G98_c.html": 11,
+      "chapters/G98/G98_d.html": 12,
+      "chapters/G98/G98_pop1.html": 17,
+      "chapters/G98/G98_pop2.html": 7
+    },
+    "constats_hors_perimetre": 1
+  },
+  "propositions_fichier": "propositions.json",
+  "verification_unicite": {
+    "methode": "script Python : ancien.count(fichier) == 1 pour chacune des 95 propositions ; absence de chevauchement entre propositions d’un même fichier ; application simulée en mémoire puis comparaison de la suite des balises HTML (inchangée) et build_medina.audit() sur les six fichiers HTML",
+    "toutes_uniques": true,
+    "sans_chevauchement": true,
+    "balises_html_inchangees": true,
+    "audit_abreviations_apres_application": {}
+  },
+  "choix_differes": [
+    {
+      "id": "D-01",
+      "objet": "Espaces insécables",
+      "detail": "Aucun U+00A0 ni U+202F dans les sept fichiers. Devraient en recevoir : environ 193 « : », 187 « ; », 21 « ? », 19 paires de guillemets « », 57 « % », 14 « °C » (hors textes de liens) et les milliers (« 160 000 »). Correction globale mécanique à confier à l’intégration ; non proposée ligne par ligne pour ne pas créer des centaines d’anciens."
+    },
+    {
+      "id": "D-02",
+      "objet": "Unité ml/min",
+      "detail": "« ml/min » (4 occurrences) : écriture « mL/min » préférée par l’ISO ; la graphie « ml/min » est celle de l’information professionnelle suisse. Choix de l’intégration."
+    },
+    {
+      "id": "D-03",
+      "objet": "Encadrés « Piège » à l’infinitif",
+      "detail": "Huit encadrés « Piège » (sections 1, 6, 8 ×2, 13, anatomie, p-2, p-4) s’ouvrent par un infinitif nominalisé (« Coder… », « Écarter… »). STYLE_REDACTION § 2 proscrit l’infinitif injonctif ; l’infinitif est ici descriptif de l’erreur. Seule la construction agrammaticale de « Coder G98† » est proposée (P-23, P-45). Choix de style à trancher."
+    },
+    {
+      "id": "D-04",
+      "objet": "Listes Pareto",
+      "detail": "Les sept fenêtres Pareto sont des listes de formules nominales (fonction « fraction contractée »). Non réécrites."
+    },
+    {
+      "id": "D-05",
+      "objet": "Inamovible / non amovible",
+      "detail": "« botte plâtrée inamovible » (section 10, fenêtre QualiCCare) est conservé : terme du document suisse. « Dispositif inamovible » est harmonisé en « dispositif non amovible » (sept occurrences), terme dominant de la leçon."
+    },
+    {
+      "id": "D-06",
+      "objet": "Mentions « cellulite » et « PET-CT »",
+      "detail": "« Cellulite » est conservé entre parenthèses en section 8 (« dermo-hypodermite (cellulite) ») ; « PET/PET-CT » (glossaire) est conservé : le sigle francophone TEP n’est pas défini dans la leçon."
+    }
+  ],
+  "glossaire": "glossary/g98.py lu en entier : 35 entrées, développements littéraux lettre à lettre corrects ; seul constat : SAI développé en « Sans autre indication » alors que le texte écrit « sans autre précision » (voir R-03).",
+  "constats": [
+    {
+      "id": "R-01",
+      "fichier": "chapters/G98/G98_a.html",
+      "ancre": "Le risque de l’oublier est documenté en Suisse",
+      "categorie": "provenance/chronologie",
+      "explication": "La série de 71 cas est présentée comme « documenté[e] en Suisse » (section 0), « suisse-allemande » (sections 8, 10, e-5, Pareto) et « de la Swiss Medical Weekly (clinique de Düsseldorf) » (section 4). Düsseldorf n’est pas en Suisse et « suisse-allemande » désigne ambiguëment une origine alémanique ; la revue est suisse, la série ne l’est vraisemblablement pas. Toute reformulation fixe un fait de provenance : à trancher par l’audit médical (Chantelau et Richter, Swiss Med Wkly 2013).",
+      "nature": "renvoi_medical",
+      "fichiers_concernes": [
+        "chapters/G98/G98_a.html",
+        "chapters/G98/G98_b.html",
+        "chapters/G98/G98_c.html"
+      ],
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-02",
+      "fichier": "chapters/G98/G98_a.html",
+      "ancre": "avaient retardé l’adressage à cinq mois",
+      "categorie": "chronologie",
+      "explication": "« Retarder l’adressage à cinq mois » est ambigu : retard de cinq mois, ou adressage tardif au cinquième mois de l’évolution. La formule se répète (sections 0, 8, e-3, e-5, Pareto Examens). Seule la source primaire tranche ; la reformulation est un choix de fond.",
+      "nature": "renvoi_medical",
+      "fichiers_concernes": [
+        "chapters/G98/G98_a.html",
+        "chapters/G98/G98_b.html",
+        "chapters/G98/G98_c.html",
+        "chapters/G98/G98_pop2.html"
+      ],
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-03",
+      "fichier": "chapters/G98/G98_a.html",
+      "ancre": "l’« affection du système nerveux sans autre précision » (SAI)",
+      "categorie": "terminologie",
+      "explication": "Le libellé cité est « sans autre précision », l’abréviation SAI est développée dans le glossaire en « Sans autre indication » (g98.py). Les deux ne coïncident pas ; seul le libellé officiel de l’OFS 2024 permet de choisir entre « précision » et « indication » (et de corriger le texte ou le glossaire).",
+      "nature": "renvoi_medical",
+      "fichiers_concernes": [
+        "chapters/G98/G98_a.html"
+      ],
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-04",
+      "fichier": "chapters/G98/G98_a.html",
+      "ancre": "exclut expressément l’arthropathie de Charcot (G98†, M14.6-*)",
+      "categorie": "classification",
+      "explication": "La phrase dit que A52.1 inclut l’arthropathie syphilitique (tabétique) et exclut « l’arthropathie de Charcot », alors que le tableau de la même section code le Charcot tabétique A52.1† + M14.6-*. « Arthropathie de Charcot » désigne dans l’exclusion le Charcot non syphilitique, mais le texte ne le dit pas ; la conclusion « les deux codes ne se recouvrent donc pas » reste obscure. Fait de classification : à trancher à la source (BfArM, OFS).",
+      "nature": "renvoi_medical",
+      "fichiers_concernes": [
+        "chapters/G98/G98_a.html",
+        "chapters/G98/G98_pop1.html"
+      ],
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-05",
+      "fichier": "chapters/G98/G98_a.html",
+      "ancre": "la récidive 13,6 %",
+      "categorie": "ambiguïté de fond",
+      "explication": "« La récidive 13,6 % » n’indique pas ce qui récidive (ulcère, Charcot, déformation). La phrase suivante parle de « récidive d’ulcère » pour le diabète ; l’identification relève de la source (Gratwohl et al. 2022).",
+      "nature": "renvoi_medical",
+      "fichiers_concernes": [
+        "chapters/G98/G98_a.html"
+      ],
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-06",
+      "fichier": "chapters/G98/G98_a.html",
+      "ancre": "c’est-à-dire une baisse de la sensibilité douloureuse et de la proprioception",
+      "categorie": "définition",
+      "explication": "« C’est-à-dire » pose l’équivalence entre polyneuropathie et perte de deux modalités sensitives ; une polyneuropathie ne s’y réduit pas. Une reformulation (« qui se traduit par ») change la portée de la définition : à décider par l’audit médical.",
+      "nature": "renvoi_medical",
+      "fichiers_concernes": [
+        "chapters/G98/G98_a.html"
+      ],
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-07",
+      "fichier": "chapters/G98/G98_a.html",
+      "ancre": "des ostéoclastes très agressifs sont recrutés",
+      "categorie": "métaphore/terme",
+      "explication": "« Agressifs » est une métaphore qui revient dans la section 5, la biologie osseuse, les fenêtres et le Pareto. Le terme technique (hyperactifs, suractivés) n’est pas synonyme : choisir exige de relire la source (Rosskopf et al. 2019).",
+      "nature": "renvoi_medical",
+      "fichiers_concernes": [
+        "chapters/G98/G98_a.html",
+        "chapters/G98/G98_c.html",
+        "chapters/G98/G98_pop1.html"
+      ],
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-08",
+      "fichier": "chapters/G98/G98_b.html",
+      "ancre": "(4 °F) est utilisée comme seuil d’activité",
+      "categorie": "unité",
+      "explication": "L’équivalent en degrés Fahrenheit n’a pas d’usage en Suisse et n’est pas une unité SI ; de plus 2 °C d’écart correspondent à 3,6 °F, non à 4 °F (arrondi dans la source ?). Retirer ou corriger la valeur revient à modifier un chiffre : décision médicale. Même formulation dans la fenêtre g98-thermometrie.",
+      "nature": "renvoi_medical",
+      "fichiers_concernes": [
+        "chapters/G98/G98_b.html",
+        "chapters/G98/G98_pop1.html"
+      ],
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-09",
+      "fichier": "chapters/G98/G98_b.html",
+      "ancre": "CRP souvent normale ou élevée sans spécificité",
+      "categorie": "logique de l’énoncé",
+      "explication": "« Souvent normale ou élevée » couvre toutes les valeurs possibles et ne dit rien ; la source n’a pas été relue dans cet audit linguistique et l’énoncé reste tautologique tel quel. Même énoncé dans e-1 et e-4 (« souvent normaux ou élevés »). À reprendre à la source.",
+      "nature": "renvoi_medical",
+      "fichiers_concernes": [
+        "chapters/G98/G98_b.html",
+        "chapters/G98/G98_c.html"
+      ],
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-10",
+      "fichier": "chapters/G98/G98_b.html",
+      "ancre": "Il n’y a pas de fixation interne en cas d’infection ou d’ulcère, et pas de chirurgie en l’absence d’ulcération et d’instabilité.",
+      "categorie": "ambiguïté de fond",
+      "explication": "« Il n’y a pas de » peut vouloir dire « il ne faut pas » (contre-indication) ou « il n’existe pas d’indication ». La seconde proposition, « en l’absence d’ulcération et d’instabilité », signifie-t-elle l’absence des deux ou de l’une ? Les deux lectures ont des conséquences cliniques différentes : renvoi à l’audit médical.",
+      "nature": "renvoi_medical",
+      "fichiers_concernes": [
+        "chapters/G98/G98_b.html"
+      ],
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-11",
+      "fichier": "chapters/G98/G98_b.html",
+      "ancre": "le Charcot non diabétique (prise en charge spécifique)",
+      "categorie": "omission",
+      "explication": "La parenthèse suggère qu’une prise en charge spécifique existe, alors que la phrase conclut que les sources ne donnent aucune conduite. Reformuler (« dont la prise en charge peut être spécifique », ou retrait de la parenthèse) revient à trancher un fait.",
+      "nature": "renvoi_medical",
+      "fichiers_concernes": [
+        "chapters/G98/G98_b.html"
+      ],
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-12",
+      "fichier": "chapters/G98/G98_c.html",
+      "ancre": "Pourquoi la CNO prend-elle toujours le même visage ?",
+      "categorie": "généralisation",
+      "explication": "« Toujours » et « le même visage » sont imagés et absolus ; la section 3 décrit cinq zones anatomiques, quatre classes de Chantelau et plusieurs stades. La question fait une prémisse non sourcée ; la reformuler fixe une proposition de fond.",
+      "nature": "renvoi_medical",
+      "fichiers_concernes": [
+        "chapters/G98/G98_c.html"
+      ],
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-13",
+      "fichier": "chapters/G98/G98_c.html",
+      "ancre": "Cette lecture a une portée pronostique",
+      "categorie": "stade/grade",
+      "explication": "La phrase passe du « grade 0 / grade 1 » de l’IRM (Chantelau et Grützner 2014) aux chiffres 69 % et 7 % « au stade 0 / stade 1 » de la série de 2013, qui n’est pas fondée sur ce grade. Le lien « cette lecture » → 69 %/7 % peut être un amalgame de deux classifications ; à vérifier aux sources.",
+      "nature": "renvoi_medical",
+      "fichiers_concernes": [
+        "chapters/G98/G98_c.html",
+        "chapters/G98/G98_a.html"
+      ],
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-14",
+      "fichier": "chapters/G98/G98_b.html",
+      "ancre": "Le document suisse concorde : les données sont insuffisantes",
+      "categorie": "cohérence interne",
+      "explication": "La section 11 écrit que le document suisse « concorde » avec une recommandation forte de ne pas utiliser les antirésorptifs ; la section p-1 écrit qu’il « ne contredit pas » mais « nuance la force ». Deux caractérisations différentes de la même relation ; l’accord ou la nuance relève de la source.",
+      "nature": "renvoi_medical",
+      "fichiers_concernes": [
+        "chapters/G98/G98_b.html",
+        "chapters/G98/G98_d.html"
+      ],
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-15",
+      "fichier": "chapters/G98/G98_a.html",
+      "ancre": "Cet écart chiffre ce que coûte une radiographie normale prise pour une preuve d’absence de maladie.",
+      "categorie": "causalité",
+      "explication": "L’écart 69 %/7 % compare des patients selon le stade à la prise en charge ; il n’isole pas l’effet d’une radiographie normale mal interprétée. Le « coût » est une inférence de l’auteur. À sourcer ou à retirer par l’audit médical.",
+      "nature": "renvoi_medical",
+      "fichiers_concernes": [
+        "chapters/G98/G98_a.html"
+      ],
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-16",
+      "fichier": "chapters/G98/G98_c.html",
+      "ancre": "La thermométrie sérielle des deux pieds sert au suivi, non au diagnostic initial.",
+      "categorie": "cohérence interne",
+      "explication": "Contredit la section 7 (la thermométrie y fournit le seuil d’activité qui oriente le diagnostic) et la fenêtre g98-thermometrie (« recommandations conditionnelles, de faible certitude, pour le diagnostic et le suivi »). L’énoncé dépend de ce que l’IWGDF recommande réellement : fond.",
+      "nature": "renvoi_medical",
+      "fichiers_concernes": [
+        "chapters/G98/G98_c.html",
+        "chapters/G98/G98_b.html",
+        "chapters/G98/G98_pop1.html"
+      ],
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-17",
+      "fichier": "chapters/G98/G98_b.html",
+      "ancre": "la température dépasse de plus de 2 °C celle du pied sain",
+      "categorie": "seuil",
+      "explication": "Le seuil est dit « supérieur à 2 °C » (section 7), « de 2 °C » (même section et fenêtre), « ≥ 2 °C » (paramètres clés), « inférieure à 2 °C » pour le pied chronique. Inclusif ou exclusif ? Un chiffre ne se corrige pas par l’audit linguistique.",
+      "nature": "renvoi_medical",
+      "fichiers_concernes": [
+        "chapters/G98/G98_b.html",
+        "chapters/G98/G98_pop1.html"
+      ],
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-18",
+      "fichier": "chapters/G98/G98_a.html",
+      "ancre": "Le pronostic dépend de l’évolution des lésions cutanées.",
+      "categorie": "logique de l’énoncé",
+      "explication": "La phrase ouvre un paragraphe qui commence par la mortalité à cinq ans (29 %), l’amputation et la survie, sans lien établi avec les « lésions cutanées ». Soit la phrase résume un propos de la source, soit elle doit être reliée ou retirée ; fond.",
+      "nature": "renvoi_medical",
+      "fichiers_concernes": [
+        "chapters/G98/G98_a.html"
+      ],
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-19",
+      "fichier": "chapters/G98/G98_b.html",
+      "ancre": "un dispositif sur mesure monté sous le genou est recommandé",
+      "categorie": "terminologie anatomique",
+      "explication": "« Monté sous le genou » est ambigu (jusqu’au genou ? en dessous du genou ?) et contraste avec « jusqu’au genou » pour la décharge. À préciser d’après le consensus IWGDF.",
+      "nature": "renvoi_medical",
+      "fichiers_concernes": [
+        "chapters/G98/G98_b.html"
+      ],
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-20",
+      "fichier": "chapters/G98/G98_b.html",
+      "ancre": "la guérison clinique précédait la guérison à l’IRM de 3 à 6 mois chez 23 % des patients",
+      "categorie": "chiffre répété",
+      "explication": "Le chiffre 23 % revient pour la réactivation (« environ 23 % des patients, en moyenne à 27 mois ») avec un autre dénominateur. Coïncidence ou erreur de report : à vérifier dans Rosskopf et al. 2019 ; le linguistique ne peut ni corriger ni confirmer.",
+      "nature": "renvoi_medical",
+      "fichiers_concernes": [
+        "chapters/G98/G98_b.html",
+        "chapters/G98/G98_pop1.html"
+      ],
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-21",
+      "fichier": "chapters/G98/G98_d.html",
+      "ancre": "justifie une discussion avec le prescripteur",
+      "categorie": "conduite non sourcée",
+      "explication": "« Justifie une discussion avec le prescripteur » est une conduite, immédiatement suivie de « les sources lues ne donnent pas de conduite pour ce cas ». Contradiction à lever par l’audit médical (retirer la conduite ou la sourcer).",
+      "nature": "renvoi_medical",
+      "fichiers_concernes": [
+        "chapters/G98/G98_d.html"
+      ],
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "H-01",
+      "fichier": "moteur (pager)",
+      "ancre": "← Îlot précédent / Îlot suivant →",
+      "categorie": "registre",
+      "explication": "Les libellés de pagination contiennent « Îlot » (fabrication du cours, STYLE_REDACTION § 3). Ils sont générés par le gabarit des quatre onglets et ne se corrigent pas dans les sept fichiers de la leçon.",
+      "nature": "hors_perimetre"
+    }
+  ],
+  "lacunes": [
+    "Aucune source médicale n’a été relue : l’audit est linguistique et ne vérifie aucun fait. Les 21 renvois ne sont pas tranchés.",
+    "Le libellé officiel « SAI » de la CIM-10-GM 2024 (OFS/BfArM) n’a pas été consulté (R-03, R-04).",
+    "Aucune figure ni image dans la leçon : sans objet pour les légendes.",
+    "Rendu navigateur non vérifié : l’audit porte sur le source HTML."
+  ],
+  "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+}
