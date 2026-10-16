@@ -213,8 +213,9 @@ html[data-medina-fragment][data-medina-fragment][data-medina-fragment] body .nos
 .nosology-course-star{padding:.65rem 1rem;background:#fbf7e9;border-radius:.5rem;color:#725606;font-size:.85rem}
 .mcg-home>.nosology-gauges{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;border-bottom:1px solid #dbe3de;margin-bottom:1.5rem}
 @media(max-width:700px){.mcg-home>.nosology-gauges{grid-template-columns:1fr;gap:0}}
-/* Compact category containers only. Titles remain complete and course typography is untouched. */
-html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(#content,#modal-body) .mcg-category-card{min-height:104px!important;height:auto;padding:10px 12px!important;border-radius:12px!important}
+/* Compact category containers only. Titles remain complete and course typography is untouched.
+   Hauteur dictée par le contenu (16.10.2026) ; colonnes et gabarit fin : engine/couleurs_premium.css, « Cartes compactes ». */
+html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(#content,#modal-body) .mcg-category-card{min-height:0!important;height:auto;padding:10px 12px 8px!important;border-radius:10px!important}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(#content,#modal-body) .mcg-category-card h2{font-size:16px!important;line-height:1.4!important;margin:8px 0 10px!important;overflow-wrap:break-word}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(#content,#modal-body) .mcg-category-card .mcg-category-number{min-width:24px;min-height:24px;padding:0 5px}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(#content,#modal-body) .mcg-category-card .mcg-code{padding:3px 6px!important}
@@ -223,7 +224,7 @@ html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medi
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body #content .mcg-home .mcg-block-heading h2{font-size:24px!important;line-height:1.25!important;margin:5px 0 0!important;overflow-wrap:break-word}
 html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body #content .mcg-home .mcg-block-heading .mcg-section-count{margin-top:0;flex-shrink:0}
 @media(max-width:700px){
- html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(#content,#modal-body) .mcg-category-card{min-height:96px!important;padding:9px 10px!important}
+ html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(#content,#modal-body) .mcg-category-card{min-height:0!important;padding:10px 12px 8px!important}
  html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body :is(#content,#modal-body) .mcg-category-card h2{font-size:15px!important}
  html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body #content .mcg-home .mcg-block-heading{padding:12px 14px!important}
  html[data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment][data-medina-fragment] body #content .mcg-home .mcg-block-heading h2{font-size:21px!important}

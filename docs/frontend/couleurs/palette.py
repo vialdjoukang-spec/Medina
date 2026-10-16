@@ -73,52 +73,63 @@ def dans_gamut(L, C, h):
 # 6 500 K, sur le locus des lumières du jour (Duv ≈ +0,003) : ni bleutés froids (> 6 600 K), ni
 # crème jaunie (< 5 500 K). Les anciens neutres (teintes 160 et 250-255) mesuraient 6 530 K avec une
 # dérive verte (Duv +0,0047) pour le papier, puis 6 800 à 13 400 K (bleutés) pour filets et encres.
-NEUTRE_H = 80
+#
+# Thème par défaut « Bleu ciel pâle ravivé » (choix de Vial, 16.10.2026) : il remplace le papier
+# neutre chaud ci-dessus (conservé dans PALETTE.md, section historique). Fond d’une pâleur extrême
+# (#f2fdff, C 0,012), encart #e7f7ff, filets et contours ravivés dans une seule teinte ciel (~235°),
+# cartes en blanc D65. Le texte courant reste quasi achromatique (C ≤ 0,012) : la teinte ciel ne
+# porte que les fonds et les bords, jamais la lecture.
+THEME = 'Bleu ciel pâle ravivé'
+NEUTRE_H = 235.5
 NEUTRES = [
     ('--n-surface', 1.000, 0.000, NEUTRE_H, 'Cartes, îlots, fenêtres, Navigo (blanc D65)'),
-    ('--n-paper', 0.976, 0.004, NEUTRE_H, 'Fond de page (surface de validation)'),
-    ('--n-sunken', 0.957, 0.005, NEUTRE_H, 'Encarts, puits, jauges informatives, survol neutre'),
-    ('--n-line-soft', 0.912, 0.004, NEUTRE_H, 'Séparations décoratives (non interactives)'),
-    ('--n-line', 0.862, 0.005, NEUTRE_H, 'Bordures de cartes, de tableaux et d’îlots'),
-    ('--n-line-strong', 0.595, 0.006, NEUTRE_H, 'Contours interactifs (≥ 3:1 sur surface, papier et encart)'),
-    ('--ink-3', 0.480, 0.005, NEUTRE_H, 'Texte atténué (≥ 4,5:1 sur encart)'),
-    ('--ink-2', 0.360, 0.005, NEUTRE_H, 'Texte courant de l’interface'),
-    ('--ink-1', 0.215, 0.004, NEUTRE_H, 'Encre primaire, titres de l’interface'),
+    ('--n-paper', 0.986, 0.012, 210.0, 'Fond de page, bleu ciel d’une pâleur extrême (surface de validation)'),
+    ('--n-sunken', 0.967, 0.020, 229.0, 'Encarts, puits, jauges informatives, survol neutre'),
+    ('--n-line-soft', 0.880, 0.026, NEUTRE_H, 'Séparations décoratives (non interactives), même teinte que le filet'),
+    ('--n-line', 0.740, 0.045, NEUTRE_H, 'Bordures de cartes, de tableaux et d’îlots (ravivées)'),
+    ('--n-line-strong', 0.539, 0.071, NEUTRE_H, 'Contours interactifs (≥ 3:1 sur surface, papier et encart)'),
+    ('--ink-3', 0.480, 0.010, NEUTRE_H, 'Texte atténué (≥ 4,5:1 sur encart)'),
+    ('--ink-2', 0.360, 0.010, NEUTRE_H, 'Texte courant de l’interface'),
+    ('--ink-1', 0.215, 0.008, NEUTRE_H, 'Encre primaire, titres de l’interface'),
 ]
-SURFACES_PAPIER = ('--n-surface', '--n-paper', '--n-sunken')   # C ≤ 0,012 et 5 500 K ≤ TCP ≤ 6 600 K
-# Ombres : lumière du jour venant d’en haut (décalage vers le bas, liseré clair en haut), couleur
-# = surface assombrie (même teinte que le papier), jamais un gris bleuâtre.
-OMBRE = (0.240, 0.008, NEUTRE_H)
-VOILE = (0.220, 0.008, NEUTRE_H, 0.55)
+SURFACES_PAPIER = ('--n-surface', '--n-paper', '--n-sunken')   # pâleur extrême : L ≥ 0,96, C ≤ 0,025
+TEINTE_CIEL = (200, 245)    # famille de teinte des fonds, filets, ombres et voile du thème
+# Ombres : lumière venant d’en haut (décalage vers le bas, liseré clair en haut), couleur = papier
+# ciel assombri (même famille de teinte), jamais un gris neutre plaqué sur un fond bleuté.
+OMBRE = (0.260, 0.030, NEUTRE_H)
+VOILE = (0.230, 0.030, NEUTRE_H, 0.55)
 PAPIER = oklch_hex(*NEUTRES[1][1:4])[0]   # fond de page rendu (--n-paper), surface de validation
 MARQUE_H = 158.4            # teinte OKLCH de #1f3428, ancre historique de Medina
+# Ravivage du 16.10.2026 : chroma de la rampe × 1,30 (sauf l’ancre 700, inchangée).
 MARQUE = [  # pas, L, C — le pas 700 est l’ancre exacte #1f3428
-    (50, 0.975, 0.010), (100, 0.948, 0.022), (200, 0.895, 0.038), (300, 0.810, 0.058),
-    (400, 0.690, 0.078), (500, 0.580, 0.088), (600, 0.470, 0.080), (700, None, None), (800, 0.235, 0.028),
+    (50, 0.975, 0.013), (100, 0.948, 0.029), (200, 0.895, 0.049), (300, 0.810, 0.075),
+    (400, 0.690, 0.101), (500, 0.580, 0.114), (600, 0.470, 0.104), (700, None, None), (800, 0.235, 0.036),
 ]
 ANCRE = '#1f3428'
 
 # ------------------------------------------------------------------ 23 emplacements catégoriels
-# (nom, L, C, h) — luminosité égalisée (bande 0,52–0,58, vision photopique), chroma 0,102 à 0,120 (plafond 0,12 :
-# sobriété). Recuit du 16.10.2026 : voisins de rang, colonnes de 3 et 4 et ordre de l’Accueil passent le validateur
-# (CVD ≥ 6,6, vision normale ≥ 15,6), voisins verticaux de l’Accueil en 2 et 3 colonnes ≥ 7 (vision normale),
-# écart minimal toutes paires ≥ 3,6, cibles sémantiques des spécialités (recuit.py, graine 76).
+# (nom, L, C, h) — luminosité égalisée (bande 0,52–0,58, vision photopique). Thème « Bleu ciel pâle ravivé »
+# (16.10.2026) : chroma visée 0,18 (CHROMA_REPERES), bornée par le gamut sRGB à luminosité égale (ocres et
+# cyans plafonnent vers 0,10–0,13) ; chroma moyenne 0,157 contre 0,116 (+35 %). Recuit (recuit.py --chroma 0.18
+# --vivacite 1500 --semantique 4 --cvd 6.8 --toutes-paires 3.75 --colonnes 8.1, graine 202) : voisins de rang,
+# colonnes de 3 et 4 et ordre de l’Accueil passent le validateur (CVD ≥ 7,7, vision normale ≥ 15,6), voisins
+# verticaux de l’Accueil en 2 et 3 colonnes ≥ 8,1, écart minimal toutes paires ≥ 5,5, cibles sémantiques.
 EMPLACEMENTS = [
-    ('moutarde', 0.522, 0.108, 100.4), ('petrole', 0.531, 0.102, 226.8), ('vieux-rose', 0.578, 0.120, 10.7),
-    ('lagon', 0.578, 0.102, 215.4), ('prune', 0.522, 0.120, 349.7), ('olive', 0.578, 0.120, 106.8),
-    ('amethyste', 0.522, 0.120, 296.9), ('ambre', 0.522, 0.110, 74.9), ('bleuet', 0.541, 0.120, 249.6),
-    ('brique', 0.522, 0.120, 31.2), ('jade', 0.578, 0.102, 183.1), ('orchidee', 0.522, 0.120, 330.3),
-    ('emeraude', 0.578, 0.120, 165.8), ('pervenche', 0.569, 0.120, 285.2), ('ocre', 0.578, 0.118, 85.9),
-    ('saphir', 0.578, 0.120, 255.1), ('rouille', 0.522, 0.120, 56.9), ('malachite', 0.522, 0.106, 167.4),
-    ('rose', 0.578, 0.120, 349.3), ('sapin', 0.578, 0.120, 147.6), ('violet', 0.578, 0.120, 305.2),
-    ('cuivre', 0.559, 0.120, 69.9), ('indigo', 0.522, 0.120, 274.5),
+    ('sapin', 0.578, 0.180, 144.9), ('azur', 0.578, 0.132, 240.1), ('framboise', 0.578, 0.180, 358.1),
+    ('lagon', 0.578, 0.102, 215.5), ('carmin', 0.522, 0.180, 357.5), ('olive', 0.522, 0.112, 107.9),
+    ('amethyste', 0.578, 0.180, 296.7), ('ocre', 0.578, 0.118, 86.3), ('outremer', 0.569, 0.180, 274.2),
+    ('garance', 0.578, 0.180, 15.7), ('jade', 0.578, 0.102, 184.2), ('orchidee', 0.531, 0.180, 330.3),
+    ('malachite', 0.531, 0.108, 167.6), ('violet', 0.522, 0.180, 305.0), ('cuivre', 0.578, 0.133, 61.7),
+    ('bleuet', 0.578, 0.175, 252.4), ('corail', 0.578, 0.180, 37.2), ('emeraude', 0.578, 0.132, 159.2),
+    ('rose', 0.578, 0.180, 340.5), ('prairie', 0.531, 0.149, 149.2), ('saphir', 0.522, 0.180, 256.5),
+    ('brique', 0.522, 0.180, 35.5), ('pervenche', 0.522, 0.180, 285.0),
 ]
 # Une teinte par spécialité (identité fixe, Accueil et fragment). Toujours accompagnée du nom.
 SPECIALITES = {
-    'S01': 'brique', 'S02': 'bleuet', 'S03': 'jade', 'S04': 'lagon', 'S05': 'ocre', 'S06': 'rose',
-    'S07': 'indigo', 'S08': 'pervenche', 'S09': 'violet', 'S10': 'moutarde', 'S11': 'vieux-rose', 'S12': 'petrole',
-    'S13': 'saphir', 'S14': 'prune', 'S15': 'amethyste', 'S16': 'cuivre', 'T1': 'sapin', 'T2': 'olive',
-    'T3': 'rouille', 'T4': 'ambre', 'T5': 'emeraude', 'T6': 'malachite', 'T7': 'orchidee',
+    'S01': 'carmin', 'S02': 'bleuet', 'S03': 'jade', 'S04': 'lagon', 'S05': 'ocre', 'S06': 'garance',
+    'S07': 'outremer', 'S08': 'pervenche', 'S09': 'violet', 'S10': 'prairie', 'S11': 'framboise', 'S12': 'azur',
+    'S13': 'saphir', 'S14': 'rose', 'S15': 'amethyste', 'S16': 'cuivre', 'T1': 'sapin', 'T2': 'olive',
+    'T3': 'corail', 'T4': 'brique', 'T5': 'emeraude', 'T6': 'malachite', 'T7': 'orchidee',
 }
 # Couleurs de catégorie posées par engine/atlas_v2.js (rang 0..19) → emplacement du même rang.
 ATLAS_V2 = ['#C2185B', '#1565C0', '#2E7D32', '#BF360C', '#6A1B9A', '#00796B', '#C62828', '#283593', '#8E5A00', '#AD1457',
@@ -131,18 +142,20 @@ ENCRE_L = 0.430             # encre de chaque teinte (texte) : luminosité uniqu
 # Faible acuité des cônes S : pas de bleu saturé pour du texte. Les encres bleues à violettes
 # (teintes 215 à 300) sont plafonnées à C 0,080 ; leur lisibilité repose sur le contraste de
 # luminance (voies L + M), non sur la chroma.
-BLEUS, ENCRE_C_BLEU = (215, 300), 0.080
-CHROMA_PLAFOND = 0.150      # aucune couleur « néon » : plafond global (repères 0,12 ; or 0,145)
-TEINTE_CLAIRE = (0.975, 0.012)   # fond teinté (L, C)
-TEINTE_SELECTION = (0.945, 0.028)
+# Ravivage : plafond porté à 0,100 (+25 %), toujours sous la chroma des encres chaudes.
+BLEUS, ENCRE_C_BLEU = (215, 300), 0.100
+CHROMA_REPERES = 0.180      # chroma visée des repères (thème ravivé : 0,12 → 0,18, bornée par le gamut sRGB)
+CHROMA_PLAFOND = 0.190      # aucune couleur « néon » : plafond global (repères 0,18 ; or 0,145)
+TEINTE_CLAIRE = (0.975, 0.016)   # fond teinté (L, C) — ravivé (+0,004)
+TEINTE_SELECTION = (0.945, 0.036)   # ravivé (+0,008)
 
 # ------------------------------------------------------------------ statuts, jauges, or, leçon
 STATUTS = [  # nom, (L, C, h) encre, (L, C, h) fond, libellé, forme
-    ('ok', (0.470, 0.100, 150), (0.962, 0.026, 150), 'Disponible', 'disque plein'),
-    ('prep', (0.480, 0.005, NEUTRE_H), (0.957, 0.005, NEUTRE_H), 'En préparation', 'cercle vide'),
-    ('prov', (0.490, 0.105, 62), (0.962, 0.032, 80), 'Provisoire', 'demi-disque'),
+    ('ok', (0.470, 0.128, 150), (0.962, 0.034, 150), 'Disponible', 'disque plein'),
+    ('prep', (0.480, 0.010, NEUTRE_H), (0.967, 0.020, 229.0), 'En préparation', 'cercle vide'),
+    ('prov', (0.490, 0.119, 56), (0.962, 0.034, 80), 'Provisoire', 'demi-disque'),
 ]
-JAUGE = [(400, 0.690, 0.078), (500, 0.580, 0.088), (600, 0.470, 0.080), (700, 0.380, 0.060)]   # rampe de la marque
+JAUGE = [(400, 0.690, 0.101), (500, 0.580, 0.114), (600, 0.470, 0.104), (700, 0.380, 0.078)]   # ravivée × 1,30   # rampe de la marque
 OR = [(100, 0.965, 0.050, 92), (300, 0.880, 0.120, 88), (500, 0.760, 0.145, 80), (600, 0.640, 0.130, 72), (700, 0.520, 0.105, 65), (800, 0.400, 0.075, 62)]
 LECON = [  # rôles sémantiques des cours, valeurs historiques conservées (règles de Vial)
     ('--lesson-ink', '#0f2c66', 'Corps des cours du cycle (bleu marine renforcé)'),
@@ -202,7 +215,7 @@ def debordement():
         _, a, bb = vp.lin2oklab(r, g, b)
         h = round(math.degrees(math.atan2(bb, a)) % 360, 1)
         L = (BANDE_REPERES[0], sum(BANDE_REPERES) / 2, BANDE_REPERES[1])[i % 3]   # même bande que les emplacements
-        out.append((f'debord-{i + 1}', L, math.floor(min(0.11, chroma_max(L, h, 0.11)) * 1000) / 1000, h, src))
+        out.append((f'debord-{i + 1}', L, math.floor(min(0.14, chroma_max(L, h, 0.14)) * 1000) / 1000, h, src))   # ravivé : 0,11 → 0,14
     return out
 
 
@@ -225,9 +238,9 @@ def tokens():
     t = []
     for nom, L, C, h, role in NEUTRES:
         t.append((nom, pas(L, C, h), f'oklch({L:.3f} {C:.3f} {h})', role))
-    t.append(('--n-shadow', pas(*OMBRE), 'oklch(%.3f %.3f %d)' % OMBRE, 'Couleur des ombres (papier assombri)'))
+    t.append(('--n-shadow', pas(*OMBRE), 'oklch(%.3f %.3f %g)' % OMBRE, 'Couleur des ombres (papier ciel assombri)'))
     r, g, b = (int(pas(*VOILE[:3])[i:i + 2], 16) for i in (1, 3, 5))
-    t.append(('--n-veil', f'rgb({r} {g} {b} / {VOILE[3]})', 'oklch(%.3f %.3f %d / %.2f)' % VOILE, 'Voile des fenêtres (papier assombri, 55 %)'))
+    t.append(('--n-veil', f'rgb({r} {g} {b} / {VOILE[3]})', 'oklch(%.3f %.3f %g / %.2f)' % VOILE, 'Voile des fenêtres (papier ciel assombri, 55 %)'))
     for p, L, C in MARQUE:
         x = ANCRE if L is None else pas(L, C, MARQUE_H)
         t.append((f'--brand-{p}', x, 'ancre #1f3428' if L is None else f'oklch({L:.3f} {C:.3f} {MARQUE_H})', 'Rampe de la marque'))
@@ -238,8 +251,8 @@ def tokens():
         t.append((f'--cat-{i:02d}-tint', e['claire'], f"L {TEINTE_CLAIRE[0]}", 'Fond teinté'))
         t.append((f'--cat-{i:02d}-sel', e['selection'], f"L {TEINTE_SELECTION[0]}", 'Fond sélectionné'))
     for nom, encre, fond, lib, forme in STATUTS:
-        t.append((f'--status-{nom}', pas(*encre), 'oklch(%.3f %.3f %d)' % encre, f'Statut « {lib} » ({forme})'))
-        t.append((f'--status-{nom}-bg', pas(*fond), 'oklch(%.3f %.3f %d)' % fond, 'Fond du statut'))
+        t.append((f'--status-{nom}', pas(*encre), 'oklch(%.3f %.3f %g)' % encre, f'Statut « {lib} » ({forme})'))
+        t.append((f'--status-{nom}-bg', pas(*fond), 'oklch(%.3f %.3f %g)' % fond, 'Fond du statut'))
     for p, L, C in JAUGE:
         t.append((f'--gauge-{p}', pas(L, C, MARQUE_H), f'oklch({L:.3f} {C:.3f} {MARQUE_H})', 'Rampe séquentielle des jauges'))
     for p, L, C, h in OR:
@@ -408,18 +421,24 @@ def photopique(vp):
     """Contrôles de l’exigence « œil humain normal, de jour » : (libellé, valeur, réussite)."""
     T = {n: x for n, x, _, _ in tokens()}
     res = []
+    # Thème « Bleu ciel pâle ravivé » (Vial, 16.10.2026) : fonds d’une pâleur extrême, une seule famille
+    # de teinte ciel pour fonds, filets, ombres et voile ; texte courant quasi achromatique.
+    def teinte(x):
+        r, g, b = vp.lin(x)
+        _, a_, b_ = vp.lin2oklab(r, g, b)
+        return math.degrees(math.atan2(b_, a_)) % 360
     for nom in SURFACES_PAPIER:
         L, C = vp.oklch(T[nom])
         k, duv = tcp(T[nom])
-        res.append((f'{nom} chroma ≤ 0,012', f'C {C:.4f}', C <= 0.012))
-        res.append((f'{nom} 5 500 K ≤ TCP ≤ 6 600 K, Duv 0 à +0,005 (lumière du jour, ni bleuté ni crème)',
-                    f'{k} K, Duv {duv:+.4f}', 5500 <= k <= 6600 and 0 <= duv <= 0.005))
-    for nom in [n for n, *_ in NEUTRES] + ['--status-prep', '--status-prep-bg']:
+        res.append((f'{nom} pâleur extrême (L ≥ 0,96, C ≤ 0,025)', f'L {L:.3f}, C {C:.4f} · {k} K', L >= 0.96 and C <= 0.025))
+    for nom in [n for n, *_ in NEUTRES[1:6]] + ['--n-shadow', '--status-prep-bg']:
+        h = teinte(T[nom])
+        res.append((f'{nom} dans la famille ciel ({TEINTE_CIEL[0]}–{TEINTE_CIEL[1]}°)', f'h {h:.1f}', TEINTE_CIEL[0] <= h <= TEINTE_CIEL[1]))
+    for nom in ('--ink-1', '--ink-2', '--ink-3', '--status-prep'):
         L, C = vp.oklch(T[nom])
-        k, duv = tcp(T[nom])
-        res.append((f'{nom} neutre non bleuté (C ≤ 0,012, TCP ≤ 6 600 K)', f'C {C:.4f} · {k} K', C <= 0.012 and k <= 6600))
-    k, duv = tcp(T['--n-shadow'])
-    res.append(('--n-shadow ombre teintée du papier, non bleuâtre (TCP ≤ 6 600 K)', f'{k} K, Duv {duv:+.4f}', k <= 6600))
+        res.append((f'{nom} quasi achromatique (C ≤ 0,012)', f'C {C:.4f}', C <= 0.012))
+    Ls = [vp.oklch(T[n])[0] for n in ('--n-line-soft', '--n-line', '--n-line-strong')]
+    res.append(('Filets ordonnés : line-soft plus clair que line, line plus clair que line-strong', ' > '.join(f'{v:.3f}' for v in Ls), Ls[0] > Ls[1] > Ls[2]))
     em = emplacements()
     for titre, cle, n in (('repères (--cat-NN)', 'hex', len(EMPLACEMENTS)), ('encres (-ink)', 'encre', len(EMPLACEMENTS)),
                           ('fonds (-tint)', 'claire', len(EMPLACEMENTS)), ('sélections (-sel)', 'selection', len(EMPLACEMENTS))):
