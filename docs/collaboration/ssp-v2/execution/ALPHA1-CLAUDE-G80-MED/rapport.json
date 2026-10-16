@@ -1,0 +1,914 @@
+{
+ "mission": "ALPHA1-CLAUDE-G80-MED",
+ "code": "G80",
+ "type_audit": "medical",
+ "base_sha": "103745baaa38c76f18288758cc7f689e5091ccdb",
+ "source_snapshot_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "base_note": "Worktree créé depuis 103745ba ; sources figées identiques au manifeste (snapshot 523832d9) : empreintes SHA-256 conformes.",
+ "generation": 1,
+ "branche": "claude/alpha1/g80-med-g1",
+ "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G80-MED",
+ "conversation": "alpha1-claude-g80-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-16T09:14:00Z",
+ "date_fin": "2026-10-16T09:43:25Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G80/G80_a.html",
+   "chapters/G80/G80_b.html",
+   "chapters/G80/G80_c.html",
+   "chapters/G80/G80_d.html",
+   "chapters/G80/G80_pop1.html",
+   "chapters/G80/G80_pop2.html",
+   "glossary/g80.py"
+  ],
+  "empreintes_conformes": true,
+  "empreintes": {
+   "chapters/G80/G80_a.html": {
+    "sha256": "cad9dd72661d6b509fdd10a06d25d2057272782afab8e010ec522354bafd087a",
+    "manifeste": "cad9dd72661d6b509fdd10a06d25d2057272782afab8e010ec522354bafd087a",
+    "conforme": true
+   },
+   "chapters/G80/G80_b.html": {
+    "sha256": "63f07e77bb15e4487f3e57cdd1ede0f408d965d7b2ed2d5dd000b97b1c631fb8",
+    "manifeste": "63f07e77bb15e4487f3e57cdd1ede0f408d965d7b2ed2d5dd000b97b1c631fb8",
+    "conforme": true
+   },
+   "chapters/G80/G80_c.html": {
+    "sha256": "19d10885ea19a1ee1eba930acf29a76a5de23af0b53fec819906182f4738ec67",
+    "manifeste": "19d10885ea19a1ee1eba930acf29a76a5de23af0b53fec819906182f4738ec67",
+    "conforme": true
+   },
+   "chapters/G80/G80_d.html": {
+    "sha256": "d03cc7f27cd08a10b104702f80d2b803d178852b63fb7b8d14e0c496b580f02d",
+    "manifeste": "d03cc7f27cd08a10b104702f80d2b803d178852b63fb7b8d14e0c496b580f02d",
+    "conforme": true
+   },
+   "chapters/G80/G80_pop1.html": {
+    "sha256": "0ab5479f9568c502b32e90f94137f9d65cc87b0363fa938391e66361d06b0c7f",
+    "manifeste": "0ab5479f9568c502b32e90f94137f9d65cc87b0363fa938391e66361d06b0c7f",
+    "conforme": true
+   },
+   "chapters/G80/G80_pop2.html": {
+    "sha256": "79371d82860460b99ef4d2fd8f31ec259d52022905d915bf02c596796ca028e9",
+    "manifeste": "79371d82860460b99ef4d2fd8f31ec259d52022905d915bf02c596796ca028e9",
+    "conforme": true
+   },
+   "glossary/g80.py": {
+    "sha256": "5d1d0a760eae6bfc3c8af36e249ca226524b2a44525a7d2f9dbc337648b1a8fb",
+    "manifeste": "5d1d0a760eae6bfc3c8af36e249ca226524b2a44525a7d2f9dbc337648b1a8fb",
+    "conforme": true
+   }
+  }
+ },
+ "premiere_source_lue": {
+  "source_id": "S14",
+  "url": "https://amiko.oddb.org/fr/fi?gtin=7680360830184",
+  "section": "Posologie/Mode d’emploi — Enfants et adolescents ; Indications (FI Liorésal®, janvier 2025)"
+ },
+ "synthese": {
+  "BLOQUANT": 0,
+  "MAJEUR": 9,
+  "MINEUR": 11,
+  "ENRICHISSEMENT": 5
+ },
+ "calculs": {
+  "total_releves": 666,
+  "calculables": 471,
+  "recalcules": 470,
+  "correct": 432,
+  "arrondi": 21,
+  "faux": 17,
+  "non_verifiables": 1,
+  "script": "calculs/verifier.py",
+  "non_calculables": 195,
+  "calculs_derives": 20,
+  "calculs_derives_faux": [
+   "K16",
+   "K17"
+  ],
+  "inventaire": "calculs/inventaire.json (script calculs/extraire.py)",
+  "resultats": "calculs/resultats.json",
+  "faux_detail": {
+   "83 % (DAYC, indice C présenté comme sensibilité)": 6,
+   "34 SA (seuil suisse 32+0 SA)": 6,
+   "2 semaines (effet maximal importé d’une autre indication)": 3,
+   "5–20 % (palier de titration intrathécale)": 2
+  },
+  "constats_associes": [
+   "C03",
+   "C04",
+   "C09",
+   "C10",
+   "C11",
+   "C12",
+   "C21"
+  ],
+  "cloture": "non close : recalcules (470) < calculables (471) ; la valeur restante (37 SA, glossaire) n’a pas de source lue (C21)"
+ },
+ "controles": {
+  "test_v7_static": "G80 mots 11076 fenêtres 47 quiz 6 pareto 14 — OK",
+  "audit_sciences": "échec, 14 erreurs (C02)",
+  "image_clo_finder_inventory": "5 figures + 4 icônes de 24 px",
+  "ancres_propositions": "45/45 blocs « ancien » présents une seule fois (calculs/verifier_ancres.py, calculs/ancres.json)",
+  "propositions_classes_fermees": "conformes, aucun style en ligne, identifiants préfixés g80-",
+  "lisibilite_figures": "calcul géométrique font-size × 358/640 : 7,3 à 8,9 px ; Figure S1 proposée : 13 × 358/360 = 12,9 px ; aucun rendu Chromium"
+ },
+ "constats": [
+  {
+   "id": "C01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G80/G80_c.html",
+   "ancre": "data-s=\"g80-s-anat\"",
+   "constat": "Le sous-onglet « Sémiologie fondamentale et analytique » est absent. Décompte réel des data-s de G80_c.html : 4 (g80-s-anat, g80-s-physio, g80-s-gen, g80-s-bioch) ; aucun g80-s-semio. Il n’existe pas non plus de discipline d’histologie. Des éléments sémiologiques existent dans l’onglet 1 (g80-5 comorbidités, g80-6 outils standardisés), sans technique des gestes, sans signes précoces d’alerte (assise à 9 mois, asymétrie manuelle, appui plantaire), sans seuils HINE ni regroupement syndromique.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Table 1, recommandation 5.0",
+     "citation_courte": "Any infant with: (a) Inability to sit independently by age 9 mo, or (b) Hand function asymmetry, or (c) Inability to take weight through the plantar surface"
+    },
+    {
+     "source_id": "S5",
+     "section": "Table 2",
+     "citation_courte": "Clinical Signs Indicating Motor Type and Topography in Infants"
+    }
+   ],
+   "proposition": "propositions/G80_c_semio.html (bouton et div.sci g80-s-semio, îlots g80-sm-1 à -7, figure non anatomique lisible à 390 px, 3 cas corrigés) ; propositions/G80_pop3_semio.html (5 fenêtres g80-sm-*) ; propositions/glossary_g80_ajouts.py.",
+   "justification": "Mécanisme : la PC se reconnaît chez un nourrisson asymptomatique par la qualité du mouvement et le retard d’acquisition. Conséquence : sans sémiologie analytique, le lecteur ne sait pas quand déclencher les examens standardisés. Décision : exigence de Vial du 15.10.2026 ; MAJEUR, bloquant pour la clôture du cours et du lot.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": true,
+   "decompte_data_s": 4
+  },
+  {
+   "id": "C02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G80/G80_c.html",
+   "ancre": "<div class=\"sci\" id=\"g80-s-physio\" hidden>",
+   "constat": "tests/audit_sciences.py (base 103745ba) échoue avec 14 erreurs : physiologie 223 mots, génétique 188, biochimie 219 (seuil 280) ; anatomie 320 mots mais sans « Science → examen. » ni « Science → traitement. » ; aucune discipline ne porte les quatre libellés exigés.",
+   "preuve": [
+    {
+     "source_id": "controle",
+     "section": "tests/audit_sciences.py --base 103745baaa38c76f18288758cc7f689e5091ccdb --codes G80",
+     "citation_courte": "result: failed ; 14 errors"
+    }
+   ],
+   "proposition": "Compléter chaque discipline (libellés et contenu sourcé) ; la discipline proposée g80-s-semio satisfait seule les critères (2533 mots, figure, quatre libellés).",
+   "justification": "Mécanisme : des sciences trop brèves ne relient pas le mécanisme à l’examen et au traitement. Conséquence : contrat du test non respecté. Décision : MAJEUR (contrat Temps Betta).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C03",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G80/G80_b.html",
+   "ancre": "DAYC (indice C) 83 %",
+   "constat": "Le DAYC est présenté comme ayant une « sensibilité de 83 % » (b, tableau 7.1 sous l’en-tête « Outils et sensibilité » ; c, e-2.4, tableau e-2 et encadré ; fenêtre g80-dayc ; glossaire DAYC). La source donne un indice C de 83 %, mesure de discrimination globale, non une sensibilité. Six occurrences fausses (calculs/resultats.json, K17).",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Abstract, Findings",
+     "citation_courte": "the Developmental Assessment of Young Children (83% C index)"
+    }
+   ],
+   "proposition": "propositions/G80_c_1.html (blocs 1 à 7).",
+   "justification": "Mécanisme : un indice C ne dit pas combien d’enfants atteints sont détectés. Conséquence : comparaison fausse avec les sensibilités de 98 %, 90 % et 86–89 %. Décision : MAJEUR (résultat statistique faux, règle EXIGENCE_CALCULS).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G80/G80_b.html",
+   "ancre": "administré aux femmes à risque d’accouchement avant 34 SA",
+   "constat": "Le seuil de 34 SA (critère d’inclusion des essais Cochrane) est présenté comme indication, y compris dans les situations particulières (« Une grossesse à risque d’accouchement avant 34 SA relève du sulfate de magnésium maternel »). La recommandation suisse de la SSGO limite l’indication à 24+0–32+0 SA, en bolus unique de 4 g sur 15 minutes. Six occurrences « 34 SA » (b g80-10, g80-11, g80-12 ; pop2 g80-prevention, pareto-g80-suivi). « 60 femmes à traiter » : la revue exprime un NNTB de 60 (IC 95 % 41–158) en enfants.",
+   "preuve": [
+    {
+     "source_id": "S27",
+     "section": "Résumé et Indication",
+     "citation_courte": "entre 24+0 semaines d’aménorrhée (SA) et 32+0 SA"
+    },
+    {
+     "source_id": "S27",
+     "section": "Posologie",
+     "citation_courte": "en un bolus unique de 4 g ... perfusion courte de 15 minutes"
+    },
+    {
+     "source_id": "S15",
+     "section": "Main results",
+     "citation_courte": "less than 34 weeks' gestation ... NNTB 60, 95% CI 41 to 158"
+    }
+   ],
+   "proposition": "propositions/G80_b_1.html (6 blocs).",
+   "justification": "Mécanisme : le bénéfice neuroprotecteur se concentre avant 32+0 SA, où le taux de lésion cérébrale augmente nettement. Conséquence : la leçon enseigne une indication plus large que la pratique suisse. Décision : MAJEUR (seuil décisionnel suisse contredit).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C05",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G80/G80_b.html",
+   "ancre": "est autorisé dès 12 mois",
+   "constat": "La leçon écrit que le Liorésal® oral est « autorisé dès 12 mois » (b 9.2, carte g80-11, encadré g80-11 ; d p-1 « Spasticité, dès 12 mois »). La FI suisse limite les indications à la spasticité de la sclérose en plaques et à la spasticité médullaire : l’emploi dans la PC (spasticité d’origine cérébrale) est hors indication ; seule la posologie pédiatrique fixe un âge minimal de 12 mois.",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "Indications/Possibilités d’emploi",
+     "citation_courte": "Spasticité musculaire grave, mais réversible, en cas de sclérose en plaques. Peut être utilisé en cas de spasticité médullaire"
+    },
+    {
+     "source_id": "S14",
+     "section": "Posologie, Enfants et adolescents",
+     "citation_courte": "L'âge minimal est de 12 mois."
+    }
+   ],
+   "proposition": "propositions/G80_d_1.html (blocs 1, 2, 4, 13).",
+   "justification": "Mécanisme : le statut d’autorisation conditionne l’information de la famille et la prise en charge. Conséquence : énoncé réglementaire suisse inexact. Décision : MAJEUR (spécificité suisse, rubrique 12 et 16).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C06",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G80/G80_b.html",
+   "ancre": "Les posologies ne sont pas ajustées dans les sources lues.",
+   "constat": "Deux précautions décisionnelles de la FI du Liorésal® sont omises ou inexactes. (1) Épilepsie, présente chez 15 à 60 % des enfants atteints : le baclofène peut abaisser le seuil convulsif, des crises surviennent à l’arrêt et en surdosage, l’antiépileptique est poursuivi sous surveillance étroite (absent de la leçon). (2) Insuffisance rénale : la leçon dit que les posologies « ne sont pas ajustées » ; la FI décrit des signes de surdosage dès plus de 5 mg/j, impose une dose journalière adaptée et une surveillance étroite, et réserve l’emploi en insuffisance rénale terminale.",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "Mises en garde et précautions",
+     "citation_courte": "Une prudence particulière est de rigueur chez les patients épileptiques, car le seuil de convulsions peut s'abaisser"
+    },
+    {
+     "source_id": "S14",
+     "section": "Utilisation en cas d'insuffisance rénale",
+     "citation_courte": "à des doses supérieures à 5 mg par jour, des signes neurologiques et des symptômes d'un surdosage ont été observés"
+    }
+   ],
+   "proposition": "propositions/G80_d_1.html (blocs 3 et 7).",
+   "justification": "Mécanisme : le baclofène est éliminé surtout par le rein et agit sur l’excitabilité neuronale. Conséquence : risque d’encéphalopathie toxique et de crises dans une population épileptique. Décision : MAJEUR (précaution décisionnelle omise).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C07",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G80/G80_c.html",
+   "ancre": "aria-label=\"Figure 2 — Schéma d’une hanche et du recouvrement de la tête fémorale\"",
+   "constat": "Figure 2 : tête fémorale et cavité articulaire dessinées en SVG, sans source iconographique, introduites par le commit 71fdb467 (auteur Claude, « Betta : injection directe des cycles 31 à 40 ») : figure anatomique d’origine IA démontrée. Texte rendu à 7,3–8,4 px à 390 px.",
+   "preuve": [
+    {
+     "source_id": "historique_git",
+     "section": "git log --all -- chapters/G80/G80_c.html",
+     "citation_courte": "71fdb467 Claude 2026-10-15 Betta : injection directe des cycles 31 à 40"
+    }
+   ],
+   "proposition": "propositions/G80_c_figures.html (bloc 1) : retrait et tableau provisoire sourcé [S9] ; un candidat Commons (CC BY-SA 4.0) non contrôlé visuellement.",
+   "justification": "Mécanisme : une anatomie approximative enseigne une géométrie fausse de la migration. Conséquence : règle de Vial du 15.10.2026. Décision : MAJEUR, remplacement par un original sourcé.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C08",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G80/G80_d.html",
+   "ancre": "Les interactions médicamenteuses précises n’ont pas été extraites du dossier.",
+   "constat": "L’encadré d’alerte s’intitule « Interactions et complications dangereuses » mais ne donne aucune interaction, alors que la leçon cite le diazépam et le baclofène comme traitements « feu vert » de la même maladie. La FI Liorésal® décrit la potentialisation par les dépresseurs du SNC (dont benzodiazépines, tizanidine, opiacés), les tricycliques, les antihypertenseurs et les néphrotoxiques ; la FI Dysport® décrit la potentialisation par les aminoglycosides et les curares.",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "Interactions",
+     "citation_courte": "Une sédation renforcée peut se produire lors de l'administration concomitante de Liorésal et d'autres médicaments causant une dépression du SNC"
+    },
+    {
+     "source_id": "S13",
+     "section": "Interactions",
+     "citation_courte": "L'action de la toxine botulique peut être renforcée par des médicaments agissant ... sur la transmission neuromusculaire (entre autres aminoglycosides"
+    }
+   ],
+   "proposition": "propositions/G80_d_1.html (bloc 7).",
+   "justification": "Mécanisme : addition des effets dépresseurs centraux ou neuromusculaires. Conséquence : risque de dépression respiratoire chez un enfant dysphagique. Décision : MAJEUR (point décisionnel non sourcé alors que la source est lue).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C09",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G80/G80_d.html",
+   "ancre": "Augmentation de 5–20 % au plus",
+   "constat": "Pour le Liorésal intrathécal®, la leçon donne « 5–20 % au plus » sans distinguer la titration post-implantation (5 à 15 % au plus dans la spasticité cérébrale) de l’entretien (5 à 20 %) ; la fenêtre g80-baclofene-it place ce palier juste après la dose test, donc dans la phase de titration. La colonne « Maximum » contient des moyennes (276 µg/j) et non un maximum ; la règle de la dose initiale (double de la dose test efficace sur 24 h, aucune augmentation pendant 24 h) manque.",
+   "preuve": [
+    {
+     "source_id": "S18",
+     "section": "Posologie, implantation",
+     "citation_courte": "Spasticité d'origine cérébrale: ... Les augmentations ne dépasseront pas 5 à 15% pour éviter un surdosage."
+    },
+    {
+     "source_id": "S18",
+     "section": "Posologie, entretien",
+     "citation_courte": "la dose quotidienne peut être augmentée progressivement de 5 à 20% au plus"
+    }
+   ],
+   "proposition": "propositions/G80_d_1.html (blocs 5 et 11).",
+   "justification": "Mécanisme : la sensibilité au baclofène intrathécal est très variable ; un palier de 20 % en titration dépasse la limite fixée contre le surdosage. Conséquence : vitesse d’escalade inexacte. Décision : MAJEUR (geste spécialisé, non BLOQUANT car pratiqué en centre avec titration surveillée).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C10",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G80/G80_d.html",
+   "ancre": "l’effet est maximal vers 2 semaines",
+   "constat": "« Effet maximal vers 2 semaines » (b tableau 8.1, d p-3, fenêtre g80-dysport) provient des rubriques blépharospasme et hyperhidrose de la FI Dysport® ; les rubriques pédiatriques de spasticité donnent les intervalles de réinjection (au moins 12 semaines au membre inférieur, 16 semaines au membre supérieur).",
+   "preuve": [
+    {
+     "source_id": "S13",
+     "section": "Blépharospasme, Durée du traitement",
+     "citation_courte": "l'effet thérapeutique maximal au cours des 2 semaines après l'injection"
+    },
+    {
+     "source_id": "S13",
+     "section": "d) Spasticité chez les enfants",
+     "citation_courte": "en respectant un intervalle minimal de 12 semaines après l'injection précédente"
+    }
+   ],
+   "proposition": "propositions/G80_d_1.html (blocs 8, 9, 10).",
+   "justification": "Mécanisme : chiffre importé d’une autre indication. Conséquence : surveillance mal calée. Décision : MINEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C11",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G80/G80_d.html",
+   "ancre": "le plafond est ici de 600 U (30 U/kg × 20 kg).",
+   "constat": "Cas 1 de p-3 : le plafond total de 600 U est exact (recalcul K11), mais la correction cite 500 U par jambe sans dire que, pour 20 kg, la limite effective est 15 U/kg × 20 = 300 U par jambe (K12).",
+   "preuve": [
+    {
+     "source_id": "S13",
+     "section": "d) membre inférieur",
+     "citation_courte": "jusqu'à 15 unités/kg/jambe ; La dose maximale par jambe ne doit pas dépasser 500 unités"
+    }
+   ],
+   "proposition": "propositions/G80_d_1.html (bloc 12).",
+   "justification": "Mécanisme : deux plafonds coexistent, le plus bas s’applique. Conséquence : correction incomplète. Décision : MINEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C12",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G80/G80_d.html",
+   "ancre": "<td>0,3 mg/kg/jour en 4 prises</td>",
+   "constat": "La posologie initiale est exacte mais non réalisable avec la forme suisse lue : pour 12 kg, 0,3 mg/kg/j donne 0,9 mg par prise (K14), alors que la plus petite dose égale est 5 mg (½ comprimé de 10 mg) ; avant 8 ans, le plafond de 40 mg/j l’emporte sur 2 mg/kg/j dès 20 kg (K13). La leçon ne le signale pas.",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "Remarques/Présentation",
+     "citation_courte": "Les comprimés de 10 mg peuvent être divisés en deux doses similaires"
+    },
+    {
+     "source_id": "S14",
+     "section": "Posologie",
+     "citation_courte": "ne doit pas dépasser un maximum de 40 mg/jour"
+    }
+   ],
+   "proposition": "propositions/G80_d_1.html (bloc 6).",
+   "justification": "Mécanisme : arrondi aux dosages commercialisés. Conséquence : énoncé incomplet pour le petit enfant. Décision : MINEUR (EXIGENCE_CALCULS).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C13",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G80/G80_b.html",
+   "ancre": "IRM : classer le groupe MRICS.",
+   "constat": "L’algorithme fait classer l’IRM du nourrisson selon la MRICS ; le réseau SCPE recommande de classer les images obtenues après 2 ans (myélinisation), sauf lésion déjà caractéristique.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Neuroimaging Examination",
+     "citation_courte": "SCPE recommends classifying MR images performed after the child has reached 2 years of age according to the MRICS system, unless the previous images revealed a particular pathology"
+    }
+   ],
+   "proposition": "propositions/G80_b_2.html (bloc 3).",
+   "justification": "Mécanisme : la myélinisation incomplète modifie l’aspect de la substance blanche. Conséquence : classement prématuré. Décision : MINEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C14",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G80/G80_d.html",
+   "ancre": "une enquête auprès de 70 médecins du registre suisse rapporte",
+   "constat": "L’enquête sur les cannabinoïdes a été conduite par le registre suisse auprès de 70 médecins d’Europe, d’Amérique du Nord et d’Australie, et non auprès de « médecins du registre suisse ».",
+   "preuve": [
+    {
+     "source_id": "S21",
+     "section": "Résumé",
+     "citation_courte": "Seventy physicians from Europe, North America, and Australia completed the survey"
+    }
+   ],
+   "proposition": "propositions/G80_b_2.html (blocs 6 et 7).",
+   "justification": "Mécanisme : population de l’enquête. Conséquence : surinterprétation d’une pratique suisse. Décision : MINEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C15",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G80/G80_b.html",
+   "ancre": "en Europe, 3,4 % des enfants atteints de PC en reçoivent",
+   "constat": "Le taux de 3,4 % (114/3398, recalcul K07 = 3,35 %) vient de six pays à données populationnelles en 2011, avec des écarts de 0,4 à 4,7 % ; il n’est pas « européen » (b 9.2, d p-1, fenêtre g80-baclofene-it).",
+   "preuve": [
+    {
+     "source_id": "S19",
+     "section": "Results",
+     "citation_courte": "In 2011 population-based data from Sweden, Norway, England, Portugal, Slovenia, and Denmark showed that 114 (3.4%) of 3,398 children"
+    }
+   ],
+   "proposition": "propositions/G80_b_2.html (blocs 4, 5, 9).",
+   "justification": "Mécanisme : population de mesure. Conséquence : généralisation abusive. Décision : MINEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C16",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G80/G80_pop1.html",
+   "ancre": "Le risque de mort subite inattendue en épilepsie est de 1,1 à 3,4 pour 1000 enfants par an.",
+   "constat": "Le chiffre de mort subite (1,1–3,4/1000 par an) concerne les enfants épileptiques en général, non les enfants atteints de PC ; la leçon (a tableau 5.1, b g80-8) le rattache à la PC. Une cohorte nationale suédoise donne 1,11/1000 personnes-années avant 16 ans.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Epilepsy in Children with CP",
+     "citation_courte": "In the population of children, the risk of SUDEP ... is estimated to reach 1.1–3.4/1000 ill children annually"
+    },
+    {
+     "source_id": "S25",
+     "section": "Results",
+     "citation_courte": "SUDEP incidence at ages <16 ... was 1.11 ... per 1,000 person-years"
+    }
+   ],
+   "proposition": "propositions/G80_b_2.html (bloc 8).",
+   "justification": "Mécanisme : population de référence. Conséquence : chiffre décontextualisé. Décision : MINEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C17",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G80/G80_a.html",
+   "ancre": "<td>Spastique bilatérale, jambes surtout atteintes</td>",
+   "constat": "La CIM-10-GM 2024 inclut en G80.1 la PC spastique sans autre précision et la paralysie spastique congénitale ; la leçon ne le dit pas, ce qui expose à coder G80.9 une PC spastique non précisée. Les intitulés français attribués à l’OFS n’ont pas pu être vérifiés.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "G80.1, inclusions (extraction résumée de la page BfArM)",
+     "citation_courte": "congenital spastic (cerebral) paralysis; spastic cerebral palsy, unspecified"
+    }
+   ],
+   "proposition": "propositions/G80_a_1.html (blocs 3 et 4).",
+   "justification": "Mécanisme : règle d’inclusion de la classification. Conséquence : codage erroné possible. Décision : MINEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C18",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G80/G80_c.html",
+   "ancre": "<text x=\"480\" y=\"115\" font-size=\"16\" font-weight=\"bold\">Spastique</text>",
+   "constat": "Figure 3 (schéma non anatomique) : le type spastique est placé dans la moitié « mouvement augmenté », ce que la source ne dit pas. Les cinq figures (viewBox 640) ont des textes rendus à 7,3–8,9 px à 390 px (calcul scripté font-size × 358/640) ; la Figure 5 déborde sa boîte.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Clinical Presentation",
+     "citation_courte": "SCPE ... dividing them into three major groups: spastic (unilateral or bilateral spastic), dyskinetic (dystonic or choreathetotic) and ataxic"
+    }
+   ],
+   "proposition": "propositions/G80_c_figures.html (blocs 2 et 3).",
+   "justification": "Mécanisme : position graphique porteuse de sens. Conséquence : contre-vérité visuelle et illisibilité sur téléphone. Décision : MINEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C19",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G80/G80_c.html",
+   "ancre": "Le sevrage du baclofène s’explique par la levée brutale de l’inhibition de la libération de glutamate.",
+   "constat": "Mécanisme du sevrage énoncé sans source : la FI décrit le rebond et le tableau clinique, non leur mécanisme.",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "Arrêt brutal",
+     "citation_courte": "une accentuation passagère de la spasticité et de l'hypertonie musculaire liées à un effet rebond"
+    }
+   ],
+   "proposition": "propositions/G80_mineurs.html (bloc 1).",
+   "justification": "Mécanisme : inférence non lue. Conséquence : loi 1 du prompt de vérité. Décision : MINEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C21",
+   "gravite": "MINEUR",
+   "fichier": "glossary/g80.py",
+   "ancre": "une naissance avant 37 SA est prématurée.",
+   "constat": "Seule valeur NON_VERIFIABLE du relevé : la définition de la prématurité (avant 37 SA) n’a de source ni dans le dossier ni dans l’audit.",
+   "preuve": [
+    {
+     "source_id": "calculs/resultats.json",
+     "section": "N0635",
+     "citation_courte": "nature valeur_non_sourcee"
+    }
+   ],
+   "proposition": "propositions/G80_mineurs.html (bloc 2).",
+   "justification": "Mécanisme : définition non sourcée. Conséquence : énoncé incomplet. Décision : MINEUR (EXIGENCE_CALCULS, NON_VERIFIABLE).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E01",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G80/G80_pop2.html",
+   "ancre": "Assurance-invalidité et infirmité congénitale",
+   "constat": "Rubrique 16 absente : la PC figure au chiffre 390 de l’annexe de l’OIC-DFI (paralysies cérébrales infantiles congénitales spastiques, dyskinétiques, ataxiques) et le chiffre 395 couvre les symptômes neuromoteurs précoces des deux premières années.",
+   "preuve": [
+    {
+     "source_id": "S22",
+     "section": "Annexe ch. 390",
+     "citation_courte": "Paralysies cérébrales infantiles congénitales (spastiques, dyskinétiques, ataxiques)"
+    },
+    {
+     "source_id": "S23",
+     "section": "Ch. 390",
+     "citation_courte": "Paralysies cérébrales congénitales"
+    }
+   ],
+   "proposition": "propositions/G80_a_1.html (blocs 1 et 2).",
+   "justification": "Spécificité suisse exigible à l’examen fédéral ; lacune déclarée par la leçon et comblée.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E02",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G80/G80_c.html",
+   "ancre": "Les intervalles de surveillance du programme européen n’ont pas été lus.",
+   "constat": "Les intervalles de surveillance radiographique de hanche du programme suédois sont disponibles dans le texte intégral de S9 (radiographie au diagnostic puis au moins annuelle jusqu’à 8 ans dans les formes bilatérales, dyskinétiques ou non classées ; à 4 ans dans l’hémiplégie et l’ataxie pure).",
+   "preuve": [
+    {
+     "source_id": "S9",
+     "section": "Methods, Table 2",
+     "citation_courte": "Radiographic examination at diagnosis, then at least once a year until 8 years of age, then individually"
+    }
+   ],
+   "proposition": "propositions/G80_b_2.html (blocs 1 et 2).",
+   "justification": "Lacune de la leçon comblée par une source européenne lue.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E03",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G80/G80_c.html",
+   "ancre": "<b>Piège :</b> les seuils de score ne figurent pas dans les sources lues.",
+   "constat": "Les seuils HINE (< 73 haut risque ; < 40 presque toujours PC ; 50–73 unilatéral ; < 50 bilatéral ; 40–60 à 3–6 mois GMFCS I–II) figurent dans le texte intégral de S5, source déjà citée par la leçon.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Table 1, 6.1 et 8.1",
+     "citation_courte": "Those with HINE scores <73 (at 6, 9, or 12 mo) should be considered at high risk of CP. HINE scores <40 ... almost always indicate CP"
+    }
+   ],
+   "proposition": "propositions/G80_c_1.html (bloc 8) ; propositions/G80_c_semio.html (îlot g80-sm-3).",
+   "justification": "Seuils décisionnels disponibles.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E04",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G80/G80_c.html",
+   "ancre": "Aucune de ces données ne donne de spécificité, qui n’a pas été lue",
+   "constat": "Des spécificités européennes existent : série cas-témoins italienne de 441 nourrissons (fidgety absents Se 95 %, Sp 97 % ; HINE à 3 mois Se 88 %, Sp 62 % ; imagerie Se 79 %, Sp 99 % ; combinaison 97,9 % et 99,2 %). Rapports de vraisemblance recalculés (calculs/resultats.json, calculs P-*).",
+   "preuve": [
+    {
+     "source_id": "S26",
+     "section": "Results",
+     "citation_courte": "Sensitivity and specificity for detecting CP were 88% and 62% for three-month HINE, 95% and 97% for absent fidgety GMs, and 79% and 99% for neuroimaging"
+    }
+   ],
+   "proposition": "propositions/G80_c_semio.html (îlot g80-sm-3, cas 1) ; propositions/G80_pop3_semio.html.",
+   "justification": "Valeur sémiologique chiffrée (SEM-08), avec la réserve du schéma cas-témoins.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E05",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G80/G80_pop2.html",
+   "ancre": "ne jamais interrompre une pompe intrathécale sans plan.",
+   "constat": "Le sevrage intrathécal (délai de quelques heures à quelques jours, causes : déconnexion du cathéter, réservoir insuffisant ; diagnostic différentiel avec sepsis, hyperthermie maligne, syndrome malin) est décrit par la FI et absent de la leçon.",
+   "preuve": [
+    {
+     "source_id": "S18",
+     "section": "Mises en garde, Arrêt de la médication",
+     "citation_courte": "Les raisons courantes d'un arrêt soudain ... comprennent le dysfonctionnement du cathéter (en particulier une déconnexion) et un volume insuffisant dans le réservoir"
+    }
+   ],
+   "proposition": "propositions/G80_d_1.html (bloc 14).",
+   "justification": "Urgence propre au traitement de la PC sévère.",
+   "ancre_occurrences": 1
+  }
+ ],
+ "matrice_20": [
+  {
+   "rang": 1,
+   "rubrique": "Question clinique et enjeu pour l’examen fédéral",
+   "statut": "couvert",
+   "ancre": "g80-0"
+  },
+  {
+   "rang": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "couvert",
+   "ancre": "g80-1, fenêtre g80-cim ; inclusions G80.1 absentes (C17)"
+  },
+  {
+   "rang": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "partiel",
+   "ancre": "g80-2 ; niveaux MACS et communication non lus ; MRICS chez le nourrisson (C13)"
+  },
+  {
+   "rang": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "partiel",
+   "ancre": "g80-3 ; aucune prévalence suisse populationnelle ; données européennes 1980–2003"
+  },
+  {
+   "rang": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "partiel",
+   "ancre": "g80-4, g80-s-* ; disciplines sous 280 mots (C02) ; mécanisme de la spasticité non sourcé"
+  },
+  {
+   "rang": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "couvert",
+   "ancre": "g80-4.2, g80-4.3 ; AVC néonatal non traité"
+  },
+  {
+   "rang": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "partiel",
+   "ancre": "g80-5 (comorbidités chiffrées) ; signes d’alerte parentaux absents (C01)"
+  },
+  {
+   "rang": 8,
+   "rubrique": "Examen clinique",
+   "statut": "partiel",
+   "ancre": "g80-6 ; technique des gestes, seuils HINE et spécificités absents (C01, E03, E04)"
+  },
+  {
+   "rang": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "partiel",
+   "ancre": "g80-8 (sevrage, toxine, épilepsie, dysphagie) ; seuil d’alerte de 9 mois absent ; sevrage intrathécal incomplet (E05)"
+  },
+  {
+   "rang": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "partiel",
+   "ancre": "g80-e-1 à e-3 ; DAYC faux (C03) ; intervalles de hanche absents (E02)"
+  },
+  {
+   "rang": 11,
+   "rubrique": "Diagnostic différentiel",
+   "statut": "partiel",
+   "ancre": "g80-7.3 ; régression comme signal, sans discriminants par maladie (NICE NG62 non lu)"
+  },
+  {
+   "rang": 12,
+   "rubrique": "Prise en charge suisse",
+   "statut": "partiel",
+   "ancre": "g80-9, g80-p-* ; baclofène oral hors indication non signalé (C05) ; interactions absentes (C08) ; titration intrathécale (C09)"
+  },
+  {
+   "rang": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "partiel",
+   "ancre": "g80-8, g80-10.3 ; espérance de vie non sourcée"
+  },
+  {
+   "rang": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "partiel",
+   "ancre": "g80-10 ; seuil suisse du sulfate de magnésium faux (C04)"
+  },
+  {
+   "rang": 15,
+   "rubrique": "Situations particulières",
+   "statut": "partiel",
+   "ancre": "g80-11 ; insuffisance rénale inexacte (C06) ; transition adulte absente"
+  },
+  {
+   "rang": 16,
+   "rubrique": "Spécificités suisses",
+   "statut": "partiel",
+   "ancre": "Swiss-CP-Reg (g80-3.2) ; AI ch. 390/395 absente (E01) ; SSGO non citée (C04)"
+  },
+  {
+   "rang": 17,
+   "rubrique": "Critères formels du diagnostic",
+   "statut": "couvert",
+   "ancre": "g80-12 div.alert"
+  },
+  {
+   "rang": 18,
+   "rubrique": "Paramètres clés chiffrés",
+   "statut": "partiel",
+   "ancre": "g80-12 div.key ; « avant 34 SA » faux (C04)"
+  },
+  {
+   "rang": 19,
+   "rubrique": "Sous-codes CIM-10-GM couverts",
+   "statut": "couvert",
+   "ancre": "g80-1 tableau G80.0–G80.9"
+  },
+  {
+   "rang": 20,
+   "rubrique": "Points d’examen fédéral",
+   "statut": "partiel",
+   "ancre": "quiz e-4 et p-3 ; aucun objectif PROFILES explicité"
+  },
+  {
+   "rang": 21,
+   "rubrique": "Sémiologie fondamentale et analytique",
+   "statut": "absent",
+   "ancre": "aucun g80-s-semio (C01)"
+  }
+ ],
+ "semiologie": {
+  "statut": "absente",
+  "decompte_data_s": 4,
+  "data_s": [
+   "g80-s-anat",
+   "g80-s-physio",
+   "g80-s-gen",
+   "g80-s-bioch"
+  ],
+  "sous_onglet_semio": false,
+  "gravite": "MAJEUR",
+  "bloquant_cloture_cours_et_lot": true,
+  "constat_id": "C01",
+  "fondamentale": {
+   "statut": "partielle dans l’onglet 1, absente comme discipline",
+   "ancres": [
+    "g80-5",
+    "g80-6",
+    "g80-gma",
+    "g80-hine"
+   ],
+   "manques": "signes d’alerte (assise 9 mois, asymétrie manuelle, appui plantaire), technique, mécanisme par signe, spécificités et rapports de vraisemblance, pièges"
+  },
+  "analytique": {
+   "statut": "absente",
+   "ancres": [],
+   "manques": "regroupement syndromique par type moteur, raisonnement en cinq étapes, examen systématique du nourrisson à risque, trois cas corrigés"
+  },
+  "proposition": [
+   "propositions/G80_c_semio.html",
+   "propositions/G80_pop3_semio.html",
+   "propositions/glossary_g80_ajouts.py"
+  ],
+  "grille_SEM": {
+   "SEM-01": "non",
+   "SEM-02": "non",
+   "SEM-03": "non (audit_sciences échoue ; discipline absente)",
+   "SEM-04": "oui (test_v7 --static G80 : OK sur la leçon actuelle)",
+   "SEM-05": "non",
+   "SEM-06": "non (g80-6 : « Les sources lues ne détaillent pas la technique de chaque manœuvre »)",
+   "SEM-07": "non",
+   "SEM-08": "partiel (sensibilités sourcées, spécificités absentes, DAYC faux)",
+   "SEM-09": "non",
+   "SEM-10": "partiel (pièges g80-6 hanche)",
+   "SEM-11": "non",
+   "SEM-12": "non",
+   "SEM-13": "non (alert g80-8 présent, pas d’alert sémiologique)",
+   "SEM-14": "non",
+   "SEM-15": "non",
+   "SEM-16": "non",
+   "SEM-17": "non (quiz e-4 non sémiologiques)",
+   "SEM-18": "non évaluable (absente)",
+   "SEM-19": "non évaluable (absente)",
+   "SEM-20": "non évaluable",
+   "SEM-21": "non évaluable",
+   "SEM-22": "non (bouton absent)",
+   "SEM-23": "non (aucune capture possible)",
+   "SEM-24": "oui (statut « Revue par intelligence artificielle · Aucune validation médicale humaine »)"
+  },
+  "grille_SEM_proposition": {
+   "SEM-01": "oui",
+   "SEM-02": "oui",
+   "SEM-03": "oui (2533 mots, figure SVG non anatomique accessible, quatre libellés ; non exécuté sur source injectée)",
+   "SEM-04": "non vérifiable avant injection",
+   "SEM-05": "oui",
+   "SEM-06": "partiel (technique des gestes décrite pour GMs, HINE ; non pour l’appui plantaire)",
+   "SEM-07": "partiel (mécanisme non sourcé pour l’appui sur les orteils : déclaré)",
+   "SEM-08": "oui (populations et sources ; valeurs absentes déclarées)",
+   "SEM-09": "oui",
+   "SEM-10": "oui",
+   "SEM-11": "oui",
+   "SEM-12": "oui",
+   "SEM-13": "oui",
+   "SEM-14": "oui",
+   "SEM-15": "oui (10 étapes)",
+   "SEM-16": "oui",
+   "SEM-17": "oui (cas 1 valeur, cas 3 limite)",
+   "SEM-18": "non vérifiable (navigateur)",
+   "SEM-19": "oui (S5 international, aucun seuil américain)",
+   "SEM-20": "oui",
+   "SEM-21": "oui",
+   "SEM-22": "non vérifiable (capture)",
+   "SEM-23": "non réalisé",
+   "SEM-24": "oui"
+  }
+ },
+ "figures": [
+  {
+   "ancre": "aria-label=\"Figure 1 — Groupes de la classification de l’imagerie\"",
+   "fichier": "chapters/G80/G80_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "cinq boîtes A–E ; texte 8,4 px à 390 px",
+   "constat_id": "C18"
+  },
+  {
+   "ancre": "aria-label=\"Figure 2 — Schéma d’une hanche et du recouvrement de la tête fémorale\"",
+   "fichier": "chapters/G80/G80_c.html",
+   "classe": "ANATOMIQUE_IA",
+   "verification": "origine IA démontrée (commit 71fdb467) ; texte 7,3–8,4 px",
+   "constat_id": "C07",
+   "candidats": [
+    {
+     "page": "https://commons.wikimedia.org/wiki/File:Ball_and_Socket_Joint_(Hip_joint).svg",
+     "original": "https://upload.wikimedia.org/wikipedia/commons/6/64/Ball_and_Socket_Joint_%28Hip_joint%29.svg",
+     "auteur": "Kcotton15",
+     "licence": "CC BY-SA 4.0",
+     "attribution": "Kcotton15, Ball and Socket Joint (Hip joint), Wikimedia Commons, CC BY-SA 4.0",
+     "controle_visuel": false,
+     "remarque": "anatomie générale, ne montre pas la migration"
+    }
+   ],
+   "statut_candidats": "Commons HTTP 429 à la deuxième requête (délai enregistré, aucun nouvel essai)"
+  },
+  {
+   "ancre": "aria-label=\"Figure 3 — Tonus et mouvement dans les types de paralysie cérébrale\"",
+   "fichier": "chapters/G80/G80_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "placement du type spastique non sourcé ; 8,4–8,9 px",
+   "constat_id": "C18"
+  },
+  {
+   "ancre": "aria-label=\"Figure 4 — Stratégie génétique en cascade\"",
+   "fichier": "chapters/G80/G80_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "conforme à S6 ; 7,8 px",
+   "constat_id": "C18"
+  },
+  {
+   "ancre": "aria-label=\"Figure 5 — Sites d’action de la toxine botulique et du baclofène\"",
+   "fichier": "chapters/G80/G80_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "conforme aux FI ; 7,8–8,9 px ; débordement de boîte",
+   "constat_id": "C18"
+  }
+ ],
+ "figures_synthese": {
+  "total": 5,
+  "ANATOMIQUE_IA": 1,
+  "ORIGINE_INCONNUE": 0,
+  "SCHEMA_NON_ANATOMIQUE": 4,
+  "IMAGE_SOURCEE": 0,
+  "icones_sci_bar_24px": 4,
+  "regle": "Règle de Vial du 15.10.2026"
+ },
+ "verifications_conformes": [
+  "Prévalences européennes (2,08/1000 ; gradient > 70 ; 146/62/7/1,13 ; tendance 1,90→1,77 ; 70,9→35,9 ; 60,6→39,5) conformes à S4 et S10",
+  "Registre suisse (546 ; 55/56/76/73 % ; médiane 18 mois ; 59/12/29 %) conforme à S3 ; cohorte suisse 14/235 = 5,96 % (S11)",
+  "Sensibilités 98 %, 90 %, 86–89 % et pronostic 2/3, 3/4, 1/2 conformes à S5",
+  "PC ataxique (679 ; 3,8 % ; 79 % ; ~70 % ; 40 % ; 29 % ; 28,5 % ; 9 %) conforme à S7 ; MRICS 3818 enfants, 20 registres (S8)",
+  "Hanche (212 ; 18 % ; 0–64 % ; 0–79 % ; MP > 40 % ; 2–3 ans ; amplitude mauvais indicateur) conforme à S9",
+  "Sulfate de magnésium (RR 0,71 ; 0,57–0,89 ; 6 essais ; 6107 ; NNTB 60 ; 0,87 ; 3,21) conforme à S15 (Cochrane 03.09.2026)",
+  "Dysport® : plafonds 16 U/kg-640 U, 21 U/kg-840 U, 15/30 U/kg, 500 U/jambe, 1000 U ou 30 U/kg, 0,5 mL/site, dès 2 ans, unités non interchangeables (S13)",
+  "Liorésal® : 0,3 mg/kg/j en 4 prises, paliers 1–2 semaines, 0,75–2 mg/kg/j, 40/60 mg/j, arrêt sur ~3 semaines (S14)",
+  "Liorésal intrathécal® : bolus 25 µg enfant, non-répondeur à 100 µg, entretien 22–1400 µg/j, moyenne 276, < 12 ans 24–1199, sécurité < 4 ans non démontrée (S18)",
+  "Feux tricolores 2019 (S16), consensus 2009 (S17), chirurgie de hanche 66,8→8,1 % (S20), rhizotomie 50–75 % L1–S1 et toxine 3–8 mois (S4), facteurs prénataux ~75 % (S4)"
+ ],
+ "lacunes": [
+  "Aucune recommandation suisse de société (neuropédiatrie, médecine physique et réadaptation, SSP) sur la PC n’a été trouvée : WebSearch « Paediatrica Schweiz Zerebralparese Früherkennung … » sans résultat suisse.",
+  "Aucune source universitaire suisse ou européenne de sémiologie neuropédiatrique (technique d’examen, valeur des signes parentaux) n’a été lue ; la valeur de l’assise à 9 mois, de l’asymétrie manuelle et de l’appui plantaire reste non chiffrée.",
+  "Définitions SCPE détaillées (manuel de référence, Cans 2007) non lues ; la définition opérationnelle « au moins deux signes » de la forme spastique n’a été vue que dans un support pédagogique italien, non retenu.",
+  "Fedlex (OIC-DFI) non rendu par l’outil : annexe lue sur une republication (juriup.ch) ; la circulaire OFAS de 2004 confirme le chiffre 390.",
+  "Page BfArM lue par extraction résumée (pas de citation intégrale) ; intitulés français OFS des sous-codes non vérifiés.",
+  "Spécificités et rapports de vraisemblance issus d’une seule série cas-témoins (S26) : précision surestimée.",
+  "Définition méthodologique de l’indice C non sourcée par un document lu ; la proposition se limite à la qualifier de mesure de discrimination globale.",
+  "Image_Clo_finder : un seul candidat Commons avant HTTP 429 ; contrôle visuel non réalisé ; aucune radiographie de migration sourcée.",
+  "Lisibilité des figures calculée géométriquement, sans rendu Chromium ni capture ; captures SEM-22 et SEM-23 non réalisées.",
+  "Calculs : audit non clos sur une valeur (37 SA, glossaire) faute de source ; l’attribution des 470 valeurs aux sources se fait par motifs de contexte, contrôlée par un échantillon de 45 occurrences et des corrections ; une erreur d’attribution résiduelle reste possible pour les motifs génériques.",
+  "FI du diazépam, de la tizanidine, du glycopyrronium et des antiépileptiques non lues (comme dans la leçon).",
+  "Résumés seuls pour S2, S3, S6, S7, S8, S10, S11, S15, S16, S17, S19, S20, S21, S25, S26 ; texte intégral pour S4, S5, S9, S13, S14, S18, S23, S27 ; lecture par section pour S1, S22, S24.",
+  "NICE NG62 non lu (et non utilisable comme conduite) ; espérance de vie et transition adulte non recherchées."
+ ],
+ "propositions": [
+  "propositions/G80_c_semio.html",
+  "propositions/G80_pop3_semio.html",
+  "propositions/G80_b_1.html",
+  "propositions/G80_b_2.html",
+  "propositions/G80_c_1.html",
+  "propositions/G80_d_1.html",
+  "propositions/G80_a_1.html",
+  "propositions/G80_c_figures.html",
+  "propositions/G80_mineurs.html",
+  "propositions/glossary_g80_ajouts.py"
+ ],
+ "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+}
