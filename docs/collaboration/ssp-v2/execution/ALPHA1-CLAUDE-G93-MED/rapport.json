@@ -1,0 +1,847 @@
+{
+ "mission": "ALPHA1-CLAUDE-G93-MED",
+ "code": "G93",
+ "type_audit": "medical",
+ "base_sha": "103745baaa38c76f18288758cc7f689e5091ccdb",
+ "source_snapshot_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "manifest_base_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "worktree_base_note": "Mission démarrée sur la base 103745ba ; sources figées identiques au manifeste (base 523832d9) : empreintes SHA-256 conformes.",
+ "generation": 1,
+ "branche": "claude/alpha1/g93-med-g1",
+ "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G93-MED",
+ "conversation": "alpha1-claude-g93-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-16T09:52:00Z",
+ "date_fin": "2026-10-16T10:22:37Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G93/G93_a.html",
+   "chapters/G93/G93_b.html",
+   "chapters/G93/G93_c.html",
+   "chapters/G93/G93_d.html",
+   "chapters/G93/G93_pop1.html",
+   "chapters/G93/G93_pop2.html",
+   "glossary/g93.py"
+  ],
+  "empreintes_conformes": true,
+  "empreintes": {
+   "chapters/G93/G93_a.html": {
+    "sha256": "7ab97aa0441d815d10086ca0d5bcc2285cfc1346ea454ee03bcb0a9314c1db5d",
+    "manifeste": "7ab97aa0441d815d10086ca0d5bcc2285cfc1346ea454ee03bcb0a9314c1db5d",
+    "conforme": true
+   },
+   "chapters/G93/G93_b.html": {
+    "sha256": "9428afdcf983676cb077a8c0022c5bc4962ae600c07706fccdd78099dd82649f",
+    "manifeste": "9428afdcf983676cb077a8c0022c5bc4962ae600c07706fccdd78099dd82649f",
+    "conforme": true
+   },
+   "chapters/G93/G93_c.html": {
+    "sha256": "c1f3eaaac77d0849442a35a1dd79e29a8ced858267de464e994ecdf7ec7f224a",
+    "manifeste": "c1f3eaaac77d0849442a35a1dd79e29a8ced858267de464e994ecdf7ec7f224a",
+    "conforme": true
+   },
+   "chapters/G93/G93_d.html": {
+    "sha256": "8fd850e020197eb549eaab71f7a9901eb4fe6a7b096a920888df3450a3915690",
+    "manifeste": "8fd850e020197eb549eaab71f7a9901eb4fe6a7b096a920888df3450a3915690",
+    "conforme": true
+   },
+   "chapters/G93/G93_pop1.html": {
+    "sha256": "e6aac9fa4bddf0b37c253e0e34823b8c7496df11bc9e2d8da8fda86d4c65763a",
+    "manifeste": "e6aac9fa4bddf0b37c253e0e34823b8c7496df11bc9e2d8da8fda86d4c65763a",
+    "conforme": true
+   },
+   "chapters/G93/G93_pop2.html": {
+    "sha256": "51fc76691278628bcce21956e89b20a225a0dc5e61bbf104bacddf7573c39054",
+    "manifeste": "51fc76691278628bcce21956e89b20a225a0dc5e61bbf104bacddf7573c39054",
+    "conforme": true
+   },
+   "glossary/g93.py": {
+    "sha256": "7496881c5712fb4d7eb337e2819ae08efe0f520e387d3583546c701092aff5b0",
+    "manifeste": "7496881c5712fb4d7eb337e2819ae08efe0f520e387d3583546c701092aff5b0",
+    "conforme": true
+   }
+  },
+  "lectures_obligatoires": [
+   "manifeste .medina/missions/ALPHA1-CLAUDE-G93-MED.json",
+   "docs/collaboration/betta/PROMPT_VERITE.md",
+   "docs/STYLE_REDACTION.md",
+   "les 7 fichiers en entier",
+   "dossier Betta CYCLE_40_G93 (recherche.md, sources.json, rapport.md) pour l'origine des figures"
+  ]
+ },
+ "premiere_source_lue": {
+  "source_id": "S11",
+  "url": "https://amiko.oddb.org/fr/fi?gtin=7680211910195",
+  "section": "Information professionnelle Diamox® : Indications, Posologie, Contre-indications, Interactions, Swisspeddose (texte intégral, mise à jour juillet 2026)"
+ },
+ "synthese": {
+  "BLOQUANT": 0,
+  "MAJEUR": 10,
+  "MINEUR": 9,
+  "ENRICHISSEMENT": 5
+ },
+ "controles": {
+  "test_v7_static": "G93 mots 12075 fenêtres 31 quiz 4 pareto 8 — OK",
+  "audit_sciences": "échec : 3 disciplines (217, 194, 246 mots) sous 280 ; quatre libellés absents (C10)",
+  "image_clo_finder_inventory": "4 figures SVG, aucune image ; Commons HTTP 429",
+  "propositions_ancres_uniques": "33 remplacements, chacun présent une seule fois (propositions/remplacements.py)",
+  "constats_ancres_uniques": "toutes les ancres de constats présentes une seule fois",
+  "propositions_classes_fermees": "classes de la liste fermée (ilot, key, trap, k, alert, two, card, t, quiz, ui, fb, src, w, sci) ; aucun style en ligne"
+ },
+ "calculs": {
+  "total_releves": 451,
+  "grandeurs": 301,
+  "non_calculables": 150,
+  "concordance_source": 288,
+  "valeurs_de_vignette": 13,
+  "non_rapprochees": 0,
+  "calculables": 29,
+  "recalcules": 29,
+  "correct": 20,
+  "arrondi": 4,
+  "faux": 5,
+  "non_verifiables": 0,
+  "informatifs_audit": 16,
+  "script": "calculs/verifier.py",
+  "faux_constats": [
+   "C03 (R04, R05, R07)",
+   "C02 (R08)",
+   "C01 (R09)"
+  ],
+  "note": "Aucune dose ni aucun débit faux par rapport à la FI suisse ; les cinq résultats faux portent sur la PaCO₂ (erreur d'unité de la source 2021) et sur deux seuils devenus obsolètes en 2025. Le repère de 4 g/j d'acétazolamide est exact mais vaut 4 fois la dose orale maximale de la FI (R29, C06)."
+ },
+ "semiologie": {
+  "statut": "absente",
+  "decompte_data_s": 3,
+  "data_s": [
+   "g93-s-anat",
+   "g93-s-physio",
+   "g93-s-bioch"
+  ],
+  "sous_onglet_semio": false,
+  "gravite": "MAJEUR",
+  "bloquant_cloture_cours_et_lot": true,
+  "constat_id": "C07",
+  "fondamentale": {
+   "statut": "partielle dans l’onglet 1, absente comme discipline",
+   "ancres": [
+    "g93-5"
+   ],
+   "manques": "mécanisme par signe, technique (réflexe cornéen, photomoteur, test de station debout), valeur chiffrée des signes du coma, pièges, normal avant pathologique ; Se/Sp des signes de l’HII non disponibles dans les sources lues (LACUNE)"
+  },
+  "analytique": {
+   "statut": "absente",
+   "ancres": [],
+   "manques": "regroupement syndromique, raisonnement en cinq étapes, examen systématique, synthèse présentée, trois cas corrigés"
+  },
+  "proposition": [
+   "propositions/G93_c_semio.html",
+   "propositions/G93_a_semio_clinique.html",
+   "propositions/G93_pop1_semio.html",
+   "propositions/G93_c_sciences.html (cinquième et sixième data-s)"
+  ],
+  "grille_SEM": {
+   "SEM-01": "non (data-s : g93-s-anat, g93-s-physio, g93-s-bioch ; aucun g93-s-semio)",
+   "SEM-02": "non",
+   "SEM-03": "non (audit_sciences échoue, C10)",
+   "SEM-04": "oui (test_v7 --static G93 : OK sur la leçon actuelle)",
+   "SEM-05": "non (tableau g93-5 sans colonne mécanisme ni piège)",
+   "SEM-06": "non",
+   "SEM-07": "non",
+   "SEM-08": "non (valeurs des signes non données ; lacunes non déclarées comme telles dans la leçon)",
+   "SEM-09": "non",
+   "SEM-10": "partiel (pièges g93-5, g93-6)",
+   "SEM-11": "non",
+   "SEM-12": "non",
+   "SEM-13": "partiel (alert g93-14 sans signes d’engagement)",
+   "SEM-14": "partiel (tableau g93-6)",
+   "SEM-15": "non",
+   "SEM-16": "non",
+   "SEM-17": "non (quiz e-4 portent sur les examens)",
+   "SEM-18": "non (aucun mot vert sémiologique)",
+   "SEM-19": "non (pas de sémiologie à juger)",
+   "SEM-20": "sans objet",
+   "SEM-21": "sans objet",
+   "SEM-22": "non vérifiable (aucun bouton)",
+   "SEM-23": "non (aucune capture)",
+   "SEM-24": "oui (statut « Aucune validation médicale humaine »)"
+  }
+ },
+ "figures": [
+  {
+   "ancre": "aria-label=\"Figure 1 — Compartiments intracrâniens et loi de Monro-Kellie\"",
+   "fichier": "chapters/G93/G93_a.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "rectangle arrondi et libellés ; schéma de compartiments sourcé à S7 ; texte environ 7,8 px à 390 px",
+   "constat_id": null
+  },
+  {
+   "ancre": "aria-label=\"Figure 2 — Globe, nerf optique et gaine\"",
+   "fichier": "chapters/G93/G93_c.html",
+   "classe": "ANATOMIQUE_IA",
+   "verification": "cercle et lignes figurant globe, nerf et gaine ; origine IA déclarée par le rapport du cycle Betta 40",
+   "constat_id": "C09"
+  },
+  {
+   "ancre": "aria-label=\"Figure 3 — Relation pression-volume intracrânienne\"",
+   "fichier": "chapters/G93/G93_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "courbe non chiffrée ; forme sourcée à S7",
+   "constat_id": null
+  },
+  {
+   "ancre": "aria-label=\"Figure 4 — Cellule et canaux de l'œdème cytotoxique\"",
+   "fichier": "chapters/G93/G93_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "ellipse et libellés, légende « ne représente ni une cellule réelle » ; acteurs sourcés à S7",
+   "constat_id": null
+  }
+ ],
+ "figures_synthese": {
+  "total": 4,
+  "ANATOMIQUE_IA": 1,
+  "ORIGINE_INCONNUE": 0,
+  "SCHEMA_NON_ANATOMIQUE": 3,
+  "IMAGE_SOURCEE": 0,
+  "methode": "python3 tools/image_clo_finder.py inventory G93 ; rendu estimé par calcul (police 14 × 358/640 ≈ 7,8 px), sans capture navigateur"
+ },
+ "constats": [
+  {
+   "id": "C01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G93/G93_b.html",
+   "ancre": "Le patient doit rester comateux, avec une réponse motrice de 3 ou moins, à 72 heures ou plus du retour à une circulation spontanée.",
+   "constat": "Algorithme pronostique après arrêt cardiaque obsolète. La leçon applique ERC-ESICM 2021 (entrée à M ≤ 3) alors que la version 2025, publiée en octobre 2025 et lue ici en texte intégral, l'applique à tout patient qui n'obéit pas aux ordres (M < 6) à 72 h, ajoute des prédicteurs de bon pronostic (M4–5 dans les 4 jours, NSE < 17 µg/L dans les 72 h, absence de restriction de diffusion entre 72 h et 7 jours, EEG continu de voltage normal dans les 72 h), définit l'état de mal myoclonique (> 30 min, continu et généralisé, dans les 72 h), demande des NSE sériées et la répétition du scanner à 72–96 h. Surfaces touchées : g93-9 (texte, liste, À retenir), g93-16 (alert), g93-pronostic (pop1), pareto-g93-autres (pop2), référence g93-16. Recalcul R09 : FAUX par rapport à la source applicable la plus récente.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Evidence — Suggested prognostication strategy",
+     "citation_courte": "applies to unconscious patients, defined as not being awake and obeying commands (M < 6) at 72 h after ROSC"
+    },
+    {
+     "source_id": "S5",
+     "section": "Prediction of good neurological outcome",
+     "citation_courte": "a withdrawal or localising response to pain (motor score of the Glasgow Coma Scale [GCS-M] 4–5) in the first 4 days after ROSC, normal (<17 mcg/L) NSE"
+    },
+    {
+     "source_id": "S4",
+     "section": "Concise guidelines — prognostication",
+     "citation_courte": "In a comatose patient with M ≤ 3 at ≥ 72 h from ROSC"
+    }
+   ],
+   "proposition": "propositions/remplacements.json M05–M10, M15, M16, M18 (texte exact de remplacement, unicité des anciens vérifiée par script)",
+   "justification": "Mécanisme : le seuil M ≤ 3 laisse de côté la plupart des patients destinés à récupérer et ignore les signes favorables. Conséquence : un pronostic posé sur la règle 2021 peut méconnaître une discordance favorable (récupération 11 % contre 3 %). Décision : la source primaire applicable la plus récente l'emporte (consigne de Vial) ; mise à jour obligatoire.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G93/G93_b.html",
+   "ancre": "Cible constante entre 32 et 36 °C pendant au moins 24 heures ; éviter la fièvre (plus de 37,7 °C) pendant au moins 72 heures",
+   "constat": "Cibles de réanimation post-arrêt obsolètes et piège devenu inexact. ERC-ESICM 2025 remplace la cible thermique constante 32–36 °C ≥ 24 h par la prévention active de la fièvre (cible 37,5 °C au plus) pendant 36 à 72 h, interdit de réchauffer activement une hypothermie légère, et vise une PAM > 60–65 mmHg (au lieu de ≥ 65). Le piège de g93-8 affirme que le texte 2025 n'a pas été lu ; il l'est désormais. Surfaces : g93-8 (tableau, piège), g93-16 (key), g93-postarret (pop1), pareto-g93-autres. Recalculs R08 (FAUX), R10 et R10b (ARRONDI).",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Table 1 — Temperature Management",
+     "citation_courte": "Recommends actively preventing fever 37.5 °C for at least 72 h post-ROSC (symbole de comparaison illisible dans l'extraction)"
+    },
+    {
+     "source_id": "S5",
+     "section": "Temperature control",
+     "citation_courte": "Prevent active fever for 36 to 72 h in post-cardiac arrest patients who remain comatose"
+    },
+    {
+     "source_id": "S5",
+     "section": "Haemodynamic monitoring and management",
+     "citation_courte": "Avoid hypotension and target a mean arterial pressure (MAP) >60–65 mmHg after cardiac arrest"
+    }
+   ],
+   "proposition": "propositions/remplacements.json M02–M04, M11, M13, M14, M17",
+   "justification": "Mécanisme : aucune cible hypothermique n'a fait mieux qu'une cible normothermique (revues ILCOR) ; la fièvre aggrave la lésion. Conséquence : enseigner 32–36 °C comme cible constante est dépassé. Décision : remplacer par les cibles 2025, en gardant la mention historique.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C03",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G93/G93_b.html",
+   "ancre": "PaCO₂ 4,5 à 6,0 kPa (35–45 mmHg)",
+   "constat": "Erreur d'unité et valeur obsolète : 4,5 kPa = 33,8 mmHg, non 35 mmHg ; 35 mmHg = 4,67 kPa. L'incohérence vient du texte ERC-ESICM 2021, corrigé en 2025 (4,7–6,0 kPa, environ 35–45 mmHg). Présente 4 fois : g93-8 (tableau), g93-16 (key), corrélation clinique de g93-s-physio-cours, g93-postarret. Recalculs R04, R05, R07 : FAUX.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Concise guidelines — ventilation",
+     "citation_courte": "i.e. 4.5–6.0 kPa or 35–45 mmHg"
+    },
+    {
+     "source_id": "S5",
+     "section": "Control of ventilation",
+     "citation_courte": "Target normocapnia – a partial pressure of carbon dioxide of 4.7–6.0 kPa (or approximately 35–45 mmHg)"
+    }
+   ],
+   "proposition": "propositions/remplacements.json M01, M11, M12, M13",
+   "justification": "Mécanisme : 1 kPa = 7,5006 mmHg ; la borne basse en kPa ne correspond pas à celle en mmHg. Conséquence : un lecteur qui vise 4,5 kPa tolère une hypocapnie de 33,8 mmHg, vasoconstrictrice. Décision : borne 4,7 kPa (règle EXIGENCE_CALCULS : unité erronée = MAJEUR).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G93/G93_d.html",
+   "ancre": "Le topiramate ne se prescrit pas pendant la grossesse.",
+   "constat": "Contre-indication incomplète dans la population exacte de la maladie. L'information professionnelle suisse Topamax® (juin 2026), lue ici, contre-indique le topiramate en prévention de la migraine pendant la grossesse ET chez toute femme en âge de procréer sans contraception hautement efficace, impose un programme de prévention de la grossesse (test avant instauration, réévaluation annuelle) et signale la baisse d'efficacité des contraceptifs hormonaux (induction du CYP3A4, méthode barrière associée). L'HII touche des femmes jeunes ; la leçon recommande pourtant le topiramate pour la perte de poids et la prophylaxie. La leçon déclare aussi « Information professionnelle suisse non lue » (g93-p-2, g93-topiramate).",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "Contre-indications — Prévention de la migraine",
+     "citation_courte": "Grossesse. Femmes en âge de procréer n'utilisant pas une méthode contraceptive hautement efficace"
+    },
+    {
+     "source_id": "S14",
+     "section": "Programme de prévention de la grossesse",
+     "citation_courte": "Les femmes qui utilisent des contraceptifs hormonaux systémiques doivent utiliser également une méthode barrière"
+    }
+   ],
+   "proposition": "propositions/remplacements.json M20, M22, M23",
+   "justification": "Mécanisme : tératogène (malformations, retard de croissance) et inducteur enzymatique. Conséquence : prescription à une femme jeune sans contraception efficace contraire au libellé suisse. Décision : contre-indication complète, datée.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C05",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G93/G93_d.html",
+   "ancre": "Interactions dangereuses et médicaments à éviter",
+   "constat": "Îlot « Interactions dangereuses » sans les interactions des médicaments qu'il recommande : (1) topiramate + acétazolamide, deux inhibiteurs de l'anhydrase carbonique, association « à éviter » (calculs rénaux) selon la FI Topamax® ; (2) acétazolamide + acide acétylsalicylique à doses élevées : acidose métabolique sévère et toxicité centrale (FI Diamox®) ; (3) acétazolamide + lithium (excrétion accrue) et + ciclosporine (taux accrus). La leçon cite pourtant topiramate, aspirine, lithium et ciclosporine.",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "Mises en garde — Néphrolithiase",
+     "citation_courte": "La prise concomitante de Topamax avec d'autres inhibiteurs de l'anhydrase carbonique comme l'acétazolamide ... doit donc être évitée"
+    },
+    {
+     "source_id": "S11",
+     "section": "Interactions",
+     "citation_courte": "L'utilisation concomitante de l'acétazolamide et de l'acide acétylsalicylique à doses élevées peut conduire à une acidose métabolique sévère"
+    }
+   ],
+   "proposition": "propositions/remplacements.json M20 (encadré alert « Associations à éviter »)",
+   "justification": "Mécanisme : effets additifs sur l'anhydrase carbonique rénale et sur l'équilibre acide-base. Conséquence : lithiase et acidose évitables. Décision : ajout à l'îlot p-3.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C06",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G93/G93_d.html",
+   "ancre": "posologie à lire dans le produit",
+   "constat": "Repère de dose trompeur. La case de l'acétazolamide renvoie à l'information professionnelle pour la posologie de l'HII ; or la FI Diamox® (juillet 2026) n'en donne aucune, et ses posologies orales maximales sont de 1000 mg/24 h (glaucome, épilepsie). La même case cite 4 g/j (IIHTT) sans dire qu'il s'agit de 16 comprimés et de 4 fois ce maximum, ni qu'il s'agit d'un usage hors indication. Recalculs R28–R30.",
+   "preuve": [
+    {
+     "source_id": "S11",
+     "section": "Posologie — Glaucome / Épilepsie",
+     "citation_courte": "1-4 comprimés (250-1000 mg) en 24 heures ; 1-4 comprimés (250-1000 mg) par jour"
+    },
+    {
+     "source_id": "S2",
+     "section": "Acetazolamide",
+     "citation_courte": "greater than 40% of patients were treated with 4 g of acetazolamide daily"
+    }
+   ],
+   "proposition": "propositions/remplacements.json M21",
+   "justification": "Mécanisme : effets indésirables dose-dépendants (48 % d'arrêts dès 1500 mg). Conséquence : le lecteur cherche dans la FI une dose qui n'existe pas et retient 4 g comme repère. Décision : écrire le maximum suisse, l'écart, le statut hors indication et la surveillance.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C07",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G93/G93_c.html",
+   "ancre": "data-s=\"g93-s-anat\"",
+   "constat": "Sous-onglet « Sémiologie fondamentale et analytique » absent. Décompte réel des data-s de G93_c.html : 3 (g93-s-anat, g93-s-physio, g93-s-bioch) ; aucun g93-s-semio ; aucun marqueur data-semiology-clinical dans pA. La sémiologie existante (g93-5 : tableau des symptômes, cartes Anamnèse et Examen) est descriptive : pas de mécanisme par signe, pas de technique (réflexe cornéen, test de station debout), pas de valeur chiffrée des signes du coma, pas de regroupement syndromique, pas de raisonnement en cinq étapes, pas de cas sur la valeur d'un signe.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Other symptoms",
+     "citation_courte": "Unilateral or bilateral sixth-nerve palsy may occur in IIH causing horizontal diplopia"
+    },
+    {
+     "source_id": "S5",
+     "section": "Ocular reflexes",
+     "citation_courte": "an absent corneal reflex predicts poor neurological outcome after 72 h from ROSC with 0 % false positive rate (95 % confidence interval 0–3.4 %)"
+    },
+    {
+     "source_id": "S6",
+     "section": "Physical examination",
+     "citation_courte": "standing heart rate of >30/min above normal in patients older than 20 years and > 40/min above normal in younger patients"
+    }
+   ],
+   "proposition": "propositions/G93_c_semio.html (bouton g93-tab-semio, panneau g93-s-semio, neuf sections data-semiology, figure non anatomique, trois cas corrigés) ; propositions/G93_a_semio_clinique.html (section data-semiology-clinical=\"G93\" dans g93-5) ; propositions/G93_pop1_semio.html (douze fenêtres g93-sm-* et la fenêtre de calcul g93-unites, dans _pop1)",
+   "justification": "Mécanisme : sans technique ni valeur, le lecteur ne passe pas du signe à l'hypothèse. Conséquence : l'examen fédéral et la pratique exigent ce passage. Décision : exigence de Vial du 15.10.2026 ; MAJEUR, bloquant pour la clôture.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": true,
+   "decompte_data_s": 3
+  },
+  {
+   "id": "C08",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G93/G93_a.html",
+   "ancre": "Les sources retenues pour ce cours ne décrivent pas les types cliniques d’engagement ni leurs signes précis",
+   "constat": "G93.5 (compression du cerveau avec engagement) sans aucun signe clinique : la leçon renvoie le lecteur à un traité. Le drapeau rouge le plus vital de la catégorie manque (rubrique 9). La recommandation ERC-ESICM 2025 lue ici décrit les signes de mort cérébrale imminente évoquant un engagement : pupilles fixes et dilatées, diabète insipide, bradycardie avec hypertension, instabilité hémodynamique inexpliquée ; mort cérébrale dans 5–10 % des décès après réanimation conventionnelle. Les syndromes topographiques (temporal, sous-falcoriel, amygdalien) restent non sourcés : LACUNE (ligne directrice DGN S1 « Intrakranieller Druck » 2023 inaccessible).",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Suggested prognostication strategy",
+     "citation_courte": "fixed, dilated pupils, diabetes insipidus, and cardiovascular changes suggesting herniation, such as bradycardia associated with hypertension"
+    }
+   ],
+   "proposition": "propositions/remplacements.json M30 ; fenêtre g93-sm-engagement (propositions/G93_pop1_semio.html) ; section « urgency » de G93_c_semio.html",
+   "justification": "Mécanisme : la compression du tronc cérébral désorganise les réflexes pupillaires, la neurohypophyse et le contrôle cardiovasculaire. Conséquence : reconnaître ce tableau déclenche l'alerte de soins intensifs. Décision : ajout sourcé, lacune nommée pour le reste.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C09",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G93/G93_c.html",
+   "ancre": "aria-label=\"Figure 2 — Globe, nerf optique et gaine\"",
+   "constat": "Figure anatomique dessinée par IA (classe ANATOMIQUE_IA) : globe, nerf optique et gaine tracés en SVG par l'agent de rédaction du cycle Betta 40 (son rapport.md déclare « 3 schémas SVG noir et blanc plus la figure de Monro-Kellie »). Règle de Vial du 15.10.2026 : non recevable. Le texte des SVG existants (viewBox 640, police 14) rend environ 7,8 px dans un conteneur de 358 px.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Fig. 3 et licence de l'article",
+     "citation_courte": "This article is distributed under the terms of the Creative Commons Attribution 4.0 International License"
+    }
+   ],
+   "proposition": "propositions/G93_c_figures.html (candidats 1 et 2 : figures 3 et 4 de la recommandation EHF 2018, CC BY 4.0 ; candidat 3 non trouvé, Wikimedia Commons en HTTP 429)",
+   "justification": "Mécanisme : un dessin approximatif fausse la topographie de l'espace périoptique. Conséquence : il trahit l'anatomie que l'imagerie montre. Décision : remplacement par un original sourcé après contrôle visuel.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C10",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G93/G93_c.html",
+   "ancre": "class=\"sci-bar ui\"",
+   "constat": "Contrat des sciences non respecté : tests/audit_sciences.py échoue (3 disciplines de 217, 194 et 246 mots, sous le seuil de 280 ; les quatre libellés « Science → clinique. », « Science → examen. », « Science → traitement. », « À retenir. » absents, remplacés par « Corrélation clinique. »). Le validateur de sémiologie exige en outre au moins six sous-onglets data-s ; la leçon en a trois.",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "Aquaporins",
+     "citation_courte": "AQP4 localizes to brain-fluid interfaces including perivascular astrocyte endfeet, glia limitans"
+    },
+    {
+     "source_id": "S5",
+     "section": "Electroencephalography",
+     "citation_courte": "burst suppression (50–99 % suppression periods), or suppression (>99 % activity with <10 µV amplitude)"
+    }
+   ],
+   "proposition": "propositions/G93_c_sciences.html (partie A : quatre libellés pour chaque discipline, décomptes portés à 341, 313 et 344 mots ; partie B : disciplines Histologie et Neurophysiologie clinique, 411 et 371 mots, figures non anatomiques) ; avec le sous-onglet de sémiologie, total de six data-s",
+   "justification": "Mécanisme : les sciences doivent expliquer le « pourquoi » des signes et des traitements. Conséquence : contrat CHAPTER_SPEC et STYLE_REDACTION § 6 non tenus. Décision : compléter.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C11",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G93/G93_pop2.html",
+   "ancre": "par exemple 500 mL de Mannitol 20 % en 1 heure",
+   "constat": "L'exemple de la FI (500 mL = 100 g) n'est une dose de 1–2 g/kg que pour 50 à 100 kg ; la monographie omet le délai et la durée d'action (baisse de la pression dès 15 min, maximum à 30–60 min, durée 3–8 h après la fin), l'osmolarité (environ 1100 mOsm/L), les interactions lithium et ciclosporine et l'interdiction de perfuser simultanément du sang sans électrolytes. Recalculs R23–R27.",
+   "preuve": [
+    {
+     "source_id": "S12",
+     "section": "Pharmacocinétique — Absorption",
+     "citation_courte": "La pression intracrânienne diminue déjà 15 minutes après le début de la perfusion de mannitol. L'effet est maximum en 30–60 minutes"
+    },
+    {
+     "source_id": "S12",
+     "section": "Interactions",
+     "citation_courte": "Chez les patients qui reçoivent simultanément du mannitol et du lithium, le taux de lithium doit être régulièrement contrôlé"
+    }
+   ],
+   "proposition": "propositions/remplacements.json M25",
+   "justification": "Mécanisme : dose au poids ; effet osmotique transitoire. Conséquence : surdosage relatif chez un patient léger si l'exemple est lu comme une dose fixe. Décision : préciser.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C12",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G93/G93_b.html",
+   "ancre": "seul médicament évalué par des essais randomisés ; bénéfice modeste",
+   "constat": "Affirmation datée de 2018 : un essai randomisé contre placebo de l'exénatide (16 femmes, Brain 2023) a depuis été publié ; une méta-analyse de l'European Journal of Neurology (2025) étudie les agonistes du récepteur du GLP-1. Aussi dans g93-acetazolamide (pop2).",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "résumé",
+     "citation_courte": "Exenatide significantly and meaningfully lowered intracranial pressure at 2.5 h -5.7 ± 2.9 cmCSF"
+    },
+    {
+     "source_id": "S17",
+     "section": "résumé",
+     "citation_courte": "lower risk of papilledema (RR: 0.25; 95% CI: 0.15-0.43"
+    }
+   ],
+   "proposition": "propositions/remplacements.json M40, M47 ; propositions/G93_b_enrichissements.html E2",
+   "justification": "Mécanisme : réduction de la sécrétion du liquide par le récepteur du GLP-1. Conséquence : énoncé exact en 2018, inexact en 2026. Décision : dater l'énoncé.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C13",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G93/G93_a.html",
+   "ancre": "L’indice pression-volume normal est d’environ 20 à 25 mL.</p>",
+   "constat": "Deux unités de pression coexistent sans passerelle : cm d'eau (pression d'ouverture, seuil 25) et mmHg (pression intracrânienne, seuil 20–22). 25 cm d'eau = 18,4 mmHg ; 20–22 mmHg = 27,2–29,9 cm d'eau (R19–R22). La consigne de Vial du 11.10.2026 (§ 3) exige une fenêtre de calcul pour toute conversion. L'indice pression-volume n'est pas défini (volume qui multiplie la pression par dix).",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "Intracranial compliance",
+     "citation_courte": "PVI is the volume (mL) required to raise ICP 10-fold and is normally 20-25 mL"
+    }
+   ],
+   "proposition": "propositions/remplacements.json M41 ; fenêtre g93-unites (propositions/G93_pop1_semio.html)",
+   "justification": "Mécanisme : 1 cm d'eau = 98,0665 Pa ; 1 mmHg = 133,322 Pa. Conséquence : risque de comparer 25 et 22 comme s'ils partageaient l'unité. Décision : fenêtre de calcul.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C14",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G93/G93_pop1.html",
+   "ancre": "HII diagnostiquée avec pression du liquide supérieure à 250 mm (280 mm chez l’enfant obèse)",
+   "constat": "Unité incomplète : « 250 mm » sans « de liquide cérébrospinal » ; 250 mm de liquide = 25 cm, seuil identique à celui de Friedman (R17, R18).",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Table 1",
+     "citation_courte": "cerebrospinal fluid (CSF) pressure exceeds 250 mm CSF (or 280 mm CSF in obese children)"
+    }
+   ],
+   "proposition": "propositions/remplacements.json M42",
+   "justification": "Unité ambiguë sans conséquence décisionnelle.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C15",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G93/G93_b.html",
+   "ancre": "Le plan associe une intervention multicomposante de perte de poids (indice de masse corporelle inférieur à 35 : grade B) ou la chirurgie bariatrique (35 ou plus : grade A)",
+   "constat": "Le cas récapitulatif n'applique pas le seuil à sa patiente : IMC 38 ≥ 35, donc chirurgie bariatrique à considérer (grade A) ; la phrase laisse les deux options ouvertes (R13).",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "résumé",
+     "citation_courte": "Bariatric surgery should be considered for women with IIH and a body mass index (BMI) ≥35 kg/m2 (grade A)"
+    }
+   ],
+   "proposition": "propositions/remplacements.json M43",
+   "justification": "Cas corrigé incomplet : le lecteur ne voit pas le seuil appliqué.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C16",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G93/G93_a.html",
+   "ancre": "les recommandations du traumatisme crânio-cérébral fixent un seuil de traitement de la pression intracrânienne à 20 à 22 mmHg",
+   "constat": "Seuil décisionnel attribué à « les recommandations » sans préciser qu'il s'agit, via la revue de 2019, de lignes directrices américaines (Brain Trauma Foundation) ; aucune source suisse ou européenne lue sur ce point. Présent aussi dans g93-14, g93-16, g93-monro et la figure 3.",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "Introduction",
+     "citation_courte": "ICP elevation above the accepted threshold of 20–22 mmHg ... guidelines available to inform their management (Carney et al., 2017)"
+    }
+   ],
+   "proposition": "propositions/remplacements.json M44",
+   "justification": "Règle : aucune recommandation américaine comme fondement d'une conduite ; l'attribution doit être explicite.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C17",
+   "gravite": "MINEUR",
+   "fichier": "glossary/g93.py",
+   "ancre": "a('FOUR', [('F','Full'),('O','Outline'),('U','of UnResponsiveness'),('R','score')],",
+   "constat": "Lettrage du sigle FOUR inexact : R ne signifie pas « score » ; FOUR = Full Outline of UnResponsiveness (U et R issus de UnResponsiveness).",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "résumé",
+     "citation_courte": "use the Full Outline of Unresponsiveness score instead of the Glasgow Coma Scale in the acute setting"
+    }
+   ],
+   "proposition": "propositions/remplacements.json M45",
+   "justification": "Définition littérale lettre à lettre exigée (CLAUDE.md, règle 3).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C18",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G93/G93_b.html",
+   "ancre": "L’aspirine est restreinte dès 12 ans en cas d’infection virale.",
+   "constat": "Formulation ambiguë : laisse croire que l'aspirine est libre avant 12 ans ; la FI exclut les formes à croquer et en granulé avant 12 ans et restreint l'usage dès 12 ans en cas de fièvre ou d'infection virale.",
+   "preuve": [
+    {
+     "source_id": "S13",
+     "section": "Posologie",
+     "citation_courte": "Chez les enfants de moins de 12 ans, l'utilisation d'Aspirine Comprimés à croquer et Granulé n'est pas indiquée"
+    }
+   ],
+   "proposition": "propositions/remplacements.json M46",
+   "justification": "Clarté d'une restriction de sécurité.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C19",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G93/G93_d.html",
+   "ancre": "L’acétazolamide est contre-indiqué en cas d’hyponatrémie, d’hypokaliémie, d’insuffisance rénale ou hépatique grave, d’insuffisance surrénalienne, d’acidose hyperchlorémique ou d’hypersensibilité aux sulfamides.",
+   "constat": "Liste des contre-indications incomplète : le traitement au long cours est contre-indiqué dans le glaucome chronique non congestif à angle fermé (aggravation masquée).",
+   "preuve": [
+    {
+     "source_id": "S11",
+     "section": "Contre-indications",
+     "citation_courte": "Un traitement au long cours par Diamox est contre-indiqué en cas de glaucome chronique non congestif à angle fermé"
+    }
+   ],
+   "proposition": "propositions/remplacements.json M24",
+   "justification": "Contre-indication de traitement prolongé, pertinente car l'HII se traite des mois.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C20",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G93/G93_b.html",
+   "ancre": "La pression d’ouverture normale monte jusqu’à 28 cm d’eau chez l’enfant.",
+   "constat": "Situation pédiatrique sans posologie : Swisspeddose (intégré à la FI Diamox®) donne, pour une pression intracrânienne élevée, 8–10 mg/kg/dose × 3, maximum 100 mg/kg/j ; la FI précise que l'administration pédiatrique n'a pas été étudiée (R31).",
+   "preuve": [
+    {
+     "source_id": "S11",
+     "section": "Swisspeddose",
+     "citation_courte": "Indication: Pression intracrânienne élevée ... 8 - 10 mg/kg/dose ... 3 ... 100 mg/kg/jour"
+    }
+   ],
+   "proposition": "propositions/remplacements.json M21 (phrase « Enfant »)",
+   "justification": "Rubrique 15 (situations particulières) partielle.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C21",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G93/G93_b.html",
+   "ancre": "Un antécédent d’HII seul ne modifie pas le mode d’accouchement.",
+   "constat": "HII sans œdème papillaire non traitée comme forme : pas de risque visuel identifié, pas de surveillance visuelle au long cours, pas de chirurgie de routine.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "IIHWOP",
+     "citation_courte": "As there is no threat to vision, long term visual monitoring is not required"
+    }
+   ],
+   "proposition": "propositions/G93_b_enrichissements.html E1",
+   "justification": "Rubrique 14 (suivi) partielle.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C22",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G93/G93_b.html",
+   "ancre": "La baisse de pression est fortement corrélée à la perte de poids",
+   "constat": "Essai randomisé IIH:WT absent : chirurgie bariatrique contre programme communautaire, −6,0 cm d'eau à 12 mois et −8,2 cm d'eau à 24 mois (R38) ; données GLP-1 (S16, S17).",
+   "preuve": [
+    {
+     "source_id": "S15",
+     "section": "résumé",
+     "citation_courte": "Intracranial pressure was significantly lower in the bariatric surgery arm at 12 months (adjusted mean [SE] difference, -6.0 [1.8] cm"
+    }
+   ],
+   "proposition": "propositions/G93_b_enrichissements.html E2",
+   "justification": "Rubrique 12 : preuve randomisée de la seule thérapie modificatrice.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C23",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G93/G93_b.html",
+   "ancre": "La sévérité se classe en sévère (quasi confiné au domicile) et très sévère (quasi alité).</p>",
+   "constat": "Encéphalomyélite myalgique : pronostic (guérison complète non habituelle, mortalité par suicide accrue) et données suisses (délai diagnostique de 6,7 ans, 2,6 erreurs diagnostiques) absents ; examen orthostatique non décrit.",
+   "preuve": [
+    {
+     "source_id": "S6",
+     "section": "Introduction",
+     "citation_courte": "full recovery is not the norm, particularly in adults"
+    },
+    {
+     "source_id": "S18",
+     "section": "résumé",
+     "citation_courte": "The mean time from disease onset to diagnosis was 6.7 years"
+    }
+   ],
+   "proposition": "propositions/G93_b_enrichissements.html E3 ; fenêtre g93-sm-orthostat",
+   "justification": "Rubriques 4, 13 et 16 partielles.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C24",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G93/G93_a.html",
+   "ancre": "Cette succession justifie de répéter l’évaluation clinique et l’imagerie plutôt que de supposer qu’un seul mécanisme persiste.",
+   "constat": "Œdème expansif d'infarctus (G93.6) sans la conduite européenne : décompression chirurgicale ≤ 60 ans dans les 48 h (preuves de haute qualité, ESO 2021).",
+   "preuve": [
+    {
+     "source_id": "S19",
+     "section": "résumé",
+     "citation_courte": "surgical decompression ... in adult patients aged up to and including 60 years ... within 48 hours of stroke onset"
+    }
+   ],
+   "proposition": "propositions/G93_b_enrichissements.html E4",
+   "justification": "Rubrique 12 ; recommandation européenne avec coauteur suisse.",
+   "ancre_occurrences": 1
+  }
+ ],
+ "matrice_20": [
+  {
+   "rang": 1,
+   "rubrique": "Question clinique et enjeu pour l’examen fédéral",
+   "statut": "couvert",
+   "ancre": "g93-0 (deux vignettes)"
+  },
+  {
+   "rang": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "couvert",
+   "ancre": "g93-1, g93-cim ; conformes à S1"
+  },
+  {
+   "rang": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "partiel",
+   "ancre": "g93-3 (types d’œdème) ; Frisén et états de conscience non sourcés"
+  },
+  {
+   "rang": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "partiel",
+   "ancre": "g93-2 ; aucune donnée suisse (S18 proposée pour la fatigue, C23)"
+  },
+  {
+   "rang": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "partiel",
+   "ancre": "g93-3 ; sciences sous le contrat (C10)"
+  },
+  {
+   "rang": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "couvert",
+   "ancre": "g93-4, g93-secondaires (S2 tableau 4)"
+  },
+  {
+   "rang": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "partiel",
+   "ancre": "g93-5 ; fréquences de l’HII partielles ; malaise post-effort non caractérisé (C07)"
+  },
+  {
+   "rang": 8,
+   "rubrique": "Examen clinique (signes, Se/Sp)",
+   "statut": "partiel",
+   "ancre": "g93-5 ; aucune valeur des signes du coma ; examen orthostatique absent (C07)"
+  },
+  {
+   "rang": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "partiel",
+   "ancre": "g93-14, g93-11 ; signes d’engagement absents (C08)"
+  },
+  {
+   "rang": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "couvert",
+   "ancre": "g93-e-1, g93-e-2, g93-e-3"
+  },
+  {
+   "rang": 11,
+   "rubrique": "Diagnostic différentiel (discriminant)",
+   "statut": "partiel",
+   "ancre": "g93-6 (HII) ; coma post-anoxique et fatigue sans discriminants groupés (C07)"
+  },
+  {
+   "rang": 12,
+   "rubrique": "Prise en charge suisse (FI datées)",
+   "statut": "partiel",
+   "ancre": "g93-7, g93-8, pP ; cibles 2021 obsolètes (C02, C03) ; topiramate (C04) ; dose d’acétazolamide (C06)"
+  },
+  {
+   "rang": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "partiel",
+   "ancre": "g93-9 (algorithme 2021 obsolète, C01), g93-14"
+  },
+  {
+   "rang": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "partiel",
+   "ancre": "g93-7, g93-9 ; HII sans œdème papillaire (C21)"
+  },
+  {
+   "rang": 15,
+   "rubrique": "Situations particulières",
+   "statut": "partiel",
+   "ancre": "g93-15 ; posologie pédiatrique absente (C20)"
+  },
+  {
+   "rang": 16,
+   "rubrique": "Spécificités suisses",
+   "statut": "absent",
+   "ancre": "directives ASSM (mort cérébrale), aptitude à la conduite, AI non lues ; seule donnée suisse proposée : S18"
+  },
+  {
+   "rang": 17,
+   "rubrique": "Critères formels du diagnostic (div.alert)",
+   "statut": "partiel",
+   "ancre": "g93-16 ; critère pronostique 2021 obsolète (C01)"
+  },
+  {
+   "rang": 18,
+   "rubrique": "Paramètres clés chiffrés (div.key)",
+   "statut": "partiel",
+   "ancre": "g93-16 ; PaCO₂, PAM et fièvre à mettre à jour (C02, C03)"
+  },
+  {
+   "rang": 19,
+   "rubrique": "Sous-codes CIM-10-GM couverts",
+   "statut": "couvert",
+   "ancre": "glossary/g93.py, g93-cim (G93.0–G93.9, G93.80, G93.88)"
+  },
+  {
+   "rang": 20,
+   "rubrique": "Points d’examen fédéral",
+   "statut": "partiel",
+   "ancre": "quiz e-4 ; aucun cas de sémiologie (C07)"
+  }
+ ],
+ "verifications_conformes": [
+  "CIM-10-GM 2024 : G93.0 à G93.9, G93.80, G93.88, inclusions, exclusions et notes de codage [S1]",
+  "HII : prévalence 0,5–2/100 000 (terme de la source), 90–95 % d’obèses, prise de 5–15 %, céphalée ≤ 90 %, abus 37 %, olfaction ≤ 80 %, asymétrie 4 %, erreur 40 %, seuils 25/28 et zone grise 25–30, ICHD-3 250/280 mm, sténose 90 %/50 %, 48 % à 1500 mg, > 40 % à 4 g, révisions 1,8/4,3, 51 %/30 %, 26 %, céphalée 68 %/79 %, 64 %, mortalité bariatrique 0,05–0,14 %, 100 %/90 %, topiramate 40, octréotide 26, grossesse, causes secondaires [S2]",
+  "Abbott 2023 : 27,2–27,8 kg, −11,9 et −11,2 cm d’eau, IMC ≥ 35 grade A, < 35 grade B [S3]",
+  "Jha 2019 : 20–22 mmHg chez 45–80 %, > 60 % et ~15 %, PVI 20–25 mL, 1 h, 6–24 h, 3–4 jours, second pic après 5 jours, NKCC1, SUR1-TRPM4, AQP4, glibenclamide 66 sujets [S7]",
+  "ERC-ESICM 2021 : SpO₂ 94–98 %, PaO₂ 10–13 kPa (75–100 mmHg), PAM < 65 à éviter, diurèse > 0,5 mL/kg/h, 32–36 °C ≥ 24 h, fièvre > 37,7 °C ≥ 72 h, M ≤ 3, prédicteurs, NSE > 60 µg/L, 24 h après réchauffement à 36 °C — fidèlement reproduits, mais remplacés en 2025 [S4 ; S5]",
+  "EUROMENE : 0,1–0,7 %, ≈ 3 millions, ≥ 2/3 de femmes, IOM 6 mois, CCC 3 mois chez l’enfant, Rowe 2017, drapeaux rouges (≥ 38 °C), pacing 2/3, TCC, régimes, 2–4 spécialistes par million [S6]",
+  "Kystes : 2,3 % (29/1235), ≥ 70 ans, absence d’association symptomatique (R01) [S10] ; Reye 30–40 %, 3–5 jours [S9] ; EAN 2020 (FOUR, CRS-R, imagerie fonctionnelle) [S8]",
+  "Mannitol 20 % : indications, 1–2 g/kg en 30–60 min, exemple 500 mL en 1 h, 500 mL/24 h en oligurie, contre-indications, surveillance [S12] ; Diamox : indication « œdèmes cérébraux », comprimés 250 mg, contre-indications, mises en garde, grossesse [S11] ; Aspirine : restriction dès 12 ans, formes non indiquées avant 12 ans [S13]"
+ ],
+ "lacunes": [
+  "Aucune source suisse de recommandation ni de sémiologie pour l’HII, l’œdème cérébral ou l’engagement ; WebSearch « Revue Médicale Suisse hypertension intracrânienne engagement » sans article suisse.",
+  "Ligne directrice DGN S1 « Intrakranieller Druck (ICP) » 2023 (AWMF 030-105) : PDF du registre AWMF renvoyé en HTML anti-robot, page DGN vide ; non lue. Syndromes topographiques d’engagement non sourcés.",
+  "Ligne directrice DGN S1 HII (2019, 030-093) : seul le compte rendu de presse de l’Ärzteblatt a été lu [S20].",
+  "ERC-ESICM 2025 : PDF obtenu par un miroir public (certifico.com), les sites de l’éditeur exigeant un défi JavaScript ; les signes ≤/≥ sont parfois illisibles dans l’extraction (cible de 37,5 °C, indice pupillaire neurologique non repris pour cette raison).",
+  "ESO 2021 (infarctus expansif), Abbott 2023, IIH:WT, exénatide, méta-analyse GLP-1, EAN 2020, Schrör 2007, Rabiei 2016, Tschopp 2023 : résumés seuls.",
+  "Aucune sensibilité ni spécificité des signes de l’HII dans les sources lues ; classification de Frisén non lue ; critères de Friedman 2013 (figure) non lus.",
+  "Spécificités suisses non lues : directives ASSM sur la mort cérébrale, aptitude à la conduite après dérivation, assurance-invalidité pour l’encéphalomyélite myalgique.",
+  "Syndrome de Reye : critères, biologie (ammoniémie, transaminases), traitement et épidémiologie suisse non lus ; corticoïdes et sérum salé hypertonique (doses) non lus.",
+  "Figure de remplacement : Wikimedia Commons en HTTP 429 (tools/image_clo_finder.py) ; candidats limités aux figures CC BY 4.0 de S2 ; contrôle visuel de l’original non fait.",
+  "Rendu à 390 px et captures (SEM-22, SEM-23) non réalisés dans cet audit ; lisibilité des SVG estimée par calcul.",
+  "Formule de la pression de perfusion cérébrale non trouvée dans les sources lues : aucun calcul de pression de perfusion n’est proposé."
+ ],
+ "propositions": [
+  "G93_c_semio.html",
+  "G93_a_semio_clinique.html",
+  "G93_pop1_semio.html",
+  "G93_c_sciences.html",
+  "G93_c_figures.html",
+  "G93_b_enrichissements.html",
+  "remplacements.py",
+  "remplacements.json"
+ ],
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+}
