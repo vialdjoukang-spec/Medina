@@ -1,0 +1,406 @@
+{
+ "mission": "ALPHA1-CLAUDE-G58-LANG",
+ "code": "G58",
+ "type_audit": "linguistique",
+ "base_sha": "32416a2080e67537641040a81252dec0b3e6d137",
+ "generation": 1,
+ "branche": "claude/alpha1/g58-lang-g1",
+ "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-G58-LANG-g1",
+ "conversation": "alpha1-claude-g58-lang",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-16T05:30:00Z",
+ "date_fin": "2026-10-16T06:10:00Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G58/G58_a.html",
+   "chapters/G58/G58_b.html",
+   "chapters/G58/G58_c.html",
+   "chapters/G58/G58_d.html",
+   "chapters/G58/G58_pop1.html",
+   "chapters/G58/G58_pop2.html",
+   "glossary/g58.py"
+  ],
+  "empreintes_sha256": {
+   "chapters/G58/G58_a.html": "ab85b9cbe6a06c0778d39b193fc662fd020e0bf751aee0ac793f2f5836b6e699",
+   "chapters/G58/G58_b.html": "dac8f40b07949ec96ff2cdc3f019a1cbdd4ddf20dfa36efdfb70a75a5ba9124d",
+   "chapters/G58/G58_c.html": "5b3b01c49d1213b89e0ef2ccc5c2b44c48209f7d4e83d83a69c7de6db7befa00",
+   "chapters/G58/G58_d.html": "9a95b52653e579e594b68fec55610323566a606a43b4a17013811989a22c80de",
+   "chapters/G58/G58_pop1.html": "9d862c7a0f28d908d51ebff67e3137d45afd12313a4960a9fbd5d5712020f7b0",
+   "chapters/G58/G58_pop2.html": "809975dabf4ed5363c482348d1264978a3b88efeb6c04ad4782651ad64f240e4",
+   "glossary/g58.py": "ec367748aa21184855c46fef75b9d437ca0d74e7d904f6c993e4e9b6bfb205b1"
+  },
+  "empreintes_conformes": true,
+  "perimetre": "Les sept fichiers lus en entier : onglets _a à _d, fenêtres _pop1 et _pop2, glossaire g58.py. Toutes les surfaces textuelles (tableaux, figures, quiz, Pareto, div.alert, div.key, glossaire) ont été parcourues."
+ },
+ "premiere_verification": "Recalcul des sept empreintes SHA-256 des fichiers de la leçon et comparaison avec le manifeste (conformes) ; puis vérification mécanique, par script Python, que chaque extrait « ancien » apparaît exactement une fois dans son fichier.",
+ "synthese": {
+  "nombre_propositions": 78,
+  "renvois_medicaux": 36,
+  "par_categorie": {
+   "style_meta": 1,
+   "syntaxe": 4,
+   "lourdeur": 3,
+   "registre": 9,
+   "ambiguite": 12,
+   "coherence_terminologique": 8,
+   "lexique": 2,
+   "accord": 1,
+   "style_passif": 2,
+   "style_infinitif": 9,
+   "grammaire": 6,
+   "style_nominal": 17,
+   "orthographe": 3,
+   "typographie_nombres": 1
+  },
+  "par_fichier": {
+   "G58_a.html": 6,
+   "G58_b.html": 23,
+   "G58_c.html": 16,
+   "G58_d.html": 5,
+   "G58_pop1.html": 7,
+   "G58_pop2.html": 20,
+   "g58.py": 1
+  },
+  "renvois_par_nature": {
+   "ambiguite_de_sens": 2,
+   "frequence": 5,
+   "causalite": 13,
+   "portee_source": 6,
+   "chronologie": 4,
+   "terminologie_medicale": 1,
+   "coherence_medicale": 3,
+   "indication": 1,
+   "structure": 1
+  }
+ },
+ "verification_mecanique": {
+  "methode": "Python : str.count(ancien) sur le contenu exact de chaque fichier ; puis application séquentielle de toutes les propositions en mémoire (sans écrire dans chapters/ ni glossary/).",
+  "propositions_verifiees": 78,
+  "ancien_unique_dans_fichier": true,
+  "application_sequentielle_sans_conflit": true,
+  "ancres_renvois_uniques_et_au_plus_200_caracteres": true
+ },
+ "constats": [
+  {
+   "type": "proposition",
+   "ref": "propositions.json",
+   "nombre": 78
+  },
+  {
+   "type": "renvoi_medical",
+   "nombre": 36,
+   "liste": [
+    {
+     "id": "G58-LANG-RM01",
+     "fichier": "chapters/G58/G58_a.html",
+     "ancre": "sans attendre un schéma complet",
+     "nature": "ambiguite_de_sens",
+     "explication": "« Schéma complet » peut désigner un tableau clinique, un bilan ou un protocole thérapeutique ; la reformulation exige de savoir lequel. Aucune modification proposée.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM02",
+     "fichier": "chapters/G58/G58_a.html",
+     "ancre": "soulager une douleur neuropathique souvent longue",
+     "nature": "frequence",
+     "explication": "« Souvent longue » est une fréquence/durée que la section Fréquence ne chiffre pas pour la névralgie intercostale (seule la douleur chronique postopératoire est chiffrée).",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM03",
+     "fichier": "chapters/G58/G58_a.html",
+     "ancre": "parce qu’un retard de traitement expose à des déficits permanents et au décès",
+     "nature": "causalite",
+     "explication": "Relation causale retard → déficits permanents et décès, reprise dans l’encadré d’urgence ; aucune source citée à cet endroit ne la chiffre ni ne l’établit pour la mononévrite multiple.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM04",
+     "fichier": "chapters/G58/G58_a.html",
+     "ancre": "jusqu’à 80 % des fractures de côtes traumatiques sont concernées",
+     "nature": "ambiguite_de_sens",
+     "explication": "Le complément de « concernées » (par une atteinte nerveuse ? une douleur ?) manque ; la reformulation changerait la nature du fait rapporté.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM05",
+     "fichier": "chapters/G58/G58_a.html",
+     "ancre": "le retard est la règle",
+     "nature": "frequence",
+     "explication": "Généralisation tirée d’une moyenne de « environ cinq médecins avant le diagnostic » ; « la règle » affirme une fréquence que la source ne donne pas.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM06",
+     "fichier": "chapters/G58/G58_a.html",
+     "ancre": "la sensibilité de la paroi inflammatoire est faible",
+     "nature": "portee_source",
+     "explication": "Formulation imprécise (sensibilité de quoi : de la biopsie ? de la détection d’une inflammation de paroi ?), reprise dans les onglets Examens et dans la fenêtre « Biopsie nerf et muscle ». Une reformulation locale choisirait un sens médical.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM07",
+     "fichier": "chapters/G58/G58_b.html",
+     "ancre": "le déficit observé à l’examen reflète donc une lésion localisée",
+     "nature": "causalite",
+     "explication": "Inférence « donc » : de la zone frontière de perte axonale au déficit segmentaire ; la source (autopsie de huit cas) ne la formule pas telle quelle.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM08",
+     "fichier": "chapters/G58/G58_b.html",
+     "ancre": "le tableau évolue vers une polyneuropathie sensitivomotrice axonale",
+     "nature": "chronologie",
+     "explication": "Évolution temporelle (« quand les territoires se chevauchent, le tableau évolue vers ») attribuée à un résumé ; reprise dans la fenêtre « Mononévrite multiple » et dans la Physiologie (« À mesure que… le tableau devient »).",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM09",
+     "fichier": "chapters/G58/G58_b.html",
+     "ancre": "relève d’une microvascularite sans lien avec la sévérité du diabète",
+     "nature": "causalite",
+     "explication": "Mécanisme (microvascularite) et absence de lien avec la sévérité énoncés sans citation à cet endroit.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM10",
+     "fichier": "chapters/G58/G58_b.html",
+     "ancre": "explique son ton (brûlure, éclair), sa persistance après la cicatrisation et la réponse aux molécules ciblant la douleur neuropathique",
+     "nature": "causalite",
+     "explication": "Triple relation causale (nature neuropathique → caractère, persistance, réponse thérapeutique) sans source dédiée.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM11",
+     "fichier": "chapters/G58/G58_b.html",
+     "ancre": "Anticorps anti-Hu (plus de 90 % avec un cancer bronchique à petites cellules)",
+     "nature": "frequence",
+     "explication": "Dénominateur ambigu (90 % des patients anti-Hu ? des cancers ?) ; la lecture correcte relève du médical.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM12",
+     "fichier": "chapters/G58/G58_b.html",
+     "ancre": "Viennent ensuite la fracture de côte",
+     "nature": "frequence",
+     "explication": "L’ordre de fréquence des causes après la thoracotomie et le zona (« viennent ensuite ») n’est pas donné par la fenêtre « Névralgie intercostale », qui ne hiérarchise que les deux premières.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM13",
+     "fichier": "chapters/G58/G58_b.html",
+     "ancre": "puis s’étend par paliers à d’autres nerfs",
+     "nature": "chronologie",
+     "explication": "Chronologie « débute de façon aiguë à subaiguë… puis s’étend par paliers » ; la source de cette séquence n’est pas citée à cet endroit.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM14",
+     "fichier": "chapters/G58/G58_b.html",
+     "ancre": "Le mécanisme est mécanique : tout mouvement qui étire ou comprime le nerf réveille la douleur.",
+     "nature": "causalite",
+     "explication": "Tautologie de forme (« mécanisme mécanique ») et affirmation causale universelle (« tout mouvement ») ; la reformulation toucherait au mécanisme.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM15",
+     "fichier": "chapters/G58/G58_b.html",
+     "ancre": "(signe de Tinel)",
+     "nature": "terminologie_medicale",
+     "explication": "Le signe de Tinel est cité pour une douleur reproduite « par la palpation » ; l’emploi du terme et son geste (percussion ou palpation) relèvent de l’audit médical.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM16",
+     "fichier": "chapters/G58/G58_b.html",
+     "ancre": "une douleur à l’inclinaison latérale du côté atteint évoque une atteinte pariétale",
+     "nature": "coherence_medicale",
+     "explication": "« Du côté atteint » (onglet Pathologie) et « du côté de l’inclinaison » (fenêtre) ne désignent pas la même chose ; le quiz parle de Schepelmann « homolatéral ». Le sens du signe doit être tranché sur source avant toute reformulation.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM17",
+     "fichier": "chapters/G58/G58_b.html",
+     "ancre": "car un traitement rapide est nécessaire",
+     "nature": "causalite",
+     "explication": "Recommandation d’urgence tirée d’un cas rapporté (résumé) ; reprise dans la fenêtre « Neuropathie sous inhibiteur de point de contrôle ».",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM18",
+     "fichier": "chapters/G58/G58_b.html",
+     "ancre": "peut rendre la preuve histologique plus difficile",
+     "nature": "causalite",
+     "explication": "Effet de la corticothérapie préalable sur le rendement de la biopsie : relation non sourcée dans le texte.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM19",
+     "fichier": "chapters/G58/G58_b.html",
+     "ancre": "(diverses conditions)",
+     "nature": "portee_source",
+     "explication": "La parenthèse peut se rapporter au seul groupe « tramadol et opioïdes » ou à tous les médicaments cités ; le niveau A d’EFNS dépend des conditions. Reformulation impossible sans la source.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM20",
+     "fichier": "chapters/G58/G58_b.html",
+     "ancre": "à long terme, environ un patient sur cinq réussit sous radiofréquence pulsée",
+     "nature": "portee_source",
+     "explication": "« Réussit » n’est pas défini (soulagement ? durée ? seuil ?) ; reprise dans la fenêtre « ACNES ». Un verbe plus précis choisirait un critère de succès.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM21",
+     "fichier": "chapters/G58/G58_b.html",
+     "ancre": "la radiculopathie diabétique thoracique se résout complètement en 3 à 12 mois",
+     "nature": "chronologie",
+     "explication": "Durée de résolution complète présentée comme une règle ; reprise dans la Physiologie. De même « amélioration spontanée fréquente » pour les hernies discales thoraciques (fenêtre « Hernie discale thoracique »).",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM22",
+     "fichier": "chapters/G58/G58_b.html",
+     "ancre": "justifie une information préopératoire",
+     "nature": "causalite",
+     "explication": "Recommandation de prévention déduite d’une fréquence (38 % à 12 mois) ; la source ne formule pas cette recommandation.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM23",
+     "fichier": "chapters/G58/G58_c.html",
+     "ancre": "ce qui explique les séries où la vascularite n’est que probable ou possible",
+     "nature": "causalite",
+     "explication": "Relation causale entre la faible sensibilité de la biopsie et les séries à certitude limitée ; non établie par une source citée.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM24",
+     "fichier": "chapters/G58/G58_c.html",
+     "ancre": "La corrélation avec les neurofilaments est à lire avec prudence",
+     "nature": "portee_source",
+     "explication": "« Corrélation » introduit un terme statistique que le texte n’a pas défini ; les neurofilaments sont ailleurs décrits comme « marqueur possible d’activité ».",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM25",
+     "fichier": "chapters/G58/G58_c.html",
+     "ancre": "La biopsie transforme la suspicion en preuve.",
+     "nature": "coherence_medicale",
+     "explication": "Formule en tension avec la limite de sensibilité et avec les niveaux « probable » et « possible » ; atténuer la phrase relève du médical.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM26",
+     "fichier": "chapters/G58/G58_c.html",
+     "ancre": "La localisation d’une atteinte explique pourquoi le déficit suit un territoire nerveux précis et pourquoi la cause se cherche dans la vascularisation du nerf.",
+     "nature": "causalite",
+     "explication": "Deux relations « explique pourquoi » dont la seconde (cause cherchée dans la vascularisation) n’est pas évidente pour toutes les causes du chapitre (infection, médicament, compression).",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM27",
+     "fichier": "chapters/G58/G58_c.html",
+     "ancre": "<b>Anatomie → clinique.</b> Vasa nervorum de 50–300 µm et zone frontière expliquent les déficits asymétriques par nerf.",
+     "nature": "causalite",
+     "explication": "Lien causal entre calibre des vaisseaux, zone frontière et asymétrie des déficits ; « les nerfs… que l’on teste d’abord » est aussi une chronologie d’examen non sourcée.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM28",
+     "fichier": "chapters/G58/G58_c.html",
+     "ancre": "vient de la lésion des fibres sensitives elles-mêmes",
+     "nature": "causalite",
+     "explication": "Origine de la douleur neuropathique affirmée sans source ; reprise pour l’effet déclenchant de l’inspiration, de la toux et de la rotation (« ce qui explique leur effet déclenchant »).",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM29",
+     "fichier": "chapters/G58/G58_c.html",
+     "ancre": "suppriment l’axe surrénalien",
+     "nature": "portee_source",
+     "explication": "Intensité (« suppriment » plutôt que « freinent ») dépendante de la notice suisse de la prednisone, non reprise ici.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM30",
+     "fichier": "chapters/G58/G58_d.html",
+     "ancre": "interdits chez l’enfant",
+     "nature": "coherence_medicale",
+     "explication": "« Interdits » contredit « non recommandés avant 18 ans » (Pathologie et fenêtres) ; le statut réglementaire exact exige l’information professionnelle.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM31",
+     "fichier": "chapters/G58/G58_pop2.html",
+     "ancre": "l’usage dans la mononévrite vasculitique relève des lignes directrices EFNS et de revues",
+     "nature": "indication",
+     "explication": "Le texte ne dit pas que cet usage est hors des indications autorisées par l’information professionnelle (neuropathie diabétique, névralgie postherpétique) ; la mention « hors indication » relève de l’audit médical.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM32",
+     "fichier": "chapters/G58/G58_pop2.html",
+     "ancre": "<p>Syndrome DRESS signalé ; non recommandée avant 18 ans.</p>",
+     "nature": "structure",
+     "explication": "Dans la rubrique « Effets indésirables », la mention « non recommandée avant 18 ans » n’est pas un effet indésirable ; son déplacement dépasse la formulation locale.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM33",
+     "fichier": "chapters/G58/G58_pop1.html",
+     "ancre": "Cette notion explique qu’une atteinte vasculaire touche des nerfs un à un et laisse d’autres nerfs indemnes",
+     "nature": "causalite",
+     "explication": "Relation causale zone frontière/vasa nervorum → atteinte nerf par nerf ; non établie par une source citée.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM34",
+     "fichier": "chapters/G58/G58_pop1.html",
+     "ancre": "arrête ou remplace l’agent suspect avant d’attribuer la neuropathie à une maladie systémique",
+     "nature": "chronologie",
+     "explication": "Séquence de conduite (arrêt avant attribution) sans source ; la reformulation changerait l’ordre des actes.",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM35",
+     "fichier": "chapters/G58/G58_pop2.html",
+     "ancre": "Dans la neuropathie des vascularites à ANCA, les protéines et les cellules sont habituellement normales.",
+     "nature": "frequence",
+     "explication": "« Habituellement » est une fréquence que la source (revue) ne chiffre pas ; l’onglet Examens écrit « généralement ».",
+     "gravite": "renvoi_medical"
+    },
+    {
+     "id": "G58-LANG-RM36",
+     "fichier": "glossary/g58.py",
+     "ancre": "Mesure de l’inflammation.",
+     "nature": "portee_source",
+     "explication": "La VS est un marqueur indirect de l’inflammation ; la définition « mesure de l’inflammation » est imprécise, mais sa correction relève du médical.",
+     "gravite": "renvoi_medical"
+    }
+   ]
+  }
+ ],
+ "differes": [
+  {
+   "sujet": "Espaces insécables globales avant « ; : ! ? » et dans « 50 % »",
+   "statut": "differe",
+   "motif": "Choix différé par le coordinateur ; non appliqué, non compté dans les propositions."
+  },
+  {
+   "sujet": "« fibrillation atriale » / « fibrillation auriculaire »",
+   "statut": "differe",
+   "motif": "Choix différé par le coordinateur ; non appliqué. Aucune occurrence de ce couple n’a été relevée dans G58."
+  }
+ ],
+ "lacunes": [
+  "Sixième sous-onglet (Sémiologie) : l’onglet Sciences compte quatre disciplines (Anatomie, Histologie, Physiologie, Biochimie) et aucun bouton Sémiologie ; constat relevant de l’audit médical, non traité en mission linguistique.",
+  "Abréviations sans clé de glossaire repérées par balayage automatique des fichiers : « MPO-ANCA » (composé, utilisé avant toute définition ; la clé « MPO » existe ailleurs) et « E10–E14 » (code CIM de la fenêtre g58-cim). Aucune modification de glossaire proposée au-delà de l’orthographe (« aide-mémoire »). Le balayage est automatique : un oubli reste possible.",
+  "Listes nominales des cartes (onglet Pathologie, « Symptômes », « Antécédents », « Examen neurologique », « Signes extra-neurologiques ») et énumérations de causes dans la fenêtre « Névralgie intercostale » : non réécrites ; la réécriture en phrases complètes dépasse une reformulation locale. Les paragraphes télégraphiques des fenêtres médicament ont été traités pour la prégabaline, la gabapentine, la prednisone et le cyclophosphamide ; ceux du rituximab, du mépolizumab, de l’EULAR et des fenêtres Pareto d’anatomie, d’histologie, de physiologie, de biochimie et d’examens restent en l’état.",
+  "Lisibilité des figures 1 à 6 (viewBox de 380 de large, police de 14) : non mesurée par rendu. Plusieurs libellés dépassent 50 caractères (par exemple « Électrophysiologie : amplitude réduite, vitesse conservée ») et pourraient déborder des cadres de 356 unités ; à vérifier au rendu.",
+  "Aucune vérification médicale n’a été faite ; aucune source externe n’a été consultée. Les renvois médicaux signalent seulement ce que les fichiers ne démontrent pas par eux-mêmes.",
+  "Divergence de base : la consigne cite la base 32416a20, le manifeste indique la base d1a488ad. Le worktree est bien sur 32416a20 et les sept empreintes SHA-256 correspondent au manifeste."
+ ],
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+}
