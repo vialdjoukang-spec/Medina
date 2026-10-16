@@ -1,0 +1,93 @@
+{
+  "kind": "MED_E05_S05_targeted_source_delta_review",
+  "reviewed_at": "2026-10-16T05:42:43.838543+00:00",
+  "actor": "Codex, spécialiste médical IA distinct de l’intégrateur source root; auteur de la recherche/proposition préalable",
+  "scope": "Seulement les deux paragraphes ajoutés par git diff -- chapters/E05/E05_b.html sous e05-a10-partie-3. Pas de relecture médicale globale du fichier, du cours ni des autres preuves.",
+  "source_base_head": "254c881debe27fdcfa17c3670a70d68c5eb28831",
+  "reviewed_file": "chapters/E05/E05_b.html",
+  "reviewed_file_sha256": "46ddf8ea4ca8aadd158bcfd4dd556521a9b5f5c3e74dc5473aca102d5b580924",
+  "diff_file": "med-source-delta-reviewed.diff",
+  "diff_sha256": "c2a1b6380bb95fef5ef667d6ae1b12add27a987d6a5025c457d1eba95b540b7e",
+  "added_lines": [
+    "<p>La place de la ciclosporine, de l’azathioprine, du rituximab et du tocilizumab en deuxième ligne vient des recommandations EUGOGO. L’orbitopathie ne figure pas parmi les indications énumérées par les informations professionnelles suisses consultées de Sandimmun Neoral oral, Imurek oral, MabThera intraveineux et Actemra. L’emploi de ces produits pour l’orbitopathie sort donc de ces indications autorisées et relève d’une décision du centre spécialisé, avec évaluation de leur sécurité. Ces FI ne fournissent pas de posologie orbitaire : leurs doses de greffe, de rhumatologie ou d’oncologie ne doivent pas être transposées à l’orbite. Cette vérification concerne les produits cités ; elle ne couvre pas toutes les spécialités contenant ces molécules et ne détermine pas leur remboursement.</p>",
+    "<p class=\"src\">Sources : informations professionnelles approuvées par Swissmedic, consultées le 16 octobre 2026 : <a href=\"https://compendium.ch/fr/product/37688-sandimmun-neoral-caps-25-mg/mpro\" target=\"_blank\" rel=\"noopener\">Sandimmun Neoral, capsules et solution orales — janvier 2026</a> ; <a href=\"https://compendium.ch/fr/product/1304567-imurek-cpr-pell-25-mg/mpro\" target=\"_blank\" rel=\"noopener\">Imurek, comprimés — avril 2026</a> ; <a href=\"https://compendium.ch/fr/product/1098021-mabthera-conc-perf-100-mg-10ml/mpro\" target=\"_blank\" rel=\"noopener\">MabThera, concentré pour perfusion intraveineuse — décembre 2025</a> ; <a href=\"https://compendium.ch/fr/product/1110447-actemra-conc-perf-80-mg-4ml/mpro\" target=\"_blank\" rel=\"noopener\">Actemra, FI groupée des formes intraveineuses et sous-cutanées — septembre 2026</a>.</p>"
+  ],
+  "source_readings_reused": {
+    "path": "source-readings.json",
+    "sha256": "05e3afe76994677760566bb1fb49a21f0534162278ac5d17392e31abb8ad5ac2",
+    "source_ids": [
+      "FI-SECONDARY-SANDIMMUN-NEORAL",
+      "FI-SECONDARY-IMUREK",
+      "FI-SECONDARY-MABTHERA-IV",
+      "FI-SECONDARY-ACTEMRA"
+    ],
+    "new_network_reading": false
+  },
+  "assessment": "acceptable pour ce seul delta documentaire et ses limites déclarées",
+  "medical_human_validation": false,
+  "global_favorable_medical_audit": false,
+  "lesson_closure": false,
+  "findings": [
+    {
+      "id": "DELTA-FI-INDICATIONS",
+      "severity": "information",
+      "status": "supported",
+      "finding": "La conclusion est circonscrite aux quatre FI nommées. Leurs rubriques complètes d’indications sont des listes définies sans orbitopathie ; la phrase «sort donc de ces indications autorisées» reste attachée à ces produits. Imurek énumère huit maladies après «dans les maladies suivantes», sans catégorie ouverte de toute maladie auto-immune.",
+      "evidence": [
+        "FI-SECONDARY-SANDIMMUN-NEORAL#sections.indications",
+        "FI-SECONDARY-IMUREK#sections.indications",
+        "FI-SECONDARY-MABTHERA-IV#sections.indications",
+        "FI-SECONDARY-ACTEMRA#sections.indications"
+      ]
+    },
+    {
+      "id": "DELTA-FI-PRODUCT-ROUTE",
+      "severity": "information",
+      "status": "supported",
+      "finding": "Sandimmun Neoral et Imurek sont identifiés comme oraux, MabThera comme IV. Les URL pointent vers les présentations réellement lues. La FI Actemra est correctement annoncée comme groupée IV/SC ; aucune interchangeabilité ni prescription SC orbitaire n’est affirmée. Les mois sont ceux de mise à jour des FI, sans invention de date initiale d’autorisation.",
+      "evidence": [
+        "https://compendium.ch/fr/product/37688-sandimmun-neoral-caps-25-mg/mpro",
+        "https://compendium.ch/fr/product/1304567-imurek-cpr-pell-25-mg/mpro",
+        "https://compendium.ch/fr/product/1098021-mabthera-conc-perf-100-mg-10ml/mpro",
+        "https://compendium.ch/fr/product/1110447-actemra-conc-perf-80-mg-4ml/mpro"
+      ]
+    },
+    {
+      "id": "DELTA-FI-RECOMMENDATION",
+      "severity": "information",
+      "status": "supported",
+      "finding": "La place en deuxième ligne est attribuée à l’EUGOGO, distinctement des indications FI. FINAL-EUGOGO existant est réutilisé ; aucune nouvelle lecture réseau EUGOGO ou changement du schéma primaire revendiqué.",
+      "evidence": [
+        "claim-mapping.json#existing_evidence_reused_without_new_network_reading:FINAL-EUGOGO"
+      ]
+    },
+    {
+      "id": "DELTA-FI-NO-TRANSFER",
+      "severity": "information",
+      "status": "supported",
+      "finding": "Le delta n’ajoute aucune dose ni voie d’administration thérapeutique nouvelle. L’interdiction de transposer les doses de greffe/rhumatologie/oncologie est explicite. La décision du centre spécialisé et la sécurité propre aux produits restent nécessaires.",
+      "evidence": [
+        "med-source-delta-reviewed.diff"
+      ]
+    },
+    {
+      "id": "DELTA-FI-REIMBURSEMENT",
+      "severity": "information",
+      "status": "supported",
+      "finding": "Le delta exclut explicitement une conclusion de remboursement et l’extrapolation à toutes les spécialités des molécules citées. Il ne revendique ni disponibilité ni protocole suisse local ni audit favorable global.",
+      "evidence": [
+        "med-source-delta-reviewed.diff"
+      ]
+    }
+  ],
+  "new_blocking_findings": [],
+  "language_correction_required": false,
+  "language_proposal": null,
+  "retained_limits": [
+    "Choix du produit effectivement prescrit et schéma orbitaire spécialisé non certifiés par ce delta.",
+    "Interactions, surveillance complète, situations particulières et associations ne sont pas une nouvelle monographie exhaustive.",
+    "Disponibilité commerciale et remboursement de cet usage non établis.",
+    "Réserves REMAINING-PROOF étrangères à ce delta préservées, sans avis humain ni clôture globale."
+  ],
+  "source_writes_by_reviewer": false
+}
