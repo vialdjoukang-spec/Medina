@@ -137,7 +137,7 @@ La proposition `G71_c_semio.html` respecte le contrat `SEMIOLOGIE_FONDAMENTALE_A
 ## Lacunes principales
 - Aucune recommandation clinique suisse spécifique n’a été trouvée. Le texte intégral de la *Revue Médicale Suisse* 2022 n’était pas accessible ; seul son résumé a été lu.
 - Plusieurs ateliers ENMC restent inaccessibles : le 229e (LGMD), le 259e (anesthésie), le 263e (conductrices) et le 268e (FSHD). L’ESC 2022 n’a été lue qu’en partie, et l’ESC 2021 sur la stimulation n’a pas été lue.
-- Le statut suisse de la mexilétine, du givinostat, du déflazacort et de l’ataluren n’a pas été trouvé. Les FI de la lamotrigine, du dantrolène et de l’hydrocortisone n’ont pas été lues en texte.
+- Le statut suisse de la mexilétine, du givinostat, du déflazacort et de l’ataluren n’a pas été trouvé. Les FI du dantrolène et de l’hydrocortisone n’ont pas été lues en texte ; la FI de la lamotrigine (Lamotrigine Sandoz®, mars 2026) a été lue à la rubrique Indications après la revue Codex.
 - Aucune source n’a été lue sur la transmission de la DM2 et de la FSHD, ni sur les spécificités suisses (AI, conduite, remboursement).
 - Aucune valeur chiffrée n’a été trouvée pour les signes sémiologiques.
 
@@ -148,6 +148,13 @@ La proposition `G71_c_semio.html` respecte le contrat `SEMIOLOGIE_FONDAMENTALE_A
 - Fichiers admis : `G71_pop3.html` renommée `G71_pop1_semio.html`, cible `G71_pop1.html` ; aucune clé orpheline.
 - `sources.json` : version, section ou page, passage paraphrasé, population, limites et niveau de lecture pour les 26 sources ; inconnues déclarées.
 - Constats C01 à C09 conservés tels quels ; seule la référence de fichier de C01 change.
+
+## Revue Codex de la PR #196
+
+- **P1 — MELAS.** La non-indication des antiplaquettaires et de la thrombolyse ne vaut que pour un épisode pseudo-vasculaire mitochondrial établi. Partout (`G71_c_semio.html`, `G71_b_3.html`, `G71_a_semio_clinique.html`, fenêtre `g71-melas` dans `G71_mineurs.html`), la formulation exige d’abord l’imagerie, l’EEG et la génétique pour confirmer l’épisode et exclure ses imitations, dont l’ischémie vasculaire. Le contexte mitochondrial connu n’est plus présenté comme discriminant suffisant. Passage exact [S10] : « Early recognition is essential, with prompt use of neuroimaging, EEG, and genetic testing to confirm the diagnosis and exclude mimics. » ; « therapies targeting vascular ischemia, including antiplatelet agents and thrombolysis, are not indicated ». Le consensus ne traite pas l’infarctus artériel chez ces patients ; la phrase sur la filière de l’accident vasculaire cérébral est une conséquence prudente déclarée par l’audit.
+- **P2 — Lamotrigine.** FI suisse Lamotrigine Sandoz®, comprimés dispersibles (GTIN 7680574120033), mise à jour de mars 2026, lue à la rubrique Indications : épilepsie et prévention des épisodes dépressifs du trouble bipolaire ; la myotonie n’y figure pas. S25 et `G71_d_1.html` sont mis à jour.
+- **P2 — Figure CTG.** La figure 6 de `G71_c_figures.html` porte `data-src="S4"` et une légende sourcée [S4] pour les seuils 35 et 50 et la flèche. Passage exact : « An expansion of over 35 repeats typically indicates an unstable and expanding mutation. An expansion of 50 repeats or higher is consistent with a diagnosis of DM1. »
+- Constats C01 à C09 conservés tels quels.
 
 ## Tableau de bord
 

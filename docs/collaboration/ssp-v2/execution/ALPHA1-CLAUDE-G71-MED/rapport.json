@@ -13,7 +13,7 @@
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
  "date_debut": "2026-10-16T05:55:18Z",
- "date_fin": "2026-10-16T06:33:44Z",
+ "date_fin": "2026-10-16T06:38:37Z",
  "lecture": {
   "fichiers": [
    "chapters/G71/G71_a.html",
@@ -879,7 +879,7 @@
   "229e atelier ENMC (LGMD, 2017) : ni résumé ni texte accessibles (Europe PMC sans résumé ; éditeur HTTP 403). 259e (anesthésie), 263e (conductrices) et 268e (FSHD) ateliers ENMC : aucun résumé disponible.",
   "ESC 2022 arythmies ventriculaires : section 7.1.3.6 et tableau 33 non extraits (page tronquée) ; ESC 2021 stimulation non lue.",
   "Statut suisse de la mexilétine, du givinostat, du déflazacort et de l’ataluren : absents d’AmiKo et de la recherche web ; non vérifiés auprès de Swissmedic ni de la liste des spécialités.",
-  "FI de la lamotrigine et du dantrolène non lues en texte ; FI de l’hydrocortisone injectable non lue.",
+  "FI du dantrolène non lue en texte ; FI de l’hydrocortisone injectable non lue ; FI de la lamotrigine lue (Lamotrigine Sandoz®, mars 2026, rubrique Indications) le 16.10.2026.",
   "Transmission de la DM2, de la FSHD (FSHD1/FSHD2) et rang épidémiologique de la FSHD : aucune source européenne lisible lue (Hamel 2020, Knox 2025 non relus).",
   "Jayaraman et Ghosh (Continuum 2025), Beecher 2024, Riguzzi 2025, registre russe 2026 : non relus par l’audit ; leurs chiffres restent sous la responsabilité de la leçon (voir C25).",
   "Sensibilité, spécificité et rapports de vraisemblance des signes (Gowers, myotonie de préhension, cotation MRC, symptômes d’hypoventilation) : non chiffrés dans les sources lues.",
@@ -926,5 +926,23 @@
   ],
   "constats_C01_C09": "conservés tels quels (gravité, constat, preuve, justification) ; seule la référence de fichier de C01 est actualisée",
   "figures": "aucune figure anatomique dessinée par IA ajoutée ; le schéma de raisonnement de la sémiologie est SCHEMA_NON_ANATOMIQUE"
+ },
+ "revue_codex_pr196": {
+  "date": "2026-10-16T06:38:37Z",
+  "corrections": [
+   {
+    "constat_revue": "P1 — MELAS : non-indication des antiplaquettaires et de la thrombolyse étendue à tout déficit aigu",
+    "correction": "G71_c_semio.html (tableau des syndromes, tableau des différentiels, alerte, À retenir, ligne S10 des sources), G71_b_3.html, G71_a_semio_clinique.html et fenêtre g71-melas (G71_mineurs.html, C24) : la formulation exige d’abord la confirmation de l’épisode pseudo-vasculaire et l’exclusion de ses imitations, dont l’ischémie vasculaire, par l’imagerie, l’EEG et la génétique ; la non-indication ne vaut qu’une fois l’épisode établi ; le contexte mitochondrial connu n’est jamais un critère suffisant. Passages exacts de S10 (PMC13090769, relu le 2026-10-16) : « Early recognition is essential, with prompt use of neuroimaging, EEG, and genetic testing to confirm the diagnosis and exclude mimics. » ; « cortical and subcortical signal abnormalities on neuroimaging that typically do not conform to large vascular territories » ; « therapies targeting vascular ischemia, including antiplatelet agents and thrombolysis, are not indicated ». Le consensus ne traite pas l’infarctus artériel chez ces patients : la phrase sur la filière de l’accident vasculaire cérébral est déclarée comme conséquence prudente de l’audit."
+   },
+   {
+    "constat_revue": "P2 — Lamotrigine : statut hors indication fondé sur la seule étiquette AIPS",
+    "correction": "FI suisse Lamotrigine Sandoz®, comprimés dispersibles (GTIN 7680574120033, AmiKo, mise à jour de l’information : mars 2026) lue le 2026-10-16, rubrique Indications/Possibilités d’emploi : épilepsie (dès 12 ans en monothérapie ou association ; 2 à 12 ans en association) et prévention des épisodes dépressifs du trouble bipolaire (dès 18 ans) ; la myotonie n’y figure pas. S25 mis à jour (version, date, passage, population, limites) ; G71_d_1.html reformulée et sources datées."
+   },
+   {
+    "constat_revue": "P2 — Figure CTG sans source",
+    "correction": "G71_c_figures.html, figure 6 : data-src=\"S4\" sur la figure et la légende, marqueur [S4] et légende explicitant les seuils 35 et 50 et la flèche. Passage exact de S4 (PMC6294540, introduction, relu le 2026-10-16) : « An expansion of over 35 repeats typically indicates an unstable and expanding mutation. An expansion of 50 repeats or higher is consistent with a diagnosis of DM1. » ; « There is a modest association between increased repeat expansion and disease severity ». Passage ajouté au registre S4."
+   }
+  ],
+  "constats_C01_C09": "conservés tels quels"
  }
 }
