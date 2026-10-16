@@ -1,0 +1,198 @@
+{
+ "actor": "Claude",
+ "code": "G63",
+ "kind": "MED",
+ "mission": "ALPHA77-CLAUDE-G63-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "reviewed_commit": "582f665ed674726b7c8c9939e88cab11375d6ba7",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/G63/G63_a.html": "82947f41b70256a0116f4ed9d27fcc38b17ae8ae0eecd6b7e50f69566298b399",
+  "chapters/G63/G63_b.html": "0764b4e3f495f3773b981371bab52f547c2b21ce727d1e10839571b1395f8c4c",
+  "chapters/G63/G63_c.html": "1721d42e03ee2466d639da5ce5d2fc1bb43db49c84d0c56d7ab483dcb1c717c1",
+  "chapters/G63/G63_d.html": "9455938e0c123895aae03c84d14fc3ab88b2356af6a6856b5d499cc7c5655ad9",
+  "chapters/G63/G63_pop1.html": "72f33f6f6bebb81829c6859326fc7574530c342c06061a0edea163bc353993b4",
+  "chapters/G63/G63_pop2.html": "d86e6392e8a33720a78693401d262b6f4af43532807af144d1702ea7040ac9c3",
+  "glossary/g63.py": "6ee9cabc547337e28ce806bed53d56ee5e338cbd37fa6aff7dd25139f324d666"
+ },
+ "reviewed_files_sha256": {
+  "chapters/G63/G63_a.html": "7fa04551903abb298d6965c974d2bd0b9cce9435d5573db69a11000a2dd11dd6",
+  "chapters/G63/G63_b.html": "ea499e0bc49faab3d6275e3fd8517515da45167953ff19ec682cf6491a584f26",
+  "chapters/G63/G63_c.html": "e836ca0009c60f0f10fbfd3bdf2edc3e6898b11a4e009231d8772509d52746d4",
+  "chapters/G63/G63_d.html": "3d9ff123e09464a3cc7f2bfdf1a6e32644dca928cb14633c80131f57dbab1e10",
+  "chapters/G63/G63_pop1.html": "9c0485be1a3864ea26027078106b1fb6a775b672bf36dcc57f39f72ba6451e84",
+  "chapters/G63/G63_pop2.html": "edefe593bbe83f544f9b3530588bd17be3946f839020b1750cd96f8a4afe6c81",
+  "glossary/g63.py": "60fa2dbaae8b274bc428831a34692999e9a6f9a22b1e6c20e7e90b927e04d4a7"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "scope": "Différence base 523832d9 → 14f5b284 (W) des sept fichiers, puis corrections de P (582f665e) ; 29 constats MED, 67 renvois médicaux LANG.",
+ "findings": [
+  {
+   "id": "P-MED-01",
+   "severite": "MAJEUR",
+   "status": "resolved",
+   "fichier": "chapters/G63/G63_c.html",
+   "renvoi": "G63-LANG-RM-29",
+   "constat": "Contresens statistique avéré : « une sensibilité de 65 à 90 % signifie qu’un résultat pathologique manque parfois le risque réel ». Une sensibilité inférieure à 100 % produit des faux négatifs : c’est un résultat normal qui laisse échapper un patient à risque ; un résultat pathologique ne « manque » rien.",
+   "verification": "S4 QualiCCare 2016, note (5) : « Sensitivität und Spezifität des Tests zur Identifizierung von Patienten mit erhöhtem Risiko für Fussulzera lagen in prospektiven Studien bei 65-90% resp. 35-85% » (PDF SHA-256 073fd3eeb4bf54ab3a01280aa6b3ba0987ded7a68d2e00b1ace50737ed22ae9a, relu le 16.10.2026). La sensibilité porte sur l’identification des patients à risque d’ulcère.",
+   "correction": "« … signifie qu’un résultat normal laisse parfois échapper un patient réellement exposé à l’ulcère, … » ; la phrase sur la spécificité (faux positifs) était juste et reste inchangée.",
+   "evidence": [
+    "S4 QualiCCare 2016, note (5) : « Sensitivität und Spezifität des Tests zur Identifizierung von Patienten mit erhöhtem Risiko für Fussulzera lagen in prospektiven Studien bei 65-90% resp. 35-85% » (PDF SHA-256 073fd3eeb4bf54ab3a01280aa6b3ba0987ded7a68d2e00b1ace50737ed22ae9a, relu le 16.10.2026). La sensibilité porte sur l’identification des patients à risque d’ulcère."
+   ]
+  },
+  {
+   "id": "P-MED-02",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G63/G63_a.html",
+   "renvoi": "G63-LANG-RM-13",
+   "constat": "Erreur de rattachement : la sarcoïdose et la maladie cœliaque étaient rangées sous G63.5* (M30–M35†), qui ne couvre que les affections disséminées du tissu conjonctif.",
+   "verification": "CIM-10-GM 2024, BfArM, bloc G60–G64 : « G63.5* Polyneuropathie bei Systemkrankheiten des Bindegewebes (M30-M35†) » ; « G63.8* Polyneuropathie bei sonstigen anderenorts klassifizierten Krankheiten ».",
+   "correction": "Ligne G63.5* limitée à la vasculite et au syndrome de Sjögren ; nouvelle ligne G63.8* pour la sarcoïdose (3,0 %) et la maladie cœliaque (0,5 %), avec la mention qu’elles ne relèvent pas de M30–M35† et que l’association n’établit pas la causalité.",
+   "evidence": [
+    "CIM-10-GM 2024, BfArM, bloc G60–G64 : « G63.5* Polyneuropathie bei Systemkrankheiten des Bindegewebes (M30-M35†) » ; « G63.8* Polyneuropathie bei sonstigen anderenorts klassifizierten Krankheiten »."
+   ]
+  },
+  {
+   "id": "P-MED-03",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G63/G63_a.html",
+   "renvoi": "G63-LANG-RM-15",
+   "constat": "L’infection par le virus de l’immunodéficience humaine était citée parmi les maladies de base de G63.0* « citées par la classification » ; la CIM-10-GM ne la cite pas, et la liste omettait mononucléose, oreillons et tuberculose.",
+   "verification": "CIM-10-GM 2024, G63.0* Inkl. : Diphtherie, infektiöser Mononukleose, Lepra, Lyme-Krankheit, Mumps, nach Zoster, Spätsyphilis, tuberkulös.",
+   "correction": "Liste remplacée par : diphtérie, mononucléose infectieuse, lèpre, oreillons, syphilis tardive, état après zona, formes tuberculeuses.",
+   "evidence": [
+    "CIM-10-GM 2024, G63.0* Inkl. : Diphtherie, infektiöser Mononukleose, Lepra, Lyme-Krankheit, Mumps, nach Zoster, Spätsyphilis, tuberkulös."
+   ]
+  },
+  {
+   "id": "P-MED-04",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G63/G63_a.html",
+   "renvoi": "G63-LANG-RM-01",
+   "constat": "Généralisation contredite par le cours lui-même : « Quelle que soit la maladie de base, ce sont d’abord les axones les plus longs qui souffrent », alors que la neuronopathie sensitive et la vasculite ne dépendent pas de la longueur.",
+   "verification": "Graus et coll. 2021 (neuronopathie, ganglion rachidien dorsal) ; Collins et coll. 2010 (atteinte multifocale) ; section 3.5 du cours.",
+   "correction": "« Dans la plupart des maladies de base, … ; la neuronopathie sensitive et la vasculite font exception. »",
+   "evidence": [
+    "Graus et coll. 2021 (neuronopathie, ganglion rachidien dorsal) ; Collins et coll. 2010 (atteinte multifocale) ; section 3.5 du cours."
+   ]
+  },
+  {
+   "id": "P-MED-05",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G63/G63_c.html",
+   "renvoi": "G63-LANG-RM-33",
+   "constat": "Hypothèse présentée comme fondement : « Cette réversibilité fonde la restriction potassique, piste évoquée par la revue ».",
+   "verification": "Arnold et coll. 2016, cité par le cours ; le tableau 9.1 du cours classe déjà la restriction potassique parmi les « pistes plutôt que recommandations ».",
+   "correction": "« Cette réversibilité fait de la restriction potassique une piste évoquée par la revue, non une recommandation établie. »",
+   "evidence": [
+    "Arnold et coll. 2016, cité par le cours ; le tableau 9.1 du cours classe déjà la restriction potassique parmi les « pistes plutôt que recommandations »."
+   ]
+  },
+  {
+   "id": "P-MED-06",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G63/G63_c.html",
+   "renvoi": "G63-LANG-RM-28",
+   "constat": "« seul examen de cette liste à réaliser systématiquement » contredit le tableau e-1, qui indique aussi l’anamnèse, l’examen et le laboratoire de base.",
+   "verification": "QualiCCare 2013 : examen du pied au moins une fois par an dès le diagnostic du diabète de type 2.",
+   "correction": "« … le seul examen de cette liste à répéter chaque année chez tout diabétique de type 2, même sans symptôme. »",
+   "evidence": [
+    "QualiCCare 2013 : examen du pied au moins une fois par an dès le diagnostic du diabète de type 2."
+   ]
+  },
+  {
+   "id": "P-MED-07",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G63/G63_d.html",
+   "renvoi": "G63-LANG-RM-40",
+   "constat": "Clé généralisée : « Les inhibiteurs de la monoamine oxydase sont contre-indiqués avec la duloxétine » ; la FI ne contre-indique que les IMAO irréversibles et déconseille les réversibles.",
+   "verification": "FI Duloxetin-Mepha (2024-12), Contre-indications et Interactions ; FI Saroten (2022-10), Contre-indications.",
+   "correction": "IMAO irréversibles contre-indiqués avec la duloxétine, réversibles déconseillés ; tout IMAO contre-indiqué avec l’amitriptyline.",
+   "evidence": [
+    "FI Duloxetin-Mepha (2024-12), Contre-indications et Interactions ; FI Saroten (2022-10), Contre-indications."
+   ]
+  },
+  {
+   "id": "P-MED-08",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G63/G63_d.html",
+   "renvoi": "G63-LANG-RM-42",
+   "constat": "Sujet âgé sous amitriptyline : le tableau ne donnait que la dose de départ, sans le seuil de prudence propre à l’âgé.",
+   "verification": "FI Saroten, Posologie, douleurs neuropathiques, patients âgés : « Une dose initiale de 10 mg à 25 mg prise le soir est recommandée. Les doses de plus de 75 mg doivent être utilisées avec précaution. »",
+   "correction": "« sujet âgé : départ à 10 à 25 mg le soir, plus de 75 mg avec prudence ».",
+   "evidence": [
+    "FI Saroten, Posologie, douleurs neuropathiques, patients âgés : « Une dose initiale de 10 mg à 25 mg prise le soir est recommandée. Les doses de plus de 75 mg doivent être utilisées avec précaution. »"
+   ]
+  },
+  {
+   "id": "P-MED-09",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G63/G63_c.html",
+   "constat": "Ajout non sourcé de W : « la thiamine est alors donnée avant tout glucide, sans attendre l’imagerie (EFNS, 2010) » ; le résumé EFNS ne contient pas « sans attendre l’imagerie » (il recommande l’IRM pour soutenir le diagnostic).",
+   "verification": "Galvin et coll., Eur J Neurol 2010, résumé PubMed 20642790, recommandations 4 et 5.",
+   "correction": "Mention « sans attendre l’imagerie » retirée.",
+   "evidence": [
+    "Galvin et coll., Eur J Neurol 2010, résumé PubMed 20642790, recommandations 4 et 5."
+   ]
+  },
+  {
+   "id": "P-MED-10",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G63/G63_b.html",
+   "renvoi": "G63-LANG-RM-20",
+   "constat": "« la définition exige un phénotype compatible, un anticorps et un cancer » ne précisait pas qu’il s’agit du niveau « définitif » du score PNS-Care.",
+   "verification": "Graus et coll. 2021 : « the diagnosis of definite PNS (score ≥8) includes … a high- or intermediate-risk antibody, and the presence of cancer ».",
+   "correction": "« la définition d’un syndrome paranéoplasique définitif (score PNS-Care d’au moins 8) exige … ».",
+   "evidence": [
+    "Graus et coll. 2021 : « the diagnosis of definite PNS (score ≥8) includes … a high- or intermediate-risk antibody, and the presence of cancer »."
+   ]
+  },
+  {
+   "id": "P-MED-RENVOIS",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Revue des 63 renvois médicaux LANG non appliqués par W : aucune erreur médicale bloquante ; neuf sont corrigés ci-dessus (RM-01, 13, 15, 20, 28, 29, 33, 40, 42) ; les autres sont des nuances de formulation ou ont été vérifiés exacts.",
+   "verification": "Vérifiés exacts contre la source : RM-02, RM-04, RM-27, RM-31, RM-65 (Feldman et coll. 2019, texte intégral PMC7096070 : « Loss of ankle reflexes occurs early », « NCS do not assess small-fibre function », « upper limb digits when the lower-limb symptoms reach the knees », risques annualisés −1,84 et −0,58) ; RM-11 (CIM-10-GM : « Inkl.: Urämische Neuropathie (N18.-†) ») ; RM-24 (QualiCCare 2016 note 1 : « bis 36-fach erhöhtes Risiko », « Rezidivrate von bis 40% ») ; RM-37 (FI Duloxetin-Mepha : « différence de 0,3% » d’HbA1c à 52 semaines) ; RM-49 (Graus 2021 : « >85% patients with Hu antibodies have SCLC ») ; RM-56 et RM-57 (QualiCCare 2016 note 5 : quatre sites à identifier) ; RM-59 (FI Benerva) ; RM-60 (FI Neurontin, tableau rénal) ; RM-06 (FI Benerva). RM-23 (âge AI des chaussures) reste une lacune déclarée : la circulaire AI n’a pas été lue ; aucune correction de fond.",
+   "evidence": [
+    "Vérifiés exacts contre la source : RM-02, RM-04, RM-27, RM-31, RM-65 (Feldman et coll. 2019, texte intégral PMC7096070 : « Loss of ankle reflexes occurs early », « NCS do not assess small-fibre function », « upper limb digits when the lower-limb symptoms reach the knees », risques annualisés −1,84 et −0,58) ; RM-11 (CIM-10-GM : « Inkl.: Urämische Neuropathie (N18.-†) ») ; RM-24 (QualiCCare 2016 note 1 : « bis 36-fach erhöhtes Risiko », « Rezidivrate von bis 40% ») ; RM-37 (FI Duloxetin-Mepha : « différence de 0,3% » d’HbA1c à 52 semaines) ; RM-49 (Graus 2021 : « >85% patients with Hu antibodies have SCLC ») ; RM-56 et RM-57 (QualiCCare 2016 note 5 : quatre sites à identifier) ; RM-59 (FI Benerva) ; RM-60 (FI Neurontin, tableau rénal) ; RM-06 (FI Benerva). RM-23 (âge AI des chaussures) reste une lacune déclarée : la circulaire AI n’a pas été lue ; aucune correction de fond."
+   ]
+  },
+  {
+   "id": "P-MED-W",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Faits médicaux nouveaux de W contre-vérifiés : aucun constat bloquant.",
+   "verification": "Soliman et coll. 2025 (résumé PubMed 40252663) : NNT/NNH des dix classes du tableau de G63_d identiques ; lignes 1 à 3 conformes. FI Lyrica (2026-07) : Clcr < 30 « ne doit pas être utilisée », 30–60 : 75–300 mg, mésusage, dépression respiratoire et décès avec opioïdes. FI Neurontin (2025-04) : tableau rénal, hémodialyse 300–400 puis 200–300 mg, indication limitée. FI Duloxetin-Mepha : CYP1A2, HTA non équilibrée, +1–2 mmHg, hyponatrémie. FI Vitarubine : kaliémie, folates, risque thromboembolique. FI Privigen : Guillain-Barré 0,4 g/kg/j pendant 5 jours. EFNS 2010 (résumé) : 2 signes sur 4, 200 mg trois fois par jour, avant tout glucide. Kästenbauer 2004 (résumé PubMed 15154940) : 2022 diabétiques, achilléen absent 68,6 % contre 24,8 %. QualiCCare 2013 : pouls poplités et fémoraux si pouls du pied absents. CIM-10-GM 2024 : G62.0, G62.1, G62.2.",
+   "evidence": [
+    "Soliman et coll. 2025 (résumé PubMed 40252663) : NNT/NNH des dix classes du tableau de G63_d identiques ; lignes 1 à 3 conformes. FI Lyrica (2026-07) : Clcr < 30 « ne doit pas être utilisée », 30–60 : 75–300 mg, mésusage, dépression respiratoire et décès avec opioïdes. FI Neurontin (2025-04) : tableau rénal, hémodialyse 300–400 puis 200–300 mg, indication limitée. FI Duloxetin-Mepha : CYP1A2, HTA non équilibrée, +1–2 mmHg, hyponatrémie. FI Vitarubine : kaliémie, folates, risque thromboembolique. FI Privigen : Guillain-Barré 0,4 g/kg/j pendant 5 jours. EFNS 2010 (résumé) : 2 signes sur 4, 200 mg trois fois par jour, avant tout glucide. Kästenbauer 2004 (résumé PubMed 15154940) : 2022 diabétiques, achilléen absent 68,6 % contre 24,8 %. QualiCCare 2013 : pouls poplités et fémoraux si pouls du pied absents. CIM-10-GM 2024 : G62.0, G62.1, G62.2."
+   ]
+  }
+ ],
+ "lacunes_declarees": [
+  "Sommer et coll. 2018 : texte intégral non relu par P (PMC renvoie un contrôle anti-robot) ; les passages repris de la proposition MED (POEMS, paraprotéines) sont acceptés sur la lecture de l’audit MED.",
+  "Règle d’âge AI des chaussures adaptées : non vérifiée (RM-23).",
+  "Soliman 2025, EFNS 2010, EAN/PNS 2021 et 2023, Kästenbauer 2004 : lus en résumé seulement."
+ ],
+ "evidence": [
+  "Différence base 523832d9 → 14f5b284 des sept fichiers relue (texte sans balises).",
+  "Sources relues le 16.10.2026 : PDF QualiCCare 2013, 2016, 2023 ; CIM-10-GM 2024 (BfArM) ; Feldman 2019 et Graus 2021 (texte intégral via NCBI E-utilities) ; résumés PubMed 40252663, 20642790, 15154940 ; FI suisses Lyrica, Neurontin, Duloxetin-Mepha, Saroten, Qutenza, Vitarubine Dépôt, Benerva, Glucophage, Privigen (AmiKo).",
+  "python3 test_v7.py --static G63 : OK ; tests/audit_sciences.py --codes G63 : passed ; rendu Chromium bureau et 390 px : 55/55 fenêtres data-k ouvertes, aucune « Fiche absente »."
+ ],
+ "conclusion": "Aucun constat bloquant ouvert. Le contresens statistique RM-29 est avéré et corrigé ; neuf précisions mineures sont appliquées d’après leur source. Les 29 constats MED sont intégrés par W.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
