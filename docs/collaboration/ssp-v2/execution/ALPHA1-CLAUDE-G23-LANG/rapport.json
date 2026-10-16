@@ -1,0 +1,267 @@
+{
+ "mission": "ALPHA1-CLAUDE-G23-LANG",
+ "code": "G23",
+ "type_audit": "linguistique",
+ "base_sha": "32416a2080e67537641040a81252dec0b3e6d137",
+ "generation": 1,
+ "branche": "claude/alpha1/g23-lang-g1",
+ "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-G23-LANG-g1",
+ "conversation": "alpha1-claude-g23-lang",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-16T05:30:00Z",
+ "date_fin": "2026-10-16T06:10:00Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G23/G23_a.html",
+   "chapters/G23/G23_b.html",
+   "chapters/G23/G23_c.html",
+   "chapters/G23/G23_d.html",
+   "chapters/G23/G23_pop1.html",
+   "chapters/G23/G23_pop2.html",
+   "glossary/g23.py"
+  ],
+  "empreintes_conformes": true,
+  "detail_empreintes": {
+   "chapters/G23/G23_a.html": true,
+   "chapters/G23/G23_b.html": true,
+   "chapters/G23/G23_c.html": true,
+   "chapters/G23/G23_d.html": true,
+   "chapters/G23/G23_pop1.html": true,
+   "chapters/G23/G23_pop2.html": true,
+   "glossary/g23.py": true
+  },
+  "surfaces_lues": "texte, tableaux, figures (texte des SVG), quiz, fenêtres, Pareto, alert, key, glossaire (clés contrôlées)"
+ },
+ "premiere_verification": "Recalcul SHA-256 des 7 fichiers et comparaison au manifeste (tous conformes), puis lecture intégrale des 6 fichiers HTML et contrôle mécanique des abréviations contre les clés de glossary/*.py.",
+ "synthese": {
+  "nombre_propositions": 63,
+  "renvois_medicaux": 16
+ },
+ "verification_mecanique": {
+  "methode": "Script Python : chaque champ « ancien » est une sous-chaîne exacte du fichier source, présente une seule fois, et les propositions d’un même fichier ne se chevauchent pas ; application simulée en mémoire : balises HTML inchangées, suite des nombres inchangée sauf renvoi interne 9.6 -> 9.5 (G23_b) et ajout de 9.4 (G23_pop1).",
+  "resultat": {
+   "chapters/G23/G23_a.html": {
+    "propositions": 16,
+    "ancien_unique_et_sans_chevauchement": true
+   },
+   "chapters/G23/G23_b.html": {
+    "propositions": 19,
+    "ancien_unique_et_sans_chevauchement": true
+   },
+   "chapters/G23/G23_c.html": {
+    "propositions": 18,
+    "ancien_unique_et_sans_chevauchement": true
+   },
+   "chapters/G23/G23_d.html": {
+    "propositions": 4,
+    "ancien_unique_et_sans_chevauchement": true
+   },
+   "chapters/G23/G23_pop1.html": {
+    "propositions": 10,
+    "ancien_unique_et_sans_chevauchement": true
+   },
+   "chapters/G23/G23_pop2.html": {
+    "propositions": 12,
+    "ancien_unique_et_sans_chevauchement": true
+   }
+  }
+ },
+ "constats": [
+  {
+   "id": "CL-01",
+   "categorie": "meta_discours",
+   "intitule": "Méta-discours de plan",
+   "nombre": 1,
+   "propositions": [
+    "LANG-G23-001"
+   ]
+  },
+  {
+   "id": "CL-02",
+   "categorie": "lourdeur",
+   "intitule": "Lourdeurs et tautologies",
+   "nombre": 4,
+   "propositions": [
+    "LANG-G23-002",
+    "LANG-G23-017",
+    "LANG-G23-024",
+    "LANG-G23-054"
+   ]
+  },
+  {
+   "id": "CL-03",
+   "categorie": "ambiguite",
+   "intitule": "Ambiguïtés de rattachement ou de référent",
+   "nombre": 9,
+   "propositions": [
+    "LANG-G23-003",
+    "LANG-G23-008",
+    "LANG-G23-013",
+    "LANG-G23-020",
+    "LANG-G23-038",
+    "LANG-G23-055",
+    "LANG-G23-060",
+    "LANG-G23-068",
+    "LANG-G23-072"
+   ]
+  },
+  {
+   "id": "CL-04",
+   "categorie": "renvoi_medical",
+   "intitule": "Formulations à renvoyer à un relecteur médical (causalité, fréquence, chronologie, incohérence)",
+   "nombre": 16,
+   "propositions": [
+    "LANG-G23-004",
+    "LANG-G23-005",
+    "LANG-G23-006",
+    "LANG-G23-007",
+    "LANG-G23-012",
+    "LANG-G23-015",
+    "LANG-G23-030",
+    "LANG-G23-031",
+    "LANG-G23-032",
+    "LANG-G23-043",
+    "LANG-G23-051",
+    "LANG-G23-052",
+    "LANG-G23-057",
+    "LANG-G23-059",
+    "LANG-G23-062",
+    "LANG-G23-063"
+   ]
+  },
+  {
+   "id": "CL-05",
+   "categorie": "phrase_nominale",
+   "intitule": "Phrases nominales, listes de mots-clés et infinitifs injonctifs",
+   "nombre": 17,
+   "propositions": [
+    "LANG-G23-009",
+    "LANG-G23-014",
+    "LANG-G23-019",
+    "LANG-G23-021",
+    "LANG-G23-023",
+    "LANG-G23-025",
+    "LANG-G23-026",
+    "LANG-G23-029",
+    "LANG-G23-037",
+    "LANG-G23-041",
+    "LANG-G23-042",
+    "LANG-G23-045",
+    "LANG-G23-046",
+    "LANG-G23-056",
+    "LANG-G23-061",
+    "LANG-G23-064",
+    "LANG-G23-076"
+   ]
+  },
+  {
+   "id": "CL-06",
+   "categorie": "terminologie",
+   "intitule": "Terminologie incohérente (« dossier », « chapitre », « fiche »)",
+   "nombre": 7,
+   "propositions": [
+    "LANG-G23-010",
+    "LANG-G23-028",
+    "LANG-G23-049",
+    "LANG-G23-050",
+    "LANG-G23-069",
+    "LANG-G23-071",
+    "LANG-G23-075"
+   ]
+  },
+  {
+   "id": "CL-07",
+   "categorie": "grammaire",
+   "intitule": "Grammaire et identifications impropres",
+   "nombre": 4,
+   "propositions": [
+    "LANG-G23-011",
+    "LANG-G23-018",
+    "LANG-G23-039",
+    "LANG-G23-047"
+   ]
+  },
+  {
+   "id": "CL-08",
+   "categorie": "orthographe",
+   "intitule": "Élision « de Armstrong » en « d’Armstrong »",
+   "nombre": 9,
+   "propositions": [
+    "LANG-G23-016",
+    "LANG-G23-033",
+    "LANG-G23-034",
+    "LANG-G23-035",
+    "LANG-G23-053",
+    "LANG-G23-066",
+    "LANG-G23-067",
+    "LANG-G23-078",
+    "LANG-G23-079"
+   ]
+  },
+  {
+   "id": "CL-09",
+   "categorie": "renvoi_interne",
+   "intitule": "Renvois internes erronés ou imprécis",
+   "nombre": 2,
+   "propositions": [
+    "LANG-G23-022",
+    "LANG-G23-065"
+   ]
+  },
+  {
+   "id": "CL-10",
+   "categorie": "registre",
+   "intitule": "Registre (anglicisme, infinitifs, ellipses familières)",
+   "nombre": 7,
+   "propositions": [
+    "LANG-G23-027",
+    "LANG-G23-036",
+    "LANG-G23-044",
+    "LANG-G23-070",
+    "LANG-G23-073",
+    "LANG-G23-074",
+    "LANG-G23-077"
+   ]
+  },
+  {
+   "id": "CL-11",
+   "categorie": "intitule",
+   "intitule": "Intitulés elliptiques ou cryptiques",
+   "nombre": 2,
+   "propositions": [
+    "LANG-G23-040",
+    "LANG-G23-048"
+   ]
+  },
+  {
+   "id": "CL-12",
+   "categorie": "ponctuation",
+   "intitule": "Ponctuation (juxtaposition)",
+   "nombre": 1,
+   "propositions": [
+    "LANG-G23-058"
+   ]
+  }
+ ],
+ "controles_sans_constat": {
+  "abreviations_sans_cle_de_glossaire": "aucune (tous les sigles du texte ont une clé dans glossary/*.py ; « II » et « III » sont des chiffres romains)",
+  "espaces_doubles_guillemets_droits_apostrophes_droites": "aucun",
+  "fibrillation_atriale_auriculaire": "terme absent de la leçon"
+ },
+ "choix_differes_non_appliques": [
+  "Espaces insécables globales avant « ; : ! ? » et dans les nombres (0 espace insécable dans les six fichiers ; correction globale différée)",
+  "Terminologie « fibrillation atriale / auriculaire » (terme absent de G23)"
+ ],
+ "observations_non_proposees": [
+  "Écriture « 1000 mg » / « 1400 pg/mL » (sans espace) face à « 100 000 » (avec espace) : à traiter avec la décision globale sur les espaces insécables.",
+  "Variantes « dopa-sensible » / « peu sensible à la lévodopa » et « pression couchée et assise » / « couchée puis debout » : reprises des libellés des sources, non harmonisées par prudence.",
+  "Aucune modification de chapters/ ni de glossary/ : propositions seules."
+ ],
+ "lacunes": [
+  "Aucune source médicale n’a été relue : les 16 renvois médicaux signalent des formulations dont la causalité, la fréquence ou la chronologie doivent être confrontées à la source par un relecteur médical ; la présence de ces relations dans la source n’est ni affirmée ni infirmée.",
+  "Rendu dans un navigateur et lisibilité à 390 px non contrôlés (mission linguistique) ; les libellés des boutons .sci-bar de la Sciences ne sont pas audités ici.",
+  "Les propositions n’ont pas été appliquées ni compilées dans MEDINA.html ; leur intégration relève d’une mission d’intégration."
+ ],
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+}
