@@ -14,12 +14,12 @@ Le fond médical est solide. Il n’y a **aucun constat bloquant**. Les points v
 |---|---|
 | BLOQUANT | 0 |
 | MAJEUR | 5 |
-| MINEUR | 8 |
+| MINEUR | 9 |
 | ENRICHISSEMENT | 12 |
 
 ## Constats majeurs
 
-1. **MAJ-01 — MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md) : le sixième sous-onglet « Sémiologie fondamentale et analytique » est absent** (`C72_c.html`, `div.sci-bar`). Les signes de l’onglet 1 sont cités sans technique, sans valeur ni regroupement syndromique. La proposition complète figure dans `propositions/C72_c_semio.html`, avec ses neuf fenêtres dans `propositions/C72_pop3_semio.html`.
+1. **MAJ-01 — MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md) : le sixième sous-onglet « Sémiologie fondamentale et analytique » est absent** (`C72_c.html`, `div.sci-bar`). Les signes de l’onglet 1 sont cités sans technique, sans valeur ni regroupement syndromique. La proposition complète figure dans `propositions/C72_c_semio.html`, avec ses neuf fenêtres dans `propositions/C72_pop2_semio.html`. Ces fenêtres s’ajoutent à `C72_pop2.html` : l’outil `alpha_publication` n’admet que `_pop1` et `_pop2`, il n’y a donc pas de fichier `_pop3`.
 2. **MAJ-02 — Les sciences comptent quatre disciplines au lieu de cinq.** La discipline proposée est la *Physiologie des voies médullaires et du contrôle sacré* (`propositions/C72_c_physio.html`). C’est elle qui explique la parésie non radiculaire, l’ataxie, la dissociation des sensibilités et la différence entre cône et queue de cheval [S12] [S13] [S5].
 3. **MAJ-03 — `tests/audit_sciences.py` échoue.** Les quatre disciplines totalisent 788 mots, et chacune reste sous le minimum de 280. Les libellés « Science → clinique / examen / traitement » manquent, et la Génétique n’a pas de figure. Les libellés proposés sont dans `propositions/C72_c_liens.html`.
 4. **MAJ-04 — Le périmètre de codage est inexact.** La catégorie CIM-10 découle du code de comportement CIM-O [S20]. L’épendymome myxopapillaire (9394/1) et l’astrocytome pilocytique du nerf optique (9421/1) ont un comportement /1 [S21] : ils relèvent donc de D43.4 et D43.3, non de C72.1 et C72.3. Ces tumeurs restent toutefois à déclarer au registre. **Réserve** : la table CIM-O-3.2 en vigueur n’a pas été lue. Proposition : `propositions/C72_b_1.html`.
@@ -34,6 +34,7 @@ Le fond médical est solide. Il n’y a **aucun constat bloquant**. Les points v
 - **MIN-05** : les figures 1, 3 et 4 sont rendues à 7,3–7,8 px. La figure 3 déborde de sa `viewBox` et deux de ses libellés se chevauchent.
 - **MIN-06** : trois causalités sont rédactionnelles et non sourcées (c72-2, c72-5, c72-e-1).
 - **MIN-07** : l’urgence d’imagerie est attribuée à une revue radiologique qui ne parle pas d’imagerie. La synthèse suisse de Spirig la fonde mieux.
+- **MIN-09** : devant une suspicion de MPNST, la leçon écrit « exérèse urgente » sans la condition posée par l’ERN GENTURIS (tableau 9, recommandations 4 et 5, 2023). L’exérèse primaire se fait si elle est sûre et faisable ; sinon, une biopsie guidée par l’imagerie est réalisée. Le refus de l’attente vigilante vise le MPNST, non tout signe d’alarme.
 - **MIN-08** : un piège d’examen affirme « astrocytome pédiatrique ». Or l’astrocytome forme 30 à 40 % des gliomes intramédullaires de l’adulte [S3].
 
 ## Enrichissements proposés
@@ -93,9 +94,13 @@ L’inventaire `image_clo_finder` trouve cinq schémas SVG vectoriels. Aucun n�
 | Leçon | C72, fragment S08 |
 | Fichiers lus | 7/7, empreintes conformes |
 | Sources lues | 22 (`sources.json`), dont 9 suisses, parmi lesquelles 3 FI Swissmedic datées |
-| Constats | 0 bloquant · 5 majeurs · 8 mineurs · 12 enrichissements |
+| Constats | 0 bloquant · 5 majeurs · 9 mineurs · 12 enrichissements |
 | Propositions | 12 fichiers dans `propositions/` |
 | Contrôles | `test_v7.py --static C72` OK · `audit_sciences.py` échec (préexistant) · JSON valides · ancres vérifiées |
 | Sources canoniques modifiées | aucune |
+
+## Suite de la revue Codex (constat P1)
+
+La fenêtre proposée `c72-sm-nf1-douleur` et l’alerte de `c72-sm-1` faisaient de tout signe d’alarme de la NF1 une indication d’exérèse sans surveillance. La ligne directrice ERN GENTURIS (eClinicalMedicine, 13.01.2023, tableau 9, recommandations 2 à 5) a été relue. Les deux textes sont corrigés : IRM régionale d’abord, puis TEP au FDG avant toute chirurgie. L’exérèse primaire n’intervient que si une ANNUBP ou un MPNST est suspecté et que le geste est sûr et faisable ; sinon, une biopsie guidée est réalisée. Le constat MIN-09 étend la correction à la leçon. La correction fait l’objet d’un commit de suivi, car le commit de traçabilité était déjà poussé et l’historique ne se réécrit pas.
 
 Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée.

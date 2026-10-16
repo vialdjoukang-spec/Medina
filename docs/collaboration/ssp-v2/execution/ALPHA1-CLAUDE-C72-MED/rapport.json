@@ -12,7 +12,7 @@
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
  "date_debut": "2026-10-16T05:49:58Z",
- "date_fin": "2026-10-16T06:12:08Z",
+ "date_fin": "2026-10-16T06:13:16Z",
  "lecture": {
   "fichiers": [
    "chapters/C72/C72_a.html",
@@ -71,7 +71,7 @@
  "synthese": {
   "BLOQUANT": 0,
   "MAJEUR": 5,
-  "MINEUR": 8,
+  "MINEUR": 9,
   "ENRICHISSEMENT": 12
  },
  "constats": [
@@ -93,7 +93,7 @@
      "citation_courte": "generally requires the presence of at least two hallmark features"
     }
    ],
-   "proposition": "propositions/C72_c_semio.html ; propositions/C72_pop3_semio.html",
+   "proposition": "propositions/C72_c_semio.html ; propositions/C72_pop2_semio.html",
    "justification": "Le mécanisme du signe (voies longues, cône, racines) fixe le niveau lésionnel → le niveau fixe le champ de l’IRM et l’urgence → sans sémiologie analytique, la leçon ne forme pas au raisonnement de l’examen fédéral (troubles de la marche, parésie, rétention).",
    "ancre_occurrences": 1,
    "bloquant_cloture": true
@@ -328,6 +328,28 @@
    "ancre_occurrences": 1
   },
   {
+   "id": "MIN-09",
+   "gravite": "MINEUR",
+   "fichier": "chapters/C72/C72_pop2.html",
+   "ancre": "la recommandation est une exérèse chirurgicale urgente, sans attente vigilante, après IRM régionale et TEP-IRM au FDG",
+   "constat": "La conduite devant une suspicion de MPNST omet la condition de l’ERN GENTURIS : exérèse primaire seulement si elle est sûre et faisable, sinon biopsie guidée par l’imagerie. Même raccourci dans c72-alarme-mpnst (« exérèse urgente en cas de suspicion ») et dans le div.alert de c72-8.",
+   "preuve": [
+    {
+     "source_id": "S9",
+     "section": "Tableau 9, recommandation 4 (forte)",
+     "citation_courte": "primary resection is recommended if it is safe and feasible ; otherwise guided diagnostic biopsy should be performed"
+    },
+    {
+     "source_id": "S9",
+     "section": "Tableau 9, recommandation 5 (forte)",
+     "citation_courte": "There is no place for watchful waiting in MPNST"
+    }
+   ],
+   "proposition": "Remplacer par : « Devant une suspicion d’ANNUBP ou de MPNST chez un patient atteint de NF1, l’exploration commence par une IRM régionale, complétée avant toute chirurgie par une TEP au FDG ; l’exérèse primaire est recommandée si elle est sûre et faisable, sinon une biopsie guidée par l’imagerie est réalisée, et l’attente vigilante n’a pas sa place dans le MPNST. »",
+   "justification": "Une exérèse non faisable ou non sûre expose à un déficit → la recommandation la conditionne → la biopsie guidée est l’alternative ; le refus de l’attente vigilante vise le MPNST, non tout signe d’alarme.",
+   "ancre_occurrences": 1
+  },
+  {
    "id": "ENR-01",
    "gravite": "ENRICHISSEMENT",
    "fichier": "chapters/C72/C72_c.html",
@@ -394,7 +416,7 @@
    "gravite": "ENRICHISSEMENT",
    "fichier": "chapters/C72/C72_c.html",
    "ancre": "<div class=\"sci-bar ui\" role=\"tablist\">",
-   "constat": "Neuf fenêtres sémiologiques c72-sm-* (C72_pop3.html)",
+   "constat": "Neuf fenêtres sémiologiques c72-sm-*, à ajouter dans C72_pop2.html (aucun fichier _pop3, non admis par alpha_publication)",
    "preuve": [
     {
      "source_id": "S2",
@@ -437,7 +459,7 @@
      "citation_courte": ""
     }
    ],
-   "proposition": "propositions/C72_pop3_semio.html",
+   "proposition": "propositions/C72_pop2_semio.html",
    "justification": "Rubrique absente ou insuffisante de la matrice ou de la grille SEM ; proposition rédigée et sourcée [Sx].",
    "ancre_occurrences": 1
   },
@@ -623,7 +645,7 @@
      "citation_courte": ""
     }
    ],
-   "proposition": "propositions/C72_pop3_semio.html",
+   "proposition": "propositions/C72_pop2_semio.html",
    "justification": "Rubrique absente ou insuffisante de la matrice ou de la grille SEM ; proposition rédigée et sourcée [Sx].",
    "ancre_occurrences": 1
   },
@@ -770,7 +792,7 @@
   },
   "proposition": [
    "propositions/C72_c_semio.html",
-   "propositions/C72_pop3_semio.html",
+   "propositions/C72_pop2_semio.html",
    "propositions/C72_c_physio.html"
   ],
   "sources_semiologie": [
@@ -908,5 +930,11 @@
   "Captures réelles (SEM-22, SEM-23) non réalisées, conséquence du constat MAJ-01 (sixième sous-onglet absent, bloquant pour la clôture)."
  ],
  "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée",
- "date_debut_note": "Heure relevée par date -u au début de l'analyse (avant la première source lue)."
+ "date_debut_note": "Heure relevée par date -u au début de l'analyse (avant la première source lue).",
+ "revue_codex": {
+  "constat_P1": "propositions/C72_pop3_semio.html, ligne 28 : signes d’alarme NF1 présentés comme indication d’exérèse automatique sans surveillance",
+  "traitement": "ERN GENTURIS relue (eClinicalMedicine, 13.01.2023, tableau 9, recommandations 2 à 5) ; fenêtre c72-sm-nf1-douleur et alerte c72-sm-1 corrigées ; constat MIN-09 ajouté pour la leçon",
+  "deplacement": "C72_pop3_semio.html renommé C72_pop2_semio.html : fenêtres à ajouter dans C72_pop2.html (alpha_publication n’admet que _pop1 et _pop2)",
+  "commit": "commit de suivi distinct du commit de traçabilité 1fc5c523, déjà poussé (aucune réécriture d’historique, force-push interdit)"
+ }
 }
