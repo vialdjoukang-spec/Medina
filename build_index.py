@@ -113,7 +113,7 @@ def portal_v2():
                     for name, style, weight in (('ahn-400.woff2', 'normal', '400'), ('ahn-400i.woff2', 'italic', '400'),
                                                 ('ahn-600.woff2', 'normal', '600'), ('ahn-700.woff2', 'normal', '700')))
     return faces + ''.join((ROOT / 'engine' / name).read_text(encoding='utf-8')
-                          for name in ('portal_v2.css', 'portal_v3.css', 'progress_gauges.css'))
+                          for name in ('portal_v2.css', 'portal_v3.css', 'progress_gauges.css', 'portal_premium.css'))
 
 
 def progress(catalogue):
@@ -195,13 +195,17 @@ def main():
                      href=f'fragments/{filename}#/home' + (f'?filter={key}' if key != 'global' else ''), kind=key)
                      for label, key in [('Pathologies fréquentes', 'frequent'), ('Pathologies Examen Fédéral', 'federal_exam'),
                                         ('Avancement global', 'global')]) + '</span>'
-        cards.append(f'''<li class="specialty" data-specialty-item data-search="{html.escape(search_text, quote=True)}">
+        weight = (catalogue.get('nosology', {}).get('gauges', {}).get('federal_exam', {}) or {}).get('total', 0)
+        cards.append((-weight, names[ident]['order'], f'''<li class="specialty" data-specialty-item data-search="{html.escape(search_text, quote=True)}">
  <article class="specialty-card" data-testid="specialty-card" data-fragment-id="{ident}" data-course-count="{count}" aria-labelledby="specialty-title-{ident}" style="--card-accent:{accent};--card-tint:color-mix(in srgb,{accent} 7%,#fffefa)" title="{html.escape(names[ident]['label'], quote=True)}">
   <div class="card-top"><span class="card-symbol" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round">{symbol}</svg></span><a class="card-arrow" href="fragments/{filename}#/home" aria-label="Accueil de {html.escape(specialty, quote=True)}" title="Accueil du fragment"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M4 12 12 4M4 4h8v8"/></svg></a></div>
   <h3 id="specialty-title-{ident}">{html.escape(specialty)}</h3><p class="card-description">{html.escape(description)}</p>
   <span class="card-count"><i class="count-dot" aria-hidden="true"></i><span>{count} {label}</span></span>
   {gauges}
- </article></li>''')
+ </article></li>'''))
+    # Ordre d’affichage unique (comme les catégories) : priorité Examen fédéral, puis rang du registre.
+    cards = [card.replace('<h3 id=', f'<span class="card-rank" aria-hidden="true">{rank}.</span><h3 id=', 1)
+             for rank, (_, _, card) in enumerate(sorted(cards, key=lambda item: item[:2]), 1)]
     covered, categories, done, lessons = totals
     motifs = ''.join(f'<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="{path}"/></svg>{text}</li>' for path, text in MOTIFS)
     overview = (f'<div class="overview" data-testid="portal-overview" aria-label="Progression de l’atlas">'
@@ -214,12 +218,12 @@ def main():
     page = f'''<!doctype html>
 <html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light">
 <meta name="description" content="Explorez MEDINA : 23 espaces de spécialité pour lire, comprendre et relier les connaissances médicales.">
-<title>MEDINA — Une spécialité, un espace de lecture</title><style>{STYLE}</style><style id="medina-typography">{embedded_typography()}</style><style id="medina-portal-v2">{portal_v2()}</style></head><body data-testid="medina-portal">
+<title>MEDINA — Une spécialité, un espace de lecture</title><style>{STYLE}</style><style id="medina-portal-v2">{portal_v2()}</style></head><body data-testid="medina-portal">
 <a class="skip" href="#specialites">Aller aux spécialités</a><div class="wrap">
 <header class="masthead"><a class="brand" href="index.html" aria-label="MEDINA, accueil"><span class="brand-symbol" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 20V5l9 11 9-11v15M3 5l9 7 9-7"/></svg></span><span><span class="brand-name">MEDINA</span><span class="brand-caption">Atlas médical interactif</span></span></a><nav aria-label="Navigation principale"><a href="#specialites"><span class="nav-marker" aria-hidden="true"></span>Les spécialités</a><a href="organisation.html">L’atlas</a></nav></header>
 <main><section class="hero" aria-labelledby="welcome-title" data-testid="portal-hero"><div><p class="eyebrow">Un espace pour apprendre</p><h1 id="welcome-title">Explorer la médecine,<br><em>une spécialité à la fois.</em></h1><p class="hero-copy">Prenez le temps de comprendre et de relier les savoirs. Choisissez une spécialité pour ouvrir votre espace de lecture.</p><div class="hero-meta"><span><strong>23</strong> spécialités</span><span data-testid="portal-course-total"><strong>{total_courses}</strong> cours intégrés</span></div></div>
 <div class="hero-art" aria-hidden="true"><div class="art-halo"></div><div class="reading-page"><p class="art-note">Le plaisir de comprendre</p><p class="art-title">Un savoir.<br>Plusieurs regards.</p><div class="art-lines"><i></i><i></i><i></i></div><div class="art-subjects"><span>Pathologie</span><span>Examens</span><span>Sciences</span><span>Pharmacologie</span></div><span class="art-seal"><svg width="31" height="31" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M16 5v22M5 16h22m-19-8 16 16m0-16L8 24"/><circle cx="16" cy="16" r="10"/></svg></span></div></div></section>
-<section class="library" id="specialites" aria-labelledby="specialties-title"><div class="library-head"><div><p class="section-kicker">Les espaces de l’atlas</p><h2 id="specialties-title">Quelle spécialité vous intéresse ?</h2><p class="section-copy">Chaque spécialité ouvre ses catégories et ses cours.</p></div><div class="search" role="search"><label class="sr-only" for="specialty-search">Rechercher une spécialité</label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><input id="specialty-search" type="search" placeholder="Rechercher une spécialité…" autocomplete="off" aria-controls="specialty-grid" data-testid="specialty-search"><button id="clear-search" type="button" aria-label="Effacer la recherche" hidden>×</button></div></div>
+<section class="library" id="specialites" aria-labelledby="specialties-title"><div class="library-head"><div><p class="section-kicker">Les espaces de l’atlas</p><h2 id="specialties-title">Quelle spécialité vous intéresse ?</h2><p class="section-copy">Chaque spécialité ouvre ses catégories et ses cours.</p><p class="order-note">Ordre : priorité Examen fédéral (nombre de pathologies PROFILES / SSP), puis rang du registre.</p></div><div class="search" role="search"><label class="sr-only" for="specialty-search">Rechercher une spécialité</label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><input id="specialty-search" type="search" placeholder="Rechercher une spécialité…" autocomplete="off" aria-controls="specialty-grid" data-testid="specialty-search"><button id="clear-search" type="button" aria-label="Effacer la recherche" hidden>×</button></div></div>
 {overview}<p class="search-status" id="search-status" role="status" aria-live="polite" aria-atomic="true" data-testid="search-status">23 spécialités à explorer.</p><ul class="specialties" id="specialty-grid" data-testid="specialty-grid">{''.join(cards)}</ul>
 <div class="empty" id="search-empty" hidden data-testid="search-empty"><strong>Aucune spécialité trouvée.</strong><span>Essayez un autre nom pour poursuivre votre exploration.</span><br><button id="reset-search" type="button">Voir toutes les spécialités</button></div><noscript><p class="section-copy">Les 23 spécialités restent accessibles ci-dessus. La recherche nécessite JavaScript.</p></noscript></section></main>
 <footer class="footer"><p><span class="footer-brand">MEDINA</span><span class="footer-note">Une spécialité, un espace de lecture.</span><br><a href="progression/plan-tetrade-30-cycles.html">Plan de progression de la tétrade · 30 cycles</a><br><a href="progression/cycle-1-captures/index.html">Captures du cycle 1 · galerie et PDF</a></p><a href="organisation.html">Explorer l’organisation de l’atlas ↗</a></footer></div><script>{SCRIPT}</script></body></html>
