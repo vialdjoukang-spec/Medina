@@ -1,0 +1,216 @@
+{
+ "actor": "Claude",
+ "code": "G71",
+ "kind": "SEMIO",
+ "mission": "ALPHA77-CLAUDE-G71-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "reviewed_commit": "00d06374ce91059f075c1fb46f02f79821cc0d4a",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/G71/G71_a.html": "340952bfc78183bc71f3c75da5b7ffea5bbf2b6ae46cbd80476a88b6657f455f",
+  "chapters/G71/G71_b.html": "d9c14212393548209c4bc382d1bb3f1fbd9953846ec65fc5efef80cb235a65d3",
+  "chapters/G71/G71_c.html": "f62cfef7715eaa515e153ee7b7dce2ec80ae6b8454e876b55dbdaac2e969f880",
+  "chapters/G71/G71_d.html": "05995b523a95b6fa35dcc48430841156aa1e0e4ffc69de0c3803d767effc92a7",
+  "chapters/G71/G71_pop1.html": "a129be27fe0e9f3af32d0823424c141e5aa16b4621548ff917673d0069939873",
+  "chapters/G71/G71_pop2.html": "4102e940bdf1ba40c881716bc5c9c299b0ffba04df54abc9d7f8d01f453b9afd",
+  "glossary/g71.py": "b270b6e75234c30ee4bb078483df1e3651feef40a3ea4d9e9bdd20dd65eb6a3d"
+ },
+ "reviewed_files_sha256": {
+  "chapters/G71/G71_a.html": "6c35793d7bf6d050436c5740eed68757cc00a0c5e0e35e57dab187e2c42446f2",
+  "chapters/G71/G71_b.html": "eeb478aa8ea383bea463eff1185e43462e671b876054f51c330fccb2b902b041",
+  "chapters/G71/G71_c.html": "9ebbe077908977991768c93bda4d6d53f2224f8bfb24cad95415cef443869db0",
+  "chapters/G71/G71_d.html": "d861c40d19f2658fd76bae378d90c1160190f00d7550f2320fe843d0645d85bc",
+  "chapters/G71/G71_pop1.html": "6f6bd51457b5233ea4d255d563042ca0a7dc5ea4c0be2a8d2bacdc8de4915b2f",
+  "chapters/G71/G71_pop2.html": "2fd764ac5635a15848598d6e270e47d34c80a06aaf161793908717fa5753f69e",
+  "glossary/g71.py": "97b6c3a63329cfea433f537ffc8d8587e7db4d59a16912f4b92aab95b47b6a87"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "requirement": "fundamental_analytical_semiology",
+ "tab_id": "g71-s-semio",
+ "source_path": "chapters/G71/G71_c.html",
+ "clinical_marker": {
+  "fichier": "chapters/G71/G71_a.html",
+  "selecteur": "div.card[data-semiology-clinical=\"G71\"]#g71-6-semiologie",
+  "dans_pA": true
+ },
+ "sections": {
+  "normal": "g71-sm-1",
+  "signs": "g71-sm-2",
+  "mechanisms": "g71-sm-3",
+  "examination": "g71-sm-4",
+  "interpretation": "g71-sm-5",
+  "differentials": "g71-sm-6",
+  "urgency": "g71-sm-7",
+  "limits": "g71-sm-8",
+  "sources": "g71-sm-9"
+ },
+ "grille_SEM": [
+  {
+   "critere": "SEM-01",
+   "resultat": "oui",
+   "preuve": "bouton #g71-tab-semio premier de .sci-bar, libellé exact, aria-selected=true, div#g71-s-semio unique dans pS"
+  },
+  {
+   "critere": "SEM-02",
+   "resultat": "oui",
+   "preuve": "premier h3 exact « Pour la leçon : quelle est la sémiologie fondamentale et analytique ? »"
+  },
+  {
+   "critere": "SEM-03",
+   "resultat": "oui",
+   "preuve": "audit_sciences sur g71-s-semio : 3 372 mots, schéma SVG non anatomique avec figcaption et aria-label, quatre libellés Science → … ; seule erreur restante : g71-s-anat sans figure (lacune C08 déclarée)"
+  },
+  {
+   "critere": "SEM-04",
+   "resultat": "oui",
+   "preuve": "test_v7.py --static G71 : OK"
+  },
+  {
+   "critere": "SEM-05",
+   "resultat": "oui",
+   "preuve": "g71-sm-2 : tableau symptôme / mécanisme / valeur / piège introduit et commenté"
+  },
+  {
+   "critere": "SEM-06",
+   "resultat": "oui",
+   "preuve": "g71-sm-4 : examen systématique en 8 étapes ordonnées, cotation MRC, relever du sol, préhension"
+  },
+  {
+   "critere": "SEM-07",
+   "resultat": "oui",
+   "preuve": "g71-sm-2 et g71-sm-3 : mécanisme en phrase complète pour chaque signe et syndrome"
+  },
+  {
+   "critere": "SEM-08",
+   "resultat": "oui",
+   "preuve": "absences écrites « non chiffrée dans les sources lues » ; sources reliées aux affirmations dans g71-sm-9"
+  },
+  {
+   "critere": "SEM-09",
+   "resultat": "oui",
+   "preuve": "g71-sm-1 (normal) précède les signes"
+  },
+  {
+   "critere": "SEM-10",
+   "resultat": "oui",
+   "preuve": "colonne Piège, div.trap de g71-sm-4, fenêtres g71-sm-*"
+  },
+  {
+   "critere": "SEM-11",
+   "resultat": "oui",
+   "preuve": "g71-sm-3 : tableau des syndromes (myogène, myotonique, hypoventilation, conductif, hypotonie néonatale, pseudo-vasculaire)"
+  },
+  {
+   "critere": "SEM-12",
+   "resultat": "oui",
+   "preuve": "g71-sm-5 : raisonnement en cinq étapes ordonnées"
+  },
+  {
+   "critere": "SEM-13",
+   "resultat": "oui",
+   "preuve": "alert de g71-sm-7 cohérente avec l’onglet 1 (hypoventilation, conduction, crise surrénalienne, épisode pseudo-vasculaire)"
+  },
+  {
+   "critere": "SEM-14",
+   "resultat": "oui",
+   "preuve": "g71-sm-6 : tableau et .two des discriminants sourcés"
+  },
+  {
+   "critere": "SEM-15",
+   "resultat": "oui",
+   "preuve": "g71-sm-4 .card constatations / interprétation"
+  },
+  {
+   "critere": "SEM-16",
+   "resultat": "oui",
+   "preuve": "g71-sm-5 schéma et interprétation, limites écrites"
+  },
+  {
+   "critere": "SEM-17",
+   "resultat": "oui",
+   "preuve": "3 cas corrigés (quiz) dans le sous-onglet"
+  },
+  {
+   "critere": "SEM-18",
+   "resultat": "oui",
+   "preuve": "6/6 fenêtres g71-sm-* résolues ; 78/78 data-k sans « Fiche absente » ; ouverture g71-sm-faiblesse vérifiée au navigateur"
+  },
+  {
+   "critere": "SEM-19",
+   "resultat": "oui",
+   "preuve": "sources suisses (CIM-10-GM, FI, cohortes suisses) puis européennes (ERN, ENMC, EMA) ; limite des consensus internationaux 2018 déclarée"
+  },
+  {
+   "critere": "SEM-20",
+   "resultat": "oui",
+   "preuve": "seuils concordants avec l’onglet 1 (270 L/min, SpO2 95 %, PR 200 ms, QRS 100 ms)"
+  },
+  {
+   "critere": "SEM-21",
+   "resultat": "oui",
+   "preuve": "renvoi à l’onglet Pathologie ; le sous-onglet traite mécanismes et valeur"
+  },
+  {
+   "critere": "SEM-22",
+   "resultat": "oui",
+   "preuve": "390 px : rendu sans débordement ni erreur JavaScript (captures W G71_08–G71_14, P P_mobile390_*)"
+  },
+  {
+   "critere": "SEM-23",
+   "resultat": "oui",
+   "preuve": "captures réelles de W (integration/captures) et de P (revue/captures)"
+  },
+  {
+   "critere": "SEM-24",
+   "resultat": "oui",
+   "preuve": "statut « revue IA, aucune validation médicale humaine »"
+  }
+ ],
+ "findings": [
+  {
+   "id": "SEMIO-STRUCTURE",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Contrat structurel du sous-onglet.",
+   "verification": "Partie structurelle de starter_codex.semiology rejouée sur les fichiers finaux (HTMLTree de tools/starter_codex.py) : 6 data-s dans pS, Sémiologie première et sélectionnée, panneau unique visible, titre exact, 9 sections data-semiology non vides avec h3, liens https dans la section sources, bloc clinique data-semiology-clinical=\"G71\" dans pA (G71_a).",
+   "evidence": [
+    "Rendu Chromium hors dépôt du fragment S08 construit par build_front.py (SHA-256 b6268b00d02624a117a0a320fad2253c532a676c30ed2cd2aae92ef8584d86bc) : bureau 1440 px et mobile 390 px, aucune erreur JavaScript ; captures revue/captures/P_*.png."
+   ]
+  },
+  {
+   "id": "SEMIO-PARETO",
+   "severite": "—",
+   "status": "non_blocking",
+   "constat": "Aucun Pareto dans le sous-onglet.",
+   "verification": "Conforme au protocole (pas de Pareto sur une section data-semiology).",
+   "justification_non_bloquant": "Règle du protocole.",
+   "evidence": [
+    "Aucune classe pareto dans g71-s-semio."
+   ]
+  },
+  {
+   "id": "SEMIO-VALEURS",
+   "severite": "—",
+   "status": "non_blocking",
+   "constat": "Valeurs diagnostiques non chiffrées.",
+   "verification": "Aucune sensibilité, spécificité ni rapport de vraisemblance dans les sources lues ; la leçon l’écrit.",
+   "justification_non_bloquant": "Lacune des sources, déclarée.",
+   "evidence": [
+    "integration/corrections.json, lacunes."
+   ]
+  }
+ ],
+ "evidence": [
+  "Contrôle structurel reproduisant le validateur sémiologique de tools/starter_codex.py (scratchpad g71p/semio_check.py) : ok.",
+  "tests/audit_sciences.py : g71-s-semio conforme.",
+  "Rendu Chromium hors dépôt du fragment S08 construit par build_front.py (SHA-256 b6268b00d02624a117a0a320fad2253c532a676c30ed2cd2aae92ef8584d86bc) : bureau 1440 px et mobile 390 px, aucune erreur JavaScript ; captures revue/captures/P_*.png."
+ ],
+ "conclusion": "Aucun constat bloquant pour la sémiologie fondamentale et analytique : la Sémiologie est le premier sous-onglet sélectionné, suivie de cinq disciplines réelles ; rendu contrôlé au bureau et à 390 px.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
