@@ -102,3 +102,7 @@ add_if_absent('KCl', [('K', 'kalium, symbole chimique du potassium'), ('Cl', 'ch
               'Sel de potassium ; la solution à 7,45 % de Sintetica, à diluer avant perfusion, a une information professionnelle suisse datée de février 2024.', 'g72-potassium')
 add_if_absent('CTT', [('C', 'Cholesterol'), ('T', 'Treatment'), ('T', 'Trialists’ (collaboration des investigateurs des essais)')], 'Cholesterol Treatment Trialists’ Collaboration',
               'Collaboration qui a publié en 2022 la méta-analyse des symptômes musculaires dans 19 essais en double aveugle de statine contre placebo.', 'g72-alternatives')
+add_if_absent('PL7', [('PL7', 'nom de l’antigène cible ; les lettres ne sont pas développées dans le passage lu')], 'Antigène PL7',
+              'Cible d’un autoanticorps spécifique des myosites, recueilli mais non retenu dans les critères EULAR/ACR 2017 faute d’observations suffisantes (Lundberg et coll., 2017).', 'g72-anticorps')
+add_if_absent('PL12', [('PL12', 'nom de l’antigène cible ; les lettres ne sont pas développées dans le passage lu')], 'Antigène PL12',
+              'Cible d’un autoanticorps spécifique des myosites, recueilli mais non retenu dans les critères EULAR/ACR 2017 faute d’observations suffisantes (Lundberg et coll., 2017).', 'g72-anticorps')
