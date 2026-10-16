@@ -1,0 +1,35 @@
+<!-- Proposition ALPHA1-CLAUDE-G97-MED, constats C03 (MAJEUR), C16, C17, C20 et C22 : pharmacologie selon les informations
+     professionnelles suisses relues le 16.10.2026 (AmiKo, textes AIPS) : Paracétamol Stada® [S21], mise à jour juillet 2026 ;
+     Ibuprofen-Mepha Teva® [S22], mise à jour décembre 2024 ; Peyona® [S32] (recherche AmiKo). Références [Sx] : sources.json. -->
+
+<!-- C03 — chapters/G97/G97_d.html, tableau g97-p-2 : ajouter, après la ligne « clairance inférieure à 10 mL/min » (G97-C0302 à C0305) : -->
+<tr><td>Paracétamol, maladie hépatique chronique ou insuffisance hépatique légère à modérée, alcoolisme chronique, malnutrition chronique, déshydratation ou cachexie</td><td>Dose réduite ou intervalle allongé</td><td>2000 mg</td><td>Information professionnelle suisse</td></tr>
+
+<!-- C03 — remplacer le piège G97-C0315 : -->
+<!-- ancien : Appliquer le plafond de 4000 mg de paracétamol sans vérifier la fonction rénale, ou en cas d’alcoolisme, de dénutrition ou de traitement par la flucloxacilline. -->
+<div class="trap"><span class="k">Erreur fréquente</span> Appliquer le plafond de 4000 mg de paracétamol à tous. L’information professionnelle suisse le réduit à 2000 mg par jour en cas de maladie hépatique chronique, d’alcoolisme chronique, de malnutrition chronique, de déshydratation ou de cachexie, et à 3000 puis 2000 mg selon la clairance de la créatinine [S21]. Une patiente qui vomit et boit peu après une brèche durale peut être déshydratée : le plafond de 2000 mg s’applique alors.</div>
+
+<!-- C03 — remplacer l'encadré G97-C0316 : -->
+<div class="key"><b>À retenir.</b> Plafonds quotidiens : paracétamol 4000 mg chez l’adulte de plus de 40 kg, 2000 mg en cas d’atteinte hépatique, d’alcoolisme, de malnutrition, de déshydratation ou de cachexie, 3000 ou 2000 mg selon la clairance ; ibuprofène 2400 mg ; caféine 900 mg, ou 200 à 300 mg en cas d’allaitement [S21 ; S22 ; S5].</div>
+
+<!-- C03 — fenêtre g97-paracetamol (G97_pop2.html, G97-C0416), ajouter à la fin du paragraphe « Posologie » : -->
+<!-- « Maladie hépatique chronique ou insuffisance hépatique légère à modérée, alcoolisme chronique, malnutrition chronique, déshydratation ou cachexie : dose réduite ou intervalle allongé, sans dépasser 2000 mg par jour. Enfant de 9 à 12 ans (30 à 40 kg) : 400 à 600 mg par prise, toutes les 6 à 8 heures, au plus 2000 mg par jour et au plus 75 mg/kg par jour. » -->
+<!-- et remplacer, dans G97-C0174 (g97-12) : « Paracétamol : 4000 mg par jour au plus » par
+     « Paracétamol : 4000 mg par jour au plus, 2000 mg en cas d’atteinte hépatique, d’alcoolisme, de malnutrition ou de déshydratation ». -->
+
+<!-- C20 — tableau g97-p-2, ligne enfant (G97-C0295) : -->
+<!-- ancien : Non reproduite -->
+<!-- nouveau : 400 à 600 mg, toutes les 6 à 8 heures -->
+
+<!-- C17 — encadré alert g97-p-3 (G97-C0317), remplacer la partie Ibuprofène par : -->
+<!-- « Ibuprofène : antécédent de bronchospasme, d’urticaire ou d’allergie après acide acétylsalicylique ou autre anti-inflammatoire ; troisième trimestre de grossesse ; ulcère ou hémorragie digestive actifs ou répétés ; maladie inflammatoire de l’intestin active ; tendance accrue aux saignements ; insuffisance hépatique grave ; insuffisance rénale grave (clairance inférieure à 30 mL/min) ; insuffisance cardiaque grave (NYHA III-IV) ; allaitement déconseillé. À partir de la 20e semaine de grossesse, l’ibuprofène peut altérer la fonction rénale fœtale (oligohydramnios) et rétrécir le canal artériel : il est à éviter sauf nécessité clairement établie aux premier et deuxième trimestres [S22]. » -->
+
+<!-- C16 — tableau g97-p-1 (G97-C0278) et fenêtre g97-cafeine (G97-C0403, G97-C0404) : -->
+<!-- ancien (G97-C0278) : 24 premières heures ; aucune information professionnelle suisse de caféine seule trouvée -->
+<!-- nouveau : 24 premières heures des symptômes ; la seule information professionnelle suisse de caféine seule (Peyona®) concerne l’apnée du prématuré -->
+<!-- ancien (G97-C0404) : Le mécanisme d’action de la caféine dans cette indication n’est pas détaillé dans les sources lues. -->
+<!-- nouveau : La caféine inhibe la phosphodiestérase et antagonise l’adénosine ; elle s’opposerait ainsi à la vasodilatation intracrânienne qui accompagne la baisse de pression du liquide [S8]. Une revue allemande rapporte des doses de 300 à 500 mg deux fois par jour ; le plafond de 900 mg par jour du consensus reste la limite retenue [S8 ; S5]. -->
+
+<!-- C22 — fenêtre g97-ibuprofene (G97-C0421) et G97-C0166, G97-C0318 : -->
+<!-- ancien (G97-C0421) : Le consensus de 2023 propose des AINS en post-partum. -->
+<!-- nouveau : Le consensus de 2023 propose le paracétamol et les AINS à tout patient atteint de céphalée post-ponction, sauf contre-indication, sans traiter spécifiquement l’allaitement [S5]. -->
