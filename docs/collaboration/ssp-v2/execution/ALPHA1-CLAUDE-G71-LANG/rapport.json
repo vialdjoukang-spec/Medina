@@ -2,15 +2,15 @@
   "mission": "ALPHA1-CLAUDE-G71-LANG",
   "code": "G71",
   "type_audit": "linguistique",
-  "base_sha": "32416a2080e67537641040a81252dec0b3e6d137",
+  "base_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
   "generation": 1,
   "branche": "claude/alpha1/g71-lang-g1",
   "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-G71-LANG-g1",
   "conversation": "alpha1-claude-g71-lang",
   "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
   "modele_effort": "conforme au manifeste",
-  "date_debut": "2026-10-16T05:50:00Z",
-  "date_fin": "2026-10-16T06:02:16Z",
+  "date_debut": null,
+  "date_fin": "2026-10-16T06:12:07Z",
   "lecture": {
     "fichiers": [
       "chapters/G71/G71_a.html",
@@ -30,31 +30,30 @@
       "chapters/G71/G71_pop1.html": "a129be27fe0e9f3af32d0823424c141e5aa16b4621548ff917673d0069939873",
       "chapters/G71/G71_pop2.html": "4102e940bdf1ba40c881716bc5c9c299b0ffba04df54abc9d7f8d01f453b9afd",
       "glossary/g71.py": "b270b6e75234c30ee4bb078483df1e3651feef40a3ea4d9e9bdd20dd65eb6a3d"
-    },
-    "note_base": "Le manifeste indique la base d1a488ad4f0031d7f2a4b47a0721e89a93475d77 ; le worktree est à 32416a2080e67537641040a81252dec0b3e6d137 (base de la consigne). Les sept fichiers ont des empreintes identiques à celles du manifeste dans les deux cas."
+    }
   },
   "premiere_verification": "Recalcul des SHA-256 des 7 fichiers contre .medina/missions/ALPHA1-CLAUDE-G71-LANG.json (tous conformes) ; lecture intégrale des 7 fichiers ; contrôle des abréviations par build_medina.audit() sur les sources avant et après application simulée des propositions (résultat {} dans les deux cas).",
   "synthese": {
-    "nombre_propositions": 59,
-    "renvois_medicaux": 31,
+    "nombre_propositions": 56,
+    "renvois_medicaux": 34,
     "propositions_par_categorie": {
-      "syntaxe": 18,
-      "grammaire": 10,
+      "syntaxe": 17,
+      "grammaire": 9,
       "ponctuation": 1,
       "registre": 14,
       "typographie": 4,
       "conjugaison": 3,
       "ambiguité": 3,
       "orthographe": 3,
-      "terminologie": 1,
       "cohérence": 1,
       "répétition": 1
     },
-    "constats_hors_perimetre": 1
+    "constats_hors_perimetre": 1,
+    "note_ids": "Identifiants P- conservés ; les trois propositions retirées laissent des numéros manquants."
   },
   "propositions_fichier": "propositions.json",
   "verification_unicite": {
-    "methode": "script Python : ancien.count(fichier) == 1 pour chacune des 59 propositions ; absence de chevauchement entre propositions d’un même fichier ; application simulée en mémoire puis build_medina.audit() == {} sur les six fichiers HTML",
+    "methode": "script Python : ancien.count(fichier) == 1 pour chacune des 56 propositions ; absence de chevauchement entre propositions d’un même fichier ; application simulée en mémoire puis build_medina.audit() == {} sur les six fichiers HTML",
     "toutes_uniques": true,
     "sans_chevauchement": true,
     "audit_abreviations_apres_application": {}
@@ -345,7 +344,35 @@
       "ancre": "data-s=\"g71-s-anat\"",
       "gravite": "MAJEUR",
       "nature": "hors_perimetre_linguistique",
-      "explication": "Hors périmètre linguistique, MAJEUR, transmis à l'audit MED. Décompte réel des data-s de G71_c.html : 5 (g71-s-anat, g71-s-histo, g71-s-physio, g71-s-bioch, g71-s-gen), soit cinq disciplines (Anatomie, Histologie, Physiologie, Biochimie, Génétique). Le sous-onglet « Sémiologie fondamentale et analytique », premier bouton attendu de .sci-bar, est absent (aucune occurrence de « Sémiologie fondamentale » dans les six fichiers HTML)."
+      "explication": "Hors périmètre linguistique, MAJEUR, transmis à l'audit MED. Décompte réel des data-s de G71_c.html : 5 (g71-s-anat, g71-s-histo, g71-s-physio, g71-s-bioch, g71-s-gen), soit cinq disciplines (Anatomie, Histologie, Physiologie, Biochimie, Génétique). Le sous-onglet « Sémiologie fondamentale et analytique », premier bouton attendu de .sci-bar, est absent (aucune occurrence de « Sémiologie fondamentale » dans les six fichiers HTML). Constat MAJEUR bloquant pour la clôture du cours et du lot (AGENTS.md).",
+      "bloquant_cloture": true
+    },
+    {
+      "id": "R-32",
+      "fichier": "chapters/G71/G71_b.html",
+      "ancre": "le dépistage des apparentées",
+      "categorie": "portée/population",
+      "nature": "renvoi_medical",
+      "explication": "Ancienne proposition P-14 retirée des propositions applicables (revue Codex, audit LANG). Passage de « apparentées » à « apparentés » : élargit la population à dépister (portée du dépistage familial), voir R-20. Proposition de remplacement non appliquée : « le dépistage des apparentés ».",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-33",
+      "fichier": "chapters/G71/G71_b.html",
+      "ancre": "dans les 6 semaines précédant le vamorolone",
+      "categorie": "portée/population",
+      "nature": "renvoi_medical",
+      "explication": "Ancienne proposition P-30 retirée des propositions applicables (revue Codex, audit LANG). « Précédant le vamorolone » devient « précédant l'instauration du vamorolone » : précise le point de départ du délai de 6 semaines, notion de sécurité vaccinale. Proposition de remplacement non appliquée : « dans les 6 semaines précédant l’instauration du vamorolone ».",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-34",
+      "fichier": "chapters/G71/G71_b.html",
+      "ancre": "conductrices de dystrophine</button>",
+      "categorie": "portée/population",
+      "nature": "renvoi_medical",
+      "explication": "Ancienne proposition P-33 retirée des propositions applicables (revue Codex, audit LANG). « Conductrices de dystrophine » devient « conductrices de dystrophinopathie » : changement de dénomination nosologique d'une population clinique. Proposition de remplacement non appliquée : « conductrices de dystrophinopathie</button> ».",
+      "occurrences_ancre": 1
     }
   ],
   "differes": [
@@ -360,8 +387,7 @@
   "lacunes": [
     "Aucune vérification médicale n’a été faite : les renvois_medicaux signalent des formulations dont la correction changerait le fond ; ils ne sont ni confirmés ni infirmés.",
     "Aucun contrôle de rendu navigateur des propositions : l’application simulée a été faite en mémoire, aucun fichier canonique n’est modifié.",
-    "Aucune lecture des sources primaires citées : les écarts avec les sources sont établis seulement par comparaison interne entre les sept fichiers de la leçon.",
-    "Le manifeste et la consigne donnent deux base_sha différents (d1a488ad contre 32416a20) ; les empreintes des sept fichiers sont conformes."
+    "Aucune lecture des sources primaires citées : les écarts avec les sources sont établis seulement par comparaison interne entre les sept fichiers de la leçon."
   ],
   "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée",
   "figures": {
@@ -380,5 +406,8 @@
         "note": "Aucune provenance vérifiée."
       }
     ]
-  }
+  },
+  "worktree_base": "32416a2080e67537641040a81252dec0b3e6d137",
+  "worktree_base_note": "START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste.",
+  "date_debut_note": "Heure de début non relevée par date -u au démarrage ; une valeur estimée a été retirée plutôt que présentée comme observée."
 }

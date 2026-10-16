@@ -1,14 +1,14 @@
 # Audit linguistique G71 — Affections musculaires primitives (S08)
 
-Mission ALPHA1-CLAUDE-G71-LANG, tour 1, génération 1. Branche `claude/alpha1/g71-lang-g1`, base `32416a20`. Audit IA : revue distincte d'une validation médicale humaine ; aucune source canonique modifiée.
+Mission ALPHA1-CLAUDE-G71-LANG, tour 1, génération 1. Branche `claude/alpha1/g71-lang-g1`, base de la mission `d1a488ad` (worktree démarré sur `32416a20` : START exécuté sur le premier main contenant l'approbation de la mission, PR #181 ; sources figées identiques, empreintes conformes). Audit IA : revue distincte d'une validation médicale humaine ; aucune source canonique modifiée.
 
 ## Synthèse
 
 Les sept fichiers de la leçon (quatre onglets, deux fenêtres, glossaire) ont été lus en entier ; leurs empreintes SHA-256 sont conformes au manifeste. Le texte est globalement correct et sobre. Les défauts relevés tiennent à des constructions fautives de fourchettes (« à 10 à 14 ans », « supérieur à 10 à 12 »), à des accords (« la suxaméthonium », « la troisième percentile », « chaque 6 mois »), à des anglicismes et personnifications, à des parenthèses imbriquées dans les libellés de liens et à des mentions de fabrication du cours (« îlot », « dépôt »).
 
-- **59 propositions locales** (`propositions.json`), chacune avec un `ancien` unique dans son fichier, `fond_inchange: true`, sans chevauchement ; application simulée en mémoire suivie de `build_medina.audit()` : aucune abréviation non couverte.
+- **56 propositions locales** (trois propositions de portée clinique retirées et reclassées en renvois R-32 à R-34) (`propositions.json`), chacune avec un `ancien` unique dans son fichier, `fond_inchange: true`, sans chevauchement ; application simulée en mémoire suivie de `build_medina.audit()` : aucune abréviation non couverte.
 
-- **31 renvois médicaux** : formulations où une correction créerait ou retirerait une causalité, une fréquence ou une chronologie que la source ne porte pas. Ils ne sont pas corrigés ici.
+- **34 renvois médicaux** : formulations où une correction créerait ou retirerait une causalité, une fréquence ou une chronologie que la source ne porte pas. Ils ne sont pas corrigés ici.
 
 - **Choix différés, non appliqués** : espaces insécables globales (aucun U+00A0 ni U+202F dans les sept fichiers) ; choix « fibrillation atriale » ou « auriculaire ».
 
@@ -82,7 +82,7 @@ La liste complète figure dans `propositions.json`.
 
 ## Constats transmis à l'audit MED
 
-- **H-01** (hors périmètre linguistique, MAJEUR, transmis à l'audit MED) : G71_c.html compte 5 `data-s` (Anatomie, Histologie, Physiologie, Biochimie, Génétique) ; le sous-onglet « Sémiologie fondamentale et analytique » est absent.
+- **H-01** (hors périmètre linguistique, **MAJEUR, bloquant pour la clôture du cours et du lot**, AGENTS.md ; transmis à l'audit MED) : G71_c.html compte 5 `data-s` (Anatomie, Histologie, Physiologie, Biochimie, Génétique) ; le sous-onglet « Sémiologie fondamentale et analytique » est absent.
 - **Figures** : la Figure 2 (topographies de faiblesse, SVG anatomique dessiné) est classée ORIGINE_INCONNUE, en réserve. Les Figures 1, 3, 4, 5 et 6 sont des schémas non anatomiques d'après leur légende, non évalués. Le contrôle a porté sur le texte des figures, pas sur leur provenance ; la vérification de provenance est transmise à l'audit MED.
 - Aucune proposition n'affaiblit une obligation clinique.
 
@@ -105,9 +105,16 @@ La liste complète figure dans `propositions.json`.
 |---|---|
 | Fichiers lus | 7 sur 7 |
 | Empreintes conformes | oui |
-| Propositions | 59 |
-| Propositions à ancien unique | 59 sur 59 |
-| Renvois médicaux | 31 |
+| Propositions | 56 |
+| Propositions à ancien unique | 56 sur 56 |
+| Renvois médicaux | 34 |
 | Choix différés | 2 |
 | Abréviations non couvertes après application | 0 |
 | Source canonique modifiée | non |
+
+Horodatage : date_debut non relevé (null) ; date_fin relevée par date -u avant le commit.
+
+## Renvois ajoutés par la revue
+- **R-32** : « le dépistage des apparentées ». Ancienne proposition P-14 retirée des propositions applicables (revue Codex, audit LANG). Passage de « apparentées » à « apparentés » : élargit la population à dépister (portée du dépistage familial), voir R-20. Proposition de remplacement non appliquée : « le dépistage des apparentés ».
+- **R-33** : « dans les 6 semaines précédant le vamorolone ». Ancienne proposition P-30 retirée des propositions applicables (revue Codex, audit LANG). « Précédant le vamorolone » devient « précédant l'instauration du vamorolone » : précise le point de départ du délai de 6 semaines, notion de sécurité vaccinale. Proposition de remplacement non appliquée : « dans les 6 semaines précédant l’instauration du vamorolone ».
+- **R-34** : « conductrices de dystrophine</button> ». Ancienne proposition P-33 retirée des propositions applicables (revue Codex, audit LANG). « Conductrices de dystrophine » devient « conductrices de dystrophinopathie » : changement de dénomination nosologique d'une population clinique. Proposition de remplacement non appliquée : « conductrices de dystrophinopathie</button> ».
