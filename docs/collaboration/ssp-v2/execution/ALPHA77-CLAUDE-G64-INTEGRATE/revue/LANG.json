@@ -1,0 +1,76 @@
+{
+ "actor": "Claude",
+ "code": "G64",
+ "kind": "LANG",
+ "mission": "ALPHA77-CLAUDE-G64-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "reviewed_commit": "bae5e9ad3cfe8bed25e30d52853f26b5bbeed9b7",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/G64/G64_a.html": "8bc623ff680af7398ae4267d6ea63b9721c444b30e07b431327a0d7303f3e130",
+  "chapters/G64/G64_b.html": "0b7ae0a8aa0bff4549da44ce4451932997eb899e15d95a457b27c102049ba50d",
+  "chapters/G64/G64_c.html": "22705b4969e050d4328c440b0a1b96fd706d62d9ec310b119a406bc5b8ae3774",
+  "chapters/G64/G64_d.html": "2b5d6ea964cc0bb8763d38d835445b602471acfeaad3d4c3efed05370d28be78",
+  "chapters/G64/G64_pop1.html": "15f903ac4bb6636b1ffc64916bb532502d58c66dfbb0bf32e3b2c65e8bf6aeb3",
+  "chapters/G64/G64_pop2.html": "ecafb6d49c8d137165c65499acf271d36bcfecc8fad33aab7a8d7c85398f27e1",
+  "glossary/g64.py": "bcf05a588a68438ffa95ecaffd506355e922aedd0392a9e82b26f204ba7d3b8d"
+ },
+ "reviewed_files_sha256": {
+  "chapters/G64/G64_a.html": "07ea535c5395efa0a61eaf32703b874f246aa4049d98b44dba4f4d2716526856",
+  "chapters/G64/G64_b.html": "114a7d98760d33d72fd0af12f3cfb2fe2fd4dfd7951cf7f85a063d25c295732b",
+  "chapters/G64/G64_c.html": "b992d97a7821e3794e7406468e8579bf06b0778e05782e03ebbe2cdff749a483",
+  "chapters/G64/G64_d.html": "16c2dbb896b96f9ad1641039d8c609618dc04a2457c8dfc6446c7afa9773cbb0",
+  "chapters/G64/G64_pop1.html": "f3642820cacc39527b40a91520af579e0b18bc35f21fad3e96628012aa64acf2",
+  "chapters/G64/G64_pop2.html": "e071af22e9c71476fbb4742d238b4e5f694c62a7b131294ca1312d0f8d797890",
+  "glossary/g64.py": "ceb119c28ed7a6d9dcaf3d01afc6f386e434335b5be87ecfe4d8b660a13f88f8"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "scope": "Phrases nouvelles ou modifiées par W (propositions LANG fond_inchange, intégrations MED, sémiologie, génétique) relues selon docs/STYLE_REDACTION.md.",
+ "findings": [
+  {
+   "id": "P-LANG-01",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G64/G64_c.html; G64_pop2.html",
+   "constat": "« part significative » (calque de « signifikanter Anteil »), ambigu en français.",
+   "verification": "Remplacé par « part importante ».",
+   "evidence": [
+    "Commit bae5e9ad ; test_v7 --static OK."
+   ]
+  },
+  {
+   "id": "P-LANG-02",
+   "severite": "—",
+   "status": "non_blocking",
+   "fichier": "sept fichiers",
+   "constat": "Propositions LANG fond_inchange intégrées par W (phrases complètes, verbes conjugués, tableaux introduits et commentés, « Seul son résumé a été lu »).",
+   "verification": "Échantillon intégral des phrases modifiées relu : phrases complètes, pas de métaphore, normal avant pathologique dans la sémiologie ; aucun écart bloquant.",
+   "evidence": [
+    "Différence textuelle base → final (g64p/diff_cpop.txt et sortie wd.py pour a, b, d)."
+   ]
+  },
+  {
+   "id": "P-LANG-03",
+   "severite": "MINEUR",
+   "status": "non_blocking",
+   "fichier": "glossary/g64.py",
+   "constat": "SCN9A/10A/11A et SPTLC1 déclarés « non développés lettre à lettre ».",
+   "verification": "Choix transparent de W ; aucun développement n’a été lu dans une source de la leçon, donc non complété de mémoire.",
+   "evidence": [
+    "glossary/g64.py, bloc « Ajouts de l’intégration ALPHA77 »."
+   ]
+  }
+ ],
+ "evidence": [
+  "Différence textuelle relue en entier.",
+  "python3 test_v7.py --static G64 : OK (abréviations couvertes, classes fermées)."
+ ],
+ "conclusion": "Aucun constat bloquant : une formulation corrigée (P-LANG-01), le reste conforme à STYLE_REDACTION.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
