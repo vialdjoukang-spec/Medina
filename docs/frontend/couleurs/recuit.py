@@ -45,6 +45,8 @@ def main():
     ap.add_argument('--t0', type=float, default=20.0)
     ap.add_argument('--semantique', type=float, default=0.3, help='poids de l’écart sémantique (par degré)')
     ap.add_argument('--cvd', type=float, default=6.6)
+    ap.add_argument('--chroma', type=float, default=P.CHROMA_REPERES, help='chroma visée des repères (bornée par le gamut sRGB)')
+    ap.add_argument('--vivacite', type=float, default=0.0, help='poids de la chroma moyenne (par unité de C)')
     ap.add_argument('--toutes-paires', type=float, default=3.6)
     ap.add_argument('--colonnes', type=float, default=9.0)
     ap.add_argument('--depart', help='« actuel » (palette.py) ou fichier JSON d’un recuit précédent')
@@ -66,7 +68,7 @@ def main():
 
     @lru_cache(maxsize=None)
     def couleur(L, h):
-        C = math.floor(min(0.12, P.chroma_max(L, h, 0.12)) * 1000) / 1000
+        C = math.floor(min(a.chroma, P.chroma_max(L, h, a.chroma)) * 1000) / 1000
         x = P.oklch_hex(L, C, h)[0]
         return C, {k: vp.lin2oklab(*(vp.simulate(x, k) if k else vp.lin(x))) for k in (None, 'protan', 'deutan')}
 
@@ -92,9 +94,12 @@ def main():
         toutes = min(ecart(pos[i], pos[j])[1] for i in range(N) for j in range(i + 1, N))
         pire = min(pire, toutes / a.toutes_paires)
         penal = sum(1 for L, h in pos if couleur(L, h)[0] < 0.102)
+        vif = sum(couleur(L, h)[0] for L, h in pos) / N   # chroma moyenne (thème « ravivé »)
         sem = sum(poids[s] * abs((pos[spec[s]][1] - cible[s] + 180) % 360 - 180) for s in SPEC) / sum(poids.values())
-        return (min(pire, 1) * 1000 + min(pire_cvd, 1.1) * 150 + min(toutes / 6, 1) * 40 - penal * 1000 - sem * a.semantique,
-                {'contraintes': round(pire, 4), 'cvd_sur_8': round(pire_cvd, 4), 'toutes_paires': round(toutes, 2), 'semantique_deg': round(sem, 2)})
+        return (min(pire, 1) * 1000 + min(pire_cvd, 1.1) * 150 + min(toutes / 6, 1) * 40 - penal * 1000 - sem * a.semantique
+                + a.vivacite * vif,
+                {'contraintes': round(pire, 4), 'cvd_sur_8': round(pire_cvd, 4), 'toutes_paires': round(toutes, 2), 'semantique_deg': round(sem, 2),
+                 'chroma_moyenne': round(vif, 4)})
 
     noms = [n for n, *_ in P.EMPLACEMENTS]
     if a.depart == 'actuel':
@@ -148,7 +153,7 @@ def emettre(a):
     noms = a.noms.split(',') if a.noms else [f'teinte-{i + 1}' for i in range(N)]
     items = []
     for i, (L, h) in enumerate(w['slots']):
-        C = math.floor(min(0.12, P.chroma_max(L, h, 0.12)) * 1000) / 1000
+        C = math.floor(min(a.chroma, P.chroma_max(L, h, a.chroma)) * 1000) / 1000
         items.append(f"('{noms[i]}', {L:.3f}, {C:.3f}, {h:.1f})")
     print('EMPLACEMENTS = [')
     for k in range(0, N, 3):
