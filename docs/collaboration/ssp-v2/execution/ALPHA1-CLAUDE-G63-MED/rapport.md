@@ -1,6 +1,6 @@
 # Audit médical Alpha, tour 1 — G63, Polynévrite au cours de maladies classées ailleurs (S08)
 
-Mission `ALPHA1-CLAUDE-G63-MED` · branche `claude/alpha1/g63-med-g1` · base de mission `d1a488ad` (manifeste) · worktree créé sur `32416a20` · génération 1 · du 2026-10-16T05:51:52Z au 2026-10-16T06:12:06Z. Effort et modèle conformes au manifeste.
+Mission `ALPHA1-CLAUDE-G63-MED` · branche `claude/alpha1/g63-med-g1` · base de mission `d1a488ad` (manifeste) · worktree créé sur `32416a20` · génération 1 · du 2026-10-16T05:51:52Z au 2026-10-16T06:18:55Z. Effort et modèle conformes au manifeste.
 
 START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste. Horodatages UTC relevés par `date -u` ; la fin est relevée juste avant le commit de traçabilité.
 
@@ -8,11 +8,11 @@ START exécuté sur le premier main contenant l'approbation de la mission (PR #1
 
 ## Synthèse
 
-La leçon G63 est solide sur sa charpente : classification clinique, chiffres de Sommer et coll., règles suisses du pied diabétique, doses des informations professionnelles. L’audit relève **0 constat bloquant, 11 majeurs, 13 mineurs et 6 enrichissements**. Aucune dose dangereuse n’a été démontrée. Les défauts majeurs portent sur quatre points.
+La leçon G63 est solide sur sa charpente : classification clinique, chiffres de Sommer et coll., règles suisses du pied diabétique, doses des informations professionnelles. L’audit relève **0 constat bloquant, 11 majeurs, 12 mineurs et 6 enrichissements**. Aucune dose dangereuse n’a été démontrée. Les défauts majeurs portent sur quatre points.
 
 1. **La sémiologie manque — constat MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md)** : aucune discipline « Sémiologie fondamentale et analytique », et l’onglet Sciences ne compte que quatre disciplines réelles (C01, C02).
 2. **Le périmètre CIM est faux pour deux causes majeures** : la neuropathie alcoolique se code G62.1 et la neuropathie médicamenteuse, dont celle de la chimiothérapie, G62.0, non G63.4* ni G63.1* (C03).
-3. **La douleur neuropathique repose sur une stratégie dépassée et un chiffre incomplet** : NeuPSIG a révisé ses lignes en 2025 (tramadol relégué en troisième ligne) et les tricycliques ont un NNT plus bas que les autres classes, contrairement à l’« efficacité comparable » affirmée (C04, C05, C11).
+3. **La douleur neuropathique repose sur une stratégie dépassée et un chiffre incomplet** : NeuPSIG a révisé ses lignes en 2025 (tramadol relégué en troisième ligne) et l’« efficacité comparable » affirmée n’est pas énoncée par les sources ; les NNT poolés contre placebo ne hiérarchisent pas les classes (C04, C05, C11).
 4. **La sécurité médicamenteuse est incomplète face au patient type** : contre-indications de la duloxétine (inhibiteurs du CYP1A2, hypertension non équilibrée), prégabaline exclue sous 30 mL/min, mésusage des gabapentinoïdes chez le patient alcoolique, dose et ordre de la thiamine dans l’encéphalopathie de Wernicke (C06 à C09). S’y ajoute un délai de dépistage du type 1 tiré d’une recommandation nord-américaine (C10).
 
 Empreintes SHA-256 des sept fichiers : **conformes** au manifeste. Première source lue : https://doi.org/10.1016/S1474-4422(14)70251-0 (Résumé PubMed 25575710 (NNT et lignes de traitement)).
@@ -35,11 +35,11 @@ Aucun.
 *Preuve :* [S15] G62.0, G62.1, G62.2 ; [S15] G63.1*.  
 *Proposition :* Appliquer propositions/G63_a_1.html (cellules corrigées, paragraphe et tableau G62/G63, piège réécrit) ; reporter dans g63-4, g63-chimio et glossary/g63.py.
 
-**C04 — `chapters/G63/G63_d.html`.** Affirmation inexacte sur un point décisionnel : la leçon présente les quatre classes de première ligne comme d’efficacité comparable (NNT 6,4 à 7,7) et omet le NNT des antidépresseurs tricycliques, plus bas. Le résumé de 2015 précise que les NNT étaient plus bas pour les tricycliques ; la mise à jour de 2025 donne 4,6 pour les tricycliques, 8,9 pour les ligands α2δ et 7,4 pour les inhibiteurs de la recapture. Même erreur dans g63-9.2 (« Le choix ... non d’un avantage net d’efficacité »), dans la fenêtre g63-nnt, le Pareto g63-pharma, l’encadré key de g63-9 et la figure 5.  
+**C04 — `chapters/G63/G63_d.html`.** Affirmation inexacte sur un point décisionnel : la leçon présente les quatre classes de première ligne comme d’efficacité comparable (NNT 6,4 à 7,7) et omet le NNT des antidépresseurs tricycliques. Cette équivalence n’est pas énoncée par les sources lues. Le résumé de 2015 précise que les NNT étaient plus bas pour les tricycliques ; la mise à jour de 2025 donne 4,6 pour les tricycliques, 8,9 pour les ligands α2δ et 7,4 pour les inhibiteurs de la recapture. Même erreur dans g63-9.2 (« Le choix ... non d’un avantage net d’efficacité »), dans la fenêtre g63-nnt, le Pareto g63-pharma, l’encadré key de g63-9 et la figure 5.  
 *Preuve :* [S8] résumé ; [S9] résumé.  
 *Proposition :* Remplacer l’encadré key de g63-p-1 et insérer le tableau NNT/NNH de propositions/G63_d_1.html ; corriger g63-9.2, g63-nnt, la figure 5 et le Pareto en conséquence.
 
-**C05 — `chapters/G63/G63_b.html`.** Source obsolète sur la stratégie de la douleur neuropathique : NeuPSIG a révisé ses recommandations en 2025 (313 essais). La deuxième ligne devient capsaïcine 8 %, capsaïcine crème et lidocaïne 5 % ; les opioïdes (dont le tramadol, deuxième ligne en 2015) passent en troisième ligne avec la toxine botulique A et la stimulation magnétique transcrânienne répétée. La leçon place encore le tramadol en deuxième ligne (g63-9.2, g63-p-1, g63-douleur).  
+**C05 — `chapters/G63/G63_b.html`.** Source obsolète sur la stratégie de la douleur neuropathique : NeuPSIG a révisé ses recommandations en 2025 (313 essais). La deuxième ligne devient capsaïcine 8 %, capsaïcine en crème et lidocaïne 5 % (recommandation faible) ; les opioïdes (dont le tramadol, deuxième ligne en 2015) passent en troisième ligne avec la toxine botulique A et la stimulation magnétique transcrânienne répétée. La leçon place encore le tramadol en deuxième ligne (g63-9.2, g63-p-1, g63-douleur).  
 *Preuve :* [S9] résumé ; [S8] résumé.  
 *Proposition :* Fonder la stratégie sur Soliman et coll. 2025 (propositions/G63_d_1.html) ; mentionner 2015 comme version antérieure dans la fenêtre g63-douleur.
 
@@ -67,7 +67,7 @@ Aucun.
 *Preuve :* [S9] résumé ; [S8] résumé.  
 *Proposition :* Remplacer la figure par le tableau NNT/NNH de propositions/G63_d_1.html, ou redessiner un SVG de 360 de large à 14 px avec les quatre classes de première et deuxième ligne de 2025, étiquettes sur deux lignes.
 
-## Constats mineurs (13)
+## Constats mineurs (12)
 
 **C12 — `chapters/G63/G63_c.html`.** Figures 3 et 4 : viewBox de 640 de large, texte rendu à 7,3 px à 390 px (mesure Chromium). Aucune valeur décisionnelle, mais lecture difficile sur téléphone.  
 *Preuve :* contrôle mécanique (mesure Chromium ou script du projet).  
@@ -88,10 +88,6 @@ Aucun.
 **C16 — `chapters/G63/G63_pop1.html`.** Attribution erronée (fenêtre g63-neuronopathie ; aussi g63-s-bioch « selon Sommer et coll. » et glossaire CV2) : Sommer et coll. 2018 ne mentionnent ni anti-Hu, ni CV2/CRMP5, ni amphiphysine, ni syndrome paranéoplasique. Les faits sont exacts, mais leur source est Graus et coll. 2021.  
 *Preuve :* [S1] recherche plein texte ; [S7] phénotypes.  
 *Proposition :* Remplacer « Sommer et coll. citent aussi » par « Graus et coll. citent aussi » dans g63-neuronopathie, g63-s-bioch et glossary/g63.py (CV2).
-
-**C17 — `chapters/G63/G63_b.html`.** Limite d’âge obsolète : le document QualiCCare de 2013 retient 64 ans pour les femmes, âge de la retraite de l’époque. Depuis la réforme AVS 21, l’âge de référence des femmes nées en 1962 est de 64 ans et 6 mois (2026) et atteint 65 ans dès la génération 1964. Même phrase dans g63-pied.  
-*Preuve :* [S3] tableau, catégorie 1 ; [S24] calendrier.  
-*Proposition :* « L’assurance-invalidité peut prendre en charge des chaussures adaptées au diabète avant l’âge de référence AVS (65 ans ; pour les femmes nées de 1961 à 1963, 64 ans et 3 à 9 mois). La correspondance exacte avec la circulaire AI reste à vérifier. »
 
 **C18 — `chapters/G63/G63_d.html`.** Posologie de Qutenza incomplète : la FI suisse précise qu’un renouvellement avant 90 jours ne s’envisage qu’après une évaluation minutieuse, avec un minimum de 60 jours, et une réévaluation après 3 traitements.  
 *Preuve :* [S20] Posologie.  
@@ -166,7 +162,7 @@ Aucun.
 | 13 | Complications et pronostic | couvert | g63-10, g63-pronostic-pied |
 | 14 | Suivi, prévention, dépistage | partiel | g63-10 ; délai type 1 d’origine nord-américaine (C10) |
 | 15 | Situations particulières | partiel | g63-11 (grossesse, âgé, rein, protoxyde d’azote) ; enfant absent |
-| 16 | Spécificités suisses | partiel | g63-9.3 (AI, âge obsolète C17), QualiCCare ; Suva, aptitude à la conduite et remboursement absents |
+| 16 | Spécificités suisses | partiel | g63-9.3 (AI, QualiCCare) ; règle d’âge AI non vérifiée (lacune) ; Suva, aptitude à la conduite et remboursement absents |
 | 17 | Critères formels du diagnostic | couvert | g63-12 div.alert |
 | 18 | Paramètres clés chiffrés | couvert | g63-12 div.key (NNT à corriger, C04) |
 | 19 | Sous-codes CIM-10-GM couverts | partiel | tableau de g63-1 ; G63.6 sans contenu ; frontière G62 non traitée (C03) |
@@ -260,7 +256,7 @@ L’inventaire `tools/image_clo_finder.py inventory G63` trouve six figures, tou
 - Seuil d’hypotension orthostatique : aucune source lue (consensus 2011 sans résumé).
 - Délai de dépistage dans le diabète de type 1 : aucune source suisse ou européenne lue (requête PubMed et documents SSED).
 - Lidocaïne 5 % en emplâtre : aucune spécialité trouvée par la recherche AmiKo (« lidocain », « emplâtre », « Pflaster », « versatis ») ; statut suisse à confirmer.
-- Correspondance exacte entre la limite d’âge AI pour les chaussures et l’âge de référence AVS 21 : circulaire AI non lue.
+- Règle d’âge AI pour les chaussures adaptées au diabète (g63-9.3, g63-pied : « moins de 65 ans (homme) ou 64 ans (femme) », d’après QualiCCare 2013) : non vérifiée, car la circulaire AI en vigueur n’a pas été lue. L’âge de référence AVS 21 a été lu [S24], mais son application à cette prestation n’est pas démontrée ; aucune correction n’est proposée.
 - Source universitaire suisse de sémiologie (Unisanté, Epiney 2023) : redirection 301, non lue.
 - Aucune donnée épidémiologique suisse ; aucune source sur Suva (neuropathies toxiques professionnelles), aptitude à la conduite ni remboursement LS.
 - Recommandations actuelles de l’amylose à transthyrétine (silenceurs de gène) non lues ; consensus 2016 seul.
@@ -303,7 +299,7 @@ L’inventaire `tools/image_clo_finder.py inventory G63` trouve six figures, tou
 | Leçon | G63 — Polynévrite au cours de maladies classées ailleurs (S08, N-05-Neurologie) |
 | Catégories traitées | G63.0* à G63.8* ; frontière G62.0, G62.1, G62.2 |
 | Fichiers audités | 7, empreintes conformes |
-| Constats | 0 bloquant · 11 majeurs · 13 mineurs · 6 enrichissements |
+| Constats | 0 bloquant · 11 majeurs · 12 mineurs · 6 enrichissements |
 | Sémiologie (rubrique 21) | absente : MAJEUR bloquant la clôture du cours et du lot ; proposition complète en 7 îlots |
 | Disciplines des sciences | 4 réelles → proposition Immunologie (5e) |
 | Figures | 6 schémas non anatomiques ; 3 illisibles à 390 px |

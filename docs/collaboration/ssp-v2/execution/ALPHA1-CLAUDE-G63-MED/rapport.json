@@ -13,7 +13,7 @@
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
  "date_debut": "2026-10-16T05:51:52Z",
- "date_fin": "2026-10-16T06:12:06Z",
+ "date_fin": "2026-10-16T06:18:55Z",
  "lecture": {
   "fichiers": [
    "chapters/G63/G63_a.html",
@@ -72,7 +72,7 @@
  "synthese": {
   "BLOQUANT": 0,
   "MAJEUR": 11,
-  "MINEUR": 13,
+  "MINEUR": 12,
   "ENRICHISSEMENT": 6
  },
  "constats": [
@@ -158,7 +158,7 @@
    "gravite": "MAJEUR",
    "fichier": "chapters/G63/G63_d.html",
    "ancre": "Quatre classes de première ligne à efficacité comparable (nombre de patients à traiter de 6,4 à 7,7)",
-   "constat": "Affirmation inexacte sur un point décisionnel : la leçon présente les quatre classes de première ligne comme d’efficacité comparable (NNT 6,4 à 7,7) et omet le NNT des antidépresseurs tricycliques, plus bas. Le résumé de 2015 précise que les NNT étaient plus bas pour les tricycliques ; la mise à jour de 2025 donne 4,6 pour les tricycliques, 8,9 pour les ligands α2δ et 7,4 pour les inhibiteurs de la recapture. Même erreur dans g63-9.2 (« Le choix ... non d’un avantage net d’efficacité »), dans la fenêtre g63-nnt, le Pareto g63-pharma, l’encadré key de g63-9 et la figure 5.",
+   "constat": "Affirmation inexacte sur un point décisionnel : la leçon présente les quatre classes de première ligne comme d’efficacité comparable (NNT 6,4 à 7,7) et omet le NNT des antidépresseurs tricycliques. Cette équivalence n’est pas énoncée par les sources lues. Le résumé de 2015 précise que les NNT étaient plus bas pour les tricycliques ; la mise à jour de 2025 donne 4,6 pour les tricycliques, 8,9 pour les ligands α2δ et 7,4 pour les inhibiteurs de la recapture. Même erreur dans g63-9.2 (« Le choix ... non d’un avantage net d’efficacité »), dans la fenêtre g63-nnt, le Pareto g63-pharma, l’encadré key de g63-9 et la figure 5.",
    "preuve": [
     {
      "source_id": "S8",
@@ -172,7 +172,7 @@
     }
    ],
    "proposition": "Remplacer l’encadré key de g63-p-1 et insérer le tableau NNT/NNH de propositions/G63_d_1.html ; corriger g63-9.2, g63-nnt, la figure 5 et le Pareto en conséquence.",
-   "justification": "Mécanisme : NNT et NNH mesurent ensemble bénéfice et tolérance. Conséquence : affirmer l’équivalence masque que le tricyclique soulage davantage mais gêne davantage. Décision : présenter NNT et NNH de la source la plus récente.",
+   "justification": "Mécanisme : NNT et NNH poolés contre placebo décrivent chaque classe sans comparaison directe entre classes. Conséquence : affirmer une équivalence, comme affirmer une supériorité, dépasse les données. Décision : présenter NNT et NNH de la source la plus récente, sans hiérarchie entre classes de première ligne.",
    "ancre_occurrences": 1
   },
   {
@@ -180,7 +180,7 @@
    "gravite": "MAJEUR",
    "fichier": "chapters/G63/G63_b.html",
    "ancre": "repose sur la méta-analyse du groupe d’intérêt spécialisé sur la douleur neuropathique (NeuPSIG) de 2015 et sur la recommandation européenne de 2010",
-   "constat": "Source obsolète sur la stratégie de la douleur neuropathique : NeuPSIG a révisé ses recommandations en 2025 (313 essais). La deuxième ligne devient capsaïcine 8 %, capsaïcine crème et lidocaïne 5 % ; les opioïdes (dont le tramadol, deuxième ligne en 2015) passent en troisième ligne avec la toxine botulique A et la stimulation magnétique transcrânienne répétée. La leçon place encore le tramadol en deuxième ligne (g63-9.2, g63-p-1, g63-douleur).",
+   "constat": "Source obsolète sur la stratégie de la douleur neuropathique : NeuPSIG a révisé ses recommandations en 2025 (313 essais). La deuxième ligne devient capsaïcine 8 %, capsaïcine en crème et lidocaïne 5 % (recommandation faible) ; les opioïdes (dont le tramadol, deuxième ligne en 2015) passent en troisième ligne avec la toxine botulique A et la stimulation magnétique transcrânienne répétée. La leçon place encore le tramadol en deuxième ligne (g63-9.2, g63-p-1, g63-douleur).",
    "preuve": [
     {
      "source_id": "S9",
@@ -426,28 +426,6 @@
    ],
    "proposition": "Remplacer « Sommer et coll. citent aussi » par « Graus et coll. citent aussi » dans g63-neuronopathie, g63-s-bioch et glossary/g63.py (CV2).",
    "justification": "Traçabilité.",
-   "ancre_occurrences": 1
-  },
-  {
-   "id": "C17",
-   "gravite": "MINEUR",
-   "fichier": "chapters/G63/G63_b.html",
-   "ancre": "si le patient a moins de 65 ans (homme) ou de 64 ans (femme)",
-   "constat": "Limite d’âge obsolète : le document QualiCCare de 2013 retient 64 ans pour les femmes, âge de la retraite de l’époque. Depuis la réforme AVS 21, l’âge de référence des femmes nées en 1962 est de 64 ans et 6 mois (2026) et atteint 65 ans dès la génération 1964. Même phrase dans g63-pied.",
-   "preuve": [
-    {
-     "source_id": "S3",
-     "section": "tableau, catégorie 1",
-     "citation_courte": "IV-Anmeldung für diabetesgerechte Schuhe bei Patient <65J M / <64J W"
-    },
-    {
-     "source_id": "S24",
-     "section": "calendrier",
-     "citation_courte": "2026 : année de naissance 1962 : 64 ans et 6 mois"
-    }
-   ],
-   "proposition": "« L’assurance-invalidité peut prendre en charge des chaussures adaptées au diabète avant l’âge de référence AVS (65 ans ; pour les femmes nées de 1961 à 1963, 64 ans et 3 à 9 mois). La correspondance exacte avec la circulaire AI reste à vérifier. »",
-   "justification": "Spécificité suisse datée ; correction sans conséquence clinique.",
    "ancre_occurrences": 1
   },
   {
@@ -781,7 +759,7 @@
    "rang": 16,
    "rubrique": "Spécificités suisses",
    "statut": "partiel",
-   "ancre": "g63-9.3 (AI, âge obsolète C17), QualiCCare ; Suva, aptitude à la conduite et remboursement absents"
+   "ancre": "g63-9.3 (AI, QualiCCare) ; règle d’âge AI non vérifiée (lacune) ; Suva, aptitude à la conduite et remboursement absents"
   },
   {
    "rang": 17,
@@ -984,11 +962,11 @@
   "Seuil d’hypotension orthostatique : aucune source lue (consensus 2011 sans résumé).",
   "Délai de dépistage dans le diabète de type 1 : aucune source suisse ou européenne lue (requête PubMed et documents SSED).",
   "Lidocaïne 5 % en emplâtre : aucune spécialité trouvée par la recherche AmiKo (« lidocain », « emplâtre », « Pflaster », « versatis ») ; statut suisse à confirmer.",
-  "Correspondance exacte entre la limite d’âge AI pour les chaussures et l’âge de référence AVS 21 : circulaire AI non lue.",
   "Source universitaire suisse de sémiologie (Unisanté, Epiney 2023) : redirection 301, non lue.",
   "Aucune donnée épidémiologique suisse ; aucune source sur Suva (neuropathies toxiques professionnelles), aptitude à la conduite ni remboursement LS.",
   "Recommandations actuelles de l’amylose à transthyrétine (silenceurs de gène) non lues ; consensus 2016 seul.",
-  "Vérification navigateur des fenêtres, captures à 390 px avec police 24 px : non réalisées par ce rôle d’audit (SEM-18, SEM-22, SEM-23)."
+  "Vérification navigateur des fenêtres, captures à 390 px avec police 24 px : non réalisées par ce rôle d’audit (SEM-18, SEM-22, SEM-23).",
+  "Règle d’âge AI pour les chaussures adaptées au diabète (g63-9.3, g63-pied : « moins de 65 ans (homme) ou 64 ans (femme) », d’après QualiCCare 2013) : non vérifiée, car la circulaire AI en vigueur n’a pas été lue. L’âge de référence AVS 21 a été lu [S24], mais son application à cette prestation n’est pas démontrée ; aucune correction n’est proposée."
  ],
  "propositions": [
   "propositions/G63_a_1.html",
