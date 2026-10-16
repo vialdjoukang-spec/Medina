@@ -1,0 +1,87 @@
+{
+  "review_type": "relecture medicale et reglementaire ciblee du delta source, par le chercheur initial ; pas contre-audit externe",
+  "reviewed_at_utc": "2026-10-16T05:45:13.301584+00:00",
+  "reviewer": "Codex agent e05_sl_delta_s3",
+  "source": {
+    "worktree": "/workspace/medina-alpha77/E05",
+    "head": "254c881debe27fdcfa17c3670a70d68c5eb28831",
+    "file": "chapters/E05/E05_pop2.html",
+    "file_sha256": "922aa2e2b2d7ebe2dfe7d9029bfeead29bbe042c8751c8900d64897285377393",
+    "template": "e05-contentieux-orbitopathie",
+    "template_sha256": "05dfd704a1b7c984b7a7dfc3953565c4d8cebc6cf5d8911a89088b37d8f6ddcb",
+    "comparison": "working tree versus HEAD254c881d",
+    "only_this_template_changed_in_file": true
+  },
+  "scope": "uniquement paragraphe Prise en charge en Suisse et ses trois references ajoutes ; aucune revalidation des passages EUGOGO/FI/chirurgie inchanges",
+  "acceptability": "acceptable dans cette portee bornee, sur cette empreinte exacte",
+  "findings": [
+    {
+      "id": "LS-01",
+      "status": "etaye",
+      "severity": "none",
+      "claim": "non-retrouve dans les donnees LS courantes consultees le16.10.2026",
+      "assessment": "La formulation decrit une observation datee ; elle ne transforme pas une recherche negative en interdiction generale de remboursement. Le jeu officiel a ete parcouru completement :3383 entrees uniques sur34pages, aucun terme/identifiant cible.",
+      "evidence": [
+        "complete-ls-target-search.json",
+        "ls-pages-manifest.json",
+        "ls-pages/",
+        "search-tepezza-curl.json",
+        "filter-substance.json"
+      ]
+    },
+    {
+      "id": "LS-02",
+      "status": "etaye",
+      "severity": "none",
+      "claim": "demande admission orbitopathie endocrinienne recue28.03.2025, sans preuve admission/rejet",
+      "assessment": "Conforme a la ligne217 du registre officiel et a ses en-tetes : date de reception, et non date admission. Le texte ne pretend pas que la demande soit toujours pendante.",
+      "evidence": [
+        "bag-publications.xlsx : Francais!A217:F217 et A18:F18",
+        "bag-applications-matches.json",
+        "bag-applications-headers.json"
+      ],
+      "version": "fichier publie07.10.2026 ; etat interne21.09.2026",
+      "sha256": "dafab1a82037f9a00d2795cb4fe9f799e7f89af175bc8269c0386f463711e7e0"
+    },
+    {
+      "id": "LS-03",
+      "status": "etaye",
+      "severity": "none",
+      "claim": "examen exceptionnel sous conditions OAMal, accord assureur et medecin-conseil ; pas acquis pour patient",
+      "assessment": "Conforme aux sections Bases legales, Conditions et Garantie de prise en charge de la page OFSP. La possibilite est conditionnelle et ne constitue aucune decision patient. Aucune extension automatique de remboursement a toutes les orbitopathies nest formulee.",
+      "evidence": [
+        "ofsp-cas-particuliers.html",
+        "faq-2026-10-05.txt : FAQ55 page24"
+      ],
+      "source_sha256": "b3a304aac7596a1288721ce732bb48482edff4d1d4f6b6e51b745c9f4eb0cbb6"
+    },
+    {
+      "id": "LS-04",
+      "status": "etaye",
+      "severity": "none",
+      "claim": "absence LS retrouvee insuffisante pour conclure sur tout financement hospitalier",
+      "assessment": "La prudence generale est conforme a la FAQ52 qui distingue forfaits hospitaliers et supplements ; aucune prise en charge hospitaliere concrete nest promise.",
+      "evidence": [
+        "ofsp-cas-particuliers.pdf : FAQ52 pages22-23",
+        "faq-2026-10-05.txt"
+      ],
+      "version": "05.10.2026",
+      "sha256": "def9840251e907c2615a8adc7a2deb7e784ca9883e8716351114de404c2ae48f"
+    }
+  ],
+  "required_corrections": [],
+  "unresolved_limitations": [
+    "API courante sans date effet/version propre publiee ; observation bornee au16.10.2026 et aux donnees recues.",
+    "Aucune decision formelle OFSP admission/rejet Tepezza ni prix/limitation Tepezza identifie ; le registre de demandes ne les etablit pas.",
+    "Aucune garantie individuelle ni financement hospitalier concret determine.",
+    "Texte consolide Fedlex non lu ; bases pratiques soutenues par pages et FAQ primaires officielles OFSP deja consultees.",
+    "Relecture effectuee par lagent ayant fait la recherche/proposition initiale : aucune independance externe revendiquee.",
+    "Aucun audit medical general, rendu navigateur, FI/EUGOGO ou contenu inchange valide par cette relecture."
+  ],
+  "network_requests_this_review": 0,
+  "canonical_writes_this_agent": 0,
+  "human_validation": false,
+  "external_counter_audit": false,
+  "closure_count": 0,
+  "provenance_correction": "rapport.txt corrige :721b86af et status propre etaient un etat initial observe ; la racine a ensuite avance HEAD et modifie intentionnellement ses sources. Ce rapport ne revendique pas un etat final global inchange."
+}
