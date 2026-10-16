@@ -8,6 +8,7 @@ Toute nouvelle session Claude lit **ce fichier seul** et reprend sans relire l'h
 L'état réel se lit dans `organisation/CYCLES_CLAUDE.json` (ne jamais se fier à une jauge recopiée ici).
 
 ## Règles permanentes
+- **Notification obligatoire (Vial, 16.10.2026)** : chaque fois que Vial doit intervenir (fusion de PR, décision, permission, blocage), envoyer aussitôt une notification push (outil PushNotification) d'une ligne : action attendue + lien ou numéro de PR. Ne jamais attendre qu'il relise le fil.
 - Réponses au propriétaire : ultra-concises ; « captures + FIN PUBLIÉ + lien » et jauge en leçons publiées / 120 et cycles Novo / 9.
 - **Projet Novo_12** (`organisation/novo_12/PLAN_NOVO_12.json`) : 12 leçons par cycle (3 par système), préparées ensemble ;
   publication par la garde existante, quatre leçons à la fois, dans l'ordre du plan tétrade.
