@@ -1,0 +1,64 @@
+<!-- Propositions ALPHA1-CLAUDE-G83-MED : constats MINEURS (C11, C12, C15, C16, C17, C18). Remplacements exacts ; chaque ANCIEN
+     figure une seule fois dans le fichier indiqué (vérifié par script, voir rapport.json « verifications_conformes »). -->
+
+<!-- C11-1 — chapters/G83/G83_a.html, îlot g83-2
+ANCIEN : Une revue de 212 articles a recensé 17 définitions.
+NOUVEAU : -->
+Fraser et ses collaborateurs ont recensé 17 définitions dans la littérature ; une revue récente de 212 articles l’a confirmé [S5].
+
+<!-- C11-2 — chapters/G83/G83_pop1.html, fenêtre g83-ces
+ANCIEN : Une revue de 212 articles, qui avait recensé 17 définitions, propose la définition pratique suivante
+NOUVEAU : -->
+Après avoir revu 212 articles et confirmé les 17 définitions recensées par Fraser, une revue propose la définition pratique suivante
+
+<!-- C11-3 — chapters/G83/G83_pop1.html, fenêtre g83-heterogeneite
+ANCIEN : Une autre revue, de 212 articles, avait recensé 17 définitions.
+NOUVEAU : -->
+Fraser avait recensé 17 définitions ; une revue de 212 articles l’a confirmé [S5].
+
+<!-- C11-4 — chapters/G83/G83_b.html, îlot g83-8
+ANCIEN : Selon la synthèse de Kögl et collaborateurs, on retrouve une incontinence urinaire chez 43 % des patients
+NOUVEAU : -->
+Selon la revue de Kumar (2022), reprise par Kögl et collaborateurs, on retrouve une incontinence urinaire chez 43 % des patients
+
+<!-- C12-1 — chapters/G83/G83_a.html, îlot g83-3 (piège)
+ANCIEN : le coefficient était de 0,17 chez les consultants spécialistes.
+NOUVEAU : -->
+toutes catégories confondues, les chirurgiens du rachis seniors obtenaient l’accord le plus bas (0,17) [S12].
+
+<!-- C12-2 — chapters/G83/G83_pop1.html, fenêtre g83-fiabilite
+ANCIEN : Les consultants spécialistes obtenaient 0,17.
+NOUVEAU : -->
+Toutes catégories confondues, les chirurgiens du rachis seniors obtenaient l’accord le plus bas, 0,17, sans gain avec l’expérience [S12].
+
+<!-- C12-3 — chapters/G83/G83_pop1.html, fenêtre g83-fiabilite
+ANCIEN : Des valeurs de 0,34 et de 0,17 sont donc proches de l’accord du hasard.
+NOUVEAU : -->
+Une valeur de 0,17 reste proche de l’accord du hasard ; une valeur de 0,34 correspond à l’accord « minimal » que retiennent les auteurs [S12].
+
+<!-- C12-4 — chapters/G83/G83_pop1.html, fenêtre g83-mimics
+ANCIEN : Une aire sous la courbe de 0,77 correspond à une discrimination moyenne : le score aide au triage mais ne remplace pas l’évaluation.
+NOUVEAU : -->
+Les auteurs qualifient d’excellente une aire sous la courbe de 0,777 ; elle laisse pourtant près d’un patient sur quatre mal ordonné entre deux tirages, si bien que le score aide au triage sans remplacer l’évaluation [S20].
+<!-- Note de calcul : une aire sous la courbe de 0,777 est la probabilité qu'un patient avec AVC tiré au hasard ait un score plus évocateur qu'un simulateur tiré au hasard ; 1 − 0,777 = 0,223, « près d'un sur quatre » (calculs/verifier.py, E07). -->
+
+<!-- C15 — chapters/G83/G83_c.html, îlot g83-e-2
+ANCIEN : Le retard des moyens diagnostiques figurait parmi les causes de retard de la série suisse (8 cas sur 24 patients opérés après 48 heures).
+NOUVEAU : -->
+Le retard des moyens diagnostiques figurait parmi les causes de retard d’une série citée par la Revue Médicale Suisse (8 cas sur 24 patients opérés après 48 heures) [S3].
+
+<!-- C16 — chapters/G83/G83_a.html, îlot g83-4 (tableau des causes)
+ANCIEN : <td>Rapporter la complication au geste (cas publiés)</td>
+NOUVEAU : -->
+<td>Bloc fait sous fluoroscopie : les auteurs déconseillent les stéroïdes particulaires dans les injections rachidiennes axiales [S16]</td>
+
+<!-- C17 — chapters/G83/G83_c.html, îlot g83-e-3
+ANCIEN : mesuré par échographie vésicale (scanner vésical)
+NOUVEAU : -->
+mesuré par un échographe vésical portatif, appelé « bladder scan » dans les publications britanniques, à ne pas confondre avec la tomodensitométrie
+
+<!-- C18 — rattachement des fichiers (aucun remplacement de texte) :
+     G83_b.html contient la suite de l'onglet pA (îlots g83-6 à g83-13) et non l'onglet Examens ; G83_c.html contient les panneaux pE et pS.
+     test_v7.py --static G83 passe (OK), mais la répartition s'écarte du contrat « _a Pathologie, _b Examens, _c Sciences, _d Pharmacologie »
+     (PROTOCOLE_ALPHA1_CLAUDE.md, lectures obligatoires 4 ; CLAUDE.md, règle 2). Proposition : laisser en l'état si le moteur l'accepte,
+     ou redistribuer lors d'une mission d'intégration, sans modifier le contenu. -->
