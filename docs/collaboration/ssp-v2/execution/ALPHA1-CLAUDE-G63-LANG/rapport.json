@@ -2,17 +2,17 @@
  "mission": "ALPHA1-CLAUDE-G63-LANG",
  "code": "G63",
  "type_audit": "linguistique",
- "base_sha": "32416a20",
+ "base_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
  "generation": 1,
  "branche": "claude/alpha1/g63-lang-g1",
  "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-G63-LANG-g1",
  "conversation": "alpha1-claude-g63-lang",
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
- "note_base": "Le manifeste porte source_snapshot_sha d1a488ad4f0031d7f2a4b47a0721e89a93475d77 ; la tête du worktree est 32416a20 (consigne). Les sept fichiers sont identiques au manifeste, empreintes SHA-256 à l’appui.",
+ "note_base": "START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste.",
  "date_debut": null,
  "note_date_debut": "Heure de début non relevée au démarrage (la consigne d’horodatage est arrivée en cours de mission) ; aucune valeur n’est inventée.",
- "date_fin": "2026-10-16T06:05:01Z",
+ "date_fin": "2026-10-16T06:12:25Z",
  "lecture": {
   "fichiers": [
    {
@@ -67,8 +67,8 @@
   "date": "2026-10-16"
  },
  "synthese": {
-  "nombre_propositions": 81,
-  "renvois_medicaux": 45,
+  "nombre_propositions": 59,
+  "renvois_medicaux": 67,
   "constats_transmis_audit_MED": 3,
   "observations_globales": 6,
   "differes": [
@@ -76,48 +76,46 @@
    "alternative « fibrillation atriale/auriculaire »"
   ],
   "par_fichier": {
-   "chapters/G63/G63_a.html": 17,
-   "chapters/G63/G63_b.html": 21,
-   "chapters/G63/G63_c.html": 18,
-   "chapters/G63/G63_d.html": 8,
-   "chapters/G63/G63_pop1.html": 5,
-   "chapters/G63/G63_pop2.html": 5,
+   "chapters/G63/G63_a.html": 12,
+   "chapters/G63/G63_b.html": 15,
+   "chapters/G63/G63_c.html": 15,
+   "chapters/G63/G63_d.html": 7,
+   "chapters/G63/G63_pop1.html": 3,
    "glossary/g63.py": 7
   },
   "renvois_par_fichier": {
-   "chapters/G63/G63_a.html": 15,
-   "chapters/G63/G63_b.html": 11,
-   "chapters/G63/G63_c.html": 9,
-   "chapters/G63/G63_d.html": 7,
-   "chapters/G63/G63_pop1.html": 1,
-   "glossary/g63.py": 2
+   "chapters/G63/G63_a.html": 20,
+   "chapters/G63/G63_b.html": 17,
+   "chapters/G63/G63_c.html": 12,
+   "chapters/G63/G63_d.html": 8,
+   "chapters/G63/G63_pop1.html": 3,
+   "glossary/g63.py": 2,
+   "chapters/G63/G63_pop2.html": 5
   },
   "par_categorie": {
-   "grammaire": 11,
-   "répétition": 10,
-   "lourdeur": 9,
+   "grammaire": 10,
    "phrase nominale": 9,
-   "ambiguïté": 8,
-   "lexique": 6,
-   "syntaxe": 5,
+   "répétition": 8,
+   "lourdeur": 5,
+   "syntaxe": 4,
    "anglicisme": 4,
-   "cohérence": 3,
+   "ambiguïté": 4,
+   "lexique": 4,
    "méta-discours": 2,
-   "précision": 2,
-   "ponctuation": 2,
    "registre": 2,
-   "cohérence terminologique": 2,
-   "contresens": 2,
+   "ponctuation": 1,
+   "cohérence terminologique": 1,
+   "précision": 1,
    "calque": 1,
-   "unités": 1,
+   "cohérence": 1,
    "nombres": 1,
    "intitulé": 1
   }
  },
  "verification_mecanique": {
   "script": "verification_unicite.py",
-  "regle": "chaque champ « ancien » apparaît exactement une fois dans le fichier cible (comptage de sous-chaînes) ; application sans chevauchement ; les nombres du texte visible sont identiques avant et après, sauf la conversion « deux à trois » en « 2 à 3 » et l’ajout de « mL/min » (OG-05).",
-  "resultat": "81/81 propositions à ancien unique ; aucun chevauchement"
+  "regle": "chaque champ « ancien » apparaît exactement une fois dans le fichier cible ; application sans chevauchement ; seule conversion de nombre : « deux à trois » en « 2 à 3 » (OG-05). Les 22 reformulations touchant une notion clinique ont été reclassées en renvois médicaux.",
+  "resultat": "59/59 propositions à ancien unique ; aucun chevauchement"
  },
  "constats": [
   {
@@ -485,9 +483,9 @@
    "fichier": "chapters/G63/G63_c.html",
    "ancre": "<div class=\"sci-bar ui\" role=\"tablist\">",
    "type": "sous-onglet Sémiologie absent",
-   "constat": "Hors périmètre linguistique, MAJEUR, transmis à l’audit MED. Décompte réel des attributs data-s de G63_c.html : 4 (g63-s-anat, g63-s-histo, g63-s-physio, g63-s-bioch). Aucun sous-onglet « Sémiologie fondamentale et analytique » n’existe, et le nombre de disciplines réelles est de 4 au lieu de 5 : ni la sixième entrée ni la cinquième discipline n’est présente. Aucune proposition linguistique n’est faite ; ce constat n’est pas un jugement sur le fond.",
+   "constat": "Hors périmètre linguistique, MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md), transmis à l’audit MED. Décompte réel des attributs data-s de G63_c.html : 4 (g63-s-anat, g63-s-histo, g63-s-physio, g63-s-bioch). Aucun sous-onglet « Sémiologie fondamentale et analytique » n’existe, et le nombre de disciplines réelles est de 4 au lieu de 5 : ni la sixième entrée ni la cinquième discipline n’est présente. Aucune proposition linguistique n’est faite ; ce constat n’est pas un jugement sur le fond.",
    "statut": "transmis_audit_MED",
-   "gravite": "MAJEUR"
+   "gravite": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md)"
   },
   {
    "id": "G63-LANG-FIG-01",
@@ -506,6 +504,182 @@
    "gravite": "à vérifier par MED",
    "constat": "La légende de la figure 5 affirme que les hauteurs sont proportionnelles aux valeurs ; le rapport hauteur/valeur calculé d’après le SVG (120, 134, 128 et 188 pour 6,4 ; 7,7 ; 7,2 et 10,6) varie de 17,4 à 18,8 : la proportionnalité n’est qu’approximative. Texte de figure non modifié.",
    "statut": "transmis_audit_MED"
+  },
+  {
+   "id": "G63-LANG-RM-46",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "Quatre formes cliniques du diabète sont distinguées",
+   "type": "notion clinique touchée (précision)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : Les quatre formes énumérées sont des formes de la neuropathie, non du diabète ; la phrase suivante parle d’ailleurs de « la première » forme. Formulation envisagée : « Quatre formes cliniques de la neuropathie diabétique sont distinguées ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-47",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "Les études de population donnent 1 à 4 %, dont 40 à 55 % sont attribuées au diabète",
+   "type": "notion clinique touchée (ambiguïté)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : Le relatif « dont » n’a pas d’antécédent clair ; l’accord féminin pluriel de « attribuées » n’est lisible qu’avec « polyneuropathies ». Formulation envisagée : « Les études de population donnent 1 à 4 % ; 40 à 55 % de ces polyneuropathies sont attribuées au diabète ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-48",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "Dans une cohorte de 921 neuropathies des petites fibres suivies à Maastricht",
+   "type": "notion clinique touchée (cohérence)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : On suit des patients, non des neuropathies ; la fenêtre g63-petitesfibres écrit déjà « 921 patients ». Formulation envisagée : « Dans une cohorte de 921 patients atteints de neuropathie des petites fibres, suivis à Maastricht ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-49",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "tels que l’anti-Hu, associé à plus de 85 % à un cancer bronchique à petites cellules",
+   "type": "notion clinique touchée (lourdeur)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : Un seul exemple (« tels que » appelle un pluriel) ; « associé… à… à » est lourd. Même formulation que la fenêtre g63-neuronopathie (« dans plus de 85 % »). Formulation envisagée : « comme l’anti-Hu, associé dans plus de 85 % des cas à un cancer bronchique à petites cellules ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-50",
+   "fichier": "chapters/G63/G63_a.html",
+   "ancre": "cancer bronchique à petites cellules, sein)</td>",
+   "type": "notion clinique touchée (ambiguïté)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : « sein » seul est elliptique ; l’article et le nom de la tumeur lèvent l’ambiguïté. Formulation envisagée : « cancer bronchique à petites cellules ou cancer du sein)</td> ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-51",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "sont des formes atypiques qui déclenchent un bilan étendu.",
+   "type": "notion clinique touchée (cohérence terminologique)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : Une faiblesse ou une asymétrie est un signe, pas une forme ; « signes atypiques » est le terme de la section 7 et de la fenêtre g63-atypiques. Formulation envisagée : « sont des signes atypiques qui déclenchent un bilan étendu. ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-52",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "le pied à risque se classe ensuite selon la fréquence des contrôles.",
+   "type": "notion clinique touchée (contresens)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : Ordre logique inversé : la catégorie fixe la fréquence (section 9.3), le pied ne se classe pas selon la fréquence. L’obligation de contrôle n’est pas affaiblie. Formulation envisagée : « le pied à risque est ensuite classé en catégories qui fixent la fréquence des contrôles. ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-53",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "ou respiratoire ; maximum en 4 semaines au plus ; incidence",
+   "type": "notion clinique touchée (lourdeur)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : « maximum… au plus » est pléonastique et ne dit pas ce qui est maximal ; même tournure dans les deux autres occurrences. Formulation envisagée : « ou respiratoire ; déficit maximal atteint en 4 semaines au plus ; incidence ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-54",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "La prégabaline n’est pas réduite sauf en cas d’insuffisance rénale ; l’amitriptyline débute à 10 à 25 mg le soir ;",
+   "type": "notion clinique touchée (grammaire)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : Sujet impropre (ce n’est pas la prégabaline qui est réduite) et « à 10 à 25 mg » enchaîne deux prépositions « à ». Formulation envisagée : « La dose de prégabaline n’est pas réduite sauf en cas d’insuffisance rénale ; le traitement par amitriptyline commence par 10 à 25 mg le soir ; ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-55",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "Le médecin note une neuropathie diabétique probable",
+   "type": "notion clinique touchée (lexique)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : « noter » ne dit pas que le médecin pose l’hypothèse diagnostique. Formulation envisagée : « Le médecin retient une neuropathie diabétique probable ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-56",
+   "fichier": "chapters/G63/G63_b.html",
+   "ancre": "monofilament de 10 g perçu sur moins de 4 sites sur 4 et, ou, pallesthésie",
+   "type": "notion clinique touchée (ponctuation)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : « et, ou, » est une ponctuation fautive ; « et/ou » garde la double lecture (les deux critères, ou l’un des deux). Formulation envisagée : « monofilament de 10 g perçu sur moins de 4 sites sur 4 et/ou pallesthésie ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-57",
+   "fichier": "chapters/G63/G63_c.html",
+   "ancre": "Moins de 4 sites sur 4 : sensibilité protectrice insuffisante",
+   "type": "notion clinique touchée (ambiguïté)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : « Moins de 4 sites sur 4 » ne dit pas ce qui est compté (sites perçus). Formulation envisagée : « Moins de 4 sites perçus sur 4 : sensibilité protectrice insuffisante ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-58",
+   "fichier": "chapters/G63/G63_c.html",
+   "ancre": "Dans la cohorte de 921 neuropathies des petites fibres, la carence",
+   "type": "notion clinique touchée (cohérence)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : Même correction que dans la section 2 : des patients, non des neuropathies. Formulation envisagée : « Dans la cohorte de 921 patients atteints de neuropathie des petites fibres, la carence ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-59",
+   "fichier": "chapters/G63/G63_c.html",
+   "ancre": "jusqu’à 200 à 300 mg par jour dans les formes graves",
+   "type": "notion clinique touchée (syntaxe)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : « jusqu’à 200 à 300 » enchaîne deux bornes ; la fenêtre g63-thiamine et le tableau écrivent « 200 à 300 mg par jour ». Formulation envisagée : « 200 à 300 mg par jour dans les formes graves ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-60",
+   "fichier": "chapters/G63/G63_d.html",
+   "ancre": "Clairance de 50 à 79 : 600 à 1200 mg ;",
+   "type": "notion clinique touchée (unités)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : L’unité de la clairance manque dans la première tranche. Formulation envisagée : « Clairance de 50 à 79 mL/min : 600 à 1200 mg ; ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-61",
+   "fichier": "chapters/G63/G63_pop1.html",
+   "ancre": "Les vitamines B, dont la thiamine, constituent la meilleure preuve disponible, mais elle reste rare.",
+   "type": "notion clinique touchée (contresens)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : Les vitamines ne « constituent » pas une preuve ; le pronom « elle » est ambigu. Formulation envisagée : « Les vitamines B, dont la thiamine, reposent sur la meilleure preuve disponible, mais celle-ci reste rare. ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-62",
+   "fichier": "chapters/G63/G63_pop1.html",
+   "ancre": "La neuroborréliose est définie par des symptômes neurologiques, une pléiocytose du liquide cérébrospinal et des anticorps intrathécaux anti-Borrelia. Elle est dite définie si",
+   "type": "notion clinique touchée (répétition)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : « définie par… dite définie » est circulaire ; la reformulation annonce les trois critères que la phrase suivante compte. Formulation envisagée : « La neuroborréliose repose sur trois critères : des symptômes neurologiques, une pléiocytose du liquide cérébrospinal et des anticorps intrathécaux anti-Borrelia. Elle est dite définie si ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-63",
+   "fichier": "chapters/G63/G63_pop2.html",
+   "ancre": "Le score additionne le phénotype clinique, les anticorps à haut ou moyen risque et la présence d’un cancer.",
+   "type": "notion clinique touchée (lexique)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : On n’additionne pas un phénotype ; la limite de la fenêtre parle bien de « points attribués ». Formulation envisagée : « Le score additionne les points attribués au phénotype clinique, aux anticorps à haut ou moyen risque et à la présence d’un cancer. ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-64",
+   "fichier": "chapters/G63/G63_pop2.html",
+   "ancre": "maximum atteint en 4 semaines au plus.",
+   "type": "notion clinique touchée (lourdeur)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : Même correction que dans le tableau du diagnostic différentiel. Formulation envisagée : « déficit maximal atteint en 4 semaines au plus. ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-65",
+   "fichier": "chapters/G63/G63_pop2.html",
+   "ancre": "Il n’est pas significatif dans le type 2",
+   "type": "notion clinique touchée (ambiguïté)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : Le pronom « Il » renvoie au type 1 ou au contrôle ; c’est l’effet qui est non significatif. Formulation envisagée : « Son effet n’est pas significatif dans le type 2 ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-66",
+   "fichier": "chapters/G63/G63_pop2.html",
+   "ancre": "Le nombre de patients à traiter est le nombre de patients à traiter pour obtenir un répondeur de plus qu’avec le placebo.",
+   "type": "notion clinique touchée (répétition)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : Définition tautologique par répétition ; l’abréviation NNT est donnée à sa première occurrence dans la fenêtre. Formulation envisagée : « Le nombre de patients à traiter (NNT) est le nombre de patients qu’il faut traiter pour obtenir un répondeur de plus qu’avec le placebo. ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
+  },
+  {
+   "id": "G63-LANG-RM-67",
+   "fichier": "chapters/G63/G63_pop2.html",
+   "ancre": "Début à 10 à 25 mg le soir, puis augmentation de 10 à 25 mg tous les 3 à 7 jours, jusqu’à 25 à 75 mg par jour",
+   "type": "notion clinique touchée (lourdeur)",
+   "constat": "Reformulation envisagée, non appliquée (correctif de traçabilité du lot 2) : elle touche une notion clinique (classification, population, portée, mesure statistique ou dose). Motif d’origine : Enchaînement de « à… à… jusqu’à… à » ; mêmes doses et mêmes intervalles. Formulation envisagée : « Début par 10 à 25 mg le soir, puis augmentation de 10 à 25 mg tous les 3 à 7 jours pour atteindre 25 à 75 mg par jour ». À trancher par l’audit MED.",
+   "statut": "renvoi_medical"
   }
  ],
  "observations_globales": [
@@ -532,7 +706,7 @@
   {
    "id": "G63-LANG-OG-05",
    "sujet": "Unités et nombres",
-   "detail": "Les propositions ne changent aucune valeur. Seule conversion : « deux à trois fois » en « 2 à 3 fois » dans l’encadré de piège de l’hydroxocobalamine (G63-LANG-d-05) et ajout de l’unité mL/min à la première tranche de clairance de la gabapentine : les décomptes de chiffres du texte visible passent de 10 à 11 (« 3 ») et de 11 à 12 (« 2 ») dans G63_d.html pour cette seule raison."
+   "detail": "Les propositions ne changent aucune valeur. Seule conversion : « deux à trois fois » en « 2 à 3 fois » dans l’encadré de piège de l’hydroxocobalamine ; les décomptes de chiffres du texte visible de G63_d.html passent de 10 à 11 (« 3 ») et de 11 à 12 (« 2 ») pour cette seule raison."
   },
   {
    "id": "G63-LANG-OG-06",
@@ -541,12 +715,14 @@
   }
  ],
  "lacunes": [
-  "Aucune source médicale n’a été relue : un audit linguistique ne vérifie pas les faits. Les 45 renvois médicaux sont posés sur la seule lecture du texte, sans avoir ouvert Sommer 2018, Feldman 2019, Julian 2019, Graus 2021, Adams 2016, Arnold 2016, Finnerup 2015, QualiCCare ni les informations professionnelles : « causalité / fréquence / chronologie » signifie « à confirmer dans la source », non « faux ».",
+  "Aucune source médicale n’a été relue : un audit linguistique ne vérifie pas les faits. Les 67 renvois médicaux sont posés sur la seule lecture du texte, sans avoir ouvert Sommer 2018, Feldman 2019, Julian 2019, Graus 2021, Adams 2016, Arnold 2016, Finnerup 2015, QualiCCare ni les informations professionnelles : « causalité / fréquence / chronologie » signifie « à confirmer dans la source », non « faux ».",
   "Aucun test en navigateur : l’effet des propositions sur l’affichage n’a pas été mesuré.",
   "build_medina.audit() n’a pas été exécuté ; la présence d’abréviations sans clé a été contrôlée par recherche textuelle.",
   "Les choix différés (espaces insécables, fibrillation) ne sont pas traités.",
   "Les figures n’ont pas été ouvertes en navigateur ; leur texte a été lu dans le SVG.",
-  "Pas de correcteur externe (Antidote, LanguageTool) : lecture intégrale et contrôles mécaniques seulement."
+  "Pas de correcteur externe (Antidote, LanguageTool) : lecture intégrale et contrôles mécaniques seulement.",
+  "Correctif de traçabilité : 22 propositions initiales touchant une notion clinique (classification, population, portée, mesure, dose) ont été retirées des propositions applicables et reclassées en renvois médicaux."
  ],
- "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+ "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée",
+ "worktree_base": "32416a2080e67537641040a81252dec0b3e6d137"
 }
