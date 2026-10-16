@@ -1,0 +1,137 @@
+{
+ "actor": "Claude",
+ "code": "G23",
+ "kind": "SEMIO",
+ "mission": "ALPHA77-CLAUDE-G23-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "reviewed_commit": "d654ab4109eb31bd8bb37e1dff2c463b4d4196f4",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/G23/G23_a.html": "01b75db8e5863831f254431e7fd39a1398abfdf060268eb0efdc9647b8b03d58",
+  "chapters/G23/G23_b.html": "a3ffac31116e26c0d12da0c8a7639e0e5d3038bbd7331d4126e54020f21901a6",
+  "chapters/G23/G23_c.html": "b7827cbbe754a4d47bfdf6cdc3e601f887384a1cf08b25488b1ef00e4367a128",
+  "chapters/G23/G23_d.html": "9a43c9eed9a053d4360d97207c4c5263ec335c6e8e3eec1f3762ab2313b6b56a",
+  "chapters/G23/G23_pop1.html": "3bdde9dad267fa2b1d73a9c938b4237369ba76d8fa17af55c114b01fbbb3c861",
+  "chapters/G23/G23_pop2.html": "b24db510e24e288d053faa6bdf2485bfc27da46bf31f93f955a0b46ff4c17379",
+  "glossary/g23.py": "7314efa443b4e96c72f9ea2b9d7517c0e65d4f7299f92151510b40d68878fa07"
+ },
+ "reviewed_files_sha256": {
+  "chapters/G23/G23_a.html": "59e01d6f0bea8df55e2618d5570fcd76f7c0bfd14e64d906c520227fd766aa26",
+  "chapters/G23/G23_b.html": "00164de4639bf1e02035325807e6a239c2137eb20b008f69b7451cde51468db8",
+  "chapters/G23/G23_c.html": "3e6300f10211ff1635bc1a772e72670e7e1849370998b7fb51685f5f2873329b",
+  "chapters/G23/G23_d.html": "031ec86c999988b5ea908db05ae399e6b1dbc86d9c328f28f9730543869a409c",
+  "chapters/G23/G23_pop1.html": "c691e722d0e2164be5b2670e0df07fb34ed425126f80a7f4b0ee14e0360635f9",
+  "chapters/G23/G23_pop2.html": "19e8f874a027a5f28278e04d564f2e745cf0ad296a7d18d74ec050edba65a44f",
+  "glossary/g23.py": "4d202922e8abb9e50f06b61b5a597e7523b6f07c7d00e70bf0d94f0dddca5686"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "requirement": "fundamental_analytical_semiology",
+ "tab_id": "g23-s-semio",
+ "source_path": "chapters/G23/G23_c.html",
+ "clinical_marker": {
+  "fichier": "chapters/G23/G23_a.html",
+  "selecteur": "section[data-semiology-clinical=\"G23\"]#g23-6-semiologie",
+  "dans_pA": true
+ },
+ "sections": {
+  "normal": "g23-sm-1",
+  "signs": "g23-sm-2",
+  "mechanisms": "g23-sm-3",
+  "examination": "g23-sm-4",
+  "interpretation": "g23-sm-5",
+  "differentials": "g23-sm-6",
+  "urgency": "g23-sm-7",
+  "limits": "g23-sm-8",
+  "sources": "g23-sm-9"
+ },
+ "grille_SEM": [
+  {
+   "critere": "SEM-01",
+   "resultat": "oui",
+   "preuve": "bouton #g23-tab-semio premier de .sci-bar, libellé exact, div#g23-s-semio"
+  },
+  {
+   "critere": "SEM-02",
+   "resultat": "oui",
+   "preuve": "premier h3 exact"
+  },
+  {
+   "critere": "SEM-03",
+   "resultat": "oui",
+   "preuve": "tests/audit_sciences.py : passed, errors [] ; figure 8 SVG non anatomique (viewBox 460, police 16) avec légende et sources"
+  },
+  {
+   "critere": "SEM-04",
+   "resultat": "oui",
+   "preuve": "normal avant pathologique (g23-sm-1)"
+  },
+  {
+   "critere": "SEM-05",
+   "resultat": "oui",
+   "preuve": "valeurs chiffrées avec population et source (tableau des symptômes, interprétation)"
+  },
+  {
+   "critere": "SEM-06",
+   "resultat": "oui",
+   "preuve": "urgences et drapeaux rouges (g23-sm-7), limites et divergences (g23-sm-8)"
+  },
+  {
+   "critere": "SEM-07",
+   "resultat": "oui",
+   "preuve": "bloc clinique dans pA, fenêtres g23-sm-* dans G23_pop2.html"
+  },
+  {
+   "critere": "SEM-08",
+   "resultat": "oui",
+   "preuve": "aucun Pareto sur les sections data-semiology"
+  }
+ ],
+ "findings": [
+  {
+   "id": "SEMIO-STRUCTURE",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Contrat structurel du sous-onglet.",
+   "verification": "Rejeu de la partie HTML de StarterGate.semiology (tools/starter_codex.py) sur les fichiers finaux : 6 data-s, g23-tab-semio premier, role=tab, aria-selected=true, aria-controls ; panneau unique dans pS, visible ; titre du premier îlot exact ; 9 sections data-semiology non vides avec h3 ; liens https dans les sources ; bloc clinique section#g23-6-semiologie dans pA (G23_a.html).",
+   "evidence": [
+    "Script hors dépôt semio_check.py (scratchpad g23p) : toutes les conditions vraies."
+   ]
+  },
+  {
+   "id": "SEMIO-RENDU",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Rendu réel.",
+   "verification": "Fragment S08 construit hors dépôt (build_front.py --fragment S08), Chromium 1194 au bureau (1366 px) et à 390 px : 115 déclencheurs data-k ouverts par onglet (pA 74, pE 12, pS 15, pP 14) sans « Fiche absente » ; aucune erreur JavaScript ; aucun débordement horizontal ; sous-onglet Sémiologie sélectionné et visible.",
+   "evidence": [
+    "revue/captures/P_G23_01 à P_G23_04 (bureau et mobile390)",
+    "Rendu et captures réalisés sur 2a2442da ; seule différence avec le commit relu d654ab41 : une phrase de G23_c.html (P-MED-08), contrôlée ensuite par test_v7 --static, audit_sciences et le rejeu du validateur."
+   ]
+  },
+  {
+   "id": "SEMIO-CONTENU",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "constat": "Contenu des sections.",
+   "verification": "Corrections P-MED-04 à P-MED-08 appliquées dans les sections differentials, mechanisms, signs et dans les fenêtres g23-sm-* ; seuils et valeurs vérifiés (P-MED-09).",
+   "evidence": [
+    "MDS 2022 (PMC9321158, texte intégral Europe PMC lu le 16.10.2026)",
+    "MDS 2017 (PMC5516529, texte intégral NCBI lu le 16.10.2026), tableaux 1 à 4",
+    "Revue d’Innsbruck 2023 (PMC10485100, texte intégral lu le 16.10.2026)"
+   ]
+  }
+ ],
+ "evidence": [
+  "Rejeu du validateur sémiologique sur les fichiers finaux.",
+  "Rendu Chromium bureau et 390 px.",
+  "tests/audit_sciences.py --base 523832d9 --codes G23 : passed."
+ ],
+ "conclusion": "Aucun constat bloquant pour la sémiologie fondamentale et analytique : premier sous-onglet sélectionné, suivi de cinq disciplines réelles ; rendu réel contrôlé au bureau et à 390 px.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}

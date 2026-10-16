@@ -1,6 +1,6 @@
 # MEDINA — système de couleurs premium (16 octobre 2026)
 
-**Périmètre.** Portail (`index.html`), accueils des 23 fragments, pages de catégorie, Leçons (quatre onglets), îlots, fenêtres explicatives, Navigo, mode Livre. Aucun contenu médical, glossaire, nosologie ni chapitre n’est modifié. Thème clair uniquement ; aucun sélecteur de thème n’est ajouté (vingt thèmes optionnels viendront d’un autre chantier, voir « Thèmes futurs »).
+**Périmètre.** Portail (`index.html`), accueils des 23 fragments, pages de catégorie, Leçons (quatre onglets), îlots, fenêtres explicatives, Navigo, mode Livre. Aucun contenu médical, glossaire, nosologie ni chapitre n’est modifié. Thème clair uniquement, par défaut « Bleu ciel pâle ravivé » ; aucun sélecteur de thème n’est ajouté (vingt thèmes optionnels viendront d’un autre chantier, voir « Thèmes futurs »).
 
 | Fichier | Rôle |
 |---|---|
@@ -19,6 +19,52 @@ Commandes :
 python3 docs/frontend/couleurs/palette.py --ecrire --doc --valider --rapport docs/frontend/couleurs/validation.txt
 python3 docs/frontend/couleurs/sonde.py --site <dossier construit> --fragment S08 --lesson G45
 ```
+
+## Thème par défaut « Bleu ciel pâle ravivé » — choix de Vial (16 octobre 2026)
+
+> Fond d’une pâleur extrême, couleurs et bords ravivés.
+
+Ce thème **remplace le papier neutre chaud** décrit plus bas (section « Vision photopique diurne », § 2), conservé comme historique. Les autres règles photopiques restent en vigueur : luminosité égale à rôle égal, texte courant quasi achromatique, encres bleues plafonnées, aucune couleur « néon ». Le ravivage est réel (valeurs OKLCH recalculées), sans filtre CSS ; l’ancre `#1f3428` (`--brand-700`) est inchangée.
+
+| Token | Avant (papier chaud) | Après (bleu ciel ravivé) | OKLCH après |
+|---|---|---|---|
+| `--n-surface` (cartes) | `#ffffff` | `#ffffff` | 1,000 0 — |
+| `--n-paper` (fond de page) | `#f8f7f4` | `#f2fdff` | 0,986 0,012 210 |
+| `--n-sunken` (encarts) | `#f2f0ed` | `#e7f7ff` | 0,967 0,020 229 |
+| `--n-line-soft` | `#e3e2df` | `#c8dbe7` | 0,880 0,026 235,5 |
+| `--n-line` (bordures) | `#d3d1ce` | `#90b0c4` | 0,740 0,045 235,5 |
+| `--n-line-strong` (contours, ≥ 3:1) | `#817e7b` | `#437592` (4,6 à 5,0:1) | 0,539 0,071 235,5 |
+| `--ink-1 / -2 / -3` | `#1a1917` `#3e3d3a` `#5f5d5a` | `#161a1d` `#383e42` `#585f63` | C ≤ 0,011, teinte 235,5 |
+| `--n-shadow` / `--n-veil` | papier chaud assombri (h 80) | papier ciel assombri (h 235,5) | 0,260 / 0,230, C 0,030 |
+
+Ravivage (chroma OKLCH, luminosités inchangées) :
+
+| Famille | Avant | Après | Variation |
+|---|---|---|---|
+| 23 repères `--cat-NN` / `--sp-<id>` (moyenne) | 0,116 (0,102–0,121) | 0,157 (0,102–0,180) | +35 % ; +50 % sur les teintes rouges, violettes et bleues ; ocres et cyans bornés par le gamut sRGB à L 0,52–0,58 |
+| Encres `-ink` (moyenne) | 0,096 | 0,123 | +28 % (encres bleues plafonnées à 0,100 au lieu de 0,080) |
+| Fonds `-tint` / sélections `-sel` | 0,015 / 0,028 | 0,019 / 0,036 | +27 % / +29 % |
+| Rampe de marque et jauges (`--brand-*`, `--gauge-*`, hors ancre) | 0,010–0,088 | 0,013–0,114 | × 1,30 |
+| Statuts `ok` / `prov` | 0,100 / 0,105 | 0,128 / 0,119 (teinte 62 → 56) | +28 % / +13 % (gamut) |
+| Débordement (rangs 24 à 32) | ≤ 0,11 | ≤ 0,14 | +27 % |
+
+Les 23 emplacements ont été recalculés par recuit (`recuit.py --chroma 0.18 --vivacite 1500 --semantique 4 --cvd 6.8 --toutes-paires 3.75 --colonnes 8.1`, graine 202) : le ravivage uniforme de l’ancienne palette faisait tomber la séparation daltonienne à 5,3 (échec) parce que les teintes bornées par le gamut ne suivaient pas. Résultat, au même niveau ou mieux sur chaque mesure :
+
+| Mesure (validateur dataviz, surface `#f2fdff`) | Avant | Après |
+|---|---|---|
+| Voisins contractuels, protanopie/deutéranopie (pire des 9 séquences) | 6,8 (WARN) | 7,4 (WARN ; 4 séquences sur 9 en PASS ≥ 8, contre 2) |
+| Voisins contractuels, vision normale | ≥ 15,6 | ≥ 15,6 |
+| Accueil en 2 et 3 colonnes, vision normale (informatif) | ≥ 7,1 | ≥ 8,2 |
+| Écart minimal toutes paires des 23 repères | 3,75 | 5,50 |
+| Contraste des repères sur le papier | ≥ 3,9:1 | ≥ 3,9:1 ; encres sur fonds teintés ≥ 7,1:1 |
+
+Contrôles du thème (`palette.py`, section « Vision photopique ») : surfaces L ≥ 0,96 et C ≤ 0,025 ; fonds, filets, ombre et fond « En préparation » dans la famille ciel (200° à 245°) ; filets ordonnés (`line-soft` > `line` > `line-strong` en luminosité) ; texte courant C ≤ 0,012. Les bornes TCP « ni bleuté » de l’ancien papier ne s’appliquent plus à ce thème, choisi bleuté.
+
+Point signalé : la cardiologie reçoit le **carmin** (357,5°, `#b32a6a`) et l’hématologie la **garance** (15,7°, `#ce3e55`) ; l’échange des deux fait échouer la séparation daltonienne de l’ordre de l’Accueil (ΔE 0,9), il n’est donc pas appliqué.
+
+### Cartes compactes (16 octobre 2026)
+
+Cartes de leçon (page de catégorie, recherche, « Les cours à explorer ») et cartes de catégorie : la hauteur suit le contenu (titre complet, code, statut « Lire le cours » / « En préparation », « Entités détaillées », étoile d’or, jauges), sans `min-height` ; seule la largeur diminue : 1 colonne sous 560 px, 2 jusqu’à 1 023 px, 3 de 1 024 à 1 599 px, 4 au-delà (« Les cours à explorer » reste à 3). Les jauges des cartes de catégorie tiennent sur deux lignes (libellé et compte, puis barre et pourcentage) ; l’étoile d’or est décalée sans agrandir la ligne. Règles : `engine/couleurs_premium.css`, section « Cartes compactes ».
 
 ## Vision photopique diurne — exigence de Vial (16 octobre 2026)
 
@@ -143,35 +189,35 @@ L / C / h : valeurs OKLCH mesurées sur l’hexadécimal arrondi. TCP : tempéra
 | Token | Valeur | L / C / h (OKLCH) | TCP · Duv | Rôle |
 |---|---|---|---|---|
 | `--n-surface` | `#ffffff` | 1.000 / 0.000 / — | 6505 K · +0.0033 | Cartes, îlots, fenêtres, Navigo (blanc D65) |
-| `--n-paper` | `#f8f7f4` | 0.976 / 0.004 / 91.4 | 6355 K · +0.0036 | Fond de page (surface de validation) |
-| `--n-sunken` | `#f2f0ed` | 0.956 / 0.005 / 78.3 | 6315 K · +0.0033 | Encarts, puits, jauges informatives, survol neutre |
-| `--n-line-soft` | `#e3e2df` | 0.913 / 0.004 / 91.4 | 6345 K · +0.0036 | Séparations décoratives (non interactives) |
-| `--n-line` | `#d3d1ce` | 0.861 / 0.005 / 78.3 | 6290 K · +0.0032 | Bordures de cartes, de tableaux et d’îlots |
-| `--n-line-strong` | `#817e7b` | 0.595 / 0.006 / 67.7 | 6110 K · +0.0027 | Contours interactifs (≥ 3:1 sur surface, papier et encart) |
-| `--ink-3` | `#5f5d5a` | 0.479 / 0.005 / 78.3 | 6075 K · +0.0032 | Texte atténué (≥ 4,5:1 sur encart) |
-| `--ink-2` | `#3e3d3a` | 0.360 / 0.005 / 91.5 | 6015 K · +0.0044 | Texte courant de l’interface |
-| `--ink-1` | `#1a1917` | 0.214 / 0.004 / 84.6 | 5825 K · +0.0040 | Encre primaire, titres de l’interface |
-| `--n-shadow` | `#211f1b` | 0.240 / 0.008 / 84.6 | 5420 K · +0.0046 | Couleur des ombres (papier assombri) |
-| `--n-veil` | `rgb(29 26 22 / 0.55)` | oklch(0.220 0.008 80 / 0.55) |  | Voile des fenêtres (papier assombri, 55 %) |
-| `--brand-50` | `#f1f9f4` | 0.975 / 0.011 / 158.8 |  | Rampe de la marque |
-| `--brand-100` | `#e2f3e8` | 0.949 / 0.023 / 157.6 |  | Rampe de la marque |
-| `--brand-200` | `#c8e5d3` | 0.896 / 0.039 / 158.3 |  | Rampe de la marque |
-| `--brand-300` | `#a2cdb3` | 0.810 / 0.058 / 158.3 |  | Rampe de la marque |
-| `--brand-400` | `#71aa89` | 0.689 / 0.077 / 158.2 |  | Rampe de la marque |
-| `--brand-500` | `#488a67` | 0.579 / 0.087 / 158.8 |  | Rampe de la marque |
-| `--brand-600` | `#2d684a` | 0.469 / 0.079 / 158.9 |  | Rampe de la marque |
+| `--n-paper` | `#f2fdff` | 0.986 / 0.012 / 209.8 | 6975 K · +0.0063 | Fond de page, bleu ciel d’une pâleur extrême (surface de validation) |
+| `--n-sunken` | `#e7f7ff` | 0.967 / 0.020 / 229.0 | 7475 K · +0.0068 | Encarts, puits, jauges informatives, survol neutre |
+| `--n-line-soft` | `#c8dbe7` | 0.881 / 0.026 / 235.4 | 8005 K · +0.0074 | Séparations décoratives (non interactives), même teinte que le filet |
+| `--n-line` | `#90b0c4` | 0.740 / 0.045 / 235.7 | 10265 K · +0.0118 | Bordures de cartes, de tableaux et d’îlots (ravivées) |
+| `--n-line-strong` | `#437592` | 0.539 / 0.071 / 235.6 | 15000 K · +0.0238 | Contours interactifs (≥ 3:1 sur surface, papier et encart) |
+| `--ink-3` | `#585f63` | 0.481 / 0.011 / 232.6 | 7590 K · +0.0067 | Texte atténué (≥ 4,5:1 sur encart) |
+| `--ink-2` | `#383e42` | 0.360 / 0.011 / 236.9 | 7995 K · +0.0071 | Texte courant de l’interface |
+| `--ink-1` | `#161a1d` | 0.215 / 0.008 / 240.3 | 8635 K · +0.0077 | Encre primaire, titres de l’interface |
+| `--n-shadow` | `#152631` | 0.259 / 0.031 / 238.0 | 15000 K · +0.0199 | Couleur des ombres (papier ciel assombri) |
+| `--n-veil` | `rgb(14 31 41 / 0.55)` | oklch(0.230 0.030 235.5 / 0.55) |  | Voile des fenêtres (papier ciel assombri, 55 %) |
+| `--brand-50` | `#f0faf3` | 0.976 / 0.014 / 155.6 |  | Rampe de la marque |
+| `--brand-100` | `#dff4e7` | 0.948 / 0.028 / 158.7 |  | Rampe de la marque |
+| `--brand-200` | `#c2e7d0` | 0.895 / 0.050 / 158.0 |  | Rampe de la marque |
+| `--brand-300` | `#98d0af` | 0.810 / 0.074 / 158.4 |  | Rampe de la marque |
+| `--brand-400` | `#60ae84` | 0.689 / 0.100 / 158.7 |  | Rampe de la marque |
+| `--brand-500` | `#2f8e60` | 0.579 / 0.114 / 158.4 |  | Rampe de la marque |
+| `--brand-600` | `#0f6c44` | 0.470 / 0.104 / 158.3 |  | Rampe de la marque |
 | `--brand-700` | `#1f3428` | 0.303 / 0.035 / 158.4 |  | Rampe de la marque |
-| `--brand-800` | `#122219` | 0.234 / 0.028 / 158.7 |  | Rampe de la marque |
-| `--status-ok` | `#296a3b` | 0.470 / 0.100 / 149.9 |  | Statut « Disponible » (disque plein) |
-| `--status-ok-bg` | `#e7f8e9` | 0.962 / 0.027 / 148.8 |  | Fond du statut |
-| `--status-prep` | `#5f5d5a` | 0.479 / 0.005 / 78.3 |  | Statut « En préparation » (cercle vide) |
-| `--status-prep-bg` | `#f2f0ed` | 0.956 / 0.005 / 78.3 |  | Fond du statut |
-| `--status-prov` | `#8a5111` | 0.491 / 0.105 / 62.3 |  | Statut « Provisoire » (demi-disque) |
-| `--status-prov-bg` | `#fef1db` | 0.963 / 0.032 / 81.0 |  | Fond du statut |
-| `--gauge-400` | `#71aa89` | 0.689 / 0.077 / 158.2 |  | Rampe séquentielle des jauges |
-| `--gauge-500` | `#488a67` | 0.579 / 0.087 / 158.8 |  | Rampe séquentielle des jauges |
-| `--gauge-600` | `#2d684a` | 0.469 / 0.079 / 158.9 |  | Rampe séquentielle des jauges |
-| `--gauge-700` | `#234c36` | 0.380 / 0.060 / 158.2 |  | Rampe séquentielle des jauges |
+| `--brand-800` | `#0e2318` | 0.235 / 0.035 / 159.2 |  | Rampe de la marque |
+| `--status-ok` | `#046e30` | 0.471 / 0.129 / 149.8 |  | Statut « Disponible » (disque plein) |
+| `--status-ok-bg` | `#e3f9e7` | 0.961 / 0.033 / 150.9 |  | Fond du statut |
+| `--status-prep` | `#585f63` | 0.481 / 0.011 / 232.6 |  | Statut « En préparation » (cercle vide) |
+| `--status-prep-bg` | `#e7f7ff` | 0.967 / 0.020 / 229.0 |  | Fond du statut |
+| `--status-prov` | `#924b02` | 0.491 / 0.119 / 56.0 |  | Statut « Provisoire » (demi-disque) |
+| `--status-prov-bg` | `#fff1d9` | 0.963 / 0.035 / 81.3 |  | Fond du statut |
+| `--gauge-400` | `#60ae84` | 0.689 / 0.100 / 158.7 |  | Rampe séquentielle des jauges |
+| `--gauge-500` | `#2f8e60` | 0.579 / 0.114 / 158.4 |  | Rampe séquentielle des jauges |
+| `--gauge-600` | `#0f6c44` | 0.470 / 0.104 / 158.3 |  | Rampe séquentielle des jauges |
+| `--gauge-700` | `#124f32` | 0.381 / 0.079 / 158.0 |  | Rampe séquentielle des jauges |
 | `--gold-100` | `#fff3ce` | 0.964 / 0.050 / 92.2 |  | Étoile d’or, Pareto |
 | `--gold-300` | `#f8d376` | 0.879 / 0.120 / 88.2 |  | Étoile d’or, Pareto |
 | `--gold-500` | `#e1a52c` | 0.760 / 0.145 / 79.7 |  | Étoile d’or, Pareto |
@@ -217,38 +263,38 @@ Chaque emplacement `--cat-NN` a ses variantes `--cat-NN-ink` (texte), `--cat-NN-
 
 | N° | Nom | Repère | L / C / h | Encre | L / C / h encre | Fond | Repère / papier | Encre / fond | Spécialité |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | moutarde | `#786a02` | 0.522 / 0.108 / 100.1 | `#5b5000` | 0.429 / 0.089 / 100.2 | `#f8f6eb` | 5.08:1 | 7.47:1 | `--sp-s10` R-14-Rhumatologie et orthopédie |
-| 2 | petrole | `#017799` | 0.531 / 0.102 / 226.5 | `#085872` | 0.430 / 0.080 / 227.3 | `#ecf8fe` | 4.78:1 | 7.33:1 | `--sp-s12` O-17-Oto-rhino-laryngologie et médecine bucco-dentaire |
-| 3 | vieux-rose | `#b55868` | 0.578 / 0.121 / 10.8 | `#842d40` | 0.430 / 0.120 / 10.5 | `#fff4f5` | 4.30:1 | 8.03:1 | `--sp-s11` D-16-Dermatologie |
-| 4 | lagon | `#0288a0` | 0.578 / 0.102 / 216.0 | `#005a6a` | 0.430 / 0.076 / 215.2 | `#edfbfe` | 3.90:1 | 7.43:1 | `--sp-s04` N-07-Néphrologie |
-| 5 | prune | `#9b4974` | 0.522 / 0.121 / 349.4 | `#7d2e59` | 0.429 / 0.120 / 349.6 | `#fef2f7` | 5.45:1 | 8.00:1 | `--sp-s14` G-10-Gynécologie et sénologie |
-| 6 | olive | `#837e0e` | 0.579 / 0.120 / 106.7 | `#565300` | 0.431 / 0.093 / 107.3 | `#f9f9ed` | 3.96:1 | 7.52:1 | `--sp-t2` M-12-Médecine des âges de la vie |
-| 7 | amethyste | `#7158a6` | 0.521 / 0.121 / 296.8 | `#544676` | 0.430 / 0.079 / 296.3 | `#f7f4ff` | 5.37:1 | 7.69:1 | `--sp-s15` U-15-Urologie et andrologie |
-| 8 | ambre | `#8e5f01` | 0.523 / 0.110 / 75.2 | `#6c4700` | 0.429 / 0.091 / 75.1 | `#fcf5eb` | 5.18:1 | 7.64:1 | `--sp-t4` O-09-Oncologie, génétique médicale et soins palliatifs |
-| 9 | bleuet | `#2e72b1` | 0.540 / 0.120 / 249.6 | `#2a527a` | 0.429 / 0.081 / 250.2 | `#eff8ff` | 4.71:1 | 7.56:1 | `--sp-s02` P-02-Pneumologie |
-| 10 | brique | `#a34b3c` | 0.522 / 0.120 / 31.4 | `#853023` | 0.430 / 0.120 / 31.1 | `#fff2f0` | 5.40:1 | 7.86:1 | `--sp-s01` C-01-Cardiologie |
-| 11 | jade | `#058d7f` | 0.578 / 0.102 / 182.7 | `#005d54` | 0.430 / 0.076 / 183.5 | `#edfbf9` | 3.83:1 | 7.34:1 | `--sp-s03` G-04-Gastroentérologie et hépatologie |
-| 12 | orchidee | `#8f4d8a` | 0.521 / 0.120 / 330.0 | `#73336e` | 0.430 / 0.120 / 330.5 | `#fcf2fb` | 5.45:1 | 7.92:1 | `--sp-t7` E-22-Éthique médicale, droit et communication |
-| 13 | emeraude | `#019069` | 0.579 / 0.120 / 165.7 | `#005f44` | 0.430 / 0.090 / 165.7 | `#effbf5` | 3.77:1 | 7.27:1 | `--sp-t5` D-20-Diagnostic clinique et examens complémentaires |
-| 14 | pervenche | `#716bba` | 0.569 / 0.120 / 285.4 | `#4c497a` | 0.431 / 0.080 / 285.3 | `#f6f6ff` | 4.34:1 | 7.69:1 | `--sp-s08` N-05-Neurologie |
-| 15 | ocre | `#997301` | 0.578 / 0.118 / 85.4 | `#654b00` | 0.429 / 0.088 / 85.7 | `#fcf7ed` | 4.08:1 | 7.68:1 | `--sp-s05` E-06-Endocrinologie et métabolisme |
-| 16 | saphir | `#457bbf` | 0.577 / 0.120 / 255.1 | `#30517b` | 0.430 / 0.080 / 255.1 | `#f1f8ff` | 4.05:1 | 7.58:1 | `--sp-s13` O-18-Ophtalmologie |
-| 17 | rouille | `#9c5410` | 0.522 / 0.120 / 56.6 | `#793e00` | 0.430 / 0.104 / 57.1 | `#fef4ec` | 5.31:1 | 7.74:1 | `--sp-t3` M-19-Médecine d’urgence, traumatologie et toxicologie |
-| 18 | malachite | `#027c5d` | 0.521 / 0.105 / 167.7 | `#005f46` | 0.431 / 0.088 / 167.3 | `#edf9f4` | 4.85:1 | 7.14:1 | `--sp-t6` M-21-Médecine de premier recours et santé publique |
-| 19 | rose | `#ad5a85` | 0.579 / 0.120 / 349.1 | `#7d2f5a` | 0.430 / 0.119 / 349.1 | `#fff4f9` | 4.28:1 | 8.06:1 | `--sp-s06` H-08-Hématologie |
-| 20 | sapin | `#418d4f` | 0.579 / 0.120 / 147.8 | `#0b6125` | 0.431 / 0.120 / 147.7 | `#f1fbf2` | 3.81:1 | 7.21:1 | `--sp-t1` I-03-Infectiologie |
-| 21 | violet | `#8b66b2` | 0.579 / 0.119 / 305.4 | `#603b84` | 0.431 / 0.121 / 305.3 | `#faf5ff` | 4.22:1 | 7.97:1 | `--sp-s09` P-23-Psychiatrie et psychothérapie |
-| 22 | cuivre | `#a06504` | 0.558 / 0.120 / 69.7 | `#704500` | 0.430 / 0.093 / 69.7 | `#fef6ed` | 4.50:1 | 7.72:1 | `--sp-s16` O-11-Obstétrique et néonatologie |
-| 23 | indigo | `#5562ae` | 0.522 / 0.120 / 274.2 | `#434c7b` | 0.431 / 0.079 / 274.4 | `#f3f5ff` | 5.23:1 | 7.55:1 | `--sp-s07` I-13-Immunologie et allergologie |
-| 24 | debord-24 | `#9165a7` | 0.578 / 0.110 / 313.8 | `#653b7a` | 0.431 / 0.110 / 313.4 | `#fdf6ff` | 4.24:1 | 8.05:1 | débordement |
-| 25 | debord-25 | `#6e6e0b` | 0.521 / 0.110 / 109.7 | `#545300` | 0.429 / 0.093 / 109.0 | `#f8f8ed` | 5.03:1 | 7.51:1 | débordement |
-| 26 | debord-26 | `#067ca6` | 0.550 / 0.110 / 231.3 | `#115774` | 0.430 / 0.080 / 231.6 | `#effaff` | 4.41:1 | 7.50:1 | débordement |
-| 27 | debord-27 | `#ae5c75` | 0.578 / 0.110 / 1.7 | `#7e314c` | 0.429 / 0.110 / 1.0 | `#fff5f8` | 4.27:1 | 8.09:1 | débordement |
-| 28 | debord-28 | `#42793b` | 0.522 / 0.110 / 141.5 | `#275e20` | 0.430 / 0.110 / 141.5 | `#f2faf1` | 4.86:1 | 7.28:1 | débordement |
-| 29 | debord-29 | `#6469b1` | 0.549 / 0.111 / 279.0 | `#474a7b` | 0.429 / 0.081 / 279.8 | `#f6f7ff` | 4.67:1 | 7.76:1 | débordement |
-| 30 | debord-30 | `#aa6730` | 0.578 / 0.111 / 57.3 | `#783e00` | 0.429 / 0.103 / 57.6 | `#fff7ef` | 4.18:1 | 7.96:1 | débordement |
-| 31 | debord-31 | `#007c62` | 0.522 / 0.102 / 171.4 | `#005e4a` | 0.429 / 0.083 / 171.7 | `#eefbf6` | 4.83:1 | 7.32:1 | débordement |
-| 32 | debord-32 | `#95588f` | 0.549 / 0.110 / 330.6 | `#71366c` | 0.431 / 0.111 / 330.6 | `#fef5fd` | 4.82:1 | 8.05:1 | débordement |
+| 1 | sapin | `#089327` | 0.577 / 0.180 / 144.9 | `#006216` | 0.431 / 0.136 / 145.0 | `#f0fbf0` | 3.89:1 | 7.16:1 | `--sp-t1` I-03-Infectiologie |
+| 2 | azur | `#0382bf` | 0.578 / 0.132 / 239.9 | `#005580` | 0.429 / 0.099 / 240.4 | `#edfaff` | 4.10:1 | 7.55:1 | `--sp-s12` O-17-Oto-rhino-laryngologie et médecine bucco-dentaire |
+| 3 | framboise | `#c73e79` | 0.577 / 0.180 / 358.0 | `#93004f` | 0.431 / 0.175 / 358.3 | `#fff3f8` | 4.61:1 | 8.25:1 | `--sp-s11` D-16-Dermatologie |
+| 4 | lagon | `#0288a0` | 0.578 / 0.102 / 216.0 | `#005a6a` | 0.430 / 0.076 / 215.2 | `#eafbff` | 4.03:1 | 7.39:1 | `--sp-s04` N-07-Néphrologie |
+| 5 | carmin | `#b32a6a` | 0.521 / 0.180 / 357.3 | `#920050` | 0.429 / 0.175 / 357.5 | `#fff1f6` | 5.86:1 | 8.20:1 | `--sp-s01` C-01-Cardiologie |
+| 6 | olive | `#706d01` | 0.521 / 0.112 / 107.8 | `#555300` | 0.430 / 0.093 / 108.1 | `#f7f7e9` | 5.23:1 | 7.41:1 | `--sp-t2` M-12-Médecine des âges de la vie |
+| 7 | amethyste | `#875cd5` | 0.579 / 0.179 / 296.8 | `#564280` | 0.430 / 0.101 / 296.8 | `#f9f5ff` | 4.48:1 | 7.86:1 | `--sp-s15` U-15-Urologie et andrologie |
+| 8 | ocre | `#987401` | 0.578 / 0.118 / 86.8 | `#654c00` | 0.431 / 0.088 / 86.8 | `#fdf7ea` | 4.19:1 | 7.60:1 | `--sp-s05` E-06-Endocrinologie et métabolisme |
+| 9 | outremer | `#5a68df` | 0.570 / 0.180 / 274.2 | `#404a86` | 0.431 / 0.100 / 274.3 | `#f3f7ff` | 4.52:1 | 7.70:1 | `--sp-s07` I-13-Immunologie et allergologie |
+| 10 | garance | `#ce3e55` | 0.579 / 0.180 / 15.8 | `#97002e` | 0.430 / 0.172 / 15.8 | `#fff3f3` | 4.56:1 | 8.22:1 | `--sp-s06` H-08-Hématologie |
+| 11 | jade | `#028d81` | 0.578 / 0.102 / 184.4 | `#005d55` | 0.430 / 0.076 / 184.7 | `#eafcf9` | 3.95:1 | 7.34:1 | `--sp-s03` G-04-Gastroentérologie et hépatologie |
+| 12 | orchidee | `#a2399c` | 0.530 / 0.181 / 330.1 | `#82147d` | 0.431 / 0.181 / 330.3 | `#fef2fc` | 5.63:1 | 8.24:1 | `--sp-t7` E-22-Éthique médicale, droit et communication |
+| 13 | malachite | `#007f5f` | 0.530 / 0.108 / 167.6 | `#005f46` | 0.431 / 0.088 / 167.3 | `#ebfbf4` | 4.82:1 | 7.21:1 | `--sp-t6` M-21-Médecine de premier recours et santé publique |
+| 14 | violet | `#8245ba` | 0.521 / 0.179 / 305.0 | `#68279c` | 0.430 / 0.179 / 305.2 | `#f9f3ff` | 5.78:1 | 8.18:1 | `--sp-s09` P-23-Psychiatrie et psychothérapie |
+| 15 | cuivre | `#b06401` | 0.577 / 0.133 / 61.7 | `#764100` | 0.431 / 0.100 / 61.6 | `#fff5eb` | 4.34:1 | 7.72:1 | `--sp-s16` O-11-Obstétrique et néonatologie |
+| 16 | bleuet | `#007add` | 0.578 / 0.176 / 252.5 | `#215185` | 0.429 / 0.101 / 252.8 | `#eff9ff` | 4.20:1 | 7.62:1 | `--sp-s02` P-02-Pneumologie |
+| 17 | corail | `#cd4517` | 0.577 / 0.180 / 37.1 | `#8d2700` | 0.430 / 0.143 / 37.2 | `#fff4ef` | 4.55:1 | 8.02:1 | `--sp-t3` M-19-Médecine d’urgence, traumatologie et toxicologie |
+| 18 | emeraude | `#02915d` | 0.579 / 0.132 / 159.3 | `#00603c` | 0.431 / 0.099 / 159.3 | `#eefcf3` | 3.89:1 | 7.25:1 | `--sp-t5` D-20-Diagnostic clinique et examens complémentaires |
+| 19 | rose | `#bb449a` | 0.578 / 0.180 / 340.3 | `#8a0a6d` | 0.431 / 0.180 / 340.6 | `#fff3fc` | 4.60:1 | 8.31:1 | `--sp-s14` G-10-Gynécologie et sénologie |
+| 20 | prairie | `#008237` | 0.530 / 0.149 / 149.2 | `#006127` | 0.430 / 0.121 / 149.2 | `#eefaef` | 4.77:1 | 7.14:1 | `--sp-s10` R-14-Rhumatologie et orthopédie |
+| 21 | saphir | `#0365ce` | 0.522 / 0.181 / 256.6 | `#285086` | 0.430 / 0.101 / 256.6 | `#eef7ff` | 5.40:1 | 7.51:1 | `--sp-s13` O-18-Ophtalmologie |
+| 22 | brique | `#ba3102` | 0.522 / 0.180 / 35.5 | `#8f2300` | 0.430 / 0.149 / 35.6 | `#fff2ed` | 5.75:1 | 7.96:1 | `--sp-t4` O-09-Oncologie, génétique médicale et soins palliatifs |
+| 23 | pervenche | `#6352cb` | 0.523 / 0.180 / 284.7 | `#4b4684` | 0.430 / 0.100 / 285.0 | `#f4f4ff` | 5.63:1 | 7.67:1 | `--sp-s08` N-05-Neurologie |
+| 24 | debord-24 | `#975db3` | 0.577 / 0.141 / 313.8 | `#6a3284` | 0.429 / 0.139 / 313.6 | `#fef6ff` | 4.47:1 | 8.26:1 | débordement |
+| 25 | debord-25 | `#6e6e02` | 0.521 / 0.113 / 109.8 | `#545300` | 0.429 / 0.093 / 109.0 | `#f8f9ea` | 5.20:1 | 7.55:1 | débordement |
+| 26 | debord-26 | `#017ca6` | 0.550 / 0.111 / 231.0 | `#005777` | 0.429 / 0.088 / 232.0 | `#ecfbff` | 4.57:1 | 7.53:1 | débordement |
+| 27 | debord-27 | `#ba5174` | 0.578 / 0.140 / 1.5 | `#89234b` | 0.431 / 0.140 / 1.3 | `#fff4f8` | 4.49:1 | 8.13:1 | débordement |
+| 28 | debord-28 | `#327c29` | 0.521 / 0.139 / 141.5 | `#116104` | 0.430 / 0.140 / 141.5 | `#f0fbef` | 5.00:1 | 7.22:1 | débordement |
+| 29 | debord-29 | `#6265c1` | 0.549 / 0.141 / 279.3 | `#454885` | 0.430 / 0.100 / 279.2 | `#f5f7ff` | 4.88:1 | 7.79:1 | débordement |
+| 30 | debord-30 | `#b46102` | 0.578 / 0.138 / 58.1 | `#783e00` | 0.429 / 0.103 / 57.6 | `#fff6ed` | 4.36:1 | 7.90:1 | débordement |
+| 31 | debord-31 | `#007c62` | 0.522 / 0.102 / 171.4 | `#005e4a` | 0.429 / 0.083 / 171.7 | `#ebfcf5` | 4.99:1 | 7.32:1 | débordement |
+| 32 | debord-32 | `#9e4f97` | 0.550 / 0.140 / 330.7 | `#782b73` | 0.430 / 0.141 / 330.3 | `#fff4fe` | 5.04:1 | 8.20:1 | débordement |
 
 <!-- </tokens-doc> -->
 

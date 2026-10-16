@@ -1,0 +1,415 @@
+{
+ "mission": "ALPHA77-CLAUDE-G23-INTEGRATE",
+ "phase": 1,
+ "agent": "W",
+ "code": "G23",
+ "date": "2026-10-16",
+ "base": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "empreintes_sha256": {
+  "chapters/G23/G23_a.html": "1dacbcdd51596e179cfc160163c45157c25409ff977fae073cbffedafecc5eba",
+  "chapters/G23/G23_b.html": "f4b5bc3b624cf31ea25d58cd9838eab6055b8be5a9574534c5cda4a05a6a3259",
+  "chapters/G23/G23_c.html": "14da85fc1c6e88c865a386a0af85c2e4e83ec6d0c28a14fc570ca889564774fe",
+  "chapters/G23/G23_d.html": "33426092a4b3d543090434108606f6583f8c6056f82d17284df6d0c8240dd731",
+  "chapters/G23/G23_pop1.html": "c691e722d0e2164be5b2670e0df07fb34ed425126f80a7f4b0ee14e0360635f9",
+  "chapters/G23/G23_pop2.html": "c0d91a7147368113745e2f2c0b703cd0bc70a709a3251a43ce34c8e03cdb66de",
+  "glossary/g23.py": "4d202922e8abb9e50f06b61b5a597e7523b6f07c7d00e70bf0d94f0dddca5686"
+ },
+ "controles": {
+  "test_v7_static": {
+   "commande": "python3 test_v7.py --static G23",
+   "resultat": "OK",
+   "detail": "G23 mots 28856 fenêtres 71 quiz 8 pareto 13\nOK"
+  },
+  "build_medina_audit": {
+   "resultat": "{} (appelé par test_v7 --static ; abréviations couvertes après ajout de MAPT et PSP-PI)"
+  },
+  "audit_sciences": {
+   "commande": "python3 tests/audit_sciences.py --base 523832d9ef6097607d3443f4398deee9cd0add11 --codes G23",
+   "resultat": "passed",
+   "sortie": {
+    "result": "passed",
+    "courses": 1,
+    "totals": {
+     "before": {
+      "words": 1182,
+      "figures": 5,
+      "disciplines": 5
+     },
+     "after": {
+      "words": 6589,
+      "figures": 6,
+      "disciplines": 6
+     }
+    },
+    "errors": []
+   }
+  },
+  "validateur_semiologique": {
+   "commande": "rejeu de la structure de tools/starter_codex.py (StarterGate.semiology, partie HTML) sur les fichiers finaux",
+   "resultat": "passed",
+   "detail": {
+    "premier_sous_onglet_selectionne_6_data_s": true,
+    "data_s": [
+     "g23-s-semio",
+     "g23-s-anat",
+     "g23-s-histo",
+     "g23-s-physio",
+     "g23-s-bioch",
+     "g23-s-gene"
+    ],
+    "panneau_unique_dans_pS": true,
+    "panneau_visible": true,
+    "titre_premier_ilot": true,
+    "neuf_sections_non_vides": true,
+    "sources_liees": true,
+    "semiologie_clinique_dans_pA": true
+   }
+  },
+  "construction": {
+   "commande": "MEDINA_OUT=<scratchpad>/w_build_g23 python3 build_front.py --fragment S08",
+   "sha256": "663539bb611b0d102cc6b22a9868cbad89a9455c2decb9132c9d65cbba1ff960",
+   "hors_depot": true
+  },
+  "rendu_chromium": {
+   "navigateur": "/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
+   "url": "file://…/MEDINA_S08_nerveux.html#/entry/G23",
+   "resultat": "passed",
+   "controles": {
+    "bureau.cours_affiche": {
+     "ok": true
+    },
+    "bureau.bloc_clinique_present": {
+     "ok": true
+    },
+    "bureau.bloc_clinique_visible": {
+     "ok": true
+    },
+    "bureau.six_data_s": {
+     "ok": true,
+     "detail": 6
+    },
+    "bureau.premier_bouton_semio": {
+     "ok": true,
+     "detail": "Sémiologie fondamentale et analytique"
+    },
+    "bureau.aria_selected": {
+     "ok": true,
+     "detail": [
+      [
+       "g23-s-semio",
+       "true"
+      ],
+      [
+       "g23-s-anat",
+       "false"
+      ],
+      [
+       "g23-s-histo",
+       "false"
+      ],
+      [
+       "g23-s-physio",
+       "false"
+      ],
+      [
+       "g23-s-bioch",
+       "false"
+      ],
+      [
+       "g23-s-gene",
+       "false"
+      ]
+     ]
+    },
+    "bureau.sous_onglet_visible_par_defaut": {
+     "ok": true,
+     "detail": [
+      "g23-s-semio",
+      false
+     ]
+    },
+    "bureau.autres_disciplines_masquees": {
+     "ok": true,
+     "detail": [
+      [
+       "g23-s-semio",
+       false
+      ],
+      [
+       "g23-s-anat",
+       true
+      ],
+      [
+       "g23-s-histo",
+       true
+      ],
+      [
+       "g23-s-physio",
+       true
+      ],
+      [
+       "g23-s-bioch",
+       true
+      ],
+      [
+       "g23-s-gene",
+       true
+      ]
+     ]
+    },
+    "bureau.titre_exact": {
+     "ok": true,
+     "detail": "Pour la leçon : quelle est la sémiologie fondamentale et analytique ?"
+    },
+    "bureau.neuf_sections": {
+     "ok": true,
+     "detail": [
+      [
+       "normal",
+       352
+      ],
+      [
+       "signs",
+       924
+      ],
+      [
+       "mechanisms",
+       529
+      ],
+      [
+       "examination",
+       966
+      ],
+      [
+       "interpretation",
+       555
+      ],
+      [
+       "differentials",
+       537
+      ],
+      [
+       "urgency",
+       354
+      ],
+      [
+       "limits",
+       247
+      ],
+      [
+       "sources",
+       373
+      ]
+     ]
+    },
+    "bureau.figure8_lisible": {
+     "ok": true,
+     "detail": {
+      "w": 717.0625,
+      "px": 24.941304347826087
+     }
+    },
+    "bureau.bascule_discipline": {
+     "ok": true,
+     "detail": [
+      true,
+      false
+     ]
+    },
+    "bureau.retour_semio": {
+     "ok": true
+    },
+    "bureau.fenetre_g23-sm-ho": {
+     "ok": true,
+     "detail": "NOR­MAL\n\nDe­bout, le ba­ro­ré­flexe ac­cé­lère le cœur et res­serre les vais­seaux ; la pres­sion sys­to­lique ne chute "
+    },
+    "bureau.toutes_fenetres": {
+     "ok": true,
+     "detail": {
+      "cles_distinctes": 71,
+      "echecs": []
+     }
+    },
+    "bureau.aucun_lien_orphelin": {
+     "ok": true,
+     "detail": {
+      "orphelins": [],
+      "fenetres_definies": 71
+     }
+    },
+    "bureau.erreurs_javascript": {
+     "ok": true,
+     "detail": []
+    },
+    "mobile390.cours_affiche": {
+     "ok": true
+    },
+    "mobile390.bloc_clinique_present": {
+     "ok": true
+    },
+    "mobile390.bloc_clinique_visible": {
+     "ok": true
+    },
+    "mobile390.six_data_s": {
+     "ok": true,
+     "detail": 6
+    },
+    "mobile390.premier_bouton_semio": {
+     "ok": true,
+     "detail": "Sémiologie fondamentale et analytique"
+    },
+    "mobile390.aria_selected": {
+     "ok": true,
+     "detail": [
+      [
+       "g23-s-semio",
+       "true"
+      ],
+      [
+       "g23-s-anat",
+       "false"
+      ],
+      [
+       "g23-s-histo",
+       "false"
+      ],
+      [
+       "g23-s-physio",
+       "false"
+      ],
+      [
+       "g23-s-bioch",
+       "false"
+      ],
+      [
+       "g23-s-gene",
+       "false"
+      ]
+     ]
+    },
+    "mobile390.sous_onglet_visible_par_defaut": {
+     "ok": true,
+     "detail": [
+      "g23-s-semio",
+      false
+     ]
+    },
+    "mobile390.autres_disciplines_masquees": {
+     "ok": true,
+     "detail": [
+      [
+       "g23-s-semio",
+       false
+      ],
+      [
+       "g23-s-anat",
+       true
+      ],
+      [
+       "g23-s-histo",
+       true
+      ],
+      [
+       "g23-s-physio",
+       true
+      ],
+      [
+       "g23-s-bioch",
+       true
+      ],
+      [
+       "g23-s-gene",
+       true
+      ]
+     ]
+    },
+    "mobile390.titre_exact": {
+     "ok": true,
+     "detail": "Pour la leçon : quelle est la sémiologie fondamentale et analytique ?"
+    },
+    "mobile390.neuf_sections": {
+     "ok": true,
+     "detail": [
+      [
+       "normal",
+       352
+      ],
+      [
+       "signs",
+       924
+      ],
+      [
+       "mechanisms",
+       529
+      ],
+      [
+       "examination",
+       966
+      ],
+      [
+       "interpretation",
+       555
+      ],
+      [
+       "differentials",
+       537
+      ],
+      [
+       "urgency",
+       354
+      ],
+      [
+       "limits",
+       247
+      ],
+      [
+       "sources",
+       373
+      ]
+     ]
+    },
+    "mobile390.figure8_lisible": {
+     "ok": true,
+     "detail": {
+      "w": 295.96875,
+      "px": 10.294565217391304
+     }
+    },
+    "mobile390.bascule_discipline": {
+     "ok": true,
+     "detail": [
+      true,
+      false
+     ]
+    },
+    "mobile390.retour_semio": {
+     "ok": true
+    },
+    "mobile390.fenetre_g23-sm-ho": {
+     "ok": true,
+     "detail": "NOR­MAL\n\nDe­bout, le ba­ro­ré­flexe ac­cé­lère le cœur et res­serre les vais­seaux ; la pres­sion sys­to­lique ne chute "
+    },
+    "mobile390.erreurs_javascript": {
+     "ok": true,
+     "detail": []
+    }
+   }
+  },
+  "captures": [
+   "G23_01_ouverture_bureau.png",
+   "G23_02_bloc_clinique_bureau.png",
+   "G23_03_sous_onglet_semiologie_bureau.png",
+   "G23_04_figure8_bureau.png",
+   "G23_05_fenetre_semiologie_bureau.png",
+   "G23_06_ouverture_mobile390.png",
+   "G23_07_bloc_clinique_mobile390.png",
+   "G23_08_sous_onglet_semiologie_mobile390.png",
+   "G23_09_figure8_mobile390.png",
+   "G23_10_fenetre_semiologie_mobile390.png"
+  ]
+ },
+ "non_fait": [
+  "Revues finales MED, LANG, SEMIO et reçu Alpha : rôle de l’Agent P."
+ ],
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
