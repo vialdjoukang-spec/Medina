@@ -1,6 +1,6 @@
 # Audit médical Alpha, tour 1 — G63, Polynévrite au cours de maladies classées ailleurs (S08)
 
-Mission `ALPHA1-CLAUDE-G63-MED` · branche `claude/alpha1/g63-med-g1` · base de mission `d1a488ad` (manifeste) · worktree créé sur `32416a20` · génération 1 · du 2026-10-16T05:51:52Z au 2026-10-16T06:18:55Z. Effort et modèle conformes au manifeste.
+Mission `ALPHA1-CLAUDE-G63-MED` · branche `claude/alpha1/g63-med-g1` · base de mission `d1a488ad` (manifeste) · worktree créé sur `32416a20` · génération 1 · du 2026-10-16T05:51:52Z au 2026-10-16T06:33:43Z. Effort et modèle conformes au manifeste.
 
 START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste. Horodatages UTC relevés par `date -u` ; la fin est relevée juste avant le commit de traçabilité.
 
@@ -25,7 +25,7 @@ Aucun.
 
 **C01 — `chapters/G63/G63_c.html` (bloquant pour la clôture).** Sémiologie absente de l’onglet Sciences : aucune discipline « Sémiologie fondamentale et analytique » (bouton data-s="g63-s-semio" en tête de .sci-bar). Les éléments sémiologiques existent seulement de façon descriptive dans g63-5 et g63-6 (tableau des fibres, signe clé, monofilament, diapason) : pas de mécanisme par signe, pas de valeur chiffrée hors prédiction de l’ulcère, pas de tableau des syndromes, pas d’examen systématique en étapes, pas de cas corrigés consacrés aux signes. SEM-01, SEM-02, SEM-13 et SEM-19 à « non ».  
 *Preuve :* [S1] tableau 1 (symptômes, signes) ; [S4] notes (5) et (6) ; [S14] résumé.  
-*Proposition :* Insérer la discipline complète de propositions/G63_c_1.html (sept îlots g63-sm-1 à g63-sm-7, figure S1, trois cas corrigés) et les fenêtres de propositions/G63_pop3_1.html dans un nouveau G63_pop3.html.
+*Proposition :* Insérer le sous-onglet de propositions/G63_c_1.html (bouton g63-tab-semio en tête de .sci-bar, panneau g63-s-semio role=tabpanel, neuf sections data-semiology normal → sources, figure S1, trois cas corrigés, liens https), ajouter les fenêtres de propositions/G63_pop2_1.html à la fin de chapters/G63/G63_pop2.html, et insérer le marqueur clinique de propositions/G63_a_semio_clinique.html dans g63-6 (G63_b.html, pA). À intégrer avec C02 (six boutons data-s exigés).
 
 **C02 — `chapters/G63/G63_c.html`.** L’onglet Sciences ne compte que quatre disciplines réelles (Anatomie, Histologie, Physiologie, Biochimie et génétique) ; l’addendum du lot 2 en exige cinq, puis la Sémiologie. La discipline la plus utile manquante est l’immunologie : elle explique G63.1* (anticorps neuronaux, paraprotéines), G63.5* (vasculite) et les trois diagnostics immunitaires à exclure (Guillain-Barré, PIDC, neuropathie motrice multifocale).  
 *Preuve :* [S7] texte, phénotypes et anticorps ; [S1] paraprotéines ; [S11] résumé.  
@@ -129,11 +129,11 @@ Aucun.
 
 **C27 — `chapters/G63/G63_b.html`.** Valeur sémiologique des pouls et de l’index de pression systolique absente de l’examen du pied : pouls pédieux absent chez jusqu’à 8 % des sujets sains, tibial postérieur chez jusqu’à 3 % ; IPS < 0,9 hautement suspect ; IPS > 1,3 (médiacalcose) chez 30 % des patients avec ulcère.  
 *Preuve :* [S4] notes (3) et (4).  
-*Proposition :* Fenêtre g63-sm-pouls de propositions/G63_pop3_1.html, reliée depuis g63-6.
+*Proposition :* Fenêtre g63-sm-pouls de propositions/G63_pop2_1.html, reliée depuis g63-6.
 
 **C28 — `chapters/G63/G63_b.html`.** La limite du réflexe achilléen isolé n’est pas chiffrée : dans une cohorte autrichienne de 2022 diabétiques, il manquait chez 24,8 % des patients à vibration normale (68,6 % si vibration anormale).  
 *Preuve :* [S14] résumé.  
-*Proposition :* Fenêtre g63-sm-achille de propositions/G63_pop3_1.html ; une phrase dans g63-signes.
+*Proposition :* Fenêtre g63-sm-achille de propositions/G63_pop2_1.html ; une phrase dans g63-signes.
 
 **C29 — `chapters/G63/G63_c.html`.** L’onglet des examens ne présente pas la place des anticorps antigangliosides dans le Guillain-Barré : valeur limitée dans la forme typique, anti-GQ1b seulement si un syndrome de Miller Fisher est suspecté ; anticorps nodaux et paranodaux si une nodopathie auto-immune est suspectée.  
 *Preuve :* [S12] résumé.  
@@ -172,7 +172,7 @@ Aucun.
 
 **Statut : absente** (constat C01, MAJEUR, bloquant pour la clôture du cours et du lot, AGENTS.md). La sémiologie fondamentale est **partielle** : elle se limite à g63-5 (tableau des familles de fibres), g63-6 (signe clé, monofilament, diapason), g63-signes, g63-mono, g63-diapason. Il manque : mécanisme causal par signe, valeur chiffrée hors prédiction de l’ulcère, réflexe achilléen isolé et sa limite, réflexes vifs et signes pyramidaux de la myéloneuropathie, pouls du pied et leur valeur. La sémiologie analytique est **absente** ; il manque : tableau des syndromes, raisonnement en cinq étapes, examen systématique numéroté, synthèse présentée, trois cas corrigés sur les signes.
 
-La proposition `propositions/G63_c_1.html` rédige la discipline complète en sept îlots, selon la structure du § 4 b : priorité clinique (Guillain-Barré, Wernicke, pied urgent), tableau des symptômes avec mécanisme et valeur, signes physiques (monofilament, diapason, achilléen, pouls, signes pyramidaux), tableau de sept syndromes, raisonnement en cinq étapes, examen systématique en onze étapes avec présentation type, trois cas corrigés. Les fenêtres des nouveaux mots verts sont dans `propositions/G63_pop3_1.html`. Chaque valeur absente des sources est écrite comme telle.
+La proposition `propositions/G63_c_1.html` rédige le sous-onglet complet selon le contrat SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE : bouton `g63-tab-semio` (role tab, aria-selected true), panneau `g63-s-semio` (role tabpanel, aria-labelledby), neuf sections `data-semiology` titrées en h3 : normal (valeurs normales du cabinet), signs (symptômes avec mécanisme et valeur, signes physiques), mechanisms (figure S1, sept syndromes), examination (monofilament, diapason, pouls, onze étapes, présentation type), interpretation (valeur chiffrée de chaque signe, trois cas corrigés), differentials (cinq étapes), urgency (Guillain-Barré, Wernicke, pied urgent), limits (populations et lacunes), sources (correspondance affirmation ↔ passage, liens https). Les fenêtres des nouveaux mots verts sont dans `propositions/G63_pop2_1.html` (à ajouter à `G63_pop2.html`) ; le marqueur clinique de pA est dans `propositions/G63_a_semio_clinique.html`. Chaque valeur absente des sources est écrite comme telle.
 
 | Critère | Résultat |
 |---|---|
@@ -292,6 +292,20 @@ L’inventaire `tools/image_clo_finder.py inventory G63` trouve six figures, tou
 | S24 | AVS 21 : âge de référence des femmes — Office fédéral des assurances sociales (OFAS) | section | consultée 2026-10-16 |
 | S25 | Recherche AmiKo de l’indication suisse de BOTOX® (champ indication de la liste des spécialités) — Swissmedic (AIPS via AmiKo) | section | consultée 2026-10-16 |
 
+
+## Correctifs de contrat du lot 2 (revue Codex)
+
+Corrections déjà acceptées conservées : NNT non comparatifs (C04, C05), capsaïcine crème et rTMS selon Soliman et coll. 2025 (S9), règle d’âge AI traitée en lacune (S3, S24).
+
+| Constat | Statut | Correction et preuve |
+|---|---|---|
+| R1 — Proposition sémiologique non conforme (h2, pas d’id/aria/role, aucun data-semiology, aucun lien https) | résolu | `G63_c_1.html` restructuré : bouton `g63-tab-semio`, panneau `g63-s-semio` role tabpanel sans hidden, neuf sections data-semiology dans l’ordre, titres h3, aucun h2, premier titre exact, 13 liens https et tableau affirmation ↔ passage. Simulation d’intégration (avec C02) conforme aux contrôles de structure de `tools/starter_codex.py`. |
+| R2 — Pas de marqueur clinique dans pA | résolu | `G63_a_semio_clinique.html` : section `data-semiology-clinical="G63"`, ancre unique avant le bouton `pareto-g63-clinique` de g63-6 (`G63_b.html`, descendante de #pA). |
+| R3 — Une proposition pop3 | résolu | `G63_pop3_1.html` renommé `G63_pop2_1.html`, cible : fin de `chapters/G63/G63_pop2.html` ; références mises à jour ; aucun data-k ni href="#…" orphelin. |
+| R4 — sources.json incomplet | résolu | 25 entrées avec version, section_ou_page, passage_paraphrase, population, limites et niveau_lecture ; donnée inconnue écrite « non précisé par la source dans les passages lus ». |
+
+Ces contrôles de balises ne certifient ni l’exactitude médicale ni une validation par un médecin. Aucun fait nouveau non sourcé n’a été ajouté.
+
 ## Tableau de bord
 
 | Élément | Valeur |
@@ -304,5 +318,5 @@ L’inventaire `tools/image_clo_finder.py inventory G63` trouve six figures, tou
 | Disciplines des sciences | 4 réelles → proposition Immunologie (5e) |
 | Figures | 6 schémas non anatomiques ; 3 illisibles à 390 px |
 | Sources lues | 25 (8 FI suisses datées et 1 liste AmiKo, 4 documents suisses, 12 européens ou internationaux) |
-| Propositions | 8 fichiers dans propositions/ |
+| Propositions | 9 fichiers dans propositions/ |
 | Alertes | Sources canoniques non modifiées ; aucune validation médicale humaine |

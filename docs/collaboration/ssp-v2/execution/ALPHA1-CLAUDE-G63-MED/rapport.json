@@ -13,7 +13,7 @@
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
  "date_debut": "2026-10-16T05:51:52Z",
- "date_fin": "2026-10-16T06:18:55Z",
+ "date_fin": "2026-10-16T06:33:43Z",
  "lecture": {
   "fichiers": [
    "chapters/G63/G63_a.html",
@@ -99,7 +99,7 @@
      "citation_courte": "a missing Achilles' tendon reflex (68.6% vs. 24.8%)"
     }
    ],
-   "proposition": "Insérer la discipline complète de propositions/G63_c_1.html (sept îlots g63-sm-1 à g63-sm-7, figure S1, trois cas corrigés) et les fenêtres de propositions/G63_pop3_1.html dans un nouveau G63_pop3.html.",
+   "proposition": "Insérer le sous-onglet de propositions/G63_c_1.html (bouton g63-tab-semio en tête de .sci-bar, panneau g63-s-semio role=tabpanel, neuf sections data-semiology normal → sources, figure S1, trois cas corrigés, liens https), ajouter les fenêtres de propositions/G63_pop2_1.html à la fin de chapters/G63/G63_pop2.html, et insérer le marqueur clinique de propositions/G63_a_semio_clinique.html dans g63-6 (G63_b.html, pA). À intégrer avec C02 (six boutons data-s exigés).",
    "justification": "Mécanisme : chaque signe traduit la fonction d’une famille de fibres et le motif dépendant de la longueur. Conséquence : sans cette discipline, le lecteur ne sait ni pourquoi un signe apparaît, ni ce qu’il vaut, ni ce qui rompt le motif. Décision : ajouter la discipline exigée par Vial (option A, décision du 15.10.2026).",
    "ancre_occurrences": 1,
    "bloquant_cloture": true
@@ -603,7 +603,7 @@
      "citation_courte": "bei bis zu 8% gesunder Personen der dorsalis pedis Puls und bei bis zu 3% der tibialis posterior Puls ... Ein ABI < 0,9 ist hochsuspekt"
     }
    ],
-   "proposition": "Fenêtre g63-sm-pouls de propositions/G63_pop3_1.html, reliée depuis g63-6.",
+   "proposition": "Fenêtre g63-sm-pouls de propositions/G63_pop2_1.html, reliée depuis g63-6.",
    "justification": "SEM-08 et rubrique 8.",
    "ancre_occurrences": 1
   },
@@ -620,7 +620,7 @@
      "citation_courte": "a missing Achilles' tendon reflex (68.6% vs. 24.8%, P < 0.0001)"
     }
    ],
-   "proposition": "Fenêtre g63-sm-achille de propositions/G63_pop3_1.html ; une phrase dans g63-signes.",
+   "proposition": "Fenêtre g63-sm-achille de propositions/G63_pop2_1.html ; une phrase dans g63-signes.",
    "justification": "Valeur d’un signe isolé (SEM-08, SEM-10).",
    "ancre_occurrences": 1
   },
@@ -846,7 +846,7 @@
    "SEM-23": "non réalisé",
    "SEM-24": "oui (bandeau : revue par intelligence artificielle, aucune validation médicale humaine)"
   },
-  "proposition": "propositions/G63_c_1.html et propositions/G63_pop3_1.html",
+  "proposition": "propositions/G63_c_1.html, propositions/G63_pop2_1.html et propositions/G63_a_semio_clinique.html",
   "sources": [
    "S1",
    "S2",
@@ -970,14 +970,60 @@
  ],
  "propositions": [
   "propositions/G63_a_1.html",
+  "propositions/G63_a_semio_clinique.html",
   "propositions/G63_b_1.html",
   "propositions/G63_b_2.html",
   "propositions/G63_c_1.html",
   "propositions/G63_c_2.html",
   "propositions/G63_d_1.html",
   "propositions/G63_d_2.html",
-  "propositions/G63_pop3_1.html"
+  "propositions/G63_pop2_1.html"
  ],
  "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée",
- "horodatage_note": "date_debut relevée par date -u au début de la recherche ; date_fin relevée par date -u juste avant le commit de traçabilité (UTC)."
+ "horodatage_note": "date_debut relevée par date -u au début de la recherche ; date_fin relevée par date -u juste avant le commit de traçabilité (UTC).",
+ "correctifs_contrat_lot2": {
+  "origine": "revue Codex du lot 2, CORRECTIFS_SEMIO_CONTRAT_LOT2 (code G63)",
+  "corrections_acceptees_conservees": [
+   "NNT non comparatifs (C04, C05, propositions/G63_d_1.html)",
+   "capsaïcine crème (S9, deuxième ligne)",
+   "rTMS (S9, troisième ligne)",
+   "règle d’âge AI traitée en lacune (S3, S24)"
+  ],
+  "constats": [
+   {
+    "id": "R1",
+    "constat": "Proposition sémiologique non conforme (h2, pas d’id/aria/role, aucun data-semiology, aucun lien https)",
+    "statut": "resolved",
+    "preuve": "propositions/G63_c_1.html : bouton id=g63-tab-semio role=tab aria-selected=true aria-controls=g63-s-semio ; panneau div.sci#g63-s-semio role=tabpanel aria-labelledby=g63-tab-semio, sans hidden ; neuf sections ilot data-semiology dans l’ordre normal, signs, mechanisms, examination, interpretation, differentials, urgency, limits, sources ; titres h3, aucun h2 ; premier titre exact ; section sources : tableau affirmation ↔ passage et 13 liens https. Simulation d’intégration (avec C02) passée aux contrôles de structure de tools/starter_codex.py (semiology) : 6 boutons, panneau unique visible, sections non vides, liens présents."
+   },
+   {
+    "id": "R2",
+    "constat": "Pas de marqueur clinique dans pA",
+    "statut": "resolved",
+    "preuve": "propositions/G63_a_semio_clinique.html : section data-semiology-clinical=\"G63\" (symptômes, anamnèse analytique, signes et examen, discrimination clinique, urgences), ancre unique avant le bouton pareto-g63-clinique de g63-6 dans chapters/G63/G63_b.html ; simulation : descendante de div#pA."
+   },
+   {
+    "id": "R3",
+    "constat": "Une proposition pop3 (fichier non admis par tools/alpha_publication.py)",
+    "statut": "resolved",
+    "preuve": "G63_pop3_1.html renommé G63_pop2_1.html (cible : fin de chapters/G63/G63_pop2.html) ; références mises à jour dans rapport.json, rapport.md et G63_c_1.html ; aucun fichier pop3 ; tous les data-k des propositions résolus (pop1, pop2 ou pop2_1), aucun href=\"#…\" orphelin."
+   },
+   {
+    "id": "R4",
+    "constat": "sources.json incomplet (population, limites, passage)",
+    "statut": "resolved",
+    "preuve": "25 entrées avec id, url, organisme, version, date_consultation, section_ou_page, passage_paraphrase, population, limites, niveau_lecture (texte intégral, texte intégral en lecture partielle, ou résumé) ; donnée inconnue écrite « non précisé par la source dans les passages lus »."
+   }
+  ],
+  "controles": [
+   "grep id=\"g63-tab-semio\", aria-labelledby, role=\"tabpanel\" : présents",
+   "9 data-semiology dans l’ordre : oui",
+   "<h2 dans G63_c_1.html : 0",
+   "data-semiology-clinical=\"G63\" : présent",
+   "fichiers pop3 : aucun",
+   "sources.json : JSON valide, champs complets",
+   "rapport.json : JSON valide"
+  ],
+  "limite": "Les contrôles de balises ne certifient ni l’exactitude médicale ni une validation par un médecin ; aucun fait nouveau non sourcé n’a été ajouté."
+ }
 }
