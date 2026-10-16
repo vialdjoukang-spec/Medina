@@ -107,6 +107,8 @@ Le contrôle « Encre : Noir | Bleu » (`engine/encre_lecture.js`) s’insère d
 
 Les abréviations à clé (`.mc-ab`) restent en orange brûlé pointillé, les liens en orange brûlé souligné : aucun autre mot vert ne se confond avec un terme.
 
+**Contrôles (16 octobre 2026).** `palette.py --ecrire --doc --valider` : 0 échec (contrastes par rôle, gamut, contrôles photopiques et des cours) ; séquences contractuelles du validateur dataviz inchangées (ALL CHECKS PASS). `tools/front_garde.py` S08 (G45) et S05 : 0 échec à 390 et 1 280 px. `node tests/verify_categories.cjs` (S05, S08) : OK, 244 contrôles. `python3 -m unittest discover -s tests` : 813 tests OK. Rendu mesuré (tous les textes visibles, 1 280 px) : portail ≥ 7,5:1, accueil S08 ≥ 7,1:1, catégorie ≥ 7,5:1 ; leçon G45 : texte principal 18,9:1 (Noir) ou 14,1:1 (Bleu), minimum 5,9:1 (termes) ; fenêtre ≥ 6,5:1 (titre rouge) ; aucun défilement horizontal à 390 px.
+
 ### Cartes compactes (16 octobre 2026)
 
 Cartes de leçon (page de catégorie, recherche, « Les cours à explorer ») et cartes de catégorie : la hauteur suit le contenu (titre complet, code, statut « Lire le cours » / « En préparation », « Entités détaillées », étoile d’or, jauges), sans `min-height` ; seule la largeur diminue : 1 colonne sous 560 px, 2 jusqu’à 1 023 px, 3 de 1 024 à 1 599 px, 4 au-delà (« Les cours à explorer » reste à 3). Les jauges des cartes de catégorie tiennent sur deux lignes (libellé et compte, puis barre et pourcentage) ; l’étoile d’or est décalée sans agrandir la ligne. Règles : `engine/couleurs_premium.css`, section « Cartes compactes ».
