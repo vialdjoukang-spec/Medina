@@ -1,0 +1,810 @@
+{
+ "mission": "ALPHA1-CLAUDE-G98-MED",
+ "code": "G98",
+ "type_audit": "medical",
+ "base_sha": "103745baaa38c76f18288758cc7f689e5091ccdb",
+ "source_snapshot_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "base_note": "HEAD du worktree au démarrage (103745ba, merge PR #203) ; sources figées identiques au manifeste (empreintes SHA-256 conformes).",
+ "generation": 1,
+ "branche": "claude/alpha1/g98-med-g1",
+ "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G98-MED",
+ "conversation": "alpha1-claude-g98-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-16T09:54:06Z",
+ "date_fin": "2026-10-16T10:15:57Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G98/G98_a.html",
+   "chapters/G98/G98_b.html",
+   "chapters/G98/G98_c.html",
+   "chapters/G98/G98_d.html",
+   "chapters/G98/G98_pop1.html",
+   "chapters/G98/G98_pop2.html",
+   "glossary/g98.py"
+  ],
+  "empreintes_conformes": true,
+  "empreintes": {
+   "chapters/G98/G98_a.html": {
+    "sha256": "b259d4893ecb7c671957b7ebf5af2d5c0749d77298a22e69d8c47a5fdba76d5e",
+    "conforme": true
+   },
+   "chapters/G98/G98_b.html": {
+    "sha256": "62a86053b3cd321530b2ef6a3985de32b5bb25718d79b1285e1b1643d164bdca",
+    "conforme": true
+   },
+   "chapters/G98/G98_c.html": {
+    "sha256": "3ff9b3b31fe349bd46c828ee508ab09dc86f1da5f8867864aa6c2eada859e558",
+    "conforme": true
+   },
+   "chapters/G98/G98_d.html": {
+    "sha256": "c6edefb91f0aac77ae005e7ecffaa47557fc78ecac0f2483fda39c58a3c72b56",
+    "conforme": true
+   },
+   "chapters/G98/G98_pop1.html": {
+    "sha256": "4dcbae2e918e8d219c90c91da6efac98f73f2292dee0525af0383ff9ff6c8702",
+    "conforme": true
+   },
+   "chapters/G98/G98_pop2.html": {
+    "sha256": "eb3fd509ed951418baa14d06ce3ea568dd3c0c3a416a374517499759edfa5d9e",
+    "conforme": true
+   },
+   "glossary/g98.py": {
+    "sha256": "0bc2b6990308ed64c120fb4b430a5c999048807b6d1c7f59cd55d51bbb9fabc8",
+    "conforme": true
+   }
+  }
+ },
+ "premiere_source_lue": {
+  "source_id": "S3",
+  "url": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/65_Fussversorgung/210721_QCARE_Charcot_Fuss_A5_FR.pdf",
+  "section": "PCA – Pied de Charcot aigu : examen clinique (monofilament 10 g, hyperthermie > 2 °C) et traitement (durée 3 à 6 mois, jusqu’à 18 mois ; prophylaxie antithrombotique)"
+ },
+ "synthese": {
+  "BLOQUANT": 0,
+  "MAJEUR": 5,
+  "MINEUR": 12,
+  "ENRICHISSEMENT": 5
+ },
+ "calculs": {
+  "total_releves": 349,
+  "releves_en_chiffres": 290,
+  "releves_en_toutes_lettres": 59,
+  "etiquettes_non_calculables": 126,
+  "calculables": 223,
+  "recalcules": 223,
+  "correct": 213,
+  "arrondi": 0,
+  "faux": 8,
+  "non_verifiables": 2,
+  "faux_ids": [
+   "N042",
+   "N050",
+   "N061",
+   "N089",
+   "N182",
+   "N211",
+   "N218",
+   "N282"
+  ],
+  "faux_constats": [
+   "C03",
+   "C04",
+   "C05",
+   "C06",
+   "C07"
+  ],
+  "non_verifiables_constat": "C20",
+  "calculs_des_propositions": 12,
+  "script": "calculs/verifier.py",
+  "sorties": [
+   "calculs/inventaire.json",
+   "calculs/resultats.json"
+  ],
+  "tolerance": "0,05 point pour une valeur publiée à une décimale, 0,5 point pour une valeur entière ; conversion thermique exacte (facteur 1,8 pour un écart)"
+ },
+ "controles": {
+  "test_v7_static": "G98 mots 11585 fenêtres 28 quiz 6 pareto 7 — OK",
+  "audit_sciences": "failed (14 erreurs, voir C02)",
+  "image_clo_finder_inventory": "0 figure ([])",
+  "ancres_propositions": "31 extraits vérifiés présents une seule fois dans leur fichier cible",
+  "propositions_classes_fermees": "conformes (alert, card, fb, ilot, k, key, lab, quiz ui, sci, src, t, trap, w), aucun style en ligne",
+  "cles_g98_sm": "7 data-k et 7 data-pop concordants, absentes des fichiers actuels"
+ },
+ "constats": [
+  {
+   "id": "C01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G98/G98_c.html",
+   "ancre": "data-s=\"g98-s-anat\"",
+   "constat": "Le sous-onglet « Sémiologie fondamentale et analytique » est absent. Décompte réel des data-s de G98_c.html : 3 (g98-s-anat, g98-s-bio, g98-s-img) ; aucun g98-s-semio, aucun data-semiology ni data-semiology-clinical. La sémiologie existante se limite à l'îlot g98-7 (« Anamnèse et examen », 1 mot vert : g98-thermometrie) : pas de tableau des signes, pas de technique du monofilament ni du diapason, pas d'examen vasculaire, pas de regroupement syndromique, pas de raisonnement en cinq étapes, pas de cas corrigé consacré au signe.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Recommandation 1 et justification",
+     "citation_courte": "Always consider active CNO … increase in temperature, oedema, and/or redness … compared to the contralateral foot"
+    },
+    {
+     "source_id": "S13",
+     "section": "Annexe 1",
+     "citation_courte": "10g (5.07) Semmes-Weinstein monofilament … 128 Hz tuning fork"
+    },
+    {
+     "source_id": "S3",
+     "section": "PCA, Examen clinique",
+     "citation_courte": "monofilament 10 g, diapason, réflexe achilléen"
+    }
+   ],
+   "proposition": "propositions/G98_c_semio.html (bouton g98-tab-semio, panneau g98-s-semio, neuf sections data-semiology, figure non anatomique, 3 cas corrigés) ; propositions/G98_b_semio_clinique.html (section data-semiology-clinical=\"G98\" dans g98-7) ; propositions/G98_pop1_semio.html (7 fenêtres g98-sm-*)",
+   "justification": "La sémiologie est le premier outil du diagnostic du Charcot, puisqu'il n'existe pas de test de référence → sans technique ni valeur des signes, l'étudiant ne sait ni reconnaître le stade 0 ni écrire honnêtement la limite d'un écart thermique → ajout du sous-onglet exigé par l'ordre de Vial (absence = MAJEUR)."
+  },
+  {
+   "id": "C02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G98/G98_c.html",
+   "ancre": "<div class=\"sci\" id=\"g98-s-anat\">",
+   "constat": "Sciences fondamentales non conformes : tests/audit_sciences.py --codes G98 échoue (14 erreurs) : 0 figure dans les 3 disciplines, aucun des encadrés « Science → clinique. / examen. / traitement. », g98-s-anat (259 mots) et g98-s-img (241 mots) sous 280 mots. Le normal n'est pas exposé (« Les sources lues ne détaillent pas le remodelage osseux normal et le cours ne l'expose pas »), alors que S2 donne les valeurs radiographiques normales de l'arche et S1 la symétrie thermique normale. La leçon entière ne contient aucune figure.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Role of conventional radiographs",
+     "citation_courte": "Meary’s angle … normal value should be around 0° ; cuboid height … about 1.2 cm ; calcaneal pitch … between 20 and 30°"
+    },
+    {
+     "source_id": "S1",
+     "section": "Justification des recommandations 1 à 5",
+     "citation_courte": "In healthy individuals there is a symmetry in skin foot temperature"
+    }
+   ],
+   "proposition": "propositions/G98_c_sciences.html (normal radiographique, figures originales CC BY 4.0 de S2 à héberger après contrôle visuel, chaîne causale non anatomique, encadrés de corrélation dans chaque discipline)",
+   "justification": "Le pourquoi du cours tient au passage du normal au pathologique → sans normal ni figure, la déformation et le stade 0 restent abstraits → compléter chaque discipline et satisfaire le contrôle automatique sans dessin anatomique produit par une IA."
+  },
+  {
+   "id": "C03",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G98/G98_b.html",
+   "ancre": "Une différence de <b>2 °C</b> (4 °F) est utilisée comme seuil d’activité dans plusieurs publications.",
+   "constat": "Conversion fausse d'un seuil décisionnel (calcul N061, N211) : pour un écart de température, ΔT(°F) = 1,8 × ΔT(°C) ; 2 °C = 3,6 °F et 4 °F = 2,22 °C. La source corrige elle-même l'équivalence. Même erreur dans la fenêtre g98-thermometrie (G98_pop1.html : « Une différence de 2 °C (4 °F) »).",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Justification des recommandations 1 à 5",
+     "citation_courte": "2° Celsius or 4° Fahrenheit (which is actually 2.2° Celsius)"
+    },
+    {
+     "source_id": "S1",
+     "section": "Identification de la rémission",
+     "citation_courte": "Different cut-off points have been used, 4oF (which is 2.2oC), 2oC, and 1oC"
+    }
+   ],
+   "proposition": "propositions/G98_corrections.html, bloc C03 (deux remplacements)",
+   "justification": "Le seuil d'activité guide la suspicion et le suivi → une équivalence fausse fait croire que 4 °F et 2 °C sont le même seuil → corriger la conversion et rappeler que le seuil n'est pas validé."
+  },
+  {
+   "id": "C04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G98/G98_b.html",
+   "ancre": "Dans une cohorte du Balgrist de 43 pieds, l’amputation a concerné 52 % des cas",
+   "constat": "Dénominateur faux (calcul N089, N218) : 52 % correspond à 31 épisodes d'ostéomyélite sur 60 (51,7 %) ; rapporté aux 43 pieds, le taux est 26/43 = 60,5 %, aux 40 patients 26/40 = 65 %. La leçon omet en outre que le taux d'amputation n'était pas plus élevé dans la zone de Charcot (12/30 = 40 % contre 19/30 = 63 % hors zone, p = 0,09) ; seuls le niveau (majeure 20 % contre 10 %), la durée d'antibiothérapie et d'immobilisation différaient. Même erreur dans la fenêtre g98-osteomyelite.",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "Résultats, Amputation rate",
+     "citation_courte": "An amputation was performed in 31/60 (52%) cases of osteomyelitis (26/40 patients; 26/43 ft)"
+    },
+    {
+     "source_id": "S7",
+     "section": "Résultats",
+     "citation_courte": "Group 1 … (19 amputations; 63%) and Group 2 … (12 amputations; 40%) (p = 0.09)"
+    },
+    {
+     "source_id": "S7",
+     "section": "Level of amputation",
+     "citation_courte": "3/30 (10%) … 6/30 (20%)"
+    }
+   ],
+   "proposition": "propositions/G98_corrections.html, bloc C04 (deux remplacements)",
+   "justification": "Le pronostic d'amputation sert à informer le patient et à choisir entre résection et amputation → un dénominateur faux et l'omission du sens de la différence induisent une lecture erronée du risque → donner les trois dénominateurs et le résultat exact par zone."
+  },
+  {
+   "id": "C05",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G98/G98_a.html",
+   "ancre": "30,1 % de femmes",
+   "constat": "Calcul N042 : 49/159 = 30,82 %. Le résumé de la source imprime 30,1 %, son texte et son tableau 1 donnent 30,8 % : la leçon reprend l'erreur du résumé.",
+   "preuve": [
+    {
+     "source_id": "S6",
+     "section": "Résultats et tableau 1",
+     "citation_courte": "49 (30.8%) patients were female"
+    }
+   ],
+   "proposition": "propositions/G98_corrections.html, bloc C05",
+   "justification": "Donnée descriptive sans conséquence décisionnelle → MINEUR ; la valeur recalculée l'emporte sur la coquille du résumé."
+  },
+  {
+   "id": "C06",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G98/G98_a.html",
+   "ancre": "et 72,3 % des patients ont présenté des ulcères",
+   "constat": "Calcul N050 : 72,3 % = 133/184 PIEDS, non des patients ; « la récidive 13,6 % » désigne la réactivation de 25/184 pieds.",
+   "preuve": [
+    {
+     "source_id": "S6",
+     "section": "Ulcers and ulcer recurrence",
+     "citation_courte": "At least one ulcer occurred in 133 (72.3%) feet"
+    },
+    {
+     "source_id": "S6",
+     "section": "Reactivation",
+     "citation_courte": "In 25 (13.6%) feet, reactivation"
+    }
+   ],
+   "proposition": "propositions/G98_corrections.html, bloc C06",
+   "justification": "Unité de dénombrement erronée → le lecteur surestime la part de patients atteints → préciser « des pieds » et « réactivation »."
+  },
+  {
+   "id": "C07",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G98/G98_d.html",
+   "ancre": "et chez le sujet de plus de 70 ans",
+   "constat": "Calcul N182, N282 : la FI suisse ne demande pas de surveillance propre au sujet de plus de 70 ans en prophylaxie ; elle situe le risque hémorragique accru du sujet âgé « en particulier de plus de 70 ans » dans la fourchette THÉRAPEUTIQUE et précise que la prophylaxie ne s'accompagne pas d'une tendance accrue aux saignements. Même formulation dans la fenêtre g98-enoxaparine (G98_pop2.html).",
+   "preuve": [
+    {
+     "source_id": "S10",
+     "section": "Mises en garde, Patients âgés",
+     "citation_courte": "L’utilisation de l’énoxaparine pour la prophylaxie … ne s’accompagne pas d’une tendance accrue aux saignements. Dans la fourchette thérapeutique … plus de 70 ans"
+    }
+   ],
+   "proposition": "propositions/G98_d_enoxaparine.html, bloc C07",
+   "justification": "Information de FI attribuée au mauvais régime de dose → reformuler selon le texte de la FI de février 2026."
+  },
+  {
+   "id": "C08",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G98/G98_a.html",
+   "ancre": "Le risque de l’oublier est documenté en Suisse : dans une série de 71 cas,",
+   "constat": "La série de 71 cas provient de la consultation du pied diabétique de l'Université de Düsseldorf (Allemagne) ; elle est seulement publiée dans le Swiss Medical Weekly. « documenté en Suisse » (g98-0) et « série suisse-allemande » (g98-8, g98-10, correction du cas 5 en g98-e-5) sont inexacts. g98-4 l'attribue correctement à Düsseldorf.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Affiliation (Europe PMC)",
+     "citation_courte": "Diabetic foot clinic, Department of Endocrinology and Diabetology, Heinrich Heine University of Düsseldorf, Germany"
+    }
+   ],
+   "proposition": "propositions/G98_corrections.html, bloc C08 (quatre remplacements)",
+   "justification": "La rubrique 16 distingue les données suisses → attribuer une série allemande à la Suisse fausse l'appréciation de l'applicabilité locale."
+  },
+  {
+   "id": "C09",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G98/G98_a.html",
+   "ancre": "QualiCCare / SSED, Pied de Charcot, prise en charge initiale (version 2020)",
+   "constat": "Une version 2023 (allemand) du document suisse existe ; elle qualifie l'IRM de « zwingend » (obligatoire) en deuxième ligne et admet le plâtre à contact total amovible comme alternative. La leçon ne cite que la version française 2020.",
+   "preuve": [
+    {
+     "source_id": "S14",
+     "section": "ACF, Bildgebung",
+     "citation_courte": "MRI: zwingend als zweite Linie, wenn Röntgen negativ und klinische Anzeichen eines ACF"
+    },
+    {
+     "source_id": "S14",
+     "section": "ACF, Behandlung",
+     "citation_courte": "Alternative: abnehmbarer TCC oder orthopädische Gehhilfe, die nicht abnehmbar ist"
+    }
+   ],
+   "proposition": "propositions/G98_corrections.html, bloc C09",
+   "justification": "La source primaire applicable la plus récente l'emporte (consigne de Vial) → citer la version 2023 et son renforcement de l'indication de l'IRM."
+  },
+  {
+   "id": "C10",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G98/G98_d.html",
+   "ancre": "<div class=\"trap\"><span class=\"k\">Piège</span> Reprendre telle quelle",
+   "constat": "La prophylaxie antithrombotique recommandée dure aussi longtemps que le plâtre (souvent 3 à 6 mois) ; la leçon ne donne aucun des points de sécurité que la FI suisse prévoit pour une héparine de bas poids moléculaire prolongée : numération plaquettaire avant et pendant le traitement (thrombopénie induite par l'héparine entre le 5e et le 21e jour), contre-indication en cas d'antécédent de moins de 100 jours, prudence en cas de rétinopathie diabétique, exposition accrue en cas de sous-poids. Aucune donnée d'efficacité indirecte n'est citée.",
+   "preuve": [
+    {
+     "source_id": "S10",
+     "section": "Mises en garde, Surveillance de la numération plaquettaire",
+     "citation_courte": "réaliser une numération plaquettaire avant l’instauration du traitement … puis régulièrement"
+    },
+    {
+     "source_id": "S10",
+     "section": "Contre-indications relatives",
+     "citation_courte": "rétinopathie diabétique"
+    },
+    {
+     "source_id": "S15",
+     "section": "Résumé",
+     "citation_courte": "low-molecular-weight heparin reduced the risk of any VTE [odds ratio (OR) 0.52"
+    }
+   ],
+   "proposition": "propositions/G98_d_enoxaparine.html, bloc C10",
+   "justification": "Le patient type est diabétique, souvent rétinopathe, traité des mois → la sécurité de la prophylaxie est un point d’examen et de pratique → ajouter les éléments de la FI datée, sans fixer de protocole."
+  },
+  {
+   "id": "C11",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G98/G98_b.html",
+   "ancre": "Il n’y a pas de fixation interne en cas d’infection ou d’ulcère, et pas de chirurgie en l’absence d’ulcération et d’instabilité.",
+   "constat": "Formulation catégorique : la source suisse écrit « n’est pas recommandée » (fixation interne) et « n’est en général pas recommandable » (chirurgie sans ulcère ni déformation instable) ; l'IWGDF admet la chirurgie à peau intacte en cas de douleur non contrôlée ou de déformation à haut risque d'ulcère, après une période de traitement conservateur.",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "PCC, Traitement chirurgical",
+     "citation_courte": "Une intervention chirurgicale en l’absence d’ulcération ou de déformation instable n’est en général pas recommandable"
+    },
+    {
+     "source_id": "S1",
+     "section": "Justification de la recommandation 24",
+     "citation_courte": "we recommend a period of non-surgical care to include immobilization and oedema reduction"
+    }
+   ],
+   "proposition": "propositions/G98_corrections.html, bloc C11",
+   "justification": "Une interdiction absolue contredit la recommandation 24 de l'IWGDF → restituer la nuance des deux sources."
+  },
+  {
+   "id": "C12",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G98/G98_b.html",
+   "ancre": "Différence cutanée ≥ 2 °C entre les pieds : seuil d’activité usuel, sensible mais non spécifique.",
+   "constat": "Incohérence de seuil (SEM-20) : « ≥ 2 °C » (paramètres clés g98-14) contre « plus de 2 °C » (g98-7, S3) et « 2 °C » (S1) ; l'IWGDF précise que la précision diagnostique de ce seuil n'a jamais été démontrée.",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "PCA, Examen clinique",
+     "citation_courte": "hyperthermie de plus de 2 °C"
+    },
+    {
+     "source_id": "S1",
+     "section": "Recherche future",
+     "citation_courte": "the diagnostic accuracy of the ≤2˚C foot skin temperature “cutoff” … has not been demonstrated"
+    }
+   ],
+   "proposition": "propositions/G98_corrections.html, bloc C12",
+   "justification": "Un seuil doit être identique dans toutes les surfaces → harmoniser et signaler l'absence de validation."
+  },
+  {
+   "id": "C13",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G98/G98_b.html",
+   "ancre": "Contre-indication à l’IRM (stimulateur cardiaque, claustrophobie)",
+   "constat": "L'IWGDF parle d'un stimulateur « non compatible avec l'IRM » ; la revue du Balgrist d'une claustrophobie « sévère ». Même formulation en g98-e-4 (G98_c.html).",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Justification de la recommandation 9",
+     "citation_courte": "a patient with an MRI-unsafe pacemaker"
+    },
+    {
+     "source_id": "S2",
+     "section": "CT and nuclear medicine imaging",
+     "citation_courte": "pacemaker, severe claustrophobia"
+    }
+   ],
+   "proposition": "propositions/G98_corrections.html, bloc C13",
+   "justification": "Tout stimulateur n’interdit pas l’IRM → préciser pour ne pas priver à tort le patient de l’examen recommandé avec force."
+  },
+  {
+   "id": "C14",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G98/G98_b.html",
+   "ancre": "Les règles administratives suisses (prise en charge des chaussures orthopédiques",
+   "constat": "Rubrique 16 (spécificités suisses) absente : prise en charge AI/AVS des chaussures orthopédiques, aptitude à la conduite sous plâtre. L'audit n'a pu lire que la table des matières d'une circulaire AI non en vigueur (CMAI, état 2021, chiffres 4.01 à 4.04 OMAI) : aucune règle n'est proposée.",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "Table des matières",
+     "citation_courte": "4.01 OMAI Chaussures orthopédiques sur mesure … 4.03 OMAI Chaussures orthopédiques spéciales"
+    }
+   ],
+   "proposition": "propositions/G98_b_decharge_suisse.html, bloc C14 (précision de la lacune)",
+   "justification": "Le chaussage sur mesure est le traitement de fond du pied chronique → son financement est une question pratique suisse → lacune à combler par lecture des textes en vigueur."
+  },
+  {
+   "id": "C15",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G98/G98_c.html",
+   "ancre": "Dans la luxation de Lisfranc, les métatarsiens sont luxés vers le haut et en dehors.",
+   "constat": "L'onglet Examens ne donne aucune valeur normale de radiographie, alors que S2 fournit les mesures normales de l'arche (Meary, hauteur du cuboïde, pente calcanéenne) et leur évolution dans le Charcot.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Role of conventional radiographs",
+     "citation_courte": "Mean normal value is about 1.2 cm above that line"
+    }
+   ],
+   "proposition": "propositions/G98_c_examens.html, bloc C15",
+   "justification": "Normal avant pathologique (règle 7) → chiffrer l'arche pour suivre la déformation."
+  },
+  {
+   "id": "C16",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G98/G98_c.html",
+   "ancre": "La TDM est utile tardivement et pour planifier la chirurgie.",
+   "constat": "Valeur diagnostique des imageries du Charcot actif absente : IRM à sensibilité élevée mais spécificité inconnue ; scintigraphie en trois temps sensibilité 89 %, spécificité 58 % (148 patients) ; imagerie nucléaire négative fortement contre le diagnostic.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Justification des recommandations 8 et 9",
+     "citation_courte": "had a high (89%) sensitivity but limited (58%) specificity"
+    }
+   ],
+   "proposition": "propositions/G98_c_examens.html, bloc C16",
+   "justification": "Le choix de l'alternative à l'IRM dépend de sa valeur → donner les chiffres de la source."
+  },
+  {
+   "id": "C17",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G98/G98_b.html",
+   "ancre": "Des aides à la marche (béquilles, déambulateur) réduisent l’appui.",
+   "constat": "Effets indésirables de l'immobilisation prolongée et non-observance de l'appui partiel non traités (72 % de non-observance, 34 jours de guérison supplémentaires ; atrophie, chutes, inégalité de longueur et surélévation controlatérale) ; remise en charge progressive non mentionnée.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Justification des recommandations 15 à 20",
+     "citation_courte": "Seventy-two percent of the patients did not adhere … 34 days longer"
+    },
+    {
+     "source_id": "S1",
+     "section": "Prévention de la réactivation",
+     "citation_courte": "Abrupt re-loading of the foot may reactivate the CNO"
+    }
+   ],
+   "proposition": "propositions/G98_b_decharge_suisse.html, bloc C17",
+   "justification": "Un traitement de plusieurs mois a ses complications propres → les prévenir fait partie de la conduite."
+  },
+  {
+   "id": "C18",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G98/G98_b.html",
+   "ancre": "Biologie inutile au diagnostic",
+   "constat": "Surinterprétation : l'IWGDF « suggère de ne pas utiliser » la biologie (recommandation conditionnelle, certitude faible) ; « inutile » est plus fort que la source.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Recommandation 10",
+     "citation_courte": "We suggest not using C-reactive protein (CRP) … (Conditional; Low)"
+    }
+   ],
+   "proposition": "propositions/G98_corrections.html, bloc C18",
+   "justification": "La force d'une recommandation doit être restituée telle quelle."
+  },
+  {
+   "id": "C19",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G98/G98_b.html",
+   "ancre": "Dans les données citées, la réactivation survient chez environ 23 % des patients, en moyenne à 27 mois.",
+   "constat": "Le chiffre de 23 % vient d'une étude citée par la revue du Balgrist ; la cohorte suisse elle-même donne 13,6 % des pieds (délai médian 1,9 an), plus fréquente chez le diabétique de type 1 (6/18) que de type 2 (15/113). Les deux chiffres coexistent sans être reliés.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Natural course of disease",
+     "citation_courte": "re-activation … in about 23% within a mean interval of 27 months"
+    },
+    {
+     "source_id": "S6",
+     "section": "CN reactivation",
+     "citation_courte": "type 1 diabetics (6/18; 33%) than in type 2 diabetics (15/113; 13%)"
+    }
+   ],
+   "proposition": "propositions/G98_corrections.html, bloc C19",
+   "justification": "Deux fréquences différentes doivent être attribuées et expliquées."
+  },
+  {
+   "id": "C20",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G98/G98_a.html",
+   "ancre": "La Revue médicale suisse (Lausanne, 2013) cite 0,1 à 13 % selon les études.",
+   "constat": "Valeurs N032 et N033 NON_VERIFIABLE : le résumé de Gastaldi et coll. 2013 ne contient pas cette fourchette ; le texte intégral n'a pas été lu par l'audit.",
+   "preuve": [
+    {
+     "source_id": "S11",
+     "section": "Résumé",
+     "citation_courte": "Charcot neuropathic osteoarthropathy (CNO) is a destructive process … (aucune prévalence dans le résumé)"
+    }
+   ],
+   "proposition": "propositions/G98_corrections.html, bloc C20",
+   "justification": "Une valeur non vérifiable est retirée ou sourcée par page."
+  },
+  {
+   "id": "C21",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G98/G98_b.html",
+   "ancre": "Le plâtre est arrêté après une forte diminution ou une disparition de l’œdème médullaire à l’IRM.",
+   "constat": "Critère d'arrêt présenté comme général alors qu'il s'agit de la pratique du Balgrist ; les recommandations pratiques de l'IWGDF retiennent l'absence de signe clinique d'inflammation et la consolidation radiographique, et notent que l'IRM peut rester anormale après la résolution clinique.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Monitoring of disease activity with MRI",
+     "citation_courte": "After a significant decrease or complete disappearance of bone marrow edema, the cast can be removed"
+    },
+    {
+     "source_id": "S13",
+     "section": "Section 5",
+     "citation_courte": "The knee-high cast can be stopped when there are no clinical signs of inflammation with radiographic consolidation of fractures"
+    }
+   ],
+   "proposition": "propositions/G98_corrections.html, bloc C21",
+   "justification": "Deux critères d'arrêt coexistent → les attribuer pour éviter des plâtres prolongés sur une IRM encore anormale."
+  },
+  {
+   "id": "C22",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G98/G98_a.html",
+   "ancre": "D’autres causes neurologiques de Charcot existent dans la littérature générale, mais aucune des sources lues ne les documente : le cours ne les cite pas.",
+   "constat": "Affirmation inexacte sur les sources et lacune centrale du code : deux sources déjà citées par la leçon documentent les causes non diabétiques, c'est-à-dire précisément les Charcot codés G98†. S7 cite l'alcool, la carence en vitamine B12 ou en folates, les drogues intraveineuses, la syphilis tardive, la syringomyélie et la sclérose en plaques ; S6 (cohorte suisse) donne la répartition par pied : 70,1 % diabétiques, 14,7 % idiopathiques, 8,7 % éthylotoxiques, 2,2 % carence en B12, 2,2 % médullaires, 1,6 % inflammatoires, 0,5 % pharmacotoxique, soit 29,9 % de pieds non diabétiques (recalcul P11).",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "Background",
+     "citation_courte": "other causes include alcoholism, vitamin B12 or folic acid deficiency, intravenous drug use, late stage syphilis, syringomyelia, and multiple sclerosis"
+    },
+    {
+     "source_id": "S6",
+     "section": "Tableau 1, Cause of Neuropathy",
+     "citation_courte": "Diabetic 129 (70.1%) … Ethyltoxic 16 (8.7%) … Idiopathic 27 (14.7%)"
+    },
+    {
+     "source_id": "S6",
+     "section": "Introduction",
+     "citation_courte": "alcoholic polyneuropathy, kidney failure, spinal cord injury"
+    }
+   ],
+   "proposition": "propositions/G98_a_etiologies.html",
+   "justification": "G98† code le Charcot non diabétique → ignorer ses causes vide la leçon de son objet propre → ajouter les causes sourcées et la répartition suisse."
+  }
+ ],
+ "matrice_20": [
+  {
+   "rang": 1,
+   "rubrique": "Question clinique et enjeu pour l’examen fédéral",
+   "statut": "couvert",
+   "ancre": "g98-0 (vignette, trois questions)"
+  },
+  {
+   "rang": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "couvert",
+   "ancre": "g98-1, g98-2, fenêtre g98-codage ; conformes à S12"
+  },
+  {
+   "rang": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "partiel",
+   "ancre": "g98-3 ; stade IV de l’Eichenholtz modifié et classification de Brodsky non détaillés"
+  },
+  {
+   "rang": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "partiel",
+   "ancre": "g98-4 ; aucune donnée populationnelle suisse (déclaré) ; C05, C06, C20"
+  },
+  {
+   "rang": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "partiel",
+   "ancre": "g98-5, sciences : normal non exposé (C02)"
+  },
+  {
+   "rang": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "partiel",
+   "ancre": "g98-6 : causes non diabétiques absentes (C22)"
+  },
+  {
+   "rang": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "partiel",
+   "ancre": "g98-7 ; aucune fréquence de symptôme (non chiffrée dans les sources lues)"
+  },
+  {
+   "rang": 8,
+   "rubrique": "Examen clinique (signes, sensibilité/spécificité)",
+   "statut": "partiel",
+   "ancre": "g98-7 ; technique et valeur absentes (C01)"
+  },
+  {
+   "rang": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "couvert",
+   "ancre": "g98-9 (alert), g98-0"
+  },
+  {
+   "rang": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "partiel",
+   "ancre": "g98-e-1 à e-4 ; valeurs normales et valeur des alternatives absentes (C15, C16)"
+  },
+  {
+   "rang": 11,
+   "rubrique": "Diagnostic différentiel (discriminants)",
+   "statut": "partiel",
+   "ancre": "g98-8 ; discriminants IRM de S2 tableau 1 non exploités hors ostéomyélite"
+  },
+  {
+   "rang": 12,
+   "rubrique": "Prise en charge suisse",
+   "statut": "couvert",
+   "ancre": "g98-9 à g98-11 ; C11"
+  },
+  {
+   "rang": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "couvert",
+   "ancre": "g98-4, g98-11 ; C04"
+  },
+  {
+   "rang": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "couvert",
+   "ancre": "g98-12 ; C19, C21"
+  },
+  {
+   "rang": 15,
+   "rubrique": "Situations particulières",
+   "statut": "partiel",
+   "ancre": "g98-13 ; enfant et grossesse sans source (déclaré)"
+  },
+  {
+   "rang": 16,
+   "rubrique": "Spécificités suisses",
+   "statut": "partiel",
+   "ancre": "g98-13 (niveaux de soins) ; assurances et conduite non lues (C14)"
+  },
+  {
+   "rang": 17,
+   "rubrique": "Critères formels du diagnostic (div.alert)",
+   "statut": "couvert",
+   "ancre": "g98-14 alert"
+  },
+  {
+   "rang": 18,
+   "rubrique": "Paramètres clés chiffrés (div.key)",
+   "statut": "couvert",
+   "ancre": "g98-14 key ; C12, C18"
+  },
+  {
+   "rang": 19,
+   "rubrique": "Sous-codes CIM-10-GM couverts",
+   "statut": "couvert",
+   "ancre": "G98 sans sous-code (S12)"
+  },
+  {
+   "rang": 20,
+   "rubrique": "Points d’examen fédéral",
+   "statut": "partiel",
+   "ancre": "pièges g98-13 ; objectifs PROFILES non cités"
+  },
+  {
+   "rang": 21,
+   "rubrique": "Sémiologie fondamentale et analytique",
+   "statut": "absent",
+   "ancre": "aucun sous-onglet g98-s-semio (C01)"
+  }
+ ],
+ "semiologie": {
+  "statut": "absente",
+  "decompte_data_s": 3,
+  "data_s": [
+   "g98-s-anat",
+   "g98-s-bio",
+   "g98-s-img"
+  ],
+  "sous_onglet_semio": false,
+  "gravite": "MAJEUR",
+  "constat_id": "C01",
+  "fondamentale": {
+   "statut": "partielle dans l’onglet 1 (g98-7), absente comme discipline",
+   "ancres": [
+    "g98-7",
+    "g98-thermometrie"
+   ],
+   "manques": "définition, normal, technique (monofilament, diapason, pouls, indice cheville-bras), mécanisme par signe, valeur, pièges"
+  },
+  "analytique": {
+   "statut": "absente",
+   "ancres": [],
+   "manques": "regroupement syndromique, raisonnement en cinq étapes, examen systématique, synthèse présentée, trois cas corrigés"
+  },
+  "proposition": [
+   "propositions/G98_c_semio.html",
+   "propositions/G98_b_semio_clinique.html",
+   "propositions/G98_pop1_semio.html"
+  ],
+  "grille_SEM": {
+   "SEM-01": "non",
+   "SEM-02": "non",
+   "SEM-03": "non",
+   "SEM-04": "oui (test_v7.py --static G98 : « G98 mots 11585 fenêtres 28 quiz 6 pareto 7 — OK » sur la leçon actuelle)",
+   "SEM-05": "non",
+   "SEM-06": "non",
+   "SEM-07": "non",
+   "SEM-08": "non",
+   "SEM-09": "non",
+   "SEM-10": "non",
+   "SEM-11": "non",
+   "SEM-12": "non",
+   "SEM-13": "non (pas d’alert sémiologique ; l’alert g98-9 existe)",
+   "SEM-14": "non",
+   "SEM-15": "non",
+   "SEM-16": "non",
+   "SEM-17": "non",
+   "SEM-18": "non",
+   "SEM-19": "non évaluable (absente)",
+   "SEM-20": "non évaluable (absente) ; incohérence ≥/> 2 °C (C12)",
+   "SEM-21": "non évaluable",
+   "SEM-22": "non (bouton absent)",
+   "SEM-23": "non (aucune capture possible)",
+   "SEM-24": "oui (statut « Revue par intelligence artificielle · Audit différé · Aucune validation médicale humaine »)"
+  },
+  "lacune_valeurs": "Aucune sensibilité, spécificité ni rapport de vraisemblance pour la chaleur, l’œdème, la rougeur, la douleur, le monofilament ou le diapason dans le diagnostic du Charcot (S1, S3, S13). Seules valeurs disponibles : concordance du site de l’écart thermique maximal avec la radiographie (92 % au diagnostic, 72 % au suivi) [S1] ; la précision du seuil de 2 °C n’est pas démontrée [S1].",
+  "cibles": {
+   "propositions/G98_c_semio.html": "chapters/G98/G98_c.html",
+   "propositions/G98_b_semio_clinique.html": "chapters/G98/G98_b.html",
+   "propositions/G98_pop1_semio.html": "chapters/G98/G98_pop1.html"
+  }
+ },
+ "figures": [],
+ "figures_synthese": {
+  "total": 0,
+  "ANATOMIQUE_IA": 0,
+  "ORIGINE_INCONNUE": 0,
+  "SCHEMA_NON_ANATOMIQUE": 0,
+  "IMAGE_SOURCEE": 0,
+  "methode": "python3 tools/image_clo_finder.py inventory G98 → [] ; recherche de <figure>, <svg>, <img> dans les 7 fichiers : aucune",
+  "candidats_proposes": [
+   {
+    "figure": "Rosskopf et coll. 2019, figure 10 (mesures de l’arche)",
+    "licence": "CC BY 4.0 (article)",
+    "controle_visuel": "non fait (téléchargement refusé : Europe PMC 403, Springer 404)"
+   },
+   {
+    "figure": "Rosskopf et coll. 2019, figure 14 (stade 0 : radiographie normale, STIR)",
+    "licence": "CC BY 4.0",
+    "controle_visuel": "non fait"
+   },
+   {
+    "figure": "Rosskopf et coll. 2019, figures 2, 3 et 20 (pied actif, pied à bascule, ulcère sous-cuboïdien)",
+    "licence": "CC BY 4.0",
+    "controle_visuel": "non fait"
+   }
+  ]
+ },
+ "verifications_conformes": [
+  "Codage G98†/M14.6-*, E10–E14† .6, A52.1† et exclusions (S12)",
+  "Recommandations IWGDF 1 à 26 : forces et certitudes reprises exactement (S1)",
+  "Prévalences 0,04/0,3/0,53 % ; 1,6 million = 537 M × 0,3 % (S1)",
+  "Série de 71 cas : 12/13, 69 % contre 7 %, p = 0,0012, plâtre de 4 à 6 mois (S4)",
+  "Zones II et III 45 % + 35 % = 80 % (S2)",
+  "Durées 3 à 6 mois, 18 mois, 4 à 6 semaines, visites 3 à 5 semaines (S1, S3)",
+  "Énoxaparine 20/40 mg, 6 à 14 jours, < 30 ml/min → 20 mg (FI Clexane février 2026, S10)",
+  "IRM et ostéomyélite 77–100 %, 80–100 %, VPN 98 % (S2)",
+  "Ilizarov 9 % contre 36 %, 0 % contre 38 % (S9, résumé)",
+  "Suivi niveau 1 tous les 3 mois, niveau 3 une fois par an (S3)"
+ ],
+ "lacunes": [
+  "Texte intégral de Gastaldi et coll., Rev Med Suisse 2013 non lu (fourchette 0,1–13 % non vérifiable) : WebSearch « Gastaldi Ruiz Borens Charcot Revue médicale suisse 2013 » sans accès au texte.",
+  "Séries Chantelau 2013 et 2014, Waibel 2022, Fischer 2026 lues en résumé seulement.",
+  "Version française 2023 du document QualiCCare non trouvée ; seule la version allemande 2023 a été lue.",
+  "Figures candidates (Rosskopf 2019, CC BY 4.0) non contrôlées visuellement : téléchargement refusé (Europe PMC 403, serveur Springer 404).",
+  "Règles AI/AVS des chaussures orthopédiques (OMAI ch. 4.01–4.04 ; circulaire AVS 2024) et aptitude à la conduite sous plâtre : textes en vigueur non lus (rubrique 16).",
+  "Aucune source de sémiologie universitaire suisse (UNIGE, UNIL) consacrée au pied neuropathique trouvée ; la technique d’examen repose sur les recommandations pratiques de l’IWGDF 2023.",
+  "Aucune valeur de sensibilité, spécificité ou rapport de vraisemblance des signes cliniques du Charcot dans les sources lues.",
+  "Version française OFS de la CIM-10-GM 2024 non relue (libellés allemands du BfArM vérifiés).",
+  "tests/audit_sciences.py et test_v7.py n’ont pas été exécutés sur la leçon modifiée par les propositions (aucune écriture canonique autorisée) ; contrôle à faire à l’intégration.",
+  "Hors périmètre médical, signalé au LANG : numérotation des cas pédagogiques non continue (1, 2, 3, 5 en e-5 ; 6 en p-4 ; 4 en p-5)."
+ ],
+ "propositions": [
+  "G98_c_semio.html",
+  "G98_b_semio_clinique.html",
+  "G98_pop1_semio.html",
+  "G98_c_sciences.html",
+  "G98_corrections.html",
+  "G98_a_etiologies.html",
+  "G98_d_enoxaparine.html",
+  "G98_c_examens.html",
+  "G98_b_decharge_suisse.html"
+ ],
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+}
