@@ -1,0 +1,217 @@
+{
+ "actor": "Claude",
+ "code": "C72",
+ "kind": "SEMIO",
+ "mission": "ALPHA77-CLAUDE-C72-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "reviewed_commit": "25e29e3c4f8474baec8f161192da655b44612102",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/C72/C72_a.html": "61f1e5b6546203dff263a254d4ce4d1b75f0c58f111237d9e4d7319f4bda2a3b",
+  "chapters/C72/C72_b.html": "ed523b09dd861f69865aeac53d0997d115bc87753561655f9c85fe7bed518edd",
+  "chapters/C72/C72_c.html": "a100855b7613bc9b1233bc183e682854e2cfb29bf93c5b0c5d46c1fa31087d73",
+  "chapters/C72/C72_d.html": "96fc32e80a72746959bb0b7d9321213b08b1cd96d4b64ad0a524dcf62ed73aa6",
+  "chapters/C72/C72_pop1.html": "aaa43aea83d40278ee04551db9862094f04859c12dc6ab33ffc6e6e006280440",
+  "chapters/C72/C72_pop2.html": "2e52a53cc60772328277c7026f5e635377d9b8b08a2c7a6e98bc1dbaea26c0c9",
+  "glossary/c72.py": "185664974a2e7229c14467056c627462f056a4c39ba8a449d50c4cd748e390eb"
+ },
+ "reviewed_files_sha256": {
+  "chapters/C72/C72_a.html": "266c16e1cd767548f3e62937bd4af31df98929636ba8395b6392ff9ef055d43c",
+  "chapters/C72/C72_b.html": "92d89cbe4fc361012a93d5562e0f91cdd5963293f0543a10cdcabec3704f83e9",
+  "chapters/C72/C72_c.html": "2fb440b80b889276d23e252f40fd4192e31794709360edf43e281b91fd199153",
+  "chapters/C72/C72_d.html": "07f6c0adeb5cd6c0b82a7a06f3aa396aa6cbdae6dfe944222887ac9a71239211",
+  "chapters/C72/C72_pop1.html": "dd87aabf0e307f6ec2ab91407177a131f29bedc385ae2aadae5ab646975c4317",
+  "chapters/C72/C72_pop2.html": "8f3f9002753350d61643b6ec6f13e77a2c35cca7abd0376ee2efc41bc6bb6735",
+  "glossary/c72.py": "32d9cc80b0ad811165166cac0a064ef23fdccd8d2f3e6661f7aa73cae1917539"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "requirement": "fundamental_analytical_semiology",
+ "tab_id": "c72-s-semio",
+ "source_path": "chapters/C72/C72_c.html",
+ "clinical_marker": {
+  "fichier": "chapters/C72/C72_a.html",
+  "selecteur": "section[data-semiology-clinical=\"C72\"] (îlot c72-6, Examen clinique)",
+  "dans_pA": true
+ },
+ "sections": {
+  "normal": "c72-sm-1",
+  "signs": "c72-sm-2",
+  "mechanisms": "c72-sm-3",
+  "examination": "c72-sm-4",
+  "interpretation": "c72-sm-5",
+  "differentials": "c72-sm-6",
+  "urgency": "c72-sm-7",
+  "limits": "c72-sm-8",
+  "sources": "c72-sm-9"
+ },
+ "grille_SEM": [
+  {
+   "critere": "SEM-01",
+   "resultat": "oui",
+   "preuve": "bouton #c72-tab-semio premier de .sci-bar, libellé exact « Sémiologie fondamentale et analytique », div#c72-s-semio role=tabpanel"
+  },
+  {
+   "critere": "SEM-02",
+   "resultat": "oui",
+   "preuve": "premier h3 exact « Pour la leçon : quelle est la sémiologie fondamentale et analytique ? »"
+  },
+  {
+   "critere": "SEM-03",
+   "resultat": "oui",
+   "preuve": "audit_sciences sur c72-s-semio : 3 368 mots, figure 8 SVG non anatomique avec figcaption et aria-label ; seule erreur du script : c72-s-anat sans figure (retrait MAJ-06)"
+  },
+  {
+   "critere": "SEM-04",
+   "resultat": "oui",
+   "preuve": "test_v7.py --static C72 : OK"
+  },
+  {
+   "critere": "SEM-05",
+   "resultat": "oui",
+   "preuve": "c72-sm-2 : tableau symptôme/mécanisme/valeur/piège introduit et commenté"
+  },
+  {
+   "critere": "SEM-06",
+   "resultat": "oui",
+   "preuve": "c72-sm-4 : dix étapes ; la gestuelle détaillée (réflexes, Babinski, niveau sensitif) est déclarée non décrite faute de source lue (c72-sm-8)"
+  },
+  {
+   "critere": "SEM-07",
+   "resultat": "oui",
+   "preuve": "c72-sm-3 : chaîne structure normale → perturbation → signe → implication"
+  },
+  {
+   "critere": "SEM-08",
+   "resultat": "oui",
+   "preuve": "c72-sm-9 : chaque affirmation reliée à sa section source ; absences écrites « non chiffrée dans les sources lues »"
+  },
+  {
+   "critere": "SEM-09",
+   "resultat": "oui",
+   "preuve": "c72-sm-1 décrit le normal avant les signes"
+  },
+  {
+   "critere": "SEM-10",
+   "resultat": "oui",
+   "preuve": "colonne Piège, div.trap de c72-sm-5, fenêtres"
+  },
+  {
+   "critere": "SEM-11",
+   "resultat": "oui",
+   "preuve": "c72-sm-6 : tableau des syndromes médullaires"
+  },
+  {
+   "critere": "SEM-12",
+   "resultat": "oui",
+   "preuve": "c72-sm-5 : liste ordonnée en cinq étapes"
+  },
+  {
+   "critere": "SEM-13",
+   "resultat": "oui",
+   "preuve": "alert de c72-sm-7 cohérente avec l’îlot 8 et le bloc clinique de c72-6"
+  },
+  {
+   "critere": "SEM-14",
+   "resultat": "oui",
+   "preuve": "c72-sm-6 .two : discriminants sourcés (Hess, Galliker, Nersesyan)"
+  },
+  {
+   "critere": "SEM-15",
+   "resultat": "oui",
+   "preuve": "c72-sm-4 : examen en dix étapes"
+  },
+  {
+   "critere": "SEM-16",
+   "resultat": "oui",
+   "preuve": "c72-sm-4 .card constatations/interprétation/limites"
+  },
+  {
+   "critere": "SEM-17",
+   "resultat": "oui",
+   "preuve": "3 quiz dans c72-sm-5 ; correction affichée au clic"
+  },
+  {
+   "critere": "SEM-18",
+   "resultat": "oui",
+   "preuve": "9/9 fenêtres c72-sm-* ouvertes au navigateur, contenu réel"
+  },
+  {
+   "critere": "SEM-19",
+   "resultat": "oui",
+   "preuve": "sources suisses (résumés) puis européennes ; aucune recommandation américaine retenue comme fondement"
+  },
+  {
+   "critere": "SEM-20",
+   "resultat": "oui",
+   "preuve": "chiffres concordants avec l’onglet 1 (200 ml, 0,23–0,53, 8–16 %, T12–L1)"
+  },
+  {
+   "critere": "SEM-21",
+   "resultat": "oui",
+   "preuve": "renvois vers l’onglet Pathologie ; pas de duplication des traitements"
+  },
+  {
+   "critere": "SEM-22",
+   "resultat": "oui",
+   "preuve": "390 px : aucun défilement horizontal, texte des figures ≥ 15 px"
+  },
+  {
+   "critere": "SEM-23",
+   "resultat": "oui",
+   "preuve": "captures réelles de W (integration/captures) et de P (revue/captures)"
+  },
+  {
+   "critere": "SEM-24",
+   "resultat": "oui",
+   "preuve": "statut « revue IA, distincte d’une validation médicale humaine »"
+  }
+ ],
+ "findings": [
+  {
+   "id": "SEMIO-STRUCTURE",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Contrat structurel du sous-onglet.",
+   "verification": "Sémiologie premier sous-onglet, aria-selected=true, cinq autres disciplines (Anatomie, Neuropathologie, Génétique, Radiobiologie, Physiologie) aria-selected=false et masquées ; 6 data-s ; 9 sections data-semiology dans l’ordre normal → sources ; bloc clinique dans pA ; aucun Pareto sur une section data-semiology.",
+   "evidence": [
+    "revue/rendu_chromium.json : passed (bureau et 390 px, aucune erreur JavaScript, 97 fenêtres ouvertes sans échec).",
+    "integration/outils/semio_check.py . C72 : passed sur les fichiers finaux."
+   ]
+  },
+  {
+   "id": "SEMIO-P-01",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "constat": "c72-sm-8 : proportion d’astrocytomes mal rapportée ; fenêtre c72-sm-nf1-douleur contradictoire.",
+   "verification": "Voir MED P-MED-02 et P-MED-05.",
+   "evidence": [
+    "Commit 25e29e3c."
+   ]
+  },
+  {
+   "id": "SEMIO-ANAT",
+   "severite": "—",
+   "status": "non_blocking",
+   "constat": "Discipline Anatomie sans figure.",
+   "verification": "Retrait décidé par Vial (MAJ-06) ; tests/audit_sciences.py échoue sur ce seul point et n’est appelé ni par la CI ni par tools/alpha_publication.py.",
+   "evidence": [
+    "integration/controles.json, revue_agent_P.audit_sciences.ci_et_publication."
+   ],
+   "justification_non_bloquant": "Lacune déclarée, aucun SVG factice."
+  }
+ ],
+ "evidence": [
+  "Contrôle de structure reproduisant tests/audit_sciences.py et le validateur sémiologique de tools/starter_codex.py.",
+  "Construction hors dépôt : MEDINA_OUT=<scratchpad>/c72p/build python3 build_front.py --fragment S08 (14 402 054 octets) ; Playwright, Chromium 1194, 1300 × 900 et 390 × 844, 16.10.2026.",
+  "Captures revue/captures/C72_0*, C72_1* et C72_P_fenetre_divergence_festonnage_*.png."
+ ],
+ "conclusion": "Aucun constat bloquant pour la sémiologie fondamentale et analytique : la Sémiologie est le premier sous-onglet sélectionné, suivie de cinq disciplines ; rendu réel contrôlé au bureau et à 390 px sur 25e29e3c.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine.",
+ "scope": "Sous-onglet c72-s-semio, bloc clinique c72-6, fenêtres c72-sm-*, discipline Physiologie."
+}

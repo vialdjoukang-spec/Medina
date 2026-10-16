@@ -1,0 +1,157 @@
+{
+ "actor": "Claude",
+ "code": "G71",
+ "kind": "MED",
+ "mission": "ALPHA77-CLAUDE-G71-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "reviewed_commit": "00d06374ce91059f075c1fb46f02f79821cc0d4a",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/G71/G71_a.html": "340952bfc78183bc71f3c75da5b7ffea5bbf2b6ae46cbd80476a88b6657f455f",
+  "chapters/G71/G71_b.html": "d9c14212393548209c4bc382d1bb3f1fbd9953846ec65fc5efef80cb235a65d3",
+  "chapters/G71/G71_c.html": "f62cfef7715eaa515e153ee7b7dce2ec80ae6b8454e876b55dbdaac2e969f880",
+  "chapters/G71/G71_d.html": "05995b523a95b6fa35dcc48430841156aa1e0e4ffc69de0c3803d767effc92a7",
+  "chapters/G71/G71_pop1.html": "a129be27fe0e9f3af32d0823424c141e5aa16b4621548ff917673d0069939873",
+  "chapters/G71/G71_pop2.html": "4102e940bdf1ba40c881716bc5c9c299b0ffba04df54abc9d7f8d01f453b9afd",
+  "glossary/g71.py": "b270b6e75234c30ee4bb078483df1e3651feef40a3ea4d9e9bdd20dd65eb6a3d"
+ },
+ "reviewed_files_sha256": {
+  "chapters/G71/G71_a.html": "6c35793d7bf6d050436c5740eed68757cc00a0c5e0e35e57dab187e2c42446f2",
+  "chapters/G71/G71_b.html": "eeb478aa8ea383bea463eff1185e43462e671b876054f51c330fccb2b902b041",
+  "chapters/G71/G71_c.html": "9ebbe077908977991768c93bda4d6d53f2224f8bfb24cad95415cef443869db0",
+  "chapters/G71/G71_d.html": "d861c40d19f2658fd76bae378d90c1160190f00d7550f2320fe843d0645d85bc",
+  "chapters/G71/G71_pop1.html": "6f6bd51457b5233ea4d255d563042ca0a7dc5ea4c0be2a8d2bacdc8de4915b2f",
+  "chapters/G71/G71_pop2.html": "2fd764ac5635a15848598d6e270e47d34c80a06aaf161793908717fa5753f69e",
+  "glossary/g71.py": "97b6c3a63329cfea433f537ffc8d8587e7db4d59a16912f4b92aab95b47b6a87"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "scope": "Différence base 523832d9 → 00d06374 des sept fichiers ; contre-lecture des sources primaires pour chaque fait médical nouveau (FI suisses AGAMREE, Suxamethonium Aguettant, Modasomil, Lamotrigine Sandoz ; consensus MELAS PMC13090769 ; EPAR Translarna, Duvyzat, Namuscla ; Care-NMD-CH, Swiss-Reg-NMD Duchenne, cohorte LAMA2, dysferlinopathie suisse ; Ashizawa 2018 ; MRC). Les passages inchangés depuis l’audit ALPHA1-CLAUDE-G71-MED n’ont pas été relus en totalité.",
+ "findings": [
+  {
+   "id": "C03",
+   "severite": "MAJEUR",
+   "status": "resolved",
+   "fichier": "chapters/G71/G71_b.html, G71_d.html, G71_pop1.html, G71_pop2.html",
+   "constat": "Hydrocortisone de stress sous vamorolone, vamorolone seul déconseillé, décroissance par paliers d’environ 20 %.",
+   "verification": "Correction de W confirmée mot à mot dans la FI AGAMREE (GTIN 7680696500010, mise à jour octobre 2026, relue le 16.10.2026) : « doit être temporairement complété par de l’hydrocortisone par voie systémique » ; « Un traitement uniquement par AGAMREE pendant les phases de stress accru est déconseillé car AGAMREE a un effet antagoniste des récepteurs minéralocorticoïdes » ; « par paliers d’environ 20 % par rapport à la dose précédente » ; aucune donnée sur l’augmentation de dose ; supplémentation envisagée en cas d’infection modérée ou sévère ; carte d’alerte. Doses 6 mg/kg (< 40 kg), 240 mg (≥ 40 kg), 4 et 2 mg/kg, Child-Pugh B 2 mg/kg ou 80 mg, C contre-indiqué, CYP3A4 4 mg/kg, vaccins vivants 6 semaines, potassium à un mois : conformes.",
+   "evidence": [
+    "FI AGAMREE, rubriques Posologie, Contre-indications, Mises en garde, Interactions."
+   ]
+  },
+  {
+   "id": "C04",
+   "severite": "MAJEUR",
+   "status": "resolved",
+   "fichier": "chapters/G71/G71_b.html, G71_d.html, G71_pop1.html",
+   "constat": "Contre-indications du suxaméthonium selon la FI suisse.",
+   "verification": "Contre-indications conformes à la FI Suxamethonium Aguettant (GTIN 7680699390014, mars 2025) : myopathies des muscles squelettiques dont Duchenne, maladies myotoniques congénitales, antécédent personnel ou familial d’hyperthermie maligne ; dantrolène IV de première intention. La FI écrit « ne doit pas être administré chez des enfants de moins de 12 ans » (Posologie) en raison des graduations de la seringue préremplie, et « n’est pas recommandé » (Mises en garde). P a rattaché la limite des 12 ans à cette présentation et à sa justification dans les trois fichiers, au lieu d’une exclusion générale de la molécule. Seule FI suisse de suxaméthonium trouvée dans AmiKo (recherches suxamethonium, Lysthenon, succinyl).",
+   "correction_P": "G71_b : « La même fiche précise que cette seringue préremplie ne doit pas être administrée avant 12 ans, car ses graduations ne permettent pas un dosage précis à cet âge » ; G71_pop1 et G71_d alignés.",
+   "evidence": [
+    "FI Suxamethonium Aguettant, Indications, Posologie (ligne « ne doit pas être administré »), Contre-indications, Mises en garde.",
+    "Commit P 00d06374."
+   ]
+  },
+  {
+   "id": "P-MED-01",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G71/G71_a.html, G71_pop1.html",
+   "constat": "Dénominations mélangées succinylcholine / suxaméthonium.",
+   "verification": "La FI suisse emploie « suxaméthonium » ; les trois occurrences de « succinylcholine » (G71_a, fenêtre g71-hm) sont remplacées. Aucune occurrence restante dans les sept fichiers.",
+   "evidence": [
+    "grep succinylcholine : 0 occurrence après 00d06374."
+   ]
+  },
+  {
+   "id": "C05",
+   "severite": "MAJEUR",
+   "status": "resolved",
+   "fichier": "chapters/G71/G71_a.html, G71_b.html, G71_c.html, G71_pop1.html",
+   "constat": "Conduite devant l’épisode pseudo-vasculaire du MELAS.",
+   "verification": "Texte intégral PMC13090769 relu (Europe PMC, XML SHA-256 496d9a6b…) : « prompt use of neuroimaging, EEG, and genetic testing to confirm the diagnosis and exclude mimics » ; antiépileptiques « irrespective of EEG confirmation » ; « antiplatelet agents and thrombolysis, are not indicated » ; corticoïdes IV « on a case-by-case basis … almost exclusively anecdotal reports » ; lactate et trou anionique pouvant être basaux, dextrose concentré évité, bicarbonate si déficit sévère ; énoncé 4.36 ; lésions ne respectant pas les grands territoires vasculaires. Conformes. L’orientation d’un déficit non confirmé vers la filière AVC est déclarée comme déduction prudente, non comme énoncé du consensus.",
+   "evidence": [
+    "PMC13090769, sections 3.2 et tableau des énoncés."
+   ]
+  },
+  {
+   "id": "C06",
+   "severite": "MAJEUR",
+   "status": "resolved",
+   "fichier": "chapters/G71/G71_d.html, G71_pop2.html",
+   "constat": "Statut européen de l’ataluren.",
+   "verification": "Page EPAR Translarna relue le 16.10.2026 : autorisation conditionnelle du 31.07.2014, décision de non-renouvellement du 28.03.2025, « effectiveness … has not been confirmed », statut Expired. Conforme. P a remplacé « n’est plus une option thérapeutique » (interprétation) par « n’est plus autorisé dans l’Union européenne » (constat de la source).",
+   "correction_P": "G71_d tableau p-1 et fenêtre g71-ataluren.",
+   "evidence": [
+    "https://www.ema.europa.eu/en/medicines/human/EPAR/translarna (HTML SHA-256 57b2a24c…).",
+    "Commit P 00d06374."
+   ]
+  },
+  {
+   "id": "C07",
+   "severite": "MAJEUR",
+   "status": "resolved",
+   "fichier": "chapters/G71/G71_b.html, G71_d.html, G71_pop2.html",
+   "constat": "Emplois hors indication signalés.",
+   "verification": "Modasomil (GTIN 7680552720064, octobre 2026) : seule indication « Somnolence excessive associée à une narcolepsie avec ou sans cataplexie » ; Lamotrigine Sandoz (GTIN 7680574120033, mars 2026) : épilepsie (monothérapie ou association dès 12 ans, association de 2 à 12 ans) et trouble bipolaire dès 18 ans ; Namuscla (EPAR) : myotonie des troubles myotoniques non dystrophiques. Le modafinil dans la DM1, la lamotrigine dans la myotonie et la mexilétine dans la DM1 sont signalés hors indication ; aucune posologie hors indication n’est affirmée. Givinostat : autorisation conditionnelle UE du 6 juin 2025, ambulants ≥ 6 ans sous corticoïdes (EPAR Duvyzat) : conforme.",
+   "evidence": [
+    "FI Modasomil et Lamotrigine Sandoz, Indications ; EPAR Namuscla et Duvyzat."
+   ]
+  },
+  {
+   "id": "C14-C16",
+   "severite": "ENRICHISSEMENT",
+   "status": "resolved",
+   "fichier": "chapters/G71/G71_a.html, G71_b.html",
+   "constat": "Données suisses (Care-NMD-CH, Swiss-Reg-NMD, LAMA2, dysferlinopathie).",
+   "verification": "Textes intégraux relus : 7 centres neuromusculaires accrédités et mise en œuvre dans 8 centres en 2023 (PMC12976599) ; 42 questionnaires retournés, 40 inclus, 23/40, 9/40, 8/40 (PMC10332943) ; 17/2 123 128 = 0,8/100 000, 18 patients de 16 familles, 14 CMD, CK 676–21 160, IRM 13/14 (PMC11380305) ; 13 patients, début 18,8 ± 4,3 ans, CK moyenne 12 500, 9 patients de 3 familles de Schwyz dont 7 homozygotes, effet fondateur (PMC4596355). Conformes.",
+   "evidence": [
+    "Europe PMC fullTextXML des quatre articles, lus le 16.10.2026."
+   ]
+  },
+  {
+   "id": "C21-S4",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G71/G71_b.html, G71_c.html, G71_pop1.html, G71_pop2.html",
+   "constat": "Seuils DM1 (ECG, toux).",
+   "verification": "Ashizawa 2018 (PMC6294540) : « sinus rate <50 BPM, PR interval >200 ms, QRS duration >100 ms », toux > 270 L/min, « annual or biennial ECG ». Conformes.",
+   "evidence": [
+    "PMC6294540, sections Cardiac et Respiratory."
+   ]
+  },
+  {
+   "id": "C08",
+   "severite": "MAJEUR",
+   "status": "non_blocking",
+   "fichier": "chapters/G71/G71_c.html",
+   "constat": "Figure 2 ANATOMIQUE_IA retirée sans remplacement.",
+   "verification": "Aucun appel textuel orphelin à la figure 2 ; aucun SVG factice ni dessin anatomique ajouté. Figure 2 (Anatomie, classée ANATOMIQUE_IA par l’audit MED C08) retirée sans remplacement sur décision de Vial : la discipline g71-s-anat n’a plus de figure ; tests/audit_sciences.py --base 523832d9ef6097607d3443f4398deee9cd0add11 --codes G71 échoue sur ce seul point (« G71/g71-s-anat: aucune figure »). Ce script ne fait partie ni de la CI (.github/workflows : seul tests/test_audit_sciences.py, qui teste le script sur des dépôts temporaires, est exécuté par unittest discover) ni de tools/alpha_publication.py (aucune référence). Aucun SVG factice ni dessin anatomique ajouté ; un original anatomique sourcé et licencié reste à trouver.",
+   "justification_non_bloquant": "Décision de Vial (retrait sans remplacement) ; lacune déclarée dans corrections.json et dans la note du reçu.",
+   "evidence": [
+    "python3 tests/audit_sciences.py --base 523832d9ef6097607d3443f4398deee9cd0add11 --codes G71 : errors = [\"G71/g71-s-anat: aucune figure\"]."
+   ]
+  }
+ ],
+ "lacunes_declarees": [
+  "Figure 2 (Anatomie, classée ANATOMIQUE_IA par l’audit MED C08) retirée sans remplacement sur décision de Vial : la discipline g71-s-anat n’a plus de figure ; tests/audit_sciences.py --base 523832d9ef6097607d3443f4398deee9cd0add11 --codes G71 échoue sur ce seul point (« G71/g71-s-anat: aucune figure »). Ce script ne fait partie ni de la CI (.github/workflows : seul tests/test_audit_sciences.py, qui teste le script sur des dépôts temporaires, est exécuté par unittest discover) ni de tools/alpha_publication.py (aucune référence). Aucun SVG factice ni dessin anatomique ajouté ; un original anatomique sourcé et licencié reste à trouver.",
+  "Aucune sensibilité, spécificité ni rapport de vraisemblance pour Gowers, myotonie de préhension, cotation MRC ou symptômes d’hypoventilation dans les sources lues.",
+  "Statut suisse de la mexilétine, du givinostat, de l’ataluren et du déflazacort non trouvé (recherche AIPS négative, non probante).",
+  "Plusieurs sources au niveau du résumé (S5, S14, S15, S16, S21, S23, Continuum 2025)."
+ ],
+ "evidence": [
+  "Lecture différentielle base 523832d9 → 00d06374ce91059f075c1fb46f02f79821cc0d4a des sept fichiers (scripts hors dépôt, scratchpad g71p).",
+  "FI suisses via tools/swissmedic_fi.py texte (AGAMREE, Suxamethonium Aguettant, Modasomil, Lamotrigine Sandoz), lues le 16.10.2026.",
+  "Consensus MELAS PMC13090769, texte intégral Europe PMC.",
+  "EPAR Translarna, Duvyzat, Namuscla (EMA), lus le 16.10.2026.",
+  "python3 test_v7.py --static G71 : OK (mots 25334, fenêtres 78, quiz 10, Pareto 20) ; build_medina.audit {} via test_v7.",
+  "Rendu Chromium hors dépôt du fragment S08 construit par build_front.py (SHA-256 b6268b00d02624a117a0a320fad2253c532a676c30ed2cd2aae92ef8584d86bc) : bureau 1440 px et mobile 390 px, aucune erreur JavaScript ; captures revue/captures/P_*.png."
+ ],
+ "conclusion": "Aucun constat bloquant : C03 à C07 sont confirmés dans leurs sources primaires ; P a harmonisé la dénomination suxaméthonium, rattaché la limite des 12 ans à la seringue préremplie de la FI et aligné le statut de l’ataluren sur l’EPAR (commit 00d06374). C08 reste une lacune déclarée (Anatomie sans figure).",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
