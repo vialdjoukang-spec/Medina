@@ -1,0 +1,379 @@
+{
+  "mission": "ALPHA1-CLAUDE-G99-LANG",
+  "code": "G99",
+  "type_audit": "linguistique",
+  "base_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+  "worktree_base": "103745baaa38c76f18288758cc7f689e5091ccdb",
+  "worktree_base_note": "Le worktree a démarré sur le HEAD 103745ba (fusion de la PR #203) ; les sept sources figées sont identiques à celles de la base 523832d9 de la mission (empreintes conformes au manifeste).",
+  "generation": 1,
+  "branche": "claude/alpha1/g99-lang-g1",
+  "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G99-LANG",
+  "conversation": "alpha1-claude-g99-lang",
+  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+  "modele_effort": "conforme au manifeste",
+  "date_debut": null,
+  "date_fin": "2026-10-16T10:15:00Z",
+  "date_debut_note": "Heure de début non consignée par l’exécutant ; la fin est l’horodatage de rédaction du rapport.",
+  "lecture": {
+    "fichiers": [
+      "chapters/G99/G99_a.html",
+      "chapters/G99/G99_b.html",
+      "chapters/G99/G99_c.html",
+      "chapters/G99/G99_d.html",
+      "chapters/G99/G99_pop1.html",
+      "chapters/G99/G99_pop2.html",
+      "glossary/g99.py"
+    ],
+    "empreintes_conformes": true,
+    "empreintes_calculees": {
+      "chapters/G99/G99_a.html": "cd27f43e6d8f46d5585cb0fe831e1f349f16f568ffb8bbcc8fba6365790e1ee9",
+      "chapters/G99/G99_b.html": "ba34b7939dd08feada8eeff516b03349e6605c1a4f329c7c1aa4f649a98bb911",
+      "chapters/G99/G99_c.html": "06b6ce35d9331912658f8e8fbfb4db1230fa080d2c1cf9f4fe4853c153caeb49",
+      "chapters/G99/G99_d.html": "0095dcedf124e31049bd4d5e71092e87aff6fd2299dca33224a6d863c1eb598c",
+      "chapters/G99/G99_pop1.html": "0975a94241e28d5d9dd94aa7662ca16e1f4c344c7bc14fb09e90d17cc1a4e206",
+      "chapters/G99/G99_pop2.html": "65c5f6556f839010f00f8e86ffaf32a04e1be9009f9a165da3fa99378857b7fc",
+      "glossary/g99.py": "ce1ce5f9f6bfb6a714ae4a467ef286b271e768b004f725f4f3a01aea63244e9c"
+    }
+  },
+  "premiere_verification": "Recalcul des SHA-256 des 7 fichiers contre .medina/missions/ALPHA1-CLAUDE-G99-LANG.json (tous conformes) ; lecture intégrale des 7 fichiers ; contrôle des abréviations par build_medina.audit() sur chaque source avant et après application simulée des propositions (résultat {} dans les deux cas).",
+  "synthese": {
+    "nombre_propositions": 119,
+    "renvois_medicaux": 28,
+    "propositions_par_categorie": {
+      "syntaxe": 56,
+      "registre": 20,
+      "ambiguïté": 14,
+      "répétition": 8,
+      "grammaire": 7,
+      "ponctuation": 4,
+      "cohérence": 4,
+      "intitulé": 2,
+      "terminologie": 2,
+      "typographie": 1,
+      "orthographe": 1
+    },
+    "propositions_par_fichier": {
+      "chapters/G99/G99_a.html": 23,
+      "chapters/G99/G99_b.html": 29,
+      "chapters/G99/G99_c.html": 19,
+      "chapters/G99/G99_d.html": 5,
+      "chapters/G99/G99_pop1.html": 30,
+      "chapters/G99/G99_pop2.html": 9,
+      "glossary/g99.py": 4
+    },
+    "constats_hors_perimetre": 9,
+    "note_ids": "Identifiants P-001 à P-119 continus ; R-01 à R-28 continus."
+  },
+  "propositions_fichier": "propositions.json",
+  "verification_unicite": {
+    "methode": "script Python : ancien.count(fichier) == 1 pour chacune des 119 propositions ; absence de chevauchement entre propositions d’un même fichier ; application simulée en mémoire, puis build_medina.audit() == {} sur les six fichiers HTML et ast.parse sur glossary/g99.py ; mêmes comptages pour les ancres des 28 renvois",
+    "toutes_uniques": true,
+    "sans_chevauchement": true,
+    "audit_abreviations_avant": {},
+    "audit_abreviations_apres_application": {},
+    "glossaire_syntaxe_valide": true
+  },
+  "constats": [
+    {
+      "id": "R-01",
+      "fichier": "chapters/G99/G99_a.html",
+      "ancre": "Elle réunit ici trois grands ensembles",
+      "categorie": "comptage",
+      "explication": "La partie 1 annonce « trois grands ensembles » (neuropathie autonome, myélopathie, atteinte urémique) alors qu’elle développe cinq sous-parties (dont la gastroparésie et l’amylose) et que l’épilogue dit « Quatre entités ». Le nombre est un énoncé de fond : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-02",
+      "fichier": "chapters/G99/G99_a.html",
+      "ancre": "La description ci-dessous sépare les trois grandes chaînes.",
+      "categorie": "comptage",
+      "explication": "La partie 3 annonce « trois grandes chaînes » et en développe cinq (3.1 à 3.5) ; la phrase décrit en outre le plan (« ci-dessous ») au lieu d’énoncer le problème médical. Toute reformulation suppose de décider quelles chaînes sont regroupées.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-03",
+      "fichier": "chapters/G99/G99_a.html",
+      "ancre": "est la compression cervicale due à une hernie discale",
+      "categorie": "définition",
+      "explication": "La MCD est définie comme « la compression cervicale » alors que la fenêtre g99-mcd la définit comme une « dysfonction médullaire due à une compression cervicale » (la myélopathie est la conséquence, non la compression). Même confusion dans le Pareto : « La MCD est une compression cervicale dégénérative ». Correction = définition médicale.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-04",
+      "fichier": "chapters/G99/G99_a.html",
+      "ancre": "Ces stades correspondent à l’échelle <b>PND</b> de I à IV.",
+      "categorie": "classification",
+      "explication": "Trois stades de locomotion sont mis en correspondance avec une échelle à quatre niveaux (I à IV) sans table de correspondance ; la source lue ne la donne pas (glossaire : « développement non fourni »). À sourcer ou à nuancer.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-05",
+      "fichier": "chapters/G99/G99_a.html",
+      "ancre": "touche jusqu’à 5 à 10 % des patients porteurs de métastases",
+      "categorie": "fréquence",
+      "explication": "« Jusqu’à 5 à 10 % » est syntaxiquement fautif (borne haute ou fourchette ?). La partie 13 écrit « 5-10 % » sans « jusqu’à ». Choisir entre « jusqu’à 10 % » et « de 5 à 10 % » change le sens statistique : à trancher d’après la source (Revue médicale suisse 2016, non rouverte ici).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-06",
+      "fichier": "chapters/G99/G99_a.html",
+      "ancre": "43 % des présentations initiales de MCD sont de ce type",
+      "categorie": "statistique",
+      "explication": "Dans la partie 5, 43 % des patients consultent pour un engourdissement ou une douleur de la main, « souvent étiquetés » canal carpien ; ici, 43 % des présentations sont « de ce type » (main attribuée d’emblée à un canal carpien). Les deux énoncés n’ont pas le même numérateur (présentation par la main versus erreur diagnostique).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-07",
+      "fichier": "chapters/G99/G99_b.html",
+      "ancre": "Syndrome du canal carpien (43 % des présentations de MCD)",
+      "categorie": "statistique",
+      "explication": "Le tableau 7.5 présente 43 % comme la part des « présentations de MCD » correspondant au diagnostic erroné de canal carpien ; la partie 5 dit seulement que 43 % consultent pour la main. Même écart que R-06.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-08",
+      "fichier": "chapters/G99/G99_b.html",
+      "ancre": "Ce diagnostic erroné représente 43 % des présentations",
+      "categorie": "statistique",
+      "explication": "Le tableau de la partie 12 fait du canal carpien un diagnostic erroné représentant 43 % des présentations ; cf. R-06 et R-07. Formulation à aligner sur la source (BMJ 2018) par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-09",
+      "fichier": "chapters/G99/G99_a.html",
+      "ancre": "Parmi les facteurs de risque de la neuropathie autonome du diabète figure la rétinopathie",
+      "categorie": "causalité",
+      "explication": "Une association (rapport de cotes 2,26, cohorte transversale) est présentée comme « facteur de risque » ; la leçon rappelle ailleurs qu’une association pronostique ne prouve pas la causalité. Le chiffre est en outre répété (partie 2.1). Changer le terme modifie l’énoncé de fond.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-10",
+      "fichier": "chapters/G99/G99_a.html",
+      "ancre": "Le consensus ESC distingue ainsi",
+      "categorie": "source",
+      "explication": "Le document ESC cité ailleurs est la Task Force 2018 sur la syncope (lignes directrices) ; la partie 4 parle de « consensus ESC » et le tableau de « l’ESC ». La désignation de la source (consensus, lignes directrices, Task Force) est un fait de référence, non un choix de style.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-11",
+      "fichier": "chapters/G99/G99_a.html",
+      "ancre": "Deux situations ne tolèrent aucun retard",
+      "categorie": "cohérence médicale",
+      "explication": "Le premier épilogue place la « myélopathie progressive » parmi les situations qui ne tolèrent aucun retard ; la partie 8 la classe « urgence relative ». Le niveau d’urgence est un énoncé clinique.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-12",
+      "fichier": "chapters/G99/G99_a.html",
+      "ancre": "Le panel y ajoute une fonction motrice gastrique sévèrement perturbée (accord de 85 %).",
+      "categorie": "définition",
+      "explication": "On ne sait pas si cette fonction motrice perturbée est un critère de la définition, une précision ou une option du panel ; « y ajoute » est ambigu. Lever l’ambiguïté exige de relire le consensus UEG/ESNM 2021.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-13",
+      "fichier": "chapters/G99/G99_a.html",
+      "ancre": "ne coexistent que dans 50 % des cas",
+      "categorie": "statistique",
+      "explication": "Le dénominateur de ces 50 % (patients avec neuropathie autonome, avec polyneuropathie, ou ensemble de la cohorte) n’est pas précisé ; la déduction « l’absence de polyneuropathie ne rassure donc pas » en dépend.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-14",
+      "fichier": "chapters/G99/G99_a.html",
+      "ancre": "sont les nausées et les vomissements (95 %) ; la plénitude postprandiale",
+      "categorie": "statistique",
+      "explication": "Le même pourcentage (95 %) qualifie deux énoncés de nature différente (symptômes cardinaux ; symptômes fréquents) et revient pour d’autres items (test de vidange, test respiratoire). Possible report erroné d’une valeur de consensus, à vérifier dans la source.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-15",
+      "fichier": "chapters/G99/G99_a.html",
+      "ancre": "impuissance (73 % des hommes)",
+      "categorie": "statistique",
+      "explication": "La valeur 73 % est donnée pour la dysautonomie globale (partie 2.4) et pour l’impuissance chez les hommes (partie 5) : une confusion entre deux données est possible. À vérifier dans le consensus européen 2021.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-16",
+      "fichier": "chapters/G99/G99_a.html",
+      "ancre": "(Balgrist, Zurich)",
+      "categorie": "source",
+      "explication": "Le Balgrist est cité comme source (partie 2.3), sans entrée dans la liste de références de la partie 13 ; même remarque pour R-17 et R-26.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-17",
+      "fichier": "chapters/G99/G99_b.html",
+      "ancre": "Le Balgrist (2026) recommande une décompression soutenue",
+      "categorie": "source",
+      "explication": "« Décompression soutenue » est inintelligible (maintenue ? précoce ? recommandée ?) et la source Balgrist (2026) ne figure pas dans la liste de références. Reformulation = choix de fond.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-18",
+      "fichier": "chapters/G99/G99_b.html",
+      "ancre": "Le diagnostic s’appuie sur trois éléments",
+      "categorie": "cohérence médicale",
+      "explication": "Les trois éléments sont : séquençage, biopsie, scintigraphie osseuse ; la partie e-5 annonce « trois preuves » : variante, biopsie, typage (la scintigraphie y est une phrase à part). Le typage est ici hors décompte. La liste des preuves est un énoncé de fond.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-19",
+      "fichier": "chapters/G99/G99_b.html",
+      "ancre": "Chaque ligne découle d’un mécanisme déjà étudié",
+      "categorie": "généralisation",
+      "explication": "Seules trois des sept lignes du tableau (myélopathie/canal carpien, manipulation, compression métastatique) relèvent d’un mécanisme étudié ; les durées de prescription, le code à astérisque et la fludrocortisone n’en relèvent pas. « Peut siéger à plusieurs étages » est de plus un fait nouveau.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-20",
+      "fichier": "chapters/G99/G99_b.html",
+      "ancre": "≥ 30 mmHg en cas d’hypertension de décubitus",
+      "categorie": "attribution",
+      "explication": "Le seuil de 30 mmHg est attribué à la revue Diabetologia 2024 dans la partie 1.1, mais figure dans la parenthèse « (ESC, 2018) » du bloc de critères formels. Attribution de source à rectifier par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-21",
+      "fichier": "chapters/G99/G99_b.html",
+      "ancre": "Les tests cardiovasculaires réflexes confirmeront la neuropathie",
+      "categorie": "certitude",
+      "explication": "Le futur de certitude « confirmeront » préjuge du résultat de l’examen ; « permettront de confirmer » changerait le raisonnement pédagogique du cas.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-22",
+      "fichier": "chapters/G99/G99_c.html",
+      "ancre": "alors qu’un canal carpien ne touche qu’une main",
+      "categorie": "généralisation",
+      "explication": "Le canal carpien bilatéral est cité comme signe d’alerte dans les parties 0 et 5 ; l’énoncé « ne touche qu’une main » les contredit. À reformuler par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-23",
+      "fichier": "chapters/G99/G99_c.html",
+      "ancre": "une tachycardie de repos chez la personne diabétique révèle l’atteinte vagale",
+      "categorie": "certitude",
+      "explication": "« Révèle » affirme un lien univoque ; « évoque » serait un autre énoncé (une tachycardie de repos a d’autres causes).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-24",
+      "fichier": "chapters/G99/G99_c.html",
+      "ancre": "fait de l’hyperkaliémie chronique le mécanisme principal proposé",
+      "categorie": "causalité",
+      "explication": "Une corrélation forte est présentée comme ce qui « fait » du mécanisme le principal ; l’inférence corrélation vers mécanisme contredit la prudence affichée ailleurs (partie 2.5).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-25",
+      "fichier": "chapters/G99/G99_pop1.html",
+      "ancre": "Il n’existe pas de source suisse lue sur ce sujet.",
+      "categorie": "cohérence des sources",
+      "explication": "La partie 1.2 cite la Revue médicale suisse 2024 sur la gastroparésie diabétique (résumé lu) ; la fenêtre affirme qu’aucune source suisse n’a été lue. Lu au résumé et non lu sont deux statuts distincts.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-26",
+      "fichier": "chapters/G99/G99_pop1.html",
+      "ancre": "sa recommandation est corroborée par la source suisse du Balgrist",
+      "categorie": "source",
+      "explication": "La source du Balgrist ne figure pas dans les références de la fenêtre ; cf. R-16.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-27",
+      "fichier": "chapters/G99/G99_d.html",
+      "ancre": "doit être considéré comme hors indication si la fiche ne la prévoit pas",
+      "categorie": "logique",
+      "explication": "La phrase précédente établit que les fiches lues ne mentionnent pas la gastroparésie ; la condition « si la fiche ne la prévoit pas » est donc déjà tranchée. Passer au catégorique (« relève d’un usage hors indication ») est une décision réglementaire.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-28",
+      "fichier": "chapters/G99/G99_d.html",
+      "ancre": "<b>Médicaments à éviter ou à manier avec prudence.</b>",
+      "categorie": "cohérence médicale",
+      "explication": "Le paragraphe range sous « à éviter » des médicaments seulement « non retenus par le consensus » (érythromycine, inhibiteurs de la pompe à protons, antiémétiques) : non retenu n’est pas à éviter. Choix de fond.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    }
+  ],
+  "observations": [
+    {
+      "sujet": "Sémiologie",
+      "texte": "Aucun sous-onglet « Sémiologie » : la barre Sciences compte quatre disciplines (anatomie, histologie, physiologie, biochimie et génétique). L’exigence Vial (sixième sous-onglet) relève de l’audit médical ALPHA1-CLAUDE-G99-MED ; elle n’est pas traitée ici."
+    },
+    {
+      "sujet": "Figures",
+      "texte": "Les cinq figures sont des schémas SVG dessinés (fig. 1, 2 et 5 : chaînes de quatre cases ; fig. 3 : moelle comprimée ; fig. 4 : section nerveuse) et non des images sourcées ; leur conformité à la règle sur les figures anatomiques IA relève de l’audit médical. Aucune annonce ni lecture de figure n’est rédigée dans le texte (STYLE_REDACTION § 4)."
+    },
+    {
+      "sujet": "Accessibilité",
+      "texte": "Les trois schémas en chaîne portent le même attribut aria-label=\"Schéma\", non descriptif ; non proposé comme remplacement local car l’attribut est identique dans trois fichiers (ancien non unique sans reprendre tout le SVG)."
+    },
+    {
+      "sujet": "Fenêtre g99-ho",
+      "texte": "La fenêtre « Hypotension orthostatique : définition et mesure » contient un mot vert qui rouvre la même fenêtre (data-k=\"g99-ho\"). Anomalie de structure, non linguistique."
+    },
+    {
+      "sujet": "Typographie",
+      "texte": "Aucune espace insécable (U+00A0 ou U+202F) dans les sept fichiers : espaces avant « ; : ! ? », entre un nombre et « % », « mmHg », « mL/min » et dans « p. ex. », « art. 7 ». Correction globale différée (action de moteur ou de script), non proposée en 119 remplacements locaux."
+    },
+    {
+      "sujet": "Nombres",
+      "texte": "Alternance chiffres et lettres pour des durées comparables (« six mois » / « 6 à 12 mois » ; « quatre heures » / « 4 heures » ; « 5 jours » / « dix ans »). Choix éditorial différé."
+    },
+    {
+      "sujet": "Lexique",
+      "texte": "Alternance « colonne », « rachis » et « colonne vertébrale » pour la même structure (IRM de l’ensemble de la colonne / du rachis). Choix éditorial différé."
+    },
+    {
+      "sujet": "Formules",
+      "texte": "Le bloc « Critères formels » et l’épilogue de la partie 13 emploient « = » comme verbe (« un test réflexe anormal = possible »). Conservé : encadré de synthèse, risque de changer la portée des critères."
+    },
+    {
+      "sujet": "Tableaux",
+      "texte": "Plusieurs tableaux (e-2, p-1, p-2) ne sont pas suivis d’un paragraphe de lecture (STYLE_REDACTION § 4) : défaut pédagogique, non reformulable localement."
+    }
+  ],
+  "differes": [
+    "Espaces insécables avant « ; : ! ? » et dans les nombres suivis d’une unité (aucune U+00A0 ni U+202F dans les sept fichiers) : correction globale scriptée, à décider avec le moteur.",
+    "Uniformisation des nombres en lettres ou en chiffres et du lexique colonne/rachis."
+  ],
+  "lacunes": [
+    "Aucune source médicale n’a été rouverte : l’audit linguistique ne vérifie pas le fond ; les 28 renvois médicaux sont des doutes de lecture, non des constats médicaux établis.",
+    "Les 119 propositions n’ont pas été relues par un lecteur humain ; l’audit est une revue IA.",
+    "Le rendu navigateur (mise en forme du moteur, polish.css) n’a pas été exécuté : seul le texte source a été contrôlé.",
+    "Les attributs aria-label identiques des trois schémas ne sont pas proposés en remplacement (ancien non unique)."
+  ],
+  "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+}
