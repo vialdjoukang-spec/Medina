@@ -1,0 +1,776 @@
+{
+ "mission": "ALPHA1-CLAUDE-G82-MED",
+ "code": "G82",
+ "type_audit": "medical",
+ "base_sha": "103745baaa38c76f18288758cc7f689e5091ccdb",
+ "source_snapshot_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "base_note": "Base du worktree donnée par le coordinateur (103745ba) ; manifeste base_sha et source_snapshot_sha 523832d9 ; les sept empreintes SHA-256 sont conformes au manifeste.",
+ "generation": 1,
+ "branche": "claude/alpha1/g82-med-g1",
+ "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G82-MED",
+ "conversation": "alpha1-claude-g82-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-16T09:15:00Z",
+ "date_fin": "2026-10-16T09:38:45Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G82/G82_a.html",
+   "chapters/G82/G82_b.html",
+   "chapters/G82/G82_c.html",
+   "chapters/G82/G82_d.html",
+   "chapters/G82/G82_pop1.html",
+   "chapters/G82/G82_pop2.html",
+   "glossary/g82.py"
+  ],
+  "empreintes_conformes": true,
+  "empreintes": {
+   "chapters/G82/G82_a.html": {
+    "sha256": "78e8a28ab2e64daba1120eb72912dfd4385b4fc862ac17e9a45bba51b1753a57",
+    "manifeste": "78e8a28ab2e64daba1120eb72912dfd4385b4fc862ac17e9a45bba51b1753a57",
+    "conforme": true
+   },
+   "chapters/G82/G82_b.html": {
+    "sha256": "c7ce7326d6be7cff9fb8c933afdc31ce05eafec23357e1d2a8223a016a8a8b00",
+    "manifeste": "c7ce7326d6be7cff9fb8c933afdc31ce05eafec23357e1d2a8223a016a8a8b00",
+    "conforme": true
+   },
+   "chapters/G82/G82_c.html": {
+    "sha256": "732c6b37730dd5382fc04045abb09b42c79e255f3608713cbe292e5aff4d4c0f",
+    "manifeste": "732c6b37730dd5382fc04045abb09b42c79e255f3608713cbe292e5aff4d4c0f",
+    "conforme": true
+   },
+   "chapters/G82/G82_d.html": {
+    "sha256": "c94ef60c5631e582a6d13c6366f735cd007026dacb33c55b2bfb5a56e5760d5b",
+    "manifeste": "c94ef60c5631e582a6d13c6366f735cd007026dacb33c55b2bfb5a56e5760d5b",
+    "conforme": true
+   },
+   "chapters/G82/G82_pop1.html": {
+    "sha256": "cadc0a134c2034807081310e4a9eb273ff46863254b24445ebdb2abe3238e034",
+    "manifeste": "cadc0a134c2034807081310e4a9eb273ff46863254b24445ebdb2abe3238e034",
+    "conforme": true
+   },
+   "chapters/G82/G82_pop2.html": {
+    "sha256": "cfde5f6fbfd23646d337095f0527ea4290f43180f510958adac4168c1c217eed",
+    "manifeste": "cfde5f6fbfd23646d337095f0527ea4290f43180f510958adac4168c1c217eed",
+    "conforme": true
+   },
+   "glossary/g82.py": {
+    "sha256": "51ab3631a1ae8cf2ae537924c743169dde829d1b8245e67790ff85914830e166",
+    "manifeste": "51ab3631a1ae8cf2ae537924c743169dde829d1b8245e67790ff85914830e166",
+    "conforme": true
+   }
+  }
+ },
+ "premiere_source_lue": {
+  "source_id": "S20",
+  "url": "https://amiko.oddb.org (tools/swissmedic_fi.py, GTIN 7680360830184)",
+  "section": "Information professionnelle suisse Liorésal®, rubrique Posologie/Mode d’emploi (mise à jour janvier 2025)"
+ },
+ "synthese": {
+  "BLOQUANT": 0,
+  "MAJEUR": 5,
+  "MINEUR": 11,
+  "ENRICHISSEMENT": 4
+ },
+ "calculs": {
+  "total_releves": 338,
+  "calculables": 337,
+  "recalcules": 337,
+  "correct": 329,
+  "arrondi": 4,
+  "faux": 4,
+  "non_verifiables": 0,
+  "controles_scriptes": 78,
+  "verdicts_controles": {
+   "CORRECT": 73,
+   "ARRONDI": 2,
+   "FAUX": 3,
+   "NON_VERIFIABLE": 0
+  },
+  "non_calculables": 1,
+  "script": "calculs/verifier.py",
+  "faux_constats": {
+   "K20": "C05",
+   "K32": "C10",
+   "K55": "C09"
+  },
+  "arrondis_constats": {
+   "K37": "C14",
+   "K47": "C08"
+  },
+  "dangereux": 0
+ },
+ "controles": {
+  "test_v7_static": "G82 mots 14008 fenêtres 63 quiz 6 pareto 17 — OK",
+  "audit_sciences": "échec : « À retenir » absent dans g82-s-anat, g82-s-physio, g82-s-vesicale (C06) ; mots 406/416/292 ; une figure par discipline",
+  "ancres": "chaque ancre vérifiée par script : une occurrence exacte"
+ },
+ "constats": [
+  {
+   "id": "C01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G82/G82_c.html",
+   "ancre": "data-s=\"g82-s-anat\"",
+   "constat": "Le sous-onglet « Sémiologie fondamentale et analytique » est absent. Décompte réel des data-s de G82_c.html : 3 (g82-s-anat, g82-s-physio, g82-s-vesicale) ; aucun g82-s-semio. Dans l’onglet 1, l’îlot g82-7 ne décrit que l’examen ISNCSCI et la pression de base : ni niveau sensitif, ni syndrome pyramidal, ni réflexes sacrés, ni distinction central/périphérique, ni raisonnement du signe au siège.",
+   "preuve": [
+    {
+     "source_id": "S34",
+     "section": "II B, Syndrome sous-lésionnel médullaire",
+     "citation_courte": "hypertonie élastique, réflexes ostéotendineux vifs, diffusés, polycinétiques, trépidation épileptoïde du pied, signe de Babinski"
+    },
+    {
+     "source_id": "S34",
+     "section": "II, diagnostic différentiel",
+     "citation_courte": "aucun signe du syndrome pyramidal n’est observé lors d’une compression périphérique"
+    },
+    {
+     "source_id": "S1",
+     "section": "tableau 6",
+     "citation_courte": "Reflexes … Bulbocavernous reflex, Perianal/anal reflex … Plantar responses (Babinski)"
+    }
+   ],
+   "proposition": "propositions/G82_c_semio.html (bouton g82-tab-semio, panneau g82-s-semio, neuf sections data-semiology, figure non anatomique, trois cas corrigés, quatre libellés audit_sciences) ; propositions/G82_pop3_semio.html (fenêtres g82-sm-*) ; propositions/G82_enrichissements.html, section C18 (data-semiology-clinical dans pA).",
+   "justification": "Mécanisme : sans tonus, réflexes ni niveau sensitif, le lecteur ne sait pas distinguer une moelle d’une racine ou d’un nerf. Conséquence : une compression médullaire évolutive peut être méconnue. Décision : exigence de Vial du 15.10.2026 ; absence = MAJEUR, bloquant pour la clôture.",
+   "bloquant_cloture": true,
+   "decompte_data_s": 3,
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G82/G82_b.html",
+   "ancre": "<b>la conduite médicamenteuse (seuils, antihypertenseurs, doses) n’est pas documentée dans le dossier</b>",
+   "constat": "La dysréflexie autonome, présentée comme urgence potentiellement vitale (alert g82-9 et vignette g82-0), n’a aucune conduite immédiate : ni position assise, ni desserrage, ni sondage sous lidocaïne avec vidange fractionnée, ni recherche du fécalome, ni surveillance tensionnelle. Le lecteur ne sait pas quoi faire devant le cas d’ouverture.",
+   "preuve": [
+    {
+     "source_id": "S35",
+     "section": "algorithme",
+     "citation_courte": "Sit person upright and lower legs … Loosen any tight clothing"
+    },
+    {
+     "source_id": "S35",
+     "section": "algorithme",
+     "citation_courte": "Drain 500mls initially, then 250mls every 10 to 15 minutes to avoid hypotension"
+    },
+    {
+     "source_id": "S1",
+     "section": "§ 3.3.6.a",
+     "citation_courte": "defined by an increase in systolic blood pressure > 20mmHg from baseline"
+    },
+    {
+     "source_id": "S36",
+     "section": "recherche AmiKo",
+     "citation_courte": "Nifedipin-Mepha 20 retard … Nifédipine Spirig HC 40 CR (aucune forme à libération immédiate)"
+    }
+   ],
+   "proposition": "propositions/G82_b_urgences.html, bloc C02 (paragraphe de remplacement et fenêtre g82-da-conduite) ; aucune dose d’antihypertenseur n’est proposée, faute de produit suisse à libération immédiate trouvé.",
+   "justification": "Mécanisme : le stimulus sous la lésion entretient la crise ; le supprimer arrête la réponse. Conséquence : la vessie, déclencheur dans la majorité des cas, se traite par un geste simple. Décision : point décisionnel d’urgence non couvert → MAJEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C03",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G82/G82_b.html",
+   "ancre": "Le baclofène oral ou entéral, ou des benzodiazépines, peuvent prévenir des complications mortelles sans garantie (information professionnelle suisse).",
+   "constat": "La conduite du sevrage de baclofène intrathécal omet la priorité de la FI suisse : rétablir l’apport intrathécal ; les agonistes GABAergiques ne servent que si cette reprise est retardée. La fenêtre g82-sevrage affirme en outre que la FI ne chiffre pas le délai, alors qu’elle indique « premières heures jusqu’à quelques jours », et omet le diagnostic différentiel (dysréflexie, septicémie, hyperthermie maligne, syndrome malin des neuroleptiques) et le priapisme précoce. La FI française écrit « hypotonie » là où la leçon écrit « hypotension ».",
+   "preuve": [
+    {
+     "source_id": "S27",
+     "section": "Mises en garde — Arrêt de la médication",
+     "citation_courte": "si la reprise de l'apport de Liorésal intrathécal est retardée, un traitement par agonistes GABA ergiques … peut potentiellement prévenir"
+    },
+    {
+     "source_id": "S27",
+     "section": "idem",
+     "citation_courte": "les symptômes de sevrage apparaissent dans les premières heures jusqu'à quelques jours"
+    },
+    {
+     "source_id": "S27",
+     "section": "idem",
+     "citation_courte": "peuvent être semblables à des symptômes de dysréflexie végétative, d'une infection (septicémie), d'une hyperthermie maligne"
+    }
+   ],
+   "proposition": "propositions/G82_b_urgences.html, bloc C03 (phrase de remplacement dans g82-9 et g82-p-3, fenêtre g82-sevrage réécrite). Ancre secondaire : G82_pop2.html « L’information professionnelle ne chiffre pas le délai d’apparition dans le passage lu ».",
+   "justification": "Mécanisme : le sevrage résulte de l’arrêt de l’apport intrathécal ; le rétablir traite la cause. Conséquence : un relais oral seul ne garantit pas l’arrêt de la progression. Décision : conduite d’urgence incomplète par rapport à la FI suisse → MAJEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G82/G82_b.html",
+   "ancre": "Le différentiel non traumatique (myélite transverse, infarctus médullaire, compression métastatique, sclérose en plaques, syndrome de Guillain-Barré, paraplégie spastique héréditaire)",
+   "constat": "Le diagnostic différentiel non traumatique et l’urgence de la compression médullaire et de la queue de cheval sont absents ; la leçon le déclare. Une source universitaire européenne lisible en texte intégral les couvre : tableau caractéristique, causes extra- et intramédullaires, discriminant périphérique, IRM en urgence.",
+   "preuve": [
+    {
+     "source_id": "S34",
+     "section": "Points clés",
+     "citation_courte": "La compression médullaire non traumatique et le syndrome de la queue de cheval sont des urgences diagnostiques et thérapeutiques"
+    },
+    {
+     "source_id": "S34",
+     "section": "IV",
+     "citation_courte": "L’IRM … Elle doit être demandée en urgence"
+    },
+    {
+     "source_id": "S34",
+     "section": "III A–B",
+     "citation_courte": "métastase vertébrale, myélome, lymphome, spondylodiscite infectieuse, hématome épidural … épendymome"
+    }
+   ],
+   "proposition": "propositions/G82_b_urgences.html, bloc C04 (paragraphe, tableau des causes par siège, piège).",
+   "justification": "Mécanisme : une compression évolutive détruit la moelle tant qu’elle n’est pas levée. Conséquence : le retard d’IRM aggrave le pronostic fonctionnel. Décision : point d’examen fédéral et urgence non couverts → MAJEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C05",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G82/G82_a.html",
+   "ancre": "<td>Motricité préservée ; moins de la moitié des muscles clés sous le niveau neurologique lésionnel cotés 3 ou plus</td>",
+   "constat": "Les grades AIS C et D sont définis par « motricité préservée » seule. ISNCSCI 2019 exige un statut moteur incomplet : contraction anale volontaire, ou épargne sensitive sacrée avec motricité plus de trois niveaux sous le niveau moteur, muscles clés ou non clés. Sans ce critère, un patient B avec un mouvement proche du niveau serait classé C à tort. Même défaut dans la fenêtre g82-ais (G82_pop1.html). Contrôle K20 : FAUX.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "AIS C",
+     "citation_courte": "Motor function is preserved at the most caudal sacral segments on voluntary anal contraction (VAC), or … motor sparing more than three levels below the motor level"
+    }
+   ],
+   "proposition": "propositions/G82_a_ais.html (lignes C et D corrigées dans g82-2 et g82-ais, phrase d’explication B/C).",
+   "justification": "Mécanisme : la frontière B/C repose sur la preuve d’une commande motrice traversant la lésion. Conséquence : classement et pronostic faux. Décision : critère diagnostique formel incomplet → MAJEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C06",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G82/G82_c.html",
+   "ancre": "<div class=\"key\"><b>Science → traitement.</b> Le codage du niveau fonctionnel",
+   "constat": "tests/audit_sciences.py échoue (base 523832d9) : les trois disciplines (406, 416 et 292 mots, une figure chacune) n’ont pas l’encadré « À retenir. ». La leçon ne compte que trois disciplines sur les cinq habituelles.",
+   "preuve": [
+    {
+     "source_id": "—",
+     "section": "tests/audit_sciences.py --codes G82",
+     "citation_courte": "G82/g82-s-anat: lien absent : À retenir. (idem physio, vesicale)"
+    }
+   ],
+   "proposition": "propositions/G82_mineurs.html, bloc C06 (trois encadrés À retenir sourcés).",
+   "justification": "Contrôle obligatoire du contrat des sciences ; sans conséquence médicale.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C07",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G82/G82_d.html",
+   "ancre": "Les contre-indications comprennent le glaucome à angle étroit, la myasthénie, l’obstruction ou l’atonie digestive.",
+   "constat": "Contre-indications de l’oxybutynine incomplètes : manquent la rétention urinaire due à une uropathie obstructive ou à une hyperplasie prostatique, la nycturie cardiaque ou rénale, la colite ulcéreuse sévère, le mégacôlon toxique, la chambre antérieure peu profonde ; la prudence en cas de neuropathie autonome et la dose initiale du sujet âgé (2,5 mg deux fois par jour) ne figurent pas, alors que la leçon traite l’homme âgé.",
+   "preuve": [
+    {
+     "source_id": "S22",
+     "section": "Contre-indications",
+     "citation_courte": "Rétention urinaire due à une uropathie obstructive ou à une hyperplasie prostatique"
+    },
+    {
+     "source_id": "S22",
+     "section": "Mises en garde",
+     "citation_courte": "neuropathie autonome"
+    },
+    {
+     "source_id": "S22",
+     "section": "Posologie, patients âgés",
+     "citation_courte": "dose initiale de 2,5 mg deux fois par jour"
+    }
+   ],
+   "proposition": "propositions/G82_mineurs.html, bloc C07.",
+   "justification": "La leçon ne se dit pas exhaustive ; omission sans conséquence immédiate, mais pertinente chez l’homme âgé (g82-12).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C08",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G82/G82_d.html",
+   "ancre": "Chez l’insuffisant rénal, la dose de départ est d’environ 5 mg par jour, parce qu’un risque d’encéphalopathie toxique existe.",
+   "constat": "La FI réserve la dose de départ d’environ 5 mg/j au patient en hémodialyse chronique et restreint l’emploi en insuffisance rénale terminale ; la leçon généralise à toute insuffisance rénale (contrôle K47 : ARRONDI).",
+   "preuve": [
+    {
+     "source_id": "S20",
+     "section": "Utilisation en cas d'insuffisance rénale",
+     "citation_courte": "chez les patients sous hémodialyse chronique … environ 5 mg/j"
+    }
+   ],
+   "proposition": "propositions/G82_mineurs.html, bloc C08.",
+   "justification": "Formulation plus prudente que la FI, sans danger ; précision de population.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C09",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G82/G82_b.html",
+   "ancre": "calendrier mictionnel (2 à 3 jours, mesures répétées du débit et du résidu)",
+   "constat": "EAU 2026 recommande un calendrier mictionnel de préférence sur trois jours consécutifs ; « 2 à 3 » s’applique à la répétition de la débitmétrie et du résidu (contrôle K55 : FAUX). Même valeur dans G82_pop2.html (« Un calendrier mictionnel sur 2 à 3 jours. »).",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "§ 3.3.4.a",
+     "citation_courte": "Bladder diaries should preferably be completed for three consecutive days"
+    }
+   ],
+   "proposition": "propositions/G82_mineurs.html, bloc C09.",
+   "justification": "Durée inexacte sans conséquence décisionnelle.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C10",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G82/G82_pop2.html",
+   "ancre": "l’examen a lui-même déclenché des épisodes chez 43,3 % des patients lésés au 6e segment thoracique ou au-dessus dans une étude",
+   "constat": "Le dénominateur de 43,3 % est le nombre d’urodynamiques (122/282 chez 70 personnes), non le nombre de patients (contrôle K32 : FAUX). Les autres occurrences (g82-e-4, g82-da) sont correctes.",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "Results",
+     "citation_courte": "AD occurred in 43.3% (122/282) of all urodynamics tests"
+    }
+   ],
+   "proposition": "propositions/G82_mineurs.html, bloc C10.",
+   "justification": "Unité d’analyse erronée ; le message clinique (surveiller la pression) reste juste.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C11",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G82/G82_b.html",
+   "ancre": "On évite donc les manœuvres qui les créent, le Credé et la poussée abdominale, et la miction réflexe déclenchée est déconseillée.",
+   "constat": "EAU 2026 décourage le Credé et la manœuvre de Valsalva sauf si l’urodynamique montre des pressions sûres ; elle ne déconseille pas formellement la miction réflexe déclenchée, mais en décrit le risque de hautes pressions et de dysréflexie et exige éducation et surveillance.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "§ 3.4.2.a",
+     "citation_courte": "their use should be discouraged, unless urodynamics show that the intravesical pressure remains within safe limits"
+    },
+    {
+     "source_id": "S1",
+     "section": "§ 3.4.2.a",
+     "citation_courte": "Triggering can induce AD … patients require dedicated education and close urodynamic and urological surveillance"
+    }
+   ],
+   "proposition": "propositions/G82_mineurs.html, bloc C11.",
+   "justification": "Nuance de recommandation.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C12",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G82/G82_pop2.html",
+   "ancre": "Une anticoagulation de routine est recommandée,",
+   "constat": "Les trois recommandations de thromboprophylaxie AO Spine 2017 sont faibles (« we suggest ») ; la fenêtre écrit « recommandée » et la colonne « Force et limite » du tableau g82-9 indique seulement « Selon la ligne directrice de 2017 ».",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "Results",
+     "citation_courte": "We suggest that anticoagulant thromboprophylaxis be offered routinely"
+    }
+   ],
+   "proposition": "propositions/G82_mineurs.html, bloc C12 (ancres « Une anticoagulation de routine est recommandée, » et « <td>Selon la ligne directrice de 2017</td> »).",
+   "justification": "Force de recommandation mal rendue.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C13",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G82/G82_b.html",
+   "ancre": "<td>Vers les 1er et 2e segments lombaires</td>",
+   "constat": "Le cône médullaire se situe dans la région des 1re et 2e vertèbres lombaires (ISNCSCI : « L1 and L2 area » ; référentiel français : en regard des dernières vertèbres dorsales et de L1). Écrire « segments lombaires » confond niveau vertébral et segment médullaire, alors que la leçon utilise « segment » pour la moelle et que la moelle est plus courte que le canal. Même formulation dans la fenêtre g82-syndromes, g82-cauda et la légende de la figure 2.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "annexe, Conus medullaris",
+     "citation_courte": "the injury is more rostral in the cord (L1 and L2 area)"
+    },
+    {
+     "source_id": "S34",
+     "section": "II",
+     "citation_courte": "La moelle spinale se termine par le cône terminal au niveau des dernières vertèbres dorsales et de L1"
+    },
+    {
+     "source_id": "S34",
+     "section": "II",
+     "citation_courte": "le métamère D12 est en regard de la vertèbre D9"
+    }
+   ],
+   "proposition": "propositions/G82_mineurs.html, bloc C13 (à répliquer dans g82-syndromes, g82-cauda et la figure 2).",
+   "justification": "Imprécision anatomique sans conséquence décisionnelle.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C14",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G82/G82_pop2.html",
+   "ancre": "environ 54 à 60 % de paraplégies",
+   "constat": "Le Pareto arrondit 53,3 % à 54 % (contrôle K37 : ARRONDI).",
+   "preuve": [
+    {
+     "source_id": "S11",
+     "section": "Results",
+     "citation_courte": "Majority had paraplegia (53.3%)"
+    }
+   ],
+   "proposition": "propositions/G82_mineurs.html, bloc C14.",
+   "justification": "Arrondi incohérent.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C15",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G82/G82_b.html",
+   "ancre": "Récupération d’au moins 2 grades AIS à 6 mois : risque relatif 2,76 (intervalle de confiance à 95 % 1,60–4,98)",
+   "constat": "La colonne « Force et limite » ne donne pas le niveau de preuve de la recommandation de décompression (preuves modérées, la seule non faible du tableau) ni le résultat à 12 mois (RR 1,95 ; 1,26–3,18).",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Results",
+     "citation_courte": "based on moderate evidence … (RR: 2.76, 95% CI 1.60 to 4.98) and 12 months (RR: 1.95, 95% CI 1.26 to 3.18)"
+    }
+   ],
+   "proposition": "propositions/G82_mineurs.html, bloc C15.",
+   "justification": "Hiérarchie des recommandations moins lisible.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C16",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G82/G82_pop2.html",
+   "ancre": "Une équipe lausannoise (CHUV et institutions partenaires de Lausanne) a décrit",
+   "constat": "Le travail de Nature 2025 est une collaboration Lausanne–Calgary (auteur correspondant à Calgary) ; la leçon l’attribue à une seule équipe lausannoise et cite le CHUV sans source d’affiliation lue.",
+   "preuve": [
+    {
+     "source_id": "S28",
+     "section": "auteurs et correspondance",
+     "citation_courte": "aaron.phillips@ucalgary.ca … Courtine G"
+    }
+   ],
+   "proposition": "propositions/G82_mineurs.html, bloc C16.",
+   "justification": "Attribution imprécise.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C17",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G82/G82_pop2.html",
+   "ancre": "Le dossier ne précise pas la dose ; le cours n’en donne aucune.",
+   "constat": "La FI suisse de Solu-Medrol® cite le traumatisme médullaire aigu (début dans les 8 heures) et avertit qu’une administration tardive peut aggraver le pronostic ; son schéma général de 48 heures n’est pas celui de la moelle ; Swisspeddose donne le schéma pédiatrique.",
+   "preuve": [
+    {
+     "source_id": "S24",
+     "section": "Indications",
+     "citation_courte": "Traumatisme médullaire aigu, pour autant que le traitement soit instauré dans les 8 heures"
+    },
+    {
+     "source_id": "S24",
+     "section": "Mises en garde",
+     "citation_courte": "l'administration tardive … n'améliore pas le pronostic ultérieur et risque même … de l'aggraver"
+    },
+    {
+     "source_id": "S24",
+     "section": "Swisspeddose",
+     "citation_courte": "30 mg/kg/dose … 5.4 mg/kg/h … Perfusion continue sur 23 heures"
+    }
+   ],
+   "proposition": "propositions/G82_enrichissements.html, bloc C17 (calculs K58–K59).",
+   "justification": "Règle « médicament = FI suisse » ; spécificité suisse utile à l’examen.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C18",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G82/G82_b.html",
+   "ancre": "<section class=\"ilot\" id=\"g82-7\">",
+   "constat": "L’examen clinique de l’onglet 1 ne cite pas les réflexes sacrés, la réponse plantaire, le tonus anal ni l’hypotension en position assise, que l’EAU demande de rechercher ; aucune section data-semiology-clinical n’existe.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "§ 3.3.6",
+     "citation_courte": "All sensations and reflexes in the urogenital area must be tested"
+    },
+    {
+     "source_id": "S1",
+     "section": "§ 3.3.6",
+     "citation_courte": "may suffer from a significant drop in blood pressure when moved into a sitting or standing position"
+    }
+   ],
+   "proposition": "propositions/G82_enrichissements.html, bloc C18.",
+   "justification": "Rubrique 8 de la matrice partielle.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C19",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G82/G82_d.html",
+   "ancre": "Ces contre-indications se déduisent du mécanisme antimuscarinique",
+   "constat": "Rubrique 16 (spécificités suisses) absente : seule l’aptitude à la conduite sous baclofène est sourçable par la FI lue ; assurance accidents, assurance invalidité et conduite après lésion restent sans source.",
+   "preuve": [
+    {
+     "source_id": "S20",
+     "section": "Effet sur l’aptitude à la conduite",
+     "citation_courte": "peut considérablement affecter l'aptitude à conduire"
+    }
+   ],
+   "proposition": "propositions/G82_enrichissements.html, bloc C19.",
+   "justification": "Matrice rubrique 16.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C20",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G82/G82_b.html",
+   "ancre": "<div class=\"trap\"><span class=\"k\">Limite du dossier</span> La prévention et le traitement des escarres",
+   "constat": "Escarres, programme intestinal, ostéoporose sous-lésionnelle, douleur neuropathique, ossifications hétérotopiques et fonction respiratoire du tétraplégique ne sont pas couverts (la leçon le déclare) ; l’audit n’a lu aucune source sur ces points.",
+   "preuve": [
+    {
+     "source_id": "—",
+     "section": "—",
+     "citation_courte": "LACUNE : non recherché faute de temps de mission ; voir lacunes"
+    }
+   ],
+   "proposition": "propositions/G82_enrichissements.html, bloc C20 (mission d’enrichissement à ouvrir ; aucun texte proposé sans source).",
+   "justification": "Rubriques 13 et 14 partielles.",
+   "ancre_occurrences": 1
+  }
+ ],
+ "matrice_20": [
+  {
+   "rang": 1,
+   "rubrique": "Question clinique et enjeu pour l’examen fédéral",
+   "statut": "couvert",
+   "ancre": "g82-0 (vignette dysréflexie)"
+  },
+  {
+   "rang": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "couvert",
+   "ancre": "g82-1, g82-codage ; conforme à S3"
+  },
+  {
+   "rang": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "partiel",
+   "ancre": "g82-2 ; critère moteur incomplet C/D incomplet (C05)"
+  },
+  {
+   "rang": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "couvert",
+   "ancre": "g82-3 ; conforme à S8, S11, S12, S1"
+  },
+  {
+   "rang": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "partiel",
+   "ancre": "g82-s-* ; normal des voies et du tonus absent (C01)"
+  },
+  {
+   "rang": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "partiel",
+   "ancre": "g82-6 ; non traumatique non détaillé (C04)"
+  },
+  {
+   "rang": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "partiel",
+   "ancre": "g82-7 ; fréquences non chiffrées"
+  },
+  {
+   "rang": 8,
+   "rubrique": "Examen clinique (signes, Se/Sp)",
+   "statut": "partiel",
+   "ancre": "g82-7, g82-e-2 ; pas de syndrome pyramidal ni réflexes sacrés (C01, C18)"
+  },
+  {
+   "rang": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "partiel",
+   "ancre": "g82-9 ; conduite dysréflexie et sevrage incomplètes (C02, C03), compression non traumatique absente (C04)"
+  },
+  {
+   "rang": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "couvert",
+   "ancre": "g82-e-1 à e-4 ; C09, C10"
+  },
+  {
+   "rang": 11,
+   "rubrique": "Diagnostic différentiel",
+   "statut": "partiel",
+   "ancre": "g82-8 ; non traumatique absent (C04)"
+  },
+  {
+   "rang": 12,
+   "rubrique": "Prise en charge suisse (FI datées)",
+   "statut": "partiel",
+   "ancre": "g82-p-* ; FI Liorésal, Liorésal intrathécal, Oxybutynin Macure ; FI Solu-Medrol absente (C17)"
+  },
+  {
+   "rang": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "partiel",
+   "ancre": "g82-4 ; complications de longue durée non couvertes (C20)"
+  },
+  {
+   "rang": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "partiel",
+   "ancre": "g82-11 ; escarres, intestin, ostéoporose absents (C20)"
+  },
+  {
+   "rang": 15,
+   "rubrique": "Situations particulières",
+   "statut": "partiel",
+   "ancre": "g82-12 ; grossesse non lue ; âgé : dose d’oxybutynine absente (C07)"
+  },
+  {
+   "rang": 16,
+   "rubrique": "Spécificités suisses",
+   "statut": "absent",
+   "ancre": "aucune (C19)"
+  },
+  {
+   "rang": 17,
+   "rubrique": "Critères formels du diagnostic",
+   "statut": "partiel",
+   "ancre": "g82-13 alert ; renvoie au tableau AIS incomplet (C05)"
+  },
+  {
+   "rang": 18,
+   "rubrique": "Paramètres clés chiffrés",
+   "statut": "couvert",
+   "ancre": "g82-13 key ; recalculés (calculs/resultats.json)"
+  },
+  {
+   "rang": 19,
+   "rubrique": "Sous-codes CIM-10-GM couverts",
+   "statut": "couvert",
+   "ancre": "g82-1, g82-codage, g82-niveau-fonctionnel ; glossaire"
+  },
+  {
+   "rang": 20,
+   "rubrique": "Points d’examen fédéral",
+   "statut": "partiel",
+   "ancre": "cas g82-e-5 ; compression médullaire et queue de cheval manquent (C04)"
+  }
+ ],
+ "semiologie": {
+  "statut": "absente",
+  "decompte_data_s": 3,
+  "data_s": [
+   "g82-s-anat",
+   "g82-s-physio",
+   "g82-s-vesicale"
+  ],
+  "sous_onglet_semio": false,
+  "gravite": "MAJEUR",
+  "bloquant_cloture_cours_et_lot": true,
+  "constat_id": "C01",
+  "fondamentale": {
+   "statut": "partielle dans l’onglet 1 (ISNCSCI, dysréflexie), absente comme discipline",
+   "ancres": [
+    "g82-7",
+    "g82-2",
+    "g82-da"
+   ],
+   "manques": "niveau sensitif comme signe, syndrome pyramidal, réflexes sacrés, tonus, mécanisme par signe, valeur chiffrée (LACUNE), pièges"
+  },
+  "analytique": {
+   "statut": "absente",
+   "ancres": [
+    "g82-8 (tableau moelle/cône/queue de cheval)"
+   ],
+   "manques": "regroupement syndromique complet, raisonnement en cinq étapes, examen systématique, trois cas corrigés"
+  },
+  "proposition": [
+   "propositions/G82_c_semio.html",
+   "propositions/G82_pop3_semio.html",
+   "propositions/G82_enrichissements.html (C18)"
+  ],
+  "grille_SEM": {
+   "SEM-01": "non (3 data-s, pas de g82-s-semio)",
+   "SEM-02": "non",
+   "SEM-03": "non (audit_sciences échoue : « À retenir » absent, C06)",
+   "SEM-04": "oui (test_v7 --static G82 : OK sur la leçon actuelle)",
+   "SEM-05": "non",
+   "SEM-06": "non",
+   "SEM-07": "non",
+   "SEM-08": "non",
+   "SEM-09": "non",
+   "SEM-10": "non",
+   "SEM-11": "non",
+   "SEM-12": "non",
+   "SEM-13": "non (alert g82-9 présent, pas d’alert sémiologique)",
+   "SEM-14": "non",
+   "SEM-15": "non",
+   "SEM-16": "non",
+   "SEM-17": "non",
+   "SEM-18": "non",
+   "SEM-19": "non évaluable (absente)",
+   "SEM-20": "non évaluable",
+   "SEM-21": "non évaluable",
+   "SEM-22": "non (bouton absent)",
+   "SEM-23": "non (aucune capture possible)",
+   "SEM-24": "oui (statut « Revue par intelligence artificielle · Audit différé · Aucune validation médicale humaine »)"
+  },
+  "lacune_valeurs": "Aucune sensibilité, spécificité ni rapport de vraisemblance pour le niveau sensitif, le signe de Babinski, l’anesthésie en selle ou l’épargne sacrée dans les sources lues (S1, S2, S34) ; PubMed (recherche « sensitivity specificity … Hoffmann Babinski systematic review ») : 0 résultat."
+ },
+ "figures": [
+  {
+   "figure": "Figure 1 (g82-5)",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "note": "séquence lésion primaire/secondaire"
+  },
+  {
+   "figure": "Figure 2 (g82-s-anat)",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "note": "cases segmentaires sans structure dessinée ; légende « cône vers les 1er et 2e segments lombaires » à corriger (C13)"
+  },
+  {
+   "figure": "Figure 3 (g82-s-physio)",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "note": "dysréflexie"
+  },
+  {
+   "figure": "Figure 4 (g82-s-vesicale)",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "note": "profils vésicaux"
+  }
+ ],
+ "figures_synthese": "Aucune figure anatomique dessinée par IA ; viewBox 400 et police 13 : rendu estimé ≈ 11,6 px à 390 px (estimation, non mesurée au navigateur).",
+ "verifications_conformes": [
+  "CIM-10-GM 2024 G82, 5e caractère, G82.6-!, G83.4-, Z99.1 (S3)",
+  "ISNCSCI : définitions, muscles clés, cotations, niveaux, ZPP (S2, S26)",
+  "Épidémiologie et mortalité suisses (S8–S15, S18, S19, S21)",
+  "AO Spine 2024 et 2017 : décompression, PAM, MPSS, thromboprophylaxie, IRM, réadaptation, centromédullaire (S4–S7, S30–S32)",
+  "EAU 2026 : dysréflexie, priorités, médicaments, infections, sexualité, suivi, cystatine C (S1)",
+  "Kirshblum et Hirsch : proportions recalculées (S16, S17)",
+  "FI Liorésal : posologie, arrêt, réévaluation, sphincter (S20) ; FI Liorésal intrathécal : indication, tonus utile, granulome (S27) ; FI Oxybutynin Macure : indication, posologie (S22)",
+  "Calculs de la vignette, du score moteur, des quiz et de la montée du baclofène (calculs/resultats.json)"
+ ],
+ "lacunes": [
+  "Aucune source suisse de paraplégiologie (Centre suisse des paraplégiques, Balgrist, Swiss Medical Forum) lue ; aucune source suisse de sémiologie médullaire.",
+  "AO Spine 2017 et 2024 : résumés seulement (niveau de preuve et force tirés des résumés).",
+  "NICE NG234 (compression médullaire métastatique) : HTTP 403, non lu ; aucune recommandation ESMO sur la compression médullaire trouvée.",
+  "Traitement médicamenteux de la dysréflexie : seul un protocole hospitalier européen (S35) lu ; aucune FI suisse d’antihypertenseur à action rapide lue ; nifédipine à libération immédiate non trouvée sur AmiKo (S36).",
+  "Sensibilité, spécificité et rapports de vraisemblance des signes médullaires : non chiffrés dans les sources lues ; PubMed sans résultat pour la requête tentée.",
+  "Myélite transverse, infarctus médullaire, sclérose en plaques, syndrome de Guillain-Barré : aucun discriminant sourcé lu.",
+  "Escarres, intestin neurogène, ostéoporose, douleur neuropathique, ossifications hétérotopiques, fonction respiratoire : non recherchés (C20).",
+  "Spécificités suisses (Suva/LAA, AI, aptitude à la conduite après lésion) : non documentées.",
+  "Choc neurogène et choc spinal : aucune source nouvelle lue ; la leçon reste appuyée sur une étude observationnelle (Cureus 2025) non relue.",
+  "Fenêtres g82-dysraphisme, g82-neurourologie (guide allemand de l’auto-sondage) : résumés non relus par l’audit.",
+  "Captures navigateur (SEM-22, SEM-23) : non réalisées ; rendu des figures à 390 px estimé, non mesuré."
+ ],
+ "propositions": [
+  "propositions/G82_c_semio.html",
+  "propositions/G82_pop3_semio.html",
+  "propositions/G82_b_urgences.html",
+  "propositions/G82_a_ais.html",
+  "propositions/G82_mineurs.html",
+  "propositions/G82_enrichissements.html"
+ ],
+ "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+}
