@@ -1,0 +1,753 @@
+{
+ "empreintes": {
+  "chapters/G81/G81_a.html": {
+   "sha256": "344cce244a5da2a9b5dce1422e45b147b70bc5a67eb2a83a5ce97cc241eb1529",
+   "manifeste": "344cce244a5da2a9b5dce1422e45b147b70bc5a67eb2a83a5ce97cc241eb1529",
+   "conforme": true
+  },
+  "chapters/G81/G81_b.html": {
+   "sha256": "7ee69ceba5caac9a22a33e7c83ee0f1915219519b718e53969a51269c72b1b02",
+   "manifeste": "7ee69ceba5caac9a22a33e7c83ee0f1915219519b718e53969a51269c72b1b02",
+   "conforme": true
+  },
+  "chapters/G81/G81_c.html": {
+   "sha256": "82ff88a1c0b60430bee6ac6d4545bc14ec888d7be7890b4e2e8734c2a8463d72",
+   "manifeste": "82ff88a1c0b60430bee6ac6d4545bc14ec888d7be7890b4e2e8734c2a8463d72",
+   "conforme": true
+  },
+  "chapters/G81/G81_d.html": {
+   "sha256": "266495a90c3b3cc393b07c4bcde1f5fb1c7540e1410c962229716fc64a6b8aa1",
+   "manifeste": "266495a90c3b3cc393b07c4bcde1f5fb1c7540e1410c962229716fc64a6b8aa1",
+   "conforme": true
+  },
+  "chapters/G81/G81_pop1.html": {
+   "sha256": "880f69b98d06cb8e1435dd70d41cfbd1eac00d7d40bb80c769f00a5a23d806b4",
+   "manifeste": "880f69b98d06cb8e1435dd70d41cfbd1eac00d7d40bb80c769f00a5a23d806b4",
+   "conforme": true
+  },
+  "chapters/G81/G81_pop2.html": {
+   "sha256": "14db67d061cdf9bea0e2283b9321a9a7a9d9986695e77a50c1c2d05133687339",
+   "manifeste": "14db67d061cdf9bea0e2283b9321a9a7a9d9986695e77a50c1c2d05133687339",
+   "conforme": true
+  },
+  "glossary/g81.py": {
+   "sha256": "c556b8bab3d1dd3638ca552ede266ad5c5ecccba0d86f29c2de26eea8551db2d",
+   "manifeste": "c556b8bab3d1dd3638ca552ede266ad5c5ecccba0d86f29c2de26eea8551db2d",
+   "conforme": true
+  }
+ },
+ "tolerance": "demi-unité du dernier chiffre affiché ; ARRONDI jusqu’à une unité",
+ "recalcules": 62,
+ "compte": {
+  "CORRECT": 49,
+  "ARRONDI": 1,
+  "FAUX": 4,
+  "NON_VERIFIABLE": 8
+ },
+ "resultats": [
+  {
+   "id": "K01",
+   "attendu": 105.0,
+   "trouve": 105,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "arrivée 8 h 55 − dernière heure vue en bonne santé 7 h 10 (minutes) ; texte : « environ 1 h 45 »",
+   "source": "S25 Actilyse FI (traitement ≤ 4,5 h après le dernier état asymptomatique connu)",
+   "fichier": "chapters/G81/G81_pop1.html",
+   "ancre": "environ 1 h 45 se sont écoulées"
+  },
+  {
+   "id": "K02",
+   "attendu": "11:40",
+   "trouve": "non imprimé",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "fin de fenêtre = 7 h 10 + 4 h 30 = 11 h 40 ; délai restant à l’arrivée = 165 min (non écrit dans la leçon)",
+   "source": "S25 Actilyse FI ; S9 ESO 2021",
+   "note": "Calcul complémentaire proposé (propositions/G81_b_thrombolyse.html)."
+  },
+  {
+   "id": "K03",
+   "attendu": "heure de dernière prise de l’AOD (et activité anti-Xa)",
+   "trouve": "absente de l’énoncé",
+   "ecart": null,
+   "verdict": "NON_VERIFIABLE",
+   "formule": "Règle : prise < 48 h sans test spécifique → pas de thrombolyse ; anti-Xa < 0,5 U/mL → thrombolyse discutée (consensus 7/9)",
+   "source": "S9 ESO 2021, PICO 12.3 ; S25 Actilyse FI (contre-indication si anticoagulation orale efficace)",
+   "fichier": "chapters/G81/G81_a.html",
+   "ancre": "Elle prend un anticoagulant oral direct pour une fibrillation atriale connue.",
+   "constat": "C03"
+  },
+  {
+   "id": "K04",
+   "attendu": 55.8,
+   "trouve": 56,
+   "ecart": 0.2,
+   "verdict": "CORRECT",
+   "formule": "0,9 mg/kg × 62 kg = 55,8 mg ; texte : « environ 56 mg »",
+   "source": "S25 Actilyse FI juin 2025 (0,9 mg/kg, max 90 mg)",
+   "fichier": "chapters/G81/G81_b.html",
+   "ancre": "Pour 62 kg, ce rapport donne environ 56 mg"
+  },
+  {
+   "id": "K05",
+   "attendu": {
+    "bolus_mg": 5.58,
+    "perfusion_mg_60min": 50.22,
+    "plafond_mg": 90,
+    "plafond_atteint_si_poids_kg_>=": 100
+   },
+   "trouve": "absent (bolus, perfusion et plafond non écrits)",
+   "ecart": null,
+   "verdict": "NON_VERIFIABLE",
+   "formule": "bolus = 10 % × 55,8 = 5,58 mg en 1 min ; perfusion = 50,22 mg sur 60 min ; plafond 90 mg (atteint dès 100 kg)",
+   "source": "S25 Actilyse FI, Posologie, AVC ischémique aigu",
+   "constat": "C04"
+  },
+  {
+   "id": "K06",
+   "attendu": {
+    "tenecteplase_U": 3500,
+    "tenecteplase_mg": 17.5,
+    "equivalent_mg_kg": 0.282,
+    "0,25_mg_kg_theorique_mg": 15.5
+   },
+   "trouve": "absent (« La ténectéplase n’est pas couverte »)",
+   "ecart": null,
+   "verdict": "NON_VERIFIABLE",
+   "formule": "Metalyse 5000 U, tableau 1 par tranche de poids : 60 à < 70 kg → 3500 U = 17,5 mg, bolus unique 5 à 10 s",
+   "source": "S22 Metalyse 5000 U FI mai 2025 ; S23 ESO 2023 (0,25 mg/kg)",
+   "constat": "C05"
+  },
+  {
+   "id": "K07",
+   "attendu": 126.5,
+   "trouve": 127.0,
+   "ecart": 0.5,
+   "verdict": "CORRECT",
+   "formule": "somme des sous-types 107,3 + 13,2 + 6,0 = 126,5 contre total imprimé 127,0 (standardisations séparées)",
+   "source": "S7 Dirren 2025, résumé (valeurs identiques à la leçon)",
+   "note": "Écart de 0,5 interne à la source : taux standardisés séparément, non additifs ; la leçon reproduit fidèlement la source."
+  },
+  {
+   "id": "K08",
+   "attendu": 18.69469,
+   "trouve": 18.3,
+   "ecart": -0.39469,
+   "verdict": "NON_VERIFIABLE",
+   "formule": "hausse CIM-11/CIM-10 recalculée sur les taux : 107,3/90,4 − 1 = 18,7 % ; la source annonce 18,3 % (nombre de cas)",
+   "source": "S7 Dirren 2025, résumé",
+   "note": "La source exprime 18,3 % en nombre de cas, non en taux : non recalculable depuis les taux ; erratum 2026 (S7b) non lu."
+  },
+  {
+   "id": "K09",
+   "attendu": 24.78296,
+   "trouve": 24.8,
+   "ecart": 0.01704,
+   "verdict": "CORRECT",
+   "formule": "15 044 / 60 703 = 24,78 %",
+   "source": "S6 Pohl 2021, résumé"
+  },
+  {
+   "id": "K10",
+   "attendu": 4.032258,
+   "trouve": 4.0,
+   "ecart": -0.032258,
+   "verdict": "CORRECT",
+   "formule": "1 / 0,248 = 4,03 → « un patient sur quatre »",
+   "source": "S6 Pohl 2021"
+  },
+  {
+   "id": "K11",
+   "attendu": "proportions globales (tous patients)",
+   "trouve": "présentées comme « sécurité de la thrombolyse »",
+   "ecart": null,
+   "verdict": "FAUX",
+   "formule": "S6 : hémorragie intracrânienne 9,4 % (AVC) contre 0,7 % (pseudo-AVC) et décès 11,3 % contre 1,9 % sur l’ensemble des patients, dont 61,7 % et 26,3 % thrombolysés",
+   "source": "S6 Pohl 2021, résumé",
+   "fichier": "chapters/G81/G81_b.html",
+   "ancre": "La sécurité de la thrombolyse chez un pseudo-AVC est rassurante",
+   "constat": "C14",
+   "note": "Erreur d’attribution du dénominateur, non d’arithmétique."
+  },
+  {
+   "id": "K12",
+   "attendu": 51.461378,
+   "trouve": 51.5,
+   "ecart": 0.038622,
+   "verdict": "CORRECT",
+   "formule": "493 / 958 = 51,46 %",
+   "source": "S10 Zehnder 2026, résumé"
+  },
+  {
+   "id": "K13",
+   "attendu": 50.0,
+   "trouve": 50,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "54 / 108 = 50 %",
+   "source": "S10"
+  },
+  {
+   "id": "K14",
+   "attendu": {
+    "symptômes légers 167 → 41,8 %": 399.5,
+    "AOD 108 → 27 %": 400.0,
+    "infarctus démarqué 41 → 8,3 %": 494.0
+   },
+   "trouve": "41,8 % ; 27 % ; 8,3 %",
+   "ecart": null,
+   "verdict": "NON_VERIFIABLE",
+   "formule": "dénominateurs implicites = n / % : ≈ 400, 400 et 494 (et 14/41 = 34,1 % contre 41,2 % imprimé, soit un dénominateur implicite de 34)",
+   "source": "S10 Zehnder 2026, résumé",
+   "note": "Incohérence de dénominateurs interne à la source ; la leçon doit citer les effectifs (constat C19).",
+   "constat": "C19"
+  },
+  {
+   "id": "K15",
+   "attendu": 6.573,
+   "trouve": 6.57,
+   "ecart": -0.003,
+   "verdict": "CORRECT",
+   "formule": "OR 6,573 → 6,57",
+   "source": "S5 Zeng 2021, résumé"
+  },
+  {
+   "id": "K16",
+   "attendu": 1.879,
+   "trouve": 1.88,
+   "ecart": 0.001,
+   "verdict": "CORRECT",
+   "formule": "OR 1,879 → 1,88",
+   "source": "S5"
+  },
+  {
+   "id": "K17",
+   "attendu": 25.3,
+   "trouve": 25,
+   "ecart": -0.3,
+   "verdict": "CORRECT",
+   "formule": "25,3 % → « 25 % » (clé et Pareto)",
+   "source": "S5"
+  },
+  {
+   "id": "K18",
+   "attendu": 88.235294,
+   "trouve": 88,
+   "ecart": -0.235294,
+   "verdict": "CORRECT",
+   "formule": "15/17 = 88.2 %",
+   "source": "S13 Nowak 2011, résumé",
+   "note": "numérateur entier compatible"
+  },
+  {
+   "id": "K19",
+   "attendu": 64.705882,
+   "trouve": 65,
+   "ecart": 0.294118,
+   "verdict": "CORRECT",
+   "formule": "11/17 = 64.7 %",
+   "source": "S13 Nowak 2011, résumé",
+   "note": "numérateur entier compatible"
+  },
+  {
+   "id": "K20",
+   "attendu": 47.058824,
+   "trouve": 47,
+   "ecart": -0.058824,
+   "verdict": "CORRECT",
+   "formule": "8/17 = 47.1 %",
+   "source": "S13 Nowak 2011, résumé",
+   "note": "numérateur entier compatible"
+  },
+  {
+   "id": "K21",
+   "attendu": {
+    "RV+": 140.0,
+    "RV-": 0.44
+   },
+   "trouve": "interprétation qualitative (positif très évocateur ; négatif n’écarte pas)",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "RV+ = Se/(1 − Sp) = 0,56/0,004 = 140 ; RV− = (1 − Se)/Sp = 0,44",
+   "source": "S19 Mathevon 2019, résumé"
+  },
+  {
+   "id": "K22",
+   "attendu": 360,
+   "trouve": 360,
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "somme des maxima par muscle MS = 200 + 30 + 30 + 60 + 40 = 360 U = total maximal des études",
+   "source": "S15 BOTOX FI, MS adulte"
+  },
+  {
+   "id": "K23",
+   "attendu": 90.0,
+   "trouve": 90,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "somme des minima MS = 90 U (non imprimée, cohérente)",
+   "source": "S15",
+   "note": "non imprimé ; contrôle de cohérence"
+  },
+  {
+   "id": "K24",
+   "attendu": {
+    "6 U/kg × 62 kg": 372,
+    "plafond études": 360
+   },
+   "trouve": "« ≤ 360 U … en général ≤ 6 U/kg »",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "pour 62 kg, 6 U/kg = 372 U > 360 U : le plafond des études (360 U) reste le plus bas ; pour 50 kg, 300 U",
+   "source": "S15"
+  },
+  {
+   "id": "K25",
+   "attendu": {
+    "somme_tableau_MI_U": 425,
+    "maximum_par_traitement_U": 400
+   },
+   "trouve": "« Dose initiale » par muscle sans règle de sélection",
+   "ecart": 25,
+   "verdict": "FAUX",
+   "formule": "somme des 7 lignes = 425 U > 400 U (dépassement de 25 U, 6,25 %) si toutes les lignes sont appliquées",
+   "source": "S15 BOTOX FI, MI adulte (300 à 400 U réparties entre les muscles concernés ; maximum 400 U)",
+   "fichier": "chapters/G81/G81_d.html",
+   "ancre": "<th>Membre</th><th>Muscle</th><th>Dose initiale</th>",
+   "constat": "C02"
+  },
+  {
+   "id": "K26",
+   "attendu": {
+    "MS_plus_MI_meme_seance_U": 760,
+    "MS_reinjecte_a_9_semaines_U_sur_12_semaines": 720,
+    "cumul_maximal_adulte_12_semaines_U": 400
+   },
+   "trouve": "« membre supérieur ≤ 360 U, membre inférieur ≤ 400 U par séance ; intervalle ≥ 2 mois (MS) »",
+   "ecart": 360,
+   "verdict": "FAUX",
+   "formule": "cumul sur 12 semaines : 360 + 400 = 760 U, ou 360 × 2 = 720 U (réinjection MS à 2 mois) > 400 U autorisés",
+   "source": "S15 BOTOX FI : « la dose maximale cumulée sur une période de 12 semaines ne doit pas dépasser 400 unités » (adultes, indications multiples incluses)",
+   "fichier": "chapters/G81/G81_b.html",
+   "ancre": "BOTOX : membre supérieur ≤ 360 U, membre inférieur ≤ 400 U par séance",
+   "constat": "C01"
+  },
+  {
+   "id": "K27",
+   "attendu": 8.697143,
+   "trouve": 8.7,
+   "ecart": 0.002857,
+   "verdict": "CORRECT",
+   "formule": "2 mois ≈ 8,7 semaines < 12 semaines (intervalle MS plus court que la fenêtre de cumul)",
+   "source": "S15",
+   "note": "conversion pour C01"
+  },
+  {
+   "id": "K28",
+   "attendu": {
+    "debut_max_mg_j": 6,
+    "prises": 3,
+    "mg_par_prise": 2
+   },
+   "trouve": "6 mg/j en 3 prises",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "6 / 3 = 2 mg par prise (comprimé 2 mg sécable)",
+   "source": "S16"
+  },
+  {
+   "id": "K29",
+   "attendu": {
+    "semaines_min_pour_24_mg": 2.25,
+    "semaines_max_pour_12_mg": 3.0
+   },
+   "trouve": "non imprimé",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "de 6 à 24 mg/j par paliers de +4 mg deux fois par semaine : 4,5 paliers ≈ 2,3 semaines ; de 6 à 12 mg/j par +2 mg/semaine : 3 semaines",
+   "source": "S16",
+   "note": "contrôle de cohérence du schéma"
+  },
+  {
+   "id": "K30",
+   "attendu": 36,
+   "trouve": 36,
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "maximum 36 mg/j",
+   "source": "S16 et S24 Sirdalud FI janvier 2026"
+  },
+  {
+   "id": "K31",
+   "attendu": 6,
+   "trouve": 6,
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "ClCr < 25 mL/min : AUC × 6 (Cmax × 2, t½ ≈ 14 h)",
+   "source": "S16 Pharmacocinétique"
+  },
+  {
+   "id": "K32",
+   "attendu": {
+    "seuil_surveillance_hepatique_mg_j": 12,
+    "optimum_mg_j": [
+     12,
+     24
+    ]
+   },
+   "trouve": "surveillance hépatique absente",
+   "ecart": null,
+   "verdict": "NON_VERIFIABLE",
+   "formule": "toute la plage optimale imprimée (12 à 24 mg/j) est ≥ 12 mg/j : contrôle mensuel des transaminases pendant 4 mois requis ; arrêt si > 3 × normale",
+   "source": "S16 Mises en garde",
+   "constat": "C09"
+  },
+  {
+   "id": "K33",
+   "attendu": {
+    "jour_dose_mg_j": [
+     [
+      3,
+      30
+     ],
+     [
+      6,
+      45
+     ],
+     [
+      9,
+      60
+     ],
+     [
+      12,
+      75
+     ],
+     [
+      15,
+      90
+     ]
+    ]
+   },
+   "trouve": "« Début à 3 × 5 mg/j, + 5 mg par prise tous les 3 jours ; 30 à 80 mg/j »",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "15 mg/j puis +15 mg/j tous les 3 jours : 30 mg/j au jour 3 ; 75 mg/j au jour 12 ; 90 mg/j au jour 15 (80 mg/j n’est pas un palier du schéma)",
+   "source": "S20 Posologie adulte"
+  },
+  {
+   "id": "K34",
+   "attendu": {
+    "hemodialyse_debut_mg_j": 5,
+    "seuil_toxicite_insuffisant_renal_mg_j": 5,
+    "dose_initiale_standard_mg_j": 15
+   },
+   "trouve": "« prudence en insuffisance rénale terminale »",
+   "ecart": 10,
+   "verdict": "FAUX",
+   "formule": "la dose initiale standard (15 mg/j) est le triple du seuil (> 5 mg/j) au-delà duquel la FI rapporte une encéphalopathie toxique chez l’insuffisant rénal",
+   "source": "S20 Posologie, insuffisance rénale ; Mises en garde",
+   "fichier": "chapters/G81/G81_b.html",
+   "ancre": "baclofène : prudence en insuffisance rénale terminale",
+   "constat": "C08"
+  },
+  {
+   "id": "K35",
+   "attendu": {
+    "seances": [
+     12,
+     30
+    ],
+    "minutes_par_seance_pour_20_h": [
+     40,
+     100
+    ]
+   },
+   "trouve": "« Au moins 20 h supplémentaires (souvent 3 à 5 séances par semaine sur 4 à 6 semaines) »",
+   "ecart": null,
+   "verdict": "NON_VERIFIABLE",
+   "formule": "20 h = 1200 min réparties sur 12 à 30 séances → 40 à 100 min par séance supplémentaire",
+   "source": "S2 ESO 2025 (20 h lue ; la fréquence « 3 à 5 séances sur 4 à 6 semaines » n’a pas été retrouvée dans la section lue)",
+   "note": "Énoncé incomplet : durée de séance absente (constat C20).",
+   "constat": "C20"
+  },
+  {
+   "id": "K36",
+   "attendu": {
+    "FCR_%": [
+     60,
+     84
+    ],
+    "FCmax_%": [
+     77,
+     93
+    ],
+    "Borg_6_20": [
+     14,
+     16
+    ]
+   },
+   "trouve": "identique",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "définition opérationnelle de la haute intensité",
+   "source": "S2 ESO 2025, Méthodes"
+  },
+  {
+   "id": "K37",
+   "attendu": "4,5 h ; 4,5–9 h ; DWI/FLAIR",
+   "trouve": "4,5 h ; 4,5–9 h ; DWI/FLAIR",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "identité avec la source lue",
+   "source": "S9 ESO 2021"
+  },
+  {
+   "id": "K38",
+   "attendu": "> 50 % dysphagie",
+   "trouve": "> 50 % dysphagie",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "identité avec la source lue",
+   "source": "S11 Dziewas 2021"
+  },
+  {
+   "id": "K39",
+   "attendu": "MD Fugl-Meyer 4,67 ; 43 essais ; 1628 participants",
+   "trouve": "MD Fugl-Meyer 4,67 ; 43 essais ; 1628 participants",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "identité avec la source lue",
+   "source": "S14 Cochrane 2026"
+  },
+  {
+   "id": "K40",
+   "attendu": "spasticité 25,3 % ; 26,7 % (premier AVC) ; 39,5 % (premier AVC avec parésie) ; Ashworth modifiée ≥ 3 : 9,4 %",
+   "trouve": "spasticité 25,3 % ; 26,7 % (premier AVC) ; 39,5 % (premier AVC avec parésie) ; Ashworth modifiée ≥ 3 : 9,4 %",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "identité avec la source lue",
+   "source": "S5 Zeng 2021"
+  },
+  {
+   "id": "K41",
+   "attendu": "60–180 °/s ; > 200 °/s",
+   "trouve": "60–180 °/s ; > 200 °/s",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "identité avec la source lue",
+   "source": "S4 Trompetto 2014"
+  },
+  {
+   "id": "K42",
+   "attendu": "anticorps ≈ 1 % ; 1234 patients ; 91 % AVC",
+   "trouve": "anticorps ≈ 1 % ; 1234 patients ; 91 % AVC",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "identité avec la source lue",
+   "source": "S19 Mathevon 2019"
+  },
+  {
+   "id": "K43",
+   "attendu": "127,0/100 000 ; 75,8 ans ; 32,5 / 17,2 / 10,8 %",
+   "trouve": "127,0/100 000 ; 75,8 ans ; 32,5 / 17,2 / 10,8 %",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "identité avec la source lue",
+   "source": "S7 Dirren 2025"
+  },
+  {
+   "id": "K44",
+   "attendu": "effet 2 semaines, maximum 4–6 semaines ; MS ≥ 2 mois ; MI ≥ 12 semaines",
+   "trouve": "effet 2 semaines, maximum 4–6 semaines ; MS ≥ 2 mois ; MI ≥ 12 semaines",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "identité avec la source lue",
+   "source": "S15 BOTOX FI"
+  },
+  {
+   "id": "K45",
+   "attendu": "baclofène 100–120 mg/j hospitalier ; arrêt ~3 semaines ; réévaluation 6–8 semaines",
+   "trouve": "baclofène 100–120 mg/j hospitalier ; arrêt ~3 semaines ; réévaluation 6–8 semaines",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "identité avec la source lue",
+   "source": "S20 Liorésal FI"
+  },
+  {
+   "id": "K46",
+   "attendu": 11.1,
+   "trouve": "font-size 13 dans viewBox 420",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "taille rendue ≈ 13 × 358 / 420 = 11.1 px (≥ 11 px)",
+   "source": "contrôle de forme, calcul géométrique"
+  },
+  {
+   "id": "K47",
+   "attendu": 11.6,
+   "trouve": "font-size 13 dans viewBox 400",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "taille rendue ≈ 13 × 358 / 400 = 11.6 px (≥ 11 px)",
+   "source": "contrôle de forme, calcul géométrique"
+  },
+  {
+   "id": "K48",
+   "attendu": {
+    "largeur_estimee_px_viewBox": 124.8,
+    "largeur_cadre": 120
+   },
+   "trouve": "texte centré x = 210 dans un cadre 150–270",
+   "ecart": 4.8,
+   "verdict": "ARRONDI",
+   "formule": "estimation 20 × 0,48 × 13 ≈ 125 > 120 unités : débord possible de quelques unités",
+   "source": "estimation typographique (non mesurée au navigateur)",
+   "note": "MINEUR de forme, consigné en lacune de mesure."
+  },
+  {
+   "id": "K49",
+   "attendu": "BOTOX dès 2 ans ; biceps jusqu’à 4 sites ; court fléchisseur 25 U",
+   "trouve": "BOTOX dès 2 ans ; biceps jusqu’à 4 sites ; court fléchisseur 25 U",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "identité avec la source lue",
+   "source": "S15 BOTOX FI"
+  },
+  {
+   "id": "K50",
+   "attendu": "3995 patients de 18 à 55 ans, 2014-2022",
+   "trouve": "3995 patients de 18 à 55 ans, 2014-2022",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "identité avec la source lue",
+   "source": "S8 Schneider 2025"
+  },
+  {
+   "id": "K51",
+   "attendu": "consensus de 5 experts (2022)",
+   "trouve": "consensus de 5 experts (2022)",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "identité avec la source lue",
+   "source": "S17 Jacinto 2022"
+  },
+  {
+   "id": "K52",
+   "attendu": "61 études ; 62 664 participants ; 23,2 / 13,2 / 13 / 9,7 / 7,76 %",
+   "trouve": "61 études ; 62 664 participants ; 23,2 / 13,2 / 13 / 9,7 / 7,76 %",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "identité avec la source lue",
+   "source": "S6 Pohl 2021"
+  },
+  {
+   "id": "K53",
+   "attendu": "CIM-11 : événements < 24 h avec ischémie à l’imagerie ; létalité à 30 jours",
+   "trouve": "CIM-11 : événements < 24 h avec ischémie à l’imagerie ; létalité à 30 jours",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "identité avec la source lue",
+   "source": "S7 Dirren 2025"
+  },
+  {
+   "id": "K54",
+   "attendu": "test de marche de 6 minutes ; phase chronique > 6 mois ; 20 h de marche",
+   "trouve": "test de marche de 6 minutes ; phase chronique > 6 mois ; 20 h de marche",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "identité avec la source lue",
+   "source": "S2 ESO 2025"
+  },
+  {
+   "id": "K55",
+   "attendu": "dysphagie > 50 % ; anti-Xa non testée chez 50 % (54/108)",
+   "trouve": "dysphagie > 50 % ; anti-Xa non testée chez 50 % (54/108)",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "identité avec la source lue",
+   "source": "S11 ; S10"
+  },
+  {
+   "id": "K56",
+   "attendu": "données d’énoncé (71 ans, 62 kg, 7 h 10, 8 h 20, 8 h 55 ; quiz 34 ans, 1 h 30)",
+   "trouve": "données d’énoncé",
+   "ecart": 0,
+   "verdict": "CORRECT",
+   "formule": "données d’entrée des calculs K01, K02, K04, K05, K06 ; aucune incohérence interne (7 h 10 < 8 h 20 < 8 h 55 ; 1 h 30 < 4 h 30)",
+   "source": "vignette fictive de la leçon"
+  },
+  {
+   "id": "K57",
+   "attendu": 2.775311,
+   "trouve": 2.8,
+   "ecart": 0.024689,
+   "verdict": "CORRECT",
+   "formule": "glycémie 50 mg/dL ÷ 18,016 = 2,78 mmol/L (FI : 2,8)",
+   "source": "S25 Actilyse FI, Mises en garde",
+   "note": "proposition C04"
+  },
+  {
+   "id": "K58",
+   "attendu": 22.202487,
+   "trouve": 22.2,
+   "ecart": -0.002487,
+   "verdict": "CORRECT",
+   "formule": "glycémie 400 mg/dL ÷ 18,016 = 22,20 mmol/L (FI : 22,2)",
+   "source": "S25",
+   "note": "proposition C04"
+  },
+  {
+   "id": "K59",
+   "attendu": 17.5,
+   "trouve": 17.5,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "Metalyse : 5000 U = 25 mg → 200 U/mg ; 3500 U / 200 = 17,5 mg (tranche 60 à < 70 kg)",
+   "source": "S22 Metalyse 5000 U FI, tableau 1",
+   "note": "proposition C05"
+  },
+  {
+   "id": "K60",
+   "attendu": 5.0,
+   "trouve": 5.0,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "concentration reconstituée : 17,5 mg / 3,5 mL = 5 mg/mL",
+   "source": "S22 tableau 1",
+   "note": "proposition C05"
+  },
+  {
+   "id": "K62",
+   "attendu": 12.916667,
+   "trouve": 12.9,
+   "ecart": -0.016667,
+   "verdict": "CORRECT",
+   "formule": "dernière prise AOD proposée 20 h la veille → arrivée 8 h 55 = 12 h 55 min = 12,9 h < 48 h",
+   "source": "S9 ESO 2021 PICO 12.3",
+   "note": "donnée d’énoncé proposée (C03)"
+  },
+  {
+   "id": "K61",
+   "attendu": {
+    "Dysport_MS_max_U": 1000,
+    "Dysport_MS_avec_epaule_max_U": 1500,
+    "Dysport_MI_max_U": 1500,
+    "Dysport_MS_plus_MI_max_U": 1500,
+    "Xeomin_MS_max_U": 500,
+    "Xeomin_epaule_max_U": 250,
+    "Xeomin_MI_max_U": 400,
+    "Xeomin_MS_plus_MI_premier_U": 500,
+    "Xeomin_MS_plus_MI_suivants_U": 600
+   },
+   "trouve": "absent (« textes non lus »)",
+   "ecart": null,
+   "verdict": "NON_VERIFIABLE",
+   "formule": "reprise exacte des FI ; aucune équivalence d’unités entre toxines",
+   "source": "S29 Dysport FI mai 2026 ; S30 Xeomin FI mars 2026",
+   "constat": "C26",
+   "note": "proposition d’enrichissement"
+  }
+ ]
+}
