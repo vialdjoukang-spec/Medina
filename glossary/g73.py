@@ -36,14 +36,14 @@ add_if_absent('SMLE', [('S','Syndrome'),('M','Myasthénique de'),('LE','Lambert-
               'Maladie auto-immune rare de la jonction neuromusculaire : faiblesse proximale, réflexes abolis, dysautonomie. Elle est classée G73.1*.', 'g73-smle')
 add_if_absent('LEMS', [('LE','Lambert-Eaton'),('M','Myasthenic'),('S','Syndrome')], 'Lambert-Eaton myasthenic syndrome, nom anglais du SMLE',
               'Les sources anglaises emploient cette abréviation pour le syndrome myasthénique de Lambert-Eaton.', 'g73-smle')
-add_if_absent('PNS-Care', [('PNS','Paraneoplastic Neurologic Syndrome'),('Care','nom du score, non développé dans le dossier lu')], 'Critères PNS-Care 2021 des syndromes neurologiques paranéoplasiques',
+add_if_absent('PNS-Care', [('PNS','Paraneoplastic Neurologic Syndrome'),('Care','nom des critères, non développé dans les sources lues')], 'Critères PNS-Care 2021 des syndromes neurologiques paranéoplasiques',
               'Ce consensus international (coordination à Lyon) classe le syndrome de Lambert-Eaton parmi les phénotypes à haut risque de syndrome paranéoplasique.', 'g73-smle')
 add_if_absent('DELTA-P', [('D','Dutch'),('E','English'),('L','LEMS'),('T','Tumour'),('A','Association'),('P','Prediction')], 'Dutch-English LEMS Tumour Association Prediction',
               'Ce score calculé au diagnostic estime le risque de carcinome bronchique à petites cellules dans le syndrome de Lambert-Eaton. Il comporte six items.', 'g73-deltap')
 add_if_absent('VGCC', [('V','Voltage'),('G','Gated'),('C','Calcium'),('C','Channel')], 'Voltage-gated calcium channel, canal calcique voltage-dépendant',
               'Les anticorps dirigés contre les canaux de type P/Q réduisent la libération d’acétylcholine dans le syndrome de Lambert-Eaton.', 'g73-vgcc')
 add_if_absent('CK', [('C','Créatine'),('K','Kinase')], 'Créatine kinase',
-              'Enzyme musculaire dosée dans le sang. Elle est normale ou peu élevée dans la myopathie cortisonique et très élevée dans les myopathies nécrosante et bénigne de l’enfant citées par le cours.', 'g73-cortisone')
+              'Enzyme musculaire dosée dans le sang. Elle est normale ou peu élevée dans la myopathie cortisonique et très élevée dans la myopathie nécrosante et dans la myosite aiguë bénigne de l’enfant citées par le cours.', 'g73-cortisone')
 add_if_absent('PAMC', [('P','Potentiel d’'),('A','Action'),('M','Musculaire'),('C','Composé')], 'Potentiel d’action musculaire composé',
               'Réponse électrique globale du muscle à la stimulation de son nerf ; son amplitude de repos est basse dans le syndrome de Lambert-Eaton.', 'g73-pamc')
 add_if_absent('ROC', [('R','Receiver'),('O','Operating'),('C','Characteristic')], 'Receiver operating characteristic',
