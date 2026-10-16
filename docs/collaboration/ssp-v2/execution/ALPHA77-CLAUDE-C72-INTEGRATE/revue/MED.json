@@ -1,0 +1,163 @@
+{
+ "actor": "Claude",
+ "code": "C72",
+ "kind": "MED",
+ "mission": "ALPHA77-CLAUDE-C72-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "reviewed_commit": "25e29e3c4f8474baec8f161192da655b44612102",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/C72/C72_a.html": "61f1e5b6546203dff263a254d4ce4d1b75f0c58f111237d9e4d7319f4bda2a3b",
+  "chapters/C72/C72_b.html": "ed523b09dd861f69865aeac53d0997d115bc87753561655f9c85fe7bed518edd",
+  "chapters/C72/C72_c.html": "a100855b7613bc9b1233bc183e682854e2cfb29bf93c5b0c5d46c1fa31087d73",
+  "chapters/C72/C72_d.html": "96fc32e80a72746959bb0b7d9321213b08b1cd96d4b64ad0a524dcf62ed73aa6",
+  "chapters/C72/C72_pop1.html": "aaa43aea83d40278ee04551db9862094f04859c12dc6ab33ffc6e6e006280440",
+  "chapters/C72/C72_pop2.html": "2e52a53cc60772328277c7026f5e635377d9b8b08a2c7a6e98bc1dbaea26c0c9",
+  "glossary/c72.py": "185664974a2e7229c14467056c627462f056a4c39ba8a449d50c4cd748e390eb"
+ },
+ "reviewed_files_sha256": {
+  "chapters/C72/C72_a.html": "266c16e1cd767548f3e62937bd4af31df98929636ba8395b6392ff9ef055d43c",
+  "chapters/C72/C72_b.html": "92d89cbe4fc361012a93d5562e0f91cdd5963293f0543a10cdcabec3704f83e9",
+  "chapters/C72/C72_c.html": "2fb440b80b889276d23e252f40fd4192e31794709360edf43e281b91fd199153",
+  "chapters/C72/C72_d.html": "07f6c0adeb5cd6c0b82a7a06f3aa396aa6cbdae6dfe944222887ac9a71239211",
+  "chapters/C72/C72_pop1.html": "dd87aabf0e307f6ec2ab91407177a131f29bedc385ae2aadae5ab646975c4317",
+  "chapters/C72/C72_pop2.html": "8f3f9002753350d61643b6ec6f13e77a2c35cca7abd0376ee2efc41bc6bb6735",
+  "glossary/c72.py": "32d9cc80b0ad811165166cac0a064ef23fdccd8d2f3e6661f7aa73cae1917539"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "scope": "Différence base 523832d9 → efe30f8c (W) des sept fichiers relue phrase par phrase ; contre-lecture des sources primaires pour chaque fait nouveau (Westphal et Mohme 2024, Nersesyan 2025, Bodensohn 2024, Tonn 2024, ERN GENTURIS 2023, EANO 2021, Brain Sciences 2025 en texte intégral via Europe PMC ; résumés PubMed de Hess 2005, Novy 2012, Boktor 2023, Tabrah 2022 et Galliker 2020 ; support ENCR de mai 2021 ; aide-mémoire NKRS ; FI suisses Temodal® et Koselugo® via AmiKo). Les passages inchangés depuis l’audit ALPHA1-CLAUDE-C72-MED n’ont pas été relus en totalité.",
+ "findings": [
+  {
+   "id": "P-MED-01",
+   "severite": "MAJEUR",
+   "status": "resolved",
+   "fichier": "chapters/C72/C72_c.html ; chapters/C72/C72_b.html ; chapters/C72/C72_pop2.html",
+   "ancre": "c72-e-2 ; c72-7 (tableau 7.1)",
+   "constat": "Érosion vertébrale de l’épendymome myxopapillaire affirmée sans signaler la divergence des sources (carte IRM e-2 et tableau 7.1).",
+   "verification": "Nersesyan et al., Insights into Imaging, publié le 25.10.2025 (ESR) : « they can cause scalloping of the vertebral bodies (Fig. 1A) » ; Key Points : « Myxopapillary ependymomas cause vertebral scalloping » ; figure 1 : festonnage de la face postérieure des corps vertébraux et des arcs postérieurs en tomodensitométrie. Westphal et Mohme, octobre 2024, section Clinical presentation : « Schwannomas and neurofibromas when growing slowly over a long time can cavitate the vertebrae which never happens in myxopapillary ependymomas ».",
+   "decision": "Aucune des deux sources n’est une recommandation. La source applicable la plus récente, consacrée à l’imagerie et documentée par un cas illustré, est Nersesyan 2025 : le cours retient un festonnage possible, non fréquent, et signale le désaccord dans la nouvelle fenêtre c72-mpe-festonnage (textes en présence, choix retenu, conséquence pratique, limite).",
+   "correction": "« érosion des corps vertébraux » remplacé par un festonnage possible selon la revue de 2025, contesté par la revue de 2024, avec lien vers la fenêtre de divergence ; même mention dans le tableau 7.1.",
+   "evidence": [
+    "PMC12553641 (Europe PMC, texte intégral XML) lu le 16.10.2026, sections Myxopapillary ependymoma, Key Points et légende de la figure 1.",
+    "PMC11485896 (Europe PMC, texte intégral XML) lu le 16.10.2026, section Clinical presentation.",
+    "Commit 25e29e3c."
+   ]
+  },
+  {
+   "id": "P-MED-02",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/C72/C72_c.html",
+   "ancre": "c72-sm-8",
+   "constat": "« environ 30 à 40 % des tumeurs intramédullaires de l’adulte » : la source parle des gliomes intramédullaires, sans restriction à l’adulte.",
+   "verification": "Tonn et al. 2024 : « within the group of intramedullary gliomas, nearly 30–40% of all tumors are of astrocytic origin. In children … 40–60% of all pediatric spinal cord neoplasms ».",
+   "correction": "« 30 à 40 % environ des gliomes intramédullaires, tous âges confondus ».",
+   "evidence": [
+    "PMC11485950 lu le 16.10.2026, section Definition, Epidemiology.",
+    "Commit 25e29e3c."
+   ]
+  },
+  {
+   "id": "P-MED-03",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/C72/C72_c.html ; chapters/C72/C72_pop2.html",
+   "ancre": "c72-s-radio-cours ; pareto-c72-radio",
+   "constat": "« dès 40 Gy chez l’enfant » : la source écrit « above 40 Gy ».",
+   "verification": "Bodensohn et al. 2024 : « critical doses begin above 55Gy (in children even above 40Gy) as the risk for myelopathy increases further than 2% ».",
+   "correction": "« au-delà de 40 Gy chez l’enfant » dans le texte et le Pareto.",
+   "evidence": [
+    "PMC11485843 lu le 16.10.2026, section Ependymoma.",
+    "Commit 25e29e3c."
+   ]
+  },
+  {
+   "id": "P-MED-04",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/C72/C72_d.html",
+   "ancre": "c72-p-3",
+   "constat": "« lésions hépatiques parfois mortelles » surestime la fréquence décrite par la FI.",
+   "verification": "FI suisse Temodal®, mise à jour de décembre 2021, Mises en garde : « Quelques très rares rapports ont fait état de lésions hépatiques, pouvant aller jusqu’à une insuffisance hépatique mortelle » ; tests hépatiques avant le traitement, après la moitié du cycle de 42 jours et après chaque cycle ; « La toxicité hépatique peut se manifester plusieurs semaines après la dernière administration … ou encore plus tard ».",
+   "correction": "« de très rares lésions hépatiques, pouvant aller jusqu’à une insuffisance hépatique mortelle, ont été rapportées ; cette toxicité peut se manifester plusieurs semaines après la dernière prise, voire plus tard ».",
+   "evidence": [
+    "python3 tools/swissmedic_fi.py texte 7680545770922 (AmiKo), 16.10.2026.",
+    "Commit 25e29e3c."
+   ]
+  },
+  {
+   "id": "P-MED-05",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/C72/C72_pop2.html",
+   "ancre": "c72-sm-nf1-douleur",
+   "constat": "Phrase contradictoire : « L’attente vigilante n’a pas sa place dans le MPNST ; elle n’est pas écartée par le seul signe d’alarme ».",
+   "verification": "ERN GENTURIS 2023, tableau 9, recommandation 5 : « There is no place for watchful waiting in MPNST and urgent surgical resection should be the mainstay for treatment (if possible) ».",
+   "correction": "« L’attente vigilante n’a pas sa place dans le MPNST, et l’exérèse chirurgicale urgente en reste le pilier lorsqu’elle est possible. »",
+   "evidence": [
+    "PMC9845795 lu le 16.10.2026, tableau 9.",
+    "Commit 25e29e3c."
+   ]
+  },
+  {
+   "id": "P-MED-06",
+   "severite": "—",
+   "status": "non_blocking",
+   "constat": "Contre-vérification des faits nouveaux intégrés par W.",
+   "verification": "Confirmés dans leur source : MPNST (IRM régionale, TEP au FDG, exérèse si sûre et faisable, sinon biopsie guidée ; ERN GENTURIS) ; origine cellulaire des épendymomes, subépendymome excentré, kyste polaire à la place du canal central, siège du cône au fond du sac dural, dissémination du myxopapillaire et série néerlandaise de 1 384 adultes (Westphal et Mohme) ; myélopathie précoce (2 à 4 mois, signe de Lhermitte) et tardive, 59,4 Gy pour la queue de cheval (Bodensohn) ; pseudoprogression et contrôle à 4 à 8 semaines (EANO 2021) ; H3 K27M et PRC2, MYCN et surveillance (Brain Sciences 2025) ; 84 % des potentiels évoqués moteurs (Tonn) ; choc spinal, syndromes antérieurs et différentiel (Hess 2005) ; détresse respiratoire selon le niveau (Novy 2012) ; résidu de 200 ml : 82 % et 65 %, 734 patients (Boktor 2023) ; tonus anal 0,23 à 0,53, contraction 0,29 et 0,96 (Tabrah 2022) ; antécédent de cancer (Galliker 2020) ; codes CIM-O 9394/1, 9383/1, 9421/1 et 9391/3 (ENCR 2021) ; extension de la déclaration NKRS avant 20 ans (D35, D61, D76) et exclusion de la MGUS ; Temodal® (interactions, anémie aplasique, tests hépatiques) et Koselugo® (adulte et enfant dès 3 ans, 50 mg au plus par prise, juin 2026).",
+   "evidence": [
+    "Textes intégraux Europe PMC (PMC11485896, PMC12553641, PMC11485843, PMC11485950, PMC9845795, PMC12563245, PMC7904519) et résumés PubMed (16117470, 22377894, 37121596, 35180641, 31278933) relus le 16.10.2026.",
+    "encr.eu ENCR2021-S3-CNS.pdf et aide-mémoire NKRS (usz.ch) téléchargés et relus le 16.10.2026.",
+    "FI Temodal® et Koselugo® via tools/swissmedic_fi.py, 16.10.2026."
+   ]
+  },
+  {
+   "id": "P-MED-07",
+   "severite": "—",
+   "status": "non_blocking",
+   "constat": "Figure anatomique (figure 3) et figure 1 retirées sans remplacement ; la discipline Anatomie n’a plus de figure.",
+   "verification": "Décision de Vial (MAJ-06) appliquée par W ; aucune anatomie redessinée ni SVG factice. P n’ajoute pas de schéma non anatomique : la topographie est déjà schématisée par les figures 7 et 8, et un troisième schéma en cases serait redondant.",
+   "evidence": [
+    "integration/corrections.json (MAJ-06, lacunes).",
+    "integration/controles.json, revue_agent_P.audit_sciences."
+   ],
+   "justification_non_bloquant": "Lacune déclarée : figure anatomique réelle à sourcer."
+  }
+ ],
+ "lacunes_declarees": [
+  {
+   "objet": "Figure anatomique",
+   "statut": "maintenue",
+   "detail": "Original réel à sourcer pour la discipline Anatomie."
+  },
+  {
+   "objet": "EANO 2018 et OMS 2021",
+   "statut": "maintenue",
+   "detail": "Non relus par W ni par P (aucun fait nouveau n’en dépend)."
+  },
+  {
+   "objet": "Synthèses suisses Hess, Novy, Spirig",
+   "statut": "maintenue",
+   "detail": "Lues en résumé seulement ; signalé dans la leçon."
+  },
+  {
+   "objet": "Table CIM-O-3.2",
+   "statut": "maintenue",
+   "detail": "Codes de morphologie issus du support ENCR de mai 2021 ; la leçon demande de vérifier la table en vigueur."
+  }
+ ],
+ "evidence": [
+  "Différence 523832d9 → efe30f8c → 25e29e3c relue par l’Agent P le 16.10.2026.",
+  "python3 test_v7.py --static C72 : OK (build_medina.audit() renvoie {}).",
+  "Construction hors dépôt : MEDINA_OUT=<scratchpad>/c72p/build python3 build_front.py --fragment S08 (14 402 054 octets) ; Playwright, Chromium 1194, 1300 × 900 et 390 × 844, 16.10.2026.",
+  "integration/controles.json, section revue_agent_P."
+ ],
+ "conclusion": "Aucun constat bloquant ouvert : P-MED-01 à P-MED-05 sont corrigés au commit 25e29e3c ; les faits nouveaux de W sont confirmés dans leurs sources ; les lacunes restent déclarées.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}

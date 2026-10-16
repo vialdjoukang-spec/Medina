@@ -1,0 +1,78 @@
+{
+ "actor": "Claude",
+ "code": "G63",
+ "kind": "LANG",
+ "mission": "ALPHA77-CLAUDE-G63-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "reviewed_commit": "582f665ed674726b7c8c9939e88cab11375d6ba7",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/G63/G63_a.html": "82947f41b70256a0116f4ed9d27fcc38b17ae8ae0eecd6b7e50f69566298b399",
+  "chapters/G63/G63_b.html": "0764b4e3f495f3773b981371bab52f547c2b21ce727d1e10839571b1395f8c4c",
+  "chapters/G63/G63_c.html": "1721d42e03ee2466d639da5ce5d2fc1bb43db49c84d0c56d7ab483dcb1c717c1",
+  "chapters/G63/G63_d.html": "9455938e0c123895aae03c84d14fc3ab88b2356af6a6856b5d499cc7c5655ad9",
+  "chapters/G63/G63_pop1.html": "72f33f6f6bebb81829c6859326fc7574530c342c06061a0edea163bc353993b4",
+  "chapters/G63/G63_pop2.html": "d86e6392e8a33720a78693401d262b6f4af43532807af144d1702ea7040ac9c3",
+  "glossary/g63.py": "6ee9cabc547337e28ce806bed53d56ee5e338cbd37fa6aff7dd25139f324d666"
+ },
+ "reviewed_files_sha256": {
+  "chapters/G63/G63_a.html": "7fa04551903abb298d6965c974d2bd0b9cce9435d5573db69a11000a2dd11dd6",
+  "chapters/G63/G63_b.html": "ea499e0bc49faab3d6275e3fd8517515da45167953ff19ec682cf6491a584f26",
+  "chapters/G63/G63_c.html": "e836ca0009c60f0f10fbfd3bdf2edc3e6898b11a4e009231d8772509d52746d4",
+  "chapters/G63/G63_d.html": "3d9ff123e09464a3cc7f2bfdf1a6e32644dca928cb14633c80131f57dbab1e10",
+  "chapters/G63/G63_pop1.html": "9c0485be1a3864ea26027078106b1fb6a775b672bf36dcc57f39f72ba6451e84",
+  "chapters/G63/G63_pop2.html": "edefe593bbe83f544f9b3530588bd17be3946f839020b1750cd96f8a4afe6c81",
+  "glossary/g63.py": "60fa2dbaae8b274bc428831a34692999e9a6f9a22b1e6c20e7e90b927e04d4a7"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "scope": "59 propositions LANG fond_inchange et 67 renvois médicaux ; français de l’ajout de W et des corrections de P (STYLE_REDACTION).",
+ "findings": [
+  {
+   "id": "LANG-propositions",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "56 propositions appliquées, 3 intégrées ou sans objet après C03 (corrections.json, lang_statut).",
+   "verification": "Sondage des formulations « nouveau » dans les fichiers finaux ; phrases complètes, annonces directes, aucune métaphore.",
+   "evidence": [
+    "Sondage des formulations « nouveau » dans les fichiers finaux ; phrases complètes, annonces directes, aucune métaphore."
+   ]
+  },
+  {
+   "id": "P-LANG-01",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "renvoi": "G63-LANG-RM-29",
+   "constat": "Contresens de logique statistique (voir MED P-MED-01).",
+   "verification": "S4 QualiCCare 2016, note (5) : « Sensitivität und Spezifität des Tests zur Identifizierung von Patienten mit erhöhtem Risiko für Fussulzera lagen in prospektiven Studien bei 65-90% resp. 35-85% »",
+   "correction": "Formulation correcte : « un résultat normal laisse parfois échapper un patient réellement exposé à l’ulcère ».",
+   "evidence": [
+    "S4 QualiCCare 2016, note (5) : « Sensitivität und Spezifität des Tests zur Identifizierung von Patienten mit erhöhtem Risiko für Fussulzera lagen in prospektiven Studien bei 65-90% resp. 35-85% »"
+   ]
+  },
+  {
+   "id": "P-LANG-02",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Corrections de P rédigées en phrases complètes, sans abréviation nouvelle ; aucune clé de glossaire requise.",
+   "verification": "test_v7.py --static G63 : OK (audit des abréviations vide).",
+   "evidence": [
+    "test_v7.py --static G63 : OK (audit des abréviations vide)."
+   ]
+  }
+ ],
+ "choix_differes": [
+  "Espaces insécables et séparateurs de milliers (LANG-OG-01), différés par la coordination."
+ ],
+ "evidence": [
+  "integration/corrections.json relu ; différence base → final.",
+  "python3 test_v7.py --static G63 : OK."
+ ],
+ "conclusion": "Aucun constat bloquant de langue ; le seul contresens (RM-29) est corrigé.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
