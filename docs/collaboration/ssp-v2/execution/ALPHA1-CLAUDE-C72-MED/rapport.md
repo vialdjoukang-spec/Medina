@@ -19,7 +19,7 @@ Le fond médical est solide. Il n’y a **aucun constat bloquant** au sens d’u
 
 ## Constats majeurs
 
-1. **MAJ-01 — MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md) : le sixième sous-onglet « Sémiologie fondamentale et analytique » est absent** (`C72_c.html`, `div.sci-bar`). Les signes de l’onglet 1 sont cités sans technique, sans valeur ni regroupement syndromique. La proposition complète figure dans `propositions/C72_c_semio.html`, avec ses neuf fenêtres dans `propositions/C72_pop2_semio.html`. Ces fenêtres s’ajoutent à `C72_pop2.html` : l’outil `alpha_publication` n’admet que `_pop1` et `_pop2`, il n’y a donc pas de fichier `_pop3`.
+1. **MAJ-01 — MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md) : le sixième sous-onglet « Sémiologie fondamentale et analytique » est absent** (`C72_c.html`, `div.sci-bar`). Les signes de l’onglet 1 sont cités sans technique, sans valeur ni regroupement syndromique. La proposition complète figure dans `propositions/C72_c_semio.html`, avec ses neuf fenêtres dans `propositions/C72_pop2_semio.html` ; le marqueur clinique du panneau pA est dans `propositions/C72_a_semio_clinique.html`. Ces fenêtres s’ajoutent à `C72_pop2.html` : l’outil `alpha_publication` n’admet que `_pop1` et `_pop2`, il n’y a donc pas de fichier `_pop3`.
 2. **MAJ-02 — Les sciences comptent quatre disciplines au lieu de cinq.** La discipline proposée est la *Physiologie des voies médullaires et du contrôle sacré* (`propositions/C72_c_physio.html`). C’est elle qui explique la parésie non radiculaire, l’ataxie, la dissociation des sensibilités et la différence entre cône et queue de cheval [S12] [S13] [S5].
 3. **MAJ-03 — `tests/audit_sciences.py` échoue.** Les quatre disciplines totalisent 788 mots, et chacune reste sous le minimum de 280. Les libellés « Science → clinique / examen / traitement » manquent, et la Génétique n’a pas de figure. Les libellés proposés sont dans `propositions/C72_c_liens.html`.
 4. **MAJ-04 — Le périmètre de codage est inexact.** La catégorie CIM-10 découle du code de comportement CIM-O [S20]. L’épendymome myxopapillaire (9394/1) et l’astrocytome pilocytique du nerf optique (9421/1) ont un comportement /1 [S21] : ils relèvent donc de D43.4 et D43.3, non de C72.1 et C72.3. Ces tumeurs restent toutefois à déclarer au registre. **Réserve** : la table CIM-O-3.2 en vigueur n’a pas été lue. Proposition : `propositions/C72_b_1.html`.
@@ -62,7 +62,7 @@ ENR-01 à ENR-12 : sous-onglet de sémiologie, fenêtres, discipline de physiolo
 | SEM-22, SEM-23 | non : aucune capture, la discipline n’existe pas |
 | SEM-24 | oui |
 
-Le « non » sur les critères bloquants SEM-01 à SEM-03 et SEM-13 tient à l’absence de la discipline. Il ne signale aucune erreur médicale. La proposition `C72_c_semio.html` y répond : elle suit la structure du § 4 b, ne contient aucun style en ligne, et sa figure tient dans une `viewBox` de 360 avec un texte de 17.
+Le « non » sur les critères bloquants SEM-01 à SEM-03 et SEM-13 tient à l’absence de la discipline. Il ne signale aucune erreur médicale. La proposition `C72_c_semio.html` y répond : elle suit le contrat sémiologique (bouton `c72-tab-semio`, panneau `c72-s-semio` en `tabpanel`, neuf sections `data-semiology`), ne contient aucun style en ligne, et sa figure logique tient dans une `viewBox` de 360 avec un texte de 17.
 
 ## Matrice des 20 rubriques
 
@@ -96,12 +96,20 @@ L’inventaire `image_clo_finder` trouve cinq figures SVG vectorielles. Les figu
 | Fichiers lus | 7/7, empreintes conformes |
 | Sources lues | 22 (`sources.json`), dont 9 suisses, parmi lesquelles 3 FI Swissmedic datées |
 | Constats | 0 bloquant · 6 majeurs · 9 mineurs · 12 enrichissements |
-| Propositions | 12 fichiers dans `propositions/` |
+| Propositions | 13 fichiers dans `propositions/` |
 | Contrôles | `test_v7.py --static C72` OK · `audit_sciences.py` échec (préexistant) · JSON valides · ancres vérifiées |
 | Sources canoniques modifiées | aucune |
 
 ## Suite de la revue Codex (constat P1)
 
 La fenêtre proposée `c72-sm-nf1-douleur` et l’alerte de `c72-sm-1` faisaient de tout signe d’alarme de la NF1 une indication d’exérèse sans surveillance. La ligne directrice ERN GENTURIS (eClinicalMedicine, 13.01.2023, tableau 9, recommandations 2 à 5) a été relue. Les deux textes sont corrigés : IRM régionale d’abord, puis TEP au FDG avant toute chirurgie. L’exérèse primaire n’intervient que si une ANNUBP ou un MPNST est suspecté et que le geste est sûr et faisable ; sinon, une biopsie guidée est réalisée. Le constat MIN-09 étend la correction à la leçon. La correction fait l’objet d’un commit de suivi, car le commit de traçabilité était déjà poussé et l’historique ne se réécrit pas.
+
+## Suite de la revue Codex (contrat sémiologique, lot 2)
+
+- **Sémiologie.** `C72_c_semio.html` est restructuré selon le contrat et le validateur `semiology` de `tools/starter_codex.py`. Le bouton `c72-tab-semio` (rôle `tab`, `aria-selected="true"`, `aria-controls` et `data-s` vers `c72-s-semio`) passe en tête de la barre ; les boutons existants passent à `aria-selected="false"`. Le panneau `c72-s-semio` porte `role="tabpanel"` et `aria-labelledby="c72-tab-semio"`, sans `hidden`. Il compte neuf sections `data-semiology`, dans l’ordre normal, signs, mechanisms, examination, interpretation, differentials, urgency, limits, sources, toutes titrées en `h3`. La section des sources relie chaque affirmation à son passage et donne un lien vers chaque source lue. Le fond est inchangé ; aucun fait nouveau n’est ajouté.
+- **Marqueur clinique.** `propositions/C72_a_semio_clinique.html` donne une section `data-semiology-clinical="C72"` à insérer dans `C72_a.html`, section c72-6, avant la clé « Le déficit neurologique préopératoire se documente avant tout geste ». Elle reprend les symptômes, l’anamnèse analytique, les signes, l’examen, la discrimination clinique et les urgences, tous sourcés.
+- **Fichiers admis.** Aucun fichier `pop3` n’existe ; les fenêtres sont dans `C72_pop2_semio.html`, à verser dans `C72_pop2.html`. Les neuf renvois `c72-sm-*` ont chacun leur fenêtre.
+- **Registre.** Chaque entrée de `sources.json` porte désormais `version`, `section_ou_page`, `passage_paraphrase`, `population`, `limites` et `niveau_lecture` (texte intégral ou résumé), d’après les lectures effectives. Les inconnues sont déclarées comme telles.
+- **Figures.** Aucune figure anatomique dessinée par IA : la figure S est un schéma logique en cases de texte.
 
 Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée.

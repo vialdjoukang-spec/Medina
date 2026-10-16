@@ -12,7 +12,7 @@
  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
  "modele_effort": "conforme au manifeste",
  "date_debut": "2026-10-16T05:49:58Z",
- "date_fin": "2026-10-16T06:18:41Z",
+ "date_fin": "2026-10-16T06:32:58Z",
  "lecture": {
   "fichiers": [
    "chapters/C72/C72_a.html",
@@ -93,7 +93,7 @@
      "citation_courte": "generally requires the presence of at least two hallmark features"
     }
    ],
-   "proposition": "propositions/C72_c_semio.html ; propositions/C72_pop2_semio.html",
+   "proposition": "propositions/C72_c_semio.html ; propositions/C72_pop2_semio.html ; propositions/C72_a_semio_clinique.html",
    "justification": "Le mécanisme du signe (voies longues, cône, racines) fixe le niveau lésionnel → le niveau fixe le champ de l’IRM et l’urgence → sans sémiologie analytique, la leçon ne forme pas au raisonnement de l’examen fédéral (troubles de la marche, parésie, rétention).",
    "ancre_occurrences": 1,
    "bloquant_cloture": true
@@ -371,7 +371,7 @@
    "gravite": "ENRICHISSEMENT",
    "fichier": "chapters/C72/C72_c.html",
    "ancre": "<div class=\"sci-bar ui\" role=\"tablist\">",
-   "constat": "Sixième sous-onglet de sémiologie, 7 îlots, figure lisible, trois cas",
+   "constat": "Sixième sous-onglet de sémiologie (bouton c72-tab-semio, panneau c72-s-semio role=tabpanel), neuf sections data-semiology dans l’ordre du contrat, figure logique lisible, trois cas ; marqueur clinique data-semiology-clinical=\"C72\" proposé dans pA",
    "preuve": [
     {
      "source_id": "S2",
@@ -424,7 +424,7 @@
      "citation_courte": ""
     }
    ],
-   "proposition": "propositions/C72_c_semio.html",
+   "proposition": "propositions/C72_c_semio.html ; propositions/C72_a_semio_clinique.html",
    "justification": "Rubrique absente ou insuffisante de la matrice ou de la grille SEM ; proposition rédigée et sourcée [Sx].",
    "ancre_occurrences": 1
   },
@@ -815,6 +815,7 @@
   "proposition": [
    "propositions/C72_c_semio.html",
    "propositions/C72_pop2_semio.html",
+   "propositions/C72_a_semio_clinique.html",
    "propositions/C72_c_physio.html"
   ],
   "sources_semiologie": [
@@ -938,7 +939,8 @@
   "test_v7_static": "OK (C72 mots 15548 fenêtres 72 quiz 6 pareto 16)",
   "audit_sciences": "failed (788 mots, 4 disciplines, 21 erreurs)",
   "json_valide": true,
-  "ancres_verifiees": "chaque ancre apparaît au moins une fois dans son fichier (clé ancre_occurrences)"
+  "ancres_verifiees": "chaque ancre apparaît au moins une fois dans son fichier (clé ancre_occurrences)",
+  "contrat_semiologie": "grep : c72-tab-semio, aria-labelledby, role=tabpanel présents ; 9 data-semiology dans l’ordre ; 0 balise h2 ; data-semiology-clinical=\"C72\" présent ; aucun fichier pop3 ; sources.json valide avec tous les champs"
  },
  "lacunes": [
   "Aucune source de sémiologie universitaire suisse ou européenne en texte intégral lue ; Hess 2005, Novy 2012 et Spirig 2011 lus en résumé seulement (E-utilities).",
@@ -954,7 +956,7 @@
  "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée",
  "date_debut_note": "Heure relevée par date -u au début de l'analyse (avant la première source lue).",
  "revue_codex": {
-  "constat_P1": "propositions/C72_pop3_semio.html, ligne 28 : signes d’alarme NF1 présentés comme indication d’exérèse automatique sans surveillance",
+  "constat_P1": "propositions/C72_pop2_semio.html (anciennement nommé C72_pop3_semio.html, renommé depuis ; plus aucun fichier pop3), ligne 28 : signes d’alarme NF1 présentés comme indication d’exérèse automatique sans surveillance",
   "traitement": "ERN GENTURIS relue (eClinicalMedicine, 13.01.2023, tableau 9, recommandations 2 à 5) ; fenêtre c72-sm-nf1-douleur et alerte c72-sm-1 corrigées ; constat MIN-09 ajouté pour la leçon",
   "deplacement": "C72_pop3_semio.html renommé C72_pop2_semio.html : fenêtres à ajouter dans C72_pop2.html (alpha_publication n’admet que _pop1 et _pop2)",
   "commit": "commit de suivi distinct du commit de traçabilité 1fc5c523, déjà poussé (aucune réécriture d’historique, force-push interdit)"
@@ -963,5 +965,14 @@
   "constat_P1": "propositions/C72_figures.html, lignes 8–9 : SVG anatomique (moelle, cône, queue de cheval) classé à tort SCHEMA_NON_ANATOMIQUE",
   "traitement": "SVG anatomiques des figures 1 et 3 retirés des propositions ; réserve Image_Clo_finder ; figures 1 et 3 de la leçon reclassées ANATOMIQUE_IA (MAJ-06) ; figure P de la physiologie remplacée par un schéma logique",
   "verification_nf1": "correction ERN GENTURIS présente dans C72_pop2_semio.html (c72-sm-nf1-douleur) et C72_c_semio.html (alerte c72-sm-1)"
+ },
+ "revue_codex_contrat": {
+  "origine": "Correctifs de contrat, audits MED du lot 2 (revue Codex), points 1 à 4",
+  "point_1_semiologie": "C72_c_semio.html restructuré : bouton id=\"c72-tab-semio\" role=tab aria-selected=true aria-controls/data-s=\"c72-s-semio\" en tête de .sci-bar (les boutons existants passent à aria-selected=false) ; panneau div.sci id=\"c72-s-semio\" role=tabpanel aria-labelledby=\"c72-tab-semio\", sans hidden ni aria-hidden ; neuf section.ilot data-semiology dans l’ordre normal, signs, mechanisms, examination, interpretation, differentials, urgency, limits, sources ; titres h3, aucun h2 ; premier titre exact ; section sources avec un lien https vers chaque source lue et un tableau affirmation ↔ passage. Fond inchangé, aucun fait nouveau.",
+  "point_2_marqueur_clinique": "propositions/C72_a_semio_clinique.html : section data-semiology-clinical=\"C72\" à insérer dans chapters/C72/C72_a.html, #pA, section c72-6, avant la div.key « Le déficit neurologique préopératoire se documente avant tout geste » (ancre présente une fois) ; symptômes, anamnèse analytique, signes, examen, discrimination clinique et urgences, tous sourcés [Sx].",
+  "point_3_fichiers_admis": "Aucun fichier pop3 : la proposition de fenêtres est C72_pop2_semio.html (cible chapters/C72/C72_pop2.html). Références du rapport mises à jour ; neuf data-k c72-sm-* et neuf data-pop correspondants, aucun renvoi orphelin.",
+  "point_4_registre": "sources.json : chaque entrée porte id, url, organisme, version, date_consultation, section_ou_page, passage_paraphrase, population, limites et niveau_lecture (texte intégral ou résumé), remplis d’après les lectures effectives ; inconnues déclarées « non précisé par la source dans les passages lus ».",
+  "figures": "Aucune figure anatomique dessinée par IA : la figure S est un schéma logique en cases de texte.",
+  "constats_propres": "aucun au-delà des points 1 à 4"
  }
 }
