@@ -1,0 +1,78 @@
+# Audit linguistique G72 « Autres myopathies » (ALPHA1-CLAUDE-G72-LANG)
+
+Base `32416a20`, branche `claude/alpha1/g72-lang-g1`, fin 2026-10-16T06:03:07Z. Empreintes des 7 fichiers conformes au manifeste : oui.
+
+## Tableau de bord
+
+| Propositions locales | Renvois médicaux | Hors périmètre |
+|---|---|---|
+| 107 | 38 | 2 (sémiologie, figures) |
+
+Répartition : phrase_nominale 54, ambiguite 15, grammaire 12, registre 7, ponctuation 6, lourdeur 6, typographie 3, accord 2, repetition 1, conjugaison 1
+
+## Hors périmètre linguistique
+
+- **MAJEUR, transmis à l’audit MED** : `G72_c.html` compte 4 `data-s` (g72-s-anat, g72-s-histo, g72-s-physio, g72-s-bioch), donc 4 disciplines réelles et aucun sous-onglet « Sémiologie fondamentale et analytique ».
+- **ORIGINE_INCONNUE (réserve)** : figures 1 à 4 (SVG dessinés, la figure 1 est une silhouette anatomique). Mon contrôle a porté sur le texte des figures, non sur leur provenance ; vérification transmise à l’audit MED.
+
+## Renvois médicaux (non appliqués)
+
+Formulations créant ou supposant une causalité, une fréquence, une chronologie ou une portée de source non établies. Elles ne sont pas corrigées.
+
+| Id | Fichier | Type | Ancre | Explication |
+|---|---|---|---|---|
+| RM-001 | G72_a.html | frequence | La toxicité est le plus souvent <b>directe</b> | Fréquence relative (« le plus souvent ») directe/auto-immune formulée sans chiffre ; à rattacher à la source (Stroes ; Pasnoor) ou à reformuler. Idem dans la table de l’îlot 1 et la fenêtre Pareto « Mécanismes ». |
+| RM-002 | G72_a.html | causalite | ce qui explique l’atrophie sélective et l’absence d’inflammation à la  | Relation causale (préférence pour les fibres de type II explique l’absence d’inflammation) à vérifier dans Solé et coll. ; une association histologique n’est pas un mécanisme établi par la phrase. |
+| RM-003 | G72_a.html | causalite | Cette cinétique rapide justifie la mobilisation précoce décrite plus l | La phrase déduit une indication thérapeutique d’une cinétique histologique (« 4 % par jour », « dès le cinquième jour ») ; la déduction et la chronologie doivent figurer dans la source lue ou être retirées. |
+| RM-004 | G72_a.html | frequence_causalite | explique le plus souvent le déclenchement | « explique le plus souvent » affirme à la fois une fréquence et une causalité sans source nommée dans l’encadré. |
+| RM-005 | G72_a.html | causalite | Une exposition plus élevée de la statine accroît la toxicité sur la fi | Lien dose/exposition → toxicité présenté comme règle générale ; la phrase « plus d’exposition, plus de toxicité » (îlot 4) généralise à partir d’un seul chiffre pharmacocinétique (ciclosporine, ASC × 8,7), qui n’est pas un chiffre de toxicité. |
+| RM-006 | G72_a.html | causalite | une myalgie mal gérée fait donc perdre le bénéfice cardiovasculaire de | Le « donc » relie un taux d’arrêt de 75 % dans « certaines cohortes » à une perte de bénéfice cardiovasculaire ; ce lien n’est pas établi par les chiffres cités. |
+| RM-007 | G72_a.html | chronologie | Le début se situe en général 4 à 6 semaines après l’introduction, parf | Délais de survenue (4 à 6 semaines, « parfois après des années ») et « récidive plus rapide » à la réexposition : chronologies à rattacher à une source précise (Stroes et coll., 2015). |
+| RM-008 | G72_a.html | frequence_causalite | indolore : cortisone, réanimation | L’encadré et la fenêtre Pareto classent la myopathie de réanimation parmi les faiblesses « indolores » ; la carte « Réanimation » ne mentionne pas l’absence de douleur et aucune source n’est citée pour ce point. |
+| RM-009 | G72_a.html | causalite | d’où l’intérêt de l’imputabilité par arrêt et réintroduction | Déduction (écart registres/essais → intérêt de l’imputabilité) correcte en logique mais non rattachée à une source ; inoffensive si présentée comme raisonnement du cours. |
+| RM-010 | G72_a.html | attribution | STOMP (essai de la Société européenne d’athérosclérose, classification | L’intitulé fait de STOMP un essai de la Société européenne d’athérosclérose ; le glossaire et la fenêtre le présentent comme un essai cité par le consensus. Attribution à rectifier par le relecteur médical. |
+| RM-011 | G72_b.html | causalite | maintiennent la protection cardiovasculaire | L’énoncé affirme le maintien d’une protection cardiovasculaire alors que les chiffres cités sont des baisses de LDL-cholestérol (critère de substitution). Idem dans la stratégie pharmacologique (D, p-1) et dans la fenêtre « Hypolipémiants alternatifs » (« la protection cardiovasculaire se maintient »). |
+| RM-012 | G72_b.html | causalite | La prévention des accès (déclencheurs, acétazolamide) vise à limiter c | Lien présenté entre la prévention des accès et la limitation de la myopathie permanente ; la source n’est pas citée pour ce lien (Statland et coll., 2018 : à vérifier). |
+| RM-013 | G72_b.html | quantificateur | l’amélioration atteint 85 % la première année | Incohérence de quantificateur : « jusqu’à 85 % » (îlot 9.3, fenêtre g72-alcool) devient « atteint 85 % » (îlot 10) puis « amélioration de 85 % » (paramètres clés, îlot 12). Un maximum rapporté est présenté comme valeur typique. |
+| RM-014 | G72_b.html | articulation | lavage puis réintroduction, changement de statine, dose minimale ou pr | La suite « réévaluer l’indication, lavage puis réintroduction, changement de statine, dose minimale ou prise intermittente » ne dit pas s’il s’agit d’options alternatives ou d’étapes successives ; le terme « lavage » n’est pas défini. À trancher d’après Stroes et coll., 2015. |
+| RM-015 | G72_b.html | attribution | mais augmente les hypoglycémies et la mortalité à 90 jours dans l’essa | La syntaxe laisse croire que la diminution modérée de l’incidence provient aussi de NICE-SUGAR ; seule la hausse des hypoglycémies et de la mortalité est rattachée à l’essai. Attribution des deux effets à clarifier. |
+| RM-016 | G72_b.html | precision | un potentiel d’action musculaire composé inférieur à 80 % de la limite | « 80 % de la limite inférieure » omet « de la normale » ; ce flou se retrouve dans c (e-2), pop1 (g72-enmg, g72-rea-criteres) et b (îlot 12). À préciser d’après Rodriguez et coll., 2022. |
+| RM-017 | G72_b.html | causalite | Il s’agit d’une rhabdomyolyse sous interaction médicamenteuse. | Dans la vignette fictive, le diagnostic et l’imputation à l’interaction clarithromycine/atorvastatine sont posés comme certains alors que le cours enseigne que l’imputabilité exige trois observations concordantes (îlot 7). |
+| RM-018 | G72_c.html | causalite_frequence | le résultat est élevé sans signification, et il conduit à des arrêts i | Affirme qu’un dosage systématique chez l’asymptomatique est « élevé » et « conduit à des arrêts inutiles » : ni fréquence ni causalité n’est donnée par une source ; la phrase mélange aussi dosage après effort et dosage systématique. |
+| RM-019 | G72_c.html | coherence | <td>Variable ; baisse après arrêt</td> | La créatine kinase de la myopathie directe aux statines est « variable » dans le tableau e-3 et « élevée et transitoire » dans l’encadré final de l’îlot ; incohérence à lever. |
+| RM-020 | G72_c.html | causalite | La biopsie et les anticorps augmentent la sensibilité et la spécificit | Le texte lu montre un gain de sensibilité et de spécificité avec biopsie (93 % et 88 % contre 87 % et 82 %) ; aucun chiffre ne l’attribue aux anticorps pris isolément. |
+| RM-021 | G72_c.html | chronologie | c’est là que la perte de force se voit en premier | « en premier » et « la plupart des myopathies acquises » (fréquence) ne sont pas rattachés à une source ; « précocement » pour les fléchisseurs des doigts dans la myosite à inclusions relève du même constat. |
+| RM-022 | G72_c.html | causalite | toxiques (statines, corticoïdes, alcool) et maladie critique déplacent | L’îlot 3.1 précise qu’aucun mécanisme des statines n’est établi chez l’humain ; l’énoncé généralise une balance synthèse/dégradation aux statines. |
+| RM-023 | G72_c.html | causalite | Le potassium est donné lentement parce que le stock total n’est pas dé | Lien « parce que » entre stock total non déplété et administration lente ; la source (Statland et coll., 2018) décrit le rebond mais le lien explicatif est à vérifier. |
+| RM-024 | G72_c.html | causalite | Une voie commune explique pourquoi une baisse du cholestérol peut s’ac | Contredit le corps du texte (« mécanismes … non établis chez l’humain ») ; de même, « la coenzyme Q10 n’est pas recommandée faute de preuve » donne un motif absent de la fenêtre g72-alternatives. |
+| RM-025 | G72_d.html | causalite | Cette contradiction se résout par le statut hors étiquette | Le statut hors étiquette explique l’écart mais ne le « résout » pas ; la formulation affirme une résolution et une conduite (décision du spécialiste) non sourcées. |
+| RM-026 | G72_d.html | motif_absent | <td>À éviter</td><td>Statland et coll., 2018</td></tr> <tr><td>Lidocaï | La colonne « Raison » contient « À éviter » (répétition de l’intitulé de la table) pour les thiazides et pour les antiarythmiques/salbutamol dans le syndrome d’Andersen-Tawil : aucune raison n’est donnée. |
+| RM-027 | G72_d.html | provenance | la source américaine exprime le potassium en mEq | La même source (Statland et coll., 2018) est nommée « revue européenne » (introduction du tableau, fenêtres) et « source américaine » (ce paragraphe) ; la règle du projet exclut les références américaines comme référence de conduite. |
+| RM-028 | G72_d.html | portee | Les <button class="w" data-k="g72-atorva">monographies</button> suivan | Plusieurs fenêtres citées déclarent elles-mêmes que mécanisme, effets indésirables ou posologie ne sont pas lus (salbutamol, hydrochlorothiazide, hypolipémiants, immunoglobulines) : la description est trop large. |
+| RM-029 | G72_d.html | frequence_causalite | une interaction explique la plupart des myopathies graves | Fréquence (« la plupart ») et causalité sans source. |
+| RM-030 | G72_pop1.html | causalite | l’arrêt est à la fois diagnostic et traitement | Généralisation à toutes les myopathies toxiques d’une conduite tirée de deux revues lues par leur résumé seul (limite déclarée dans la même fenêtre). |
+| RM-031 | G72_pop1.html | chronologie | classification clinico-séro-pathologique de l’ENMC (2016) | Date de la classification ENMC : 2016 dans le corps de la fenêtre, 2018 dans la référence citée (même fenêtre et fenêtre g72-anticorps) ; à harmoniser. |
+| RM-032 | G72_pop1.html | causalite | Le variant rs4149056 augmente l’exposition à certaines statines. | Passage d’une association génétique (risque de myopathie) à un mécanisme (exposition accrue) ; « module l’exposition » dans l’îlot 3.1 relève du même constat. |
+| RM-033 | G72_pop1.html | causalite | Le mécanisme est une hausse du facteur de croissance des fibroblastes  | Mécanisme causal posé comme établi à partir d’un cas isolé lu par son résumé ; l’îlot 4 écrit « mécanisme retenu ». |
+| RM-034 | G72_pop1.html | chronologie | Le médecin teste ces groupes lorsque la faiblesse est lentement progre | Indication et chronologie (« lentement progressive », « sans lien médicamenteux et résistante aux traitements habituels » dans g72-ibm) sans source ; la fenêtre déclare seulement des critères de classification. |
+| RM-035 | G72_pop1.html | inversion | Dans l’alcool aigu, la rhabdomyolyse est la cause non traumatique la p | Sujet et attribut inversés par rapport à l’îlot 8.1 (« l’alcool est la cause non traumatique la plus fréquente de rhabdomyolyse hospitalière ») : la fenêtre fait de la rhabdomyolyse la cause la plus fréquente, de quoi on ne sait pas. Phrase à corriger d’après Simon et coll., 2017. |
+| RM-036 | G72_pop1.html | portee | Les critères ENMC ont été révisés en 2024 (IRM, échographie, anticorps | Le contenu des critères ENMC 2024 est décrit (IRM, échographie, anticorps anti-cN1A) alors que le cours déclare ne pas l’avoir lu (îlot e-4, même fenêtre). |
+| RM-037 | G72_pop1.html | portee | Le cas suisse de myopathie nécrosante avait une créatine kinase à 400  | Un cas suisse non réanimatoire est cité juste après la description de la créatine kinase « nettement élevée avec myoglobinurie » de la myopathie nécrosante de réanimation, ce qui laisse croire que 400 U/L illustre cette catégorie. |
+| RM-038 | G72_pop2.html | portee | Le dichlorphénamide est approuvé par l’autorité américaine, hors Suiss | Le statut suisse est affirmé (« hors Suisse ») alors que la même phrase indique qu’aucune information professionnelle suisse n’a été lue. |
+
+## Propositions locales
+
+Détail complet dans `propositions.json` (ancien exact, nouveau, motif). Points marquants : accord « déclenché(s) » (LANG des cartes paralysies périodiques), « l’arrêt … atteint 75 % », « Chez la fibre normale », « fut rédigé », parenthèses imbriquées, signes « = » dans le texte, métaphore « arme » (2 occurrences, dans b et d), phrases nominales des cartes, des listes d’examen et des puces Pareto.
+
+## Choix différés (non appliqués)
+
+- Espaces insécables globales.
+- « Fibrillation atriale/auriculaire » (aucune occurrence).
+
+## Limites
+
+- Audit purement linguistique ; aucun fait médical vérifié.
+- Les définitions de fenêtres au format nominal lexical et les cellules de tableaux ne sont pas converties.
+- Toute reformulation conserve les obligations cliniques (« Il faut … »).
+
+*Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée.*

@@ -1,0 +1,422 @@
+{
+ "mission": "ALPHA1-CLAUDE-G72-LANG",
+ "code": "G72",
+ "type_audit": "linguistique",
+ "base_sha": "32416a2080e67537641040a81252dec0b3e6d137",
+ "generation": 1,
+ "branche": "claude/alpha1/g72-lang-g1",
+ "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-G72-LANG-g1",
+ "conversation": "alpha1-claude-g72-lang",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-16T05:30:00Z (estimation ; heure non relevée au démarrage)",
+ "date_fin": "2026-10-16T06:03:07Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G72/G72_a.html",
+   "chapters/G72/G72_b.html",
+   "chapters/G72/G72_c.html",
+   "chapters/G72/G72_d.html",
+   "chapters/G72/G72_pop1.html",
+   "chapters/G72/G72_pop2.html",
+   "glossary/g72.py"
+  ],
+  "empreintes_conformes": true,
+  "note": "SHA-256 des 7 fichiers recalculés et comparés au manifeste (snapshot d1a488ad) ; HEAD du worktree = base_sha ci-dessus."
+ },
+ "premiere_verification": "Recalcul SHA-256 des 7 fichiers contre .medina/missions/ALPHA1-CLAUDE-G72-LANG.json : conformes.",
+ "synthese": {
+  "nombre_propositions": 107,
+  "renvois_medicaux": 38,
+  "par_categorie": {
+   "ponctuation": 6,
+   "ambiguite": 15,
+   "grammaire": 12,
+   "lourdeur": 6,
+   "phrase_nominale": 54,
+   "accord": 2,
+   "registre": 7,
+   "typographie": 3,
+   "repetition": 1,
+   "conjugaison": 1
+  }
+ },
+ "verification_mecanique": "Chaque « ancien » apparaît exactement une fois dans son fichier (script Python, 0 échec) ; aucun chevauchement entre propositions d’un même fichier.",
+ "constats": [
+  {
+   "id": "RM-001",
+   "fichier": "chapters/G72/G72_a.html",
+   "ancre": "La toxicité est le plus souvent <b>directe</b>",
+   "type": "frequence",
+   "explication": "Fréquence relative (« le plus souvent ») directe/auto-immune formulée sans chiffre ; à rattacher à la source (Stroes ; Pasnoor) ou à reformuler. Idem dans la table de l’îlot 1 et la fenêtre Pareto « Mécanismes ».",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-002",
+   "fichier": "chapters/G72/G72_a.html",
+   "ancre": "ce qui explique l’atrophie sélective et l’absence d’inflammation à la biopsie",
+   "type": "causalite",
+   "explication": "Relation causale (préférence pour les fibres de type II explique l’absence d’inflammation) à vérifier dans Solé et coll. ; une association histologique n’est pas un mécanisme établi par la phrase.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-003",
+   "fichier": "chapters/G72/G72_a.html",
+   "ancre": "Cette cinétique rapide justifie la mobilisation précoce décrite plus loin.",
+   "type": "causalite",
+   "explication": "La phrase déduit une indication thérapeutique d’une cinétique histologique (« 4 % par jour », « dès le cinquième jour ») ; la déduction et la chronologie doivent figurer dans la source lue ou être retirées.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-004",
+   "fichier": "chapters/G72/G72_a.html",
+   "ancre": "explique le plus souvent le déclenchement",
+   "type": "frequence_causalite",
+   "explication": "« explique le plus souvent » affirme à la fois une fréquence et une causalité sans source nommée dans l’encadré.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-005",
+   "fichier": "chapters/G72/G72_a.html",
+   "ancre": "Une exposition plus élevée de la statine accroît la toxicité sur la fibre",
+   "type": "causalite",
+   "explication": "Lien dose/exposition → toxicité présenté comme règle générale ; la phrase « plus d’exposition, plus de toxicité » (îlot 4) généralise à partir d’un seul chiffre pharmacocinétique (ciclosporine, ASC × 8,7), qui n’est pas un chiffre de toxicité.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-006",
+   "fichier": "chapters/G72/G72_a.html",
+   "ancre": "une myalgie mal gérée fait donc perdre le bénéfice cardiovasculaire de la statine",
+   "type": "causalite",
+   "explication": "Le « donc » relie un taux d’arrêt de 75 % dans « certaines cohortes » à une perte de bénéfice cardiovasculaire ; ce lien n’est pas établi par les chiffres cités.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-007",
+   "fichier": "chapters/G72/G72_a.html",
+   "ancre": "Le début se situe en général 4 à 6 semaines après l’introduction, parfois après des années",
+   "type": "chronologie",
+   "explication": "Délais de survenue (4 à 6 semaines, « parfois après des années ») et « récidive plus rapide » à la réexposition : chronologies à rattacher à une source précise (Stroes et coll., 2015).",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-008",
+   "fichier": "chapters/G72/G72_a.html",
+   "ancre": "indolore : cortisone, réanimation",
+   "type": "frequence_causalite",
+   "explication": "L’encadré et la fenêtre Pareto classent la myopathie de réanimation parmi les faiblesses « indolores » ; la carte « Réanimation » ne mentionne pas l’absence de douleur et aucune source n’est citée pour ce point.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-009",
+   "fichier": "chapters/G72/G72_a.html",
+   "ancre": "d’où l’intérêt de l’imputabilité par arrêt et réintroduction",
+   "type": "causalite",
+   "explication": "Déduction (écart registres/essais → intérêt de l’imputabilité) correcte en logique mais non rattachée à une source ; inoffensive si présentée comme raisonnement du cours.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-010",
+   "fichier": "chapters/G72/G72_a.html",
+   "ancre": "STOMP (essai de la Société européenne d’athérosclérose, classification et imputabilité)",
+   "type": "attribution",
+   "explication": "L’intitulé fait de STOMP un essai de la Société européenne d’athérosclérose ; le glossaire et la fenêtre le présentent comme un essai cité par le consensus. Attribution à rectifier par le relecteur médical.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-011",
+   "fichier": "chapters/G72/G72_b.html",
+   "ancre": "maintiennent la protection cardiovasculaire",
+   "type": "causalite",
+   "explication": "L’énoncé affirme le maintien d’une protection cardiovasculaire alors que les chiffres cités sont des baisses de LDL-cholestérol (critère de substitution). Idem dans la stratégie pharmacologique (D, p-1) et dans la fenêtre « Hypolipémiants alternatifs » (« la protection cardiovasculaire se maintient »).",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-012",
+   "fichier": "chapters/G72/G72_b.html",
+   "ancre": "La prévention des accès (déclencheurs, acétazolamide) vise à limiter ce risque.",
+   "type": "causalite",
+   "explication": "Lien présenté entre la prévention des accès et la limitation de la myopathie permanente ; la source n’est pas citée pour ce lien (Statland et coll., 2018 : à vérifier).",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-013",
+   "fichier": "chapters/G72/G72_b.html",
+   "ancre": "l’amélioration atteint 85 % la première année",
+   "type": "quantificateur",
+   "explication": "Incohérence de quantificateur : « jusqu’à 85 % » (îlot 9.3, fenêtre g72-alcool) devient « atteint 85 % » (îlot 10) puis « amélioration de 85 % » (paramètres clés, îlot 12). Un maximum rapporté est présenté comme valeur typique.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-014",
+   "fichier": "chapters/G72/G72_b.html",
+   "ancre": "lavage puis réintroduction, changement de statine, dose minimale ou prise intermittente",
+   "type": "articulation",
+   "explication": "La suite « réévaluer l’indication, lavage puis réintroduction, changement de statine, dose minimale ou prise intermittente » ne dit pas s’il s’agit d’options alternatives ou d’étapes successives ; le terme « lavage » n’est pas défini. À trancher d’après Stroes et coll., 2015.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-015",
+   "fichier": "chapters/G72/G72_b.html",
+   "ancre": "mais augmente les hypoglycémies et la mortalité à 90 jours dans l’essai NICE-SUGAR",
+   "type": "attribution",
+   "explication": "La syntaxe laisse croire que la diminution modérée de l’incidence provient aussi de NICE-SUGAR ; seule la hausse des hypoglycémies et de la mortalité est rattachée à l’essai. Attribution des deux effets à clarifier.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-016",
+   "fichier": "chapters/G72/G72_b.html",
+   "ancre": "un potentiel d’action musculaire composé inférieur à 80 % de la limite inférieure avec",
+   "type": "precision",
+   "explication": "« 80 % de la limite inférieure » omet « de la normale » ; ce flou se retrouve dans c (e-2), pop1 (g72-enmg, g72-rea-criteres) et b (îlot 12). À préciser d’après Rodriguez et coll., 2022.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-017",
+   "fichier": "chapters/G72/G72_b.html",
+   "ancre": "Il s’agit d’une rhabdomyolyse sous interaction médicamenteuse.",
+   "type": "causalite",
+   "explication": "Dans la vignette fictive, le diagnostic et l’imputation à l’interaction clarithromycine/atorvastatine sont posés comme certains alors que le cours enseigne que l’imputabilité exige trois observations concordantes (îlot 7).",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-018",
+   "fichier": "chapters/G72/G72_c.html",
+   "ancre": "le résultat est élevé sans signification, et il conduit à des arrêts inutiles de statine",
+   "type": "causalite_frequence",
+   "explication": "Affirme qu’un dosage systématique chez l’asymptomatique est « élevé » et « conduit à des arrêts inutiles » : ni fréquence ni causalité n’est donnée par une source ; la phrase mélange aussi dosage après effort et dosage systématique.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-019",
+   "fichier": "chapters/G72/G72_c.html",
+   "ancre": "<td>Variable ; baisse après arrêt</td>",
+   "type": "coherence",
+   "explication": "La créatine kinase de la myopathie directe aux statines est « variable » dans le tableau e-3 et « élevée et transitoire » dans l’encadré final de l’îlot ; incohérence à lever.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-020",
+   "fichier": "chapters/G72/G72_c.html",
+   "ancre": "La biopsie et les anticorps augmentent la sensibilité et la spécificité.",
+   "type": "causalite",
+   "explication": "Le texte lu montre un gain de sensibilité et de spécificité avec biopsie (93 % et 88 % contre 87 % et 82 %) ; aucun chiffre ne l’attribue aux anticorps pris isolément.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-021",
+   "fichier": "chapters/G72/G72_c.html",
+   "ancre": "c’est là que la perte de force se voit en premier",
+   "type": "chronologie",
+   "explication": "« en premier » et « la plupart des myopathies acquises » (fréquence) ne sont pas rattachés à une source ; « précocement » pour les fléchisseurs des doigts dans la myosite à inclusions relève du même constat.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-022",
+   "fichier": "chapters/G72/G72_c.html",
+   "ancre": "toxiques (statines, corticoïdes, alcool) et maladie critique déplacent cette balance vers la dégradation",
+   "type": "causalite",
+   "explication": "L’îlot 3.1 précise qu’aucun mécanisme des statines n’est établi chez l’humain ; l’énoncé généralise une balance synthèse/dégradation aux statines.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-023",
+   "fichier": "chapters/G72/G72_c.html",
+   "ancre": "Le potassium est donné lentement parce que le stock total n’est pas déplété",
+   "type": "causalite",
+   "explication": "Lien « parce que » entre stock total non déplété et administration lente ; la source (Statland et coll., 2018) décrit le rebond mais le lien explicatif est à vérifier.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-024",
+   "fichier": "chapters/G72/G72_c.html",
+   "ancre": "Une voie commune explique pourquoi une baisse du cholestérol peut s’accompagner d’une toxicité musculaire",
+   "type": "causalite",
+   "explication": "Contredit le corps du texte (« mécanismes … non établis chez l’humain ») ; de même, « la coenzyme Q10 n’est pas recommandée faute de preuve » donne un motif absent de la fenêtre g72-alternatives.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-025",
+   "fichier": "chapters/G72/G72_d.html",
+   "ancre": "Cette contradiction se résout par le statut hors étiquette",
+   "type": "causalite",
+   "explication": "Le statut hors étiquette explique l’écart mais ne le « résout » pas ; la formulation affirme une résolution et une conduite (décision du spécialiste) non sourcées.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-026",
+   "fichier": "chapters/G72/G72_d.html",
+   "ancre": "<td>À éviter</td><td>Statland et coll., 2018</td></tr>\n<tr><td>Lidocaïne",
+   "type": "motif_absent",
+   "explication": "La colonne « Raison » contient « À éviter » (répétition de l’intitulé de la table) pour les thiazides et pour les antiarythmiques/salbutamol dans le syndrome d’Andersen-Tawil : aucune raison n’est donnée.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-027",
+   "fichier": "chapters/G72/G72_d.html",
+   "ancre": "la source américaine exprime le potassium en mEq",
+   "type": "provenance",
+   "explication": "La même source (Statland et coll., 2018) est nommée « revue européenne » (introduction du tableau, fenêtres) et « source américaine » (ce paragraphe) ; la règle du projet exclut les références américaines comme référence de conduite.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-028",
+   "fichier": "chapters/G72/G72_d.html",
+   "ancre": "Les <button class=\"w\" data-k=\"g72-atorva\">monographies</button> suivantes développent le mécanisme, les preuves, la posologie, les effets indésirables, les contre-indications et la surveillance",
+   "type": "portee",
+   "explication": "Plusieurs fenêtres citées déclarent elles-mêmes que mécanisme, effets indésirables ou posologie ne sont pas lus (salbutamol, hydrochlorothiazide, hypolipémiants, immunoglobulines) : la description est trop large.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-029",
+   "fichier": "chapters/G72/G72_d.html",
+   "ancre": "une interaction explique la plupart des myopathies graves",
+   "type": "frequence_causalite",
+   "explication": "Fréquence (« la plupart ») et causalité sans source.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-030",
+   "fichier": "chapters/G72/G72_pop1.html",
+   "ancre": "l’arrêt est à la fois diagnostic et traitement",
+   "type": "causalite",
+   "explication": "Généralisation à toutes les myopathies toxiques d’une conduite tirée de deux revues lues par leur résumé seul (limite déclarée dans la même fenêtre).",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-031",
+   "fichier": "chapters/G72/G72_pop1.html",
+   "ancre": "classification clinico-séro-pathologique de l’ENMC (2016)",
+   "type": "chronologie",
+   "explication": "Date de la classification ENMC : 2016 dans le corps de la fenêtre, 2018 dans la référence citée (même fenêtre et fenêtre g72-anticorps) ; à harmoniser.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-032",
+   "fichier": "chapters/G72/G72_pop1.html",
+   "ancre": "Le variant rs4149056 augmente l’exposition à certaines statines.",
+   "type": "causalite",
+   "explication": "Passage d’une association génétique (risque de myopathie) à un mécanisme (exposition accrue) ; « module l’exposition » dans l’îlot 3.1 relève du même constat.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-033",
+   "fichier": "chapters/G72/G72_pop1.html",
+   "ancre": "Le mécanisme est une hausse du facteur de croissance des fibroblastes 23 (FGF23), qui provoque une fuite rénale de phosphate",
+   "type": "causalite",
+   "explication": "Mécanisme causal posé comme établi à partir d’un cas isolé lu par son résumé ; l’îlot 4 écrit « mécanisme retenu ».",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-034",
+   "fichier": "chapters/G72/G72_pop1.html",
+   "ancre": "Le médecin teste ces groupes lorsque la faiblesse est lentement progressive et inhabituelle pour une myopathie toxique.",
+   "type": "chronologie",
+   "explication": "Indication et chronologie (« lentement progressive », « sans lien médicamenteux et résistante aux traitements habituels » dans g72-ibm) sans source ; la fenêtre déclare seulement des critères de classification.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-035",
+   "fichier": "chapters/G72/G72_pop1.html",
+   "ancre": "Dans l’alcool aigu, la rhabdomyolyse est la cause non traumatique la plus fréquente à l’hôpital",
+   "type": "inversion",
+   "explication": "Sujet et attribut inversés par rapport à l’îlot 8.1 (« l’alcool est la cause non traumatique la plus fréquente de rhabdomyolyse hospitalière ») : la fenêtre fait de la rhabdomyolyse la cause la plus fréquente, de quoi on ne sait pas. Phrase à corriger d’après Simon et coll., 2017.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-036",
+   "fichier": "chapters/G72/G72_pop1.html",
+   "ancre": "Les critères ENMC ont été révisés en 2024 (IRM, échographie, anticorps anti-cN1A).",
+   "type": "portee",
+   "explication": "Le contenu des critères ENMC 2024 est décrit (IRM, échographie, anticorps anti-cN1A) alors que le cours déclare ne pas l’avoir lu (îlot e-4, même fenêtre).",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-037",
+   "fichier": "chapters/G72/G72_pop1.html",
+   "ancre": "Le cas suisse de myopathie nécrosante avait une créatine kinase à 400 U/L.",
+   "type": "portee",
+   "explication": "Un cas suisse non réanimatoire est cité juste après la description de la créatine kinase « nettement élevée avec myoglobinurie » de la myopathie nécrosante de réanimation, ce qui laisse croire que 400 U/L illustre cette catégorie.",
+   "action": "renvoi_medical",
+   "applique": false
+  },
+  {
+   "id": "RM-038",
+   "fichier": "chapters/G72/G72_pop2.html",
+   "ancre": "Le dichlorphénamide est approuvé par l’autorité américaine, hors Suisse",
+   "type": "portee",
+   "explication": "Le statut suisse est affirmé (« hors Suisse ») alors que la même phrase indique qu’aucune information professionnelle suisse n’a été lue.",
+   "action": "renvoi_medical",
+   "applique": false
+  }
+ ],
+ "constats_hors_perimetre": [
+  {
+   "id": "HP-001",
+   "gravite": "MAJEUR",
+   "sujet": "Sixième sous-onglet Sémiologie",
+   "constat": "Hors périmètre linguistique, MAJEUR, transmis à l’audit MED. Décompte réel des data-s de G72_c.html : 4 (g72-s-anat, g72-s-histo, g72-s-physio, g72-s-bioch), soit 4 disciplines réelles (Anatomie, Histologie, Physiologie, Biochimie et génétique) ; AGENTS.md exige cinq disciplines puis « Sémiologie fondamentale et analytique » comme premier bouton .sci-bar. Aucun sous-onglet Sémiologie n’existe."
+  },
+  {
+   "id": "HP-002",
+   "gravite": "RESERVE",
+   "sujet": "Figures",
+   "constat": "Figures 1 à 4 (SVG en ligne dans G72_c.html) : toutes classées ORIGINE_INCONNUE (réserve) ; la Figure 1 est une silhouette anatomique dessinée. Mon contrôle a porté sur le texte de la figure (légendes, étiquettes), non sur sa provenance ; la vérification de provenance est transmise à l’audit MED (tools/image_clo_finder.py non exécuté ici).",
+   "figures": [
+    "Figure 1 — Territoires musculaires de repère",
+    "Figure 2 — Coupe de muscle : lésions élémentaires",
+    "Figure 3 — Potassium extracellulaire et potentiel de membrane",
+    "Figure 4 — Voie du mévalonate et toxicité des statines"
+   ]
+  }
+ ],
+ "observations_non_appliquees": [
+  "Choix différés, non appliqués : espaces insécables globales (environ 646 occurrences de signes de ponctuation précédés d’une espace ordinaire, ou de guillemets avec espace ordinaire, dans le texte visible) ; « fibrillation atriale/auriculaire » (0 occurrence dans les 6 fichiers HTML : sans objet).",
+  "Définitions de fenêtres au format lexical nominal (« Définition ») non converties en phrases complètes hors des cas listés, pour ne pas multiplier les propositions de faible portée.",
+  "Variantes terminologiques non harmonisées : « auto-immune », « immunitaire », « à médiation immune » ; « revue bernoise / italienne / de Brescia ».",
+  "Cellules de tableau nominales non réécrites (format tabulaire).",
+  "Règle appliquée : aucune reformulation n’affaiblit une obligation clinique ; les injonctions deviennent « Il faut … » / « Il ne faut pas … »."
+ ],
+ "lacunes": [
+  "Aucune source médicale relue : audit strictement linguistique ; tout renvoi_medical reste à vérifier par l’audit MED.",
+  "Provenance des figures non contrôlée.",
+  "Aucun rendu navigateur ni build_medina.audit() exécuté sur les propositions."
+ ],
+ "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+}
