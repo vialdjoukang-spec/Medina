@@ -153,7 +153,8 @@ const server=http.createServer((req,res)=>{const name=decodeURIComponent(new URL
    await page.setViewportSize({width:1440,height:1000});
   }
   await page.goto(origin+'/index.html');await page.evaluate(()=>document.fonts.ready);
-  const links=page.locator('a[href^="fragments/"]');check('Accueil : '+registry.length+' accès distincts',await links.count()===registry.length);
+  const links=page.locator('a[href^="fragments/"]');// Chaque carte de spécialité ouvre aussi ses filtres : compter les fragments distincts, non les liens.
+  const targets=new Set(await links.evaluateAll(items=>items.map(a=>a.getAttribute('href').split('#')[0])));check('Accueil : '+registry.length+' accès distincts',targets.size===registry.length&&registry.every(f=>targets.has(`fragments/MEDINA_${f.id}_${f.slug}.html`)),[...targets]);
   check('Accueil : police Atkinson affichée',(await page.locator('.hero h1').evaluate(p=>getComputedStyle(p).fontFamily)).includes('Atkinson Hyperlegible Next'));
   const contrasts=await cardContrast(page,'.specialty-card');check('Accueil : toutes les couleurs atteignent 4,5:1',contrasts.length===registry.length&&contrasts.every(card=>card.ratio>=4.5),contrasts.filter(card=>card.ratio<4.5));
   await noOverflow(page,'Portail bureau');await page.screenshot({path:path.join(out,'accueil-desktop.png')});
