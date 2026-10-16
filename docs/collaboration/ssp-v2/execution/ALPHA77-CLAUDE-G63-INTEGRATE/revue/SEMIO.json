@@ -1,0 +1,206 @@
+{
+ "actor": "Claude",
+ "code": "G63",
+ "kind": "SEMIO",
+ "mission": "ALPHA77-CLAUDE-G63-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "reviewed_commit": "582f665ed674726b7c8c9939e88cab11375d6ba7",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/G63/G63_a.html": "82947f41b70256a0116f4ed9d27fcc38b17ae8ae0eecd6b7e50f69566298b399",
+  "chapters/G63/G63_b.html": "0764b4e3f495f3773b981371bab52f547c2b21ce727d1e10839571b1395f8c4c",
+  "chapters/G63/G63_c.html": "1721d42e03ee2466d639da5ce5d2fc1bb43db49c84d0c56d7ab483dcb1c717c1",
+  "chapters/G63/G63_d.html": "9455938e0c123895aae03c84d14fc3ab88b2356af6a6856b5d499cc7c5655ad9",
+  "chapters/G63/G63_pop1.html": "72f33f6f6bebb81829c6859326fc7574530c342c06061a0edea163bc353993b4",
+  "chapters/G63/G63_pop2.html": "d86e6392e8a33720a78693401d262b6f4af43532807af144d1702ea7040ac9c3",
+  "glossary/g63.py": "6ee9cabc547337e28ce806bed53d56ee5e338cbd37fa6aff7dd25139f324d666"
+ },
+ "reviewed_files_sha256": {
+  "chapters/G63/G63_a.html": "7fa04551903abb298d6965c974d2bd0b9cce9435d5573db69a11000a2dd11dd6",
+  "chapters/G63/G63_b.html": "ea499e0bc49faab3d6275e3fd8517515da45167953ff19ec682cf6491a584f26",
+  "chapters/G63/G63_c.html": "e836ca0009c60f0f10fbfd3bdf2edc3e6898b11a4e009231d8772509d52746d4",
+  "chapters/G63/G63_d.html": "3d9ff123e09464a3cc7f2bfdf1a6e32644dca928cb14633c80131f57dbab1e10",
+  "chapters/G63/G63_pop1.html": "9c0485be1a3864ea26027078106b1fb6a775b672bf36dcc57f39f72ba6451e84",
+  "chapters/G63/G63_pop2.html": "edefe593bbe83f544f9b3530588bd17be3946f839020b1750cd96f8a4afe6c81",
+  "glossary/g63.py": "60fa2dbaae8b274bc428831a34692999e9a6f9a22b1e6c20e7e90b927e04d4a7"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "scope": "Sous-onglet Sémiologie fondamentale et analytique, bloc clinique et fenêtres g63-sm-*.",
+ "requirement": "fundamental_analytical_semiology",
+ "tab_id": "g63-s-semio",
+ "source_path": "chapters/G63/G63_c.html",
+ "clinical_marker": {
+  "fichier": "chapters/G63/G63_b.html",
+  "selecteur": "section[data-semiology-clinical=\"G63\"]",
+  "dans_pA": true
+ },
+ "sections": {
+  "normal": "g63-sm-1",
+  "signs": "g63-sm-2",
+  "mechanisms": "g63-sm-3",
+  "examination": "g63-sm-4",
+  "interpretation": "g63-sm-5",
+  "differentials": "g63-sm-6",
+  "urgency": "g63-sm-7",
+  "limits": "g63-sm-8",
+  "sources": "g63-sm-9"
+ },
+ "grille_SEM": [
+  {
+   "critere": "SEM-01",
+   "resultat": "oui",
+   "preuve": "bouton #g63-tab-semio premier de .sci-bar, aria-selected=true, libellé exact"
+  },
+  {
+   "critere": "SEM-02",
+   "resultat": "oui",
+   "preuve": "premier h3 exact « Pour la leçon : quelle est la sémiologie fondamentale et analytique ? »"
+  },
+  {
+   "critere": "SEM-03",
+   "resultat": "oui",
+   "preuve": "tests/audit_sciences.py --codes G63 : passed (6 disciplines)"
+  },
+  {
+   "critere": "SEM-04",
+   "resultat": "oui",
+   "preuve": "test_v7.py --static G63 : OK"
+  },
+  {
+   "critere": "SEM-05",
+   "resultat": "oui",
+   "preuve": "g63-sm-2 : tableau symptôme/mécanisme/fréquence/piège introduit et commenté"
+  },
+  {
+   "critere": "SEM-06",
+   "resultat": "oui",
+   "preuve": "g63-sm-4 : gestes du monofilament, du diapason, des pouls et de l’index de pression systolique"
+  },
+  {
+   "critere": "SEM-07",
+   "resultat": "oui",
+   "preuve": "mécanisme en phrase complète pour chaque symptôme"
+  },
+  {
+   "critere": "SEM-08",
+   "resultat": "oui",
+   "preuve": "valeurs chiffrées rattachées à leur population (QualiCCare, Kästenbauer) ; absences déclarées"
+  },
+  {
+   "critere": "SEM-09",
+   "resultat": "oui",
+   "preuve": "g63-sm-1 (normal) précède les signes"
+  },
+  {
+   "critere": "SEM-10",
+   "resultat": "oui",
+   "preuve": "colonne Piège et encadrés trap"
+  },
+  {
+   "critere": "SEM-11",
+   "resultat": "oui",
+   "preuve": "g63-sm-3 : tableau de sept syndromes"
+  },
+  {
+   "critere": "SEM-12",
+   "resultat": "oui",
+   "preuve": "g63-sm-6 : cinq étapes ordonnées"
+  },
+  {
+   "critere": "SEM-13",
+   "resultat": "oui",
+   "preuve": "urgences cohérentes avec l’onglet Pathologie (Guillain-Barré, Wernicke, pied aigu)"
+  },
+  {
+   "critere": "SEM-14",
+   "resultat": "oui",
+   "preuve": "g63-sm-6 : orientation vers la maladie de base ou ailleurs"
+  },
+  {
+   "critere": "SEM-15",
+   "resultat": "oui",
+   "preuve": "g63-sm-4 : onze étapes"
+  },
+  {
+   "critere": "SEM-16",
+   "resultat": "oui",
+   "preuve": "exemple de présentation constatations/interprétation/limites"
+  },
+  {
+   "critere": "SEM-17",
+   "resultat": "oui",
+   "preuve": "3 cas corrigés ; correction affichée au clic"
+  },
+  {
+   "critere": "SEM-18",
+   "resultat": "oui",
+   "preuve": "fenêtres g63-sm-* ouvertes au navigateur (55/55 data-k)"
+  },
+  {
+   "critere": "SEM-19",
+   "resultat": "oui",
+   "preuve": "sources suisses puis européennes ; délai nord-américain du type 1 écarté"
+  },
+  {
+   "critere": "SEM-20",
+   "resultat": "oui",
+   "preuve": "chiffres concordants avec l’onglet 1 (65–90 %, 35–85 %, 24,8 %) ; RM-29 corrigé"
+  },
+  {
+   "critere": "SEM-21",
+   "resultat": "oui",
+   "preuve": "renvoi à l’onglet Pathologie"
+  },
+  {
+   "critere": "SEM-22",
+   "resultat": "oui",
+   "preuve": "390 px : texte des figures S1 à 13 px rendus, sans débordement"
+  },
+  {
+   "critere": "SEM-23",
+   "resultat": "oui",
+   "preuve": "captures de W (integration/captures) et de P (scratchpad, 16.10.2026)"
+  },
+  {
+   "critere": "SEM-24",
+   "resultat": "oui",
+   "preuve": "statut « revue IA, aucune validation médicale humaine »"
+  }
+ ],
+ "findings": [
+  {
+   "id": "SEMIO-STRUCTURE",
+   "severite": "—",
+   "status": "resolved",
+   "constat": "Contrat structurel du sous-onglet.",
+   "verification": "6 boutons data-s, Sémiologie première et sélectionnée, autres disciplines masquées ; 9 sections data-semiology non vides ; liens https dans g63-sm-9 ; bloc clinique dans G63_b ; aucun Pareto sur la sémiologie.",
+   "evidence": [
+    "6 boutons data-s, Sémiologie première et sélectionnée, autres disciplines masquées ; 9 sections data-semiology non vides ; liens https dans g63-sm-9 ; bloc clinique dans G63_b ; aucun Pareto sur la sémiologie."
+   ]
+  },
+  {
+   "id": "P-SEMIO-01",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "renvoi": "G63-LANG-RM-29",
+   "constat": "Contresens sur la sensibilité du monofilament dans l’onglet des examens, repris par la section interprétation.",
+   "verification": "S4 QualiCCare 2016, note (5) : « Sensitivität und Spezifität des Tests zur Identifizierung von Patienten mit erhöhtem Risiko für Fussulzera lagen in prospektiven Studien bei 65-90% resp. 35-85% »",
+   "correction": "Voir P-MED-01.",
+   "evidence": [
+    "S4 QualiCCare 2016, note (5) : « Sensitivität und Spezifität des Tests zur Identifizierung von Patienten mit erhöhtem Risiko für Fussulzera lagen in prospektiven Studien bei 65-90% resp. 35-85% »"
+   ]
+  }
+ ],
+ "evidence": [
+  "Rendu Chromium du fragment S08 construit par build_front.py hors dépôt, au bureau et à 390 px : bloc clinique visible, fenêtre g63-sm-achille ouverte, 55/55 fenêtres, aucune erreur JS.",
+  "Validateur structurel de tools/starter_codex.py (semiology) rejoué par W, confirmé par P."
+ ],
+ "conclusion": "Aucun constat bloquant pour la sémiologie fondamentale et analytique.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}
