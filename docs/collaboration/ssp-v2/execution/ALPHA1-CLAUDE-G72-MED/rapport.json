@@ -1,0 +1,852 @@
+{
+ "mission": "ALPHA1-CLAUDE-G72-MED",
+ "code": "G72",
+ "type_audit": "medical",
+ "base_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "worktree_base": "32416a2080e67537641040a81252dec0b3e6d137",
+ "worktree_base_note": "START exécuté sur le premier main contenant l'approbation de la mission (PR #181). Sources figées identiques : empreintes SHA-256 conformes au manifeste.",
+ "source_snapshot_sha": "d1a488ad4f0031d7f2a4b47a0721e89a93475d77",
+ "generation": 1,
+ "branche": "claude/alpha1/g72-med-g1",
+ "worktree": "/home/user/medina-taches/ALPHA1-CLAUDE-G72-MED-g1",
+ "conversation": "alpha1-claude-g72-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": null,
+ "date_debut_note": "Heure de début non relevée au lancement ; première heure UTC réellement observée pendant l'audit : 2026-10-16T06:08:41Z (borne supérieure du début).",
+ "date_fin": "2026-10-16T06:33:51Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G72/G72_a.html",
+   "chapters/G72/G72_b.html",
+   "chapters/G72/G72_c.html",
+   "chapters/G72/G72_d.html",
+   "chapters/G72/G72_pop1.html",
+   "chapters/G72/G72_pop2.html",
+   "glossary/g72.py"
+  ],
+  "empreintes_conformes": true,
+  "detail_empreintes": {
+   "chapters/G72/G72_a.html": {
+    "attendu": "ecea94c73bbd784028f23bf4d70e45d06ade2d39d30df7822580ae8d538d3b75",
+    "calcule": "ecea94c73bbd784028f23bf4d70e45d06ade2d39d30df7822580ae8d538d3b75",
+    "conforme": true
+   },
+   "chapters/G72/G72_b.html": {
+    "attendu": "9caa050090a7f738c4ff5ab6b1b44c8eaab0410d1825873c36a44d8547792ca4",
+    "calcule": "9caa050090a7f738c4ff5ab6b1b44c8eaab0410d1825873c36a44d8547792ca4",
+    "conforme": true
+   },
+   "chapters/G72/G72_c.html": {
+    "attendu": "7f6c7f913bda9780d9db931c2f787e3e2514c175160915f94c84fec2f234fdf5",
+    "calcule": "7f6c7f913bda9780d9db931c2f787e3e2514c175160915f94c84fec2f234fdf5",
+    "conforme": true
+   },
+   "chapters/G72/G72_d.html": {
+    "attendu": "b1baecd57d9b7c06c03084b58b3daac17d81bb106f5a38accef97d80348ce050",
+    "calcule": "b1baecd57d9b7c06c03084b58b3daac17d81bb106f5a38accef97d80348ce050",
+    "conforme": true
+   },
+   "chapters/G72/G72_pop1.html": {
+    "attendu": "45439842d5b7fff8f79dcc194c83b2139761b817a1e0327df074328917a1713a",
+    "calcule": "45439842d5b7fff8f79dcc194c83b2139761b817a1e0327df074328917a1713a",
+    "conforme": true
+   },
+   "chapters/G72/G72_pop2.html": {
+    "attendu": "57ad293c83c6fc29e15e230ecb27b5f5ca017300593f68f7c137278e400665b8",
+    "calcule": "57ad293c83c6fc29e15e230ecb27b5f5ca017300593f68f7c137278e400665b8",
+    "conforme": true
+   },
+   "glossary/g72.py": {
+    "attendu": "c860d1c96290c8c09ffa1a41d67d35ace994ffc7644146198066cf1869df96ac",
+    "calcule": "c860d1c96290c8c09ffa1a41d67d35ace994ffc7644146198066cf1869df96ac",
+    "conforme": true
+   }
+  },
+  "lecture_integrale": "7 fichiers lus en entier : texte, tableaux, figures, 6 quiz, 55 fenêtres, 15 Pareto, div.alert, div.key, glossaire"
+ },
+ "premiere_source_lue": {
+  "source_id": "S1",
+  "url": "https://amiko.oddb.org/fr/fi?gtin=7680693140011",
+  "section": "Mises en garde et précautions – Effets sur la musculature (FI Atorvastatin-Mepha, avril 2025)"
+ },
+ "synthese": {
+  "BLOQUANT": 0,
+  "MAJEUR": 11,
+  "MINEUR": 10,
+  "ENRICHISSEMENT": 3
+ },
+ "constats": [
+  {
+   "id": "C01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G72/G72_c.html",
+   "ancre": "<div class=\"sci-bar ui\" role=\"tablist\"><button role=\"tab\" aria-selected=\"true\" aria-controls=\"g72-s-anat\" data-s=\"g72-s-anat\">",
+   "constat": "La discipline « Sémiologie fondamentale et analytique » est absente : aucun bouton data-s=\"g72-s-semio\" en tête de la barre des sciences, aucun div.sci homonyme. Les îlots 5 et 6 de l’onglet 1 donnent une anamnèse et une liste de gestes, mais sans mécanisme signe par signe, sans valeur chiffrée ni mention explicite de son absence, sans regroupement syndromique, sans raisonnement en cinq étapes et sans cas corrigés de sémiologie. La grille SEM-01 à SEM-24 est négative sur ses critères bloquants SEM-01 à SEM-04, SEM-08 et SEM-13.",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "Diagnosis, paragraphe sur les diagnostics alternatifs",
+     "citation_courte": "preservation of reflexes in a paralyzed limb should raise the possibility of a different cause"
+    },
+    {
+     "source_id": "S18",
+     "section": "Clinical presentation and diagnosis",
+     "citation_courte": "Craniofacial muscles are typically spared or less affected… deep tendon reflexes are reduced"
+    },
+    {
+     "source_id": "S19",
+     "section": "Clinical presentation",
+     "citation_courte": "CIW cannot be reliably assessed if the patient is delirious"
+    }
+   ],
+   "proposition": "Insérer dans chapters/G72/G72_c.html (panneau pS) le sous-onglet de propositions/G72_c_1.html : bouton g72-tab-semio en tête de .sci-bar (aria-selected=\"true\", les autres boutons à \"false\"), panneau div.sci g72-s-semio role=\"tabpanel\" aria-labelledby=\"g72-tab-semio\", neuf sections data-semiology (normal, signs, mechanisms, examination, interpretation, differentials, urgency, limits, sources) titrées en h3, sources reliées par liens https ; ajouter les cinq fenêtres g72-sm-* de propositions/G72_pop2_3.html en fin de chapters/G72/G72_pop2.html ; insérer dans chapters/G72/G72_a.html (pA, après l’îlot g72-6) la section data-semiology-clinical=\"G72\" de propositions/G72_a_semio_clinique.html.",
+   "justification": "Mécanisme : chaque signe de G72 traduit une voie lésionnelle précise (nécrose, inexcitabilité, atrophie). Conséquence : sans sémiologie analytique, le lecteur ne relie pas l’urine foncée au rein ni la réflexie au diagnostic différentiel. Décision : exigence de Vial du 15.10.2026, absence = MAJEUR.",
+   "bloquant_cloture": true,
+   "statut_blocage": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md)",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G72/G72_c.html",
+   "ancre": "<p>Les sources lues décrivent la distribution de la faiblesse, non l’anatomie détaillée des muscles.",
+   "constat": "L’onglet Sciences ne compte que quatre disciplines (Anatomie, Histologie, Physiologie, Biochimie et génétique) au lieu de cinq disciplines réelles. tests/audit_sciences.py (base 32416a20) échoue avec cinq erreurs : « lien absent : À retenir. » dans les quatre disciplines, et Histologie trop brève (265 mots, minimum 280). L’Anatomie déclare elle-même ne pas traiter l’anatomie des muscles et décrit la fabrication du cours (« Ce cours ne la complète pas de mémoire »), ce que STYLE_REDACTION § 3 proscrit dans une annonce.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Mises en garde – Effets sur la musculature",
+     "citation_courte": "IMNM… augmentation du taux de créatine-kinase… qui perdure malgré l'arrêt"
+    },
+    {
+     "source_id": "S16",
+     "section": "Genetic/autoimmunity",
+     "citation_courte": "statins increase the risk for development of anti-HMG-CoA-reductase antibodies"
+    },
+    {
+     "source_id": "S26",
+     "section": "Résumé",
+     "citation_courte": "overlap with myocarditis and/or myasthenia rose from 3.7% before to 8.3% after 2017"
+    }
+   ],
+   "proposition": "Ajouter la cinquième discipline « Immunologie » de propositions/G72_c_2.html ; ajouter un encadré div.key « À retenir. » à chaque discipline ; compléter l’Histologie au-delà de 280 mots ; réécrire l’annonce de l’Anatomie sans référence au cours (mission LANG ou intégration).",
+   "justification": "Mécanisme : trois entités de G72 sont immunitaires (anti-HMGCR, myosite sous inhibiteur de point de contrôle, myosites non classées ailleurs). Conséquence : aucune discipline n’explique pourquoi la faiblesse persiste après l’arrêt. Décision : addendum lot 2, point 1 (MAJEUR).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C03",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G72/G72_d.html",
+   "ancre": "<b>Interactions graves de l’atorvastatine (information professionnelle suisse).</b>",
+   "constat": "L’encadré d’interactions omet la seule contre-indication d’association de la FI suisse (glécaprévir/pibrentasvir) et tous les plafonds de dose décisionnels : 10 mg/j avec ciclosporine, tipranavir/ritonavir ou télaprévir ; 20 mg/j avec letermovir ; association letermovir plus ciclosporine non recommandée ; gemfibrozil « éviter l’atorvastatine » ; daptomycine : interruption temporaire à envisager, sinon CK deux à trois fois par semaine. La même omission se retrouve dans la fenêtre g72-interactions et l’îlot 4.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Contre-indications",
+     "citation_courte": "En association avec les virostatiques glécaprévir/pibrentasvir"
+    },
+    {
+     "source_id": "S1",
+     "section": "Tableau 1",
+     "citation_courte": "Ciclosporine… Ne pas utiliser plus de 10 mg d'atorvastatine par jour ; Letermovir : Ne pas utiliser plus de 20 mg"
+    },
+    {
+     "source_id": "S1",
+     "section": "Mises en garde",
+     "citation_courte": "les taux de CK doivent être mesurés deux à trois fois par semaine"
+    }
+   ],
+   "proposition": "Remplacer le contenu du div.alert par propositions/G72_d_1.html ; reporter la contre-indication et les plafonds dans g72-interactions (G72_pop1.html) et dans l’îlot 4 (G72_a.html).",
+   "justification": "Mécanisme : ces molécules inhibent OATP1B1/1B3, CYP3A4 ou des transporteurs d’efflux et multiplient l’exposition à l’atorvastatine. Conséquence : une dose standard devient myotoxique. Décision : la FI suisse fixe une contre-indication et des plafonds que le prescripteur doit connaître.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G72/G72_pop2.html",
+   "ancre": "Les passages de l’information professionnelle lus pour ce cours ne donnent pas la posologie",
+   "constat": "La monographie affirme que la FI ne donne pas la posologie, et l’îlot p-2 répète qu’aucune dose de statine n’est disponible. La FI suisse donne pourtant la dose initiale (10 mg une fois par jour), le rythme d’adaptation (4 semaines ou plus) et le maximum (80 mg/j). La fiche e-2 omet aussi la consigne de la FI de renoncer à débuter la statine si une CK supérieure à 5 fois la limite se confirme avant traitement.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Posologie usuelle",
+     "citation_courte": "La dose initiale usuelle est de 10 mg d'atorvastatine 1× par jour… La dose journalière maximale est de 80 mg"
+    },
+    {
+     "source_id": "S1",
+     "section": "Examen avant le début du traitement",
+     "citation_courte": "il convient de renoncer à commencer une thérapie"
+    }
+   ],
+   "proposition": "Remplacer la rubrique Posologie de g72-atorva et la cellule de la fiche e-2 par propositions/G72_pop2_1.html ; corriger la phrase de p-2 « Pas de dose de statine dans les sources lues ».",
+   "justification": "Mécanisme : la toxicité musculaire dépend de l’exposition. Conséquence : sans dose de départ ni plafond, la reprise « à dose minimale » n’a pas de repère chiffré. Décision : énoncer la posologie de la FI, source de premier rang en Suisse.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C05",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G72/G72_d.html",
+   "ancre": "<td>0,2 à 0,4 mmol/kg toutes les 30 minutes ; au plus 200 à 250 mmol/jour</td>",
+   "constat": "Les doses de potassium proviennent de la seule revue internationale de 2018 et dépassent les plafonds des FI suisses sans le dire : 200 à 250 mmol/j par voie orale contre 150 mmol/j au maximum (Potassium Hausmann, KCl Retard Hausmann) ; 20 mmol/h par voie intraveineuse contre 10 mmol/h et 40 mmol/L lorsque K+ dépasse 2,5 mmol/L (KCl 7,45 % Sintetica). Le soluté vecteur recommandé, le mannitol à 5 %, n’est pas enregistré en Suisse (mannitol 10 % et 20 % seulement) et n’est pas listé parmi les vecteurs de la FI. La consigne d’éviter les formes à libération prolongée pour l’accès est absente. Mêmes valeurs dans G72_b.html 9.4, g72-hypopp et g72-potassium.",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "Treatment of HypoPP",
+     "citation_courte": "0.2–0.4 mEq/kg every 30 min not to exceed 200–250 mEq/day… 40 mEq/L in 5% mannitol… maximum of 20 mEq/h"
+    },
+    {
+     "source_id": "S3",
+     "section": "Posologie",
+     "citation_courte": "Dose quotidienne maximale: adultes 150 mmol de potassium"
+    },
+    {
+     "source_id": "S5",
+     "section": "Posologie",
+     "citation_courte": "Adultes avec K+ sérique > 2,5 mmol/l: 10 mmol/heure"
+    },
+    {
+     "source_id": "S6",
+     "section": "Résultats de recherche",
+     "citation_courte": "Mannitol 20% B. Braun ; Mannitol «Bichsel» 10 %, 20 %"
+    }
+   ],
+   "proposition": "Remplacer les deux lignes de p-2 et ajouter le paragraphe de propositions/G72_d_2.html ; aligner les trois autres occurrences.",
+   "justification": "Mécanisme : pendant l’accès, le potassium passe dans les cellules sans déplétion du stock total ; une correction rapide expose à l’hyperkaliémie de rebond. Conséquence : une dose supérieure aux plafonds suisses accroît ce risque. Décision : la FI suisse prime ; tout dépassement relève d’un avis spécialisé sous ECG continu.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C06",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G72/G72_d.html",
+   "ancre": "Immunoglobulines, rituximab (myopathie nécrosante)",
+   "constat": "Seule l’acétazolamide est signalée hors étiquette. Le rituximab, les immunoglobulines intraveineuses, l’abatacept, le salbutamol inhalé et l’hydrochlorothiazide sont présentés comme traitements de myopathies de G72 sans mention de leur statut hors indication en Suisse, alors que les FI datées ne citent aucune de ces indications (Octagam 10 % cite seulement la dermatomyosite active).",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "Indications",
+     "citation_courte": "LNH, LLC, polyarthrite rhumatoïde, vascularite associée aux ANCA, pemphigus vulgaris"
+    },
+    {
+     "source_id": "S12",
+     "section": "Indications",
+     "citation_courte": "Dermatomyosite active traitée par des médicaments immunosuppresseurs"
+    },
+    {
+     "source_id": "S8",
+     "section": "Indications",
+     "citation_courte": "Polyarthrite rhumatoïde ; arthrite juvénile idiopathique polyarticulaire"
+    },
+    {
+     "source_id": "S9",
+     "section": "Indications",
+     "citation_courte": "bronchospasmes dans l'asthme bronchique et la bronchite chronique"
+    },
+    {
+     "source_id": "S10",
+     "section": "Indications",
+     "citation_courte": "Hypertension, insuffisance cardiaque, œdèmes, diabète insipide néphrogénique, hypercalciurie"
+    }
+   ],
+   "proposition": "Ajouter le paragraphe de propositions/G72_d_3.html (ou une colonne « Statut en Suisse ») à l’îlot p-1 et la mention « hors étiquette » dans les fenêtres g72-ig, g72-cortico-ici, g72-salbutamol et g72-hctz. L’exigence d’une garantie de prise en charge a été retirée de la proposition (aucune source suisse lue) et reste en lacune.",
+   "justification": "Mécanisme : l’autorisation suisse fixe le cadre de responsabilité et de remboursement. Conséquence : un lecteur peut croire ces emplois autorisés. Décision : addendum lot 2, point 5 : signaler tout emploi hors indication.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C07",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G72/G72_b.html",
+   "ancre": "Alcool : amélioration de 85 % à un an d’abstinence.",
+   "constat": "Contresens chiffré répété quatre fois (div.key de l’îlot 12, îlot 10, 9.3 et fenêtre g72-alcool) : la source dit que jusqu’à 85 % des patients atteints de myopathie alcoolique prouvée par biopsie s’améliorent objectivement la première année d’abstinence, et non que la force s’améliore de 85 %. La normalisation complète à cinq ans concerne aussi ces patients.",
+   "preuve": [
+    {
+     "source_id": "S20",
+     "section": "Therapeutic Options for Alcohol-Related Myopathy",
+     "citation_courte": "up to 85 percent of patients with biopsy-proven alcoholic myopathy demonstrate objective functional improvement in muscle strength within the first year"
+    }
+   ],
+   "proposition": "Appliquer les quatre remplacements de propositions/G72_b_1.html.",
+   "justification": "Mécanisme : la proportion de répondeurs et l’ampleur de la récupération sont deux grandeurs distinctes. Conséquence : le paramètre clé surestime la récupération individuelle. Décision : corriger le chiffre dans le div.key, où il sert de repère d’examen.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C08",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G72/G72_pop2.html",
+   "ancre": "par les <b>inhibiteurs de PCSK9</b> (baisse de 50 à 60 %).",
+   "constat": "La conduite devant une intolérance aux statines repose sur le consensus EAS de 2015. Elle omet l’acide bempédoïque, autorisé en Suisse précisément chez les patients intolérants aux statines (Nilemdo, juillet 2025) et retenu par la mise à jour ESC/EAS 2025 parmi les thérapies non statiniques au bénéfice démontré (CLEAR Outcomes, −13 % d’événements majeurs). Elle omet aussi la méta-analyse CTT 2022 en double aveugle, selon laquelle plus de 90 % des plaintes musculaires sous statine ne sont pas dues au médicament.",
+   "preuve": [
+    {
+     "source_id": "S13",
+     "section": "Indications",
+     "citation_courte": "en monothérapie ou en association… chez les patients qui sont intolérants aux statines"
+    },
+    {
+     "source_id": "S25",
+     "section": "Texte, thérapies non statiniques",
+     "citation_courte": "ezetimibe, a PCSK9 mAb, or bempedoic acid… CLEAR Outcomes… HR 0.87"
+    },
+    {
+     "source_id": "S24",
+     "section": "Résumé",
+     "citation_courte": "Most (>90%) of all reports of muscle symptoms by participants allocated statin therapy were not due to the statin"
+    }
+   ],
+   "proposition": "Ajouter à g72-alternatives les deux rubriques de propositions/G72_pop2_2.html et une phrase de renvoi dans l’îlot 9.1.",
+   "justification": "Mécanisme : l’acide bempédoïque inhibe la synthèse du cholestérol en amont, hors du muscle selon sa place d’alternative aux statines. Conséquence : un patient vraiment intolérant garde une option autorisée et validée sur les événements. Décision : actualiser selon la source européenne la plus récente et la FI suisse.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C09",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G72/G72_a.html",
+   "ancre": "La face épargnée est un trait de la myopathie de réanimation, alors qu’un ptosis ou une ophtalmoplégie orientent vers une myasthénie.",
+   "constat": "Le discriminant « ptosis → myasthénie » est trompeur dans le contexte de l’immunothérapie : dans les chevauchements myosite-myocardite-myasthénie publiés, le ptosis est la présentation la plus fréquente (71,8 % de 103 cas). Le tableau des différentiels (G72_b.html) et le tableau e-1 ne prévoient aucune évaluation cardiaque de la myosite sous inhibiteur de point de contrôle, alors que la mortalité du chevauchement atteint environ 40 %.",
+   "preuve": [
+    {
+     "source_id": "S27",
+     "section": "Résumé",
+     "citation_courte": "Ptosis (71.8%) and weakness (62.1%) were the most common presenting symptoms"
+    },
+    {
+     "source_id": "S26",
+     "section": "Résumé",
+     "citation_courte": "overlap syndrome, which is associated with a high mortality of 40%"
+    },
+    {
+     "source_id": "S17",
+     "section": "Diagnosis",
+     "citation_courte": "double vision, ptosis, or difficulty swallowing might point to a neuromuscular junction disorder"
+    }
+   ],
+   "proposition": "Remplacer la phrase et ajouter la ligne du tableau e-1 de propositions/G72_a_1.html.",
+   "justification": "Mécanisme : la toxicité immunitaire touche simultanément muscle, jonction et myocarde. Conséquence : un ptosis interprété comme myasthénie isolée retarde la recherche d’une myocardite mortelle. Décision : le ptosis sous immunothérapie déclenche la recherche du chevauchement.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C10",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G72/G72_d.html",
+   "ancre": "La réponse à l’acétazolamide est d’environ 50 %",
+   "constat": "La réponse globale est de 46 % dans la source, non d’« environ 50 % ». Surtout, le cours omet que les patients porteurs d’une mutation de SCN4A répondent moins et peuvent voir leurs accès s’aggraver sous inhibiteur de l’anhydrase carbonique : le génotype conditionne l’essai thérapeutique.",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "Carbonic anhydrase inhibitors",
+     "citation_courte": "the overall response to acetazolamide was 46%… CACNA1S… 56% (31/55)… SCN4A… 16% (3/19)"
+    },
+    {
+     "source_id": "S17",
+     "section": "Carbonic anhydrase inhibitors",
+     "citation_courte": "less responsive to carbonic anhydrase inhibitors or may even experience worsening of symptoms"
+    }
+   ],
+   "proposition": "Remplacer la phrase par propositions/G72_d_4.html et reporter dans g72-diamox.",
+   "justification": "Mécanisme : la réponse dépend du canal muté. Conséquence : un essai aveugle d’acétazolamide peut aggraver une forme SCN4A. Décision : génotyper avant l’essai hors étiquette.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C11",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G72/G72_c.html",
+   "ancre": "aria-label=\"Figure 1 — Territoires musculaires de repère\"",
+   "constat": "Les figures 1 (silhouette humaine et territoires musculaires) et 2 (coupe histologique schématique de fibres) sont des représentations anatomiques et histologiques dessinées en SVG par l’agent rédacteur, sans source iconographique : le rapport du cycle 39 déclare « 4 figures SVG noir et blanc » produites par l’agent. Elles relèvent de la règle de Vial du 15.10.2026 (anatomie dessinée par IA non recevable). La figure 2 est en outre ambiguë : deux fibres portent des marques en croix et la légende « hachurée » ou « barrée » ne permet pas de les distinguer. La recherche d’originaux sur Wikimedia Commons a échoué (HTTP 429, temporisation persistante).",
+   "preuve": [
+    {
+     "source_id": "S18",
+     "section": "Introduction",
+     "citation_courte": "preferential loss of the motor protein myosin in the absence of inflammatory infiltrates"
+    }
+   ],
+   "proposition": "Retirer les figures 1 et 2 ou les remplacer par des images publiées sous licence vérifiée (biopsie musculaire, répartition proximale) après nouvelle recherche Image_Clo_finder ; conserver les figures 3 et 4 (schémas non anatomiques).",
+   "justification": "Mécanisme : une anatomie générée sans original peut fixer une représentation fausse. Conséquence : risque d’apprentissage visuel erroné. Décision : règle des figures anatomiques IA (addendum lot 2, point 2).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M01",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G72/G72_c.html",
+   "ancre": "Pointillé : fibre de paralysie périodique hypokaliémique",
+   "constat": "Les quatre figures ont une viewBox de 640 de large : à 390 px, le texte rendu mesure 7,3 px (mesure au navigateur, échelle 0,559). Dans la figure 3, deux lignes de légende dépassent la viewBox (bord droit à 700 et 692 pour 640) et sont tronquées à toutes les largeurs. Aucune valeur décisionnelle n’est en jeu.",
+   "preuve": [],
+   "proposition": "Ramener chaque viewBox à 480 de large au plus (légendes sous le dessin) et une taille de police d’au moins 15 unités ; raccourcir les deux lignes de la figure 3.",
+   "justification": "Mécanisme : la mise à l’échelle réduit le texte proportionnellement. Conséquence : légende illisible sur téléphone. Décision : addendum lot 2, point 2 (lisibilité à 390 px).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M02",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G72/G72_d.html",
+   "ancre": "Les autres doses viennent de la revue européenne des paralysies périodiques.",
+   "constat": "La revue de Statland et coll. est qualifiée de « revue européenne » (G72_d.html p-2, G72_c.html e-2) puis de « source américaine » dans le même îlot p-2. Il s’agit d’une revue internationale dirigée depuis Kansas City, avec des coauteurs parisiens, londoniens et milanais.",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "Affiliations",
+     "citation_courte": "University of Kansas Medical Center… Sorbonne-Université… Reference Center for Channelopathies"
+    }
+   ],
+   "proposition": "Écrire « revue internationale (États-Unis et Europe) » à chaque occurrence.",
+   "justification": "Mécanisme : la hiérarchie suisse puis européenne exige de qualifier honnêtement l’origine. Conséquence : le lecteur surestime le niveau européen des doses. Décision : harmoniser la désignation.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M03",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G72/G72_a.html",
+   "ancre": "<i>KCNJ18</i> jusqu’à 3 % des formes thyrotoxiques",
+   "constat": "La source attribue KCNJ18 à « jusqu’à 3 % des patients atteints de paralysie hypokaliémique », comme gène le plus souvent associé à la forme thyrotoxique ; le cours écrit « 3 % des formes thyrotoxiques ».",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "Genetics",
+     "citation_courte": "most commonly KCNJ18, which may be seen in up to 3% of patients with HypoPP"
+    }
+   ],
+   "proposition": "« KCNJ18, gène le plus souvent associé à la forme thyrotoxique, retrouvé chez jusqu’à 3 % des patients atteints de la forme hypokaliémique ».",
+   "justification": "Mécanisme : dénominateur différent. Conséquence : chiffre faux. Décision : restituer le dénominateur de la source.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M04",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G72/G72_b.html",
+   "ancre": "la lidocaïne, la mexilétine, la propafénone, la quinidine et le salbutamol inhalé sont évités",
+   "constat": "Pour la lidocaïne, la mexilétine, la propafénone et la quinidine, la source dit « à utiliser avec prudence » (aggravation paradoxale possible), non « à éviter » ; seuls le salbutamol inhalé et les thiazides sont « à éviter ». La source cite la flécaïnide comme traitement possible des arythmies.",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "Andersen-Tawil, Prevention of secondary complications",
+     "citation_courte": "may paradoxically exacerbate neuromuscular symptoms and should be used cautiously"
+    },
+    {
+     "source_id": "S17",
+     "section": "Andersen-Tawil",
+     "citation_courte": "Inhaled salbutamol… should be avoided"
+    }
+   ],
+   "proposition": "« le salbutamol inhalé et les thiazides sont évités ; la lidocaïne, la mexilétine, la propafénone et la quinidine sont utilisées avec prudence » (même correction dans le tableau de p-3).",
+   "justification": "Mécanisme : ces antiarythmiques peuvent aggraver la faiblesse sans être proscrits. Conséquence : interdiction excessive. Décision : restituer la gradation de la source.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M05",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G72/G72_a.html",
+   "ancre": "(myosite à inclusions, myosite sous inhibiteur de point de contrôle, sarcoïdose)",
+   "constat": "La sarcoïdose musculaire est rangée parmi les myopathies inflammatoires de G72, alors que la CIM-10-GM 2024 la code M63.3-* (Myositis bei Sarkoidose, D86.8†) ; la myopathie thyréotoxique relève de G73.5*. Le tableau de l’îlot 1 attribue donc à G72 une entité codée ailleurs.",
+   "preuve": [
+    {
+     "source_id": "S23",
+     "section": "M63.-",
+     "citation_courte": "M63.3-* Myositis bei Sarkoidose ( D86.8† )"
+    },
+    {
+     "source_id": "S22",
+     "section": "G73.5*",
+     "citation_courte": "Thyreotoxische Myopathie ( E05.-† )"
+    }
+   ],
+   "proposition": "Retirer « sarcoïdose » de la ligne G72.4 et ajouter une phrase : « La sarcoïdose musculaire (M63.3*, D86.8†) et la myopathie thyréotoxique (G73.5*) sont codées hors de G72 ; elles restent des diagnostics différentiels. »",
+   "justification": "Mécanisme : la classification gouverne le périmètre du cours. Conséquence : erreur de codage. Décision : aligner sur le texte BfArM.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M06",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G72/G72_b.html",
+   "ancre": "un potentiel d’action musculaire composé inférieur à 80 % de la limite inférieure avec potentiels sensitifs normaux ou réduits de moins de 20 %",
+   "constat": "Les critères électrophysiologiques omettent deux conditions de la source : l’étude d’au moins deux nerfs et l’exclusion d’un bloc de conduction. La fenêtre g72-rea-criteres attribue les critères à « une revue (Berne) », alors que la revue bernoise cite les recommandations en vigueur (référence 1, Latronico et Bolton).",
+   "preuve": [
+    {
+     "source_id": "S18",
+     "section": "Clinical presentation and diagnosis",
+     "citation_courte": "motor and sensory nerve conduction studies of at least two nerves… nerve conduction blocks must be excluded"
+    }
+   ],
+   "proposition": "Ajouter « dans au moins deux nerfs, sans bloc de conduction » et écrire « critères des recommandations citées par la revue bernoise ».",
+   "justification": "Mécanisme : un bloc de conduction signe une neuropathie. Conséquence : faux positif de myopathie. Décision : compléter le critère.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M07",
+   "gravite": "MINEUR",
+   "fichier": "glossary/g72.py",
+   "ancre": "les lettres ne sont pas développées dans les passages lus",
+   "constat": "Le glossaire déclare que les lettres d’ABCDEF ne sont pas développées dans la source, alors que Latronico 2023 les développe ; la règle du glossaire exige la définition lettre à lettre.",
+   "preuve": [
+    {
+     "source_id": "S19",
+     "section": "Prevention",
+     "citation_courte": "The ABCDEF bundle (Assess, prevent, and manage pain; Both spontaneous awakening and breathing trials; Choice of Analgesia and Sedation; Delirium…; Early Mobility and Exercise; Family engagement"
+    }
+   ],
+   "proposition": "Développer : A, évaluer, prévenir et traiter la douleur ; B, épreuves d’éveil et de respiration spontanés ; C, choix de l’analgésie et de la sédation ; D, délire ; E, mobilité et exercice précoces ; F, implication de la famille.",
+   "justification": "Conséquence : clé de glossaire incomplète. Décision : appliquer la règle 3 du CLAUDE.md.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M08",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G72/G72_b.html",
+   "ancre": "Les critères de soutien sont au moins deux accès avec potassium inférieur à 3,5 mmol/L",
+   "constat": "Les critères de soutien de la source comportent trois voies alternatives (deux accès documentés ; un accès chez le proposant et un chez un apparenté ; trois éléments sur six) ; le cours et le div.alert n’en citent qu’une, ce qui restreint le diagnostic.",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "Tables 2 et 3",
+     "citation_courte": "Two or more attacks… One attack… in the proband, and 1 attack… in 1 relative… Three of 6 clinical or laboratory features"
+    }
+   ],
+   "proposition": "Citer les trois voies dans l’îlot 7 et le div.alert de l’îlot 12.",
+   "justification": "Conséquence : un patient avec un seul accès documenté et un apparenté atteint serait écarté à tort. Décision : restituer les critères complets.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M09",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G72/G72_pop2.html",
+   "ancre": "Contre-indications : hypokaliémie, hyponatrémie, insuffisance rénale ou hépatique grave, allergie aux sulfamides.",
+   "constat": "La liste omet l’insuffisance corticosurrénalienne et l’acidose hyperchlorémique, contre-indications de la FI Diamox, ainsi que la « paralysie flasque » décrite comme effet indésirable occasionnel du traitement prolongé, pertinente dans cette leçon.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Contre-indications",
+     "citation_courte": "insuffisance corticosurrénalienne ainsi qu'acidose hyperchlorémique"
+    },
+    {
+     "source_id": "S2",
+     "section": "Effets indésirables",
+     "citation_courte": "lors de traitements prolongés, ataxie, paralysie flasque et convulsions ont été observés"
+    }
+   ],
+   "proposition": "Compléter la rubrique et ajouter l’effet indésirable.",
+   "justification": "Mécanisme : l’acétazolamide provoque hypokaliémie et acidose. Conséquence : risque de confusion entre effet indésirable et accès. Décision : citer la FI complète.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "M10",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G72/G72_a.html",
+   "ancre": "Elle touche préférentiellement les fibres de type II, ce qui explique l’atrophie sélective et l’absence d’inflammation à la biopsie.",
+   "constat": "Relation causale non établie par la source (résumé seul) : la préférence pour les fibres de type II n’explique pas l’absence d’inflammation. De même, plusieurs faits sont posés comme « notion de base » sans source lue (échelle MRC de 0 à 5 et total de 60 dans g72-mrc ; hyperpolarisation de la fibre normale par baisse du potassium ; voie du mévalonate).",
+   "preuve": [],
+   "proposition": "« Elle touche préférentiellement les fibres de type II ; la biopsie montre leur atrophie sans infiltrat inflammatoire. » Sourcer ou signaler en lacune chaque « notion de base ».",
+   "justification": "Addendum lot 2, point 3 : aucune causalité sans source. Rien de mémoire (PROMPT_VERITE, loi 1).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E01",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G72/G72_d.html",
+   "ancre": "<td>Prévention de la forme hypokaliémique</td>",
+   "constat": "La prévention de la forme hypokaliémique omet les diurétiques épargneurs de potassium (triamtérène, spironolactone, éplérénone) cités par la source, ainsi que la préférence pour une forme à libération prolongée du potassium en prévention.",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "Table 4",
+     "citation_courte": "K+ sparing diuretic… Triamterene 50-150 mg/d Spironolactone 25-100 mg/d Eplerenone 50-100 mg/d… sustained released formulation may be preferred"
+    }
+   ],
+   "proposition": "Ajouter la ligne de propositions/G72_d_5.html ; vérifier ensuite le statut des FI suisses (lacune).",
+   "justification": "Option thérapeutique supplémentaire documentée.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E02",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G72/G72_b.html",
+   "ancre": "La coenzyme Q10 et la vitamine D ne sont pas recommandées ; la levure de riz rouge est déconseillée.",
+   "constat": "L’îlot 9.1 ne présente pas l’effet nocebo démontré par les essais en aveugle, point d’examen et de communication avec le patient : un excès de 11 événements pour 1000 personnes-années la première année, plus aucun excès ensuite.",
+   "preuve": [
+    {
+     "source_id": "S24",
+     "section": "Résumé",
+     "citation_courte": "absolute excess rate of 11 (6-16) events per 1000 person-years… After year 1, there was no significant excess"
+    }
+   ],
+   "proposition": "Ajouter la rubrique « Ce que montrent les essais en aveugle » de propositions/G72_pop2_2.html, en version courte dans 9.1.",
+   "justification": "Évite l’arrêt injustifié d’un traitement utile.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "E03",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G72/G72_a.html",
+   "ancre": "<h3>3.6 Myopathies inflammatoires</h3>",
+   "constat": "Rubriques 16 et 20 de la matrice : aucune spécificité suisse (annonce de pharmacovigilance d’une rhabdomyolyse ou d’une IMNM, garantie de prise en charge des traitements hors étiquette, aptitude à la conduite) ni point d’examen fédéral explicite. Aucune source suisse correspondante n’a été lue (lacune).",
+   "preuve": [],
+   "proposition": "Rechercher dans une mission de production les sources suisses (Swissmedic pharmacovigilance, OFSP, PROFILES) avant toute rédaction.",
+   "justification": "Complétude de la matrice à 20 rubriques.",
+   "ancre_occurrences": 1
+  }
+ ],
+ "matrice_20": [
+  {
+   "rang": 1,
+   "rubrique": "Question clinique et enjeu pour l’examen fédéral",
+   "statut": "couvert",
+   "ancre": "g72-0"
+  },
+  {
+   "rang": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "partiel",
+   "ancre": "g72-1, g72-cim (sarcoïdose mal rangée, M05)"
+  },
+  {
+   "rang": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "couvert",
+   "ancre": "g72-7 (classes EAS), g72-e-4"
+  },
+  {
+   "rang": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "partiel",
+   "ancre": "g72-2 (aucune donnée suisse, déclarée)"
+  },
+  {
+   "rang": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "partiel",
+   "ancre": "g72-3, g72-s-physio (« notions de base » non sourcées, M10)"
+  },
+  {
+   "rang": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "couvert",
+   "ancre": "g72-4"
+  },
+  {
+   "rang": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "partiel",
+   "ancre": "g72-5 (fréquences des symptômes non chiffrées, sémiologie absente C01)"
+  },
+  {
+   "rang": 8,
+   "rubrique": "Examen clinique (signes, sensibilité/spécificité)",
+   "statut": "partiel",
+   "ancre": "g72-6 (aucune valeur chiffrée ni mention explicite, C01)"
+  },
+  {
+   "rang": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "partiel",
+   "ancre": "g72-8 (évaluation cardiaque de la myosite sous ICI absente, C09)"
+  },
+  {
+   "rang": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "couvert",
+   "ancre": "g72-e-1 à g72-e-5"
+  },
+  {
+   "rang": 11,
+   "rubrique": "Diagnostic différentiel",
+   "statut": "partiel",
+   "ancre": "g72-7 (discriminant du ptosis trompeur, C09)"
+  },
+  {
+   "rang": 12,
+   "rubrique": "Prise en charge suisse (FI datées)",
+   "statut": "partiel",
+   "ancre": "g72-9, g72-p-1 à p-4 (plafonds FI, hors étiquette, potassium : C03-C06, C08, C10)"
+  },
+  {
+   "rang": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "couvert",
+   "ancre": "g72-10 (chiffre alcool faux, C07)"
+  },
+  {
+   "rang": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "couvert",
+   "ancre": "g72-10"
+  },
+  {
+   "rang": 15,
+   "rubrique": "Situations particulières",
+   "statut": "partiel",
+   "ancre": "g72-11 (grossesse : donnée unique déclarée)"
+  },
+  {
+   "rang": 16,
+   "rubrique": "Spécificités suisses",
+   "statut": "absent",
+   "ancre": "aucune (E03)"
+  },
+  {
+   "rang": 17,
+   "rubrique": "Critères formels du diagnostic",
+   "statut": "couvert",
+   "ancre": "div.alert de g72-12 (critères PP incomplets, M08)"
+  },
+  {
+   "rang": 18,
+   "rubrique": "Paramètres clés chiffrés",
+   "statut": "partiel",
+   "ancre": "div.key de g72-12 (85 % faux, C07)"
+  },
+  {
+   "rang": 19,
+   "rubrique": "Sous-codes CIM-10-GM couverts",
+   "statut": "couvert",
+   "ancre": "g72-1 (G72.0 à G72.9 conformes à S22)"
+  },
+  {
+   "rang": 20,
+   "rubrique": "Points d’examen fédéral",
+   "statut": "partiel",
+   "ancre": "quiz g72-7, g72-9, g72-e-5 ; aucun objectif PROFILES cité"
+  }
+ ],
+ "semiologie": {
+  "statut": "absente",
+  "fondamentale": "Absente comme discipline. L’onglet 1 (g72-5, g72-6) donne des symptômes par sous-code et une liste de gestes, sans mécanisme signe par signe, sans valeur chiffrée ni mention explicite « non chiffrée dans les sources lues », sans piège systématique.",
+  "analytique": "Absente : pas de tableau de syndromes, pas de raisonnement en cinq étapes, pas d’examen systématique numéroté, pas de cas corrigés de sémiologie. Les sources lues (S16-S20, S24, S26, S27) ne chiffrent aucune sensibilité ni spécificité des signes : lacune à déclarer dans la leçon.",
+  "ancres": [
+   "g72-5",
+   "g72-6",
+   "G72_c.html div.sci-bar"
+  ],
+  "constat_id": "C01",
+  "gravite": "MAJEUR",
+  "bloquant_cloture": true,
+  "statut_blocage": "MAJEUR, bloquant pour la clôture du cours et du lot (AGENTS.md)",
+  "proposition": [
+   "propositions/G72_c_1.html",
+   "propositions/G72_pop2_3.html",
+   "propositions/G72_a_semio_clinique.html"
+  ],
+  "grille_SEM": {
+   "SEM-01": "non",
+   "SEM-02": "non",
+   "SEM-03": "non (tests/audit_sciences.py échoue : 5 erreurs)",
+   "SEM-04": "oui pour le fichier actuel (test_v7 --static OK) ; sans objet pour la discipline absente",
+   "SEM-05": "non",
+   "SEM-06": "non (technique partielle dans g72-proximal, g72-prehension)",
+   "SEM-07": "non",
+   "SEM-08": "non",
+   "SEM-09": "non",
+   "SEM-10": "partiel (trap g72-6)",
+   "SEM-11": "non",
+   "SEM-12": "non",
+   "SEM-13": "non dans la discipline ; div.alert de g72-8 présent dans l’onglet 1",
+   "SEM-14": "partiel (tableau des différentiels de g72-7)",
+   "SEM-15": "non (ordre en trois temps dans g72-6, non numéroté)",
+   "SEM-16": "non",
+   "SEM-17": "non",
+   "SEM-18": "non",
+   "SEM-19": "sans objet (absente)",
+   "SEM-20": "sans objet",
+   "SEM-21": "sans objet",
+   "SEM-22": "sans objet (aucun bouton)",
+   "SEM-23": "non (aucune capture possible d’une discipline absente)",
+   "SEM-24": "oui (statut « Aucune validation médicale humaine »)"
+  },
+  "cibles": {
+   "propositions/G72_c_1.html": "chapters/G72/G72_c.html",
+   "propositions/G72_pop2_3.html": "chapters/G72/G72_pop2.html",
+   "propositions/G72_a_semio_clinique.html": "chapters/G72/G72_a.html"
+  },
+  "reserve_validateur": "Le validateur exige au moins six boutons data-s dans pS : 4 existants, plus l'Immunologie (G72_c_2), plus la Sémiologie (G72_c_1) = 6. Les deux propositions doivent être intégrées ensemble."
+ },
+ "figures": [
+  {
+   "ancre": "aria-label=\"Figure 1 — Territoires musculaires de repère\"",
+   "fichier": "chapters/G72/G72_c.html",
+   "classe": "ANATOMIQUE_IA",
+   "description": "Silhouette humaine en traits avec cinq territoires musculaires numérotés.",
+   "source_declaree": "aucune (« Schéma didactique qualitatif »)",
+   "constat_id": "C11",
+   "candidats": [],
+   "verification": "Origine IA : leçon produite par agent (rapport CYCLE_39_G72 : « 4 figures SVG noir et blanc ») ; recherche Commons refusée (HTTP 429)."
+  },
+  {
+   "ancre": "aria-label=\"Figure 2 — Coupe de muscle : lésions élémentaires\"",
+   "fichier": "chapters/G72/G72_c.html",
+   "classe": "ANATOMIQUE_IA",
+   "description": "Coupe transversale schématique de neuf fibres avec lésions élémentaires.",
+   "source_declaree": "aucune",
+   "constat_id": "C11",
+   "candidats": [],
+   "verification": "Représentation histologique dessinée sans original ; légende ambiguë (deux fibres marquées en croix)."
+  },
+  {
+   "ancre": "aria-label=\"Figure 3 — Potassium extracellulaire et potentiel de membrane\"",
+   "fichier": "chapters/G72/G72_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Courbes qualitatives potentiel de membrane / potassium extracellulaire.",
+   "source_declaree": "Statland et coll. (2018)",
+   "constat_id": "M01",
+   "candidats": [],
+   "verification": "Principe conforme à S17 (dépolarisation paradoxale à potassium bas) ; deux lignes de légende tronquées."
+  },
+  {
+   "ancre": "aria-label=\"Figure 4 — Voie du mévalonate et toxicité des statines\"",
+   "fichier": "chapters/G72/G72_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "description": "Organigramme acétyl-CoA → HMG-CoA → mévalonate → cholestérol, prénylation, coenzyme Q10.",
+   "source_declaree": "Stroes et coll. (2015), « notion de base »",
+   "constat_id": "M01",
+   "candidats": [],
+   "verification": "Mécanismes aval présentés comme non établis, conforme à S16 ; voie elle-même non sourcée (M10)."
+  }
+ ],
+ "figures_lisibilite_390px": {
+  "methode": "Chromium, largeur utile 358 px, getBBox des éléments text",
+  "resultat": "4 figures : échelle 0,559, texte rendu 7,3 px ; figure 3 : 2 textes au-delà de la viewBox (700 et 692 pour 640)"
+ },
+ "controles": {
+  "test_v7_static": "OK (G72 mots 15485, fenêtres 55, quiz 6, pareto 15)",
+  "audit_sciences": "échec : 5 erreurs (4 × « lien absent : À retenir. », histologie 265 mots)",
+  "ancres_verifiees": "chaque ancre présente exactement une fois (script)"
+ },
+ "verifications_conformes": [
+  "Sous-codes, exclusions et notes de codage G72 conformes au texte BfArM (S22)",
+  "Classification EAS selon la CK, fréquences 7–29 %, 1/1000 à 1/10 000, 1/100 000, STOMP 9,4 % contre 4,6 %, facteurs de risque, imputabilité, seuils 4×/10×, rhabdomyolyse, CoQ10, vitamine D, levure de riz rouge, renvoi après trois statines (S16)",
+  "Seuils FI de la CK (5×), contrôle à 5–7 jours, dosage préalable, acide fusidique 7 jours, ciclosporine AUC × 8,7, IMNM (S1)",
+  "Paralysies périodiques : prévalences, âges de début, durées, critères 3,5/4,5 mmol/L, test d’effort ≥ 40 % (> 70 %), génétique 60–70 %, salbutamol, HCTZ 25–75 mg, acétazolamide 125–1000 mg, myopathie permanente 68 % et > 80 % (S17)",
+  "Myopathie de réanimation : 9–86 %, ~40 %, 50–64 % COVID, J5, 4 %/j, 15–25 % de mortalité, 30,5 % de coûts, 14 % à 1 an et 9 % à 2 ans, rapport myosine/actine < 1,7, MRC < 48, NICE-SUGAR (S18) ; préhension 7/11 kg, 36 %, un tiers du poids, mobilisation à 2–3 jours (S19)",
+  "Alcool : 40–60 %, 0,5–2 %, > 10 kg/kg, 2–12 mois, cause non traumatique la plus fréquente de rhabdomyolyse hospitalière (S20)",
+  "EULAR/ACR : seuils 5,5/6,7/7,5/8,7, sensibilité et spécificité 87/82 et 93/88 %, IMNM non séparable (S21)",
+  "Myosite sous ICI : 0,5–1 %, un mois, 3,7 → 8,3 %, ventilation 20 % et 50–80 %, mortalité 40 %, abatacept (S26)",
+  "FI Diamox : indications, hors étiquette, contre-indications hypokaliémie et sulfamides, digoxine (S2)"
+ ],
+ "lacunes": [
+  "Recommandation ESMO 2022 (Haanen et coll., Ann Oncol 33:1217) : texte inaccessible (HTTP 403, absent de Europe PMC) ; doses de corticoïdes par grade et marqueurs cardiaques de la myosite sous ICI non vérifiés.",
+  "Mise à jour ESC/EAS 2025 : tableaux de recommandations publiés en image ; classe et niveau de preuve de l’acide bempédoïque non lus ; caractères 100 000 à 308 917 non lus.",
+  "Wikimedia Commons : HTTP 429 puis temporisation persistante ; aucun original candidat pour les figures 1 et 2.",
+  "Aucune sensibilité, spécificité ni rapport de vraisemblance des signes (urines foncées, réflexie, distribution proximale, ptosis) dans les sources lues.",
+  "Index alphabétique CIM-10-GM non consulté : place de la myosite à inclusions, de l’IMNM et de la myosite sous ICI entre G72.0, G72.4 et M33/M60 non tranchée.",
+  "FI suisses non lues : triamtérène, spironolactone, éplérénone (prévention), prednisone et méthylprednisolone, solutions de mannitol 10 et 20 %, alirocumab (Praluent), inclisiran (Leqvio).",
+  "Aucune source suisse lue sur l’annonce de pharmacovigilance, la garantie de prise en charge hors étiquette ou l’aptitude à la conduite (rubrique 16).",
+  "Solé 2026, Allenbach 2020, Hunziker 2022, Giezendanner 2024, Bosma 2026, Pasnoor 2018, Lilleker 2024, Piva 2019, Latronico et Bolton 2011 : non relus dans cet audit ; les faits du cours qui en dépendent sont repris sans contre-vérification.",
+  "Paralysie périodique thyréotoxique : aucune source de conduite thérapeutique lue."
+ ],
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée",
+ "correctifs_revue_codex_pr195": [
+  {
+   "constat": "A",
+   "objet": "Contrat de sémiologie",
+   "traitement": "G72_c_1.html restructuré : id g72-tab-semio, role=tabpanel, aria-labelledby, neuf data-semiology dans l’ordre, titres h3, aucun h2, section sources avec liens https et correspondance affirmation ↔ passage ; fenêtres déplacées dans G72_pop2_3.html (aucun _pop3) ; marqueur clinique proposé dans G72_a_semio_clinique.html."
+  },
+  {
+   "constat": "B",
+   "objet": "Réflexes conservés",
+   "traitement": "Reformulé fidèlement à S17 (« should raise the possibility of a different cause ») : les réflexes conservés font évoquer une autre cause et n’écartent pas à eux seuls une paralysie périodique ; même correction dans l’examen systématique et la fenêtre g72-sm-acces."
+  },
+  {
+   "constat": "C",
+   "objet": "Garantie de prise en charge",
+   "traitement": "Exigence retirée de G72_d_3.html avec les mentions non sourcées « décision spécialisée » et « information du patient » ; lacune maintenue (lacunes, rubrique 16)."
+  },
+  {
+   "constat": "D",
+   "objet": "Registre des sources",
+   "traitement": "sources.json : 29 entrées avec id, url, editeur/organisme, version, date_consultation, section_ou_page, passage_paraphrase, population, limites, niveau_lecture ; données inconnues déclarées « non précisé par la source »."
+  }
+ ]
+}

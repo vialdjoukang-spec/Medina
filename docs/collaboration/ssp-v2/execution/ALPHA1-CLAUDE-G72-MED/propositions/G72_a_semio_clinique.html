@@ -1,0 +1,27 @@
+<!-- Proposition ALPHA1-CLAUDE-G72-MED, constat C01 (volet clinique) : marqueur data-semiology-clinical="G72" dans le panneau pA.
+     Fichier cible : chapters/G72/G72_a.html (le panneau div#pA s’ouvre dans ce fichier et se poursuit dans G72_b.html).
+     Ancre d’insertion : immédiatement après la fin de l’îlot g72-6 « Examen clinique », c’est-à-dire après ces deux lignes, dernières du fichier :
+       <button class="pareto-btn ui" data-k="pareto-g72-clinique">▲ Loi de Pareto — Anamnèse et examen</button>
+       </section>
+     La section reste ainsi dans pA, avant l’îlot g72-7 (début de G72_b.html). Elle ne prend pas de numéro pour ne pas renuméroter g72-7 à g72-12 ;
+     le plan du cours (nav.toc) peut recevoir, au choix de la mission de production, une entrée non numérotée vers #g72-semio-clin.
+     Contenu : uniquement des faits déjà sourcés dans rapport.json et sources.json ; citations auteur-année comme dans le reste de pA.
+     Les fenêtres g72-sm-* appelées ici sont proposées dans propositions/G72_pop2_3.html. Revue IA, aucune validation médicale humaine. -->
+
+<section class="ilot" id="g72-semio-clin" data-semiology-clinical="G72"><h2>Sémiologie clinique : de la plainte au syndrome</h2>
+<p>Ce raisonnement prolonge l’anamnèse et l’examen. Il répond à une question : quelle constatation, recueillie au lit du patient, désigne le mécanisme et la gravité ?</p>
+<h3>Symptômes et anamnèse analytique</h3>
+<p>La première question sépare une <button class="w" data-k="g72-sm-faiblesse">faiblesse vraie</button>, perte de force mesurable, d’une fatigue sans perte de force (Schubert et Schreiner, 2023). Le médecin précise ensuite le contexte : statine et médicaments interagissants (information professionnelle d’Atorvastatin-Mepha, 2025), alcool (Simon et coll., 2017), immunothérapie par inhibiteur de point de contrôle (Gente et coll., 2026), séjour en réanimation (Rodriguez et coll., 2022). Il demande enfin si la faiblesse est permanente ou survient par <button class="w" data-k="g72-sm-acces">accès</button> : plus de 2 heures dans la forme hypokaliémique, moins de 2 heures dans la forme hyperkaliémique, de 1 à 36 heures dans le syndrome d’Andersen-Tawil (Statland et coll., 2018).</p>
+<p>La <button class="w" data-k="g72-sm-myalgie">myalgie sous statine</button> est fréquente et peu spécifique : plus de 90 % des plaintes musculaires des patients sous statine ne sont pas dues au médicament dans les essais en aveugle (Cholesterol Treatment Trialists’ Collaboration, 2022). Les <button class="w" data-k="g72-sm-urines">urines foncées</button> traduisent la myoglobine libérée par les fibres détruites ; elles exposent à l’insuffisance rénale aiguë (information professionnelle d’Atorvastatin-Mepha, 2025 ; Stroes et coll., 2015).</p>
+<h3>Signes et examen</h3>
+<p>Le score du Medical Research Council cote douze groupes musculaires ; un total inférieur à 48 définit la faiblesse acquise en réanimation (Rodriguez et coll., 2022). La préhension est anormale sous 7 kg chez la femme et sous 11 kg chez l’homme ; ce testing n’est pas fiable chez un patient délirant (Latronico et coll., 2023). La faiblesse typique sous statine est symétrique et proximale (Stroes et coll., 2015). La myopathie de réanimation épargne la face, réduit les réflexes et respecte la sensibilité (Rodriguez et coll., 2022).</p>
+<h3>Discrimination clinique</h3>
+<table class="t"><tr><th>Constatation</th><th>Ce qu’elle fait évoquer</th></tr>
+<tr><td>Ptosis, diplopie, gêne à la déglutition</td><td>Un trouble de la jonction neuromusculaire (Statland et coll., 2018) ; sous immunothérapie, un chevauchement avec myasthénie et myocardite (Gente et coll., 2026)</td></tr>
+<tr><td>Troubles sensitifs marqués</td><td>Un syndrome de Guillain-Barré (Statland et coll., 2018)</td></tr>
+<tr><td>Réflexes conservés dans un membre paralysé</td><td>Une autre cause qu’une paralysie périodique, sans l’écarter à elle seule (Statland et coll., 2018)</td></tr>
+<tr><td>Faiblesse diffuse en réanimation</td><td>Une myopathie, une polyneuropathie ou les deux : seule l’électrophysiologie les sépare (Rodriguez et coll., 2022)</td></tr></table>
+<p>Le tableau se lit par la colonne de droite : chaque constatation déclenche une recherche, non une conclusion. Les sources lues ne chiffrent la sensibilité ni la spécificité d’aucun de ces signes.</p>
+<div class="alert"><b>Situations urgentes.</b> Des urines foncées avec une douleur ou une faiblesse sévère imposent un bilan rénal le jour même ; une créatine kinase supérieure à 40 fois la limite supérieure de la normale avec atteinte rénale ou myoglobinurie définit la rhabdomyolyse (Stroes et coll., 2015). Un <button class="w" data-k="g72-sm-ici">ptosis sous immunothérapie</button> fait rechercher immédiatement un chevauchement avec myocardite ou myasthénie, dont la mortalité atteint environ 40 % (Gente et coll., 2026) ; le ptosis en est la présentation la plus fréquente, 71,8 % des cas publiés (Soriano et coll., 2026).</div>
+<div class="key"><b>À retenir.</b> La distribution de la faiblesse, la couleur des urines et le caractère permanent ou par accès désignent le mécanisme. Les signes sensitifs, oculaires et bulbaires font sortir du muscle.</div>
+</section>
