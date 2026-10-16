@@ -88,10 +88,13 @@ NEUTRES = [
     ('--n-line-soft', 0.880, 0.026, NEUTRE_H, 'Séparations décoratives (non interactives), même teinte que le filet'),
     ('--n-line', 0.740, 0.045, NEUTRE_H, 'Bordures de cartes, de tableaux et d’îlots (ravivées)'),
     ('--n-line-strong', 0.539, 0.071, NEUTRE_H, 'Contours interactifs (≥ 3:1 sur surface, papier et encart)'),
-    ('--ink-3', 0.480, 0.010, NEUTRE_H, 'Texte atténué (≥ 4,5:1 sur encart)'),
-    ('--ink-2', 0.360, 0.010, NEUTRE_H, 'Texte courant de l’interface'),
-    ('--ink-1', 0.215, 0.008, NEUTRE_H, 'Encre primaire, titres de l’interface'),
+    # Contraste renforcé (Vial, 16.10.2026) : encres plus foncées, seuils par rôle sur les trois fonds
+    # (primaire ≥ 12:1, courant/secondaire ≥ 7:1, atténué ≥ 4,5:1). Avant : L 0,215 / 0,360 / 0,480.
+    ('--ink-3', 0.440, 0.010, NEUTRE_H, 'Texte atténué (≥ 4,5:1 visé, ≥ 7:1 mesuré sur encart)'),
+    ('--ink-2', 0.300, 0.010, NEUTRE_H, 'Texte courant et secondaire de l’interface (≥ 7:1)'),
+    ('--ink-1', 0.180, 0.008, NEUTRE_H, 'Encre primaire, titres de l’interface (≥ 12:1)'),
 ]
+SEUILS_ENCRES = {'--ink-1': 12.0, '--ink-2': 7.0, '--ink-3': 4.5}
 SURFACES_PAPIER = ('--n-surface', '--n-paper', '--n-sunken')   # pâleur extrême : L ≥ 0,96, C ≤ 0,025
 TEINTE_CIEL = (200, 245)    # famille de teinte des fonds, filets, ombres et voile du thème
 # Ombres : lumière venant d’en haut (décalage vers le bas, liseré clair en haut), couleur = papier
@@ -138,7 +141,7 @@ DERNIER_RANG = 32            # rangs couverts par un remappage explicite (max ac
 # Vision photopique : à rôle égal, luminosité perçue égale. Repères dans une bande L 0,52–0,58
 # (± 0,03 autour de 0,55) ; encres à L 0,43 ; fonds à L 0,975 ; sélections à L 0,945.
 BANDE_REPERES = (0.522, 0.578)
-ENCRE_L = 0.430             # encre de chaque teinte (texte) : luminosité unique, ≥ 6:1 sur sa teinte claire
+ENCRE_L = 0.400             # encre de chaque teinte (texte) : luminosité unique, ≥ 7:1 sur sa teinte claire (0,430 avant le 16.10.2026, contraste renforcé)
 # Faible acuité des cônes S : pas de bleu saturé pour du texte. Les encres bleues à violettes
 # (teintes 215 à 300) sont plafonnées à C 0,080 ; leur lisibilité repose sur le contraste de
 # luminance (voies L + M), non sur la chroma.
@@ -151,19 +154,41 @@ TEINTE_SELECTION = (0.945, 0.036)   # ravivé (+0,008)
 
 # ------------------------------------------------------------------ statuts, jauges, or, leçon
 STATUTS = [  # nom, (L, C, h) encre, (L, C, h) fond, libellé, forme
-    ('ok', (0.470, 0.128, 150), (0.962, 0.034, 150), 'Disponible', 'disque plein'),
-    ('prep', (0.480, 0.010, NEUTRE_H), (0.967, 0.020, 229.0), 'En préparation', 'cercle vide'),
-    ('prov', (0.490, 0.119, 56), (0.962, 0.034, 80), 'Provisoire', 'demi-disque'),
+    ('ok', (0.420, 0.115, 150), (0.962, 0.034, 150), 'Disponible', 'disque plein'),
+    ('prep', (0.440, 0.010, NEUTRE_H), (0.967, 0.020, 229.0), 'En préparation', 'cercle vide'),
+    ('prov', (0.440, 0.105, 56), (0.962, 0.034, 80), 'Provisoire', 'demi-disque'),
 ]
 JAUGE = [(400, 0.690, 0.101), (500, 0.580, 0.114), (600, 0.470, 0.104), (700, 0.380, 0.078)]   # ravivée × 1,30   # rampe de la marque
 OR = [(100, 0.965, 0.050, 92), (300, 0.880, 0.120, 88), (500, 0.760, 0.145, 80), (600, 0.640, 0.130, 72), (700, 0.520, 0.105, 65), (800, 0.400, 0.075, 62)]
 LECON = [  # rôles sémantiques des cours, valeurs historiques conservées (règles de Vial)
-    ('--lesson-ink', '#0f2c66', 'Corps des cours du cycle (bleu marine renforcé)'),
-    ('--lesson-title', '#b3261e', 'Titres et numéros rouges soulignés'),
-    ('--lesson-term', '#9b3900', 'Termes interactifs des cours du cycle'),
-    ('--lesson-word', '#187349', 'Mot vert : fenêtre explicative ou contentieux'),
-    ('--lesson-abbr', '#205d55', 'Abréviation à clé du glossaire'),
+    ('--lesson-ink', '#0f2c66', 'Historique : ancien corps bleu marine des cours du cycle (remplacé par --ink-cours-bleu)'),
+    ('--lesson-title', '#b3261e', 'Titres et numéros rouges soulignés (règle typographique historique)'),
+    ('--lesson-term', '#9b3900', 'Abréviations à clé et liens dans les cours (orange brûlé, distinct des termes verts)'),
+    ('--lesson-word', '#187349', 'Historique : ancien mot vert (remplacé par --terme et --terme-justif)'),
+    ('--lesson-abbr', '#205d55', 'Historique : ancienne abréviation à clé (remplacée par --lesson-term)'),
 ]
+
+# ------------------------------------------------------------------ cours : fond blanc immaculé, encre au choix
+# Exigence de Vial (16.10.2026) : le contenu des leçons (.mc, îlots, onglets, fenêtres .mc-dlg, tableaux,
+# mode Livre) est écrit sur un blanc immaculé, sans teinte ni motif, même sous un thème ; le lecteur choisit
+# l’encre du texte principal (Noir ou Bleu, engine/encre_lecture.js → html[data-medina-encre]).
+# Termes interactifs : texte vert franc lisible (≥ 4,5:1), soulignement interrompu de 1 px en vert
+# fluorescent (décor non textuel), surlignage fluorescent pâle au survol et au focus.
+COURS = [  # nom, (L, C, h), rôle, seuil de contraste sur --cours-fond (None : décor non textuel)
+    ('--cours-fond', (1.000, 0.000, 0), 'Fond des cours et des fenêtres : blanc immaculé D65, sans teinte ni motif', None),
+    ('--ink-cours-noir', (0.178, 0.000, 0), 'Encre « Noir » du texte principal des cours (≥ 12:1)', 12.0),
+    ('--ink-cours-bleu', (0.290, 0.078, 262), 'Encre « Bleu » : marine lisible, C ≤ 0,08 (≥ 12:1)', 12.0),
+    ('--ink-cours-noir-2', (0.380, 0.000, 0), 'Encre secondaire « Noir » : légendes, sources (≥ 7:1)', 7.0),
+    ('--ink-cours-bleu-2', (0.400, 0.070, 262), 'Encre secondaire « Bleu » : légendes, sources (≥ 7:1)', 7.0),
+    ('--terme', (0.490, 0.140, 145), 'Terme interactif (.mc-w[data-k]) : texte vert franc (≥ 4,5:1 sur blanc et sur surlignage)', 4.5),
+    ('--terme-survol', (0.410, 0.115, 148), 'Terme interactif au survol et au focus : vert plus profond', 4.5),
+    ('--terme-justif', (0.400, 0.080, 165), 'Mot de justification ou de contentieux (button[data-justification]) : vert sapin, distinct', 4.5),
+    ('--terme-trait', (0.866, 0.280, 143), 'Soulignement interrompu de 1 px en vert fluorescent (décor, jamais du texte)', None),
+    ('--terme-surlignage', (0.968, 0.055, 142), 'Surlignage fluorescent pâle derrière le terme au survol et au focus', None),
+    ('--terme-focus', (0.410, 0.115, 148), 'Anneau de focus clavier des termes (2 px, ≥ 3:1)', 3.0),
+]
+ENCRE_C_BLEU_COURS = 0.080
+EXCEPTIONS_FLUO = ('--terme-trait',)   # seule exception documentée au plafond « néon » : un filet de 1 px
 
 
 # Rôles (alias sémantiques) : les règles de couleurs_premium.css ne lisent que ces noms ou les
@@ -191,6 +216,9 @@ ROLES = [
     ('--star-fill', 'var(--gold-500)', 'Corps de l’étoile d’or'),
     ('--star-light', 'var(--gold-300)', 'Facette éclairée de l’étoile'),
     ('--star-shade', 'var(--gold-600)', 'Facette ombrée de l’étoile'),
+    ('--ink-cours', 'var(--ink-cours-noir)', 'Encre du texte principal des cours ; html[data-medina-encre="bleu"] la porte sur --ink-cours-bleu'),
+    ('--ink-cours-2', 'var(--ink-cours-noir-2)', 'Encre secondaire des cours (légendes, sources) ; suit le choix Noir ou Bleu'),
+    ('--titre-cours', 'var(--lesson-title)', 'Titres et numéros rouges soulignés des cours (≥ 4,5:1 sur --cours-fond)'),
 ]
 
 
@@ -259,6 +287,8 @@ def tokens():
         t.append((f'--gold-{p}', pas(L, C, h), f'oklch({L:.3f} {C:.3f} {h})', 'Étoile d’or, Pareto'))
     for nom, x, role in LECON:
         t.append((nom, x, 'valeur conservée', role))
+    for nom, lch_, role, _ in COURS:
+        t.append((nom, pas(*lch_), 'oklch(%.3f %.3f %g)' % lch_, role))
     return t
 
 
@@ -367,7 +397,7 @@ def controles(vp):
     res = []
     for role in ('--ink-1', '--ink-2', '--ink-3'):
         for f, x in fonds.items():
-            res.append((role, f, vp.contrast(T[role], x), 4.5))
+            res.append((role, f, vp.contrast(T[role], x), SEUILS_ENCRES[role]))
     for f, x in fonds.items():
         res.append(('--n-line-strong', f, vp.contrast(T['--n-line-strong'], x), 3.0))
     for i, e in enumerate(emplacements(), 1):
@@ -383,6 +413,14 @@ def controles(vp):
     res.append(('--brand-600', 'surface (liens, focus)', vp.contrast(T['--brand-600'], T['--n-surface']), 4.5))
     for nom, x, _ in LECON:
         res.append((nom, 'surface', vp.contrast(x, T['--n-surface']), 4.5))
+    fond = T['--cours-fond']
+    for nom, _, _, seuil in COURS:
+        if seuil:
+            res.append((nom, '--cours-fond', vp.contrast(T[nom], fond), seuil))
+    for nom in ('--terme', '--terme-survol', '--terme-justif', '--ink-cours-noir', '--ink-cours-bleu'):
+        res.append((nom, '--terme-surlignage', vp.contrast(T[nom], T['--terme-surlignage']), 4.5))
+    res.append(('--lesson-title', '--cours-fond', vp.contrast(T['--lesson-title'], fond), 4.5))
+    res.append(('--lesson-term', '--cours-fond', vp.contrast(T['--lesson-term'], fond), 4.5))
     return res
 
 
@@ -457,8 +495,21 @@ def photopique(vp):
     import itertools
     allp = min(vp.deltaE(a, b) for a, b in itertools.combinations([e['hex'] for e in em_all[:len(EMPLACEMENTS)]], 2))
     res.append(('Écart minimal toutes paires des 23 repères (vision normale, ΔE OKLab ×100) ≥ 3,5', f'{allp:.2f}', allp >= 3.5))
-    plafond = max((vp.oklch(x)[1], n) for n, x, src, _ in tokens() if x.startswith('#') and src != 'valeur conservée')
-    res.append((f'Aucune couleur « néon » : C ≤ {CHROMA_PLAFOND} (hors valeurs conservées des cours)', f'C max {plafond[0]:.3f} ({plafond[1]})', plafond[0] <= CHROMA_PLAFOND + 0.003))
+    plafond = max((vp.oklch(x)[1], n) for n, x, src, _ in tokens() if x.startswith('#') and src != 'valeur conservée' and n not in EXCEPTIONS_FLUO)
+    res.append((f'Aucune couleur « néon » : C ≤ {CHROMA_PLAFOND} (hors valeurs conservées des cours et filet fluorescent {", ".join(EXCEPTIONS_FLUO)})', f'C max {plafond[0]:.3f} ({plafond[1]})', plafond[0] <= CHROMA_PLAFOND + 0.003))
+    # Cours (Vial, 16.10.2026) : blanc immaculé, encres Noir et Bleu, filet fluorescent réservé au décor.
+    hors = [n for n, lch_, _, _ in COURS if not dans_gamut(*lch_)]
+    res.append(('Tokens des cours dans le gamut sRGB', ', '.join(hors) or 'tous', not hors))
+    res.append(('--cours-fond blanc immaculé (#ffffff)', T['--cours-fond'], T['--cours-fond'] == '#ffffff'))
+    L, C = vp.oklch(T['--ink-cours-noir'])
+    res.append(('--ink-cours-noir achromatique (C ≤ 0,005)', f'{T["--ink-cours-noir"]} · C {C:.4f}', C <= 0.005))
+    L, C = vp.oklch(T['--ink-cours-bleu'])
+    res.append((f'--ink-cours-bleu marine : C ≤ {ENCRE_C_BLEU_COURS}, teinte 215–300', f'{T["--ink-cours-bleu"]} · C {C:.4f}', C <= ENCRE_C_BLEU_COURS))
+    css = CSS.read_text(encoding='utf-8')
+    texte_fluo = re.findall(r'(?<![\w-])(?:color|fill)\s*:\s*var\(--terme-(?:trait|surlignage)\)', css)
+    res.append(('Filet et surlignage fluorescents jamais employés comme couleur de texte (couleurs_premium.css)', f'{len(texte_fluo)} emploi(s)', not texte_fluo))
+    teinte_cours = re.findall(r'\.mc[^{}]*\{[^{}]*background(?:-color)?\s*:\s*var\(--n-(?:paper|sunken)\)', css.split('/* <cours> */')[1].split('/* </cours> */')[0]) if '/* <cours> */' in css else ['bloc <cours> absent']
+    res.append(('Section <cours> : aucun fond papier ni encart teinté', f'{len(teinte_cours)} emploi(s)', not teinte_cours))
     return res
 
 

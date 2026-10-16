@@ -89,7 +89,7 @@ dialog.mc-dlg::backdrop{background:rgba(20,24,34,.55)}
 .mc-maj:before{content:'Mise à jour ' attr(data-date) ' · ';font:600 11px 'Segoe UI',Arial,sans-serif}
 
 /* ===== Typographie MEDINA : une seule police, titres et numéros en rouge souligné, texte justifié ===== */
-.mc,.mc-dlg{--mc-red:#b3261e}
+.mc,.mc-dlg{--mc-red:var(--titre-cours,#b3261e)}
 .mc :not(svg):not(svg *),.mc-dlg :not(svg):not(svg *){font-family:var(--mc-font,Georgia,'Times New Roman',serif)!important}
 html body #content .mc h1,html body #content .mc h2,html body #content .mc h3,html body #content .mc h4,.mc h1,.mc h2,.mc h3,.mc h4,.mc-dlg h2,.mc-dlg h3,.mc-dlg .mc-dlg-h,.mc-dlg header b{color:var(--mc-red)!important;text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--mc-red) 55%,transparent);text-decoration-thickness:2px;text-underline-offset:.2em;font-weight:700;letter-spacing:0}
 .mc h1{text-decoration-thickness:3px}
@@ -103,7 +103,7 @@ html body #content .mc h1,html body #content .mc h2,html body #content .mc h3,ht
 .mc p{line-height:1.72}
 
 .mc svg text,.mc svg tspan{font-family:var(--mc-font,Georgia,serif)!important}
-html body #content .mc .mc-n{color:#b3261e!important}
+html body #content .mc .mc-n{color:var(--titre-cours,#b3261e)!important}
 
 /* G-04 : images .gif des cours (largeur contrainte, chargement différé) */
 .mc figure img{max-width:100%;height:auto}
@@ -111,3 +111,11 @@ html body #content .mc .mc-n{color:#b3261e!important}
 .mc th,.mc-dlg th{font-size:.86em;letter-spacing:.03em}
 /* Un en-tête ne se coupe pas au milieu d’un mot (césures douces ignorées) : un tableau trop large défile dans son propre cadre (table.mc-t). */
 .mc table.mc-t th,.mc-dlg table.mc-t th{-webkit-hyphens:none;hyphens:none;overflow-wrap:normal}
+/* Contrôle « Encre : Noir | Bleu » de la barre d’outils (engine/encre_lecture.js) : deux boutons voisins,
+   état porté par aria-pressed ; la pastille montre l’encre appliquée au texte principal du cours. */
+.mc-toolbar .mc-encre{display:inline-flex;align-items:center;gap:4px;margin:0;padding:0;border:0;white-space:nowrap}
+.mc-toolbar .mc-encre-l{margin-right:2px}
+.mc-toolbar .mc-encre button{display:inline-flex;align-items:center;gap:6px;margin:0}
+.mc-toolbar .mc-encre-pastille{display:inline-block;width:.8em;height:.8em;border-radius:50%}
+.mc-toolbar .mc-encre button[data-encre="noir"] .mc-encre-pastille{background:var(--ink-cours-noir,#111)}
+.mc-toolbar .mc-encre button[data-encre="bleu"] .mc-encre-pastille{background:var(--ink-cours-bleu,#152a52)}
