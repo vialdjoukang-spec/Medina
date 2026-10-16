@@ -1,0 +1,211 @@
+{
+ "actor": "Claude",
+ "code": "G23",
+ "kind": "MED",
+ "mission": "ALPHA77-CLAUDE-G23-INTEGRATE",
+ "reviewer": "Agent P, revue finale indépendante de l’intégration de l’Agent W",
+ "date": "2026-10-16",
+ "base_commit": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "reviewed_commit": "d654ab4109eb31bd8bb37e1dff2c463b4d4196f4",
+ "status": "closed",
+ "medical_human_validation": false,
+ "source_files_sha256": {
+  "chapters/G23/G23_a.html": "01b75db8e5863831f254431e7fd39a1398abfdf060268eb0efdc9647b8b03d58",
+  "chapters/G23/G23_b.html": "a3ffac31116e26c0d12da0c8a7639e0e5d3038bbd7331d4126e54020f21901a6",
+  "chapters/G23/G23_c.html": "b7827cbbe754a4d47bfdf6cdc3e601f887384a1cf08b25488b1ef00e4367a128",
+  "chapters/G23/G23_d.html": "9a43c9eed9a053d4360d97207c4c5263ec335c6e8e3eec1f3762ab2313b6b56a",
+  "chapters/G23/G23_pop1.html": "3bdde9dad267fa2b1d73a9c938b4237369ba76d8fa17af55c114b01fbbb3c861",
+  "chapters/G23/G23_pop2.html": "b24db510e24e288d053faa6bdf2485bfc27da46bf31f93f955a0b46ff4c17379",
+  "glossary/g23.py": "7314efa443b4e96c72f9ea2b9d7517c0e65d4f7299f92151510b40d68878fa07"
+ },
+ "reviewed_files_sha256": {
+  "chapters/G23/G23_a.html": "59e01d6f0bea8df55e2618d5570fcd76f7c0bfd14e64d906c520227fd766aa26",
+  "chapters/G23/G23_b.html": "00164de4639bf1e02035325807e6a239c2137eb20b008f69b7451cde51468db8",
+  "chapters/G23/G23_c.html": "3e6300f10211ff1635bc1a772e72670e7e1849370998b7fb51685f5f2873329b",
+  "chapters/G23/G23_d.html": "031ec86c999988b5ea908db05ae399e6b1dbc86d9c328f28f9730543869a409c",
+  "chapters/G23/G23_pop1.html": "c691e722d0e2164be5b2670e0df07fb34ed425126f80a7f4b0ee14e0360635f9",
+  "chapters/G23/G23_pop2.html": "19e8f874a027a5f28278e04d564f2e745cf0ad296a7d18d74ec050edba65a44f",
+  "glossary/g23.py": "4d202922e8abb9e50f06b61b5a597e7523b6f07c7d00e70bf0d94f0dddca5686"
+ },
+ "requirements_reviewed": {
+  "fundamental_analytical_semiology": true
+ },
+ "unresolved_blockers": [],
+ "scope": "Revue des 7 fichiers entre la base 523832d9 et HEAD (différence textuelle intégrale, 851 lignes ajoutées ou retirées), avec contre-lecture des sources primaires de chaque fait médical nouveau et des FI suisses de chaque médicament cité ; les passages inchangés depuis l’audit ALPHA1-CLAUDE-G23-MED n’ont pas été relus en totalité, à l’exception de la fenêtre Madopar®.",
+ "findings": [
+  {
+   "id": "P-MED-01",
+   "severite": "MAJEUR",
+   "status": "resolved",
+   "fichier": "chapters/G23/G23_b.html",
+   "ancre": "9.5 Hypotension orthostatique neurogène",
+   "constat": "Phrase de C15 sur la droxidopa non relue par W et statut suisse non vérifié.",
+   "verification": "ESC 2018 § 5.3.10 relu : « approved by the US Food and Drug Administration for the treatment of symptomatic neurogenic OH » ; quatre essais courts, bénéfice sur certains items de qualité de vie à 2 semaines, « its benefit was lost after 8 weeks » ; « current evidence is insufficient to confirm the efficacy of droxidopa for long-term use ». La phrase de W est fidèle ; elle est complétée par ces éléments. Statut suisse : droxidopa absente de la liste élargie Swissmedic des médicaments à usage humain autorisés (état au 30.09.2026, recherche par principe actif) et d’AmiKo (« droxidopa », « Northera »).",
+   "correction": "« La droxidopa, précurseur de la noradrénaline autorisé aux États-Unis, a amélioré certains items de qualité de vie après 2 semaines dans quatre essais courts, mais ce bénéfice était perdu après 8 semaines : les preuves sont insuffisantes pour confirmer son efficacité à long terme (ESC 2018, § 5.3.10). Elle ne figure pas dans la liste des médicaments à usage humain autorisés par Swissmedic (état au 30.09.2026). » La lacune « statut suisse non vérifié » est levée.",
+   "evidence": [
+    "2018 ESC Guidelines on syncope (doi 10.1093/eurheartj/ehy037), texte éditeur lu le 16.10.2026, § 5.3.10 « Emerging new pharmacological therapy in specific subgroups »",
+    "Swissmedic, Erweiterte Arzneimittelliste HAM (xlsx, Stand 30.09.2026), colonnes Wirkstoff(e) et ATC : aucune ligne « droxidop* »",
+    "AmiKo, recherche par nom « droxidopa » et « Northera » : aucun résultat (16.10.2026)"
+   ]
+  },
+  {
+   "id": "P-MED-02",
+   "severite": "MAJEUR",
+   "status": "resolved",
+   "fichier": "chapters/G23/G23_pop2.html",
+   "ancre": "g23-pkmerz ; Pareto pharmacologie",
+   "constat": "« probablement hors indication » pour PK-Merz® dans la PSP et la DCB.",
+   "verification": "FI PK-Merz® (février 2025), Indications : comprimés filmés « Traitement de la maladie de Parkinson quelle que soit son origine » (allemand : « Morbus Parkinson verschiedener Genese ») ; la perfusion vise les cas graves de parkinsonisme mettant la vie en danger. La PSP et la DCB n’y figurent pas.",
+   "correction": "Formulation certaine : « La PSP et la DCB, maladies distinctes de la maladie de Parkinson, n’y figurent pas : leur traitement par PK-Merz® est un usage hors indication, à documenter comme tel » ; Pareto : « PK-Merz® hors indication dans la PSP et la DCB » ; G23_d : mention hors indication ajoutée au tableau et à l’encadré « À retenir ».",
+   "evidence": [
+    "FI PK-Merz®, GTIN 7680441350273, AmiKo fr et de, lue le 16.10.2026, rubrique Indications/Possibilités d’emploi"
+   ]
+  },
+  {
+   "id": "P-MED-03",
+   "severite": "MAJEUR",
+   "status": "resolved",
+   "fichier": "chapters/G23/G23_pop2.html ; chapters/G23/G23_d.html",
+   "ancre": "g23-madopar ; encadré À retenir",
+   "constat": "Indication suisse de Madopar® réduite à la maladie de Parkinson, usage dans l’AMS, la PSP et la DCB qualifié d’« extension de la pratique » (texte antérieur à W, relevé par P).",
+   "verification": "FI Madopar® (juin 2023) : « Madopar est indiqué pour le traitement du syndrome parkinsonien sous toutes ses formes ; exception : le syndrome parkinsonien d’origine médicamenteuse », et syndrome des jambes sans repos.",
+   "correction": "Indication reformulée d’après la FI ; le parkinsonisme de l’AMS, de la PSP et de la DCB entre dans ce libellé ; G23_d corrigé de même.",
+   "evidence": [
+    "FI Madopar®, GTIN 7680380960953, AmiKo, lue le 16.10.2026"
+   ]
+  },
+  {
+   "id": "P-MED-04",
+   "severite": "MAJEUR",
+   "status": "resolved",
+   "fichier": "chapters/G23/G23_a.html ; G23_b.html ; G23_c.html",
+   "ancre": "piège 6.3 ; tableau des différentiels ; Du signe au diagnostic",
+   "constat": "Sens inversé : « l’ataxie est la première cause d’AMS prise pour une PSP ».",
+   "verification": "Innsbruck 2023 : « The leading cause of misdiagnosis MSA in patients with PSP is the presence of cerebellar ataxia » : chez des patients atteints de PSP, l’ataxie fait porter à tort le diagnostic d’AMS.",
+   "correction": "Trois passages réécrits : « Chez un patient atteint de PSP, une ataxie cérébelleuse est la première cause de diagnostic erroné d’AMS ».",
+   "evidence": [
+    "Revue d’Innsbruck 2023 (PMC10485100, texte intégral lu le 16.10.2026), section sur le diagnostic différentiel PSP/AMS"
+   ]
+  },
+  {
+   "id": "P-MED-05",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G23/G23_a.html ; G23_c.html",
+   "ancre": "6.3 Discrimination clinique ; Mécanismes ; sources de la sémiologie",
+   "constat": "Critères d’exclusion simplifiés : « syndrome oculomoteur supranucléaire écarte l’AMS » et « dysautonomie d’au moins 30/15 mmHg écarte la PSP ».",
+   "verification": "MDS 2022, exclusion : « Downgaze supranuclear gaze palsy or slowing of vertical saccades ». MDS 2017, B2 : « Predominant, otherwise unexplained autonomic failure, e.g., orthostatic hypotension (… ≥30 mm Hg systolic or ≥15 mm Hg diastolic) ».",
+   "correction": "Formulations alignées sur les deux critères (prédominante et inexpliquée ; 30 mmHg systolique ou 15 mmHg diastolique).",
+   "evidence": [
+    "MDS 2022 (PMC9321158, texte intégral Europe PMC lu le 16.10.2026), tableau 1, critères d’exclusion",
+    "MDS 2017 (PMC5516529, texte intégral NCBI lu le 16.10.2026), tableaux 1 à 4, tableau 1 B2"
+   ]
+  },
+  {
+   "id": "P-MED-06",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G23/G23_c.html ; G23_pop2.html",
+   "ancre": "tableau des symptômes ; g23-sm-erectile",
+   "constat": "Dysfonction érectile « jamais isolée / jamais seule » pour l’AMS probable : non soutenu.",
+   "verification": "MDS 2022 : la dysfonction érectile est un signe de soutien non moteur, « below age of 60 years for clinically probable MSA » ; une seule caractéristique de soutien suffit pour la forme probable. Innsbruck : faible rendement de la dysfonction sexuelle isolée en raison des causes non neurogènes fréquentes (endocriniennes, vasculaires).",
+   "correction": "« comme signe de soutien non moteur de l’AMS probable, elle ne compte qu’avant 60 ans » ; mention des causes fréquentes conservée (Innsbruck).",
+   "evidence": [
+    "MDS 2022 (PMC9321158, texte intégral Europe PMC lu le 16.10.2026), tableau 1 et lexique (tableau 3)",
+    "Revue d’Innsbruck 2023 (PMC10485100, texte intégral lu le 16.10.2026)"
+   ]
+  },
+  {
+   "id": "P-MED-07",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G23/G23_pop2.html",
+   "ancre": "g23-sm-instabilite",
+   "constat": "« Le sujet sain se rattrape après une poussée vers l’arrière (MDS 2017) » et distinction avec le trébuchement : non présents dans la source ; W l’avait retiré de G23_c mais non de la fenêtre.",
+   "verification": "MDS 2017 : P1 « spontaneous loss of balance while standing, or history of more than one unprovoked fall » ; P2 tendance à la chute au test de traction ; P3 « more than two steps backward, but unaided recovery ».",
+   "correction": "Définition reprise des niveaux P ; « un retour seul à l’équilibre en deux pas au plus n’entre dans aucun niveau P ».",
+   "evidence": [
+    "MDS 2017 (PMC5516529, texte intégral NCBI lu le 16.10.2026), tableaux 1 à 4, tableau 2 (P1 à P3)"
+   ]
+  },
+  {
+   "id": "P-MED-08",
+   "severite": "MINEUR",
+   "status": "resolved",
+   "fichier": "chapters/G23/G23_c.html",
+   "ancre": "Sémiologie fondamentale, À retenir",
+   "constat": "« peuvent précéder de plusieurs années » : la source dit « by months or years ».",
+   "verification": "Innsbruck : « may precede MSA motor onset by months or years » ; MDS 2022 : troubles urinaires initiaux isolés chez 18 %, 2,8 ans en moyenne avant les signes moteurs.",
+   "correction": "« de plusieurs mois ou de plusieurs années ».",
+   "evidence": [
+    "Revue d’Innsbruck 2023 (PMC10485100, texte intégral lu le 16.10.2026)",
+    "MDS 2022 (PMC9321158, texte intégral Europe PMC lu le 16.10.2026)"
+   ]
+  },
+  {
+   "id": "P-MED-09",
+   "severite": "—",
+   "status": "resolved",
+   "fichier": "toutes",
+   "ancre": "12 adaptations de W",
+   "constat": "Fidélité des 12 adaptations de W.",
+   "verification": "Vérifiées dans le texte des sources : C06 (MDS 2022, lexique : obstruction prostatique pour le résidu ; chirurgie pelvienne ou prolapsus pour l’incontinence) ; C09 (FI PK-Merz® : « insuffisance cardiaque sévère non compensée (stade IV NYHA) ») ; C10 (Innsbruck : « Every second person with MSA and neurogenic OH shows accompanying phenomena ») ; C11 (Munich : « Dysphagie ist eine Hauptursache für Morbidität und Mortalität ») ; C01 saccades (MDS 2017 O2 : « rather than just initial and final eye positions in normal subjects »), test de traction (P3), différentiel de l’ataxie subaiguë (Innsbruck, liste exacte), « olivopontocerebellar » (MDS 2022), délai des symptômes autonomes (précisé en P-MED-08), figure 8 (viewBox 460, police 16), rédaction à la troisième personne, références liées ; C02 (Munich : six stades « Für die PSP »). Également vérifiés : PSP-PI au niveau évocateur (MDS 2017 : « P1 or P2 » → s.o. PSP-PI), 3,6 ans (Munich), environ 25 % de PSP-RS (Munich), MAPT H1 (Munich), seuils et performances MDS 2022 (46/76 %, 34/95 %, 48/34 %, 27–45/88,7 %, 23,5/94 %, 43/100 %, 3,4 fois, 24 contre 118 mois, 71 et 129 mL, 58 %, 18 % et 2,8 ans, 95 % par la systolique), Innsbruck (91,3/88,4/79 %, +18 %, 75–81 %, 73–87 %, 87–94 %, 6–9 et 20–40 %, 47–56 %, 28 %, 43 %, 8,8 fois 74/88,5 %, 84/98 %, NfL > 1 400 pg/mL), consensus de Bologne sur le stridor (12–42 %, 4–5,2 %, 2 morts subites sur 13 sous CPAP, indications CPAP et trachéotomie), FI Gutron®, Xeomin®, Ferriprox®, Florinef®, Midodrin Substipharm (indications, contre-indications, dates), fiches Parkinson Suisse 129 et 130.",
+   "correction": "Aucune autre correction nécessaire.",
+   "evidence": [
+    "MDS 2022 (PMC9321158, texte intégral Europe PMC lu le 16.10.2026)",
+    "MDS 2017 (PMC5516529, texte intégral NCBI lu le 16.10.2026), tableaux 1 à 4",
+    "Revue d’Innsbruck 2023 (PMC10485100, texte intégral lu le 16.10.2026)",
+    "Revue de Munich 2026 (PMC13569406, texte intégral lu le 16.10.2026)",
+    "Cortelli 2019 (PMC6814413, texte intégral lu le 16.10.2026)",
+    "FI AmiKo lues le 16.10.2026 : Gutron® (mars 2021), Xeomin® (mars 2026), Ferriprox® (mars 2022), Florinef® (mars 2026), Madopar® (juin 2023), Midodrin Substipharm (mai 2024), PK-Merz® (février 2025)",
+    "Parkinson Suisse, fiches AMS n° 129 et PSP n° 130 (PDF) relues le 16.10.2026"
+   ]
+  }
+ ],
+ "lacunes_declarees": [
+  {
+   "objet": "Statut suisse de la droxidopa",
+   "statut": "levée par l’Agent P",
+   "detail": "Absente de la liste élargie Swissmedic au 30.09.2026 (P-MED-01)."
+  },
+  {
+   "objet": "ESC 2018, § 5.3.10",
+   "statut": "levée par l’Agent P",
+   "detail": "Passage relu sur le texte de l’éditeur (P-MED-01)."
+  },
+  {
+   "objet": "PK-Merz® hors indication",
+   "statut": "levée par l’Agent P",
+   "detail": "Formulation certaine d’après la FI (P-MED-02)."
+  },
+  {
+   "objet": "Prise en charge urologique",
+   "statut": "maintenue",
+   "detail": "Autosondage et traitement de l’hyperactivité vésicale : aucune source suisse ou européenne lue ; le cours le déclare."
+  },
+  {
+   "objet": "Rubrique 16 (spécificités suisses), rattachement de la DCB à G23.8, PROFILES",
+   "statut": "maintenue",
+   "detail": "Non recherchés dans des sources officielles par W ni par P."
+  },
+  {
+   "objet": "Figures 4 et 5",
+   "statut": "maintenue",
+   "detail": "Provenance signalée ORIGINE_INCONNUE par l’audit LANG ; schémas SVG non anatomiques, aucune classée ANATOMIQUE_IA ; aucune figure retirée."
+  }
+ ],
+ "evidence": [
+  "Différence base 523832d9 → a4a9ef94 → HEAD des sept fichiers relue (extraction texte hors dépôt, scratchpad g23p).",
+  "2018 ESC Guidelines on syncope (doi 10.1093/eurheartj/ehy037), texte éditeur lu le 16.10.2026, § 5.3.10 « Emerging new pharmacological therapy in specific subgroups »",
+  "MDS 2022 (PMC9321158, texte intégral Europe PMC lu le 16.10.2026)",
+  "MDS 2017 (PMC5516529, texte intégral NCBI lu le 16.10.2026), tableaux 1 à 4",
+  "Revue d’Innsbruck 2023 (PMC10485100, texte intégral lu le 16.10.2026)",
+  "Revue de Munich 2026 (PMC13569406, texte intégral lu le 16.10.2026)",
+  "Cortelli 2019 (PMC6814413)",
+  "FI suisses via tools/swissmedic_fi.py (16.10.2026)",
+  "Swissmedic, liste élargie des médicaments autorisés (état au 30.09.2026)",
+  "python3 test_v7.py --static G23 : OK ; tests/audit_sciences.py : passed, errors []."
+ ],
+ "conclusion": "Aucun constat bloquant ouvert : quatre constats majeurs (droxidopa, PK-Merz®, Madopar®, sens de l’erreur ataxie/PSP) et quatre mineurs ont été corrigés par l’Agent P et vérifiés dans leurs sources ; les 12 adaptations de W sont fidèles. Lacunes non bloquantes maintenues et déclarées.",
+ "mention": "Revue IA, distincte d’une validation médicale humaine."
+}

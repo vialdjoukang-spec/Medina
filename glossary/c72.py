@@ -52,7 +52,7 @@ add_if_absent('MPE-B', [('MPE','Myxopapillary Ependymoma'),('B','sous-groupe B')
               'Il a un meilleur pronostic que MPE-A.', 'c72-moleculaire')
 add_if_absent('MPE', [('M','Myxo-'),('P','Papillary'),('E','Ependymoma')], 'Myxopapillary ependymoma (épendymome myxopapillaire)',
               'Cette tumeur siège surtout au cône médullaire et au filum terminal ; elle est de grade 2 depuis l’OMS 2021.', 'c72-mpe-rt')
-add_if_absent('MGMT', [('MG','MéthylGuanine'),('M','Méthyl'),('T','Transférase')], 'O6-méthylguanine-ADN méthyltransférase',
+add_if_absent('MGMT', [('M','Méthyl'),('G','Guanine'),('M','Méthyl'),('T','Transférase')], 'O6-méthylguanine-ADN méthyltransférase',
               'Cette enzyme répare l’ADN endommagé par des agents alkylants comme le témozolomide. Un promoteur non méthylé, habituel dans le gliome H3 K27-altéré, rend le bénéfice du témozolomide incertain.', 'c72-h3k27')
 add_if_absent('SMARCB1', [('SMARC','SWI/SNF-related Matrix-associated Actin-dependent Regulator of Chromatin'),('B','subfamily B'),('1','member 1')], 'Gène SMARCB1',
               'Son altération est à l’origine d’une forme de schwannomatose, avec un risque accru de MPNST.', 'c72-schwannomatose')
@@ -99,7 +99,9 @@ for _code, _lab, _ref in [
     ('C72.9', 'Système nerveux central sans précision', 'c72-codes'),
     ('C30.0', 'Code cité pour le rattachement non vérifié de l’esthésioneuroblastome (C72.2 ou C30.0)', 'c72-codes'),
     ('D33.4', 'Code de tumeur bénigne de la moelle épinière où l’hémangioblastome se classe selon la source lue, hors C72', 'c72-differentiel'),
-    ('D35.2', 'Code de tumeur bénigne du système nerveux central cité dans l’aide-mémoire de déclaration', 'c72-nkrs'),
+    ('D35.2', 'Code de tumeur bénigne de l’hypophyse, cité dans l’aide-mémoire de déclaration', 'c72-nkrs'),
+    ('D43.3', 'Tumeur à évolution imprévisible ou inconnue des nerfs crâniens, où se code une tumeur de comportement /1 du nerf optique', 'c72-codes'),
+    ('D43.4', 'Tumeur à évolution imprévisible ou inconnue de la moelle épinière, où se code une tumeur de comportement /1 comme l’épendymome myxopapillaire', 'c72-codes'),
     ('C79.4', 'Code de tumeur maligne secondaire du système nerveux, cité pour la compression médullaire métastatique', 'c72-compression')]:
     add_if_absent(_code, [(_code[0], 'lettre de chapitre de la CIM-10-GM'), (_code[1:], 'catégorie et subdivision')], 'Code CIM-10-GM ' + _code,
                   _lab + '.', _ref)

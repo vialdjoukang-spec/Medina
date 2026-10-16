@@ -57,7 +57,7 @@ add_if_absent('T12', [('T', 'Thoracique'), ('12', 'douzième segment')],
               'Douzième segment thoracique',
               'Niveau inférieur des branches des nerfs intercostaux concernées par l’ACNES.', 'g58-acnes')
 add_if_absent('O-A-C-V', [('O', 'Organe'), ('A', 'ANCA'), ('C', 'Cryoglobulines'), ('V', 'VS ≥ 100 mm/h')],
-              'Aide mémoire O-A-C-V',
+              'Aide-mémoire O-A-C-V',
               'Aide pédagogique, non critère officiel : quatre arguments en faveur d’une vascularite systémique plutôt que d’une NSVN.', 'g58-mnemo')
 add_if_absent('G58.0', [('G58.0', 'code de la CIM-10-GM 2024 : névrite intercostale ; identifiant de classification, non une abréviation lettre à lettre')],
               'Névrite intercostale',
@@ -92,3 +92,6 @@ add_if_absent('G53.0', [('G53.0', 'code de la CIM-10-GM 2024 : névralgie post-z
 add_if_absent('B02.2', [('B02.2', 'code de la CIM-10-GM 2024 : zona avec atteinte du système nerveux ; identifiant de classification, non une abréviation lettre à lettre')],
               'Zona avec atteinte du système nerveux',
               'Code de la classification CIM-10-GM 2024 utilisé pour situer la catégorie.', 'g58-cim')
+add_if_absent('Methotrexat-Mepha', [('Methotrexat', 'méthotrexate (dénomination allemande)'), ('Mepha', 'nom du fabricant, non une abréviation')],
+              'Methotrexat-Mepha, nom commercial suisse du méthotrexate',
+              'Nom de marque, non une abréviation. Son information professionnelle suisse (février 2025) ne comporte aucune indication de vascularite.', 'g58-lacunes')
