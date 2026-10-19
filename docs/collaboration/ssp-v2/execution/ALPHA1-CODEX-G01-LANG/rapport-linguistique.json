@@ -1,0 +1,108 @@
+{
+  "mission": "ALPHA1-CODEX-G01-LANG",
+  "code": "G01",
+  "intitule": "Méningite au cours d’affections bactériennes classées ailleurs",
+  "modele": "gpt-6.1-sol",
+  "effort": "medium",
+  "heure_utc": "2026-10-15T18:23:49.713506+00:00",
+  "base_worktree_sha": "f664dd9e8da71f647dd3dc4da18f509f8517959c",
+  "source_snapshot_sha": "bfc4576b88a4ce3bb82fb56e291a9d8c2f6bf996",
+  "source_files_sha256": {
+    "chapters/G01/G01_a.html": "7c5960c8f4c9a71d2e13c4a7eaf8547236565f9e15d28ae2611109852ebb86c6",
+    "chapters/G01/G01_b.html": "1903837d5d4bac4dd61acb0f2785faa2110a8dd33dd2223918beaaf1c933c6de",
+    "chapters/G01/G01_c.html": "a9e13e412be4eafcbb766b6549e6d100dcaa4e61ddd8fa42fd5242c4c7bab385",
+    "chapters/G01/G01_d.html": "317e7ac2ab43992ff60ab4facab8a3a1b3bb6df609c223ef3c1f075b2747739c",
+    "chapters/G01/G01_pop1.html": "eb976ebb44a3e95b87f551afdb6dc10447af8655b4b548ca4b2ffba30a5a0f00",
+    "chapters/G01/G01_pop2.html": "7b4aadad576148c44e9cd6ab749382c147b469be4b1c7c3bbc938650ac4cb0d9",
+    "glossary/g01.py": "ceacc9ea5cb2446340061c0dc3bc02967664e46b529444be0db4c2412ad9ccde"
+  },
+  "statut": "lecture_textuelle_integrale_et_propositions_locales_livrees_avec_reserves",
+  "type": "linguistique locale, sans audit médical croisé",
+  "lecture": {
+    "fichiers_entiers": [
+      "chapters/G01/G01_a.html",
+      "chapters/G01/G01_b.html",
+      "chapters/G01/G01_c.html",
+      "chapters/G01/G01_d.html",
+      "chapters/G01/G01_pop1.html",
+      "chapters/G01/G01_pop2.html",
+      "glossary/g01.py"
+    ],
+    "surfaces": [
+      "4 onglets",
+      "fenêtres locales",
+      "tableaux",
+      "textes et légendes des figures SVG",
+      "6 cas et réponses",
+      "résumés/Pareto",
+      "glossaire Python local entier"
+    ],
+    "methode": "Extraction html.parser puis lecture intégrale réelle des segments ; aucune sortie tronquée G01. Socle commun réutilisé de I63 avec attribution.",
+    "limites": [
+      "Aucun contrôle visuel dans navigateur ni inspection de pixels.",
+      "Glossaires partagés conditionnellement prioritaires non lus dans cet audit ; aucune attestation du contenu runtime.",
+      "Pas de validation clinique ni de lecture en ligne des références : les références du cours sont lues comme surface linguistique.",
+      "Deltas MED parallèles non lus et non validés."
+    ]
+  },
+  "propositions": {
+    "nombre": 21,
+    "fichier": "propositions.json",
+    "patch": "propositions.patch",
+    "copies": "draft/chapters/G01",
+    "statut": "copies réservées, aucune modification canonique"
+  },
+  "invariants_verifies": {
+    "empreintes_conformes": true,
+    "ordre_balises_attributs_liens_ids_data_k_identiques": true,
+    "suite_nombres_identique": true,
+    "fond": "Chaque paire relue localement ; unités, conditions, négations, populations, doses et degrés de certitude conservés. Ambiguïtés médicales réservées, sans arbitrage.",
+    "preuve": "controles.json"
+  },
+  "reserves_pour_auditeur_medical": [
+    {
+      "id": "MED-01",
+      "fichier": "chapters/G01/G01_b.html",
+      "texte": "La ponction n’est différée que pour trois raisons",
+      "question": "Exclusivité de que : les trois critères d’imagerie résument-ils vraiment toutes les raisons médicales de différer une ponction ? Aucun critère ajouté ou supprimé."
+    },
+    {
+      "id": "MED-02",
+      "fichier": "chapters/G01/G01_pop2.html",
+      "texte": "Contre-indication en pratique Neurolistériose : mortalité accrue (odds ratio 4,58) ; arrêt dès l’identification",
+      "question": "La fenêtre MONALISA décrit une association observationnelle non causale, puis cette fenêtre utilise contre-indication. Harmonisation médicale requise ; vocabulaire de contre-indication laissé inchangé."
+    },
+    {
+      "id": "MED-03",
+      "fichier": "chapters/G01/G01_pop1.html",
+      "texte": "La mortalité à 3 mois est plus élevée pour la bactériémie que pour la neurolistériose (HR 0,54)",
+      "question": "Préciser le groupe de référence du HR pour que le sens de la comparaison soit lisible. Aucun renversement du rapport effectué."
+    },
+    {
+      "id": "MED-04",
+      "fichier": "chapters/G01/G01_a.html",
+      "texte": "Un érythème migrant absent, un purpura absent ou une raideur absente n’excluent aucun diagnostic.",
+      "question": "Portée universelle de aucun diagnostic ; l’auteur voulait-il les diagnostics discutés ? Ne pas réduire cette portée sans arbitrage."
+    },
+    {
+      "id": "MED-05",
+      "fichier": "chapters/G01/G01_c.html",
+      "texte": "Les trois premiers sont communs à toute méningite ; les trois derniers dépendent du contexte",
+      "question": "Le tableau comporte sept lignes, dont une procalcitonine entre les groupes. Préciser sa place et vérifier la portée de communs à toute méningite ; nombres inchangés."
+    },
+    {
+      "id": "MED-06",
+      "fichier": "chapters/G01/G01_b.html",
+      "texte": "la doxycycline est autorisée quel que soit l’âge de l’enfant",
+      "question": "Le verbe autorisée paraît réglementaire, alors que la fenêtre attribue ce choix à une recommandation. Vérifier l’information professionnelle suisse et distinguer recommandation/autorisation sans simple retouche linguistique."
+    },
+    {
+      "id": "MED-07",
+      "fichier": "chapters/G01/G01_b.html",
+      "texte": "méningocoque (concentration minimale inhibitrice de la ceftriaxone ≤ 0,125)",
+      "question": "Unité absente après 0,125, également dans les critères pharmacologiques. Aucune unité inventée."
+    }
+  ],
+  "suite": "Relire les deltas MED avant toute intégration ; réserves médicales à arbitrer par le médecin.",
+  "publication": "aucune ; ni push ni merge ni release"
+}
