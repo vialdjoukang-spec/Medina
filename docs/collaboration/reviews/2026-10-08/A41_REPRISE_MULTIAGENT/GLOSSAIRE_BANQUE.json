@@ -1,0 +1,289 @@
+{
+  "chapter": "A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)",
+  "author": "Codex root",
+  "state": "proposition_corrigee_non_injectee",
+  "written_at_utc": "2026-10-08T11:56:51.338758+00:00",
+  "cross_review_closed": false,
+  "owned_files": [
+    "glossary/a41.py",
+    "chapters/A41/A41_justifications.json"
+  ],
+  "observations": [
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-27",
+      "proposed": true,
+      "change": "Bose limité au modèle murin dexaméthasone deux semaines ; APROCCHSS clinique ajouté pour hyperglycémie du traitement actif."
+    },
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-28",
+      "proposed": true,
+      "change": "Modèle animal de choc hémorragique explicité ; prophylaxie 2026 conditionnelle/modérée et risque digestif précisé."
+    },
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-29",
+      "proposed": true,
+      "change": "Chiffres Mermel, Cheng, Lee ajoutés avec populations et limites."
+    },
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-30",
+      "proposed": true,
+      "change": "Sources SSC spécifiques aux énoncés ; notices suisses remplacent DailyMed ; WHO non relue HTTP403 retirée."
+    },
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-31",
+      "proposed": true,
+      "change": "Nom original Sepsis-related ajouté à SOFA, distinction score/définition."
+    },
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-32",
+      "proposed": true,
+      "change": "Deux C séparés dans APROCCHSS ; and/for hors découpage."
+    }
+  ],
+  "additional_changes": [
+    "Définition Sepsis-3 causale harmonisée.",
+    "Quatre justifications additionnelles proposées par auteurs : solutés, événements rythmiques, protocole historique, retour veineux.",
+    "SSC global gardé à sa signification de Société suisse de cardiologie ; nom Surviving Sepsis Campaign développé dans A41.",
+    "Douze nouvelles clés nécessaires sans collision dans G runtime : A48.3, ARISE, AUC, BLSE, EAU, ESE, PBP, PCT, ProCESS, ProMISe, SARM, XueBiJing. HLA-DR déjà défini via une boucle dans glossary/m06.py est réutilisé, sans redéfinition.",
+    "Gel final : 59 définitions A41, 36 nouvelles sans collision avec 1350 clés runtime. Scores et essais développés avec leurs limites ; DC/PVC/CaO₂/DO₂ du Pareto définis. Mot XML retiré du cours par son auteur, sans transformer un résumé lu en texte intégral.",
+    "Précontrôle du texte compilé : titre de référence DeBacker2010, SOAPII développé en De Backer et coll., 2010 : noradrénaline et dopamine ; lien primaire et contenu clinique inchangés.",
+    "Deuxième occurrence du nom SOAPII développée dans le paragraphe de justification : essai de De Backer et coll. (2010). Aucun chiffre, résultat, recommandation ou lien modifié."
+  ],
+  "source_checks": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8328734/",
+      "cache": "/workspace/medina-env/reprise-a41/sources/mermel1993.json",
+      "sha256": "26617b9f1f888cb0ab44d31d192d427d19e8de170d411903819a4d428040ff7f",
+      "read_scope": "Résumé primaire : 829 paires ; 8,7 contre 2,7 mL ; 92 % contre 69 % ; estimation environ 3 %/mL."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29490185/",
+      "cache": "/workspace/medina-env/reprise-a41/sources/aprocchss.raw",
+      "sha256": "1a90476d5a688bddca2034098b62e55feb085ad1bce69375059d841c68ff9a11",
+      "read_scope": "Résumé primaire : effectif 1241, mortalité J90 43,0 % contre 49,1 % ; sigle relu selon le découpage demandé par audit externe."
+    },
+    {
+      "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+      "cache": "/workspace/medina-env/reprise-a41/sources/ssc2026.primary.html",
+      "sha256": "6266900db8ffb882bff477792023b20f24ece8387bbff854062b5b8b2788bcd1",
+      "read_scope": "Énoncés officiels 7/25/26/44/49/53/86/87/92, forces/certitudes et remarques lus, 129 cartes dans capture actuelle ; pas de source moléculaire extrapolée."
+    },
+    {
+      "cache": "/workspace/medina-env/reprise-a41/sources/bank_primary_abstracts.json",
+      "sha256": "5ec071eb5b433e9451a79c933a5a2e8a19e46a219fc765941d43c4583cd161a7",
+      "read_scope": "Résumés primaires 27754788/4278107/22820644/10912459/10947163 entièrement lus ; modèles animaux, tissu humain ex vivo et limites distingués."
+    },
+    {
+      "cache": "/workspace/medina-env/reprise-a41/sources/albios_registry.json",
+      "sha256": "53111ee8f32b0121dc02f5da86157a2e318c53116ada1f4da0a6ce7cba0aa72e",
+      "read_scope": "Titre bref et officiel du registre ClinicalTrials.gov réellement lus ; uniquement développement du nom, pas substitution aux résultats de publication."
+    },
+    {
+      "cache": "/workspace/medina-env/reprise-a41/sources/arise_registry.json",
+      "sha256": "5602f10f74216b73e809a7949ff6ece0de5367c95344bab25af7e8c147de2f44",
+      "read_scope": "Titre bref et officiel du registre ClinicalTrials.gov réellement lus ; uniquement développement du nom, pas substitution aux résultats de publication."
+    },
+    {
+      "cache": "/workspace/medina-env/reprise-a41/sources/basics_registry.json",
+      "sha256": "3c88a3ce5843cf1ff6811a1b18501a68d611cd014169a4bc2c1df23a449956f9",
+      "read_scope": "Titre bref et officiel du registre ClinicalTrials.gov réellement lus ; uniquement développement du nom, pas substitution aux résultats de publication."
+    },
+    {
+      "cache": "/workspace/medina-env/reprise-a41/sources/plus_registry.json",
+      "sha256": "7dae23dfcee52245341a50615cdc19f896d2ecedb4b539c2550705aefba8d3a9",
+      "read_scope": "Titre bref et officiel du registre ClinicalTrials.gov réellement lus ; uniquement développement du nom, pas substitution aux résultats de publication."
+    },
+    {
+      "cache": "/workspace/medina-env/reprise-a41/sources/process_registry.json",
+      "sha256": "503b58c374c8c4ca901a9fbf31b1867994b90799ca8de64edf9939f55bd88725",
+      "read_scope": "Titre bref et officiel du registre ClinicalTrials.gov réellement lus ; uniquement développement du nom, pas substitution aux résultats de publication."
+    },
+    {
+      "cache": "/workspace/medina-env/reprise-a41/sources/saps_registry.json",
+      "sha256": "9f30f2b1277caf4c955bb97e310c69c893e60937dd15b3219f6a330af969ae00",
+      "read_scope": "Titre bref et officiel du registre ClinicalTrials.gov réellement lus ; uniquement développement du nom, pas substitution aux résultats de publication."
+    },
+    {
+      "cache": "/workspace/medina-env/reprise-a41/sources/smart_registry.json",
+      "sha256": "a6a6a5549684944e0a7ce585b26c7009c4dcff8eb3f75b50f399ac271f0a124d",
+      "read_scope": "Titre bref et officiel du registre ClinicalTrials.gov réellement lus ; uniquement développement du nom, pas substitution aux résultats de publication."
+    }
+  ],
+  "local_compilation": {
+    "code": "A41",
+    "course": {
+      "code": "A41",
+      "title": "Sepsis et choc septique de l’adulte"
+    },
+    "entries": 14,
+    "windows": 14,
+    "targets": 14,
+    "matches": [
+      {
+        "file": "A41_a.html",
+        "anchor": "a41-3",
+        "text": "Cholestase inflammatoire, hypoperfusion",
+        "id": "a41-j-cholestase",
+        "start": 36126,
+        "end": 36165
+      },
+      {
+        "file": "A41_a.html",
+        "anchor": "a41-4",
+        "text": "Sélection de germes résistants",
+        "id": "a41-j-selection",
+        "start": 49406,
+        "end": 49436
+      },
+      {
+        "file": "A41_b.html",
+        "anchor": "a41-9",
+        "text": "Le stress et l’hydrocortisone élèvent la glycémie",
+        "id": "a41-j-glycemie",
+        "start": 48030,
+        "end": 48079
+      },
+      {
+        "file": "A41_b.html",
+        "anchor": "a41-9",
+        "text": "Le choc réduit la perfusion de la muqueuse gastrique",
+        "id": "a41-j-muqueuse-gastrique",
+        "start": 48665,
+        "end": 48717
+      },
+      {
+        "file": "A41_c.html",
+        "anchor": "a41-e-2",
+        "text": "Le rendement dépend d’un traitement antibiotique déjà reçu et du volume de prélèvement",
+        "id": "a41-j-rendement-culture",
+        "start": 9823,
+        "end": 9909
+      },
+      {
+        "file": "A41_c.html",
+        "anchor": "a41-e-3",
+        "text": "la pression partielle artérielle en oxygène et le pH",
+        "id": "a41-j-gazometrie",
+        "start": 14353,
+        "end": 14405
+      },
+      {
+        "file": "A41_c.html",
+        "anchor": "a41-s-2",
+        "text": "Ses jonctions et son glycocalyx contribuent à la barrière",
+        "id": "a41-j-glycocalyx",
+        "start": 31204,
+        "end": 31261
+      },
+      {
+        "file": "A41_c.html",
+        "anchor": "a41-s-2",
+        "text": "lorsque le cœur répond à une augmentation de remplissage",
+        "id": "a41-j-starling",
+        "start": 32334,
+        "end": 32390
+      },
+      {
+        "file": "A41_d.html",
+        "anchor": "a41-p-3",
+        "text": "Le rythme, la fréquence, l’ischémie des extrémités et le point de perfusion sont surveillés.",
+        "id": "a41-j-rythme",
+        "start": 14560,
+        "end": 14652
+      },
+      {
+        "file": "A41_d.html",
+        "anchor": "a41-p-3",
+        "text": "l’accumulation peut favoriser une neurotoxicité",
+        "id": "a41-j-renal-antibiotique",
+        "start": 16097,
+        "end": 16144
+      },
+      {
+        "file": "A41_b.html",
+        "anchor": "a41-9",
+        "text": "Le chlorure de sodium à 0,9 % expose à l’acidose hyperchlorémique et à une baisse de perfusion rénale.",
+        "id": "a41-j-solutes",
+        "start": 35134,
+        "end": 35236
+      },
+      {
+        "file": "A41_b.html",
+        "anchor": "a41-9",
+        "text": "Dans SOAP II (2010 ; 1 679 patients en choc), les arythmies étaient plus fréquentes sous dopamine : 24,1 % contre 12,4 %.",
+        "id": "a41-j-vasopresseur-arythmies",
+        "start": 39229,
+        "end": 39350
+      },
+      {
+        "file": "A41_b.html",
+        "anchor": "a41-9",
+        "text": "Les essais ProCESS (2014), ARISE (2014) et ProMISe (2015) n’ont pas montré de gain de survie avec l’ancienne réanimation protocolisée.",
+        "id": "a41-j-perfusion-dynamique",
+        "start": 37497,
+        "end": 37631
+      },
+      {
+        "file": "A41_a.html",
+        "anchor": "a41-3",
+        "text": "La constriction veineuse mobilise du sang vers le cœur et peut augmenter la précharge.",
+        "id": "a41-j-retour-veineux",
+        "start": 40703,
+        "end": 40789
+      }
+    ],
+    "exhaustive_review": false
+  },
+  "remaining": [
+    "Contrelecture indépendante en cours par sentinelle réception après recherche normes gaz.",
+    "Vérification technique sur candidat figé après fin des auteurs.",
+    "Contre-audit externe Claude au SHA de la remise avant injection A41."
+  ],
+  "glossary_checks": {
+    "keys_total_a41": 59,
+    "new_keys": [
+      "A32.7",
+      "A48.3",
+      "ALBIOS",
+      "ARISE",
+      "AUC",
+      "B37.7",
+      "BLSE",
+      "BaSICS",
+      "CAPITA",
+      "CHUV",
+      "CaO₂",
+      "DC",
+      "DO₂",
+      "EAU",
+      "ESE",
+      "Garcia-Alvarez",
+      "MEWS",
+      "NEWS",
+      "NEWS2",
+      "PAI-1",
+      "PBP",
+      "PCT",
+      "PCV13",
+      "PLUS",
+      "PVC",
+      "Plasma-Lyte",
+      "ProCESS",
+      "ProMISe",
+      "SAFE",
+      "SAPS",
+      "SARM",
+      "SCCM",
+      "SMART",
+      "USZ",
+      "XueBiJing",
+      "dL"
+    ],
+    "new_keys_count": 36,
+    "runtime_global_keys_before": 1350,
+    "collisions": {},
+    "glossary_sha256": "f7d9e45c7df4b04d4b746989fbf3b7808dfec9712415fef0de51533affc2d69a",
+    "frozen_at_utc": "2026-10-08T12:42:42.547364+00:00"
+  },
+  "bank_sha256": "c47273d990cbbc4e68a1f0d0620e4f17c6be96f507a1747e1866699a56c18822"
+}

@@ -1,0 +1,988 @@
+{
+  "schema_version": 1,
+  "chapter": "A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)",
+  "reviewer": "/root/test_allocation",
+  "review_role": "Contrelecture indépendante Pathologie1 ; auteur distinct de a/pop1 et des Pareto pop2. Auteur b/pop_pa, donc ces fichiers sont seulement contrôlés en cohérence.",
+  "written_at_utc": "2026-10-08T12:18:08.021450+00:00",
+  "base_commit": "db06b1fae3c27e93050850df44c3eb23fcd60164",
+  "audited_base": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
+  "status": "INDEPENDENT_P1_COMPONENTS_SUPPORTED_NOT_CLAUDE_CLOSED",
+  "reviewed_file_inventory": {
+    "A41_a.html": {
+      "path": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_a.html",
+      "sha256": "34a54b45c140cfb352add0adf9feed32c39fc34359f03fff0f58221256e650d1",
+      "bytes": 79837,
+      "independence": "independent_author",
+      "previous_reviewed_sha256": "6d8a376ff807e05ae09837fa47e937a5cc83bc8e7db6471cb366a9bfdfc37743",
+      "targeted_delta_review_at_utc": "2026-10-08T13:01:16.001108+00:00"
+    },
+    "A41_pop1.html": {
+      "path": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_pop1.html",
+      "sha256": "cdb1671a68f9f87d78b468c57b958cf894ada46439cd05b29d2b3e2db2645cce",
+      "bytes": 44350,
+      "independence": "independent_author",
+      "previous_reviewed_sha256": "cee042353cb59c71dae361e59eaefccd7c3fb089f7450757c166bc7bf146778e",
+      "targeted_delta_review_at_utc": "2026-10-08T13:01:16.001108+00:00"
+    },
+    "A41_pop2.html": {
+      "path": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_pop2.html",
+      "sha256": "2e11143b01de68f3628ca9630fe0c674cf123578cf588b94144a75895a2502b1",
+      "bytes": 56154,
+      "independence": "independent_author"
+    },
+    "A41_b.html": {
+      "path": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_b.html",
+      "sha256": "f984a8a7d5ec710460aa248823ae633f77e4f6a8876884982ccb53d6429f4c48",
+      "bytes": 94657,
+      "independence": "own_author_coherence_only"
+    },
+    "A41_pop_pa.html": {
+      "path": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_pop_pa.html",
+      "sha256": "e9b464ba7bf3f371e64cde359906ded7037165211cf8b5d77e9de533d241a13f",
+      "bytes": 70605,
+      "independence": "own_author_coherence_only"
+    }
+  },
+  "scope": "Lecture complète a/pop1 aux empreintes figées ;27IDs P1 parcourus. Dépendances Pareto def/physio/diag lues sur pop2 figé ; pas certification des monographies ni des autres onglets. Mes7dépendances pop_pa exclues de l’avis indépendant. Aucun changement source/P1/registre/banque/Git.",
+  "counts": {
+    "original_ids": 27,
+    "ids_with_independently_supported_components": 23,
+    "fully_independent_ids_in_this_scope": 20,
+    "partially_independent_ids_with_own_popup_dependency": 3,
+    "wholly_own_author_ids_excluded_from_independent_opinion": 4,
+    "own_popup_dependency_components_requiring_other_reviewer": 7,
+    "residual_original_observations_on_independently_reviewed_components": 0,
+    "new_minor_reservations_in_p1_sent_to_author_then_corrected": 2,
+    "claude_cross_review_closed": 0
+  },
+  "observations": [
+    {
+      "observation_id": "audit_pathologie_1-01",
+      "gravity": "mineure",
+      "original_repere": "a41-1, h3 1.2, 2e paragraphe",
+      "status": "independent_correction_supported",
+      "reviewed_files": [
+        "A41_a.html",
+        "A41_pop1.html"
+      ],
+      "finding": "Seuil SOFA justifié par sa valeur pronostique et seuils consensuels ; retrait de l’absolutisation.",
+      "verified_source_ids": [
+        "Sepsis3"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "Les variables et les seuils du score SOFA ont été fixés par consensus."
+    },
+    {
+      "observation_id": "audit_pathologie_1-02",
+      "gravity": "mineure",
+      "original_repere": "a41-1, h3 1.3, paragraphe de lecture du tableau",
+      "status": "independent_correction_supported",
+      "reviewed_files": [
+        "A41_a.html"
+      ],
+      "finding": "Glasgow14 et PAM58 rapportent chacun1 point : exactement2, puis total7 après résultats. Critère ≥2 respecté.",
+      "verified_source_ids": [
+        "Sepsis3"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "sa confusion et son hypotension atteignent exactement le seuil de 2 points"
+    },
+    {
+      "observation_id": "audit_pathologie_1-03",
+      "gravity": "mineure",
+      "original_repere": "a41-1, h3 1.5, paragraphe de codage",
+      "status": "independent_correction_supported",
+      "reviewed_files": [
+        "A41_a.html"
+      ],
+      "finding": "A41 comprend les sous-codes d’agent, dont A41.51 pour E.coli ; R57.2 est complémentaire si choc documenté.",
+      "verified_source_ids": [
+        "CIM10GM2024"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "Un agent précisé ne fait donc pas systématiquement sortir de A41."
+    },
+    {
+      "observation_id": "audit_pathologie_1-04",
+      "gravity": "mineure",
+      "original_repere": "a41-1, h3 1.5 ; pareto-a41-def",
+      "status": "independent_correction_supported",
+      "reviewed_files": [
+        "A41_a.html",
+        "A41_pop2.html"
+      ],
+      "finding": "A48.3 identifié ; code complémentaire d’agent selon règles applicables, sans obligation inventée dans sa notice. Même correction dans Pareto.",
+      "verified_source_ids": [
+        "CIM10GM2024"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "Un code complémentaire d’agent peut être ajouté selon les règles de codage en vigueur"
+    },
+    {
+      "observation_id": "audit_pathologie_1-05",
+      "gravity": "redactionnelle",
+      "original_repere": "a41-1, h3 1.5 ; a41-0, h3 0.1 à 0.3 ; a41-3 introduction ; a41-5 h3 5.3",
+      "status": "independent_correction_supported",
+      "reviewed_files": [
+        "A41_a.html"
+      ],
+      "finding": "Annonces de fabrication ciblées remplacées par problèmes et décisions cliniques dans les repères cités.",
+      "verified_source_ids": [
+        "STYLE_REDACTION"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "La recherche d’une défaillance et du foyer se mène en parallèle du traitement."
+    },
+    {
+      "observation_id": "audit_pathologie_1-06",
+      "gravity": "redactionnelle",
+      "original_repere": "a41-1 (tableau 1.3), a41-2 (tableau 2.2), a41-3 (tableau 3.6), a41-4 (tableaux 4.2 et 4.3), a41-6 (tableau 6.2) ; fenêtres a41-news2 et a41-sofa",
+      "status": "independent_components_supported_own_popup_pending_other_reviewer",
+      "reviewed_files": [
+        "A41_a.html",
+        "A41_pop1.html"
+      ],
+      "finding": "Introductions des six tableaux de a et de SOFA formulées comme problèmes cliniques ; paragraphes de lecture conservés. NEWS2 se trouve dans mon pop_pa : vérification de cohérence seulement.",
+      "verified_source_ids": [
+        "STYLE_REDACTION"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "Un signe clinique oriente vers une fonction d’organe, mais il faut encore en établir la cause et la gravité.",
+      "own_author_component_excluded": "a41-news2"
+    },
+    {
+      "observation_id": "audit_pathologie_1-07",
+      "gravity": "redactionnelle",
+      "original_repere": "a41-1 (encadré final), a41-2 (encadré final 2.4), a41-4 (encadré final 4.5)",
+      "status": "independent_correction_supported",
+      "reviewed_files": [
+        "A41_a.html"
+      ],
+      "finding": "Synthèses finales raccourcies et orientées vers les implications ; chiffres détaillés conservés dans les sous-parties.",
+      "verified_source_ids": [
+        "STYLE_REDACTION"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "Le codage précise ensuite l’agent et le choc documentés."
+    },
+    {
+      "observation_id": "audit_pathologie_1-08",
+      "gravity": "mineure",
+      "original_repere": "a41-2, tableau 2.2, ligne « Séjours avec choc septique »",
+      "status": "independent_correction_supported",
+      "reviewed_files": [
+        "A41_a.html"
+      ],
+      "finding": "6098/21001=29,037665% :29,0% affiché avec note transparente du29,3% de la source. Aucun autre dénominateur inventé.",
+      "verified_source_ids": [
+        "Swiss2025"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "Le rapport affiche 29,3 % de chocs ; le calcul sur les 21 001 séjours affichés donne 29,0 %."
+    },
+    {
+      "observation_id": "audit_pathologie_1-09",
+      "gravity": "mineure",
+      "original_repere": "a41-2, h3 2.4 ; fenêtre a41-postsepsis ; pareto-a41-def",
+      "status": "independent_components_supported_own_popup_pending_other_reviewer",
+      "reviewed_files": [
+        "A41_a.html",
+        "A41_pop2.html"
+      ],
+      "finding": "Mortalité à un an cumulative explicitement hospitaliers compris ; Pareto sépare la revue2018. Ma fenêtre postsepsis reste hors audit indépendant de cet auteur.",
+      "verified_source_ids": [
+        "Swiss2025",
+        "Prescott2018"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "Ce chiffre est cumulatif : il comprend les 22,3 % de décès intrahospitaliers.",
+      "own_author_component_excluded": "a41-postsepsis"
+    },
+    {
+      "observation_id": "audit_pathologie_1-10",
+      "gravity": "mineure",
+      "original_repere": "a41-3, h3 3.3 (encadré) et encadré « Corrélation mécanisme → traitement » ; fenêtre a41-pam (« Déterminants »)",
+      "status": "independent_components_supported_own_popup_pending_other_reviewer",
+      "reviewed_files": [
+        "A41_a.html",
+        "A41_pop1.html",
+        "A41_pop2.html"
+      ],
+      "finding": "Remplissage : hypovolémie absolue et part relative. Noradrénaline : tonus artériolaire et veineux, précharge possible, étude observationnelle105patients et limites. Dépendance PAM dans mon pop_pa exclue de l’avis indépendant.",
+      "verified_source_ids": [
+        "Hamzaoui2010",
+        "Surviving2021"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "La noradrénaline restaure le tonus artériolaire et veineux.",
+      "own_author_component_excluded": "a41-pam"
+    },
+    {
+      "observation_id": "audit_pathologie_1-11",
+      "gravity": "mineure",
+      "original_repere": "a41-3, h3 3.5, encadré",
+      "status": "independent_correction_supported",
+      "reviewed_files": [
+        "A41_a.html"
+      ],
+      "finding": "Thrombopénie contribue au SOFA mais attribution à l’infection non automatique ; causes concurrentes précisées.",
+      "verified_source_ids": [
+        "Sepsis3"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "Une thrombopénie nouvelle contribue au score SOFA, mais n’est pas automatiquement attribuable à l’infection."
+    },
+    {
+      "observation_id": "audit_pathologie_1-12",
+      "gravity": "mineure",
+      "original_repere": "a41-3, h3 3.7 ; a41-5 h3 5.3 (carte Mme R.)",
+      "status": "independent_correction_supported",
+      "reviewed_files": [
+        "A41_a.html"
+      ],
+      "finding": "Âge et prednisone ont pu atténuer la fièvre ; causalité individuelle non déclarée démontrée.",
+      "verified_source_ids": [
+        "Sepsis3"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "La prednisone et l’âge ont pu atténuer la fièvre"
+    },
+    {
+      "observation_id": "audit_pathologie_1-13",
+      "gravity": "mineure",
+      "original_repere": "a41-4, h3 4.1 et encadrés 4.1/4.5 ; pareto-a41-physio",
+      "status": "independent_correction_supported",
+      "reviewed_files": [
+        "A41_a.html",
+        "A41_pop2.html"
+      ],
+      "finding": "Population BALANCE sélectionnée et exclusions nommées dans corps et Pareto ; proportions non généralisées à toutes les bactériémies.",
+      "verified_source_ids": [
+        "BALANCE2025",
+        "SOAP2006"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "l’immunodépression sévère, les foyers exigeant un traitement prolongé"
+    },
+    {
+      "observation_id": "audit_pathologie_1-14",
+      "gravity": "mineure",
+      "original_repere": "a41-4, h3 4.3, paragraphe après le tableau",
+      "status": "independent_correction_supported",
+      "reviewed_files": [
+        "A41_a.html",
+        "A41_pop1.html",
+        "A41_pop2.html"
+      ],
+      "finding": "Glucocorticoïdes actuels/récents, risque surrénalien non écarté, couverture adaptée à gravité et traitement reçu ; pas toute ancienne prescription. R3.1/Table8 effectivement relus.",
+      "verified_source_ids": [
+        "ESE2024"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "Elle ne s’applique pas automatiquement à toute ancienne prescription."
+    },
+    {
+      "observation_id": "audit_pathologie_1-15",
+      "gravity": "mineure",
+      "original_repere": "a41-4, h3 4.5, 2e paragraphe ; fenêtre a41-sign-focal",
+      "status": "independent_correction_supported",
+      "reviewed_files": [
+        "A41_a.html",
+        "A41_pop1.html",
+        "A41_pop2.html"
+      ],
+      "finding": "Décompression urgente du rein infecté obstrué : EAU forte ; délai général idéal6h conditionnel/très faible, aucune attente devant urgence chirurgicale.",
+      "verified_source_ids": [
+        "EAU",
+        "Surviving2026"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "Une obstruction urinaire infectée avec sepsis impose une dérivation des urines en urgence."
+    },
+    {
+      "observation_id": "audit_pathologie_1-16",
+      "gravity": "mineure",
+      "original_repere": "a41-5, h3 5.3, carte « Patient splénectomisé » ; a41-6 h3 6.5",
+      "status": "independent_correction_supported",
+      "reviewed_files": [
+        "A41_a.html"
+      ],
+      "finding": "Cultures sans délai si elles ne retardent pas la dose indispensable ; antibiotique immédiat avant imagerie, purpura extensif n’attend pas le prélèvement.",
+      "verified_source_ids": [
+        "Surviving2026"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "Si un purpura s’étend, l’antibiotique n’attend pas le prélèvement."
+    },
+    {
+      "observation_id": "audit_pathologie_1-17",
+      "gravity": "redactionnelle",
+      "original_repere": "a41-6, h3 6.4, encadré ; h3 6.2 (« après 65 ans »)",
+      "status": "independent_correction_supported",
+      "reviewed_files": [
+        "A41_a.html",
+        "A41_pop2.html"
+      ],
+      "finding": "Vasopresseur simultané au remplissage au cas par cas pour choc instable ; seuil d’âge dès65ans. Grades MAP conditionnel/faible exacts.",
+      "verified_source_ids": [
+        "Surviving2026"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "peut justifier, au cas par cas, un vasopresseur simultané au remplissage"
+    },
+    {
+      "observation_id": "audit_pathologie_1-18",
+      "gravity": "redactionnelle",
+      "original_repere": "a41-1 h3 1.2 (mot vert)",
+      "status": "independent_correction_supported",
+      "reviewed_files": [
+        "A41_a.html",
+        "A41_pop1.html"
+      ],
+      "finding": "SOFA cote six fonctions et non six défaillances ; libellé du mot vert corrigé.",
+      "verified_source_ids": [
+        "Sepsis3"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "score SOFA (six fonctions d’organe)"
+    },
+    {
+      "observation_id": "audit_pathologie_1-19",
+      "gravity": "redactionnelle",
+      "original_repere": "a41-4 h3 4.4, encadré « Piège » ; a41-1 h3 1.5",
+      "status": "independent_correction_supported",
+      "reviewed_files": [
+        "A41_a.html"
+      ],
+      "finding": "MDR, anaérobies et antifongiques séparés en paragraphes/phrases distincts ; certitudes très faible/très faible/faible conservées.",
+      "verified_source_ids": [
+        "STYLE_REDACTION",
+        "Surviving2026"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "Ces deux recommandations sont conditionnelles, avec une certitude très faible."
+    },
+    {
+      "observation_id": "audit_pathologie_1-20",
+      "gravity": "redactionnelle",
+      "original_repere": "a41-4 h3 4.2",
+      "status": "independent_correction_supported",
+      "reviewed_files": [
+        "A41_a.html"
+      ],
+      "finding": "Saureus30% et MRSA14% partagent le dénominateur des patients à culture positive SOAP ; ambiguïté14% des Saureus levée.",
+      "verified_source_ids": [
+        "SOAP2006"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "Un staphylocoque résistant à la méticilline était présent chez 14 % des patients à culture positive"
+    },
+    {
+      "observation_id": "audit_pathologie_1-21",
+      "gravity": "redactionnelle",
+      "original_repere": "ligne 2, div.status de l’en-tête",
+      "status": "independent_correction_supported",
+      "reviewed_files": [
+        "A41_a.html"
+      ],
+      "finding": "En-tête limité aux sources/dates ; historique de fabrication et réserve de chantier retirés.",
+      "verified_source_ids": [
+        "STYLE_REDACTION"
+      ],
+      "cross_review_closed_by_claude": false
+    },
+    {
+      "observation_id": "audit_pathologie_1-22",
+      "gravity": "mineure",
+      "original_repere": "fenêtre a41-cortico, rubrique « Signes d’alerte »",
+      "status": "own_author_excluded_from_independent_review",
+      "reviewed_files": [
+        "A41_pop_pa.html"
+      ],
+      "finding": "Fenêtre cortico écrite par moi : aldostérone préservée et hyperkaliémie non attendue proposées, à valider indépendamment par sentinelle_medicale/Claude.",
+      "verified_source_ids": [
+        "ESE2024"
+      ],
+      "cross_review_closed_by_claude": false
+    },
+    {
+      "observation_id": "audit_pathologie_1-23",
+      "gravity": "mineure",
+      "original_repere": "fenêtre a41-pam, rubrique « Piège »",
+      "status": "own_author_excluded_from_independent_review",
+      "reviewed_files": [
+        "A41_pop_pa.html"
+      ],
+      "finding": "Fenêtre PAM écrite par moi : sous-groupe SEPSISPAM, absence de bénéfice de mortalité et risque FA proposés, à valider par autre auteur.",
+      "verified_source_ids": [
+        "Surviving2021"
+      ],
+      "cross_review_closed_by_claude": false
+    },
+    {
+      "observation_id": "audit_pathologie_1-24",
+      "gravity": "mineure",
+      "original_repere": "fenêtre a41-bacteriemie, rubrique « Conséquence pratique »",
+      "status": "own_author_excluded_from_independent_review",
+      "reviewed_files": [
+        "A41_pop_pa.html"
+      ],
+      "finding": "Fenêtre bactériémie écrite par moi : BALANCE non-infériorité7vs14 dans population sélectionnée proposée, à valider par autre auteur.",
+      "verified_source_ids": [
+        "BALANCE2025"
+      ],
+      "cross_review_closed_by_claude": false
+    },
+    {
+      "observation_id": "audit_pathologie_1-25",
+      "gravity": "mineure",
+      "original_repere": "fenêtre a41-fasciite, rubrique « Recommandations »",
+      "status": "own_author_excluded_from_independent_review",
+      "reviewed_files": [
+        "A41_pop_pa.html"
+      ],
+      "finding": "Fenêtre fasciite écrite par moi : exploration immédiate et délai général6h non cible d’attente proposés, à valider par autre auteur.",
+      "verified_source_ids": [
+        "Surviving2026"
+      ],
+      "cross_review_closed_by_claude": false
+    },
+    {
+      "observation_id": "audit_pathologie_1-26",
+      "gravity": "mineure",
+      "original_repere": "fenêtre a41-lactate, rubrique « Mode d’emploi »",
+      "status": "independent_correction_supported",
+      "reviewed_files": [
+        "A41_pop1.html"
+      ],
+      "finding": "Mesures répétées pour sepsis avec lactate élevé OU choc septique, recommandation conditionnelle/faible exactement restituée.",
+      "verified_source_ids": [
+        "Surviving2026"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "Elle suggère ensuite des mesures répétées en cas de sepsis avec lactate élevé ou de choc septique"
+    },
+    {
+      "observation_id": "audit_pathologie_1-27",
+      "gravity": "redactionnelle",
+      "original_repere": "pareto-a41-def, dernier point",
+      "status": "independent_correction_supported",
+      "reviewed_files": [
+        "A41_pop2.html"
+      ],
+      "finding": "Dernier point Pareto sépare décès cumulatifs suisses et réhospitalisations90jours de la revue Prescott/Angus2018. Résumé original confirme40%, infection11,9% et insuffisancecardiaque5,5% ; études originales de la revue non revues.",
+      "verified_source_ids": [
+        "Swiss2025",
+        "Prescott2018"
+      ],
+      "cross_review_closed_by_claude": false,
+      "exact_text_after_html_normalization": "Les quelque 40 % de réhospitalisations à 90 jours rapportés par la revue JAMA de 2018"
+    }
+  ],
+  "additional_p1_reservations": [
+    {
+      "id": "P1-counter-causal-summary",
+      "locations": [
+        "a41-1.1 key",
+        "a41-1.4 key"
+      ],
+      "status": "author_corrected_verified_at_frozen_hash",
+      "finding": "Une défaillance isolée ne suffit pas à définir formellement le sepsis ; causalité de réponse dérégulée et hausse aiguë SOFA≥2 rendues explicites. Clé1.4 indique SOFA quantifie la dysfonction recherchée, sans fièvre/bactériémie/qSOFA diagnostiques.",
+      "source_ids": [
+        "Sepsis3"
+      ]
+    },
+    {
+      "id": "P1-counter-causal-popup",
+      "location": "a41-sepsis3 début",
+      "status": "author_corrected_verified_at_frozen_hash",
+      "finding": "Formulation liéeàinfection remplacée par causéeparune réponse dérégulée de l’hôte, opérationnalisation SOFA≥2 ajoutée.",
+      "source_ids": [
+        "Sepsis3"
+      ]
+    }
+  ],
+  "case_arithmetic": {
+    "weight_kg": 60,
+    "height_m": 1.62,
+    "bmi_calculated": 22.86236854138088,
+    "initial_bp_mmhg": [
+      82,
+      46
+    ],
+    "approximate_map_from_bp": 58.0,
+    "gcs_components": [
+      4,
+      4,
+      6
+    ],
+    "gcs_total": 14,
+    "qsofa_components": [
+      1,
+      1,
+      1
+    ],
+    "qsofa_total": 3,
+    "news2_components": {
+      "respiratory_rate28": 3,
+      "spo2_93_room_air": 2,
+      "supplemental_oxygen": 0,
+      "systolic82": 3,
+      "pulse118": 2,
+      "new_confusion": 3,
+      "temperature37_6": 0
+    },
+    "news2_total": 13,
+    "sofa_components": {
+      "respiratory_PaO2_66_FiO2_0_21": 1,
+      "platelets96": 2,
+      "bilirubin18": 0,
+      "map58_no_pressor": 1,
+      "gcs14": 1,
+      "creatinine186": 2
+    },
+    "sofa_total": 7,
+    "PaO2_FiO2_calculated": 314.2857142857143,
+    "creatinine_ratio_to_baseline78": 2.3846153846153846,
+    "initial_30mlkg_volume_ml": 1800,
+    "shock_coherence": "À40minutes PAM60 mais recoloration4s, marbrures et confusion persistent après1L : vasopresseur décidé sur hypoperfusion, au cas par cas, malgré plage initiale âgée60–65. À2h PAM64 sous noradrénaline ne démontre pas seuil formel Sepsis-3≥65 ; auteurP2 a corrigé cette ambiguïté à la demande du relecteurP1. Cas gardé aux mêmes données."
+  },
+  "additional_cultures_read_only_review": {
+    "observation_id": "audit_examens_sciences_pharmacologie-02",
+    "file": "A41_pop1.html",
+    "template": "a41-cultures",
+    "status": "independent_extension_supported",
+    "supported_points": [
+      "Au moins2paires adultes aérobie/anaérobie, ponctions périphériques distinctes hors suspicion de cathéter, sans retard de dose indispensable. Le nombre2est une explicitation clinique, pas un nombre attribué à card7SCCM.",
+      "CHUV adulteV13 :8–10mL/flacon, ne pas dépasser10mL, aucune transposition pédiatrique.",
+      "Lee :629épisodes sélectionnés,2cultures89,7%,3cultures98,2%, sans garantie individuelle ni généralisation.",
+      "Cheng :325adultes sélectionnés, positifs31,4%avant/19,4%après, médiane70min ; le19,4%est un rendement et non la sensibilité post-antibiotique.",
+      "IDSA2009 : cultures simultanées, volumes égaux, site/heure, même organisme, cathéter au moins2hplus précoce ; toutes les conditions interprétatives figurent."
+    ],
+    "source_ids": [
+      "CHUV13",
+      "Lee2007",
+      "Cheng2019",
+      "IDSA2009",
+      "Surviving2026"
+    ]
+  },
+  "primary_sources_actually_read": [
+    {
+      "source_id": "Sepsis3",
+      "title": "Singer et coll., Sepsis-3, JAMA2016",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4968574/",
+      "cache_actually_read": "/tmp/a41-p1-sepsis3.html",
+      "cache_sha256": "edb8cbcc8a47a01733aa9ba6acf7300bb2d77092b6c0a3999f38e98672adaa64",
+      "bytes": 294271,
+      "read_level": "full_text_targeted",
+      "read_scope": "Définition causale, Box3, Table1, Defining Organ Dysfunction et seuils consensuels."
+    },
+    {
+      "source_id": "CIM10GM2024",
+      "title": "BfArM ICD-10-GM2024",
+      "url": "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-a30-a49.htm",
+      "cache_actually_read": "/tmp/a41-p1-bfarm2024.html",
+      "cache_sha256": "36b6cbfee7ca50e6ed726440f9e95f8d383e603ade5af774f1c1e90d701c531c",
+      "bytes": 38216,
+      "read_level": "official_classification_targeted",
+      "read_scope": "A41, sous-codes et exclusions, A48.3. Pas validation des règles de facturation suisses."
+    },
+    {
+      "source_id": "Swiss2025",
+      "title": "Swiss Sepsis Report2025v25.1",
+      "url": "https://sepsis.ch/wp-content/uploads/2025/09/Swiss-Sepsis-Report-EN_.pdf",
+      "cache_actually_read": "/tmp/a41-p1-swissreport.pdf",
+      "cache_sha256": "1b1c2bb4d149dcdb7fbae83705641854a0bcab2495c10e90739dc65bc77f8afc",
+      "bytes": 1122079,
+      "read_level": "official_pdf_targeted",
+      "read_scope": "Texte pdftotext : pages6–7, §3.3.5 et légende Figure4 cumulative."
+    },
+    {
+      "source_id": "Surviving2026",
+      "title": "Surviving Sepsis Campaign2026, SCCM officielle",
+      "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+      "cache_actually_read": "/workspace/medina-env/reprise-a41/sources/ssc2026.primary.html",
+      "cache_sha256": "6266900db8ffb882bff477792023b20f24ece8387bbff854062b5b8b2788bcd1",
+      "bytes": 329772,
+      "read_level": "official_statements_targeted",
+      "read_scope": "Énoncés et remarques screening, cultures, bolus/vasopresseur concurrent, MAP65 et≥65ans, MDR/anaérobies/antifongiques, sourcecontrol, lactate ; cartes129 actuelles, publication23.03.2026."
+    },
+    {
+      "source_id": "Surviving2021",
+      "title": "Surviving Sepsis Campaign2021, Evans et coll.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/",
+      "cache_actually_read": "/workspace/medina-env/a41-pathologie2/PMC8486643.xml",
+      "cache_sha256": "d2be2ebc4667315e15db145476d6a3f6ece077ea0c738f858b134633b78065f6",
+      "bytes": 859043,
+      "read_level": "full_text_targeted",
+      "read_scope": "Rationale MAP/veines, fluides, ventilationPBW et contrôle glycémique."
+    },
+    {
+      "source_id": "ESE2024",
+      "title": "Beuschlein et coll., ESE/Endocrine Society2024",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11180513/fullTextXML",
+      "cache_actually_read": "/workspace/medina-env/a41-pathologie2/PMC11180513.xml",
+      "cache_sha256": "448be798a014648974d38939ae22b8fd8576acc9f81fec754b079352c77c2163",
+      "bytes": 300207,
+      "read_level": "full_text_targeted",
+      "read_scope": "R3.1/R3.2, Table8 stress et doses déjà reçues, aldostérone conservée."
+    },
+    {
+      "source_id": "Hamzaoui2010",
+      "title": "Hamzaoui et coll., norepinephrine preload, CriticalCare2010",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2945123/fullTextXML",
+      "cache_actually_read": "/workspace/medina-env/a41-pathologie2/PMC2945123.xml",
+      "cache_sha256": "0eafb5ffbaced218088d1343e0b6b23a78277c45f0e809b39bb495d253e2e4cf",
+      "bytes": 88354,
+      "read_level": "full_text_targeted",
+      "read_scope": "Introduction/résultats/discussion,105patients, capacité veineuse et précharge ; observation sans preuve de survie."
+    },
+    {
+      "source_id": "EAU",
+      "title": "EAU Urolithiasis, page actuelle consultée08.10.2026",
+      "url": "https://uroweb.org/guidelines/urolithiasis/chapter/guidelines",
+      "cache_actually_read": "/tmp/a41-p1-eau-urolithiasis.html",
+      "cache_sha256": "ca25624c3f752f2d17e17e7535f6fe6ddb7d3fd05ead138a6005bc0e2d644536",
+      "bytes": 1509556,
+      "read_level": "official_guideline_targeted",
+      "read_scope": "§3.4.2, sepsis/obstruction : décompression urgente par stent ou néphrostomie, recommandation forte."
+    },
+    {
+      "source_id": "BALANCE2025",
+      "title": "Daneman et coll., NEJM2025, PMID39565030",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:39565030%20AND%20SRC:MED&resultType=core&format=json",
+      "cache_actually_read": "/workspace/medina-env/a41-pathologie2/39565030.json",
+      "cache_sha256": "011cf691ae81ae8d3760b47186f86f9f3b34ebc717a3d336fe5f6838b870a6a4",
+      "bytes": 72909,
+      "read_level": "original_abstract",
+      "read_scope": "3608patients,55%ICU, exclusions Saureus/immunodépression sévère/foyers prolongés ; foyers42,2/18,8/13% et non-infériorité7vs14."
+    },
+    {
+      "source_id": "SOAP2006",
+      "title": "Vincent et coll., SOAP, CritCareMed2006, PMID16424713",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16424713/",
+      "cache_actually_read": "/tmp/a41-p1-abstracts.xml",
+      "cache_sha256": "a24e10677da3dfedf9382b2f3ebc1369bd698aee61e5c358560225a09f77e842",
+      "bytes": 98753,
+      "read_level": "original_abstract",
+      "read_scope": "Résumé original PubMed : cultures positives60%, Saureus30%, MRSA14% dans ce dénominateur ; contexte européen2002."
+    },
+    {
+      "source_id": "Tokuda2005",
+      "title": "Tokuda et coll., AmJMed2005, PMID16378800",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:16378800%20AND%20SRC:MED&resultType=core&format=json",
+      "cache_actually_read": "/workspace/medina-env/a41-pathologie2/16378800.json",
+      "cache_sha256": "ae466d955d5626c5c93b4cf673fc67b6384b996cb8cc2e82f7b1e75d8d101a9c",
+      "bytes": 5181,
+      "read_level": "original_abstract",
+      "read_scope": "526adultes fébriles,40bactériémies ; adjusted Poisson riskratio12,1 (IC4,1–36,2), différent du LR+4,65."
+    },
+    {
+      "source_id": "CHUV13",
+      "title": "CHUV Hémoculture chez adulteV13,05.10.2026",
+      "url": "https://catalogue.chuv.ch/analyses-examens/laboratoires/fiche/DLA_INV_01_01510/hemoculture-chez-ladulte",
+      "cache_actually_read": "/tmp/a41-p1-chuv-cultures.html",
+      "cache_sha256": "f1e3b1199cab2852727e2d19a7e4e4c18f41b8b86f22b4945dbe00f6177ff009",
+      "bytes": 45089,
+      "read_level": "official_adult_protocol_targeted",
+      "read_scope": "Volume8–10mL par flacon adulte, ne pas dépasser10mL ; non protocole pédiatrique ni cellules/produits."
+    },
+    {
+      "source_id": "Lee2007",
+      "title": "Lee et coll., JClinMicrobiol2007, PMID17881544",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17881544/",
+      "cache_actually_read": "/workspace/Medina/docs/collaboration/reviews/2026-10-08/A41_REPRISE_MULTIAGENT/EXAMENS_SCIENCES.json",
+      "cache_sha256": "14963ba8e907dd3ec90028eedd362a127601e80185316a5ce08141d662097366",
+      "bytes": 186603,
+      "read_level": "original_abstract_captured_in_other_author_report",
+      "read_scope": "Résumé original intégral relu dans le record source17881544, batchNCBI HTTP200 sha ca26b52d573ac98c0e0aa29b0c4f161ff7fff7f559bad3ae76055a0eadb93e04 :629épisodes sélectionnés, rendement89,7%/98,2% pour2/3cultures."
+    },
+    {
+      "source_id": "Cheng2019",
+      "title": "Cheng et coll., AnnInternMed2019, PMID31525774",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31525774/",
+      "cache_actually_read": "/workspace/Medina/docs/collaboration/reviews/2026-10-08/A41_REPRISE_MULTIAGENT/EXAMENS_SCIENCES.json",
+      "cache_sha256": "14963ba8e907dd3ec90028eedd362a127601e80185316a5ce08141d662097366",
+      "bytes": 186603,
+      "read_level": "original_abstract_captured_in_other_author_report",
+      "read_scope": "Résumé original intégral relu dans record31525774 :325adultes sélectionnés,31,4%avant/19,4%après, médiane70min ; rendement et non sensibilité19,4%."
+    },
+    {
+      "source_id": "IDSA2009",
+      "title": "Mermel et coll., guideline catheter infection2009",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC4039170/unicode",
+      "cache_actually_read": "/tmp/a41-p1-idsa-bioc.xml",
+      "cache_sha256": "76361e512d50972e5dba94cae7ab103e82d4abe5fe167199065f683f766929c1",
+      "bytes": 605350,
+      "read_level": "full_text_targeted",
+      "read_scope": "Table2 passage645 BioC : mêmes volumes, simultanés, même organisme, cathéter≥2h avant périphérie. Guideline2009 non grade2026."
+    },
+    {
+      "source_id": "Prescott2018",
+      "title": "Prescott/Angus, Enhancing Recovery From Sepsis: A Review, JAMA2018",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:29297082%20AND%20SRC:MED&resultType=core&format=json",
+      "cache_actually_read": "/workspace/medina-env/a41-pathologie2/29297082.json",
+      "cache_sha256": "dd72c958aa4841c01e074c2199f4d2c03a65c1792fffb0713eb1414a6355ec5a",
+      "bytes": 8063,
+      "read_level": "original_review_abstract",
+      "read_scope": "Résumé original : environ40% de réhospitalisations90jours après sortie,11,9%infection et5,5%IC ; données de revue, pas cohorte suisse."
+    }
+  ],
+  "local_read_only_checks": {
+    "A41_a.html": {
+      "native_attributes": {
+        "id": {
+          "count": 9,
+          "multiset_preserved": true
+        },
+        "data-k": {
+          "count": 50,
+          "multiset_preserved": true
+        },
+        "data-pop": {
+          "count": 0,
+          "multiset_preserved": true
+        },
+        "data-p": {
+          "count": 4,
+          "multiset_preserved": true
+        },
+        "data-ok": {
+          "count": 6,
+          "multiset_preserved": true
+        }
+      },
+      "svg_preserved": true,
+      "script_preserved": true,
+      "bare_SSC_count": 0
+    },
+    "A41_pop1.html": {
+      "native_attributes": {
+        "id": {
+          "count": 0,
+          "multiset_preserved": true
+        },
+        "data-k": {
+          "count": 0,
+          "multiset_preserved": true
+        },
+        "data-pop": {
+          "count": 19,
+          "multiset_preserved": true
+        },
+        "data-p": {
+          "count": 0,
+          "multiset_preserved": true
+        },
+        "data-ok": {
+          "count": 0,
+          "multiset_preserved": true
+        }
+      },
+      "svg_preserved": true,
+      "script_preserved": true,
+      "bare_SSC_count": 0
+    }
+  },
+  "source_and_scope_limits": [
+    "Cette contrelecture ciblée des27observations et des nouvelles cultures ne certifie pas tous les chiffres/mécanismes inchangés du chapitre.",
+    "Surviving Sepsis Campaign2026 : énoncés officiels/grades/remarques réellement lus ; texte intégral des rationales2026 indisponible dans notre périmètre. Les rationales2021 ne sont pas présentées comme des rationales nouvelles2026.",
+    "ESE2024 : texte EuropePMC réellement obtenu. PagePMC directe du relecteurP1 a donné reCAPTCHA malgréHTTP200 ; ce corps n’est pas une preuve de lecture.",
+    "Prescott2018 : résumé original de revue réellement lu ; route EuropePMC fullTextXML a retournéHTTP500 le08.10.2026, donc pas lecture intégrale de la revue ni des études originales expliquant chaque chiffre. La séparation des deux sources est vérifiée ; aucune estimation suisse des40%est affirmée.",
+    "Lee/Cheng et SOAP/BALANCE : résumés originaux, pas texte intégral. Populations et limites explicites ; minimum2paires n’est pas attribué littéralement à la recommandationSCCM7.",
+    "Les seuils NEWS2 et les chiffres historiques SOFA-2/CHUVlactate inchangés ont été relus dans le candidat pour cohérence, sans nouvelle certification complète de leurs primaires.",
+    "Mes7dépendances pop_pa (IDs06,09,10,22–25) requièrent la relecture d’un autre auteur. Les4réserves supplémentaires sur mes fichiers ont été traitées dans PATHOLOGIE2 ; je ne certifie pas indépendamment ces corrections.",
+    "Aucune clôture d’auditClaude, aucune injection ni exécution des sources candidates par ce relecteur."
+  ],
+  "required_follow_up": [
+    "Avis de sentinelle_medicale/Claude sur les7composants pop_pa écrits par moi et les deltas de b/pop_pa, aux empreintes finales.",
+    "ContrelectureClaude des fichiers candidats assemblés et contrôle technique indépendant du candidat figé, puis décision de root."
+  ],
+  "editorial_table_delta_review": {
+    "at_utc": "2026-10-08T13:01:16.001108+00:00",
+    "reviewer": "/root/test_allocation, distinct de l’auteur P1",
+    "status": "independent_editorial_table_delta_supported",
+    "old_sha256": "6d8a376ff807e05ae09837fa47e937a5cc83bc8e7db6471cb366a9bfdfc37743",
+    "new_sha256": "34a54b45c140cfb352add0adf9feed32c39fc34359f03fff0f58221256e650d1",
+    "new_bytes": 79837,
+    "before_snapshot": "/tmp/A41_a.avant_tableau_20261008.html",
+    "changed_scope": "A41_a §1.5, seuls deux paragraphes d’énumération deviennent introduction/lien, tableau 2 colonnes et même exemple hors tableau",
+    "affected_original_ids": [
+      "audit_pathologie_1-03",
+      "audit_pathologie_1-04"
+    ],
+    "primary_source": {
+      "path": "/workspace/medina-env/reprise-a41/sources/pathologie1/a41-p1-bfarm2024.html",
+      "sha256": "36b6cbfee7ca50e6ed726440f9e95f8d383e603ade5af774f1c1e90d701c531c",
+      "url": "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-a30-a49.htm",
+      "version": "ICD-10-GM 2024",
+      "displayed_stand": "15.09.2023",
+      "read_scope": "A41 sous-codes/notes et exclusions ; pas nouvelle validation des règles suisses"
+    },
+    "rows_checked": [
+      {
+        "code": "A41.0",
+        "candidate_label": "Staphylococcus aureus",
+        "primary_BfArM_label": "Sepsis durch Staphylococcus aureus",
+        "group_not_leaf": false,
+        "concordance": true
+      },
+      {
+        "code": "A41.1",
+        "candidate_label": "Autres staphylocoques précisés",
+        "primary_BfArM_label": "Sepsis durch sonstige näher bezeichnete Staphylokokken",
+        "group_not_leaf": false,
+        "concordance": true
+      },
+      {
+        "code": "A41.2",
+        "candidate_label": "Staphylocoques non précisés",
+        "primary_BfArM_label": "Sepsis durch nicht näher bezeichnete Staphylokokken",
+        "group_not_leaf": false,
+        "concordance": true
+      },
+      {
+        "code": "A41.3",
+        "candidate_label": "Haemophilus influenzae",
+        "primary_BfArM_label": "Sepsis durch Haemophilus influenzae",
+        "group_not_leaf": false,
+        "concordance": true
+      },
+      {
+        "code": "A41.4",
+        "candidate_label": "Anaérobies",
+        "primary_BfArM_label": "Sepsis durch Anaerobier",
+        "group_not_leaf": false,
+        "concordance": true
+      },
+      {
+        "code": "A41.5",
+        "candidate_label": "Autres bactéries à Gram négatif",
+        "primary_BfArM_label": "Sepsis durch sonstige gramnegative Erreger",
+        "group_not_leaf": true,
+        "concordance": true
+      },
+      {
+        "code": "A41.51",
+        "candidate_label": "Escherichia coli",
+        "primary_BfArM_label": "Escherichia coli [E. coli]",
+        "group_not_leaf": false,
+        "concordance": true
+      },
+      {
+        "code": "A41.52",
+        "candidate_label": "Pseudomonas",
+        "primary_BfArM_label": "Pseudomonas",
+        "group_not_leaf": false,
+        "concordance": true
+      },
+      {
+        "code": "A41.58",
+        "candidate_label": "Autres bactéries à Gram négatif",
+        "primary_BfArM_label": "Sonstige gramnegative Erreger",
+        "group_not_leaf": false,
+        "concordance": true
+      },
+      {
+        "code": "A41.8",
+        "candidate_label": "Autres sepsis précisés",
+        "primary_BfArM_label": "Sonstige näher bezeichnete Sepsis",
+        "group_not_leaf": false,
+        "concordance": true
+      },
+      {
+        "code": "A41.9",
+        "candidate_label": "Sepsis non précisé",
+        "primary_BfArM_label": "Sepsis, nicht näher bezeichnet",
+        "group_not_leaf": false,
+        "concordance": true
+      }
+    ],
+    "all_previous_codes_preserved": true,
+    "example_Mme_R_A41_51_plus_R57_2_identical": true,
+    "following_exclusions_byte_identical": true,
+    "outside_block_byte_identical": true,
+    "medical_disposition_unchanged": true,
+    "external_Claude_closed": false,
+    "source_modified_by_reviewer": false
+  },
+  "source_access_pop1_delta_review": {
+    "at_utc": "2026-10-08T13:01:16.001108+00:00",
+    "reviewer": "/root/test_allocation, distinct de l’auteur P1",
+    "status": "independent_reference_only_delta_supported",
+    "old_sha256": "cee042353cb59c71dae361e59eaefccd7c3fb089f7450757c166bc7bf146778e",
+    "new_sha256": "cdb1671a68f9f87d78b468c57b958cf894ada46439cd05b29d2b3e2db2645cce",
+    "new_bytes": 44350,
+    "before_snapshot": "/tmp/A41_pop1.avant_liens_20261008.html",
+    "scope": "Huit fenêtres, 17 liens/captions uniquement ; retirer les huit ajouts restitue tous les anciens octets.",
+    "per_window": [
+      {
+        "template": "a41-sepsis3",
+        "added_links": 1,
+        "added_caption_and_links": "<div class=\"lab\" data-reference-scope=\"a41-sepsis3\">Textes de référence et périmètre</div><ul><li><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC4968574/\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Sepsis-3, Singer et coll., 2016 : définition et SOFA d’origine</a></li></ul>",
+        "previous_content_byte_identical": true
+      },
+      {
+        "template": "a41-sofa",
+        "added_links": 1,
+        "added_caption_and_links": "<div class=\"lab\" data-reference-scope=\"a41-sofa\">Textes de référence et périmètre</div><ul><li><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC4968574/\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Sepsis-3, Singer et coll., 2016 : définition et SOFA d’origine</a></li></ul>",
+        "previous_content_byte_identical": true
+      },
+      {
+        "template": "a41-ssc",
+        "added_links": 2,
+        "added_caption_and_links": "<div class=\"lab\" data-reference-scope=\"a41-ssc\">Textes de référence et périmètre</div><ul><li><a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : texte actuel des 129 énoncés</a></li><li><a href=\"https://doi.org/10.1007/s00134-026-08410-9\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Rectificatif du 5 mai 2026 : noms d’auteurs, sans changement clinique décrit</a></li></ul>",
+        "previous_content_byte_identical": true
+      },
+      {
+        "template": "a41-cultures",
+        "added_links": 5,
+        "added_caption_and_links": "<div class=\"lab\" data-reference-scope=\"a41-cultures\">Textes de référence et périmètre</div><ul><li><a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026#RecomGroup-7\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, énoncé 7 : calendrier des hémocultures</a></li><li><a href=\"https://catalogue.chuv.ch/analyses-examens/laboratoires/fiche/DLA_INV_01_01510/hemoculture-chez-ladulte\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">CHUV, Hémoculture chez l’adulte, version 13 du 5 octobre 2026 : flacons et volumes</a></li><li><a href=\"https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC4039170/unicode\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">IDSA, 2009 : prélèvements couplés et délai différentiel, texte intégral public NLM</a></li><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/17881544/\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Lee et coll., 2007 : étude du rendement, résumé primaire</a></li><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/31525774/\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Cheng et coll., 2019 : effet des antibiotiques sur le rendement, résumé primaire</a></li></ul>",
+        "previous_content_byte_identical": true
+      },
+      {
+        "template": "a41-sign-focal",
+        "added_links": 2,
+        "added_caption_and_links": "<div class=\"lab\" data-reference-scope=\"a41-sign-focal\">Textes de référence et périmètre</div><ul><li><a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026#RecomGroup-24\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, énoncé 24 : contrôle du foyer</a></li><li><a href=\"https://uroweb.org/guidelines/urolithiasis/chapter/guidelines\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">EAU, Urolithiasis, §3.4.2 : texte actuel consulté le 8 octobre 2026, obstruction infectée</a></li></ul>",
+        "previous_content_byte_identical": true
+      },
+      {
+        "template": "a41-source",
+        "added_links": 2,
+        "added_caption_and_links": "<div class=\"lab\" data-reference-scope=\"a41-source\">Textes de référence et périmètre</div><ul><li><a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026#RecomGroup-24\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, énoncé 24 : contrôle du foyer</a></li><li><a href=\"https://uroweb.org/guidelines/urolithiasis/chapter/guidelines\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">EAU, Urolithiasis, §3.4.2 : texte actuel consulté le 8 octobre 2026, obstruction infectée</a></li></ul>",
+        "previous_content_byte_identical": true
+      },
+      {
+        "template": "a41-lactate",
+        "added_links": 3,
+        "added_caption_and_links": "<div class=\"lab\" data-reference-scope=\"a41-lactate\">Textes de référence et périmètre</div><ul><li><a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026#RecomGroup-8\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, énoncé 8 : mesure du lactate</a></li><li><a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026#RecomGroup-51\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, énoncé 51 et remarque : suivi et individualisation des fluides</a></li><li><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC4968574/\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Sepsis-3, Singer et coll., 2016 : définition et SOFA d’origine</a></li></ul>",
+        "previous_content_byte_identical": true
+      },
+      {
+        "template": "a41-atcd-immune",
+        "added_links": 1,
+        "added_caption_and_links": "<div class=\"lab\" data-reference-scope=\"a41-atcd-immune\">Textes de référence et périmètre</div><ul><li><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11180513/\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">ESE/Endocrine Society, 2024 : couverture de stress, recommandation R3.1 et tableau 8</a></li></ul>",
+        "previous_content_byte_identical": true
+      }
+    ],
+    "added_link_count": 17,
+    "outside_additions_byte_identical": true,
+    "cards_groups_independently_checked": [
+      7,
+      8,
+      24,
+      51
+    ],
+    "source_captions_limits": [
+      "SCCM2026/rectificatif/Sepsis3/ESE2024 et CHUV V13 datés selon captures effectivement lues.",
+      "EAU texte actuel consulté, sans année annuelle inventée.",
+      "Lee/Cheng sont des résumés ; IDSA est le texte NLM public.",
+      "ESE lu en XML EuropePMC ; le lien primaire PMC ne signifie pas lecture du HTML reCAPTCHA direct."
+    ],
+    "new_primary_downloads": 0,
+    "clinical_text_unchanged": true,
+    "external_Claude_closed": false,
+    "source_modified_by_reviewer": false
+  }
+}

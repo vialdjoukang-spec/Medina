@@ -1,0 +1,43 @@
+# Reprise Examens et Sciences — A41
+
+A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie). Candidat d’auteur figé pour contrelecture indépendante ; aucune certification médicale ni autorisation d’injection.
+
+Base `db06b1fae3c27e93050850df44c3eb23fcd60164`, sources identiques à l’audit `39b7ff0cc585c59ffbb99fb448940daa1950b34d`. Les deux panneaux `pE` et `pS` sont dans `A41_c.html` et ont un seul auteur. Seuls C, sa fenêtre Sciences révisée et ce rapport ont été écrits par cet auteur.
+
+Les quatre observations majeures 01/02/03/11 sont reprises. L’observation 03 reste partiellement proposée : les intervalles artériels suisses complets ne sont pas documentés. Le complément primaire Delannoy/Wu traite les exemples de résultats PCT/CRP trompeurs avec leurs limites, sans seuil rénal universel. L’observation mineure 07 conserve une réserve sur le protocole de contraste. Toutes les propositions attendent leur contrevalidation ; aucune observation n’est déclarée close.
+
+| Observation | État du candidat | Travail et réserve |
+|---|---|---|
+| audit_examens_sciences_pharmacologie-01 | proposee_a_contrevalider | Définition/production, cinétiques et normes HUG datées, aide à l’arrêt avec conditions et gradation. Faux négatifs précoce/localisé ; exemples humains postopératoires Delannoy et rénaux Wu avec limites explicitement lues. Aucun seuil rénal universel, aucun pic postopératoire ambigu ni liste générale non sourcée. |
+| audit_examens_sciences_pharmacologie-02 | proposee_a_contrevalider | Au moins deux paires ; volumes CHUV 8–10 mL/flacon adulte selon fabricant ; rendement Lee/Cheng avec populations ; cathéter/périphérie simultanés de volumes égaux, même organisme et délai ≥2 h selon IDSA. Coordination pop1 par son auteur. |
+| audit_examens_sciences_pharmacologie-03 | partiellement_proposee | Méthode en étapes, Winter/trou corrigé, exemple distinct de Mme R., rapportO₂etlimites2026 ; tableau pH/PaCO₂ sexe/PaO₂ Viollier artériel, bicarbonate STANDARD artériel et trou Medics/Viollier SÉRIQUE attribués. Pas de substitution à une norme de bicarbonate ACTUEL calculé ; réserve majeure partielle maintenue pour cette identité de paramètre. |
+| audit_examens_sciences_pharmacologie-04 | proposee_a_contrevalider | Phrase état nourri/jeûne retirée. Procédure CHUV de la seringue sans refroidissement, distincte du tube ; USZ plasma NaF, garrot/stockage prolongés et méthode explicités. |
+| audit_examens_sciences_pharmacologie-05 | proposee_a_contrevalider | Ancien lien CHUV404 et norme générale0,5–1,5 retirés. Lactate USZ0,5–2,2 sur plasma NaF avec consultation08.10.2026 et absence de version ; plaquettes HUG150–450 ×10⁹/L datées03.06.2026. Unités HUG lactate discordantes non corrigées silencieusement. |
+| audit_examens_sciences_pharmacologie-06 | proposee_a_contrevalider | Gazométrie et SOFA séparés ; terminologie pression partielle corrigée ; phrases complètes. Match banque gazométrie transmis à racine. |
+| audit_examens_sciences_pharmacologie-07 | partiellement_proposee | Principe/limites de l’échographie, débit et bolus ; recommandation50 borne ce qui n’a pas été évalué. Décompression urgente selon EAU3.4.2 et contrôle du foyer2026. Aucun protocole contraste ni source spécifique aux risques du contraste entièrement établis ; vérification distincte maintenue. |
+| audit_examens_sciences_pharmacologie-08 | proposee_a_contrevalider | Quiz précise confusion nouvelle/polypnée, sepsis possible sans choc et évaluation rapide limitée ; délai3h conditionnel de certitude très faible. |
+| audit_examens_sciences_pharmacologie-09 | proposee_a_contrevalider | Quiz drainage formule une priorité et donne six heures, force conditionnelle/certitude très faible ; aucune garantie de bénéfice individuel. |
+| audit_examens_sciences_pharmacologie-10 | proposee_a_contrevalider | NEWS/NEWS2/MEWS/SIRS versus qSOFA seul : forte/modérée ; rôle SOFA de dysfonction distinct. |
+| audit_examens_sciences_pharmacologie-11 | proposee_a_contrevalider | Chaînes NO/guanylate/canaux potassiques variables selon études animales ; vasopressine relative petite étude humaine ; TF/protéine C/antithrombine et fibrinolyse avec preuves humaines expérimentales et pédiatriques bornées ; mitochondries et immunité tissus/populations sélectionnés. |
+| audit_examens_sciences_pharmacologie-12 | proposee_a_contrevalider | Formules pression/transportO₂, fractions et g/L→g/dL ; conversion ×10 explicitée ; exempleHb140→80 et DO₂933→539mL/min illustratif, pas seuil transfusionnel. |
+| audit_examens_sciences_pharmacologie-13 | proposee_a_contrevalider | LDH/régénération cofacteur, stimulation bêta-adrénergique, PDH données humaines parfois augmentées versus inhibition animale tardive, utilisation foie/reins et production pulmonaire ; baisse en série distincte d’une mesure de clairance. |
+| audit_examens_sciences_pharmacologie-14 | proposee_a_contrevalider | Culture concordante avec foyer ; contamination/colonisation et limites d’une culture positive précisées. |
+| audit_examens_sciences_pharmacologie-15 | proposee_a_contrevalider | Douze anciennes clés Sciences combinées en une clé clinique/examen/traitement par discipline et un À retenir. Pareto Sciences transmis à l’auteur exclusif pop2, réception confirmée. |
+| audit_examens_sciences_pharmacologie-16 | proposee_a_contrevalider | Quatre figures Sciences numérotées4–7 après les trois figures Pathologie ; Anatomie/Histologie commencent par une fonction normale. |
+
+La norme lactate USZ 0,5–2,2 mmol/L est limitée au plasma au fluorure et à sa méthode enzymatique ; consultation du 8 octobre 2026, sans date de version affichée. Le bicarbonate USZ 22–29 mmol/L est un dosage plasmatique enzymatique et n’est pas utilisé comme norme du bicarbonate calculé sur gaz artériel. Les fiches HUG lactate à unité discordante et le refus TRIBU HTTP200 ne produisent aucune norme de remplacement. Voir [la revue indépendante des normes](NORMES_GAZOMETRIE.md).
+
+Les sources de recherche sont distinguées de leurs résumés officiels et des textes intégraux effectivement lus dans le JSON. Dandona est une expérience d’endotoxine humaine, Müller un modèle animal, Faust une cohorte pédiatrique ; leur portée est conservée. La revue Pepys est réellement reçue sur JCI18921 et étaye IL6, hausse6h/pic48h ; l’efetchPMC bibliographique et les échecs BioC/EuropePMC ne sont pas présentés comme preuve de lecture clinique. Garcia-Alvarez étaye la divergence PDH humain/animal et production/utilisation ; Boomer étaye la spécificité tissulaire du HLA-DR. Les constantes du modèle d’oxygène sont accompagnées de conversions dimensionnelles, sans seuil thérapeutique.
+
+| Fichier | Empreinte du candidat SHA-256 |
+|---|---|
+| `A41_c.html` | `fdf9991f19aa93552ca94f52cdb3487637e64c85b79040d7608bc8d39c0da2dc` |
+| `A41_pop_sciences_revision.html` | `dd5ceeba3e8a346f2da2b4ebbe5c9f7015cc7e819f941ddc475ae89e2a1d234e` |
+
+Vérification effectuée : HTML des deux fichiers équilibré, identifiants sans doublon, quatre figures numérotées4–7, quatre quiz conservés, quatre fenêtres définies, toutes les utilisations `data-k` résolues dans le candidat entier et aucune collision entre les 70 définitions constatées. Les calculs Winter26±2, trou22→27, rapport200 et apportO₂933→539 ont été recalculés. La compilation et les parcours navigateur restent à la sentinelle technique.
+
+Les Pareto Examens et Sciences ont été transmis à l’auteur exclusif de pop2. La racine garde la banque et le glossaire ; le nouveau match exact de gazométrie est `la pression partielle artérielle en oxygène et le pH`, dans `a41-e-3`. Les clés nouvelles sont `a41-pct`, `a41-crp`, `a41-gaz-read` ; `a41-science-reading` est mise à jour. Le candidat est remis à Claude pour contrelecture ; aucun chapitre suivant n’est lancé.
+
+Delta identifié : quatre classes `clin` deviennent `card` après contrôle technique. Les deux textes primaires Delannoy/Wu ont été relus dans les caches XML fournis par la sentinelle médicale ; l’observation01 devient proposée à contrevalider. Les exemples ne produisent aucun seuil nouveau. Les empreintes du tableau ci-dessus remplacent le premier gel.
+
+Dernier delta identifié : tableau artériel Viollier et comparateurs bicarbonate standard/AG sérique Medics-Viollier intégrés après lecture des captures primaires. La date de consultation ne devient pas une date de version. ESP03 reste partielle pour le bicarbonate actuel calculé, et ESP07 pour le contraste. Numérotation Sciences4–7 ; détail XML retiré du produit en conservant « résumé ». Le pourcentage rénal30 est retiré faute de passage vérifiable exporté ; aucun pourcentage de remplacement n’est ajouté.
