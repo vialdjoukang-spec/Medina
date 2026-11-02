@@ -1,23 +1,20 @@
 {
-  "generated_at": "2026-11-02T02:57:37+00:00",
+  "generated_at": "2026-11-02T03:07:37+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
-    "allowed": true,
-    "problems": [],
-    "checked_at": "2026-11-02T02:57:37+00:00",
+    "allowed": false,
+    "problems": [
+      "Tests absents, échoués ou périmés après modification du harness"
+    ],
+    "checked_at": "2026-11-02T03:07:37+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T02:57:37+00:00",
+    "observed_at": "2026-11-02T03:07:37+00:00",
     "ok": true,
     "findings": [
-      {
-        "agent": "astra_neurologie",
-        "level": "warning",
-        "reason": "Preuves/aperçu périmés; nouvelle vérification requise avant clôture: Source modifiée depuis vérification: chapters/G02/G02_a.html"
-      },
       {
         "agent": "codex_hematologie",
         "level": "warning",
@@ -30,7 +27,7 @@
       }
     ],
     "interval_seconds": 600,
-    "observer_pid": 177380,
+    "observer_pid": 189342,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -92,10 +89,10 @@
       "clinical_orchestration": true,
       "lesson": "G02",
       "worktree": "/workspace/Medina-neurologie",
-      "stage": "redaction",
+      "stage": "verification",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T02:51:15+00:00",
-      "message": "Revue de cohérence sur les six fragments : 53 corrections de formulations héritées, population/délais, seuils non exclusifs, brivudine, virémie, anticorps et urgence. Source primaire Consortium2013 lue. Tests à relancer après correction des abréviations et des répétitions résiduelles.",
+      "activity_at": "2026-11-02T02:57:47+00:00",
+      "message": "Contenu finalisé pour la passe : 39 lectures S19–S57, 14 points et causes rares couverts ; PROFILES2023 relu. Contrôle statique réussi, sciences6/figures6 préservées. Reconstruction native puis tests finaux avant reçu de liaison sources.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -1118,7 +1115,7 @@
             "Private GitHub cron and local watch depend on runner/environment availability"
           ]
         },
-        "updated_at": "2026-11-02T02:39:55.194025+00:00",
+        "updated_at": "2026-11-02T03:04:07.812381+00:00",
         "current_package": {
           "code": "G02",
           "worktree": "/workspace/Medina-neurologie",
@@ -1130,28 +1127,64 @@
           "source_readings": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/recherche_G02/sources.json",
           "monograph14": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/monograph-14.json",
           "matrix20": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/recherche_G02/recherche.md",
-          "source_readings_count": 26,
+          "source_readings_count": 39,
           "sciences": 6,
           "semiology_sections": 9,
           "medical_reviews": {
-            "MED": "not_supplied",
-            "LANG": "not_supplied",
-            "SEMIO": "author_targeted_only"
+            "MED": "reviews/medical.json,self_review",
+            "LANG": "reviews/language.json,self_review",
+            "SEMIO": "reviews/semiology.json,self_review"
           },
           "reserves": [
-            "FI suisse flucytosine et autres traitements rares non confirmées",
-            "Erratum candidose du 15 octobre 2025 non lu : schéma SNC non certifié",
-            "WHO2024 et fexinidazole lus ; statut suisse et autres produits de la trypanosomiase à vérifier, Chagas/coccidioïdomycose incomplets",
-            "Source primaire consortium encéphalite non obtenue ; table DGN seule",
-            "Applicabilité CIM suisse2026, obligations déclaratives et PROFILES non revalidés",
-            "14 points présents et 20 rubriques inventoriées ; clôture exhaustive et rapports finaux non terminés"
+            {
+              "id": "L1",
+              "topic": "Erratum candidose du15octobre2025",
+              "status": "limite documentaire circonscrite",
+              "blocking": false,
+              "reason": "Principes du guide2025 réellement lus ; schéma chiffré douteux non publié. Ne pas prétendre avoir confronté le texte de cet erratum inaccessible."
+            },
+            {
+              "id": "L2",
+              "topic": "Produits rares et accès suisse",
+              "status": "limite réglementaire et logistique",
+              "blocking": false,
+              "reason": "FI exactes ou RCP étrangers identifiés, populations et voies distinguées. Aucune disponibilité suisse déduite d’une autorisation ou de la présence dans une liste."
+            },
+            {
+              "id": "L3",
+              "topic": "Épidémiologie suisse",
+              "status": "limite de données",
+              "blocking": false,
+              "reason": "Études hospitalières et année historique FSME identifiées. Pas d’incidence suisse contemporaine inventée ni de généralisation des cohortes étrangères."
+            },
+            {
+              "id": "L4",
+              "topic": "Codage administratif",
+              "status": "limite d’applicabilité",
+              "blocking": false,
+              "reason": "Version2024 explicitement conservée ; A87.9 et G03.0 distingués. Application suisse2026 à confirmer par règles en vigueur ; décisions cliniques indépendantes du code."
+            },
+            {
+              "id": "L5",
+              "topic": "Portée de la monographie",
+              "status": "limite pédagogique explicite",
+              "blocking": false,
+              "reason": "Principes des causes rares et traitements majeurs couverts. Les médicaments de recours sans schéma publié renvoient à une équipe spécialisée et au produit exact ; pas protocole prescriptif exhaustif de toutes les molécules tropicales."
+            },
+            {
+              "id": "L6",
+              "topic": "Profondeur des sources et autonomie",
+              "status": "limite de preuve",
+              "blocking": false,
+              "reason": "CHUV et essai valaciclovir consultés au niveau résumé, autres sections précisées individuellement. Relecture auteur réelle, sans validation indépendante ou humaine ; lire le cours ne prouve pas compétence technique."
+            }
           ],
           "next_lesson_allowed": false,
-          "commit": "4f92780d038dcb73cba79d24766659656c5ad27f",
-          "pushed": true,
-          "guard": "passed registry dd31a75b58d0f945d013368203d8b52bcd72bf79",
+          "commit": "37a113894d55e7e0d5d3a1952d731fa689f641fb",
+          "pushed": false,
+          "guard": "running exact commit check",
           "review_mode": "self_review, avec empreintes ; aucune validation humaine ou indépendance revendiquée",
-          "current_revision": "Paquet flucytosine contrôlé/poussé ; coccidioïdomycose et concordance pharmacologique en nouvelle passe non encore figée.",
+          "current_revision": "39 lectures,14/20 revus,contrat et navigateur réussis ; commit local, push après garde",
           "versions": [
             {
               "commit": "a35d56e70fe8b1739816a6b65c97753327bd130d",
@@ -1175,18 +1208,25 @@
               "bundle_sha256": "02c2f4155bd30e94bed7288cf4b38ed0be21e442285125725189a7cdbc568f79"
             }
           ],
-          "bundle_sha256": "02c2f4155bd30e94bed7288cf4b38ed0be21e442285125725189a7cdbc568f79"
+          "bundle_sha256": "76c59b4fba209a09fb186f6a5554541e81397722633547ce89a3b61ecda435db",
+          "monograph14_reviewed": 14,
+          "matrix20_reviewed": 20,
+          "source_binding": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/source-binding.json",
+          "contract": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/contract-check.json",
+          "blocking_findings": [],
+          "clinical_certification": false
         },
         "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
         "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
         "medical_content_written": true,
         "current_limitations": [
-          "G02 reste ouverte pour réserves médicales explicites ; contrôles techniques ne certifient pas les 14 points.",
-          "Statut suisse du fexinidazole non établi ; flucytosine et erratum candidose non clos.",
-          "Pas de télémétrie tokens/coût exposée ; aucune mesure inventée."
+          "Relecture auteur, pas validationhumaine ni indépendante.",
+          "Limites documentaires circonscrites dans lesrapports, jugées nonbloquantes pour le contenu effectivement publié.",
+          "Tokens/coûts non exposés ; aucune mesure inventée.",
+          "Prochaineleçon conditionnée à clôture enregistrée et réservation distante actualisée."
         ]
       },
-      "activity_age_seconds": 383,
+      "activity_age_seconds": 591,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -1224,7 +1264,7 @@
       "clinical_orchestration": false,
       "lesson": "E01",
       "worktree": "/workspace/Medina-endocrinologie-E01",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/e01-integrate-g1",
       "allowed_paths": [
         "chapters/E01",
@@ -1234,8 +1274,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE"
       ],
       "started_at": "2026-11-02T02:48:08+00:00",
-      "activity_at": "2026-11-02T02:48:19+00:00",
-      "message": "E00 terminé et libéré ; E01 acquis, start et claim réussis. Inventaire des six fichiers et recherche suisse puis européenne en cours.",
+      "activity_at": "2026-11-02T03:06:36+00:00",
+      "message": "Porte VÉRITÉ OK ; corrections de causalité, compression, Bethesda 2023 et suivi réalisées dans E01. Pharmacologie suisse et six sciences en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -2586,7 +2626,7 @@
           "E01 : lecture et vérification des sources en cours ; aucune complétude ni validation médicale revendiquée."
         ]
       },
-      "activity_age_seconds": 559,
+      "activity_age_seconds": 62,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -2614,7 +2654,7 @@
       "clinical_orchestration": false,
       "lesson": "N29",
       "worktree": "/workspace/Medina-nephrologie-n29",
-      "stage": "recherche",
+      "stage": "verification",
       "branch": "codex/alpha77/n29-integrate-g1",
       "allowed_paths": [
         "chapters/N29",
@@ -2624,15 +2664,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N29-INTEGRATE"
       ],
       "started_at": "2026-11-02T02:46:45+00:00",
-      "activity_at": "2026-11-02T02:49:07+00:00",
-      "message": "N29 acquis et démarré ; six FI suisses lues ciblées, guide OFSP/Ligue pulmonaire diagnostic et traitement lus ; adaptations rénales et suivi à corriger, sources Europe en cours.",
+      "activity_at": "2026-11-02T03:04:53+00:00",
+      "message": "N29 six fichiers corrigés ; six sciences4196mots contre895initialement, audit_sciences réussi ; quatre originaux humains annotés, huit occurrences. Contrôles statiques et build natif en cours, revues finales non effectuées.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "1d30ff81788722d3213c031b72f207880f30bc468e52a6c33ec217141a7b72b7",
       "brief": {
         "schema_version": 1,
@@ -3228,9 +3268,9 @@
           }
         ]
       },
-      "activity_age_seconds": 511,
+      "activity_age_seconds": 165,
       "activity_fresh": true,
-      "sections_per_hour": 0.0,
+      "sections_per_hour": 40.23,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -3588,9 +3628,9 @@
         "tokens_actual": null,
         "cost_actual": null
       },
-      "activity_age_seconds": 1424,
+      "activity_age_seconds": 2024,
       "activity_fresh": false,
-      "sections_per_hour": 8.97,
+      "sections_per_hour": 8.1,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
@@ -4155,6 +4195,40 @@
       "agent": "astra_neurologie",
       "stage": "redaction",
       "message": "Revue de cohérence sur les six fragments : 53 corrections de formulations héritées, population/délais, seuils non exclusifs, brivudine, virémie, anticorps et urgence. Source primaire Consortium2013 lue. Tests à relancer après correction des abréviations et des répétitions résiduelles."
+    },
+    {
+      "at": "2026-11-02T02:57:37+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 3
+    },
+    {
+      "at": "2026-11-02T02:57:47+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "verification",
+      "message": "Contenu finalisé pour la passe : 39 lectures S19–S57, 14 points et causes rares couverts ; PROFILES2023 relu. Contrôle statique réussi, sciences6/figures6 préservées. Reconstruction native puis tests finaux avant reçu de liaison sources."
+    },
+    {
+      "at": "2026-11-02T03:00:19+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "recherche",
+      "message": "Reprise E01 : consolidation des passages lus, vérification des FI suisses et des limites diagnostiques avant rédaction."
+    },
+    {
+      "at": "2026-11-02T03:04:53+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "verification",
+      "message": "N29 six fichiers corrigés ; six sciences4196mots contre895initialement, audit_sciences réussi ; quatre originaux humains annotés, huit occurrences. Contrôles statiques et build natif en cours, revues finales non effectuées."
+    },
+    {
+      "at": "2026-11-02T03:06:36+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "redaction",
+      "message": "Porte VÉRITÉ OK ; corrections de causalité, compression, Bethesda 2023 et suivi réalisées dans E01. Pharmacologie suisse et six sciences en cours."
     }
   ],
   "cache": {
@@ -11014,7 +11088,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T02:57:37+00:00",
+    "observed_at": "2026-11-02T03:07:37+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -11088,11 +11162,11 @@
         "code": "G02",
         "agent": "astra_neurologie",
         "branch": "codex/alpha77/g02-integrate-g1",
-        "head_observed": "4f92780d038dcb73cba79d24766659656c5ad27f",
+        "head_observed": "37a113894d55e7e0d5d3a1952d731fa689f641fb",
         "local_preview": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html",
         "exists": true,
-        "sha256": "02c2f4155bd30e94bed7288cf4b38ed0be21e442285125725189a7cdbc568f79",
-        "bytes": 8221005,
+        "sha256": "76c59b4fba209a09fb186f6a5554541e81397722633547ce89a3b61ecda435db",
+        "bytes": 8235130,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/g02-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/g02-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",

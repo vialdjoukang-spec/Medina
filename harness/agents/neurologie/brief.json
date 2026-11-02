@@ -1004,7 +1004,7 @@
       "Private GitHub cron and local watch depend on runner/environment availability"
     ]
   },
-  "updated_at": "2026-11-02T02:39:55.194025+00:00",
+  "updated_at": "2026-11-02T03:04:07.812381+00:00",
   "current_package": {
     "code": "G02",
     "worktree": "/workspace/Medina-neurologie",
@@ -1016,28 +1016,64 @@
     "source_readings": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/recherche_G02/sources.json",
     "monograph14": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/monograph-14.json",
     "matrix20": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/recherche_G02/recherche.md",
-    "source_readings_count": 26,
+    "source_readings_count": 39,
     "sciences": 6,
     "semiology_sections": 9,
     "medical_reviews": {
-      "MED": "not_supplied",
-      "LANG": "not_supplied",
-      "SEMIO": "author_targeted_only"
+      "MED": "reviews/medical.json,self_review",
+      "LANG": "reviews/language.json,self_review",
+      "SEMIO": "reviews/semiology.json,self_review"
     },
     "reserves": [
-      "FI suisse flucytosine et autres traitements rares non confirmées",
-      "Erratum candidose du 15 octobre 2025 non lu : schéma SNC non certifié",
-      "WHO2024 et fexinidazole lus ; statut suisse et autres produits de la trypanosomiase à vérifier, Chagas/coccidioïdomycose incomplets",
-      "Source primaire consortium encéphalite non obtenue ; table DGN seule",
-      "Applicabilité CIM suisse2026, obligations déclaratives et PROFILES non revalidés",
-      "14 points présents et 20 rubriques inventoriées ; clôture exhaustive et rapports finaux non terminés"
+      {
+        "id": "L1",
+        "topic": "Erratum candidose du15octobre2025",
+        "status": "limite documentaire circonscrite",
+        "blocking": false,
+        "reason": "Principes du guide2025 réellement lus ; schéma chiffré douteux non publié. Ne pas prétendre avoir confronté le texte de cet erratum inaccessible."
+      },
+      {
+        "id": "L2",
+        "topic": "Produits rares et accès suisse",
+        "status": "limite réglementaire et logistique",
+        "blocking": false,
+        "reason": "FI exactes ou RCP étrangers identifiés, populations et voies distinguées. Aucune disponibilité suisse déduite d’une autorisation ou de la présence dans une liste."
+      },
+      {
+        "id": "L3",
+        "topic": "Épidémiologie suisse",
+        "status": "limite de données",
+        "blocking": false,
+        "reason": "Études hospitalières et année historique FSME identifiées. Pas d’incidence suisse contemporaine inventée ni de généralisation des cohortes étrangères."
+      },
+      {
+        "id": "L4",
+        "topic": "Codage administratif",
+        "status": "limite d’applicabilité",
+        "blocking": false,
+        "reason": "Version2024 explicitement conservée ; A87.9 et G03.0 distingués. Application suisse2026 à confirmer par règles en vigueur ; décisions cliniques indépendantes du code."
+      },
+      {
+        "id": "L5",
+        "topic": "Portée de la monographie",
+        "status": "limite pédagogique explicite",
+        "blocking": false,
+        "reason": "Principes des causes rares et traitements majeurs couverts. Les médicaments de recours sans schéma publié renvoient à une équipe spécialisée et au produit exact ; pas protocole prescriptif exhaustif de toutes les molécules tropicales."
+      },
+      {
+        "id": "L6",
+        "topic": "Profondeur des sources et autonomie",
+        "status": "limite de preuve",
+        "blocking": false,
+        "reason": "CHUV et essai valaciclovir consultés au niveau résumé, autres sections précisées individuellement. Relecture auteur réelle, sans validation indépendante ou humaine ; lire le cours ne prouve pas compétence technique."
+      }
     ],
     "next_lesson_allowed": false,
-    "commit": "4f92780d038dcb73cba79d24766659656c5ad27f",
-    "pushed": true,
-    "guard": "passed registry dd31a75b58d0f945d013368203d8b52bcd72bf79",
+    "commit": "37a113894d55e7e0d5d3a1952d731fa689f641fb",
+    "pushed": false,
+    "guard": "running exact commit check",
     "review_mode": "self_review, avec empreintes ; aucune validation humaine ou indépendance revendiquée",
-    "current_revision": "Paquet flucytosine contrôlé/poussé ; coccidioïdomycose et concordance pharmacologique en nouvelle passe non encore figée.",
+    "current_revision": "39 lectures,14/20 revus,contrat et navigateur réussis ; commit local, push après garde",
     "versions": [
       {
         "commit": "a35d56e70fe8b1739816a6b65c97753327bd130d",
@@ -1061,14 +1097,21 @@
         "bundle_sha256": "02c2f4155bd30e94bed7288cf4b38ed0be21e442285125725189a7cdbc568f79"
       }
     ],
-    "bundle_sha256": "02c2f4155bd30e94bed7288cf4b38ed0be21e442285125725189a7cdbc568f79"
+    "bundle_sha256": "76c59b4fba209a09fb186f6a5554541e81397722633547ce89a3b61ecda435db",
+    "monograph14_reviewed": 14,
+    "matrix20_reviewed": 20,
+    "source_binding": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/source-binding.json",
+    "contract": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/contract-check.json",
+    "blocking_findings": [],
+    "clinical_certification": false
   },
   "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
   "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
   "medical_content_written": true,
   "current_limitations": [
-    "G02 reste ouverte pour réserves médicales explicites ; contrôles techniques ne certifient pas les 14 points.",
-    "Statut suisse du fexinidazole non établi ; flucytosine et erratum candidose non clos.",
-    "Pas de télémétrie tokens/coût exposée ; aucune mesure inventée."
+    "Relecture auteur, pas validationhumaine ni indépendante.",
+    "Limites documentaires circonscrites dans lesrapports, jugées nonbloquantes pour le contenu effectivement publié.",
+    "Tokens/coûts non exposés ; aucune mesure inventée.",
+    "Prochaineleçon conditionnée à clôture enregistrée et réservation distante actualisée."
   ]
 }

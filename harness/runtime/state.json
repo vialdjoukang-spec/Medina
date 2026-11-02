@@ -5,10 +5,10 @@
     "astra_neurologie": {
       "lesson": "G02",
       "worktree": "/workspace/Medina-neurologie",
-      "stage": "redaction",
+      "stage": "verification",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T02:51:15+00:00",
-      "message": "Revue de cohérence sur les six fragments : 53 corrections de formulations héritées, population/délais, seuils non exclusifs, brivudine, virémie, anticorps et urgence. Source primaire Consortium2013 lue. Tests à relancer après correction des abréviations et des répétitions résiduelles.",
+      "activity_at": "2026-11-02T02:57:47+00:00",
+      "message": "Contenu finalisé pour la passe : 39 lectures S19–S57, 14 points et causes rares couverts ; PROFILES2023 relu. Contrôle statique réussi, sciences6/figures6 préservées. Reconstruction native puis tests finaux avant reçu de liaison sources.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -29,7 +29,7 @@
     "astra_endocrinologie": {
       "lesson": "E01",
       "worktree": "/workspace/Medina-endocrinologie-E01",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/e01-integrate-g1",
       "allowed_paths": [
         "chapters/E01",
@@ -39,8 +39,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE"
       ],
       "started_at": "2026-11-02T02:48:08+00:00",
-      "activity_at": "2026-11-02T02:48:19+00:00",
-      "message": "E00 terminé et libéré ; E01 acquis, start et claim réussis. Inventaire des six fichiers et recherche suisse puis européenne en cours.",
+      "activity_at": "2026-11-02T03:06:36+00:00",
+      "message": "Porte VÉRITÉ OK ; corrections de causalité, compression, Bethesda 2023 et suivi réalisées dans E01. Pharmacologie suisse et six sciences en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -53,7 +53,7 @@
     "astra_nephrologie": {
       "lesson": "N29",
       "worktree": "/workspace/Medina-nephrologie-n29",
-      "stage": "recherche",
+      "stage": "verification",
       "branch": "codex/alpha77/n29-integrate-g1",
       "allowed_paths": [
         "chapters/N29",
@@ -63,15 +63,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N29-INTEGRATE"
       ],
       "started_at": "2026-11-02T02:46:45+00:00",
-      "activity_at": "2026-11-02T02:49:07+00:00",
-      "message": "N29 acquis et démarré ; six FI suisses lues ciblées, guide OFSP/Ligue pulmonaire diagnostic et traitement lus ; adaptations rénales et suivi à corriger, sources Europe en cours.",
+      "activity_at": "2026-11-02T03:04:53+00:00",
+      "message": "N29 six fichiers corrigés ; six sciences4196mots contre895initialement, audit_sciences réussi ; quatre originaux humains annotés, huit occurrences. Contrôles statiques et build natif en cours, revues finales non effectuées.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "1d30ff81788722d3213c031b72f207880f30bc468e52a6c33ec217141a7b72b7"
     },
     "codex_hematologie": {
@@ -666,6 +666,40 @@
       "action": "watch",
       "ok": true,
       "findings": 3
+    },
+    {
+      "at": "2026-11-02T02:57:47+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "verification",
+      "message": "Contenu finalisé pour la passe : 39 lectures S19–S57, 14 points et causes rares couverts ; PROFILES2023 relu. Contrôle statique réussi, sciences6/figures6 préservées. Reconstruction native puis tests finaux avant reçu de liaison sources."
+    },
+    {
+      "at": "2026-11-02T03:00:19+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "recherche",
+      "message": "Reprise E01 : consolidation des passages lus, vérification des FI suisses et des limites diagnostiques avant rédaction."
+    },
+    {
+      "at": "2026-11-02T03:04:53+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "verification",
+      "message": "N29 six fichiers corrigés ; six sciences4196mots contre895initialement, audit_sciences réussi ; quatre originaux humains annotés, huit occurrences. Contrôles statiques et build natif en cours, revues finales non effectuées."
+    },
+    {
+      "at": "2026-11-02T03:06:36+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "redaction",
+      "message": "Porte VÉRITÉ OK ; corrections de causalité, compression, Bethesda 2023 et suivi réalisées dans E01. Pharmacologie suisse et six sciences en cours."
+    },
+    {
+      "at": "2026-11-02T03:07:37+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 2
     }
   ],
   "cache": {

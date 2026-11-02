@@ -43,3 +43,35 @@ Les valeurs tokens/coûts sont nulles parce que le fournisseur n’expose pas de
 ## Actualisation de coordination — 2026-11-02T02:32:33.160876+00:00
 
 Le parent rapporte N04 au commit `1f1a9688`, avec contrat réussi, aucun constat bloquant, 14/20 et source-binding. Il a demandé la vérification explicite des 20 rubriques, puis seulement en cas de couverture suffisante, l’enregistrement de clôture, libération et acquisition de N29 dans un nouveau worktree. Cette transition conditionnelle ne requiert pas de nouvelle attribution de ma part. Une information indisponible correctement circonscrite ne constitue pas automatiquement une lacune bloquante ; le jugement d’auteur doit distinguer limites assumées et assertions centrales insuffisamment étayées. Cet ajout rapporte l’instruction du parent, sans auditer le contenu N04.
+
+
+## Coordination actualisée — 2026-11-02T03:04:07.812381+00:00
+
+Instantané du statut : 2026-11-02T03:00:19+00:00. Cette lecture compare l’activité et les réserves déclarées ; elle ne constitue pas un audit médical des autres cours.
+
+| Filière | Leçon et état réel | Prochaine décision |
+|---|---|---|
+| Neurologie | G02 : commit local37a11389,39lectures,14points/20rubriques relus ; contrat et navigateur réussis ; garde exacte en cours avantpush | Enregistrer l’achèvement seulement aprèspush vérifié ; G05 reste candidat conditionnel, pas acquis |
+| Endocrinologie | E00 achevée puis réservation libérée ; E01 acquise/start/claim dans son worktree propre, recherche actuelle | Continuer E01 seule, sans reproduire les mesures E00 comme activité E01 |
+| Néphrologie | N04 achevée puis libérée ; N29 acquise/start/claim, inventaire hérité et recherche actuelle | Continuer N29 seule ; ses sources héritées ne sont pas des lectures de la nouvelle leçon |
+| Hématologie | C85 toujours ouverte ; brief daté02:26 conserve7réserves, parent poursuit les sources et FI | Actualiser les réserves réellement levées et conserver les autres ; pas C86 avant clôture |
+
+### Priorités cliniques
+
+G02 : les réserves flucytosine, Consortium, Chagas et coccidioïdomycose ont été traitées par lectures exactes ; l’erratum candidose non obtenu reste une limite car aucune posologie douteuse n’est publiée. Cette qualification ne prétend pas certifier les corrections médicales. Les populations et divergences de produits restent visibles.
+
+C85 : avis de portée transmis au parent sur la FI Endoxan dont le seuil de bilirubine porte une unité incohérente dans les deux langues. Neutraliser cette consigne chiffrée, tracer la source et demander une confirmation pharmaceutique pour la prescription ; ne pas convertir silencieusement l’unité. Une anomalie neutralisée peut rester une limite nonbloquante, contrairement à une dose centrale non vérifiée. Ce jugement ne remplace pas une lecture indépendante de C85.
+
+E01/N29 : nouvelle lecture primaire avant toute assertion nouvelle, maintien des domaines réservés et des sources exactes. Les réservations concurrentes I63/G01, E10/E05, N17 et D69/D64 restent conservées. Aucune attribution supplémentaire n’est créée par cette note.
+
+### Limites des mesures
+
+Les champs historiques medical_review du statut indiquent encore « non effectuée » malgré des reçus self_review désormais présents pour certains paquets ; préférer les reçus empreintés. Le statutC85 porte une activité déclarée02:33:54 alors que le parent échange sur sa rédaction actuelle : cela signale un besoin de rafraîchir la progression, pas une preuve d’inactivité. Les nombres de mots, lectures et sections ne mesurent pas la qualité ni l’autonomie clinique. Tokens/coûts restent inconnus. 08hZurich demeure un rapport, pas un arrêt.
+
+Empreintes des instantanés lus :
+
+- `/workspace/Medina-harness/harness/status.json` — `8db96ed6fd20258b30cb724f31cd77930b77bde7ba7416165e4966ad77ecd5c6`.
+- `/workspace/Medina-harness/harness/agents/endocrinologie/brief.json` — `25f4f84407206f34be71b6ba4ab5b6ef8af8bf65222cd3368095850367d18e5a`.
+- `/workspace/Medina-harness/harness/agents/nephrologie/brief.json` — `9ca0a70f8ffc68ee8d3e4209aa7049d91ed34e0355382fa630f0b8feb9b8b350`.
+- `/workspace/Medina-harness/harness/agents/hematologie/brief.json` — `db0e2d45c01011c4522cf564295ea5b1d18ebd23264da495ad6d3304f60101d8`.
+- `/workspace/Medina-harness/harness/agents/neurologie/brief.json` — `ef62d0320a1d60e2445467968ee3f657bc14a86eb348d969a37b1c1cd4471236`.
