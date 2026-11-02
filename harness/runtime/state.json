@@ -15,8 +15,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE"
       ],
       "started_at": "2026-11-02T05:09:43+00:00",
-      "activity_at": "2026-11-02T05:13:59+00:00",
-      "message": "C70 : sources CH Bern/CHUV/PSI et enquête suisse de radiothérapie relues ; EANO 2021/2025, cIMPACT-NOW 8 et FI Galepharm/lévétiracétam/cyprotérone en lecture ciblée. Divergences de grade et de formulation identifiées.",
+      "activity_at": "2026-11-02T10:23:23+00:00",
+      "message": "Reprise réelle Sol high après quota Astra ; inventaire C70 et relecture ciblée CHUV/EANO2021/cIMPACT8/EANO2025/FI Galepharm effectués ; figures, recherche complémentaire et porte de vérité avant rédaction.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -27,28 +27,28 @@
       "receipt_sha256": "784443ef6624231c5bb9a68926f8827d13703b7fb5c4b22f1c0a95b2840df4d9"
     },
     "astra_endocrinologie": {
-      "lesson": "E07",
-      "worktree": "/workspace/Medina-endocrinologie-E07",
-      "stage": "termine",
-      "branch": "codex/alpha77/e07-integrate-g1",
+      "lesson": "E14",
+      "worktree": "/workspace/Medina-endocrinologie-E14",
+      "stage": "recherche",
+      "branch": "codex/alpha77/e14-integrate-g1",
       "allowed_paths": [
-        "chapters/E07",
-        "glossary/e07.py",
-        "assets/img/e07/alpha/codex",
-        "organisation/alpha-publications/Codex/E07",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE"
+        "chapters/E14",
+        "glossary/e14.py",
+        "assets/img/e14/alpha/codex",
+        "organisation/alpha-publications/Codex/E14",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E14-INTEGRATE"
       ],
-      "started_at": "2026-11-02T04:20:54+00:00",
-      "activity_at": "2026-11-02T05:13:59+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "started_at": "2026-11-02T10:24:09+00:00",
+      "activity_at": "2026-11-02T10:24:09+00:00",
+      "message": "Mission réservée; recherche autorisée",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "26f1cb623b0a7c6bcd266955539c3916cc5d9be7bd70fdef819f775121c0da23"
+      "completed_sections": 0,
+      "receipt_sha256": "34576d3239691b27d49029736e5d6f18a60a28202bbf705d9be8980999c6d428"
     },
     "astra_nephrologie": {
       "lesson": "N02",
@@ -64,8 +64,8 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T04:54:47+00:00",
-      "activity_at": "2026-11-02T05:10:47+00:00",
-      "message": "N02 : 22 lectures ciblées et 5 FI suisses documentées ; rédaction monographique et six sciences en cours, cinq originaux humains vus.",
+      "activity_at": "2026-11-02T10:24:59+00:00",
+      "message": "Reprise Sol autorisée : cinq originaux revus, HUG2024 et FI relus ; porte vérité research_N02 passée. Complément pharmacologique et interactions en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -101,47 +101,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T01:29:40+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "redaction",
-      "message": "Passages CH/EU et FI lus; porte recherche passée avec lacunes explicites. Ajouts monographiques et sémiologiques ciblés."
-    },
-    {
-      "at": "2026-11-02T01:29:53+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "recherche",
-      "message": "FI Euthyrox relue; erreur absorption démontrée; consensus ENDO-ERN et sources suisses consultés; original anatomie/histologie humain acquis et inspecté."
-    },
-    {
-      "at": "2026-11-02T01:30:23+00:00",
-      "action": "extract",
-      "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/recherche_E00/downloads/who2007.txt",
-      "cache_hit": false,
-      "bytes_input": 239151,
-      "bytes_output": 4037,
-      "bytes_avoided": 235114
-    },
-    {
-      "at": "2026-11-02T01:30:23+00:00",
-      "action": "extract",
-      "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/recherche_E00/downloads/who2007.txt",
-      "cache_hit": false,
-      "bytes_input": 239151,
-      "bytes_output": 2283,
-      "bytes_avoided": 236868
-    },
-    {
-      "at": "2026-11-02T01:31:01+00:00",
-      "action": "extract",
-      "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/recherche_E00/downloads/who2007.txt",
-      "cache_hit": false,
-      "bytes_input": 239151,
-      "bytes_output": 3373,
-      "bytes_avoided": 235778
-    },
     {
       "at": "2026-11-02T01:31:30+00:00",
       "action": "extract",
@@ -1415,6 +1374,38 @@
       "action": "watch",
       "ok": true,
       "findings": 3
+    },
+    {
+      "at": "2026-11-02T10:23:03+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 3
+    },
+    {
+      "at": "2026-11-02T10:23:23+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "Reprise réelle Sol high après quota Astra ; inventaire C70 et relecture ciblée CHUV/EANO2021/cIMPACT8/EANO2025/FI Galepharm effectués ; figures, recherche complémentaire et porte de vérité avant rédaction."
+    },
+    {
+      "at": "2026-11-02T10:24:09+00:00",
+      "action": "claim",
+      "agent": "astra_endocrinologie",
+      "code": "E14"
+    },
+    {
+      "at": "2026-11-02T10:24:59+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "redaction",
+      "message": "Reprise Sol autorisée : cinq originaux revus, HUG2024 et FI relus ; porte vérité research_N02 passée. Complément pharmacologique et interactions en cours."
+    },
+    {
+      "at": "2026-11-02T10:25:41+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
     }
   ],
   "cache": {

@@ -1,28 +1,18 @@
 {
-  "generated_at": "2026-11-02T10:15:41+00:00",
+  "generated_at": "2026-11-02T10:25:41+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T10:15:41+00:00",
+    "checked_at": "2026-11-02T10:25:41+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T10:15:41+00:00",
+    "observed_at": "2026-11-02T10:25:41+00:00",
     "ok": true,
     "findings": [
-      {
-        "agent": "astra_neurologie",
-        "level": "warning",
-        "reason": "Aucune activité déclarée depuis plus de 20 min; agent non supposé actif"
-      },
-      {
-        "agent": "astra_nephrologie",
-        "level": "warning",
-        "reason": "Aucune activité déclarée depuis plus de 20 min; agent non supposé actif"
-      },
       {
         "agent": "codex_hematologie",
         "level": "warning",
@@ -30,14 +20,14 @@
       }
     ],
     "interval_seconds": 600,
-    "observer_pid": 510684,
+    "observer_pid": 524005,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
   "tests": {
     "ok": true,
-    "code_sha256": "e5c9a716231cd2107e84e7eccb64dd7b765cef901804e932795806d5ccd41030",
-    "at": "2026-11-02T04:42:25+00:00",
+    "code_sha256": "e787852180ef200677e28287c3079039165b662bcbaeb09e37ccb7406395b8f6",
+    "at": "2026-11-02T10:23:03+00:00",
     "returncode": 0,
     "log": "runtime/tests.log"
   },
@@ -46,7 +36,7 @@
       "id": "astra_neurologie",
       "specialty": "neurologie",
       "system": "S08",
-      "model": "gpt-6-astra",
+      "model": "gpt-6.1-sol",
       "reasoning": "high",
       "queue": [
         "G02",
@@ -90,6 +80,8 @@
       ],
       "owner": "astra_neurologie",
       "clinical_orchestration": true,
+      "runtime_name": "/root/sol_neurologie",
+      "historical_id": "astra_neurologie",
       "lesson": "C70",
       "worktree": "/workspace/Medina-neurologie-C70",
       "stage": "recherche",
@@ -102,8 +94,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE"
       ],
       "started_at": "2026-11-02T05:09:43+00:00",
-      "activity_at": "2026-11-02T05:13:59+00:00",
-      "message": "C70 : sources CH Bern/CHUV/PSI et enquête suisse de radiothérapie relues ; EANO 2021/2025, cIMPACT-NOW 8 et FI Galepharm/lévétiracétam/cyprotérone en lecture ciblée. Divergences de grade et de formulation identifiées.",
+      "activity_at": "2026-11-02T10:23:23+00:00",
+      "message": "Reprise réelle Sol high après quota Astra ; inventaire C70 et relecture ciblée CHUV/EANO2021/cIMPACT8/EANO2025/FI Galepharm effectués ; figures, recherche complémentaire et porte de vérité avant rédaction.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -1459,8 +1451,8 @@
         "tokens_actual": null,
         "cost_actual": null
       },
-      "activity_age_seconds": 18102,
-      "activity_fresh": false,
+      "activity_age_seconds": 138,
+      "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
@@ -1468,7 +1460,7 @@
       "id": "astra_endocrinologie",
       "specialty": "endocrinologie",
       "system": "S05",
-      "model": "gpt-6-astra",
+      "model": "gpt-6.1-sol",
       "reasoning": "high",
       "queue": [
         "E00",
@@ -1495,28 +1487,30 @@
       ],
       "owner": "astra_endocrinologie",
       "clinical_orchestration": false,
-      "lesson": "E07",
-      "worktree": "/workspace/Medina-endocrinologie-E07",
-      "stage": "termine",
-      "branch": "codex/alpha77/e07-integrate-g1",
+      "runtime_name": "/root/sol_endocrinologie",
+      "historical_id": "astra_endocrinologie",
+      "lesson": "E14",
+      "worktree": "/workspace/Medina-endocrinologie-E14",
+      "stage": "recherche",
+      "branch": "codex/alpha77/e14-integrate-g1",
       "allowed_paths": [
-        "chapters/E07",
-        "glossary/e07.py",
-        "assets/img/e07/alpha/codex",
-        "organisation/alpha-publications/Codex/E07",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE"
+        "chapters/E14",
+        "glossary/e14.py",
+        "assets/img/e14/alpha/codex",
+        "organisation/alpha-publications/Codex/E14",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E14-INTEGRATE"
       ],
-      "started_at": "2026-11-02T04:20:54+00:00",
-      "activity_at": "2026-11-02T05:13:59+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "started_at": "2026-11-02T10:24:09+00:00",
+      "activity_at": "2026-11-02T10:24:09+00:00",
+      "message": "Mission réservée; recherche autorisée",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "26f1cb623b0a7c6bcd266955539c3916cc5d9be7bd70fdef819f775121c0da23",
+      "completed_sections": 0,
+      "receipt_sha256": "34576d3239691b27d49029736e5d6f18a60a28202bbf705d9be8980999c6d428",
       "brief": {
         "schema_version": 1,
         "prepared_at": "2026-11-02T01:16:45.312443+00:00",
@@ -1525,17 +1519,16 @@
         "fragment": "S05",
         "label": "E-06-Endocrinologie et métabolisme",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "phase": "E07_complete_publication_branche_en_cours",
+        "phase": "E14_preparation_attente_gate_Sol",
         "selected_lesson": {
-          "code": "E07",
-          "title": "Autres affections de la thyroïde",
-          "mission_candidate": ".medina/missions/ALPHA77-CODEX-E07-INTEGRATE.json",
-          "reservation_acquired": true,
-          "start_passed": true,
-          "harness_claimed": true,
-          "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E02-E07/start-E07.json"
+          "code": "E14",
+          "title": "Diabète sucré, sans précision",
+          "mission_candidate": ".medina/missions/ALPHA77-CODEX-E14-INTEGRATE.json",
+          "reservation_acquired": false,
+          "start_passed": false,
+          "harness_claimed": false
         },
-        "authorization_scope": "E07 uniquement dans ses chemins réservés ; aucun fichier partagé, aucune PR ni main.",
+        "authorization_scope": "Préparation E14, branche isolée ; aucune rédaction médicale avant gate Sol parent confirmée. E00/E01/E02/E07 clos préservés. Aucun fichier partagé, PR ou main.",
         "counts": {
           "canonical_s05": 26,
           "existing_codex": 13,
@@ -2782,9 +2775,9 @@
           "phase": "preparation_only_waiting_harness_veille_and_exclusive_worktree",
           "authorization_scope": "Préparation seulement dans harness/agents/endocrinologie; aucune écriture médicale, aucun commit ni index. Ordre courant spécialités parallèles/une leçon à la fois remplace lots historiques, pas réservations."
         },
-        "updated_at": "2026-11-02T05:14:56.772463+00:00",
-        "worktree": "/workspace/Medina-endocrinologie-E07",
-        "branch": "codex/alpha77/e07-integrate-g1",
+        "updated_at": "2026-11-02T10:23:24.937881+00:00",
+        "worktree": "/workspace/Medina-endocrinologie-E14",
+        "branch": "codex/alpha77/e14-integrate-g1",
         "tokens_actual": null,
         "cost_actual": null,
         "completed_lessons": [
@@ -2831,35 +2824,34 @@
             "reviews": "self_review",
             "clinical_certification": false,
             "main_or_pr": false
+          },
+          {
+            "code": "E07",
+            "title": "Autres affections de la thyroïde",
+            "head": "8ecd6cc1bfea7eb307967cb9eefeed31469db25f",
+            "branch": "codex/alpha77/e07-integrate-g1",
+            "pushed": true,
+            "released": true,
+            "preview": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/E07-apercu-autonome.html",
+            "completion": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/harness-completion.json",
+            "reviews": "self_review",
+            "clinical_certification": false,
+            "main_or_pr": false
           }
         ],
         "previous_lesson": {
-          "code": "E02",
-          "title": "Hypothyroïdie par carence inapparente en iode",
-          "mission_candidate": ".medina/missions/ALPHA77-CODEX-E02-INTEGRATE.json",
+          "code": "E07",
+          "title": "Autres affections de la thyroïde",
+          "mission_candidate": ".medina/missions/ALPHA77-CODEX-E07-INTEGRATE.json",
           "reservation_acquired": false,
           "start_passed": true,
           "harness_claimed": true,
-          "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E01-E02/start-E02.json",
+          "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E02-E07/start-E07.json",
           "released": true
         },
         "previous_evidence": {
-          "folder": "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE",
-          "status": "Achevée, poussée, harness complete réussi, réservation libérée.",
-          "preview": "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE/E02-apercu-autonome.html",
-          "report": "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE/RAPPORT-E02.md",
-          "manifest": "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE/lesson-manifest.json",
-          "source_binding": "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE/source-binding.json",
-          "captures": [
-            "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE/390-normal-anatomy.png",
-            "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE/390-book24-pharmacology.png",
-            "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE/1440-euthyrox-popup.png"
-          ],
-          "completion": "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE/harness-completion.json"
-        },
-        "current_evidence": {
           "folder": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE",
-          "status": "Harness complete réussi le 2 novembre 2026 à 05:13:59 UTC ; 14/20, sources et quatre auto-relectures vérifiées. Commit local créé, push en cours.",
+          "status": "E07 achevée, commit 8ecd6cc1bfea7eb307967cb9eefeed31469db25f poussé ; réservation libérée, octets clos inchangés.",
           "preview": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/E07-apercu-autonome.html",
           "sources": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/source-ledger.json",
           "static": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/static-report.json",
@@ -2875,6 +2867,11 @@
           "source_binding": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/source-binding.json",
           "coverage": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/coverage-14-20.json"
         },
+        "current_evidence": {
+          "registry": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E07-E14/registry-before-acquire.json",
+          "registry_sha": "a07ee13e2c2ffa53632b846e9745de78f67393ec",
+          "status": "E14 absente du registre ; manifeste actif présent dans la base, worktree propre créé à base exacte ; contrat lu, inventaire de contenu et sources historiques engagé."
+        },
         "previous_limits": [
           "Aucune prévalence contemporaine suisse de E02 ni essai thérapeutique propre à sa cause iodée n’a été retrouvé ; les données de nutrition et d’HIC générale ne les remplacent pas.",
           "Plusieurs études sont lues au niveau du résumé seulement. Les recommandations ETA 2013/2014 sont datées et confrontées aux essais ultérieurs, à HAS 2022 et à RCOG 2025, correction 2026 contrôlée.",
@@ -2887,28 +2884,23 @@
           "La navigation vers les autres leçons est héritée ; seuls le contenu et les interactions E02 sont revus. Le build signale trois éléments E05 non couverts, hors périmètre et réservation E02."
         ],
         "current_limits": [
-          "Pas de recommandation suisse unique E07, de prévalence suisse globale, de score commun ni de seuil opérationnel suisse de rappel néonatal dans les sources lues ; ces absences sont explicitées, pas remplacées par une valeur inventée.",
-          "Plusieurs formes rares reposent sur des résumés, cas ou petites séries. Les données américaines d’anatomopathologie décrivent des observations ; aucune recommandation américaine directe ne fonde la conduite.",
-          "La synthèse britannique NEM2 reprend notamment une classification ATA ; elle est attribuée et ne remplace pas une décision de centre expert selon variant et famille.",
-          "Le calcium B. Braun est un produit allemand importé selon PHEL. Le RCP exact lu date de juillet 2014 ; le test diagnostique est hors indication et le protocole de la série italienne ne se transpose pas automatiquement.",
-          "Les seuils de calcitonine, performances de procalcitonine, fréquences de TBG et statistiques génétiques restent liés à leur méthode et population ; aucune validation universelle ne leur est attribuée.",
-          "Le catalogue suisse local est celui de 2024 ; aucune certification du codage ou remboursement individuel 2026. PROFILES 2017 sert de rapprochement pédagogique, sans question officielle ou garantie d’examen.",
-          "Les deux figures originales montrent une thyroïde normale et un goitre compressif adulte ; elles ne diagnostiquent ni hyperplasie C, ni Pendred, ni obstruction néonatale. La licence OpenStax historique est prouvée pour l’image 2013, indépendamment du manuel actuel.",
-          "Les tests navigateur emploient une origine HTTPS interceptée et les octets exacts de la copie autonome, avec les autres requêtes bloquées ; aucun serveur HTTP réel ou déploiement main n’est testé.",
-          "La coque native conserve son statut provisoire et sa navigation héritée. Seul E07 est relu ; trois éléments E05 non couverts signalés au build sont hors périmètre.",
-          "Relectures médicales, linguistiques et visuelles effectuées par le même auteur IA en mode self_review ; aucune revue indépendante ou certification humaine revendiquée."
-        ]
+          "Gate Sol parent non encore confirmée ; pas de claim ni nouvelle rédaction médicale.",
+          "Les sources historiques ne sont pas réputées lues par le repreneur Sol."
+        ],
+        "runtime_agent": "sol_endocrinologie",
+        "runtime_model": "gpt-6.1-sol",
+        "runtime_reasoning": "high"
       },
-      "activity_age_seconds": 18102,
-      "activity_fresh": false,
-      "sections_per_hour": 2.37,
+      "activity_age_seconds": 92,
+      "activity_fresh": true,
+      "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
       "id": "astra_nephrologie",
       "specialty": "nephrologie",
       "system": "S04",
-      "model": "gpt-6-astra",
+      "model": "gpt-6.1-sol",
       "reasoning": "high",
       "queue": [
         "N04",
@@ -2925,6 +2917,8 @@
       ],
       "owner": "astra_nephrologie",
       "clinical_orchestration": false,
+      "runtime_name": "/root/sol_nephrologie",
+      "historical_id": "astra_nephrologie",
       "lesson": "N02",
       "worktree": "/workspace/Medina-nephrologie-n02",
       "stage": "redaction",
@@ -2938,8 +2932,8 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T04:54:47+00:00",
-      "activity_at": "2026-11-02T05:10:47+00:00",
-      "message": "N02 : 22 lectures ciblées et 5 FI suisses documentées ; rédaction monographique et six sciences en cours, cinq originaux humains vus.",
+      "activity_at": "2026-11-02T10:24:59+00:00",
+      "message": "Reprise Sol autorisée : cinq originaux revus, HUG2024 et FI relus ; porte vérité research_N02 passée. Complément pharmacologique et interactions en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -3677,8 +3671,8 @@
           "clinical_certification": false
         }
       },
-      "activity_age_seconds": 18294,
-      "activity_fresh": false,
+      "activity_age_seconds": 42,
+      "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
@@ -4105,51 +4099,13 @@
         ],
         "metrics": null
       },
-      "activity_age_seconds": 18559,
+      "activity_age_seconds": 19159,
       "activity_fresh": false,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T01:28:51+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T01:29:40+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "redaction",
-      "message": "Passages CH/EU et FI lus; porte recherche passée avec lacunes explicites. Ajouts monographiques et sémiologiques ciblés."
-    },
-    {
-      "at": "2026-11-02T01:29:53+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "recherche",
-      "message": "FI Euthyrox relue; erreur absorption démontrée; consensus ENDO-ERN et sources suisses consultés; original anatomie/histologie humain acquis et inspecté."
-    },
-    {
-      "at": "2026-11-02T01:30:23+00:00",
-      "action": "extract",
-      "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/recherche_E00/downloads/who2007.txt",
-      "cache_hit": false,
-      "bytes_input": 239151,
-      "bytes_output": 4037,
-      "bytes_avoided": 235114
-    },
-    {
-      "at": "2026-11-02T01:30:23+00:00",
-      "action": "extract",
-      "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/recherche_E00/downloads/who2007.txt",
-      "cache_hit": false,
-      "bytes_input": 239151,
-      "bytes_output": 2283,
-      "bytes_avoided": 236868
-    },
     {
       "at": "2026-11-02T01:31:01+00:00",
       "action": "extract",
@@ -5426,6 +5382,38 @@
       "action": "watch",
       "ok": true,
       "findings": 3
+    },
+    {
+      "at": "2026-11-02T10:15:41+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 3
+    },
+    {
+      "at": "2026-11-02T10:23:03+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 3
+    },
+    {
+      "at": "2026-11-02T10:23:23+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "Reprise réelle Sol high après quota Astra ; inventaire C70 et relecture ciblée CHUV/EANO2021/cIMPACT8/EANO2025/FI Galepharm effectués ; figures, recherche complémentaire et porte de vérité avant rédaction."
+    },
+    {
+      "at": "2026-11-02T10:24:09+00:00",
+      "action": "claim",
+      "agent": "astra_endocrinologie",
+      "code": "E14"
+    },
+    {
+      "at": "2026-11-02T10:24:59+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "redaction",
+      "message": "Reprise Sol autorisée : cinq originaux revus, HUG2024 et FI relus ; porte vérité research_N02 passée. Complément pharmacologique et interactions en cours."
     }
   ],
   "cache": {
@@ -5471,17 +5459,42 @@
       "result": "Échec affiché pour les activités anciennes des trois auteurs, sans arrêt du relais; observation suivante réussie."
     },
     "native_agents_last_observed": {
-      "observed_at": "2026-11-02T03:24:49.177804+00:00",
-      "provider": "collaboration.list_agents",
+      "observed_at": "2026-11-02T10:18:34.812128+00:00",
+      "provider": "collaboration.list_agents + trois notifications de fin",
       "states": {
-        "root": "running",
-        "astra_neurologie": "running",
-        "astra_endocrinologie": "running",
-        "astra_nephrologie": "running"
+        "root": "running; préparation du rapport, pas reprise médicale attestée",
+        "astra_neurologie": "indisponible; erreur de limite d’usage",
+        "astra_endocrinologie": "indisponible; erreur de limite d’usage",
+        "astra_nephrologie": "indisponible; erreur de limite d’usage"
       },
-      "incident": "Three agents were observed interrupted after environment restart; each resumed by followup_task and then confirmed running. Exact interruption onset unknown.",
+      "incident": "Trois notifications Agent errored: usage limit reçues. Le contrôle actuel ne liste que le parent. Heure exacte du début de la panne non établie. Aucune relance réussie revendiquée.",
       "author_activity_refreshed": false,
       "external_watchdog_can_restart_native_agents": false
+    },
+    "native_model_handoff": {
+      "at": "2026-11-02T10:23:02.648791+00:00",
+      "requested_model": "gpt-6.1-sol",
+      "reasoning": "high",
+      "spawn_confirmed": [
+        "/root/sol_neurologie",
+        "/root/sol_endocrinologie",
+        "/root/sol_nephrologie"
+      ],
+      "previous_quota_incident": {
+        "observed_at": "2026-11-02T10:18:34.812128+00:00",
+        "provider": "collaboration.list_agents + trois notifications de fin",
+        "states": {
+          "root": "running; préparation du rapport, pas reprise médicale attestée",
+          "astra_neurologie": "indisponible; erreur de limite d’usage",
+          "astra_endocrinologie": "indisponible; erreur de limite d’usage",
+          "astra_nephrologie": "indisponible; erreur de limite d’usage"
+        },
+        "incident": "Trois notifications Agent errored: usage limit reçues. Le contrôle actuel ne liste que le parent. Heure exacte du début de la panne non établie. Aucune relance réussie revendiquée.",
+        "author_activity_refreshed": false,
+        "external_watchdog_can_restart_native_agents": false
+      },
+      "restart_by": "parent via collaboration.spawn_agent, jamais par watchdog",
+      "author_activity_refreshed": false
     }
   },
   "prompt": {
@@ -12298,7 +12311,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T10:15:40+00:00",
+    "observed_at": "2026-11-02T10:25:40+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -12755,6 +12768,21 @@
         "bytes": null,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/c70-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE/C70-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/c70-integrate-g1",
+        "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
+        "publication_main": false,
+        "clinical_certification": false
+      },
+      {
+        "code": "E14",
+        "agent": "astra_endocrinologie",
+        "branch": "codex/alpha77/e14-integrate-g1",
+        "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+        "local_preview": "/workspace/Medina-endocrinologie-E14/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E14-INTEGRATE/E14-apercu-autonome.html",
+        "exists": false,
+        "sha256": null,
+        "bytes": null,
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/e14-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E14-INTEGRATE/E14-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/e14-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
         "publication_main": false,
         "clinical_certification": false
