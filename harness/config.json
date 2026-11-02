@@ -113,11 +113,11 @@
       "clinical_orchestration": false,
       "runtime_name": "/root/sol_nephrologie",
       "historical_id": "astra_nephrologie",
-      "active_specialty": "hematologie",
-      "production_name": "Sol-Hématologie-D77",
+      "active_specialty": "neurologie",
+      "production_name": "Sol-Neurologie-G09",
       "technical_identity_note": "Identité native conservée /root/sol_nephrologie ; huit livraisons néphrologiques historiques inchangées.",
-      "next_specialty": "neurologie",
-      "next_production_name": "Sol-Neurologie-G09",
+      "next_specialty": null,
+      "next_production_name": null,
       "next_reason": "C92 reserves shared chapters.json; G09 is an existing exclusive course, removed from the other neurology queue."
     },
     {
@@ -168,6 +168,16 @@
       "reason": "File néphrologique des8candidats achevée ; relais demandé par Vial après une spécialité. Parent conserveD63,puisC92.",
       "no_main_write": true,
       "registry_acquisition_still_required": true
+    },
+    {
+      "at": "2026-11-02T13:16:19+00:00",
+      "code": "G09",
+      "from": "astra_neurologie",
+      "to": "astra_nephrologie",
+      "production_name": "Sol-Neurologie-G09",
+      "reason": "D77 achevé et libéré ; G09 acquis et claim réellement confirmés. C92 garde seul chapters.json.",
+      "no_main_write": true,
+      "acquisition_sha": "77cb9b8568f410dadca92bccb36aa17c8f317d3a"
     }
   ]
 }
