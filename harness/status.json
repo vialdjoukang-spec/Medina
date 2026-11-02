@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-02T01:31:49+00:00",
+  "generated_at": "2026-11-02T01:41:49+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T01:31:49+00:00",
+    "checked_at": "2026-11-02T01:41:49+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T01:31:49+00:00",
+    "observed_at": "2026-11-02T01:41:49+00:00",
     "ok": true,
     "findings": [],
     "interval_seconds": 600,
-    "observer_pid": 44421,
+    "observer_pid": 46315,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
   "tests": {
     "ok": true,
-    "code_sha256": "d89b238dd18bc82125096bad81c3f4e8cd8ddfcc5dee41d0e270cb0fe9090662",
-    "at": "2026-11-02T01:31:49+00:00",
+    "code_sha256": "55d0d148457516d6ea57f4ea0fe4606857f049d6f5950d6fa522daa6d3092ef5",
+    "at": "2026-11-02T01:41:32+00:00",
     "returncode": 0,
     "log": "runtime/tests.log"
   },
@@ -76,10 +76,10 @@
       "clinical_orchestration": true,
       "lesson": "G02",
       "worktree": "/workspace/Medina-neurologie",
-      "stage": "redaction",
+      "stage": "verification",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T01:29:40+00:00",
-      "message": "Passages CH/EU et FI lus; porte recherche passée avec lacunes explicites. Ajouts monographiques et sémiologiques ciblés.",
+      "activity_at": "2026-11-02T01:37:38+00:00",
+      "message": "Aperçu natif construit, rendu Chromium vérifié; contrôles visuels image originale et mobile en cours, revue médicale finale ouverte.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -1096,7 +1096,7 @@
           "Private GitHub cron and local watch depend on runner/environment availability"
         ]
       },
-      "activity_age_seconds": 130,
+      "activity_age_seconds": 252,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -1134,10 +1134,10 @@
       "clinical_orchestration": false,
       "lesson": "E00",
       "worktree": "/workspace/Medina-endocrinologie",
-      "stage": "recherche",
+      "stage": "verification",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T01:29:53+00:00",
-      "message": "FI Euthyrox relue; erreur absorption démontrée; consensus ENDO-ERN et sources suisses consultés; original anatomie/histologie humain acquis et inspecté.",
+      "activity_at": "2026-11-02T01:40:50+00:00",
+      "message": "E00 reprise substantielle rédigée ; vérification des six onglets, FI, références et rendu natif avant revue.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -2425,7 +2425,7 @@
           "audit_sciences base historique fixe à examiner avant usage sur cours tardifs"
         ]
       },
-      "activity_age_seconds": 117,
+      "activity_age_seconds": 60,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -2453,17 +2453,17 @@
       "clinical_orchestration": false,
       "lesson": "N04",
       "worktree": "/workspace/Medina-nephrologie",
-      "stage": "recherche",
+      "stage": "verification",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T01:28:33+00:00",
-      "message": "38 références récupérées/empreintées (2 échecs externes), passages CH et européens effectivement lus pour SEMIO ; première correction repérée : vignette ne permet pas de favoriser seule la membraneuse ; terminologie rein-éponge à clarifier.",
+      "activity_at": "2026-11-02T01:41:45+00:00",
+      "message": "Six disciplines scientifiques substantielles désormais intégrées : audit PASS, 1779→5343 mots. Test statique N04 PASS (fenêtres/glossaire/styles/classes). Aperçu natif construit ; contrôle navigateur local en cours, portée set_content explicitée.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "47fa9ee87eb04cf4cb0c86f05c0bd38304c5c7effc7450acc020f2b51904e814",
       "branch": "codex/alpha77/n04-integrate-g1",
       "allowed_paths": [
@@ -2929,9 +2929,9 @@
           }
         ]
       },
-      "activity_age_seconds": 197,
+      "activity_age_seconds": 5,
       "activity_fresh": true,
-      "sections_per_hour": 0.0,
+      "sections_per_hour": 46.93,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -2961,17 +2961,17 @@
       "clinical_orchestration": false,
       "lesson": "C85",
       "worktree": "/workspace/Medina-hematologie",
-      "stage": "recherche",
+      "stage": "redaction",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T01:25:19+00:00",
-      "message": "C85: inventaire des quatre onglets, références et lacune sémiologique; lectures ciblées en cours",
+      "activity_at": "2026-11-02T01:35:51+00:00",
+      "message": "C85:9sections sémiologiques,6onglets;2images originales CC BY;corrections de formulation et actualisationEHA2025 en contrôle",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 4,
       "receipt_sha256": "eefeffc1101a1e7d319dc093e1abff08445f84772dd4222ed29f2a05aaae4062",
       "branch": "codex/alpha77/c85-integrate-g1",
       "allowed_paths": [
@@ -3181,9 +3181,9 @@
         },
         "next_action": "Passages sources, monographie, sémiologie et iconographie avant toute revue"
       },
-      "activity_age_seconds": 391,
+      "activity_age_seconds": 359,
       "activity_fresh": true,
-      "sections_per_hour": 0.0,
+      "sections_per_hour": 13.41,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
@@ -3380,12 +3380,80 @@
       "action": "watch",
       "ok": true,
       "findings": 0
+    },
+    {
+      "at": "2026-11-02T01:31:49+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T01:33:06+00:00",
+      "action": "extract",
+      "path": "chapters/E00/E00_b.html",
+      "cache_hit": false,
+      "bytes_input": 17849,
+      "bytes_output": 17848,
+      "bytes_avoided": 1
+    },
+    {
+      "at": "2026-11-02T01:33:06+00:00",
+      "action": "extract",
+      "path": "chapters/E00/E00_pop2.html",
+      "cache_hit": false,
+      "bytes_input": 19293,
+      "bytes_output": 12973,
+      "bytes_avoided": 6320
+    },
+    {
+      "at": "2026-11-02T01:33:37+00:00",
+      "action": "extract",
+      "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/recherche_E00/downloads/endoern2021.txt",
+      "cache_hit": false,
+      "bytes_input": 185491,
+      "bytes_output": 7734,
+      "bytes_avoided": 177757
+    },
+    {
+      "at": "2026-11-02T01:35:51+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "redaction",
+      "message": "C85:9sections sémiologiques,6onglets;2images originales CC BY;corrections de formulation et actualisationEHA2025 en contrôle"
+    },
+    {
+      "at": "2026-11-02T01:36:40+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "redaction",
+      "message": "Sémiologie intégrée en neuf sections ; 5 originaux humains acquis et annotés en HTML ; correction inférence membraneuse et rein-puits ; corpus antérieur conservé. Vérification scientifique puis aperçu natif en cours."
+    },
+    {
+      "at": "2026-11-02T01:37:38+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "verification",
+      "message": "Aperçu natif construit, rendu Chromium vérifié; contrôles visuels image originale et mobile en cours, revue médicale finale ouverte."
+    },
+    {
+      "at": "2026-11-02T01:40:50+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "verification",
+      "message": "E00 reprise substantielle rédigée ; vérification des six onglets, FI, références et rendu natif avant revue."
+    },
+    {
+      "at": "2026-11-02T01:41:45+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "verification",
+      "message": "Six disciplines scientifiques substantielles désormais intégrées : audit PASS, 1779→5343 mots. Test statique N04 PASS (fenêtres/glossaire/styles/classes). Aperçu natif construit ; contrôle navigateur local en cours, portée set_content explicitée."
     }
   ],
   "cache": {
     "hits": 1,
-    "misses": 7,
-    "bytes_avoided": 971051
+    "misses": 10,
+    "bytes_avoided": 1155129
   },
   "monitor": {
     "mode": "GitHub Actions déclenché sur branche par publication locale toutes600s",
