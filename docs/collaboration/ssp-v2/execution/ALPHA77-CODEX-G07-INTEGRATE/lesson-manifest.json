@@ -1,0 +1,1092 @@
+{
+  "code": "G07",
+  "title": "G07 — Abcès et granulomes au cours de maladies classées ailleurs",
+  "author": "sol_neurologie",
+  "harness_agent_id": "astra_neurologie",
+  "model": "gpt-6.1-sol",
+  "reasoning": "high",
+  "recorded_at": "2026-11-02T15:37:41.854707+00:00",
+  "branch": "codex/alpha77/g07-integrate-g1",
+  "base": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+  "sources": [
+    {
+      "id": "R1",
+      "title": "Tuberculose en Suisse : guide OFSP et Ligue pulmonaire",
+      "url": "https://www.bag.admin.ch/dam/fr/sd-web/fPW7HAdyOiZ0/tuberkulose-handbuch.pdf",
+      "publisher": "OFSP et Ligue pulmonaire suisse",
+      "read_at": "2026-11-02T14:02:08.997020+00:00",
+      "section": "Chapitre 7.1, pages 36–38 : traitement et tableau 7-1 ; chapitre 6 : interactions ; chapitre 11, pages 55–56 : assurances et coordination cantonale",
+      "passage": "Le guide suisse distingue le schéma usuel de tuberculose et la méningite tuberculeuse : après deux mois de quatre médicaments, la continuation par isoniazide et rifampicine dure dix mois dans la méningite, soit douze mois au total. Cela ne définit pas à lui seul la durée d’un tuberculome isolé. Les doses adultes du tableau sont H 5 (4–6), R 10 (8–12), Z 25 (20–30) et E 15 (15–20) mg/kg/j. Le bilan et les interactions précèdent le traitement. Le chapitre financier décrit le rôle des assurances et du canton, sans dispense générale de participation aux coûts.",
+      "population": "Tuberculose en Suisse ; tableaux adultes et enfants distincts",
+      "limits": "Lecture ciblée ; pas tous les chapitres. Le tuberculome isolé ne reçoit pas automatiquement la durée de méningite. Guide 2024 confronté à l’essai de 2025.",
+      "source_sha256": "8fb42302a5347cb132853a1a979b203250c82cb878b62b3e7a48e1dc55be4cee",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R2",
+      "title": "Rifampicin Labatec : information professionnelle",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680502640015",
+      "publisher": "Swissmedic, information professionnelle via AmiKo",
+      "read_at": "2026-11-02T14:02:08.997020+00:00",
+      "section": "Doses adultes et patients de plus de douze ans, rein et foie, voies orale et intraveineuse, contre-indications pertinentes, mécanisme, interactions et date",
+      "passage": "La dose usuelle adulte de rifampicine pour la tuberculose est de 10 (8–12) mg/kg/j, au maximum 600 mg/j dans cette spécialité. La FI de Rifampicin Labatec contre-indique une clairance de créatinine inférieure à 25 ml/min et les atteintes hépatiques sévères citées. La rifampicine inhibe la polymérase bactérienne de l’acide ribonucléique et induit puissamment les enzymes et transporteurs humains : les interactions doivent être revues au début et à l’arrêt. Les règles propres à une association fixe restent distinctes.",
+      "population": "Adulte et enfant de plus de 12 ans pour les doses citées",
+      "limits": "Pas une lecture de toutes les situations et de tous les médicaments associés. Ne pas appliquer le maximum de cette spécialité à toute association fixe.",
+      "source_sha256": "e5418adea36b0575a282e98b75f34edd1fa9474c6c7ae3ddac64eed3d58ed9d6",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R3",
+      "title": "Essai de rifampicine à forte dose dans la méningite tuberculeuse",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7618564/",
+      "publisher": "HARVEST, essai international publié dans le New England Journal of Medicine",
+      "read_at": "2026-11-02T14:06:20.070487+00:00",
+      "section": "Résumé, méthodes, résultats et discussion du texte principal de l’essai HARVEST ; identité et population vérifiées",
+      "passage": "L’essai HARVEST compare 35 et 10 mg/kg/j de rifampicine pendant huit semaines chez des adultes avec méningite tuberculeuse. L’analyse porte sur 499 personnes ; le critère principal ne montre pas de bénéfice de survie à six mois. Les estimations de mortalité de Kaplan–Meier sont 44,6 % et 40,7 %, avec un rapport de risque de 1,17 (intervalle de confiance à 95 % : 0,89–1,54 ; p = 0,25). Ce résultat ne valide pas une augmentation empirique et ne concerne ni les enfants ni le tuberculome isolé.",
+      "population": "Adultes avec méningite tuberculeuse en Indonésie, Afrique du Sud et Ouganda",
+      "limits": "Suppléments et tous les tableaux non relus. Adultes avec méningite, pas enfant ni tuberculome isolé. Estimations de Kaplan–Meier distinguées des proportions brutes.",
+      "source_sha256": "53f77cdecff347418f0a77efe527c929e9e1098ac3aa728d6cd27eac58372118",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R4",
+      "title": "Tuberculose en 2025 : bulletin OFSP 2026",
+      "url": "https://www.bag.admin.ch/dam/it/sd-web/KgDGxmnGvfis/Bulletin-2026-Tuberculose.pdf",
+      "publisher": "OFSP, Bulletin tuberculose",
+      "read_at": "2026-11-02T14:06:20.070487+00:00",
+      "section": "Section 2 : déclaration ; section 3.1, tableaux 1–2 et démographie de section 3.2",
+      "passage": "L’OFSP recense 544 cas de tuberculose en 2025 en Suisse et au Liechtenstein, soit 6,0 pour 100000 habitants. Ce sont toutes les tuberculoses déclarées, pas les lésions G07. Le bulletin décrit la déclaration médicale lorsque le diagnostic est confirmé et qu’au moins trois antituberculeux sont commencés, ainsi que la déclaration de laboratoire et de l’issue du traitement. Le délai réglementaire exact n’a pas été établi par cette lecture.",
+      "population": "Suisse et Liechtenstein ; ensemble des tuberculoses déclarées",
+      "limits": "Données de toutes les tuberculoses déclarées en Suisse et au Liechtenstein ; pas une incidence G07. Délai exact de déclaration non vérifié.",
+      "source_sha256": "5df009bf4971eeb2ac4ef7f4bf3bf32b401ddc1f24304ac24a2be05d1e2b1c7d",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R5",
+      "title": "BASHH 2025 : traitement de l’infection gonococcique",
+      "url": "https://www.bashh.org/_userfiles/pages/files/fiferetal2025britishassociationofsexualhealthandhivuknationalguidelineforthemanagementofinfection_1.pdf",
+      "publisher": "British Association for Sexual Health and HIV, Fifer et coll.",
+      "read_at": "2026-11-02T14:06:20.070487+00:00",
+      "section": "Identité du guide et passage sur infection disséminée, arthrite, méningite et endocardite",
+      "passage": "Le guide britannique BASHH 2025 traite l’infection gonococcique disséminée. Il distingue notamment arthrite et méningite, avec des durées différentes et un recours spécialisé. Il ne fournit pas de durée validée propre à l’abcès cérébral gonococcique. Le document n’est pas un guide IUSTI 2025. Une durée de sept jours pour l’arthrite ne devient donc jamais la durée d’un abcès cérébral.",
+      "population": "Infection gonococcique disséminée, méningite et endocardite ; pas de protocole validé d’abcès cérébral",
+      "limits": "Guide britannique, pas IUSTI. Pas de protocole validé de durée d’abcès cérébral. Les chiffres de syndromes voisins ne sont pas extrapolés.",
+      "source_sha256": "c7b591a7b8a400035e189dabb042ca601001457b1006e3e1f55c986ac55d1adc",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R6",
+      "title": "Payne et coll. : actualisation sur la schistosomiase",
+      "url": "https://researchonline.lshtm.ac.uk/id/eprint/4671297/7/Payne-etal-2023-An-update-on-schistosomiasis.pdf",
+      "publisher": "Payne, Chiodini et Bustinduy, manuscrit de synthèse UCL/LSHTM",
+      "read_at": "2026-11-02T14:06:20.070487+00:00",
+      "section": "Passages neurologiques, diagnostic, traitement et limites des pratiques de centres",
+      "passage": "La revue européenne décrit les lésions cérébrales ou médullaires liées aux œufs de schistosomes et à la réaction inflammatoire de l’hôte. Une atteinte neurologique requiert une prise en charge urgente et spécialisée. Certains centres emploient des schémas prolongés ou renforcés de praziquantel et des corticoïdes, sans démontrer un schéma universel. Le risque de strongyloïdose sous corticoïdes doit être évalué. Aucune FI suisse de praziquantel n’a été retrouvée par les requêtes réalisées ; cela ne prouve pas une absence d’accès au médicament.",
+      "population": "Schistosomiase, dont complications neurologiques ; pratiques de certains centres",
+      "limits": "Revue, pas FI suisse de praziquantel. Schémas de centres non universels. Ancienne directive allemande échue non utilisée comme recommandation actuelle.",
+      "source_sha256": "69edaea3e6868ac2e2e10692f4251b2c8874e8c33218bf62a19daafd20f46632",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R7",
+      "title": "Guide international de méningite tuberculeuse",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12419961/",
+      "publisher": "Tuberculous Meningitis International Research Consortium, guide international",
+      "read_at": "2026-11-02T14:23:31.201972+00:00",
+      "section": "Résumé, diagnostic, traitement adjuvant, réactions paradoxales, soins neurologiques et neurochirurgie, encadrés 1–4 et légende complète de figure 1",
+      "passage": "Le guide international recommande les tests moléculaires adaptés et la culture dans la méningite tuberculeuse ; un résultat négatif n’exclut pas la maladie. Une ponction lombaire n’est réalisée que si elle est sûre : une lésion expansive ou une hypertension intracrânienne peut imposer l’imagerie et une autre stratégie. Les corticoïdes sont fortement recommandés dans la méningite sans VIH, avec décision individualisée en présence du VIH. Les données sur le moment de la chirurgie des tuberculomes restent limitées ; cela n’abolit pas l’urgence d’un effet de masse.",
+      "population": "Méningite tuberculeuse ; ne pas généraliser à tout granulome isolé",
+      "limits": "Sections ciblées, pas tous les suppléments. Périmètre méningite conservé ; recommandations non extrapolées à toute masse isolée. Essai récent lu séparément.",
+      "source_sha256": "04a4a0708925102748a94f4b0ac7fa9dd7b52176ee3ee0898052a13a4eb46a44",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R8",
+      "title": "Rimstar : information professionnelle",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680567680032",
+      "publisher": "Swissmedic, information professionnelle via AmiKo",
+      "read_at": "2026-11-02T14:23:31.201972+00:00",
+      "section": "Composition, indications, doses standard et tableau pondéral, qualification des atteintes du système nerveux, rein, foie, contre-indications pertinentes, surveillance, mécanismes et date",
+      "passage": "Chaque comprimé de Rimstar contient 150 mg de rifampicine, 75 mg d’isoniazide, 400 mg de pyrazinamide et 275 mg de chlorhydrate d’éthambutol. Le tableau pondéral standard concerne une tuberculose non compliquée ; la FI renvoie explicitement à des recommandations détaillées pour le système nerveux central. La clairance inférieure à 30 ml/min et les situations hépatiques ou oculaires citées sont des contre-indications. Le praziquantel est contre-indiqué avec cette association. Les maxima et seuils ne sont pas interchangeables avec chaque produit séparé.",
+      "population": "Association fixe Rimstar ; tableau standard pour tuberculose non compliquée",
+      "limits": "Tableau standard non utilisé comme calcul automatique cérébral. Notice ciblée ; pas toutes les situations particulières relues. Seuils et maxima distincts des produits séparés.",
+      "source_sha256": "fcbe9f3fc479537c6ebe48510d560eaa73f716a1a8b618265b654c23008a37ba",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R9",
+      "title": "Pyrazinamide Labatec : information professionnelle",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680576990023",
+      "publisher": "Swissmedic, information professionnelle via AmiKo",
+      "read_at": "2026-11-02T14:23:31.201972+00:00",
+      "section": "Doses, contexte compliqué, rein, contre-indications, surveillance hépatique, grossesse, mécanisme et date",
+      "passage": "La FI de Pyrazinamide Labatec décrit 25 (20–30) mg/kg/j, au maximum 2 g/j chez l’adulte et le patient de plus de dix ans, en prise quotidienne après le repas. Elle contre-indique notamment une clairance inférieure à 50 ml/min, la grossesse et l’allaitement, et impose une surveillance hépatique. Des paragraphes rénaux ne doivent pas servir à effacer la contre-indication explicite. L’activité dépend du milieu acide ; la résistance ne peut être réputée absente dans toutes les espèces de mycobactéries.",
+      "population": "Pyrazinamide Labatec, adulte et patient de plus de 10 ans",
+      "limits": "Notice ciblée. Tension entre contre-indication rénale et autres paragraphes signalée, sans prescription harmonisée de mémoire. Formulation ancienne sur la résistance non généralisée.",
+      "source_sha256": "0730eb63ee48e38b1e64495e34a29d928a6704fcf75a37a2cacb2348f9411013",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R10",
+      "title": "Myambutol : information professionnelle",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680331530013",
+      "publisher": "Swissmedic, information professionnelle via AmiKo",
+      "read_at": "2026-11-02T14:23:31.201972+00:00",
+      "section": "Composition, doses initiales et ultérieures, tableau rénal, risques et contrôles oculaires, limites pédiatriques, mécanisme et date",
+      "passage": "Myambutol contient du chlorhydrate d’éthambutol. La FI distingue une dose initiale pouvant atteindre 25 mg/kg/j et une phase ultérieure à 15 mg/kg/j, avec adaptation rénale particulière. Elle impose un examen oculaire initial puis toutes les quatre semaines, plus rapproché en cas d’atteinte rénale. Une modification de l’acuité, du champ ou des couleurs requiert une action urgente ; des séquelles visuelles peuvent persister. Les différences de seuils ou de mécanismes entre notices ne sont pas harmonisées de mémoire.",
+      "population": "Myambutol ; traitement antituberculeux, surveillance oculaire et rénale",
+      "limits": "Frontières rénales ambiguës non arrondies. Mécanismes formulés différemment dans deux notices : aucune cible moléculaire unique inventée.",
+      "source_sha256": "14c4be7e1383a8922ed85b2cd05e23e3680881bacc94d1c081f118463a021014",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R11",
+      "title": "OFS : fichier français de la CIM-10-GM 2024",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/32686265/master",
+      "publisher": "Office fédéral de la statistique",
+      "read_at": "2026-11-02T14:23:31.201972+00:00",
+      "section": "Introduction, date de validité, structure des colonnes et lignes G07, A06.6, A17.1, A17.8, A54.8 et B65",
+      "passage": "Le fichier français officiel identifie G07* comme code terminal, sans subdivision G07.x. Les libellés des causes associées ont été lus, notamment A06.6, A17.1, A17.8 et A54.8. Le fichier donne des libellés et une structure ; il ne contient pas toutes les inclusions, exclusions et règles contextuelles et ne certifie pas une facturation 2026.",
+      "population": "Libellés suisses du fichier des codes ; application annoncée au 1er janvier 2025",
+      "limits": "Fichier de libellés et structure sans toutes les inclusions ou exclusions ; pas une certification de codage ou facturation 2026.",
+      "source_sha256": "b3fb59de1891b4198f5a2b09a24a2e251cff542e5c5e35b7744486e4828d9724",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R12",
+      "title": "BfArM : entrée G07* de la classification 2024",
+      "url": "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-g00-g09.htm",
+      "publisher": "BfArM, classification ICD-10-GM",
+      "read_at": "2026-11-02T14:23:31.201972+00:00",
+      "section": "Entrée complète G07*, notes et six inclusions causales ; complément du fichier français OFS",
+      "passage": "L’entrée G07* décrit les abcès et granulomes intracrâniens et intrarachidiens au cours de maladies classées ailleurs. Les inclusions citent abcès amibien (A06.6), gonococcique (A54.8), tuberculeux (A17.8), granulome schistosomien (B65.-), tuberculome cérébral (A17.8) et méningé (A17.1). Ces inclusions ne sont pas une liste exhaustive de toutes les causes possibles. La lésion et la maladie causale doivent être documentées séparément.",
+      "population": "Entrée G07* et ses inclusions ; complément du fichier français",
+      "limits": "Classification allemande 2024, pas une règle de facturation suisse actuelle. Inclusions non présentées comme liste exclusive de toutes les causes.",
+      "source_sha256": "068d43bdeed142b724b93b95885e417ba8f933b89d4134d123a0ea975e7207d7",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R13",
+      "title": "Metronidazole SINT i.v. : information professionnelle",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680708870018",
+      "publisher": "Swissmedic, information professionnelle via AmiKo",
+      "read_at": "2026-11-02T14:23:31.201972+00:00",
+      "section": "Composition, indications et spectre, doses générales, durée et prolongation, rein et foie, risques neurologiques, contre-indications pertinentes, mécanisme et date",
+      "passage": "Le flacon de Metronidazole SINT i.v. contient 500 mg pour 100 ml et 326 mg de sodium. La FI décrit une activité contre des anaérobies et Entamoeba histolytica, sans schéma spécifique validé de lésion cérébrale amibienne. La durée usuelle courte de la notice ne détermine pas seule celle d’une infection cérébrale rare. Une prolongation exceptionnelle doit être justifiée et surveillée, notamment par l’hémogramme et l’examen neurologique. Ataxie, confusion, myoclonies ou paresthésies peuvent annoncer une toxicité.",
+      "population": "Metronidazole SINT i.v. ; infections anaérobies et spectre antiparasitaire, sans dose cérébrale amibienne spécifique",
+      "limits": "Schéma général anaérobie et spectre antiparasitaire ne démontrent pas une dose cérébrale amibienne. Produit distinct de la présentation B. Braun, notamment pour le sodium.",
+      "source_sha256": "9b30acc1e565cb4f18634d1563a05a165fb6e62d6b7d599fe21b34b7a9323803",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R14",
+      "title": "Dexamethasone Galepharm Amp : information professionnelle",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680667100010",
+      "publisher": "Swissmedic, information professionnelle via AmiKo",
+      "read_at": "2026-11-02T14:23:31.201972+00:00",
+      "section": "Composition phosphate et base, principes généraux d’œdème, rubrique enfant identifiée séparément, sevrage, propriétés et date",
+      "passage": "Dexamethasone Galepharm Amp 4 mg par 1 ml exprime une masse de phosphate correspondant à 3,32 mg de dexaméthasone ; 8 mg par 2 ml correspondent à 6,64 mg de base. Aucune équivalence avec un comprimé n’est déduite silencieusement. Les schémas généraux d’œdème et les schémas pédiatriques de la FI ne constituent pas une dose adulte universelle de méningite tuberculeuse. L’effet immunosuppresseur et la nécessité d’un sevrage adapté sont pris en compte.",
+      "population": "Dexamethasone Galepharm Amp ; composition et principes généraux, schémas pédiatriques distincts",
+      "limits": "Pas de conversion automatique en comprimés ni de schéma adulte universel de méningite. Une dose pédiatrique ne devient pas une dose adulte.",
+      "source_sha256": "74b014d44e276ba144e37b85e1323a09b0d0ff5acd4fa1ed169fcab63323665d",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R15",
+      "title": "Marais et coll. : lésions expansives tuberculeuses intracrâniennes",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6996525/",
+      "publisher": "Marais et coll., Wellcome Open Research",
+      "read_at": "2026-11-02T14:51:07.912961+00:00",
+      "section": "Résumé et huit parties cliniques : mécanismes, clinique, imagerie, réactions paradoxales, traitement médical et chirurgical, durée avec tableau 1 et justification ; légendes et droits",
+      "passage": "La revue distingue le tuberculome organisé avec cellules inflammatoires, caséation et réaction périphérique de l’abcès tuberculeux purulent. Les aspects en résonance magnétique varient avec la consistance de la lésion et ne prouvent pas seuls l’agent. Une augmentation paradoxale et un rehaussement persistant peuvent survenir ; ils ne prouvent pas à eux seuls l’échec ou l’activité bactérienne. Les durées de neuf à douze mois couramment utilisées pour les lésions expansives reposent surtout sur des avis et séries, sans essai comparatif décisif de durée du tuberculome isolé. Biopsie, drainage et décompression se discutent selon preuve, résistance et risque mécanique.",
+      "population": "Lésions expansives tuberculeuses intracrâniennes ; revue de séries et avis spécialisés",
+      "limits": "Revue de séries et avis ; durée optimale du tuberculome isolé non fixée par essai comparatif. Figure sous licence ouverte repérée mais fichier original non récupéré, donc non utilisé.",
+      "source_sha256": "d2e4f66e3909c0e7cf7c18a86e0a48a82eca3e88caadfc07f7af7435f9e0721a",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R16",
+      "title": "Cooney et coll. : avancées dans le diagnostic et le traitement de l’amibiase",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12969968/",
+      "publisher": "Cooney et coll., Frontline Gastroenterology",
+      "read_at": "2026-11-02T14:51:07.912961+00:00",
+      "section": "Résumé, cycle, invasion tissulaire, risques, localisations rares, diagnostic avec tableaux 2–3, traitement avec tableau 5 et droits",
+      "passage": "La revue d’amibiase distingue l’infection tissulaire et le réservoir intestinal. Un agent luminal ne traite pas une lésion cérébrale. L’atteinte extra-intestinale autre qu’hépatique est renvoyée au spécialiste et aucun schéma cérébral universel ne peut être tiré du tableau de colite ou d’abcès hépatique. Les tests moléculaires peuvent distinguer l’espèce pathogène des espèces non pathogènes ; une sérologie persistante ou un résultat intestinal ne prouve pas seul l’origine d’une masse cérébrale.",
+      "population": "Amibiase invasive ; les formes extra-intestinales autres qu’hépatiques relèvent du spécialiste",
+      "limits": "Localisation cérébrale renvoyée au spécialiste. Doses digestives ou hépatiques non transposées. Figure sous licence non commerciale non importée. Une affirmation de foyer hépatique constant n’est pas utilisée comme règle d’exclusion.",
+      "source_sha256": "cfbc69750ca114ef3af763c27f875946a26a1c4d6d3a25adf118e141c6339eb4",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R17",
+      "title": "Humatin : information professionnelle",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680252290102",
+      "publisher": "Swissmedic, information professionnelle via AmiKo",
+      "read_at": "2026-11-02T14:51:07.912961+00:00",
+      "section": "Composition sel et base, indications intestinales, doses digestives, contre-indications dont amibiase extra-intestinale, rein, grossesse, allaitement, interactions et mécanisme",
+      "passage": "Une capsule d’Humatin contient 357,2 mg de sulfate correspondant à 250 mg de paromomycine base. L’absorption intestinale est très faible ; une muqueuse ulcérée peut toutefois augmenter le risque systémique. La FI interdit l’administration dans l’amibiase extra-intestinale : cette restriction ne doit pas être réécrite comme une simple invitation à ne pas traiter seul. La gestion d’un éventuel réservoir luminal après une forme invasive relève d’une décision spécialisée et pharmaceutique explicite. L’atteinte rénale sévère, la grossesse et l’allaitement font partie des contre-indications lues.",
+      "population": "Humatin, paromomycine intestinale ; restriction explicite pour amibiase extra-intestinale",
+      "limits": "Pas de dose cérébrale ni de réinterprétation de la restriction extra-intestinale. Décision spécialisée nécessaire pour articuler la revue internationale et le produit suisse.",
+      "source_sha256": "5a6fd3b0fe37ed3a44111780fc3ff79ce330be8b6f96381634ebfc69d7789a82",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R18",
+      "title": "Medical Research Council : examen de la force musculaire",
+      "url": "https://www.ukri.org/councils/mrc/facilities-and-resources/find-an-mrc-facility-or-resource/mrc-muscle-scale/",
+      "publisher": "Medical Research Council, diffusion UKRI",
+      "read_at": "2026-11-02T15:08:26.385688+00:00",
+      "section": "Manuel, page 7 du document numérique correspondant à la page imprimée 1 : grades 0–5 et méthode ; droits officiels",
+      "passage": "L’échelle de force du Medical Research Council distingue 0 : aucune contraction, 1 : contraction perceptible sans mouvement utile, 2 : mouvement avec pesanteur éliminée, 3 : mouvement contre la pesanteur, 4 : mouvement contre résistance et 5 : force normale. Il faut isoler le mouvement et relever les compensations. Ce sont des grades de force, différents des stades de gravité I à III de la méningite tuberculeuse. Traduction pédagogique et attribution selon les conditions du MRC.",
+      "population": "Examen de la force musculaire ; pas le classement de gravité de la méningite tuberculeuse",
+      "limits": "Lecture Sol antérieure réellement faite puis grades revérifiés pour G07. Traduction pédagogique ; pas le classement de gravité de méningite. Aucun dessin anatomique du manuel importé.",
+      "source_sha256": "fbfac32f049741d41241a9c7dc01aa0d58360234b747bd5ab56647c3d8bb5ee8",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": true
+    },
+    {
+      "id": "R19",
+      "title": "PROFILES : situations cliniques de formation médicale",
+      "url": "https://www.siwf.ch/files/pdf24/profiles_2017-broschuere.pdf",
+      "publisher": "PROFILES, objectifs nationaux suisses de formation médicale",
+      "read_at": "2026-11-02T15:08:26.385688+00:00",
+      "section": "Passages des situations 101–105, 205 et 207 : céphalée, cognition, parésie, sensibilité, crise, déficit aigu et méningisme",
+      "passage": "Les situations de PROFILES 2017 comprennent céphalée, trouble cognitif, parésie, trouble sensitif et crise, ainsi que déficit neurologique aigu et céphalée sévère avec méningisme. La leçon propose un lien pédagogique avec ces situations ; elle ne prétend pas constituer une nouvelle liste fédérale ou une correspondance officielle de 2026.",
+      "population": "Repères pédagogiques de situations cliniques ; correspondance locale explicitée",
+      "limits": "Lecture Sol antérieure réutilisée puis passages revérifiés. Correspondance pédagogique locale, pas une nouvelle table fédérale de 2026.",
+      "source_sha256": "3c07db8e95b8aec160a2c19682b084d15cc7d9eea4fb8f757202c31b8b27177f",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": true
+    },
+    {
+      "id": "R20",
+      "title": "Gray1196 : enveloppes méningées normales et droits",
+      "url": "https://commons.wikimedia.org/wiki/File:Gray1196.png",
+      "publisher": "Gray, Anatomy of the Human Body ; Wikimedia Commons",
+      "read_at": "2026-11-02T15:08:26.385688+00:00",
+      "section": "Original numérique inspecté, repères et page de droits Commons revus pour G07",
+      "passage": "L’illustration Gray1196 est un original humain historique montrant des enveloppes méningées normales. La page de droits et les pixels ont été revus ; la reproduction mécanique de l’ouvrage de 1918 est donnée dans le domaine public. Elle sert à nommer des plans et ne montre ni granulome ni imagerie d’un patient. Les annotations françaises restent dans un tableau adjacent, sans modification des pixels.",
+      "population": "Illustration anatomique humaine historique des enveloppes méningées normales",
+      "limits": "Anatomie humaine historique normale ; pas un granulome ni une carte opératoire. Pixels conservés et annotations françaises adjacentes. Aucun appel au moteur de recherche de figures.",
+      "source_sha256": "dc7ed62021eeff9cab357368ee6b6e18dab113b6ff4bb103e057dfdc1c7ed482",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": true
+    },
+    {
+      "id": "R21",
+      "title": "Gray764 : voies motrices normales et droits",
+      "url": "https://commons.wikimedia.org/wiki/File:Gray764.png",
+      "publisher": "Gray, Anatomy of the Human Body ; Wikimedia Commons",
+      "read_at": "2026-11-02T15:08:26.385688+00:00",
+      "section": "Original numérique inspecté, repères et page de droits Commons revus pour G07 ; attribution historique et adaptation indiquées",
+      "passage": "L’illustration Gray764 est un original humain historique des voies motrices, avec attribution historique à Gray/Carter et adaptation indiquée de Poirier. La page de droits et les pixels ont été revus ; le document relève du domaine public selon la page consultée. Les repères français expliquent la localisation fonctionnelle sans transformer l’original en carte opératoire ou en illustration de granulome.",
+      "population": "Illustration anatomique humaine historique des voies motrices normales",
+      "limits": "Anatomie normale historique ; trajet schématique non utilisé comme preuve de maladie. Pixels conservés, annotations adjacentes ; aucune validation médicale humaine revendiquée.",
+      "source_sha256": "fad33949feb30902f1f7fd54b1036ae2223357b40541a9b796cd32822fbecef5",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": true
+    },
+    {
+      "id": "R22",
+      "title": "Ceftriaxon Labatec : information professionnelle",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680598760031",
+      "publisher": "Swissmedic, information professionnelle via AmiKo",
+      "read_at": "2026-11-02T15:08:26.385688+00:00",
+      "section": "Lecture réelle de Sol pour G06 : doses adultes générales, rein, voie et précautions pertinentes, mécanisme et date, explicitement réutilisée",
+      "passage": "La lecture Sol G06 de Ceftriaxon Labatec est réutilisée explicitement. Les doses adultes générales et l’adaptation rénale de la FI ne démontrent pas une durée d’abcès cérébral gonococcique. Une clairance inférieure à 10 ml/min ou une dialyse impose un maximum de 2 g/j selon cette spécialité. Une fréquence de guide britannique doit être identifiée comme telle et confrontée à la notice et au protocole du centre.",
+      "population": "Ceftriaxon Labatec ; doses adultes générales et limite rénale, lecture Sol G06 réutilisée",
+      "limits": "Pas une nouvelle lecture intégrale G07. Fréquence britannique et notice suisse distinguées ; aucune durée validée d’abcès cérébral gonococcique déduite.",
+      "source_sha256": "4de7a15646144d43d03647d5f55288eb8b37ee4e6b8442c84159212ce8086246",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": true
+    }
+  ],
+  "source_counts": {
+    "total": 22,
+    "initially_read_G07": 17,
+    "prior_Sol_reads_reused_or_rechecked": 5
+  },
+  "monograph": [
+    {
+      "point": 1,
+      "title": "Définition",
+      "anchor": "g07-definition",
+      "sources": [
+        "R7",
+        "R11",
+        "R12",
+        "R15"
+      ],
+      "coverage_explanation": "Abcès purulent, granulome organisé, tuberculome parenchymateux et lésion méningée sont distingués ; G07 est une manifestation et ne définit pas un traitement unique.",
+      "evidence": [
+        "content-snapshot.html#g07-definition",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 2,
+      "title": "Épidémiologie",
+      "anchor": "g07-epidemio",
+      "sources": [
+        "R3",
+        "R4",
+        "R6",
+        "R15",
+        "R16"
+      ],
+      "coverage_explanation": "Les 544 cas de toutes tuberculoses en Suisse/Liechtenstein en2025 gardent leur dénominateur ; l’incidence nationale de G07 et les répartitions exhaustives restent une lacune explicite.",
+      "evidence": [
+        "content-snapshot.html#g07-epidemio",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 3,
+      "title": "Physiopathologie",
+      "anchor": "g07-s-physio-body",
+      "sources": [
+        "R6",
+        "R7",
+        "R15",
+        "R18",
+        "R20",
+        "R21"
+      ],
+      "coverage_explanation": "Six sciences relient anatomie normale humaine, tissu granulomateux, inflammation, compression et fonction ; des schémas conceptuels sourcés ne sont pas des anatomies inventées.",
+      "evidence": [
+        "content-snapshot.html#g07-s-physio-body",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 4,
+      "title": "Démarche clinique",
+      "anchor": "g07-question",
+      "sources": [
+        "R7",
+        "R15",
+        "R19"
+      ],
+      "coverage_explanation": "Le raisonnement part de la sécurité et du territoire avant la preuve causale ; imagerie, prélèvements sûrs et traitement spécifique sont organisés selon la gravité et les ressources.",
+      "evidence": [
+        "content-snapshot.html#g07-question",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 5,
+      "title": "Anamnèse",
+      "anchor": "g07-anamnese",
+      "sources": [
+        "R6",
+        "R7",
+        "R15",
+        "R16"
+      ],
+      "coverage_explanation": "Chronologie des signes, traitements, observance, exposition précise et foyers extracrâniens sont recueillis sans transformer voyage, origine ou test isolé en diagnostic de masse.",
+      "evidence": [
+        "content-snapshot.html#g07-anamnese",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 6,
+      "title": "Examen clinique",
+      "anchor": "g07-clinique",
+      "sources": [
+        "R10",
+        "R15",
+        "R18"
+      ],
+      "coverage_explanation": "Vigilance, langage, motricité, sensibilité et territoire sont décrits et répétés ; la force0–5 garde sa méthode et ses limites, et une plainte visuelle peut aussi être médicamenteuse.",
+      "evidence": [
+        "content-snapshot.html#g07-clinique",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 7,
+      "title": "Syndromes",
+      "anchor": "g07-s-signs",
+      "sources": [
+        "R6",
+        "R7",
+        "R15",
+        "R18"
+      ],
+      "coverage_explanation": "La sémiologie distingue faiblesse, crise, vigilance, signes médullaires et retentissement ; le signe localise une fonction mais n’identifie pas seul l’agent ou le type de lésion.",
+      "evidence": [
+        "content-snapshot.html#g07-s-signs",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 8,
+      "title": "Diagnostic positif",
+      "anchor": "g07-e-preuves",
+      "sources": [
+        "R6",
+        "R7",
+        "R11",
+        "R12",
+        "R15",
+        "R16"
+      ],
+      "coverage_explanation": "Degrés de preuve de lésion, maladie causale et agent sont séparés ; histologie, culture, moléculaire et contexte peuvent réviser une lésion annulaire supposée tuberculeuse.",
+      "evidence": [
+        "content-snapshot.html#g07-e-preuves",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 9,
+      "title": "Explorations",
+      "anchor": "g07-e-imagerie",
+      "sources": [
+        "R6",
+        "R7",
+        "R15",
+        "R16"
+      ],
+      "coverage_explanation": "Imagerie pour territoire/risque, diffusion interprétée selon consistance, prélèvements préparés avec laboratoire ; test négatif ou sérologie ne répondent pas seuls à toute question.",
+      "evidence": [
+        "content-snapshot.html#g07-e-imagerie",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 10,
+      "title": "Arbre diagnostique",
+      "anchor": "g07-urgence",
+      "sources": [
+        "R7",
+        "R15"
+      ],
+      "coverage_explanation": "L’aggravation déclenche stabilisation, imagerie et avis urgent ; effet de masse ou hydrocéphalie peuvent rendre la ponction lombaire dangereuse et modifier la stratégie de preuve.",
+      "evidence": [
+        "content-snapshot.html#g07-urgence",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 11,
+      "title": "Prise en charge",
+      "anchor": "g07-traitement",
+      "sources": [
+        "R1",
+        "R2",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R13",
+        "R14",
+        "R17",
+        "R22"
+      ],
+      "coverage_explanation": "Conduites causales et contrôle mécanique sont associés ; FI suisses datées gardent produits, restrictions et différences ; aucune dose cérébrale rare n’est fabriquée depuis une indication voisine.",
+      "evidence": [
+        "content-snapshot.html#g07-traitement",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 12,
+      "title": "Prévention et suivi",
+      "anchor": "g07-suivi",
+      "sources": [
+        "R1",
+        "R4",
+        "R6",
+        "R10",
+        "R13",
+        "R15",
+        "R16"
+      ],
+      "coverage_explanation": "Trajectoire clinique, observance, toxicités et images sont confrontées ; le rehaussement persistant ne prouve pas seul l’activité. Prévention et parcours suivent l’agent et les autorités compétentes.",
+      "evidence": [
+        "content-snapshot.html#g07-suivi",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 13,
+      "title": "Points clés",
+      "anchor": "g07-criteres",
+      "sources": [
+        "R1",
+        "R7",
+        "R11",
+        "R12",
+        "R14",
+        "R15",
+        "R18",
+        "R19"
+      ],
+      "coverage_explanation": "G07 sans subdivision et ses six inclusions sont présentés ; critères génériques non inventés, douze mois de méningite distingués du tuberculome isolé et unités de base explicites.",
+      "evidence": [
+        "content-snapshot.html#g07-criteres",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 14,
+      "title": "Pièges",
+      "anchor": "g07-e-cas",
+      "sources": [
+        "R7",
+        "R10",
+        "R15",
+        "R19"
+      ],
+      "coverage_explanation": "Quatre cas fictifs entraînent la sécurité de ponction, la lecture d’une image persistante, la toxicité optique et les seuils propres aux produits ; chaque réponse est justifiée et contextualisée.",
+      "evidence": [
+        "content-snapshot.html#g07-e-cas",
+        "recherche_G07/sources.json"
+      ]
+    }
+  ],
+  "matrix20": [
+    {
+      "point": 1,
+      "title": "Question clinique et examen fédéral",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g07-question",
+      "sources": [
+        "R7",
+        "R15",
+        "R19"
+      ],
+      "scope": "Question effectivement traitée avec les sources indiquées : Reconnaître une lésion focale menaçante, assurer la sécurité avant prélèvement et rechercher la cause.",
+      "evidence": [
+        "content-snapshot.html#g07-question",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 2,
+      "title": "Définition et périmètre CIM-10-GM",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g07-codage",
+      "sources": [
+        "R11",
+        "R12"
+      ],
+      "scope": "Question effectivement traitée avec les sources indiquées : G07* manifestation ; libellés français OFS lus et notes BfArM complémentaires.",
+      "evidence": [
+        "content-snapshot.html#g07-codage",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 3,
+      "title": "Classifications et stades",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g07-definition",
+      "sources": [
+        "R7",
+        "R15"
+      ],
+      "scope": "Question effectivement traitée avec les sources indiquées : Distinguer tuberculome, abcès, lésion méningée et granulome ; pas de stade universel de tout G07.",
+      "evidence": [
+        "content-snapshot.html#g07-definition",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 4,
+      "title": "Épidémiologie suisse puis européenne",
+      "status": "covered",
+      "research_status": "LACUNE",
+      "anchor": "g07-epidemio",
+      "sources": [
+        "R4",
+        "R6",
+        "R15",
+        "R16"
+      ],
+      "scope": "Question effectivement traitée avec les sources indiquées : Recherche OFSP 2026 et littérature européenne : 544 cas de toutes TB en Suisse/Liechtenstein, pas une incidence G07 ; incidence/prévalence suisse de G07 non établie. Covered signifie que la question et sa lacune sont traitées dans le cours, pas que la donnée ou le protocole manquant a été trouvé ; la matrice Betta conserve LACUNE.",
+      "evidence": [
+        "content-snapshot.html#g07-epidemio",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 5,
+      "title": "Normal vers pathologique",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g07-s-physio-body",
+      "sources": [
+        "R15",
+        "R18",
+        "R20",
+        "R21"
+      ],
+      "scope": "Question effectivement traitée avec les sources indiquées : Anatomie humaine normale, organisation granulomateuse, œdème et déficit fonctionnel ; six sciences.",
+      "evidence": [
+        "content-snapshot.html#g07-s-physio-body",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 6,
+      "title": "Étiologies et facteurs de risque",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g07-causes",
+      "sources": [
+        "R6",
+        "R7",
+        "R12",
+        "R15",
+        "R16"
+      ],
+      "scope": "Question effectivement traitée avec les sources indiquées : Tuberculose, amibiase, gonococcie et schistosomiase citées par les inclusions, sans liste exclusive de toutes les causes.",
+      "evidence": [
+        "content-snapshot.html#g07-causes",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 7,
+      "title": "Anamnèse et symptômes",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g07-anamnese",
+      "sources": [
+        "R6",
+        "R15",
+        "R16"
+      ],
+      "scope": "Question effectivement traitée avec les sources indiquées : Chronologie, déficit, crises, exposition, traitements et foyer extracrânien ; pas de fréquences suisses inventées.",
+      "evidence": [
+        "content-snapshot.html#g07-anamnese",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 8,
+      "title": "Examen clinique",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g07-clinique",
+      "sources": [
+        "R15",
+        "R18"
+      ],
+      "scope": "Question effectivement traitée avec les sources indiquées : Examen neurologique répété et force graduée ; pas de sensibilité universelle de signes isolés.",
+      "evidence": [
+        "content-snapshot.html#g07-clinique",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 9,
+      "title": "Drapeaux rouges et urgences",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g07-urgence",
+      "sources": [
+        "R7",
+        "R15"
+      ],
+      "scope": "Question effectivement traitée avec les sources indiquées : Vigilance, crise, déficit rapidement progressif et effet de masse : urgence spécialisée, pas de ponction lombaire dangereuse.",
+      "evidence": [
+        "content-snapshot.html#g07-urgence",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 10,
+      "title": "Examens complémentaires",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g07-e-preuves",
+      "sources": [
+        "R6",
+        "R7",
+        "R15",
+        "R16"
+      ],
+      "scope": "Question effectivement traitée avec les sources indiquées : Imagerie, prélèvements orientés, tests moléculaires et culture ; résultat négatif ou sérologie ne suffisent pas toujours.",
+      "evidence": [
+        "content-snapshot.html#g07-e-preuves",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 11,
+      "title": "Diagnostic différentiel",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g07-e-differentiel",
+      "sources": [
+        "R15"
+      ],
+      "scope": "Question effectivement traitée avec les sources indiquées : Autres infections et tumeurs face à une lésion annulaire ; anatomie et diffusion orientent sans prouver la cause.",
+      "evidence": [
+        "content-snapshot.html#g07-e-differentiel",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 12,
+      "title": "Prise en charge suisse",
+      "status": "covered",
+      "research_status": "LACUNE",
+      "anchor": "g07-traitement",
+      "sources": [
+        "R1",
+        "R2",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R13",
+        "R14",
+        "R17",
+        "R22"
+      ],
+      "scope": "Question effectivement traitée avec les sources indiquées : FI suisses lues pour produits nommés ; requêtes praziquantel/Biltricide sans FI retrouvée, aucun schéma suisse cérébral inventé ; conduites rares adaptées par spécialistes. Covered signifie que la question et sa lacune sont traitées dans le cours, pas que la donnée ou le protocole manquant a été trouvé ; la matrice Betta conserve LACUNE.",
+      "evidence": [
+        "content-snapshot.html#g07-traitement",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 13,
+      "title": "Complications et pronostic",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g07-suivi",
+      "sources": [
+        "R3",
+        "R7",
+        "R15"
+      ],
+      "scope": "Question effectivement traitée avec les sources indiquées : Effet de masse, hydrocéphalie, crises et déficit ; essai HARVEST limité à sa population et incertitude de durée isolée.",
+      "evidence": [
+        "content-snapshot.html#g07-suivi",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 14,
+      "title": "Suivi, prévention et dépistage",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g07-suivi",
+      "sources": [
+        "R1",
+        "R4",
+        "R6",
+        "R10",
+        "R15",
+        "R16"
+      ],
+      "scope": "Question effectivement traitée avec les sources indiquées : Suivi clinique, microbiologique et des toxicités ; rehaussement persistant non synonyme d’activité ; prévention selon agent.",
+      "evidence": [
+        "content-snapshot.html#g07-suivi",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 15,
+      "title": "Situations particulières",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g07-particuliers",
+      "sources": [
+        "R2",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R13",
+        "R14",
+        "R17"
+      ],
+      "scope": "Question effectivement traitée avec les sources indiquées : Enfants et grossesse non extrapolés depuis tableaux adultes ; rein, foie, VIH et interactions individualisés.",
+      "evidence": [
+        "content-snapshot.html#g07-particuliers",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 16,
+      "title": "Spécificités suisses",
+      "status": "covered",
+      "research_status": "LACUNE",
+      "anchor": "g07-suisse",
+      "sources": [
+        "R1",
+        "R4"
+      ],
+      "scope": "Question effectivement traitée avec les sources indiquées : Déclaration TB et chapitre assurances lus ; recherche ne prouve pas toutes les règles LS/LiMA, conduite, AI et remboursement 2026 : vérification individuelle explicite. Covered signifie que la question et sa lacune sont traitées dans le cours, pas que la donnée ou le protocole manquant a été trouvé ; la matrice Betta conserve LACUNE.",
+      "evidence": [
+        "content-snapshot.html#g07-suisse",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 17,
+      "title": "Critères formels",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g07-criteres",
+      "sources": [
+        "R7",
+        "R11",
+        "R12",
+        "R15"
+      ],
+      "scope": "Question effectivement traitée avec les sources indiquées : Pas de critère global validé G07 ; documenter lésion, degré de preuve et maladie causale. Critères TBM ne deviennent pas critères de tout G07.",
+      "evidence": [
+        "content-snapshot.html#g07-criteres",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 18,
+      "title": "Paramètres clés",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g07-criteres",
+      "sources": [
+        "R1",
+        "R2",
+        "R8",
+        "R9",
+        "R10",
+        "R14",
+        "R18"
+      ],
+      "scope": "Question effectivement traitée avec les sources indiquées : Deux plus dix mois pour TBM seulement ; unités phosphate/base ; seuils rénaux propres aux produits et grade de force 0–5.",
+      "evidence": [
+        "content-snapshot.html#g07-criteres",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 19,
+      "title": "Sous-codes couverts",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g07-codage",
+      "sources": [
+        "R11",
+        "R12"
+      ],
+      "scope": "Question effectivement traitée avec les sources indiquées : G07 sans subdivision : six inclusions causales discutées avec leurs codes ; pas de sous-code G07.x.",
+      "evidence": [
+        "content-snapshot.html#g07-codage",
+        "recherche_G07/sources.json"
+      ]
+    },
+    {
+      "point": 20,
+      "title": "Examen fédéral et pièges",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g07-e-cas",
+      "sources": [
+        "R7",
+        "R10",
+        "R15",
+        "R19"
+      ],
+      "scope": "Question effectivement traitée avec les sources indiquées : PROFILES 2017, quatre cas fictifs, ponction sûre, progression paradoxale, toxicité et prescription sans extrapolation.",
+      "evidence": [
+        "content-snapshot.html#g07-e-cas",
+        "recherche_G07/sources.json"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "path": "figures/Gray1196.png",
+      "canonical_path": "assets/img/g07/alpha/codex/Gray1196.png",
+      "original_url": "https://commons.wikimedia.org/wiki/File:Gray1196.png",
+      "license": "Domaine public : reproduction mécanique d’un original historique de1918 ; notice propre relue, auteur mort depuis plus100ans et publication ancienne aux États-Unis.",
+      "author": "Gray, Anatomy of the Human Body,1918 ; illustrations attribuées à Henry Vandyke Carter ; Gray764 comporte une adaptation indiquée de Poirier.",
+      "annotations": "Quatre annotations françaises adjacentes : dure-mère, arachnoïde, pie-mère et sinus sagittal supérieur ; plans normaux et limites.",
+      "medical_review": "Originals, pages de droits et pixels réellement inspectés par Sol pour G07 ; anatomie normale seulement. Décodage, quatre annotations et dernières lignes vérifiés aux deux largeurs ; self_review de l’auteur, aucune validation médicale humaine.",
+      "sha256": "568d36ae47143acd19075d7970fef24fefb894627237106da707400ee74e06fa",
+      "source": "R20",
+      "human_origin": true,
+      "pixels_edited": false
+    },
+    {
+      "path": "figures/Gray764.png",
+      "canonical_path": "assets/img/g07/alpha/codex/Gray764.png",
+      "original_url": "https://commons.wikimedia.org/wiki/File:Gray764.png",
+      "license": "Domaine public : reproduction mécanique d’un original historique de1918 ; notice propre relue, auteur mort depuis plus100ans et publication ancienne aux États-Unis.",
+      "author": "Gray, Anatomy of the Human Body,1918 ; illustrations attribuées à Henry Vandyke Carter ; Gray764 comporte une adaptation indiquée de Poirier.",
+      "annotations": "Quatre annotations françaises adjacentes : cortex moteur, capsule interne, décussation des pyramides et faisceau descendant latéral ; localisation et limites.",
+      "medical_review": "Originals, pages de droits et pixels réellement inspectés par Sol pour G07 ; anatomie normale seulement. Décodage, quatre annotations et dernières lignes vérifiés aux deux largeurs ; self_review de l’auteur, aucune validation médicale humaine.",
+      "sha256": "0aab3ff23b815eb5f6eab0ba8c583726c5994c025899f3f6654f47e566249b09",
+      "source": "R21",
+      "human_origin": true,
+      "pixels_edited": false
+    }
+  ],
+  "semiology": {
+    "section_anchors": [
+      "g07-s-normal",
+      "g07-s-signs",
+      "g07-s-mechanisms",
+      "g07-s-examination",
+      "g07-s-interpretation",
+      "g07-s-differentials",
+      "g07-s-urgency",
+      "g07-s-limits",
+      "g07-s-sources"
+    ]
+  },
+  "reviews": {
+    "medical": {
+      "path": "reviews/medical.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "377e38fec187c4c17a3b159ef2ba3ff8d24925ebb8ad5ca4152dfde5b4c96a4a"
+    },
+    "language": {
+      "path": "reviews/language.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "d43bfe8c14789856feafddbff8f38cb22491fd43cef6da52da2668b5d6634ff6"
+    },
+    "visual_desktop": {
+      "path": "reviews/visual_desktop.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "eb96e73b801b369bbf3888216cd53c58a975b5b43650182771f9471ce79c0fb2"
+    },
+    "visual_mobile": {
+      "path": "reviews/visual_mobile.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "dfeba809b138b5fe57bcc72cf5608abb69f68aadfa684cae4ecbdebc73d95e68"
+    }
+  },
+  "blocking_findings": [],
+  "documented_limits": [
+    {
+      "topic": "Épidémiologie",
+      "reason": "Incidence/prévalence nationale actuelle spécifique G07 et profil complet âge/sexe non établis ;544cas2025 concernent toutes les tuberculoses Suisse/Liechtenstein.",
+      "evidence": "matrix-20.json"
+    },
+    {
+      "topic": "Durée et syndromes",
+      "reason": "Méningite tuberculeuse distincte du tuberculome isolé ;12mois du guide suisse pour méningite, pas durée universelle isolée. Rehaussement persistant ne prouve ni activité ni échec. HARVEST adulte dans trois pays, pas enfant ni masse isolée.",
+      "evidence": "recherche_G07/sources.json"
+    },
+    {
+      "topic": "Parasites et produits",
+      "reason": "FI suisse praziquantel non retrouvée par requêtes documentées, pas preuve d’indisponibilité et aucune dose suisse inventée. Rimstar/praziquantel contre-indiqué. Restriction Humatin extra-intestinale non réécrite comme simple monothérapie interdite.",
+      "evidence": "reviews/medical.json"
+    },
+    {
+      "topic": "Gonococcie",
+      "reason": "Guide2025britannique BASHH correctement attribué ; ni durée d’arthrite ni durée de méningite n’est un protocole validé d’abcès cérébral gonococcique.",
+      "evidence": "reviews/medical.json"
+    },
+    {
+      "topic": "FI et populations",
+      "reason": "Notices ciblées et datées ; produits, rein, foie, grossesse, enfant et associations distingués. Phosphate/base Galepharm et sulfate/base Humatin explicites. Différences internes ou entre notices conservées, pas harmonisation silencieuse.",
+      "evidence": "clinical-review-completed.json"
+    },
+    {
+      "topic": "Administratif suisse",
+      "reason": "Déclaration TB et chapitre assurances lus, sans délai non vérifié. LS/LiMA, conduite, AI et remboursements2026non établis exhaustivement ; droits vérifiés individuellement. OFS2024/BfArM2024ne certifient pas facturation2026 ; rapprochement PROFILES2017pédagogique local.",
+      "evidence": "matrix-20.json"
+    },
+    {
+      "topic": "Figures",
+      "reason": "Deux originaux normaux historiques, pas lésions ni cartes opératoires ; annotations adjacentes sans pixels modifiés. Aucun appel ImageFinder faute de contrôle requis. Source TB ouverte repérée mais original non récupéré, pas approuvé. Anatomies héritées de provenance non établie retirées sans affirmer origine IA démontrée.",
+      "evidence": "figures.json"
+    },
+    {
+      "topic": "Procédure de transition",
+      "reason": "Création locale initiale lancée avant retour final acquisition attendu ; checkout échoué faute d’espace puis start refusé. Reprise complète dans/tmp, réservation fraîche et start/claim réels avant recherche/rédaction. Incident conservé, aucune conformité initiale globale certifiée. Betta passé réellement avant nouvelle rédaction clinique.",
+      "evidence": "transition-incident.json"
+    },
+    {
+      "topic": "Construction et rendu",
+      "reason": "Construction native exécutée et terminée, artefact et parcours contrôlés ; code de sortie final du premier processus non conservé séparément, aucune valeur inventée. Aperçu et captures testés via HTTP local éphémère, autres requêtes bloquées, pas déploiement public attesté. En-tête/boutons fixes peuvent recouvrir momentanément texte mobile accessible au défilement.",
+      "evidence": "verification-history.json"
+    },
+    {
+      "topic": "Niveau de revue",
+      "reason": "Quatre revues nommées et SEMIO sont des self_review de Sol, sans audit indépendant ni certification médicale humaine. Sources complètes horsGit, paraphrases seulement. Coût et tokens réels non exposés.",
+      "evidence": "lesson-manifest.json"
+    }
+  ],
+  "procedure": {
+    "prewriting_betta_gate_before_first_new_medical_writing": true,
+    "evidence": "prewriting-gate.json",
+    "acquisition_return_await_order_incident": true,
+    "initial_start_refused": true,
+    "full_worktree_recovery": "/tmp/Medina-neurologie-G07",
+    "incident_evidence": "transition-incident.json",
+    "generic_initial_procedure_compliance_certified": false,
+    "clinical_recheck": "clinical-review-completed.json"
+  },
+  "historical_model_trace": [
+    {
+      "agent_id": "astra_neurologie",
+      "scope": "Identifiant harness historique préservé ; G07 recherche, rédaction et auto-revues par Sol. Aucun travail Astra ancien renommé."
+    }
+  ],
+  "tokens_actual": null,
+  "cost_actual": null,
+  "clinical_certification": false,
+  "publication_allowed": false
+}

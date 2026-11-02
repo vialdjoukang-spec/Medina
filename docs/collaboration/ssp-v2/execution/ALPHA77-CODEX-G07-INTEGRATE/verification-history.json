@@ -1,0 +1,32 @@
+{
+  "recorded_at": "2026-11-02T15:35:22.888485+00:00",
+  "negative_observations": [
+    {
+      "step": "first_static",
+      "result": "failed",
+      "words": 15315,
+      "windows": 45,
+      "quizzes": 4,
+      "issue": "Abréviations non couvertes dans notes de travail et références, notamment HARVEST/BASHH/SINT et chaînes compactes ; sortie observée dans outil, pas de fichier brut séparé initial."
+    },
+    {
+      "step": "second_static",
+      "result": "failed",
+      "words": 15554,
+      "issue": "Cinq chaînes restantes dans références : bulletinOFSP2026,exportCSVfr,UCL,LSHTM,UKRI ; corrigées avant test final."
+    }
+  ],
+  "native_build": {
+    "command": "MEDINA_OUT=OUT/preview python3 build_front.py --fragment S08",
+    "process_completed": true,
+    "exit_status_separately_captured": false,
+    "artifact": "preview/fragments/MEDINA_S08_nerveux.html",
+    "artifact_sha256": "66fa56552ffeaf024327aba706597bc4cf63f36133147f838ae2985f88daa89e",
+    "note": "Commande exécutée ; retour final non conservé séparément après perte de référence de session. Existence, contenu du bundle et parcours natif réellement vérifiés. Aucun code de sortie inventé."
+  },
+  "bundle": {
+    "returncode": 0,
+    "preview_sha256": "9075c3c08e053ccb190ab9b87ff4036495b86ebe8e7aa9f21a9c3efe8a77e366"
+  },
+  "medical_certification": false
+}
