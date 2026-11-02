@@ -2,7 +2,7 @@
 
 [Ouvrir l’aperçu natif autonome](N04-apercu-autonome.html). Les cinq illustrations humaines originales sont incorporées, avec repères superposés, attribution et licence. Le moteur MEDINA et la navigation S04 sont conservés ; cette révision concerne N04 uniquement.
 
-Le cours conserve les 22 îlots initiaux et couvre les [14 points monographiques](plan-14.json) et les [20 rubriques MEDINA](matrice-20.json). Il comporte six sous-onglets scientifiques, dont une sémiologie analytique en neuf sections. La table CIM complète a été déplacée après la conclusion clinique. Le compteur du dépôt passe de 26 199 à 30 517 mots, fenêtres comprises ; il mesure la préservation du contenu, pas sa qualité médicale.
+Le cours conserve les 22 îlots initiaux et couvre les [14 points monographiques](plan-14.json) et les [20 rubriques MEDINA](matrice-20.json). Il comporte six sous-onglets scientifiques, dont une sémiologie analytique en neuf sections. La table CIM complète a été déplacée après la conclusion clinique. Le compteur du dépôt passe de 26 199 à 30 518 mots, fenêtres comprises ; il mesure la préservation du contenu, pas sa qualité médicale.
 
 Les corrections portent notamment sur l’inférence histologique trop précoce dans la vignette, la confusion avec le rein médullaire en éponge, la distinction œdème/volémie, la possibilité limitée de remplacement podocytaire et les limites des images. Les surfaces de prescription distinguent prophylaxie et traitement par énoxaparine, adaptation rénale de la ciclosporine, forte dose transitoire de Spiricort et protocole spécialisé prolongé, forme orale d’Endoxan et statut pédiatrique de Sortis.
 

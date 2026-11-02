@@ -37,7 +37,7 @@ def replace_figures(s, replacements):
     return re.sub(r'<figure\b[^>]*>.*?</figure>',sub,s,flags=re.S)
 
 a=original('a')
-a=a.replace('Sources relues le 14 octobre 2026 · Statut : audit différé après le Cycle 30 ; revue par intelligence artificielle, sans validation médicale humaine','Révision ciblée du 2 novembre 2026 · Statut : aperçu provisoire en revue ; relecture médicale indépendante requise, sans validation médicale humaine')
+a=a.replace('Sources relues le 14 octobre 2026 · Statut : audit différé après le Cycle 30 ; revue par intelligence artificielle, sans validation médicale humaine','Révision ciblée du 2 novembre 2026 · Statut : aperçu provisoire en revue ; auto-relecture et vérification ciblée effectuées, sans validation médicale humaine')
 a=a.replace('<section class="ilot" id="n04-a06"><h2>', '<section class="ilot" id="n04-a06"><h2 data-semiology-clinical="N04">')
 assert 'correspond davantage à une néphropathie membraneuse' in a
 a=a.replace('correspond davantage à une néphropathie membraneuse qu’à une forme minime, sans que cela suffise à trancher.','est compatible avec plusieurs glomérulopathies, dont une néphropathie membraneuse et des lésions glomérulaires minimes. Ces seuls signes ne permettent pas de privilégier une histologie ; les examens étiologiques et, selon le contexte, la biopsie déterminent la suite.')
