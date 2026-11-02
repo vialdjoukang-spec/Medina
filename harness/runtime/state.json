@@ -5,7 +5,7 @@
     "astra_neurologie": {
       "lesson": "G22",
       "worktree": "/workspace/Medina-neurologie-G22",
-      "stage": "preparation",
+      "stage": "recherche",
       "branch": "codex/alpha77/g22-integrate-g1",
       "allowed_paths": [
         "chapters/G22",
@@ -15,8 +15,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE"
       ],
       "started_at": "2026-11-02T16:38:17+00:00",
-      "activity_at": "2026-11-02T16:39:39+00:00",
-      "message": "G22 :acquisition attendue avant checkout complet/workspace,start/gate/claim effectifs16:38:17UTC ; prompt vérité relu,instructions identiques vérifiées,inventaire7fichiers conservé.0source primaire encore lue,aucune rédaction ni binding. G32suivant.",
+      "activity_at": "2026-11-02T17:03:11+00:00",
+      "message": "G22 : neuf entrées de lectures ciblées consignées ; classification, neurosyphilis2026, EASL2025 et FI réellement confrontées. Recherche non close, aucune rédaction canonique ni empreinte.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -54,7 +54,7 @@
     "astra_nephrologie": {
       "lesson": "G21",
       "worktree": "/tmp/Medina-neurologie-G21",
-      "stage": "verification",
+      "stage": "termine",
       "branch": "codex/alpha77/g21-integrate-g1",
       "allowed_paths": [
         "chapters/G21",
@@ -64,8 +64,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G21-INTEGRATE"
       ],
       "started_at": "2026-11-02T15:52:16+00:00",
-      "activity_at": "2026-11-02T16:54:59+00:00",
-      "message": "Statique G21 passé :66 fenêtres/10 figures/34repères, audit six sciences3905 mots, build natif S08 réussi ; correction de provenance ClaML32686264 avant empreinte finale, début navigateur.",
+      "activity_at": "2026-11-02T17:01:56+00:00",
+      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -89,8 +89,8 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T16:52:40+00:00",
-      "activity_at": "2026-11-02T16:52:40+00:00",
-      "message": "Mission réservée; recherche autorisée",
+      "activity_at": "2026-11-02T16:58:42+00:00",
+      "message": "D65 réservé puis démarré ; 25 entrées de sources attribuées dont 16 lectures ciblées ou images revues ; ISTH2025 et quatre FI suisses confrontés ; Betta réussi avant rédaction, deux originaux vus ; aucune clôture.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -102,36 +102,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T09:25:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T09:35:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T09:45:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T09:55:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T10:05:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
     {
       "at": "2026-11-02T10:15:41+00:00",
       "action": "watch",
@@ -1404,6 +1374,39 @@
       "action": "watch",
       "ok": true,
       "findings": 1
+    },
+    {
+      "at": "2026-11-02T16:58:42+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "recherche",
+      "message": "D65 réservé puis démarré ; 25 entrées de sources attribuées dont 16 lectures ciblées ou images revues ; ISTH2025 et quatre FI suisses confrontés ; Betta réussi avant rédaction, deux originaux vus ; aucune clôture."
+    },
+    {
+      "at": "2026-11-02T17:00:22+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "verification",
+      "message": "Navigateur initial passé 1440/390,66fenêtres et quatre quiz ; inspection visuelle réelle révèle repères trop proches sur petit schéma basal mobile. Correction locale des positions/taille, preuves initiales conservées ; seconde exécution sur rendu reconstruit en cours."
+    },
+    {
+      "at": "2026-11-02T17:01:56+00:00",
+      "action": "complete",
+      "agent": "astra_nephrologie",
+      "code": "G21"
+    },
+    {
+      "at": "2026-11-02T17:03:11+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "G22 : neuf entrées de lectures ciblées consignées ; classification, neurosyphilis2026, EASL2025 et FI réellement confrontées. Recherche non close, aucune rédaction canonique ni empreinte."
+    },
+    {
+      "at": "2026-11-02T17:05:16+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
     }
   ],
   "cache": {
@@ -2491,6 +2494,50 @@
           "chapters/E04/E04_b.html": "ec24f1c58adadb8d7ce43d9303a3c7fb347164129ab3fe5acc4abb1d6c82536d",
           "chapters/E04/E04_c.html": "5656ced66c4b634f68d51aaefd663f9ff8367126094840d0bb42832718a6b600",
           "chapters/E04/E04_d.html": "bfacc1b5660b9c0626c1bdd1a4965eee6a50d276858319de46f27613ce1d134f"
+        },
+        "clinical_certification": false,
+        "author_activity_refreshed": false,
+        "source_bindings_refreshed": false,
+        "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+      }
+    },
+    {
+      "agent": "astra_nephrologie",
+      "code": "G21",
+      "at": "2026-11-02T17:01:56+00:00",
+      "branch": "codex/alpha77/g21-integrate-g1",
+      "worktree": "/tmp/Medina-neurologie-G21",
+      "folder": "/tmp/Medina-neurologie-G21/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G21-INTEGRATE",
+      "manifest_sha256": "2ae88d2748b168fc788aa34f39578ca5d94b18c29a3ef0da60a4e163878c15ec",
+      "source_binding_sha256": "153b4c9d1ecc25a36e001244db4641001ebf388bcab55b60156eab65b7cb3f79",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "3c8fa63c3accac10b63364ed92653f1763243c9f81ba2f70ef283df10af9217f",
+      "semiology_contract": {
+        "code": "G21",
+        "observed_at": "2026-11-02T17:01:56+00:00",
+        "passed": true,
+        "checks": {
+          "six_science_tabs": true,
+          "first_selected_semio": true,
+          "semio_panel_label_and_visible": true,
+          "first_unit_exact_h3": true,
+          "nine_named_sections": true,
+          "linked_sources_in_semio": true,
+          "clinical_semio_marker": true
+        },
+        "findings": [],
+        "source_hashes": {
+          "chapters/G21/G21_a.html": "8538ef390cb99537005c261565a3412e3983cd87b2a952a5bf17433817ca3b5d",
+          "chapters/G21/G21_b.html": "29f60e83fccc5c75ac9ef0aeff986290ff0f98eee5b171b87d731ad949057bc7",
+          "chapters/G21/G21_c.html": "2ef3ea8c91e5eaf13239808e21b0e2eda43acc34bc90ee52db89d1d40d9ec167",
+          "chapters/G21/G21_d.html": "30a1d7b1db88f4224c340b18022dd036f963050ceba9080bfd8cf716cd19f691"
         },
         "clinical_certification": false,
         "author_activity_refreshed": false,

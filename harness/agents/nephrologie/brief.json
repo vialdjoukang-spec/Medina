@@ -6,7 +6,7 @@
   "fragment_label": "N-07-Néphrologie",
   "prepared_at": "2026-11-02T01:16:51.601917+00:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "status": "E40_reserved_started_claimed_research",
+  "status": "G21_completed_pushed_released",
   "selected_lesson": {
     "code": "G21",
     "title": "Syndrome parkinsonien secondaire",
@@ -21,10 +21,15 @@
     "runtime_name": "sol_nephrologie",
     "production_name": "Sol-Neurologie-G21",
     "runtime_model": "gpt-6.1-sol",
-    "stage": "redaction",
+    "stage": "termine",
     "clinical_certification": false,
     "start_receipt": "/tmp/Medina-neurologie-G21/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G21-INTEGRATE/start.json",
-    "catalogue_scope": "Cours G21 existant exclusivement ; aucun mandat chapters.json."
+    "catalogue_scope": "Cours G21 existant exclusivement ; aucun mandat chapters.json.",
+    "actual_progress": "14 points,20 rubriques,quatre FI,six sciences/neuf sémiologie,66fenêtres/14Pareto/4cas/4quiz,10occurrences/34repères ; statique et audit sciences3905mots passés, natif construit puis reconstruction après correction provenance ClaML.",
+    "last_actual_event_at": "2026-11-02T16:56:06.421340+00:00",
+    "reservation_released": true,
+    "final_commit": "d810771bd3da1925b5a2763f333a7787590df878",
+    "release_registry_sha": "d4b58f7b8459ef7caad2d0f770a40dd2e2d9fbbe"
   },
   "instruction_priority": "Ordre actuel : quatre spécialités en parallèle et une leçon à la fois par agent ; remplace les lots historiques, sans supprimer les réservations.",
   "counts": {
@@ -493,33 +498,25 @@
     "quizzes": 0
   },
   "delivery": {
-    "code": "E40",
-    "production_name": "Sol-Nutrition-E40",
-    "folder": "/tmp/Medina-nutrition-E40/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE",
-    "preview": "/tmp/Medina-nutrition-E40/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE/E40-apercu-autonome.html",
-    "manifest": "/tmp/Medina-nutrition-E40/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE/lesson-manifest.json",
-    "sources": "/tmp/Medina-nutrition-E40/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE/source-ledger.json",
-    "source_binding": "/tmp/Medina-nutrition-E40/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE/source-binding.json",
-    "source_binding_sha256": "31a70bb512494867fcc87196de2a528ad7c4d02115adc78616cf2cd720d8db9c",
-    "preview_sha256": "48ffb2aee9d0e9b6f5720961fcbd3a296cee284d937e5cff7827ddf3ef763c85",
-    "source_commit": "685099f5434d23132d38bfd58950647ae12b9899",
-    "commit": "39d8ce5883d975ce83e9e21f6c61d48a72b55e31",
-    "branch": "codex/alpha77/e40-integrate-g1",
-    "remote_head_verified": "39d8ce5883d975ce83e9e21f6c61d48a72b55e31",
-    "pushed": true,
-    "working_tree_clean": true,
-    "reservation_released": true,
-    "release_registry_sha": "34d399ea690e7f174497cad680a3c69d84bafae3",
-    "scope_guard": "passed --integrated",
+    "folder": "/tmp/Medina-neurologie-G21/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G21-INTEGRATE",
+    "preview": "/tmp/Medina-neurologie-G21/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G21-INTEGRATE/G21-apercu-autonome.html",
+    "manifest": "/tmp/Medina-neurologie-G21/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G21-INTEGRATE/lesson-manifest.json",
+    "sources": "/tmp/Medina-neurologie-G21/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G21-INTEGRATE/source-ledger.json",
+    "screenshots": "/tmp/Medina-neurologie-G21/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G21-INTEGRATE/captures",
     "pr": null,
     "published_main": false,
-    "clinical_certification": false,
-    "review_modes": {
-      "medical": "self_review",
-      "language": "self_review",
-      "visual_desktop": "self_review",
-      "visual_mobile": "self_review"
-    }
+    "commit": "d810771bd3da1925b5a2763f333a7787590df878",
+    "source_commit": "ce510120b09a357aeacec7fbe3386fa7cfafd330",
+    "branch": "codex/alpha77/g21-integrate-g1",
+    "source_binding": "/tmp/Medina-neurologie-G21/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G21-INTEGRATE/source-binding.json",
+    "source_binding_sha256": "153b4c9d1ecc25a36e001244db4641001ebf388bcab55b60156eab65b7cb3f79",
+    "preview_sha256": "3c8fa63c3accac10b63364ed92653f1763243c9f81ba2f70ef283df10af9217f",
+    "pushed": true,
+    "remote_head_verified": "d810771bd3da1925b5a2763f333a7787590df878",
+    "working_tree_clean": true,
+    "reservation_released": true,
+    "release_registry_sha": "d4b58f7b8459ef7caad2d0f770a40dd2e2d9fbbe",
+    "validation": "technical_contract_pass_true; self_review; clinical_certification_false; publication_allowed_false"
   },
   "gate": {
     "initial_ci": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41372212569",
@@ -1423,11 +1420,16 @@
       "N04": "Marqueur clinique surh2, texteexclu dela prose parparseurnatifHTMLTree ; correctionfuture sousmandatautorisé, courslibéréintact.",
       "N29": "Lecontrôleciblépublié indique linked_sources_in_semio etclinical_semio_marker ; absencehttps etmarqueurprose àcorrigerplustardsousmandatautorisé, courslibéréintact.",
       "new_N06": "7règles passées parseurnatifharness etinspectionstatique sur14b44d83813296a99c63c837095bb5bc66aad815, sans prétendreauditmédicalindépendant."
+    },
+    "E40_CIM_URL": {
+      "record": "/tmp/Medina-neurologie-G21/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G21-INTEGRATE/E40-CIM-url-reserve.json",
+      "mode": "author_observation_not_independent_audit",
+      "sealed_source_modified": false
     }
   },
   "production_name": "Sol-Neurologie-G21",
   "active_specialty": "mouvements anormaux",
-  "completed_lesson_count": 11,
+  "completed_lesson_count": 12,
   "delivery_history": [
     {
       "snapshot_reason": "Ancien champ delivery conservé avant actualisation E40, aucune nouvelle clôture historique",
@@ -1456,6 +1458,43 @@
         "working_tree_clean": true,
         "source_binding": "/workspace/Medina-nephrologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE/source-binding.json"
       }
+    },
+    {
+      "snapshot_reason": "Livraison précédente conservée avant actualisation G21 ; aucune nouvelle clôture historique",
+      "delivery": {
+        "code": "E40",
+        "production_name": "Sol-Nutrition-E40",
+        "folder": "/tmp/Medina-nutrition-E40/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE",
+        "preview": "/tmp/Medina-nutrition-E40/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE/E40-apercu-autonome.html",
+        "manifest": "/tmp/Medina-nutrition-E40/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE/lesson-manifest.json",
+        "sources": "/tmp/Medina-nutrition-E40/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE/source-ledger.json",
+        "source_binding": "/tmp/Medina-nutrition-E40/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE/source-binding.json",
+        "source_binding_sha256": "31a70bb512494867fcc87196de2a528ad7c4d02115adc78616cf2cd720d8db9c",
+        "preview_sha256": "48ffb2aee9d0e9b6f5720961fcbd3a296cee284d937e5cff7827ddf3ef763c85",
+        "source_commit": "685099f5434d23132d38bfd58950647ae12b9899",
+        "commit": "39d8ce5883d975ce83e9e21f6c61d48a72b55e31",
+        "branch": "codex/alpha77/e40-integrate-g1",
+        "remote_head_verified": "39d8ce5883d975ce83e9e21f6c61d48a72b55e31",
+        "pushed": true,
+        "working_tree_clean": true,
+        "reservation_released": true,
+        "release_registry_sha": "34d399ea690e7f174497cad680a3c69d84bafae3",
+        "scope_guard": "passed --integrated",
+        "pr": null,
+        "published_main": false,
+        "clinical_certification": false,
+        "review_modes": {
+          "medical": "self_review",
+          "language": "self_review",
+          "visual_desktop": "self_review",
+          "visual_mobile": "self_review"
+        }
+      }
     }
+  ],
+  "future_exclusive_queue": [
+    "G24",
+    "G25",
+    "G26"
   ]
 }

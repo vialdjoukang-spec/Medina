@@ -187,7 +187,11 @@
     "protected_files_verified": 125,
     "active_worktrees_changed": false,
     "additional_proof": "harness/storage/D63-sparse-archive.json",
-    "additional_protected_files_verified": 110
+    "additional_protected_files_verified": 110,
+    "additional_closed_worktrees": [
+      "harness/storage/C85-sparse-archive.json",
+      "harness/storage/D62-sparse-archive.json"
+    ]
   },
   "e04_premature_worktree_incident": {
     "proof": "harness/agents/endocrinologie/transitions/E42-E04/worktree-premature-creation-corrected.json",
@@ -216,5 +220,25 @@
     "correction": "Appel direct inspect_semiology du harness, correction avant binding ; sept règles réussies au reçu de clôture local 16:46:19 UTC.",
     "initial_failure_preserved": true,
     "source": "Message auteur et preuves de version E04 à consulter ; livraison distante séparée."
+  },
+  "collector_version_retention_incident": {
+    "observed_at": "2026-11-02T16:51:22+00:00",
+    "cause": "Ajout --previous au collecteur inclus dans empreinte globale du harness ; anciens tests invalidés.",
+    "blocked_operation": "progress G21, aucun événement antidaté",
+    "corrected_at": "2026-11-02T16:52:23+00:00",
+    "tests": 55,
+    "new_harness_sha256": "87d7a45f585a98d6e33dcb0c68d8b88840ab05cd41a3151b7d8235961d9ca9e6",
+    "gate_allowed": true,
+    "author_resumed_reported_at": "2026-11-02T16:52:34+00:00"
+  },
+  "e40_cim_provenance_reserve": {
+    "reported_at": "2026-11-02T16:58:42.635772+00:00",
+    "reported_by": "/root/sol_nephrologie",
+    "kind": "Source URL metadata error in sealed historical E40",
+    "description": "Auteur signale que CH-CIM/CH-CIM-BOUND citent téléchargement32686265 (CSV), mais cache/empreinte et contenu lus sont ClaML32686264 ; correction identifiée pendant G21.",
+    "parent_independent_check": "pending",
+    "source_binding_changed": false,
+    "lesson_changed": false,
+    "next_action": "Conserver preuve factuelle avec correctif proposé sous revue, aucune correction silencieuse du reçu E40."
   }
 }

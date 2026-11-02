@@ -236,3 +236,8 @@ Complete réel16:33:59UTC ; source7b024695cb5d331feb8b5a7c9e0c10820bed1d22,final
 ## G22 — entrée réellement acquise, 2026-11-02T16:39:39.801681+00:00
 
 Acquisition d97544322d85350def5c560d194d75f611c0fca5 attendue et vérifiée avant création complète/workspace/Medina-neurologie-G22 ; base8a512893acbab9caa0dcfdd0e8682a44ea72fda6,branchecodex/alpha77/g22-integrate-g1. Start,gate et claim effectifs16:38:17UTC. Prompt vérité relu avant corpus médical ; instructions identiques G08 par SHA,pas AGENTS imbriqué. Inventaire et7empreintes initiales conservés,0source primaire encore lue,pas rédaction ni binding. G32 suivant ; G09/G21/G24/G25/G26 exclus.
+
+
+## 2026-11-02T17:03:11.760980+00:00 — G22 : lectures cliniques ciblées consignées
+
+Neuf entrées de sources effectivement lues par périmètres, y compris ClaML OFS G22/A52.1, DGN/SNG neurosyphilis2026, EASL2025, deux FI suisses et deux observations. Recherche non close, aucun nouveau contenu canonique ni source-binding ; Betta reste à construire. Réserves : G22 non synonyme de tous les secondaires ; REC>15% EASL2025 ; équivalence pénicilline DGN incohérente non recopiée ; FI Grünenthal réellement mai2023. Aucun audit humain revendiqué.
