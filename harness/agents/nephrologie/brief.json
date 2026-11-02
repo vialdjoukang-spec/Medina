@@ -21,7 +21,7 @@
     "runtime_name": "sol_nephrologie",
     "production_name": "Sol-Nutrition-E40",
     "runtime_model": "gpt-6.1-sol",
-    "stage": "recherche",
+    "stage": "redaction",
     "clinical_certification": false,
     "start_receipt": "/tmp/Medina-nutrition-E40/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE/start.json",
     "catalogue_scope": "Cours E40 existant exclusivement ; aucun mandat sur chapters.json."
@@ -407,15 +407,19 @@
   ],
   "source_reading_status": {
     "code": "E40",
-    "medical_drafting_started": false,
-    "betta_entry_passed": false,
-    "selected_sections_actually_read": 1,
+    "medical_drafting_started": true,
+    "betta_entry_passed": true,
+    "selected_sections_actually_read": 31,
     "first_primary_reading": "OFS CIM-10-GM 2024 : E40, E41, E42, E43, E44, E46 ; distinction œdème nutritionnel, dépigmentation, marasme et œdème de famine.",
-    "new_primary_document_discovered": "WHO implementation guidance, publication 28 juillet 2026 ; cache fournisseur complet hors Git, sections cliniques pas encore lues.",
+    "new_primary_document_discovered": "OMS/UNICEF2026 : passages ciblés réellement lus et limites dans source-ledger.json ; source complète hors Git.",
     "exact_swiss_FIs_downloaded_not_yet_full_read": [
       "Benerva",
       "Amoxicillin Delbert IV",
       "Amoxicilline Spirig HC oral"
+    ],
+    "exact_swiss_FIs_actually_read": [
+      "Benerva, avril2019",
+      "Amoxicilline SpirigHC orale, août2024"
     ]
   },
   "reusable_tools": [
@@ -456,7 +460,7 @@
       "initial_status": "observed"
     }
   ],
-  "updated_at": "2026-11-02T14:43:54.877118+00:00",
+  "updated_at": "2026-11-02T15:13:56.361754+00:00",
   "initial_counts": {
     "conservative_s04_targets": 33,
     "existing": 6,

@@ -15,8 +15,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G07-INTEGRATE"
       ],
       "started_at": "2026-11-02T13:55:10+00:00",
-      "activity_at": "2026-11-02T14:51:07+00:00",
-      "message": "G07 :17lectures ciblées réelles, masseTB2020corpsclinique/revueamoebiasemisenligne2024 etFIHumatin2021 lues ; cibles tissulaire/luminale distinctes, restrictionFIextraintestinale conservée. Échecs acquisitionIRM non transformés enprovenance approuvée ; originauxPD connus possibles. Aucune rédaction.",
+      "activity_at": "2026-11-02T15:08:26+00:00",
+      "message": "G07 :22sources étayées,17lecturesinitialesG07+5lecturesSolréutilisées/revérifiées ; chapitreSwissassurances etPROFILES/grades/PDrevus. Recherchefinale etporteBettaàformaliser, aucune rédaction. PasFinderaveccontrôlemanquant, deuxoriginauxPD réellementrevus.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -27,33 +27,33 @@
       "receipt_sha256": "886686a177a81596c207849b551d3ef86a06aa440722fa3f8e156ad13b34aea2"
     },
     "astra_endocrinologie": {
-      "lesson": "E35",
-      "worktree": "/tmp/Medina-endocrinologie-E35",
-      "stage": "verification",
-      "branch": "codex/alpha77/e35-integrate-g1",
+      "lesson": "E42",
+      "worktree": "/tmp/Medina-endocrinologie-E42",
+      "stage": "recherche",
+      "branch": "codex/alpha77/e42-integrate-g1",
       "allowed_paths": [
-        "chapters/E35",
-        "glossary/e35.py",
-        "assets/img/e35/alpha/codex",
-        "organisation/alpha-publications/Codex/E35",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E35-INTEGRATE"
+        "chapters/E42",
+        "glossary/e42.py",
+        "assets/img/e42/alpha/codex",
+        "organisation/alpha-publications/Codex/E42",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E42-INTEGRATE"
       ],
-      "started_at": "2026-11-02T14:00:24+00:00",
-      "activity_at": "2026-11-02T14:51:31+00:00",
-      "message": "E35 rédaction14sections/20rubriques réalisée ; audit sciences passe758→2970mots,4→6disciplines,2→6figures. Statique natif passe et revue contextuelle corrige V1(version prise pour dérivationECG),IM/IV(fenêtres héritées insulinothérapie) et ancien renvoi Waterhouse devenu absent, sans glossaire partagé.25sources, quatrequiz,40fenêtres/résumés ; contrôles stricts puis build/navigateur commencent.",
+      "started_at": "2026-11-02T15:14:28+00:00",
+      "activity_at": "2026-11-02T15:14:28+00:00",
+      "message": "Mission réservée; recherche autorisée",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "61fc9ed1e818bc2a2b8ffdbacbb3a6136cf59aaa3c5a7ae9608728d0c1907f52"
+      "completed_sections": 0,
+      "receipt_sha256": "ca9d917ce7db799975a16ffdaa8b64c9cd9954fe40adf296d968c902c3b3cd78"
     },
     "astra_nephrologie": {
       "lesson": "E40",
       "worktree": "/tmp/Medina-nutrition-E40",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/e40-integrate-g1",
       "allowed_paths": [
         "chapters/E40",
@@ -63,15 +63,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE"
       ],
       "started_at": "2026-11-02T14:33:11+00:00",
-      "activity_at": "2026-11-02T15:05:04+00:00",
-      "message": "Lectures ciblées réelles OMS-UNICEF2026 : gradation annexe3, triage4.2, stabilisation4.6, antibiotiques annexe14 ; GLIM2025 critères adulte et limites albumine ; FI Benerva avril2019 et Amoxicilline SpirigHC août2024 lues, divergences de fréquence attribuées ; cinq originaux vus, redondance hépatique rejetée.",
+      "activity_at": "2026-11-02T15:13:56+00:00",
+      "message": "Betta préalable réel passé ;31lectures ciblées/réutilisations attribuées et deuxFI exactes. Quatorze points monographiques E40 écrits ; cinq originaux retenus et droits documentés ; séparation OMS enfant, GLIM/ESPEN adulte et renutrition suisse.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "551cc7e67bac5ac8c64cd5883da157a0020162aba26731400d93ef95b6e30915"
     },
     "codex_hematologie": {
@@ -101,45 +101,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T04:35:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T04:37:48+00:00",
-      "action": "claim",
-      "agent": "codex_hematologie",
-      "code": "C95"
-    },
-    {
-      "at": "2026-11-02T04:38:33+00:00",
-      "action": "progress",
-      "agent": "codex_hematologie",
-      "stage": "recherche",
-      "message": "C95 réservé et démarré ; lecture du socle, nosologie des lignées ambiguës et risques des seuils universels en cours."
-    },
-    {
-      "at": "2026-11-02T04:39:29+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "redaction",
-      "message": "E07 : porte VÉRITÉ passée avec 42 sources documentées ; 60 corrections médicales tracées, six onglets scientifiques substantiels dont neuf rubriques de sémiologie. Trois anatomies SVG remplacées par deux originaux licenciés et annotations HTML. Révision pharmacologique et cohérence des résumés en cours."
-    },
-    {
-      "at": "2026-11-02T04:42:16+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "redaction",
-      "message": "I64 : 18 sections cliniques natives réécrites, 25 lectures ciblées enregistrées ; sciences, pharmacologie et fenêtres encore en révision. Pas encore de validation frontend."
-    },
-    {
-      "at": "2026-11-02T04:42:26+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
     {
       "at": "2026-11-02T04:44:19+00:00",
       "action": "progress",
@@ -1392,6 +1353,45 @@
       "action": "watch",
       "ok": true,
       "findings": 1
+    },
+    {
+      "at": "2026-11-02T15:08:26+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "G07 :22sources étayées,17lecturesinitialesG07+5lecturesSolréutilisées/revérifiées ; chapitreSwissassurances etPROFILES/grades/PDrevus. Recherchefinale etporteBettaàformaliser, aucune rédaction. PasFinderaveccontrôlemanquant, deuxoriginauxPD réellementrevus."
+    },
+    {
+      "at": "2026-11-02T15:09:20+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "verification",
+      "message": "E35 : 25 lectures,14/20 et six sciences2970mots ; sept règles strictes, statique/build/bundle et navigateur1440/390 passés après correction CSS réellement détectée ;40fenêtres,4quiz,24px/Livre,14captures finales inspectées ; quatre self_review et contrat technique passés, scellement final à suivre."
+    },
+    {
+      "at": "2026-11-02T15:09:34+00:00",
+      "action": "complete",
+      "agent": "astra_endocrinologie",
+      "code": "E35"
+    },
+    {
+      "at": "2026-11-02T15:13:56+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "redaction",
+      "message": "Betta préalable réel passé ;31lectures ciblées/réutilisations attribuées et deuxFI exactes. Quatorze points monographiques E40 écrits ; cinq originaux retenus et droits documentés ; séparation OMS enfant, GLIM/ESPEN adulte et renutrition suisse."
+    },
+    {
+      "at": "2026-11-02T15:14:28+00:00",
+      "action": "claim",
+      "agent": "astra_endocrinologie",
+      "code": "E42"
+    },
+    {
+      "at": "2026-11-02T15:15:16+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
     }
   ],
   "cache": {
@@ -2171,6 +2171,50 @@
           "chapters/C92/C92_b.html": "5f7c04915c2e4eabe355fa853b2a5f347f0627f819c9ceafc203191c5cfaeb80",
           "chapters/C92/C92_c.html": "1716c5ca03c9d9e979fe26da1634b8911e1afe86d7f81aaa8199a69fb4e4e45a",
           "chapters/C92/C92_d.html": "a5c236cd4a9e07e58cb2b8469309d040470741e4041e32c771fd651f38b1ae0f"
+        },
+        "clinical_certification": false,
+        "author_activity_refreshed": false,
+        "source_bindings_refreshed": false,
+        "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+      }
+    },
+    {
+      "agent": "astra_endocrinologie",
+      "code": "E35",
+      "at": "2026-11-02T15:09:34+00:00",
+      "branch": "codex/alpha77/e35-integrate-g1",
+      "worktree": "/tmp/Medina-endocrinologie-E35",
+      "folder": "/tmp/Medina-endocrinologie-E35/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E35-INTEGRATE",
+      "manifest_sha256": "bb1c748e712a47da07eb6beae9929152884100a3aa8c0720714d351c6c3eaab0",
+      "source_binding_sha256": "ed2439210d7992f9418ba16008b842837e5c3d0c8adcf55bbea076b9c0bf19a8",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "12c8fb66c6b508485149b7ddfe6faaa44851e28e3e3e37364babb80c970e08e3",
+      "semiology_contract": {
+        "code": "E35",
+        "observed_at": "2026-11-02T15:09:34+00:00",
+        "passed": true,
+        "checks": {
+          "six_science_tabs": true,
+          "first_selected_semio": true,
+          "semio_panel_label_and_visible": true,
+          "first_unit_exact_h3": true,
+          "nine_named_sections": true,
+          "linked_sources_in_semio": true,
+          "clinical_semio_marker": true
+        },
+        "findings": [],
+        "source_hashes": {
+          "chapters/E35/E35_a.html": "dff618985793e01a3952f4245751108a7185dd7045e8edbcd6a19a6e248443d0",
+          "chapters/E35/E35_b.html": "e778798561e15e12f94866a6931675af54f6580229d7d0514f98c01bbf6271fd",
+          "chapters/E35/E35_c.html": "8127c1777262949a3061100e93f00f5f1915842bd359766cf9e4db6246b21eec",
+          "chapters/E35/E35_d.html": "5902092129ffbee74dd7754660ab97716ad08e72333b7603767972a277f2d441"
         },
         "clinical_certification": false,
         "author_activity_refreshed": false,
