@@ -6,15 +6,15 @@
   "fragment": "S05",
   "label": "E-06-Endocrinologie et métabolisme",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "phase": "E02_verification_finale",
+  "phase": "E07_recherche",
   "selected_lesson": {
-    "code": "E02",
-    "title": "Hypothyroïdie par carence inapparente en iode",
-    "mission_candidate": ".medina/missions/ALPHA77-CODEX-E02-INTEGRATE.json",
+    "code": "E07",
+    "title": "Autres affections de la thyroïde",
+    "mission_candidate": ".medina/missions/ALPHA77-CODEX-E07-INTEGRATE.json",
     "reservation_acquired": true,
     "start_passed": true,
     "harness_claimed": true,
-    "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E01-E02/start-E02.json"
+    "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E02-E07/start-E07.json"
   },
   "authorization_scope": "E02 uniquement dans ses chemins de mission ; aucun fichier partagé, aucune PR ni main.",
   "counts": {
@@ -1263,9 +1263,9 @@
     "phase": "preparation_only_waiting_harness_veille_and_exclusive_worktree",
     "authorization_scope": "Préparation seulement dans harness/agents/endocrinologie; aucune écriture médicale, aucun commit ni index. Ordre courant spécialités parallèles/une leçon à la fois remplace lots historiques, pas réservations."
   },
-  "updated_at": "2026-11-02T04:16:30.235427+00:00",
-  "worktree": "/workspace/Medina-endocrinologie-E02",
-  "branch": "codex/alpha77/e02-integrate-g1",
+  "updated_at": "2026-11-02T04:20:54.460394+00:00",
+  "worktree": "/workspace/Medina-endocrinologie-E07",
+  "branch": "codex/alpha77/e07-integrate-g1",
   "tokens_actual": null,
   "cost_actual": null,
   "completed_lessons": [
@@ -1297,37 +1297,36 @@
       "clinical_certification": false,
       "main_or_pr": false,
       "released": true
+    },
+    {
+      "code": "E02",
+      "title": "Hypothyroïdie par carence inapparente en iode",
+      "head": "d54ec0b656767231f307d95129a0d1032aad3d21",
+      "branch": "codex/alpha77/e02-integrate-g1",
+      "pushed": true,
+      "released": true,
+      "preview": "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE/E02-apercu-autonome.html",
+      "report": "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE/RAPPORT-E02.md",
+      "completion": "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE/harness-completion.json",
+      "source_binding": "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE/source-binding.json",
+      "reviews": "self_review",
+      "clinical_certification": false,
+      "main_or_pr": false
     }
   ],
   "previous_lesson": {
-    "code": "E01",
-    "title": "Affections thyroïdiennes et apparentées liées à une carence en iode",
-    "mission_candidate": ".medina/missions/ALPHA77-CODEX-E01-INTEGRATE.json",
+    "code": "E02",
+    "title": "Hypothyroïdie par carence inapparente en iode",
+    "mission_candidate": ".medina/missions/ALPHA77-CODEX-E02-INTEGRATE.json",
     "reservation_acquired": false,
     "start_passed": true,
     "harness_claimed": true,
-    "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E00-E01/start-E01.json",
+    "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E01-E02/start-E02.json",
     "released": true
   },
   "previous_evidence": {
-    "folder": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE",
-    "status": "Achevé et poussé, harness complete réussi, réservation E01 libérée.",
-    "preview": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/E01-apercu-autonome.html",
-    "static": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/static-report.json",
-    "sciences": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/audit-sciences.json",
-    "sources": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/recherche_E01/sources.json",
-    "manifest": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/lesson-manifest.json",
-    "completion": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/harness-completion.json",
-    "source_binding": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/source-binding.json",
-    "captures": [
-      "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/390-font24-table-right.png",
-      "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/390-normal-anatomy.png",
-      "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/1440-compression-ct.png"
-    ]
-  },
-  "current_evidence": {
     "folder": "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE",
-    "status": "Monographie révisée, 14/20 documentés, quatre auto-relectures explicites ; ultime vérification après correction linguistique, push non encore effectué.",
+    "status": "Achevée, poussée, harness complete réussi, réservation libérée.",
     "preview": "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE/E02-apercu-autonome.html",
     "report": "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE/RAPPORT-E02.md",
     "manifest": "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE/lesson-manifest.json",
@@ -1336,15 +1335,14 @@
       "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE/390-normal-anatomy.png",
       "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE/390-book24-pharmacology.png",
       "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE/1440-euthyrox-popup.png"
-    ]
+    ],
+    "completion": "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE/harness-completion.json"
+  },
+  "current_evidence": {
+    "folder": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE",
+    "status": "Lecture du cours existant et recherche ; aucune rédaction médicale avant VÉRITÉ E07."
   },
   "previous_limits": [
-    "Auto-relecture explicite, aucune certification médicale humaine.",
-    "Prévalence adulte suisse inconnue ; FI suisse du perchlorate non identifiée, pas de dosage inventé.",
-    "Divergences réglementaires et populations sélectionnées explicitées.",
-    "Navigation à origine interceptée ; aucun serveur HTTP réel testé."
-  ],
-  "current_limits": [
     "Aucune prévalence contemporaine suisse de E02 ni essai thérapeutique propre à sa cause iodée n’a été retrouvé ; les données de nutrition et d’HIC générale ne les remplacent pas.",
     "Plusieurs études sont lues au niveau du résumé seulement. Les recommandations ETA 2013/2014 sont datées et confrontées aux essais ultérieurs, à HAS 2022 et à RCOG 2025, correction 2026 contrôlée.",
     "Les divergences HAS/RCOG sur grossesse, anticorps et suivi, ainsi que FI suisse/ETA pour espacement et cibles, sont conservées et contextualisées.",
@@ -1354,5 +1352,8 @@
     "Les contrôles de navigateur utilisent une origine interceptée et les octets exacts de la copie autonome ; aucun serveur HTTP réel ni site publié n’est testé.",
     "La coque native conserve son bandeau provisoire de contre-audit. Les quatre reçus sont des auto-relectures explicites par intelligence artificielle, sans examen indépendant ni certification humaine.",
     "La navigation vers les autres leçons est héritée ; seuls le contenu et les interactions E02 sont revus. Le build signale trois éléments E05 non couverts, hors périmètre et réservation E02."
+  ],
+  "current_limits": [
+    "Les preuves et revues E02 ne certifient pas E07 ; passages nécessaires à lire pour cette leçon."
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "G02_COMPLETE_G05_REVIEWED_PENDING_COMMIT",
+  "status": "I64_RECHERCHE_G02_G05_COMPLETE",
   "prepared_at": "2026-11-02T01:17:05.123886+00:00",
   "agent": "Astra Neurologie",
   "model": "gpt-6-astra",
@@ -11,15 +11,15 @@
   "label": "N-05-Neurologie",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "candidate": {
-    "code": "G05",
-    "title": "Encéphalite, myélite et encéphalomyélite au cours d’affections classées ailleurs",
+    "code": "I64",
+    "title": "Accident vasculaire cérébral, non précisé comme étant hémorragique ou par infarctus",
     "mode": "existing",
     "owner": "Codex",
     "active_reservations": [],
-    "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G05-INTEGRATE.json",
+    "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-I64-INTEGRATE.json",
     "campaign77_member": true,
     "source_exists": true,
-    "authorization": "Réservation réelle94514a6d, start et claim réussis, worktree exclusif"
+    "authorization": "candidate_after_harness_and_current_reservation_check"
   },
   "counts": {
     "specialty_existing": 57,
@@ -1002,81 +1002,23 @@
       "Private GitHub cron and local watch depend on runner/environment availability"
     ]
   },
-  "updated_at": "2026-11-02T04:14:52.093367+00:00",
+  "updated_at": "2026-11-02T04:23:10.642686+00:00",
   "current_package": {
-    "code": "G05",
-    "worktree": "/workspace/Medina-neurologie-G05",
-    "branch": "codex/alpha77/g05-integrate-g1",
+    "code": "I64",
+    "worktree": "/workspace/Medina-neurologie-I64",
+    "branch": "codex/alpha77/i64-integrate-g1",
     "reservation_acquired": true,
-    "start_receipt": "/workspace/Medina-neurologie-G05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/start.json",
+    "acquisition_registry_sha": "435588a0adf57cd0c00edb2b99c861412390c828",
+    "start_receipt": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/start.json",
     "claim": true,
-    "stage": "verification",
-    "source_readings_count": 47,
-    "monograph14_reviewed": 14,
-    "matrix20_reviewed": 20,
-    "clinical_certification": false,
-    "blocking_findings": [],
-    "current_revision": "Contrôles statiques et navigateur finaux passés ; paquet empreinté, commit et garde de branche à effectuer.",
-    "preview": "/workspace/Medina-neurologie-G05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/G05-apercu-autonome.html",
-    "sciences": 6,
-    "semiology_sections": 9,
-    "source_binding": "/workspace/Medina-neurologie-G05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/source-binding.json",
-    "browser_report": "/workspace/Medina-neurologie-G05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/browser-autonomous.json",
-    "captures": "/workspace/Medina-neurologie-G05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/captures",
-    "contract": "/workspace/Medina-neurologie-G05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/contract-check.json",
-    "bundle_sha256": "42d8f942ddaaba5709f87a88720e57cb5448d991785ea6a34ac4b4879b5bf8d0",
-    "review_mode": "self_review",
-    "reserves": [
-      {
-        "id": "L1",
-        "topic": "Codage",
-        "blocking": false,
-        "reason": "CIM-10-GM allemande2024 identifiée ; aucune certification de facturation suisse2026. Le raisonnement clinique reste distinct du code.",
-        "judgment": "Limite circonscrite : assertions dépendantes retirées ou contextualisées ; ne bloque pas la couverture pédagogique décrite."
-      },
-      {
-        "id": "L2",
-        "topic": "Épidémiologie",
-        "blocking": false,
-        "reason": "Aucune incidence suisse généraleG05 établie ; cohortes européennes avec périodes, dénominateurs et associations non causales explicites.",
-        "judgment": "Limite circonscrite : assertions dépendantes retirées ou contextualisées ; ne bloque pas la couverture pédagogique décrite."
-      },
-      {
-        "id": "L3",
-        "topic": "Profondeur des lectures",
-        "blocking": false,
-        "reason": "Résumé seul pour cohorte danoise,MONALISA etRMSauto-immunité ; autres passages ciblés indiqués. Aucun texte intégral inaccessible n’est déclaré lu.",
-        "judgment": "Limite circonscrite : assertions dépendantes retirées ou contextualisées ; ne bloque pas la couverture pédagogique décrite."
-      },
-      {
-        "id": "L4",
-        "topic": "Produits étrangers",
-        "blocking": false,
-        "reason": "RCP de sulfadiazine français et allemand distingués ; disponibilité suisse non affirmée, plafonds et grossesse non fusionnés.",
-        "judgment": "Limite circonscrite : assertions dépendantes retirées ou contextualisées ; ne bloque pas la couverture pédagogique décrite."
-      },
-      {
-        "id": "L5",
-        "topic": "Causes rares et immunothérapies",
-        "blocking": false,
-        "reason": "Principes diagnostiques/thérapeutiques sourcés ; pas de doses de recours sansFI exacte. Ce périmètre pédagogique ne prétend pas fournir tous les protocoles spécialisés.",
-        "judgment": "Limite circonscrite : assertions dépendantes retirées ou contextualisées ; ne bloque pas la couverture pédagogique décrite."
-      },
-      {
-        "id": "L6",
-        "topic": "Figures et review",
-        "blocking": false,
-        "reason": "Planches anatomiques historiques humaines, normales et annotées hors pixels. Auto-relectureIA réelle, aucune revue indépendante ni validation humaine.",
-        "judgment": "Limite circonscrite : assertions dépendantes retirées ou contextualisées ; ne bloque pas la couverture pédagogique décrite."
-      },
-      {
-        "id": "L7",
-        "topic": "Aperçu",
-        "blocking": false,
-        "reason": "Moteur natif local autonome, images intégrées ; autres cours hérités non audités. Aucun déploiement distant vérifié.",
-        "judgment": "Limite circonscrite : assertions dépendantes retirées ou contextualisées ; ne bloque pas la couverture pédagogique décrite."
-      }
-    ]
+    "stage": "recherche",
+    "source_readings_count": 0,
+    "monograph14_reviewed": 0,
+    "matrix20_reviewed": 0,
+    "blocking_findings": [
+      "Révision médicale et figures humaines à réaliser sur les sources réellement relues."
+    ],
+    "clinical_certification": false
   },
   "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
   "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
@@ -1206,6 +1148,97 @@
       "completed_at": "2026-11-02T03:10:39+00:00",
       "released": true,
       "release_registry_sha": "e6b67278a7bf0c6aac10a77ab3345825995633b2"
+    },
+    {
+      "code": "G05",
+      "worktree": "/workspace/Medina-neurologie-G05",
+      "branch": "codex/alpha77/g05-integrate-g1",
+      "reservation_acquired": true,
+      "start_receipt": "/workspace/Medina-neurologie-G05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/start.json",
+      "claim": true,
+      "stage": "termine",
+      "source_readings_count": 47,
+      "monograph14_reviewed": 14,
+      "matrix20_reviewed": 20,
+      "clinical_certification": false,
+      "blocking_findings": [],
+      "current_revision": "Reçu final poussé et vérifié ; réservation G05 libérée après achèvement réel.",
+      "preview": "/workspace/Medina-neurologie-G05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/G05-apercu-autonome.html",
+      "sciences": 6,
+      "semiology_sections": 9,
+      "source_binding": "/workspace/Medina-neurologie-G05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/source-binding.json",
+      "browser_report": "/workspace/Medina-neurologie-G05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/browser-autonomous.json",
+      "captures": "/workspace/Medina-neurologie-G05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/captures",
+      "contract": "/workspace/Medina-neurologie-G05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/contract-check.json",
+      "bundle_sha256": "42d8f942ddaaba5709f87a88720e57cb5448d991785ea6a34ac4b4879b5bf8d0",
+      "review_mode": "self_review",
+      "reserves": [
+        {
+          "id": "L1",
+          "topic": "Codage",
+          "blocking": false,
+          "reason": "CIM-10-GM allemande2024 identifiée ; aucune certification de facturation suisse2026. Le raisonnement clinique reste distinct du code.",
+          "judgment": "Limite circonscrite : assertions dépendantes retirées ou contextualisées ; ne bloque pas la couverture pédagogique décrite."
+        },
+        {
+          "id": "L2",
+          "topic": "Épidémiologie",
+          "blocking": false,
+          "reason": "Aucune incidence suisse généraleG05 établie ; cohortes européennes avec périodes, dénominateurs et associations non causales explicites.",
+          "judgment": "Limite circonscrite : assertions dépendantes retirées ou contextualisées ; ne bloque pas la couverture pédagogique décrite."
+        },
+        {
+          "id": "L3",
+          "topic": "Profondeur des lectures",
+          "blocking": false,
+          "reason": "Résumé seul pour cohorte danoise,MONALISA etRMSauto-immunité ; autres passages ciblés indiqués. Aucun texte intégral inaccessible n’est déclaré lu.",
+          "judgment": "Limite circonscrite : assertions dépendantes retirées ou contextualisées ; ne bloque pas la couverture pédagogique décrite."
+        },
+        {
+          "id": "L4",
+          "topic": "Produits étrangers",
+          "blocking": false,
+          "reason": "RCP de sulfadiazine français et allemand distingués ; disponibilité suisse non affirmée, plafonds et grossesse non fusionnés.",
+          "judgment": "Limite circonscrite : assertions dépendantes retirées ou contextualisées ; ne bloque pas la couverture pédagogique décrite."
+        },
+        {
+          "id": "L5",
+          "topic": "Causes rares et immunothérapies",
+          "blocking": false,
+          "reason": "Principes diagnostiques/thérapeutiques sourcés ; pas de doses de recours sansFI exacte. Ce périmètre pédagogique ne prétend pas fournir tous les protocoles spécialisés.",
+          "judgment": "Limite circonscrite : assertions dépendantes retirées ou contextualisées ; ne bloque pas la couverture pédagogique décrite."
+        },
+        {
+          "id": "L6",
+          "topic": "Figures et review",
+          "blocking": false,
+          "reason": "Planches anatomiques historiques humaines, normales et annotées hors pixels. Auto-relectureIA réelle, aucune revue indépendante ni validation humaine.",
+          "judgment": "Limite circonscrite : assertions dépendantes retirées ou contextualisées ; ne bloque pas la couverture pédagogique décrite."
+        },
+        {
+          "id": "L7",
+          "topic": "Aperçu",
+          "blocking": false,
+          "reason": "Moteur natif local autonome, images intégrées ; autres cours hérités non audités. Aucun déploiement distant vérifié.",
+          "judgment": "Limite circonscrite : assertions dépendantes retirées ou contextualisées ; ne bloque pas la couverture pédagogique décrite."
+        }
+      ],
+      "completed_at": "2026-11-02T04:17:49+00:00",
+      "completion_receipt": "/workspace/Medina-neurologie-G05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/harness-completion.json",
+      "source_commit": "07e2dc4b5a157e11060ba53f4f266ceb6aa282c8",
+      "pushed": true,
+      "commit": "89113a86c9bc354c081cf0e1e6fbab4b1a91da24",
+      "released": true,
+      "release_registry_sha": "9ae08824f8047a7a76a2a527813a6e83c525ded4",
+      "preview_remote": "https://github.com/vialdjoukang-spec/Medina/blob/89113a86c9bc354c081cf0e1e6fbab4b1a91da24/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/G05-apercu-autonome.html",
+      "versions": [
+        {
+          "commit": "89113a86c9bc354c081cf0e1e6fbab4b1a91da24",
+          "preview": "https://github.com/vialdjoukang-spec/Medina/blob/89113a86c9bc354c081cf0e1e6fbab4b1a91da24/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/G05-apercu-autonome.html",
+          "preview_sha256": "42d8f942ddaaba5709f87a88720e57cb5448d991785ea6a34ac4b4879b5bf8d0",
+          "scope": "Reçu final et preuve de garde ; contenu et aperçu inchangés."
+        }
+      ]
     }
   ],
   "tokens_actual": null,

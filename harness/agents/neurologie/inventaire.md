@@ -126,3 +126,13 @@ Actualisation 2026-11-02T03:11:23.408712+00:00 : G02 achevé dans le harness à0
 
 
 G05 acquis réellement après libération G02 : registre `94514a6d560b60dcf9932d7ed3f7f904f179b541`, branche `codex/alpha77/g05-integrate-g1`, worktree `/workspace/Medina-neurologie-G05`. Start et claim réussis ; recherche seule au départ, aucune source héritée prétendue relue. Paquet final G02 conservé dans `completed_lessons`.
+
+
+## G05 — achèvement réel 2026-11-02T04:17:49+00:00
+
+Contenu poussé et vérifié : `07e2dc4b5a157e11060ba53f4f266ceb6aa282c8`. [Aperçu autonome actuel](/workspace/Medina-neurologie-G05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/G05-apercu-autonome.html), SHA `42d8f942ddaaba5709f87a88720e57cb5448d991785ea6a34ac4b4879b5bf8d0`. 47 lectures ciblées, 14/20 couverts, six sciences, neuf sections sémiologiques, deux originaux humains. [Reçu](/workspace/Medina-neurologie-G05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/harness-completion.json), [limites](/workspace/Medina-neurologie-G05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/lesson-manifest.json). Aucun audit indépendant ou médical humain revendiqué ; aucune PR/main. Le reçu final de branche sera ajouté après push.
+
+
+## État courant — 2026-11-02T04:21:53.551738+00:00
+
+G05 achevé à 04:17:49 UTC, poussé au commit `89113a86c9bc354c081cf0e1e6fbab4b1a91da24`, puis libéré au registre `9ae08824f8047a7a76a2a527813a6e83c525ded4`. [Aperçu de cette version](https://github.com/vialdjoukang-spec/Medina/blob/89113a86c9bc354c081cf0e1e6fbab4b1a91da24/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/G05-apercu-autonome.html). 47 lectures ciblées, 14 points et 20 rubriques couverts ; auto-relecture, aucune certification clinique. I64 reste le prochain candidat existant Codex, sous réserve d’acquisition et de start/claim réels. Les inventaires initiaux ci-dessus sont historiques.
