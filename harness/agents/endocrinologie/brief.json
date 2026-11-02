@@ -6,7 +6,7 @@
   "fragment": "S05",
   "label": "E-06-Endocrinologie et métabolisme",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "phase": "E07_verification_finale",
+  "phase": "E07_complete_publication_branche_en_cours",
   "selected_lesson": {
     "code": "E07",
     "title": "Autres affections de la thyroïde",
@@ -1263,7 +1263,7 @@
     "phase": "preparation_only_waiting_harness_veille_and_exclusive_worktree",
     "authorization_scope": "Préparation seulement dans harness/agents/endocrinologie; aucune écriture médicale, aucun commit ni index. Ordre courant spécialités parallèles/une leçon à la fois remplace lots historiques, pas réservations."
   },
-  "updated_at": "2026-11-02T05:05:34.464880+00:00",
+  "updated_at": "2026-11-02T05:14:56.772463+00:00",
   "worktree": "/workspace/Medina-endocrinologie-E07",
   "branch": "codex/alpha77/e07-integrate-g1",
   "tokens_actual": null,
@@ -1340,7 +1340,7 @@
   },
   "current_evidence": {
     "folder": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE",
-    "status": "Six HTML enrichis et relus ; 42 sources, six sciences et neuf sections sémiologiques. Vérification finale après corrections des homonymes du glossaire. Aucune clôture encore.",
+    "status": "Harness complete réussi le 2 novembre 2026 à 05:13:59 UTC ; 14/20, sources et quatre auto-relectures vérifiées. Commit local créé, push en cours.",
     "preview": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/E07-apercu-autonome.html",
     "sources": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/source-ledger.json",
     "static": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/static-report.json",
@@ -1349,7 +1349,12 @@
     "captures": [
       "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/390-compression-diagnostic-figure.png",
       "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/1440-euthyrox-popup.png"
-    ]
+    ],
+    "report": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/RAPPORT-E07.md",
+    "completion": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/harness-completion.json",
+    "manifest": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/lesson-manifest.json",
+    "source_binding": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/source-binding.json",
+    "coverage": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/coverage-14-20.json"
   },
   "previous_limits": [
     "Aucune prévalence contemporaine suisse de E02 ni essai thérapeutique propre à sa cause iodée n’a été retrouvé ; les données de nutrition et d’HIC générale ne les remplacent pas.",
@@ -1363,9 +1368,15 @@
     "La navigation vers les autres leçons est héritée ; seuls le contenu et les interactions E02 sont revus. Le build signale trois éléments E05 non couverts, hors périmètre et réservation E02."
   ],
   "current_limits": [
-    "Relectures par le même auteur IA ; pas de certification humaine.",
-    "Sources rares souvent limitées aux résumés et séries ; calcium diagnostique hors indication du produit exact importé.",
-    "Tests de copie autonome à origine interceptée ; aucun serveur HTTP réel ni déploiement main testé.",
-    "Vérification finale des fenêtres locales en cours avant manifestes et commit."
+    "Pas de recommandation suisse unique E07, de prévalence suisse globale, de score commun ni de seuil opérationnel suisse de rappel néonatal dans les sources lues ; ces absences sont explicitées, pas remplacées par une valeur inventée.",
+    "Plusieurs formes rares reposent sur des résumés, cas ou petites séries. Les données américaines d’anatomopathologie décrivent des observations ; aucune recommandation américaine directe ne fonde la conduite.",
+    "La synthèse britannique NEM2 reprend notamment une classification ATA ; elle est attribuée et ne remplace pas une décision de centre expert selon variant et famille.",
+    "Le calcium B. Braun est un produit allemand importé selon PHEL. Le RCP exact lu date de juillet 2014 ; le test diagnostique est hors indication et le protocole de la série italienne ne se transpose pas automatiquement.",
+    "Les seuils de calcitonine, performances de procalcitonine, fréquences de TBG et statistiques génétiques restent liés à leur méthode et population ; aucune validation universelle ne leur est attribuée.",
+    "Le catalogue suisse local est celui de 2024 ; aucune certification du codage ou remboursement individuel 2026. PROFILES 2017 sert de rapprochement pédagogique, sans question officielle ou garantie d’examen.",
+    "Les deux figures originales montrent une thyroïde normale et un goitre compressif adulte ; elles ne diagnostiquent ni hyperplasie C, ni Pendred, ni obstruction néonatale. La licence OpenStax historique est prouvée pour l’image 2013, indépendamment du manuel actuel.",
+    "Les tests navigateur emploient une origine HTTPS interceptée et les octets exacts de la copie autonome, avec les autres requêtes bloquées ; aucun serveur HTTP réel ou déploiement main n’est testé.",
+    "La coque native conserve son statut provisoire et sa navigation héritée. Seul E07 est relu ; trois éléments E05 non couverts signalés au build sont hors périmètre.",
+    "Relectures médicales, linguistiques et visuelles effectuées par le même auteur IA en mode self_review ; aucune revue indépendante ou certification humaine revendiquée."
   ]
 }

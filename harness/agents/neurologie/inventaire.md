@@ -136,3 +136,8 @@ Contenu poussé et vérifié : `07e2dc4b5a157e11060ba53f4f266ceb6aa282c8`. [Aper
 ## État courant — 2026-11-02T04:21:53.551738+00:00
 
 G05 achevé à 04:17:49 UTC, poussé au commit `89113a86c9bc354c081cf0e1e6fbab4b1a91da24`, puis libéré au registre `9ae08824f8047a7a76a2a527813a6e83c525ded4`. [Aperçu de cette version](https://github.com/vialdjoukang-spec/Medina/blob/89113a86c9bc354c081cf0e1e6fbab4b1a91da24/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/G05-apercu-autonome.html). 47 lectures ciblées, 14 points et 20 rubriques couverts ; auto-relecture, aucune certification clinique. I64 reste le prochain candidat existant Codex, sous réserve d’acquisition et de start/claim réels. Les inventaires initiaux ci-dessus sont historiques.
+
+
+## I64 — livraison finale du 2 novembre 2026, 05:07 UTC
+
+Achèvement réel, branche finale `b85aae199347d50025576f5155b7fe810546adb2` poussée et vérifiée ; réservation libérée. [Aperçu autonome](https://github.com/vialdjoukang-spec/Medina/blob/b85aae199347d50025576f5155b7fe810546adb2/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/I64-apercu-autonome.html), SHA `3bd2f292131c8a1f9a94b5e76c97e37ca61e50d810af7a3e2eeef1b7c3b656a9`. 34 lectures ciblées, 14/20 couverts, 15 346 mots, 39 fenêtres, 5 quiz, six sciences, neuf sections. Deux originaux humains, trois occurrences ; 10 captures finales inspectées sur 20. Tests 1440/390/Livre 24 et source-binding exact réussis. Auto-relecture sans certification médicale. Huit limites explicites jugées non bloquantes, dont différences FI/protocoles et recouvrement temporaire du bouton Plan mobile. Aucun moteur/catalogue/main modifié.

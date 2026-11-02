@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "I64_REVISION_NATIVE_G02_G05_COMPLETE",
+  "status": "C70_RECHERCHE_G02_G05_I64_COMPLETE",
   "prepared_at": "2026-11-02T01:17:05.123886+00:00",
   "agent": "Astra Neurologie",
   "model": "gpt-6-astra",
@@ -11,12 +11,12 @@
   "label": "N-05-Neurologie",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "candidate": {
-    "code": "I64",
-    "title": "Accident vasculaire cérébral, non précisé comme étant hémorragique ou par infarctus",
+    "code": "C70",
+    "title": "Tumeur maligne des méninges",
     "mode": "existing",
     "owner": "Codex",
     "active_reservations": [],
-    "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-I64-INTEGRATE.json",
+    "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-C70-INTEGRATE.json",
     "campaign77_member": true,
     "source_exists": true,
     "authorization": "candidate_after_harness_and_current_reservation_check"
@@ -1002,42 +1002,30 @@
       "Private GitHub cron and local watch depend on runner/environment availability"
     ]
   },
-  "updated_at": "2026-11-02T04:55:57.939931+00:00",
+  "updated_at": "2026-11-02T05:09:43.268296+00:00",
   "current_package": {
-    "code": "I64",
-    "worktree": "/workspace/Medina-neurologie-I64",
-    "branch": "codex/alpha77/i64-integrate-g1",
+    "code": "C70",
+    "worktree": "/workspace/Medina-neurologie-C70",
+    "branch": "codex/alpha77/c70-integrate-g1",
     "reservation_acquired": true,
-    "acquisition_registry_sha": "435588a0adf57cd0c00edb2b99c861412390c828",
-    "start_receipt": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/start.json",
-    "claim": true,
-    "stage": "revision_native",
-    "source_readings_count": 31,
-    "monograph14_reviewed": 14,
-    "matrix20_reviewed": 20,
+    "acquisition_registry_sha": "691df1430fc760c0a3106fc8f97bb567e09693f4",
+    "start_receipt": "/workspace/Medina-neurologie-C70/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE/start.json",
+    "stage": "recherche",
+    "source_readings_count": 0,
+    "monograph14_reviewed": 0,
+    "matrix20_reviewed": 0,
     "blocking_findings": [
-      "Relecture finale, empreinte finale et contrôles de branche encore à terminer."
+      "Lectures primaires, révision des six surfaces, figures et contrôles finaux à réaliser."
     ],
     "clinical_certification": false,
-    "words_static": 14771,
-    "science_tabs": 6,
-    "semiology_sections": 9,
-    "windows": 37,
-    "quizzes": 5,
-    "preview": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/I64-apercu-autonome.html",
-    "preview_sha256": "5a05af861a93f991f84a251e0946da4eda9967c82e625526a20246e6f02a5aa5",
-    "browser_report": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/browser-autonomous.json",
-    "coverage_report": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/coverage-review.md",
-    "review_mode": "self_review"
+    "preview": null
   },
   "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
   "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
   "medical_content_written": true,
   "current_limitations": [
-    "Relecture auteur, pas validationhumaine ni indépendante.",
-    "Limites documentaires circonscrites dans lesrapports, jugées nonbloquantes pour le contenu effectivement publié.",
-    "Tokens/coûts non exposés ; aucune mesure inventée.",
-    "Prochaineleçon conditionnée à clôture enregistrée et réservation distante actualisée."
+    "Préparation C70 ; aucun cours enrichi ni test final pour cette leçon.",
+    "Les sources héritées sont des pistes à relire, pas des lectures de cette session."
   ],
   "completed_lessons": [
     {
@@ -1247,6 +1235,109 @@
           "preview": "https://github.com/vialdjoukang-spec/Medina/blob/89113a86c9bc354c081cf0e1e6fbab4b1a91da24/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/G05-apercu-autonome.html",
           "preview_sha256": "42d8f942ddaaba5709f87a88720e57cb5448d991785ea6a34ac4b4879b5bf8d0",
           "scope": "Reçu final et preuve de garde ; contenu et aperçu inchangés."
+        }
+      ]
+    },
+    {
+      "code": "I64",
+      "worktree": "/workspace/Medina-neurologie-I64",
+      "branch": "codex/alpha77/i64-integrate-g1",
+      "reservation_acquired": true,
+      "acquisition_registry_sha": "435588a0adf57cd0c00edb2b99c861412390c828",
+      "start_receipt": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/start.json",
+      "claim": true,
+      "stage": "termine",
+      "source_readings_count": 34,
+      "monograph14_reviewed": 14,
+      "matrix20_reviewed": 20,
+      "blocking_findings": [],
+      "clinical_certification": false,
+      "words_static": 15346,
+      "science_tabs": 6,
+      "semiology_sections": 9,
+      "windows": 39,
+      "quizzes": 5,
+      "preview": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/I64-apercu-autonome.html",
+      "preview_sha256": "3bd2f292131c8a1f9a94b5e76c97e37ca61e50d810af7a3e2eeef1b7c3b656a9",
+      "browser_report": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/browser-autonomous.json",
+      "coverage_report": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/coverage-review.md",
+      "review_mode": "self_review",
+      "source_binding": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/source-binding.json",
+      "contract": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/contract-check.json",
+      "captures": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/captures",
+      "captures_inspected": 10,
+      "reserves": [
+        {
+          "id": "L1",
+          "topic": "Codage",
+          "blocking": false,
+          "reason": "CIM-10-GM allemande 2024 identifiée ; aucune certification de facturation suisse 2026. Nature de l’AVC, étiologie et séquelles distinguées.",
+          "judgment": "Limite circonscrite et explicitée : assertions dépendantes contextualisées ou non prescrites ; couverture pédagogique jugée complète dans ce périmètre par auteur."
+        },
+        {
+          "id": "L2",
+          "topic": "Épidémiologie",
+          "blocking": false,
+          "reason": "Données suisses de 2017 datées et dénominateurs explicités ; aucune incidence suisse actuelle propre à I64. Associations organisationnelles non déclarées causales.",
+          "judgment": "Limite circonscrite et explicitée : assertions dépendantes contextualisées ou non prescrites ; couverture pédagogique jugée complète dans ce périmètre par auteur."
+        },
+        {
+          "id": "L3",
+          "topic": "Lectures ciblées",
+          "blocking": false,
+          "reason": "Passages et résumés effectivement lus identifiés ; Weir 1994 et unités mobiles 2022 limités au résumé. Les descriptions automatiques d’images du CEN ne servent pas de preuve anatomique.",
+          "judgment": "Limite circonscrite et explicitée : assertions dépendantes contextualisées ou non prescrites ; couverture pédagogique jugée complète dans ce périmètre par auteur."
+        },
+        {
+          "id": "L4",
+          "topic": "FI et recommandations",
+          "blocking": false,
+          "reason": "Divergences FI/protocoles exposées : INR, paliers de ténectéplase, vitamine K, aspirine et DAPT. Aucun seuil n’est silencieusement harmonisé. Hors AMM distingué de la FI.",
+          "judgment": "Limite circonscrite et explicitée : assertions dépendantes contextualisées ou non prescrites ; couverture pédagogique jugée complète dans ce périmètre par auteur."
+        },
+        {
+          "id": "L5",
+          "topic": "Situations spécialisées",
+          "blocking": false,
+          "reason": "ARIA et réversion anti-Xa : décision spécialisée et incertitudes explicites ; aucune dose d’andexanet non vérifiée. Le cours ne remplace pas un protocole individuel de prescription.",
+          "judgment": "Limite circonscrite et explicitée : assertions dépendantes contextualisées ou non prescrites ; couverture pédagogique jugée complète dans ce périmètre par auteur."
+        },
+        {
+          "id": "L6",
+          "topic": "Figures",
+          "blocking": false,
+          "reason": "Deux planches anatomiques humaines historiques normales, originales et annotées dans le HTML ; elles ne représentent ni une lésion de patient ni une coupe histologique.",
+          "judgment": "Limite circonscrite et explicitée : assertions dépendantes contextualisées ou non prescrites ; couverture pédagogique jugée complète dans ce périmètre par auteur."
+        },
+        {
+          "id": "L7",
+          "topic": "Aperçu et interface",
+          "blocking": false,
+          "reason": "Transport HTTP local éphémère, requêtes externes bloquées ; autres cours hérités non audités. Sur mobile, le bouton flottant Plan peut recouvrir temporairement quelques mots ; le défilement permet leur lecture. Aucun moteur partagé modifié.",
+          "judgment": "Limite circonscrite et explicitée : assertions dépendantes contextualisées ou non prescrites ; couverture pédagogique jugée complète dans ce périmètre par auteur."
+        },
+        {
+          "id": "L8",
+          "topic": "Statut des revues",
+          "blocking": false,
+          "reason": "Auto-relecture réelle de l’auteur ; aucune revue indépendante, validation humaine ou certification clinique. Les nombres de mots, lectures et contrôles ne mesurent pas la qualité médicale.",
+          "judgment": "Limite circonscrite et explicitée : assertions dépendantes contextualisées ou non prescrites ; couverture pédagogique jugée complète dans ce périmètre par auteur."
+        }
+      ],
+      "completed_at": "2026-11-02T05:07:12+00:00",
+      "completion_receipt": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/harness-completion.json",
+      "source_commit": "0695cc7c",
+      "current_revision": "Achèvement réel, contenu et reçu final poussés ; garde et SHA distant vérifiés ; réservation libérée.",
+      "released": true,
+      "commit": "b85aae199347d50025576f5155b7fe810546adb2",
+      "pushed": true,
+      "release_registry_sha": "c44b54e615998f35bf7ff46000e864178b855460",
+      "preview_remote": "https://github.com/vialdjoukang-spec/Medina/blob/b85aae199347d50025576f5155b7fe810546adb2/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/I64-apercu-autonome.html",
+      "versions": [
+        {
+          "commit": "b85aae199347d50025576f5155b7fe810546adb2",
+          "preview": "https://github.com/vialdjoukang-spec/Medina/blob/b85aae199347d50025576f5155b7fe810546adb2/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/I64-apercu-autonome.html",
+          "preview_sha256": "3bd2f292131c8a1f9a94b5e76c97e37ca61e50d810af7a3e2eeef1b7c3b656a9"
         }
       ]
     }

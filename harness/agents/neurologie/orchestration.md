@@ -158,3 +158,10 @@ La campagne contient onze clôtures de projet dans le status consulté ; aucune 
 
 
 Signal documentaire transmis par le parent : HUG microhématurie 2024, https://www.hug.ch/sites/interhug/files/2024-10/strategie_microhematurie_doi.pdf, décrit une dysmorphie >60 %, à distinguer du seuil >80 % de 2017 cité comme ancien dans N00. Information de coordination reçue, pas nouvelle lecture médicale par Neurologie ; N00 reste figé jusqu’à nouvelle réservation. Aucune correction inter-agent ni écriture hors périmètre.
+
+
+## Relevé transversal — 2026-11-02, 05:09 UTC
+
+Lecture réelle du status généré à 05:07:12 et des briefs des quatre filières : 12 clôtures de projet enregistrées, dont I64 à 05:07:12. I64 final `b85aae199347d50025576f5155b7fe810546adb2` poussé et vérifié, puis libéré ; C70 reste conditionné à acquisition CAS et start réels. E07 est en vérification finale : brief 05:05:34, 42 sources annoncées, six sciences/neuf sections, derniers contrôles des fenêtres et manifestes encore ouverts ; aucune clôture déduite. N02 est en recherche, activité 04:58:05, FI Filspari/Kinpeygo en lecture ; aucun cours final ni test déduit. Son catalogue chapters.json demeure exclusif. Les réserves héritées N04/N29 de son brief ne sont pas assimilées à des lacunes N02. C95 est en rédaction, activité 05:06:22 : quinze sections et trente-trois fiches déclarées ; pharmacologie/sciences/contrôles encore à finaliser. Son brief 04:38:33 est antérieur, ses zéros initiaux ne mesurent pas le travail actuel.
+
+Priorités : terminer les fenêtres et le binding E07 ; confronter les FI exactes et critères rénaux N02 ; achever pharmacologie, sciences et preuves C95. Aucun passage suivant sans dossier complet, contrôles finaux, reçu, push vérifié puis libération/acquisition. La limite HUG microhématurie 2024 (>60 % versus ancien >80 %) reste un signal de coordination reçu, pas une lecture médicale supplémentaire de ma part ; N00 figé jusqu’à nouvelle réservation. Mesures de tokens, coûts, scores médicaux et qualité transversale : null. Coordination documentaire, aucune relecture indépendante de ces cours.
