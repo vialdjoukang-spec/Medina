@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-02T08:15:41+00:00",
+  "generated_at": "2026-11-02T08:25:41+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T08:15:41+00:00",
+    "checked_at": "2026-11-02T08:25:41+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T08:15:41+00:00",
+    "observed_at": "2026-11-02T08:25:41+00:00",
     "ok": true,
     "findings": [
       {
@@ -30,7 +30,7 @@
       }
     ],
     "interval_seconds": 600,
-    "observer_pid": 508289,
+    "observer_pid": 508592,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -1459,7 +1459,7 @@
         "tokens_actual": null,
         "cost_actual": null
       },
-      "activity_age_seconds": 10902,
+      "activity_age_seconds": 11502,
       "activity_fresh": false,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -2899,9 +2899,9 @@
           "Relectures médicales, linguistiques et visuelles effectuées par le même auteur IA en mode self_review ; aucune revue indépendante ou certification humaine revendiquée."
         ]
       },
-      "activity_age_seconds": 10902,
+      "activity_age_seconds": 11502,
       "activity_fresh": false,
-      "sections_per_hour": 3.58,
+      "sections_per_hour": 3.43,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -3677,7 +3677,7 @@
           "clinical_certification": false
         }
       },
-      "activity_age_seconds": 11094,
+      "activity_age_seconds": 11694,
       "activity_fresh": false,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -4105,19 +4105,13 @@
         ],
         "metrics": null
       },
-      "activity_age_seconds": 11359,
+      "activity_age_seconds": 11959,
       "activity_fresh": false,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T01:23:56+00:00",
-      "action": "claim",
-      "agent": "astra_neurologie",
-      "code": "G02"
-    },
     {
       "at": "2026-11-02T01:23:56+00:00",
       "action": "claim",
@@ -5431,6 +5425,12 @@
     },
     {
       "at": "2026-11-02T08:05:41+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 3
+    },
+    {
+      "at": "2026-11-02T08:15:41+00:00",
       "action": "watch",
       "ok": true,
       "findings": 3
@@ -12306,7 +12306,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T08:15:40+00:00",
+    "observed_at": "2026-11-02T08:25:40+00:00",
     "lessons": [
       {
         "code": "E00",
