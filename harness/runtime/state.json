@@ -15,8 +15,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE"
       ],
       "started_at": "2026-11-02T12:18:09+00:00",
-      "activity_at": "2026-11-02T12:18:09+00:00",
-      "message": "Mission réservée; recherche autorisée",
+      "activity_at": "2026-11-02T12:39:12+00:00",
+      "message": "G06 : huit lectures ciblées réelles journalisées ; guide suisse STG 2026, ESCMID primaire, EANS et FI montrent des divergences de fréquence/durée à expliciter ; aucune rédaction de cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -29,7 +29,7 @@
     "astra_endocrinologie": {
       "lesson": "E30",
       "worktree": "/workspace/Medina-endocrinologie-E30",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/e30-integrate-g1",
       "allowed_paths": [
         "chapters/E30",
@@ -39,15 +39,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE"
       ],
       "started_at": "2026-11-02T11:53:37+00:00",
-      "activity_at": "2026-11-02T12:17:20+00:00",
-      "message": "E30 : recherche ciblée terminée sur 21 sources et porte betta_verite passée avant toute nouvelle rédaction canonique. Version danoise approuvée février 2025 lue, FI exactes 2022/2025/2026 et deux figures humaines/licences inspectées. Désaccord imagerie garçons 2025 vs revue 2026, seuils/méthodes, risque de confusion entre Lucrin mensuel et autres formulations, et absence d’indication pédiatrique Progynova explicités. Preuves /workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/recherche_E30 et source-ledger.json.",
+      "activity_at": "2026-11-02T12:38:52+00:00",
+      "message": "E30 : 14 sections et 20 rubriques rédigées, six sciences dont neuf rubriques de sémiologie avec structure stricte. Audit sciences passé à la base approuvée : 5→6 disciplines, 1267→2986 mots, 6 figures (2 originaux humains, 4 schémas logiques). Contrôle statique final et fenêtres contextuelles en cours ; aucun binding créé.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "ea760a59820884c1cd5da31a21a2879c628bf8ac2cf3a58a1dbb167e4393ef7e"
     },
     "astra_nephrologie": {
@@ -77,7 +77,7 @@
     "codex_hematologie": {
       "lesson": "D63",
       "worktree": "/workspace/Medina-hematologie-D63",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/d63-integrate-g1",
       "allowed_paths": [
         "chapters/D63",
@@ -87,8 +87,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D63-INTEGRATE"
       ],
       "started_at": "2026-11-02T11:13:57+00:00",
-      "activity_at": "2026-11-02T12:28:39+00:00",
-      "message": "D63 : rédaction pharmacologique effective des trois FI suisses ; calculs Ferinject, limites Eprex et interactions ferro sanol attribués. Sciences/examens/fenêtres et assemblage encore en cours, aucune clôture.",
+      "activity_at": "2026-11-02T12:43:26+00:00",
+      "message": "D63 : contrôle statique et audit sciences réussis ; 4360 mots scientifiques, six disciplines. Navigation native testée : Tab+Entrée opérationnels, flèches non gérées par moteur hérité ; réserve explicite, parcours final en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -100,39 +100,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T03:16:21+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "recherche",
-      "message": "G05 réservé: DGN2025 p2–14/16–28 et EAN/ESCMID2026 PICO1–16 réellement lus; deux preuves persistées. FI Cymevene/amoxicilline récupérées non encore lues. Ancienne anatomie et sémiologie à corriger; aucun cours nouveau rédigé."
-    },
-    {
-      "at": "2026-11-02T03:17:37+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 1
-    },
-    {
-      "at": "2026-11-02T03:20:04+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 1
-    },
-    {
-      "at": "2026-11-02T03:21:42+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "verification",
-      "message": "Gate réouvert après maintenance du parent : vérification native E01, audit sciences réussi et aucune abréviation E01 non couverte. Contrôles navigateur en préparation."
-    },
-    {
-      "at": "2026-11-02T03:22:12+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "revue_requise",
-      "message": "N29 aperçu autonome testé 1440/390, huit images décodées hors réseau ; position réelle des annotations contrôlée et quatre figures vues. 31 lectures ciblées, neuf FI suisses. Reçus finaux et matrice 14/20 en préparation."
-    },
     {
       "at": "2026-11-02T03:24:01+00:00",
       "action": "complete",
@@ -1390,6 +1357,40 @@
       "action": "watch",
       "ok": true,
       "findings": 1
+    },
+    {
+      "at": "2026-11-02T12:37:10+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "redaction",
+      "message": "D63 : six sciences et neuf unités sémiologiques substantielles rédigées ; cinq blocs examens, trente fenêtres explicatives et neuf synthèses Pareto. Assemblage et contrôles réels encore à faire."
+    },
+    {
+      "at": "2026-11-02T12:38:52+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "verification",
+      "message": "E30 : 14 sections et 20 rubriques rédigées, six sciences dont neuf rubriques de sémiologie avec structure stricte. Audit sciences passé à la base approuvée : 5→6 disciplines, 1267→2986 mots, 6 figures (2 originaux humains, 4 schémas logiques). Contrôle statique final et fenêtres contextuelles en cours ; aucun binding créé."
+    },
+    {
+      "at": "2026-11-02T12:39:12+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "G06 : huit lectures ciblées réelles journalisées ; guide suisse STG 2026, ESCMID primaire, EANS et FI montrent des divergences de fréquence/durée à expliciter ; aucune rédaction de cours."
+    },
+    {
+      "at": "2026-11-02T12:43:26+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "verification",
+      "message": "D63 : contrôle statique et audit sciences réussis ; 4360 mots scientifiques, six disciplines. Navigation native testée : Tab+Entrée opérationnels, flèches non gérées par moteur hérité ; réserve explicite, parcours final en cours."
+    },
+    {
+      "at": "2026-11-02T12:45:15+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 2
     }
   ],
   "cache": {
