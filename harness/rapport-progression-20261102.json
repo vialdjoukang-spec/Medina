@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-02T10:30:09.862075+00:00",
+  "generated_at": "2026-11-02T10:45:56.494503+00:00",
   "timezone": "Europe/Zurich",
-  "remote_collection_at": "2026-11-02T10:23:45.024292+00:00",
-  "remote_snapshot_at": "2026-11-02T10:15:41+00:00",
-  "remote_snapshot_sha": "abfe6cee2ab9dfbb89e76581d731c7d8f03d6668",
+  "remote_collection_at": "2026-11-02T10:44:29.793400+00:00",
+  "remote_snapshot_at": "2026-11-02T10:40:10+00:00",
+  "remote_snapshot_sha": "028b22bb530807db2281eef868fd69bb661ab311",
   "frozen_08h_actual_at": "2026-11-02T07:05:41+00:00",
-  "completed_count": 13,
+  "completed_count": 14,
   "candidate_count": 70,
   "historical_categories": 270,
-  "versions_verified": 13,
-  "source_bindings_checked": 126,
+  "versions_verified": 14,
+  "source_bindings_checked": 138,
   "main_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "lessons": [
     {
@@ -795,7 +795,50 @@
       "source_entries": 39,
       "image_entries": 1,
       "blocking_findings": [],
-      "limitations": [],
+      "limitations": [
+        {
+          "id": "L1",
+          "topic": "Erratum candidose du15octobre2025",
+          "status": "limite documentaire circonscrite",
+          "blocking": false,
+          "reason": "Principes du guide2025 réellement lus ; schéma chiffré douteux non publié. Ne pas prétendre avoir confronté le texte de cet erratum inaccessible."
+        },
+        {
+          "id": "L2",
+          "topic": "Produits rares et accès suisse",
+          "status": "limite réglementaire et logistique",
+          "blocking": false,
+          "reason": "FI exactes ou RCP étrangers identifiés, populations et voies distinguées. Aucune disponibilité suisse déduite d’une autorisation ou de la présence dans une liste."
+        },
+        {
+          "id": "L3",
+          "topic": "Épidémiologie suisse",
+          "status": "limite de données",
+          "blocking": false,
+          "reason": "Études hospitalières et année historique FSME identifiées. Pas d’incidence suisse contemporaine inventée ni de généralisation des cohortes étrangères."
+        },
+        {
+          "id": "L4",
+          "topic": "Codage administratif",
+          "status": "limite d’applicabilité",
+          "blocking": false,
+          "reason": "Version2024 explicitement conservée ; A87.9 et G03.0 distingués. Application suisse2026 à confirmer par règles en vigueur ; décisions cliniques indépendantes du code."
+        },
+        {
+          "id": "L5",
+          "topic": "Portée de la monographie",
+          "status": "limite pédagogique explicite",
+          "blocking": false,
+          "reason": "Principes des causes rares et traitements majeurs couverts. Les médicaments de recours sans schéma publié renvoient à une équipe spécialisée et au produit exact ; pas protocole prescriptif exhaustif de toutes les molécules tropicales."
+        },
+        {
+          "id": "L6",
+          "topic": "Profondeur des sources et autonomie",
+          "status": "limite de preuve",
+          "blocking": false,
+          "reason": "CHUV et essai valaciclovir consultés au niveau résumé, autres sections précisées individuellement. Relecture auteur réelle, sans validation indépendante ou humaine ; lire le cours ne prouve pas compétence technique."
+        }
+      ],
       "review_modes": {
         "medical": "self_review",
         "language": "self_review",
@@ -2081,7 +2124,57 @@
       "source_entries": 47,
       "image_entries": 2,
       "blocking_findings": [],
-      "limitations": [],
+      "limitations": [
+        {
+          "id": "L1",
+          "topic": "Codage",
+          "blocking": false,
+          "reason": "CIM-10-GM allemande2024 identifiée ; aucune certification de facturation suisse2026. Le raisonnement clinique reste distinct du code.",
+          "judgment": "Limite circonscrite : assertions dépendantes retirées ou contextualisées ; ne bloque pas la couverture pédagogique décrite."
+        },
+        {
+          "id": "L2",
+          "topic": "Épidémiologie",
+          "blocking": false,
+          "reason": "Aucune incidence suisse généraleG05 établie ; cohortes européennes avec périodes, dénominateurs et associations non causales explicites.",
+          "judgment": "Limite circonscrite : assertions dépendantes retirées ou contextualisées ; ne bloque pas la couverture pédagogique décrite."
+        },
+        {
+          "id": "L3",
+          "topic": "Profondeur des lectures",
+          "blocking": false,
+          "reason": "Résumé seul pour cohorte danoise,MONALISA etRMSauto-immunité ; autres passages ciblés indiqués. Aucun texte intégral inaccessible n’est déclaré lu.",
+          "judgment": "Limite circonscrite : assertions dépendantes retirées ou contextualisées ; ne bloque pas la couverture pédagogique décrite."
+        },
+        {
+          "id": "L4",
+          "topic": "Produits étrangers",
+          "blocking": false,
+          "reason": "RCP de sulfadiazine français et allemand distingués ; disponibilité suisse non affirmée, plafonds et grossesse non fusionnés.",
+          "judgment": "Limite circonscrite : assertions dépendantes retirées ou contextualisées ; ne bloque pas la couverture pédagogique décrite."
+        },
+        {
+          "id": "L5",
+          "topic": "Causes rares et immunothérapies",
+          "blocking": false,
+          "reason": "Principes diagnostiques/thérapeutiques sourcés ; pas de doses de recours sansFI exacte. Ce périmètre pédagogique ne prétend pas fournir tous les protocoles spécialisés.",
+          "judgment": "Limite circonscrite : assertions dépendantes retirées ou contextualisées ; ne bloque pas la couverture pédagogique décrite."
+        },
+        {
+          "id": "L6",
+          "topic": "Figures et review",
+          "blocking": false,
+          "reason": "Planches anatomiques historiques humaines, normales et annotées hors pixels. Auto-relectureIA réelle, aucune revue indépendante ni validation humaine.",
+          "judgment": "Limite circonscrite : assertions dépendantes retirées ou contextualisées ; ne bloque pas la couverture pédagogique décrite."
+        },
+        {
+          "id": "L7",
+          "topic": "Aperçu",
+          "blocking": false,
+          "reason": "Moteur natif local autonome, images intégrées ; autres cours hérités non audités. Aucun déploiement distant vérifié.",
+          "judgment": "Limite circonscrite : assertions dépendantes retirées ou contextualisées ; ne bloque pas la couverture pédagogique décrite."
+        }
+      ],
       "review_modes": {
         "medical": "self_review",
         "language": "self_review",
@@ -3113,7 +3206,64 @@
       "source_entries": 34,
       "image_entries": 2,
       "blocking_findings": [],
-      "limitations": [],
+      "limitations": [
+        {
+          "id": "L1",
+          "topic": "Codage",
+          "blocking": false,
+          "reason": "CIM-10-GM allemande 2024 identifiée ; aucune certification de facturation suisse 2026. Nature de l’AVC, étiologie et séquelles distinguées.",
+          "judgment": "Limite circonscrite et explicitée : assertions dépendantes contextualisées ou non prescrites ; couverture pédagogique jugée complète dans ce périmètre par auteur."
+        },
+        {
+          "id": "L2",
+          "topic": "Épidémiologie",
+          "blocking": false,
+          "reason": "Données suisses de 2017 datées et dénominateurs explicités ; aucune incidence suisse actuelle propre à I64. Associations organisationnelles non déclarées causales.",
+          "judgment": "Limite circonscrite et explicitée : assertions dépendantes contextualisées ou non prescrites ; couverture pédagogique jugée complète dans ce périmètre par auteur."
+        },
+        {
+          "id": "L3",
+          "topic": "Lectures ciblées",
+          "blocking": false,
+          "reason": "Passages et résumés effectivement lus identifiés ; Weir 1994 et unités mobiles 2022 limités au résumé. Les descriptions automatiques d’images du CEN ne servent pas de preuve anatomique.",
+          "judgment": "Limite circonscrite et explicitée : assertions dépendantes contextualisées ou non prescrites ; couverture pédagogique jugée complète dans ce périmètre par auteur."
+        },
+        {
+          "id": "L4",
+          "topic": "FI et recommandations",
+          "blocking": false,
+          "reason": "Divergences FI/protocoles exposées : INR, paliers de ténectéplase, vitamine K, aspirine et DAPT. Aucun seuil n’est silencieusement harmonisé. Hors AMM distingué de la FI.",
+          "judgment": "Limite circonscrite et explicitée : assertions dépendantes contextualisées ou non prescrites ; couverture pédagogique jugée complète dans ce périmètre par auteur."
+        },
+        {
+          "id": "L5",
+          "topic": "Situations spécialisées",
+          "blocking": false,
+          "reason": "ARIA et réversion anti-Xa : décision spécialisée et incertitudes explicites ; aucune dose d’andexanet non vérifiée. Le cours ne remplace pas un protocole individuel de prescription.",
+          "judgment": "Limite circonscrite et explicitée : assertions dépendantes contextualisées ou non prescrites ; couverture pédagogique jugée complète dans ce périmètre par auteur."
+        },
+        {
+          "id": "L6",
+          "topic": "Figures",
+          "blocking": false,
+          "reason": "Deux planches anatomiques humaines historiques normales, originales et annotées dans le HTML ; elles ne représentent ni une lésion de patient ni une coupe histologique.",
+          "judgment": "Limite circonscrite et explicitée : assertions dépendantes contextualisées ou non prescrites ; couverture pédagogique jugée complète dans ce périmètre par auteur."
+        },
+        {
+          "id": "L7",
+          "topic": "Aperçu et interface",
+          "blocking": false,
+          "reason": "Transport HTTP local éphémère, requêtes externes bloquées ; autres cours hérités non audités. Sur mobile, le bouton flottant Plan peut recouvrir temporairement quelques mots ; le défilement permet leur lecture. Aucun moteur partagé modifié.",
+          "judgment": "Limite circonscrite et explicitée : assertions dépendantes contextualisées ou non prescrites ; couverture pédagogique jugée complète dans ce périmètre par auteur."
+        },
+        {
+          "id": "L8",
+          "topic": "Statut des revues",
+          "blocking": false,
+          "reason": "Auto-relecture réelle de l’auteur ; aucune revue indépendante, validation humaine ou certification clinique. Les nombres de mots, lectures et contrôles ne mesurent pas la qualité médicale.",
+          "judgment": "Limite circonscrite et explicitée : assertions dépendantes contextualisées ou non prescrites ; couverture pédagogique jugée complète dans ce périmètre par auteur."
+        }
+      ],
       "review_modes": {
         "medical": "self_review",
         "language": "self_review",
@@ -3433,6 +3583,282 @@
         "visual_desktop": "self_review",
         "visual_mobile": "self_review"
       }
+    },
+    {
+      "code": "N02",
+      "title": "Hématurie récidivante et persistante",
+      "completion": {
+        "agent": "astra_nephrologie",
+        "code": "N02",
+        "at": "2026-11-02T10:36:46+00:00",
+        "branch": "codex/alpha77/n02-integrate-g1",
+        "worktree": "/workspace/Medina-nephrologie-n02",
+        "folder": "/workspace/Medina-nephrologie-n02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE",
+        "manifest_sha256": "e1f1e3252741f62bde195266a7462c1a686acd6d4a94a077855be9f20d586fe2",
+        "source_binding_sha256": "c0781f8f1a6f5e1d1088e3d5acdd54eb572d483f259815064fed64dea73428e9",
+        "review_modes": {
+          "medical": "self_review",
+          "language": "self_review",
+          "visual_desktop": "self_review",
+          "visual_mobile": "self_review"
+        },
+        "clinical_certification": false,
+        "publication_allowed": false,
+        "preview_sha256": "15851647c6c7e5dc9c1492aa5261b1325e8feb80fa388bf17df2b56c52288b4a"
+      },
+      "version": {
+        "code": "N02",
+        "branch": "codex/alpha77/n02-integrate-g1",
+        "version_sha": "006a1f391a2270c98d8a3076842645105b82ac1a",
+        "remote_head": "006a1f391a2270c98d8a3076842645105b82ac1a",
+        "remote_branch_exists": true,
+        "version_is_remote_head": true,
+        "evidence": {
+          "README.md": {
+            "sha256": "30b631ee80b7453a32bac52a9e4c5c74dad31df107bd6db2b00ffc48f6288d8e",
+            "bytes": 636,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/README.md"
+          },
+          "acquire.json": {
+            "sha256": "28d8ecb721984f08076502a3f6ef4a312aea808502d7f647aa5dfe9e384da291",
+            "bytes": 65,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/acquire.json"
+          },
+          "audit-sciences.json": {
+            "sha256": "e17c58604b123836d1138d2f04041c44c334dc3526041085bc3f4d8b1da61d32",
+            "bytes": 1330,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/audit-sciences.json"
+          },
+          "browser-report.json": {
+            "sha256": "6acd47b0f6ae27fd8843a090e0c20918ebe06cad335f5805e8e9d46d38b0d795",
+            "bytes": 19062,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/browser-report.json"
+          },
+          "bundle-output.json": {
+            "sha256": "b1787321bf9bdec4786217e4cba4a1f8c23800da6923011565c136bbcc189ca6",
+            "bytes": 1506,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/bundle-output.json"
+          },
+          "cost-bracelet.json": {
+            "sha256": "f26aa176e25534376b482c175895177b7d9cbc70a6911fa9420047a5ddd16496",
+            "bytes": 379,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/cost-bracelet.json"
+          },
+          "delivery.json": {
+            "sha256": "e98b9559730927e9cd31de8f2c4e128b6f1f987c3825752623175dfaa13fc731",
+            "bytes": 365,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/delivery.json"
+          },
+          "figures-rights.json": {
+            "sha256": "7e3f887955f977ca5efff0d3fb208cd05588a3e5cf194b3aea73a0ef5f77fbb0",
+            "bytes": 10343,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/figures-rights.json"
+          },
+          "findings-final.json": {
+            "sha256": "1688f68016379ea7ecd4b92972c0ba3b87afa1832b1a4504c738233f1dab4b4a",
+            "bytes": 2978,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/findings-final.json"
+          },
+          "harness-completion.json": {
+            "sha256": "2d607c36c254c06df0b8d122ab9696505d36999124a6c80a18d79ae568da08af",
+            "bytes": 796,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/harness-completion.json"
+          },
+          "image-exclusions.json": {
+            "sha256": "6569d399bf5d3ea5283ebecff15c862451f26101a18f8a70d007f0329bc27b86",
+            "bytes": 777,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/image-exclusions.json"
+          },
+          "lesson-manifest.json": {
+            "sha256": "e1f1e3252741f62bde195266a7462c1a686acd6d4a94a077855be9f20d586fe2",
+            "bytes": 71618,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/lesson-manifest.json"
+          },
+          "production.json": {
+            "sha256": "ed93c8dbc2e0de1779cf2eee464a48b446ee2303fc4766a4335e20b57b8bffed",
+            "bytes": 1723,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/production.json"
+          },
+          "recherche.md": {
+            "sha256": "309e620a5616487bafc4870b228ef8b896dfdc7179059a435dba15547b64f7ac",
+            "bytes": 2486,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/recherche.md"
+          },
+          "reprise-sol.json": {
+            "sha256": "95aed17b39cbd03b91607763935d2f696f18413fa03c12c221013b9577509804",
+            "bytes": 363,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/reprise-sol.json"
+          },
+          "research_N02/recherche.md": {
+            "sha256": "309e620a5616487bafc4870b228ef8b896dfdc7179059a435dba15547b64f7ac",
+            "bytes": 2486,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/research_N02/recherche.md"
+          },
+          "research_N02/sources.json": {
+            "sha256": "c6e6e28f168be155c3b19219631dbb4c0ff597b26379ca6d4141e0e74684fd80",
+            "bytes": 23154,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/research_N02/sources.json"
+          },
+          "reviews/SEMIO.json": {
+            "sha256": "61361bf7d7807638a8c711e7ae9ed318744d621d335bf39b94a00a28717d355a",
+            "bytes": 1885,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/reviews/SEMIO.json"
+          },
+          "reviews/language.json": {
+            "sha256": "ecdbefa1eb55b6950523feb944da2ed4270d46fc67c7a28fc21477dcb0a85dc7",
+            "bytes": 1852,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/reviews/language.json"
+          },
+          "reviews/medical.json": {
+            "sha256": "02cc29ae69b4b20892d13e36b321f23c45b8a1dcb9455e28979ce4db42f39c13",
+            "bytes": 5502,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/reviews/medical.json"
+          },
+          "reviews/visual_desktop.json": {
+            "sha256": "89fdc7603b5774c09358ea3147a1eb9ef928d2b37fff43613be5dee51ffb1cf5",
+            "bytes": 10511,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/reviews/visual_desktop.json"
+          },
+          "reviews/visual_mobile.json": {
+            "sha256": "818cad9484647ca89bc6669fb19ebaa32afbd2df0cef70d755dfbfebb0a4c179",
+            "bytes": 10498,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/reviews/visual_mobile.json"
+          },
+          "scope-check.json": {
+            "sha256": "60cf20d92078780cc39cdfff678abd6aea02a6a718033466b2bf24efa5949d23",
+            "bytes": 7802,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/scope-check.json"
+          },
+          "source-binding.json": {
+            "sha256": "c0781f8f1a6f5e1d1088e3d5acdd54eb572d483f259815064fed64dea73428e9",
+            "bytes": 1936,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/source-binding.json"
+          },
+          "source-ledger.json": {
+            "sha256": "4fef4652b54eb852433ff819e1d3b690272095a5fff72aedcd4fad6c05ccd60a",
+            "bytes": 32022,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/source-ledger.json"
+          },
+          "sources.json": {
+            "sha256": "c6e6e28f168be155c3b19219631dbb4c0ff597b26379ca6d4141e0e74684fd80",
+            "bytes": 23154,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/sources.json"
+          },
+          "start.json": {
+            "sha256": "ab96136d7fcee3d7133ea41badc6baf4c73ce2720342180d308229e544934616",
+            "bytes": 1076,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/start.json"
+          }
+        },
+        "binding_checks": [
+          {
+            "path": "chapters/N02/N02_a.html",
+            "expected": "34ecba05166f99a22704542b49ee84a04195084646df71db2611b1ffa64fb71c",
+            "actual": "34ecba05166f99a22704542b49ee84a04195084646df71db2611b1ffa64fb71c",
+            "ok": true
+          },
+          {
+            "path": "chapters/N02/N02_b.html",
+            "expected": "ce046ba0b447416e92ae938053fe832ed4afcdf211dc92e98d01620474a725db",
+            "actual": "ce046ba0b447416e92ae938053fe832ed4afcdf211dc92e98d01620474a725db",
+            "ok": true
+          },
+          {
+            "path": "chapters/N02/N02_c.html",
+            "expected": "8dff0893e291d12e18352cb52c2941d9eff63f13d63e6978bc39ceb32dfd4dd0",
+            "actual": "8dff0893e291d12e18352cb52c2941d9eff63f13d63e6978bc39ceb32dfd4dd0",
+            "ok": true
+          },
+          {
+            "path": "chapters/N02/N02_d.html",
+            "expected": "7392e9f4d80c74b279150ce84f72f0442ef36f5bf73275b2777a10859a3fe302",
+            "actual": "7392e9f4d80c74b279150ce84f72f0442ef36f5bf73275b2777a10859a3fe302",
+            "ok": true
+          },
+          {
+            "path": "chapters/N02/N02_pop1.html",
+            "expected": "e0d1a3ff9fe001fadf36e1a923c25116c111977987188716bbb53c1fd782ded6",
+            "actual": "e0d1a3ff9fe001fadf36e1a923c25116c111977987188716bbb53c1fd782ded6",
+            "ok": true
+          },
+          {
+            "path": "chapters/N02/N02_pop2.html",
+            "expected": "c2c4ee3841c8fad03edec6e231de27cf98e587d027b7eb9b8f23c1cbfdfd44cf",
+            "actual": "c2c4ee3841c8fad03edec6e231de27cf98e587d027b7eb9b8f23c1cbfdfd44cf",
+            "ok": true
+          },
+          {
+            "path": "glossary/n02.py",
+            "expected": "6f5e011a91182138931e38354825d96ab178250587466ff474deadda707717e7",
+            "actual": "6f5e011a91182138931e38354825d96ab178250587466ff474deadda707717e7",
+            "ok": true
+          },
+          {
+            "path": "assets/img/n02/alpha/codex/2613_Podocytes.jpg",
+            "expected": "8ff3a653bd19d8dc55b6030f795336fe8489bdc096ef694937e20b4184f3da5d",
+            "actual": "8ff3a653bd19d8dc55b6030f795336fe8489bdc096ef694937e20b4184f3da5d",
+            "ok": true
+          },
+          {
+            "path": "assets/img/n02/alpha/codex/2618_Nephron_Secretion_Reabsorption.jpg",
+            "expected": "22245114f45516127f8bd127a9eaeca7e3e3e017beb5a8deb5a8a15b78bcaafb",
+            "actual": "22245114f45516127f8bd127a9eaeca7e3e3e017beb5a8deb5a8a15b78bcaafb",
+            "ok": true
+          },
+          {
+            "path": "assets/img/n02/alpha/codex/Crescentic_glomerulonephritis_-_high_mag.jpg",
+            "expected": "1568e067b50f7a60d88eb733e4e737631f149be2f60b7df98c2c58a0d8a71dc2",
+            "actual": "1568e067b50f7a60d88eb733e4e737631f149be2f60b7df98c2c58a0d8a71dc2",
+            "ok": true
+          },
+          {
+            "path": "assets/img/n02/alpha/codex/RTE_cast,_muddy_granular_cast,_WBC_cast_and_RBC_cast_in_urine.jpg",
+            "expected": "ba911e1601c1c48fdd0a74d55135c95fc2bf7b4c61a3e62d04a7c110f45a2b01",
+            "actual": "ba911e1601c1c48fdd0a74d55135c95fc2bf7b4c61a3e62d04a7c110f45a2b01",
+            "ok": true
+          },
+          {
+            "path": "assets/img/n02/alpha/codex/Kidney_section_vertical.png",
+            "expected": "c96015c1f63acb554bf8f794a60309e6125b4805d7a09ccf2603d53f8aa9c7ed",
+            "actual": "c96015c1f63acb554bf8f794a60309e6125b4805d7a09ccf2603d53f8aa9c7ed",
+            "ok": true
+          }
+        ],
+        "errors": [],
+        "file_count": 74,
+        "preview": {
+          "sha256": "15851647c6c7e5dc9c1492aa5261b1325e8feb80fa388bf17df2b56c52288b4a",
+          "bytes": 19287604,
+          "url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/N02-apercu-autonome.html",
+          "proof_url": "https://github.com/vialdjoukang-spec/Medina/blob/006a1f391a2270c98d8a3076842645105b82ac1a/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/N02-apercu-autonome.html"
+        },
+        "binding_preview_matches": true,
+        "local_evidence_folder": "lessons/N02-006a1f391a"
+      },
+      "monograph_points": 14,
+      "matrix_rubrics": 20,
+      "source_entries": 22,
+      "image_entries": 5,
+      "blocking_findings": [],
+      "limitations": [
+        "Auto-relectures attribuées Sol, avec reprise des recherches Astra explicitement conservées ; aucune validation médicale humaine ni revue indépendante globale.",
+        "Absence de donnée nationale fiable de fréquence de N02 ou de fréquence suisse de chaque signe : pas de chiffre extrapolé. Les séries génétiques adressées ne sont pas des populations générales.",
+        "HUG2024 est le socle suisse ; sa stratégie urologique adapte des recommandations américaines2020. Le cours n’importe pas cette grille chiffrée comme fondement autonome ; les critères glomérulaires suisses et les recommandations européennes restent attribués.",
+        "Lectures ciblées de sections ; texte KDIGO et guide allemand2026 obtenu via fournisseur, dont l’empreinte n’est pas celle du PDF officiel. Les sources complètes demeurent horsGit, seuls métadonnées et paraphrases sont publiés.",
+        "Images humaines originales réutilisées sous droits propres vérifiés ; planches normales et diagnostic des micrographies distingués. Le panneau de cylindres567×337 reste limité ; ni fluorescence ni génotype ne se déduisent du PAS.",
+        "FI suisses : autorisation, recommandation et remboursement sont distincts. Alport pédiatrique ramipril hors indication ; dose néphropathie5mg/j et HTA10mg/j distinctes ; sparsentan remplace le blocage usuel ; FI Forxiga non recommandée sous immunosuppresseur.",
+        "La formulation du guide KDIGO évite sparsentan avec IEC/ARA ; la FI contre-indique ARA mais formule prudence avec IEC. Le choix clinique du remplacement est explicite et la divergence conservée.",
+        "Couverture pédagogique des20rubriques : absence de données, absence de règle universelle et décision individuelle sont expliquées, sans fabriquer remboursement LS, déclaration OFSP ou aptitude professionnelle.",
+        "Bandeau hérité du shell N02 : SSP63 affiché alors que la monographie relie correctement hématurie àSSP64 de PROFILES2017. Métadonnée partagée hors mission, signalée au parent pour intégration future ; aucun moteur partagé modifié.",
+        "Navigation locale Chromium sur HTTP intercepté, toutes autres requêtes avortées ; aucun déploiement public. Le bouton Plan flottant peut recouvrir une petite zone de capture mobile, accessible après défilement.",
+        "Signal de mise à jour HUG2024 >60%dysmorphie transmis pour N00 déjà libéré ; aucune modification du coursN00 hors réservation."
+      ],
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      }
     }
   ],
   "active_state": [
@@ -3442,11 +3868,11 @@
       "model": "gpt-6.1-sol",
       "reasoning": "high",
       "lesson": "C70",
-      "stage": "recherche",
-      "activity_at": "2026-11-02T10:23:23+00:00",
-      "message": "Reprise réelle Sol high après quota Astra ; inventaire C70 et relecture ciblée CHUV/EANO2021/cIMPACT8/EANO2025/FI Galepharm effectués ; figures, recherche complémentaire et porte de vérité avant rédaction.",
-      "completed_sections": 0,
-      "sections_per_hour": 0.0
+      "stage": "verification",
+      "activity_at": "2026-11-02T10:41:24+00:00",
+      "message": "Auto-relecture C70 : assertions grade/critères intérimaires, urgences, doses phosphate/base et tableau rénal confrontées aux passages. Statique repassé. Build natif final puis navigation1440/390 à renouveler ; aucune clôture.",
+      "completed_sections": 14,
+      "sections_per_hour": 2.51
     },
     {
       "id": "astra_endocrinologie",
@@ -3454,11 +3880,11 @@
       "model": "gpt-6.1-sol",
       "reasoning": "high",
       "lesson": "E14",
-      "stage": "recherche",
-      "activity_at": "2026-11-02T10:26:41+00:00",
-      "message": "E14 : lectures ciblées OMS/SSED/OFSP, crises 2024 et FI suisses ; divergences potassium et metformine identifiées, figure originale 2013 vérifiée.",
-      "completed_sections": 0,
-      "sections_per_hour": 0.0
+      "stage": "images",
+      "activity_at": "2026-11-02T10:44:08+00:00",
+      "message": "E14 : six disciplines scientifiques, neuf sections sémiologiques, quatre quiz et dix-huit fenêtres rédigés. Original pancréas 2013 incorporé deux fois avec repères français et attribution ; contrôles structurels engagés.",
+      "completed_sections": 14,
+      "sections_per_hour": 42.0
     },
     {
       "id": "astra_nephrologie",
@@ -3466,11 +3892,11 @@
       "model": "gpt-6.1-sol",
       "reasoning": "high",
       "lesson": "N02",
-      "stage": "redaction",
-      "activity_at": "2026-11-02T10:24:59+00:00",
-      "message": "Reprise Sol autorisée : cinq originaux revus, HUG2024 et FI relus ; porte vérité research_N02 passée. Complément pharmacologique et interactions en cours.",
-      "completed_sections": 0,
-      "sections_per_hour": 0.0
+      "stage": "termine",
+      "activity_at": "2026-11-02T10:36:46+00:00",
+      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "completed_sections": 14,
+      "sections_per_hour": 2.4
     },
     {
       "id": "codex_hematologie",
@@ -3478,24 +3904,36 @@
       "model": "Codex — modèle de session non modifiable",
       "reasoning": "paramètre de session",
       "lesson": "C95",
-      "stage": "redaction",
-      "activity_at": "2026-11-02T05:06:22+00:00",
-      "message": "C95 : quinze sections cliniques et trente-trois fiches rédigées après VÉRITÉ OK ; pharmacologie, six sciences et contrôles en préparation.",
+      "stage": "verification",
+      "activity_at": "2026-11-02T10:32:48+00:00",
+      "message": "Reprise réelle C95 après remise du rapport : classes et sigles corrigés, figure originale ajoutée à la sémiologie ; contrôle statique et six sciences passés. Construction native et relecture finale à faire.",
       "completed_sections": 0,
       "sections_per_hour": 0.0
     }
   ],
   "native_supervision": {
-    "observed_at": "2026-11-02T10:28:06+00:00",
+    "at": "2026-11-02T10:44:24.987482+00:00",
     "provider": "collaboration.list_agents",
-    "states": {
-      "/root": "running",
-      "/root/sol_neurologie": "running",
-      "/root/sol_endocrinologie": "running",
-      "/root/sol_nephrologie": "running"
-    },
+    "agents": [
+      {
+        "name": "/root",
+        "status": "running"
+      },
+      {
+        "name": "/root/sol_endocrinologie",
+        "status": "running"
+      },
+      {
+        "name": "/root/sol_nephrologie",
+        "status": "running"
+      },
+      {
+        "name": "/root/sol_neurologie",
+        "status": "running"
+      }
+    ],
     "author_activity_refreshed": false,
-    "external_watchdog_can_restart_native_agents": false
+    "meaning": "État natif réellement observé ; ne renouvelle aucune activité auteur, aucune lecture, aucun source-binding."
   },
   "model_handoff": {
     "observed_at": "2026-11-02T10:23:02.648791+00:00",
@@ -3538,9 +3976,58 @@
       "ref": "codex/harness-20261102",
       "interval_seconds": 600,
       "bootstrap": false
+    },
+    {
+      "observed_at": "2026-11-02T10:31:10.410414+00:00",
+      "snapshot_generated_at": "2026-11-02T10:30:10+00:00",
+      "healthy": false,
+      "problems": [
+        "Activité auteur absente ou ancienne: codex_hematologie"
+      ],
+      "agents_without_recent_activity": [
+        "codex_hematologie"
+      ],
+      "no_agent_restart": true,
+      "no_main_write": true,
+      "clinical_certification": false,
+      "enabled": true,
+      "source_blob_sha": "d5ede74eb9fc7671ffae47b0ff8b18d73eb804e0",
+      "run_url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41429353922",
+      "interval_seconds": 600,
+      "continuity": "Handoff GitHub Actions; delays and service outages remain possible"
+    },
+    {
+      "at": "2026-11-02T10:41:10+00:00",
+      "successor_requested": true,
+      "response": {
+        "http_status": 204
+      },
+      "ref": "codex/harness-20261102",
+      "interval_seconds": 600,
+      "bootstrap": false
     }
   ],
   "artifacts": [
+    {
+      "id": 13133947635,
+      "name": "medina-independent-41430780283",
+      "expired": false,
+      "created_at": "2026-11-02T10:41:45Z",
+      "size_in_bytes": 217967,
+      "run_id": 41430780283,
+      "files": {},
+      "download_error": "Téléchargement de l’artefact refusé (HTTP403 observé) ; contenu non consulté, métadonnées seules. Aucune URL signée conservée."
+    },
+    {
+      "id": 13132973663,
+      "name": "medina-independent-41429353922",
+      "expired": false,
+      "created_at": "2026-11-02T10:31:11Z",
+      "size_in_bytes": 212358,
+      "run_id": 41429353922,
+      "files": {},
+      "download_error": "Téléchargement de l’artefact refusé (HTTP403 observé) ; contenu non consulté, métadonnées seules. Aucune URL signée conservée."
+    },
     {
       "id": 13133310580,
       "name": "medina-independent-41427960318",
@@ -3548,26 +4035,6 @@
       "created_at": "2026-11-02T10:20:32Z",
       "size_in_bytes": 212426,
       "run_id": 41427960318,
-      "files": {},
-      "download_error": "Téléchargement de l’artefact refusé (HTTP403 observé) ; contenu non consulté, métadonnées seules. Aucune URL signée conservée."
-    },
-    {
-      "id": 13131628475,
-      "name": "medina-independent-41426499145",
-      "expired": false,
-      "created_at": "2026-11-02T10:10:06Z",
-      "size_in_bytes": 212795,
-      "run_id": 41426499145,
-      "files": {},
-      "download_error": "Téléchargement de l’artefact refusé (HTTP403 observé) ; contenu non consulté, métadonnées seules. Aucune URL signée conservée."
-    },
-    {
-      "id": 13131467633,
-      "name": "medina-independent-41425068626",
-      "expired": false,
-      "created_at": "2026-11-02T09:59:33Z",
-      "size_in_bytes": 212931,
-      "run_id": 41425068626,
       "files": {},
       "download_error": "Téléchargement de l’artefact refusé (HTTP403 observé) ; contenu non consulté, métadonnées seules. Aucune URL signée conservée."
     },
@@ -3582,6 +4049,14 @@
       "download_error": "Téléchargement de l’artefact refusé (HTTP403 observé) ; contenu non consulté, métadonnées seules. Aucune URL signée conservée."
     }
   ],
+  "harness_tests": {
+    "ok": true,
+    "code_sha256": "2c033c3ad67ae584c95f719ff47b1a7cb4a10a8a266003bdef48d43161e03638",
+    "at": "2026-11-02T10:28:44+00:00",
+    "returncode": 0,
+    "log": "runtime/tests.log"
+  },
+  "harness_tests_receipt_sha256": "82ebe91f49a78817310fba3753692a2f0d484b9bbf13c9a7b8d022167995fb9e",
   "tokens_actual": null,
   "cost_actual": null,
   "saved_cost_actual": null,

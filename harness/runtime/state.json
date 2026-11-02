@@ -5,7 +5,7 @@
     "astra_neurologie": {
       "lesson": "C70",
       "worktree": "/workspace/Medina-neurologie-C70",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/c70-integrate-g1",
       "allowed_paths": [
         "chapters/C70",
@@ -15,8 +15,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE"
       ],
       "started_at": "2026-11-02T05:09:43+00:00",
-      "activity_at": "2026-11-02T10:36:02+00:00",
-      "message": "C70 réécrit sur six surfaces après porte Vérité ;25lectures ciblées,38fenêtres,4quiz,6sciences/9sections. Statique réussi ; sciences audit passé. Auto-relecture finale, build natif et navigateur restent à réaliser.",
+      "activity_at": "2026-11-02T10:41:24+00:00",
+      "message": "Auto-relecture C70 : assertions grade/critères intérimaires, urgences, doses phosphate/base et tableau rénal confrontées aux passages. Statique repassé. Build natif final puis navigation1440/390 à renouveler ; aucune clôture.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -29,7 +29,7 @@
     "astra_endocrinologie": {
       "lesson": "E14",
       "worktree": "/workspace/Medina-endocrinologie-E14",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/e14-integrate-g1",
       "allowed_paths": [
         "chapters/E14",
@@ -39,8 +39,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E14-INTEGRATE"
       ],
       "started_at": "2026-11-02T10:24:09+00:00",
-      "activity_at": "2026-11-02T10:34:38+00:00",
-      "message": "E14 : porte de vérité réussie sur 22 sources ; 14 sections cliniques écrites, erreurs de peptide C et critères hyperosmolaires corrigées ; sciences et fenêtres en cours.",
+      "activity_at": "2026-11-02T10:47:09+00:00",
+      "message": "E14 : audit sciences réussi (six disciplines, 2953 mots scientifiques, six figures). Contrôle des sigles vide après protection locale des citations S1/S3 homonymes et des catégories albuminurie ; correction HTML de liens imbriqués avant build final.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -51,29 +51,29 @@
       "receipt_sha256": "34576d3239691b27d49029736e5d6f18a60a28202bbf705d9be8980999c6d428"
     },
     "astra_nephrologie": {
-      "lesson": "N02",
-      "worktree": "/workspace/Medina-nephrologie-n02",
-      "stage": "termine",
-      "branch": "codex/alpha77/n02-integrate-g1",
+      "lesson": "N03",
+      "worktree": "/workspace/Medina-nephrologie-n03",
+      "stage": "recherche",
+      "branch": "codex/alpha77/n03-integrate-g1",
       "allowed_paths": [
-        "chapters/N02",
-        "glossary/n02.py",
-        "assets/img/n02/alpha/codex",
-        "organisation/alpha-publications/Codex/N02",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE",
+        "chapters/N03",
+        "glossary/n03.py",
+        "assets/img/n03/alpha/codex",
+        "organisation/alpha-publications/Codex/N03",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N03-INTEGRATE",
         "chapters.json"
       ],
-      "started_at": "2026-11-02T04:54:47+00:00",
-      "activity_at": "2026-11-02T10:36:46+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "started_at": "2026-11-02T10:47:33+00:00",
+      "activity_at": "2026-11-02T10:50:02+00:00",
+      "message": "N03 acquis/start/claim ; Pocketguide SGN17.03.2025 lu, KDIGO2024 sections ciblées et CUEN2025 syndromes/histologie lus. Distinguer activité, cicatrice, cause et risque ; aucune rédaction avant porte vérité.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "ab96136d7fcee3d7133ea41badc6baf4c73ce2720342180d308229e544934616"
+      "completed_sections": 0,
+      "receipt_sha256": "7d1744e639617f842142b0d4a50e27e172a555485cc6fd7a1243ebc8cef103f4"
     },
     "codex_hematologie": {
       "lesson": "C95",
@@ -88,8 +88,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C95-INTEGRATE"
       ],
       "started_at": "2026-11-02T04:37:48+00:00",
-      "activity_at": "2026-11-02T10:32:48+00:00",
-      "message": "Reprise réelle C95 après remise du rapport : classes et sigles corrigés, figure originale ajoutée à la sémiologie ; contrôle statique et six sciences passés. Construction native et relecture finale à faire.",
+      "activity_at": "2026-11-02T10:46:35+00:00",
+      "message": "C95 : indication suisse Iclusig corrigée après confrontation à la FI ; sigles homonymes reliés aux fenêtres locales. Six contrôles réussis, aperçu final provisoire 352710ea, navigateur 1440/390 : 52 fenêtres, 5 quiz, 8 occurrences originales, 6 sciences, 9 sémiologie. Matrices et auto-relectures finales en préparation ; aucune clôture.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -101,54 +101,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T01:37:38+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "verification",
-      "message": "Aperçu natif construit, rendu Chromium vérifié; contrôles visuels image originale et mobile en cours, revue médicale finale ouverte."
-    },
-    {
-      "at": "2026-11-02T01:40:50+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "verification",
-      "message": "E00 reprise substantielle rédigée ; vérification des six onglets, FI, références et rendu natif avant revue."
-    },
-    {
-      "at": "2026-11-02T01:41:45+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "verification",
-      "message": "Six disciplines scientifiques substantielles désormais intégrées : audit PASS, 1779→5343 mots. Test statique N04 PASS (fenêtres/glossaire/styles/classes). Aperçu natif construit ; contrôle navigateur local en cours, portée set_content explicitée."
-    },
-    {
-      "at": "2026-11-02T01:41:49+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T01:43:27+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "redaction",
-      "message": "19 lectures sourcées indexées; seuils LCR, interaction brivudine et limites cohortes corrigés; candidoseSNC2025 ajoutée avec erratum explicitement ouvert."
-    },
-    {
-      "at": "2026-11-02T01:45:10+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "verification",
-      "message": "Audit sciences PASS (6 disciplines, 7 figures). Build natif S05 réussi ; contrôles navigateurs et cohérence de toutes les surfaces en cours. Résumés hérités relus séparément, deux limites bibliographiques identifiées."
-    },
-    {
-      "at": "2026-11-02T01:45:37+00:00",
-      "action": "progress",
-      "agent": "codex_hematologie",
-      "stage": "redaction",
-      "message": "Six sciences enrichies et auditées, deux originaux CC BY annotés, correction rituximab/traitement et FI Keytruda relue ; revue intégrale en cours."
-    },
     {
       "at": "2026-11-02T01:47:54+00:00",
       "action": "watch",
@@ -1391,6 +1343,53 @@
     },
     {
       "at": "2026-11-02T10:40:10+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T10:41:24+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "verification",
+      "message": "Auto-relecture C70 : assertions grade/critères intérimaires, urgences, doses phosphate/base et tableau rénal confrontées aux passages. Statique repassé. Build natif final puis navigation1440/390 à renouveler ; aucune clôture."
+    },
+    {
+      "at": "2026-11-02T10:44:08+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "images",
+      "message": "E14 : six disciplines scientifiques, neuf sections sémiologiques, quatre quiz et dix-huit fenêtres rédigés. Original pancréas 2013 incorporé deux fois avec repères français et attribution ; contrôles structurels engagés."
+    },
+    {
+      "at": "2026-11-02T10:46:35+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "verification",
+      "message": "C95 : indication suisse Iclusig corrigée après confrontation à la FI ; sigles homonymes reliés aux fenêtres locales. Six contrôles réussis, aperçu final provisoire 352710ea, navigateur 1440/390 : 52 fenêtres, 5 quiz, 8 occurrences originales, 6 sciences, 9 sémiologie. Matrices et auto-relectures finales en préparation ; aucune clôture."
+    },
+    {
+      "at": "2026-11-02T10:47:09+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "verification",
+      "message": "E14 : audit sciences réussi (six disciplines, 2953 mots scientifiques, six figures). Contrôle des sigles vide après protection locale des citations S1/S3 homonymes et des catégories albuminurie ; correction HTML de liens imbriqués avant build final."
+    },
+    {
+      "at": "2026-11-02T10:47:33+00:00",
+      "action": "claim",
+      "agent": "astra_nephrologie",
+      "code": "N03"
+    },
+    {
+      "at": "2026-11-02T10:50:02+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "recherche",
+      "message": "N03 acquis/start/claim ; Pocketguide SGN17.03.2025 lu, KDIGO2024 sections ciblées et CUEN2025 syndromes/histologie lus. Distinguer activité, cicatrice, cause et risque ; aucune rédaction avant porte vérité."
+    },
+    {
+      "at": "2026-11-02T10:50:12+00:00",
       "action": "watch",
       "ok": true,
       "findings": 0

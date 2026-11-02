@@ -36,16 +36,28 @@
     "result": "Échec affiché pour les activités anciennes des trois auteurs, sans arrêt du relais; observation suivante réussie."
   },
   "native_agents_last_observed": {
-    "observed_at": "2026-11-02T10:28:06+00:00",
+    "at": "2026-11-02T10:44:24.987482+00:00",
     "provider": "collaboration.list_agents",
-    "states": {
-      "/root": "running",
-      "/root/sol_neurologie": "running",
-      "/root/sol_endocrinologie": "running",
-      "/root/sol_nephrologie": "running"
-    },
+    "agents": [
+      {
+        "name": "/root",
+        "status": "running"
+      },
+      {
+        "name": "/root/sol_endocrinologie",
+        "status": "running"
+      },
+      {
+        "name": "/root/sol_nephrologie",
+        "status": "running"
+      },
+      {
+        "name": "/root/sol_neurologie",
+        "status": "running"
+      }
+    ],
     "author_activity_refreshed": false,
-    "external_watchdog_can_restart_native_agents": false
+    "meaning": "État natif réellement observé ; ne renouvelle aucune activité auteur, aucune lecture, aucun source-binding."
   },
   "native_model_handoff": {
     "at": "2026-11-02T10:23:02.648791+00:00",

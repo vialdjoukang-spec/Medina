@@ -165,3 +165,28 @@ Signal documentaire transmis par le parent : HUG microhématurie 2024, https://w
 Lecture réelle du status généré à 05:07:12 et des briefs des quatre filières : 12 clôtures de projet enregistrées, dont I64 à 05:07:12. I64 final `b85aae199347d50025576f5155b7fe810546adb2` poussé et vérifié, puis libéré ; C70 reste conditionné à acquisition CAS et start réels. E07 est en vérification finale : brief 05:05:34, 42 sources annoncées, six sciences/neuf sections, derniers contrôles des fenêtres et manifestes encore ouverts ; aucune clôture déduite. N02 est en recherche, activité 04:58:05, FI Filspari/Kinpeygo en lecture ; aucun cours final ni test déduit. Son catalogue chapters.json demeure exclusif. Les réserves héritées N04/N29 de son brief ne sont pas assimilées à des lacunes N02. C95 est en rédaction, activité 05:06:22 : quinze sections et trente-trois fiches déclarées ; pharmacologie/sciences/contrôles encore à finaliser. Son brief 04:38:33 est antérieur, ses zéros initiaux ne mesurent pas le travail actuel.
 
 Priorités : terminer les fenêtres et le binding E07 ; confronter les FI exactes et critères rénaux N02 ; achever pharmacologie, sciences et preuves C95. Aucun passage suivant sans dossier complet, contrôles finaux, reçu, push vérifié puis libération/acquisition. La limite HUG microhématurie 2024 (>60 % versus ancien >80 %) reste un signal de coordination reçu, pas une lecture médicale supplémentaire de ma part ; N00 figé jusqu’à nouvelle réservation. Mesures de tokens, coûts, scores médicaux et qualité transversale : null. Coordination documentaire, aucune relecture indépendante de ces cours.
+
+
+## Reprise Sol et coordination documentaire — 2026-11-02T10:40:27.587840+00:00
+
+La reprise de Neurologie est effectuée par `sol_neurologie`, modèle configuré `gpt-6.1-sol`, effort `high`, sous l’identifiant stable historique `astra_neurologie`. Les lectures et clôtures Astra ne sont pas réattribuées à Sol. La gate réelle est autorisée depuis le reçu du parent à10:23:03UTC après47tests ; une lecture locale à10:23:23 confirme allowed=true. Le changement de modèle ne vaut ni relecture indépendante ni validation médicale.
+
+État lu du dashboard : 2026-11-02T10:40:10+00:00. Les quatre briefs ont été consultés ; certains conservent une préparation ancienne et ne remplacent pas les événements actuels.
+
+| Filière | Cours, étape et activité déclarés | Réserve de passage |
+|---|---|---|
+| neurologie | C70, redaction, 2026-11-02T10:36:02+00:00 | C70 réécrit :25lectures Sol ciblées,6sciences et9sections. Contrôles finaux/binding/reçu encore ouverts ; aucun achèvement. |
+| endocrinologie | E14, redaction, 2026-11-02T10:34:38+00:00 | E14 rédaction sur22sources selon événement ; aucune clôture déduite. |
+| nephrologie | N02, termine, 2026-11-02T10:36:46+00:00 | N02 déclaré terminé ; vérifier séparément push, reçu et libération avant prochaine acquisition. chapters.json reste réservé tant que release absent. |
+| hematologie | C95, verification, 2026-11-02T10:32:48+00:00 | C95 vérification native et relecture finale selon événement ; aucune clôture déduite. |
+
+Priorités cliniques C70 : préserver la distinction critères officiels OMS2021 versus propositions intérimaires cIMPACT8 ; expliciter le phosphate/base Galepharm dans la fenêtre elle-même ; ne pas transformer une cible moléculaire ou une enquête suisse de pratiques en standard thérapeutique. Ce relevé ne relit pas médicalement E14/N02/C95 et ne change aucune attribution.
+
+Les nombres de sources, sections ou mots ne mesurent pas la qualité médicale. Tokens, coût et durée native de raisonnement restent `null`. Pas de PR ni de fusion main par cet auteur. L’horaire08hZurich était une échéance de rapport, pas un arrêt de la production.
+
+Empreintes des instantanés réellement consultés :
+- `status.json` : `247dc3830b0f3d14ae51834b021caa0c34e82078d4fdbad1b2955b76c7bf719c`.
+- `agents/neurologie/brief.json` : `6a18c00f5462bac9726b13cdcd53b27915693147d9cf600e263d58565766744a`.
+- `agents/endocrinologie/brief.json` : `3ebddeaea31351aca8322d168a1865b744198496cb8251717345628aa0cdd2f3`.
+- `agents/nephrologie/brief.json` : `ec69ba52cffacf9e1b1762bdd96c18fa4d2afc43bf3b1adbd8ffbc9eee958d4b`.
+- `agents/hematologie/brief.json` : `01a26088bd96e7c7b8d045ccb3f28d0439c8319d835d6cbb363a5d71afa94823`.
