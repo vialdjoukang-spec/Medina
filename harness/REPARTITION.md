@@ -102,6 +102,8 @@ un runner standard attend entre les contrôles, ce qui consomme du temps Actions
 
 ## Passage à la leçon suivante
 
+Les opérations du registre utilisent désormais `python3 /workspace/Medina-harness/harness/registry_guard.py --root CHEMIN_WORKTREE SOUS_COMMANDE ARGUMENTS`. Le wrapper exécute le garde existant sans changer ses contrôles de base approuvée, mission, périmètre, génération ou transaction CAS. Son fetch utilise une référence locale UUID temporaire puis la supprime ; il ne lit ni n’écrit le FETCH_HEAD partagé entre worktrees. Cette séparation empêche deux observations concurrentes de confondre leurs résultats de fetch. Trois tests couvrent l’isolation, l’échec réseau sans repli vers un ancien résultat et la validation du nom de remote. Le publisher inclut le wrapper et ses tests ; la suite du harness compte45tests depuis le2novembre à04:35UTC.
+
 La commande `python3 harness/medina_harness.py complete AGENT DOSSIER` vérifie le manifeste à14points, les20rubriques couvertes avec preuves, les revues attribuées, les images et l’absence de réserve bloquante. Le reçu `source-binding.json` doit correspondre aux octets actuels des six fichiers du cours, du glossaire et de l’aperçu. Toute modification invalide ce reçu ; la veille le signale sans le renouveler. La commande conserve l’historique des achèvements et autorise ensuite une nouvelle acquisition exclusive. Elle ne crée aucune PR, ne libère pas automatiquement le registre et ne certifie pas la médecine. Les achèvements sont conservés dans completed_lessons ; un nouveau claim ne les efface pas. Les limites documentaires neutralisées restent visibles, distinctes des réserves bloquantes. L’achèvement de projet ne déclenche pas une PR.
 
 

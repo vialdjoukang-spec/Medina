@@ -1,5 +1,5 @@
 {"stopped": true, "reason": "explicit control enabled != true"}
-{"at": "2026-11-02T03:30:04+00:00", "successor_requested": true, "response": {"http_status": 204}, "ref": "codex/harness-20261102", "interval_seconds": 600, "bootstrap": true}
+{"at": "2026-11-02T04:35:40+00:00", "successor_requested": true, "response": {"http_status": 204}, "ref": "codex/harness-20261102", "interval_seconds": 600, "bootstrap": true}
 test_completed_preview_is_refreshed_after_author_moves (test_deliverables.DeliverablesCase.test_completed_preview_is_refreshed_after_author_moves) ... ok
 test_binding_cannot_omit_a_source_or_escape_the_lesson (test_harness.HarnessCase.test_binding_cannot_omit_a_source_or_escape_the_lesson) ... ok
 test_boolean_receipt_wrong_code_and_wrong_branch_are_rejected (test_harness.HarnessCase.test_boolean_receipt_wrong_code_and_wrong_branch_are_rejected) ... ok
@@ -35,6 +35,9 @@ test_reviewer_identity_cannot_be_missing (test_harness.LessonContractCase.test_r
 test_semiology_boolean_or_unresolved_sections_rejected (test_harness.LessonContractCase.test_semiology_boolean_or_unresolved_sections_rejected) ... ok
 test_structurally_complete_fixture_never_certifies_medicine_or_publication (test_harness.LessonContractCase.test_structurally_complete_fixture_never_certifies_medicine_or_publication) ... ok
 test_unknown_review_mode_cannot_bypass_identity_check (test_harness.LessonContractCase.test_unknown_review_mode_cannot_bypass_identity_check) ... ok
+test_distinct_refs_and_no_fetch_head (test_registry_guard.IsolatedRegistryFetch.test_distinct_refs_and_no_fetch_head) ... ok
+test_failure_never_reuses_stale_head (test_registry_guard.IsolatedRegistryFetch.test_failure_never_reuses_stale_head) ... ok
+test_remote_validation_precedes_fetch (test_registry_guard.IsolatedRegistryFetch.test_remote_validation_precedes_fetch) ... ok
 test_api_rejects_another_repository_before_network (test_remote_watchdog.WatchdogCase.test_api_rejects_another_repository_before_network) ... ok
 test_closed_gate_still_publishes_alert_but_not_untested_code (test_remote_watchdog.WatchdogCase.test_closed_gate_still_publishes_alert_but_not_untested_code) ... ok
 test_disabled_control_never_dispatches (test_remote_watchdog.WatchdogCase.test_disabled_control_never_dispatches) ... ok
@@ -45,6 +48,6 @@ test_observation_does_not_mutate_activity (test_remote_watchdog.WatchdogCase.tes
 test_successor_is_same_review_branch_and_never_bootstrap (test_remote_watchdog.WatchdogCase.test_successor_is_same_review_branch_and_never_bootstrap) ... ok
 
 ----------------------------------------------------------------------
-Ran 42 tests in 0.246s
+Ran 45 tests in 0.200s
 
 OK
