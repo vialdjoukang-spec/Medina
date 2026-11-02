@@ -1,0 +1,987 @@
+{
+  "code": "G03",
+  "title": "G03 — Méningite due à des causes autres et non précisées",
+  "author": "sol_neurologie",
+  "harness_agent_id": "astra_neurologie",
+  "model": "gpt-6.1-sol",
+  "reasoning": "high",
+  "recorded_at": "2026-11-02T12:06:58.948481+00:00",
+  "branch": "codex/alpha77/g03-integrate-g1",
+  "base": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+  "sources": [
+    {
+      "id": "R1",
+      "title": "SSI : addendum suisse à ESCMID, 28 décembre 2017",
+      "url": "https://ssi.guidelines.ch/api/reader/get/glFile/10635",
+      "publisher": "Swiss Society for Infectious Diseases",
+      "read_at": "2026-11-02T11:32:27.791365+00:00",
+      "section": "Deux pages : lactate, sécurité de PL, traitement empirique et corticothérapie",
+      "passage": "L’addendum contextualise le lactate, la sécurité de la PL et les choix antibiotiques en Suisse. Le choix distingue notamment amoxicilline et pénicilline G ; la dexaméthasone adulte est arrêtée si la cause n’est pas bactérienne ou n’est pas pneumococcique.",
+      "population": "Méningites bactériennes, adultes et enfants, selon rubriques",
+      "limits": "Addendum daté 2017 ; aucune version 2026 du guide dynamique SSI établie. Les particularités pédiatriques et les seuils de coagulation ne deviennent pas règles universelles.",
+      "source_sha256": "f2aa91ce50b7ad04bee63d99fcf7f8f68fb864d255dff5186336195adb11273a",
+      "reader": "sol_neurologie",
+      "read_depth": "document"
+    },
+    {
+      "id": "R2",
+      "title": "Syndrome méningé fébrile aux urgences, 2016",
+      "url": "https://www.revmed.ch/revue-medicale-suisse/2016/revue-medicale-suisse-526/syndrome-meninge-febrile-au-service-des-urgences-prise-en-charge",
+      "publisher": "Degraeve et al., Revue médicale suisse",
+      "read_at": "2026-11-02T11:32:27.791365+00:00",
+      "section": "Narration clinique : urgence, clinique, PL, microbiologie, PCT et lactate",
+      "passage": "Les signes cliniques sont insuffisants pour exclure une méningite ; une antibiothérapie préalable modifie le rendement et le profil du liquide. La PL est centrale, sans retarder le traitement si elle est différée.",
+      "population": "Patients des urgences, méningites aiguës",
+      "limits": "Revue suisse ancienne ; pas protocole actuel exclusif. Tableaux illustrés non intégralement relus. Le chiffre américain cité dans son introduction ne constitue pas incidence suisse.",
+      "source_sha256": "ea5d2b2bb732763de8335c689076315976a99e81097a1294363e49e3fc81d5da",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R3",
+      "title": "Méningite chronique : étiologies et approche diagnostique, 2021",
+      "url": "https://www.revmed.ch/revue-medicale-suisse/2021/revue-medicale-suisse-748/meningite-chronique-etiologies-et-approche-diagnostique",
+      "publisher": "Ammann et al., Revue médicale suisse",
+      "read_at": "2026-11-02T11:32:27.791365+00:00",
+      "section": "Narration complète : cas, définition, clinique, bilan, PL répétées, biopsie, causes, discussion et conclusion",
+      "passage": "Une inflammation persistant au-delà de quatre semaines diffère d’épisodes aigus séparés par récupération. Terrain immunitaire, expositions, examen systémique, IRM et analyses orientées du LCR organisent un bilan séquentiel ; une biopsie accessible extraneurale peut aider.",
+      "population": "Méningites chroniques ; observation suisse d’une patiente de 62 ans",
+      "limits": "Revue 2021 et cas clinique, non essai ni incidence nationale. Tableaux/images seulement légendés, non utilisés pour critères détaillés. Les propositions empiriques et rendements issus de petites séries ne sont pas des prescriptions universelles.",
+      "source_sha256": "615bee75880e28e11f6fbd8b065da7b6c2a6abcfe3c9dbe88e54bfd35abccac3",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R4",
+      "title": "WHO guidelines on meningitis diagnosis, treatment and care, 2025",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK614844/",
+      "publisher": "Organisation mondiale de la santé",
+      "read_at": "2026-11-02T11:32:27.791365+00:00",
+      "section": "Chapitre 3 : diagnostic A1–A4, admission B1, corticoïdes B3 et dépistage auditif C4",
+      "passage": "Pas d’imagerie systématique avant PL ; critères de risque précisés, sans retarder le traitement. Corticoïdes avec les premiers antibiotiques si suspicion bactérienne, arrêt si LCR non compatible. Dépistage auditif avant sortie ou dans les quatre semaines. Un second test formel est prévu après un premier dépistage avant sortie normal.",
+      "population": "Méningite aiguë communautaire, enfants de plus d’un mois et adultes",
+      "limits": "Guide mondial, adaptation suisse nécessaire ; plusieurs recommandations fortes reposent sur certitude faible ou très faible. Les chapitres de traitement étiologique spécialisés ne sont pas tous lus. Exception cryptococcose/VIH : PL avec pression d’ouverture malgré immunodépression selon contexte.",
+      "source_sha256": "3e0b5c8cbefa8bb3a2651e42642c89e01833de38c78db07ad1b06596f063c888",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R5",
+      "title": "German guidelines on acute bacterial meningitis in adults, 2023",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10470134/",
+      "publisher": "DGN/AWMF, traduction publiée Klein et al.",
+      "read_at": "2026-11-02T11:32:27.791365+00:00",
+      "section": "Recommandations initiales, clinique, paramètres LCR, microbiologie, imagerie et complications",
+      "passage": "L’absence d’un signe cardinal n’exclut pas la maladie. Les profils du LCR se chevauchent ; PCR multiplex ne remplace pas Gram, culture et antibiogramme. Si PL différée, prélèvements sanguins puis traitement avant imagerie.",
+      "population": "Adultes, méningite bactérienne communautaire",
+      "limits": "Version allemande abrégée/traduite, non prescription suisse. Incohérence d’unité protéique entre narration et tableau évitée ; aucun seuil protéique isolé n’est employé pour exclure une bactérie.",
+      "source_sha256": "a5666d14957e5fb51458371a62a8421059347ed0782e58c390fb06d9d0f51d14",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R6",
+      "title": "DGN : Virale Meningoenzephalitis, version 7, 2025",
+      "url": "https://register.awmf.org/assets/guidelines/030-100l_S1_Virale_Meningoenzephalitis_2025-02.pdf",
+      "publisher": "Deutsche Gesellschaft für Neurologie",
+      "read_at": "2026-11-02T11:32:27.791365+00:00",
+      "section": "Recommandations clés, classification 1.2 et Mollaret 3.2.6",
+      "passage": "Une méningite virale simple ne comporte pas de déficit focal ni de trouble de conscience ; leur présence change le niveau d’urgence. Mollaret peut récidiver sur plusieurs années ; ses cellules ne sont pas pathognomoniques. Une forme simple reçoit un traitement symptomatique.",
+      "population": "Syndromes viraux neurologiques, surtout adultes européens",
+      "limits": "Consensus S1 allemand, lecture ciblée ; pas preuve contrôlée de tout antiviral ni règle diagnostique internationale de Mollaret.",
+      "source_sha256": "34f5c973e01e5ad4e12cb0a8db6f82b7bcd75c25893b8ba060843aa258be7372",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R7",
+      "title": "S1 guideline lumbar puncture and cerebrospinal fluid analysis, traduction 2020",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7650145/",
+      "publisher": "DGN et DGLN, Tumani et al.",
+      "read_at": "2026-11-02T11:32:27.791365+00:00",
+      "section": "Indications, contre-indications, préanalytique, pression, tableau 4, protéines, albumine, Ig et diagnostic infectieux",
+      "passage": "Associer sérum et LCR pour glucose et quotients ; acheminer rapidement, interpréter selon âge, site et méthode. Des bandes oligoclonales spécifiques du LCR soutiennent une réponse intrathécale sans en identifier la cause. Un profil peu cellulaire n’exclut pas une infection.",
+      "population": "Exploration neurologique par LCR, normes surtout adultes",
+      "limits": "Consensus S1 de 2019 traduit 2020. Normes européennes indicatives, à confronter au laboratoire ; seuils de coagulation variables entre sources et non érigés en prescription universelle.",
+      "source_sha256": "4cf610b08939e2fc6358fd52eb482e85ad5dc4fa299cc29c1c5e9d8cdc474f6c",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R8",
+      "title": "Mollaret au Danemark : cohorte nationale, 2024",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11235955/",
+      "publisher": "Petersen et al., European Journal of Neurology",
+      "read_at": "2026-11-02T11:32:27.791365+00:00",
+      "section": "Résumé, définition de cohorte, méthodes, résultats, tableaux 1–2, discussion et limites",
+      "passage": "L’incidence estimée est 1,2/million d’adultes/an au Danemark ; le risque de progression après HSV-2 est 22 % (IC95 % 15–30). Les épisodes récidivent malgré une présentation souvent favorable ; les critères d’étude exigent au moins deux épisodes et une association documentée à HSV-2.",
+      "population": "47 adultes hospitalisés pour méningite récurrente associée à HSV-2, Danemark 2015–2020",
+      "limits": "Population hospitalière et épisodes antérieurs parfois rétrospectifs ; estimation non suisse, non tous G03. Le score fonctionnel peut manquer des troubles cognitifs fins. Critères d’étude, non critères universels.",
+      "source_sha256": "8b7d7207635bb07c574fb5aeb08be085535dde6061b6cc3990d9884ffa64a393",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R9",
+      "title": "Méningite aseptique médicamenteuse : 329 cas français, 2019",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6848896/",
+      "publisher": "Bihan et al., British Journal of Clinical Pharmacology",
+      "read_at": "2026-11-02T11:32:27.791365+00:00",
+      "section": "Résumé, méthodes et définitions, analyse de 203 dossiers, évolution, discussion et limites",
+      "passage": "Les classes incluent IgIV, AINS et antimicrobiens. Le LCR peut être neutrophilique ou lymphocytaire ; l’arrêt du médicament suspect est central. Dans les dossiers détaillés, 44,8 % étaient dits purulents et 33 % lymphocytaires.",
+      "population": "Notifications françaises 1985–2017 ; 203 cas bien documentés, 282 médicaments suspects",
+      "limits": "Pharmacovigilance spontanée : sous-notification, biais de notoriété et protopathique, causalité non certaine et aucune incidence. La définition d’aseptique propre à cette série exclut les agents viraux détectés, contrairement à certains usages syndromiques.",
+      "source_sha256": "1ec1e9171f334195a9baeb53bea52fd0be9fd840f8fb2525f2654102c5ea3ba7",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R10",
+      "title": "DAFALGAN comprimés 500 mg, FI septembre 2025",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680692660022",
+      "publisher": "UPSA Switzerland, information professionnelle suisse via AmiKo",
+      "read_at": "2026-11-02T11:32:27.791365+00:00",
+      "section": "Composition, indications, dose, reins/foie, contre-indications, interactions, grossesse, pharmacodynamie et métabolisme",
+      "passage": "La FI autorise 500–1000 mg par prise, intervalle adulte 4–8 h, maximum 4 g/j pour >40 kg ; elle réduit plafonds et/ou espace en insuffisance rénale et terrains hépatiques. Le surdosage provoque une toxicité hépatique.",
+      "population": "Présentation comprimés autorisation 69266 ; adulte dans cette leçon",
+      "limits": "Aucune dose pédiatrique de cette page ni donnée SwissPedDose ajoutée ne sont transposées. Le plafond 4 g n’est pas un objectif ; durée minimale et réévaluation clinique, absence de durée fixe de traitement d’une méningite.",
+      "source_sha256": "5308b3c1b88198bd19dd1342e2e740c2e63b1a7c96a7e5af1036b982f78431be",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R11",
+      "title": "Privigen : FI juillet 2025",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680583140015",
+      "publisher": "CSL Behring, information professionnelle suisse via AmiKo",
+      "read_at": "2026-11-02T11:32:27.791365+00:00",
+      "section": "Mise en garde syndrome de méningite aseptique, effets indésirables, annonce ElViS et version",
+      "passage": "Le syndrome débute habituellement dans les heures à deux jours ; LCR parfois fortement granulocytaire. Il faut exclure les autres causes ; arrêt associé à rémission habituelle en quelques jours. Forte dose ou débit élevé favorisent le risque.",
+      "population": "Patients recevant des immunoglobulines intraveineuses",
+      "limits": "Pas critère permettant de conclure au seul délai ; aucune posologie d’IgIV prescrite pour G03. Le syndrome après perfusion reste une urgence diagnostique.",
+      "source_sha256": "0633357cac053af53ad22b4af08912ddf5ed247d8ca7002f30fc16165f5cda5a",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R12",
+      "title": "Ibuprofen-Mepha Teva : FI décembre 2024",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680491560011",
+      "publisher": "Mepha Pharma, information professionnelle suisse via AmiKo",
+      "read_at": "2026-11-02T11:32:27.791365+00:00",
+      "section": "Mise en garde méningite aseptique, masquage infectieux, effets indésirables et déclaration",
+      "passage": "Une méningite aseptique est rapportée, notamment en lupus/collagénose mais aussi sans ces maladies. Le médicament peut masquer les signes infectieux ; un effet nouveau ou grave suspect est à déclarer via ElViS.",
+      "population": "Utilisateurs d’ibuprofène",
+      "limits": "Pas incidence mesurée par notification ; pas exclusivité du terrain lupique. Aucun schéma d’ibuprofène comme traitement de G03 n’est publié ici.",
+      "source_sha256": "daa5c8b0cd1e71dbdf27f3726bdb2dcf8969ff563e2e71e525bd0c6cd5bf40f1",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R13",
+      "title": "CIM-10-GM 2024 : G03",
+      "url": "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-g00-g09.htm",
+      "publisher": "BfArM",
+      "read_at": "2026-11-02T11:32:27.791365+00:00",
+      "section": "Bloc G03 et exclusions voisines G04",
+      "passage": "G03.0 non purulente, G03.1 chronique, G03.2 récurrente bénigne de Mollaret, G03.8 autres causes précisées, G03.9 non précisée. L’encéphalite et la myélite associées sortent vers G04 selon rubrique.",
+      "population": "Classification allemande GM 2024",
+      "limits": "Source de définition du code, non diagnostic clinique ni preuve d’un codage de facturation suisse actuel ; l’étiologie établie peut imposer une rubrique spécifique.",
+      "source_sha256": "068d43bdeed142b724b93b95885e417ba8f933b89d4134d123a0ea975e7207d7",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R14",
+      "title": "CEN : méningites et méningo-encéphalites, item 151",
+      "url": "https://www.cen-neurologie.fr/second-cycle/i-connaissances/chapitre-24-item-151-meningites-meningo-encephalites-abces-cerebral-chez-ladulte-et-lenfant",
+      "publisher": "Collège des enseignants de neurologie, France",
+      "read_at": "2026-11-02T11:32:27.791365+00:00",
+      "section": "Syndromes méningé/encéphalitique, âges extrêmes, causes chroniques, médicaments, inflammations et carcinose",
+      "passage": "Raideur, Kernig et Brudzinski traduisent une irritation sans identifier la cause. Le nourrisson peut avoir hypotonie et signes généraux ; l’adulte âgé des signes frustes. Les causes chroniques comprennent infections, inflammation et infiltration tumorale.",
+      "population": "Enseignement clinique adulte et enfant",
+      "limits": "Page pédagogique sans date clinique de version assurée ; descriptions automatiques d’images non utilisées. Ne pas reprendre sa liste où Nocardia figure parmi les champignons : bactérie.",
+      "source_sha256": "22d673956c613ddb437adc2631c306c0fa45f868da7ceae32e9373e1144bb304",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R15",
+      "title": "Essai randomisé valaciclovir suppressif après méningite HSV-2, 2012",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22460966/",
+      "publisher": "Aurelius et al., essai multicentrique suédois",
+      "read_at": "2026-11-02T11:32:27.791365+00:00",
+      "section": "Résumé primaire : méthodes, résultat première année et conclusion",
+      "passage": "500 mg deux fois/j pendant un an n’a pas montré de prévention des récidives dans cet essai. Cette dose de suppression ne doit pas être recommandée de routine pour ce but.",
+      "population": "101 patients après méningite HSV-2 primaire ou récurrente",
+      "limits": "Résumé ciblé uniquement, pas texte intégral. L’intervalle de confiance du signal de deuxième année est manifestement incohérent dans le résumé indexé : non reproduit. Ce résultat ne démontre pas l’inefficacité de tout schéma ni ne prescrit le traitement aigu.",
+      "source_sha256": "680e73b7530b68bd3f2e776861670676f44860df2a4c57b766a39aa0a381efe7",
+      "reader": "sol_neurologie",
+      "read_depth": "abstract"
+    },
+    {
+      "id": "R16",
+      "title": "Gray Anatomy 1918, planche 1196 : enveloppes et sinus",
+      "url": "https://commons.wikimedia.org/wiki/File:Gray1196.png",
+      "publisher": "Wikimedia Commons, Gray/Carter",
+      "read_at": "2026-11-02T11:32:27.791365+00:00",
+      "section": "Description, auteur, provenance et notice de domaine public ; original affiché et inspecté",
+      "passage": "Dure-mère, arachnoïde, pie-mère et sinus sagittal supérieur sont distingués sur l’original. Des annotations françaises adjacentes relient enveloppes, LCR et raisonnement clinique.",
+      "population": "Anatomie humaine normale historique",
+      "limits": "Original humain historique, pixels inchangés ; pas image d’inflammation ni preuve diagnostique. Notice relue pour G03, cache antérieur.",
+      "source_sha256": "dc7ed62021eeff9cab357368ee6b6e18dab113b6ff4bb103e057dfdc1c7ed482",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R17",
+      "title": "Gray Anatomy 1918, planche 764 : voie motrice",
+      "url": "https://commons.wikimedia.org/wiki/File:Gray764.png",
+      "publisher": "Wikimedia Commons, schéma historique modifié de Poirier, Gray/Carter",
+      "read_at": "2026-11-02T11:32:27.791365+00:00",
+      "section": "Description, auteur, date, licence et original affiché/inspecté",
+      "passage": "Le trajet cortical, capsulaire et corticospinal rappelle pourquoi un déficit moteur focal indique une atteinte dépassant une simple irritation méningée.",
+      "population": "Voie motrice humaine normale simplifiée",
+      "limits": "Planche historique simplifiée, sans maladie ni procédure de PL représentée ; ne localise pas à elle seule une lésion. Pixels inchangés.",
+      "source_sha256": "fad33949feb30902f1f7fd54b1036ae2223357b40541a9b796cd32822fbecef5",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R18",
+      "title": "PROFILES 2017 : urgence céphalée sévère et méningisme",
+      "url": "https://www.siwf.ch/files/pdf24/profiles_2017-broschuere.pdf",
+      "publisher": "Joint Commission of Swiss Medical Schools, SIWF/ISFM",
+      "read_at": "2026-11-02T11:32:27.791365+00:00",
+      "section": "EPA 6d et SSP 207, avec SSP 205 déficit neurologique aigu",
+      "passage": "La céphalée aiguë sévère et le méningisme constituent une situation de départ et d’urgence ; reconnaître, explorer et initier la prise en charge doit s’apprendre ensemble.",
+      "population": "Formation médicale suisse",
+      "limits": "Référentiel 2017 ; rattachement pédagogique proposé pour G03, aucun crosswalk fédéral officiel CIM-10/SSP ni affirmation de version 2026.",
+      "source_sha256": "3c07db8e95b8aec160a2c19682b084d15cc7d9eea4fb8f757202c31b8b27177f",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    }
+  ],
+  "monograph": [
+    {
+      "point": 1,
+      "title": "Définition",
+      "anchor": "g03-definitions",
+      "sources": [
+        "R3",
+        "R6",
+        "R7",
+        "R13",
+        "R14"
+      ],
+      "coverage_explanation": "Syndrome, inflammation, temporalité et territoire sont distingués ; G03 ne remplace pas une étiologie ni le diagnostic encéphalitique.",
+      "evidence": [
+        "content-snapshot.html#g03-definitions",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 2,
+      "title": "Épidémiologie",
+      "anchor": "g03-epidemio",
+      "sources": [
+        "R3",
+        "R8",
+        "R9"
+      ],
+      "coverage_explanation": "L’incidence suisse G03 demeure non établie dans les lectures ; les données danoises et françaises sont attribuées et leurs dénominateurs conservés.",
+      "evidence": [
+        "content-snapshot.html#g03-epidemio",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 3,
+      "title": "Physiopathologie",
+      "anchor": "g03-s-physio",
+      "sources": [
+        "R3",
+        "R4",
+        "R7",
+        "R14"
+      ],
+      "coverage_explanation": "Circulation, échanges et inflammation sont reliés aux symptômes, au LCR et aux limites de mesure ; les six sciences expliquent les mécanismes utiles.",
+      "evidence": [
+        "content-snapshot.html#g03-s-physio",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 4,
+      "title": "Démarche clinique",
+      "anchor": "g03-intro",
+      "sources": [
+        "R4",
+        "R5",
+        "R13",
+        "R18"
+      ],
+      "coverage_explanation": "Le raisonnement part du syndrome et de la gravité, puis de la sécurité de la PL et de la recherche causale, avant le code administratif.",
+      "evidence": [
+        "content-snapshot.html#g03-intro",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 5,
+      "title": "Anamnèse",
+      "anchor": "g03-anamnese",
+      "sources": [
+        "R2",
+        "R3",
+        "R8",
+        "R9",
+        "R14"
+      ],
+      "coverage_explanation": "Chronologie précise, intervalles libres, expositions, immunité et médicaments permettent de hiérarchiser les hypothèses et les examens utiles.",
+      "evidence": [
+        "content-snapshot.html#g03-anamnese",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 6,
+      "title": "Examen clinique",
+      "anchor": "g03-examen",
+      "sources": [
+        "R3",
+        "R4",
+        "R5",
+        "R7",
+        "R14"
+      ],
+      "coverage_explanation": "Constantes, vigilance, focalisation et signes méningés sont décrits avec technique, limites et particularités des âges extrêmes.",
+      "evidence": [
+        "content-snapshot.html#g03-examen",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 7,
+      "title": "Syndromes",
+      "anchor": "g03-semio-signs",
+      "sources": [
+        "R3",
+        "R8",
+        "R14"
+      ],
+      "coverage_explanation": "Les syndromes aigu, chronique et récurrent sont analysés sans exiger une triade complète ; les signes encéphalitiques modifient l’urgence.",
+      "evidence": [
+        "content-snapshot.html#g03-semio-signs",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 8,
+      "title": "Diagnostic positif",
+      "anchor": "g03-positive",
+      "sources": [
+        "R3",
+        "R5",
+        "R7",
+        "R8",
+        "R9"
+      ],
+      "coverage_explanation": "Le diagnostic associe syndrome, inflammation et preuve causale graduée ; critères d’étude et diagnostic clinique ne sont pas confondus.",
+      "evidence": [
+        "content-snapshot.html#g03-positive",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 9,
+      "title": "Explorations",
+      "anchor": "g03-e-prelev",
+      "sources": [
+        "R3",
+        "R4",
+        "R5",
+        "R7"
+      ],
+      "coverage_explanation": "PL, préanalytique et prélèvements appariés précèdent une interprétation des profils, tests microbiologiques, immunologiques et imagerie avec limites.",
+      "evidence": [
+        "content-snapshot.html#g03-e-prelev",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 10,
+      "title": "Arbre diagnostique",
+      "anchor": "g03-urgent",
+      "sources": [
+        "R1",
+        "R3",
+        "R4",
+        "R5",
+        "R7"
+      ],
+      "coverage_explanation": "Le tableau décisionnel distingue PL sûre immédiate, PL différée et détresse ; le bilan chronique séquentiel et les tests négatifs révisables complètent les branches.",
+      "evidence": [
+        "content-snapshot.html#g03-urgent",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 11,
+      "title": "Prise en charge",
+      "anchor": "g03-traitement",
+      "sources": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R6",
+        "R10"
+      ],
+      "coverage_explanation": "Stabilisation et traitement empirique indiqué ne sont pas retardés ; désescalade et traitement causal sont distingués d’une simple antalgie.",
+      "evidence": [
+        "content-snapshot.html#g03-traitement",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 12,
+      "title": "Prévention et suivi",
+      "anchor": "g03-suivi",
+      "sources": [
+        "R4",
+        "R8",
+        "R9",
+        "R11",
+        "R12",
+        "R15"
+      ],
+      "coverage_explanation": "Le suivi fonctionnel, auditif et des résultats en attente est organisé ; la prévention dépend de l’agent et des médicaments, sans prophylaxie générique G03.",
+      "evidence": [
+        "content-snapshot.html#g03-suivi",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 13,
+      "title": "Points clés",
+      "anchor": "g03-codage",
+      "sources": [
+        "R4",
+        "R13",
+        "R18"
+      ],
+      "coverage_explanation": "Le résumé clinique et les quatre cas d’examen reprennent les décisions de gravité, d’interprétation du LCR et de remise en cause d’un diagnostic.",
+      "evidence": [
+        "content-snapshot.html#g03-codage",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 14,
+      "title": "Pièges",
+      "anchor": "g03-cas",
+      "sources": [
+        "R3",
+        "R4",
+        "R5",
+        "R9",
+        "R11"
+      ],
+      "coverage_explanation": "Quatre quiz avec explications exercent les pièges du retard thérapeutique, du liquide clair, de la temporalité médicamenteuse et de l’étiquette idiopathique.",
+      "evidence": [
+        "content-snapshot.html#g03-cas",
+        "recherche_G03/sources.json"
+      ]
+    }
+  ],
+  "matrix20": [
+    {
+      "point": 1,
+      "title": "Question clinique et examen fédéral",
+      "status": "covered",
+      "anchor": "g03-intro",
+      "sources": [
+        "R4",
+        "R14",
+        "R18"
+      ],
+      "scope": "Couverture pédagogique confrontée aux passages réellement lus, avec limites explicitement attribuées.",
+      "evidence": [
+        "content-snapshot.html#g03-intro",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 2,
+      "title": "Définition et périmètre CIM",
+      "status": "covered",
+      "anchor": "g03-codage",
+      "sources": [
+        "R3",
+        "R6",
+        "R13"
+      ],
+      "scope": "Couverture pédagogique confrontée aux passages réellement lus, avec limites explicitement attribuées.",
+      "evidence": [
+        "content-snapshot.html#g03-codage",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 3,
+      "title": "Classification temporelle et causale",
+      "status": "covered",
+      "anchor": "g03-definitions",
+      "sources": [
+        "R3",
+        "R8",
+        "R9",
+        "R13"
+      ],
+      "scope": "Couverture pédagogique confrontée aux passages réellement lus, avec limites explicitement attribuées.",
+      "evidence": [
+        "content-snapshot.html#g03-definitions",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 4,
+      "title": "Épidémiologie suisse puis européenne",
+      "status": "covered",
+      "anchor": "g03-epidemio",
+      "sources": [
+        "R3",
+        "R8",
+        "R9"
+      ],
+      "scope": "Rubrique couverte par constat explicite de lacune : incidence suisse G03 non établie ; les chiffres étrangers gardent leurs populations. Covered signifie question traitée et limite sourcée, pas donnée nationale trouvée.",
+      "evidence": [
+        "content-snapshot.html#g03-epidemio",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 5,
+      "title": "Normal vers pathologique",
+      "status": "covered",
+      "anchor": "g03-s-physio",
+      "sources": [
+        "R7",
+        "R14",
+        "R16",
+        "R17"
+      ],
+      "scope": "Couverture pédagogique confrontée aux passages réellement lus, avec limites explicitement attribuées.",
+      "evidence": [
+        "content-snapshot.html#g03-s-physio",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 6,
+      "title": "Étiologies et risques",
+      "status": "covered",
+      "anchor": "g03-causes",
+      "sources": [
+        "R3",
+        "R9",
+        "R11",
+        "R12",
+        "R14"
+      ],
+      "scope": "Couverture pédagogique confrontée aux passages réellement lus, avec limites explicitement attribuées.",
+      "evidence": [
+        "content-snapshot.html#g03-causes",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 7,
+      "title": "Anamnèse et symptômes",
+      "status": "covered",
+      "anchor": "g03-anamnese",
+      "sources": [
+        "R2",
+        "R3",
+        "R8",
+        "R14"
+      ],
+      "scope": "Couverture pédagogique confrontée aux passages réellement lus, avec limites explicitement attribuées.",
+      "evidence": [
+        "content-snapshot.html#g03-anamnese",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 8,
+      "title": "Examen clinique",
+      "status": "covered",
+      "anchor": "g03-examen",
+      "sources": [
+        "R4",
+        "R14",
+        "R17"
+      ],
+      "scope": "Couverture pédagogique confrontée aux passages réellement lus, avec limites explicitement attribuées.",
+      "evidence": [
+        "content-snapshot.html#g03-examen",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 9,
+      "title": "Drapeaux rouges",
+      "status": "covered",
+      "anchor": "g03-urgent",
+      "sources": [
+        "R4",
+        "R5",
+        "R14"
+      ],
+      "scope": "Couverture pédagogique confrontée aux passages réellement lus, avec limites explicitement attribuées.",
+      "evidence": [
+        "content-snapshot.html#g03-urgent",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 10,
+      "title": "Explorations",
+      "status": "covered",
+      "anchor": "g03-e-prelev",
+      "sources": [
+        "R3",
+        "R4",
+        "R5",
+        "R7"
+      ],
+      "scope": "Couverture pédagogique confrontée aux passages réellement lus, avec limites explicitement attribuées.",
+      "evidence": [
+        "content-snapshot.html#g03-e-prelev",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 11,
+      "title": "Diagnostic différentiel",
+      "status": "covered",
+      "anchor": "g03-positive",
+      "sources": [
+        "R3",
+        "R6",
+        "R9",
+        "R14"
+      ],
+      "scope": "Couverture pédagogique confrontée aux passages réellement lus, avec limites explicitement attribuées.",
+      "evidence": [
+        "content-snapshot.html#g03-positive",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 12,
+      "title": "Prise en charge suisse",
+      "status": "covered",
+      "anchor": "g03-traitement",
+      "sources": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R10",
+        "R11",
+        "R12"
+      ],
+      "scope": "Couverture pédagogique confrontée aux passages réellement lus, avec limites explicitement attribuées.",
+      "evidence": [
+        "content-snapshot.html#g03-traitement",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 13,
+      "title": "Complications et pronostic",
+      "status": "covered",
+      "anchor": "g03-suivi",
+      "sources": [
+        "R3",
+        "R4",
+        "R8",
+        "R9"
+      ],
+      "scope": "Couverture pédagogique confrontée aux passages réellement lus, avec limites explicitement attribuées.",
+      "evidence": [
+        "content-snapshot.html#g03-suivi",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 14,
+      "title": "Suivi et prévention",
+      "status": "covered",
+      "anchor": "g03-suivi",
+      "sources": [
+        "R4",
+        "R8",
+        "R11",
+        "R12",
+        "R15"
+      ],
+      "scope": "Couverture pédagogique confrontée aux passages réellement lus, avec limites explicitement attribuées.",
+      "evidence": [
+        "content-snapshot.html#g03-suivi",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 15,
+      "title": "Situations particulières",
+      "status": "covered",
+      "anchor": "g03-populations",
+      "sources": [
+        "R3",
+        "R4",
+        "R10",
+        "R14"
+      ],
+      "scope": "Couverture pédagogique confrontée aux passages réellement lus, avec limites explicitement attribuées.",
+      "evidence": [
+        "content-snapshot.html#g03-populations",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 16,
+      "title": "Spécificités suisses",
+      "status": "covered",
+      "anchor": "g03-p-paracetamol",
+      "sources": [
+        "R1",
+        "R2",
+        "R3",
+        "R10",
+        "R11",
+        "R12",
+        "R18"
+      ],
+      "scope": "Couverture pédagogique confrontée aux passages réellement lus, avec limites explicitement attribuées.",
+      "evidence": [
+        "content-snapshot.html#g03-p-paracetamol",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 17,
+      "title": "Critères diagnostiques formels et limites",
+      "status": "covered",
+      "anchor": "g03-positive",
+      "sources": [
+        "R3",
+        "R7",
+        "R8",
+        "R9"
+      ],
+      "scope": "Définitions temporelles et critères de cohorte décrits ; aucun critère international universel de Mollaret ni biomarqueur DIAM inventé.",
+      "evidence": [
+        "content-snapshot.html#g03-positive",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 18,
+      "title": "Paramètres clés chiffrés",
+      "status": "covered",
+      "anchor": "g03-e-profils",
+      "sources": [
+        "R4",
+        "R7",
+        "R8",
+        "R9",
+        "R10"
+      ],
+      "scope": "Couverture pédagogique confrontée aux passages réellement lus, avec limites explicitement attribuées.",
+      "evidence": [
+        "content-snapshot.html#g03-e-profils",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 19,
+      "title": "Sous-codes",
+      "status": "covered",
+      "anchor": "g03-codage",
+      "sources": [
+        "R13"
+      ],
+      "scope": "Couverture pédagogique confrontée aux passages réellement lus, avec limites explicitement attribuées.",
+      "evidence": [
+        "content-snapshot.html#g03-codage",
+        "recherche_G03/sources.json"
+      ]
+    },
+    {
+      "point": 20,
+      "title": "Points d’examen",
+      "status": "covered",
+      "anchor": "g03-cas",
+      "sources": [
+        "R4",
+        "R14",
+        "R18"
+      ],
+      "scope": "Couverture pédagogique confrontée aux passages réellement lus, avec limites explicitement attribuées.",
+      "evidence": [
+        "content-snapshot.html#g03-cas",
+        "recherche_G03/sources.json"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "path": "figures/Gray1196.png",
+      "canonical_path": "assets/img/g03/alpha/codex/Gray1196.png",
+      "original_url": "https://commons.wikimedia.org/wiki/File:Gray1196.png",
+      "license": "Domaine public : scan mécanique d’original historique, notice figure spécifique réellement relue.",
+      "author": "Gray, ouvrage ; Henry Vandyke Carter, illustrations ; Gray764 schéma humain historique modifié de Poirier.",
+      "annotations": "Dure-mère, arachnoïde, pie-mère et sinus sagittal supérieur ; territoire et implication clinique.",
+      "medical_review": "Originaux affichés/inspectés par Sol ; quatre annotations françaises adjacentes, navigation et décodage réel à 1440/390 ; auto-revue sans certification humaine.",
+      "sha256": "568d36ae47143acd19075d7970fef24fefb894627237106da707400ee74e06fa",
+      "source": "R16",
+      "human_origin": true,
+      "pixels_edited": false
+    },
+    {
+      "path": "figures/Gray764.png",
+      "canonical_path": "assets/img/g03/alpha/codex/Gray764.png",
+      "original_url": "https://commons.wikimedia.org/wiki/File:Gray764.png",
+      "license": "Domaine public : scan mécanique d’original historique, notice figure spécifique réellement relue.",
+      "author": "Gray, ouvrage ; Henry Vandyke Carter, illustrations ; Gray764 schéma humain historique modifié de Poirier.",
+      "annotations": "Cortex moteur, capsule interne, décussation et faisceau corticospinal ; focalisation et limites de localisation.",
+      "medical_review": "Originaux affichés/inspectés par Sol ; quatre annotations françaises adjacentes, navigation et décodage réel à 1440/390 ; auto-revue sans certification humaine.",
+      "sha256": "0aab3ff23b815eb5f6eab0ba8c583726c5994c025899f3f6654f47e566249b09",
+      "source": "R17",
+      "human_origin": true,
+      "pixels_edited": false
+    }
+  ],
+  "semiology": {
+    "section_anchors": [
+      "g03-semio-normal",
+      "g03-semio-signs",
+      "g03-semio-mechanisms",
+      "g03-semio-examination",
+      "g03-semio-interpretation",
+      "g03-semio-differentials",
+      "g03-semio-urgency",
+      "g03-semio-limits",
+      "g03-semio-sources"
+    ]
+  },
+  "reviews": {
+    "medical": {
+      "path": "reviews/medical.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "ba668f50020022bb6dc82b5c27acfbca486fe4cd320745742ab684163681e96f"
+    },
+    "language": {
+      "path": "reviews/language.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "839731ccb2e8ba113887b7930a2c6cc60ae0df9e57f66437b7f6cc7ea68ffec4"
+    },
+    "visual_desktop": {
+      "path": "reviews/visual_desktop.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "818ffc743be1279de7940df7b98456593c05ed0a3326b914abc7a974e89d5666"
+    },
+    "visual_mobile": {
+      "path": "reviews/visual_mobile.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "ea22819b09a036369b30e9f733b4a5c83c5bbbef8b9de5d5d3fd054f6c081b89"
+    }
+  },
+  "blocking_findings": [],
+  "documented_limits": [
+    {
+      "topic": "Ordre de procédure",
+      "reason": "Échec Betta mécanique initial constaté après première rédaction ; aucune conformité initiale rétroactive. Reprise clinique complète réelle post-VÉRITÉ OK, quatre corrections, reconstruction/retests et auto-revues finaux distincts.",
+      "evidence": "post-gate-clinical-reprise.json"
+    },
+    {
+      "topic": "Épidémiologie",
+      "reason": "Pas d’incidence nationale actuelle G03 établie ; cohorte danoise et notifications françaises ne sont pas extrapolées.",
+      "evidence": "recherche_G03/sources.json"
+    },
+    {
+      "topic": "Versions et populations",
+      "reason": "SSI 2017 et RMS 2016 datées, complétées par RMS 2021, OMS 2025 et DGN 2023/2025 ; pas de version dynamique SSI 2026 établie. Normes adultes non transposées au nouveau-né.",
+      "evidence": "recherche_G03/sources.json"
+    },
+    {
+      "topic": "Critères et résultats négatifs",
+      "reason": "Mollaret : définitions d’étude variables, non critères internationaux uniques. DIAM : exclusion et imputabilité, pas biomarqueur universel ni réexposition provoquée.",
+      "evidence": "matrix-20.json"
+    },
+    {
+      "topic": "Médicaments et spécialisation",
+      "reason": "Paracétamol adulte du produit 500 mg exact ; durée individualisée. Aucun schéma universel anti-infectieux/immunosuppresseur G03, aucune dose pédiatrique inventée. RCT suppressif lu au résumé, pas texte intégral ni preuve sur tout schéma.",
+      "evidence": "reviews/medical.json"
+    },
+    {
+      "topic": "Bilan chronique",
+      "reason": "PL répétées, volume et biopsie adaptés à l’hypothèse et au laboratoire ; pas de volume/nombre universel ni rendement garanti. Les tableaux-images RMS 2021 ne sont pas présentés comme lus.",
+      "evidence": "recherche_G03/sources.json"
+    },
+    {
+      "topic": "Codage et droits suisses",
+      "reason": "Bloc CIM-10-GM 2024 lu pour le périmètre, sans attestation de facturation/remboursement 2026 ni crosswalk officiel fédéral ; étiologie et exclusions à vérifier.",
+      "evidence": "recherche_G03/sources.json"
+    },
+    {
+      "topic": "Figures et rendu",
+      "reason": "Deux originaux humains historiques normaux, sans maladie représentée ; annotations françaises hors pixels. Frontend hérité non modifié, autres cours hors audit médical. Un bouton fixe peut couvrir temporairement du texte mobile, accessible au défilement.",
+      "evidence": "visual-self-review.json"
+    },
+    {
+      "topic": "Niveau de revue",
+      "reason": "Toutes les revues sont self_review de Sol ; pas revue indépendante ni validation médicale humaine, pas score de qualité clinique, tokens et coût non exposés.",
+      "evidence": "lesson-manifest.json"
+    }
+  ],
+  "procedure": {
+    "initial_entry_order_compliant": false,
+    "incident": "Première projection Betta mal formatée contrôlée après première rédaction ; non régularisée rétroactivement.",
+    "remediation": "Reprise clinique réelle complète après VÉRITÉ OK, quatre corrections puis rebuild/retests et auto-revues finales.",
+    "evidence": "post-gate-clinical-reprise.json",
+    "structural_followup": {
+      "at": "2026-11-02T11:56:54.626021+00:00",
+      "source": "Alerte root et lecture réelle starter_codex.py 240–267",
+      "finding": "Neuf titres h2 et sources indirectes par fenêtres ne satisfaisaient pas la règle stricte h3 + lien HTTPS dans sources.",
+      "correction": "Neuf titres passés en h3, premier intitulé exact conservé ; lien HTTPS direct OMS ajouté dans sources ; marqueurs anglais, IDs/aria et marqueur clinique vérifiés.",
+      "binding_previously_issued": false,
+      "next": "Nouveau build et contrôles sur ces octets ; aucun statut historique C70 changé."
+    },
+    "visual_followup": {
+      "at": "2026-11-02T12:01:30.604779+00:00",
+      "finding": "Inspection réelle de captures : labels des chaînes SVG trop petits car absence de dimensions intrinsèques explicites.",
+      "correction": "Disposition verticale trois cases, width420/height340 et texte26 ; même contenu causal et mêmes tableaux sourcés.",
+      "source_binding_previously_issued": false,
+      "label_followup_at": "2026-11-02T12:05:06.274582+00:00",
+      "label_followup": "Le libellé SVG « Signe ou LCR anormal » est remplacé par « Signe ou analyse anormale » après inspection, pour éviter une altération visuelle liée à l’annotation automatique des abréviations dans SVG ; relation et tableau inchangés."
+    }
+  },
+  "historical_model_trace": [
+    {
+      "agent_id": "astra_neurologie",
+      "scope": "Identifiant harness stable préservé ; G03 recherche/rédaction actuelles attribuées à Sol."
+    }
+  ],
+  "tokens_actual": null,
+  "cost_actual": null,
+  "clinical_certification": false,
+  "publication_allowed": false
+}

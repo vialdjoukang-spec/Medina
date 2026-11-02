@@ -1,0 +1,57 @@
+[
+  {
+    "at": "2026-11-02T12:05:57.184766+00:00",
+    "command": [
+      "python3",
+      "test_v7.py",
+      "--static",
+      "G03"
+    ],
+    "returncode": 0,
+    "log": "static-check.log"
+  },
+  {
+    "at": "2026-11-02T12:05:57.292546+00:00",
+    "command": [
+      "python3",
+      "tests/audit_sciences.py",
+      "--base",
+      "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+      "--codes",
+      "G03",
+      "--out",
+      "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE/sciences-audit.json"
+    ],
+    "returncode": 0,
+    "log": "sciences-check.log"
+  },
+  {
+    "at": "2026-11-02T12:05:57.342834+00:00",
+    "command": [
+      "python3",
+      "tools/betta_verite.py",
+      "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE/compatibilite_betta_G03"
+    ],
+    "returncode": 0,
+    "log": "betta-check.log"
+  },
+  {
+    "at": "2026-11-02T12:05:57.443610+00:00",
+    "command": [
+      "python3",
+      "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE/check-semiology-contract.py"
+    ],
+    "returncode": 0,
+    "log": "semiology-contract-check.log"
+  },
+  {
+    "at": "2026-11-02T12:05:57.463692+00:00",
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "returncode": 0,
+    "log": "diff-check.log"
+  }
+]
