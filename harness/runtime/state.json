@@ -5,7 +5,7 @@
     "astra_neurologie": {
       "lesson": "I64",
       "worktree": "/workspace/Medina-neurologie-I64",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/i64-integrate-g1",
       "allowed_paths": [
         "chapters/I64",
@@ -15,15 +15,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE"
       ],
       "started_at": "2026-11-02T04:22:49+00:00",
-      "activity_at": "2026-11-02T04:42:16+00:00",
-      "message": "I64 : 18 sections cliniques natives réécrites, 25 lectures ciblées enregistrées ; sciences, pharmacologie et fenêtres encore en révision. Pas encore de validation frontend.",
+      "activity_at": "2026-11-02T05:04:34+00:00",
+      "message": "I64 : aperçu final testé à 1440 et 390 px ; consolidation des reçus, relecture visuelle ciblée et contrôle du périmètre avant commit.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "8a17ec421425b225a6fbdb4a5b4f9bf5602945f66b898964d981efe4052e6959"
     },
     "astra_endocrinologie": {
@@ -39,15 +39,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE"
       ],
       "started_at": "2026-11-02T04:20:54+00:00",
-      "activity_at": "2026-11-02T04:51:52+00:00",
-      "message": "Reprise sur les sources et corrections E07 sauvegardées ; relecture diagnostique puis contrôle de la copie autonome et des figures.",
+      "activity_at": "2026-11-02T04:58:49+00:00",
+      "message": "Relecture des six surfaces E07 et corrections de cohérence réalisées ; 42 sources paraphrasées, six sciences et neuf sections sémiologiques contrôlées. Tests navigateur de la copie autonome en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "26f1cb623b0a7c6bcd266955539c3916cc5d9be7bd70fdef819f775121c0da23"
     },
     "astra_nephrologie": {
@@ -64,8 +64,8 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T04:54:47+00:00",
-      "activity_at": "2026-11-02T04:54:47+00:00",
-      "message": "Mission réservée; recherche autorisée",
+      "activity_at": "2026-11-02T04:58:05+00:00",
+      "message": "N02 : HUG2024 pp1–9, ERKNet Alport sections ciblées et KDIGO IgAN2025 lus ; FI suisses Filspari/Kinpeygo2026 acquises et lecture en cours",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -1267,6 +1267,40 @@
     },
     {
       "at": "2026-11-02T04:55:41+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T04:55:57+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "verification",
+      "message": "I64 : premier aperçu autonome testé à 1440/390, 6 sciences et 9 sections, images décodées, fenêtres et livre24 ; 31 lectures. Relecture et liaison finales en cours."
+    },
+    {
+      "at": "2026-11-02T04:58:05+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "recherche",
+      "message": "N02 : HUG2024 pp1–9, ERKNet Alport sections ciblées et KDIGO IgAN2025 lus ; FI suisses Filspari/Kinpeygo2026 acquises et lecture en cours"
+    },
+    {
+      "at": "2026-11-02T04:58:49+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "verification",
+      "message": "Relecture des six surfaces E07 et corrections de cohérence réalisées ; 42 sources paraphrasées, six sciences et neuf sections sémiologiques contrôlées. Tests navigateur de la copie autonome en cours."
+    },
+    {
+      "at": "2026-11-02T05:04:34+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "verification",
+      "message": "I64 : aperçu final testé à 1440 et 390 px ; consolidation des reçus, relecture visuelle ciblée et contrôle du périmètre avant commit."
+    },
+    {
+      "at": "2026-11-02T05:05:41+00:00",
       "action": "watch",
       "ok": true,
       "findings": 0

@@ -137,3 +137,24 @@ Lecture réelle du status généré à 04:20:54 UTC et des trois briefs. G05 est
 Priorités : pour I64, séparation du code non précisé et du diagnostic mécanistique, urgence avant typage mais aucune antithrombose avant exclusion hémorragique, fenêtres de reperfusion selon sélection et FI exactes ; pour C64, recommandations EAU et distinctions des protocoles oncologiques avant doses ; pour E07, ne pas fusionner des entités thyroïdiennes distinctes ; pour C86, conserver les réserves propres aux lymphomes rares et aux protocoles spécialisés. Aucun passage suivant pour ces missions actives avant couverture 14/20, preuves attachées aux sources finales, contrôle natif et achèvement réel.
 
 Cette coordination ne vaut pas audit médical des cours des autres auteurs. Tokens, coût et durée de raisonnement : null, non exposés. Les nombres annoncés dans les briefs décrivent les mesures de leurs auteurs, pas une vérification clinique transversale. Échéance du rapport : 08:00 Europe/Zurich, sans arrêt de production.
+
+
+## Relevé de coordination — 2026-11-02T04:58:48.633461+00:00
+
+Lecture réelle de `harness/status.json` (généré le 2026-11-02T04:58:05+00:00) et des briefs Endocrinologie, Néphrologie et Hématologie. Ce relevé coordonne les travaux ; il ne vaut pas audit médical de leurs cours.
+
+| Filière | Travail réellement actif | Preuve et réserve de passage |
+|---|---|---|
+| Neurologie | I64, vérification native ; G02 et G05 clos | Premier aperçu testé 1440/390, 6 sciences, 9 sections et originaux décodés. Révision finale enrichie à 34 lectures et 39 fenêtres en cours de reconstruction ; ne pas clore sur le SHA antérieur. |
+| Endocrinologie | E07, vérification déclarée à 04:51:52 UTC | Le status indique reprise et contrôle de copie autonome ; le brief reste préparatoire, daté 04:20:54. Mesures finales E07 non exposées : null. Pas de clôture déduite du statut. |
+| Néphrologie | N02, recherche à 04:58:05 UTC | C64 a un reçu réel de clôture à 04:52:19, aperçu SHA `88f44817ff8cc74e2b747127c7b30ba94043df34fa62fa14a5235c27f4817e1f`, commit final déclaré et distant vérifié `b4cc9b5ce8feda8c8b99a02daa6e0d4eb507d040`. N02 acquise, start et claim déclarés ; aucune réutilisation des preuves C64 comme validation N02. |
+| Hématologie | C95, rédaction à 04:52:42 UTC | Le message du status rapporte porte VÉRITÉ sur 29 références, sept FI et quatre originaux inspectés. Le brief 04:38:33 est antérieur et ses zéros ne mesurent pas l’avancement présent. C86 clos avec reçu réel ; C95 non clos. |
+
+Priorités cliniques : terminer les contrôles et les liaisons de sources des paquets en vérification ; distinguer systématiquement FI, recommandation et protocole local ; conserver les populations et niveaux de preuve. Pour I64, les critères suisses 2024 de délai sont des médianes/percentiles de processus, pas une promesse individuelle, et la vitamine K adulte est distinguée de la fiche pédiatrique.
+
+Attributions : maintenir une seule leçon active par auteur. E07, N02 et C95 sont déjà engagées ; aucune nouvelle attribution proposée tant que les clôtures et libérations réelles ne sont pas obtenues. N02 détient le périmètre de nouvelle entrée incluant `chapters.json` selon son brief et sa mission ; Neurologie et Hématologie ne touchent pas ce catalogue. I63/G01 restent réservées ailleurs. Le candidat neurologique suivant reste conditionné à la clôture I64 et à une lecture fraîche du registre via `registry_guard.py`.
+
+La campagne contient onze clôtures de projet dans le status consulté ; aucune de ces clôtures ne constitue une certification médicale humaine ou une permission de PR/main. La veille logicielle observée à 04:55:41 ne remplace pas une relecture. Tokens, coût et score clinique : null lorsqu’ils ne sont pas exposés ; aucun nombre de mots, fenêtres ou lectures n’est converti en tokens ou en qualité clinique.
+
+
+Signal documentaire transmis par le parent : HUG microhématurie 2024, https://www.hug.ch/sites/interhug/files/2024-10/strategie_microhematurie_doi.pdf, décrit une dysmorphie >60 %, à distinguer du seuil >80 % de 2017 cité comme ancien dans N00. Information de coordination reçue, pas nouvelle lecture médicale par Neurologie ; N00 reste figé jusqu’à nouvelle réservation. Aucune correction inter-agent ni écriture hors périmètre.

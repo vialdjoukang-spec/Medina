@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-02T04:55:41+00:00",
+  "generated_at": "2026-11-02T05:05:41+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T04:55:41+00:00",
+    "checked_at": "2026-11-02T05:05:41+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T04:55:41+00:00",
+    "observed_at": "2026-11-02T05:05:41+00:00",
     "ok": true,
     "findings": [],
     "interval_seconds": 600,
-    "observer_pid": 444520,
+    "observer_pid": 447073,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -76,7 +76,7 @@
       "clinical_orchestration": true,
       "lesson": "I64",
       "worktree": "/workspace/Medina-neurologie-I64",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/i64-integrate-g1",
       "allowed_paths": [
         "chapters/I64",
@@ -86,19 +86,19 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE"
       ],
       "started_at": "2026-11-02T04:22:49+00:00",
-      "activity_at": "2026-11-02T04:42:16+00:00",
-      "message": "I64 : 18 sections cliniques natives réécrites, 25 lectures ciblées enregistrées ; sciences, pharmacologie et fenêtres encore en révision. Pas encore de validation frontend.",
+      "activity_at": "2026-11-02T05:04:34+00:00",
+      "message": "I64 : aperçu final testé à 1440 et 390 px ; consolidation des reçus, relecture visuelle ciblée et contrôle du périmètre avant commit.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "8a17ec421425b225a6fbdb4a5b4f9bf5602945f66b898964d981efe4052e6959",
       "brief": {
         "schema_version": 1,
-        "status": "I64_RECHERCHE_G02_G05_COMPLETE",
+        "status": "I64_REVISION_NATIVE_G02_G05_COMPLETE",
         "prepared_at": "2026-11-02T01:17:05.123886+00:00",
         "agent": "Astra Neurologie",
         "model": "gpt-6-astra",
@@ -1100,7 +1100,7 @@
             "Private GitHub cron and local watch depend on runner/environment availability"
           ]
         },
-        "updated_at": "2026-11-02T04:23:10.642686+00:00",
+        "updated_at": "2026-11-02T04:55:57.939931+00:00",
         "current_package": {
           "code": "I64",
           "worktree": "/workspace/Medina-neurologie-I64",
@@ -1109,14 +1109,24 @@
           "acquisition_registry_sha": "435588a0adf57cd0c00edb2b99c861412390c828",
           "start_receipt": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/start.json",
           "claim": true,
-          "stage": "recherche",
-          "source_readings_count": 0,
-          "monograph14_reviewed": 0,
-          "matrix20_reviewed": 0,
+          "stage": "revision_native",
+          "source_readings_count": 31,
+          "monograph14_reviewed": 14,
+          "matrix20_reviewed": 20,
           "blocking_findings": [
-            "Révision médicale et figures humaines à réaliser sur les sources réellement relues."
+            "Relecture finale, empreinte finale et contrôles de branche encore à terminer."
           ],
-          "clinical_certification": false
+          "clinical_certification": false,
+          "words_static": 14771,
+          "science_tabs": 6,
+          "semiology_sections": 9,
+          "windows": 37,
+          "quizzes": 5,
+          "preview": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/I64-apercu-autonome.html",
+          "preview_sha256": "5a05af861a93f991f84a251e0946da4eda9967c82e625526a20246e6f02a5aa5",
+          "browser_report": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/browser-autonomous.json",
+          "coverage_report": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/coverage-review.md",
+          "review_mode": "self_review"
         },
         "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
         "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
@@ -1342,9 +1352,9 @@
         "tokens_actual": null,
         "cost_actual": null
       },
-      "activity_age_seconds": 805,
+      "activity_age_seconds": 68,
       "activity_fresh": true,
-      "sections_per_hour": 0.0,
+      "sections_per_hour": 19.59,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -1390,15 +1400,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE"
       ],
       "started_at": "2026-11-02T04:20:54+00:00",
-      "activity_at": "2026-11-02T04:51:52+00:00",
-      "message": "Reprise sur les sources et corrections E07 sauvegardées ; relecture diagnostique puis contrôle de la copie autonome et des figures.",
+      "activity_at": "2026-11-02T04:58:49+00:00",
+      "message": "Relecture des six surfaces E07 et corrections de cohérence réalisées ; 42 sources paraphrasées, six sciences et neuf sections sémiologiques contrôlées. Tests navigateur de la copie autonome en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "26f1cb623b0a7c6bcd266955539c3916cc5d9be7bd70fdef819f775121c0da23",
       "brief": {
         "schema_version": 1,
@@ -1408,7 +1418,7 @@
         "fragment": "S05",
         "label": "E-06-Endocrinologie et métabolisme",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "phase": "E07_recherche",
+        "phase": "E07_verification_finale",
         "selected_lesson": {
           "code": "E07",
           "title": "Autres affections de la thyroïde",
@@ -1418,7 +1428,7 @@
           "harness_claimed": true,
           "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E02-E07/start-E07.json"
         },
-        "authorization_scope": "E02 uniquement dans ses chemins de mission ; aucun fichier partagé, aucune PR ni main.",
+        "authorization_scope": "E07 uniquement dans ses chemins réservés ; aucun fichier partagé, aucune PR ni main.",
         "counts": {
           "canonical_s05": 26,
           "existing_codex": 13,
@@ -2665,7 +2675,7 @@
           "phase": "preparation_only_waiting_harness_veille_and_exclusive_worktree",
           "authorization_scope": "Préparation seulement dans harness/agents/endocrinologie; aucune écriture médicale, aucun commit ni index. Ordre courant spécialités parallèles/une leçon à la fois remplace lots historiques, pas réservations."
         },
-        "updated_at": "2026-11-02T04:20:54.460394+00:00",
+        "updated_at": "2026-11-02T05:05:34.464880+00:00",
         "worktree": "/workspace/Medina-endocrinologie-E07",
         "branch": "codex/alpha77/e07-integrate-g1",
         "tokens_actual": null,
@@ -2742,7 +2752,16 @@
         },
         "current_evidence": {
           "folder": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE",
-          "status": "Lecture du cours existant et recherche ; aucune rédaction médicale avant VÉRITÉ E07."
+          "status": "Six HTML enrichis et relus ; 42 sources, six sciences et neuf sections sémiologiques. Vérification finale après corrections des homonymes du glossaire. Aucune clôture encore.",
+          "preview": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/E07-apercu-autonome.html",
+          "sources": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/source-ledger.json",
+          "static": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/static-report.json",
+          "sciences": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/audit-sciences.json",
+          "browser": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/browser-report.json",
+          "captures": [
+            "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/390-compression-diagnostic-figure.png",
+            "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/1440-euthyrox-popup.png"
+          ]
         },
         "previous_limits": [
           "Aucune prévalence contemporaine suisse de E02 ni essai thérapeutique propre à sa cause iodée n’a été retrouvé ; les données de nutrition et d’HIC générale ne les remplacent pas.",
@@ -2756,12 +2775,15 @@
           "La navigation vers les autres leçons est héritée ; seuls le contenu et les interactions E02 sont revus. Le build signale trois éléments E05 non couverts, hors périmètre et réservation E02."
         ],
         "current_limits": [
-          "Les preuves et revues E02 ne certifient pas E07 ; passages nécessaires à lire pour cette leçon."
+          "Relectures par le même auteur IA ; pas de certification humaine.",
+          "Sources rares souvent limitées aux résumés et séries ; calcium diagnostique hors indication du produit exact importé.",
+          "Tests de copie autonome à origine interceptée ; aucun serveur HTTP réel ni déploiement main testé.",
+          "Vérification finale des fenêtres locales en cours avant manifestes et commit."
         ]
       },
-      "activity_age_seconds": 229,
+      "activity_age_seconds": 413,
       "activity_fresh": true,
-      "sections_per_hour": 0.0,
+      "sections_per_hour": 18.75,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -2798,8 +2820,8 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T04:54:47+00:00",
-      "activity_at": "2026-11-02T04:54:47+00:00",
-      "message": "Mission réservée; recherche autorisée",
+      "activity_at": "2026-11-02T04:58:05+00:00",
+      "message": "N02 : HUG2024 pp1–9, ERKNet Alport sections ciblées et KDIGO IgAN2025 lus ; FI suisses Filspari/Kinpeygo2026 acquises et lecture en cours",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -3537,7 +3559,7 @@
           "clinical_certification": false
         }
       },
-      "activity_age_seconds": 54,
+      "activity_age_seconds": 457,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -3965,7 +3987,7 @@
         ],
         "metrics": null
       },
-      "activity_age_seconds": 179,
+      "activity_age_seconds": 780,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -5135,6 +5157,40 @@
       "action": "claim",
       "agent": "astra_nephrologie",
       "code": "N02"
+    },
+    {
+      "at": "2026-11-02T04:55:41+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T04:55:57+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "verification",
+      "message": "I64 : premier aperçu autonome testé à 1440/390, 6 sciences et 9 sections, images décodées, fenêtres et livre24 ; 31 lectures. Relecture et liaison finales en cours."
+    },
+    {
+      "at": "2026-11-02T04:58:05+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "recherche",
+      "message": "N02 : HUG2024 pp1–9, ERKNet Alport sections ciblées et KDIGO IgAN2025 lus ; FI suisses Filspari/Kinpeygo2026 acquises et lecture en cours"
+    },
+    {
+      "at": "2026-11-02T04:58:49+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "verification",
+      "message": "Relecture des six surfaces E07 et corrections de cohérence réalisées ; 42 sources paraphrasées, six sciences et neuf sections sémiologiques contrôlées. Tests navigateur de la copie autonome en cours."
+    },
+    {
+      "at": "2026-11-02T05:04:34+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "verification",
+      "message": "I64 : aperçu final testé à 1440 et 390 px ; consolidation des reçus, relecture visuelle ciblée et contrôle du périmètre avant commit."
     }
   ],
   "cache": {
@@ -12007,7 +12063,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T04:55:40+00:00",
+    "observed_at": "2026-11-02T05:05:40+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -12391,8 +12447,8 @@
         "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "local_preview": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/I64-apercu-autonome.html",
         "exists": true,
-        "sha256": "5a05af861a93f991f84a251e0946da4eda9967c82e625526a20246e6f02a5aa5",
-        "bytes": 8384060,
+        "sha256": "3bd2f292131c8a1f9a94b5e76c97e37ca61e50d810af7a3e2eeef1b7c3b656a9",
+        "bytes": 8386458,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/i64-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/I64-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/i64-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
@@ -12406,8 +12462,8 @@
         "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "local_preview": "/workspace/Medina-endocrinologie-E07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/E07-apercu-autonome.html",
         "exists": true,
-        "sha256": "652c27449bacfe8ef117dc135538622368abc0d96b9b3d17a2fdb2db77cbde79",
-        "bytes": 6432781,
+        "sha256": "fc1d0062e0fcd48bef43f1e5a2624989af891226a34b156062adfff4f402085d",
+        "bytes": 6431473,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/e07-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE/E07-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/e07-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",

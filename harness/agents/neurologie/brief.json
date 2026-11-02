@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "I64_RECHERCHE_G02_G05_COMPLETE",
+  "status": "I64_REVISION_NATIVE_G02_G05_COMPLETE",
   "prepared_at": "2026-11-02T01:17:05.123886+00:00",
   "agent": "Astra Neurologie",
   "model": "gpt-6-astra",
@@ -1002,7 +1002,7 @@
       "Private GitHub cron and local watch depend on runner/environment availability"
     ]
   },
-  "updated_at": "2026-11-02T04:23:10.642686+00:00",
+  "updated_at": "2026-11-02T04:55:57.939931+00:00",
   "current_package": {
     "code": "I64",
     "worktree": "/workspace/Medina-neurologie-I64",
@@ -1011,14 +1011,24 @@
     "acquisition_registry_sha": "435588a0adf57cd0c00edb2b99c861412390c828",
     "start_receipt": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/start.json",
     "claim": true,
-    "stage": "recherche",
-    "source_readings_count": 0,
-    "monograph14_reviewed": 0,
-    "matrix20_reviewed": 0,
+    "stage": "revision_native",
+    "source_readings_count": 31,
+    "monograph14_reviewed": 14,
+    "matrix20_reviewed": 20,
     "blocking_findings": [
-      "Révision médicale et figures humaines à réaliser sur les sources réellement relues."
+      "Relecture finale, empreinte finale et contrôles de branche encore à terminer."
     ],
-    "clinical_certification": false
+    "clinical_certification": false,
+    "words_static": 14771,
+    "science_tabs": 6,
+    "semiology_sections": 9,
+    "windows": 37,
+    "quizzes": 5,
+    "preview": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/I64-apercu-autonome.html",
+    "preview_sha256": "5a05af861a93f991f84a251e0946da4eda9967c82e625526a20246e6f02a5aa5",
+    "browser_report": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/browser-autonomous.json",
+    "coverage_report": "/workspace/Medina-neurologie-I64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE/coverage-review.md",
+    "review_mode": "self_review"
   },
   "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
   "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
