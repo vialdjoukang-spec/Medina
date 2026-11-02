@@ -67,6 +67,18 @@ class HarnessCase(unittest.TestCase):
         self.assertTrue(gate['allowed'], gate['problems'])
         self.assertIn('jamais', gate['scope'])
 
+    def test_deadline_report_is_frozen_once_while_live_report_advances(self):
+        self.h.config['deadline']='2020-01-01T08:00:00+01:00'
+        self.h.report()
+        frozen=self.home/'rapport-08h00.html'
+        original=frozen.read_bytes()
+        self.assertIn(b'report_frozen_at',original)
+        state={'agents':{},'events':[],'cache':{},'completed_lessons':[{'code':'G02','test_marker':'later-completion'}]}
+        mh.atomic(self.h.runtime/'state.json',state)
+        self.h.report()
+        self.assertEqual(frozen.read_bytes(),original)
+        self.assertIn('later-completion',(self.home/'status.json').read_text())
+
     def test_missing_or_failed_tests_close_gate(self):
         for receipt in ({}, {'ok': False, 'code_sha256': mh.code_hash()}):
             with self.subTest(receipt=receipt):

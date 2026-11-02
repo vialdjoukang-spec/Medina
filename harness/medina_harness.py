@@ -295,7 +295,7 @@ class Harness:
         # Snapshot frozen only at/after 08:00 Zurich; no future timestamp invented.
         if dt.datetime.now(dt.timezone.utc) >= dt.datetime.fromisoformat(self.config['deadline']):
             target = self.home / 'rapport-08h00.html'
-            if not target.exists(): atomic(target, (self.home/'dashboard.html').read_text())
+            if not target.exists(): render({**result,'report_frozen_at':now()},target)
         return result
 
 def validate_lesson(folder):

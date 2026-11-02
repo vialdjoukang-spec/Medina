@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-11-02T03:17:37+00:00",
+  "generated_at": "2026-11-02T03:27:37+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T03:17:37+00:00",
+    "checked_at": "2026-11-02T03:27:37+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T03:17:37+00:00",
+    "observed_at": "2026-11-02T03:27:37+00:00",
     "ok": true,
     "findings": [
       {
-        "agent": "codex_hematologie",
+        "agent": "astra_nephrologie",
         "level": "warning",
-        "reason": "Preuves/aperçu périmés; nouvelle vérification requise avant clôture: Source modifiée depuis vérification: chapters/C85/C85_a.html"
+        "reason": "Preuves/aperçu périmés; nouvelle vérification requise avant clôture: Source modifiée depuis vérification: chapters/N29/N29_a.html"
       }
     ],
     "interval_seconds": 600,
-    "observer_pid": 212147,
+    "observer_pid": 248138,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
   "tests": {
     "ok": true,
-    "code_sha256": "fd5b7e02f447acb25b97b6a1ae5f4d467ebaadbcf1c0cb0c3d19778f74a4b924",
-    "at": "2026-11-02T03:08:59+00:00",
+    "code_sha256": "26de7423c132b4a40582e6ead208b70a7fe66d8f42ba92edc48576047f08f216",
+    "at": "2026-11-02T03:25:04+00:00",
     "returncode": 0,
     "log": "runtime/tests.log"
   },
@@ -1106,7 +1106,7 @@
             "Private GitHub cron and local watch depend on runner/environment availability"
           ]
         },
-        "updated_at": "2026-11-02T03:13:19.158993+00:00",
+        "updated_at": "2026-11-02T03:19:07.613395+00:00",
         "current_package": {
           "code": "G05",
           "worktree": "/workspace/Medina-neurologie-G05",
@@ -1115,7 +1115,7 @@
           "start_receipt": "/workspace/Medina-neurologie-G05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/start.json",
           "claim": true,
           "stage": "recherche",
-          "source_readings_count": 0,
+          "source_readings_count": 7,
           "monograph14_reviewed": 0,
           "matrix20_reviewed": 0,
           "clinical_certification": false,
@@ -1257,7 +1257,7 @@
           }
         ]
       },
-      "activity_age_seconds": 77,
+      "activity_age_seconds": 677,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -1295,7 +1295,7 @@
       "clinical_orchestration": false,
       "lesson": "E01",
       "worktree": "/workspace/Medina-endocrinologie-E01",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/e01-integrate-g1",
       "allowed_paths": [
         "chapters/E01",
@@ -1305,8 +1305,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE"
       ],
       "started_at": "2026-11-02T02:48:08+00:00",
-      "activity_at": "2026-11-02T03:06:36+00:00",
-      "message": "Porte VÉRITÉ OK ; corrections de causalité, compression, Bethesda 2023 et suivi réalisées dans E01. Pharmacologie suisse et six sciences en cours.",
+      "activity_at": "2026-11-02T03:21:42+00:00",
+      "message": "Gate réouvert après maintenance du parent : vérification native E01, audit sciences réussi et aucune abréviation E01 non couverte. Contrôles navigateur en préparation.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -2657,7 +2657,7 @@
           "E01 : lecture et vérification des sources en cours ; aucune complétude ni validation médicale revendiquée."
         ]
       },
-      "activity_age_seconds": 662,
+      "activity_age_seconds": 356,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -2685,7 +2685,7 @@
       "clinical_orchestration": false,
       "lesson": "N29",
       "worktree": "/workspace/Medina-nephrologie-n29",
-      "stage": "verification",
+      "stage": "revue_requise",
       "branch": "codex/alpha77/n29-integrate-g1",
       "allowed_paths": [
         "chapters/N29",
@@ -2695,8 +2695,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N29-INTEGRATE"
       ],
       "started_at": "2026-11-02T02:46:45+00:00",
-      "activity_at": "2026-11-02T03:14:12+00:00",
-      "message": "N29 relecture des six surfaces et fenêtres : doses, contre-indications et méthodes précisées ; test statique réussi 21147 mots / 61 fenêtres. Rendu autonome et matrice finale en cours.",
+      "activity_at": "2026-11-02T03:22:12+00:00",
+      "message": "N29 aperçu autonome testé 1440/390, huit images décodées hors réseau ; position réelle des annotations contrôlée et quatre figures vues. 31 lectures ciblées, neuf FI suisses. Reçus finaux et matrice 14/20 en préparation.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -2713,7 +2713,7 @@
         "fragment_label": "N-07-Néphrologie",
         "prepared_at": "2026-11-02T01:16:51.601917+00:00",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "status": "N29_recherche",
+        "status": "N29_revue_finale",
         "selected_lesson": {
           "code": "N29",
           "title": "Autres affections du rein et de l’uretère au cours de maladies classées ailleurs",
@@ -2723,14 +2723,16 @@
           "reservation_acquired": true,
           "start_receipt": "/workspace/Medina-nephrologie-n29/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N29-INTEGRATE/start.json",
           "source_files_sha256": {
-            "chapters/N29/N29_a.html": "2b4d1994fc0a1310536e4617537c6d7147cf9ecb710035048426c881f4337cce",
-            "chapters/N29/N29_b.html": "74c3e29419d0677491420a420579de302ecd6b5198dafc1753cef31fa467ea88",
-            "chapters/N29/N29_c.html": "e24f3ccb227e04d9e929811c5d5433859883bfdb4b754c9e69e9b2a8884109c4",
-            "chapters/N29/N29_d.html": "596f91f54135c88f7bebad956cd7d1424e54cb0de9cb0c670d3fd79712ee7638",
-            "chapters/N29/N29_pop1.html": "04b344821e340a743d53af82d4d059d00556458c619681d88969a50a7732b878",
-            "chapters/N29/N29_pop2.html": "3880c10fe82907011ce7a2138457f85e5946e7188a1878089e7cad50b1067a5a"
+            "chapters/N29/N29_a.html": "665f19b88ec705fc4a8683fb285f8b518b5f77dd0bdbede4e0a16d5b277d177a",
+            "chapters/N29/N29_pop1.html": "4c9c00492734a16e727527e6515fc947c4119833cdc72e975135cf1f21fdaee7",
+            "chapters/N29/N29_d.html": "231863465a668abd6b9dfbd53dc86ae1f4939564c884e8e1b0770b70b13d9d82",
+            "chapters/N29/N29_c.html": "d9322438884844cb464a8d4cb6ebb79a42d45b9b6865fdef179b57ebd4fccbad",
+            "chapters/N29/N29_b.html": "163a703c08f2fd13fe2975814d9ecf079f592bc88be40348e56f44ca11136226",
+            "chapters/N29/N29_pop2.html": "1fe495ec6cbfaf2c91aca65629ee129614bd09b01a1bde9d3260b720471b87eb"
           },
-          "clinical_certification": false
+          "clinical_certification": false,
+          "stage": "revue_requise",
+          "execution_folder": "/workspace/Medina-nephrologie-n29/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N29-INTEGRATE"
         },
         "instruction_priority": "Ordre actuel : quatre spécialités en parallèle et une leçon à la fois par agent ; remplace les lots historiques, sans supprimer les réservations.",
         "counts": {
@@ -3155,7 +3157,7 @@
             "initial_status": "observed"
           }
         ],
-        "updated_at": "2026-11-02T02:47:04.110554+00:00",
+        "updated_at": "2026-11-02T03:26:47.355485+00:00",
         "initial_counts": {
           "conservative_s04_targets": 33,
           "existing": 6,
@@ -3173,14 +3175,16 @@
           "n04_local_assets": 5
         },
         "current_counts": {
-          "scientific_subtabs": 6,
+          "selected_source_readings": 31,
+          "exact_swiss_FIs": 9,
+          "science_tabs": 6,
           "semiology_sections": 9,
+          "original_figures": 4,
+          "figure_occurrences": 8,
+          "windows": 61,
+          "quiz": 4,
           "monograph_points": 14,
-          "medina_rubrics": 20,
-          "human_original_images": 5,
-          "current_selected_passages": 39,
-          "inherited_attributed_claims": 113,
-          "swiss_fi_targeted_read": 22
+          "medina_rubrics": 20
         },
         "delivery": {
           "folder": "/workspace/Medina-nephrologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE",
@@ -3297,11 +3301,18 @@
             "selected_passages_read": 41,
             "clinical_certification": false
           }
+        ],
+        "current_limits": [
+          "Auto-relectures IA, aucune certification clinique.",
+          "Gomme rénale tertiaire : pas de sémiologie spécifique documentée dans recommandations lues.",
+          "Disponibilité suisse du praziquantel à confirmer ; RCP français explicitement étranger.",
+          "Indocid-Retard ne représente pas un produit pédiatrique autorisé pour cystinose.",
+          "Aperçu autonome testé, pas de déploiement main."
         ]
       },
-      "activity_age_seconds": 206,
+      "activity_age_seconds": 326,
       "activity_fresh": true,
-      "sections_per_hour": 27.2,
+      "sections_per_hour": 20.55,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -3329,32 +3340,32 @@
       ],
       "owner": "codex_hematologie",
       "clinical_orchestration": false,
-      "lesson": "C85",
-      "worktree": "/workspace/Medina-hematologie",
-      "stage": "verification",
-      "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T03:15:50+00:00",
-      "message": "C85 : 40 lectures ciblées documentées, calendrier PROFILES2017/2023 corrigé ; matrices et contrôles finaux en préparation.",
+      "lesson": "C86",
+      "worktree": "/workspace/Medina-hematologie-C86",
+      "stage": "recherche",
+      "branch": "codex/alpha77/c86-integrate-g1",
+      "allowed_paths": [
+        "chapters/C86",
+        "glossary/c86.py",
+        "assets/img/c86/alpha/codex",
+        "organisation/alpha-publications/Codex/C86",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C86-INTEGRATE"
+      ],
+      "started_at": "2026-11-02T03:26:38+00:00",
+      "activity_at": "2026-11-02T03:27:36+00:00",
+      "message": "C85 conservé achevé ; C86 acquis/start/claim réels, inventaire du chapitre existant et recherche des sources T/NK.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "eefeffc1101a1e7d319dc093e1abff08445f84772dd4222ed29f2a05aaae4062",
-      "branch": "codex/alpha77/c85-integrate-g1",
-      "allowed_paths": [
-        "chapters/C85",
-        "glossary/c85.py",
-        "assets/img/c85/alpha/codex",
-        "organisation/alpha-publications/Codex/C85",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE"
-      ],
+      "completed_sections": 0,
+      "receipt_sha256": "f64e830a81691c3a42ec5479b5a72932ea6637bca8b9d027142815e23712657b",
       "brief": {
         "specialty": "Hématologie",
-        "selected_lesson": "C85",
-        "title": "Lymphomes non hodgkiniens de types autres et non précisés",
+        "selected_lesson": "C86",
+        "title": "Autres lymphomes à cellules T/NK spécifiés",
         "queue": [
           {
             "code": "D69",
@@ -3546,108 +3557,22 @@
         "tokens": null,
         "cost": null,
         "baseline": {
-          "global_words": null,
-          "science_words": 999,
-          "science_disciplines": 4
+          "words_rough": 17641,
+          "measurement": "HTML stripped rough inventory; static tool measurement follows"
         },
-        "next_action": "Passages sources, monographie, sémiologie et iconographie avant toute revue",
-        "status": "Version autonome vérifiée, sept réserves médicales/documentaires ouvertes",
-        "updated_at": "2026-11-02T02:26:15.244984+00:00",
-        "current": {
-          "global_words": 20667,
-          "science_words": 4338,
-          "science_disciplines": 6,
-          "science_figures": 6,
-          "original_human_images": 2,
-          "semio_sections": 9,
-          "popups": 49,
-          "quiz": 5
-        },
-        "sources_current": 18,
+        "next_action": "Inventorier C86, sources suisses puis européennes ; même atelier Hématologie, une leçon à la fois.",
+        "status": "recherche",
+        "updated_at": "2026-11-02T03:27:36.757201+00:00",
+        "current": {},
+        "sources_current": 0,
         "source_inherited": 23,
-        "monograph_points_mapped": 14,
+        "monograph_points_mapped": 0,
         "medina_rubrics": 20,
-        "blocking_findings": [
-          {
-            "id": "C85-R1",
-            "subject": "Classification et stades hérités",
-            "status": "open",
-            "next_action": "Relire les sources exactes des tableaux de stadification et leurs populations."
-          },
-          {
-            "id": "C85-R2",
-            "subject": "Compression, anesthésie et corticothérapie avant biopsie",
-            "status": "open",
-            "next_action": "Documenter les décisions urgentes et les limites de la biopsie avant traitement dans une source européenne actuelle."
-          },
-          {
-            "id": "C85-R3",
-            "subject": "Composants cytotoxiques des protocoles",
-            "status": "open",
-            "next_action": "Contrôler les FI exactes et les adaptations des composants non couverts par les cinq FI déjà relues."
-          },
-          {
-            "id": "C85-R4",
-            "subject": "Pédiatrie et situations particulières restantes",
-            "status": "open",
-            "next_action": "Vérifier le périmètre pédiatrique et les adaptations non couvertes; distinguer hors indication et absence de données."
-          },
-          {
-            "id": "C85-R5",
-            "subject": "Spécificités administratives suisses",
-            "status": "open",
-            "next_action": "Vérifier LS/LiMA, Suva/LAA et aptitude à la conduite ou justifier explicitement la non-applicabilité."
-          },
-          {
-            "id": "C85-R6",
-            "subject": "Paramètres historiques chiffrés",
-            "status": "open",
-            "next_action": "Comparer les chiffres hérités restant non relus aux passages et dénominateurs exacts."
-          },
-          {
-            "id": "C85-R7",
-            "subject": "Objectifs de formation fédérale",
-            "status": "open",
-            "next_action": "Relier les objectifs PROFILES effectivement applicables aux décisions pédagogiques, sans fabriquer un référentiel officielC85."
-          }
-        ],
-        "preview": "/workspace/Medina-hematologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE/C85-apercu-autonome.html",
-        "preview_sha256": "f769018b20c2cdbd7eb31eb50334180d3e8d0e512effee17c8c905db111cb258",
+        "blocking_findings": [],
+        "preview": "/workspace/Medina-hematologie-C86/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C86-INTEGRATE/C86-apercu-autonome.html",
+        "preview_sha256": null,
         "tests": {
-          "ok": true,
-          "checks": [
-            {
-              "check": "static",
-              "exit_code": 0,
-              "finished_at": "2026-11-02T02:25:45.520858+00:00"
-            },
-            {
-              "check": "sciences",
-              "exit_code": 0,
-              "finished_at": "2026-11-02T02:25:45.592987+00:00"
-            },
-            {
-              "check": "verite",
-              "exit_code": 0,
-              "finished_at": "2026-11-02T02:25:45.622542+00:00"
-            },
-            {
-              "check": "build",
-              "exit_code": 0,
-              "finished_at": "2026-11-02T02:26:01.385620+00:00"
-            },
-            {
-              "check": "bundle",
-              "exit_code": 0,
-              "finished_at": "2026-11-02T02:26:01.668818+00:00"
-            },
-            {
-              "check": "browser",
-              "exit_code": 0,
-              "finished_at": "2026-11-02T02:26:15.237017+00:00"
-            }
-          ],
-          "receipt": "/workspace/Medina-hematologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE/verification.json"
+          "ok": null
         },
         "reviews": {
           "mode": "self_review",
@@ -3657,11 +3582,119 @@
         "complete": false,
         "clinical_certification": false,
         "tokens_actual": null,
-        "cost_actual": null
+        "cost_actual": null,
+        "limitations": [],
+        "completion": null,
+        "completed_lessons": [
+          {
+            "selected_lesson": "C85",
+            "title": "Lymphomes non hodgkiniens de types autres et non précisés",
+            "current": {
+              "global_words": 22883,
+              "science_words": 4338,
+              "science_disciplines": 6,
+              "science_figures": 6,
+              "original_human_images": 2,
+              "semio_sections": 9,
+              "popups": 56,
+              "quiz": 5
+            },
+            "sources_current": 40,
+            "preview": "/workspace/Medina-hematologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE/C85-apercu-autonome.html",
+            "preview_sha256": "c0e32e5709a322a8ffbb51e420af58cc0ae2f3acbbad0d3adbd7c0706a227c5f",
+            "completion": {
+              "agent": "codex_hematologie",
+              "code": "C85",
+              "at": "2026-11-02T03:24:01+00:00",
+              "branch": "codex/alpha77/c85-integrate-g1",
+              "worktree": "/workspace/Medina-hematologie",
+              "folder": "/workspace/Medina-hematologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE",
+              "manifest_sha256": "96ee9f43e44e3943eeb28d1e670db2a2fc91153ff912a1c4bbdcbe7a61b1f6d8",
+              "source_binding_sha256": "f35d0a3f08bb4fe01d369a84ce8222683b682b205ada1b8895479c19149aaf68",
+              "review_modes": {
+                "medical": "self_review",
+                "language": "self_review",
+                "visual_desktop": "self_review",
+                "visual_mobile": "self_review"
+              },
+              "clinical_certification": false,
+              "publication_allowed": false,
+              "preview_sha256": "c0e32e5709a322a8ffbb51e420af58cc0ae2f3acbbad0d3adbd7c0706a227c5f"
+            },
+            "limitations": [
+              {
+                "id": "C85-L1",
+                "text": "Aucune incidence suisse propre àC85/PMBCL trouvée ; chiffresagrégés datés uniquement.",
+                "blocking": false
+              },
+              {
+                "id": "C85-L2",
+                "text": "CodageCIM-10-GM2024 consulté ; aucune revalidationCIM2026 prétendue.",
+                "blocking": false
+              },
+              {
+                "id": "C85-L3",
+                "text": "Unité hépatiqueEndoxan incohérente dans copieFI ; seuil neutralisé, contrôleofficiel/pharmacie exigé avant administration.",
+                "blocking": false
+              },
+              {
+                "id": "C85-L4",
+                "text": "Borne51µmol/l dansFIDoxorubicine nonclarifiée par supposition ; pas d’algorithme chiffré àcetteborne.",
+                "blocking": false
+              },
+              {
+                "id": "C85-L5",
+                "text": "LesFI composant parcomposant ne constituent pas une ordonnance complète du protocole ; pédiatrie spécialisée, indicationsdistinctes.",
+                "blocking": false
+              },
+              {
+                "id": "C85-L6",
+                "text": "Lectures ciblées et résumés nommés ; pas lectureintégrale globale ni validationhumaine revendiquée.",
+                "blocking": false
+              }
+            ],
+            "tests": {
+              "ok": true,
+              "checks": [
+                {
+                  "check": "static",
+                  "exit_code": 0,
+                  "finished_at": "2026-11-02T03:20:01.970148+00:00"
+                },
+                {
+                  "check": "sciences",
+                  "exit_code": 0,
+                  "finished_at": "2026-11-02T03:20:02.033822+00:00"
+                },
+                {
+                  "check": "verite",
+                  "exit_code": 0,
+                  "finished_at": "2026-11-02T03:20:02.061200+00:00"
+                },
+                {
+                  "check": "build",
+                  "exit_code": 0,
+                  "finished_at": "2026-11-02T03:20:16.896105+00:00"
+                },
+                {
+                  "check": "bundle",
+                  "exit_code": 0,
+                  "finished_at": "2026-11-02T03:20:17.185480+00:00"
+                },
+                {
+                  "check": "browser",
+                  "exit_code": 0,
+                  "finished_at": "2026-11-02T03:20:31.940548+00:00"
+                }
+              ],
+              "receipt": "/workspace/Medina-hematologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE/verification.json"
+            }
+          }
+        ]
       },
-      "activity_age_seconds": 108,
+      "activity_age_seconds": 2,
       "activity_fresh": true,
-      "sections_per_hour": 7.39,
+      "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
@@ -4312,6 +4345,51 @@
       "agent": "astra_neurologie",
       "stage": "recherche",
       "message": "G05 réservé: DGN2025 p2–14/16–28 et EAN/ESCMID2026 PICO1–16 réellement lus; deux preuves persistées. FI Cymevene/amoxicilline récupérées non encore lues. Ancienne anatomie et sémiologie à corriger; aucun cours nouveau rédigé."
+    },
+    {
+      "at": "2026-11-02T03:17:37+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T03:20:04+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T03:21:42+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "verification",
+      "message": "Gate réouvert après maintenance du parent : vérification native E01, audit sciences réussi et aucune abréviation E01 non couverte. Contrôles navigateur en préparation."
+    },
+    {
+      "at": "2026-11-02T03:22:12+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "revue_requise",
+      "message": "N29 aperçu autonome testé 1440/390, huit images décodées hors réseau ; position réelle des annotations contrôlée et quatre figures vues. 31 lectures ciblées, neuf FI suisses. Reçus finaux et matrice 14/20 en préparation."
+    },
+    {
+      "at": "2026-11-02T03:24:01+00:00",
+      "action": "complete",
+      "agent": "codex_hematologie",
+      "code": "C85"
+    },
+    {
+      "at": "2026-11-02T03:26:38+00:00",
+      "action": "claim",
+      "agent": "codex_hematologie",
+      "code": "C86"
+    },
+    {
+      "at": "2026-11-02T03:27:36+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "recherche",
+      "message": "C85 conservé achevé ; C86 acquis/start/claim réels, inventaire du chapitre existant et recherche des sources T/NK."
     }
   ],
   "cache": {
@@ -4355,6 +4433,19 @@
       "run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41376224282",
       "observed_at": "2026-11-02T02:10:19Z",
       "result": "Échec affiché pour les activités anciennes des trois auteurs, sans arrêt du relais; observation suivante réussie."
+    },
+    "native_agents_last_observed": {
+      "observed_at": "2026-11-02T03:24:49.177804+00:00",
+      "provider": "collaboration.list_agents",
+      "states": {
+        "root": "running",
+        "astra_neurologie": "running",
+        "astra_endocrinologie": "running",
+        "astra_nephrologie": "running"
+      },
+      "incident": "Three agents were observed interrupted after environment restart; each resumed by followup_task and then confirmed running. Exact interruption onset unknown.",
+      "author_activity_refreshed": false,
+      "external_watchdog_can_restart_native_agents": false
     }
   },
   "prompt": {
@@ -11171,7 +11262,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T03:17:37+00:00",
+    "observed_at": "2026-11-02T03:27:37+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -11276,6 +11367,40 @@
         }
       },
       {
+        "code": "C85",
+        "agent": "codex_hematologie",
+        "branch": "codex/alpha77/c85-integrate-g1",
+        "head_observed": "67000c5ccb3525ab99d98866e1e45924004618cf",
+        "local_preview": "/workspace/Medina-hematologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE/C85-apercu-autonome.html",
+        "exists": true,
+        "sha256": "c0e32e5709a322a8ffbb51e420af58cc0ae2f3acbbad0d3adbd7c0706a227c5f",
+        "bytes": 4619652,
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/c85-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE/C85-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/c85-integrate-g1",
+        "status": "Achèvement de projet documenté; version en attente de revue utilisateur avant PR main.",
+        "publication_main": false,
+        "clinical_certification": false,
+        "completion": {
+          "agent": "codex_hematologie",
+          "code": "C85",
+          "at": "2026-11-02T03:24:01+00:00",
+          "branch": "codex/alpha77/c85-integrate-g1",
+          "worktree": "/workspace/Medina-hematologie",
+          "folder": "/workspace/Medina-hematologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE",
+          "manifest_sha256": "96ee9f43e44e3943eeb28d1e670db2a2fc91153ff912a1c4bbdcbe7a61b1f6d8",
+          "source_binding_sha256": "f35d0a3f08bb4fe01d369a84ce8222683b682b205ada1b8895479c19149aaf68",
+          "review_modes": {
+            "medical": "self_review",
+            "language": "self_review",
+            "visual_desktop": "self_review",
+            "visual_mobile": "self_review"
+          },
+          "clinical_certification": false,
+          "publication_allowed": false,
+          "preview_sha256": "c0e32e5709a322a8ffbb51e420af58cc0ae2f3acbbad0d3adbd7c0706a227c5f"
+        }
+      },
+      {
         "code": "G05",
         "agent": "astra_neurologie",
         "branch": "codex/alpha77/g05-integrate-g1",
@@ -11296,9 +11421,9 @@
         "branch": "codex/alpha77/e01-integrate-g1",
         "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "local_preview": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/E01-apercu-autonome.html",
-        "exists": false,
-        "sha256": null,
-        "bytes": null,
+        "exists": true,
+        "sha256": "d8078b14ace36440dbb439b11091115b2eabffb8971ac57692de6eb1709cdd43",
+        "bytes": 6607834,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/e01-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/E01-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/e01-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
@@ -11311,9 +11436,9 @@
         "branch": "codex/alpha77/n29-integrate-g1",
         "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "local_preview": "/workspace/Medina-nephrologie-n29/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N29-INTEGRATE/N29-apercu-autonome.html",
-        "exists": false,
-        "sha256": null,
-        "bytes": null,
+        "exists": true,
+        "sha256": "a494d8409edadbf86666c41e09924e921a6a8a6d15f2ab473aeb1c5150a5dd6a",
+        "bytes": 7462500,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/n29-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N29-INTEGRATE/N29-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/n29-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
@@ -11321,16 +11446,16 @@
         "clinical_certification": false
       },
       {
-        "code": "C85",
+        "code": "C86",
         "agent": "codex_hematologie",
-        "branch": "codex/alpha77/c85-integrate-g1",
-        "head_observed": "6472975428e25cc1e58cc1d581e45fdad7712dc3",
-        "local_preview": "/workspace/Medina-hematologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE/C85-apercu-autonome.html",
-        "exists": true,
-        "sha256": "f769018b20c2cdbd7eb31eb50334180d3e8d0e512effee17c8c905db111cb258",
-        "bytes": 4607649,
-        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/c85-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE/C85-apercu-autonome.html",
-        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/c85-integrate-g1",
+        "branch": "codex/alpha77/c86-integrate-g1",
+        "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+        "local_preview": "/workspace/Medina-hematologie-C86/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C86-INTEGRATE/C86-apercu-autonome.html",
+        "exists": false,
+        "sha256": null,
+        "bytes": null,
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/c86-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C86-INTEGRATE/C86-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/c86-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
         "publication_main": false,
         "clinical_certification": false
@@ -11395,6 +11520,25 @@
       "clinical_certification": false,
       "publication_allowed": false,
       "preview_sha256": "76c59b4fba209a09fb186f6a5554541e81397722633547ce89a3b61ecda435db"
+    },
+    {
+      "agent": "codex_hematologie",
+      "code": "C85",
+      "at": "2026-11-02T03:24:01+00:00",
+      "branch": "codex/alpha77/c85-integrate-g1",
+      "worktree": "/workspace/Medina-hematologie",
+      "folder": "/workspace/Medina-hematologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE",
+      "manifest_sha256": "96ee9f43e44e3943eeb28d1e670db2a2fc91153ff912a1c4bbdcbe7a61b1f6d8",
+      "source_binding_sha256": "f35d0a3f08bb4fe01d369a84ce8222683b682b205ada1b8895479c19149aaf68",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "c0e32e5709a322a8ffbb51e420af58cc0ae2f3acbbad0d3adbd7c0706a227c5f"
     }
   ]
 }

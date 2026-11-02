@@ -75,3 +75,12 @@ Empreintes des instantanés lus :
 - `/workspace/Medina-harness/harness/agents/nephrologie/brief.json` — `9ca0a70f8ffc68ee8d3e4209aa7049d91ed34e0355382fa630f0b8feb9b8b350`.
 - `/workspace/Medina-harness/harness/agents/hematologie/brief.json` — `db0e2d45c01011c4522cf564295ea5b1d18ebd23264da495ad6d3304f60101d8`.
 - `/workspace/Medina-harness/harness/agents/neurologie/brief.json` — `ef62d0320a1d60e2445467968ee3f657bc14a86eb348d969a37b1c1cd4471236`.
+
+
+Actualisation de coordination — 2026-11-02T03:22:05.659731+00:00
+
+G02 : achèvement projet enregistré à 03:10:39 UTC, reçu et aperçu préservés sur la branche au commit a402352904ace3854e886740d97759a7de907db6 ; réservation libérée. Les six limites documentaires sont circonscrites au contenu publié et restent visibles ; aucune certification clinique ni intégration main. G05 : acquisition, start et claim réellement réussis, registre94514a6d560b60dcf9932d7ed3f7f904f179b541, worktree exclusif /workspace/Medina-neurologie-G05. Priorités : anatomie humaine sourcée, sémiologie neuf sections, six sciences, mise à jour EAN/ESCMID et neurosyphilis2026, FI exactes. Aucun passage suivant tant que ces lacunes sont ouvertes.
+
+Les transitions E00→E01 et N04→N29 restent enregistrées. C85 est encore en révision selon le parent ; mon avis circonscrit à l’anomalie d’unité Endoxan ne vaut pas audit de ce cours. PROFILES2017/2023 : calendrier2028 signalé par le parent avec sources officielles ; lecture propre requise avant affirmation dans G05. La page2023 officielle ne suffit pas à prouver une applicabilité à l’examen2026.
+
+Source de statut local consultée : SHA256 326d3efb711cfe1b1a627624ce0a8fba311dc93a6acf702afc7a4277d4869385. Coordination des attributions seulement, pas audit des autres filières. Les octets évités ne mesurent ni tokens ni coûts ; aucune mesure native disponible.
