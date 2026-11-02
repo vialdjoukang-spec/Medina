@@ -6,14 +6,15 @@
   "fragment": "S05",
   "label": "E-06-Endocrinologie et métabolisme",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "phase": "E04_preflight_catalog_blocked",
+  "phase": "E04_acquired_started_claimed_research",
   "selected_lesson": {
     "code": "E04",
     "title": "Autres goitres non toxiques",
     "mission_candidate": ".medina/missions/ALPHA77-CODEX-E04-INTEGRATE.json",
-    "reservation_acquired": false,
-    "start_passed": false,
-    "harness_claimed": false
+    "reservation_acquired": true,
+    "start_passed": true,
+    "harness_claimed": true,
+    "worktree": "/workspace/Medina-endocrinologie-E04"
   },
   "authorization_scope": "E42 livrée/libérée vérifiée ; E04 exclusivement attribuée, acquisition conditionnelle au registre et catalogue libres. E40 exclue.",
   "counts": {
@@ -212,8 +213,10 @@
       "canonical_present": false,
       "assignment_id": "SSPV2-PRODUCTION-S05-E04-CODEX",
       "starter_index": 53,
-      "active_reservations": [],
-      "state": "waiting_shared_catalog_D62",
+      "active_reservations": [
+        "ALPHA77-CODEX-E04-INTEGRATE"
+      ],
+      "state": "in_progress",
       "excluded_from_own_selection": false,
       "reservation_condition": "Registre frais et chapters.json libre ; aucun acquire pendant D62."
     },
@@ -1469,11 +1472,12 @@
   "current_evidence": {
     "registry_preflight": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E42-E04/registry-before-E04.json",
     "inventory_before_acquire": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E42-E04/E04-inventory-before-acquire.json",
-    "shared_catalog_conflicts": [
-      "ALPHA77-CODEX-D62-INTEGRATE"
-    ],
-    "storage": "Aucun worktree E04 ; création prématurée corrigée par retrait du seul checkout neuf propre avant toute réservation/rédaction, preuve dans transition. Recréation après acquire.",
-    "incident_sequence": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E42-E04/worktree-premature-creation-corrected.json"
+    "shared_catalog_conflicts": [],
+    "storage": "Worktree complet /workspace créé après acquire réussi, base exacte.",
+    "incident_sequence": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E42-E04/worktree-premature-creation-corrected.json",
+    "registry_acquire": "3ca8be0efe2144ad9b039ae255a3bb3758e47a4a",
+    "started_at": "2026-11-02T16:21:31.341840+00:00",
+    "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E42-E04/start.json"
   },
   "previous_limits": [
     "Code et libellé suisses locaux2024 seulement ; notes BfArM2024 confrontées, PDF OFS intégral non relu pour cette leçon. Pas certification de codage individuel, remboursement ou disponibilité2026. E42 sans subdivision, pas équivalence automatique avec toute malnutrition sévère.",
@@ -1494,7 +1498,7 @@
     "Quatre self_review même auteur, aucune indépendance ni validation médicale humaine. Score clinique et coûts/tokens réels laissés nuls. Recherches infructueuses documentées sans transformer échec d’accès en preuve d’absence de guide."
   ],
   "current_limits": [
-    "Préflight seulement ; aucune acquisition ni rédaction médicale nouvelle. E04 et C73 exigent chapters.json, réservation D62 à respecter."
+    "Recherche en cours ; aucune couverture ou validation finale prétendue. Préparation externe préalable distinguée du démarrage réel."
   ],
   "runtime_agent": "sol_endocrinologie",
   "runtime_model": "gpt-6.1-sol",

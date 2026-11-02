@@ -1,18 +1,23 @@
 {
-  "generated_at": "2026-11-02T16:15:15+00:00",
+  "generated_at": "2026-11-02T16:25:17+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T16:15:15+00:00",
+    "checked_at": "2026-11-02T16:25:17+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T16:15:15+00:00",
+    "observed_at": "2026-11-02T16:25:17+00:00",
     "ok": true,
     "findings": [
+      {
+        "agent": "astra_nephrologie",
+        "level": "warning",
+        "reason": "Aucune activité déclarée depuis plus de 20 min; agent non supposé actif"
+      },
       {
         "level": "warning",
         "reason": "Réserves structurelles historiques à traiter avant intégration ; achèvements conservés",
@@ -35,8 +40,8 @@
       }
     ],
     "semiology_history": {
-      "inspected": 33,
-      "passed": 19,
+      "inspected": 34,
+      "passed": 20,
       "reserved_codes": [
         "E00",
         "N04",
@@ -56,7 +61,7 @@
       "meaning": "Contrôle structurel relancé à chaque veille600s ; résultats historiques conservés, nouvelles clôtures refusées si échec."
     },
     "interval_seconds": 600,
-    "observer_pid": 1321589,
+    "observer_pid": 1348293,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -118,7 +123,7 @@
       "historical_id": "astra_neurologie",
       "lesson": "G08",
       "worktree": "/tmp/Medina-neurologie-G08",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/g08-integrate-g1",
       "allowed_paths": [
         "chapters/G08",
@@ -128,15 +133,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G08-INTEGRATE"
       ],
       "started_at": "2026-11-02T15:43:29+00:00",
-      "activity_at": "2026-11-02T16:04:16+00:00",
-      "message": "G08 :15références et plan14/matrice20 achevés avec lacunes explicites ; VÉRITÉ OK16:03:44UTC,7empreintes initiales inchangées avant nouvelle rédaction. Acquisition/start/claim dans ordre vérifié. Début rédaction maintenant.",
+      "activity_at": "2026-11-02T16:22:33+00:00",
+      "message": "G08 :52fenêtres et5quiz,Livre24,deuxoriginaux/annotations,clavier passent1440/390 sur premier bundle. Avant binding,ajout réel liens directs licence/source IRM et mention annotations ajoutées,pixels inchangés ; premier parcours conservé,rebuild/retests finaux en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "2358ea105e09fa97862334d9484d1a3bbba5c99deffa9296eee7e3d29fdd8bb2",
       "brief": {
         "schema_version": 1,
@@ -1617,9 +1622,9 @@
           "G21"
         ]
       },
-      "activity_age_seconds": 659,
+      "activity_age_seconds": 165,
       "activity_fresh": true,
-      "sections_per_hour": 0.0,
+      "sections_per_hour": 20.09,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -1654,28 +1659,29 @@
       "clinical_orchestration": false,
       "runtime_name": "/root/sol_endocrinologie",
       "historical_id": "astra_endocrinologie",
-      "lesson": "E42",
-      "worktree": "/tmp/Medina-endocrinologie-E42",
-      "stage": "termine",
-      "branch": "codex/alpha77/e42-integrate-g1",
+      "lesson": "E04",
+      "worktree": "/workspace/Medina-endocrinologie-E04",
+      "stage": "recherche",
+      "branch": "codex/alpha77/e04-integrate-g1",
       "allowed_paths": [
-        "chapters/E42",
-        "glossary/e42.py",
-        "assets/img/e42/alpha/codex",
-        "organisation/alpha-publications/Codex/E42",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E42-INTEGRATE"
+        "chapters/E04",
+        "glossary/e04.py",
+        "assets/img/e04/alpha/codex",
+        "organisation/alpha-publications/Codex/E04",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E04-INTEGRATE",
+        "chapters.json"
       ],
-      "started_at": "2026-11-02T15:14:28+00:00",
-      "activity_at": "2026-11-02T15:56:25+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "started_at": "2026-11-02T16:21:21+00:00",
+      "activity_at": "2026-11-02T16:21:21+00:00",
+      "message": "Mission réservée; recherche autorisée",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "ca9d917ce7db799975a16ffdaa8b64c9cd9954fe40adf296d968c902c3b3cd78",
+      "completed_sections": 0,
+      "receipt_sha256": "8234c58e094683e63355fff21299c6f121150dd8d3492ca7217fa3f9f3ca6845",
       "brief": {
         "schema_version": 1,
         "prepared_at": "2026-11-02T01:16:45.312443+00:00",
@@ -1684,14 +1690,15 @@
         "fragment": "S05",
         "label": "E-06-Endocrinologie et métabolisme",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "phase": "E04_preflight_catalog_blocked",
+        "phase": "E04_acquired_started_claimed_research",
         "selected_lesson": {
           "code": "E04",
           "title": "Autres goitres non toxiques",
           "mission_candidate": ".medina/missions/ALPHA77-CODEX-E04-INTEGRATE.json",
-          "reservation_acquired": false,
-          "start_passed": false,
-          "harness_claimed": false
+          "reservation_acquired": true,
+          "start_passed": true,
+          "harness_claimed": true,
+          "worktree": "/workspace/Medina-endocrinologie-E04"
         },
         "authorization_scope": "E42 livrée/libérée vérifiée ; E04 exclusivement attribuée, acquisition conditionnelle au registre et catalogue libres. E40 exclue.",
         "counts": {
@@ -1890,8 +1897,10 @@
             "canonical_present": false,
             "assignment_id": "SSPV2-PRODUCTION-S05-E04-CODEX",
             "starter_index": 53,
-            "active_reservations": [],
-            "state": "waiting_shared_catalog_D62",
+            "active_reservations": [
+              "ALPHA77-CODEX-E04-INTEGRATE"
+            ],
+            "state": "in_progress",
             "excluded_from_own_selection": false,
             "reservation_condition": "Registre frais et chapters.json libre ; aucun acquire pendant D62."
           },
@@ -3147,11 +3156,12 @@
         "current_evidence": {
           "registry_preflight": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E42-E04/registry-before-E04.json",
           "inventory_before_acquire": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E42-E04/E04-inventory-before-acquire.json",
-          "shared_catalog_conflicts": [
-            "ALPHA77-CODEX-D62-INTEGRATE"
-          ],
-          "storage": "Aucun worktree E04 ; création prématurée corrigée par retrait du seul checkout neuf propre avant toute réservation/rédaction, preuve dans transition. Recréation après acquire.",
-          "incident_sequence": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E42-E04/worktree-premature-creation-corrected.json"
+          "shared_catalog_conflicts": [],
+          "storage": "Worktree complet /workspace créé après acquire réussi, base exacte.",
+          "incident_sequence": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E42-E04/worktree-premature-creation-corrected.json",
+          "registry_acquire": "3ca8be0efe2144ad9b039ae255a3bb3758e47a4a",
+          "started_at": "2026-11-02T16:21:31.341840+00:00",
+          "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E42-E04/start.json"
         },
         "previous_limits": [
           "Code et libellé suisses locaux2024 seulement ; notes BfArM2024 confrontées, PDF OFS intégral non relu pour cette leçon. Pas certification de codage individuel, remboursement ou disponibilité2026. E42 sans subdivision, pas équivalence automatique avec toute malnutrition sévère.",
@@ -3172,7 +3182,7 @@
           "Quatre self_review même auteur, aucune indépendance ni validation médicale humaine. Score clinique et coûts/tokens réels laissés nuls. Recherches infructueuses documentées sans transformer échec d’accès en preuve d’absence de guide."
         ],
         "current_limits": [
-          "Préflight seulement ; aucune acquisition ni rédaction médicale nouvelle. E04 et C73 exigent chapters.json, réservation D62 à respecter."
+          "Recherche en cours ; aucune couverture ou validation finale prétendue. Préparation externe préalable distinguée du démarrage réel."
         ],
         "runtime_agent": "sol_endocrinologie",
         "runtime_model": "gpt-6.1-sol",
@@ -3202,9 +3212,9 @@
           }
         ]
       },
-      "activity_age_seconds": 1130,
+      "activity_age_seconds": 237,
       "activity_fresh": true,
-      "sections_per_hour": 13.82,
+      "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -4723,8 +4733,8 @@
           }
         ]
       },
-      "activity_age_seconds": 619,
-      "activity_fresh": true,
+      "activity_age_seconds": 1222,
+      "activity_fresh": false,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
@@ -4754,7 +4764,7 @@
       "clinical_orchestration": false,
       "lesson": "D62",
       "worktree": "/tmp/Medina-hematologie-D62",
-      "stage": "verification",
+      "stage": "termine",
       "branch": "codex/alpha77/d62-integrate-g1",
       "allowed_paths": [
         "chapters/D62",
@@ -4765,8 +4775,8 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T14:57:26+00:00",
-      "activity_at": "2026-11-02T16:14:10+00:00",
-      "message": "D62 : sept contrôles passés, liaison finale figée et 15 captures inspectées ; guard pré-push passé, publication de branche en cours, aucune PR.",
+      "activity_at": "2026-11-02T16:15:39+00:00",
+      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -4975,33 +4985,154 @@
           "words": 0,
           "science_words": 0
         },
-        "next_action": "Inventaire et recherche ciblée suisse/européenne ; porte VÉRITÉ obligatoire avant rédaction.",
-        "status": "recherche",
-        "updated_at": "2026-11-02T14:57:26.878504+00:00",
+        "next_action": "Rapport distant actualisé puis préparation D65 en lecture seule ; priorité catalogue E04, aucune acquisition D65 pendant sa réservation.",
+        "status": "termine",
+        "updated_at": "2026-11-02T16:16:21.410999+00:00",
         "current": {
           "code": "D62",
           "worktree": "/workspace/Medina-hematologie-D62",
           "branch": "codex/alpha77/d62-integrate-g1",
-          "status": "research_pending",
+          "status": "completed_released",
           "allow_new_course": true,
-          "shared_path_reserved": "chapters.json"
+          "shared_path_reserved": "chapters.json",
+          "final_commit": "e9d210c65a1063fbda12cc9978488d7b8a9a87ee",
+          "release_registry_sha": "108145b7f49ac93d912952064e239e30d494547f"
         },
-        "sources_current": 0,
+        "sources_current": 27,
         "sources_read": 0,
         "source_inherited": 0,
-        "monograph_points_mapped": 0,
-        "medina_rubrics": 0,
+        "monograph_points_mapped": 14,
+        "medina_rubrics": 20,
         "blocking_findings": [],
-        "preview": null,
-        "preview_sha256": null,
+        "preview": "/tmp/Medina-hematologie-D62/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D62-INTEGRATE/D62-apercu-autonome.html",
+        "preview_sha256": "44225bf5a0a4c594cdb11efc14a73661b366357a69c0737501d834af39cda1ce",
         "tests": {},
-        "reviews": {},
-        "complete": false,
+        "reviews": {
+          "medical": "self_review",
+          "language": "self_review",
+          "visual_desktop": "self_review",
+          "visual_mobile": "self_review"
+        },
+        "complete": true,
         "clinical_certification": false,
         "tokens_actual": null,
         "cost_actual": null,
-        "limitations": [],
-        "completion": null,
+        "limitations": [
+          {
+            "id": "D62-L1",
+            "text": "Revue médicale et linguistique ciblée par le même auteur ; aucune validation humaine indépendante, aucune note20/20.",
+            "blocking": false
+          },
+          {
+            "id": "D62-L2",
+            "text": "Incidence nationaleD62, fréquences de signes et performances isolées non retrouvées ; lacune exposée plutôt que remplacée par des statistiques d’autres populations.",
+            "blocking": false
+          },
+          {
+            "id": "D62-L3",
+            "text": "Adultes principalement ; pas protocole pédiatrique, de néonatologie ou de traumatisme cérébral complet extrapolé.",
+            "blocking": false
+          },
+          {
+            "id": "D62-L4",
+            "text": "SGGG2022 etOMS2025 ont des formulations obstétricales distinctes ; aucune adoption suisse fictive du texteOMS.",
+            "blocking": false
+          },
+          {
+            "id": "D62-L5",
+            "text": "TXA : indication digestiveFI versusESGE, contre-indication rénale sévère versus tableau et allaitement sont explicitement signalés ; pas ordonnance simplifiée.",
+            "blocking": false
+          },
+          {
+            "id": "D62-L6",
+            "text": "Ferinject : confirmation de carence selonFI et ferritine postpartum inflammatoire doivent être conciliées cliniquement ; besoin total distinct du plafond.",
+            "blocking": false
+          },
+          {
+            "id": "D62-L7",
+            "text": "Octaplex : pas de dose universelleD62 ; avis spécialisé, héparine et déficitATIII à respecter, données pédiatriques non établies.",
+            "blocking": false
+          },
+          {
+            "id": "D62-L8",
+            "text": "HUG2022 etSwissmedic2024 restent des références datées ; normes du laboratoire et procédures du centre priment sur une transposition mécanique.",
+            "blocking": false
+          },
+          {
+            "id": "D62-L9",
+            "text": "Deux originaux photographiques du normal, pas images diagnostiques d’une hémorragie. Repères français en légende, pixels intacts ; cinq schémas logiques non anatomiques.",
+            "blocking": false
+          },
+          {
+            "id": "D62-L10",
+            "text": "BannièrePROFILES147/165 cohérente avec situations lues ; compteurs globaux du frontend hérité ne certifient pas cette campagne ni sa qualité médicale.",
+            "blocking": false
+          },
+          {
+            "id": "D62-L11",
+            "text": "Navigation Tab/Entrée vérifiée ; navigation par flèches non prise en charge par moteur hérité. Des barres fixes peuvent recouvrir le bas de longues captures.",
+            "blocking": false
+          },
+          {
+            "id": "D62-L12",
+            "text": "Livre24 : corps de fenêtre mesuré24.004px et légendes16.944px par taille relative ; police et compteurs hérités non modifiés globalement.",
+            "blocking": false
+          },
+          {
+            "id": "D62-L13",
+            "text": "Aperçu testé viaHTTP intercepté, aucun déploiement ni fonctionnementfile:// revendiqué ; aucunePR/main, revueVial encore attendue.",
+            "blocking": false
+          },
+          {
+            "id": "D62-L14",
+            "text": "Délais de conduite/arrêt de travail spécifiquesD62 et garantie de remboursement non établis ; limites administratives déclarées.",
+            "blocking": false
+          }
+        ],
+        "completion": {
+          "agent": "codex_hematologie",
+          "code": "D62",
+          "at": "2026-11-02T16:15:39+00:00",
+          "branch": "codex/alpha77/d62-integrate-g1",
+          "worktree": "/tmp/Medina-hematologie-D62",
+          "folder": "/tmp/Medina-hematologie-D62/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D62-INTEGRATE",
+          "manifest_sha256": "4fb29682fb351f655683c0368a7bb924d0c7f485a5029294f64687a2c76b1080",
+          "source_binding_sha256": "4c6e464f053c5972fc46a6510fd7d28a8d8938251d0356c8ee7a8d6722bdc9bc",
+          "review_modes": {
+            "medical": "self_review",
+            "language": "self_review",
+            "visual_desktop": "self_review",
+            "visual_mobile": "self_review"
+          },
+          "clinical_certification": false,
+          "publication_allowed": false,
+          "preview_sha256": "44225bf5a0a4c594cdb11efc14a73661b366357a69c0737501d834af39cda1ce",
+          "semiology_contract": {
+            "code": "D62",
+            "observed_at": "2026-11-02T16:15:39+00:00",
+            "passed": true,
+            "checks": {
+              "six_science_tabs": true,
+              "first_selected_semio": true,
+              "semio_panel_label_and_visible": true,
+              "first_unit_exact_h3": true,
+              "nine_named_sections": true,
+              "linked_sources_in_semio": true,
+              "clinical_semio_marker": true
+            },
+            "findings": [],
+            "source_hashes": {
+              "chapters/D62/D62_a.html": "b313050d633e243a7451758a24e87247a99df8f2e2855bb4e4f2586bda97bec3",
+              "chapters/D62/D62_b.html": "4f0128b604a56f2bf074934a06240e3411a1fbd976bc73bc78a3b169e75f195d",
+              "chapters/D62/D62_c.html": "4972b8ef4743a501faa087ab57f694d2875be59e5fe86d1cc7a1087d07b7fc3c",
+              "chapters/D62/D62_d.html": "b866b06fa51a3d424eaae7c7e191fbbacf3cf730f6f68f13989679a0dbb0910c"
+            },
+            "clinical_certification": false,
+            "author_activity_refreshed": false,
+            "source_bindings_refreshed": false,
+            "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+          }
+        },
         "completed_lessons": [
           {
             "selected_lesson": "C85",
@@ -5600,40 +5731,136 @@
               }
             ],
             "complete": true
+          },
+          {
+            "code": "D62",
+            "completion": {
+              "agent": "codex_hematologie",
+              "code": "D62",
+              "at": "2026-11-02T16:15:39+00:00",
+              "branch": "codex/alpha77/d62-integrate-g1",
+              "worktree": "/tmp/Medina-hematologie-D62",
+              "folder": "/tmp/Medina-hematologie-D62/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D62-INTEGRATE",
+              "manifest_sha256": "4fb29682fb351f655683c0368a7bb924d0c7f485a5029294f64687a2c76b1080",
+              "source_binding_sha256": "4c6e464f053c5972fc46a6510fd7d28a8d8938251d0356c8ee7a8d6722bdc9bc",
+              "review_modes": {
+                "medical": "self_review",
+                "language": "self_review",
+                "visual_desktop": "self_review",
+                "visual_mobile": "self_review"
+              },
+              "clinical_certification": false,
+              "publication_allowed": false,
+              "preview_sha256": "44225bf5a0a4c594cdb11efc14a73661b366357a69c0737501d834af39cda1ce",
+              "semiology_contract": {
+                "code": "D62",
+                "observed_at": "2026-11-02T16:15:39+00:00",
+                "passed": true,
+                "checks": {
+                  "six_science_tabs": true,
+                  "first_selected_semio": true,
+                  "semio_panel_label_and_visible": true,
+                  "first_unit_exact_h3": true,
+                  "nine_named_sections": true,
+                  "linked_sources_in_semio": true,
+                  "clinical_semio_marker": true
+                },
+                "findings": [],
+                "source_hashes": {
+                  "chapters/D62/D62_a.html": "b313050d633e243a7451758a24e87247a99df8f2e2855bb4e4f2586bda97bec3",
+                  "chapters/D62/D62_b.html": "4f0128b604a56f2bf074934a06240e3411a1fbd976bc73bc78a3b169e75f195d",
+                  "chapters/D62/D62_c.html": "4972b8ef4743a501faa087ab57f694d2875be59e5fe86d1cc7a1087d07b7fc3c",
+                  "chapters/D62/D62_d.html": "b866b06fa51a3d424eaae7c7e191fbbacf3cf730f6f68f13989679a0dbb0910c"
+                },
+                "clinical_certification": false,
+                "author_activity_refreshed": false,
+                "source_bindings_refreshed": false,
+                "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+              }
+            },
+            "limitations": [
+              {
+                "id": "D62-L1",
+                "text": "Revue médicale et linguistique ciblée par le même auteur ; aucune validation humaine indépendante, aucune note20/20.",
+                "blocking": false
+              },
+              {
+                "id": "D62-L2",
+                "text": "Incidence nationaleD62, fréquences de signes et performances isolées non retrouvées ; lacune exposée plutôt que remplacée par des statistiques d’autres populations.",
+                "blocking": false
+              },
+              {
+                "id": "D62-L3",
+                "text": "Adultes principalement ; pas protocole pédiatrique, de néonatologie ou de traumatisme cérébral complet extrapolé.",
+                "blocking": false
+              },
+              {
+                "id": "D62-L4",
+                "text": "SGGG2022 etOMS2025 ont des formulations obstétricales distinctes ; aucune adoption suisse fictive du texteOMS.",
+                "blocking": false
+              },
+              {
+                "id": "D62-L5",
+                "text": "TXA : indication digestiveFI versusESGE, contre-indication rénale sévère versus tableau et allaitement sont explicitement signalés ; pas ordonnance simplifiée.",
+                "blocking": false
+              },
+              {
+                "id": "D62-L6",
+                "text": "Ferinject : confirmation de carence selonFI et ferritine postpartum inflammatoire doivent être conciliées cliniquement ; besoin total distinct du plafond.",
+                "blocking": false
+              },
+              {
+                "id": "D62-L7",
+                "text": "Octaplex : pas de dose universelleD62 ; avis spécialisé, héparine et déficitATIII à respecter, données pédiatriques non établies.",
+                "blocking": false
+              },
+              {
+                "id": "D62-L8",
+                "text": "HUG2022 etSwissmedic2024 restent des références datées ; normes du laboratoire et procédures du centre priment sur une transposition mécanique.",
+                "blocking": false
+              },
+              {
+                "id": "D62-L9",
+                "text": "Deux originaux photographiques du normal, pas images diagnostiques d’une hémorragie. Repères français en légende, pixels intacts ; cinq schémas logiques non anatomiques.",
+                "blocking": false
+              },
+              {
+                "id": "D62-L10",
+                "text": "BannièrePROFILES147/165 cohérente avec situations lues ; compteurs globaux du frontend hérité ne certifient pas cette campagne ni sa qualité médicale.",
+                "blocking": false
+              },
+              {
+                "id": "D62-L11",
+                "text": "Navigation Tab/Entrée vérifiée ; navigation par flèches non prise en charge par moteur hérité. Des barres fixes peuvent recouvrir le bas de longues captures.",
+                "blocking": false
+              },
+              {
+                "id": "D62-L12",
+                "text": "Livre24 : corps de fenêtre mesuré24.004px et légendes16.944px par taille relative ; police et compteurs hérités non modifiés globalement.",
+                "blocking": false
+              },
+              {
+                "id": "D62-L13",
+                "text": "Aperçu testé viaHTTP intercepté, aucun déploiement ni fonctionnementfile:// revendiqué ; aucunePR/main, revueVial encore attendue.",
+                "blocking": false
+              },
+              {
+                "id": "D62-L14",
+                "text": "Délais de conduite/arrêt de travail spécifiquesD62 et garantie de remboursement non établis ; limites administratives déclarées.",
+                "blocking": false
+              }
+            ],
+            "complete": true
           }
         ]
       },
-      "activity_age_seconds": 65,
+      "activity_age_seconds": 579,
       "activity_fresh": true,
-      "sections_per_hour": 10.79,
+      "sections_per_hour": 9.56,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T05:45:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T05:55:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T06:05:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T06:15:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
     {
       "at": "2026-11-02T06:25:41+00:00",
       "action": "watch",
@@ -6902,6 +7129,31 @@
       "agent": "codex_hematologie",
       "stage": "verification",
       "message": "D62 : sept contrôles passés, liaison finale figée et 15 captures inspectées ; guard pré-push passé, publication de branche en cours, aucune PR."
+    },
+    {
+      "at": "2026-11-02T16:15:15+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T16:15:39+00:00",
+      "action": "complete",
+      "agent": "codex_hematologie",
+      "code": "D62"
+    },
+    {
+      "at": "2026-11-02T16:21:21+00:00",
+      "action": "claim",
+      "agent": "astra_endocrinologie",
+      "code": "E04"
+    },
+    {
+      "at": "2026-11-02T16:22:33+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "verification",
+      "message": "G08 :52fenêtres et5quiz,Livre24,deuxoriginaux/annotations,clavier passent1440/390 sur premier bundle. Avant binding,ajout réel liens directs licence/source IRM et mention annotations ajoutées,pixels inchangés ; premier parcours conservé,rebuild/retests finaux en cours."
     }
   ],
   "cache": {
@@ -6916,16 +7168,16 @@
     "main_medina_modified": false,
     "native_agents_persistent": false,
     "branch": "codex/harness-observations-20261102",
-    "last_verified_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41469771367",
+    "last_verified_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41478002939",
     "last_verified_conclusion": "success",
     "report_automation": "enabled;2026-11-02T08:00:00+01:00; updated with independent artifacts and lesson previews",
     "independent_watchdog": "active; workflow_dispatch handoff verified",
     "watchdog_bootstrap_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41374424262",
-    "watchdog_successor_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41469507850",
-    "watchdog_verified_at": "2026-11-02T15:03:45.192447+00:00",
+    "watchdog_successor_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41478268061",
+    "watchdog_verified_at": "2026-11-02T15:56:52.376611+00:00",
     "resource_budget": "No LLM calls per observation; standard Actions runner waits between600s checks; billable amount not exposed",
     "watchdog_regular_successor": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41375298891",
-    "watchdog_chain_confirmed": "Dispatch observé sain à15:03:45UTC ; handoff réel15:13:45UTC HTTP204 ; successeur41469507850 vu en cours lors de la collecte15:16. Aucune activité native continue déduite.",
+    "watchdog_chain_confirmed": "Dispatch15:56:52UTC a signalé deux activités anciennes ; relais demandé à16:06:52UTC HTTP204. Successeur41478268061 vu en cours à16:14UTC. Aucun succès anticipé.",
     "native_agent_supervision": {
       "observed_at": "2026-11-02T02:45:39.451104+00:00",
       "provider": "collaboration.list_agents",
@@ -6939,15 +7191,15 @@
       "author_activity_refreshed": false,
       "external_watchdog_can_restart_native_agents": false
     },
-    "last_verified_observation": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41469771367",
-    "last_verified_observation_result": "Push15:15:56UTC : snapshot15:15:16 frais, aucune activité auteur ancienne, tests code92f5d33c réussis. Dernier dispatch terminé lu15:03:45.192447UTC healthy:true ; handoff15:13:45UTC HTTP204. Échec14:53:20 conservé : activités neurologie et endocrinologie anciennes dans snapshot14:45. Aucune relance de modèle par le relais.",
+    "last_verified_observation": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41478002939",
+    "last_verified_observation_result": "Push16:05:43UTC : snapshot16:05:15 frais, aucune activité ancienne ; tests code92f5d33c réussis. Dispatch15:56:52.376611UTC unhealthy : endocrinologie et parent anciens dans snapshot15:55:16 ; handoff16:06:52UTC HTTP204. Aucune relance native.",
     "incident_stale_activity": {
       "run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41376224282",
       "observed_at": "2026-11-02T02:10:19Z",
       "result": "Échec affiché pour les activités anciennes des trois auteurs, sans arrêt du relais; observation suivante réussie."
     },
     "native_agents_last_observed": {
-      "at": "2026-11-02T15:19:12.843777+00:00",
+      "at": "2026-11-02T16:19:30.889873+00:00",
       "provider": "collaboration.list_agents",
       "agents": [
         {
@@ -6968,7 +7220,7 @@
         }
       ],
       "author_activity_refreshed": false,
-      "meaning": "Observation native ponctuelle immédiatement avant cet enregistrement ; aucun renouvellement de source-binding ou activité clinique par le watcher."
+      "meaning": "Observation native ponctuelle immédiatement avant enregistrement, ne prouve aucune continuité ; aucun reçu source-binding renouvelé."
     },
     "native_model_handoff": {
       "at": "2026-11-02T10:23:02.648791+00:00",
@@ -7079,6 +7331,25 @@
         "evidence_preserved": true,
         "no_capture_or_medical_cache_deleted": true
       }
+    },
+    "parallel_search_quota_incident": {
+      "observed_at": "2026-11-02T16:02:00+00:00",
+      "time_precision": "minute approximative du compte rendu agent ; réponse conservée par agent",
+      "provider": "ParallelSearch",
+      "result": "Quota atteint, réponseUNAVAILABLE signalée par auteur G21 ; aucun résultat de figure obtenu.",
+      "continuation": "Arrêt des appels à ce service ; caches attribués et accès HTTP public aux sources connues. Aucune nouvelle identité/session pour contourner la limite.",
+      "tokens_or_savings_measured": false
+    },
+    "storage_preservation": {
+      "proof": "harness/storage/C92-sparse-archive.json",
+      "method": "Ancien worktree C92 clôturé passé en sparse-checkout, uniquement copies de base non pertinentes retirées ; preuves propres et objets Git conservés.",
+      "protected_files_verified": 125,
+      "active_worktrees_changed": false
+    },
+    "e04_premature_worktree_incident": {
+      "proof": "harness/agents/endocrinologie/transitions/E42-E04/worktree-premature-creation-corrected.json",
+      "result": "Worktree E04 créé avant acquisition malgré ordre demandé, puis vérifié sans contenu E04 et retiré ; E04 non acquis et non démarré à ce constat.",
+      "next": "D62 libéré sous registre108145b7f49ac93d912952064e239e30d494547f ; priorité acquisition E04 notifiée, start/claim encore à vérifier séparément."
     }
   },
   "prompt": {
@@ -13895,7 +14166,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T16:15:13+00:00",
+    "observed_at": "2026-11-02T16:25:13+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -15347,16 +15618,90 @@
         }
       },
       {
+        "code": "D62",
+        "agent": "codex_hematologie",
+        "branch": "codex/alpha77/d62-integrate-g1",
+        "head_observed": "e9d210c65a1063fbda12cc9978488d7b8a9a87ee",
+        "local_preview": "/tmp/Medina-hematologie-D62/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D62-INTEGRATE/D62-apercu-autonome.html",
+        "exists": true,
+        "sha256": "44225bf5a0a4c594cdb11efc14a73661b366357a69c0737501d834af39cda1ce",
+        "bytes": 7181267,
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/d62-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D62-INTEGRATE/D62-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/d62-integrate-g1",
+        "status": "Achèvement de projet documenté; version en attente de revue utilisateur avant PR main.",
+        "publication_main": false,
+        "clinical_certification": false,
+        "completion": {
+          "agent": "codex_hematologie",
+          "code": "D62",
+          "at": "2026-11-02T16:15:39+00:00",
+          "branch": "codex/alpha77/d62-integrate-g1",
+          "worktree": "/tmp/Medina-hematologie-D62",
+          "folder": "/tmp/Medina-hematologie-D62/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D62-INTEGRATE",
+          "manifest_sha256": "4fb29682fb351f655683c0368a7bb924d0c7f485a5029294f64687a2c76b1080",
+          "source_binding_sha256": "4c6e464f053c5972fc46a6510fd7d28a8d8938251d0356c8ee7a8d6722bdc9bc",
+          "review_modes": {
+            "medical": "self_review",
+            "language": "self_review",
+            "visual_desktop": "self_review",
+            "visual_mobile": "self_review"
+          },
+          "clinical_certification": false,
+          "publication_allowed": false,
+          "preview_sha256": "44225bf5a0a4c594cdb11efc14a73661b366357a69c0737501d834af39cda1ce",
+          "semiology_contract": {
+            "code": "D62",
+            "observed_at": "2026-11-02T16:15:39+00:00",
+            "passed": true,
+            "checks": {
+              "six_science_tabs": true,
+              "first_selected_semio": true,
+              "semio_panel_label_and_visible": true,
+              "first_unit_exact_h3": true,
+              "nine_named_sections": true,
+              "linked_sources_in_semio": true,
+              "clinical_semio_marker": true
+            },
+            "findings": [],
+            "source_hashes": {
+              "chapters/D62/D62_a.html": "b313050d633e243a7451758a24e87247a99df8f2e2855bb4e4f2586bda97bec3",
+              "chapters/D62/D62_b.html": "4f0128b604a56f2bf074934a06240e3411a1fbd976bc73bc78a3b169e75f195d",
+              "chapters/D62/D62_c.html": "4972b8ef4743a501faa087ab57f694d2875be59e5fe86d1cc7a1087d07b7fc3c",
+              "chapters/D62/D62_d.html": "b866b06fa51a3d424eaae7c7e191fbbacf3cf730f6f68f13989679a0dbb0910c"
+            },
+            "clinical_certification": false,
+            "author_activity_refreshed": false,
+            "source_bindings_refreshed": false,
+            "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+          }
+        }
+      },
+      {
         "code": "G08",
         "agent": "astra_neurologie",
         "branch": "codex/alpha77/g08-integrate-g1",
         "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "local_preview": "/tmp/Medina-neurologie-G08/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G08-INTEGRATE/G08-apercu-autonome.html",
+        "exists": true,
+        "sha256": "23f124c42ed159f9834e0d909698dd641c67e0b43236f143569ae0ca86ceb5e1",
+        "bytes": 8137428,
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/g08-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G08-INTEGRATE/G08-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/g08-integrate-g1",
+        "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
+        "publication_main": false,
+        "clinical_certification": false
+      },
+      {
+        "code": "E04",
+        "agent": "astra_endocrinologie",
+        "branch": "codex/alpha77/e04-integrate-g1",
+        "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+        "local_preview": "/workspace/Medina-endocrinologie-E04/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E04-INTEGRATE/E04-apercu-autonome.html",
         "exists": false,
         "sha256": null,
         "bytes": null,
-        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/g08-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G08-INTEGRATE/G08-apercu-autonome.html",
-        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/g08-integrate-g1",
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/e04-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E04-INTEGRATE/E04-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/e04-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
         "publication_main": false,
         "clinical_certification": false
@@ -15372,21 +15717,6 @@
         "bytes": null,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/g21-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G21-INTEGRATE/G21-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/g21-integrate-g1",
-        "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
-        "publication_main": false,
-        "clinical_certification": false
-      },
-      {
-        "code": "D62",
-        "agent": "codex_hematologie",
-        "branch": "codex/alpha77/d62-integrate-g1",
-        "head_observed": "96b262562b7bc404de72591097e2c6584dc74ccb",
-        "local_preview": "/tmp/Medina-hematologie-D62/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D62-INTEGRATE/D62-apercu-autonome.html",
-        "exists": true,
-        "sha256": "44225bf5a0a4c594cdb11efc14a73661b366357a69c0737501d834af39cda1ce",
-        "bytes": 7181267,
-        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/d62-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D62-INTEGRATE/D62-apercu-autonome.html",
-        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/d62-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
         "publication_main": false,
         "clinical_certification": false
@@ -16342,6 +16672,50 @@
           "chapters/E42/E42_b.html": "0d774a05c381e3edc5803e05c9c48eae6984caa8f98fc377b3f3987884438b2d",
           "chapters/E42/E42_c.html": "562030c4b36688f90578bdd623c4a5cc28896acc2a5d64f6f17b8092743dc606",
           "chapters/E42/E42_d.html": "790cab14f77898442532a6bc471d51e6acef7ce847a687e32f5d4a28587bf492"
+        },
+        "clinical_certification": false,
+        "author_activity_refreshed": false,
+        "source_bindings_refreshed": false,
+        "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+      }
+    },
+    {
+      "agent": "codex_hematologie",
+      "code": "D62",
+      "at": "2026-11-02T16:15:39+00:00",
+      "branch": "codex/alpha77/d62-integrate-g1",
+      "worktree": "/tmp/Medina-hematologie-D62",
+      "folder": "/tmp/Medina-hematologie-D62/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D62-INTEGRATE",
+      "manifest_sha256": "4fb29682fb351f655683c0368a7bb924d0c7f485a5029294f64687a2c76b1080",
+      "source_binding_sha256": "4c6e464f053c5972fc46a6510fd7d28a8d8938251d0356c8ee7a8d6722bdc9bc",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "44225bf5a0a4c594cdb11efc14a73661b366357a69c0737501d834af39cda1ce",
+      "semiology_contract": {
+        "code": "D62",
+        "observed_at": "2026-11-02T16:15:39+00:00",
+        "passed": true,
+        "checks": {
+          "six_science_tabs": true,
+          "first_selected_semio": true,
+          "semio_panel_label_and_visible": true,
+          "first_unit_exact_h3": true,
+          "nine_named_sections": true,
+          "linked_sources_in_semio": true,
+          "clinical_semio_marker": true
+        },
+        "findings": [],
+        "source_hashes": {
+          "chapters/D62/D62_a.html": "b313050d633e243a7451758a24e87247a99df8f2e2855bb4e4f2586bda97bec3",
+          "chapters/D62/D62_b.html": "4f0128b604a56f2bf074934a06240e3411a1fbd976bc73bc78a3b169e75f195d",
+          "chapters/D62/D62_c.html": "4972b8ef4743a501faa087ab57f694d2875be59e5fe86d1cc7a1087d07b7fc3c",
+          "chapters/D62/D62_d.html": "b866b06fa51a3d424eaae7c7e191fbbacf3cf730f6f68f13989679a0dbb0910c"
         },
         "clinical_certification": false,
         "author_activity_refreshed": false,
