@@ -51,28 +51,28 @@
       "receipt_sha256": "ca9d917ce7db799975a16ffdaa8b64c9cd9954fe40adf296d968c902c3b3cd78"
     },
     "astra_nephrologie": {
-      "lesson": "E40",
-      "worktree": "/tmp/Medina-nutrition-E40",
-      "stage": "termine",
-      "branch": "codex/alpha77/e40-integrate-g1",
+      "lesson": "G21",
+      "worktree": "/tmp/Medina-neurologie-G21",
+      "stage": "recherche",
+      "branch": "codex/alpha77/g21-integrate-g1",
       "allowed_paths": [
-        "chapters/E40",
-        "glossary/e40.py",
-        "assets/img/e40/alpha/codex",
-        "organisation/alpha-publications/Codex/E40",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE"
+        "chapters/G21",
+        "glossary/g21.py",
+        "assets/img/g21/alpha/codex",
+        "organisation/alpha-publications/Codex/G21",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G21-INTEGRATE"
       ],
-      "started_at": "2026-11-02T14:33:11+00:00",
-      "activity_at": "2026-11-02T15:42:01+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "started_at": "2026-11-02T15:52:16+00:00",
+      "activity_at": "2026-11-02T15:53:03+00:00",
+      "message": "G21 acquis, checkout complet, start et claim réels après refus initial de propreté conservé. Sept fichiers canoniques inventoriés, aucun texte modifié ; recherche primaire CH→EU et originaux à reprendre avant Betta.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "551cc7e67bac5ac8c64cd5883da157a0020162aba26731400d93ef95b6e30915"
+      "completed_sections": 0,
+      "receipt_sha256": "59951491a23b74c5b3ae4b60ccfe7563a53e210238c14ff8f5b0696e41b414a6"
     },
     "codex_hematologie": {
       "lesson": "D62",
@@ -101,26 +101,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T05:06:22+00:00",
-      "action": "progress",
-      "agent": "codex_hematologie",
-      "stage": "redaction",
-      "message": "C95 : quinze sections cliniques et trente-trois fiches rédigées après VÉRITÉ OK ; pharmacologie, six sciences et contrôles en préparation."
-    },
-    {
-      "at": "2026-11-02T05:07:12+00:00",
-      "action": "complete",
-      "agent": "astra_neurologie",
-      "code": "I64"
-    },
-    {
-      "at": "2026-11-02T05:09:15+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "verification",
-      "message": "Les 45 fenêtres E07 et 42 fenêtres automatiques sont ouvertes aux deux formats ; homonymes corrigés localement. Dernière reconstruction après harmonisation de trois libellés bibliographiques ; reçus finaux en préparation."
-    },
     {
       "at": "2026-11-02T05:09:43+00:00",
       "action": "claim",
@@ -1391,6 +1371,25 @@
       "action": "watch",
       "ok": true,
       "findings": 1
+    },
+    {
+      "at": "2026-11-02T15:52:16+00:00",
+      "action": "claim",
+      "agent": "astra_nephrologie",
+      "code": "G21"
+    },
+    {
+      "at": "2026-11-02T15:53:03+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "recherche",
+      "message": "G21 acquis, checkout complet, start et claim réels après refus initial de propreté conservé. Sept fichiers canoniques inventoriés, aucun texte modifié ; recherche primaire CH→EU et originaux à reprendre avant Betta."
+    },
+    {
+      "at": "2026-11-02T15:55:16+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 3
     }
   ],
   "cache": {

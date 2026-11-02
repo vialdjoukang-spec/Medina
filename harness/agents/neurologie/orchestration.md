@@ -221,3 +221,8 @@ Complete effectif15:39:39UTC, final1d7a1821f1afa8689bbf88965049e38a1e4fab8e pous
 ## G08 — acquisition et entrée effectives, 2026-11-02T15:44:12.609552+00:00
 
 Acquisition649aac92c6c569f14c589c56b400c1b2275c0582 réellement attendue et vérifiée avant lancement du checkout ; worktree complet/tmp/Medina-neurologie-G08, lien/workspace, base8a512893acbab9caa0dcfdd0e8682a44ea72fda6. Start puis gate allowed et claim réussis15:43:29UTC. Prompt de vérité relu comme premier document de leçon ; instructions générales identiques à G07 par empreinte, aucun AGENTS imbriqué. Inventaire initial conservé ;0source primaire encore lue pour G08, aucune nouvelle rédaction, pas de binding.
+
+
+## Réattribution G21 — 2026-11-02T15:48:28.864204+00:00
+
+Instruction root reçue et confirmée :G21 est transféré exclusivement à sol_nephrologie, retiré de ma file. Aucun changement au cours G08 actif. Après G08 clos et libéré, prochain candidat G22, registre frais puis acquisition/start/claim exclusifs.

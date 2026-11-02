@@ -19,7 +19,6 @@
         "G06",
         "G07",
         "G08",
-        "G21",
         "G22",
         "G24",
         "G25",
@@ -104,7 +103,8 @@
         "N06",
         "D77",
         "G09",
-        "E40"
+        "E40",
+        "G21"
       ],
       "reserved_elsewhere": [
         "N17"
@@ -113,12 +113,12 @@
       "clinical_orchestration": false,
       "runtime_name": "/root/sol_nephrologie",
       "historical_id": "astra_nephrologie",
-      "active_specialty": "nutrition",
-      "production_name": "Sol-Nutrition-E40",
+      "active_specialty": "mouvements anormaux",
+      "production_name": "Sol-Neurologie-G21",
       "technical_identity_note": "Identité native conservée /root/sol_nephrologie ; huit livraisons néphrologiques historiques inchangées.",
-      "next_specialty": null,
-      "next_production_name": null,
-      "next_reason": "C92 reserves shared chapters.json; G09 is an existing exclusive course, removed from the other neurology queue."
+      "next_specialty": "mouvements anormaux",
+      "next_production_name": "Sol-Neurologie-G21",
+      "next_reason": "E40 achevé/libéré ; G21 existant, exclusion neuro confirmée ; E04 annulé avant acquisition car catalogue réservé par D62."
     },
     {
       "id": "codex_hematologie",
@@ -178,6 +178,15 @@
       "reason": "D77 achevé et libéré ; G09 acquis et claim réellement confirmés. C92 garde seul chapters.json.",
       "no_main_write": true,
       "acquisition_sha": "77cb9b8568f410dadca92bccb36aa17c8f317d3a"
+    },
+    {
+      "at": "2026-11-02T15:48:49.435688+00:00",
+      "code": "G21",
+      "from": "astra_neurologie",
+      "to": "astra_nephrologie",
+      "stage": "allocation_before_fresh_acquisition",
+      "reason": "Maintien parallèle ; aucun chapters.json dans missionG21. Exclusion auteur confirmée. PropositionE04 annulée sans acquisition ni mutation de sa file.",
+      "no_main_write": true
     }
   ]
 }

@@ -146,3 +146,10 @@ C92 a été achevée dans le harness à 14:52:53 UTC, source `83fc89bd5015145283
 Le parent reprend D62, anémie posthémorragique aiguë, sur `codex/alpha77/d62-integrate-g1`, worktree complet `/tmp/Medina-hematologie-D62` et alias `/workspace/Medina-hematologie-D62`. Acquisition `1c204b4463edfb4c819d8c7fa78b987df7b187d7`, start puis claim réellement réussis ; preuves dans `agents/hematologie/transitions/C92-D62`. Les 54 PR ouvertes ont été examinées sur leurs fichiers et aucun conflit D62 trouvé.
 
 La mission active préapprouvée D62 autorise explicitement sa création et le fichier partagé `chapters.json` ; elle constitue l’exception réservée à l’interdiction générale d’éditer le catalogue. Les autres auteurs G07, E35 et E40 ont des périmètres distincts. Après D62, D65/D66/C82/C88 devront reprendre ce périmètre séquentiellement, jamais l’acquérir en parallèle.
+
+
+## Relais E40 vers G21 — 2026-11-02T15:48:49.435688+00:00
+
+E40 achevé à15:42:01UTC ; final `39d8ce5883d975ce83e9e21f6c61d48a72b55e31`, libération `34d399ea690e7f174497cad680a3c69d84bafae3`. Le slot natif `/root/sol_nephrologie` reçoit exclusivement G21, mouvements anormaux, nom de production `Sol-Neurologie-G21`. Le slot neuro a confirmé son exclusion et poursuit G08 puis G22. Préflight/réservation/start/claim restent obligatoires et ne sont pas attestés par cette allocation.
+
+E04 avait été envisagé : le préflight a montré une nouvelle leçon incluant `chapters.json`, encore réservé par D62. Proposition annulée avant acquisition ; E04 reste à endocrinologie après E42. Aucun conflit de catalogue créé, aucune activité auteur ni reçu source renouvelé par ce changement.
