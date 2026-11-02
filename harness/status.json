@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-02T03:47:37+00:00",
+  "generated_at": "2026-11-02T03:57:37+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T03:47:37+00:00",
+    "checked_at": "2026-11-02T03:57:37+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T03:47:37+00:00",
+    "observed_at": "2026-11-02T03:57:37+00:00",
     "ok": true,
     "findings": [],
     "interval_seconds": 600,
-    "observer_pid": 293687,
+    "observer_pid": 294339,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -86,8 +86,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE"
       ],
       "started_at": "2026-11-02T03:13:04+00:00",
-      "activity_at": "2026-11-02T03:40:53+00:00",
-      "message": "G05 : 39 lectures ciblées persistées ; six sous-onglets scientifiques rédigés, neuf sections sémiologiques et deux originaux anatomiques humains avec annotations visibles. Révision des parties cliniques/examens/pharmacologie et sources rares en cours.",
+      "activity_at": "2026-11-02T03:49:14+00:00",
+      "message": "G05 : parties cliniques 0–6 réécrites ; six sciences et neuf sections sémiologiques sauvegardées ; compléments sources rares et pharmacologie en cours, aperçu final non encore construit.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -1253,9 +1253,9 @@
           }
         ]
       },
-      "activity_age_seconds": 405,
+      "activity_age_seconds": 504,
       "activity_fresh": true,
-      "sections_per_hour": 15.62,
+      "sections_per_hour": 12.12,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -1291,7 +1291,7 @@
       "clinical_orchestration": false,
       "lesson": "E02",
       "worktree": "/workspace/Medina-endocrinologie-E02",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/e02-integrate-g1",
       "allowed_paths": [
         "chapters/E02",
@@ -1301,15 +1301,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE"
       ],
       "started_at": "2026-11-02T03:38:56+00:00",
-      "activity_at": "2026-11-02T03:47:15+00:00",
-      "message": "E02 : six fichiers existants relus ; FI Euthyrox complète et composition Elevit vérifiées. Sources HAS, RCOG, ETA pédiatrique, HTA suisse et essais lus avec limites par population ; préparation des corrections de seuils et de causalité.",
+      "activity_at": "2026-11-02T03:57:19+00:00",
+      "message": "E02 : clinique enrichie, divergences grossesse/HAS/RCOG explicitées, six sciences et neuf rubriques sémiologiques sauvegardées. Original anatomique 2013 et micrographie réelle réutilisés avec licence propre et annotations HTML. Réconciliation des fenêtres, pharmacologie et quiz encore en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 10,
       "receipt_sha256": "04065a1ab69d137c57138c5541c49a49bab1ee7344d0f9968ee00102a1c48670",
       "brief": {
         "schema_version": 1,
@@ -2652,9 +2652,9 @@
           "Sources héritées à relire ; aucune validation héritée revendiquée."
         ]
       },
-      "activity_age_seconds": 23,
+      "activity_age_seconds": 19,
       "activity_fresh": true,
-      "sections_per_hour": 0.0,
+      "sections_per_hour": 32.09,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -2680,7 +2680,7 @@
       "clinical_orchestration": false,
       "lesson": "N00",
       "worktree": "/workspace/Medina-nephrologie-n00",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/n00-integrate-g1",
       "allowed_paths": [
         "chapters/N00",
@@ -2691,15 +2691,15 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T03:33:06+00:00",
-      "activity_at": "2026-11-02T03:38:58+00:00",
-      "message": "N00 : passages HUG hématurie, RMS urgence glomérulaire, CUEN2025 et KDIGO chapitre7/figure57 lus ; distinction postinfectieux et infection active, limites thérapeutiques documentées ; choix figures humaines en cours.",
+      "activity_at": "2026-11-02T03:48:37+00:00",
+      "message": "N00 : 14 sections cliniques rédigées en a/b avec annexe morphologique et preuves ciblées ; sciences, examens, pharmacologie, fenêtres et revue finale encore à compléter.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "c09a742157bfead4de9fba5bd68784e01781a7b6d2e8d8676f8f949d2cbe87f0",
       "brief": {
         "schema_version": 1,
@@ -2709,7 +2709,7 @@
         "fragment_label": "N-07-Néphrologie",
         "prepared_at": "2026-11-02T01:16:51.601917+00:00",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "status": "N00_recherche",
+        "status": "N00_redaction",
         "selected_lesson": {
           "code": "N00",
           "title": "Syndrome néphritique aigu",
@@ -3163,14 +3163,10 @@
           "n04_local_assets": 5
         },
         "current_counts": {
-          "selected_source_readings": 0,
-          "exact_swiss_FIs": 0,
-          "science_tabs": 0,
-          "semiology_sections": 0,
-          "original_figures": 0,
-          "figure_occurrences": 0,
-          "monograph_points": 0,
-          "medina_rubrics": 0
+          "sections_cliniques_redigees": 14,
+          "lectures_ciblees": 20,
+          "figures_nouvelles_acquises": 3,
+          "tests_finaux": 0
         },
         "delivery": {
           "folder": "/workspace/Medina-nephrologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE",
@@ -3346,16 +3342,13 @@
           }
         ],
         "current_limits": [
-          "Auto-relectures IA, aucune certification clinique.",
-          "Gomme rénale tertiaire : pas de sémiologie spécifique documentée dans recommandations lues.",
-          "Disponibilité suisse du praziquantel à confirmer ; RCP français explicitement étranger.",
-          "Indocid-Retard ne représente pas un produit pédiatrique autorisé pour cystinose.",
-          "Aperçu autonome testé, pas de déploiement main."
+          "Rédaction encore incomplète : sciences, examens, pharmacologie, fenêtres et glossaire en cours.",
+          "Aucune revue finale ni test de l’aperçu effectués ; aucune certification clinique."
         ]
       },
-      "activity_age_seconds": 520,
+      "activity_age_seconds": 541,
       "activity_fresh": true,
-      "sections_per_hour": 0.0,
+      "sections_per_hour": 34.24,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -3395,15 +3388,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C86-INTEGRATE"
       ],
       "started_at": "2026-11-02T03:26:38+00:00",
-      "activity_at": "2026-11-02T03:44:32+00:00",
-      "message": "C86 : plan de révision et constats persistés ; rédaction des corrections, six sciences et fenêtres. Sources CH/EU vérifiées par sections ; aucune validation médicale revendiquée.",
+      "activity_at": "2026-11-02T03:54:26+00:00",
+      "message": "C86 : 36 fenêtres explicatives réécrites dans les modules d’auteur, dont trois FI détaillées et HLH/RCD-II. Dénominateur Elzonris corrigé : taux 18 % sur 225 hémopathies, sous-groupe BPDCN 19/89. Six sciences en rédaction.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 3,
       "receipt_sha256": "f64e830a81691c3a42ec5479b5a72932ea6637bca8b9d027142815e23712657b",
       "brief": {
         "specialty": "Hématologie",
@@ -3735,9 +3728,9 @@
           }
         ]
       },
-      "activity_age_seconds": 186,
+      "activity_age_seconds": 192,
       "activity_fresh": true,
-      "sections_per_hour": 0.0,
+      "sections_per_hour": 5.81,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
@@ -4559,6 +4552,53 @@
       "agent": "astra_endocrinologie",
       "stage": "recherche",
       "message": "E02 : six fichiers existants relus ; FI Euthyrox complète et composition Elevit vérifiées. Sources HAS, RCOG, ETA pédiatrique, HTA suisse et essais lus avec limites par population ; préparation des corrections de seuils et de causalité."
+    },
+    {
+      "at": "2026-11-02T03:47:37+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T03:48:37+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "redaction",
+      "message": "N00 : 14 sections cliniques rédigées en a/b avec annexe morphologique et preuves ciblées ; sciences, examens, pharmacologie, fenêtres et revue finale encore à compléter."
+    },
+    {
+      "at": "2026-11-02T03:49:14+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "redaction",
+      "message": "G05 : parties cliniques 0–6 réécrites ; six sciences et neuf sections sémiologiques sauvegardées ; compléments sources rares et pharmacologie en cours, aperçu final non encore construit."
+    },
+    {
+      "at": "2026-11-02T03:49:43+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "redaction",
+      "message": "E02 : matrice préalable de 20 rubriques et 24 références établie, porte Betta vérité passée. Corrections des divergences HAS/RCOG/FI et développement de six sciences et neuf sections sémiologiques en cours."
+    },
+    {
+      "at": "2026-11-02T03:53:55+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T03:54:26+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "redaction",
+      "message": "C86 : 36 fenêtres explicatives réécrites dans les modules d’auteur, dont trois FI détaillées et HLH/RCD-II. Dénominateur Elzonris corrigé : taux 18 % sur 225 hémopathies, sous-groupe BPDCN 19/89. Six sciences en rédaction."
+    },
+    {
+      "at": "2026-11-02T03:57:19+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "redaction",
+      "message": "E02 : clinique enrichie, divergences grossesse/HAS/RCOG explicitées, six sciences et neuf rubriques sémiologiques sauvegardées. Original anatomique 2013 et micrographie réelle réutilisés avec licence propre et annotations HTML. Réconciliation des fenêtres, pharmacologie et quiz encore en cours."
     }
   ],
   "cache": {
@@ -11431,7 +11471,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T03:47:37+00:00",
+    "observed_at": "2026-11-02T03:57:37+00:00",
     "lessons": [
       {
         "code": "E00",
