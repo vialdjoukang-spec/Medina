@@ -1,0 +1,6 @@
+{
+  "at": "2026-11-02T15:52:06.161858+00:00",
+  "message": "AI session guard: Mission worktree must start clean",
+  "cause": "Prestart evidence and redirected empty receipt were created inside reserved worktree before start; evidence preserved outside worktree, no course changed.",
+  "recovery": "Move prestart metadata to own transition directory, obtain actual start receipt outside worktree, then copy evidence back only after success."
+}

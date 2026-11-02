@@ -1,4 +1,4 @@
-"""Abréviations G21 (cycle Betta 35) ; ajouts conditionnels, sans mutation des glossaires existants."""
+"""Abréviations G21 (Alpha77 ; auto-relecture Sol-Neurologie-G21) ; ajouts conditionnels, sans mutation des glossaires existants."""
 from pathlib import Path
 import importlib
 _existing = {}
@@ -13,27 +13,12 @@ G = {}
 def add_if_absent(key, letters, full, definition, window=None):
     if key not in _existing:
         G[key] = {'lit': [list(x) for x in letters], 'full': full, 'def': '<p>' + definition + '</p>', 'ref': window}
-add_if_absent('MDS', [('M','Movement (des mouvements)'),('D','Disorder (troubles)'),('S','Society (société)')],
-              'Movement Disorder Society',
-              'Cette société internationale a publié en 2015 les critères cliniques de diagnostic de la maladie de Parkinson ; le parkinsonisme moteur y associe une bradykinésie à un tremblement de repos ou à une rigidité.', 'g21-mds')
-add_if_absent('DaTSCAN', [('DaT','Dopamine Transporter (transporteur de la dopamine)'),('SCAN','scintigraphie, de l’anglais scan')],
-              'Scintigraphie du transporteur de la dopamine (ioflupane marqué à l’iode 123)',
-              'Cet examen d’imagerie nucléaire visualise la perte de terminaisons dopaminergiques striatales. Il est normal dans le parkinsonisme médicamenteux et anormal dans la perte présynaptique.', 'g21-datscan')
-add_if_absent('ElViS', [('El','Electronic (électronique)'),('Vi','Vigilance'),('S','System (système)')],
-              'Système électronique d’annonce des effets indésirables de Swissmedic',
-              'Les professionnels de santé suisses y déclarent les effets indésirables des médicaments. Le développement littéral est reconstitué à titre pédagogique ; le nom officiel est ElViS.', 'g21-elvis')
-add_if_absent('STRIVE', [('STRIVE','STandards for ReportIng Vascular changes on nEuroimaging (normes de description des lésions vasculaires en neuro-imagerie)')],
-              'Normes de description des lésions vasculaires en neuro-imagerie',
-              'Ces critères internationaux d’imagerie décrivent les lésions des petits vaisseaux cérébraux ; la recommandation de Rektor 2018 les utilise pour l’IRM du parkinsonisme vasculaire.', 'g21-vasc')
-add_if_absent('CIM', [('C','Classification'),('I','Internationale des'),('M','Maladies')],
-              'Classification internationale des maladies',
-              'Cette classification attribue un code à chaque diagnostic. Le cours utilise la version CIM-10-GM 2024.', None)
-add_if_absent('G21.4', [('G21','syndrome parkinsonien secondaire (CIM-10-GM)'),('.4','maladie de Parkinson vasculaire, ou syndrome parkinsonien vasculaire')],
-              'Code CIM-10-GM 2024 : syndrome parkinsonien vasculaire',
-              'Le libellé français parle de « maladie de Parkinson vasculaire », le libellé allemand de syndrome ; il ne s’agit pas d’une maladie de Parkinson.', 'g21-vasc')
-add_if_absent('G25.1', [('G25','autres troubles extrapyramidaux et mouvements anormaux'),('.1','tremblement médicamenteux')],
-              'Code CIM-10-GM 2024 : tremblement médicamenteux',
-              'Ce code voisin de G21 s’applique au tremblement dû à un médicament.', None)
-add_if_absent('Schönfeldt-Lecuona', [('Schönfeldt-Lecuona','nom de famille composé d’un auteur, non une abréviation')],
-              'Schönfeldt-Lecuona, auteur de séries sur le syndrome malin',
-              'Ce psychiatre est coauteur des analyses de 2020 sur le traitement du syndrome malin des neuroleptiques (série d’Ulm et comparaison de recommandations).', 'g21-delphi')
+add_if_absent('DAT', [('DA', 'dopamine'), ('T', 'transporter : transporteur')], 'Transporteur de la dopamine', 'Protéine présynaptique explorée par imagerie ; distincte du récepteur D2. Une préservation peut soutenir une forme surtout postsynaptique, sans résoudre seule toutes les causes.', 'g21-dat')
+add_if_absent('SMN', [('S', 'syndrome'), ('M', 'malin'), ('N', 'des neuroleptiques')], 'Syndrome malin des neuroleptiques', 'Urgence médicamenteuse potentiellement grave ; présentation variable et absence de test unique spécifique.', 'g21-nms')
+add_if_absent('CK', [('C', 'créatine'), ('K', 'kinase')], 'Créatine kinase', 'Enzyme pouvant augmenter lors de lésion musculaire ; ni confirmation ni exclusion isolée du syndrome malin.', 'g21-ck')
+add_if_absent('GPi', [('GP', 'globus pallidus'), ('i', 'interne')], 'Segment interne du globus pallidus', 'Noyau de sortie dans le modèle de boucle motrice ; différent du segment externe GPe.', 'g21-network')
+add_if_absent('GPe', [('GP', 'globus pallidus'), ('e', 'externe')], 'Segment externe du globus pallidus', 'Structure pallidale impliquée dans les boucles de régulation motrice.', 'g21-network')
+add_if_absent('STN', [('ST', 'subthalamic : sous-thalamique'), ('N', 'nucleus : noyau')], 'Noyau sous-thalamique', 'Structure nommée sur la planche humaine de référence, distincte de la substance noire.', 'g21-network')
+add_if_absent('SN', [('S', 'substantia : substance'), ('N', 'nigra : noire')], 'Substance noire', 'Structure mésencéphalique de la boucle ; une image pigmentée ne mesure pas la dopamine.', 'g21-dopamine')
+add_if_absent('LIQ', [('LIQ', 'désignation de forme dispersible du produit')], 'Madopar LIQ', 'Comprimé dispersible avec quantité propre de lévodopa et de bensérazide ; ne pas assimiler la dispersion à une solution à concentration fixe.', 'g21-calculation')
+add_if_absent('CYP3A4', [('CYP', 'cytochrome P450'), ('3A4', 'désignation de famille, sous-famille et isoforme')], 'Cytochrome P450 3A4', 'Enzyme impliquée dans le métabolisme de bromocriptine ; inhibiteurs puissants ou modérés contre-indiqués avec Parlodel selon FI mai 2020.', 'g21-bromocriptine')
