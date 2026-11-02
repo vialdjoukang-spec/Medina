@@ -43,8 +43,11 @@ Le reçu d'acquisition réel est ensuite requis pour ouvrir une leçon.
 
 Avant achèvement : 14 points monographiques reliés aux passages sources, matrice
 20 rubriques Medina, quatre onglets, sémiologie, FI suisses exactes, provenance
-et droits des figures, annotations, contrôles ordinateur/mobile, revue médicale
-et linguistique distinctes avec corrections relues. Les contrôles de balises ne
+et droits des figures, annotations, contrôles ordinateur/mobile, revues médicale
+et linguistique attribuées avec corrections relues. Le contrat SSP V2 §7 accepte
+l'auto-relecture et interdit de la nommer indépendante : le mode `self_review`
+est donc explicite. Une vérification distincte ciblée reste proportionnée au risque.
+Les contrôles de balises ne
 remplacent jamais ces revues. Une lacune bloque la clôture, pas sa déclaration.
 
 ## Économie et métriques

@@ -277,6 +277,19 @@ class LessonContractCase(unittest.TestCase):
         self.assertTrue(any('Revue distincte' in e for e in result['errors']))
         self.assertTrue(any('Réserves' in e for e in result['errors']))
 
+    def test_explicit_self_review_is_honest_and_never_an_independent_certification(self):
+        for review in self.manifest['reviews'].values():
+            review['reviewer']='test-author';review['mode']='self_review'
+        result=self.validate()
+        self.assertTrue(result['technical_contract_pass'],result['errors'])
+        self.assertFalse(result['clinical_certification'])
+        self.assertFalse(result['publication_allowed'])
+        self.assertEqual(set(result['review_modes'].values()),{'self_review'})
+
+    def test_unknown_review_mode_cannot_bypass_identity_check(self):
+        self.manifest['reviews']['medical']['mode']='approved_by_magic'
+        self.assertFalse(self.validate()['technical_contract_pass'])
+
     def test_semiology_boolean_or_unresolved_sections_rejected(self):
         for semio in (True, {'section_anchors': ['missing'] * 9}):
             with self.subTest(semio=semio):

@@ -5,10 +5,10 @@
     "astra_neurologie": {
       "lesson": "G02",
       "worktree": "/workspace/Medina-neurologie",
-      "stage": "redaction",
+      "stage": "recherche",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T01:43:27+00:00",
-      "message": "19 lectures sourcées indexées; seuils LCR, interaction brivudine et limites cohortes corrigés; candidoseSNC2025 ajoutée avec erratum explicitement ouvert.",
+      "activity_at": "2026-11-02T02:15:48+00:00",
+      "message": "Paquet G02 a35d56e7 poussé; levée ciblée réserve WHO2024 via API publique IRIS DSpace, original en cours de récupération; autres réserves maintenues.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -31,8 +31,8 @@
       "worktree": "/workspace/Medina-endocrinologie",
       "stage": "verification",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T01:45:10+00:00",
-      "message": "Audit sciences PASS (6 disciplines, 7 figures). Build natif S05 réussi ; contrôles navigateurs et cohérence de toutes les surfaces en cours. Résumés hérités relus séparément, deux limites bibliographiques identifiées.",
+      "activity_at": "2026-11-02T02:11:36+00:00",
+      "message": "Contrôle statique PASS : 56 fenêtres reliées, 52 identifiants uniques, 26 cibles Pareto, 11 474 vers 18 191 mots toutes surfaces. Collision TPO avec thrombopoïétine corrigée localement ; finalisation du paquet natif et matrice de couverture.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -55,8 +55,8 @@
       "worktree": "/workspace/Medina-nephrologie",
       "stage": "verification",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T01:41:45+00:00",
-      "message": "Six disciplines scientifiques substantielles désormais intégrées : audit PASS, 1779→5343 mots. Test statique N04 PASS (fenêtres/glossaire/styles/classes). Aperçu natif construit ; contrôle navigateur local en cours, portée set_content explicitée.",
+      "activity_at": "2026-11-02T02:11:01+00:00",
+      "message": "Contrôles ciblés des22FI suisses et éléments cliniques terminés ; corrections croisées néphrotique/FSGS, anticoagulation, Sortis pédiatrique, Sandimmun, Endoxan et Spiricort. Registre39passages actuels +113preuves héritées attribuées, matrices14/20 persistées. Test statique PASS, capture finale autonome en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -423,6 +423,40 @@
       "action": "watch",
       "ok": true,
       "findings": 3
+    },
+    {
+      "at": "2026-11-02T02:11:01+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "verification",
+      "message": "Contrôles ciblés des22FI suisses et éléments cliniques terminés ; corrections croisées néphrotique/FSGS, anticoagulation, Sortis pédiatrique, Sandimmun, Endoxan et Spiricort. Registre39passages actuels +113preuves héritées attribuées, matrices14/20 persistées. Test statique PASS, capture finale autonome en cours."
+    },
+    {
+      "at": "2026-11-02T02:11:29+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "verification",
+      "message": "G02 bundle autonome construit,21lectures,14ancres/20rubriques; tests horsréseau1440/390 en cours, réserves médicales explicitement ouvertes."
+    },
+    {
+      "at": "2026-11-02T02:11:36+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "verification",
+      "message": "Contrôle statique PASS : 56 fenêtres reliées, 52 identifiants uniques, 26 cibles Pareto, 11 474 vers 18 191 mots toutes surfaces. Collision TPO avec thrombopoïétine corrigée localement ; finalisation du paquet natif et matrice de couverture."
+    },
+    {
+      "at": "2026-11-02T02:15:48+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "Paquet G02 a35d56e7 poussé; levée ciblée réserve WHO2024 via API publique IRIS DSpace, original en cours de récupération; autres réserves maintenues."
+    },
+    {
+      "at": "2026-11-02T02:17:41+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
     }
   ],
   "cache": {

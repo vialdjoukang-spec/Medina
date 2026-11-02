@@ -228,7 +228,8 @@ class Harness:
                   'base_sha': self.config['base_sha'], 'gate': self.readiness(), 'watch': watch,
                   'tests': load(self.runtime / 'tests.json', {}), 'agents': [], 'events': state.get('events', []),
                   'cache': state.get('cache', {}), 'monitor': load(self.home / 'monitor.json', {}),
-                  'prompt': load(self.home / 'prompt-lock.json', {})}
+                  'prompt': load(self.home / 'prompt-lock.json', {}),
+                  'plan': load(self.home / 'plan.json', {})}
         for spec in self.config['agents']:
             a = {**spec, **state.get('agents', {}).get(spec['id'], {})}
             a['brief'] = load(self.home / 'agents' / spec['specialty'] / 'brief.json', {})
@@ -271,15 +272,22 @@ def validate_lesson(folder):
     elif any(not re.search(r'id=[\"\']'+re.escape(anchor)+r'[\"\']', content) for anchor in semio['section_anchors']):
         errors.append('Sémiologie: ancres absentes')
     if manifest.get('blocking_findings', 1): errors.append('Réserves bloquantes non levées')
-    # Never substitute structure for independent medicine/language/visual reviews.
+    # Current SSP V2 permits attributed self-review. Never call it independent.
     for kind in ('medical', 'language', 'visual_desktop', 'visual_mobile'):
         review = manifest.get('reviews', {}).get(kind, {})
-        if not review.get('path') or not review.get('reviewer') or review.get('reviewer') == manifest.get('author'):
+        if not review.get('path') or not review.get('reviewer'):
             errors.append('Revue distincte absente: '+kind); continue
+        mode=review.get('mode','independent')
+        if mode not in ('self_review','independent'):
+            errors.append('Mode de revue inconnu: '+kind); continue
+        if review.get('reviewer') == manifest.get('author') and mode != 'self_review':
+            errors.append('Revue distincte absente; auto-relecture à déclarer explicitement: '+kind); continue
         p = inside(folder, review['path'])
         if not p.is_file() or digest(p.read_bytes()) != review.get('sha256'): errors.append('Preuve de revue absente: '+kind)
     return {'technical_contract_pass': not errors, 'errors': errors, 'clinical_certification': False,
-            'publication_allowed': False, 'reason': 'Une vérification de fichiers ne certifie pas la médecine; revue utilisateur requise avant PR main.'}
+            'publication_allowed': False,
+            'review_modes': {k:v.get('mode','independent') for k,v in manifest.get('reviews',{}).items()},
+            'reason': 'Une vérification de fichiers ou auto-relecture ne certifie pas la médecine; présentation utilisateur requise avant PR main.'}
 
 def render(data, path):
     template = (HERE/'dashboard-template.html').read_text()
