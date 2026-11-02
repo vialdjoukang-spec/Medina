@@ -21,7 +21,7 @@ def a(key, letters, full, definition, window=None):
         G[key] = {'lit': [list(x) for x in letters], 'full': full, 'def': '<p>' + definition + '</p>', 'ref': window}
 
 a('ETA', [('E','European'),('T','Thyroid'),('A','Association')], 'European Thyroid Association (Association européenne de la thyroïde)',
-  'Société savante européenne dont les recommandations de 2017 (échographie), 2021 (produits de contraste iodés) et 2023 (nodules thyroïdiens) fondent la conduite de cette leçon, faute de recommandation suisse de société savante lue.', 'e01-sources-guides')
+  'Société savante européenne dont les recommandations de 2017 (échographie), 2021 (produits de contraste iodés) et 2023 (nodules thyroïdiens) fondent la conduite de cette leçon, en complément des sources suisses de contexte, de radioprotection et des informations professionnelles exactes.', 'e01-sources-guides')
 a('EU-TIRADS', [('EU','European (européen)'),('TI','THYROID (de la thyroïde)'),('RADS','Imaging Reporting And Data System (système de compte rendu et de données d’imagerie)')], 'Système européen de compte rendu échographique des nodules thyroïdiens',
   'Classification de l’<i>European Thyroid Association</i> en cinq catégories selon l’aspect échographique, avec risque estimé de malignité et seuil de taille de ponction.', 'e01-eutirads')
 a('UNICEF', [('U','United'),('N','Nations'),('I','International'),('C','Children’s'),('E','Emergency'),('F','Fund')], 'Fonds des Nations unies pour l’enfance',
@@ -29,7 +29,7 @@ a('UNICEF', [('U','United'),('N','Nations'),('I','International'),('C','Children
 a('ICCIDD', [('I','International'),('C','Council for the'),('C','Control of'),('I','Iodine'),('D','Deficiency'),('D','Disorders')], 'Conseil international de lutte contre les troubles dus à la carence iodée',
   'Ce conseil a co-publié avec l’OMS et l’UNICEF le guide d’évaluation des troubles dus à la carence iodée, 3e édition, 2007.', 'e01-nis')
 a('LISA', [('LISA','nom de l’essai allemand lévothyroxine et iode ; aucun développement littéral fourni par la source')], 'Essai LISA (lévothyroxine et iode)',
-  'Essai randomisé contre placebo, 1024 patients euthyroïdiens porteurs de nodules, sur un an : lévothyroxine, iode ou association.', 'e01-levothyroxine')
+  'Essai randomisé contre placebo, essai dont le résumé annonce 1024 participants, le texte 1020 randomisés et l’analyse principale 794 adultes euthyroïdiens porteurs de nodules, sur un an : lévothyroxine, iode ou association.', 'e01-levothyroxine')
 a('TRH', [('T','Thyrotropin'),('R','Releasing'),('H','Hormone')], 'Hormone de libération de la thyrotropine',
   'Peptide hypothalamique qui stimule la sécrétion de TSH. Un test à la TRH, ou une scintigraphie de suppression, est cité par l’information professionnelle suisse d’Euthyrox® pour exclure une autonomie avant le traitement.', 'e01-levothyroxine')
 a('Jod-Basedow', [('Jod','iode en allemand'),('Basedow','Carl von Basedow, médecin allemand')], 'Phénomène de Jod-Basedow',
