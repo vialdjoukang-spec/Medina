@@ -1,0 +1,13 @@
+from pathlib import Path
+from bs4 import BeautifulSoup
+import re,json,hashlib,datetime
+R=Path(__file__).resolve().parents[5];D=Path(__file__).resolve().parent
+import sys;sys.path.insert(0,str(R));import build_medina as b
+files=sorted((R/'chapters/E25').glob('*.html'));s=''.join(p.read_text() for p in files);so=BeautifulSoup(s,'html.parser');ids=re.findall(r'\bid="([^"]+)"',s);assert len(ids)==len(set(ids));assert not so.select('a a,button button');keys=set(re.findall(r'\bdata-k="([^"]+)"',s));pops=set(re.findall(r'\bdata-pop="([^"]+)"',s));assert keys==pops,(keys-pops,pops-keys);assert len(so.select('[data-semiology]'))==9;assert len(so.select('button[data-s]'))==6;assert len(so.select('[data-semiology-clinical="E25"]'))==1
+tab=so.select_one('#pS button[data-s]');assert tab['id']=='e25-tab-semio' and tab['data-s']=='e25-s-semio' and tab.string=='Sémiologie fondamentale et analytique' and tab['aria-selected']=='true';panel=so.select_one('#e25-s-semio');assert panel['role']=='tabpanel' and panel['aria-labelledby']=='e25-tab-semio' and not panel.has_attr('hidden');assert panel.select_one('.ilot h3').string=='Pour la leçon : quelle est la sémiologie fondamentale et analytique ?';assert all(x.select_one('h3') for x in panel.select('[data-semiology]'));assert panel.select_one('[data-semiology="sources"] a[href^="https://"]');
+findings=b.audit(b.wrap_html(s),'E25');assert findings=={},findings
+rendered=b.wrap_html(b.transform(s));forbidden=['S1','S3','IA','IC','A1','A2','A3','AA','CMT','TH','T2','RCP','NovoRapid','KCl','CYP21A2','CYP21A1P','CYP11B1','CYP17A1','POR','XX','Solu-Cortef','IM','IV'];assert not [k for k in forbidden if 'data-ab="'+k+'"' in rendered]
+report={'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'result':'passed','base_sha':'8a512893acbab9caa0dcfdd0e8682a44ea72fda6','source_files':6,'unique_ids':len(ids),'window_references':len(keys),'windows':len(pops),'science_tabs':6,'semiology_sections':9,'quizzes':len(so.select('.quiz')),'abbreviation_findings':findings,'known_homonyms_or_unrelated_drug_windows_suppressed':forbidden,'strict_semiology_structure':'passed','nested_anchors':0,'inline_styles':len(re.findall(r'\sstyle=',s)),'original_images':{},'source_files_sha256':{str(p.relative_to(R)):hashlib.sha256(p.read_bytes()).hexdigest() for p in files},'clinical_certification':False}
+for im in so.select('img'):
+ p=R/im['src'];report['original_images'][im['src']]=hashlib.sha256(p.read_bytes()).hexdigest();assert p.read_bytes()==Path('/tmp/medina-source-cache/endocrinologie/E25/adrenal-openstax2013.jpg').read_bytes()
+(D/'static-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps(report,ensure_ascii=False,indent=2))

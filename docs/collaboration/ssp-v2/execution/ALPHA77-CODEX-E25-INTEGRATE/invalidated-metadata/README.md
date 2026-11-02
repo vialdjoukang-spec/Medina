@@ -1,0 +1,1 @@
+Premier paquet rejeté techniquement : explications de couverture trop courtes. Ces empreintes sont invalidées, ne constituent pas la livraison finale. Aucun contenu médical ni aperçu changé ; voir ../binding-invalidation.json.

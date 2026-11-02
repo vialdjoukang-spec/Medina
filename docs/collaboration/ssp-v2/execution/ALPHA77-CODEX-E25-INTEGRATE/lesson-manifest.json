@@ -1,0 +1,910 @@
+{
+  "schema_version": 1,
+  "code": "E25",
+  "lesson": "E25",
+  "author": "sol_endocrinologie",
+  "harness_agent": "astra_endocrinologie",
+  "specialty": "Endocrinologie et métabolisme",
+  "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+  "monograph": [
+    {
+      "point": 1,
+      "label": "Définition",
+      "anchor": "e25-2",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "coverage_explanation": "La définition précise le noyau enzymatique, les formes classique avec ou sans perte de sel, la forme non classique et les autres voies ; les libellés CIM ne deviennent pas un mécanisme unique."
+    },
+    {
+      "point": 2,
+      "label": "Épidémiologie",
+      "anchor": "e25-3",
+      "sources": [
+        "S4",
+        "S7",
+        "S9",
+        "S22"
+      ],
+      "coverage_explanation": "Les trois chiffres conservent leurs dénominateurs : nouveau-nés du dépistage suisse, filles 46,XX de la cohorte et femmes hyperandrogéniques sélectionnées ; aucune incidence E25 entière n’est inventée."
+    },
+    {
+      "point": 3,
+      "label": "Physiopathologie",
+      "anchor": "e25-4",
+      "sources": [
+        "S3",
+        "S19"
+      ],
+      "coverage_explanation": "Le cours relie cortex/médulla et zonation à cortisol, aldostérone, androgènes et catécholamines, puis aux pertes hydrosodées, à l’hypoglycémie et aux profils hypertensifs selon la voie."
+    },
+    {
+      "point": 4,
+      "label": "Démarche clinique",
+      "anchor": "e25-8",
+      "sources": [
+        "S3",
+        "S21",
+        "S22"
+      ],
+      "coverage_explanation": "La démarche évalue la gravité, documente contexte et traitement, choisit le profil analytique et confirme selon méthode ; un résultat génétique ne retarde pas le remplacement urgent."
+    },
+    {
+      "point": 5,
+      "label": "Anamnèse",
+      "anchor": "e25-6",
+      "sources": [
+        "S3",
+        "S10",
+        "S21"
+      ],
+      "coverage_explanation": "L’anamnèse précise âge, alimentation, vomissements, courbe pondérale/staturale, puberté, famille, fertilité et prise réelle ; accès au kit et obstacles au suivi sont interrogés avec respect."
+    },
+    {
+      "point": 6,
+      "label": "Examen",
+      "anchor": "e25-7",
+      "sources": [
+        "S3",
+        "S21"
+      ],
+      "coverage_explanation": "L’examen décrit constantes, perfusion, hydratation, pression adaptée et courbes ; consentement/intimité et limites de la palpation testiculaire ou de l’aspect externe sont explicités."
+    },
+    {
+      "point": 7,
+      "label": "Syndromes",
+      "anchor": "e25-9",
+      "sources": [
+        "S3",
+        "S21"
+      ],
+      "coverage_explanation": "La crise cortisolaire avec ou sans perte de sel est distinguée des profils à effet minéralocorticoïde hypertensif ; absence d’anomalie génitale ou de trouble potassique ne clôt pas l’urgence."
+    },
+    {
+      "point": 8,
+      "label": "Diagnostic positif",
+      "anchor": "e25-8",
+      "sources": [
+        "S3",
+        "S4",
+        "S22"
+      ],
+      "coverage_explanation": "Le dépistage néonatal élevé n’est pas une confirmation, particulièrement chez le prématuré ; les seuils historiques non classiques gardent méthode, population et distinction du cortisol."
+    },
+    {
+      "point": 9,
+      "label": "Explorations",
+      "anchor": "e25-e-2",
+      "sources": [
+        "S3",
+        "S18",
+        "S22"
+      ],
+      "coverage_explanation": "Les examens répondent à des questions différentes : profil stéroïdien, réserve cortisolaire, copie et phase génétiques, âge osseux et imagerie testiculaire ; leurs limites sont nommées."
+    },
+    {
+      "point": 10,
+      "label": "Arbre diagnostique",
+      "anchor": "e25-8",
+      "sources": [
+        "S3",
+        "S21",
+        "S22"
+      ],
+      "coverage_explanation": "La séquence pratique place sécurité et prélèvements sans retard avant profil, stimulation éventuelle et confirmation génétique ; les différentiels rapides ou discordants restent ouverts."
+    },
+    {
+      "point": 11,
+      "label": "Prise en charge",
+      "anchor": "e25-10",
+      "sources": [
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S21"
+      ],
+      "coverage_explanation": "La prise en charge distingue glucocorticoïde, minéralocorticoïde et agent diagnostique ; formulations, voies et populations des FI suisses sont confrontées au consensus sans dose composite."
+    },
+    {
+      "point": 12,
+      "label": "Prévention et suivi",
+      "anchor": "e25-11",
+      "sources": [
+        "S3",
+        "S10",
+        "S21"
+      ],
+      "coverage_explanation": "Le suivi associe croissance, poids, pression, hormones chronométrées et risques gonadiques/métaboliques ; prévention de crise, formation au kit, maladie et transition sont préparées."
+    },
+    {
+      "point": 13,
+      "label": "Points clés",
+      "anchor": "e25-14",
+      "sources": [
+        "S4",
+        "S14",
+        "S17",
+        "S18",
+        "S20",
+        "S21"
+      ],
+      "coverage_explanation": "Les points clés rassemblent critères, unités et populations : seuil de précurseur différent de réserve cortisolaire, mg/m²/j différent de mg/kg/injection et µg différent de mg."
+    },
+    {
+      "point": 14,
+      "label": "Pièges",
+      "anchor": "e25-14",
+      "sources": [
+        "S3",
+        "S21"
+      ],
+      "coverage_explanation": "Les pièges sont reliés à une conséquence : dose néonatale uniforme, dépistage pris pour confirmation, suppression excessive des précurseurs ou multiplication injustifiée du minéralocorticoïde."
+    }
+  ],
+  "matrix20": [
+    {
+      "point": 1,
+      "label": "Question clinique et fédéral",
+      "status": "covered",
+      "evidence": [
+        "review-inputs/E25-source.html#e25-1"
+      ],
+      "source_ids": [
+        "S20",
+        "S21"
+      ],
+      "coverage_note": "Connaissances disponibles et limites explicites ; une absence de donnée n’est pas transformée en donnée établie."
+    },
+    {
+      "point": 2,
+      "label": "Définition et périmètre",
+      "status": "covered",
+      "evidence": [
+        "review-inputs/E25-source.html#e25-2",
+        "review-inputs/E25-source.html#e25-13"
+      ],
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "coverage_note": "Connaissances disponibles et limites explicites ; une absence de donnée n’est pas transformée en donnée établie."
+    },
+    {
+      "point": 3,
+      "label": "Classification",
+      "status": "covered",
+      "evidence": [
+        "review-inputs/E25-source.html#e25-2",
+        "review-inputs/E25-source.html#e25-5"
+      ],
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "coverage_note": "Connaissances disponibles et limites explicites ; une absence de donnée n’est pas transformée en donnée établie."
+    },
+    {
+      "point": 4,
+      "label": "Épidémiologie suisse puis Europe",
+      "status": "covered",
+      "evidence": [
+        "review-inputs/E25-source.html#e25-3"
+      ],
+      "source_ids": [
+        "S4",
+        "S7",
+        "S9",
+        "S22"
+      ],
+      "coverage_note": "Connaissances disponibles et limites explicites ; une absence de donnée n’est pas transformée en donnée établie."
+    },
+    {
+      "point": 5,
+      "label": "Normal puis pathologique",
+      "status": "covered",
+      "evidence": [
+        "review-inputs/E25-source.html#e25-4",
+        "review-inputs/E25-source.html#e25-s-anat-cours",
+        "review-inputs/E25-source.html#e25-s-physio-cours"
+      ],
+      "source_ids": [
+        "S3",
+        "S19"
+      ],
+      "coverage_note": "Connaissances disponibles et limites explicites ; une absence de donnée n’est pas transformée en donnée établie."
+    },
+    {
+      "point": 6,
+      "label": "Étiologies et risques",
+      "status": "covered",
+      "evidence": [
+        "review-inputs/E25-source.html#e25-5"
+      ],
+      "source_ids": [
+        "S3",
+        "S22"
+      ],
+      "coverage_note": "Connaissances disponibles et limites explicites ; une absence de donnée n’est pas transformée en donnée établie."
+    },
+    {
+      "point": 7,
+      "label": "Anamnèse",
+      "status": "covered",
+      "evidence": [
+        "review-inputs/E25-source.html#e25-6"
+      ],
+      "source_ids": [
+        "S3",
+        "S10",
+        "S21"
+      ],
+      "coverage_note": "Connaissances disponibles et limites explicites ; une absence de donnée n’est pas transformée en donnée établie."
+    },
+    {
+      "point": 8,
+      "label": "Examen et performance",
+      "status": "covered",
+      "evidence": [
+        "review-inputs/E25-source.html#e25-7",
+        "review-inputs/E25-source.html#e25-semio-limits"
+      ],
+      "source_ids": [
+        "S3",
+        "S21"
+      ],
+      "coverage_note": "Connaissances disponibles et limites explicites ; une absence de donnée n’est pas transformée en donnée établie."
+    },
+    {
+      "point": 9,
+      "label": "Gravité et urgences",
+      "status": "covered",
+      "evidence": [
+        "review-inputs/E25-source.html#e25-9"
+      ],
+      "source_ids": [
+        "S16",
+        "S21"
+      ],
+      "coverage_note": "Connaissances disponibles et limites explicites ; une absence de donnée n’est pas transformée en donnée établie."
+    },
+    {
+      "point": 10,
+      "label": "Explorations",
+      "status": "covered",
+      "evidence": [
+        "review-inputs/E25-source.html#e25-e-1",
+        "review-inputs/E25-source.html#e25-e-2",
+        "review-inputs/E25-source.html#e25-e-3"
+      ],
+      "source_ids": [
+        "S3",
+        "S4",
+        "S18",
+        "S22"
+      ],
+      "coverage_note": "Connaissances disponibles et limites explicites ; une absence de donnée n’est pas transformée en donnée établie."
+    },
+    {
+      "point": 11,
+      "label": "Différentiels",
+      "status": "covered",
+      "evidence": [
+        "review-inputs/E25-source.html#e25-5",
+        "review-inputs/E25-source.html#e25-semio-differentials"
+      ],
+      "source_ids": [
+        "S3",
+        "S4",
+        "S21"
+      ],
+      "coverage_note": "Connaissances disponibles et limites explicites ; une absence de donnée n’est pas transformée en donnée établie."
+    },
+    {
+      "point": 12,
+      "label": "Traitement suisse et FI",
+      "status": "covered",
+      "evidence": [
+        "review-inputs/E25-source.html#e25-10",
+        "review-inputs/E25-source.html#e25-p-2",
+        "review-inputs/E25-source.html#e25-p-3"
+      ],
+      "source_ids": [
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S21"
+      ],
+      "coverage_note": "Connaissances disponibles et limites explicites ; une absence de donnée n’est pas transformée en donnée établie."
+    },
+    {
+      "point": 13,
+      "label": "Complications et pronostic",
+      "status": "covered",
+      "evidence": [
+        "review-inputs/E25-source.html#e25-11"
+      ],
+      "source_ids": [
+        "S3",
+        "S11"
+      ],
+      "coverage_note": "Connaissances disponibles et limites explicites ; une absence de donnée n’est pas transformée en donnée établie."
+    },
+    {
+      "point": 14,
+      "label": "Prévention et suivi",
+      "status": "covered",
+      "evidence": [
+        "review-inputs/E25-source.html#e25-11",
+        "review-inputs/E25-source.html#e25-12"
+      ],
+      "source_ids": [
+        "S3",
+        "S10",
+        "S21"
+      ],
+      "coverage_note": "Connaissances disponibles et limites explicites ; une absence de donnée n’est pas transformée en donnée établie."
+    },
+    {
+      "point": 15,
+      "label": "Populations particulières",
+      "status": "covered",
+      "evidence": [
+        "review-inputs/E25-source.html#e25-12"
+      ],
+      "source_ids": [
+        "S3",
+        "S14",
+        "S17",
+        "S21"
+      ],
+      "coverage_note": "Connaissances disponibles et limites explicites ; une absence de donnée n’est pas transformée en donnée établie."
+    },
+    {
+      "point": 16,
+      "label": "Aspects suisses administratifs",
+      "status": "covered",
+      "evidence": [
+        "review-inputs/E25-source.html#e25-13"
+      ],
+      "source_ids": [
+        "S1",
+        "S8",
+        "S9",
+        "S22"
+      ],
+      "coverage_note": "Connaissances disponibles et limites explicites ; une absence de donnée n’est pas transformée en donnée établie."
+    },
+    {
+      "point": 17,
+      "label": "Critères formels",
+      "status": "covered",
+      "evidence": [
+        "review-inputs/E25-source.html#e25-8",
+        "review-inputs/E25-source.html#e25-14"
+      ],
+      "source_ids": [
+        "S3",
+        "S4",
+        "S22"
+      ],
+      "coverage_note": "Connaissances disponibles et limites explicites ; une absence de donnée n’est pas transformée en donnée établie."
+    },
+    {
+      "point": 18,
+      "label": "Paramètres chiffrés",
+      "status": "covered",
+      "evidence": [
+        "review-inputs/E25-source.html#e25-9",
+        "review-inputs/E25-source.html#e25-14",
+        "review-inputs/E25-source.html#e25-p-2",
+        "review-inputs/E25-source.html#e25-e-2"
+      ],
+      "source_ids": [
+        "S4",
+        "S14",
+        "S17",
+        "S18",
+        "S21"
+      ],
+      "coverage_note": "Connaissances disponibles et limites explicites ; une absence de donnée n’est pas transformée en donnée établie."
+    },
+    {
+      "point": 19,
+      "label": "Tous sous-codes",
+      "status": "covered",
+      "evidence": [
+        "review-inputs/E25-source.html#e25-13"
+      ],
+      "source_ids": [
+        "S1"
+      ],
+      "coverage_note": "Connaissances disponibles et limites explicites ; une absence de donnée n’est pas transformée en donnée établie."
+    },
+    {
+      "point": 20,
+      "label": "Fédéral et pièges",
+      "status": "covered",
+      "evidence": [
+        "review-inputs/E25-source.html#e25-1",
+        "review-inputs/E25-source.html#e25-14"
+      ],
+      "source_ids": [
+        "S20",
+        "S21"
+      ],
+      "coverage_note": "Connaissances disponibles et limites explicites ; une absence de donnée n’est pas transformée en donnée établie."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/32686265/master",
+      "publisher": "OFS Suisse",
+      "title": "CIM-10-GM E25 et subdivisions",
+      "version": "2024",
+      "read_at": "2026-11-02",
+      "section": "Toutes entrées E25 du catalogue local",
+      "passage": "E25.00 est classique, E25.01 tardive/non classique, E25.08 autre déficit enzymatique ; E25.8 ne reçoit pas automatiquement toute cause de virilisation.",
+      "passage_kind": "faithful_paraphrase",
+      "population": "Classification",
+      "limits": "Libellés locaux 2024, aucune certification administrative 2026.",
+      "source_content_sha256": "4a115e573b36bd6bc39871574cfa4fb55adbad4025fd0463afaf85fad55ecf1c",
+      "read_level": "section",
+      "reader": "sol_endocrinologie"
+    },
+    {
+      "id": "S3",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8755999/",
+      "publisher": "Claahsen-van der Grinten, Flück et coll., revue internationale avec auteurs suisses et européens",
+      "title": "Congenital adrenal hyperplasia—current insights in pathophysiology, diagnostics and management",
+      "version": "En ligne 2021 ; volume février 2022",
+      "read_at": "2026-11-02",
+      "section": "Physiologie et déficits enzymatiques ciblés ; diagnostic néonatal et biochimique ; traitement et surveillance enfants/adultes ; crise ; non classique ; prénatal ; psychosocial ; fertilité masculine",
+      "passage": "Cortisol diminué et ACTH accrue expliquent accumulation de précurseurs et hyperandrogénie. Remplacement et contrôle androgénique se confrontent à croissance et toxicité. Un résultat 17-hydroxyprogestérone dépend méthode, âge, prélèvement et traitement ; ne pas normaliser systématiquement tous les précurseurs.",
+      "passage_kind": "faithful_paraphrase",
+      "population": "Toutes formes, enfants et adultes",
+      "limits": "Lecture de sections, pas totalité de la longue revue ; recommandations Endocrine Society 2018 citées, confrontées à FI suisses et BSPED européen. Pas statut réglementaire 2026.",
+      "source_content_sha256": "bafd58ff60d1a385d8ef9e8ec59db6249763ffaa8aba96bfa992528e4d86f847",
+      "read_level": "section",
+      "reader": "sol_endocrinologie"
+    },
+    {
+      "id": "S4",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28582566/",
+      "publisher": "Carmina E, Dewailly D, Escobar-Morreale HF, Kelestimur F, Moran C, Oberfield S, Witchel SF, Azziz R.",
+      "title": "Non-classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency revisited: an update with a special focus on adolescent and adult women.",
+      "version": "2017",
+      "read_at": "2026-11-02",
+      "section": "Résumé publié et métadonnées PubMed/Europe PMC",
+      "passage": "Le seuil basal historique 6 nmol/L oriente le test, et 30 nmol/L basal ou stimulé soutient le diagnostic, selon méthode. La fréquence 4,2 % concerne les femmes avec excès androgénique sélectionnées.",
+      "passage_kind": "faithful_paraphrase",
+      "population": "Femmes avec hyperandrogénie",
+      "limits": "Revue systématique 2017, données jusqu’à octobre 2016 ; résumé seul, pas fondement unique de prescription.",
+      "source_content_sha256": "8ba9a61f0a3a08b3b2784804e7297cf124bca3e3e1f22e07f0dd82ec1d55fe42",
+      "read_level": "abstract",
+      "reader": "sol_endocrinologie"
+    },
+    {
+      "id": "S5",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30566904/",
+      "publisher": "Nordenström A, Falhammar H.",
+      "title": "MANAGEMENT OF ENDOCRINE DISEASE: Diagnosis and management of the patient with non-classic CAH due to 21-hydroxylase deficiency.",
+      "version": "2019",
+      "read_at": "2026-11-02",
+      "section": "Résumé publié et métadonnées PubMed/Europe PMC",
+      "passage": "La réponse de 17-hydroxyprogestérone à la stimulation et le génotypage confortent le diagnostic. Le glucocorticoïde peut induire une insuffisance secondaire et des risques métaboliques/osseux.",
+      "passage_kind": "faithful_paraphrase",
+      "population": "Forme non classique",
+      "limits": "Résumé seul, pas doses ni horaire folliculaire déduits.",
+      "source_content_sha256": "0d53c19c5520859be2906259f93750beec195df6a739379b59512ef982708109",
+      "read_level": "abstract",
+      "reader": "sol_endocrinologie"
+    },
+    {
+      "id": "S11",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30817301/",
+      "publisher": "Breil T, Yakovenko V, Inta I, Choukair D, Klose D, Mittnacht J, Schulze E, Alrajab A, Grulich-Henn J, Bettendorf M.",
+      "title": "Typical characteristics of children with congenital adrenal hyperplasia due to 11β-hydroxylase deficiency: a single-centre experience and review of the literature.",
+      "version": "2019",
+      "read_at": "2026-11-02",
+      "section": "Résumé publié et métadonnées PubMed/Europe PMC",
+      "passage": "Hypertension et excès androgénique orientent un déficit 11β ; des inclusions surrénaliennes testiculaires sont possibles dans cette forme aussi.",
+      "passage_kind": "faithful_paraphrase",
+      "population": "Six garçons de quatre familles avec déficit 11β",
+      "limits": "Petite série pédiatrique, aucune incidence extrapolée.",
+      "source_content_sha256": "d766c06053f936274524851c8b6c4b0d628ca726d378e38bcc03e62bb0eab036",
+      "read_level": "abstract",
+      "reader": "sol_endocrinologie"
+    },
+    {
+      "id": "S13",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38828945/",
+      "publisher": "Sarafoglou K, Kim MS, Lodish M, Felner EI, Martinerie L, Nokoff NJ, Clemente M, Fechner PY, Vogiatzi MG, Speiser PW, Auchus RJ, Rosales GBG, Roberts E, Jeha GS, Farber RH, Chan JL, CAHtalyst Pediatric Trial Investigators.",
+      "title": "Phase 3 Trial of Crinecerfont in Pediatric Congenital Adrenal Hyperplasia.",
+      "version": "2024",
+      "read_at": "2026-11-02",
+      "section": "Résumé publié et métadonnées PubMed/Europe PMC",
+      "passage": "La réduction de dose glucocorticoïde sous crinecerfont diffère de 23,5 points de pourcentage du placebo à 28 semaines avec contrôle androgénique ; ceci ne remplace pas le cortisol indispensable.",
+      "passage_kind": "faithful_paraphrase",
+      "population": "103 enfants randomisés, 28 semaines",
+      "limits": "Résumé seul ; essai financé Neurocrine, pas FI suisse ni preuve de bénéfice clinique à long terme.",
+      "source_content_sha256": "d7be774137cc90c23bd3cdd3f416acfdc0b0a7ae6ef30ea089ca6e716dfe9923",
+      "read_level": "abstract",
+      "reader": "sol_endocrinologie"
+    },
+    {
+      "id": "S7",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12210017/",
+      "publisher": "Étude suisse multicentrique",
+      "title": "Prevalence of differences of sex development in Switzerland",
+      "version": "2025",
+      "read_at": "2026-11-02",
+      "section": "Résumé ; cohorte de naissances 2000–2019",
+      "passage": "Sur 561 patients DSD, 118 sont 46,XX ; l’estimation 46,XX avec hyperplasie congénitale est 1/7500 filles nouveau-nées, non 1/7500 tous nouveau-nés.",
+      "passage_kind": "faithful_paraphrase",
+      "population": "Patients identifiés par dix hôpitaux et huit endocrinologues privés",
+      "limits": "Cohorte rétrospective sélectionnée ; dénominateur filles pour 46,XX, pas tous nouveau-nés ni toute E25.",
+      "source_content_sha256": "5120a7bccc2f3841b9988779b3845ae686a0af52fc52f3dde0f86a94dcb44259",
+      "read_level": "abstract",
+      "reader": "sol_endocrinologie"
+    },
+    {
+      "id": "S8",
+      "url": "https://kinderklinik.insel.ch/fileadmin/Kinderklinik/Dokumente/PDFs/Neo/Elterninfo/Screening-Flyer2022_Web7_de.pdf",
+      "publisher": "Insel et dépistage suisse",
+      "title": "Dépistage néonatal suisse",
+      "version": "2022",
+      "read_at": "2026-11-02",
+      "section": "Pages dépistage et syndrome adrénogénital",
+      "passage": "La goutte de sang se prélève au troisième ou quatrième jour selon cette version ; le dépistage permet de reconnaître le syndrome avant la décompensation.",
+      "passage_kind": "faithful_paraphrase",
+      "population": "Nouveau-nés suisses",
+      "limits": "Brochure parentale datée ; ni seuil analytique ni protocole de rappel détaillé.",
+      "source_content_sha256": "fa630c0fff02478d68655a20704a74c31d29917e01db8c3e8fabed768dcb2e57",
+      "read_level": "section",
+      "reader": "sol_endocrinologie"
+    },
+    {
+      "id": "S9",
+      "url": "https://www.neoscreening.ch/fr/maladies/",
+      "publisher": "Dépistage néonatal suisse",
+      "title": "Maladies dépistées : syndrome adrénogénital",
+      "version": "Page consultée 2026-11-02",
+      "read_at": "2026-11-02",
+      "section": "Rubrique syndrome adrénogénital",
+      "passage": "Le manque de cortisol expose aux maladies graves, à l’hypoglycémie et à la perte de sel ; les garçons peuvent avoir des organes externes apparemment habituels.",
+      "passage_kind": "faithful_paraphrase",
+      "population": "Nouveau-nés suisses",
+      "limits": "Chiffre informatif environ 1/9000 nouveau-nés, pas fréquence de toute la catégorie E25 ; un dépistage ne garantit pas zéro séquelle.",
+      "source_content_sha256": "d25114999f89dd465e8a4bbf91c26cb5c8fe81d9ee54e4cf204144b71bece378",
+      "read_level": "section",
+      "reader": "sol_endocrinologie"
+    },
+    {
+      "id": "S10",
+      "url": "https://endo-ern.eu/wp-content/uploads/2023/04/Adrenogenitales-Syndrom-AGS-Updated.pdf",
+      "publisher": "AGS Elterninitiative, hébergement ENDO-ERN Europe",
+      "title": "Adrenogenitales Syndrom : information aux familles",
+      "version": "2023",
+      "read_at": "2026-11-02",
+      "section": "Présentation, traitement, urgence, croissance et famille",
+      "passage": "Le remplacement, les adaptations en maladie et la formation de la famille accompagnent le suivi de croissance, de fertilité et de bien-être.",
+      "passage_kind": "faithful_paraphrase",
+      "population": "Parents et patients germanophones",
+      "limits": "Information patient ; droit allemand non transféré en Suisse ; illustrations tierces non reproduites.",
+      "source_content_sha256": "7f9bc19e6e96dfbe29a52054b4c9c8d2aca91ed240820bd73593b5d2d40b1019",
+      "read_level": "section",
+      "reader": "sol_endocrinologie"
+    },
+    {
+      "id": "S12",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11309900/",
+      "publisher": "Auchus et coll., essai multinational financé Neurocrine",
+      "title": "Phase 3 trial of crinecerfont in adult congenital adrenal hyperplasia",
+      "version": "2024",
+      "read_at": "2026-11-02",
+      "section": "Résumé, méthodes et résultats principaux ; sponsor et populations",
+      "passage": "La réduction glucocorticoïde était de 27,3 % contre 10,3 %, différence 17 points de pourcentage. L’antagoniste du récepteur CRF1 réduit ACTH/androgènes sans remplacer les hormones déficitaires.",
+      "passage_kind": "faithful_paraphrase",
+      "population": "182 adultes randomisés, 24 semaines",
+      "limits": "Sections ciblées ; bénéfice de dose et biomarqueur, pas statut Swissmedic ni sécurité à long terme ; aucune figure copiée.",
+      "source_content_sha256": "922a588faa628ba7341e9025b7bc62d48dbccd171091dc77e73f316c798f74f6",
+      "read_level": "section",
+      "reader": "sol_endocrinologie"
+    },
+    {
+      "id": "S14",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680682260010",
+      "publisher": "Swissmedic/AIPS via AmiKo",
+      "title": "Information professionnelle suisse Alkindi granulés 0,5/1/2/5 mg",
+      "version": "Février 2025",
+      "read_at": "2026-11-02",
+      "section": "Indications, posologie, contre-indications, précautions, interactions, grossesse/allaitement ciblées",
+      "passage": "De la naissance à moins de 18 ans, 10–15 mg/m²/j pour hyperplasie en 3–4 prises. Ne pas avaler capsule, mâcher, mélanger à liquide ou passer par sonde. Stress léger double/triple selon plan ; vomissements sévères imposent relais parentéral.",
+      "passage_kind": "faithful_paraphrase",
+      "population": "Produit exact, âges et situations explicités",
+      "limits": "La FI exacte ne vaut pas une autre formulation ni un protocole syndromique ; la dose maximale n’est pas inventée si non définie.",
+      "source_content_sha256": "110eca23fc03358877cbef9f64578cae0893c80df0cba1c54b18e36211bd031f",
+      "read_level": "section",
+      "reader": "sol_endocrinologie"
+    },
+    {
+      "id": "S15",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680579700018",
+      "publisher": "Swissmedic/AIPS via AmiKo",
+      "title": "Information professionnelle suisse Hydrocortisone Galepharm 10 mg comprimé sécable",
+      "version": "Août 2025",
+      "read_at": "2026-11-02",
+      "section": "Indications, posologie, contre-indications, précautions, interactions, grossesse/allaitement ciblées",
+      "passage": "Dose usuelle syndrome adrénogénital 10–30 mg/j ; données Swisspeddose annexées séparées de la FI. Rein sans adaptation, foie sévère peut demander réduction. Ne pas interrompre le remplacement indispensable.",
+      "passage_kind": "faithful_paraphrase",
+      "population": "Produit exact, âges et situations explicités",
+      "limits": "La FI exacte ne vaut pas une autre formulation ni un protocole syndromique ; la dose maximale n’est pas inventée si non définie.",
+      "source_content_sha256": "a1fdaaf9c233cd7168ba392dcec470b3575a023087f1245ae1e5a4fa24bbcefb",
+      "read_level": "section",
+      "reader": "sol_endocrinologie"
+    },
+    {
+      "id": "S16",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680235330016",
+      "publisher": "Swissmedic/AIPS via AmiKo",
+      "title": "Information professionnelle suisse Solu-Cortef injectable",
+      "version": "Octobre 2025",
+      "read_at": "2026-11-02",
+      "section": "Indications, posologie, contre-indications, précautions, interactions, grossesse/allaitement ciblées",
+      "passage": "Urgence IV préférée, IM possible ; 100 mg initial en au moins 30 secondes, reprise selon situation. Pas bolus néonatal automatique de 100 mg. La voie intrathécale n’est pas celle de la crise. Allergie et contre-indication IM en purpura thrombopénique sont distinguées.",
+      "passage_kind": "faithful_paraphrase",
+      "population": "Produit exact, âges et situations explicités",
+      "limits": "La FI exacte ne vaut pas une autre formulation ni un protocole syndromique ; la dose maximale n’est pas inventée si non définie.",
+      "source_content_sha256": "35f626d3947bc2acb79ef983414de89a28f1d2695e4467e51b2a5aa517971383",
+      "read_level": "section",
+      "reader": "sol_endocrinologie"
+    },
+    {
+      "id": "S17",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680310950184",
+      "publisher": "Swissmedic/AIPS via AmiKo",
+      "title": "Information professionnelle suisse Florinef 0,1 mg comprimé",
+      "version": "Mars 2026",
+      "read_at": "2026-11-02",
+      "section": "Indications, posologie, contre-indications, précautions, interactions, grossesse/allaitement ciblées",
+      "passage": "Adulte 0,1 mg trois fois/semaine à 0,2 mg/j ; 0–12 ans 2–5 microgrammes/kg/j. Divergence avec les repères néonataux spécialisés, suivi pression/rénine/électrolytes. Grossesse seulement si nécessaire ; ne pas allaiter selon cette FI.",
+      "passage_kind": "faithful_paraphrase",
+      "population": "Produit exact, âges et situations explicités",
+      "limits": "La FI exacte ne vaut pas une autre formulation ni un protocole syndromique ; la dose maximale n’est pas inventée si non définie.",
+      "source_content_sha256": "e3443a1c3e3bf41cffef128b983b5e8383e2b4413395a63659a5799407088a4c",
+      "read_level": "section",
+      "reader": "sol_endocrinologie"
+    },
+    {
+      "id": "S18",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680317230012",
+      "publisher": "Swissmedic/AIPS via AmiKo",
+      "title": "Information professionnelle suisse Synacthen injectable immédiat 0,25 mg/ml",
+      "version": "Juin 2023",
+      "read_at": "2026-11-02",
+      "section": "Indications, posologie, contre-indications, précautions, interactions, grossesse/allaitement ciblées",
+      "passage": "Test adulte 0,25 mg IM/IV, cortisol avant et exactement à 30 min ; anaphylaxie, surveillance 30 min. Contre-indication thérapeutique du syndrome adrénogénital distincte de son usage diagnostique. Posologie pédiatrique non étudiée dans cette FI.",
+      "passage_kind": "faithful_paraphrase",
+      "population": "Produit exact, âges et situations explicités",
+      "limits": "La FI exacte ne vaut pas une autre formulation ni un protocole syndromique ; la dose maximale n’est pas inventée si non définie.",
+      "source_content_sha256": "fb8ebf1c012f640a52f5f96b70297ef1ca0da949b7531f1bc6a9fd3393148fae",
+      "read_level": "section",
+      "reader": "sol_endocrinologie"
+    },
+    {
+      "id": "S19",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-6-the-adrenal-glands",
+      "publisher": "OpenStax",
+      "title": "The adrenal glands",
+      "version": "2e §17.6",
+      "read_at": "2026-11-02",
+      "section": "Situation, cortex, médulla et couches corticales",
+      "passage": "Cortex externe en zones glomérulée, fasciculée et réticulée ; médulla interne à catécholamines. La figure normale ne montre aucun déficit individuel.",
+      "passage_kind": "faithful_paraphrase",
+      "population": "Science normale",
+      "limits": "Pédagogie américaine, pas recommandation clinique. L’aldostérone n’est pas décrite comme principalement ACTH dépendante. Licence de figure historique traitée séparément.",
+      "source_content_sha256": "e8e262fef5dbb7baa799f6c4285900a7d4c205b773e58d5ee873dcab56b05bf4",
+      "read_level": "section",
+      "reader": "sol_endocrinologie"
+    },
+    {
+      "id": "S20",
+      "url": "https://smifk-cims.ch/download_file/view/c28daec4-78b0-4a6e-a198-00ca757191fc/261",
+      "publisher": "CIMS Suisse",
+      "title": "PROFILES",
+      "version": "2017",
+      "read_at": "2026-11-02",
+      "section": "Situations examen organes génitaux, pression, enfance croissance/puberte",
+      "passage": "Organes génitaux externes atypiques, pression anormale et croissance/puberte inhabituelles appellent un raisonnement et une communication adaptés.",
+      "passage_kind": "faithful_paraphrase",
+      "population": "Formation médicale suisse",
+      "limits": "Lien pédagogique, aucune question officielle ni correspondance CIM officielle.",
+      "source_content_sha256": "d8d693e65f7725fc874d64665371b7a5232553c41892757d91a59dfae967cfef",
+      "read_level": "section",
+      "reader": "sol_endocrinologie"
+    },
+    {
+      "id": "S21",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10646833/",
+      "publisher": "Mushtaq et coll., BSPED Royaume-Uni",
+      "title": "Emergency and perioperative management of adrenal insufficiency in children and young people: BSPED consensus guidance",
+      "version": "2023",
+      "read_at": "2026-11-02",
+      "section": "Résumé, méthodes, sick day, tableau 3 crise, fludrocortisone",
+      "passage": "Crise : hydrocortisone IM/IV 25 mg avant un an, 50 mg de 1 à 5 ans, 100 mg dès 6 ans ; options au poids et suivi hospitalier. Maladie orale environ 30 mg/m²/j en quatre prises. Ne pas doubler automatiquement la fludrocortisone.",
+      "passage_kind": "faithful_paraphrase",
+      "population": "Enfants et adolescents avec insuffisance surrénale",
+      "limits": "Consensus européen, preuves pédiatriques limitées ; ne remplace pas protocole suisse ni FI du produit. Autre article de résumé 2024 distingué.",
+      "source_content_sha256": "58b4a228d5c39b0ce4668af851c143d677d7a277b6100e7c77e977e624a53f45",
+      "read_level": "section",
+      "reader": "sol_endocrinologie"
+    },
+    {
+      "id": "S22",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7609334/",
+      "publisher": "Baumgartner-Parzer et coll., EMQN Europe",
+      "title": "EMQN best practice guidelines for molecular genetic testing and reporting of 21-hydroxylase deficiency",
+      "version": "2020",
+      "read_at": "2026-11-02",
+      "section": "Résumé, introduction, indications, échantillons parentaux, diagnostic prénatal, locus et méthodes ciblées",
+      "passage": "Le pseudogène proche, conversions et variations du nombre de copies rendent l’analyse complexe ; séquençage et dosage de copies se complètent. Les parents aident à établir cis/trans. Traitement prénatal expérimental, pas routine.",
+      "passage_kind": "faithful_paraphrase",
+      "population": "Diagnostic génétique familial CYP21A2",
+      "limits": "Lecture ciblée ; ancienneté et législation nationale à vérifier. Pas disponibilité suisse de tout test.",
+      "source_content_sha256": "8fa9adf82200b435ac9bfad26c22e3f5cc327b75bfbf82145aac838c172bca34",
+      "read_level": "section",
+      "reader": "sol_endocrinologie"
+    }
+  ],
+  "images": [
+    {
+      "path": "figures/adrenal-openstax2013.jpg",
+      "sha256": "0e133ab3278e87efffcf1f580f85e0c279bdfbdc9f85c61909596b045dbfb8f0",
+      "original_url": "https://commons.wikimedia.org/wiki/File:1818_The_Adrenal_Glands.jpg",
+      "author": "OpenStax College, Connexions 2013 ; micrographie University of Michigan Medical School ©2012",
+      "license": "CC BY 3.0, figure historique 2013",
+      "license_proof": "figure-license-metadata.json",
+      "annotations": "Quatre repères français : surrénale, cortex/médulla, micrographie et régions. Pixels originaux inchangés.",
+      "medical_review": {
+        "mode": "self_review",
+        "reviewer": "sol_endocrinologie",
+        "proof": "reviews/medical.json",
+        "human_validation": false
+      }
+    }
+  ],
+  "semiology": {
+    "section_anchors": [
+      "e25-semio-normal",
+      "e25-semio-signs",
+      "e25-semio-mechanisms",
+      "e25-semio-examination",
+      "e25-semio-interpretation",
+      "e25-semio-differentials",
+      "e25-semio-urgency",
+      "e25-semio-limits",
+      "e25-semio-sources"
+    ]
+  },
+  "blocking_findings": 0,
+  "remaining_findings": [
+    {
+      "id": "L01",
+      "blocking": false,
+      "finding": "FI Florinef mars 2026 et repères néonataux spécialisés divergent fortement ; doses affichées séparément, pas schéma composite. Le prescripteur et la pharmacie vérifient produit, justification et surveillance."
+    },
+    {
+      "id": "L02",
+      "blocking": false,
+      "finding": "Le consensus pédiatrique BSPED 2023 est européen, fondé sur consensus et preuves limitées ; ni FI suisse ni protocole local individuel. Les options par âge/poids ne se cumulent pas."
+    },
+    {
+      "id": "L03",
+      "blocking": false,
+      "finding": "Seuils non classiques et cortisol historiques gardent méthode et population ; la FI Synacthen n’étudie pas un schéma pédiatrique. Aucun seuil moderne universel inventé."
+    },
+    {
+      "id": "L04",
+      "blocking": false,
+      "finding": "20 sources lues aux sections déclarées ; S4/S5/S11/S13 et résumé S7 ne sont pas présentés comme lecture intégrale. Crinecerfont : critères de dose/biomarqueurs sur 24/28 semaines, pas bénéfices cliniques à long terme ou statut suisse 2026."
+    },
+    {
+      "id": "L05",
+      "blocking": false,
+      "finding": "Chiffres suisses et séries européennes n’estiment pas toute E25 ; dénominateurs différents et absence de fréquences pour plusieurs formes rares conservés."
+    },
+    {
+      "id": "L06",
+      "blocking": false,
+      "finding": "Prénatal expérimental et décisions génitales irréversibles appellent expertise, autonomie et cadre suisse actuel ; aucune loi étrangère importée, aucun consentement individuel simulé."
+    },
+    {
+      "id": "L07",
+      "blocking": false,
+      "finding": "Une seule planche originale humaine normale 2013 est affichée deux fois, avec quatre repères ; elle ne montre pas une maladie individuelle. Labels anglais originaux complétés par légende française ; microscope et détails exigent une image plus grande."
+    },
+    {
+      "id": "L08",
+      "blocking": false,
+      "finding": "Les fenêtres Essentiel condensent le raisonnement ; les fractions natives sont des métriques de texte, pas un score de validation clinique."
+    },
+    {
+      "id": "L09",
+      "blocking": false,
+      "finding": "Navigateur sur origine HTTPS interceptée, octets exacts de l’aperçu et toutes autres requêtes bloquées ; aucun serveur ni déploiement réel testé."
+    },
+    {
+      "id": "L10",
+      "blocking": false,
+      "finding": "Quatre auto-revues du même auteur, sans validation humaine ou indépendance. Coque provisoire et navigation héritées ; trois éléments E05 non couverts restent hors périmètre."
+    }
+  ],
+  "reviews": {
+    "medical": {
+      "path": "reviews/medical.json",
+      "reviewer": "sol_endocrinologie",
+      "mode": "self_review",
+      "sha256": "3e87bc14e8cb5f59d62f1bf172186b2bfd15465d1ddadba968dff36ffda240e0"
+    },
+    "language": {
+      "path": "reviews/language.json",
+      "reviewer": "sol_endocrinologie",
+      "mode": "self_review",
+      "sha256": "cddc42c98d8c4f2ae591a654fbbeb6f2056af8ee968386fc65355db2134b292e"
+    },
+    "visual_desktop": {
+      "path": "reviews/visual_desktop.json",
+      "reviewer": "sol_endocrinologie",
+      "mode": "self_review",
+      "sha256": "05a145919d2c398271c049393a0986e996134053e0ff4ff65d02b700ed8ba25d"
+    },
+    "visual_mobile": {
+      "path": "reviews/visual_mobile.json",
+      "reviewer": "sol_endocrinologie",
+      "mode": "self_review",
+      "sha256": "c1153d6205892db2285d728bc687f67ffef8e41b6d2adc07df5b10163a51c3f2"
+    }
+  },
+  "source_files_sha256": {
+    "chapters/E25/E25_a.html": "c4f71a358ded7853f41ccc2e53debfe8f6316753b33d18443707047810dcf3bc",
+    "chapters/E25/E25_b.html": "d883464fa8723084ff177fd1bee209756b0a98cda8ae65b05b445d484d87a0eb",
+    "chapters/E25/E25_c.html": "2ca2b75842923e45a1fac496f0fce1e6e4a7997e96c736d314233d96a9b17e0e",
+    "chapters/E25/E25_d.html": "17f1dcee76fea644b984d82261ddc3763fd39159477bdf27104996b82c8368d9",
+    "chapters/E25/E25_pop1.html": "c7393887914557ed365790ba71d1ebf59ba2ef7bb53ad72fd70a652fc6455088",
+    "chapters/E25/E25_pop2.html": "3226f1d1b87b2700c26cf47db1300c39e3a22337e2e19631a9d3f70278099f3b"
+  },
+  "preview": {
+    "path": "E25-apercu-autonome.html",
+    "sha256": "bd5c23d6062eeed688176537954167f7abd1e2c405ea63209b74d02de8336256",
+    "browser_report": "browser-report.json",
+    "native_bundle": "E25-apercu-autonome.bundle.json"
+  },
+  "clinical_certification": false,
+  "publication_to_main": false,
+  "tokens_actual": null,
+  "cost_actual": null
+}
