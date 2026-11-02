@@ -1,7 +1,7 @@
 {
   "specialty": "Hématologie",
-  "selected_lesson": "C86",
-  "title": "Autres lymphomes à cellules T/NK spécifiés",
+  "selected_lesson": "D63",
+  "title": "Anémie au cours de maladies chroniques classées ailleurs",
   "queue": [
     {
       "code": "D69",
@@ -189,37 +189,51 @@
     "D69",
     "D64"
   ],
-  "medical_review": "non effectuée",
+  "medical_review": "non effectuée pour D63",
   "tokens": null,
   "cost": null,
   "baseline": {
-    "words_rough": 17641,
-    "measurement": "HTML stripped rough inventory; static tool measurement follows"
+    "words": 14074,
+    "windows": 36,
+    "quiz": 8,
+    "images": 0,
+    "svg": 3,
+    "files": [
+      "chapters/D63/D63_a.html",
+      "chapters/D63/D63_b.html",
+      "chapters/D63/D63_c.html",
+      "chapters/D63/D63_d.html",
+      "chapters/D63/D63_pop1.html",
+      "chapters/D63/D63_pop2.html"
+    ]
   },
-  "next_action": "Inventorier C86, sources suisses puis européennes ; même atelier Hématologie, une leçon à la fois.",
-  "status": "recherche",
-  "updated_at": "2026-11-02T03:27:36.757201+00:00",
-  "current": {},
+  "next_action": "Lire la totalité de la base D63, puis sources suisses/européennes actuelles et originaux avant toute rédaction médicale.",
+  "status": "Réservation/start/claim réussis ; recherche réelle à commencer, aucune rédaction nouvelle.",
+  "updated_at": "2026-11-02T11:14:13.165327+00:00",
+  "current": {
+    "code": "D63",
+    "phase": "recherche",
+    "worktree": "/workspace/Medina-hematologie-D63",
+    "branch": "codex/alpha77/d63-integrate-g1"
+  },
   "sources_current": 0,
-  "source_inherited": 23,
+  "source_inherited": 0,
   "monograph_points_mapped": 0,
-  "medina_rubrics": 20,
-  "blocking_findings": [],
-  "preview": "/workspace/Medina-hematologie-C86/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C86-INTEGRATE/C86-apercu-autonome.html",
+  "medina_rubrics": 0,
+  "blocking_findings": [
+    "Recherche VÉRITÉ, sources CH/EU actuelles, six sciences et sémiologie, originaux annotés, matrices et relectures restent à réaliser."
+  ],
+  "preview": null,
   "preview_sha256": null,
-  "tests": {
-    "ok": null
-  },
-  "reviews": {
-    "mode": "self_review",
-    "report": "/workspace/Medina-hematologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE/review-package/self-review.json",
-    "human_medical_validation": false
-  },
+  "tests": {},
+  "reviews": {},
   "complete": false,
   "clinical_certification": false,
   "tokens_actual": null,
   "cost_actual": null,
-  "limitations": [],
+  "limitations": [
+    "Base existante de14074mots,36fenêtres et8quiz inventoriée ; inventaire seul ne signifie pas lecture médicale."
+  ],
   "completion": null,
   "completed_lessons": [
     {
@@ -325,6 +339,75 @@
         ],
         "receipt": "/workspace/Medina-hematologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE/verification.json"
       }
+    },
+    {
+      "agent": "codex_hematologie",
+      "code": "C86",
+      "at": "2026-11-02T04:33:09+00:00",
+      "branch": "codex/alpha77/c86-integrate-g1",
+      "worktree": "/workspace/Medina-hematologie-C86",
+      "folder": "/workspace/Medina-hematologie-C86/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C86-INTEGRATE",
+      "manifest_sha256": "53cf4e400f6a2f4b8516e06d9c12071d4ee6a4d4af300cd315453f60a33d6e81",
+      "source_binding_sha256": "9446dbbc4dd1c2e1f7acb7ad1e76235b6107dcae1cf387aff359b86c03c2d8ed",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "8efbea24ff0adfa0a61b19ed84ebd4dd2588fae13f0b71c727246dbdc7316862",
+      "metrics": {
+        "code": "C86",
+        "words": 26786,
+        "windows": 52,
+        "quizzes": 5,
+        "pareto": 14,
+        "science_tabs": 6,
+        "semio_sections": 9,
+        "sources_read": 31,
+        "originals": 2,
+        "original_occurrences": 4,
+        "causal_diagrams": 2,
+        "captures_generated": 28,
+        "captures_inspected": 14,
+        "tokens_actual": null,
+        "cost_actual": null,
+        "clinical_certification": false
+      }
     }
-  ]
+  ],
+  "metrics": {
+    "tokens_consumed": null,
+    "cost_usd": null,
+    "completed_sections": 0
+  },
+  "completion_history": [
+    {
+      "agent": "codex_hematologie",
+      "code": "C95",
+      "at": "2026-11-02T11:10:21+00:00",
+      "branch": "codex/alpha77/c95-integrate-g1",
+      "worktree": "/workspace/Medina-hematologie-C95",
+      "folder": "/workspace/Medina-hematologie-C95/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C95-INTEGRATE",
+      "manifest_sha256": "4d47282d2c20791c058395977350a3d79197984203d36d922437cb28bd91653e",
+      "source_binding_sha256": "271e6b5d63ce9a8bb2e6e1cfb58f491049c18143723e9c104970b2d83835bda8",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "037bace867c4e884a4cf47ca2515373c73f3f8759131f5389974a0e9facd6f01",
+      "head": "b10a875b",
+      "remote_verified": true
+    }
+  ],
+  "worktree": "/workspace/Medina-hematologie-D63",
+  "branch": "codex/alpha77/d63-integrate-g1",
+  "sources_read": 0,
+  "completed_sections": 0
 }

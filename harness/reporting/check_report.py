@@ -15,7 +15,7 @@ with sync_playwright() as p:
   page.route('**/*',lambda r:r.fulfill(body=payload,content_type='text/html') if r.request.url=='http://medina.local/report.html' else r.abort())
   page.goto('http://medina.local/report.html',wait_until='networkidle')
   item={'width':width,'overflow':page.evaluate('document.documentElement.scrollWidth-innerWidth'),'articles':page.locator('article.lesson').count(),'queue_rows':page.locator('#future tbody tr').count()}
-  assert item['overflow']==0 and item['articles']==data['versions_verified'] and item['queue_rows']==data['candidate_count']
+  assert item['overflow']==0 and item['articles']==data['versions_verified'] and item['queue_rows']==data['candidate_count'],item
   page.screenshot(path=str(out/f'rapport-{width}.png'))
   page.locator('#filter').fill('N02');assert page.locator('#future tbody tr:visible').count()==1
   page.locator('#filter').fill('');page.locator('#expand').click();assert page.locator('details:not([open])').count()==0
