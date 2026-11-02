@@ -1,0 +1,947 @@
+{
+  "code": "G32",
+  "title": "G32 — Autres affections dégénératives du système nerveux au cours d’affections classées ailleurs",
+  "author": "sol_neurologie",
+  "harness_agent_id": "astra_neurologie",
+  "model": "gpt-6.1-sol",
+  "reasoning": "high",
+  "recorded_at": "2026-11-02T18:01:35.218205+00:00",
+  "branch": "codex/alpha77/g32-integrate-g1",
+  "base": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+  "sources": [
+    {
+      "id": "R1",
+      "title": "OFS : CIM-10-GM française 2024",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/32686264/master",
+      "publisher": "Office fédéral de la statistique",
+      "read_at": "2026-11-02T17:38:02.652738+00:00",
+      "section": "Entrées complètes G32, G32.0, G32.8, E53.8 et D51 du fichier structuré français",
+      "passage": "G32 est une catégorie de manifestation à astérisque. G32.0 décrit la dégénérescence combinée subaiguë et inclut celle liée à une carence en vitamine B12 avec E53.8†. G32.8 désigne les autres affections dégénératives précisées, sans liste causale dans son entrée. E53.8 inclut la carence en cobalamine ; D51 concerne l’anémie par carence en B12.",
+      "population": "Classification française : catégorie G32, sous-codes et codes causaux pertinents",
+      "limits": "Les sous-codes ne sont pas des causes interchangeables. Aucune association automatique de toute myélopathie ou de toute intoxication avec G32.8 n’est établie. La version de classification est explicitée ; les règles individuelles de codage restent à vérifier.",
+      "source_sha256": "04c9e9e5c95b2cbe2b8244872e6a6cbd5a7fc2358805e908b11d0e15784653be",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R2",
+      "title": "BfArM : entrée G32 et ses deux sous-codes",
+      "url": "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-g30-g32.htm",
+      "publisher": "BfArM",
+      "read_at": "2026-11-02T17:38:02.652738+00:00",
+      "section": "Entrée G32 entière, G32.0 et G32.8 jusqu’à la fin du bloc",
+      "passage": "La version allemande confirme les deux sous-codes et l’inclusion de la dégénérescence combinée subaiguë liée à la carence en B12 avec E53.8† sous G32.0*. Aucune liste de maladies causales n’est ajoutée sous G32.8*.",
+      "population": "Classification allemande, édition2024",
+      "limits": "Classification allemande, sans protocole thérapeutique ni certification de facturation suisse.",
+      "source_sha256": "9ce061e6325ad10486c9513e9451e99b34da36f2dd1a76fe9a8859ee50d2820b",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R3",
+      "title": "Vitarubine Dépôt : information professionnelle suisse",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680335840026",
+      "publisher": "Swissmedic, information AIPS via AmiKo ; Streuli Pharma",
+      "read_at": "2026-11-02T17:38:02.652738+00:00",
+      "section": "Composition, indications, doses, voie, contre-indications, avertissements, interactions, grossesse, mécanisme, pharmacocinétique et date",
+      "passage": "Une ampoule de 1 ml contient 1,0 mg d’acétate d’hydroxocobalamine. La FI décrit chez l’adulte, dans les cas aigus, 1000 µg deux à trois fois par semaine par voie intramusculaire ; la voie intraveineuse lente est possible mais non recommandée. Dans l’anémie pernicieuse, l’entretien de 1000 µg tous les deux à trois mois est poursuivi pour une durée indéterminée. Les autres carences sont traitées jusqu’à correction de la cause et reconstitution des réserves. Surveiller réponse, potassium et besoins en fer/folates selon contexte. Hypersensibilité aux composants contre-indiquée ; cobalt et excipients imposent leurs précautions. Une exposition prolongée au protoxyde d’azote peut induire une carence fonctionnelle malgré des réserves normales.",
+      "population": "Spécialité suisse injectable ; doses adultes et limites enfant/adolescent/grossesse de la FI",
+      "limits": "La masse de base n’est pas donnée par la composition : ne pas convertir silencieusement la masse d’acétate, ni remplacer par cyanocobalamine. Enfant et adolescent non étudiés ; grossesse/allaitement seulement si nécessité absolue selon la notice. Pas d’adaptation rénale ou hépatique chiffrée propre trouvée. Les rythmes de centres étrangers et l’urgence clinique ne sont pas fusionnés dans le libellé de la FI.",
+      "source_sha256": "f970529e1ee0693172d4d8673892b46765ce3d6c8828b24d778459254646537d",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R4",
+      "title": "Myélopathie liée au protoxyde d’azote : cas de Suisse romande",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13049691/",
+      "publisher": "Witzig et coll., Hôpital Riviera-Chablais à Rennaz ; Cureus",
+      "read_at": "2026-11-02T17:38:02.652738+00:00",
+      "section": "Résumé, présentation clinique et discussion complètes, légendes des figures, licence et déclarations des auteurs",
+      "passage": "Un homme de 27 ans présentait une ataxie sensitive, une perte de vibration et de position, avec force conservée et réflexes diminués. L’IRM montrait une atteinte postérieure cervicale et un aspect en V inversé non spécifique. L’hémogramme était sans anomalie. La neurophysiologie initiale normale ne permettait pas d’exclure formellement une neuropathie aiguë. Des symptômes persistaient au suivi téléphonique à trois mois après non-observance et reprise d’exposition.",
+      "population": "Observation unique d’un homme de27ans traité à Rennaz, Suisse, en2025 et publié en2026",
+      "limits": "Cas unique, ni fréquence nationale ni garantie de pronostic. Le protocole décrit n’est pas une recommandation nationale ; méthionine, folates et voies ne sont pas recopiés comme ordonnance. Les données d’Infodrog citées de seconde main ne sont pas des statistiques de G32. Figure 1 sous licence de l’article ; figure 5 BioRender avec droits réservés, non importée. Les auteurs indiquent un consentement obtenu ou une dispense ; aucun consentement individuel écrit n’est inventé.",
+      "source_sha256": "3216347623bf178883f6d30909164c85d601eef7e5acc5e78f32b968be1d1b50",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R5",
+      "title": "NICE NG239 : carence en B12 chez les personnes de 16 ans et plus",
+      "url": "https://www.nice.org.uk/guidance/ng239/chapter/Recommendations",
+      "publisher": "National Institute for Health and Care Excellence, Royaume-Uni",
+      "read_at": "2026-11-02T17:38:02.652738+00:00",
+      "section": "Sections 1.3 tests/seuils, 1.4 causes, 1.5 prise en charge et 1.6 suivi jusqu’à 1.6.14 ; rappels de 1.2 ; présentation officielle du guide âge16inclus et termes,section1.7surveillance gastriteautoimmune effectivement lues ensuite",
+      "passage": "L’absence d’anémie ou de macrocytose n’exclut pas la carence. En cas de protoxyde d’azote, les marqueurs fonctionnels sont privilégiés au bilan initial. Prélever avant substitution si possible, sans retarder une prise en charge neurologique urgente. Le tableau distingue B12 totale inférieure à 133 pmol/l, zone intermédiaire de 133 à 258 et valeur supérieure à 258, tout en respectant les seuils validés localement. Les anticorps anti-facteur intrinsèque négatifs n’excluent pas une gastrite auto-immune. Cause, gravité, voie et réponse guident le suivi. Périmètre dès16ans inclus, vérifié sur la présentation officielle. Gastriteautoimmune et anémiepernicieuse non assimilées. Risque tumoral gastrique propre à la cause ; symptômes digestifs hauts nouveaux/aggravés conduisent à discuter endoscopie sans intervalle universel inventé.",
+      "population": "Personnes âgées de16ans et plus, guide britannique ; sous-groupes définis selon cause et situation",
+      "limits": "Guide britannique, pas une nouvelle autorisation de dose orale suisse. La carence liée au protoxyde d’azote en général et la myélopathie sévère spécialisée ne sont pas des populations identiques. Les références du laboratoire priment pour les métabolites ; les seuils britanniques ne sont pas imposés à chaque laboratoire suisse.",
+      "source_sha256": "e91b6651c0dbdee93a56e0d8a26e31ec1658608c069fd675f7f94c97fb5038d5",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R6",
+      "title": "Troubles neurologiques liés au protoxyde d’azote : expérience multicentrique allemande",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11737043/",
+      "publisher": "Meißner et coll., Neurological Research and Practice",
+      "read_at": "2026-11-02T17:38:02.652738+00:00",
+      "section": "Résumé, résultats et tableaux 1–3 ; traitements et suivi rapportés dans les résultats",
+      "passage": "Vingt-trois cas rétrospectifs de cinq services entre 2020 et 2024. Paresthésies chez 22 sur 23, ataxie chez 19 sur 23 ; neuropathie chez 20 sur 20 testés. B12 anormale chez 8 sur 23 et acide méthylmalonique anormal chez 18 sur 19. Les dénominateurs changent selon les examens. Parmi sept suivis, trois se sont améliorés avec signes persistants et quatre sans amélioration notable.",
+      "population": "Série rétrospective sélectionnée de23personnes dans cinq services allemands,2020–2024",
+      "limits": "Petit effectif sélectionné, sans sensibilité diagnostique populationnelle ni pronostic universel. Plusieurs pourcentages du tableau ne concordent pas avec leurs comptes ; ils ne sont pas recopiés. Une unité de protéine du liquide est incohérente et n’est pas utilisée. Traitements de série variables, sans directive suisse déduite.",
+      "source_sha256": "e07dcf4b503a411cdda4e0fa1227bf808e6cb1662f8d310d7879498c59aa21f1",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R7",
+      "title": "Myélopathie au protoxyde d’azote : diagnostic et traitement",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10313972/",
+      "publisher": "Paris, Lake et coll., Practical Neurology ; équipes britanniques",
+      "read_at": "2026-11-02T17:38:02.652738+00:00",
+      "section": "Reconnaissance et diagnostic, investigations et tableau 2, traitement avec sous-sections, coordination des soins",
+      "passage": "La présentation peut associer ataxie sensitive, perte de vibration/position et réflexes variables selon composante médullaire et périphérique. B12 peut être normale ; les marqueurs fonctionnels dépendent du rein, des autres causes et du délai après arrêt ou traitement. L’IRM peut être normale et l’aspect en V n’est pas spécifique. Le centre privilégie les injections, une réévaluation neurologique standardisée et l’abstinence accompagnée. Il ne trouve pas de preuve clinique en faveur de méthionine ou folates adjuvants systématiques.",
+      "population": "Conseils pratiques de centres britanniques pour myélopathie liée au protoxyde d’azote, expérience locale",
+      "limits": "Conseils pratiques spécialisés de 2023, pas consensus universel de 2026. NICE 2024 est lu séparément. Rythme du protocole local et FI suisse restent distincts ; aucun schéma étranger n’est transformé en prescription suisse automatique. Les repères biologiques approximatifs ne sont pas des seuils universels.",
+      "source_sha256": "b48629f89ec92e7fa9b473dff58d63abc6571db6b151a9e8aef414f7e930d1f8",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R8",
+      "title": "Les multiples présentations de la carence en cobalamine",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6543499/",
+      "publisher": "Wolffenbuttel et coll., Groningen, Pays-Bas ; Mayo Clinic Proceedings Innovations, Quality and Outcomes",
+      "read_at": "2026-11-02T17:38:02.652738+00:00",
+      "section": "Biochimie/diagnostic, interférences analytiques et causes ; résumé et cas A partiellement",
+      "passage": "B12 est cofacteur de la méthylmalonyl-CoA mutase et de la méthionine synthase. Son déficit peut augmenter acide méthylmalonique et homocystéine, avec limites rénales, analytiques et autres causes. Les folates seuls peuvent masquer l’anémie sans corriger la carence en B12. Les causes comprennent auto-immunité, malabsorption, chirurgie, apports et médicaments.",
+      "population": "Revue narrative d’auteurs néerlandais avec cas adultes et biologie de carenceB12",
+      "limits": "Revue narrative d’auteurs néerlandais chez un éditeur américain, pas fondement d’une recommandation américaine. Section de traitement non lue et non utilisée. Plages anciennes et résultats d’études non relues ne deviennent pas seuils suisses universels.",
+      "source_sha256": "4159536ce0e673dae95932f13dbfc433f9da9f492ad81ac2586b36d7828013e7",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R9",
+      "title": "Gaz hilarant : ressources suisses de prévention et d’aide",
+      "url": "https://www.infodrog.ch/fr/ressources/formes-de-dependances/gaz-hilarant.html",
+      "publisher": "Infodrog, centrale de coordination des addictions",
+      "read_at": "2026-11-02T17:38:02.652738+00:00",
+      "section": "Aide, urgence, prévention, réglementation et actualités ; risques généraux",
+      "passage": "Services confidentiels, annuaire des addictions et consultation anonyme SafeZone. Le 144 est indiqué pour l’ambulance. La réglementation du protoxyde d’azote dépend de l’usage et des règles applicables, y compris cantonales ; disponibilité ne signifie pas innocuité.",
+      "population": "Information et services destinés à la population et aux professionnels en Suisse",
+      "limits": "Page grand public, pas fondement d’un protocole de myélopathie ni de chiffres nationaux de G32. Les données des enquêtes originales n’ont pas été lues. Les listes de risques ne sont pas reprises comme preuves mécanistiques exhaustives ; pas certificat juridique.",
+      "source_sha256": "ce133d5792ddb2f935db6c4642e2daf1a9d4297ff4043f35fa2433a3b2971b86",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R10",
+      "title": "Manuel suisse de codage médical 2026 : D03m",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36144082/master",
+      "publisher": "Office fédéral de la statistique",
+      "read_at": "2026-11-02T17:38:02.652738+00:00",
+      "section": "Règle D03m page 34 réellement lue pour G22 et explicitement réutilisée",
+      "passage": "Le code étiologique dague précède le code manifestation étoile ; un code étoile ne s’utilise pas seul. Les conditions du diagnostic supplémentaire et les règles de diagnostic principal restent applicables.",
+      "population": "Codage médical suisse hospitalier, règle cibléeD03m",
+      "limits": "Réutilisation ciblée réelle, sans nouvelle lecture intégrale ni audit de facturation.",
+      "source_sha256": "be457e79bb313072e3be9b98ea4cff0fb37929f9d4c68b257c5ff9e6e3c7d9c4",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": true
+    },
+    {
+      "id": "R11",
+      "title": "PROFILES 2017 : situations neurologiques",
+      "url": "https://www.siwf.ch/files/pdf24/profiles_2017-broschuere.pdf",
+      "publisher": "Objectifs nationaux suisses de formation médicale",
+      "read_at": "2026-11-02T17:38:02.652738+00:00",
+      "section": "Situations 96–105 réellement lues par Sol et réutilisées : équilibre, marche, sensibilité, force et cognition",
+      "passage": "La leçon relie pédagogiquement troubles de la marche, de l’équilibre, de la sensibilité et faiblesse à un raisonnement causal et à la gravité.",
+      "population": "Objectifs pédagogiques nationaux suisses de formation médicale",
+      "limits": "Correspondance pédagogique locale, pas une nouvelle table officielle CIM-PROFILES 2026 ni garantie du contenu d’examen.",
+      "source_sha256": "3c07db8e95b8aec160a2c19682b084d15cc7d9eea4fb8f757202c31b8b27177f",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": true
+    },
+    {
+      "id": "R12",
+      "title": "Gray764 : voie motrice normale et droits",
+      "url": "https://commons.wikimedia.org/wiki/File:Gray764.png",
+      "publisher": "Gray, Anatomy of the Human Body ; illustration attribuée à Henry Vandyke Carter, Commons",
+      "read_at": "2026-11-02T17:38:02.652738+00:00",
+      "section": "Source et droits du domaine public antérieurement lus ; pixels effectivement affichés à nouveau",
+      "passage": "L’illustration humaine historique montre une voie corticospinale normale. Elle aide à distinguer voie motrice, force et trouble sensitif, sans représenter une lésion de patient ni toute la proprioception.",
+      "population": "Illustration anatomique humaine normale historique",
+      "limits": "Original du domaine public, pixels inchangés ; annotations françaises adjacentes. Aucune validation médicale humaine ni dessin anatomique par IA.",
+      "source_sha256": "fad33949feb30902f1f7fd54b1036ae2223357b40541a9b796cd32822fbecef5",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": true
+    },
+    {
+      "id": "R13",
+      "title": "CEN : sémiologie de la sensibilité",
+      "url": "https://www.cen-neurologie.fr/premier-cycle/les-fondamentaux-de-la-pathologie-neurologique/la-semiologie-neurologique-et-ses-bases-anatomofonctionnelles/chapitre-7-semiologie-de-la-sensibilite",
+      "publisher": "Collège des enseignants de neurologie, France",
+      "read_at": "2026-11-02T17:39:58.677343+00:00",
+      "section": "Sensibilité profonde, manœuvres de position, vibration et Romberg, syndrome cordonal postérieur",
+      "passage": "La proprioception renseigne sur position et mouvement. L’atteinte peut majorer l’instabilité à fermeture des yeux. Le sens de position est examiné après démonstration, avec mobilisation et limitation des indices cutanés. La pallesthésie est testée au diapason sur les reliefs osseux ; la topographie doit être décrite avant d’attribuer une cause.",
+      "population": "Examen neurologique pédagogique de la sensibilité, sans population diagnostique de validation",
+      "limits": "Chapitre pédagogique français, sans performance universelle d’un signe ni protocole de traitement. Aucune illustration importée ni licence présumée. Le nombre de relais de la phrase introductive n’est pas repris comme schéma synaptique.",
+      "source_sha256": "b8e7ed8931521413578f0a0b37f2eeb1ce54bcf28f9beaa3a02ddb3586703ac8",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    }
+  ],
+  "source_counts": {
+    "total": 13,
+    "targeted_G32": 10,
+    "prior_actual_Sol_reads_reused": 3
+  },
+  "monograph": [
+    {
+      "point": 1,
+      "title": "Définition",
+      "anchor": "g32-definition",
+      "sources": [
+        "R1",
+        "R3",
+        "R4",
+        "R7"
+      ],
+      "coverage_explanation": "Atteinte médullaire postérieure et parfois motrice,neuropathie etmyéloneuropathie sont distinguées ; concentration etfonctionB12 ne sont pas confondues ni anémie exigée.",
+      "evidence": [
+        "content-snapshot.html#g32-definition",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 2,
+      "title": "Épidémiologie",
+      "anchor": "g32-epidemiologie",
+      "sources": [
+        "R4",
+        "R6",
+        "R7",
+        "R9"
+      ],
+      "coverage_explanation": "La lacune suisse spécifiqueG32 etâge/sexe estexplicite. Caslocal,sérieallemande etconsommationde gaz gardent leurs populations, sans devenir incidence nationale.",
+      "evidence": [
+        "content-snapshot.html#g32-epidemiologie",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 3,
+      "title": "Physiopathologie",
+      "anchor": "g32-s-physio-body",
+      "sources": [
+        "R3",
+        "R7",
+        "R8",
+        "R12",
+        "R13"
+      ],
+      "coverage_explanation": "Sixsciences relient position/vibration,retour sensitif,voies motrices,réactionsB12,hématologie etexposition au signe etàla décision ; originauxhumains etconceptsnonanatomiques distingués.",
+      "evidence": [
+        "content-snapshot.html#g32-s-physio-body",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 4,
+      "title": "Démarche clinique",
+      "anchor": "g32-question",
+      "sources": [
+        "R1",
+        "R4",
+        "R5",
+        "R7",
+        "R13"
+      ],
+      "coverage_explanation": "Localiser,hiérarchiser gravité etétablir cause avantcodage ; une forceconservée ou une concentrationnormale ne clôt pas le dossier clinique ni ne retarde une urgence.",
+      "evidence": [
+        "content-snapshot.html#g32-question",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 5,
+      "title": "Anamnèse",
+      "anchor": "g32-anamnese",
+      "sources": [
+        "R4",
+        "R5",
+        "R7",
+        "R8",
+        "R9"
+      ],
+      "coverage_explanation": "Chronologie,marche,sensibilité,exposition détaillée,compléments,médicaments etcausesdigestives orientent les questions ; confidentialité etaccèsau suivi sont explicités.",
+      "evidence": [
+        "content-snapshot.html#g32-anamnese",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 6,
+      "title": "Examen clinique",
+      "anchor": "g32-examen-body",
+      "sources": [
+        "R4",
+        "R6",
+        "R7",
+        "R13"
+      ],
+      "coverage_explanation": "Position,vibration128Hz,Rombergprotégé,force,réflexes etmarche sont décrits avecconsigne etfacteurslimitants ; réflexesvariables etforceconservée interprétés.",
+      "evidence": [
+        "content-snapshot.html#g32-examen-body",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 7,
+      "title": "Syndromes",
+      "anchor": "g32-s-semio-signs",
+      "sources": [
+        "R4",
+        "R6",
+        "R7",
+        "R13"
+      ],
+      "coverage_explanation": "Paresthésie,ataxiesensitive,faiblesse etcomposantepériphérique ont des significationsdifférentes ; les combinaisons sont reliées àtopographie etnonàun diagnosticunique.",
+      "evidence": [
+        "content-snapshot.html#g32-s-semio-signs",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 8,
+      "title": "Diagnostic positif",
+      "anchor": "g32-diagnostic",
+      "sources": [
+        "R1",
+        "R2",
+        "R5",
+        "R7",
+        "R13"
+      ],
+      "coverage_explanation": "Le faisceau clinique/causal/biologique etles diagnosticsconcurrents sont explicites dans unealert ; pas scoreuniqueG32 ni preuveparV inversé ou métabolite isolé.",
+      "evidence": [
+        "content-snapshot.html#g32-diagnostic",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 9,
+      "title": "Explorations",
+      "anchor": "g32-e-strategie",
+      "sources": [
+        "R4",
+        "R5",
+        "R7",
+        "R8"
+      ],
+      "coverage_explanation": "Testsdeconcentration etfonction,IRM,neurophysiologie etbilan de cause répondent àquestionsnommées ; méthodes,rein etchronologie sont intégrés, sansbatterieuniverselle.",
+      "evidence": [
+        "content-snapshot.html#g32-e-strategie",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 10,
+      "title": "Arbre diagnostique",
+      "anchor": "g32-urgence",
+      "sources": [
+        "R3",
+        "R5",
+        "R7"
+      ],
+      "coverage_explanation": "Gravitéfonctionnelle,progression,sphincters etrespiration changent le niveau de soins ; bilanavanttraitement siimmédiat,sansattentedangereuse d’unrésultatdéfinitif.",
+      "evidence": [
+        "content-snapshot.html#g32-urgence",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 11,
+      "title": "Prise en charge",
+      "anchor": "g32-traitement",
+      "sources": [
+        "R3",
+        "R5",
+        "R7",
+        "R9"
+      ],
+      "coverage_explanation": "Produit suisse exact,rythmeFI etconseilscliniques gardentleurs champs ; substitution,arrêtgaz,rééducation etaccèsauxsoins avancent ensemble, sansordonnanceG32.8universelle.",
+      "evidence": [
+        "content-snapshot.html#g32-traitement",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 12,
+      "title": "Prévention et suivi",
+      "anchor": "g32-suivi",
+      "sources": [
+        "R3",
+        "R5",
+        "R7",
+        "R9"
+      ],
+      "coverage_explanation": "Fonction,cause,tolérance etobservance guidentle suivi ; pasarrêtd’injectionpourB12haute seule etsuividegastriteautoimmune propre àlacause sansintervalleinventé.",
+      "evidence": [
+        "content-snapshot.html#g32-suivi",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 13,
+      "title": "Points clés",
+      "anchor": "g32-code-body",
+      "sources": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R10"
+      ],
+      "coverage_explanation": "G32.0/G32.8 distincts,étoilejamaisseule, masseacétatesansbaseinventée,repèresNICEattribués etlimitesdesmarqueurs sont réunis avecraisonnementpédagogique.",
+      "evidence": [
+        "content-snapshot.html#g32-code-body",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 14,
+      "title": "Pièges",
+      "anchor": "g32-cas",
+      "sources": [
+        "R3",
+        "R5",
+        "R7",
+        "R8",
+        "R11"
+      ],
+      "coverage_explanation": "Quatreexercices fictifs dontle thèmeinitialB12normale/gaz conservé etrévisé : forcevsataxie,carencefonctionnelle,folatesseuls etG32.8nonfourretout ; pas statistiquescausalesinventées.",
+      "evidence": [
+        "content-snapshot.html#g32-cas",
+        "recherche_G32/sources.json"
+      ]
+    }
+  ],
+  "matrix20": [
+    {
+      "point": 1,
+      "title": "Question clinique et enjeu pour l’examen fédéral",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g32-question",
+      "sources": [
+        "R3",
+        "R4",
+        "R5",
+        "R7",
+        "R11",
+        "R13"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Devant ataxie sensitive et paresthésies, localiser et chercher une cause traitable ; ne pas attendre anémie pour agir.",
+      "evidence": [
+        "content-snapshot.html#g32-question",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 2,
+      "title": "Définition et périmètre CIM-10-GM",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g32-code-body",
+      "sources": [
+        "R1",
+        "R2",
+        "R10"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : G32* manifestation ; deux sous-codes G32.0 et G32.8, inclusion B12E53.8† vérifiée.",
+      "evidence": [
+        "content-snapshot.html#g32-code-body",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 3,
+      "title": "Classifications et stades",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g32-definition",
+      "sources": [
+        "R1",
+        "R4",
+        "R6",
+        "R7"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Distinction topographique myélopathie/neuropathie/combinée, cause et sévérité fonctionnelle ; pas stade universel G32.",
+      "evidence": [
+        "content-snapshot.html#g32-definition",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 4,
+      "title": "Épidémiologie suisse puis européenne",
+      "status": "covered",
+      "research_status": "LACUNE",
+      "anchor": "g32-epidemiologie",
+      "sources": [
+        "R4",
+        "R6",
+        "R7",
+        "R9"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Pas incidence/prévalence suisse G32 ni profil complet âge/sexe établi. Cas suisse et série allemande gardent sélection et dénominateurs ; données Infodrog non originales non extrapolées. Covered signifie que la question et sa limite sont traitées ; pas que la statistique nationale ou le droit administratif exhaustif a été trouvé. La matrice Betta conserve LACUNE.",
+      "evidence": [
+        "content-snapshot.html#g32-epidemiologie",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 5,
+      "title": "Normal vers pathologique",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g32-s-physio-body",
+      "sources": [
+        "R3",
+        "R7",
+        "R8",
+        "R12",
+        "R13"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Proprioception, voies motrices, myéline, cofacteurs B12 et hématologie reliés dans six sciences ; deux originaux humains sourcés.",
+      "evidence": [
+        "content-snapshot.html#g32-s-physio-body",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 6,
+      "title": "Étiologies et risques",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g32-causes",
+      "sources": [
+        "R3",
+        "R4",
+        "R5",
+        "R7",
+        "R8"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Carence par apports/absorption, cause auto-immune, chirurgie ou médicaments ; inactivation fonctionnelle N2O et autres causes médullaires différentielles.",
+      "evidence": [
+        "content-snapshot.html#g32-causes",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 7,
+      "title": "Anamnèse et symptômes",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g32-anamnese",
+      "sources": [
+        "R4",
+        "R5",
+        "R6",
+        "R7"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Tempo, marche, sensibilité, sphincters, alimentation, chirurgie, médicaments et exposition sans stigmatiser. Fréquences de série limitées aux testés.",
+      "evidence": [
+        "content-snapshot.html#g32-anamnese",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 8,
+      "title": "Examen clinique",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g32-examen-body",
+      "sources": [
+        "R4",
+        "R6",
+        "R7",
+        "R13"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Position et vibration, Romberg protégé, force, réflexes, marche et topographie ; absence de Babinski ou force normale n’exclut pas atteinte sensitive.",
+      "evidence": [
+        "content-snapshot.html#g32-examen-body",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 9,
+      "title": "Drapeaux rouges et urgences",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g32-urgence",
+      "sources": [
+        "R4",
+        "R5",
+        "R7"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Déficit rapidement progressif, perte autonomie, trouble sphinctérien ou respiratoire : évaluer urgence et causes compressives ; bilan initial sans retard de traitement spécialisé.",
+      "evidence": [
+        "content-snapshot.html#g32-urgence",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 10,
+      "title": "Examens complémentaires",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g32-e-strategie",
+      "sources": [
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : B12totale/active seloncontexte, MMA/HcyfonctionnelsN2O, hémogramme/organes, IRMcervicothoracique et neurophysiologieselonquestion ; limites méthodes/réin/délais.",
+      "evidence": [
+        "content-snapshot.html#g32-e-strategie",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 11,
+      "title": "Diagnostic différentiel",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g32-differentiel",
+      "sources": [
+        "R4",
+        "R7",
+        "R13"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Compression, inflammation, carencecuivre, infection et neuropathie ; pas attribution automatique auN2O sur seuleexposition ou Vinversé.",
+      "evidence": [
+        "content-snapshot.html#g32-differentiel",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 12,
+      "title": "Prise en charge suisse",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g32-traitement",
+      "sources": [
+        "R3",
+        "R4",
+        "R5",
+        "R7",
+        "R9"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : FIexacte Vitarubinejuillet2025, voieIM et dosesFI ; urgence/prélèvement et rythme spécialisé discutés avec notice. Abstinence et rééducation, pas méthionine systématique tirée d’un cas.",
+      "evidence": [
+        "content-snapshot.html#g32-traitement",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 13,
+      "title": "Complications et pronostic",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g32-complications",
+      "sources": [
+        "R3",
+        "R4",
+        "R6",
+        "R7"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Handicap et séquelles possibles, récupération variable ; suivi clinique, exposition/observance et causes concurrentes. Pas irréversibilité prouvée sur téléphone3mois.",
+      "evidence": [
+        "content-snapshot.html#g32-complications",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 14,
+      "title": "Suivi, prévention et dépistage",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g32-suivi",
+      "sources": [
+        "R3",
+        "R5",
+        "R7",
+        "R8",
+        "R9"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Réponse fonctionnelle et sécurité biologiquekaliémie, cause persistante et entretien ; soutienaddictologie, pas arrêt pour seuleB12haute sousinjections.",
+      "evidence": [
+        "content-snapshot.html#g32-suivi",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 15,
+      "title": "Situations particulières",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g32-particuliers",
+      "sources": [
+        "R3",
+        "R5",
+        "R7"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : NICE>16ans, enfant/adolescentnonétudiéFI ; grossesse/allaitement FI et recommandationsdiscutées, organes sansdoseinventée.",
+      "evidence": [
+        "content-snapshot.html#g32-particuliers",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 16,
+      "title": "Spécificités suisses",
+      "status": "covered",
+      "research_status": "LACUNE",
+      "anchor": "g32-suisse",
+      "sources": [
+        "R1",
+        "R3",
+        "R9",
+        "R10"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : ManuelOFS et ressources suisses vérifiés ; déclaration exacte seloncause, Suva/LAA,AI,conduite,LS/LiMA/remboursement nonétablis exhaustivement, pas absence d’obligationaffirmée. Covered signifie que la question et sa limite sont traitées ; pas que la statistique nationale ou le droit administratif exhaustif a été trouvé. La matrice Betta conserve LACUNE.",
+      "evidence": [
+        "content-snapshot.html#g32-suisse",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 17,
+      "title": "Critères formels",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g32-diagnostic",
+      "sources": [
+        "R1",
+        "R4",
+        "R5",
+        "R7",
+        "R13"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Pas scorevalidé toutG32 : syndrome,topographie,causeetpreuvesdocumentés ;carencefonctionnelle distingueconcentrationetactivité, image nonpathognomonique.",
+      "evidence": [
+        "content-snapshot.html#g32-diagnostic",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 18,
+      "title": "Paramètres clés",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g32-p-vitarubine",
+      "sources": [
+        "R3",
+        "R5",
+        "R7",
+        "R8"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Vitarubinecomposition1mgacétate/1ml,doseFI1000µg2–3fois/semaine ;seuilsNICEattribués,métaboliteslabo ;aucuneconversionbase ni ordonnanceuniverselle.",
+      "evidence": [
+        "content-snapshot.html#g32-p-vitarubine",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 19,
+      "title": "Sous-codes couverts",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g32-code-body",
+      "sources": [
+        "R1",
+        "R2",
+        "R10"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : G32.0* etG32.8* traitésdistinctement ;pasG32.9 inventé ni G32.8 fourre-tout de toute neuropathie.",
+      "evidence": [
+        "content-snapshot.html#g32-code-body",
+        "recherche_G32/sources.json"
+      ]
+    },
+    {
+      "point": 20,
+      "title": "Points d’examen fédéral et pièges",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g32-cas",
+      "sources": [
+        "R3",
+        "R5",
+        "R7",
+        "R8",
+        "R11",
+        "R13"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Casfictifs : forcevsataxie,B12normalefonctionnelle,folatesseuls,code/préparation/entretien ;correspondancePROFILES locale.",
+      "evidence": [
+        "content-snapshot.html#g32-cas",
+        "recherche_G32/sources.json"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "path": "figures/Gray764.png",
+      "canonical_path": "assets/img/g32/alpha/codex/Gray764.png",
+      "original_url": "https://commons.wikimedia.org/wiki/File:Gray764.png",
+      "source_article": "https://commons.wikimedia.org/wiki/File:Gray764.png",
+      "license": "Domainepublic : scanmécanique original1918,auteurmortdepuisplus100ans,noticepropre effectivementlue antérieurement parSol puisréutilisée.",
+      "author": "Gray,AnatomyoftheHumanBody1918 ; illustrationattribuéeàHenryVandykeCarter.",
+      "annotations": "Quatreannotationsfrançaisesadjacentes : airemotrice,capsuleinterne,décussation etfaisceauxcorticospinaux ; pascartedetoutelaproprioception ni lésionclinique.",
+      "medical_review": "Original,provenance,droits etpixels réellementinspectésparSol ; deuximagesdécodées,quatreannotationschacune etliensattribution testés1440/390,onzecapturesfinalesvues. Self_review,auteur,aucunevalidationmédicalehumaine.",
+      "sha256": "0aab3ff23b815eb5f6eab0ba8c583726c5994c025899f3f6654f47e566249b09",
+      "source": "R12",
+      "human_origin": true,
+      "pixels_edited": false
+    },
+    {
+      "path": "figures/SwissMyelopathy2026.jpg",
+      "canonical_path": "assets/img/g32/alpha/codex/SwissMyelopathy2026.jpg",
+      "original_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/23d7/13049691/7d9b842ad0f6/cureus-0018-00000104698-i01.jpg",
+      "source_article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13049691/",
+      "license": "CreativeCommonsAttribution4.0 : https://creativecommons.org/licenses/by/4.0/ ; attribution,source etlicenceliées,annotationsfrançaisesadjacentesajoutées,pixels/flèchesinchangés. Figure1aucuneexclusionspécifique ;figure5BioRenderAllrightsreserved nonimportée.",
+      "author": "WitzigA,deMassiasdeBonneJ,GallettiC,GarinN,HôpitalRiviera-Chablais ; Cureus2026,figure1.",
+      "annotations": "Quatreannotationsfrançaisesadjacentes : sagittalelocalisatrice,axialeflèchesorangeC1–C2,étendueC1–C5rapportéeetlimitesnonspécifiques ; publicationd’unhomme27ans,pasdelatéralitéinférée.",
+      "medical_review": "Original,provenance,droits etpixels réellementinspectésparSol ; deuximagesdécodées,quatreannotationschacune etliensattribution testés1440/390,onzecapturesfinalesvues. Self_review,auteur,aucunevalidationmédicalehumaine.",
+      "sha256": "067367a59d8b7bfb7c95921c8fd7ea63177d32c3bc7dd764bb266a64010337cb",
+      "source": "R4",
+      "human_origin": true,
+      "pixels_edited": false
+    }
+  ],
+  "semiology": {
+    "section_anchors": [
+      "g32-s-semio-normal",
+      "g32-s-semio-signs",
+      "g32-s-semio-mechanisms",
+      "g32-s-semio-examination",
+      "g32-s-semio-interpretation",
+      "g32-s-semio-differentials",
+      "g32-s-semio-urgency",
+      "g32-s-semio-limits",
+      "g32-s-semio-sources"
+    ]
+  },
+  "reviews": {
+    "medical": {
+      "path": "reviews/medical.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "95cb40a2ce3ccf594996880737a6da7c112f5a00e1dd4c4cdcc85aa77291aa0e"
+    },
+    "language": {
+      "path": "reviews/language.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "c8d34c36b5abe73dd8c6e908d2e97eb57678c433ebe9d5c3273e34fc00a8cb27"
+    },
+    "visual_desktop": {
+      "path": "reviews/visual_desktop.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "4a9601efbfee5c8b38e797c3eb3794fd9cb936e00f434540ee890aaed20cbfc0"
+    },
+    "visual_mobile": {
+      "path": "reviews/visual_mobile.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "825ed811e5cd3d28c334f6605b64b42c2318e0816df6ddf57d1f792cbbc82243"
+    }
+  },
+  "blocking_findings": [],
+  "documented_limits": [
+    {
+      "topic": "Périmètre et deux sous-codes",
+      "reason": "G32.0*etG32.8*distincts,associationB12E53.8†vérifiée ; pasG32.8fourretoutdesmyélopathies/neuropathies. Autrescausespreciséesdemandentdiagnostic etassociationvérifiés,aucunprotocolecommuninventé.",
+      "evidence": "matrix-20.json"
+    },
+    {
+      "topic": "Épidémiologie et statistiques",
+      "reason": "Pasincidence/prévalencesuisseG32 ni distributionexhaustiveâge/sexe. CasRennaz etsérie23allemandesélectionnée ne lesremplacentpas. PourcentageserronésdetableetunitéLCRincohérente nonrepris,comptespertinentsavecdénominateurs.",
+      "evidence": "recherche_G32/sources.json"
+    },
+    {
+      "topic": "Produit et stratégie",
+      "reason": "FI Vitarubinejuillet2025 :1mgacétate/1ml,sansconversionbase. DoseFI1000µg2–3fois/semaineIM ;IVlentepossiblenonrecommandée. StratégieUKspécialisée etNICEcarencegénérale gardentchampdistinct,nisecretdefréquenceniposologieméthionine/oralenonconfrontéeFI.",
+      "evidence": "clinical-review-completed.json"
+    },
+    {
+      "topic": "Tests et suivi",
+      "reason": "Concentrationetfonctiondifférentes,MMA/Hcyinfluencésparrein,autrescauses,arrêtettraitement. RepèresNICEattribués,référenceslabo respectées. Paspreuveparmarqueurisole ni arrêtpourB12hautesousinjections ; image/ENMGnormauxinitiauxnonexclusionabsolue.",
+      "evidence": "reviews/medical.json"
+    },
+    {
+      "topic": "Âge, grossesse et causes persistantes",
+      "reason": "NICEdès16ansinclus,bornevérifiéedansprésentationofficielleaprèsrédactionetcorrigée. FI enfant/adolescentnonétudié,grossesse/allaitementnécessitéabsolue ; guideetnoticeconfrontés. Gastriteautoimmune distincted’anémiepernicieuse etsuividigestifselonsymptômes,aucunintervalleuniverselinventé.",
+      "evidence": "age-scope-correction.json"
+    },
+    {
+      "topic": "Niveau de preuve",
+      "reason": "Cas2026noncomparatif,traitementetpronosticnonuniversels ; pasméthionineadjuvantesystématiquetiréed’uncas. Suivitéléphonique3moisavecnonobservance ne prouvepasirréversibilitédéfinitive. Récupérationvariable etcausesconcurrentes restentexplicites.",
+      "evidence": "reviews/medical.json"
+    },
+    {
+      "topic": "Administration suisse",
+      "reason": "ManuelOFS etressourcesaideSuisse lus ; déclaration,Suva/LAA,AI,conduite,LS/LiMAetremboursement nonétablisexhaustivement. Pasabsenced’obligationaffirmée ni certificatjuridique.",
+      "evidence": "matrix-20.json"
+    },
+    {
+      "topic": "Procédure, droits et accès",
+      "reason": "Premierstartrefusépourreçusnonsuiviscréésavantstart ; preuvesconservées,étatproprerétabli puisstart/gate/claim17:30:23avantrecherche. Pasconformitéinitialerevendiquée. ParallelSearchquota respecté,sansnouvelappelni identitémodifiée. Finderabsentnonlancé ; figure1MRIlicenciéeobtenuemanuellement,figure5droitsréservésexclue,consentementpasinventé.",
+      "evidence": "start-procedure-incident.json"
+    }
+  ],
+  "procedure": {
+    "prewriting_gate_before_first_new_medical_writing": true,
+    "evidence": "prewriting-gate.json",
+    "acquisition_return_awaited_before_worktree": true,
+    "full_worktree": "/workspace/Medina-neurologie-G32",
+    "initial_start_order_compliant": false,
+    "first_start_refusal_preserved": "first-start-refusal/start-G32.json",
+    "incident": "start-procedure-incident.json",
+    "effective_start_and_claim_at": "2026-11-02T17:30:23+00:00",
+    "effective_start_and_claim_before_primary_research": true,
+    "clinical_recheck": "clinical-review-completed.json",
+    "prior_native_version_preserved": "before-age-clarification"
+  },
+  "historical_model_trace": [
+    {
+      "agent_id": "astra_neurologie",
+      "scope": "Identifiantharnesshistoriqueconservé,recherche/rédaction/revuesG32parSol ; aucunhistoriqueAstrarenommé."
+    }
+  ],
+  "tokens_actual": null,
+  "cost_actual": null,
+  "clinical_certification": false,
+  "publication_allowed": false
+}
