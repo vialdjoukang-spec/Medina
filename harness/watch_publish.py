@@ -19,7 +19,7 @@ FILES=['status.json','dashboard.html','rapport-08h00.html','monitor.json',
        'runtime/state.json','runtime/watch.json','runtime/events.jsonl',
        'runtime/tests.json','runtime/tests.log']
 CODE_FILES=['medina_harness.py','bracelet.py','github_observe.py','watch_publish.py',
-            'remote_watchdog.py','watchdog-control.json','catalog.json','config.json','prompt-lock.json',
+            'remote_watchdog.py','bundle_native.py','watchdog-control.json','catalog.json','config.json','prompt-lock.json',
             'REPARTITION.md','dashboard-template.html','tests/test_harness.py','tests/test_remote_watchdog.py']
 
 def run(root,publisher):

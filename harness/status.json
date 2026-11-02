@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-02T01:48:32+00:00",
+  "generated_at": "2026-11-02T01:55:19+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T01:48:32+00:00",
+    "checked_at": "2026-11-02T01:55:19+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T01:47:54+00:00",
+    "observed_at": "2026-11-02T01:51:49+00:00",
     "ok": true,
     "findings": [],
     "interval_seconds": 600,
-    "observer_pid": 47877,
+    "observer_pid": 48312,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
   "tests": {
     "ok": true,
-    "code_sha256": "9f65aad3b4610086a94b6ba74146b3e3df79f04ab15c3ad6e8ae43eaf3617d0d",
-    "at": "2026-11-02T01:48:32+00:00",
+    "code_sha256": "07a99638dd3abf81400240bd816c855f3e8ecb5151218ef40e3cf0c1bd118b88",
+    "at": "2026-11-02T01:55:19+00:00",
     "returncode": 0,
     "log": "runtime/tests.log"
   },
@@ -1096,7 +1096,7 @@
           "Private GitHub cron and local watch depend on runner/environment availability"
         ]
       },
-      "activity_age_seconds": 306,
+      "activity_age_seconds": 712,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -2425,7 +2425,7 @@
           "audit_sciences base historique fixe à examiner avant usage sur cours tardifs"
         ]
       },
-      "activity_age_seconds": 203,
+      "activity_age_seconds": 609,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -2929,9 +2929,9 @@
           }
         ]
       },
-      "activity_age_seconds": 408,
+      "activity_age_seconds": 814,
       "activity_fresh": true,
-      "sections_per_hour": 34.13,
+      "sections_per_hour": 26.76,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -3181,9 +3181,9 @@
         },
         "next_action": "Passages sources, monographie, sémiologie et iconographie avant toute revue"
       },
-      "activity_age_seconds": 176,
+      "activity_age_seconds": 582,
       "activity_fresh": true,
-      "sections_per_hour": 14.63,
+      "sections_per_hour": 11.47,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
@@ -3481,6 +3481,12 @@
       "action": "watch",
       "ok": true,
       "findings": 0
+    },
+    {
+      "at": "2026-11-02T01:51:49+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
     }
   ],
   "cache": {
@@ -3495,9 +3501,14 @@
     "main_medina_modified": false,
     "native_agents_persistent": false,
     "branch": "codex/harness-observations-20261102",
-    "last_verified_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41372212569",
+    "last_verified_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41374424262",
     "last_verified_conclusion": "success",
-    "report_automation": "enabled;2026-11-02T08:00:00+01:00"
+    "report_automation": "enabled;2026-11-02T08:00:00+01:00",
+    "independent_watchdog": "active; workflow_dispatch handoff verified",
+    "watchdog_bootstrap_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41374424262",
+    "watchdog_successor_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41374451212",
+    "watchdog_verified_at": "2026-11-02T01:49:16+00:00",
+    "resource_budget": "No LLM calls per observation; standard Actions runner waits between600s checks; billable amount not exposed"
   },
   "prompt": {
     "identified_at": "2026-11-02",
