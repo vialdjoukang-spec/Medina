@@ -1,0 +1,456 @@
+{
+  "schema_version": 1,
+  "agent": "astra_nephrologie",
+  "specialty": "Néphrologie",
+  "fragment": "S04",
+  "fragment_label": "N-07-Néphrologie",
+  "prepared_at": "2026-11-02T01:16:51.601917+00:00",
+  "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+  "status": "preparation_only_waiting_harness_tests_watch_gate",
+  "selected_lesson": {
+    "code": "N04",
+    "title": "Syndrome néphrotique",
+    "mode": "retrospective_review_existing",
+    "reason": "Existant attribué à Codex, sans réservation dans snapshot commun ; N17 actif conservé.",
+    "reservation_acquired": false,
+    "worktree": null,
+    "mission_manifest": ".medina/missions/ALPHA77-CODEX-N04-INTEGRATE.json",
+    "manifest_state": "active",
+    "manifest_generation": 1,
+    "manifest_base_sha": "8712c3fe758f0c7e1f9fb85378def47b554edb53",
+    "mission_paths": [
+      "chapters/N04",
+      "glossary/n04.py",
+      "assets/img/n04/alpha/codex",
+      "organisation/alpha-publications/Codex/N04",
+      "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE"
+    ],
+    "source_files_sha256": {
+      "chapters/N04/N04_a.html": "1e2a622ed7469badb11654ee56df66948f8f84a7e91c80e1c7f65d27830290f0",
+      "chapters/N04/N04_b.html": "28a8605bfe3a8d3e3f3861291edf6b0619766af889272b16fa72f33a292332ce",
+      "chapters/N04/N04_c.html": "ad4a22d038b097e350dac516a94cccb6a31bd7dcea687fa2366fe4e92c458af6",
+      "chapters/N04/N04_d.html": "55612afc7de13681e121bef1fe940acbca5504202ee1b86e4ccac79ea75573c6",
+      "chapters/N04/N04_pop1.html": "55dd081e6e84a3cffc76efd74614180fb9570481d95e7b9f240c2850042c0e19",
+      "chapters/N04/N04_pop2.html": "b5727a67ea1cd313b18435d80aa453f3df901a78599238b3d921d51132ee94a7",
+      "glossary/n04.py": "9ce1e996d779162cd29b2bad0983024fdeb50341eb910cc868bc9b6689d23657"
+    }
+  },
+  "instruction_priority": "Ordre actuel : quatre spécialités en parallèle et une leçon à la fois par agent ; remplace les lots historiques, sans supprimer les réservations.",
+  "counts": {
+    "conservative_s04_targets": 33,
+    "existing": 6,
+    "new": 27,
+    "codex_targets": 16,
+    "claude_targets": 17,
+    "codex_alpha77_targets": 9,
+    "n04_html_files": 6,
+    "n04_html_bytes": 249809,
+    "n04_source_records": 16,
+    "n04_swissmedic_records": 22,
+    "n04_inherited_claim_records": 113,
+    "n04_science_tabs": 4,
+    "n04_semio_markers": 0,
+    "n04_local_assets": 5
+  },
+  "metrics": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "cost": null,
+    "clinical_quality_score": null,
+    "human_medical_validation": false
+  },
+  "queue": [
+    {
+      "order": 1,
+      "code": "N04",
+      "title": "Syndrome néphrotique",
+      "owner": "Codex",
+      "mode": "existing_review",
+      "in_alpha77_campaign": true,
+      "reserved_by": [],
+      "dispatchable_after_gate": true,
+      "state": "selected_pending_harness_gate"
+    },
+    {
+      "order": 2,
+      "code": "N29",
+      "title": "Autres affections du rein et de l’uretère au cours de maladies classées ailleurs",
+      "owner": "Codex",
+      "mode": "existing_review",
+      "in_alpha77_campaign": true,
+      "reserved_by": [],
+      "dispatchable_after_gate": true,
+      "state": "queued_after_previous_closure"
+    },
+    {
+      "order": 3,
+      "code": "N17",
+      "title": "Insuffisance rénale aiguë",
+      "owner": "Codex",
+      "mode": "existing_review",
+      "in_alpha77_campaign": true,
+      "reserved_by": [
+        "ALPHA1-CODEX-N17-MED",
+        "ALPHA1-CODEX-N17-LANG",
+        "ALPHA77-CODEX-LOT01-COORD",
+        "ALPHA77-CODEX-N17-INTEGRATE"
+      ],
+      "dispatchable_after_gate": false,
+      "state": "reserved_do_not_touch"
+    },
+    {
+      "order": 4,
+      "code": "N00",
+      "title": "Syndrome néphritique aigu",
+      "owner": "Codex",
+      "mode": "new_lesson",
+      "in_alpha77_campaign": true,
+      "reserved_by": [],
+      "dispatchable_after_gate": true,
+      "state": "queued_after_previous_closure"
+    },
+    {
+      "order": 5,
+      "code": "C64",
+      "title": "Tumeur maligne du rein, à l’exception du bassinet",
+      "owner": "Codex",
+      "mode": "new_lesson",
+      "in_alpha77_campaign": true,
+      "reserved_by": [],
+      "dispatchable_after_gate": true,
+      "state": "queued_after_previous_closure"
+    },
+    {
+      "order": 6,
+      "code": "N02",
+      "title": "Hématurie récidivante et persistante",
+      "owner": "Codex",
+      "mode": "new_lesson",
+      "in_alpha77_campaign": true,
+      "reserved_by": [],
+      "dispatchable_after_gate": true,
+      "state": "queued_after_previous_closure"
+    },
+    {
+      "order": 7,
+      "code": "N03",
+      "title": "Syndrome néphritique chronique",
+      "owner": "Codex",
+      "mode": "new_lesson",
+      "in_alpha77_campaign": true,
+      "reserved_by": [],
+      "dispatchable_after_gate": true,
+      "state": "queued_after_previous_closure"
+    },
+    {
+      "order": 8,
+      "code": "N05",
+      "title": "Syndrome néphritique, sans précision",
+      "owner": "Codex",
+      "mode": "new_lesson",
+      "in_alpha77_campaign": true,
+      "reserved_by": [],
+      "dispatchable_after_gate": true,
+      "state": "queued_after_previous_closure"
+    },
+    {
+      "order": 9,
+      "code": "N06",
+      "title": "Protéinurie isolée avec lésions morphologiques précisées",
+      "owner": "Codex",
+      "mode": "new_lesson",
+      "in_alpha77_campaign": true,
+      "reserved_by": [],
+      "dispatchable_after_gate": true,
+      "state": "queued_after_previous_closure"
+    },
+    {
+      "order": 10,
+      "code": "N07",
+      "title": "Néphropathie héréditaire, non classée ailleurs",
+      "owner": "Codex",
+      "mode": "new_lesson",
+      "in_alpha77_campaign": false,
+      "reserved_by": [],
+      "dispatchable_after_gate": false,
+      "state": "backlog_not_in_77_campaign"
+    },
+    {
+      "order": 11,
+      "code": "N10",
+      "title": "Néphrite tubulo-interstitielle aiguë",
+      "owner": "Codex",
+      "mode": "new_lesson",
+      "in_alpha77_campaign": false,
+      "reserved_by": [],
+      "dispatchable_after_gate": false,
+      "state": "backlog_not_in_77_campaign"
+    },
+    {
+      "order": 12,
+      "code": "N11",
+      "title": "Néphrite tubulo-interstitielle chronique",
+      "owner": "Codex",
+      "mode": "new_lesson",
+      "in_alpha77_campaign": false,
+      "reserved_by": [],
+      "dispatchable_after_gate": false,
+      "state": "backlog_not_in_77_campaign"
+    },
+    {
+      "order": 13,
+      "code": "N14",
+      "title": "Atteintes tubulo-interstitielles et tubulaires dues à des médicaments et des métaux lourds",
+      "owner": "Codex",
+      "mode": "new_lesson",
+      "in_alpha77_campaign": false,
+      "reserved_by": [],
+      "dispatchable_after_gate": false,
+      "state": "backlog_not_in_77_campaign"
+    },
+    {
+      "order": 14,
+      "code": "Q60",
+      "title": "Agénésie rénale et autres défauts de développement rénal",
+      "owner": "Codex",
+      "mode": "new_lesson",
+      "in_alpha77_campaign": false,
+      "reserved_by": [],
+      "dispatchable_after_gate": false,
+      "state": "backlog_not_in_77_campaign"
+    },
+    {
+      "order": 15,
+      "code": "Q61",
+      "title": "Maladies kystiques du rein",
+      "owner": "Codex",
+      "mode": "new_lesson",
+      "in_alpha77_campaign": false,
+      "reserved_by": [],
+      "dispatchable_after_gate": false,
+      "state": "backlog_not_in_77_campaign"
+    },
+    {
+      "order": 16,
+      "code": "S37",
+      "title": "Lésion traumatique des organes pelviens et urinaires",
+      "owner": "Codex",
+      "mode": "new_lesson",
+      "in_alpha77_campaign": false,
+      "reserved_by": [],
+      "dispatchable_after_gate": false,
+      "state": "backlog_not_in_77_campaign"
+    }
+  ],
+  "other_owner_read_only": [
+    {
+      "code": "N12",
+      "title": "Néphrite tubulo-interstitielle, non précisée comme aiguë ou chronique",
+      "owner": "Claude",
+      "mode": "audit",
+      "reserved_by": [
+        "ALPHA1-CLAUDE-N12-MED",
+        "ALPHA1-CLAUDE-N12-LANG"
+      ]
+    },
+    {
+      "code": "N18",
+      "title": "Maladie rénale chronique",
+      "owner": "Claude",
+      "mode": "audit",
+      "reserved_by": []
+    },
+    {
+      "code": "N27",
+      "title": "Petit rein de cause inconnue",
+      "owner": "Claude",
+      "mode": "audit",
+      "reserved_by": [
+        "ALPHA1-CLAUDE-N27-MED",
+        "ALPHA1-CLAUDE-N27-LANG"
+      ]
+    },
+    {
+      "code": "C65",
+      "title": "Tumeur maligne du bassinet",
+      "owner": "Claude",
+      "mode": "production",
+      "reserved_by": []
+    },
+    {
+      "code": "C66",
+      "title": "Tumeur maligne de l’uretère",
+      "owner": "Claude",
+      "mode": "production",
+      "reserved_by": []
+    },
+    {
+      "code": "N01",
+      "title": "Syndrome néphritique d’évolution rapide",
+      "owner": "Claude",
+      "mode": "production",
+      "reserved_by": []
+    },
+    {
+      "code": "N08",
+      "title": "Glomérulopathies au cours de maladies classées ailleurs",
+      "owner": "Claude",
+      "mode": "production",
+      "reserved_by": []
+    },
+    {
+      "code": "N13",
+      "title": "Uropathie obstructive et par reflux",
+      "owner": "Claude",
+      "mode": "production",
+      "reserved_by": []
+    },
+    {
+      "code": "N15",
+      "title": "Autres maladies rénales tubulo-interstitielles",
+      "owner": "Claude",
+      "mode": "production",
+      "reserved_by": []
+    },
+    {
+      "code": "N16",
+      "title": "Maladies rénales tubulo-interstitielles au cours de maladies classées ailleurs",
+      "owner": "Claude",
+      "mode": "production",
+      "reserved_by": []
+    },
+    {
+      "code": "N19",
+      "title": "Insuffisance rénale, sans précision",
+      "owner": "Claude",
+      "mode": "production",
+      "reserved_by": []
+    },
+    {
+      "code": "N25",
+      "title": "Affections dues à une tubulopathie",
+      "owner": "Claude",
+      "mode": "production",
+      "reserved_by": []
+    },
+    {
+      "code": "N26",
+      "title": "Rein scléreux, sans précision",
+      "owner": "Claude",
+      "mode": "production",
+      "reserved_by": []
+    },
+    {
+      "code": "N28",
+      "title": "Autres affections du rein et de l’uretère, non classées ailleurs",
+      "owner": "Claude",
+      "mode": "production",
+      "reserved_by": []
+    },
+    {
+      "code": "Q62",
+      "title": "Anomalies congénitales obstructives du bassinet et malformations congénitales de l’uretère",
+      "owner": "Claude",
+      "mode": "production",
+      "reserved_by": []
+    },
+    {
+      "code": "Q63",
+      "title": "Autres malformations congénitales du rein",
+      "owner": "Claude",
+      "mode": "production",
+      "reserved_by": []
+    },
+    {
+      "code": "Z49",
+      "title": "Surveillance d’une dialyse",
+      "owner": "Claude",
+      "mode": "production",
+      "reserved_by": []
+    }
+  ],
+  "quality_requirements": [
+    "Aucun fait médical issu de la seule mémoire du modèle ; assertion reliée à un passage effectivement lu, daté, avec population et limites.",
+    "Sources suisses applicables puis européennes ; KDIGO seulement avec applicabilité motivée ; aucune recommandation américaine décisionnelle.",
+    "Chaque médicament : FI suisse produit exact, date, dose, voie, fréquence, durée, maximum, adaptations, contre-indications et interactions ; hors indication explicite.",
+    "Matrice de complétude à 20 rubriques et porte betta_verite avant rédaction ; lacunes visibles sans validation fabriquée.",
+    "Quatre onglets et plan monographique clinique ; sémiologie clinique dans pA, sous-onglet Sémiologie fondamentale et analytique en premier dans pS, neuf sections substantielles.",
+    "Fondamentales : normal puis mécanisme, conséquence clinique et décision ; paramètres avec unité, population, méthode, intervalle suisse applicable ; calculs explicités et cliquables.",
+    "Figures anatomiques originales humaines avec droits propres, attribution, provenance et revue visuelle ; aucun dessin anatomique IA, SVG inclus.",
+    "Contrôle de toutes les surfaces, navigation réelle ordinateur/mobile390, fenêtres, Livre et police agrandie ; captures réelles.",
+    "Audits et preuves liés aux empreintes finales ; distinguer relu, corrigé, testé, publié et validé médicalement."
+  ],
+  "monograph_plan": [
+    "Question clinique et objectifs",
+    "Définition, critères et classifications",
+    "Épidémiologie suisse puis européenne et pronostic",
+    "Physiopathologie depuis le fonctionnement normal",
+    "Étiologies et facteurs de risque",
+    "Anamnèse et sémiologie clinique analytique",
+    "Examen clinique : technique, interprétation, limites",
+    "Démarche diagnostique et différentiels",
+    "Urgences et complications",
+    "Prise en charge causale et traitement de soutien",
+    "Surveillance, récupération, prévention et suivi",
+    "Situations particulières : enfant, grossesse, âgé, comorbidités",
+    "Références, lacunes explicites et métadonnées CIM après la conclusion clinique"
+  ],
+  "proofs_to_read": [
+    "livraisons/Livraison Claude/N-07-Néphrologie/travail/CYCLE_03_N04/preuves/dossier_sources.json",
+    "livraisons/Livraison Claude/N-07-Néphrologie/travail/CYCLE_03_N04/preuves/source_ledger_claude.json",
+    "livraisons/Livraison Claude/N-07-Néphrologie/travail/CYCLE_03_N04/preuves/contexte_suisse_claude.json",
+    "livraisons/Livraison Claude/N-07-Néphrologie/travail/CYCLE_03_N04/preuves/contexte_suisse_controle.json",
+    "livraisons/Livraison Claude/N-07-Néphrologie/travail/CYCLE_03_N04/preuves/images_claude.json",
+    "livraisons/Livraison Claude/N-07-Néphrologie/travail/CYCLE_03_N04/assets/img/cycle3/n04/ATTRIBUTIONS.json"
+  ],
+  "primary_sources_to_reopen": [
+    "https://catalogue.chuv.ch/analyses-examens/laboratoires/fiche/download/DLA_INV_01_00380?no_cache=1",
+    "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+    "https://kdigo.org/wp-content/uploads/2025/04/KDIGO-2025-Guideline-for-Nephrotic-Syndrome-in-Children.pdf",
+    "https://www.bag.admin.ch/dam/fr/sd-web/Oj0BSN-w-Ggs/Plan%20de%20vaccination%20suisse_2026_FR_Web_final.pdf",
+    "https://www.infovac.ch/docs/public/streptococcus/ofsp-cfv-prise-de-position-recommandation-des-pcv-par-groupe-cible-e--tat-au-01-07-26-fr.pdf",
+    "https://www.revmed.ch/revue-medicale-suisse/2022/revue-medicale-suisse-771/syndrome-nephrotique-de-l-adulte-et-autres-proteinuries-de-fort-debit",
+    "https://www.swissnephrology.ch/wp/wp-content/uploads/2025/03/Version-2025_Francais_V_17.03.2025_WZ.pdf"
+  ],
+  "source_reading_status": "Inventaire et extraits des registres hérités lus ; aucune relecture clinique exhaustive externe N04 effectuée dans cette préparation.",
+  "reusable_tools": [
+    "tools/betta_verite.py",
+    "tools/swissmedic_fi.py",
+    "tools/image_codex_finder.py",
+    "tools/ai_session_guard.py",
+    "tools/alpha_publication.py",
+    "tests/audit_sciences.py",
+    "test_v7.py",
+    "tools/capture_lecon.py",
+    "tools/starter_codex.py",
+    "tests/test_starter_codex.py",
+    "tests/test_image_codex_finder.py",
+    "tests/test_audit_sciences.py"
+  ],
+  "next_gate": [
+    "Harness et tests réussis et veille fonctionnelle prouvée par parent",
+    "Réservation vérifiée à nouveau, mission/base/génération alignées et worktree exclusif",
+    "Recherche N04 traçable et porte de vérité avant tout cours"
+  ],
+  "preliminary_findings": [
+    {
+      "id": "N04-SEMIO-ABSENT",
+      "severity": "MAJEUR",
+      "evidence": "Quatre boutons data-s dans N04_c.html ; aucun marqueur data-semiology ni sous-onglet dédié.",
+      "status": "structural_observation_not_medical_audit"
+    },
+    {
+      "id": "N04-FIGURES-REVIEW",
+      "severity": "reserve",
+      "evidence": "Figures1 filtre glomérulaire et8 néphron sont des SVG didactiques ; provenance humaine à vérifier, ne pas déduire origine IA du seul format.",
+      "status": "origin_not_yet_verified"
+    },
+    {
+      "id": "N04-CIM-POSITION",
+      "severity": "editorial",
+      "evidence": "Sous-section codage CIM dans A02 ; à réévaluer contre instruction monographique et métadonnées discrètes.",
+      "status": "observed"
+    }
+  ]
+}

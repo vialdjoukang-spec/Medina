@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "deadline": "2026-11-02T08:00:00+01:00",
+  "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+  "interval_seconds": 600,
+  "agents": [
+    {
+      "id": "astra_neurologie",
+      "specialty": "neurologie",
+      "system": "S08",
+      "model": "gpt-6-astra",
+      "reasoning": "high",
+      "queue": [
+        "G02",
+        "G05",
+        "I64",
+        "C70",
+        "G03",
+        "G06",
+        "G07",
+        "G08",
+        "G09",
+        "G21",
+        "G22",
+        "G24",
+        "G25",
+        "G26",
+        "G32",
+        "G36",
+        "G37",
+        "G52",
+        "G53",
+        "G55",
+        "G57",
+        "G59",
+        "G60",
+        "I66",
+        "I68",
+        "R25",
+        "R47",
+        "G00",
+        "G04",
+        "G41",
+        "I60",
+        "R40",
+        "G30",
+        "G40"
+      ],
+      "reserved_elsewhere": [
+        "I63",
+        "G01"
+      ],
+      "owner": "astra_neurologie",
+      "clinical_orchestration": true
+    },
+    {
+      "id": "astra_endocrinologie",
+      "specialty": "endocrinologie",
+      "system": "S05",
+      "model": "gpt-6-astra",
+      "reasoning": "high",
+      "queue": [
+        "E00",
+        "E01",
+        "E02",
+        "E07",
+        "E14",
+        "E25",
+        "E30",
+        "E32",
+        "E35",
+        "E40",
+        "E42",
+        "E04",
+        "C73",
+        "C74",
+        "E06",
+        "E13",
+        "E20"
+      ],
+      "reserved_elsewhere": [
+        "E10",
+        "E05"
+      ],
+      "owner": "astra_endocrinologie",
+      "clinical_orchestration": false
+    },
+    {
+      "id": "astra_nephrologie",
+      "specialty": "nephrologie",
+      "system": "S04",
+      "model": "gpt-6-astra",
+      "reasoning": "high",
+      "queue": [
+        "N04",
+        "N29",
+        "N00",
+        "C64",
+        "N02",
+        "N03",
+        "N05",
+        "N06"
+      ],
+      "reserved_elsewhere": [
+        "N17"
+      ],
+      "owner": "astra_nephrologie",
+      "clinical_orchestration": false
+    },
+    {
+      "id": "codex_hematologie",
+      "specialty": "hematologie",
+      "system": "S06",
+      "model": "Codex — modèle de session non modifiable",
+      "reasoning": "paramètre de session",
+      "queue": [
+        "C85",
+        "C86",
+        "C95",
+        "D63",
+        "D77",
+        "C92",
+        "D62",
+        "D65",
+        "D66",
+        "C82",
+        "C88"
+      ],
+      "reserved_elsewhere": [
+        "D69",
+        "D64"
+      ],
+      "owner": "codex_hematologie",
+      "clinical_orchestration": false
+    }
+  ],
+  "publication": "blocked_pending_owner_review",
+  "no_pr_main": true
+}

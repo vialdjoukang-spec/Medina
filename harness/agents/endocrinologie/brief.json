@@ -1,0 +1,1271 @@
+{
+  "schema_version": 1,
+  "prepared_at": "2026-11-02T01:16:45.312443+00:00",
+  "agent": "astra_endocrinologie",
+  "specialty": "Endocrinologie et métabolisme",
+  "fragment": "S05",
+  "label": "E-06-Endocrinologie et métabolisme",
+  "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+  "phase": "preparation_only_waiting_harness_veille_and_exclusive_worktree",
+  "selected_lesson": {
+    "code": "E00",
+    "title": "Syndrome d’insuffisance thyroïdienne congénitale",
+    "reason": "Premier existant Codex libre de réservation dans ordre Starter; E10 et E05 actifs sont exclus.",
+    "mission_candidate": ".medina/missions/ALPHA77-CODEX-E00-INTEGRATE.json",
+    "mission_old_base": "8712c3fe758f0c7e1f9fb85378def47b554edb53",
+    "reservation_acquired": false,
+    "start_passed": false,
+    "required_before_writing": [
+      "harness testé",
+      "veille exigée réussie et preuves datées",
+      "mission adaptée au SHA approuvé",
+      "acquisition distante fraîche",
+      "worktree exclusif",
+      "start réussi",
+      "sources primaires utiles réellement lues",
+      "betta_verite.py avant rédaction"
+    ]
+  },
+  "authorization_scope": "Préparation seulement dans harness/agents/endocrinologie; aucune écriture médicale, aucun commit ni index. Ordre courant spécialités parallèles/une leçon à la fois remplace lots historiques, pas réservations.",
+  "counts": {
+    "canonical_s05": 26,
+    "existing_codex": 13,
+    "existing_claude": 13,
+    "production_codex": 25,
+    "production_claude": 24,
+    "reserve_codex": 1,
+    "reserve_claude": 1,
+    "all_plan_targets": 77,
+    "codex_full_queue_including_reserve": 39,
+    "starter_s05_entries": 19
+  },
+  "evidence_inputs": {
+    "chapters.json": {
+      "sha256": "27dc1e165c6a1ef44ba5c82fee55594f57032e8640bc411e8e99a283533fab37"
+    },
+    ".medina/7-starter-codex.json": {
+      "sha256": "00ae3c93314165a199a62a28c1f32c36e2d86ce7175bdb7f496958ac179e1ae2"
+    },
+    "docs/collaboration/ssp-v2/2026-10-15/plan-v2.json": {
+      "sha256": "6a88d91878f825075342797596fc2fdd182d635924d9486a2a8007ea3bdcd1a7"
+    },
+    ".medina/missions/ALPHA77-CODEX-E00-INTEGRATE.json": {
+      "sha256": "bebb206cae7d58e36391de678f8d0108f51bda9d87ded9c3116d6088eb544a9d"
+    }
+  },
+  "reservation_snapshot": {
+    "path": "/tmp/medina-harness-discovery/registry.json",
+    "sha256": "bb09f47027868c3cee759d641f1fb3753eb63a4e82175c8b99e7153ab4b1957c",
+    "fresh_check_required_before_acquire": true
+  },
+  "queue": [
+    {
+      "code": "E10",
+      "title": "Diabète sucré de type 1",
+      "owner": "Codex",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E10-CODEX",
+      "starter_index": 2,
+      "active_reservations": [
+        "ALPHA1-CODEX-E10-MED",
+        "ALPHA1-CODEX-E10-LANG",
+        "ALPHA77-CODEX-LOT01-COORD",
+        "ALPHA77-CODEX-E10-INTEGRATE"
+      ],
+      "state": "reserved"
+    },
+    {
+      "code": "E05",
+      "title": "Thyréotoxicose [hyperthyroïdie]",
+      "owner": "Codex",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E05-CODEX",
+      "starter_index": 3,
+      "active_reservations": [
+        "ALPHA1-CODEX-E05-MED",
+        "ALPHA1-CODEX-E05-LANG",
+        "ALPHA77-CODEX-LOT01-COORD",
+        "ALPHA77-CODEX-E05-INTEGRATE"
+      ],
+      "state": "reserved"
+    },
+    {
+      "code": "E00",
+      "title": "Syndrome d’insuffisance thyroïdienne congénitale",
+      "owner": "Codex",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E00-CODEX",
+      "starter_index": 8,
+      "active_reservations": [],
+      "state": "review_existing"
+    },
+    {
+      "code": "E01",
+      "title": "Affections thyroïdiennes et apparentées liées à une carence en iode",
+      "owner": "Codex",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E01-CODEX",
+      "starter_index": 12,
+      "active_reservations": [],
+      "state": "review_existing"
+    },
+    {
+      "code": "E02",
+      "title": "Hypothyroïdie par carence inapparente en iode",
+      "owner": "Codex",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E02-CODEX",
+      "starter_index": 16,
+      "active_reservations": [],
+      "state": "review_existing"
+    },
+    {
+      "code": "E07",
+      "title": "Autres affections de la thyroïde",
+      "owner": "Codex",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E07-CODEX",
+      "starter_index": 19,
+      "active_reservations": [],
+      "state": "review_existing"
+    },
+    {
+      "code": "E14",
+      "title": "Diabète sucré, sans précision",
+      "owner": "Codex",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E14-CODEX",
+      "starter_index": 22,
+      "active_reservations": [],
+      "state": "review_existing"
+    },
+    {
+      "code": "E25",
+      "title": "Anomalies génito-surrénaliennes",
+      "owner": "Codex",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E25-CODEX",
+      "starter_index": 25,
+      "active_reservations": [],
+      "state": "review_existing"
+    },
+    {
+      "code": "E30",
+      "title": "Anomalies de la puberté, non classées ailleurs",
+      "owner": "Codex",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E30-CODEX",
+      "starter_index": 27,
+      "active_reservations": [],
+      "state": "review_existing"
+    },
+    {
+      "code": "E32",
+      "title": "Maladies du thymus",
+      "owner": "Codex",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E32-CODEX",
+      "starter_index": 29,
+      "active_reservations": [],
+      "state": "review_existing"
+    },
+    {
+      "code": "E35",
+      "title": "Anomalies endocriniennes au cours de maladies classées ailleurs",
+      "owner": "Codex",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E35-CODEX",
+      "starter_index": 31,
+      "active_reservations": [],
+      "state": "review_existing"
+    },
+    {
+      "code": "E40",
+      "title": "Kwashiorkor",
+      "owner": "Codex",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E40-CODEX",
+      "starter_index": 33,
+      "active_reservations": [],
+      "state": "review_existing"
+    },
+    {
+      "code": "E42",
+      "title": "Kwashiorkor avec marasme",
+      "owner": "Codex",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E42-CODEX",
+      "starter_index": 35,
+      "active_reservations": [],
+      "state": "review_existing"
+    },
+    {
+      "code": "E04",
+      "title": "Autres goitres non toxiques",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E04-CODEX",
+      "starter_index": 53,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "C73",
+      "title": "Tumeur maligne de la thyroïde",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-C73-CODEX",
+      "starter_index": 57,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "C74",
+      "title": "Tumeur maligne de la surrénale",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-C74-CODEX",
+      "starter_index": 61,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E06",
+      "title": "Thyroïdite",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E06-CODEX",
+      "starter_index": 65,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E13",
+      "title": "Autres diabètes sucrés précisés",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E13-CODEX",
+      "starter_index": 69,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E20",
+      "title": "Hypoparathyroïdie",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E20-CODEX",
+      "starter_index": 73,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E21",
+      "title": "Hyperparathyroïdie et autres maladies de la glande parathyroïde",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E21-CODEX",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E22",
+      "title": "Hypersécrétion de l’hypophyse",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E22-CODEX",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E23",
+      "title": "Hyposécrétion et autres anomalies de l’hypophyse",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E23-CODEX",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E24",
+      "title": "Syndrome de Cushing",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E24-CODEX",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E26",
+      "title": "Hyperaldostéronisme",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E26-CODEX",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E28",
+      "title": "Dysfonction ovarienne",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E28-CODEX",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E29",
+      "title": "Dysfonction testiculaire",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E29-CODEX",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E31",
+      "title": "Dysfonctionnement pluriglandulaire",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E31-CODEX",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E43",
+      "title": "Malnutrition protéino-énergétique grave, sans précision",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E43-CODEX",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E44",
+      "title": "Malnutrition protéino-énergétique légère ou modérée",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E44-CODEX",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E53",
+      "title": "Autres avitaminoses du groupe B",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E53-CODEX",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E55",
+      "title": "Carence en vitamine D",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E55-CODEX",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E60",
+      "title": "Carence alimentaire en zinc",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E60-CODEX",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E61",
+      "title": "Carences en autres éléments nutritionnels",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E61-CODEX",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E64",
+      "title": "Séquelles de malnutrition et autres carences nutritionnelles",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E64-CODEX",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E65",
+      "title": "Adiposité localisée",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E65-CODEX",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E67",
+      "title": "Autres excès d’apport",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E67-CODEX",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E68",
+      "title": "Séquelles d’excès d’apport",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E68-CODEX",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E70",
+      "title": "Anomalies du métabolisme des acides aminés aromatiques",
+      "owner": "Codex",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E70-CODEX",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E79",
+      "title": "Anomalies du métabolisme de la purine et de la pyrimidine",
+      "owner": "Codex",
+      "mode": "reserve",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-RESERVE-S05-E79-CODEX",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "scope_reserve"
+    }
+  ],
+  "other_owner_queue_read_only": [
+    {
+      "code": "E11",
+      "title": "Diabète sucré de type 2",
+      "owner": "Claude",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E11-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "review_existing"
+    },
+    {
+      "code": "E12",
+      "title": "Diabète sucré de malnutrition",
+      "owner": "Claude",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E12-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "review_existing"
+    },
+    {
+      "code": "E34",
+      "title": "Autres troubles endocriniens",
+      "owner": "Claude",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E34-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [
+        "ALPHA1-CLAUDE-E34-MED",
+        "ALPHA1-CLAUDE-E34-LANG"
+      ],
+      "state": "reserved"
+    },
+    {
+      "code": "E41",
+      "title": "Marasme nutritionnel",
+      "owner": "Claude",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E41-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [
+        "ALPHA1-CLAUDE-E41-MED",
+        "ALPHA1-CLAUDE-E41-LANG"
+      ],
+      "state": "reserved"
+    },
+    {
+      "code": "E45",
+      "title": "Retard de développement après malnutrition protéino-énergétique",
+      "owner": "Claude",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E45-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [
+        "ALPHA1-CLAUDE-E45-MED",
+        "ALPHA1-CLAUDE-E45-LANG"
+      ],
+      "state": "reserved"
+    },
+    {
+      "code": "E46",
+      "title": "Malnutrition protéino-énergétique, sans précision",
+      "owner": "Claude",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E46-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [
+        "ALPHA1-CLAUDE-E46-MED",
+        "ALPHA1-CLAUDE-E46-LANG"
+      ],
+      "state": "reserved"
+    },
+    {
+      "code": "E50",
+      "title": "Avitaminose A",
+      "owner": "Claude",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E50-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [
+        "ALPHA1-CLAUDE-E50-MED",
+        "ALPHA1-CLAUDE-E50-LANG"
+      ],
+      "state": "reserved"
+    },
+    {
+      "code": "E51",
+      "title": "Carence en thiamine [carence en vitamine B1]",
+      "owner": "Claude",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E51-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [
+        "ALPHA1-CLAUDE-E51-MED",
+        "ALPHA1-CLAUDE-E51-LANG"
+      ],
+      "state": "reserved"
+    },
+    {
+      "code": "E52",
+      "title": "Carence en acide nicotinique [pellagre]",
+      "owner": "Claude",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E52-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [
+        "ALPHA1-CLAUDE-E52-MED",
+        "ALPHA1-CLAUDE-E52-LANG"
+      ],
+      "state": "reserved"
+    },
+    {
+      "code": "E54",
+      "title": "Carence en acide ascorbique",
+      "owner": "Claude",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E54-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [
+        "ALPHA1-CLAUDE-E54-MED",
+        "ALPHA1-CLAUDE-E54-LANG"
+      ],
+      "state": "reserved"
+    },
+    {
+      "code": "E56",
+      "title": "Autres avitaminoses",
+      "owner": "Claude",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E56-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [
+        "ALPHA1-CLAUDE-E56-MED",
+        "ALPHA1-CLAUDE-E56-LANG"
+      ],
+      "state": "reserved"
+    },
+    {
+      "code": "E58",
+      "title": "Carence alimentaire en calcium",
+      "owner": "Claude",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E58-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [
+        "ALPHA1-CLAUDE-E58-MED",
+        "ALPHA1-CLAUDE-E58-LANG"
+      ],
+      "state": "reserved"
+    },
+    {
+      "code": "E59",
+      "title": "Carence alimentaire en sélénium",
+      "owner": "Claude",
+      "mode": "audit",
+      "canonical_present": true,
+      "assignment_id": "SSPV2-AUDIT-S05-E59-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [
+        "ALPHA1-CLAUDE-E59-MED",
+        "ALPHA1-CLAUDE-E59-LANG"
+      ],
+      "state": "reserved"
+    },
+    {
+      "code": "C75",
+      "title": "Tumeur maligne d’autres glandes endocrines et structures apparentées",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-C75-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E03",
+      "title": "Autres hypothyroïdies",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E03-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E27",
+      "title": "Autres maladies de la glande surrénale",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E27-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E63",
+      "title": "Autres carences nutritionnelles",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E63-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E66",
+      "title": "Obésité",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E66-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E71",
+      "title": "Anomalies du métabolisme des acides aminés à chaîne ramifiée et du métabolisme des acides gras",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E71-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E72",
+      "title": "Autres anomalies du métabolisme des acides aminés",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E72-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E73",
+      "title": "Intolérance au lactose",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E73-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E74",
+      "title": "Autres anomalies du métabolisme des hydrates de carbone",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E74-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E75",
+      "title": "Anomalies du métabolisme des sphingolipides et autres anomalies du stockage des lipides",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E75-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E76",
+      "title": "Anomalies du métabolisme des glucosaminoglycanes",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E76-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E77",
+      "title": "Anomalies du métabolisme des glycoprotéines",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E77-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E78",
+      "title": "Anomalies du métabolisme des lipoprotéines et autres lipidémies",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E78-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E84",
+      "title": "Fibrose kystique",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E84-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E85",
+      "title": "Amylose",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E85-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E86",
+      "title": "Hypovolémie",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E86-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E87",
+      "title": "Autres déséquilibres hydro-électrolytiques et acido-basiques",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E87-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "D34",
+      "title": "Tumeur bénigne de la thyroïde",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-D34-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E15",
+      "title": "Coma hypoglycémique non diabétique",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E15-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E16",
+      "title": "Autres anomalies de la sécrétion pancréatique interne",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E16-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E80",
+      "title": "Anomalies du métabolisme de la porphyrine et de la bilirubine",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E80-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E83",
+      "title": "Anomalies du métabolisme des minéraux",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E83-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E88",
+      "title": "Autres anomalies métaboliques",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E88-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E89",
+      "title": "Anomalies endocriniennes et métaboliques après des actes médicaux, non classées ailleurs",
+      "owner": "Claude",
+      "mode": "production",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-PRODUCTION-S05-E89-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "planned_production"
+    },
+    {
+      "code": "E90",
+      "title": "Anomalies nutritionnelles et métaboliques au cours de maladies classées ailleurs",
+      "owner": "Claude",
+      "mode": "reserve",
+      "canonical_present": false,
+      "assignment_id": "SSPV2-RESERVE-S05-E90-CLAUDE",
+      "starter_index": null,
+      "active_reservations": [],
+      "state": "scope_reserve"
+    }
+  ],
+  "baseline": {
+    "medical_audit_performed": false,
+    "browser_tests_performed": false,
+    "source_files": {
+      "chapters/E00/E00_a.html": {
+        "sha256": "a1578999952d863eb417ec5d253203144e874a11789029744c42cd2b5b12a65e",
+        "bytes": 20848
+      },
+      "chapters/E00/E00_b.html": {
+        "sha256": "15f8baa9ab3720346850a68096f2367e721eb43294097779aa07ca3ba3d62ab7",
+        "bytes": 17849
+      },
+      "chapters/E00/E00_c.html": {
+        "sha256": "095c47f987d7d999b3bef563c01b611ae22cc36cec0394eee28ba8c049346b19",
+        "bytes": 27302
+      },
+      "chapters/E00/E00_d.html": {
+        "sha256": "f846532363972b73106f3e239640741b4e6f79c31e4609e9d458aa4d177ee752",
+        "bytes": 9355
+      },
+      "chapters/E00/E00_pop1.html": {
+        "sha256": "7ba793acd5105211fcc9589857a6b8a66f5f648a7f06a4825efd0dc278d8deb8",
+        "bytes": 18878
+      },
+      "chapters/E00/E00_pop2.html": {
+        "sha256": "7a6f823da252a99a6021d13f744c94aa758013f55553f025d843025ecbbce9da",
+        "bytes": 19293
+      },
+      "glossary/e00.py": {
+        "sha256": "87a27ba51b4527a7504a16e35957558ef660ebd5e1b0d3ba8be5f11e0d2c1f03",
+        "bytes": 4956
+      }
+    },
+    "html_file_count": 6,
+    "science_tab_count": 4,
+    "semiology_marker_count": 0,
+    "historical_source_entries": 22,
+    "historical_report": "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/betta/CYCLE_31_E00/rapport.md",
+    "issues": [
+      {
+        "id": "BASE-SEMIO",
+        "severity": "major",
+        "finding": "Aucun marqueur data-semiology ni sous-onglet de sémiologie dédié dans les sources canoniques; quatre boutons scientifiques seulement.",
+        "basis": "current_static_inspection"
+      },
+      {
+        "id": "BASE-SOURCES",
+        "severity": "unresolved",
+        "finding": "Rapport historique : aucune recommandation suisse dédiée lue, fT4 normale par âge absente, FI de produit iodé et interactions complètes de lévothyroxine non lues; revues de fond souvent résumés.",
+        "basis": "historical_author_report_not_new_medical_audit"
+      },
+      {
+        "id": "BASE-SCIENCES",
+        "severity": "unresolved",
+        "finding": "Histologie et génétique fines non traitées selon rapport; pertinence et enrichissements à déterminer sur sources.",
+        "basis": "historical_author_report"
+      },
+      {
+        "id": "BASE-UI",
+        "severity": "unverified",
+        "finding": "Rapport historique : contrôle navigateur non exécuté, Chromium absent alors. Aucun nouveau test navigateur réalisé pendant préparation.",
+        "basis": "historical_author_report"
+      },
+      {
+        "id": "BASE-FIGURES",
+        "severity": "unresolved",
+        "finding": "Figures SVG existantes à classifier et relier aux passages; SVG seul ne prouve pas anatomie IA. Originaux humains avec droits requis pour toute structure anatomique.",
+        "basis": "current_static_inspection_no_visual_audit"
+      }
+    ]
+  },
+  "monograph_plan": [
+    "Question clinique et objectifs",
+    "Définition clinique et histoire naturelle; périmètre administratif après conclusion clinique",
+    "Épidémiologie suisse puis européenne, limites explicites",
+    "Normalité anatomique et fonctionnelle puis mécanismes et conséquences",
+    "Étiologies et facteurs de risque",
+    "Anamnèse et examen clinique analytique",
+    "Diagnostic, examens et différentiels discriminants",
+    "Drapeaux rouges, complications et urgence",
+    "Prise en charge suisse; FI exacte pour médicament",
+    "Suivi, pronostic, prévention",
+    "Situations particulières",
+    "Critères formels et paramètres clés; classification administrative sourcée"
+  ],
+  "required_surfaces": {
+    "tabs": [
+      "Pathologie et prise en charge",
+      "Examens complémentaires",
+      "Sciences fondamentales spécialisées",
+      "Pharmacologie"
+    ],
+    "semiology_science_sections": [
+      "normal",
+      "signs",
+      "mechanisms",
+      "examination",
+      "interpretation",
+      "differentials",
+      "urgency",
+      "limits",
+      "sources"
+    ],
+    "completeness_contract": "docs/collaboration/betta/PROMPT_VERITE.md: 20 rubriques, matrice source↔HTML",
+    "figures": "Aucune structure anatomique dessinée par IA; original humain, droits propres, attribution et annotations sourcées, contrôle visuel."
+  },
+  "source_cache_plan": {
+    "historical_ledger": "livraisons/Livraison Claude/E-06-Endocrinologie et métabolisme/betta/CYCLE_31_E00/sources.json",
+    "historical_ledger_sha256": "26cd605dc10c4b143366505c95372912158f289a569e0d573f4d29752dffb7f2",
+    "reuse_rule": "Attribution au lecteur historique; pas de nouvelle lecture revendiquée. Revalider version/population/contexte/dépendance et lire passages nécessaires avant assertions nouvelles.",
+    "cache_key_fields": [
+      "content_sha256",
+      "source_url",
+      "publisher",
+      "version",
+      "reader",
+      "consulted_at",
+      "page_or_section",
+      "actual_passage",
+      "population",
+      "limitations",
+      "claim_ids",
+      "dependent_surface_ids"
+    ],
+    "candidates": [
+      {
+        "historical_id": "S1",
+        "title": "CIM-10-GM 2024, libellés E00–E00.9",
+        "url_or_locator": "nosology/fragments/S05.json (OFS CIM-10-GM 2024, fr) — https://dam-api.bfs.admin.ch/hub/api/dam/assets/32686265/master",
+        "historical_section": "catégorie E00 et sous-codes",
+        "read_in_this_preparation": false
+      },
+      {
+        "historical_id": "S2",
+        "title": "Congenital iodine-deficiency syndrome",
+        "url_or_locator": "ICD-10 Codes MCP (ICD-10-CM FY2027), catégorie E00",
+        "historical_section": "E00–E00.9",
+        "read_in_this_preparation": false
+      },
+      {
+        "historical_id": "S3",
+        "title": "Cretinism revisited (Chen ZP, Hetzel BS), PMID 20172469",
+        "url_or_locator": "https://doi.org/10.1016/j.beem.2009.08.014",
+        "historical_section": "résumé",
+        "read_in_this_preparation": false
+      },
+      {
+        "historical_id": "S4",
+        "title": "Assessment of iodine deficiency disorders and monitoring their elimination, 3rd ed",
+        "url_or_locator": "https://iris.who.int/server/api/core/bitstreams/82b512a6-57b8-45f3-8539-30b2f7f63564/content",
+        "historical_section": "§2.1, tableau 1, tableau 2, §2.4, tableaux 4–5, indicateur TSH néonatale",
+        "read_in_this_preparation": false
+      },
+      {
+        "historical_id": "S5",
+        "title": "Research on iodine deficiency and goiter in the 19th and early 20th centuries (Zimmermann MB), PMID 18936198",
+        "url_or_locator": "https://doi.org/10.1093/jn/138.11.2060",
+        "historical_section": "résumé",
+        "read_in_this_preparation": false
+      },
+      {
+        "historical_id": "S6",
+        "title": "Iodine intake in the Swiss population 100 years after the introduction of iodised salt (Fischer L et al.), PMID 38141138",
+        "url_or_locator": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10899291/",
+        "historical_section": "texte intégral (≈100 000 premiers caractères) et résumé",
+        "read_in_this_preparation": false
+      },
+      {
+        "historical_id": "S7",
+        "title": "The Prevention of Iodine Deficiency: A History (Pearce EN, Zimmermann MB), PMID 36795091",
+        "url_or_locator": "https://doi.org/10.1089/thy.2022.0454",
+        "historical_section": "résumé",
+        "read_in_this_preparation": false
+      },
+      {
+        "historical_id": "S8",
+        "title": "Endemic cretinism in Thailand: a multidisciplinary survey (Rajatanavin R et al.), PMID 9368501",
+        "url_or_locator": "https://doi.org/10.1530/eje.0.1370349",
+        "historical_section": "résumé",
+        "read_in_this_preparation": false
+      },
+      {
+        "historical_id": "S9",
+        "title": "The neurology of endemic cretinism. A study of two endemias (Halpern JP et al.), PMID 2043952",
+        "url_or_locator": "https://doi.org/10.1093/brain/114.2.825",
+        "historical_section": "résumé",
+        "read_in_this_preparation": false
+      },
+      {
+        "historical_id": "S10",
+        "title": "Iodine deficiency (Zimmermann MB), PMID 19460960",
+        "url_or_locator": "https://doi.org/10.1210/er.2009-0011",
+        "historical_section": "résumé",
+        "read_in_this_preparation": false
+      },
+      {
+        "historical_id": "S11",
+        "title": "idem S7 (mention Suisse/États-Unis années 1920)",
+        "url_or_locator": "https://doi.org/10.1089/thy.2022.0454",
+        "historical_section": "résumé",
+        "read_in_this_preparation": false
+      },
+      {
+        "historical_id": "S12",
+        "title": "Increasing the iodine concentration in the Swiss iodized salt program... (Zimmermann MB, Aeberli I, Torresani T, Bürgi H), PMID 16087983",
+        "url_or_locator": "https://doi.org/10.1093/ajcn.82.2.388",
+        "historical_section": "résumé",
+        "read_in_this_preparation": false
+      },
+      {
+        "historical_id": "S13",
+        "title": "Congenital Hypothyroidism: A 2020–2021 Consensus Guidelines Update — ENDO-ERN, endorsed by ESPE and ESE (van Trotsenburg P et al.), PMID 33272083",
+        "url_or_locator": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8001676/",
+        "historical_section": "§1.1–5.3, lu jusqu'à ≈200 000/311 880 caractères",
+        "read_in_this_preparation": false
+      },
+      {
+        "historical_id": "S14",
+        "title": "Neugeborenen-Screening Schweiz — Krankheiten ; page d'accueil www.neoscreening.ch",
+        "url_or_locator": "https://www.neoscreening.ch/de/krankheiten/",
+        "historical_section": "Hypothyreose ; prélèvement au 4e jour",
+        "read_in_this_preparation": false
+      },
+      {
+        "historical_id": "S15",
+        "title": "The Na+/I- symporter (NIS): mechanism and medical impact (Portulano C et al.), PMID 24311738",
+        "url_or_locator": "https://doi.org/10.1210/er.2012-1036",
+        "historical_section": "résumé",
+        "read_in_this_preparation": false
+      },
+      {
+        "historical_id": "S16",
+        "title": "The Role of Iodine for Thyroid Function in Lactating Women and Infants (Andersson M, Braegger CP), PMID 35552681",
+        "url_or_locator": "https://doi.org/10.1210/endrev/bnab029",
+        "historical_section": "résumé",
+        "read_in_this_preparation": false
+      },
+      {
+        "historical_id": "S17",
+        "title": "Iodine deficiency and thyroid disorders (Zimmermann MB, Boelaert K), PMID 25591468",
+        "url_or_locator": "https://doi.org/10.1016/S2213-8587(14)70225-6",
+        "historical_section": "résumé",
+        "read_in_this_preparation": false
+      },
+      {
+        "historical_id": "S18",
+        "title": "Disorders associated to chronic iodine deficiency (Knobel M, Medeiros-Neto G), PMID 15611818",
+        "url_or_locator": "https://doi.org/10.1590/s0004-27302004000100007",
+        "historical_section": "résumé anglais",
+        "read_in_this_preparation": false
+      },
+      {
+        "historical_id": "S19",
+        "title": "The biochemistry of endemic cretinism: roles of iodine and selenium deficiency and goitrogens (Dumont JE et al.), PMID 7520008",
+        "url_or_locator": "https://doi.org/10.1016/0303-7207(94)90297-6",
+        "historical_section": "titre et MeSH seulement (pas de résumé)",
+        "read_in_this_preparation": false
+      },
+      {
+        "historical_id": "S20",
+        "title": "Thiocyanate in food and iodine in milk... (Laurberg P et al.), PMID 12487772",
+        "url_or_locator": "https://doi.org/10.1089/105072502761016520",
+        "historical_section": "résumé",
+        "read_in_this_preparation": false
+      },
+      {
+        "historical_id": "S21",
+        "title": "Information professionnelle suisse Euthyrox® (lévothyroxine), Merck (Schweiz) AG, Swissmedic (AIPS via AmiKo)",
+        "url_or_locator": "AmiKo / AIPS : python3 tools/swissmedic_fi.py texte 7680549490017",
+        "historical_section": "Indications, Posologie enfants, Swisspeddose néonatologie, Contre-indications, Mises en garde, Pharmacocinétique",
+        "read_in_this_preparation": false
+      },
+      {
+        "historical_id": "S22",
+        "title": "Effect of iodine supplementation in pregnant women on child neurodevelopment (Gowachirapant S et al.), PMID 29030199",
+        "url_or_locator": "https://doi.org/10.1016/S2213-8587(17)30332-7",
+        "historical_section": "résumé",
+        "read_in_this_preparation": false
+      }
+    ],
+    "priority_research": [
+      "Sources suisses directes OSAV/SSED/dépistage néonatal et normes de laboratoire par âge",
+      "FI actuelle exacte Euthyrox; produit iodé exact seulement si indication pertinente établie",
+      "Consensus européen ENDO-ERN/ESPE/ESE: version courante et passages non lus historiquement",
+      "Sources primaires pour mécanismes et figures; aucun résumé seul pour forte assertion"
+    ],
+    "invalidation": [
+      "changement contenu/version",
+      "nouvelle population ou contexte",
+      "nouvelle dose ou décision",
+      "modification dépendance clinique"
+    ]
+  },
+  "usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "cached_input_tokens": null,
+    "cost": null,
+    "currency": null,
+    "reason": "Aucune télémétrie fournisseur réelle disponible; ne pas estimer ni inventer."
+  },
+  "reusable_tools": [
+    "tools/betta_verite.py",
+    "tools/swissmedic_fi.py",
+    "tools/image_codex_finder.py",
+    "tools/ai_session_guard.py",
+    "test_v7.py",
+    "tests/test_starter_codex.py",
+    "tests/test_ai_session_guard.py"
+  ],
+  "tool_limits": [
+    "betta_verite contrôle structure/provenance déclarée, pas lecture réelle ni vérité médicale",
+    "clov2_veille est veille Git, pagination partielle et erreurs API avalées; pas veille médicale",
+    "distributor_veille mesure délai/fichier, pas tokens/coûts",
+    "audit_sciences base historique fixe à examiner avant usage sur cours tardifs"
+  ]
+}

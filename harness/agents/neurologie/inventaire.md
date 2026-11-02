@@ -1,0 +1,111 @@
+# Préparation Neurologie — aucun cours produit
+
+Base inspectée : `8a512893acbab9caa0dcfdd0e8682a44ea72fda6`. Modèle demandé par le parent : GPT-6 Astra, réflexion élevée. Les tokens consommés ne sont pas mesurables ici ; aucun chiffre n’est estimé. Le présent dossier contient uniquement une préparation, sans rédaction médicale, acquisition de réservation ni changement des sources.
+
+## Choix et ordre
+
+**G02 — Méningite au cours d’autres maladies infectieuses et parasitaires classées ailleurs (N-05-Neurologie)** est le premier cours existant Codex libre dans la file de campagne, au rang global 8. Le registre distant collecté par le parent ne contient aucune réservation G02. I63 et G01 restent réservés en génération 1, avec MED/LANG et intégration ; leurs reçus `organisation/alpha-publications/Codex/{I63,G01}/0001.json` sont `provisional`. Ils ne doivent pas être repris implicitement.
+
+Le balayage rétrospectif de `PROMPT_CONTINUITE_AUTEURS.md` demande de corriger les existants avant les nouveaux. L’ordre utilisateur courant remplace le fonctionnement historique incompatible en lots, tout en préservant réservations et preuves. Le plan ci-dessous est une file de travail proposée ; chaque démarrage exige la garde actuelle et un worktree exclusif annoncé par le parent.
+
+La mission `ALPHA77-CODEX-G02-INTEGRATE` est approuvée dans `.medina/missions/ALPHA77-CODEX-G02-INTEGRATE.json`. Branche prévue : `codex/alpha77/g02-integrate-g1`. Chemins : `chapters/G02`, `glossary/g02.py`, `assets/img/g02/alpha/codex`, `organisation/alpha-publications/Codex/G02`, `docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE`. Le catalogue partagé ne fait pas partie de cette mission.
+
+## Inventaire et file complète
+
+Le plan V2 actuel compte 57 cours existants S08 (29 Codex, 28 Claude), 50 cibles nouvelles (25/25) et 9 réserves distinctes. Ces chiffres décrivent un plan éditorial conservatoire, pas une complétude fédérale officiellement validée. La campagne Codex77 ne comprend que 7 nouvelles cibles S08 parmi ses 25 nouvelles cibles globales ; les 18 autres cibles Neurologie Codex restent hors campagne historique et exigent leurs missions avant exécution.
+
+| Ordre | Code — intitulé | État |
+|---|---|---|
+| 1 | G02 — Méningite au cours d’autres maladies infectieuses et parasitaires classées ailleurs | Existant libre, à reprendre |
+| 2 | G05 — Encéphalite, myélite et encéphalomyélite au cours d’affections classées ailleurs | Existant libre, à reprendre |
+| 3 | I64 — Accident vasculaire cérébral, non précisé comme étant hémorragique ou par infarctus | Existant libre, à reprendre |
+| 4 | C70 — Tumeur maligne des méninges | Existant libre, à reprendre |
+| 5 | G03 — Méningite due à des causes autres et non précisées | Existant libre, à reprendre |
+| 6 | G06 — Abcès et granulome intracrâniens et intrarachidiens | Existant libre, à reprendre |
+| 7 | G07 — Abcès et granulome intracrâniens et intrarachidiens au cours d’affections classées ailleurs | Existant libre, à reprendre |
+| 8 | G08 — Phlébite et thrombophlébite intracrâniennes et intrarachidiennes | Existant libre, à reprendre |
+| 9 | G09 — Séquelles d’affections inflammatoires du système nerveux central | Existant libre, à reprendre |
+| 10 | G21 — Syndrome parkinsonien secondaire | Existant libre, à reprendre |
+| 11 | G22 — Syndrome parkinsonien au cours de maladies classées ailleurs | Existant libre, à reprendre |
+| 12 | G24 — Dystonie | Existant libre, à reprendre |
+| 13 | G25 — Autres syndromes extrapyramidaux et troubles de la motricité | Existant libre, à reprendre |
+| 14 | G26 — Syndromes extrapyramidaux et troubles de la motricité au cours d’affections classées ailleurs | Existant libre, à reprendre |
+| 15 | G32 — Autres affections dégénératives du système nerveux au cours d’affections classées ailleurs | Existant libre, à reprendre |
+| 16 | G36 — Autres affections démyélinisantes aiguës disséminées | Existant libre, à reprendre |
+| 17 | G37 — Autres affections démyélinisantes du système nerveux central | Existant libre, à reprendre |
+| 18 | G52 — Affections des autres nerfs crâniens | Existant libre, à reprendre |
+| 19 | G53 — Affections des nerfs crâniens au cours de maladies classées ailleurs | Existant libre, à reprendre |
+| 20 | G55 — Compression des racines et des plexus nerveux au cours de maladies classées ailleurs | Existant libre, à reprendre |
+| 21 | G57 — Mononévrite du membre inférieur | Existant libre, à reprendre |
+| 22 | G59 — Mononévrite au cours de maladies classées ailleurs | Existant libre, à reprendre |
+| 23 | G60 — Neuropathie héréditaire et idiopathique | Existant libre, à reprendre |
+| 24 | I66 — Occlusion et sténose des artères cérébrales, n’entraînant pas un infarctus cérébral | Existant libre, à reprendre |
+| 25 | I68 — Troubles cérébrovasculaires au cours de maladies classées ailleurs | Existant libre, à reprendre |
+| 26 | R25 — Mouvements involontaires anormaux | Existant libre, à reprendre |
+| 27 | R47 — Troubles du langage, non classés ailleurs | Existant libre, à reprendre |
+| 28 | G00 — Méningite bactérienne, non classée ailleurs | Nouveau, campagne77 |
+| 29 | G04 — Encéphalite, myélite et encéphalomyélite | Nouveau, campagne77 |
+| 30 | G41 — État de mal épileptique | Nouveau, campagne77 |
+| 31 | I60 — Hémorragie sous-arachnoïdienne | Nouveau, campagne77 |
+| 32 | R40 — Somnolence, stupeur et coma | Nouveau, campagne77 |
+| 33 | G30 — Maladie d’Alzheimer | Nouveau, campagne77 |
+| 34 | G40 — Épilepsie | Nouveau, campagne77 |
+| 35 | C71 — Tumeur maligne de l’encéphale | Nouveau, mission future requise |
+| 36 | G31 — Autres affections dégénératives du système nerveux, non classées ailleurs | Nouveau, mission future requise |
+| 37 | G35 — Sclérose en plaques | Nouveau, mission future requise |
+| 38 | G43 — Migraine | Nouveau, mission future requise |
+| 39 | G44 — Autres syndromes d’algies céphaliques | Nouveau, mission future requise |
+| 40 | G50 — Affections du nerf trijumeau [nerf crânien V] | Nouveau, mission future requise |
+| 41 | Q01 — Encéphalocèle | Nouveau, mission future requise |
+| 42 | Q02 — Microcéphalie | Nouveau, mission future requise |
+| 43 | Q03 — Hydrocéphalie congénitale | Nouveau, mission future requise |
+| 44 | Q04 — Autres malformations congénitales de l’encéphale | Nouveau, mission future requise |
+| 45 | R41 — Autres symptômes et signes relatifs aux fonctions cognitives et à la conscience | Nouveau, mission future requise |
+| 46 | R42 — Étourdissements et éblouissements | Nouveau, mission future requise |
+| 47 | S04 — Lésion traumatique des nerfs crâniens | Nouveau, mission future requise |
+| 48 | S14 — Lésion traumatique des nerfs et de la moelle épinière au niveau du cou | Nouveau, mission future requise |
+| 49 | S24 — Lésion traumatique des nerfs et de la moelle épinière au niveau du thorax | Nouveau, mission future requise |
+| 50 | S44 — Lésion traumatique de nerfs au niveau de l’épaule et du bras | Nouveau, mission future requise |
+| 51 | S54 — Lésion traumatique de nerfs au niveau de l’avant-bras | Nouveau, mission future requise |
+| 52 | S64 — Lésion traumatique de nerfs au niveau du poignet et de la main | Nouveau, mission future requise |
+
+Réservés, conservés hors file active : I63 et G01. La présence historique d’un dossier rédigé par Claude ne change pas l’attribution actuelle : le dossier G02 est conservé dans `livraisons/Livraison Claude/N-05-Neurologie/betta/CYCLE_33_G02/`. Le parent a collecté toutes les branches et PR dans `/tmp/medina-harness-discovery/` ; aucune branche G02 ni PR G02 n’a été relevée dans ce cliché. Recontrôle obligatoire avant acquisition.
+
+## État initial G02
+
+Les six HTML et `glossary/g02.py` existent. Les empreintes exactes sont dans `brief.json`. Quatre sous-onglets scientifiques seulement : Physiologie, Immunologie, Virologie diagnostique, Mycologie et parasitologie. Aucun marqueur `data-semiology-clinical` ni `data-semiology` ; six SVG et aucune balise `<img>`. L’absence de sémiologie établit l’incomplétude structurelle. La seule présence d’un SVG ne prouve pas une anatomie générée : inspecter le contenu et la provenance avant de qualifier le défaut.
+
+Le dossier auteur comporte `sources.json`, `recherche.md` et `rapport.md`. Il doit être attribué et comparé aux octets courants, jamais présenté comme une nouvelle lecture primaire. Le rapport déclare notamment des limites de couverture suisse, des parties parasitologiques non lues et des FI manquantes ou partielles. Ce sont des pistes d’audit héritées, non des conclusions médicales revalidées par cet agent.
+
+## Prompt et références de qualité
+
+Le dernier fichier portant un prompt dans l’historique de main est `docs/collaboration/claude-transition-2026-10-15/PROMPT_TRANSITION.md`, commit `a6f51eba`, 15 octobre 2026 à 22:24:46 UTC. C’est une transition Claude ; ses ordres locaux ne s’appliquent pas automatiquement à Codex. Le dernier contrat opérationnel commun est `docs/collaboration/ssp-v2/2026-10-15/prompt-commun-ia.yaml`, `d40aaf7c`, 15 octobre 2026 à 17:37:19 UTC. Le socle médical est `docs/collaboration/betta/PROMPT_VERITE.md`, `60bb2100`, 15 octobre 2026 à 10:03:50 UTC. Les modifications les plus récentes de gouvernance ne sont pas nécessairement des modifications de ces prompts ; AGENTS.md et l’ordre humain courant restent prioritaires.
+
+`PROMPT_MEDINA.md` désigne `chapters/I50/` comme modèle de forme. `PROMPT_TRANSITION.md` désigne `chapters/J81/` comme niveau de rendu et `livraisons/Livraison Claude/P-02-Pneumologie/travail/J81/rapport_relecture.md` comme modèle de rapport. La règle sémiologique désigne I50/I21/I48/I10 et les moteurs de cardiologie comme références en lecture seule. Leur contenu n’est jamais une source clinique primaire.
+
+Le plan monographique exigé par `docs/collaboration/LEADERSHIP_CLAUDE_2026-10-08.md`, section 11, couvre question clinique, définition/classifications, épidémiologie/pronostic, physiopathologie, causes/risques, anamnèse, examen, diagnostic, urgences/complications, traitement, suivi/prévention, situations particulières et critères finaux. Le code administratif reste discret. Le cours doit relier normal → mécanisme → signe → examen → interprétation → décision, en français complet et fluide.
+
+`docs/collaboration/instructions/SEMIOLOGIE_FONDAMENTALE_ANALYTIQUE_2026-10-15.yaml` exige le sous-onglet initial de sémiologie en pS, ses neuf sections substantielles, un bloc clinique pA et des preuves MED/LANG/SEMIO finales. Les six sous-onglets incluent cinq disciplines scientifiques et la sémiologie ; les quatre références cardiologiques historiques ne suffisent pas seules à cette exigence.
+
+## Sources à relire avant toute affirmation
+
+Les 18 références héritées sont détaillées individuellement dans `brief.json`, avec sections et limites. Priorité aux sources suisses applicables à rechercher ou rouvrir, puis DGN/EAN/ECMM européennes selon leur portée. S12–S13 : pages OFSP ; S8–S9 : travaux CHUV/HUG, dont la lecture historique est limitée au résumé. S14–S17 : FI exactes Aciclovir Labatec i.v., Valaciclovir-Mepha, AmBisome et Fluconazole Sandoz eco ; retrouver l’original Swissmedic/Compendium, la version et les rubriques pertinentes. Les URL génériques amiko du dossier ne suffisent pas à une preuve produit.
+
+S3 : directive DGN 2025 ; S10 : recommandation cryptococcose 2024 ; S11 : traitement trypanosomiase OMS, historiquement simple page de présentation ; S18 : ESCMID 2012, historiquement résumé. Les passages concernant seuils, délais, posologies, adaptations, contre-indications, interactions et populations particulières doivent être réellement lus. La version en vigueur doit être contrôlée ; une directive ancienne reste applicable seulement si sa validité est établie. Le cache hérité doit préciser lecteur, contenu, section, date et population ; ne jamais dater sa réutilisation comme une nouvelle lecture.
+
+## Contrôles et conception du harness
+
+1. Avant rédaction : tests du harness et démonstration de la veille ; SHA de base figé, chemins exclusifs et réservation distante ; sources effectivement consultées, matrice des 20 rubriques, puis `tools/betta_verite.py`.
+2. Pendant la leçon : correspondance assertion/passages/IDs HTML, couverture suisse et FI produit ; inventaire figures, origine humaine anatomique, droits propres à la figure, attribution et inspection visuelle. Une image originale libre ne certifie pas sa pertinence médicale.
+3. Avant livraison : `tests/audit_sciences.py --base <SHA40> --codes G02`, garde Alpha et mission sur candidat final, reconstruction S08, liens et fenêtres, six sous-onglets, bureau/mobile390, Livre24 et captures réelles. Ne pas ajouter de SVG factice pour satisfaire un test.
+4. Rapports finaux séparés MED, LANG, SEMIO liés aux empreintes finales ; aucune clôture favorable avec réserve clinique bloquante ; aucune revue auteur présentée comme indépendante. PR/publication seulement par le parent et selon son mandat.
+
+Le harness proposé est cohérent s’il lie le SHA-cache au contenu et au passage, à la population et à la décision. Une lecture tronquée reste explicitement partielle. Le bail unique par spécialité doit s’ajouter aux verrous de leçon et de chemins, avec transaction atomique. L’expiration d’un heartbeat gèle la mutation concernée mais n’efface pas une réservation distante concurrente. Le heartbeat atteste un processus vivant, pas une lecture ni une consommation mesurée de tokens.
+
+Les tests négatifs doivent couvrir acquisition concurrente, génération et base périmées, doublons, échappement de chemins et symlinks, cache changé, source non lue, résumé seul insuffisant, sémiologie cachée/incomplète et preuve médicale absente malgré HTML valide. Les portes techniques et médicales restent distinctes : un JSON complet ne prouve pas la vérité clinique.
+
+La veille locale600s et le dépôt GitHub privé cron10min doivent observer sans écrire dans main Medina. Leur disponibilité ne garantit ni agent permanent ni livraison ponctuelle à la seconde. À08h Europe/Zurich, produire un instantané horodaté ; il ne s’agit pas d’un ordre d’arrêt de production. Journaux limités, droits minimaux, aucun secret exposé.
+
+## Orchestration des quatre filières
+
+Trois Astra spécialisés (Neurologie, Endocrinologie, Néphrologie) et parent Codex pour Hématologie/outillage : une seule leçon active par spécialité, intégration des fichiers partagés séquentielle par le parent. Chaque filière reprend un existant libre avant d’ouvrir un nouveau. Une réserve bloque la leçon concernée, pas les trois autres. Les avis de revue peuvent être relus par un autre agent seulement après son point de sauvegarde, sans lancer de cinquième agent ni prétendre à une validation humaine. Avant 08h Europe/Zurich, ne démarrer que ce qui peut être sauvegardé proprement ; conserver les travaux incomplets et leurs réserves.

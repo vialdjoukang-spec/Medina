@@ -1,0 +1,45 @@
+name: MEDINA Harness — contrôles et progression
+on:
+  push:
+    branches: [codex/harness-20261102, codex/harness-observations-20261102]
+    paths: ['harness/**', '.github/workflows/medina-harness-watch.yml']
+  workflow_dispatch:
+  # GitHub only enables cron from the default branch. This declaration is
+  # prepared, not claimed active while this file remains on a review branch.
+  schedule:
+    - cron: '*/10 * * * *'
+permissions:
+  contents: read
+concurrency:
+  group: medina-harness-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Tester le harness sur son code exact
+        run: python3 harness/medina_harness.py self-test
+      - name: Observer sans renouveler l'activité des agents
+        if: always()
+        run: python3 harness/github_observe.py
+      - name: Conserver le rapport et les preuves
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: medina-progression-${{ github.run_id }}
+          path: |
+            harness/dashboard.html
+            harness/rapport-08h00.html
+            harness/status.json
+            harness/github-observation.json
+            harness/runtime/tests.json
+            harness/runtime/tests.log
+            harness/REPARTITION.md
+            harness/prompt-lock.json
+            harness/agents/
+          retention-days: 30
+          if-no-files-found: error
