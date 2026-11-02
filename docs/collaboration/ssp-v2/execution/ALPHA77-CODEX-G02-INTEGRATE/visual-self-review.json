@@ -1,17 +1,32 @@
 {
   "mode": "self_review",
-  "reviewer": "Astra Neurologie",
-  "verified_at": "2026-11-02T02:36:32.146990+00:00",
-  "scope": "Inspection ciblée de la capture finale flucytosine mobile24 ; examens antérieurs de la planche et fexinidazole au jalon précédent.",
+  "reviewer": "astra_neurologie",
+  "verified_at": "2026-11-02T03:02:21.117202+00:00",
+  "scope": "Inspection réelle des cinq captures listées ; contrôles programmatiques des deuxlargeurs et cinq fenêtres longues dans browser-autonomous.json",
   "images_inspected": [
-    "captures/autonomous-g02-390-book24-flucytosine.png"
+    "captures/autonomous-g02-1440-semiology.png",
+    "captures/autonomous-g02-390-semiology.png",
+    "captures/autonomous-g02-390-book24-anatomy.png",
+    "captures/autonomous-g02-390-book24-g02-d-nifurtimox.png",
+    "captures/autonomous-g02-390-book24-g02-d-benznidazole.png"
   ],
+  "capture_sha256": {
+    "captures/autonomous-g02-1440-semiology.png": "a953a731d3d8ef1fe3f59edd8748e5091eb313630e3f5b38fb7ee08a77ec624d",
+    "captures/autonomous-g02-390-semiology.png": "d35f841100baa7f5aadeb4a0bf58706968f3685a2527ebea61a2ab6371ec3671",
+    "captures/autonomous-g02-390-book24-anatomy.png": "8579273975fc84c04ca67259daf81346490bfb2c89043d64150f6a63ec0ec2c9",
+    "captures/autonomous-g02-390-book24-g02-d-nifurtimox.png": "611e4cab1bdc113c22ac2c77b2e6ca705c7756e363adcbc29c852b8fb9483331",
+    "captures/autonomous-g02-390-book24-g02-d-benznidazole.png": "3676b24775310794197b2809fcd7329de2a3de1c4fc37d8c96582cc54666c5c5"
+  },
   "findings": [
-    "Fin de monographie flucytosine et quatre liens sources visibles ; fermeture disponible."
+    "Original anatomique entier visible en1440 et390, trois annotationsfrançaises lisibles autour sans modifier les pixels.",
+    "Mode livre24 atteint ; annotations se lisent par défilement surmobile.",
+    "Fenêtres Lampit et benznidazole : fermeture et dernières sources visibles, pas de débordement horizontal."
   ],
   "limits": [
-    "Relecture auteur, aucune indépendance revendiquée.",
-    "Cette inspection ciblée ne certifie pas toutes les vues ni la complétude clinique."
+    "Relecture auteur, sans indépendance ni validationhumaine.",
+    "Capture ciblée ne certifie pas chaque position de défilement ; navigateur surHTTP localéphémère, pasdéploiement distant.",
+    "Justification et césures relèvent du moteur hérité ; annotations agrandies demandent plusieurs écrans en390px."
   ],
-  "preview_sha256": "02c2f4155bd30e94bed7288cf4b38ed0be21e442285125725189a7cdbc568f79"
+  "preview_sha256": "76c59b4fba209a09fb186f6a5554541e81397722633547ce89a3b61ecda435db",
+  "clinical_certification": false
 }

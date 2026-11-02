@@ -1,54 +1,55 @@
-# Recherche G02 — reprise ciblée du 2 novembre2026
+# Recherche G02 — état relu du 2 novembre 2026
 
-RAPPEL VÉRITÉ : vraies images uniquement ; doses exactes et FI produits ; passages lus ; français progressif ; aucune invention.
+RAPPEL VÉRITÉ : figures originales humaines ; doses liées au produit et à la population ; passages réellement lus ; paraphrases fidèles.
 
-Le contenu existant est conservé comme héritage, non certifié. G02.0*,G02.1* et G02.8* sont les sous-codes recensés localement ; la source BfArM2024 a été rouverte[S38], son applicabilité administrative suisse2026 reste à confirmer. Les sources nouvelles ci-dessous sont effectivement lues aux sections indiquées.
+Sous-codes couverts : G02.0* viral, G02.1* fongique, G02.8* autres infections/parasitaires ; définitions de la version2024 explicitement situées.
+
+39 lectures de cette session [S19–S57] sont indexées dans `sources.json`, avec leur profondeur réelle. Les lectures antérieures restent historiques. Les textes sources complets et extraits de travail sont conservés hors Git.
 
 ## Matrice de complétude
 
-| rubrique | statut | sources |
-|---|---|---|
-| 1. Question clinique et enjeu fédéral | LACUNE — couverture partielle, contrôle final non effectué | S19,S24,S30,S31 |
-| 2. Définition et périmètre CIM-10-GM | LACUNE — couverture partielle, contrôle final non effectué | S19,S38; versionadministrative suisse2026àconfirmer |
-| 3. Classifications et stades | LACUNE — couverture partielle, contrôle final non effectué | S19,S21, S40 |
-| 4. Épidémiologie suisse puis européenne | LACUNE — couverture partielle, contrôle final non effectué | S25,S31; incidence CH non établie, Danemark identifié comme tel |
-| 5. Normal vers pathologique | LACUNE — couverture partielle, contrôle final non effectué | S19,S21,S29 |
-| 6. Étiologies et facteurs de risque | LACUNE — couverture partielle, contrôle final non effectué | S19,S21, S40 |
-| 7. Anamnèse et symptômes | LACUNE — couverture partielle, contrôle final non effectué | S19,S24,S30,S31, S40 |
-| 8. Examen clinique | LACUNE — couverture partielle, contrôle final non effectué | S19,S24,S30,S31 |
-| 9. Drapeaux rouges et urgences | LACUNE — couverture partielle, contrôle final non effectué | S19,S21,S22, S40 |
-| 10. Examens complémentaires | LACUNE — couverture partielle, contrôle final non effectué | S19,S21,S24,S30, S40 |
-| 11. Diagnostic différentiel | LACUNE — couverture partielle, contrôle final non effectué | S19,S24,S30,S31 |
-| 12. Prise en charge suisse | LACUNE — couverture partielle, contrôle final non effectué | S20,S26,S27,S28,S36; FI flucytosine manquante |
-| 13. Complications et pronostic | LACUNE — couverture partielle, contrôle final non effectué | S19,S21,S31,S34,S35; chiffres réattribués après sortie |
-| 14. Suivi,prévention,dépistage | LACUNE — couverture partielle, contrôle final non effectué | S23,S21,S31; vaccination et suivi fonctionnel, S40 |
-| 15. Situations particulières | LACUNE — couverture partielle, contrôle final non effectué | S20,S21; complétude non établie |
-| 16. Spécificités suisses | LACUNE — couverture partielle, contrôle final non effectué | S23,S25,S30,S36; obligations déclaratives à rechercher |
-| 17. Critères formels du diagnostic | LACUNE — couverture partielle, contrôle final non effectué | S19,S21, S40 |
-| 18. Paramètres clés chiffrés | LACUNE — couverture partielle, contrôle final non effectué | S19,S20,S21,S31–S35; contrôle exhaustif à terminer, S40 |
-| 19. Sous-codes couverts | LACUNE — couverture partielle, contrôle final non effectué | G02.0*,G02.1*,G02.8*:BfArM2024relu[S38], couverture clinique rare incomplète |
-| 20. Objectifs PROFILES et pièges | LACUNE — couverture partielle, contrôle final non effectué | Mappage PROFILES non revalidé |
+| Rubrique | Couverture revue | Preuves | Ancre |
+|---|---|---|---|
+| 1. Question clinique et enjeu fédéral | ✔ Couverture relue, limites explicites | S19, S30, S56, S57 | g02-demarche |
+| 2. Définition et périmètre CIM-10-GM | ✔ Couverture relue, limites explicites | S19, S38, S54 | g02-1 |
+| 3. Classifications et stades | ✔ Couverture relue, limites explicites | S19, S40 | g02-2 |
+| 4. Épidémiologie suisse puis européenne | ✔ Couverture relue, limites explicites | S23, S25, S31, S39 | g02-3 |
+| 5. Normal vers pathologique | ✔ Couverture relue, limites explicites | S19, S21, S29 | g02-4 |
+| 6. Étiologies et facteurs de risque | ✔ Couverture relue, limites explicites | S19, S21, S40, S45, S48 | g02-5 |
+| 7. Anamnèse et symptômes | ✔ Couverture relue, limites explicites | S19, S24, S31 | g02-5 |
+| 8. Examen clinique | ✔ Couverture relue, limites explicites | S24, S30, S34 | g02-6 |
+| 9. Drapeaux rouges et urgences | ✔ Couverture relue, limites explicites | S19, S21, S30 | g02-8 |
+| 10. Examens complémentaires | ✔ Couverture relue, limites explicites | S19, S21, S30, S50 | g02-explorations |
+| 11. Diagnostic différentiel | ✔ Couverture relue, limites explicites | S19, S24, S30, S53 | g02-arbre |
+| 12. Prise en charge suisse | ✔ Couverture relue, limites explicites | S20, S26, S27, S36, S43, S55 | g02-9 |
+| 13. Complications et pronostic | ✔ Couverture relue, limites explicites | S21, S31, S34, S35 | g02-12 |
+| 14. Suivi, prévention, dépistage | ✔ Couverture relue, limites explicites | S21, S23, S40, S47, S50 | g02-12 |
+| 15. Situations particulières | ✔ Couverture relue, limites explicites | S20, S21, S41, S43, S51, S52 | g02-13 |
+| 16. Spécificités suisses | ✔ Couverture relue, limites explicites | S23, S25, S30, S42, S44, S56, S57 | g02-profiles |
+| 17. Critères formels du diagnostic | ✔ Couverture relue, limites explicites | S19, S21, S40, S53 | g02-14 |
+| 18. Paramètres clés chiffrés | ✔ Couverture relue, limites explicites | S20, S21, S31, S34, S40 | g02-14 |
+| 19. Sous-codes couverts | ✔ Couverture relue, limites explicites | S38, S40, S46, S47, S48, S50 | g02-coccidioidomycose |
+| 20. Objectifs PROFILES et pièges | ✔ Couverture relue, limites explicites | S56, S57, S24, S30, S54 | g02-profiles |
 
-## Constats vérifiés et périmètre de rédaction
+La couverture pédagogique n’est ni une validation humaine ni une certification clinique. Les14points sont détaillés dans `monograph-14.json`.
 
-[S19] décrit la triade céphalées,raideur de nuque,photophobie ou hyperacousie à28%; le cours l’avait remplacée par une triade incluant la fièvre. Corriger toutes ses occurrences. [S20] documente le palier rénal manquant0–10ml/min et hémodialyse, avec populations exactes. [S24] rappelle que les signes et la lymphocytose ne permettent pas seuls d’exclure une origine bactérienne. [S21] distingue le contrôle de la pression intracrânienne de l’antifongique. [S29] permet une figure anatomique originale avec traduction de légendes HTML.
+## Limites conservées, jugement d’auteur
 
-## Lacunes et accès
+- **L1 — Erratum candidose du15octobre2025** : Principes du guide2025 réellement lus ; schéma chiffré douteux non publié. Ne pas prétendre avoir confronté le texte de cet erratum inaccessible. Limite non bloquante dans le contenu effectivement publié.
+- **L2 — Produits rares et accès suisse** : FI exactes ou RCP étrangers identifiés, populations et voies distinguées. Aucune disponibilité suisse déduite d’une autorisation ou de la présence dans une liste. Limite non bloquante dans le contenu effectivement publié.
+- **L3 — Épidémiologie suisse** : Études hospitalières et année historique FSME identifiées. Pas d’incidence suisse contemporaine inventée ni de généralisation des cohortes étrangères. Limite non bloquante dans le contenu effectivement publié.
+- **L4 — Codage administratif** : Version2024 explicitement conservée ; A87.9 et G03.0 distingués. Application suisse2026 à confirmer par règles en vigueur ; décisions cliniques indépendantes du code. Limite non bloquante dans le contenu effectivement publié.
+- **L5 — Portée de la monographie** : Principes des causes rares et traitements majeurs couverts. Les médicaments de recours sans schéma publié renvoient à une équipe spécialisée et au produit exact ; pas protocole prescriptif exhaustif de toutes les molécules tropicales. Limite non bloquante dans le contenu effectivement publié.
+- **L6 — Profondeur des sources et autonomie** : CHUV et essai valaciclovir consultés au niveau résumé, autres sections précisées individuellement. Relecture auteur réelle, sans validation indépendante ou humaine ; lire le cours ne prouve pas compétence technique. Limite non bloquante dans le contenu effectivement publié.
 
-SSI obtenue ensuite via endpoint public officiel reader : texte français lu [S30], validation2024, valable15décembre2026. Brain récupéré via EuropePMC et texte intégral lu hors bibliographie [S31]. CHUV et essai valaciclovir lus au niveau résumé seulement [S32,S33]. Elsberg résultats/méthodes [S34] et Mollaret résumé/introduction [S35] relus. Brivex FI exacte lue [S36]. Candidose SNC2025 principes lus [S37], mais erratum15octobre2025 non accessible403 : schéma chiffré non certifié. Le premier accès Bookshelf à WHO 2024 renvoyait un CAPTCHA. Le PDF original a depuis été obtenu via le lecteur public IRIS et ses sections pertinentes sont réellement lues [S40]. Le RCP exact Fexinidazole Winthrop du 17 octobre 2025 a été lu [S41]. Le RCP oral français Ancotil 500 mg a depuis été relu [S43], ainsi que le statut suisse export publié en 2024 [S42] et sa présence dans la liste administrative au 30 septembre 2026 [S44]. La FI suisse actuelle et la disponibilité ne sont pas établies ; Chagas, coccidioïdomycose et les autres médicaments de la trypanosomiase restent incomplets. Aucune clôture médicale finale sur cette passe.
+## Corrections de cohérence vérifiées
 
-## Deuxième passe : erreurs héritées corrigées
+La revue des six fragments a corrigé les répétitions héritées sur la triade, la fièvre rapportée ou mesurée, les seuils du liquide, les anticorps intrathécaux, la population genevoise, la temporalité après sortie, l’absence de causalité démontrée du délai antiviral et les critères du Consortium2013. Le schéma d’urgence ne place plus les antibiotiques après les résultats. La figure de physiologie distingue les exemples viral et cryptococcique ; elle ne suggère plus une transformation causale.
 
-La cohorte primaire documente38patients avec≥1000cellules/µl ; le seuil est descriptif. La fièvre rapportée71% diffère de la température mesurée≥38°C42%. Le pronostic20% concerne30jours après sortie et principalementGOS4. La lecture du délai antiviral ne prouve pas un bénéfice causal. La FI Brivex confirme le délai minimal4semaines APRÈS brivudine, ainsi que l’absence d’indication encéphalitique et la contre-indication chez l’immunodéprimé. La FI aciclovir néonatal concerne HSV, pas l’échovirus adjacent dans l’ancien texte. Les10jours FI et≥14jours DGN restent distingués sans arbitrage par simple récence.
+Les schémas sont séparés par produit et population : aciclovir FI10jours/directive≥14jours ; Brivex limité au zona et délai4semaines après brivudine ; flucytosine orale française distincte d’une FI injectable suisse ; fexinidazole avis horsUE ; Lampit espagnol adulte60–120jours distinct du schémaNIH60jours ; benznidazole adulte recommandé distinct du libellé américain pédiatrique ; Foscavir sans efficacité neurologique établie dans sa FI.
 
-## Bilan de remise
+La coccidioïdomycose et Chagas ont une clinique, un diagnostic, des principes de traitement et un suivi sourcés. Les principes candidose2025 sont exposés sans reproduire la posologie douteuse. Les numéros PROFILES2023 ont été relus sur les pages officielles ; la correspondance au cours reste une proposition pédagogique.
 
-26 lectures indexées [S19–S44],aux profondeurs explicitement déclarées.14ancres monographiques présentes,20rubriques inventoriées,relecture d’auteur explicite (self_review), sans approbation médicale indépendante revendiquée ni exigée par défaut. Les chiffres HUG2017 portent sur un échantillon et des prélèvements appariés,non sur une impossibilité biologique chez l’adulte. Les réponses sur l’arrêt des antibiotiques et la sortie ont été conditionnées à la réévaluation clinique. Les corps,fenêtres et Pareto ont été confrontés sur les erreurs ciblées; cela ne transforme pas les références héritées non relues en preuves.
+## Vérification et empreintes
 
-
-## Actualisation WHO et produit exact
-
-S40 : stades et sévérité distingués selon la sous-espèce ; âge et poids requis ensemble ; repas, surveillance et suivi ajoutés. S41 : produit de 600 mg, doses pondérales et précautions, population ≥6 ans ET ≥20 kg. L’avis EMA vise une utilisation hors UE. Le RCP formule un seuil >100 cellules/µl pour son avertissement, l’OMS définit la forme gambiense sévère à ≥100 ; ces différences restent explicites. Les modalités de surveillance à domicile diffèrent aussi. Cela ne valide ni le statut suisse ni les médicaments non relus.
-
-
-Actualisation flucytosine : RCP oral français du 1er septembre 2025 relu, avec doses par clairance, surveillance plasmatique et hématologique/hépatique, interactions, contraception et limites pédiatriques. Les données suisses établissent une autorisation export publiée en 2024 et une présence dans la liste de septembre 2026 ; elles ne prouvent pas la commercialisation. La limite réglementaire/approvisionnement est explicitée, sans empêcher de documenter le produit européen exact.
+Voir `reviews/medical.json`, `reviews/language.json`, `reviews/semiology.json`, `browser-autonomous.json`, `source-binding.json` et `visual-self-review.json`. La liaison finale ne sera écrite qu’après les tests de l’aperçu exact. Pas de validation indépendante revendiquée.

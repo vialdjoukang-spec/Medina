@@ -1,49 +1,32 @@
-# G02 — paquet de revue du 2 novembre 2026
+# G02 — paquet relu du 2 novembre 2026
 
-Ouvrir **G02-apercu-autonome.html**. Il contient le moteur natif, ouvre G02 et embarque les octets originaux de la planche anatomique. Les autres leçons du fragment restent dans la navigation héritée ; seule G02 fait l’objet de cette reprise. Aucun déploiement distant n’est déclaré.
+L’[aperçu autonome](G02-apercu-autonome.html) ouvre G02 dans le moteur natif, avec l’original anatomique incorporé. SHA256 : `76c59b4fba209a09fb186f6a5554541e81397722633547ce89a3b61ecda435db`. La navigation des autres cours est héritée ; cette livraison porte uniquement sur G02. Aucun déploiement distant n’est affirmé.
 
-## Résultat vérifié
+39 lectures de cette session, 14 points monographiques et 20 rubriques revus. Six disciplines scientifiques et neuf sections sémiologiques ; original Carter/Gray1918 annoté en français dans le HTML, sans modification des pixels ni anatomie produite par IA. Les schémas causaux sont distincts de cet original.
 
-- 14 points monographiques présents ; 20 rubriques inventoriées. La présence des sections ne vaut pas certification de complétude médicale.
-- 6 sciences, dont sémiologie initiale en 9 sections et anatomie. Sciences : 2957 mots contre 1083 à la base.
-- 61 fenêtres définies, 60 termes distincts appelants, aucun renvoi absent, aucun identifiant dupliqué, aucune abréviation non couverte.
-- Une planche anatomique humaine originale Carter/Gray1918, affichée dans deux contextes pédagogiques, sans retouche des pixels ; 3 annotations françaises autour de l’image. Les schémas causaux hérités restent identifiés comme schémas didactiques, pas comme anatomie.
-- Chromium local : 1440 et390 pixels, requêtes externes interdites, images lazy décodées après défilement (648pixels chacune), fenêtres, Livre24px, dernière section pharmacologique et sources accessibles ; aucun débordement du document ni erreur JavaScript. La fenêtre fexinidazole de 3692 caractères conserve sa dernière source accessible à 24 pixels, sans débordement horizontal.
-- 26 lectures réelles indexées avec leur profondeur. Les résumés ne sont pas décrits comme des textes intégraux.
+La reprise documente les causes virales, cryptococcose, candidose, coccidioïdomycose, trypanosomiase africaine et Chagas. Elle corrige les répétitions sur populations, délais, seuils, causalité, codage et traitements. Les critères Consortium2013 et les correspondances pédagogiques PROFILES2023 ont été relus à leur source.
 
-## Fichiers probants
+## Preuves de lecture et de couverture
 
-- `G02-apercu-autonome.bundle.json` : SHA du rendu natif, du bundle et de l’image.
-- `source-binding.json` : empreintes des six HTML, du glossaire, de l’image et du bundle après contrôles ; `visual-self-review.json` : inspection visuelle réellement effectuée.
-- `browser-autonomous.json` et `captures/autonomous-*` : contrôles actuels. Les captures sans préfixe autonomous et `browser-check.json` documentent une passe intermédiaire.
-- `sciences-check.json`, `structural-checks.json`, `monograph-14.json` : contrôles techniques et limites médicales.
-- `recherche_G02/sources.json` : passages paraphrasés/lectures, identifiants S19–S44 ; les textes téléchargés restent en cache temporaire hors dépôt.
-- `recherche_G02/recherche.md` : matrice20 et lacunes.
+- [Ledger des passages lus](recherche_G02/sources.json) : URL, version, section, population, limite, paraphrase et empreinte ; textes complets hors Git.
+- [14 points](monograph-14.json) et [20 rubriques](matrix-20.json), avec [raisonnement et limites](recherche_G02/recherche.md).
+- [Revue médicale](reviews/medical.json), [langue](reviews/language.json), [sémiologie](reviews/semiology.json), toutes en `self_review` avec empreintes. Aucune validation indépendante ou humaine revendiquée.
+- [Provenance de la figure](figure-provenance.json), [inspection visuelle](visual-self-review.json) et [contrat](lesson-manifest.json).
 
-## Réserves qui empêchent une clôture médicale
+## Contrôles du paquet exact
 
-1. Erratum du15octobre2025 du guide candidose non obtenu. Les principes du texte2025 sont lus ; aucune nouvelle posologie chiffrée du schéma SNC n’est certifiée.
-2. FI suisse flucytosine actuelle et disponibilité non établies, malgré un RCP oral français exact relu ; traitements des autres causes rares non complétés ; distinction stricte des doses par produit, âge, indication et fonction rénale maintenue.
-3. Le guide WHO 2024 et le RCP Fexinidazole Winthrop 2025 sont désormais lus. Le statut suisse et les autres produits de la trypanosomiase restent à vérifier. Coccidioïdomycose et Chagas sont encore insuffisamment documentées.
-4. Critères du consortium encéphalite : table DGN consultée, source primaire non obtenue ; ne pas inventer les détails manquants. L’absence de données ne constitue pas un résultat négatif.
-5. BfArM2024 relu ; applicabilité administrative suisse2026 et obligations déclaratives non certifiées. Cartographie PROFILES héritée non revalidée.
-6. Rapports finaux MED, LANG et SEMIO non clos. Les corrections relèvent de self_review avec empreintes ; une revue indépendante systématique n’est pas exigée par README-V2 §7. Aucune validation humaine ni indépendante n’est revendiquée.
+Le contrôle statique natif passe : 23 362 mots, 64 fenêtres, 7 quiz, 11 Pareto. Sciences : 3 000 mots contre 1 083 à la base, 6 figures et 6 disciplines. La croissance n’est pas une mesure de qualité.
 
-## Corrections de portée clinique
+Le [rapport navigateur](browser-autonomous.json) vérifie 1440 et 390 pixels, les deux images après défilement et décodage (largeur naturelle648), les trois annotations, les six onglets et neuf sections, absence de débordement/erreurJavaScript, livre24px, et cinq fenêtres longues avec derniers liens accessibles. Toutes les requêtes externes sont bloquées pendant le test. Le serveurHTTP local est éphémère et fermé après le contrôle.
 
-Les concordances corps/fenêtres/Pareto ont été corrigées sur : triade28%, fièvre rapportée71% contre mesurée42%, seuil1000cellules non absolu, procalcitonine non exclusive, pronostic mesuré après sortie, causalité non déductible du délai antiviral, nouveau-né HSV distinct de l’échovirus, durée FI10jours versus directive≥14jours non arbitrée par simple date, délai4semaines après brivudine, indication Brivex limitée au zona de l’adulte immunocompétent, AmBisome FI dans sa population VIH, distinction antigène/culture cryptococcique et actualisation des principes candidose2025.
+Le [reçu de liaison](source-binding.json) relie les sixHTML, le glossaire et l’image à l’aperçu effectivement testé. Le fragment natif temporaire reste dans `preview/` horsGit ; `content-snapshot.html` est une copie textuelle empreintée pour la vérification des ancres.
+
+## Limites conservées
+
+L’erratum candidose d’octobre2025 reste inaccessible : aucun schéma chiffré douteux n’est publié. Les produits rares ne sont pas déclarés disponibles en Suisse sur la seule base d’une autorisation. L’incidence suisse actuelle et l’applicabilité administrative2026 ne sont pas inventées. Les produits de recours ne deviennent pas un protocole prescriptif exhaustif. Les études lues au niveau résumé restent signalées ainsi.
+
+Ces limites sont jugées non bloquantes pour le périmètre pédagogique effectivement couvert, car les assertions dépendantes ont été circonscrites ou retirées. Ce jugement d’auteur ne certifie pas la médecine. Aucun passage à une nouvelle leçon, PR ou écriture surmain n’est réalisé par ce paquet.
 
 ## Reproduction
 
-Depuis le worktree exclusif : construire le fragment avec `MEDINA_OUT=<dossier>/preview python3 build_front.py --fragment S08`, puis utiliser `harness/bundle_native.py` depuis le harness parent. Exécuter `node <dossier>/browser-check.cjs --autonomous`. Les captures concernent le bundle exact ; le serveur local est éphémère et fermé après le contrôle.
-
-Aucune prochaine leçon n’est ouverte tant que les réserves et les revues requises de G02 ne sont pas levées. Le rapport08hEurope/Zurich n’est pas une consigne d’arrêt.
-
-## Actualisation documentaire suivante
-
-Le guide WHO 2024 et le produit exact Fexinidazole Winthrop, version EMA du 17 octobre 2025, documentent maintenant les stades, les choix par population, les doses pondérales, le repas, la surveillance et le suivi. Les différences de seuil (≥100 OMS ; >100 RCP) et de surveillance à domicile sont explicites. Le statut suisse reste non établi. Le contrôle statique natif a également supprimé quatre styles en ligne et deux classes hors contrat ; les annotations de la figure demeurent du texte HTML.
-
-
-Actualisation flucytosine : RCP oral français du 1er septembre 2025 relu, avec doses par clairance, surveillance plasmatique et hématologique/hépatique, interactions, contraception et limites pédiatriques. Les données suisses établissent une autorisation export publiée en 2024 et une présence dans la liste de septembre 2026 ; elles ne prouvent pas la commercialisation. La limite réglementaire/approvisionnement est explicitée, sans empêcher de documenter le produit européen exact.
-
-Contrôle de la fenêtre flucytosine : 4656 caractères après normalisation des espaces et césures discrétionnaires du moteur, dernière source accessible à 1440/390 en Livre24, aucun débordement ni erreur JavaScript. Les premiers échecs du test portaient sur les césures automatiques du mot « allaitement », pas sur une omission du contenu.
+Construire avec `MEDINA_OUT=<dossier>/preview python3 build_front.py --fragment S08`, puis `harness/bundle_native.py <fragment> <worktree> G02 <aperçu>`. Exécuter `node <dossier>/browser-check.cjs --autonomous`, `python3 test_v7.py --static G02`, l’audit sciences et `tools/betta_verite.py <dossier>/recherche_G02`. Les contrôles doivent être relancés si les sources changent avant d’actualiser le reçu.

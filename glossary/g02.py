@@ -40,7 +40,7 @@ add_if_absent('LCMV', [('L', 'Lymphocytic (lymphocytaire)'), ('C', 'ChorioMening
 add_if_absent('SNC', [('S', 'Système'), ('N', 'Nerveux'), ('C', 'Central')], 'Système nerveux central', 'Ensemble formé par l’encéphale et la moelle épinière.', None)
 add_if_absent('JCV', [('J', 'John'), ('C', 'Cunningham'), ('V', 'Virus')], 'Virus JC', 'Virus cité par la directive S1 parmi les agents à rechercher par PCR du liquide, notamment chez l’immunodéprimé.', 'g02-pcr-lcr')
 add_if_absent('anti-NMDAR', [('anti', 'dirigé contre le'), ('N', 'N-'), ('M', 'Méthyl-'), ('D', 'D-'), ('A', 'Aspartate'), ('R', 'Receptor (récepteur)')], 'Anticorps dirigés contre le récepteur N-méthyl-D-aspartate', 'Encéphalite auto-immune qui peut suivre une encéphalite herpétique.', 'g02-autoimmune')
-add_if_absent('CASPR2', [('C', 'Contactin-'), ('ASP', 'Associated Protein-like (protéine apparentée associée à la contactine)'), ('R', 'Receptor-like'), ('2', 'numéro 2')], 'Protéine 2 apparentée à la protéine associée à la contactine', 'Cible d’anticorps dans une encéphalite auto-immune citée par la directive S1.', 'g02-autoimmune')
+add_if_absent('CASPR2', [('C', 'Contactin-'), ('ASP', 'Associated Protein-like (protéine apparentée associée à la contactine)'), ('R', 'lettre intégrée au nom CASPR2'), ('2', 'numéro 2')], 'Protéine 2 apparentée à la protéine associée à la contactine', 'Cible d’anticorps dans une encéphalite auto-immune citée par la directive S1.', 'g02-autoimmune')
 add_if_absent('LGI1', [('L', 'Leucine-rich (riche en leucine)'), ('G', 'Glioma (gliome)'), ('I', 'Inactivated (inactivé)'), ('1', 'numéro 1')], 'Protéine 1 inactivée du gliome, riche en leucine', 'Cible d’anticorps dans une encéphalite auto-immune citée par la directive S1.', 'g02-autoimmune')
 add_if_absent('ROR', [('R', 'Rougeole'), ('O', 'Oreillons'), ('R', 'Rubéole')], 'Vaccin contre la rougeole, les oreillons et la rubéole', 'En Suisse, il est donné à 9 et 12 mois.', 'g02-vaccination')
 add_if_absent('RORV', [('R', 'Rougeole'), ('O', 'Oreillons'), ('R', 'Rubéole'), ('V', 'Varicelle')], 'Vaccin contre la rougeole, les oreillons, la rubéole et la varicelle', 'Préféré au ROR en Suisse depuis 2023.', 'g02-vaccination')
@@ -50,3 +50,19 @@ add_if_absent('CCF', [('C', 'Conscience altérée'), ('C', 'Crise'), ('F', 'sign
 add_if_absent('EFNS', [('E', 'European'), ('F', 'Federation of'), ('N', 'Neurological'), ('S', 'Societies')], 'Fédération européenne des sociétés de neurologie', 'Elle a publié en 2010 une recommandation sur la méningo-encéphalite virale, non lue pour ce cours.', 'g02-lacunes')
 add_if_absent('EAN', [('E', 'European'), ('A', 'Academy of'), ('N', 'Neurology')], 'Académie européenne de neurologie', 'Elle a publié en 2017 une recommandation sur la FSME, non lue pour ce cours.', 'g02-lacunes')
 add_if_absent('Valaciclovir-Mepha', [('Valaciclovir-Mepha', 'nom commercial suisse, non une abréviation')], 'Valaciclovir-Mepha®', 'Préparation citée par l’information professionnelle suisse.', 'g02-d-valaciclovir')
+
+add_if_absent('AEMPS', [('AEMPS', 'Agencia Española de Medicamentos y Productos Sanitarios')], 'Agence espagnole des médicaments et produits de santé', 'Autorité qui publie le RCP espagnol Lampit dans la base CIMA.', 'g02-d-nifurtimox')
+add_if_absent('SEMTSI', [('SEMTSI', 'Sociedad Española de Medicina Tropical y Salud Internacional')], 'Société espagnole de médecine tropicale et de santé internationale', 'Société savante associée aux recommandations Chagas et VIH de 2011.', None)
+add_if_absent('DailyMed', [('DailyMed', 'nom de la base documentaire')], 'DailyMed', 'Base américaine donnant accès aux libellés des produits ; son contenu ne constitue pas une autorisation suisse.', 'g02-d-benznidazole')
+add_if_absent('Pérez-Molina', [('Pérez-Molina', 'nom de l’auteur')], 'Pérez-Molina', 'Auteur des recommandations espagnoles Chagas et VIH de 2011 citées dans la leçon.', None)
+code('A87.9', 'Méningite virale non précisée, classification 2024')
+
+add_if_absent('G6', [('G6', 'identifiant de situation PROFILES 2023')], 'Fièvre, frissons, hyperthermie', 'Situation de départ officielle, utilisée ici pour une correspondance pédagogique proposée par auteur ; ce n’est pas un code CIM.', None)
+
+add_if_absent('S7.6', [('S7.6', 'identifiant de situation PROFILES 2023')], 'Céphalée', 'Situation de départ officielle, utilisée ici pour une correspondance pédagogique proposée par auteur ; ce n’est pas un code CIM.', None)
+
+add_if_absent('S7.10', [('S7.10', 'identifiant de situation PROFILES 2023')], 'Crise et état de mal épileptique', 'Situation de départ officielle, utilisée ici pour une correspondance pédagogique proposée par auteur ; ce n’est pas un code CIM.', None)
+
+add_if_absent('S9.9', [('S9.9', 'identifiant de situation PROFILES 2023')], 'Modification de l’état mental, dont confusion ou délire', 'Situation de départ officielle, utilisée ici pour une correspondance pédagogique proposée par auteur ; ce n’est pas un code CIM.', None)
+
+add_if_absent('F1.15', [('F1.15', 'identifiant de situation PROFILES 2023')], 'Altération ou perte de conscience, coma', 'Situation de départ officielle, utilisée ici pour une correspondance pédagogique proposée par auteur ; ce n’est pas un code CIM.', None)

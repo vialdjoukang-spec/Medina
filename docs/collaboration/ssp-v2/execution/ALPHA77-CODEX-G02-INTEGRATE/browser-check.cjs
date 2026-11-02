@@ -60,10 +60,19 @@ try {for(const width of [1440,390]){
  const flucPopup={textLength:flucText.length,lastSourceActionable:true,horizontalOverflow:await flucDialog.evaluate(e=>e.scrollWidth>e.clientWidth+1)};
  if(flucPopup.horizontalOverflow)throw Error('flucytosine dialog horizontal overflow');
  await page.screenshot({path:path.join(base,`captures/${standalone?'autonomous-':''}g02-${width}-book24-flucytosine.png`)});await page.keyboard.press('Escape');
+ const extraPopups=[];
+ for(const [key,terms] of [['g02-d-nifurtimox',['40 kg','60 à 120 jours','14 jours']],['g02-d-benznidazole',['300 mg/j','Cockayne','deux semaines']],['g02-d-foscarnet',['24 mg/ml','encéphalite']]]){
+  await finalSection.locator('[data-k="'+key+'"]').click();const dlg=page.locator('.mc-dlg[open]');await dlg.waitFor({state:'visible'});
+  const txt=(await dlg.innerText()).normalize('NFKC').replace(/\u00ad/g,'').replace(/\s+/g,' ');
+  for(const term of terms)if(!txt.includes(term))throw Error(key+' missing '+term);
+  const last=dlg.locator('.mc-src a').last();await last.scrollIntoViewIfNeeded();await last.click({trial:true,timeout:10000});
+  const overflow=await dlg.evaluate(e=>e.scrollWidth>e.clientWidth+1);if(overflow)throw Error(key+' overflow');
+  await page.screenshot({path:path.join(base,`captures/${standalone?'autonomous-':''}g02-${width}-book24-${key}.png`)});extraPopups.push({key,textLength:txt.length,lastSourceActionable:true,horizontalOverflow:overflow});await page.keyboard.press('Escape');
+ }
  const semioMarkers=await semi.locator('[data-semiology]').count();
  const imageData=await course.locator('figure[data-origin="human-original"] img').evaluateAll(imgs=>imgs.map(i=>({naturalWidth:i.naturalWidth,complete:i.complete,embedded:i.src.startsWith('data:image/png;base64,')})));
  if(semioMarkers!==9||tabs.length!==6)throw Error('science structure mismatch');
- report.checks.push({width,book,fexPopup,flucPopup,semioMarkers,imageData,anatomyImageWidth,lastSectionSourceLinks:sourceLinks,lastSourceActionable:true,blockedRequests:blocked,scienceTabs:tabs,semiologyInitiallyVisible:true,...data,popupLength:popup.length,overflow:await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1)});
+ report.checks.push({width,book,fexPopup,flucPopup,extraPopups,semioMarkers,imageData,anatomyImageWidth,lastSectionSourceLinks:sourceLinks,lastSourceActionable:true,blockedRequests:blocked,scienceTabs:tabs,semiologyInitiallyVisible:true,...data,popupLength:popup.length,overflow:await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1)});
  await page.close();
 }}catch(e){report.failure=String(e);process.exitCode=1;}finally{await browser.close();server.close();fs.writeFileSync(path.join(base,standalone?'browser-autonomous.json':'browser-check.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));}
 })();

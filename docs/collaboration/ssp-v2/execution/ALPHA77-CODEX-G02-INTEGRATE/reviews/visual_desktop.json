@@ -1,0 +1,107 @@
+{
+  "mode": "self_review",
+  "reviewer": "astra_neurologie",
+  "verified_at": "2026-11-02T03:02:21.117202+00:00",
+  "scope": "Inspection réelle des cinq captures listées ; contrôles programmatiques des deuxlargeurs et cinq fenêtres longues dans browser-autonomous.json",
+  "images_inspected": [
+    "captures/autonomous-g02-1440-semiology.png"
+  ],
+  "capture_sha256": {
+    "captures/autonomous-g02-1440-semiology.png": "a953a731d3d8ef1fe3f59edd8748e5091eb313630e3f5b38fb7ee08a77ec624d",
+    "captures/autonomous-g02-390-semiology.png": "d35f841100baa7f5aadeb4a0bf58706968f3685a2527ebea61a2ab6371ec3671",
+    "captures/autonomous-g02-390-book24-anatomy.png": "8579273975fc84c04ca67259daf81346490bfb2c89043d64150f6a63ec0ec2c9",
+    "captures/autonomous-g02-390-book24-g02-d-nifurtimox.png": "611e4cab1bdc113c22ac2c77b2e6ca705c7756e363adcbc29c852b8fb9483331",
+    "captures/autonomous-g02-390-book24-g02-d-benznidazole.png": "3676b24775310794197b2809fcd7329de2a3de1c4fc37d8c96582cc54666c5c5"
+  },
+  "findings": [
+    "Original anatomique entier visible en1440 et390, trois annotationsfrançaises lisibles autour sans modifier les pixels.",
+    "Mode livre24 atteint ; annotations se lisent par défilement surmobile.",
+    "Fenêtres Lampit et benznidazole : fermeture et dernières sources visibles, pas de débordement horizontal."
+  ],
+  "limits": [
+    "Relecture auteur, sans indépendance ni validationhumaine.",
+    "Capture ciblée ne certifie pas chaque position de défilement ; navigateur surHTTP localéphémère, pasdéploiement distant.",
+    "Justification et césures relèvent du moteur hérité ; annotations agrandies demandent plusieurs écrans en390px."
+  ],
+  "preview_sha256": "76c59b4fba209a09fb186f6a5554541e81397722633547ce89a3b61ecda435db",
+  "clinical_certification": false,
+  "width": 1440,
+  "source_hashes": {
+    "chapters/G02/G02_a.html": "6a1a46893f56798f194f1a4eff876f51c2b969e5d6ebcbcad651efc6ec9d1308",
+    "chapters/G02/G02_b.html": "911958e584f0cd58e50517a81634115eddbcced59cfd70f87b9817ccf817b5f4",
+    "chapters/G02/G02_c.html": "16ac2cd55e96d10f5f0385727eec98b6b6b33ba9d849b805447cdae6b31ec7f4",
+    "chapters/G02/G02_d.html": "ec4651ed6d6c3b0ce266b5a959896370778673eaff8eca56407f60eb43d18481",
+    "chapters/G02/G02_pop1.html": "74ff84363621333a005326f960189cdbdffd03e355f96f19d318ec2b49bde0b1",
+    "chapters/G02/G02_pop2.html": "20a3a629ca40276061cab9e32359ccec3dc6571015a7c1dffafb05dbfdc39cab",
+    "glossary/g02.py": "48173e544a84909ab3fc76b982cf15090728adf1833b59b0610065178d837a8f",
+    "assets/img/g02/alpha/codex/Gray1196.png": "568d36ae47143acd19075d7970fef24fefb894627237106da707400ee74e06fa"
+  },
+  "browser_check": {
+    "width": 1440,
+    "book": {
+      "enabled": true,
+      "size": "24px"
+    },
+    "fexPopup": {
+      "textLength": 3692,
+      "lastSourceActionable": true,
+      "horizontalOverflow": false
+    },
+    "flucPopup": {
+      "textLength": 4656,
+      "lastSourceActionable": true,
+      "horizontalOverflow": false
+    },
+    "extraPopups": [
+      {
+        "key": "g02-d-nifurtimox",
+        "textLength": 2320,
+        "lastSourceActionable": true,
+        "horizontalOverflow": false
+      },
+      {
+        "key": "g02-d-benznidazole",
+        "textLength": 2421,
+        "lastSourceActionable": true,
+        "horizontalOverflow": false
+      },
+      {
+        "key": "g02-d-foscarnet",
+        "textLength": 1284,
+        "lastSourceActionable": true,
+        "horizontalOverflow": false
+      }
+    ],
+    "semioMarkers": 9,
+    "imageData": [
+      {
+        "naturalWidth": 648,
+        "complete": true,
+        "embedded": true
+      },
+      {
+        "naturalWidth": 648,
+        "complete": true,
+        "embedded": true
+      }
+    ],
+    "anatomyImageWidth": 648,
+    "lastSectionSourceLinks": 4,
+    "lastSourceActionable": true,
+    "blockedRequests": [],
+    "scienceTabs": [
+      "Sémiologie fondamentale et analytique",
+      "Anatomie",
+      "Physiologie",
+      "Immunologie",
+      "Virologie diagnostique",
+      "Mycologie et parasitologie"
+    ],
+    "semiologyInitiallyVisible": true,
+    "imageWidth": 648,
+    "annotations": 3,
+    "figureWidth": 747.078125,
+    "popupLength": 367,
+    "overflow": false
+  }
+}
