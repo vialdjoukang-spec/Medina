@@ -1,20 +1,36 @@
 {
-  "generated_at": "2026-11-02T05:25:41+00:00",
+  "generated_at": "2026-11-02T05:35:41+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T05:25:41+00:00",
+    "checked_at": "2026-11-02T05:35:41+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T05:25:41+00:00",
+    "observed_at": "2026-11-02T05:35:41+00:00",
     "ok": true,
-    "findings": [],
+    "findings": [
+      {
+        "agent": "astra_neurologie",
+        "level": "warning",
+        "reason": "Aucune activité déclarée depuis plus de 20 min; agent non supposé actif"
+      },
+      {
+        "agent": "astra_nephrologie",
+        "level": "warning",
+        "reason": "Aucune activité déclarée depuis plus de 20 min; agent non supposé actif"
+      },
+      {
+        "agent": "codex_hematologie",
+        "level": "warning",
+        "reason": "Aucune activité déclarée depuis plus de 20 min; agent non supposé actif"
+      }
+    ],
     "interval_seconds": 600,
-    "observer_pid": 505022,
+    "observer_pid": 505212,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -1443,8 +1459,8 @@
         "tokens_actual": null,
         "cost_actual": null
       },
-      "activity_age_seconds": 702,
-      "activity_fresh": true,
+      "activity_age_seconds": 1302,
+      "activity_fresh": false,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
@@ -2883,9 +2899,9 @@
           "Relectures médicales, linguistiques et visuelles effectuées par le même auteur IA en mode self_review ; aucune revue indépendante ou certification humaine revendiquée."
         ]
       },
-      "activity_age_seconds": 702,
-      "activity_fresh": true,
-      "sections_per_hour": 12.97,
+      "activity_age_seconds": 1302,
+      "activity_fresh": false,
+      "sections_per_hour": 11.23,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -3661,8 +3677,8 @@
           "clinical_certification": false
         }
       },
-      "activity_age_seconds": 894,
-      "activity_fresh": true,
+      "activity_age_seconds": 1494,
+      "activity_fresh": false,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
@@ -4089,8 +4105,8 @@
         ],
         "metrics": null
       },
-      "activity_age_seconds": 1159,
-      "activity_fresh": true,
+      "activity_age_seconds": 1759,
+      "activity_fresh": false,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
@@ -5355,6 +5371,12 @@
     },
     {
       "at": "2026-11-02T05:15:41+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T05:25:41+00:00",
       "action": "watch",
       "ok": true,
       "findings": 0
@@ -12230,7 +12252,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T05:25:40+00:00",
+    "observed_at": "2026-11-02T05:35:40+00:00",
     "lessons": [
       {
         "code": "E00",
