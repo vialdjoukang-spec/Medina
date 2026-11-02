@@ -1,0 +1,182 @@
+"""Fiches C95 autonomes : définition, interprétation et limites."""
+from common import pop,table,original
+
+pop('sources-guides','Sources, actualité et limites', '''
+<p>La recherche associe sources suisses de codage, statistiques, pharmacologie et formation, puis recommandations européennes et travaux ciblés sur la lignée ambiguë. Onkopedia LMA est datée de septembre2025, LLA de mars2026 et LAP de janvier2026. Les tables OMS2022 et la revue cytométrique2025 sont utilisées pour attribuer les lignées ; une revue clinique publiée en ligne le9octobre2025 discute les limites de traitement.</p>
+<p>Les lectures ne sont pas toutes équivalentes : les méthodes et résultats pertinents d’iBFM2018 et d’EBMT2017 ont été lus, tandis que seul le résumé public d’EBMT2026 a été accessible. La revue suisse de neutropénie fébrile date de2016 ; elle soutient la reconnaissance d’urgence et ne remplace pas l’antibiothérapie locale actuelle. Les statistiques OFS portent sur2013–2017 et l’ensemble C91–C95.</p>
+<p>Les sept fiches professionnelles suisses ont été consultées par produit, avec dates de mise à jour conservées. Aucune incidence suisse propre à la LAPM, aucun prix individuel et aucun remboursement garanti ne sont établis ici. Les références américaines descriptives de registre et les figures de laboratoire ne fondent pas une recommandation de traitement américaine.</p>
+<p>Les quatre images sont des originaux publiés sous CC BY4.0, conservés sans modification des pixels et expliqués en français. Les diagrammes textuels créés pour le cours représentent des relations causales, pas une anatomie ou une cytologie synthétique. La relecture du cours est une auto-relecture IA ; elle ne vaut pas validation médicale humaine indépendante.</p>
+''','AML','ALL','APL','ALAL','FLOW','EBMT17','EBMT26','IBFM','OFS-CANCER')
+
+pop('blastes','Le seuil de blastes répond à une classification', '''
+<p>Un blaste est une cellule immature reconnue par la morphologie et les analyses complémentaires. Le pourcentage exige un dénominateur et un prélèvement : sang et moelle ne sont pas interchangeables sans préciser ce qui a été mesuré. Dans les LALA étudiées, le total néoplasique atteint au moins20 % dans le sang ou la moelle, en additionnant les populations malignes si la forme est bilinéale.</p>
+<p>Ce seuil n’est pas celui de toutes les leucémies. Certaines LMA avec anomalies génétiques définissantes ont des règles OMS/ICC différentes. La convention de25 % de blastes médullaires reprise par Onkopedia pour distinguer LLA et lymphome lymphoblastique répond à une autre question. Un compte rendu doit nommer la classification employée.</p>
+<p>Enfin, le seuil diagnostique n’est pas un seuil d’urgence. Une coagulopathie évocatrice de LAP justifie une prise en charge immédiate, et une leucostase se reconnaît cliniquement sans attendre un nombre arbitraire de leucocytes.</p>
+''','WHO','FLOW','AML','ALL','APL')
+
+pop('lapm','LAPM : plusieurs lignées, plusieurs formes', '''
+<p>Une leucémie aiguë à phénotype mixte remplit les critères de plusieurs lignées après exclusion des catégories qui priment dans la classification. Une même population peut porter deux programmes définissants : forme biphénotypique. Des populations blastiques distinctes peuvent porter des lignées différentes : forme bilinéale.</p>
+<p>Deux populations ne prouvent pas deux clones indépendants. Elles peuvent partager une anomalie fondatrice et diverger dans leur expression. À l’inverse, une petite population B à maturation normale peut correspondre à des hématogones résiduelles et ne pas constituer une deuxième leucémie.</p>
+<p>La coexpression de CD13, CD33 ou CD7 isolés n’est pas suffisante. La lignée s’attribue par des critères spécifiques, avec intensité et contrôles. La génétique, le contexte de LMC ou de néoplasie myéloïde et la hiérarchie OMS/ICC peuvent modifier la conclusion. La catégorie biologique guide une discussion spécialisée ; le code C95 seul ne prescrit aucun traitement.</p>
+''','WHO','FLOW','ALAL')
+
+pop('lai','LAI : démontrer l’absence de lignée attribuable', '''
+<p>La leucémie aiguë indifférenciée ne présente pas de marqueur définissant une lignée après investigation suffisamment large. Elle peut exprimer des marqueurs d’immaturité, avec au plus un marqueur associé par lignée dans la description classificatoire ; ces protéines ne suffisent pas à une attribution B, T ou myéloïde.</p>
+<p>Il faut rechercher les différenciations monocytaires, mégacaryocytaires, érythroïdes et dendritiques pertinentes, et considérer les anomalies génétiques définissant d’autres maladies. MPO négative ne suffit donc pas. Une LALA sans autre précision peut avoir un profil partiellement différencié ne remplissant ni LAPM ni LAI.</p>
+<p>TdT et CD34 sont utiles mais leur absence ne constitue pas, à elle seule, une exclusion absolue. Dans la figure originale14 de Fuda et Chen, les blastes CD34/CD117 n’expriment pas une lignée définissante et TdT est largement négative. Le diagnostic résulte du panel complet, pas d’un couple obligatoire de marqueurs.</p>
+<p><b>Voir l’original annoté :</b> onglet Sciences fondamentales, sous-onglet Histologie et cytométrie, figure « LAI : un panel étendu, pas un marqueur manquant ». Ses panneaux et sa légende française permettent de comparer les populations sans réduire le diagnostic à un seul marqueur.</p>
+''','FLOW','WHO','ALAL')
+
+pop('categorie','C95 : une catégorie de code, pas un protocole', '''
+<p>La CIM-10-GM2024 réunit sous C95 les leucémies à cellules non précisées. C95.0 couvre notamment les leucémies aiguës biphénotypiques, bilinéales, de lignée mixte ou incertaine. C95.1 concerne les formes chroniques non précisées ; C95.7 les autres formes ; C95.9 la leucémie sans précision. Le dossier peut rester non précisé pour des raisons documentaires ou biologiques.</p>
+<p>Le code ne remplace pas la conclusion intégrée du laboratoire. Une leucémie aiguë connue mais de lignée non attribuée n’est pas automatiquement C95.9 puisque C95.0 précise déjà son caractère aigu. Inversement, on ne fabrique pas une LAPM parce que le compte rendu complet n’est pas encore disponible.</p>
+<p>La note d’exclusion de C95.0 renvoie l’exacerbation aiguë d’une leucémie chronique non précisée vers C95.1. La version2024 est celle vérifiée pour ce chapitre ; une facturation réelle exige la version et les règles applicables à la date des soins.</p>
+''','CIM','OFS-CIM')
+pop('cim-5e','Cinquième caractère : documenter la rémission', '''
+<p>Les sous-catégories C95.0, C95.1, C95.7 et C95.9 utilisent un cinquième caractère :0 pour absence de mention de rémission complète,1 pour rémission complète. Le0 comprend la rémission partielle et les cas dont le statut n’est pas connu ; il ne signifie donc pas toujours « échec thérapeutique démontré ».</p>
+<p>C95.00 et C95.01 désignent ainsi deux statuts documentaires d’une leucémie aiguë à cellules non précisées. La définition clinique de la rémission doit être établie selon le protocole et les examens, puis correctement transcrite. Elle ne se déduit pas du code lui-même.</p>
+<p>Aucun caractère2 n’a été trouvé pour ces sous-catégories dans la version2024 lue. C95.8! fonctionne autrement : code additionnel de réfractarité à l’induction standard, sans cinquième caractère.</p>
+''','CIM','OFS-CIM')
+pop('c958','C95.8! : réfractarité, code additionnel', '''
+<p>C95.8! désigne une leucémie réfractaire au traitement d’induction standard dans la CIM-10-GM2024. Le point d’exclamation signale un code additionnel : il complète le code de la leucémie et ne le remplace pas. Il n’attribue pas une lignée.</p>
+<p>Une MRD positive isolée ne suffit pas à appliquer automatiquement ce libellé. La réponse morphologique, les critères de réfractarité du protocole et le contexte documentaire doivent être vérifiés. Une RC avec MRD détectable n’est pas identique à un échec morphologique d’induction.</p>
+<p>Le code n’établit ni l’indication d’un schéma de rattrapage ni son remboursement. Il faut conserver la distinction entre constat clinique, classification biologique, codage administratif et décision thérapeutique.</p>
+''','CIM','OFS-CIM','AML','ALL')
+
+pop('who-icc','OMS et ICC : ne pas fusionner les seuils', '''
+<p>Les deux classifications2022 organisent les LALA avec des critères de lignée et des groupes génétiques, mais elles ne sont pas identiques. L’OMS quantifie certaines intensités par rapport aux cellules normales ; l’ICC utilise pour plusieurs marqueurs une comparaison qualitative aux contrôles et ne reprend pas toutes les limites chiffrées OMS.</p>
+<p>Pour une population mineure dans une forme bilinéale, l’ICC utilise un seuil de5 % de cellules de lignée divergente ; en dessous, elle demande de décrire le contingent dans le contexte de la lignée dominante. L’OMS n’impose pas cette taille minimale si la population aberrante est réellement démontrée. Aucune des deux n’autorise à compter une population normale comme tumorale.</p>
+<p>La liste des anomalies liées à la myélodysplasie diffère également : RUNX1 fait partie de la liste ICC mais pas de la liste OMS correspondante. Les relations entre mutations, histoire de la maladie et phénotype ambigu peuvent être discutées. Le compte rendu doit indiquer le cadre retenu et les limites, surtout si les classifications aboutissent à des libellés différents.</p>
+''','WHO','FLOW','ALAL')
+pop('crit-b','Attribution B : intensité et combinaison', '''
+<p>Dans la table OMS de lignée ambiguë, un CD19 fort doit s’accompagner d’au moins un marqueur fortement exprimé parmi CD10, CD22 et CD79a. Un CD19 faible nécessite au moins deux de ces marqueurs. Fort signifie ici qu’une partie de la population dépasse50 % de l’intensité des précurseurs B normaux ; il ne s’agit pas de50 % des blastes.</p>
+<p>CD79a ne doit pas être utilisé pour cette attribution lorsque la lignée T est considérée, car il peut apparaître dans certaines leucémies T. Le panel complet évite une fausse double attribution. Le compte rendu indique les contrôles et les niveaux réellement observés.</p>
+<p>La revue cytométrique comporte une discordance entre une cellule de tableau ICC et son texte sur le CD19 faible. Le cours retient les combinaisons explicites et ne simplifie pas en « CD19 faible + un marqueur suffit ». Une lecture critique des tableaux est nécessaire même dans une publication récente.</p>
+''','WHO','FLOW')
+pop('crit-t','Attribution T : CD3 spécifique, pas CD7 seul', '''
+<p>L’OMS retient CD3 cytoplasmique ou de surface, avec une partie de la population dépassant50 % de l’intensité des T matures dans la méthode de cytométrie utilisée. L’anticorps reconnaît la chaîne epsilon. Pour l’immunohistochimie, un réactif non dirigé contre la chaîne zêta évite une attribution erronée à des cellules exprimant cette dernière.</p>
+<p>CD2, CD5 et CD7 contribuent au profil, mais ne remplacent pas ce critère de lignée T dans la LALA. Une LMA CD7 positive ne devient donc pas une LAPM T/myéloïde. De même, un marqueur B partagé doit être interprété avec prudence dans un profil T.</p>
+<p>La mesure dépend du panel, de la perméabilisation et des contrôles. Une discordance entre morphologie et cytométrie conduit à une revue technique et biologique ; elle n’autorise pas à abaisser arbitrairement le seuil pour faire entrer le cas dans une catégorie souhaitée.</p>
+''','WHO','FLOW')
+pop('cd3neg','Un profil CD3 négatif demande une réévaluation', '''
+<p>Dans une suspicion de LALA, l’absence de CD3 définissant ne permet pas de conclure à une lignée T sur CD7 ou CD2 seuls. Il faut vérifier les conditions techniques, la qualité de la population et les autres possibilités diagnostiques, notamment LMA peu différenciée, LAI ou LALA sans autre précision.</p>
+<p>Des publications de cas atypiques ne constituent pas une règle générale abolissant le critère. Le diagnostic final peut exiger une relecture spécialisée et des analyses complémentaires. Le cours conserve cette fiche pour expliquer le piège, sans enseigner comme établi un groupe de « LLA-T CD3 négatives » à partir de résumés isolés non relus intégralement.</p>
+''','WHO','FLOW','ALAL')
+pop('auer','Bâtonnet d’Auer : indice morphologique', '''
+<p>Un bâtonnet d’Auer est une inclusion cytoplasmique en aiguille associée à la différenciation myéloïde. Sa reconnaissance sur un frottis doit être confrontée à l’ensemble de la morphologie et au bilan immunophénotypique/génétique. Son absence n’exclut pas une leucémie myéloïde.</p>
+<p>Des promyélocytes anormaux, parfois avec multiples inclusions, et une coagulopathie font évoquer une LAP. L’urgence est alors la prise en charge spécialisée et la recherche de PML::RARA ; il ne faut pas attendre un pourcentage arbitraire de blastes. La morphologie seule ne règle toutefois pas tous les diagnostics différentiels.</p>
+''','AML','APL','FLOW')
+pop('cytometrie','Lire une cytométrie en cinq questions', '''
+<ol><li>Quel prélèvement, quelle qualité et quel traitement préalable ?</li><li>Quelle population est analysée, avec quels marqueurs d’immaturité et quels contrôles normaux ?</li><li>Les marqueurs définissants sont-ils suffisamment intenses et coordonnés ?</li><li>S’agit-il d’une population doublement différenciée ou de populations distinctes réellement aberrantes ?</li><li>La génétique et le contexte changent-ils la catégorie ?</li></ol>
+<p>Chaque point d’un diagramme représente un événement analysé ; les axes montrent des signaux, souvent sur une échelle logarithmique. Une couleur est une convention de population de l’étude, pas une coloration naturelle de la cellule. Dans les figures publiées ici, le rouge marque les blastes sélectionnés par les auteurs.</p>
+<p>Le signal MPO faible isolé ne doit pas être confondu avec une lignée myéloïde démontrée. Le seuil relatif d’intensité et la part de cellules positives sont deux variables différentes. Une image pédagogique ne permet pas de recalculer un résultat de laboratoire à partir de pixels.</p>
+''','FLOW','WHO')
+
+pop('exclusion','Quand une autre catégorie prime', '''
+<p>Les leucémies avec anomalies génétiques définissantes et certaines LMA liées à la myélodysplasie peuvent exprimer des marqueurs aberrants d’autres lignées. Une morphologie de LMA avec RUNX1::RUNX1T1 et CD19 n’est pas automatiquement une LAPM. La hiérarchie diagnostique se lit avant de compter les marqueurs.</p>
+<p>Le contexte de LMC en phase blastique, une néoplasie avec fusion de kinase et certaines différenciations rares doivent aussi être examinés. La recherche de FGFR1, par exemple, est guidée par le contexte, une éosinophilie éventuelle et le profil global, sans être imposée par un simple cas illustratif à chaque patient.</p>
+<p>Une mutation associée à la myélodysplasie ne s’interprète pas seule. Les listes OMS et ICC ne sont pas identiques et la revue clinique discute des zones de chevauchement. Un rapport rigoureux explique les critères remplis et les incertitudes au lieu d’une exclusion automatique non contextualisée.</p>
+''','WHO','FLOW','ALAL','AML')
+pop('facteurs','Facteurs de risque : association et causalité', '''
+<p>Les leucémies aiguës peuvent survenir après des traitements cytotoxiques ou dans certains contextes de prédisposition. Une histoire d’exposition professionnelle, de radiothérapie, de chimiothérapie et d’hémopathie antérieure mérite d’être recueillie. La majorité des situations ne permet pas d’attribuer une cause individuelle certaine.</p>
+<p>Un facteur de risque décrit une association dans une population ; il ne prouve pas que l’exposition explique la maladie de cette personne. Une mutation du clone tumoral peut être somatique. Une question constitutionnelle nécessite une démarche spécifique avec conseil génétique et prélèvement approprié.</p>
+<p>Le dossier suisse peut nécessiter des démarches professionnelles ou sociales, mais la causalité médicale, la reconnaissance assurantielle et le droit à une prestation ne sont pas synonymes. Aucune décision Suva ou assurance-invalidité n’est garantie par ce cours.</p>
+''','AML','OFS-CANCER','ALAL')
+
+pop('bcrabl1','BCR::ABL1 : diagnostic et cible', '''
+<p>La fusion BCR::ABL1 code une tyrosine kinase constitutivement active. Elle peut se rencontrer dans une LMC, une LLA-B et certaines LAPM. Le résultat doit donc être interprété avec l’histoire, les cellules porteuses, la morphologie et les autres marqueurs.</p>
+<p>Dans une LAPM BCR::ABL1, un ITK est généralement discuté avec une stratégie de type LLA. Le choix dépend notamment des mutations de résistance, des traitements précédents et du risque de toxicité. T315I réduit l’activité de plusieurs ITK ; la fiche suisse du ponatinib comporte une indication LLA Ph+ dans ce contexte.</p>
+<p>La cible ne suffit pas à établir une indication réglementaire « LAPM ». Les fiches Glivec et Iclusig nomment la LLA Ph+ selon leurs conditions propres. L’usage dans un diagnostic mixte et son remboursement nécessitent une vérification explicite, avec distinction entre preuve clinique, autorisation et accès.</p>
+''','ALAL','WHO','GLIVEC','ICLUSIG')
+pop('kmt2a','KMT2A : un réarrangement dans son contexte', '''
+<p>KMT2A intervient dans la régulation de la chromatine et de l’expression génique. Ses réarrangements définissent des groupes biologiques dans plusieurs leucémies aiguës, dont certaines LAPM. Le partenaire de fusion et le contexte peuvent être pertinents ; « KMT2A positif » est une formulation trop vague.</p>
+<p>Les leucémies KMT2A réarrangées sont représentées dans les observations de plasticité et de changement de lignée après traitement ciblant B. Cela ne signifie pas qu’un changement survient chez tous les patients. Le suivi doit conserver une vision large du clone et de son phénotype.</p>
+<p>La présence du réarrangement ne remplace pas les critères phénotypiques ni l’évaluation de réponse. Les nouvelles approches ciblées discutées dans les revues ne deviennent pas automatiquement des indications suisses établies pour toute LAPM.</p>
+''','WHO','ALAL','KARASEK')
+pop('znf384','ZNF384 : proximité biologique de certaines formes B/myéloïdes', '''
+<p>Des réarrangements de ZNF384 sont décrits dans des LAPM B/myéloïdes et des LLA-B, notamment pédiatriques. Ils illustrent qu’une anomalie génétique peut rapprocher des maladies ayant des phénotypes différents. La classification récente reconnaît cette information biologique.</p>
+<p>Le diagnostic exige toutefois de documenter les lignées réellement exprimées. On ne transforme pas une LLA-B en LAPM parce qu’une fusion de ZNF384 est trouvée, ni l’inverse sans examiner le panel. La réponse et le suivi s’inscrivent dans un protocole spécialisé.</p>
+''','WHO','FLOW','ALAL')
+pop('bcl11b','BCL11B : activation anormale d’un programme', '''
+<p>BCL11B participe normalement au programme de différenciation T. Certaines leucémies très immatures présentent un réarrangement ou une activation anormale de ce gène, parfois par rapprochement d’un élément régulateur. La relation entre génétique et phénotype n’est donc pas simplement celle d’une protéine mutée mesurée dans le sang.</p>
+<p>Les cas décrits peuvent chevaucher des profils T/myéloïdes ou d’autres leucémies immatures. OMS et ICC ne formulent pas toutes les catégories de manière identique. Le compte rendu doit préciser l’anomalie réellement détectée et le cadre de classement, sans confondre expression de BCL11B et lignée T démontrée par CD3.</p>
+''','WHO','ALAL','KARASEK')
+pop('fgfr1','FGFR1 et les fusions de kinase', '''
+<p>Une néoplasie myéloïde/lymphoïde avec fusion de tyrosine kinase peut se présenter avec une maladie blastique de phénotype varié. FGFR1 fait partie des cibles à considérer dans le contexte approprié. Une éosinophilie ou des atteintes de lignées différentes peuvent orienter, mais leur absence ne tranche pas seule.</p>
+<p>Le choix de FISH, séquençage ou autre analyse dépend de la question et de la couverture de la méthode. Une FISH négative pour une cible donnée ne constitue pas un génome normal. L’étude spécialisée peut faire sortir le cas d’une catégorie LALA non autrement définie.</p>
+<p>Le cours ne retient pas une règle « FISH FGFR1 obligatoire dans tout C95 » issue d’un cas isolé. La classification et le contexte guident un bilan suffisamment large et hiérarchisé.</p>
+''','WHO','ALAL','FLOW')
+pop('lineage-switch','Changement de lignée : revoir le clone et la méthode', '''
+<p>Après une thérapie ciblant B, une rechute peut perdre le phénotype B dominant et adopter un profil myéloïde ou ambigu. Plusieurs mécanismes sont discutés : sélection d’une sous-population préexistante, plasticité d’un progéniteur et évolution du clone. Une preuve de parenté moléculaire aide à distinguer transformation du même clone et nouvelle maladie.</p>
+<p>La revue rapporte qu’une série EVOLVE de70changements de lignée comprenait53LMA et17LAPM/LAI. Le dénominateur est constitué de cas ayant déjà changé de lignée ;53/70 ne signifie pas que75,7 % de tous les patients traités développent une LMA.</p>
+<p>Devant une cytopénie, des blastes ou une discordance de MRD, reprendre morphologie, panel élargi et génétique. Une recherche limitée à CD19 peut devenir insuffisante après pression thérapeutique sur cet antigène. L’interprétation influence le choix de rattrapage, qui reste individualisé.</p>
+''','ALAL','KARASEK','FLOW')
+
+pop('insuffisance','Insuffisance médullaire : trois fonctions en défaut', '''
+<p>Les globules rouges transportent l’oxygène, les neutrophiles participent à la défense anti-infectieuse et les plaquettes à l’hémostase primaire. Une prolifération blastique peut réduire la production fonctionnelle de ces lignées. Fatigue, fièvre et purpura forment ainsi une combinaison évocatrice, mais non spécifique.</p>
+<p>Un nombre élevé de leucocytes peut être constitué de blastes. Il ne protège donc pas de l’infection et ne garantit pas un nombre satisfaisant de neutrophiles fonctionnels. Il faut lire le différentiel et le frottis avec la numération totale.</p>
+<p>Les signes dépendent aussi de la vitesse d’installation, des comorbidités et d’autres causes possibles. Une dyspnée peut être anémique, infectieuse, hémorragique ou liée à une leucostase. Les symptômes guident le bilan et le niveau de soins ; ils ne déterminent pas la lignée leucémique.</p>
+''','NORMAL','AML','ALL','RMS-NF')
+pop('civd','Coagulopathie : bilan et urgence', '''
+<p>La coagulation intravasculaire disséminée associe activation systémique de la coagulation et consommation de composants hémostatiques, avec risques hémorragiques et thrombotiques. Dans la LAP, la coagulopathie et la fibrinolyse contribuent au risque de décès précoce.</p>
+<p>Le bilan associe clinique, plaquettes, TP/INR, TCA, fibrinogène et marqueurs de fibrinolyse selon le centre, avec répétition adaptée à l’évolution. Un seul saignement profond ou un seul résultat perturbé ne prouve pas tous les mécanismes d’une CIVD.</p>
+<p>Si le tableau évoque une LAP, la filière spécialisée commence l’ATRA sur suspicion et organise le soutien hémostatique sans attendre PML::RARA. Les objectifs transfusionnels et la cytoréduction suivent le protocole LAP ; ils ne sont pas extrapolés à toutes les leucémies non typées.</p>
+''','APL','AML')
+pop('leucostase','Leucostase : une urgence clinique', '''
+<p>La leucostase désigne une atteinte de la microcirculation liée aux cellules leucémiques et à leurs interactions, particulièrement préoccupante devant des manifestations respiratoires ou neurologiques. Hyperleucocytose décrit un nombre ; leucostase décrit un syndrome.</p>
+<p>Onkopedia LMA souligne qu’elle peut survenir avec ou sans hyperleucocytose importante. Il ne faut donc pas attendre100G/L pour agir devant une hypoxémie ou une confusion compatible. Infection, hémorragie et troubles métaboliques restent des diagnostics concurrents à rechercher.</p>
+<p>La prise en charge associe soins urgents, surveillance, traitement causal et cytoréduction choisis par le centre, avec prévention de lyse. Les doses d’hydroxycarbamide d’un protocole LMA ne sont pas une règle pour chaque C95, et l’intérêt d’une procédure spécialisée ne se déduit pas du chiffre seul.</p>
+''','AML','ALAL')
+pop('lyse','Lyse tumorale : libération de plusieurs solutés', '''
+<p>La destruction rapide de cellules peut augmenter potassium, phosphate et produits du catabolisme des acides nucléiques. L’acide urique et les perturbations phosphocalciques peuvent contribuer à l’atteinte rénale ; les anomalies électrolytiques menacent aussi le rythme cardiaque. L’évaluation tient compte de la masse tumorale, du traitement et des fonctions d’organe.</p>
+<p>Surveiller urate, potassium, phosphate, calcium, créatinine et diurèse selon le niveau de risque. L’hydratation doit rester compatible avec la fonction cardiorénale. Une valeur d’urate basse après rasburicase n’exclut pas une hyperkaliémie ni une lyse persistante.</p>
+<p>La rasburicase transforme l’urate en allantoïne, mais continue aussi d’agir dans un tube non traité correctement. La fiche suisse exige tube hépariné prérefroidi, maintien sur glace, centrifugation à4°C et dosage dans les4heures. Le déficit en G6PD expose à l’hémolyse et à la méthémoglobinémie et constitue une contre-indication.</p>
+''','AML','FASTURTEC')
+
+pop('induction','Induction : une orientation issue de données limitées', '''
+<p>Les données rétrospectives favorisent généralement un traitement de type LLA pour beaucoup de LAPM, avec ajout d’un ITK lorsqu’une cible BCR::ABL1 le justifie. La biologie, l’âge, les traitements antérieurs et l’aptitude peuvent modifier la stratégie. La LAI et les catégories de chevauchement ne sont pas automatiquement assimilées à cette règle.</p>
+<p>Les schémas hybrides ont parfois donné davantage de toxicité ou de moins bons résultats dans les séries, sans qu’un essai randomisé permette d’interdire toute combinaison dans toute situation. Une réponse inadéquate exige une discussion spécialisée ; la décision ne se réduit pas à « MRD positive donc changer systématiquement de famille ».</p>
+<p>Le plan doit annoncer les évaluations de réponse, la stratégie du système nerveux central, les soins de support et la consolidation envisagée. Il est révisé à partir de résultats mesurés et de la tolérance, avec information du patient.</p>
+''','ALAL','IBFM','ALL')
+pop('ibfm','iBFM : ce que montre la cohorte pédiatrique', '''
+<p>L’étude rétrospective rassemble233patients de moins de18ans traités entre2002 et2015 pour leucémie de lignée ambiguë. Elle compare des traitements choisis par les centres, sans randomisation. La survie sans événement à5ans était de80±4 % pour un traitement de type LLA,36±7,2 % pour type LMA et50±12 % pour combinaison.</p>
+<p>Les auteurs soutiennent une approche de type LLA pour la majorité des profils considérés, notamment les formes exprimant CD19. La réponse précoce garde une place importante. Un algorithme proposé discute un changement chez certaines mauvaises réponses, dont≥5 % de blastes à la fin de l’induction ; ce seuil ne doit pas être transformé en protocole universel adulte.</p>
+<p>Il n’apparaît pas de bénéfice global de l’allogreffe dans cette cohorte pédiatrique. Des situations sélectionnées peuvent néanmoins justifier une discussion. Le résultat ne prouve ni qu’aucun enfant ne doit être greffé, ni que les observations adultes s’appliquent sans adaptation.</p>
+''','IBFM','ALAL')
+pop('ebmt','Allogreffe : résultats et sélection', '''
+<p>EBMT2017 étudie519adultes atteints de LAPM, en première rémission complète, greffés entre2000 et2014. À3ans, survie globale56,3 %, survie sans leucémie46,5 %, rechute31,4 % et mortalité sans rechute22,1 %. Ces critères décrivent des dimensions différentes du résultat.</p>
+<p>Le résumé public EBMT2026 porte sur195patients en RC1 greffés entre2014 et2023 : à2ans, survie globale70,7 %, survie sans leucémie56,4 %, rechute29,8 % et mortalité sans rechute13,8 %. Le texte intégral n’a pas été accessible lors de cette recherche ; le cours ne prétend pas en avoir vérifié toutes les méthodes.</p>
+<p>Les périodes, horizons et populations diffèrent. On ne soustrait donc pas56,3 à70,7 pour annoncer un bénéfice causal de la greffe moderne. Les deux séries ne comportent pas de comparaison randomisée contre absence de greffe. Elles soutiennent une discussion en RC1 chez l’adulte éligible, avec risque de rechute et toxicité non liée à la rechute.</p>
+''','EBMT17','EBMT26','ALAL')
+pop('hors-etiquette','Autorisation, preuve et remboursement : trois vérifications', '''
+<p>Une publication favorable peut soutenir une décision clinique sans créer une indication de l’autorité du médicament. Les fiches suisses d’imatinib, ponatinib, blinatumomab et vénétoclax examinées nomment certaines LLA, LMA ou autres hémopathies ; elles ne nomment pas une indication propre LAPM.</p>
+<p>Les revues décrivent des usages ciblés ou des associations dans la LAPM, souvent dans des séries limitées. La dose d’une indication autorisée ne devient pas automatiquement une dose validée pour toute association hors indication. Le centre documente la justification, les alternatives, les risques et l’information du patient.</p>
+<p>La prise en charge financière dépend de la Liste des spécialités, de ses limitations et, le cas échéant, d’une demande selon OAMal71a–71d. L’autorisation d’un produit n’est pas une garantie de remboursement dans un schéma précis. Les soins de support doivent aussi être lus selon leur libellé : Fasturtec couvre certaines leucémies aiguës à risque de lyse, sans exiger que chaque sous-type soit nommé.</p>
+''','GLIVEC','ICLUSIG','BLINCYTO','VENCLYXTO','FASTURTEC','OFSP','OAMAL','ALAL')
+
+pop('rc','Rémission complète, récupération et MRD', '''
+<p>La réponse morphologique, la récupération des lignées et la maladie résiduelle mesurable décrivent trois niveaux. Dans les critères ELN LMA repris par Onkopedia, une RC comprend moins de5 % de blastes médullaires, absence de blastes sanguins et de maladie extramédullaire, neutrophiles≥1G/L et plaquettes≥100G/L.</p>
+<p>RCh et RCi distinguent des récupérations hématologiques partielles ou incomplètes ; MLFS décrit un état sans leucémie morphologique sans exiger une récupération complète des numérations. Ce sont des catégories de réponse du cadre LMA, à vérifier dans le protocole utilisé pour une LALA.</p>
+<p>Une RC peut être associée à une MRD détectable. À l’inverse, une cytopénie persistante peut refléter traitement, infection ou autre mécanisme, même si la moelle ne montre plus de leucémie morphologique. Le résultat doit donc être expliqué avec le contexte et le calendrier.</p>
+''','AML','ALL','ALAL')
+pop('mrd','MRD : résultat, méthode et sensibilité', '''
+<p>La maladie résiduelle mesurable est recherchée par cytométrie ou méthode moléculaire suffisamment sensible selon la maladie et sa cible. Une valeur ne s’interprète qu’avec l’échantillon, sa qualité, le moment et le seuil de détection. « Négatif » ne signifie pas zéro cellule dans l’organisme.</p>
+<p>Onkopedia LLA retient une sensibilité minimale de10<sup>−4</sup> pour une évaluation moléculaire de MRD appropriée. Une valeur exprimée en pourcentage doit être convertie correctement :0,01 %=10<sup>−4</sup>, tandis que0,1 %=10<sup>−3</sup>. Le seuil de0,1 % d’une indication Blincyto ne devient pas le seuil général de négativité.</p>
+<p>Dans une LALA, le phénotype peut évoluer. Le suivi ne doit pas ignorer une lignée différente après traitement ciblant B. Les cibles moléculaires, la cytométrie et la morphologie se confrontent en cas de discordance. Le calendrier de suivi LLA après maintenance n’est pas un calendrier universel post-greffe ou pour chaque LAI.</p>
+''','ALL','ALAL','BLINCYTO')
+pop('medecin','Du premier recours au centre de référence', '''
+<p>Le premier recours repère les cytopénies, la fièvre, les saignements et les signes respiratoires ou neurologiques, vérifie la stabilité et organise l’orientation urgente. Il transmet la chronologie, les traitements, les comorbidités et les résultats disponibles. Attendre la classification complète avant d’adresser une personne instable serait inapproprié.</p>
+<p>Le centre réalise le diagnostic intégré, choisit le protocole et explique le plan de réponse, de consolidation et de support. Le médecin de proximité accompagne les comorbidités, les effets à long terme et les besoins sociaux en lien avec cette équipe. Les responsabilités et coordonnées d’urgence doivent être claires.</p>
+<p>La décision partagée ne signifie pas laisser le patient choisir seul entre des protocoles incompréhensibles : expliquer les objectifs, bénéfices incertains, toxicités et alternatives permet de relier la décision à ses priorités. Les consignes de fièvre ou de saignement doivent être concrètes et immédiatement utilisables.</p>
+''','AML','ALL','PROFILES17','RMS-NF')
+pop('pronostic','Pronostic : garder le bon dénominateur', '''
+<p>Âge, état général, biologie, réponse, MRD et consolidation contribuent au pronostic. Une survie issue d’un registre large n’a pas le même sens que celle d’une cohorte pédiatrique traitée ou d’adultes sélectionnés pour allogreffe en RC1.</p>
+<p>La revue rapporte un registre américain de4 756adultes, âge médian68ans, survie médiane4,2mois et mortalité à30jours33 %. Ces chiffres ne prédisent pas le parcours d’un jeune adulte particulier. Les séries EBMT commencent à la greffe, après sélection par la réponse et l’aptitude, et ne décrivent pas le risque depuis le premier symptôme.</p>
+<p>Présenter toujours population, période, point de départ et horizon. Les incertitudes ne suppriment pas la possibilité de traiter ; elles demandent de réévaluer l’information à mesure que les résultats deviennent disponibles.</p>
+''','ALAL','IBFM','EBMT17','EBMT26')
+
+pop('profiles','PROFILES et examen fédéral : cadre vérifié', '''
+<p>Pour l’examen fédéral2026, les exigences MEBEKO renvoient à PROFILES2017 et à ses265situations. La publication suisse de2025 annonce PROFILES2 pour l’enseignement dès2025/26 et pour l’examen fédéral dès2028. Les numérotations des deux versions ne doivent pas être mélangées.</p>
+<p>Les entrées2017 lues pertinentes sont SSP2 adénopathie,4 fatigue,6 fièvre,16 perte de poids/dénutrition,21 épistaxis,25 lésions buccales/pharyngées,88 ecchymoses/purpura,159 histologie/cytologie/génétique moléculaire anormales et227 évaluation partagée des risques et facteurs protecteurs, notamment oncologiques.</p>
+<p>La correspondance pédagogique ne signifie pas que PROFILES attache officiellement C95 à chacune de ces situations. Elle guide une démarche : reconnaître la plainte, évaluer la gravité, hiérarchiser les examens, expliquer l’incertitude et orienter. Un diagnostic rare ne dispense pas de connaître les urgences communes.</p>
+''','PROFILES17','MEBEKO26','PROFILES-TRANS')
