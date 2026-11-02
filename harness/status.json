@@ -1,23 +1,18 @@
 {
-  "generated_at": "2026-11-02T12:25:15+00:00",
+  "generated_at": "2026-11-02T12:35:14+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T12:25:15+00:00",
+    "checked_at": "2026-11-02T12:35:14+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T12:25:15+00:00",
+    "observed_at": "2026-11-02T12:35:14+00:00",
     "ok": true,
     "findings": [
-      {
-        "agent": "codex_hematologie",
-        "level": "warning",
-        "reason": "Aucune activité déclarée depuis plus de 20 min; agent non supposé actif"
-      },
       {
         "level": "warning",
         "reason": "Réserves structurelles historiques à traiter avant intégration ; achèvements conservés",
@@ -61,7 +56,7 @@
       "meaning": "Contrôle structurel relancé à chaque veille600s ; résultats historiques conservés, nouvelles clôtures refusées si échec."
     },
     "interval_seconds": 600,
-    "observer_pid": 886801,
+    "observer_pid": 887314,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -1573,7 +1568,7 @@
         "worktree": "/workspace/Medina-neurologie-G06",
         "branch": "codex/alpha77/g06-integrate-g1"
       },
-      "activity_age_seconds": 426,
+      "activity_age_seconds": 1026,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -3101,7 +3096,7 @@
         "runtime_model": "gpt-6.1-sol",
         "runtime_reasoning": "high"
       },
-      "activity_age_seconds": 475,
+      "activity_age_seconds": 1075,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -4184,7 +4179,7 @@
         "production_name": "Sol-Hématologie-D77",
         "active_specialty": "hematologie"
       },
-      "activity_age_seconds": 8,
+      "activity_age_seconds": 608,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -4225,8 +4220,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D63-INTEGRATE"
       ],
       "started_at": "2026-11-02T11:13:57+00:00",
-      "activity_at": "2026-11-02T11:53:26+00:00",
-      "message": "Plan monographique rédigé dans les scripts locaux après VÉRITÉ OK, avec vignette initiale et 14 îlots ; assemblage, sciences, pharmacologie et contrôles finaux encore à produire. Aucun achèvement déclaré.",
+      "activity_at": "2026-11-02T12:28:39+00:00",
+      "message": "D63 : rédaction pharmacologique effective des trois FI suisses ; calculs Ferinject, limites Eprex et interactions ferro sanol attribués. Sciences/examens/fenêtres et assemblage encore en cours, aucune clôture.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -4648,26 +4643,13 @@
         "sources_read": 0,
         "completed_sections": 0
       },
-      "activity_age_seconds": 1909,
-      "activity_fresh": false,
-      "sections_per_hour": 11.78,
+      "activity_age_seconds": 396,
+      "activity_fresh": true,
+      "sections_per_hour": 10.33,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T03:13:04+00:00",
-      "action": "claim",
-      "agent": "astra_neurologie",
-      "code": "G05"
-    },
-    {
-      "at": "2026-11-02T03:14:12+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "verification",
-      "message": "N29 relecture des six surfaces et fenêtres : doses, contre-indications et méthodes précisées ; test statique réussi 21147 mots / 61 fenêtres. Rendu autonome et matrice finale en cours."
-    },
     {
       "at": "2026-11-02T03:15:50+00:00",
       "action": "progress",
@@ -5946,6 +5928,19 @@
       "agent": "astra_nephrologie",
       "stage": "recherche",
       "message": "Sol-Hématologie-D77 : acquisition/start/claim/gate effectifs ; OFS,CHUV2024,Swissmedicliste30.09.2026/importart49,2FIsuisses,consensusEU2022/revueHSS2021 lus parpassages ;4originauxhumains recevablesvus, frottis2026refusépourdroitscontradictoires. Pasencorederédaction médicale."
+    },
+    {
+      "at": "2026-11-02T12:25:15+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 2
+    },
+    {
+      "at": "2026-11-02T12:28:39+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "redaction",
+      "message": "D63 : rédaction pharmacologique effective des trois FI suisses ; calculs Ferinject, limites Eprex et interactions ferro sanol attribués. Sciences/examens/fenêtres et assemblage encore en cours, aucune clôture."
     }
   ],
   "cache": {
@@ -12854,7 +12849,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T12:25:13+00:00",
+    "observed_at": "2026-11-02T12:35:13+00:00",
     "lessons": [
       {
         "code": "E00",
