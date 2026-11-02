@@ -1,0 +1,1374 @@
+{
+  "code": "N00",
+  "author": "astra_nephrologie",
+  "recorded_at": "2026-11-02T04:10:32.061930+00:00",
+  "branch": "codex/alpha77/n00-integrate-g1",
+  "base": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+  "monograph": [
+    {
+      "point": 1,
+      "title": "Définition",
+      "anchor": "n00-1",
+      "sources": [
+        "EU-SYNDROMES"
+      ],
+      "coverage_explanation": "Définition du syndrome aigu avec hématurie glomérulaire, protéinurie et retentissement variable ; syndrome, lésion et cause ne sont pas assimilés."
+    },
+    {
+      "point": 2,
+      "title": "Épidémiologie",
+      "anchor": "n00-2",
+      "sources": [
+        "EU-POSTINF",
+        "INT-INFECTION"
+      ],
+      "coverage_explanation": "Population et dénominateur discutés ; absence d’incidence suisse directe explicitée, distinction de la forme pédiatrique classique et des infections actives adultes."
+    },
+    {
+      "point": 3,
+      "title": "Physiopathologie",
+      "anchor": "n00-3",
+      "sources": [
+        "EU-HISTO",
+        "NORMAL-FILTRE"
+      ],
+      "coverage_explanation": "Barrière glomérulaire, passage des hématies, filtration réduite et bilan hydrosodé reliés aux symptômes ; six sciences détaillent les mécanismes et limites."
+    },
+    {
+      "point": 4,
+      "title": "Démarche clinique",
+      "anchor": "n00-4",
+      "sources": [
+        "CH-URGENCE",
+        "CH-SEDIMENT"
+      ],
+      "coverage_explanation": "Parcours gravité, localisation, cause et trajectoire ; bilan et stabilisation menés en parallèle devant une atteinte menaçante, sans attendre toutes les sérologies."
+    },
+    {
+      "point": 5,
+      "title": "Anamnèse",
+      "anchor": "n00-5",
+      "sources": [
+        "EU-IGA",
+        "INT-INFECTION"
+      ],
+      "coverage_explanation": "Chronologie, infection active, signes systémiques, médicaments et antécédents orientent les hypothèses ; les situations pédiatriques et âgées sont distinguées."
+    },
+    {
+      "point": 6,
+      "title": "Examen clinique",
+      "anchor": "n00-6",
+      "sources": [
+        "CH-PEDIATRIC-BP",
+        "EU-RPGN"
+      ],
+      "coverage_explanation": "Respiration, conscience, pression adaptée à la population, poids, diurèse, peau, articulations et signes infectieux structurent un examen utilisable pour décider."
+    },
+    {
+      "point": 7,
+      "title": "Syndromes",
+      "anchor": "n00-7",
+      "sources": [
+        "EU-SYNDROMES",
+        "INT-AKI"
+      ],
+      "coverage_explanation": "Présentation néphritique, néphrotique associée, rapidement progressive et réno-pulmonaire comparées ; classification AKI détaillée dans les examens sans score universel inventé."
+    },
+    {
+      "point": 8,
+      "title": "Diagnostic positif",
+      "anchor": "n00-8",
+      "sources": [
+        "CH-SEDIMENT",
+        "INT-GN-GENERAL"
+      ],
+      "coverage_explanation": "Confirmation de l’hématurie et origine glomérulaire, fonction et contexte ; limites des signes négatifs et indication raisonnée de biopsie explicitées."
+    },
+    {
+      "point": 9,
+      "title": "Explorations",
+      "anchor": "n00-9",
+      "sources": [
+        "INT-INFECTION",
+        "EU-IRA"
+      ],
+      "coverage_explanation": "Urine, fonction, immunologie, microbiologie, échographie et biopsie décrites selon question, méthode, interprétation et limites, avec paramètres chiffrés contextualisés."
+    },
+    {
+      "point": 10,
+      "title": "Arbre diagnostique (différentiels)",
+      "anchor": "n00-10",
+      "sources": [
+        "EU-HEMATURIA",
+        "EU-RPGN"
+      ],
+      "coverage_explanation": "Arbre en cinq étapes reliant urgence, présence des cellules, localisation, infection et profil immunologique ; alternatives urologiques, tubulaires et systémiques examinées."
+    },
+    {
+      "point": 11,
+      "title": "PEC",
+      "anchor": "n00-11",
+      "sources": [
+        "FI-LASIX-IV",
+        "FI-NORVASC",
+        "FI-OSPEN"
+      ],
+      "coverage_explanation": "Soutien, surcharge, pression et cause distingués ; quatre produits suisses exacts, doses, populations et contre-indications sans protocole universel d’immunosuppression."
+    },
+    {
+      "point": 12,
+      "title": "Prévention/suivi/pronostic",
+      "anchor": "n00-12",
+      "sources": [
+        "INT-INFECTION",
+        "CH-PREGNANCY"
+      ],
+      "coverage_explanation": "Suivi clinique et biologique de la trajectoire, persistance du complément, pronostic selon population et prévention ; une aggravation ne doit pas attendre douze semaines."
+    },
+    {
+      "point": 13,
+      "title": "Points clés",
+      "anchor": "n00-13",
+      "sources": [
+        "CH-PROFILES",
+        "CH-MEBEKO"
+      ],
+      "coverage_explanation": "Synthèse, quatre cas raisonnés et quatre quiz originaux ; correspondance pédagogique PROFILES2017 et exigences MEBEKO2026 sans statut officiel de question."
+    },
+    {
+      "point": 14,
+      "title": "Pièges",
+      "anchor": "n00-14",
+      "sources": [
+        "CH-SEDIMENT",
+        "INT-INFECTION"
+      ],
+      "coverage_explanation": "Erreurs de localisation, interprétation des anticorps, estimation de fonction, choix thérapeutique et codage morphologique corrigées avec mécanisme du piège."
+    }
+  ],
+  "medina_rubrics": [
+    {
+      "rubric": 1,
+      "title": "Question clinique et enjeu pour l’examen fédéral",
+      "anchor": "n00-question",
+      "content_present": true,
+      "current_verification": "Auto-relecture et passages réellement lus, avec limites de population et source explicites.",
+      "limits": "Voir réserves transparentes ; aucune incidence suisse absente ou protocole universel inventé."
+    },
+    {
+      "rubric": 2,
+      "title": "Définition et périmètre CIM-10-GM",
+      "anchor": "n00-1",
+      "content_present": true,
+      "current_verification": "Auto-relecture et passages réellement lus, avec limites de population et source explicites.",
+      "limits": "Voir réserves transparentes ; aucune incidence suisse absente ou protocole universel inventé."
+    },
+    {
+      "rubric": 3,
+      "title": "Classifications et stades",
+      "anchor": "n00-7",
+      "content_present": true,
+      "current_verification": "Auto-relecture et passages réellement lus, avec limites de population et source explicites.",
+      "limits": "Voir réserves transparentes ; aucune incidence suisse absente ou protocole universel inventé."
+    },
+    {
+      "rubric": 4,
+      "title": "Épidémiologie suisse puis européenne",
+      "anchor": "n00-2",
+      "content_present": true,
+      "current_verification": "Auto-relecture et passages réellement lus, avec limites de population et source explicites.",
+      "limits": "Voir réserves transparentes ; aucune incidence suisse absente ou protocole universel inventé."
+    },
+    {
+      "rubric": 5,
+      "title": "Normal → pathologique",
+      "anchor": "n00-semio-normal",
+      "content_present": true,
+      "current_verification": "Auto-relecture et passages réellement lus, avec limites de population et source explicites.",
+      "limits": "Voir réserves transparentes ; aucune incidence suisse absente ou protocole universel inventé."
+    },
+    {
+      "rubric": 6,
+      "title": "Étiologies et facteurs de risque",
+      "anchor": "n00-10",
+      "content_present": true,
+      "current_verification": "Auto-relecture et passages réellement lus, avec limites de population et source explicites.",
+      "limits": "Voir réserves transparentes ; aucune incidence suisse absente ou protocole universel inventé."
+    },
+    {
+      "rubric": 7,
+      "title": "Anamnèse et symptômes",
+      "anchor": "n00-5",
+      "content_present": true,
+      "current_verification": "Auto-relecture et passages réellement lus, avec limites de population et source explicites.",
+      "limits": "Voir réserves transparentes ; aucune incidence suisse absente ou protocole universel inventé."
+    },
+    {
+      "rubric": 8,
+      "title": "Examen clinique",
+      "anchor": "n00-6",
+      "content_present": true,
+      "current_verification": "Auto-relecture et passages réellement lus, avec limites de population et source explicites.",
+      "limits": "Voir réserves transparentes ; aucune incidence suisse absente ou protocole universel inventé."
+    },
+    {
+      "rubric": 9,
+      "title": "Drapeaux rouges et urgences",
+      "anchor": "n00-4",
+      "content_present": true,
+      "current_verification": "Auto-relecture et passages réellement lus, avec limites de population et source explicites.",
+      "limits": "Voir réserves transparentes ; aucune incidence suisse absente ou protocole universel inventé."
+    },
+    {
+      "rubric": 10,
+      "title": "Examens complémentaires",
+      "anchor": "n00-e-urine",
+      "content_present": true,
+      "current_verification": "Auto-relecture et passages réellement lus, avec limites de population et source explicites.",
+      "limits": "Voir réserves transparentes ; aucune incidence suisse absente ou protocole universel inventé."
+    },
+    {
+      "rubric": 11,
+      "title": "Diagnostic différentiel",
+      "anchor": "n00-10",
+      "content_present": true,
+      "current_verification": "Auto-relecture et passages réellement lus, avec limites de population et source explicites.",
+      "limits": "Voir réserves transparentes ; aucune incidence suisse absente ou protocole universel inventé."
+    },
+    {
+      "rubric": 12,
+      "title": "Prise en charge suisse",
+      "anchor": "n00-11",
+      "content_present": true,
+      "current_verification": "Auto-relecture et passages réellement lus, avec limites de population et source explicites.",
+      "limits": "Voir réserves transparentes ; aucune incidence suisse absente ou protocole universel inventé."
+    },
+    {
+      "rubric": 13,
+      "title": "Complications et pronostic",
+      "anchor": "n00-12",
+      "content_present": true,
+      "current_verification": "Auto-relecture et passages réellement lus, avec limites de population et source explicites.",
+      "limits": "Voir réserves transparentes ; aucune incidence suisse absente ou protocole universel inventé."
+    },
+    {
+      "rubric": 14,
+      "title": "Suivi, prévention, dépistage",
+      "anchor": "n00-12",
+      "content_present": true,
+      "current_verification": "Auto-relecture et passages réellement lus, avec limites de population et source explicites.",
+      "limits": "Voir réserves transparentes ; aucune incidence suisse absente ou protocole universel inventé."
+    },
+    {
+      "rubric": 15,
+      "title": "Situations particulières",
+      "anchor": "n00-12",
+      "content_present": true,
+      "current_verification": "Auto-relecture et passages réellement lus, avec limites de population et source explicites.",
+      "limits": "Voir réserves transparentes ; aucune incidence suisse absente ou protocole universel inventé."
+    },
+    {
+      "rubric": 16,
+      "title": "Spécificités suisses",
+      "anchor": "n00-p-principes",
+      "content_present": true,
+      "current_verification": "Auto-relecture et passages réellement lus, avec limites de population et source explicites.",
+      "limits": "Voir réserves transparentes ; aucune incidence suisse absente ou protocole universel inventé."
+    },
+    {
+      "rubric": 17,
+      "title": "Critères formels du diagnostic",
+      "anchor": "n00-8",
+      "content_present": true,
+      "current_verification": "Auto-relecture et passages réellement lus, avec limites de population et source explicites.",
+      "limits": "Voir réserves transparentes ; aucune incidence suisse absente ou protocole universel inventé."
+    },
+    {
+      "rubric": 18,
+      "title": "Paramètres clés chiffrés",
+      "anchor": "n00-e-fonction",
+      "content_present": true,
+      "current_verification": "Auto-relecture et passages réellement lus, avec limites de population et source explicites.",
+      "limits": "Voir réserves transparentes ; aucune incidence suisse absente ou protocole universel inventé."
+    },
+    {
+      "rubric": 19,
+      "title": "Sous-codes CIM-10-GM couverts",
+      "anchor": "n00-annexe-cim",
+      "content_present": true,
+      "current_verification": "Auto-relecture et passages réellement lus, avec limites de population et source explicites.",
+      "limits": "Voir réserves transparentes ; aucune incidence suisse absente ou protocole universel inventé."
+    },
+    {
+      "rubric": 20,
+      "title": "Points d’examen fédéral",
+      "anchor": "n00-federal",
+      "content_present": true,
+      "current_verification": "Auto-relecture et passages réellement lus, avec limites de population et source explicites.",
+      "limits": "Voir réserves transparentes ; aucune incidence suisse absente ou protocole universel inventé."
+    }
+  ],
+  "matrix20": [
+    {
+      "point": 1,
+      "title": "Question clinique et enjeu pour l’examen fédéral",
+      "status": "covered",
+      "evidence": [
+        {
+          "file": "chapters/N00/N00_a.html",
+          "anchor": "n00-question"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/18",
+          "source_id": "CH-PROFILES"
+        }
+      ],
+      "coverage_scope": "Contenu pédagogique présent et sourcé ; couverture ne signifie pas certification clinique ni existence de données non disponibles."
+    },
+    {
+      "point": 2,
+      "title": "Définition et périmètre CIM-10-GM",
+      "status": "covered",
+      "evidence": [
+        {
+          "file": "chapters/N00/N00_a.html",
+          "anchor": "n00-1"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/17",
+          "source_id": "CH-CIM"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/3",
+          "source_id": "EU-SYNDROMES"
+        }
+      ],
+      "coverage_scope": "Contenu pédagogique présent et sourcé ; couverture ne signifie pas certification clinique ni existence de données non disponibles."
+    },
+    {
+      "point": 3,
+      "title": "Classifications et stades",
+      "status": "covered",
+      "evidence": [
+        {
+          "file": "chapters/N00/N00_b.html",
+          "anchor": "n00-7"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/3",
+          "source_id": "EU-SYNDROMES"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/20",
+          "source_id": "INT-AKI"
+        }
+      ],
+      "coverage_scope": "Contenu pédagogique présent et sourcé ; couverture ne signifie pas certification clinique ni existence de données non disponibles."
+    },
+    {
+      "point": 4,
+      "title": "Épidémiologie suisse puis européenne",
+      "status": "covered",
+      "evidence": [
+        {
+          "file": "chapters/N00/N00_a.html",
+          "anchor": "n00-2"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/7",
+          "source_id": "EU-POSTINF"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/11",
+          "source_id": "INT-INFECTION"
+        }
+      ],
+      "coverage_scope": "Contenu pédagogique présent et sourcé ; couverture ne signifie pas certification clinique ni existence de données non disponibles."
+    },
+    {
+      "point": 5,
+      "title": "Normal → pathologique",
+      "status": "covered",
+      "evidence": [
+        {
+          "file": "chapters/N00/N00_c.html",
+          "anchor": "n00-semio-normal"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/12",
+          "source_id": "NORMAL-FILTRE"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/4",
+          "source_id": "EU-HISTO"
+        }
+      ],
+      "coverage_scope": "Contenu pédagogique présent et sourcé ; couverture ne signifie pas certification clinique ni existence de données non disponibles."
+    },
+    {
+      "point": 6,
+      "title": "Étiologies et facteurs de risque",
+      "status": "covered",
+      "evidence": [
+        {
+          "file": "chapters/N00/N00_b.html",
+          "anchor": "n00-10"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/6",
+          "source_id": "EU-RPGN"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/11",
+          "source_id": "INT-INFECTION"
+        }
+      ],
+      "coverage_scope": "Contenu pédagogique présent et sourcé ; couverture ne signifie pas certification clinique ni existence de données non disponibles."
+    },
+    {
+      "point": 7,
+      "title": "Anamnèse et symptômes",
+      "status": "covered",
+      "evidence": [
+        {
+          "file": "chapters/N00/N00_a.html",
+          "anchor": "n00-5"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/5",
+          "source_id": "EU-IGA"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/11",
+          "source_id": "INT-INFECTION"
+        }
+      ],
+      "coverage_scope": "Contenu pédagogique présent et sourcé ; couverture ne signifie pas certification clinique ni existence de données non disponibles."
+    },
+    {
+      "point": 8,
+      "title": "Examen clinique",
+      "status": "covered",
+      "evidence": [
+        {
+          "file": "chapters/N00/N00_a.html",
+          "anchor": "n00-6"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/21",
+          "source_id": "CH-PEDIATRIC-BP"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/6",
+          "source_id": "EU-RPGN"
+        }
+      ],
+      "coverage_scope": "Contenu pédagogique présent et sourcé ; couverture ne signifie pas certification clinique ni existence de données non disponibles."
+    },
+    {
+      "point": 9,
+      "title": "Drapeaux rouges et urgences",
+      "status": "covered",
+      "evidence": [
+        {
+          "file": "chapters/N00/N00_a.html",
+          "anchor": "n00-4"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/1",
+          "source_id": "CH-URGENCE"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/9",
+          "source_id": "EU-IRA"
+        }
+      ],
+      "coverage_scope": "Contenu pédagogique présent et sourcé ; couverture ne signifie pas certification clinique ni existence de données non disponibles."
+    },
+    {
+      "point": 10,
+      "title": "Examens complémentaires",
+      "status": "covered",
+      "evidence": [
+        {
+          "file": "chapters/N00/N00_c.html",
+          "anchor": "n00-e-urine"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/0",
+          "source_id": "CH-SEDIMENT"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/10",
+          "source_id": "INT-GN-GENERAL"
+        }
+      ],
+      "coverage_scope": "Contenu pédagogique présent et sourcé ; couverture ne signifie pas certification clinique ni existence de données non disponibles."
+    },
+    {
+      "point": 11,
+      "title": "Diagnostic différentiel",
+      "status": "covered",
+      "evidence": [
+        {
+          "file": "chapters/N00/N00_b.html",
+          "anchor": "n00-10"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/8",
+          "source_id": "EU-HEMATURIA"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/11",
+          "source_id": "INT-INFECTION"
+        }
+      ],
+      "coverage_scope": "Contenu pédagogique présent et sourcé ; couverture ne signifie pas certification clinique ni existence de données non disponibles."
+    },
+    {
+      "point": 12,
+      "title": "Prise en charge suisse",
+      "status": "covered",
+      "evidence": [
+        {
+          "file": "chapters/N00/N00_b.html",
+          "anchor": "n00-11"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/13",
+          "source_id": "FI-LASIX-IV"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/15",
+          "source_id": "FI-NORVASC"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/16",
+          "source_id": "FI-OSPEN"
+        }
+      ],
+      "coverage_scope": "Contenu pédagogique présent et sourcé ; couverture ne signifie pas certification clinique ni existence de données non disponibles."
+    },
+    {
+      "point": 13,
+      "title": "Complications et pronostic",
+      "status": "covered",
+      "evidence": [
+        {
+          "file": "chapters/N00/N00_b.html",
+          "anchor": "n00-12"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/11",
+          "source_id": "INT-INFECTION"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/9",
+          "source_id": "EU-IRA"
+        }
+      ],
+      "coverage_scope": "Contenu pédagogique présent et sourcé ; couverture ne signifie pas certification clinique ni existence de données non disponibles."
+    },
+    {
+      "point": 14,
+      "title": "Suivi, prévention, dépistage",
+      "status": "covered",
+      "evidence": [
+        {
+          "file": "chapters/N00/N00_b.html",
+          "anchor": "n00-12"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/11",
+          "source_id": "INT-INFECTION"
+        }
+      ],
+      "coverage_scope": "Contenu pédagogique présent et sourcé ; couverture ne signifie pas certification clinique ni existence de données non disponibles."
+    },
+    {
+      "point": 15,
+      "title": "Situations particulières",
+      "status": "covered",
+      "evidence": [
+        {
+          "file": "chapters/N00/N00_b.html",
+          "anchor": "n00-12"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/21",
+          "source_id": "CH-PEDIATRIC-BP"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/22",
+          "source_id": "CH-PREGNANCY"
+        }
+      ],
+      "coverage_scope": "Contenu pédagogique présent et sourcé ; couverture ne signifie pas certification clinique ni existence de données non disponibles."
+    },
+    {
+      "point": 16,
+      "title": "Spécificités suisses",
+      "status": "covered",
+      "evidence": [
+        {
+          "file": "chapters/N00/N00_d.html",
+          "anchor": "n00-p-principes"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/2",
+          "source_id": "CH-ORIENTATION"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/13",
+          "source_id": "FI-LASIX-IV"
+        }
+      ],
+      "coverage_scope": "Contenu pédagogique présent et sourcé ; couverture ne signifie pas certification clinique ni existence de données non disponibles."
+    },
+    {
+      "point": 17,
+      "title": "Critères formels du diagnostic",
+      "status": "covered",
+      "evidence": [
+        {
+          "file": "chapters/N00/N00_b.html",
+          "anchor": "n00-8"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/0",
+          "source_id": "CH-SEDIMENT"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/20",
+          "source_id": "INT-AKI"
+        }
+      ],
+      "coverage_scope": "Contenu pédagogique présent et sourcé ; couverture ne signifie pas certification clinique ni existence de données non disponibles."
+    },
+    {
+      "point": 18,
+      "title": "Paramètres clés chiffrés",
+      "status": "covered",
+      "evidence": [
+        {
+          "file": "chapters/N00/N00_c.html",
+          "anchor": "n00-e-fonction"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/20",
+          "source_id": "INT-AKI"
+        }
+      ],
+      "coverage_scope": "Contenu pédagogique présent et sourcé ; couverture ne signifie pas certification clinique ni existence de données non disponibles."
+    },
+    {
+      "point": 19,
+      "title": "Sous-codes CIM-10-GM couverts",
+      "status": "covered",
+      "evidence": [
+        {
+          "file": "chapters/N00/N00_b.html",
+          "anchor": "n00-annexe-cim"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/17",
+          "source_id": "CH-CIM"
+        }
+      ],
+      "coverage_scope": "Contenu pédagogique présent et sourcé ; couverture ne signifie pas certification clinique ni existence de données non disponibles."
+    },
+    {
+      "point": 20,
+      "title": "Points d’examen fédéral",
+      "status": "covered",
+      "evidence": [
+        {
+          "file": "chapters/N00/N00_b.html",
+          "anchor": "n00-federal"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/18",
+          "source_id": "CH-PROFILES"
+        },
+        {
+          "file": "source-ledger.json",
+          "json_pointer": "/sources/19",
+          "source_id": "CH-MEBEKO"
+        }
+      ],
+      "coverage_scope": "Contenu pédagogique présent et sourcé ; couverture ne signifie pas certification clinique ni existence de données non disponibles."
+    }
+  ],
+  "sources": [
+    {
+      "id": "CH-SEDIMENT",
+      "url": "https://www.hug.ch/sites/interhug/files/2022-09/strategie_microhematurie.pdf",
+      "publisher": "HUG, médecine de premier recours, 2017",
+      "section": "pp.1–4 ; définitions et algorithme",
+      "passage": "La bandelette doit être confirmée et l’origine appréciée par la morphologie. Les cylindres érythrocytaires et acanthocytes orientent vers le glomérule ; leur absence ne suffit pas à l’exclure. Le stockage et la concentration modifient l’interprétation. Protéinurie, hypertension et baisse de filtration motivent un avis néphrologique.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Adultes en premier recours",
+      "limitations": "Stratégie d’experts de 2017 ; le suivi différé d’une microhématurie isolée ne convient pas à un tableau aigu grave. Les pourcentages morphologiques dépendent de la méthode.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "ea1ef0546b48f38b4f43db067824c474ae87a4253d7a35e8ea1a7b03c782c10b",
+      "cache_path": "/tmp/medina-n00-source-cache/CH-HEMATURIA.raw",
+      "reader": "astra_nephrologie",
+      "limits": "Stratégie d’experts de 2017 ; le suivi différé d’une microhématurie isolée ne convient pas à un tableau aigu grave. Les pourcentages morphologiques dépendent de la méthode."
+    },
+    {
+      "id": "CH-URGENCE",
+      "url": "https://www.revmed.ch/view/518997/4233572/RMS_419_480.pdf",
+      "publisher": "Halfon et coll., Revue Médicale Suisse 2014",
+      "section": "pp.480–482 ; introduction, mécanismes, symptômes et diagnostic",
+      "passage": "Une perte rapide de fonction avec hématurie et protéinurie exige une évaluation néphrologique urgente. Les lésions capillaires favorisent des croissants extracapillaires ; les atteintes pulmonaires, ORL et systémiques orientent la cause. Une natriurèse ou une fraction d’excrétion sodée basse peut accompagner une glomérulonéphrite.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Glomérulonéphrites rapidement progressives",
+      "limitations": "Source ancienne utilisée pour reconnaissance et mécanismes ; ni incidence transposée à tout syndrome néphritique ni schéma thérapeutique 2014 repris comme standard actuel.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "2c3a4aa64b786ef203a819a6dd612dd526c053372d8a097439c52640451626d9",
+      "cache_path": "/tmp/medina-n00-source-cache/CH-RPGN.raw",
+      "reader": "astra_nephrologie",
+      "limits": "Source ancienne utilisée pour reconnaissance et mécanismes ; ni incidence transposée à tout syndrome néphritique ni schéma thérapeutique 2014 repris comme standard actuel."
+    },
+    {
+      "id": "CH-ORIENTATION",
+      "url": "https://www.swissnephrology.ch/wp/wp-content/uploads/2025/03/Version-2025_Francais_V_17.03.2025_WZ.pdf",
+      "publisher": "Société suisse de néphrologie, 17.03.2025",
+      "section": "Figure4, orientation néphrologique",
+      "passage": "L’insuffisance rénale aiguë ou la chute brutale persistante du débit estimé, l’hématurie glomérulaire et les anomalies persistantes du potassium font partie des motifs d’orientation néphrologique.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Repérage rénal en Suisse",
+      "limitations": "Document principalement consacré à la maladie rénale chronique ; aucune cible tensionnelle chronique transposée au traitement d’une urgence aiguë.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "d48d83e8d1e806793725ddbfbd7ad82dc5ca40a10c7da276b706efd326d328bf",
+      "cache_path": "/tmp/medina-n04-source-cache/SSN2025.raw",
+      "reader": "astra_nephrologie",
+      "limits": "Document principalement consacré à la maladie rénale chronique ; aucune cible tensionnelle chronique transposée au traitement d’une urgence aiguë."
+    },
+    {
+      "id": "EU-SYNDROMES",
+      "url": "https://manuel.cuen.fr/wp-content/uploads/2025/10/CUEN-12e-ed-Chap10-nephropathies-glomerulaires.pdf",
+      "publisher": "CUEN, 12e édition, 2025",
+      "section": "pp.169–171, tableau1",
+      "passage": "Une atteinte glomérulaire associe protéinurie à prédominance albumine et/ou hématurie ; hypertension, œdèmes et baisse de fonction complètent le tableau. Le syndrome néphritique s’installe en quelques jours, avec une rétention hydrosodée et souvent une oligurie. Il est distingué du syndrome néphrotique et de la progression rapide.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Enseignement adulte avec comparaisons pédiatriques",
+      "limitations": "Les tableaux décrivent des présentations typiques ; toutes les manifestations ne sont pas obligatoires et le syndrome ne prouve pas une cause poststreptococcique.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "a665dd16c781d7f6350bae5af3b426d7a96c805baeca2ce4a85d4ccfd0f13e9d",
+      "cache_path": "/tmp/medina-n00-source-cache/FR-GLOM.raw",
+      "reader": "astra_nephrologie",
+      "limits": "Les tableaux décrivent des présentations typiques ; toutes les manifestations ne sont pas obligatoires et le syndrome ne prouve pas une cause poststreptococcique."
+    },
+    {
+      "id": "EU-HISTO",
+      "url": "https://manuel.cuen.fr/wp-content/uploads/2025/10/CUEN-12e-ed-Chap10-nephropathies-glomerulaires.pdf",
+      "publisher": "CUEN, 12e édition, 2025",
+      "section": "pp.172–175 ; biopsie, glomérule normal et lésions",
+      "passage": "La biopsie précise diagnostic, activité et cicatrices. Endothélium, membrane basale et podocytes forment le filtre ; cellules pariétales et mésangiales ont des fonctions distinctes. Microscopie optique, immunofluorescence et microscopie électronique explorent des dimensions différentes. Proliférations endocapillaire et extracapillaire ne sont pas synonymes.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Glomérulopathies",
+      "limitations": "Les risques et la voie de biopsie sont individualisés par le centre ; ne pas transformer toutes les contre-indications didactiques du tableau en interdictions absolues universelles.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "a665dd16c781d7f6350bae5af3b426d7a96c805baeca2ce4a85d4ccfd0f13e9d",
+      "cache_path": "/tmp/medina-n00-source-cache/FR-GLOM.raw",
+      "reader": "astra_nephrologie",
+      "limits": "Les risques et la voie de biopsie sont individualisés par le centre ; ne pas transformer toutes les contre-indications didactiques du tableau en interdictions absolues universelles."
+    },
+    {
+      "id": "EU-IGA",
+      "url": "https://manuel.cuen.fr/wp-content/uploads/2025/10/CUEN-12e-ed-Chap10-nephropathies-glomerulaires.pdf",
+      "publisher": "CUEN, 12e édition, 2025",
+      "section": "pp.179–180 ; néphropathie à IgA",
+      "passage": "L’hématurie récidivante peut être contemporaine d’une infection ORL, souvent dans les 48 heures. D’autres présentations sont possibles ; la biopsie identifie les dépôts d’IgA mésangiaux. La vascularite à IgA ajoute des manifestations extrarénales.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Adultes et enfants selon présentation",
+      "limitations": "Le délai est un indice clinique, pas un critère de confirmation ; les traitements récents spécifiques de l’IgA ne sont pas déduits de ce passage.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "a665dd16c781d7f6350bae5af3b426d7a96c805baeca2ce4a85d4ccfd0f13e9d",
+      "cache_path": "/tmp/medina-n00-source-cache/FR-GLOM.raw",
+      "reader": "astra_nephrologie",
+      "limits": "Le délai est un indice clinique, pas un critère de confirmation ; les traitements récents spécifiques de l’IgA ne sont pas déduits de ce passage."
+    },
+    {
+      "id": "EU-RPGN",
+      "url": "https://manuel.cuen.fr/wp-content/uploads/2025/10/CUEN-12e-ed-Chap10-nephropathies-glomerulaires.pdf",
+      "publisher": "CUEN, 12e édition, 2025",
+      "section": "pp.181–183 ; définition, tableau7 et syndrome réno-pulmonaire",
+      "passage": "La baisse de fonction en quelques jours ou semaines, avec hématurie/protéinurie, impose une biopsie urgente et un raisonnement étiologique. Les dépôts linéaires orientent vers les anticorps anti-membrane basale, les dépôts granuleux vers les complexes immuns et l’aspect pauci-immun vers les vascularites. Une hémorragie alvéolaire peut accompagner l’atteinte rénale.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Glomérulonéphrites rapidement progressives",
+      "limitations": "La conduite urgente est spécialisée ; ne pas attendre tous les examens lorsqu’une atteinte d’organe menace et ne pas assimiler une sérologie à toute la preuve causale.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "a665dd16c781d7f6350bae5af3b426d7a96c805baeca2ce4a85d4ccfd0f13e9d",
+      "cache_path": "/tmp/medina-n00-source-cache/FR-GLOM.raw",
+      "reader": "astra_nephrologie",
+      "limits": "La conduite urgente est spécialisée ; ne pas attendre tous les examens lorsqu’une atteinte d’organe menace et ne pas assimiler une sérologie à toute la preuve causale."
+    },
+    {
+      "id": "EU-POSTINF",
+      "url": "https://manuel.cuen.fr/wp-content/uploads/2025/10/CUEN-12e-ed-Chap10-nephropathies-glomerulaires.pdf",
+      "publisher": "CUEN, 12e édition, 2025",
+      "section": "pp.186–187 ; GN aiguë postinfectieuse et tests",
+      "passage": "La forme poststreptococcique typique suit une infection après un intervalle libre, associe syndrome néphritique et baisse fréquente du C3. Une biopsie est discutée si le diagnostic reste incertain. Le pronostic de la forme typique est généralement favorable ; le bilan immunologique est orienté par la clinique.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Forme typique postinfectieuse",
+      "limitations": "Le pronostic pédiatrique typique ne s’étend pas aux adultes fragiles ni à toute infection active. Les dépôts sous-épithéliaux sont décrits avec la précision de la microscopie électronique de KDIGO.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "a665dd16c781d7f6350bae5af3b426d7a96c805baeca2ce4a85d4ccfd0f13e9d",
+      "cache_path": "/tmp/medina-n00-source-cache/FR-GLOM.raw",
+      "reader": "astra_nephrologie",
+      "limits": "Le pronostic pédiatrique typique ne s’étend pas aux adultes fragiles ni à toute infection active. Les dépôts sous-épithéliaux sont décrits avec la précision de la microscopie électronique de KDIGO."
+    },
+    {
+      "id": "EU-HEMATURIA",
+      "url": "https://manuel.cuen.fr/wp-content/uploads/2025/10/CUEN-12e-ed-Chap7-hematurie.pdf",
+      "publisher": "CUEN, 12e édition, 2025",
+      "section": "pp.118–120",
+      "passage": "Une urine rouge peut correspondre à du sang, à une hémoprotéine ou à un pigment. Le sédiment confirme les hématies. Dysmorphie et cylindres orientent vers le glomérule ; les caillots évoquent une autre source. L’intensité visible de l’hématurie ne mesure pas la gravité de la maladie.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Adultes et enfants",
+      "limitations": "Le seuil quantitatif français est présenté avec ses unités et ne remplace pas les références du laboratoire suisse ni la morphologie.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "ee53b9da1ecc0ba7f61d18fec7ea2b77049484bb2e57d68220b51268f7b8e857",
+      "cache_path": "/tmp/medina-n00-source-cache/FR-HEMATURIA.raw",
+      "reader": "astra_nephrologie",
+      "limits": "Le seuil quantitatif français est présenté avec ses unités et ne remplace pas les références du laboratoire suisse ni la morphologie."
+    },
+    {
+      "id": "EU-IRA",
+      "url": "https://manuel.cuen.fr/wp-content/uploads/2025/10/CUEN-12e-ed-Chap14-insuffisance-renale-aigue-anurie.pdf",
+      "publisher": "CUEN, 12e édition, 2025",
+      "section": "pp.253,265–269 ; définition, complications, soutien",
+      "passage": "L’évolution de créatinine et la diurèse définissent la sévérité aiguë ; les équations de débit estimé sont inadaptées à l’état non stationnaire. Hyperkaliémie, acidose sévère et surcharge pulmonaire sont des complications urgentes. Les diurétiques traitent la surcharge sans accélérer la récupération rénale. Une épuration est nécessaire si les complications graves l’imposent.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Insuffisance rénale aiguë",
+      "limitations": "Les décisions ne reposent pas sur une créatinine isolée. Le tableau CUEN arrondit certains seuils ; une présentation de critères formels doit être confrontée à leur source primaire.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "ba2ed6972bc8ca3b3e5a0e98df068adac84ea68e822488845081239597b65aa3",
+      "cache_path": "/tmp/medina-n00-source-cache/FR-IRA.raw",
+      "reader": "astra_nephrologie",
+      "limits": "Les décisions ne reposent pas sur une créatinine isolée. Le tableau CUEN arrondit certains seuils ; une présentation de critères formels doit être confrontée à leur source primaire."
+    },
+    {
+      "id": "INT-GN-GENERAL",
+      "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+      "publisher": "KDIGO, groupe international, 2021",
+      "section": "Points1.1.1–1.1.3,1.2.1–1.2.8,1.3.1–1.3.2 ; pp.S30–S33",
+      "passage": "La biopsie est la référence pour l’évaluation glomérulaire, avec des exceptions contextualisées. Protéinurie et sédiment doivent être évalués ; le rapport du premier matin est pratique chez l’enfant. Un prélèvement ponctuel varie et ne remplace pas toujours le recueil prolongé lorsque la décision thérapeutique en dépend.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Maladies glomérulaires",
+      "limitations": "Consensus international utilisé après sources suisses et européennes ; aucune recommandation américaine nationale. Les sections non consultées ne sont pas revendiquées.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "e7e366b29b3803e030cc4cb0ce072893a0a0ae3f41213b978a3078114fe0d711",
+      "cache_path": "/tmp/medina-n04-source-cache/KDIGO21.raw",
+      "reader": "astra_nephrologie",
+      "limits": "Consensus international utilisé après sources suisses et européennes ; aucune recommandation américaine nationale. Les sections non consultées ne sont pas revendiquées."
+    },
+    {
+      "id": "INT-INFECTION",
+      "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+      "publisher": "KDIGO, groupe international, 2021",
+      "section": "Chapitre 7 pp. S172–S175 ; figures 56–57 visualisées, PDF pp.177 et 179",
+      "passage": "Une glomérulonéphrite peut suivre une infection ou survenir pendant une infection active. Endocardite et infection à staphylocoque peuvent s’accompagner d’ANCA ou de dépôts d’IgA. La biopsie aide si la preuve infectieuse manque ou si le diagnostic est incertain. Les dépôts sous-épithéliaux sont étudiés en microscopie électronique. Le traitement vise infection, œdèmes et hypertension ; les corticoïdes de routine ne sont pas étayés. Le suivi inclut fonction, complément et protéinurie ; un C3 encore bas au-delà de 12 semaines peut justifier une exploration histologique complémentaire.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Glomérulonéphrites liées aux infections bactériennes",
+      "limitations": "Pronostics très différents selon âge, comorbidités et infection ; pas de taux de cohorte transposé à la Suisse. Le délai de complément n’autorise pas à différer une biopsie urgente.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "e7e366b29b3803e030cc4cb0ce072893a0a0ae3f41213b978a3078114fe0d711",
+      "cache_path": "/tmp/medina-n04-source-cache/KDIGO21.raw",
+      "reader": "astra_nephrologie",
+      "limits": "Pronostics très différents selon âge, comorbidités et infection ; pas de taux de cohorte transposé à la Suisse. Le délai de complément n’autorise pas à différer une biopsie urgente."
+    },
+    {
+      "id": "NORMAL-FILTRE",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-4-microscopic-anatomy-of-the-kidney",
+      "publisher": "OpenStax, Anatomy and Physiology, §25.4",
+      "section": "Corpuscule rénal, barrière, tubule proximal, anse et collecteur",
+      "passage": "Le corpuscule filtre le plasma vers la capsule puis le tubule. Les podocytes entourent les capillaires ; les pédicelles délimitent des fentes. Les segments tubulaires réabsorbent et sécrètent, et le collecteur adapte la réabsorption d’eau sous vasopressine.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Anatomie et physiologie normales",
+      "limitations": "Manuel anatomique, pas recommandation clinique. Figures historiques 2013 sous leur propre licence ; ne pas attribuer la licence actuelle du manuel à une figure différente.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "d41f70463aaf1620dac9cedcaeed4d2f9847be22a62887796e426c61bbe4ba61",
+      "cache_path": "/tmp/medina-n04-source-cache/OPENSTAX25_4.raw",
+      "reader": "astra_nephrologie",
+      "limits": "Manuel anatomique, pas recommandation clinique. Figures historiques 2013 sous leur propre licence ; ne pas attribuer la licence actuelle du manuel à une figure différente."
+    },
+    {
+      "id": "FI-LASIX-IV",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680306300177",
+      "publisher": "Information professionnelle suisse, Swissmedic/AIPS via AmiKo",
+      "section": "Posologie, contre-indications, précautions et mécanisme",
+      "passage": "Chez adulte et adolescent dès15ans, dose initiale parentérale20–40mg ; œdème pulmonaire40mg IV, réévaluation et éventuelle répétition20–40mg après20min. Injection≤4mg/min,≤2,5mg/min si créatinine>5mg/dL. Enfant<15ans : cas critiques,1mg/kg avec maximum20mg/j selon cette FI. Anurie, hypovolémie et troubles électrolytiques sévères figurent parmi les contre-indications.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Produit injectable exact",
+      "limitations": "Ne pas confondre FI et protocole pédiatrique spécialisé ; ne pas transposer les conseils génériques de potassium à une hyperkaliémie aiguë.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "99d437c83b8140c70d5c8c9e364e0124463c4375073fa7910f645e9076a6cdf2",
+      "cache_path": "/tmp/medina-n04-source-cache/FI_lasix_iv.raw",
+      "reader": "astra_nephrologie",
+      "limits": "Ne pas confondre FI et protocole pédiatrique spécialisé ; ne pas transposer les conseils génériques de potassium à une hyperkaliémie aiguë."
+    },
+    {
+      "id": "FI-LASIX-PO",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680306290010",
+      "publisher": "Information professionnelle suisse, Swissmedic/AIPS via AmiKo",
+      "section": "Posologie, contre-indications et précautions",
+      "passage": "Comprimé40mg : dose adulte initiale selon FI de20–80mg/j et entretien20–40mg/j ; enfant2mg/kg par voie orale avec maximum40mg/j. Surveillance volémie, pression, créatinine et électrolytes ; anurie et hypovolémie contre-indiquées.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Produit oral exact",
+      "limitations": "Les unités et voies restent distinctes de la préparation injectable ; adaptation à la réponse, sans dose universelle du syndrome néphritique.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "299b36c99b45a6ce5de4e2da6873ac59a728bbe907601393d99b5e19cc26fb76",
+      "cache_path": "/tmp/medina-n04-source-cache/FI_lasix_po.raw",
+      "reader": "astra_nephrologie",
+      "limits": "Les unités et voies restent distinctes de la préparation injectable ; adaptation à la réponse, sans dose universelle du syndrome néphritique."
+    },
+    {
+      "id": "FI-NORVASC",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680500440174",
+      "publisher": "Information professionnelle suisse, Swissmedic/AIPS via AmiKo",
+      "section": "Indications, posologie, contre-indications, précautions",
+      "passage": "Amlodipine adulte5mg une fois par jour, jusqu’à10mg selon réponse ; dose initiale parfois moindre chez sujet âgé. Pas d’adaptation rénale habituelle, prudence hépatique. Données insuffisantes avant18ans dans cette FI ; hypotension sévère et choc contre-indiqués.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Norvasc exact, adulte",
+      "limitations": "Traitement de fond ; ne remplace pas la prise en charge hospitalière d’une urgence hypertensive et ne fournit pas ici de prescription pédiatrique.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "0c1976bf65f9c3a0af81e01ce03893e153f06311feea14f0c3837875d42ea63d",
+      "cache_path": "/tmp/medina-n00-source-cache/FI-NORVASC.raw",
+      "reader": "astra_nephrologie",
+      "limits": "Traitement de fond ; ne remplace pas la prise en charge hospitalière d’une urgence hypertensive et ne fournit pas ici de prescription pédiatrique."
+    },
+    {
+      "id": "FI-OSPEN",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680370570018",
+      "publisher": "Information professionnelle suisse, Swissmedic/AIPS via AmiKo",
+      "section": "Indications, posologie, contre-indications et précautions",
+      "passage": "Ospen1000 adulte et adolescent≥12ans : un comprimé3–4fois/j selon FI, au moins10jours pour infection streptococcique ; en anurie intervalle recommandé12h. Contre-indication allergie aux bêta-lactamines ; potassium65,8mg par comprimé1000 à compter en insuffisance rénale.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Produit exact, infection sensible documentée",
+      "limitations": "L’indication réglementaire de prophylaxie des complications ne démontre pas l’efficacité sur une GN déjà établie ; la justification clinique est confrontée à KDIGO. Aucun traitement d’endocardite n’est déduit de ce schéma oral.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "2ccb9c6169aad45f5265e423bc8da3da4fcd72395895d8fdd4100eca4a8b2744",
+      "cache_path": "/tmp/medina-n00-source-cache/FI-OSPEN.raw",
+      "reader": "astra_nephrologie",
+      "limits": "L’indication réglementaire de prophylaxie des complications ne démontre pas l’efficacité sur une GN déjà établie ; la justification clinique est confrontée à KDIGO. Aucun traitement d’endocardite n’est déduit de ce schéma oral."
+    },
+    {
+      "id": "CH-CIM",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/32686264/master",
+      "publisher": "OFS, CIM-10-GM2024 français",
+      "section": "ClasseN00, blocN00–N08, modificateurS14N00_4 et classes.0–.9",
+      "passage": "La catégorieN00 désigne le syndrome néphritique aigu ; les suffixes morphologiques.0–.8 supposent normalement une identification précise histologique. Les exclusions comprennent la néphrite tubulo-interstitielle aiguë et le syndrome néphritique sans précision.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Classification administrative suisse2024",
+      "limitations": "Le code ne constitue ni un stade de gravité ni une cause immunologique ; l’annexe suit le raisonnement clinique.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "04c9e9e5c95b2cbe2b8244872e6a6cbd5a7fc2358805e908b11d0e15784653be",
+      "cache_path": "/tmp/medina-n04-source-cache/CIM.raw",
+      "reader": "astra_nephrologie",
+      "limits": "Le code ne constitue ni un stade de gravité ni une cause immunologique ; l’annexe suit le raisonnement clinique."
+    },
+    {
+      "id": "CH-PROFILES",
+      "url": "https://smifk-cims.ch/download_file/view/c28daec4-78b0-4a6e-a198-00ca757191fc/261",
+      "publisher": "CIMS, PROFILES2017",
+      "section": "pp.29 et33 : SSP63,64,161,164,173",
+      "passage": "Les situations incluent anomalies de la diurèse, hématurie, marqueurs de fonction rénale, sédiment et protéinurie. Elles servent de correspondance pédagogique aux tâches de cette leçon.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Formation médicale suisse",
+      "limitations": "Numérotation2017 ; pas correspondance CIM officielle ni question réelle d’examen ; ne pas mélanger les éditions.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "d8d693e65f7725fc874d64665371b7a5232553c41892757d91a59dfae967cfef",
+      "cache_path": "/workspace/medina-source-cache/C85/profiles2017-official.pdf",
+      "reader": "astra_nephrologie",
+      "limits": "Numérotation2017 ; pas correspondance CIM officielle ni question réelle d’examen ; ne pas mélanger les éditions."
+    },
+    {
+      "id": "CH-MEBEKO",
+      "url": "https://www.bag.admin.ch/dam/fr/sd-web/fL9EvX0YPT2d/20260204_Exigences%20MED%202026_f.pdf",
+      "publisher": "MEBEKO, exigences édictées03.03.2026",
+      "section": "§1 et2.1, contenu et blueprint",
+      "passage": "L’examen2026 comporte connaissances et compétences cliniques et s’appuie sur les objectifs légaux, PROFILES et un blueprint multidimensionnel.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Examen fédéral2026",
+      "limitations": "Empreinte du texte extrait en cache, pas du PDF ; les exercices MEDINA sont originaux et non officiels.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "2a17bb4aba58e1c7a5db744e51c591f8ed13731af00ced35275af697dd8f9e50",
+      "cache_path": "/workspace/medina-source-cache/C85/mebeko2026.md",
+      "reader": "astra_nephrologie",
+      "limits": "Empreinte du texte extrait en cache, pas du PDF ; les exercices MEDINA sont originaux et non officiels."
+    },
+    {
+      "id": "INT-AKI",
+      "url": "https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf",
+      "publisher": "KDIGO, groupe international, 2012",
+      "section": "§2.1, tableau2 ; extrait du fournisseur Parallel réellement lu",
+      "passage": "L’insuffisance rénale aiguë est définie par une augmentation de créatinine d’au moins26,5µmol/L en48h, ou à au moins1,5fois la valeur de base sur7jours, ou une diurèse inférieure à0,5mL/kg/h sur6h. Le stade retient le critère le plus sévère de créatinine ou diurèse. Les fenêtres diagnostiques ne limitent pas la durée de progression du stade pendant le même épisode.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Définition générale de l’insuffisance rénale aiguë",
+      "limitations": "PDF direct non obtenu (réponse406) ; lecture d’extraits de la source officielle par fournisseur, avec OCR altérant les signes et µ. Unités confrontées au CUEN et conversion88,4µmol/L parmg/dL ; aucun protocole de réanimation2012 repris.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "e6e2f80f599ec9b838d38a36f3b8f559d47e8b390864013c8cc6b6b3184d361c",
+      "cache_path": "/tmp/medina-n00-source-cache/INT-AKI-provider.txt",
+      "reader": "astra_nephrologie",
+      "limits": "PDF direct non obtenu (réponse406) ; lecture d’extraits de la source officielle par fournisseur, avec OCR altérant les signes et µ. Unités confrontées au CUEN et conversion88,4µmol/L parmg/dL ; aucun protocole de réanimation2012 repris."
+    },
+    {
+      "id": "CH-PEDIATRIC-BP",
+      "url": "https://www.paediatrieschweiz.ch/fr/hypertension-arterielle-pendant-lenfance/",
+      "publisher": "Betti, Stefani-Glücksberg, Simonetti ; pédiatrie suisse,25.12.2020",
+      "section": "Définition, fréquence et mesure de la pression",
+      "passage": "L’interprétation de la pression pendant l’enfance dépend de l’âge, de la taille et du sexe ; la revue suisse se réfère aux recommandations européennes. Les mesures répétées définissent une hypertension habituelle, sans constituer un motif d’attente devant une atteinte aiguë menaçante.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Enfants et adolescents",
+      "limitations": "Pas de tableau de percentiles reproduit ; ne pas extrapoler les modalités de diagnostic chronique à une urgence néphritique.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "a8bdefb3bba687c37bf9e8d408e509377f18648df9acacd2ffb83cdbf6ea7a29",
+      "cache_path": "/tmp/medina-n00-source-cache/CH-PEDIATRIC-BP.raw",
+      "reader": "astra_nephrologie",
+      "limits": "Pas de tableau de percentiles reproduit ; ne pas extrapoler les modalités de diagnostic chronique à une urgence néphritique."
+    },
+    {
+      "id": "CH-PREGNANCY",
+      "url": "https://www.revmed.ch/view/409725/3594818/RMS_662_1603.pdf",
+      "publisher": "Mégevand et coll., Revue Médicale Suisse2019",
+      "section": "pp.1603–1604 ; diagnostic et classification",
+      "passage": "Une hypertension nouvelle de grossesse associée à une atteinte d’organe, dont l’atteinte rénale, fait rechercher une prééclampsie ; la protéinurie n’est pas obligatoire. L’évaluation relie obstétrique et médecine interne.",
+      "passage_type": "faithful_paraphrase",
+      "population": "Femmes enceintes",
+      "limitations": "Source utilisée pour le diagnostic différentiel et l’orientation, pas pour des seuils thérapeutiques ni des schémas de prescription actualisés.",
+      "read_at": "2026-11-02T03:51:02.590422+00:00",
+      "sha256": "56b9613155347b82d69cc92b78341ff4660ad0e39327f224e53a93c1cfc3e643",
+      "cache_path": "/tmp/medina-n00-source-cache/CH-PREGNANCY.raw",
+      "reader": "astra_nephrologie",
+      "limits": "Source utilisée pour le diagnostic différentiel et l’orientation, pas pour des seuils thérapeutiques ni des schémas de prescription actualisés."
+    }
+  ],
+  "images": [
+    {
+      "id": "podocytes",
+      "title": "Illustration humaine historique des podocytes et de leurs pédicelles autour d’un capillaire glomérulaire",
+      "path": "images/2613_Podocytes.jpg",
+      "sha256": "8ff3a653bd19d8dc55b6030f795336fe8489bdc096ef694937e20b4184f3da5d",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/2613_Podocytes.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2613_Podocytes.jpg",
+      "author": "OpenStax College, Anatomy & Physiology, 2013",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "source_page_sha256": "a197313c646e92d6bbb8d9d559c360f8a7dfff4439672d5399b3a46e4e264eb3",
+      "source_page_read": "Description, auteur, original, licence propre à la figure ; cache effectivement relu",
+      "original_unmodified": true,
+      "annotations": [
+        {
+          "number": 1,
+          "x_percent": 44,
+          "y_percent": 21,
+          "label": "Corps d’un podocyte dans le détail de gauche."
+        },
+        {
+          "number": 2,
+          "x_percent": 25,
+          "y_percent": 57,
+          "label": "Pédicelles entrelacés : organisation du versant externe du filtre."
+        },
+        {
+          "number": 3,
+          "x_percent": 70,
+          "y_percent": 83,
+          "label": "Capillaire dans la représentation de droite."
+        }
+      ],
+      "visual_review": "Original et annotations réellement vus par astra_nephrologie le 2026-11-02 sur captures natives 1440 et 390px ; repères prudents et limites documentés. Auto-relecture IA, sans validation humaine.",
+      "limitations": "Planche normale, non image de patient ; elle ne montre ni dépôts immuns ni lésion inflammatoire. Les repères HTML n’altèrent pas les pixels.",
+      "canonical_path": "assets/img/n00/alpha/codex/2613_Podocytes.jpg",
+      "medical_review": "Auto-relecture IA des originaux et annotations réellement vus ; reviews/visual_desktop.json et reviews/visual_mobile.json ; aucune validation humaine."
+    },
+    {
+      "id": "nephron",
+      "title": "Illustration humaine historique des échanges tubulaires du néphron normal",
+      "path": "images/2618_Nephron_Secretion_Reabsorption.jpg",
+      "sha256": "22245114f45516127f8bd127a9eaeca7e3e3e017beb5a8deb5a8a15b78bcaafb",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/2618_Nephron_Secretion_Reabsorption.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2618_Nephron_Secretion_Reabsorption.jpg",
+      "author": "OpenStax College, Anatomy & Physiology, 2013",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "source_page_sha256": "6af25d7f769149e7b71089fe7645ca67cd6eb5d19094d547fef782e3148f6475",
+      "source_page_read": "Description, auteur, original, licence propre à la figure ; cache effectivement relu",
+      "original_unmodified": true,
+      "annotations": [
+        {
+          "number": 1,
+          "x_percent": 33,
+          "y_percent": 31,
+          "label": "Tubule proximal : réabsorption et sécrétion modifient le filtrat."
+        },
+        {
+          "number": 2,
+          "x_percent": 51,
+          "y_percent": 61,
+          "label": "Branche ascendante : repère de la réabsorption de sodium, potassium et chlorure."
+        },
+        {
+          "number": 3,
+          "x_percent": 75,
+          "y_percent": 75,
+          "label": "Canal collecteur : ajustement final de l’eau et des solutés."
+        }
+      ],
+      "visual_review": "Original et annotations réellement vus par astra_nephrologie le 2026-11-02 sur captures natives 1440 et 390px ; repères prudents et limites documentés. Auto-relecture IA, sans validation humaine.",
+      "limitations": "Schéma simplifié normal ; les flèches sont celles de l’original. Il ne mesure pas les flux d’un patient et ne représente pas une glomérulonéphrite.",
+      "canonical_path": "assets/img/n00/alpha/codex/2618_Nephron_Secretion_Reabsorption.jpg",
+      "medical_review": "Auto-relecture IA des originaux et annotations réellement vus ; reviews/visual_desktop.json et reviews/visual_mobile.json ; aucune validation humaine."
+    },
+    {
+      "id": "postinfect",
+      "title": "Microphotographie humaine PAS de glomérulonéphrite postinfectieuse, diagnostic attribué à la source",
+      "path": "images/Post-infectious_glomerulonephritis_-_high_mag.jpg",
+      "sha256": "48070b6079c7d2e8347e8134f67bad8661cc251f225004d79318915adf12e1c1",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Post-infectious_glomerulonephritis_-_high_mag.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Post-infectious_glomerulonephritis_-_high_mag.jpg",
+      "author": "Nephron",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_page_sha256": "005e6f057cfcede85a362fc1a60ac846646957317683fb3728d9e3c7b8902ed5",
+      "source_page_read": "Description, auteur, original, licence propre à la figure ; cache effectivement relu",
+      "original_unmodified": true,
+      "annotations": [
+        {
+          "number": 1,
+          "x_percent": 58,
+          "y_percent": 25,
+          "label": "Glomérule très cellulaire, dans la moitié supérieure."
+        },
+        {
+          "number": 2,
+          "x_percent": 77,
+          "y_percent": 72,
+          "label": "Second glomérule visible : ne pas extrapoler la proportion de glomérules atteints à partir d’un champ."
+        },
+        {
+          "number": 3,
+          "x_percent": 40,
+          "y_percent": 38,
+          "label": "Lumière d’un tubule voisin, distincte de l’espace glomérulaire."
+        }
+      ],
+      "visual_review": "Original et annotations réellement vus par astra_nephrologie le 2026-11-02 sur captures natives 1440 et 390px ; repères prudents et limites documentés. Auto-relecture IA, sans validation humaine.",
+      "limitations": "Diagnostic de la source : GN postinfectieuse, coloration PAS. La coupe seule ne prouve ni le germe ni le profil des dépôts ; aucun « hump » électronique n’est identifié sur cette image.",
+      "canonical_path": "assets/img/n00/alpha/codex/Post-infectious_glomerulonephritis_-_high_mag.jpg",
+      "medical_review": "Auto-relecture IA des originaux et annotations réellement vus ; reviews/visual_desktop.json et reviews/visual_mobile.json ; aucune validation humaine."
+    },
+    {
+      "id": "crescent",
+      "title": "Microphotographie humaine PAS d’une glomérulonéphrite extracapillaire, avec maladie anti-membrane basale documentée par la source",
+      "path": "images/Crescentic_glomerulonephritis_-_high_mag.jpg",
+      "sha256": "1568e067b50f7a60d88eb733e4e737631f149be2f60b7df98c2c58a0d8a71dc2",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Crescentic_glomerulonephritis_-_high_mag.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Crescentic_glomerulonephritis_-_high_mag.jpg",
+      "author": "Nephron",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_page_sha256": "41fd1d4485f64cd2ed07e8649c25805839d6aa256dea94999dc9f17a847cc354",
+      "source_page_read": "Description, auteur, original, licence propre à la figure ; cache effectivement relu",
+      "original_unmodified": true,
+      "annotations": [
+        {
+          "number": 1,
+          "x_percent": 28,
+          "y_percent": 46,
+          "label": "Premier glomérule lésé dans la moitié gauche."
+        },
+        {
+          "number": 2,
+          "x_percent": 38,
+          "y_percent": 80,
+          "label": "Autre glomérule lésé ; l’évaluation d’activité et de fibrose nécessite toute la biopsie."
+        },
+        {
+          "number": 3,
+          "x_percent": 47,
+          "y_percent": 42,
+          "label": "Lumière tubulaire : repère de séparation entre compartiments."
+        }
+      ],
+      "visual_review": "Original et annotations réellement vus par astra_nephrologie le 2026-11-02 sur captures natives 1440 et 390px ; repères prudents et limites documentés. Auto-relecture IA, sans validation humaine.",
+      "limitations": "La source rapporte des dépôts linéaires d’IgG en immunofluorescence ; ce signal n’est pas visible sur cette coloration PAS. Les repères localisent les structures sans prétendre typer chaque cellule ni quantifier les croissants.",
+      "canonical_path": "assets/img/n00/alpha/codex/Crescentic_glomerulonephritis_-_high_mag.jpg",
+      "medical_review": "Auto-relecture IA des originaux et annotations réellement vus ; reviews/visual_desktop.json et reviews/visual_mobile.json ; aucune validation humaine."
+    },
+    {
+      "id": "sediment",
+      "title": "Quatre photographies originales de cylindres urinaires : épithélial, granuleux, leucocytaire et érythrocytaire",
+      "path": "images/RTE_cast,_muddy_granular_cast,_WBC_cast_and_RBC_cast_in_urine.jpg",
+      "sha256": "ba911e1601c1c48fdd0a74d55135c95fc2bf7b4c61a3e62d04a7c110f45a2b01",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/RTE_cast%2C_muddy_granular_cast%2C_WBC_cast_and_RBC_cast_in_urine.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RTE_cast,_muddy_granular_cast,_WBC_cast_and_RBC_cast_in_urine.jpg",
+      "author": "V. Mohsenin, J Intensive Care 2017;5:57, figure de microscopie",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_page_sha256": "0b5cd64da426d8706145ed7310aca69a2f978dc0f375129fbe4f21b7321e269e",
+      "source_page_read": "Description, auteur, original, licence propre à la figure ; cache effectivement relu",
+      "original_unmodified": true,
+      "annotations": [
+        {
+          "number": 1,
+          "x_percent": 24,
+          "y_percent": 19,
+          "label": "Panneau a : cylindre de cellules épithéliales tubulaires, selon la légende source."
+        },
+        {
+          "number": 2,
+          "x_percent": 74,
+          "y_percent": 20,
+          "label": "Panneau b : cylindre granuleux brun, selon la légende source."
+        },
+        {
+          "number": 3,
+          "x_percent": 25,
+          "y_percent": 71,
+          "label": "Panneau c : cylindre leucocytaire, selon la légende source."
+        },
+        {
+          "number": 4,
+          "x_percent": 77,
+          "y_percent": 75,
+          "label": "Panneau d : cylindre érythrocytaire, repère pertinent pour une atteinte glomérulaire."
+        }
+      ],
+      "visual_review": "Original et annotations réellement vus par astra_nephrologie le 2026-11-02 sur captures natives 1440 et 390px ; repères prudents et limites documentés. Auto-relecture IA, sans validation humaine.",
+      "limitations": "Original disponible en 567×337 pixels ; les cellules ne sont pas reclassées au-delà de la légende publiée. Source utilisée pour la figure, pas comme recommandation américaine de prise en charge. La page Commons fournit les droits propres ; l’accès direct PMC a renvoyé une vérification de navigateur, sans lecture de l’article intégral.",
+      "canonical_path": "assets/img/n00/alpha/codex/RTE_cast,_muddy_granular_cast,_WBC_cast_and_RBC_cast_in_urine.jpg",
+      "medical_review": "Auto-relecture IA des originaux et annotations réellement vus ; reviews/visual_desktop.json et reviews/visual_mobile.json ; aucune validation humaine."
+    }
+  ],
+  "semiology": {
+    "section_anchors": [
+      "n00-semio-normal",
+      "n00-semio-signs",
+      "n00-semio-mechanisms",
+      "n00-semio-examination",
+      "n00-semio-interpretation",
+      "n00-semio-differentials",
+      "n00-semio-urgency",
+      "n00-semio-limits",
+      "n00-semio-sources"
+    ]
+  },
+  "scientific_subtabs": [
+    "Sémiologie fondamentale et analytique",
+    "Anatomie",
+    "Histologie",
+    "Physiologie",
+    "Biochimie",
+    "Immunologie"
+  ],
+  "reviews": {
+    "medical": {
+      "path": "reviews/medical.json",
+      "reviewer": "astra_nephrologie",
+      "mode": "self_review",
+      "sha256": "fd5dcb668739be93c2e61596b3f4ce5bc0fa6b5e2fb29c2757b2da27865daa7b"
+    },
+    "language": {
+      "path": "reviews/language.json",
+      "reviewer": "astra_nephrologie",
+      "mode": "self_review",
+      "sha256": "b7f320233f9440f4b755aa1c395624a97339322025258fc71c52c8faf90c7954"
+    },
+    "visual_desktop": {
+      "path": "reviews/visual_desktop.json",
+      "reviewer": "astra_nephrologie",
+      "mode": "self_review",
+      "sha256": "d2c60e32028befb951f93a1d2b58914a8334e87274b14e83faf2e5b9a0782264"
+    },
+    "visual_mobile": {
+      "path": "reviews/visual_mobile.json",
+      "reviewer": "astra_nephrologie",
+      "mode": "self_review",
+      "sha256": "f37660f5d0ae011fb94a7b328e89a8a291134ab5a83d0565080c6bec60ae6827"
+    }
+  },
+  "blocking_findings": [],
+  "medical_human_validation": false,
+  "clinical_certification": false,
+  "tokens_actual": null,
+  "cost_actual": null,
+  "catalogue_entry_sha256": "3be1636196709bf16a1b25b514f92fe425ae51f9a4219a61de8f8ae95be263bc",
+  "canonical_files": {
+    "chapters/N00/N00_a.html": "50abb080e009e268f2752593c3b4ca047a04806d3b53835ac9cd9d85e303c6b3",
+    "chapters/N00/N00_b.html": "d959795a50437c3ccc15f1810d52b48da132292e4e0b612ab6b252a7d75a3539",
+    "chapters/N00/N00_c.html": "4a78de9b1fa47363ba8512e59cde4e1a6495c7336c62fbd73af83f72574841d3",
+    "chapters/N00/N00_d.html": "ed8a5ed0acfbe47090d8ca2a3012804b8c8385ec4e4a0d1a4247aa2f7b1756d4",
+    "chapters/N00/N00_pop1.html": "a05485329da61653d4a59097f1c2c5d797949b4c5ee6745cf35d4641b9f867be",
+    "chapters/N00/N00_pop2.html": "4f693ca2a29167d94933f011c042d844114548a498c43e567de1006c70fe7bf3"
+  },
+  "source_glossary_sha256": "8e720ef927f02738c13ddb6e058518e0e96a6ef62d9bbb8109048ec48a32ac43",
+  "preview": {
+    "path": "N00-apercu-autonome.html",
+    "sha256": "27b32bed4965d4cf923ebd82644fea8f1b7034c207e1634d9ae0f9c760a30737"
+  },
+  "limitations": [
+    "Auto-relectures explicites de l’auteur ; aucune revue clinique indépendante globale ni validation médicale humaine.",
+    "Absence de donnée nationale récente d’incidence de l’ensemble des syndromes néphritiques aigus dans les sources suisses lues ; aucun taux de microhématurie ou de maladie distincte extrapolé à N00.",
+    "Lectures ciblées de sections réellement identifiées, pas lecture intégrale revendiquée des ouvrages. Les références suisses anciennes sont utilisées pour sémiologie/orientation ; CUEN 2025 et KDIGO complètent sans transformer une revue ancienne en protocole actuel.",
+    "KDIGO AKI 2012 : passage extrait par le fournisseur Parallel après refus HTTP du PDF direct ; empreinte du texte obtenu, non du PDF officiel, et limites OCR conservées dans le ledger.",
+    "La monographie du syndrome reconnaît les vascularites et maladies anti-membrane basale urgentes ; leurs protocoles spécialisés ne sont pas remplacés par une immunosuppression universelle.",
+    "FI Lasix : contre-indication d’anurie, voies et plafonds pédiatriques explicites. La fiche suisse Norvasc consultée ne fournit pas de schéma avant 18 ans. Ospen 1000 correspond à un million d’UI, non à 1000 mg ; aucune conversion pédiatrique improvisée.",
+    "Le traitement antibiotique de l’infection et l’évolution d’une glomérulonéphrite établie sont distingués ; la formulation réglementaire Ospen sur les complications n’est pas présentée comme preuve de récupération rénale.",
+    "Photomicrographies : diagnostic attribué à la provenance ; la coloration PAS ne montre ni immunofluorescence ni germe. Le panneau de sédiment original est limité à 567×337 pixels, sans agrandissement artificiel. Les droits de figure sont documentés via les pages Commons ; l’article PMC du sédiment a présenté un contrôle navigateur et n’est pas revendiqué comme lu.",
+    "PROFILES 2017 et MEBEKO examen 2026 : correspondance pédagogique explicite, sans assimilation à la numérotation PROFILES 2023 ni à une liste officielle de questions CIM.",
+    "Aperçu natif testé à une origine HTTP interceptée en Chromium, toutes autres requêtes bloquées ; aucun déploiement public ni navigation réseau réelle revendiqué."
+  ],
+  "remaining_transparent_limits": [
+    "Auto-relectures explicites de l’auteur ; aucune revue clinique indépendante globale ni validation médicale humaine.",
+    "Absence de donnée nationale récente d’incidence de l’ensemble des syndromes néphritiques aigus dans les sources suisses lues ; aucun taux de microhématurie ou de maladie distincte extrapolé à N00.",
+    "Lectures ciblées de sections réellement identifiées, pas lecture intégrale revendiquée des ouvrages. Les références suisses anciennes sont utilisées pour sémiologie/orientation ; CUEN 2025 et KDIGO complètent sans transformer une revue ancienne en protocole actuel.",
+    "KDIGO AKI 2012 : passage extrait par le fournisseur Parallel après refus HTTP du PDF direct ; empreinte du texte obtenu, non du PDF officiel, et limites OCR conservées dans le ledger.",
+    "La monographie du syndrome reconnaît les vascularites et maladies anti-membrane basale urgentes ; leurs protocoles spécialisés ne sont pas remplacés par une immunosuppression universelle.",
+    "FI Lasix : contre-indication d’anurie, voies et plafonds pédiatriques explicites. La fiche suisse Norvasc consultée ne fournit pas de schéma avant 18 ans. Ospen 1000 correspond à un million d’UI, non à 1000 mg ; aucune conversion pédiatrique improvisée.",
+    "Le traitement antibiotique de l’infection et l’évolution d’une glomérulonéphrite établie sont distingués ; la formulation réglementaire Ospen sur les complications n’est pas présentée comme preuve de récupération rénale.",
+    "Photomicrographies : diagnostic attribué à la provenance ; la coloration PAS ne montre ni immunofluorescence ni germe. Le panneau de sédiment original est limité à 567×337 pixels, sans agrandissement artificiel. Les droits de figure sont documentés via les pages Commons ; l’article PMC du sédiment a présenté un contrôle navigateur et n’est pas revendiqué comme lu.",
+    "PROFILES 2017 et MEBEKO examen 2026 : correspondance pédagogique explicite, sans assimilation à la numérotation PROFILES 2023 ni à une liste officielle de questions CIM.",
+    "Aperçu natif testé à une origine HTTP interceptée en Chromium, toutes autres requêtes bloquées ; aucun déploiement public ni navigation réseau réelle revendiqué."
+  ],
+  "closure_status": "reviewed_project_delivery_not_clinically_certified"
+}
