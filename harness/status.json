@@ -1,23 +1,18 @@
 {
-  "generated_at": "2026-11-02T12:45:15+00:00",
+  "generated_at": "2026-11-02T12:55:15+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T12:45:15+00:00",
+    "checked_at": "2026-11-02T12:55:15+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T12:45:15+00:00",
+    "observed_at": "2026-11-02T12:55:15+00:00",
     "ok": true,
     "findings": [
-      {
-        "agent": "astra_nephrologie",
-        "level": "warning",
-        "reason": "Aucune activité déclarée depuis plus de 20 min; agent non supposé actif"
-      },
       {
         "level": "warning",
         "reason": "Réserves structurelles historiques à traiter avant intégration ; achèvements conservés",
@@ -61,7 +56,7 @@
       "meaning": "Contrôle structurel relancé à chaque veille600s ; résultats historiques conservés, nouvelles clôtures refusées si échec."
     },
     "interval_seconds": 600,
-    "observer_pid": 890095,
+    "observer_pid": 891639,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -1573,7 +1568,7 @@
         "worktree": "/workspace/Medina-neurologie-G06",
         "branch": "codex/alpha77/g06-integrate-g1"
       },
-      "activity_age_seconds": 363,
+      "activity_age_seconds": 963,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -1623,8 +1618,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE"
       ],
       "started_at": "2026-11-02T11:53:37+00:00",
-      "activity_at": "2026-11-02T12:38:52+00:00",
-      "message": "E30 : 14 sections et 20 rubriques rédigées, six sciences dont neuf rubriques de sémiologie avec structure stricte. Audit sciences passé à la base approuvée : 5→6 disciplines, 1267→2986 mots, 6 figures (2 originaux humains, 4 schémas logiques). Contrôle statique final et fenêtres contextuelles en cours ; aucun binding créé.",
+      "activity_at": "2026-11-02T12:51:52+00:00",
+      "message": "E30 : contrôle natif final passé après correction visuelle de la légende histologique ; aperçu d8ca3edfe54514e0f72a473abe5fd8b74a54c8e0e862aa79f374a7aee855fa66. Sept règles strictes de sémiologie, static et audit sciences passent (2985 mots, six figures). Navigateur 1440/390 : 42 fenêtres, 3 définitions, 4 quiz, Livre24 et popup Lucrin mesurée 24 px, tableau accessible par défilement local. Les auto-revues et la validation du paquet restent à consigner ; aucun binding encore créé.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -1641,7 +1636,7 @@
         "fragment": "S05",
         "label": "E-06-Endocrinologie et métabolisme",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "phase": "E30_redaction_apres_recherche_verifiee",
+        "phase": "E30_verification_et_relectures",
         "selected_lesson": {
           "code": "E30",
           "title": "Anomalies de la puberté, non classées ailleurs",
@@ -2898,7 +2893,7 @@
           "phase": "preparation_only_waiting_harness_veille_and_exclusive_worktree",
           "authorization_scope": "Préparation seulement dans harness/agents/endocrinologie; aucune écriture médicale, aucun commit ni index. Ordre courant spécialités parallèles/une leçon à la fois remplace lots historiques, pas réservations."
         },
-        "updated_at": "2026-11-02T12:17:20.887432+00:00",
+        "updated_at": "2026-11-02T12:50:25.529128+00:00",
         "worktree": "/workspace/Medina-endocrinologie-E30",
         "branch": "codex/alpha77/e30-integrate-g1",
         "tokens_actual": null,
@@ -3030,7 +3025,7 @@
         },
         "current_evidence": {
           "transition": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E25-E30",
-          "status": "21 sources réellement lues aux niveaux déclarés, porte vérité passée avant écriture canonique ; figures humaines originales et licences inspectées. Début rédaction autorisé après cette recherche.",
+          "status": "14 sections rédigées, static et sept règles strictes de sémiologie passés ; audit sciences 5→6 disciplines, 1267→2986 mots, six figures ; navigateur et revue finale des repères en cours, aucun binding créé.",
           "source_cache": "/tmp/medina-source-cache/endocrinologie/E30",
           "registry_sha": "c91a5212f978e6b4c0a13f37e64dc6c20f558ec4",
           "folder": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE",
@@ -3099,11 +3094,20 @@
         ],
         "runtime_agent": "sol_endocrinologie",
         "runtime_model": "gpt-6.1-sol",
-        "runtime_reasoning": "high"
+        "runtime_reasoning": "high",
+        "activity_alerts": [
+          {
+            "observed_at": "2026-11-02T12:37:30+00:00",
+            "snapshot_at": "2026-11-02T12:35:14+00:00",
+            "workflow_run": "41446036893",
+            "finding": "activité auteur ancienne constatée sur snapshot antérieur au jalon réel 12:38:52",
+            "resolution": "Jalon réel 12:38:52 conservé ; prochain enregistrement après contrôle final, sans heartbeat."
+          }
+        ]
       },
-      "activity_age_seconds": 383,
+      "activity_age_seconds": 203,
       "activity_fresh": true,
-      "sections_per_hour": 16.27,
+      "sections_per_hour": 13.63,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -3135,7 +3139,7 @@
       "technical_identity_note": "Identité native conservée /root/sol_nephrologie ; huit livraisons néphrologiques historiques inchangées.",
       "lesson": "D77",
       "worktree": "/workspace/Medina-hematologie-D77",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/d77-integrate-g1",
       "allowed_paths": [
         "chapters/D77",
@@ -3145,15 +3149,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D77-INTEGRATE"
       ],
       "started_at": "2026-11-02T12:12:23+00:00",
-      "activity_at": "2026-11-02T12:25:07+00:00",
-      "message": "Sol-Hématologie-D77 : acquisition/start/claim/gate effectifs ; OFS,CHUV2024,Swissmedicliste30.09.2026/importart49,2FIsuisses,consensusEU2022/revueHSS2021 lus parpassages ;4originauxhumains recevablesvus, frottis2026refusépourdroitscontradictoires. Pasencorederédaction médicale.",
+      "activity_at": "2026-11-02T12:52:43+00:00",
+      "message": "Betta préalable passé ; 14 points D77 écrits, distinction D77*/B65, HSS, hypersplénisme et asplénie, figures humaines et sources attribuées ; sciences en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "1d133d315e582316e6909eea8b7d804ce6691e956174c56a8d13e76ddd6c9e16",
       "brief": {
         "schema_version": 1,
@@ -4184,9 +4188,9 @@
         "production_name": "Sol-Hématologie-D77",
         "active_specialty": "hematologie"
       },
-      "activity_age_seconds": 1208,
-      "activity_fresh": false,
-      "sections_per_hour": 0.0,
+      "activity_age_seconds": 152,
+      "activity_fresh": true,
+      "sections_per_hour": 19.59,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -4648,32 +4652,13 @@
         "sources_read": 0,
         "completed_sections": 0
       },
-      "activity_age_seconds": 109,
+      "activity_age_seconds": 709,
       "activity_fresh": true,
-      "sections_per_hour": 9.2,
+      "sections_per_hour": 8.29,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T03:22:12+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "revue_requise",
-      "message": "N29 aperçu autonome testé 1440/390, huit images décodées hors réseau ; position réelle des annotations contrôlée et quatre figures vues. 31 lectures ciblées, neuf FI suisses. Reçus finaux et matrice 14/20 en préparation."
-    },
-    {
-      "at": "2026-11-02T03:24:01+00:00",
-      "action": "complete",
-      "agent": "codex_hematologie",
-      "code": "C85"
-    },
-    {
-      "at": "2026-11-02T03:26:38+00:00",
-      "action": "claim",
-      "agent": "codex_hematologie",
-      "code": "C86"
-    },
     {
       "at": "2026-11-02T03:27:36+00:00",
       "action": "progress",
@@ -5947,6 +5932,26 @@
       "agent": "codex_hematologie",
       "stage": "verification",
       "message": "D63 : contrôle statique et audit sciences réussis ; 4360 mots scientifiques, six disciplines. Navigation native testée : Tab+Entrée opérationnels, flèches non gérées par moteur hérité ; réserve explicite, parcours final en cours."
+    },
+    {
+      "at": "2026-11-02T12:45:15+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 2
+    },
+    {
+      "at": "2026-11-02T12:51:52+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "verification",
+      "message": "E30 : contrôle natif final passé après correction visuelle de la légende histologique ; aperçu d8ca3edfe54514e0f72a473abe5fd8b74a54c8e0e862aa79f374a7aee855fa66. Sept règles strictes de sémiologie, static et audit sciences passent (2985 mots, six figures). Navigateur 1440/390 : 42 fenêtres, 3 définitions, 4 quiz, Livre24 et popup Lucrin mesurée 24 px, tableau accessible par défilement local. Les auto-revues et la validation du paquet restent à consigner ; aucun binding encore créé."
+    },
+    {
+      "at": "2026-11-02T12:52:43+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "redaction",
+      "message": "Betta préalable passé ; 14 points D77 écrits, distinction D77*/B65, HSS, hypersplénisme et asplénie, figures humaines et sources attribuées ; sciences en cours."
     }
   ],
   "cache": {
@@ -5961,8 +5966,8 @@
     "main_medina_modified": false,
     "native_agents_persistent": false,
     "branch": "codex/harness-observations-20261102",
-    "last_verified_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41439101913",
-    "last_verified_conclusion": "success",
+    "last_verified_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41446036893",
+    "last_verified_conclusion": "failure",
     "report_automation": "enabled;2026-11-02T08:00:00+01:00; updated with independent artifacts and lesson previews",
     "independent_watchdog": "active; workflow_dispatch handoff verified",
     "watchdog_bootstrap_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41374424262",
@@ -5984,15 +5989,15 @@
       "author_activity_refreshed": false,
       "external_watchdog_can_restart_native_agents": false
     },
-    "last_verified_observation": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41439101913",
-    "last_verified_observation_result": "Observation11:44:18UTC sur snapshot11:40:10, healthy:true ; aucun réveil des agents.",
+    "last_verified_observation": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41446036893",
+    "last_verified_observation_result": "Observation indépendante 12:37:30 UTC, snapshot 12:35:14 : healthy:false, activité astra_endocrinologie ancienne. Jalons auteur réels suivants à lire séparément ; aucune activité renouvelée par la veille.",
     "incident_stale_activity": {
       "run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41376224282",
       "observed_at": "2026-11-02T02:10:19Z",
       "result": "Échec affiché pour les activités anciennes des trois auteurs, sans arrêt du relais; observation suivante réussie."
     },
     "native_agents_last_observed": {
-      "at": "2026-11-02T12:05:13.812176+00:00",
+      "at": "2026-11-02T12:48:01.278942+00:00",
       "provider": "collaboration.list_agents",
       "agents": [
         {
@@ -6013,7 +6018,7 @@
         }
       ],
       "author_activity_refreshed": false,
-      "meaning": "État natif réellement observé dans ce tour ; ne prouve pas une activité ininterrompue et ne renouvelle aucun reçu source."
+      "meaning": "Quatre états natifs réellement observés par collaboration.list_agents dans ce tour ; ce constat ne prouve pas une activité ininterrompue et ne renouvelle aucun reçu."
     },
     "native_model_handoff": {
       "at": "2026-11-02T10:23:02.648791+00:00",
@@ -12855,7 +12860,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T12:45:13+00:00",
+    "observed_at": "2026-11-02T12:55:13+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -13679,8 +13684,8 @@
         "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "local_preview": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/E30-apercu-autonome.html",
         "exists": true,
-        "sha256": "3222e2fd1051a63832ef32c5cb7e0d8a8af0cd9959f01378629bb914c7c1dabd",
-        "bytes": 9177620,
+        "sha256": "c4af2248a534b7ac08405abcc1eebd6a8476551cb6a3320892291da156d7ef16",
+        "bytes": 9177636,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/e30-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/E30-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/e30-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
@@ -13709,8 +13714,8 @@
         "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "local_preview": "/workspace/Medina-hematologie-D63/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D63-INTEGRATE/D63-apercu-autonome.html",
         "exists": true,
-        "sha256": "fdf6c08d3fdb27623911d2aedc7f09f36ca231ccf29a0f1bb4dde20c7fa52c66",
-        "bytes": 7842892,
+        "sha256": "9f800db389bfa4eccbd288bca00011126cf47239771c2a57be5759a1dc2c8896",
+        "bytes": 7842195,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/d63-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D63-INTEGRATE/D63-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/d63-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",

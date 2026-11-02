@@ -6,7 +6,7 @@
   "fragment": "S05",
   "label": "E-06-Endocrinologie et métabolisme",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "phase": "E30_redaction_apres_recherche_verifiee",
+  "phase": "E30_verification_et_relectures",
   "selected_lesson": {
     "code": "E30",
     "title": "Anomalies de la puberté, non classées ailleurs",
@@ -1263,7 +1263,7 @@
     "phase": "preparation_only_waiting_harness_veille_and_exclusive_worktree",
     "authorization_scope": "Préparation seulement dans harness/agents/endocrinologie; aucune écriture médicale, aucun commit ni index. Ordre courant spécialités parallèles/une leçon à la fois remplace lots historiques, pas réservations."
   },
-  "updated_at": "2026-11-02T12:17:20.887432+00:00",
+  "updated_at": "2026-11-02T12:50:25.529128+00:00",
   "worktree": "/workspace/Medina-endocrinologie-E30",
   "branch": "codex/alpha77/e30-integrate-g1",
   "tokens_actual": null,
@@ -1395,7 +1395,7 @@
   },
   "current_evidence": {
     "transition": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E25-E30",
-    "status": "21 sources réellement lues aux niveaux déclarés, porte vérité passée avant écriture canonique ; figures humaines originales et licences inspectées. Début rédaction autorisé après cette recherche.",
+    "status": "14 sections rédigées, static et sept règles strictes de sémiologie passés ; audit sciences 5→6 disciplines, 1267→2986 mots, six figures ; navigateur et revue finale des repères en cours, aucun binding créé.",
     "source_cache": "/tmp/medina-source-cache/endocrinologie/E30",
     "registry_sha": "c91a5212f978e6b4c0a13f37e64dc6c20f558ec4",
     "folder": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE",
@@ -1464,5 +1464,14 @@
   ],
   "runtime_agent": "sol_endocrinologie",
   "runtime_model": "gpt-6.1-sol",
-  "runtime_reasoning": "high"
+  "runtime_reasoning": "high",
+  "activity_alerts": [
+    {
+      "observed_at": "2026-11-02T12:37:30+00:00",
+      "snapshot_at": "2026-11-02T12:35:14+00:00",
+      "workflow_run": "41446036893",
+      "finding": "activité auteur ancienne constatée sur snapshot antérieur au jalon réel 12:38:52",
+      "resolution": "Jalon réel 12:38:52 conservé ; prochain enregistrement après contrôle final, sans heartbeat."
+    }
+  ]
 }

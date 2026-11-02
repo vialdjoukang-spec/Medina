@@ -39,8 +39,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE"
       ],
       "started_at": "2026-11-02T11:53:37+00:00",
-      "activity_at": "2026-11-02T12:38:52+00:00",
-      "message": "E30 : 14 sections et 20 rubriques rédigées, six sciences dont neuf rubriques de sémiologie avec structure stricte. Audit sciences passé à la base approuvée : 5→6 disciplines, 1267→2986 mots, 6 figures (2 originaux humains, 4 schémas logiques). Contrôle statique final et fenêtres contextuelles en cours ; aucun binding créé.",
+      "activity_at": "2026-11-02T12:51:52+00:00",
+      "message": "E30 : contrôle natif final passé après correction visuelle de la légende histologique ; aperçu d8ca3edfe54514e0f72a473abe5fd8b74a54c8e0e862aa79f374a7aee855fa66. Sept règles strictes de sémiologie, static et audit sciences passent (2985 mots, six figures). Navigateur 1440/390 : 42 fenêtres, 3 définitions, 4 quiz, Livre24 et popup Lucrin mesurée 24 px, tableau accessible par défilement local. Les auto-revues et la validation du paquet restent à consigner ; aucun binding encore créé.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -53,7 +53,7 @@
     "astra_nephrologie": {
       "lesson": "D77",
       "worktree": "/workspace/Medina-hematologie-D77",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/d77-integrate-g1",
       "allowed_paths": [
         "chapters/D77",
@@ -63,15 +63,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D77-INTEGRATE"
       ],
       "started_at": "2026-11-02T12:12:23+00:00",
-      "activity_at": "2026-11-02T12:25:07+00:00",
-      "message": "Sol-Hématologie-D77 : acquisition/start/claim/gate effectifs ; OFS,CHUV2024,Swissmedicliste30.09.2026/importart49,2FIsuisses,consensusEU2022/revueHSS2021 lus parpassages ;4originauxhumains recevablesvus, frottis2026refusépourdroitscontradictoires. Pasencorederédaction médicale.",
+      "activity_at": "2026-11-02T12:52:43+00:00",
+      "message": "Betta préalable passé ; 14 points D77 écrits, distinction D77*/B65, HSS, hypersplénisme et asplénie, figures humaines et sources attribuées ; sciences en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "1d133d315e582316e6909eea8b7d804ce6691e956174c56a8d13e76ddd6c9e16"
     },
     "codex_hematologie": {
@@ -100,25 +100,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T03:24:01+00:00",
-      "action": "complete",
-      "agent": "codex_hematologie",
-      "code": "C85"
-    },
-    {
-      "at": "2026-11-02T03:26:38+00:00",
-      "action": "claim",
-      "agent": "codex_hematologie",
-      "code": "C86"
-    },
-    {
-      "at": "2026-11-02T03:27:36+00:00",
-      "action": "progress",
-      "agent": "codex_hematologie",
-      "stage": "recherche",
-      "message": "C85 conservé achevé ; C86 acquis/start/claim réels, inventaire du chapitre existant et recherche des sources T/NK."
-    },
     {
       "at": "2026-11-02T03:27:37+00:00",
       "action": "watch",
@@ -1391,6 +1372,26 @@
       "action": "watch",
       "ok": true,
       "findings": 2
+    },
+    {
+      "at": "2026-11-02T12:51:52+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "verification",
+      "message": "E30 : contrôle natif final passé après correction visuelle de la légende histologique ; aperçu d8ca3edfe54514e0f72a473abe5fd8b74a54c8e0e862aa79f374a7aee855fa66. Sept règles strictes de sémiologie, static et audit sciences passent (2985 mots, six figures). Navigateur 1440/390 : 42 fenêtres, 3 définitions, 4 quiz, Livre24 et popup Lucrin mesurée 24 px, tableau accessible par défilement local. Les auto-revues et la validation du paquet restent à consigner ; aucun binding encore créé."
+    },
+    {
+      "at": "2026-11-02T12:52:43+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "redaction",
+      "message": "Betta préalable passé ; 14 points D77 écrits, distinction D77*/B65, HSS, hypersplénisme et asplénie, figures humaines et sources attribuées ; sciences en cours."
+    },
+    {
+      "at": "2026-11-02T12:55:15+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
     }
   ],
   "cache": {
