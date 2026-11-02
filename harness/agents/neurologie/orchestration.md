@@ -256,3 +256,13 @@ Acquisition5012385b attendue et vérifiée active avant worktree complet. Premie
 ## 2026-11-02T17:38:02.652738+00:00 — G32 lectures ciblées réelles consignées
 
 Douze entrées :neuflecturesciblées et troisréutilisationsSol explicites. FI Vitarubinejuillet2025 luedecompositionjusqu’àdate, NICE2024 etprotocoleUK2023,Suissecas2026 et sérieallemande2025,revuenéerlandaisebiologie,classificationOFS/BfArM etaideInfodrog. Aucun contenucanonique,porteBettaencoreàconstruire. Réserves : G32.0/G32.8 distincts ; masseselacétatesansbaseinventée ; FI2–3/semaine versus protocoleUKjoursalternés,etNICEoral/IMselonsituation ; pas méthionine systématique tiréed’uncas ; testsfonctionnels/réin/délai ;pourcentageserronésde lasérie nonrecopiés. OriginalIRMsuissesourcé etinspecté,droitsfigure5réservés respectés ; pasconsentementécritinventé.
+
+
+## 2026-11-02T18:07:36.622532+00:00 — G32 réellement clos et libéré
+
+Source622588c2 et final5edc1c1d poussés, distant exact et propre, garde finale passée. Complete18:04:47UTC ; release fraîche vérifiée 0296179eacf725498d5e567347013b46b6571e25. Liaisonunique dc1fe344 intacte. 13sources,14/20,46sections/36fenêtres,4quiz,6sciences9sémiologie,2originauxhumains6concepts,11capturesinspectées. Incidentpremierstart,borneNICE16incluse etréservescliniquesconservés ; aucuneconformitéinitiale ni certificationhumaine. G36prochain aprèsacquisitionfraîche.
+
+
+## 2026-11-02T18:09:56.387157+00:00 — G36 acquis et démarré dans l’ordre vérifié
+
+Acquisition97502b9c attendue et active vérifiée avant worktree complet. État propre et registre frais avant start ; dossier de preuves créé seulement après succès. Start/gate/claim18:09:19UTC avant recherche. PROMPT_VERITE lu premier document médical ; instructions identiques parhash aux lectures antérieures, septfichiers canoniques initiaux pris enempreinte. Aucune rédaction ni lectureprimaire revendiquée à ce jalon. CatalogueC73/D66 et autreschemins laissés aux réservataires.

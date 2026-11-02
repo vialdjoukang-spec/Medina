@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "G32_REVUE_REQUISE",
+  "status": "G36_PREPARATION",
   "prepared_at": "2026-11-02T01:17:05.123886+00:00",
   "agent": "Sol Neurologie",
   "model": "gpt-6.1-sol",
@@ -10,7 +10,7 @@
   "fragment": "S08",
   "label": "N-05-Neurologie",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "candidate": "G32",
+  "candidate": "G36",
   "counts": {
     "specialty_existing": 57,
     "existing_codex": 29,
@@ -688,27 +688,24 @@
       "Private GitHub cron and local watch depend on runner/environment availability"
     ]
   },
-  "updated_at": "2026-11-02T17:38:02.652738+00:00",
+  "updated_at": "2026-11-02T18:07:36.622532+00:00",
   "current_package": {
-    "code": "G32",
-    "worktree": "/workspace/Medina-neurologie-G32",
-    "branch": "codex/alpha77/g32-integrate-g1",
-    "stage": "revue_requise",
+    "code": "G36",
+    "worktree": "/workspace/Medina-neurologie-G36",
+    "branch": "codex/alpha77/g36-integrate-g1",
+    "stage": "preparation",
     "reservation_acquired": true,
     "start_passed": true,
     "claim_passed": true,
-    "acquisition_registry_sha": "5012385b92f97fda731af692736b6c8f9789a0d8",
-    "source_binding": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G32-INTEGRATE/source-binding.json",
-    "source_readings_count": 13,
-    "medical_content_written": true,
-    "monograph14_reviewed": 14,
-    "matrix20_reviewed": 20,
-    "initial_start_refusal_preserved": true,
-    "initial_start_order_compliant": false,
-    "prewriting_gate_before_first_writing": true,
-    "source_commit": "622588c24a7dca3f900e9885628d7961b58b54c2",
-    "source_binding_sha256": "dc1fe34488bf7b64788709e384ed7e5a076a4a36bdc2abd9948123301a602cc1",
-    "preview_sha256": "13127def5eeebe0077c48baba8352b064ebbd3ddfd034f32579309b783b8f57d"
+    "acquisition_registry_sha": "97502b9c864696b7df1344ff11b27bbe464a39b4",
+    "source_binding": null,
+    "source_readings_count": 0,
+    "medical_content_written": false,
+    "monograph14_reviewed": 0,
+    "matrix20_reviewed": 0,
+    "acquisition_return_awaited_before_worktree": true,
+    "worktree_clean_before_start": true,
+    "evidence_folder_created_after_successful_start": true
   },
   "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
   "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
@@ -1411,7 +1408,7 @@
     }
   ],
   "source_readings_count": 0,
-  "research_sources": "/workspace/Medina-neurologie-G32/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G32-INTEGRATE/recherche_G32/sources.json",
+  "research_sources": null,
   "current_revision": "G22 acquis puis worktree complet/workspace créé après retour acquisition vérifié ; start/gate/claim réels16:38:17UTC. Prompt vérité premier document médical relu,instructions identiques G08 par SHA ; inventaire initial conservé.0source primaire G22 encore lue,aucune rédaction ni binding.",
   "monograph14_reviewed": 0,
   "matrix20_reviewed": 0,
@@ -1493,6 +1490,28 @@
       "review_mode": "self_review",
       "clinical_certification": false,
       "review_url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/README.md"
+    },
+    {
+      "code": "G32",
+      "source_commit": "622588c24a7dca3f900e9885628d7961b58b54c2",
+      "final_commit": "5edc1c1d2efa0accb62b004729d1047b649aad26",
+      "complete_at": "2026-11-02T18:04:47+00:00",
+      "release_registry_sha": "0296179eacf725498d5e567347013b46b6571e25",
+      "released_verified": true,
+      "remote_final_verified": true,
+      "worktree_clean": true,
+      "worktree": "/workspace/Medina-neurologie-G32",
+      "preview_sha256": "13127def5eeebe0077c48baba8352b064ebbd3ddfd034f32579309b783b8f57d",
+      "source_binding_sha256": "dc1fe34488bf7b64788709e384ed7e5a076a4a36bdc2abd9948123301a602cc1",
+      "actual_source_entries": 13,
+      "monograph14": 14,
+      "matrix20": 20,
+      "semio_strict7_passed": true,
+      "review_mode": "self_review",
+      "clinical_certification": false,
+      "initial_start_refusal_preserved": true,
+      "initial_start_order_compliant": false,
+      "review_url": "https://github.com/vialdjoukang-spec/Medina/blob/5edc1c1d2efa0accb62b004729d1047b649aad26/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G32-INTEGRATE/README.md"
     }
   ],
   "historical_package_G07_snapshot": {
@@ -1513,7 +1532,7 @@
     "clinical_certification": false,
     "preview": null
   },
-  "next_candidate": "G36",
+  "next_candidate": "G37",
   "excluded_reassigned_candidates": [
     "G09",
     "G21",
@@ -1599,5 +1618,27 @@
     "preview_sha256": "dc193b4e4f5f0da10c5a2c2e7ef04cfd17412304901f0293d717ed7454ce54af",
     "source_commit": "a4e949af738eb847d3fdb88040251dfc5fc3ccb7",
     "final_commit": "63277dbb8fb5812c289389aceaa6ab85df416350"
+  },
+  "historical_package_G32_snapshot": {
+    "code": "G32",
+    "worktree": "/workspace/Medina-neurologie-G32",
+    "branch": "codex/alpha77/g32-integrate-g1",
+    "stage": "termine_released_verified",
+    "reservation_acquired": true,
+    "start_passed": true,
+    "claim_passed": true,
+    "acquisition_registry_sha": "5012385b92f97fda731af692736b6c8f9789a0d8",
+    "source_binding": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G32-INTEGRATE/source-binding.json",
+    "source_readings_count": 13,
+    "medical_content_written": true,
+    "monograph14_reviewed": 14,
+    "matrix20_reviewed": 20,
+    "initial_start_refusal_preserved": true,
+    "initial_start_order_compliant": false,
+    "prewriting_gate_before_first_writing": true,
+    "source_commit": "622588c24a7dca3f900e9885628d7961b58b54c2",
+    "source_binding_sha256": "dc1fe34488bf7b64788709e384ed7e5a076a4a36bdc2abd9948123301a602cc1",
+    "preview_sha256": "13127def5eeebe0077c48baba8352b064ebbd3ddfd034f32579309b783b8f57d",
+    "final_commit": "5edc1c1d2efa0accb62b004729d1047b649aad26"
   }
 }

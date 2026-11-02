@@ -36,7 +36,7 @@
     "result": "Échec affiché pour les activités anciennes des trois auteurs, sans arrêt du relais; observation suivante réussie."
   },
   "native_agents_last_observed": {
-    "at": "2026-11-02T17:46:56.952792+00:00",
+    "at": "2026-11-02T18:09:54.571312+00:00",
     "provider": "collaboration.list_agents",
     "agents": [
       {
@@ -57,7 +57,7 @@
       }
     ],
     "author_activity_refreshed": false,
-    "meaning": "Observation ponctuelle par collaboration.list_agents immédiatement avant consignation ; aucune continuité native ni lecture médicale déduite."
+    "meaning": "Observation ponctuelle immédiatement avant consignation ; aucune activité continue ni lecture médicale déduite."
   },
   "native_model_handoff": {
     "at": "2026-11-02T10:23:02.648791+00:00",
@@ -336,6 +336,14 @@
       "interval_seconds": 600,
       "continuity": "Handoff GitHub Actions; delays and service outages remain possible"
     },
-    "frozen_report_limit": "Le fichier rapport-08h00 de cet artefact est généré lors de ce run tardif : son nom ne prouve pas un état08h ; voir les deux horodatages réels. Le snapshot08h original de la branche observations reste distinct."
+    "frozen_report_limit": "Le fichier rapport-08h00 de cet artefact est généré lors de ce run tardif : son nom ne prouve pas un état08h ; voir les deux horodatages réels. Le snapshot08h original de la branche observations reste distinct.",
+    "latest_parsed_report_receipt": "harness/reporting/proofs/20261102-181037-artifact-connector-access.json",
+    "latest_verified_observation": {
+      "run": 41496913113,
+      "at": "2026-11-02T18:04:07.170260+00:00",
+      "snapshot_at": "2026-11-02T17:55:16+00:00",
+      "healthy": true,
+      "native_restart": false
+    }
   }
 }

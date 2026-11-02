@@ -3,33 +3,33 @@
   "created_at": "2026-11-02T01:21:00+00:00",
   "agents": {
     "astra_neurologie": {
-      "lesson": "G32",
-      "worktree": "/workspace/Medina-neurologie-G32",
-      "stage": "termine",
-      "branch": "codex/alpha77/g32-integrate-g1",
+      "lesson": "G36",
+      "worktree": "/workspace/Medina-neurologie-G36",
+      "stage": "preparation",
+      "branch": "codex/alpha77/g36-integrate-g1",
       "allowed_paths": [
-        "chapters/G32",
-        "glossary/g32.py",
-        "assets/img/g32/alpha/codex",
-        "organisation/alpha-publications/Codex/G32",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G32-INTEGRATE"
+        "chapters/G36",
+        "glossary/g36.py",
+        "assets/img/g36/alpha/codex",
+        "organisation/alpha-publications/Codex/G36",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G36-INTEGRATE"
       ],
-      "started_at": "2026-11-02T17:30:23+00:00",
-      "activity_at": "2026-11-02T18:04:47+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "started_at": "2026-11-02T18:09:19+00:00",
+      "activity_at": "2026-11-02T18:09:56+00:00",
+      "message": "G36 : acquisition terminée puis vérifiée avant worktree complet ; start sur état propre, reçus créés après succès ; gate et claim passés à18:09:19. Vérité lu premier document médical et sept fichiers initiaux inventoriés, aucune recherche primaire ni rédaction encore revendiquée.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "64329a41fbecdc640d4ab22fe057dfa798e10aefd56781f452b5688117ac57b8"
+      "completed_sections": 0,
+      "receipt_sha256": "ed8b76903fd8556dee02b4ded4817dea6063a45fe8fb10ee5f6f474c47777f92"
     },
     "astra_endocrinologie": {
       "lesson": "C73",
       "worktree": "/workspace/Medina-endocrinologie-C73",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/c73-integrate-g1",
       "allowed_paths": [
         "chapters/C73",
@@ -40,15 +40,15 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T17:49:16+00:00",
-      "activity_at": "2026-11-02T17:52:43+00:00",
-      "message": "C73 acquis puis start/claim réels ; registre et manifeste libres vérifiés, dossier29lectures/réemplois/métadonnées dont FI datées, matrice20rubriques et plan14sections constitués, VÉRITÉ OK réel. TNM9 et statistiques suisses2018–22 lus, divergences européennes explicites. Pas encore rédaction HTML.",
+      "activity_at": "2026-11-02T18:05:31+00:00",
+      "message": "C7314sections cliniques,4examens,7pharmacologie,6sciences et37fenêtres assemblés ; sept contrôles sémiologiques natifs passés18:04:28. Premier statique lexical en échec (versions/noms/CYP3 et espaces), correction locale en cours avant construction/évaluation visuelle ; aucune liaison finale créée.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "38f440d0960c7f462b9cc3c5501b602647a5d8e9f536515d649c4ea81d24dd93"
     },
     "astra_nephrologie": {
@@ -64,8 +64,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G25-INTEGRATE"
       ],
       "started_at": "2026-11-02T18:00:54+00:00",
-      "activity_at": "2026-11-02T18:00:54+00:00",
-      "message": "Mission réservée; recherche autorisée",
+      "activity_at": "2026-11-02T18:12:25+00:00",
+      "message": "G25 périmètre OFS complet lu (G25.80PLMS/.81RLS/.88akathisie et homme raide), PDF tremor2022 avec SNG et validité2027 récupéré et passages initiaux lus ; RLS2024 et résumés2026 vérifiés. Six FI versions repérées, indications/doses de quatre FI réellement réouvertes ; lectures sécurité encore en cours, pas rédaction.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -102,37 +102,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T11:06:01+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "verification",
-      "message": "N03 six surfaces produites,29lectures ciblées/5FI ; statique initial IDs/panneaux résolus, audit sciences passé6disciplines/9sémiologie. Aperçu natif avec9occurrences/33repères, contrôles1440/390 en cours."
-    },
-    {
-      "at": "2026-11-02T11:10:11+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 1
-    },
-    {
-      "at": "2026-11-02T11:10:21+00:00",
-      "action": "complete",
-      "agent": "codex_hematologie",
-      "code": "C95"
-    },
-    {
-      "at": "2026-11-02T11:10:42+00:00",
-      "action": "complete",
-      "agent": "astra_nephrologie",
-      "code": "N03"
-    },
-    {
-      "at": "2026-11-02T11:10:54+00:00",
-      "action": "claim",
-      "agent": "astra_neurologie",
-      "code": "G03"
-    },
     {
       "at": "2026-11-02T11:13:57+00:00",
       "action": "claim",
@@ -1404,6 +1373,39 @@
     },
     {
       "at": "2026-11-02T18:05:16+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T18:05:31+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "redaction",
+      "message": "C7314sections cliniques,4examens,7pharmacologie,6sciences et37fenêtres assemblés ; sept contrôles sémiologiques natifs passés18:04:28. Premier statique lexical en échec (versions/noms/CYP3 et espaces), correction locale en cours avant construction/évaluation visuelle ; aucune liaison finale créée."
+    },
+    {
+      "at": "2026-11-02T18:09:19+00:00",
+      "action": "claim",
+      "agent": "astra_neurologie",
+      "code": "G36"
+    },
+    {
+      "at": "2026-11-02T18:09:56+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "preparation",
+      "message": "G36 : acquisition terminée puis vérifiée avant worktree complet ; start sur état propre, reçus créés après succès ; gate et claim passés à18:09:19. Vérité lu premier document médical et sept fichiers initiaux inventoriés, aucune recherche primaire ni rédaction encore revendiquée."
+    },
+    {
+      "at": "2026-11-02T18:12:25+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "recherche",
+      "message": "G25 périmètre OFS complet lu (G25.80PLMS/.81RLS/.88akathisie et homme raide), PDF tremor2022 avec SNG et validité2027 récupéré et passages initiaux lus ; RLS2024 et résumés2026 vérifiés. Six FI versions repérées, indications/doses de quatre FI réellement réouvertes ; lectures sécurité encore en cours, pas rédaction."
+    },
+    {
+      "at": "2026-11-02T18:15:16+00:00",
       "action": "watch",
       "ok": true,
       "findings": 1
