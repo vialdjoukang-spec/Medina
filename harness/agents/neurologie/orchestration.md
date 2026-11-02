@@ -251,3 +251,8 @@ Final63277dbb poussé, distant exact et worktree propre ; complete17:26:55UTC, r
 ## 2026-11-02T17:31:22.041965+00:00 — G32 acquis, démarrage repris effectivement
 
 Acquisition5012385b attendue et vérifiée active avant worktree complet. Premierstart refusé car reçus non suivis avaient été créés ; preuves intégralement conservées hors worktree puis recopiées dans first-start-refusal, aucune source canonique modifiée. Étatpropre et registre frais vérifiés, nouveau start/gate/claim réellement passés17:30:23UTC. PROMPT_VERITE lu comme premier document médical, septempreintes initiales prises ; autres instructions inchangées parhash face aux lecturesG22 réelles. Recherche primaire non commencée, aucune conformité de l’ordre initial revendiquée.
+
+
+## 2026-11-02T17:38:02.652738+00:00 — G32 lectures ciblées réelles consignées
+
+Douze entrées :neuflecturesciblées et troisréutilisationsSol explicites. FI Vitarubinejuillet2025 luedecompositionjusqu’àdate, NICE2024 etprotocoleUK2023,Suissecas2026 et sérieallemande2025,revuenéerlandaisebiologie,classificationOFS/BfArM etaideInfodrog. Aucun contenucanonique,porteBettaencoreàconstruire. Réserves : G32.0/G32.8 distincts ; masseselacétatesansbaseinventée ; FI2–3/semaine versus protocoleUKjoursalternés,etNICEoral/IMselonsituation ; pas méthionine systématique tiréed’uncas ; testsfonctionnels/réin/délai ;pourcentageserronésde lasérie nonrecopiés. OriginalIRMsuissesourcé etinspecté,droitsfigure5réservés respectés ; pasconsentementécritinventé.

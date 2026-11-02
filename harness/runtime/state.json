@@ -5,7 +5,7 @@
     "astra_neurologie": {
       "lesson": "G32",
       "worktree": "/workspace/Medina-neurologie-G32",
-      "stage": "preparation",
+      "stage": "recherche",
       "branch": "codex/alpha77/g32-integrate-g1",
       "allowed_paths": [
         "chapters/G32",
@@ -15,8 +15,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G32-INTEGRATE"
       ],
       "started_at": "2026-11-02T17:30:23+00:00",
-      "activity_at": "2026-11-02T17:31:22+00:00",
-      "message": "G32 : acquisition terminée/vérifiée avant checkout complet ; premier start refusé pour reçus non suivis, preuves conservées ; reprise réelle start/gate/claim17:30:23. Vérité premier document médical lu, inventaire7sources initiales inchangées, aucune rédaction ni lecture primaire revendiquée.",
+      "activity_at": "2026-11-02T17:38:02+00:00",
+      "message": "G32 :12entrées lues par périmètres(9ciblées,3réutilisationsSol),FIjuillet2025 et NICE/UK confrontés ; réservefréquences/voies, masseacétate et testsfonctionnels, statistiques de séries nonextrapolées. Recherche nonclose,aucune rédaction canonique ni empreinte.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -54,7 +54,7 @@
     "astra_nephrologie": {
       "lesson": "G24",
       "worktree": "/tmp/Medina-neurologie-G24",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/g24-integrate-g1",
       "allowed_paths": [
         "chapters/G24",
@@ -64,8 +64,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G24-INTEGRATE"
       ],
       "started_at": "2026-11-02T17:09:23+00:00",
-      "activity_at": "2026-11-02T17:32:48+00:00",
-      "message": "Monographie G24 quatorze points réellement écrite après Betta ;41lectures avec FI causale Paspertinjanvier2020 ajoutée et validée. Codage, classification2025, risques aigu/tardif, cinq FI thérapeutiques et limites pédiatriques explicites ; examens et sciences en cours.",
+      "activity_at": "2026-11-02T17:43:31+00:00",
+      "message": "G24 rédaction des six surfaces terminée :14points,20rubriques,41lectures ciblées dont cinq FI thérapeutiques et une causale, six sciences4138mots/neuf sémiologie ; statique66fenêtres/14Pareto/quatre cas/quiz et cinq originaux10occurrences/34repères passé. Début natif S08 et navigateur.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -102,27 +102,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T10:41:24+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "verification",
-      "message": "Auto-relecture C70 : assertions grade/critères intérimaires, urgences, doses phosphate/base et tableau rénal confrontées aux passages. Statique repassé. Build natif final puis navigation1440/390 à renouveler ; aucune clôture."
-    },
-    {
-      "at": "2026-11-02T10:44:08+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "images",
-      "message": "E14 : six disciplines scientifiques, neuf sections sémiologiques, quatre quiz et dix-huit fenêtres rédigés. Original pancréas 2013 incorporé deux fois avec repères français et attribution ; contrôles structurels engagés."
-    },
-    {
-      "at": "2026-11-02T10:46:35+00:00",
-      "action": "progress",
-      "agent": "codex_hematologie",
-      "stage": "verification",
-      "message": "C95 : indication suisse Iclusig corrigée après confrontation à la FI ; sigles homonymes reliés aux fenêtres locales. Six contrôles réussis, aperçu final provisoire 352710ea, navigateur 1440/390 : 52 fenêtres, 5 quiz, 8 occurrences originales, 6 sciences, 9 sémiologie. Matrices et auto-relectures finales en préparation ; aucune clôture."
-    },
     {
       "at": "2026-11-02T10:47:09+00:00",
       "action": "progress",
@@ -1409,6 +1388,26 @@
       "action": "watch",
       "ok": true,
       "findings": 1
+    },
+    {
+      "at": "2026-11-02T17:38:02+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "G32 :12entrées lues par périmètres(9ciblées,3réutilisationsSol),FIjuillet2025 et NICE/UK confrontés ; réservefréquences/voies, masseacétate et testsfonctionnels, statistiques de séries nonextrapolées. Recherche nonclose,aucune rédaction canonique ni empreinte."
+    },
+    {
+      "at": "2026-11-02T17:43:31+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "verification",
+      "message": "G24 rédaction des six surfaces terminée :14points,20rubriques,41lectures ciblées dont cinq FI thérapeutiques et une causale, six sciences4138mots/neuf sémiologie ; statique66fenêtres/14Pareto/quatre cas/quiz et cinq originaux10occurrences/34repères passé. Début natif S08 et navigateur."
+    },
+    {
+      "at": "2026-11-02T17:45:16+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 2
     }
   ],
   "cache": {
