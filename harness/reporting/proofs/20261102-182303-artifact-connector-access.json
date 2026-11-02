@@ -1,0 +1,127 @@
+{
+  "artifacts": [
+    {
+      "artifact_id": 13167961629,
+      "run_id": 41498607586,
+      "download_method": "GitHub connector, puis URL de fichier autorisée",
+      "parsed_at": "2026-11-02T18:22:27.371626+00:00",
+      "zip_sha256": "02dfd7892410083a9a5210ef0338762f5d3e59f8b660e4f9ec1cd8bedfd9ee7a",
+      "files": {
+        "remote-dashboard.html": {
+          "sha256": "3a71a43e397a0e4424682ad981c4520172e11464a9f2e5a6e7cddad83d9234d7",
+          "bytes": 589074
+        },
+        "remote-status.json": {
+          "sha256": "8a369a2123b397c52b69c3df95127c3ade3796c70d59823fcb3f724d39cb224c",
+          "bytes": 775440
+        },
+        "remote-observation.json": {
+          "sha256": "d9c83f71954eea07bc5291c5b4f982bf10605d0f31ada6cdebb8953704a8cf24",
+          "bytes": 702
+        },
+        "rapport-08h00.html": {
+          "sha256": "1da3cf45fa0c55c0820ffa9fb5f5d0863e0dfab9109e5c0b22f281816f409694",
+          "bytes": 589123
+        }
+      },
+      "observation": {
+        "observed_at": "2026-11-02T18:14:34.198156+00:00",
+        "snapshot_generated_at": "2026-11-02T18:05:16+00:00",
+        "healthy": false,
+        "problems": [
+          "Activité auteur absente ou ancienne: astra_endocrinologie, codex_hematologie"
+        ],
+        "agents_without_recent_activity": [
+          "astra_endocrinologie",
+          "codex_hematologie"
+        ],
+        "no_agent_restart": true,
+        "no_main_write": true,
+        "clinical_certification": false,
+        "enabled": true,
+        "source_blob_sha": "86fcde85008ba53f05976eb1f591220e260a806f",
+        "run_url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41498607586",
+        "interval_seconds": 600,
+        "continuity": "Handoff GitHub Actions; delays and service outages remain possible"
+      },
+      "status_generated_at": "2026-11-02T18:05:16+00:00",
+      "completion_count": 41,
+      "previous_cli_download_error": "Téléchargement de l’artefact refusé (HTTP403 observé) ; contenu non consulté, métadonnées seules. Aucune URL signée conservée.",
+      "scope": "Extraction automatisée JSON, métadonnées embarquées et texte HTML. Lecture humaine/IA ciblée consignée séparément ; aucune revue visuelle exhaustive déduite.",
+      "embedded_html_data_checked": {
+        "remote-dashboard.html": {
+          "generated_at": "2026-11-02T18:05:16+00:00",
+          "report_frozen_at": null,
+          "completed_lessons": 41,
+          "agents": [
+            {
+              "id": "astra_neurologie",
+              "lesson": "G32",
+              "stage": "termine",
+              "activity_at": "2026-11-02T18:04:47+00:00"
+            },
+            {
+              "id": "astra_endocrinologie",
+              "lesson": "C73",
+              "stage": "recherche",
+              "activity_at": "2026-11-02T17:52:43+00:00"
+            },
+            {
+              "id": "astra_nephrologie",
+              "lesson": "G25",
+              "stage": "recherche",
+              "activity_at": "2026-11-02T18:00:54+00:00"
+            },
+            {
+              "id": "codex_hematologie",
+              "lesson": "D65",
+              "stage": "termine",
+              "activity_at": "2026-11-02T17:46:39+00:00"
+            }
+          ]
+        },
+        "rapport-08h00.html": {
+          "generated_at": "2026-11-02T18:05:16+00:00",
+          "report_frozen_at": "2026-11-02T18:14:34+00:00",
+          "completed_lessons": 41,
+          "agents": [
+            {
+              "id": "astra_neurologie",
+              "lesson": "G32",
+              "stage": "termine",
+              "activity_at": "2026-11-02T18:04:47+00:00"
+            },
+            {
+              "id": "astra_endocrinologie",
+              "lesson": "C73",
+              "stage": "recherche",
+              "activity_at": "2026-11-02T17:52:43+00:00"
+            },
+            {
+              "id": "astra_nephrologie",
+              "lesson": "G25",
+              "stage": "recherche",
+              "activity_at": "2026-11-02T18:00:54+00:00"
+            },
+            {
+              "id": "codex_hematologie",
+              "lesson": "D65",
+              "stage": "termine",
+              "activity_at": "2026-11-02T17:46:39+00:00"
+            }
+          ]
+        }
+      },
+      "frozen_report_limit": "Le nom rapport-08h00 ne prouve pas une génération à 08 h ; les deux horodatages réels sont conservés.",
+      "targeted_read": {
+        "at": "2026-11-02T18:23:03.635495+00:00",
+        "reader": "parent Codex",
+        "scope": "Observation JSON, dates/counts/activities embedded in both HTML files, first 800 characters of visible introductions actually read; no exhaustive visual review."
+      }
+    }
+  ],
+  "prior_failures_preserved": true,
+  "last_parsed_at": "2026-11-02T18:22:27.371626+00:00",
+  "author_activity_refreshed": false,
+  "source_bindings_refreshed": false
+}

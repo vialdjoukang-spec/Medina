@@ -161,3 +161,18 @@ D62 : achèvement16:15:39UTC, branche finale `e9d210c65a1063fbda12cc9978488d7b8a
 ### Suite répartie après G21 — préparation sans acquisition
 
 G24, G25 et G26 sont affectés exclusivement à l’auteur natif `/root/sol_nephrologie`, actuellement Sol-Neurologie-G21, après clôture puis libération de chaque leçon. `/root/sol_neurologie` conserve G22 puis G32 et a confirmé l’exclusion de ces trois codes. La file totale de campagne est conservée sans doublon. Aucune réservation anticipée ni nouvelle leçon active ne découle de cette planification.
+
+## État des affectations — 2 novembre 2026, 19 h 19 Europe/Zurich
+
+La liste native a confirmé ponctuellement le parent et les trois auteurs Sol high. Les noms `astra_*` des reçus sont historiques ; aucune activité Astra actuelle n’est déduite. L’orchestration clinique initiale Astra est conservée dans son journal et relayée par Sol Neurologie. Ni cette coordination ni un self_review ne sont une validation médicale humaine.
+
+| Auteur natif | Nom de production / spécialité | Leçon réservée | Suite conditionnelle |
+|---|---|---|---|
+| `/root/sol_neurologie` | Sol Neurologie | G36, recherche après G32 clos/libéré | G37, G52, G53 ; G24/G25/G26 exclus |
+| `/root/sol_endocrinologie` | Sol Endocrinologie | C73, rédaction et vérification | C74 après D66 et disponibilité réelle du catalogue |
+| `/root/sol_nephrologie` | Sol-Neurologie-G25, après les huit candidats néphrologiques | G25, recherche après G24 clos/libéré | G26 |
+| `/root` | Codex Hématologie, modèle de session non attestable par outil | D65 clos/libéré ; aucune nouvelle réservation | D66 en préparation externe, puis C82/C88 conditionnels |
+
+Le catalogue `chapters.json` est réservé à C73. D66 attend sa libération vérifiée avant acquisition, worktree propre, start et claim. Son dossier externe a24références, sixFI suisses lues, deux figures humaines inspectées et une validation formelle Betta à18:19:05UTC ; cela n’autorise pas une rédaction canonique anticipée. L’horodatage de D65 clos et sa liaison restent intacts.
+
+41achèvements de campagne sont enregistrés ; les14réserves structurelles historiques et les réserves N02/E40 restent ouvertes avant intégration. Aucun achèvement ne vaut revue de Vial. La cadence600secondes du relais observe sans réveiller les modèles ; aucun cron actif sur main. L’heure du rapport n’est pas un ordre d’arrêt.
