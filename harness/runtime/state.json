@@ -5,10 +5,10 @@
     "astra_neurologie": {
       "lesson": "G02",
       "worktree": "/workspace/Medina-neurologie",
-      "stage": "recherche",
+      "stage": "redaction",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T01:23:56+00:00",
-      "message": "Mission réservée; recherche autorisée",
+      "activity_at": "2026-11-02T01:29:40+00:00",
+      "message": "Passages CH/EU et FI lus; porte recherche passée avec lacunes explicites. Ajouts monographiques et sémiologiques ciblés.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -16,7 +16,87 @@
       "medical_score": null,
       "medical_review": "non effectuée",
       "completed_sections": 0,
-      "receipt_sha256": "4626d4a6b8897fdab05d0f00930502b29c721d185acb97e1ca5a2bda20d6e92a"
+      "receipt_sha256": "4626d4a6b8897fdab05d0f00930502b29c721d185acb97e1ca5a2bda20d6e92a",
+      "branch": "codex/alpha77/g02-integrate-g1",
+      "allowed_paths": [
+        "chapters/G02",
+        "glossary/g02.py",
+        "assets/img/g02/alpha/codex",
+        "organisation/alpha-publications/Codex/G02",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE"
+      ]
+    },
+    "astra_endocrinologie": {
+      "lesson": "E00",
+      "worktree": "/workspace/Medina-endocrinologie",
+      "stage": "recherche",
+      "started_at": "2026-11-02T01:23:56+00:00",
+      "activity_at": "2026-11-02T01:29:53+00:00",
+      "message": "FI Euthyrox relue; erreur absorption démontrée; consensus ENDO-ERN et sources suisses consultés; original anatomie/histologie humain acquis et inspecté.",
+      "tokens_input": null,
+      "tokens_output": null,
+      "cost_usd": null,
+      "usage_source": "non exposé par interface native",
+      "medical_score": null,
+      "medical_review": "non effectuée",
+      "completed_sections": 0,
+      "receipt_sha256": "b6ea07fea66fd173ebbaa0335339a155356f6d920405c012daccec04f253afe3",
+      "branch": "codex/alpha77/e00-integrate-g1",
+      "allowed_paths": [
+        "chapters/E00",
+        "glossary/e00.py",
+        "assets/img/e00/alpha/codex",
+        "organisation/alpha-publications/Codex/E00",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE"
+      ]
+    },
+    "astra_nephrologie": {
+      "lesson": "N04",
+      "worktree": "/workspace/Medina-nephrologie",
+      "stage": "recherche",
+      "started_at": "2026-11-02T01:23:56+00:00",
+      "activity_at": "2026-11-02T01:28:33+00:00",
+      "message": "38 références récupérées/empreintées (2 échecs externes), passages CH et européens effectivement lus pour SEMIO ; première correction repérée : vignette ne permet pas de favoriser seule la membraneuse ; terminologie rein-éponge à clarifier.",
+      "tokens_input": null,
+      "tokens_output": null,
+      "cost_usd": null,
+      "usage_source": "non exposé par interface native",
+      "medical_score": null,
+      "medical_review": "non effectuée",
+      "completed_sections": 0,
+      "receipt_sha256": "47fa9ee87eb04cf4cb0c86f05c0bd38304c5c7effc7450acc020f2b51904e814",
+      "branch": "codex/alpha77/n04-integrate-g1",
+      "allowed_paths": [
+        "chapters/N04",
+        "glossary/n04.py",
+        "assets/img/n04/alpha/codex",
+        "organisation/alpha-publications/Codex/N04",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE"
+      ]
+    },
+    "codex_hematologie": {
+      "lesson": "C85",
+      "worktree": "/workspace/Medina-hematologie",
+      "stage": "recherche",
+      "started_at": "2026-11-02T01:23:56+00:00",
+      "activity_at": "2026-11-02T01:25:19+00:00",
+      "message": "C85: inventaire des quatre onglets, références et lacune sémiologique; lectures ciblées en cours",
+      "tokens_input": null,
+      "tokens_output": null,
+      "cost_usd": null,
+      "usage_source": "non exposé par interface native",
+      "medical_score": null,
+      "medical_review": "non effectuée",
+      "completed_sections": 0,
+      "receipt_sha256": "eefeffc1101a1e7d319dc093e1abff08445f84772dd4222ed29f2a05aaae4062",
+      "branch": "codex/alpha77/c85-integrate-g1",
+      "allowed_paths": [
+        "chapters/C85",
+        "glossary/c85.py",
+        "assets/img/c85/alpha/codex",
+        "organisation/alpha-publications/Codex/C85",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE"
+      ]
     }
   },
   "events": [
@@ -67,11 +147,162 @@
       "action": "claim",
       "agent": "astra_neurologie",
       "code": "G02"
+    },
+    {
+      "at": "2026-11-02T01:23:56+00:00",
+      "action": "claim",
+      "agent": "astra_endocrinologie",
+      "code": "E00"
+    },
+    {
+      "at": "2026-11-02T01:23:56+00:00",
+      "action": "claim",
+      "agent": "astra_nephrologie",
+      "code": "N04"
+    },
+    {
+      "at": "2026-11-02T01:23:56+00:00",
+      "action": "claim",
+      "agent": "codex_hematologie",
+      "code": "C85"
+    },
+    {
+      "at": "2026-11-02T01:24:33+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "Reprise G02 : inventaire des preuves et préparation des lectures originales suisses puis européennes."
+    },
+    {
+      "at": "2026-11-02T01:24:39+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "recherche",
+      "message": "Reprise E00; lecture primaire suisse et européenne, sciences et sémiologie à compléter."
+    },
+    {
+      "at": "2026-11-02T01:24:53+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "recherche",
+      "message": "Lecture des preuves N04, récupération ciblée des passages suisses et européens, inventaire des lacunes SEMIO et images."
+    },
+    {
+      "at": "2026-11-02T01:25:19+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "recherche",
+      "message": "C85: inventaire des quatre onglets, références et lacune sémiologique; lectures ciblées en cours"
+    },
+    {
+      "at": "2026-11-02T01:25:49+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T01:26:32+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T01:26:58+00:00",
+      "action": "extract",
+      "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/recherche_E00/downloads/openstaxthyroid.txt",
+      "cache_hit": false,
+      "bytes_input": 14643,
+      "bytes_output": 4252,
+      "bytes_avoided": 10391
+    },
+    {
+      "at": "2026-11-02T01:28:33+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "recherche",
+      "message": "38 références récupérées/empreintées (2 échecs externes), passages CH et européens effectivement lus pour SEMIO ; première correction repérée : vignette ne permet pas de favoriser seule la membraneuse ; terminologie rein-éponge à clarifier."
+    },
+    {
+      "at": "2026-11-02T01:28:51+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T01:29:40+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "redaction",
+      "message": "Passages CH/EU et FI lus; porte recherche passée avec lacunes explicites. Ajouts monographiques et sémiologiques ciblés."
+    },
+    {
+      "at": "2026-11-02T01:29:53+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "recherche",
+      "message": "FI Euthyrox relue; erreur absorption démontrée; consensus ENDO-ERN et sources suisses consultés; original anatomie/histologie humain acquis et inspecté."
+    },
+    {
+      "at": "2026-11-02T01:30:23+00:00",
+      "action": "extract",
+      "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/recherche_E00/downloads/who2007.txt",
+      "cache_hit": false,
+      "bytes_input": 239151,
+      "bytes_output": 4037,
+      "bytes_avoided": 235114
+    },
+    {
+      "at": "2026-11-02T01:30:23+00:00",
+      "action": "extract",
+      "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/recherche_E00/downloads/who2007.txt",
+      "cache_hit": false,
+      "bytes_input": 239151,
+      "bytes_output": 2283,
+      "bytes_avoided": 236868
+    },
+    {
+      "at": "2026-11-02T01:31:01+00:00",
+      "action": "extract",
+      "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/recherche_E00/downloads/who2007.txt",
+      "cache_hit": false,
+      "bytes_input": 239151,
+      "bytes_output": 3373,
+      "bytes_avoided": 235778
+    },
+    {
+      "at": "2026-11-02T01:31:30+00:00",
+      "action": "extract",
+      "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/recherche_E00/downloads/who2007.txt",
+      "cache_hit": false,
+      "bytes_input": 239151,
+      "bytes_output": 2230,
+      "bytes_avoided": 236921
+    },
+    {
+      "at": "2026-11-02T01:31:30+00:00",
+      "action": "extract",
+      "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/recherche_E00/downloads/osavfaqgrossesse.txt",
+      "cache_hit": false,
+      "bytes_input": 12383,
+      "bytes_output": 4388,
+      "bytes_avoided": 7995
+    },
+    {
+      "at": "2026-11-02T01:31:49+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T01:31:49+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
     }
   ],
   "cache": {
     "hits": 1,
-    "misses": 1,
-    "bytes_avoided": 7984
+    "misses": 7,
+    "bytes_avoided": 971051
   }
 }

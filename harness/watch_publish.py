@@ -18,13 +18,18 @@ BRANCH='codex/harness-observations-20261102'
 FILES=['status.json','dashboard.html','rapport-08h00.html','monitor.json',
        'runtime/state.json','runtime/watch.json','runtime/events.jsonl',
        'runtime/tests.json','runtime/tests.log']
+CODE_FILES=['medina_harness.py','bracelet.py','github_observe.py','watch_publish.py',
+            'catalog.json','config.json','prompt-lock.json','REPARTITION.md','dashboard-template.html','tests/test_harness.py']
 
 def run(root,publisher):
-    h=Harness(root);h.watch()
+    h=Harness(root)
+    # A new interpreter loads the current tested code on every tick.
+    subprocess.run([sys.executable,str(h.home/'medina_harness.py'),'--root',str(root),'watch'],check=True,capture_output=True,timeout=90)
+    if not h.readiness()['allowed']:raise ValueError('Harness fermé; conserver les erreurs localement avant publication du candidat')
     actual=subprocess.check_output(['git','-C',str(publisher),'branch','--show-current'],text=True).strip()
     if actual!=BRANCH:raise ValueError('Branche de publication non autorisée')
     staged=[]
-    for name in FILES:
+    for name in FILES+CODE_FILES:
         src=h.home/name
         if src.exists():
             dest=publisher/'harness'/name;dest.parent.mkdir(parents=True,exist_ok=True)
