@@ -1,27 +1,69 @@
 {
-  "generated_at": "2026-11-02T11:50:11+00:00",
+  "generated_at": "2026-11-02T12:00:11+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T11:50:11+00:00",
+    "checked_at": "2026-11-02T12:00:11+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T11:50:11+00:00",
+    "observed_at": "2026-11-02T12:00:11+00:00",
     "ok": true,
-    "findings": [],
+    "findings": [
+      {
+        "level": "warning",
+        "reason": "Réserves structurelles historiques à traiter avant intégration ; achèvements conservés",
+        "codes": [
+          "E00",
+          "N04",
+          "G02",
+          "C85",
+          "N29",
+          "E01",
+          "G05",
+          "E02",
+          "C86",
+          "I64",
+          "E07",
+          "E14",
+          "C70",
+          "C95"
+        ]
+      }
+    ],
+    "semiology_history": {
+      "inspected": 20,
+      "passed": 6,
+      "reserved_codes": [
+        "E00",
+        "N04",
+        "G02",
+        "C85",
+        "N29",
+        "E01",
+        "G05",
+        "E02",
+        "C86",
+        "I64",
+        "E07",
+        "E14",
+        "C70",
+        "C95"
+      ],
+      "meaning": "Contrôle structurel relancé à chaque veille600s ; résultats historiques conservés, nouvelles clôtures refusées si échec."
+    },
     "interval_seconds": 600,
-    "observer_pid": 792285,
+    "observer_pid": 805808,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
   "tests": {
     "ok": true,
-    "code_sha256": "2c033c3ad67ae584c95f719ff47b1a7cb4a10a8a266003bdef48d43161e03638",
-    "at": "2026-11-02T10:28:44+00:00",
+    "code_sha256": "f0100314481c26fd20f208e622311ab0a2762facf519d2059499335dcf45e56e",
+    "at": "2026-11-02T11:59:39+00:00",
     "returncode": 0,
     "log": "runtime/tests.log"
   },
@@ -88,8 +130,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE"
       ],
       "started_at": "2026-11-02T11:10:54+00:00",
-      "activity_at": "2026-11-02T11:47:52+00:00",
-      "message": "G03 : relecture des décisions PL/CT, LCR, chronique, corticothérapie et paracétamol effectuée ; source et glossaire figés, reconstruction native finale puis répétition des parcours réels.",
+      "activity_at": "2026-11-02T11:53:13+00:00",
+      "message": "G03 : reprise clinique post-porte achevée, 40 sections et 35 fenêtres reconsidérées ; quatre corrections documentées. Build/retests refaits sur cette reprise, conformité initiale non revendiquée.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -1501,9 +1543,9 @@
         "monograph14_reviewed": 0,
         "matrix20_reviewed": 0
       },
-      "activity_age_seconds": 139,
+      "activity_age_seconds": 418,
       "activity_fresh": true,
-      "sections_per_hour": 21.38,
+      "sections_per_hour": 17.04,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -1539,28 +1581,28 @@
       "clinical_orchestration": false,
       "runtime_name": "/root/sol_endocrinologie",
       "historical_id": "astra_endocrinologie",
-      "lesson": "E25",
-      "worktree": "/workspace/Medina-endocrinologie-E25",
-      "stage": "termine",
-      "branch": "codex/alpha77/e25-integrate-g1",
+      "lesson": "E30",
+      "worktree": "/workspace/Medina-endocrinologie-E30",
+      "stage": "recherche",
+      "branch": "codex/alpha77/e30-integrate-g1",
       "allowed_paths": [
-        "chapters/E25",
-        "glossary/e25.py",
-        "assets/img/e25/alpha/codex",
-        "organisation/alpha-publications/Codex/E25",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE"
+        "chapters/E30",
+        "glossary/e30.py",
+        "assets/img/e30/alpha/codex",
+        "organisation/alpha-publications/Codex/E30",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE"
       ],
-      "started_at": "2026-11-02T11:04:46+00:00",
-      "activity_at": "2026-11-02T11:46:53+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "started_at": "2026-11-02T11:53:37+00:00",
+      "activity_at": "2026-11-02T11:53:37+00:00",
+      "message": "Mission réservée; recherche autorisée",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "641716529219f5273aef27da52e2d521c88053c0e8ce33f380c88fdeb5d2e957",
+      "completed_sections": 0,
+      "receipt_sha256": "ea760a59820884c1cd5da31a21a2879c628bf8ac2cf3a58a1dbb167e4393ef7e",
       "brief": {
         "schema_version": 1,
         "prepared_at": "2026-11-02T01:16:45.312443+00:00",
@@ -1569,17 +1611,17 @@
         "fragment": "S05",
         "label": "E-06-Endocrinologie et métabolisme",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "phase": "E25_redaction_et_controles_natifs",
+        "phase": "E30_recherche_sources_et_inventaire",
         "selected_lesson": {
-          "code": "E25",
-          "title": "Anomalies génito-surrénaliennes",
-          "mission_candidate": ".medina/missions/ALPHA77-CODEX-E25-INTEGRATE.json",
+          "code": "E30",
+          "title": "Anomalies de la puberté, non classées ailleurs",
+          "mission_candidate": ".medina/missions/ALPHA77-CODEX-E30-INTEGRATE.json",
           "reservation_acquired": true,
           "start_passed": true,
           "harness_claimed": true,
-          "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E14-E25/start-E25.json"
+          "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E25-E30/start-E30.json"
         },
-        "authorization_scope": "E25 seule acquise, start et claim réels après E14 complete/push/release vérifiés ; aucun fichier partagé, PR ou main.",
+        "authorization_scope": "E30 seule acquise, start et claim réels ; aucun partagé, PR ou main.",
         "counts": {
           "canonical_s05": 26,
           "existing_codex": 13,
@@ -2826,9 +2868,9 @@
           "phase": "preparation_only_waiting_harness_veille_and_exclusive_worktree",
           "authorization_scope": "Préparation seulement dans harness/agents/endocrinologie; aucune écriture médicale, aucun commit ni index. Ordre courant spécialités parallèles/une leçon à la fois remplace lots historiques, pas réservations."
         },
-        "updated_at": "2026-11-02T11:31:28.079760+00:00",
-        "worktree": "/workspace/Medina-endocrinologie-E25",
-        "branch": "codex/alpha77/e25-integrate-g1",
+        "updated_at": "2026-11-02T11:53:59.094804+00:00",
+        "worktree": "/workspace/Medina-endocrinologie-E30",
+        "branch": "codex/alpha77/e30-integrate-g1",
         "tokens_actual": null,
         "cost_actual": null,
         "completed_lessons": [
@@ -2903,68 +2945,128 @@
             "author": "sol_endocrinologie",
             "clinical_certification": false,
             "main_or_pr": false
+          },
+          {
+            "code": "E25",
+            "title": "Anomalies génito-surrénaliennes",
+            "head": "7e647a914efa9511a487cf833c3f11e1ecbbe7fe",
+            "branch": "codex/alpha77/e25-integrate-g1",
+            "pushed": true,
+            "released": true,
+            "preview": "/workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE/E25-apercu-autonome.html",
+            "preview_sha256": "bd5c23d6062eeed688176537954167f7abd1e2c405ea63209b74d02de8336256",
+            "completion": "/workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE/harness-completion.json",
+            "reviews": "self_review",
+            "author": "sol_endocrinologie",
+            "clinical_certification": false,
+            "main_or_pr": false
           }
         ],
         "previous_lesson": {
-          "code": "E14",
-          "title": "Diabète sucré, sans précision",
-          "mission_candidate": ".medina/missions/ALPHA77-CODEX-E14-INTEGRATE.json",
+          "code": "E25",
+          "title": "Anomalies génito-surrénaliennes",
+          "mission_candidate": ".medina/missions/ALPHA77-CODEX-E25-INTEGRATE.json",
           "reservation_acquired": false,
           "start_passed": true,
           "harness_claimed": true,
-          "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E07-E14/start-E14.json",
+          "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E14-E25/start-E25.json",
           "released": true
         },
         "previous_evidence": {
-          "registry": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E07-E14/registry-before-acquire.json",
-          "registry_sha": "dddd520a0776fd1f977f89412df522a3708d71c0",
-          "status": "E14 achevée 10:59:59 UTC, c2e49eae823a60a47afcc599f255b057daf4e50e poussée et lue à distance ; garde post-push passé, libération c2abcd5ff068f94cc0bd6927aef8194b9b52ab7d. Aucun octet clos modifié.",
-          "source_cache": "/tmp/medina-source-cache/endocrinologie/E14",
-          "folder": "/workspace/Medina-endocrinologie-E14/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E14-INTEGRATE",
-          "preview": "/workspace/Medina-endocrinologie-E14/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E14-INTEGRATE/E14-apercu-autonome.html",
-          "report": "/workspace/Medina-endocrinologie-E14/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E14-INTEGRATE/RAPPORT-E14.md",
-          "manifest": "/workspace/Medina-endocrinologie-E14/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E14-INTEGRATE/lesson-manifest.json",
-          "completion": "/workspace/Medina-endocrinologie-E14/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E14-INTEGRATE/harness-completion.json",
-          "source_binding": "/workspace/Medina-endocrinologie-E14/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E14-INTEGRATE/source-binding.json",
-          "coverage": "/workspace/Medina-endocrinologie-E14/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E14-INTEGRATE/coverage-14-20.json",
-          "sources": "/workspace/Medina-endocrinologie-E14/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E14-INTEGRATE/source-ledger.json",
-          "static": "/workspace/Medina-endocrinologie-E14/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E14-INTEGRATE/static-report.json",
-          "sciences": "/workspace/Medina-endocrinologie-E14/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E14-INTEGRATE/audit-sciences.json",
-          "browser": "/workspace/Medina-endocrinologie-E14/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E14-INTEGRATE/browser-report.json",
-          "head": "c2e49eae823a60a47afcc599f255b057daf4e50e",
-          "preview_sha256": "26aba9d05de5623eebc903c459ef04215bd974564cc3efd4231b7d1d91e0df30"
+          "code": "E25",
+          "title": "Anomalies génito-surrénaliennes",
+          "head": "7e647a914efa9511a487cf833c3f11e1ecbbe7fe",
+          "branch": "codex/alpha77/e25-integrate-g1",
+          "pushed": true,
+          "released": true,
+          "preview": "/workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE/E25-apercu-autonome.html",
+          "preview_sha256": "bd5c23d6062eeed688176537954167f7abd1e2c405ea63209b74d02de8336256",
+          "completion": "/workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE/harness-completion.json",
+          "reviews": "self_review",
+          "author": "sol_endocrinologie",
+          "clinical_certification": false,
+          "main_or_pr": false,
+          "folder": "/workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE",
+          "report": "/workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE/RAPPORT-E25.md",
+          "manifest": "/workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE/lesson-manifest.json",
+          "source_binding": "/workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE/source-binding.json",
+          "sources": "/workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE/source-ledger.json",
+          "coverage": "/workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE/coverage-14-20.json",
+          "static": "/workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE/static-report.json",
+          "sciences": "/workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE/audit-sciences.json",
+          "browser": "/workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE/browser-report.json",
+          "transition": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E25-E30",
+          "status": "Complete 11:46:53 UTC ; push et lecture distante 7e647a914efa9511a487cf833c3f11e1ecbbe7fe, garde post-push passée, libération registre 74361d7ae40e9d0f840df471df45238641ad9d75."
         },
         "current_evidence": {
-          "transition": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E14-E25",
-          "source_cache": "/tmp/medina-source-cache/endocrinologie/E25",
-          "status": "Porte vérité passée sur 20 sources réellement consultées ; rédaction 14 sections, 20 rubriques liées, six sciences dont sémiologie neuf sections, deux occurrences de figure originale humaine CC BY3.0. Contrôles natifs et revue contextuelle des fenêtres en cours.",
-          "registry_sha": "b4479e09bde8da34537ea51b3a40f220904b9e82",
-          "folder": "/workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE"
+          "transition": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E25-E30",
+          "status": "E30 acquise, start et claim réels après E25 complète/poussée/libérée. Les sources anciennes sont un inventaire, non une preuve de lecture nouvelle ; lectures réelles commencent.",
+          "source_cache": "/tmp/medina-source-cache/endocrinologie/E30",
+          "registry_sha": "c91a5212f978e6b4c0a13f37e64dc6c20f558ec4"
         },
         "previous_limits": [
-          "Les produits suisses de potassium et de remplissage relus comportent des contre-indications ou limites qui ne sont pas annulées par le consensus de crise. Le cours enseigne la divergence et la décision hospitalière/pharmaceutique nécessaire, sans prescription automatique d’un produit alternatif non vérifié.",
-          "Le consensus conjoint EASD/JBDS/ADA/AACE/DTS 2024 est adulte et transatlantique ; il n’est pas une recommandation américaine seule et ne devient pas un protocole pédiatrique. Grossesse, fragilité et dialyse imposent une expertise adaptée.",
-          "Pas de prévalence ou incidence propre à E14 établie dans les sources lues ; les chiffres suisses de tous les diabètes déclarés ne la remplacent pas. Les données européennes de sous-types et les cohortes ne sont pas une fréquence nationale E14.",
-          "Les recommandations SSED 2011, de suivi 2017, de traitement 2023 et les manuels OFS 2024/2025 gardent leur date. Aucun codage, remboursement ou permis 2026 individuel n’est certifié.",
-          "Les seuils de peptide C dépendent des conditions, de la méthode, du rein et de la durée ; la référence ancienne 2013 est confrontée au contexte SSED 2023. Un dosage n’exclut pas seul un type.",
-          "Les monographies détaillées concernent Glucophage comprimés, NovoRapid 100 unités/ml et Baqsimi 3 mg nasal ; les autres classes sont une orientation SSED et exigent un produit exact après typage. Aucun chapitre E10/E11 n’est dupliqué ni déclaré audité.",
-          "La même image humaine normale 2013 apparaît dans les volets anatomie et histologie. Elle ne montre ni le diabète du patient, ni une lésion auto-immune ; les repères français guident la lecture mobile des structures, les labels anglais originaux restent complémentaires.",
-          "Les fenêtres Essentiel condensent des décisions ; elles ne remplacent ni les exceptions, ni les monographies, ni le protocole hospitalier. Les fractions du moteur sont des mesures de texte, jamais une mesure de validation ou d’exhaustivité clinique.",
-          "Le navigateur utilise une origine HTTPS interceptée et les octets exacts de l’aperçu, toutes autres requêtes bloquées ; aucun serveur réel, site main ou déploiement public n’est contrôlé. Les commandes fixes de la coque peuvent recouvrir une zone de capture à une position de défilement.",
-          "Les quatre revues sont des auto-relectures du même auteur Sol, sans indépendance ni certification humaine. La coque conserve son bandeau provisoire et la navigation héritée ; trois éléments E05 non couverts au build restent hors réservation."
+          {
+            "id": "L01",
+            "blocking": false,
+            "finding": "FI Florinef mars 2026 et repères néonataux spécialisés divergent fortement ; doses affichées séparément, pas schéma composite. Le prescripteur et la pharmacie vérifient produit, justification et surveillance."
+          },
+          {
+            "id": "L02",
+            "blocking": false,
+            "finding": "Le consensus pédiatrique BSPED 2023 est européen, fondé sur consensus et preuves limitées ; ni FI suisse ni protocole local individuel. Les options par âge/poids ne se cumulent pas."
+          },
+          {
+            "id": "L03",
+            "blocking": false,
+            "finding": "Seuils non classiques et cortisol historiques gardent méthode et population ; la FI Synacthen n’étudie pas un schéma pédiatrique. Aucun seuil moderne universel inventé."
+          },
+          {
+            "id": "L04",
+            "blocking": false,
+            "finding": "20 sources lues aux sections déclarées ; S4/S5/S11/S13 et résumé S7 ne sont pas présentés comme lecture intégrale. Crinecerfont : critères de dose/biomarqueurs sur 24/28 semaines, pas bénéfices cliniques à long terme ou statut suisse 2026."
+          },
+          {
+            "id": "L05",
+            "blocking": false,
+            "finding": "Chiffres suisses et séries européennes n’estiment pas toute E25 ; dénominateurs différents et absence de fréquences pour plusieurs formes rares conservés."
+          },
+          {
+            "id": "L06",
+            "blocking": false,
+            "finding": "Prénatal expérimental et décisions génitales irréversibles appellent expertise, autonomie et cadre suisse actuel ; aucune loi étrangère importée, aucun consentement individuel simulé."
+          },
+          {
+            "id": "L07",
+            "blocking": false,
+            "finding": "Une seule planche originale humaine normale 2013 est affichée deux fois, avec quatre repères ; elle ne montre pas une maladie individuelle. Labels anglais originaux complétés par légende française ; microscope et détails exigent une image plus grande."
+          },
+          {
+            "id": "L08",
+            "blocking": false,
+            "finding": "Les fenêtres Essentiel condensent le raisonnement ; les fractions natives sont des métriques de texte, pas un score de validation clinique."
+          },
+          {
+            "id": "L09",
+            "blocking": false,
+            "finding": "Navigateur sur origine HTTPS interceptée, octets exacts de l’aperçu et toutes autres requêtes bloquées ; aucun serveur ni déploiement réel testé."
+          },
+          {
+            "id": "L10",
+            "blocking": false,
+            "finding": "Quatre auto-revues du même auteur, sans validation humaine ou indépendance. Coque provisoire et navigation héritées ; trois éléments E05 non couverts restent hors périmètre."
+          }
         ],
         "current_limits": [
-          "FI Florinef mars 2026 et repères néonataux de revue divergent ; aucune dose composite proposée.",
-          "Les essais crinecerfont 2024 ne démontrent pas autorisation suisse actuelle ni bénéfices cliniques à long terme.",
-          "FI Synacthen adulte et seuils hormonaux historiques gardent leur méthode ; pas extrapolation pédiatrique automatique."
+          "Aucune rédaction médicale E30 avant recherche et porte vérité ; anciens dossiers non réputés relus.",
+          "Les références suisses de croissance/puberte anciennes ne seront pas présentées comme normes contemporaines 2026."
         ],
         "runtime_agent": "sol_endocrinologie",
         "runtime_model": "gpt-6.1-sol",
         "runtime_reasoning": "high"
       },
-      "activity_age_seconds": 198,
+      "activity_age_seconds": 394,
       "activity_fresh": true,
-      "sections_per_hour": 18.49,
+      "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -2992,7 +3094,7 @@
       "historical_id": "astra_nephrologie",
       "lesson": "N06",
       "worktree": "/workspace/Medina-nephrologie-n06",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/n06-integrate-g1",
       "allowed_paths": [
         "chapters/N06",
@@ -3003,15 +3105,15 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T11:44:48+00:00",
-      "activity_at": "2026-11-02T11:49:27+00:00",
-      "message": "N06 :35lectures ciblées/réutilisations,5FI ; matrice20rubriques et sous-codesN06.0–.9, bettaentrée réellementpassé. Début rédactionaprèscecontrôle.",
+      "activity_at": "2026-11-02T11:56:15+00:00",
+      "message": "N06 :14points,6sciences/neufsections sémiologiques,5FIconditionnelles,34fenêtres/4quiz rédigés aprèsbettaentrée. Relecture desmesures,limitesdesrapports,exclusionsOFS etespacement encours avantconstructionfinale.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "1d16930acfaec4e6a9167d93d41557265ce33576706ca5b789aa9b94585664c6",
       "brief": {
         "schema_version": 1,
@@ -3992,9 +4094,9 @@
           }
         }
       },
-      "activity_age_seconds": 44,
+      "activity_age_seconds": 236,
       "activity_fresh": true,
-      "sections_per_hour": 0.0,
+      "sections_per_hour": 54.58,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -4024,7 +4126,7 @@
       "clinical_orchestration": false,
       "lesson": "D63",
       "worktree": "/workspace/Medina-hematologie-D63",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/d63-integrate-g1",
       "allowed_paths": [
         "chapters/D63",
@@ -4034,15 +4136,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D63-INTEGRATE"
       ],
       "started_at": "2026-11-02T11:13:57+00:00",
-      "activity_at": "2026-11-02T11:35:30+00:00",
-      "message": "Lectures ciblées effectives : FI Eprex/Ferinject/ferro sanol, KDIGO2026 diagnostic-fer-ESA-transfusion, ECCO2024 anémie, ESMO2018, NICE transfusion, mediX et Delphi suisses. Divergences et hypothèse Eprex réfutée consignées ; pas de nouvelle rédaction médicale avant porte vérité.",
+      "activity_at": "2026-11-02T11:53:26+00:00",
+      "message": "Plan monographique rédigé dans les scripts locaux après VÉRITÉ OK, avec vignette initiale et 14 îlots ; assemblage, sciences, pharmacologie et contrôles finaux encore à produire. Aucun achèvement déclaré.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "6dfb955a3f1b1a1af65baadf4004ce2b0c9435ca7bc7a6323997878da9544318",
       "brief": {
         "specialty": "Hématologie",
@@ -4457,51 +4559,13 @@
         "sources_read": 0,
         "completed_sections": 0
       },
-      "activity_age_seconds": 881,
+      "activity_age_seconds": 405,
       "activity_fresh": true,
-      "sections_per_hour": 0.0,
+      "sections_per_hour": 18.17,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T02:41:29+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 1
-    },
-    {
-      "at": "2026-11-02T02:46:06+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "redaction",
-      "message": "Chagas : sources CH, SEMTSI et NIH relues ; RCP Lampit AEMPS février 2024 retrouvé avec indication adulte, distinct du libellé américain pédiatrique. Rédaction ciblée et revue de cohérence clinique en cours."
-    },
-    {
-      "at": "2026-11-02T02:46:45+00:00",
-      "action": "claim",
-      "agent": "astra_nephrologie",
-      "code": "N29"
-    },
-    {
-      "at": "2026-11-02T02:47:37+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 1
-    },
-    {
-      "at": "2026-11-02T02:48:08+00:00",
-      "action": "claim",
-      "agent": "astra_endocrinologie",
-      "code": "E01"
-    },
-    {
-      "at": "2026-11-02T02:48:19+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "recherche",
-      "message": "E00 terminé et libéré ; E01 acquis, start et claim réussis. Inventaire des six fichiers et recherche suisse puis européenne en cours."
-    },
     {
       "at": "2026-11-02T02:49:07+00:00",
       "action": "progress",
@@ -5757,6 +5821,45 @@
       "agent": "astra_nephrologie",
       "stage": "recherche",
       "message": "N06 :35lectures ciblées/réutilisations,5FI ; matrice20rubriques et sous-codesN06.0–.9, bettaentrée réellementpassé. Début rédactionaprèscecontrôle."
+    },
+    {
+      "at": "2026-11-02T11:50:11+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T11:53:13+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "verification",
+      "message": "G03 : reprise clinique post-porte achevée, 40 sections et 35 fenêtres reconsidérées ; quatre corrections documentées. Build/retests refaits sur cette reprise, conformité initiale non revendiquée."
+    },
+    {
+      "at": "2026-11-02T11:53:26+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "redaction",
+      "message": "Plan monographique rédigé dans les scripts locaux après VÉRITÉ OK, avec vignette initiale et 14 îlots ; assemblage, sciences, pharmacologie et contrôles finaux encore à produire. Aucun achèvement déclaré."
+    },
+    {
+      "at": "2026-11-02T11:53:37+00:00",
+      "action": "claim",
+      "agent": "astra_endocrinologie",
+      "code": "E30"
+    },
+    {
+      "at": "2026-11-02T11:56:15+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "redaction",
+      "message": "N06 :14points,6sciences/neufsections sémiologiques,5FIconditionnelles,34fenêtres/4quiz rédigés aprèsbettaentrée. Relecture desmesures,limitesdesrapports,exclusionsOFS etespacement encours avantconstructionfinale."
+    },
+    {
+      "at": "2026-11-02T12:00:05+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
     }
   ],
   "cache": {
@@ -12665,7 +12768,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T11:50:10+00:00",
+    "observed_at": "2026-11-02T12:00:10+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -13356,10 +13459,25 @@
         "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "local_preview": "/workspace/Medina-neurologie-G03/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE/G03-apercu-autonome.html",
         "exists": true,
-        "sha256": "1089cdc2412f36bb4eacee1837fafe297bfb40ef0341f14a9e743fa3b857d197",
-        "bytes": 8148101,
+        "sha256": "f4c5081056f5cb4cab144cbef60aea0992bf14763b9d09aaa8f8f8dcde9b4f1b",
+        "bytes": 8148537,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/g03-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE/G03-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/g03-integrate-g1",
+        "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
+        "publication_main": false,
+        "clinical_certification": false
+      },
+      {
+        "code": "E30",
+        "agent": "astra_endocrinologie",
+        "branch": "codex/alpha77/e30-integrate-g1",
+        "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+        "local_preview": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/E30-apercu-autonome.html",
+        "exists": false,
+        "sha256": null,
+        "bytes": null,
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/e30-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/E30-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/e30-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
         "publication_main": false,
         "clinical_certification": false
@@ -13370,9 +13488,9 @@
         "branch": "codex/alpha77/n06-integrate-g1",
         "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "local_preview": "/workspace/Medina-nephrologie-n06/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/N06-apercu-autonome.html",
-        "exists": false,
-        "sha256": null,
-        "bytes": null,
+        "exists": true,
+        "sha256": "04b73a5c22d61f10f6aee49d0889e4aef5908f214ae62a2acba8de953af66068",
+        "bytes": 26014395,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/n06-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/N06-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/n06-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",

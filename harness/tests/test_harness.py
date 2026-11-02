@@ -211,7 +211,7 @@ class HarnessCase(unittest.TestCase):
     def test_completion_requires_twenty_covered_points_and_records_history(self):
         worktree,folder=self.bound_package();p=folder/'lesson-manifest.json';manifest=mh.load(p)
         proof={'technical_contract_pass':True,'errors':[],'review_modes':{'medical':'self_review'}}
-        with mock.patch.object(mh,'validate_lesson',return_value=proof):
+        with mock.patch.object(mh,'validate_lesson',return_value=proof), mock.patch.object(mh,'inspect_semiology',return_value={'passed':True,'findings':[]}):
             manifest['matrix20'][0]['status']='LACUNE';mh.atomic(p,manifest)
             with self.assertRaisesRegex(ValueError,'Matrice20'):self.h.complete('neuro',folder)
             manifest['matrix20'][0]['status']='covered';mh.atomic(p,manifest)
