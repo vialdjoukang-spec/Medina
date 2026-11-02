@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-02T13:25:15+00:00",
+  "generated_at": "2026-11-02T13:35:16+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T13:25:15+00:00",
+    "checked_at": "2026-11-02T13:35:16+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T13:25:15+00:00",
+    "observed_at": "2026-11-02T13:35:16+00:00",
     "ok": true,
     "findings": [
       {
@@ -56,7 +56,7 @@
       "meaning": "Contrôle structurel relancé à chaque veille600s ; résultats historiques conservés, nouvelles clôtures refusées si échec."
     },
     "interval_seconds": 600,
-    "observer_pid": 985107,
+    "observer_pid": 986588,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -119,7 +119,7 @@
       "historical_id": "astra_neurologie",
       "lesson": "G06",
       "worktree": "/workspace/Medina-neurologie-G06",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/g06-integrate-g1",
       "allowed_paths": [
         "chapters/G06",
@@ -129,8 +129,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE"
       ],
       "started_at": "2026-11-02T12:18:09+00:00",
-      "activity_at": "2026-11-02T13:25:05+00:00",
-      "message": "G06 : première version complète après porte Betta préalable ; six sciences, neuf unités sémiologiques exactes, deux originaux PD, écarts FI/protocoles explicites. Contrôles et relecture restent à faire.",
+      "activity_at": "2026-11-02T13:32:46+00:00",
+      "message": "G06 : statique et audit sciences passent, sept critères sémiologiques vrais ; quatre IDs panneau/section dupliqués révélés par navigateur, corrigés, 79IDs uniques. Reconstruction après correction, échec conservé et aucun binding.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -1557,9 +1557,9 @@
         "branch": "codex/alpha77/g06-integrate-g1",
         "queue_reassignment_note": "G09 réattribué par root à sol_nephrologie le2026-11-02, sorti de cette file ; G06 puis G07/G08."
       },
-      "activity_age_seconds": 11,
+      "activity_age_seconds": 150,
       "activity_fresh": true,
-      "sections_per_hour": 12.52,
+      "sections_per_hour": 10.89,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -1597,7 +1597,7 @@
       "historical_id": "astra_endocrinologie",
       "lesson": "E32",
       "worktree": "/tmp/Medina-endocrinologie-E32",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/e32-integrate-g1",
       "allowed_paths": [
         "chapters/E32",
@@ -1607,8 +1607,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E32-INTEGRATE"
       ],
       "started_at": "2026-11-02T13:18:06+00:00",
-      "activity_at": "2026-11-02T13:21:54+00:00",
-      "message": "E32 : lecture réelle revue Porubsky 2025, revue kystes 2022 sections mécanismes/diagnostic/traitement, trois modules NVALT 2024 recommandations/limites, CIM E32 et résumés Priola/Inaoka/Dalla Costa/Franke/Varma/abcès2008 et1993. Caches externes /tmp/medina-source-cache/endocrinologie/E32 ; divergence suivi kyste simple et limite déplacement chimique chez jeunes identifiées, aucune rédaction canonique commencée.",
+      "activity_at": "2026-11-02T13:27:14+00:00",
+      "message": "E32 :22sources réellement lues aux sections/résumés déclarés et porte VÉRITÉ OK. Registre, start, claim et inventaire avant remplacement dans transitions/E30-E32 ; recherche/source-ledger et cache manifest dans dossier E32. Divergences kystes NVALT/Toulouse et limites chimique/Franke arbitrées explicitement ; début rédaction14points/20rubriques/sixsciences.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -3055,7 +3055,7 @@
           }
         ]
       },
-      "activity_age_seconds": 202,
+      "activity_age_seconds": 482,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -4258,7 +4258,7 @@
         "production_name": "Sol-Neurologie-G09",
         "active_specialty": "neurologie"
       },
-      "activity_age_seconds": 511,
+      "activity_age_seconds": 1111,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -4788,34 +4788,13 @@
         "sources_read": 0,
         "completed_sections": 0
       },
-      "activity_age_seconds": 79,
+      "activity_age_seconds": 679,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T03:43:20+00:00",
-      "action": "progress",
-      "agent": "codex_hematologie",
-      "stage": "recherche",
-      "message": "C86 : 6 onglets sources relus (17 641 mots historiques). Deux originaux humains CC BY 4.0 inspectés. Défauts identifiés : clonalité surinterprétée, allogreffe présentée à tort comme réservée aux rechutes, seuils BPDCN/HLH incomplets, RCD-II à actualiser. Passage à la rédaction après consolidation des preuves."
-    },
-    {
-      "at": "2026-11-02T03:44:32+00:00",
-      "action": "progress",
-      "agent": "codex_hematologie",
-      "stage": "redaction",
-      "message": "C86 : plan de révision et constats persistés ; rédaction des corrections, six sciences et fenêtres. Sources CH/EU vérifiées par sections ; aucune validation médicale revendiquée."
-    },
-    {
-      "at": "2026-11-02T03:47:15+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "recherche",
-      "message": "E02 : six fichiers existants relus ; FI Euthyrox complète et composition Elevit vérifiées. Sources HAS, RCOG, ETA pédiatrique, HTA suisse et essais lus avec limites par population ; préparation des corrections de seuils et de causalité."
-    },
     {
       "at": "2026-11-02T03:47:37+00:00",
       "action": "watch",
@@ -6086,6 +6065,26 @@
       "agent": "astra_neurologie",
       "stage": "redaction",
       "message": "G06 : première version complète après porte Betta préalable ; six sciences, neuf unités sémiologiques exactes, deux originaux PD, écarts FI/protocoles explicites. Contrôles et relecture restent à faire."
+    },
+    {
+      "at": "2026-11-02T13:25:15+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T13:27:14+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "redaction",
+      "message": "E32 :22sources réellement lues aux sections/résumés déclarés et porte VÉRITÉ OK. Registre, start, claim et inventaire avant remplacement dans transitions/E30-E32 ; recherche/source-ledger et cache manifest dans dossier E32. Divergences kystes NVALT/Toulouse et limites chimique/Franke arbitrées explicitement ; début rédaction14points/20rubriques/sixsciences."
+    },
+    {
+      "at": "2026-11-02T13:32:46+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "verification",
+      "message": "G06 : statique et audit sciences passent, sept critères sémiologiques vrais ; quatre IDs panneau/section dupliqués révélés par navigateur, corrigés, 79IDs uniques. Reconstruction après correction, échec conservé et aucun binding."
     }
   ],
   "cache": {
@@ -13001,7 +13000,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T13:25:13+00:00",
+    "observed_at": "2026-11-02T13:35:13+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -13986,9 +13985,9 @@
         "branch": "codex/alpha77/g06-integrate-g1",
         "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "local_preview": "/workspace/Medina-neurologie-G06/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE/G06-apercu-autonome.html",
-        "exists": false,
-        "sha256": null,
-        "bytes": null,
+        "exists": true,
+        "sha256": "fbc7d729ec91f5e857e75463182ba6392a7a1053896fbd6305bd75ce95c69301",
+        "bytes": 8145514,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/g06-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE/G06-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/g06-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",

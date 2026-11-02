@@ -5,7 +5,7 @@
     "astra_neurologie": {
       "lesson": "G06",
       "worktree": "/workspace/Medina-neurologie-G06",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/g06-integrate-g1",
       "allowed_paths": [
         "chapters/G06",
@@ -15,8 +15,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE"
       ],
       "started_at": "2026-11-02T12:18:09+00:00",
-      "activity_at": "2026-11-02T13:25:05+00:00",
-      "message": "G06 : première version complète après porte Betta préalable ; six sciences, neuf unités sémiologiques exactes, deux originaux PD, écarts FI/protocoles explicites. Contrôles et relecture restent à faire.",
+      "activity_at": "2026-11-02T13:32:46+00:00",
+      "message": "G06 : statique et audit sciences passent, sept critères sémiologiques vrais ; quatre IDs panneau/section dupliqués révélés par navigateur, corrigés, 79IDs uniques. Reconstruction après correction, échec conservé et aucun binding.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -29,7 +29,7 @@
     "astra_endocrinologie": {
       "lesson": "E32",
       "worktree": "/tmp/Medina-endocrinologie-E32",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/e32-integrate-g1",
       "allowed_paths": [
         "chapters/E32",
@@ -39,8 +39,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E32-INTEGRATE"
       ],
       "started_at": "2026-11-02T13:18:06+00:00",
-      "activity_at": "2026-11-02T13:21:54+00:00",
-      "message": "E32 : lecture réelle revue Porubsky 2025, revue kystes 2022 sections mécanismes/diagnostic/traitement, trois modules NVALT 2024 recommandations/limites, CIM E32 et résumés Priola/Inaoka/Dalla Costa/Franke/Varma/abcès2008 et1993. Caches externes /tmp/medina-source-cache/endocrinologie/E32 ; divergence suivi kyste simple et limite déplacement chimique chez jeunes identifiées, aucune rédaction canonique commencée.",
+      "activity_at": "2026-11-02T13:27:14+00:00",
+      "message": "E32 :22sources réellement lues aux sections/résumés déclarés et porte VÉRITÉ OK. Registre, start, claim et inventaire avant remplacement dans transitions/E30-E32 ; recherche/source-ledger et cache manifest dans dossier E32. Divergences kystes NVALT/Toulouse et limites chimique/Franke arbitrées explicitement ; début rédaction14points/20rubriques/sixsciences.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -101,26 +101,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T03:44:32+00:00",
-      "action": "progress",
-      "agent": "codex_hematologie",
-      "stage": "redaction",
-      "message": "C86 : plan de révision et constats persistés ; rédaction des corrections, six sciences et fenêtres. Sources CH/EU vérifiées par sections ; aucune validation médicale revendiquée."
-    },
-    {
-      "at": "2026-11-02T03:47:15+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "recherche",
-      "message": "E02 : six fichiers existants relus ; FI Euthyrox complète et composition Elevit vérifiées. Sources HAS, RCOG, ETA pédiatrique, HTA suisse et essais lus avec limites par population ; préparation des corrections de seuils et de causalité."
-    },
-    {
-      "at": "2026-11-02T03:47:37+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
     {
       "at": "2026-11-02T03:48:37+00:00",
       "action": "progress",
@@ -1388,6 +1368,26 @@
     },
     {
       "at": "2026-11-02T13:25:15+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T13:27:14+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "redaction",
+      "message": "E32 :22sources réellement lues aux sections/résumés déclarés et porte VÉRITÉ OK. Registre, start, claim et inventaire avant remplacement dans transitions/E30-E32 ; recherche/source-ledger et cache manifest dans dossier E32. Divergences kystes NVALT/Toulouse et limites chimique/Franke arbitrées explicitement ; début rédaction14points/20rubriques/sixsciences."
+    },
+    {
+      "at": "2026-11-02T13:32:46+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "verification",
+      "message": "G06 : statique et audit sciences passent, sept critères sémiologiques vrais ; quatre IDs panneau/section dupliqués révélés par navigateur, corrigés, 79IDs uniques. Reconstruction après correction, échec conservé et aucun binding."
+    },
+    {
+      "at": "2026-11-02T13:35:16+00:00",
       "action": "watch",
       "ok": true,
       "findings": 1
