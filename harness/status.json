@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-02T04:27:38+00:00",
+  "generated_at": "2026-11-02T04:35:41+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T04:27:38+00:00",
+    "checked_at": "2026-11-02T04:35:41+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T04:27:38+00:00",
+    "observed_at": "2026-11-02T04:35:41+00:00",
     "ok": true,
     "findings": [],
     "interval_seconds": 600,
-    "observer_pid": 385863,
+    "observer_pid": 409655,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
   "tests": {
     "ok": true,
-    "code_sha256": "94bb4f427c09e9e08f455c01a830dd9240f545fcae01f839edd7d4b0bc6fbc4c",
-    "at": "2026-11-02T03:30:04+00:00",
+    "code_sha256": "e5c9a716231cd2107e84e7eccb64dd7b765cef901804e932795806d5ccd41030",
+    "at": "2026-11-02T04:35:40+00:00",
     "returncode": 0,
     "log": "runtime/tests.log"
   },
@@ -86,8 +86,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE"
       ],
       "started_at": "2026-11-02T04:22:49+00:00",
-      "activity_at": "2026-11-02T04:26:25+00:00",
-      "message": "I64 : huit sources ciblées enregistrées ; FI Actilyse/Metalyse relues, recommandations suisses 2026 et ARIA identifiées. Relecture des critères et de la sémiologie avant rédaction.",
+      "activity_at": "2026-11-02T04:35:26+00:00",
+      "message": "I64 : vérification des recommandations HIC ESO 2025, des antidotes suisses et du signal Swissmedic Konakion de juillet 2026 ; rédaction native en préparation, aucun test de contenu déclaré.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -1342,7 +1342,7 @@
         "tokens_actual": null,
         "cost_actual": null
       },
-      "activity_age_seconds": 73,
+      "activity_age_seconds": 15,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -1390,8 +1390,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE"
       ],
       "started_at": "2026-11-02T04:20:54+00:00",
-      "activity_at": "2026-11-02T04:23:18+00:00",
-      "message": "E07 : six surfaces existantes lues ; défauts identifiés sur TSH en maladie critique, seuils de calcitonine et portée des tests. Sources suisses CHUV, Viollier, SGED et dépistage néonatal ouvertes ; recherche du produit calcique exact et actualisation européenne en cours.",
+      "activity_at": "2026-11-02T04:31:00+00:00",
+      "message": "E07 : sources CHUV/Viollier, calcitonine 2026, NTIS 2021, ENDO-ERN et FI Euthyrox relues ; source exacte du calcium importé identifiée et distinctions de doses documentées. Préparation de la matrice de recherche avant corrections.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -2759,7 +2759,7 @@
           "Les preuves et revues E02 ne certifient pas E07 ; passages nécessaires à lire pour cette leçon."
         ]
       },
-      "activity_age_seconds": 260,
+      "activity_age_seconds": 281,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -2798,15 +2798,15 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T04:14:17+00:00",
-      "activity_at": "2026-11-02T04:26:49+00:00",
-      "message": "27 lectures ciblées consignées, huit FI exactes ; cinq originaux humains vus et droits lus. Début monographie C64, sections rédigées encore0.",
+      "activity_at": "2026-11-02T04:30:37+00:00",
+      "message": "14sections cliniques C64 rédigées, huitFI et27lectures au ledger ; examens/sciences/pharmacologie et relectures encore en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "734dc9ed7edb25b1b46019192338e0531c67ef53737fc88bed39a2bfc3ec94b8",
       "brief": {
         "schema_version": 1,
@@ -3488,9 +3488,9 @@
           "clinical_certification": false
         }
       },
-      "activity_age_seconds": 49,
+      "activity_age_seconds": 304,
       "activity_fresh": true,
-      "sections_per_hour": 0.0,
+      "sections_per_hour": 39.25,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -3520,7 +3520,7 @@
       "clinical_orchestration": false,
       "lesson": "C86",
       "worktree": "/workspace/Medina-hematologie-C86",
-      "stage": "verification",
+      "stage": "termine",
       "branch": "codex/alpha77/c86-integrate-g1",
       "allowed_paths": [
         "chapters/C86",
@@ -3530,15 +3530,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C86-INTEGRATE"
       ],
       "started_at": "2026-11-02T03:26:38+00:00",
-      "activity_at": "2026-11-02T04:22:02+00:00",
-      "message": "C86 : 31 lectures documentées, 52 fenêtres, premier rendu natif 1440/390 et images originelles réussis ; contrôle complet et preuves finales en cours.",
+      "activity_at": "2026-11-02T04:33:09+00:00",
+      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 6,
+      "completed_sections": 14,
       "receipt_sha256": "f64e830a81691c3a42ec5479b5a72932ea6637bca8b9d027142815e23712657b",
       "brief": {
         "specialty": "Hématologie",
@@ -3738,9 +3738,9 @@
           "words_rough": 17641,
           "measurement": "HTML stripped rough inventory; static tool measurement follows"
         },
-        "next_action": "C86 : relecture des 52 fenêtres et cinq quiz, contrôle natif final, matrice14/20 et liaison des empreintes avant clôture.",
-        "status": "verification",
-        "updated_at": "2026-11-02T04:22:02.556033+00:00",
+        "next_action": "Libérer C86 après vérification du push des reçus, puis acquérir C95 si registre libre ; une seule leçon active.",
+        "status": "termine",
+        "updated_at": "2026-11-02T04:33:09+00:00",
         "current": {
           "code": "C86",
           "worktree": "/workspace/Medina-hematologie-C86",
@@ -3749,21 +3749,24 @@
         },
         "sources_current": 31,
         "source_inherited": 23,
-        "monograph_points_mapped": null,
-        "medina_rubrics": null,
-        "blocking_findings": [
-          "Contrôles finaux et reçus pas encore achevés"
-        ],
-        "preview": null,
-        "preview_sha256": null,
+        "monograph_points_mapped": 14,
+        "medina_rubrics": 20,
+        "blocking_findings": [],
+        "preview": "/workspace/Medina-hematologie-C86/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C86-INTEGRATE/C86-apercu-autonome.html",
+        "preview_sha256": "8efbea24ff0adfa0a61b19ed84ebd4dd2588fae13f0b71c727246dbdc7316862",
         "tests": {
           "static": "passed",
           "sciences": "passed",
-          "browser_initial": "passed 1440/390, quatre occurrences originales, Livre24",
-          "browser_final": "pending"
+          "verite": "passed",
+          "native_browser": "passed1440/390,52fenêtres,5quiz,6disciplines,9sémiologies,4originaux et2diagrammes"
         },
-        "reviews": null,
-        "complete": false,
+        "reviews": {
+          "medical": "self_review",
+          "language": "self_review",
+          "visual_desktop": "self_review",
+          "visual_mobile": "self_review"
+        },
+        "complete": true,
         "clinical_certification": false,
         "tokens_actual": null,
         "cost_actual": null,
@@ -3772,7 +3775,25 @@
           "Incidence suisse par sous-code et remboursement individuel2026 non certifiés",
           "Coûts et tokens API non exposés"
         ],
-        "completion": null,
+        "completion": {
+          "agent": "codex_hematologie",
+          "code": "C86",
+          "at": "2026-11-02T04:33:09+00:00",
+          "branch": "codex/alpha77/c86-integrate-g1",
+          "worktree": "/workspace/Medina-hematologie-C86",
+          "folder": "/workspace/Medina-hematologie-C86/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C86-INTEGRATE",
+          "manifest_sha256": "53cf4e400f6a2f4b8516e06d9c12071d4ee6a4d4af300cd315453f60a33d6e81",
+          "source_binding_sha256": "9446dbbc4dd1c2e1f7acb7ad1e76235b6107dcae1cf387aff359b86c03c2d8ed",
+          "review_modes": {
+            "medical": "self_review",
+            "language": "self_review",
+            "visual_desktop": "self_review",
+            "visual_mobile": "self_review"
+          },
+          "clinical_certification": false,
+          "publication_allowed": false,
+          "preview_sha256": "8efbea24ff0adfa0a61b19ed84ebd4dd2588fae13f0b71c727246dbdc7316862"
+        },
         "completed_lessons": [
           {
             "selected_lesson": "C85",
@@ -3877,12 +3898,67 @@
               ],
               "receipt": "/workspace/Medina-hematologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE/verification.json"
             }
+          },
+          {
+            "agent": "codex_hematologie",
+            "code": "C86",
+            "at": "2026-11-02T04:33:09+00:00",
+            "branch": "codex/alpha77/c86-integrate-g1",
+            "worktree": "/workspace/Medina-hematologie-C86",
+            "folder": "/workspace/Medina-hematologie-C86/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C86-INTEGRATE",
+            "manifest_sha256": "53cf4e400f6a2f4b8516e06d9c12071d4ee6a4d4af300cd315453f60a33d6e81",
+            "source_binding_sha256": "9446dbbc4dd1c2e1f7acb7ad1e76235b6107dcae1cf387aff359b86c03c2d8ed",
+            "review_modes": {
+              "medical": "self_review",
+              "language": "self_review",
+              "visual_desktop": "self_review",
+              "visual_mobile": "self_review"
+            },
+            "clinical_certification": false,
+            "publication_allowed": false,
+            "preview_sha256": "8efbea24ff0adfa0a61b19ed84ebd4dd2588fae13f0b71c727246dbdc7316862",
+            "metrics": {
+              "code": "C86",
+              "words": 26786,
+              "windows": 52,
+              "quizzes": 5,
+              "pareto": 14,
+              "science_tabs": 6,
+              "semio_sections": 9,
+              "sources_read": 31,
+              "originals": 2,
+              "original_occurrences": 4,
+              "causal_diagrams": 2,
+              "captures_generated": 28,
+              "captures_inspected": 14,
+              "tokens_actual": null,
+              "cost_actual": null,
+              "clinical_certification": false
+            }
           }
-        ]
+        ],
+        "metrics": {
+          "code": "C86",
+          "words": 26786,
+          "windows": 52,
+          "quizzes": 5,
+          "pareto": 14,
+          "science_tabs": 6,
+          "semio_sections": 9,
+          "sources_read": 31,
+          "originals": 2,
+          "original_occurrences": 4,
+          "causal_diagrams": 2,
+          "captures_generated": 28,
+          "captures_inspected": 14,
+          "tokens_actual": null,
+          "cost_actual": null,
+          "clinical_certification": false
+        }
       },
-      "activity_age_seconds": 336,
+      "activity_age_seconds": 152,
       "activity_fresh": true,
-      "sections_per_hour": 5.9,
+      "sections_per_hour": 12.16,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
@@ -4907,6 +4983,57 @@
       "agent": "astra_nephrologie",
       "stage": "redaction",
       "message": "27 lectures ciblées consignées, huit FI exactes ; cinq originaux humains vus et droits lus. Début monographie C64, sections rédigées encore0."
+    },
+    {
+      "at": "2026-11-02T04:27:38+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T04:29:37+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T04:30:37+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "redaction",
+      "message": "14sections cliniques C64 rédigées, huitFI et27lectures au ledger ; examens/sciences/pharmacologie et relectures encore en cours."
+    },
+    {
+      "at": "2026-11-02T04:31:00+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "recherche",
+      "message": "E07 : sources CHUV/Viollier, calcitonine 2026, NTIS 2021, ENDO-ERN et FI Euthyrox relues ; source exacte du calcium importé identifiée et distinctions de doses documentées. Préparation de la matrice de recherche avant corrections."
+    },
+    {
+      "at": "2026-11-02T04:33:09+00:00",
+      "action": "complete",
+      "agent": "codex_hematologie",
+      "code": "C86"
+    },
+    {
+      "at": "2026-11-02T04:35:07+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T04:35:26+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "I64 : vérification des recommandations HIC ESO 2025, des antidotes suisses et du signal Swissmedic Konakion de juillet 2026 ; rédaction native en préparation, aucun test de contenu déclaré."
+    },
+    {
+      "at": "2026-11-02T04:35:40+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
     }
   ],
   "cache": {
@@ -11779,7 +11906,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T04:27:37+00:00",
+    "observed_at": "2026-11-02T04:35:40+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -12089,6 +12216,40 @@
         }
       },
       {
+        "code": "C86",
+        "agent": "codex_hematologie",
+        "branch": "codex/alpha77/c86-integrate-g1",
+        "head_observed": "b1704452a42894f05447b105acb3d80e9db45a6f",
+        "local_preview": "/workspace/Medina-hematologie-C86/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C86-INTEGRATE/C86-apercu-autonome.html",
+        "exists": true,
+        "sha256": "8efbea24ff0adfa0a61b19ed84ebd4dd2588fae13f0b71c727246dbdc7316862",
+        "bytes": 12134029,
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/c86-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C86-INTEGRATE/C86-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/c86-integrate-g1",
+        "status": "Achèvement de projet documenté; version en attente de revue utilisateur avant PR main.",
+        "publication_main": false,
+        "clinical_certification": false,
+        "completion": {
+          "agent": "codex_hematologie",
+          "code": "C86",
+          "at": "2026-11-02T04:33:09+00:00",
+          "branch": "codex/alpha77/c86-integrate-g1",
+          "worktree": "/workspace/Medina-hematologie-C86",
+          "folder": "/workspace/Medina-hematologie-C86/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C86-INTEGRATE",
+          "manifest_sha256": "53cf4e400f6a2f4b8516e06d9c12071d4ee6a4d4af300cd315453f60a33d6e81",
+          "source_binding_sha256": "9446dbbc4dd1c2e1f7acb7ad1e76235b6107dcae1cf387aff359b86c03c2d8ed",
+          "review_modes": {
+            "medical": "self_review",
+            "language": "self_review",
+            "visual_desktop": "self_review",
+            "visual_mobile": "self_review"
+          },
+          "clinical_certification": false,
+          "publication_allowed": false,
+          "preview_sha256": "8efbea24ff0adfa0a61b19ed84ebd4dd2588fae13f0b71c727246dbdc7316862"
+        }
+      },
+      {
         "code": "I64",
         "agent": "astra_neurologie",
         "branch": "codex/alpha77/i64-integrate-g1",
@@ -12129,21 +12290,6 @@
         "bytes": null,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/c64-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C64-INTEGRATE/C64-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/c64-integrate-g1",
-        "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
-        "publication_main": false,
-        "clinical_certification": false
-      },
-      {
-        "code": "C86",
-        "agent": "codex_hematologie",
-        "branch": "codex/alpha77/c86-integrate-g1",
-        "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "local_preview": "/workspace/Medina-hematologie-C86/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C86-INTEGRATE/C86-apercu-autonome.html",
-        "exists": true,
-        "sha256": "8efbea24ff0adfa0a61b19ed84ebd4dd2588fae13f0b71c727246dbdc7316862",
-        "bytes": 12134029,
-        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/c86-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C86-INTEGRATE/C86-apercu-autonome.html",
-        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/c86-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
         "publication_main": false,
         "clinical_certification": false
@@ -12323,6 +12469,25 @@
       "clinical_certification": false,
       "publication_allowed": false,
       "preview_sha256": "85c16939a2f2847f20f3b223c89ef9c16ea35ab103df3f646f437023d25e42f9"
+    },
+    {
+      "agent": "codex_hematologie",
+      "code": "C86",
+      "at": "2026-11-02T04:33:09+00:00",
+      "branch": "codex/alpha77/c86-integrate-g1",
+      "worktree": "/workspace/Medina-hematologie-C86",
+      "folder": "/workspace/Medina-hematologie-C86/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C86-INTEGRATE",
+      "manifest_sha256": "53cf4e400f6a2f4b8516e06d9c12071d4ee6a4d4af300cd315453f60a33d6e81",
+      "source_binding_sha256": "9446dbbc4dd1c2e1f7acb7ad1e76235b6107dcae1cf387aff359b86c03c2d8ed",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "8efbea24ff0adfa0a61b19ed84ebd4dd2588fae13f0b71c727246dbdc7316862"
     }
   ]
 }

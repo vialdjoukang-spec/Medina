@@ -15,8 +15,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE"
       ],
       "started_at": "2026-11-02T04:22:49+00:00",
-      "activity_at": "2026-11-02T04:26:25+00:00",
-      "message": "I64 : huit sources ciblées enregistrées ; FI Actilyse/Metalyse relues, recommandations suisses 2026 et ARIA identifiées. Relecture des critères et de la sémiologie avant rédaction.",
+      "activity_at": "2026-11-02T04:35:26+00:00",
+      "message": "I64 : vérification des recommandations HIC ESO 2025, des antidotes suisses et du signal Swissmedic Konakion de juillet 2026 ; rédaction native en préparation, aucun test de contenu déclaré.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -39,8 +39,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE"
       ],
       "started_at": "2026-11-02T04:20:54+00:00",
-      "activity_at": "2026-11-02T04:23:18+00:00",
-      "message": "E07 : six surfaces existantes lues ; défauts identifiés sur TSH en maladie critique, seuils de calcitonine et portée des tests. Sources suisses CHUV, Viollier, SGED et dépistage néonatal ouvertes ; recherche du produit calcique exact et actualisation européenne en cours.",
+      "activity_at": "2026-11-02T04:31:00+00:00",
+      "message": "E07 : sources CHUV/Viollier, calcitonine 2026, NTIS 2021, ENDO-ERN et FI Euthyrox relues ; source exacte du calcium importé identifiée et distinctions de doses documentées. Préparation de la matrice de recherche avant corrections.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -64,21 +64,21 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T04:14:17+00:00",
-      "activity_at": "2026-11-02T04:26:49+00:00",
-      "message": "27 lectures ciblées consignées, huit FI exactes ; cinq originaux humains vus et droits lus. Début monographie C64, sections rédigées encore0.",
+      "activity_at": "2026-11-02T04:30:37+00:00",
+      "message": "14sections cliniques C64 rédigées, huitFI et27lectures au ledger ; examens/sciences/pharmacologie et relectures encore en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "734dc9ed7edb25b1b46019192338e0531c67ef53737fc88bed39a2bfc3ec94b8"
     },
     "codex_hematologie": {
       "lesson": "C86",
       "worktree": "/workspace/Medina-hematologie-C86",
-      "stage": "verification",
+      "stage": "termine",
       "branch": "codex/alpha77/c86-integrate-g1",
       "allowed_paths": [
         "chapters/C86",
@@ -88,15 +88,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C86-INTEGRATE"
       ],
       "started_at": "2026-11-02T03:26:38+00:00",
-      "activity_at": "2026-11-02T04:22:02+00:00",
-      "message": "C86 : 31 lectures documentées, 52 fenêtres, premier rendu natif 1440/390 et images originelles réussis ; contrôle complet et preuves finales en cours.",
+      "activity_at": "2026-11-02T04:33:09+00:00",
+      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 6,
+      "completed_sections": 14,
       "receipt_sha256": "f64e830a81691c3a42ec5479b5a72932ea6637bca8b9d027142815e23712657b"
     }
   },
@@ -1127,6 +1127,57 @@
       "action": "watch",
       "ok": true,
       "findings": 0
+    },
+    {
+      "at": "2026-11-02T04:29:37+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T04:30:37+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "redaction",
+      "message": "14sections cliniques C64 rédigées, huitFI et27lectures au ledger ; examens/sciences/pharmacologie et relectures encore en cours."
+    },
+    {
+      "at": "2026-11-02T04:31:00+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "recherche",
+      "message": "E07 : sources CHUV/Viollier, calcitonine 2026, NTIS 2021, ENDO-ERN et FI Euthyrox relues ; source exacte du calcium importé identifiée et distinctions de doses documentées. Préparation de la matrice de recherche avant corrections."
+    },
+    {
+      "at": "2026-11-02T04:33:09+00:00",
+      "action": "complete",
+      "agent": "codex_hematologie",
+      "code": "C86"
+    },
+    {
+      "at": "2026-11-02T04:35:07+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T04:35:26+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "I64 : vérification des recommandations HIC ESO 2025, des antidotes suisses et du signal Swissmedic Konakion de juillet 2026 ; rédaction native en préparation, aucun test de contenu déclaré."
+    },
+    {
+      "at": "2026-11-02T04:35:40+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T04:35:41+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
     }
   ],
   "cache": {
@@ -1306,6 +1357,25 @@
       "clinical_certification": false,
       "publication_allowed": false,
       "preview_sha256": "85c16939a2f2847f20f3b223c89ef9c16ea35ab103df3f646f437023d25e42f9"
+    },
+    {
+      "agent": "codex_hematologie",
+      "code": "C86",
+      "at": "2026-11-02T04:33:09+00:00",
+      "branch": "codex/alpha77/c86-integrate-g1",
+      "worktree": "/workspace/Medina-hematologie-C86",
+      "folder": "/workspace/Medina-hematologie-C86/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C86-INTEGRATE",
+      "manifest_sha256": "53cf4e400f6a2f4b8516e06d9c12071d4ee6a4d4af300cd315453f60a33d6e81",
+      "source_binding_sha256": "9446dbbc4dd1c2e1f7acb7ad1e76235b6107dcae1cf387aff359b86c03c2d8ed",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "8efbea24ff0adfa0a61b19ed84ebd4dd2588fae13f0b71c727246dbdc7316862"
     }
   ]
 }
