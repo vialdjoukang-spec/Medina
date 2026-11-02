@@ -10,16 +10,7 @@
   "fragment": "S08",
   "label": "N-05-Neurologie",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "candidate": {
-    "code": "G07",
-    "title": "Abcès et granulome intracrâniens et intrarachidiens au cours d’affections classées ailleurs",
-    "mode": "existing",
-    "owner": "Codex",
-    "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G07-INTEGRATE.json",
-    "campaign77_member": true,
-    "source_exists": true,
-    "authorization": "current_acquired_started_claimed_reservation"
-  },
+  "candidate": "G08",
   "counts": {
     "specialty_existing": 57,
     "existing_codex": 29,
@@ -741,28 +732,22 @@
       "Private GitHub cron and local watch depend on runner/environment availability"
     ]
   },
-  "updated_at": "2026-11-02T14:02:08.997020+00:00",
+  "updated_at": "2026-11-02T15:44:12.607570+00:00",
   "current_package": {
-    "code": "G07",
-    "worktree": "/tmp/Medina-neurologie-G07",
-    "workspace_symlink": "/workspace/Medina-neurologie-G07",
-    "branch": "codex/alpha77/g07-integrate-g1",
+    "code": "G08",
+    "worktree": "/tmp/Medina-neurologie-G08",
+    "symlink": "/workspace/Medina-neurologie-G08",
+    "branch": "codex/alpha77/g08-integrate-g1",
+    "stage": "preparation",
     "reservation_acquired": true,
-    "acquisition_registry_sha": "2a9a3889be850334b1d453ea11eebeee31a9d1da",
-    "start_receipt": "/tmp/Medina-neurologie-G07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G07-INTEGRATE/start-G07.json",
-    "stage": "recherche",
-    "source_readings_count": 22,
-    "monograph14_reviewed": 0,
-    "matrix20_reviewed": 0,
-    "blocking_findings": [
-      "Inventaire et sources G07, porte Betta avant rédaction, puis preuves finales à réaliser."
-    ],
-    "clinical_certification": false,
-    "preview": null
+    "start_passed": true,
+    "claim_passed": true,
+    "acquisition_registry_sha": "649aac92c6c569f14c589c56b400c1b2275c0582",
+    "source_binding": null
   },
   "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
   "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
-  "medical_content_written": true,
+  "medical_content_written": false,
   "current_limitations": [
     "Incident d’ordre de lancement local et échec espace/start conservés, sans réécriture historique.",
     "Sources héritées G07 sont pistes, jamais lectures Sol par présence de cache.",
@@ -1425,14 +1410,14 @@
       "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
     }
   ],
-  "source_readings_count": 22,
-  "research_sources": "/tmp/Medina-neurologie-G07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G07-INTEGRATE/recherche_G07/sources-draft.json",
-  "current_revision": "G07 rédigé et relu :6surfaces,6sciences/9sémiologie,45fenêtres,4quiz. Betta préalable15:17:52UTC,baseline7inchangée prouvée. Premier statique négatif conservé dans historique, nettoyage des fiches puis statiqueOK ; sciences730→3669mots. Relecture notices : arrêt éthambutol conditionné à confirmation, grossesse produits explicite. Build natif en cours.",
-  "monograph14_reviewed": 14,
-  "matrix20_reviewed": 20,
+  "source_readings_count": 0,
+  "research_sources": null,
+  "current_revision": "G08 acquis puis worktree complet créé après retour acquisition vérifié ; start et claim réels15:43:29UTC. Prompt vérité premier document de leçon relu ; instructions identiques G07 vérifiées par SHA. Inventaire et corpus primaire à lire, aucune rédaction.",
+  "monograph14_reviewed": 0,
+  "matrix20_reviewed": 0,
   "source_binding": null,
-  "worktree": "/tmp/Medina-neurologie-G07",
-  "branch": "codex/alpha77/g07-integrate-g1",
+  "worktree": "/tmp/Medina-neurologie-G08",
+  "branch": "codex/alpha77/g08-integrate-g1",
   "queue_reassignment_note": "G09 réattribué par root à sol_nephrologie le2026-11-02, sorti de cette file ; G06 puis G07/G08.",
   "historical_package_G03_snapshot": {
     "code": "G03",
@@ -1452,5 +1437,39 @@
     "preview": null
   },
   "source_readings_new_in_G07": 17,
-  "source_entries_reused_or_rechecked": 5
+  "source_entries_reused_or_rechecked": 5,
+  "completed_by_sol": [
+    {
+      "code": "G07",
+      "final_commit": "1d7a1821f1afa8689bbf88965049e38a1e4fab8e",
+      "source_commit": "b4c891f5148fe9c092b36ed8daa89e82eb477dd9",
+      "complete_at": "2026-11-02T15:39:39+00:00",
+      "release_registry_sha": "50ec5fc4b60ed332dc84870a533d087efc7d16d0",
+      "source_binding_sha256": "4b7a461f41761408aaa570714d236d39d3f472c537eb35eb498680a04db7a786",
+      "source_binding_first_issue": "2026-11-02T15:37:41.854707+00:00",
+      "preview_sha256": "9075c3c08e053ccb190ab9b87ff4036495b86ebe8e7aa9f21a9c3efe8a77e366",
+      "status": "released_verified",
+      "worktree": "/tmp/Medina-neurologie-G07",
+      "clinical_certification": false
+    }
+  ],
+  "historical_package_G07_snapshot": {
+    "code": "G07",
+    "worktree": "/tmp/Medina-neurologie-G07",
+    "workspace_symlink": "/workspace/Medina-neurologie-G07",
+    "branch": "codex/alpha77/g07-integrate-g1",
+    "reservation_acquired": true,
+    "acquisition_registry_sha": "2a9a3889be850334b1d453ea11eebeee31a9d1da",
+    "start_receipt": "/tmp/Medina-neurologie-G07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G07-INTEGRATE/start-G07.json",
+    "stage": "recherche",
+    "source_readings_count": 22,
+    "monograph14_reviewed": 0,
+    "matrix20_reviewed": 0,
+    "blocking_findings": [
+      "Inventaire et sources G07, porte Betta avant rédaction, puis preuves finales à réaliser."
+    ],
+    "clinical_certification": false,
+    "preview": null
+  },
+  "next_candidate": "G08"
 }

@@ -211,3 +211,13 @@ Sol a effectivement achevé G06 à13:46:45UTC, après Betta passé avant premiè
 ## G07 — rédaction et premières vérifications réelles, 2026-11-02T15:32:56.330181+00:00
 
 Betta VÉRITÉ OK à15:17:52UTC avant nouvelle rédaction,7empreintes initiales inchangées ; incident de transition de worktree conservé séparément.22références attribuées,14points/20rubriques avec lacunes bornées. Six surfaces écrites,6sciences/9rubriques strictes,45fenêtres,4quiz,2originaux humains inchangés et6schémas conceptuels non anatomiques. Contrôle sciences passé730→3669mots ; premier statique a échoué sur sigles/notes de travail, puis passé après nettoyage. Relecture clinique des notices a précisé arrêt éthambutol après examen et absence d’autre cause et contre-indications de grossesse de deux produits. Build natif en cours, aucune clôture ni empreinte finale émise.
+
+
+## G07 clôture et libération vérifiées — 2026-11-02T15:41:30.651067+00:00
+
+Complete effectif15:39:39UTC, final1d7a1821f1afa8689bbf88965049e38a1e4fab8e poussé et lu à distance ; garde intégrée finale passée, worktree propre, binding unique4b7a461f41761408aaa570714d236d39d3f472c537eb35eb498680a04db7a786 inchangé. Registre50ec5fc4b60ed332dc84870a533d087efc7d16d0 confirme released. Aucun audit indépendant, certification humaine,PR ou main. Incident initial d’ordre acquisition/worktree, checkout et start refusés conservés ; première porte Betta avant nouvelle rédaction réellement réussie. Limite de capture du code de sortie build explicitée sans l’inventer. G08 prochain candidat après contrôle frais.
+
+
+## G08 — acquisition et entrée effectives, 2026-11-02T15:44:12.609552+00:00
+
+Acquisition649aac92c6c569f14c589c56b400c1b2275c0582 réellement attendue et vérifiée avant lancement du checkout ; worktree complet/tmp/Medina-neurologie-G08, lien/workspace, base8a512893acbab9caa0dcfdd0e8682a44ea72fda6. Start puis gate allowed et claim réussis15:43:29UTC. Prompt de vérité relu comme premier document de leçon ; instructions générales identiques à G07 par empreinte, aucun AGENTS imbriqué. Inventaire initial conservé ;0source primaire encore lue pour G08, aucune nouvelle rédaction, pas de binding.
