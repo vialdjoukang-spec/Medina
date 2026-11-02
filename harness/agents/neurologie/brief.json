@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "G06_RECHERCHE_G03_COMPLETE_LIBERE",
+  "status": "G06_VERIFICATION_FINALE",
   "prepared_at": "2026-11-02T01:17:05.123886+00:00",
   "agent": "Sol Neurologie",
   "model": "gpt-6.1-sol",
@@ -742,31 +742,32 @@
       "Private GitHub cron and local watch depend on runner/environment availability"
     ]
   },
-  "updated_at": "2026-11-02T12:39:12.480019+00:00",
+  "updated_at": "2026-11-02T13:39:48.848138+00:00",
   "current_package": {
-    "code": "G03",
-    "worktree": "/workspace/Medina-neurologie-G03",
-    "branch": "codex/alpha77/g03-integrate-g1",
+    "code": "G06",
+    "worktree": "/workspace/Medina-neurologie-G06",
+    "branch": "codex/alpha77/g06-integrate-g1",
     "reservation_acquired": true,
-    "acquisition_registry_sha": "38c7e728615c5a39df2c0552f0131cf01fca9236",
-    "start_receipt": "/workspace/Medina-neurologie-G03/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE/start.json",
-    "stage": "recherche",
-    "source_readings_count": 0,
-    "monograph14_reviewed": 0,
-    "matrix20_reviewed": 0,
+    "acquisition_registry_sha": "b875af9f34b7fe815802f650413d14be8603dcc3",
+    "start_receipt": "/workspace/Medina-neurologie-G06/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE/start.json",
+    "stage": "verification",
+    "source_readings_count": 19,
+    "monograph14_reviewed": 14,
+    "matrix20_reviewed": 20,
     "blocking_findings": [
-      "Inventaire et lectures primaires G03, révision des surfaces et preuves finales à réaliser."
+      "Contrôles navigateur/captures finaux et auto-revues à lier après reconstruction actuelle ; aucun binding émis."
     ],
     "clinical_certification": false,
-    "preview": null
+    "preview": "/workspace/Medina-neurologie-G06/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE/G06-apercu-autonome.html"
   },
   "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
   "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
-  "medical_content_written": false,
+  "medical_content_written": true,
   "current_limitations": [
-    "G03 acquis/start/claim réels ; aucune rédaction médicale nouvelle ni source lue pour cette leçon à ce stade.",
-    "Les références héritées sont des pistes, pas des lectures Sol nouvelles.",
-    "G02/G05/I64/C70 achevés et libérés ; aucun de leurs reçus ne valide G03."
+    "Incidence nationale actuelle et obligations/droits suisses spécifiques non établis, limites explicites.",
+    "Protocole SpitalThurgau2026 local, écarts FI attribués ; EANS limité à spondylodiscite de novo, pas toutG06.1.",
+    "DGN2021 échue seulement extraits, pas base thérapeutique actuelle ; pas certification humaine ni revue indépendante.",
+    "QuatreIDs dupliqués révélés et corrigés par navigateur ; contrôle final sur derniers octets en cours."
   ],
   "completed_lessons": [
     {
@@ -1408,11 +1409,28 @@
   ],
   "source_readings_count": 19,
   "research_sources": "/workspace/Medina-neurologie-G06/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE/recherche_G06/sources.json",
-  "current_revision": "Recherche19lectures ciblées réelles et plan14/matrice20 documentés ; contrôle VÉRITÉ OK avant toute rédaction G06, sept sources initiales encore inchangées.",
-  "monograph14_reviewed": 0,
-  "matrix20_reviewed": 0,
+  "current_revision": "46sections et37fenêtres rédigées après Betta préalable réel,19lectures ; relecture clinique achevée, statique/sciences/sémiologie passent. Dernière reconstruction pour polissage source, parcours finaux et binding restent à terminer.",
+  "monograph14_reviewed": 14,
+  "matrix20_reviewed": 20,
   "source_binding": null,
   "worktree": "/workspace/Medina-neurologie-G06",
   "branch": "codex/alpha77/g06-integrate-g1",
-  "queue_reassignment_note": "G09 réattribué par root à sol_nephrologie le2026-11-02, sorti de cette file ; G06 puis G07/G08."
+  "queue_reassignment_note": "G09 réattribué par root à sol_nephrologie le2026-11-02, sorti de cette file ; G06 puis G07/G08.",
+  "historical_package_G03_snapshot": {
+    "code": "G03",
+    "worktree": "/workspace/Medina-neurologie-G03",
+    "branch": "codex/alpha77/g03-integrate-g1",
+    "reservation_acquired": true,
+    "acquisition_registry_sha": "38c7e728615c5a39df2c0552f0131cf01fca9236",
+    "start_receipt": "/workspace/Medina-neurologie-G03/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE/start.json",
+    "stage": "recherche",
+    "source_readings_count": 0,
+    "monograph14_reviewed": 0,
+    "matrix20_reviewed": 0,
+    "blocking_findings": [
+      "Inventaire et lectures primaires G03, révision des surfaces et preuves finales à réaliser."
+    ],
+    "clinical_certification": false,
+    "preview": null
+  }
 }
