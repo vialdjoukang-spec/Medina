@@ -1,7 +1,7 @@
 {
   "specialty": "Hématologie",
-  "selected_lesson": "C92",
-  "title": "Leucémie myéloïde",
+  "selected_lesson": "D62",
+  "title": "Anémie posthémorragique aiguë",
   "queue": [
     {
       "code": "D69",
@@ -189,206 +189,42 @@
     "D69",
     "D64"
   ],
-  "medical_review": "self_review ciblée du parent consignée ; aucune validation humaine",
+  "medical_review": "non effectuée pour D62",
   "tokens": null,
   "cost": null,
   "baseline": {
-    "code": "C92",
+    "code": "D62",
     "chapter_absent_at_base": true,
     "words": 0,
-    "science_words": 0,
-    "note": "Nouvelle production explicitement autorisée ; comparaison D63 conservée séparément."
+    "science_words": 0
   },
-  "next_action": "Garde finale et libération C92, puis D62 après préflight frais ; revue utilisateur attendue.",
-  "status": "termine",
-  "updated_at": "2026-11-02T14:52:53+00:00",
+  "next_action": "Inventaire et recherche ciblée suisse/européenne ; porte VÉRITÉ obligatoire avant rédaction.",
+  "status": "recherche",
+  "updated_at": "2026-11-02T14:57:26.878504+00:00",
   "current": {
-    "code": "C92",
-    "worktree": "/workspace/Medina-hematologie-C92",
-    "branch": "codex/alpha77/c92-integrate-g1",
-    "status": "termine",
+    "code": "D62",
+    "worktree": "/workspace/Medina-hematologie-D62",
+    "branch": "codex/alpha77/d62-integrate-g1",
+    "status": "research_pending",
     "allow_new_course": true,
-    "shared_path_reserved": "chapters.json",
-    "global_words": 23359,
-    "science_words": 5426,
-    "science_disciplines": 6,
-    "science_figures": 8,
-    "original_human_images": 4,
-    "semio_sections": 9,
-    "popups": 42,
-    "quiz": 8
+    "shared_path_reserved": "chapters.json"
   },
-  "sources_current": 41,
-  "source_inherited": 18,
-  "monograph_points_mapped": 14,
-  "medina_rubrics": 20,
+  "sources_current": 0,
+  "sources_read": 0,
+  "source_inherited": 0,
+  "monograph_points_mapped": 0,
+  "medina_rubrics": 0,
   "blocking_findings": [],
-  "preview": "/workspace/Medina-hematologie-C92/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C92-INTEGRATE/C92-apercu-autonome.html",
-  "preview_sha256": "705aede8b78730ee8eef93bc532888920d32c8f25581d2351d04a10f2b1b5128",
-  "tests": {
-    "verification": "/workspace/Medina-hematologie-C92/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C92-INTEGRATE/verification.json",
-    "automated_checks_passed": 6,
-    "strict_semiology_passed": 7,
-    "science_words": 5426,
-    "science_disciplines": 6,
-    "science_figures": 8,
-    "windows": 42,
-    "quiz": 8,
-    "originals": 4,
-    "occurrences": 6,
-    "captures_actually_viewed": 20
-  },
-  "reviews": {
-    "medical": {
-      "path": "review-package/self-review.json",
-      "sha256": "c3896c4a2db3c0af64893bc4dd086d9e0ee61e6f9e7c424e9ca4de70b29ea79b",
-      "reviewer": "Codex Hématologie",
-      "mode": "self_review"
-    },
-    "language": {
-      "path": "review-package/self-review.json",
-      "sha256": "c3896c4a2db3c0af64893bc4dd086d9e0ee61e6f9e7c424e9ca4de70b29ea79b",
-      "reviewer": "Codex Hématologie",
-      "mode": "self_review"
-    },
-    "visual_desktop": {
-      "path": "review-package/self-review.json",
-      "sha256": "c3896c4a2db3c0af64893bc4dd086d9e0ee61e6f9e7c424e9ca4de70b29ea79b",
-      "reviewer": "Codex Hématologie",
-      "mode": "self_review"
-    },
-    "visual_mobile": {
-      "path": "review-package/self-review.json",
-      "sha256": "c3896c4a2db3c0af64893bc4dd086d9e0ee61e6f9e7c424e9ca4de70b29ea79b",
-      "reviewer": "Codex Hématologie",
-      "mode": "self_review"
-    }
-  },
-  "complete": true,
+  "preview": null,
+  "preview_sha256": null,
+  "tests": {},
+  "reviews": {},
+  "complete": false,
   "clinical_certification": false,
   "tokens_actual": null,
   "cost_actual": null,
-  "limitations": [
-    {
-      "id": "C92-L1",
-      "text": "41 entrées documentaires, dont 15 FI suisses : lectures ciblées, résumé institutionnel du sarcome ORL et réutilisations attribuées. Aucune lecture intégrale générale des documents revendiquée.",
-      "blocking": false
-    },
-    {
-      "id": "C92-L2",
-      "text": "Porte recherche réelle avant rédaction : 38 entrées. Trois FI ajoutées après cette porte pour la pharmacologie ; reçu initial conservé, aucun effet rétroactif.",
-      "blocking": false
-    },
-    {
-      "id": "C92-L3",
-      "text": "Pas d’incidence suisse actuelle propre à chaque sous-type C92 établie ; statistiques C91–C95 et cohortes européennes non transformées en taux suisse spécifique.",
-      "blocking": false
-    },
-    {
-      "id": "C92-L4",
-      "text": "OMS 2022, ICC, ELN 2022 intensif et ELN 2024 moins intensif ont des portées différentes ; terminologie CIM et ancien libellé AML-MRC de FI non assimilés automatiquement aux entités modernes.",
-      "blocking": false
-    },
-    {
-      "id": "C92-L5",
-      "text": "LPA : usage européen récent ATO de première ligne haut risque distinct de la FI suisse Trisenox non haut risque ; divergence de suspension ATO/ATRA lors de différenciation explicitée.",
-      "blocking": false
-    },
-    {
-      "id": "C92-L6",
-      "text": "Vanflyta : entretien après allogreffe exclu de l’indication suisse consultée ; colonnes de réduction pour interaction et toxicité distinctes.",
-      "blocking": false
-    },
-    {
-      "id": "C92-L7",
-      "text": "Vyxeos : unité de bilirubine incohérente dans extraction française, aucun seuil numérique recopié ni corrigé de mémoire. Schéma liposomal non interchangeable avec molécules libres.",
-      "blocking": false
-    },
-    {
-      "id": "C92-L8",
-      "text": "Daunoblastin : exemples posologiques de FI ne hiérarchisent pas tous les protocoles actuels ; formulations de contre-indications et précautions parfois divergentes, vérification spécialisée requise.",
-      "blocking": false
-    },
-    {
-      "id": "C92-L9",
-      "text": "Vidaza : tableau extrait de cytopénies présente une incohérence de libellé ; aucun algorithme certain reconstruit à partir de cette extraction.",
-      "blocking": false
-    },
-    {
-      "id": "C92-L10",
-      "text": "Quatre originaux, six occurrences et vingt-quatre repères de légende ; pas de génotype, incidence ou décompte représentatif déduit d’un champ. Agrandissement utile pour les détails cytologiques fins.",
-      "blocking": false
-    },
-    {
-      "id": "C92-L11",
-      "text": "Moteur hérité : navigation par flèches absente ; Tab puis Entrée testés. Barres fixes pouvant recouvrir temporairement une zone lors du défilement ou sur une capture longue.",
-      "blocking": false
-    },
-    {
-      "id": "C92-L12",
-      "text": "Bandeau hérité PROFILES SSP159/227 non certifié comme cartographie officielle. Texte clinique renvoyant aux situations du référentiel réellement lues ; compteurs globaux de l’interface distincts de cette campagne.",
-      "blocking": false
-    },
-    {
-      "id": "C92-L13",
-      "text": "Essais du moteur natif sur origine HTTP interceptée, requêtes externes bloquées ; aucun déploiement ni fonctionnement file:// affirmé.",
-      "blocking": false
-    },
-    {
-      "id": "C92-L14",
-      "text": "Quatre catégories de revue attribuées au même parent en self_review ; aucune revue médicale humaine indépendante. Matrices14/20 et compteurs ne sont pas un score de qualité médicale.",
-      "blocking": false
-    },
-    {
-      "id": "C92-L15",
-      "text": "CIM-10-GM 2024 OFS : sous-codes et rémission relus. Aucune certification exhaustive de facturation2026 ni garantie de remboursement individuel ; revue Vial attendue avant toute PR/main.",
-      "blocking": false
-    }
-  ],
-  "completion": {
-    "agent": "codex_hematologie",
-    "code": "C92",
-    "at": "2026-11-02T14:52:53+00:00",
-    "branch": "codex/alpha77/c92-integrate-g1",
-    "worktree": "/workspace/Medina-hematologie-C92",
-    "folder": "/workspace/Medina-hematologie-C92/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C92-INTEGRATE",
-    "manifest_sha256": "789d54e4e4429da148570027c1b713c320ed784eb0cbe79f975bdd00c6f89515",
-    "source_binding_sha256": "a94f74d03bca6f124fbb4b275e4c51474947bfc729b84725fda9226d0427e1b6",
-    "review_modes": {
-      "medical": "self_review",
-      "language": "self_review",
-      "visual_desktop": "self_review",
-      "visual_mobile": "self_review"
-    },
-    "clinical_certification": false,
-    "publication_allowed": false,
-    "preview_sha256": "705aede8b78730ee8eef93bc532888920d32c8f25581d2351d04a10f2b1b5128",
-    "semiology_contract": {
-      "code": "C92",
-      "observed_at": "2026-11-02T14:52:53+00:00",
-      "passed": true,
-      "checks": {
-        "six_science_tabs": true,
-        "first_selected_semio": true,
-        "semio_panel_label_and_visible": true,
-        "first_unit_exact_h3": true,
-        "nine_named_sections": true,
-        "linked_sources_in_semio": true,
-        "clinical_semio_marker": true
-      },
-      "findings": [],
-      "source_hashes": {
-        "chapters/C92/C92_a.html": "8507fa7693108fdfc76fb7dc6e23ecb84dae1227b7cb7aa79e182a6ff5ec9d0f",
-        "chapters/C92/C92_b.html": "5f7c04915c2e4eabe355fa853b2a5f347f0627f819c9ceafc203191c5cfaeb80",
-        "chapters/C92/C92_c.html": "1716c5ca03c9d9e979fe26da1634b8911e1afe86d7f81aaa8199a69fb4e4e45a",
-        "chapters/C92/C92_d.html": "a5c236cd4a9e07e58cb2b8469309d040470741e4041e32c771fd651f38b1ae0f"
-      },
-      "clinical_certification": false,
-      "author_activity_refreshed": false,
-      "source_bindings_refreshed": false,
-      "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
-    }
-  },
+  "limitations": [],
+  "completion": null,
   "completed_lessons": [
     {
       "selected_lesson": "C85",
@@ -492,7 +328,8 @@
           }
         ],
         "receipt": "/workspace/Medina-hematologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE/verification.json"
-      }
+      },
+      "complete": true
     },
     {
       "agent": "codex_hematologie",
@@ -529,127 +366,463 @@
         "tokens_actual": null,
         "cost_actual": null,
         "clinical_certification": false
-      }
-    }
-  ],
-  "metrics": {
-    "tokens_actual": null,
-    "cost_actual": null,
-    "completed_sections": 0
-  },
-  "completion_history": [
-    {
-      "agent": "codex_hematologie",
-      "code": "C95",
-      "at": "2026-11-02T11:10:21+00:00",
-      "branch": "codex/alpha77/c95-integrate-g1",
-      "worktree": "/workspace/Medina-hematologie-C95",
-      "folder": "/workspace/Medina-hematologie-C95/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C95-INTEGRATE",
-      "manifest_sha256": "4d47282d2c20791c058395977350a3d79197984203d36d922437cb28bd91653e",
-      "source_binding_sha256": "271e6b5d63ce9a8bb2e6e1cfb58f491049c18143723e9c104970b2d83835bda8",
-      "review_modes": {
-        "medical": "self_review",
-        "language": "self_review",
-        "visual_desktop": "self_review",
-        "visual_mobile": "self_review"
       },
-      "clinical_certification": false,
-      "publication_allowed": false,
-      "preview_sha256": "037bace867c4e884a4cf47ca2515373c73f3f8759131f5389974a0e9facd6f01",
-      "head": "b10a875b",
-      "remote_verified": true
-    },
-    {
-      "agent": "codex_hematologie",
-      "code": "D63",
-      "at": "2026-11-02T12:57:01+00:00",
-      "branch": "codex/alpha77/d63-integrate-g1",
-      "worktree": "/workspace/Medina-hematologie-D63",
-      "folder": "/workspace/Medina-hematologie-D63/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D63-INTEGRATE",
-      "manifest_sha256": "8482e3b2962cb8fca70b95edb7d67d6eb09cd287e9b23ce354ac78801e8a5ccb",
-      "source_binding_sha256": "3208acbd270e60b1b3ffb411f28fd998eeb9cd381f73bd18dcbe6f86b08426dc",
-      "review_modes": {
-        "medical": "self_review",
-        "language": "self_review",
-        "visual_desktop": "self_review",
-        "visual_mobile": "self_review"
-      },
-      "clinical_certification": false,
-      "publication_allowed": false,
-      "preview_sha256": "9f800db389bfa4eccbd288bca00011126cf47239771c2a57be5759a1dc2c8896",
-      "semiology_contract": {
-        "code": "D63",
-        "observed_at": "2026-11-02T12:57:01+00:00",
-        "passed": true,
-        "checks": {
-          "six_science_tabs": true,
-          "first_selected_semio": true,
-          "semio_panel_label_and_visible": true,
-          "first_unit_exact_h3": true,
-          "nine_named_sections": true,
-          "linked_sources_in_semio": true,
-          "clinical_semio_marker": true
-        },
-        "findings": [],
-        "source_hashes": {
-          "chapters/D63/D63_a.html": "8b09b97f4331e739b2824bcfa81b5eda665f0eb4ffb23ec5066aab9204f4a285",
-          "chapters/D63/D63_b.html": "10cee745e0304f69a709fdacf4fecea5edad37539df286077289f071e5a34eb1",
-          "chapters/D63/D63_c.html": "5af3a09166b603a10109d4c01d6aeb5c74494daf3d04c4688cbc6ed98e59dc25",
-          "chapters/D63/D63_d.html": "6b0a03ec32073073ae2d042a8eb01f7972ccbc6aab89abe4b2a328aa02da17f5"
+      "complete": true,
+      "completion": {
+        "agent": "codex_hematologie",
+        "code": "C86",
+        "at": "2026-11-02T04:33:09+00:00",
+        "branch": "codex/alpha77/c86-integrate-g1",
+        "worktree": "/workspace/Medina-hematologie-C86",
+        "folder": "/workspace/Medina-hematologie-C86/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C86-INTEGRATE",
+        "manifest_sha256": "53cf4e400f6a2f4b8516e06d9c12071d4ee6a4d4af300cd315453f60a33d6e81",
+        "source_binding_sha256": "9446dbbc4dd1c2e1f7acb7ad1e76235b6107dcae1cf387aff359b86c03c2d8ed",
+        "review_modes": {
+          "medical": "self_review",
+          "language": "self_review",
+          "visual_desktop": "self_review",
+          "visual_mobile": "self_review"
         },
         "clinical_certification": false,
-        "author_activity_refreshed": false,
-        "source_bindings_refreshed": false,
-        "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
-      },
-      "head": "f0a06b05435fdc9d8f655b4b0a83bf1e859205f0",
-      "remote_verified": true,
-      "metrics": {
-        "code": "D63",
-        "words": 21416,
-        "windows": 39,
-        "quizzes": 8,
-        "pareto": 9,
-        "science_tabs": 6,
-        "science_words": 4360,
-        "semio_sections": 9,
-        "sources_read_or_attributed_reuse": 26,
-        "fi_swiss": 3,
-        "originals": 2,
-        "original_occurrences": 4,
-        "caption_markers": 16,
-        "causal_diagrams": 5,
-        "captures_generated": 38,
-        "captures_inspected": 18,
-        "tokens_actual": null,
-        "cost_actual": null,
-        "clinical_certification": false
+        "publication_allowed": false,
+        "preview_sha256": "8efbea24ff0adfa0a61b19ed84ebd4dd2588fae13f0b71c727246dbdc7316862"
       }
+    },
+    {
+      "selected_lesson": "C95",
+      "complete": true,
+      "completion": {
+        "agent": "codex_hematologie",
+        "code": "C95",
+        "at": "2026-11-02T11:10:21+00:00",
+        "branch": "codex/alpha77/c95-integrate-g1",
+        "worktree": "/workspace/Medina-hematologie-C95",
+        "folder": "/workspace/Medina-hematologie-C95/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C95-INTEGRATE",
+        "manifest_sha256": "4d47282d2c20791c058395977350a3d79197984203d36d922437cb28bd91653e",
+        "source_binding_sha256": "271e6b5d63ce9a8bb2e6e1cfb58f491049c18143723e9c104970b2d83835bda8",
+        "review_modes": {
+          "medical": "self_review",
+          "language": "self_review",
+          "visual_desktop": "self_review",
+          "visual_mobile": "self_review"
+        },
+        "clinical_certification": false,
+        "publication_allowed": false,
+        "preview_sha256": "037bace867c4e884a4cf47ca2515373c73f3f8759131f5389974a0e9facd6f01"
+      },
+      "preview": "/workspace/Medina-hematologie-C95/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C95-INTEGRATE/C95-apercu-autonome.html",
+      "preview_sha256": "037bace867c4e884a4cf47ca2515373c73f3f8759131f5389974a0e9facd6f01",
+      "sources_current": 32,
+      "reviews": {
+        "medical": {
+          "path": "review-package/self-review.json",
+          "sha256": "731c5faee2ba65fe2ef992d3c277b5a8d2cbc2fb9ef52ca5481e72db5968106e",
+          "reviewer": "Codex Hématologie",
+          "mode": "self_review"
+        },
+        "language": {
+          "path": "review-package/self-review.json",
+          "sha256": "731c5faee2ba65fe2ef992d3c277b5a8d2cbc2fb9ef52ca5481e72db5968106e",
+          "reviewer": "Codex Hématologie",
+          "mode": "self_review"
+        },
+        "visual_desktop": {
+          "path": "review-package/self-review.json",
+          "sha256": "731c5faee2ba65fe2ef992d3c277b5a8d2cbc2fb9ef52ca5481e72db5968106e",
+          "reviewer": "Codex Hématologie",
+          "mode": "self_review"
+        },
+        "visual_mobile": {
+          "path": "review-package/self-review.json",
+          "sha256": "731c5faee2ba65fe2ef992d3c277b5a8d2cbc2fb9ef52ca5481e72db5968106e",
+          "reviewer": "Codex Hématologie",
+          "mode": "self_review"
+        }
+      },
+      "limitations": [
+        {
+          "id": "C95-L1",
+          "text": "Incidence suisse propre à C95/LALA/LAPM non établie ; données OFS2013–2017 agrégées C91–C95 et registres étrangers restent datés et contextualisés.",
+          "blocking": false
+        },
+        {
+          "id": "C95-L2",
+          "text": "CIM-10-GM2024 lue ; aucune certification exhaustive de facturation2026, ni prix ou remboursement individuel LS/OAMal établi.",
+          "blocking": false
+        },
+        {
+          "id": "C95-L3",
+          "text": "EBMT2026 : résumé public seulement lu, pas texte intégral ; cohortes de greffe sélectionnées non randomisées avec horizons distincts.",
+          "blocking": false
+        },
+        {
+          "id": "C95-L4",
+          "text": "Corpus32entrées avec passages ciblés et réutilisations attribuées ; toutes les références ne sont pas des lectures intégrales nouvelles. Les revues ne remplacent pas les classifications originales pour les points non relus.",
+          "blocking": false
+        },
+        {
+          "id": "C95-L5",
+          "text": "Sept fiches suisses lues aux rubriques déclarées ; quatre produits détaillés en fenêtres. Ce cours ne contient pas les protocoles prescripteurs complets de tous les cytotoxiques, immunothérapies ou greffes.",
+          "blocking": false
+        },
+        {
+          "id": "C95-L6",
+          "text": "LAPM/LAI rares : recommandations et séries conditionnelles, aucune indication suisse nommée LAPM inventée ; soins de support lus selon leur libellé, sans qualifier automatiquement tous les usages hors indication.",
+          "blocking": false
+        },
+        {
+          "id": "C95-L7",
+          "text": "Repères biologiques HUG2019 adultes, pas normes suisses universelles2026, pédiatriques, de grossesse ou seuils transfusionnels.",
+          "blocking": false
+        },
+        {
+          "id": "C95-L8",
+          "text": "OpenStax utilisé pour faits biologiques normaux paraphrasés ; seule photographie édition2016 explicitement CC BY4.0 reproduite. Revue de cytométrie utilisée pour diagnostic/figures, pas fondement américain de conduite thérapeutique.",
+          "blocking": false
+        },
+        {
+          "id": "C95-L9",
+          "text": "Essai sur origine HTTP interceptée, sans déploiement ni accès file:// revendiqué ; ouverture file:// interdite par politique administrateur.",
+          "blocking": false
+        },
+        {
+          "id": "C95-L10",
+          "text": "Sur mobile, diagrammes de cytométrie denses : utiliser zoom/ordinateur pour axes fins ; légendes françaises explicites. Barres flottantes Plan/pagination héritées peuvent masquer temporairement une portion lors du défilement ; moteur partagé non modifié.",
+          "blocking": false
+        },
+        {
+          "id": "C95-L11",
+          "text": "Bandeau et compteurs globaux hérités ne mesurent pas cette campagne. Auto-relectures attribuées au parent Codex, sans audit indépendant ni certification médicale humaine.",
+          "blocking": false
+        }
+      ],
+      "history_reconciled_at": "2026-11-02T14:58:24.376802+00:00",
+      "provenance": "Reconstitué depuis achèvement et manifeste effectivement présents, sans nouvel achèvement ni relecture."
+    },
+    {
+      "selected_lesson": "D63",
+      "complete": true,
+      "completion": {
+        "agent": "codex_hematologie",
+        "code": "D63",
+        "at": "2026-11-02T12:57:01+00:00",
+        "branch": "codex/alpha77/d63-integrate-g1",
+        "worktree": "/workspace/Medina-hematologie-D63",
+        "folder": "/workspace/Medina-hematologie-D63/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D63-INTEGRATE",
+        "manifest_sha256": "8482e3b2962cb8fca70b95edb7d67d6eb09cd287e9b23ce354ac78801e8a5ccb",
+        "source_binding_sha256": "3208acbd270e60b1b3ffb411f28fd998eeb9cd381f73bd18dcbe6f86b08426dc",
+        "review_modes": {
+          "medical": "self_review",
+          "language": "self_review",
+          "visual_desktop": "self_review",
+          "visual_mobile": "self_review"
+        },
+        "clinical_certification": false,
+        "publication_allowed": false,
+        "preview_sha256": "9f800db389bfa4eccbd288bca00011126cf47239771c2a57be5759a1dc2c8896",
+        "semiology_contract": {
+          "code": "D63",
+          "observed_at": "2026-11-02T12:57:01+00:00",
+          "passed": true,
+          "checks": {
+            "six_science_tabs": true,
+            "first_selected_semio": true,
+            "semio_panel_label_and_visible": true,
+            "first_unit_exact_h3": true,
+            "nine_named_sections": true,
+            "linked_sources_in_semio": true,
+            "clinical_semio_marker": true
+          },
+          "findings": [],
+          "source_hashes": {
+            "chapters/D63/D63_a.html": "8b09b97f4331e739b2824bcfa81b5eda665f0eb4ffb23ec5066aab9204f4a285",
+            "chapters/D63/D63_b.html": "10cee745e0304f69a709fdacf4fecea5edad37539df286077289f071e5a34eb1",
+            "chapters/D63/D63_c.html": "5af3a09166b603a10109d4c01d6aeb5c74494daf3d04c4688cbc6ed98e59dc25",
+            "chapters/D63/D63_d.html": "6b0a03ec32073073ae2d042a8eb01f7972ccbc6aab89abe4b2a328aa02da17f5"
+          },
+          "clinical_certification": false,
+          "author_activity_refreshed": false,
+          "source_bindings_refreshed": false,
+          "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+        }
+      },
+      "preview": "/workspace/Medina-hematologie-D63/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D63-INTEGRATE/D63-apercu-autonome.html",
+      "preview_sha256": "9f800db389bfa4eccbd288bca00011126cf47239771c2a57be5759a1dc2c8896",
+      "sources_current": 26,
+      "reviews": {
+        "medical": {
+          "path": "review-package/self-review.json",
+          "sha256": "9114ea3393def0e2d536b2e83329fa41dffd14e0fec9b156d7a2b8dafb6d0cf1",
+          "reviewer": "Codex Hématologie",
+          "mode": "self_review"
+        },
+        "language": {
+          "path": "review-package/self-review.json",
+          "sha256": "9114ea3393def0e2d536b2e83329fa41dffd14e0fec9b156d7a2b8dafb6d0cf1",
+          "reviewer": "Codex Hématologie",
+          "mode": "self_review"
+        },
+        "visual_desktop": {
+          "path": "review-package/self-review.json",
+          "sha256": "9114ea3393def0e2d536b2e83329fa41dffd14e0fec9b156d7a2b8dafb6d0cf1",
+          "reviewer": "Codex Hématologie",
+          "mode": "self_review"
+        },
+        "visual_mobile": {
+          "path": "review-package/self-review.json",
+          "sha256": "9114ea3393def0e2d536b2e83329fa41dffd14e0fec9b156d7a2b8dafb6d0cf1",
+          "reviewer": "Codex Hématologie",
+          "mode": "self_review"
+        }
+      },
+      "limitations": [
+        {
+          "id": "D63-L1",
+          "text": "Aucune incidence suisse contemporaine propre à D63 établie ; cohortes hétérogènes et ancienne série de 1997 citée indirectement ne deviennent pas une probabilité individuelle actuelle.",
+          "blocking": false
+        },
+        {
+          "id": "D63-L2",
+          "text": "Corpus de 26 entrées : passages ciblés, trois FI suisses et réutilisations attribuées. Les reçus précisent leur profondeur ; aucune lecture intégrale nouvelle de toutes les sources revendiquée.",
+          "blocking": false
+        },
+        {
+          "id": "D63-L3",
+          "text": "Versions FI retrouvées : ferro sanol avril 2021, Eprex août 2021, Ferinject juin 2025. Recommandation et indication suisse sont distinctes ; aucun protocole prescripteur universel ou statut suisse HIF-PHI inventé.",
+          "blocking": false
+        },
+        {
+          "id": "D63-L4",
+          "text": "Eprex : ambiguïté des conditions oncologiques de réponse à quatre semaines reliées par ou conservée ; cas discordant à clarifier avec prescripteur/protocole, aucun algorithme certain reconstruit.",
+          "blocking": false
+        },
+        {
+          "id": "D63-L5",
+          "text": "Différences ECCO TSAT 16/20 %, CHr ECCO 29 versus ESMO 28 pg, ferritine medix/Delphi et cible Eprex/KDIGO explicites. Leurs populations, méthodes et objectifs ne sont pas fusionnés.",
+          "blocking": false
+        },
+        {
+          "id": "D63-L6",
+          "text": "Tableau graphique des classes ESC 2023 non lu ; seules les recommandations textuelles et résultats IRONMAN effectivement consultés sont utilisés. Aucun bénéfice de mortalité inventé.",
+          "blocking": false
+        },
+        {
+          "id": "D63-L7",
+          "text": "Repères HUG 2019 adultes datés ; OMS 2024 ne couvre pas par ce tableau tous les moins de six mois ou plus de 65 ans. Les seuils diagnostiques ne sont pas des ordres de transfusion.",
+          "blocking": false
+        },
+        {
+          "id": "D63-L8",
+          "text": "Deux images humaines normales, quatre occurrences et seize repères de légende. La photographie macroscopique ne montre pas les lignées ; le frottis à champ large ne permet pas un comptage réticulocytaire ni un diagnostic de D63. Grossissement/zoom utile pour détails fins, surtout mobile.",
+          "blocking": false
+        },
+        {
+          "id": "D63-L9",
+          "text": "Moteur hérité : les flèches ne déplacent pas les sous-onglets. Navigation Tab puis Entrée et états ARIA testés ; barres flottantes Plan/pagination peuvent recouvrir temporairement une zone lors du défilement. Aucun moteur partagé modifié.",
+          "blocking": false
+        },
+        {
+          "id": "D63-L10",
+          "text": "Essai du vrai moteur sur origine HTTP interceptée et sans requêtes externes ; aucun déploiement ni essai file:// revendiqué. Les compteurs et bandeaux globaux hérités ne mesurent pas cette campagne.",
+          "blocking": false
+        },
+        {
+          "id": "D63-L11",
+          "text": "Couverture 14/20 et auto-relectures attribuées au parent Codex ; aucune revue indépendante ou validation médicale humaine. Publication sur branche et attente de revue Vial seulement, aucune PR/main.",
+          "blocking": false
+        },
+        {
+          "id": "D63-L12",
+          "text": "CIM-10-GM 2024 du projet : D63.0* et D63.8* vérifiés dans les données OFS ; aucune certification exhaustive de facturation 2026, aucun prix ni remboursement individuel présumé.",
+          "blocking": false
+        }
+      ],
+      "history_reconciled_at": "2026-11-02T14:58:24.376802+00:00",
+      "provenance": "Reconstitué depuis achèvement et manifeste effectivement présents, sans nouvel achèvement ni relecture."
+    },
+    {
+      "selected_lesson": "C92",
+      "title": "Leucémie myéloïde",
+      "current": {
+        "code": "C92",
+        "worktree": "/workspace/Medina-hematologie-C92",
+        "branch": "codex/alpha77/c92-integrate-g1",
+        "status": "termine",
+        "allow_new_course": true,
+        "shared_path_reserved": "chapters.json",
+        "global_words": 23359,
+        "science_words": 5426,
+        "science_disciplines": 6,
+        "science_figures": 8,
+        "original_human_images": 4,
+        "semio_sections": 9,
+        "popups": 42,
+        "quiz": 8
+      },
+      "sources_current": 41,
+      "preview": "/workspace/Medina-hematologie-C92/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C92-INTEGRATE/C92-apercu-autonome.html",
+      "preview_sha256": "705aede8b78730ee8eef93bc532888920d32c8f25581d2351d04a10f2b1b5128",
+      "tests": {
+        "verification": "/workspace/Medina-hematologie-C92/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C92-INTEGRATE/verification.json",
+        "automated_checks_passed": 6,
+        "strict_semiology_passed": 7,
+        "science_words": 5426,
+        "science_disciplines": 6,
+        "science_figures": 8,
+        "windows": 42,
+        "quiz": 8,
+        "originals": 4,
+        "occurrences": 6,
+        "captures_actually_viewed": 20
+      },
+      "reviews": {
+        "medical": {
+          "path": "review-package/self-review.json",
+          "sha256": "c3896c4a2db3c0af64893bc4dd086d9e0ee61e6f9e7c424e9ca4de70b29ea79b",
+          "reviewer": "Codex Hématologie",
+          "mode": "self_review"
+        },
+        "language": {
+          "path": "review-package/self-review.json",
+          "sha256": "c3896c4a2db3c0af64893bc4dd086d9e0ee61e6f9e7c424e9ca4de70b29ea79b",
+          "reviewer": "Codex Hématologie",
+          "mode": "self_review"
+        },
+        "visual_desktop": {
+          "path": "review-package/self-review.json",
+          "sha256": "c3896c4a2db3c0af64893bc4dd086d9e0ee61e6f9e7c424e9ca4de70b29ea79b",
+          "reviewer": "Codex Hématologie",
+          "mode": "self_review"
+        },
+        "visual_mobile": {
+          "path": "review-package/self-review.json",
+          "sha256": "c3896c4a2db3c0af64893bc4dd086d9e0ee61e6f9e7c424e9ca4de70b29ea79b",
+          "reviewer": "Codex Hématologie",
+          "mode": "self_review"
+        }
+      },
+      "completion": {
+        "agent": "codex_hematologie",
+        "code": "C92",
+        "at": "2026-11-02T14:52:53+00:00",
+        "branch": "codex/alpha77/c92-integrate-g1",
+        "worktree": "/workspace/Medina-hematologie-C92",
+        "folder": "/workspace/Medina-hematologie-C92/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C92-INTEGRATE",
+        "manifest_sha256": "789d54e4e4429da148570027c1b713c320ed784eb0cbe79f975bdd00c6f89515",
+        "source_binding_sha256": "a94f74d03bca6f124fbb4b275e4c51474947bfc729b84725fda9226d0427e1b6",
+        "review_modes": {
+          "medical": "self_review",
+          "language": "self_review",
+          "visual_desktop": "self_review",
+          "visual_mobile": "self_review"
+        },
+        "clinical_certification": false,
+        "publication_allowed": false,
+        "preview_sha256": "705aede8b78730ee8eef93bc532888920d32c8f25581d2351d04a10f2b1b5128",
+        "semiology_contract": {
+          "code": "C92",
+          "observed_at": "2026-11-02T14:52:53+00:00",
+          "passed": true,
+          "checks": {
+            "six_science_tabs": true,
+            "first_selected_semio": true,
+            "semio_panel_label_and_visible": true,
+            "first_unit_exact_h3": true,
+            "nine_named_sections": true,
+            "linked_sources_in_semio": true,
+            "clinical_semio_marker": true
+          },
+          "findings": [],
+          "source_hashes": {
+            "chapters/C92/C92_a.html": "8507fa7693108fdfc76fb7dc6e23ecb84dae1227b7cb7aa79e182a6ff5ec9d0f",
+            "chapters/C92/C92_b.html": "5f7c04915c2e4eabe355fa853b2a5f347f0627f819c9ceafc203191c5cfaeb80",
+            "chapters/C92/C92_c.html": "1716c5ca03c9d9e979fe26da1634b8911e1afe86d7f81aaa8199a69fb4e4e45a",
+            "chapters/C92/C92_d.html": "a5c236cd4a9e07e58cb2b8469309d040470741e4041e32c771fd651f38b1ae0f"
+          },
+          "clinical_certification": false,
+          "author_activity_refreshed": false,
+          "source_bindings_refreshed": false,
+          "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+        }
+      },
+      "limitations": [
+        {
+          "id": "C92-L1",
+          "text": "41 entrées documentaires, dont 15 FI suisses : lectures ciblées, résumé institutionnel du sarcome ORL et réutilisations attribuées. Aucune lecture intégrale générale des documents revendiquée.",
+          "blocking": false
+        },
+        {
+          "id": "C92-L2",
+          "text": "Porte recherche réelle avant rédaction : 38 entrées. Trois FI ajoutées après cette porte pour la pharmacologie ; reçu initial conservé, aucun effet rétroactif.",
+          "blocking": false
+        },
+        {
+          "id": "C92-L3",
+          "text": "Pas d’incidence suisse actuelle propre à chaque sous-type C92 établie ; statistiques C91–C95 et cohortes européennes non transformées en taux suisse spécifique.",
+          "blocking": false
+        },
+        {
+          "id": "C92-L4",
+          "text": "OMS 2022, ICC, ELN 2022 intensif et ELN 2024 moins intensif ont des portées différentes ; terminologie CIM et ancien libellé AML-MRC de FI non assimilés automatiquement aux entités modernes.",
+          "blocking": false
+        },
+        {
+          "id": "C92-L5",
+          "text": "LPA : usage européen récent ATO de première ligne haut risque distinct de la FI suisse Trisenox non haut risque ; divergence de suspension ATO/ATRA lors de différenciation explicitée.",
+          "blocking": false
+        },
+        {
+          "id": "C92-L6",
+          "text": "Vanflyta : entretien après allogreffe exclu de l’indication suisse consultée ; colonnes de réduction pour interaction et toxicité distinctes.",
+          "blocking": false
+        },
+        {
+          "id": "C92-L7",
+          "text": "Vyxeos : unité de bilirubine incohérente dans extraction française, aucun seuil numérique recopié ni corrigé de mémoire. Schéma liposomal non interchangeable avec molécules libres.",
+          "blocking": false
+        },
+        {
+          "id": "C92-L8",
+          "text": "Daunoblastin : exemples posologiques de FI ne hiérarchisent pas tous les protocoles actuels ; formulations de contre-indications et précautions parfois divergentes, vérification spécialisée requise.",
+          "blocking": false
+        },
+        {
+          "id": "C92-L9",
+          "text": "Vidaza : tableau extrait de cytopénies présente une incohérence de libellé ; aucun algorithme certain reconstruit à partir de cette extraction.",
+          "blocking": false
+        },
+        {
+          "id": "C92-L10",
+          "text": "Quatre originaux, six occurrences et vingt-quatre repères de légende ; pas de génotype, incidence ou décompte représentatif déduit d’un champ. Agrandissement utile pour les détails cytologiques fins.",
+          "blocking": false
+        },
+        {
+          "id": "C92-L11",
+          "text": "Moteur hérité : navigation par flèches absente ; Tab puis Entrée testés. Barres fixes pouvant recouvrir temporairement une zone lors du défilement ou sur une capture longue.",
+          "blocking": false
+        },
+        {
+          "id": "C92-L12",
+          "text": "Bandeau hérité PROFILES SSP159/227 non certifié comme cartographie officielle. Texte clinique renvoyant aux situations du référentiel réellement lues ; compteurs globaux de l’interface distincts de cette campagne.",
+          "blocking": false
+        },
+        {
+          "id": "C92-L13",
+          "text": "Essais du moteur natif sur origine HTTP interceptée, requêtes externes bloquées ; aucun déploiement ni fonctionnement file:// affirmé.",
+          "blocking": false
+        },
+        {
+          "id": "C92-L14",
+          "text": "Quatre catégories de revue attribuées au même parent en self_review ; aucune revue médicale humaine indépendante. Matrices14/20 et compteurs ne sont pas un score de qualité médicale.",
+          "blocking": false
+        },
+        {
+          "id": "C92-L15",
+          "text": "CIM-10-GM 2024 OFS : sous-codes et rémission relus. Aucune certification exhaustive de facturation2026 ni garantie de remboursement individuel ; revue Vial attendue avant toute PR/main.",
+          "blocking": false
+        }
+      ],
+      "complete": true
     }
-  ],
-  "worktree": "/workspace/Medina-hematologie-C92",
-  "branch": "codex/alpha77/c92-integrate-g1",
-  "sources_read": 41,
-  "completed_sections": 7,
-  "entry_gate": {
-    "passed": true,
-    "at": "2026-11-02T13:43:21.274320+00:00",
-    "canonical_unchanged": true,
-    "source_entries": 38
-  },
-  "previous_baseline_comparator_D63": {
-    "words": 14074,
-    "windows": 36,
-    "quiz": 8,
-    "images": 0,
-    "svg": 3,
-    "files": [
-      "chapters/D63/D63_a.html",
-      "chapters/D63/D63_b.html",
-      "chapters/D63/D63_c.html",
-      "chapters/D63/D63_d.html",
-      "chapters/D63/D63_pop1.html",
-      "chapters/D63/D63_pop2.html"
-    ]
-  }
+  ]
 }

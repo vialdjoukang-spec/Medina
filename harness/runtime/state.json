@@ -63,8 +63,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE"
       ],
       "started_at": "2026-11-02T14:33:11+00:00",
-      "activity_at": "2026-11-02T14:43:54+00:00",
-      "message": "E40 : nomenclature OFS E40/E42/E43 réellement lue ; guide OMS d’implémentation 28.07.2026 découvert et cache fournisseur obtenu, sections cliniques à lire ; trois FI récupérées, pertinence/versions à vérifier. Aucune rédaction avant Betta.",
+      "activity_at": "2026-11-02T15:05:04+00:00",
+      "message": "Lectures ciblées réelles OMS-UNICEF2026 : gradation annexe3, triage4.2, stabilisation4.6, antibiotiques annexe14 ; GLIM2025 critères adulte et limites albumine ; FI Benerva avril2019 et Amoxicilline SpirigHC août2024 lues, divergences de fréquence attribuées ; cinq originaux vus, redondance hépatique rejetée.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -75,57 +75,32 @@
       "receipt_sha256": "551cc7e67bac5ac8c64cd5883da157a0020162aba26731400d93ef95b6e30915"
     },
     "codex_hematologie": {
-      "lesson": "C92",
-      "worktree": "/workspace/Medina-hematologie-C92",
-      "stage": "termine",
-      "branch": "codex/alpha77/c92-integrate-g1",
+      "lesson": "D62",
+      "worktree": "/tmp/Medina-hematologie-D62",
+      "stage": "recherche",
+      "branch": "codex/alpha77/d62-integrate-g1",
       "allowed_paths": [
-        "chapters/C92",
-        "glossary/c92.py",
-        "assets/img/c92/alpha/codex",
-        "organisation/alpha-publications/Codex/C92",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C92-INTEGRATE",
+        "chapters/D62",
+        "glossary/d62.py",
+        "assets/img/d62/alpha/codex",
+        "organisation/alpha-publications/Codex/D62",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D62-INTEGRATE",
         "chapters.json"
       ],
-      "started_at": "2026-11-02T13:00:22+00:00",
-      "activity_at": "2026-11-02T14:52:54+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "started_at": "2026-11-02T14:57:26+00:00",
+      "activity_at": "2026-11-02T15:01:53+00:00",
+      "message": "D62 : inventaire confirme cours absent et création autorisée ; recherche suisse/européenne engagée. Repérage de sources primaires, aucune lecture intégrale ni porte Betta encore revendiquée.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "1699e96c1ebc30e69144a5139394a3fbc27a1adff9c045b5d2b36bc3e05cdc01"
+      "completed_sections": 0,
+      "receipt_sha256": "b65e75847fa804b14a9c40afd1febe485c6870209d27048445e32a72ac09ef51"
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T04:33:09+00:00",
-      "action": "complete",
-      "agent": "codex_hematologie",
-      "code": "C86"
-    },
-    {
-      "at": "2026-11-02T04:35:07+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T04:35:26+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "recherche",
-      "message": "I64 : vérification des recommandations HIC ESO 2025, des antidotes suisses et du signal Swissmedic Konakion de juillet 2026 ; rédaction native en préparation, aucun test de contenu déclaré."
-    },
-    {
-      "at": "2026-11-02T04:35:40+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
     {
       "at": "2026-11-02T04:35:41+00:00",
       "action": "watch",
@@ -1388,6 +1363,32 @@
     },
     {
       "at": "2026-11-02T14:55:15+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T14:57:26+00:00",
+      "action": "claim",
+      "agent": "codex_hematologie",
+      "code": "D62"
+    },
+    {
+      "at": "2026-11-02T15:01:53+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "recherche",
+      "message": "D62 : inventaire confirme cours absent et création autorisée ; recherche suisse/européenne engagée. Repérage de sources primaires, aucune lecture intégrale ni porte Betta encore revendiquée."
+    },
+    {
+      "at": "2026-11-02T15:05:04+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "recherche",
+      "message": "Lectures ciblées réelles OMS-UNICEF2026 : gradation annexe3, triage4.2, stabilisation4.6, antibiotiques annexe14 ; GLIM2025 critères adulte et limites albumine ; FI Benerva avril2019 et Amoxicilline SpirigHC août2024 lues, divergences de fréquence attribuées ; cinq originaux vus, redondance hépatique rejetée."
+    },
+    {
+      "at": "2026-11-02T15:05:16+00:00",
       "action": "watch",
       "ok": true,
       "findings": 1
