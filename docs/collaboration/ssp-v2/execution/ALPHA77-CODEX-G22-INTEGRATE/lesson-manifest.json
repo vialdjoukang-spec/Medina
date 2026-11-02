@@ -1,0 +1,987 @@
+{
+  "code": "G22",
+  "title": "G22 — Syndrome parkinsonien au cours de maladies classées ailleurs",
+  "author": "sol_neurologie",
+  "harness_agent_id": "astra_neurologie",
+  "model": "gpt-6.1-sol",
+  "reasoning": "high",
+  "recorded_at": "2026-11-02T17:24:27.221997+00:00",
+  "branch": "codex/alpha77/g22-integrate-g1",
+  "base": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+  "sources": [
+    {
+      "id": "R1",
+      "title": "OFS : CIM-10-GM française, ClaML 2024",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/32686264/master",
+      "publisher": "Office fédéral de la statistique",
+      "read_at": "2026-11-02T17:03:11.760980+00:00",
+      "section": "Entrée G22 complète, inclusion réciproque A52.1 et inclusions E83.0 ; lignes correspondantes CSV également lues",
+      "passage": "G22* est une manifestation sans subdivision ; parkinsonisme syphilitique associé à A52.1† explicitement indiqué dans les deux sens. E83.0 inclut Wilson et Menkes sans constituer une paire G22 automatique.",
+      "population": "Population propre à la source, précisée dans passages et limites",
+      "limits": "Pas toutes les règles de facturation 2026 lues ; autre source CSV asset32686265 distincte. A52.1 au-delà des inclusions pertinentes non utilisé.",
+      "source_sha256": "04c9e9e5c95b2cbe2b8244872e6a6cbd5a7fc2358805e908b11d0e15784653be",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R2",
+      "title": "BfArM : entrée G22 complète",
+      "url": "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-g20-g26.htm",
+      "publisher": "BfArM",
+      "read_at": "2026-11-02T17:03:11.760980+00:00",
+      "section": "Entrée G22 complète jusqu’à G23",
+      "passage": "La classification allemande confirme G22* et son inclusion syphilitique A52.1†, sans sous-code à décimale.",
+      "population": "Population propre à la source, précisée dans passages et limites",
+      "limits": "Classification, pas guide thérapeutique ni certification de codage suisse. Premier parseur XML a échoué sur XHTML, lecture obtenue ensuite par BeautifulSoup.",
+      "source_sha256": "aff79c8900a0ed2c56d7d2b56ec56ca418bb49e30ccc0bce1e9c59b3fd202cb1",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R3",
+      "title": "DGN/SNG : Neurosyphilis",
+      "url": "https://register.awmf.org/assets/guidelines/030-101l_S1_Neurosyphilis_2026-05.pdf",
+      "publisher": "DGN et sociétés participantes dont Société suisse de neurologie",
+      "read_at": "2026-11-02T17:03:11.760980+00:00",
+      "section": "PDF pages imprimées 1–19 et 21–30 par service web ; méthodes, critères, formes, tests, traitement, suivi, notification et tables",
+      "passage": "Diagnostic combinant clinique, sérum et liquide céphalorachidien ; anticorps tréponémiques persistants ne prouvent pas activité. VDRL négatif ne suffit pas à exclure. PCR non recommandée comme test universel. Anticorps intrathécaux corrigés des quotients et fonction de barrière. Traitement principal pénicilline G 14 jours ou ceftriaxone 2 g IV par jour 14 jours. Un schéma cité est 4 doses de 6 millions UI par jour. Pas d’études en faveur des corticoïdes adjuvants systématiques. Contrôle clinique prioritaire, ponction selon réponse et contexte.",
+      "population": "Population propre à la source, précisée dans passages et limites",
+      "limits": "Parenthèse d’équivalence des doses source incohérente : ne pas la recopier ni la corriger silencieusement. Tests disponibles en Allemagne non extrapolés aux laboratoires suisses. Critères de neurosyphilis, pas score universel G22. HTTP direct a retourné HTML, lecture effective du PDF par autre service sans changement d’identité. Page20 non revendiquée.",
+      "source_sha256": "2d0f3df09b85a97028e1b9f7c63c8d255a698b210e61398e40c5338e0408da1c",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R4",
+      "title": "DGN : Parkinson-Krankheit, sémiologie et diagnostic",
+      "url": "https://register.awmf.org/assets/guidelines/030-010l_Parkinson_Krankheit_2023-11_1.pdf",
+      "publisher": "DGN",
+      "read_at": "2026-11-02T17:03:11.760980+00:00",
+      "section": "Définitions pages24–25 ; question3 pages33–34, en-tête ; pas traitement complet",
+      "passage": "Bradykinésie explorée par mouvements répétés, rigidité indépendante de la vitesse ; roue dentée isolée sans résistance insuffisante. Tremblement non obligatoire. Instabilité posturale demande d’exclure atteintes sensorielles/cérébelleuses. Un syndrome secondaire clinique ne détermine pas à lui seul le code G22. MDS critères de maladie de Parkinson nécessitent exclusions et signes de soutien.",
+      "population": "Population propre à la source, précisée dans passages et limites",
+      "limits": "Définition syndromique large de DGN inclut instabilité posturale ; ne pas la confondre avec noyau moteur strict MDS. Guide maladie de Parkinson non transférable à toutes les causes G22. Métadonnées détaillées version8.1 à vérifier si utilisées.",
+      "source_sha256": "9327adecf9a7e4f37bc146f57927454e5ef67b1b4fa48a9298c8ff843ab1d5cd",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R5",
+      "title": "EASL-ERN Clinical Practice Guidelines on Wilson’s disease",
+      "url": "https://easlcampus.eu/sites/default/files/2025-03/EASL-ERN_CPG_on_Wilson%27s_Disease.pdf",
+      "publisher": "EASL-ERN, Journal of Hepatology",
+      "read_at": "2026-11-02T17:03:11.760980+00:00",
+      "section": "Résumé EPMC puis PDF : diagnostic p695–696 tables5–6 ; aggravation neurologique p707 ; prévention p714 ; surveillance p716–717 ; grossesse et traitements symptomatiques p708 ; introduction ATP7B p690 ; figure2/table5 page695 effectivement comparées sur rendu et texte, passage seuil18,5% p696",
+      "passage": "Diagnostic par faisceau incluant céruloplasmine, cuivre urinaire24h, examen lampe à fente, génétique ATP7B et score Leipzig. REC>15% dans table5, mais figure2 REC≥15% ; passage18,5% correspond à une étude citée, pas un seuil unique. Borne15% explicitement laissée au laboratoire et au centre. Céruloplasmine normale ne suffit pas à exclure. Aggravation neurologique initiale possible, doses de chélateur commencées faibles et augmentées lentement ; surveillance spécialisée. Cuivre libre calculé peut être négatif et biologiquement incohérent, ne pas en faire une cible isolée. Continuité de thérapie anti-cuivre recommandée en grossesse/allaitement au niveau du guide ; FI Cuprior exige analyse bénéfice-risque et décision spécifique d’allaitement, ne pas effacer cette différence.",
+      "population": "Population propre à la source, précisée dans passages et limites",
+      "limits": "Wilson constitue ici un différentiel causal ; pas d’attribution automatique G22. Méta-analyse rétrospective ne permet pas de classer précisément le risque par médicament. Toutes les sections transplantation, pédiatrie, grossesse pas encore lues. Divergence de borne figure/table conservée, sans harmonisation.",
+      "source_sha256": "54fb8318e32f1053c6ddbfc19ae33ccc8db28139da99fce60ec76fcdcd71d6ee",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R6",
+      "title": "Cuprior : information professionnelle suisse",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680677190018",
+      "publisher": "Swissmedic, information via AmiKo",
+      "read_at": "2026-11-02T17:03:11.760980+00:00",
+      "section": "Composition, indications, doses adulte/enfant/rein/foie/âge, administration, avertissements, interactions, grossesse-allaitement, date ; mécanisme et pharmacocinétique",
+      "passage": "Un comprimé équivaut à150mg de trientine base, tétrachlorhydrate non interchangeable silencieusement. Indiqué dès5ans dans Wilson avec intolérance à D-pénicillamine, initiation spécialisée. Adulte450–975mg/j en2–4prises ; début faible et adaptation clinique. Suivi neurologique toutes2–3semaines initialement. À jeun1h avant/2h après repas et1h des autres médicaments/aliments/lait. Association zinc déconseillée. Grossesse nécessite analyse bénéfice-risque et dose efficace minimale ; allaitement décision individuelle. Chélation par complexe stable éliminé par voie rénale, absorption faible et variable, interactions alimentaires expliquées par formulation et complexes.",
+      "population": "Population propre à la source, précisée dans passages et limites",
+      "limits": "Pas de masse du sel inventée. Valeur de cuivre libre calculé FI à discuter avec limites EASL et laboratoire, pas cible décisionnelle autonome. Rein/foie données limitées avec surveillance. Pas une prescription générale G22.",
+      "source_sha256": "652307151e7b70fe40d5b289b4ccc04b9f1c954c16470844f324c47239dd49e0",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R7",
+      "title": "Pénicilline Grünenthal : information professionnelle suisse",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680562710024",
+      "publisher": "Swissmedic, information via AmiKo",
+      "read_at": "2026-11-02T17:03:11.760980+00:00",
+      "section": "Composition, indications, doses, tableau rénal, débit, contre-indications, neurotoxicité, sodium, interactions, grossesse-allaitement, pharmacocinétique, date ; propriétés mécanisme paroi et efficacité temps-dépendante",
+      "passage": "10millionsUI de benzylpénicilline sous forme sodique contiennent386mg de sodium. Dose et intervalle selon foyer et fonction rénale ; tableau rénal donné pour70kg non protocole G22. Au-delà2millionsUI, débit maximal0,5millionUI/min. Allergie pénicilline contre-indiquée ; urticaire immédiate impose arrêt et évaluation urgente, distinct d’une réaction de Jarisch-Herxheimer. Hautes doses et insuffisance rénale favorisent neurotoxicité et convulsions. Surveillance hémogramme, rein, électrolytes. Élimination surtout rénale et courte demi-vie ; diffusion méningée accrue par inflammation. Grossesse autorisée, allaitement exposition faible mais sensibilisation/flore possibles.",
+      "population": "Population propre à la source, précisée dans passages et limites",
+      "limits": "Date mai2023 contredit date juin2025 héritée, cette dernière écartée. FI générale et recommandation neurosyphilis distinctes ; ne pas transposer sa plage20–60millionsUI en prescription automatique. Coquille FI sodium plus de10UI/j non utilisée.",
+      "source_sha256": "56f0416a48cc498e23b7e8cbf9a171c6aad74e7c2d301317ea7ecdffe575141c",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R8",
+      "title": "Sabre et coll. : Neurosyphilis as a great imitator, case report",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4964046/",
+      "publisher": "BMC Research Notes ; Tartu, Estonie",
+      "read_at": "2026-11-02T17:03:11.760980+00:00",
+      "section": "Résumé et présentation clinique complète ; droits CC BY4.0 ; consentement écrit de patient pour publication et images, légende complète figure1, identifiant du fichier original et pixels inspectés",
+      "passage": "Cas42ans associant déclin cognitif, myoclonies, ataxie, bradykinésie-rigidité asymétrique et anomalies pupillaires, avec inflammation et sérologie du liquide. Amélioration décrite après antibiothérapie et soins associés. IRM avec atrophie, non spécifique de l’agent.",
+      "population": "Population propre à la source, précisée dans passages et limites",
+      "limits": "Observation unique, ni incidence ni réversibilité universelle. MRI avec atrophie asymétrique plus marquée à droite selon légende ; pas signe pathognomonique ni preuve autonome de cause. Original manuel CC BY4.0, pixels inchangés, tableau français ajouté. Aucun schéma historique additionnel n’est repris comme recommandation.",
+      "source_sha256": "06b32936b4ffaa975ded16911cb3701b914002311398ab00269a34482e4180a3",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R9",
+      "title": "Shi et coll. : Unmasking the hidden culprit, neurosyphilis mimicking parkinsonism",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11887257/",
+      "publisher": "BMC Neurology ; Kaifeng, Chine",
+      "read_at": "2026-11-02T17:03:11.760980+00:00",
+      "section": "Résumé et présentation clinique, licence, éthique et consentement",
+      "passage": "Cas50ans avec troubles cognitifs/comportementaux, bradykinésie et tremblement ; rôle des psychotropes discuté, amélioration après plusieurs interventions. IRM atrophie non spécifique. Consentement écrit familial pour publication des images selon auteurs et approbation éthique rapportée.",
+      "population": "Population propre à la source, précisée dans passages et limites",
+      "limits": "Observation chinoise, pas fondement européen de conduite. Pas de recommandation de corticoïdes systématiques ni reprise des injections retard historiques. Retrait psychotropes et traitements concomitants empêchent attribution causale simple.",
+      "source_sha256": "75add1e8db1995981ae1a2276f97cd9f7cdca99c3cff9575d5b0581e3f598109",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R10",
+      "title": "HUG : Syndromes parkinsoniens, update pour le praticien",
+      "url": "https://www.hug.ch/sites/interhug/files/structures/medecine_de_premier_recours/parkinsonism_smpr_180418.pdf",
+      "publisher": "Vanessa Fleury et Yves-Laurent Jackson, Hôpitaux universitaires de Genève",
+      "read_at": "2026-11-02T17:06:31.008392+00:00",
+      "section": "Identifier1–3 et Investiguer1–3",
+      "passage": "Bradykinésie au premier plan, tests vitesse/amplitude, recherche rigidité et tremblement au repos ; examen actif et passif distincts. Interroger traitements, chronologie, symétrie et terrain ; rechercher signes atypiques, cognition, coordination et oculomotricité.",
+      "population": "Population et limites précisées dans les passages lus",
+      "limits": "Enseignement suisse ancien, pas recommandation thérapeutique2026. Pas reprise exhaustive du tableau médicamenteux ancien.",
+      "source_sha256": "a5654e27da3fe17d214461148f0d957551eef07622adf7498556cfb5839aef3c",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R11",
+      "title": "Secondary parkinsonism associated with focal brain lesions",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11408197/",
+      "publisher": "Berlot, Pavlović, Kojović ; Frontiers in Neurology, Ljubljana",
+      "read_at": "2026-11-02T17:06:31.008392+00:00",
+      "section": "Résumé, introduction, infections et opportunistes, discussion anatomie/réseaux et conclusion",
+      "passage": "Le noyau clinique associe bradykinésie à rigidité et/ou tremblement de repos. Lésion mésencéphalique, ganglions de la base ou réseau connecté peuvent produire un syndrome ; lésion visible ne détermine pas seule le phénotype. Causes infectieuses, toxiques et métaboliques se distinguent par contexte, tempo, image et autres signes. Opportunistes et toxicité de traitements coexistent au diagnostic différentiel.",
+      "population": "Population et limites précisées dans les passages lus",
+      "limits": "Revue narrative, pas directive suisse G22 ni table automatique de codage. Pas tous les chapitres de causes lus, ni preuves originales de chaque réseau relues. Réversibilité variable et non garantie.",
+      "source_sha256": "c479564f8a8baeb2624320966de824bf645130bb25faeb4512c5ff9262695387",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R12",
+      "title": "Manuel de codage médical, version2026",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36144082/master",
+      "publisher": "Office fédéral de la statistique",
+      "read_at": "2026-11-02T17:06:31.008392+00:00",
+      "section": "Présentation officielle et D03m codes dague-étoile, page34",
+      "passage": "Étiologie dague prioritaire, suivie immédiatement de manifestation étoile ; code étoile jamais seul. Définition du diagnostic supplémentaire et règles de diagnostic principal restent applicables. Les associations ne se généralisent pas à tous les couples cause-manifestation hors système.",
+      "population": "Population et limites précisées dans les passages lus",
+      "limits": "Règle ciblée lue, pas audit de facturation ni totalité du manuel2026 et de ses mises à jour.",
+      "source_sha256": "be457e79bb313072e3be9b98ea4cff0fb37929f9d4c68b257c5ff9e6e3c7d9c4",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R13",
+      "title": "Guide de la déclaration obligatoire2026 : syphilis",
+      "url": "https://www.bag.admin.ch/dam/fr/sd-web/MDjbgfEN6jEf/guide-de-la-declaration-obligatoire.pdf",
+      "publisher": "Office fédéral de la santé publique",
+      "read_at": "2026-11-02T17:06:31.008392+00:00",
+      "section": "Page web responsabilités puis guide avant-propos et page109 syphilis",
+      "passage": "Critères cliniques et laboratoire détaillés, délai1semaine. Médecin adresse formulaire au médecin cantonal ; laboratoire analyse positive spécifique déclare électroniquement à OFSP. RPR/VDRL isolés sans confirmation spécifique ne constituent pas les résultats laboratoire à déclarer dans cette rubrique. Syphilis environ12/100000 et près90%hommes indiqués dans guide, pas données G22. Dépistage VIH/autres infections et partenaires selon situation.",
+      "population": "Population et limites précisées dans les passages lus",
+      "limits": "Lecture par service web aprèsHTTPdirect503 ; pas contournement. Pas toutes les définitions de surveillance des pages110–111 lues ; statistiques ne sont ni incidence neurosyphilis ni incidence G22.",
+      "source_sha256": "cd5c0a033db99b813c221f5cc5efe6727ff546edfc7f0024ced2ed5c7be40c4f",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R14",
+      "title": "Ceftriaxon Labatec : information professionnelle",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680598760031",
+      "publisher": "Swissmedic, information professionnelle via AmiKo",
+      "read_at": "2026-11-02T17:06:31.008392+00:00",
+      "section": "Lecture Sol G06 composition, dose adulte, rein/foie, calcium, mécanisme et date, réellement réutilisée G07/G08 puis G22",
+      "passage": "Ceftriaxon Labatec dose adulte générale1–2g/j avec possibilité4g/j pour infections graves. Sous10ml/min ou dialyse maximum2g/j ; restrictions de mélange/calcium et allergies propres au produit. Inhibition de la paroi bactérienne.",
+      "population": "Population et limites précisées dans les passages lus",
+      "limits": "Pas de nouvelle lecture intégrale ; durée14jours et indication neurosyphilis viennent du guideDGN2026 et non d’une dose universelle de FI.",
+      "source_sha256": "4de7a15646144d43d03647d5f55288eb8b37ee4e6b8442c84159212ce8086246",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": true
+    },
+    {
+      "id": "R15",
+      "title": "PROFILES2017 : situations neurologiques",
+      "url": "https://www.siwf.ch/files/pdf24/profiles_2017-broschuere.pdf",
+      "publisher": "PROFILES, objectifs nationaux suisses",
+      "read_at": "2026-11-02T17:06:31.008392+00:00",
+      "section": "Listes SSP96–105 réellement relues : équilibre/chutes, marche, mouvements involontaires/tremblement, parole, cognition, parésie et crises",
+      "passage": "Correspondance pédagogique locale avec troubles de marche, mouvements et cognition ; la leçon fait raisonner cause, signes et urgence.",
+      "population": "Population et limites précisées dans les passages lus",
+      "limits": "Pas une nouvelle table officielle CIM-PROFILES2026 ni une promesse de contenu d’examen.",
+      "source_sha256": "3c07db8e95b8aec160a2c19682b084d15cc7d9eea4fb8f757202c31b8b27177f",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": true
+    },
+    {
+      "id": "R16",
+      "title": "Gray764 : voie motrice et droits de l’original",
+      "url": "https://commons.wikimedia.org/wiki/File:Gray764.png",
+      "publisher": "Gray, Anatomy of the Human Body ; illustration Henry Vandyke Carter, Commons",
+      "read_at": "2026-11-02T17:06:31.008392+00:00",
+      "section": "Page de droits : auteur, source1918, reproduction mécanique et domaine public ; pixels originaux affichés et inspectés",
+      "passage": "Voie motrice corticospinale historique normale, étiquettes cortex, capsule interne, décussation et faisceaux. Sert à distinguer force et lenteur ; aucune maladie de patient ni représentation des réseaux dopaminergiques.",
+      "population": "Population et limites précisées dans les passages lus",
+      "limits": "Image historique schématique, pas imagerie opératoire ; annotations françaises adjacentes ajoutées, pixels inchangés, aucune validation médicale humaine.",
+      "source_sha256": "fad33949feb30902f1f7fd54b1036ae2223357b40541a9b796cd32822fbecef5",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": true
+    }
+  ],
+  "source_counts": {
+    "total": 16,
+    "targeted_G22": 13,
+    "prior_actual_Sol_reads_reused": 3
+  },
+  "monograph": [
+    {
+      "point": 1,
+      "title": "Définition",
+      "anchor": "g22-definition",
+      "sources": [
+        "R1",
+        "R4",
+        "R10",
+        "R11"
+      ],
+      "coverage_explanation": "La bradykinésie et les signes associés sont distingués de faiblesse, douleur et tremblement isolé ; le noyau moteur et le code de manifestation ne sont pas rendus équivalents.",
+      "evidence": [
+        "content-snapshot.html#g22-definition",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 2,
+      "title": "Épidémiologie",
+      "anchor": "g22-epidemiologie",
+      "sources": [
+        "R3",
+        "R8",
+        "R9",
+        "R13"
+      ],
+      "coverage_explanation": "La lacune nationale spécifique G22 est explicite. Chiffres de syphilis globale OFSP et observations de patients gardent leur population sans devenir incidence ou distribution de G22.",
+      "evidence": [
+        "content-snapshot.html#g22-epidemiologie",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 3,
+      "title": "Physiopathologie",
+      "anchor": "g22-s-physio-body",
+      "sources": [
+        "R3",
+        "R5",
+        "R11",
+        "R16"
+      ],
+      "coverage_explanation": "Six sciences relient mouvement normal, perturbation en réseau, infection, cuivre et exposition médicamenteuse aux signes et décisions ; les originaux humains ne sont pas une anatomie IA.",
+      "evidence": [
+        "content-snapshot.html#g22-s-physio-body",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 4,
+      "title": "Démarche clinique",
+      "anchor": "g22-question",
+      "sources": [
+        "R1",
+        "R3",
+        "R10",
+        "R11",
+        "R12"
+      ],
+      "coverage_explanation": "Confirmer le syndrome, établir la cause et vérifier le codage sont trois démarches liées mais distinctes, hiérarchisées selon le tempo, la gravité et les données réellement disponibles.",
+      "evidence": [
+        "content-snapshot.html#g22-question",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 5,
+      "title": "Anamnèse",
+      "anchor": "g22-anamnese",
+      "sources": [
+        "R3",
+        "R5",
+        "R8",
+        "R9",
+        "R10"
+      ],
+      "coverage_explanation": "Chronologie, autonomie, traitements, cognition, symptômes associés et antécédents orientent des questions ciblées ; contexte sexuel abordé confidentiellement sans inférence stigmatisante.",
+      "evidence": [
+        "content-snapshot.html#g22-anamnese",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 6,
+      "title": "Examen clinique",
+      "anchor": "g22-examen-body",
+      "sources": [
+        "R4",
+        "R10",
+        "R11",
+        "R16"
+      ],
+      "coverage_explanation": "Mouvements répétés, résistance passive, force, coordination, pupilles, marche et cognition sont décrits avec conditions, facteurs limitants et sécurité contre les chutes.",
+      "evidence": [
+        "content-snapshot.html#g22-examen-body",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 7,
+      "title": "Syndromes",
+      "anchor": "g22-s-semio-signs",
+      "sources": [
+        "R3",
+        "R4",
+        "R10",
+        "R11"
+      ],
+      "coverage_explanation": "Le noyau moteur et les autres syndromes neurologiques sont reliés aux mécanismes ; tremblement non obligatoire, bradykinésie distincte de faiblesse et roue dentée isolée insuffisante.",
+      "evidence": [
+        "content-snapshot.html#g22-s-semio-signs",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 8,
+      "title": "Diagnostic positif",
+      "anchor": "g22-neurosyph-body",
+      "sources": [
+        "R3",
+        "R5",
+        "R8",
+        "R11"
+      ],
+      "coverage_explanation": "Syndrome moteur, infection neurologique et causalité sont documentés séparément ; sérologie positive ou image non spécifique ne suffisent pas seules à conclure au parkinsonisme syphilitique.",
+      "evidence": [
+        "content-snapshot.html#g22-neurosyph-body",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 9,
+      "title": "Explorations",
+      "anchor": "g22-e-strategie",
+      "sources": [
+        "R3",
+        "R5",
+        "R10",
+        "R11"
+      ],
+      "coverage_explanation": "IRM, sérum/liquide appariés selon indication, bilan cuivre et réexamen répondent à des questions nommées avec leurs limites, sans batterie universelle appliquée à tout ralentissement.",
+      "evidence": [
+        "content-snapshot.html#g22-e-strategie",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 10,
+      "title": "Arbre diagnostique",
+      "anchor": "g22-urgence",
+      "sources": [
+        "R3",
+        "R6",
+        "R7",
+        "R11"
+      ],
+      "coverage_explanation": "Déficit aigu, baisse de vigilance, crise ou menace visuelle changent immédiatement le niveau de soins ; stabiliser et investiguer sans attendre un essai symptomatique ou un code final.",
+      "evidence": [
+        "content-snapshot.html#g22-urgence",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 11,
+      "title": "Prise en charge",
+      "anchor": "g22-traitement-cause",
+      "sources": [
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R14"
+      ],
+      "coverage_explanation": "Traiter cause et handicap en parallèle ; guide neurosyphilis, spécialités suisses exactes et traitement Wilson sont confrontés avec indication, organes, forme et surveillance explicites.",
+      "evidence": [
+        "content-snapshot.html#g22-traitement-cause",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 12,
+      "title": "Prévention et suivi",
+      "anchor": "g22-suivi",
+      "sources": [
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R13"
+      ],
+      "coverage_explanation": "Réponse fonctionnelle, activité causale et toxicité guident le suivi ; cicatrice anticorps et cuivre libre calculé ne sont pas des mesures autonomes de guérison ni d’ajustement.",
+      "evidence": [
+        "content-snapshot.html#g22-suivi",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 13,
+      "title": "Points clés",
+      "anchor": "g22-criteres-body",
+      "sources": [
+        "R1",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R12"
+      ],
+      "coverage_explanation": "Critères de neurosyphilis, score Leipzig, noyau moteur et règle dague-étoile répondent à des questions différentes ; G22 sans subdivision, frontières et formulations restent visibles.",
+      "evidence": [
+        "content-snapshot.html#g22-criteres-body",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 14,
+      "title": "Pièges",
+      "anchor": "g22-cas",
+      "sources": [
+        "R1",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R15"
+      ],
+      "coverage_explanation": "Quatre cas fictifs testent force versus lenteur, sérologie, code manifestation et masse de base Cuprior ; la correspondance pédagogique PROFILES est locale et non une table officielle2026.",
+      "evidence": [
+        "content-snapshot.html#g22-cas",
+        "recherche_G22/sources.json"
+      ]
+    }
+  ],
+  "matrix20": [
+    {
+      "point": 1,
+      "title": "Question clinique et examen fédéral",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g22-question",
+      "sources": [
+        "R10",
+        "R11",
+        "R15"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Reconnaître un syndrome hypokinétique, sa cause et la gravité ; situations marche, mouvements et cognition.",
+      "evidence": [
+        "content-snapshot.html#g22-question",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 2,
+      "title": "Définition et périmètre CIM-10-GM",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g22-code-body",
+      "sources": [
+        "R1",
+        "R2",
+        "R12"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : G22* manifestation, inclusion syphilitiqueA52.1† réciproque, sans subdivision.",
+      "evidence": [
+        "content-snapshot.html#g22-code-body",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 3,
+      "title": "Classifications et stades",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g22-definition",
+      "sources": [
+        "R3",
+        "R4",
+        "R10",
+        "R11"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Noyau moteur, tempo et causes ; pas stade universel G22 ni score de Parkinson transféré à toute cause.",
+      "evidence": [
+        "content-snapshot.html#g22-definition",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 4,
+      "title": "Épidémiologie suisse puis européenne",
+      "status": "covered",
+      "research_status": "LACUNE",
+      "anchor": "g22-epidemiologie",
+      "sources": [
+        "R3",
+        "R8",
+        "R13"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Pas estimation suisse spécifiqueG22 ni ventilation âge/sexe établie ; syphilis globale OFSP et observations européennes gardent leur population. Covered signifie que la question et sa lacune sont traitées, pas que la statistique nationale ou le droit administratif exhaustif a été trouvé ; la matrice Betta conserve LACUNE.",
+      "evidence": [
+        "content-snapshot.html#g22-epidemiologie",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 5,
+      "title": "Normal vers pathologique",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g22-s-physio-body",
+      "sources": [
+        "R3",
+        "R4",
+        "R5",
+        "R11",
+        "R16"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Force, lenteur, réseau moteur, cuivre et infection reliés dans six sciences et originaux humains.",
+      "evidence": [
+        "content-snapshot.html#g22-s-physio-body",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 6,
+      "title": "Étiologies et risques",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g22-causes",
+      "sources": [
+        "R1",
+        "R3",
+        "R5",
+        "R10",
+        "R11"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Syphilis incluse, Wilson et autres causes considérées sans association de code automatique ; médicaments et terrain.",
+      "evidence": [
+        "content-snapshot.html#g22-causes",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 7,
+      "title": "Anamnèse et symptômes",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g22-anamnese",
+      "sources": [
+        "R3",
+        "R5",
+        "R8",
+        "R9",
+        "R10"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Chronologie, exposition, médicaments, cognition, comportement, yeux, foie et autonomie.",
+      "evidence": [
+        "content-snapshot.html#g22-anamnese",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 8,
+      "title": "Examen clinique",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g22-examen-body",
+      "sources": [
+        "R4",
+        "R10",
+        "R11"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Mouvements répétés et passifs, force séparée, repos/posture/action, marche et autres systèmes.",
+      "evidence": [
+        "content-snapshot.html#g22-examen-body",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 9,
+      "title": "Drapeaux rouges et urgence",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g22-urgence",
+      "sources": [
+        "R3",
+        "R8",
+        "R11"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Déficit aigu, baisse de vigilance, crise, fièvre ou signe visuel aigu : équipe urgente ; pas simple essai dopaminergique différant preuve.",
+      "evidence": [
+        "content-snapshot.html#g22-urgence",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 10,
+      "title": "Examens complémentaires",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g22-e-strategie",
+      "sources": [
+        "R3",
+        "R5",
+        "R8",
+        "R11"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : IRM et contexte, sérum/liquide appariés selon suspicion et sécurité ; bilan cuivre multimodal, tests négatifs limités.",
+      "evidence": [
+        "content-snapshot.html#g22-e-strategie",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 11,
+      "title": "Diagnostic différentiel",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g22-differentiel",
+      "sources": [
+        "R4",
+        "R5",
+        "R10",
+        "R11",
+        "R16"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Parkinson dégénératif, iatrogénieG21, atteinte pyramidale, ataxie, dépression, causes vasculaires et métaboliques.",
+      "evidence": [
+        "content-snapshot.html#g22-differentiel",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 12,
+      "title": "Prise en charge suisse",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g22-traitement-cause",
+      "sources": [
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R14"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Guide DGN avec mandat SNG, spécialités suisses exactes ; traitement causal individualisé, rééducation et suivi.",
+      "evidence": [
+        "content-snapshot.html#g22-traitement-cause",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 13,
+      "title": "Complications et pronostic",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g22-complications",
+      "sources": [
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R11"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Dépendance, cognition, chute, séquelles et toxicité ; réversibilité possible sans garantie.",
+      "evidence": [
+        "content-snapshot.html#g22-complications",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 14,
+      "title": "Suivi, prévention et dépistage",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g22-suivi",
+      "sources": [
+        "R3",
+        "R5",
+        "R6",
+        "R13"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Réponse clinique, neuroinfection, partenaires, cuivre/foie et observance ; ne pas confondre cicatrice sérologique et activité.",
+      "evidence": [
+        "content-snapshot.html#g22-suivi",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 15,
+      "title": "Situations particulières",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g22-situations",
+      "sources": [
+        "R5",
+        "R6",
+        "R7",
+        "R14"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Grossesse et allaitement avec différence guide/FI explicite ; enfant et organes ne reçoivent pas dose adulte automatique.",
+      "evidence": [
+        "content-snapshot.html#g22-situations",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 16,
+      "title": "Spécificités suisses",
+      "status": "covered",
+      "research_status": "LACUNE",
+      "anchor": "g22-suisse",
+      "sources": [
+        "R1",
+        "R12",
+        "R13"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : ManuelOFS2026 et déclarationOFSP2026 vérifiés ; remboursement LS,AI,conduite et règles administratives individuelles non établis exhaustivement. Covered signifie que la question et sa lacune sont traitées, pas que la statistique nationale ou le droit administratif exhaustif a été trouvé ; la matrice Betta conserve LACUNE.",
+      "evidence": [
+        "content-snapshot.html#g22-suisse",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 17,
+      "title": "Critères formels",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g22-criteres-body",
+      "sources": [
+        "R3",
+        "R5",
+        "R10",
+        "R11"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Syndrome moteur et causalité séparés ; critères neurosyphilis et Leipzig propres aux causes, pas critère uniqueG22.",
+      "evidence": [
+        "content-snapshot.html#g22-criteres-body",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 18,
+      "title": "Paramètres clés",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g22-p-penicilline",
+      "sources": [
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R14"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Pénicilline24millionsUI/j exemple4×6,14jours et débit propreFI ; Cuprior150mgbase,450–975/j ; REC>15% avec contexte. Différence REC>15% table/≥15% figure explicitée, égalité discutée.",
+      "evidence": [
+        "content-snapshot.html#g22-p-penicilline",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 19,
+      "title": "Sous-codes couverts",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g22-code-body",
+      "sources": [
+        "R1",
+        "R2",
+        "R12"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : G22 sans subdivision ; associationA52.1†, pasG22.x inventé ni Wilson automatiquementcodéG22.",
+      "evidence": [
+        "content-snapshot.html#g22-code-body",
+        "recherche_G22/sources.json"
+      ]
+    },
+    {
+      "point": 20,
+      "title": "Examen fédéral et pièges",
+      "status": "covered",
+      "research_status": "✔",
+      "anchor": "g22-cas",
+      "sources": [
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R15"
+      ],
+      "scope": "Question effectivement traitée avec les passages lus : Quatre cas fictifs : force vs lenteur, sérologie, code manifestation et dose/base ; correspondance pédagogique locale.",
+      "evidence": [
+        "content-snapshot.html#g22-cas",
+        "recherche_G22/sources.json"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "path": "figures/Gray764.png",
+      "canonical_path": "assets/img/g22/alpha/codex/Gray764.png",
+      "original_url": "https://commons.wikimedia.org/wiki/File:Gray764.png",
+      "source_article": "https://commons.wikimedia.org/wiki/File:Gray764.png",
+      "license": "Domaine public : scan mécanique original1918, auteur mort depuis plus100ans ; notice réellement relue et pixels inspectés.",
+      "author": "Gray, Anatomy of the Human Body1918 ; illustrations attribuées à Henry Vandyke Carter.",
+      "annotations": "Quatre repères français adjacents : aire motrice, capsule interne, décussation et faisceaux corticospinaux. Voie normale historique, pas réseau dopaminergique ni lésion clinique.",
+      "medical_review": "Original,provenance,droits et pixels effectivement inspectés par Sol ; images décodées et quatre annotations chacune vérifiées à1440/390,liens IRM actionnables ; onze captures finales réellement inspectées. Self_review de l’auteur, aucune validation médicale humaine.",
+      "sha256": "0aab3ff23b815eb5f6eab0ba8c583726c5994c025899f3f6654f47e566249b09",
+      "source": "R16",
+      "human_origin": true,
+      "pixels_edited": false
+    },
+    {
+      "path": "figures/Neurosyphilis2016.jpg",
+      "canonical_path": "assets/img/g22/alpha/codex/Neurosyphilis2016.jpg",
+      "original_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13104-016-2176-2/MediaObjects/13104_2016_2176_Fig1_HTML.jpg",
+      "source_article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4964046/",
+      "license": "Creative Commons Attribution4.0 : https://creativecommons.org/licenses/by/4.0/ ; attribution et liens source/licence dans légende ; annotations françaises adjacentes ajoutées, pixels inchangés.",
+      "author": "Sabre L, Braschinsky M, Taba P ; BMC Research Notes2016, figure1, auteurs humains.",
+      "annotations": "Quatre annotations françaises adjacentes : six coupes d’un même homme42ans, atrophie asymétrique selon légende, sillons/espaces liquidiens et limites de causalité. Pas de côté écran inféré ni de chronologie thérapeutique inventée.",
+      "medical_review": "Original,provenance,droits et pixels effectivement inspectés par Sol ; images décodées et quatre annotations chacune vérifiées à1440/390,liens IRM actionnables ; onze captures finales réellement inspectées. Self_review de l’auteur, aucune validation médicale humaine.",
+      "sha256": "712b4b1774f8918cbeb7791048e2fc3a59b46ff37965b4ce223fc94ba3aceeae",
+      "source": "R8",
+      "human_origin": true,
+      "pixels_edited": false
+    }
+  ],
+  "semiology": {
+    "section_anchors": [
+      "g22-s-semio-normal",
+      "g22-s-semio-signs",
+      "g22-s-semio-mechanisms",
+      "g22-s-semio-examination",
+      "g22-s-semio-interpretation",
+      "g22-s-semio-differentials",
+      "g22-s-semio-urgency",
+      "g22-s-semio-limits",
+      "g22-s-semio-sources"
+    ]
+  },
+  "reviews": {
+    "medical": {
+      "path": "reviews/medical.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "a183c026af5e7ba877065a5865a983814c6c4fc7dac06576eaa559b6c6a6c533"
+    },
+    "language": {
+      "path": "reviews/language.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "735dfc93de4dd24d0af1448cc7485167806b70a2cc574cb90014e48f730d4212"
+    },
+    "visual_desktop": {
+      "path": "reviews/visual_desktop.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "1be15fa32d8040ecc8ed7337bceb2658625e428946ea64ad45c3f63125ba7b87"
+    },
+    "visual_mobile": {
+      "path": "reviews/visual_mobile.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "2fa2a547a9234d28c3bfe83316632faaeeaefaf1178fa01863fb1484f90e8e94"
+    }
+  },
+  "blocking_findings": [],
+  "documented_limits": [
+    {
+      "topic": "Périmètre et codage",
+      "reason": "G22* manifestation et association syphilitiqueA52.1† vérifiées ; pas synonyme de tous les secondairesG21 ni paire automatique Wilson. Manuel2026 D03m lu ciblé, pas audit exhaustif de facturation.",
+      "evidence": "matrix-20.json"
+    },
+    {
+      "topic": "Épidémiologie",
+      "reason": "Incidence/prévalence suisseG22 et distribution âge/sexe non établies. Chiffres OFSP de syphilis globale, fréquences de Parkinson et cas publiés ne les remplacent pas.",
+      "evidence": "matrix-20.json"
+    },
+    {
+      "topic": "Pénicilline et bornes",
+      "reason": "DGN2026 donne une parenthèse d’équivalence incohérente entre ses rythmes ; exemple4×6=24millionsUI/j gardé explicite. FI Grünenthal réellement mai2023 et non juin2025 héritée ; produit, débit, sodium, rein et allergies conservés. Pas ordonnance universelleG22.",
+      "evidence": "clinical-review-completed.json"
+    },
+    {
+      "topic": "Cuivre, REC et traitement",
+      "reason": "Table5 EASL2025 REC>15%,figure2≥15% ; divergence réellement comparée sur rendu page695. Texte18,5% seuil d’étude distinct, pas une limite unique. Cas exactement15% discuté avec laboratoire/centre. Cuivre libre calculé limité, pas cible autonome. Trientinebase150mg et formulations non interchangeables, indicationintoléranceD-pénicillamine et titration surveillée.",
+      "evidence": "clinical-review-completed.json"
+    },
+    {
+      "topic": "Grossesse/allaitement",
+      "reason": "Maintien thérapie anti-cuivre recommandé parEASL, tandis que FI Cuprior impose analyse bénéfice-risque et décision allaitement/traitement ; différence rendue visible, aucune harmonisation tacite.",
+      "evidence": "reviews/medical.json"
+    },
+    {
+      "topic": "Niveau de preuve et autres traitements",
+      "reason": "Cas2016/2025 illustratifs, amélioration avec cointerventions sans causalité randomisée ni garantie de réversibilité. Pas corticoïdes adjuvants systématiques tirés d’un cas. Pas posologie symptomatique non confrontée à une FI.",
+      "evidence": "reviews/medical.json"
+    },
+    {
+      "topic": "Administration suisse",
+      "reason": "Déclaration syphilis et règle dague-étoile2026 vérifiées. Remboursement,LS,AI,conduite et prestations détaillées non établis exhaustivement ; aucune absence d’obligation affirmée.",
+      "evidence": "matrix-20.json"
+    },
+    {
+      "topic": "Accès, images et contrôle",
+      "reason": "Quota partagé ParallelSearch respecté, aucun contournement de session/identité. Autre serviceweb disponible utilisé ; PDF DGN via serviceweb après HTMLdirect,OFSP via serviceweb après503. Pas appel ImageFinder faute de contrôle ; récupération manuelle d’un original primaire lu, licence et consentement rapportés inspectés. Pas validation médicale humaine.",
+      "evidence": "recherche_G22/sources.json"
+    }
+  ],
+  "procedure": {
+    "prewriting_gate_before_first_new_medical_writing": true,
+    "evidence": "prewriting-gate.json",
+    "acquisition_return_awaited_before_worktree": true,
+    "full_worktree": "/workspace/Medina-neurologie-G22",
+    "start_and_claim_before_research": true,
+    "clinical_recheck": "clinical-review-completed.json",
+    "prior_native_version_preserved": "before-glossary-link-cleanup"
+  },
+  "historical_model_trace": [
+    {
+      "agent_id": "astra_neurologie",
+      "scope": "Identifiant harness historique conservé ; recherche,rédaction et auto-revuesG22 parSol,aucun historiqueAstra renommé."
+    }
+  ],
+  "tokens_actual": null,
+  "cost_actual": null,
+  "clinical_certification": false,
+  "publication_allowed": false
+}

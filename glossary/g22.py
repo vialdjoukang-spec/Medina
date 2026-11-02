@@ -13,81 +13,34 @@ G = {}
 def add_if_absent(key, letters, full, definition, window=None):
     if key not in _existing:
         G[key] = {'lit': [list(x) for x in letters], 'full': full, 'def': '<p>' + definition + '</p>', 'ref': window}
-add_if_absent('A52.1', [('A52.1', 'code de la CIM-10-GM : A, catégorie 52, subdivision 1')],
-              'Syphilis tardive du système nerveux (neurosyphilis), code dague',
-              'Ce code désigne la neurosyphilis. Il est le seul code étiologique nommé sous G22* par la classification.', 'g22-codage')
-add_if_absent('G21.2', [('G21.2', 'code de la CIM-10-GM : G, catégorie 21, subdivision 2')],
-              'Syndrome parkinsonien secondaire dû à d’autres agents externes',
-              'Ce code regroupe les formes toxiques de parkinsonisme ; elles relèvent de la leçon G21.', 'g22-codage')
-add_if_absent('DGN', [('D', 'Deutsche (allemande)'), ('G', 'Gesellschaft (société)'), ('N', 'Neurologie')],
-              'Deutsche Gesellschaft für Neurologie',
-              'Cette société allemande de neurologie a publié la ligne directrice 2026 sur la neurosyphilis, avec mandat de la Société suisse de neurologie.', 'g22-lcr-syph')
-add_if_absent('MDS', [('M', 'Movement (des mouvements)'), ('D', 'Disorder (troubles)'), ('S', 'Society (société)')],
-              'Movement Disorder Society',
-              'Cette société internationale a publié en 2015 les critères cliniques de la maladie de Parkinson.', 'g22-parkinsonisme')
-add_if_absent('Parkinson-Syndrom', [('Parkinson-Syndrom', 'expression allemande du libellé de la classification, non une abréviation')],
-              'Parkinson-Syndrom, syndrome parkinsonien en allemand',
-              'Cette expression figure dans le libellé allemand de G22* publié par le BfArM.', 'g22-codage')
-add_if_absent('Chilcott-Lauber', [('Chilcott-Lauber', 'nom d’auteur, non une abréviation')],
-              'Chilcott-Lauber, auteure',
-              'Ce nom désigne la première auteure d’une revue suisse de 2005 sur la maladie de Wilson.', 'g22-wilson')
-add_if_absent('Creutzfeldt-Jakob', [('Creutzfeldt-Jakob', 'noms des deux médecins qui ont décrit la maladie, non une abréviation')],
-              'Maladie de Creutzfeldt-Jakob',
-              'Cette maladie à prions est toujours mortelle et sans traitement ; elle est déclarée en Suisse.', 'g22-mcj')
-add_if_absent('Kayser-Fleischer', [('Kayser-Fleischer', 'noms des deux ophtalmologues, non une abréviation')],
-              'Anneau de Kayser-Fleischer',
-              'Cet anneau cornéen est observé à la lampe à fente dans plus de 90 % des formes neurologiques de la maladie de Wilson.', 'g22-wilson')
-add_if_absent('ATP7B', [('ATP', 'Adénosine TriPhosphatase'), ('7B', 'sous-type 7B de la famille des ATPases de transport du cuivre')],
-              'Gène et transporteur du cuivre de type ATPase 7B',
-              'Son déficit réduit l’excrétion biliaire du cuivre et cause la maladie de Wilson.', 'g22-wilson')
-add_if_absent('DaTSCAN', [('DaT', 'Dopamine Transporter (transporteur de la dopamine)'), ('SCAN', 'scintigraphie, de l’anglais scan')],
-              'Scintigraphie du transporteur de la dopamine (ioflupane marqué à l’iode 123)',
-              'Cet examen visualise la perte de terminaisons dopaminergiques ; il ne sépare pas fiablement Wilson et Parkinson.', 'g22-datscan')
-add_if_absent('MPTP', [('M', 'Méthyl'), ('P', 'Phényl'), ('T', 'Tétrahydro'), ('P', 'Pyridine')],
-              '1-méthyl-4-phényl-1,2,3,6-tétrahydropyridine',
-              'Cette substance toxique est citée parmi les causes toxiques de parkinsonisme.', 'g22-sources')
-add_if_absent('HHV-6', [('H', 'Human (humain)'), ('H', 'Herpes'), ('V', 'Virus'), ('6', 'type 6')],
-              'Virus herpès humain de type 6',
-              'Ce virus figure parmi les causes infectieuses citées de parkinsonisme.', 'g22-sources')
-add_if_absent('CRMP5', [('C', 'Collapsin'), ('R', 'Response'), ('M', 'Mediator'), ('P', 'Protein'), ('5', 'numéro 5')],
-              'Collapsin response mediator protein 5',
-              'Les anticorps dirigés contre cette protéine causent une encéphalite paranéoplasique avec paralysie verticale du regard.', 'g22-autoimmun')
-add_if_absent('NMDAR', [('N', 'N-méthyl'), ('M', 'D-'), ('D', 'Aspartate'), ('AR', 'récepteur (receptor)')],
-              'Récepteur au N-méthyl-D-aspartate',
-              'Les anticorps contre ce récepteur causent une encéphalite auto-immune, surtout pédiatrique pour le parkinsonisme.', 'g22-autoimmun')
-add_if_absent('anti-NMDAR', [('anti', 'dirigé contre'), ('NMDAR', 'récepteur au N-méthyl-D-aspartate')],
-              'Anticorps dirigé contre le récepteur au N-méthyl-D-aspartate',
-              'Cette encéphalite auto-immune donne un parkinsonisme surtout chez l’enfant.', 'g22-autoimmun')
-add_if_absent('LGI1', [('L', 'Leucine-rich'), ('G', 'Glioma-'), ('I', 'Inactivated'), ('1', 'numéro 1')],
-              'Leucine-rich glioma-inactivated 1',
-              'Les anticorps dirigés contre cette protéine définissent une encéphalite auto-immune.', 'g22-autoimmun')
-add_if_absent('CASPR2', [('C', 'Contactin-'), ('AS', 'ASsociated'), ('PR', 'PRotein-like'), ('2', 'numéro 2')],
-              'Contactin-associated protein-like 2',
-              'Les anticorps dirigés contre cette protéine définissent une encéphalite auto-immune.', 'g22-autoimmun')
-add_if_absent('IgLON5', [('Ig', 'Immunoglobuline'), ('LON', 'famille LON (LAMP, OBCAM, neurotrimine)'), ('5', 'numéro 5')],
-              'Protéine de la famille IgLON, numéro 5',
-              'Les anticorps dirigés contre cette protéine définissent une encéphalite auto-immune.', 'g22-autoimmun')
-add_if_absent('Anti-Ma2', [('Anti', 'dirigé contre'), ('Ma2', 'protéine Ma2 neuronale')],
-              'Anticorps anti-Ma2',
-              'Ces anticorps s’associent à une tumeur germinale testiculaire chez le jeune homme et à une paralysie verticale du regard.', 'g22-autoimmun')
-add_if_absent('CXCL13', [('CXCL', 'C-X-C motif ChemoKine Ligand'), ('13', 'numéro 13')],
-              'Chimiokine CXCL13',
-              'Son dosage dans le liquide céphalorachidien est utile au diagnostic et au suivi de la neurosyphilis.', 'g22-lcr-syph')
-add_if_absent('RT-QuIC', [('RT', 'Real-Time (en temps réel)'), ('QuIC', 'Quaking-Induced Conversion')],
-              'Conversion induite par agitation en temps réel',
-              'Ce test est cité pour la maladie de Creutzfeldt-Jakob ; ses critères n’ont pas été lus dans ce cours.', 'g22-mcj')
-add_if_absent('DESH', [('D', 'Disproportionately'), ('E', 'Enlarged'), ('S', 'Subarachnoid-space'), ('H', 'Hydrocephalus')],
-              'Hydrocéphalie avec espaces sous-arachnoïdiens disproportionnés',
-              'Ce signe d’imagerie soutient l’hydrocéphalie à pression normale.', 'g22-hpn')
-add_if_absent('UWDRS', [('U', 'Unified (unifiée)'), ('W', 'Wilson'), ('D', 'Disease (maladie)'), ('R', 'Rating'), ('S', 'Scale (échelle)')],
-              'Échelle unifiée d’évaluation de la maladie de Wilson',
-              'Une version minimale de 9 items sert au suivi clinique.', 'g22-wilson')
-add_if_absent('EASL', [('E', 'European'), ('A', 'Association'), ('S', 'for the Study of the'), ('L', 'Liver')],
-              'Association européenne pour l’étude du foie',
-              'Cette association a publié en 2025 la recommandation sur la maladie de Wilson.', 'g22-cuivre-bilan')
-add_if_absent('ERN', [('E', 'European'), ('R', 'Reference'), ('N', 'Network')],
-              'Réseau européen de référence',
-              'Ce réseau est associé à la recommandation 2025 sur la maladie de Wilson.', 'g22-cuivre-bilan')
-add_if_absent('EASL-ERN', [('EASL', 'European Association for the Study of the Liver'), ('ERN', 'European Reference Network')],
-              'Recommandation de l’Association européenne pour l’étude du foie et du Réseau européen de référence',
-              'Cette recommandation de 2025 retient le score de Leipzig et le cuivre échangeable relatif.', 'g22-cuivre-bilan')
+add_if_absent('A52.1', [('A52.1', 'code de la CIM-10-GM : A, catégorie 52, subdivision 1')], 'Syphilis nerveuse symptomatique, code étiologique de la CIM-10-GM', 'Libellé français officiel. L’inclusion parkinsonisme syphilitique renvoie à G22* ; une sérologie isolée ne démontre pas cette manifestation.', 'g22-codage')
+add_if_absent('G21.2', [('G21.2', 'code de la CIM-10-GM : G, catégorie 21, subdivision 2')], 'Syndrome parkinsonien secondaire dû à d’autres agents externes', 'Ce code regroupe les formes toxiques de parkinsonisme ; elles relèvent de la leçon G21.', 'g22-codage')
+add_if_absent('DGN', [('D', 'Deutsche (allemande)'), ('G', 'Gesellschaft (société)'), ('N', 'Neurologie')], 'Deutsche Gesellschaft für Neurologie', 'Cette société allemande de neurologie a publié la ligne directrice 2026 sur la neurosyphilis, avec mandat de la Société suisse de neurologie.', 'g22-lcr-syph')
+add_if_absent('MDS', [('M', 'Movement (des mouvements)'), ('D', 'Disorder (troubles)'), ('S', 'Society (société)')], 'Movement Disorder Society', 'Cette société internationale a publié en 2015 les critères cliniques de la maladie de Parkinson.', 'g22-parkinsonisme')
+add_if_absent('Parkinson-Syndrom', [('Parkinson-Syndrom', 'expression allemande du libellé de la classification, non une abréviation')], 'Parkinson-Syndrom, syndrome parkinsonien en allemand', 'Cette expression figure dans le libellé allemand de G22* publié par le BfArM.', 'g22-codage')
+add_if_absent('Chilcott-Lauber', [('Chilcott-Lauber', 'nom d’auteur, non une abréviation')], 'Chilcott-Lauber, auteure', 'Nom d’une auteure cité dans le dossier historique ; la conduite actuelle de cette leçon repose sur le guide européen Wilson 2025.', 'g22-wilson')
+add_if_absent('Creutzfeldt-Jakob', [('Creutzfeldt-Jakob', 'noms des deux médecins qui ont décrit la maladie, non une abréviation')], 'Maladie de Creutzfeldt-Jakob', 'Maladie à prions rencontrée dans le différentiel neurologique. Cette leçon ne propose ni critère diagnostique détaillé ni traitement propre à cette maladie.', 'g22-causes')
+add_if_absent('Kayser-Fleischer', [('Kayser-Fleischer', 'noms des deux ophtalmologues, non une abréviation')], 'Anneau de Kayser-Fleischer', 'Anneau cornéen recherché à la lampe à fente dans le bilan de Wilson ; cet argument est interprété avec les autres éléments du diagnostic.', 'g22-wilson')
+add_if_absent('ATP7B', [('ATP', 'Adénosine TriPhosphatase'), ('7B', 'sous-type 7B de la famille des ATPases de transport du cuivre')], 'Gène et transporteur du cuivre de type ATPase 7B', 'Son déficit réduit l’excrétion biliaire du cuivre et cause la maladie de Wilson.', 'g22-wilson')
+add_if_absent('DaTSCAN', [('DaT', 'Dopamine Transporter (transporteur de la dopamine)'), ('SCAN', 'scintigraphie, de l’anglais scan')], 'Scintigraphie du transporteur de la dopamine (ioflupane marqué à l’iode 123)', 'Examen spécialisé du système dopaminergique ; aucun protocole ni performance chiffrée de cet examen n’est établi dans cette leçon.', 'g22-imagerie')
+add_if_absent('MPTP', [('M', 'Méthyl'), ('P', 'Phényl'), ('T', 'Tétrahydro'), ('P', 'Pyridine')], '1-méthyl-4-phényl-1,2,3,6-tétrahydropyridine', 'Cette substance toxique est citée parmi les causes toxiques de parkinsonisme.', 'g22-r11')
+add_if_absent('HHV-6', [('H', 'Human (humain)'), ('H', 'Herpes'), ('V', 'Virus'), ('6', 'type 6')], 'Virus herpès humain de type 6', 'Ce virus figure parmi les causes infectieuses citées de parkinsonisme.', 'g22-r11')
+add_if_absent('CRMP5', [('C', 'Collapsin'), ('R', 'Response'), ('M', 'Mediator'), ('P', 'Protein'), ('5', 'numéro 5')], 'Collapsin response mediator protein 5', 'Terme du bilan neurologique spécialisé des encéphalites ; cette leçon ne lui attribue ni performance diagnostique ni protocole thérapeutique.', 'g22-causes')
+add_if_absent('NMDAR', [('N', 'N-méthyl'), ('M', 'D-'), ('D', 'Aspartate'), ('AR', 'récepteur (receptor)')], 'Récepteur au N-méthyl-D-aspartate', 'Terme du bilan neurologique spécialisé des encéphalites ; cette leçon ne lui attribue ni performance diagnostique ni protocole thérapeutique.', 'g22-causes')
+add_if_absent('anti-NMDAR', [('anti', 'dirigé contre'), ('NMDAR', 'récepteur au N-méthyl-D-aspartate')], 'Anticorps dirigé contre le récepteur au N-méthyl-D-aspartate', 'Terme du bilan neurologique spécialisé des encéphalites ; cette leçon ne lui attribue ni performance diagnostique ni protocole thérapeutique.', 'g22-causes')
+add_if_absent('LGI1', [('L', 'Leucine-rich'), ('G', 'Glioma-'), ('I', 'Inactivated'), ('1', 'numéro 1')], 'Leucine-rich glioma-inactivated 1', 'Terme du bilan neurologique spécialisé des encéphalites ; cette leçon ne lui attribue ni performance diagnostique ni protocole thérapeutique.', 'g22-causes')
+add_if_absent('CASPR2', [('C', 'Contactin-'), ('AS', 'ASsociated'), ('PR', 'PRotein-like'), ('2', 'numéro 2')], 'Contactin-associated protein-like 2', 'Terme du bilan neurologique spécialisé des encéphalites ; cette leçon ne lui attribue ni performance diagnostique ni protocole thérapeutique.', 'g22-causes')
+add_if_absent('IgLON5', [('Ig', 'Immunoglobuline'), ('LON', 'famille LON (LAMP, OBCAM, neurotrimine)'), ('5', 'numéro 5')], 'Protéine de la famille IgLON, numéro 5', 'Terme du bilan neurologique spécialisé des encéphalites ; cette leçon ne lui attribue ni performance diagnostique ni protocole thérapeutique.', 'g22-causes')
+add_if_absent('Anti-Ma2', [('Anti', 'dirigé contre'), ('Ma2', 'protéine Ma2 neuronale')], 'Anticorps anti-Ma2', 'Terme du bilan neurologique spécialisé des encéphalites ; cette leçon ne lui attribue ni performance diagnostique ni protocole thérapeutique.', 'g22-causes')
+add_if_absent('CXCL13', [('CXCL', 'C-X-C motif ChemoKine Ligand'), ('13', 'numéro 13')], 'Chimiokine CXCL13', 'Chimiokine pouvant apporter un argument complémentaire, avec limites de sensibilité et de spécificité ; elle ne constitue pas seule une preuve de neurosyphilis.', 'g22-lcr-syph')
+add_if_absent('RT-QuIC', [('RT', 'Real-Time (en temps réel)'), ('QuIC', 'Quaking-Induced Conversion')], 'Conversion induite par agitation en temps réel', 'Ce test est cité pour la maladie de Creutzfeldt-Jakob ; ses critères n’ont pas été lus dans ce cours.', 'g22-causes')
+add_if_absent('DESH', [('D', 'Disproportionately'), ('E', 'Enlarged'), ('S', 'Subarachnoid-space'), ('H', 'Hydrocephalus')], 'Hydrocéphalie avec espaces sous-arachnoïdiens disproportionnés', 'Terme d’imagerie de l’hydrocéphalie, à interpréter dans son contexte ; il ne démontre pas à lui seul la cause d’un syndrome moteur.', 'g22-imagerie')
+add_if_absent('UWDRS', [('U', 'Unified (unifiée)'), ('W', 'Wilson'), ('D', 'Disease (maladie)'), ('R', 'Rating'), ('S', 'Scale (échelle)')], 'Échelle unifiée d’évaluation de la maladie de Wilson', 'Échelle d’évaluation de la maladie de Wilson ; aucun score ni seuil de cette échelle n’est calculé dans cette leçon.', 'g22-wilson')
+add_if_absent('EASL', [('E', 'European'), ('A', 'Association'), ('S', 'for the Study of the'), ('L', 'Liver')], 'Association européenne pour l’étude du foie', 'Cette association a publié en 2025 la recommandation sur la maladie de Wilson.', 'g22-cuivre-bilan')
+add_if_absent('ERN', [('E', 'European'), ('R', 'Reference'), ('N', 'Network')], 'Réseau européen de référence', 'Ce réseau est associé à la recommandation 2025 sur la maladie de Wilson.', 'g22-cuivre-bilan')
+add_if_absent('EASL-ERN', [('EASL', 'European Association for the Study of the Liver'), ('ERN', 'European Reference Network')], 'Recommandation de l’Association européenne pour l’étude du foie et du Réseau européen de référence', 'Cette recommandation de 2025 retient le score de Leipzig et le cuivre échangeable relatif.', 'g22-cuivre-bilan')
+add_if_absent('REC', [('REC', 'Cuivre échangeable relatif')], 'Cuivre échangeable relatif', 'Rapport du cuivre échangeable au cuivre total, exprimé en pourcentage. Le guide européen 2025 le considère dans un faisceau diagnostique.', 'g22-cuivre-bilan')
+add_if_absent('E83.0', [('E83.0', 'Anomalies du métabolisme du cuivre')], 'Anomalies du métabolisme du cuivre', 'Catégorie française comprenant Wilson et Menkes ; pas de paire automatique avec G22 déduite ici.', 'g22-codage')
+add_if_absent('D03m', [('D03m', 'Règle suisse des codes dague et étoile')], 'Règle suisse des codes dague et étoile', 'Règle du manuel de codage 2026 : priorité du code étiologique, suivi de la manifestation si les conditions sont remplies ; étoile jamais seule.', 'g22-codage')
+add_if_absent('Parkinson-Krankheit', [('Parkinson-Krankheit', 'Maladie de Parkinson en allemand')], 'Maladie de Parkinson en allemand', 'Titre du guide DGN 2023 ; ses définitions cliniques n’autorisent pas à transférer toute sa stratégie aux autres causes.', 'g22-parkinsonisme')
+add_if_absent('Yves-Laurent', [('Yves-Laurent', 'Yves-Laurent Jackson')], 'Yves-Laurent Jackson', 'Coauteur de l’enseignement HUG 2018 sur les syndromes parkinsoniens.', 'g22-r10')
