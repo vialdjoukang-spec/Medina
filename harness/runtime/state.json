@@ -29,7 +29,7 @@
     "astra_endocrinologie": {
       "lesson": "E07",
       "worktree": "/workspace/Medina-endocrinologie-E07",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/e07-integrate-g1",
       "allowed_paths": [
         "chapters/E07",
@@ -39,8 +39,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE"
       ],
       "started_at": "2026-11-02T04:20:54+00:00",
-      "activity_at": "2026-11-02T04:39:29+00:00",
-      "message": "E07 : porte VÉRITÉ passée avec 42 sources documentées ; 60 corrections médicales tracées, six onglets scientifiques substantiels dont neuf rubriques de sémiologie. Trois anatomies SVG remplacées par deux originaux licenciés et annotations HTML. Révision pharmacologique et cohérence des résumés en cours.",
+      "activity_at": "2026-11-02T04:51:52+00:00",
+      "message": "Reprise sur les sources et corrections E07 sauvegardées ; relecture diagnostique puis contrôle de la copie autonome et des figures.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -51,34 +51,34 @@
       "receipt_sha256": "26f1cb623b0a7c6bcd266955539c3916cc5d9be7bd70fdef819f775121c0da23"
     },
     "astra_nephrologie": {
-      "lesson": "C64",
-      "worktree": "/workspace/Medina-nephrologie-c64",
-      "stage": "verification",
-      "branch": "codex/alpha77/c64-integrate-g1",
+      "lesson": "N02",
+      "worktree": "/workspace/Medina-nephrologie-n02",
+      "stage": "recherche",
+      "branch": "codex/alpha77/n02-integrate-g1",
       "allowed_paths": [
-        "chapters/C64",
-        "glossary/c64.py",
-        "assets/img/c64/alpha/codex",
-        "organisation/alpha-publications/Codex/C64",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C64-INTEGRATE",
+        "chapters/N02",
+        "glossary/n02.py",
+        "assets/img/n02/alpha/codex",
+        "organisation/alpha-publications/Codex/N02",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE",
         "chapters.json"
       ],
-      "started_at": "2026-11-02T04:14:17+00:00",
-      "activity_at": "2026-11-02T04:44:19+00:00",
-      "message": "Six surfaces C64 relues, corrections FI Inlyta/Yervoy et langue appliquées ; statique/sciences et rendu final en renouvellement avant empreintes et matrice14/20.",
+      "started_at": "2026-11-02T04:54:47+00:00",
+      "activity_at": "2026-11-02T04:54:47+00:00",
+      "message": "Mission réservée; recherche autorisée",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "734dc9ed7edb25b1b46019192338e0531c67ef53737fc88bed39a2bfc3ec94b8"
+      "completed_sections": 0,
+      "receipt_sha256": "ab96136d7fcee3d7133ea41badc6baf4c73ce2720342180d308229e544934616"
     },
     "codex_hematologie": {
       "lesson": "C95",
       "worktree": "/workspace/Medina-hematologie-C95",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/c95-integrate-g1",
       "allowed_paths": [
         "chapters/C95",
@@ -88,8 +88,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C95-INTEGRATE"
       ],
       "started_at": "2026-11-02T04:37:48+00:00",
-      "activity_at": "2026-11-02T04:45:22+00:00",
-      "message": "C95 : socle complet lu ; critères OMS/ICC, nosologie ALAL-NOS, leucostase sans seuil universel et quatre FI suisses actualisées vérifiés. Plan réservé écrit ; préparation du dossier VÉRITÉ.",
+      "activity_at": "2026-11-02T04:52:42+00:00",
+      "message": "C95 : porte VÉRITÉ réussie sur29références, septFI et quatre originaux inspectés ; rédaction avec corrections transversales et six sciences en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -1231,6 +1231,45 @@
       "action": "watch",
       "ok": true,
       "findings": 0
+    },
+    {
+      "at": "2026-11-02T04:51:18+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "verification",
+      "message": "C64 : tests finaux natifs réussis ; contrôle du mapping PROFILES hérité du shell avant reçus finaux"
+    },
+    {
+      "at": "2026-11-02T04:51:52+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "verification",
+      "message": "Reprise sur les sources et corrections E07 sauvegardées ; relecture diagnostique puis contrôle de la copie autonome et des figures."
+    },
+    {
+      "at": "2026-11-02T04:52:19+00:00",
+      "action": "complete",
+      "agent": "astra_nephrologie",
+      "code": "C64"
+    },
+    {
+      "at": "2026-11-02T04:52:42+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "redaction",
+      "message": "C95 : porte VÉRITÉ réussie sur29références, septFI et quatre originaux inspectés ; rédaction avec corrections transversales et six sciences en cours."
+    },
+    {
+      "at": "2026-11-02T04:54:47+00:00",
+      "action": "claim",
+      "agent": "astra_nephrologie",
+      "code": "N02"
+    },
+    {
+      "at": "2026-11-02T04:55:41+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
     }
   ],
   "cache": {
@@ -1429,6 +1468,25 @@
       "clinical_certification": false,
       "publication_allowed": false,
       "preview_sha256": "8efbea24ff0adfa0a61b19ed84ebd4dd2588fae13f0b71c727246dbdc7316862"
+    },
+    {
+      "agent": "astra_nephrologie",
+      "code": "C64",
+      "at": "2026-11-02T04:52:19+00:00",
+      "branch": "codex/alpha77/c64-integrate-g1",
+      "worktree": "/workspace/Medina-nephrologie-c64",
+      "folder": "/workspace/Medina-nephrologie-c64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C64-INTEGRATE",
+      "manifest_sha256": "c5ea4d724ee62081858121f43646f2162a356bf0a18ae1528660a074c90d763d",
+      "source_binding_sha256": "3bb5135f94e3ebdc2fdf43afffc410cd232bfe139159642e4ff3de6f14f713cb",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "88f44817ff8cc74e2b747127c7b30ba94043df34fa62fa14a5235c27f4817e1f"
     }
   ]
 }
