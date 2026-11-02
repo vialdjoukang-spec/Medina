@@ -226,3 +226,13 @@ Acquisition649aac92c6c569f14c589c56b400c1b2275c0582 réellement attendue et vér
 ## Réattribution G21 — 2026-11-02T15:48:28.864204+00:00
 
 Instruction root reçue et confirmée :G21 est transféré exclusivement à sol_nephrologie, retiré de ma file. Aucun changement au cours G08 actif. Après G08 clos et libéré, prochain candidat G22, registre frais puis acquisition/start/claim exclusifs.
+
+
+## G08 clôture/libération et file révisée — 2026-11-02T16:36:27.781386+00:00
+
+Complete réel16:33:59UTC ; source7b024695cb5d331feb8b5a7c9e0c10820bed1d22,final84341cb762f0983b9b9c8eb37850a08f8d9bc0d8 poussé et lu distant,garde intégrée finale passée,worktree propre,binding6a077cc1f1d56023dca0506f2f0db2f114b2526e97e8c79eda01da620b84aa74 unique inchangé. Registre7a6c85f61152872235baf53978e03b89db35152f confirme released. Aucune PR/main ni certification humaine. G21/G24/G25/G26 transférés par root à sol_nephrologie,G09 déjà exclu ; ma suite G22 puisG32. Capacité/workspace2,7Go après archivage réversible parent,aucun worktree neurologique archivé ou preuve supprimée par cet auteur. Prochaine acquisition G22 fraîche,attente de retour avant création complète/workspace.
+
+
+## G22 — entrée réellement acquise, 2026-11-02T16:39:39.801681+00:00
+
+Acquisition d97544322d85350def5c560d194d75f611c0fca5 attendue et vérifiée avant création complète/workspace/Medina-neurologie-G22 ; base8a512893acbab9caa0dcfdd0e8682a44ea72fda6,branchecodex/alpha77/g22-integrate-g1. Start,gate et claim effectifs16:38:17UTC. Prompt vérité relu avant corpus médical ; instructions identiques G08 par SHA,pas AGENTS imbriqué. Inventaire et7empreintes initiales conservés,0source primaire encore lue,pas rédaction ni binding. G32 suivant ; G09/G21/G24/G25/G26 exclus.

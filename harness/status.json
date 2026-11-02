@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-02T16:35:16+00:00",
+  "generated_at": "2026-11-02T16:45:16+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T16:35:16+00:00",
+    "checked_at": "2026-11-02T16:45:16+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T16:35:16+00:00",
+    "observed_at": "2026-11-02T16:45:16+00:00",
     "ok": true,
     "findings": [
       {
@@ -40,20 +40,20 @@
           "device": 27,
           "observed_paths": [
             "/workspace/Medina-harness",
+            "/workspace/Medina-neurologie-G22",
             "/workspace/Medina-endocrinologie-E04"
           ],
-          "free_bytes": 2795261952,
+          "free_bytes": 1782276096,
           "total_bytes": 33770192896,
           "level": "ok"
         },
         {
           "device": 34,
           "observed_paths": [
-            "/tmp/Medina-neurologie-G08",
             "/tmp/Medina-neurologie-G21",
             "/tmp/Medina-hematologie-D62"
           ],
-          "free_bytes": 603418624,
+          "free_bytes": 602361856,
           "total_bytes": 9441329152,
           "level": "ok"
         }
@@ -85,7 +85,7 @@
       "meaning": "Contrôle structurel relancé à chaque veille600s ; résultats historiques conservés, nouvelles clôtures refusées si échec."
     },
     "interval_seconds": 600,
-    "observer_pid": 1383735,
+    "observer_pid": 1398665,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -113,9 +113,6 @@
         "G07",
         "G08",
         "G22",
-        "G24",
-        "G25",
-        "G26",
         "G32",
         "G36",
         "G37",
@@ -145,28 +142,28 @@
       "clinical_orchestration": true,
       "runtime_name": "/root/sol_neurologie",
       "historical_id": "astra_neurologie",
-      "lesson": "G08",
-      "worktree": "/tmp/Medina-neurologie-G08",
-      "stage": "termine",
-      "branch": "codex/alpha77/g08-integrate-g1",
+      "lesson": "G22",
+      "worktree": "/workspace/Medina-neurologie-G22",
+      "stage": "preparation",
+      "branch": "codex/alpha77/g22-integrate-g1",
       "allowed_paths": [
-        "chapters/G08",
-        "glossary/g08.py",
-        "assets/img/g08/alpha/codex",
-        "organisation/alpha-publications/Codex/G08",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G08-INTEGRATE"
+        "chapters/G22",
+        "glossary/g22.py",
+        "assets/img/g22/alpha/codex",
+        "organisation/alpha-publications/Codex/G22",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE"
       ],
-      "started_at": "2026-11-02T15:43:29+00:00",
-      "activity_at": "2026-11-02T16:33:59+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "started_at": "2026-11-02T16:38:17+00:00",
+      "activity_at": "2026-11-02T16:39:39+00:00",
+      "message": "G22 :acquisition attendue avant checkout complet/workspace,start/gate/claim effectifs16:38:17UTC ; prompt vérité relu,instructions identiques vérifiées,inventaire7fichiers conservé.0source primaire encore lue,aucune rédaction ni binding. G32suivant.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "2358ea105e09fa97862334d9484d1a3bbba5c99deffa9296eee7e3d29fdd8bb2",
+      "completed_sections": 0,
+      "receipt_sha256": "dd6782dbcd83c6cfcf2eeefda81a6c835d882bffef1c803768651a4f1968245c",
       "brief": {
         "schema_version": 1,
         "status": "G07_RECHERCHE",
@@ -179,7 +176,7 @@
         "fragment": "S08",
         "label": "N-05-Neurologie",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "candidate": "G08",
+        "candidate": "G22",
         "counts": {
           "specialty_existing": 57,
           "existing_codex": 29,
@@ -281,56 +278,12 @@
               "authorization": "candidate_after_harness_and_current_reservation_check"
             },
             {
-              "code": "G21",
-              "title": "Syndrome parkinsonien secondaire",
-              "mode": "existing",
-              "owner": "Codex",
-              "active_reservations": [],
-              "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G21-INTEGRATE.json",
-              "campaign77_member": true,
-              "source_exists": true,
-              "authorization": "candidate_after_harness_and_current_reservation_check"
-            },
-            {
               "code": "G22",
               "title": "Syndrome parkinsonien au cours de maladies classées ailleurs",
               "mode": "existing",
               "owner": "Codex",
               "active_reservations": [],
               "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G22-INTEGRATE.json",
-              "campaign77_member": true,
-              "source_exists": true,
-              "authorization": "candidate_after_harness_and_current_reservation_check"
-            },
-            {
-              "code": "G24",
-              "title": "Dystonie",
-              "mode": "existing",
-              "owner": "Codex",
-              "active_reservations": [],
-              "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G24-INTEGRATE.json",
-              "campaign77_member": true,
-              "source_exists": true,
-              "authorization": "candidate_after_harness_and_current_reservation_check"
-            },
-            {
-              "code": "G25",
-              "title": "Autres syndromes extrapyramidaux et troubles de la motricité",
-              "mode": "existing",
-              "owner": "Codex",
-              "active_reservations": [],
-              "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G25-INTEGRATE.json",
-              "campaign77_member": true,
-              "source_exists": true,
-              "authorization": "candidate_after_harness_and_current_reservation_check"
-            },
-            {
-              "code": "G26",
-              "title": "Syndromes extrapyramidaux et troubles de la motricité au cours d’affections classées ailleurs",
-              "mode": "existing",
-              "owner": "Codex",
-              "active_reservations": [],
-              "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G26-INTEGRATE.json",
               "campaign77_member": true,
               "source_exists": true,
               "authorization": "candidate_after_harness_and_current_reservation_check"
@@ -901,22 +854,21 @@
             "Private GitHub cron and local watch depend on runner/environment availability"
           ]
         },
-        "updated_at": "2026-11-02T16:26:13.215666+00:00",
+        "updated_at": "2026-11-02T16:39:39.799817+00:00",
         "current_package": {
-          "code": "G08",
-          "worktree": "/tmp/Medina-neurologie-G08",
-          "symlink": "/workspace/Medina-neurologie-G08",
-          "branch": "codex/alpha77/g08-integrate-g1",
+          "code": "G22",
+          "worktree": "/workspace/Medina-neurologie-G22",
+          "branch": "codex/alpha77/g22-integrate-g1",
           "stage": "preparation",
           "reservation_acquired": true,
           "start_passed": true,
           "claim_passed": true,
-          "acquisition_registry_sha": "649aac92c6c569f14c589c56b400c1b2275c0582",
+          "acquisition_registry_sha": "d97544322d85350def5c560d194d75f611c0fca5",
           "source_binding": null
         },
         "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
         "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
-        "medical_content_written": true,
+        "medical_content_written": false,
         "current_limitations": [
           "Incident d’ordre de lancement local et échec espace/start conservés, sans réécriture historique.",
           "Sources héritées G07 sont pistes, jamais lectures Sol par présence de cache.",
@@ -1365,6 +1317,41 @@
             "review_mode": "self_review",
             "clinical_certification": false,
             "review_url": "https://github.com/vialdjoukang-spec/Medina/blob/cf157c55b6ab20d2f73784dce3a04c7eb9eabfc2/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE/README.md"
+          },
+          {
+            "code": "G07",
+            "final_commit": "1d7a1821f1afa8689bbf88965049e38a1e4fab8e",
+            "source_commit": "b4c891f5148fe9c092b36ed8daa89e82eb477dd9",
+            "complete_at": "2026-11-02T15:39:39+00:00",
+            "release_registry_sha": "50ec5fc4b60ed332dc84870a533d087efc7d16d0",
+            "source_binding_sha256": "4b7a461f41761408aaa570714d236d39d3f472c537eb35eb498680a04db7a786",
+            "source_binding_first_issue": "2026-11-02T15:37:41.854707+00:00",
+            "preview_sha256": "9075c3c08e053ccb190ab9b87ff4036495b86ebe8e7aa9f21a9c3efe8a77e366",
+            "status": "released_verified",
+            "worktree": "/tmp/Medina-neurologie-G07",
+            "clinical_certification": false
+          },
+          {
+            "code": "G08",
+            "source_commit": "7b024695cb5d331feb8b5a7c9e0c10820bed1d22",
+            "final_commit": "84341cb762f0983b9b9c8eb37850a08f8d9bc0d8",
+            "complete_at": "2026-11-02T16:33:59+00:00",
+            "release_registry_sha": "7a6c85f61152872235baf53978e03b89db35152f",
+            "released_verified": true,
+            "remote_final_verified": true,
+            "worktree_clean": true,
+            "worktree": "/tmp/Medina-neurologie-G08",
+            "preview_sha256": "1db3d8af74167e2c82d55d74558aa545e860894ae5cbfbfe46ef4978b5e225d4",
+            "source_binding_sha256": "6a077cc1f1d56023dca0506f2f0db2f114b2526e97e8c79eda01da620b84aa74",
+            "actual_source_entries": 15,
+            "new_G08_targeted_sources": 10,
+            "prior_actual_Sol_readings_reused": 5,
+            "monograph14": 14,
+            "matrix20": 20,
+            "semio_strict7_passed": true,
+            "review_mode": "self_review",
+            "clinical_certification": false,
+            "review_url": "https://github.com/vialdjoukang-spec/Medina/blob/84341cb762f0983b9b9c8eb37850a08f8d9bc0d8/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G08-INTEGRATE/README.md"
           }
         ],
         "tokens_actual": null,
@@ -1579,15 +1566,15 @@
             "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
           }
         ],
-        "source_readings_count": 15,
-        "research_sources": "/tmp/Medina-neurologie-G08/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G08-INTEGRATE/recherche_G08/sources-draft.json",
-        "current_revision": "G08 :43sections,52fenêtres,5quiz,6sciences/9sémiologie,2originaux+6concepts. Betta préalable16:03:44UTC. Statique14573mots avant ultime précision de terme,sciences684→3577mots ; deux parcours natifs complets positifs conservés,licence/source IRM liés. Ultime terme rapport international normalisé précisé ; rebuild final et retests en cours,aucun binding.",
-        "monograph14_reviewed": 14,
-        "matrix20_reviewed": 20,
+        "source_readings_count": 0,
+        "research_sources": null,
+        "current_revision": "G22 acquis puis worktree complet/workspace créé après retour acquisition vérifié ; start/gate/claim réels16:38:17UTC. Prompt vérité premier document médical relu,instructions identiques G08 par SHA ; inventaire initial conservé.0source primaire G22 encore lue,aucune rédaction ni binding.",
+        "monograph14_reviewed": 0,
+        "matrix20_reviewed": 0,
         "source_binding": null,
-        "worktree": "/tmp/Medina-neurologie-G08",
-        "branch": "codex/alpha77/g08-integrate-g1",
-        "queue_reassignment_note": "G09 réattribué précédemment et G21 réattribué par root à sol_nephrologie le2novembre2026 ; exclus de la file de cet auteur. Après G08 : G22, sous registre frais.",
+        "worktree": "/workspace/Medina-neurologie-G22",
+        "branch": "codex/alpha77/g22-integrate-g1",
+        "queue_reassignment_note": "G09,G21,G24,G25,G26 transférés par root au créneau sol_nephrologie ; exclus. Ma suite autorisée :G22 puisG32 et suivantes,chaque fois après clôture/libération et registre frais.",
         "historical_package_G03_snapshot": {
           "code": "G03",
           "worktree": "/workspace/Medina-neurologie-G03",
@@ -1620,6 +1607,28 @@
             "status": "released_verified",
             "worktree": "/tmp/Medina-neurologie-G07",
             "clinical_certification": false
+          },
+          {
+            "code": "G08",
+            "source_commit": "7b024695cb5d331feb8b5a7c9e0c10820bed1d22",
+            "final_commit": "84341cb762f0983b9b9c8eb37850a08f8d9bc0d8",
+            "complete_at": "2026-11-02T16:33:59+00:00",
+            "release_registry_sha": "7a6c85f61152872235baf53978e03b89db35152f",
+            "released_verified": true,
+            "remote_final_verified": true,
+            "worktree_clean": true,
+            "worktree": "/tmp/Medina-neurologie-G08",
+            "preview_sha256": "1db3d8af74167e2c82d55d74558aa545e860894ae5cbfbfe46ef4978b5e225d4",
+            "source_binding_sha256": "6a077cc1f1d56023dca0506f2f0db2f114b2526e97e8c79eda01da620b84aa74",
+            "actual_source_entries": 15,
+            "new_G08_targeted_sources": 10,
+            "prior_actual_Sol_readings_reused": 5,
+            "monograph14": 14,
+            "matrix20": 20,
+            "semio_strict7_passed": true,
+            "review_mode": "self_review",
+            "clinical_certification": false,
+            "review_url": "https://github.com/vialdjoukang-spec/Medina/blob/84341cb762f0983b9b9c8eb37850a08f8d9bc0d8/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G08-INTEGRATE/README.md"
           }
         ],
         "historical_package_G07_snapshot": {
@@ -1640,15 +1649,78 @@
           "clinical_certification": false,
           "preview": null
         },
-        "next_candidate": "G22",
+        "next_candidate": "G32",
         "excluded_reassigned_candidates": [
           "G09",
-          "G21"
-        ]
+          "G21",
+          "G24",
+          "G25",
+          "G26"
+        ],
+        "reassigned_queue_entries": [
+          {
+            "code": "G21",
+            "title": "Syndrome parkinsonien secondaire",
+            "mode": "existing",
+            "owner": "Codex",
+            "active_reservations": [],
+            "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G21-INTEGRATE.json",
+            "campaign77_member": true,
+            "source_exists": true,
+            "authorization": "candidate_after_harness_and_current_reservation_check"
+          },
+          {
+            "code": "G24",
+            "title": "Dystonie",
+            "mode": "existing",
+            "owner": "Codex",
+            "active_reservations": [],
+            "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G24-INTEGRATE.json",
+            "campaign77_member": true,
+            "source_exists": true,
+            "authorization": "candidate_after_harness_and_current_reservation_check"
+          },
+          {
+            "code": "G25",
+            "title": "Autres syndromes extrapyramidaux et troubles de la motricité",
+            "mode": "existing",
+            "owner": "Codex",
+            "active_reservations": [],
+            "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G25-INTEGRATE.json",
+            "campaign77_member": true,
+            "source_exists": true,
+            "authorization": "candidate_after_harness_and_current_reservation_check"
+          },
+          {
+            "code": "G26",
+            "title": "Syndromes extrapyramidaux et troubles de la motricité au cours d’affections classées ailleurs",
+            "mode": "existing",
+            "owner": "Codex",
+            "active_reservations": [],
+            "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G26-INTEGRATE.json",
+            "campaign77_member": true,
+            "source_exists": true,
+            "authorization": "candidate_after_harness_and_current_reservation_check"
+          }
+        ],
+        "historical_package_G08_snapshot": {
+          "code": "G08",
+          "worktree": "/tmp/Medina-neurologie-G08",
+          "symlink": "/workspace/Medina-neurologie-G08",
+          "branch": "codex/alpha77/g08-integrate-g1",
+          "stage": "termine_released_verified",
+          "reservation_acquired": true,
+          "start_passed": true,
+          "claim_passed": true,
+          "acquisition_registry_sha": "649aac92c6c569f14c589c56b400c1b2275c0582",
+          "source_binding": null,
+          "source_binding_sha256": "6a077cc1f1d56023dca0506f2f0db2f114b2526e97e8c79eda01da620b84aa74",
+          "final_commit": "84341cb762f0983b9b9c8eb37850a08f8d9bc0d8"
+        }
       },
-      "activity_age_seconds": 77,
+      "activity_age_seconds": 337,
       "activity_fresh": true,
-      "sections_per_hour": 16.22,
+      "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -1685,7 +1757,7 @@
       "historical_id": "astra_endocrinologie",
       "lesson": "E04",
       "worktree": "/workspace/Medina-endocrinologie-E04",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/e04-integrate-g1",
       "allowed_paths": [
         "chapters/E04",
@@ -1696,8 +1768,8 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T16:21:21+00:00",
-      "activity_at": "2026-11-02T16:29:15+00:00",
-      "message": "E04 :14 sections de monographie rédigées dans le script réservé, avec cinq sous-codes/exclusions, trois axes fonction-structure-risque, seuils EU-TIRADS stricts et exceptions, suivi et cadre suisse ; assemblage natif/sciences/quiz encore à réaliser.",
+      "activity_at": "2026-11-02T16:43:08+00:00",
+      "message": "E04 : premier rendu39fenêtres/4quiz/1440-390 passé ; contrôle direct harness révèle deux échecs de structure ignorés par sélecteur local, neuf classes ilot ajoutées et contrôle direct désormais imposé. Reconstruction et navigateur finaux en cours avant toute liaison.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -1714,7 +1786,7 @@
         "fragment": "S05",
         "label": "E-06-Endocrinologie et métabolisme",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "phase": "E04_acquired_started_claimed_research",
+        "phase": "E04_verifications_finales",
         "selected_lesson": {
           "code": "E04",
           "title": "Autres goitres non toxiques",
@@ -3185,7 +3257,14 @@
           "incident_sequence": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E42-E04/worktree-premature-creation-corrected.json",
           "registry_acquire": "3ca8be0efe2144ad9b039ae255a3bb3758e47a4a",
           "started_at": "2026-11-02T16:21:31.341840+00:00",
-          "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E42-E04/start.json"
+          "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E42-E04/start.json",
+          "folder": "/workspace/Medina-endocrinologie-E04/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E04-INTEGRATE",
+          "source_ledger": "/workspace/Medina-endocrinologie-E04/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E04-INTEGRATE/source-ledger.json",
+          "sources_read": 17,
+          "source_count_note": "17entrées dont notice de licence,normal/formation/métadonnées, pas17guidesindépendants.",
+          "science_words": 3005,
+          "strict_semiology_checks": 7,
+          "browser_first_pass": true
         },
         "previous_limits": [
           "Code et libellé suisses locaux2024 seulement ; notes BfArM2024 confrontées, PDF OFS intégral non relu pour cette leçon. Pas certification de codage individuel, remboursement ou disponibilité2026. E42 sans subdivision, pas équivalence automatique avec toute malnutrition sévère.",
@@ -3234,11 +3313,12 @@
             "state": "transfer_cancelled_owned_by_endocrinologie",
             "reason": "Correction explicite root : nouveau cours exige catalogue, réservation D62 à respecter."
           }
-        ]
+        ],
+        "next_candidate_after_E04": "C73 après catalogue D65 libéré ; préparation externe seule entretemps."
       },
-      "activity_age_seconds": 361,
+      "activity_age_seconds": 128,
       "activity_fresh": true,
-      "sections_per_hour": 60.33,
+      "sections_per_hour": 35.11,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -3259,7 +3339,10 @@
         "D77",
         "G09",
         "E40",
-        "G21"
+        "G21",
+        "G24",
+        "G25",
+        "G26"
       ],
       "reserved_elsewhere": [
         "N17"
@@ -3286,15 +3369,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G21-INTEGRATE"
       ],
       "started_at": "2026-11-02T15:52:16+00:00",
-      "activity_at": "2026-11-02T16:29:22+00:00",
-      "message": "Recherche consolidée réelle :37lectures ciblées/réutilisations/provenances dans source-ledger.json,quatreFI suisses exactes contrôlées et cinq originaux humains vus. Betta préalable réellement passé ; erreur PMID29310988/29661694 corrigée avant rédaction, accès exclus tracés. Début de rédaction14/20 maintenant, aucun texte canonique encore remplacé.",
+      "activity_at": "2026-11-02T16:36:30+00:00",
+      "message": "Quatorze points monographiques G21 réellement écrits après Betta. Code/syndrome/étiologie, dénominateurs genevois, SMN versus sevrage dopaminergique et exclusions FI de Madopar distingués ; examens/sciences/pharmacologie/fenêtres encore à produire.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "59951491a23b74c5b3ae4b60ccfe7563a53e210238c14ff8f5b0696e41b414a6",
       "brief": {
         "schema_version": 1,
@@ -4757,9 +4840,9 @@
           }
         ]
       },
-      "activity_age_seconds": 354,
+      "activity_age_seconds": 526,
       "activity_fresh": true,
-      "sections_per_hour": 0.0,
+      "sections_per_hour": 15.85,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -5878,43 +5961,13 @@
           }
         ]
       },
-      "activity_age_seconds": 1177,
-      "activity_fresh": true,
-      "sections_per_hour": 8.59,
+      "activity_age_seconds": 1777,
+      "activity_fresh": false,
+      "sections_per_hour": 7.79,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T07:25:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T07:35:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T07:45:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T07:55:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T08:05:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
     {
       "at": "2026-11-02T08:15:41+00:00",
       "action": "watch",
@@ -7181,6 +7234,39 @@
       "action": "complete",
       "agent": "astra_neurologie",
       "code": "G08"
+    },
+    {
+      "at": "2026-11-02T16:35:16+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T16:36:30+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "redaction",
+      "message": "Quatorze points monographiques G21 réellement écrits après Betta. Code/syndrome/étiologie, dénominateurs genevois, SMN versus sevrage dopaminergique et exclusions FI de Madopar distingués ; examens/sciences/pharmacologie/fenêtres encore à produire."
+    },
+    {
+      "at": "2026-11-02T16:38:17+00:00",
+      "action": "claim",
+      "agent": "astra_neurologie",
+      "code": "G22"
+    },
+    {
+      "at": "2026-11-02T16:39:39+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "preparation",
+      "message": "G22 :acquisition attendue avant checkout complet/workspace,start/gate/claim effectifs16:38:17UTC ; prompt vérité relu,instructions identiques vérifiées,inventaire7fichiers conservé.0source primaire encore lue,aucune rédaction ni binding. G32suivant."
+    },
+    {
+      "at": "2026-11-02T16:43:08+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "verification",
+      "message": "E04 : premier rendu39fenêtres/4quiz/1440-390 passé ; contrôle direct harness révèle deux échecs de structure ignorés par sélecteur local, neuf classes ilot ajoutées et contrôle direct désormais imposé. Reconstruction et navigateur finaux en cours avant toute liaison."
     }
   ],
   "cache": {
@@ -14207,7 +14293,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T16:35:13+00:00",
+    "observed_at": "2026-11-02T16:45:13+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -15777,14 +15863,29 @@
         }
       },
       {
+        "code": "G22",
+        "agent": "astra_neurologie",
+        "branch": "codex/alpha77/g22-integrate-g1",
+        "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+        "local_preview": "/workspace/Medina-neurologie-G22/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/G22-apercu-autonome.html",
+        "exists": false,
+        "sha256": null,
+        "bytes": null,
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/g22-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/G22-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/g22-integrate-g1",
+        "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
+        "publication_main": false,
+        "clinical_certification": false
+      },
+      {
         "code": "E04",
         "agent": "astra_endocrinologie",
         "branch": "codex/alpha77/e04-integrate-g1",
         "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "local_preview": "/workspace/Medina-endocrinologie-E04/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E04-INTEGRATE/E04-apercu-autonome.html",
-        "exists": false,
-        "sha256": null,
-        "bytes": null,
+        "exists": true,
+        "sha256": "8d7baaf374b7b2fd762ddc5e772ddf6c3bc4474ac882b65831b9c72f582e089b",
+        "bytes": 6315316,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/e04-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E04-INTEGRATE/E04-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/e04-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
