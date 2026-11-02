@@ -1,79 +1,66 @@
-"""Abréviations G25 — ajouts conditionnels, sans écraser un terme déjà défini ailleurs."""
+"""Abréviations G25 — autres syndromes extrapyramidaux et troubles de la motricité ; ajouts conditionnels, sans mutation des glossaires existants."""
 from pathlib import Path
-import importlib
+import importlib, sys
+_here = Path(__file__).resolve().parent
+_root = next((p for p in _here.parents if (p / 'build_medina.py').exists()), None)
+_dirs = [_here] + ([_root / 'glossary'] if _root else [])
 _existing = {}
-for _path in sorted(Path(__file__).parent.glob('*.py')):
-    if _path.stem in {'g25', '__init__'}:
-        continue
-    try:
-        _existing.update(getattr(importlib.import_module(_path.stem), 'G', {}))
-    except Exception:
-        pass
+for _d in _dirs:
+    if str(_d) not in sys.path:
+        sys.path.append(str(_d))
+    for _path in sorted(_d.glob('*.py')):
+        if _path.stem in {'g25', '__init__'}:
+            continue
+        try:
+            _existing.update(getattr(importlib.import_module(_path.stem), 'G', {}))
+        except Exception:
+            pass
 G = {}
-def a(key, lit, full, definition, ref=None):
+def add_if_absent(key, letters, full, definition, window):
     if key not in _existing:
-        G[key] = {'lit': [list(x) for x in lit], 'full': full, 'def': '<p>' + definition + '</p>', 'ref': ref}
+        G[key] = {'lit': [list(x) for x in letters], 'full': full,
+                  'def': '<p>' + definition + '</p>', 'ref': window}
 
-def code(key, label, ref='g25-codage'):
-    a(key, [(key[0], 'Lettre du chapitre de la CIM-10-GM'), (key[1:], 'numéro de catégorie et de sous-code')], 'Code CIM-10-GM ' + key,
-      'Code de la classification CIM-10-GM 2024 : ' + label + '.', ref)
 
-a('CIM', [('C','Classification'),('I','Internationale des'),('M','Maladies')], 'Classification internationale des maladies',
-  'Classification de l’Organisation mondiale de la santé. Le catalogue du dépôt suit la CIM-10-GM 2024 ; la correspondance avec la CIM-11 n’est pas établie.', 'g25-codage')
-a('XX', [('XX', 'chapitre vingt de la CIM-10-GM : causes externes de morbidité et de mortalité')], 'Chapitre XX de la CIM-10-GM',
-  'Les codes G25.1 et G25.4 demandent un code supplémentaire de ce chapitre pour identifier la substance responsable du tremblement ou de la chorée.', 'g25-codage')
-code('F95.2', 'syndrome de Gilles de la Tourette, exclu de G25')
-code('F95.9', 'tic non précisé, exclu de G25.6')
-code('R25.1', 'tremblement non précisé, exclu de G25.0')
-code('G51.4', 'myokymie faciale, exclue de G25.3')
-for k, lab in [('G25.0','tremblement essentiel, y compris familial'),('G25.1','tremblement dû à des médicaments'),
-               ('G25.2','autres formes précisées de tremblement, y compris intentionnel'),('G25.3','myoclonie, y compris médicamenteuse'),
-               ('G25.4','chorée médicamenteuse'),('G25.5','autres chorées'),
-               ('G25.6','tics médicamenteux et autres tics d’origine organique'),
-               ('G25.80','mouvements périodiques des jambes au cours du sommeil'),('G25.81','syndrome des jambes sans repos'),
-               ('G25.88','autres syndromes extrapyramidaux précisés, y compris akathisie et syndrome de l’homme raide'),
-               ('G25.9','syndrome extrapyramidal et trouble de la motricité, sans précision')]:
-    code(k, lab)
-a('DGN', [('D','Deutsche'),('G','Gesellschaft'),('N','für Neurologie')], 'Société allemande de neurologie',
-  'Cette société publie, avec les sociétés autrichienne et suisse de neurologie, les lignes directrices S2k sur le tremblement, le syndrome des jambes sans repos et la chorée.', 'g25-div-psg')
-a('DGSM', [('D','Deutsche'),('G','Gesellschaft'),('S','für Schlafforschung'),('M','und Schlafmedizin')], 'Société allemande de recherche sur le sommeil et de médecine du sommeil',
-  'Cette société cosigne la ligne directrice 2024 sur le syndrome des jambes sans repos.', 'g25-div-psg')
-a('GABAergique', [('GABA','acide gamma-aminobutyrique'),('ergique','qui agit par ce neuromédiateur')], 'Qui agit par l’acide gamma-aminobutyrique',
-  'Adjectif désignant les neurones ou les transmissions qui utilisent le GABA, neuromédiateur inhibiteur. Ils sont altérés dans la myoclonie corticale et le syndrome de l’homme raide.', 'g25-stiffperson')
-a('GABAergiques', [('GABA','acide gamma-aminobutyrique'),('ergiques','qui agissent par ce neuromédiateur')], 'Qui agissent par l’acide gamma-aminobutyrique',
-  'Pluriel de GABAergique : interneurones inhibiteurs dont la dysfonction est invoquée dans la myoclonie corticale.', 'g25-myoclonie-class')
-for k, n in [('MEIS1','MEIS homeobox 1'),('BTBD9','BTB domain containing 9'),('MAP2K4','Mitogen-activated protein kinase kinase 4'),
-             ('PTPRD','Protein tyrosine phosphatase receptor type D'),('TOX3','TOX high mobility group box family member 3')]:
-    a(k, [(k, 'symbole de gène ; le développement littéral n’est pas fourni par les sources lues')], 'Gène ' + k,
-      'Ce gène figure parmi les loci associés au syndrome des jambes sans repos dans la méta-analyse pangénomique 2024.', 'g25-sjsr-criteres')
-a('anti-GAD65', [('anti','contre'),('GAD','acide Glutamique Décarboxylase'),('65','isoforme de 65 kilodaltons')], 'Anticorps dirigés contre la décarboxylase de l’acide glutamique 65',
-  'Anticorps présents à titre élevé chez la plupart des patients avec syndrome de l’homme raide ; la GAD65 est l’enzyme de synthèse du GABA.', 'g25-stiffperson')
-a('anti-TPO', [('anti','contre'),('T','Thyréo'),('P','Peroxydase'),('O','—')], 'Anticorps dirigés contre la thyréopéroxydase',
-  'Dosage inscrit dans le bilan de la chorée sporadique.', 'g25-bilan-choree')
-a('CAG', [('C','Cytosine'),('A','Adénine'),('G','Guanine')], 'Triplet cytosine-adénine-guanine',
-  'Les répétitions de ce triplet définissent la maladie de Huntington ; le dossier cite des allèles intermédiaires de 27 à 35 répétitions.', 'g25-huntington')
-a('Stiff-Person', [('Stiff-Person','nom anglais du syndrome de l’homme raide, non une abréviation')], 'Stiff-person syndrome', 'Nom anglais du syndrome de l’homme raide.', 'g25-stiffperson')
-a('Creutzfeldt-Jakob', [('Creutzfeldt-Jakob','noms propres de deux médecins, non une abréviation')], 'Maladie de Creutzfeldt-Jakob', 'Maladie à évoquer devant des myoclonies avec démence rapidement progressive.', 'g25-urgence-myoclonie')
-a('DaT-SPECT', [('DaT','DopAmine Transporter (transporteur de la dopamine)'),('SPECT','Single Photon Emission Computed Tomography (tomographie d’émission monophotonique)')], 'Scintigraphie du transporteur de la dopamine',
-  'Examen à l’ioflupane marqué à l’iode 123 qui montre un déficit dopaminergique présynaptique.', 'g25-datscan')
-a('DaT', [('DaT','DopAmine Transporter (transporteur de la dopamine)')], 'Transporteur de la dopamine', 'Cible de l’ioflupane dans le DaT-SPECT.', 'g25-datscan')
-a('EMG', [('E','Électro'),('M','Myo'),('G','Gramme')], 'Électromyogramme', 'Enregistrement de l’activité électrique des muscles ; il distingue l’activité rythmique du tremblement des bouffées irrégulières de la myoclonie.', 'g25-emg')
-a('5-HT2A', [('5-HT','5-HydroxyTryptamine (sérotonine)'),('2A','sous-type 2A du récepteur')], 'Récepteur 2A de la sérotonine',
-  'Les antagonistes de ce récepteur (cyproheptadine, mirtazapine, miansérine, trazodone) sont cités dans l’akathisie ; la mirtazapine aggrave toutefois les jambes sans repos.', 'g25-d-akathisie')
-a('CK', [('C','Créatine'),('K','Kinase')], 'Créatine kinase', 'Enzyme musculaire dosée dans le bilan de la chorée sporadique.', 'g25-bilan-choree')
-a('PTH', [('P','Para'),('T','Thyroid (thyroïdienne)'),('H','Hormone')], 'Parathormone', 'Dosage inscrit dans le bilan de la chorée sporadique (hypoparathyroïdie).', 'g25-bilan-choree')
-a('AAN', [('A','Anticorps'),('A','Anti'),('N','Nucléaires')], 'Anticorps antinucléaires', 'Dosage inscrit dans le bilan de la chorée sporadique pour rechercher un lupus.', 'g25-bilan-choree')
-a('TRAK', [('TR','TSH-Rezeptor (récepteur de la TSH)'),('A','Auto'),('K','Körper (anticorps)')], 'Anticorps anti-récepteur de la TSH', 'Dosage inscrit dans le bilan de la chorée sporadique (hyperthyroïdie auto-immune).', 'g25-bilan-choree')
-a('VIM', [('V','Ventral'),('IM','Intermédiaire (noyau ventral intermédiaire du thalamus)')], 'Noyau ventral intermédiaire du thalamus', 'Cible de la stimulation cérébrale profonde dans le tremblement essentiel sévère.', 'g25-d-toxine')
-a('GPi', [('G','Globus'),('P','Pallidus'),('i','interne')], 'Globus pallidus interne', 'Cible alternative de la stimulation cérébrale profonde lorsque le tremblement est dystonique.', 'g25-d-toxine')
-a('DDT', [('D','Dichloro'),('D','Diphényl'),('T','Trichloroéthane')], 'Dichlorodiphényltrichloroéthane', 'Insecticide figurant parmi les toxiques tremorigènes du consensus 2018.', 'g25-tremorigenes')
-a('LGI1', [('LGI1','symbole de protéine ; développement non fourni par les sources lues')], 'Anticorps anti-LGI1', 'Cible d’une encéphalite auto-immune pouvant causer une chorée.', 'g25-chorees-causes')
-a('CASPR2', [('CASPR2','symbole de protéine ; développement non fourni par les sources lues')], 'Anticorps anti-CASPR2', 'Cible d’une encéphalite auto-immune pouvant causer une chorée.', 'g25-chorees-causes')
-a('IgLON5', [('IgLON5','symbole de protéine ; développement non fourni par les sources lues')], 'Anticorps anti-IgLON5', 'Cible d’une encéphalite auto-immune pouvant causer une chorée.', 'g25-chorees-causes')
-a('PERM', [('P','Progressive'),('E','Encephalomyelitis'),('R','with Rigidity'),('M','and Myoclonus')], 'Encéphalomyélite progressive avec rigidité et myoclonies', 'Forme du syndrome de l’homme raide.', 'g25-stiffperson')
-a('IRLSSG', [('I','International'),('R','Restless'),('L','Legs'),('S','Syndrome'),('S','Study'),('G','Group')], 'Groupe international d’étude du syndrome des jambes sans repos', 'Ce groupe a défini en 2014 les cinq critères diagnostiques.', 'g25-sjsr-criteres')
-a('IRLS', [('I','International'),('R','Restless'),('L','Legs'),('S','Scale')], 'Échelle internationale du syndrome des jambes sans repos', 'Échelle de suivi d’un diagnostic établi.', 'g25-sjsr-criteres')
-a('RLS-6', [('RLS','Restless Legs Syndrome'),('6','six items')], 'Échelle RLS-6', 'Échelle de suivi d’un diagnostic établi ; le détail de l’échelle n’est pas fourni par les sources lues.', 'g25-sjsr-criteres')
-a('ASRS', [('ASRS','sigle d’échelle ; développement non fourni par les sources lues')], 'Échelle ASRS', 'Échelle de suivi d’un diagnostic établi de syndrome des jambes sans repos.', 'g25-sjsr-criteres')
-a('Requip-Modutab', [('Requip-Modutab','noms commerciaux suisses du ropinirole, non une abréviation')], 'Requip-Modutab', 'Information suisse du ropinirole ne mentionnant que la maladie de Parkinson.', 'g25-d-ropinirole')
-a('Ropinirol-Mepha', [('Ropinirol-Mepha','nom commercial suisse du ropinirole, non une abréviation')], 'Ropinirol-Mepha', 'Information suisse du ropinirole ne mentionnant que la maladie de Parkinson.', 'g25-d-ropinirole')
+add_if_absent('RLS', [('R', 'Restless'), ('L', 'Legs'), ('S', 'Syndrome')], 'Restless legs syndrome', 'Syndrome des jambes sans repos : cinq critères cliniques, pas diagnostic sur polysomnographie seule.', 'g25-rls')
+add_if_absent('SJSR', [('S', 'Syndrome des'), ('J', 'Jambes'), ('S', 'Sans'), ('R', 'Repos')], 'Syndrome des jambes sans repos', 'Besoin de bouger au repos, soulagé par mouvement et à prédominance soir/nuit, sans explication intégrale par un imitateur.', 'g25-criteria')
+add_if_absent('PLMS', [('P', 'Periodic'), ('L', 'Limb'), ('M', 'Movements in'), ('S', 'Sleep')], 'Periodic limb movements in sleep', 'Mouvements périodiques pendant le sommeil ; association possible au RLS, sans équivalence avec une maladie PLMD.', 'g25-plms')
+add_if_absent('PLMD', [('P', 'Periodic'), ('L', 'Limb'), ('M', 'Movement'), ('D', 'Disorder')], 'Periodic limb movement disorder', 'Trouble clinique qui ne se diagnostique ni ne se traite sur un index polysomnographique seul.', 'g25-plms')
+add_if_absent('EMG', [('É', 'Électro'), ('M', 'Myo'), ('G', 'Graphie')], 'Électromyographie', 'Enregistrement de l’activité musculaire, à adapter aux muscles et à la condition déclenchante.', 'g25-emg')
+add_if_absent('EEG', [('É', 'Électro'), ('E', 'Encéphalo'), ('G', 'Graphie')], 'Électroencéphalographie', 'Enregistrement de l’activité électrique cérébrale ; le couplage avec EMG peut aider dans les myoclonies.', 'g25-eeg')
+add_if_absent('GAD65', [('GAD', 'Glutamate décarboxylase'), ('65', 'masse nominale de 65 kilodaltons')], 'Glutamate décarboxylase 65', 'Isoforme codée par GAD2, participant à la synthèse du GABA ; un anticorps isolé ne diagnostique pas le syndrome de la personne raide.', 'g25-gad')
+add_if_absent('GAD2', [('GAD2', 'symbole du gène de la glutamate décarboxylase 2')], 'Glutamate décarboxylase 2', 'Gène humain codant l’isoforme GAD65 ; annotation de biochimie normale, pas protocole thérapeutique.', 'g25-gad')
+add_if_absent('PCP4', [('PCP', 'Purkinje cell protein'), ('4', 'identifiant de la protéine')], 'Purkinje cell protein 4', 'Marqueur immunohistochimique de l’illustration humaine ; distinct de GAD65 et du dosage d’anticorps du patient.', 'g25-gad')
+add_if_absent('SV2A', [('SV', 'Synaptic vesicle'), ('2A', 'protéine 2A')], 'Protéine vésiculaire synaptique 2A', 'Cible de liaison du lévétiracétam contribuant à son mécanisme antiépileptique, sans indication universelle pour les myoclonies.', 'g25-eeg')
+add_if_absent('TSAT', [('T', 'Transferrin'), ('SAT', 'Saturation')], 'Saturation de la transferrine', 'Paramètre du bilan martial à interpréter avec ferritine, unités et contexte clinique.', 'g25-iron')
+add_if_absent('ClCr', [('Cl', 'Clairance'), ('Cr', 'Créatinine')], 'Clairance de la créatinine', 'Paramètre utilisé par les tables de dose rénale ; vérifier méthode, unités et indexation du produit exact.', 'g25-pregabalin')
+add_if_absent('SPS', [('S', 'Stiff'), ('P', 'Person'), ('S', 'Syndrome')], 'Stiff person syndrome', 'Syndrome de la personne raide : raideur et spasmes avec démarche spécialisée, pas diagnostic par anticorps seul.', 'g25-sps')
+add_if_absent('IAPRD', [('I', 'International'), ('A', 'Association of'), ('P', 'Parkinsonism and'), ('R', 'Related'), ('D', 'Disorders')], 'International Association of Parkinsonism and Related Disorders', 'Consensus de classification des myoclonies, axes clinique, neurophysiologique et étiologique ; résumé primaire 2025 consulté.', 'g25-phenotype')
+add_if_absent('ER', [('ER', 'Extended release')], 'Libération prolongée', 'Forme retard ; la FI Sifrol ER ne constitue pas une indication RLS de la forme immédiate.', 'g25-prami')
+add_if_absent('ET', [('E', 'Essential'), ('T', 'Tremor')], 'Essential tremor', 'Tremblement essentiel, syndrome défini par critères cliniques et durée.', 'g25-essential')
+add_if_absent('ET+', [('ET', 'Essential tremor'), ('+', 'signes discrets additionnels')], 'Essential tremor plus', 'Signes discrets insuffisants pour un autre syndrome neurologique défini, à décrire et réévaluer.', 'g25-etplus')
+add_if_absent('GABA', [('G', 'Gamma'), ('A', 'Amino'), ('B', 'Butyric'), ('A', 'Acid')], 'Acide gamma-aminobutyrique', 'Neurotransmetteur inhibiteur ; prégabaline, clonazépam et lévétiracétam n’ont pas la même cible.', 'g25-gad')
+add_if_absent('α2δ', [('α2δ', 'sous-unité alpha-2-delta')], 'Sous-unité alpha-2-delta de canal calcique', 'Cible de liaison de la prégabaline ; ne signifie pas agoniste GABA direct.', 'g25-pregabalin')
+
+add_if_absent('PSG', [('P', 'Poly'), ('S', 'Somno'), ('G', 'Graphie')], 'Polysomnographie', 'Enregistrement du sommeil, à demander pour une question clinique ; non obligatoire pour tout diagnostic de jambes sans repos.', 'g25-rls')
+add_if_absent('ESSTS', [('E', 'European'), ('S', 'Society for the'), ('S', 'Study of'), ('T', 'Tourette'), ('S', 'Syndrome')], 'European Society for the Study of Tourette Syndrome', 'Société européenne des recommandations de tics version 2.0, publication en ligne 2021 et numéro 2022.', 'g25-tic')
+add_if_absent('DGSM', [('D', 'Deutsche'), ('G', 'Gesellschaft für'), ('S', 'Schlafforschung und'), ('M', 'Schlafmedizin')], 'Société allemande de recherche sur le sommeil et de médecine du sommeil', 'Cosignataire avec la DGN de la recommandation abrégée RLS 2024.', 'g25-rls')
+add_if_absent('GPe', [('GP', 'Globus pallidus'), ('e', 'externe')], 'Segment externe du globus pallidus', 'Repère anatomique distinct du segment interne sur l’original humain ; pas mesure d’activité chez le patient.', 'g25-phenotype')
+add_if_absent('STN', [('S', 'Sub'), ('T', 'Thalamic'), ('N', 'Nucleus')], 'Noyau sous-thalamique', 'Structure nommée sur le schéma humain de référence ; l’image n’établit pas une lésion G25.', 'g25-phenotype')
+add_if_absent('SN', [('S', 'Substantia'), ('N', 'Nigra')], 'Substance noire', 'Repère du schéma de référence ; ni quantité de dopamine ni concentration de fer mesurée.', 'g25-phenotype')
+add_if_absent('G25.0', [('G25.0', 'notation de nomenclature à interpréter dans la version suisse consultée')], 'Nomenclature : G25.0', 'tremblement essentiel/familial. La conclusion clinique précède le codage ; ce libellé ne choisit aucun traitement.', 'g25-definition')
+add_if_absent('G25.1', [('G25.1', 'notation de nomenclature à interpréter dans la version suisse consultée')], 'Nomenclature : G25.1', 'tremblement médicamenteux. La conclusion clinique précède le codage ; ce libellé ne choisit aucun traitement.', 'g25-definition')
+add_if_absent('G25.2', [('G25.2', 'notation de nomenclature à interpréter dans la version suisse consultée')], 'Nomenclature : G25.2', 'autres tremblements précisés. La conclusion clinique précède le codage ; ce libellé ne choisit aucun traitement.', 'g25-definition')
+add_if_absent('G25.3', [('G25.3', 'notation de nomenclature à interpréter dans la version suisse consultée')], 'Nomenclature : G25.3', 'myoclonies, hors épilepsie myoclonique G40.-. La conclusion clinique précède le codage ; ce libellé ne choisit aucun traitement.', 'g25-definition')
+add_if_absent('G25.4', [('G25.4', 'notation de nomenclature à interpréter dans la version suisse consultée')], 'Nomenclature : G25.4', 'chorée médicamenteuse. La conclusion clinique précède le codage ; ce libellé ne choisit aucun traitement.', 'g25-definition')
+add_if_absent('G25.5', [('G25.5', 'notation de nomenclature à interpréter dans la version suisse consultée')], 'Nomenclature : G25.5', 'autres chorées, hors Huntington et Sydenham. La conclusion clinique précède le codage ; ce libellé ne choisit aucun traitement.', 'g25-definition')
+add_if_absent('G25.6', [('G25.6', 'notation de nomenclature à interpréter dans la version suisse consultée')], 'Nomenclature : G25.6', 'tics médicamenteux ou autres organiques, hors Tourette et tic sans précision. La conclusion clinique précède le codage ; ce libellé ne choisit aucun traitement.', 'g25-definition')
+add_if_absent('G25.8', [('G25.8', 'notation de nomenclature à interpréter dans la version suisse consultée')], 'Nomenclature : G25.8', 'catégorie des autres syndromes précisés, subdivisée dans la version suisse consultée. La conclusion clinique précède le codage ; ce libellé ne choisit aucun traitement.', 'g25-definition')
+add_if_absent('G25.80', [('G25.80', 'notation de nomenclature à interpréter dans la version suisse consultée')], 'Nomenclature : G25.80', 'mouvements périodiques des jambes pendant le sommeil. La conclusion clinique précède le codage ; ce libellé ne choisit aucun traitement.', 'g25-definition')
+add_if_absent('G25.81', [('G25.81', 'notation de nomenclature à interpréter dans la version suisse consultée')], 'Nomenclature : G25.81', 'syndrome des jambes sans repos. La conclusion clinique précède le codage ; ce libellé ne choisit aucun traitement.', 'g25-definition')
+add_if_absent('G25.88', [('G25.88', 'notation de nomenclature à interpréter dans la version suisse consultée')], 'Nomenclature : G25.88', 'autres syndromes précisés, dont akathisie et personne raide. La conclusion clinique précède le codage ; ce libellé ne choisit aucun traitement.', 'g25-definition')
+add_if_absent('G25.9', [('G25.9', 'notation de nomenclature à interpréter dans la version suisse consultée')], 'Nomenclature : G25.9', 'syndrome extrapyramidal et trouble de la motricité sans précision. La conclusion clinique précède le codage ; ce libellé ne choisit aucun traitement.', 'g25-definition')
+add_if_absent('G51.4', [('G51.4', 'notation de nomenclature à interpréter dans la version suisse consultée')], 'Nomenclature : G51.4', 'myokymie faciale, exclue de G25.3. La conclusion clinique précède le codage ; ce libellé ne choisit aucun traitement.', 'g25-definition')
+add_if_absent('F95.2', [('F95.2', 'notation de nomenclature à interpréter dans la version suisse consultée')], 'Nomenclature : F95.2', 'syndrome de Gilles de la Tourette, exclu de G25.6. La conclusion clinique précède le codage ; ce libellé ne choisit aucun traitement.', 'g25-definition')
+add_if_absent('F95.9', [('F95.9', 'notation de nomenclature à interpréter dans la version suisse consultée')], 'Nomenclature : F95.9', 'tic sans précision, exclu de G25.6. La conclusion clinique précède le codage ; ce libellé ne choisit aucun traitement.', 'g25-definition')
+add_if_absent('G25.82', [('G25.82', 'notation de nomenclature à interpréter dans la version suisse consultée')], 'Nomenclature : G25.82', 'sous-code absent de l’entrée suisse consultée, non utilisé dans ce cours. La conclusion clinique précède le codage ; ce libellé ne choisit aucun traitement.', 'g25-definition')

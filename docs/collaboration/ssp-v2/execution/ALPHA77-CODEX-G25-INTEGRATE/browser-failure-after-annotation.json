@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-11-02T19:00:43.965751+00:00",
+  "status": "failed_not_completed",
+  "error": "Timeout waiting for visible annotated figure after selecting sciences",
+  "cause": "BeautifulSoup serialization of individual partial HTML files auto-closed the chapter template in part a; scientific panels became detached from template. Native browser detected the error; prior passed report was stale and moved aside.",
+  "preview_sha256": "ceb821632562fe3eb72608969964b0674f24ef4524961dcddf79a190ada9a43d",
+  "preserved": "captures-third-failed-partial, G25-apercu-autonome-third-failed.html, browser-report-stale-after-third-failure.json",
+  "source_binding_ever_emitted": false,
+  "fix": "Regenerate all partial surfaces from chapter generators, retaining corrected figure coordinates, then add structural containment assertion and rerun native/browser verification."
+}
