@@ -1,0 +1,11 @@
+{
+  "issue": "Quiz desktop : clic au centre de réponse touche le sigle OMS transformé en lien de glossaire ; dialogue ouvert, retours quiz suivants masqués.",
+  "evidence": [
+    "browser-initial-quiz-feedback.json",
+    "captures/E40-quiz-debug.png",
+    "browser-initial-log.txt"
+  ],
+  "reproduction": "Diagnostic navigateur réel : event.target=SPAN.mc-ab[data-ab=OMS], dialogue visible, feedback caché.",
+  "correction": "Développement des réponses sans sigle cliquable ; aucun moteur partagé modifié. Nouveau contrôle par clic normal, défilement et attente du feedback.",
+  "status": "Correction locale produite ; validation finale liée au browser-report.json final."
+}
