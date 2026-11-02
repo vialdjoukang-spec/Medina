@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-02T18:25:16+00:00",
+  "generated_at": "2026-11-02T18:35:16+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T18:25:16+00:00",
+    "checked_at": "2026-11-02T18:35:16+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T18:25:16+00:00",
+    "observed_at": "2026-11-02T18:35:16+00:00",
     "ok": true,
     "findings": [
       {
@@ -44,7 +44,7 @@
             "/workspace/Medina-endocrinologie-C73",
             "/workspace/Medina-hematologie-D65"
           ],
-          "free_bytes": 1258037248,
+          "free_bytes": 2259488768,
           "total_bytes": 33770192896,
           "level": "ok"
         },
@@ -53,7 +53,7 @@
           "observed_paths": [
             "/tmp/Medina-neurologie-G25"
           ],
-          "free_bytes": 1092050944,
+          "free_bytes": 844673024,
           "total_bytes": 9441329152,
           "level": "ok"
         }
@@ -64,8 +64,8 @@
       "meaning": "Capacité observée sur cet hôte ; aucune taille de futur build garantie."
     },
     "semiology_history": {
-      "inspected": 41,
-      "passed": 27,
+      "inspected": 42,
+      "passed": 28,
       "reserved_codes": [
         "E00",
         "N04",
@@ -85,7 +85,7 @@
       "meaning": "Contrôle structurel relancé à chaque veille600s ; résultats historiques conservés, nouvelles clôtures refusées si échec."
     },
     "interval_seconds": 600,
-    "observer_pid": 1663910,
+    "observer_pid": 1678190,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -1809,7 +1809,7 @@
           "final_commit": "5edc1c1d2efa0accb62b004729d1047b649aad26"
         }
       },
-      "activity_age_seconds": 82,
+      "activity_age_seconds": 683,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -1848,7 +1848,7 @@
       "historical_id": "astra_endocrinologie",
       "lesson": "C73",
       "worktree": "/workspace/Medina-endocrinologie-C73",
-      "stage": "redaction",
+      "stage": "termine",
       "branch": "codex/alpha77/c73-integrate-g1",
       "allowed_paths": [
         "chapters/C73",
@@ -1859,8 +1859,8 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T17:49:16+00:00",
-      "activity_at": "2026-11-02T18:17:11+00:00",
-      "message": "Relecture C73 : prévention RET et chirurgie médullaire complétées après lecture S3 ciblée ; trois FI suisses supplémentaires lues (Nexavar novembre 2023, Cabometyx décembre 2025, Caprelsa avril 2025). Porte de vérité repassée pour 32 références et dix sections pharmacologiques, sans extrapolation Cabometyx au médullaire ni dose pédiatrique inventée. Nouveaux contrôles avant captures finales ; aucun sceau.",
+      "activity_at": "2026-11-02T18:33:09+00:00",
+      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -1877,7 +1877,7 @@
         "fragment": "S05",
         "label": "E-06-Endocrinologie et métabolisme",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "phase": "C73_recherche_apres_acquire_start_claim",
+        "phase": "C73_validation_technique_passee_avant_liaison_unique",
         "selected_lesson": {
           "code": "C73",
           "title": "Tumeur maligne de la thyroïde",
@@ -3347,16 +3347,28 @@
           "minor_whitespace_reserve": "E04_pop1.html:27 ligne vide finale après sceau, conservée ; diff-check-whitespace.json"
         },
         "current_evidence": {
-          "preparation_only": true,
-          "no_worktree": true,
-          "no_reservation": true,
-          "catalogue_priority": "D65 parent, puis C73 avant D66 selon instruction explicite root",
-          "catalogue_owner": "D65 parent",
-          "catalogue_acquire_registry": "66915fe2bf471b0d8b7cac99ffb7ed726e79cfab",
-          "external_preparation_cache": "/tmp/medina-source-cache/endocrinologie/C73",
-          "preparation_log": "/tmp/medina-source-cache/endocrinologie/C73/preparation-log.json",
-          "external_preparation_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E04-C73/external-preparation-receipt.json",
-          "external_preparation_milestone_at": "2026-11-02T17:25:42.099866+00:00"
+          "code": "C73",
+          "research_records": 32,
+          "drug_FIs": 10,
+          "clinical_sections": 14,
+          "matrix_rubrics": 20,
+          "science_disciplines": 6,
+          "science_words_native": 2686,
+          "figures": 8,
+          "human_originals": 2,
+          "image_occurrences": 3,
+          "windows": 43,
+          "quizzes": 4,
+          "final_screenshots_actually_inspected": 36,
+          "preview_sha256": "d37b2930f7ddaa523fa3da465b470433242cd92d8508bb2161029c9f5a4da691",
+          "strict_semiology_checks": 7,
+          "four_reviews": "self_review same author, no independent or human validation",
+          "technical_validation": true,
+          "native_pH_context": "Closed before final binding; initial review preserved.",
+          "binding_exists": false,
+          "clinical_score": null,
+          "tokens_actual": null,
+          "cost_actual": null
         },
         "previous_limits": [
           "Métadonnées suisses locales2024 pour E04.0/.1/.2/.8/.9, confrontées aux notes allemandes2024 ; PDF OFS intégral non relu, pas certification de codage2026, remboursement ou stock. Exclusions carence iodée E00–E02 et goitre congénital diffus E03.0.",
@@ -3410,9 +3422,9 @@
         "next_candidate_after_E04": "C73 après catalogue D65 libéré ; préparation externe seule entretemps.",
         "measurement_note": "Les champs JSON null signifient non mesurés/inconnus ; ils ne représentent jamais une mesure zéro. Le libellé ambigu du rapport E04 scellé reste conservé et est corrigé ici sans modifier ses preuves."
       },
-      "activity_age_seconds": 485,
+      "activity_age_seconds": 128,
       "activity_fresh": true,
-      "sections_per_hour": 23.33,
+      "sections_per_hour": 18.26,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -3463,8 +3475,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G25-INTEGRATE"
       ],
       "started_at": "2026-11-02T18:00:54+00:00",
-      "activity_at": "2026-11-02T18:12:25+00:00",
-      "message": "G25 périmètre OFS complet lu (G25.80PLMS/.81RLS/.88akathisie et homme raide), PDF tremor2022 avec SNG et validité2027 récupéré et passages initiaux lus ; RLS2024 et résumés2026 vérifiés. Six FI versions repérées, indications/doses de quatre FI réellement réouvertes ; lectures sécurité encore en cours, pas rédaction.",
+      "activity_at": "2026-11-02T18:33:42+00:00",
+      "message": "G25 : registre52lectures ciblées/réutilisations consolidé avec huit FI suisses et cinq originaux humains effectivement vus. Matrice20rubriques passée réellement Betta, second contrôle après correction factuelle éditeur Mysoline=CuratisAG ; test initial conservé. Gate verte18:33:29, aucune rédaction canonique avant passage. Entrée en rédaction14points/sixsciences.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -4991,7 +5003,7 @@
           "G26"
         ]
       },
-      "activity_age_seconds": 771,
+      "activity_age_seconds": 95,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -6354,45 +6366,13 @@
           }
         ]
       },
-      "activity_age_seconds": 2317,
+      "activity_age_seconds": 2918,
       "activity_fresh": false,
-      "sections_per_hour": 9.07,
+      "sections_per_hour": 8.19,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T11:20:10+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T11:23:32+00:00",
-      "action": "claim",
-      "agent": "astra_nephrologie",
-      "code": "N05"
-    },
-    {
-      "at": "2026-11-02T11:26:34+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "recherche",
-      "message": "N05 :33lectures ciblées/réutilisées attribuées,6FI ; statutKDIGO2026projet et classeOFSN05 vérifiés ; betta entrée réussi."
-    },
-    {
-      "at": "2026-11-02T11:30:10+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 1
-    },
-    {
-      "at": "2026-11-02T11:32:27+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "recherche",
-      "message": "G03 : 18 lectures ciblées effectives journalisées ; RMS suisse 2021 retrouvée, FI exactes et OMS 2025 relues ; plan 20 rubriques prêt."
-    },
     {
       "at": "2026-11-02T11:32:40+00:00",
       "action": "progress",
@@ -7669,6 +7649,39 @@
       "agent": "astra_neurologie",
       "stage": "recherche",
       "message": "G36 : treize références ciblées journalisées ; quatre sous-codes vérifiés, correction ravulizumab2024 et critères MOG2023 confrontés ; aucune rédaction canonique ni liaison émise."
+    },
+    {
+      "at": "2026-11-02T18:25:16+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T18:25:19+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "recherche",
+      "message": "G25 : lectures ciblées réelles complétées pour critères tremblement essentiel DGN/SNG2022, sémiologie USZ actualisée16avril2026, fer/augmentation RLS2024, myoclonus2024 et limites SPS2025 ; sécurité/organes/reproduction de huit FI suisses en cours de vérification. Les résumés2026 restent signalés comme tels, aucune rédaction canonique/Betta déclarée achevée."
+    },
+    {
+      "at": "2026-11-02T18:33:01+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "verification",
+      "message": "C73 : contrôles statiques et six sciences passés, sept règles sémiologiques natives passées, aperçu S05 reconstruit. Navigateur final 1440/390 : 43 fenêtres, quatre quiz, deux définitions natives FI/OpenStax, clavier/Navigo, images et tableaux24px/Livre vérifiés. 36 captures finales réellement inspectées, incident pH gastrique corrigé et initial conservé. Quatre self_review produites, validation technique passée ; liaison unique à émettre."
+    },
+    {
+      "at": "2026-11-02T18:33:09+00:00",
+      "action": "complete",
+      "agent": "astra_endocrinologie",
+      "code": "C73"
+    },
+    {
+      "at": "2026-11-02T18:33:42+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "recherche",
+      "message": "G25 : registre52lectures ciblées/réutilisations consolidé avec huit FI suisses et cinq originaux humains effectivement vus. Matrice20rubriques passée réellement Betta, second contrôle après correction factuelle éditeur Mysoline=CuratisAG ; test initial conservé. Gate verte18:33:29, aucune rédaction canonique avant passage. Entrée en rédaction14points/sixsciences."
     }
   ],
   "cache": {
@@ -8040,11 +8053,20 @@
         "research_sha256": "9b536251600f2cfe5f2de4ae21345d7b22cd4041e09767cbdb121cbd3aeb71cc",
         "canonical_write": false
       },
-      "sources": 24,
+      "sources": 27,
       "swiss_fis_newly_read": 6,
       "images_seen": 2,
       "completed_lesson_D65_activity_unchanged": true,
-      "canonical_write": false
+      "canonical_write": false,
+      "supplement_at": "2026-11-02T18:26:15.102993+00:00",
+      "research_check_latest": {
+        "at": "2026-11-02T18:25:19.102666+00:00",
+        "scope": "Deuxième contrôle formel externe après lectures AI/AOS ; premier reçu conservé, aucun start/canonique anticipé.",
+        "sources": 27,
+        "sources_sha256": "fa523b4da47fdd9df0032c128f55a7eab0c8d85ae0a69fd5bdc81fdb56c41f37",
+        "research_sha256": "07cc7ac5b2de4ad5e20e99fa7bf2e40231b4ca6502bb6d1f4d757bec87dc1ba1",
+        "canonical_write": false
+      }
     }
   },
   "prompt": {
@@ -14861,7 +14883,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T18:25:13+00:00",
+    "observed_at": "2026-11-02T18:35:13+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -16785,6 +16807,65 @@
         }
       },
       {
+        "code": "C73",
+        "agent": "astra_endocrinologie",
+        "branch": "codex/alpha77/c73-integrate-g1",
+        "head_observed": "bc3c4d055b7eea4de095d42aec27f9fb9c14198c",
+        "local_preview": "/workspace/Medina-endocrinologie-C73/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C73-INTEGRATE/C73-apercu-autonome.html",
+        "exists": true,
+        "sha256": "d37b2930f7ddaa523fa3da465b470433242cd92d8508bb2161029c9f5a4da691",
+        "bytes": 7704471,
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/c73-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C73-INTEGRATE/C73-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/c73-integrate-g1",
+        "status": "Achèvement de projet documenté; version en attente de revue utilisateur avant PR main.",
+        "publication_main": false,
+        "clinical_certification": false,
+        "completion": {
+          "agent": "astra_endocrinologie",
+          "code": "C73",
+          "at": "2026-11-02T18:33:09+00:00",
+          "branch": "codex/alpha77/c73-integrate-g1",
+          "worktree": "/workspace/Medina-endocrinologie-C73",
+          "folder": "/workspace/Medina-endocrinologie-C73/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C73-INTEGRATE",
+          "manifest_sha256": "70fd46fec72f166ae2696894c9f0bcb0a1c35407873bd5c15a4317342906285e",
+          "source_binding_sha256": "cf9f3a9c915ac885035c0bdf4694bd06f7e0384f7bad02d80e8a3ce9b55dcf9e",
+          "review_modes": {
+            "medical": "self_review",
+            "language": "self_review",
+            "visual_desktop": "self_review",
+            "visual_mobile": "self_review"
+          },
+          "clinical_certification": false,
+          "publication_allowed": false,
+          "preview_sha256": "d37b2930f7ddaa523fa3da465b470433242cd92d8508bb2161029c9f5a4da691",
+          "semiology_contract": {
+            "code": "C73",
+            "observed_at": "2026-11-02T18:33:09+00:00",
+            "passed": true,
+            "checks": {
+              "six_science_tabs": true,
+              "first_selected_semio": true,
+              "semio_panel_label_and_visible": true,
+              "first_unit_exact_h3": true,
+              "nine_named_sections": true,
+              "linked_sources_in_semio": true,
+              "clinical_semio_marker": true
+            },
+            "findings": [],
+            "source_hashes": {
+              "chapters/C73/C73_a.html": "5e861b0e4908cb0993bef4823eb8c182b932ef22a9db34084c20ed6eb679fe7f",
+              "chapters/C73/C73_b.html": "d4c9900972e422b7e5cfaa536c0c992b8002350604262063d9d54c93fccade57",
+              "chapters/C73/C73_c.html": "d81c33b5415af4394348ee49439baa0347ae7e5a7580678205fbbd5d741a1e35",
+              "chapters/C73/C73_d.html": "3d22e6dbdc669e7ace6eb533907300ccd32d32591b11299d3bbc3ae479a08401"
+            },
+            "clinical_certification": false,
+            "author_activity_refreshed": false,
+            "source_bindings_refreshed": false,
+            "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+          }
+        }
+      },
+      {
         "code": "G36",
         "agent": "astra_neurologie",
         "branch": "codex/alpha77/g36-integrate-g1",
@@ -16795,21 +16876,6 @@
         "bytes": null,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/g36-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G36-INTEGRATE/G36-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/g36-integrate-g1",
-        "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
-        "publication_main": false,
-        "clinical_certification": false
-      },
-      {
-        "code": "C73",
-        "agent": "astra_endocrinologie",
-        "branch": "codex/alpha77/c73-integrate-g1",
-        "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "local_preview": "/workspace/Medina-endocrinologie-C73/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C73-INTEGRATE/C73-apercu-autonome.html",
-        "exists": true,
-        "sha256": "39433629c1bebf70f94c5190fbbb19053163ee5e836cdb363125f0a5b6297226",
-        "bytes": 7704491,
-        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/c73-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C73-INTEGRATE/C73-apercu-autonome.html",
-        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/c73-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
         "publication_main": false,
         "clinical_certification": false
@@ -18132,6 +18198,50 @@
           "chapters/G32/G32_b.html": "975d7084cc5e56e1016c66fb6eacb2e1e64341057a0bb6b8c035b346642f7b75",
           "chapters/G32/G32_c.html": "b0558ee4006f6d92980114c74715f23cbc2ca08a276ec18570540b446a83f13b",
           "chapters/G32/G32_d.html": "519a88fc59deaee7d4f87cf5519e65cc0b69e6072c99cbf147449f6e59c491e5"
+        },
+        "clinical_certification": false,
+        "author_activity_refreshed": false,
+        "source_bindings_refreshed": false,
+        "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+      }
+    },
+    {
+      "agent": "astra_endocrinologie",
+      "code": "C73",
+      "at": "2026-11-02T18:33:09+00:00",
+      "branch": "codex/alpha77/c73-integrate-g1",
+      "worktree": "/workspace/Medina-endocrinologie-C73",
+      "folder": "/workspace/Medina-endocrinologie-C73/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C73-INTEGRATE",
+      "manifest_sha256": "70fd46fec72f166ae2696894c9f0bcb0a1c35407873bd5c15a4317342906285e",
+      "source_binding_sha256": "cf9f3a9c915ac885035c0bdf4694bd06f7e0384f7bad02d80e8a3ce9b55dcf9e",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "d37b2930f7ddaa523fa3da465b470433242cd92d8508bb2161029c9f5a4da691",
+      "semiology_contract": {
+        "code": "C73",
+        "observed_at": "2026-11-02T18:33:09+00:00",
+        "passed": true,
+        "checks": {
+          "six_science_tabs": true,
+          "first_selected_semio": true,
+          "semio_panel_label_and_visible": true,
+          "first_unit_exact_h3": true,
+          "nine_named_sections": true,
+          "linked_sources_in_semio": true,
+          "clinical_semio_marker": true
+        },
+        "findings": [],
+        "source_hashes": {
+          "chapters/C73/C73_a.html": "5e861b0e4908cb0993bef4823eb8c182b932ef22a9db34084c20ed6eb679fe7f",
+          "chapters/C73/C73_b.html": "d4c9900972e422b7e5cfaa536c0c992b8002350604262063d9d54c93fccade57",
+          "chapters/C73/C73_c.html": "d81c33b5415af4394348ee49439baa0347ae7e5a7580678205fbbd5d741a1e35",
+          "chapters/C73/C73_d.html": "3d22e6dbdc669e7ace6eb533907300ccd32d32591b11299d3bbc3ae479a08401"
         },
         "clinical_certification": false,
         "author_activity_refreshed": false,
