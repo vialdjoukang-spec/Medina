@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-02T01:23:04+00:00",
+  "generated_at": "2026-11-02T01:29:53+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T01:23:04+00:00",
+    "checked_at": "2026-11-02T01:29:53+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T01:23:04+00:00",
+    "observed_at": "2026-11-02T01:28:51+00:00",
     "ok": true,
     "findings": [],
     "interval_seconds": 600,
-    "observer_pid": 42418,
+    "observer_pid": 43871,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
   "tests": {
     "ok": true,
-    "code_sha256": "b275b47233fba53d64525f6be33dfa800a0944d0ed6605205374d2d86c686af2",
-    "at": "2026-11-02T01:23:04+00:00",
+    "code_sha256": "5dee10af1e8f7f07dd50603774de953cdb32b12a1c091643fcb8fa69daf13301",
+    "at": "2026-11-02T01:28:50+00:00",
     "returncode": 0,
     "log": "runtime/tests.log"
   },
@@ -74,6 +74,28 @@
       ],
       "owner": "astra_neurologie",
       "clinical_orchestration": true,
+      "lesson": "G02",
+      "worktree": "/workspace/Medina-neurologie",
+      "stage": "redaction",
+      "started_at": "2026-11-02T01:23:56+00:00",
+      "activity_at": "2026-11-02T01:29:40+00:00",
+      "message": "Passages CH/EU et FI lus; porte recherche passée avec lacunes explicites. Ajouts monographiques et sémiologiques ciblés.",
+      "tokens_input": null,
+      "tokens_output": null,
+      "cost_usd": null,
+      "usage_source": "non exposé par interface native",
+      "medical_score": null,
+      "medical_review": "non effectuée",
+      "completed_sections": 0,
+      "receipt_sha256": "4626d4a6b8897fdab05d0f00930502b29c721d185acb97e1ca5a2bda20d6e92a",
+      "branch": "codex/alpha77/g02-integrate-g1",
+      "allowed_paths": [
+        "chapters/G02",
+        "glossary/g02.py",
+        "assets/img/g02/alpha/codex",
+        "organisation/alpha-publications/Codex/G02",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE"
+      ],
       "brief": {
         "schema_version": 1,
         "status": "PREPARATION_ONLY_NO_COURSE_PRODUCTION",
@@ -1074,8 +1096,8 @@
           "Private GitHub cron and local watch depend on runner/environment availability"
         ]
       },
-      "activity_age_seconds": null,
-      "activity_fresh": false,
+      "activity_age_seconds": 13,
+      "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
@@ -1110,6 +1132,28 @@
       ],
       "owner": "astra_endocrinologie",
       "clinical_orchestration": false,
+      "lesson": "E00",
+      "worktree": "/workspace/Medina-endocrinologie",
+      "stage": "recherche",
+      "started_at": "2026-11-02T01:23:56+00:00",
+      "activity_at": "2026-11-02T01:29:53+00:00",
+      "message": "FI Euthyrox relue; erreur absorption démontrée; consensus ENDO-ERN et sources suisses consultés; original anatomie/histologie humain acquis et inspecté.",
+      "tokens_input": null,
+      "tokens_output": null,
+      "cost_usd": null,
+      "usage_source": "non exposé par interface native",
+      "medical_score": null,
+      "medical_review": "non effectuée",
+      "completed_sections": 0,
+      "receipt_sha256": "b6ea07fea66fd173ebbaa0335339a155356f6d920405c012daccec04f253afe3",
+      "branch": "codex/alpha77/e00-integrate-g1",
+      "allowed_paths": [
+        "chapters/E00",
+        "glossary/e00.py",
+        "assets/img/e00/alpha/codex",
+        "organisation/alpha-publications/Codex/E00",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE"
+      ],
       "brief": {
         "schema_version": 1,
         "prepared_at": "2026-11-02T01:16:45.312443+00:00",
@@ -2381,8 +2425,8 @@
           "audit_sciences base historique fixe à examiner avant usage sur cours tardifs"
         ]
       },
-      "activity_age_seconds": null,
-      "activity_fresh": false,
+      "activity_age_seconds": 0,
+      "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
@@ -2407,6 +2451,28 @@
       ],
       "owner": "astra_nephrologie",
       "clinical_orchestration": false,
+      "lesson": "N04",
+      "worktree": "/workspace/Medina-nephrologie",
+      "stage": "recherche",
+      "started_at": "2026-11-02T01:23:56+00:00",
+      "activity_at": "2026-11-02T01:28:33+00:00",
+      "message": "38 références récupérées/empreintées (2 échecs externes), passages CH et européens effectivement lus pour SEMIO ; première correction repérée : vignette ne permet pas de favoriser seule la membraneuse ; terminologie rein-éponge à clarifier.",
+      "tokens_input": null,
+      "tokens_output": null,
+      "cost_usd": null,
+      "usage_source": "non exposé par interface native",
+      "medical_score": null,
+      "medical_review": "non effectuée",
+      "completed_sections": 0,
+      "receipt_sha256": "47fa9ee87eb04cf4cb0c86f05c0bd38304c5c7effc7450acc020f2b51904e814",
+      "branch": "codex/alpha77/n04-integrate-g1",
+      "allowed_paths": [
+        "chapters/N04",
+        "glossary/n04.py",
+        "assets/img/n04/alpha/codex",
+        "organisation/alpha-publications/Codex/N04",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE"
+      ],
       "brief": {
         "schema_version": 1,
         "agent": "astra_nephrologie",
@@ -2863,8 +2929,8 @@
           }
         ]
       },
-      "activity_age_seconds": null,
-      "activity_fresh": false,
+      "activity_age_seconds": 80,
+      "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
@@ -2893,6 +2959,28 @@
       ],
       "owner": "codex_hematologie",
       "clinical_orchestration": false,
+      "lesson": "C85",
+      "worktree": "/workspace/Medina-hematologie",
+      "stage": "recherche",
+      "started_at": "2026-11-02T01:23:56+00:00",
+      "activity_at": "2026-11-02T01:25:19+00:00",
+      "message": "C85: inventaire des quatre onglets, références et lacune sémiologique; lectures ciblées en cours",
+      "tokens_input": null,
+      "tokens_output": null,
+      "cost_usd": null,
+      "usage_source": "non exposé par interface native",
+      "medical_score": null,
+      "medical_review": "non effectuée",
+      "completed_sections": 0,
+      "receipt_sha256": "eefeffc1101a1e7d319dc093e1abff08445f84772dd4222ed29f2a05aaae4062",
+      "branch": "codex/alpha77/c85-integrate-g1",
+      "allowed_paths": [
+        "chapters/C85",
+        "glossary/c85.py",
+        "assets/img/c85/alpha/codex",
+        "organisation/alpha-publications/Codex/C85",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE"
+      ],
       "brief": {
         "specialty": "Hématologie",
         "selected_lesson": "C85",
@@ -3093,8 +3181,8 @@
         },
         "next_action": "Passages sources, monographie, sémiologie et iconographie avant toute revue"
       },
-      "activity_age_seconds": null,
-      "activity_fresh": false,
+      "activity_age_seconds": 274,
+      "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
@@ -3135,12 +3223,118 @@
       "action": "watch",
       "ok": true,
       "findings": 0
+    },
+    {
+      "at": "2026-11-02T01:23:56+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T01:23:56+00:00",
+      "action": "claim",
+      "agent": "astra_neurologie",
+      "code": "G02"
+    },
+    {
+      "at": "2026-11-02T01:23:56+00:00",
+      "action": "claim",
+      "agent": "astra_endocrinologie",
+      "code": "E00"
+    },
+    {
+      "at": "2026-11-02T01:23:56+00:00",
+      "action": "claim",
+      "agent": "astra_nephrologie",
+      "code": "N04"
+    },
+    {
+      "at": "2026-11-02T01:23:56+00:00",
+      "action": "claim",
+      "agent": "codex_hematologie",
+      "code": "C85"
+    },
+    {
+      "at": "2026-11-02T01:24:33+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "Reprise G02 : inventaire des preuves et préparation des lectures originales suisses puis européennes."
+    },
+    {
+      "at": "2026-11-02T01:24:39+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "recherche",
+      "message": "Reprise E00; lecture primaire suisse et européenne, sciences et sémiologie à compléter."
+    },
+    {
+      "at": "2026-11-02T01:24:53+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "recherche",
+      "message": "Lecture des preuves N04, récupération ciblée des passages suisses et européens, inventaire des lacunes SEMIO et images."
+    },
+    {
+      "at": "2026-11-02T01:25:19+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "recherche",
+      "message": "C85: inventaire des quatre onglets, références et lacune sémiologique; lectures ciblées en cours"
+    },
+    {
+      "at": "2026-11-02T01:25:49+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T01:26:32+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T01:26:58+00:00",
+      "action": "extract",
+      "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/recherche_E00/downloads/openstaxthyroid.txt",
+      "cache_hit": false,
+      "bytes_input": 14643,
+      "bytes_output": 4252,
+      "bytes_avoided": 10391
+    },
+    {
+      "at": "2026-11-02T01:28:33+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "recherche",
+      "message": "38 références récupérées/empreintées (2 échecs externes), passages CH et européens effectivement lus pour SEMIO ; première correction repérée : vignette ne permet pas de favoriser seule la membraneuse ; terminologie rein-éponge à clarifier."
+    },
+    {
+      "at": "2026-11-02T01:28:51+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T01:29:40+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "redaction",
+      "message": "Passages CH/EU et FI lus; porte recherche passée avec lacunes explicites. Ajouts monographiques et sémiologiques ciblés."
+    },
+    {
+      "at": "2026-11-02T01:29:53+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "recherche",
+      "message": "FI Euthyrox relue; erreur absorption démontrée; consensus ENDO-ERN et sources suisses consultés; original anatomie/histologie humain acquis et inspecté."
     }
   ],
   "cache": {
     "hits": 1,
-    "misses": 1,
-    "bytes_avoided": 7984
+    "misses": 2,
+    "bytes_avoided": 18375
   },
   "monitor": {
     "mode": "GitHub Actions déclenché sur branche par publication locale toutes600s",
@@ -3149,7 +3343,9 @@
     "main_medina_modified": false,
     "native_agents_persistent": false,
     "branch": "codex/harness-observations-20261102",
-    "last_verified_run": null
+    "last_verified_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41372212569",
+    "last_verified_conclusion": "success",
+    "report_automation": "enabled;2026-11-02T08:00:00+01:00"
   },
   "prompt": {
     "identified_at": "2026-11-02",

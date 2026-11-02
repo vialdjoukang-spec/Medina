@@ -135,11 +135,13 @@ class Harness:
                 if other != agent and a.get('worktree') == str(Path(worktree).resolve()):
                     raise ValueError('Worktree déjà affecté')
             state['agents'][agent] = {'lesson': code, 'worktree': str(Path(worktree).resolve()), 'stage': 'recherche',
+                'branch': mission['branch'], 'allowed_paths': mission.get('paths', []),
                 'started_at': now(), 'activity_at': now(), 'message': 'Mission réservée; recherche autorisée',
                 'tokens_input': None, 'tokens_output': None, 'cost_usd': None, 'usage_source': 'non exposé par interface native',
                 'medical_score': None, 'medical_review': 'non effectuée', 'completed_sections': 0,
                 'receipt_sha256': digest(Path(receipt).read_bytes())}
             self.event(state, 'claim', agent=agent, code=code)
+        self.report()
         return {'claimed': code, 'agent': agent}
 
     def progress(self, agent, stage, message, completed_sections=None):
@@ -156,19 +158,26 @@ class Harness:
                 if not 0 <= completed_sections <= 14: raise ValueError('Sections hors limites')
                 a['completed_sections'] = completed_sections
             self.event(state, 'progress', agent=agent, stage=stage, message=message)
+        self.report()
         return {'updated': agent, 'at': now()}
 
-    def extract(self, path, first, last, repeat=False):
-        p = inside(self.root, path)
+    def extract(self, path, first, last, repeat=False, worktree=None):
+        scope = self.root
+        if worktree:
+            scope = Path(worktree).resolve()
+            state = load(self.runtime / 'state.json', {'agents': {}})
+            if str(scope) not in {a.get('worktree') for a in state['agents'].values()}:
+                raise ValueError('Worktree non réservé par ce harness')
+        p = inside(scope, path)
         if not 1 <= first <= last or last - first >= 200: raise ValueError('Lecture bornée à 200 lignes')
         raw = p.read_bytes()
         if len(raw) > 16 * 1024 * 1024: raise ValueError('Fichier >16 Mio; extraction dédiée nécessaire')
         text = raw.decode('utf-8'); lines = text.splitlines()
         excerpt = '\n'.join(lines[first-1:last])
         if len(excerpt.encode()) > 24000: raise ValueError('Passage >24 Ko; réduire la fenêtre')
-        key = digest(raw + f'{first}:{last}'.encode())
+        key = digest(raw + f'{p}:{first}:{last}'.encode())
         cache = self.runtime / 'cache' / (key + '.json'); hit = cache.exists()
-        payload = {'path': path, 'sha256': digest(raw), 'first': first, 'last': min(last, len(lines)), 'excerpt': excerpt}
+        payload = {'path': path, 'scope': str(scope), 'sha256': digest(raw), 'first': first, 'last': min(last, len(lines)), 'excerpt': excerpt}
         if not hit: atomic(cache, payload)
         with self.transaction() as state:
             state['cache']['hits' if hit else 'misses'] += 1
@@ -186,6 +195,16 @@ class Harness:
                 findings.append({'agent': agent, 'level': 'warning', 'reason': 'Aucune activité déclarée depuis plus de 20 min; agent non supposé actif'})
             if a.get('worktree') and not Path(a['worktree']).is_dir():
                 findings.append({'agent': agent, 'level': 'error', 'reason': 'Worktree disparu'})
+            elif a.get('worktree') and a.get('allowed_paths'):
+                try:
+                    if git(a['worktree'], 'branch', '--show-current') != a['branch']:
+                        findings.append({'agent': agent, 'level': 'error', 'reason': 'Branche différente de la réservation'})
+                    files = set(git(a['worktree'], 'diff', '--name-only', self.config['base_sha']).splitlines())
+                    files.update(git(a['worktree'], 'ls-files', '--others', '--exclude-standard').splitlines())
+                    forbidden=[p for p in files if not any(p==prefix or p.startswith(prefix+'/') for prefix in a['allowed_paths'])]
+                    if forbidden: findings.append({'agent':agent,'level':'error','reason':'Écritures hors périmètre','paths':forbidden})
+                except subprocess.SubprocessError as exc:
+                    findings.append({'agent':agent,'level':'error','reason':'Contrôle Git indisponible: '+str(exc)})
         for spec in self.config['agents']:
             p = self.home / 'agents' / spec['specialty'] / 'progress.json'
             if p.exists():
@@ -272,7 +291,7 @@ def main():
     sub=p.add_subparsers(dest='cmd',required=True)
     for x in ('gate','report','watch','self-test'): sub.add_parser(x)
     d=sub.add_parser('daemon'); d.add_argument('--interval',type=int,default=600)
-    x=sub.add_parser('extract'); x.add_argument('path'); x.add_argument('--first',type=int,required=True); x.add_argument('--last',type=int,required=True); x.add_argument('--repeat',action='store_true')
+    x=sub.add_parser('extract'); x.add_argument('path'); x.add_argument('--first',type=int,required=True); x.add_argument('--last',type=int,required=True); x.add_argument('--repeat',action='store_true'); x.add_argument('--worktree',type=Path)
     x=sub.add_parser('claim'); x.add_argument('agent'); x.add_argument('code'); x.add_argument('worktree'); x.add_argument('receipt')
     x=sub.add_parser('progress'); x.add_argument('agent'); x.add_argument('stage'); x.add_argument('message'); x.add_argument('--sections',type=int)
     x=sub.add_parser('validate'); x.add_argument('folder')
@@ -280,7 +299,7 @@ def main():
     if a.cmd=='gate': out=h.readiness()
     elif a.cmd=='report': out=h.report(); out={'report':str(h.home/'dashboard.html'),'generated_at':out['generated_at']}
     elif a.cmd=='watch': out=h.watch()
-    elif a.cmd=='extract': out=h.extract(a.path,a.first,a.last,a.repeat)
+    elif a.cmd=='extract': out=h.extract(a.path,a.first,a.last,a.repeat,a.worktree)
     elif a.cmd=='claim': out=h.claim(a.agent,a.code,a.worktree,a.receipt)
     elif a.cmd=='progress': out=h.progress(a.agent,a.stage,a.message,a.sections)
     elif a.cmd=='validate': out=validate_lesson(a.folder)
