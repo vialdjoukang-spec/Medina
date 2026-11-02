@@ -6,31 +6,25 @@
   "fragment_label": "N-07-Néphrologie",
   "prepared_at": "2026-11-02T01:16:51.601917+00:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "status": "G25_harness_complete_pushed_remote_exact_scope_passed_released",
+  "status": "G26_reserved_started_claimed_research",
   "selected_lesson": {
-    "code": "G25",
-    "title": "Autres syndromes extrapyramidaux et troubles de la motricité",
+    "code": "G26",
+    "title": "Syndromes extrapyramidaux et troubles de la motricité au cours d’affections classées ailleurs",
     "mode": "existing_course_review",
-    "worktree": "/tmp/Medina-neurologie-G25",
-    "workspace_alias": "/workspace/Medina-neurologie-G25",
-    "branch": "codex/alpha77/g25-integrate-g1",
-    "reservation_acquired": false,
-    "acquisition_registry_sha": "3590a8a5ebd691f97bf41e775a219cd122278b8a",
+    "worktree": "/tmp/Medina-neurologie-G26",
+    "workspace_alias": "/workspace/Medina-neurologie-G26",
+    "branch": "codex/alpha77/g26-integrate-g1",
+    "reservation_acquired": true,
+    "acquisition_registry_sha": "50497f57348a0e87b38976cb95d491e452cb50d5",
     "harness_claimed": true,
     "runtime_name": "sol_nephrologie",
-    "production_name": "Sol-Neurologie-G25",
+    "production_name": "Sol-Neurologie-G26",
     "runtime_model": "gpt-6.1-sol",
-    "stage": "completed",
+    "stage": "recherche",
     "clinical_certification": false,
-    "start_receipt": "/tmp/Medina-neurologie-G25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G25-INTEGRATE/start.json",
-    "catalogue_scope": "Cours G25 existant exclusivement, aucun mandat chapters.json.",
-    "checkout_evidence": "Sparse désactivé seulement G25 avant premier start ; copie complète949068630octets, baseexacte/propre et AGENTShash identique confirmés.",
-    "status": "G25_harness_complete_pushed_remote_exact_scope_passed_released",
-    "harness_completed_at": "2026-11-02T19:06:11+00:00",
-    "source_commit": "1a48f06f62fcc8cb6535ec9b0fac7b5c9e084b49",
-    "final_commit": "d3a995748bb01f9297ea8f6efa6f7aca2e995480",
-    "release_registry_sha": "e963508adb8c7123bec6d61528db63e822a66164",
-    "remote_sha_verified": true
+    "start_receipt": "/tmp/Medina-neurologie-G26/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G26-INTEGRATE/start.json",
+    "catalogue_scope": "Cours G26 existant exclusivement, aucun mandat chapters.json.",
+    "checkout_evidence": "11493fichiers suivis,949068567octets,aucunmanquant,sparse désactivé uniquementG26 avant premierstart ; G25reste archivé,sources etempreintes inchangées."
   },
   "instruction_priority": "Ordre actuel : quatre spécialités en parallèle et une leçon à la fois par agent ; remplace les lots historiques, sans supprimer les réservations.",
   "counts": {
@@ -444,7 +438,7 @@
     "tests/test_image_codex_finder.py",
     "tests/test_audit_sciences.py"
   ],
-  "next_gate": "G26 : status et PR fraîches, périmètre approuvé, acquisition terminée, checkout complet/propre avant start/claim ; nom de production après claim seulement.",
+  "next_gate": "Sources réellement lues CH puis Europe et Betta avant rédaction ; aucune nouvelle source-binding avant contrôles finaux.",
   "preliminary_findings": [
     {
       "id": "N04-SEMIO-ABSENT",
@@ -468,7 +462,7 @@
       "initial_status": "observed"
     }
   ],
-  "updated_at": "2026-11-02T19:13:23.103424+00:00",
+  "updated_at": "2026-11-02T19:20:30.256748+00:00",
   "initial_counts": {
     "conservative_s04_targets": 33,
     "existing": 6,
@@ -1460,6 +1454,31 @@
         "quiz": 4
       },
       "semiology_seven_rules_native_passed": true
+    },
+    {
+      "code": "G25",
+      "title": "Autres syndromes extrapyramidaux et troubles de la motricité",
+      "mode": "existing_course_review",
+      "worktree": "/tmp/Medina-neurologie-G25",
+      "workspace_alias": "/workspace/Medina-neurologie-G25",
+      "branch": "codex/alpha77/g25-integrate-g1",
+      "reservation_acquired": false,
+      "acquisition_registry_sha": "3590a8a5ebd691f97bf41e775a219cd122278b8a",
+      "harness_claimed": true,
+      "runtime_name": "sol_nephrologie",
+      "production_name": "Sol-Neurologie-G25",
+      "runtime_model": "gpt-6.1-sol",
+      "stage": "completed",
+      "clinical_certification": false,
+      "start_receipt": "/tmp/Medina-neurologie-G25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G25-INTEGRATE/start.json",
+      "catalogue_scope": "Cours G25 existant exclusivement, aucun mandat chapters.json.",
+      "checkout_evidence": "Sparse désactivé seulement G25 avant premier start ; copie complète949068630octets, baseexacte/propre et AGENTShash identique confirmés.",
+      "status": "G25_harness_complete_pushed_remote_exact_scope_passed_released",
+      "harness_completed_at": "2026-11-02T19:06:11+00:00",
+      "source_commit": "1a48f06f62fcc8cb6535ec9b0fac7b5c9e084b49",
+      "final_commit": "d3a995748bb01f9297ea8f6efa6f7aca2e995480",
+      "release_registry_sha": "e963508adb8c7123bec6d61528db63e822a66164",
+      "remote_sha_verified": true
     }
   ],
   "reserves": {
@@ -1581,7 +1600,7 @@
       "sealed_source_modified": false
     }
   },
-  "production_name": "Sol-Neurologie-G25",
+  "production_name": "Sol-Neurologie-G26",
   "active_specialty": "mouvements anormaux",
   "completed_lesson_count": 14,
   "delivery_history": [
@@ -1694,9 +1713,7 @@
       }
     }
   ],
-  "future_exclusive_queue": [
-    "G26"
-  ],
+  "future_exclusive_queue": [],
   "history_reconciliation": {
     "recorded_at": "2026-11-02T19:13:23.103424+00:00",
     "codes": [

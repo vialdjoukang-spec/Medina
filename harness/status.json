@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-02T19:15:16+00:00",
+  "generated_at": "2026-11-02T19:25:15+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T19:15:16+00:00",
+    "checked_at": "2026-11-02T19:25:15+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T19:15:16+00:00",
+    "observed_at": "2026-11-02T19:25:15+00:00",
     "ok": true,
     "findings": [
       {
@@ -44,16 +44,16 @@
             "/workspace/Medina-endocrinologie-C73",
             "/workspace/Medina-hematologie-D65"
           ],
-          "free_bytes": 2090442752,
+          "free_bytes": 2086821888,
           "total_bytes": 33770192896,
           "level": "ok"
         },
         {
           "device": 34,
           "observed_paths": [
-            "/tmp/Medina-neurologie-G25"
+            "/tmp/Medina-neurologie-G26"
           ],
-          "free_bytes": 1664638976,
+          "free_bytes": 689061888,
           "total_bytes": 9441329152,
           "level": "ok"
         }
@@ -85,7 +85,7 @@
       "meaning": "Contrôle structurel relancé à chaque veille600s ; résultats historiques conservés, nouvelles clôtures refusées si échec."
     },
     "interval_seconds": 600,
-    "observer_pid": 1755027,
+    "observer_pid": 1765559,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -1869,7 +1869,7 @@
           "review_url": "https://github.com/vialdjoukang-spec/Medina/blob/94260735558de188c27c4625feec9214d13cc027/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G36-INTEGRATE/README.md"
         }
       },
-      "activity_age_seconds": 484,
+      "activity_age_seconds": 1083,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -3483,9 +3483,9 @@
         "catalogue_priority_status": "Await D66 parent acquisition/completion/release as explicitly assigned; last snapshot had no active owner, priority was not waived.",
         "next_candidate_after_C73": "C74 after D66 verified release; external preparation only until then."
       },
-      "activity_age_seconds": 2528,
+      "activity_age_seconds": 3127,
       "activity_fresh": false,
-      "sections_per_hour": 9.77,
+      "sections_per_hour": 8.75,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -3519,33 +3519,33 @@
       "runtime_name": "/root/sol_nephrologie",
       "historical_id": "astra_nephrologie",
       "active_specialty": "mouvements anormaux",
-      "production_name": "Sol-Neurologie-G25",
-      "technical_identity_note": "Identité native conservée /root/sol_nephrologie ; huit livraisons néphrologiques historiques inchangées.",
+      "production_name": "Sol-Neurologie-G26",
+      "technical_identity_note": "Identité native conservée /root/sol_nephrologie et historique néphrologique ; quatorze livraisons antérieures uniques conservées.",
       "next_specialty": "mouvements anormaux",
-      "next_production_name": "Sol-Neurologie-G25",
-      "next_reason": "G24 achevé/poussé/libéré/archivé ; G25 exclusif acquis, checkout complet contrôlé avant premier start et claim réels.",
-      "lesson": "G25",
-      "worktree": "/tmp/Medina-neurologie-G25",
-      "stage": "termine",
-      "branch": "codex/alpha77/g25-integrate-g1",
+      "next_production_name": "Sol-Neurologie-G26",
+      "next_reason": "G25 achevé/poussé/libéré/archivé ; G26 acquis, checkout complet contrôlé avant premier start et claim réels.",
+      "lesson": "G26",
+      "worktree": "/tmp/Medina-neurologie-G26",
+      "stage": "recherche",
+      "branch": "codex/alpha77/g26-integrate-g1",
       "allowed_paths": [
-        "chapters/G25",
-        "glossary/g25.py",
-        "assets/img/g25/alpha/codex",
-        "organisation/alpha-publications/Codex/G25",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G25-INTEGRATE"
+        "chapters/G26",
+        "glossary/g26.py",
+        "assets/img/g26/alpha/codex",
+        "organisation/alpha-publications/Codex/G26",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G26-INTEGRATE"
       ],
-      "started_at": "2026-11-02T18:00:54+00:00",
-      "activity_at": "2026-11-02T19:06:11+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "started_at": "2026-11-02T19:19:40+00:00",
+      "activity_at": "2026-11-02T19:19:40+00:00",
+      "message": "Mission réservée; recherche autorisée",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "1c24287eb836a979c40fda8fd0dac6f10519e66b9c3d109a327a8eb9d6e61449",
+      "completed_sections": 0,
+      "receipt_sha256": "f54c4d5c287655b26434924b32b4c57ab7924e274bcebab3dfa9e00e1cae0580",
       "brief": {
         "schema_version": 1,
         "agent": "astra_nephrologie",
@@ -3554,31 +3554,25 @@
         "fragment_label": "N-07-Néphrologie",
         "prepared_at": "2026-11-02T01:16:51.601917+00:00",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "status": "G25_harness_complete_pushed_remote_exact_scope_passed_released",
+        "status": "G26_reserved_started_claimed_research",
         "selected_lesson": {
-          "code": "G25",
-          "title": "Autres syndromes extrapyramidaux et troubles de la motricité",
+          "code": "G26",
+          "title": "Syndromes extrapyramidaux et troubles de la motricité au cours d’affections classées ailleurs",
           "mode": "existing_course_review",
-          "worktree": "/tmp/Medina-neurologie-G25",
-          "workspace_alias": "/workspace/Medina-neurologie-G25",
-          "branch": "codex/alpha77/g25-integrate-g1",
-          "reservation_acquired": false,
-          "acquisition_registry_sha": "3590a8a5ebd691f97bf41e775a219cd122278b8a",
+          "worktree": "/tmp/Medina-neurologie-G26",
+          "workspace_alias": "/workspace/Medina-neurologie-G26",
+          "branch": "codex/alpha77/g26-integrate-g1",
+          "reservation_acquired": true,
+          "acquisition_registry_sha": "50497f57348a0e87b38976cb95d491e452cb50d5",
           "harness_claimed": true,
           "runtime_name": "sol_nephrologie",
-          "production_name": "Sol-Neurologie-G25",
+          "production_name": "Sol-Neurologie-G26",
           "runtime_model": "gpt-6.1-sol",
-          "stage": "completed",
+          "stage": "recherche",
           "clinical_certification": false,
-          "start_receipt": "/tmp/Medina-neurologie-G25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G25-INTEGRATE/start.json",
-          "catalogue_scope": "Cours G25 existant exclusivement, aucun mandat chapters.json.",
-          "checkout_evidence": "Sparse désactivé seulement G25 avant premier start ; copie complète949068630octets, baseexacte/propre et AGENTShash identique confirmés.",
-          "status": "G25_harness_complete_pushed_remote_exact_scope_passed_released",
-          "harness_completed_at": "2026-11-02T19:06:11+00:00",
-          "source_commit": "1a48f06f62fcc8cb6535ec9b0fac7b5c9e084b49",
-          "final_commit": "d3a995748bb01f9297ea8f6efa6f7aca2e995480",
-          "release_registry_sha": "e963508adb8c7123bec6d61528db63e822a66164",
-          "remote_sha_verified": true
+          "start_receipt": "/tmp/Medina-neurologie-G26/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G26-INTEGRATE/start.json",
+          "catalogue_scope": "Cours G26 existant exclusivement, aucun mandat chapters.json.",
+          "checkout_evidence": "11493fichiers suivis,949068567octets,aucunmanquant,sparse désactivé uniquementG26 avant premierstart ; G25reste archivé,sources etempreintes inchangées."
         },
         "instruction_priority": "Ordre actuel : quatre spécialités en parallèle et une leçon à la fois par agent ; remplace les lots historiques, sans supprimer les réservations.",
         "counts": {
@@ -3992,7 +3986,7 @@
           "tests/test_image_codex_finder.py",
           "tests/test_audit_sciences.py"
         ],
-        "next_gate": "G26 : status et PR fraîches, périmètre approuvé, acquisition terminée, checkout complet/propre avant start/claim ; nom de production après claim seulement.",
+        "next_gate": "Sources réellement lues CH puis Europe et Betta avant rédaction ; aucune nouvelle source-binding avant contrôles finaux.",
         "preliminary_findings": [
           {
             "id": "N04-SEMIO-ABSENT",
@@ -4016,7 +4010,7 @@
             "initial_status": "observed"
           }
         ],
-        "updated_at": "2026-11-02T19:13:23.103424+00:00",
+        "updated_at": "2026-11-02T19:20:30.256748+00:00",
         "initial_counts": {
           "conservative_s04_targets": 33,
           "existing": 6,
@@ -5008,6 +5002,31 @@
               "quiz": 4
             },
             "semiology_seven_rules_native_passed": true
+          },
+          {
+            "code": "G25",
+            "title": "Autres syndromes extrapyramidaux et troubles de la motricité",
+            "mode": "existing_course_review",
+            "worktree": "/tmp/Medina-neurologie-G25",
+            "workspace_alias": "/workspace/Medina-neurologie-G25",
+            "branch": "codex/alpha77/g25-integrate-g1",
+            "reservation_acquired": false,
+            "acquisition_registry_sha": "3590a8a5ebd691f97bf41e775a219cd122278b8a",
+            "harness_claimed": true,
+            "runtime_name": "sol_nephrologie",
+            "production_name": "Sol-Neurologie-G25",
+            "runtime_model": "gpt-6.1-sol",
+            "stage": "completed",
+            "clinical_certification": false,
+            "start_receipt": "/tmp/Medina-neurologie-G25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G25-INTEGRATE/start.json",
+            "catalogue_scope": "Cours G25 existant exclusivement, aucun mandat chapters.json.",
+            "checkout_evidence": "Sparse désactivé seulement G25 avant premier start ; copie complète949068630octets, baseexacte/propre et AGENTShash identique confirmés.",
+            "status": "G25_harness_complete_pushed_remote_exact_scope_passed_released",
+            "harness_completed_at": "2026-11-02T19:06:11+00:00",
+            "source_commit": "1a48f06f62fcc8cb6535ec9b0fac7b5c9e084b49",
+            "final_commit": "d3a995748bb01f9297ea8f6efa6f7aca2e995480",
+            "release_registry_sha": "e963508adb8c7123bec6d61528db63e822a66164",
+            "remote_sha_verified": true
           }
         ],
         "reserves": {
@@ -5129,7 +5148,7 @@
             "sealed_source_modified": false
           }
         },
-        "production_name": "Sol-Neurologie-G25",
+        "production_name": "Sol-Neurologie-G26",
         "active_specialty": "mouvements anormaux",
         "completed_lesson_count": 14,
         "delivery_history": [
@@ -5242,9 +5261,7 @@
             }
           }
         ],
-        "future_exclusive_queue": [
-          "G26"
-        ],
+        "future_exclusive_queue": [],
         "history_reconciliation": {
           "recorded_at": "2026-11-02T19:13:23.103424+00:00",
           "codes": [
@@ -5255,9 +5272,9 @@
           "meaning": "Ajout de reçus G21/G24 déjà achevés et de G25 courant à la liste du brief, sans nouvelle clôture ou source-binding historique. Compteur antérieur13 déjà exact avant G25, liste détaillée restée à11. Aucune réservation/course ancienne modifiée."
         }
       },
-      "activity_age_seconds": 546,
+      "activity_age_seconds": 336,
       "activity_fresh": true,
-      "sections_per_hour": 11.29,
+      "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -6618,26 +6635,13 @@
           }
         ]
       },
-      "activity_age_seconds": 5318,
+      "activity_age_seconds": 5917,
       "activity_fresh": false,
-      "sections_per_hour": 5.89,
+      "sections_per_hour": 5.5,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T11:50:11+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T11:53:13+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "verification",
-      "message": "G03 : reprise clinique post-porte achevée, 40 sections et 35 fenêtres reconsidérées ; quatre corrections documentées. Build/retests refaits sur cette reprise, conformité initiale non revendiquée."
-    },
     {
       "at": "2026-11-02T11:53:26+00:00",
       "action": "progress",
@@ -7931,6 +7935,18 @@
       "agent": "astra_neurologie",
       "stage": "recherche",
       "message": "G37 : quinze entrées de lecture ciblée journalisées, dont résuméRMS2025 clairement séparé ; huit sous-codes et quatre FI confrontés, limites de correctionNa et produitMinirin relevées. Recherche etimages restent àfinaliser avantBetta,aucune rédaction."
+    },
+    {
+      "at": "2026-11-02T19:15:16+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T19:19:40+00:00",
+      "action": "claim",
+      "agent": "astra_nephrologie",
+      "code": "G26"
     }
   ],
   "cache": {
@@ -15132,7 +15148,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T19:15:13+00:00",
+    "observed_at": "2026-11-02T19:25:13+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -17243,6 +17259,21 @@
         "bytes": null,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/g37-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G37-INTEGRATE/G37-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/g37-integrate-g1",
+        "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
+        "publication_main": false,
+        "clinical_certification": false
+      },
+      {
+        "code": "G26",
+        "agent": "astra_nephrologie",
+        "branch": "codex/alpha77/g26-integrate-g1",
+        "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+        "local_preview": "/tmp/Medina-neurologie-G26/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G26-INTEGRATE/G26-apercu-autonome.html",
+        "exists": false,
+        "sha256": null,
+        "bytes": null,
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/g26-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G26-INTEGRATE/G26-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/g26-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
         "publication_main": false,
         "clinical_certification": false
