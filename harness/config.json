@@ -103,7 +103,8 @@
         "N02",
         "N03",
         "N05",
-        "N06"
+        "N06",
+        "D77"
       ],
       "reserved_elsewhere": [
         "N17"
@@ -111,7 +112,10 @@
       "owner": "astra_nephrologie",
       "clinical_orchestration": false,
       "runtime_name": "/root/sol_nephrologie",
-      "historical_id": "astra_nephrologie"
+      "historical_id": "astra_nephrologie",
+      "active_specialty": "hematologie",
+      "production_name": "Sol-Hématologie-D77",
+      "technical_identity_note": "Identité native conservée /root/sol_nephrologie ; huit livraisons néphrologiques historiques inchangées."
     },
     {
       "id": "codex_hematologie",
@@ -124,7 +128,6 @@
         "C86",
         "C95",
         "D63",
-        "D77",
         "C92",
         "D62",
         "D65",
@@ -151,5 +154,17 @@
     "reasoning": "high",
     "history_rewritten": false,
     "parent_model_changed": false
-  }
+  },
+  "allocation_transitions": [
+    {
+      "at": "2026-11-02T12:10:17.489013+00:00",
+      "code": "D77",
+      "from": "codex_hematologie",
+      "to": "astra_nephrologie",
+      "production_name": "Sol-Hématologie-D77",
+      "reason": "File néphrologique des8candidats achevée ; relais demandé par Vial après une spécialité. Parent conserveD63,puisC92.",
+      "no_main_write": true,
+      "registry_acquisition_still_required": true
+    }
+  ]
 }

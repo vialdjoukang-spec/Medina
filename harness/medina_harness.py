@@ -12,6 +12,7 @@ import datetime as dt
 import fcntl
 import hashlib
 import html
+import importlib.util
 import json
 import os
 from pathlib import Path
@@ -90,6 +91,39 @@ def verify_binding(worktree, code, folder):
 def code_hash():
     paths = sorted([*HERE.glob('*.py'), *HERE.glob('tests/*.py'), HERE/'dashboard-template.html', HERE/'catalog.json'])
     return digest(b''.join(str(p.relative_to(HERE)).encode()+b'\0'+p.read_bytes() for p in paths if p.exists()))
+
+def inspect_semiology(worktree, code):
+    """Seven native structural rules, read-only; never renew source receipts."""
+    paths=[f'chapters/{code}/{code}_{suffix}.html' for suffix in 'abcd']
+    parts={path:inside(worktree,path).read_bytes() for path in paths}
+    return inspect_semiology_parts(code,parts)
+
+def inspect_semiology_parts(code,parts):
+    """Also accepts immutable git bytes for the independent progress report."""
+    spec=importlib.util.spec_from_file_location('medina_native_structure',DEFAULT_ROOT/'tools/starter_codex.py')
+    native=importlib.util.module_from_spec(spec);spec.loader.exec_module(native)
+    tree=native.HTMLTree(b''.join(parts.values()));nodes=tree.nodes
+    sid=code.lower()+'-s-semio';bid=code.lower()+'-tab-semio'
+    in_ps=lambda n:any(p['attrs'].get('id')=='pS' for p in n['parents'])
+    buttons=[n for n in nodes if n['tag']=='button' and in_ps(n) and 'data-s' in n['attrs']]
+    first=buttons[0] if buttons else None
+    panels=[n for n in nodes if n['tag']=='div' and n['attrs'].get('id')==sid and 'sci' in n['attrs'].get('class','').split() and in_ps(n)]
+    panel=panels[0] if len(panels)==1 else None
+    units=[n for n in nodes if panel and panel in n['parents'] and 'ilot' in n['attrs'].get('class','').split()]
+    titles=[n for n in nodes if units and n['tag']=='h3' and units[0] in n['parents']]
+    required={'normal','signs','mechanisms','examination','interpretation','differentials','urgency','limits','sources'}
+    sections=[n for n in units if n['attrs'].get('data-semiology') in required and ''.join(n['prose']).strip() and any(c['tag']=='h3' and n in c['parents'] and tree.text(c) for c in nodes)]
+    source_units=[n for n in sections if n['attrs'].get('data-semiology')=='sources']
+    checks={
+      'six_science_tabs':len(buttons)>=6,
+      'first_selected_semio':bool(first and first['attrs'].get('data-s')==sid and first['attrs'].get('id')==bid and first['attrs'].get('role')=='tab' and first['attrs'].get('aria-controls')==sid and first['attrs'].get('aria-selected')=='true' and tree.text(first)=='Sémiologie fondamentale et analytique'),
+      'semio_panel_label_and_visible':bool(panel and panel['attrs'].get('aria-labelledby')==bid and 'hidden' not in panel['attrs'] and panel['attrs'].get('aria-hidden')!='true'),
+      'first_unit_exact_h3':bool(titles and tree.text(titles[0])=='Pour la leçon : quelle est la sémiologie fondamentale et analytique ?'),
+      'nine_named_sections':{n['attrs']['data-semiology'] for n in sections}==required,
+      'linked_sources_in_semio':any(n['tag']=='a' and n['attrs'].get('href','').startswith('https://') and any(s in n['parents'] for s in source_units) for n in nodes),
+      'clinical_semio_marker':any(n['attrs'].get('data-semiology-clinical')==code and ''.join(n['prose']).strip() and any(p['attrs'].get('id')=='pA' for p in n['parents']) for n in nodes)
+    }
+    return {'code':code,'observed_at':now(),'passed':all(checks.values()),'checks':checks,'findings':[k for k,v in checks.items() if not v],'source_hashes':{k:digest(v) for k,v in parts.items()},'clinical_certification':False,'author_activity_refreshed':False,'source_bindings_refreshed':False,'scope':'Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter.'}
 
 class Harness:
     def __init__(self, root=DEFAULT_ROOT):
@@ -201,9 +235,11 @@ class Harness:
             if not folder.is_relative_to(Path(a['worktree']).resolve()):raise ValueError('Dossier hors worktree')
             if git(a['worktree'],'branch','--show-current')!=a['branch']:raise ValueError('Branche différente')
             binding=verify_binding(a['worktree'],code,folder)
+            semio=inspect_semiology(a['worktree'],code)
+            if not semio['passed']:raise ValueError('Contrat sémiologique strict: '+', '.join(semio['findings']))
             record={'agent':agent,'code':code,'at':now(),'branch':a['branch'],'worktree':a['worktree'],'folder':str(folder),'manifest_sha256':digest((folder/'lesson-manifest.json').read_bytes()),
                     'source_binding_sha256':digest((folder/'source-binding.json').read_bytes()),'review_modes':result['review_modes'],
-                    'clinical_certification':False,'publication_allowed':False,'preview_sha256':binding['preview_sha256']}
+                    'clinical_certification':False,'publication_allowed':False,'preview_sha256':binding['preview_sha256'],'semiology_contract':semio}
             a.update(stage='termine',completed_sections=14,activity_at=now(),message='Achèvement de projet documenté; présentation à Vial avant toute PR main.')
             state.setdefault('completed_lessons',[]).append(record)
             self.event(state,'complete',agent=agent,code=code)
@@ -266,7 +302,16 @@ class Harness:
                     if value.get('agent') != spec['id']: raise ValueError('agent mismatch')
                 except (ValueError, OSError) as exc:
                     findings.append({'agent': spec['id'], 'level': 'error', 'reason': 'Progression illisible: '+str(exc)})
+        history=[]
+        for entry in state.get('completed_lessons',[]):
+            if not entry.get('worktree') or not entry.get('code'):continue
+            try:history.append(inspect_semiology(entry['worktree'],entry['code']))
+            except (OSError,ValueError) as exc:history.append({'code':entry['code'],'passed':False,'unavailable':str(exc),'source_bindings_refreshed':False})
+        reserves=[row['code'] for row in history if not row['passed']]
+        if reserves:findings.append({'level':'warning','reason':'Réserves structurelles historiques à traiter avant intégration ; achèvements conservés','codes':reserves})
+        atomic(self.runtime/'semiology-watch.json',{'observed_at':now(),'rows':history,'source_bindings_refreshed':False,'author_activity_refreshed':False})
         result = {'observed_at': now(), 'ok': not any(x['level'] == 'error' for x in findings), 'findings': findings,
+                  'semiology_history':{'inspected':len(history),'passed':sum(row['passed'] for row in history),'reserved_codes':reserves,'meaning':'Contrôle structurel relancé à chaque veille600s ; résultats historiques conservés, nouvelles clôtures refusées si échec.'},
                   'interval_seconds': 600, 'observer_pid': os.getpid(), 'agent_activity_refreshed': False,
                   'limits': 'Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale.'}
         atomic(self.runtime / 'watch.json', result)
