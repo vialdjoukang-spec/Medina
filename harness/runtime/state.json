@@ -5,7 +5,7 @@
     "astra_neurologie": {
       "lesson": "G08",
       "worktree": "/tmp/Medina-neurologie-G08",
-      "stage": "verification",
+      "stage": "termine",
       "branch": "codex/alpha77/g08-integrate-g1",
       "allowed_paths": [
         "chapters/G08",
@@ -15,8 +15,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G08-INTEGRATE"
       ],
       "started_at": "2026-11-02T15:43:29+00:00",
-      "activity_at": "2026-11-02T16:22:33+00:00",
-      "message": "G08 :52fenêtres et5quiz,Livre24,deuxoriginaux/annotations,clavier passent1440/390 sur premier bundle. Avant binding,ajout réel liens directs licence/source IRM et mention annotations ajoutées,pixels inchangés ; premier parcours conservé,rebuild/retests finaux en cours.",
+      "activity_at": "2026-11-02T16:33:59+00:00",
+      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -29,7 +29,7 @@
     "astra_endocrinologie": {
       "lesson": "E04",
       "worktree": "/workspace/Medina-endocrinologie-E04",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/e04-integrate-g1",
       "allowed_paths": [
         "chapters/E04",
@@ -40,21 +40,21 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T16:21:21+00:00",
-      "activity_at": "2026-11-02T16:21:21+00:00",
-      "message": "Mission réservée; recherche autorisée",
+      "activity_at": "2026-11-02T16:29:15+00:00",
+      "message": "E04 :14 sections de monographie rédigées dans le script réservé, avec cinq sous-codes/exclusions, trois axes fonction-structure-risque, seuils EU-TIRADS stricts et exceptions, suivi et cadre suisse ; assemblage natif/sciences/quiz encore à réaliser.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "8234c58e094683e63355fff21299c6f121150dd8d3492ca7217fa3f9f3ca6845"
     },
     "astra_nephrologie": {
       "lesson": "G21",
       "worktree": "/tmp/Medina-neurologie-G21",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/g21-integrate-g1",
       "allowed_paths": [
         "chapters/G21",
@@ -64,8 +64,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G21-INTEGRATE"
       ],
       "started_at": "2026-11-02T15:52:16+00:00",
-      "activity_at": "2026-11-02T16:04:56+00:00",
-      "message": "Passages OFS G21.0/.1/.2/.3/.4/.8/.9, HUG2018 sémiologie, PHEL document mai2026 et DGN2023 différentiel lus ; FI Akineton mai2022, Symmetrel février2025, Madopar juin2023 en lecture ciblée. Cinq originaux humains réellement vus ; quota Parallel Search arrêté sans changement de session, HTTP public direct avec provenance. Aucune rédaction canonique, Betta encore à faire.",
+      "activity_at": "2026-11-02T16:29:22+00:00",
+      "message": "Recherche consolidée réelle :37lectures ciblées/réutilisations/provenances dans source-ledger.json,quatreFI suisses exactes contrôlées et cinq originaux humains vus. Betta préalable réellement passé ; erreur PMID29310988/29661694 corrigée avant rédaction, accès exclus tracés. Début de rédaction14/20 maintenant, aucun texte canonique encore remplacé.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -102,42 +102,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T06:35:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T06:45:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T06:55:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T07:05:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T07:15:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T07:25:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
     {
       "at": "2026-11-02T07:35:41+00:00",
       "action": "watch",
@@ -1395,6 +1359,45 @@
       "action": "watch",
       "ok": true,
       "findings": 2
+    },
+    {
+      "at": "2026-11-02T16:25:20+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "recherche",
+      "message": "E04 : 17 références aux niveaux réels et20 rubriques ; deux FI exactes Euthyrox février2023 et Curium131 juillet2022 relues, divergences ETA/EANM/FI conservées. Porte VÉRITÉ OK passée."
+    },
+    {
+      "at": "2026-11-02T16:27:25+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 2
+    },
+    {
+      "at": "2026-11-02T16:29:15+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "redaction",
+      "message": "E04 :14 sections de monographie rédigées dans le script réservé, avec cinq sous-codes/exclusions, trois axes fonction-structure-risque, seuils EU-TIRADS stricts et exceptions, suivi et cadre suisse ; assemblage natif/sciences/quiz encore à réaliser."
+    },
+    {
+      "at": "2026-11-02T16:29:22+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "redaction",
+      "message": "Recherche consolidée réelle :37lectures ciblées/réutilisations/provenances dans source-ledger.json,quatreFI suisses exactes contrôlées et cinq originaux humains vus. Betta préalable réellement passé ; erreur PMID29310988/29661694 corrigée avant rédaction, accès exclus tracés. Début de rédaction14/20 maintenant, aucun texte canonique encore remplacé."
+    },
+    {
+      "at": "2026-11-02T16:33:59+00:00",
+      "action": "complete",
+      "agent": "astra_neurologie",
+      "code": "G08"
+    },
+    {
+      "at": "2026-11-02T16:35:16+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
     }
   ],
   "cache": {
@@ -2394,6 +2397,50 @@
           "chapters/D62/D62_b.html": "4f0128b604a56f2bf074934a06240e3411a1fbd976bc73bc78a3b169e75f195d",
           "chapters/D62/D62_c.html": "4972b8ef4743a501faa087ab57f694d2875be59e5fe86d1cc7a1087d07b7fc3c",
           "chapters/D62/D62_d.html": "b866b06fa51a3d424eaae7c7e191fbbacf3cf730f6f68f13989679a0dbb0910c"
+        },
+        "clinical_certification": false,
+        "author_activity_refreshed": false,
+        "source_bindings_refreshed": false,
+        "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+      }
+    },
+    {
+      "agent": "astra_neurologie",
+      "code": "G08",
+      "at": "2026-11-02T16:33:59+00:00",
+      "branch": "codex/alpha77/g08-integrate-g1",
+      "worktree": "/tmp/Medina-neurologie-G08",
+      "folder": "/tmp/Medina-neurologie-G08/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G08-INTEGRATE",
+      "manifest_sha256": "bea7ffbb2963994d1479bbb4f8803b89147dc2be52be8fb99f5a7c1fff6a590c",
+      "source_binding_sha256": "6a077cc1f1d56023dca0506f2f0db2f114b2526e97e8c79eda01da620b84aa74",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "1db3d8af74167e2c82d55d74558aa545e860894ae5cbfbfe46ef4978b5e225d4",
+      "semiology_contract": {
+        "code": "G08",
+        "observed_at": "2026-11-02T16:33:59+00:00",
+        "passed": true,
+        "checks": {
+          "six_science_tabs": true,
+          "first_selected_semio": true,
+          "semio_panel_label_and_visible": true,
+          "first_unit_exact_h3": true,
+          "nine_named_sections": true,
+          "linked_sources_in_semio": true,
+          "clinical_semio_marker": true
+        },
+        "findings": [],
+        "source_hashes": {
+          "chapters/G08/G08_a.html": "e52448604d4c7fe23a47b13186bf6218af34e68dc92e8bdc2732d1c96b5b5ed6",
+          "chapters/G08/G08_b.html": "618aa14efa807175e13fd92ce2bf78aa9dc0eda60c9bba223342a1e36ed0bc14",
+          "chapters/G08/G08_c.html": "6e6c350c5f86094fe5fae9a8665f9d0ea9e4439b7164808bef9de5cafe2e5028",
+          "chapters/G08/G08_d.html": "089fac33e2f53c35f441709584ae46729a5b19bd2ed6b579944e4d7aa187e6c9"
         },
         "clinical_certification": false,
         "author_activity_refreshed": false,

@@ -1,12 +1,7 @@
 {
-  "observed_at": "2026-11-02T16:25:17+00:00",
+  "observed_at": "2026-11-02T16:35:16+00:00",
   "ok": true,
   "findings": [
-    {
-      "agent": "astra_nephrologie",
-      "level": "warning",
-      "reason": "Aucune activité déclarée depuis plus de 20 min; agent non supposé actif"
-    },
     {
       "level": "warning",
       "reason": "Réserves structurelles historiques à traiter avant intégration ; achèvements conservés",
@@ -28,9 +23,38 @@
       ]
     }
   ],
+  "storage_capacity": {
+    "volumes": [
+      {
+        "device": 27,
+        "observed_paths": [
+          "/workspace/Medina-harness",
+          "/workspace/Medina-endocrinologie-E04"
+        ],
+        "free_bytes": 2795261952,
+        "total_bytes": 33770192896,
+        "level": "ok"
+      },
+      {
+        "device": 34,
+        "observed_paths": [
+          "/tmp/Medina-neurologie-G08",
+          "/tmp/Medina-neurologie-G21",
+          "/tmp/Medina-hematologie-D62"
+        ],
+        "free_bytes": 603418624,
+        "total_bytes": 9441329152,
+        "level": "ok"
+      }
+    ],
+    "warning_below_bytes": 536870912,
+    "blocking_below_bytes": 134217728,
+    "automatic_cleanup": false,
+    "meaning": "Capacité observée sur cet hôte ; aucune taille de futur build garantie."
+  },
   "semiology_history": {
-    "inspected": 34,
-    "passed": 20,
+    "inspected": 35,
+    "passed": 21,
     "reserved_codes": [
       "E00",
       "N04",
@@ -50,7 +74,7 @@
     "meaning": "Contrôle structurel relancé à chaque veille600s ; résultats historiques conservés, nouvelles clôtures refusées si échec."
   },
   "interval_seconds": 600,
-  "observer_pid": 1348293,
+  "observer_pid": 1383735,
   "agent_activity_refreshed": false,
   "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
 }

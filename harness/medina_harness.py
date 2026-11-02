@@ -92,6 +92,23 @@ def code_hash():
     paths = sorted([*HERE.glob('*.py'), *HERE.glob('tests/*.py'), HERE/'dashboard-template.html', HERE/'catalog.json'])
     return digest(b''.join(str(p.relative_to(HERE)).encode()+b'\0'+p.read_bytes() for p in paths if p.exists()))
 
+def storage_capacity(paths):
+    """Observe each host volume once; never remove files or renew author activity."""
+    volumes={}
+    for value in paths:
+        path=Path(value).resolve()
+        if not path.exists():continue
+        device=path.stat().st_dev
+        if device in volumes:
+            volumes[device]['observed_paths'].append(str(path));continue
+        stat=os.statvfs(path);free=stat.f_bavail*stat.f_frsize
+        volumes[device]={'device':device,'observed_paths':[str(path)],'free_bytes':free,
+                         'total_bytes':stat.f_blocks*stat.f_frsize,
+                         'level':'error' if free<128*1024**2 else 'warning' if free<512*1024**2 else 'ok'}
+    return {'volumes':list(volumes.values()),'warning_below_bytes':512*1024**2,
+            'blocking_below_bytes':128*1024**2,'automatic_cleanup':False,
+            'meaning':'Capacité observée sur cet hôte ; aucune taille de futur build garantie.'}
+
 def inspect_semiology(worktree, code):
     """Seven native structural rules, read-only; never renew source receipts."""
     paths=[f'chapters/{code}/{code}_{suffix}.html' for suffix in 'abcd']
@@ -274,6 +291,11 @@ class Harness:
     def watch(self):
         findings = []
         state = load(self.runtime / 'state.json', {'agents': {}})
+        capacity=storage_capacity([self.root]+[a['worktree'] for a in state['agents'].values() if a.get('worktree')])
+        for volume in capacity['volumes']:
+            if volume['level']!='ok':
+                findings.append({'level':volume['level'],'reason':'Espace disque disponible faible sur hôte de production',
+                                 'free_bytes':volume['free_bytes'],'paths':volume['observed_paths']})
         for agent, a in state['agents'].items():
             if a.get('activity_at') and age(a['activity_at']) > 1200 and a.get('stage') != 'termine':
                 findings.append({'agent': agent, 'level': 'warning', 'reason': 'Aucune activité déclarée depuis plus de 20 min; agent non supposé actif'})
@@ -311,6 +333,7 @@ class Harness:
         if reserves:findings.append({'level':'warning','reason':'Réserves structurelles historiques à traiter avant intégration ; achèvements conservés','codes':reserves})
         atomic(self.runtime/'semiology-watch.json',{'observed_at':now(),'rows':history,'source_bindings_refreshed':False,'author_activity_refreshed':False})
         result = {'observed_at': now(), 'ok': not any(x['level'] == 'error' for x in findings), 'findings': findings,
+                  'storage_capacity':capacity,
                   'semiology_history':{'inspected':len(history),'passed':sum(row['passed'] for row in history),'reserved_codes':reserves,'meaning':'Contrôle structurel relancé à chaque veille600s ; résultats historiques conservés, nouvelles clôtures refusées si échec.'},
                   'interval_seconds': 600, 'observer_pid': os.getpid(), 'agent_activity_refreshed': False,
                   'limits': 'Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale.'}
