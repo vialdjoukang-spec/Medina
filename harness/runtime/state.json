@@ -15,8 +15,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE"
       ],
       "started_at": "2026-11-02T05:09:43+00:00",
-      "activity_at": "2026-11-02T10:41:24+00:00",
-      "message": "Auto-relecture C70 : assertions grade/critères intérimaires, urgences, doses phosphate/base et tableau rénal confrontées aux passages. Statique repassé. Build natif final puis navigation1440/390 à renouveler ; aucune clôture.",
+      "activity_at": "2026-11-02T10:58:06+00:00",
+      "message": "C70 :38fenêtres contrôlées à1440/390,6sciences/9sémiologie,4quiz et livre24 réussis. Populations lévétiracétam et références relues ; non-régressionG45 rétablie. Dernier delta EOF sans contenu corrigé ; build/liaison finale et commit encore ouverts.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -29,7 +29,7 @@
     "astra_endocrinologie": {
       "lesson": "E14",
       "worktree": "/workspace/Medina-endocrinologie-E14",
-      "stage": "verification",
+      "stage": "termine",
       "branch": "codex/alpha77/e14-integrate-g1",
       "allowed_paths": [
         "chapters/E14",
@@ -39,8 +39,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E14-INTEGRATE"
       ],
       "started_at": "2026-11-02T10:24:09+00:00",
-      "activity_at": "2026-11-02T10:47:09+00:00",
-      "message": "E14 : audit sciences réussi (six disciplines, 2953 mots scientifiques, six figures). Contrôle des sigles vide après protection locale des citations S1/S3 homonymes et des catégories albuminurie ; correction HTML de liens imbriqués avant build final.",
+      "activity_at": "2026-11-02T10:59:59+00:00",
+      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -53,7 +53,7 @@
     "astra_nephrologie": {
       "lesson": "N03",
       "worktree": "/workspace/Medina-nephrologie-n03",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/n03-integrate-g1",
       "allowed_paths": [
         "chapters/N03",
@@ -64,8 +64,8 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T10:47:33+00:00",
-      "activity_at": "2026-11-02T10:50:02+00:00",
-      "message": "N03 acquis/start/claim ; Pocketguide SGN17.03.2025 lu, KDIGO2024 sections ciblées et CUEN2025 syndromes/histologie lus. Distinguer activité, cicatrice, cause et risque ; aucune rédaction avant porte vérité.",
+      "activity_at": "2026-11-02T10:52:58+00:00",
+      "message": "Porte vérité N03 réellement passée ;28lectures ciblées,5FI,5originaux sélectionnés après contrôle provenance et vue du nouveau champ FSGS. Rédaction monographique engagée.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -101,36 +101,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T01:47:54+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T01:51:49+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T01:57:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T02:01:42+00:00",
-      "action": "progress",
-      "agent": "codex_hematologie",
-      "stage": "verification",
-      "message": "C85 : cinq FI suisses relues ; corrections C85.7, prophylaxie48h hors indication, critères non booléens et risques Yescarta ; aperçu autonome avec originaux testé1440/390, révision finale en cours."
-    },
-    {
-      "at": "2026-11-02T02:07:04+00:00",
-      "action": "native_agents_resumed",
-      "message": "Trois Astra observés interrompus après reprise de l’environnement, relancés puis confirmés running par l’outil natif. Début exact de l’interruption inconnu."
-    },
     {
       "at": "2026-11-02T02:07:41+00:00",
       "action": "watch",
@@ -1393,6 +1363,39 @@
       "action": "watch",
       "ok": true,
       "findings": 0
+    },
+    {
+      "at": "2026-11-02T10:52:58+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "redaction",
+      "message": "Porte vérité N03 réellement passée ;28lectures ciblées,5FI,5originaux sélectionnés après contrôle provenance et vue du nouveau champ FSGS. Rédaction monographique engagée."
+    },
+    {
+      "at": "2026-11-02T10:58:06+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "verification",
+      "message": "C70 :38fenêtres contrôlées à1440/390,6sciences/9sémiologie,4quiz et livre24 réussis. Populations lévétiracétam et références relues ; non-régressionG45 rétablie. Dernier delta EOF sans contenu corrigé ; build/liaison finale et commit encore ouverts."
+    },
+    {
+      "at": "2026-11-02T10:59:58+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "revue_requise",
+      "message": "E14 : relectures finales médicales, linguistiques et captures ordinateur/mobile effectuées explicitement en self_review ; 14/20 et source-binding final établis après contrôles natifs, aucune certification humaine."
+    },
+    {
+      "at": "2026-11-02T10:59:59+00:00",
+      "action": "complete",
+      "agent": "astra_endocrinologie",
+      "code": "E14"
+    },
+    {
+      "at": "2026-11-02T11:00:10+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
     }
   ],
   "cache": {
@@ -1668,6 +1671,25 @@
       "clinical_certification": false,
       "publication_allowed": false,
       "preview_sha256": "15851647c6c7e5dc9c1492aa5261b1325e8feb80fa388bf17df2b56c52288b4a"
+    },
+    {
+      "agent": "astra_endocrinologie",
+      "code": "E14",
+      "at": "2026-11-02T10:59:59+00:00",
+      "branch": "codex/alpha77/e14-integrate-g1",
+      "worktree": "/workspace/Medina-endocrinologie-E14",
+      "folder": "/workspace/Medina-endocrinologie-E14/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E14-INTEGRATE",
+      "manifest_sha256": "68c6379f0ed717ca558e6553d06760ba6c301cbcb8b4a1aa724d9738eb1cc65b",
+      "source_binding_sha256": "aa1f85cff068fc892a0f139b74d78c9543cee4410b92ab08202f2ccbc17a5b41",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "26aba9d05de5623eebc903c459ef04215bd974564cc3efd4231b7d1d91e0df30"
     }
   ]
 }
