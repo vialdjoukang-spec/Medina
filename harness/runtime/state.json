@@ -15,8 +15,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE"
       ],
       "started_at": "2026-11-02T11:10:54+00:00",
-      "activity_at": "2026-11-02T11:10:54+00:00",
-      "message": "Mission réservée; recherche autorisée",
+      "activity_at": "2026-11-02T11:32:27+00:00",
+      "message": "G03 : 18 lectures ciblées effectives journalisées ; RMS suisse 2021 retrouvée, FI exactes et OMS 2025 relues ; plan 20 rubriques prêt.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -29,7 +29,7 @@
     "astra_endocrinologie": {
       "lesson": "E25",
       "worktree": "/workspace/Medina-endocrinologie-E25",
-      "stage": "recherche",
+      "stage": "verification",
       "branch": "codex/alpha77/e25-integrate-g1",
       "allowed_paths": [
         "chapters/E25",
@@ -39,21 +39,21 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE"
       ],
       "started_at": "2026-11-02T11:04:46+00:00",
-      "activity_at": "2026-11-02T11:04:46+00:00",
-      "message": "Mission réservée; recherche autorisée",
+      "activity_at": "2026-11-02T11:39:26+00:00",
+      "message": "E25 : six fichiers rédigés et contrôlés ; static natif et audit sciences passent (14/20, 6 disciplines, 2979 mots sciences, 6 figures, sémiologie structurée avec titre et rôles). Build S05 réussi, seuls 3 E05 hérités hors périmètre. Contrôle navigateur des fenêtres, quiz, images et Livre24 en cours ; pas de binding final.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "641716529219f5273aef27da52e2d521c88053c0e8ce33f380c88fdeb5d2e957"
     },
     "astra_nephrologie": {
       "lesson": "N05",
       "worktree": "/workspace/Medina-nephrologie-n05",
-      "stage": "recherche",
+      "stage": "verification",
       "branch": "codex/alpha77/n05-integrate-g1",
       "allowed_paths": [
         "chapters/N05",
@@ -64,15 +64,15 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T11:23:32+00:00",
-      "activity_at": "2026-11-02T11:26:34+00:00",
-      "message": "N05 :33lectures ciblées/réutilisées attribuées,6FI ; statutKDIGO2026projet et classeOFSN05 vérifiés ; betta entrée réussi.",
+      "activity_at": "2026-11-02T11:35:09+00:00",
+      "message": "N05 : static et audit6sciences passés ; navigateur toutesfonctionsOK, premieragrégat refusé car attendait33repèresN03 au lieu des30N05 réellementprésents. Attente corrigée seloninventaire ; passefinale relancée après finitionslinguistiques.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "3be640514cd0e9da26fbe209bcbb0bb818ee436330a5348adf9fd72894c2f91f"
     },
     "codex_hematologie": {
@@ -88,8 +88,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D63-INTEGRATE"
       ],
       "started_at": "2026-11-02T11:13:57+00:00",
-      "activity_at": "2026-11-02T11:18:23+00:00",
-      "message": "D63 : base de six surfaces parcourue, 14074 mots, 36 fenêtres et 8 quiz. Plusieurs absolus et incohérences repérés (ferritine, transfusion, relais du fer, portée des CI Eprex). Sources CH, KDIGO2026 complet et deux FI obtenues ; lectures exactes en cours, aucune rédaction médicale avant VÉRITÉ.",
+      "activity_at": "2026-11-02T11:35:30+00:00",
+      "message": "Lectures ciblées effectives : FI Eprex/Ferinject/ferro sanol, KDIGO2026 diagnostic-fer-ESA-transfusion, ECCO2024 anémie, ESMO2018, NICE transfusion, mediX et Delphi suisses. Divergences et hypothèse Eprex réfutée consignées ; pas de nouvelle rédaction médicale avant porte vérité.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -101,52 +101,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T02:25:16+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "verification",
-      "message": "WHO 2024 et RCP exact Fexinidazole Winthrop 17 octobre 2025 relus et intégrés ; divergences seuil et surveillance explicites. Statique natif G02 et betta_verite passent ; reconstruction du bundle puis captures et coordination quatre filières."
-    },
-    {
-      "at": "2026-11-02T02:26:45+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "revue_requise",
-      "message": "N04 paquet complet prêt pour revue utilisateur : commit4d7525f4, garde périmètrePASS, contratPASS,14/20,6sciences,9SEMIO,5originaux/9occurrences. Auto-relectures déclarées +3FI revues séparément par parent concordantes ; ligne prophylaxie clarifiée. PasPR/main ni leçon suivante."
-    },
-    {
-      "at": "2026-11-02T02:27:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T02:29:14+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T02:29:53+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "recherche",
-      "message": "G02 version WHO/fexinidazole 3a7c7aa poussée après contrôles, source-binding final en place. Réserve flucytosine : SwissmedicJournal2024 export seul et RCP français Ancotil500mg septembre2025 relus ; statut suisse actuel encore à établir."
-    },
-    {
-      "at": "2026-11-02T02:30:32+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "revue_requise",
-      "message": "LivraisonN04 finale poussée1f1a9688 ; distant vérifié, arbre propre, gardePASS74fichiers bornés. Aperçu autonome finalSHA0283a563..., source-binding figé12sources+10preuves après tests. ContratPASS, revues propres déclarées et3FIparent concordantes, aucunecertificationglobale/PR/main. Attente revueutilisateur et clôture avant suivante."
-    },
-    {
-      "at": "2026-11-02T02:30:51+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
     {
       "at": "2026-11-02T02:33:54+00:00",
       "action": "watch",
@@ -1390,6 +1344,54 @@
       "action": "watch",
       "ok": true,
       "findings": 1
+    },
+    {
+      "at": "2026-11-02T11:32:27+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "G03 : 18 lectures ciblées effectives journalisées ; RMS suisse 2021 retrouvée, FI exactes et OMS 2025 relues ; plan 20 rubriques prêt."
+    },
+    {
+      "at": "2026-11-02T11:32:40+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "redaction",
+      "message": "N05 :14points écrits,20rubriques liées,6sciences et9sections sémiologiques,6FI,5originaux vus,34fenêtres/4quiz ; vérifications natives lancées."
+    },
+    {
+      "at": "2026-11-02T11:33:53+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "redaction",
+      "message": "E25 : recherche ciblée réellement achevée sur 20 sources, porte vérité passée avant rédaction ; 14 sections et 6 sciences/9 sémiologie rédigées. Audit sciences natif passé : 2979 mots, 6 figures ; static passé. Preuves /workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE/recherche_E25, source-ledger.json, static-check.log et audit-sciences.json. Navigateur et corrections de contexte à finir."
+    },
+    {
+      "at": "2026-11-02T11:35:09+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "verification",
+      "message": "N05 : static et audit6sciences passés ; navigateur toutesfonctionsOK, premieragrégat refusé car attendait33repèresN03 au lieu des30N05 réellementprésents. Attente corrigée seloninventaire ; passefinale relancée après finitionslinguistiques."
+    },
+    {
+      "at": "2026-11-02T11:35:30+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "recherche",
+      "message": "Lectures ciblées effectives : FI Eprex/Ferinject/ferro sanol, KDIGO2026 diagnostic-fer-ESA-transfusion, ECCO2024 anémie, ESMO2018, NICE transfusion, mediX et Delphi suisses. Divergences et hypothèse Eprex réfutée consignées ; pas de nouvelle rédaction médicale avant porte vérité."
+    },
+    {
+      "at": "2026-11-02T11:39:26+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "verification",
+      "message": "E25 : six fichiers rédigés et contrôlés ; static natif et audit sciences passent (14/20, 6 disciplines, 2979 mots sciences, 6 figures, sémiologie structurée avec titre et rôles). Build S05 réussi, seuls 3 E05 hérités hors périmètre. Contrôle navigateur des fenêtres, quiz, images et Livre24 en cours ; pas de binding final."
+    },
+    {
+      "at": "2026-11-02T11:40:10+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
     }
   ],
   "cache": {

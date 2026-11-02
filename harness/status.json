@@ -1,26 +1,20 @@
 {
-  "generated_at": "2026-11-02T11:30:10+00:00",
+  "generated_at": "2026-11-02T11:40:10+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T11:30:10+00:00",
+    "checked_at": "2026-11-02T11:40:10+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T11:30:10+00:00",
+    "observed_at": "2026-11-02T11:40:10+00:00",
     "ok": true,
-    "findings": [
-      {
-        "agent": "astra_endocrinologie",
-        "level": "warning",
-        "reason": "Aucune activité déclarée depuis plus de 20 min; agent non supposé actif"
-      }
-    ],
+    "findings": [],
     "interval_seconds": 600,
-    "observer_pid": 733663,
+    "observer_pid": 735861,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -94,8 +88,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE"
       ],
       "started_at": "2026-11-02T11:10:54+00:00",
-      "activity_at": "2026-11-02T11:10:54+00:00",
-      "message": "Mission réservée; recherche autorisée",
+      "activity_at": "2026-11-02T11:32:27+00:00",
+      "message": "G03 : 18 lectures ciblées effectives journalisées ; RMS suisse 2021 retrouvée, FI exactes et OMS 2025 relues ; plan 20 rubriques prêt.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -106,7 +100,7 @@
       "receipt_sha256": "401e4a956c7e52771bd02f0d6b7cc8d49a4159dd3eb50f1c54f648e70432cd18",
       "brief": {
         "schema_version": 1,
-        "status": "G03_RECHERCHE_G02_G05_I64_C70_COMPLETE",
+        "status": "G03_RECHERCHE_SOURCES_LUES",
         "prepared_at": "2026-11-02T01:17:05.123886+00:00",
         "agent": "Sol Neurologie",
         "model": "gpt-6.1-sol",
@@ -858,7 +852,7 @@
             "Private GitHub cron and local watch depend on runner/environment availability"
           ]
         },
-        "updated_at": "2026-11-02T11:11:29.229558+00:00",
+        "updated_at": "2026-11-02T11:32:27.791365+00:00",
         "current_package": {
           "code": "G03",
           "worktree": "/workspace/Medina-neurologie-G03",
@@ -1500,9 +1494,14 @@
             "actually_read_by_this_agent": false,
             "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
           }
-        ]
+        ],
+        "source_readings_count": 18,
+        "research_sources": "/workspace/Medina-neurologie-G03/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE/recherche_G03/sources.json",
+        "current_revision": "Recherche préalable et 20 rubriques reliées à 18 lectures ciblées effectives ; rédaction non commencée.",
+        "monograph14_reviewed": 0,
+        "matrix20_reviewed": 0
       },
-      "activity_age_seconds": 1157,
+      "activity_age_seconds": 464,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -1542,7 +1541,7 @@
       "historical_id": "astra_endocrinologie",
       "lesson": "E25",
       "worktree": "/workspace/Medina-endocrinologie-E25",
-      "stage": "recherche",
+      "stage": "verification",
       "branch": "codex/alpha77/e25-integrate-g1",
       "allowed_paths": [
         "chapters/E25",
@@ -1552,15 +1551,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE"
       ],
       "started_at": "2026-11-02T11:04:46+00:00",
-      "activity_at": "2026-11-02T11:04:46+00:00",
-      "message": "Mission réservée; recherche autorisée",
+      "activity_at": "2026-11-02T11:39:26+00:00",
+      "message": "E25 : six fichiers rédigés et contrôlés ; static natif et audit sciences passent (14/20, 6 disciplines, 2979 mots sciences, 6 figures, sémiologie structurée avec titre et rôles). Build S05 réussi, seuls 3 E05 hérités hors périmètre. Contrôle navigateur des fenêtres, quiz, images et Livre24 en cours ; pas de binding final.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "641716529219f5273aef27da52e2d521c88053c0e8ce33f380c88fdeb5d2e957",
       "brief": {
         "schema_version": 1,
@@ -1570,7 +1569,7 @@
         "fragment": "S05",
         "label": "E-06-Endocrinologie et métabolisme",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "phase": "E25_recherche_sources_et_inventaire",
+        "phase": "E25_redaction_et_controles_natifs",
         "selected_lesson": {
           "code": "E25",
           "title": "Anomalies génito-surrénaliennes",
@@ -2827,7 +2826,7 @@
           "phase": "preparation_only_waiting_harness_veille_and_exclusive_worktree",
           "authorization_scope": "Préparation seulement dans harness/agents/endocrinologie; aucune écriture médicale, aucun commit ni index. Ordre courant spécialités parallèles/une leçon à la fois remplace lots historiques, pas réservations."
         },
-        "updated_at": "2026-11-02T11:04:47.043068+00:00",
+        "updated_at": "2026-11-02T11:31:28.079760+00:00",
         "worktree": "/workspace/Medina-endocrinologie-E25",
         "branch": "codex/alpha77/e25-integrate-g1",
         "tokens_actual": null,
@@ -2938,8 +2937,9 @@
         "current_evidence": {
           "transition": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E14-E25",
           "source_cache": "/tmp/medina-source-cache/endocrinologie/E25",
-          "status": "E25 acquise, start et claim réussis. Source suisse/Europe 2021 intégrale accessible en HTML après échec XML, page suisse de dépistage, ENDO-ERN, cohorte suisse 2025 et quatre FI exactes en cache externe ; lectures ciblées en cours.",
-          "registry_sha": "b4479e09bde8da34537ea51b3a40f220904b9e82"
+          "status": "Porte vérité passée sur 20 sources réellement consultées ; rédaction 14 sections, 20 rubriques liées, six sciences dont sémiologie neuf sections, deux occurrences de figure originale humaine CC BY3.0. Contrôles natifs et revue contextuelle des fenêtres en cours.",
+          "registry_sha": "b4479e09bde8da34537ea51b3a40f220904b9e82",
+          "folder": "/workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE"
         },
         "previous_limits": [
           "Les produits suisses de potassium et de remplissage relus comportent des contre-indications ou limites qui ne sont pas annulées par le consensus de crise. Le cours enseigne la divergence et la décision hospitalière/pharmaceutique nécessaire, sans prescription automatique d’un produit alternatif non vérifié.",
@@ -2954,16 +2954,17 @@
           "Les quatre revues sont des auto-relectures du même auteur Sol, sans indépendance ni certification humaine. La coque conserve son bandeau provisoire et la navigation héritée ; trois éléments E05 non couverts au build restent hors réservation."
         ],
         "current_limits": [
-          "Aucune écriture médicale E25 encore effectuée ; dossiers anciens non réputés relus.",
-          "Les fréquences du dépistage et les séries suisses sélectionnées ne seront pas assimilées à une incidence de toute la catégorie E25."
+          "FI Florinef mars 2026 et repères néonataux de revue divergent ; aucune dose composite proposée.",
+          "Les essais crinecerfont 2024 ne démontrent pas autorisation suisse actuelle ni bénéfices cliniques à long terme.",
+          "FI Synacthen adulte et seuils hormonaux historiques gardent leur méthode ; pas extrapolation pédiatrique automatique."
         ],
         "runtime_agent": "sol_endocrinologie",
         "runtime_model": "gpt-6.1-sol",
         "runtime_reasoning": "high"
       },
-      "activity_age_seconds": 1525,
-      "activity_fresh": false,
-      "sections_per_hour": 0.0,
+      "activity_age_seconds": 45,
+      "activity_fresh": true,
+      "sections_per_hour": 23.72,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -2991,7 +2992,7 @@
       "historical_id": "astra_nephrologie",
       "lesson": "N05",
       "worktree": "/workspace/Medina-nephrologie-n05",
-      "stage": "recherche",
+      "stage": "verification",
       "branch": "codex/alpha77/n05-integrate-g1",
       "allowed_paths": [
         "chapters/N05",
@@ -3002,15 +3003,15 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T11:23:32+00:00",
-      "activity_at": "2026-11-02T11:26:34+00:00",
-      "message": "N05 :33lectures ciblées/réutilisées attribuées,6FI ; statutKDIGO2026projet et classeOFSN05 vérifiés ; betta entrée réussi.",
+      "activity_at": "2026-11-02T11:35:09+00:00",
+      "message": "N05 : static et audit6sciences passés ; navigateur toutesfonctionsOK, premieragrégat refusé car attendait33repèresN03 au lieu des30N05 réellementprésents. Attente corrigée seloninventaire ; passefinale relancée après finitionslinguistiques.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "3be640514cd0e9da26fbe209bcbb0bb818ee436330a5348adf9fd72894c2f91f",
       "brief": {
         "schema_version": 1,
@@ -3953,9 +3954,9 @@
           }
         }
       },
-      "activity_age_seconds": 217,
+      "activity_age_seconds": 302,
       "activity_fresh": true,
-      "sections_per_hour": 0.0,
+      "sections_per_hour": 50.45,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -3995,8 +3996,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D63-INTEGRATE"
       ],
       "started_at": "2026-11-02T11:13:57+00:00",
-      "activity_at": "2026-11-02T11:18:23+00:00",
-      "message": "D63 : base de six surfaces parcourue, 14074 mots, 36 fenêtres et 8 quiz. Plusieurs absolus et incohérences repérés (ferritine, transfusion, relais du fer, portée des CI Eprex). Sources CH, KDIGO2026 complet et deux FI obtenues ; lectures exactes en cours, aucune rédaction médicale avant VÉRITÉ.",
+      "activity_at": "2026-11-02T11:35:30+00:00",
+      "message": "Lectures ciblées effectives : FI Eprex/Ferinject/ferro sanol, KDIGO2026 diagnostic-fer-ESA-transfusion, ECCO2024 anémie, ESMO2018, NICE transfusion, mediX et Delphi suisses. Divergences et hypothèse Eprex réfutée consignées ; pas de nouvelle rédaction médicale avant porte vérité.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -4418,59 +4419,13 @@
         "sources_read": 0,
         "completed_sections": 0
       },
-      "activity_age_seconds": 708,
+      "activity_age_seconds": 281,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T02:24:43+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T02:25:16+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "verification",
-      "message": "WHO 2024 et RCP exact Fexinidazole Winthrop 17 octobre 2025 relus et intégrés ; divergences seuil et surveillance explicites. Statique natif G02 et betta_verite passent ; reconstruction du bundle puis captures et coordination quatre filières."
-    },
-    {
-      "at": "2026-11-02T02:26:45+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "revue_requise",
-      "message": "N04 paquet complet prêt pour revue utilisateur : commit4d7525f4, garde périmètrePASS, contratPASS,14/20,6sciences,9SEMIO,5originaux/9occurrences. Auto-relectures déclarées +3FI revues séparément par parent concordantes ; ligne prophylaxie clarifiée. PasPR/main ni leçon suivante."
-    },
-    {
-      "at": "2026-11-02T02:27:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T02:29:14+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T02:29:53+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "recherche",
-      "message": "G02 version WHO/fexinidazole 3a7c7aa poussée après contrôles, source-binding final en place. Réserve flucytosine : SwissmedicJournal2024 export seul et RCP français Ancotil500mg septembre2025 relus ; statut suisse actuel encore à établir."
-    },
-    {
-      "at": "2026-11-02T02:30:32+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "revue_requise",
-      "message": "LivraisonN04 finale poussée1f1a9688 ; distant vérifié, arbre propre, gardePASS74fichiers bornés. Aperçu autonome finalSHA0283a563..., source-binding figé12sources+10preuves après tests. ContratPASS, revues propres déclarées et3FIparent concordantes, aucunecertificationglobale/PR/main. Attente revueutilisateur et clôture avant suivante."
-    },
     {
       "at": "2026-11-02T02:30:51+00:00",
       "action": "watch",
@@ -5714,6 +5669,54 @@
       "agent": "astra_nephrologie",
       "stage": "recherche",
       "message": "N05 :33lectures ciblées/réutilisées attribuées,6FI ; statutKDIGO2026projet et classeOFSN05 vérifiés ; betta entrée réussi."
+    },
+    {
+      "at": "2026-11-02T11:30:10+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T11:32:27+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "G03 : 18 lectures ciblées effectives journalisées ; RMS suisse 2021 retrouvée, FI exactes et OMS 2025 relues ; plan 20 rubriques prêt."
+    },
+    {
+      "at": "2026-11-02T11:32:40+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "redaction",
+      "message": "N05 :14points écrits,20rubriques liées,6sciences et9sections sémiologiques,6FI,5originaux vus,34fenêtres/4quiz ; vérifications natives lancées."
+    },
+    {
+      "at": "2026-11-02T11:33:53+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "redaction",
+      "message": "E25 : recherche ciblée réellement achevée sur 20 sources, porte vérité passée avant rédaction ; 14 sections et 6 sciences/9 sémiologie rédigées. Audit sciences natif passé : 2979 mots, 6 figures ; static passé. Preuves /workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE/recherche_E25, source-ledger.json, static-check.log et audit-sciences.json. Navigateur et corrections de contexte à finir."
+    },
+    {
+      "at": "2026-11-02T11:35:09+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "verification",
+      "message": "N05 : static et audit6sciences passés ; navigateur toutesfonctionsOK, premieragrégat refusé car attendait33repèresN03 au lieu des30N05 réellementprésents. Attente corrigée seloninventaire ; passefinale relancée après finitionslinguistiques."
+    },
+    {
+      "at": "2026-11-02T11:35:30+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "recherche",
+      "message": "Lectures ciblées effectives : FI Eprex/Ferinject/ferro sanol, KDIGO2026 diagnostic-fer-ESA-transfusion, ECCO2024 anémie, ESMO2018, NICE transfusion, mediX et Delphi suisses. Divergences et hypothèse Eprex réfutée consignées ; pas de nouvelle rédaction médicale avant porte vérité."
+    },
+    {
+      "at": "2026-11-02T11:39:26+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "verification",
+      "message": "E25 : six fichiers rédigés et contrôlés ; static natif et audit sciences passent (14/20, 6 disciplines, 2979 mots sciences, 6 figures, sémiologie structurée avec titre et rôles). Build S05 réussi, seuls 3 E05 hérités hors périmètre. Contrôle navigateur des fenêtres, quiz, images et Livre24 en cours ; pas de binding final."
     }
   ],
   "cache": {
@@ -12622,7 +12625,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T11:30:10+00:00",
+    "observed_at": "2026-11-02T11:40:10+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -13259,9 +13262,9 @@
         "branch": "codex/alpha77/e25-integrate-g1",
         "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "local_preview": "/workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE/E25-apercu-autonome.html",
-        "exists": false,
-        "sha256": null,
-        "bytes": null,
+        "exists": true,
+        "sha256": "0e06437b935e24d8d5ddec5e874cf283317c30cf720be40855e0b9abc4e7d7d4",
+        "bytes": 5538151,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/e25-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE/E25-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/e25-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
@@ -13274,9 +13277,9 @@
         "branch": "codex/alpha77/n05-integrate-g1",
         "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "local_preview": "/workspace/Medina-nephrologie-n05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N05-INTEGRATE/N05-apercu-autonome.html",
-        "exists": false,
-        "sha256": null,
-        "bytes": null,
+        "exists": true,
+        "sha256": "9d3f8910950c84b91535f469e321bf2d855d2535d8a92f08c328d86107265d03",
+        "bytes": 23531293,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/n05-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N05-INTEGRATE/N05-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/n05-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",

@@ -6,7 +6,7 @@
   "fragment": "S05",
   "label": "E-06-Endocrinologie et métabolisme",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "phase": "E25_recherche_sources_et_inventaire",
+  "phase": "E25_redaction_et_controles_natifs",
   "selected_lesson": {
     "code": "E25",
     "title": "Anomalies génito-surrénaliennes",
@@ -1263,7 +1263,7 @@
     "phase": "preparation_only_waiting_harness_veille_and_exclusive_worktree",
     "authorization_scope": "Préparation seulement dans harness/agents/endocrinologie; aucune écriture médicale, aucun commit ni index. Ordre courant spécialités parallèles/une leçon à la fois remplace lots historiques, pas réservations."
   },
-  "updated_at": "2026-11-02T11:04:47.043068+00:00",
+  "updated_at": "2026-11-02T11:31:28.079760+00:00",
   "worktree": "/workspace/Medina-endocrinologie-E25",
   "branch": "codex/alpha77/e25-integrate-g1",
   "tokens_actual": null,
@@ -1374,8 +1374,9 @@
   "current_evidence": {
     "transition": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E14-E25",
     "source_cache": "/tmp/medina-source-cache/endocrinologie/E25",
-    "status": "E25 acquise, start et claim réussis. Source suisse/Europe 2021 intégrale accessible en HTML après échec XML, page suisse de dépistage, ENDO-ERN, cohorte suisse 2025 et quatre FI exactes en cache externe ; lectures ciblées en cours.",
-    "registry_sha": "b4479e09bde8da34537ea51b3a40f220904b9e82"
+    "status": "Porte vérité passée sur 20 sources réellement consultées ; rédaction 14 sections, 20 rubriques liées, six sciences dont sémiologie neuf sections, deux occurrences de figure originale humaine CC BY3.0. Contrôles natifs et revue contextuelle des fenêtres en cours.",
+    "registry_sha": "b4479e09bde8da34537ea51b3a40f220904b9e82",
+    "folder": "/workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE"
   },
   "previous_limits": [
     "Les produits suisses de potassium et de remplissage relus comportent des contre-indications ou limites qui ne sont pas annulées par le consensus de crise. Le cours enseigne la divergence et la décision hospitalière/pharmaceutique nécessaire, sans prescription automatique d’un produit alternatif non vérifié.",
@@ -1390,8 +1391,9 @@
     "Les quatre revues sont des auto-relectures du même auteur Sol, sans indépendance ni certification humaine. La coque conserve son bandeau provisoire et la navigation héritée ; trois éléments E05 non couverts au build restent hors réservation."
   ],
   "current_limits": [
-    "Aucune écriture médicale E25 encore effectuée ; dossiers anciens non réputés relus.",
-    "Les fréquences du dépistage et les séries suisses sélectionnées ne seront pas assimilées à une incidence de toute la catégorie E25."
+    "FI Florinef mars 2026 et repères néonataux de revue divergent ; aucune dose composite proposée.",
+    "Les essais crinecerfont 2024 ne démontrent pas autorisation suisse actuelle ni bénéfices cliniques à long terme.",
+    "FI Synacthen adulte et seuils hormonaux historiques gardent leur méthode ; pas extrapolation pédiatrique automatique."
   ],
   "runtime_agent": "sol_endocrinologie",
   "runtime_model": "gpt-6.1-sol",
