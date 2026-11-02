@@ -1,0 +1,57 @@
+[
+  {
+    "command": [
+      "python3",
+      "test_v7.py",
+      "--static",
+      "G08"
+    ],
+    "at": "2026-11-02T16:27:11.700626+00:00",
+    "returncode": 0,
+    "log": "static-test.log"
+  },
+  {
+    "command": [
+      "python3",
+      "tests/audit_sciences.py",
+      "--base",
+      "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+      "--codes",
+      "G08",
+      "--out",
+      "/tmp/Medina-neurologie-G08/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G08-INTEGRATE/sciences-audit.json"
+    ],
+    "at": "2026-11-02T16:27:13.595283+00:00",
+    "returncode": 0,
+    "log": "sciences-test.log"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/betta_verite.py",
+      "/tmp/Medina-neurologie-G08/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G08-INTEGRATE/compatibilite_betta_G08"
+    ],
+    "at": "2026-11-02T16:27:13.658058+00:00",
+    "returncode": 0,
+    "log": "betta-final.log"
+  },
+  {
+    "command": [
+      "python3",
+      "/tmp/Medina-neurologie-G08/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G08-INTEGRATE/check-semiology-contract.py"
+    ],
+    "at": "2026-11-02T16:27:13.684848+00:00",
+    "returncode": 0,
+    "log": "semiology-final.log"
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "at": "2026-11-02T16:27:13.741399+00:00",
+    "returncode": 0,
+    "log": "diff-check.log"
+  }
+]

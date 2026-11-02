@@ -27,15 +27,15 @@ add_if_absent('TVC', [('T','Thrombose'),('V','Veineuse'),('C','Cérébrale')], '
               'Obstruction thrombotique d’une ou plusieurs veines cérébrales ou d’un sinus dural. La forme septique, déclenchée par une infection de voisinage, est l’objet de ce cours.', 'g08-tvc')
 add_if_absent('ISCVT', [('ISCVT', 'sigle d’une cohorte internationale sur la thrombose des veines cérébrales et des sinus duraux, développement non repris des sources lues')],
               'Cohorte internationale ISCVT (thrombose des veines cérébrales et des sinus duraux)',
-              'Cette cohorte de 624 patients décrit le pronostic de la thrombose veineuse cérébrale : mortalité de 8,3 % et facteurs prédictifs de décès ou de dépendance, dont l’infection du système nerveux central (Stroke 2004).', 'g08-coma')
+              'Cohorte historique de thrombose veineuse cérébrale citée dans le dossier antérieur. Ses résultats chiffrés non relus ne constituent pas une estimation individuelle de G08 dans la présente version.', 'g08-coma')
 add_if_absent('mRS', [('m','modified'),('R','Rankin'),('S','Scale')], 'Échelle de Rankin modifiée (modified Rankin Scale)',
-              'Échelle de handicap de 0 (aucun symptôme) à 6 (décès). Elle sous-estime les séquelles cognitives de la thrombose veineuse cérébrale.', 'g08-pronostic')
-add_if_absent('DECOMPRESS2', [('DECOMPRESS2', 'nom d’un essai, non développé lettre à lettre dans les sources lues')],
-              'Essai DECOMPRESS2',
-              'Cette étude de 118 patients évalue la décompression chirurgicale dans la thrombose veineuse cérébrale : à un an, deux tiers sont en vie et un tiers sont indépendants.', 'g08-decompression')
+              'Échelle fonctionnelle utilisée dans les études après thrombose veineuse cérébrale ; elle ne constitue pas un critère de G08 et ne résume pas toutes les séquelles cognitives.', 'g08-pronostic')
+add_if_absent('DECOMPRESS2', [('DECOMPRESS2', 'nom d’une cohorte observationnelle, non un sigle à développer artificiellement')],
+              'Cohorte observationnelle DECOMPRESS2',
+              'Cohorte prospective observationnelle de décompression, décrite par la revue2025, et non essai randomisé. Elle concerne des thromboses graves de toutes causes, pas exclusivement septiques.', 'g08-decompression')
 add_if_absent('DOAC-CVT', [('DOAC', 'Direct Oral AntiCoagulants (anticoagulants oraux directs)'), ('CVT', 'Cerebral Venous Thrombosis (thrombose veineuse cérébrale)')],
               'Cohorte DOAC-CVT',
-              'Cette cohorte observationnelle de 619 patients compare anticoagulants oraux directs et antagonistes de la vitamine K : le critère composite est de 3 % dans chaque groupe.', 'g08-aod')
+              'Cohorte observationnelle internationale de thrombose veineuse cérébrale ; ses chiffres non relus dans la source originale ne sont pas présentés comme preuve spécifique de G08 septique.', 'g08-aod')
 add_if_absent('TO-ACT', [('TO-ACT', 'nom d’un essai, non développé lettre à lettre dans les sources lues')],
               'Essai TO-ACT',
               'Cet essai de thrombectomie endovasculaire a été arrêté prématurément sans bénéfice dans la thrombose veineuse cérébrale.', 'g08-endovasc')
@@ -50,6 +50,12 @@ add_if_absent('DGN', [('D','Deutsche'),('G','Gesellschaft für'),('N','Neurologi
 add_if_absent('EAN', [('E','European'),('A','Academy of'),('N','Neurology')], 'Académie européenne de neurologie',
               'Elle a endossé avec l’Organisation européenne de l’accident vasculaire cérébral la recommandation de 2017 sur la thrombose veineuse cérébrale.', 'g08-heparine')
 add_if_absent('Tolosa-Hunt', [('Tolosa-Hunt', 'noms propres des auteurs qui ont décrit le syndrome, non une abréviation')], 'Syndrome de Tolosa-Hunt',
-              'Diagnostic classique du syndrome du sinus caverneux cité ici sans conduite, car sa différenciation n’a pas été lue dans une source européenne.')
-add_if_absent('Pays-Bas', [('Pays-Bas', 'nom propre d’un pays, non une abréviation')], 'Pays-Bas', 'Pays où a été mesurée l’incidence de la thrombose veineuse cérébrale citée dans le cours.')
-add_if_absent('Papouasie-Nouvelle-Guinée', [('Papouasie-Nouvelle-Guinée', 'nom propre d’un pays, non une abréviation')], 'Papouasie-Nouvelle-Guinée', 'Pays d’une série de complications intracrâniennes otogènes, cité pour sa mortalité dans un contexte de présentation tardive.')
+              'Cause inflammatoire de syndrome caverneux discutée dans le différentiel de la série européenne2018 effectivement lue ; aucun traitement immunosuppresseur ne se décide sur le seul nom sans rechercher infection.')
+add_if_absent('Pays-Bas', [('Pays-Bas', 'nom propre d’un pays, non une abréviation')], 'Pays-Bas', 'Pays des équipes de la série clinique2018effectivement lue ; ses données ne deviennent pas une incidence suisse.')
+add_if_absent('Papouasie-Nouvelle-Guinée', [('Papouasie-Nouvelle-Guinée', 'nom propre d’un pays, non une abréviation')], 'Papouasie-Nouvelle-Guinée', 'Nom de pays conservé comme clé de glossaire ; aucun chiffre de série historique de ce pays n’est généralisé à G08 dans cette version.')
+
+# Codes et noms propres de la version G08 relue en novembre2026 ; clés antérieures conservées.
+for _code, _text in [('G95.18', 'Code de la classification française2024des autres myélopathies vasculaires ; exclusion des formes intrarachidiennes non purulentes dans les notes G08.'), ('O08.7', 'Autres complications veineuses consécutives à un avortement, une grossesse extra-utérine ou molaire ; exclusion causale de G08.'), ('O22.5', 'Thrombose veineuse cérébrale au cours de la grossesse ; codage obstétrical distinct de G08.'), ('O87.3', 'Thrombose veineuse cérébrale au cours de la puerpéralité ; codage obstétrical distinct de G08.')]:
+    add_if_absent(_code, [(_code, 'code de classification, non une abréviation médicale')], 'Code ' + _code, _text, 'g08-codage')
+add_if_absent('SINT', [('SINT', 'élément d’un nom commercial, non une abréviation médicale à développer')], 'Metronidazole SINT i.v.', 'Spécialité suisse exacte de métronidazole ; sa dose générale de FI ne constitue pas un protocole universel de G08.', 'g08-metronidazole')
+add_if_absent('Oto-Rhino-Laryngology', [('Oto-Rhino-Laryngology', 'élément anglais du titre propre d’une revue')], 'European Archives of Oto-Rhino-Laryngology', 'Revue de la série néerlandaise2018de thrombose septique du sinus caverneux ; le titre est conservé pour une attribution exacte.', 'g08-r5')
