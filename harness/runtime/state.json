@@ -15,8 +15,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G07-INTEGRATE"
       ],
       "started_at": "2026-11-02T13:55:10+00:00",
-      "activity_at": "2026-11-02T13:55:10+00:00",
-      "message": "Mission réservée; recherche autorisée",
+      "activity_at": "2026-11-02T14:02:09+00:00",
+      "message": "G07 : inventaire9914mots,4sciences,8SVG ; deux lectures ciblées réelles journalisées (guide suisse2024chap7.1 et FI RifampicinLabatec2023), misesàjourHARVEST/BASHH identifiées mais textes primaires à lire. Aucune rédaction G07.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -27,28 +27,28 @@
       "receipt_sha256": "886686a177a81596c207849b551d3ef86a06aa440722fa3f8e156ad13b34aea2"
     },
     "astra_endocrinologie": {
-      "lesson": "E32",
-      "worktree": "/tmp/Medina-endocrinologie-E32",
-      "stage": "termine",
-      "branch": "codex/alpha77/e32-integrate-g1",
+      "lesson": "E35",
+      "worktree": "/tmp/Medina-endocrinologie-E35",
+      "stage": "recherche",
+      "branch": "codex/alpha77/e35-integrate-g1",
       "allowed_paths": [
-        "chapters/E32",
-        "glossary/e32.py",
-        "assets/img/e32/alpha/codex",
-        "organisation/alpha-publications/Codex/E32",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E32-INTEGRATE"
+        "chapters/E35",
+        "glossary/e35.py",
+        "assets/img/e35/alpha/codex",
+        "organisation/alpha-publications/Codex/E35",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E35-INTEGRATE"
       ],
-      "started_at": "2026-11-02T13:18:06+00:00",
-      "activity_at": "2026-11-02T13:54:01+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "started_at": "2026-11-02T14:00:24+00:00",
+      "activity_at": "2026-11-02T14:00:24+00:00",
+      "message": "Mission réservée; recherche autorisée",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "b558c02ca5420c0353f70bb6cfd87e6e34de5b2ea38b6ca941547b611aeac305"
+      "completed_sections": 0,
+      "receipt_sha256": "61fc9ed1e818bc2a2b8ffdbacbb3a6136cf59aaa3c5a7ae9608728d0c1907f52"
     },
     "astra_nephrologie": {
       "lesson": "G09",
@@ -101,33 +101,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T04:08:46+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "verification",
-      "message": "G05 : premier aperçu autonome et figures capturées ; contenu14/20 relu, tests de fenêtres et quiz adaptés au DOM natif, ultime reconstruction après correction des abréviations UL97/UL54. Aucun passage au cours suivant."
-    },
-    {
-      "at": "2026-11-02T04:08:50+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "verification",
-      "message": "N00 : relecture des six surfaces et quatre FI terminée ; gabarit complet réparé, contrôles natifs et visuels finaux en cours, matrices14/20 préparées."
-    },
-    {
-      "at": "2026-11-02T04:10:33+00:00",
-      "action": "complete",
-      "agent": "astra_nephrologie",
-      "code": "N00"
-    },
-    {
-      "at": "2026-11-02T04:13:36+00:00",
-      "action": "progress",
-      "agent": "codex_hematologie",
-      "stage": "redaction",
-      "message": "C86 : rédaction monographique et examens/pharmacologie remplacés dans modules réservés ; intégration native et contrôles à suivre."
-    },
     {
       "at": "2026-11-02T04:13:36+00:00",
       "action": "watch",
@@ -1387,6 +1360,32 @@
     },
     {
       "at": "2026-11-02T13:55:15+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T13:55:57+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "preparation",
+      "message": "G07 : bail confirmé, worktree complet/tmp avec lien/workspace, start puis claim effectifs ; incident de transition et échec disque/start préservés, sept sources initiales empreintées, aucune rédaction médicale."
+    },
+    {
+      "at": "2026-11-02T14:00:24+00:00",
+      "action": "claim",
+      "agent": "astra_endocrinologie",
+      "code": "E35"
+    },
+    {
+      "at": "2026-11-02T14:02:09+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "G07 : inventaire9914mots,4sciences,8SVG ; deux lectures ciblées réelles journalisées (guide suisse2024chap7.1 et FI RifampicinLabatec2023), misesàjourHARVEST/BASHH identifiées mais textes primaires à lire. Aucune rédaction G07."
+    },
+    {
+      "at": "2026-11-02T14:05:15+00:00",
       "action": "watch",
       "ok": true,
       "findings": 1

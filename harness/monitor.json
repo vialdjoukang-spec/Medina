@@ -90,5 +90,43 @@
     "failure": "No space left on device pendant création du worktree E32",
     "recovery": "Worktree sur /tmp/Medina-endocrinologie-E32, lien /workspace/Medina-endocrinologie-E32 ; acquisition a0c5256a7862475edb5bc51014f733b0876c02ab, start et claim réussis. Aucune suppression des archives.",
     "start_guard_incident": "Une tentative avant fin du push acquisition refusée ; reçu conservé = tentative réellement réussie."
+  },
+  "disk_incident_g07": {
+    "recorded_at": "2026-11-02T13:54:17.970438+00:00",
+    "course": "G07",
+    "phase": "transition_before_any_new_medical_writing",
+    "events": [
+      {
+        "event": "acquisition",
+        "result": "success",
+        "registry_sha": "2a9a3889be850334b1d453ea11eebeee31a9d1da"
+      },
+      {
+        "event": "procedure_order_incident",
+        "detail": "Local full worktree creation launched before final acquire command return had been awaited. Acquisition was not presented as verified at that instant; no medical content was written."
+      },
+      {
+        "event": "full_worktree_checkout_failed",
+        "detail": "84% checkout: No space left on device. Git automatically cleaned incomplete worktree, branch remained."
+      },
+      {
+        "event": "start_failed",
+        "detail": "Attempt after failed checkout returned FileNotFoundError: /workspace/Medina-neurologie-G07/tools/ai_session_guard.py. No start or claim success asserted."
+      },
+      {
+        "event": "local_sparse_recovery",
+        "detail": "Own clean256MB sparse checkout prepared; no source changes, no start/claim yet. Parent identified separate /tmp filesystem, preferred full checkout there. No other author or released worktree deleted."
+      }
+    ],
+    "acquisition_after_failure_fresh_registry": "registry-G07-before-start.json",
+    "source_changes_before_recovery": 0,
+    "clinical_certification": false,
+    "later_confirmed_recovery": {
+      "start_claim_at": "2026-11-02T13:55:09+00:00",
+      "actual_inventory_at": "2026-11-02T13:55:57+00:00",
+      "full_worktree": "/tmp/Medina-neurologie-G07",
+      "alias": "/workspace/Medina-neurologie-G07",
+      "no_retroactive_procedure_compliance": true
+    }
   }
 }

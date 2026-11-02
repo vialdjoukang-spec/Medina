@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-02T13:55:15+00:00",
+  "generated_at": "2026-11-02T14:05:15+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T13:55:15+00:00",
+    "checked_at": "2026-11-02T14:05:15+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T13:55:15+00:00",
+    "observed_at": "2026-11-02T14:05:15+00:00",
     "ok": true,
     "findings": [
       {
@@ -56,7 +56,7 @@
       "meaning": "Contrôle structurel relancé à chaque veille600s ; résultats historiques conservés, nouvelles clôtures refusées si échec."
     },
     "interval_seconds": 600,
-    "observer_pid": 1033903,
+    "observer_pid": 1068445,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -129,8 +129,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G07-INTEGRATE"
       ],
       "started_at": "2026-11-02T13:55:10+00:00",
-      "activity_at": "2026-11-02T13:55:10+00:00",
-      "message": "Mission réservée; recherche autorisée",
+      "activity_at": "2026-11-02T14:02:09+00:00",
+      "message": "G07 : inventaire9914mots,4sciences,8SVG ; deux lectures ciblées réelles journalisées (guide suisse2024chap7.1 et FI RifampicinLabatec2023), misesàjourHARVEST/BASHH identifiées mais textes primaires à lire. Aucune rédaction G07.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -141,7 +141,7 @@
       "receipt_sha256": "886686a177a81596c207849b551d3ef86a06aa440722fa3f8e156ad13b34aea2",
       "brief": {
         "schema_version": 1,
-        "status": "G06_COMPLETE_LIBERE_TRANSITION_G07",
+        "status": "G07_RECHERCHE",
         "prepared_at": "2026-11-02T01:17:05.123886+00:00",
         "agent": "Sol Neurologie",
         "model": "gpt-6.1-sol",
@@ -152,12 +152,11 @@
         "label": "N-05-Neurologie",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "candidate": {
-          "code": "G06",
-          "title": "Abcès et granulome intracrâniens et intrarachidiens",
+          "code": "G07",
+          "title": "Abcès et granulome intracrâniens et intrarachidiens au cours d’affections classées ailleurs",
           "mode": "existing",
           "owner": "Codex",
-          "active_reservations": [],
-          "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G06-INTEGRATE.json",
+          "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G07-INTEGRATE.json",
           "campaign77_member": true,
           "source_exists": true,
           "authorization": "current_acquired_started_claimed_reservation"
@@ -835,13 +834,13 @@
           "precedence": "Current direct user order overrides incompatible historical STOP and batch workflow; preserves clinical evidence and concurrent reservations"
         },
         "baseline": {
-          "chapters/G06/G06_a.html": "153bb38641daad0397114ad5447d6f53a98afb7b9b24ed38d691ac826036218d",
-          "chapters/G06/G06_b.html": "8a401010e3917acfdf47d88a30a6e7f97deb29dc2d7ae7b54e32e59b19de8909",
-          "chapters/G06/G06_c.html": "b173be2e7f010e0353f680633a08c3308951589b747c8a5438c9ef409a04263f",
-          "chapters/G06/G06_d.html": "09b643fd11a988c050c3e9b187896cc2bb1bbcf9b78b6ddd027e6f5f2a64fffa",
-          "chapters/G06/G06_pop1.html": "c900b22695465965fea5d118d60030d192b1d53fa4bef3c590d72a4106f339cc",
-          "chapters/G06/G06_pop2.html": "5388ff106b0eff1c0a8907d6ac0aebde1a55c3bae3bd1f4f5454d26c2e19b776",
-          "glossary/g06.py": "70a23c925a8600f5222c9ca846bc1c8c480e79968e7d602212cdebc0714ec9d9"
+          "chapters/G07/G07_pop2.html": "6b5b61381d6a0eb583c7cb2e2e2779e742fdbefeb9db3e9739b3bdfac2c8dae5",
+          "chapters/G07/G07_pop1.html": "70d35a4430f62cf5095b64cb7e28a03b63521543838a7a06df2e985ba2060883",
+          "chapters/G07/G07_d.html": "ba5c08bb42c0f2a01fec1cc1742488ae26d7f2a173fe1b1528a3192083a22c2f",
+          "chapters/G07/G07_c.html": "ba80b7389a4308a401da2117fe366f8c0889904336cf80cdbb9d52ca6247bbde",
+          "chapters/G07/G07_b.html": "611ed3bbacac6a39f9ad087de34c67025e4832d99713b36f0beabab749baa1db",
+          "chapters/G07/G07_a.html": "3833c27c605f23d276b66ea48d18cf1af8909a00e95fdc2fe3ae339e37ab2448",
+          "glossary/g07.py": "92b1c84ca68f2f0a4b6845c9c98fde888c2a7917d76ca4be633d52e3ff042815"
         },
         "historical_author_dossier": "livraisons/Livraison Claude/N-05-Neurologie/betta/CYCLE_33_G02",
         "sources_to_reread": [],
@@ -883,32 +882,32 @@
             "Private GitHub cron and local watch depend on runner/environment availability"
           ]
         },
-        "updated_at": "2026-11-02T13:49:23.448738+00:00",
+        "updated_at": "2026-11-02T14:02:08.997020+00:00",
         "current_package": {
-          "code": "G06",
-          "worktree": "/workspace/Medina-neurologie-G06",
-          "branch": "codex/alpha77/g06-integrate-g1",
+          "code": "G07",
+          "worktree": "/tmp/Medina-neurologie-G07",
+          "workspace_symlink": "/workspace/Medina-neurologie-G07",
+          "branch": "codex/alpha77/g07-integrate-g1",
           "reservation_acquired": true,
-          "acquisition_registry_sha": "b875af9f34b7fe815802f650413d14be8603dcc3",
-          "start_receipt": "/workspace/Medina-neurologie-G06/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE/start.json",
-          "stage": "revue_requise",
-          "source_readings_count": 19,
-          "monograph14_reviewed": 14,
-          "matrix20_reviewed": 20,
-          "blocking_findings": [],
+          "acquisition_registry_sha": "2a9a3889be850334b1d453ea11eebeee31a9d1da",
+          "start_receipt": "/tmp/Medina-neurologie-G07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G07-INTEGRATE/start-G07.json",
+          "stage": "recherche",
+          "source_readings_count": 2,
+          "monograph14_reviewed": 0,
+          "matrix20_reviewed": 0,
+          "blocking_findings": [
+            "Inventaire et sources G07, porte Betta avant rédaction, puis preuves finales à réaliser."
+          ],
           "clinical_certification": false,
-          "preview": "/workspace/Medina-neurologie-G06/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE/G06-apercu-autonome.html",
-          "source_commit": "c15be94edef5aa396c57db9fb9a8f2c1f52a92a9",
-          "preview_sha256": "d97344210d6000cd5ca052f2f077d3f762d7d17dafc9ddceaf3985cef2ab425e"
+          "preview": null
         },
         "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
         "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
-        "medical_content_written": true,
+        "medical_content_written": false,
         "current_limitations": [
-          "Incidence nationale actuelle et obligations/droits suisses spécifiques non établis, limites explicites.",
-          "Protocole SpitalThurgau2026 local, écarts FI attribués ; EANS limité à spondylodiscite de novo, pas toutG06.1.",
-          "DGN2021 échue seulement extraits, pas base thérapeutique actuelle ; pas certification humaine ni revue indépendante.",
-          "QuatreIDs dupliqués révélés et corrigés par navigateur ; contrôle final sur derniers octets en cours."
+          "Incident d’ordre de lancement local et échec espace/start conservés, sans réécriture historique.",
+          "Sources héritées G07 sont pistes, jamais lectures Sol par présence de cache.",
+          "G06 et tous cours antérieurs achevés/libérés, leurs sources/bindings restent intacts."
         ],
         "completed_lessons": [
           {
@@ -1567,19 +1566,14 @@
             "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
           }
         ],
-        "source_readings_count": 19,
-        "research_sources": "/workspace/Medina-neurologie-G06/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE/recherche_G06/sources.json",
-        "current_revision": "Version finale :15684mots au contrôle final ; statique, audit sciences, Betta et7conditions sémiologiques passent ; parcours37fenêtres à1440/390 et9captures finales inspectées. Garde source réussie, push source en cours.",
-        "monograph14_reviewed": 14,
-        "matrix20_reviewed": 20,
-        "source_binding": {
-          "path": "/workspace/Medina-neurologie-G06/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE/source-binding.json",
-          "sha256": "fb31716f0900d12d6d01d925b4d30e4aab6a987f5d41b887145caf6248a2fe79",
-          "preview_sha256": "d97344210d6000cd5ca052f2f077d3f762d7d17dafc9ddceaf3985cef2ab425e",
-          "first_issue_only": true
-        },
-        "worktree": "/workspace/Medina-neurologie-G06",
-        "branch": "codex/alpha77/g06-integrate-g1",
+        "source_readings_count": 2,
+        "research_sources": "/tmp/Medina-neurologie-G07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G07-INTEGRATE/recherche_G07/sources-draft.json",
+        "current_revision": "Inventaire9914mots,4sciences,8SVG sans images ; deux premières lectures ciblées réelles (guide suisse2024chap7.1 et FI RifampicinLabatec2023). HARVEST2025 et référence BASHH2025 identifiés, textes primaires à lire. Aucune rédaction médicale G07.",
+        "monograph14_reviewed": 0,
+        "matrix20_reviewed": 0,
+        "source_binding": null,
+        "worktree": "/tmp/Medina-neurologie-G07",
+        "branch": "codex/alpha77/g07-integrate-g1",
         "queue_reassignment_note": "G09 réattribué par root à sol_nephrologie le2026-11-02, sorti de cette file ; G06 puis G07/G08.",
         "historical_package_G03_snapshot": {
           "code": "G03",
@@ -1599,7 +1593,7 @@
           "preview": null
         }
       },
-      "activity_age_seconds": 6,
+      "activity_age_seconds": 187,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -1637,28 +1631,28 @@
       "clinical_orchestration": false,
       "runtime_name": "/root/sol_endocrinologie",
       "historical_id": "astra_endocrinologie",
-      "lesson": "E32",
-      "worktree": "/tmp/Medina-endocrinologie-E32",
-      "stage": "termine",
-      "branch": "codex/alpha77/e32-integrate-g1",
+      "lesson": "E35",
+      "worktree": "/tmp/Medina-endocrinologie-E35",
+      "stage": "recherche",
+      "branch": "codex/alpha77/e35-integrate-g1",
       "allowed_paths": [
-        "chapters/E32",
-        "glossary/e32.py",
-        "assets/img/e32/alpha/codex",
-        "organisation/alpha-publications/Codex/E32",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E32-INTEGRATE"
+        "chapters/E35",
+        "glossary/e35.py",
+        "assets/img/e35/alpha/codex",
+        "organisation/alpha-publications/Codex/E35",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E35-INTEGRATE"
       ],
-      "started_at": "2026-11-02T13:18:06+00:00",
-      "activity_at": "2026-11-02T13:54:01+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "started_at": "2026-11-02T14:00:24+00:00",
+      "activity_at": "2026-11-02T14:00:24+00:00",
+      "message": "Mission réservée; recherche autorisée",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "b558c02ca5420c0353f70bb6cfd87e6e34de5b2ea38b6ca941547b611aeac305",
+      "completed_sections": 0,
+      "receipt_sha256": "61fc9ed1e818bc2a2b8ffdbacbb3a6136cf59aaa3c5a7ae9608728d0c1907f52",
       "brief": {
         "schema_version": 1,
         "prepared_at": "2026-11-02T01:16:45.312443+00:00",
@@ -1667,17 +1661,17 @@
         "fragment": "S05",
         "label": "E-06-Endocrinologie et métabolisme",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "phase": "E32_recherche",
+        "phase": "E35_recherche",
         "selected_lesson": {
-          "code": "E32",
-          "title": "Maladies du thymus",
-          "mission_candidate": ".medina/missions/ALPHA77-CODEX-E32-INTEGRATE.json",
+          "code": "E35",
+          "title": "Anomalies endocriniennes au cours de maladies classées ailleurs",
+          "mission_candidate": ".medina/missions/ALPHA77-CODEX-E35-INTEGRATE.json",
           "reservation_acquired": true,
           "start_passed": true,
           "harness_claimed": true,
-          "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E30-E32/start-E32.json"
+          "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E32-E35/start-E35.json"
         },
-        "authorization_scope": "E32 seule acquise, start et claim réels ; aucun partagé, PR ou main.",
+        "authorization_scope": "E35 seule acquise, start et claim réels ; aucun partagé, PR ou main.",
         "counts": {
           "canonical_s05": 26,
           "existing_codex": 13,
@@ -2924,9 +2918,9 @@
           "phase": "preparation_only_waiting_harness_veille_and_exclusive_worktree",
           "authorization_scope": "Préparation seulement dans harness/agents/endocrinologie; aucune écriture médicale, aucun commit ni index. Ordre courant spécialités parallèles/une leçon à la fois remplace lots historiques, pas réservations."
         },
-        "updated_at": "2026-11-02T13:18:24.806033+00:00",
-        "worktree": "/workspace/Medina-endocrinologie-E32",
-        "branch": "codex/alpha77/e32-integrate-g1",
+        "updated_at": "2026-11-02T14:00:24.506043+00:00",
+        "worktree": "/workspace/Medina-endocrinologie-E35",
+        "branch": "codex/alpha77/e35-integrate-g1",
         "tokens_actual": null,
         "cost_actual": null,
         "completed_lessons": [
@@ -3032,57 +3026,88 @@
             "clinical_certification": false,
             "main_or_pr": false,
             "release_registry": "4098c23ca6f8c15cc006138e1ced0ce7f6cef0fa"
+          },
+          {
+            "code": "E32",
+            "title": "Maladies du thymus",
+            "head": "3f6ec7d73289da632260dfc3bd97426c6b4fcc4e",
+            "branch": "codex/alpha77/e32-integrate-g1",
+            "pushed": true,
+            "released": true,
+            "preview": "/workspace/Medina-endocrinologie-E32/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E32-INTEGRATE/E32-apercu-autonome.html",
+            "preview_sha256": "e0473bac72fd9b05351d28a9ab869f28b298f63c4ed5747cadc09d4fddaffb0c",
+            "completion": "/workspace/Medina-endocrinologie-E32/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E32-INTEGRATE/harness-completion.json",
+            "reviews": "self_review",
+            "author": "sol_endocrinologie",
+            "clinical_certification": false,
+            "main_or_pr": false,
+            "release_registry": "764e05d972ad0f150709982f979b9eade115edbd"
           }
         ],
         "previous_lesson": {
-          "code": "E30",
-          "title": "Anomalies de la puberté, non classées ailleurs",
-          "head": "9913033ca14ed3e34796d689fe90093d6eae7405",
-          "branch": "codex/alpha77/e30-integrate-g1",
+          "code": "E32",
+          "title": "Maladies du thymus",
+          "head": "3f6ec7d73289da632260dfc3bd97426c6b4fcc4e",
+          "branch": "codex/alpha77/e32-integrate-g1",
           "pushed": true,
           "released": true,
-          "preview": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/E30-apercu-autonome.html",
-          "preview_sha256": "f8f503547ae65b97241be45dd59a727e5a478a0d87b4ae1a38b9f0530cca9193",
-          "completion": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/harness-completion.json",
+          "preview": "/workspace/Medina-endocrinologie-E32/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E32-INTEGRATE/E32-apercu-autonome.html",
+          "preview_sha256": "e0473bac72fd9b05351d28a9ab869f28b298f63c4ed5747cadc09d4fddaffb0c",
+          "completion": "/workspace/Medina-endocrinologie-E32/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E32-INTEGRATE/harness-completion.json",
           "reviews": "self_review",
           "author": "sol_endocrinologie",
           "clinical_certification": false,
           "main_or_pr": false,
-          "release_registry": "4098c23ca6f8c15cc006138e1ced0ce7f6cef0fa"
+          "release_registry": "764e05d972ad0f150709982f979b9eade115edbd"
         },
         "previous_evidence": {
-          "transition": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E25-E30",
-          "status": "Complete enregistré 13:03:27 UTC ; sept règles strictes passées, 21 sources, 14/20, six sciences/9 sémiologie, 2985 mots sciences. Contrôles natifs et navigateur passés, cellules Livre24 corrigées et mesurées. Push et libération restent à vérifier.",
-          "source_cache": "/tmp/medina-source-cache/endocrinologie/E30",
-          "registry_sha": "c91a5212f978e6b4c0a13f37e64dc6c20f558ec4",
-          "folder": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE",
-          "sources": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/source-ledger.json",
-          "research": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/recherche_E30",
-          "research_gate": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/research-gate.log",
-          "completion": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/harness-completion.json",
-          "manifest": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/lesson-manifest.json",
-          "source_binding": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/source-binding.json",
-          "report": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/RAPPORT-E30.md",
-          "preview": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/E30-apercu-autonome.html",
-          "preview_sha256": "f8f503547ae65b97241be45dd59a727e5a478a0d87b4ae1a38b9f0530cca9193"
-        },
-        "current_evidence": {
           "acquire": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E30-E32/acquire-E32.json",
           "start": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E30-E32/start-E32.json",
           "inventory_before_acquire": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E30-E32/E32-inventory-before-acquire.json",
           "registry_acquire": "a0c5256a7862475edb5bc51014f733b0876c02ab",
           "storage": "Worktree complet /tmp/Medina-endocrinologie-E32 sur montage séparé, lien /workspace/Medina-endocrinologie-E32 ; création overlay échouée manque de place, aucune archive supprimée.",
+          "sources_read": 22,
+          "folder": "/workspace/Medina-endocrinologie-E32/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E32-INTEGRATE",
+          "completion": "/workspace/Medina-endocrinologie-E32/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E32-INTEGRATE/harness-completion.json",
+          "manifest": "/workspace/Medina-endocrinologie-E32/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E32-INTEGRATE/lesson-manifest.json",
+          "source_binding": "/workspace/Medina-endocrinologie-E32/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E32-INTEGRATE/source-binding.json",
+          "preview": "/workspace/Medina-endocrinologie-E32/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E32-INTEGRATE/E32-apercu-autonome.html",
+          "preview_sha256": "e0473bac72fd9b05351d28a9ab869f28b298f63c4ed5747cadc09d4fddaffb0c",
+          "head": "3f6ec7d73289da632260dfc3bd97426c6b4fcc4e",
+          "complete_at": "2026-11-02T13:54:01+00:00",
+          "science_words": 3055,
+          "science_figures": 6,
+          "lesson_figures": 7,
+          "strict_semiology_checks": 7,
+          "pushed": false,
+          "released": false
+        },
+        "current_evidence": {
+          "acquire": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E32-E35/acquire-E35.json",
+          "start": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E32-E35/start-E35.json",
+          "inventory_before_acquire": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E32-E35/E35-inventory-before-acquire.json",
+          "registry_acquire": "e5c182d406281cacdec9e804264e72df8d9f78dc",
+          "storage": "Worktree complet /tmp/Medina-endocrinologie-E35, lien /workspace/Medina-endocrinologie-E35 ; archives conservées.",
           "sources_read": 0
         },
         "previous_limits": [
-          "Les références suisses 1983 sont des cohortes historiques normales, pas norme ou incidence suisse 2026.",
-          "La version danoise 2025 approuvée remplace le projet 2024 non approuvé ; anciennes phrases rassurantes CHUV confrontées aux FI.",
-          "IRM chez garçons : recommandations européennes 2025 et revue 2026 diffèrent ; cohortes sélectionnées et recommandation américaine secondaire ne deviennent pas exclusion universelle de lésion.",
-          "FI Progynova adulte sans indication pédiatrique ; schéma européen et produit exact distingués, pas découpe improvisée.",
-          "Micrographie humaine Jpogi publique, résolution cellulaire limitée et coloration non précisée ; uniquement structures vérifiables annotées."
+          "Libellés locaux suisses2024 et notes allemandes confrontées ; ni certification de codage individuel, ni remboursement ou disponibilité2026. Aucune recommandation suisse dédiée E32 retrouvée dans recherche ciblée, sans preuve d’absence générale.",
+          "Aucune incidence suisse contemporaine E32 établie. Les chiffres européens et histologiques gardent sélection et dénominateurs ; les8lésions néoplasiques/potentiellement malignes parmi26opérés incluent3tératomes matures, pas8cancers ni risque30,8%de tous kystes.",
+          "Déplacement chimique et indice8,92% : données adultes sélectionnées, absence de graisse chez jeune limitante, pas garantie100%ni seuil pédiatrique universel. Résumés seuls déclarés pour les études techniques.",
+          "Après Hodgkin,98cas classés parmi133grossissements ; une des34rechutes était isolée. Rebond plausible n’exclut pas absolument rechute et ne mesure pas une récupération immunitaire complète.",
+          "Kystes : NVALT2024 sans suivi spécifique si simple certain, études britannique et française avec sélections différentes ; proposition française de PET initial non standard universel. DETECTION est une enquête hétérogène, pas consensus de recommandations.",
+          "Les14%d’associations lymphomateuses parmi36cas de forme lymphoépithéliale ne sont pas un risque prospectif de transformation. Suivi proposé par revue sans standard validé ; diagnostic histologique spécialisé nécessaire.",
+          "FI Néo-Mercazole révisée août2020 explicitée ; consultation2026 ne la transforme pas en révision2026. Un seul produit exact relu pour cause endocrine, pas effet thymique direct ni substitution milligramme pour milligramme au méthimazole.",
+          "Abcès : observations anciennes isolées, certaines lues seulement au résumé ; pas schéma antibiotique, maximum pédiatrique ou durée standard inventés. Traitement hospitalier individualisé et contrôle de source selon gravité.",
+          "Deux planches histologiques humaines originales seulement : cas pathologiques et architecture adaptée à l’âge, pas témoins sains ni atlas médiastinal grossier. Grossissements originaux non calibrations d’écran ; marquages et zones illustratifs, pas diagnostic individuel.",
+          "Biologie thymique2026 majoritairement murine ; sélection non absolue et marqueurs/reconstruction de taille non équivalents à protection humaine. Stratégies régénératives non présentées comme traitements disponibles de routine.",
+          "Bannière et étoile PROFILES héritées de la coque avec SSP156/184 non révisées ni validées comme correspondance officielle E32 ; le texte clinique cite les situations thoraciques réellement lues et déclare sa correspondance pédagogique. Fichiers partagés hors mandat.",
+          "Ratios Essentiel et compteurs natifs sont des métriques de texte/projet, pas certification clinique. Build S05 conserve trois abréviations E05 non couvertes hors périmètre, aucune modification étrangère.",
+          "Navigateur sur origine HTTPS interceptée avec octets autonomes exacts ; toutes autres requêtes abortées. Aucun serveur réel, déploiement ou main testé. Tableaux24px mobiles défilent horizontalement localement, pas toutes colonnes simultanément.",
+          "Quatre self_review attribuées au même auteur, sans indépendance ni validation médicale humaine ; score clinique et coûts/tokens réels non mesurés, laissés nuls."
         ],
         "current_limits": [
-          "Recherche et rédaction E32 en cours ; aucun résultat médical ou validation E32 annoncé."
+          "Recherche E35 en cours, aucune rédaction canonique ni validation encore annoncée."
         ],
         "runtime_agent": "sol_endocrinologie",
         "runtime_model": "gpt-6.1-sol",
@@ -3097,9 +3122,9 @@
           }
         ]
       },
-      "activity_age_seconds": 75,
+      "activity_age_seconds": 292,
       "activity_fresh": true,
-      "sections_per_hour": 22.6,
+      "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -4300,9 +4325,9 @@
         "production_name": "Sol-Neurologie-G09",
         "active_specialty": "neurologie"
       },
-      "activity_age_seconds": 413,
+      "activity_age_seconds": 1013,
       "activity_fresh": true,
-      "sections_per_hour": 21.43,
+      "sections_per_hour": 17.07,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -4836,39 +4861,13 @@
           "source_entries": 38
         }
       },
-      "activity_age_seconds": 374,
+      "activity_age_seconds": 974,
       "activity_fresh": true,
-      "sections_per_hour": 7.65,
+      "sections_per_hour": 6.47,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T04:07:38+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T04:08:46+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "verification",
-      "message": "G05 : premier aperçu autonome et figures capturées ; contenu14/20 relu, tests de fenêtres et quiz adaptés au DOM natif, ultime reconstruction après correction des abréviations UL97/UL54. Aucun passage au cours suivant."
-    },
-    {
-      "at": "2026-11-02T04:08:50+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "verification",
-      "message": "N00 : relecture des six surfaces et quatre FI terminée ; gabarit complet réparé, contrôles natifs et visuels finaux en cours, matrices14/20 préparées."
-    },
-    {
-      "at": "2026-11-02T04:10:33+00:00",
-      "action": "complete",
-      "agent": "astra_nephrologie",
-      "code": "N00"
-    },
     {
       "at": "2026-11-02T04:13:36+00:00",
       "action": "progress",
@@ -6132,6 +6131,32 @@
       "action": "claim",
       "agent": "astra_neurologie",
       "code": "G07"
+    },
+    {
+      "at": "2026-11-02T13:55:15+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T13:55:57+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "preparation",
+      "message": "G07 : bail confirmé, worktree complet/tmp avec lien/workspace, start puis claim effectifs ; incident de transition et échec disque/start préservés, sept sources initiales empreintées, aucune rédaction médicale."
+    },
+    {
+      "at": "2026-11-02T14:00:24+00:00",
+      "action": "claim",
+      "agent": "astra_endocrinologie",
+      "code": "E35"
+    },
+    {
+      "at": "2026-11-02T14:02:09+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "G07 : inventaire9914mots,4sciences,8SVG ; deux lectures ciblées réelles journalisées (guide suisse2024chap7.1 et FI RifampicinLabatec2023), misesàjourHARVEST/BASHH identifiées mais textes primaires à lire. Aucune rédaction G07."
     }
   ],
   "cache": {
@@ -6231,6 +6256,44 @@
       "failure": "No space left on device pendant création du worktree E32",
       "recovery": "Worktree sur /tmp/Medina-endocrinologie-E32, lien /workspace/Medina-endocrinologie-E32 ; acquisition a0c5256a7862475edb5bc51014f733b0876c02ab, start et claim réussis. Aucune suppression des archives.",
       "start_guard_incident": "Une tentative avant fin du push acquisition refusée ; reçu conservé = tentative réellement réussie."
+    },
+    "disk_incident_g07": {
+      "recorded_at": "2026-11-02T13:54:17.970438+00:00",
+      "course": "G07",
+      "phase": "transition_before_any_new_medical_writing",
+      "events": [
+        {
+          "event": "acquisition",
+          "result": "success",
+          "registry_sha": "2a9a3889be850334b1d453ea11eebeee31a9d1da"
+        },
+        {
+          "event": "procedure_order_incident",
+          "detail": "Local full worktree creation launched before final acquire command return had been awaited. Acquisition was not presented as verified at that instant; no medical content was written."
+        },
+        {
+          "event": "full_worktree_checkout_failed",
+          "detail": "84% checkout: No space left on device. Git automatically cleaned incomplete worktree, branch remained."
+        },
+        {
+          "event": "start_failed",
+          "detail": "Attempt after failed checkout returned FileNotFoundError: /workspace/Medina-neurologie-G07/tools/ai_session_guard.py. No start or claim success asserted."
+        },
+        {
+          "event": "local_sparse_recovery",
+          "detail": "Own clean256MB sparse checkout prepared; no source changes, no start/claim yet. Parent identified separate /tmp filesystem, preferred full checkout there. No other author or released worktree deleted."
+        }
+      ],
+      "acquisition_after_failure_fresh_registry": "registry-G07-before-start.json",
+      "source_changes_before_recovery": 0,
+      "clinical_certification": false,
+      "later_confirmed_recovery": {
+        "start_claim_at": "2026-11-02T13:55:09+00:00",
+        "actual_inventory_at": "2026-11-02T13:55:57+00:00",
+        "full_worktree": "/tmp/Medina-neurologie-G07",
+        "alias": "/workspace/Medina-neurologie-G07",
+        "no_retroactive_procedure_compliance": true
+      }
     }
   },
   "prompt": {
@@ -13047,7 +13110,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T13:55:13+00:00",
+    "observed_at": "2026-11-02T14:05:13+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -14160,14 +14223,29 @@
         "clinical_certification": false
       },
       {
+        "code": "E35",
+        "agent": "astra_endocrinologie",
+        "branch": "codex/alpha77/e35-integrate-g1",
+        "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+        "local_preview": "/tmp/Medina-endocrinologie-E35/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E35-INTEGRATE/E35-apercu-autonome.html",
+        "exists": false,
+        "sha256": null,
+        "bytes": null,
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/e35-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E35-INTEGRATE/E35-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/e35-integrate-g1",
+        "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
+        "publication_main": false,
+        "clinical_certification": false
+      },
+      {
         "code": "G09",
         "agent": "astra_nephrologie",
         "branch": "codex/alpha77/g09-integrate-g1",
         "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "local_preview": "/workspace/Medina-neurologie-G09/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G09-INTEGRATE/G09-apercu-autonome.html",
-        "exists": false,
-        "sha256": null,
-        "bytes": null,
+        "exists": true,
+        "sha256": "58347b8a58adf0012f0e058f6e17d81b062eb845a3e961c9ea54136d79c86562",
+        "bytes": 24262938,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/g09-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G09-INTEGRATE/G09-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/g09-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
