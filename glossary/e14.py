@@ -52,3 +52,6 @@ a('HbE', [('Hb','Hémoglobine'),('E','E (variante)')], 'Hémoglobine E', '<p>Var
 a('HbF', [('Hb','Hémoglobine'),('F','Fœtale')], 'Hémoglobine fœtale', '<p>Hémoglobine fœtale persistante : elle rend l’HbA1c inadaptée au diagnostic du diabète.</p>', 'e14-hba1c')
 a('QCARE', [('QCARE','nom propre d’un programme suisse de qualité des soins, non développable lettre à lettre')], 'QCARE', '<p>Programme avec lequel la SSED a publié en 2023 le guide pratique de prise en charge du pied diabétique en trois niveaux.</p>', 'e14-pied')
 a('anti-GAD65', [('anti-','dirigés contre la'),('GAD','Glutamic Acid Decarboxylase (décarboxylase de l’acide glutamique)'),('65','isoforme de 65 kilodaltons')], 'Anticorps dirigés contre la décarboxylase de l’acide glutamique, isoforme 65', '<p>Autoanticorps de première ligne du diabète auto-immun ; ils sont présents chez certains patients étiquetés « type 2 ».</p>', 'e14-peptidec')
+
+# Dénomination exacte locale du produit lu ; aucune clé commune remplacée.
+a("Ringer-Acetat", [("Ringer", "nom propre"),("Acetat", "acétate, dénomination allemande")], "Dénomination Ringer-Acetat", "<p>Élément de la dénomination exacte du cristalloïde Fresenius. La formulation et ses limites sont précisées dans la fenêtre locale ; le nom ne prouve pas une interchangeabilité avec une autre solution.</p>", "e14-fluides")
