@@ -5,13 +5,13 @@
   "main_medina_modified": false,
   "native_agents_persistent": false,
   "branch": "codex/harness-observations-20261102",
-  "last_verified_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41486679738",
+  "last_verified_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41489409471",
   "last_verified_conclusion": "success",
   "report_automation": "enabled;2026-11-02T08:00:00+01:00; updated with independent artifacts and lesson previews",
   "independent_watchdog": "active; workflow_dispatch handoff verified",
   "watchdog_bootstrap_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41374424262",
-  "watchdog_successor_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41486955067",
-  "watchdog_verified_at": "2026-11-02T16:50:04+00:00",
+  "watchdog_successor_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41488706941",
+  "watchdog_verified_at": "2026-11-02T17:11:03+00:00",
   "resource_budget": "No LLM calls per observation; standard Actions runner waits between600s checks; billable amount not exposed",
   "watchdog_regular_successor": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41375298891",
   "watchdog_chain_confirmed": "Dispatch15:56:52UTC a signalé deux activités anciennes ; relais demandé à16:06:52UTC HTTP204. Successeur41478268061 vu en cours à16:14UTC. Aucun succès anticipé.",
@@ -28,8 +28,8 @@
     "author_activity_refreshed": false,
     "external_watchdog_can_restart_native_agents": false
   },
-  "last_verified_observation": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41486679738",
-  "last_verified_observation_result": "Observation16:59:12.227743UTC saine, snapshot16:55:16, aucune activité ancienne. Push16:55:42 : tests empreinte87d7a45f réussis. Dispatch16:40:03 ancien parent dans snapshot16:35:16, handoff16:50:04 HTTP204. Aucune relance native.",
+  "last_verified_observation": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41489409471",
+  "last_verified_observation_result": "Push17:15:46UTC : snapshot17:15:16 frais, tests87d7a45f réussis ; endocrinologie ancienne sur E04 terminé, recherches C73 externes documentées séparément17:25:42 sans renouveler activitéE04. Dispatch17:01:03.541354UTC : neurologie ancienne dans snapshot16:55:16 ; handoff17:11:03 HTTP204.",
   "incident_stale_activity": {
     "run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41376224282",
     "observed_at": "2026-11-02T02:10:19Z",
@@ -268,5 +268,42 @@
     },
     "author_receipt_sha256": "18c6ef1ba0fc0ba1e78018ba7d7e75c3034f38ed8108cff0861b516171e292c2",
     "proof_url": "https://github.com/vialdjoukang-spec/Medina/blob/d810771bd3da1925b5a2763f333a7787590df878/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G21-INTEGRATE/E40-CIM-url-reserve.json"
+  },
+  "external_preparation_c73": {
+    "author_receipt": "harness/agents/endocrinologie/transitions/E04-C73/external-preparation-receipt.json",
+    "sha256": "88aa677b54328402dcecdbfc271bd046090120cce03c7dbfb122b0a316e66260",
+    "prepared_at": "2026-11-02T17:25:42.099866+00:00",
+    "read_record_count": 20,
+    "meaning": "20 entrées déclarées : lectures ciblées, réemplois et métadonnées, pas20 guides ni lectures médicales du parent.",
+    "milestone": "Sources européennes actuelles, TNM9 fourni par parent vérifié, trois nouvelles FI ciblées et deux réutilisables, cadre suisse et original humain licencié préparés ; aucune production C73 démarrée.",
+    "canonical_writing_started": false,
+    "harness_claimed": false,
+    "closed_e04_activity_refreshed": false,
+    "tokens_actual": null,
+    "cost_actual": null
+  },
+  "g24_sparse_inheritance_incident": {
+    "reported_by": "/root/sol_nephrologie",
+    "resolved_at": "2026-11-02T17:09:23+00:00",
+    "description": "Nouveau worktree G24 a hérité du sparse de G21 ; premier start puis checkout complet local et second start distinct, avant claim.",
+    "scope": "core.sparseCheckout false dans G24 seulement, G21 archivé inchangé ; checkout949108108octets propre selon reçu auteur.",
+    "binding_changed": false,
+    "source": "harness/agents/nephrologie/transitions/G21-G24"
+  },
+  "g24_research_message_correction": {
+    "author": "/root/sol_nephrologie",
+    "initial_claim_at": "2026-11-02T17:26:29+00:00",
+    "initial_actual_result": "Betta échouait : sous-codes absents dans recherche.md, présents dans ledger.",
+    "corrected_pass_at": "2026-11-02T17:26:58+00:00",
+    "canonical_writing_before_pass": false,
+    "proof": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G24-INTEGRATE/research-gate-message-correction.json",
+    "meaning": "Message prématuré conservé et corrigé, pas de conformité antidatée."
+  },
+  "g32_start_incident": {
+    "author": "/root/sol_neurologie",
+    "initial_result": "Mission worktree must start clean : reçus non suivis créés avant start, aucun contenu médical.",
+    "correction": "Preuves conservées hors worktree puis état propre ; status/start/gate/claim réellement passés17:30:23UTC.",
+    "canonical_sources_changed_before_start": false,
+    "source_binding_refreshed": false
   }
 }

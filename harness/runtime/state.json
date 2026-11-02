@@ -3,28 +3,28 @@
   "created_at": "2026-11-02T01:21:00+00:00",
   "agents": {
     "astra_neurologie": {
-      "lesson": "G22",
-      "worktree": "/workspace/Medina-neurologie-G22",
-      "stage": "revue_requise",
-      "branch": "codex/alpha77/g22-integrate-g1",
+      "lesson": "G32",
+      "worktree": "/workspace/Medina-neurologie-G32",
+      "stage": "preparation",
+      "branch": "codex/alpha77/g32-integrate-g1",
       "allowed_paths": [
-        "chapters/G22",
-        "glossary/g22.py",
-        "assets/img/g22/alpha/codex",
-        "organisation/alpha-publications/Codex/G22",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE"
+        "chapters/G32",
+        "glossary/g32.py",
+        "assets/img/g32/alpha/codex",
+        "organisation/alpha-publications/Codex/G32",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G32-INTEGRATE"
       ],
-      "started_at": "2026-11-02T16:38:17+00:00",
-      "activity_at": "2026-11-02T17:24:56+00:00",
-      "message": "G22 : version finale testée,40fenêtres aux deux largeurs,Livre24,quatre quiz,images/annotations/liens et clavier ;11captures inspectées. Quatre self_review +SEMIO,14/20 ; première liaison65a491ed émise17:24:42 après relecture réelle.",
+      "started_at": "2026-11-02T17:30:23+00:00",
+      "activity_at": "2026-11-02T17:31:22+00:00",
+      "message": "G32 : acquisition terminée/vérifiée avant checkout complet ; premier start refusé pour reçus non suivis, preuves conservées ; reprise réelle start/gate/claim17:30:23. Vérité premier document médical lu, inventaire7sources initiales inchangées, aucune rédaction ni lecture primaire revendiquée.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "dd6782dbcd83c6cfcf2eeefda81a6c835d882bffef1c803768651a4f1968245c"
+      "completed_sections": 0,
+      "receipt_sha256": "64329a41fbecdc640d4ab22fe057dfa798e10aefd56781f452b5688117ac57b8"
     },
     "astra_endocrinologie": {
       "lesson": "E04",
@@ -54,7 +54,7 @@
     "astra_nephrologie": {
       "lesson": "G24",
       "worktree": "/tmp/Medina-neurologie-G24",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/g24-integrate-g1",
       "allowed_paths": [
         "chapters/G24",
@@ -64,15 +64,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G24-INTEGRATE"
       ],
       "started_at": "2026-11-02T17:09:23+00:00",
-      "activity_at": "2026-11-02T17:14:40+00:00",
-      "message": "Lectures CH-HUG/USZ et consensus international2025, ERN-RND diagnostic2026 adulte/enfant réellement lu et deux pages de schéma vues ; trois FI BOTOXmai2025/Xeominmars2026/Dysportmai2026 lues ciblées. AWMFsept2026 est inscription de révision, pas nouvelle guideline publiée ; doses/intervalle non interchangeables.",
+      "activity_at": "2026-11-02T17:32:48+00:00",
+      "message": "Monographie G24 quatorze points réellement écrite après Betta ;41lectures avec FI causale Paspertinjanvier2020 ajoutée et validée. Codage, classification2025, risques aigu/tardif, cinq FI thérapeutiques et limites pédiatriques explicites ; examens et sciences en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "180e1ba6f509f5610796b2c2a2c0c90c0264a79155ce7f0b4d9a0e7d55a8cf82"
     },
     "codex_hematologie": {
@@ -102,52 +102,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T10:30:10+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 1
-    },
-    {
-      "at": "2026-11-02T10:31:01+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "verification",
-      "message": "Six surfaces N02 produites, pharmacologie cinq FI, 34 fenêtres/14Pareto/4quiz, sous-codes morphologiques. Audit sciences réel passé : six disciplines, neuf sections sémiologiques. Construction et navigateur à finaliser."
-    },
-    {
-      "at": "2026-11-02T10:32:48+00:00",
-      "action": "progress",
-      "agent": "codex_hematologie",
-      "stage": "verification",
-      "message": "Reprise réelle C95 après remise du rapport : classes et sigles corrigés, figure originale ajoutée à la sémiologie ; contrôle statique et six sciences passés. Construction native et relecture finale à faire."
-    },
-    {
-      "at": "2026-11-02T10:34:38+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "redaction",
-      "message": "E14 : porte de vérité réussie sur 22 sources ; 14 sections cliniques écrites, erreurs de peptide C et critères hyperosmolaires corrigées ; sciences et fenêtres en cours."
-    },
-    {
-      "at": "2026-11-02T10:36:02+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "redaction",
-      "message": "C70 réécrit sur six surfaces après porte Vérité ;25lectures ciblées,38fenêtres,4quiz,6sciences/9sections. Statique réussi ; sciences audit passé. Auto-relecture finale, build natif et navigateur restent à réaliser."
-    },
-    {
-      "at": "2026-11-02T10:36:46+00:00",
-      "action": "complete",
-      "agent": "astra_nephrologie",
-      "code": "N02"
-    },
-    {
-      "at": "2026-11-02T10:40:10+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
     {
       "at": "2026-11-02T10:41:24+00:00",
       "action": "progress",
@@ -1409,6 +1363,52 @@
       "action": "watch",
       "ok": true,
       "findings": 1
+    },
+    {
+      "at": "2026-11-02T17:26:29+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "redaction",
+      "message": "Matrice préalable20rubriques et Betta passés après40lectures ciblées/réutilisations attribuées ; cinq FI exactes, cinq originaux humains réellement vus avec droits ; algorithmes2026/consensus2025 et limites actuelles documentés. Début rédaction G24 seulement maintenant."
+    },
+    {
+      "at": "2026-11-02T17:26:55+00:00",
+      "action": "complete",
+      "agent": "astra_neurologie",
+      "code": "G22"
+    },
+    {
+      "at": "2026-11-02T17:26:58+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "redaction",
+      "message": "Rectification factuelle : message17:26:29 indiquait Betta passé prématurément ; premier test avait refusé car sous-codes absents du recherche.md malgré ledger correct. Échec conservé, sous-codes ajoutés, Betta maintenant réellement passé ; aucune source médicale canonique modifiée avant ce vrai passage."
+    },
+    {
+      "at": "2026-11-02T17:30:23+00:00",
+      "action": "claim",
+      "agent": "astra_neurologie",
+      "code": "G32"
+    },
+    {
+      "at": "2026-11-02T17:31:22+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "preparation",
+      "message": "G32 : acquisition terminée/vérifiée avant checkout complet ; premier start refusé pour reçus non suivis, preuves conservées ; reprise réelle start/gate/claim17:30:23. Vérité premier document médical lu, inventaire7sources initiales inchangées, aucune rédaction ni lecture primaire revendiquée."
+    },
+    {
+      "at": "2026-11-02T17:32:48+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "redaction",
+      "message": "Monographie G24 quatorze points réellement écrite après Betta ;41lectures avec FI causale Paspertinjanvier2020 ajoutée et validée. Codage, classification2025, risques aigu/tardif, cinq FI thérapeutiques et limites pédiatriques explicites ; examens et sciences en cours."
+    },
+    {
+      "at": "2026-11-02T17:35:16+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
     }
   ],
   "cache": {
@@ -2540,6 +2540,50 @@
           "chapters/G21/G21_b.html": "29f60e83fccc5c75ac9ef0aeff986290ff0f98eee5b171b87d731ad949057bc7",
           "chapters/G21/G21_c.html": "2ef3ea8c91e5eaf13239808e21b0e2eda43acc34bc90ee52db89d1d40d9ec167",
           "chapters/G21/G21_d.html": "30a1d7b1db88f4224c340b18022dd036f963050ceba9080bfd8cf716cd19f691"
+        },
+        "clinical_certification": false,
+        "author_activity_refreshed": false,
+        "source_bindings_refreshed": false,
+        "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+      }
+    },
+    {
+      "agent": "astra_neurologie",
+      "code": "G22",
+      "at": "2026-11-02T17:26:55+00:00",
+      "branch": "codex/alpha77/g22-integrate-g1",
+      "worktree": "/workspace/Medina-neurologie-G22",
+      "folder": "/workspace/Medina-neurologie-G22/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE",
+      "manifest_sha256": "9fbcda0a17a0a446169b4316d749e22cd3cdf7cbde1070bdbfffe687d1afb44f",
+      "source_binding_sha256": "65a491edd0cee282ba41fd9af78888c39d5a8f2d64881bef90c49b617340dbf1",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "dc193b4e4f5f0da10c5a2c2e7ef04cfd17412304901f0293d717ed7454ce54af",
+      "semiology_contract": {
+        "code": "G22",
+        "observed_at": "2026-11-02T17:26:55+00:00",
+        "passed": true,
+        "checks": {
+          "six_science_tabs": true,
+          "first_selected_semio": true,
+          "semio_panel_label_and_visible": true,
+          "first_unit_exact_h3": true,
+          "nine_named_sections": true,
+          "linked_sources_in_semio": true,
+          "clinical_semio_marker": true
+        },
+        "findings": [],
+        "source_hashes": {
+          "chapters/G22/G22_a.html": "65e3aab592fee3d3f152b06b067c3efbf0c206abcb10217f9a5c512a1a4fae9e",
+          "chapters/G22/G22_b.html": "7cb1c9a1295d8479e57b17e0da4264f09242aa8581a7217d03bd2f3253587bef",
+          "chapters/G22/G22_c.html": "05185cf8fce0c0b71d7f27a520372b2c233b9543ec02986b9d5bb6ae4d9e69bc",
+          "chapters/G22/G22_d.html": "2e68ed58e5c9083afaa514f0b133d2ae54667f7821944e17dd5510cae8b889dc"
         },
         "clinical_certification": false,
         "author_activity_refreshed": false,

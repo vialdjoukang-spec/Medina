@@ -241,3 +241,13 @@ Acquisition d97544322d85350def5c560d194d75f611c0fca5 attendue et vérifiée avan
 ## 2026-11-02T17:03:11.760980+00:00 — G22 : lectures cliniques ciblées consignées
 
 Neuf entrées de sources effectivement lues par périmètres, y compris ClaML OFS G22/A52.1, DGN/SNG neurosyphilis2026, EASL2025, deux FI suisses et deux observations. Recherche non close, aucun nouveau contenu canonique ni source-binding ; Betta reste à construire. Réserves : G22 non synonyme de tous les secondaires ; REC>15% EASL2025 ; équivalence pénicilline DGN incohérente non recopiée ; FI Grünenthal réellement mai2023. Aucun audit humain revendiqué.
+
+
+## 2026-11-02T17:28:37.505910+00:00 — G22 réellement clos et libéré
+
+Final63277dbb poussé, distant exact et worktree propre ; complete17:26:55UTC, release vérifiée 0f3d8074cd871de3d23f62c25c9fcfb7bb85c97b. Liaison65a491ed unique intacte ;16sources,14/20,46sections/40fenêtres,4quiz,6sciences9sémiologie,2originaux humains et6concepts,11captures inspectées. Quatre self_review+SEMIO, aucune certification humaine. Réserves RECtable>15/figure≥15, équivalence pénicilline incohérente,FImai2023,incidenceG22 et administratif conservées. G32 prochain candidat sous registre frais.
+
+
+## 2026-11-02T17:31:22.041965+00:00 — G32 acquis, démarrage repris effectivement
+
+Acquisition5012385b attendue et vérifiée active avant worktree complet. Premierstart refusé car reçus non suivis avaient été créés ; preuves intégralement conservées hors worktree puis recopiées dans first-start-refusal, aucune source canonique modifiée. Étatpropre et registre frais vérifiés, nouveau start/gate/claim réellement passés17:30:23UTC. PROMPT_VERITE lu comme premier document médical, septempreintes initiales prises ; autres instructions inchangées parhash face aux lecturesG22 réelles. Recherche primaire non commencée, aucune conformité de l’ordre initial revendiquée.
