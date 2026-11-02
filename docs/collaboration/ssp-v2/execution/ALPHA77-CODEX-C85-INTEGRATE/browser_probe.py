@@ -54,6 +54,11 @@ with sync_playwright() as p:
         for panel in ['pE','pP','pA','pS']:
             page.locator(f'.mc-tabs button[data-p="{panel}"]').click();page.wait_for_timeout(80)
         page.locator('.mc-tabs button[data-p="pA"]').click()
+        page.locator('[data-k="c85-ssp-g2"]').click();page.wait_for_timeout(100)
+        scoped=page.locator('.mc-dlg-b').inner_text().replace('\u00ad','')
+        item['profiles_g2_scoped']='Masse et adénopathie' in scoped and '60 à 89' not in scoped
+        assert item['profiles_g2_scoped'],'PROFILES G2 opened unexpected content: '+scoped[:400]
+        page.keyboard.press('Escape')
         popup=page.locator('.mc-w').filter(visible=True).first
         popup.click();page.wait_for_timeout(150)
         item['popup_visible']=page.locator('.mc-dlg-b').is_visible()

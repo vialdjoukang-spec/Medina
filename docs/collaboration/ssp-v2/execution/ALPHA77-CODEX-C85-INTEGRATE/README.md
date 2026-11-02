@@ -1,15 +1,19 @@
-# C85 — Lymphomes non hodgkiniens de types autres et non précisés
+# C85 — version révisée du 2 novembre 2026
 
-[Ouvrir la leçon autonome et ses images annotées](C85-apercu-autonome.html).
+Ouvrir `C85-apercu-autonome.html` : leçon native avec deux images originales CC BY 4.0, quatre occurrences et légendes françaises reliées aux repères du scanner et aux panneaux histologiques. Aucun pixel original modifié.
 
-Cette reprise conserve le cours existant et enrichit les sciences de 999 à 4 338 mots, avec six disciplines, neuf sections de sémiologie et six figures dans les sciences. Le compteur global du dépôt indique 20 667 mots, 49 fenêtres et cinq quiz ; ces volumes ne mesurent pas la qualité médicale.
+Le plan monographique à 14 points et les 20 rubriques ont une auto-revue attribuée, avec quarante lectures ciblées documentées. Six disciplines scientifiques, neuf sections de sémiologie, 56 fenêtres et cinq quiz. Les limites L1–L6 restent explicites ; aucune validation médicale humaine n’est revendiquée.
 
-Deux originaux humains CC BY 4.0 sont intégrés : scanner médiastinal et histologie. Leurs pixels sont inchangés ; les annotations françaises renvoient aux flèches et panneaux d’origine. La figure OpenStax actuelle sous licence NC-SA a été écartée. Les quatre autres figures sont des schémas causaux non anatomiques conservés et relus dans leur contexte.
+`verification.json` et `source-binding.json` rattachent les six étapes réelles (statique, sciences, Betta, construction, assemblage autonome, navigateur) aux octets des sources et de l’aperçu. Les captures finales ont été inspectées. Le test G2 distingue le repère pédagogique de la catégorie rénale du glossaire ; les césures visuelles sont normalisées dans l’assertion, sans retirer ce contrôle.
 
-Les corrections médicales sont détaillées dans [l’auto-relecture](review-package/self-review.json) : codage C85.7, diagnostic intégré, EHA 2025, indications suisses de Keytruda et Polivy, portée des 48 heures de prophylaxie dans MabThera, taux de signalement Yescarta et populations des résultats de survie. Le [registre de recherche](recherche_C85/sources.json) distingue 18 sources actuellement lues des 23 références héritées, conservées avec leur provenance. Les résumés sont identifiés comme tels ; aucune nouvelle posologie n’en est tirée.
+`reserves.json` garde les sept réserves de la première version et leur résolution documentée. `limitations.json` conserve notamment l’unité hépatique Endoxan inutilisable, la borne doxorubicine, l’absence d’incidence suisse isolée et la portée du codage 2024. Aucun nombre douteux n’est transformé en règle posologique.
 
-Les [14 points monographiques](monograph-14.json) sont cartographiés et les [20 rubriques](recherche_C85/recherche.md) montrent les limites. **Sept réserves restent ouvertes** : classification, décisions de compression/anesthésie, composants cytotoxiques, situations particulières, administration suisse, chiffres hérités restants et objectifs fédéraux. Voir [les actions précises](reserves.json). Le cours est présentable pour revue, sans déclaration d’achèvement.
+## Reproduction
 
-Le [script de vérification](verify_c85.py) a réellement exécuté six étapes : statique natif, sciences, vérité, construction, incorporation des images et navigateur. Il n’appelle aucun modèle, ne modifie aucune source médicale et ne pousse rien. Sur 1440 et 390 px, les quatre occurrences originales se décodent après défilement ; les six sciences, neuf sections, fenêtres et Livre à 24 px fonctionnent sans erreur JS ni débordement. Les [captures](captures) viennent de cette exécution. Le [reçu final](verification.json) et la [liaison aux sources](source-binding.json) donnent les empreintes exactes. Il s’agit d’une origine HTTP interceptée, sans revendication de déploiement public.
+Exécuter `verify_c85.py` depuis ce worktree avec les dépendances de construction Medina, Playwright et Chromium. Dans cet environnement, les dépendances isolées disponibles sont `/tmp/medina-n29-pydeps` (via PYTHONPATH). Le script utilise le moteur natif et le constructeur autonome du harness. Il ne modifie pas les sources médicales, ne pousse pas de branche et ne ferme pas de mission.
 
-Les auto-relectures sont explicitement attribuées à l’auteur. Aucun score 20/20, audit indépendant complet, certification médicale humaine, PR ou modification de main n’est revendiqué. Les scripts de migration enrich_c85.py, complete_sciences.py, clinical_corrections.py et classification_and_context.py documentent les transformations de cette reprise ; ne pas les rejouer sur des sources ultérieurement modifiées. Pour contrôler le paquet courant, employer verify_c85.py.
+Les scripts de migration et d’enregistrement décrivent les décisions de cette reprise. Ne pas rejouer une ancienne migration ou `record_evidence.py` sur une version plus récente : ils ne remplacent pas les sources canoniques ni une nouvelle relecture. `package_revision2.py` vérifie les empreintes avant d’assembler cette revue précise ; il ne génère pas un avis médical.
+
+## Revue et publication
+
+La branche demeure une version de travail pour présentation à Vial. Aucune PR, fusion ou écriture sur main n’a été effectuée. Le reçu `harness-completion.json`, lorsqu’il existe, décrit l’achèvement de projet ; il ne vaut ni publication sur main ni certification clinique. Les compteurs et bandeaux historiques du frontend natif restent ceux de la base et ne remplacent pas l’état du harness.

@@ -37,6 +37,7 @@ def main():
     for view in report['viewports']:
         assert view['book_font']=='24px' and view['book_overflow']==0 and view['horizontal_overflow']==0
         assert view['popup_visible'] and not view['popup_missing']
+        assert view['profiles_g2_scoped']
         assert len(view['science_buttons'])==6 and view['semio_sections']==9
         assert len(view['originals_checked'])==4 and all(x['loaded'] for x in view['originals_checked'])
     paths=[*sorted((ROOT/'chapters/C85').glob('*.html')),ROOT/'glossary/c85.py',*sorted((ROOT/'assets/img/c85/alpha/codex').glob('*'))]

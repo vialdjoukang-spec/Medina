@@ -67,3 +67,23 @@ _add('BEAM', [('BEAM', 'schéma de conditionnement avant autogreffe ; le dossier
 _add('TRANSFORM', [('TRANSFORM', 'nom de l’essai du lisocabtagène maraleucel ; non développable lettre à lettre dans le dossier')], 'Essai TRANSFORM', 'Essai cité par l’information professionnelle suisse de Breyanzi® pour la lymphodéplétion préalable.', 'c85-breyanzi')
 _add('CAR-T', [('CAR', 'Chimeric Antigen Receptor (récepteur antigénique chimérique)'), ('T', 'T-cell (lymphocyte T)')], 'Lymphocyte T à récepteur antigénique chimérique', 'Thérapie cellulaire dans laquelle les lymphocytes T du patient sont modifiés pour reconnaître la tumeur ; lisocabtagène maraleucel et axicabtagène ciloleucel en sont les représentants suisses cités.', 'c85-cart')
 _add('CAR+', [('CAR', 'Chimeric Antigen Receptor (récepteur antigénique chimérique)'), ('+', 'positif (exprimant le récepteur)')], 'Positif pour le récepteur antigénique chimérique', 'Dans « cellules T CAR+ viables », désigne les lymphocytes T qui expriment le récepteur ; dose cible du lisocabtagène : 100 × 10⁶.', 'c85-breyanzi')
+
+_add('LS', [('L', 'Liste'), ('S', 'des spécialités')], 'Liste des spécialités', 'Liste suisse des préparations remboursées par l’assurance obligatoire des soins, avec leurs éventuelles limitations. L’indication Swissmedic et le remboursement doivent être vérifiés séparément. Source : OFSP, médicaments et liste des spécialités.')
+
+_add('OAMal', [('O', 'Ordonnance'), ('AMal', 'sur l’assurance-maladie')], 'Ordonnance sur l’assurance-maladie', 'Les articles 71a à 71d encadrent la prise en charge exceptionnelle de certains médicaments, sous conditions et avec examen par l’assureur. Source : OFSP, prise en charge de médicaments dans des cas particuliers.')
+
+_add('G6', [('G6', 'Identifiant de situation dans PROFILES 2023')], 'Fièvre et frissons', 'Repère pédagogique du référentiel PROFILES, Situations as Starting Points ; son application à cette leçon est explicitée dans la question clinique.', 'c85-ssp-g6')
+
+_add('S2.6', [('S2.6', 'Identifiant de situation dans PROFILES 2023')], 'Toux et expectoration', 'Repère pédagogique du référentiel PROFILES, Situations as Starting Points ; son application à cette leçon est explicitée dans la question clinique.', 'c85-ssp-s2-6')
+
+_add('S2.7', [('S2.7', 'Identifiant de situation dans PROFILES 2023')], 'Dyspnée', 'Repère pédagogique du référentiel PROFILES, Situations as Starting Points ; son application à cette leçon est explicitée dans la question clinique.', 'c85-ssp-s2-7')
+
+_add('S2.9', [('S2.9', 'Identifiant de situation dans PROFILES 2023')], 'Difficulté au passage des aliments', 'Repère pédagogique du référentiel PROFILES, Situations as Starting Points ; son application à cette leçon est explicitée dans la question clinique.', 'c85-ssp-s2-9')
+
+_add('Vincristin-Teva', [('Vincristin-Teva', 'Vincristine, préparation Teva')], 'Vincristine, préparation Teva', 'Préparation exacte de vincristine citée pour ses adaptations et sa sécurité. Voie intraveineuse exclusivement ; jamais intrathécale. Source : FI suisse.')
+
+_add('IE', [('IE', 'Stade I extranodal limité')], 'Stade I extranodal limité', 'Lésion extranodale unique sans atteinte ganglionnaire dans le tableau de Lugano 2014.')
+
+_add('IIE', [('IIE', 'Stade II avec extension extranodale limitée')], 'Stade II avec extension extranodale limitée', 'Extension extranodale contiguë limitée associée à une atteinte ganglionnaire de stade I ou II dans Lugano 2014.')
+
+_add('MEBEKO', [('MEBEKO', 'Medizinalberufekommission')], 'Commission fédérale des professions médicales', 'Autorité fédérale qui fixe les exigences annuelles relatives au contenu, à la forme et à l’évaluation de l’examen fédéral. Source : exigences MEBEKO pour 2026.')
