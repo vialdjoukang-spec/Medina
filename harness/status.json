@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-02T12:15:15+00:00",
+  "generated_at": "2026-11-02T12:25:15+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T12:15:15+00:00",
+    "checked_at": "2026-11-02T12:25:15+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T12:15:15+00:00",
+    "observed_at": "2026-11-02T12:25:15+00:00",
     "ok": true,
     "findings": [
       {
@@ -61,7 +61,7 @@
       "meaning": "Contrôle structurel relancé à chaque veille600s ; résultats historiques conservés, nouvelles clôtures refusées si échec."
     },
     "interval_seconds": 600,
-    "observer_pid": 886255,
+    "observer_pid": 886801,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -123,31 +123,31 @@
       "clinical_orchestration": true,
       "runtime_name": "/root/sol_neurologie",
       "historical_id": "astra_neurologie",
-      "lesson": "G03",
-      "worktree": "/workspace/Medina-neurologie-G03",
-      "stage": "termine",
-      "branch": "codex/alpha77/g03-integrate-g1",
+      "lesson": "G06",
+      "worktree": "/workspace/Medina-neurologie-G06",
+      "stage": "recherche",
+      "branch": "codex/alpha77/g06-integrate-g1",
       "allowed_paths": [
-        "chapters/G03",
-        "glossary/g03.py",
-        "assets/img/g03/alpha/codex",
-        "organisation/alpha-publications/Codex/G03",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE"
+        "chapters/G06",
+        "glossary/g06.py",
+        "assets/img/g06/alpha/codex",
+        "organisation/alpha-publications/Codex/G06",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE"
       ],
-      "started_at": "2026-11-02T11:10:54+00:00",
-      "activity_at": "2026-11-02T12:10:01+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "started_at": "2026-11-02T12:18:09+00:00",
+      "activity_at": "2026-11-02T12:18:09+00:00",
+      "message": "Mission réservée; recherche autorisée",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "401e4a956c7e52771bd02f0d6b7cc8d49a4159dd3eb50f1c54f648e70432cd18",
+      "completed_sections": 0,
+      "receipt_sha256": "ec9873e22d55686ee463e62aa991fa57d9071892fc4a28547ff2fac4ec3f2e1a",
       "brief": {
         "schema_version": 1,
-        "status": "G03_COMPLETE_LIBERE_TRANSITION_G06",
+        "status": "G06_RECHERCHE_G03_COMPLETE_LIBERE",
         "prepared_at": "2026-11-02T01:17:05.123886+00:00",
         "agent": "Sol Neurologie",
         "model": "gpt-6.1-sol",
@@ -158,11 +158,12 @@
         "label": "N-05-Neurologie",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "candidate": {
-          "code": "G03",
-          "title": "Méningite due à des causes autres et non précisées",
+          "code": "G06",
+          "title": "Abcès et granulome intracrâniens et intrarachidiens",
           "mode": "existing",
           "owner": "Codex",
-          "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G03-INTEGRATE.json",
+          "active_reservations": [],
+          "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G06-INTEGRATE.json",
           "campaign77_member": true,
           "source_exists": true,
           "authorization": "current_acquired_started_claimed_reservation"
@@ -851,13 +852,13 @@
           "precedence": "Current direct user order overrides incompatible historical STOP and batch workflow; preserves clinical evidence and concurrent reservations"
         },
         "baseline": {
-          "chapters/G03/G03_pop1.html": "2e57e747678ba707be783d202391bf7bab95043135f2811aebcca60094a62bb8",
-          "chapters/G03/G03_c.html": "e8c24233083ac3eb1da282359315cf83721168a04eee733e6ecd52566b0c3731",
-          "chapters/G03/G03_pop2.html": "b02d90732a0bc572a40a387693d79e7b9261d0aa6d51fc6ee8cbbd666c03b44a",
-          "chapters/G03/G03_a.html": "b5c9d03b1ff754f12a45623bff2ff4642030ce60d726188cffaf97ea59d2503e",
-          "chapters/G03/G03_d.html": "31bd3f49fe27246ccbe3d23440c561a8f78633289db48f1abad4d919a96390ca",
-          "chapters/G03/G03_b.html": "fe9e123f0027f05f312c5e93e8ad2c6fb49a55756a7da66ecdfbb6beee5ad712",
-          "glossary/g03.py": "97a050ada05083be685012d9f0f9fe8d962396eea764ab49d5c132deb73f309d"
+          "chapters/G06/G06_a.html": "153bb38641daad0397114ad5447d6f53a98afb7b9b24ed38d691ac826036218d",
+          "chapters/G06/G06_b.html": "8a401010e3917acfdf47d88a30a6e7f97deb29dc2d7ae7b54e32e59b19de8909",
+          "chapters/G06/G06_c.html": "b173be2e7f010e0353f680633a08c3308951589b747c8a5438c9ef409a04263f",
+          "chapters/G06/G06_d.html": "09b643fd11a988c050c3e9b187896cc2bb1bbcf9b78b6ddd027e6f5f2a64fffa",
+          "chapters/G06/G06_pop1.html": "c900b22695465965fea5d118d60030d192b1d53fa4bef3c590d72a4106f339cc",
+          "chapters/G06/G06_pop2.html": "5388ff106b0eff1c0a8907d6ac0aebde1a55c3bae3bd1f4f5454d26c2e19b776",
+          "glossary/g06.py": "70a23c925a8600f5222c9ca846bc1c8c480e79968e7d602212cdebc0714ec9d9"
         },
         "historical_author_dossier": "livraisons/Livraison Claude/N-05-Neurologie/betta/CYCLE_33_G02",
         "sources_to_reread": [],
@@ -899,7 +900,7 @@
             "Private GitHub cron and local watch depend on runner/environment availability"
           ]
         },
-        "updated_at": "2026-11-02T12:13:31.036120+00:00",
+        "updated_at": "2026-11-02T12:18:10.041448+00:00",
         "current_package": {
           "code": "G03",
           "worktree": "/workspace/Medina-neurologie-G03",
@@ -1563,16 +1564,18 @@
             "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
           }
         ],
-        "source_readings_count": 18,
-        "research_sources": "/workspace/Medina-neurologie-G03/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE/recherche_G03/sources.json",
-        "current_revision": "G03 complet, pousse, garde finale et release verifiees ; prochain candidat G06 a acquerir seulement apres controle registre.",
-        "monograph14_reviewed": 14,
-        "matrix20_reviewed": 20,
-        "source_binding": "/workspace/Medina-neurologie-G03/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE/source-binding.json"
+        "source_readings_count": 0,
+        "research_sources": null,
+        "current_revision": "G06 acquis, start et claim reels apres release G03 verifiee ; inventaire et recherche, aucune redaction medicale.",
+        "monograph14_reviewed": 0,
+        "matrix20_reviewed": 0,
+        "source_binding": null,
+        "worktree": "/workspace/Medina-neurologie-G06",
+        "branch": "codex/alpha77/g06-integrate-g1"
       },
-      "activity_age_seconds": 314,
+      "activity_age_seconds": 426,
       "activity_fresh": true,
-      "sections_per_hour": 13.05,
+      "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -1610,7 +1613,7 @@
       "historical_id": "astra_endocrinologie",
       "lesson": "E30",
       "worktree": "/workspace/Medina-endocrinologie-E30",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/e30-integrate-g1",
       "allowed_paths": [
         "chapters/E30",
@@ -1620,8 +1623,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE"
       ],
       "started_at": "2026-11-02T11:53:37+00:00",
-      "activity_at": "2026-11-02T12:01:56+00:00",
-      "message": "E30 : première lecture réelle classification/CHUV/Endo-ERN/SIAMS et cinq FI suisses récupérées avec posologies/versions lues. Versions Pamorelin et Testoviron juillet 2026, Lucrin mai 2025. Le PDF danois 2024 est un projet non approuvé ; lien de la version février 2025 retrouvé sur le site de la société. La brochure CHUV 2021 ne fonde pas une absence générale d’effets indésirables ou interactions. Cache externe /tmp/medina-source-cache/endocrinologie/E30 ; aucune nouvelle rédaction canonique.",
+      "activity_at": "2026-11-02T12:17:20+00:00",
+      "message": "E30 : recherche ciblée terminée sur 21 sources et porte betta_verite passée avant toute nouvelle rédaction canonique. Version danoise approuvée février 2025 lue, FI exactes 2022/2025/2026 et deux figures humaines/licences inspectées. Désaccord imagerie garçons 2025 vs revue 2026, seuils/méthodes, risque de confusion entre Lucrin mensuel et autres formulations, et absence d’indication pédiatrique Progynova explicités. Preuves /workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/recherche_E30 et source-ledger.json.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -1638,7 +1641,7 @@
         "fragment": "S05",
         "label": "E-06-Endocrinologie et métabolisme",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "phase": "E30_recherche_sources_et_inventaire",
+        "phase": "E30_redaction_apres_recherche_verifiee",
         "selected_lesson": {
           "code": "E30",
           "title": "Anomalies de la puberté, non classées ailleurs",
@@ -2895,7 +2898,7 @@
           "phase": "preparation_only_waiting_harness_veille_and_exclusive_worktree",
           "authorization_scope": "Préparation seulement dans harness/agents/endocrinologie; aucune écriture médicale, aucun commit ni index. Ordre courant spécialités parallèles/une leçon à la fois remplace lots historiques, pas réservations."
         },
-        "updated_at": "2026-11-02T11:53:59.094804+00:00",
+        "updated_at": "2026-11-02T12:17:20.887432+00:00",
         "worktree": "/workspace/Medina-endocrinologie-E30",
         "branch": "codex/alpha77/e30-integrate-g1",
         "tokens_actual": null,
@@ -3027,9 +3030,13 @@
         },
         "current_evidence": {
           "transition": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E25-E30",
-          "status": "E30 acquise, start et claim réels après E25 complète/poussée/libérée. Les sources anciennes sont un inventaire, non une preuve de lecture nouvelle ; lectures réelles commencent.",
+          "status": "21 sources réellement lues aux niveaux déclarés, porte vérité passée avant écriture canonique ; figures humaines originales et licences inspectées. Début rédaction autorisé après cette recherche.",
           "source_cache": "/tmp/medina-source-cache/endocrinologie/E30",
-          "registry_sha": "c91a5212f978e6b4c0a13f37e64dc6c20f558ec4"
+          "registry_sha": "c91a5212f978e6b4c0a13f37e64dc6c20f558ec4",
+          "folder": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE",
+          "sources": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/source-ledger.json",
+          "research": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/recherche_E30",
+          "research_gate": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/research-gate.log"
         },
         "previous_limits": [
           {
@@ -3084,14 +3091,17 @@
           }
         ],
         "current_limits": [
-          "Aucune rédaction médicale E30 avant recherche et porte vérité ; anciens dossiers non réputés relus.",
-          "Les références suisses de croissance/puberte anciennes ne seront pas présentées comme normes contemporaines 2026."
+          "Les références suisses 1983 sont des cohortes historiques normales, pas norme ou incidence suisse 2026.",
+          "La version danoise 2025 approuvée remplace le projet 2024 non approuvé ; anciennes phrases rassurantes CHUV confrontées aux FI.",
+          "IRM chez garçons : recommandations européennes 2025 et revue 2026 diffèrent ; cohortes sélectionnées et recommandation américaine secondaire ne deviennent pas exclusion universelle de lésion.",
+          "FI Progynova adulte sans indication pédiatrique ; schéma européen et produit exact distingués, pas découpe improvisée.",
+          "Micrographie humaine Jpogi publique, résolution cellulaire limitée et coloration non précisée ; uniquement structures vérifiables annotées."
         ],
         "runtime_agent": "sol_endocrinologie",
         "runtime_model": "gpt-6.1-sol",
         "runtime_reasoning": "high"
       },
-      "activity_age_seconds": 799,
+      "activity_age_seconds": 475,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -3135,8 +3145,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D77-INTEGRATE"
       ],
       "started_at": "2026-11-02T12:12:23+00:00",
-      "activity_at": "2026-11-02T12:12:23+00:00",
-      "message": "Mission réservée; recherche autorisée",
+      "activity_at": "2026-11-02T12:25:07+00:00",
+      "message": "Sol-Hématologie-D77 : acquisition/start/claim/gate effectifs ; OFS,CHUV2024,Swissmedicliste30.09.2026/importart49,2FIsuisses,consensusEU2022/revueHSS2021 lus parpassages ;4originauxhumains recevablesvus, frottis2026refusépourdroitscontradictoires. Pasencorederédaction médicale.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -4174,7 +4184,7 @@
         "production_name": "Sol-Hématologie-D77",
         "active_specialty": "hematologie"
       },
-      "activity_age_seconds": 172,
+      "activity_age_seconds": 8,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -4638,38 +4648,13 @@
         "sources_read": 0,
         "completed_sections": 0
       },
-      "activity_age_seconds": 1310,
+      "activity_age_seconds": 1909,
       "activity_fresh": false,
-      "sections_per_hour": 13.7,
+      "sections_per_hour": 11.78,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T03:07:37+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 2
-    },
-    {
-      "at": "2026-11-02T03:09:17+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 2
-    },
-    {
-      "at": "2026-11-02T03:09:17+00:00",
-      "action": "progress",
-      "agent": "codex_hematologie",
-      "stage": "redaction",
-      "message": "C85 v2 : sources et corrections cliniques intégrées ; vérification des paramètres chiffrés et renouvellement des contrôles en cours."
-    },
-    {
-      "at": "2026-11-02T03:10:39+00:00",
-      "action": "complete",
-      "agent": "astra_neurologie",
-      "code": "G02"
-    },
     {
       "at": "2026-11-02T03:13:04+00:00",
       "action": "claim",
@@ -5935,6 +5920,32 @@
       "action": "claim",
       "agent": "astra_nephrologie",
       "code": "D77"
+    },
+    {
+      "at": "2026-11-02T12:15:15+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 2
+    },
+    {
+      "at": "2026-11-02T12:17:20+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "redaction",
+      "message": "E30 : recherche ciblée terminée sur 21 sources et porte betta_verite passée avant toute nouvelle rédaction canonique. Version danoise approuvée février 2025 lue, FI exactes 2022/2025/2026 et deux figures humaines/licences inspectées. Désaccord imagerie garçons 2025 vs revue 2026, seuils/méthodes, risque de confusion entre Lucrin mensuel et autres formulations, et absence d’indication pédiatrique Progynova explicités. Preuves /workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/recherche_E30 et source-ledger.json."
+    },
+    {
+      "at": "2026-11-02T12:18:09+00:00",
+      "action": "claim",
+      "agent": "astra_neurologie",
+      "code": "G06"
+    },
+    {
+      "at": "2026-11-02T12:25:07+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "recherche",
+      "message": "Sol-Hématologie-D77 : acquisition/start/claim/gate effectifs ; OFS,CHUV2024,Swissmedicliste30.09.2026/importart49,2FIsuisses,consensusEU2022/revueHSS2021 lus parpassages ;4originauxhumains recevablesvus, frottis2026refusépourdroitscontradictoires. Pasencorederédaction médicale."
     }
   ],
   "cache": {
@@ -12843,7 +12854,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T12:15:13+00:00",
+    "observed_at": "2026-11-02T12:25:13+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -13644,6 +13655,21 @@
             "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
           }
         }
+      },
+      {
+        "code": "G06",
+        "agent": "astra_neurologie",
+        "branch": "codex/alpha77/g06-integrate-g1",
+        "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+        "local_preview": "/workspace/Medina-neurologie-G06/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE/G06-apercu-autonome.html",
+        "exists": false,
+        "sha256": null,
+        "bytes": null,
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/g06-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE/G06-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/g06-integrate-g1",
+        "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
+        "publication_main": false,
+        "clinical_certification": false
       },
       {
         "code": "E30",

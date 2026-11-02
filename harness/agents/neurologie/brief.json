@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "G03_COMPLETE_LIBERE_TRANSITION_G06",
+  "status": "G06_RECHERCHE_G03_COMPLETE_LIBERE",
   "prepared_at": "2026-11-02T01:17:05.123886+00:00",
   "agent": "Sol Neurologie",
   "model": "gpt-6.1-sol",
@@ -11,11 +11,12 @@
   "label": "N-05-Neurologie",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "candidate": {
-    "code": "G03",
-    "title": "Méningite due à des causes autres et non précisées",
+    "code": "G06",
+    "title": "Abcès et granulome intracrâniens et intrarachidiens",
     "mode": "existing",
     "owner": "Codex",
-    "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G03-INTEGRATE.json",
+    "active_reservations": [],
+    "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G06-INTEGRATE.json",
     "campaign77_member": true,
     "source_exists": true,
     "authorization": "current_acquired_started_claimed_reservation"
@@ -704,13 +705,13 @@
     "precedence": "Current direct user order overrides incompatible historical STOP and batch workflow; preserves clinical evidence and concurrent reservations"
   },
   "baseline": {
-    "chapters/G03/G03_pop1.html": "2e57e747678ba707be783d202391bf7bab95043135f2811aebcca60094a62bb8",
-    "chapters/G03/G03_c.html": "e8c24233083ac3eb1da282359315cf83721168a04eee733e6ecd52566b0c3731",
-    "chapters/G03/G03_pop2.html": "b02d90732a0bc572a40a387693d79e7b9261d0aa6d51fc6ee8cbbd666c03b44a",
-    "chapters/G03/G03_a.html": "b5c9d03b1ff754f12a45623bff2ff4642030ce60d726188cffaf97ea59d2503e",
-    "chapters/G03/G03_d.html": "31bd3f49fe27246ccbe3d23440c561a8f78633289db48f1abad4d919a96390ca",
-    "chapters/G03/G03_b.html": "fe9e123f0027f05f312c5e93e8ad2c6fb49a55756a7da66ecdfbb6beee5ad712",
-    "glossary/g03.py": "97a050ada05083be685012d9f0f9fe8d962396eea764ab49d5c132deb73f309d"
+    "chapters/G06/G06_a.html": "153bb38641daad0397114ad5447d6f53a98afb7b9b24ed38d691ac826036218d",
+    "chapters/G06/G06_b.html": "8a401010e3917acfdf47d88a30a6e7f97deb29dc2d7ae7b54e32e59b19de8909",
+    "chapters/G06/G06_c.html": "b173be2e7f010e0353f680633a08c3308951589b747c8a5438c9ef409a04263f",
+    "chapters/G06/G06_d.html": "09b643fd11a988c050c3e9b187896cc2bb1bbcf9b78b6ddd027e6f5f2a64fffa",
+    "chapters/G06/G06_pop1.html": "c900b22695465965fea5d118d60030d192b1d53fa4bef3c590d72a4106f339cc",
+    "chapters/G06/G06_pop2.html": "5388ff106b0eff1c0a8907d6ac0aebde1a55c3bae3bd1f4f5454d26c2e19b776",
+    "glossary/g06.py": "70a23c925a8600f5222c9ca846bc1c8c480e79968e7d602212cdebc0714ec9d9"
   },
   "historical_author_dossier": "livraisons/Livraison Claude/N-05-Neurologie/betta/CYCLE_33_G02",
   "sources_to_reread": [],
@@ -752,7 +753,7 @@
       "Private GitHub cron and local watch depend on runner/environment availability"
     ]
   },
-  "updated_at": "2026-11-02T12:13:31.036120+00:00",
+  "updated_at": "2026-11-02T12:18:10.041448+00:00",
   "current_package": {
     "code": "G03",
     "worktree": "/workspace/Medina-neurologie-G03",
@@ -1416,10 +1417,12 @@
       "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
     }
   ],
-  "source_readings_count": 18,
-  "research_sources": "/workspace/Medina-neurologie-G03/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE/recherche_G03/sources.json",
-  "current_revision": "G03 complet, pousse, garde finale et release verifiees ; prochain candidat G06 a acquerir seulement apres controle registre.",
-  "monograph14_reviewed": 14,
-  "matrix20_reviewed": 20,
-  "source_binding": "/workspace/Medina-neurologie-G03/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE/source-binding.json"
+  "source_readings_count": 0,
+  "research_sources": null,
+  "current_revision": "G06 acquis, start et claim reels apres release G03 verifiee ; inventaire et recherche, aucune redaction medicale.",
+  "monograph14_reviewed": 0,
+  "matrix20_reviewed": 0,
+  "source_binding": null,
+  "worktree": "/workspace/Medina-neurologie-G06",
+  "branch": "codex/alpha77/g06-integrate-g1"
 }

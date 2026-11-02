@@ -6,7 +6,7 @@
   "fragment": "S05",
   "label": "E-06-Endocrinologie et métabolisme",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "phase": "E30_recherche_sources_et_inventaire",
+  "phase": "E30_redaction_apres_recherche_verifiee",
   "selected_lesson": {
     "code": "E30",
     "title": "Anomalies de la puberté, non classées ailleurs",
@@ -1263,7 +1263,7 @@
     "phase": "preparation_only_waiting_harness_veille_and_exclusive_worktree",
     "authorization_scope": "Préparation seulement dans harness/agents/endocrinologie; aucune écriture médicale, aucun commit ni index. Ordre courant spécialités parallèles/une leçon à la fois remplace lots historiques, pas réservations."
   },
-  "updated_at": "2026-11-02T11:53:59.094804+00:00",
+  "updated_at": "2026-11-02T12:17:20.887432+00:00",
   "worktree": "/workspace/Medina-endocrinologie-E30",
   "branch": "codex/alpha77/e30-integrate-g1",
   "tokens_actual": null,
@@ -1395,9 +1395,13 @@
   },
   "current_evidence": {
     "transition": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E25-E30",
-    "status": "E30 acquise, start et claim réels après E25 complète/poussée/libérée. Les sources anciennes sont un inventaire, non une preuve de lecture nouvelle ; lectures réelles commencent.",
+    "status": "21 sources réellement lues aux niveaux déclarés, porte vérité passée avant écriture canonique ; figures humaines originales et licences inspectées. Début rédaction autorisé après cette recherche.",
     "source_cache": "/tmp/medina-source-cache/endocrinologie/E30",
-    "registry_sha": "c91a5212f978e6b4c0a13f37e64dc6c20f558ec4"
+    "registry_sha": "c91a5212f978e6b4c0a13f37e64dc6c20f558ec4",
+    "folder": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE",
+    "sources": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/source-ledger.json",
+    "research": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/recherche_E30",
+    "research_gate": "/workspace/Medina-endocrinologie-E30/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E30-INTEGRATE/research-gate.log"
   },
   "previous_limits": [
     {
@@ -1452,8 +1456,11 @@
     }
   ],
   "current_limits": [
-    "Aucune rédaction médicale E30 avant recherche et porte vérité ; anciens dossiers non réputés relus.",
-    "Les références suisses de croissance/puberte anciennes ne seront pas présentées comme normes contemporaines 2026."
+    "Les références suisses 1983 sont des cohortes historiques normales, pas norme ou incidence suisse 2026.",
+    "La version danoise 2025 approuvée remplace le projet 2024 non approuvé ; anciennes phrases rassurantes CHUV confrontées aux FI.",
+    "IRM chez garçons : recommandations européennes 2025 et revue 2026 diffèrent ; cohortes sélectionnées et recommandation américaine secondaire ne deviennent pas exclusion universelle de lésion.",
+    "FI Progynova adulte sans indication pédiatrique ; schéma européen et produit exact distingués, pas découpe improvisée.",
+    "Micrographie humaine Jpogi publique, résolution cellulaire limitée et coloration non précisée ; uniquement structures vérifiables annotées."
   ],
   "runtime_agent": "sol_endocrinologie",
   "runtime_model": "gpt-6.1-sol",
