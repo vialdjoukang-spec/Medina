@@ -33,9 +33,11 @@ jobs:
           persist-credentials: false
       - name: Tester le harness sur son code exact
         run: python3 harness/medina_harness.py self-test
-      - name: Observer sans renouveler l'activité des agents
+      - name: Observer la dernière publication sans renouveler l'activité des agents
         if: always()
-        run: python3 harness/github_observe.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 harness/remote_watchdog.py observe
       - name: Conserver le rapport et les preuves
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
@@ -46,6 +48,9 @@ jobs:
             harness/rapport-08h00.html
             harness/status.json
             harness/github-observation.json
+            harness/remote-observation.json
+            harness/remote-status.json
+            harness/remote-dashboard.html
             harness/runtime/tests.json
             harness/runtime/tests.log
             harness/REPARTITION.md
