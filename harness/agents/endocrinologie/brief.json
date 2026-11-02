@@ -6,28 +6,17 @@
   "fragment": "S05",
   "label": "E-06-Endocrinologie et métabolisme",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "phase": "E00_completed_transition_to_E01",
+  "phase": "E01_recherche",
   "selected_lesson": {
-    "code": "E00",
-    "title": "Syndrome d’insuffisance thyroïdienne congénitale",
-    "reason": "Premier existant Codex libre de réservation dans ordre Starter; E10 et E05 actifs sont exclus.",
-    "mission_candidate": ".medina/missions/ALPHA77-CODEX-E00-INTEGRATE.json",
-    "mission_old_base": "8712c3fe758f0c7e1f9fb85378def47b554edb53",
+    "code": "E01",
+    "title": "Affections thyroïdiennes et apparentées liées à une carence en iode",
+    "mission_candidate": ".medina/missions/ALPHA77-CODEX-E01-INTEGRATE.json",
     "reservation_acquired": true,
     "start_passed": true,
-    "required_before_writing": [
-      "harness testé",
-      "veille exigée réussie et preuves datées",
-      "mission adaptée au SHA approuvé",
-      "acquisition distante fraîche",
-      "worktree exclusif",
-      "start réussi",
-      "sources primaires utiles réellement lues",
-      "betta_verite.py avant rédaction"
-    ],
-    "start_receipt": "/workspace/Medina-harness/harness/evidence/E00/start.json"
+    "harness_claimed": true,
+    "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E00-E01/start-E01.json"
   },
-  "authorization_scope": "E00 uniquement, périmètre mission et preuves ; rédaction autorisée après gate et réservation ; commit/push de branche réservée autorisés, aucune PR/main.",
+  "authorization_scope": "E01 uniquement dans les chemins de mission ; recherche puis rédaction après porte de vérité ; commit et push autorisés, aucune PR ni main.",
   "counts": {
     "canonical_s05": 26,
     "existing_codex": 13,
@@ -1274,10 +1263,49 @@
     "phase": "preparation_only_waiting_harness_veille_and_exclusive_worktree",
     "authorization_scope": "Préparation seulement dans harness/agents/endocrinologie; aucune écriture médicale, aucun commit ni index. Ordre courant spécialités parallèles/une leçon à la fois remplace lots historiques, pas réservations."
   },
-  "updated_at": "2026-11-02T02:43:16.566411+00:00",
-  "worktree": "/workspace/Medina-endocrinologie",
-  "branch": "codex/alpha77/e00-integrate-g1",
-  "current_evidence": {
+  "updated_at": "2026-11-02T02:48:18.913343+00:00",
+  "worktree": "/workspace/Medina-endocrinologie-E01",
+  "branch": "codex/alpha77/e01-integrate-g1",
+  "tokens_actual": null,
+  "cost_actual": null,
+  "completed_lessons": [
+    {
+      "code": "E00",
+      "title": "Syndrome d’insuffisance thyroïdienne congénitale",
+      "head": "d30973f497b906f921a3abc801a782dc498a9140",
+      "branch": "codex/alpha77/e00-integrate-g1",
+      "pushed": true,
+      "preview": "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/E00-apercu-autonome.html",
+      "report": "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/RAPPORT-E00.md",
+      "completion": "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/harness-completion.json",
+      "source_binding": "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/source-binding.json",
+      "reviews": "self_review",
+      "clinical_certification": false,
+      "main_or_pr": false
+    }
+  ],
+  "previous_lesson": {
+    "code": "E00",
+    "title": "Syndrome d’insuffisance thyroïdienne congénitale",
+    "reason": "Premier existant Codex libre de réservation dans ordre Starter; E10 et E05 actifs sont exclus.",
+    "mission_candidate": ".medina/missions/ALPHA77-CODEX-E00-INTEGRATE.json",
+    "mission_old_base": "8712c3fe758f0c7e1f9fb85378def47b554edb53",
+    "reservation_acquired": false,
+    "start_passed": true,
+    "required_before_writing": [
+      "harness testé",
+      "veille exigée réussie et preuves datées",
+      "mission adaptée au SHA approuvé",
+      "acquisition distante fraîche",
+      "worktree exclusif",
+      "start réussi",
+      "sources primaires utiles réellement lues",
+      "betta_verite.py avant rédaction"
+    ],
+    "start_receipt": "/workspace/Medina-harness/harness/evidence/E00/start.json",
+    "released": true
+  },
+  "previous_evidence": {
     "folder": "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE",
     "preview": "E00-apercu-autonome.html",
     "captures": [
@@ -1296,7 +1324,11 @@
     "completion": "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/harness-completion.json",
     "source_binding": "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/source-binding.json"
   },
-  "current_limits": [
+  "current_evidence": {
+    "folder": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE",
+    "status": "Recherche ; aucune correction médicale écrite pour le moment."
+  },
+  "previous_limits": [
     "Auto-relecture assumée, aucune validation humaine ni indépendance revendiquée.",
     "Seuil suisse de rappel TSH et prévalence actuelle E00 suisse non trouvés ; pas de valeur substituée.",
     "Catalogue administratif français OFS2024 conservé ; comparaison BfArM2026 distincte.",
@@ -1304,22 +1336,7 @@
     "Test navigateur à origine interceptée ; aucun serveur HTTP réel testé.",
     "Tokens et coût réels non fournis par le fournisseur."
   ],
-  "tokens_actual": null,
-  "cost_actual": null,
-  "completed_lessons": [
-    {
-      "code": "E00",
-      "title": "Syndrome d’insuffisance thyroïdienne congénitale",
-      "head": "d30973f497b906f921a3abc801a782dc498a9140",
-      "branch": "codex/alpha77/e00-integrate-g1",
-      "pushed": true,
-      "preview": "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/E00-apercu-autonome.html",
-      "report": "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/RAPPORT-E00.md",
-      "completion": "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/harness-completion.json",
-      "source_binding": "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/source-binding.json",
-      "reviews": "self_review",
-      "clinical_certification": false,
-      "main_or_pr": false
-    }
+  "current_limits": [
+    "E01 : lecture et vérification des sources en cours ; aucune complétude ni validation médicale revendiquée."
   ]
 }

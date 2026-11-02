@@ -7,8 +7,8 @@
       "worktree": "/workspace/Medina-neurologie",
       "stage": "redaction",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T02:46:06+00:00",
-      "message": "Chagas : sources CH, SEMTSI et NIH relues ; RCP Lampit AEMPS février 2024 retrouvé avec indication adulte, distinct du libellé américain pédiatrique. Rédaction ciblée et revue de cohérence clinique en cours.",
+      "activity_at": "2026-11-02T02:51:15+00:00",
+      "message": "Revue de cohérence sur les six fragments : 53 corrections de formulations héritées, population/délais, seuils non exclusifs, brivudine, virémie, anticorps et urgence. Source primaire Consortium2013 lue. Tests à relancer après correction des abréviations et des répétitions résiduelles.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -27,28 +27,28 @@
       ]
     },
     "astra_endocrinologie": {
-      "lesson": "E00",
-      "worktree": "/workspace/Medina-endocrinologie",
-      "stage": "termine",
-      "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T02:39:03+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "lesson": "E01",
+      "worktree": "/workspace/Medina-endocrinologie-E01",
+      "stage": "recherche",
+      "branch": "codex/alpha77/e01-integrate-g1",
+      "allowed_paths": [
+        "chapters/E01",
+        "glossary/e01.py",
+        "assets/img/e01/alpha/codex",
+        "organisation/alpha-publications/Codex/E01",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE"
+      ],
+      "started_at": "2026-11-02T02:48:08+00:00",
+      "activity_at": "2026-11-02T02:48:19+00:00",
+      "message": "E00 terminé et libéré ; E01 acquis, start et claim réussis. Inventaire des six fichiers et recherche suisse puis européenne en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "b6ea07fea66fd173ebbaa0335339a155356f6d920405c012daccec04f253afe3",
-      "branch": "codex/alpha77/e00-integrate-g1",
-      "allowed_paths": [
-        "chapters/E00",
-        "glossary/e00.py",
-        "assets/img/e00/alpha/codex",
-        "organisation/alpha-publications/Codex/E00",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE"
-      ]
+      "completed_sections": 0,
+      "receipt_sha256": "00d9e13b7f7f80d132903d38d74bfb905ee4f24f20ac908f7f0ad4a085ffb9d5"
     },
     "astra_nephrologie": {
       "lesson": "N29",
@@ -63,8 +63,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N29-INTEGRATE"
       ],
       "started_at": "2026-11-02T02:46:45+00:00",
-      "activity_at": "2026-11-02T02:46:45+00:00",
-      "message": "Mission réservée; recherche autorisée",
+      "activity_at": "2026-11-02T02:49:07+00:00",
+      "message": "N29 acquis et démarré ; six FI suisses lues ciblées, guide OFSP/Ligue pulmonaire diagnostic et traitement lus ; adaptations rénales et suivi à corriger, sources Europe en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -633,6 +633,39 @@
       "action": "watch",
       "ok": true,
       "findings": 1
+    },
+    {
+      "at": "2026-11-02T02:48:08+00:00",
+      "action": "claim",
+      "agent": "astra_endocrinologie",
+      "code": "E01"
+    },
+    {
+      "at": "2026-11-02T02:48:19+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "recherche",
+      "message": "E00 terminé et libéré ; E01 acquis, start et claim réussis. Inventaire des six fichiers et recherche suisse puis européenne en cours."
+    },
+    {
+      "at": "2026-11-02T02:49:07+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "recherche",
+      "message": "N29 acquis et démarré ; six FI suisses lues ciblées, guide OFSP/Ligue pulmonaire diagnostic et traitement lus ; adaptations rénales et suivi à corriger, sources Europe en cours."
+    },
+    {
+      "at": "2026-11-02T02:51:15+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "redaction",
+      "message": "Revue de cohérence sur les six fragments : 53 corrections de formulations héritées, population/délais, seuils non exclusifs, brivudine, virémie, anticorps et urgence. Source primaire Consortium2013 lue. Tests à relancer après correction des abréviations et des répétitions résiduelles."
+    },
+    {
+      "at": "2026-11-02T02:57:37+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 3
     }
   ],
   "cache": {
