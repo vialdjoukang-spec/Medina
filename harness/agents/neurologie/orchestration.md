@@ -84,3 +84,24 @@ G02 : achèvement projet enregistré à 03:10:39 UTC, reçu et aperçu préserv�
 Les transitions E00→E01 et N04→N29 restent enregistrées. C85 est encore en révision selon le parent ; mon avis circonscrit à l’anomalie d’unité Endoxan ne vaut pas audit de ce cours. PROFILES2017/2023 : calendrier2028 signalé par le parent avec sources officielles ; lecture propre requise avant affirmation dans G05. La page2023 officielle ne suffit pas à prouver une applicabilité à l’examen2026.
 
 Source de statut local consultée : SHA256 326d3efb711cfe1b1a627624ce0a8fba311dc93a6acf702afc7a4277d4869385. Coordination des attributions seulement, pas audit des autres filières. Les octets évités ne mesurent ni tokens ni coûts ; aucune mesure native disponible.
+
+
+## Coordination actualisée — 2026-11-02T03:35:39.437415+00:00
+
+Les quatre premières leçons G02/E00/N04/C85 ont un reçu d’achèvement de projet. C85 a été enregistrée à 03:24:01 UTC ; reçu local relu, aperçu `c0e32e5709a322a8ffbb51e420af58cc0ae2f3acbbad0d3adbd7c0706a227c5f`, six limites explicites conservées. Cela ne certifie pas sa médecine ni une fusion dans main. Le statut courant montre G05 en recherche, E01 en vérification, C86 en recherche et désormais N00 en recherche ; le brief néphrologique rapporte N29 achevée à 03:29:05 UTC puis libérée. Cette revue vérifie la cohérence des états et des reçus, pas le fond des cours des autres auteurs.
+
+Priorités : terminer G05 avec critères, myélite, causes rares et médicament exact ; E01 doit garder ses derniers tests liés à ses sources finales ; N00/C86 relisent leurs propres sources, sans transformer les preuves du cours précédent en lectures nouvelles. La prochaine attribution neurologique reste conditionnelle à l’achèvement de G05 ; aucun bail supplémentaire par cette note. Les réservations concurrentes restent préservées. Les limites de disponibilité, d’incidence nationale ou d’unité neutralisée restent distinctes d’une prescription centrale non vérifiée.
+
+L’OFSP/MEBEKO2026 confirme265SSP ; PROFILES2017 et2023 ont une numérotation différente. Je prépare le lien pédagogique G05 avec2017 sur passages relus ; aucune applicabilité2026 de2023 n’est déduite de sa présence en ligne. Aucun compteur de tokens/coût réel disponible.
+
+Empreintes des instantanés de coordination :
+
+- `status.json` : `94a37134d1cc2c0afb5fadeba83cc6b653cfd282905cead46d98e50ff7acb79d`.
+
+- `agents/hematologie/brief.json` : `2d2ab889f580262a4489cf21409bb4faf2921b48b96bbd54efb1b0757942c9e9`.
+
+- `agents/endocrinologie/brief.json` : `8cee33de488863c2e14425a240a52a5aa9e317e6bdaed6cf7bb7771ff3b173fa`.
+
+- `agents/nephrologie/brief.json` : `652327fab69ec705f93679b5bbfa13cffe8b2391cd2ba66ae55dfab8358d04e8`.
+
+Contrainte transmise par le parent le 2 novembre 2026 : N00 acquis par néphrologie (registre `697b30a9`), avec réservation exclusive de `chapters.json`. Aucun autre auteur, dont G05 et C86, ne modifie ce catalogue ; les futurs nouveaux cours attendent une réservation compatible. N29 final `f86f0bd29c67dba2e617cf969ed4a99cce56c275`.
