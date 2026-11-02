@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-02T18:55:16+00:00",
+  "generated_at": "2026-11-02T19:05:17+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T18:55:16+00:00",
+    "checked_at": "2026-11-02T19:05:17+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T18:55:16+00:00",
+    "observed_at": "2026-11-02T19:05:17+00:00",
     "ok": true,
     "findings": [
       {
@@ -44,7 +44,7 @@
             "/workspace/Medina-endocrinologie-C73",
             "/workspace/Medina-hematologie-D65"
           ],
-          "free_bytes": 2131288064,
+          "free_bytes": 2130718720,
           "total_bytes": 33770192896,
           "level": "ok"
         },
@@ -53,7 +53,7 @@
           "observed_paths": [
             "/tmp/Medina-neurologie-G25"
           ],
-          "free_bytes": 793423872,
+          "free_bytes": 756805632,
           "total_bytes": 9441329152,
           "level": "ok"
         }
@@ -85,7 +85,7 @@
       "meaning": "Contrôle structurel relancé à chaque veille600s ; résultats historiques conservés, nouvelles clôtures refusées si échec."
     },
     "interval_seconds": 600,
-    "observer_pid": 1727959,
+    "observer_pid": 1729200,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -154,8 +154,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G37-INTEGRATE"
       ],
       "started_at": "2026-11-02T18:54:36+00:00",
-      "activity_at": "2026-11-02T18:54:36+00:00",
-      "message": "Mission réservée; recherche autorisée",
+      "activity_at": "2026-11-02T18:58:28+00:00",
+      "message": "G37 : huit sous-codes et exclusions réellement lus dans ClaML français etBfArM ; journal des deux lectures créé, pistes anciennes inventoriées ; téléchargements ciblés en cours sans les compter comme lus,aucune rédaction.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -166,7 +166,7 @@
       "receipt_sha256": "01f8fa91196cfcff3ff2cfb7a991ccd095037da851f0f1b7cdf588877cae7cf0",
       "brief": {
         "schema_version": 1,
-        "status": "G36_RELEASED_VERIFIED",
+        "status": "G37_RECHERCHE",
         "prepared_at": "2026-11-02T01:17:05.123886+00:00",
         "agent": "Sol Neurologie",
         "model": "gpt-6.1-sol",
@@ -176,7 +176,7 @@
         "fragment": "S08",
         "label": "N-05-Neurologie",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "candidate": "G36",
+        "candidate": "G37",
         "counts": {
           "specialty_existing": 57,
           "existing_codex": 29,
@@ -856,42 +856,23 @@
         },
         "updated_at": "2026-11-02T18:07:36.622532+00:00",
         "current_package": {
-          "code": "G36",
-          "worktree": "/workspace/Medina-neurologie-G36",
-          "branch": "codex/alpha77/g36-integrate-g1",
-          "stage": "termine_released_verified",
+          "code": "G37",
+          "worktree": "/workspace/Medina-neurologie-G37",
+          "branch": "codex/alpha77/g37-integrate-g1",
           "reservation_acquired": true,
-          "start_passed": true,
-          "claim_passed": true,
-          "acquisition_registry_sha": "97502b9c864696b7df1344ff11b27bbe464a39b4",
+          "acquisition_registry_sha": "9180403b7d28a2e67a0f2db92a1bddfb199ced33",
+          "start_receipt": "/workspace/Medina-neurologie-G37/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G37-INTEGRATE/start-G37.json",
+          "stage": "recherche",
+          "source_readings_count": 2,
+          "monograph14_reviewed": 0,
+          "matrix20_reviewed": 0,
+          "blocking_findings": [
+            "Inventaire, lectures primaires et Betta avant toute rédaction ; preuves finales ensuite."
+          ],
+          "medical_content_written": false,
           "source_binding": null,
-          "source_readings_count": 15,
-          "medical_content_written": true,
-          "monograph14_reviewed": 14,
-          "matrix20_reviewed": 20,
-          "acquisition_return_awaited_before_worktree": true,
-          "worktree_clean_before_start": true,
-          "evidence_folder_created_after_successful_start": true,
-          "research_journal": "/workspace/Medina-neurologie-G36/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G36-INTEGRATE/recherche_G36/sources-draft.json",
-          "blocking_findings": [],
-          "source_binding_sha256": "1e32e0750ed29822630c61060baaa42c4889148ec408acec7328f0a06b0c69bd",
-          "source_binding_first_issue": "2026-11-02T18:49:32.380323+00:00",
-          "preview_sha256": "ab811744cc3cd7b8f5db0d0ae5594a67b547e939ed706e0642b9ae5cd5af6a9c",
-          "review_mode": "self_review",
           "clinical_certification": false,
-          "source_commit": "302bbc6f3ad88005d30831da4aa80b4c1cf4b99c",
-          "final_commit": "94260735558de188c27c4625feec9214d13cc027",
-          "complete_at": "2026-11-02T18:50:48+00:00",
-          "release_registry_sha": "92805e83bc3290cecc5c18ef161c905f4fd232a6",
-          "released_verified": true,
-          "remote_final_verified": true,
-          "worktree_clean": true,
-          "actual_source_entries": 15,
-          "monograph14": 14,
-          "matrix20": 20,
-          "semio_strict7_passed": true,
-          "initial_start_order_compliant": true,
-          "review_url": "https://github.com/vialdjoukang-spec/Medina/blob/94260735558de188c27c4625feec9214d13cc027/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G36-INTEGRATE/README.md"
+          "research_journal": "/workspace/Medina-neurologie-G37/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G37-INTEGRATE/recherche_G37/sources-draft.json"
         },
         "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
         "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
@@ -1740,7 +1721,7 @@
           "clinical_certification": false,
           "preview": null
         },
-        "next_candidate": "G37",
+        "next_candidate": "G52",
         "excluded_reassigned_candidates": [
           "G09",
           "G21",
@@ -1848,9 +1829,47 @@
           "source_binding_sha256": "dc1fe34488bf7b64788709e384ed7e5a076a4a36bdc2abd9948123301a602cc1",
           "preview_sha256": "13127def5eeebe0077c48baba8352b064ebbd3ddfd034f32579309b783b8f57d",
           "final_commit": "5edc1c1d2efa0accb62b004729d1047b649aad26"
+        },
+        "historical_package_G36_snapshot": {
+          "code": "G36",
+          "worktree": "/workspace/Medina-neurologie-G36",
+          "branch": "codex/alpha77/g36-integrate-g1",
+          "stage": "termine_released_verified",
+          "reservation_acquired": true,
+          "start_passed": true,
+          "claim_passed": true,
+          "acquisition_registry_sha": "97502b9c864696b7df1344ff11b27bbe464a39b4",
+          "source_binding": null,
+          "source_readings_count": 15,
+          "medical_content_written": true,
+          "monograph14_reviewed": 14,
+          "matrix20_reviewed": 20,
+          "acquisition_return_awaited_before_worktree": true,
+          "worktree_clean_before_start": true,
+          "evidence_folder_created_after_successful_start": true,
+          "research_journal": "/workspace/Medina-neurologie-G36/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G36-INTEGRATE/recherche_G36/sources-draft.json",
+          "blocking_findings": [],
+          "source_binding_sha256": "1e32e0750ed29822630c61060baaa42c4889148ec408acec7328f0a06b0c69bd",
+          "source_binding_first_issue": "2026-11-02T18:49:32.380323+00:00",
+          "preview_sha256": "ab811744cc3cd7b8f5db0d0ae5594a67b547e939ed706e0642b9ae5cd5af6a9c",
+          "review_mode": "self_review",
+          "clinical_certification": false,
+          "source_commit": "302bbc6f3ad88005d30831da4aa80b4c1cf4b99c",
+          "final_commit": "94260735558de188c27c4625feec9214d13cc027",
+          "complete_at": "2026-11-02T18:50:48+00:00",
+          "release_registry_sha": "92805e83bc3290cecc5c18ef161c905f4fd232a6",
+          "released_verified": true,
+          "remote_final_verified": true,
+          "worktree_clean": true,
+          "actual_source_entries": 15,
+          "monograph14": 14,
+          "matrix20": 20,
+          "semio_strict7_passed": true,
+          "initial_start_order_compliant": true,
+          "review_url": "https://github.com/vialdjoukang-spec/Medina/blob/94260735558de188c27c4625feec9214d13cc027/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G36-INTEGRATE/README.md"
         }
       },
-      "activity_age_seconds": 41,
+      "activity_age_seconds": 409,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -3378,7 +3397,7 @@
             "main_or_pr": false
           }
         ],
-        "previous_lesson": "E04",
+        "previous_lesson": "C73",
         "previous_evidence": {
           "code": "C73",
           "research_records": 32,
@@ -3426,7 +3445,8 @@
           "AccèsEuropePMC500 et CAPTCHA ne valent pas lecture ni absenceguide ; ancienexpert2012approuvé2013 malgréupload2026 écartécommeguideactuel. QuotaParallelSearch signalé ailleurs, nonrelancé. Sourcecontrast2021 valide distincte d’un HTMLCAPTCHA et FI131 retrouvéeproduitexact."
         ],
         "current_limits": [
-          "C73 : lectures externes/préflight seulement ; aucun worktree, acquire, start, claim ou rédaction canonique avant libération D65 et registre frais."
+          "C74 : préparation externe seule, sans acquire, worktree, start, claim ni écriture canonique ; D66 parent prioritaire jusqu’à libération vérifiée.",
+          "Sources téléchargées distinguées des passages réellement lus ; reçus source C73 clos immuables."
         ],
         "runtime_agent": "sol_endocrinologie",
         "runtime_model": "gpt-6.1-sol",
@@ -3457,11 +3477,13 @@
         ],
         "next_candidate_after_E04": "C73 après catalogue D65 libéré ; préparation externe seule entretemps.",
         "measurement_note": "Les champs JSON null signifient non mesurés/inconnus ; ils ne représentent jamais une mesure zéro. Le libellé ambigu du rapport E04 scellé reste conservé et est corrigé ici sans modifier ses preuves.",
-        "queue_status_note": "Delivered hashes are historical verified receipts; no closed source or binding refreshed by this brief update."
+        "queue_status_note": "Delivered hashes are historical verified receipts; no closed source or binding refreshed by this brief update.",
+        "external_preparation_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/C73-C74/external-preparation-1859.json",
+        "external_preparation_latest_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/C73-C74/external-preparation-second-reading.json"
       },
-      "activity_age_seconds": 1328,
+      "activity_age_seconds": 1928,
       "activity_fresh": false,
-      "sections_per_hour": 12.73,
+      "sections_per_hour": 11.05,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -5040,9 +5062,9 @@
           "G26"
         ]
       },
-      "activity_age_seconds": 42,
+      "activity_age_seconds": 642,
       "activity_fresh": true,
-      "sections_per_hour": 15.45,
+      "sections_per_hour": 13.05,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -6403,33 +6425,13 @@
           }
         ]
       },
-      "activity_age_seconds": 4118,
+      "activity_age_seconds": 4718,
       "activity_fresh": false,
-      "sections_per_hour": 6.85,
+      "sections_per_hour": 6.33,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T11:42:18+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "redaction",
-      "message": "G03 : première rédaction des six surfaces, six sciences dont neuf sections de sémiologie, quatre quiz et deux originaux humains avec annotations adjacentes ; relecture et tests à faire."
-    },
-    {
-      "at": "2026-11-02T11:44:48+00:00",
-      "action": "claim",
-      "agent": "astra_nephrologie",
-      "code": "N06"
-    },
-    {
-      "at": "2026-11-02T11:46:32+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "revue_requise",
-      "message": "E25 : quatre self_review explicites terminées et validation technique harness passée, 14/20, 20 sources, six sciences/9 sémiologie. Navigateur final 1440/390 : 40 fenêtres, 3 définitions, 4 quiz, tables locales, Livre24 sans erreur. Métadonnées de couverture développées après premier refus technique, invalidation explicite archivée, aucune modification des octets médicaux/aperçu. Empreinte finale créée après validation."
-    },
     {
       "at": "2026-11-02T11:46:53+00:00",
       "action": "complete",
@@ -7717,6 +7719,26 @@
       "action": "claim",
       "agent": "astra_neurologie",
       "code": "G37"
+    },
+    {
+      "at": "2026-11-02T18:55:16+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T18:55:18+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "preparation",
+      "message": "G37 : acquisition attendue puis worktree complet propre,start/gate/claim effectifs ; PromptVérité lu en premier,instructions identiques parSHA et7sources initiales prises enempreinte,aucune recherche primaire ni rédaction encore revendiquée."
+    },
+    {
+      "at": "2026-11-02T18:58:28+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "G37 : huit sous-codes et exclusions réellement lus dans ClaML français etBfArM ; journal des deux lectures créé, pistes anciennes inventoriées ; téléchargements ciblés en cours sans les compter comme lus,aucune rédaction."
     }
   ],
   "cache": {
@@ -14918,7 +14940,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T18:55:13+00:00",
+    "observed_at": "2026-11-02T19:05:14+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -16981,7 +17003,7 @@
         "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "local_preview": "/tmp/Medina-neurologie-G25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G25-INTEGRATE/G25-apercu-autonome.html",
         "exists": true,
-        "sha256": "02b2e28043adcb4f89e4abadc60e59311038e86a5e14fbbd6567675798818b7c",
+        "sha256": "25c3c9ceb2dc1a58ede0221d041cb1a63aea1b9bc30426348c8485893e642903",
         "bytes": 10999977,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/g25-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G25-INTEGRATE/G25-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/g25-integrate-g1",

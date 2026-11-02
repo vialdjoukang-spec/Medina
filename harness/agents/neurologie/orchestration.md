@@ -284,3 +284,8 @@ Quarante-et-un achèvements reçus et confirmés par le parent avant G36 ; ce re
 ## 2026-11-02T18:52:53.475704+00:00 — G36 réellement clos et libéré
 
 Source 302bbc6f et final 94260735558de188c27c4625feec9214d13cc027 poussés, distant exact et worktree propre ; garde finale passée. Complete 18:50:48 UTC et état released fraîchement vérifié au registre 92805e83bc3290cecc5c18ef161c905f4fd232a6. Liaison unique 1e32e075 intacte, sans renouvellement. Quinze références, quatorze points et vingt questions, 48 sections, 37 fenêtres, quatre quiz, six sciences et neuf unités sémiologiques ; onze captures effectivement inspectées. Deux lacunes conservées et limites MOG, ravulizumab, FI et Hurst explicites. Quatre self_review et SEMIO, aucune certification humaine, aucune PR/main. G37 candidat suivant sous registre frais et acquisition attendue avant worktree, start propre avant création du dossier de preuves.
+
+
+## 2026-11-02T18:55:30.373743+00:00 — G37 acquis et entrée vérifiée
+
+Acquisition 9180403b7d28a2e67a0f2db92a1bddfb199ced33 terminée et état actif fraîchement vérifié avant création du worktree complet. État propre et registre frais avant start ; dossier OUT créé seulement après succès. Gate et claim effectifs à 2026-11-02T18:54:36+00:00. Prompt de vérité lu comme premier document médical ; instructions identiques par empreinte aux lectures antérieures. Sept sources initiales conservées ; inventaire neuf SVG, aucune image, 52 fenêtres et quatre quiz. Aucune lecture primaire ni rédaction encore revendiquée à ce jalon. Prochain G52 après clôture et libération effectives ; G09/G21/G24/G25/G26 exclus.
