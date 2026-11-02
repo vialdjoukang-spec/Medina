@@ -198,33 +198,154 @@
     "words": 0,
     "science_words": 0
   },
-  "next_action": "Inventaire et recherche ciblée suisse/européenne ; porte VÉRITÉ obligatoire avant rédaction.",
-  "status": "recherche",
-  "updated_at": "2026-11-02T14:57:26.878504+00:00",
+  "next_action": "Rapport distant actualisé puis préparation D65 en lecture seule ; priorité catalogue E04, aucune acquisition D65 pendant sa réservation.",
+  "status": "termine",
+  "updated_at": "2026-11-02T16:16:21.410999+00:00",
   "current": {
     "code": "D62",
     "worktree": "/workspace/Medina-hematologie-D62",
     "branch": "codex/alpha77/d62-integrate-g1",
-    "status": "research_pending",
+    "status": "completed_released",
     "allow_new_course": true,
-    "shared_path_reserved": "chapters.json"
+    "shared_path_reserved": "chapters.json",
+    "final_commit": "e9d210c65a1063fbda12cc9978488d7b8a9a87ee",
+    "release_registry_sha": "108145b7f49ac93d912952064e239e30d494547f"
   },
-  "sources_current": 0,
+  "sources_current": 27,
   "sources_read": 0,
   "source_inherited": 0,
-  "monograph_points_mapped": 0,
-  "medina_rubrics": 0,
+  "monograph_points_mapped": 14,
+  "medina_rubrics": 20,
   "blocking_findings": [],
-  "preview": null,
-  "preview_sha256": null,
+  "preview": "/tmp/Medina-hematologie-D62/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D62-INTEGRATE/D62-apercu-autonome.html",
+  "preview_sha256": "44225bf5a0a4c594cdb11efc14a73661b366357a69c0737501d834af39cda1ce",
   "tests": {},
-  "reviews": {},
-  "complete": false,
+  "reviews": {
+    "medical": "self_review",
+    "language": "self_review",
+    "visual_desktop": "self_review",
+    "visual_mobile": "self_review"
+  },
+  "complete": true,
   "clinical_certification": false,
   "tokens_actual": null,
   "cost_actual": null,
-  "limitations": [],
-  "completion": null,
+  "limitations": [
+    {
+      "id": "D62-L1",
+      "text": "Revue médicale et linguistique ciblée par le même auteur ; aucune validation humaine indépendante, aucune note20/20.",
+      "blocking": false
+    },
+    {
+      "id": "D62-L2",
+      "text": "Incidence nationaleD62, fréquences de signes et performances isolées non retrouvées ; lacune exposée plutôt que remplacée par des statistiques d’autres populations.",
+      "blocking": false
+    },
+    {
+      "id": "D62-L3",
+      "text": "Adultes principalement ; pas protocole pédiatrique, de néonatologie ou de traumatisme cérébral complet extrapolé.",
+      "blocking": false
+    },
+    {
+      "id": "D62-L4",
+      "text": "SGGG2022 etOMS2025 ont des formulations obstétricales distinctes ; aucune adoption suisse fictive du texteOMS.",
+      "blocking": false
+    },
+    {
+      "id": "D62-L5",
+      "text": "TXA : indication digestiveFI versusESGE, contre-indication rénale sévère versus tableau et allaitement sont explicitement signalés ; pas ordonnance simplifiée.",
+      "blocking": false
+    },
+    {
+      "id": "D62-L6",
+      "text": "Ferinject : confirmation de carence selonFI et ferritine postpartum inflammatoire doivent être conciliées cliniquement ; besoin total distinct du plafond.",
+      "blocking": false
+    },
+    {
+      "id": "D62-L7",
+      "text": "Octaplex : pas de dose universelleD62 ; avis spécialisé, héparine et déficitATIII à respecter, données pédiatriques non établies.",
+      "blocking": false
+    },
+    {
+      "id": "D62-L8",
+      "text": "HUG2022 etSwissmedic2024 restent des références datées ; normes du laboratoire et procédures du centre priment sur une transposition mécanique.",
+      "blocking": false
+    },
+    {
+      "id": "D62-L9",
+      "text": "Deux originaux photographiques du normal, pas images diagnostiques d’une hémorragie. Repères français en légende, pixels intacts ; cinq schémas logiques non anatomiques.",
+      "blocking": false
+    },
+    {
+      "id": "D62-L10",
+      "text": "BannièrePROFILES147/165 cohérente avec situations lues ; compteurs globaux du frontend hérité ne certifient pas cette campagne ni sa qualité médicale.",
+      "blocking": false
+    },
+    {
+      "id": "D62-L11",
+      "text": "Navigation Tab/Entrée vérifiée ; navigation par flèches non prise en charge par moteur hérité. Des barres fixes peuvent recouvrir le bas de longues captures.",
+      "blocking": false
+    },
+    {
+      "id": "D62-L12",
+      "text": "Livre24 : corps de fenêtre mesuré24.004px et légendes16.944px par taille relative ; police et compteurs hérités non modifiés globalement.",
+      "blocking": false
+    },
+    {
+      "id": "D62-L13",
+      "text": "Aperçu testé viaHTTP intercepté, aucun déploiement ni fonctionnementfile:// revendiqué ; aucunePR/main, revueVial encore attendue.",
+      "blocking": false
+    },
+    {
+      "id": "D62-L14",
+      "text": "Délais de conduite/arrêt de travail spécifiquesD62 et garantie de remboursement non établis ; limites administratives déclarées.",
+      "blocking": false
+    }
+  ],
+  "completion": {
+    "agent": "codex_hematologie",
+    "code": "D62",
+    "at": "2026-11-02T16:15:39+00:00",
+    "branch": "codex/alpha77/d62-integrate-g1",
+    "worktree": "/tmp/Medina-hematologie-D62",
+    "folder": "/tmp/Medina-hematologie-D62/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D62-INTEGRATE",
+    "manifest_sha256": "4fb29682fb351f655683c0368a7bb924d0c7f485a5029294f64687a2c76b1080",
+    "source_binding_sha256": "4c6e464f053c5972fc46a6510fd7d28a8d8938251d0356c8ee7a8d6722bdc9bc",
+    "review_modes": {
+      "medical": "self_review",
+      "language": "self_review",
+      "visual_desktop": "self_review",
+      "visual_mobile": "self_review"
+    },
+    "clinical_certification": false,
+    "publication_allowed": false,
+    "preview_sha256": "44225bf5a0a4c594cdb11efc14a73661b366357a69c0737501d834af39cda1ce",
+    "semiology_contract": {
+      "code": "D62",
+      "observed_at": "2026-11-02T16:15:39+00:00",
+      "passed": true,
+      "checks": {
+        "six_science_tabs": true,
+        "first_selected_semio": true,
+        "semio_panel_label_and_visible": true,
+        "first_unit_exact_h3": true,
+        "nine_named_sections": true,
+        "linked_sources_in_semio": true,
+        "clinical_semio_marker": true
+      },
+      "findings": [],
+      "source_hashes": {
+        "chapters/D62/D62_a.html": "b313050d633e243a7451758a24e87247a99df8f2e2855bb4e4f2586bda97bec3",
+        "chapters/D62/D62_b.html": "4f0128b604a56f2bf074934a06240e3411a1fbd976bc73bc78a3b169e75f195d",
+        "chapters/D62/D62_c.html": "4972b8ef4743a501faa087ab57f694d2875be59e5fe86d1cc7a1087d07b7fc3c",
+        "chapters/D62/D62_d.html": "b866b06fa51a3d424eaae7c7e191fbbacf3cf730f6f68f13989679a0dbb0910c"
+      },
+      "clinical_certification": false,
+      "author_activity_refreshed": false,
+      "source_bindings_refreshed": false,
+      "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+    }
+  },
   "completed_lessons": [
     {
       "selected_lesson": "C85",
@@ -819,6 +940,126 @@
         {
           "id": "C92-L15",
           "text": "CIM-10-GM 2024 OFS : sous-codes et rémission relus. Aucune certification exhaustive de facturation2026 ni garantie de remboursement individuel ; revue Vial attendue avant toute PR/main.",
+          "blocking": false
+        }
+      ],
+      "complete": true
+    },
+    {
+      "code": "D62",
+      "completion": {
+        "agent": "codex_hematologie",
+        "code": "D62",
+        "at": "2026-11-02T16:15:39+00:00",
+        "branch": "codex/alpha77/d62-integrate-g1",
+        "worktree": "/tmp/Medina-hematologie-D62",
+        "folder": "/tmp/Medina-hematologie-D62/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D62-INTEGRATE",
+        "manifest_sha256": "4fb29682fb351f655683c0368a7bb924d0c7f485a5029294f64687a2c76b1080",
+        "source_binding_sha256": "4c6e464f053c5972fc46a6510fd7d28a8d8938251d0356c8ee7a8d6722bdc9bc",
+        "review_modes": {
+          "medical": "self_review",
+          "language": "self_review",
+          "visual_desktop": "self_review",
+          "visual_mobile": "self_review"
+        },
+        "clinical_certification": false,
+        "publication_allowed": false,
+        "preview_sha256": "44225bf5a0a4c594cdb11efc14a73661b366357a69c0737501d834af39cda1ce",
+        "semiology_contract": {
+          "code": "D62",
+          "observed_at": "2026-11-02T16:15:39+00:00",
+          "passed": true,
+          "checks": {
+            "six_science_tabs": true,
+            "first_selected_semio": true,
+            "semio_panel_label_and_visible": true,
+            "first_unit_exact_h3": true,
+            "nine_named_sections": true,
+            "linked_sources_in_semio": true,
+            "clinical_semio_marker": true
+          },
+          "findings": [],
+          "source_hashes": {
+            "chapters/D62/D62_a.html": "b313050d633e243a7451758a24e87247a99df8f2e2855bb4e4f2586bda97bec3",
+            "chapters/D62/D62_b.html": "4f0128b604a56f2bf074934a06240e3411a1fbd976bc73bc78a3b169e75f195d",
+            "chapters/D62/D62_c.html": "4972b8ef4743a501faa087ab57f694d2875be59e5fe86d1cc7a1087d07b7fc3c",
+            "chapters/D62/D62_d.html": "b866b06fa51a3d424eaae7c7e191fbbacf3cf730f6f68f13989679a0dbb0910c"
+          },
+          "clinical_certification": false,
+          "author_activity_refreshed": false,
+          "source_bindings_refreshed": false,
+          "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+        }
+      },
+      "limitations": [
+        {
+          "id": "D62-L1",
+          "text": "Revue médicale et linguistique ciblée par le même auteur ; aucune validation humaine indépendante, aucune note20/20.",
+          "blocking": false
+        },
+        {
+          "id": "D62-L2",
+          "text": "Incidence nationaleD62, fréquences de signes et performances isolées non retrouvées ; lacune exposée plutôt que remplacée par des statistiques d’autres populations.",
+          "blocking": false
+        },
+        {
+          "id": "D62-L3",
+          "text": "Adultes principalement ; pas protocole pédiatrique, de néonatologie ou de traumatisme cérébral complet extrapolé.",
+          "blocking": false
+        },
+        {
+          "id": "D62-L4",
+          "text": "SGGG2022 etOMS2025 ont des formulations obstétricales distinctes ; aucune adoption suisse fictive du texteOMS.",
+          "blocking": false
+        },
+        {
+          "id": "D62-L5",
+          "text": "TXA : indication digestiveFI versusESGE, contre-indication rénale sévère versus tableau et allaitement sont explicitement signalés ; pas ordonnance simplifiée.",
+          "blocking": false
+        },
+        {
+          "id": "D62-L6",
+          "text": "Ferinject : confirmation de carence selonFI et ferritine postpartum inflammatoire doivent être conciliées cliniquement ; besoin total distinct du plafond.",
+          "blocking": false
+        },
+        {
+          "id": "D62-L7",
+          "text": "Octaplex : pas de dose universelleD62 ; avis spécialisé, héparine et déficitATIII à respecter, données pédiatriques non établies.",
+          "blocking": false
+        },
+        {
+          "id": "D62-L8",
+          "text": "HUG2022 etSwissmedic2024 restent des références datées ; normes du laboratoire et procédures du centre priment sur une transposition mécanique.",
+          "blocking": false
+        },
+        {
+          "id": "D62-L9",
+          "text": "Deux originaux photographiques du normal, pas images diagnostiques d’une hémorragie. Repères français en légende, pixels intacts ; cinq schémas logiques non anatomiques.",
+          "blocking": false
+        },
+        {
+          "id": "D62-L10",
+          "text": "BannièrePROFILES147/165 cohérente avec situations lues ; compteurs globaux du frontend hérité ne certifient pas cette campagne ni sa qualité médicale.",
+          "blocking": false
+        },
+        {
+          "id": "D62-L11",
+          "text": "Navigation Tab/Entrée vérifiée ; navigation par flèches non prise en charge par moteur hérité. Des barres fixes peuvent recouvrir le bas de longues captures.",
+          "blocking": false
+        },
+        {
+          "id": "D62-L12",
+          "text": "Livre24 : corps de fenêtre mesuré24.004px et légendes16.944px par taille relative ; police et compteurs hérités non modifiés globalement.",
+          "blocking": false
+        },
+        {
+          "id": "D62-L13",
+          "text": "Aperçu testé viaHTTP intercepté, aucun déploiement ni fonctionnementfile:// revendiqué ; aucunePR/main, revueVial encore attendue.",
+          "blocking": false
+        },
+        {
+          "id": "D62-L14",
+          "text": "Délais de conduite/arrêt de travail spécifiquesD62 et garantie de remboursement non établis ; limites administratives déclarées.",
           "blocking": false
         }
       ],

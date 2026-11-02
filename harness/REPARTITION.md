@@ -153,3 +153,7 @@ La mission active préapprouvée D62 autorise explicitement sa création et le f
 E40 achevé à15:42:01UTC ; final `39d8ce5883d975ce83e9e21f6c61d48a72b55e31`, libération `34d399ea690e7f174497cad680a3c69d84bafae3`. Le slot natif `/root/sol_nephrologie` reçoit exclusivement G21, mouvements anormaux, nom de production `Sol-Neurologie-G21`. Le slot neuro a confirmé son exclusion et poursuit G08 puis G22. Préflight/réservation/start/claim restent obligatoires et ne sont pas attestés par cette allocation.
 
 E04 avait été envisagé : le préflight a montré une nouvelle leçon incluant `chapters.json`, encore réservé par D62. Proposition annulée avant acquisition ; E04 reste à endocrinologie après E42. Aucun conflit de catalogue créé, aucune activité auteur ni reçu source renouvelé par ce changement.
+
+### Transition vérifiée D62 → priorité catalogue E04
+
+D62 : achèvement16:15:39UTC, branche finale `e9d210c65a1063fbda12cc9978488d7b8a9a87ee`, guard et égalité distante vérifiés. Libération registre `108145b7f49ac93d912952064e239e30d494547f`. L’auteur endocrinologie reçoit priorité sur `chapters.json` pour E04. Le parent prépare le rapport et les sources D65 hors production canonique ; aucune acquisition D65 avant disponibilité réelle. G08 reste à Sol-Neurologie ; G21 à Sol-Neurologie-G21 (identifiant natif historique sol_nephrologie). Les noms historiques des reçus restent conservés.

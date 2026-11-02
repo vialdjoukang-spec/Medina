@@ -10,7 +10,7 @@ def read(sha,path):
  return subprocess.check_output(['git','show',sha+':'+path],cwd=ROOT)
 def main():
  p=argparse.ArgumentParser();p.add_argument('evidence',type=Path);a=p.parse_args()
- collection=json.loads((a.evidence/'collection.json').read_text());completed={x['code'] for x in collection['completed_lessons']};rows=[]
+ collection=json.loads((a.evidence/'collection.json').read_text());extra=a.evidence/'reconciled-completions.json';reconciled=json.loads(extra.read_text()) if extra.exists() else {};completed={x['code'] for x in collection['completed_lessons']}|{x['completion']['code'] for x in reconciled.get('remote_completions_after_snapshot',[])};rows=[]
  for v in collection['versions']:
   if v['code'] not in completed or not v.get('binding_preview_matches'):continue
   code=v['code'];sha=v['version_sha'];parts={f'chapters/{code}/{code}_{suffix}.html':read(sha,f'chapters/{code}/{code}_{suffix}.html') for suffix in 'abcd'}
