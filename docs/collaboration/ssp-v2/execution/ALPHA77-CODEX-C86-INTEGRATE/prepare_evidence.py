@@ -1,0 +1,113 @@
+#!/usr/bin/env python3
+"""Consigner les passages réellement lus, sans transformer téléchargement en lecture."""
+from pathlib import Path
+import json,hashlib,datetime,subprocess
+from author_popups import URL,LABEL,SOURCE_ID
+OUT=Path(__file__).resolve().parent;ROOT=OUT.parents[4]
+CACHE=Path('/workspace/medina-source-cache/C86')
+R=OUT/'recherche_C86';R.mkdir(exist_ok=True)
+# clé, éditeur, version, passage réellement parcouru, paraphrase, population/limite, cache
+ROWS=[
+('ESMO25','ESMO/EHA, HemaSphere','2025','Diagnostic ; première ligne ENKTL/HSTL/EATL/TFH ; RCD-II ; rechute ; suivi',
+'Prélèvement et expertise ; programmes selon entité/aptitude, greffes ; contrôles RCD-II à considérer, suivi clinique et absence d’imagerie systématique en rémission.',
+'PTCL systémiques adultes ; le champ ne remplace pas les recommandations LyP ni BPDCN. Séries et essais distingués, pas lecture intégrale de toutes les études citées.','esmo-eha2025-parallel.md'),
+('OMS22','Alaggio et al., Leukemia / OMS','2022','Lymphomes TFH, EBV nodal, entités intestinales ; figure 7 et licence éditeur',
+'CD4 et ≥2 marqueurs TFH avec architecture ; étapes TET2/DNMT3A puis RHOA/IDH2 ; trois types nodaux ; classification séparée des entités digestives.',
+'Classification et modèle biologique, pas guide de traitement ; cache partagé C85 réutilisé et passages spécifiques C86 relus.','who-lymphoid2022.txt'),
+('OMS-DC','Khoury et al., Leukemia / OMS','2022','Section néoplasies dendritiques/histiocytaires ; tableaux 14–15 BPDCN',
+'BPDCN est une néoplasie dendritique ; combinaisons pDC/CD123 avec CD4 et/ou CD56 et exclusions de lignée, plutôt que quatre marqueurs tous obligatoires.',
+'Classification diagnostique ; une expression CD123 isolée ne suffit pas.','who-myeloid2022-parallel.md'),
+('TSE','Tse et al., Journal of Hematology & Oncology','2022','Diagnostic, pathogenèse, pronostic, maladie avancée ; figure 1, légende et licence',
+'EBV et phénotype intégrés ; ADN plasmatique et différence avec sang total ; P-gp, asparagine ; cas ORL/cutanés originaux.',
+'Revue de séries hétérogènes ; les choix 2025 priment pour la conduite actuelle, leucémie NK agressive discutée mais entité distincte.','tse2022-parallel.md'),
+('CUT18','ESMO, Annals of Oncology','2018','Stadification cutanée ; traitement SPTCL ; LyP/pcALCL ; survies avec/sans HLH',
+'Bilan proportionné à la présentation ; immunosuppression possible dans SPTCL sans HLH, traitement plus intensif selon progression/HLH ; populations pronostiques séparées.',
+'Recommandation européenne historique confrontée à S2k et aux classifications plus récentes ; pas extrapolation des survies à chaque patient.','esmo-cutaneous2018-parallel.md'),
+('WHO-CUT','Willemze et al., OMS/EORTC, Blood','mise à jour 2018 publiée 2019','Tableau 1, tableau 2 LyP, paragraphes ALK et DUSP22',
+'Registres NL/Autriche 2002–2017 : proportions et survies spécifiques, types LyP et différentiel ; rares formes cutanées ALK+, portée spécifique DUSP22.',
+'Dénominateur lymphomes cutanés différent de lymphomes T cutanés ; survie spécifique différente de survie globale.','who-cutaneous2018-parallel.md'),
+('KEMPF','EORTC/ISCL/USCLC, auteurs européens dont Zurich, Blood','2011','Bilan initial ; traitement LyP/pcALCL ; faible dose MTX ; suivi à vie',
+'Observation légitime de LyP, MTX souvent 5–30 mg hebdomadaires, récidives et absence de prévention démontrée des lymphomes associés ; suivi à vie.',
+'Consensus européen/international ancien, petites séries ; 4–25 % de lymphomes associés non annuel ; pas une FI suisse MTX complète.','kempf2011-parallel.md'),
+('ONKO','DGHO/OeGHO/SSH/SGMO, Onkopedia','octobre 2025','Introduction, classification, épidémiologie, facteurs de risque et stratégie générale',
+'PTCL hétérogènes, fréquence européenne, expertise et nomenclature OMS/ICC ; données rares et traitements par sous-type.',
+'Sections ciblées, pas lecture intégrale ni toutes références originales ; ancien libellé et chiffres EATL confrontés à OMS/ESsCD.','onkopedia.txt'),
+('SZO','Zander et Renner, Schweizer Zeitschrift für Onkologie','2021','Pages 14–15, diagnostic, épidémiologie, PIT/mPIT et traitement historique',
+'Proportion suisse secondaire NICER 10–15 % ; bilan, cœur avant anthracyclines ; mPIT remplace moelle par Ki67.',
+'Revue suisse datée ; remboursement 2021 et traitement historique ne certifient pas 2026.','swiss-szo2021.txt'),
+('CIM','BfArM','CIM-10-GM 2024','C84.5–C84.7 et C86.0–C86.6, inclusions/exclusions',
+'C86.4 inclut BPDCN ; C86.6 LyP/pcALCL ; ALCL systémique exclu de C86.',
+'Table de correspondance 2024 consultée ; pas certification du codage administratif suisse 2026.','cim-esge-excerpts.json'),
+('CARVAO','Carvão et al., Portuguese Journal of Gastroenterology','2019','Introduction, discussion, série de 19 cas et estimations de risque',
+'Risque cité chez hommes <35 ans : 1/7404 mono, 1/3534 combiné ; 19 cas publiés, sous-groupes de données cliniques incomplets.',
+'Pas horizon annuel ni causalité prouvée ; proposition ancienne de durée ne justifie pas arrêt automatique à deux ans.','carvao2019-parallel.md'),
+('MOONLA','Moonla et al., Haematologica','2023','Résumé, méthodes, résultats agrégés et discussion',
+'Cohorte thaïlandaise 34 personnes dont 28 SPTCL ; analyse individuelle agrégée 127 ; OR sexe/génotype et variabilité des fréquences HAVCR2.',
+'Associations et intervalles larges ; pas risque absolu individuel, pas prévalence suisse.','moonla2023-parallel.md'),
+('GAYDEN','Gayden et al., Nature Genetics','2018','Résumé uniquement',
+'Variants germinaux HAVCR2, repliement/perte membranaire TIM-3, cytokines et proportions de la série ; distributions selon ascendance.',
+'Lecture du résumé, pas méthodes ou résultats intégraux ; environ 60 % non universel.','gayden2018-parallel.md'),
+('ESsCD26','European Society for the Study of Coeliac Disease, UEG Journal','mise à jour 2025, partie 2 publiée 2026','§5.3, tableau 7, prise en charge RCD, présentation EATL §6.2',
+'Symptômes/atrophie après ≥12 mois de régime strict et exclusions ; type II typiquement ≥20 % aberrants par cytométrie ; risque élevé sélectionné, complications digestives.',
+'Nomenclature ancienne « EATL type II » corrigée selon OMS ; pas extrapolation du risque RCD-II à toutes les maladies cœliaques.','esscd2026-parallel.md'),
+('HLH19','La Rosée et al., groupe international adulte, Blood','2019','Diagnostic et tableau 2 HLH-2004, adaptation adulte',
+'Moléculaire compatible ou cinq critères sur huit ; cytopénies, TG/fibrinogène, ferritine, sCD25 ; limites pédiatriques et clinique adulte.',
+'La note historique concernant malignité ne doit pas exclure un HLH lié au lymphome ; pas prescription d’un protocole pédiatrique complet.','hlh2019-parallel.md'),
+('HLH23','EULAR/ACR, Annals of the Rheumatic Diseases','points 2022 publiés 2023','Points à considérer 1–5, critères, ferritine et prise en charge initiale',
+'Évaluation des organes et déclencheurs, signes composites et dynamique ; immunomodulation précoce possible pendant bilan chez patient grave.',
+'Consensus européen/international ; pas seuil unique universel ni posologie de réanimation transposée.','eular-hlh2023-parallel.md'),
+('BPDCN23','Pagano et al., consensus international, HemaSphere','2023','Besoins cliniques 1,3,5–8 : diagnostic, aptitude, greffes, SNC et pédiatrie',
+'Panel diagnostique intégré ; allogreffe CR1 chez appropriés, autogreffe très sélectionnée ; étude SNC et parcours pédiatrique distinct.',
+'Consensus de maladie rare ; pas garantie d’efficacité individuelle ni substitution de l’autorisation suisse adulte.','bpdcn2023-parallel.md'),
+('S2K','Guideline S2k, Journal der Deutschen Dermatologischen Gesellschaft','mise à jour 2021 publiée 2022','§5 SPTCL, extraits sélectionnés',
+'Prednisolone et immunosuppression selon situation sans syndrome hémophagocytaire ; ciclosporine/méthotrexate parmi options.',
+'Passages ciblés, pas monographie complète ni dose suisse universelle.','c86finalfetch0-excerpts.json'),
+('LUPUS','Guideline S2k lupus cutané, JDDG','2021','Diagnostic, tableau 8 de panniculite lupique et différentiel SPTCL',
+'Confrontation clinique/histologique ; autoanticorps parfois absents dans lupus cutané ; différentiels des panniculites.',
+'Passages ciblés ; aucun marqueur unique présenté comme discriminant absolu.','c86finalfetch0-excerpts.json'),
+('ADCETRIS','Swissmedic AIPS via AmiKo','juin 2025, GTIN 7680621320010','Indications, posologie, adaptations mono/CHP, G-CSF, interactions, LEMP, grossesse/fertilité',
+'Indication suisse PTCL adulte avec CHP et cutané selon parcours ; 1,8 mg/kg, plafond 100 kg ; bléomycine contre-indiquée ; surveillance et adaptations spécifiques.',
+'Produit et schéma exacts ; autorisation non garantie de remboursement, règles mono non transférées à CHP.','adcetris-fi.txt'),
+('ELZONRIS','Swissmedic AIPS via AmiKo','novembre 2022, GTIN 7680687970013','Indication/dose, algorithme fuite capillaire, seuils organes, populations de sécurité, reproduction',
+'BPDCN adulte première ligne ; 12 µg/kg J1–5/21 ; premier cycle hospitalier ; albumine initiale32 g/L et seuils sous traitement distincts ; 40/225 et19/89 populations séparées.',
+'Pas indication pédiatrique ; données d’insuffisance d’organes limitées ; pas garantie de pénétration SNC.','elzonris-fi.txt'),
+('ONCASPAR','Swissmedic AIPS via AmiKo','septembre 2025, GTIN 7680669340018','Indication, doses LLA par âge/surface, contre-indications, pancréas/foie/coagulation/activité',
+'Autorisation LLA seulement ; doses non transposées ENKTL ; activité non interchangeable entre préparations ; surveillance hépatique hebdomadaire jusqu’à quatre semaines après dernière dose.',
+'Coquille mécanistique du texte exclue ; contradictions de reprises hépatiques non résolues par invention, renvoi au protocole/FI.','oncaspar-fi.txt'),
+('HUG','Hôpitaux universitaires de Genève','enseignement 9 septembre 2019','Table de l’hémogramme adulte et bilan d’hémolyse, extraits',
+'Hb homme140–180/femme120–160 g/L, leucocytes4–11 G/L, plaquettes150–350 G/L ; réticulocytes/LDH/haptoglobine/bilirubine/Coombs.',
+'Repères datés non norme nationale2026 ; exemple avec unité Hb manifestement incohérente non utilisé.','c86support1-excerpts.json'),
+('OFSP','Office fédéral de la santé publique','page consultée 2 novembre 2026','Médicaments, liste des spécialités, prix et limitations',
+'Prise en charge et limitations LS distinctes de l’autorisation de mise sur le marché.',
+'Aucune limitation individuelle des trois produits n’est certifiée ici.','c86finalfetch1-excerpts.json'),
+('OAMAL','Office fédéral de la santé publique','page consultée 2 novembre 2026','Cas particuliers de prise en charge, art.71a–d',
+'Cadres hors indication/limitation, produits autorisés non LS ou importés ; conditions de bénéfice et alternatives selon cas.',
+'Explication générale, pas accord d’assurance ni garantie financière individuelle.','c86finalfetch1-excerpts.json'),
+('NORMAL-A','OpenStax, Anatomy and Physiology 2e','§21.1 consulté 2 novembre 2026','Organes lymphoïdes primaires/secondaires, circulation, ganglion/rate/muqueuse',
+'Développement B dans moelle, T dans thymus ; circulation et organisation des réponses dans les tissus.',
+'Texte de biologie normale paraphrasé ; aucune recommandation clinique américaine ni figure OpenStax utilisée.','c86normal-excerpts.json'),
+('NORMAL-T','OpenStax, Anatomy and Physiology 2e','§21.3 consulté 2 novembre 2026','Présentation antigénique, expansion clonale, fonctions auxiliaires/cytotoxiques/régulatrices',
+'Réponse T normale et distinction expansion physiologique/malignité ; perforine/granzymes et fonctions CD4/CD8 avec exceptions.',
+'Texte général ; simplification incorrecte de stade thymocytaire dans l’extrait non reproduite ; pas de recommandation thérapeutique.','c86normal-excerpts.json'),
+('PROFILES17','CIMS/SMIFK','2017','Pages des listes SSP2,4,6,16,21,25,88,93,159,227 ; PDF officiel et extraction layout',
+'Numérotation des situations de départ : adénopathie, fatigue, fièvre, dénutrition, épistaxis, lésions buccales, purpura et lésions cutanées.',
+'Objectifs fédéraux, pas liste officielle de diagnostics C86 ; source partagée réutilisée, passages relus pour C86.','../C85/profiles2017-official.pdf'),
+('MEBEKO26','OFSP/MEBEKO','exigences examen 2026','§2, référentiel265 situations',
+'Le cadre de l’examen 2026 renvoie à265situations PROFILES.',
+'Lecture parent partagée et attribuée ; n’anticipe pas les questions d’examen.','../C85/mebeko2026.md'),
+('PROFILES-TRANS','Swiss Medical Weekly','2025','Outlook / transition du référentiel',
+'PROFILES2 enseigné dès2025/26, base de l’examen fédéral dès2028.',
+'Lecture parent partagée ; version d’enseignement distincte du cadre examen2026.',None),
+('ESGE22','European Society of Gastrointestinal Endoscopy, Endoscopy','mise à jour2022','MR7/MR9, tableau1, suspicion de tumeur du grêle et risque de rétention',
+'La capsule ne remplace pas le tissu ; évaluer risque de rétention, obstruction/sténose et choisir exploration adaptée.',
+'Les recommandations de perméabilité propres à Crohn ne sont pas transposées automatiquement à chaque EATL.','cim-esge-excerpts.json')]
+sources=[]
+for k,publisher,version,section,passage,limits,cache in ROWS:
+ path=CACHE/cache if cache else None
+ sources.append({'id':SOURCE_ID[k],'key':k,'url':URL[k],'titre':LABEL[k],'editeur':publisher,'version_annee':version,'date_consultation':'2026-11-02','section_page':section,'passage_paraphrase':passage,'population':limits,'limites':limits,'niveau_lecture':'abstract' if k=='GAYDEN' else 'section','read_in_current_session':True,'reuse_attributed':k in {'OMS22','PROFILES17','MEBEKO26','PROFILES-TRANS'},'cache_sha256':hashlib.sha256(path.read_bytes()).hexdigest() if path and path.exists() else None})
+assert len(sources)==len(SOURCE_ID)==31
+historical=ROOT/'livraisons/Livraison Claude/H-08-Hématologie/betta/CYCLE_34_C86/sources.json'
+inherited=json.loads(historical.read_text())
+(R/'inherited-sources.json').write_text(json.dumps({'provenance':str(historical.relative_to(ROOT)),'base_sha':'8a512893acbab9caa0dcfdd0e8682a44ea72fda6','status':'historical_not_automatically_reread','original':inherited},ensure_ascii=False,indent=2)+'\n')
+(R/'sources.json').write_text(json.dumps({'lecon':'C86','author':'Codex, parent de la filière hématologie','recorded_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'sources':sources,'source_count':len(sources),'historical_sources':'inherited-sources.json'},ensure_ascii=False,indent=2)+'\n')
+print(json.dumps({'sources_recorded':len(sources),'whole_article_read_claim':False,'clinical_certification':False}))

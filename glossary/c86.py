@@ -11,6 +11,8 @@ for _path in sorted(Path(__file__).parent.glob('*.py')):
         pass
 G = {}
 
+# Les ajouts restent propres à C86 ; aucune définition partagée n'est modifiée.
+
 
 def L(spec):
     """'E=Epstein;B=Barr' -> [['E','Epstein'],['B','Barr']]"""
@@ -25,10 +27,47 @@ def add(key, spec, full, definition, window):
     if key not in _existing:
         G[key] = {'lit': L(spec), 'full': full, 'def': '<p>' + definition + '</p>', 'ref': window}
 
+for key_,full_,definition_,window_ in [
+ ('HLH','Hemophagocytic lymphohistiocytosis — lymphohistiocytose hémophagocytaire','Syndrome hyperinflammatoire à interpréter par la clinique, les organes et plusieurs critères.','c86-slh'),
+ ('pDC','Plasmacytoid dendritic cell — cellule dendritique plasmacytoïde','Lignée de référence du BPDCN, distincte des cellules NK.','c86-bpdcn'),
+ ('ATLL','Adult T-cell leukemia/lymphoma — leucémie/lymphome T de l’adulte','Entité liée à HTLV-1, diagnostic différentiel selon contexte, hors des entités C86 ici.','c86-bio'),
+ ('F1','Suffixe du clone immunohistochimique βF1','Dans βF1, désigne le marqueur utilisé pour le récepteur T alpha-bêta ; pas un facteur de coagulation.','c86-sptcl'),
+ ('RCD-I','Refractory coeliac disease type I — maladie cœliaque réfractaire de type I','Forme réfractaire sans la population intraépithéliale aberrante caractéristique de RCD-II.','c86-rcd'),
+ ('OAMal','Ordonnance sur l’assurance-maladie','Les art. 71a–d organisent certains cas particuliers de prise en charge médicamenteuse.','c86-statut-ch'),
+ ('MF','Mycosis fongoïde','Lymphome T cutané distinct de LyP et pcALCL, important dans leur différentiel.','c86-diffdx'),
+ ('MEBEKO','Commission des professions médicales','Autorité suisse qui publie les exigences de l’examen fédéral.','c86-profils'),
+ ('CIMS','Commission interfacultés médicales suisse','Organisme du référentiel suisse PROFILES.','c86-profils'),
+ ('TCF4','Transcription factor 4 — facteur de transcription 4','Marqueur de différenciation pDC utilisé dans le panel BPDCN.','c86-bpdcn'),
+ ('CD304','Cluster of differentiation 304','Marqueur pDC dans le panel OMS, à intégrer aux autres critères.','c86-bpdcn'),
+ ('DUSP22','Dual specificity phosphatase 22','Gène dont les réarrangements ont une portée différente selon l’entité cutanée ou systémique.','c86-cd30'),
+ ('URL','Uniform resource locator — adresse de ressource','Adresse permettant de retrouver une source.','c86-lacunes'),
+ ('MMAE','Monométhylauristatine E','Charge cytotoxique du brentuximab védotine, avec exposition et toxicités propres.','c86-bv'),
+ ('PFS','Progression-free survival — survie sans progression','Critère d’essai distinct de la survie globale.','c86-rechute'),
+ ('G-CSF','Granulocyte colony-stimulating factor','Facteur de croissance granulocytaire ; prophylaxie primaire avec BV-CHP selon la FI suisse.','c86-bv'),
+ ('nTFHL','Nodal T-follicular helper lymphoma','Famille des lymphomes TFH nodaux ; AI désigne le type angio-immunoblastique.','c86-ntfh'),
+ ('sCD25','Soluble CD25 — récepteur soluble de l’interleukine 2','Biomarqueur inclus dans HLH-2004, dépendant de la méthode et de l’unité.','c86-slh'),
+ ('IL-2','Interleukine 2','Cytokine dont CD25 est une composante du récepteur.','c86-slh'),
+ ('HScore','Score H de probabilité de syndrome hémophagocytaire','Outil clinique complémentaire chez l’adulte ; le chapitre ne fournit pas son calcul complet ni une règle autonome de traitement.','c86-slh'),
+ ('TNMB','Tumour, node, metastasis, blood','Stadification du mycosis fongoïde/Sézary, différente de celle des autres lymphomes cutanés.','c86-stad-cutanee'),
+ ('TFG','Taux de filtration glomérulaire','Paramètre rénal dont le seuil doit rester lié au produit et au schéma.','c86-bv'),
+ ('AspMetDex','Asparaginase, méthotrexate, dexaméthasone','Variante orthographique d’AspaMetDex dans certaines recommandations.','c86-asp'),
+ ('P-GEMOX','Pégaspargase, gemcitabine, oxaliplatine','Programme ENKTL, distinct d’une dose de Oncaspar utilisée dans la LLA.','c86-asp'),
+ ('IVAC','Ifosfamide, étoposide, cytarabine','Programme intensif cité parmi des options de rattrapage ; protocole spécialisé.','c86-rechute'),
+ ('DHAP','Dexaméthasone, cytarabine, cisplatine','Programme de rattrapage cité par ESMO, choisi selon contexte.','c86-rechute'),
+ ('DHAX','Dexaméthasone, cytarabine, oxaliplatine','Variante de programme de rattrapage, non interchangeable sans protocole.','c86-rechute'),
+ ('GEMOX','Gemcitabine, oxaliplatine','Association citée en rattrapage selon entité et contexte.','c86-rechute'),
+ ('AOS','Assurance obligatoire des soins','Cadre suisse de prise en charge, distinct de l’autorisation Swissmedic.','c86-statut-ch'),
+ ('LS','Liste des spécialités','Liste suisse avec conditions/limitations à vérifier pour le cas individuel.','c86-statut-ch'),
+]:
+    add(key_,key_+'='+full_,full_,definition_,window_)
+for number_ in range(201,232):
+    add('S'+str(number_),'S=Source;'+str(number_)+'=identifiant de référence','Source '+str(number_),
+        'Référence du dossier C86 relu le 2 novembre 2026 ; le lien voisin mène au document et la section précise la portée de sa lecture.','c86-lacunes')
+
 
 # --- Familles et entités -----------------------------------------------------
 add('PTCL', 'P=Peripheral;T=T-;CL=Cell Lymphoma', 'Lymphome T périphérique (Peripheral T-Cell Lymphoma)',
-    'Lymphome agressif dont les cellules ont le phénotype de lymphocytes T post-thymiques matures ou de cellules NK, nodal ou extranodal.', 'c86-famille')
+    'Famille de lymphomes de cellules T matures, souvent agressifs ; certaines recommandations discutent aussi les néoplasies NK. Les entités et leurs traitements restent distincts.', 'c86-famille')
 add('PTCL-NOS', 'PTCL=Peripheral T-Cell Lymphoma;NOS=Not Otherwise Specified (sans autre spécification)', 'Lymphome T périphérique sans autre spécification',
     'Lymphome T périphérique qui ne relève d’aucune entité plus précise de la classification. Il est l’un des sous-types les plus fréquents en Europe.', 'c86-chop')
 add('ENKTL', 'E=Extranodal;NK=Natural Killer;T=T-;CL=Cell Lymphoma', 'Lymphome extranodal NK/T',
@@ -36,7 +75,7 @@ add('ENKTL', 'E=Extranodal;NK=Natural Killer;T=T-;CL=Cell Lymphoma', 'Lymphome e
 add('HSTL', 'H=Hepato;S=Spleno;T=T-;CL=Cell Lymphoma', 'Lymphome T hépatosplénique (Hepatosplenic T-Cell Lymphoma)',
     'Entité correspondant au sous-code C86.1 : splénomégalie, hépatomégalie, atteinte médullaire presque constante, sans adénopathie.', 'c86-hstl')
 add('EATL', 'E=Enteropathy;A=Associated;T=T-;CL=Cell Lymphoma', 'Lymphome T associé à une entéropathie (Enteropathy-Associated T-Cell Lymphoma)',
-    'Entité correspondant au sous-code C86.2, issue le plus souvent d’une maladie cœliaque réfractaire.', 'c86-eatl')
+    'Entité correspondant au sous-code C86.2, associée à une entéropathie ; le contexte réfractaire de type II augmente le risque sans être documenté chez chaque patient.', 'c86-eatl')
 add('MEITL', 'M=Monomorphic;E=Epitheliotropic;I=Intestinal;T=T-;CL=Cell Lymphoma', 'Lymphome T intestinal épithéliotrope monomorphe',
     'Entité séparée de l’EATL, sans lien avec la maladie cœliaque, à mutations SETD2 et JAK3/STAT5B.', 'c86-eatl')
 add('SPTCL', 'S=Subcutaneous;P=Panniculitis-like;T=T-;CL=Cell Lymphoma', 'Lymphome T sous-cutané de type panniculite',
@@ -58,11 +97,11 @@ add('BIA-ALCL', 'BIA=Breast Implant-Associated;ALCL=Anaplastic Large Cell Lympho
 add('TFH', 'T=T-;F=Follicular;H=Helper', 'Lymphocyte T folliculaire helper',
     'Lymphocyte exprimant CD10, BCL6, PD1, ICOS et CXCL13.', 'c86-tfh')
 add('SLH', 'S=Syndrome;L=d’activation Lympho-;H=Histiocytaire', 'Syndrome d’activation lymphohistiocytaire',
-    'Emballement immunitaire, complication fréquente des lymphomes T agressifs ; 17 % des SPTCL alpha-bêta.', 'c86-slh')
+    'Hyperinflammation avec risque de défaillance d’organes ; fréquence variable selon entité et population.', 'c86-slh')
 add('HLH-2004', 'HLH=HemophagocyticLymphoHistiocytosis (lymphohistiocytose hémophagocytaire);2004=année de publication des critères', 'Critères HLH-2004',
-    'Critères diagnostiques du syndrome d’activation lymphohistiocytaire ; non lus dans le dossier de sources de ce cours.', 'c86-slh')
+    'Huit critères historiques, relus dans les recommandations adultes 2019 ; interprétation clinique indispensable chez l’adulte.', 'c86-slh')
 add('RCD-II', 'RCD=Refractory Coeliac Disease (maladie cœliaque réfractaire);II=type II', 'Maladie cœliaque réfractaire de type II',
-    'Villosités atrophiques malgré un régime sans gluten strict de plus de 12 mois et lymphocytes intraépithéliaux aberrants supérieurs à 20 %.', 'c86-rcd')
+    'Symptômes et atrophie après au moins douze mois de régime strict, autres causes exclues ; population aberrante typiquement ≥20 % par cytométrie, avec clonalité à intégrer.', 'c86-rcd')
 add('LEMP', 'L=Leuco-;E=Encéphalopathie;M=Multifocale;P=Progressive', 'Leucoencéphalopathie multifocale progressive',
     'Complication neurologique décrite dans l’information professionnelle suisse du brentuximab védotine.', 'c86-bv')
 add('SMD', 'S=Syndrome;M=Myélo-;D=Dysplasique', 'Syndrome myélodysplasique', 'Diagnostic différentiel du HSTL, car la dysmyélopoïèse médullaire peut le simuler.', 'c86-hstl')
@@ -122,7 +161,7 @@ for n in ['2', '4', '5', '7', '8', '10', '33', '123', '303']:
 # --- Index, organismes, revues ------------------------------------------------
 add('IPI', 'I=International;P=Prognostic;I=Index', 'Index pronostique international', 'Cinq facteurs : âge supérieur à 60 ans, LDH, ECOG de 2 à 4, stade III ou IV, plus d’un site extranodal.', 'c86-index')
 add('PIT', 'P=Prognostic;I=Index for;T=T-cell lymphoma', 'Index pronostique des lymphomes T', 'Âge, état général, LDH et atteinte médullaire.', 'c86-index')
-add('mPIT', 'm=modifié;PIT=Prognostic Index for T-cell lymphoma', 'Index pronostique des lymphomes T modifié', 'PIT auquel s’ajoute le Ki-67.', 'c86-index')
+add('mPIT', 'm=modifié;PIT=Prognostic Index for T-cell lymphoma', 'Index pronostique des lymphomes T modifié', 'Version dans laquelle le Ki-67 remplace l’atteinte médullaire ; il ne s’ajoute pas comme cinquième item.', 'c86-index')
 add('PINK', 'P=Prognostic;I=Index of;N=Natural;K=Killer lymphoma', 'Index pronostique du lymphome NK', 'Âge supérieur à 60 ans, stade III ou IV, atteinte ganglionnaire à distance, sous-type non nasal.', 'c86-index')
 add('PINK-E', 'PINK=Prognostic Index of Natural Killer lymphoma;E=EBV (ADN d’EBV détectable)', 'Index PINK avec ADN d’EBV', 'PINK auquel s’ajoute un ADN d’EBV détectable.', 'c86-index')
 add('ICC', 'I=International;C=Consensus;C=Classification', 'Classification consensuelle internationale 2022', 'Classification des tumeurs hématolymphoïdes largement superposable à l’OMS 5e édition.', 'c86-classif')
@@ -150,13 +189,13 @@ add('CHOP-like', 'CHOP=Cyclophosphamide, doxorubicine, vincristine, prednisone;l
 add('ICE', 'I=Ifosfamide;C=Carboplatine;E=Étoposide', 'Ifosfamide, carboplatine, étoposide', 'Schéma préféré dans le HSTL (IV, B) ; développement usuel du sigle, non détaillé par les sources lues.', 'c86-ice')
 add('IVE', 'IVE=sigle de schéma, développement non établi par les sources lues', 'Schéma IVE', 'Schéma alterné avec du méthotrexate à dose intermédiaire dans l’EATL.', 'c86-eatl')
 add('DDGP', 'DDGP=sigle de schéma, développement non établi par les sources lues', 'Schéma DDGP', 'Schéma à base d’asparaginase pour l’ENKTL de stade III–IV chez le patient éligible à la greffe.', 'c86-asp')
-add('SMILE', 'SMILE=sigle de schéma, développement non établi par les sources lues', 'Schéma SMILE', 'Schéma à base d’asparaginase : réponse globale de 81 % et survie à cinq ans de 50 %.', 'c86-asp')
+add('SMILE', 'SMILE=sigle de schéma, développement non établi par les sources lues', 'Schéma SMILE', 'Programme à base d’asparaginase pour certaines situations ENKTL ; résultats dépendants de la population et du protocole.', 'c86-asp')
 add('mSMILE', 'm=modifié;SMILE=sigle de schéma, développement non établi par les sources lues', 'Schéma SMILE modifié', 'Variante du SMILE pour l’ENKTL de stade III–IV chez le patient éligible à la greffe.', 'c86-asp')
 add('AspaMetDex', 'AspaMetDex=sigle de schéma, développement non établi par les sources lues', 'Schéma AspaMetDex', 'Schéma à base d’asparaginase pour l’ENKTL chez le patient non éligible à la greffe.', 'c86-asp')
 add('P-GemOx', 'P-GemOx=sigle de schéma, développement non établi par les sources lues', 'Schéma P-GemOx', 'Schéma à base d’asparaginase pour l’ENKTL chez le patient non éligible à la greffe.', 'c86-asp')
 add('DeVIC', 'DeVIC=sigle de schéma, développement non établi par les sources lues', 'Schéma DeVIC', 'Chimiothérapie associée à 50–56 Gy de radiothérapie dans l’ENKTL (rémission complète 77 %).', 'c86-rt')
 add('non-CHOP', 'non=autre que;CHOP=Cyclophosphamide, doxorubicine, vincristine, prednisone', 'Schéma autre que le CHOP', 'Désigne les schémas plus intensifs que le CHOP dans la méta-analyse du HSTL.', 'c86-ice')
 add('ISRT', 'I=Involved;S=Site;R=Radiation;T=Therapy', 'Radiothérapie de site impliqué', 'Technique utilisée à 30–40 Gy dans le nTFHL-AI limité.', 'c86-rt')
-add('PUVA', 'P=Psoralène;UVA=Ultraviolets de type A', 'Photochimiothérapie PUVA', 'Rémission complète 26 %, rechute 84 % dans la papulose lymphomatoïde.', 'c86-lyp-trt')
+add('PUVA', 'P=Psoralène;UVA=Ultraviolets de type A', 'Photochimiothérapie PUVA', 'Photothérapie utilisée pour contrôler les lésions de LyP ; les résultats des séries ne constituent pas une prévention démontrée des lymphomes associés.', 'c86-lyp-trt')
 add('RC', 'R=Rémission;C=Complète', 'Rémission complète', 'Disparition de toute maladie détectable.', 'c86-lyp-trt')
-add('RCc', 'R=Rémission;C=Complète;c=suffixe défini par l’information professionnelle, non développé dans le dossier lu', 'Rémission complète, sous-catégorie c', 'Utilisée avec RC pour exprimer la réponse au tagraxofusp (56,9 % chez 65 patients).', 'c86-tagra')
+add('RCc', 'R=Rémission;C=Complète;c=clinique, avec anomalie cutanée résiduelle non indicatrice de maladie active', 'Réponse complète clinique avec anomalie cutanée résiduelle non active', 'Utilisée avec RC pour exprimer la réponse au tagraxofusp (56,9 % chez 65 patients).', 'c86-tagra')
