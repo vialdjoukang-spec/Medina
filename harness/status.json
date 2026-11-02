@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-02T14:25:15+00:00",
+  "generated_at": "2026-11-02T14:35:15+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T14:25:15+00:00",
+    "checked_at": "2026-11-02T14:35:15+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T14:25:15+00:00",
+    "observed_at": "2026-11-02T14:35:15+00:00",
     "ok": true,
     "findings": [
       {
@@ -56,7 +56,7 @@
       "meaning": "Contrôle structurel relancé à chaque veille600s ; résultats historiques conservés, nouvelles clôtures refusées si échec."
     },
     "interval_seconds": 600,
-    "observer_pid": 1104561,
+    "observer_pid": 1105047,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -1593,7 +1593,7 @@
           "preview": null
         }
       },
-      "activity_age_seconds": 105,
+      "activity_age_seconds": 704,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -1614,7 +1614,6 @@
         "E30",
         "E32",
         "E35",
-        "E40",
         "E42",
         "E04",
         "C73",
@@ -3135,7 +3134,7 @@
           }
         ]
       },
-      "activity_age_seconds": 6,
+      "activity_age_seconds": 605,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -3156,7 +3155,8 @@
         "N05",
         "N06",
         "D77",
-        "G09"
+        "G09",
+        "E40"
       ],
       "reserved_elsewhere": [
         "N17"
@@ -3165,34 +3165,34 @@
       "clinical_orchestration": false,
       "runtime_name": "/root/sol_nephrologie",
       "historical_id": "astra_nephrologie",
-      "active_specialty": "neurologie",
-      "production_name": "Sol-Neurologie-G09",
+      "active_specialty": "nutrition",
+      "production_name": "Sol-Nutrition-E40",
       "technical_identity_note": "Identité native conservée /root/sol_nephrologie ; huit livraisons néphrologiques historiques inchangées.",
       "next_specialty": null,
       "next_production_name": null,
       "next_reason": "C92 reserves shared chapters.json; G09 is an existing exclusive course, removed from the other neurology queue.",
-      "lesson": "G09",
-      "worktree": "/workspace/Medina-neurologie-G09",
-      "stage": "termine",
-      "branch": "codex/alpha77/g09-integrate-g1",
+      "lesson": "E40",
+      "worktree": "/tmp/Medina-nutrition-E40",
+      "stage": "recherche",
+      "branch": "codex/alpha77/e40-integrate-g1",
       "allowed_paths": [
-        "chapters/G09",
-        "glossary/g09.py",
-        "assets/img/g09/alpha/codex",
-        "organisation/alpha-publications/Codex/G09",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G09-INTEGRATE"
+        "chapters/E40",
+        "glossary/e40.py",
+        "assets/img/e40/alpha/codex",
+        "organisation/alpha-publications/Codex/E40",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE"
       ],
-      "started_at": "2026-11-02T13:16:04+00:00",
-      "activity_at": "2026-11-02T14:09:51+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "started_at": "2026-11-02T14:33:11+00:00",
+      "activity_at": "2026-11-02T14:34:18+00:00",
+      "message": "Sol-Nutrition-E40 : reprise matérielle réelle sur /tmp, alias /workspace, start/claim réussis après échec overlay conservé ; inventaire sept fichiers existants. Sources CH puis EU/OMS et distinction enfants/adultes avant Betta, aucune rédaction encore.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "0732b16498e70570bba859d298a16826693e7d2b0140ce9367541fc9e8437341",
+      "completed_sections": 0,
+      "receipt_sha256": "551cc7e67bac5ac8c64cd5883da157a0020162aba26731400d93ef95b6e30915",
       "brief": {
         "schema_version": 1,
         "agent": "astra_nephrologie",
@@ -3201,60 +3201,25 @@
         "fragment_label": "N-07-Néphrologie",
         "prepared_at": "2026-11-02T01:16:51.601917+00:00",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "status": "G09_completed_released_transition_E40",
+        "status": "E40_reserved_started_claimed_research",
         "selected_lesson": {
-          "code": "G09",
-          "title": "Séquelles d’affections inflammatoires du système nerveux central",
+          "code": "E40",
+          "title": "Kwashiorkor",
           "mode": "existing_course_review",
-          "worktree": "/workspace/Medina-neurologie-G09",
-          "branch": "codex/alpha77/g09-integrate-g1",
-          "reservation_acquired": false,
-          "acquisition_registry_sha": "77cb9b8568f410dadca92bccb36aa17c8f317d3a",
-          "start_registry_sha": "4098c23ca6f8c15cc006138e1ced0ce7f6cef0fa",
+          "worktree": "/tmp/Medina-nutrition-E40",
+          "workspace_alias": "/workspace/Medina-nutrition-E40",
+          "branch": "codex/alpha77/e40-integrate-g1",
+          "reservation_acquired": true,
+          "acquisition_registry_sha": "441face3938b959866489d858e7bf3601387a143",
+          "start_registry_sha": "441face3938b959866489d858e7bf3601387a143",
           "harness_claimed": true,
           "runtime_name": "sol_nephrologie",
-          "production_name": "Sol-Neurologie-G09",
+          "production_name": "Sol-Nutrition-E40",
           "runtime_model": "gpt-6.1-sol",
-          "stage": "completed",
+          "stage": "recherche",
           "clinical_certification": false,
-          "start_receipt": "/workspace/Medina-neurologie-G09/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G09-INTEGRATE/start.json",
-          "catalogue_scope": "Cours G09 existant exclusivement ; aucun mandat sur chapters.json.",
-          "status": "harness_complete_reservation_released",
-          "harness_completed_at": "2026-11-02T14:09:51+00:00",
-          "source_commit": "d2aab9d087d26721e390434b1eee58360476c6ab",
-          "final_commit": "007d93f2a11b7e7a098c429603672ba508561752",
-          "remote_sha_verified": true,
-          "release_registry_sha": "5390d0f143498dbeeab4a006b12094f6b3f52918",
-          "completed_at": "2026-11-02T14:09:51+00:00",
-          "preview_sha256": "fdf9d7446e2da94ab472b6a81d7240107a3eff7f05addbfd08b05d696630bfc8",
-          "final_source_files_sha256": {
-            "chapters/G09/G09_a.html": "bb733f1f3ade4bc2707a808225e92d83dfc1a7361693195f951f4085480d5955",
-            "chapters/G09/G09_b.html": "c70ecc9f248208a1f6e0a816a4ada4b2f1d8cdae1401396013eff4085babd476",
-            "chapters/G09/G09_c.html": "8c55515e58d61618b8c02e5a77837bad0bc4a21f7610ec17f2a438e2a6c2f340",
-            "chapters/G09/G09_d.html": "fee3c8f22b1739450e7b128ec7b40dcc9c3683c35ae9c5110ebe55523dfd1d75",
-            "chapters/G09/G09_pop1.html": "3b0cb3e1d3657c3ae700cc418e20a62fd1312bce0792b6b470fc668600a99ea1",
-            "chapters/G09/G09_pop2.html": "0f656f4a73db94f42ceba255f11e057cafbd18909bbd826d2b1e816358c39d4d",
-            "glossary/g09.py": "0580cde6d50612725e444bf9e33e79584d100bf342adb7ea7e2d8a1810435cbc",
-            "assets/img/g09/alpha/codex/Gray1196.png": "568d36ae47143acd19075d7970fef24fefb894627237106da707400ee74e06fa",
-            "assets/img/g09/alpha/codex/Gray764.png": "0aab3ff23b815eb5f6eab0ba8c583726c5994c025899f3f6654f47e566249b09",
-            "assets/img/g09/alpha/codex/Gray739.png": "2edf6bdd002707be37878f79953ecd037296e04e0a408423bbebcd387774d715",
-            "assets/img/g09/alpha/codex/Gray928.png": "3424fd35b4c895bd05205c2a743588076c53f8f732955bb8b9454fd81e35c6d9",
-            "assets/img/g09/alpha/codex/Cerebellar_cortex_-_intermed_mag.jpg": "f40aedcf26e5564324efde574396a0db48841a00c696ecdd8cbf708de721c25a"
-          },
-          "final_counts": {
-            "monograph_points": 14,
-            "medina_rubrics": 20,
-            "selected_source_readings": 28,
-            "exact_swiss_FIs": 4,
-            "science_tabs": 6,
-            "semiology_sections": 9,
-            "original_figures": 5,
-            "figure_occurrences": 10,
-            "annotation_markers": 32,
-            "windows": 34,
-            "quiz": 4
-          },
-          "semiology_seven_rules_native_passed": true
+          "start_receipt": "/tmp/Medina-nutrition-E40/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE/start.json",
+          "catalogue_scope": "Cours E40 existant exclusivement ; aucun mandat sur chapters.json."
         },
         "instruction_priority": "Ordre actuel : quatre spécialités en parallèle et une leçon à la fois par agent ; remplace les lots historiques, sans supprimer les réservations.",
         "counts": {
@@ -3636,12 +3601,10 @@
           "https://www.swissnephrology.ch/wp/wp-content/uploads/2025/03/Version-2025_Francais_V_17.03.2025_WZ.pdf"
         ],
         "source_reading_status": {
-          "code": "G09",
-          "selected_sections_actually_read": 28,
-          "exact_swiss_FIs": 4,
-          "medical_drafting_started_after_betta": true,
-          "cache_outside_git": "/tmp/medina-g09-source-cache",
-          "limitations": "Plusieurs passages d’un même document, pas 28 documents intégralement lus ; sources et limites attribuées."
+          "code": "E40",
+          "medical_drafting_started": false,
+          "betta_entry_passed": false,
+          "selected_sections_actually_read": 0
         },
         "reusable_tools": [
           "tools/betta_verite.py",
@@ -3657,7 +3620,7 @@
           "tests/test_image_codex_finder.py",
           "tests/test_audit_sciences.py"
         ],
-        "next_gate": "E40 transféré explicitement par root, autre auteur prévenu ; préflight frais et acquisition exclusive avant nouveau worktree/start/claim et sources/Betta.",
+        "next_gate": "Sources suisses puis européennes/internationales réellement lues, distinction malnutrition œdémateuse pédiatrique/adulte, originaux et droits ; matrice Betta avant toute rédaction nouvelle.",
         "preliminary_findings": [
           {
             "id": "N04-SEMIO-ABSENT",
@@ -3681,7 +3644,7 @@
             "initial_status": "observed"
           }
         ],
-        "updated_at": "2026-11-02T14:20:15.394120+00:00",
+        "updated_at": "2026-11-02T14:34:18.820851+00:00",
         "initial_counts": {
           "conservative_s04_targets": 33,
           "existing": 6,
@@ -3699,15 +3662,11 @@
           "n04_local_assets": 5
         },
         "current_counts": {
-          "monograph_points": 14,
-          "medina_rubrics": 20,
-          "science_tabs": 6,
-          "semiology_sections": 9,
-          "original_figures": 5,
-          "figure_occurrences": 10,
-          "annotation_markers": 32,
-          "windows": 34,
-          "quiz": 4
+          "monograph_points_completed": 0,
+          "medina_rubrics_completed": 0,
+          "selected_source_readings": 0,
+          "exact_swiss_FIs": 0,
+          "original_figures_reviewed": 0
         },
         "delivery": {
           "folder": "/workspace/Medina-nephrologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE",
@@ -4187,12 +4146,11 @@
           "AucunePR/main, aucun déploiementpublic déclaré ; coûts/tokens réels indisponibles restentnull."
         ],
         "verification": {
-          "stage": "completed",
+          "stage": "recherche",
           "clinical_certification": false,
-          "final_commit": "007d93f2a11b7e7a098c429603672ba508561752",
-          "source_commit": "d2aab9d087d26721e390434b1eee58360476c6ab",
-          "remote_sha_verified": true,
-          "release_verified": true
+          "source_binding_created": false,
+          "initial_workspace_failure_preserved": "transitions/G09-E40/startup-failure.json",
+          "real_start_claim_after_recovery": true
         },
         "prior_lessons": [
           {
@@ -4591,13 +4549,13 @@
             "new_N06": "7règles passées parseurnatifharness etinspectionstatique sur14b44d83813296a99c63c837095bb5bc66aad815, sans prétendreauditmédicalindépendant."
           }
         },
-        "production_name": "Sol-Neurologie-G09",
-        "active_specialty": "neurologie",
+        "production_name": "Sol-Nutrition-E40",
+        "active_specialty": "nutrition",
         "completed_lesson_count": 10
       },
-      "activity_age_seconds": 925,
+      "activity_age_seconds": 57,
       "activity_fresh": true,
-      "sections_per_hour": 12.14,
+      "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -5131,32 +5089,13 @@
           "source_entries": 38
         }
       },
-      "activity_age_seconds": 492,
+      "activity_age_seconds": 1091,
       "activity_fresh": true,
-      "sections_per_hour": 9.89,
+      "sections_per_hour": 8.85,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T04:20:54+00:00",
-      "action": "claim",
-      "agent": "astra_endocrinologie",
-      "code": "E07"
-    },
-    {
-      "at": "2026-11-02T04:21:38+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T04:22:02+00:00",
-      "action": "progress",
-      "agent": "codex_hematologie",
-      "stage": "verification",
-      "message": "C86 : 31 lectures documentées, 52 fenêtres, premier rendu natif 1440/390 et images originelles réussis ; contrôle complet et preuves finales en cours."
-    },
     {
       "at": "2026-11-02T04:22:49+00:00",
       "action": "claim",
@@ -6429,6 +6368,25 @@
       "agent": "astra_endocrinologie",
       "stage": "redaction",
       "message": "E35 :25sources réellement lues aux sections/résumés déclarés, reprises E25 explicites ; porte VÉRITÉ OK dans dossier réservé. Arbitrages documentés : double codage sans limiter toute E35 aux infections, traitements crise/infection simultanés, divergences pédiatrie/FI et ciprofloxacine allaitement, pas chirurgie universelle d’une hémorragie. Sources intégrales horsGit ; début rédaction14/20 et sixsciences, aucune clôture E35 annoncée."
+    },
+    {
+      "at": "2026-11-02T14:25:15+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T14:33:11+00:00",
+      "action": "claim",
+      "agent": "astra_nephrologie",
+      "code": "E40"
+    },
+    {
+      "at": "2026-11-02T14:34:18+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "recherche",
+      "message": "Sol-Nutrition-E40 : reprise matérielle réelle sur /tmp, alias /workspace, start/claim réussis après échec overlay conservé ; inventaire sept fichiers existants. Sources CH puis EU/OMS et distinction enfants/adultes avant Betta, aucune rédaction encore."
     }
   ],
   "cache": {
@@ -13383,7 +13341,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T14:25:13+00:00",
+    "observed_at": "2026-11-02T14:35:13+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -14565,6 +14523,21 @@
         "bytes": null,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/e35-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E35-INTEGRATE/E35-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/e35-integrate-g1",
+        "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
+        "publication_main": false,
+        "clinical_certification": false
+      },
+      {
+        "code": "E40",
+        "agent": "astra_nephrologie",
+        "branch": "codex/alpha77/e40-integrate-g1",
+        "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+        "local_preview": "/tmp/Medina-nutrition-E40/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE/E40-apercu-autonome.html",
+        "exists": false,
+        "sha256": null,
+        "bytes": null,
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/e40-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE/E40-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/e40-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
         "publication_main": false,
         "clinical_certification": false

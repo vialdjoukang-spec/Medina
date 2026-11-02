@@ -132,3 +132,8 @@ Depuis le2novembre2026 à13h02heure suisse, le harness impose sept règles struc
 ## Relais réservé après D77 — 2026-11-02T13:01:56.169261+00:00
 
 C92 est une création et réserve `chapters.json` avec sa mission. D62, D65, D66, C82 et C88 nécessitent également ce fichier partagé : ils ne sont pas acquis en parallèle. Pour maintenir quatre auteurs sans collision, G09 (cours existant, aucun droit sur `chapters.json`) est retiré de la file du créneau neurologie initial et attribué exclusivement au créneau natif `/root/sol_nephrologie`, après achèvement réel, push vérifié et libération de D77. Affichage futur : **Sol-Neurologie-G09**. L’identifiant technique historique `astra_nephrologie` est conservé pour ne pas perdre ses huit achèvements rénaux et son relais D77. G06 puis G07/G08 restent au premier auteur neurologie. Le classement de G09 dans le système neurologie du plan ne change pas.
+
+
+### Relais E40 — 2 novembre 2026
+
+Après les dix livraisons du slot historique astra_nephrologie (huit rénales dont C64, D77, G09), E40 — Kwashiorkor est transféré exclusivement de la queue future astra_endocrinologie vers ce slot, sous le nom de production Sol-Nutrition-E40 et active_specialty nutrition. Autorisation ciblée de root, auteur E35 prévenu et exclusion opérationnelle confirmée ; root n’édite pas cette config en parallèle. Identité technique sol_nephrologie et historique conservés. L’appartenance statistique E40 au système S05 et au plan Codex historique reste intacte ; aucun fichier du plan ou cours scellé modifié. Mission existante sans chapters.json ; C92 parent et G07/E35 concurrents intacts.
