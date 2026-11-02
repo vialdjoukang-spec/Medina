@@ -29,7 +29,7 @@
     "astra_endocrinologie": {
       "lesson": "E04",
       "worktree": "/workspace/Medina-endocrinologie-E04",
-      "stage": "verification",
+      "stage": "termine",
       "branch": "codex/alpha77/e04-integrate-g1",
       "allowed_paths": [
         "chapters/E04",
@@ -40,8 +40,8 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T16:21:21+00:00",
-      "activity_at": "2026-11-02T16:43:08+00:00",
-      "message": "E04 : premier rendu39fenêtres/4quiz/1440-390 passé ; contrôle direct harness révèle deux échecs de structure ignorés par sélecteur local, neuf classes ilot ajoutées et contrôle direct désormais imposé. Reconstruction et navigateur finaux en cours avant toute liaison.",
+      "activity_at": "2026-11-02T16:46:19+00:00",
+      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -54,7 +54,7 @@
     "astra_nephrologie": {
       "lesson": "G21",
       "worktree": "/tmp/Medina-neurologie-G21",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/g21-integrate-g1",
       "allowed_paths": [
         "chapters/G21",
@@ -64,8 +64,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G21-INTEGRATE"
       ],
       "started_at": "2026-11-02T15:52:16+00:00",
-      "activity_at": "2026-11-02T16:36:30+00:00",
-      "message": "Quatorze points monographiques G21 réellement écrits après Betta. Code/syndrome/étiologie, dénominateurs genevois, SMN versus sevrage dopaminergique et exclusions FI de Madopar distingués ; examens/sciences/pharmacologie/fenêtres encore à produire.",
+      "activity_at": "2026-11-02T16:54:59+00:00",
+      "message": "Statique G21 passé :66 fenêtres/10 figures/34repères, audit six sciences3905 mots, build natif S08 réussi ; correction de provenance ClaML32686264 avant empreinte finale, début navigateur.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -76,68 +76,32 @@
       "receipt_sha256": "59951491a23b74c5b3ae4b60ccfe7563a53e210238c14ff8f5b0696e41b414a6"
     },
     "codex_hematologie": {
-      "lesson": "D62",
-      "worktree": "/tmp/Medina-hematologie-D62",
-      "stage": "termine",
-      "branch": "codex/alpha77/d62-integrate-g1",
+      "lesson": "D65",
+      "worktree": "/workspace/Medina-hematologie-D65",
+      "stage": "recherche",
+      "branch": "codex/alpha77/d65-integrate-g1",
       "allowed_paths": [
-        "chapters/D62",
-        "glossary/d62.py",
-        "assets/img/d62/alpha/codex",
-        "organisation/alpha-publications/Codex/D62",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D62-INTEGRATE",
+        "chapters/D65",
+        "glossary/d65.py",
+        "assets/img/d65/alpha/codex",
+        "organisation/alpha-publications/Codex/D65",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE",
         "chapters.json"
       ],
-      "started_at": "2026-11-02T14:57:26+00:00",
-      "activity_at": "2026-11-02T16:15:39+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "started_at": "2026-11-02T16:52:40+00:00",
+      "activity_at": "2026-11-02T16:52:40+00:00",
+      "message": "Mission réservée; recherche autorisée",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "b65e75847fa804b14a9c40afd1febe485c6870209d27048445e32a72ac09ef51"
+      "completed_sections": 0,
+      "receipt_sha256": "dcf0d8167c28a42f449823b2f8fd119582deeb5cdd64d89bc55b3383ddb8848b"
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T08:25:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T08:35:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T08:45:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T08:55:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T09:05:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T09:15:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
     {
       "at": "2026-11-02T09:25:41+00:00",
       "action": "watch",
@@ -1401,6 +1365,45 @@
       "action": "watch",
       "ok": true,
       "findings": 1
+    },
+    {
+      "at": "2026-11-02T16:46:08+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "revue_requise",
+      "message": "E04 : quatre self_review explicites,16captures finales réellement inspectées,39fenêtres/4quiz1440-390/24px-Livre passés,7règles strictes directement vérifiées. Validation technique sans erreur ; liaison finale unique émise après corrections, jamais autorenouvelée."
+    },
+    {
+      "at": "2026-11-02T16:46:19+00:00",
+      "action": "complete",
+      "agent": "astra_endocrinologie",
+      "code": "E04"
+    },
+    {
+      "at": "2026-11-02T16:52:34+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "redaction",
+      "message": "Rédaction matérielle G21 terminée : 14 points, quatre FI, six sciences,66 fenêtres/14 Pareto/quatre cas et quiz ; gate redevenue verte, début vérifications finales."
+    },
+    {
+      "at": "2026-11-02T16:52:40+00:00",
+      "action": "claim",
+      "agent": "codex_hematologie",
+      "code": "D65"
+    },
+    {
+      "at": "2026-11-02T16:54:59+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "verification",
+      "message": "Statique G21 passé :66 fenêtres/10 figures/34repères, audit six sciences3905 mots, build natif S08 réussi ; correction de provenance ClaML32686264 avant empreinte finale, début navigateur."
+    },
+    {
+      "at": "2026-11-02T16:55:16+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
     }
   ],
   "cache": {
@@ -2444,6 +2447,50 @@
           "chapters/G08/G08_b.html": "618aa14efa807175e13fd92ce2bf78aa9dc0eda60c9bba223342a1e36ed0bc14",
           "chapters/G08/G08_c.html": "6e6c350c5f86094fe5fae9a8665f9d0ea9e4439b7164808bef9de5cafe2e5028",
           "chapters/G08/G08_d.html": "089fac33e2f53c35f441709584ae46729a5b19bd2ed6b579944e4d7aa187e6c9"
+        },
+        "clinical_certification": false,
+        "author_activity_refreshed": false,
+        "source_bindings_refreshed": false,
+        "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+      }
+    },
+    {
+      "agent": "astra_endocrinologie",
+      "code": "E04",
+      "at": "2026-11-02T16:46:19+00:00",
+      "branch": "codex/alpha77/e04-integrate-g1",
+      "worktree": "/workspace/Medina-endocrinologie-E04",
+      "folder": "/workspace/Medina-endocrinologie-E04/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E04-INTEGRATE",
+      "manifest_sha256": "f34e27d242d15330d92cf237897a0e18e12ac362a4c5fea5f3e3f5e35368a32d",
+      "source_binding_sha256": "16ed61a9fee6e554d54de76b0aca898e2401b737545ed95b1b412c9e3f978a40",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "8d7baaf374b7b2fd762ddc5e772ddf6c3bc4474ac882b65831b9c72f582e089b",
+      "semiology_contract": {
+        "code": "E04",
+        "observed_at": "2026-11-02T16:46:19+00:00",
+        "passed": true,
+        "checks": {
+          "six_science_tabs": true,
+          "first_selected_semio": true,
+          "semio_panel_label_and_visible": true,
+          "first_unit_exact_h3": true,
+          "nine_named_sections": true,
+          "linked_sources_in_semio": true,
+          "clinical_semio_marker": true
+        },
+        "findings": [],
+        "source_hashes": {
+          "chapters/E04/E04_a.html": "c829ed1f69c70fd898df94098768fe27d2a7b8cbc9308ecc3242e3eba7b454ac",
+          "chapters/E04/E04_b.html": "ec24f1c58adadb8d7ce43d9303a3c7fb347164129ab3fe5acc4abb1d6c82536d",
+          "chapters/E04/E04_c.html": "5656ced66c4b634f68d51aaefd663f9ff8367126094840d0bb42832718a6b600",
+          "chapters/E04/E04_d.html": "bfacc1b5660b9c0626c1bdd1a4965eee6a50d276858319de46f27613ce1d134f"
         },
         "clinical_certification": false,
         "author_activity_refreshed": false,
