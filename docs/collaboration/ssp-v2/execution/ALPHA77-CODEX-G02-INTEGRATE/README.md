@@ -9,7 +9,7 @@ Ouvrir **G02-apercu-autonome.html**. Il contient le moteur natif, ouvre G02 et e
 - 61 fenêtres définies, 60 termes distincts appelants, aucun renvoi absent, aucun identifiant dupliqué, aucune abréviation non couverte.
 - Une planche anatomique humaine originale Carter/Gray1918, affichée dans deux contextes pédagogiques, sans retouche des pixels ; 3 annotations françaises autour de l’image. Les schémas causaux hérités restent identifiés comme schémas didactiques, pas comme anatomie.
 - Chromium local : 1440 et390 pixels, requêtes externes interdites, images lazy décodées après défilement (648pixels chacune), fenêtres, Livre24px, dernière section pharmacologique et sources accessibles ; aucun débordement du document ni erreur JavaScript. La fenêtre fexinidazole de 3692 caractères conserve sa dernière source accessible à 24 pixels, sans débordement horizontal.
-- 23 lectures réelles indexées avec leur profondeur. Les résumés ne sont pas décrits comme des textes intégraux.
+- 26 lectures réelles indexées avec leur profondeur. Les résumés ne sont pas décrits comme des textes intégraux.
 
 ## Fichiers probants
 
@@ -17,13 +17,13 @@ Ouvrir **G02-apercu-autonome.html**. Il contient le moteur natif, ouvre G02 et e
 - `source-binding.json` : empreintes des six HTML, du glossaire, de l’image et du bundle après contrôles ; `visual-self-review.json` : inspection visuelle réellement effectuée.
 - `browser-autonomous.json` et `captures/autonomous-*` : contrôles actuels. Les captures sans préfixe autonomous et `browser-check.json` documentent une passe intermédiaire.
 - `sciences-check.json`, `structural-checks.json`, `monograph-14.json` : contrôles techniques et limites médicales.
-- `recherche_G02/sources.json` : passages paraphrasés/lectures, identifiants S19–S41 ; les textes téléchargés restent en cache temporaire hors dépôt.
+- `recherche_G02/sources.json` : passages paraphrasés/lectures, identifiants S19–S44 ; les textes téléchargés restent en cache temporaire hors dépôt.
 - `recherche_G02/recherche.md` : matrice20 et lacunes.
 
 ## Réserves qui empêchent une clôture médicale
 
 1. Erratum du15octobre2025 du guide candidose non obtenu. Les principes du texte2025 sont lus ; aucune nouvelle posologie chiffrée du schéma SNC n’est certifiée.
-2. FI suisse flucytosine et traitements des causes rares non complétées ; distinction stricte des doses par produit, âge, indication et fonction rénale maintenue.
+2. FI suisse flucytosine actuelle et disponibilité non établies, malgré un RCP oral français exact relu ; traitements des autres causes rares non complétés ; distinction stricte des doses par produit, âge, indication et fonction rénale maintenue.
 3. Le guide WHO 2024 et le RCP Fexinidazole Winthrop 2025 sont désormais lus. Le statut suisse et les autres produits de la trypanosomiase restent à vérifier. Coccidioïdomycose et Chagas sont encore insuffisamment documentées.
 4. Critères du consortium encéphalite : table DGN consultée, source primaire non obtenue ; ne pas inventer les détails manquants. L’absence de données ne constitue pas un résultat négatif.
 5. BfArM2024 relu ; applicabilité administrative suisse2026 et obligations déclaratives non certifiées. Cartographie PROFILES héritée non revalidée.
@@ -42,3 +42,8 @@ Aucune prochaine leçon n’est ouverte tant que les réserves et les revues req
 ## Actualisation documentaire suivante
 
 Le guide WHO 2024 et le produit exact Fexinidazole Winthrop, version EMA du 17 octobre 2025, documentent maintenant les stades, les choix par population, les doses pondérales, le repas, la surveillance et le suivi. Les différences de seuil (≥100 OMS ; >100 RCP) et de surveillance à domicile sont explicites. Le statut suisse reste non établi. Le contrôle statique natif a également supprimé quatre styles en ligne et deux classes hors contrat ; les annotations de la figure demeurent du texte HTML.
+
+
+Actualisation flucytosine : RCP oral français du 1er septembre 2025 relu, avec doses par clairance, surveillance plasmatique et hématologique/hépatique, interactions, contraception et limites pédiatriques. Les données suisses établissent une autorisation export publiée en 2024 et une présence dans la liste de septembre 2026 ; elles ne prouvent pas la commercialisation. La limite réglementaire/approvisionnement est explicitée, sans empêcher de documenter le produit européen exact.
+
+Contrôle de la fenêtre flucytosine : 4656 caractères après normalisation des espaces et césures discrétionnaires du moteur, dernière source accessible à 1440/390 en Livre24, aucun débordement ni erreur JavaScript. Les premiers échecs du test portaient sur les césures automatiques du mot « allaitement », pas sur une omission du contenu.
