@@ -18,7 +18,7 @@ def main():
         browser=p.chromium.launch(headless=True,executable_path='/usr/bin/chromium',args=['--no-sandbox'])
         pages=[]
         for width,height in [(1440,900),(390,844)]:
-            page=browser.new_page(viewport={'width':width,'height':height});calls=[]
+            page=browser.new_page(viewport={'width':width,'height':height});page.clock.install();calls=[]
             page.on('pageerror',lambda e:receipt['errors'].append(str(e)))
             def route(r,request,calls=calls):
                 if '/status.json' in r.request.url:
@@ -35,13 +35,15 @@ def main():
             page.locator('#search').fill('')
             page.screenshot(path=str(out/f'dashboard-{width}.png'))
             pages.append((page,width,calls))
-        pages[0][0].wait_for_timeout(16000)
         for page,width,calls in pages:
-            assert calls,'HTTP status refresh missing'
+            page.clock.fast_forward(60001)
+            page.wait_for_timeout(150)
+        for page,width,calls in pages:
+            assert len(calls)>=2,'Initial and scheduled HTTP refresh missing'
             page.evaluate("Date.now=()=>Date.parse(D.generated_at)+1300000;paint()")
             assert 'périmé' in page.locator('#gate').inner_text()
             assert page.locator('#cards .good').count()==0
-            receipt['views'].append({'width':width,'four_agents':True,'four_systems':True,'historical_and_current_rows':340,'overflow':0,'filter':True,'http_refresh_calls':len(calls),'stale_warning':True,'stale_agents_not_green':True})
+            receipt['views'].append({'width':width,'four_agents':True,'four_systems':True,'historical_and_current_rows':340,'overflow':0,'filter':True,'http_refresh_calls':len(calls),'scheduled_refresh_timer':'60s advanced with browser clock','stale_warning':True,'stale_agents_not_green':True})
             page.close()
         browser.close()
     assert not receipt['errors'],receipt['errors']

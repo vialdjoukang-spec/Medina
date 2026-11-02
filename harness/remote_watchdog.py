@@ -79,7 +79,7 @@ def observe():
     atomic(HOME/'remote-status.json',data)
     render(data,HOME/'remote-dashboard.html')
     if dt.datetime.now(dt.timezone.utc)>=dt.datetime.fromisoformat(data['deadline']):
-        atomic(HOME/'rapport-08h00.html',(HOME/'remote-dashboard.html').read_text())
+        render({**data,'report_frozen_at':now()},HOME/'rapport-08h00.html')
     summary='## MEDINA — veille indépendante\n\n'+json.dumps(result,ensure_ascii=False,indent=2)+'\n'
     if os.getenv('GITHUB_STEP_SUMMARY'):Path(os.environ['GITHUB_STEP_SUMMARY']).write_text(summary)
     print(json.dumps(result,ensure_ascii=False))

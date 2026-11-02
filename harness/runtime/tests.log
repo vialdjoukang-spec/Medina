@@ -1,5 +1,5 @@
 {"stopped": true, "reason": "explicit control enabled != true"}
-{"at": "2026-11-02T03:08:59+00:00", "successor_requested": true, "response": {"http_status": 204}, "ref": "codex/harness-20261102", "interval_seconds": 600, "bootstrap": true}
+{"at": "2026-11-02T03:25:04+00:00", "successor_requested": true, "response": {"http_status": 204}, "ref": "codex/harness-20261102", "interval_seconds": 600, "bootstrap": true}
 test_binding_cannot_omit_a_source_or_escape_the_lesson (test_harness.HarnessCase.test_binding_cannot_omit_a_source_or_escape_the_lesson) ... ok
 test_boolean_receipt_wrong_code_and_wrong_branch_are_rejected (test_harness.HarnessCase.test_boolean_receipt_wrong_code_and_wrong_branch_are_rejected) ... ok
 test_bound_source_and_preview_changes_invalidate_verification (test_harness.HarnessCase.test_bound_source_and_preview_changes_invalidate_verification) ... ok
@@ -9,6 +9,7 @@ test_changed_prompt_and_duplicate_specialties_close_gate (test_harness.HarnessCa
 test_code_change_invalidates_test_receipt (test_harness.HarnessCase.test_code_change_invalidates_test_receipt) ... ok
 test_completion_cannot_ignore_failed_contract (test_harness.HarnessCase.test_completion_cannot_ignore_failed_contract) ... ok
 test_completion_requires_twenty_covered_points_and_records_history (test_harness.HarnessCase.test_completion_requires_twenty_covered_points_and_records_history) ... ok
+test_deadline_report_is_frozen_once_while_live_report_advances (test_harness.HarnessCase.test_deadline_report_is_frozen_once_while_live_report_advances) ... ok
 test_gate_healthy_is_permission_to_work_not_clinical_approval (test_harness.HarnessCase.test_gate_healthy_is_permission_to_work_not_clinical_approval) ... ok
 test_missing_or_failed_tests_close_gate (test_harness.HarnessCase.test_missing_or_failed_tests_close_gate) ... ok
 test_one_active_lesson_per_agent (test_harness.HarnessCase.test_one_active_lesson_per_agent) ... ok
@@ -43,6 +44,6 @@ test_observation_does_not_mutate_activity (test_remote_watchdog.WatchdogCase.tes
 test_successor_is_same_review_branch_and_never_bootstrap (test_remote_watchdog.WatchdogCase.test_successor_is_same_review_branch_and_never_bootstrap) ... ok
 
 ----------------------------------------------------------------------
-Ran 40 tests in 0.181s
+Ran 41 tests in 0.187s
 
 OK

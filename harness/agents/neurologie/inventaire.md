@@ -120,3 +120,9 @@ Jalon suivant poussé : `4f92780d038dcb73cba79d24766659656c5ad27f`, flucytosine 
 
 
 Actualisation 2026-11-02T03:11:23.408712+00:00 : G02 achevé dans le harness à03:10:39 UTC, après39lectures et revue auteur des14points/20rubriques. Version publiée sur branche `37a113894d55e7e0d5d3a1952d731fa689f641fb` ; [aperçu autonome](https://github.com/vialdjoukang-spec/Medina/blob/37a113894d55e7e0d5d3a1952d731fa689f641fb/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html). SHA256 `76c59b4fba209a09fb186f6a5554541e81397722633547ce89a3b61ecda435db`. Limites L1–L6 maintenues ; aucune certification clinique, publication main ni audit indépendant revendiqués. Le reçu et sa représentation explicite de la matrice20 sont en cours de push séparé.
+
+
+2026-11-02T03:12:01.786896+00:00 — Reçu final G02 poussé et vérifié : `a402352904ace3854e886740d97759a7de907db6`. [Aperçu autonome final](https://github.com/vialdjoukang-spec/Medina/blob/a402352904ace3854e886740d97759a7de907db6/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html), SHA256 `76c59b4fba209a09fb186f6a5554541e81397722633547ce89a3b61ecda435db`. Contrôle de mission réussi sur ce commit exact ; achèvement projet enregistré à 03:10:39 UTC. Contenu et captures inchangés depuis la version précédente. Libération G02 puis acquisition G05 autorisées par le parent, sous réserve du registre réel.
+
+
+G05 acquis réellement après libération G02 : registre `94514a6d560b60dcf9932d7ed3f7f904f179b541`, branche `codex/alpha77/g05-integrate-g1`, worktree `/workspace/Medina-neurologie-G05`. Start et claim réussis ; recherche seule au départ, aucune source héritée prétendue relue. Paquet final G02 conservé dans `completed_lessons`.

@@ -6,7 +6,7 @@
   "fragment_label": "N-07-Néphrologie",
   "prepared_at": "2026-11-02T01:16:51.601917+00:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "status": "N29_recherche",
+  "status": "N29_revue_finale",
   "selected_lesson": {
     "code": "N29",
     "title": "Autres affections du rein et de l’uretère au cours de maladies classées ailleurs",
@@ -16,14 +16,16 @@
     "reservation_acquired": true,
     "start_receipt": "/workspace/Medina-nephrologie-n29/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N29-INTEGRATE/start.json",
     "source_files_sha256": {
-      "chapters/N29/N29_a.html": "2b4d1994fc0a1310536e4617537c6d7147cf9ecb710035048426c881f4337cce",
-      "chapters/N29/N29_b.html": "74c3e29419d0677491420a420579de302ecd6b5198dafc1753cef31fa467ea88",
-      "chapters/N29/N29_c.html": "e24f3ccb227e04d9e929811c5d5433859883bfdb4b754c9e69e9b2a8884109c4",
-      "chapters/N29/N29_d.html": "596f91f54135c88f7bebad956cd7d1424e54cb0de9cb0c670d3fd79712ee7638",
-      "chapters/N29/N29_pop1.html": "04b344821e340a743d53af82d4d059d00556458c619681d88969a50a7732b878",
-      "chapters/N29/N29_pop2.html": "3880c10fe82907011ce7a2138457f85e5946e7188a1878089e7cad50b1067a5a"
+      "chapters/N29/N29_a.html": "665f19b88ec705fc4a8683fb285f8b518b5f77dd0bdbede4e0a16d5b277d177a",
+      "chapters/N29/N29_pop1.html": "4c9c00492734a16e727527e6515fc947c4119833cdc72e975135cf1f21fdaee7",
+      "chapters/N29/N29_d.html": "231863465a668abd6b9dfbd53dc86ae1f4939564c884e8e1b0770b70b13d9d82",
+      "chapters/N29/N29_c.html": "d9322438884844cb464a8d4cb6ebb79a42d45b9b6865fdef179b57ebd4fccbad",
+      "chapters/N29/N29_b.html": "163a703c08f2fd13fe2975814d9ecf079f592bc88be40348e56f44ca11136226",
+      "chapters/N29/N29_pop2.html": "1fe495ec6cbfaf2c91aca65629ee129614bd09b01a1bde9d3260b720471b87eb"
     },
-    "clinical_certification": false
+    "clinical_certification": false,
+    "stage": "revue_requise",
+    "execution_folder": "/workspace/Medina-nephrologie-n29/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N29-INTEGRATE"
   },
   "instruction_priority": "Ordre actuel : quatre spécialités en parallèle et une leçon à la fois par agent ; remplace les lots historiques, sans supprimer les réservations.",
   "counts": {
@@ -448,7 +450,7 @@
       "initial_status": "observed"
     }
   ],
-  "updated_at": "2026-11-02T02:47:04.110554+00:00",
+  "updated_at": "2026-11-02T03:26:47.355485+00:00",
   "initial_counts": {
     "conservative_s04_targets": 33,
     "existing": 6,
@@ -466,14 +468,16 @@
     "n04_local_assets": 5
   },
   "current_counts": {
-    "scientific_subtabs": 6,
+    "selected_source_readings": 31,
+    "exact_swiss_FIs": 9,
+    "science_tabs": 6,
     "semiology_sections": 9,
+    "original_figures": 4,
+    "figure_occurrences": 8,
+    "windows": 61,
+    "quiz": 4,
     "monograph_points": 14,
-    "medina_rubrics": 20,
-    "human_original_images": 5,
-    "current_selected_passages": 39,
-    "inherited_attributed_claims": 113,
-    "swiss_fi_targeted_read": 22
+    "medina_rubrics": 20
   },
   "delivery": {
     "folder": "/workspace/Medina-nephrologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE",
@@ -590,5 +594,12 @@
       "selected_passages_read": 41,
       "clinical_certification": false
     }
+  ],
+  "current_limits": [
+    "Auto-relectures IA, aucune certification clinique.",
+    "Gomme rénale tertiaire : pas de sémiologie spécifique documentée dans recommandations lues.",
+    "Disponibilité suisse du praziquantel à confirmer ; RCP français explicitement étranger.",
+    "Indocid-Retard ne représente pas un produit pédiatrique autorisé pour cystinose.",
+    "Aperçu autonome testé, pas de déploiement main."
   ]
 }
