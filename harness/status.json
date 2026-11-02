@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-02T16:05:15+00:00",
+  "generated_at": "2026-11-02T16:15:15+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T16:05:16+00:00",
+    "checked_at": "2026-11-02T16:15:15+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T16:05:15+00:00",
+    "observed_at": "2026-11-02T16:15:15+00:00",
     "ok": true,
     "findings": [
       {
@@ -56,7 +56,7 @@
       "meaning": "Contrôle structurel relancé à chaque veille600s ; résultats historiques conservés, nouvelles clôtures refusées si échec."
     },
     "interval_seconds": 600,
-    "observer_pid": 1298010,
+    "observer_pid": 1321589,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -1617,7 +1617,7 @@
           "G21"
         ]
       },
-      "activity_age_seconds": 60,
+      "activity_age_seconds": 659,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -3202,9 +3202,9 @@
           }
         ]
       },
-      "activity_age_seconds": 531,
+      "activity_age_seconds": 1130,
       "activity_fresh": true,
-      "sections_per_hour": 16.54,
+      "sections_per_hour": 13.82,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -3673,7 +3673,20 @@
           "code": "G21",
           "medical_drafting_started": false,
           "betta_entry_passed": false,
-          "selected_sections_actually_read": 0
+          "selected_sections_actually_read": 18,
+          "reading_scope": "18 ensembles de passages ciblés et provenances réellement lus/vus, pas18documents intégralement lus ; registre final à préparer.",
+          "sources_in_progress": [
+            "OFS CIM2024 G21 et sous-codes",
+            "HUG2018 sémiologie/différentiel, pas traitement universel G21",
+            "PHEL réellement mai2026 malgré URL2023, enseignement local pas directive nationale",
+            "DGN2023 définitions/différentiel, exclut thérapie des syndromes secondaires",
+            "FI Akineton mai2022 : doses/formes et sécurité lues",
+            "FI Symmetrel février2025 : doses, rein,≥65ans max100mg/j et reproduction lues",
+            "FI Madopar juin2023 : doses/formes, exclusion parkinsonisme médicamenteux,contre-indiqué<25ans et sécurité lues",
+            "FI Parlodel mai2020 : indications seulement, pas encore dose complète",
+            "Cinq originaux réellement vus, provenances/licences propres en vérification finale"
+          ],
+          "provider_limit": "Parallel Search quota gratuit épuisé ; aucun changement de session/identité, poursuite HTTP public direct vers sources validées et API Commons officielle."
         },
         "reusable_tools": [
           "tools/betta_verite.py",
@@ -3713,7 +3726,7 @@
             "initial_status": "observed"
           }
         ],
-        "updated_at": "2026-11-02T15:53:03.194025+00:00",
+        "updated_at": "2026-11-02T16:08:00.425162+00:00",
         "initial_counts": {
           "conservative_s04_targets": 33,
           "existing": 6,
@@ -4710,7 +4723,7 @@
           }
         ]
       },
-      "activity_age_seconds": 20,
+      "activity_age_seconds": 619,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -4752,8 +4765,8 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T14:57:26+00:00",
-      "activity_at": "2026-11-02T15:59:21+00:00",
-      "message": "D62 :6 vérifications+7règles natives passées ; lecture visuelle finale en cours. Correction unités mL/g/dL avant liaison, contrôle additionnel Livre24 et légendes. Aucun binding ni achèvement encore.",
+      "activity_at": "2026-11-02T16:14:10+00:00",
+      "message": "D62 : sept contrôles passés, liaison finale figée et 15 captures inspectées ; guard pré-push passé, publication de branche en cours, aucune PR.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -5590,25 +5603,13 @@
           }
         ]
       },
-      "activity_age_seconds": 355,
+      "activity_age_seconds": 65,
       "activity_fresh": true,
-      "sections_per_hour": 12.38,
+      "sections_per_hour": 10.79,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T05:25:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T05:35:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
     {
       "at": "2026-11-02T05:45:41+00:00",
       "action": "watch",
@@ -6888,6 +6889,19 @@
       "agent": "astra_nephrologie",
       "stage": "recherche",
       "message": "Passages OFS G21.0/.1/.2/.3/.4/.8/.9, HUG2018 sémiologie, PHEL document mai2026 et DGN2023 différentiel lus ; FI Akineton mai2022, Symmetrel février2025, Madopar juin2023 en lecture ciblée. Cinq originaux humains réellement vus ; quota Parallel Search arrêté sans changement de session, HTTP public direct avec provenance. Aucune rédaction canonique, Betta encore à faire."
+    },
+    {
+      "at": "2026-11-02T16:05:16+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T16:14:10+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "verification",
+      "message": "D62 : sept contrôles passés, liaison finale figée et 15 captures inspectées ; guard pré-push passé, publication de branche en cours, aucune PR."
     }
   ],
   "cache": {
@@ -13881,7 +13895,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T16:05:13+00:00",
+    "observed_at": "2026-11-02T16:15:13+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -15366,7 +15380,7 @@
         "code": "D62",
         "agent": "codex_hematologie",
         "branch": "codex/alpha77/d62-integrate-g1",
-        "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+        "head_observed": "96b262562b7bc404de72591097e2c6584dc74ccb",
         "local_preview": "/tmp/Medina-hematologie-D62/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D62-INTEGRATE/D62-apercu-autonome.html",
         "exists": true,
         "sha256": "44225bf5a0a4c594cdb11efc14a73661b366357a69c0737501d834af39cda1ce",
