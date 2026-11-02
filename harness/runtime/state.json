@@ -1,7 +1,24 @@
 {
   "schema": 1,
   "created_at": "2026-11-02T01:21:00+00:00",
-  "agents": {},
+  "agents": {
+    "astra_neurologie": {
+      "lesson": "G02",
+      "worktree": "/workspace/Medina-neurologie",
+      "stage": "recherche",
+      "started_at": "2026-11-02T01:23:56+00:00",
+      "activity_at": "2026-11-02T01:23:56+00:00",
+      "message": "Mission réservée; recherche autorisée",
+      "tokens_input": null,
+      "tokens_output": null,
+      "cost_usd": null,
+      "usage_source": "non exposé par interface native",
+      "medical_score": null,
+      "medical_review": "non effectuée",
+      "completed_sections": 0,
+      "receipt_sha256": "4626d4a6b8897fdab05d0f00930502b29c721d185acb97e1ca5a2bda20d6e92a"
+    }
+  },
   "events": [
     {
       "at": "2026-11-02T01:21:00+00:00",
@@ -38,6 +55,18 @@
       "action": "watch",
       "ok": true,
       "findings": 0
+    },
+    {
+      "at": "2026-11-02T01:23:56+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T01:23:56+00:00",
+      "action": "claim",
+      "agent": "astra_neurologie",
+      "code": "G02"
     }
   ],
   "cache": {
