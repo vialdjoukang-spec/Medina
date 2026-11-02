@@ -5,13 +5,13 @@
   "main_medina_modified": false,
   "native_agents_persistent": false,
   "branch": "codex/harness-observations-20261102",
-  "last_verified_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41478002939",
+  "last_verified_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41484564652",
   "last_verified_conclusion": "success",
   "report_automation": "enabled;2026-11-02T08:00:00+01:00; updated with independent artifacts and lesson previews",
   "independent_watchdog": "active; workflow_dispatch handoff verified",
   "watchdog_bootstrap_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41374424262",
-  "watchdog_successor_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41478268061",
-  "watchdog_verified_at": "2026-11-02T15:56:52.376611+00:00",
+  "watchdog_successor_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41483428297",
+  "watchdog_verified_at": "2026-11-02T16:38:16+00:00",
   "resource_budget": "No LLM calls per observation; standard Actions runner waits between600s checks; billable amount not exposed",
   "watchdog_regular_successor": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41375298891",
   "watchdog_chain_confirmed": "Dispatch15:56:52UTC a signalé deux activités anciennes ; relais demandé à16:06:52UTC HTTP204. Successeur41478268061 vu en cours à16:14UTC. Aucun succès anticipé.",
@@ -28,15 +28,19 @@
     "author_activity_refreshed": false,
     "external_watchdog_can_restart_native_agents": false
   },
-  "last_verified_observation": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41478002939",
-  "last_verified_observation_result": "Push16:05:43UTC : snapshot16:05:15 frais, aucune activité ancienne ; tests code92f5d33c réussis. Dispatch15:56:52.376611UTC unhealthy : endocrinologie et parent anciens dans snapshot15:55:16 ; handoff16:06:52UTC HTTP204. Aucune relance native.",
+  "last_verified_observation": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41484564652",
+  "last_verified_observation_result": "Push 16:46:39 UTC : snapshot 16:45:16 frais, tests code 7183b624 réussis ; codex_hematologie sans activité récente depuis clôture D62, préparation D65 hors réservation. Dispatch 16:28:15.712833 UTC unhealthy : astra_nephrologie ancien dans snapshot 16:25:17 ; activité G21 réellement reprise 16:29:22. Handoff 16:38:16 UTC HTTP 204. Aucun redémarrage natif par le relais.",
   "incident_stale_activity": {
     "run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41376224282",
     "observed_at": "2026-11-02T02:10:19Z",
     "result": "Échec affiché pour les activités anciennes des trois auteurs, sans arrêt du relais; observation suivante réussie."
   },
   "native_agents_last_observed": {
-    "at": "2026-11-02T16:19:30.889873+00:00",
+    "at": "2026-11-02T16:49:29.098487+00:00",
+    "observation_window_utc": [
+      "2026-11-02T16:48:20+00:00",
+      "2026-11-02T16:49:29.098487+00:00"
+    ],
     "provider": "collaboration.list_agents",
     "agents": [
       {
@@ -57,7 +61,7 @@
       }
     ],
     "author_activity_refreshed": false,
-    "meaning": "Observation native ponctuelle immédiatement avant enregistrement, ne prouve aucune continuité ; aucun reçu source-binding renouvelé."
+    "meaning": "Observation native ponctuelle durant la fenêtre indiquée ; ne prouve aucune continuité. Aucun reçu source-binding renouvelé."
   },
   "native_model_handoff": {
     "at": "2026-11-02T10:23:02.648791+00:00",
@@ -201,5 +205,16 @@
     "tests": 55,
     "core_sha256": "7183b62415503c05acbb6ac7f0aace432c4df9dcce7afe111a08818ac149fa1f",
     "limits": "Capacité libre observée, pas réservation de volume ni garantie de place suffisante pour un futur build ; ne change ni activité ni reçus."
+  },
+  "e04_semiology_preclosure_incident": {
+    "reported_at_utc": "2026-11-02T16:42:27+00:00",
+    "findings": [
+      "nine_named_sections",
+      "linked_sources_in_semio"
+    ],
+    "cause": "Sélecteur local permissif ; sous-sections sans classe ilot.",
+    "correction": "Appel direct inspect_semiology du harness, correction avant binding ; sept règles réussies au reçu de clôture local 16:46:19 UTC.",
+    "initial_failure_preserved": true,
+    "source": "Message auteur et preuves de version E04 à consulter ; livraison distante séparée."
   }
 }

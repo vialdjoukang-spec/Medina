@@ -12,7 +12,7 @@ def gh(endpoint):return run(['gh','api',endpoint]).stdout
 def digest(data):return hashlib.sha256(data).hexdigest()
 def gitbytes(sha,path):return run(['git','show',sha+':'+path]).stdout
 def main():
- p=argparse.ArgumentParser();p.add_argument('output',type=Path);a=p.parse_args();out=a.output;out.mkdir(parents=True,exist_ok=True)
+ p=argparse.ArgumentParser();p.add_argument('output',type=Path);p.add_argument('--previous',type=Path,action='append',default=[],help='Collection antérieure dont les versions immuables restent à relire.');a=p.parse_args();out=a.output;out.mkdir(parents=True,exist_ok=True)
  now=dt.datetime.now(dt.timezone.utc).isoformat();report={'collected_at':now,'repo':REPO,'errors':[],'branches':{},'versions':[],'active_local':[],'artifacts':[]}
  refs={line.split('\t')[1].removeprefix('refs/heads/'):line.split('\t')[0] for line in run(['git','ls-remote','--heads','origin']).stdout.decode().splitlines()}
  report['main_sha']=refs.get('main');report['remote_refs_checked_at']=dt.datetime.now(dt.timezone.utc).isoformat()
@@ -35,6 +35,18 @@ def main():
  for row in status.get('completed_lessons',[])+status['agents']:
   branch=row.get('branch');sha=refs.get(branch)
   if branch and sha:candidates.setdefault((branch,sha),row)
+ report['previous_collections']=[]
+ for previous in a.previous:
+  path=previous/'collection.json' if previous.is_dir() else previous
+  data=path.read_bytes();old=json.loads(data)
+  if old.get('repo')!=REPO:raise ValueError('Collection antérieure issue d’un autre dépôt')
+  retained=[]
+  for version in old.get('versions',[]):
+   branch=version.get('branch');sha=version.get('version_sha')
+   if branch and sha and version.get('preview'):
+    candidates.setdefault((branch,sha),{'code':version['code'],'branch':branch})
+    retained.append({'code':version['code'],'branch':branch,'sha':sha})
+  report['previous_collections'].append({'path':str(path),'sha256':digest(data),'collected_at':old.get('collected_at'),'retained_versions':retained,'completion_inferred':False})
  def inspect(item):
   (branch,sha),row=item;code=row.get('code') or row.get('lesson');base=f'docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-{code}-INTEGRATE';v={'code':code,'branch':branch,'version_sha':sha,'remote_head':refs.get(branch),'remote_branch_exists':branch in refs,'version_is_remote_head':sha==refs.get(branch),'evidence':{},'binding_checks':[],'errors':[]}
   folder=out/'lessons'/f'{code}-{sha[:10]}';folder.mkdir(parents=True,exist_ok=True)
