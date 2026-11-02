@@ -206,3 +206,8 @@ G03 final `fb7a7226990a237465a3937163a078871df34e3b` pousse, garde et SHA distan
 ## G06 achevé et libéré — 2026-11-02T13:49:23.450574+00:00
 
 Sol a effectivement achevé G06 à13:46:45UTC, après Betta passé avant première rédaction.19lectures ciblées,14points/20rubriques avec limites nationales/administratives explicites,46sections/37fenêtres,4quiz,sixsciences/neufsémiologie. Deux originaux humains PD et six chaînes conceptuelles non anatomiques ; fichier IRM NC-ND refusé. QuatreIDs dupliqués détectés/corrigés par navigateur avant binding, négatif préservé. Final cf157c55b6ab20d2f73784dce3a04c7eb9eabfc2 distant exact, garde passée, worktree propre. Release2dfcae77d5937c0776c537f58db7a2ca2e916b89 et état released vérifiés. Aucune PR ni main ; self_review, aucune certification humaine. G07 libre au registre fraîchement relu, acquisition suivante autorisée par root. G09 reste attribué à l’autre auteur.
+
+
+## G07 — rédaction et premières vérifications réelles, 2026-11-02T15:32:56.330181+00:00
+
+Betta VÉRITÉ OK à15:17:52UTC avant nouvelle rédaction,7empreintes initiales inchangées ; incident de transition de worktree conservé séparément.22références attribuées,14points/20rubriques avec lacunes bornées. Six surfaces écrites,6sciences/9rubriques strictes,45fenêtres,4quiz,2originaux humains inchangés et6schémas conceptuels non anatomiques. Contrôle sciences passé730→3669mots ; premier statique a échoué sur sigles/notes de travail, puis passé après nettoyage. Relecture clinique des notices a précisé arrêt éthambutol après examen et absence d’autre cause et contre-indications de grossesse de deux produits. Build natif en cours, aucune clôture ni empreinte finale émise.

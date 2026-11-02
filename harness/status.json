@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-02T15:25:15+00:00",
+  "generated_at": "2026-11-02T15:35:15+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T15:25:15+00:00",
+    "checked_at": "2026-11-02T15:35:15+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T15:25:15+00:00",
+    "observed_at": "2026-11-02T15:35:15+00:00",
     "ok": true,
     "findings": [
       {
@@ -56,7 +56,7 @@
       "meaning": "Contrôle structurel relancé à chaque veille600s ; résultats historiques conservés, nouvelles clôtures refusées si échec."
     },
     "interval_seconds": 600,
-    "observer_pid": 1191131,
+    "observer_pid": 1192879,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -119,7 +119,7 @@
       "historical_id": "astra_neurologie",
       "lesson": "G07",
       "worktree": "/tmp/Medina-neurologie-G07",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/g07-integrate-g1",
       "allowed_paths": [
         "chapters/G07",
@@ -129,15 +129,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G07-INTEGRATE"
       ],
       "started_at": "2026-11-02T13:55:10+00:00",
-      "activity_at": "2026-11-02T15:18:03+00:00",
-      "message": "G07 :22sources réelles consignées,plan14/matrice20 établis,VÉRITÉ OK15:17:52UTC et7sources initiales inchangées avant rédaction ; incident de transition conservé. Début rédaction clinique maintenant.",
+      "activity_at": "2026-11-02T15:30:13+00:00",
+      "message": "G07 six surfaces écrites :6sciences,9rubriques sémiologie,45fenêtres,4quiz,2originaux humains et6schémas conceptuels. Premier audit sciences passé730→3669mots,4→6disciplines ; nettoyage des sigles des références après premier statique négatif.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "886686a177a81596c207849b551d3ef86a06aa440722fa3f8e156ad13b34aea2",
       "brief": {
         "schema_version": 1,
@@ -903,7 +903,7 @@
         },
         "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
         "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
-        "medical_content_written": false,
+        "medical_content_written": true,
         "current_limitations": [
           "Incident d’ordre de lancement local et échec espace/start conservés, sans réécriture historique.",
           "Sources héritées G07 sont pistes, jamais lectures Sol par présence de cache.",
@@ -1568,9 +1568,9 @@
         ],
         "source_readings_count": 22,
         "research_sources": "/tmp/Medina-neurologie-G07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G07-INTEGRATE/recherche_G07/sources-draft.json",
-        "current_revision": "22sources étayées par lectures réelles :17initialement luesG07 et5lecturesSol antérieures explicitement réutilisées/revérifiées(MRC,PROFILES,deuxdroits/originaux,FIceftriaxone). ChapitreSwissassuranceslu. Recherchefinale/plan14/matrice20etporteBettaàformaliser ; aucune rédactionG07.",
-        "monograph14_reviewed": 0,
-        "matrix20_reviewed": 0,
+        "current_revision": "G07 rédigé et relu :6surfaces,6sciences/9sémiologie,45fenêtres,4quiz. Betta préalable15:17:52UTC,baseline7inchangée prouvée. Premier statique négatif conservé dans historique, nettoyage des fiches puis statiqueOK ; sciences730→3669mots. Relecture notices : arrêt éthambutol conditionné à confirmation, grossesse produits explicite. Build natif en cours.",
+        "monograph14_reviewed": 14,
+        "matrix20_reviewed": 20,
         "source_binding": null,
         "worktree": "/tmp/Medina-neurologie-G07",
         "branch": "codex/alpha77/g07-integrate-g1",
@@ -1595,9 +1595,9 @@
         "source_readings_new_in_G07": 17,
         "source_entries_reused_or_rechecked": 5
       },
-      "activity_age_seconds": 432,
+      "activity_age_seconds": 303,
       "activity_fresh": true,
-      "sections_per_hour": 0.0,
+      "sections_per_hour": 8.39,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -1634,7 +1634,7 @@
       "historical_id": "astra_endocrinologie",
       "lesson": "E42",
       "worktree": "/tmp/Medina-endocrinologie-E42",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/e42-integrate-g1",
       "allowed_paths": [
         "chapters/E42",
@@ -1644,8 +1644,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E42-INTEGRATE"
       ],
       "started_at": "2026-11-02T15:14:28+00:00",
-      "activity_at": "2026-11-02T15:14:28+00:00",
-      "message": "Mission réservée; recherche autorisée",
+      "activity_at": "2026-11-02T15:32:29+00:00",
+      "message": "E42 : recherche sourcée et porte VÉRITÉ OK ;20entrées dont notice de licence,19sources cliniques/scientifiques/formation réellement lues aux niveaux déclarés. Arbitrages OMS/MSF, FI exactes et essais2025/2026 documentés avant rédaction ; début des14sections et six sciences locales.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -1662,7 +1662,7 @@
         "fragment": "S05",
         "label": "E-06-Endocrinologie et métabolisme",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "phase": "E42_recherche",
+        "phase": "E42_redaction",
         "selected_lesson": {
           "code": "E42",
           "title": "Kwashiorkor avec marasme",
@@ -3111,7 +3111,12 @@
           "inventory_before_acquire": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E35-E42/E42-inventory-before-acquire.json",
           "registry_acquire": "951de94f314517ec714238c59d033eb1019d7431",
           "storage": "Worktree complet /tmp/Medina-endocrinologie-E42, lien /workspace/Medina-endocrinologie-E42 ; archives conservées.",
-          "manifest_sha256": "4fb3db3ce7b2f9018afe7617109dbede1dfd3bdf8a53250919d5eecdeda28055"
+          "manifest_sha256": "4fb3db3ce7b2f9018afe7617109dbede1dfd3bdf8a53250919d5eecdeda28055",
+          "sources_read": 20,
+          "source_count_note": "20 entrées dont une notice de licence, pas20guides indépendants ; niveaux réels déclarés",
+          "folder": "/workspace/Medina-endocrinologie-E42/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E42-INTEGRATE",
+          "source_ledger": "/workspace/Medina-endocrinologie-E42/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E42-INTEGRATE/source-ledger.json",
+          "research_gate": "/workspace/Medina-endocrinologie-E42/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E42-INTEGRATE/research-gate.log"
         },
         "previous_limits": [
           "Classification suisse locale2024 et notes allemandes, sans certification de codage individuel, remboursement ou disponibilité2026. Les exemples infectieux ne prouvent pas que toute E35 soit exclusivement infectieuse.",
@@ -3131,7 +3136,7 @@
           "Quatre self_review du même auteur, sans indépendance ni validation médicale humaine ; score clinique, coûts/tokens réels laissés nuls."
         ],
         "current_limits": [
-          "Recherche E42 commencée après claim ; aucune nouvelle rédaction médicale ni validation encore annoncée."
+          "Recherche et gate réels passés ; aucune validation médicale humaine, aucun contrôle final ou scellement encore annoncé."
         ],
         "runtime_agent": "sol_endocrinologie",
         "runtime_model": "gpt-6.1-sol",
@@ -3153,7 +3158,7 @@
           }
         ]
       },
-      "activity_age_seconds": 647,
+      "activity_age_seconds": 167,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -3192,7 +3197,7 @@
       "next_reason": "C92 reserves shared chapters.json; G09 is an existing exclusive course, removed from the other neurology queue.",
       "lesson": "E40",
       "worktree": "/tmp/Medina-nutrition-E40",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/e40-integrate-g1",
       "allowed_paths": [
         "chapters/E40",
@@ -3202,8 +3207,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE"
       ],
       "started_at": "2026-11-02T14:33:11+00:00",
-      "activity_at": "2026-11-02T15:13:56+00:00",
-      "message": "Betta préalable réel passé ;31lectures ciblées/réutilisations attribuées et deuxFI exactes. Quatorze points monographiques E40 écrits ; cinq originaux retenus et droits documentés ; séparation OMS enfant, GLIM/ESPEN adulte et renutrition suisse.",
+      "activity_at": "2026-11-02T15:29:28+00:00",
+      "message": "Sciences4028mots et sept règles sémiologiques natives passent ; aperçu S05 et bundle construits. Premier navigateur :66fenêtres,10images/32repères et mobile passent, deuxfeedbacks quiz desktop non observés après clic forcé ; preuve initiale conservée et reprise avec clic normal/attente réelle.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -4583,9 +4588,9 @@
         "active_specialty": "nutrition",
         "completed_lesson_count": 10
       },
-      "activity_age_seconds": 679,
+      "activity_age_seconds": 348,
       "activity_fresh": true,
-      "sections_per_hour": 16.13,
+      "sections_per_hour": 13.53,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -4614,7 +4619,7 @@
       "clinical_orchestration": false,
       "lesson": "D62",
       "worktree": "/tmp/Medina-hematologie-D62",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/d62-integrate-g1",
       "allowed_paths": [
         "chapters/D62",
@@ -4625,15 +4630,15 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T14:57:26+00:00",
-      "activity_at": "2026-11-02T15:15:59+00:00",
-      "message": "D62 : lecture ciblée trauma2023 et ESGE2026 ; FI Tranexamic Acid Leman septembre2026 réellement lue. Divergences digestif/trauma et renal sévère conservées. Aucun cours rédigé, porte Betta encore à formaliser.",
+      "activity_at": "2026-11-02T15:32:55+00:00",
+      "message": "D62 :14 blocs monographiques rédigés dans modules auteur, contrôles non encore lancés ; seuils contextualisés, divergences TXA/ESGE et postpartum explicites. Sciences, examens et fenêtres en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "b65e75847fa804b14a9c40afd1febe485c6870209d27048445e32a72ac09ef51",
       "brief": {
         "specialty": "Hématologie",
@@ -5463,58 +5468,13 @@
           }
         ]
       },
-      "activity_age_seconds": 556,
+      "activity_age_seconds": 141,
       "activity_fresh": true,
-      "sections_per_hour": 0.0,
+      "sections_per_hour": 22.2,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T04:45:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T04:51:18+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "verification",
-      "message": "C64 : tests finaux natifs réussis ; contrôle du mapping PROFILES hérité du shell avant reçus finaux"
-    },
-    {
-      "at": "2026-11-02T04:51:52+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "verification",
-      "message": "Reprise sur les sources et corrections E07 sauvegardées ; relecture diagnostique puis contrôle de la copie autonome et des figures."
-    },
-    {
-      "at": "2026-11-02T04:52:19+00:00",
-      "action": "complete",
-      "agent": "astra_nephrologie",
-      "code": "C64"
-    },
-    {
-      "at": "2026-11-02T04:52:42+00:00",
-      "action": "progress",
-      "agent": "codex_hematologie",
-      "stage": "redaction",
-      "message": "C95 : porte VÉRITÉ réussie sur29références, septFI et quatre originaux inspectés ; rédaction avec corrections transversales et six sciences en cours."
-    },
-    {
-      "at": "2026-11-02T04:54:47+00:00",
-      "action": "claim",
-      "agent": "astra_nephrologie",
-      "code": "N02"
-    },
-    {
-      "at": "2026-11-02T04:55:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
     {
       "at": "2026-11-02T04:55:57+00:00",
       "action": "progress",
@@ -6761,6 +6721,54 @@
       "agent": "astra_neurologie",
       "stage": "redaction",
       "message": "G07 :22sources réelles consignées,plan14/matrice20 établis,VÉRITÉ OK15:17:52UTC et7sources initiales inchangées avant rédaction ; incident de transition conservé. Début rédaction clinique maintenant."
+    },
+    {
+      "at": "2026-11-02T15:25:15+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T15:27:13+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "redaction",
+      "message": "D62 : porte Betta passée avant toute écriture canonique ;27 références avec réemplois attribués, plan14/matrice20,2 originaux vus. Rédaction réservée commence, aucune clôture."
+    },
+    {
+      "at": "2026-11-02T15:27:38+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "recherche",
+      "message": "E42 : lecture réelle OMS2023 (A1–7/B1–10/maintenues), MSF2024, FI amoxicilline suspension octobre2024 et Benerva avril2019 ; sources mécanismes2026 et GASTROSAM2025/2026 aux niveaux déclarés. Divergences nutrition/fin traitement/intervalle amoxicilline et fluides identifiées ; figure humaine OpenStax inspectée avec licence propre. Aucune rédaction canonique nouvelle."
+    },
+    {
+      "at": "2026-11-02T15:29:28+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "verification",
+      "message": "Sciences4028mots et sept règles sémiologiques natives passent ; aperçu S05 et bundle construits. Premier navigateur :66fenêtres,10images/32repères et mobile passent, deuxfeedbacks quiz desktop non observés après clic forcé ; preuve initiale conservée et reprise avec clic normal/attente réelle."
+    },
+    {
+      "at": "2026-11-02T15:30:13+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "verification",
+      "message": "G07 six surfaces écrites :6sciences,9rubriques sémiologie,45fenêtres,4quiz,2originaux humains et6schémas conceptuels. Premier audit sciences passé730→3669mots,4→6disciplines ; nettoyage des sigles des références après premier statique négatif."
+    },
+    {
+      "at": "2026-11-02T15:32:29+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "redaction",
+      "message": "E42 : recherche sourcée et porte VÉRITÉ OK ;20entrées dont notice de licence,19sources cliniques/scientifiques/formation réellement lues aux niveaux déclarés. Arbitrages OMS/MSF, FI exactes et essais2025/2026 documentés avant rédaction ; début des14sections et six sciences locales."
+    },
+    {
+      "at": "2026-11-02T15:32:55+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "redaction",
+      "message": "D62 :14 blocs monographiques rédigés dans modules auteur, contrôles non encore lancés ; seuils contextualisés, divergences TXA/ESGE et postpartum explicites. Sciences, examens et fenêtres en cours."
     }
   ],
   "cache": {
@@ -13754,7 +13762,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T15:25:13+00:00",
+    "observed_at": "2026-11-02T15:35:13+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -15034,9 +15042,9 @@
         "branch": "codex/alpha77/g07-integrate-g1",
         "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "local_preview": "/tmp/Medina-neurologie-G07/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G07-INTEGRATE/G07-apercu-autonome.html",
-        "exists": false,
-        "sha256": null,
-        "bytes": null,
+        "exists": true,
+        "sha256": "9075c3c08e053ccb190ab9b87ff4036495b86ebe8e7aa9f21a9c3efe8a77e366",
+        "bytes": 8148672,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/g07-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G07-INTEGRATE/G07-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/g07-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
@@ -15064,9 +15072,9 @@
         "branch": "codex/alpha77/e40-integrate-g1",
         "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "local_preview": "/tmp/Medina-nutrition-E40/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE/E40-apercu-autonome.html",
-        "exists": false,
-        "sha256": null,
-        "bytes": null,
+        "exists": true,
+        "sha256": "bff8342b73118f85c4a917c006f2ee75c9ca92fb10c4910aeb2242577a8cd654",
+        "bytes": 8661174,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/e40-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE/E40-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/e40-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
