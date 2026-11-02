@@ -15,3 +15,5 @@ Toutes les revues sont attribuées à l’auteur en `self_review`, jamais qualif
 Le dossier `compatibilite_betta_G05` est une projection expliciteR1–R47 versS101–S147 pour le vérificateur historique ; il ne crée aucune lecture supplémentaire.
 
 Reproduction : build natifS08 vers `preview/`, bundler commun, puis `node browser-check.cjs`, `python3 test_v7.py --static G05` et `python3 tools/betta_verite.py <compatibilite_betta_G05>`. Refaire les contrôles et le reçu si les sources changent. AucunePR ni écriture surmain.
+
+Achèvement de projet enregistré le 2026-11-02T04:17:49+00:00 : [reçu](harness-completion.json). Commit de contenu poussé et vérifié : `07e2dc4b5a157e11060ba53f4f266ceb6aa282c8`. Ce reçu ne constitue pas une certification clinique ni une publication sur main.
