@@ -5,7 +5,7 @@
     "astra_neurologie": {
       "lesson": "G36",
       "worktree": "/workspace/Medina-neurologie-G36",
-      "stage": "recherche",
+      "stage": "verification",
       "branch": "codex/alpha77/g36-integrate-g1",
       "allowed_paths": [
         "chapters/G36",
@@ -15,15 +15,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G36-INTEGRATE"
       ],
       "started_at": "2026-11-02T18:09:19+00:00",
-      "activity_at": "2026-11-02T18:23:54+00:00",
-      "message": "G36 : treize références ciblées journalisées ; quatre sous-codes vérifiés, correction ravulizumab2024 et critères MOG2023 confrontés ; aucune rédaction canonique ni liaison émise.",
+      "activity_at": "2026-11-02T18:40:17+00:00",
+      "message": "G36 : rédaction et reprise clinique effectuées, critères IPND et doses FI confrontés ; six sciences/strict7 passent ; version native finale et 37 fenêtres à éprouver, aucune liaison ni clôture.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "ed8b76903fd8556dee02b4ded4817dea6063a45fe8fb10ee5f6f474c47777f92"
     },
     "astra_endocrinologie": {
@@ -54,7 +54,7 @@
     "astra_nephrologie": {
       "lesson": "G25",
       "worktree": "/tmp/Medina-neurologie-G25",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/g25-integrate-g1",
       "allowed_paths": [
         "chapters/G25",
@@ -64,15 +64,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G25-INTEGRATE"
       ],
       "started_at": "2026-11-02T18:00:54+00:00",
-      "activity_at": "2026-11-02T18:33:42+00:00",
-      "message": "G25 : registre52lectures ciblées/réutilisations consolidé avec huit FI suisses et cinq originaux humains effectivement vus. Matrice20rubriques passée réellement Betta, second contrôle après correction factuelle éditeur Mysoline=CuratisAG ; test initial conservé. Gate verte18:33:29, aucune rédaction canonique avant passage. Entrée en rédaction14points/sixsciences.",
+      "activity_at": "2026-11-02T18:43:35+00:00",
+      "message": "G25 : quatorze points canoniques, examens ciblés, six sciences/neuf rubriques sémiologiques et pharmacologie huit FI réellement rédigés après Betta. Cinq originaux humains copiés sans modification pixels avec limites/licences et repères HTML. Interactions pédagogiques, relectures puis tests natifs/navigateur restent à faire ; aucun binding final.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "1c24287eb836a979c40fda8fd0dac6f10519e66b9c3d109a327a8eb9d6e61449"
     },
     "codex_hematologie": {
@@ -102,27 +102,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T11:33:53+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "redaction",
-      "message": "E25 : recherche ciblée réellement achevée sur 20 sources, porte vérité passée avant rédaction ; 14 sections et 6 sciences/9 sémiologie rédigées. Audit sciences natif passé : 2979 mots, 6 figures ; static passé. Preuves /workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE/recherche_E25, source-ledger.json, static-check.log et audit-sciences.json. Navigateur et corrections de contexte à finir."
-    },
-    {
-      "at": "2026-11-02T11:35:09+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "verification",
-      "message": "N05 : static et audit6sciences passés ; navigateur toutesfonctionsOK, premieragrégat refusé car attendait33repèresN03 au lieu des30N05 réellementprésents. Attente corrigée seloninventaire ; passefinale relancée après finitionslinguistiques."
-    },
-    {
-      "at": "2026-11-02T11:35:30+00:00",
-      "action": "progress",
-      "agent": "codex_hematologie",
-      "stage": "recherche",
-      "message": "Lectures ciblées effectives : FI Eprex/Ferinject/ferro sanol, KDIGO2026 diagnostic-fer-ESA-transfusion, ECCO2024 anémie, ESMO2018, NICE transfusion, mediX et Delphi suisses. Divergences et hypothèse Eprex réfutée consignées ; pas de nouvelle rédaction médicale avant porte vérité."
-    },
     {
       "at": "2026-11-02T11:39:26+00:00",
       "action": "progress",
@@ -1407,6 +1386,26 @@
     },
     {
       "at": "2026-11-02T18:35:16+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T18:40:17+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "verification",
+      "message": "G36 : rédaction et reprise clinique effectuées, critères IPND et doses FI confrontés ; six sciences/strict7 passent ; version native finale et 37 fenêtres à éprouver, aucune liaison ni clôture."
+    },
+    {
+      "at": "2026-11-02T18:43:35+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "redaction",
+      "message": "G25 : quatorze points canoniques, examens ciblés, six sciences/neuf rubriques sémiologiques et pharmacologie huit FI réellement rédigés après Betta. Cinq originaux humains copiés sans modification pixels avec limites/licences et repères HTML. Interactions pédagogiques, relectures puis tests natifs/navigateur restent à faire ; aucun binding final."
+    },
+    {
+      "at": "2026-11-02T18:45:17+00:00",
       "action": "watch",
       "ok": true,
       "findings": 1

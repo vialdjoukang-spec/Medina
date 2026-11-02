@@ -266,3 +266,16 @@ Source622588c2 et final5edc1c1d poussés, distant exact et propre, garde finale 
 ## 2026-11-02T18:09:56.387157+00:00 — G36 acquis et démarré dans l’ordre vérifié
 
 Acquisition97502b9c attendue et active vérifiée avant worktree complet. État propre et registre frais avant start ; dossier de preuves créé seulement après succès. Start/gate/claim18:09:19UTC avant recherche. PROMPT_VERITE lu premier document médical ; instructions identiques parhash aux lectures antérieures, septfichiers canoniques initiaux pris enempreinte. Aucune rédaction ni lectureprimaire revendiquée à ce jalon. CatalogueC73/D66 et autreschemins laissés aux réservataires.
+
+
+## 2026-11-02T18:45:06.642161+00:00 — G36 et coordination observée
+
+G36 : porte Betta réelle avant rédaction, quinze références par sections, six sciences et neuf unités, trente-sept fenêtres et quatre quiz. Reprise clinique effectuée ; parcours natifs 1440/390 réussis sur version inspectée, puis deux phrases de métadiscours pédagogique remplacées sans changer doses ni critères. Version précédente conservée ; reconstruction et vérifications finales en cours, aucune liaison ni clôture.
+
+Snapshot du harness 2026-11-02T18:43:35+00:00 réellement lu par projection des quatre auteurs, sans audit de leurs cours :
+- astra_neurologie : G36, verification, activité 2026-11-02T18:40:17+00:00. G36 : rédaction et reprise clinique effectuées, critères IPND et doses FI confrontés ; six sciences/strict7 passent ; version native finale et 37 fenêtres à éprouver, aucune liaison ni clôture.
+- astra_endocrinologie : C73, termine, activité 2026-11-02T18:33:09+00:00. Achèvement de projet documenté; présentation à Vial avant toute PR main.
+- astra_nephrologie : G25, redaction, activité 2026-11-02T18:43:35+00:00. G25 : quatorze points canoniques, examens ciblés, six sciences/neuf rubriques sémiologiques et pharmacologie huit FI réellement rédigés après Betta. Cinq originaux humains copiés sans modification pixels avec limites/licences et repères HTML. Interactions pédagogiques, relectures puis tests natifs/navigateur restent à faire ; aucun binding final.
+- codex_hematologie : D65, termine, activité 2026-11-02T17:46:39+00:00. Achèvement de projet documenté; présentation à Vial avant toute PR main.
+
+Quarante-et-un achèvements reçus et confirmés par le parent avant G36 ; ce relevé ne crée pas de clôture. Catalogue réservé par son auteur selon registre ; aucun chapters.json modifié. G37 candidat suivant uniquement après clôture et libération G36 effectivement vérifiées. G09/G21/G24/G25/G26 restent exclus. Les mesures de tokens, coût et score clinique restent nulles quand non exposées.
