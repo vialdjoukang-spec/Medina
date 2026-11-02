@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "G06_VERIFICATION_FINALE",
+  "status": "G06_COMPLETE_LIBERE_TRANSITION_G07",
   "prepared_at": "2026-11-02T01:17:05.123886+00:00",
   "agent": "Sol Neurologie",
   "model": "gpt-6.1-sol",
@@ -742,7 +742,7 @@
       "Private GitHub cron and local watch depend on runner/environment availability"
     ]
   },
-  "updated_at": "2026-11-02T13:39:48.848138+00:00",
+  "updated_at": "2026-11-02T13:49:23.448738+00:00",
   "current_package": {
     "code": "G06",
     "worktree": "/workspace/Medina-neurologie-G06",
@@ -750,15 +750,15 @@
     "reservation_acquired": true,
     "acquisition_registry_sha": "b875af9f34b7fe815802f650413d14be8603dcc3",
     "start_receipt": "/workspace/Medina-neurologie-G06/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE/start.json",
-    "stage": "verification",
+    "stage": "revue_requise",
     "source_readings_count": 19,
     "monograph14_reviewed": 14,
     "matrix20_reviewed": 20,
-    "blocking_findings": [
-      "Contrôles navigateur/captures finaux et auto-revues à lier après reconstruction actuelle ; aucun binding émis."
-    ],
+    "blocking_findings": [],
     "clinical_certification": false,
-    "preview": "/workspace/Medina-neurologie-G06/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE/G06-apercu-autonome.html"
+    "preview": "/workspace/Medina-neurologie-G06/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE/G06-apercu-autonome.html",
+    "source_commit": "c15be94edef5aa396c57db9fb9a8f2c1f52a92a9",
+    "preview_sha256": "d97344210d6000cd5ca052f2f077d3f762d7d17dafc9ddceaf3985cef2ab425e"
   },
   "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
   "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
@@ -1193,6 +1193,25 @@
       "publication_allowed": false,
       "review_mode": "self_review",
       "procedure_incident": "Première rédaction avant succès mécanique Betta ; reprise clinique complète réelle après porte, quatre corrections et suivi structurel/visuel documentés, sans conformité initiale rétroactive."
+    },
+    {
+      "code": "G06",
+      "source_commit": "c15be94edef5aa396c57db9fb9a8f2c1f52a92a9",
+      "final_commit": "cf157c55b6ab20d2f73784dce3a04c7eb9eabfc2",
+      "complete_at": "2026-11-02T13:46:45+00:00",
+      "release_registry_sha": "2dfcae77d5937c0776c537f58db7a2ca2e916b89",
+      "released_verified": true,
+      "remote_final_verified": true,
+      "worktree_clean": true,
+      "preview_sha256": "d97344210d6000cd5ca052f2f077d3f762d7d17dafc9ddceaf3985cef2ab425e",
+      "source_binding_sha256": "fb31716f0900d12d6d01d925b4d30e4aab6a987f5d41b887145caf6248a2fe79",
+      "actual_targeted_source_readings": 19,
+      "monograph14": 14,
+      "matrix20": 20,
+      "semio_strict7_passed": true,
+      "review_mode": "self_review",
+      "clinical_certification": false,
+      "review_url": "https://github.com/vialdjoukang-spec/Medina/blob/cf157c55b6ab20d2f73784dce3a04c7eb9eabfc2/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE/README.md"
     }
   ],
   "tokens_actual": null,
@@ -1409,10 +1428,15 @@
   ],
   "source_readings_count": 19,
   "research_sources": "/workspace/Medina-neurologie-G06/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE/recherche_G06/sources.json",
-  "current_revision": "46sections et37fenêtres rédigées après Betta préalable réel,19lectures ; relecture clinique achevée, statique/sciences/sémiologie passent. Dernière reconstruction pour polissage source, parcours finaux et binding restent à terminer.",
+  "current_revision": "Version finale :15684mots au contrôle final ; statique, audit sciences, Betta et7conditions sémiologiques passent ; parcours37fenêtres à1440/390 et9captures finales inspectées. Garde source réussie, push source en cours.",
   "monograph14_reviewed": 14,
   "matrix20_reviewed": 20,
-  "source_binding": null,
+  "source_binding": {
+    "path": "/workspace/Medina-neurologie-G06/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE/source-binding.json",
+    "sha256": "fb31716f0900d12d6d01d925b4d30e4aab6a987f5d41b887145caf6248a2fe79",
+    "preview_sha256": "d97344210d6000cd5ca052f2f077d3f762d7d17dafc9ddceaf3985cef2ab425e",
+    "first_issue_only": true
+  },
   "worktree": "/workspace/Medina-neurologie-G06",
   "branch": "codex/alpha77/g06-integrate-g1",
   "queue_reassignment_note": "G09 réattribué par root à sol_nephrologie le2026-11-02, sorti de cette file ; G06 puis G07/G08.",
