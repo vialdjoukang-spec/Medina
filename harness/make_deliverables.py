@@ -14,7 +14,12 @@ def main():
     previous=json.loads((HERE/'deliverables.json').read_text()) if (HERE/'deliverables.json').exists() else {}
     indexed={x['code']:x for x in previous.get('lessons',[]) if x['code'] in completed}
     result={'observed_at':now(),'lessons':[],'remote_availability':'Verify branch push separately; a local file does not prove remote availability.'}
-    for agent,a in state['agents'].items():
+    # Completed worktrees remain readable after their author claims another
+    # lesson. Refresh their final receipts/HEAD instead of freezing an older
+    # index entry from before the last push.
+    entries={code:(a['agent'],{**a,'lesson':code}) for code,a in completed.items() if a.get('worktree') and a.get('branch')}
+    entries.update({a['lesson']:(agent,a) for agent,a in state['agents'].items() if a.get('lesson')})
+    for agent,a in entries.values():
         code=a.get('lesson');root=Path(a.get('worktree','/nonexistent'))
         if not code:continue
         relative=f'docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-{code}-INTEGRATE/{code}-apercu-autonome.html'
