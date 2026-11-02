@@ -15,8 +15,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G07-INTEGRATE"
       ],
       "started_at": "2026-11-02T13:55:10+00:00",
-      "activity_at": "2026-11-02T14:23:31+00:00",
-      "message": "G07 :14lectures ciblées réelles, boxesTBM1–4, sixFIexactes2022–2026,OFSCIM2024frdirecte/BfArM ; barrièresproduit explicites(PZAClCr<50,RimstarCNSnonstandard,dexaamp4mgphosphate=3,32mgbase). Recherchefocale/amibiase/images etBetta restentàterminer, aucune rédaction.",
+      "activity_at": "2026-11-02T14:51:07+00:00",
+      "message": "G07 :17lectures ciblées réelles, masseTB2020corpsclinique/revueamoebiasemisenligne2024 etFIHumatin2021 lues ; cibles tissulaire/luminale distinctes, restrictionFIextraintestinale conservée. Échecs acquisitionIRM non transformés enprovenance approuvée ; originauxPD connus possibles. Aucune rédaction.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -29,7 +29,7 @@
     "astra_endocrinologie": {
       "lesson": "E35",
       "worktree": "/tmp/Medina-endocrinologie-E35",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/e35-integrate-g1",
       "allowed_paths": [
         "chapters/E35",
@@ -39,15 +39,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E35-INTEGRATE"
       ],
       "started_at": "2026-11-02T14:00:24+00:00",
-      "activity_at": "2026-11-02T14:25:10+00:00",
-      "message": "E35 :25sources réellement lues aux sections/résumés déclarés, reprises E25 explicites ; porte VÉRITÉ OK dans dossier réservé. Arbitrages documentés : double codage sans limiter toute E35 aux infections, traitements crise/infection simultanés, divergences pédiatrie/FI et ciprofloxacine allaitement, pas chirurgie universelle d’une hémorragie. Sources intégrales horsGit ; début rédaction14/20 et sixsciences, aucune clôture E35 annoncée.",
+      "activity_at": "2026-11-02T14:51:31+00:00",
+      "message": "E35 rédaction14sections/20rubriques réalisée ; audit sciences passe758→2970mots,4→6disciplines,2→6figures. Statique natif passe et revue contextuelle corrige V1(version prise pour dérivationECG),IM/IV(fenêtres héritées insulinothérapie) et ancien renvoi Waterhouse devenu absent, sans glossaire partagé.25sources, quatrequiz,40fenêtres/résumés ; contrôles stricts puis build/navigateur commencent.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "61fc9ed1e818bc2a2b8ffdbacbb3a6136cf59aaa3c5a7ae9608728d0c1907f52"
     },
     "astra_nephrologie": {
@@ -77,7 +77,7 @@
     "codex_hematologie": {
       "lesson": "C92",
       "worktree": "/workspace/Medina-hematologie-C92",
-      "stage": "verification",
+      "stage": "termine",
       "branch": "codex/alpha77/c92-integrate-g1",
       "allowed_paths": [
         "chapters/C92",
@@ -88,8 +88,8 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T13:00:22+00:00",
-      "activity_at": "2026-11-02T14:43:34+00:00",
-      "message": "C92 : 25 blocs, six sciences/5426 mots, 42 fenêtres, huit quiz ; six tests et sept règles natifs passés. Relecture a ajouté le tableau OFS des sous-codes manquant ; nouvelle vérification et inspection finale en cours, aucun binding ni achèvement.",
+      "activity_at": "2026-11-02T14:52:54+00:00",
+      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -101,32 +101,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T04:27:38+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T04:29:37+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T04:30:37+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "redaction",
-      "message": "14sections cliniques C64 rédigées, huitFI et27lectures au ledger ; examens/sciences/pharmacologie et relectures encore en cours."
-    },
-    {
-      "at": "2026-11-02T04:31:00+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "recherche",
-      "message": "E07 : sources CHUV/Viollier, calcitonine 2026, NTIS 2021, ENDO-ERN et FI Euthyrox relues ; source exacte du calcium importé identifiée et distinctions de doses documentées. Préparation de la matrice de recherche avant corrections."
-    },
     {
       "at": "2026-11-02T04:33:09+00:00",
       "action": "complete",
@@ -1391,6 +1365,32 @@
       "action": "watch",
       "ok": true,
       "findings": 3
+    },
+    {
+      "at": "2026-11-02T14:51:07+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "G07 :17lectures ciblées réelles, masseTB2020corpsclinique/revueamoebiasemisenligne2024 etFIHumatin2021 lues ; cibles tissulaire/luminale distinctes, restrictionFIextraintestinale conservée. Échecs acquisitionIRM non transformés enprovenance approuvée ; originauxPD connus possibles. Aucune rédaction."
+    },
+    {
+      "at": "2026-11-02T14:51:31+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "verification",
+      "message": "E35 rédaction14sections/20rubriques réalisée ; audit sciences passe758→2970mots,4→6disciplines,2→6figures. Statique natif passe et revue contextuelle corrige V1(version prise pour dérivationECG),IM/IV(fenêtres héritées insulinothérapie) et ancien renvoi Waterhouse devenu absent, sans glossaire partagé.25sources, quatrequiz,40fenêtres/résumés ; contrôles stricts puis build/navigateur commencent."
+    },
+    {
+      "at": "2026-11-02T14:52:54+00:00",
+      "action": "complete",
+      "agent": "codex_hematologie",
+      "code": "C92"
+    },
+    {
+      "at": "2026-11-02T14:55:15+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
     }
   ],
   "cache": {
@@ -2126,6 +2126,50 @@
           "chapters/G09/G09_b.html": "c70ecc9f248208a1f6e0a816a4ada4b2f1d8cdae1401396013eff4085babd476",
           "chapters/G09/G09_c.html": "8c55515e58d61618b8c02e5a77837bad0bc4a21f7610ec17f2a438e2a6c2f340",
           "chapters/G09/G09_d.html": "fee3c8f22b1739450e7b128ec7b40dcc9c3683c35ae9c5110ebe55523dfd1d75"
+        },
+        "clinical_certification": false,
+        "author_activity_refreshed": false,
+        "source_bindings_refreshed": false,
+        "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+      }
+    },
+    {
+      "agent": "codex_hematologie",
+      "code": "C92",
+      "at": "2026-11-02T14:52:53+00:00",
+      "branch": "codex/alpha77/c92-integrate-g1",
+      "worktree": "/workspace/Medina-hematologie-C92",
+      "folder": "/workspace/Medina-hematologie-C92/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C92-INTEGRATE",
+      "manifest_sha256": "789d54e4e4429da148570027c1b713c320ed784eb0cbe79f975bdd00c6f89515",
+      "source_binding_sha256": "a94f74d03bca6f124fbb4b275e4c51474947bfc729b84725fda9226d0427e1b6",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "705aede8b78730ee8eef93bc532888920d32c8f25581d2351d04a10f2b1b5128",
+      "semiology_contract": {
+        "code": "C92",
+        "observed_at": "2026-11-02T14:52:53+00:00",
+        "passed": true,
+        "checks": {
+          "six_science_tabs": true,
+          "first_selected_semio": true,
+          "semio_panel_label_and_visible": true,
+          "first_unit_exact_h3": true,
+          "nine_named_sections": true,
+          "linked_sources_in_semio": true,
+          "clinical_semio_marker": true
+        },
+        "findings": [],
+        "source_hashes": {
+          "chapters/C92/C92_a.html": "8507fa7693108fdfc76fb7dc6e23ecb84dae1227b7cb7aa79e182a6ff5ec9d0f",
+          "chapters/C92/C92_b.html": "5f7c04915c2e4eabe355fa853b2a5f347f0627f819c9ceafc203191c5cfaeb80",
+          "chapters/C92/C92_c.html": "1716c5ca03c9d9e979fe26da1634b8911e1afe86d7f81aaa8199a69fb4e4e45a",
+          "chapters/C92/C92_d.html": "a5c236cd4a9e07e58cb2b8469309d040470741e4041e32c771fd651f38b1ae0f"
         },
         "clinical_certification": false,
         "author_activity_refreshed": false,

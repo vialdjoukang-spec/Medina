@@ -5,7 +5,7 @@
   "main_medina_modified": false,
   "native_agents_persistent": false,
   "branch": "codex/harness-observations-20261102",
-  "last_verified_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41458628148",
+  "last_verified_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41463374009",
   "last_verified_conclusion": "success",
   "report_automation": "enabled;2026-11-02T08:00:00+01:00; updated with independent artifacts and lesson previews",
   "independent_watchdog": "active; workflow_dispatch handoff verified",
@@ -28,8 +28,8 @@
     "author_activity_refreshed": false,
     "external_watchdog_can_restart_native_agents": false
   },
-  "last_verified_observation": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41458628148",
-  "last_verified_observation_result": "Observation push à 14:05:41 UTC : snapshot 14:05:15 non ancien, aucune activité auteur ancienne, tests code 92f5d33c… réussis. Dispatch à 14:01:00.313321 UTC healthy:true ; handoff suivant demandé à 14:11:00.627798 UTC (HTTP204). Alerte dispatch à 13:40:07.201464 UTC pour activité astra_nephrologie ancienne conservée.",
+  "last_verified_observation": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41463374009",
+  "last_verified_observation_result": "Push14:35:51 UTC : snapshot14:35:15 frais, aucune activité auteur ancienne, tests code92f5d33c… réussis. Dispatch14:32:29 a signalé activité ancienne astra_nephrologie sur snapshot14:25 (transition E40) ; dispatch14:21:59 a signalé activité ancienne codex_hematologie sur snapshot14:15. Ces alertes sont conservées ; les progressions ultérieures ne réécrivent pas leur état.",
   "incident_stale_activity": {
     "run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41376224282",
     "observed_at": "2026-11-02T02:10:19Z",
@@ -128,6 +128,46 @@
       "full_worktree": "/tmp/Medina-neurologie-G07",
       "alias": "/workspace/Medina-neurologie-G07",
       "no_retroactive_procedure_compliance": true
+    }
+  },
+  "disk_incident_e40": {
+    "failure": {
+      "recorded_at": "2026-11-02T14:32:45.856271+00:00",
+      "stage": "initial_E40_workspace_checkout",
+      "acquisition_preserved": "441face3938b959866489d858e7bf3601387a143",
+      "worktree_attempted": "/workspace/Medina-nutrition-E40",
+      "errors": [
+        "git worktree add failed: No space left on device while creating livraisons/Livraison Claude/C-01-Cardiologie/archives/2026-10-08_PR12_7C6FC65_ESC_CORRECTIONS",
+        "start failed: tools/ai_session_guard.py absent in cancelled/incomplete checkout",
+        "claim failed: empty start receipt, Expecting value: line 1 column 1 (char 0)",
+        "post-start metadata command could not launch because worktree path no longer existed"
+      ],
+      "actual_start_claim_succeeded": false,
+      "medical_drafting_started": false,
+      "recovery_authorized_by_root": "Full worktree in /tmp, /workspace symlink; preserve failed attempts and all final proofs"
+    },
+    "recovery": {
+      "recorded_at": "2026-11-02T14:45:32.802491+00:00",
+      "acquisition_preserved": "441face3938b959866489d858e7bf3601387a143",
+      "failed_attempt": "startup-failure.json",
+      "failed_start_receipt": "start-failed-empty.json",
+      "new_start_receipt": "start.json",
+      "physical_worktree": "/tmp/Medina-nutrition-E40",
+      "workspace_alias": "/workspace/Medina-nutrition-E40",
+      "alias_resolves_to": "/tmp/Medina-nutrition-E40",
+      "branch": "codex/alpha77/e40-integrate-g1",
+      "head": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+      "real_harness_state": {
+        "lesson": "E40",
+        "started_at": "2026-11-02T14:33:11+00:00",
+        "stage": "recherche",
+        "worktree": "/tmp/Medina-nutrition-E40",
+        "branch": "codex/alpha77/e40-integrate-g1",
+        "completed_sections": 0
+      },
+      "medical_sources_unchanged": true,
+      "evidence_preserved": true,
+      "no_capture_or_medical_cache_deleted": true
     }
   }
 }
