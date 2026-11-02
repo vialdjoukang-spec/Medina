@@ -5,7 +5,7 @@
     "astra_neurologie": {
       "lesson": "I64",
       "worktree": "/workspace/Medina-neurologie-I64",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/i64-integrate-g1",
       "allowed_paths": [
         "chapters/I64",
@@ -15,8 +15,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-I64-INTEGRATE"
       ],
       "started_at": "2026-11-02T04:22:49+00:00",
-      "activity_at": "2026-11-02T04:35:26+00:00",
-      "message": "I64 : vérification des recommandations HIC ESO 2025, des antidotes suisses et du signal Swissmedic Konakion de juillet 2026 ; rédaction native en préparation, aucun test de contenu déclaré.",
+      "activity_at": "2026-11-02T04:42:16+00:00",
+      "message": "I64 : 18 sections cliniques natives réécrites, 25 lectures ciblées enregistrées ; sciences, pharmacologie et fenêtres encore en révision. Pas encore de validation frontend.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -29,7 +29,7 @@
     "astra_endocrinologie": {
       "lesson": "E07",
       "worktree": "/workspace/Medina-endocrinologie-E07",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/e07-integrate-g1",
       "allowed_paths": [
         "chapters/E07",
@@ -39,8 +39,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E07-INTEGRATE"
       ],
       "started_at": "2026-11-02T04:20:54+00:00",
-      "activity_at": "2026-11-02T04:31:00+00:00",
-      "message": "E07 : sources CHUV/Viollier, calcitonine 2026, NTIS 2021, ENDO-ERN et FI Euthyrox relues ; source exacte du calcium importé identifiée et distinctions de doses documentées. Préparation de la matrice de recherche avant corrections.",
+      "activity_at": "2026-11-02T04:39:29+00:00",
+      "message": "E07 : porte VÉRITÉ passée avec 42 sources documentées ; 60 corrections médicales tracées, six onglets scientifiques substantiels dont neuf rubriques de sémiologie. Trois anatomies SVG remplacées par deux originaux licenciés et annotations HTML. Révision pharmacologique et cohérence des résumés en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -53,7 +53,7 @@
     "astra_nephrologie": {
       "lesson": "C64",
       "worktree": "/workspace/Medina-nephrologie-c64",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/c64-integrate-g1",
       "allowed_paths": [
         "chapters/C64",
@@ -64,8 +64,8 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T04:14:17+00:00",
-      "activity_at": "2026-11-02T04:30:37+00:00",
-      "message": "14sections cliniques C64 rédigées, huitFI et27lectures au ledger ; examens/sciences/pharmacologie et relectures encore en cours.",
+      "activity_at": "2026-11-02T04:44:19+00:00",
+      "message": "Six surfaces C64 relues, corrections FI Inlyta/Yervoy et langue appliquées ; statique/sciences et rendu final en renouvellement avant empreintes et matrice14/20.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -76,28 +76,28 @@
       "receipt_sha256": "734dc9ed7edb25b1b46019192338e0531c67ef53737fc88bed39a2bfc3ec94b8"
     },
     "codex_hematologie": {
-      "lesson": "C86",
-      "worktree": "/workspace/Medina-hematologie-C86",
-      "stage": "termine",
-      "branch": "codex/alpha77/c86-integrate-g1",
+      "lesson": "C95",
+      "worktree": "/workspace/Medina-hematologie-C95",
+      "stage": "recherche",
+      "branch": "codex/alpha77/c95-integrate-g1",
       "allowed_paths": [
-        "chapters/C86",
-        "glossary/c86.py",
-        "assets/img/c86/alpha/codex",
-        "organisation/alpha-publications/Codex/C86",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C86-INTEGRATE"
+        "chapters/C95",
+        "glossary/c95.py",
+        "assets/img/c95/alpha/codex",
+        "organisation/alpha-publications/Codex/C95",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C95-INTEGRATE"
       ],
-      "started_at": "2026-11-02T03:26:38+00:00",
-      "activity_at": "2026-11-02T04:33:09+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "started_at": "2026-11-02T04:37:48+00:00",
+      "activity_at": "2026-11-02T04:45:22+00:00",
+      "message": "C95 : socle complet lu ; critères OMS/ICC, nosologie ALAL-NOS, leucostase sans seuil universel et quatre FI suisses actualisées vérifiés. Plan réservé écrit ; préparation du dossier VÉRITÉ.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "f64e830a81691c3a42ec5479b5a72932ea6637bca8b9d027142815e23712657b"
+      "completed_sections": 0,
+      "receipt_sha256": "890495d99aa02b24418e773683ae6ddf9bc0f22a2ce801807a5a96c2ce8a3ef5"
     }
   },
   "events": [
@@ -1175,6 +1175,59 @@
     },
     {
       "at": "2026-11-02T04:35:41+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T04:37:48+00:00",
+      "action": "claim",
+      "agent": "codex_hematologie",
+      "code": "C95"
+    },
+    {
+      "at": "2026-11-02T04:38:33+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "recherche",
+      "message": "C95 réservé et démarré ; lecture du socle, nosologie des lignées ambiguës et risques des seuils universels en cours."
+    },
+    {
+      "at": "2026-11-02T04:39:29+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "redaction",
+      "message": "E07 : porte VÉRITÉ passée avec 42 sources documentées ; 60 corrections médicales tracées, six onglets scientifiques substantiels dont neuf rubriques de sémiologie. Trois anatomies SVG remplacées par deux originaux licenciés et annotations HTML. Révision pharmacologique et cohérence des résumés en cours."
+    },
+    {
+      "at": "2026-11-02T04:42:16+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "redaction",
+      "message": "I64 : 18 sections cliniques natives réécrites, 25 lectures ciblées enregistrées ; sciences, pharmacologie et fenêtres encore en révision. Pas encore de validation frontend."
+    },
+    {
+      "at": "2026-11-02T04:42:26+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T04:44:19+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "verification",
+      "message": "Six surfaces C64 relues, corrections FI Inlyta/Yervoy et langue appliquées ; statique/sciences et rendu final en renouvellement avant empreintes et matrice14/20."
+    },
+    {
+      "at": "2026-11-02T04:45:22+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "recherche",
+      "message": "C95 : socle complet lu ; critères OMS/ICC, nosologie ALAL-NOS, leucostase sans seuil universel et quatre FI suisses actualisées vérifiés. Plan réservé écrit ; préparation du dossier VÉRITÉ."
+    },
+    {
+      "at": "2026-11-02T04:45:41+00:00",
       "action": "watch",
       "ok": true,
       "findings": 0
