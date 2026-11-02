@@ -36,7 +36,7 @@
     "result": "Échec affiché pour les activités anciennes des trois auteurs, sans arrêt du relais; observation suivante réussie."
   },
   "native_agents_last_observed": {
-    "at": "2026-11-02T18:09:54.571312+00:00",
+    "at": "2026-11-02T18:19:43.425317+00:00",
     "provider": "collaboration.list_agents",
     "agents": [
       {
@@ -57,7 +57,7 @@
       }
     ],
     "author_activity_refreshed": false,
-    "meaning": "Observation ponctuelle immédiatement avant consignation ; aucune activité continue ni lecture médicale déduite."
+    "meaning": "Observation native ponctuelle immédiatement avant consignation ; pas continuité garantie."
   },
   "native_model_handoff": {
     "at": "2026-11-02T10:23:02.648791+00:00",
@@ -337,13 +337,35 @@
       "continuity": "Handoff GitHub Actions; delays and service outages remain possible"
     },
     "frozen_report_limit": "Le fichier rapport-08h00 de cet artefact est généré lors de ce run tardif : son nom ne prouve pas un état08h ; voir les deux horodatages réels. Le snapshot08h original de la branche observations reste distinct.",
-    "latest_parsed_report_receipt": "harness/reporting/proofs/20261102-181037-artifact-connector-access.json",
+    "latest_parsed_report_receipt": "harness/reporting/proofs/20261102-182303-artifact-connector-access.json",
     "latest_verified_observation": {
-      "run": 41496913113,
-      "at": "2026-11-02T18:04:07.170260+00:00",
-      "snapshot_at": "2026-11-02T17:55:16+00:00",
-      "healthy": true,
-      "native_restart": false
+      "run": 41498607586,
+      "at": "2026-11-02T18:14:34.198156+00:00",
+      "snapshot_at": "2026-11-02T18:05:16+00:00",
+      "healthy": false,
+      "stale_authors": [
+        "astra_endocrinologie",
+        "codex_hematologie"
+      ],
+      "native_restart": false,
+      "limit": "Anciennes activités dans le snapshot, distinctes des événements C73 ultérieurs et de la préparation externe D66 ; aucune activité source rafraîchie."
     }
+  },
+  "external_preparation_d66": {
+    "recorded_at": "2026-11-02T18:21:15.477262+00:00",
+    "scope": "Préparation externe, aucune réservation avant libération du catalogue C73.",
+    "evidence": "harness/agents/hematologie/transitions/D65-D66/external-preparation.json",
+    "research_check": {
+      "at": "2026-11-02T18:19:05.803928+00:00",
+      "scope": "Validation formelle du dossier externe uniquement ; aucune réservation/start ni autorisation de rédaction déduite.",
+      "sources_sha256": "5de04d061524063ef094146e6bb2088a2605c56a773e3299daaf8f8eb5a2dcc1",
+      "research_sha256": "9b536251600f2cfe5f2de4ae21345d7b22cd4041e09767cbdb121cbd3aeb71cc",
+      "canonical_write": false
+    },
+    "sources": 24,
+    "swiss_fis_newly_read": 6,
+    "images_seen": 2,
+    "completed_lesson_D65_activity_unchanged": true,
+    "canonical_write": false
   }
 }

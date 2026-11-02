@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-02T18:15:16+00:00",
+  "generated_at": "2026-11-02T18:25:16+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T18:15:16+00:00",
+    "checked_at": "2026-11-02T18:25:16+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T18:15:16+00:00",
+    "observed_at": "2026-11-02T18:25:16+00:00",
     "ok": true,
     "findings": [
       {
@@ -44,7 +44,7 @@
             "/workspace/Medina-endocrinologie-C73",
             "/workspace/Medina-hematologie-D65"
           ],
-          "free_bytes": 1288306688,
+          "free_bytes": 1258037248,
           "total_bytes": 33770192896,
           "level": "ok"
         },
@@ -53,7 +53,7 @@
           "observed_paths": [
             "/tmp/Medina-neurologie-G25"
           ],
-          "free_bytes": 1134616576,
+          "free_bytes": 1092050944,
           "total_bytes": 9441329152,
           "level": "ok"
         }
@@ -85,7 +85,7 @@
       "meaning": "Contrôle structurel relancé à chaque veille600s ; résultats historiques conservés, nouvelles clôtures refusées si échec."
     },
     "interval_seconds": 600,
-    "observer_pid": 1659836,
+    "observer_pid": 1663910,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -144,7 +144,7 @@
       "historical_id": "astra_neurologie",
       "lesson": "G36",
       "worktree": "/workspace/Medina-neurologie-G36",
-      "stage": "preparation",
+      "stage": "recherche",
       "branch": "codex/alpha77/g36-integrate-g1",
       "allowed_paths": [
         "chapters/G36",
@@ -154,8 +154,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G36-INTEGRATE"
       ],
       "started_at": "2026-11-02T18:09:19+00:00",
-      "activity_at": "2026-11-02T18:09:56+00:00",
-      "message": "G36 : acquisition terminée puis vérifiée avant worktree complet ; start sur état propre, reçus créés après succès ; gate et claim passés à18:09:19. Vérité lu premier document médical et sept fichiers initiaux inventoriés, aucune recherche primaire ni rédaction encore revendiquée.",
+      "activity_at": "2026-11-02T18:23:54+00:00",
+      "message": "G36 : treize références ciblées journalisées ; quatre sous-codes vérifiés, correction ravulizumab2024 et critères MOG2023 confrontés ; aucune rédaction canonique ni liaison émise.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -166,7 +166,7 @@
       "receipt_sha256": "ed8b76903fd8556dee02b4ded4817dea6063a45fe8fb10ee5f6f474c47777f92",
       "brief": {
         "schema_version": 1,
-        "status": "G36_PREPARATION",
+        "status": "G36_RECHERCHE",
         "prepared_at": "2026-11-02T01:17:05.123886+00:00",
         "agent": "Sol Neurologie",
         "model": "gpt-6.1-sol",
@@ -859,19 +859,20 @@
           "code": "G36",
           "worktree": "/workspace/Medina-neurologie-G36",
           "branch": "codex/alpha77/g36-integrate-g1",
-          "stage": "preparation",
+          "stage": "recherche",
           "reservation_acquired": true,
           "start_passed": true,
           "claim_passed": true,
           "acquisition_registry_sha": "97502b9c864696b7df1344ff11b27bbe464a39b4",
           "source_binding": null,
-          "source_readings_count": 0,
+          "source_readings_count": 13,
           "medical_content_written": false,
           "monograph14_reviewed": 0,
           "matrix20_reviewed": 0,
           "acquisition_return_awaited_before_worktree": true,
           "worktree_clean_before_start": true,
-          "evidence_folder_created_after_successful_start": true
+          "evidence_folder_created_after_successful_start": true,
+          "research_journal": "/workspace/Medina-neurologie-G36/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G36-INTEGRATE/recherche_G36/sources-draft.json"
         },
         "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
         "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
@@ -1808,7 +1809,7 @@
           "final_commit": "5edc1c1d2efa0accb62b004729d1047b649aad26"
         }
       },
-      "activity_age_seconds": 321,
+      "activity_age_seconds": 82,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -1858,8 +1859,8 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T17:49:16+00:00",
-      "activity_at": "2026-11-02T18:05:31+00:00",
-      "message": "C7314sections cliniques,4examens,7pharmacologie,6sciences et37fenêtres assemblés ; sept contrôles sémiologiques natifs passés18:04:28. Premier statique lexical en échec (versions/noms/CYP3 et espaces), correction locale en cours avant construction/évaluation visuelle ; aucune liaison finale créée.",
+      "activity_at": "2026-11-02T18:17:11+00:00",
+      "message": "Relecture C73 : prévention RET et chirurgie médullaire complétées après lecture S3 ciblée ; trois FI suisses supplémentaires lues (Nexavar novembre 2023, Cabometyx décembre 2025, Caprelsa avril 2025). Porte de vérité repassée pour 32 références et dix sections pharmacologiques, sans extrapolation Cabometyx au médullaire ni dose pédiatrique inventée. Nouveaux contrôles avant captures finales ; aucun sceau.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -3409,9 +3410,9 @@
         "next_candidate_after_E04": "C73 après catalogue D65 libéré ; préparation externe seule entretemps.",
         "measurement_note": "Les champs JSON null signifient non mesurés/inconnus ; ils ne représentent jamais une mesure zéro. Le libellé ambigu du rapport E04 scellé reste conservé et est corrigé ici sans modifier ses preuves."
       },
-      "activity_age_seconds": 586,
+      "activity_age_seconds": 485,
       "activity_fresh": true,
-      "sections_per_hour": 32.3,
+      "sections_per_hour": 23.33,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -4990,7 +4991,7 @@
           "G26"
         ]
       },
-      "activity_age_seconds": 172,
+      "activity_age_seconds": 771,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -6353,32 +6354,13 @@
           }
         ]
       },
-      "activity_age_seconds": 1718,
+      "activity_age_seconds": 2317,
       "activity_fresh": false,
-      "sections_per_hour": 10.17,
+      "sections_per_hour": 9.07,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T11:10:54+00:00",
-      "action": "claim",
-      "agent": "astra_neurologie",
-      "code": "G03"
-    },
-    {
-      "at": "2026-11-02T11:13:57+00:00",
-      "action": "claim",
-      "agent": "codex_hematologie",
-      "code": "D63"
-    },
-    {
-      "at": "2026-11-02T11:18:23+00:00",
-      "action": "progress",
-      "agent": "codex_hematologie",
-      "stage": "recherche",
-      "message": "D63 : base de six surfaces parcourue, 14074 mots, 36 fenêtres et 8 quiz. Plusieurs absolus et incohérences repérés (ferritine, transfusion, relais du fer, portée des CI Eprex). Sources CH, KDIGO2026 complet et deux FI obtenues ; lectures exactes en cours, aucune rédaction médicale avant VÉRITÉ."
-    },
     {
       "at": "2026-11-02T11:20:10+00:00",
       "action": "watch",
@@ -7667,6 +7649,26 @@
       "agent": "astra_nephrologie",
       "stage": "recherche",
       "message": "G25 périmètre OFS complet lu (G25.80PLMS/.81RLS/.88akathisie et homme raide), PDF tremor2022 avec SNG et validité2027 récupéré et passages initiaux lus ; RLS2024 et résumés2026 vérifiés. Six FI versions repérées, indications/doses de quatre FI réellement réouvertes ; lectures sécurité encore en cours, pas rédaction."
+    },
+    {
+      "at": "2026-11-02T18:15:16+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T18:17:11+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "redaction",
+      "message": "Relecture C73 : prévention RET et chirurgie médullaire complétées après lecture S3 ciblée ; trois FI suisses supplémentaires lues (Nexavar novembre 2023, Cabometyx décembre 2025, Caprelsa avril 2025). Porte de vérité repassée pour 32 références et dix sections pharmacologiques, sans extrapolation Cabometyx au médullaire ni dose pédiatrique inventée. Nouveaux contrôles avant captures finales ; aucun sceau."
+    },
+    {
+      "at": "2026-11-02T18:23:54+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "G36 : treize références ciblées journalisées ; quatre sous-codes vérifiés, correction ravulizumab2024 et critères MOG2023 confrontés ; aucune rédaction canonique ni liaison émise."
     }
   ],
   "cache": {
@@ -7712,7 +7714,7 @@
       "result": "Échec affiché pour les activités anciennes des trois auteurs, sans arrêt du relais; observation suivante réussie."
     },
     "native_agents_last_observed": {
-      "at": "2026-11-02T18:09:54.571312+00:00",
+      "at": "2026-11-02T18:19:43.425317+00:00",
       "provider": "collaboration.list_agents",
       "agents": [
         {
@@ -7733,7 +7735,7 @@
         }
       ],
       "author_activity_refreshed": false,
-      "meaning": "Observation ponctuelle immédiatement avant consignation ; aucune activité continue ni lecture médicale déduite."
+      "meaning": "Observation native ponctuelle immédiatement avant consignation ; pas continuité garantie."
     },
     "native_model_handoff": {
       "at": "2026-11-02T10:23:02.648791+00:00",
@@ -8013,14 +8015,36 @@
         "continuity": "Handoff GitHub Actions; delays and service outages remain possible"
       },
       "frozen_report_limit": "Le fichier rapport-08h00 de cet artefact est généré lors de ce run tardif : son nom ne prouve pas un état08h ; voir les deux horodatages réels. Le snapshot08h original de la branche observations reste distinct.",
-      "latest_parsed_report_receipt": "harness/reporting/proofs/20261102-181037-artifact-connector-access.json",
+      "latest_parsed_report_receipt": "harness/reporting/proofs/20261102-182303-artifact-connector-access.json",
       "latest_verified_observation": {
-        "run": 41496913113,
-        "at": "2026-11-02T18:04:07.170260+00:00",
-        "snapshot_at": "2026-11-02T17:55:16+00:00",
-        "healthy": true,
-        "native_restart": false
+        "run": 41498607586,
+        "at": "2026-11-02T18:14:34.198156+00:00",
+        "snapshot_at": "2026-11-02T18:05:16+00:00",
+        "healthy": false,
+        "stale_authors": [
+          "astra_endocrinologie",
+          "codex_hematologie"
+        ],
+        "native_restart": false,
+        "limit": "Anciennes activités dans le snapshot, distinctes des événements C73 ultérieurs et de la préparation externe D66 ; aucune activité source rafraîchie."
       }
+    },
+    "external_preparation_d66": {
+      "recorded_at": "2026-11-02T18:21:15.477262+00:00",
+      "scope": "Préparation externe, aucune réservation avant libération du catalogue C73.",
+      "evidence": "harness/agents/hematologie/transitions/D65-D66/external-preparation.json",
+      "research_check": {
+        "at": "2026-11-02T18:19:05.803928+00:00",
+        "scope": "Validation formelle du dossier externe uniquement ; aucune réservation/start ni autorisation de rédaction déduite.",
+        "sources_sha256": "5de04d061524063ef094146e6bb2088a2605c56a773e3299daaf8f8eb5a2dcc1",
+        "research_sha256": "9b536251600f2cfe5f2de4ae21345d7b22cd4041e09767cbdb121cbd3aeb71cc",
+        "canonical_write": false
+      },
+      "sources": 24,
+      "swiss_fis_newly_read": 6,
+      "images_seen": 2,
+      "completed_lesson_D65_activity_unchanged": true,
+      "canonical_write": false
     }
   },
   "prompt": {
@@ -14837,7 +14861,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T18:15:13+00:00",
+    "observed_at": "2026-11-02T18:25:13+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -16782,8 +16806,8 @@
         "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "local_preview": "/workspace/Medina-endocrinologie-C73/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C73-INTEGRATE/C73-apercu-autonome.html",
         "exists": true,
-        "sha256": "8626d69585879602fa3832c2a83a1c37c8f6bc5418f8c274c764d4e97b3065f9",
-        "bytes": 7697928,
+        "sha256": "39433629c1bebf70f94c5190fbbb19053163ee5e836cdb363125f0a5b6297226",
+        "bytes": 7704491,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/c73-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C73-INTEGRATE/C73-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/c73-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
