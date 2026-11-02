@@ -1,18 +1,28 @@
 {
-  "generated_at": "2026-11-02T14:35:15+00:00",
+  "generated_at": "2026-11-02T14:45:15+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T14:35:15+00:00",
+    "checked_at": "2026-11-02T14:45:15+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T14:35:15+00:00",
+    "observed_at": "2026-11-02T14:45:15+00:00",
     "ok": true,
     "findings": [
+      {
+        "agent": "astra_neurologie",
+        "level": "warning",
+        "reason": "Aucune activité déclarée depuis plus de 20 min; agent non supposé actif"
+      },
+      {
+        "agent": "astra_endocrinologie",
+        "level": "warning",
+        "reason": "Aucune activité déclarée depuis plus de 20 min; agent non supposé actif"
+      },
       {
         "level": "warning",
         "reason": "Réserves structurelles historiques à traiter avant intégration ; achèvements conservés",
@@ -56,7 +66,7 @@
       "meaning": "Contrôle structurel relancé à chaque veille600s ; résultats historiques conservés, nouvelles clôtures refusées si échec."
     },
     "interval_seconds": 600,
-    "observer_pid": 1105047,
+    "observer_pid": 1106318,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -1593,8 +1603,8 @@
           "preview": null
         }
       },
-      "activity_age_seconds": 704,
-      "activity_fresh": true,
+      "activity_age_seconds": 1305,
+      "activity_fresh": false,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
@@ -3134,8 +3144,8 @@
           }
         ]
       },
-      "activity_age_seconds": 605,
-      "activity_fresh": true,
+      "activity_age_seconds": 1206,
+      "activity_fresh": false,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
@@ -3183,8 +3193,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE"
       ],
       "started_at": "2026-11-02T14:33:11+00:00",
-      "activity_at": "2026-11-02T14:34:18+00:00",
-      "message": "Sol-Nutrition-E40 : reprise matérielle réelle sur /tmp, alias /workspace, start/claim réussis après échec overlay conservé ; inventaire sept fichiers existants. Sources CH puis EU/OMS et distinction enfants/adultes avant Betta, aucune rédaction encore.",
+      "activity_at": "2026-11-02T14:43:54+00:00",
+      "message": "E40 : nomenclature OFS E40/E42/E43 réellement lue ; guide OMS d’implémentation 28.07.2026 découvert et cache fournisseur obtenu, sections cliniques à lire ; trois FI récupérées, pertinence/versions à vérifier. Aucune rédaction avant Betta.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -3604,7 +3614,14 @@
           "code": "E40",
           "medical_drafting_started": false,
           "betta_entry_passed": false,
-          "selected_sections_actually_read": 0
+          "selected_sections_actually_read": 1,
+          "first_primary_reading": "OFS CIM-10-GM 2024 : E40, E41, E42, E43, E44, E46 ; distinction œdème nutritionnel, dépigmentation, marasme et œdème de famine.",
+          "new_primary_document_discovered": "WHO implementation guidance, publication 28 juillet 2026 ; cache fournisseur complet hors Git, sections cliniques pas encore lues.",
+          "exact_swiss_FIs_downloaded_not_yet_full_read": [
+            "Benerva",
+            "Amoxicillin Delbert IV",
+            "Amoxicilline Spirig HC oral"
+          ]
         },
         "reusable_tools": [
           "tools/betta_verite.py",
@@ -3644,7 +3661,7 @@
             "initial_status": "observed"
           }
         ],
-        "updated_at": "2026-11-02T14:34:18.820851+00:00",
+        "updated_at": "2026-11-02T14:43:54.877118+00:00",
         "initial_counts": {
           "conservative_s04_targets": 33,
           "existing": 6,
@@ -4553,7 +4570,7 @@
         "active_specialty": "nutrition",
         "completed_lesson_count": 10
       },
-      "activity_age_seconds": 57,
+      "activity_age_seconds": 82,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -4584,7 +4601,7 @@
       "clinical_orchestration": false,
       "lesson": "C92",
       "worktree": "/workspace/Medina-hematologie-C92",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/c92-integrate-g1",
       "allowed_paths": [
         "chapters/C92",
@@ -4595,8 +4612,8 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T13:00:22+00:00",
-      "activity_at": "2026-11-02T14:17:04+00:00",
-      "message": "C92 : porte recherche passée avant écriture ; brouillons des 14 points et de cinq sections examens rédigés, non assemblés et non validés. Trois FI suisses supplémentaires lues pour la pharmacologie.",
+      "activity_at": "2026-11-02T14:43:34+00:00",
+      "message": "C92 : 25 blocs, six sciences/5426 mots, 42 fenêtres, huit quiz ; six tests et sept règles natifs passés. Relecture a ajouté le tableau OFS des sous-codes manquant ; nouvelle vérification et inspection finale en cours, aucun binding ni achèvement.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -5089,33 +5106,13 @@
           "source_entries": 38
         }
       },
-      "activity_age_seconds": 1091,
+      "activity_age_seconds": 102,
       "activity_fresh": true,
-      "sections_per_hour": 8.85,
+      "sections_per_hour": 8.01,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T04:22:49+00:00",
-      "action": "claim",
-      "agent": "astra_neurologie",
-      "code": "I64"
-    },
-    {
-      "at": "2026-11-02T04:23:18+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "recherche",
-      "message": "E07 : six surfaces existantes lues ; défauts identifiés sur TSH en maladie critique, seuils de calcitonine et portée des tests. Sources suisses CHUV, Viollier, SGED et dépistage néonatal ouvertes ; recherche du produit calcique exact et actualisation européenne en cours."
-    },
-    {
-      "at": "2026-11-02T04:26:25+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "recherche",
-      "message": "I64 : huit sources ciblées enregistrées ; FI Actilyse/Metalyse relues, recommandations suisses 2026 et ARIA identifiées. Relecture des critères et de la sémiologie avant rédaction."
-    },
     {
       "at": "2026-11-02T04:26:49+00:00",
       "action": "progress",
@@ -6387,6 +6384,26 @@
       "agent": "astra_nephrologie",
       "stage": "recherche",
       "message": "Sol-Nutrition-E40 : reprise matérielle réelle sur /tmp, alias /workspace, start/claim réussis après échec overlay conservé ; inventaire sept fichiers existants. Sources CH puis EU/OMS et distinction enfants/adultes avant Betta, aucune rédaction encore."
+    },
+    {
+      "at": "2026-11-02T14:35:15+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T14:43:34+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "verification",
+      "message": "C92 : 25 blocs, six sciences/5426 mots, 42 fenêtres, huit quiz ; six tests et sept règles natifs passés. Relecture a ajouté le tableau OFS des sous-codes manquant ; nouvelle vérification et inspection finale en cours, aucun binding ni achèvement."
+    },
+    {
+      "at": "2026-11-02T14:43:54+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "recherche",
+      "message": "E40 : nomenclature OFS E40/E42/E43 réellement lue ; guide OMS d’implémentation 28.07.2026 découvert et cache fournisseur obtenu, sections cliniques à lire ; trois FI récupérées, pertinence/versions à vérifier. Aucune rédaction avant Betta."
     }
   ],
   "cache": {
@@ -13341,7 +13358,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T14:35:13+00:00",
+    "observed_at": "2026-11-02T14:45:13+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -14548,9 +14565,9 @@
         "branch": "codex/alpha77/c92-integrate-g1",
         "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "local_preview": "/workspace/Medina-hematologie-C92/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C92-INTEGRATE/C92-apercu-autonome.html",
-        "exists": false,
-        "sha256": null,
-        "bytes": null,
+        "exists": true,
+        "sha256": "705aede8b78730ee8eef93bc532888920d32c8f25581d2351d04a10f2b1b5128",
+        "bytes": 11956907,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/c92-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C92-INTEGRATE/C92-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/c92-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",

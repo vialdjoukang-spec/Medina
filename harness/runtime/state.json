@@ -63,8 +63,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E40-INTEGRATE"
       ],
       "started_at": "2026-11-02T14:33:11+00:00",
-      "activity_at": "2026-11-02T14:34:18+00:00",
-      "message": "Sol-Nutrition-E40 : reprise matérielle réelle sur /tmp, alias /workspace, start/claim réussis après échec overlay conservé ; inventaire sept fichiers existants. Sources CH puis EU/OMS et distinction enfants/adultes avant Betta, aucune rédaction encore.",
+      "activity_at": "2026-11-02T14:43:54+00:00",
+      "message": "E40 : nomenclature OFS E40/E42/E43 réellement lue ; guide OMS d’implémentation 28.07.2026 découvert et cache fournisseur obtenu, sections cliniques à lire ; trois FI récupérées, pertinence/versions à vérifier. Aucune rédaction avant Betta.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -77,7 +77,7 @@
     "codex_hematologie": {
       "lesson": "C92",
       "worktree": "/workspace/Medina-hematologie-C92",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/c92-integrate-g1",
       "allowed_paths": [
         "chapters/C92",
@@ -88,8 +88,8 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T13:00:22+00:00",
-      "activity_at": "2026-11-02T14:17:04+00:00",
-      "message": "C92 : porte recherche passée avant écriture ; brouillons des 14 points et de cinq sections examens rédigés, non assemblés et non validés. Trois FI suisses supplémentaires lues pour la pharmacologie.",
+      "activity_at": "2026-11-02T14:43:34+00:00",
+      "message": "C92 : 25 blocs, six sciences/5426 mots, 42 fenêtres, huit quiz ; six tests et sept règles natifs passés. Relecture a ajouté le tableau OFS des sous-codes manquant ; nouvelle vérification et inspection finale en cours, aucun binding ni achèvement.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -101,27 +101,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T04:23:18+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "recherche",
-      "message": "E07 : six surfaces existantes lues ; défauts identifiés sur TSH en maladie critique, seuils de calcitonine et portée des tests. Sources suisses CHUV, Viollier, SGED et dépistage néonatal ouvertes ; recherche du produit calcique exact et actualisation européenne en cours."
-    },
-    {
-      "at": "2026-11-02T04:26:25+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "recherche",
-      "message": "I64 : huit sources ciblées enregistrées ; FI Actilyse/Metalyse relues, recommandations suisses 2026 et ARIA identifiées. Relecture des critères et de la sémiologie avant rédaction."
-    },
-    {
-      "at": "2026-11-02T04:26:49+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "redaction",
-      "message": "27 lectures ciblées consignées, huit FI exactes ; cinq originaux humains vus et droits lus. Début monographie C64, sections rédigées encore0."
-    },
     {
       "at": "2026-11-02T04:27:38+00:00",
       "action": "watch",
@@ -1392,6 +1371,26 @@
       "action": "watch",
       "ok": true,
       "findings": 1
+    },
+    {
+      "at": "2026-11-02T14:43:34+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "verification",
+      "message": "C92 : 25 blocs, six sciences/5426 mots, 42 fenêtres, huit quiz ; six tests et sept règles natifs passés. Relecture a ajouté le tableau OFS des sous-codes manquant ; nouvelle vérification et inspection finale en cours, aucun binding ni achèvement."
+    },
+    {
+      "at": "2026-11-02T14:43:54+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "recherche",
+      "message": "E40 : nomenclature OFS E40/E42/E43 réellement lue ; guide OMS d’implémentation 28.07.2026 découvert et cache fournisseur obtenu, sections cliniques à lire ; trois FI récupérées, pertinence/versions à vérifier. Aucune rédaction avant Betta."
+    },
+    {
+      "at": "2026-11-02T14:45:15+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 3
     }
   ],
   "cache": {
