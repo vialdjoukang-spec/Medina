@@ -200,3 +200,5 @@ C70 final `730d8b24b9c4017ad3161a504f2ca3c626c3521d` poussé, achèvement réel 
 ## 2026-11-02T12:18:10.041448+00:00 — G03 clos et G06 acquis
 
 G03 final `fb7a7226990a237465a3937163a078871df34e3b` pousse, garde et SHA distant verifies, complete reel 12:10:01 UTC, sept conditions semiologiques strictes passees. Release `344d5c0ef96a2fa6e423e9c0c7594d665ad285db` relue released ; premier CAS stale rejete sans mutation. Incident Betta initial conserve et reprise clinique complete post-porte, puis corrections structurelles et visuelles. Toutes revues self_review, aucune certification humaine. G06 acquis `b875af9f34b7fe815802f650413d14be8603dcc3`, start/claim sur branche propre base8a. Zero lecture medicale G06 encore comptabilisee ; recherche d’abord, porte Betta reelle avant toute premiere redaction. Respect strict h3/neuf marqueurs/lien direct HTTPS et figures lisibles prevu des la construction. C70 libere non modifie ; reserve structurelle historique signalee par root conservee dans son rapport.
+
+-2026-11-02 : G09 réattribué par root au créneau sol_nephrologie ; retiré de la file propre. G06 reste le seul cours actif.

@@ -1,23 +1,18 @@
 {
-  "generated_at": "2026-11-02T13:05:15+00:00",
+  "generated_at": "2026-11-02T13:15:15+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T13:05:15+00:00",
+    "checked_at": "2026-11-02T13:15:15+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T13:05:15+00:00",
+    "observed_at": "2026-11-02T13:15:15+00:00",
     "ok": true,
     "findings": [
-      {
-        "agent": "astra_neurologie",
-        "level": "warning",
-        "reason": "Aucune activité déclarée depuis plus de 20 min; agent non supposé actif"
-      },
       {
         "level": "warning",
         "reason": "Réserves structurelles historiques à traiter avant intégration ; achèvements conservés",
@@ -40,8 +35,8 @@
       }
     ],
     "semiology_history": {
-      "inspected": 24,
-      "passed": 10,
+      "inspected": 25,
+      "passed": 11,
       "reserved_codes": [
         "E00",
         "N04",
@@ -61,7 +56,7 @@
       "meaning": "Contrôle structurel relancé à chaque veille600s ; résultats historiques conservés, nouvelles clôtures refusées si échec."
     },
     "interval_seconds": 600,
-    "observer_pid": 914789,
+    "observer_pid": 971905,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -134,8 +129,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE"
       ],
       "started_at": "2026-11-02T12:18:09+00:00",
-      "activity_at": "2026-11-02T12:39:12+00:00",
-      "message": "G06 : huit lectures ciblées réelles journalisées ; guide suisse STG 2026, ESCMID primaire, EANS et FI montrent des divergences de fréquence/durée à expliciter ; aucune rédaction de cours.",
+      "activity_at": "2026-11-02T13:10:57+00:00",
+      "message": "G06 : 19 lectures ciblées réellement journalisées, matrice20/plan14 ; Betta VÉRITÉ OK avant première rédaction, preuve des sept sources initiales inchangées.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -263,17 +258,6 @@
               "owner": "Codex",
               "active_reservations": [],
               "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G08-INTEGRATE.json",
-              "campaign77_member": true,
-              "source_exists": true,
-              "authorization": "candidate_after_harness_and_current_reservation_check"
-            },
-            {
-              "code": "G09",
-              "title": "Séquelles d’affections inflammatoires du système nerveux central",
-              "mode": "existing",
-              "owner": "Codex",
-              "active_reservations": [],
-              "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G09-INTEGRATE.json",
               "campaign77_member": true,
               "source_exists": true,
               "authorization": "candidate_after_harness_and_current_reservation_check"
@@ -1563,17 +1547,18 @@
             "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
           }
         ],
-        "source_readings_count": 8,
-        "research_sources": "/workspace/Medina-neurologie-G06/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE/recherche_G06/sources-draft.json",
-        "current_revision": "Huit lectures ciblées G06 journalisées, guide suisse2026 et texte primaireESCMID2024 accessibles ; divergences FI/protocoles identifiées et en analyse ; aucune rédaction médicale.",
+        "source_readings_count": 19,
+        "research_sources": "/workspace/Medina-neurologie-G06/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE/recherche_G06/sources.json",
+        "current_revision": "Recherche19lectures ciblées réelles et plan14/matrice20 documentés ; contrôle VÉRITÉ OK avant toute rédaction G06, sept sources initiales encore inchangées.",
         "monograph14_reviewed": 0,
         "matrix20_reviewed": 0,
         "source_binding": null,
         "worktree": "/workspace/Medina-neurologie-G06",
-        "branch": "codex/alpha77/g06-integrate-g1"
+        "branch": "codex/alpha77/g06-integrate-g1",
+        "queue_reassignment_note": "G09 réattribué par root à sol_nephrologie le2026-11-02, sorti de cette file ; G06 puis G07/G08."
       },
-      "activity_age_seconds": 1563,
-      "activity_fresh": false,
+      "activity_age_seconds": 259,
+      "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
@@ -3115,9 +3100,9 @@
           }
         ]
       },
-      "activity_age_seconds": 108,
+      "activity_age_seconds": 709,
       "activity_fresh": true,
-      "sections_per_hour": 11.73,
+      "sections_per_hour": 10.29,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -3153,7 +3138,7 @@
       "next_reason": "C92 reserves shared chapters.json; G09 is an existing exclusive course, removed from the other neurology queue.",
       "lesson": "D77",
       "worktree": "/workspace/Medina-hematologie-D77",
-      "stage": "verification",
+      "stage": "termine",
       "branch": "codex/alpha77/d77-integrate-g1",
       "allowed_paths": [
         "chapters/D77",
@@ -3163,8 +3148,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D77-INTEGRATE"
       ],
       "started_at": "2026-11-02T12:12:23+00:00",
-      "activity_at": "2026-11-02T13:01:00+00:00",
-      "message": "Contrôle sciences passé : 1055 vers 3341 mots, 3 vers 6 disciplines ; 10 occurrences/32 repères. Contrôle navigateur exploratoire en cours, glossaire D77 limité aux notions réellement utilisées ; aucune clôture ni binding final encore.",
+      "activity_at": "2026-11-02T13:08:57+00:00",
+      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -3181,23 +3166,60 @@
         "fragment_label": "N-07-Néphrologie",
         "prepared_at": "2026-11-02T01:16:51.601917+00:00",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "status": "D77_research_under_exclusive_reservation",
+        "status": "D77_completed_released_transition_G09",
         "selected_lesson": {
           "code": "D77",
           "title": "Autres maladies du sang et des organes hématopoïétiques au cours de maladies classées ailleurs",
           "mode": "existing_course_review",
           "worktree": "/workspace/Medina-hematologie-D77",
           "branch": "codex/alpha77/d77-integrate-g1",
-          "reservation_acquired": true,
+          "reservation_acquired": false,
           "acquisition_registry_sha": "51b73791397be15fe2ef26569f7460811473fbe8",
           "harness_claimed": true,
           "runtime_name": "sol_nephrologie",
           "production_name": "Sol-Hématologie-D77",
           "runtime_model": "gpt-6.1-sol",
-          "stage": "recherche",
+          "stage": "completed",
           "clinical_certification": false,
           "start_receipt": "/workspace/Medina-hematologie-D77/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D77-INTEGRATE/start.json",
-          "catalogue_scope": "Aucunmandat surchapters.json, coursD77existantseulement."
+          "catalogue_scope": "Aucunmandat surchapters.json, coursD77existantseulement.",
+          "status": "harness_complete_reservation_released",
+          "harness_completed_at": "2026-11-02T13:08:57+00:00",
+          "source_commit": "554c89924110da9a5137b6cbfb3fcb9250c728da",
+          "final_commit": "12337012a89595b0d70d95f524f99877381c6935",
+          "remote_sha_verified": true,
+          "release_registry_sha": "24658a893abfc71a532618202e29072b76ad156f",
+          "completed_at": "2026-11-02T13:08:57+00:00",
+          "preview_sha256": "bb773a8e17f345bf10bcd587f5188732ce60ae151c6b5859d19c9f883c74c74a",
+          "final_source_files_sha256": {
+            "chapters/D77/D77_a.html": "76c75288cf989f0b47d8edd0d62da358c14d1d2d709088e516d86637681d5d1c",
+            "chapters/D77/D77_b.html": "45c9c4eb1e54728e61236e58114b081148c87c24430e6aefd1abc462d9e594e8",
+            "chapters/D77/D77_c.html": "03f1af4c6a3e5c54cebeb1d2998c46203e410d16a15a1c955720caec8dbda2b3",
+            "chapters/D77/D77_d.html": "b69585b846e45e904e79500a08a907eafb595836ffc81993387e823ff38e5de0",
+            "chapters/D77/D77_pop1.html": "543d8d9558c717958f00db60df2cabbb19e204d591b7a4266198d8e3fe261704",
+            "chapters/D77/D77_pop2.html": "35d072421fb36d187a2cb0f32c62d13d97973febff03ff08c08caf7f58b6bf3a",
+            "glossary/d77.py": "1c93f532400d05d9936f6b0458af13c5e346904c8b2dfe99dcd1cdabcbbfb4d5",
+            "assets/img/d77/alpha/codex/Gray1188.png": "6ae2c7878e96d0831afca4f234b2383fc99ef29ef27c0e524282dda182958319",
+            "assets/img/d77/alpha/codex/Gray591-Portal_vein.png": "5cfc858834f7d8e8f11166139f646c4dbaed7867c1a44f92fe4dcbb4d2deb253",
+            "assets/img/d77/alpha/codex/Schistosoma_mansoni_egg_4841_lores.jpg": "dea847446c71bc79acaf64af7bc04c8b79b8b10895f954a9dd1917622a4c7019",
+            "assets/img/d77/alpha/codex/normal-marrow-openstax2016.jpg": "cd483ef54f20ff09f255d4d7a897ad2e67f6481963abef3837b5e523d2084a72",
+            "assets/img/d77/alpha/codex/Milz_Mensch.jpg": "a02d4deb468dfb3f846671ee7e8ac8ea81c62e2f11ac65b63f496fafc59ae42c"
+          },
+          "final_counts": {
+            "monograph_points": 14,
+            "medina_rubrics": 20,
+            "selected_source_readings": 27,
+            "exact_swiss_FIs": 2,
+            "foreign_RCP": 1,
+            "science_tabs": 6,
+            "semiology_sections": 9,
+            "original_figures": 5,
+            "figure_occurrences": 10,
+            "annotation_markers": 32,
+            "windows": 34,
+            "quiz": 4
+          },
+          "semiology_seven_rules_native_passed": true
         },
         "instruction_priority": "Ordre actuel : quatre spécialités en parallèle et une leçon à la fois par agent ; remplace les lots historiques, sans supprimer les réservations.",
         "counts": {
@@ -3578,7 +3600,15 @@
           "https://www.revmed.ch/revue-medicale-suisse/2022/revue-medicale-suisse-771/syndrome-nephrotique-de-l-adulte-et-autres-proteinuries-de-fort-debit",
           "https://www.swissnephrology.ch/wp/wp-content/uploads/2025/03/Version-2025_Francais_V_17.03.2025_WZ.pdf"
         ],
-        "source_reading_status": "N29 : inventaire hérité en cours, ne constitue pas une relecture primaire actuelle.",
+        "source_reading_status": {
+          "code": "D77",
+          "selected_sections_actually_read": 27,
+          "exact_swiss_FIs": 2,
+          "foreign_RCP": 1,
+          "medical_drafting_started_after_betta": true,
+          "cache_outside_git": "/tmp/medina-d77-source-cache",
+          "limitations": "Lectures ciblées, plusieurs sections du même document ; aucun texte complet de source publié."
+        },
         "reusable_tools": [
           "tools/betta_verite.py",
           "tools/swissmedic_fi.py",
@@ -3593,10 +3623,7 @@
           "tests/test_image_codex_finder.py",
           "tests/test_audit_sciences.py"
         ],
-        "next_gate": [
-          "Recherche primaire réellement lue avant enrichissement",
-          "N29 complet avec preuves 14/20, six sciences, neuf sections sémiologiques, images et revues avant leçon suivante"
-        ],
+        "next_gate": "G09 seul prochain candidat attribué ; vérifier registre/PR frais, acquisition exclusive puis nouveau worktree et start/claim avant toute rédaction.",
         "preliminary_findings": [
           {
             "id": "N04-SEMIO-ABSENT",
@@ -3620,7 +3647,7 @@
             "initial_status": "observed"
           }
         ],
-        "updated_at": "2026-11-02T04:54:47.205168+00:00",
+        "updated_at": "2026-11-02T13:12:30.411339+00:00",
         "initial_counts": {
           "conservative_s04_targets": 33,
           "existing": 6,
@@ -3638,9 +3665,15 @@
           "n04_local_assets": 5
         },
         "current_counts": {
-          "monograph_points_written": 0,
-          "selected_sources_verified": 0,
-          "original_figures_final": 0
+          "monograph_points": 14,
+          "medina_rubrics": 20,
+          "science_tabs": 6,
+          "semiology_sections": 9,
+          "original_figures": 5,
+          "figure_occurrences": 10,
+          "annotation_markers": 32,
+          "windows": 34,
+          "quiz": 4
         },
         "delivery": {
           "folder": "/workspace/Medina-nephrologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE",
@@ -3696,13 +3729,13 @@
           }
         },
         "final_verifications": {
-          "static": "passed",
-          "science": "passed5355words6disciplines7figures",
-          "verite": "passed",
-          "browser": "passed1440/390;9incorporatedimageoccurrencesdecodedperviewport;Livre24px;0overflow;0JSerrors",
-          "preservation": "22/22 inherited sections kept;26199→30518words",
-          "contract": "passedwithself_reviewdeclared",
-          "source_binding": "12canonical sources and10proof digests frozen after final tests"
+          "code": "D77",
+          "scope_guard": "passed",
+          "strict_semiology": "7/7",
+          "targeted_immutable_check": "passed",
+          "science_words_after": 3659,
+          "browser": "passed 1440/390, Livre 24 px, 34 windows, 4 quiz, 10 images/32 markers",
+          "source_binding_sha256": "52503ac9123977d67ec13bc0ad2d81c0e7c43178c16fae2ba47fa4219e298032"
         },
         "completed_lessons": [
           {
@@ -3894,6 +3927,60 @@
             "status": "harness_complete_reservation_released",
             "release_registry_sha": "9f5bc96c7eb39a422957c89d50cccdda8b68ad88",
             "completed_at": "2026-11-02T04:52:19+00:00"
+          },
+          {
+            "code": "D77",
+            "title": "Autres maladies du sang et des organes hématopoïétiques au cours de maladies classées ailleurs",
+            "mode": "existing_course_review",
+            "worktree": "/workspace/Medina-hematologie-D77",
+            "branch": "codex/alpha77/d77-integrate-g1",
+            "reservation_acquired": false,
+            "acquisition_registry_sha": "51b73791397be15fe2ef26569f7460811473fbe8",
+            "harness_claimed": true,
+            "runtime_name": "sol_nephrologie",
+            "production_name": "Sol-Hématologie-D77",
+            "runtime_model": "gpt-6.1-sol",
+            "stage": "completed",
+            "clinical_certification": false,
+            "start_receipt": "/workspace/Medina-hematologie-D77/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D77-INTEGRATE/start.json",
+            "catalogue_scope": "Aucunmandat surchapters.json, coursD77existantseulement.",
+            "status": "harness_complete_reservation_released",
+            "harness_completed_at": "2026-11-02T13:08:57+00:00",
+            "source_commit": "554c89924110da9a5137b6cbfb3fcb9250c728da",
+            "final_commit": "12337012a89595b0d70d95f524f99877381c6935",
+            "remote_sha_verified": true,
+            "release_registry_sha": "24658a893abfc71a532618202e29072b76ad156f",
+            "completed_at": "2026-11-02T13:08:57+00:00",
+            "preview_sha256": "bb773a8e17f345bf10bcd587f5188732ce60ae151c6b5859d19c9f883c74c74a",
+            "final_source_files_sha256": {
+              "chapters/D77/D77_a.html": "76c75288cf989f0b47d8edd0d62da358c14d1d2d709088e516d86637681d5d1c",
+              "chapters/D77/D77_b.html": "45c9c4eb1e54728e61236e58114b081148c87c24430e6aefd1abc462d9e594e8",
+              "chapters/D77/D77_c.html": "03f1af4c6a3e5c54cebeb1d2998c46203e410d16a15a1c955720caec8dbda2b3",
+              "chapters/D77/D77_d.html": "b69585b846e45e904e79500a08a907eafb595836ffc81993387e823ff38e5de0",
+              "chapters/D77/D77_pop1.html": "543d8d9558c717958f00db60df2cabbb19e204d591b7a4266198d8e3fe261704",
+              "chapters/D77/D77_pop2.html": "35d072421fb36d187a2cb0f32c62d13d97973febff03ff08c08caf7f58b6bf3a",
+              "glossary/d77.py": "1c93f532400d05d9936f6b0458af13c5e346904c8b2dfe99dcd1cdabcbbfb4d5",
+              "assets/img/d77/alpha/codex/Gray1188.png": "6ae2c7878e96d0831afca4f234b2383fc99ef29ef27c0e524282dda182958319",
+              "assets/img/d77/alpha/codex/Gray591-Portal_vein.png": "5cfc858834f7d8e8f11166139f646c4dbaed7867c1a44f92fe4dcbb4d2deb253",
+              "assets/img/d77/alpha/codex/Schistosoma_mansoni_egg_4841_lores.jpg": "dea847446c71bc79acaf64af7bc04c8b79b8b10895f954a9dd1917622a4c7019",
+              "assets/img/d77/alpha/codex/normal-marrow-openstax2016.jpg": "cd483ef54f20ff09f255d4d7a897ad2e67f6481963abef3837b5e523d2084a72",
+              "assets/img/d77/alpha/codex/Milz_Mensch.jpg": "a02d4deb468dfb3f846671ee7e8ac8ea81c62e2f11ac65b63f496fafc59ae42c"
+            },
+            "final_counts": {
+              "monograph_points": 14,
+              "medina_rubrics": 20,
+              "selected_source_readings": 27,
+              "exact_swiss_FIs": 2,
+              "foreign_RCP": 1,
+              "science_tabs": 6,
+              "semiology_sections": 9,
+              "original_figures": 5,
+              "figure_occurrences": 10,
+              "annotation_markers": 32,
+              "windows": 34,
+              "quiz": 4
+            },
+            "semiology_seven_rules_native_passed": true
           }
         ],
         "current_limits": [
@@ -3907,8 +3994,10 @@
         "verification": {
           "stage": "completed",
           "clinical_certification": false,
-          "final_commit": "c8c9423a3d0d414baf803363ed8929d2247027f0",
-          "remote_sha_verified": true
+          "final_commit": "12337012a89595b0d70d95f524f99877381c6935",
+          "source_commit": "554c89924110da9a5137b6cbfb3fcb9250c728da",
+          "remote_sha_verified": true,
+          "release_verified": true
         },
         "prior_lessons": [
           {
@@ -4083,6 +4172,60 @@
             "remote_sha_verified": true,
             "release_registry_sha": "116edbc9264026c57c816c035989b4f2521ef283",
             "completed_at": "2026-11-02T12:02:38+00:00"
+          },
+          {
+            "code": "D77",
+            "title": "Autres maladies du sang et des organes hématopoïétiques au cours de maladies classées ailleurs",
+            "mode": "existing_course_review",
+            "worktree": "/workspace/Medina-hematologie-D77",
+            "branch": "codex/alpha77/d77-integrate-g1",
+            "reservation_acquired": false,
+            "acquisition_registry_sha": "51b73791397be15fe2ef26569f7460811473fbe8",
+            "harness_claimed": true,
+            "runtime_name": "sol_nephrologie",
+            "production_name": "Sol-Hématologie-D77",
+            "runtime_model": "gpt-6.1-sol",
+            "stage": "completed",
+            "clinical_certification": false,
+            "start_receipt": "/workspace/Medina-hematologie-D77/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D77-INTEGRATE/start.json",
+            "catalogue_scope": "Aucunmandat surchapters.json, coursD77existantseulement.",
+            "status": "harness_complete_reservation_released",
+            "harness_completed_at": "2026-11-02T13:08:57+00:00",
+            "source_commit": "554c89924110da9a5137b6cbfb3fcb9250c728da",
+            "final_commit": "12337012a89595b0d70d95f524f99877381c6935",
+            "remote_sha_verified": true,
+            "release_registry_sha": "24658a893abfc71a532618202e29072b76ad156f",
+            "completed_at": "2026-11-02T13:08:57+00:00",
+            "preview_sha256": "bb773a8e17f345bf10bcd587f5188732ce60ae151c6b5859d19c9f883c74c74a",
+            "final_source_files_sha256": {
+              "chapters/D77/D77_a.html": "76c75288cf989f0b47d8edd0d62da358c14d1d2d709088e516d86637681d5d1c",
+              "chapters/D77/D77_b.html": "45c9c4eb1e54728e61236e58114b081148c87c24430e6aefd1abc462d9e594e8",
+              "chapters/D77/D77_c.html": "03f1af4c6a3e5c54cebeb1d2998c46203e410d16a15a1c955720caec8dbda2b3",
+              "chapters/D77/D77_d.html": "b69585b846e45e904e79500a08a907eafb595836ffc81993387e823ff38e5de0",
+              "chapters/D77/D77_pop1.html": "543d8d9558c717958f00db60df2cabbb19e204d591b7a4266198d8e3fe261704",
+              "chapters/D77/D77_pop2.html": "35d072421fb36d187a2cb0f32c62d13d97973febff03ff08c08caf7f58b6bf3a",
+              "glossary/d77.py": "1c93f532400d05d9936f6b0458af13c5e346904c8b2dfe99dcd1cdabcbbfb4d5",
+              "assets/img/d77/alpha/codex/Gray1188.png": "6ae2c7878e96d0831afca4f234b2383fc99ef29ef27c0e524282dda182958319",
+              "assets/img/d77/alpha/codex/Gray591-Portal_vein.png": "5cfc858834f7d8e8f11166139f646c4dbaed7867c1a44f92fe4dcbb4d2deb253",
+              "assets/img/d77/alpha/codex/Schistosoma_mansoni_egg_4841_lores.jpg": "dea847446c71bc79acaf64af7bc04c8b79b8b10895f954a9dd1917622a4c7019",
+              "assets/img/d77/alpha/codex/normal-marrow-openstax2016.jpg": "cd483ef54f20ff09f255d4d7a897ad2e67f6481963abef3837b5e523d2084a72",
+              "assets/img/d77/alpha/codex/Milz_Mensch.jpg": "a02d4deb468dfb3f846671ee7e8ac8ea81c62e2f11ac65b63f496fafc59ae42c"
+            },
+            "final_counts": {
+              "monograph_points": 14,
+              "medina_rubrics": 20,
+              "selected_source_readings": 27,
+              "exact_swiss_FIs": 2,
+              "foreign_RCP": 1,
+              "science_tabs": 6,
+              "semiology_sections": 9,
+              "original_figures": 5,
+              "figure_occurrences": 10,
+              "annotation_markers": 32,
+              "windows": 34,
+              "quiz": 4
+            },
+            "semiology_seven_rules_native_passed": true
           }
         ],
         "reserves": {
@@ -4202,9 +4345,9 @@
         "production_name": "Sol-Hématologie-D77",
         "active_specialty": "hematologie"
       },
-      "activity_age_seconds": 255,
+      "activity_age_seconds": 379,
       "activity_fresh": true,
-      "sections_per_hour": 15.89,
+      "sections_per_hour": 13.36,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -4244,8 +4387,8 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T13:00:22+00:00",
-      "activity_at": "2026-11-02T13:00:22+00:00",
-      "message": "Mission réservée; recherche autorisée",
+      "activity_at": "2026-11-02T13:12:02+00:00",
+      "message": "C92 : création autorisée et périmètre partagé réservé ; sous-codes OFS lus, ELN2025 LMC et tableaux 1/2/3/4/6 réellement consultés. Recherche LMA/FI/images en cours ; aucun chapitre rédigé avant Betta.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -4732,40 +4875,13 @@
         "sources_read": 0,
         "completed_sections": 0
       },
-      "activity_age_seconds": 293,
+      "activity_age_seconds": 194,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T03:32:57+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "recherche",
-      "message": "G05 : 26 lectures persistées, six fichiers hérités relus ; deux planches humaines originales téléchargées et vues. Correction indispensable des règles IRM/PCR, durées HSV, suivi neurosyphilis, doses selon produit et myélite. Sources rares encore à compléter."
-    },
-    {
-      "at": "2026-11-02T03:33:06+00:00",
-      "action": "claim",
-      "agent": "astra_nephrologie",
-      "code": "N00"
-    },
-    {
-      "at": "2026-11-02T03:33:06+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "recherche",
-      "message": "N00 nouvelle monographie acquise et démarrée ; revue des sources suisses et européennes, réutilisation des caches N04/N29 et cadre clinique avant rédaction."
-    },
-    {
-      "at": "2026-11-02T03:33:37+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "verification",
-      "message": "E01 : 14 points et 20 rubriques relus ; corrections scintigraphie/ponction, tableaux mobiles et schémas appliquées. Contrôle final de la copie autonome en cours."
-    },
     {
       "at": "2026-11-02T03:37:08+00:00",
       "action": "complete",
@@ -6031,6 +6147,32 @@
       "action": "complete",
       "agent": "astra_endocrinologie",
       "code": "E30"
+    },
+    {
+      "at": "2026-11-02T13:05:15+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 2
+    },
+    {
+      "at": "2026-11-02T13:08:57+00:00",
+      "action": "complete",
+      "agent": "astra_nephrologie",
+      "code": "D77"
+    },
+    {
+      "at": "2026-11-02T13:10:57+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "G06 : 19 lectures ciblées réellement journalisées, matrice20/plan14 ; Betta VÉRITÉ OK avant première rédaction, preuve des sept sources initiales inchangées."
+    },
+    {
+      "at": "2026-11-02T13:12:02+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "recherche",
+      "message": "C92 : création autorisée et périmètre partagé réservé ; sous-codes OFS lus, ELN2025 LMC et tableaux 1/2/3/4/6 réellement consultés. Recherche LMA/FI/images en cours ; aucun chapitre rédigé avant Betta."
     }
   ],
   "cache": {
@@ -6045,8 +6187,8 @@
     "main_medina_modified": false,
     "native_agents_persistent": false,
     "branch": "codex/harness-observations-20261102",
-    "last_verified_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41446036893",
-    "last_verified_conclusion": "failure",
+    "last_verified_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41448946866",
+    "last_verified_conclusion": "success",
     "report_automation": "enabled;2026-11-02T08:00:00+01:00; updated with independent artifacts and lesson previews",
     "independent_watchdog": "active; workflow_dispatch handoff verified",
     "watchdog_bootstrap_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41374424262",
@@ -6068,8 +6210,8 @@
       "author_activity_refreshed": false,
       "external_watchdog_can_restart_native_agents": false
     },
-    "last_verified_observation": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41446036893",
-    "last_verified_observation_result": "Observation indépendante 12:37:30 UTC, snapshot 12:35:14 : healthy:false, activité astra_endocrinologie ancienne. Jalons auteur réels suivants à lire séparément ; aucune activité renouvelée par la veille.",
+    "last_verified_observation": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41448946866",
+    "last_verified_observation_result": "Observation indépendante 12:58:21 UTC sur snapshot 12:55:15 : healthy:true, aucune activité auteur ancienne. Relais workflow_dispatch, aucun réveil natif ni écriture main.",
     "incident_stale_activity": {
       "run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41376224282",
       "observed_at": "2026-11-02T02:10:19Z",
@@ -12939,7 +13081,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T13:05:13+00:00",
+    "observed_at": "2026-11-02T13:15:13+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -13860,6 +14002,65 @@
         }
       },
       {
+        "code": "D77",
+        "agent": "astra_nephrologie",
+        "branch": "codex/alpha77/d77-integrate-g1",
+        "head_observed": "12337012a89595b0d70d95f524f99877381c6935",
+        "local_preview": "/workspace/Medina-hematologie-D77/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D77-INTEGRATE/D77-apercu-autonome.html",
+        "exists": true,
+        "sha256": "bb773a8e17f345bf10bcd587f5188732ce60ae151c6b5859d19c9f883c74c74a",
+        "bytes": 9458300,
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/d77-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D77-INTEGRATE/D77-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/d77-integrate-g1",
+        "status": "Achèvement de projet documenté; version en attente de revue utilisateur avant PR main.",
+        "publication_main": false,
+        "clinical_certification": false,
+        "completion": {
+          "agent": "astra_nephrologie",
+          "code": "D77",
+          "at": "2026-11-02T13:08:57+00:00",
+          "branch": "codex/alpha77/d77-integrate-g1",
+          "worktree": "/workspace/Medina-hematologie-D77",
+          "folder": "/workspace/Medina-hematologie-D77/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D77-INTEGRATE",
+          "manifest_sha256": "31fbc2445fd8748315f0b0cf1dee9d32e0aaf66594cb1040103afe022c86b956",
+          "source_binding_sha256": "52503ac9123977d67ec13bc0ad2d81c0e7c43178c16fae2ba47fa4219e298032",
+          "review_modes": {
+            "medical": "self_review",
+            "language": "self_review",
+            "visual_desktop": "self_review",
+            "visual_mobile": "self_review"
+          },
+          "clinical_certification": false,
+          "publication_allowed": false,
+          "preview_sha256": "bb773a8e17f345bf10bcd587f5188732ce60ae151c6b5859d19c9f883c74c74a",
+          "semiology_contract": {
+            "code": "D77",
+            "observed_at": "2026-11-02T13:08:57+00:00",
+            "passed": true,
+            "checks": {
+              "six_science_tabs": true,
+              "first_selected_semio": true,
+              "semio_panel_label_and_visible": true,
+              "first_unit_exact_h3": true,
+              "nine_named_sections": true,
+              "linked_sources_in_semio": true,
+              "clinical_semio_marker": true
+            },
+            "findings": [],
+            "source_hashes": {
+              "chapters/D77/D77_a.html": "76c75288cf989f0b47d8edd0d62da358c14d1d2d709088e516d86637681d5d1c",
+              "chapters/D77/D77_b.html": "45c9c4eb1e54728e61236e58114b081148c87c24430e6aefd1abc462d9e594e8",
+              "chapters/D77/D77_c.html": "03f1af4c6a3e5c54cebeb1d2998c46203e410d16a15a1c955720caec8dbda2b3",
+              "chapters/D77/D77_d.html": "b69585b846e45e904e79500a08a907eafb595836ffc81993387e823ff38e5de0"
+            },
+            "clinical_certification": false,
+            "author_activity_refreshed": false,
+            "source_bindings_refreshed": false,
+            "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+          }
+        }
+      },
+      {
         "code": "G06",
         "agent": "astra_neurologie",
         "branch": "codex/alpha77/g06-integrate-g1",
@@ -13870,21 +14071,6 @@
         "bytes": null,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/g06-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G06-INTEGRATE/G06-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/g06-integrate-g1",
-        "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
-        "publication_main": false,
-        "clinical_certification": false
-      },
-      {
-        "code": "D77",
-        "agent": "astra_nephrologie",
-        "branch": "codex/alpha77/d77-integrate-g1",
-        "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "local_preview": "/workspace/Medina-hematologie-D77/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D77-INTEGRATE/D77-apercu-autonome.html",
-        "exists": true,
-        "sha256": "28cd6b30f5c43d9793f8d936dfeb8cccc1d9e333edb56cb64c73935632585d9b",
-        "bytes": 9458356,
-        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/d77-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D77-INTEGRATE/D77-apercu-autonome.html",
-        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/d77-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
         "publication_main": false,
         "clinical_certification": false
@@ -14459,6 +14645,50 @@
           "chapters/E30/E30_b.html": "f34849ccc5610b5178db48e2272de7da370c9b90551b6189a252dee491efbea4",
           "chapters/E30/E30_c.html": "190942800127156b2f5c0b6c472740fcfebaa1714b55931c2df7f16a27b9998e",
           "chapters/E30/E30_d.html": "66a79b394f9a9cddf53c3f43d3140aa84b7a7081241ead8bab364e296fc826ff"
+        },
+        "clinical_certification": false,
+        "author_activity_refreshed": false,
+        "source_bindings_refreshed": false,
+        "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+      }
+    },
+    {
+      "agent": "astra_nephrologie",
+      "code": "D77",
+      "at": "2026-11-02T13:08:57+00:00",
+      "branch": "codex/alpha77/d77-integrate-g1",
+      "worktree": "/workspace/Medina-hematologie-D77",
+      "folder": "/workspace/Medina-hematologie-D77/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D77-INTEGRATE",
+      "manifest_sha256": "31fbc2445fd8748315f0b0cf1dee9d32e0aaf66594cb1040103afe022c86b956",
+      "source_binding_sha256": "52503ac9123977d67ec13bc0ad2d81c0e7c43178c16fae2ba47fa4219e298032",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "bb773a8e17f345bf10bcd587f5188732ce60ae151c6b5859d19c9f883c74c74a",
+      "semiology_contract": {
+        "code": "D77",
+        "observed_at": "2026-11-02T13:08:57+00:00",
+        "passed": true,
+        "checks": {
+          "six_science_tabs": true,
+          "first_selected_semio": true,
+          "semio_panel_label_and_visible": true,
+          "first_unit_exact_h3": true,
+          "nine_named_sections": true,
+          "linked_sources_in_semio": true,
+          "clinical_semio_marker": true
+        },
+        "findings": [],
+        "source_hashes": {
+          "chapters/D77/D77_a.html": "76c75288cf989f0b47d8edd0d62da358c14d1d2d709088e516d86637681d5d1c",
+          "chapters/D77/D77_b.html": "45c9c4eb1e54728e61236e58114b081148c87c24430e6aefd1abc462d9e594e8",
+          "chapters/D77/D77_c.html": "03f1af4c6a3e5c54cebeb1d2998c46203e410d16a15a1c955720caec8dbda2b3",
+          "chapters/D77/D77_d.html": "b69585b846e45e904e79500a08a907eafb595836ffc81993387e823ff38e5de0"
         },
         "clinical_certification": false,
         "author_activity_refreshed": false,
