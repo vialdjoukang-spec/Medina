@@ -11,7 +11,7 @@
   "independent_watchdog": "active; workflow_dispatch handoff verified",
   "watchdog_bootstrap_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41374424262",
   "watchdog_successor_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41488706941",
-  "watchdog_verified_at": "2026-11-02T17:11:03+00:00",
+  "watchdog_verified_at": "2026-11-02T17:46:22.276514+00:00",
   "resource_budget": "No LLM calls per observation; standard Actions runner waits between600s checks; billable amount not exposed",
   "watchdog_regular_successor": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41375298891",
   "watchdog_chain_confirmed": "Dispatch15:56:52UTC a signalé deux activités anciennes ; relais demandé à16:06:52UTC HTTP204. Successeur41478268061 vu en cours à16:14UTC. Aucun succès anticipé.",
@@ -28,15 +28,15 @@
     "author_activity_refreshed": false,
     "external_watchdog_can_restart_native_agents": false
   },
-  "last_verified_observation": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41489409471",
-  "last_verified_observation_result": "Push17:15:46UTC : snapshot17:15:16 frais, tests87d7a45f réussis ; endocrinologie ancienne sur E04 terminé, recherches C73 externes documentées séparément17:25:42 sans renouveler activitéE04. Dispatch17:01:03.541354UTC : neurologie ancienne dans snapshot16:55:16 ; handoff17:11:03 HTTP204.",
+  "last_verified_observation": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41492062724",
+  "last_verified_observation_result": "Dispatch observé17:32:32.302034UTC : snapshot17:25:16, alerte activité ancienne astra_endocrinologie sur E04 terminé ; préparation C73 externe consignée séparément, pas heartbeat E04. Successeur demandé17:42:32 HTTP204. Dispatch précédent41490400839 : même alerte17:22:03, handoff17:32:05 HTTP204. Le relais continue malgré conclusion failure ; aucun réveil natif.",
   "incident_stale_activity": {
     "run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41376224282",
     "observed_at": "2026-11-02T02:10:19Z",
     "result": "Échec affiché pour les activités anciennes des trois auteurs, sans arrêt du relais; observation suivante réussie."
   },
   "native_agents_last_observed": {
-    "at": "2026-11-02T17:07:44.978437+00:00",
+    "at": "2026-11-02T17:46:56.952792+00:00",
     "provider": "collaboration.list_agents",
     "agents": [
       {
@@ -57,7 +57,7 @@
       }
     ],
     "author_activity_refreshed": false,
-    "meaning": "Observation ponctuelle immédiatement avant consignation ; aucune continuité native ni lecture médicale déduite."
+    "meaning": "Observation ponctuelle par collaboration.list_agents immédiatement avant consignation ; aucune continuité native ni lecture médicale déduite."
   },
   "native_model_handoff": {
     "at": "2026-11-02T10:23:02.648791+00:00",
@@ -305,5 +305,37 @@
     "correction": "Preuves conservées hors worktree puis état propre ; status/start/gate/claim réellement passés17:30:23UTC.",
     "canonical_sources_changed_before_start": false,
     "source_binding_refreshed": false
+  },
+  "artifact_access_recovery": {
+    "at": "2026-11-02T17:49:32.481260+00:00",
+    "method": "Connecteur GitHub puis téléchargement URL de fichier autorisée",
+    "runs": [
+      41493698087,
+      41492062724,
+      41490400839,
+      41430780283
+    ],
+    "prior_cli_http403_preserved": true,
+    "actual_latest_observation": {
+      "observed_at": "2026-11-02T17:42:57.761599+00:00",
+      "snapshot_generated_at": "2026-11-02T17:35:16+00:00",
+      "healthy": false,
+      "problems": [
+        "Activité auteur absente ou ancienne: astra_endocrinologie, codex_hematologie"
+      ],
+      "agents_without_recent_activity": [
+        "astra_endocrinologie",
+        "codex_hematologie"
+      ],
+      "no_agent_restart": true,
+      "no_main_write": true,
+      "clinical_certification": false,
+      "enabled": true,
+      "source_blob_sha": "70129db237ff8712173c5f3ce3c303d9388b9329",
+      "run_url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41493698087",
+      "interval_seconds": 600,
+      "continuity": "Handoff GitHub Actions; delays and service outages remain possible"
+    },
+    "frozen_report_limit": "Le fichier rapport-08h00 de cet artefact est généré lors de ce run tardif : son nom ne prouve pas un état08h ; voir les deux horodatages réels. Le snapshot08h original de la branche observations reste distinct."
   }
 }

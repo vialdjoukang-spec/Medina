@@ -6,16 +6,19 @@
   "fragment": "S05",
   "label": "E-06-Endocrinologie et métabolisme",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "phase": "C73_preparation_externe_catalogue_priorite_D65",
+  "phase": "C73_recherche_apres_acquire_start_claim",
   "selected_lesson": {
     "code": "C73",
     "title": "Tumeur maligne de la thyroïde",
     "mission_candidate": ".medina/missions/ALPHA77-CODEX-C73-INTEGRATE.json",
-    "reservation_acquired": false,
-    "start_passed": false,
-    "harness_claimed": false
+    "reservation_acquired": true,
+    "start_passed": true,
+    "harness_claimed": true,
+    "worktree": "/workspace/Medina-endocrinologie-C73",
+    "branch": "codex/alpha77/c73-integrate-g1",
+    "registry_acquire": "54fb44aba4252edb10b29b66dcb2a2cd8f83a051"
   },
-  "authorization_scope": "E42 livrée/libérée vérifiée ; E04 exclusivement attribuée, acquisition conditionnelle au registre et catalogue libres. E40 exclue.",
+  "authorization_scope": "E04 distant/libéré immuable ; C73 exclusivement acquis après D65 libéré, catalogue sous réservation C73. D66 prochain tour parent. E40 exclue ; E10/E05 réservations étrangères respectées.",
   "counts": {
     "canonical_s05": 26,
     "existing_codex": 13,
@@ -225,8 +228,10 @@
       "canonical_present": false,
       "assignment_id": "SSPV2-PRODUCTION-S05-C73-CODEX",
       "starter_index": 57,
-      "active_reservations": [],
-      "state": "external_preparation_catalogue_priority_D65"
+      "active_reservations": [
+        "ALPHA77-CODEX-C73-INTEGRATE"
+      ],
+      "state": "active_research"
     },
     {
       "code": "C74",
