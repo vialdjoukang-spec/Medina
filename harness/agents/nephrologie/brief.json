@@ -6,19 +6,55 @@
   "fragment_label": "N-07-Néphrologie",
   "prepared_at": "2026-11-02T01:16:51.601917+00:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "status": "N02_recherche",
+  "status": "N02_complete",
   "selected_lesson": {
     "code": "N02",
     "title": "Hématurie récidivante et persistante",
     "mode": "new_course",
     "worktree": "/workspace/Medina-nephrologie-n02",
     "branch": "codex/alpha77/n02-integrate-g1",
-    "reservation_acquired": true,
+    "reservation_acquired": false,
     "acquisition_registry_sha": "4920c4937f982a0ea6a27828cbf1ac6814fd9a30",
     "clinical_certification": false,
     "start_receipt": "/workspace/Medina-nephrologie-n02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/start.json",
     "harness_claimed": true,
-    "catalogue_scope": "Mission explicite nouvelle entrée N02, chapters.json libre au registre avant acquisition."
+    "catalogue_scope": "Mission explicite nouvelle entrée N02, chapters.json libre au registre avant acquisition.",
+    "status": "harness_complete_reservation_released",
+    "stage": "completed",
+    "final_commit": "006a1f391a2270c98d8a3076842645105b82ac1a",
+    "remote_sha_verified": true,
+    "release_registry_sha": "07e84712e089f26b2d39a8a87dae1d6acd0fa319",
+    "completed_at": "2026-11-02T10:36:46+00:00",
+    "preview_sha256": "15851647c6c7e5dc9c1492aa5261b1325e8feb80fa388bf17df2b56c52288b4a",
+    "final_source_files_sha256": {
+      "chapters/N02/N02_a.html": "34ecba05166f99a22704542b49ee84a04195084646df71db2611b1ffa64fb71c",
+      "chapters/N02/N02_b.html": "ce046ba0b447416e92ae938053fe832ed4afcdf211dc92e98d01620474a725db",
+      "chapters/N02/N02_c.html": "8dff0893e291d12e18352cb52c2941d9eff63f13d63e6978bc39ceb32dfd4dd0",
+      "chapters/N02/N02_d.html": "7392e9f4d80c74b279150ce84f72f0442ef36f5bf73275b2777a10859a3fe302",
+      "chapters/N02/N02_pop1.html": "e0d1a3ff9fe001fadf36e1a923c25116c111977987188716bbb53c1fd782ded6",
+      "chapters/N02/N02_pop2.html": "c2c4ee3841c8fad03edec6e231de27cf98e587d027b7eb9b8f23c1cbfdfd44cf",
+      "glossary/n02.py": "6f5e011a91182138931e38354825d96ab178250587466ff474deadda707717e7",
+      "assets/img/n02/alpha/codex/2613_Podocytes.jpg": "8ff3a653bd19d8dc55b6030f795336fe8489bdc096ef694937e20b4184f3da5d",
+      "assets/img/n02/alpha/codex/2618_Nephron_Secretion_Reabsorption.jpg": "22245114f45516127f8bd127a9eaeca7e3e3e017beb5a8deb5a8a15b78bcaafb",
+      "assets/img/n02/alpha/codex/Crescentic_glomerulonephritis_-_high_mag.jpg": "1568e067b50f7a60d88eb733e4e737631f149be2f60b7df98c2c58a0d8a71dc2",
+      "assets/img/n02/alpha/codex/RTE_cast,_muddy_granular_cast,_WBC_cast_and_RBC_cast_in_urine.jpg": "ba911e1601c1c48fdd0a74d55135c95fc2bf7b4c61a3e62d04a7c110f45a2b01",
+      "assets/img/n02/alpha/codex/Kidney_section_vertical.png": "c96015c1f63acb554bf8f794a60309e6125b4805d7a09ccf2603d53f8aa9c7ed"
+    },
+    "final_counts": {
+      "monograph_points": 14,
+      "medina_rubrics": 20,
+      "selected_source_readings": 22,
+      "exact_swiss_FIs": 5,
+      "science_tabs": 6,
+      "semiology_sections": 9,
+      "original_figures": 5,
+      "figure_occurrences": 9,
+      "annotation_markers": 30,
+      "windows": 34,
+      "quiz": 4
+    },
+    "runtime_model": "gpt-6.1-sol",
+    "runtime_name": "sol_nephrologie"
   },
   "instruction_priority": "Ordre actuel : quatre spécialités en parallèle et une leçon à la fois par agent ; remplace les lots historiques, sans supprimer les réservations.",
   "counts": {
@@ -113,11 +149,9 @@
       "owner": "Codex",
       "mode": "new_lesson",
       "in_alpha77_campaign": true,
-      "reserved_by": [
-        "ALPHA77-CODEX-N02-INTEGRATE"
-      ],
+      "reserved_by": [],
       "dispatchable_after_gate": true,
-      "state": "active_research"
+      "state": "harness_complete_reservation_released"
     },
     {
       "order": 7,
@@ -720,10 +754,66 @@
     }
   ],
   "current_limits": [
-    "Recherche initiale N02 ; aucun cours rédigé ni test final."
+    "N02 : auto-relecture IA et contrôles de projet achevés ; sans certification humaine ni PR/main.",
+    "Bandeau shell hérité SSP63 vs64 signalé au parent, métadonnée partagée horsmission.",
+    "N03 suivant au plan ; non acquis ni commencé par cette reprise."
   ],
   "verification": {
-    "stage": "research",
-    "clinical_certification": false
-  }
+    "stage": "completed",
+    "clinical_certification": false,
+    "final_commit": "006a1f391a2270c98d8a3076842645105b82ac1a",
+    "remote_sha_verified": true,
+    "source_binding_sha256": "c0781f8f1a6f5e1d1088e3d5acdd54eb572d483f259815064fed64dea73428e9"
+  },
+  "prior_lessons": [
+    {
+      "code": "N02",
+      "title": "Hématurie récidivante et persistante",
+      "mode": "new_course",
+      "worktree": "/workspace/Medina-nephrologie-n02",
+      "branch": "codex/alpha77/n02-integrate-g1",
+      "reservation_acquired": false,
+      "acquisition_registry_sha": "4920c4937f982a0ea6a27828cbf1ac6814fd9a30",
+      "clinical_certification": false,
+      "start_receipt": "/workspace/Medina-nephrologie-n02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE/start.json",
+      "harness_claimed": true,
+      "catalogue_scope": "Mission explicite nouvelle entrée N02, chapters.json libre au registre avant acquisition.",
+      "status": "harness_complete_reservation_released",
+      "stage": "completed",
+      "final_commit": "006a1f391a2270c98d8a3076842645105b82ac1a",
+      "remote_sha_verified": true,
+      "release_registry_sha": "07e84712e089f26b2d39a8a87dae1d6acd0fa319",
+      "completed_at": "2026-11-02T10:36:46+00:00",
+      "preview_sha256": "15851647c6c7e5dc9c1492aa5261b1325e8feb80fa388bf17df2b56c52288b4a",
+      "final_source_files_sha256": {
+        "chapters/N02/N02_a.html": "34ecba05166f99a22704542b49ee84a04195084646df71db2611b1ffa64fb71c",
+        "chapters/N02/N02_b.html": "ce046ba0b447416e92ae938053fe832ed4afcdf211dc92e98d01620474a725db",
+        "chapters/N02/N02_c.html": "8dff0893e291d12e18352cb52c2941d9eff63f13d63e6978bc39ceb32dfd4dd0",
+        "chapters/N02/N02_d.html": "7392e9f4d80c74b279150ce84f72f0442ef36f5bf73275b2777a10859a3fe302",
+        "chapters/N02/N02_pop1.html": "e0d1a3ff9fe001fadf36e1a923c25116c111977987188716bbb53c1fd782ded6",
+        "chapters/N02/N02_pop2.html": "c2c4ee3841c8fad03edec6e231de27cf98e587d027b7eb9b8f23c1cbfdfd44cf",
+        "glossary/n02.py": "6f5e011a91182138931e38354825d96ab178250587466ff474deadda707717e7",
+        "assets/img/n02/alpha/codex/2613_Podocytes.jpg": "8ff3a653bd19d8dc55b6030f795336fe8489bdc096ef694937e20b4184f3da5d",
+        "assets/img/n02/alpha/codex/2618_Nephron_Secretion_Reabsorption.jpg": "22245114f45516127f8bd127a9eaeca7e3e3e017beb5a8deb5a8a15b78bcaafb",
+        "assets/img/n02/alpha/codex/Crescentic_glomerulonephritis_-_high_mag.jpg": "1568e067b50f7a60d88eb733e4e737631f149be2f60b7df98c2c58a0d8a71dc2",
+        "assets/img/n02/alpha/codex/RTE_cast,_muddy_granular_cast,_WBC_cast_and_RBC_cast_in_urine.jpg": "ba911e1601c1c48fdd0a74d55135c95fc2bf7b4c61a3e62d04a7c110f45a2b01",
+        "assets/img/n02/alpha/codex/Kidney_section_vertical.png": "c96015c1f63acb554bf8f794a60309e6125b4805d7a09ccf2603d53f8aa9c7ed"
+      },
+      "final_counts": {
+        "monograph_points": 14,
+        "medina_rubrics": 20,
+        "selected_source_readings": 22,
+        "exact_swiss_FIs": 5,
+        "science_tabs": 6,
+        "semiology_sections": 9,
+        "original_figures": 5,
+        "figure_occurrences": 9,
+        "annotation_markers": 30,
+        "windows": 34,
+        "quiz": 4
+      },
+      "runtime_model": "gpt-6.1-sol",
+      "runtime_name": "sol_nephrologie"
+    }
+  ]
 }

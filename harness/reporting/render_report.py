@@ -43,7 +43,7 @@ def main():
  for v in versions:
   code=v['code'];folder=r/v['local_evidence_folder'];m=js(folder/'lesson-manifest.json',{});b=js(folder/'source-binding.json',{});comp=bycode[code]
   mono=normrows(m.get('monograph'));matrix=normrows(m.get('matrix20'));images=normrows(m.get('images'));sources=normrows(m.get('sources'));reviews=m.get('reviews',{});blocking=m.get('blocking_findings',[])
-  limits=m.get('remaining_transparent_limits') or m.get('limitations') or m.get('remaining_findings') or []
+  limits=m.get('remaining_transparent_limits') or m.get('limitations') or m.get('remaining_findings') or m.get('documented_limits') or []
   if not limits:
    for f in ['delivery-state.json','findings-final.json','remaining-findings.json']:
     d=js(folder/f,{})
@@ -126,8 +126,8 @@ def main():
  '<h2>Travaux en cours et blocages concrets</h2>'+table(['Leçon','État à la reprise','Condition de clôture restante'],[
  ['C70 — neurologie','Recherche et reprise complète prévues ; SVG anatomique IA hérité identifié, trois sciences seulement dans la base.','Remplacer par originaux sourcés, développer sixsciences/neufsémiologie, classification et doses exactes, puis14/20et tests.'],
  ['E14 — endocrinologie','Acquisition/start/claim réussis après reprise Sol ; recherche en cours.','Corriger les raccourcis hérités, conserver limites des tests vasculaires et préciser schémas d’insuline/urgences.'],
- ['N02 — néphrologie','Rédaction partielle,22lectures ciblées déclarées dans le dernier état Astra ; reprise Sol avec relecture de sources et5originaux.','Pharmacologie, fenêtres/quiz, sixfichiers/catalogue, puis contrôles et liaison finale.'],
- ['C95 — hématologie','Rédaction locale assemblée :25sections,52fenêtres,5quiz,14Pareto,6sciences,4originaux ;32entrées de références dont réutilisations attribuées.','Contrôle statique en échec (sigles/classes), figure absente de sémiologie selon audit ; aperçu natif, matrices et revues finales non achevés. Aucune clôture ni source-binding final.']]),
+ ['N02 — néphrologie','Les sixsurfaces,34fenêtres/14Pareto/4quiz et9occurrences de5originaux sont désormais produites ; premier parcours navigateur1440/390 réussi selon reçu de reprise Sol.','Reconstruction après corrections de références, revues finales et liaison des preuves encore en cours ; aucune clôture ajoutée à ce rapport.'],
+ ['C95 — hématologie','Rédaction locale assemblée :25sections,52fenêtres,5quiz,14Pareto,6sciences,4originaux ;32entrées de références dont réutilisations attribuées.','Les échecs sigles/classes et figure de sémiologie ont été corrigés : statique et sciences réussis à11:32heure suisse. Construction native/navigateur en cours ; matrices et revues finales non achevées. Aucune clôture ni source-binding final.']]),
  '<h2 id="veille">Veille indépendante et incidents</h2><p>Le relais workflow_dispatch observe, attend600secondes puis demande un successeur. Il ne relance pas les agents natifs. Le contrôle local de disponibilité du harness et l’alerte indépendante sur activité auteur peuvent donc avoir des résultats différents.</p>',
  details('Observation indépendante lue dans les logs GitHub',pretty(observations)),
  '<p>Le run41425068626 a signalé les quatre activités auteurs anciennes à10:59:32heure suisse, puis a demandé son successeur à11:09:32avec réponseHTTP204. L’échec reste visible ; il ne signifie pas que le relais s’est arrêté. Les dernières exécutions listées ci-dessous sont celles réellement lues lors de la collecte.</p>',

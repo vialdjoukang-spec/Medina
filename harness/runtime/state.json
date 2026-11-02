@@ -5,7 +5,7 @@
     "astra_neurologie": {
       "lesson": "C70",
       "worktree": "/workspace/Medina-neurologie-C70",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/c70-integrate-g1",
       "allowed_paths": [
         "chapters/C70",
@@ -15,21 +15,21 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE"
       ],
       "started_at": "2026-11-02T05:09:43+00:00",
-      "activity_at": "2026-11-02T10:23:23+00:00",
-      "message": "Reprise réelle Sol high après quota Astra ; inventaire C70 et relecture ciblée CHUV/EANO2021/cIMPACT8/EANO2025/FI Galepharm effectués ; figures, recherche complémentaire et porte de vérité avant rédaction.",
+      "activity_at": "2026-11-02T10:36:02+00:00",
+      "message": "C70 réécrit sur six surfaces après porte Vérité ;25lectures ciblées,38fenêtres,4quiz,6sciences/9sections. Statique réussi ; sciences audit passé. Auto-relecture finale, build natif et navigateur restent à réaliser.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "784443ef6624231c5bb9a68926f8827d13703b7fb5c4b22f1c0a95b2840df4d9"
     },
     "astra_endocrinologie": {
       "lesson": "E14",
       "worktree": "/workspace/Medina-endocrinologie-E14",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/e14-integrate-g1",
       "allowed_paths": [
         "chapters/E14",
@@ -39,21 +39,21 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E14-INTEGRATE"
       ],
       "started_at": "2026-11-02T10:24:09+00:00",
-      "activity_at": "2026-11-02T10:26:41+00:00",
-      "message": "E14 : lectures ciblées OMS/SSED/OFSP, crises 2024 et FI suisses ; divergences potassium et metformine identifiées, figure originale 2013 vérifiée.",
+      "activity_at": "2026-11-02T10:34:38+00:00",
+      "message": "E14 : porte de vérité réussie sur 22 sources ; 14 sections cliniques écrites, erreurs de peptide C et critères hyperosmolaires corrigées ; sciences et fenêtres en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "34576d3239691b27d49029736e5d6f18a60a28202bbf705d9be8980999c6d428"
     },
     "astra_nephrologie": {
       "lesson": "N02",
       "worktree": "/workspace/Medina-nephrologie-n02",
-      "stage": "redaction",
+      "stage": "termine",
       "branch": "codex/alpha77/n02-integrate-g1",
       "allowed_paths": [
         "chapters/N02",
@@ -64,21 +64,21 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T04:54:47+00:00",
-      "activity_at": "2026-11-02T10:24:59+00:00",
-      "message": "Reprise Sol autorisée : cinq originaux revus, HUG2024 et FI relus ; porte vérité research_N02 passée. Complément pharmacologique et interactions en cours.",
+      "activity_at": "2026-11-02T10:36:46+00:00",
+      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "ab96136d7fcee3d7133ea41badc6baf4c73ce2720342180d308229e544934616"
     },
     "codex_hematologie": {
       "lesson": "C95",
       "worktree": "/workspace/Medina-hematologie-C95",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/c95-integrate-g1",
       "allowed_paths": [
         "chapters/C95",
@@ -88,8 +88,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C95-INTEGRATE"
       ],
       "started_at": "2026-11-02T04:37:48+00:00",
-      "activity_at": "2026-11-02T05:06:22+00:00",
-      "message": "C95 : quinze sections cliniques et trente-trois fiches rédigées après VÉRITÉ OK ; pharmacologie, six sciences et contrôles en préparation.",
+      "activity_at": "2026-11-02T10:32:48+00:00",
+      "message": "Reprise réelle C95 après remise du rapport : classes et sigles corrigés, figure originale ajoutée à la sémiologie ; contrôle statique et six sciences passés. Construction native et relecture finale à faire.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -101,53 +101,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T01:31:49+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T01:33:06+00:00",
-      "action": "extract",
-      "path": "chapters/E00/E00_b.html",
-      "cache_hit": false,
-      "bytes_input": 17849,
-      "bytes_output": 17848,
-      "bytes_avoided": 1
-    },
-    {
-      "at": "2026-11-02T01:33:06+00:00",
-      "action": "extract",
-      "path": "chapters/E00/E00_pop2.html",
-      "cache_hit": false,
-      "bytes_input": 19293,
-      "bytes_output": 12973,
-      "bytes_avoided": 6320
-    },
-    {
-      "at": "2026-11-02T01:33:37+00:00",
-      "action": "extract",
-      "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/recherche_E00/downloads/endoern2021.txt",
-      "cache_hit": false,
-      "bytes_input": 185491,
-      "bytes_output": 7734,
-      "bytes_avoided": 177757
-    },
-    {
-      "at": "2026-11-02T01:35:51+00:00",
-      "action": "progress",
-      "agent": "codex_hematologie",
-      "stage": "redaction",
-      "message": "C85:9sections sémiologiques,6onglets;2images originales CC BY;corrections de formulation et actualisationEHA2025 en contrôle"
-    },
-    {
-      "at": "2026-11-02T01:36:40+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "redaction",
-      "message": "Sémiologie intégrée en neuf sections ; 5 originaux humains acquis et annotés en HTML ; correction inférence membraneuse et rein-puits ; corpus antérieur conservé. Vérification scientifique puis aperçu natif en cours."
-    },
     {
       "at": "2026-11-02T01:37:38+00:00",
       "action": "progress",
@@ -1401,6 +1354,46 @@
       "action": "watch",
       "ok": true,
       "findings": 1
+    },
+    {
+      "at": "2026-11-02T10:31:01+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "verification",
+      "message": "Six surfaces N02 produites, pharmacologie cinq FI, 34 fenêtres/14Pareto/4quiz, sous-codes morphologiques. Audit sciences réel passé : six disciplines, neuf sections sémiologiques. Construction et navigateur à finaliser."
+    },
+    {
+      "at": "2026-11-02T10:32:48+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "verification",
+      "message": "Reprise réelle C95 après remise du rapport : classes et sigles corrigés, figure originale ajoutée à la sémiologie ; contrôle statique et six sciences passés. Construction native et relecture finale à faire."
+    },
+    {
+      "at": "2026-11-02T10:34:38+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "redaction",
+      "message": "E14 : porte de vérité réussie sur 22 sources ; 14 sections cliniques écrites, erreurs de peptide C et critères hyperosmolaires corrigées ; sciences et fenêtres en cours."
+    },
+    {
+      "at": "2026-11-02T10:36:02+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "redaction",
+      "message": "C70 réécrit sur six surfaces après porte Vérité ;25lectures ciblées,38fenêtres,4quiz,6sciences/9sections. Statique réussi ; sciences audit passé. Auto-relecture finale, build natif et navigateur restent à réaliser."
+    },
+    {
+      "at": "2026-11-02T10:36:46+00:00",
+      "action": "complete",
+      "agent": "astra_nephrologie",
+      "code": "N02"
+    },
+    {
+      "at": "2026-11-02T10:40:10+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
     }
   ],
   "cache": {
@@ -1657,6 +1650,25 @@
       "clinical_certification": false,
       "publication_allowed": false,
       "preview_sha256": "3e8189e601f0472aa2d17374434aa1be366a042a41eed907467d53e0b0bbefe3"
+    },
+    {
+      "agent": "astra_nephrologie",
+      "code": "N02",
+      "at": "2026-11-02T10:36:46+00:00",
+      "branch": "codex/alpha77/n02-integrate-g1",
+      "worktree": "/workspace/Medina-nephrologie-n02",
+      "folder": "/workspace/Medina-nephrologie-n02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE",
+      "manifest_sha256": "e1f1e3252741f62bde195266a7462c1a686acd6d4a94a077855be9f20d586fe2",
+      "source_binding_sha256": "c0781f8f1a6f5e1d1088e3d5acdd54eb572d483f259815064fed64dea73428e9",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "15851647c6c7e5dc9c1492aa5261b1325e8feb80fa388bf17df2b56c52288b4a"
     }
   ]
 }

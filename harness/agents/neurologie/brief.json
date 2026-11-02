@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "status": "C70_RECHERCHE_G02_G05_I64_COMPLETE",
+  "status": "C70_VERIFICATION_G02_G05_I64_COMPLETE",
   "prepared_at": "2026-11-02T01:17:05.123886+00:00",
-  "agent": "Astra Neurologie",
-  "model": "gpt-6-astra",
+  "agent": "Sol Neurologie",
+  "model": "gpt-6.1-sol",
   "requested_reasoning_effort": "high",
   "model_traceability": "Configured by parent; no runtime token meter available; no token count inferred",
   "specialty": "Neurologie",
@@ -1002,7 +1002,7 @@
       "Private GitHub cron and local watch depend on runner/environment availability"
     ]
   },
-  "updated_at": "2026-11-02T05:09:43.268296+00:00",
+  "updated_at": "2026-11-02T10:36:44.273821+00:00",
   "current_package": {
     "code": "C70",
     "worktree": "/workspace/Medina-neurologie-C70",
@@ -1010,22 +1010,29 @@
     "reservation_acquired": true,
     "acquisition_registry_sha": "691df1430fc760c0a3106fc8f97bb567e09693f4",
     "start_receipt": "/workspace/Medina-neurologie-C70/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE/start.json",
-    "stage": "recherche",
-    "source_readings_count": 0,
+    "stage": "verification",
+    "source_readings_count": 25,
     "monograph14_reviewed": 0,
     "matrix20_reviewed": 0,
     "blocking_findings": [
-      "Lectures primaires, révision des six surfaces, figures et contrôles finaux à réaliser."
+      "Auto-relecture finale et vérification navigateur/native/source-binding non encore achevées."
     ],
     "clinical_certification": false,
-    "preview": null
+    "preview": null,
+    "source_reader": "sol_neurologie",
+    "historical_source_reader": "astra_neurologie",
+    "sciences": 6,
+    "semiology_sections": 9,
+    "popups": 38,
+    "quiz": 4
   },
   "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
   "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
   "medical_content_written": true,
   "current_limitations": [
-    "Préparation C70 ; aucun cours enrichi ni test final pour cette leçon.",
-    "Les sources héritées sont des pistes à relire, pas des lectures de cette session."
+    "C70 réécrit et contrôles statiques/sciences réussis ; build natif et contrôles finaux en cours.",
+    "Les25lectures Sol sont ciblées, avec historique Astra préservé séparément ; aucun jeton ni coût natif mesuré.",
+    "Incidence nationale actuelle C70 non établie ; populations, FI et propositions cIMPACT intérimaires distinguées."
   ],
   "completed_lessons": [
     {
@@ -1343,5 +1350,14 @@
     }
   ],
   "tokens_actual": null,
-  "cost_actual": null
+  "cost_actual": null,
+  "runtime_name": "sol_neurologie",
+  "model_history": [
+    {
+      "agent": "astra_neurologie",
+      "model": "gpt-6-astra",
+      "role": "historical author until quota interruption",
+      "preserved": true
+    }
+  ]
 }
