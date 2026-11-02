@@ -6,7 +6,7 @@
   "fragment_label": "N-07-Néphrologie",
   "prepared_at": "2026-11-02T01:16:51.601917+00:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "status": "G09_reserved_started_claimed_research",
+  "status": "G09_reserved_verification",
   "selected_lesson": {
     "code": "G09",
     "title": "Séquelles d’affections inflammatoires du système nerveux central",
@@ -20,7 +20,7 @@
     "runtime_name": "sol_nephrologie",
     "production_name": "Sol-Neurologie-G09",
     "runtime_model": "gpt-6.1-sol",
-    "stage": "recherche",
+    "stage": "verification",
     "clinical_certification": false,
     "start_receipt": "/workspace/Medina-neurologie-G09/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G09-INTEGRATE/start.json",
     "catalogue_scope": "Cours G09 existant exclusivement ; aucun mandat sur chapters.json."
@@ -406,9 +406,11 @@
   ],
   "source_reading_status": {
     "code": "G09",
-    "medical_drafting_started": false,
-    "first_actual_source": "OFS CIM-10-GM 2024, classe G09 et note de codage effectivement lues",
-    "betta_entry_passed": false
+    "selected_sections_actually_read": 28,
+    "exact_swiss_FIs": 4,
+    "medical_drafting_started_after_betta": true,
+    "cache_outside_git": "/tmp/medina-g09-source-cache",
+    "limitations": "Plusieurs passages d’un même document, pas 28 documents intégralement lus ; sources et limites attribuées."
   },
   "reusable_tools": [
     "tools/betta_verite.py",
@@ -424,7 +426,7 @@
     "tests/test_image_codex_finder.py",
     "tests/test_audit_sciences.py"
   ],
-  "next_gate": "Lecture des sources suisses puis européennes, droits et originaux effectivement vus ; matrice Betta avant toute nouvelle rédaction médicale.",
+  "next_gate": "Vérifications finales des octets et captures, auto-relectures explicites, première liaison finale, harness complete, commit/push exact et libération.",
   "preliminary_findings": [
     {
       "id": "N04-SEMIO-ABSENT",
@@ -448,7 +450,7 @@
       "initial_status": "observed"
     }
   ],
-  "updated_at": "2026-11-02T13:16:44.973297+00:00",
+  "updated_at": "2026-11-02T14:06:11.969362+00:00",
   "initial_counts": {
     "conservative_s04_targets": 33,
     "existing": 6,
@@ -793,9 +795,12 @@
     "AucunePR/main, aucun déploiementpublic déclaré ; coûts/tokens réels indisponibles restentnull."
   ],
   "verification": {
-    "stage": "recherche",
+    "stage": "verification",
     "clinical_certification": false,
-    "source_binding_created": false
+    "source_binding_created": false,
+    "native_S08_built": true,
+    "browser_exploratory_passed": true,
+    "final_visual_annotation_corrections": "In progress before final verification"
   },
   "prior_lessons": [
     {
