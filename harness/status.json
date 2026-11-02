@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-02T11:40:10+00:00",
+  "generated_at": "2026-11-02T11:50:11+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T11:40:10+00:00",
+    "checked_at": "2026-11-02T11:50:11+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T11:40:10+00:00",
+    "observed_at": "2026-11-02T11:50:11+00:00",
     "ok": true,
     "findings": [],
     "interval_seconds": 600,
-    "observer_pid": 735861,
+    "observer_pid": 792285,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -78,7 +78,7 @@
       "historical_id": "astra_neurologie",
       "lesson": "G03",
       "worktree": "/workspace/Medina-neurologie-G03",
-      "stage": "recherche",
+      "stage": "verification",
       "branch": "codex/alpha77/g03-integrate-g1",
       "allowed_paths": [
         "chapters/G03",
@@ -88,15 +88,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE"
       ],
       "started_at": "2026-11-02T11:10:54+00:00",
-      "activity_at": "2026-11-02T11:32:27+00:00",
-      "message": "G03 : 18 lectures ciblées effectives journalisées ; RMS suisse 2021 retrouvée, FI exactes et OMS 2025 relues ; plan 20 rubriques prêt.",
+      "activity_at": "2026-11-02T11:47:52+00:00",
+      "message": "G03 : relecture des décisions PL/CT, LCR, chronique, corticothérapie et paracétamol effectuée ; source et glossaire figés, reconstruction native finale puis répétition des parcours réels.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "401e4a956c7e52771bd02f0d6b7cc8d49a4159dd3eb50f1c54f648e70432cd18",
       "brief": {
         "schema_version": 1,
@@ -1501,9 +1501,9 @@
         "monograph14_reviewed": 0,
         "matrix20_reviewed": 0
       },
-      "activity_age_seconds": 464,
+      "activity_age_seconds": 139,
       "activity_fresh": true,
-      "sections_per_hour": 0.0,
+      "sections_per_hour": 21.38,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -1541,7 +1541,7 @@
       "historical_id": "astra_endocrinologie",
       "lesson": "E25",
       "worktree": "/workspace/Medina-endocrinologie-E25",
-      "stage": "verification",
+      "stage": "termine",
       "branch": "codex/alpha77/e25-integrate-g1",
       "allowed_paths": [
         "chapters/E25",
@@ -1551,8 +1551,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE"
       ],
       "started_at": "2026-11-02T11:04:46+00:00",
-      "activity_at": "2026-11-02T11:39:26+00:00",
-      "message": "E25 : six fichiers rédigés et contrôlés ; static natif et audit sciences passent (14/20, 6 disciplines, 2979 mots sciences, 6 figures, sémiologie structurée avec titre et rôles). Build S05 réussi, seuls 3 E05 hérités hors périmètre. Contrôle navigateur des fenêtres, quiz, images et Livre24 en cours ; pas de binding final.",
+      "activity_at": "2026-11-02T11:46:53+00:00",
+      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -2962,9 +2962,9 @@
         "runtime_model": "gpt-6.1-sol",
         "runtime_reasoning": "high"
       },
-      "activity_age_seconds": 45,
+      "activity_age_seconds": 198,
       "activity_fresh": true,
-      "sections_per_hour": 23.72,
+      "sections_per_hour": 18.49,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -2990,29 +2990,29 @@
       "clinical_orchestration": false,
       "runtime_name": "/root/sol_nephrologie",
       "historical_id": "astra_nephrologie",
-      "lesson": "N05",
-      "worktree": "/workspace/Medina-nephrologie-n05",
-      "stage": "verification",
-      "branch": "codex/alpha77/n05-integrate-g1",
+      "lesson": "N06",
+      "worktree": "/workspace/Medina-nephrologie-n06",
+      "stage": "recherche",
+      "branch": "codex/alpha77/n06-integrate-g1",
       "allowed_paths": [
-        "chapters/N05",
-        "glossary/n05.py",
-        "assets/img/n05/alpha/codex",
-        "organisation/alpha-publications/Codex/N05",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N05-INTEGRATE",
+        "chapters/N06",
+        "glossary/n06.py",
+        "assets/img/n06/alpha/codex",
+        "organisation/alpha-publications/Codex/N06",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE",
         "chapters.json"
       ],
-      "started_at": "2026-11-02T11:23:32+00:00",
-      "activity_at": "2026-11-02T11:35:09+00:00",
-      "message": "N05 : static et audit6sciences passés ; navigateur toutesfonctionsOK, premieragrégat refusé car attendait33repèresN03 au lieu des30N05 réellementprésents. Attente corrigée seloninventaire ; passefinale relancée après finitionslinguistiques.",
+      "started_at": "2026-11-02T11:44:48+00:00",
+      "activity_at": "2026-11-02T11:49:27+00:00",
+      "message": "N06 :35lectures ciblées/réutilisations,5FI ; matrice20rubriques et sous-codesN06.0–.9, bettaentrée réellementpassé. Début rédactionaprèscecontrôle.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "3be640514cd0e9da26fbe209bcbb0bb818ee436330a5348adf9fd72894c2f91f",
+      "completed_sections": 0,
+      "receipt_sha256": "1d16930acfaec4e6a9167d93d41557265ce33576706ca5b789aa9b94585664c6",
       "brief": {
         "schema_version": 1,
         "agent": "astra_nephrologie",
@@ -3021,22 +3021,22 @@
         "fragment_label": "N-07-Néphrologie",
         "prepared_at": "2026-11-02T01:16:51.601917+00:00",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "status": "N05_recherche_sous_reservation",
+        "status": "N06_recherche_sous_reservation",
         "selected_lesson": {
-          "code": "N05",
-          "title": "Syndrome néphritique, sans précision",
+          "code": "N06",
+          "title": "Protéinurie isolée avec lésions morphologiques précisées",
           "mode": "new_course",
-          "worktree": "/workspace/Medina-nephrologie-n05",
-          "branch": "codex/alpha77/n05-integrate-g1",
+          "worktree": "/workspace/Medina-nephrologie-n06",
+          "branch": "codex/alpha77/n06-integrate-g1",
           "reservation_acquired": true,
-          "acquisition_registry_sha": "6307e4a5296072a56bac9785bdc3f190d1b3f04b",
+          "acquisition_registry_sha": "f0e62facbb166cc13b6b43811b4be7298ecd3d86",
           "harness_claimed": true,
-          "clinical_certification": false,
           "runtime_name": "sol_nephrologie",
           "runtime_model": "gpt-6.1-sol",
           "stage": "recherche",
-          "start_receipt": "/workspace/Medina-harness/harness/agents/nephrologie/transitions/N03-N05/start-N05.json",
-          "catalogue_scope": "N05 inclut chapters.json, auteur exclusivement réservé."
+          "clinical_certification": false,
+          "start_receipt": "/workspace/Medina-harness/harness/agents/nephrologie/transitions/N05-N06/start-N06.json",
+          "catalogue_scope": "AuteurN06 exclusivementréservé pourchapters.json"
         },
         "instruction_priority": "Ordre actuel : quatre spécialités en parallèle et une leçon à la fois par agent ; remplace les lots historiques, sans supprimer les réservations.",
         "counts": {
@@ -3155,7 +3155,7 @@
             "in_alpha77_campaign": true,
             "reserved_by": [],
             "dispatchable_after_gate": true,
-            "state": "queued_after_previous_closure"
+            "state": "harness_complete_reservation_released"
           },
           {
             "order": 9,
@@ -3736,9 +3736,10 @@
           }
         ],
         "current_limits": [
-          "N03 achevé, poussé, libéré ; aucune certification humaine.",
-          "N02 correction typographique37occurrences bloquée par génération1 déjà consommée ; aucun mandat auteurgénération2 approuvé.",
-          "Poursuite N05 selon instruction parent, après vérification et acquisition réelle."
+          "N05 livré, tête distante exacte, contrat terminé et réservation libérée.",
+          "Réserve N02 :37occurrences typographiques sur006a1f39 ; génération auteur2 absente, acquisition refusée, aucune modification silencieuse.",
+          "N06 candidat suivant, acquisition exclusive requise ; N17 concurrent réservé nonmodifié.",
+          "Auto-relectures explicites, aucun certificat médical humain, aucunePR/main."
         ],
         "verification": {
           "stage": "completed",
@@ -3844,6 +3845,43 @@
               "windows": 34,
               "quiz": 4
             }
+          },
+          {
+            "code": "N05",
+            "title": "Syndrome néphritique, sans précision",
+            "mode": "new_course",
+            "worktree": "/workspace/Medina-nephrologie-n05",
+            "branch": "codex/alpha77/n05-integrate-g1",
+            "reservation_acquired": false,
+            "acquisition_registry_sha": "6307e4a5296072a56bac9785bdc3f190d1b3f04b",
+            "harness_claimed": true,
+            "clinical_certification": false,
+            "runtime_name": "sol_nephrologie",
+            "runtime_model": "gpt-6.1-sol",
+            "stage": "completed",
+            "start_receipt": "/workspace/Medina-harness/harness/agents/nephrologie/transitions/N03-N05/start-N05.json",
+            "catalogue_scope": "N05 inclut chapters.json, auteur exclusivement réservé.",
+            "harness_completed_at": "2026-11-02T11:40:23+00:00",
+            "source_commit": "fe9c01541c3a0cd6da32eff2903615602a67f6db",
+            "final_counts": {
+              "monograph_points": 14,
+              "medina_rubrics": 20,
+              "selected_source_readings": 33,
+              "exact_swiss_FIs": 6,
+              "science_tabs": 6,
+              "semiology_sections": 9,
+              "original_figures": 5,
+              "figure_occurrences": 9,
+              "annotation_markers": 30,
+              "windows": 34,
+              "quiz": 4
+            },
+            "preview_sha256": "9d3f8910950c84b91535f469e321bf2d855d2535d8a92f08c328d86107265d03",
+            "status": "harness_complete_reservation_released",
+            "final_commit": "36c5642d7f4ef9b68c0d5bb9bd794f783f63738a",
+            "remote_sha_verified": true,
+            "release_registry_sha": "8ec9e09baec7904fdf7046ae90fba83092712d72",
+            "completed_at": "2026-11-02T11:40:23+00:00"
           }
         ],
         "reserves": {
@@ -3954,9 +3992,9 @@
           }
         }
       },
-      "activity_age_seconds": 302,
+      "activity_age_seconds": 44,
       "activity_fresh": true,
-      "sections_per_hour": 50.45,
+      "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -4419,77 +4457,13 @@
         "sources_read": 0,
         "completed_sections": 0
       },
-      "activity_age_seconds": 281,
+      "activity_age_seconds": 881,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T02:30:51+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T02:33:54+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 1
-    },
-    {
-      "at": "2026-11-02T02:33:54+00:00",
-      "action": "progress",
-      "agent": "codex_hematologie",
-      "stage": "revue_requise",
-      "message": "C85 : aperçu autonome final et six contrôles réussis ; 14 points cartographiés, 20 rubriques renseignées, sept réserves ouvertes. Deux originaux humains annotés, six sciences et neuf sections de sémiologie."
-    },
-    {
-      "at": "2026-11-02T02:34:19+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "verification",
-      "message": "Paquet E00 complet, auto-relectures attribuées et contrat harness PASS. Source-binding final lié aux six chapitres, glossaire et image. Contrôle du périmètre Git puis commit/push de la branche réservée, sans PR."
-    },
-    {
-      "at": "2026-11-02T02:37:06+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "verification",
-      "message": "Relecture clôture20rubriques : ambiguïté héritée durée corticoïdes MCD identifiée et corrigée A10+fenêtre ; PDF KDIGOfigure45/S155 diffère du texteS156, cadre européen total≤24semaines explicité.41passages actuels, anciennepreuveTX1signalée. Regénération tests/aperçu/binding avant complete ; N04resteactif."
-    },
-    {
-      "at": "2026-11-02T02:37:13+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 1
-    },
-    {
-      "at": "2026-11-02T02:37:37+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 1
-    },
-    {
-      "at": "2026-11-02T02:39:03+00:00",
-      "action": "complete",
-      "agent": "astra_endocrinologie",
-      "code": "E00"
-    },
-    {
-      "at": "2026-11-02T02:39:22+00:00",
-      "action": "complete",
-      "agent": "astra_nephrologie",
-      "code": "N04"
-    },
-    {
-      "at": "2026-11-02T02:39:55+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "recherche",
-      "message": "Paquet flucytosine 4f92780 poussé après contrôle popup4656caractères mobile24 et source-binding. Coccidioïdomycose documentée CH2013→ECMM2021→IDSA2016 ; correction concordance tableaux et contre-indications fluconazole. Chagas en recherche suivante, aucune clôture encore."
-    },
     {
       "at": "2026-11-02T02:41:29+00:00",
       "action": "watch",
@@ -5717,6 +5691,72 @@
       "agent": "astra_endocrinologie",
       "stage": "verification",
       "message": "E25 : six fichiers rédigés et contrôlés ; static natif et audit sciences passent (14/20, 6 disciplines, 2979 mots sciences, 6 figures, sémiologie structurée avec titre et rôles). Build S05 réussi, seuls 3 E05 hérités hors périmètre. Contrôle navigateur des fenêtres, quiz, images et Livre24 en cours ; pas de binding final."
+    },
+    {
+      "at": "2026-11-02T11:40:10+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T11:40:22+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "verification",
+      "message": "N05 : parcours final1440/390 passé,5originaux annotés vus en rendu,34fenêtres/4quiz,Livre24,clavier,0débordement/JS. Auto-relectures MED/LANG/SEMIO etmanifest14/20 liés auxoctetsfinaux ; source-binding créé unefois après contrôles."
+    },
+    {
+      "at": "2026-11-02T11:40:23+00:00",
+      "action": "complete",
+      "agent": "astra_nephrologie",
+      "code": "N05"
+    },
+    {
+      "at": "2026-11-02T11:42:18+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "redaction",
+      "message": "G03 : première rédaction des six surfaces, six sciences dont neuf sections de sémiologie, quatre quiz et deux originaux humains avec annotations adjacentes ; relecture et tests à faire."
+    },
+    {
+      "at": "2026-11-02T11:44:48+00:00",
+      "action": "claim",
+      "agent": "astra_nephrologie",
+      "code": "N06"
+    },
+    {
+      "at": "2026-11-02T11:46:32+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "revue_requise",
+      "message": "E25 : quatre self_review explicites terminées et validation technique harness passée, 14/20, 20 sources, six sciences/9 sémiologie. Navigateur final 1440/390 : 40 fenêtres, 3 définitions, 4 quiz, tables locales, Livre24 sans erreur. Métadonnées de couverture développées après premier refus technique, invalidation explicite archivée, aucune modification des octets médicaux/aperçu. Empreinte finale créée après validation."
+    },
+    {
+      "at": "2026-11-02T11:46:53+00:00",
+      "action": "complete",
+      "agent": "astra_endocrinologie",
+      "code": "E25"
+    },
+    {
+      "at": "2026-11-02T11:47:05+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "recherche",
+      "message": "N06 : start/claim/gate11:44:48UTC, OFSN06 et exclusions relus ; CUEN2025protéinurie PDF200 lu pp131–134 ; sources suissesThurgau/RMS2012 pourméthodes/mécanismes,SGN2025 pourdécisions contemporaines. Rédaction noncommencée."
+    },
+    {
+      "at": "2026-11-02T11:47:52+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "verification",
+      "message": "G03 : relecture des décisions PL/CT, LCR, chronique, corticothérapie et paracétamol effectuée ; source et glossaire figés, reconstruction native finale puis répétition des parcours réels."
+    },
+    {
+      "at": "2026-11-02T11:49:27+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "recherche",
+      "message": "N06 :35lectures ciblées/réutilisations,5FI ; matrice20rubriques et sous-codesN06.0–.9, bettaentrée réellementpassé. Début rédactionaprèscecontrôle."
     }
   ],
   "cache": {
@@ -12625,7 +12665,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T11:40:10+00:00",
+    "observed_at": "2026-11-02T11:50:10+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -13242,14 +13282,82 @@
         }
       },
       {
+        "code": "E25",
+        "agent": "astra_endocrinologie",
+        "branch": "codex/alpha77/e25-integrate-g1",
+        "head_observed": "7e647a914efa9511a487cf833c3f11e1ecbbe7fe",
+        "local_preview": "/workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE/E25-apercu-autonome.html",
+        "exists": true,
+        "sha256": "bd5c23d6062eeed688176537954167f7abd1e2c405ea63209b74d02de8336256",
+        "bytes": 5538179,
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/e25-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE/E25-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/e25-integrate-g1",
+        "status": "Achèvement de projet documenté; version en attente de revue utilisateur avant PR main.",
+        "publication_main": false,
+        "clinical_certification": false,
+        "completion": {
+          "agent": "astra_endocrinologie",
+          "code": "E25",
+          "at": "2026-11-02T11:46:53+00:00",
+          "branch": "codex/alpha77/e25-integrate-g1",
+          "worktree": "/workspace/Medina-endocrinologie-E25",
+          "folder": "/workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE",
+          "manifest_sha256": "291b66cccd1d37f8a48d3418ae3285680d6b65a1383551750035025fe058f8c6",
+          "source_binding_sha256": "c7394ff46b93977c8146d4f4b294bbdb19d3af42aecdc46e2851198cb628cbaa",
+          "review_modes": {
+            "medical": "self_review",
+            "language": "self_review",
+            "visual_desktop": "self_review",
+            "visual_mobile": "self_review"
+          },
+          "clinical_certification": false,
+          "publication_allowed": false,
+          "preview_sha256": "bd5c23d6062eeed688176537954167f7abd1e2c405ea63209b74d02de8336256"
+        }
+      },
+      {
+        "code": "N05",
+        "agent": "astra_nephrologie",
+        "branch": "codex/alpha77/n05-integrate-g1",
+        "head_observed": "36c5642d7f4ef9b68c0d5bb9bd794f783f63738a",
+        "local_preview": "/workspace/Medina-nephrologie-n05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N05-INTEGRATE/N05-apercu-autonome.html",
+        "exists": true,
+        "sha256": "9d3f8910950c84b91535f469e321bf2d855d2535d8a92f08c328d86107265d03",
+        "bytes": 23531293,
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/n05-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N05-INTEGRATE/N05-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/n05-integrate-g1",
+        "status": "Achèvement de projet documenté; version en attente de revue utilisateur avant PR main.",
+        "publication_main": false,
+        "clinical_certification": false,
+        "completion": {
+          "agent": "astra_nephrologie",
+          "code": "N05",
+          "at": "2026-11-02T11:40:23+00:00",
+          "branch": "codex/alpha77/n05-integrate-g1",
+          "worktree": "/workspace/Medina-nephrologie-n05",
+          "folder": "/workspace/Medina-nephrologie-n05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N05-INTEGRATE",
+          "manifest_sha256": "bccdc2e8c6fde6c9e3e9daf83097e73390fe127aa2af39e63d746b00078f9215",
+          "source_binding_sha256": "3a625ca81c04efdaa4409cac47d382523b64231a2d7902dd657ba2b0c9b07304",
+          "review_modes": {
+            "medical": "self_review",
+            "language": "self_review",
+            "visual_desktop": "self_review",
+            "visual_mobile": "self_review"
+          },
+          "clinical_certification": false,
+          "publication_allowed": false,
+          "preview_sha256": "9d3f8910950c84b91535f469e321bf2d855d2535d8a92f08c328d86107265d03"
+        }
+      },
+      {
         "code": "G03",
         "agent": "astra_neurologie",
         "branch": "codex/alpha77/g03-integrate-g1",
         "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "local_preview": "/workspace/Medina-neurologie-G03/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE/G03-apercu-autonome.html",
-        "exists": false,
-        "sha256": null,
-        "bytes": null,
+        "exists": true,
+        "sha256": "1089cdc2412f36bb4eacee1837fafe297bfb40ef0341f14a9e743fa3b857d197",
+        "bytes": 8148101,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/g03-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE/G03-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/g03-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
@@ -13257,31 +13365,16 @@
         "clinical_certification": false
       },
       {
-        "code": "E25",
-        "agent": "astra_endocrinologie",
-        "branch": "codex/alpha77/e25-integrate-g1",
-        "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "local_preview": "/workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE/E25-apercu-autonome.html",
-        "exists": true,
-        "sha256": "0e06437b935e24d8d5ddec5e874cf283317c30cf720be40855e0b9abc4e7d7d4",
-        "bytes": 5538151,
-        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/e25-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE/E25-apercu-autonome.html",
-        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/e25-integrate-g1",
-        "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
-        "publication_main": false,
-        "clinical_certification": false
-      },
-      {
-        "code": "N05",
+        "code": "N06",
         "agent": "astra_nephrologie",
-        "branch": "codex/alpha77/n05-integrate-g1",
+        "branch": "codex/alpha77/n06-integrate-g1",
         "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "local_preview": "/workspace/Medina-nephrologie-n05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N05-INTEGRATE/N05-apercu-autonome.html",
-        "exists": true,
-        "sha256": "9d3f8910950c84b91535f469e321bf2d855d2535d8a92f08c328d86107265d03",
-        "bytes": 23531293,
-        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/n05-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N05-INTEGRATE/N05-apercu-autonome.html",
-        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/n05-integrate-g1",
+        "local_preview": "/workspace/Medina-nephrologie-n06/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/N06-apercu-autonome.html",
+        "exists": false,
+        "sha256": null,
+        "bytes": null,
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/n06-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/N06-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/n06-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
         "publication_main": false,
         "clinical_certification": false
@@ -13648,6 +13741,44 @@
       "clinical_certification": false,
       "publication_allowed": false,
       "preview_sha256": "49fa9de8d736f16d0f2ebeab90c7b20e19fca1c1445f90d78eed9bf7868fe971"
+    },
+    {
+      "agent": "astra_nephrologie",
+      "code": "N05",
+      "at": "2026-11-02T11:40:23+00:00",
+      "branch": "codex/alpha77/n05-integrate-g1",
+      "worktree": "/workspace/Medina-nephrologie-n05",
+      "folder": "/workspace/Medina-nephrologie-n05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N05-INTEGRATE",
+      "manifest_sha256": "bccdc2e8c6fde6c9e3e9daf83097e73390fe127aa2af39e63d746b00078f9215",
+      "source_binding_sha256": "3a625ca81c04efdaa4409cac47d382523b64231a2d7902dd657ba2b0c9b07304",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "9d3f8910950c84b91535f469e321bf2d855d2535d8a92f08c328d86107265d03"
+    },
+    {
+      "agent": "astra_endocrinologie",
+      "code": "E25",
+      "at": "2026-11-02T11:46:53+00:00",
+      "branch": "codex/alpha77/e25-integrate-g1",
+      "worktree": "/workspace/Medina-endocrinologie-E25",
+      "folder": "/workspace/Medina-endocrinologie-E25/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E25-INTEGRATE",
+      "manifest_sha256": "291b66cccd1d37f8a48d3418ae3285680d6b65a1383551750035025fe058f8c6",
+      "source_binding_sha256": "c7394ff46b93977c8146d4f4b294bbdb19d3af42aecdc46e2851198cb628cbaa",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "bd5c23d6062eeed688176537954167f7abd1e2c405ea63209b74d02de8336256"
     }
   ]
 }
