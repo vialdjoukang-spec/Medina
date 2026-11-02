@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "G22_RECHERCHE",
+  "status": "G22_VERIFICATION",
   "prepared_at": "2026-11-02T01:17:05.123886+00:00",
   "agent": "Sol Neurologie",
   "model": "gpt-6.1-sol",
@@ -693,14 +693,16 @@
     "code": "G22",
     "worktree": "/workspace/Medina-neurologie-G22",
     "branch": "codex/alpha77/g22-integrate-g1",
-    "stage": "recherche",
+    "stage": "verification",
     "reservation_acquired": true,
     "start_passed": true,
     "claim_passed": true,
     "acquisition_registry_sha": "d97544322d85350def5c560d194d75f611c0fca5",
     "source_binding": null,
-    "source_readings_count": 9,
-    "medical_content_written": false
+    "source_readings_count": 16,
+    "medical_content_written": true,
+    "monograph14_reviewed": 14,
+    "matrix20_reviewed": 20
   },
   "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
   "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
@@ -1403,7 +1405,7 @@
     }
   ],
   "source_readings_count": 0,
-  "research_sources": "/workspace/Medina-neurologie-G22/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/recherche_G22/sources-draft.json",
+  "research_sources": "/workspace/Medina-neurologie-G22/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/recherche_G22/sources.json",
   "current_revision": "G22 acquis puis worktree complet/workspace créé après retour acquisition vérifié ; start/gate/claim réels16:38:17UTC. Prompt vérité premier document médical relu,instructions identiques G08 par SHA ; inventaire initial conservé.0source primaire G22 encore lue,aucune rédaction ni binding.",
   "monograph14_reviewed": 0,
   "matrix20_reviewed": 0,

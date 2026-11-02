@@ -5,7 +5,7 @@
     "astra_neurologie": {
       "lesson": "G22",
       "worktree": "/workspace/Medina-neurologie-G22",
-      "stage": "recherche",
+      "stage": "revue_requise",
       "branch": "codex/alpha77/g22-integrate-g1",
       "allowed_paths": [
         "chapters/G22",
@@ -15,15 +15,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE"
       ],
       "started_at": "2026-11-02T16:38:17+00:00",
-      "activity_at": "2026-11-02T17:03:11+00:00",
-      "message": "G22 : neuf entrées de lectures ciblées consignées ; classification, neurosyphilis2026, EASL2025 et FI réellement confrontées. Recherche non close, aucune rédaction canonique ni empreinte.",
+      "activity_at": "2026-11-02T17:24:56+00:00",
+      "message": "G22 : version finale testée,40fenêtres aux deux largeurs,Livre24,quatre quiz,images/annotations/liens et clavier ;11captures inspectées. Quatre self_review +SEMIO,14/20 ; première liaison65a491ed émise17:24:42 après relecture réelle.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "dd6782dbcd83c6cfcf2eeefda81a6c835d882bffef1c803768651a4f1968245c"
     },
     "astra_endocrinologie": {
@@ -78,7 +78,7 @@
     "codex_hematologie": {
       "lesson": "D65",
       "worktree": "/workspace/Medina-hematologie-D65",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/d65-integrate-g1",
       "allowed_paths": [
         "chapters/D65",
@@ -89,8 +89,8 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T16:52:40+00:00",
-      "activity_at": "2026-11-02T17:05:26+00:00",
-      "message": "D65 : quatorze sections monographiques rédigées, score ISTH2025 et SIC, quatre sous-codes, causes et différences de cibles ; examens, sciences, pharmacologie et fenêtres à produire puis vérifier.",
+      "activity_at": "2026-11-02T17:22:41+00:00",
+      "message": "D65 assemblé : 14 sections, 6 sciences/9 rubriques sémiologiques, 40 fenêtres, 4 quiz et deux originaux annotés ; échecs statiques de sigles conservés puis corrigés, pipeline natif en cours ; aucun binding.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -102,32 +102,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T10:24:59+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "redaction",
-      "message": "Reprise Sol autorisée : cinq originaux revus, HUG2024 et FI relus ; porte vérité research_N02 passée. Complément pharmacologique et interactions en cours."
-    },
-    {
-      "at": "2026-11-02T10:25:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 1
-    },
-    {
-      "at": "2026-11-02T10:26:41+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "recherche",
-      "message": "E14 : lectures ciblées OMS/SSED/OFSP, crises 2024 et FI suisses ; divergences potassium et metformine identifiées, figure originale 2013 vérifiée."
-    },
-    {
-      "at": "2026-11-02T10:28:44+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 1
-    },
     {
       "at": "2026-11-02T10:30:10+00:00",
       "action": "watch",
@@ -1405,6 +1379,33 @@
     },
     {
       "at": "2026-11-02T17:15:16+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T17:20:53+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "verification",
+      "message": "G22 : rédaction14points/20rubriques, six sciences3571mots et neuf unités strictes contrôlées ;40fenêtres reliées, quatre quiz. Reprise réelle REC figure≥15/table>15, glossaire borné et mécanismes FI vérifiés ; build natif final en cours."
+    },
+    {
+      "at": "2026-11-02T17:22:41+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "verification",
+      "message": "D65 assemblé : 14 sections, 6 sciences/9 rubriques sémiologiques, 40 fenêtres, 4 quiz et deux originaux annotés ; échecs statiques de sigles conservés puis corrigés, pipeline natif en cours ; aucun binding."
+    },
+    {
+      "at": "2026-11-02T17:24:56+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "revue_requise",
+      "message": "G22 : version finale testée,40fenêtres aux deux largeurs,Livre24,quatre quiz,images/annotations/liens et clavier ;11captures inspectées. Quatre self_review +SEMIO,14/20 ; première liaison65a491ed émise17:24:42 après relecture réelle."
+    },
+    {
+      "at": "2026-11-02T17:25:16+00:00",
       "action": "watch",
       "ok": true,
       "findings": 1
