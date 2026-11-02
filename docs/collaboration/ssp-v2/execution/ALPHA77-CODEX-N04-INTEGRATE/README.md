@@ -1,0 +1,17 @@
+# N04 — Syndrome néphrotique
+
+[Ouvrir l’aperçu natif autonome](N04-apercu-autonome.html). Les cinq illustrations humaines originales sont incorporées, avec repères superposés, attribution et licence. Le moteur MEDINA et la navigation S04 sont conservés ; cette révision concerne N04 uniquement.
+
+Le cours conserve les 22 îlots initiaux et couvre les [14 points monographiques](plan-14.json) et les [20 rubriques MEDINA](matrice-20.json). Il comporte six sous-onglets scientifiques, dont une sémiologie analytique en neuf sections. La table CIM complète a été déplacée après la conclusion clinique. Le compteur du dépôt passe de 26 199 à 30 517 mots, fenêtres comprises ; il mesure la préservation du contenu, pas sa qualité médicale.
+
+Les corrections portent notamment sur l’inférence histologique trop précoce dans la vignette, la confusion avec le rein médullaire en éponge, la distinction œdème/volémie, la possibilité limitée de remplacement podocytaire et les limites des images. Les surfaces de prescription distinguent prophylaxie et traitement par énoxaparine, adaptation rénale de la ciclosporine, forte dose transitoire de Spiricort et protocole spécialisé prolongé, forme orale d’Endoxan et statut pédiatrique de Sortis.
+
+Le [registre des sources](source-ledger.json) distingue 39 passages actuellement lus, dont des passages ciblés des 22 FI suisses exactes, et 113 preuves héritées attribuées à Claude avec leur date initiale. Les passages publics sont paraphrasés ; les citations de travail restent dans le cache externe. Les références héritées ne sont pas présentées comme une relecture externe exhaustive actuelle.
+
+Les vérifications techniques ont réussi : [audit des sciences](audit-sciences.json), [contrôle statique des fenêtres, abréviations et HTML](test-static.json), [porte de vérité](verite.json), [contrat de livraison](validation-contract.json) et [rendu natif](browser-report.json). Sur 1440 et 390 px, les neuf occurrences d’images ont été décodées après défilement avec les requêtes réseau externes bloquées ; les six disciplines, les fenêtres et le mode Livre à 24 px ont été exercés. Les [captures](captures) proviennent de ce rendu. Il s’agit d’un document natif servi par interception locale, sans affirmation de déploiement ou de disponibilité HTTP en production.
+
+Les [auto-relectures](reviews) sont explicitement attribuées à l’auteur et liées aux empreintes finales. La [vérification distincte ciblée de Codex](reviews/parent-targeted.md) confirme trois points de FI — Clexane, Sandimmun Neoral et Spiricort — et ne vaut pas validation de l’ensemble du cours. La ligne isolée 20/40 mg d’énoxaparine indique maintenant explicitement « prophylaxie » ; les empreintes des deux fragments examinés concordent avec le rapport parent.
+
+Les limites restent visibles : incidence suisse non trouvée dans les sources consultées, résumé RMS seul accessible, deux récupérations EuropePMC échouées avec maintien explicite des preuves héritées, lecture ciblée des FI et absence de validation médicale humaine. Le marqueur de publication hérité « audit différé après le Cycle 30 », ajouté par les métadonnées partagées, reste visible dans le moteur natif. Aucun fichier partagé, sceau, PR ou publication sur main n’a été modifié.
+
+Le [manifeste](lesson-manifest.json) contient les empreintes, les correspondances de sections et les limites. Les compteurs de tokens, de coût et de qualité clinique restent non renseignés. Cette livraison prépare la revue utilisateur ; elle n’autorise pas implicitement une PR ni le passage à une autre leçon.

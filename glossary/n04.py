@@ -27,3 +27,5 @@ a('IDL',[('I','Intermediate'),('D','Density'),('L','Lipoprotein')],'Lipoprotéin
 a('LPL',[('L','Lipo'),('P','Protéine'),('L','Lipase')],'Lipoprotéine lipase','Enzyme de l’endothélium qui hydrolyse les triglycérides des lipoprotéines ; son activité diminue dans le syndrome néphrotique.','n04-lipides')
 a('HLA-DQA1',[('HLA','Human Leukocyte Antigen'),('DQ','locus DQ'),('A1','chaîne alpha 1')],'Gène HLA-DQA1','Allèle associé à la néphropathie membraneuse à anti-PLA2R, sans hérédité mendélienne.')
 a('AgHBs',[('Ag','Antigène'),('H','de l’Hépatite'),('B','B,'),('s','de surface')],'Antigène de surface du virus de l’hépatite B','Marqueur d’infection active par le virus de l’hépatite B, à dépister avant le rituximab (avec l’anti-HBc).','n04-mono-rituximab')
+
+a('IPNA',[('I','International'),('P','Pediatric'),('N','Nephrology'),('A','Association')],'Association internationale de néphrologie pédiatrique','Association dont les recommandations sur le syndrome néphrotique corticosensible de l’enfant précisent le bilan initial et l’évaluation de la volémie (Trautmann et collaborateurs, 2023).')
