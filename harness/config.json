@@ -20,9 +20,6 @@
         "G07",
         "G08",
         "G22",
-        "G24",
-        "G25",
-        "G26",
         "G32",
         "G36",
         "G37",
@@ -104,7 +101,10 @@
         "D77",
         "G09",
         "E40",
-        "G21"
+        "G21",
+        "G24",
+        "G25",
+        "G26"
       ],
       "reserved_elsewhere": [
         "N17"
@@ -113,8 +113,8 @@
       "clinical_orchestration": false,
       "runtime_name": "/root/sol_nephrologie",
       "historical_id": "astra_nephrologie",
-      "active_specialty": "nutrition",
-      "production_name": "Sol-Nutrition-E40",
+      "active_specialty": "mouvements anormaux",
+      "production_name": "Sol-Neurologie-G21",
       "technical_identity_note": "Identité native conservée /root/sol_nephrologie ; huit livraisons néphrologiques historiques inchangées.",
       "next_specialty": "mouvements anormaux",
       "next_production_name": "Sol-Neurologie-G21",
@@ -187,6 +187,36 @@
       "stage": "allocation_before_fresh_acquisition",
       "reason": "Maintien parallèle ; aucun chapters.json dans missionG21. Exclusion auteur confirmée. PropositionE04 annulée sans acquisition ni mutation de sa file.",
       "no_main_write": true
+    },
+    {
+      "at": "2026-11-02T16:35:49.903217+00:00",
+      "code": "G24",
+      "from": "astra_neurologie",
+      "to": "astra_nephrologie",
+      "stage": "future_allocation_only",
+      "reason": "Continuité après G21 ; séparation des chemins, G22 puis G32 restent à l’autre auteur. Aucun démarrage ni réservation anticipée.",
+      "no_main_write": true,
+      "registry_acquisition_still_required": true
+    },
+    {
+      "at": "2026-11-02T16:35:49.903227+00:00",
+      "code": "G25",
+      "from": "astra_neurologie",
+      "to": "astra_nephrologie",
+      "stage": "future_allocation_only",
+      "reason": "Continuité après G21 ; séparation des chemins, G22 puis G32 restent à l’autre auteur. Aucun démarrage ni réservation anticipée.",
+      "no_main_write": true,
+      "registry_acquisition_still_required": true
+    },
+    {
+      "at": "2026-11-02T16:35:49.903229+00:00",
+      "code": "G26",
+      "from": "astra_neurologie",
+      "to": "astra_nephrologie",
+      "stage": "future_allocation_only",
+      "reason": "Continuité après G21 ; séparation des chemins, G22 puis G32 restent à l’autre auteur. Aucun démarrage ni réservation anticipée.",
+      "no_main_write": true,
+      "registry_acquisition_still_required": true
     }
   ]
 }

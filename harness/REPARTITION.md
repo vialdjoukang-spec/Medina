@@ -157,3 +157,7 @@ E04 avait été envisagé : le préflight a montré une nouvelle leçon incluant
 ### Transition vérifiée D62 → priorité catalogue E04
 
 D62 : achèvement16:15:39UTC, branche finale `e9d210c65a1063fbda12cc9978488d7b8a9a87ee`, guard et égalité distante vérifiés. Libération registre `108145b7f49ac93d912952064e239e30d494547f`. L’auteur endocrinologie reçoit priorité sur `chapters.json` pour E04. Le parent prépare le rapport et les sources D65 hors production canonique ; aucune acquisition D65 avant disponibilité réelle. G08 reste à Sol-Neurologie ; G21 à Sol-Neurologie-G21 (identifiant natif historique sol_nephrologie). Les noms historiques des reçus restent conservés.
+
+### Suite répartie après G21 — préparation sans acquisition
+
+G24, G25 et G26 sont affectés exclusivement à l’auteur natif `/root/sol_nephrologie`, actuellement Sol-Neurologie-G21, après clôture puis libération de chaque leçon. `/root/sol_neurologie` conserve G22 puis G32 et a confirmé l’exclusion de ces trois codes. La file totale de campagne est conservée sans doublon. Aucune réservation anticipée ni nouvelle leçon active ne découle de cette planification.
