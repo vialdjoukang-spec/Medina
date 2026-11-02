@@ -1,0 +1,7 @@
+# Originaux D65
+
+**platelets-rbc-wellcome.jpg** — David Gregory et Debbie Marshall / Wellcome Collection. [Provenance](https://wellcomecollection.org/works/uuk6yhjd). [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Pixels intacts, quatre repères français dans le bloc adjacent. SHA256 `d46e39a8369ddf65e8cb3339e8a571510be6219b7a7d678f13bc3a4671ce22cd`.
+
+**normal-peripheral-blood.jpg** — Степанюк Ярослав et Борис Максим, Wikimedia Commons. [Provenance](https://commons.wikimedia.org/wiki/File:%D0%9A%D1%80%D0%BE%D0%B2_%D0%BB%D1%8E%D0%B4%D0%B8%D0%BD%D0%B8.jpg). [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Pixels intacts, quatre repères français dans le bloc adjacent. SHA256 `ab1c9c901f485af3b8d41ea5d42ff8fa3849f60e0bc738d5c5d4fa171e2a52c9`.
+
+Deux originaux du normal : microscopie électronique Wellcome et frottis sanguin. Aucune image ne prouve une CIVD ni ne mesure une concentration sanguine.
