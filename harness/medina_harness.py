@@ -229,7 +229,8 @@ class Harness:
                   'tests': load(self.runtime / 'tests.json', {}), 'agents': [], 'events': state.get('events', []),
                   'cache': state.get('cache', {}), 'monitor': load(self.home / 'monitor.json', {}),
                   'prompt': load(self.home / 'prompt-lock.json', {}),
-                  'plan': load(self.home / 'plan.json', {})}
+                  'plan': load(self.home / 'plan.json', {}),
+                  'deliverables': load(self.home / 'deliverables.json', {})}
         for spec in self.config['agents']:
             a = {**spec, **state.get('agents', {}).get(spec['id'], {})}
             a['brief'] = load(self.home / 'agents' / spec['specialty'] / 'brief.json', {})

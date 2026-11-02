@@ -5,10 +5,10 @@
     "astra_neurologie": {
       "lesson": "G02",
       "worktree": "/workspace/Medina-neurologie",
-      "stage": "recherche",
+      "stage": "verification",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T02:15:48+00:00",
-      "message": "Paquet G02 a35d56e7 poussé; levée ciblée réserve WHO2024 via API publique IRIS DSpace, original en cours de récupération; autres réserves maintenues.",
+      "activity_at": "2026-11-02T02:25:16+00:00",
+      "message": "WHO 2024 et RCP exact Fexinidazole Winthrop 17 octobre 2025 relus et intégrés ; divergences seuil et surveillance explicites. Statique natif G02 et betta_verite passent ; reconstruction du bundle puis captures et coordination quatre filières.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -31,15 +31,15 @@
       "worktree": "/workspace/Medina-endocrinologie",
       "stage": "verification",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T02:11:36+00:00",
-      "message": "Contrôle statique PASS : 56 fenêtres reliées, 52 identifiants uniques, 26 cibles Pareto, 11 474 vers 18 191 mots toutes surfaces. Collision TPO avec thrombopoïétine corrigée localement ; finalisation du paquet natif et matrice de couverture.",
+      "activity_at": "2026-11-02T02:21:44+00:00",
+      "message": "Paquet E00 : 14/20 reliés aux ancrages, 56 fenêtres vérifiées, six sciences PASS, bundle natif fonctionnel, navigateur origine interceptée 1440/390 avec taille24 réellement appliquée PASS. Dernière reconstruction après auto-relecture linguistique ; reçus MED/LANG/visuels et commit/push en préparation.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "b6ea07fea66fd173ebbaa0335339a155356f6d920405c012daccec04f253afe3",
       "branch": "codex/alpha77/e00-integrate-g1",
       "allowed_paths": [
@@ -53,10 +53,10 @@
     "astra_nephrologie": {
       "lesson": "N04",
       "worktree": "/workspace/Medina-nephrologie",
-      "stage": "verification",
+      "stage": "revue_requise",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T02:11:01+00:00",
-      "message": "Contrôles ciblés des22FI suisses et éléments cliniques terminés ; corrections croisées néphrotique/FSGS, anticoagulation, Sortis pédiatrique, Sandimmun, Endoxan et Spiricort. Registre39passages actuels +113preuves héritées attribuées, matrices14/20 persistées. Test statique PASS, capture finale autonome en cours.",
+      "activity_at": "2026-11-02T02:26:45+00:00",
+      "message": "N04 paquet complet prêt pour revue utilisateur : commit4d7525f4, garde périmètrePASS, contratPASS,14/20,6sciences,9SEMIO,5originaux/9occurrences. Auto-relectures déclarées +3FI revues séparément par parent concordantes ; ligne prophylaxie clarifiée. PasPR/main ni leçon suivante.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -79,15 +79,15 @@
       "worktree": "/workspace/Medina-hematologie",
       "stage": "verification",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T02:01:42+00:00",
-      "message": "C85 : cinq FI suisses relues ; corrections C85.7, prophylaxie48h hors indication, critères non booléens et risques Yescarta ; aperçu autonome avec originaux testé1440/390, révision finale en cours.",
+      "activity_at": "2026-11-02T02:22:17+00:00",
+      "message": "C85 : vérifications finales réussies; reconstruction autonome et captures renouvelées. Relecture distincte ciblée de trois FI N04 consignée.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 10,
+      "completed_sections": 12,
       "receipt_sha256": "eefeffc1101a1e7d319dc093e1abff08445f84772dd4222ed29f2a05aaae4062",
       "branch": "codex/alpha77/c85-integrate-g1",
       "allowed_paths": [
@@ -454,6 +454,73 @@
     },
     {
       "at": "2026-11-02T02:17:41+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T02:19:04+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "verification",
+      "message": "Auto-relecture complète des quatre onglets, 56 fenêtres et résumés effectuée ; corrections des indicateurs collectifs, du suivi et des limites héritées. Couverture 14/20 documentée, six sciences/9 sections sémiologiques. Préparation des reçus MED/LANG/visuels explicitement self_review."
+    },
+    {
+      "at": "2026-11-02T02:21:35+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "verification",
+      "message": "Activité reprise et réelle : paquet autonome1440/390 PASS,9images/viewport décodées réseau bloqué,22îlots hérités préservés. Paraphrases publiques39sources+113pointeurs hérités,22FIciblées. Parent confirme3pointsFI ; ajout du mot prophylaxie à la ligne20/40mg avant gel SHA et commit/push."
+    },
+    {
+      "at": "2026-11-02T02:21:44+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "verification",
+      "message": "Paquet E00 : 14/20 reliés aux ancrages, 56 fenêtres vérifiées, six sciences PASS, bundle natif fonctionnel, navigateur origine interceptée 1440/390 avec taille24 réellement appliquée PASS. Dernière reconstruction après auto-relecture linguistique ; reçus MED/LANG/visuels et commit/push en préparation."
+    },
+    {
+      "at": "2026-11-02T02:22:00+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "Reprise effective après interruption ; G02 a35d56e poussé, lecture WHO 2024 sauvegardée ; vérification de information produit officielle fexinidazole avant actualisation du paquet."
+    },
+    {
+      "at": "2026-11-02T02:22:17+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "verification",
+      "message": "C85 : vérifications finales réussies; reconstruction autonome et captures renouvelées. Relecture distincte ciblée de trois FI N04 consignée."
+    },
+    {
+      "at": "2026-11-02T02:24:12+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T02:24:43+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T02:25:16+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "verification",
+      "message": "WHO 2024 et RCP exact Fexinidazole Winthrop 17 octobre 2025 relus et intégrés ; divergences seuil et surveillance explicites. Statique natif G02 et betta_verite passent ; reconstruction du bundle puis captures et coordination quatre filières."
+    },
+    {
+      "at": "2026-11-02T02:26:45+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "revue_requise",
+      "message": "N04 paquet complet prêt pour revue utilisateur : commit4d7525f4, garde périmètrePASS, contratPASS,14/20,6sciences,9SEMIO,5originaux/9occurrences. Auto-relectures déclarées +3FI revues séparément par parent concordantes ; ligne prophylaxie clarifiée. PasPR/main ni leçon suivante."
+    },
+    {
+      "at": "2026-11-02T02:27:41+00:00",
       "action": "watch",
       "ok": true,
       "findings": 0
