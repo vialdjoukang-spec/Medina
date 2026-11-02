@@ -6,17 +6,17 @@
   "fragment": "S05",
   "label": "E-06-Endocrinologie et métabolisme",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "phase": "E01_verification_finale",
+  "phase": "E02_recherche",
   "selected_lesson": {
-    "code": "E01",
-    "title": "Affections thyroïdiennes et apparentées liées à une carence en iode",
-    "mission_candidate": ".medina/missions/ALPHA77-CODEX-E01-INTEGRATE.json",
+    "code": "E02",
+    "title": "Hypothyroïdie par carence inapparente en iode",
+    "mission_candidate": ".medina/missions/ALPHA77-CODEX-E02-INTEGRATE.json",
     "reservation_acquired": true,
     "start_passed": true,
     "harness_claimed": true,
-    "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E00-E01/start-E01.json"
+    "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E01-E02/start-E02.json"
   },
-  "authorization_scope": "E01 uniquement dans les chemins de mission ; recherche puis rédaction après porte de vérité ; commit et push autorisés, aucune PR ni main.",
+  "authorization_scope": "E02 uniquement dans ses chemins de mission ; aucun fichier partagé, aucune PR ni main.",
   "counts": {
     "canonical_s05": 26,
     "existing_codex": 13,
@@ -1263,9 +1263,9 @@
     "phase": "preparation_only_waiting_harness_veille_and_exclusive_worktree",
     "authorization_scope": "Préparation seulement dans harness/agents/endocrinologie; aucune écriture médicale, aucun commit ni index. Ordre courant spécialités parallèles/une leçon à la fois remplace lots historiques, pas réservations."
   },
-  "updated_at": "2026-11-02T03:34:07.156166+00:00",
-  "worktree": "/workspace/Medina-endocrinologie-E01",
-  "branch": "codex/alpha77/e01-integrate-g1",
+  "updated_at": "2026-11-02T03:39:15.378007+00:00",
+  "worktree": "/workspace/Medina-endocrinologie-E02",
+  "branch": "codex/alpha77/e02-integrate-g1",
   "tokens_actual": null,
   "cost_actual": null,
   "completed_lessons": [
@@ -1282,68 +1282,60 @@
       "reviews": "self_review",
       "clinical_certification": false,
       "main_or_pr": false
+    },
+    {
+      "code": "E01",
+      "title": "Goitre et affections thyroïdiennes par carence en iode",
+      "head": "2dcd20ca78ef3e4ed2ed7d8b049e3714fb60a6f4",
+      "branch": "codex/alpha77/e01-integrate-g1",
+      "pushed": true,
+      "preview": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/E01-apercu-autonome.html",
+      "report": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/RAPPORT-E01.md",
+      "completion": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/harness-completion.json",
+      "source_binding": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/source-binding.json",
+      "reviews": "self_review",
+      "clinical_certification": false,
+      "main_or_pr": false,
+      "released": true
     }
   ],
   "previous_lesson": {
-    "code": "E00",
-    "title": "Syndrome d’insuffisance thyroïdienne congénitale",
-    "reason": "Premier existant Codex libre de réservation dans ordre Starter; E10 et E05 actifs sont exclus.",
-    "mission_candidate": ".medina/missions/ALPHA77-CODEX-E00-INTEGRATE.json",
-    "mission_old_base": "8712c3fe758f0c7e1f9fb85378def47b554edb53",
+    "code": "E01",
+    "title": "Affections thyroïdiennes et apparentées liées à une carence en iode",
+    "mission_candidate": ".medina/missions/ALPHA77-CODEX-E01-INTEGRATE.json",
     "reservation_acquired": false,
     "start_passed": true,
-    "required_before_writing": [
-      "harness testé",
-      "veille exigée réussie et preuves datées",
-      "mission adaptée au SHA approuvé",
-      "acquisition distante fraîche",
-      "worktree exclusif",
-      "start réussi",
-      "sources primaires utiles réellement lues",
-      "betta_verite.py avant rédaction"
-    ],
-    "start_receipt": "/workspace/Medina-harness/harness/evidence/E00/start.json",
+    "harness_claimed": true,
+    "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E00-E01/start-E01.json",
     "released": true
   },
   "previous_evidence": {
-    "folder": "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE",
-    "preview": "E00-apercu-autonome.html",
-    "captures": [
-      "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/1440-semiology.png",
-      "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/390-histology-original.png",
-      "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/390-dose-popup.png",
-      "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/390-book24-pharmacology.png",
-      "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/390-font24-table-right.png"
-    ],
-    "coverage": "coverage-14-20.json",
-    "sources": "recherche_E00/sources.json",
-    "science_audit": "audit-sciences.json",
-    "browser": "browser-report.json",
-    "revision_state": "Version finale liée aux sources, contrôles réussis, branche poussée et achèvement enregistré dans le harness.",
-    "manifest": "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/lesson-manifest.json",
-    "completion": "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/harness-completion.json",
-    "source_binding": "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/source-binding.json"
-  },
-  "current_evidence": {
     "folder": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE",
-    "status": "14 points et 20 rubriques relus ; version finale avec tableaux mobiles déroulants et figures lisibles en contrôle navigateur.",
+    "status": "Achevé et poussé, harness complete réussi, réservation E01 libérée.",
     "preview": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/E01-apercu-autonome.html",
     "static": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/static-report.json",
     "sciences": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/audit-sciences.json",
-    "sources": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/recherche_E01/sources.json"
+    "sources": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/recherche_E01/sources.json",
+    "manifest": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/lesson-manifest.json",
+    "completion": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/harness-completion.json",
+    "source_binding": "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/source-binding.json",
+    "captures": [
+      "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/390-font24-table-right.png",
+      "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/390-normal-anatomy.png",
+      "/workspace/Medina-endocrinologie-E01/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E01-INTEGRATE/1440-compression-ct.png"
+    ]
+  },
+  "current_evidence": {
+    "folder": "/workspace/Medina-endocrinologie-E02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E02-INTEGRATE",
+    "status": "Recherche et lecture du cours existant, aucune rédaction médicale avant VÉRITÉ E02."
   },
   "previous_limits": [
-    "Auto-relecture assumée, aucune validation humaine ni indépendance revendiquée.",
-    "Seuil suisse de rappel TSH et prévalence actuelle E00 suisse non trouvés ; pas de valeur substituée.",
-    "Catalogue administratif français OFS2024 conservé ; comparaison BfArM2026 distincte.",
-    "Référence sélénium : titre seul, aucun mécanisme précis ni prescription.",
-    "Test navigateur à origine interceptée ; aucun serveur HTTP réel testé.",
-    "Tokens et coût réels non fournis par le fournisseur."
-  ],
-  "current_limits": [
     "Auto-relecture explicite, aucune certification médicale humaine.",
     "Prévalence adulte suisse inconnue ; FI suisse du perchlorate non identifiée, pas de dosage inventé.",
     "Divergences réglementaires et populations sélectionnées explicitées.",
     "Navigation à origine interceptée ; aucun serveur HTTP réel testé."
+  ],
+  "current_limits": [
+    "Sources héritées à relire ; aucune validation héritée revendiquée."
   ]
 }
