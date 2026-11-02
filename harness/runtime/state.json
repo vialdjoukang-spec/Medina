@@ -5,7 +5,7 @@
     "astra_neurologie": {
       "lesson": "G08",
       "worktree": "/tmp/Medina-neurologie-G08",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/g08-integrate-g1",
       "allowed_paths": [
         "chapters/G08",
@@ -15,8 +15,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G08-INTEGRATE"
       ],
       "started_at": "2026-11-02T15:43:29+00:00",
-      "activity_at": "2026-11-02T15:43:29+00:00",
-      "message": "Mission réservée; recherche autorisée",
+      "activity_at": "2026-11-02T16:04:16+00:00",
+      "message": "G08 :15références et plan14/matrice20 achevés avec lacunes explicites ; VÉRITÉ OK16:03:44UTC,7empreintes initiales inchangées avant nouvelle rédaction. Acquisition/start/claim dans ordre vérifié. Début rédaction maintenant.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -29,7 +29,7 @@
     "astra_endocrinologie": {
       "lesson": "E42",
       "worktree": "/tmp/Medina-endocrinologie-E42",
-      "stage": "redaction",
+      "stage": "termine",
       "branch": "codex/alpha77/e42-integrate-g1",
       "allowed_paths": [
         "chapters/E42",
@@ -39,15 +39,15 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E42-INTEGRATE"
       ],
       "started_at": "2026-11-02T15:14:28+00:00",
-      "activity_at": "2026-11-02T15:32:29+00:00",
-      "message": "E42 : recherche sourcée et porte VÉRITÉ OK ;20entrées dont notice de licence,19sources cliniques/scientifiques/formation réellement lues aux niveaux déclarés. Arbitrages OMS/MSF, FI exactes et essais2025/2026 documentés avant rédaction ; début des14sections et six sciences locales.",
+      "activity_at": "2026-11-02T15:56:25+00:00",
+      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "ca9d917ce7db799975a16ffdaa8b64c9cd9954fe40adf296d968c902c3b3cd78"
     },
     "astra_nephrologie": {
@@ -63,8 +63,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G21-INTEGRATE"
       ],
       "started_at": "2026-11-02T15:52:16+00:00",
-      "activity_at": "2026-11-02T15:53:03+00:00",
-      "message": "G21 acquis, checkout complet, start et claim réels après refus initial de propreté conservé. Sept fichiers canoniques inventoriés, aucun texte modifié ; recherche primaire CH→EU et originaux à reprendre avant Betta.",
+      "activity_at": "2026-11-02T16:04:56+00:00",
+      "message": "Passages OFS G21.0/.1/.2/.3/.4/.8/.9, HUG2018 sémiologie, PHEL document mai2026 et DGN2023 différentiel lus ; FI Akineton mai2022, Symmetrel février2025, Madopar juin2023 en lecture ciblée. Cinq originaux humains réellement vus ; quota Parallel Search arrêté sans changement de session, HTTP public direct avec provenance. Aucune rédaction canonique, Betta encore à faire.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -77,7 +77,7 @@
     "codex_hematologie": {
       "lesson": "D62",
       "worktree": "/tmp/Medina-hematologie-D62",
-      "stage": "redaction",
+      "stage": "verification",
       "branch": "codex/alpha77/d62-integrate-g1",
       "allowed_paths": [
         "chapters/D62",
@@ -88,8 +88,8 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T14:57:26+00:00",
-      "activity_at": "2026-11-02T15:32:55+00:00",
-      "message": "D62 :14 blocs monographiques rédigés dans modules auteur, contrôles non encore lancés ; seuils contextualisés, divergences TXA/ESGE et postpartum explicites. Sciences, examens et fenêtres en cours.",
+      "activity_at": "2026-11-02T15:59:21+00:00",
+      "message": "D62 :6 vérifications+7règles natives passées ; lecture visuelle finale en cours. Correction unités mL/g/dL avant liaison, contrôle additionnel Livre24 et légendes. Aucun binding ni achèvement encore.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -101,51 +101,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T05:09:43+00:00",
-      "action": "claim",
-      "agent": "astra_neurologie",
-      "code": "C70"
-    },
-    {
-      "at": "2026-11-02T05:09:43+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "recherche",
-      "message": "C70 acquis et start réussi après clôture/libération I64 ; lecture ciblée des sources suisses et EANO, inventaire des 6 surfaces existantes."
-    },
-    {
-      "at": "2026-11-02T05:10:47+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "redaction",
-      "message": "N02 : 22 lectures ciblées et 5 FI suisses documentées ; rédaction monographique et six sciences en cours, cinq originaux humains vus."
-    },
-    {
-      "at": "2026-11-02T05:13:59+00:00",
-      "action": "complete",
-      "agent": "astra_endocrinologie",
-      "code": "E07"
-    },
-    {
-      "at": "2026-11-02T05:13:59+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "recherche",
-      "message": "C70 : sources CH Bern/CHUV/PSI et enquête suisse de radiothérapie relues ; EANO 2021/2025, cIMPACT-NOW 8 et FI Galepharm/lévétiracétam/cyprotérone en lecture ciblée. Divergences de grade et de formulation identifiées."
-    },
-    {
-      "at": "2026-11-02T05:15:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T05:25:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
     {
       "at": "2026-11-02T05:35:41+00:00",
       "action": "watch",
@@ -1390,6 +1345,53 @@
       "action": "watch",
       "ok": true,
       "findings": 3
+    },
+    {
+      "at": "2026-11-02T15:56:25+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "verification",
+      "message": "E42 : 14/20,six sciences3094mots,20entrées sources/licence aux niveaux réels ; statique natif,7règles strictes,sciences/build/bundle et navigateur1440/390 passés ;42fenêtres,4quiz,2définitions contextuelles,24px/Livre,14captures finales inspectées. Quatre self_review et contrat technique passés ; empreinte finale à sceller."
+    },
+    {
+      "at": "2026-11-02T15:56:25+00:00",
+      "action": "complete",
+      "agent": "astra_endocrinologie",
+      "code": "E42"
+    },
+    {
+      "at": "2026-11-02T15:58:46+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "G08 :10références lues par périmètres consignés,classification française/allemande et distinction septique vérifiées ; DGN2024 diagnostic/aigu/entretien et grossesse lus,série2018 et revue CHUV2023 confrontées. FI Clexane/Pradaxa lues pour usages et limites ; aucune rédaction,Betta encore à construire."
+    },
+    {
+      "at": "2026-11-02T15:59:21+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "verification",
+      "message": "D62 :6 vérifications+7règles natives passées ; lecture visuelle finale en cours. Correction unités mL/g/dL avant liaison, contrôle additionnel Livre24 et légendes. Aucun binding ni achèvement encore."
+    },
+    {
+      "at": "2026-11-02T16:04:16+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "redaction",
+      "message": "G08 :15références et plan14/matrice20 achevés avec lacunes explicites ; VÉRITÉ OK16:03:44UTC,7empreintes initiales inchangées avant nouvelle rédaction. Acquisition/start/claim dans ordre vérifié. Début rédaction maintenant."
+    },
+    {
+      "at": "2026-11-02T16:04:56+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "recherche",
+      "message": "Passages OFS G21.0/.1/.2/.3/.4/.8/.9, HUG2018 sémiologie, PHEL document mai2026 et DGN2023 différentiel lus ; FI Akineton mai2022, Symmetrel février2025, Madopar juin2023 en lecture ciblée. Cinq originaux humains réellement vus ; quota Parallel Search arrêté sans changement de session, HTTP public direct avec provenance. Aucune rédaction canonique, Betta encore à faire."
+    },
+    {
+      "at": "2026-11-02T16:05:16+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
     }
   ],
   "cache": {
@@ -2301,6 +2303,50 @@
           "chapters/E40/E40_b.html": "108aa6e1f2567541ef88cebd4a6e1fa96d4f11c85d9c2b6e7af673cc75eced92",
           "chapters/E40/E40_c.html": "ced362e94e7aceea9e7e33719a8efb86ccf3d89b3f0db8a012be05288f2ea4f3",
           "chapters/E40/E40_d.html": "a9d2f013eb2901fac8264bc04b61b85c97421837a3de58aae10250bb5f7db76e"
+        },
+        "clinical_certification": false,
+        "author_activity_refreshed": false,
+        "source_bindings_refreshed": false,
+        "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+      }
+    },
+    {
+      "agent": "astra_endocrinologie",
+      "code": "E42",
+      "at": "2026-11-02T15:56:25+00:00",
+      "branch": "codex/alpha77/e42-integrate-g1",
+      "worktree": "/tmp/Medina-endocrinologie-E42",
+      "folder": "/tmp/Medina-endocrinologie-E42/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E42-INTEGRATE",
+      "manifest_sha256": "4d70c87d71190bb807b005e11be0816201345e7e3c4a67e77ab168fc7e12956d",
+      "source_binding_sha256": "d7b09cc2c18d5804df0e22460a99d2420ccc122605b41368a21c4aa5b7aa61fd",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "4cb9218ae032d0613b6ea52aad2efbfd4b6e8737a53e8593599e161a2e000c58",
+      "semiology_contract": {
+        "code": "E42",
+        "observed_at": "2026-11-02T15:56:25+00:00",
+        "passed": true,
+        "checks": {
+          "six_science_tabs": true,
+          "first_selected_semio": true,
+          "semio_panel_label_and_visible": true,
+          "first_unit_exact_h3": true,
+          "nine_named_sections": true,
+          "linked_sources_in_semio": true,
+          "clinical_semio_marker": true
+        },
+        "findings": [],
+        "source_hashes": {
+          "chapters/E42/E42_a.html": "73c6d7d1d6fd6e44994bb5438a1456abfc60d0a8f7e732f3c8f88889152faf3b",
+          "chapters/E42/E42_b.html": "0d774a05c381e3edc5803e05c9c48eae6984caa8f98fc377b3f3987884438b2d",
+          "chapters/E42/E42_c.html": "562030c4b36688f90578bdd623c4a5cc28896acc2a5d64f6f17b8092743dc606",
+          "chapters/E42/E42_d.html": "790cab14f77898442532a6bc471d51e6acef7ce847a687e32f5d4a28587bf492"
         },
         "clinical_certification": false,
         "author_activity_refreshed": false,
