@@ -70,6 +70,8 @@ Grossesse : dosageVIII troisième trimestre et antécédents hémorragiques, pla
 
 Inhibiteur : plan spécialisé, induction de tolérance considérée selon situation ; prophylaxie non substitutive ne prouve pas disparition des anticorps. Thérapie géniqueAAV : bénéfice variable, durabilité et surveillance hépatique à long terme ; pas guérison garantie ni statutSwissmedic/remboursement supposé. Ce dossier n’établit pas autorisation suisse d’un produitAAV pourD66. [S803] [S820]
 
+Le cadre suisse est précisé par l’OFAS et l’Association suisse des hémophiles : mesures médicales d’une infirmité congénitale reconnue généralement couvertes parAI jusqu’au20eanniversaire, puis assurance-maladie selon conditions applicables. Préparer cette transition avec centre et assureur ; ce cadre ne garantit ni renteAI ni remboursement de tout médicament. Aucun numéroOIC ou obligation de choisir une caisse n’est inventé. [S825] [S826] [S827]
+
 ### 13. Paramètres et calculs expliqués
 
 Différencier résultat initial, augmentation visée, pic et creux. Exemple arithmétique fictifElocta :60kg, activitéinitiale2UI/dL, cible50UI/dL → hausse48 →60×48×0,5=1440UI, avant adaptation réelle par centre. Calcul de dose n’est pas une ordonnance. Hemlibra60kg à1,5mg/kg=90mg ; volume3mLsi30mg/mL contre0,6mLsi150mg/mL, choix préparation et consignesFI requis. Confondre mg/mL et mg/kg crée erreur de dose. Les styloAlhemo ont concentrations/incréments différents : ne pas transposer le calcul de volumeHemlibra à un stylo. [S807] [S806] [S810]
@@ -97,7 +99,7 @@ Un aPTT normal sous émicizumab ne dit rien de rassurant sur hémorragie ; absen
 | Complications et pronostic | ✔ ; pas risque individuel inventé | [S803] [S804] |
 | Suivi, prévention, dépistage | ✔ plan centre et famille, pas dépistage populationnel proposé | [S803] [S812] |
 | Situations particulières | ✔ enfant, femme/grossesse, âgé, rein/foie contextualisés | [S803] [S806] [S809] [S810] [S812] |
-| Spécificités suisses | ✔ registre/centres/FI/LS ; LACUNE limitations individuelles LS, AI, Suva et conduite non établies par recherches OFSP/SHG | [S804] [S824] [S821] |
+| Spécificités suisses | ✔ registre/centres/FI et transition AI/AOS ; LACUNE limitations individuelles LS, Suva et conduite non établies | [S804] [S824] [S821] [S825] [S826] [S827] |
 | Critères formels du diagnostic | ✔ activité fonctionnelle et contexte, pas score seul | [S803] [S812] |
 | Paramètres clés chiffrés | ✔ unités et calculs expliqués | [S807] [S806] [S814] [S815] |
 | Sous-codes CIM-10-GM couverts | ✔ D66 sans subdivision ; aucune extension américaine | [S801] [S802] |
