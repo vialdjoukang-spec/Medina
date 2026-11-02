@@ -1,3 +1,5 @@
+{"stopped": true, "reason": "explicit control enabled != true"}
+{"at": "2026-11-02T01:48:32+00:00", "successor_requested": true, "response": {"http_status": 204}, "ref": "codex/harness-20261102", "interval_seconds": 600, "bootstrap": true}
 test_boolean_receipt_wrong_code_and_wrong_branch_are_rejected (test_harness.HarnessCase.test_boolean_receipt_wrong_code_and_wrong_branch_are_rejected) ... ok
 test_bounded_reads_and_path_escape_rejected (test_harness.HarnessCase.test_bounded_reads_and_path_escape_rejected) ... ok
 test_cache_exact_content_and_range_then_invalidated_by_change (test_harness.HarnessCase.test_cache_exact_content_and_range_then_invalidated_by_change) ... ok
@@ -25,8 +27,16 @@ test_review_traversal_is_rejected (test_harness.LessonContractCase.test_review_t
 test_reviewer_identity_cannot_be_missing (test_harness.LessonContractCase.test_reviewer_identity_cannot_be_missing) ... ok
 test_semiology_boolean_or_unresolved_sections_rejected (test_harness.LessonContractCase.test_semiology_boolean_or_unresolved_sections_rejected) ... ok
 test_structurally_complete_fixture_never_certifies_medicine_or_publication (test_harness.LessonContractCase.test_structurally_complete_fixture_never_certifies_medicine_or_publication) ... ok
+test_api_rejects_another_repository_before_network (test_remote_watchdog.WatchdogCase.test_api_rejects_another_repository_before_network) ... ok
+test_closed_gate_still_publishes_alert_but_not_untested_code (test_remote_watchdog.WatchdogCase.test_closed_gate_still_publishes_alert_but_not_untested_code) ... ok
+test_disabled_control_never_dispatches (test_remote_watchdog.WatchdogCase.test_disabled_control_never_dispatches) ... ok
+test_fresh_observer_cannot_refresh_old_source (test_remote_watchdog.WatchdogCase.test_fresh_observer_cannot_refresh_old_source) ... ok
+test_future_author_activity_is_not_healthy (test_remote_watchdog.WatchdogCase.test_future_author_activity_is_not_healthy) ... ok
+test_incomplete_roster_and_closed_gate_report_failure (test_remote_watchdog.WatchdogCase.test_incomplete_roster_and_closed_gate_report_failure) ... ok
+test_observation_does_not_mutate_activity (test_remote_watchdog.WatchdogCase.test_observation_does_not_mutate_activity) ... ok
+test_successor_is_same_review_branch_and_never_bootstrap (test_remote_watchdog.WatchdogCase.test_successor_is_same_review_branch_and_never_bootstrap) ... ok
 
 ----------------------------------------------------------------------
-Ran 26 tests in 0.115s
+Ran 34 tests in 0.120s
 
 OK

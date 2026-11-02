@@ -18,7 +18,7 @@ def observe():
         'snapshot_stale':stale,'agents_without_recent_activity':inactive,
         'tests':load(ROOT/'runtime/tests.json',{}),
         'no_native_agent_restart':True,'no_main_write':True,
-        'schedule_limit':'Cron indépendant inactif tant que workflow absent de la branche par défaut; déclenché par publication locale600s.'}
+        'schedule_limit':'Cron natif hors main inactif. Voir monitor.json pour la chaîne indépendante workflow_dispatch et ses preuves; cet événement observe un commit publié.'}
     atomic(ROOT/'github-observation.json',observation)
     data['github_observation']=observation
     data['monitor']={**data.get('monitor',{}),'last_github_observation':observation}
