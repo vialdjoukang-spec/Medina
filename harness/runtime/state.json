@@ -52,33 +52,33 @@
       "receipt_sha256": "8234c58e094683e63355fff21299c6f121150dd8d3492ca7217fa3f9f3ca6845"
     },
     "astra_nephrologie": {
-      "lesson": "G21",
-      "worktree": "/tmp/Medina-neurologie-G21",
-      "stage": "termine",
-      "branch": "codex/alpha77/g21-integrate-g1",
+      "lesson": "G24",
+      "worktree": "/tmp/Medina-neurologie-G24",
+      "stage": "recherche",
+      "branch": "codex/alpha77/g24-integrate-g1",
       "allowed_paths": [
-        "chapters/G21",
-        "glossary/g21.py",
-        "assets/img/g21/alpha/codex",
-        "organisation/alpha-publications/Codex/G21",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G21-INTEGRATE"
+        "chapters/G24",
+        "glossary/g24.py",
+        "assets/img/g24/alpha/codex",
+        "organisation/alpha-publications/Codex/G24",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G24-INTEGRATE"
       ],
-      "started_at": "2026-11-02T15:52:16+00:00",
-      "activity_at": "2026-11-02T17:01:56+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "started_at": "2026-11-02T17:09:23+00:00",
+      "activity_at": "2026-11-02T17:14:40+00:00",
+      "message": "Lectures CH-HUG/USZ et consensus international2025, ERN-RND diagnostic2026 adulte/enfant réellement lu et deux pages de schéma vues ; trois FI BOTOXmai2025/Xeominmars2026/Dysportmai2026 lues ciblées. AWMFsept2026 est inscription de révision, pas nouvelle guideline publiée ; doses/intervalle non interchangeables.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "59951491a23b74c5b3ae4b60ccfe7563a53e210238c14ff8f5b0696e41b414a6"
+      "completed_sections": 0,
+      "receipt_sha256": "180e1ba6f509f5610796b2c2a2c0c90c0264a79155ce7f0b4d9a0e7d55a8cf82"
     },
     "codex_hematologie": {
       "lesson": "D65",
       "worktree": "/workspace/Medina-hematologie-D65",
-      "stage": "recherche",
+      "stage": "redaction",
       "branch": "codex/alpha77/d65-integrate-g1",
       "allowed_paths": [
         "chapters/D65",
@@ -89,44 +89,19 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T16:52:40+00:00",
-      "activity_at": "2026-11-02T16:58:42+00:00",
-      "message": "D65 réservé puis démarré ; 25 entrées de sources attribuées dont 16 lectures ciblées ou images revues ; ISTH2025 et quatre FI suisses confrontés ; Betta réussi avant rédaction, deux originaux vus ; aucune clôture.",
+      "activity_at": "2026-11-02T17:05:26+00:00",
+      "message": "D65 : quatorze sections monographiques rédigées, score ISTH2025 et SIC, quatre sous-codes, causes et différences de cibles ; examens, sciences, pharmacologie et fenêtres à produire puis vérifier.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 0,
+      "completed_sections": 14,
       "receipt_sha256": "dcf0d8167c28a42f449823b2f8fd119582deeb5cdd64d89bc55b3383ddb8848b"
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T10:15:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T10:23:03+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 3
-    },
-    {
-      "at": "2026-11-02T10:23:23+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "recherche",
-      "message": "Reprise réelle Sol high après quota Astra ; inventaire C70 et relecture ciblée CHUV/EANO2021/cIMPACT8/EANO2025/FI Galepharm effectués ; figures, recherche complémentaire et porte de vérité avant rédaction."
-    },
-    {
-      "at": "2026-11-02T10:24:09+00:00",
-      "action": "claim",
-      "agent": "astra_endocrinologie",
-      "code": "E14"
-    },
     {
       "at": "2026-11-02T10:24:59+00:00",
       "action": "progress",
@@ -1404,6 +1379,32 @@
     },
     {
       "at": "2026-11-02T17:05:16+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T17:05:26+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "redaction",
+      "message": "D65 : quatorze sections monographiques rédigées, score ISTH2025 et SIC, quatre sous-codes, causes et différences de cibles ; examens, sciences, pharmacologie et fenêtres à produire puis vérifier."
+    },
+    {
+      "at": "2026-11-02T17:09:23+00:00",
+      "action": "claim",
+      "agent": "astra_nephrologie",
+      "code": "G24"
+    },
+    {
+      "at": "2026-11-02T17:14:40+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "recherche",
+      "message": "Lectures CH-HUG/USZ et consensus international2025, ERN-RND diagnostic2026 adulte/enfant réellement lu et deux pages de schéma vues ; trois FI BOTOXmai2025/Xeominmars2026/Dysportmai2026 lues ciblées. AWMFsept2026 est inscription de révision, pas nouvelle guideline publiée ; doses/intervalle non interchangeables."
+    },
+    {
+      "at": "2026-11-02T17:15:16+00:00",
       "action": "watch",
       "ok": true,
       "findings": 1
