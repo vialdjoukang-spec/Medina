@@ -6,18 +6,19 @@
   "fragment_label": "N-07-Néphrologie",
   "prepared_at": "2026-11-02T01:16:51.601917+00:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "status": "N00_redaction",
+  "status": "C64_recherche",
   "selected_lesson": {
-    "code": "N00",
-    "title": "Syndrome néphritique aigu",
+    "code": "C64",
+    "title": "Tumeur maligne du rein, à l’exception du bassinet",
     "mode": "new_course",
-    "worktree": "/workspace/Medina-nephrologie-n00",
-    "branch": "codex/alpha77/n00-integrate-g1",
+    "worktree": "/workspace/Medina-nephrologie-c64",
+    "branch": "codex/alpha77/c64-integrate-g1",
     "reservation_acquired": true,
-    "acquisition_registry_sha": "697b30a9c218c33d9feaadc841d1d84ab7f12519",
+    "acquisition_registry_sha": "b09e6e501c090e4e5b3d0369f9543f9f93f8aa94",
     "clinical_certification": false,
-    "start_receipt": "/workspace/Medina-nephrologie-n00/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N00-INTEGRATE/start.json",
-    "harness_claimed": true
+    "start_receipt": "/workspace/Medina-nephrologie-c64/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C64-INTEGRATE/start.json",
+    "harness_claimed": true,
+    "catalogue_scope": "Mission explicite nouvelle entréeC64 inclut chapters.json ; réservation acquise avant toute mutation."
   },
   "instruction_priority": "Ordre actuel : quatre spécialités en parallèle et une leçon à la fois par agent ; remplace les lots historiques, sans supprimer les réservations.",
   "counts": {
@@ -63,11 +64,9 @@
       "owner": "Codex",
       "mode": "existing_review",
       "in_alpha77_campaign": true,
-      "reserved_by": [
-        "ALPHA77-CODEX-N29-INTEGRATE"
-      ],
+      "reserved_by": [],
       "dispatchable_after_gate": true,
-      "state": "active_research"
+      "state": "harness_complete_reservation_released"
     },
     {
       "order": 3,
@@ -94,7 +93,7 @@
       "in_alpha77_campaign": true,
       "reserved_by": [],
       "dispatchable_after_gate": true,
-      "state": "queued_after_previous_closure"
+      "state": "harness_complete_reservation_released"
     },
     {
       "order": 5,
@@ -103,9 +102,11 @@
       "owner": "Codex",
       "mode": "new_lesson",
       "in_alpha77_campaign": true,
-      "reserved_by": [],
+      "reserved_by": [
+        "ALPHA77-CODEX-C64-INTEGRATE"
+      ],
       "dispatchable_after_gate": true,
-      "state": "queued_after_previous_closure"
+      "state": "active_research"
     },
     {
       "order": 6,
@@ -442,7 +443,7 @@
       "initial_status": "observed"
     }
   ],
-  "updated_at": "2026-11-02T03:32:46.448837+00:00",
+  "updated_at": "2026-11-02T04:14:31.179994+00:00",
   "initial_counts": {
     "conservative_s04_targets": 33,
     "existing": 6,
@@ -460,10 +461,9 @@
     "n04_local_assets": 5
   },
   "current_counts": {
-    "sections_cliniques_redigees": 14,
-    "lectures_ciblees": 20,
-    "figures_nouvelles_acquises": 3,
-    "tests_finaux": 0
+    "monograph_points_written": 0,
+    "selected_sources_verified": 0,
+    "original_figures_final": 0
   },
   "delivery": {
     "folder": "/workspace/Medina-nephrologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE",
@@ -636,10 +636,45 @@
         "monograph_points": 14,
         "medina_rubrics": 20
       }
+    },
+    {
+      "code": "N00",
+      "title": "Syndrome néphritique aigu",
+      "mode": "new_course",
+      "worktree": "/workspace/Medina-nephrologie-n00",
+      "branch": "codex/alpha77/n00-integrate-g1",
+      "reservation_acquired": false,
+      "acquisition_registry_sha": "697b30a9c218c33d9feaadc841d1d84ab7f12519",
+      "clinical_certification": false,
+      "start_receipt": "/workspace/Medina-nephrologie-n00/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N00-INTEGRATE/start.json",
+      "harness_claimed": true,
+      "stage": "completed",
+      "execution_folder": "/workspace/Medina-nephrologie-n00/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N00-INTEGRATE",
+      "final_commit": "5286d76ce75256ca56a4b867e77341c191f2d553",
+      "preview_sha256": "27b32bed4965d4cf923ebd82644fea8f1b7034c207e1634d9ae0f9c760a30737",
+      "status": "harness_complete_reservation_released",
+      "release_registry_sha": "36d7fd22f703c3ae372710fb0a17f2a5f54d59f8",
+      "completed_at": "2026-11-02T04:10:33+00:00",
+      "final_counts": {
+        "monograph_points": 14,
+        "medina_rubrics": 20,
+        "selected_source_readings": 23,
+        "exact_swiss_FIs": 4,
+        "science_tabs": 6,
+        "semiology_sections": 9,
+        "original_figures": 5,
+        "figure_occurrences": 8,
+        "annotation_markers": 26,
+        "windows": 36,
+        "quiz": 4
+      }
     }
   ],
   "current_limits": [
-    "Rédaction encore incomplète : sciences, examens, pharmacologie, fenêtres et glossaire en cours.",
-    "Aucune revue finale ni test de l’aperçu effectués ; aucune certification clinique."
-  ]
+    "Recherche initiale en cours, aucun cours C64 rédigé ni test final."
+  ],
+  "verification": {
+    "stage": "research",
+    "clinical_certification": false
+  }
 }

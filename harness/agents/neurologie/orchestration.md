@@ -105,3 +105,26 @@ Empreintes des instantanés de coordination :
 - `agents/nephrologie/brief.json` : `652327fab69ec705f93679b5bbfa13cffe8b2391cd2ba66ae55dfab8358d04e8`.
 
 Contrainte transmise par le parent le 2 novembre 2026 : N00 acquis par néphrologie (registre `697b30a9`), avec réservation exclusive de `chapters.json`. Aucun autre auteur, dont G05 et C86, ne modifie ce catalogue ; les futurs nouveaux cours attendent une réservation compatible. N29 final `f86f0bd29c67dba2e617cf969ed4a99cce56c275`.
+
+
+## Relevé de coordination après vérification G05 — 2026-11-02T04:17:17.773600+00:00
+
+Lecture réelle de `harness/status.json` et des trois briefs de filière. Il s’agit d’une coordination des preuves et réservations, pas d’un audit médical de leurs cours.
+
+| Filière | Leçon déclarée | Étape déclarée | Activité |
+|---|---|---|---|
+| neurologie | G05 | verification | 2026-11-02T04:08:46+00:00 |
+| endocrinologie | E02 | revue_requise | 2026-11-02T04:14:46+00:00 |
+| nephrologie | C64 | recherche | 2026-11-02T04:14:31+00:00 |
+| hematologie | C86 | redaction | 2026-11-02T04:13:36+00:00 |
+
+- **G05** : contrat technique réussi,14/20 relus,47lectures ciblées,6sciences,9sections, deux originaux décodés, navigateur1440/390 et livre24 réussis. Aperçu SHA `42d8f942ddaaba5709f87a88720e57cb5448d991785ea6a34ac4b4879b5bf8d0`. Commit de contenu `07e2dc4b` ; garde et push en cours au moment du relevé, donc pas encore achèvement enregistré. Limites de codage, épidémiologie, lectures résumés et prescription rare circonscrites dans le manifeste.
+- **Endocrinologie E02** : heartbeat de vérification plus récent que le brief préparatoire du03:39. Il annonce61fenêtres, quatre quiz, originaux décodés et reprise des trois synthèses scientifiques ; je n’en déduis pas une clôture. Priorité : derniers tests, source-binding et actualisation du brief avant complete.
+- **Néphrologie** : reçuN00 réellement lu, achèvement `2026-11-02T04:10:33+00:00`, aperçu `27b32bed4965d4cf923ebd82644fea8f1b7034c207e1634d9ae0f9c760a30737`. Le registre distant lu auSHA `b09e6e501c090e4e5b3d0369f9543f9f93f8aa94` montreN00 released etC64 active. Le motif de libération référence le commitN00 `5286d76ce75256ca56a4b867e77341c191f2d553`. Le catalogue `chapters.json` appartient désormais à la réservationC64 de la même filière ; aucune autre filière ne doit le modifier. Le dashboard peut conserverN00 jusqu’au claimC64 effectif.
+- **Hématologie C86** : heartbeat de rédaction plus récent que le brief vide/préparatoire. Parent rapporte36fenêtres et six sciences ; contenu/examens/pharmacologie intégrés, contrôles natifs encore attendus. Aucun achèvement déduit.
+
+Priorités cliniques transversales : conserver les populations et délais exacts, distinguer FI de produit et recommandation de maladie, ne pas transformer une limite assumée en assertion thérapeutique. Les causes rares peuvent être couvertes en principes et orientation sans dose inventée ; ce jugement doit rester explicitement attribué à l’auteur. Les réserves bloquantes sont les assertions non vérifiées publiées, les rubriques manquantes, les figures non recevables ou les tests/source-binding périmés ; une limite correctement neutralisée n’est pas une certification de ce qui manque.
+
+Prochaines attributions : E02 etC86 restent seuls actifs chez leurs auteurs ;C64 est réellement réservé à néphrologie. Neurologie ne peut quitterG05 avant complete réel et libération ;I64 est le candidat suivant de la file existante, à revérifier au registre avant acquisition. AucunePR/main.08:00Europe/Zurich reste une échéance de rapport, pas un arrêt.
+
+Mesures : tokens=`null`, coût=`null`, durée de réflexion modèle=`null` ; aucune inférence à partir des mots ou des heartbeats. Les dates sont des reçus/activités réels ; les nombres de sections sont déclaratifs et ne mesurent pas une qualité médicale.
