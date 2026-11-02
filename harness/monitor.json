@@ -181,11 +181,25 @@
     "proof": "harness/storage/C92-sparse-archive.json",
     "method": "Ancien worktree C92 clôturé passé en sparse-checkout, uniquement copies de base non pertinentes retirées ; preuves propres et objets Git conservés.",
     "protected_files_verified": 125,
-    "active_worktrees_changed": false
+    "active_worktrees_changed": false,
+    "additional_proof": "harness/storage/D63-sparse-archive.json",
+    "additional_protected_files_verified": 110
   },
   "e04_premature_worktree_incident": {
     "proof": "harness/agents/endocrinologie/transitions/E42-E04/worktree-premature-creation-corrected.json",
     "result": "Worktree E04 créé avant acquisition malgré ordre demandé, puis vérifié sans contenu E04 et retiré ; E04 non acquis et non démarré à ce constat.",
     "next": "D62 libéré sous registre108145b7f49ac93d912952064e239e30d494547f ; priorité acquisition E04 notifiée, start/claim encore à vérifier séparément."
+  },
+  "storage_capacity_watch": {
+    "introduced_at": "2026-11-02T16:28:33.006131+00:00",
+    "cadence_seconds": 600,
+    "source": "status.json/watch/storage_capacity",
+    "warning_below_bytes": 536870912,
+    "blocking_below_bytes": 134217728,
+    "automatic_cleanup": false,
+    "observed_and_tested": true,
+    "tests": 55,
+    "core_sha256": "7183b62415503c05acbb6ac7f0aace432c4df9dcce7afe111a08818ac149fa1f",
+    "limits": "Capacité libre observée, pas réservation de volume ni garantie de place suffisante pour un futur build ; ne change ni activité ni reçus."
   }
 }

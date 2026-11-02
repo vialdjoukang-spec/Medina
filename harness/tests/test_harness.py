@@ -67,6 +67,27 @@ class HarnessCase(unittest.TestCase):
         self.assertTrue(gate['allowed'], gate['problems'])
         self.assertIn('jamais', gate['scope'])
 
+    def test_storage_capacity_deduplicates_volume_and_warns_without_cleanup(self):
+        stat=mock.Mock(f_bavail=100000,f_frsize=4096,f_blocks=1000000)
+        with mock.patch.object(mh.os,'statvfs',return_value=stat):
+            result=mh.storage_capacity([self.root,self.home])
+        self.assertEqual(len(result['volumes']),1)
+        self.assertEqual(result['volumes'][0]['level'],'warning')
+        self.assertEqual(len(result['volumes'][0]['observed_paths']),2)
+        self.assertFalse(result['automatic_cleanup'])
+
+    def test_critical_disk_observation_closes_gate_without_inventing_author_activity(self):
+        mh.atomic(self.h.runtime/'state.json',{'agents':{'neuro':{'lesson':'G02','stage':'preparation','activity_at':mh.now()}},'events':[],'cache':{}})
+        state_before=(self.h.runtime/'state.json').read_bytes()
+        stat=mock.Mock(f_bavail=10000,f_frsize=4096,f_blocks=1000000)
+        with mock.patch.object(mh.os,'statvfs',return_value=stat):
+            result=self.h.watch()
+        self.assertFalse(result['ok'])
+        self.assertTrue(any(x['reason']=='Espace disque disponible faible sur hôte de production' and x['level']=='error' for x in result['findings']))
+        self.assertFalse(self.h.readiness()['allowed'])
+        self.assertEqual(json.loads(state_before)['agents'],self.state()['agents'])
+        self.assertFalse(result['agent_activity_refreshed'])
+
     def test_deadline_report_is_frozen_once_while_live_report_advances(self):
         self.h.config['deadline']='2020-01-01T08:00:00+01:00'
         self.h.report()
