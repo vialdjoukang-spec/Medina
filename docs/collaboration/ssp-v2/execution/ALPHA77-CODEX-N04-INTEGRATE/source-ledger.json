@@ -1,9 +1,9 @@
 {
   "code": "N04",
   "author": "astra_nephrologie",
-  "recorded_at": "2026-11-02T02:28:31.344043+00:00",
+  "recorded_at": "2026-11-02T02:38:34.292687+00:00",
   "medical_human_validation": false,
-  "current_selected_passages": 39,
+  "current_selected_passages": 41,
   "inherited_claim_records": 113,
   "swiss_fi_products_with_current_targeted_reading": 22,
   "sources": [
@@ -842,6 +842,42 @@
       "limits": "Édition2024 explicitement indiquée ; pas d’affirmation sur une édition ultérieure. Table après conclusion clinique.",
       "reading_scope": "current author: exact XML rubrics displayed and read",
       "raw_sha256": "04c9e9e5c95b2cbe2b8244872e6a6cbd5a7fc2358805e908b11d0e15784653be"
+    },
+    {
+      "id": "R-TAPER-KDIGO",
+      "url": "https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf",
+      "publisher": "KDIGO (Kidney Disease: Improving Global Outcomes) Glomerular Diseases Work Group",
+      "title": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1–S276",
+      "version": "2021 (chapitre 4 remplacé en 2025)",
+      "read_at": "2026-11-02",
+      "section": "Chapitre5, pageS156 et figure45 pageS155 visualisée dans le PDF",
+      "passage": "Dans le PDF consulté, la figure45 pageS155 mentionne une décroissance d’au moins24semaines après rémission. Le texte pageS156 décrit au contraire une exposition totale d’environ24semaines et constate l’absence d’études comparant décroissance rapide et lente chez l’adulte. Ces formulations distinctes doivent être explicitées ; elles ne fondent pas un minimum universel de24semaines de décroissance.",
+      "passage_format": "paraphrase; exact excerpt remains in external source cache",
+      "working_excerpt_sha256": "601c12650f46c56b1bd743d848f6f24e41e0e84c3d4d675ba959f474aa1c24a7",
+      "population": "Lésions minimes de l’adulte",
+      "limits": "Discordance interne entre figure et texte ; ne pas additionner les durées ni les présenter comme un minimum universel.",
+      "reading_scope": "current author: selected passage actually displayed and read; not complete-document certification",
+      "offset_char": 539782,
+      "raw_sha256": "e7e366b29b3803e030cc4cb0ce072893a0a0ae3f41213b978a3078114fe0d711",
+      "text_sha256": "6b561f62e5fd846afeebdfd33f7eae528e6085ab9abe63cc1d60a83a55c5913d"
+    },
+    {
+      "id": "R-TAPER-OGN",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10511370/",
+      "publisher": "ÖGN — Diagnostik und Therapie der Minimal Change Disease im Erwachsenenalter – 2023",
+      "title": "Diagnosis and treatment of Minimal Change Disease in adults – 2023. Wien Klin Wochenschr 2023;135(Suppl 5) (CC BY 4.0)",
+      "version": "2023",
+      "read_at": "2026-11-02",
+      "section": "Traitement initial, décroissance et durée totale",
+      "passage": "Après rémission complète, le consensus autrichien maintient la dose pendant deux semaines avant diminution. Il reconnaît l’incertitude sur la durée optimale et l’absence de schéma uniforme, rapporte une diminution de5–10mg par semaine et vise une durée totale au plus24semaines. Il discute aussi des stratégies plus courtes dont les limites de preuve sont explicites.",
+      "passage_format": "paraphrase; exact excerpt remains in external source cache",
+      "working_excerpt_sha256": "fab87093e52ed27e080860eb0f4b886da8ac8afdc7cf53cb5569df271123f0df",
+      "population": "Lésions minimes de l’adulte",
+      "limits": "Consensus européen2023 ; durée optimale incertaine, individualisation spécialisée.",
+      "reading_scope": "current author: selected passage actually displayed and read; not complete-document certification",
+      "offset_char": 16402,
+      "raw_sha256": "3a2c3fa1632060f1533d2b11eae0e8817d956ca5a075c1d40597eebe7bc9de0b",
+      "text_sha256": "582b95e45809acdefc839cbdffb166261d584eb305b920dc0158cb66117873c5"
     },
     {
       "id": "H-CIM-1",
@@ -2245,7 +2281,13 @@
       "claim": "MCD de l'adulte : glucocorticoïdes oraux à forte dose (1C) : prednisone/prednisolone 1 mg/kg/j (max 80 mg) ou 2 mg/kg un jour sur deux (max 120 mg) au moins 4 semaines et au plus 16 semaines ; décroissance commencée 2 semaines après rémission complète, sur au moins 24 semaines ; taux de rémission 80–90 %.",
       "inherited_location": "chapters/N04/N04_b.html#n04-a10",
       "inherited_evidence": "livraisons/Livraison Claude/N-07-Néphrologie/travail/CYCLE_03_N04/preuves/dossier_sources.json",
-      "source_sha256": "e7e366b29b3803e030cc4cb0ce072893a0a0ae3f41213b978a3078114fe0d711"
+      "source_sha256": "e7e366b29b3803e030cc4cb0ce072893a0a0ae3f41213b978a3078114fe0d711",
+      "status": "partially_superseded_in_current_lesson",
+      "superseded_by": [
+        "R-TAPER-KDIGO",
+        "R-TAPER-OGN"
+      ],
+      "current_correction": "The inherited duration paraphrase reflected figure45 only; the current lesson now explicitly contrasts the neighboring KDIGO text and the European total-duration recommendation."
     },
     {
       "id": "H-TX-2",
