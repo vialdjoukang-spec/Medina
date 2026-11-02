@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "G02_AUTHOR_REVISION_TECHNICAL_CHECKS_MEDICAL_REVIEW_OPEN",
+  "status": "G02_PROJECT_COMPLETE_G05_RESEARCH_ACTIVE",
   "prepared_at": "2026-11-02T01:17:05.123886+00:00",
   "agent": "Astra Neurologie",
   "model": "gpt-6-astra",
@@ -11,17 +11,15 @@
   "label": "N-05-Neurologie",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "candidate": {
-    "code": "G02",
-    "title": "Méningite au cours d’autres maladies infectieuses et parasitaires classées ailleurs",
+    "code": "G05",
+    "title": "Encéphalite, myélite et encéphalomyélite au cours d’affections classées ailleurs",
     "mode": "existing",
     "owner": "Codex",
-    "active_reservations": [
-      "Current authorized G02 integration mission"
-    ],
-    "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G02-INTEGRATE.json",
+    "active_reservations": [],
+    "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G05-INTEGRATE.json",
     "campaign77_member": true,
     "source_exists": true,
-    "authorization": "Acquired/start receipt verified by parent; exclusive worktree /workspace/Medina-neurologie, branch codex/alpha77/g02-integrate-g1"
+    "authorization": "Réservation réelle94514a6d, start et claim réussis, worktree exclusif"
   },
   "counts": {
     "specialty_existing": 57,
@@ -1004,106 +1002,25 @@
       "Private GitHub cron and local watch depend on runner/environment availability"
     ]
   },
-  "updated_at": "2026-11-02T03:04:07.812381+00:00",
+  "updated_at": "2026-11-02T03:13:19.158993+00:00",
   "current_package": {
-    "code": "G02",
-    "worktree": "/workspace/Medina-neurologie",
-    "branch": "codex/alpha77/g02-integrate-g1",
-    "preview": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html",
-    "bundle_proof": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.bundle.json",
-    "captures": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/captures",
-    "browser_report": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/browser-autonomous.json",
-    "source_readings": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/recherche_G02/sources.json",
-    "monograph14": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/monograph-14.json",
-    "matrix20": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/recherche_G02/recherche.md",
-    "source_readings_count": 39,
-    "sciences": 6,
-    "semiology_sections": 9,
-    "medical_reviews": {
-      "MED": "reviews/medical.json,self_review",
-      "LANG": "reviews/language.json,self_review",
-      "SEMIO": "reviews/semiology.json,self_review"
-    },
-    "reserves": [
-      {
-        "id": "L1",
-        "topic": "Erratum candidose du15octobre2025",
-        "status": "limite documentaire circonscrite",
-        "blocking": false,
-        "reason": "Principes du guide2025 réellement lus ; schéma chiffré douteux non publié. Ne pas prétendre avoir confronté le texte de cet erratum inaccessible."
-      },
-      {
-        "id": "L2",
-        "topic": "Produits rares et accès suisse",
-        "status": "limite réglementaire et logistique",
-        "blocking": false,
-        "reason": "FI exactes ou RCP étrangers identifiés, populations et voies distinguées. Aucune disponibilité suisse déduite d’une autorisation ou de la présence dans une liste."
-      },
-      {
-        "id": "L3",
-        "topic": "Épidémiologie suisse",
-        "status": "limite de données",
-        "blocking": false,
-        "reason": "Études hospitalières et année historique FSME identifiées. Pas d’incidence suisse contemporaine inventée ni de généralisation des cohortes étrangères."
-      },
-      {
-        "id": "L4",
-        "topic": "Codage administratif",
-        "status": "limite d’applicabilité",
-        "blocking": false,
-        "reason": "Version2024 explicitement conservée ; A87.9 et G03.0 distingués. Application suisse2026 à confirmer par règles en vigueur ; décisions cliniques indépendantes du code."
-      },
-      {
-        "id": "L5",
-        "topic": "Portée de la monographie",
-        "status": "limite pédagogique explicite",
-        "blocking": false,
-        "reason": "Principes des causes rares et traitements majeurs couverts. Les médicaments de recours sans schéma publié renvoient à une équipe spécialisée et au produit exact ; pas protocole prescriptif exhaustif de toutes les molécules tropicales."
-      },
-      {
-        "id": "L6",
-        "topic": "Profondeur des sources et autonomie",
-        "status": "limite de preuve",
-        "blocking": false,
-        "reason": "CHUV et essai valaciclovir consultés au niveau résumé, autres sections précisées individuellement. Relecture auteur réelle, sans validation indépendante ou humaine ; lire le cours ne prouve pas compétence technique."
-      }
-    ],
-    "next_lesson_allowed": false,
-    "commit": "37a113894d55e7e0d5d3a1952d731fa689f641fb",
-    "pushed": false,
-    "guard": "running exact commit check",
-    "review_mode": "self_review, avec empreintes ; aucune validation humaine ou indépendance revendiquée",
-    "current_revision": "39 lectures,14/20 revus,contrat et navigateur réussis ; commit local, push après garde",
-    "versions": [
-      {
-        "commit": "a35d56e70fe8b1739816a6b65c97753327bd130d",
-        "pushed": true,
-        "source_readings": 21,
-        "preview_url": "https://github.com/vialdjoukang-spec/Medina/blob/a35d56e70fe8b1739816a6b65c97753327bd130d/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html",
-        "bundle_sha256": "f54ba6854dbfd278ac312a5ed71a0a140d223993b6ec540afc9318c545b79977"
-      },
-      {
-        "commit": "3a7c7aa23d769e00f2e4d1e8beba6050d9a8dc6b",
-        "pushed": true,
-        "source_readings": 23,
-        "preview_url": "https://github.com/vialdjoukang-spec/Medina/blob/3a7c7aa23d769e00f2e4d1e8beba6050d9a8dc6b/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html",
-        "bundle_sha256": "ffd0198389ce1d5ed3fa18d1107facde7b26bfdf6e4069101b863ee6829ef49d"
-      },
-      {
-        "commit": "4f92780d038dcb73cba79d24766659656c5ad27f",
-        "pushed": true,
-        "source_readings": 26,
-        "preview_url": "https://github.com/vialdjoukang-spec/Medina/blob/4f92780d038dcb73cba79d24766659656c5ad27f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html",
-        "bundle_sha256": "02c2f4155bd30e94bed7288cf4b38ed0be21e442285125725189a7cdbc568f79"
-      }
-    ],
-    "bundle_sha256": "76c59b4fba209a09fb186f6a5554541e81397722633547ce89a3b61ecda435db",
-    "monograph14_reviewed": 14,
-    "matrix20_reviewed": 20,
-    "source_binding": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/source-binding.json",
-    "contract": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/contract-check.json",
-    "blocking_findings": [],
-    "clinical_certification": false
+    "code": "G05",
+    "worktree": "/workspace/Medina-neurologie-G05",
+    "branch": "codex/alpha77/g05-integrate-g1",
+    "reservation_acquired": true,
+    "start_receipt": "/workspace/Medina-neurologie-G05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G05-INTEGRATE/start.json",
+    "claim": true,
+    "stage": "recherche",
+    "source_readings_count": 0,
+    "monograph14_reviewed": 0,
+    "matrix20_reviewed": 0,
+    "clinical_certification": false,
+    "blocking_findings": [
+      "Ancienne anatomie SVG sans provenance recevable",
+      "Trois sous-onglets scientifiques seulement, sémiologie fondamentale absente",
+      "FI exactes et sources héritées à relire",
+      "Sous-codes et causes non virales à couvrir sans réduire la profondeur"
+    ]
   },
   "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
   "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
@@ -1113,5 +1030,126 @@
     "Limites documentaires circonscrites dans lesrapports, jugées nonbloquantes pour le contenu effectivement publié.",
     "Tokens/coûts non exposés ; aucune mesure inventée.",
     "Prochaineleçon conditionnée à clôture enregistrée et réservation distante actualisée."
+  ],
+  "completed_lessons": [
+    {
+      "code": "G02",
+      "worktree": "/workspace/Medina-neurologie",
+      "branch": "codex/alpha77/g02-integrate-g1",
+      "preview": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html",
+      "bundle_proof": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.bundle.json",
+      "captures": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/captures",
+      "browser_report": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/browser-autonomous.json",
+      "source_readings": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/recherche_G02/sources.json",
+      "monograph14": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/monograph-14.json",
+      "matrix20": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/recherche_G02/recherche.md",
+      "source_readings_count": 39,
+      "sciences": 6,
+      "semiology_sections": 9,
+      "medical_reviews": {
+        "MED": "reviews/medical.json,self_review",
+        "LANG": "reviews/language.json,self_review",
+        "SEMIO": "reviews/semiology.json,self_review"
+      },
+      "reserves": [
+        {
+          "id": "L1",
+          "topic": "Erratum candidose du15octobre2025",
+          "status": "limite documentaire circonscrite",
+          "blocking": false,
+          "reason": "Principes du guide2025 réellement lus ; schéma chiffré douteux non publié. Ne pas prétendre avoir confronté le texte de cet erratum inaccessible."
+        },
+        {
+          "id": "L2",
+          "topic": "Produits rares et accès suisse",
+          "status": "limite réglementaire et logistique",
+          "blocking": false,
+          "reason": "FI exactes ou RCP étrangers identifiés, populations et voies distinguées. Aucune disponibilité suisse déduite d’une autorisation ou de la présence dans une liste."
+        },
+        {
+          "id": "L3",
+          "topic": "Épidémiologie suisse",
+          "status": "limite de données",
+          "blocking": false,
+          "reason": "Études hospitalières et année historique FSME identifiées. Pas d’incidence suisse contemporaine inventée ni de généralisation des cohortes étrangères."
+        },
+        {
+          "id": "L4",
+          "topic": "Codage administratif",
+          "status": "limite d’applicabilité",
+          "blocking": false,
+          "reason": "Version2024 explicitement conservée ; A87.9 et G03.0 distingués. Application suisse2026 à confirmer par règles en vigueur ; décisions cliniques indépendantes du code."
+        },
+        {
+          "id": "L5",
+          "topic": "Portée de la monographie",
+          "status": "limite pédagogique explicite",
+          "blocking": false,
+          "reason": "Principes des causes rares et traitements majeurs couverts. Les médicaments de recours sans schéma publié renvoient à une équipe spécialisée et au produit exact ; pas protocole prescriptif exhaustif de toutes les molécules tropicales."
+        },
+        {
+          "id": "L6",
+          "topic": "Profondeur des sources et autonomie",
+          "status": "limite de preuve",
+          "blocking": false,
+          "reason": "CHUV et essai valaciclovir consultés au niveau résumé, autres sections précisées individuellement. Relecture auteur réelle, sans validation indépendante ou humaine ; lire le cours ne prouve pas compétence technique."
+        }
+      ],
+      "next_lesson_allowed": true,
+      "commit": "a402352904ace3854e886740d97759a7de907db6",
+      "pushed": true,
+      "guard": "passed at exact final commit",
+      "review_mode": "self_review, avec empreintes ; aucune validation humaine ou indépendance revendiquée",
+      "current_revision": "Achèvement du projet G02 enregistré, reçu poussé et SHA distant vérifié ; pas de fusion main",
+      "versions": [
+        {
+          "commit": "a35d56e70fe8b1739816a6b65c97753327bd130d",
+          "pushed": true,
+          "source_readings": 21,
+          "preview_url": "https://github.com/vialdjoukang-spec/Medina/blob/a35d56e70fe8b1739816a6b65c97753327bd130d/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html",
+          "bundle_sha256": "f54ba6854dbfd278ac312a5ed71a0a140d223993b6ec540afc9318c545b79977"
+        },
+        {
+          "commit": "3a7c7aa23d769e00f2e4d1e8beba6050d9a8dc6b",
+          "pushed": true,
+          "source_readings": 23,
+          "preview_url": "https://github.com/vialdjoukang-spec/Medina/blob/3a7c7aa23d769e00f2e4d1e8beba6050d9a8dc6b/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html",
+          "bundle_sha256": "ffd0198389ce1d5ed3fa18d1107facde7b26bfdf6e4069101b863ee6829ef49d"
+        },
+        {
+          "commit": "4f92780d038dcb73cba79d24766659656c5ad27f",
+          "pushed": true,
+          "source_readings": 26,
+          "preview_url": "https://github.com/vialdjoukang-spec/Medina/blob/4f92780d038dcb73cba79d24766659656c5ad27f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html",
+          "bundle_sha256": "02c2f4155bd30e94bed7288cf4b38ed0be21e442285125725189a7cdbc568f79"
+        },
+        {
+          "commit": "37a113894d55e7e0d5d3a1952d731fa689f641fb",
+          "pushed": true,
+          "source_readings": 39,
+          "preview_url": "https://github.com/vialdjoukang-spec/Medina/blob/37a113894d55e7e0d5d3a1952d731fa689f641fb/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html",
+          "bundle_sha256": "76c59b4fba209a09fb186f6a5554541e81397722633547ce89a3b61ecda435db"
+        },
+        {
+          "commit": "a402352904ace3854e886740d97759a7de907db6",
+          "pushed": true,
+          "source_readings": 39,
+          "preview_url": "https://github.com/vialdjoukang-spec/Medina/blob/a402352904ace3854e886740d97759a7de907db6/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html",
+          "bundle_sha256": "76c59b4fba209a09fb186f6a5554541e81397722633547ce89a3b61ecda435db",
+          "note": "Reçu d’achèvement et schéma explicite des vingt rubriques ; contenu et aperçu inchangés depuis37a11389."
+        }
+      ],
+      "bundle_sha256": "76c59b4fba209a09fb186f6a5554541e81397722633547ce89a3b61ecda435db",
+      "monograph14_reviewed": 14,
+      "matrix20_reviewed": 20,
+      "source_binding": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/source-binding.json",
+      "contract": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/contract-check.json",
+      "blocking_findings": [],
+      "clinical_certification": false,
+      "completion_receipt": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/harness-completion.json",
+      "completed_at": "2026-11-02T03:10:39+00:00",
+      "released": true,
+      "release_registry_sha": "e6b67278a7bf0c6aac10a77ab3345825995633b2"
+    }
   ]
 }
