@@ -1,0 +1,17 @@
+# G06 — Abcès et granulome intracrâniens et intrarachidiens
+
+[Aperçu autonome](G06-apercu-autonome.html), SHA256 `d97344210d6000cd5ca052f2f077d3f762d7d17dafc9ddceaf3985cef2ab425e`.
+
+19 lectures ciblées réelles :17 sources cliniques/référentielles et2 provenances/droits/originaux. Sources suisses : protocole local Spital Thurgau 2026, six FI exactes datées 2024–2026, cohorte bâloise ancienne et PROFILES 2017 ; guide européen ESCMID 2024, consensus EANS 2025 et références ciblées. Sources complètes horsGit, paraphrases seulement. [Lectures et limites](recherche_G06/sources.json).
+
+Porte Betta réellement réussie avant première rédaction G06, sept sources initiales encore inchangées : [preuve](prewriting-gate.json). [14 points](monograph-14.json), [20 rubriques](matrix-20.json) : question couverte avec gaps nationaux/administratifs explicites, pas prétention de données trouvées. Six sciences, sémiologie en tête avec neuf sections exactes,37 fenêtres,4 quiz. Deux originaux humains du domaine public, pixels inchangés, quatre annotations françaises chacun ; six diagrammes conceptuels non anatomiques. Figure IRM NC-ND refusée. [Figures](figures.json).
+
+Les écarts protocole/FI restent visibles : fréquence ceftriaxone/métronidazole, durée prolongée surveillée, composants co-amoxicilline, limite rénale céfépime, vancomycine2 g ≥200 min, interaction méropénème-valproate. Rachis et cerveau ne partagent pas une durée universelle. Pas d’attente automatique24 heures, pas PL réflexe, pas prophylaxie antiépileptique primaire habituelle.
+
+Relecture clinique de46 sections et37 fenêtres : [journal](clinical-review-completed.json). Le premier navigateur a révélé quatre IDs panneau/section dupliqués, corrigés avant binding ; [échec conservé](before-native-id-correction/browser-autonomous.json), reconstruction et tests rejoués. Parcours réels1440/390 :37 fenêtres,6 sciences/9 sections,4 quiz,Livre 24,Entrée/Espace,2 images décodées et dernières annotations. [Parcours](browser-autonomous.json), [fenêtres](browser-all-windows.json), [annotations](browser-figure-rows.json), [captures inspectées](visual-self-review.json). HTTP local éphémère, toutes autres requêtes bloquées, aucun déploiement public attesté.
+
+Les revues [médicale](reviews/medical.json), [langue](reviews/language.json), [sémiologie](reviews/semiology.json), [ordinateur](reviews/visual_desktop.json) et [mobile](reviews/visual_mobile.json) sont des `self_review` nommées de Sol. Aucun audit indépendant ni certification médicale humaine. Les nombres ne mesurent pas la qualité clinique ; tokens/coût non exposés. [Binding final](source-binding.json).
+
+[Limites](documented-limits.json) : incidence suisse actuelle et obligations/droits spécifiques non établis ; EANS limité à spondylodiscite de novo, formes spinales rares sans protocole uniforme ; DGN 2021 échue utilisée par extraits et hors fondement thérapeutique ; données de petites séries bornées. Les contrôles fixes mobiles peuvent recouvrir temporairement du texte accessible au défilement. Autres cours et jauges hérités hors audit.
+
+Reproduction : `python3 test_v7.py --static G06`, `tests/audit_sciences.py` avec base8a512893acbab9caa0dcfdd0e8682a44ea72fda6, projection Betta locale, `MEDINA_OUT=<dossier> python3 build_front.py --fragment S08`, bundle natif puis scripts `browser-*.cjs`. Branche réservée pour revue uniquement, aucune PR ni main. Audit différé — revue IA, distincte d’une validation médicale humaine.

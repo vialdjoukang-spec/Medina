@@ -1,0 +1,979 @@
+{
+  "code": "G06",
+  "title": "G06 — Abcès et granulome intracrâniens et intrarachidiens",
+  "author": "sol_neurologie",
+  "harness_agent_id": "astra_neurologie",
+  "model": "gpt-6.1-sol",
+  "reasoning": "high",
+  "recorded_at": "2026-11-02T13:43:57.193458+00:00",
+  "branch": "codex/alpha77/g06-integrate-g1",
+  "base": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+  "sources": [
+    {
+      "id": "R1",
+      "title": "Directives antimicrobiennes STGAG",
+      "url": "https://www.stgag.ch/ext/tx_docs/stgag-antibiotika-richtlinien-6a86f7bc9783e.pdf",
+      "publisher": "Spital Thurgau AG",
+      "read_at": "2026-11-02",
+      "section": "Introduction et page22, abcès cérébral et épidural, spontané/postopératoire",
+      "passage": "Guide local : cerveau communautaire ceftriaxone2g×2 IV + métronidazole500mg×3 IV ; postopératoire céfépime2g×3 IV + vancomycine20mg/kg q12h ; épidural spontané co-amoxicilline2,2g×4 IV, postopératoire même association céfépime/vancomycine. Concertation neurochirurgie/infectiologie, durée individualisée.",
+      "population": "Contexte hospitalier suisse local, recommandations STGAG2026.",
+      "limits": "Adultes du réseau hospitalier suisse ; non directive nationale, non extrapolable sans adaptation au rein/foie/âge/terrain. Différences FI conservées.",
+      "source_sha256": "18ac406ba3a9546f02bef0b175e9a959b1d4d77abf25b95f71de1bf27cf225b5",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R2",
+      "title": "ESCMID guideline: brain abscess in children and adults",
+      "url": "https://vbn.aau.dk/ws/portalfiles/portal/649326266/Bodilsen_et_al._2024_._European_society_of_Clinical_Microbiology_and_Infectious_Diseases_guidelines_on_diagnosis_and_treatment_of_brain_abscess_in_children_and_adults.pdf",
+      "publisher": "European Society of Clinical Microbiology and Infectious Diseases / CMI",
+      "read_at": "2026-11-02",
+      "section": "Couverture/licence, introduction, tableau1 dix recommandations, Q5/tableaux3–4 et pratique générale p83–84 ; pas tous suppléments",
+      "passage": "IRM diffusion/ADC et T1 avant/après contraste ; scanner injecté si IRM indisponible. Prélèvement chirurgical dès que possible sauf toxoplasmose. Report antibiotique seulement chez sélection non grave et prélèvement rapide, de préférence<24h, pas attente systématique. C3G+metro communautaire immunocompétent ; sévèrement immunodéprimé ajouter TMP-SMX/voriconazole ; postopératoire meropenem+vanco ou linezolide.6–8semaines IV après aspiration/traitement conservateur ;4semaines après excision seulement avis expert. Pas de recommandation de relais oral précoce, pas de consolidation orale habituelle après≥6semaines IV hors exceptions. Corticoïdes pour œdème sévère/menace engagement, pas prophylaxie antiépileptique primaire habituelle. CRP/PCT/leucocytes non exclusifs ; PL relativement contre-indiquée/faible rendement. Pus cultures aérobie/anaérobie/histopathologie, méthodes moléculaires si cultures négatives ; hémocultures. IRM immédiate si aggravation, sinon p.ex toutes2semaines ; rehaussement3–6mois non seul motif prolongation. Concentrations LCR≠pus.",
+      "population": "Abcès cérébraux des enfants et adultes dans un guide européen ; doses détaillées du cours limitées à l’adulte.",
+      "limits": "Enfants/adultes, guide européen ; lecture ciblée, preuves souvent observationnelles et certitude différemment libellée dans tableau1/corps. Pas de seuil de taille unique ni dose de stéroïde inventée. Incidence0,4–1,3/100000/an européenne/étrangère, non suisse.",
+      "source_sha256": "4208ce56e45153a148e554847b07621a1702f06af9470211c2b1893994f898b9",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R3",
+      "title": "EANS Delphi: de novo non-specific spinal infections",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11763570/",
+      "publisher": "EANS Spine Section / Brain and Spine",
+      "read_at": "2026-11-02",
+      "section": "Résumé/introduction/méthodes, tableaux1,2,4,5 et fin tableau3",
+      "passage": "Spondylodiscite de novo : IRM région suspecte avant/après contraste, hémocultures avant antibiotiques et prélèvement tissulaire lorsque indiqué ; IRM tout rachis77% accord sans consensus. Déficit nouveau, MRC<4/5, signes médullaires ou troubles vésicosphinctériens : décompression. Empyème épidural avec déficit indication claire, sans déficit pas consensus à opérer presque tous. Sepsis : hémocultures puis antibiothérapie sans délai. Durée6semaines non compliquée,12compliquée avec≥2semaines IV dans ce consensus, non règle de tout abcès spinal ; réévaluation clinique/CRP, IRM anomalies peuvent persister.",
+      "population": "Adultes atteints de spondylodiscite non spécifique de novo, hors extrapolation à toutes les collections spinales.",
+      "limits": "Adultes spondylodiscite non spécifique de novo ; non protocole de toutes collections isolées, intramédullaires, tuberculeuses ou postopératoires. Consensus experts≠essai randomisé.",
+      "source_sha256": "d179a14998e5c1bcaa2e4fd9ffc6a3f1ddd4de7e4016cab99fc408ae51d0c21c",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R4",
+      "title": "Hirnabszess, DGN S1, source échue",
+      "url": "https://register.awmf.org/assets/guidelines/030-108l_S1_Hirnabszess_2021-04-abgelaufen.pdf",
+      "publisher": "Deutsche Gesellschaft für Neurologie / AWMF",
+      "read_at": "2026-11-02",
+      "section": "Définitions1, clinique2 partielle, empyèmes5.6 via extraits du service acquis18.09.2026",
+      "passage": "Cérébrite focale évoluant vers collection purulente et capsule conjonctive ; voies contiguë, hématogène, directe. Épidural entre os et dure-mère, sous-dural diffusion en nappe. Empyème sous-dural peut se dégrader en heures et impose avis/évacuation neurochirurgicale urgente.",
+      "population": "Source allemande2021 de définition et d’empyèmes, devenue échue.",
+      "limits": "Guide allemand expiré ; PDF direct challenge Anubis non lu, seuls extraits indiqués réellement lus. Pas fondement actuel de doses, seuil2,5cm ou prophylaxie.",
+      "source_sha256": "9c69227be16887f8dd1759c661efc0eb7e8878998e88dc006664ffea59e69e5b",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R5",
+      "title": "Ceftriaxon Labatec, information professionnelle",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680598760031",
+      "publisher": "Swissmedic/AIPS via AmiKo",
+      "read_at": "2026-11-02",
+      "section": "Composition, indications, doses adultes, durée, rein/foie, contre-indications calcium, grossesse/allaitement, date ; propriétés/effets, mécanisme d’action relu2026-11-02T13:30:19.154383+00:00",
+      "passage": "Flacon2g IV,166mg sodium. Adulte et>12ans,1–2g/j habituels, cas sévères jusqu’à4g en dose unique quotidienne. ClCr<10ml/min ou dialyse max2g/j. Ne pas diluer/administrer avec solutions calciques, rinçage si séquentiel adulte ; perfusion≥30min. Grossesse indication formelle, allaitement à interrompre si traitement indispensable selon cette FI.",
+      "population": "Adultes et enfants>12ans selon cette notice ; exemples du cours réservés à l’adulte.",
+      "limits": "Produit exact, non indication abscess nommée ; STG2g q12h fréquence différente, protocole hospitalier spécialisé non prétendu conforme en fréquence à FI. Pas adaptation unique si atteinte combinée foie/reins.",
+      "source_sha256": "4de7a15646144d43d03647d5f55288eb8b37ee4e6b8442c84159212ce8086246",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R6",
+      "title": "Metronidazol i.v. B.Braun, information professionnelle",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680480180251",
+      "publisher": "Swissmedic/AIPS via AmiKo",
+      "read_at": "2026-11-02",
+      "section": "Composition, indications, doses, durée, rein/foie, contre-indications, neurotoxicité, interactions, grossesse/allaitement, date ; propriétés/effets, mécanisme d’action relu2026-11-02T13:30:19.154383+00:00",
+      "passage": "500mg/100ml,311mg sodium. FI : charge15mg/kg puis7,5mg/kgq6h3jours puisq12h, max4g/j ; durée habituelle5–7j, normalement≤10j, prolongation exceptionnellement justifiée avec contrôles hématologiques/neurocliniques. STG500mg×3 distinct. Neurotoxicité ataxie/paresthésies/confusion/convulsions implique interruption et réévaluation. Coumarines INR, lithium ; éviter alcool pendant et lendemain. Premier trimestre et syndrome Cockayne contre-indiqués ; foie sévère réduire/surveiller ; ClCr<10 accumulation métabolites.",
+      "population": "Adultes et enfants≥12ans pour les doses citées de cette notice ; exemples du cours réservés à l’adulte.",
+      "limits": "Produit IV exact ; durée6–8semaines de traitement de l’abcès selon ESCMID ne supprime pas précautions de prolongation FI, pas conversion orale automatique.",
+      "source_sha256": "46f1a3dac54b61ebf730dce7840ceaf4072d37c609ddaa3ab1921110abe6738f",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R7",
+      "title": "Spinal epidural abscess: prospective36patients",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3229722/",
+      "publisher": "Zimmerer etal., University Hospital Basel, Eur Spine J",
+      "read_at": "2026-11-02",
+      "section": "Résumé, introduction, méthodes, symptômes, microbiologie ciblée et évolution/tableau6",
+      "passage": "Série bâloise36patients2004–2008,16primaires20secondaires ; douleur rachidienne/tendresse, fièvre parfois absente, signes moteurs/sensitifs, IRM injectée. S.aureus important. Collaboration chirurgicale et anti-infectieuse, adaptation aux prélèvements.",
+      "population": "36patients d’une cohorte hospitalière bâloise ancienne,2004–2008.",
+      "limits": "Petite cohorte suisse ancienne sélectionnée ; nombres S.aureus et récupérations discordants résumé/corps/tableau, pas pourcentages stables ni incidence nationale repris. XML direct échoué, texte extrait du service effectivement lu.",
+      "source_sha256": "dba2e521d1519b9fac56e25af5ca0dc046441252d9e86dc1ce10ca8b545c7f9a",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R8",
+      "title": "Primary spinal epidural abscess: MRI characteristics",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11487751/",
+      "publisher": "Jiang etal., BMC Medical Imaging",
+      "read_at": "2026-11-02",
+      "section": "Résumé, méthodes, résultats ciblés, légendes1–4, éthique et licence XML",
+      "passage": "27patients chinois sélectionnés avec confirmation chirurgicale/pathologique ; phlegmon peut rehausser homogène, abcès peut avoir couronne ; aspect IRM dépend stade. Donnée descriptive ne donne pas sensibilité générale.",
+      "population": "27patients chinois sélectionnés, confirmation opératoire et pathologique.",
+      "limits": "Population chinoise sélectionnée ; figures CC BY-NC-ND4.0 REFUSÉES pour réutilisation selon ImageFinder. Paraphrases factuelles uniquement, aucune image copiée.",
+      "source_sha256": "5f1e404455e29ece4b1880035100ebe012fd1c3313d7074df8eb3386001c8061",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R9",
+      "title": "Granulomatous diseases of the CNS: neuroradiological differential diagnosis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13522057/",
+      "publisher": "Weidauer / Klingebiel, Clinical Neuroradiology",
+      "read_at": "2026-11-02",
+      "section": "Résumé, introduction, histologie et démarche générale ciblées",
+      "passage": "Granulomes réponse persistante à antigène, macrophages et cellules T ; épithélioïdes, caséeux/non caséeux/nécrosants/corps étranger selon cause. Causes infectieuses et inflammatoires ; imagerie seule insuffisante, tissu et recherche d’agent peuvent orienter.",
+      "population": "Revue des maladies granulomateuses du système nerveux central, infectieuses et non infectieuses.",
+      "limits": "Revue européenne, pas essai ni guide de doses ; toutes maladies granulomateuses SNC ne relèvent pas de G06 ; pas critères contestables de sous-types repris.",
+      "source_sha256": "3d8a16729e0a208ec70e432c9f0de47dce65cec73c0533e2b9d95495057bd2f7",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R10",
+      "title": "Co-Amoxicillin Labatec, information professionnelle",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680685110015",
+      "publisher": "Swissmedic/AIPS via AmiKo",
+      "read_at": "2026-11-02",
+      "section": "Composition, indications, doses adultes, rein, contre-indications, surveillance, grossesse/allaitement, date ; propriétés/effets, mécanisme d’action relu2026-11-02T13:30:19.154383+00:00",
+      "passage": "2,2g=2g amoxicilline+0,2g clavulanate ;1,2g=1g+0,2g, deux flacons1,2g≠un2,2g. Adultes/>40kg grave2,2g3–4/j IV≥30min. Si ClCr<30 ne pas2,2g ; tableau10–30 charge1,2g puis600mgq12h, <10 puis600q24h, dose supplémentaire dialyse. Allergie bêta-lactame ou antécédent ictère/hépatopathie liée contre-indiquent ; contrôles rein/foie/sang/INR prolongés. Grossesse nécessité absolue ; pas allaiter selon cette FI.",
+      "population": "Adultes et patients>40kg pour les doses citées ; adaptation rénale du produit exact.",
+      "limits": "Produit exact ; seuil30 formulation prose/tableau à réconcilier individuellement, pas arrondi inventé. Indication épidurale vient STG et non libellé spécifique FI.",
+      "source_sha256": "146d59f4078fdc5da21df180ce9bff404248530224a9e815b4fe470ee4d29884",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R11",
+      "title": "Céfépime OrPha, information professionnelle",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680696420028",
+      "publisher": "Swissmedic/AIPS via AmiKo",
+      "read_at": "2026-11-02",
+      "section": "Composition, indications, dose adulte, principe adaptation rénale et neurotoxicité, date ; propriétés/effets, mécanisme d’action relu2026-11-02T13:30:19.154383+00:00",
+      "passage": "Flacon2g IV ; adulte/>40kg infections très graves2gq8h max6g/j ; adaptation si ClCr≤50ml/min. Encéphalopathie,myoclonies,convulsions/état non convulsif, surtout rein/âge ; peut survenir même dose usuelle si insuffisance rénale.",
+      "population": "Adultes et patients>40kg pour la dose sévère citée.",
+      "limits": "Produit exact ; tableau rénal complet non relu donc pas chiffres de paliers publiés ; dose STG postopératoire attribuée à protocole, pas indication adulte méningite de l’annexe pédiatrique.",
+      "source_sha256": "412ab20a8784efce483f557fe0954a66b77c0e62e6364d0b615920fd3bcf14b2",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R12",
+      "title": "Meropenem Fresenius, information professionnelle",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680624190016",
+      "publisher": "Swissmedic/AIPS via AmiKo",
+      "read_at": "2026-11-02",
+      "section": "Posologie adulte, adaptation rénale, interaction valproate, date ; propriétés/effets, mécanisme d’action relu2026-11-02T13:30:19.154383+00:00",
+      "passage": "Adulte usuel500mg/1gq8h,6g/j max ;2gq8h adulte méningite expérience très limitée. Réduire/espacer si ClCr<51. Valproate baisse60–100% en environ2j : association à éviter, augmentation simple ne suffit pas à contrôler interaction.",
+      "population": "Adultes pour les doses générales et interaction citées ; annexe pédiatrique non extrapolée.",
+      "limits": "Produit exact ; tableau abcès cérébral de l’annexe SwissPedDose est pédiatrique et ne prouve pas dose adulte G06. Pas dose adulte abcès inventée ni tous effets relus.",
+      "source_sha256": "b2bc5ef5874e42ac7a7809dc38b453c516c9524c02b8037377170fcc539b4af8",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R13",
+      "title": "Vancomycine Sandoz IV, information professionnelle",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680572360035",
+      "publisher": "Swissmedic/AIPS via AmiKo",
+      "read_at": "2026-11-02",
+      "section": "Composition, indication, doses≥12ans, rein/TDM, perfusion, toxicités rénale/auditive/cutanée, grossesse/allaitement, date ; propriétés/effets, mécanisme d’action relu2026-11-02T13:30:19.154383+00:00",
+      "passage": "Les flacons contiennent500mg ou1g. Dès12ans, la FI décrit15à20mg/kg toutes les8à12heures, avec un maximum de2g par dose. Le schéma Spital Thurgau20mg/kg toutes les12heures se situe dans cette plage, sous réserve du patient. La fonction rénale, la dialyse et les concentrations imposent une adaptation individuelle. La perfusion dure au moins60minutes et respecte un maximum de10mg/min : pour2g, retenir au moins200minutes. Ne pas administrer en bolus. Surveiller le rein, les concentrations et l’hémogramme lors du traitement prolongé. La toxicité rénale et auditive, un acouphène ou une réaction cutanée sévère doivent être évalués ; la réaction sévère impose l’arrêt selon la FI. Grossesse et allaitement : nécessité absolue selon cette notice.",
+      "population": "Patients≥12ans selon la notice ; exemples du cours réservés à l’adulte, avec suivi spécialisé.",
+      "limits": "Produit IV exact, voie orale destinée notamment C.difficile non substituable à IV systémique ; dose de charge et cible AUC numérique non reproduites sans arbitrage.",
+      "source_sha256": "35ffe57136d0b93e7585e03b138325ae4bc0b1d0616d47140b1696af8395daf6",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R14",
+      "title": "MRC muscle scale / Aids to examination peripheral nervous system",
+      "url": "https://www.ukri.org/councils/mrc/facilities-and-resources/find-an-mrc-facility-or-resource/mrc-muscle-scale/",
+      "publisher": "Medical Research Council / UKRI",
+      "read_at": "2026-11-02",
+      "section": "Page officielle provenance/licence et manuel introduction/motor testing ; page PDF7 (page imprimée1) rendue et inspectée, grades0–5 confirmés malgré pertes OCR",
+      "passage": "Force0pas contraction,1ébauche,2mouvement pesanteur supprimée,3contre pesanteur,4contre pesanteur/résistance,5normale. Isoler action, éviter compensations/fatigue, comparer. Pas délai d’imagerie urgente pour compléter long examen.",
+      "population": "Examen moteur clinique, échelle ordinale de force ; pas critère étiologique.",
+      "limits": "Échelle ordinale et référence d’examen moteur, pas diagnostic étiologique ; paraphrase française. ©Crown, manuel OGL3, Used with the permission of the Medical Research Council ; aucune image anatomique du manuel reproduite.",
+      "source_sha256": "fbfac32f049741d41241a9c7dc01aa0d58360234b747bd5ab56647c3d8bb5ee8",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R15",
+      "title": "ICD-10-GM G00–G09, G06/G07",
+      "url": "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-g00-g09.htm",
+      "publisher": "BfArM",
+      "read_at": "2026-11-02",
+      "section": "G06.0, G06.1, G06.2 et exclusions G07*",
+      "passage": "G06.0 intracrânien cérébral et épi/extra/sous-dural ;G06.1 intrarachidien médullaire et épi/extra/sous-dural ;G06.2 extra/sous-dural sans précision. Agent B95–B98 si identifié selon note. Maladies classées ailleurs notamment tuberculose/parasitoses/amibiase/gonocoque : codage causal et G07* lorsque approprié.",
+      "population": "Classification administrative allemande GM2024, pas protocole thérapeutique.",
+      "limits": "Classification officielle allemande2024 ; pas certification suisse2026 de facturation, code administratif ne décide ni traitement ni causalité.",
+      "source_sha256": "068d43bdeed142b724b93b95885e417ba8f933b89d4134d123a0ea975e7207d7",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R16",
+      "title": "Item151, méningites/méningoencéphalites/abcès",
+      "url": "https://www.cen-neurologie.fr/second-cycle/i-connaissances/chapitre-24-item-151-meningites-meningo-encephalites-abces-cerebral-chez-ladulte-et-lenfant",
+      "publisher": "Collège des enseignants de neurologie",
+      "read_at": "2026-11-02",
+      "section": "Abcès : clinique sous-aiguë, agents/porte entrée, prélèvement et traitement ciblé, points finaux dans leur contexte",
+      "passage": "Céphalée sous-aiguë, hypertension intracrânienne, déficit/crises ; fièvre inconstante. Streptocoques oraux/anaérobies ORL/dentaires, staphylocoques post-traumatiques/postop. Prélèvement lorsque possible puis antibiothérapie adaptée et traitement du foyer.",
+      "population": "Support pédagogique de neurologie adulte et enfant, passages abcès ciblés.",
+      "limits": "Support pédagogique français ; pas fondement suisse de doses, ni descriptions d’images générées automatiquement, ni recommandation PL de la partie méningite transposée à abcès.",
+      "source_sha256": "22d673956c613ddb437adc2631c306c0fa45f868da7ceae32e9373e1144bb304",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R17",
+      "title": "PROFILES, SSP neurologiques et urgences",
+      "url": "https://www.siwf.ch/files/pdf24/profiles_2017-broschuere.pdf",
+      "publisher": "Joint Commission of the Swiss Medical Schools / SIWF",
+      "read_at": "2026-11-02",
+      "section": "SSP96–105, urgences205/207, rappels EPA6d",
+      "passage": "Relier101céphalée,102cognition,103parésie,104sensibilité,105crises,205déficit neurologique aigu et207céphalée sévère/méningisme aux décisions G06.",
+      "population": "Étudiants en médecine et objectifs cliniques suisses, document2017.",
+      "limits": "Référentiel suisse pédagogique2017 ; rapprochement pédagogique local, pas table officielle CIM/SSP ni preuve d’une miseàjour2026.",
+      "source_sha256": "3c07db8e95b8aec160a2c19682b084d15cc7d9eea4fb8f757202c31b8b27177f",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R18",
+      "title": "Gray1918, planche1196",
+      "url": "https://commons.wikimedia.org/wiki/File:Gray1196.png",
+      "publisher": "Gray / Carter, scan Wikimedia Commons",
+      "read_at": "2026-11-02",
+      "section": "Page fichier : description, source1918, auteur Carter, licence domaine public scan ; original PNG réellement inspecté",
+      "passage": "Anatomie normale humaine historique : méninges, os crânien, sinus sagittal supérieur. Pixels inchangés, repères français adjacents prévus, pas illustration d’un abcès.",
+      "population": "Anatomie crânienne normale, planche historique humaine, sans maladie représentée.",
+      "limits": "Original humain historique du domaine public ; scan mécanique PD, protection limitée à100ans après la mort de l’auteur et publication USavant1931. Ni carte opératoire ni lésion clinique représentée.",
+      "source_sha256": "dc7ed62021eeff9cab357368ee6b6e18dab113b6ff4bb103e057dfdc1c7ed482",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    },
+    {
+      "id": "R19",
+      "title": "Gray1918, planche764",
+      "url": "https://commons.wikimedia.org/wiki/File:Gray764.png",
+      "publisher": "Gray / Carter, scan Wikimedia Commons",
+      "read_at": "2026-11-02",
+      "section": "Page fichier : description, source1918, auteur Carter, licence domaine public scan ; original PNG réellement inspecté",
+      "passage": "Anatomie normale humaine historique : voie motrice, capsule interne et décussation, modifiée de Poirier. Pixels inchangés, repères français adjacents prévus, pas illustration d’un abcès.",
+      "population": "Voie motrice normale, planche historique humaine modifiée de Poirier.",
+      "limits": "Original humain historique du domaine public ; scan mécanique PD, protection limitée à100ans après la mort de l’auteur et publication USavant1931. Ni carte opératoire ni lésion clinique représentée.",
+      "source_sha256": "fad33949feb30902f1f7fd54b1036ae2223357b40541a9b796cd32822fbecef5",
+      "reader": "sol_neurologie",
+      "read_depth": "section"
+    }
+  ],
+  "monograph": [
+    {
+      "point": 1,
+      "title": "Définition",
+      "anchor": "g06-definition",
+      "sources": [
+        "R2",
+        "R4",
+        "R9",
+        "R15"
+      ],
+      "coverage_explanation": "Abcès purulent, empyème et granulome sont distingués ; les territoires intracrânien et intrarachidien ainsi que les exclusions causales évitent un traitement générique G06.",
+      "evidence": [
+        "content-snapshot.html#g06-definition",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 2,
+      "title": "Épidémiologie",
+      "anchor": "g06-epidemio",
+      "sources": [
+        "R2",
+        "R7",
+        "R8"
+      ],
+      "coverage_explanation": "L’absence de statistique nationale actuelle est explicite ; estimation cérébrale étrangère, cohorte bâloise ancienne et série IRM sélectionnée gardent population et limites.",
+      "evidence": [
+        "content-snapshot.html#g06-epidemio",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 3,
+      "title": "Physiopathologie",
+      "anchor": "g06-s-physio-body",
+      "sources": [
+        "R2",
+        "R3",
+        "R4",
+        "R9",
+        "R14",
+        "R18",
+        "R19"
+      ],
+      "coverage_explanation": "Six sciences relient compartiments et fonctions normales, inflammation, œdème, compression, signes et décisions ; réponse granulomateuse distincte de collection purulente.",
+      "evidence": [
+        "content-snapshot.html#g06-s-physio-body",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 4,
+      "title": "Démarche clinique",
+      "anchor": "g06-question",
+      "sources": [
+        "R2",
+        "R3",
+        "R17"
+      ],
+      "coverage_explanation": "Le raisonnement part du territoire et de la gravité pour organiser imagerie, prélèvement et contrôle du foyer ; les chiffres et le codage ne remplacent pas la décision.",
+      "evidence": [
+        "content-snapshot.html#g06-question",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 5,
+      "title": "Anamnèse",
+      "anchor": "g06-anamnese",
+      "sources": [
+        "R2",
+        "R3",
+        "R7",
+        "R16"
+      ],
+      "coverage_explanation": "Chronologie douleur/déficit, symptômes vésicosphinctériens, porte d’entrée, gestes, antibiotiques et immunité sont recueillis pour hiérarchiser les hypothèses.",
+      "evidence": [
+        "content-snapshot.html#g06-anamnese",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 6,
+      "title": "Examen clinique",
+      "anchor": "g06-clinique",
+      "sources": [
+        "R2",
+        "R3",
+        "R14",
+        "R16"
+      ],
+      "coverage_explanation": "État général, conscience, langage, nerfs crâniens, force0–5, sensibilité et sphincters sont examinés avec limites de coopération et comparaison dans le temps.",
+      "evidence": [
+        "content-snapshot.html#g06-clinique",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 7,
+      "title": "Syndromes",
+      "anchor": "g06-semio-signs",
+      "sources": [
+        "R2",
+        "R3",
+        "R7",
+        "R16"
+      ],
+      "coverage_explanation": "Présentation focale cérébrale et compression médulloradiculaire sont décrites sans exiger une triade ; la fièvre et les marqueurs inflammatoires peuvent manquer.",
+      "evidence": [
+        "content-snapshot.html#g06-semio-signs",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 8,
+      "title": "Diagnostic positif",
+      "anchor": "g06-diagnostic",
+      "sources": [
+        "R2",
+        "R3",
+        "R8",
+        "R9"
+      ],
+      "coverage_explanation": "Syndrome, localisation IRM, aspect probable de collection et agent confirmé sont séparés ; histologie et microbiologie peuvent réviser une image annulaire présumée.",
+      "evidence": [
+        "content-snapshot.html#g06-diagnostic",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 9,
+      "title": "Explorations",
+      "anchor": "g06-e-prelevement",
+      "sources": [
+        "R2",
+        "R3",
+        "R8"
+      ],
+      "coverage_explanation": "IRM diffusion/contraste ou scanner injecté selon accès, cultures sanguines et pus/tissu, histologie et moléculaire répondent à des questions précisées ; PL non routinière.",
+      "evidence": [
+        "content-snapshot.html#g06-e-prelevement",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 10,
+      "title": "Arbre diagnostique",
+      "anchor": "g06-urgence",
+      "sources": [
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "coverage_explanation": "Le tableau distingue gravité exigeant traitement immédiat, sélection non grave pour prélèvement rapide et collection spinale avec ou sans déficit, sans attente automatique24 heures.",
+      "evidence": [
+        "content-snapshot.html#g06-urgence",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 11,
+      "title": "Prise en charge",
+      "anchor": "g06-traitement",
+      "sources": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R10",
+        "R11",
+        "R12",
+        "R13"
+      ],
+      "coverage_explanation": "Protocoles hospitaliers suisses locaux, drainage, contrôle du foyer et adaptation aux agents sont reliés aux notices exactes ; différences de fréquence/durée et formulations explicites.",
+      "evidence": [
+        "content-snapshot.html#g06-traitement",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 12,
+      "title": "Prévention et suivi",
+      "anchor": "g06-suivi",
+      "sources": [
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R10",
+        "R11",
+        "R13"
+      ],
+      "coverage_explanation": "Suivi clinique, IRM selon évolution, toxicités, traitement du foyer et rééducation sont organisés ; rehaussement résiduel seul ne détermine pas prolongation antibiotique.",
+      "evidence": [
+        "content-snapshot.html#g06-suivi",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 13,
+      "title": "Points clés",
+      "anchor": "g06-criteres",
+      "sources": [
+        "R1",
+        "R2",
+        "R3",
+        "R14",
+        "R15",
+        "R17"
+      ],
+      "coverage_explanation": "Les critères sont formulés en degrés de certitude, paramètres chiffrés contextualisés, sous-codes complets et correspondances PROFILES pédagogiques sans crosswalk officiel.",
+      "evidence": [
+        "content-snapshot.html#g06-criteres",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 14,
+      "title": "Pièges",
+      "anchor": "g06-e-cas",
+      "sources": [
+        "R2",
+        "R3",
+        "R7",
+        "R11"
+      ],
+      "coverage_explanation": "Quatre quiz expliquent le délai antibiotique conditionnel, la compression sans fièvre, le rehaussement résiduel et l’évaluation conjointe de toxicité et complication infectieuse.",
+      "evidence": [
+        "content-snapshot.html#g06-e-cas",
+        "recherche_G06/sources.json"
+      ]
+    }
+  ],
+  "matrix20": [
+    {
+      "point": 1,
+      "title": "Question clinique et enjeu fédéral",
+      "status": "covered",
+      "anchor": "g06-question",
+      "sources": [
+        "R17"
+      ],
+      "scope": "Question traitée et confrontée aux passages effectivement lus : Reconnaître collection compressive et prévenir délai de drainage.",
+      "evidence": [
+        "content-snapshot.html#g06-question",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 2,
+      "title": "Définition et périmètre CIM",
+      "status": "covered",
+      "anchor": "g06-codage",
+      "sources": [
+        "R15"
+      ],
+      "scope": "Question traitée et confrontée aux passages effectivement lus : G06.0/G06.1/G06.2 et distinction G07 causal.",
+      "evidence": [
+        "content-snapshot.html#g06-codage",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 3,
+      "title": "Classifications et stades",
+      "status": "covered",
+      "anchor": "g06-definition",
+      "sources": [
+        "R2",
+        "R3",
+        "R4",
+        "R9"
+      ],
+      "scope": "Question traitée et confrontée aux passages effectivement lus : Compartiment, cérébrite/collection, granulome et caractère causal.",
+      "evidence": [
+        "content-snapshot.html#g06-definition",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 4,
+      "title": "Épidémiologie suisse puis européenne",
+      "status": "covered",
+      "anchor": "g06-epidemio",
+      "sources": [
+        "R2",
+        "R7"
+      ],
+      "scope": "Question traitée et confrontée aux passages effectivement lus : LACUNE incidence nationale, âge/sexe exhaustifs ; cohorte Bâle ancienne et estimation européenne bornées. Le statut covered signifie que la question et sa limite sont traitées dans le cours ; il ne signifie pas que la donnée nationale ou l’obligation administrative a été trouvée. La projection Betta conserve LACUNE.",
+      "evidence": [
+        "content-snapshot.html#g06-epidemio",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 5,
+      "title": "Normal vers pathologique",
+      "status": "covered",
+      "anchor": "g06-s-physio-body",
+      "sources": [
+        "R4",
+        "R9",
+        "R18",
+        "R19"
+      ],
+      "scope": "Question traitée et confrontée aux passages effectivement lus : Enveloppes, voies motrices, inflammation, compression et œdème.",
+      "evidence": [
+        "content-snapshot.html#g06-s-physio-body",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 6,
+      "title": "Étiologies et facteurs de risque",
+      "status": "covered",
+      "anchor": "g06-causes",
+      "sources": [
+        "R2",
+        "R3",
+        "R7",
+        "R16"
+      ],
+      "scope": "Question traitée et confrontée aux passages effectivement lus : Porte ORL/dentaire, hématogène, postop et immunodépression.",
+      "evidence": [
+        "content-snapshot.html#g06-causes",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 7,
+      "title": "Anamnèse et symptômes",
+      "status": "covered",
+      "anchor": "g06-anamnese",
+      "sources": [
+        "R2",
+        "R7",
+        "R16"
+      ],
+      "scope": "Question traitée et confrontée aux passages effectivement lus : Céphalée/douleur rachidienne, évolution et fièvre inconstante ; pas fréquences généralisées.",
+      "evidence": [
+        "content-snapshot.html#g06-anamnese",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 8,
+      "title": "Examen clinique",
+      "status": "covered",
+      "anchor": "g06-clinique",
+      "sources": [
+        "R3",
+        "R14",
+        "R16"
+      ],
+      "scope": "Question traitée et confrontée aux passages effectivement lus : Force0–5, sensibilité, vigilance, langage, sphincters, limites de la triade.",
+      "evidence": [
+        "content-snapshot.html#g06-clinique",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 9,
+      "title": "Drapeaux rouges et urgences",
+      "status": "covered",
+      "anchor": "g06-urgence",
+      "sources": [
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "scope": "Question traitée et confrontée aux passages effectivement lus : Aggravation/engagement,sepsis,déficit médullaire ; report ATB seulement sélection stable et prélèvement rapide.",
+      "evidence": [
+        "content-snapshot.html#g06-urgence",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 10,
+      "title": "Examens complémentaires",
+      "status": "covered",
+      "anchor": "g06-e-prelevement",
+      "sources": [
+        "R2",
+        "R3",
+        "R8"
+      ],
+      "scope": "Question traitée et confrontée aux passages effectivement lus : IRM diffusion/contraste et localisation, cultures+tissu, CRP non exclusive ; pas seuil normal biologique universel.",
+      "evidence": [
+        "content-snapshot.html#g06-e-prelevement",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 11,
+      "title": "Diagnostic différentiel",
+      "status": "covered",
+      "anchor": "g06-differentiel",
+      "sources": [
+        "R2",
+        "R9",
+        "R16"
+      ],
+      "scope": "Question traitée et confrontée aux passages effectivement lus : Tumeur nécrotique, toxoplasmose, granulomatose et causes mécaniques : contexte et preuve.",
+      "evidence": [
+        "content-snapshot.html#g06-differentiel",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 12,
+      "title": "Prise en charge suisse",
+      "status": "covered",
+      "anchor": "g06-traitement",
+      "sources": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R10",
+        "R11",
+        "R12",
+        "R13"
+      ],
+      "scope": "Question traitée et confrontée aux passages effectivement lus : Protocoles locaux versus FI, drainage, cultures et traitements ciblés.",
+      "evidence": [
+        "content-snapshot.html#g06-traitement",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 13,
+      "title": "Complications et pronostic",
+      "status": "covered",
+      "anchor": "g06-complications",
+      "sources": [
+        "R2",
+        "R3",
+        "R7"
+      ],
+      "scope": "Question traitée et confrontée aux passages effectivement lus : Rupture ventriculaire, engagement, crise, déficit ; pas pourcentages instables de petite série.",
+      "evidence": [
+        "content-snapshot.html#g06-complications",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 14,
+      "title": "Suivi prévention dépistage",
+      "status": "covered",
+      "anchor": "g06-suivi",
+      "sources": [
+        "R2",
+        "R3"
+      ],
+      "scope": "Question traitée et confrontée aux passages effectivement lus : Clinique, images selon évolution, toxicités, source infectieuse et rééducation.",
+      "evidence": [
+        "content-snapshot.html#g06-suivi",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 15,
+      "title": "Situations particulières",
+      "status": "covered",
+      "anchor": "g06-situations",
+      "sources": [
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R10",
+        "R11",
+        "R12",
+        "R13"
+      ],
+      "scope": "Question traitée et confrontée aux passages effectivement lus : Adulte normal rénal exemple, adaptation âge/rein/foie/grossesse ; pas extrapolation pédiatrique.",
+      "evidence": [
+        "content-snapshot.html#g06-situations",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 16,
+      "title": "Spécificités suisses",
+      "status": "covered",
+      "anchor": "g06-situations",
+      "sources": [
+        "R1",
+        "R5",
+        "R6",
+        "R10",
+        "R11",
+        "R12",
+        "R13"
+      ],
+      "scope": "Question traitée et confrontée aux passages effectivement lus : LACUNE déclaration/LS/LiMA/aptitude spécifiques G06 non vérifiées ; aucun droit/obligation administrative affirmé. Le statut covered signifie que la question et sa limite sont traitées dans le cours ; il ne signifie pas que la donnée nationale ou l’obligation administrative a été trouvée. La projection Betta conserve LACUNE.",
+      "evidence": [
+        "content-snapshot.html#g06-situations",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 17,
+      "title": "Critères formels diagnostic",
+      "status": "covered",
+      "anchor": "g06-criteres",
+      "sources": [
+        "R2",
+        "R3",
+        "R9",
+        "R15"
+      ],
+      "scope": "Question traitée et confrontée aux passages effectivement lus : Syndrome+localisation+preuve, certitude explicite, pas critères universels granulome ni seuil2,5cm imposé.",
+      "evidence": [
+        "content-snapshot.html#g06-criteres",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 18,
+      "title": "Paramètres clés chiffrés",
+      "status": "covered",
+      "anchor": "g06-criteres",
+      "sources": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R10",
+        "R11",
+        "R13",
+        "R14"
+      ],
+      "scope": "Question traitée et confrontée aux passages effectivement lus : 0–5MRC,6–8semaines cerveau, paramètres de doses attribués et contrôlés.",
+      "evidence": [
+        "content-snapshot.html#g06-criteres",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 19,
+      "title": "Sous-codes CIM complets",
+      "status": "covered",
+      "anchor": "g06-codage",
+      "sources": [
+        "R15"
+      ],
+      "scope": "Question traitée et confrontée aux passages effectivement lus : G06.0 intracrânien,G06.1 intrarachidien,G06.2extra/sous-duralNOS.",
+      "evidence": [
+        "content-snapshot.html#g06-codage",
+        "recherche_G06/sources.json"
+      ]
+    },
+    {
+      "point": 20,
+      "title": "Points examen fédéral",
+      "status": "covered",
+      "anchor": "g06-e-cas",
+      "sources": [
+        "R17",
+        "R2",
+        "R3"
+      ],
+      "scope": "Question traitée et confrontée aux passages effectivement lus : IRM, urgence, source-control, doses non transposées, pièges de normalité.",
+      "evidence": [
+        "content-snapshot.html#g06-e-cas",
+        "recherche_G06/sources.json"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "path": "figures/Gray1196.png",
+      "canonical_path": "assets/img/g06/alpha/codex/Gray1196.png",
+      "original_url": "https://commons.wikimedia.org/wiki/File:Gray1196.png",
+      "license": "Domaine public : scan mécanique d’un original historique ; auteur mort depuis plus100 ans et publication aux États-Unis avant 1931, notice propre réellement lue.",
+      "author": "Gray, ouvrage1918 ; illustrations attribuées à Henry Vandyke Carter ; Gray764 original modifié de Poirier.",
+      "annotations": "Quatre repères : os crânien, dure-mère, arachnoïde/pie-mère et sinus sagittal ; compartiments et portée clinique.",
+      "medical_review": "Originaux réellement affichés et inspectés par Sol avant rédaction ; anatomie normale, pas lésion ni carte opératoire. Décodage natif et quatre annotations adjacentes vérifiés à1440/390, dernières lignes et captures inspectées ; self_review sans certification humaine.",
+      "sha256": "568d36ae47143acd19075d7970fef24fefb894627237106da707400ee74e06fa",
+      "source": "R18",
+      "human_origin": true,
+      "pixels_edited": false
+    },
+    {
+      "path": "figures/Gray764.png",
+      "canonical_path": "assets/img/g06/alpha/codex/Gray764.png",
+      "original_url": "https://commons.wikimedia.org/wiki/File:Gray764.png",
+      "license": "Domaine public : scan mécanique d’un original historique ; auteur mort depuis plus100 ans et publication aux États-Unis avant 1931, notice propre réellement lue.",
+      "author": "Gray, ouvrage1918 ; illustrations attribuées à Henry Vandyke Carter ; Gray764 original modifié de Poirier.",
+      "annotations": "Quatre repères : cortex moteur, capsule interne, décussation et faisceau corticospinal ; localisation et limites.",
+      "medical_review": "Originaux réellement affichés et inspectés par Sol avant rédaction ; anatomie normale, pas lésion ni carte opératoire. Décodage natif et quatre annotations adjacentes vérifiés à1440/390, dernières lignes et captures inspectées ; self_review sans certification humaine.",
+      "sha256": "0aab3ff23b815eb5f6eab0ba8c583726c5994c025899f3f6654f47e566249b09",
+      "source": "R19",
+      "human_origin": true,
+      "pixels_edited": false
+    }
+  ],
+  "semiology": {
+    "section_anchors": [
+      "g06-semio-normal",
+      "g06-semio-signs",
+      "g06-semio-mechanisms",
+      "g06-semio-examination",
+      "g06-semio-interpretation",
+      "g06-semio-differentials",
+      "g06-semio-urgency",
+      "g06-semio-limits",
+      "g06-semio-sources"
+    ]
+  },
+  "reviews": {
+    "medical": {
+      "path": "reviews/medical.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "02c83b961bdf54be11e20d75b98c0c6f31fc254e6abc1b023bc979741f170b88"
+    },
+    "language": {
+      "path": "reviews/language.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "02ee0647766dd6887dc06d5d936fabeebd9301fca5c345e15ddf32696e6621b2"
+    },
+    "visual_desktop": {
+      "path": "reviews/visual_desktop.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "4abd5c88498771509333f746bc8d2259dcc6e35c6468d0b09993b4fca5477cc1"
+    },
+    "visual_mobile": {
+      "path": "reviews/visual_mobile.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "746bea66d51663899d26edf44c56d56706c2b8797b9a3873388c84b02d7ccdd8"
+    }
+  },
+  "blocking_findings": [],
+  "documented_limits": [
+    {
+      "topic": "Épidémiologie",
+      "reason": "Incidence nationale actuelle et profil âge/sexe exhaustif G06 non établis ; estimation cérébrale européenne/étrangère, Bâle36ancienne et série chinoise27sélectionnée ne sont pas extrapolées.",
+      "evidence": "recherche_G06/sources.json"
+    },
+    {
+      "topic": "Rachis et formes rares",
+      "reason": "EANS concerne spondylodiscite de novo non spécifique, pas toute collection spinale ou postopératoire ; IRM tout rachis77% sans consensus, chirurgie sans déficit non consensuelle. Pas dose/durée universelle intramédullaire ou sous-durale rare inventée.",
+      "evidence": "matrix-20.json"
+    },
+    {
+      "topic": "Protocoles et notices",
+      "reason": "Spital Thurgau 2026 est local, non national. Fréquence ceftriaxone et métronidazole et longue durée de l’abcès diffèrent de FI exactes ; arbitrage spécialisé, justification et surveillance visibles. Pas conversion orale ni pédiatrique automatique.",
+      "evidence": "reviews/medical.json"
+    },
+    {
+      "topic": "Versions et lectures",
+      "reason": "DGN 2021 échue, PDF direct bloqué ; seulement extraits réellement lus, pas fondement de traitement actuel. ESCMID texte intégral disponible mais seules sections indiquées lues, pas tous suppléments. Bâle totaux discordants non chiffrés ; revue granulome partielle.",
+      "evidence": "recherche_G06/sources.json"
+    },
+    {
+      "topic": "Administratif suisse",
+      "reason": "Déclaration, LS/LiMA, assurance, aptitude et droits spécifiques non suffisamment documentés ; aucune absence d’obligation ou de couverture affirmée. Codage GM2024 non certification suisse2026, PROFILES 2017 rapprochement pédagogique.",
+      "evidence": "matrix-20.json"
+    },
+    {
+      "topic": "Figures et rendu",
+      "reason": "Deux originaux normaux historiques, pas maladie représentée ; quatre annotations hors pixels. Quatre anciens SVG retirés sans inférer une provenance IA démontrée. Figure IRM NC-ND refusée. Les contrôles fixes mobiles peuvent recouvrir temporairement du texte accessible au défilement.",
+      "evidence": "figures.json"
+    },
+    {
+      "topic": "Niveau des preuves",
+      "reason": "Les recommandations et consensus gardent leur périmètre ; pas de sensibilité universelle de la triade, score unique G06 ou durée de corticoïde inventés. Sources et contrôles ne certifient pas la médecine.",
+      "evidence": "reviews/medical.json"
+    },
+    {
+      "topic": "Revue et publication",
+      "reason": "Quatre revues nommées et sémiologie toutes self_review de Sol ; aucune certification humaine ni audit indépendant. HTTP local éphémère avec autres requêtes bloquées, aucun déploiement public attesté. Tokens/coût non exposés.",
+      "evidence": "lesson-manifest.json"
+    }
+  ],
+  "procedure": {
+    "entry_gate_before_first_writing": true,
+    "evidence": "prewriting-gate.json",
+    "native_id_correction": "before-native-id-correction/browser-autonomous.json",
+    "clinical_recheck": "clinical-review-completed.json"
+  },
+  "historical_model_trace": [
+    {
+      "agent_id": "astra_neurologie",
+      "scope": "Identifiant harness historique conservé ; recherche/rédaction/revues G06 réalisées par Sol."
+    }
+  ],
+  "tokens_actual": null,
+  "cost_actual": null,
+  "clinical_certification": false,
+  "publication_allowed": false
+}

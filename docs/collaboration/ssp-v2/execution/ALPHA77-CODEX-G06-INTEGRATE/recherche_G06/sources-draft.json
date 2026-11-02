@@ -1,0 +1,99 @@
+{
+  "code": "G06",
+  "draft": true,
+  "author": "sol_neurologie",
+  "model": "gpt-6.1-sol",
+  "reasoning": "high",
+  "recorded_at": "2026-11-02T12:39:12.480019+00:00",
+  "sources": [
+    {
+      "id": "R1",
+      "title": "Directives antimicrobiennes Spital Thurgau AG, 19.08.2026",
+      "reader": "sol_neurologie",
+      "read_at": "2026-11-02T12:39:12.480019+00:00",
+      "read_depth": "section",
+      "sections_read": "Introduction et page22 : abcès cérébral communautaire/postopératoire, épidural spontané/postopératoire",
+      "limits": "Guide local suisse, non directive nationale ; doses à confronter aux FI exactes et au patient.",
+      "cache_external": "/tmp/medina-g06-source-cache/stgag.raw",
+      "source_sha256": "18ac406ba3a9546f02bef0b175e9a959b1d4d77abf25b95f71de1bf27cf225b5"
+    },
+    {
+      "id": "R2",
+      "title": "ESCMID 2024, brain abscess",
+      "reader": "sol_neurologie",
+      "read_at": "2026-11-02T12:39:12.480019+00:00",
+      "read_depth": "section",
+      "sections_read": "Table1 dix recommandations ; traitementQ5/table4 et pratique générale p83–84 ; source et licence première page",
+      "limits": "Guide européen enfants/adultes, lecture ciblée ; pas tous les tableaux supplémentaires lus. Niveau de preuve parfois libellé différemment entre tableau1 et corps ; ne pas reconstruire un score unique.",
+      "cache_external": "/tmp/medina-g06-source-cache/escmid2024.raw",
+      "source_sha256": "4208ce56e45153a148e554847b07621a1702f06af9470211c2b1893994f898b9"
+    },
+    {
+      "id": "R3",
+      "title": "EANS Delphi 2025, infections rachidiennes de novo",
+      "reader": "sol_neurologie",
+      "read_at": "2026-11-02T12:39:12.480019+00:00",
+      "read_depth": "section",
+      "sections_read": "Résumé, contexte, méthodes, tableaux1–2 diagnostic et décision",
+      "limits": "Consensus experts de spondylodiscite de novo, non toutes les collections rachidiennes ni infections postopératoires. IRM de tout le rachis à77 % : pas consensus.",
+      "cache_external": "/tmp/medina-g06-source-cache/eans2025.raw",
+      "source_sha256": "d179a14998e5c1bcaa2e4fd9ffc6a3f1ddd4de7e4016cab99fc408ae51d0c21c"
+    },
+    {
+      "id": "R4",
+      "title": "DGN Hirnabszess 2021, extrait de source échue",
+      "reader": "sol_neurologie",
+      "read_at": "2026-11-02T12:39:12.480019+00:00",
+      "read_depth": "section",
+      "sections_read": "Définitions1, clinique partielle2, empyèmes sous-/épiduraux5.6 via extraction",
+      "limits": "PDF direct bloqué par challenge, non compté comme document lu. Extraits réellement lus via service de recherche, acquis18.09.2026 ; recommandation2021 échue, pas fondement thérapeutique actuel.",
+      "cache_external": "/tmp/medina-g06-source-cache/dgn2021-excerpts.json",
+      "source_sha256": "9c69227be16887f8dd1759c661efc0eb7e8878998e88dc006664ffea59e69e5b"
+    },
+    {
+      "id": "R5",
+      "title": "Ceftriaxon Labatec, FI juin2025",
+      "reader": "sol_neurologie",
+      "read_at": "2026-11-02T12:39:12.480019+00:00",
+      "read_depth": "section",
+      "sections_read": "Composition2gIV, indications, posologie adulte, durée, reins/foie, calcium et miseàjour",
+      "limits": "Pas encore toutes les rubriques relues. FI décrit habituellement une dose quotidienne unique jusqu’à4g en cas sévère, tandis que STG2026 prescrit2g×2 pour l’abcès ; divergence de fréquence conservée, non harmonisée silencieusement.",
+      "cache_external": "/tmp/medina-g06-source-cache/ceftriaxone.raw",
+      "source_sha256": "4de7a15646144d43d03647d5f55288eb8b37ee4e6b8442c84159212ce8086246"
+    },
+    {
+      "id": "R6",
+      "title": "Metronidazol i.v. B.Braun, FI février2026",
+      "reader": "sol_neurologie",
+      "read_at": "2026-11-02T12:39:12.480019+00:00",
+      "read_depth": "section",
+      "sections_read": "Composition500mg/100ml, indications dont abcès cérébral, doses, durée, reins/foie, contre-indications et neurotoxicité",
+      "limits": "FI adulte : charge15mg/kg, entretien7,5mg/kgq6h3j puisq12h, généralement5–7j et normalement≤10j, prolongation justifiée et surveillée. STG500mg×3 et ESCMID6–8semaines ne sont pas présentés comme schéma identique de FI ; réconciliation à poursuivre.",
+      "cache_external": "/tmp/medina-g06-source-cache/metronidazole.raw",
+      "source_sha256": "46f1a3dac54b61ebf730dce7840ceaf4072d37c609ddaa3ab1921110abe6738f"
+    },
+    {
+      "id": "R7",
+      "title": "Zimmerer etal.2011, abcès épidural spinal prospectif Bâle",
+      "reader": "sol_neurologie",
+      "read_at": "2026-11-02T12:39:12.480019+00:00",
+      "read_depth": "section",
+      "sections_read": "Résumé, introduction, patients/méthodes, symptômes, évolution et tableau6",
+      "limits": "36patients hospitaliers2004–2008, non incidence suisse actuelle. Incohérences des totauxS.aureus et de récupération entre résumé/corps/tableau : pourcentages correspondants non repris comme données stables.",
+      "cache_external": "/tmp/medina-g06-source-cache/basel-sea2011-fetch.json",
+      "source_sha256": "dba2e521d1519b9fac56e25af5ca0dc046441252d9e86dc1ce10ca8b545c7f9a"
+    },
+    {
+      "id": "R8",
+      "title": "Jiang etal.2024, IRM d’abcès épidural primaire",
+      "reader": "sol_neurologie",
+      "read_at": "2026-11-02T12:39:12.480019+00:00",
+      "read_depth": "section",
+      "sections_read": "Résumé, introduction/méthodes, légendesIRM1–4 et déclarations",
+      "limits": "27patients en Chine, confirmation chirurgicale/pathologique ; illustration/imagerie, non fondement des recommandations européennes. Licence de figure pas encore établie ; aucune image publiée.",
+      "cache_external": "/tmp/medina-g06-source-cache/sea-mri2024-fetch.json",
+      "source_sha256": "5f1e404455e29ece4b1880035100ebe012fd1c3313d7074df8eb3386001c8061"
+    }
+  ],
+  "not_a_reading_claim": "Les autres fichiers téléchargés ne sont pas comptés comme lectures. Ce journal partiel ne remplace pas la porte de recherche finale avant rédaction."
+}
