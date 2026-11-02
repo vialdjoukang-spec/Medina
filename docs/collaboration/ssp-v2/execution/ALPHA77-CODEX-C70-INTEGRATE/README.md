@@ -17,3 +17,5 @@ Limites circonscrites :absence d’incidence nationale actuelleC70 ; CIM2024 san
 Reproduction : `MEDINA_OUT=<dossier unique> python3 build_front.py --fragment S08`, bundler natif commun, trois scripts `browser-*.cjs`, `python3 test_v7.py --static C70 G45`, audit_sciences sur baseSHA40 et porte Betta. G45 n’a pas été modifié ; son contrôle technique vérifie une dépendance héritée au glossaire Virchow-Robin.
 
 Branche réservée pour revue ; aucune PR/main. L’achèvement de projet est distinct de la certification clinique.
+
+Achèvement de projet enregistré le2novembre2026 à11:05:28UTC : [reçu réel](harness-completion.json). Réservation à libérer après vérification du commit final distant.
