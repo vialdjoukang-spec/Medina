@@ -198,7 +198,7 @@ class Harness:
             if not folder.is_relative_to(Path(a['worktree']).resolve()):raise ValueError('Dossier hors worktree')
             if git(a['worktree'],'branch','--show-current')!=a['branch']:raise ValueError('Branche différente')
             binding=verify_binding(a['worktree'],code,folder)
-            record={'agent':agent,'code':code,'at':now(),'manifest_sha256':digest((folder/'lesson-manifest.json').read_bytes()),
+            record={'agent':agent,'code':code,'at':now(),'branch':a['branch'],'worktree':a['worktree'],'folder':str(folder),'manifest_sha256':digest((folder/'lesson-manifest.json').read_bytes()),
                     'source_binding_sha256':digest((folder/'source-binding.json').read_bytes()),'review_modes':result['review_modes'],
                     'clinical_certification':False,'publication_allowed':False,'preview_sha256':binding['preview_sha256']}
             a.update(stage='termine',completed_sections=14,activity_at=now(),message='Achèvement de projet documenté; présentation à Vial avant toute PR main.')

@@ -5,10 +5,10 @@
     "astra_neurologie": {
       "lesson": "G02",
       "worktree": "/workspace/Medina-neurologie",
-      "stage": "recherche",
+      "stage": "redaction",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T02:29:53+00:00",
-      "message": "G02 version WHO/fexinidazole 3a7c7aa poussée après contrôles, source-binding final en place. Réserve flucytosine : SwissmedicJournal2024 export seul et RCP français Ancotil500mg septembre2025 relus ; statut suisse actuel encore à établir.",
+      "activity_at": "2026-11-02T02:46:06+00:00",
+      "message": "Chagas : sources CH, SEMTSI et NIH relues ; RCP Lampit AEMPS février 2024 retrouvé avec indication adulte, distinct du libellé américain pédiatrique. Rédaction ciblée et revue de cohérence clinique en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -29,10 +29,10 @@
     "astra_endocrinologie": {
       "lesson": "E00",
       "worktree": "/workspace/Medina-endocrinologie",
-      "stage": "verification",
+      "stage": "termine",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T02:34:19+00:00",
-      "message": "Paquet E00 complet, auto-relectures attribuées et contrat harness PASS. Source-binding final lié aux six chapitres, glossaire et image. Contrôle du périmètre Git puis commit/push de la branche réservée, sans PR.",
+      "activity_at": "2026-11-02T02:39:03+00:00",
+      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -51,28 +51,28 @@
       ]
     },
     "astra_nephrologie": {
-      "lesson": "N04",
-      "worktree": "/workspace/Medina-nephrologie",
-      "stage": "verification",
-      "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T02:37:06+00:00",
-      "message": "Relecture clôture20rubriques : ambiguïté héritée durée corticoïdes MCD identifiée et corrigée A10+fenêtre ; PDF KDIGOfigure45/S155 diffère du texteS156, cadre européen total≤24semaines explicité.41passages actuels, anciennepreuveTX1signalée. Regénération tests/aperçu/binding avant complete ; N04resteactif.",
+      "lesson": "N29",
+      "worktree": "/workspace/Medina-nephrologie-n29",
+      "stage": "recherche",
+      "branch": "codex/alpha77/n29-integrate-g1",
+      "allowed_paths": [
+        "chapters/N29",
+        "glossary/n29.py",
+        "assets/img/n29/alpha/codex",
+        "organisation/alpha-publications/Codex/N29",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N29-INTEGRATE"
+      ],
+      "started_at": "2026-11-02T02:46:45+00:00",
+      "activity_at": "2026-11-02T02:46:45+00:00",
+      "message": "Mission réservée; recherche autorisée",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "47fa9ee87eb04cf4cb0c86f05c0bd38304c5c7effc7450acc020f2b51904e814",
-      "branch": "codex/alpha77/n04-integrate-g1",
-      "allowed_paths": [
-        "chapters/N04",
-        "glossary/n04.py",
-        "assets/img/n04/alpha/codex",
-        "organisation/alpha-publications/Codex/N04",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE"
-      ]
+      "completed_sections": 0,
+      "receipt_sha256": "1d30ff81788722d3213c031b72f207880f30bc468e52a6c33ec217141a7b72b7"
     },
     "codex_hematologie": {
       "lesson": "C85",
@@ -589,11 +589,95 @@
       "action": "watch",
       "ok": true,
       "findings": 1
+    },
+    {
+      "at": "2026-11-02T02:39:03+00:00",
+      "action": "complete",
+      "agent": "astra_endocrinologie",
+      "code": "E00"
+    },
+    {
+      "at": "2026-11-02T02:39:22+00:00",
+      "action": "complete",
+      "agent": "astra_nephrologie",
+      "code": "N04"
+    },
+    {
+      "at": "2026-11-02T02:39:55+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "Paquet flucytosine 4f92780 poussé après contrôle popup4656caractères mobile24 et source-binding. Coccidioïdomycose documentée CH2013→ECMM2021→IDSA2016 ; correction concordance tableaux et contre-indications fluconazole. Chagas en recherche suivante, aucune clôture encore."
+    },
+    {
+      "at": "2026-11-02T02:41:29+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T02:46:06+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "redaction",
+      "message": "Chagas : sources CH, SEMTSI et NIH relues ; RCP Lampit AEMPS février 2024 retrouvé avec indication adulte, distinct du libellé américain pédiatrique. Rédaction ciblée et revue de cohérence clinique en cours."
+    },
+    {
+      "at": "2026-11-02T02:46:45+00:00",
+      "action": "claim",
+      "agent": "astra_nephrologie",
+      "code": "N29"
+    },
+    {
+      "at": "2026-11-02T02:47:37+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
     }
   ],
   "cache": {
     "hits": 1,
     "misses": 10,
     "bytes_avoided": 1155129
-  }
+  },
+  "completed_lessons": [
+    {
+      "agent": "astra_endocrinologie",
+      "code": "E00",
+      "at": "2026-11-02T02:39:03+00:00",
+      "manifest_sha256": "4a1f8e21c80fe14dd6892e943616dd5de9a6a71b86bce95112e82e3e3e933607",
+      "source_binding_sha256": "4d73e8c95a60779c9342588f1c780fb33e41910711d9971ab55539b9099f7f68",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "e83f62ac0d7ad5395444aa3ba49f412fa80291e9895e919bf79160ef24ce0aa9",
+      "branch": "codex/alpha77/e00-integrate-g1",
+      "worktree": "/workspace/Medina-endocrinologie",
+      "folder": "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE"
+    },
+    {
+      "agent": "astra_nephrologie",
+      "code": "N04",
+      "at": "2026-11-02T02:39:22+00:00",
+      "manifest_sha256": "bdafe51b1e13c7b42cbb1930e45b0d4941d2838e3ce8f62b0019ad54d0d8e9b6",
+      "source_binding_sha256": "d47b23b6471538696cdfeb47fb04e4af2db21a34bb2770750ecbe90f6de080b4",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "cf1b9aace7b6c900c71bf075086b183c80eac4299de41d8481bb3d9564056c3e",
+      "branch": "codex/alpha77/n04-integrate-g1",
+      "worktree": "/workspace/Medina-nephrologie",
+      "folder": "/workspace/Medina-nephrologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE"
+    }
+  ]
 }
