@@ -98,3 +98,8 @@ révocations de droits et retards restent possibles. `watchdog-control.json` per
 l'arrêt explicite ; arrêter le run actif donne un arrêt immédiat. Une seule chaîne
 est autorisée par le groupe de concurrence. Aucun appel LLM ne sert à la veille ;
 un runner standard attend entre les contrôles, ce qui consomme du temps Actions.
+
+
+## Passage à la leçon suivante
+
+La commande `python3 harness/medina_harness.py complete AGENT DOSSIER` vérifie le manifeste à14points, les20rubriques couvertes avec preuves, les revues attribuées, les images et l’absence de réserve bloquante. Le reçu `source-binding.json` doit correspondre aux octets actuels des six fichiers du cours, du glossaire et de l’aperçu. Toute modification invalide ce reçu ; la veille le signale sans le renouveler. La commande conserve l’historique des achèvements et autorise ensuite une nouvelle acquisition exclusive. Elle ne crée aucune PR, ne libère pas automatiquement le registre et ne certifie pas la médecine. Le statut actuel des quatre leçons reste provisoire tant que leurs réserves ne sont pas levées.

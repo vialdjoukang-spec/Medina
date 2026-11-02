@@ -6,14 +6,14 @@
   "fragment_label": "N-07-Néphrologie",
   "prepared_at": "2026-11-02T01:16:51.601917+00:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "status": "preparation_only_waiting_harness_tests_watch_gate",
+  "status": "author_delivery_complete_ready_for_user_review",
   "selected_lesson": {
     "code": "N04",
     "title": "Syndrome néphrotique",
     "mode": "retrospective_review_existing",
     "reason": "Existant attribué à Codex, sans réservation dans snapshot commun ; N17 actif conservé.",
-    "reservation_acquired": false,
-    "worktree": null,
+    "reservation_acquired": true,
+    "worktree": "/workspace/Medina-nephrologie",
     "mission_manifest": ".medina/missions/ALPHA77-CODEX-N04-INTEGRATE.json",
     "manifest_state": "active",
     "manifest_generation": 1,
@@ -33,6 +33,25 @@
       "chapters/N04/N04_pop1.html": "55dd081e6e84a3cffc76efd74614180fb9570481d95e7b9f240c2850042c0e19",
       "chapters/N04/N04_pop2.html": "b5727a67ea1cd313b18435d80aa453f3df901a78599238b3d921d51132ee94a7",
       "glossary/n04.py": "9ce1e996d779162cd29b2bad0983024fdeb50341eb910cc868bc9b6689d23657"
+    },
+    "branch": "codex/alpha77/n04-integrate-g1",
+    "start_receipt": "/workspace/Medina-harness/harness/evidence/N04/start.json",
+    "initial_source_files_sha256": {
+      "chapters/N04/N04_a.html": "1e2a622ed7469badb11654ee56df66948f8f84a7e91c80e1c7f65d27830290f0",
+      "chapters/N04/N04_b.html": "28a8605bfe3a8d3e3f3861291edf6b0619766af889272b16fa72f33a292332ce",
+      "chapters/N04/N04_c.html": "ad4a22d038b097e350dac516a94cccb6a31bd7dcea687fa2366fe4e92c458af6",
+      "chapters/N04/N04_d.html": "55612afc7de13681e121bef1fe940acbca5504202ee1b86e4ccac79ea75573c6",
+      "chapters/N04/N04_pop1.html": "55dd081e6e84a3cffc76efd74614180fb9570481d95e7b9f240c2850042c0e19",
+      "chapters/N04/N04_pop2.html": "b5727a67ea1cd313b18435d80aa453f3df901a78599238b3d921d51132ee94a7",
+      "glossary/n04.py": "9ce1e996d779162cd29b2bad0983024fdeb50341eb910cc868bc9b6689d23657"
+    },
+    "final_source_files_sha256": {
+      "chapters/N04/N04_a.html": "4bb6710c0d3c4733d36c2850b4f7551e5618dfeb5a7313f75836bd35a042fd75",
+      "chapters/N04/N04_b.html": "18d4bf8078c3ced89cdfa80ea3e353d53f3fc438b71e12d937b20a0574df6182",
+      "chapters/N04/N04_c.html": "1362d1ab0fca9e18341c4ce71c60c533c4f5aae8c7279164773779c173ccb5e5",
+      "chapters/N04/N04_d.html": "7bab6d31094bcd86f438e629782d365f420f9c16abf926baf1b7d99b37febe3a",
+      "chapters/N04/N04_pop1.html": "776b4f09dc30e2655e85f42aa884093da9b52f6ce406570ab7552f1c6451e840",
+      "chapters/N04/N04_pop2.html": "fe9de362ca2dfb6e01748daae8c5303c31ab16543dda18b83a4a87396005426c"
     }
   },
   "instruction_priority": "Ordre actuel : quatre spécialités en parallèle et une leçon à la fois par agent ; remplace les lots historiques, sans supprimer les réservations.",
@@ -68,9 +87,11 @@
       "owner": "Codex",
       "mode": "existing_review",
       "in_alpha77_campaign": true,
-      "reserved_by": [],
+      "reserved_by": [
+        "ALPHA77-CODEX-N04-INTEGRATE"
+      ],
       "dispatchable_after_gate": true,
-      "state": "selected_pending_harness_gate"
+      "state": "N04_author_delivery_complete_user_review_pending"
     },
     {
       "order": 2,
@@ -382,19 +403,20 @@
     "Audits et preuves liés aux empreintes finales ; distinguer relu, corrigé, testé, publié et validé médicalement."
   ],
   "monograph_plan": [
-    "Question clinique et objectifs",
-    "Définition, critères et classifications",
-    "Épidémiologie suisse puis européenne et pronostic",
-    "Physiopathologie depuis le fonctionnement normal",
-    "Étiologies et facteurs de risque",
-    "Anamnèse et sémiologie clinique analytique",
-    "Examen clinique : technique, interprétation, limites",
-    "Démarche diagnostique et différentiels",
-    "Urgences et complications",
-    "Prise en charge causale et traitement de soutien",
-    "Surveillance, récupération, prévention et suivi",
-    "Situations particulières : enfant, grossesse, âgé, comorbidités",
-    "Références, lacunes explicites et métadonnées CIM après la conclusion clinique"
+    "Définition",
+    "Épidémiologie",
+    "Physiopathologie",
+    "Démarche clinique",
+    "Anamnèse",
+    "Examen clinique",
+    "Syndromes",
+    "Diagnostic positif",
+    "Explorations",
+    "Arbre diagnostique (différentiels)",
+    "PEC",
+    "Prévention/suivi/pronostic",
+    "Points clés",
+    "Pièges"
   ],
   "proofs_to_read": [
     "livraisons/Livraison Claude/N-07-Néphrologie/travail/CYCLE_03_N04/preuves/dossier_sources.json",
@@ -413,7 +435,7 @@
     "https://www.revmed.ch/revue-medicale-suisse/2022/revue-medicale-suisse-771/syndrome-nephrotique-de-l-adulte-et-autres-proteinuries-de-fort-debit",
     "https://www.swissnephrology.ch/wp/wp-content/uploads/2025/03/Version-2025_Francais_V_17.03.2025_WZ.pdf"
   ],
-  "source_reading_status": "Inventaire et extraits des registres hérités lus ; aucune relecture clinique exhaustive externe N04 effectuée dans cette préparation.",
+  "source_reading_status": "39passages sélectionnés réellement lus le2novembre, dont22FI produits suisses ;113preuves héritées Claude14octobre attribuées, non présentées comme relecture intégrale actuelle.",
   "reusable_tools": [
     "tools/betta_verite.py",
     "tools/swissmedic_fi.py",
@@ -429,28 +451,119 @@
     "tests/test_audit_sciences.py"
   ],
   "next_gate": [
-    "Harness et tests réussis et veille fonctionnelle prouvée par parent",
-    "Réservation vérifiée à nouveau, mission/base/génération alignées et worktree exclusif",
-    "Recherche N04 traçable et porte de vérité avant tout cours"
+    "Présentation utilisateur de N04 avant toutePR/main",
+    "Clôture réelle et autorisation parent avant leçon suivante"
   ],
   "preliminary_findings": [
     {
       "id": "N04-SEMIO-ABSENT",
       "severity": "MAJEUR",
       "evidence": "Quatre boutons data-s dans N04_c.html ; aucun marqueur data-semiology ni sous-onglet dédié.",
-      "status": "structural_observation_not_medical_audit"
+      "status": "resolved_in_current_delivery",
+      "initial_status": "structural_observation_not_medical_audit"
     },
     {
       "id": "N04-FIGURES-REVIEW",
       "severity": "reserve",
       "evidence": "Figures1 filtre glomérulaire et8 néphron sont des SVG didactiques ; provenance humaine à vérifier, ne pas déduire origine IA du seul format.",
-      "status": "origin_not_yet_verified"
+      "status": "resolved_in_current_delivery",
+      "initial_status": "origin_not_yet_verified"
     },
     {
       "id": "N04-CIM-POSITION",
       "severity": "editorial",
       "evidence": "Sous-section codage CIM dans A02 ; à réévaluer contre instruction monographique et métadonnées discrètes.",
-      "status": "observed"
+      "status": "resolved_in_current_delivery",
+      "initial_status": "observed"
     }
-  ]
+  ],
+  "updated_at": "2026-11-02T02:30:32.114009+00:00",
+  "initial_counts": {
+    "conservative_s04_targets": 33,
+    "existing": 6,
+    "new": 27,
+    "codex_targets": 16,
+    "claude_targets": 17,
+    "codex_alpha77_targets": 9,
+    "n04_html_files": 6,
+    "n04_html_bytes": 249809,
+    "n04_source_records": 16,
+    "n04_swissmedic_records": 22,
+    "n04_inherited_claim_records": 113,
+    "n04_science_tabs": 4,
+    "n04_semio_markers": 0,
+    "n04_local_assets": 5
+  },
+  "current_counts": {
+    "scientific_subtabs": 6,
+    "semiology_sections": 9,
+    "monograph_points": 14,
+    "medina_rubrics": 20,
+    "human_original_images": 5,
+    "current_selected_passages": 39,
+    "inherited_attributed_claims": 113,
+    "swiss_fi_targeted_read": 22
+  },
+  "delivery": {
+    "folder": "/workspace/Medina-nephrologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE",
+    "preview": "/workspace/Medina-nephrologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE/N04-apercu-autonome.html",
+    "manifest": "/workspace/Medina-nephrologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE/lesson-manifest.json",
+    "sources": "/workspace/Medina-nephrologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE/source-ledger.json",
+    "matrice20": "/workspace/Medina-nephrologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE/matrice-20.json",
+    "screenshots": "/workspace/Medina-nephrologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE/captures",
+    "pr": null,
+    "published_main": false,
+    "commit": "1f1a9688d54fbdeecd9f9ac162a17a690a563f03",
+    "branch": "codex/alpha77/n04-integrate-g1",
+    "preview_sha256": "0283a563bb5784b3297f2d71f66f6ca65c3a3804f24c2a52338bf44145235ed4",
+    "validation": "technical_contract_pass_true; clinical_certification_false; publication_allowed_false",
+    "scope_guard": {
+      "result": "passed",
+      "base": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+      "head": "1f1a9688d54fbdeecd9f9ac162a17a690a563f03",
+      "registry_sha": "f68626cfb4f3cb498fae1a19c37af1cf962b82ea",
+      "changed_files": 74
+    },
+    "remote_head_verified": "1f1a9688d54fbdeecd9f9ac162a17a690a563f03",
+    "pushed": true,
+    "working_tree_clean": true,
+    "source_binding": "/workspace/Medina-nephrologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE/source-binding.json"
+  },
+  "gate": {
+    "initial_ci": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41372212569",
+    "independent_watch_bootstrap": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41374424262",
+    "independent_watch_successor": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41374451212",
+    "source": "Parent reported34passing tests and functional600s independent GitHub relay; no self-invented uptime metric."
+  },
+  "current_reserves": [
+    "Auto-relectures explicitement déclarées ; aucune validation médicale humaine ni certification globale.",
+    "Incidence suisse absente des sources consultées ; fréquences internationales/Europe étiquetées.",
+    "RMS accessible par résumé seul ; aucun texte intégral prétendu.",
+    "Deux récupérations EuropePMC échouées AGRAWAL18/KERLIN12 ; héritage conservé explicitement.",
+    "Lecture FI ciblée, non certification intégrale de toutes les interactions.",
+    "Statut de publication hérité audit différé aprèsCycle30 demeure dans métadonnées partagées, non modifiées."
+  ],
+  "reviews": {
+    "self_reviews": [
+      "medical targeted",
+      "language additions/corrections",
+      "visual_desktop1440",
+      "visual_mobile390"
+    ],
+    "independent_targeted": "/workspace/Medina-nephrologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE/reviews/parent-targeted.json",
+    "independent_scope": "Clexane, Sandimmun Neoral, Spiricort; no global review",
+    "parent_hashes_match": {
+      "chapters/N04/N04_d.html": true,
+      "chapters/N04/N04_b.html": true
+    }
+  },
+  "final_verifications": {
+    "static": "passed",
+    "science": "passed5355words6disciplines7figures",
+    "verite": "passed",
+    "browser": "passed1440/390;9incorporatedimageoccurrencesdecodedperviewport;Livre24px;0overflow;0JSerrors",
+    "preservation": "22/22 inherited sections kept;26199→30518words",
+    "contract": "passedwithself_reviewdeclared",
+    "source_binding": "12canonical sources and10proof digests frozen after final tests"
+  }
 }

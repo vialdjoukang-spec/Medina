@@ -152,6 +152,57 @@ class HarnessCase(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.h.progress('neuro', 'termine', 'Cannot certify by progress')
 
+    def bound_package(self):
+        worktree,_=self.claim();folder=worktree/'reports';folder.mkdir()
+        paths=[f'chapters/G02/G02_{x}.html' for x in ('a','b','c','d','pop1','pop2')]+['glossary/g02.py']
+        for name in paths:
+            p=worktree/name;p.parent.mkdir(parents=True,exist_ok=True);p.write_text('Synthetic test fixture')
+        (folder/'preview.html').write_text('Synthetic rendered fixture')
+        binding={'code':'G02','verified_at':mh.now(),'checks':['synthetic fixture'],'preview':'preview.html',
+                 'preview_sha256':mh.digest((folder/'preview.html').read_bytes()),
+                 'final_sources':{name:mh.digest((worktree/name).read_bytes()) for name in paths}}
+        mh.atomic(folder/'source-binding.json',binding)
+        mh.atomic(folder/'lesson-manifest.json',{'code':'G02','matrix20':[{'point':n,'status':'covered','evidence':'synthetic fixture'} for n in range(1,21)]})
+        return worktree,folder
+
+    def test_bound_source_and_preview_changes_invalidate_verification(self):
+        worktree,folder=self.bound_package()
+        self.assertEqual(mh.verify_binding(worktree,'G02',folder)['code'],'G02')
+        (folder/'preview.html').write_text('Changed rendering')
+        with self.assertRaisesRegex(ValueError,'Aperçu modifié'):mh.verify_binding(worktree,'G02',folder)
+        (worktree/'chapters/G02/G02_a.html').write_text('Changed dose in synthetic fixture')
+        with self.assertRaisesRegex(ValueError,'Source modifiée'):mh.verify_binding(worktree,'G02',folder)
+
+    def test_binding_cannot_omit_a_source_or_escape_the_lesson(self):
+        worktree,folder=self.bound_package();p=folder/'source-binding.json';binding=mh.load(p)
+        del binding['final_sources']['glossary/g02.py'];mh.atomic(p,binding)
+        with self.assertRaisesRegex(ValueError,'sept sources'):mh.verify_binding(worktree,'G02',folder)
+        binding['final_sources']['glossary/g02.py']=mh.digest((worktree/'glossary/g02.py').read_bytes())
+        binding['final_sources']['../outside']='a'*64;mh.atomic(p,binding)
+        with self.assertRaisesRegex(ValueError,'hors leçon'):mh.verify_binding(worktree,'G02',folder)
+
+    def test_completion_requires_twenty_covered_points_and_records_history(self):
+        worktree,folder=self.bound_package();p=folder/'lesson-manifest.json';manifest=mh.load(p)
+        proof={'technical_contract_pass':True,'errors':[],'review_modes':{'medical':'self_review'}}
+        with mock.patch.object(mh,'validate_lesson',return_value=proof):
+            manifest['matrix20'][0]['status']='LACUNE';mh.atomic(p,manifest)
+            with self.assertRaisesRegex(ValueError,'Matrice20'):self.h.complete('neuro',folder)
+            manifest['matrix20'][0]['status']='covered';mh.atomic(p,manifest)
+            result=self.h.complete('neuro',folder)
+            self.assertFalse(result['clinical_certification']);self.assertFalse(result['publication_allowed'])
+            self.assertEqual(self.state()['agents']['neuro']['stage'],'termine')
+            self.assertEqual(len(self.state()['completed_lessons']),1)
+            with self.assertRaisesRegex(ValueError,'déjà enregistré'):self.h.complete('neuro',folder)
+            next_worktree,receipt=self.worktree_and_receipt('G05')
+            self.h.claim('neuro','G05',next_worktree,receipt)
+            self.assertEqual(len(self.state()['completed_lessons']),1)
+
+    def test_completion_cannot_ignore_failed_contract(self):
+        _,folder=self.bound_package()
+        with mock.patch.object(mh,'validate_lesson',return_value={'technical_contract_pass':False,'errors':['Images non vérifiées']}):
+            with self.assertRaisesRegex(ValueError,'Images'):self.h.complete('neuro',folder)
+        self.assertNotEqual(self.state()['agents']['neuro']['stage'],'termine')
+
     def test_stale_watch_prevents_transition_to_writing(self):
         self.claim()
         old = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(minutes=16)).isoformat()

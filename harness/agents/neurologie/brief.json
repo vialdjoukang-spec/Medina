@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "PREPARATION_ONLY_NO_COURSE_PRODUCTION",
+  "status": "G02_AUTHOR_REVISION_TECHNICAL_CHECKS_MEDICAL_REVIEW_OPEN",
   "prepared_at": "2026-11-02T01:17:05.123886+00:00",
   "agent": "Astra Neurologie",
   "model": "gpt-6-astra",
@@ -15,11 +15,13 @@
     "title": "Méningite au cours d’autres maladies infectieuses et parasitaires classées ailleurs",
     "mode": "existing",
     "owner": "Codex",
-    "active_reservations": [],
+    "active_reservations": [
+      "Current authorized G02 integration mission"
+    ],
     "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G02-INTEGRATE.json",
     "campaign77_member": true,
     "source_exists": true,
-    "authorization": "candidate_after_harness_and_current_reservation_check"
+    "authorization": "Acquired/start receipt verified by parent; exclusive worktree /workspace/Medina-neurologie, branch codex/alpha77/g02-integrate-g1"
   },
   "counts": {
     "specialty_existing": 57,
@@ -964,8 +966,6 @@
       "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
     }
   ],
-  "clinical_claims_revalidated": 0,
-  "medical_content_written": false,
   "required_gates": [
     "Operational harness tests and functional watch demonstrated before any course writing",
     "Exclusive worktree, approved mission, fresh remote reservation, successful start",
@@ -988,13 +988,80 @@
       "Technical gates never assert clinical truth, independent review or human validation"
     ]
   },
-  "limitations": [
-    "Main and remote snapshot fixed for preparation; refresh before work",
-    "Existing files and inherited dossiers are not primary medical evidence",
-    "No clinical source has been reopened for this preparation",
-    "No G02 reservation acquired and no course worktree started",
-    "Current catalogue integrated=true does not establish completeness",
-    "Historic V2 source ownership can differ from old alpha mission files; current plan and approved manifests must be reconciled",
-    "Private GitHub cron and local watch depend on runner/environment availability"
+  "preparation_snapshot": {
+    "status": "PREPARATION_ONLY_NO_COURSE_PRODUCTION",
+    "prepared_at": "2026-11-02T01:17:05.123886+00:00",
+    "queue_and_counts_are_snapshot": true,
+    "clinical_claims_revalidated": 0,
+    "medical_content_written": false,
+    "limitations": [
+      "Main and remote snapshot fixed for preparation; refresh before work",
+      "Existing files and inherited dossiers are not primary medical evidence",
+      "No clinical source has been reopened for this preparation",
+      "No G02 reservation acquired and no course worktree started",
+      "Current catalogue integrated=true does not establish completeness",
+      "Historic V2 source ownership can differ from old alpha mission files; current plan and approved manifests must be reconciled",
+      "Private GitHub cron and local watch depend on runner/environment availability"
+    ]
+  },
+  "updated_at": "2026-11-02T02:29:53.150183+00:00",
+  "current_package": {
+    "code": "G02",
+    "worktree": "/workspace/Medina-neurologie",
+    "branch": "codex/alpha77/g02-integrate-g1",
+    "preview": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html",
+    "bundle_proof": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.bundle.json",
+    "captures": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/captures",
+    "browser_report": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/browser-autonomous.json",
+    "source_readings": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/recherche_G02/sources.json",
+    "monograph14": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/monograph-14.json",
+    "matrix20": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/recherche_G02/recherche.md",
+    "source_readings_count": 23,
+    "sciences": 6,
+    "semiology_sections": 9,
+    "medical_reviews": {
+      "MED": "not_supplied",
+      "LANG": "not_supplied",
+      "SEMIO": "author_targeted_only"
+    },
+    "reserves": [
+      "FI suisse flucytosine et autres traitements rares non confirmées",
+      "Erratum candidose du 15 octobre 2025 non lu : schéma SNC non certifié",
+      "WHO2024 et fexinidazole lus ; statut suisse et autres produits de la trypanosomiase à vérifier, Chagas/coccidioïdomycose incomplets",
+      "Source primaire consortium encéphalite non obtenue ; table DGN seule",
+      "Applicabilité CIM suisse2026, obligations déclaratives et PROFILES non revalidés",
+      "14 points présents et 20 rubriques inventoriées ; clôture exhaustive et rapports finaux non terminés"
+    ],
+    "next_lesson_allowed": false,
+    "commit": "3a7c7aa23d769e00f2e4d1e8beba6050d9a8dc6b",
+    "pushed": true,
+    "guard": "passed registry dd31a75b58d0f945d013368203d8b52bcd72bf79",
+    "review_mode": "self_review, avec empreintes ; aucune validation humaine ou indépendance revendiquée",
+    "current_revision": "Version WHO2024 et fexinidazole contrôlée et poussée ; réserve flucytosine en recherche séparée.",
+    "versions": [
+      {
+        "commit": "a35d56e70fe8b1739816a6b65c97753327bd130d",
+        "pushed": true,
+        "source_readings": 21,
+        "preview_url": "https://github.com/vialdjoukang-spec/Medina/blob/a35d56e70fe8b1739816a6b65c97753327bd130d/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html",
+        "bundle_sha256": "f54ba6854dbfd278ac312a5ed71a0a140d223993b6ec540afc9318c545b79977"
+      },
+      {
+        "commit": "3a7c7aa23d769e00f2e4d1e8beba6050d9a8dc6b",
+        "pushed": true,
+        "source_readings": 23,
+        "preview_url": "https://github.com/vialdjoukang-spec/Medina/blob/3a7c7aa23d769e00f2e4d1e8beba6050d9a8dc6b/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html",
+        "bundle_sha256": "ffd0198389ce1d5ed3fa18d1107facde7b26bfdf6e4069101b863ee6829ef49d"
+      }
+    ],
+    "bundle_sha256": "ffd0198389ce1d5ed3fa18d1107facde7b26bfdf6e4069101b863ee6829ef49d"
+  },
+  "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
+  "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
+  "medical_content_written": true,
+  "current_limitations": [
+    "G02 reste ouverte pour réserves médicales explicites ; contrôles techniques ne certifient pas les 14 points.",
+    "Statut suisse du fexinidazole non établi ; flucytosine et erratum candidose non clos.",
+    "Pas de télémétrie tokens/coût exposée ; aucune mesure inventée."
   ]
 }

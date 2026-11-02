@@ -1,27 +1,33 @@
 {
-  "generated_at": "2026-11-02T02:27:41+00:00",
+  "generated_at": "2026-11-02T02:37:37+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T02:27:41+00:00",
+    "checked_at": "2026-11-02T02:37:37+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T02:27:41+00:00",
+    "observed_at": "2026-11-02T02:37:37+00:00",
     "ok": true,
-    "findings": [],
+    "findings": [
+      {
+        "agent": "astra_nephrologie",
+        "level": "warning",
+        "reason": "Preuves/aperçu périmés; nouvelle vérification requise avant clôture: Source modifiée depuis vérification: chapters/N04/N04_b.html"
+      }
+    ],
     "interval_seconds": 600,
-    "observer_pid": 75920,
+    "observer_pid": 133506,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
   "tests": {
     "ok": true,
-    "code_sha256": "e4c289ef6d7e31731192eacb4aecd617e9ec860b645e3165e9a51676abf74974",
-    "at": "2026-11-02T02:24:43+00:00",
+    "code_sha256": "b3457c03b0d3bd1d50caee0be208aff88325fd1b5296b40187d260e66513a10a",
+    "at": "2026-11-02T02:37:12+00:00",
     "returncode": 0,
     "log": "runtime/tests.log"
   },
@@ -76,10 +82,10 @@
       "clinical_orchestration": true,
       "lesson": "G02",
       "worktree": "/workspace/Medina-neurologie",
-      "stage": "verification",
+      "stage": "recherche",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T02:25:16+00:00",
-      "message": "WHO 2024 et RCP exact Fexinidazole Winthrop 17 octobre 2025 relus et intégrés ; divergences seuil et surveillance explicites. Statique natif G02 et betta_verite passent ; reconstruction du bundle puis captures et coordination quatre filières.",
+      "activity_at": "2026-11-02T02:29:53+00:00",
+      "message": "G02 version WHO/fexinidazole 3a7c7aa poussée après contrôles, source-binding final en place. Réserve flucytosine : SwissmedicJournal2024 export seul et RCP français Ancotil500mg septembre2025 relus ; statut suisse actuel encore à établir.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -1102,7 +1108,7 @@
             "Private GitHub cron and local watch depend on runner/environment availability"
           ]
         },
-        "updated_at": "2026-11-02T02:27:38.129303+00:00",
+        "updated_at": "2026-11-02T02:29:53.150183+00:00",
         "current_package": {
           "code": "G02",
           "worktree": "/workspace/Medina-neurologie",
@@ -1131,11 +1137,11 @@
             "14 points présents et 20 rubriques inventoriées ; clôture exhaustive et rapports finaux non terminés"
           ],
           "next_lesson_allowed": false,
-          "commit": "a35d56e70fe8b1739816a6b65c97753327bd130d",
+          "commit": "3a7c7aa23d769e00f2e4d1e8beba6050d9a8dc6b",
           "pushed": true,
           "guard": "passed registry dd31a75b58d0f945d013368203d8b52bcd72bf79",
           "review_mode": "self_review, avec empreintes ; aucune validation humaine ou indépendance revendiquée",
-          "current_revision": "Actualisation WHO2024 et RCP exact EMA Fexinidazole Winthrop17/10/2025 ; nouveau bundle en contrôle avant push.",
+          "current_revision": "Version WHO2024 et fexinidazole contrôlée et poussée ; réserve flucytosine en recherche séparée.",
           "versions": [
             {
               "commit": "a35d56e70fe8b1739816a6b65c97753327bd130d",
@@ -1143,8 +1149,16 @@
               "source_readings": 21,
               "preview_url": "https://github.com/vialdjoukang-spec/Medina/blob/a35d56e70fe8b1739816a6b65c97753327bd130d/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html",
               "bundle_sha256": "f54ba6854dbfd278ac312a5ed71a0a140d223993b6ec540afc9318c545b79977"
+            },
+            {
+              "commit": "3a7c7aa23d769e00f2e4d1e8beba6050d9a8dc6b",
+              "pushed": true,
+              "source_readings": 23,
+              "preview_url": "https://github.com/vialdjoukang-spec/Medina/blob/3a7c7aa23d769e00f2e4d1e8beba6050d9a8dc6b/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html",
+              "bundle_sha256": "ffd0198389ce1d5ed3fa18d1107facde7b26bfdf6e4069101b863ee6829ef49d"
             }
-          ]
+          ],
+          "bundle_sha256": "ffd0198389ce1d5ed3fa18d1107facde7b26bfdf6e4069101b863ee6829ef49d"
         },
         "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
         "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
@@ -1155,7 +1169,7 @@
           "Pas de télémétrie tokens/coût exposée ; aucune mesure inventée."
         ]
       },
-      "activity_age_seconds": 145,
+      "activity_age_seconds": 465,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -1195,8 +1209,8 @@
       "worktree": "/workspace/Medina-endocrinologie",
       "stage": "verification",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T02:21:44+00:00",
-      "message": "Paquet E00 : 14/20 reliés aux ancrages, 56 fenêtres vérifiées, six sciences PASS, bundle natif fonctionnel, navigateur origine interceptée 1440/390 avec taille24 réellement appliquée PASS. Dernière reconstruction après auto-relecture linguistique ; reçus MED/LANG/visuels et commit/push en préparation.",
+      "activity_at": "2026-11-02T02:34:19+00:00",
+      "message": "Paquet E00 complet, auto-relectures attribuées et contrat harness PASS. Source-binding final lié aux six chapitres, glossaire et image. Contrôle du périmètre Git puis commit/push de la branche réservée, sans PR.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -2518,9 +2532,9 @@
         "tokens_actual": null,
         "cost_actual": null
       },
-      "activity_age_seconds": 357,
+      "activity_age_seconds": 199,
       "activity_fresh": true,
-      "sections_per_hour": 13.18,
+      "sections_per_hour": 11.4,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -2546,10 +2560,10 @@
       "clinical_orchestration": false,
       "lesson": "N04",
       "worktree": "/workspace/Medina-nephrologie",
-      "stage": "revue_requise",
+      "stage": "verification",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T02:26:45+00:00",
-      "message": "N04 paquet complet prêt pour revue utilisateur : commit4d7525f4, garde périmètrePASS, contratPASS,14/20,6sciences,9SEMIO,5originaux/9occurrences. Auto-relectures déclarées +3FI revues séparément par parent concordantes ; ligne prophylaxie clarifiée. PasPR/main ni leçon suivante.",
+      "activity_at": "2026-11-02T02:37:06+00:00",
+      "message": "Relecture clôture20rubriques : ambiguïté héritée durée corticoïdes MCD identifiée et corrigée A10+fenêtre ; PDF KDIGOfigure45/S155 diffère du texteS156, cadre européen total≤24semaines explicité.41passages actuels, anciennepreuveTX1signalée. Regénération tests/aperçu/binding avant complete ; N04resteactif.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -2614,7 +2628,7 @@
             "glossary/n04.py": "9ce1e996d779162cd29b2bad0983024fdeb50341eb910cc868bc9b6689d23657"
           },
           "final_source_files_sha256": {
-            "chapters/N04/N04_a.html": "23bac7f82a394c5a4b97cece035b1ed0ca4574260510dfce674d12a9522bd174",
+            "chapters/N04/N04_a.html": "4bb6710c0d3c4733d36c2850b4f7551e5618dfeb5a7313f75836bd35a042fd75",
             "chapters/N04/N04_b.html": "18d4bf8078c3ced89cdfa80ea3e353d53f3fc438b71e12d937b20a0574df6182",
             "chapters/N04/N04_c.html": "1362d1ab0fca9e18341c4ce71c60c533c4f5aae8c7279164773779c173ccb5e5",
             "chapters/N04/N04_d.html": "7bab6d31094bcd86f438e629782d365f420f9c16abf926baf1b7d99b37febe3a",
@@ -3045,7 +3059,7 @@
             "initial_status": "observed"
           }
         ],
-        "updated_at": "2026-11-02T02:26:45.901006+00:00",
+        "updated_at": "2026-11-02T02:30:32.114009+00:00",
         "initial_counts": {
           "conservative_s04_targets": 33,
           "existing": 6,
@@ -3081,16 +3095,21 @@
           "screenshots": "/workspace/Medina-nephrologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE/captures",
           "pr": null,
           "published_main": false,
-          "commit": "4d7525f4e6166b54562320d59fc82e7808092bae",
+          "commit": "1f1a9688d54fbdeecd9f9ac162a17a690a563f03",
           "branch": "codex/alpha77/n04-integrate-g1",
-          "preview_sha256": "f072f2bc1a220e0b8374a397449d6186cd79186500f736ffec0832f7f3912bb4",
+          "preview_sha256": "0283a563bb5784b3297f2d71f66f6ca65c3a3804f24c2a52338bf44145235ed4",
           "validation": "technical_contract_pass_true; clinical_certification_false; publication_allowed_false",
           "scope_guard": {
             "result": "passed",
             "base": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-            "head": "4d7525f4e6166b54562320d59fc82e7808092bae",
-            "registry_sha": "f68626cfb4f3cb498fae1a19c37af1cf962b82ea"
-          }
+            "head": "1f1a9688d54fbdeecd9f9ac162a17a690a563f03",
+            "registry_sha": "f68626cfb4f3cb498fae1a19c37af1cf962b82ea",
+            "changed_files": 74
+          },
+          "remote_head_verified": "1f1a9688d54fbdeecd9f9ac162a17a690a563f03",
+          "pushed": true,
+          "working_tree_clean": true,
+          "source_binding": "/workspace/Medina-nephrologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE/source-binding.json"
         },
         "gate": {
           "initial_ci": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41372212569",
@@ -3125,13 +3144,14 @@
           "science": "passed5355words6disciplines7figures",
           "verite": "passed",
           "browser": "passed1440/390;9incorporatedimageoccurrencesdecodedperviewport;Livre24px;0overflow;0JSerrors",
-          "preservation": "22/22inheritedsectionskept;26199→30517words",
-          "contract": "passedwithself_reviewdeclared"
+          "preservation": "22/22 inherited sections kept;26199→30518words",
+          "contract": "passedwithself_reviewdeclared",
+          "source_binding": "12canonical sources and10proof digests frozen after final tests"
         }
       },
-      "activity_age_seconds": 56,
+      "activity_age_seconds": 32,
       "activity_fresh": true,
-      "sections_per_hour": 13.18,
+      "sections_per_hour": 11.4,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -3161,17 +3181,17 @@
       "clinical_orchestration": false,
       "lesson": "C85",
       "worktree": "/workspace/Medina-hematologie",
-      "stage": "verification",
+      "stage": "revue_requise",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T02:22:17+00:00",
-      "message": "C85 : vérifications finales réussies; reconstruction autonome et captures renouvelées. Relecture distincte ciblée de trois FI N04 consignée.",
+      "activity_at": "2026-11-02T02:33:54+00:00",
+      "message": "C85 : aperçu autonome final et six contrôles réussis ; 14 points cartographiés, 20 rubriques renseignées, sept réserves ouvertes. Deux originaux humains annotés, six sciences et neuf sections de sémiologie.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 12,
+      "completed_sections": 14,
       "receipt_sha256": "eefeffc1101a1e7d319dc093e1abff08445f84772dd4222ed29f2a05aaae4062",
       "branch": "codex/alpha77/c85-integrate-g1",
       "allowed_paths": [
@@ -3376,14 +3396,122 @@
         "tokens": null,
         "cost": null,
         "baseline": {
-          "files": 6,
-          "bytes": 182017
+          "global_words": null,
+          "science_words": 999,
+          "science_disciplines": 4
         },
-        "next_action": "Passages sources, monographie, sémiologie et iconographie avant toute revue"
+        "next_action": "Passages sources, monographie, sémiologie et iconographie avant toute revue",
+        "status": "Version autonome vérifiée, sept réserves médicales/documentaires ouvertes",
+        "updated_at": "2026-11-02T02:26:15.244984+00:00",
+        "current": {
+          "global_words": 20667,
+          "science_words": 4338,
+          "science_disciplines": 6,
+          "science_figures": 6,
+          "original_human_images": 2,
+          "semio_sections": 9,
+          "popups": 49,
+          "quiz": 5
+        },
+        "sources_current": 18,
+        "source_inherited": 23,
+        "monograph_points_mapped": 14,
+        "medina_rubrics": 20,
+        "blocking_findings": [
+          {
+            "id": "C85-R1",
+            "subject": "Classification et stades hérités",
+            "status": "open",
+            "next_action": "Relire les sources exactes des tableaux de stadification et leurs populations."
+          },
+          {
+            "id": "C85-R2",
+            "subject": "Compression, anesthésie et corticothérapie avant biopsie",
+            "status": "open",
+            "next_action": "Documenter les décisions urgentes et les limites de la biopsie avant traitement dans une source européenne actuelle."
+          },
+          {
+            "id": "C85-R3",
+            "subject": "Composants cytotoxiques des protocoles",
+            "status": "open",
+            "next_action": "Contrôler les FI exactes et les adaptations des composants non couverts par les cinq FI déjà relues."
+          },
+          {
+            "id": "C85-R4",
+            "subject": "Pédiatrie et situations particulières restantes",
+            "status": "open",
+            "next_action": "Vérifier le périmètre pédiatrique et les adaptations non couvertes; distinguer hors indication et absence de données."
+          },
+          {
+            "id": "C85-R5",
+            "subject": "Spécificités administratives suisses",
+            "status": "open",
+            "next_action": "Vérifier LS/LiMA, Suva/LAA et aptitude à la conduite ou justifier explicitement la non-applicabilité."
+          },
+          {
+            "id": "C85-R6",
+            "subject": "Paramètres historiques chiffrés",
+            "status": "open",
+            "next_action": "Comparer les chiffres hérités restant non relus aux passages et dénominateurs exacts."
+          },
+          {
+            "id": "C85-R7",
+            "subject": "Objectifs de formation fédérale",
+            "status": "open",
+            "next_action": "Relier les objectifs PROFILES effectivement applicables aux décisions pédagogiques, sans fabriquer un référentiel officielC85."
+          }
+        ],
+        "preview": "/workspace/Medina-hematologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE/C85-apercu-autonome.html",
+        "preview_sha256": "f769018b20c2cdbd7eb31eb50334180d3e8d0e512effee17c8c905db111cb258",
+        "tests": {
+          "ok": true,
+          "checks": [
+            {
+              "check": "static",
+              "exit_code": 0,
+              "finished_at": "2026-11-02T02:25:45.520858+00:00"
+            },
+            {
+              "check": "sciences",
+              "exit_code": 0,
+              "finished_at": "2026-11-02T02:25:45.592987+00:00"
+            },
+            {
+              "check": "verite",
+              "exit_code": 0,
+              "finished_at": "2026-11-02T02:25:45.622542+00:00"
+            },
+            {
+              "check": "build",
+              "exit_code": 0,
+              "finished_at": "2026-11-02T02:26:01.385620+00:00"
+            },
+            {
+              "check": "bundle",
+              "exit_code": 0,
+              "finished_at": "2026-11-02T02:26:01.668818+00:00"
+            },
+            {
+              "check": "browser",
+              "exit_code": 0,
+              "finished_at": "2026-11-02T02:26:15.237017+00:00"
+            }
+          ],
+          "receipt": "/workspace/Medina-hematologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE/verification.json"
+        },
+        "reviews": {
+          "mode": "self_review",
+          "report": "/workspace/Medina-hematologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE/review-package/self-review.json",
+          "human_medical_validation": false
+        },
+        "complete": false,
+        "clinical_certification": false,
+        "tokens_actual": null,
+        "cost_actual": null
       },
-      "activity_age_seconds": 324,
+      "activity_age_seconds": 224,
       "activity_fresh": true,
-      "sections_per_hour": 11.29,
+      "sections_per_hour": 11.4,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
@@ -3806,6 +3934,71 @@
       "agent": "astra_nephrologie",
       "stage": "revue_requise",
       "message": "N04 paquet complet prêt pour revue utilisateur : commit4d7525f4, garde périmètrePASS, contratPASS,14/20,6sciences,9SEMIO,5originaux/9occurrences. Auto-relectures déclarées +3FI revues séparément par parent concordantes ; ligne prophylaxie clarifiée. PasPR/main ni leçon suivante."
+    },
+    {
+      "at": "2026-11-02T02:27:41+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T02:29:14+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T02:29:53+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "G02 version WHO/fexinidazole 3a7c7aa poussée après contrôles, source-binding final en place. Réserve flucytosine : SwissmedicJournal2024 export seul et RCP français Ancotil500mg septembre2025 relus ; statut suisse actuel encore à établir."
+    },
+    {
+      "at": "2026-11-02T02:30:32+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "revue_requise",
+      "message": "LivraisonN04 finale poussée1f1a9688 ; distant vérifié, arbre propre, gardePASS74fichiers bornés. Aperçu autonome finalSHA0283a563..., source-binding figé12sources+10preuves après tests. ContratPASS, revues propres déclarées et3FIparent concordantes, aucunecertificationglobale/PR/main. Attente revueutilisateur et clôture avant suivante."
+    },
+    {
+      "at": "2026-11-02T02:30:51+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T02:33:54+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T02:33:54+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "revue_requise",
+      "message": "C85 : aperçu autonome final et six contrôles réussis ; 14 points cartographiés, 20 rubriques renseignées, sept réserves ouvertes. Deux originaux humains annotés, six sciences et neuf sections de sémiologie."
+    },
+    {
+      "at": "2026-11-02T02:34:19+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "verification",
+      "message": "Paquet E00 complet, auto-relectures attribuées et contrat harness PASS. Source-binding final lié aux six chapitres, glossaire et image. Contrôle du périmètre Git puis commit/push de la branche réservée, sans PR."
+    },
+    {
+      "at": "2026-11-02T02:37:06+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "verification",
+      "message": "Relecture clôture20rubriques : ambiguïté héritée durée corticoïdes MCD identifiée et corrigée A10+fenêtre ; PDF KDIGOfigure45/S155 diffère du texteS156, cadre européen total≤24semaines explicité.41passages actuels, anciennepreuveTX1signalée. Regénération tests/aperçu/binding avant complete ; N04resteactif."
+    },
+    {
+      "at": "2026-11-02T02:37:13+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
     }
   ],
   "cache": {
@@ -3814,7 +4007,7 @@
     "bytes_avoided": 1155129
   },
   "monitor": {
-    "mode": "GitHub Actions déclenché sur branche par publication locale toutes600s",
+    "mode": "Relais indépendant GitHub Actions toutes600s, plus publication locale toutes600s",
     "independent_github_cron": "préparé, non actif : workflow hors branche par défaut",
     "dedicated_repository_attempt": "GitHub createRepository refusé : Resource not accessible by integration",
     "main_medina_modified": false,
@@ -3822,7 +4015,7 @@
     "branch": "codex/harness-observations-20261102",
     "last_verified_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41374424262",
     "last_verified_conclusion": "success",
-    "report_automation": "enabled;2026-11-02T08:00:00+01:00",
+    "report_automation": "enabled;2026-11-02T08:00:00+01:00; updated with independent artifacts and lesson previews",
     "independent_watchdog": "active; workflow_dispatch handoff verified",
     "watchdog_bootstrap_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41374424262",
     "watchdog_successor_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41374451212",
@@ -3842,6 +4035,13 @@
       "incident": "Three agents were observed interrupted after environment restart; each resumed by followup_task and then confirmed running. Exact interruption onset unknown.",
       "author_activity_refreshed": false,
       "external_watchdog_can_restart_native_agents": false
+    },
+    "last_verified_observation": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41377183716",
+    "last_verified_observation_result": "Observation et artefact réussis; prochain relais en cours à02:25UTC",
+    "incident_stale_activity": {
+      "run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41376224282",
+      "observed_at": "2026-11-02T02:10:19Z",
+      "result": "Échec affiché pour les activités anciennes des trois auteurs, sans arrêt du relais; observation suivante réussie."
     }
   },
   "prompt": {
@@ -10658,17 +10858,17 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T02:24:12+00:00",
+    "observed_at": "2026-11-02T02:37:37+00:00",
     "lessons": [
       {
         "code": "G02",
         "agent": "astra_neurologie",
         "branch": "codex/alpha77/g02-integrate-g1",
-        "head_observed": "a35d56e70fe8b1739816a6b65c97753327bd130d",
+        "head_observed": "4f92780d038dcb73cba79d24766659656c5ad27f",
         "local_preview": "/workspace/Medina-neurologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html",
         "exists": true,
-        "sha256": "f54ba6854dbfd278ac312a5ed71a0a140d223993b6ec540afc9318c545b79977",
-        "bytes": 8214114,
+        "sha256": "02c2f4155bd30e94bed7288cf4b38ed0be21e442285125725189a7cdbc568f79",
+        "bytes": 8221005,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/g02-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/g02-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
@@ -10679,11 +10879,11 @@
         "code": "E00",
         "agent": "astra_endocrinologie",
         "branch": "codex/alpha77/e00-integrate-g1",
-        "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+        "head_observed": "af6d7bc245659c432628d0c3538a8291202d5099",
         "local_preview": "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/E00-apercu-autonome.html",
         "exists": true,
-        "sha256": "96989bae269d0b1814d22435a1a002b1386ff9f667644fa517d9151b6a9b0cbd",
-        "bytes": 6295852,
+        "sha256": "e83f62ac0d7ad5395444aa3ba49f412fa80291e9895e919bf79160ef24ce0aa9",
+        "bytes": 6295900,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/e00-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/E00-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/e00-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
@@ -10694,11 +10894,11 @@
         "code": "N04",
         "agent": "astra_nephrologie",
         "branch": "codex/alpha77/n04-integrate-g1",
-        "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+        "head_observed": "1f1a9688d54fbdeecd9f9ac162a17a690a563f03",
         "local_preview": "/workspace/Medina-nephrologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE/N04-apercu-autonome.html",
         "exists": true,
-        "sha256": "f072f2bc1a220e0b8374a397449d6186cd79186500f736ffec0832f7f3912bb4",
-        "bytes": 28488832,
+        "sha256": "0283a563bb5784b3297f2d71f66f6ca65c3a3804f24c2a52338bf44145235ed4",
+        "bytes": 28488836,
         "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/n04-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N04-INTEGRATE/N04-apercu-autonome.html",
         "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/n04-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
@@ -10709,7 +10909,7 @@
         "code": "C85",
         "agent": "codex_hematologie",
         "branch": "codex/alpha77/c85-integrate-g1",
-        "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+        "head_observed": "6472975428e25cc1e58cc1d581e45fdad7712dc3",
         "local_preview": "/workspace/Medina-hematologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE/C85-apercu-autonome.html",
         "exists": true,
         "sha256": "f769018b20c2cdbd7eb31eb50334180d3e8d0e512effee17c8c905db111cb258",
@@ -10722,5 +10922,6 @@
       }
     ],
     "remote_availability": "Verify branch push separately; a local file does not prove remote availability."
-  }
+  },
+  "completed_lessons": []
 }

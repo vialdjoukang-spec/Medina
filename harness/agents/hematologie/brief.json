@@ -193,8 +193,116 @@
   "tokens": null,
   "cost": null,
   "baseline": {
-    "files": 6,
-    "bytes": 182017
+    "global_words": null,
+    "science_words": 999,
+    "science_disciplines": 4
   },
-  "next_action": "Passages sources, monographie, sémiologie et iconographie avant toute revue"
+  "next_action": "Passages sources, monographie, sémiologie et iconographie avant toute revue",
+  "status": "Version autonome vérifiée, sept réserves médicales/documentaires ouvertes",
+  "updated_at": "2026-11-02T02:26:15.244984+00:00",
+  "current": {
+    "global_words": 20667,
+    "science_words": 4338,
+    "science_disciplines": 6,
+    "science_figures": 6,
+    "original_human_images": 2,
+    "semio_sections": 9,
+    "popups": 49,
+    "quiz": 5
+  },
+  "sources_current": 18,
+  "source_inherited": 23,
+  "monograph_points_mapped": 14,
+  "medina_rubrics": 20,
+  "blocking_findings": [
+    {
+      "id": "C85-R1",
+      "subject": "Classification et stades hérités",
+      "status": "open",
+      "next_action": "Relire les sources exactes des tableaux de stadification et leurs populations."
+    },
+    {
+      "id": "C85-R2",
+      "subject": "Compression, anesthésie et corticothérapie avant biopsie",
+      "status": "open",
+      "next_action": "Documenter les décisions urgentes et les limites de la biopsie avant traitement dans une source européenne actuelle."
+    },
+    {
+      "id": "C85-R3",
+      "subject": "Composants cytotoxiques des protocoles",
+      "status": "open",
+      "next_action": "Contrôler les FI exactes et les adaptations des composants non couverts par les cinq FI déjà relues."
+    },
+    {
+      "id": "C85-R4",
+      "subject": "Pédiatrie et situations particulières restantes",
+      "status": "open",
+      "next_action": "Vérifier le périmètre pédiatrique et les adaptations non couvertes; distinguer hors indication et absence de données."
+    },
+    {
+      "id": "C85-R5",
+      "subject": "Spécificités administratives suisses",
+      "status": "open",
+      "next_action": "Vérifier LS/LiMA, Suva/LAA et aptitude à la conduite ou justifier explicitement la non-applicabilité."
+    },
+    {
+      "id": "C85-R6",
+      "subject": "Paramètres historiques chiffrés",
+      "status": "open",
+      "next_action": "Comparer les chiffres hérités restant non relus aux passages et dénominateurs exacts."
+    },
+    {
+      "id": "C85-R7",
+      "subject": "Objectifs de formation fédérale",
+      "status": "open",
+      "next_action": "Relier les objectifs PROFILES effectivement applicables aux décisions pédagogiques, sans fabriquer un référentiel officielC85."
+    }
+  ],
+  "preview": "/workspace/Medina-hematologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE/C85-apercu-autonome.html",
+  "preview_sha256": "f769018b20c2cdbd7eb31eb50334180d3e8d0e512effee17c8c905db111cb258",
+  "tests": {
+    "ok": true,
+    "checks": [
+      {
+        "check": "static",
+        "exit_code": 0,
+        "finished_at": "2026-11-02T02:25:45.520858+00:00"
+      },
+      {
+        "check": "sciences",
+        "exit_code": 0,
+        "finished_at": "2026-11-02T02:25:45.592987+00:00"
+      },
+      {
+        "check": "verite",
+        "exit_code": 0,
+        "finished_at": "2026-11-02T02:25:45.622542+00:00"
+      },
+      {
+        "check": "build",
+        "exit_code": 0,
+        "finished_at": "2026-11-02T02:26:01.385620+00:00"
+      },
+      {
+        "check": "bundle",
+        "exit_code": 0,
+        "finished_at": "2026-11-02T02:26:01.668818+00:00"
+      },
+      {
+        "check": "browser",
+        "exit_code": 0,
+        "finished_at": "2026-11-02T02:26:15.237017+00:00"
+      }
+    ],
+    "receipt": "/workspace/Medina-hematologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE/verification.json"
+  },
+  "reviews": {
+    "mode": "self_review",
+    "report": "/workspace/Medina-hematologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C85-INTEGRATE/review-package/self-review.json",
+    "human_medical_validation": false
+  },
+  "complete": false,
+  "clinical_certification": false,
+  "tokens_actual": null,
+  "cost_actual": null
 }

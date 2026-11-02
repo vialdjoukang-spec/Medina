@@ -5,10 +5,10 @@
     "astra_neurologie": {
       "lesson": "G02",
       "worktree": "/workspace/Medina-neurologie",
-      "stage": "verification",
+      "stage": "recherche",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T02:25:16+00:00",
-      "message": "WHO 2024 et RCP exact Fexinidazole Winthrop 17 octobre 2025 relus et intégrés ; divergences seuil et surveillance explicites. Statique natif G02 et betta_verite passent ; reconstruction du bundle puis captures et coordination quatre filières.",
+      "activity_at": "2026-11-02T02:29:53+00:00",
+      "message": "G02 version WHO/fexinidazole 3a7c7aa poussée après contrôles, source-binding final en place. Réserve flucytosine : SwissmedicJournal2024 export seul et RCP français Ancotil500mg septembre2025 relus ; statut suisse actuel encore à établir.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -31,8 +31,8 @@
       "worktree": "/workspace/Medina-endocrinologie",
       "stage": "verification",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T02:21:44+00:00",
-      "message": "Paquet E00 : 14/20 reliés aux ancrages, 56 fenêtres vérifiées, six sciences PASS, bundle natif fonctionnel, navigateur origine interceptée 1440/390 avec taille24 réellement appliquée PASS. Dernière reconstruction après auto-relecture linguistique ; reçus MED/LANG/visuels et commit/push en préparation.",
+      "activity_at": "2026-11-02T02:34:19+00:00",
+      "message": "Paquet E00 complet, auto-relectures attribuées et contrat harness PASS. Source-binding final lié aux six chapitres, glossaire et image. Contrôle du périmètre Git puis commit/push de la branche réservée, sans PR.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -53,10 +53,10 @@
     "astra_nephrologie": {
       "lesson": "N04",
       "worktree": "/workspace/Medina-nephrologie",
-      "stage": "revue_requise",
+      "stage": "verification",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T02:26:45+00:00",
-      "message": "N04 paquet complet prêt pour revue utilisateur : commit4d7525f4, garde périmètrePASS, contratPASS,14/20,6sciences,9SEMIO,5originaux/9occurrences. Auto-relectures déclarées +3FI revues séparément par parent concordantes ; ligne prophylaxie clarifiée. PasPR/main ni leçon suivante.",
+      "activity_at": "2026-11-02T02:37:06+00:00",
+      "message": "Relecture clôture20rubriques : ambiguïté héritée durée corticoïdes MCD identifiée et corrigée A10+fenêtre ; PDF KDIGOfigure45/S155 diffère du texteS156, cadre européen total≤24semaines explicité.41passages actuels, anciennepreuveTX1signalée. Regénération tests/aperçu/binding avant complete ; N04resteactif.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -77,17 +77,17 @@
     "codex_hematologie": {
       "lesson": "C85",
       "worktree": "/workspace/Medina-hematologie",
-      "stage": "verification",
+      "stage": "revue_requise",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T02:22:17+00:00",
-      "message": "C85 : vérifications finales réussies; reconstruction autonome et captures renouvelées. Relecture distincte ciblée de trois FI N04 consignée.",
+      "activity_at": "2026-11-02T02:33:54+00:00",
+      "message": "C85 : aperçu autonome final et six contrôles réussis ; 14 points cartographiés, 20 rubriques renseignées, sept réserves ouvertes. Deux originaux humains annotés, six sciences et neuf sections de sémiologie.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 12,
+      "completed_sections": 14,
       "receipt_sha256": "eefeffc1101a1e7d319dc093e1abff08445f84772dd4222ed29f2a05aaae4062",
       "branch": "codex/alpha77/c85-integrate-g1",
       "allowed_paths": [
@@ -524,6 +524,71 @@
       "action": "watch",
       "ok": true,
       "findings": 0
+    },
+    {
+      "at": "2026-11-02T02:29:14+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T02:29:53+00:00",
+      "action": "progress",
+      "agent": "astra_neurologie",
+      "stage": "recherche",
+      "message": "G02 version WHO/fexinidazole 3a7c7aa poussée après contrôles, source-binding final en place. Réserve flucytosine : SwissmedicJournal2024 export seul et RCP français Ancotil500mg septembre2025 relus ; statut suisse actuel encore à établir."
+    },
+    {
+      "at": "2026-11-02T02:30:32+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "revue_requise",
+      "message": "LivraisonN04 finale poussée1f1a9688 ; distant vérifié, arbre propre, gardePASS74fichiers bornés. Aperçu autonome finalSHA0283a563..., source-binding figé12sources+10preuves après tests. ContratPASS, revues propres déclarées et3FIparent concordantes, aucunecertificationglobale/PR/main. Attente revueutilisateur et clôture avant suivante."
+    },
+    {
+      "at": "2026-11-02T02:30:51+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T02:33:54+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T02:33:54+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "revue_requise",
+      "message": "C85 : aperçu autonome final et six contrôles réussis ; 14 points cartographiés, 20 rubriques renseignées, sept réserves ouvertes. Deux originaux humains annotés, six sciences et neuf sections de sémiologie."
+    },
+    {
+      "at": "2026-11-02T02:34:19+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "verification",
+      "message": "Paquet E00 complet, auto-relectures attribuées et contrat harness PASS. Source-binding final lié aux six chapitres, glossaire et image. Contrôle du périmètre Git puis commit/push de la branche réservée, sans PR."
+    },
+    {
+      "at": "2026-11-02T02:37:06+00:00",
+      "action": "progress",
+      "agent": "astra_nephrologie",
+      "stage": "verification",
+      "message": "Relecture clôture20rubriques : ambiguïté héritée durée corticoïdes MCD identifiée et corrigée A10+fenêtre ; PDF KDIGOfigure45/S155 diffère du texteS156, cadre européen total≤24semaines explicité.41passages actuels, anciennepreuveTX1signalée. Regénération tests/aperçu/binding avant complete ; N04resteactif."
+    },
+    {
+      "at": "2026-11-02T02:37:13+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T02:37:37+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
     }
   ],
   "cache": {

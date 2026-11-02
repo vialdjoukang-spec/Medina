@@ -1,3 +1,9 @@
+## État courant distinct du cliché préparatoire
+
+Mise à jour du 2 novembre 2026 : G02 est acquise et active dans `/workspace/Medina-neurologie`, branche `codex/alpha77/g02-integrate-g1`. La préparation ci-dessous reste historique. Le premier paquet a été poussé au commit `a35d56e70fe8b1739816a6b65c97753327bd130d` ; [aperçu autonome de cette version](https://github.com/vialdjoukang-spec/Medina/blob/a35d56e70fe8b1739816a6b65c97753327bd130d/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html). La révision WHO et produit exact fexinidazole ajoute deux lectures (23 au total), avec reconstruction/captures passées et push au commit `3a7c7aa23d769e00f2e4d1e8beba6050d9a8dc6b` ; [aperçu de cette version](https://github.com/vialdjoukang-spec/Medina/blob/3a7c7aa23d769e00f2e4d1e8beba6050d9a8dc6b/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html). Le chemin local courant est `docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G02-INTEGRATE/G02-apercu-autonome.html` dans ce worktree.
+
+Les réserves substantielles restent dans le README du paquet et `brief.json`. L’auto-relecture explicite est autorisée par le contrat ; elle ne doit pas être appelée indépendante. G05 demeure un candidat ultérieur, aucun passage automatique. Voir aussi `orchestration.md` pour la coordination des quatre filières.
+
 # Préparation Neurologie — aucun cours produit
 
 Base inspectée : `8a512893acbab9caa0dcfdd0e8682a44ea72fda6`. Modèle demandé par le parent : GPT-6 Astra, réflexion élevée. Les tokens consommés ne sont pas mesurables ici ; aucun chiffre n’est estimé. Le présent dossier contient uniquement une préparation, sans rédaction médicale, acquisition de réservation ni changement des sources.

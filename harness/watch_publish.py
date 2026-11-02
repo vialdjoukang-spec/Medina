@@ -31,9 +31,10 @@ def run(root,publisher):
     actual=subprocess.check_output(['git','-C',str(publisher),'branch','--show-current'],text=True).strip()
     if actual!=BRANCH:raise ValueError('Branche de publication non autorisée')
     staged=[]
+    agent_files=[f"agents/{x['specialty']}/{name}" for x in h.config['agents'] for name in ('brief.json','inventaire.md','orchestration.md')]
     # A closed production gate must still publish observations and alerts.
     # Only code whose test receipt is current may replace the remote runtime.
-    for name in FILES+(CODE_FILES if gate['allowed'] else []):
+    for name in FILES+agent_files+(CODE_FILES if gate['allowed'] else []):
         src=h.home/name
         if src.exists():
             dest=publisher/'harness'/name;dest.parent.mkdir(parents=True,exist_ok=True)
