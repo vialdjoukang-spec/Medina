@@ -5,7 +5,7 @@
   "main_medina_modified": false,
   "native_agents_persistent": false,
   "branch": "codex/harness-observations-20261102",
-  "last_verified_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41446036893",
+  "last_verified_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41450379205",
   "last_verified_conclusion": "failure",
   "report_automation": "enabled;2026-11-02T08:00:00+01:00; updated with independent artifacts and lesson previews",
   "independent_watchdog": "active; workflow_dispatch handoff verified",
@@ -28,15 +28,15 @@
     "author_activity_refreshed": false,
     "external_watchdog_can_restart_native_agents": false
   },
-  "last_verified_observation": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41446036893",
-  "last_verified_observation_result": "Observation indépendante 12:37:30 UTC, snapshot 12:35:14 : healthy:false, activité astra_endocrinologie ancienne. Jalons auteur réels suivants à lire séparément ; aucune activité renouvelée par la veille.",
+  "last_verified_observation": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41450379205",
+  "last_verified_observation_result": "Observation indépendante 13:08:47 UTC sur snapshot 13:05:15 : healthy:false, activité neurologie ancienne. Le relais suivant 41451886821 est réellement en cours, conclusion non anticipée.",
   "incident_stale_activity": {
     "run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41376224282",
     "observed_at": "2026-11-02T02:10:19Z",
     "result": "Échec affiché pour les activités anciennes des trois auteurs, sans arrêt du relais; observation suivante réussie."
   },
   "native_agents_last_observed": {
-    "at": "2026-11-02T12:48:01.278942+00:00",
+    "at": "2026-11-02T13:22:30.593442+00:00",
     "provider": "collaboration.list_agents",
     "agents": [
       {
@@ -57,7 +57,7 @@
       }
     ],
     "author_activity_refreshed": false,
-    "meaning": "Quatre états natifs réellement observés par collaboration.list_agents dans ce tour ; ce constat ne prouve pas une activité ininterrompue et ne renouvelle aucun reçu."
+    "meaning": "Observation native ponctuelle dans ce tour, distincte de la dernière progression clinique ; aucun reçu renouvelé."
   },
   "native_model_handoff": {
     "at": "2026-11-02T10:23:02.648791+00:00",
@@ -83,5 +83,12 @@
     },
     "restart_by": "parent via collaboration.spawn_agent, jamais par watchdog",
     "author_activity_refreshed": false
+  },
+  "disk_incident_e32": {
+    "at_reported": "2026-11-02T13:16:00+00:00",
+    "time_precision": "heure de message approximative ; voir preuve transition E30-E32",
+    "failure": "No space left on device pendant création du worktree E32",
+    "recovery": "Worktree sur /tmp/Medina-endocrinologie-E32, lien /workspace/Medina-endocrinologie-E32 ; acquisition a0c5256a7862475edb5bc51014f733b0876c02ab, start et claim réussis. Aucune suppression des archives.",
+    "start_guard_incident": "Une tentative avant fin du push acquisition refusée ; reçu conservé = tentative réellement réussie."
   }
 }

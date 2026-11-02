@@ -127,3 +127,8 @@ D77 est retiré de la file du parent et ajouté uniquement à ce slot. Le parent
 ## Renforcement effectif de la veille sémiologique
 
 Depuis le2novembre2026 à13h02heure suisse, le harness impose sept règles structurelles natives supplémentaires avant toute nouvelle clôture :six onglets, premier onglet sémiologique/ARIA correct, panneau visible et lié, titre h3 exact, neuf rubriques nommées contenant du texte, lienHTTPS dans sources, marqueur clinique sur un élément contenant de la prose danspA.53tests réussissent avec des cas négatifs représentant les défauts observés. La veille600s relit les sources des achèvements, conserve les réserves historiques et ne renouvelle ni activité auteur ni source-binding. Une réserve historique ne transforme pas une livraison en publication autorisée ; elle doit être traitée avant intégration sous mandat approprié.
+
+
+## Relais réservé après D77 — 2026-11-02T13:01:56.169261+00:00
+
+C92 est une création et réserve `chapters.json` avec sa mission. D62, D65, D66, C82 et C88 nécessitent également ce fichier partagé : ils ne sont pas acquis en parallèle. Pour maintenir quatre auteurs sans collision, G09 (cours existant, aucun droit sur `chapters.json`) est retiré de la file du créneau neurologie initial et attribué exclusivement au créneau natif `/root/sol_nephrologie`, après achèvement réel, push vérifié et libération de D77. Affichage futur : **Sol-Neurologie-G09**. L’identifiant technique historique `astra_nephrologie` est conservé pour ne pas perdre ses huit achèvements rénaux et son relais D77. G06 puis G07/G08 restent au premier auteur neurologie. Le classement de G09 dans le système neurologie du plan ne change pas.
