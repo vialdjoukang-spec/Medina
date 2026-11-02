@@ -6,24 +6,60 @@
   "fragment_label": "N-07-Néphrologie",
   "prepared_at": "2026-11-02T01:16:51.601917+00:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "status": "G09_reserved_verification",
+  "status": "G09_completed_released_transition_E40",
   "selected_lesson": {
     "code": "G09",
     "title": "Séquelles d’affections inflammatoires du système nerveux central",
     "mode": "existing_course_review",
     "worktree": "/workspace/Medina-neurologie-G09",
     "branch": "codex/alpha77/g09-integrate-g1",
-    "reservation_acquired": true,
+    "reservation_acquired": false,
     "acquisition_registry_sha": "77cb9b8568f410dadca92bccb36aa17c8f317d3a",
     "start_registry_sha": "4098c23ca6f8c15cc006138e1ced0ce7f6cef0fa",
     "harness_claimed": true,
     "runtime_name": "sol_nephrologie",
     "production_name": "Sol-Neurologie-G09",
     "runtime_model": "gpt-6.1-sol",
-    "stage": "verification",
+    "stage": "completed",
     "clinical_certification": false,
     "start_receipt": "/workspace/Medina-neurologie-G09/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G09-INTEGRATE/start.json",
-    "catalogue_scope": "Cours G09 existant exclusivement ; aucun mandat sur chapters.json."
+    "catalogue_scope": "Cours G09 existant exclusivement ; aucun mandat sur chapters.json.",
+    "status": "harness_complete_reservation_released",
+    "harness_completed_at": "2026-11-02T14:09:51+00:00",
+    "source_commit": "d2aab9d087d26721e390434b1eee58360476c6ab",
+    "final_commit": "007d93f2a11b7e7a098c429603672ba508561752",
+    "remote_sha_verified": true,
+    "release_registry_sha": "5390d0f143498dbeeab4a006b12094f6b3f52918",
+    "completed_at": "2026-11-02T14:09:51+00:00",
+    "preview_sha256": "fdf9d7446e2da94ab472b6a81d7240107a3eff7f05addbfd08b05d696630bfc8",
+    "final_source_files_sha256": {
+      "chapters/G09/G09_a.html": "bb733f1f3ade4bc2707a808225e92d83dfc1a7361693195f951f4085480d5955",
+      "chapters/G09/G09_b.html": "c70ecc9f248208a1f6e0a816a4ada4b2f1d8cdae1401396013eff4085babd476",
+      "chapters/G09/G09_c.html": "8c55515e58d61618b8c02e5a77837bad0bc4a21f7610ec17f2a438e2a6c2f340",
+      "chapters/G09/G09_d.html": "fee3c8f22b1739450e7b128ec7b40dcc9c3683c35ae9c5110ebe55523dfd1d75",
+      "chapters/G09/G09_pop1.html": "3b0cb3e1d3657c3ae700cc418e20a62fd1312bce0792b6b470fc668600a99ea1",
+      "chapters/G09/G09_pop2.html": "0f656f4a73db94f42ceba255f11e057cafbd18909bbd826d2b1e816358c39d4d",
+      "glossary/g09.py": "0580cde6d50612725e444bf9e33e79584d100bf342adb7ea7e2d8a1810435cbc",
+      "assets/img/g09/alpha/codex/Gray1196.png": "568d36ae47143acd19075d7970fef24fefb894627237106da707400ee74e06fa",
+      "assets/img/g09/alpha/codex/Gray764.png": "0aab3ff23b815eb5f6eab0ba8c583726c5994c025899f3f6654f47e566249b09",
+      "assets/img/g09/alpha/codex/Gray739.png": "2edf6bdd002707be37878f79953ecd037296e04e0a408423bbebcd387774d715",
+      "assets/img/g09/alpha/codex/Gray928.png": "3424fd35b4c895bd05205c2a743588076c53f8f732955bb8b9454fd81e35c6d9",
+      "assets/img/g09/alpha/codex/Cerebellar_cortex_-_intermed_mag.jpg": "f40aedcf26e5564324efde574396a0db48841a00c696ecdd8cbf708de721c25a"
+    },
+    "final_counts": {
+      "monograph_points": 14,
+      "medina_rubrics": 20,
+      "selected_source_readings": 28,
+      "exact_swiss_FIs": 4,
+      "science_tabs": 6,
+      "semiology_sections": 9,
+      "original_figures": 5,
+      "figure_occurrences": 10,
+      "annotation_markers": 32,
+      "windows": 34,
+      "quiz": 4
+    },
+    "semiology_seven_rules_native_passed": true
   },
   "instruction_priority": "Ordre actuel : quatre spécialités en parallèle et une leçon à la fois par agent ; remplace les lots historiques, sans supprimer les réservations.",
   "counts": {
@@ -426,7 +462,7 @@
     "tests/test_image_codex_finder.py",
     "tests/test_audit_sciences.py"
   ],
-  "next_gate": "Vérifications finales des octets et captures, auto-relectures explicites, première liaison finale, harness complete, commit/push exact et libération.",
+  "next_gate": "E40 transféré explicitement par root, autre auteur prévenu ; préflight frais et acquisition exclusive avant nouveau worktree/start/claim et sources/Betta.",
   "preliminary_findings": [
     {
       "id": "N04-SEMIO-ABSENT",
@@ -450,7 +486,7 @@
       "initial_status": "observed"
     }
   ],
-  "updated_at": "2026-11-02T14:06:11.969362+00:00",
+  "updated_at": "2026-11-02T14:20:15.394120+00:00",
   "initial_counts": {
     "conservative_s04_targets": 33,
     "existing": 6,
@@ -532,13 +568,13 @@
     }
   },
   "final_verifications": {
-    "code": "D77",
+    "code": "G09",
     "scope_guard": "passed",
     "strict_semiology": "7/7",
     "targeted_immutable_check": "passed",
-    "science_words_after": 3659,
+    "science_words_after": 3623,
     "browser": "passed 1440/390, Livre 24 px, 34 windows, 4 quiz, 10 images/32 markers",
-    "source_binding_sha256": "52503ac9123977d67ec13bc0ad2d81c0e7c43178c16fae2ba47fa4219e298032"
+    "source_binding_sha256": "cb550dac6e4b6cdfec55eefb99dd84a3beec8b71780f93960210be96598345db"
   },
   "completed_lessons": [
     {
@@ -784,6 +820,167 @@
         "quiz": 4
       },
       "semiology_seven_rules_native_passed": true
+    },
+    {
+      "code": "G09",
+      "title": "Séquelles d’affections inflammatoires du système nerveux central",
+      "mode": "existing_course_review",
+      "worktree": "/workspace/Medina-neurologie-G09",
+      "branch": "codex/alpha77/g09-integrate-g1",
+      "reservation_acquired": false,
+      "acquisition_registry_sha": "77cb9b8568f410dadca92bccb36aa17c8f317d3a",
+      "start_registry_sha": "4098c23ca6f8c15cc006138e1ced0ce7f6cef0fa",
+      "harness_claimed": true,
+      "runtime_name": "sol_nephrologie",
+      "production_name": "Sol-Neurologie-G09",
+      "runtime_model": "gpt-6.1-sol",
+      "stage": "completed",
+      "clinical_certification": false,
+      "start_receipt": "/workspace/Medina-neurologie-G09/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G09-INTEGRATE/start.json",
+      "catalogue_scope": "Cours G09 existant exclusivement ; aucun mandat sur chapters.json.",
+      "status": "harness_complete_reservation_released",
+      "harness_completed_at": "2026-11-02T14:09:51+00:00",
+      "source_commit": "d2aab9d087d26721e390434b1eee58360476c6ab",
+      "final_commit": "007d93f2a11b7e7a098c429603672ba508561752",
+      "remote_sha_verified": true,
+      "release_registry_sha": "5390d0f143498dbeeab4a006b12094f6b3f52918",
+      "completed_at": "2026-11-02T14:09:51+00:00",
+      "preview_sha256": "fdf9d7446e2da94ab472b6a81d7240107a3eff7f05addbfd08b05d696630bfc8",
+      "final_source_files_sha256": {
+        "chapters/G09/G09_a.html": "bb733f1f3ade4bc2707a808225e92d83dfc1a7361693195f951f4085480d5955",
+        "chapters/G09/G09_b.html": "c70ecc9f248208a1f6e0a816a4ada4b2f1d8cdae1401396013eff4085babd476",
+        "chapters/G09/G09_c.html": "8c55515e58d61618b8c02e5a77837bad0bc4a21f7610ec17f2a438e2a6c2f340",
+        "chapters/G09/G09_d.html": "fee3c8f22b1739450e7b128ec7b40dcc9c3683c35ae9c5110ebe55523dfd1d75",
+        "chapters/G09/G09_pop1.html": "3b0cb3e1d3657c3ae700cc418e20a62fd1312bce0792b6b470fc668600a99ea1",
+        "chapters/G09/G09_pop2.html": "0f656f4a73db94f42ceba255f11e057cafbd18909bbd826d2b1e816358c39d4d",
+        "glossary/g09.py": "0580cde6d50612725e444bf9e33e79584d100bf342adb7ea7e2d8a1810435cbc",
+        "assets/img/g09/alpha/codex/Gray1196.png": "568d36ae47143acd19075d7970fef24fefb894627237106da707400ee74e06fa",
+        "assets/img/g09/alpha/codex/Gray764.png": "0aab3ff23b815eb5f6eab0ba8c583726c5994c025899f3f6654f47e566249b09",
+        "assets/img/g09/alpha/codex/Gray739.png": "2edf6bdd002707be37878f79953ecd037296e04e0a408423bbebcd387774d715",
+        "assets/img/g09/alpha/codex/Gray928.png": "3424fd35b4c895bd05205c2a743588076c53f8f732955bb8b9454fd81e35c6d9",
+        "assets/img/g09/alpha/codex/Cerebellar_cortex_-_intermed_mag.jpg": "f40aedcf26e5564324efde574396a0db48841a00c696ecdd8cbf708de721c25a"
+      },
+      "final_counts": {
+        "monograph_points": 14,
+        "medina_rubrics": 20,
+        "selected_source_readings": 28,
+        "exact_swiss_FIs": 4,
+        "science_tabs": 6,
+        "semiology_sections": 9,
+        "original_figures": 5,
+        "figure_occurrences": 10,
+        "annotation_markers": 32,
+        "windows": 34,
+        "quiz": 4
+      },
+      "semiology_seven_rules_native_passed": true
+    },
+    {
+      "agent": "astra_nephrologie",
+      "code": "N02",
+      "at": "2026-11-02T10:36:46+00:00",
+      "branch": "codex/alpha77/n02-integrate-g1",
+      "worktree": "/workspace/Medina-nephrologie-n02",
+      "folder": "/workspace/Medina-nephrologie-n02/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N02-INTEGRATE",
+      "manifest_sha256": "e1f1e3252741f62bde195266a7462c1a686acd6d4a94a077855be9f20d586fe2",
+      "source_binding_sha256": "c0781f8f1a6f5e1d1088e3d5acdd54eb572d483f259815064fed64dea73428e9",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "15851647c6c7e5dc9c1492aa5261b1325e8feb80fa388bf17df2b56c52288b4a",
+      "status": "historical_harness_completion_preserved",
+      "final_commit": "006a1f391a2270c98d8a3076842645105b82ac1a",
+      "verification_scope": "Historical completion and prior exact remote verification preserved; no new source review or renewed binding."
+    },
+    {
+      "agent": "astra_nephrologie",
+      "code": "N03",
+      "at": "2026-11-02T11:10:42+00:00",
+      "branch": "codex/alpha77/n03-integrate-g1",
+      "worktree": "/workspace/Medina-nephrologie-n03",
+      "folder": "/workspace/Medina-nephrologie-n03/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N03-INTEGRATE",
+      "manifest_sha256": "bbdb226f9912d7f4681fd392123fb8b3143455228df48b5a1192fb9ba2cb8744",
+      "source_binding_sha256": "6a47ed14d25cbe4614ef98b83b1833dc1de4e7c9c0ab06a9ac115154bbd93d6c",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "49fa9de8d736f16d0f2ebeab90c7b20e19fca1c1445f90d78eed9bf7868fe971",
+      "status": "historical_harness_completion_preserved"
+    },
+    {
+      "agent": "astra_nephrologie",
+      "code": "N05",
+      "at": "2026-11-02T11:40:23+00:00",
+      "branch": "codex/alpha77/n05-integrate-g1",
+      "worktree": "/workspace/Medina-nephrologie-n05",
+      "folder": "/workspace/Medina-nephrologie-n05/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N05-INTEGRATE",
+      "manifest_sha256": "bccdc2e8c6fde6c9e3e9daf83097e73390fe127aa2af39e63d746b00078f9215",
+      "source_binding_sha256": "3a625ca81c04efdaa4409cac47d382523b64231a2d7902dd657ba2b0c9b07304",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "9d3f8910950c84b91535f469e321bf2d855d2535d8a92f08c328d86107265d03",
+      "status": "historical_harness_completion_preserved"
+    },
+    {
+      "agent": "astra_nephrologie",
+      "code": "N06",
+      "at": "2026-11-02T12:02:38+00:00",
+      "branch": "codex/alpha77/n06-integrate-g1",
+      "worktree": "/workspace/Medina-nephrologie-n06",
+      "folder": "/workspace/Medina-nephrologie-n06/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE",
+      "manifest_sha256": "9ae7e79cac1b4e76d1ee8b586b2f20926bf767fff21a32d255bff9971059c303",
+      "source_binding_sha256": "c2769413f4ef6de8a6e47337f4ffdd3513ed80084182535a36b4cfa4abbe6260",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "04b73a5c22d61f10f6aee49d0889e4aef5908f214ae62a2acba8de953af66068",
+      "semiology_contract": {
+        "code": "N06",
+        "observed_at": "2026-11-02T12:02:38+00:00",
+        "passed": true,
+        "checks": {
+          "six_science_tabs": true,
+          "first_selected_semio": true,
+          "semio_panel_label_and_visible": true,
+          "first_unit_exact_h3": true,
+          "nine_named_sections": true,
+          "linked_sources_in_semio": true,
+          "clinical_semio_marker": true
+        },
+        "findings": [],
+        "source_hashes": {
+          "chapters/N06/N06_a.html": "0d15d3098a05f007b2b179addd2ba31afc860ebc33901974557aa778c41f344d",
+          "chapters/N06/N06_b.html": "33366255cdbe5c7b3857574b857f4b956d33e2d049be9ca22006e9d1798b5537",
+          "chapters/N06/N06_c.html": "8fc456c48f5216e6822ecc689be877f2a6619e7e00942bd49e6f94f63abd0934",
+          "chapters/N06/N06_d.html": "90ef8f31a12239d633d564f95712a2b4dd1d966695d0e2cf009aa0bcaaf60f1f"
+        },
+        "clinical_certification": false,
+        "author_activity_refreshed": false,
+        "source_bindings_refreshed": false,
+        "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+      },
+      "status": "historical_harness_completion_preserved"
     }
   ],
   "current_limits": [
@@ -795,12 +992,12 @@
     "AucunePR/main, aucun déploiementpublic déclaré ; coûts/tokens réels indisponibles restentnull."
   ],
   "verification": {
-    "stage": "verification",
+    "stage": "completed",
     "clinical_certification": false,
-    "source_binding_created": false,
-    "native_S08_built": true,
-    "browser_exploratory_passed": true,
-    "final_visual_annotation_corrections": "In progress before final verification"
+    "final_commit": "007d93f2a11b7e7a098c429603672ba508561752",
+    "source_commit": "d2aab9d087d26721e390434b1eee58360476c6ab",
+    "remote_sha_verified": true,
+    "release_verified": true
   },
   "prior_lessons": [
     {
@@ -1029,6 +1226,60 @@
         "quiz": 4
       },
       "semiology_seven_rules_native_passed": true
+    },
+    {
+      "code": "G09",
+      "title": "Séquelles d’affections inflammatoires du système nerveux central",
+      "mode": "existing_course_review",
+      "worktree": "/workspace/Medina-neurologie-G09",
+      "branch": "codex/alpha77/g09-integrate-g1",
+      "reservation_acquired": false,
+      "acquisition_registry_sha": "77cb9b8568f410dadca92bccb36aa17c8f317d3a",
+      "start_registry_sha": "4098c23ca6f8c15cc006138e1ced0ce7f6cef0fa",
+      "harness_claimed": true,
+      "runtime_name": "sol_nephrologie",
+      "production_name": "Sol-Neurologie-G09",
+      "runtime_model": "gpt-6.1-sol",
+      "stage": "completed",
+      "clinical_certification": false,
+      "start_receipt": "/workspace/Medina-neurologie-G09/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G09-INTEGRATE/start.json",
+      "catalogue_scope": "Cours G09 existant exclusivement ; aucun mandat sur chapters.json.",
+      "status": "harness_complete_reservation_released",
+      "harness_completed_at": "2026-11-02T14:09:51+00:00",
+      "source_commit": "d2aab9d087d26721e390434b1eee58360476c6ab",
+      "final_commit": "007d93f2a11b7e7a098c429603672ba508561752",
+      "remote_sha_verified": true,
+      "release_registry_sha": "5390d0f143498dbeeab4a006b12094f6b3f52918",
+      "completed_at": "2026-11-02T14:09:51+00:00",
+      "preview_sha256": "fdf9d7446e2da94ab472b6a81d7240107a3eff7f05addbfd08b05d696630bfc8",
+      "final_source_files_sha256": {
+        "chapters/G09/G09_a.html": "bb733f1f3ade4bc2707a808225e92d83dfc1a7361693195f951f4085480d5955",
+        "chapters/G09/G09_b.html": "c70ecc9f248208a1f6e0a816a4ada4b2f1d8cdae1401396013eff4085babd476",
+        "chapters/G09/G09_c.html": "8c55515e58d61618b8c02e5a77837bad0bc4a21f7610ec17f2a438e2a6c2f340",
+        "chapters/G09/G09_d.html": "fee3c8f22b1739450e7b128ec7b40dcc9c3683c35ae9c5110ebe55523dfd1d75",
+        "chapters/G09/G09_pop1.html": "3b0cb3e1d3657c3ae700cc418e20a62fd1312bce0792b6b470fc668600a99ea1",
+        "chapters/G09/G09_pop2.html": "0f656f4a73db94f42ceba255f11e057cafbd18909bbd826d2b1e816358c39d4d",
+        "glossary/g09.py": "0580cde6d50612725e444bf9e33e79584d100bf342adb7ea7e2d8a1810435cbc",
+        "assets/img/g09/alpha/codex/Gray1196.png": "568d36ae47143acd19075d7970fef24fefb894627237106da707400ee74e06fa",
+        "assets/img/g09/alpha/codex/Gray764.png": "0aab3ff23b815eb5f6eab0ba8c583726c5994c025899f3f6654f47e566249b09",
+        "assets/img/g09/alpha/codex/Gray739.png": "2edf6bdd002707be37878f79953ecd037296e04e0a408423bbebcd387774d715",
+        "assets/img/g09/alpha/codex/Gray928.png": "3424fd35b4c895bd05205c2a743588076c53f8f732955bb8b9454fd81e35c6d9",
+        "assets/img/g09/alpha/codex/Cerebellar_cortex_-_intermed_mag.jpg": "f40aedcf26e5564324efde574396a0db48841a00c696ecdd8cbf708de721c25a"
+      },
+      "final_counts": {
+        "monograph_points": 14,
+        "medina_rubrics": 20,
+        "selected_source_readings": 28,
+        "exact_swiss_FIs": 4,
+        "science_tabs": 6,
+        "semiology_sections": 9,
+        "original_figures": 5,
+        "figure_occurrences": 10,
+        "annotation_markers": 32,
+        "windows": 34,
+        "quiz": 4
+      },
+      "semiology_seven_rules_native_passed": true
     }
   ],
   "reserves": {
@@ -1146,5 +1397,6 @@
     }
   },
   "production_name": "Sol-Neurologie-G09",
-  "active_specialty": "neurologie"
+  "active_specialty": "neurologie",
+  "completed_lesson_count": 10
 }

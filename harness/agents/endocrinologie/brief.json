@@ -6,7 +6,7 @@
   "fragment": "S05",
   "label": "E-06-Endocrinologie et métabolisme",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "phase": "E35_recherche",
+  "phase": "E35_redaction",
   "selected_lesson": {
     "code": "E35",
     "title": "Anomalies endocriniennes au cours de maladies classées ailleurs",
@@ -189,7 +189,10 @@
       "assignment_id": "SSPV2-AUDIT-S05-E40-CODEX",
       "starter_index": 33,
       "active_reservations": [],
-      "state": "review_existing"
+      "state": "delegated_to_sol_nephrologie",
+      "excluded_from_own_selection": true,
+      "delegated_by": "root",
+      "delegation_reason": "Réaffectation explicite après G09, sans concurrence d’écriture ; chapitre existant, aucun chapters.json de notre côté."
     },
     {
       "code": "E42",
@@ -1263,7 +1266,7 @@
     "phase": "preparation_only_waiting_harness_veille_and_exclusive_worktree",
     "authorization_scope": "Préparation seulement dans harness/agents/endocrinologie; aucune écriture médicale, aucun commit ni index. Ordre courant spécialités parallèles/une leçon à la fois remplace lots historiques, pas réservations."
   },
-  "updated_at": "2026-11-02T14:00:24.506043+00:00",
+  "updated_at": "2026-11-02T14:25:11.056729+00:00",
   "worktree": "/workspace/Medina-endocrinologie-E35",
   "branch": "codex/alpha77/e35-integrate-g1",
   "tokens_actual": null,
@@ -1433,7 +1436,10 @@
     "inventory_before_acquire": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E32-E35/E35-inventory-before-acquire.json",
     "registry_acquire": "e5c182d406281cacdec9e804264e72df8d9f78dc",
     "storage": "Worktree complet /tmp/Medina-endocrinologie-E35, lien /workspace/Medina-endocrinologie-E35 ; archives conservées.",
-    "sources_read": 0
+    "sources_read": 25,
+    "folder": "/workspace/Medina-endocrinologie-E35/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E35-INTEGRATE",
+    "source_ledger": "/workspace/Medina-endocrinologie-E35/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E35-INTEGRATE/source-ledger.json",
+    "research_gate": "/workspace/Medina-endocrinologie-E35/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E35-INTEGRATE/research-gate.log"
   },
   "previous_limits": [
     "Libellés locaux suisses2024 et notes allemandes confrontées ; ni certification de codage individuel, ni remboursement ou disponibilité2026. Aucune recommandation suisse dédiée E32 retrouvée dans recherche ciblée, sans preuve d’absence générale.",
@@ -1464,6 +1470,13 @@
       "workflow_run": "41446036893",
       "finding": "activité auteur ancienne constatée sur snapshot antérieur au jalon réel 12:38:52",
       "resolution": "Jalon réel 12:38:52 conservé ; prochain enregistrement après contrôle final, sans heartbeat."
+    }
+  ],
+  "queue_exclusions": [
+    {
+      "code": "E40",
+      "owner": "sol_nephrologie",
+      "reason": "Réaffectation explicite root,2026-11-02 ; aucune acquisition/écriture endocrinologie."
     }
   ]
 }
