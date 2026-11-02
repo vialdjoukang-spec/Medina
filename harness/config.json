@@ -8,7 +8,7 @@
       "id": "astra_neurologie",
       "specialty": "neurologie",
       "system": "S08",
-      "model": "gpt-6-astra",
+      "model": "gpt-6.1-sol",
       "reasoning": "high",
       "queue": [
         "G02",
@@ -51,13 +51,15 @@
         "G01"
       ],
       "owner": "astra_neurologie",
-      "clinical_orchestration": true
+      "clinical_orchestration": true,
+      "runtime_name": "/root/sol_neurologie",
+      "historical_id": "astra_neurologie"
     },
     {
       "id": "astra_endocrinologie",
       "specialty": "endocrinologie",
       "system": "S05",
-      "model": "gpt-6-astra",
+      "model": "gpt-6.1-sol",
       "reasoning": "high",
       "queue": [
         "E00",
@@ -83,13 +85,15 @@
         "E05"
       ],
       "owner": "astra_endocrinologie",
-      "clinical_orchestration": false
+      "clinical_orchestration": false,
+      "runtime_name": "/root/sol_endocrinologie",
+      "historical_id": "astra_endocrinologie"
     },
     {
       "id": "astra_nephrologie",
       "specialty": "nephrologie",
       "system": "S04",
-      "model": "gpt-6-astra",
+      "model": "gpt-6.1-sol",
       "reasoning": "high",
       "queue": [
         "N04",
@@ -105,7 +109,9 @@
         "N17"
       ],
       "owner": "astra_nephrologie",
-      "clinical_orchestration": false
+      "clinical_orchestration": false,
+      "runtime_name": "/root/sol_nephrologie",
+      "historical_id": "astra_nephrologie"
     },
     {
       "id": "codex_hematologie",
@@ -135,5 +141,15 @@
     }
   ],
   "publication": "blocked_pending_owner_review",
-  "no_pr_main": true
+  "no_pr_main": true,
+  "requested_subagent_model": "gpt-6.1-sol",
+  "model_transition": {
+    "observed_at": "2026-11-02T10:23:02.648791+00:00",
+    "authority": "Instruction utilisateur explicite du2novembre2026, après interruption des trois Astra par limite d’usage",
+    "previous_model": "gpt-6-astra",
+    "current_model": "gpt-6.1-sol",
+    "reasoning": "high",
+    "history_rewritten": false,
+    "parent_model_changed": false
+  }
 }

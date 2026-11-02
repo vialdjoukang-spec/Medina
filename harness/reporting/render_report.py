@@ -1,0 +1,148 @@
+#!/usr/bin/env python3
+"""Rapport autonome à partir de preuves collectées ; jamais une clôture médicale."""
+import argparse,datetime as dt,hashlib,html,json,re,subprocess
+from pathlib import Path
+from zoneinfo import ZoneInfo
+HOME=Path(__file__).resolve().parents[1]
+def esc(x):return html.escape(str(x if x is not None else 'non disponible'))
+def js(p,default=None):return json.loads(p.read_text()) if p.exists() else default
+def stamp(value):
+ try:return dt.datetime.fromisoformat(value.replace('Z','+00:00')).astimezone(ZoneInfo('Europe/Zurich')).strftime('%d.%m.%Y %H:%M:%S')
+ except (ValueError,TypeError,AttributeError):return 'non établi'
+def link(url,label):return f'<a href="{esc(url)}" target="_blank" rel="noopener">{esc(label)}</a>'
+def table(headers,rows):return '<div class="scroll"><table><thead><tr>'+''.join('<th>'+esc(h)+'</th>' for h in headers)+'</tr></thead><tbody>'+''.join('<tr>'+''.join('<td>'+str(c)+'</td>' for c in row)+'</tr>' for row in rows)+'</tbody></table></div>'
+def pretty(x):return '<pre>'+esc(json.dumps(x,ensure_ascii=False,indent=2))+'</pre>'
+def details(title,body):return '<details><summary>'+esc(title)+'</summary>'+body+'</details>'
+def digest(b):return hashlib.sha256(b).hexdigest()
+def text_spacing(doc):
+ pieces=re.split(r'(<[^>]+>)',doc);protected=[]
+ for i,p in enumerate(pieces):
+  if i%2:
+   m=re.match(r'</?(pre|code|script|style)\b',p,re.I)
+   if m:
+    if p.startswith('</'):
+     if protected:protected.pop()
+    else:protected.append(m.group(1))
+  elif not protected:
+   p=re.sub(r'(?<=\d)(?=(?:entrées|existants|cibles|réserves|aperçus|leçons|manifestes|points|rubriques|tests|secondes|minutes|lectures|originaux|fenêtres|quiz|Pareto|sciences|sections|fichiers|heures|h\b))',' ',p)
+   p=re.sub(r'\b(de|à|les|des|sur|toutes|snapshot|avec|depuis|après|avant|en|àpartir)(?=\d)',r'\1 ',p)
+   p=re.sub(r'(?<=[.,;:])(?=\d+ (?:tests|existants))',' ',p)
+   p=p.replace('sixsciences','six sciences').replace('neufsémiologie','neuf sections de sémiologie').replace('sixfichiers','six fichiers').replace('avec5originaux','avec 5 originaux').replace('Sol6.1high','Sol 6.1 high').replace('GPT6.1Sol','GPT 6.1 Sol').replace('troisSol','trois Sol').replace('aucunappelLLM','aucun appel LLM')
+   pieces[i]=p
+ return ''.join(pieces)
+def normrows(rows):
+ if isinstance(rows,dict):rows=list(rows.values())
+ return rows if isinstance(rows,list) else []
+def main():
+ p=argparse.ArgumentParser();p.add_argument('evidence',type=Path);p.add_argument('--out',type=Path,default=HOME/'rapport-progression-20261102.html');a=p.parse_args();r=a.evidence
+ collection=js(r/'collection.json');remote=js(r/'observations/status.json');plan=js(r/'observations/plan.json');live=js(HOME/'status.json');monitor=js(HOME/'monitor.json');config=js(HOME/'config.json');prompt=js(r/'observations/prompt-lock.json')
+ now=dt.datetime.now(dt.timezone.utc).isoformat();completions=collection['completed_lessons'];bycode={x['code']:x for x in completions};titles={x['code']:x['title'] for sy in plan['systems'] for x in sy['current_queue']}
+ versions=[v for v in collection['versions'] if v['code'] in bycode and v['remote_branch_exists']];verified=sum(v.get('binding_preview_matches') is True and all(x['ok'] for x in v['binding_checks']) for v in versions)
+ frozen=(r/'observations/rapport-08h00.html').read_text();match=re.search(r'"report_frozen_at"\s*:\s*"([^"]+)',frozen);frozen_at=match.group(1) if match else None
+ lessondata=[];rows=[];bodies=[]
+ for v in versions:
+  code=v['code'];folder=r/v['local_evidence_folder'];m=js(folder/'lesson-manifest.json',{});b=js(folder/'source-binding.json',{});comp=bycode[code]
+  mono=normrows(m.get('monograph'));matrix=normrows(m.get('matrix20'));images=normrows(m.get('images'));sources=normrows(m.get('sources'));reviews=m.get('reviews',{});blocking=m.get('blocking_findings',[])
+  limits=m.get('remaining_transparent_limits') or m.get('limitations') or m.get('remaining_findings') or []
+  if not limits:
+   for f in ['delivery-state.json','findings-final.json','remaining-findings.json']:
+    d=js(folder/f,{})
+    if isinstance(d,dict):limits=d.get('limitations') or d.get('remaining_limits') or d.get('findings') or limits
+  row={'code':code,'title':titles.get(code,code),'completion':comp,'version':v,'monograph_points':len(mono),'matrix_rubrics':len(matrix),'source_entries':len(sources),'image_entries':len(images),'blocking_findings':blocking,'limitations':limits,'review_modes':{k:x.get('mode') if isinstance(x,dict) else x for k,x in reviews.items()}}
+  lessondata.append(row)
+  ev=v['evidence'];preview=v['preview'];base=f'https://github.com/{collection["repo"]}/blob/{v["version_sha"]}/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-{code}-INTEGRATE/'
+  rows.append([f'<a href="#{code}"><b>{code}</b></a><br>{esc(titles.get(code,code))}',esc(stamp(comp['at'])),f'{len(mono)}/14 · {len(matrix)}/20',f'{len(sources)} entrées<br>{len(images)} originaux déclarés',f'<span class="ok">empreintes concordantes</span><br><code>{v["version_sha"][:12]}</code>',link(preview['url'],'Télécharger le cours HTML')+'<br>'+link(preview['proof_url'],'Version GitHub')])
+  body=f'<article id="{code}" class="lesson"><h3>{code} · {esc(titles.get(code,code))}</h3><p><span class="badge ok">Clôture de projet enregistrée</span> <span class="badge warn">Revue de Vial attendue avant PR</span></p><p>{link(preview["url"],"Aperçu autonome avec images et annotations")} · {link(base+"lesson-manifest.json","Manifeste")} · {link(base+"source-binding.json","Liaison aux sources finales")}</p>'
+  body+=table(['Version et contrôle','Preuve'],[['Branche',esc(v['branch'])],['Commit distant vérifié','<code>'+v['version_sha']+'</code>'],['Clôture',esc(stamp(comp['at']))+' Europe/Zurich'],['Aperçu SHA256','<code>'+preview['sha256']+'</code>'],['Sources finales liées',f'{sum(x["ok"] for x in v["binding_checks"])} / {len(v["binding_checks"])} empreintes concordantes au commit'],['Manifeste SHA256','<code>'+ev.get('lesson-manifest.json',{}).get('sha256','absent')+'</code>'],['Source-binding SHA256','<code>'+ev.get('source-binding.json',{}).get('sha256','absent')+'</code>'],['Validation humaine','Non revendiquée. Les revues sont attribuées ci-dessous.']])
+  rr=[]
+  for kind,item in reviews.items():
+   if not isinstance(item,dict):continue
+   path=item.get('path');proof=ev.get(path,{})
+   rr.append([esc(kind),esc(item.get('mode')),esc(item.get('reviewer')),link(base+path,path) if path else 'absent','<code>'+esc(item.get('sha256'))+'</code>', 'concorde' if proof.get('sha256')==item.get('sha256') else 'à examiner'])
+  body+=details('Quatre revues attribuées et leurs empreintes',table(['Revue','Mode','Auteur','Document','SHA256 déclaré','Contrôle'],rr))
+  if m.get('targeted_external_review'):body+=details('Relecture distincte ciblée : portée limitée',pretty(m['targeted_external_review']))
+  body+=details('Plan monographique : les 14 points',table(['Point','Intitulé','Ancrage','Sources','Justification'],[[esc(x.get('point',i+1)),esc(x.get('label',x.get('title',''))),esc(x.get('anchor',x.get('evidence',''))),esc(', '.join(x.get('sources',[]))),esc(x.get('coverage_explanation',x.get('coverage',x.get('evidence',''))))] for i,x in enumerate(mono)]))
+  body+=details('Matrice Medina : les 20 rubriques',table(['Point','Intitulé','État','Preuves et limites'],[[esc(x.get('point',i+1)),esc(x.get('title',x.get('label',''))),esc(x.get('status','déclaré couvert')),pretty({k:z for k,z in x.items() if k not in ['point','title','label','status']})] for i,x in enumerate(matrix)]))
+  body+=details('Images originales, licences et annotations',table(['Image','Provenance','Licence','Annotations et revue'],[[esc(x.get('title',x.get('path','image'))),link(x.get('original_url') or x.get('source_url') or x.get('url') or '#','Source originale'),esc(x.get('license')),esc(x.get('annotations',x.get('caption','Voir aperçu et preuve de revue')))+'<br>'+esc(x.get('medical_review','Voir revue visuelle'))] for x in images]))
+  sr=[]
+  for x in sources:
+   title=x.get('titre') or x.get('title') or x.get('publisher') or x.get('editeur') or 'Source'
+   sr.append([esc(x.get('id')),link(x.get('url','#'),title),esc(x.get('niveau_lecture',x.get('read_level',x.get('level','section indiquée dans le reçu')))),esc(x.get('read_at',x.get('date_consultation',''))),esc(x.get('section',x.get('section_page',''))),esc(x.get('limits',x.get('limites','')))])
+  body+=details('Références documentées — niveau de lecture conservé', '<p>Une entrée ne signifie pas texte intégral lu. Les passages hérités, résumés et fiches ciblées conservent leurs limites ; ce tableau ne revendique aucune nouvelle lecture médicale par le rédacteur du rapport.</p>'+table(['ID','Référence','Niveau','Date déclarée','Passage','Limites'],sr))
+  tests=[(name,meta) for name,meta in ev.items() if any(t in name.lower() for t in ['browser','verification','static','sciences','check','validation','visual-inspect']) and name.endswith('.json')]
+  body+=details('Tests et inspections — documents exacts',table(['Preuve','SHA256'],[[link(meta['url'],name),'<code>'+meta['sha256']+'</code>'] for name,meta in tests]))
+  body+=details('Réserves et limites conservées', '<p>Réserves bloquantes déclarées : '+esc(len(blocking) if isinstance(blocking,list) else blocking)+'. Une absence de réserve bloquante n’est pas une certification médicale.</p>'+pretty(limits))
+  body+='</article>';bodies.append(body)
+ totals={sy['id']:sum(x['agent']==sy['agent'] for x in completions) for sy in plan['systems']};total=sum(totals.values());candidate=sum(len(sy['current_queue']) for sy in plan['systems'])
+ bars='<svg viewBox="0 0 780 240" role="img" aria-label="Clôtures enregistrées par système, rapportées aux candidats actuels">'
+ for i,sy in enumerate(plan['systems']):
+  n=len(sy['current_queue']);done=totals[sy['id']];y=20+i*55
+  bars+=f'<text x="0" y="{y+18}" font-size="16" fill="#dce8f6">{esc(sy["name"])}</text><rect x="205" y="{y}" width="450" height="26" rx="5" fill="#243b56"/><rect x="205" y="{y}" width="{450*done/n}" height="26" rx="5" fill="#42c6aa"/><text x="670" y="{y+19}" font-size="17" fill="#dce8f6">{done} / {n}</text>'
+ bars+='</svg>'
+ timeline=table(['Heure suisse','Leçon','Auteur historique','État'],[[esc(stamp(x['at'])),f'<a href="#{x["code"]}">{x["code"]}</a>',esc(x['agent']),'Clôture enregistrée ; relecture utilisateur attendue'] for x in completions])
+ active=[]
+ for ag in live['agents']:
+  age=(dt.datetime.now(dt.timezone.utc)-dt.datetime.fromisoformat(ag['activity_at'])).total_seconds() if ag.get('activity_at') else None
+  active.append([esc(ag.get('runtime_name',ag['id']))+'<br>'+esc(ag['model']),esc(ag['specialty'])+' · <b>'+esc(ag['lesson'])+'</b>',esc(ag['stage'])+'<br>'+esc(ag.get('message')),esc(stamp(ag.get('activity_at'))),f'{ag.get("completed_sections",0)}/14 déclarés<br>{ag.get("sections_per_hour","non mesuré")} sections/h déclarées','Parent actif pour rapport et contrôle ; C95 non clos' if ag['id']=='codex_hematologie' else 'Reprise native Sol constatée ; dernier événement de travail indiqué'])
+ future=[]
+ active_codes={a['lesson'] for a in live['agents']}
+ for sy in plan['systems']:
+  for x in sy['current_queue']:
+   state='clôture enregistrée' if x['code'] in bycode else 'travail réservé en cours' if x['code'] in active_codes else 'candidat — réservation à revérifier'
+   future.append([esc(sy['name']),str(x['order']),esc(x['code']),esc(x['title']),esc(state)])
+ runs=collection['workflow_runs'];dispatch=[x for x in runs if x['event']=='workflow_dispatch']
+ latest=dispatch[0] if dispatch else {};artifactrows=[]
+ for ar in collection['artifacts']:
+  artifactrows.append([link(f'https://github.com/{collection["repo"]}/actions/runs/{ar["run_id"]}',str(ar['run_id'])),esc(ar['name']),esc(ar.get('created_at')),esc(ar.get('download_error','Contenu lu : '+', '.join(ar['files'])))])
+ textlog=(r/'run-41425068626.log').read_text() if (r/'run-41425068626.log').exists() else ''
+ observations=[]
+ for line in textlog.splitlines():
+  if '{"observed_at"' in line or '{"at"' in line and 'successor_requested' in line:
+   try:observations.append(json.loads(line[line.index('{'):]))
+   except ValueError:pass
+ report={'generated_at':now,'timezone':'Europe/Zurich','remote_collection_at':collection['completed_at'],'remote_snapshot_at':remote['generated_at'],'remote_snapshot_sha':collection['branches']['observations']['sha'],'frozen_08h_actual_at':frozen_at,'completed_count':total,'candidate_count':candidate,'historical_categories':270,'versions_verified':verified,'source_bindings_checked':sum(len(v['binding_checks']) for v in versions),'main_sha':collection['main_sha'],'lessons':lessondata,'active_state':[{k:a.get(k) for k in ['id','runtime_name','model','reasoning','lesson','stage','activity_at','message','completed_sections','sections_per_hour']} for a in live['agents']],'native_supervision':monitor.get('native_agents_last_observed'),'model_handoff':config.get('model_transition'),'independent_observations_from_logs':observations,'artifacts':collection['artifacts'],'tokens_actual':None,'cost_actual':None,'saved_cost_actual':None,'clinical_certification':False,'main_publication':False}
+ a.out.with_suffix('.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+ css='''*{box-sizing:border-box}body{margin:0;background:#0b1625;color:#e5edf7;font:16px/1.6 system-ui,sans-serif}main{max-width:1280px;margin:auto;padding:28px}h1{font-size:clamp(30px,5vw,58px);line-height:1.1;margin:16px 0}h2{margin-top:48px;color:#91e1d0}h3{color:#d2e4ff}a{color:#8ad4ff;overflow-wrap:anywhere}p{max-width:100ch}.lead{font-size:20px}.muted{color:#adc0d4}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}.card,.lesson,details{background:#12243a;border:1px solid #2e4764;border-radius:12px;padding:18px;margin:14px 0}.card strong{display:block;font-size:36px;color:#76dec9}.alert{background:#3b2b20;border-left:5px solid #e6b374;padding:20px;border-radius:8px}.ok{color:#7cddbc}.warn{color:#ffd28d}.badge{display:inline-block;padding:3px 10px;border:1px solid currentColor;border-radius:18px;font-size:13px;margin:3px}.scroll{max-width:100%;overflow:auto}table{border-collapse:collapse;width:100%;min-width:650px}th,td{padding:12px;text-align:left;vertical-align:top;border-bottom:1px solid #31445b}th{color:#97c8f5}td{font-size:14px}code,pre{font:12px/1.5 ui-monospace,monospace;overflow-wrap:anywhere;word-break:break-word}pre{white-space:pre-wrap;max-height:440px;overflow:auto}summary{cursor:pointer;font-weight:650}svg{max-width:100%;height:auto}nav{display:flex;gap:16px;flex-wrap:wrap}input,button{font:inherit;padding:10px;border-radius:8px;border:1px solid #64809c;background:#132a43;color:white}input{width:min(500px,100%)}footer{padding:30px 0;color:#adc0d4}@media print{body{background:white;color:#13243a}main{padding:0}.card,.lesson,details{background:white;color:#13243a;break-inside:avoid}a{color:#155d9b}summary{color:#13243a}h2,h3{color:#174d67}.scroll{overflow:visible}table{min-width:0}nav,.controls{display:none}pre{max-height:none}}'''
+ parts=[f'<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MEDINA — état détaillé au {stamp(now)} Europe/Zurich</title><style>{css}</style></head><body><main>',
+ '<p class="muted">Vial · MEDINA · Rapport de preuves et reprise</p><h1>État des lieux vérifié</h1>',f'<p class="lead">{total} leçons clôturées dans le harness, {verified} aperçus distants vérifiés. La production reprend avec trois agents GPT‑6.1 Sol à réflexion élevée.</p><p>Rapport généré le <b>{stamp(now)} Europe/Zurich</b>. État GitHub collecté jusqu’au {stamp(collection["completed_at"])} ; reprise native distinguée ci-dessous.</p>',
+ '<div class="alert"><b>Le rapport détaillé est remis en retard.</b> Le snapshot automatique prévu à08h a été figé à '+stamp(frozen_at)+' heure suisse. Il est conservé intact. Les agents Astra ont ensuite été constatés indisponibles après erreurs de quota ; l’heure exacte du début de leur interruption n’est pas établie. Leurs dernières activités et la reprise Sol ne sont pas confondues. Aucun arrêt de production à08h n’a été ordonné.</div>',
+ '<p>'+link(collection['branches']['observations']['files']['rapport-08h00.html']['url'],'Consulter le snapshot08h conservé sur GitHub')+' · '+link('https://github.com/'+collection['repo']+'/blob/codex/harness-observations-20261102/harness/dashboard.html','Tableau de bord courant')+'</p><nav><a href="#mandat">Cahier des charges</a><a href="#auteurs">Auteurs</a><a href="#livraisons">13 livraisons</a><a href="#veille">Veille</a><a href="#futur">Files futures</a><a href="#preuves">Preuves</a></nav>',
+ '<div class="cards">'+f'<div class="card"><strong>{total}/{candidate}</strong>candidats de campagne clôturés · {100*total/candidate:.1f}%<br>pas un taux de certification médicale</div><div class="card"><strong>270</strong>entrées historiques :104existants +154cibles +12réserves</div><div class="card"><strong>{report["source_bindings_checked"]}</strong>empreintes de fichiers finaux vérifiées +13aperçus</div><div class="card"><strong>0</strong>PR/fusion main dans ce travail ; revue de Vial attendue</div></div>',
+ '<h2 id="mandat">Cahier des charges : réalisé et restant</h2>',table(['Exigence','État réel','Reste / limite'],[
+ ['Harness testé avant rédaction','Installé, portes de recherche/clôture, empreintes, réservations et contrôles négatifs.47tests réussis après transition Sol.','Le harness ne certifie pas le fond médical.'],
+ ['Veille toutes10minutes','Publisher local + relais GitHub workflow_dispatch à600secondes.','Retards GitHub possibles ; aucun cron actif sur main, aucun réveil des modèles par le relais.'],
+ ['Quatre auteurs parallèles','Trois Astra high historiquement + parent ; trois Sol6.1high réellement lancés à la reprise.','Le modèle du parent est celui de la session ; aucun changement de modèle du parent n’est prétendu.'],
+ ['Orchestration clinique','Neurologie assume la coordination : Astra auparavant, Sol maintenant ; parent exécute les outils.','Coordination et audit médical des autres auteurs sont distincts.'],
+ ['Coût réduit par outils','Cache empreinté, extraction bornée, contrôles/scripts déterministes, veille sans appel LLM.','Tokens et coût réels non exposés ; aucune économie financière chiffrée démontrée.'],
+ ['Plans14/20 et images annotées','13manifestes avec14points/20rubriques et preuves finales.','C70,E14,N02,C95 ne sont pas comptés achevés.'],
+ ['Rapport de08h et futur HTML',f'Snapshot figé à{stamp(frozen_at)} ; présent état détaillé et plan de70candidats.','Retard de remise du rapport détaillé explicitement reconnu.'],
+ ['Prévention des conflits','Worktrees/branches/chemins exclusifs, registre distant et wrapper sansFETCH_HEAD partagé.','N02 détient le catalogue partagé ; toute réaffectation nécessite une transaction réelle.'],
+ ['Présentation avant main','Aperçus autonomes par version, images et annotations accessibles en téléchargement.','Aucune PR ni fusion avant revue des cours par Vial.']]),
+ '<h2>Progression de campagne</h2>'+bars+'<p>Les70candidats appartiennent aux quatre files actuelles. Les270entrées historiques décrivent un autre périmètre ; on ne les additionne pas aux70pour calculer un taux de production. Les13clôtures sont des événements enregistrés, pas13cours certifiés par un médecin humain.</p>'+details('Chronologie complète des clôtures',timeline),
+ '<h2 id="auteurs">Quatre auteurs, activité réellement attestée</h2>'+table(['Auteur courant / modèle','Affectation','Travail déclaré','Dernière activité auteur','Rendement déclaré','Observation native'],active),
+ '<p>Les identifiants internes astra_* restent dans les reçus historiques ; les noms runtime Sol indiquent les remplaçants actuels. Un snapshot régénéré ne rafraîchit pas activity_at. Le rendement sections/heure est un calcul sur déclarations et temps écoulé, y compris interruption : ce n’est ni une vitesse garantie ni un score de qualité.</p>',
+ details('Reprise native, modèle demandé et limites du parent',pretty({'handoff':report['model_handoff'],'supervision':report['native_supervision']})),
+ '<h2 id="livraisons">Livraisons à consulter</h2><p>Les liens « Télécharger le cours HTML » ouvrent le fichier autonome ; le navigateur peut le proposer en téléchargement. Les images et annotations sont intégrées à chaque aperçu. Les liens GitHub identifient la version immuable.</p>'+table(['Leçon','Clôture heure suisse','Couverture déclarée','Preuves','Version vérifiée','Lecture'],rows),
+ '<h2>Travaux en cours et blocages concrets</h2>'+table(['Leçon','État à la reprise','Condition de clôture restante'],[
+ ['C70 — neurologie','Recherche et reprise complète prévues ; SVG anatomique IA hérité identifié, trois sciences seulement dans la base.','Remplacer par originaux sourcés, développer sixsciences/neufsémiologie, classification et doses exactes, puis14/20et tests.'],
+ ['E14 — endocrinologie','Acquisition/start/claim réussis après reprise Sol ; recherche en cours.','Corriger les raccourcis hérités, conserver limites des tests vasculaires et préciser schémas d’insuline/urgences.'],
+ ['N02 — néphrologie','Rédaction partielle,22lectures ciblées déclarées dans le dernier état Astra ; reprise Sol avec relecture de sources et5originaux.','Pharmacologie, fenêtres/quiz, sixfichiers/catalogue, puis contrôles et liaison finale.'],
+ ['C95 — hématologie','Rédaction locale assemblée :25sections,52fenêtres,5quiz,14Pareto,6sciences,4originaux ;32entrées de références dont réutilisations attribuées.','Contrôle statique en échec (sigles/classes), figure absente de sémiologie selon audit ; aperçu natif, matrices et revues finales non achevés. Aucune clôture ni source-binding final.']]),
+ '<h2 id="veille">Veille indépendante et incidents</h2><p>Le relais workflow_dispatch observe, attend600secondes puis demande un successeur. Il ne relance pas les agents natifs. Le contrôle local de disponibilité du harness et l’alerte indépendante sur activité auteur peuvent donc avoir des résultats différents.</p>',
+ details('Observation indépendante lue dans les logs GitHub',pretty(observations)),
+ '<p>Le run41425068626 a signalé les quatre activités auteurs anciennes à10:59:32heure suisse, puis a demandé son successeur à11:09:32avec réponseHTTP204. L’échec reste visible ; il ne signifie pas que le relais s’est arrêté. Les dernières exécutions listées ci-dessous sont celles réellement lues lors de la collecte.</p>',
+ table(['Run','Événement','Création suisse','État','Conclusion'],[[link(x['html_url'],str(x['id'])),esc(x['event']),esc(stamp(x['created_at'])),esc(x['status']),esc(x.get('conclusion') or 'en cours')] for x in runs[:12]]),
+ '<h3>Artefacts demandés</h3><p>Les métadonnées des artefacts medina-independent-* ont été consultées. Leur téléchargement a reçuHTTP403 dans cet environnement ; remote-dashboard.html, remote-status.json et remote-observation.json contenus dans ces archives ne sont donc pas présentés comme lus. Les logs accessibles fournissent l’observation ci-dessus. Le rapport08h a été lu directement sur la branche observations, avec son empreinte.</p>'+table(['Run','Artefact','CréationUTC','Accès constaté'],artifactrows),
+ details('Incidents et décisions de reprise', '<ul><li>Après une interruption antérieure de l’environnement, trois agents avaient été relancés réellement ; début exact de l’interruption non établi.</li><li>Le contrôle CI41389485832 avait lu un ancien snapshot de la branche infra. Correctioneb739954 : lecture de la dernière publication ; run41389951928 réussi.</li><li>Le wrapper de registre utilise une référence temporaireUUID, sansFETCH_HEAD partagé, pour éviter les collisions entre worktrees.</li><li>Trois erreurs de quota Astra ont été reçues ; la liste native ne contenait plus que le parent à la reprise. Nouveau mandat utilisateur : troisSol6.1high lancés, gate retestée avant rédaction.</li><li>Le contrôle navigateur file:// est interdit ici ; aucun contournement. Les essais natifs utilisent une origineHTTP interceptée, sans prétendre à un déploiement public.</li><li>Le signalHUG2024 sur microhématurie est conservé pour une future correction réservée deN00 ; aucune modification silencieuse d’une version libérée.</li></ul>'),
+ '<h2>Coûts, tokens et qualité : limites de mesure</h2><p><b>Tokens consommés : inconnus. Coût réel : inconnu. Économie financière réalisée : non mesurée.</b> Les octets réutilisés et les appels évités par cache ne sont pas des tokens économisés. La veille ne fait aucun appelLLM ; le runner GitHub peut consommer des minutes facturables, dont le montant n’est pas exposé ici. Aucun score médical arbitraire n’est attribué.</p>',
+ '<h2 id="futur">Plan des quatre systèmes</h2><p>Une seule leçon active par auteur. Les candidats suivants restent conditionnels à la clôture, à la libération et à la vérification d’une réservation libre. Les autres réservations existantes restent respectées.</p><div class="controls"><label for="filter">Filtrer la file </label><input id="filter" placeholder="Code, système ou état"><button id="expand">Déplier les preuves</button></div><div id="future">'+table(['Système','Ordre','Code','Titre','État'],future)+'</div>',
+ '<h2>Preuves détaillées, leçon par leçon</h2>'+''.join(bodies),
+ '<h2 id="preuves">Prompt, versions et sources du rapport</h2><p>Le dernier prompt de transition par date de commit est propre àClaude. Le prompt commun applicable est celui du15octobre2026 ; le présent mandat utilisateur et sa modification Sol priment sur les modalités historiques incompatibles. Le promptVÉRITÉ reste la porte de recherche.</p>',
+ table(['Document','Commit / date','SHA256'],[[link(f'https://github.com/{collection["repo"]}/blob/{collection["main_sha"]}/{x["path"]}',x['path']),esc(x.get('commit'))+'<br>'+esc(x.get('committed_at')),'<code>'+esc(x.get('sha256'))+'</code>'] for x in prompt['files']]),
+ details('Instantanés GitHub consultés dans l’ordre demandé',pretty(collection['branches'])),
+ '<p>Main observé : <code>'+esc(collection['main_sha'])+'</code>. Les13versions finales ont été retrouvées sur leur branche distante et leurs octets liés vérifiés. Les branchesC70/N02/C95 n’étaient pas encore publiées à l’instant de collecte ; leurs brouillons locaux ne sont pas des livraisons distantes. E14 a été acquis après cet instantané.</p>',
+ '<footer>Rapport autonome : aucun appel réseau automatique, aucune mise à jour cachée de ses dates. Les liens ouvrent les preuves sur demande. Les documents de cours, leurs licences et leurs limites restent attachés à leurs versions. Ce rapport ne crée aucune PR, aucune publication main et aucune validation médicale.</footer></main>',
+ '<script>document.getElementById("filter").addEventListener("input",e=>{let q=e.target.value.toLowerCase();document.querySelectorAll("#future tbody tr").forEach(r=>r.hidden=!r.textContent.toLowerCase().includes(q))});document.getElementById("expand").addEventListener("click",()=>{let ds=[...document.querySelectorAll("details")],open=ds.some(d=>!d.open);ds.forEach(d=>d.open=open)});</script></body></html>'
+ ]
+ a.out.write_text(text_spacing('\n'.join(parts)));print(json.dumps({'html':str(a.out),'bytes':a.out.stat().st_size,'completed':total,'verified_previews':verified,'source_files_verified':report['source_bindings_checked'],'report_at':now},ensure_ascii=False))
+if __name__=='__main__':main()

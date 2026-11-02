@@ -1,3 +1,7 @@
+# Mise à jour prioritaire — reprise Sol6.1 élevée
+
+Le2novembre2026, après notifications de quota des trois agents Astra, Vial demande explicitement trois agents GPT6.1Sol high. Trois nouveaux auteurs réels sont lancés : `/root/sol_neurologie`, `/root/sol_endocrinologie`, `/root/sol_nephrologie`. Les identifiants internes `astra_*` sont conservés pour ne pas réécrire les reçus historiques ; le modèle et le nom runtime courants sont affichés séparément. Le parent conserve son modèle de session, qu’il ne peut pas modifier par outil. Neurologie conserve la coordination clinique. Le registre et les chemins exclusifs restent requis ; aucun cinquième auteur simultané. Les treize clôtures Astra/Codex existantes ne deviennent pas des travaux Sol.
+
 # MEDINA — mandat, affectations et continuité du 2 novembre 2026
 
 L'ordre utilisateur de cette conversation est la règle opérationnelle actuelle.
