@@ -1,0 +1,59 @@
+[
+  {
+    "check": "static",
+    "at": "2026-11-02T10:58:22.613143+00:00",
+    "command": [
+      "python3",
+      "test_v7.py",
+      "--static",
+      "C70"
+    ],
+    "returncode": 0
+  },
+  {
+    "check": "science",
+    "at": "2026-11-02T10:58:22.712938+00:00",
+    "command": [
+      "python3",
+      "tests/audit_sciences.py",
+      "--base",
+      "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+      "--codes",
+      "C70",
+      "--out",
+      "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE/sciences-check.json"
+    ],
+    "returncode": 0
+  },
+  {
+    "check": "betta",
+    "at": "2026-11-02T10:58:22.744999+00:00",
+    "command": [
+      "python3",
+      "tools/betta_verite.py",
+      "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE/compatibilite_betta_C70"
+    ],
+    "returncode": 0
+  },
+  {
+    "check": "G45-nonregression",
+    "at": "2026-11-02T10:58:25.106612+00:00",
+    "command": [
+      "python3",
+      "test_v7.py",
+      "--static",
+      "G45"
+    ],
+    "returncode": 0
+  },
+  {
+    "check": "diff",
+    "at": "2026-11-02T10:58:25.147126+00:00",
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "returncode": 0
+  }
+]
