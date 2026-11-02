@@ -1,0 +1,1 @@
+Historical pre-seal review. Automated browser checks passed. Manual review of the native pH definition found an arterial/cardiac-arrest context inappropriate for gastric acidity. Superseded by local wording and a fully rebuilt final preview; no final binding existed. These artifacts are not the final version.

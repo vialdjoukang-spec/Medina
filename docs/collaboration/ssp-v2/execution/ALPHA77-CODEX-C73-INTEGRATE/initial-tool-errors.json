@@ -1,0 +1,34 @@
+{
+  "recorded_at": "2026-11-02T18:26:20.466192+00:00",
+  "errors_before_seal": [
+    {
+      "operation": "Initial native static and audit import",
+      "actual_error": "GlossaryLoadError: Le glossaire c73 n’exporte pas de dictionnaire G",
+      "correction": "Own glossary exports base G using from cardio_1 import G; no shared glossary edited."
+    },
+    {
+      "operation": "First native bundle",
+      "proof": "initial-native-bundle-failure.log",
+      "actual_error": "Review files must stay in the claimed worktree",
+      "correction": "Exact native build copied temporarily inside owned dossier for wrapper; hash verified, temporary duplicate removed after bundle."
+    },
+    {
+      "operation": "Research gate capture with wrong directory parent",
+      "proof": "research-gate-path-failure.log",
+      "actual_error": "Wrong /workspace/tools path, writer refused absent VÉRITÉ OK.",
+      "correction": "Exact worktree path restored; gate passed before new canonical authoring."
+    },
+    {
+      "operation": "Source metadata inspection without optional Python path",
+      "actual_error": "ModuleNotFoundError: No module named bs4",
+      "correction": "Configured PYTHONPATH used, read-only retry."
+    },
+    {
+      "operation": "Screenshot contact sheet helper",
+      "actual_error": "SyntaxError on else195 in helper",
+      "correction": "Whitespace corrected; no course or original image pixels affected."
+    }
+  ],
+  "human_validation": false,
+  "source_binding_exists": false
+}

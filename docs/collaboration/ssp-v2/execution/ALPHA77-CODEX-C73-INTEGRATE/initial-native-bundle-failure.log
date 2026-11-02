@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/Medina-harness/harness/bundle_native.py", line 54, in <module>
+    print(json.dumps(bundle(a.native,a.worktree,a.code,a.output),ensure_ascii=False,indent=2))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Medina-harness/harness/bundle_native.py", line 19, in bundle
+    if not native.is_relative_to(root) or not output.is_relative_to(root):raise ValueError('Review files must stay in the claimed worktree')
+                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Review files must stay in the claimed worktree
