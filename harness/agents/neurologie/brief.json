@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "C70_VERIFICATION_G02_G05_I64_COMPLETE",
+  "status": "C70_COMPLETE_RELEASED_G03_ACQUISITION",
   "prepared_at": "2026-11-02T01:17:05.123886+00:00",
   "agent": "Sol Neurologie",
   "model": "gpt-6.1-sol",
@@ -1002,7 +1002,7 @@
       "Private GitHub cron and local watch depend on runner/environment availability"
     ]
   },
-  "updated_at": "2026-11-02T10:36:44.273821+00:00",
+  "updated_at": "2026-11-02T11:08:54.264194+00:00",
   "current_package": {
     "code": "C70",
     "worktree": "/workspace/Medina-neurologie-C70",
@@ -1010,29 +1010,95 @@
     "reservation_acquired": true,
     "acquisition_registry_sha": "691df1430fc760c0a3106fc8f97bb567e09693f4",
     "start_receipt": "/workspace/Medina-neurologie-C70/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE/start.json",
-    "stage": "verification",
+    "stage": "termine",
     "source_readings_count": 25,
-    "monograph14_reviewed": 0,
-    "matrix20_reviewed": 0,
-    "blocking_findings": [
-      "Auto-relecture finale et vérification navigateur/native/source-binding non encore achevées."
-    ],
+    "monograph14_reviewed": 14,
+    "matrix20_reviewed": 20,
+    "blocking_findings": [],
     "clinical_certification": false,
-    "preview": null,
+    "preview": "/workspace/Medina-neurologie-C70/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE/C70-apercu-autonome.html",
     "source_reader": "sol_neurologie",
     "historical_source_reader": "astra_neurologie",
     "sciences": 6,
     "semiology_sections": 9,
     "popups": 38,
-    "quiz": 4
+    "quiz": 4,
+    "source_commit": "839cf805b65e958af0e2174a99c0c886c824f926",
+    "preview_sha256": "aa4f71d7653592d894ece4b70b5f18604c150147b252b9944bd29ac806159ead",
+    "source_binding": true,
+    "pushed": true,
+    "completed": true,
+    "released": true,
+    "commit": "730d8b24b9c4017ad3161a504f2ca3c626c3521d",
+    "completed_at": "2026-11-02T11:05:28+00:00",
+    "completion_receipt": "/workspace/Medina-neurologie-C70/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE/harness-completion.json",
+    "release_registry_sha": "4b3093501c7ec87bffa489d6118268a38ea37865",
+    "preview_remote": "https://github.com/vialdjoukang-spec/Medina/blob/730d8b24b9c4017ad3161a504f2ca3c626c3521d/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE/C70-apercu-autonome.html",
+    "documented_limits": [
+      {
+        "id": "L1",
+        "topic": "Épidémiologie",
+        "reason": "Pas d’incidence nationale actuelle propre à C70/grade3 OMS2021 dans les lectures ; chiffres de centres et SNC général ne deviennent pas incidence C70.",
+        "blocking": false,
+        "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
+      },
+      {
+        "id": "L2",
+        "topic": "Classification",
+        "reason": "BfArM2024 sans certification de facturation2026 ; critères OMS2021 séparés des propositions intérimaires cIMPACT8 sporadiques adultes.",
+        "blocking": false,
+        "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
+      },
+      {
+        "id": "L3",
+        "topic": "Entités rares et recours",
+        "reason": "SFT et tumeurs mélanocytaires primitives documentées en principes ; données faibles, pas de protocole systémique ou de dose de recours inventé.",
+        "blocking": false,
+        "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
+      },
+      {
+        "id": "L4",
+        "topic": "Information professionnelle",
+        "reason": "Populations de dose initiale et tableau rénal distinctes ; seuil exact80 non classé par la FI lévétiracétam ; vérification pharmaceutique plutôt qu’arrondi. Forme phosphate/base Galepharm non convertie implicitement.",
+        "blocking": false,
+        "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
+      },
+      {
+        "id": "L5",
+        "topic": "Droits et activités",
+        "reason": "LS, AI, Suva et durée d’interdiction de conduire non établies ici ; aucune prestation ou durée automatique annoncée.",
+        "blocking": false,
+        "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
+      },
+      {
+        "id": "L6",
+        "topic": "Figures",
+        "reason": "Deux originaux humains historiques normaux avec annotations adjacentes, sans prétendre représenter une lésion. Six schémas conceptuels non anatomiques distincts et sourcés.",
+        "blocking": false,
+        "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
+      },
+      {
+        "id": "L7",
+        "topic": "Aperçu natif",
+        "reason": "Autres cours et jauges hérités non audités médicalement ; bannière native «contre-audit restant» ne prouve pas une revue indépendante requise ou faite. Sur mobile Plan/pager peut recouvrir temporairement quelques mots, lisibles au défilement.",
+        "blocking": false,
+        "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
+      },
+      {
+        "id": "L8",
+        "topic": "Relecture",
+        "reason": "Toutes les revues sont des auto-relectures IA attribuées à Sol ; aucune validation indépendante ni médicale humaine et aucun score clinique revendiqués.",
+        "blocking": false,
+        "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
+      }
+    ]
   },
   "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
   "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
   "medical_content_written": true,
   "current_limitations": [
-    "C70 réécrit et contrôles statiques/sciences réussis ; build natif et contrôles finaux en cours.",
-    "Les25lectures Sol sont ciblées, avec historique Astra préservé séparément ; aucun jeton ni coût natif mesuré.",
-    "Incidence nationale actuelle C70 non établie ; populations, FI et propositions cIMPACT intérimaires distinguées."
+    "C70 achevé et libéré ; aucune PR/main ni validation clinique humaine.",
+    "Prochain candidat G03 : acquisition en cours, aucun contenu médical nouveau pour cette leçon."
   ],
   "completed_lessons": [
     {
@@ -1347,6 +1413,96 @@
           "preview_sha256": "3bd2f292131c8a1f9a94b5e76c97e37ca61e50d810af7a3e2eeef1b7c3b656a9"
         }
       ]
+    },
+    {
+      "code": "C70",
+      "worktree": "/workspace/Medina-neurologie-C70",
+      "branch": "codex/alpha77/c70-integrate-g1",
+      "reservation_acquired": true,
+      "acquisition_registry_sha": "691df1430fc760c0a3106fc8f97bb567e09693f4",
+      "start_receipt": "/workspace/Medina-neurologie-C70/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE/start.json",
+      "stage": "termine",
+      "source_readings_count": 25,
+      "monograph14_reviewed": 14,
+      "matrix20_reviewed": 20,
+      "blocking_findings": [],
+      "clinical_certification": false,
+      "preview": "/workspace/Medina-neurologie-C70/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE/C70-apercu-autonome.html",
+      "source_reader": "sol_neurologie",
+      "historical_source_reader": "astra_neurologie",
+      "sciences": 6,
+      "semiology_sections": 9,
+      "popups": 38,
+      "quiz": 4,
+      "source_commit": "839cf805b65e958af0e2174a99c0c886c824f926",
+      "preview_sha256": "aa4f71d7653592d894ece4b70b5f18604c150147b252b9944bd29ac806159ead",
+      "source_binding": true,
+      "pushed": true,
+      "completed": true,
+      "released": true,
+      "commit": "730d8b24b9c4017ad3161a504f2ca3c626c3521d",
+      "completed_at": "2026-11-02T11:05:28+00:00",
+      "completion_receipt": "/workspace/Medina-neurologie-C70/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE/harness-completion.json",
+      "release_registry_sha": "4b3093501c7ec87bffa489d6118268a38ea37865",
+      "preview_remote": "https://github.com/vialdjoukang-spec/Medina/blob/730d8b24b9c4017ad3161a504f2ca3c626c3521d/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE/C70-apercu-autonome.html",
+      "documented_limits": [
+        {
+          "id": "L1",
+          "topic": "Épidémiologie",
+          "reason": "Pas d’incidence nationale actuelle propre à C70/grade3 OMS2021 dans les lectures ; chiffres de centres et SNC général ne deviennent pas incidence C70.",
+          "blocking": false,
+          "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
+        },
+        {
+          "id": "L2",
+          "topic": "Classification",
+          "reason": "BfArM2024 sans certification de facturation2026 ; critères OMS2021 séparés des propositions intérimaires cIMPACT8 sporadiques adultes.",
+          "blocking": false,
+          "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
+        },
+        {
+          "id": "L3",
+          "topic": "Entités rares et recours",
+          "reason": "SFT et tumeurs mélanocytaires primitives documentées en principes ; données faibles, pas de protocole systémique ou de dose de recours inventé.",
+          "blocking": false,
+          "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
+        },
+        {
+          "id": "L4",
+          "topic": "Information professionnelle",
+          "reason": "Populations de dose initiale et tableau rénal distinctes ; seuil exact80 non classé par la FI lévétiracétam ; vérification pharmaceutique plutôt qu’arrondi. Forme phosphate/base Galepharm non convertie implicitement.",
+          "blocking": false,
+          "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
+        },
+        {
+          "id": "L5",
+          "topic": "Droits et activités",
+          "reason": "LS, AI, Suva et durée d’interdiction de conduire non établies ici ; aucune prestation ou durée automatique annoncée.",
+          "blocking": false,
+          "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
+        },
+        {
+          "id": "L6",
+          "topic": "Figures",
+          "reason": "Deux originaux humains historiques normaux avec annotations adjacentes, sans prétendre représenter une lésion. Six schémas conceptuels non anatomiques distincts et sourcés.",
+          "blocking": false,
+          "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
+        },
+        {
+          "id": "L7",
+          "topic": "Aperçu natif",
+          "reason": "Autres cours et jauges hérités non audités médicalement ; bannière native «contre-audit restant» ne prouve pas une revue indépendante requise ou faite. Sur mobile Plan/pager peut recouvrir temporairement quelques mots, lisibles au défilement.",
+          "blocking": false,
+          "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
+        },
+        {
+          "id": "L8",
+          "topic": "Relecture",
+          "reason": "Toutes les revues sont des auto-relectures IA attribuées à Sol ; aucune validation indépendante ni médicale humaine et aucun score clinique revendiqués.",
+          "blocking": false,
+          "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
+        }
+      ]
     }
   ],
   "tokens_actual": null,
@@ -1359,5 +1515,6 @@
       "role": "historical author until quota interruption",
       "preserved": true
     }
-  ]
+  ],
+  "counts_snapshot_kind": "Comptages préparatoires historiques ; ne pas les présenter comme compte courant des cours restant à produire."
 }
