@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """600s scheduler; isolated Git index, allowlisted outputs, no main/PR writes.
 
-It cannot survive destruction of its host. GitHub's independent cron is pending
-default-branch installation. This limitation is persisted in monitor.json.
+It cannot survive destruction of its host. A separate GitHub workflow_dispatch
+relay observes remotely; it cannot restart these local authors or this publisher.
 """
 import argparse
 import fcntl
@@ -15,24 +15,26 @@ import time
 from medina_harness import Harness, atomic, now
 
 BRANCH='codex/harness-observations-20261102'
-FILES=['status.json','dashboard.html','rapport-08h00.html','monitor.json',
+FILES=['status.json','dashboard.html','rapport-08h00.html','monitor.json','plan.json','deliverables.json',
        'runtime/state.json','runtime/watch.json','runtime/events.jsonl',
        'runtime/tests.json','runtime/tests.log']
 CODE_FILES=['medina_harness.py','bracelet.py','github_observe.py','watch_publish.py',
-            'remote_watchdog.py','bundle_native.py','watchdog-control.json','catalog.json','config.json','prompt-lock.json',
+            'remote_watchdog.py','bundle_native.py','make_plan.py','make_deliverables.py','check_dashboard.py','watchdog-control.json','catalog.json','config.json','prompt-lock.json',
             'REPARTITION.md','dashboard-template.html','tests/test_harness.py','tests/test_remote_watchdog.py']
 
 def run(root,publisher):
     h=Harness(root)
     # A new interpreter loads the current tested code on every tick.
+    subprocess.run([sys.executable,str(h.home/'make_deliverables.py')],check=True,capture_output=True,timeout=60)
     subprocess.run([sys.executable,str(h.home/'medina_harness.py'),'--root',str(root),'watch'],check=True,capture_output=True,timeout=90)
     gate=h.readiness()
     actual=subprocess.check_output(['git','-C',str(publisher),'branch','--show-current'],text=True).strip()
     if actual!=BRANCH:raise ValueError('Branche de publication non autorisée')
     staged=[]
+    agent_files=[f"agents/{x['specialty']}/{name}" for x in h.config['agents'] for name in ('brief.json','inventaire.md','orchestration.md')]
     # A closed production gate must still publish observations and alerts.
     # Only code whose test receipt is current may replace the remote runtime.
-    for name in FILES+(CODE_FILES if gate['allowed'] else []):
+    for name in FILES+agent_files+(CODE_FILES if gate['allowed'] else []):
         src=h.home/name
         if src.exists():
             dest=publisher/'harness'/name;dest.parent.mkdir(parents=True,exist_ok=True)

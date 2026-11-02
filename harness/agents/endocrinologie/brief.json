@@ -6,15 +6,15 @@
   "fragment": "S05",
   "label": "E-06-Endocrinologie et métabolisme",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "phase": "preparation_only_waiting_harness_veille_and_exclusive_worktree",
+  "phase": "verification_native_bundle_and_attributed_self_review",
   "selected_lesson": {
     "code": "E00",
     "title": "Syndrome d’insuffisance thyroïdienne congénitale",
     "reason": "Premier existant Codex libre de réservation dans ordre Starter; E10 et E05 actifs sont exclus.",
     "mission_candidate": ".medina/missions/ALPHA77-CODEX-E00-INTEGRATE.json",
     "mission_old_base": "8712c3fe758f0c7e1f9fb85378def47b554edb53",
-    "reservation_acquired": false,
-    "start_passed": false,
+    "reservation_acquired": true,
+    "start_passed": true,
     "required_before_writing": [
       "harness testé",
       "veille exigée réussie et preuves datées",
@@ -24,9 +24,10 @@
       "start réussi",
       "sources primaires utiles réellement lues",
       "betta_verite.py avant rédaction"
-    ]
+    ],
+    "start_receipt": "/workspace/Medina-harness/harness/evidence/E00/start.json"
   },
-  "authorization_scope": "Préparation seulement dans harness/agents/endocrinologie; aucune écriture médicale, aucun commit ni index. Ordre courant spécialités parallèles/une leçon à la fois remplace lots historiques, pas réservations.",
+  "authorization_scope": "E00 uniquement, périmètre mission et preuves ; rédaction autorisée après gate et réservation ; commit/push de branche réservée autorisés, aucune PR/main.",
   "counts": {
     "canonical_s05": 26,
     "existing_codex": 13,
@@ -1267,5 +1268,38 @@
     "clov2_veille est veille Git, pagination partielle et erreurs API avalées; pas veille médicale",
     "distributor_veille mesure délai/fichier, pas tokens/coûts",
     "audit_sciences base historique fixe à examiner avant usage sur cours tardifs"
-  ]
+  ],
+  "initial_preparation": {
+    "prepared_at": "2026-11-02T01:16:45.312443+00:00",
+    "phase": "preparation_only_waiting_harness_veille_and_exclusive_worktree",
+    "authorization_scope": "Préparation seulement dans harness/agents/endocrinologie; aucune écriture médicale, aucun commit ni index. Ordre courant spécialités parallèles/une leçon à la fois remplace lots historiques, pas réservations."
+  },
+  "updated_at": "2026-11-02T02:20:34.461699+00:00",
+  "worktree": "/workspace/Medina-endocrinologie",
+  "branch": "codex/alpha77/e00-integrate-g1",
+  "current_evidence": {
+    "folder": "/workspace/Medina-endocrinologie/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE",
+    "preview": "E00-apercu-autonome.html",
+    "captures": [
+      "1440-anatomy-original.png",
+      "390-histology-original.png",
+      "1440-font24-pharmacology.png",
+      "390-font24-pharmacology.png"
+    ],
+    "coverage": "coverage-14-20.json",
+    "sources": "recherche_E00/sources.json",
+    "science_audit": "audit-sciences.json",
+    "browser": "browser-report.json",
+    "revision_state": "Dernières corrections linguistiques en cours de reconstruction ; preuves finales seront réempreintées."
+  },
+  "current_limits": [
+    "Auto-relecture assumée, aucune validation humaine ni indépendance revendiquée.",
+    "Seuil suisse de rappel TSH et prévalence actuelle E00 suisse non trouvés ; pas de valeur substituée.",
+    "Catalogue administratif français OFS2024 conservé ; comparaison BfArM2026 distincte.",
+    "Référence sélénium : titre seul, aucun mécanisme précis ni prescription.",
+    "Test navigateur à origine interceptée ; aucun serveur HTTP réel testé.",
+    "Tokens et coût réels non fournis par le fournisseur."
+  ],
+  "tokens_actual": null,
+  "cost_actual": null
 }

@@ -61,7 +61,7 @@ class WatchdogCase(unittest.TestCase):
             root=Path(d)/'root';target=Path(d)/'publisher';home=root/'harness';runtime=home/'runtime';runtime.mkdir(parents=True)
             (home/'status.json').write_text('{"gate":{"allowed":false}}')
             (home/'medina_harness.py').write_text('unverified candidate')
-            h=mock.Mock(home=home,runtime=runtime);h.readiness.return_value={'allowed':False,'problems':['tests failed']}
+            h=mock.Mock(home=home,runtime=runtime);h.config={'agents':[]};h.readiness.return_value={'allowed':False,'problems':['tests failed']}
             with mock.patch.object(publisher,'Harness',return_value=h),mock.patch.object(publisher.subprocess,'run',return_value=mock.Mock(returncode=0)),mock.patch.object(publisher.subprocess,'check_output',return_value=publisher.BRANCH+'\n'):
                 result=publisher.run(root,target)
             self.assertTrue(result['published']);self.assertFalse(result['production_allowed'])

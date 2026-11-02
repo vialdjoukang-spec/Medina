@@ -43,8 +43,11 @@ Le reçu d'acquisition réel est ensuite requis pour ouvrir une leçon.
 
 Avant achèvement : 14 points monographiques reliés aux passages sources, matrice
 20 rubriques Medina, quatre onglets, sémiologie, FI suisses exactes, provenance
-et droits des figures, annotations, contrôles ordinateur/mobile, revue médicale
-et linguistique distinctes avec corrections relues. Les contrôles de balises ne
+et droits des figures, annotations, contrôles ordinateur/mobile, revues médicale
+et linguistique attribuées avec corrections relues. Le contrat SSP V2 §7 accepte
+l'auto-relecture et interdit de la nommer indépendante : le mode `self_review`
+est donc explicite. Une vérification distincte ciblée reste proportionnée au risque.
+Les contrôles de balises ne
 remplacent jamais ces revues. Une lacune bloque la clôture, pas sa déclaration.
 
 ## Économie et métriques
@@ -95,3 +98,8 @@ révocations de droits et retards restent possibles. `watchdog-control.json` per
 l'arrêt explicite ; arrêter le run actif donne un arrêt immédiat. Une seule chaîne
 est autorisée par le groupe de concurrence. Aucun appel LLM ne sert à la veille ;
 un runner standard attend entre les contrôles, ce qui consomme du temps Actions.
+
+
+## Passage à la leçon suivante
+
+La commande `python3 harness/medina_harness.py complete AGENT DOSSIER` vérifie le manifeste à14points, les20rubriques couvertes avec preuves, les revues attribuées, les images et l’absence de réserve bloquante. Le reçu `source-binding.json` doit correspondre aux octets actuels des six fichiers du cours, du glossaire et de l’aperçu. Toute modification invalide ce reçu ; la veille le signale sans le renouveler. La commande conserve l’historique des achèvements et autorise ensuite une nouvelle acquisition exclusive. Elle ne crée aucune PR, ne libère pas automatiquement le registre et ne certifie pas la médecine. Le statut actuel des quatre leçons reste provisoire tant que leurs réserves ne sont pas levées.

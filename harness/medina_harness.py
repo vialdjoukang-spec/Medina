@@ -67,6 +67,26 @@ def inside(root, relative):
 def git(root, *args):
     return subprocess.check_output(['git', '-C', str(root), *args], text=True, timeout=30).strip()
 
+def verify_binding(worktree, code, folder):
+    """Check a recorded verification against current bytes; never renew it."""
+    folder=Path(folder);binding=load(folder/'source-binding.json')
+    required={f'chapters/{code}/{code}_{x}.html' for x in ('a','b','c','d','pop1','pop2')}
+    required.add('glossary/'+code.lower()+'.py')
+    if binding.get('code')!=code or not required<=set(binding.get('final_sources',{})):
+        raise ValueError('Liaison aux sept sources finales incomplète')
+    if not binding.get('verified_at') or not binding.get('checks'):
+        raise ValueError('Vérification finale non documentée')
+    for name,expected in binding['final_sources'].items():
+        if not (name in required or name.startswith('assets/img/'+code.lower()+'/alpha/codex/')):
+            raise ValueError('Source liée hors leçon')
+        p=inside(worktree,name)
+        if not p.is_file() or digest(p.read_bytes())!=expected:
+            raise ValueError('Source modifiée depuis vérification: '+name)
+    preview=inside(folder,binding.get('preview','missing'))
+    if not preview.is_file() or digest(preview.read_bytes())!=binding.get('preview_sha256'):
+        raise ValueError('Aperçu modifié depuis vérification')
+    return binding
+
 def code_hash():
     paths = sorted([*HERE.glob('*.py'), *HERE.glob('tests/*.py'), HERE/'dashboard-template.html', HERE/'catalog.json'])
     return digest(b''.join(str(p.relative_to(HERE)).encode()+b'\0'+p.read_bytes() for p in paths if p.exists()))
@@ -161,6 +181,31 @@ class Harness:
         self.report()
         return {'updated': agent, 'at': now()}
 
+    def complete(self, agent, folder):
+        """Record attributed project completion, never a clinical certification."""
+        if not self.readiness()['allowed']:raise ValueError('Harness non prêt')
+        folder=Path(folder).resolve();manifest=load(folder/'lesson-manifest.json')
+        result=validate_lesson(folder)
+        if not result['technical_contract_pass']:raise ValueError('; '.join(result['errors']))
+        rows=manifest.get('matrix20',[])
+        if (len(rows)!=20 or {r.get('point') for r in rows}!=set(range(1,21))
+                or any(r.get('status')!='covered' or not r.get('evidence') for r in rows)):
+            raise ValueError('Matrice20 incomplète ou réserves ouvertes')
+        with self.transaction() as state:
+            a=state['agents'][agent];code=a['lesson']
+            if a.get('stage')=='termine':raise ValueError('Achèvement déjà enregistré')
+            if manifest.get('code')!=code:raise ValueError('Manifeste différent de la mission')
+            if not folder.is_relative_to(Path(a['worktree']).resolve()):raise ValueError('Dossier hors worktree')
+            if git(a['worktree'],'branch','--show-current')!=a['branch']:raise ValueError('Branche différente')
+            binding=verify_binding(a['worktree'],code,folder)
+            record={'agent':agent,'code':code,'at':now(),'manifest_sha256':digest((folder/'lesson-manifest.json').read_bytes()),
+                    'source_binding_sha256':digest((folder/'source-binding.json').read_bytes()),'review_modes':result['review_modes'],
+                    'clinical_certification':False,'publication_allowed':False,'preview_sha256':binding['preview_sha256']}
+            a.update(stage='termine',completed_sections=14,activity_at=now(),message='Achèvement de projet documenté; présentation à Vial avant toute PR main.')
+            state.setdefault('completed_lessons',[]).append(record)
+            self.event(state,'complete',agent=agent,code=code)
+        atomic(folder/'harness-completion.json',record);self.report();return record
+
     def extract(self, path, first, last, repeat=False, worktree=None):
         scope = self.root
         if worktree:
@@ -203,6 +248,11 @@ class Harness:
                     files.update(git(a['worktree'], 'ls-files', '--others', '--exclude-standard').splitlines())
                     forbidden=[p for p in files if not any(p==prefix or p.startswith(prefix+'/') for prefix in a['allowed_paths'])]
                     if forbidden: findings.append({'agent':agent,'level':'error','reason':'Écritures hors périmètre','paths':forbidden})
+                    folder=Path(a['worktree'])/'docs/collaboration/ssp-v2/execution'/('ALPHA77-CODEX-'+a['lesson']+'-INTEGRATE')
+                    if (folder/'source-binding.json').exists():
+                        try:verify_binding(a['worktree'],a['lesson'],folder)
+                        except (ValueError,OSError) as exc:
+                            findings.append({'agent':agent,'level':'warning','reason':'Preuves/aperçu périmés; nouvelle vérification requise avant clôture: '+str(exc)})
                 except subprocess.SubprocessError as exc:
                     findings.append({'agent':agent,'level':'error','reason':'Contrôle Git indisponible: '+str(exc)})
         for spec in self.config['agents']:
@@ -228,7 +278,10 @@ class Harness:
                   'base_sha': self.config['base_sha'], 'gate': self.readiness(), 'watch': watch,
                   'tests': load(self.runtime / 'tests.json', {}), 'agents': [], 'events': state.get('events', []),
                   'cache': state.get('cache', {}), 'monitor': load(self.home / 'monitor.json', {}),
-                  'prompt': load(self.home / 'prompt-lock.json', {})}
+                  'prompt': load(self.home / 'prompt-lock.json', {}),
+                  'plan': load(self.home / 'plan.json', {}),
+                  'deliverables': load(self.home / 'deliverables.json', {}),
+                  'completed_lessons':state.get('completed_lessons',[])}
         for spec in self.config['agents']:
             a = {**spec, **state.get('agents', {}).get(spec['id'], {})}
             a['brief'] = load(self.home / 'agents' / spec['specialty'] / 'brief.json', {})
@@ -271,15 +324,22 @@ def validate_lesson(folder):
     elif any(not re.search(r'id=[\"\']'+re.escape(anchor)+r'[\"\']', content) for anchor in semio['section_anchors']):
         errors.append('Sémiologie: ancres absentes')
     if manifest.get('blocking_findings', 1): errors.append('Réserves bloquantes non levées')
-    # Never substitute structure for independent medicine/language/visual reviews.
+    # Current SSP V2 permits attributed self-review. Never call it independent.
     for kind in ('medical', 'language', 'visual_desktop', 'visual_mobile'):
         review = manifest.get('reviews', {}).get(kind, {})
-        if not review.get('path') or not review.get('reviewer') or review.get('reviewer') == manifest.get('author'):
+        if not review.get('path') or not review.get('reviewer'):
             errors.append('Revue distincte absente: '+kind); continue
+        mode=review.get('mode','independent')
+        if mode not in ('self_review','independent'):
+            errors.append('Mode de revue inconnu: '+kind); continue
+        if review.get('reviewer') == manifest.get('author') and mode != 'self_review':
+            errors.append('Revue distincte absente; auto-relecture à déclarer explicitement: '+kind); continue
         p = inside(folder, review['path'])
         if not p.is_file() or digest(p.read_bytes()) != review.get('sha256'): errors.append('Preuve de revue absente: '+kind)
     return {'technical_contract_pass': not errors, 'errors': errors, 'clinical_certification': False,
-            'publication_allowed': False, 'reason': 'Une vérification de fichiers ne certifie pas la médecine; revue utilisateur requise avant PR main.'}
+            'publication_allowed': False,
+            'review_modes': {k:v.get('mode','independent') for k,v in manifest.get('reviews',{}).items()},
+            'reason': 'Une vérification de fichiers ou auto-relecture ne certifie pas la médecine; présentation utilisateur requise avant PR main.'}
 
 def render(data, path):
     template = (HERE/'dashboard-template.html').read_text()
@@ -295,6 +355,7 @@ def main():
     x=sub.add_parser('claim'); x.add_argument('agent'); x.add_argument('code'); x.add_argument('worktree'); x.add_argument('receipt')
     x=sub.add_parser('progress'); x.add_argument('agent'); x.add_argument('stage'); x.add_argument('message'); x.add_argument('--sections',type=int)
     x=sub.add_parser('validate'); x.add_argument('folder')
+    x=sub.add_parser('complete'); x.add_argument('agent'); x.add_argument('folder')
     a=p.parse_args(); h=Harness(a.root)
     if a.cmd=='gate': out=h.readiness()
     elif a.cmd=='report': out=h.report(); out={'report':str(h.home/'dashboard.html'),'generated_at':out['generated_at']}
@@ -303,6 +364,7 @@ def main():
     elif a.cmd=='claim': out=h.claim(a.agent,a.code,a.worktree,a.receipt)
     elif a.cmd=='progress': out=h.progress(a.agent,a.stage,a.message,a.sections)
     elif a.cmd=='validate': out=validate_lesson(a.folder)
+    elif a.cmd=='complete': out=h.complete(a.agent,a.folder)
     elif a.cmd=='self-test':
         r=subprocess.run([sys.executable,'-m','unittest','discover','-s',str(HERE/'tests'),'-v'],capture_output=True,text=True,timeout=120)
         (h.runtime/'tests.log').write_text(r.stdout+r.stderr)
