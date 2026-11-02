@@ -1,26 +1,20 @@
 {
-  "generated_at": "2026-11-02T11:10:11+00:00",
+  "generated_at": "2026-11-02T11:20:10+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T11:10:11+00:00",
+    "checked_at": "2026-11-02T11:20:10+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T11:10:11+00:00",
+    "observed_at": "2026-11-02T11:20:10+00:00",
     "ok": true,
-    "findings": [
-      {
-        "agent": "codex_hematologie",
-        "level": "warning",
-        "reason": "Aucune activité déclarée depuis plus de 20 min; agent non supposé actif"
-      }
-    ],
+    "findings": [],
     "interval_seconds": 600,
-    "observer_pid": 662380,
+    "observer_pid": 731390,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -82,31 +76,31 @@
       "clinical_orchestration": true,
       "runtime_name": "/root/sol_neurologie",
       "historical_id": "astra_neurologie",
-      "lesson": "C70",
-      "worktree": "/workspace/Medina-neurologie-C70",
-      "stage": "termine",
-      "branch": "codex/alpha77/c70-integrate-g1",
+      "lesson": "G03",
+      "worktree": "/workspace/Medina-neurologie-G03",
+      "stage": "recherche",
+      "branch": "codex/alpha77/g03-integrate-g1",
       "allowed_paths": [
-        "chapters/C70",
-        "glossary/c70.py",
-        "assets/img/c70/alpha/codex",
-        "organisation/alpha-publications/Codex/C70",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE"
+        "chapters/G03",
+        "glossary/g03.py",
+        "assets/img/g03/alpha/codex",
+        "organisation/alpha-publications/Codex/G03",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE"
       ],
-      "started_at": "2026-11-02T05:09:43+00:00",
-      "activity_at": "2026-11-02T11:05:28+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "started_at": "2026-11-02T11:10:54+00:00",
+      "activity_at": "2026-11-02T11:10:54+00:00",
+      "message": "Mission réservée; recherche autorisée",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "784443ef6624231c5bb9a68926f8827d13703b7fb5c4b22f1c0a95b2840df4d9",
+      "completed_sections": 0,
+      "receipt_sha256": "401e4a956c7e52771bd02f0d6b7cc8d49a4159dd3eb50f1c54f648e70432cd18",
       "brief": {
         "schema_version": 1,
-        "status": "C70_COMPLETE_RELEASED_G03_ACQUISITION",
+        "status": "G03_RECHERCHE_G02_G05_I64_C70_COMPLETE",
         "prepared_at": "2026-11-02T01:17:05.123886+00:00",
         "agent": "Sol Neurologie",
         "model": "gpt-6.1-sol",
@@ -117,15 +111,14 @@
         "label": "N-05-Neurologie",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
         "candidate": {
-          "code": "C70",
-          "title": "Tumeur maligne des méninges",
+          "code": "G03",
+          "title": "Méningite due à des causes autres et non précisées",
           "mode": "existing",
           "owner": "Codex",
-          "active_reservations": [],
-          "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-C70-INTEGRATE.json",
+          "approved_integration_manifest": ".medina/missions/ALPHA77-CODEX-G03-INTEGRATE.json",
           "campaign77_member": true,
           "source_exists": true,
-          "authorization": "candidate_after_harness_and_current_reservation_check"
+          "authorization": "current_acquired_started_claimed_reservation"
         },
         "counts": {
           "specialty_existing": 57,
@@ -810,266 +803,17 @@
           },
           "precedence": "Current direct user order overrides incompatible historical STOP and batch workflow; preserves clinical evidence and concurrent reservations"
         },
-        "baseline": [
-          {
-            "path": "chapters/G02/G02_a.html",
-            "sha256": "018184ce4aba5607c81c40ca01397d6012664362b513618efdebef4cbef49bc3",
-            "science_tabs": [],
-            "semiology_markers": 0,
-            "svg_count": 1,
-            "img_count": 0
-          },
-          {
-            "path": "chapters/G02/G02_b.html",
-            "sha256": "752ad64631558afa344b57ab42b5783beaa5890f7ce0ee8b630af30d85abade0",
-            "science_tabs": [],
-            "semiology_markers": 0,
-            "svg_count": 1,
-            "img_count": 0
-          },
-          {
-            "path": "chapters/G02/G02_c.html",
-            "sha256": "7cbc26d878765d64244881b6e27829e0732e28442ce9450369fa266823ec8205",
-            "science_tabs": [
-              "g02-s-physio",
-              "g02-s-immu",
-              "g02-s-viro",
-              "g02-s-myco"
-            ],
-            "semiology_markers": 0,
-            "svg_count": 4,
-            "img_count": 0
-          },
-          {
-            "path": "chapters/G02/G02_d.html",
-            "sha256": "ec32bb6c8fb28aec32b67c9555ee0a384701634c8bc4852d1e02c295a67e949b",
-            "science_tabs": [],
-            "semiology_markers": 0,
-            "svg_count": 0,
-            "img_count": 0
-          },
-          {
-            "path": "chapters/G02/G02_pop1.html",
-            "sha256": "8fd587b944bbe77602dab9c67716fb029790a6a23002bdd70f361e1c9ffe8236",
-            "science_tabs": [],
-            "semiology_markers": 0,
-            "svg_count": 0,
-            "img_count": 0
-          },
-          {
-            "path": "chapters/G02/G02_pop2.html",
-            "sha256": "a969c01e360cea7ae57f19f8199704f82bcc8b6255069450e6cb99f43030f156",
-            "science_tabs": [],
-            "semiology_markers": 0,
-            "svg_count": 0,
-            "img_count": 0
-          },
-          {
-            "path": "glossary/g02.py",
-            "sha256": "84d045f80e65deea899463c46b1d511cca125435fc19080a8dd99e22ef49f738"
-          }
-        ],
+        "baseline": {
+          "chapters/G03/G03_pop1.html": "2e57e747678ba707be783d202391bf7bab95043135f2811aebcca60094a62bb8",
+          "chapters/G03/G03_c.html": "e8c24233083ac3eb1da282359315cf83721168a04eee733e6ecd52566b0c3731",
+          "chapters/G03/G03_pop2.html": "b02d90732a0bc572a40a387693d79e7b9261d0aa6d51fc6ee8cbbd666c03b44a",
+          "chapters/G03/G03_a.html": "b5c9d03b1ff754f12a45623bff2ff4642030ce60d726188cffaf97ea59d2503e",
+          "chapters/G03/G03_d.html": "31bd3f49fe27246ccbe3d23440c561a8f78633289db48f1abad4d919a96390ca",
+          "chapters/G03/G03_b.html": "fe9e123f0027f05f312c5e93e8ad2c6fb49a55756a7da66ecdfbb6beee5ad712",
+          "glossary/g03.py": "97a050ada05083be685012d9f0f9fe8d962396eea764ab49d5c132deb73f309d"
+        },
         "historical_author_dossier": "livraisons/Livraison Claude/N-05-Neurologie/betta/CYCLE_33_G02",
-        "sources_to_reread": [
-          {
-            "id": "S1",
-            "title": "ICD-10-GM 2024, bloc G00–G09 (G02*, G03, G05*)",
-            "url_inherited": "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-g00-g09.htm",
-            "section_inherited": "G02.0*, G02.1*, G02.8*, exclusion vers G05.1*–G05.2*",
-            "publisher": "BfArM",
-            "historical_date": "15.10.2026",
-            "historical_limitations": "version allemande ; libellés français repris du registre OFS du dépôt",
-            "actually_read_by_this_agent": false,
-            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
-          },
-          {
-            "id": "S2",
-            "title": "CIM-10-GM 2024 (fr), entrées G02, G02.0, G02.1, G02.8 dans nosology/fragments/S08.json",
-            "url_inherited": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/32686265/master",
-            "section_inherited": "G02, marqueur *",
-            "publisher": "OFS (via registre du dépôt)",
-            "historical_date": "15.10.2026",
-            "historical_limitations": "lu via le registre local, PDF OFS non relu intégralement",
-            "actually_read_by_this_agent": false,
-            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
-          },
-          {
-            "id": "S3",
-            "title": "Virale Meningoenzephalitis – Leitlinien für Diagnostik und Therapie in der Neurologie (S1, AWMF 030/100)",
-            "url_inherited": "https://register.awmf.org/assets/guidelines/030-100l_S1_Virale_Meningoenzephalitis_2025-02.pdf",
-            "section_inherited": "Was gibt es Neues ; Empfehlungen auf einen Blick ; 1.2 Klassifikation (Tab. 1–2) ; 1.3 Epidemiologie ; 2 Diagnostik (Tab. 3) ; 3.1 ; 3.2.1–3.2.2 ; 3.2.6 Mollaret",
-            "publisher": "Deutsche Gesellschaft für Neurologie (DGN), coord. U. Meyding-Lamadé",
-            "historical_date": "15.10.2026",
-            "historical_limitations": "S1 (consensus d'experts) ; dosages à vérifier contre l'information professionnelle ; incidence américaine citée dans le texte non retenue comme fondement",
-            "actually_read_by_this_agent": false,
-            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
-          },
-          {
-            "id": "S4",
-            "title": "Clinical features and prognostic factors in adults with viral meningitis (Petersen et al.)",
-            "url_inherited": "https://doi.org/10.1093/brain/awad089",
-            "section_inherited": "résumé",
-            "publisher": "Brain 2023;146(9):3816-3825 (PMID 36929167)",
-            "historical_date": "15.10.2026",
-            "historical_limitations": "lu au niveau du résumé ; épidémiologie danoise",
-            "actually_read_by_this_agent": false,
-            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
-          },
-          {
-            "id": "S5",
-            "title": "Benign recurrent lymphocytic meningitis (Mollaret's meningitis) in Denmark: a nationwide cohort study (Petersen et al.)",
-            "url_inherited": "https://doi.org/10.1111/ene.16081",
-            "section_inherited": "résumé",
-            "publisher": "Eur J Neurol 2024;31(1):e16081 (PMID 37797296)",
-            "historical_date": "15.10.2026",
-            "historical_limitations": "résumé seulement",
-            "actually_read_by_this_agent": false,
-            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
-          },
-          {
-            "id": "S6",
-            "title": "Viral lumbosacral radiculitis (Elsberg syndrome) in Denmark (Petersen et al.)",
-            "url_inherited": "https://doi.org/10.1007/s15010-023-02113-9",
-            "section_inherited": "résumé",
-            "publisher": "Infection 2024;52(3):839-846 (PMID 37917395)",
-            "historical_date": "15.10.2026",
-            "historical_limitations": "résumé seulement ; petite série",
-            "actually_read_by_this_agent": false,
-            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
-          },
-          {
-            "id": "S7",
-            "title": "Long-term valacyclovir suppressive treatment after HSV-2 meningitis: a double-blind RCT (Aurelius et al.)",
-            "url_inherited": "https://doi.org/10.1093/cid/cis031",
-            "section_inherited": "résumé",
-            "publisher": "Clin Infect Dis 2012;54(9):1304-13 (PMID 22460966)",
-            "historical_date": "15.10.2026",
-            "historical_limitations": "essai européen publié dans une revue américaine ; résumé seulement",
-            "actually_read_by_this_agent": false,
-            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
-          },
-          {
-            "id": "S8",
-            "title": "Rapid detection of enterovirus in CSF by a fully-automated PCR assay is associated with improved management of aseptic meningitis in adult patients (Giulieri et al.)",
-            "url_inherited": "https://doi.org/10.1016/j.jcv.2014.11.001",
-            "section_inherited": "résumé",
-            "publisher": "J Clin Virol 2015;62:58-62 (PMID 25542472) – CHUV Lausanne",
-            "historical_date": "15.10.2026",
-            "historical_limitations": "observationnel monocentrique ; coûts en dollars",
-            "actually_read_by_this_agent": false,
-            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
-          },
-          {
-            "id": "S9",
-            "title": "Comparative analysis of viral shedding in pediatric and adult subjects with CNS-associated enterovirus infections from 2013 to 2015 in Switzerland (Cordey et al.)",
-            "url_inherited": "https://doi.org/10.1016/j.jcv.2017.01.008",
-            "section_inherited": "résumé",
-            "publisher": "J Clin Virol 2017;89:22-29 (PMID 28214758) – HUG Genève",
-            "historical_date": "15.10.2026",
-            "historical_limitations": "résumé seulement ; monocentrique",
-            "actually_read_by_this_agent": false,
-            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
-          },
-          {
-            "id": "S10",
-            "title": "Global guideline for the diagnosis and management of cryptococcosis: an initiative of the ECMM and ISHAM in cooperation with the ASM (Chang et al.)",
-            "url_inherited": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11526416/",
-            "section_inherited": "recommandations dépistage, diagnostic, induction, consolidation, entretien, hypertension intracrânienne, TAR, IRIS, corticoïdes, pronostic (premiers 100 000 caractères)",
-            "publisher": "Lancet Infect Dis 2024;24(8):e495-e512 (PMID 38346436)",
-            "historical_date": "15.10.2026",
-            "historical_limitations": "initiative européenne (ECMM) avec coopération ASM ; texte lu partiellement (40 % du document)",
-            "actually_read_by_this_agent": false,
-            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
-          },
-          {
-            "id": "S11",
-            "title": "Guidelines for the treatment of human African trypanosomiasis",
-            "url_inherited": "https://www.who.int/publications/i/item/9789240096035",
-            "section_inherited": "page de présentation",
-            "publisher": "OMS",
-            "historical_date": "15.10.2026",
-            "historical_limitations": "page de présentation seule ; seuils LCR et schémas détaillés non lus",
-            "actually_read_by_this_agent": false,
-            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
-          },
-          {
-            "id": "S12",
-            "title": "Oreillons",
-            "url_inherited": "https://www.bag.admin.ch/fr/oreillons",
-            "section_inherited": "transmission, complications, vaccination",
-            "publisher": "OFSP",
-            "historical_date": "15.10.2026",
-            "historical_limitations": "pas de fréquence chiffrée de la méningite ourlienne",
-            "actually_read_by_this_agent": false,
-            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
-          },
-          {
-            "id": "S13",
-            "title": "Zeckenübertragene Krankheiten (FSME)",
-            "url_inherited": "https://www.bag.admin.ch/de/zeckenuebertragene-krankheiten",
-            "section_inherited": "FSME : zones à risque, vaccination",
-            "publisher": "OFSP/BAG",
-            "historical_date": "15.10.2026",
-            "historical_limitations": "pas de chiffres annuels sur la page ; la FSME relève de A84 (encéphalite), donnée de voisinage",
-            "actually_read_by_this_agent": false,
-            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
-          },
-          {
-            "id": "S14",
-            "title": "Information professionnelle suisse Aciclovir Labatec® i.v.",
-            "url_inherited": "https://amiko.oddb.org (GTIN 7680603250014)",
-            "section_inherited": "Indications, Posologie (adulte, enfant, nouveau-né, insuffisance rénale), Mises en garde, Effets indésirables, Pharmacocinétique",
-            "publisher": "Swissmedic (AIPS via AmiKo, tools/swissmedic_fi.py)",
-            "historical_date": "15.10.2026",
-            "historical_limitations": "aucune indication spécifique « méningite » ; dosage méningite = extrapolation à justifier",
-            "actually_read_by_this_agent": false,
-            "next_action": "Read exact Swiss product professional information with version and relevant prescribing sections"
-          },
-          {
-            "id": "S15",
-            "title": "Information professionnelle suisse Valaciclovir-Mepha 500/1000 Lactab®",
-            "url_inherited": "https://amiko.oddb.org (GTIN 7680589210088)",
-            "section_inherited": "Indications, Posologie (herpès génital, prévention des récidives), Mises en garde",
-            "publisher": "Swissmedic (AIPS via AmiKo)",
-            "historical_date": "15.10.2026",
-            "historical_limitations": "pas d'indication méningite",
-            "actually_read_by_this_agent": false,
-            "next_action": "Read exact Swiss product professional information with version and relevant prescribing sections"
-          },
-          {
-            "id": "S16",
-            "title": "Information professionnelle suisse AmBisome®",
-            "url_inherited": "https://amiko.oddb.org (GTIN 7680533420198)",
-            "section_inherited": "Posologie (mycoses systémiques, méningite à cryptocoques VIH), Mises en garde (néphrotoxicité, kaliémie)",
-            "publisher": "Swissmedic (AIPS via AmiKo)",
-            "historical_date": "15.10.2026",
-            "historical_limitations": "—",
-            "actually_read_by_this_agent": false,
-            "next_action": "Read exact Swiss product professional information with version and relevant prescribing sections"
-          },
-          {
-            "id": "S17",
-            "title": "Information professionnelle suisse Fluconazole Sandoz® eco",
-            "url_inherited": "https://amiko.oddb.org (GTIN 7680562350145)",
-            "section_inherited": "Indications, Posologie méningite à Cryptococcus et prophylaxie des récidives, QT, Pharmacocinétique (LCR)",
-            "publisher": "Swissmedic (AIPS via AmiKo)",
-            "historical_date": "15.10.2026",
-            "historical_limitations": "—",
-            "actually_read_by_this_agent": false,
-            "next_action": "Read exact Swiss product professional information with version and relevant prescribing sections"
-          },
-          {
-            "id": "S18",
-            "title": "ESCMID guideline for the diagnosis and management of Candida diseases 2012: non-neutropenic adult patients (Cornely et al.)",
-            "url_inherited": "https://doi.org/10.1111/1469-0691.12039",
-            "section_inherited": "résumé",
-            "publisher": "Clin Microbiol Infect 2012;18 Suppl 7:19-37 (PMID 23137135)",
-            "historical_date": "15.10.2026",
-            "historical_limitations": "résumé seulement ; recommandations SNC non lues ; ancienne",
-            "actually_read_by_this_agent": false,
-            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
-          }
-        ],
+        "sources_to_reread": [],
         "required_gates": [
           "Operational harness tests and functional watch demonstrated before any course writing",
           "Exclusive worktree, approved mission, fresh remote reservation, successful start",
@@ -1108,103 +852,31 @@
             "Private GitHub cron and local watch depend on runner/environment availability"
           ]
         },
-        "updated_at": "2026-11-02T11:08:54.264194+00:00",
+        "updated_at": "2026-11-02T11:11:29.229558+00:00",
         "current_package": {
-          "code": "C70",
-          "worktree": "/workspace/Medina-neurologie-C70",
-          "branch": "codex/alpha77/c70-integrate-g1",
+          "code": "G03",
+          "worktree": "/workspace/Medina-neurologie-G03",
+          "branch": "codex/alpha77/g03-integrate-g1",
           "reservation_acquired": true,
-          "acquisition_registry_sha": "691df1430fc760c0a3106fc8f97bb567e09693f4",
-          "start_receipt": "/workspace/Medina-neurologie-C70/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE/start.json",
-          "stage": "termine",
-          "source_readings_count": 25,
-          "monograph14_reviewed": 14,
-          "matrix20_reviewed": 20,
-          "blocking_findings": [],
+          "acquisition_registry_sha": "38c7e728615c5a39df2c0552f0131cf01fca9236",
+          "start_receipt": "/workspace/Medina-neurologie-G03/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE/start.json",
+          "stage": "recherche",
+          "source_readings_count": 0,
+          "monograph14_reviewed": 0,
+          "matrix20_reviewed": 0,
+          "blocking_findings": [
+            "Inventaire et lectures primaires G03, révision des surfaces et preuves finales à réaliser."
+          ],
           "clinical_certification": false,
-          "preview": "/workspace/Medina-neurologie-C70/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE/C70-apercu-autonome.html",
-          "source_reader": "sol_neurologie",
-          "historical_source_reader": "astra_neurologie",
-          "sciences": 6,
-          "semiology_sections": 9,
-          "popups": 38,
-          "quiz": 4,
-          "source_commit": "839cf805b65e958af0e2174a99c0c886c824f926",
-          "preview_sha256": "aa4f71d7653592d894ece4b70b5f18604c150147b252b9944bd29ac806159ead",
-          "source_binding": true,
-          "pushed": true,
-          "completed": true,
-          "released": true,
-          "commit": "730d8b24b9c4017ad3161a504f2ca3c626c3521d",
-          "completed_at": "2026-11-02T11:05:28+00:00",
-          "completion_receipt": "/workspace/Medina-neurologie-C70/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE/harness-completion.json",
-          "release_registry_sha": "4b3093501c7ec87bffa489d6118268a38ea37865",
-          "preview_remote": "https://github.com/vialdjoukang-spec/Medina/blob/730d8b24b9c4017ad3161a504f2ca3c626c3521d/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C70-INTEGRATE/C70-apercu-autonome.html",
-          "documented_limits": [
-            {
-              "id": "L1",
-              "topic": "Épidémiologie",
-              "reason": "Pas d’incidence nationale actuelle propre à C70/grade3 OMS2021 dans les lectures ; chiffres de centres et SNC général ne deviennent pas incidence C70.",
-              "blocking": false,
-              "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
-            },
-            {
-              "id": "L2",
-              "topic": "Classification",
-              "reason": "BfArM2024 sans certification de facturation2026 ; critères OMS2021 séparés des propositions intérimaires cIMPACT8 sporadiques adultes.",
-              "blocking": false,
-              "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
-            },
-            {
-              "id": "L3",
-              "topic": "Entités rares et recours",
-              "reason": "SFT et tumeurs mélanocytaires primitives documentées en principes ; données faibles, pas de protocole systémique ou de dose de recours inventé.",
-              "blocking": false,
-              "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
-            },
-            {
-              "id": "L4",
-              "topic": "Information professionnelle",
-              "reason": "Populations de dose initiale et tableau rénal distinctes ; seuil exact80 non classé par la FI lévétiracétam ; vérification pharmaceutique plutôt qu’arrondi. Forme phosphate/base Galepharm non convertie implicitement.",
-              "blocking": false,
-              "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
-            },
-            {
-              "id": "L5",
-              "topic": "Droits et activités",
-              "reason": "LS, AI, Suva et durée d’interdiction de conduire non établies ici ; aucune prestation ou durée automatique annoncée.",
-              "blocking": false,
-              "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
-            },
-            {
-              "id": "L6",
-              "topic": "Figures",
-              "reason": "Deux originaux humains historiques normaux avec annotations adjacentes, sans prétendre représenter une lésion. Six schémas conceptuels non anatomiques distincts et sourcés.",
-              "blocking": false,
-              "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
-            },
-            {
-              "id": "L7",
-              "topic": "Aperçu natif",
-              "reason": "Autres cours et jauges hérités non audités médicalement ; bannière native «contre-audit restant» ne prouve pas une revue indépendante requise ou faite. Sur mobile Plan/pager peut recouvrir temporairement quelques mots, lisibles au défilement.",
-              "blocking": false,
-              "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
-            },
-            {
-              "id": "L8",
-              "topic": "Relecture",
-              "reason": "Toutes les revues sont des auto-relectures IA attribuées à Sol ; aucune validation indépendante ni médicale humaine et aucun score clinique revendiqués.",
-              "blocking": false,
-              "judgment": "Limite circonscrite : assertions dépendantes contextualisées ou neutralisées ; couverture pédagogique jugée suffisante par auteur dans ce périmètre."
-            }
-          ]
+          "preview": null
         },
         "deadline_interpretation": "08h Europe/Zurich = rapport, pas arrêt automatique",
         "independent_watch": "Parent reports successful GitHub relay41374424262 then41374451212, cadence600s; not independently revalidated by this agent",
-        "medical_content_written": true,
+        "medical_content_written": false,
         "current_limitations": [
-          "C70 achevé et libéré ; aucune PR/main ni validation clinique humaine.",
-          "Prochain candidat G03 : acquisition en cours, aucun contenu médical nouveau pour cette leçon."
+          "G03 acquis/start/claim réels ; aucune rédaction médicale nouvelle ni source lue pour cette leçon à ce stade.",
+          "Les références héritées sont des pistes, pas des lectures Sol nouvelles.",
+          "G02/G05/I64/C70 achevés et libérés ; aucun de leurs reçus ne valide G03."
         ],
         "completed_lessons": [
           {
@@ -1622,11 +1294,211 @@
             "preserved": true
           }
         ],
-        "counts_snapshot_kind": "Comptages préparatoires historiques ; ne pas les présenter comme compte courant des cours restant à produire."
+        "counts_snapshot_kind": "Comptages préparatoires historiques ; ne pas les présenter comme compte courant des cours restant à produire.",
+        "historical_sources_to_reread_G02": [
+          {
+            "id": "S1",
+            "title": "ICD-10-GM 2024, bloc G00–G09 (G02*, G03, G05*)",
+            "url_inherited": "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-g00-g09.htm",
+            "section_inherited": "G02.0*, G02.1*, G02.8*, exclusion vers G05.1*–G05.2*",
+            "publisher": "BfArM",
+            "historical_date": "15.10.2026",
+            "historical_limitations": "version allemande ; libellés français repris du registre OFS du dépôt",
+            "actually_read_by_this_agent": false,
+            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
+          },
+          {
+            "id": "S2",
+            "title": "CIM-10-GM 2024 (fr), entrées G02, G02.0, G02.1, G02.8 dans nosology/fragments/S08.json",
+            "url_inherited": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/32686265/master",
+            "section_inherited": "G02, marqueur *",
+            "publisher": "OFS (via registre du dépôt)",
+            "historical_date": "15.10.2026",
+            "historical_limitations": "lu via le registre local, PDF OFS non relu intégralement",
+            "actually_read_by_this_agent": false,
+            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
+          },
+          {
+            "id": "S3",
+            "title": "Virale Meningoenzephalitis – Leitlinien für Diagnostik und Therapie in der Neurologie (S1, AWMF 030/100)",
+            "url_inherited": "https://register.awmf.org/assets/guidelines/030-100l_S1_Virale_Meningoenzephalitis_2025-02.pdf",
+            "section_inherited": "Was gibt es Neues ; Empfehlungen auf einen Blick ; 1.2 Klassifikation (Tab. 1–2) ; 1.3 Epidemiologie ; 2 Diagnostik (Tab. 3) ; 3.1 ; 3.2.1–3.2.2 ; 3.2.6 Mollaret",
+            "publisher": "Deutsche Gesellschaft für Neurologie (DGN), coord. U. Meyding-Lamadé",
+            "historical_date": "15.10.2026",
+            "historical_limitations": "S1 (consensus d'experts) ; dosages à vérifier contre l'information professionnelle ; incidence américaine citée dans le texte non retenue comme fondement",
+            "actually_read_by_this_agent": false,
+            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
+          },
+          {
+            "id": "S4",
+            "title": "Clinical features and prognostic factors in adults with viral meningitis (Petersen et al.)",
+            "url_inherited": "https://doi.org/10.1093/brain/awad089",
+            "section_inherited": "résumé",
+            "publisher": "Brain 2023;146(9):3816-3825 (PMID 36929167)",
+            "historical_date": "15.10.2026",
+            "historical_limitations": "lu au niveau du résumé ; épidémiologie danoise",
+            "actually_read_by_this_agent": false,
+            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
+          },
+          {
+            "id": "S5",
+            "title": "Benign recurrent lymphocytic meningitis (Mollaret's meningitis) in Denmark: a nationwide cohort study (Petersen et al.)",
+            "url_inherited": "https://doi.org/10.1111/ene.16081",
+            "section_inherited": "résumé",
+            "publisher": "Eur J Neurol 2024;31(1):e16081 (PMID 37797296)",
+            "historical_date": "15.10.2026",
+            "historical_limitations": "résumé seulement",
+            "actually_read_by_this_agent": false,
+            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
+          },
+          {
+            "id": "S6",
+            "title": "Viral lumbosacral radiculitis (Elsberg syndrome) in Denmark (Petersen et al.)",
+            "url_inherited": "https://doi.org/10.1007/s15010-023-02113-9",
+            "section_inherited": "résumé",
+            "publisher": "Infection 2024;52(3):839-846 (PMID 37917395)",
+            "historical_date": "15.10.2026",
+            "historical_limitations": "résumé seulement ; petite série",
+            "actually_read_by_this_agent": false,
+            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
+          },
+          {
+            "id": "S7",
+            "title": "Long-term valacyclovir suppressive treatment after HSV-2 meningitis: a double-blind RCT (Aurelius et al.)",
+            "url_inherited": "https://doi.org/10.1093/cid/cis031",
+            "section_inherited": "résumé",
+            "publisher": "Clin Infect Dis 2012;54(9):1304-13 (PMID 22460966)",
+            "historical_date": "15.10.2026",
+            "historical_limitations": "essai européen publié dans une revue américaine ; résumé seulement",
+            "actually_read_by_this_agent": false,
+            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
+          },
+          {
+            "id": "S8",
+            "title": "Rapid detection of enterovirus in CSF by a fully-automated PCR assay is associated with improved management of aseptic meningitis in adult patients (Giulieri et al.)",
+            "url_inherited": "https://doi.org/10.1016/j.jcv.2014.11.001",
+            "section_inherited": "résumé",
+            "publisher": "J Clin Virol 2015;62:58-62 (PMID 25542472) – CHUV Lausanne",
+            "historical_date": "15.10.2026",
+            "historical_limitations": "observationnel monocentrique ; coûts en dollars",
+            "actually_read_by_this_agent": false,
+            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
+          },
+          {
+            "id": "S9",
+            "title": "Comparative analysis of viral shedding in pediatric and adult subjects with CNS-associated enterovirus infections from 2013 to 2015 in Switzerland (Cordey et al.)",
+            "url_inherited": "https://doi.org/10.1016/j.jcv.2017.01.008",
+            "section_inherited": "résumé",
+            "publisher": "J Clin Virol 2017;89:22-29 (PMID 28214758) – HUG Genève",
+            "historical_date": "15.10.2026",
+            "historical_limitations": "résumé seulement ; monocentrique",
+            "actually_read_by_this_agent": false,
+            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
+          },
+          {
+            "id": "S10",
+            "title": "Global guideline for the diagnosis and management of cryptococcosis: an initiative of the ECMM and ISHAM in cooperation with the ASM (Chang et al.)",
+            "url_inherited": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11526416/",
+            "section_inherited": "recommandations dépistage, diagnostic, induction, consolidation, entretien, hypertension intracrânienne, TAR, IRIS, corticoïdes, pronostic (premiers 100 000 caractères)",
+            "publisher": "Lancet Infect Dis 2024;24(8):e495-e512 (PMID 38346436)",
+            "historical_date": "15.10.2026",
+            "historical_limitations": "initiative européenne (ECMM) avec coopération ASM ; texte lu partiellement (40 % du document)",
+            "actually_read_by_this_agent": false,
+            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
+          },
+          {
+            "id": "S11",
+            "title": "Guidelines for the treatment of human African trypanosomiasis",
+            "url_inherited": "https://www.who.int/publications/i/item/9789240096035",
+            "section_inherited": "page de présentation",
+            "publisher": "OMS",
+            "historical_date": "15.10.2026",
+            "historical_limitations": "page de présentation seule ; seuils LCR et schémas détaillés non lus",
+            "actually_read_by_this_agent": false,
+            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
+          },
+          {
+            "id": "S12",
+            "title": "Oreillons",
+            "url_inherited": "https://www.bag.admin.ch/fr/oreillons",
+            "section_inherited": "transmission, complications, vaccination",
+            "publisher": "OFSP",
+            "historical_date": "15.10.2026",
+            "historical_limitations": "pas de fréquence chiffrée de la méningite ourlienne",
+            "actually_read_by_this_agent": false,
+            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
+          },
+          {
+            "id": "S13",
+            "title": "Zeckenübertragene Krankheiten (FSME)",
+            "url_inherited": "https://www.bag.admin.ch/de/zeckenuebertragene-krankheiten",
+            "section_inherited": "FSME : zones à risque, vaccination",
+            "publisher": "OFSP/BAG",
+            "historical_date": "15.10.2026",
+            "historical_limitations": "pas de chiffres annuels sur la page ; la FSME relève de A84 (encéphalite), donnée de voisinage",
+            "actually_read_by_this_agent": false,
+            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
+          },
+          {
+            "id": "S14",
+            "title": "Information professionnelle suisse Aciclovir Labatec® i.v.",
+            "url_inherited": "https://amiko.oddb.org (GTIN 7680603250014)",
+            "section_inherited": "Indications, Posologie (adulte, enfant, nouveau-né, insuffisance rénale), Mises en garde, Effets indésirables, Pharmacocinétique",
+            "publisher": "Swissmedic (AIPS via AmiKo, tools/swissmedic_fi.py)",
+            "historical_date": "15.10.2026",
+            "historical_limitations": "aucune indication spécifique « méningite » ; dosage méningite = extrapolation à justifier",
+            "actually_read_by_this_agent": false,
+            "next_action": "Read exact Swiss product professional information with version and relevant prescribing sections"
+          },
+          {
+            "id": "S15",
+            "title": "Information professionnelle suisse Valaciclovir-Mepha 500/1000 Lactab®",
+            "url_inherited": "https://amiko.oddb.org (GTIN 7680589210088)",
+            "section_inherited": "Indications, Posologie (herpès génital, prévention des récidives), Mises en garde",
+            "publisher": "Swissmedic (AIPS via AmiKo)",
+            "historical_date": "15.10.2026",
+            "historical_limitations": "pas d'indication méningite",
+            "actually_read_by_this_agent": false,
+            "next_action": "Read exact Swiss product professional information with version and relevant prescribing sections"
+          },
+          {
+            "id": "S16",
+            "title": "Information professionnelle suisse AmBisome®",
+            "url_inherited": "https://amiko.oddb.org (GTIN 7680533420198)",
+            "section_inherited": "Posologie (mycoses systémiques, méningite à cryptocoques VIH), Mises en garde (néphrotoxicité, kaliémie)",
+            "publisher": "Swissmedic (AIPS via AmiKo)",
+            "historical_date": "15.10.2026",
+            "historical_limitations": "—",
+            "actually_read_by_this_agent": false,
+            "next_action": "Read exact Swiss product professional information with version and relevant prescribing sections"
+          },
+          {
+            "id": "S17",
+            "title": "Information professionnelle suisse Fluconazole Sandoz® eco",
+            "url_inherited": "https://amiko.oddb.org (GTIN 7680562350145)",
+            "section_inherited": "Indications, Posologie méningite à Cryptococcus et prophylaxie des récidives, QT, Pharmacocinétique (LCR)",
+            "publisher": "Swissmedic (AIPS via AmiKo)",
+            "historical_date": "15.10.2026",
+            "historical_limitations": "—",
+            "actually_read_by_this_agent": false,
+            "next_action": "Read exact Swiss product professional information with version and relevant prescribing sections"
+          },
+          {
+            "id": "S18",
+            "title": "ESCMID guideline for the diagnosis and management of Candida diseases 2012: non-neutropenic adult patients (Cornely et al.)",
+            "url_inherited": "https://doi.org/10.1111/1469-0691.12039",
+            "section_inherited": "résumé",
+            "publisher": "Clin Microbiol Infect 2012;18 Suppl 7:19-37 (PMID 23137135)",
+            "historical_date": "15.10.2026",
+            "historical_limitations": "résumé seulement ; recommandations SNC non lues ; ancienne",
+            "actually_read_by_this_agent": false,
+            "next_action": "Retrieve and read relevant original passage; record actual depth and limits"
+          }
+        ]
       },
-      "activity_age_seconds": 283,
+      "activity_age_seconds": 557,
       "activity_fresh": true,
-      "sections_per_hour": 2.33,
+      "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -3083,7 +2955,7 @@
         "runtime_model": "gpt-6.1-sol",
         "runtime_reasoning": "high"
       },
-      "activity_age_seconds": 325,
+      "activity_age_seconds": 925,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -3113,7 +2985,7 @@
       "historical_id": "astra_nephrologie",
       "lesson": "N03",
       "worktree": "/workspace/Medina-nephrologie-n03",
-      "stage": "verification",
+      "stage": "termine",
       "branch": "codex/alpha77/n03-integrate-g1",
       "allowed_paths": [
         "chapters/N03",
@@ -3124,8 +2996,8 @@
         "chapters.json"
       ],
       "started_at": "2026-11-02T10:47:33+00:00",
-      "activity_at": "2026-11-02T11:06:01+00:00",
-      "message": "N03 six surfaces produites,29lectures ciblées/5FI ; statique initial IDs/panneaux résolus, audit sciences passé6disciplines/9sémiologie. Aperçu natif avec9occurrences/33repères, contrôles1440/390 en cours.",
+      "activity_at": "2026-11-02T11:10:42+00:00",
+      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -3142,21 +3014,55 @@
         "fragment_label": "N-07-Néphrologie",
         "prepared_at": "2026-11-02T01:16:51.601917+00:00",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "status": "N03_recherche",
+        "status": "N03_complete_N02_typography_pending",
         "selected_lesson": {
           "code": "N03",
           "title": "Syndrome néphritique chronique",
           "mode": "new_course",
           "worktree": "/workspace/Medina-nephrologie-n03",
           "branch": "codex/alpha77/n03-integrate-g1",
-          "reservation_acquired": true,
+          "reservation_acquired": false,
           "acquisition_registry_sha": "5189d1be438ced3d32022daab5f1813e2ea0043d",
           "clinical_certification": false,
           "start_receipt": "/workspace/Medina-nephrologie-n03/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N03-INTEGRATE/start.json",
           "harness_claimed": true,
           "catalogue_scope": "Mission N03 explicite, chapters.json libre puis réservé exclusivement.",
           "runtime_name": "sol_nephrologie",
-          "runtime_model": "gpt-6.1-sol"
+          "runtime_model": "gpt-6.1-sol",
+          "status": "harness_complete_reservation_released",
+          "stage": "completed",
+          "final_commit": "c8c9423a3d0d414baf803363ed8929d2247027f0",
+          "remote_sha_verified": true,
+          "release_registry_sha": "f392571fe2fa23dfbfc75581a7a402308a71965e",
+          "completed_at": "2026-11-02T11:10:42+00:00",
+          "preview_sha256": "49fa9de8d736f16d0f2ebeab90c7b20e19fca1c1445f90d78eed9bf7868fe971",
+          "final_source_files_sha256": {
+            "chapters/N03/N03_a.html": "71e7bce3ce559af4e65859c858d478bb3a22de3668dcd4c9a8ba68f2ee025ce6",
+            "chapters/N03/N03_b.html": "0efb44448c63398aec79a47c78803050683ae5ddd5596c36b091440c7d95643e",
+            "chapters/N03/N03_c.html": "c25cd0334ed99a76650b9b10d3b3e8d37b9ef538b3b404ac9bbd81e94c395cb5",
+            "chapters/N03/N03_d.html": "077b48281ddf2c242411db9c9812c9b2156b1d412420a2e1d617c0efb4b07855",
+            "chapters/N03/N03_pop1.html": "d7540050e488ef144ea881290d254f40cdf31583b00032c8eaa6f7cd5dd1fc5e",
+            "chapters/N03/N03_pop2.html": "9bd13a625a714c0e4fa4cb48a1c5b5193dd5a738c185926f7bedd647619a0126",
+            "glossary/n03.py": "8d56d26693f6d0dcd647b1ff1dad68e65ca34779a67986043010d65f32fe7d90",
+            "assets/img/n03/alpha/codex/2613_Podocytes.jpg": "8ff3a653bd19d8dc55b6030f795336fe8489bdc096ef694937e20b4184f3da5d",
+            "assets/img/n03/alpha/codex/2618_Nephron_Secretion_Reabsorption.jpg": "22245114f45516127f8bd127a9eaeca7e3e3e017beb5a8deb5a8a15b78bcaafb",
+            "assets/img/n03/alpha/codex/RTE_cast,_muddy_granular_cast,_WBC_cast_and_RBC_cast_in_urine.jpg": "ba911e1601c1c48fdd0a74d55135c95fc2bf7b4c61a3e62d04a7c110f45a2b01",
+            "assets/img/n03/alpha/codex/Kidney_section_vertical.png": "c96015c1f63acb554bf8f794a60309e6125b4805d7a09ccf2603d53f8aa9c7ed",
+            "assets/img/n03/alpha/codex/Focal_segmental_glomerulosclerosis_-_high_mag.jpg": "8c74d22558e73c29cdf7e8b87b6fa436ad52f54da1d3af6fe2e3d9fa0ef0cacc"
+          },
+          "final_counts": {
+            "monograph_points": 14,
+            "medina_rubrics": 20,
+            "selected_source_readings": 29,
+            "exact_swiss_FIs": 5,
+            "science_tabs": 6,
+            "semiology_sections": 9,
+            "original_figures": 5,
+            "figure_occurrences": 9,
+            "annotation_markers": 33,
+            "windows": 34,
+            "quiz": 4
+          }
         },
         "instruction_priority": "Ordre actuel : quatre spécialités en parallèle et une leçon à la fois par agent ; remplace les lots historiques, sans supprimer les réservations.",
         "counts": {
@@ -3262,11 +3168,9 @@
             "owner": "Codex",
             "mode": "new_lesson",
             "in_alpha77_campaign": true,
-            "reserved_by": [
-              "ALPHA77-CODEX-N03-INTEGRATE"
-            ],
+            "reserved_by": [],
             "dispatchable_after_gate": true,
-            "state": "active_research"
+            "state": "harness_complete_reservation_released"
           },
           {
             "order": 8,
@@ -3858,12 +3762,15 @@
           }
         ],
         "current_limits": [
-          "Sources en cours de lecture ; aucune rédaction médicale N03 encore produite.",
-          "Nouvelle source suisse SGN-SSN17.03.2025 trouvée et lue ; ancien lien2021FR404 conservé comme incident."
+          "N03 achevé, poussé, libéré ; aucune certification humaine.",
+          "N02 correction typographique37occurrences bloquée par génération1 déjà consommée ; aucun mandat auteurgénération2 approuvé.",
+          "Poursuite N05 selon instruction parent, après vérification et acquisition réelle."
         ],
         "verification": {
-          "stage": "research",
-          "clinical_certification": false
+          "stage": "completed",
+          "clinical_certification": false,
+          "final_commit": "c8c9423a3d0d414baf803363ed8929d2247027f0",
+          "remote_sha_verified": true
         },
         "prior_lessons": [
           {
@@ -3914,12 +3821,168 @@
             },
             "runtime_model": "gpt-6.1-sol",
             "runtime_name": "sol_nephrologie"
+          },
+          {
+            "code": "N03",
+            "title": "Syndrome néphritique chronique",
+            "mode": "new_course",
+            "worktree": "/workspace/Medina-nephrologie-n03",
+            "branch": "codex/alpha77/n03-integrate-g1",
+            "reservation_acquired": false,
+            "acquisition_registry_sha": "5189d1be438ced3d32022daab5f1813e2ea0043d",
+            "clinical_certification": false,
+            "start_receipt": "/workspace/Medina-nephrologie-n03/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N03-INTEGRATE/start.json",
+            "harness_claimed": true,
+            "catalogue_scope": "Mission N03 explicite, chapters.json libre puis réservé exclusivement.",
+            "runtime_name": "sol_nephrologie",
+            "runtime_model": "gpt-6.1-sol",
+            "status": "harness_complete_reservation_released",
+            "stage": "completed",
+            "final_commit": "c8c9423a3d0d414baf803363ed8929d2247027f0",
+            "remote_sha_verified": true,
+            "release_registry_sha": "f392571fe2fa23dfbfc75581a7a402308a71965e",
+            "completed_at": "2026-11-02T11:10:42+00:00",
+            "preview_sha256": "49fa9de8d736f16d0f2ebeab90c7b20e19fca1c1445f90d78eed9bf7868fe971",
+            "final_source_files_sha256": {
+              "chapters/N03/N03_a.html": "71e7bce3ce559af4e65859c858d478bb3a22de3668dcd4c9a8ba68f2ee025ce6",
+              "chapters/N03/N03_b.html": "0efb44448c63398aec79a47c78803050683ae5ddd5596c36b091440c7d95643e",
+              "chapters/N03/N03_c.html": "c25cd0334ed99a76650b9b10d3b3e8d37b9ef538b3b404ac9bbd81e94c395cb5",
+              "chapters/N03/N03_d.html": "077b48281ddf2c242411db9c9812c9b2156b1d412420a2e1d617c0efb4b07855",
+              "chapters/N03/N03_pop1.html": "d7540050e488ef144ea881290d254f40cdf31583b00032c8eaa6f7cd5dd1fc5e",
+              "chapters/N03/N03_pop2.html": "9bd13a625a714c0e4fa4cb48a1c5b5193dd5a738c185926f7bedd647619a0126",
+              "glossary/n03.py": "8d56d26693f6d0dcd647b1ff1dad68e65ca34779a67986043010d65f32fe7d90",
+              "assets/img/n03/alpha/codex/2613_Podocytes.jpg": "8ff3a653bd19d8dc55b6030f795336fe8489bdc096ef694937e20b4184f3da5d",
+              "assets/img/n03/alpha/codex/2618_Nephron_Secretion_Reabsorption.jpg": "22245114f45516127f8bd127a9eaeca7e3e3e017beb5a8deb5a8a15b78bcaafb",
+              "assets/img/n03/alpha/codex/RTE_cast,_muddy_granular_cast,_WBC_cast_and_RBC_cast_in_urine.jpg": "ba911e1601c1c48fdd0a74d55135c95fc2bf7b4c61a3e62d04a7c110f45a2b01",
+              "assets/img/n03/alpha/codex/Kidney_section_vertical.png": "c96015c1f63acb554bf8f794a60309e6125b4805d7a09ccf2603d53f8aa9c7ed",
+              "assets/img/n03/alpha/codex/Focal_segmental_glomerulosclerosis_-_high_mag.jpg": "8c74d22558e73c29cdf7e8b87b6fa436ad52f54da1d3af6fe2e3d9fa0ef0cacc"
+            },
+            "final_counts": {
+              "monograph_points": 14,
+              "medina_rubrics": 20,
+              "selected_source_readings": 29,
+              "exact_swiss_FIs": 5,
+              "science_tabs": 6,
+              "semiology_sections": 9,
+              "original_figures": 5,
+              "figure_occurrences": 9,
+              "annotation_markers": 33,
+              "windows": 34,
+              "quiz": 4
+            }
           }
-        ]
+        ],
+        "reserves": {
+          "N02_scientific_typography": {
+            "status": "blocked_no_preapproved_writer_generation2",
+            "commit": "006a1f391a2270c98d8a3076842645105b82ac1a",
+            "scope": "Inventaire technique en lecture seule de typographie scientifique dans sixHTML, tokens issus des scripts de production livrés ; pas de nouvelle revue médicale ni correction canonique.",
+            "inventory_path": "/workspace/Medina-harness/harness/agents/nephrologie/transitions/N03-N02-typography/N02-typography-inventory.json",
+            "total_occurrences": 37,
+            "forms": [
+              "COL4A3",
+              "COL4A4",
+              "COL4A5",
+              "CYP3A",
+              "CYP3A4"
+            ],
+            "by_file": [
+              {
+                "file": "chapters/N02/N02_a.html",
+                "expected": "COL4A3",
+                "observed": "COL4 A3",
+                "occurrences": 6
+              },
+              {
+                "file": "chapters/N02/N02_a.html",
+                "expected": "COL4A4",
+                "observed": "COL4 A4",
+                "occurrences": 2
+              },
+              {
+                "file": "chapters/N02/N02_a.html",
+                "expected": "COL4A5",
+                "observed": "COL4 A5",
+                "occurrences": 2
+              },
+              {
+                "file": "chapters/N02/N02_b.html",
+                "expected": "COL4A3",
+                "observed": "COL4 A3",
+                "occurrences": 5
+              },
+              {
+                "file": "chapters/N02/N02_c.html",
+                "expected": "COL4A3",
+                "observed": "COL4 A3",
+                "occurrences": 4
+              },
+              {
+                "file": "chapters/N02/N02_c.html",
+                "expected": "COL4A4",
+                "observed": "COL4 A4",
+                "occurrences": 2
+              },
+              {
+                "file": "chapters/N02/N02_c.html",
+                "expected": "COL4A5",
+                "observed": "COL4 A5",
+                "occurrences": 2
+              },
+              {
+                "file": "chapters/N02/N02_c.html",
+                "expected": "CYP3A",
+                "observed": "CYP3 A",
+                "occurrences": 1
+              },
+              {
+                "file": "chapters/N02/N02_d.html",
+                "expected": "CYP3A",
+                "observed": "CYP3 A",
+                "occurrences": 1
+              },
+              {
+                "file": "chapters/N02/N02_d.html",
+                "expected": "CYP3A4",
+                "observed": "CYP3 A4",
+                "occurrences": 1
+              },
+              {
+                "file": "chapters/N02/N02_pop1.html",
+                "expected": "COL4A3",
+                "observed": "COL4 A3",
+                "occurrences": 4
+              },
+              {
+                "file": "chapters/N02/N02_pop1.html",
+                "expected": "COL4A4",
+                "observed": "COL4 A4",
+                "occurrences": 2
+              },
+              {
+                "file": "chapters/N02/N02_pop1.html",
+                "expected": "COL4A5",
+                "observed": "COL4 A5",
+                "occurrences": 2
+              },
+              {
+                "file": "chapters/N02/N02_pop2.html",
+                "expected": "COL4A3",
+                "observed": "COL4 A3",
+                "occurrences": 3
+              }
+            ],
+            "instruction": "Priorité après clôtureN03, avant prochain candidat ; nouveau mandat/génération et worktree requis ; version livrée etsource-binding conservés.",
+            "guard_result": "Stale or already acquired mission generation",
+            "guard_returncode": 1,
+            "guard_evidence": "transitions/N03-N02-typography/N02-reacquire-result.json",
+            "trusted_base": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6"
+          }
+        }
       },
-      "activity_age_seconds": 250,
+      "activity_age_seconds": 569,
       "activity_fresh": true,
-      "sections_per_hour": 37.11,
+      "sections_per_hour": 25.74,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -3947,20 +4010,20 @@
       ],
       "owner": "codex_hematologie",
       "clinical_orchestration": false,
-      "lesson": "C95",
-      "worktree": "/workspace/Medina-hematologie-C95",
-      "stage": "verification",
-      "branch": "codex/alpha77/c95-integrate-g1",
+      "lesson": "D63",
+      "worktree": "/workspace/Medina-hematologie-D63",
+      "stage": "recherche",
+      "branch": "codex/alpha77/d63-integrate-g1",
       "allowed_paths": [
-        "chapters/C95",
-        "glossary/c95.py",
-        "assets/img/c95/alpha/codex",
-        "organisation/alpha-publications/Codex/C95",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C95-INTEGRATE"
+        "chapters/D63",
+        "glossary/d63.py",
+        "assets/img/d63/alpha/codex",
+        "organisation/alpha-publications/Codex/D63",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D63-INTEGRATE"
       ],
-      "started_at": "2026-11-02T04:37:48+00:00",
-      "activity_at": "2026-11-02T10:46:35+00:00",
-      "message": "C95 : indication suisse Iclusig corrigée après confrontation à la FI ; sigles homonymes reliés aux fenêtres locales. Six contrôles réussis, aperçu final provisoire 352710ea, navigateur 1440/390 : 52 fenêtres, 5 quiz, 8 occurrences originales, 6 sciences, 9 sémiologie. Matrices et auto-relectures finales en préparation ; aucune clôture.",
+      "started_at": "2026-11-02T11:13:57+00:00",
+      "activity_at": "2026-11-02T11:18:23+00:00",
+      "message": "D63 : base de six surfaces parcourue, 14074 mots, 36 fenêtres et 8 quiz. Plusieurs absolus et incohérences repérés (ferritine, transfusion, relais du fer, portée des CI Eprex). Sources CH, KDIGO2026 complet et deux FI obtenues ; lectures exactes en cours, aucune rédaction médicale avant VÉRITÉ.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -3968,11 +4031,11 @@
       "medical_score": null,
       "medical_review": "non effectuée",
       "completed_sections": 0,
-      "receipt_sha256": "890495d99aa02b24418e773683ae6ddf9bc0f22a2ce801807a5a96c2ce8a3ef5",
+      "receipt_sha256": "6dfb955a3f1b1a1af65baadf4004ce2b0c9435ca7bc7a6323997878da9544318",
       "brief": {
         "specialty": "Hématologie",
-        "selected_lesson": "C95",
-        "title": "Leucémie à cellules non précisées",
+        "selected_lesson": "D63",
+        "title": "Anémie au cours de maladies chroniques classées ailleurs",
         "queue": [
           {
             "code": "D69",
@@ -4160,44 +4223,50 @@
           "D69",
           "D64"
         ],
-        "medical_review": "non effectuée",
+        "medical_review": "non effectuée pour D63",
         "tokens": null,
         "cost": null,
         "baseline": {
-          "words": 13472,
-          "windows": 43,
-          "quizzes": 4,
-          "sciences": 4,
-          "figures": 0,
-          "images": 0
+          "words": 14074,
+          "windows": 36,
+          "quiz": 8,
+          "images": 0,
+          "svg": 3,
+          "files": [
+            "chapters/D63/D63_a.html",
+            "chapters/D63/D63_b.html",
+            "chapters/D63/D63_c.html",
+            "chapters/D63/D63_d.html",
+            "chapters/D63/D63_pop1.html",
+            "chapters/D63/D63_pop2.html"
+          ]
         },
-        "next_action": "Lecture des six surfaces et sources suisses/européennes, inventaire des erreurs et des figures ; pas de rédaction avant passages lus.",
-        "status": "recherche",
-        "updated_at": "2026-11-02T04:38:33.219919+00:00",
+        "next_action": "Lire la totalité de la base D63, puis sources suisses/européennes actuelles et originaux avant toute rédaction médicale.",
+        "status": "Réservation/start/claim réussis ; recherche réelle à commencer, aucune rédaction nouvelle.",
+        "updated_at": "2026-11-02T11:14:13.165327+00:00",
         "current": {
-          "code": "C95",
-          "branch": "codex/alpha77/c95-integrate-g1",
-          "worktree": "/workspace/Medina-hematologie-C95"
+          "code": "D63",
+          "phase": "recherche",
+          "worktree": "/workspace/Medina-hematologie-D63",
+          "branch": "codex/alpha77/d63-integrate-g1"
         },
         "sources_current": 0,
-        "source_inherited": 23,
-        "monograph_points_mapped": null,
-        "medina_rubrics": null,
+        "source_inherited": 0,
+        "monograph_points_mapped": 0,
+        "medina_rubrics": 0,
         "blocking_findings": [
-          "Recherche, rédaction et preuves à produire"
+          "Recherche VÉRITÉ, sources CH/EU actuelles, six sciences et sémiologie, originaux annotés, matrices et relectures restent à réaliser."
         ],
         "preview": null,
         "preview_sha256": null,
-        "tests": null,
-        "reviews": null,
+        "tests": {},
+        "reviews": {},
         "complete": false,
         "clinical_certification": false,
         "tokens_actual": null,
         "cost_actual": null,
         "limitations": [
-          "Lectures ciblées, pas tous textes intégraux",
-          "Incidence suisse par sous-code et remboursement individuel2026 non certifiés",
-          "Coûts et tokens API non exposés"
+          "Base existante de14074mots,36fenêtres et8quiz inventoriée ; inventaire seul ne signifie pas lecture médicale."
         ],
         "completion": null,
         "completed_lessons": [
@@ -4343,56 +4412,46 @@
             }
           }
         ],
-        "metrics": null
+        "metrics": {
+          "tokens_consumed": null,
+          "cost_usd": null,
+          "completed_sections": 0
+        },
+        "completion_history": [
+          {
+            "agent": "codex_hematologie",
+            "code": "C95",
+            "at": "2026-11-02T11:10:21+00:00",
+            "branch": "codex/alpha77/c95-integrate-g1",
+            "worktree": "/workspace/Medina-hematologie-C95",
+            "folder": "/workspace/Medina-hematologie-C95/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C95-INTEGRATE",
+            "manifest_sha256": "4d47282d2c20791c058395977350a3d79197984203d36d922437cb28bd91653e",
+            "source_binding_sha256": "271e6b5d63ce9a8bb2e6e1cfb58f491049c18143723e9c104970b2d83835bda8",
+            "review_modes": {
+              "medical": "self_review",
+              "language": "self_review",
+              "visual_desktop": "self_review",
+              "visual_mobile": "self_review"
+            },
+            "clinical_certification": false,
+            "publication_allowed": false,
+            "preview_sha256": "037bace867c4e884a4cf47ca2515373c73f3f8759131f5389974a0e9facd6f01",
+            "head": "b10a875b",
+            "remote_verified": true
+          }
+        ],
+        "worktree": "/workspace/Medina-hematologie-D63",
+        "branch": "codex/alpha77/d63-integrate-g1",
+        "sources_read": 0,
+        "completed_sections": 0
       },
-      "activity_age_seconds": 1416,
-      "activity_fresh": false,
+      "activity_age_seconds": 108,
+      "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T02:11:36+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "verification",
-      "message": "Contrôle statique PASS : 56 fenêtres reliées, 52 identifiants uniques, 26 cibles Pareto, 11 474 vers 18 191 mots toutes surfaces. Collision TPO avec thrombopoïétine corrigée localement ; finalisation du paquet natif et matrice de couverture."
-    },
-    {
-      "at": "2026-11-02T02:15:48+00:00",
-      "action": "progress",
-      "agent": "astra_neurologie",
-      "stage": "recherche",
-      "message": "Paquet G02 a35d56e7 poussé; levée ciblée réserve WHO2024 via API publique IRIS DSpace, original en cours de récupération; autres réserves maintenues."
-    },
-    {
-      "at": "2026-11-02T02:17:41+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 0
-    },
-    {
-      "at": "2026-11-02T02:19:04+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "verification",
-      "message": "Auto-relecture complète des quatre onglets, 56 fenêtres et résumés effectuée ; corrections des indicateurs collectifs, du suivi et des limites héritées. Couverture 14/20 documentée, six sciences/9 sections sémiologiques. Préparation des reçus MED/LANG/visuels explicitement self_review."
-    },
-    {
-      "at": "2026-11-02T02:21:35+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "verification",
-      "message": "Activité reprise et réelle : paquet autonome1440/390 PASS,9images/viewport décodées réseau bloqué,22îlots hérités préservés. Paraphrases publiques39sources+113pointeurs hérités,22FIciblées. Parent confirme3pointsFI ; ajout du mot prophylaxie à la ligne20/40mg avant gel SHA et commit/push."
-    },
-    {
-      "at": "2026-11-02T02:21:44+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "verification",
-      "message": "Paquet E00 : 14/20 reliés aux ancrages, 56 fenêtres vérifiées, six sciences PASS, bundle natif fonctionnel, navigateur origine interceptée 1440/390 avec taille24 réellement appliquée PASS. Dernière reconstruction après auto-relecture linguistique ; reçus MED/LANG/visuels et commit/push en préparation."
-    },
     {
       "at": "2026-11-02T02:22:00+00:00",
       "action": "progress",
@@ -5646,6 +5705,43 @@
       "agent": "astra_nephrologie",
       "stage": "verification",
       "message": "N03 six surfaces produites,29lectures ciblées/5FI ; statique initial IDs/panneaux résolus, audit sciences passé6disciplines/9sémiologie. Aperçu natif avec9occurrences/33repères, contrôles1440/390 en cours."
+    },
+    {
+      "at": "2026-11-02T11:10:11+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T11:10:21+00:00",
+      "action": "complete",
+      "agent": "codex_hematologie",
+      "code": "C95"
+    },
+    {
+      "at": "2026-11-02T11:10:42+00:00",
+      "action": "complete",
+      "agent": "astra_nephrologie",
+      "code": "N03"
+    },
+    {
+      "at": "2026-11-02T11:10:54+00:00",
+      "action": "claim",
+      "agent": "astra_neurologie",
+      "code": "G03"
+    },
+    {
+      "at": "2026-11-02T11:13:57+00:00",
+      "action": "claim",
+      "agent": "codex_hematologie",
+      "code": "D63"
+    },
+    {
+      "at": "2026-11-02T11:18:23+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "recherche",
+      "message": "D63 : base de six surfaces parcourue, 14074 mots, 36 fenêtres et 8 quiz. Plusieurs absolus et incohérences repérés (ferritine, transfusion, relais du fer, portée des CI Eprex). Sources CH, KDIGO2026 complet et deux FI obtenues ; lectures exactes en cours, aucune rédaction médicale avant VÉRITÉ."
     }
   ],
   "cache": {
@@ -12554,7 +12650,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T11:10:10+00:00",
+    "observed_at": "2026-11-02T11:20:10+00:00",
     "lessons": [
       {
         "code": "E00",
@@ -13103,6 +13199,89 @@
         }
       },
       {
+        "code": "N03",
+        "agent": "astra_nephrologie",
+        "branch": "codex/alpha77/n03-integrate-g1",
+        "head_observed": "c8c9423a3d0d414baf803363ed8929d2247027f0",
+        "local_preview": "/workspace/Medina-nephrologie-n03/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N03-INTEGRATE/N03-apercu-autonome.html",
+        "exists": true,
+        "sha256": "49fa9de8d736f16d0f2ebeab90c7b20e19fca1c1445f90d78eed9bf7868fe971",
+        "bytes": 26013528,
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/n03-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N03-INTEGRATE/N03-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/n03-integrate-g1",
+        "status": "Achèvement de projet documenté; version en attente de revue utilisateur avant PR main.",
+        "publication_main": false,
+        "clinical_certification": false,
+        "completion": {
+          "agent": "astra_nephrologie",
+          "code": "N03",
+          "at": "2026-11-02T11:10:42+00:00",
+          "branch": "codex/alpha77/n03-integrate-g1",
+          "worktree": "/workspace/Medina-nephrologie-n03",
+          "folder": "/workspace/Medina-nephrologie-n03/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N03-INTEGRATE",
+          "manifest_sha256": "bbdb226f9912d7f4681fd392123fb8b3143455228df48b5a1192fb9ba2cb8744",
+          "source_binding_sha256": "6a47ed14d25cbe4614ef98b83b1833dc1de4e7c9c0ab06a9ac115154bbd93d6c",
+          "review_modes": {
+            "medical": "self_review",
+            "language": "self_review",
+            "visual_desktop": "self_review",
+            "visual_mobile": "self_review"
+          },
+          "clinical_certification": false,
+          "publication_allowed": false,
+          "preview_sha256": "49fa9de8d736f16d0f2ebeab90c7b20e19fca1c1445f90d78eed9bf7868fe971"
+        }
+      },
+      {
+        "code": "C95",
+        "agent": "codex_hematologie",
+        "branch": "codex/alpha77/c95-integrate-g1",
+        "head_observed": "b10a875b0c4822b3cbe0d4ca3b2490e871ec6a3f",
+        "local_preview": "/workspace/Medina-hematologie-C95/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C95-INTEGRATE/C95-apercu-autonome.html",
+        "exists": true,
+        "sha256": "037bace867c4e884a4cf47ca2515373c73f3f8759131f5389974a0e9facd6f01",
+        "bytes": 17602306,
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/c95-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C95-INTEGRATE/C95-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/c95-integrate-g1",
+        "status": "Achèvement de projet documenté; version en attente de revue utilisateur avant PR main.",
+        "publication_main": false,
+        "clinical_certification": false,
+        "completion": {
+          "agent": "codex_hematologie",
+          "code": "C95",
+          "at": "2026-11-02T11:10:21+00:00",
+          "branch": "codex/alpha77/c95-integrate-g1",
+          "worktree": "/workspace/Medina-hematologie-C95",
+          "folder": "/workspace/Medina-hematologie-C95/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C95-INTEGRATE",
+          "manifest_sha256": "4d47282d2c20791c058395977350a3d79197984203d36d922437cb28bd91653e",
+          "source_binding_sha256": "271e6b5d63ce9a8bb2e6e1cfb58f491049c18143723e9c104970b2d83835bda8",
+          "review_modes": {
+            "medical": "self_review",
+            "language": "self_review",
+            "visual_desktop": "self_review",
+            "visual_mobile": "self_review"
+          },
+          "clinical_certification": false,
+          "publication_allowed": false,
+          "preview_sha256": "037bace867c4e884a4cf47ca2515373c73f3f8759131f5389974a0e9facd6f01"
+        }
+      },
+      {
+        "code": "G03",
+        "agent": "astra_neurologie",
+        "branch": "codex/alpha77/g03-integrate-g1",
+        "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+        "local_preview": "/workspace/Medina-neurologie-G03/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE/G03-apercu-autonome.html",
+        "exists": false,
+        "sha256": null,
+        "bytes": null,
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/g03-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE/G03-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/g03-integrate-g1",
+        "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
+        "publication_main": false,
+        "clinical_certification": false
+      },
+      {
         "code": "E25",
         "agent": "astra_endocrinologie",
         "branch": "codex/alpha77/e25-integrate-g1",
@@ -13118,31 +13297,16 @@
         "clinical_certification": false
       },
       {
-        "code": "N03",
-        "agent": "astra_nephrologie",
-        "branch": "codex/alpha77/n03-integrate-g1",
-        "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "local_preview": "/workspace/Medina-nephrologie-n03/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N03-INTEGRATE/N03-apercu-autonome.html",
-        "exists": true,
-        "sha256": "49fa9de8d736f16d0f2ebeab90c7b20e19fca1c1445f90d78eed9bf7868fe971",
-        "bytes": 26013528,
-        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/n03-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N03-INTEGRATE/N03-apercu-autonome.html",
-        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/n03-integrate-g1",
-        "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
-        "publication_main": false,
-        "clinical_certification": false
-      },
-      {
-        "code": "C95",
+        "code": "D63",
         "agent": "codex_hematologie",
-        "branch": "codex/alpha77/c95-integrate-g1",
-        "head_observed": "4489761ba8b2c410bcad0c49e262416b4012180b",
-        "local_preview": "/workspace/Medina-hematologie-C95/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C95-INTEGRATE/C95-apercu-autonome.html",
-        "exists": true,
-        "sha256": "037bace867c4e884a4cf47ca2515373c73f3f8759131f5389974a0e9facd6f01",
-        "bytes": 17602306,
-        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/c95-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C95-INTEGRATE/C95-apercu-autonome.html",
-        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/c95-integrate-g1",
+        "branch": "codex/alpha77/d63-integrate-g1",
+        "head_observed": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+        "local_preview": "/workspace/Medina-hematologie-D63/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D63-INTEGRATE/D63-apercu-autonome.html",
+        "exists": false,
+        "sha256": null,
+        "bytes": null,
+        "download_url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/codex/alpha77/d63-integrate-g1/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D63-INTEGRATE/D63-apercu-autonome.html",
+        "branch_url": "https://github.com/vialdjoukang-spec/Medina/tree/codex/alpha77/d63-integrate-g1",
         "status": "Version de travail à relire; réserves et clôture à vérifier dans le rapport de la branche.",
         "publication_main": false,
         "clinical_certification": false
@@ -13456,6 +13620,44 @@
       "clinical_certification": false,
       "publication_allowed": false,
       "preview_sha256": "aa4f71d7653592d894ece4b70b5f18604c150147b252b9944bd29ac806159ead"
+    },
+    {
+      "agent": "codex_hematologie",
+      "code": "C95",
+      "at": "2026-11-02T11:10:21+00:00",
+      "branch": "codex/alpha77/c95-integrate-g1",
+      "worktree": "/workspace/Medina-hematologie-C95",
+      "folder": "/workspace/Medina-hematologie-C95/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-C95-INTEGRATE",
+      "manifest_sha256": "4d47282d2c20791c058395977350a3d79197984203d36d922437cb28bd91653e",
+      "source_binding_sha256": "271e6b5d63ce9a8bb2e6e1cfb58f491049c18143723e9c104970b2d83835bda8",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "037bace867c4e884a4cf47ca2515373c73f3f8759131f5389974a0e9facd6f01"
+    },
+    {
+      "agent": "astra_nephrologie",
+      "code": "N03",
+      "at": "2026-11-02T11:10:42+00:00",
+      "branch": "codex/alpha77/n03-integrate-g1",
+      "worktree": "/workspace/Medina-nephrologie-n03",
+      "folder": "/workspace/Medina-nephrologie-n03/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N03-INTEGRATE",
+      "manifest_sha256": "bbdb226f9912d7f4681fd392123fb8b3143455228df48b5a1192fb9ba2cb8744",
+      "source_binding_sha256": "6a47ed14d25cbe4614ef98b83b1833dc1de4e7c9c0ab06a9ac115154bbd93d6c",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "49fa9de8d736f16d0f2ebeab90c7b20e19fca1c1445f90d78eed9bf7868fe971"
     }
   ]
 }
