@@ -1,6 +1,53 @@
 {
+  "late_local_completions": [
+    {
+      "agent": "astra_neurologie",
+      "code": "G03",
+      "at": "2026-11-02T12:10:01+00:00",
+      "branch": "codex/alpha77/g03-integrate-g1",
+      "worktree": "/workspace/Medina-neurologie-G03",
+      "folder": "/workspace/Medina-neurologie-G03/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE",
+      "manifest_sha256": "f3abac9569005209899776a932655bb31c0fb52913a54e2cc04e704819671af0",
+      "source_binding_sha256": "a54812360ae1b04059c485fb73107946080d94e7ef4a3836d3a9c05e697d7d33",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "6886570ceb0d1ec6e92ae31223f89f5f4ef5fea1bd4043e46df233902c9cb272",
+      "semiology_contract": {
+        "code": "G03",
+        "observed_at": "2026-11-02T12:10:01+00:00",
+        "passed": true,
+        "checks": {
+          "six_science_tabs": true,
+          "first_selected_semio": true,
+          "semio_panel_label_and_visible": true,
+          "first_unit_exact_h3": true,
+          "nine_named_sections": true,
+          "linked_sources_in_semio": true,
+          "clinical_semio_marker": true
+        },
+        "findings": [],
+        "source_hashes": {
+          "chapters/G03/G03_a.html": "838c1253a89bcce0018e09cd0a57f6f8b7bbd95b74556f7df9b37c0131cc211e",
+          "chapters/G03/G03_b.html": "a7a6c2c886b5ab7ee251f899a8e2220e24b8319be346a0ed3b4dc1bdb742be54",
+          "chapters/G03/G03_c.html": "75b005b60f45ca1044fe4f5dfa801dbf90c4e683f23b9645fd7bec46174d32b7",
+          "chapters/G03/G03_d.html": "ed781c777e13306eab7ba6195908c40ba222c47063074754eb6b8d66a6a4bb44"
+        },
+        "clinical_certification": false,
+        "author_activity_refreshed": false,
+        "source_bindings_refreshed": false,
+        "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+      }
+    }
+  ],
+  "collected_completion_event_count": 21,
   "posterior_structural_inspection": {
-    "observed_at": "2026-11-02T12:02:22.155074+00:00",
+    "observed_at": "2026-11-02T12:11:32.430746+00:00",
     "read_only": true,
     "author_activity_refreshed": false,
     "source_bindings_refreshed": false,
@@ -510,21 +557,44 @@
           "chapters/N05/N05_d.html": "6d8a8c0931538ae794786672b7795aabb9b7ef53d67c16d072ffe6b92ef0ce4b"
         },
         "scope": "Sept contrôles statiques ciblés issus de starter_codex.py ; pas exécution complète de Starter, ni revue médicale."
+      },
+      {
+        "code": "N06",
+        "sha": "d325825b8d17beea3514b523aed6378eb0490328",
+        "checks": {
+          "six_science_tabs": true,
+          "first_selected_semio": true,
+          "semio_panel_label_and_visible": true,
+          "first_unit_exact_h3": true,
+          "nine_named_sections": true,
+          "linked_sources_in_semio": true,
+          "clinical_semio_marker": true
+        },
+        "passed": true,
+        "findings": [],
+        "native_parser": true,
+        "source_hashes": {
+          "chapters/N06/N06_a.html": "0d15d3098a05f007b2b179addd2ba31afc860ebc33901974557aa778c41f344d",
+          "chapters/N06/N06_b.html": "33366255cdbe5c7b3857574b857f4b956d33e2d049be9ca22006e9d1798b5537",
+          "chapters/N06/N06_c.html": "8fc456c48f5216e6822ecc689be877f2a6619e7e00942bd49e6f94f63abd0934",
+          "chapters/N06/N06_d.html": "90ef8f31a12239d633d564f95712a2b4dd1d966695d0e2cf009aa0bcaaf60f1f"
+        },
+        "scope": "Sept contrôles statiques ciblés issus de starter_codex.py ; pas exécution complète de Starter, ni revue médicale."
       }
     ]
   },
   "harness_test_count": "53",
-  "generated_at": "2026-11-02T12:05:14.191757+00:00",
+  "generated_at": "2026-11-02T12:12:15.777541+00:00",
   "timezone": "Europe/Zurich",
-  "remote_collection_at": "2026-11-02T11:53:30.638884+00:00",
-  "remote_snapshot_at": "2026-11-02T11:50:11+00:00",
-  "remote_snapshot_sha": "38a01045a728ec25e1467638a88506205886e626",
+  "remote_collection_at": "2026-11-02T12:05:53.377372+00:00",
+  "remote_snapshot_at": "2026-11-02T12:05:15+00:00",
+  "remote_snapshot_sha": "0634a424e310b661c4cfa2ff79d56f35eaadd4ad",
   "frozen_08h_actual_at": "2026-11-02T07:05:41+00:00",
-  "completed_count": 20,
+  "completed_count": 21,
   "candidate_count": 70,
   "historical_categories": 270,
-  "versions_verified": 20,
-  "source_bindings_checked": 200,
+  "versions_verified": 21,
+  "source_bindings_checked": 212,
   "main_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "lessons": [
     {
@@ -6626,24 +6696,334 @@
         },
         "scope": "Sept contrôles statiques ciblés issus de starter_codex.py ; pas exécution complète de Starter, ni revue médicale."
       }
+    },
+    {
+      "code": "N06",
+      "title": "Protéinurie isolée avec lésions morphologiques précisées",
+      "completion": {
+        "agent": "astra_nephrologie",
+        "code": "N06",
+        "at": "2026-11-02T12:02:38+00:00",
+        "branch": "codex/alpha77/n06-integrate-g1",
+        "worktree": "/workspace/Medina-nephrologie-n06",
+        "folder": "/workspace/Medina-nephrologie-n06/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE",
+        "manifest_sha256": "9ae7e79cac1b4e76d1ee8b586b2f20926bf767fff21a32d255bff9971059c303",
+        "source_binding_sha256": "c2769413f4ef6de8a6e47337f4ffdd3513ed80084182535a36b4cfa4abbe6260",
+        "review_modes": {
+          "medical": "self_review",
+          "language": "self_review",
+          "visual_desktop": "self_review",
+          "visual_mobile": "self_review"
+        },
+        "clinical_certification": false,
+        "publication_allowed": false,
+        "preview_sha256": "04b73a5c22d61f10f6aee49d0889e4aef5908f214ae62a2acba8de953af66068",
+        "semiology_contract": {
+          "code": "N06",
+          "observed_at": "2026-11-02T12:02:38+00:00",
+          "passed": true,
+          "checks": {
+            "six_science_tabs": true,
+            "first_selected_semio": true,
+            "semio_panel_label_and_visible": true,
+            "first_unit_exact_h3": true,
+            "nine_named_sections": true,
+            "linked_sources_in_semio": true,
+            "clinical_semio_marker": true
+          },
+          "findings": [],
+          "source_hashes": {
+            "chapters/N06/N06_a.html": "0d15d3098a05f007b2b179addd2ba31afc860ebc33901974557aa778c41f344d",
+            "chapters/N06/N06_b.html": "33366255cdbe5c7b3857574b857f4b956d33e2d049be9ca22006e9d1798b5537",
+            "chapters/N06/N06_c.html": "8fc456c48f5216e6822ecc689be877f2a6619e7e00942bd49e6f94f63abd0934",
+            "chapters/N06/N06_d.html": "90ef8f31a12239d633d564f95712a2b4dd1d966695d0e2cf009aa0bcaaf60f1f"
+          },
+          "clinical_certification": false,
+          "author_activity_refreshed": false,
+          "source_bindings_refreshed": false,
+          "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+        }
+      },
+      "version": {
+        "code": "N06",
+        "branch": "codex/alpha77/n06-integrate-g1",
+        "version_sha": "d325825b8d17beea3514b523aed6378eb0490328",
+        "remote_head": "d325825b8d17beea3514b523aed6378eb0490328",
+        "remote_branch_exists": true,
+        "version_is_remote_head": true,
+        "evidence": {
+          "README.md": {
+            "sha256": "4933a3c639354deee6d52c41eb7fd8eeffbe231039b58d502f1ee71ab7b91fdf",
+            "bytes": 646,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/README.md"
+          },
+          "acquire.json": {
+            "sha256": "1670c35afd1061ecec64c7682f0d5707c0f5c28810f89346723f9b8ef584c5a2",
+            "bytes": 65,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/acquire.json"
+          },
+          "audit-sciences.json": {
+            "sha256": "86bfdf136229824828ced467588f6861c965c5f2dcc084fecf99729f70afd8d1",
+            "bytes": 1330,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/audit-sciences.json"
+          },
+          "browser-report.json": {
+            "sha256": "9a6e7883c0d786c6d18a2bf37958af3f312fb223ac16397bb0d9cb881847b9ee",
+            "bytes": 20674,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/browser-report.json"
+          },
+          "bundle-output.json": {
+            "sha256": "08430ec1cccd1db7fe04c3eb4c4a8a6cab127150e6279e102a3cea5283ff5ada",
+            "bytes": 1511,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/bundle-output.json"
+          },
+          "delivery.json": {
+            "sha256": "c1f1ff6dcf19fb6e0e8caa91d9f7e17382ad0f3af04119180fbf12846cdb4c5b",
+            "bytes": 482,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/delivery.json"
+          },
+          "figures-rights.json": {
+            "sha256": "fe440d40d48d0d170e6a1cee739e60c0c0c058fd6234ee8f5a54eb49f8c7a2b2",
+            "bytes": 10445,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/figures-rights.json"
+          },
+          "findings-final.json": {
+            "sha256": "04617995ff68f39cb7abadfeeec54231fafccc52b706e548c561c1987b35ab62",
+            "bytes": 2848,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/findings-final.json"
+          },
+          "harness-completion.json": {
+            "sha256": "55160f711e30e67a1e51f51b542c75ee335cafb1a2330b636261c65e6eb7c2d5",
+            "bytes": 1893,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/harness-completion.json"
+          },
+          "lesson-manifest.json": {
+            "sha256": "9ae7e79cac1b4e76d1ee8b586b2f20926bf767fff21a32d255bff9971059c303",
+            "bytes": 129237,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/lesson-manifest.json"
+          },
+          "production.json": {
+            "sha256": "bd82511da840ab02474877afacfb409668bd4b7ef19bc5c6f2aa35290e710178",
+            "bytes": 1725,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/production.json"
+          },
+          "research_N06/recherche.md": {
+            "sha256": "16d6141dc99b022173573a01a3be17be945fd5a52529604db6474459f3e38611",
+            "bytes": 2941,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/research_N06/recherche.md"
+          },
+          "research_N06/sources.json": {
+            "sha256": "38069a7bac28aac8fff31eaf36c7c168988cb115546d76e85010e2f328efbc42",
+            "bytes": 35316,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/research_N06/sources.json"
+          },
+          "reviews/SEMIO.json": {
+            "sha256": "8f909f06214122a722f7b4eb6bc1d8d82a88809115aa31975fe45c76babbaf4c",
+            "bytes": 3951,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/reviews/SEMIO.json"
+          },
+          "reviews/language.json": {
+            "sha256": "d60fb1f113b058d4d445f184643a84d2fda04377a9c6d5a09dbd3f8efa2a2617",
+            "bytes": 1802,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/reviews/language.json"
+          },
+          "reviews/medical.json": {
+            "sha256": "76d8c31112f606d8f2a3593b034976c761a9e7e333eb03675deb54b30afb5552",
+            "bytes": 6302,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/reviews/medical.json"
+          },
+          "reviews/visual_desktop.json": {
+            "sha256": "4a1032c496c6eb21d922c9c823e9646e2a331733bbf1bd32370b5e4d7b424a44",
+            "bytes": 11061,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/reviews/visual_desktop.json"
+          },
+          "reviews/visual_mobile.json": {
+            "sha256": "b198d92701fb2d19fcba89ab3600adcb0e31b2c41fbc736282573450109e8745",
+            "bytes": 11048,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/reviews/visual_mobile.json"
+          },
+          "scope-check.json": {
+            "sha256": "3ae54790a872d29724b12d5aa463fae0847e9e8a77a9d0993c132b43834b8960",
+            "bytes": 7533,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/scope-check.json"
+          },
+          "semiology-inspection-immutable.json": {
+            "sha256": "1f41d292c0245caca0304946f8f150e1620d56dc4ebd1066ac77069fb2e0a43c",
+            "bytes": 1322,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/semiology-inspection-immutable.json"
+          },
+          "source-binding.json": {
+            "sha256": "c2769413f4ef6de8a6e47337f4ffdd3513ed80084182535a36b4cfa4abbe6260",
+            "bytes": 1967,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/source-binding.json"
+          },
+          "source-ledger.json": {
+            "sha256": "826054981375f0903fd548a629e994d8e6f2540976a11cdf1edba0f365780de7",
+            "bytes": 58989,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/source-ledger.json"
+          },
+          "start.json": {
+            "sha256": "1d16930acfaec4e6a9167d93d41557265ce33576706ca5b789aa9b94585664c6",
+            "bytes": 1076,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/start.json"
+          }
+        },
+        "binding_checks": [
+          {
+            "path": "chapters/N06/N06_a.html",
+            "expected": "0d15d3098a05f007b2b179addd2ba31afc860ebc33901974557aa778c41f344d",
+            "actual": "0d15d3098a05f007b2b179addd2ba31afc860ebc33901974557aa778c41f344d",
+            "ok": true
+          },
+          {
+            "path": "chapters/N06/N06_b.html",
+            "expected": "33366255cdbe5c7b3857574b857f4b956d33e2d049be9ca22006e9d1798b5537",
+            "actual": "33366255cdbe5c7b3857574b857f4b956d33e2d049be9ca22006e9d1798b5537",
+            "ok": true
+          },
+          {
+            "path": "chapters/N06/N06_c.html",
+            "expected": "8fc456c48f5216e6822ecc689be877f2a6619e7e00942bd49e6f94f63abd0934",
+            "actual": "8fc456c48f5216e6822ecc689be877f2a6619e7e00942bd49e6f94f63abd0934",
+            "ok": true
+          },
+          {
+            "path": "chapters/N06/N06_d.html",
+            "expected": "90ef8f31a12239d633d564f95712a2b4dd1d966695d0e2cf009aa0bcaaf60f1f",
+            "actual": "90ef8f31a12239d633d564f95712a2b4dd1d966695d0e2cf009aa0bcaaf60f1f",
+            "ok": true
+          },
+          {
+            "path": "chapters/N06/N06_pop1.html",
+            "expected": "60ddade742a4bb1ab1845fc1166f1c45deb44113fabe8a5332fcf27b297cf25d",
+            "actual": "60ddade742a4bb1ab1845fc1166f1c45deb44113fabe8a5332fcf27b297cf25d",
+            "ok": true
+          },
+          {
+            "path": "chapters/N06/N06_pop2.html",
+            "expected": "7e309881e534b85556bf1c2c5c7bf25cda10daf958d974f0ae60aedb735426d7",
+            "actual": "7e309881e534b85556bf1c2c5c7bf25cda10daf958d974f0ae60aedb735426d7",
+            "ok": true
+          },
+          {
+            "path": "glossary/n06.py",
+            "expected": "e4ba921fed6df9735b0fe639c4e9e46c8cf8c8a1963c8a2c32bb1329c2e0dbdd",
+            "actual": "e4ba921fed6df9735b0fe639c4e9e46c8cf8c8a1963c8a2c32bb1329c2e0dbdd",
+            "ok": true
+          },
+          {
+            "path": "assets/img/n06/alpha/codex/2613_Podocytes.jpg",
+            "expected": "8ff3a653bd19d8dc55b6030f795336fe8489bdc096ef694937e20b4184f3da5d",
+            "actual": "8ff3a653bd19d8dc55b6030f795336fe8489bdc096ef694937e20b4184f3da5d",
+            "ok": true
+          },
+          {
+            "path": "assets/img/n06/alpha/codex/2618_Nephron_Secretion_Reabsorption.jpg",
+            "expected": "22245114f45516127f8bd127a9eaeca7e3e3e017beb5a8deb5a8a15b78bcaafb",
+            "actual": "22245114f45516127f8bd127a9eaeca7e3e3e017beb5a8deb5a8a15b78bcaafb",
+            "ok": true
+          },
+          {
+            "path": "assets/img/n06/alpha/codex/RTE_cast,_muddy_granular_cast,_WBC_cast_and_RBC_cast_in_urine.jpg",
+            "expected": "ba911e1601c1c48fdd0a74d55135c95fc2bf7b4c61a3e62d04a7c110f45a2b01",
+            "actual": "ba911e1601c1c48fdd0a74d55135c95fc2bf7b4c61a3e62d04a7c110f45a2b01",
+            "ok": true
+          },
+          {
+            "path": "assets/img/n06/alpha/codex/Kidney_section_vertical.png",
+            "expected": "c96015c1f63acb554bf8f794a60309e6125b4805d7a09ccf2603d53f8aa9c7ed",
+            "actual": "c96015c1f63acb554bf8f794a60309e6125b4805d7a09ccf2603d53f8aa9c7ed",
+            "ok": true
+          },
+          {
+            "path": "assets/img/n06/alpha/codex/Focal_segmental_glomerulosclerosis_-_high_mag.jpg",
+            "expected": "8c74d22558e73c29cdf7e8b87b6fa436ad52f54da1d3af6fe2e3d9fa0ef0cacc",
+            "actual": "8c74d22558e73c29cdf7e8b87b6fa436ad52f54da1d3af6fe2e3d9fa0ef0cacc",
+            "ok": true
+          }
+        ],
+        "errors": [],
+        "file_count": 72,
+        "preview": {
+          "sha256": "04b73a5c22d61f10f6aee49d0889e4aef5908f214ae62a2acba8de953af66068",
+          "bytes": 26014395,
+          "url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/N06-apercu-autonome.html",
+          "proof_url": "https://github.com/vialdjoukang-spec/Medina/blob/d325825b8d17beea3514b523aed6378eb0490328/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE/N06-apercu-autonome.html"
+        },
+        "binding_preview_matches": true,
+        "local_evidence_folder": "lessons/N06-d325825b8d"
+      },
+      "monograph_points": 14,
+      "matrix_rubrics": 20,
+      "source_entries": 35,
+      "image_entries": 5,
+      "blocking_findings": [],
+      "limitations": [
+        "Auto-relectures Sol explicites self_review ; aucune validation humaine ni revue médicale indépendante globale. Revues ciblées distinctes de cette livraison.",
+        "35 lectures ciblées/réutilisations du même bloc N02/N03 et nouvelles lectures N06 attribuées ; pas35documents intégralement lus. Textes complets horsGit, métadonnées/paraphrases seulement publiées.",
+        "Aucune incidence suisse directeN06 retenue ; MRCglobale, bandelettes et sériesdebiopsies ne mesurent pas cettecatégorie.",
+        "Cadre suisse contemporainMRC :SGN17.03.2025. FicheThurgau non datée pourméthodes/orientation, RMS2012 pourmécanismes seulement : ni seuilRPC0,02g/j incohérent,ni détectionBUunique300mg/L,ni anciennescibles ou recommandationsaméricaines importées.",
+        "Limite physiologiqueadulte autour150mg/j distincte albumine30,catégoriesA etprotéinurieclinique500. SensibilitéBU dépendduproduit et peut manquerA2/nonalbumine. RapportsACR/RPC distincts et dépendants d’excrétioncréatinine.",
+        "Facteur×10mg/mmol→mg/j présenté comme approximation avec excrétioncréatinine présumée, jamais conversionexacte ni collecte24hmesurée. SeuilCUENnéphrotique3 versusThurgau3,5 attribués ; pasmoyenneinventée.",
+        "N06 requiert morphologieprécisée ; exclusionsR80,N39.1,N39.2,O12.1 conservées. Dixsuffixesdu modificateur dont.9, sans supprimerlesconditionsdecatégorie. Pas de biopsieadministrative.",
+        "CinqFI : RamiprilZentivadécembre2021,Cosaaravril2025,Forxigaaoût2026,Norvascavril2023,Lasix40oralmai2025. Indicationsetpopulationsdistinctes ; amlodipine/diurétique ne sont pas une prescriptiond’uneprotéinurieisolée sansHTA/œdèmes.",
+        "Pas d’immunosuppressionuniverselle surN06 ou imageFSGS. Lésion,activité,cause et risque distincts ; orthostatiqueconfirméeconcordante sans biopsieautomatique, âge seulinsuffisant.",
+        "Cinqoriginauxhumains réellementvus,9occurrences/33repèresHTML, pixelsinchangés. FSGSPAS ne détermine ni causeprimaire/secondaire ni proportionglobale degloméruleslésés.",
+        "Pas dedroituniverselLS,OFSP,AI,Suva ou aptitude. PDFKDIGO2024direct403 : textefournisseurhorsGit, empreintedetexte distincte duPDF.",
+        "BandeaushellhéritéSSP63 ; contenu relie protéinurie àtâche173PROFILES2017. Métadonnéepartagéehorsmission signaléeauparent, aucunanciencours/moteurpartagémodifié.",
+        "ChromiumlocalHTTPintercepté,toutesautresrequêtesavortées ; tests etcaptures ne prouvent ni déploiementpublic ni validationclinique."
+      ],
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "posterior_structural_inspection": {
+        "code": "N06",
+        "sha": "d325825b8d17beea3514b523aed6378eb0490328",
+        "checks": {
+          "six_science_tabs": true,
+          "first_selected_semio": true,
+          "semio_panel_label_and_visible": true,
+          "first_unit_exact_h3": true,
+          "nine_named_sections": true,
+          "linked_sources_in_semio": true,
+          "clinical_semio_marker": true
+        },
+        "passed": true,
+        "findings": [],
+        "native_parser": true,
+        "source_hashes": {
+          "chapters/N06/N06_a.html": "0d15d3098a05f007b2b179addd2ba31afc860ebc33901974557aa778c41f344d",
+          "chapters/N06/N06_b.html": "33366255cdbe5c7b3857574b857f4b956d33e2d049be9ca22006e9d1798b5537",
+          "chapters/N06/N06_c.html": "8fc456c48f5216e6822ecc689be877f2a6619e7e00942bd49e6f94f63abd0934",
+          "chapters/N06/N06_d.html": "90ef8f31a12239d633d564f95712a2b4dd1d966695d0e2cf009aa0bcaaf60f1f"
+        },
+        "scope": "Sept contrôles statiques ciblés issus de starter_codex.py ; pas exécution complète de Starter, ni revue médicale."
+      }
     }
   ],
   "active_state": [
     {
       "id": "astra_neurologie",
       "runtime_name": "/root/sol_neurologie",
+      "production_name": null,
+      "active_specialty": null,
       "model": "gpt-6.1-sol",
       "reasoning": "high",
       "lesson": "G03",
-      "stage": "verification",
-      "activity_at": "2026-11-02T11:53:13+00:00",
-      "message": "G03 : reprise clinique post-porte achevée, 40 sections et 35 fenêtres reconsidérées ; quatre corrections documentées. Build/retests refaits sur cette reprise, conformité initiale non revendiquée.",
+      "stage": "termine",
+      "activity_at": "2026-11-02T12:10:01+00:00",
+      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
       "completed_sections": 14,
-      "sections_per_hour": 16.23
+      "sections_per_hour": 13.69
     },
     {
       "id": "astra_endocrinologie",
       "runtime_name": "/root/sol_endocrinologie",
+      "production_name": null,
+      "active_specialty": null,
       "model": "gpt-6.1-sol",
       "reasoning": "high",
       "lesson": "E30",
@@ -6656,6 +7036,8 @@
     {
       "id": "astra_nephrologie",
       "runtime_name": "/root/sol_nephrologie",
+      "production_name": "Sol-Hématologie-D77",
+      "active_specialty": "hematologie",
       "model": "gpt-6.1-sol",
       "reasoning": "high",
       "lesson": "N06",
@@ -6663,11 +7045,13 @@
       "activity_at": "2026-11-02T12:02:38+00:00",
       "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
       "completed_sections": 14,
-      "sections_per_hour": 47.07
+      "sections_per_hour": 30.59
     },
     {
       "id": "codex_hematologie",
       "runtime_name": null,
+      "production_name": null,
+      "active_specialty": null,
       "model": "Codex — modèle de session non modifiable",
       "reasoning": "paramètre de session",
       "lesson": "D63",
@@ -6675,7 +7059,7 @@
       "activity_at": "2026-11-02T11:53:26+00:00",
       "message": "Plan monographique rédigé dans les scripts locaux après VÉRITÉ OK, avec vignette initiale et 14 îlots ; assemblage, sciences, pharmacologie et contrôles finaux encore à produire. Aucun achèvement déclaré.",
       "completed_sections": 14,
-      "sections_per_hour": 17.25
+      "sections_per_hour": 14.41
     }
   ],
   "native_supervision": {
@@ -6814,9 +7198,184 @@
       "ref": "codex/harness-20261102",
       "interval_seconds": 600,
       "bootstrap": false
+    },
+    {
+      "observed_at": "2026-11-02T09:59:32.057019+00:00",
+      "snapshot_generated_at": "2026-11-02T09:55:41+00:00",
+      "healthy": false,
+      "problems": [
+        "Activité auteur absente ou ancienne: astra_neurologie, astra_endocrinologie, astra_nephrologie, codex_hematologie"
+      ],
+      "agents_without_recent_activity": [
+        "astra_neurologie",
+        "astra_endocrinologie",
+        "astra_nephrologie",
+        "codex_hematologie"
+      ],
+      "no_agent_restart": true,
+      "no_main_write": true,
+      "clinical_certification": false,
+      "enabled": true,
+      "source_blob_sha": "de675113858716c4406936daabb264a0ad918673",
+      "run_url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41425068626",
+      "interval_seconds": 600,
+      "continuity": "Handoff GitHub Actions; delays and service outages remain possible"
+    },
+    {
+      "at": "2026-11-02T10:09:32+00:00",
+      "successor_requested": true,
+      "response": {
+        "http_status": 204
+      },
+      "ref": "codex/harness-20261102",
+      "interval_seconds": 600,
+      "bootstrap": false
+    },
+    {
+      "observed_at": "2026-11-02T10:30:33.781766+00:00",
+      "snapshot_generated_at": "2026-11-02T10:30:10+00:00",
+      "healthy": false,
+      "problems": [
+        "Activité auteur absente ou ancienne: codex_hematologie"
+      ],
+      "agents_without_recent_activity": [
+        "codex_hematologie"
+      ],
+      "no_agent_restart": true,
+      "no_main_write": true,
+      "clinical_certification": false,
+      "enabled": true,
+      "source_blob_sha": "d5ede74eb9fc7671ffae47b0ff8b18d73eb804e0",
+      "run_url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41429309872",
+      "interval_seconds": 600,
+      "continuity": "Handoff GitHub Actions; delays and service outages remain possible"
+    },
+    {
+      "observed_at": "2026-11-02T10:31:10.410414+00:00",
+      "snapshot_generated_at": "2026-11-02T10:30:10+00:00",
+      "healthy": false,
+      "problems": [
+        "Activité auteur absente ou ancienne: codex_hematologie"
+      ],
+      "agents_without_recent_activity": [
+        "codex_hematologie"
+      ],
+      "no_agent_restart": true,
+      "no_main_write": true,
+      "clinical_certification": false,
+      "enabled": true,
+      "source_blob_sha": "d5ede74eb9fc7671ffae47b0ff8b18d73eb804e0",
+      "run_url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41429353922",
+      "interval_seconds": 600,
+      "continuity": "Handoff GitHub Actions; delays and service outages remain possible"
+    },
+    {
+      "at": "2026-11-02T10:41:10+00:00",
+      "successor_requested": true,
+      "response": {
+        "http_status": 204
+      },
+      "ref": "codex/harness-20261102",
+      "interval_seconds": 600,
+      "bootstrap": false
+    },
+    {
+      "observed_at": "2026-11-02T10:41:44.435950+00:00",
+      "snapshot_generated_at": "2026-11-02T10:40:10+00:00",
+      "healthy": true,
+      "problems": [],
+      "agents_without_recent_activity": [],
+      "no_agent_restart": true,
+      "no_main_write": true,
+      "clinical_certification": false,
+      "enabled": true,
+      "source_blob_sha": "3e0ca22f498b4cef9e761c644fa2484fa2378910",
+      "run_url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41430780283",
+      "interval_seconds": 600,
+      "continuity": "Handoff GitHub Actions; delays and service outages remain possible"
+    },
+    {
+      "at": "2026-11-02T10:51:44+00:00",
+      "successor_requested": true,
+      "response": {
+        "http_status": 204
+      },
+      "ref": "codex/harness-20261102",
+      "interval_seconds": 600,
+      "bootstrap": false
+    },
+    {
+      "observed_at": "2026-11-02T10:52:07.679726+00:00",
+      "snapshot_generated_at": "2026-11-02T10:50:11+00:00",
+      "healthy": true,
+      "problems": [],
+      "agents_without_recent_activity": [],
+      "no_agent_restart": true,
+      "no_main_write": true,
+      "clinical_certification": false,
+      "enabled": true,
+      "source_blob_sha": "f4d8d893c3a6f7aaa7700fcd1c9a37765834a2c5",
+      "run_url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41432161490",
+      "interval_seconds": 600,
+      "continuity": "Handoff GitHub Actions; delays and service outages remain possible"
+    },
+    {
+      "at": "2026-11-02T11:02:08+00:00",
+      "successor_requested": true,
+      "response": {
+        "http_status": 204
+      },
+      "ref": "codex/harness-20261102",
+      "interval_seconds": 600,
+      "bootstrap": false
+    },
+    {
+      "observed_at": "2026-11-02T11:02:32.087143+00:00",
+      "snapshot_generated_at": "2026-11-02T11:00:10+00:00",
+      "healthy": true,
+      "problems": [],
+      "agents_without_recent_activity": [],
+      "no_agent_restart": true,
+      "no_main_write": true,
+      "clinical_certification": false,
+      "enabled": true,
+      "source_blob_sha": "5c08cf114c168d58dda47ea9b69c3272ae451432",
+      "run_url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41433517929",
+      "interval_seconds": 600,
+      "continuity": "Handoff GitHub Actions; delays and service outages remain possible"
+    },
+    {
+      "at": "2026-11-02T11:12:32+00:00",
+      "successor_requested": true,
+      "response": {
+        "http_status": 204
+      },
+      "ref": "codex/harness-20261102",
+      "interval_seconds": 600,
+      "bootstrap": false
     }
   ],
   "artifacts": [
+    {
+      "id": 13139512744,
+      "name": "medina-independent-41441759443",
+      "expired": false,
+      "created_at": "2026-11-02T12:05:04Z",
+      "size_in_bytes": 233908,
+      "run_id": 41441759443,
+      "files": {},
+      "download_error": "Téléchargement de l’artefact refusé (HTTP403 observé) ; contenu non consulté, métadonnées seules. Aucune URL signée conservée."
+    },
+    {
+      "id": 13139331261,
+      "name": "medina-independent-41440429713",
+      "expired": false,
+      "created_at": "2026-11-02T11:54:41Z",
+      "size_in_bytes": 233137,
+      "run_id": 41440429713,
+      "files": {},
+      "download_error": "Téléchargement de l’artefact refusé (HTTP403 observé) ; contenu non consulté, métadonnées seules. Aucune URL signée conservée."
+    },
     {
       "id": 13137178520,
       "name": "medina-independent-41439101913",
@@ -6824,26 +7383,6 @@
       "created_at": "2026-11-02T11:44:19Z",
       "size_in_bytes": 229856,
       "run_id": 41439101913,
-      "files": {},
-      "download_error": "Téléchargement de l’artefact refusé (HTTP403 observé) ; contenu non consulté, métadonnées seules. Aucune URL signée conservée."
-    },
-    {
-      "id": 13137561208,
-      "name": "medina-independent-41437778298",
-      "expired": false,
-      "created_at": "2026-11-02T11:33:56Z",
-      "size_in_bytes": 228452,
-      "run_id": 41437778298,
-      "files": {},
-      "download_error": "Téléchargement de l’artefact refusé (HTTP403 observé) ; contenu non consulté, métadonnées seules. Aucune URL signée conservée."
-    },
-    {
-      "id": 13135479951,
-      "name": "medina-independent-41436387594",
-      "expired": false,
-      "created_at": "2026-11-02T11:23:34Z",
-      "size_in_bytes": 229476,
-      "run_id": 41436387594,
       "files": {},
       "download_error": "Téléchargement de l’artefact refusé (HTTP403 observé) ; contenu non consulté, métadonnées seules. Aucune URL signée conservée."
     },

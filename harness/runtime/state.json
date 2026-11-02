@@ -5,7 +5,7 @@
     "astra_neurologie": {
       "lesson": "G03",
       "worktree": "/workspace/Medina-neurologie-G03",
-      "stage": "verification",
+      "stage": "termine",
       "branch": "codex/alpha77/g03-integrate-g1",
       "allowed_paths": [
         "chapters/G03",
@@ -15,8 +15,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE"
       ],
       "started_at": "2026-11-02T11:10:54+00:00",
-      "activity_at": "2026-11-02T11:53:13+00:00",
-      "message": "G03 : reprise clinique post-porte achevée, 40 sections et 35 fenêtres reconsidérées ; quatre corrections documentées. Build/retests refaits sur cette reprise, conformité initiale non revendiquée.",
+      "activity_at": "2026-11-02T12:10:01+00:00",
+      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -51,29 +51,28 @@
       "receipt_sha256": "ea760a59820884c1cd5da31a21a2879c628bf8ac2cf3a58a1dbb167e4393ef7e"
     },
     "astra_nephrologie": {
-      "lesson": "N06",
-      "worktree": "/workspace/Medina-nephrologie-n06",
-      "stage": "termine",
-      "branch": "codex/alpha77/n06-integrate-g1",
+      "lesson": "D77",
+      "worktree": "/workspace/Medina-hematologie-D77",
+      "stage": "recherche",
+      "branch": "codex/alpha77/d77-integrate-g1",
       "allowed_paths": [
-        "chapters/N06",
-        "glossary/n06.py",
-        "assets/img/n06/alpha/codex",
-        "organisation/alpha-publications/Codex/N06",
-        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-N06-INTEGRATE",
-        "chapters.json"
+        "chapters/D77",
+        "glossary/d77.py",
+        "assets/img/d77/alpha/codex",
+        "organisation/alpha-publications/Codex/D77",
+        "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D77-INTEGRATE"
       ],
-      "started_at": "2026-11-02T11:44:48+00:00",
-      "activity_at": "2026-11-02T12:02:38+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "started_at": "2026-11-02T12:12:23+00:00",
+      "activity_at": "2026-11-02T12:12:23+00:00",
+      "message": "Mission réservée; recherche autorisée",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 14,
-      "receipt_sha256": "1d16930acfaec4e6a9167d93d41557265ce33576706ca5b789aa9b94585664c6"
+      "completed_sections": 0,
+      "receipt_sha256": "1d133d315e582316e6909eea8b7d804ce6691e956174c56a8d13e76ddd6c9e16"
     },
     "codex_hematologie": {
       "lesson": "D63",
@@ -101,26 +100,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-02T03:04:53+00:00",
-      "action": "progress",
-      "agent": "astra_nephrologie",
-      "stage": "verification",
-      "message": "N29 six fichiers corrigés ; six sciences4196mots contre895initialement, audit_sciences réussi ; quatre originaux humains annotés, huit occurrences. Contrôles statiques et build natif en cours, revues finales non effectuées."
-    },
-    {
-      "at": "2026-11-02T03:06:36+00:00",
-      "action": "progress",
-      "agent": "astra_endocrinologie",
-      "stage": "redaction",
-      "message": "Porte VÉRITÉ OK ; corrections de causalité, compression, Bethesda 2023 et suivi réalisées dans E01. Pharmacologie suisse et six sciences en cours."
-    },
-    {
-      "at": "2026-11-02T03:07:37+00:00",
-      "action": "watch",
-      "ok": true,
-      "findings": 2
-    },
     {
       "at": "2026-11-02T03:09:17+00:00",
       "action": "watch",
@@ -1393,6 +1372,24 @@
       "action": "watch",
       "ok": true,
       "findings": 1
+    },
+    {
+      "at": "2026-11-02T12:10:01+00:00",
+      "action": "complete",
+      "agent": "astra_neurologie",
+      "code": "G03"
+    },
+    {
+      "at": "2026-11-02T12:12:23+00:00",
+      "action": "claim",
+      "agent": "astra_nephrologie",
+      "code": "D77"
+    },
+    {
+      "at": "2026-11-02T12:15:15+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 2
     }
   ],
   "cache": {
@@ -1820,6 +1817,50 @@
           "chapters/N06/N06_b.html": "33366255cdbe5c7b3857574b857f4b956d33e2d049be9ca22006e9d1798b5537",
           "chapters/N06/N06_c.html": "8fc456c48f5216e6822ecc689be877f2a6619e7e00942bd49e6f94f63abd0934",
           "chapters/N06/N06_d.html": "90ef8f31a12239d633d564f95712a2b4dd1d966695d0e2cf009aa0bcaaf60f1f"
+        },
+        "clinical_certification": false,
+        "author_activity_refreshed": false,
+        "source_bindings_refreshed": false,
+        "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+      }
+    },
+    {
+      "agent": "astra_neurologie",
+      "code": "G03",
+      "at": "2026-11-02T12:10:01+00:00",
+      "branch": "codex/alpha77/g03-integrate-g1",
+      "worktree": "/workspace/Medina-neurologie-G03",
+      "folder": "/workspace/Medina-neurologie-G03/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G03-INTEGRATE",
+      "manifest_sha256": "f3abac9569005209899776a932655bb31c0fb52913a54e2cc04e704819671af0",
+      "source_binding_sha256": "a54812360ae1b04059c485fb73107946080d94e7ef4a3836d3a9c05e697d7d33",
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "clinical_certification": false,
+      "publication_allowed": false,
+      "preview_sha256": "6886570ceb0d1ec6e92ae31223f89f5f4ef5fea1bd4043e46df233902c9cb272",
+      "semiology_contract": {
+        "code": "G03",
+        "observed_at": "2026-11-02T12:10:01+00:00",
+        "passed": true,
+        "checks": {
+          "six_science_tabs": true,
+          "first_selected_semio": true,
+          "semio_panel_label_and_visible": true,
+          "first_unit_exact_h3": true,
+          "nine_named_sections": true,
+          "linked_sources_in_semio": true,
+          "clinical_semio_marker": true
+        },
+        "findings": [],
+        "source_hashes": {
+          "chapters/G03/G03_a.html": "838c1253a89bcce0018e09cd0a57f6f8b7bbd95b74556f7df9b37c0131cc211e",
+          "chapters/G03/G03_b.html": "a7a6c2c886b5ab7ee251f899a8e2220e24b8319be346a0ed3b4dc1bdb742be54",
+          "chapters/G03/G03_c.html": "75b005b60f45ca1044fe4f5dfa801dbf90c4e683f23b9645fd7bec46174d32b7",
+          "chapters/G03/G03_d.html": "ed781c777e13306eab7ba6195908c40ba222c47063074754eb6b8d66a6a4bb44"
         },
         "clinical_certification": false,
         "author_activity_refreshed": false,

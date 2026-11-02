@@ -6,39 +6,23 @@
   "fragment_label": "N-07-Néphrologie",
   "prepared_at": "2026-11-02T01:16:51.601917+00:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "status": "N06_complete_push_release_pending",
+  "status": "D77_research_under_exclusive_reservation",
   "selected_lesson": {
-    "code": "N06",
-    "title": "Protéinurie isolée avec lésions morphologiques précisées",
-    "mode": "new_course",
-    "worktree": "/workspace/Medina-nephrologie-n06",
-    "branch": "codex/alpha77/n06-integrate-g1",
+    "code": "D77",
+    "title": "Autres maladies du sang et des organes hématopoïétiques au cours de maladies classées ailleurs",
+    "mode": "existing_course_review",
+    "worktree": "/workspace/Medina-hematologie-D77",
+    "branch": "codex/alpha77/d77-integrate-g1",
     "reservation_acquired": true,
-    "acquisition_registry_sha": "f0e62facbb166cc13b6b43811b4be7298ecd3d86",
+    "acquisition_registry_sha": "51b73791397be15fe2ef26569f7460811473fbe8",
     "harness_claimed": true,
     "runtime_name": "sol_nephrologie",
+    "production_name": "Sol-Hématologie-D77",
     "runtime_model": "gpt-6.1-sol",
-    "stage": "complete_push_pending",
+    "stage": "recherche",
     "clinical_certification": false,
-    "start_receipt": "/workspace/Medina-harness/harness/agents/nephrologie/transitions/N05-N06/start-N06.json",
-    "catalogue_scope": "AuteurN06 exclusivementréservé pourchapters.json",
-    "harness_completed_at": "2026-11-02T12:02:38+00:00",
-    "source_commit": "14b44d83813296a99c63c837095bb5bc66aad815",
-    "final_counts": {
-      "monograph_points": 14,
-      "medina_rubrics": 20,
-      "selected_source_readings": 35,
-      "exact_swiss_FIs": 5,
-      "science_tabs": 6,
-      "semiology_sections": 9,
-      "original_figures": 5,
-      "figure_occurrences": 9,
-      "annotation_markers": 33,
-      "windows": 34,
-      "quiz": 4
-    },
-    "preview_sha256": "04b73a5c22d61f10f6aee49d0889e4aef5908f214ae62a2acba8de953af66068",
-    "semiology_seven_rules_native_passed": true
+    "start_receipt": "/workspace/Medina-hematologie-D77/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D77-INTEGRATE/start.json",
+    "catalogue_scope": "Aucunmandat surchapters.json, coursD77existantseulement."
   },
   "instruction_priority": "Ordre actuel : quatre spécialités en parallèle et une leçon à la fois par agent ; remplace les lots historiques, sans supprimer les réservations.",
   "counts": {
@@ -168,7 +152,7 @@
       "in_alpha77_campaign": true,
       "reserved_by": [],
       "dispatchable_after_gate": true,
-      "state": "queued_after_previous_closure"
+      "state": "harness_complete_reservation_released"
     },
     {
       "order": 10,
@@ -738,10 +722,12 @@
     }
   ],
   "current_limits": [
-    "N05 livré, tête distante exacte, contrat terminé et réservation libérée.",
-    "Réserve N02 :37occurrences typographiques sur006a1f39 ; génération auteur2 absente, acquisition refusée, aucune modification silencieuse.",
-    "N06 candidat suivant, acquisition exclusive requise ; N17 concurrent réservé nonmodifié.",
-    "Auto-relectures explicites, aucun certificat médical humain, aucunePR/main."
+    "N06 livré, tête distante exacte, contrat terminé et réservation libérée ;7règles sémiologiques passées nativement et sur commit immuable.",
+    "Huit leçons livrées sous contrat dans cette file ; auto-relectures sans certification médicale humaine.",
+    "N17 toujours réservé par travail concurrent ; aucun candidat77 libre restant dans la file autorisée. Autresbacklogs horscampagne nonengagés.",
+    "N02 :37occurrences typographiques sur006a1f39, mandatde correction générationauteur2 absent, refusréel conservé ; pas de mutation silencieuse.",
+    "N04/N29 : réserves7règles historiques conservées ; aucune modification de leurs livraisons libérées.",
+    "AucunePR/main, aucun déploiementpublic déclaré ; coûts/tokens réels indisponibles restentnull."
   ],
   "verification": {
     "stage": "completed",
@@ -884,6 +870,44 @@
       "remote_sha_verified": true,
       "release_registry_sha": "8ec9e09baec7904fdf7046ae90fba83092712d72",
       "completed_at": "2026-11-02T11:40:23+00:00"
+    },
+    {
+      "code": "N06",
+      "title": "Protéinurie isolée avec lésions morphologiques précisées",
+      "mode": "new_course",
+      "worktree": "/workspace/Medina-nephrologie-n06",
+      "branch": "codex/alpha77/n06-integrate-g1",
+      "reservation_acquired": false,
+      "acquisition_registry_sha": "f0e62facbb166cc13b6b43811b4be7298ecd3d86",
+      "harness_claimed": true,
+      "runtime_name": "sol_nephrologie",
+      "runtime_model": "gpt-6.1-sol",
+      "stage": "completed",
+      "clinical_certification": false,
+      "start_receipt": "/workspace/Medina-harness/harness/agents/nephrologie/transitions/N05-N06/start-N06.json",
+      "catalogue_scope": "AuteurN06 exclusivementréservé pourchapters.json",
+      "harness_completed_at": "2026-11-02T12:02:38+00:00",
+      "source_commit": "14b44d83813296a99c63c837095bb5bc66aad815",
+      "final_counts": {
+        "monograph_points": 14,
+        "medina_rubrics": 20,
+        "selected_source_readings": 35,
+        "exact_swiss_FIs": 5,
+        "science_tabs": 6,
+        "semiology_sections": 9,
+        "original_figures": 5,
+        "figure_occurrences": 9,
+        "annotation_markers": 33,
+        "windows": 34,
+        "quiz": 4
+      },
+      "preview_sha256": "04b73a5c22d61f10f6aee49d0889e4aef5908f214ae62a2acba8de953af66068",
+      "semiology_seven_rules_native_passed": true,
+      "status": "harness_complete_reservation_released",
+      "final_commit": "d325825b8d17beea3514b523aed6378eb0490328",
+      "remote_sha_verified": true,
+      "release_registry_sha": "116edbc9264026c57c816c035989b4f2521ef283",
+      "completed_at": "2026-11-02T12:02:38+00:00"
     }
   ],
   "reserves": {
@@ -999,5 +1023,7 @@
       "N29": "Lecontrôleciblépublié indique linked_sources_in_semio etclinical_semio_marker ; absencehttps etmarqueurprose àcorrigerplustardsousmandatautorisé, courslibéréintact.",
       "new_N06": "7règles passées parseurnatifharness etinspectionstatique sur14b44d83813296a99c63c837095bb5bc66aad815, sans prétendreauditmédicalindépendant."
     }
-  }
+  },
+  "production_name": "Sol-Hématologie-D77",
+  "active_specialty": "hematologie"
 }
