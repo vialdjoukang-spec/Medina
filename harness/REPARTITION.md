@@ -76,3 +76,22 @@ seul ne constitue pas un hébergement permanent.
 
 Commandes : `bracelet.py '<tâche>'`, `medina_harness.py self-test`, `watch`,
 `gate`, `claim`, `progress`, `extract`, `report`, `validate`, `daemon`.
+
+### Surveillance indépendante de l'environnement de travail
+
+Le cron GitHub natif reste absent de main. Une autre voie a été testée :
+`workflow_dispatch` par identifiant accepte la branche de travail (HTTP204 et
+run41374061103 réussi). `remote_watchdog.py` utilise ce mécanisme pour demander
+un successeur, après une observation et une attente jusqu'à600secondes. Le
+successeur utilise toujours la branche du harness ; aucune PR ni écriture main.
+Chaque passage conserve un artefact autonome. Le contrôle signale un état source
+ancien, une activité auteur ancienne ou un garde fermé ; il ne les rafraîchit pas.
+Une erreur d'observation reste visible même après le lancement du successeur.
+
+La chaîne doit être confirmée par un premier passage puis son successeur effectif,
+et cette preuve reste dans `monitor.json`. L'absence de nouveaux commits de cours
+n'est jamais présentée comme une production médicale. Les pannes GitHub, quotas,
+révocations de droits et retards restent possibles. `watchdog-control.json` permet
+l'arrêt explicite ; arrêter le run actif donne un arrêt immédiat. Une seule chaîne
+est autorisée par le groupe de concurrence. Aucun appel LLM ne sert à la veille ;
+un runner standard attend entre les contrôles, ce qui consomme du temps Actions.

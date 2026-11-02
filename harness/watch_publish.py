@@ -18,13 +18,21 @@ BRANCH='codex/harness-observations-20261102'
 FILES=['status.json','dashboard.html','rapport-08h00.html','monitor.json',
        'runtime/state.json','runtime/watch.json','runtime/events.jsonl',
        'runtime/tests.json','runtime/tests.log']
+CODE_FILES=['medina_harness.py','bracelet.py','github_observe.py','watch_publish.py',
+            'remote_watchdog.py','watchdog-control.json','catalog.json','config.json','prompt-lock.json',
+            'REPARTITION.md','dashboard-template.html','tests/test_harness.py','tests/test_remote_watchdog.py']
 
 def run(root,publisher):
-    h=Harness(root);h.watch()
+    h=Harness(root)
+    # A new interpreter loads the current tested code on every tick.
+    subprocess.run([sys.executable,str(h.home/'medina_harness.py'),'--root',str(root),'watch'],check=True,capture_output=True,timeout=90)
+    gate=h.readiness()
     actual=subprocess.check_output(['git','-C',str(publisher),'branch','--show-current'],text=True).strip()
     if actual!=BRANCH:raise ValueError('Branche de publication non autorisée')
     staged=[]
-    for name in FILES:
+    # A closed production gate must still publish observations and alerts.
+    # Only code whose test receipt is current may replace the remote runtime.
+    for name in FILES+(CODE_FILES if gate['allowed'] else []):
         src=h.home/name
         if src.exists():
             dest=publisher/'harness'/name;dest.parent.mkdir(parents=True,exist_ok=True)
@@ -35,7 +43,8 @@ def run(root,publisher):
         subprocess.run(['git','-C',str(publisher),'commit','-m','harness: observation '+now()],check=True,capture_output=True)
     elif diff.returncode:raise ValueError('Diff Git échoué')
     subprocess.run(['git','-C',str(publisher),'push','origin','HEAD:refs/heads/'+BRANCH],check=True,capture_output=True,timeout=60)
-    result={'at':now(),'published':True,'branch':BRANCH}
+    result={'at':now(),'published':True,'branch':BRANCH,
+            'production_allowed':gate['allowed'],'problems':gate['problems']}
     atomic(h.runtime/'publisher.json',result);return result
 
 def main():

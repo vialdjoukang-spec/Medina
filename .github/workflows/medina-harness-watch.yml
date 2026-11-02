@@ -4,6 +4,15 @@ on:
     branches: [codex/harness-20261102, codex/harness-observations-20261102]
     paths: ['harness/**', '.github/workflows/medina-harness-watch.yml']
   workflow_dispatch:
+    inputs:
+      watchdog:
+        description: Independent observer with controlled successor
+        type: boolean
+        default: false
+      bootstrap:
+        description: Verify one immediate handoff before the normal 600s cadence
+        type: boolean
+        default: false
   # GitHub only enables cron from the default branch. This declaration is
   # prepared, not claimed active while this file remains on a review branch.
   schedule:
@@ -11,10 +20,11 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: medina-harness-${{ github.ref }}
+  group: medina-harness-${{ inputs.watchdog && 'independent-watchdog' || github.ref }}
   cancel-in-progress: false
 jobs:
   observe:
+    if: ${{ !inputs.watchdog }}
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -43,3 +53,47 @@ jobs:
             harness/agents/
           retention-days: 30
           if-no-files-found: error
+  independent-watchdog:
+    if: ${{ inputs.watchdog }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      actions: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Start observer clock
+        run: echo "WATCHDOG_STARTED_EPOCH=$(date +%s)" >> "$GITHUB_ENV"
+      - name: Observe the latest published source without refreshing author activity
+        id: observation
+        continue-on-error: true
+        run: python3 harness/remote_watchdog.py observe
+      - name: Preserve every observation
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: medina-independent-${{ github.run_id }}
+          path: |
+            harness/remote-observation.json
+            harness/remote-status.json
+            harness/remote-dashboard.html
+            harness/rapport-08h00.html
+          retention-days: 7
+          if-no-files-found: warn
+      - name: Schedule the next independent observation
+        if: always()
+        env:
+          BOOTSTRAP: ${{ inputs.bootstrap }}
+        run: |
+          if [ "$BOOTSTRAP" = true ]; then
+            python3 harness/remote_watchdog.py handoff --bootstrap
+          else
+            python3 harness/remote_watchdog.py handoff
+          fi
+      - name: Keep the failure visible after scheduling the next check
+        if: ${{ always() && steps.observation.outcome == 'failure' }}
+        run: exit 1
