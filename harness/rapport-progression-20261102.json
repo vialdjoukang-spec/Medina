@@ -1,16 +1,70 @@
 {
   "remote_completion_reconciliation": {
-    "checked_at": "2026-11-02T17:07:45.025879+00:00",
-    "snapshot_generated_at": "2026-11-02T17:05:16+00:00",
-    "snapshot_completed_count": 37,
-    "remote_completions_after_snapshot": [],
+    "checked_at": "2026-11-02T17:48:29.487220+00:00",
+    "snapshot_generated_at": "2026-11-02T17:45:16+00:00",
+    "snapshot_completed_count": 38,
+    "remote_completions_after_snapshot": [
+      {
+        "completion": {
+          "agent": "codex_hematologie",
+          "code": "D65",
+          "at": "2026-11-02T17:46:39+00:00",
+          "branch": "codex/alpha77/d65-integrate-g1",
+          "worktree": "/workspace/Medina-hematologie-D65",
+          "folder": "/workspace/Medina-hematologie-D65/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE",
+          "manifest_sha256": "00fabb7f0ea9f7d68ca3eacb3321f4fd98a670c3b50c2a340038437411dc4a9b",
+          "source_binding_sha256": "464e52b0a405faf05e1bbc7dc1713acb9321502f4c409f11329eaee3ef8b5e9d",
+          "review_modes": {
+            "medical": "self_review",
+            "language": "self_review",
+            "visual_desktop": "self_review",
+            "visual_mobile": "self_review"
+          },
+          "clinical_certification": false,
+          "publication_allowed": false,
+          "preview_sha256": "9eacd5ea5df8916601a2e4dda3c73a7b39372336317663082fd77e90784dee1f",
+          "semiology_contract": {
+            "code": "D65",
+            "observed_at": "2026-11-02T17:46:39+00:00",
+            "passed": true,
+            "checks": {
+              "six_science_tabs": true,
+              "first_selected_semio": true,
+              "semio_panel_label_and_visible": true,
+              "first_unit_exact_h3": true,
+              "nine_named_sections": true,
+              "linked_sources_in_semio": true,
+              "clinical_semio_marker": true
+            },
+            "findings": [],
+            "source_hashes": {
+              "chapters/D65/D65_a.html": "41c954aa2bf2d7122c002879dcff0cee4829cd3ee1c6f11d1ab6147849c3055f",
+              "chapters/D65/D65_b.html": "722cde0804afa1dc7801f5160812914ddf4bba64b076e109b8038bbb7c8f2258",
+              "chapters/D65/D65_c.html": "0450ed9b3ce81d076b2a4fdb86ab2b9c960f1d1caf78dbfe804bbb8b2ca0bfab",
+              "chapters/D65/D65_d.html": "352b40bfe0fb942bec1ece7eac422b771f40df524072c15daeb73fa14d4e8c8c"
+            },
+            "clinical_certification": false,
+            "author_activity_refreshed": false,
+            "source_bindings_refreshed": false,
+            "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+          }
+        },
+        "remote_version": "42a4071b02716f9524fb34fde41b8d7dbf14f9f5",
+        "receipt_evidence": {
+          "sha256": "705b725b790c17c04f7525ae1df41799fa465b1a2f7e58e4d9dd92e78e76347a",
+          "bytes": 1893,
+          "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/harness-completion.json"
+        },
+        "scope": "Reçu distant exact, postérieur au snapshot publié ; aucune nouvelle clôture créée."
+      }
+    ],
     "activity_refreshed": false,
     "receipts_refreshed": false
   },
   "late_local_completions": [],
-  "collected_completion_event_count": 37,
+  "collected_completion_event_count": 39,
   "posterior_structural_inspection": {
-    "observed_at": "2026-11-02T17:07:46.267030+00:00",
+    "observed_at": "2026-11-02T17:48:30.967480+00:00",
     "read_only": true,
     "author_activity_refreshed": false,
     "source_bindings_refreshed": false,
@@ -913,6 +967,75 @@
         "scope": "Sept contrôles statiques ciblés issus de starter_codex.py ; pas exécution complète de Starter, ni revue médicale."
       },
       {
+        "code": "G22",
+        "sha": "63277dbb8fb5812c289389aceaa6ab85df416350",
+        "checks": {
+          "six_science_tabs": true,
+          "first_selected_semio": true,
+          "semio_panel_label_and_visible": true,
+          "first_unit_exact_h3": true,
+          "nine_named_sections": true,
+          "linked_sources_in_semio": true,
+          "clinical_semio_marker": true
+        },
+        "passed": true,
+        "findings": [],
+        "native_parser": true,
+        "source_hashes": {
+          "chapters/G22/G22_a.html": "65e3aab592fee3d3f152b06b067c3efbf0c206abcb10217f9a5c512a1a4fae9e",
+          "chapters/G22/G22_b.html": "7cb1c9a1295d8479e57b17e0da4264f09242aa8581a7217d03bd2f3253587bef",
+          "chapters/G22/G22_c.html": "05185cf8fce0c0b71d7f27a520372b2c233b9543ec02986b9d5bb6ae4d9e69bc",
+          "chapters/G22/G22_d.html": "2e68ed58e5c9083afaa514f0b133d2ae54667f7821944e17dd5510cae8b889dc"
+        },
+        "scope": "Sept contrôles statiques ciblés issus de starter_codex.py ; pas exécution complète de Starter, ni revue médicale."
+      },
+      {
+        "code": "D65",
+        "sha": "8d43afa0985656affe379781c2ad7914994ee98f",
+        "checks": {
+          "six_science_tabs": true,
+          "first_selected_semio": true,
+          "semio_panel_label_and_visible": true,
+          "first_unit_exact_h3": true,
+          "nine_named_sections": true,
+          "linked_sources_in_semio": true,
+          "clinical_semio_marker": true
+        },
+        "passed": true,
+        "findings": [],
+        "native_parser": true,
+        "source_hashes": {
+          "chapters/D65/D65_a.html": "41c954aa2bf2d7122c002879dcff0cee4829cd3ee1c6f11d1ab6147849c3055f",
+          "chapters/D65/D65_b.html": "722cde0804afa1dc7801f5160812914ddf4bba64b076e109b8038bbb7c8f2258",
+          "chapters/D65/D65_c.html": "0450ed9b3ce81d076b2a4fdb86ab2b9c960f1d1caf78dbfe804bbb8b2ca0bfab",
+          "chapters/D65/D65_d.html": "352b40bfe0fb942bec1ece7eac422b771f40df524072c15daeb73fa14d4e8c8c"
+        },
+        "scope": "Sept contrôles statiques ciblés issus de starter_codex.py ; pas exécution complète de Starter, ni revue médicale."
+      },
+      {
+        "code": "D65",
+        "sha": "42a4071b02716f9524fb34fde41b8d7dbf14f9f5",
+        "checks": {
+          "six_science_tabs": true,
+          "first_selected_semio": true,
+          "semio_panel_label_and_visible": true,
+          "first_unit_exact_h3": true,
+          "nine_named_sections": true,
+          "linked_sources_in_semio": true,
+          "clinical_semio_marker": true
+        },
+        "passed": true,
+        "findings": [],
+        "native_parser": true,
+        "source_hashes": {
+          "chapters/D65/D65_a.html": "41c954aa2bf2d7122c002879dcff0cee4829cd3ee1c6f11d1ab6147849c3055f",
+          "chapters/D65/D65_b.html": "722cde0804afa1dc7801f5160812914ddf4bba64b076e109b8038bbb7c8f2258",
+          "chapters/D65/D65_c.html": "0450ed9b3ce81d076b2a4fdb86ab2b9c960f1d1caf78dbfe804bbb8b2ca0bfab",
+          "chapters/D65/D65_d.html": "352b40bfe0fb942bec1ece7eac422b771f40df524072c15daeb73fa14d4e8c8c"
+        },
+        "scope": "Sept contrôles statiques ciblés issus de starter_codex.py ; pas exécution complète de Starter, ni revue médicale."
+      },
+      {
         "code": "D62",
         "sha": "96b262562b7bc404de72591097e2c6584dc74ccb",
         "checks": {
@@ -938,17 +1061,17 @@
     ]
   },
   "harness_test_count": "55",
-  "generated_at": "2026-11-02T17:07:46.359186+00:00",
+  "generated_at": "2026-11-02T17:49:32.556955+00:00",
   "timezone": "Europe/Zurich",
-  "remote_collection_at": "2026-11-02T17:06:03.057030+00:00",
-  "remote_snapshot_at": "2026-11-02T17:05:16+00:00",
-  "remote_snapshot_sha": "9e4f651f9224c77009f550efbc8cb398911d3589",
+  "remote_collection_at": "2026-11-02T17:47:18.296595+00:00",
+  "remote_snapshot_at": "2026-11-02T17:45:16+00:00",
+  "remote_snapshot_sha": "947909bd9a387bba8df4a8b88c8391170fe4773d",
   "frozen_08h_actual_at": "2026-11-02T07:05:41+00:00",
-  "completed_count": 37,
+  "completed_count": 39,
   "candidate_count": 70,
   "historical_categories": 270,
-  "versions_verified": 38,
-  "source_bindings_checked": 384,
+  "versions_verified": 41,
+  "source_bindings_checked": 415,
   "main_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "lessons": [
     {
@@ -13516,6 +13639,1320 @@
       }
     },
     {
+      "code": "G22",
+      "title": "Syndrome parkinsonien au cours de maladies classées ailleurs",
+      "completion": {
+        "agent": "astra_neurologie",
+        "code": "G22",
+        "at": "2026-11-02T17:26:55+00:00",
+        "branch": "codex/alpha77/g22-integrate-g1",
+        "worktree": "/workspace/Medina-neurologie-G22",
+        "folder": "/workspace/Medina-neurologie-G22/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE",
+        "manifest_sha256": "9fbcda0a17a0a446169b4316d749e22cd3cdf7cbde1070bdbfffe687d1afb44f",
+        "source_binding_sha256": "65a491edd0cee282ba41fd9af78888c39d5a8f2d64881bef90c49b617340dbf1",
+        "review_modes": {
+          "medical": "self_review",
+          "language": "self_review",
+          "visual_desktop": "self_review",
+          "visual_mobile": "self_review"
+        },
+        "clinical_certification": false,
+        "publication_allowed": false,
+        "preview_sha256": "dc193b4e4f5f0da10c5a2c2e7ef04cfd17412304901f0293d717ed7454ce54af",
+        "semiology_contract": {
+          "code": "G22",
+          "observed_at": "2026-11-02T17:26:55+00:00",
+          "passed": true,
+          "checks": {
+            "six_science_tabs": true,
+            "first_selected_semio": true,
+            "semio_panel_label_and_visible": true,
+            "first_unit_exact_h3": true,
+            "nine_named_sections": true,
+            "linked_sources_in_semio": true,
+            "clinical_semio_marker": true
+          },
+          "findings": [],
+          "source_hashes": {
+            "chapters/G22/G22_a.html": "65e3aab592fee3d3f152b06b067c3efbf0c206abcb10217f9a5c512a1a4fae9e",
+            "chapters/G22/G22_b.html": "7cb1c9a1295d8479e57b17e0da4264f09242aa8581a7217d03bd2f3253587bef",
+            "chapters/G22/G22_c.html": "05185cf8fce0c0b71d7f27a520372b2c233b9543ec02986b9d5bb6ae4d9e69bc",
+            "chapters/G22/G22_d.html": "2e68ed58e5c9083afaa514f0b133d2ae54667f7821944e17dd5510cae8b889dc"
+          },
+          "clinical_certification": false,
+          "author_activity_refreshed": false,
+          "source_bindings_refreshed": false,
+          "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+        }
+      },
+      "version": {
+        "code": "G22",
+        "branch": "codex/alpha77/g22-integrate-g1",
+        "version_sha": "63277dbb8fb5812c289389aceaa6ab85df416350",
+        "remote_head": "63277dbb8fb5812c289389aceaa6ab85df416350",
+        "remote_branch_exists": true,
+        "version_is_remote_head": true,
+        "evidence": {
+          "README.md": {
+            "sha256": "da6d9b8e81c993dc87157885df3080d6a96bd28ccaa0f26e7c1416dfcd45b60a",
+            "bytes": 3321,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/README.md"
+          },
+          "acquire-G22.json": {
+            "sha256": "8850c2d369b37867f3c75b3de204e8828325257bbf6cf05445ecb57b970a76db",
+            "bytes": 65,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/acquire-G22.json"
+          },
+          "author-structure.json": {
+            "sha256": "d3434a6eef889c83d9a6845e108993f5c639b89b0bc3217e884d0af9103818a2",
+            "bytes": 283,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/author-structure.json"
+          },
+          "before-glossary-link-cleanup/native-build.json": {
+            "sha256": "874a19421be312df8f04d33515b619ac2117474a26ab3a2b37289290ffb37499",
+            "bytes": 1077,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/before-glossary-link-cleanup/native-build.json"
+          },
+          "before-source-hashes.json": {
+            "sha256": "0d4961339b8e426027c96640aee693cb00cc43bfa7dd578aea580bbd6e3b4532",
+            "bytes": 680,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/before-source-hashes.json"
+          },
+          "browser-all-windows.json": {
+            "sha256": "4c0db0495d3df4b5246e80e8abd57f9e830e4ff30c6effc15fef1c3d0021b5fe",
+            "bytes": 2301,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/browser-all-windows.json"
+          },
+          "browser-autonomous.json": {
+            "sha256": "7cedf649675744690e498a0359a7f6dae3b31992ad686d37cfc374ad7ea76ea6",
+            "bytes": 2397,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/browser-autonomous.json"
+          },
+          "browser-figure-rows.json": {
+            "sha256": "6d0d1bbd2b753a6a679af8ac56a196d0939a3cd0ce54ed7763f9bab69e4865bd",
+            "bytes": 2715,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/browser-figure-rows.json"
+          },
+          "checks-executed.json": {
+            "sha256": "95d0e771f8d391056e8a7cafc54cd0feace06570000f05e00b431d2b64a2eae9",
+            "bytes": 1376,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/checks-executed.json"
+          },
+          "claim-G22.json": {
+            "sha256": "7e03311031c87bee28e7ed6a04a358ab013e5fc9c5e32030055d30edf97dc446",
+            "bytes": 54,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/claim-G22.json"
+          },
+          "clinical-review-completed.json": {
+            "sha256": "88ee41a7ae55930013db4162297dc075553947c582f673cea789b8ef7a142649",
+            "bytes": 6035,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/clinical-review-completed.json"
+          },
+          "clinical-review-started.json": {
+            "sha256": "fb0f72115f013d4552385ec1f902119a7757063af1dec6d8eed54a5f0b88f7b6",
+            "bytes": 248,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/clinical-review-started.json"
+          },
+          "compatibilite_betta_G22/recherche.md": {
+            "sha256": "39f6d3c465c1a1208554f5193283d2d010cfd2d939bce09094b59577d564c876",
+            "bytes": 19247,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/compatibilite_betta_G22/recherche.md"
+          },
+          "compatibilite_betta_G22/sources.json": {
+            "sha256": "8652c5b1b2ebf4cdbab028a122804aedbe209a931c54a4152deb5b7f5bf775d9",
+            "bytes": 7688,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/compatibilite_betta_G22/sources.json"
+          },
+          "documented-limits.json": {
+            "sha256": "84387829c668695180e1971105aeaa8a385e02daaceb355f35930aa5ce6ae2db",
+            "bytes": 2884,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/documented-limits.json"
+          },
+          "figures.json": {
+            "sha256": "025c80d8ff6aac07502f0c913f4c85d73be86a4503be64d8b8079dffa778699e",
+            "bytes": 8072,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/figures.json"
+          },
+          "figures/mri-provenance.json": {
+            "sha256": "780cc3883e4ef33430ea11daffafcc96e387a0e32aa53624c172c4c361ae7f16",
+            "bytes": 870,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/figures/mri-provenance.json"
+          },
+          "final-source-hashes.json": {
+            "sha256": "ba82ab42e4204d1fd0111830ec1af7823a55b3240796dec1b51a3d27c56c0b01",
+            "bytes": 914,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/final-source-hashes.json"
+          },
+          "guard-source-postpush.json": {
+            "sha256": "b6f666f845688d25b928bb2192df742b2e09dbfeb5cab9b776163ef799ae1656",
+            "bytes": 9979,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/guard-source-postpush.json"
+          },
+          "guard-source-prepush.json": {
+            "sha256": "b6f666f845688d25b928bb2192df742b2e09dbfeb5cab9b776163ef799ae1656",
+            "bytes": 9979,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/guard-source-prepush.json"
+          },
+          "harness-completion.json": {
+            "sha256": "85e7edd5f6d740c88e3c74bc292e2c4704b9807f864f6a03633f8e243e052e18",
+            "bytes": 1890,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/harness-completion.json"
+          },
+          "harness-entry-gate.json": {
+            "sha256": "2480248704b988a00066f5a4b26c902637fbe54cde404ac3913b4c01a8593aa6",
+            "bytes": 192,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/harness-entry-gate.json"
+          },
+          "initial-inventory.json": {
+            "sha256": "0e453403776601932095ba36f15c9873fe514e52e32847e6e52deca9709c6ff6",
+            "bytes": 258,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/initial-inventory.json"
+          },
+          "lesson-manifest.json": {
+            "sha256": "9fbcda0a17a0a446169b4316d749e22cd3cdf7cbde1070bdbfffe687d1afb44f",
+            "bytes": 48941,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/lesson-manifest.json"
+          },
+          "matrix-20.json": {
+            "sha256": "305bd95d78f8f8d500d749912b904cb3c1733a28ba3b760efefefdb1907e3647",
+            "bytes": 10874,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/matrix-20.json"
+          },
+          "monograph-14.json": {
+            "sha256": "b599604bf269968cd6d7220993f22d42c7d5fc8461b0d76b971efec6568df2c4",
+            "bytes": 6912,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/monograph-14.json"
+          },
+          "native-build.json": {
+            "sha256": "fcbc2df66652d915da0e769ea5277d6fd761da2203b8e9463e707875bb4c051a",
+            "bytes": 1077,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/native-build.json"
+          },
+          "popup-trigger-map.json": {
+            "sha256": "d26bbeb9afb9bb16682cb0e3e777e6d8e4b885f335b9369e9a0f5ef16c1a0083",
+            "bytes": 1851,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/popup-trigger-map.json"
+          },
+          "prewriting-gate.json": {
+            "sha256": "70d7efc21af2a27ed2f8005ce34603965b50853535bfc897ce7acfc5a96d4170",
+            "bytes": 1254,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/prewriting-gate.json"
+          },
+          "recherche_G22/recherche.md": {
+            "sha256": "39f6d3c465c1a1208554f5193283d2d010cfd2d939bce09094b59577d564c876",
+            "bytes": 19247,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/recherche_G22/recherche.md"
+          },
+          "recherche_G22/sources-draft.json": {
+            "sha256": "4a30a52725786f6b3958c23b2f610bfaaf629ff43ea5b8b43200e3670f7b85f6",
+            "bytes": 14104,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/recherche_G22/sources-draft.json"
+          },
+          "recherche_G22/sources.json": {
+            "sha256": "72f559b4bdba935a57c36cd8500f34b68c805282b7765b7134d7cd866e3621ae",
+            "bytes": 26936,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/recherche_G22/sources.json"
+          },
+          "registry-after-G08-release.json": {
+            "sha256": "c19d80ce173808805e18235a682a31552f7d80c5c4ff9d59a6db36c6b1387857",
+            "bytes": 266734,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/registry-after-G08-release.json"
+          },
+          "registry-before-start.json": {
+            "sha256": "e203b1f10468cb2449b7e03fbd4c7ccad1769e346e7df59ad93dbd5c43461bd0",
+            "bytes": 267438,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/registry-before-start.json"
+          },
+          "release-G08.json": {
+            "sha256": "c9ce3b5bedaa232b9cbed81983c32899fef065a0ae5687727bb0235510799dec",
+            "bytes": 65,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/release-G08.json"
+          },
+          "remote-source-head.json": {
+            "sha256": "d3a9e6986580dd1d3215880ab12a3d001e3b3f87d46e258a93fbf625813d13bc",
+            "bytes": 174,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/remote-source-head.json"
+          },
+          "research-matrix20.json": {
+            "sha256": "40c187725900fcf29ac2e150e61ced4aa70250fc6046916850ae052ca7a8dd2d",
+            "bytes": 6156,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/research-matrix20.json"
+          },
+          "research-plan14.json": {
+            "sha256": "d60a2ae68b53c85b5e8182cbadea9b64b13d1757473f5227a5bbd656f78bd939",
+            "bytes": 1918,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/research-plan14.json"
+          },
+          "reviews/language.json": {
+            "sha256": "735dfc93de4dd24d0af1448cc7485167806b70a2cc574cb90014e48f730d4212",
+            "bytes": 1836,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/reviews/language.json"
+          },
+          "reviews/medical.json": {
+            "sha256": "a183c026af5e7ba877065a5865a983814c6c4fc7dac06576eaa559b6c6a6c533",
+            "bytes": 1967,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/reviews/medical.json"
+          },
+          "reviews/semiology.json": {
+            "sha256": "7249161b99a2c133482a8ad66f0db92cce14f9f16bbc9b47dd49c2e09a9382ce",
+            "bytes": 2232,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/reviews/semiology.json"
+          },
+          "reviews/visual_desktop.json": {
+            "sha256": "1be15fa32d8040ecc8ed7337bceb2658625e428946ea64ad45c3f63125ba7b87",
+            "bytes": 1734,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/reviews/visual_desktop.json"
+          },
+          "reviews/visual_mobile.json": {
+            "sha256": "2fa2a547a9234d28c3bfe83316632faaeeaefaf1178fa01863fb1484f90e8e94",
+            "bytes": 1732,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/reviews/visual_mobile.json"
+          },
+          "sciences-audit-initial.json": {
+            "sha256": "ba44d047516bea6900247568b6851af7501eb5ade43ca83a6e1fa283c79a445f",
+            "bytes": 1256,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/sciences-audit-initial.json"
+          },
+          "sciences-audit.json": {
+            "sha256": "ebd0f917468023d0db3b803c3721c0c0ad397df9af85950f81ad0e1b9566f571",
+            "bytes": 1256,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/sciences-audit.json"
+          },
+          "semiology-contract-check.json": {
+            "sha256": "1b830c7c08dd51c30a4577215caee123b564c0795fc3eab025a26eadf05b9ff5",
+            "bytes": 937,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/semiology-contract-check.json"
+          },
+          "source-binding.json": {
+            "sha256": "65a491edd0cee282ba41fd9af78888c39d5a8f2d64881bef90c49b617340dbf1",
+            "bytes": 2039,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/source-binding.json"
+          },
+          "start-G22.json": {
+            "sha256": "dd6782dbcd83c6cfcf2eeefda81a6c835d882bffef1c803768651a4f1968245c",
+            "bytes": 1054,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/start-G22.json"
+          },
+          "static-initial-incident.json": {
+            "sha256": "9c2f981add02b91c63137f0abb4f1c6d7db394a54ac576bb6e2311495d61f63e",
+            "bytes": 481,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/static-initial-incident.json"
+          },
+          "structural-checks.json": {
+            "sha256": "d9625794f8adf42df27b7db4cfd2810a3866241fe56de3a6525af047b3090fbc",
+            "bytes": 1008,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/structural-checks.json"
+          },
+          "visual-self-review.json": {
+            "sha256": "2aff2f3e9ad1e9e6dce247d15c27525639b8953fa96f354a482340188e52525d",
+            "bytes": 2948,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/visual-self-review.json"
+          },
+          "worktree-receipt.json": {
+            "sha256": "2d09cb80c04319234e1ef3e4f4b1cad3bafcac5133c807b3ac65082a456a67d4",
+            "bytes": 354,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/worktree-receipt.json"
+          },
+          "writing-started.json": {
+            "sha256": "6a452a36214af2d78a9cd6a48cf5e901c09e7db78eeb33e959150297710df8b3",
+            "bytes": 169,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/writing-started.json"
+          }
+        },
+        "binding_checks": [
+          {
+            "path": "chapters/G22/G22_a.html",
+            "expected": "65e3aab592fee3d3f152b06b067c3efbf0c206abcb10217f9a5c512a1a4fae9e",
+            "actual": "65e3aab592fee3d3f152b06b067c3efbf0c206abcb10217f9a5c512a1a4fae9e",
+            "ok": true
+          },
+          {
+            "path": "chapters/G22/G22_b.html",
+            "expected": "7cb1c9a1295d8479e57b17e0da4264f09242aa8581a7217d03bd2f3253587bef",
+            "actual": "7cb1c9a1295d8479e57b17e0da4264f09242aa8581a7217d03bd2f3253587bef",
+            "ok": true
+          },
+          {
+            "path": "chapters/G22/G22_c.html",
+            "expected": "05185cf8fce0c0b71d7f27a520372b2c233b9543ec02986b9d5bb6ae4d9e69bc",
+            "actual": "05185cf8fce0c0b71d7f27a520372b2c233b9543ec02986b9d5bb6ae4d9e69bc",
+            "ok": true
+          },
+          {
+            "path": "chapters/G22/G22_d.html",
+            "expected": "2e68ed58e5c9083afaa514f0b133d2ae54667f7821944e17dd5510cae8b889dc",
+            "actual": "2e68ed58e5c9083afaa514f0b133d2ae54667f7821944e17dd5510cae8b889dc",
+            "ok": true
+          },
+          {
+            "path": "chapters/G22/G22_pop1.html",
+            "expected": "aaff9cb989c57b3098954765383d77159585a06fec3a80d35fd0a03928cd7df5",
+            "actual": "aaff9cb989c57b3098954765383d77159585a06fec3a80d35fd0a03928cd7df5",
+            "ok": true
+          },
+          {
+            "path": "chapters/G22/G22_pop2.html",
+            "expected": "f65e6e998b30c1019b622107c12c0870c92cec82111b78df5d5af9fd77973f1e",
+            "actual": "f65e6e998b30c1019b622107c12c0870c92cec82111b78df5d5af9fd77973f1e",
+            "ok": true
+          },
+          {
+            "path": "glossary/g22.py",
+            "expected": "4ce62c965e0a51a6a5e1c661fefec1c7d424e7b7a88db3e557f0de85cfd5433c",
+            "actual": "4ce62c965e0a51a6a5e1c661fefec1c7d424e7b7a88db3e557f0de85cfd5433c",
+            "ok": true
+          },
+          {
+            "path": "assets/img/g22/alpha/codex/Gray764.png",
+            "expected": "0aab3ff23b815eb5f6eab0ba8c583726c5994c025899f3f6654f47e566249b09",
+            "actual": "0aab3ff23b815eb5f6eab0ba8c583726c5994c025899f3f6654f47e566249b09",
+            "ok": true
+          },
+          {
+            "path": "assets/img/g22/alpha/codex/Neurosyphilis2016.jpg",
+            "expected": "712b4b1774f8918cbeb7791048e2fc3a59b46ff37965b4ce223fc94ba3aceeae",
+            "actual": "712b4b1774f8918cbeb7791048e2fc3a59b46ff37965b4ce223fc94ba3aceeae",
+            "ok": true
+          }
+        ],
+        "errors": [],
+        "file_count": 100,
+        "preview": {
+          "sha256": "dc193b4e4f5f0da10c5a2c2e7ef04cfd17412304901f0293d717ed7454ce54af",
+          "bytes": 8109574,
+          "url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/G22-apercu-autonome.html",
+          "proof_url": "https://github.com/vialdjoukang-spec/Medina/blob/63277dbb8fb5812c289389aceaa6ab85df416350/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G22-INTEGRATE/G22-apercu-autonome.html"
+        },
+        "binding_preview_matches": true,
+        "local_evidence_folder": "lessons/G22-63277dbb8f"
+      },
+      "monograph_points": 14,
+      "matrix_rubrics": 20,
+      "source_entries": 16,
+      "image_entries": 2,
+      "blocking_findings": [],
+      "limitations": [
+        {
+          "topic": "Périmètre et codage",
+          "reason": "G22* manifestation et association syphilitiqueA52.1† vérifiées ; pas synonyme de tous les secondairesG21 ni paire automatique Wilson. Manuel2026 D03m lu ciblé, pas audit exhaustif de facturation.",
+          "evidence": "matrix-20.json"
+        },
+        {
+          "topic": "Épidémiologie",
+          "reason": "Incidence/prévalence suisseG22 et distribution âge/sexe non établies. Chiffres OFSP de syphilis globale, fréquences de Parkinson et cas publiés ne les remplacent pas.",
+          "evidence": "matrix-20.json"
+        },
+        {
+          "topic": "Pénicilline et bornes",
+          "reason": "DGN2026 donne une parenthèse d’équivalence incohérente entre ses rythmes ; exemple4×6=24millionsUI/j gardé explicite. FI Grünenthal réellement mai2023 et non juin2025 héritée ; produit, débit, sodium, rein et allergies conservés. Pas ordonnance universelleG22.",
+          "evidence": "clinical-review-completed.json"
+        },
+        {
+          "topic": "Cuivre, REC et traitement",
+          "reason": "Table5 EASL2025 REC>15%,figure2≥15% ; divergence réellement comparée sur rendu page695. Texte18,5% seuil d’étude distinct, pas une limite unique. Cas exactement15% discuté avec laboratoire/centre. Cuivre libre calculé limité, pas cible autonome. Trientinebase150mg et formulations non interchangeables, indicationintoléranceD-pénicillamine et titration surveillée.",
+          "evidence": "clinical-review-completed.json"
+        },
+        {
+          "topic": "Grossesse/allaitement",
+          "reason": "Maintien thérapie anti-cuivre recommandé parEASL, tandis que FI Cuprior impose analyse bénéfice-risque et décision allaitement/traitement ; différence rendue visible, aucune harmonisation tacite.",
+          "evidence": "reviews/medical.json"
+        },
+        {
+          "topic": "Niveau de preuve et autres traitements",
+          "reason": "Cas2016/2025 illustratifs, amélioration avec cointerventions sans causalité randomisée ni garantie de réversibilité. Pas corticoïdes adjuvants systématiques tirés d’un cas. Pas posologie symptomatique non confrontée à une FI.",
+          "evidence": "reviews/medical.json"
+        },
+        {
+          "topic": "Administration suisse",
+          "reason": "Déclaration syphilis et règle dague-étoile2026 vérifiées. Remboursement,LS,AI,conduite et prestations détaillées non établis exhaustivement ; aucune absence d’obligation affirmée.",
+          "evidence": "matrix-20.json"
+        },
+        {
+          "topic": "Accès, images et contrôle",
+          "reason": "Quota partagé ParallelSearch respecté, aucun contournement de session/identité. Autre serviceweb disponible utilisé ; PDF DGN via serviceweb après HTMLdirect,OFSP via serviceweb après503. Pas appel ImageFinder faute de contrôle ; récupération manuelle d’un original primaire lu, licence et consentement rapportés inspectés. Pas validation médicale humaine.",
+          "evidence": "recherche_G22/sources.json"
+        }
+      ],
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "posterior_structural_inspection": {
+        "code": "G22",
+        "sha": "63277dbb8fb5812c289389aceaa6ab85df416350",
+        "checks": {
+          "six_science_tabs": true,
+          "first_selected_semio": true,
+          "semio_panel_label_and_visible": true,
+          "first_unit_exact_h3": true,
+          "nine_named_sections": true,
+          "linked_sources_in_semio": true,
+          "clinical_semio_marker": true
+        },
+        "passed": true,
+        "findings": [],
+        "native_parser": true,
+        "source_hashes": {
+          "chapters/G22/G22_a.html": "65e3aab592fee3d3f152b06b067c3efbf0c206abcb10217f9a5c512a1a4fae9e",
+          "chapters/G22/G22_b.html": "7cb1c9a1295d8479e57b17e0da4264f09242aa8581a7217d03bd2f3253587bef",
+          "chapters/G22/G22_c.html": "05185cf8fce0c0b71d7f27a520372b2c233b9543ec02986b9d5bb6ae4d9e69bc",
+          "chapters/G22/G22_d.html": "2e68ed58e5c9083afaa514f0b133d2ae54667f7821944e17dd5510cae8b889dc"
+        },
+        "scope": "Sept contrôles statiques ciblés issus de starter_codex.py ; pas exécution complète de Starter, ni revue médicale."
+      }
+    },
+    {
+      "code": "D65",
+      "title": "Coagulation intravasculaire disséminée [syndrome de défibrination]",
+      "completion": {
+        "agent": "codex_hematologie",
+        "code": "D65",
+        "at": "2026-11-02T17:46:39+00:00",
+        "branch": "codex/alpha77/d65-integrate-g1",
+        "worktree": "/workspace/Medina-hematologie-D65",
+        "folder": "/workspace/Medina-hematologie-D65/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE",
+        "manifest_sha256": "00fabb7f0ea9f7d68ca3eacb3321f4fd98a670c3b50c2a340038437411dc4a9b",
+        "source_binding_sha256": "464e52b0a405faf05e1bbc7dc1713acb9321502f4c409f11329eaee3ef8b5e9d",
+        "review_modes": {
+          "medical": "self_review",
+          "language": "self_review",
+          "visual_desktop": "self_review",
+          "visual_mobile": "self_review"
+        },
+        "clinical_certification": false,
+        "publication_allowed": false,
+        "preview_sha256": "9eacd5ea5df8916601a2e4dda3c73a7b39372336317663082fd77e90784dee1f",
+        "semiology_contract": {
+          "code": "D65",
+          "observed_at": "2026-11-02T17:46:39+00:00",
+          "passed": true,
+          "checks": {
+            "six_science_tabs": true,
+            "first_selected_semio": true,
+            "semio_panel_label_and_visible": true,
+            "first_unit_exact_h3": true,
+            "nine_named_sections": true,
+            "linked_sources_in_semio": true,
+            "clinical_semio_marker": true
+          },
+          "findings": [],
+          "source_hashes": {
+            "chapters/D65/D65_a.html": "41c954aa2bf2d7122c002879dcff0cee4829cd3ee1c6f11d1ab6147849c3055f",
+            "chapters/D65/D65_b.html": "722cde0804afa1dc7801f5160812914ddf4bba64b076e109b8038bbb7c8f2258",
+            "chapters/D65/D65_c.html": "0450ed9b3ce81d076b2a4fdb86ab2b9c960f1d1caf78dbfe804bbb8b2ca0bfab",
+            "chapters/D65/D65_d.html": "352b40bfe0fb942bec1ece7eac422b771f40df524072c15daeb73fa14d4e8c8c"
+          },
+          "clinical_certification": false,
+          "author_activity_refreshed": false,
+          "source_bindings_refreshed": false,
+          "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+        }
+      },
+      "version": {
+        "code": "D65",
+        "branch": "codex/alpha77/d65-integrate-g1",
+        "version_sha": "8d43afa0985656affe379781c2ad7914994ee98f",
+        "remote_head": "42a4071b02716f9524fb34fde41b8d7dbf14f9f5",
+        "remote_branch_exists": true,
+        "version_is_remote_head": false,
+        "evidence": {
+          "README-livraison.md": {
+            "sha256": "8a167a601c5fd77941d488821b8445cb66a341a5c8aebee5c09f430c819a9b44",
+            "bytes": 2283,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/README-livraison.md"
+          },
+          "book24-check.json": {
+            "sha256": "06dfd4317d5497f827765dbd9ded3ad19d928122266a691297abb9b8d109d79c",
+            "bytes": 444,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/book24-check.json"
+          },
+          "browser-report-autonomous.json": {
+            "sha256": "72a83cdeb414d58d756e2f2c318c2352b0dcbe5d96164fef0f8984fa1a505e92",
+            "bytes": 8952,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/browser-report-autonomous.json"
+          },
+          "contract-validation.json": {
+            "sha256": "7d469a6c29007e4075bf6d4a81895fcc7e788062c0d2065bb3cd220059b78570",
+            "bytes": 421,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/contract-validation.json"
+          },
+          "coverage-final.md": {
+            "sha256": "35214f790b8711f0dd7e4b108075baf99f4b5715729c5b0c7d018c374bd9c055",
+            "bytes": 6920,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/coverage-final.md"
+          },
+          "images-provenance.json": {
+            "sha256": "234f419de912b8d40707581d85357f67a1191fca2af5a6e4838f3a3245592ae5",
+            "bytes": 1692,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/images-provenance.json"
+          },
+          "lesson-manifest.json": {
+            "sha256": "00fabb7f0ea9f7d68ca3eacb3321f4fd98a670c3b50c2a340038437411dc4a9b",
+            "bytes": 51497,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/lesson-manifest.json"
+          },
+          "matrix-20.json": {
+            "sha256": "7f1399b33ff57d541a0394563167a4cec003c00036bdbb92f59c1fb8c0c51773",
+            "bytes": 8672,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/matrix-20.json"
+          },
+          "monograph-14.json": {
+            "sha256": "ade6b8a6bc08b2b2172943b79d5771d91c8ff6d58aabd5049c063a5f3beb9e6d",
+            "bytes": 8117,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/monograph-14.json"
+          },
+          "production.json": {
+            "sha256": "9aff6dfc6194477b94f1d947be48410d61dfd22c4d531ce45d1dacfe822d9c8d",
+            "bytes": 1531,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/production.json"
+          },
+          "recherche_D65/additional-research.json": {
+            "sha256": "d3c7069f9eeaace98ea49230822897eb47df7be4d5ee496b2388dd40fc7bdce3",
+            "bytes": 762,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/recherche_D65/additional-research.json"
+          },
+          "recherche_D65/plan.json": {
+            "sha256": "e80b0e979e630488e66ff1b6d0820122bf115819617980bac16bcb5f0ae7cf92",
+            "bytes": 11638,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/recherche_D65/plan.json"
+          },
+          "recherche_D65/recherche.md": {
+            "sha256": "1012ba69ec64992c1abfa349b91e2f776a8e63223941ccc4199e1217fa688bd6",
+            "bytes": 21840,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/recherche_D65/recherche.md"
+          },
+          "recherche_D65/sources.json": {
+            "sha256": "688f1b8a226970341ddbdf15832f9154a5255a501bf45d9a7db8d92faadd56ae",
+            "bytes": 35255,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/recherche_D65/sources.json"
+          },
+          "research-entry.json": {
+            "sha256": "6df297b5c01f792ade9fe36d2dc4a5e7232798611f5ac04653b28070b034af29",
+            "bytes": 553,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/research-entry.json"
+          },
+          "review-package/lesson-manifest.json": {
+            "sha256": "00fabb7f0ea9f7d68ca3eacb3321f4fd98a670c3b50c2a340038437411dc4a9b",
+            "bytes": 51497,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/review-package/lesson-manifest.json"
+          },
+          "review-package/self-review.json": {
+            "sha256": "d00047602e3786c0d5567c0b06bc1dd7a330f4fcf0b520c266352f3a0db796a4",
+            "bytes": 9748,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/review-package/self-review.json"
+          },
+          "review-package/targeted-review-sol-endocrinologie.json": {
+            "sha256": "9325d866b8cff5da8e0e52481ca54ea48f9b1c993abeb4973ef94ae9d033ea52",
+            "bytes": 2421,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/review-package/targeted-review-sol-endocrinologie.json"
+          },
+          "sciences-final.json": {
+            "sha256": "e2727575dfb2bdb7fe0a668f02b801914116a3ffecddd8c8718ea3061f9b9549",
+            "bytes": 1328,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/sciences-final.json"
+          },
+          "semiology-final.json": {
+            "sha256": "21793a616fd10b3f2a7d197fc6542deddd188505acc29a55ed0f687742a68489",
+            "bytes": 1024,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/semiology-final.json"
+          },
+          "source-binding.json": {
+            "sha256": "464e52b0a405faf05e1bbc7dc1713acb9321502f4c409f11329eaee3ef8b5e9d",
+            "bytes": 1858,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/source-binding.json"
+          },
+          "verification-attempts/before-caption-legibility/browser-report-autonomous.json": {
+            "sha256": "36cb7df32e2e17fe7e85ea9c7955342e9306f8db61f5b79251ef0869e573927a",
+            "bytes": 8754,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/before-caption-legibility/browser-report-autonomous.json"
+          },
+          "verification-attempts/before-caption-legibility/sciences-final.json": {
+            "sha256": "42f9a57b05c4c3119fe00203fabb8cadae42b4de993faa371d26afd7b27a6565",
+            "bytes": 1328,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/before-caption-legibility/sciences-final.json"
+          },
+          "verification-attempts/before-caption-legibility/semiology-final.json": {
+            "sha256": "d37cad844fde602ea82b2a4ea30bc8c4d0deaaa01da78f9a733d09d1bcdadd7f",
+            "bytes": 1024,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/before-caption-legibility/semiology-final.json"
+          },
+          "verification-attempts/before-caption-legibility/verification.json": {
+            "sha256": "a7c23a753c34cbe62cde597d1882fac4431e6b66ea4295a59f99350c4cbd836d",
+            "bytes": 2428,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/before-caption-legibility/verification.json"
+          },
+          "verification-attempts/before-caption-legibility/visual-finding.json": {
+            "sha256": "f348169f4e14aa21dd4a4e35a16b24d0b06e8b4088712cf7ad17d5f7eb00bd15",
+            "bytes": 458,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/before-caption-legibility/visual-finding.json"
+          },
+          "verification-attempts/before-final-civd-spacing/verification.json": {
+            "sha256": "a18c12b6d7de35cc69d65a15f250abea7fcbb95abcbc3c49a7d9cf0f32811958",
+            "bytes": 284,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/before-final-civd-spacing/verification.json"
+          },
+          "verification-attempts/before-punctuation-spacing/browser-report-autonomous.json": {
+            "sha256": "200246f00d8efb884ac191b866360d51e1819f096b70800955fb392931c88d99",
+            "bytes": 8952,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/before-punctuation-spacing/browser-report-autonomous.json"
+          },
+          "verification-attempts/before-punctuation-spacing/semiology-final.json": {
+            "sha256": "297a0415032613d5b2ff03e8509c7e359276e4716b45ffbc352e589ec7172434",
+            "bytes": 1024,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/before-punctuation-spacing/semiology-final.json"
+          },
+          "verification-attempts/before-punctuation-spacing/verification.json": {
+            "sha256": "0ca6bf77a52bcd110e3ae550a763b2795bacb6801bfb5d1f98c3f8b490a32b67",
+            "bytes": 2428,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/before-punctuation-spacing/verification.json"
+          },
+          "verification-attempts/initial-static/source-sha256.json": {
+            "sha256": "eaebd96145ccf4e1b5f76feb8784b84bdde23543e970125e41356b461f453c1b",
+            "bytes": 591,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/initial-static/source-sha256.json"
+          },
+          "verification-attempts/initial-static/verification.json": {
+            "sha256": "b3c0ecd1e1e3d2ee613bb2d80383b398f3a3130f381388dd6ae07c086233d73f",
+            "bytes": 284,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/initial-static/verification.json"
+          },
+          "verification-attempts/inline-style-rejected/verification.json": {
+            "sha256": "ffb4075604857e341010eef3903c863682bbde8f603dfc79bdca54875b906997",
+            "bytes": 284,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/inline-style-rejected/verification.json"
+          },
+          "verification.json": {
+            "sha256": "96f16040183b5c2e1e171cb192cc713fa5de1cfcae188cc3c6dcee141ebe76a8",
+            "bytes": 2428,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification.json"
+          },
+          "visual-hash-comparison.json": {
+            "sha256": "d2acd2662872e8d50bd7f8cc2e8ec96e4c524e9e05ece28e5c6b882887751fd0",
+            "bytes": 1907,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/visual-hash-comparison.json"
+          },
+          "visual-inspection.json": {
+            "sha256": "e411c4e4cf629ef38e642ab197005d3f0cb8ebcb8b0c824ca33602ac7765829a",
+            "bytes": 3658,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/visual-inspection.json"
+          }
+        },
+        "binding_checks": [
+          {
+            "path": "chapters/D65/D65_a.html",
+            "expected": "41c954aa2bf2d7122c002879dcff0cee4829cd3ee1c6f11d1ab6147849c3055f",
+            "actual": "41c954aa2bf2d7122c002879dcff0cee4829cd3ee1c6f11d1ab6147849c3055f",
+            "ok": true
+          },
+          {
+            "path": "chapters/D65/D65_b.html",
+            "expected": "722cde0804afa1dc7801f5160812914ddf4bba64b076e109b8038bbb7c8f2258",
+            "actual": "722cde0804afa1dc7801f5160812914ddf4bba64b076e109b8038bbb7c8f2258",
+            "ok": true
+          },
+          {
+            "path": "chapters/D65/D65_c.html",
+            "expected": "0450ed9b3ce81d076b2a4fdb86ab2b9c960f1d1caf78dbfe804bbb8b2ca0bfab",
+            "actual": "0450ed9b3ce81d076b2a4fdb86ab2b9c960f1d1caf78dbfe804bbb8b2ca0bfab",
+            "ok": true
+          },
+          {
+            "path": "chapters/D65/D65_d.html",
+            "expected": "352b40bfe0fb942bec1ece7eac422b771f40df524072c15daeb73fa14d4e8c8c",
+            "actual": "352b40bfe0fb942bec1ece7eac422b771f40df524072c15daeb73fa14d4e8c8c",
+            "ok": true
+          },
+          {
+            "path": "chapters/D65/D65_pop1.html",
+            "expected": "19a9294af3d136f8e1654dbf5fe12eb667b7d7c74a1aa903f5c2bcb247095e24",
+            "actual": "19a9294af3d136f8e1654dbf5fe12eb667b7d7c74a1aa903f5c2bcb247095e24",
+            "ok": true
+          },
+          {
+            "path": "chapters/D65/D65_pop2.html",
+            "expected": "0eaab9bd69c91815fe1db12c4361cf2d3d90543e8a93c7e2cc4f3d1bf95e98d4",
+            "actual": "0eaab9bd69c91815fe1db12c4361cf2d3d90543e8a93c7e2cc4f3d1bf95e98d4",
+            "ok": true
+          },
+          {
+            "path": "glossary/d65.py",
+            "expected": "279b4c455d355d3c97dcfee0a2cf54549a15743e5c6dda1c981e44783c8472d6",
+            "actual": "279b4c455d355d3c97dcfee0a2cf54549a15743e5c6dda1c981e44783c8472d6",
+            "ok": true
+          },
+          {
+            "path": "assets/img/d65/alpha/codex/ATTRIBUTION.md",
+            "expected": "a338f71987bf2b68c1a502339d2f01f6223f15cd87e54a8f72a1a254391aa1a4",
+            "actual": "a338f71987bf2b68c1a502339d2f01f6223f15cd87e54a8f72a1a254391aa1a4",
+            "ok": true
+          },
+          {
+            "path": "assets/img/d65/alpha/codex/normal-peripheral-blood.jpg",
+            "expected": "ab1c9c901f485af3b8d41ea5d42ff8fa3849f60e0bc738d5c5d4fa171e2a52c9",
+            "actual": "ab1c9c901f485af3b8d41ea5d42ff8fa3849f60e0bc738d5c5d4fa171e2a52c9",
+            "ok": true
+          },
+          {
+            "path": "assets/img/d65/alpha/codex/platelets-rbc-wellcome.jpg",
+            "expected": "d46e39a8369ddf65e8cb3339e8a571510be6219b7a7d678f13bc3a4671ce22cd",
+            "actual": "d46e39a8369ddf65e8cb3339e8a571510be6219b7a7d678f13bc3a4671ce22cd",
+            "ok": true
+          },
+          {
+            "path": "assets/img/d65/alpha/codex/provenance.json",
+            "expected": "b91f7903d140ee1a88d4b2269023036b8dcc439dddb58a1731971f2454c65fd0",
+            "actual": "b91f7903d140ee1a88d4b2269023036b8dcc439dddb58a1731971f2454c65fd0",
+            "ok": true
+          }
+        ],
+        "errors": [],
+        "file_count": 186,
+        "preview": {
+          "sha256": "9eacd5ea5df8916601a2e4dda3c73a7b39372336317663082fd77e90784dee1f",
+          "bytes": 11382285,
+          "url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/D65-apercu-autonome.html",
+          "proof_url": "https://github.com/vialdjoukang-spec/Medina/blob/8d43afa0985656affe379781c2ad7914994ee98f/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/D65-apercu-autonome.html"
+        },
+        "binding_preview_matches": true,
+        "local_evidence_folder": "lessons/D65-8d43afa098"
+      },
+      "monograph_points": 14,
+      "matrix_rubrics": 20,
+      "source_entries": 25,
+      "image_entries": 2,
+      "blocking_findings": [],
+      "limitations": [
+        {
+          "id": "D65-L1",
+          "text": "Quatre revues obligatoires effectuées en self_review par le parent ; une revue distincte IA limitée à quatre questions est conservée séparément. Aucune validation humaine.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L2",
+          "text": "Incidence nationaleD65, fréquences des symptômes et performances isolées non établies par la recherche ; lacunes explicites, sans extrapolation de cohortes.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L3",
+          "text": "ScoreISTH2025 : diagnostic manifeste avec cause compatible, pas prescription ; SIC réservé au contexte septique, pas score universel précoce.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L4",
+          "text": "FIHaemocomplettanavril2026 et cibles obstétricales ne formulent pas le même objectif ; divergence explicitée, décision spécialisée et protocole local.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L5",
+          "text": "Kybernin : indication héréditaire de laFI lue, sans transposition automatique à laCIVD acquise ; absence de médicament universel démontré.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L6",
+          "text": "HNF : indicationFI et exception à la contre-indication hémorragique ne constituent pas un protocole curatif universel ; thromboprophylaxie et traitement séparés.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L7",
+          "text": "TXA : majorité desCIVD exclue, exception spécialisée d’hyperfibrinolyse prédominante avec saignement sévère ; voieIVexclusive, débit et contre-indications conservés.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L8",
+          "text": "Trauma, obstétrique etAPL ont des objectifs distincts ; pas de protocole pédiatrique exhaustif ni de doseATRA/antibiotique improvisée.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L9",
+          "text": "Deux photographies de structures sanguines, pas images diagnostiques deCIVD. Statut clinique des sujets non établi par les notices ; pixels intacts et repères français adjacents.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L10",
+          "text": "Sept schémas causaux non anatomiques sourcés ; aucune anatomie dessinée parIA.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L11",
+          "text": "Tab/Entrée fonctionne ; navigation par flèches absente du moteur hérité. Les barres fixes peuvent recouvrir une partie des captures mobiles longues, surtout enLivre24.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L12",
+          "text": "PROFILES88/152/174 vérifiés dans les passages2017 ; compteurs globaux du frontend hérité ne constituent pas des statistiques de cette campagne.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L13",
+          "text": "Aperçu testé parHTTP intercepté sans accès externe ; aucun déploiement ni testfile:// revendiqué.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L14",
+          "text": "Délais de conduite, Suva et garanties de remboursement spécifiquesD65 non établis ; revue utilisateur avant toutePR/main. Tokens et coûts non mesurés.",
+          "blocking": false
+        }
+      ],
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "posterior_structural_inspection": {
+        "code": "D65",
+        "sha": "8d43afa0985656affe379781c2ad7914994ee98f",
+        "checks": {
+          "six_science_tabs": true,
+          "first_selected_semio": true,
+          "semio_panel_label_and_visible": true,
+          "first_unit_exact_h3": true,
+          "nine_named_sections": true,
+          "linked_sources_in_semio": true,
+          "clinical_semio_marker": true
+        },
+        "passed": true,
+        "findings": [],
+        "native_parser": true,
+        "source_hashes": {
+          "chapters/D65/D65_a.html": "41c954aa2bf2d7122c002879dcff0cee4829cd3ee1c6f11d1ab6147849c3055f",
+          "chapters/D65/D65_b.html": "722cde0804afa1dc7801f5160812914ddf4bba64b076e109b8038bbb7c8f2258",
+          "chapters/D65/D65_c.html": "0450ed9b3ce81d076b2a4fdb86ab2b9c960f1d1caf78dbfe804bbb8b2ca0bfab",
+          "chapters/D65/D65_d.html": "352b40bfe0fb942bec1ece7eac422b771f40df524072c15daeb73fa14d4e8c8c"
+        },
+        "scope": "Sept contrôles statiques ciblés issus de starter_codex.py ; pas exécution complète de Starter, ni revue médicale."
+      }
+    },
+    {
+      "code": "D65",
+      "title": "Coagulation intravasculaire disséminée [syndrome de défibrination]",
+      "completion": {
+        "agent": "codex_hematologie",
+        "code": "D65",
+        "at": "2026-11-02T17:46:39+00:00",
+        "branch": "codex/alpha77/d65-integrate-g1",
+        "worktree": "/workspace/Medina-hematologie-D65",
+        "folder": "/workspace/Medina-hematologie-D65/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE",
+        "manifest_sha256": "00fabb7f0ea9f7d68ca3eacb3321f4fd98a670c3b50c2a340038437411dc4a9b",
+        "source_binding_sha256": "464e52b0a405faf05e1bbc7dc1713acb9321502f4c409f11329eaee3ef8b5e9d",
+        "review_modes": {
+          "medical": "self_review",
+          "language": "self_review",
+          "visual_desktop": "self_review",
+          "visual_mobile": "self_review"
+        },
+        "clinical_certification": false,
+        "publication_allowed": false,
+        "preview_sha256": "9eacd5ea5df8916601a2e4dda3c73a7b39372336317663082fd77e90784dee1f",
+        "semiology_contract": {
+          "code": "D65",
+          "observed_at": "2026-11-02T17:46:39+00:00",
+          "passed": true,
+          "checks": {
+            "six_science_tabs": true,
+            "first_selected_semio": true,
+            "semio_panel_label_and_visible": true,
+            "first_unit_exact_h3": true,
+            "nine_named_sections": true,
+            "linked_sources_in_semio": true,
+            "clinical_semio_marker": true
+          },
+          "findings": [],
+          "source_hashes": {
+            "chapters/D65/D65_a.html": "41c954aa2bf2d7122c002879dcff0cee4829cd3ee1c6f11d1ab6147849c3055f",
+            "chapters/D65/D65_b.html": "722cde0804afa1dc7801f5160812914ddf4bba64b076e109b8038bbb7c8f2258",
+            "chapters/D65/D65_c.html": "0450ed9b3ce81d076b2a4fdb86ab2b9c960f1d1caf78dbfe804bbb8b2ca0bfab",
+            "chapters/D65/D65_d.html": "352b40bfe0fb942bec1ece7eac422b771f40df524072c15daeb73fa14d4e8c8c"
+          },
+          "clinical_certification": false,
+          "author_activity_refreshed": false,
+          "source_bindings_refreshed": false,
+          "scope": "Sept règles structurelles starter_codex.py240–267 ; aucun audit médical ni exécution intégrale de Starter."
+        }
+      },
+      "version": {
+        "code": "D65",
+        "branch": "codex/alpha77/d65-integrate-g1",
+        "version_sha": "42a4071b02716f9524fb34fde41b8d7dbf14f9f5",
+        "remote_head": "42a4071b02716f9524fb34fde41b8d7dbf14f9f5",
+        "remote_branch_exists": true,
+        "version_is_remote_head": true,
+        "evidence": {
+          "README-livraison.md": {
+            "sha256": "8a167a601c5fd77941d488821b8445cb66a341a5c8aebee5c09f430c819a9b44",
+            "bytes": 2283,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/README-livraison.md"
+          },
+          "book24-check.json": {
+            "sha256": "06dfd4317d5497f827765dbd9ded3ad19d928122266a691297abb9b8d109d79c",
+            "bytes": 444,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/book24-check.json"
+          },
+          "browser-report-autonomous.json": {
+            "sha256": "72a83cdeb414d58d756e2f2c318c2352b0dcbe5d96164fef0f8984fa1a505e92",
+            "bytes": 8952,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/browser-report-autonomous.json"
+          },
+          "contract-validation.json": {
+            "sha256": "7d469a6c29007e4075bf6d4a81895fcc7e788062c0d2065bb3cd220059b78570",
+            "bytes": 421,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/contract-validation.json"
+          },
+          "coverage-final.md": {
+            "sha256": "35214f790b8711f0dd7e4b108075baf99f4b5715729c5b0c7d018c374bd9c055",
+            "bytes": 6920,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/coverage-final.md"
+          },
+          "harness-completion.json": {
+            "sha256": "705b725b790c17c04f7525ae1df41799fa465b1a2f7e58e4d9dd92e78e76347a",
+            "bytes": 1893,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/harness-completion.json"
+          },
+          "images-provenance.json": {
+            "sha256": "234f419de912b8d40707581d85357f67a1191fca2af5a6e4838f3a3245592ae5",
+            "bytes": 1692,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/images-provenance.json"
+          },
+          "lesson-manifest.json": {
+            "sha256": "00fabb7f0ea9f7d68ca3eacb3321f4fd98a670c3b50c2a340038437411dc4a9b",
+            "bytes": 51497,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/lesson-manifest.json"
+          },
+          "matrix-20.json": {
+            "sha256": "7f1399b33ff57d541a0394563167a4cec003c00036bdbb92f59c1fb8c0c51773",
+            "bytes": 8672,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/matrix-20.json"
+          },
+          "monograph-14.json": {
+            "sha256": "ade6b8a6bc08b2b2172943b79d5771d91c8ff6d58aabd5049c063a5f3beb9e6d",
+            "bytes": 8117,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/monograph-14.json"
+          },
+          "production.json": {
+            "sha256": "9aff6dfc6194477b94f1d947be48410d61dfd22c4d531ce45d1dacfe822d9c8d",
+            "bytes": 1531,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/production.json"
+          },
+          "recherche_D65/additional-research.json": {
+            "sha256": "d3c7069f9eeaace98ea49230822897eb47df7be4d5ee496b2388dd40fc7bdce3",
+            "bytes": 762,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/recherche_D65/additional-research.json"
+          },
+          "recherche_D65/plan.json": {
+            "sha256": "e80b0e979e630488e66ff1b6d0820122bf115819617980bac16bcb5f0ae7cf92",
+            "bytes": 11638,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/recherche_D65/plan.json"
+          },
+          "recherche_D65/recherche.md": {
+            "sha256": "1012ba69ec64992c1abfa349b91e2f776a8e63223941ccc4199e1217fa688bd6",
+            "bytes": 21840,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/recherche_D65/recherche.md"
+          },
+          "recherche_D65/sources.json": {
+            "sha256": "688f1b8a226970341ddbdf15832f9154a5255a501bf45d9a7db8d92faadd56ae",
+            "bytes": 35255,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/recherche_D65/sources.json"
+          },
+          "research-entry.json": {
+            "sha256": "6df297b5c01f792ade9fe36d2dc4a5e7232798611f5ac04653b28070b034af29",
+            "bytes": 553,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/research-entry.json"
+          },
+          "review-package/lesson-manifest.json": {
+            "sha256": "00fabb7f0ea9f7d68ca3eacb3321f4fd98a670c3b50c2a340038437411dc4a9b",
+            "bytes": 51497,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/review-package/lesson-manifest.json"
+          },
+          "review-package/self-review.json": {
+            "sha256": "d00047602e3786c0d5567c0b06bc1dd7a330f4fcf0b520c266352f3a0db796a4",
+            "bytes": 9748,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/review-package/self-review.json"
+          },
+          "review-package/targeted-review-sol-endocrinologie.json": {
+            "sha256": "9325d866b8cff5da8e0e52481ca54ea48f9b1c993abeb4973ef94ae9d033ea52",
+            "bytes": 2421,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/review-package/targeted-review-sol-endocrinologie.json"
+          },
+          "sciences-final.json": {
+            "sha256": "e2727575dfb2bdb7fe0a668f02b801914116a3ffecddd8c8718ea3061f9b9549",
+            "bytes": 1328,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/sciences-final.json"
+          },
+          "semiology-final.json": {
+            "sha256": "21793a616fd10b3f2a7d197fc6542deddd188505acc29a55ed0f687742a68489",
+            "bytes": 1024,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/semiology-final.json"
+          },
+          "source-binding.json": {
+            "sha256": "464e52b0a405faf05e1bbc7dc1713acb9321502f4c409f11329eaee3ef8b5e9d",
+            "bytes": 1858,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/source-binding.json"
+          },
+          "verification-attempts/before-caption-legibility/browser-report-autonomous.json": {
+            "sha256": "36cb7df32e2e17fe7e85ea9c7955342e9306f8db61f5b79251ef0869e573927a",
+            "bytes": 8754,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/before-caption-legibility/browser-report-autonomous.json"
+          },
+          "verification-attempts/before-caption-legibility/sciences-final.json": {
+            "sha256": "42f9a57b05c4c3119fe00203fabb8cadae42b4de993faa371d26afd7b27a6565",
+            "bytes": 1328,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/before-caption-legibility/sciences-final.json"
+          },
+          "verification-attempts/before-caption-legibility/semiology-final.json": {
+            "sha256": "d37cad844fde602ea82b2a4ea30bc8c4d0deaaa01da78f9a733d09d1bcdadd7f",
+            "bytes": 1024,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/before-caption-legibility/semiology-final.json"
+          },
+          "verification-attempts/before-caption-legibility/verification.json": {
+            "sha256": "a7c23a753c34cbe62cde597d1882fac4431e6b66ea4295a59f99350c4cbd836d",
+            "bytes": 2428,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/before-caption-legibility/verification.json"
+          },
+          "verification-attempts/before-caption-legibility/visual-finding.json": {
+            "sha256": "f348169f4e14aa21dd4a4e35a16b24d0b06e8b4088712cf7ad17d5f7eb00bd15",
+            "bytes": 458,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/before-caption-legibility/visual-finding.json"
+          },
+          "verification-attempts/before-final-civd-spacing/verification.json": {
+            "sha256": "a18c12b6d7de35cc69d65a15f250abea7fcbb95abcbc3c49a7d9cf0f32811958",
+            "bytes": 284,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/before-final-civd-spacing/verification.json"
+          },
+          "verification-attempts/before-punctuation-spacing/browser-report-autonomous.json": {
+            "sha256": "200246f00d8efb884ac191b866360d51e1819f096b70800955fb392931c88d99",
+            "bytes": 8952,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/before-punctuation-spacing/browser-report-autonomous.json"
+          },
+          "verification-attempts/before-punctuation-spacing/semiology-final.json": {
+            "sha256": "297a0415032613d5b2ff03e8509c7e359276e4716b45ffbc352e589ec7172434",
+            "bytes": 1024,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/before-punctuation-spacing/semiology-final.json"
+          },
+          "verification-attempts/before-punctuation-spacing/verification.json": {
+            "sha256": "0ca6bf77a52bcd110e3ae550a763b2795bacb6801bfb5d1f98c3f8b490a32b67",
+            "bytes": 2428,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/before-punctuation-spacing/verification.json"
+          },
+          "verification-attempts/initial-static/source-sha256.json": {
+            "sha256": "eaebd96145ccf4e1b5f76feb8784b84bdde23543e970125e41356b461f453c1b",
+            "bytes": 591,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/initial-static/source-sha256.json"
+          },
+          "verification-attempts/initial-static/verification.json": {
+            "sha256": "b3c0ecd1e1e3d2ee613bb2d80383b398f3a3130f381388dd6ae07c086233d73f",
+            "bytes": 284,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/initial-static/verification.json"
+          },
+          "verification-attempts/inline-style-rejected/verification.json": {
+            "sha256": "ffb4075604857e341010eef3903c863682bbde8f603dfc79bdca54875b906997",
+            "bytes": 284,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification-attempts/inline-style-rejected/verification.json"
+          },
+          "verification.json": {
+            "sha256": "96f16040183b5c2e1e171cb192cc713fa5de1cfcae188cc3c6dcee141ebe76a8",
+            "bytes": 2428,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/verification.json"
+          },
+          "visual-hash-comparison.json": {
+            "sha256": "d2acd2662872e8d50bd7f8cc2e8ec96e4c524e9e05ece28e5c6b882887751fd0",
+            "bytes": 1907,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/visual-hash-comparison.json"
+          },
+          "visual-inspection.json": {
+            "sha256": "e411c4e4cf629ef38e642ab197005d3f0cb8ebcb8b0c824ca33602ac7765829a",
+            "bytes": 3658,
+            "url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/visual-inspection.json"
+          }
+        },
+        "binding_checks": [
+          {
+            "path": "chapters/D65/D65_a.html",
+            "expected": "41c954aa2bf2d7122c002879dcff0cee4829cd3ee1c6f11d1ab6147849c3055f",
+            "actual": "41c954aa2bf2d7122c002879dcff0cee4829cd3ee1c6f11d1ab6147849c3055f",
+            "ok": true
+          },
+          {
+            "path": "chapters/D65/D65_b.html",
+            "expected": "722cde0804afa1dc7801f5160812914ddf4bba64b076e109b8038bbb7c8f2258",
+            "actual": "722cde0804afa1dc7801f5160812914ddf4bba64b076e109b8038bbb7c8f2258",
+            "ok": true
+          },
+          {
+            "path": "chapters/D65/D65_c.html",
+            "expected": "0450ed9b3ce81d076b2a4fdb86ab2b9c960f1d1caf78dbfe804bbb8b2ca0bfab",
+            "actual": "0450ed9b3ce81d076b2a4fdb86ab2b9c960f1d1caf78dbfe804bbb8b2ca0bfab",
+            "ok": true
+          },
+          {
+            "path": "chapters/D65/D65_d.html",
+            "expected": "352b40bfe0fb942bec1ece7eac422b771f40df524072c15daeb73fa14d4e8c8c",
+            "actual": "352b40bfe0fb942bec1ece7eac422b771f40df524072c15daeb73fa14d4e8c8c",
+            "ok": true
+          },
+          {
+            "path": "chapters/D65/D65_pop1.html",
+            "expected": "19a9294af3d136f8e1654dbf5fe12eb667b7d7c74a1aa903f5c2bcb247095e24",
+            "actual": "19a9294af3d136f8e1654dbf5fe12eb667b7d7c74a1aa903f5c2bcb247095e24",
+            "ok": true
+          },
+          {
+            "path": "chapters/D65/D65_pop2.html",
+            "expected": "0eaab9bd69c91815fe1db12c4361cf2d3d90543e8a93c7e2cc4f3d1bf95e98d4",
+            "actual": "0eaab9bd69c91815fe1db12c4361cf2d3d90543e8a93c7e2cc4f3d1bf95e98d4",
+            "ok": true
+          },
+          {
+            "path": "glossary/d65.py",
+            "expected": "279b4c455d355d3c97dcfee0a2cf54549a15743e5c6dda1c981e44783c8472d6",
+            "actual": "279b4c455d355d3c97dcfee0a2cf54549a15743e5c6dda1c981e44783c8472d6",
+            "ok": true
+          },
+          {
+            "path": "assets/img/d65/alpha/codex/ATTRIBUTION.md",
+            "expected": "a338f71987bf2b68c1a502339d2f01f6223f15cd87e54a8f72a1a254391aa1a4",
+            "actual": "a338f71987bf2b68c1a502339d2f01f6223f15cd87e54a8f72a1a254391aa1a4",
+            "ok": true
+          },
+          {
+            "path": "assets/img/d65/alpha/codex/normal-peripheral-blood.jpg",
+            "expected": "ab1c9c901f485af3b8d41ea5d42ff8fa3849f60e0bc738d5c5d4fa171e2a52c9",
+            "actual": "ab1c9c901f485af3b8d41ea5d42ff8fa3849f60e0bc738d5c5d4fa171e2a52c9",
+            "ok": true
+          },
+          {
+            "path": "assets/img/d65/alpha/codex/platelets-rbc-wellcome.jpg",
+            "expected": "d46e39a8369ddf65e8cb3339e8a571510be6219b7a7d678f13bc3a4671ce22cd",
+            "actual": "d46e39a8369ddf65e8cb3339e8a571510be6219b7a7d678f13bc3a4671ce22cd",
+            "ok": true
+          },
+          {
+            "path": "assets/img/d65/alpha/codex/provenance.json",
+            "expected": "b91f7903d140ee1a88d4b2269023036b8dcc439dddb58a1731971f2454c65fd0",
+            "actual": "b91f7903d140ee1a88d4b2269023036b8dcc439dddb58a1731971f2454c65fd0",
+            "ok": true
+          }
+        ],
+        "errors": [],
+        "file_count": 187,
+        "preview": {
+          "sha256": "9eacd5ea5df8916601a2e4dda3c73a7b39372336317663082fd77e90784dee1f",
+          "bytes": 11382285,
+          "url": "https://raw.githubusercontent.com/vialdjoukang-spec/Medina/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/D65-apercu-autonome.html",
+          "proof_url": "https://github.com/vialdjoukang-spec/Medina/blob/42a4071b02716f9524fb34fde41b8d7dbf14f9f5/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-D65-INTEGRATE/D65-apercu-autonome.html"
+        },
+        "binding_preview_matches": true,
+        "local_evidence_folder": "lessons/D65-42a4071b02"
+      },
+      "monograph_points": 14,
+      "matrix_rubrics": 20,
+      "source_entries": 25,
+      "image_entries": 2,
+      "blocking_findings": [],
+      "limitations": [
+        {
+          "id": "D65-L1",
+          "text": "Quatre revues obligatoires effectuées en self_review par le parent ; une revue distincte IA limitée à quatre questions est conservée séparément. Aucune validation humaine.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L2",
+          "text": "Incidence nationaleD65, fréquences des symptômes et performances isolées non établies par la recherche ; lacunes explicites, sans extrapolation de cohortes.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L3",
+          "text": "ScoreISTH2025 : diagnostic manifeste avec cause compatible, pas prescription ; SIC réservé au contexte septique, pas score universel précoce.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L4",
+          "text": "FIHaemocomplettanavril2026 et cibles obstétricales ne formulent pas le même objectif ; divergence explicitée, décision spécialisée et protocole local.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L5",
+          "text": "Kybernin : indication héréditaire de laFI lue, sans transposition automatique à laCIVD acquise ; absence de médicament universel démontré.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L6",
+          "text": "HNF : indicationFI et exception à la contre-indication hémorragique ne constituent pas un protocole curatif universel ; thromboprophylaxie et traitement séparés.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L7",
+          "text": "TXA : majorité desCIVD exclue, exception spécialisée d’hyperfibrinolyse prédominante avec saignement sévère ; voieIVexclusive, débit et contre-indications conservés.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L8",
+          "text": "Trauma, obstétrique etAPL ont des objectifs distincts ; pas de protocole pédiatrique exhaustif ni de doseATRA/antibiotique improvisée.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L9",
+          "text": "Deux photographies de structures sanguines, pas images diagnostiques deCIVD. Statut clinique des sujets non établi par les notices ; pixels intacts et repères français adjacents.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L10",
+          "text": "Sept schémas causaux non anatomiques sourcés ; aucune anatomie dessinée parIA.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L11",
+          "text": "Tab/Entrée fonctionne ; navigation par flèches absente du moteur hérité. Les barres fixes peuvent recouvrir une partie des captures mobiles longues, surtout enLivre24.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L12",
+          "text": "PROFILES88/152/174 vérifiés dans les passages2017 ; compteurs globaux du frontend hérité ne constituent pas des statistiques de cette campagne.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L13",
+          "text": "Aperçu testé parHTTP intercepté sans accès externe ; aucun déploiement ni testfile:// revendiqué.",
+          "blocking": false
+        },
+        {
+          "id": "D65-L14",
+          "text": "Délais de conduite, Suva et garanties de remboursement spécifiquesD65 non établis ; revue utilisateur avant toutePR/main. Tokens et coûts non mesurés.",
+          "blocking": false
+        }
+      ],
+      "review_modes": {
+        "medical": "self_review",
+        "language": "self_review",
+        "visual_desktop": "self_review",
+        "visual_mobile": "self_review"
+      },
+      "posterior_structural_inspection": {
+        "code": "D65",
+        "sha": "42a4071b02716f9524fb34fde41b8d7dbf14f9f5",
+        "checks": {
+          "six_science_tabs": true,
+          "first_selected_semio": true,
+          "semio_panel_label_and_visible": true,
+          "first_unit_exact_h3": true,
+          "nine_named_sections": true,
+          "linked_sources_in_semio": true,
+          "clinical_semio_marker": true
+        },
+        "passed": true,
+        "findings": [],
+        "native_parser": true,
+        "source_hashes": {
+          "chapters/D65/D65_a.html": "41c954aa2bf2d7122c002879dcff0cee4829cd3ee1c6f11d1ab6147849c3055f",
+          "chapters/D65/D65_b.html": "722cde0804afa1dc7801f5160812914ddf4bba64b076e109b8038bbb7c8f2258",
+          "chapters/D65/D65_c.html": "0450ed9b3ce81d076b2a4fdb86ab2b9c960f1d1caf78dbfe804bbb8b2ca0bfab",
+          "chapters/D65/D65_d.html": "352b40bfe0fb942bec1ece7eac422b771f40df524072c15daeb73fa14d4e8c8c"
+        },
+        "scope": "Sept contrôles statiques ciblés issus de starter_codex.py ; pas exécution complète de Starter, ni revue médicale."
+      }
+    },
+    {
       "code": "D62",
       "title": "Anémie posthémorragique aiguë",
       "completion": {
@@ -13946,10 +15383,10 @@
       "active_specialty": null,
       "model": "gpt-6.1-sol",
       "reasoning": "high",
-      "lesson": "G22",
+      "lesson": "G32",
       "stage": "recherche",
-      "activity_at": "2026-11-02T17:03:11+00:00",
-      "message": "G22 : neuf entrées de lectures ciblées consignées ; classification, neurosyphilis2026, EASL2025 et FI réellement confrontées. Recherche non close, aucune rédaction canonique ni empreinte.",
+      "activity_at": "2026-11-02T17:38:02+00:00",
+      "message": "G32 :12entrées lues par périmètres(9ciblées,3réutilisationsSol),FIjuillet2025 et NICE/UK confrontés ; réservefréquences/voies, masseacétate et testsfonctionnels, statistiques de séries nonextrapolées. Recherche nonclose,aucune rédaction canonique ni empreinte.",
       "completed_sections": 0,
       "sections_per_hour": 0.0
     },
@@ -13960,26 +15397,26 @@
       "active_specialty": null,
       "model": "gpt-6.1-sol",
       "reasoning": "high",
-      "lesson": "E04",
-      "stage": "termine",
-      "activity_at": "2026-11-02T16:46:19+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
-      "completed_sections": 14,
-      "sections_per_hour": 19.05
+      "lesson": "C73",
+      "stage": "recherche",
+      "activity_at": "2026-11-02T17:49:16+00:00",
+      "message": "Mission réservée; recherche autorisée",
+      "completed_sections": 0,
+      "sections_per_hour": 0.0
     },
     {
       "id": "astra_nephrologie",
       "runtime_name": "/root/sol_nephrologie",
-      "production_name": "Sol-Neurologie-G21",
+      "production_name": "Sol-Neurologie-G24",
       "active_specialty": "mouvements anormaux",
       "model": "gpt-6.1-sol",
       "reasoning": "high",
-      "lesson": "G21",
-      "stage": "termine",
-      "activity_at": "2026-11-02T17:01:56+00:00",
-      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
+      "lesson": "G24",
+      "stage": "verification",
+      "activity_at": "2026-11-02T17:43:31+00:00",
+      "message": "G24 rédaction des six surfaces terminée :14points,20rubriques,41lectures ciblées dont cinq FI thérapeutiques et une causale, six sciences4138mots/neuf sémiologie ; statique66fenêtres/14Pareto/quatre cas/quiz et cinq originaux10occurrences/34repères passé. Début natif S08 et navigateur.",
       "completed_sections": 14,
-      "sections_per_hour": 11.48
+      "sections_per_hour": 21.06
     },
     {
       "id": "codex_hematologie",
@@ -13989,15 +15426,15 @@
       "model": "Codex — modèle de session non modifiable",
       "reasoning": "paramètre de session",
       "lesson": "D65",
-      "stage": "redaction",
-      "activity_at": "2026-11-02T17:05:26+00:00",
-      "message": "D65 : quatorze sections monographiques rédigées, score ISTH2025 et SIC, quatre sous-codes, causes et différences de cibles ; examens, sciences, pharmacologie et fenêtres à produire puis vérifier.",
+      "stage": "termine",
+      "activity_at": "2026-11-02T17:46:39+00:00",
+      "message": "Achèvement de projet documenté; présentation à Vial avant toute PR main.",
       "completed_sections": 14,
-      "sections_per_hour": 65.75
+      "sections_per_hour": 14.84
     }
   ],
   "native_supervision": {
-    "at": "2026-11-02T17:07:44.978437+00:00",
+    "at": "2026-11-02T17:46:56.952792+00:00",
     "provider": "collaboration.list_agents",
     "agents": [
       {
@@ -14018,7 +15455,7 @@
       }
     ],
     "author_activity_refreshed": false,
-    "meaning": "Observation ponctuelle immédiatement avant consignation ; aucune continuité native ni lecture médicale déduite."
+    "meaning": "Observation ponctuelle par collaboration.list_agents immédiatement avant consignation ; aucune continuité native ni lecture médicale déduite."
   },
   "model_handoff": {
     "observed_at": "2026-11-02T10:23:02.648791+00:00",
@@ -14575,6 +16012,133 @@
       "continuity": "Handoff GitHub Actions; delays and service outages remain possible"
     },
     {
+      "observed_at": "2026-11-02T17:01:03.541354+00:00",
+      "snapshot_generated_at": "2026-11-02T16:55:16+00:00",
+      "healthy": false,
+      "problems": [
+        "Activité auteur absente ou ancienne: astra_neurologie"
+      ],
+      "agents_without_recent_activity": [
+        "astra_neurologie"
+      ],
+      "no_agent_restart": true,
+      "no_main_write": true,
+      "clinical_certification": false,
+      "enabled": true,
+      "source_blob_sha": "19dc531f90e444b8323a5cd84dbd588946287e8c",
+      "run_url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41486955067",
+      "interval_seconds": 600,
+      "continuity": "Handoff GitHub Actions; delays and service outages remain possible"
+    },
+    {
+      "at": "2026-11-02T17:11:03+00:00",
+      "successor_requested": true,
+      "response": {
+        "http_status": 204
+      },
+      "ref": "codex/harness-20261102",
+      "interval_seconds": 600,
+      "bootstrap": false
+    },
+    {
+      "observed_at": "2026-11-02T17:10:55.363748+00:00",
+      "snapshot_generated_at": "2026-11-02T17:05:16+00:00",
+      "healthy": false,
+      "problems": [
+        "Activité auteur absente ou ancienne: astra_endocrinologie"
+      ],
+      "agents_without_recent_activity": [
+        "astra_endocrinologie"
+      ],
+      "no_agent_restart": true,
+      "no_main_write": true,
+      "clinical_certification": false,
+      "enabled": true,
+      "source_blob_sha": "84d4e014bca0beba87a4c68548a73d07749fd2b2",
+      "run_url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41488584908",
+      "interval_seconds": 600,
+      "continuity": "Handoff GitHub Actions; delays and service outages remain possible"
+    },
+    {
+      "observed_at": "2026-11-02T17:15:46+00:00",
+      "run_id": "41489409471",
+      "run_url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41489409471",
+      "commit": "392abfb848a99d2c62e4d196d36997e79a70873a",
+      "snapshot_generated_at": "2026-11-02T17:15:16+00:00",
+      "snapshot_stale": false,
+      "agents_without_recent_activity": [
+        "astra_endocrinologie"
+      ],
+      "tests": {
+        "ok": true,
+        "code_sha256": "87d7a45f585a98d6e33dcb0c68d8b88840ab05cd41a3151b7d8235961d9ca9e6",
+        "at": "2026-11-02T17:15:46+00:00",
+        "returncode": 0,
+        "log": "runtime/tests.log"
+      },
+      "no_native_agent_restart": true,
+      "no_main_write": true,
+      "schedule_limit": "Cron natif hors main inactif. Voir monitor.json pour la chaîne indépendante workflow_dispatch et ses preuves; cet événement observe un commit publié."
+    },
+    {
+      "observed_at": "2026-11-02T17:22:03.760368+00:00",
+      "snapshot_generated_at": "2026-11-02T17:15:16+00:00",
+      "healthy": false,
+      "problems": [
+        "Activité auteur absente ou ancienne: astra_endocrinologie"
+      ],
+      "agents_without_recent_activity": [
+        "astra_endocrinologie"
+      ],
+      "no_agent_restart": true,
+      "no_main_write": true,
+      "clinical_certification": false,
+      "enabled": true,
+      "source_blob_sha": "a9859daa5eb2cb5e310d65dbf8bda24a39eb31ae",
+      "run_url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41490400839",
+      "interval_seconds": 600,
+      "continuity": "Handoff GitHub Actions; delays and service outages remain possible"
+    },
+    {
+      "at": "2026-11-02T17:32:05+00:00",
+      "successor_requested": true,
+      "response": {
+        "http_status": 204
+      },
+      "ref": "codex/harness-20261102",
+      "interval_seconds": 600,
+      "bootstrap": false
+    },
+    {
+      "observed_at": "2026-11-02T17:32:32.302034+00:00",
+      "snapshot_generated_at": "2026-11-02T17:25:16+00:00",
+      "healthy": false,
+      "problems": [
+        "Activité auteur absente ou ancienne: astra_endocrinologie"
+      ],
+      "agents_without_recent_activity": [
+        "astra_endocrinologie"
+      ],
+      "no_agent_restart": true,
+      "no_main_write": true,
+      "clinical_certification": false,
+      "enabled": true,
+      "source_blob_sha": "1dbb121b9d7ad97016281dfb9e7d9aba295af9ee",
+      "run_url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41492062724",
+      "interval_seconds": 600,
+      "continuity": "Handoff GitHub Actions; delays and service outages remain possible"
+    },
+    {
+      "at": "2026-11-02T17:42:32+00:00",
+      "successor_requested": true,
+      "response": {
+        "http_status": 204
+      },
+      "ref": "codex/harness-20261102",
+      "interval_seconds": 600,
+      "bootstrap": false
+    },
+    {
       "observed_at": "2026-11-02T12:14:01.439863+00:00",
       "snapshot_generated_at": "2026-11-02T12:05:15+00:00",
       "healthy": false,
@@ -14991,46 +16555,501 @@
   ],
   "artifacts": [
     {
-      "id": 13161019628,
-      "name": "medina-independent-41486955067",
+      "id": 13164394087,
+      "name": "medina-independent-41493698087",
       "expired": false,
-      "created_at": "2026-11-02T17:01:04Z",
-      "size_in_bytes": 343675,
-      "run_id": 41486955067,
+      "created_at": "2026-11-02T17:42:58Z",
+      "size_in_bytes": 360807,
+      "run_id": 41493698087,
       "files": {},
       "download_error": "Téléchargement de l’artefact refusé (HTTP403 observé) ; contenu non consulté, métadonnées seules. Aucune URL signée conservée."
     },
     {
-      "id": 13161256801,
-      "name": "medina-independent-41485315285",
+      "id": 13165445142,
+      "name": "medina-independent-41492062724",
       "expired": false,
-      "created_at": "2026-11-02T16:50:31Z",
-      "size_in_bytes": 339527,
-      "run_id": 41485315285,
+      "created_at": "2026-11-02T17:32:33Z",
+      "size_in_bytes": 354841,
+      "run_id": 41492062724,
       "files": {},
       "download_error": "Téléchargement de l’artefact refusé (HTTP403 observé) ; contenu non consulté, métadonnées seules. Aucune URL signée conservée."
     },
     {
-      "id": 13160807070,
-      "name": "medina-independent-41483428297",
+      "id": 13163243210,
+      "name": "medina-independent-41490400839",
       "expired": false,
-      "created_at": "2026-11-02T16:40:05Z",
-      "size_in_bytes": 336321,
-      "run_id": 41483428297,
+      "created_at": "2026-11-02T17:22:04Z",
+      "size_in_bytes": 353923,
+      "run_id": 41490400839,
       "files": {},
       "download_error": "Téléchargement de l’artefact refusé (HTTP403 observé) ; contenu non consulté, métadonnées seules. Aucune URL signée conservée."
     },
     {
-      "id": 13131467633,
-      "name": "medina-independent-41425068626",
+      "id": 13133947635,
+      "name": "medina-independent-41430780283",
       "expired": false,
-      "created_at": "2026-11-02T09:59:33Z",
-      "size_in_bytes": 212931,
-      "run_id": 41425068626,
+      "created_at": "2026-11-02T10:41:45Z",
+      "size_in_bytes": 217967,
+      "run_id": 41430780283,
       "files": {},
       "download_error": "Téléchargement de l’artefact refusé (HTTP403 observé) ; contenu non consulté, métadonnées seules. Aucune URL signée conservée."
     }
   ],
+  "artifact_connector_access": {
+    "read_at": "2026-11-02T17:48:50.092073+00:00",
+    "artifacts": [
+      {
+        "artifact_id": 13164394087,
+        "run_id": 41493698087,
+        "download_method": "GitHub connector, puis URL de fichier autorisée",
+        "downloaded_at": "2026-11-02T17:48:50.034050+00:00",
+        "zip_sha256": "0c7d9546a482eebabe1e95dedff2396c925c15992819b90aad6be5e669df6b28",
+        "files": {
+          "rapport-08h00.html": {
+            "sha256": "ffefbadaa154cc2acdbca0d02f4c44b0067b42206e9a1d6ac63d520e6dc3ddb0",
+            "bytes": 565055
+          },
+          "remote-dashboard.html": {
+            "sha256": "aa2910cec8d0b59a5827c8fc0ade52a3c26270e7f576169d7ab40559fb7a58f2",
+            "bytes": 565006
+          },
+          "remote-observation.json": {
+            "sha256": "0f1ae336c86c6fb45fb2416c1c3053d6fb65abc43e92ecfdbc4407f1fe6eef22",
+            "bytes": 702
+          },
+          "remote-status.json": {
+            "sha256": "549289cb45cc6bd43c27f0a5d50ca6d8e90e3b63c720d9f4d5e4b62c5b01caec",
+            "bytes": 744660
+          }
+        },
+        "observation": {
+          "observed_at": "2026-11-02T17:42:57.761599+00:00",
+          "snapshot_generated_at": "2026-11-02T17:35:16+00:00",
+          "healthy": false,
+          "problems": [
+            "Activité auteur absente ou ancienne: astra_endocrinologie, codex_hematologie"
+          ],
+          "agents_without_recent_activity": [
+            "astra_endocrinologie",
+            "codex_hematologie"
+          ],
+          "no_agent_restart": true,
+          "no_main_write": true,
+          "clinical_certification": false,
+          "enabled": true,
+          "source_blob_sha": "70129db237ff8712173c5f3ce3c303d9388b9329",
+          "run_url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41493698087",
+          "interval_seconds": 600,
+          "continuity": "Handoff GitHub Actions; delays and service outages remain possible"
+        },
+        "status_generated_at": "2026-11-02T17:35:16+00:00",
+        "completion_count": 38,
+        "previous_cli_download_error": "Téléchargement de l’artefact refusé (HTTP403 observé) ; contenu non consulté, métadonnées seules. Aucune URL signée conservée.",
+        "scope": "JSON lus avec extraction état/activité ; HTML parsés et texte visible ciblé lu, pas certification visuelle de tout le dashboard.",
+        "embedded_html_data_checked": {
+          "remote-dashboard.html": {
+            "generated_at": "2026-11-02T17:35:16+00:00",
+            "report_frozen_at": null,
+            "completed_lessons": 38,
+            "agents": [
+              {
+                "id": "astra_neurologie",
+                "lesson": "G32",
+                "stage": "preparation",
+                "activity_at": "2026-11-02T17:31:22+00:00"
+              },
+              {
+                "id": "astra_endocrinologie",
+                "lesson": "E04",
+                "stage": "termine",
+                "activity_at": "2026-11-02T16:46:19+00:00"
+              },
+              {
+                "id": "astra_nephrologie",
+                "lesson": "G24",
+                "stage": "redaction",
+                "activity_at": "2026-11-02T17:32:48+00:00"
+              },
+              {
+                "id": "codex_hematologie",
+                "lesson": "D65",
+                "stage": "verification",
+                "activity_at": "2026-11-02T17:22:41+00:00"
+              }
+            ]
+          },
+          "rapport-08h00.html": {
+            "generated_at": "2026-11-02T17:35:16+00:00",
+            "report_frozen_at": "2026-11-02T17:42:57+00:00",
+            "completed_lessons": 38,
+            "agents": [
+              {
+                "id": "astra_neurologie",
+                "lesson": "G32",
+                "stage": "preparation",
+                "activity_at": "2026-11-02T17:31:22+00:00"
+              },
+              {
+                "id": "astra_endocrinologie",
+                "lesson": "E04",
+                "stage": "termine",
+                "activity_at": "2026-11-02T16:46:19+00:00"
+              },
+              {
+                "id": "astra_nephrologie",
+                "lesson": "G24",
+                "stage": "redaction",
+                "activity_at": "2026-11-02T17:32:48+00:00"
+              },
+              {
+                "id": "codex_hematologie",
+                "lesson": "D65",
+                "stage": "verification",
+                "activity_at": "2026-11-02T17:22:41+00:00"
+              }
+            ]
+          }
+        },
+        "frozen_report_limit": "Le fichier rapport-08h00 de cet artefact est généré lors de ce run tardif : son nom ne prouve pas un état08h ; voir les deux horodatages réels. Le snapshot08h original de la branche observations reste distinct."
+      },
+      {
+        "artifact_id": 13165445142,
+        "run_id": 41492062724,
+        "download_method": "GitHub connector, puis URL de fichier autorisée",
+        "downloaded_at": "2026-11-02T17:48:50.056289+00:00",
+        "zip_sha256": "6e5b04ffc7328ff702c2343da42cb56d80ef04e779c3f1318450c751689976ea",
+        "files": {
+          "remote-dashboard.html": {
+            "sha256": "ebcc1a396f0177fde44893bc9f0182f464f6723ccc758f01e2bcac434d06c71b",
+            "bytes": 555876
+          },
+          "remote-observation.json": {
+            "sha256": "459041c15bd047b5ed49c059f1c12419a7e603862b23fe02f6b35aeb3c29e975",
+            "bytes": 658
+          },
+          "rapport-08h00.html": {
+            "sha256": "83b24856909c18eac75d4b1f4dd1db018dfa3d0e6041d68d17d21e41fa182267",
+            "bytes": 555925
+          },
+          "remote-status.json": {
+            "sha256": "e06f48f969721cc7eed4cb77e43b7bfbcdf0abfbff37b548fee4a5595b9e58a1",
+            "bytes": 733842
+          }
+        },
+        "observation": {
+          "observed_at": "2026-11-02T17:32:32.302034+00:00",
+          "snapshot_generated_at": "2026-11-02T17:25:16+00:00",
+          "healthy": false,
+          "problems": [
+            "Activité auteur absente ou ancienne: astra_endocrinologie"
+          ],
+          "agents_without_recent_activity": [
+            "astra_endocrinologie"
+          ],
+          "no_agent_restart": true,
+          "no_main_write": true,
+          "clinical_certification": false,
+          "enabled": true,
+          "source_blob_sha": "1dbb121b9d7ad97016281dfb9e7d9aba295af9ee",
+          "run_url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41492062724",
+          "interval_seconds": 600,
+          "continuity": "Handoff GitHub Actions; delays and service outages remain possible"
+        },
+        "status_generated_at": "2026-11-02T17:25:16+00:00",
+        "completion_count": 37,
+        "previous_cli_download_error": "Téléchargement de l’artefact refusé (HTTP403 observé) ; contenu non consulté, métadonnées seules. Aucune URL signée conservée.",
+        "scope": "JSON lus avec extraction état/activité ; HTML parsés et texte visible ciblé lu, pas certification visuelle de tout le dashboard.",
+        "embedded_html_data_checked": {
+          "remote-dashboard.html": {
+            "generated_at": "2026-11-02T17:25:16+00:00",
+            "report_frozen_at": null,
+            "completed_lessons": 37,
+            "agents": [
+              {
+                "id": "astra_neurologie",
+                "lesson": "G22",
+                "stage": "revue_requise",
+                "activity_at": "2026-11-02T17:24:56+00:00"
+              },
+              {
+                "id": "astra_endocrinologie",
+                "lesson": "E04",
+                "stage": "termine",
+                "activity_at": "2026-11-02T16:46:19+00:00"
+              },
+              {
+                "id": "astra_nephrologie",
+                "lesson": "G24",
+                "stage": "recherche",
+                "activity_at": "2026-11-02T17:14:40+00:00"
+              },
+              {
+                "id": "codex_hematologie",
+                "lesson": "D65",
+                "stage": "verification",
+                "activity_at": "2026-11-02T17:22:41+00:00"
+              }
+            ]
+          },
+          "rapport-08h00.html": {
+            "generated_at": "2026-11-02T17:25:16+00:00",
+            "report_frozen_at": "2026-11-02T17:32:32+00:00",
+            "completed_lessons": 37,
+            "agents": [
+              {
+                "id": "astra_neurologie",
+                "lesson": "G22",
+                "stage": "revue_requise",
+                "activity_at": "2026-11-02T17:24:56+00:00"
+              },
+              {
+                "id": "astra_endocrinologie",
+                "lesson": "E04",
+                "stage": "termine",
+                "activity_at": "2026-11-02T16:46:19+00:00"
+              },
+              {
+                "id": "astra_nephrologie",
+                "lesson": "G24",
+                "stage": "recherche",
+                "activity_at": "2026-11-02T17:14:40+00:00"
+              },
+              {
+                "id": "codex_hematologie",
+                "lesson": "D65",
+                "stage": "verification",
+                "activity_at": "2026-11-02T17:22:41+00:00"
+              }
+            ]
+          }
+        },
+        "frozen_report_limit": "Le fichier rapport-08h00 de cet artefact est généré lors de ce run tardif : son nom ne prouve pas un état08h ; voir les deux horodatages réels. Le snapshot08h original de la branche observations reste distinct."
+      },
+      {
+        "artifact_id": 13163243210,
+        "run_id": 41490400839,
+        "download_method": "GitHub connector, puis URL de fichier autorisée",
+        "downloaded_at": "2026-11-02T17:48:50.077327+00:00",
+        "zip_sha256": "00c640926bef843b409e378ccff8e31a4810a2a6b04a00df71b889757b7dfc9b",
+        "files": {
+          "rapport-08h00.html": {
+            "sha256": "b3cfd74fec735fc4a5b74aecdc4df8981f50f681ee86277f9597ca269def6aec",
+            "bytes": 555253
+          },
+          "remote-observation.json": {
+            "sha256": "6a1ec1741a13ec8f6e60f9dc49594a7fc9027b6169f6accb280fbd78ff5b0230",
+            "bytes": 658
+          },
+          "remote-dashboard.html": {
+            "sha256": "cc233011e1b190e2cf8f9a071addb726ef406f7af0ad6820c1996407cc461b4f",
+            "bytes": 555204
+          },
+          "remote-status.json": {
+            "sha256": "15437fd310d6c3f2b89b2b1523b7ff6a489cc833c35fc27dcf8480aabafb585d",
+            "bytes": 733144
+          }
+        },
+        "observation": {
+          "observed_at": "2026-11-02T17:22:03.760368+00:00",
+          "snapshot_generated_at": "2026-11-02T17:15:16+00:00",
+          "healthy": false,
+          "problems": [
+            "Activité auteur absente ou ancienne: astra_endocrinologie"
+          ],
+          "agents_without_recent_activity": [
+            "astra_endocrinologie"
+          ],
+          "no_agent_restart": true,
+          "no_main_write": true,
+          "clinical_certification": false,
+          "enabled": true,
+          "source_blob_sha": "a9859daa5eb2cb5e310d65dbf8bda24a39eb31ae",
+          "run_url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41490400839",
+          "interval_seconds": 600,
+          "continuity": "Handoff GitHub Actions; delays and service outages remain possible"
+        },
+        "status_generated_at": "2026-11-02T17:15:16+00:00",
+        "completion_count": 37,
+        "previous_cli_download_error": "Téléchargement de l’artefact refusé (HTTP403 observé) ; contenu non consulté, métadonnées seules. Aucune URL signée conservée.",
+        "scope": "JSON lus avec extraction état/activité ; HTML parsés et texte visible ciblé lu, pas certification visuelle de tout le dashboard.",
+        "embedded_html_data_checked": {
+          "remote-dashboard.html": {
+            "generated_at": "2026-11-02T17:15:16+00:00",
+            "report_frozen_at": null,
+            "completed_lessons": 37,
+            "agents": [
+              {
+                "id": "astra_neurologie",
+                "lesson": "G22",
+                "stage": "recherche",
+                "activity_at": "2026-11-02T17:03:11+00:00"
+              },
+              {
+                "id": "astra_endocrinologie",
+                "lesson": "E04",
+                "stage": "termine",
+                "activity_at": "2026-11-02T16:46:19+00:00"
+              },
+              {
+                "id": "astra_nephrologie",
+                "lesson": "G24",
+                "stage": "recherche",
+                "activity_at": "2026-11-02T17:14:40+00:00"
+              },
+              {
+                "id": "codex_hematologie",
+                "lesson": "D65",
+                "stage": "redaction",
+                "activity_at": "2026-11-02T17:05:26+00:00"
+              }
+            ]
+          },
+          "rapport-08h00.html": {
+            "generated_at": "2026-11-02T17:15:16+00:00",
+            "report_frozen_at": "2026-11-02T17:22:03+00:00",
+            "completed_lessons": 37,
+            "agents": [
+              {
+                "id": "astra_neurologie",
+                "lesson": "G22",
+                "stage": "recherche",
+                "activity_at": "2026-11-02T17:03:11+00:00"
+              },
+              {
+                "id": "astra_endocrinologie",
+                "lesson": "E04",
+                "stage": "termine",
+                "activity_at": "2026-11-02T16:46:19+00:00"
+              },
+              {
+                "id": "astra_nephrologie",
+                "lesson": "G24",
+                "stage": "recherche",
+                "activity_at": "2026-11-02T17:14:40+00:00"
+              },
+              {
+                "id": "codex_hematologie",
+                "lesson": "D65",
+                "stage": "redaction",
+                "activity_at": "2026-11-02T17:05:26+00:00"
+              }
+            ]
+          }
+        },
+        "frozen_report_limit": "Le fichier rapport-08h00 de cet artefact est généré lors de ce run tardif : son nom ne prouve pas un état08h ; voir les deux horodatages réels. Le snapshot08h original de la branche observations reste distinct."
+      },
+      {
+        "artifact_id": 13133947635,
+        "run_id": 41430780283,
+        "download_method": "GitHub connector, puis URL de fichier autorisée",
+        "downloaded_at": "2026-11-02T17:48:50.091811+00:00",
+        "zip_sha256": "0f1147fcccb925fb980830561f5b8a10f74221ef6f69c3b25cbd459b9bedeac1",
+        "files": {
+          "rapport-08h00.html": {
+            "sha256": "b0e09e54f091c73b18efb379fd2dfafc97c4cac9cd157b67c4e7b4655d09bdad",
+            "bytes": 368128
+          },
+          "remote-dashboard.html": {
+            "sha256": "196190036e7d4d5a65ab33b7a60bd5ce2bc64c5e9adf8a6db2e5ff95a171d9b2",
+            "bytes": 368079
+          },
+          "remote-status.json": {
+            "sha256": "d1dfb014549bde396a75f0df73c9f3d6af17f2e90b212e4fe1a2ce67a25c1db2",
+            "bytes": 501222
+          },
+          "remote-observation.json": {
+            "sha256": "4ee6a39c3cab587a99dfde8f108d3110032f6fe42d17d9e638a14ee388aa8c00",
+            "bytes": 559
+          }
+        },
+        "observation": {
+          "observed_at": "2026-11-02T10:41:44.435950+00:00",
+          "snapshot_generated_at": "2026-11-02T10:40:10+00:00",
+          "healthy": true,
+          "problems": [],
+          "agents_without_recent_activity": [],
+          "no_agent_restart": true,
+          "no_main_write": true,
+          "clinical_certification": false,
+          "enabled": true,
+          "source_blob_sha": "3e0ca22f498b4cef9e761c644fa2484fa2378910",
+          "run_url": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41430780283",
+          "interval_seconds": 600,
+          "continuity": "Handoff GitHub Actions; delays and service outages remain possible"
+        },
+        "status_generated_at": "2026-11-02T10:40:10+00:00",
+        "completion_count": 14,
+        "previous_cli_download_error": "Téléchargement de l’artefact refusé (HTTP403 observé) ; contenu non consulté, métadonnées seules. Aucune URL signée conservée.",
+        "scope": "JSON lus avec extraction état/activité ; HTML parsés et texte visible ciblé lu, pas certification visuelle de tout le dashboard.",
+        "embedded_html_data_checked": {
+          "remote-dashboard.html": {
+            "generated_at": "2026-11-02T10:40:10+00:00",
+            "report_frozen_at": null,
+            "completed_lessons": 14,
+            "agents": [
+              {
+                "id": "astra_neurologie",
+                "lesson": "C70",
+                "stage": "redaction",
+                "activity_at": "2026-11-02T10:36:02+00:00"
+              },
+              {
+                "id": "astra_endocrinologie",
+                "lesson": "E14",
+                "stage": "redaction",
+                "activity_at": "2026-11-02T10:34:38+00:00"
+              },
+              {
+                "id": "astra_nephrologie",
+                "lesson": "N02",
+                "stage": "termine",
+                "activity_at": "2026-11-02T10:36:46+00:00"
+              },
+              {
+                "id": "codex_hematologie",
+                "lesson": "C95",
+                "stage": "verification",
+                "activity_at": "2026-11-02T10:32:48+00:00"
+              }
+            ]
+          },
+          "rapport-08h00.html": {
+            "generated_at": "2026-11-02T10:40:10+00:00",
+            "report_frozen_at": "2026-11-02T10:41:44+00:00",
+            "completed_lessons": 14,
+            "agents": [
+              {
+                "id": "astra_neurologie",
+                "lesson": "C70",
+                "stage": "redaction",
+                "activity_at": "2026-11-02T10:36:02+00:00"
+              },
+              {
+                "id": "astra_endocrinologie",
+                "lesson": "E14",
+                "stage": "redaction",
+                "activity_at": "2026-11-02T10:34:38+00:00"
+              },
+              {
+                "id": "astra_nephrologie",
+                "lesson": "N02",
+                "stage": "termine",
+                "activity_at": "2026-11-02T10:36:46+00:00"
+              },
+              {
+                "id": "codex_hematologie",
+                "lesson": "C95",
+                "stage": "verification",
+                "activity_at": "2026-11-02T10:32:48+00:00"
+              }
+            ]
+          }
+        },
+        "frozen_report_limit": "Le fichier rapport-08h00 de cet artefact est généré lors de ce run tardif : son nom ne prouve pas un état08h ; voir les deux horodatages réels. Le snapshot08h original de la branche observations reste distinct."
+      }
+    ],
+    "prior_failures_preserved": true
+  },
   "harness_tests": {
     "ok": true,
     "code_sha256": "87d7a45f585a98d6e33dcb0c68d8b88840ab05cd41a3151b7d8235961d9ca9e6",
