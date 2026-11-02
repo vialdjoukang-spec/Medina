@@ -1,0 +1,40 @@
+from pathlib import Path
+import re,json
+O=Path(__file__).resolve().parent;R=O.parents[4];changes=[]
+def normalize(t):
+ t=t.replace('SpirigHC','Spirig HC').replace('SuisseSA','Suisse SA').replace('d’aprèsv.Ebner','d’après v. Ebner').replace('deV.Horsley','de V. Horsley').replace('deHis','de His')
+ t=re.sub(r'(?<=\d)(?=(?:ans?|mois|comprimés?|capsules?|jours?|heures?|minutes?|secondes?|semaines?|repas|prises?|fois|visites?|mesures?|U|unités?|semaines?|sites?|séances?|régions?|DL50|kD|kDa|kcal|mg|µm|micromètres?|kg|mL|mmol|mm|cm|g|L|z)\b)',' ',t)
+ t=re.sub(r'\b(OMS|UNICEF|GLIM|ESPEN|OFS|FI|guide|revue|version|tableau|suisse|pédiatrique|Benerva|PHIL|édition|planche|photographie|étude|systématique|de|en|les|des|aux|apporte|contient|dont|pendant|premières|deuxfois|seules|dix|et)(?=\d)',r'\1 ',t)
+ t=re.sub(r'\b(Annexe|annexe|encadrés|encadré|figure|Recommandation|Recommandations|Enfant|enfant|circuit|pédiatriques|plage|phase|propose|copier|distingue|donnent|suspension|MAS|GTIN|comprimés|comprimé|ou|contenant|dès|que|le|maximale|max|maximum|ambulatoire|représente|soit|ClCr|RUTF|proposé|sur|HC|avril|mai|juin|février|BAP|PHEL|LIQ|Parlodel|Symmetrel|Akineton|Madopar|OFS|tableau|GM|p|à)(?=\d)',r'\1 ',t)
+ t=re.sub(r'\b(PB|Estimation|protéines|inclut|Entre|début|Avant|chez|une|pour|puis)(?=\d)',r'\1 ',t)
+ t=re.sub(r'(?<=\d)(?=études\b)',' ',t)
+ t=t.replace('vitamineA','vitamine A').replace('Child-PughC','Child-Pugh C')
+ t=re.sub(r'(20\d{2}),(?=[A-Za-zÀ-ÿ0-9])',r'\1, ',t)
+ t=re.sub(r';(?=[A-Za-zÀ-ÿ0-9])','; ',t)
+ t=re.sub(r'(?<=[A-Za-zÀ-ÿ0-9])([≤≥])',r' \1',t)
+ t=t.replace('vitamineB1','vitamine B1').replace('enmg','en mg')
+ t=re.sub(r'(?<=[A-Za-zÀ-ÿ]),(?=\d)',', ',t)
+ t=t.replace('à++','à ++').replace('de+++','de +++').replace(';+++','; +++')
+ t=t.replace('CC BY-SA3.0','CC BY-SA 3.0')
+ t=t.replace('deuxfois','deux fois').replace('demL','de mL').replace('deμ','de μ')
+ t=re.sub(r'([≤≥=×÷])(?=\d)',r'\1 ',t);t=re.sub(r'(?<=\d)([≤≥=×÷])',r' \1',t)
+ t=re.sub(r'\b(antagonisme|agonisme|blocage|occupation)(?=D2\b)',r'\1 ',t)
+ t=re.sub(r'\b(métabolisme|interactions)(?=CYP3A(?:4)?\b)',r'\1 ',t)
+ t=re.sub(r'\b(labels)(?=SN\b)',r'\1 ',t)
+ t=re.sub(r'\b(catégorie|tout)(?=G24\b)',r'\1 ',t)
+ t=re.sub(r'\b(HUG|DGN|URL|Gray|consensus|coréenne|internationale|Début|Retard|Flacons|flacons|flacon|Initial|Table|chapitre|donne|ensuite|européenne|faible|international|journalier|monogéniques|obtenir|possible|publication|total|ultérieures|EASL|ERN|Toxine|toxine|BOTOX|Xeomin|Dysport|Akineton|Madopar|Paspertin|SNAP|OFS|CIM|ESDE|par|pour|de|dès|avant|après|depuis|entre|tronc|semaine|février|mars|janvier|septembre|juillet|avec|capsule|clairance|dans|est|habituellement|immédiat|injectable|moins|non|plus|rapport|tranche)(?=\d)',r'\1 ',t)
+ t=t.replace('nomMadopar125','nom Madopar 125').replace('24janvier2021','24 janvier 2021').replace('SA4.0','SA 4.0')
+ t=t.replace('unitésDL50','unités DL50').replace('deGCH1','de GCH1').replace('enBH4','en BH4').replace('cofacteurBH4','cofacteur BH4').replace('utiliseBH4','utilise BH4').replace('uneGTP','une GTP').replace('GTPcyclohydrolase','GTP cyclohydrolase').replace('formerL-DOPA','former L-DOPA').replace('produireL-DOPA','produire L-DOPA').replace('codeG24','code G24').replace('deSNAP-25','de SNAP-25').replace('cliveSNAP-25','clive SNAP-25').replace('parSNAP-25','par SNAP-25').replace('enH&E','en H&E').replace('deNaCl','de NaCl').replace('NaCl0,9','NaCl 0,9').replace('àBOTOX','à BOTOX').replace('deBOTOX','de BOTOX').replace('etDysport','et Dysport').replace('àDysport','à Dysport').replace('àXeomin','à Xeomin').replace('deXeomin','de Xeomin').replace('ouXeomin','ou Xeomin').replace('avecBOTOX','avec BOTOX').replace('ToxineA','Toxine A').replace('toxineA','toxine A').replace('deMeige','de Meige').replace('parBOTOX','par BOTOX')
+ t=re.sub(r'(BOTOX|Xeomin|Dysport|Akineton|Madopar|Paspertin)(?=(?:mai|mars|juin|janvier))',r'\1 ',t)
+ t=re.sub(r'(?<=\d)(?=(?:janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre))',' ',t)
+ t=re.sub(r'(janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)(?=\d)',r'\1 ',t)
+ t=t.replace('toxine A150','toxine A 150')
+ t=re.sub(r'(?<=\d)(?=unités?\b)',' ',t)
+ return t
+for p in sorted((R/'chapters/G24').glob('*.html')):
+ original=p.read_text();parts=re.split(r'(<(?=[A-Za-z/!])[^>]*>)',original)
+ # Only text segments change. Scientific identifiers and all attributes stay intact.
+ for i in range(0,len(parts),2):parts[i]=normalize(parts[i])
+ result=''.join(parts);p.write_text(result);changes.append(dict(file=str(p.relative_to(R)),changed=result!=original))
+(O/'language-transform.json').write_text(json.dumps(dict(scope='Espaces typographiques explicites autour des unités et mots ciblés, texte uniquement ; aucune règle générique chiffre-vers-lettre, aucun identifiant scientifique altéré.',files=changes),ensure_ascii=False,indent=2)+'\n')
+print('Espaces ciblés appliqués aux six surfaces ; attributs et identifiants préservés.')
