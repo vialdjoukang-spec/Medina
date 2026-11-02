@@ -32,3 +32,7 @@ Le moteur hérité n’assure pas la navigation par flèches. Tab/Entrée sont v
 Les scripts de génération, verify_d62.py et browser_probe.py restent disponibles pour vérification explicite. record_final_review.py refuse toute exécution dès qu’un source-binding existe. La veille du harness observe toutes les 600 secondes ; elle ne crée aucune relecture, aucun achèvement ni activité d’auteur. Toute modification clinique future exige une nouvelle version et des contrôles adaptés, sans réécrire ce reçu.
 
 L’achèvement projet n’est acquis qu’au reçu de medina_harness complete ; le simple indicateur d’assemblage production.json ne vaut pas achèvement clinique ou approbation utilisateur.
+
+## Achèvement de projet enregistré
+
+Le harness a enregistré D62 le 2026-11-02T16:15:39+00:00. Le reçu harness-completion.json conserve les empreintes finales et les sept règles structurelles. Approbation utilisateur et validation médicale indépendante restent absentes.
