@@ -1,20 +1,36 @@
 {
-  "generated_at": "2026-11-02T01:57:41+00:00",
+  "generated_at": "2026-11-02T02:07:41+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T01:57:41+00:00",
+    "checked_at": "2026-11-02T02:07:41+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T01:57:41+00:00",
+    "observed_at": "2026-11-02T02:07:41+00:00",
     "ok": true,
-    "findings": [],
+    "findings": [
+      {
+        "agent": "astra_neurologie",
+        "level": "warning",
+        "reason": "Aucune activité déclarée depuis plus de 20 min; agent non supposé actif"
+      },
+      {
+        "agent": "astra_endocrinologie",
+        "level": "warning",
+        "reason": "Aucune activité déclarée depuis plus de 20 min; agent non supposé actif"
+      },
+      {
+        "agent": "astra_nephrologie",
+        "level": "warning",
+        "reason": "Aucune activité déclarée depuis plus de 20 min; agent non supposé actif"
+      }
+    ],
     "interval_seconds": 600,
-    "observer_pid": 49061,
+    "observer_pid": 49489,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
@@ -1096,8 +1112,8 @@
           "Private GitHub cron and local watch depend on runner/environment availability"
         ]
       },
-      "activity_age_seconds": 854,
-      "activity_fresh": true,
+      "activity_age_seconds": 1454,
+      "activity_fresh": false,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
@@ -2425,8 +2441,8 @@
           "audit_sciences base historique fixe à examiner avant usage sur cours tardifs"
         ]
       },
-      "activity_age_seconds": 751,
-      "activity_fresh": true,
+      "activity_age_seconds": 1351,
+      "activity_fresh": false,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
@@ -2929,9 +2945,9 @@
           }
         ]
       },
-      "activity_age_seconds": 956,
-      "activity_fresh": true,
-      "sections_per_hour": 24.89,
+      "activity_age_seconds": 1556,
+      "activity_fresh": false,
+      "sections_per_hour": 19.2,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     },
     {
@@ -2961,17 +2977,17 @@
       "clinical_orchestration": false,
       "lesson": "C85",
       "worktree": "/workspace/Medina-hematologie",
-      "stage": "redaction",
+      "stage": "verification",
       "started_at": "2026-11-02T01:23:56+00:00",
-      "activity_at": "2026-11-02T01:45:37+00:00",
-      "message": "Six sciences enrichies et auditées, deux originaux CC BY annotés, correction rituximab/traitement et FI Keytruda relue ; revue intégrale en cours.",
+      "activity_at": "2026-11-02T02:01:42+00:00",
+      "message": "C85 : cinq FI suisses relues ; corrections C85.7, prophylaxie48h hors indication, critères non booléens et risques Yescarta ; aperçu autonome avec originaux testé1440/390, révision finale en cours.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
       "usage_source": "non exposé par interface native",
       "medical_score": null,
       "medical_review": "non effectuée",
-      "completed_sections": 6,
+      "completed_sections": 10,
       "receipt_sha256": "eefeffc1101a1e7d319dc093e1abff08445f84772dd4222ed29f2a05aaae4062",
       "branch": "codex/alpha77/c85-integrate-g1",
       "allowed_paths": [
@@ -3181,9 +3197,9 @@
         },
         "next_action": "Passages sources, monographie, sémiologie et iconographie avant toute revue"
       },
-      "activity_age_seconds": 724,
+      "activity_age_seconds": 359,
       "activity_fresh": true,
-      "sections_per_hour": 10.67,
+      "sections_per_hour": 13.71,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
@@ -3487,6 +3503,24 @@
       "action": "watch",
       "ok": true,
       "findings": 0
+    },
+    {
+      "at": "2026-11-02T01:57:41+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 0
+    },
+    {
+      "at": "2026-11-02T02:01:42+00:00",
+      "action": "progress",
+      "agent": "codex_hematologie",
+      "stage": "verification",
+      "message": "C85 : cinq FI suisses relues ; corrections C85.7, prophylaxie48h hors indication, critères non booléens et risques Yescarta ; aperçu autonome avec originaux testé1440/390, révision finale en cours."
+    },
+    {
+      "at": "2026-11-02T02:07:04+00:00",
+      "action": "native_agents_resumed",
+      "message": "Trois Astra observés interrompus après reprise de l’environnement, relancés puis confirmés running par l’outil natif. Début exact de l’interruption inconnu."
     }
   ],
   "cache": {
@@ -3508,7 +3542,22 @@
     "watchdog_bootstrap_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41374424262",
     "watchdog_successor_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41374451212",
     "watchdog_verified_at": "2026-11-02T01:49:16+00:00",
-    "resource_budget": "No LLM calls per observation; standard Actions runner waits between600s checks; billable amount not exposed"
+    "resource_budget": "No LLM calls per observation; standard Actions runner waits between600s checks; billable amount not exposed",
+    "watchdog_regular_successor": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41375298891",
+    "watchdog_chain_confirmed": "Bootstrap + first600s handoff; successor actually running",
+    "native_agent_supervision": {
+      "observed_at": "2026-11-02T02:07:04+00:00",
+      "provider": "collaboration.list_agents",
+      "states": {
+        "root": "running",
+        "astra_neurologie": "running",
+        "astra_endocrinologie": "running",
+        "astra_nephrologie": "running"
+      },
+      "incident": "Three agents were observed interrupted after environment restart; each resumed by followup_task and then confirmed running. Exact interruption onset unknown.",
+      "author_activity_refreshed": false,
+      "external_watchdog_can_restart_native_agents": false
+    }
   },
   "prompt": {
     "identified_at": "2026-11-02",

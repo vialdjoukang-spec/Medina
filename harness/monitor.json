@@ -12,5 +12,20 @@
   "watchdog_bootstrap_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41374424262",
   "watchdog_successor_run": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41374451212",
   "watchdog_verified_at": "2026-11-02T01:49:16+00:00",
-  "resource_budget": "No LLM calls per observation; standard Actions runner waits between600s checks; billable amount not exposed"
+  "resource_budget": "No LLM calls per observation; standard Actions runner waits between600s checks; billable amount not exposed",
+  "watchdog_regular_successor": "https://github.com/vialdjoukang-spec/Medina/actions/runs/41375298891",
+  "watchdog_chain_confirmed": "Bootstrap + first600s handoff; successor actually running",
+  "native_agent_supervision": {
+    "observed_at": "2026-11-02T02:07:04+00:00",
+    "provider": "collaboration.list_agents",
+    "states": {
+      "root": "running",
+      "astra_neurologie": "running",
+      "astra_endocrinologie": "running",
+      "astra_nephrologie": "running"
+    },
+    "incident": "Three agents were observed interrupted after environment restart; each resumed by followup_task and then confirmed running. Exact interruption onset unknown.",
+    "author_activity_refreshed": false,
+    "external_watchdog_can_restart_native_agents": false
+  }
 }
