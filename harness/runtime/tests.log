@@ -1,5 +1,5 @@
 {"stopped": true, "reason": "explicit control enabled != true"}
-{"at": "2026-11-02T11:59:39+00:00", "successor_requested": true, "response": {"http_status": 204}, "ref": "codex/harness-20261102", "interval_seconds": 600, "bootstrap": true}
+{"at": "2026-11-02T12:02:21+00:00", "successor_requested": true, "response": {"http_status": 204}, "ref": "codex/harness-20261102", "interval_seconds": 600, "bootstrap": true}
 test_completed_preview_is_refreshed_after_author_moves (test_deliverables.DeliverablesCase.test_completed_preview_is_refreshed_after_author_moves) ... ok
 test_binding_cannot_omit_a_source_or_escape_the_lesson (test_harness.HarnessCase.test_binding_cannot_omit_a_source_or_escape_the_lesson) ... ok
 test_boolean_receipt_wrong_code_and_wrong_branch_are_rejected (test_harness.HarnessCase.test_boolean_receipt_wrong_code_and_wrong_branch_are_rejected) ... ok
@@ -9,6 +9,7 @@ test_cache_exact_content_and_range_then_invalidated_by_change (test_harness.Harn
 test_changed_prompt_and_duplicate_specialties_close_gate (test_harness.HarnessCase.test_changed_prompt_and_duplicate_specialties_close_gate) ... ok
 test_code_change_invalidates_test_receipt (test_harness.HarnessCase.test_code_change_invalidates_test_receipt) ... ok
 test_completion_cannot_ignore_failed_contract (test_harness.HarnessCase.test_completion_cannot_ignore_failed_contract) ... ok
+test_completion_rejects_structural_gap_without_renewing_binding (test_harness.HarnessCase.test_completion_rejects_structural_gap_without_renewing_binding) ... ok
 test_completion_requires_twenty_covered_points_and_records_history (test_harness.HarnessCase.test_completion_requires_twenty_covered_points_and_records_history) ... ok
 test_deadline_report_is_frozen_once_while_live_report_advances (test_harness.HarnessCase.test_deadline_report_is_frozen_once_while_live_report_advances) ... ok
 test_explicit_sol_transition_requires_all_three_high_authors (test_harness.HarnessCase.test_explicit_sol_transition_requires_all_three_high_authors) ... ok
@@ -55,6 +56,6 @@ test_read_only_inspection_preserves_binding_and_sources (test_semiology.Semiolog
 test_translated_data_markers_are_not_native_contract (test_semiology.SemiologyTests.test_translated_data_markers_are_not_native_contract) ... ok
 
 ----------------------------------------------------------------------
-Ran 52 tests in 0.243s
+Ran 53 tests in 0.254s
 
 OK

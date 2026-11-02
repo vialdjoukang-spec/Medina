@@ -96,6 +96,10 @@ def inspect_semiology(worktree, code):
     """Seven native structural rules, read-only; never renew source receipts."""
     paths=[f'chapters/{code}/{code}_{suffix}.html' for suffix in 'abcd']
     parts={path:inside(worktree,path).read_bytes() for path in paths}
+    return inspect_semiology_parts(code,parts)
+
+def inspect_semiology_parts(code,parts):
+    """Also accepts immutable git bytes for the independent progress report."""
     spec=importlib.util.spec_from_file_location('medina_native_structure',DEFAULT_ROOT/'tools/starter_codex.py')
     native=importlib.util.module_from_spec(spec);spec.loader.exec_module(native)
     tree=native.HTMLTree(b''.join(parts.values()));nodes=tree.nodes

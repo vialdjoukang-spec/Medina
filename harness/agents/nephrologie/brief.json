@@ -6,7 +6,7 @@
   "fragment_label": "N-07-Néphrologie",
   "prepared_at": "2026-11-02T01:16:51.601917+00:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "status": "N06_recherche_sous_reservation",
+  "status": "N06_complete_push_release_pending",
   "selected_lesson": {
     "code": "N06",
     "title": "Protéinurie isolée avec lésions morphologiques précisées",
@@ -18,10 +18,27 @@
     "harness_claimed": true,
     "runtime_name": "sol_nephrologie",
     "runtime_model": "gpt-6.1-sol",
-    "stage": "recherche",
+    "stage": "complete_push_pending",
     "clinical_certification": false,
     "start_receipt": "/workspace/Medina-harness/harness/agents/nephrologie/transitions/N05-N06/start-N06.json",
-    "catalogue_scope": "AuteurN06 exclusivementréservé pourchapters.json"
+    "catalogue_scope": "AuteurN06 exclusivementréservé pourchapters.json",
+    "harness_completed_at": "2026-11-02T12:02:38+00:00",
+    "source_commit": "14b44d83813296a99c63c837095bb5bc66aad815",
+    "final_counts": {
+      "monograph_points": 14,
+      "medina_rubrics": 20,
+      "selected_source_readings": 35,
+      "exact_swiss_FIs": 5,
+      "science_tabs": 6,
+      "semiology_sections": 9,
+      "original_figures": 5,
+      "figure_occurrences": 9,
+      "annotation_markers": 33,
+      "windows": 34,
+      "quiz": 4
+    },
+    "preview_sha256": "04b73a5c22d61f10f6aee49d0889e4aef5908f214ae62a2acba8de953af66068",
+    "semiology_seven_rules_native_passed": true
   },
   "instruction_priority": "Ordre actuel : quatre spécialités en parallèle et une leçon à la fois par agent ; remplace les lots historiques, sans supprimer les réservations.",
   "counts": {
@@ -974,6 +991,13 @@
       "guard_returncode": 1,
       "guard_evidence": "transitions/N03-N02-typography/N02-reacquire-result.json",
       "trusted_base": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6"
+    },
+    "historical_semio_contract_7_rules": {
+      "reported_by": "root",
+      "observed_evidence": "/workspace/medina-report-evidence-20261102-1153/semiology-inspection.json",
+      "N04": "Marqueur clinique surh2, texteexclu dela prose parparseurnatifHTMLTree ; correctionfuture sousmandatautorisé, courslibéréintact.",
+      "N29": "Lecontrôleciblépublié indique linked_sources_in_semio etclinical_semio_marker ; absencehttps etmarqueurprose àcorrigerplustardsousmandatautorisé, courslibéréintact.",
+      "new_N06": "7règles passées parseurnatifharness etinspectionstatique sur14b44d83813296a99c63c837095bb5bc66aad815, sans prétendreauditmédicalindépendant."
     }
   }
 }

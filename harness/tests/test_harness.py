@@ -224,6 +224,16 @@ class HarnessCase(unittest.TestCase):
             self.h.claim('neuro','G05',next_worktree,receipt)
             self.assertEqual(len(self.state()['completed_lessons']),1)
 
+    def test_completion_rejects_structural_gap_without_renewing_binding(self):
+        worktree,folder=self.bound_package()
+        binding=(folder/'source-binding.json').read_bytes()
+        proof={'technical_contract_pass':True,'errors':[],'review_modes':{'medical':'self_review'}}
+        with mock.patch.object(mh,'validate_lesson',return_value=proof):
+            with self.assertRaisesRegex(ValueError,'Contrat sémiologique strict'):
+                self.h.complete('neuro',folder)
+        self.assertEqual((folder/'source-binding.json').read_bytes(),binding)
+        self.assertFalse(self.state().get('completed_lessons'))
+
     def test_completion_cannot_ignore_failed_contract(self):
         _,folder=self.bound_package()
         with mock.patch.object(mh,'validate_lesson',return_value={'technical_contract_pass':False,'errors':['Images non vérifiées']}):
