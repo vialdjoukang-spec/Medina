@@ -6,16 +6,17 @@
   "fragment": "S05",
   "label": "E-06-Endocrinologie et métabolisme",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-  "phase": "E14_preparation_attente_gate_Sol",
+  "phase": "E14_recherche_sources_suisses_et_europeennes",
   "selected_lesson": {
     "code": "E14",
     "title": "Diabète sucré, sans précision",
     "mission_candidate": ".medina/missions/ALPHA77-CODEX-E14-INTEGRATE.json",
-    "reservation_acquired": false,
-    "start_passed": false,
-    "harness_claimed": false
+    "reservation_acquired": true,
+    "start_passed": true,
+    "harness_claimed": true,
+    "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E07-E14/start-E14.json"
   },
-  "authorization_scope": "Préparation E14, branche isolée ; aucune rédaction médicale avant gate Sol parent confirmée. E00/E01/E02/E07 clos préservés. Aucun fichier partagé, PR ou main.",
+  "authorization_scope": "E14 seule acquise, start et claim réels après gate Sol parent 10:23:03 UTC. Aucun fichier partagé, PR ou main.",
   "counts": {
     "canonical_s05": 26,
     "existing_codex": 13,
@@ -1262,7 +1263,7 @@
     "phase": "preparation_only_waiting_harness_veille_and_exclusive_worktree",
     "authorization_scope": "Préparation seulement dans harness/agents/endocrinologie; aucune écriture médicale, aucun commit ni index. Ordre courant spécialités parallèles/une leçon à la fois remplace lots historiques, pas réservations."
   },
-  "updated_at": "2026-11-02T10:23:24.937881+00:00",
+  "updated_at": "2026-11-02T10:26:41.226481+00:00",
   "worktree": "/workspace/Medina-endocrinologie-E14",
   "branch": "codex/alpha77/e14-integrate-g1",
   "tokens_actual": null,
@@ -1356,8 +1357,9 @@
   },
   "current_evidence": {
     "registry": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E07-E14/registry-before-acquire.json",
-    "registry_sha": "a07ee13e2c2ffa53632b846e9745de78f67393ec",
-    "status": "E14 absente du registre ; manifeste actif présent dans la base, worktree propre créé à base exacte ; contrat lu, inventaire de contenu et sources historiques engagé."
+    "registry_sha": "dddd520a0776fd1f977f89412df522a3708d71c0",
+    "status": "Sources suisses SSED, OFS, OFSP/Obsan, trois FI exactes et recommandations européennes ouvertes ; lecture des passages ciblés. Figure originale pancréas 2013 téléchargée et examinée visuellement, provenance CC BY 3.0 propre à cette version.",
+    "source_cache": "/tmp/medina-source-cache/endocrinologie/E14"
   },
   "previous_limits": [
     "Aucune prévalence contemporaine suisse de E02 ni essai thérapeutique propre à sa cause iodée n’a été retrouvé ; les données de nutrition et d’HIC générale ne les remplacent pas.",
@@ -1371,8 +1373,9 @@
     "La navigation vers les autres leçons est héritée ; seuls le contenu et les interactions E02 sont revus. Le build signale trois éléments E05 non couverts, hors périmètre et réservation E02."
   ],
   "current_limits": [
-    "Gate Sol parent non encore confirmée ; pas de claim ni nouvelle rédaction médicale.",
-    "Les sources historiques ne sont pas réputées lues par le repreneur Sol."
+    "Les protocoles de crise sont adultes ; ne seront pas extrapolés à la pédiatrie.",
+    "Divergences FI/recommandations conservées : Glucophage limité à 1000 mg/j pour filtration 30–59 selon FI exacte octobre 2025 ; document SSED emploie des limites distinctes.",
+    "FI Kaliumchlorid B. Braun janvier 2007 mentionne acidose, déshydratation sévère et insuffisance rénale en contre-indications ; produit ne peut pas être transposé sans arbitrage à la crise. Autre produit suisse recherché."
   ],
   "runtime_agent": "sol_endocrinologie",
   "runtime_model": "gpt-6.1-sol",

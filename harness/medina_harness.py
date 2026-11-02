@@ -122,8 +122,11 @@ class Harness:
         roster = self.config.get('agents', [])
         if len(roster) != 4 or len({a['specialty'] for a in roster}) != 4:
             problems.append('Quatre affectations exclusives requises')
-        if sum(a.get('model') == 'gpt-6-astra' and a.get('reasoning') == 'high' for a in roster) != 3:
-            problems.append('Trois agents Astra high requis')
+        requested_model = self.config.get('requested_subagent_model', 'gpt-6-astra')
+        if requested_model not in {'gpt-6-astra', 'gpt-6.1-sol'}:
+            problems.append('Contrat de modèle de sous-agent non reconnu')
+        if sum(a.get('model') == requested_model and a.get('reasoning') == 'high' for a in roster) != 3:
+            problems.append('Trois sous-agents ' + requested_model + ' high requis par le mandat courant')
         prompt = load(self.home / 'prompt-lock.json', {})
         for entry in prompt.get('files', []):
             p = inside(self.root, entry['path'])

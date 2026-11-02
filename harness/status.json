@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-02T10:25:41+00:00",
+  "generated_at": "2026-11-02T10:30:10+00:00",
   "timezone": "Europe/Zurich",
   "deadline": "2026-11-02T08:00:00+01:00",
   "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
   "gate": {
     "allowed": true,
     "problems": [],
-    "checked_at": "2026-11-02T10:25:41+00:00",
+    "checked_at": "2026-11-02T10:30:10+00:00",
     "scope": "Autorise la recherche/rédaction réservée, jamais la publication ni la clôture médicale."
   },
   "watch": {
-    "observed_at": "2026-11-02T10:25:41+00:00",
+    "observed_at": "2026-11-02T10:30:10+00:00",
     "ok": true,
     "findings": [
       {
@@ -20,14 +20,14 @@
       }
     ],
     "interval_seconds": 600,
-    "observer_pid": 524005,
+    "observer_pid": 524847,
     "agent_activity_refreshed": false,
     "limits": "Observation logicielle seulement; aucun réveil de modèle, aucune validation médicale."
   },
   "tests": {
     "ok": true,
-    "code_sha256": "e787852180ef200677e28287c3079039165b662bcbaeb09e37ccb7406395b8f6",
-    "at": "2026-11-02T10:23:03+00:00",
+    "code_sha256": "2c033c3ad67ae584c95f719ff47b1a7cb4a10a8a266003bdef48d43161e03638",
+    "at": "2026-11-02T10:28:44+00:00",
     "returncode": 0,
     "log": "runtime/tests.log"
   },
@@ -1451,7 +1451,7 @@
         "tokens_actual": null,
         "cost_actual": null
       },
-      "activity_age_seconds": 138,
+      "activity_age_seconds": 408,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -1501,8 +1501,8 @@
         "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E14-INTEGRATE"
       ],
       "started_at": "2026-11-02T10:24:09+00:00",
-      "activity_at": "2026-11-02T10:24:09+00:00",
-      "message": "Mission réservée; recherche autorisée",
+      "activity_at": "2026-11-02T10:26:41+00:00",
+      "message": "E14 : lectures ciblées OMS/SSED/OFSP, crises 2024 et FI suisses ; divergences potassium et metformine identifiées, figure originale 2013 vérifiée.",
       "tokens_input": null,
       "tokens_output": null,
       "cost_usd": null,
@@ -1519,16 +1519,17 @@
         "fragment": "S05",
         "label": "E-06-Endocrinologie et métabolisme",
         "base_sha": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
-        "phase": "E14_preparation_attente_gate_Sol",
+        "phase": "E14_recherche_sources_suisses_et_europeennes",
         "selected_lesson": {
           "code": "E14",
           "title": "Diabète sucré, sans précision",
           "mission_candidate": ".medina/missions/ALPHA77-CODEX-E14-INTEGRATE.json",
-          "reservation_acquired": false,
-          "start_passed": false,
-          "harness_claimed": false
+          "reservation_acquired": true,
+          "start_passed": true,
+          "harness_claimed": true,
+          "start_receipt": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E07-E14/start-E14.json"
         },
-        "authorization_scope": "Préparation E14, branche isolée ; aucune rédaction médicale avant gate Sol parent confirmée. E00/E01/E02/E07 clos préservés. Aucun fichier partagé, PR ou main.",
+        "authorization_scope": "E14 seule acquise, start et claim réels après gate Sol parent 10:23:03 UTC. Aucun fichier partagé, PR ou main.",
         "counts": {
           "canonical_s05": 26,
           "existing_codex": 13,
@@ -2775,7 +2776,7 @@
           "phase": "preparation_only_waiting_harness_veille_and_exclusive_worktree",
           "authorization_scope": "Préparation seulement dans harness/agents/endocrinologie; aucune écriture médicale, aucun commit ni index. Ordre courant spécialités parallèles/une leçon à la fois remplace lots historiques, pas réservations."
         },
-        "updated_at": "2026-11-02T10:23:24.937881+00:00",
+        "updated_at": "2026-11-02T10:26:41.226481+00:00",
         "worktree": "/workspace/Medina-endocrinologie-E14",
         "branch": "codex/alpha77/e14-integrate-g1",
         "tokens_actual": null,
@@ -2869,8 +2870,9 @@
         },
         "current_evidence": {
           "registry": "/workspace/Medina-harness/harness/agents/endocrinologie/transitions/E07-E14/registry-before-acquire.json",
-          "registry_sha": "a07ee13e2c2ffa53632b846e9745de78f67393ec",
-          "status": "E14 absente du registre ; manifeste actif présent dans la base, worktree propre créé à base exacte ; contrat lu, inventaire de contenu et sources historiques engagé."
+          "registry_sha": "dddd520a0776fd1f977f89412df522a3708d71c0",
+          "status": "Sources suisses SSED, OFS, OFSP/Obsan, trois FI exactes et recommandations européennes ouvertes ; lecture des passages ciblés. Figure originale pancréas 2013 téléchargée et examinée visuellement, provenance CC BY 3.0 propre à cette version.",
+          "source_cache": "/tmp/medina-source-cache/endocrinologie/E14"
         },
         "previous_limits": [
           "Aucune prévalence contemporaine suisse de E02 ni essai thérapeutique propre à sa cause iodée n’a été retrouvé ; les données de nutrition et d’HIC générale ne les remplacent pas.",
@@ -2884,14 +2886,15 @@
           "La navigation vers les autres leçons est héritée ; seuls le contenu et les interactions E02 sont revus. Le build signale trois éléments E05 non couverts, hors périmètre et réservation E02."
         ],
         "current_limits": [
-          "Gate Sol parent non encore confirmée ; pas de claim ni nouvelle rédaction médicale.",
-          "Les sources historiques ne sont pas réputées lues par le repreneur Sol."
+          "Les protocoles de crise sont adultes ; ne seront pas extrapolés à la pédiatrie.",
+          "Divergences FI/recommandations conservées : Glucophage limité à 1000 mg/j pour filtration 30–59 selon FI exacte octobre 2025 ; document SSED emploie des limites distinctes.",
+          "FI Kaliumchlorid B. Braun janvier 2007 mentionne acidose, déshydratation sévère et insuffisance rénale en contre-indications ; produit ne peut pas être transposé sans arbitrage à la crise. Autre produit suisse recherché."
         ],
         "runtime_agent": "sol_endocrinologie",
         "runtime_model": "gpt-6.1-sol",
         "runtime_reasoning": "high"
       },
-      "activity_age_seconds": 92,
+      "activity_age_seconds": 210,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -3671,7 +3674,7 @@
           "clinical_certification": false
         }
       },
-      "activity_age_seconds": 42,
+      "activity_age_seconds": 312,
       "activity_fresh": true,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
@@ -4099,40 +4102,13 @@
         ],
         "metrics": null
       },
-      "activity_age_seconds": 19159,
+      "activity_age_seconds": 19429,
       "activity_fresh": false,
       "sections_per_hour": 0.0,
       "throughput_limit": "Sections déclarées par auteur, non leçons validées"
     }
   ],
   "events": [
-    {
-      "at": "2026-11-02T01:31:01+00:00",
-      "action": "extract",
-      "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/recherche_E00/downloads/who2007.txt",
-      "cache_hit": false,
-      "bytes_input": 239151,
-      "bytes_output": 3373,
-      "bytes_avoided": 235778
-    },
-    {
-      "at": "2026-11-02T01:31:30+00:00",
-      "action": "extract",
-      "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/recherche_E00/downloads/who2007.txt",
-      "cache_hit": false,
-      "bytes_input": 239151,
-      "bytes_output": 2230,
-      "bytes_avoided": 236921
-    },
-    {
-      "at": "2026-11-02T01:31:30+00:00",
-      "action": "extract",
-      "path": "docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-E00-INTEGRATE/recherche_E00/downloads/osavfaqgrossesse.txt",
-      "cache_hit": false,
-      "bytes_input": 12383,
-      "bytes_output": 4388,
-      "bytes_avoided": 7995
-    },
     {
       "at": "2026-11-02T01:31:49+00:00",
       "action": "watch",
@@ -5414,6 +5390,25 @@
       "agent": "astra_nephrologie",
       "stage": "redaction",
       "message": "Reprise Sol autorisée : cinq originaux revus, HUG2024 et FI relus ; porte vérité research_N02 passée. Complément pharmacologique et interactions en cours."
+    },
+    {
+      "at": "2026-11-02T10:25:41+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
+    },
+    {
+      "at": "2026-11-02T10:26:41+00:00",
+      "action": "progress",
+      "agent": "astra_endocrinologie",
+      "stage": "recherche",
+      "message": "E14 : lectures ciblées OMS/SSED/OFSP, crises 2024 et FI suisses ; divergences potassium et metformine identifiées, figure originale 2013 vérifiée."
+    },
+    {
+      "at": "2026-11-02T10:28:44+00:00",
+      "action": "watch",
+      "ok": true,
+      "findings": 1
     }
   ],
   "cache": {
@@ -5459,15 +5454,14 @@
       "result": "Échec affiché pour les activités anciennes des trois auteurs, sans arrêt du relais; observation suivante réussie."
     },
     "native_agents_last_observed": {
-      "observed_at": "2026-11-02T10:18:34.812128+00:00",
-      "provider": "collaboration.list_agents + trois notifications de fin",
+      "observed_at": "2026-11-02T10:28:06+00:00",
+      "provider": "collaboration.list_agents",
       "states": {
-        "root": "running; préparation du rapport, pas reprise médicale attestée",
-        "astra_neurologie": "indisponible; erreur de limite d’usage",
-        "astra_endocrinologie": "indisponible; erreur de limite d’usage",
-        "astra_nephrologie": "indisponible; erreur de limite d’usage"
+        "/root": "running",
+        "/root/sol_neurologie": "running",
+        "/root/sol_endocrinologie": "running",
+        "/root/sol_nephrologie": "running"
       },
-      "incident": "Trois notifications Agent errored: usage limit reçues. Le contrôle actuel ne liste que le parent. Heure exacte du début de la panne non établie. Aucune relance réussie revendiquée.",
       "author_activity_refreshed": false,
       "external_watchdog_can_restart_native_agents": false
     },
@@ -12311,7 +12305,7 @@
     "durations": "No delivery dates invented for unstarted lessons; actual throughput tracked separately."
   },
   "deliverables": {
-    "observed_at": "2026-11-02T10:25:40+00:00",
+    "observed_at": "2026-11-02T10:30:10+00:00",
     "lessons": [
       {
         "code": "E00",

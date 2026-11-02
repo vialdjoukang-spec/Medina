@@ -85,6 +85,21 @@ class HarnessCase(unittest.TestCase):
                 mh.atomic(self.h.runtime / 'tests.json', receipt)
                 self.assertFalse(self.h.readiness()['allowed'])
 
+    def test_explicit_sol_transition_requires_all_three_high_authors(self):
+        self.h.config['requested_subagent_model'] = 'gpt-6.1-sol'
+        self.assertFalse(self.h.readiness()['allowed'])
+        for a in self.h.config['agents'][:3]:
+            a['model'] = 'gpt-6.1-sol'
+        self.assertTrue(self.h.readiness()['allowed'])
+        self.h.config['agents'][1]['reasoning'] = 'medium'
+        self.assertFalse(self.h.readiness()['allowed'])
+
+    def test_unrecognized_model_contract_is_not_silently_accepted(self):
+        self.h.config['requested_subagent_model'] = 'unknown'
+        for a in self.h.config['agents'][:3]:
+            a['model'] = 'unknown'
+        self.assertFalse(self.h.readiness()['allowed'])
+
     def test_code_change_invalidates_test_receipt(self):
         with mock.patch.object(mh, 'code_hash', return_value='c' * 64):
             self.assertFalse(self.h.readiness()['allowed'])

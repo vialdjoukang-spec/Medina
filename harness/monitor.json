@@ -36,15 +36,14 @@
     "result": "Échec affiché pour les activités anciennes des trois auteurs, sans arrêt du relais; observation suivante réussie."
   },
   "native_agents_last_observed": {
-    "observed_at": "2026-11-02T10:18:34.812128+00:00",
-    "provider": "collaboration.list_agents + trois notifications de fin",
+    "observed_at": "2026-11-02T10:28:06+00:00",
+    "provider": "collaboration.list_agents",
     "states": {
-      "root": "running; préparation du rapport, pas reprise médicale attestée",
-      "astra_neurologie": "indisponible; erreur de limite d’usage",
-      "astra_endocrinologie": "indisponible; erreur de limite d’usage",
-      "astra_nephrologie": "indisponible; erreur de limite d’usage"
+      "/root": "running",
+      "/root/sol_neurologie": "running",
+      "/root/sol_endocrinologie": "running",
+      "/root/sol_nephrologie": "running"
     },
-    "incident": "Trois notifications Agent errored: usage limit reçues. Le contrôle actuel ne liste que le parent. Heure exacte du début de la panne non établie. Aucune relance réussie revendiquée.",
     "author_activity_refreshed": false,
     "external_watchdog_can_restart_native_agents": false
   },
