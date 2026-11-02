@@ -1,0 +1,57 @@
+[
+  {
+    "command": [
+      "python3",
+      "test_v7.py",
+      "--static",
+      "G36"
+    ],
+    "returncode": 0,
+    "at": "2026-11-02T18:42:04.203948+00:00",
+    "output": "G36 mots 13070 fenêtres 37 quiz 4 pareto 4\nOK\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tests/audit_sciences.py",
+      "--base",
+      "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+      "--out",
+      "/workspace/Medina-neurologie-G36/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G36-INTEGRATE/sciences-audit.json",
+      "--codes",
+      "G36"
+    ],
+    "returncode": 0,
+    "at": "2026-11-02T18:42:04.336684+00:00",
+    "output": "{\n  \"result\": \"passed\",\n  \"courses\": 1,\n  \"totals\": {\n    \"before\": {\n      \"words\": 963,\n      \"figures\": 3,\n      \"disciplines\": 4\n    },\n    \"after\": {\n      \"words\": 3036,\n      \"figures\": 7,\n      \"disciplines\": 6\n    }\n  },\n  \"errors\": []\n}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "/workspace/Medina-neurologie-G36/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G36-INTEGRATE/check-semiology-contract.py"
+    ],
+    "returncode": 0,
+    "at": "2026-11-02T18:42:04.398143+00:00",
+    "output": "{\n  \"code\": \"G36\",\n  \"observed_at\": \"2026-11-02T18:42:04.385350+00:00\",\n  \"reference\": \"tools/starter_codex.py 240–267, sept conditions statiques ciblées ; pas exécution complète du Starter\",\n  \"checks\": {\n    \"six_science_tabs\": true,\n    \"first_selected_semio\": true,\n    \"semio_panel_label_and_visible\": true,\n    \"first_unit_exact_h3\": true,\n    \"nine_named_sections\": true,\n    \"linked_sources_in_semio\": true,\n    \"clinical_semio_marker\": true\n  },\n  \"passed\": true,\n  \"source_hashes\": {\n    \"chapters/G36/G36_a.html\": \"c4005836da7fb36514a21e54a8db63a7c4cdab26f1e925d207504b9610bae191\",\n    \"chapters/G36/G36_b.html\": \"ad7d4d6e951732075cdc71a93b97b904a26b42cf34a0fb63f70d5eda20eb84c8\",\n    \"chapters/G36/G36_c.html\": \"03df525f3f493177d7499a4a0218551ee24ed05ec9ab2a2580c71e6c0bb6cb2f\",\n    \"chapters/G36/G36_d.html\": \"cfed897c4ab91ad20c81a44904c05b5dc041fd52c99449d0e8408fe60f0d182d\"\n  },\n  \"medical_human_validation\": false\n}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/betta_verite.py",
+      "/workspace/Medina-neurologie-G36/docs/collaboration/ssp-v2/execution/ALPHA77-CODEX-G36-INTEGRATE/compatibilite_betta_G36"
+    ],
+    "returncode": 0,
+    "at": "2026-11-02T18:42:04.429832+00:00",
+    "output": "VÉRITÉ OK · compatibilite_betta_G36\n"
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "returncode": 0,
+    "at": "2026-11-02T18:42:04.469520+00:00",
+    "output": ""
+  }
+]

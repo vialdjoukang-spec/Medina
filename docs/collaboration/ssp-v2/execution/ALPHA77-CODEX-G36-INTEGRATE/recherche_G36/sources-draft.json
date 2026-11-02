@@ -1,0 +1,187 @@
+{
+  "code": "G36",
+  "updated_at": "2026-11-02T18:23:54.636221+00:00",
+  "gate_passed": false,
+  "medical_content_written": false,
+  "sources": [
+    {
+      "id": "R1",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/32686264/master",
+      "title": "OFS CIM-10-GM française",
+      "version": "2024",
+      "sections_read": "Classes complètes G36, G36.0, G36.1, G36.8, G36.9",
+      "paraphrase": "Quatre sous-codes ; catégorie sans astérisque ; exclusions G04.8 et H46.",
+      "limits": "Codage individuel et édition de facturation non certifiés.",
+      "cache": "/tmp/medina-n04-source-cache/CIM.raw",
+      "sha256": "04c9e9e5c95b2cbe2b8244872e6a6cbd5a7fc2358805e908b11d0e15784653be",
+      "actual_reading_recorded_at": "2026-11-02T18:23:54.636221+00:00",
+      "reading_mode": "targeted_actual_reading_not_full_document"
+    },
+    {
+      "id": "R2",
+      "url": "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-g35-g37.htm",
+      "title": "BfArM bloc G35–G37",
+      "version": "2024",
+      "sections_read": "G36 complet et voisins G37",
+      "paraphrase": "ADEM incluse G37.8 ; toutes les affections disséminées ne relèvent pas de G36.",
+      "limits": "Classification allemande, pas protocole suisse.",
+      "cache": "/tmp/medina-g36-source-cache/bfarm-g36.raw",
+      "sha256": "8a8229c410200e8d1c7728e8f6eb6575ff2304c679da9b99b88d6cb047a9a658",
+      "actual_reading_recorded_at": "2026-11-02T18:23:54.636221+00:00",
+      "reading_mode": "targeted_actual_reading_not_full_document"
+    },
+    {
+      "id": "R3",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10267280/",
+      "title": "NEMOS partie I",
+      "version": "2023",
+      "sections_read": "Résumé ; sections 5 et 6 ; tableaux 1,2,5 ; références CR77/78 ; section 4 paragraphes 0–3,5–6 ; sections 7 et 11 complètes",
+      "paraphrase": "IPND2015 ; sérologie par CBA et sérum ; clinique optique, médullaire et area postrema ; OCT soutien non obligatoire.",
+      "limits": "Box5 reprend MOG2018, pas critères2023 ; sections non mentionnées non encore lues.",
+      "cache": "/tmp/medina-g36-source-cache/nemos-diagnosis2023.raw",
+      "sha256": "e8aaa4b5d97a35ace7cd4ce7e4de3300b2a7222fe7de5c70c0e0e103cbf874b9",
+      "actual_reading_recorded_at": "2026-11-02T18:23:54.636221+00:00",
+      "reading_mode": "targeted_actual_reading_not_full_document"
+    },
+    {
+      "id": "R4",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10770020/",
+      "title": "NEMOS partie II",
+      "version": "2024",
+      "sections_read": "Sections 3,5,24,26",
+      "paraphrase": "Poussée urgente, méthylprednisolone et aphérèse précoce selon gravité ; prévention AQP4 positive distincte des doubles négatifs.",
+      "limits": "Absence de classement universel ; ne pas reprendre tous essais comme randomisés ; autres sections en attente.",
+      "cache": "/tmp/medina-g36-source-cache/nemos-treatment2024.raw",
+      "sha256": "20e36a95eae46a8e08b9ac590959d215e70d73090e586358b896d6e7e00859c4",
+      "actual_reading_recorded_at": "2026-11-02T18:23:54.636221+00:00",
+      "reading_mode": "targeted_actual_reading_not_full_document"
+    },
+    {
+      "id": "R5",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11136799/",
+      "title": "Correction NEMOS partie II",
+      "version": "2024",
+      "sections_read": "Paragraphes correctifs des tableaux1et2",
+      "paraphrase": "Ravulizumab : charge jour1 seule, première maintenance deux semaines après ; inclusion corrigée ≥1 rechute sur12mois.",
+      "limits": "Ne pas conserver ancienne charge faussement répétée aujour15.",
+      "cache": "/tmp/medina-g36-source-cache/nemos-correction2024.raw",
+      "sha256": "e60a63e21709496429e261b9e15f7e55295638af3a46c20b4a4dd254caf98605",
+      "actual_reading_recorded_at": "2026-11-02T18:23:54.636221+00:00",
+      "reading_mode": "targeted_actual_reading_not_full_document"
+    },
+    {
+      "id": "R6",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680676170011",
+      "title": "Enspryng information professionnelle suisse",
+      "version": "Janvier2023",
+      "sections_read": "Lignes25–110 et date802–803",
+      "paraphrase": "120mg semaines0,2,4 puis toutes4semaines dèssemaine8 ; AQP4positive ; dépistage HBV/TB.",
+      "limits": "Suite des précautions et grossesse encore à lire.",
+      "cache": "/tmp/medina-g36-source-cache/enspryng-tool.txt",
+      "sha256": "ef42ce49bc2048555667f8746e7e263064045cc94a58928410dc94cfed195349",
+      "actual_reading_recorded_at": "2026-11-02T18:23:54.636221+00:00",
+      "reading_mode": "targeted_actual_reading_not_full_document"
+    },
+    {
+      "id": "R7",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680693220010",
+      "title": "Uplizna information professionnelle suisse",
+      "version": "Octobre2023",
+      "sections_read": "Lignes25–98 et date426–427",
+      "paraphrase": "Monothérapie adulte AQP4positive ;300mg puis deuxsemaines après ; entretien toussixmois.",
+      "limits": "Ne pas inventer ancrage calendaire ; précautions restantes à lire.",
+      "cache": "/tmp/medina-g36-source-cache/uplizna-tool.txt",
+      "sha256": "ce9c4d8ee4a60af12643792afdac6c1211f08c50c0b035f4b579bc30dfcb4e96",
+      "actual_reading_recorded_at": "2026-11-02T18:23:54.636221+00:00",
+      "reading_mode": "targeted_actual_reading_not_full_document"
+    },
+    {
+      "id": "R8",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680672780016",
+      "title": "Ultomiris information professionnelle suisse",
+      "version": "Février2026",
+      "sections_read": "Lignes25–105 et date2041–2042",
+      "paraphrase": "AdultesAQP4positive ; charge pondérale unique puis maintenance deuxsemaines après, toutes8semaines.",
+      "limits": "Formulations10et100mg/ml ; volumes non interchangeables ; suite risques à lire.",
+      "cache": "/tmp/medina-g36-source-cache/ultomiris-tool.txt",
+      "sha256": "b8fc80c0b5ec4d1b72184ef9d4ffcd93935eafa0d3fc67c3553d6f1a62706ac7",
+      "actual_reading_recorded_at": "2026-11-02T18:23:54.636221+00:00",
+      "reading_mode": "targeted_actual_reading_not_full_document"
+    },
+    {
+      "id": "R9",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680592820014",
+      "title": "Soliris information professionnelle suisse",
+      "version": "Avril2026",
+      "sections_read": "Lignes25–93 et date1607–1608",
+      "paraphrase": "AdulteAQP4positive récurrente ;900mg hebdomadaire4semaines,1200mgsemaine5puis14jours ; vaccination méningococcique.",
+      "limits": "Ne pas reprendre âgeMG ni dosesHPN ; précautions restantes à lire.",
+      "cache": "/tmp/medina-g36-source-cache/soliris-tool.txt",
+      "sha256": "9d5dff0350e73da4c3032aaee4ee8d4a61cf4272eba2838d39e6a6c12f8a2931",
+      "actual_reading_recorded_at": "2026-11-02T18:23:54.636221+00:00",
+      "reading_mode": "targeted_actual_reading_not_full_document"
+    },
+    {
+      "id": "R10",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680351120812",
+      "title": "Solu-Medrol information professionnelle suisse",
+      "version": "Août2025",
+      "sections_read": "Lignes27–145 et date418–420",
+      "paraphrase": "Masse de méthylprednisolone base ; indication SEP aiguë explicite, NMO non nommée ; >250mg au moins30min.",
+      "limits": "Schéma NMO attribué NEMOS, pas indication nommée de FI ; suite à lire.",
+      "cache": "/tmp/medina-g36-source-cache/solu-medrol-tool.txt",
+      "sha256": "37e5d5633fb3ac291a1c689f3c3b015ab229768e19269df3e44de8dc7ea3dda0",
+      "actual_reading_recorded_at": "2026-11-02T18:23:54.636221+00:00",
+      "reading_mode": "targeted_actual_reading_not_full_document"
+    },
+    {
+      "id": "R11",
+      "url": "https://iris.unil.ch/bitstreams/88317535-9cf5-4d19-997d-ed1f2f63348d/download",
+      "title": "Lerusse et coll., Revue médicale suisse, HUG/CHUV",
+      "version": "24avril2024",
+      "sections_read": "Introduction, clinique initiale ; p829CBA ; tableaux1et2 p829–830 ; traitement partiellement p830–831",
+      "paraphrase": "MOGAD distincte de SEP et NMO ; critères2023 adaptés ; choix de CBA et soutien clinique.",
+      "limits": "Lecture ciblée non intégrale ; tableau simplifie seuils sans distinguer tousassays ; dose rituximab ambiguë non utilisée.",
+      "cache": "/tmp/medina-g36-source-cache/rms-mog2024-unil.raw",
+      "sha256": "7ead23fdf3b9f05b6e0a619e16832747de262aa85e70cae1619cf860819b4f22",
+      "actual_reading_recorded_at": "2026-11-02T18:23:54.636221+00:00",
+      "reading_mode": "targeted_actual_reading_not_full_document"
+    },
+    {
+      "id": "R12",
+      "url": "https://www.sumairafoundation.org/wp-content/uploads/2023/02/International-MOGAD-Panel-Proposed-Criteria.pdf",
+      "title": "Banwell et coll., Lancet Neurology ; reprint public Sumaira",
+      "version": "2023",
+      "sections_read": "Texte tests et panel1 p7 ; figure3 critères p10 et toutes notes",
+      "paraphrase": "CBA fixé clair≥1:100, faible≥1:10 et<1:100 ; CBA vivant seuil propre ; A+B+C ; faible/sans titre/LCRseul exigeAQP4négatif et≥1soutien.",
+      "limits": "Consensus international diagnostic ; pas directive thérapeutique suisse ; ne pas universaliser1:100 aux tests vivants.",
+      "cache": "/tmp/medina-g36-source-cache/mog-criteria2023-foundation.raw",
+      "sha256": "860b173526f1d5e19994691e683b2eacd03490d11ddf679034e104277e178197",
+      "actual_reading_recorded_at": "2026-11-02T18:23:54.636221+00:00",
+      "reading_mode": "targeted_actual_reading_not_full_document"
+    },
+    {
+      "id": "R13",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7468463/",
+      "title": "Grzonka et coll., Hôpital universitaire de Bâle, Front Neurol",
+      "version": "2020",
+      "sections_read": "Résumé, affiliations, licence ; section3 cas complet, figure2 légende complète ; section7éthique",
+      "paraphrase": "Hurst fulminant,IRM évolutive,microhémorragies et biopsie ; cas59ans fatal malgré traitements. Consentement écrit de famille pourpublicationimages/données.",
+      "limits": "43cas sélectionnés, ni incidence suisse ni efficacité démontrée ; corpsrevue/discussion encoreàlire.",
+      "cache": "/tmp/medina-g36-source-cache/ahle-swiss2020.raw",
+      "sha256": "601e52a951cd63ffac4b0223cc65b97e69bac8cac6c474908547c9d5faea92d2",
+      "actual_reading_recorded_at": "2026-11-02T18:23:54.636221+00:00",
+      "reading_mode": "targeted_actual_reading_not_full_document"
+    }
+  ],
+  "incidents": [
+    {
+      "url": "https://www.revmed.ch/revue-medicale-suisse/2024/revue-medicale-suisse-871/maladie-associee-aux-anticorps-anti-mog",
+      "outcome": "Wrong guessed slug returned unrelated page; not counted as source; institutional UNIL PDF found and read instead."
+    },
+    {
+      "url": "https://repositorio.pucrs.br/dspace/bitstream/10923/24123/2/Diagnosis_of_myelin_oligodendrocyte_glycoprotein_antibodyassociated_disease_International_MOGAD_Panel_proposed.pdf",
+      "outcome": "HTTP403 ; public foundation reprint obtained without bypass."
+    }
+  ]
+}

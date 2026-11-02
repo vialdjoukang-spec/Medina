@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-02T18:48:27.746880+00:00",
+  "initial_failures": [
+    "browser-figure-rows-first-final-failure.json",
+    "browser-figure-rows-scroll-wait-failure.json"
+  ],
+  "cause": "Lazy image decoding altered layout after row scrolling; first immediate bounding test and subsequent passive wait did not establish settled row position.",
+  "correction": "Actually scroll image into view, await its decode, then scroll final row and wait two animation frames before measuring. Reduced-motion preference matches other browser tests.",
+  "final_evidence": "browser-figure-rows.json",
+  "all_four_last_rows_fully_within_viewport": true,
+  "source_or_native_content_changed": false,
+  "old_receipts_preserved": true,
+  "clinical_certification": false
+}

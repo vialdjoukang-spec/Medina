@@ -1,0 +1,966 @@
+{
+  "code": "G36",
+  "title": "G36 — Autres affections démyélinisantes aiguës disséminées",
+  "author": "sol_neurologie",
+  "harness_agent_id": "astra_neurologie",
+  "model": "gpt-6.1-sol",
+  "reasoning": "high",
+  "recorded_at": "2026-11-02T18:48:27.776825+00:00",
+  "branch": "codex/alpha77/g36-integrate-g1",
+  "base": "8a512893acbab9caa0dcfdd0e8682a44ea72fda6",
+  "sources": [
+    {
+      "id": "R1",
+      "title": "OFS : CIM-10-GM française 2024",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/32686264/master",
+      "publisher": "Office fédéral de la statistique",
+      "read_at": "2026-11-02T18:27:17.621773+00:00",
+      "section": "G36 et ses quatre sous-codes complets ; G04.0, G04.8, G37.3 et G37.8",
+      "passage": "G36 est sans astérisque et comporte G36.0, G36.1, G36.8 et G36.9. Les exclusions distinguent G04.8 et H46. G37.8 inclut l’EMAD ; les mots du titre G36 ne classent pas automatiquement toute ADEM ou MOGAD.",
+      "population": "Champ propre à la source et aux sections citées ; ni tous G36 ni toutes sérologies.",
+      "limits": "Édition de classification explicitée ; pas certification du codage ou de la facturation d’un dossier individuel.",
+      "source_sha256": "04c9e9e5c95b2cbe2b8244872e6a6cbd5a7fc2358805e908b11d0e15784653be",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R2",
+      "title": "BfArM : bloc G35–G37",
+      "url": "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-g35-g37.htm",
+      "publisher": "Institut fédéral allemand BfArM",
+      "read_at": "2026-11-02T18:27:17.621773+00:00",
+      "section": "G36 entier et voisins G37",
+      "passage": "La version allemande confirme les quatre sous-codes, les exclusions et l’inclusion ADEM dans G37.8. La myélite transverse G37.3 ne remplace pas une neuromyélite optique établie.",
+      "population": "Champ propre à la source et aux sections citées ; ni tous G36 ni toutes sérologies.",
+      "limits": "Classification allemande, sans protocole thérapeutique suisse.",
+      "source_sha256": "8a8229c410200e8d1c7728e8f6eb6575ff2304c679da9b99b88d6cb047a9a658",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R3",
+      "title": "NEMOS : diagnostic et diagnostic différentiel",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10267280/",
+      "publisher": "Jarius et coll., Journal of Neurology",
+      "read_at": "2026-11-02T18:27:17.621773+00:00",
+      "section": "Résumé ; sections 3, 5, 6, 7, 8 et 11 ; section 4 paragraphes 0–3 et 5–6 ; section 10 paragraphes 0–4 et 9–10 ; tableaux 1, 2 et 5 ; références des critères MOG 2018",
+      "passage": "Les critères IPND 2015, l’examen clinique, l’IRM, les CBA et le LCR se confrontent. La vision est mesurée dans les deux yeux ; OCT et champ apportent un soutien. Une courte lésion médullaire ou un LCR normal ne suffit pas à exclure. Les résultats faibles et les discordances demandent une vérification adaptée.",
+      "population": "Champ propre à la source et aux sections citées ; ni tous G36 ni toutes sérologies.",
+      "limits": "Les critères MOG de la Box 5 sont de 2018 ; le cours utilise le consensus 2023 lu séparément. Les fréquences de cohortes ne sont pas des performances universelles de test.",
+      "source_sha256": "e8aaa4b5d97a35ace7cd4ce7e4de3300b2a7222fe7de5c70c0e0e103cbf874b9",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R4",
+      "title": "NEMOS : traitement de poussée et prévention",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10770020/",
+      "publisher": "Kümpfel et coll., Journal of Neurology",
+      "read_at": "2026-11-02T18:27:17.621773+00:00",
+      "section": "Sections 3, 5, 6, 17, 23, 24, 26, 31, 32, 35, 36 et 37 ; deux premiers paragraphes des sections 14 et 20",
+      "passage": "La poussée est traitée précocement ; méthylprednisolone et aphérèse sont adaptées à la gravité. La prévention AQP4 positive est distincte du groupe double négatif et de MOGAD. Le ravulizumab a été étudié en ouvert avec comparateur externe ; le texte général ne doit pas transformer tous les essais en randomisations contemporaines. La surveillance comprend activité, handicap et risques.",
+      "population": "Champ propre à la source et aux sections citées ; ni tous G36 ni toutes sérologies.",
+      "limits": "Recommandation de maladie, pas FI suisse. La correction 2024 et les notices de produits sont consultées. Les décisions de grossesse et de vaccination sont individualisées sans effacer les restrictions de notice.",
+      "source_sha256": "20e36a95eae46a8e08b9ac590959d215e70d73090e586358b896d6e7e00859c4",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R5",
+      "title": "Correction NEMOS : ravulizumab",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11136799/",
+      "publisher": "Kümpfel et coll., Journal of Neurology",
+      "read_at": "2026-11-02T18:27:17.621773+00:00",
+      "section": "Paragraphes de correction des tableaux 1 et 2",
+      "passage": "La charge ravulizumab est unique au jour 1 ; la première maintenance suit deux semaines après, puis toutes les huit semaines. L’inclusion du tableau d’essai est corrigée en au moins une poussée dans les douze mois précédents.",
+      "population": "Champ propre à la source et aux sections citées ; ni tous G36 ni toutes sérologies.",
+      "limits": "Anciennes erreurs conservées comme comparaison documentaire, sans les reproduire comme schéma correct.",
+      "source_sha256": "e60a63e21709496429e261b9e15f7e55295638af3a46c20b4a4dd254caf98605",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R6",
+      "title": "Enspryng : information professionnelle suisse",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680676170011",
+      "publisher": "Swissmedic/AIPS via l’outil AmiKo du dépôt",
+      "read_at": "2026-11-02T18:27:17.621773+00:00",
+      "section": "Composition, indication, doses, bilans avant traitement, ajustements, contre-indications, infections, vaccins, foie, neutrophiles, interactions et grossesse/allaitement ; date de notice",
+      "passage": "Satralizumab 120 mg/1 ml SC ; semaines 0, 2 et 4 puis toutes les quatre semaines dès semaine 8. Indication adulte et adolescente AQP4 positive, seul ou avec immunosuppresseur. Dépistage VHB et tuberculose ; surveillance hépatique et sanguine. Grossesse et allaitement ont leurs restrictions propres.",
+      "population": "Champ propre à la source et aux sections citées ; ni tous G36 ni toutes sérologies.",
+      "limits": "Données adolescentes limitées ; pas extrapolation à Hurst ou à toute MOGAD. Les règles de reprise après anomalie ou oubli dépendent du contexte et du tableau de notice.",
+      "source_sha256": "ef42ce49bc2048555667f8746e7e263064045cc94a58928410dc94cfed195349",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R7",
+      "title": "Uplizna : information professionnelle suisse",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680693220010",
+      "publisher": "Swissmedic/AIPS via l’outil AmiKo du dépôt",
+      "read_at": "2026-11-02T18:27:17.621773+00:00",
+      "section": "Composition, indication, doses, prémédication, surveillance, fonctions d’organes, contre-indications, infections, VHB/VHC, tuberculose, vaccins, grossesse/allaitement ; pharmacocinétique rénale et hépatique ciblée ; date",
+      "passage": "Inébilizumab 300 mg IV puis 300 mg deux semaines après, puis 300 mg tous les six mois ; monothérapie adulte AQP4 positive. Surveiller immunoglobulines, numération et infections ; la déplétion B persiste. Les restrictions de vaccins vivants et de grossesse sont propres au produit.",
+      "population": "Champ propre à la source et aux sections citées ; ni tous G36 ni toutes sérologies.",
+      "limits": "Aucun ancrage supplémentaire d’entretien inventé. Formes sévères d’insuffisance d’organe peu ou non étudiées. L’allaitement conserve les nuances de la notice ; ne pas réduire à une règle commune à tous les anticorps.",
+      "source_sha256": "ce9c4d8ee4a60af12643792afdac6c1211f08c50c0b035f4b579bc30dfcb4e96",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R8",
+      "title": "Ultomiris : information professionnelle suisse",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680672780016",
+      "publisher": "Swissmedic/AIPS via l’outil AmiKo du dépôt",
+      "read_at": "2026-11-02T18:27:17.621773+00:00",
+      "section": "Composition, indication NMOSD, doses adultes, fonctions rénale/hépatique, contre-indications, infection méningococcique, interruption NMOSD, interactions, grossesse/allaitement ; présentation de l’étude ALXN1210-NMO-307 ; date",
+      "passage": "Ravulizumab chez l’adulte AQP4 positif : charge pondérale unique, maintenance deux semaines après puis toutes les huit semaines. Formulations 10 et 100 mg/ml non interchangeables en volume. La vaccination ne supprime pas le risque méningococcique ; prophylaxie et urgence répondent aux conditions de notice. Contraception et interruption d’allaitement jusqu’à huit mois après.",
+      "population": "Champ propre à la source et aux sections citées ; ni tous G36 ni toutes sérologies.",
+      "limits": "Ne pas appliquer les tableaux pédiatriques HPN/SHUa à NMOSD. Étude NMOSD ouverte, 58 adultes ; absence d’événements dans un essai ne garantit pas une protection individuelle absolue.",
+      "source_sha256": "b8fc80c0b5ec4d1b72184ef9d4ffcd93935eafa0d3fc67c3553d6f1a62706ac7",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R9",
+      "title": "Soliris : information professionnelle suisse",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680592820014",
+      "publisher": "Swissmedic/AIPS via l’outil AmiKo du dépôt",
+      "read_at": "2026-11-02T18:27:17.621773+00:00",
+      "section": "Composition, indication et doses NMOSD, fonctions rénale/hépatique, contre-indications, méningocoque et autres infections, grossesse/allaitement ; date",
+      "passage": "Eculizumab pour NMOSD récurrente adulte AQP4 positive : 900 mg IV hebdomadaires quatre semaines, 1200 mg semaine 5 puis tous les quatorze jours. Vaccination et prophylaxie conditionnelle réduisent sans abolir le risque méningococcique. Pas ajustement rénal, hépatique non étudiée.",
+      "population": "Champ propre à la source et aux sections citées ; ni tous G36 ni toutes sérologies.",
+      "limits": "Ne pas transférer doses HPN, âges de myasthénie ou règle d’arrêt de cette autre indication. Grossesse et allaitement gardent leur balance individuelle, différente de la notice ravulizumab.",
+      "source_sha256": "9d5dff0350e73da4c3032aaee4ee8d4a61cf4272eba2838d39e6a6c12f8a2931",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R10",
+      "title": "Solu-Medrol : information professionnelle suisse",
+      "url": "https://amiko.oddb.org/fr/fi?gtin=7680351120812",
+      "publisher": "Swissmedic/AIPS via l’outil AmiKo du dépôt",
+      "read_at": "2026-11-02T18:27:17.621773+00:00",
+      "section": "Composition, indications, doses et voie, fonctions d’organes, contre-indications, début des précautions, infections, grossesse/allaitement, mécanisme et début de pharmacocinétique ; date",
+      "passage": "Les flacons 500 mg et 1 g indiquent la masse de méthylprednisolone base sous forme de succinate sodique. Au-delà de 250 mg, perfuser au moins trente minutes. La FI cite la poussée SEP avec 500–1000 mg durant trois à cinq jours ; la stratégie NMOSD est attribuée au guide NEMOS. Risques infectieux, métaboliques et liés aux excipients à surveiller.",
+      "population": "Champ propre à la source et aux sections citées ; ni tous G36 ni toutes sérologies.",
+      "limits": "La notice ne nomme pas une indication NMOSD. Ni schéma de traumatisme médullaire ni dose de 2 g d’un cas Hurst généralisés. Grossesse après balance ; pas allaitement selon cette notice.",
+      "source_sha256": "37e5d5633fb3ac291a1c689f3c3b015ab229768e19269df3e44de8dc7ea3dda0",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R11",
+      "title": "MOGAD : revue suisse HUG/CHUV",
+      "url": "https://iris.unil.ch/bitstreams/88317535-9cf5-4d19-997d-ed1f2f63348d/download",
+      "publisher": "Lerusse et coll., Revue médicale suisse",
+      "read_at": "2026-11-02T18:27:17.621773+00:00",
+      "section": "Introduction et clinique initiale ; page 829 laboratoire/CBA ; tableaux 1 et 2 pages 829–830 ; traitement ciblé pages 830–831",
+      "passage": "La MOGAD est distincte de SEP et de NMOSD AQP4 positive. Le CBA vivant est privilégié quand disponible ; l’adaptation des critères diagnostiques et les soutiens cliniques sont exposés. La prévention prolongée est discutée selon l’évolution et les données disponibles.",
+      "population": "Champ propre à la source et aux sections citées ; ni tous G36 ni toutes sérologies.",
+      "limits": "Lecture par sections, pas lecture intégrale revendiquée. Le tableau simplifie les seuils ; les distinctions de méthode sont vérifiées dans le primaire 2023. Doses ambiguës ou sans FI suisse correspondante non recopiées.",
+      "source_sha256": "7ead23fdf3b9f05b6e0a619e16832747de262aa85e70cae1619cf860819b4f22",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R12",
+      "title": "MOGAD : critères proposés par le panel international",
+      "url": "https://www.sumairafoundation.org/wp-content/uploads/2023/02/International-MOGAD-Panel-Proposed-Criteria.pdf",
+      "publisher": "Banwell et coll., Lancet Neurology ; reprint public Fondation Sumaira",
+      "read_at": "2026-11-02T18:27:17.621773+00:00",
+      "section": "Page 7 : tests et panel 1 ; figure 3 page 10 avec toutes ses notes",
+      "passage": "A : événement clinique cardinal ; B : MOG-IgG par CBA dans les conditions définies ; C : meilleur diagnostic exclu. En CBA fixé, clair ≥ 1:100, faible ≥ 1:10 et < 1:100. Les CBA vivants ont leurs seuils propres. Un faible positif, résultat sans titre ou LCR seul impose AQP4 négatif et au moins un soutien.",
+      "population": "Champ propre à la source et aux sections citées ; ni tous G36 ni toutes sérologies.",
+      "limits": "Consensus diagnostique international, pas fondement américain d’une conduite thérapeutique. Ne pas dépister indiscriminément ni généraliser 1:100 aux tests vivants. Sérum recommandé ; LCR dans des situations sélectionnées.",
+      "source_sha256": "860b173526f1d5e19994691e683b2eacd03490d11ddf679034e104277e178197",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R13",
+      "title": "Hurst : cas et revue systématique de Bâle",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7468463/",
+      "publisher": "Grzonka et coll., Hôpital universitaire de Bâle, Frontiers in Neurology",
+      "read_at": "2026-11-02T18:27:17.621773+00:00",
+      "section": "Résumé, affiliations et licence ; sections 3–7 entières avec tableaux 1 et 2 ; légende entière figure 2 ; original inspecté",
+      "passage": "Le cas de 59 ans montre déficit, coma, IRM progressive, microhémorragies et histologie compatible. La revue de 43 cas adultes publiés rapporte 46,5 % de décès, sans démonstration d’efficacité comparative. Le diagnostic et les soins sont spécialisés et urgents. Les auteurs rapportent un consentement écrit familial pour publication des données et images.",
+      "population": "Champ propre à la source et aux sections citées ; ni tous G36 ni toutes sérologies.",
+      "limits": "Cas sélectionnés, pas incidence suisse ni pronostic individuel. La figure 2 est sous licence CC BY 4.0 ; les images et cadres restent inchangés, annotations françaises adjacentes ajoutées.",
+      "source_sha256": "601e52a951cd63ffac4b0223cc65b97e69bac8cac6c474908547c9d5faea92d2",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": false
+    },
+    {
+      "id": "R14",
+      "title": "Gray764 : voies motrices normales",
+      "url": "https://commons.wikimedia.org/wiki/File:Gray764.png",
+      "publisher": "Gray1918, Carter ; Wikimedia Commons",
+      "read_at": "2026-11-02T18:27:17.621773+00:00",
+      "section": "Notice licence et original effectivement lus et inspectés antérieurement parSol, réutilisés explicitement",
+      "passage": "Illustration historique humaine des voies motrices et décussation, non carte des voies visuelles ou de toutes sensibilités.",
+      "population": "Illustration normale",
+      "limits": "Domaine public ; annotations françaises adjacentes ajoutées, pixels inchangés.",
+      "source_sha256": "fad33949feb30902f1f7fd54b1036ae2223357b40541a9b796cd32822fbecef5",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": true
+    },
+    {
+      "id": "R15",
+      "title": "PROFILES : cadre des situations et raisonnement clinique",
+      "url": "https://www.profilesmed.ch/",
+      "publisher": "Commission interfacultaire médicale suisse",
+      "read_at": "2026-11-02T18:27:17.621773+00:00",
+      "section": "Pages96–105 effectivement lues antérieurement parSol ; réutilisation du cadre de situations SSP",
+      "passage": "Le cours relie symptômes visuels, parésie, sensibilité, conscience et décision urgente à des exercices pédagogiques locaux.",
+      "population": "Cadre suisse de formation",
+      "limits": "Pas liste officielle des codesG36 ni numéros d’objectifs inventés ; correspondance locale.",
+      "source_sha256": "3c07db8e95b8aec160a2c19682b084d15cc7d9eea4fb8f757202c31b8b27177f",
+      "reader": "sol_neurologie",
+      "read_depth": "section",
+      "prior_actual_reading_reused": true
+    }
+  ],
+  "source_counts": {
+    "total": 15,
+    "targeted_G36": 13,
+    "prior_actual_Sol_reads_reused": 2
+  },
+  "monograph": [
+    {
+      "point": 1,
+      "title": "Définition",
+      "anchor": "g36-definition",
+      "sources": [
+        "R1",
+        "R2",
+        "R3",
+        "R11",
+        "R13"
+      ],
+      "coverage_explanation": "Le cours distingue catégorie administrative sans astérisque, NMOSD AQP4 positive, MOGAD immunologiquement distincte et Hurst fulminant ; aucune ordonnance universelle de catégorie.",
+      "evidence": [
+        "content-snapshot.html#g36-definition",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 2,
+      "title": "Épidémiologie",
+      "anchor": "g36-epidemiologie",
+      "sources": [
+        "R3",
+        "R11",
+        "R13"
+      ],
+      "coverage_explanation": "La lacune suisse spécifique G36, notamment âge et sexe, reste explicite. Tendances des cohortes et 43 cas Hurst sélectionnés ne deviennent pas un taux national ni pronostic individuel.",
+      "evidence": [
+        "content-snapshot.html#g36-epidemiologie",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 3,
+      "title": "Physiopathologie",
+      "anchor": "g36-s-physio-body",
+      "sources": [
+        "R3",
+        "R4",
+        "R10",
+        "R14"
+      ],
+      "coverage_explanation": "Six sciences relient normal, perturbation, signe, mesure et décision : voies motrices, astrocyte/myéline, conduction, CBA, immunologie et pharmacologie, avec figures accessibles.",
+      "evidence": [
+        "content-snapshot.html#g36-s-physio-body",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 4,
+      "title": "Démarche clinique",
+      "anchor": "g36-question",
+      "sources": [
+        "R3",
+        "R4",
+        "R13",
+        "R15"
+      ],
+      "coverage_explanation": "Localiser vision, moelle, cerveau et tronc, mesurer la gravité puis confronter mécanismes et alternatives ; prélèvement précoce si possible sans attente thérapeutique dangereuse.",
+      "evidence": [
+        "content-snapshot.html#g36-question",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 5,
+      "title": "Anamnèse",
+      "anchor": "g36-anamnese",
+      "sources": [
+        "R3",
+        "R11",
+        "R13"
+      ],
+      "coverage_explanation": "Chronologie et épisodes antérieurs, symptômes visuels et médullaires, area postrema, conscience, respiration, traitements, infections et grossesse guident les questions et urgences.",
+      "evidence": [
+        "content-snapshot.html#g36-anamnese",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 6,
+      "title": "Examen clinique",
+      "anchor": "g36-examen",
+      "sources": [
+        "R3",
+        "R12",
+        "R13"
+      ],
+      "coverage_explanation": "Acuité corrigée bilatérale, couleur, champ, pupilles, force, réflexes, sensibilité, sphincters, conscience et respiration sont distingués avec conditions de comparaison et limites.",
+      "evidence": [
+        "content-snapshot.html#g36-examen",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 7,
+      "title": "Syndromes",
+      "anchor": "g36-s-semio-signs",
+      "sources": [
+        "R3",
+        "R12",
+        "R13"
+      ],
+      "coverage_explanation": "Symptômes, signes et syndromes sont séparés : névrite, myélite, area postrema et encéphalopathie n’ont ni spécificité unique ni preuve automatique de cible immunologique.",
+      "evidence": [
+        "content-snapshot.html#g36-s-semio-signs",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 8,
+      "title": "Diagnostic positif",
+      "anchor": "g36-diagnostic",
+      "sources": [
+        "R3",
+        "R12"
+      ],
+      "coverage_explanation": "IPND2015 selon statut AQP4 et critères IRM détaillés ; MOG2023 A+B+C avec méthode CBA et soutiens ; alertes et limites évitent une preuve par anticorps isolé.",
+      "evidence": [
+        "content-snapshot.html#g36-diagnostic",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 9,
+      "title": "Explorations",
+      "anchor": "g36-e-strategie",
+      "sources": [
+        "R3",
+        "R12",
+        "R13"
+      ],
+      "coverage_explanation": "IRM cerveau/moelle entière/orbites, CBA, LCR, OCT et examen visuel répondent à questions explicites ; dates, traitement, qualité et limites d’interprétation sont intégrés.",
+      "evidence": [
+        "content-snapshot.html#g36-e-strategie",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 10,
+      "title": "Arbre diagnostique",
+      "anchor": "g36-urgence",
+      "sources": [
+        "R3",
+        "R4",
+        "R8",
+        "R9",
+        "R13"
+      ],
+      "coverage_explanation": "Menace visuelle, motrice, respiratoire ou de conscience oriente vers niveau urgent ; compression/infection/vasculaire restent alternatives et méningocoque sous anti-C5 ne patiente pas.",
+      "evidence": [
+        "content-snapshot.html#g36-urgence",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 11,
+      "title": "Prise en charge",
+      "anchor": "g36-traitement",
+      "sources": [
+        "R4",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R13"
+      ],
+      "coverage_explanation": "Poussée, prévention AQP4 positive, MOGAD et Hurst gardent leurs populations et niveaux de preuve ; cinq FI suisses datées, concentration et calendriers exacts sont exposés.",
+      "evidence": [
+        "content-snapshot.html#g36-traitement",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 12,
+      "title": "Prévention et suivi",
+      "anchor": "g36-suivi",
+      "sources": [
+        "R3",
+        "R4",
+        "R6",
+        "R7",
+        "R8",
+        "R9"
+      ],
+      "coverage_explanation": "Fonction, handicap, séquelles et tolérance suivis ; titres non suffisants pour prévoir poussée ou arrêter. Vaccination et prophylaxie selon produit sans abolir risque infectieux.",
+      "evidence": [
+        "content-snapshot.html#g36-suivi",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 13,
+      "title": "Points clés",
+      "anchor": "g36-codage",
+      "sources": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R12"
+      ],
+      "coverage_explanation": "Quatre sous-codes et voisins vérifiés ; repères≥3segments, critères area postrema, CBA fixé versus vivant, correction charge/maintenance et champs de FI sont visibles.",
+      "evidence": [
+        "content-snapshot.html#g36-codage",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 14,
+      "title": "Pièges",
+      "anchor": "g36-cas",
+      "sources": [
+        "R3",
+        "R12",
+        "R15"
+      ],
+      "coverage_explanation": "Quatre thèmes initiaux sont préservés et révisés : ELISAfaible, MOG1:40 fixé, profilLCR nonprobant seul, IRMpériépendymaire nonpreuveisolée ; exercices explicitement fictifs.",
+      "evidence": [
+        "content-snapshot.html#g36-cas",
+        "recherche_G36/sources.json"
+      ]
+    }
+  ],
+  "matrix20": [
+    {
+      "point": 1,
+      "title": "Question clinique et enjeu pour l’examen fédéral",
+      "status": "covered",
+      "research_status": "✔",
+      "panel": "pA",
+      "anchor": "g36-question",
+      "sources": [
+        "R3",
+        "R4",
+        "R15"
+      ],
+      "scope": "Question traitée avec passages lus : Névrite, myélite, conscience et urgence ; exercices fictifs.",
+      "evidence": [
+        "content-snapshot.html#g36-question",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 2,
+      "title": "Définition et périmètre CIM-10-GM",
+      "status": "covered",
+      "research_status": "✔",
+      "panel": "pA",
+      "anchor": "g36-codage",
+      "sources": [
+        "R1",
+        "R2"
+      ],
+      "scope": "Question traitée avec passages lus : G36 sans astérisque ; quatre sous-codes ; exclusions et voisins.",
+      "evidence": [
+        "content-snapshot.html#g36-codage",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 3,
+      "title": "Classifications et stades",
+      "status": "covered",
+      "research_status": "✔",
+      "panel": "pA",
+      "anchor": "g36-diagnostic",
+      "sources": [
+        "R3",
+        "R12",
+        "R13"
+      ],
+      "scope": "Question traitée avec passages lus : IPND2015 et MOG2023 ; formes AQP4positive,négative etHurst distinctes ; pas stade universelG36.",
+      "evidence": [
+        "content-snapshot.html#g36-diagnostic",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 4,
+      "title": "Épidémiologie suisse puis européenne",
+      "status": "covered",
+      "research_status": "LACUNE",
+      "panel": "pA",
+      "anchor": "g36-epidemiologie",
+      "sources": [
+        "R1",
+        "R3",
+        "R11",
+        "R13"
+      ],
+      "scope": "Question traitée avec passages lus : OFS/RMS/NEMOS et casBâle consultés : pas incidence suisseG36 ventilée âge/sexe ; populations des guides et cas non assimilées. Couvert désigne ici la question et sa limite explicite, pas une donnée ou un droit exhaustif retrouvé ; le statut de recherche reste LACUNE.",
+      "evidence": [
+        "content-snapshot.html#g36-epidemiologie",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 5,
+      "title": "Normal → pathologique",
+      "status": "covered",
+      "research_status": "✔",
+      "panel": "pS",
+      "anchor": "g36-s-physio-body",
+      "sources": [
+        "R3",
+        "R4",
+        "R10",
+        "R14"
+      ],
+      "scope": "Question traitée avec passages lus : Six sciences, astrocyte/myéline, voies motrices, conduction, immunologie et médicament.",
+      "evidence": [
+        "content-snapshot.html#g36-s-physio-body",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 6,
+      "title": "Étiologies et facteurs de risque",
+      "status": "covered",
+      "research_status": "✔",
+      "panel": "pA",
+      "anchor": "g36-causes",
+      "sources": [
+        "R3",
+        "R11",
+        "R13"
+      ],
+      "scope": "Question traitée avec passages lus : Autoimmunité, associations infectieuses et alternatives ; temporalité non causalité.",
+      "evidence": [
+        "content-snapshot.html#g36-causes",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 7,
+      "title": "Anamnèse et symptômes",
+      "status": "covered",
+      "research_status": "✔",
+      "panel": "pA",
+      "anchor": "g36-anamnese",
+      "sources": [
+        "R3",
+        "R11",
+        "R13"
+      ],
+      "scope": "Question traitée avec passages lus : Chronologie, vision, moelle, area postrema, conscience ; fréquences non généralisées.",
+      "evidence": [
+        "content-snapshot.html#g36-anamnese",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 8,
+      "title": "Examen clinique",
+      "status": "covered",
+      "research_status": "✔",
+      "panel": "pA",
+      "anchor": "g36-examen",
+      "sources": [
+        "R3",
+        "R12",
+        "R13"
+      ],
+      "scope": "Question traitée avec passages lus : Vision bilatérale, pupilles, couleur, force,sensibilité,sphincters,respiration ; pas sensibilité/spécificité universelle inventée.",
+      "evidence": [
+        "content-snapshot.html#g36-examen",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 9,
+      "title": "Drapeaux rouges et urgences",
+      "status": "covered",
+      "research_status": "✔",
+      "panel": "pA",
+      "anchor": "g36-urgence",
+      "sources": [
+        "R3",
+        "R4",
+        "R8",
+        "R9",
+        "R13"
+      ],
+      "scope": "Question traitée avec passages lus : Baissevisuelle, tétraparésie, déglutition/respiration, coma, méningocoque ; sans attendre48h diagnostiques.",
+      "evidence": [
+        "content-snapshot.html#g36-urgence",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 10,
+      "title": "Examens complémentaires",
+      "status": "covered",
+      "research_status": "✔",
+      "panel": "pE",
+      "anchor": "g36-e-strategie",
+      "sources": [
+        "R3",
+        "R12",
+        "R13"
+      ],
+      "scope": "Question traitée avec passages lus : IRM cerveau/moelle/orbites,CBA/LCR/OCT ; méthode et timing avec limites.",
+      "evidence": [
+        "content-snapshot.html#g36-e-strategie",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 11,
+      "title": "Diagnostic différentiel",
+      "status": "covered",
+      "research_status": "✔",
+      "panel": "pA",
+      "anchor": "g36-differentiel",
+      "sources": [
+        "R3",
+        "R12",
+        "R13"
+      ],
+      "scope": "Question traitée avec passages lus : SEP,MOGAD,compression,vasculaire,infection,sarcoïdose et métabolique : discriminants et limites.",
+      "evidence": [
+        "content-snapshot.html#g36-differentiel",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 12,
+      "title": "Prise en charge suisse",
+      "status": "covered",
+      "research_status": "✔",
+      "panel": "pA",
+      "anchor": "g36-traitement",
+      "sources": [
+        "R4",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R13"
+      ],
+      "scope": "Question traitée avec passages lus : Centre neurologique, urgence, soutien ; FI suisses datées et guideNEMOS ; Hurst séparé.",
+      "evidence": [
+        "content-snapshot.html#g36-traitement",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 13,
+      "title": "Complications et pronostic",
+      "status": "covered",
+      "research_status": "✔",
+      "panel": "pA",
+      "anchor": "g36-hurst",
+      "sources": [
+        "R3",
+        "R4",
+        "R13"
+      ],
+      "scope": "Question traitée avec passages lus : Handicap de poussée, séquelles, infections ; casHurst sélectionnés non pronostic national.",
+      "evidence": [
+        "content-snapshot.html#g36-hurst",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 14,
+      "title": "Suivi, prévention, dépistage",
+      "status": "covered",
+      "research_status": "✔",
+      "panel": "pA",
+      "anchor": "g36-suivi",
+      "sources": [
+        "R3",
+        "R4",
+        "R6",
+        "R7",
+        "R8",
+        "R9"
+      ],
+      "scope": "Question traitée avec passages lus : Suivi clinique, vaccination adaptée au produit, pas dépistage populationnel d’anticorps.",
+      "evidence": [
+        "content-snapshot.html#g36-suivi",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 15,
+      "title": "Situations particulières",
+      "status": "covered",
+      "research_status": "✔",
+      "panel": "pA",
+      "anchor": "g36-particuliers",
+      "sources": [
+        "R3",
+        "R4",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R11"
+      ],
+      "scope": "Question traitée avec passages lus : Enfant, âgé, grossesse/allaitement et rein/foie selon chaqueFI ; pas schéma adulteuniversel.",
+      "evidence": [
+        "content-snapshot.html#g36-particuliers",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 16,
+      "title": "Spécificités suisses",
+      "status": "covered",
+      "research_status": "LACUNE",
+      "panel": "pA",
+      "anchor": "g36-suisse",
+      "sources": [
+        "R1",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R11",
+        "R13"
+      ],
+      "scope": "Question traitée avec passages lus : OFS etFI, sources hospitalières suisses ; obligationsOFSP,Suva/LAA,conduite,AI et remboursement non établis exhaustivement ; vérification individuelle requise. Couvert désigne ici la question et sa limite explicite, pas une donnée ou un droit exhaustif retrouvé ; le statut de recherche reste LACUNE.",
+      "evidence": [
+        "content-snapshot.html#g36-suisse",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 17,
+      "title": "Critères formels du diagnostic",
+      "status": "covered",
+      "research_status": "✔",
+      "panel": "pA",
+      "anchor": "g36-diagnostic",
+      "sources": [
+        "R3",
+        "R12",
+        "R13"
+      ],
+      "scope": "Question traitée avec passages lus : Alert IPND2015 et A+B+C MOG2023, AHLE sans score inventé.",
+      "evidence": [
+        "content-snapshot.html#g36-diagnostic",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 18,
+      "title": "Paramètres clés chiffrés",
+      "status": "covered",
+      "research_status": "✔",
+      "panel": "pP",
+      "anchor": "g36-p-ultomiris",
+      "sources": [
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R12"
+      ],
+      "scope": "Question traitée avec passages lus : ≥3segments ; APS48h si paslésion ; seuilsMOGselonméthode ; dosesFI exactes.",
+      "evidence": [
+        "content-snapshot.html#g36-p-ultomiris",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 19,
+      "title": "Sous-codes CIM-10-GM couverts",
+      "status": "covered",
+      "research_status": "✔",
+      "panel": "pA",
+      "anchor": "g36-codage",
+      "sources": [
+        "R1",
+        "R2",
+        "R4",
+        "R13"
+      ],
+      "scope": "Question traitée avec passages lus : G36.0,G36.1,G36.8,G36.9 : diagnostic et principes propres ; pas ordonnance de catégorie.",
+      "evidence": [
+        "content-snapshot.html#g36-codage",
+        "recherche_G36/sources.json"
+      ]
+    },
+    {
+      "point": 20,
+      "title": "Points d’examen fédéral",
+      "status": "covered",
+      "research_status": "✔",
+      "panel": "pA",
+      "anchor": "g36-cas",
+      "sources": [
+        "R3",
+        "R12",
+        "R15"
+      ],
+      "scope": "Question traitée avec passages lus : TestsCBA, faiblepositif fixé1:40,soutiennonspécifiqueLCR,IRMpériépendymaire ; correction des preuves excessives.",
+      "evidence": [
+        "content-snapshot.html#g36-cas",
+        "recherche_G36/sources.json"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "path": "figures/Gray764.png",
+      "sha256": "0aab3ff23b815eb5f6eab0ba8c583726c5994c025899f3f6654f47e566249b09",
+      "source": "R14",
+      "original_url": "https://commons.wikimedia.org/wiki/File:Gray764.png",
+      "license": "Domaine public : original1918, notice de figure effectivement lue antérieurement parSol et réutilisée.",
+      "author": "Gray, Anatomy of the Human Body,1918 ; illustration attribuée àHenryVandykeCarter.",
+      "annotations": "Quatre lignes françaises adjacentes : airemotrice,capsuleinterne,décussation,faisceaucorticospinal ; ni cartevisuelle ni anatomie IA.",
+      "medical_review": {
+        "reviewer": "sol_neurologie",
+        "mode": "self_review",
+        "clinical_certification": false,
+        "method": "Original effectivement vu, source/légende/rights/éthique lus par périmètre ; captures natives finales réellement inspectées."
+      },
+      "pixels_edited": false
+    },
+    {
+      "path": "figures/AHLEBasel2020-Fig2.jpg",
+      "sha256": "deb4f1ffa19e42a66df0c47200383dbe6e950541cdfc38ae08772dd7f919f34e",
+      "source": "R13",
+      "original_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/19d1/7468463/0defe31e4e88/fneur-11-00899-g0002.jpg",
+      "license": "Creative Commons Attribution4.0 : https://creativecommons.org/licenses/by/4.0/ ; licence et source liées.",
+      "author": "Grzonka et coll., Hôpital universitaire deBâle, FrontNeurol2020, figure2.",
+      "annotations": "Quatre lignes françaises adjacentes : jours1et4/intervalle3jours,FLAIR,pédoncule,SWI/splénium,T1rehaussement etEEGidentifié ; cadres/flèches/pixels inchangés.",
+      "medical_review": {
+        "reviewer": "sol_neurologie",
+        "mode": "self_review",
+        "clinical_certification": false,
+        "method": "Original effectivement vu, source/légende/rights/éthique lus par périmètre ; captures natives finales réellement inspectées."
+      },
+      "pixels_edited": false
+    }
+  ],
+  "semiology": {
+    "section_anchors": [
+      "g36-s-semio-normal",
+      "g36-s-semio-signs",
+      "g36-s-semio-mechanisms",
+      "g36-s-semio-examination",
+      "g36-s-semio-interpretation",
+      "g36-s-semio-differentials",
+      "g36-s-semio-urgency",
+      "g36-s-semio-limits",
+      "g36-s-semio-sources"
+    ]
+  },
+  "reviews": {
+    "medical": {
+      "path": "reviews/medical.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "a5e2620a745f2415bf89471b46b70760d399746daf519a5ffc6a50fe2d2fc34a"
+    },
+    "language": {
+      "path": "reviews/language.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "432df11e3413cfe832391eb90fb73c4772d61cc79555155a6239b8d9b6bd1aac"
+    },
+    "visual_desktop": {
+      "path": "reviews/visual_desktop.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "1dff6557a1edd8418c04ba2c693edce27edbf4721ae06894decf0602b080d73f"
+    },
+    "visual_mobile": {
+      "path": "reviews/visual_mobile.json",
+      "reviewer": "sol_neurologie",
+      "mode": "self_review",
+      "sha256": "4068ef4a48c5878ad8a2043efc911ce9d6b51122bc7194269b59705b326ec1c5"
+    }
+  },
+  "blocking_findings": [],
+  "documented_limits": [
+    "Pas incidence suisseG36 âge/sexe ni cadre administratif exhaustif établi.",
+    "Quatre sous-codes distincts sans astérisque ; MOGAD pas codeG36.8 automatique.",
+    "Critères IPND2015 et MOG2023 distincts ; faiblepositif fixé et vivant nonuniversalisés.",
+    "Ravulizumab charge unique puismaintenanceJ15 ; essaiouvert àcomparateur externe, pasclassementcomparatif.",
+    "Solu-Medrol : stratégie NMOSD du guide et indication SEP deFI séparées.",
+    "Anti-C5 : vaccination/prophylaxie ne supprime pas risque méningocoque.",
+    "Hurst : cas sélectionnés, pasdose/protocole universel ni causalitévaccinale déduite.",
+    "ImageFinder nonappelé faute decontrôle ; récupération manuelle d’original primaire admissible, pascertification humaine."
+  ],
+  "procedure": {
+    "prewriting_gate_before_first_new_medical_writing": true,
+    "evidence": "prewriting-gate.json",
+    "acquisition_return_awaited_before_worktree": true,
+    "full_worktree": "/workspace/Medina-neurologie-G36",
+    "initial_start_order_compliant": true,
+    "effective_start_and_claim_at": "2026-11-02T18:09:19+00:00",
+    "effective_start_and_claim_before_primary_research": true,
+    "clinical_recheck": "clinical-review-completed.json",
+    "initial_static_failure_preserved": "initial-static-failure.json",
+    "window_precheck_correction": "window-precheck-correction.json",
+    "first_native_version_preserved": "before-source-window-polish",
+    "browser_scroll_failure_preserved": "browser-test-scroll-correction.json",
+    "prior_positive_version_preserved": "before-pedagogical-clarification"
+  },
+  "historical_model_trace": [
+    {
+      "agent_id": "astra_neurologie",
+      "scope": "Identifiant historique conservé ; recherche,rédaction etrevuesG36parSol,aucunhistoriqueAstrarenommé."
+    }
+  ],
+  "tokens_actual": null,
+  "cost_actual": null,
+  "clinical_certification": false,
+  "publication_allowed": false
+}
