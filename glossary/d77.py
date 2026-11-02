@@ -15,43 +15,11 @@ def add_if_absent(key, letters, full, definition, window=None):
         G[key] = {'lit': [list(x) for x in letters], 'full': full,
                   'def': '<p>' + definition + '</p>', 'ref': window}
 
-# --- Schistosomose et sciences associées ---
-add_if_absent('HSS', [('H','Hepato- (hépato-)'),('S','Splenic (splénique)'),('S','Schistosomiasis (schistosomose)')],
-              'Schistosomose hépatosplénique (hepatosplenic schistosomiasis)',
-              'Forme chronique grave de la schistosomose : fibrose périportale, hypertension portale, varices œsophagiennes et splénomégalie avec hypersplénisme. Elle touche 4 à 8 % des personnes infectées (série européenne TIPS 2021).', 'd77-hss')
-add_if_absent('CCA', [('C','Circulating (circulant)'),('C','Cathodic (cathodique)'),('A','Antigen (antigène)')],
-              'Antigène cathodique circulant',
-              'Antigène du parasite détecté dans l’urine ; le Swiss TPH l’a utilisé pour dépister Schistosoma mansoni chez des réfugiés érythréens (40,2 % de tests positifs).', 'd77-cca')
-add_if_absent('TPH', [('T','Tropical'),('P','and Public (et de santé publique)'),('H','Health (santé)')],
-              'Institut tropical et de santé publique suisse (Swiss Tropical and Public Health Institute, Bâle)',
-              'Institut de recherche bâlois dont l’étude de 2018 a mesuré la schistosomose chez des réfugiés érythréens arrivés récemment en Suisse.')
-add_if_absent('PSVD', [('P','Porto-'),('S','Sinusoidal (sinusoïdal)'),('V','Vascular (vasculaire)'),('D','Disorder (trouble)')],
-              'Trouble vasculaire porto-sinusoïdal (porto-sinusoidal vascular disorder)',
-              'Hypertension portale sans cirrhose, dont le diagnostic exige l’exclusion de la cirrhose et des autres causes d’hypertension portale (Baveno VII).', 'd77-psvd')
-add_if_absent('BBNS', [('B','Bêta'),('B','Bloquants'),('N','Non'),('S','Sélectifs')],
-              'Bêtabloquants non sélectifs',
-              'Médicaments qui abaissent la pression portale ; en Suisse, le propranolol est celui dont l’information professionnelle mentionne les varices œsophagiennes.', 'd77-bbns')
-add_if_absent('UE', [('U','Union'),('E','Européenne')], 'Union européenne', 'Cadre géographique du dépistage de l’ECDC 2018.')
-add_if_absent('EEE', [('E','Espace'),('E','Économique'),('E','Européen')], 'Espace économique européen', 'Cadre géographique du dépistage de l’ECDC 2018, avec l’Union européenne.')
-add_if_absent('MCV', [('M','Meningococcal (méningococcique)'),('C','Conjugate (conjugué)'),('V','Vaccine (vaccin)')],
-              'Vaccin méningococcique conjugué', 'Dans MCV-ACWY, vaccin conjugué contre les sérogroupes A, C, W et Y (Menveo), recommandé en deux doses après splénectomie.', 'd77-vaccins')
-add_if_absent('ACWY', [('A','sérogroupe A'),('C','sérogroupe C'),('W','sérogroupe W'),('Y','sérogroupe Y')],
-              'Sérogroupes méningococciques A, C, W et Y', 'Sérogroupes couverts par le vaccin conjugué.', 'd77-vaccins')
-add_if_absent('MenB', [('Men','Méningocoque'),('B','de sérogroupe B')], 'Méningocoque de sérogroupe B',
-              'Vaccin Bexsero : deux doses à deux mois d’intervalle, rappel tous les 5 ans après splénectomie.', 'd77-vaccins')
-add_if_absent('PAL', [('P','Phosphatases'),('AL','ALcalines')], 'Phosphatases alcalines',
-              'Enzyme de cholestase dont l’élévation accompagne celle des GGT et de la bilirubine dans les formes avancées de bilharziose.')
-add_if_absent('LAMP', [('L','Loop-mediated (médiée par une boucle)'),('AMP','isothermal AMPlification (amplification isotherme)')],
-              'Amplification isotherme médiée par boucle', 'Technique moléculaire de détection de l’ADN du parasite, disponible surtout en centre de référence.')
-add_if_absent('BIA', [('B','British'),('I','Infection'),('A','Association')], 'Association britannique des infections',
-              'Auteur de la directive 2024 sur l’éosinophilie des voyageurs et migrants, lue en résumé seulement et non utilisée pour une conduite.')
-add_if_absent('HC', [('H','Health'),('C','Care')], 'HealthCare (soins de santé)', 'Élément du nom du titulaire Spirig HealthCare AG, de l’information professionnelle du carvédilol consultée.')
-add_if_absent('Gamna-Gandy', [('Gamna','nom propre'),('Gandy','nom propre')], 'Corps de Gamna-Gandy (éponyme)',
-              'Nodules sidérotiques de la rate d’hypertension portale : foyers ponctués en hyposignal T1 et T2 en IRM, liés à l’hémosidérine des macrophages.')
-add_if_absent('Échographie-Doppler', [('Écho','Écho-'),('graphie','graphie'),('Doppler','mesure du flux par effet Doppler')], 'Échographie avec mesure Doppler des flux',
-              'Examen qui mesure la longueur de la rate, la taille du foie, le flux portal et la texture dans le bilan d’une bilharziose hépatosplénique.')
-add_if_absent('Proche-Orient', [('Proche','Proche'),('Orient','Orient')], 'Proche-Orient', 'Région où <i>Schistosoma haematobium</i> est présent.')
-for _k, _t in [('D73.0','Hyposplénisme, dont l’asplénie après splénectomie'),('D73.1','Hypersplénisme'),('D73.2','Splénomégalie congestive chronique'),('D73.8','Autres maladies de la rate, dont la fibrose de la rate sans cause classée ailleurs')]:
-    add_if_absent(_k, [(_k[:3],'Rubrique des maladies de la rate (CIM-10-GM 2024)'),(_k[3:],_t)], _t, 'Code CIM-10-GM 2024 voisin de D77* : ' + _t + '.')
-for _k, _t in [('B65.0','Schistosoma haematobium, forme urogénitale'),('B65.1','Schistosoma mansoni, forme intestinale'),('B65.2','Schistosoma japonicum, forme asiatique'),('B65.3','dermatite cercarienne'),('B65.8','autres schistosomiases (S. intercalatum, S. mattheei, S. mekongi)'),('B65.9','schistosomiase sans précision')]:
-    add_if_absent(_k, [(_k[:3],'Rubrique de la schistosomiase [bilharziose] (CIM-10-GM 2024)'),(_k[3:],_t)], 'Schistosomiase : ' + _t, 'Code étiologique (dague) sous lequel D77* se code : ' + _t + '.', 'd77-codage')
+add_if_absent('HSS',[('H', 'Hepato- (hépato-)'), ('S', 'Splenic (splénique)'), ('S', 'Schistosomiasis (schistosomiase)')],'Schistosomiase hépatosplénique','Forme associant notamment fibrose périportale, hypertension portale présinusoïdale et splénomégalie. Une fonction hépatique relativement préservée n’exclut pas des varices graves. Source : revue HSS 2021.','d77-exp-3')
+add_if_absent('PSVD',[('P', 'Porto-'), ('S', 'Sinusoidal (sinusoïdale)'), ('V', 'Vascular (vasculaire)'), ('D', 'Disease (maladie)')],'Maladie vasculaire porto-sinusoïdale','La définition EASL 2026 exclut explicitement la schistosomiase. Une hypertension portale non cirrhotique ne suffit donc pas à attribuer cette étiquette.','d77-exp-10')
+add_if_absent('PALS',[('P', 'PeriArteriolar (périartériolaire)'), ('L', 'Lymphoid (lymphoïde)'), ('S', 'Sheath (gaine)')],'Gaine lymphoïde périartériolaire','Structure de la pulpe blanche indiquée dans la légende de la photographie humaine de Gleiberg. L’image normale n’est pas un cas de fibrose D77.',None)
+add_if_absent('GTIN',[('G', 'Global'), ('T', 'Trade'), ('I', 'Item'), ('N', 'Number')],'Numéro international d’identification d’un article','Identifiant utilisé pour préciser la présentation dont la FI suisse a été consultée, sans prouver sa disponibilité actuelle.',None)
+add_if_absent('H&E',[('H', 'Hématoxyline'), ('&', 'et'), ('E', 'Éosine')],'Coloration hématoxyline-éosine','Coloration de l’original histologique humain de rate. L’organisation observée ne mesure pas la pression portale ou l’immunité individuelle.',None)
+add_if_absent('OAMéd',[('OA', 'Ordonnance sur les autorisations'), ('Méd', 'dans le domaine des médicaments')],'Ordonnance sur les autorisations dans le domaine des médicaments','L’article 49 encadre certaines importations professionnelles. Vérifier conditions Swissmedic et produit réel ; aucune autorisation individuelle n’est accordée ici.','d77-cas-3')
+add_if_absent('AmiKo',[('AmiKo', 'Nom de la base documentaire')],'Base d’information sur les médicaments','Base consultée pour les FI exactes et la recherche datée praziquantel/Biltricide. Une recherche sans résultat ne prouve pas une indisponibilité définitive.','d77-cas-3')
+add_if_absent('D77',[('D77', 'Catégorie de manifestation, usage astérisque')],'Autres maladies du sang et des organes hématopoïétiques au cours de maladies classées ailleurs','Inclusion : fibrose splénique due à la schistosomiase B65.-†, CIM-10-GM suisse 2024. Aucun sous-code D77.x ; diagnostic et cause précèdent le codage.','d77-exp-1')
