@@ -1,0 +1,36 @@
+from common import *
+sec('e-1','Hémogramme et réticulocytes : une lecture dynamique', '''
+<p>L’hémoglobine et l’hématocrite décrivent le sang prélevé à un moment donné. Comparer les résultats exige de connaître les pertes, les perfusions et les transfusions survenues entre les prélèvements. La directive européenne insiste sur les mesures répétées parce qu’une première valeur normale peut masquer la perte précoce.</p>
+<p>Les indices érythrocytaires décrivent des propriétés moyennes. La fenêtre'''+w('indices','indices et plages de référence')+''' distingue volume globulaire moyen, teneur et concentration corpusculaires. Une anémie normocytaire peut avoir plusieurs causes ; elle ne démontre pas une perte aiguë et n’exclut pas des carences associées.</p>
+<p>Le documentHUG2022 décrit une réponse régénérative à partir de120G/L de réticulocytes et une réponse arégénérative en dessous de70G/L. La zone intermédiaire et la sévérité de l’anémie exigent une interprétation, pas un classement forcé. Ces repères datés ne remplacent pas les références du laboratoire ni la chronologie. L’hémolyse peut aussi être régénérative.</p>
+'''+original('blood','d62-exam-blood')+quiz('Après une perte sanguine, on vous montre un frottis riche en hématies. Que pouvez-vous en conclure ?','L’image montre une morphologie, mais elle ne donne ni la concentration d’hémoglobine ni le volume perdu.','Le patient ne peut pas être anémique.','La photo suffit pour calculer le nombre d’unités à transfuser.','Une distribution de cellules sur une lame ne mesure pas le sang circulant. Numération, chronologie et tolérance restent nécessaires.'),'TRAUMA','HUG','BLOOD-IMAGE')
+
+sec('e-2','Perfusion et hémostase : compléter la numération', '''
+<p>Le lactate est utile pour estimer et suivre la perturbation de perfusion en traumatologie. Un résultat élevé ne constitue pas une preuve exclusive de saignement : la production et la clairance peuvent toutes deux intervenir. Le déficit de base fournit une autre information acido-basique ; insuffisance rénale et hyperchlorémie peuvent aussi le modifier.</p>
+<p>Les examens d’hémostase recherchent les déficits associés à une hémorragie majeure. Le temps de prothrombine ou son rapport normalisé, le fibrinogène deClauss et la numération plaquettaire apportent des informations différentes. Les méthodes viscoélastiques peuvent compléter le bilan selon le protocole disponible.</p>
+<p>Le tableau présente des repères de la directive européenne de traumatologie2023. Les valeurs normales sont celles du laboratoire ; les chiffres ci-dessous sont des <b>objectifs ou déclencheurs contextualisés</b>.</p>
+'''+table(['Mesure','Repère en trauma','Limite'],[
+['Fibrinogène deClauss','≤1,5g/L avec hémorragie majeure : supplémentation à envisager selon recommandation','Une anomalie viscoélastique fonctionnelle peut aussi guider ; produit et dose relèvent du protocole.'],
+['Plaquettes','Maintenir>50G/L si saignement persistant ;>100G/L si traumatisme crânien','Recommandation de faible niveau de preuve, pas objectif pour toute anémie.'],
+['Calcium ionisé','Maintenir dans l’intervalle normal de la méthode','Surveillance particulièrement importante lors de transfusion massive ; ne pas substituer sans contextualisation le calcium total.'],
+['Température','Prévenir les pertes de chaleur et maintenir la normothermie','La température participe à l’hémostase ; pas de seuil de clôtureD62 déduit.']])+'''
+<p>Les résultats sont réévalués pendant la prise en charge. Un bilan initial acceptable n’assure pas qu’il le restera si la perte se poursuit.</p>
+''','TRAUMA')
+
+sec('e-3','Localiser sans retarder le traitement', '''
+<p>La première décision est de savoir si une investigation supplémentaire peut précéder le contrôle de la source. La directive européenne recommande un contrôle immédiat chez les patients avec source évidente et chez ceux en choc extrême avec source suspectée. Chez les autres, elle recommande une investigation rapide si la source n’est pas connue.</p>
+<p>L’échographie ciblée au point de soins fait partie de l’évaluation du traumatisme thoracoabdominal. Elle recherche notamment du liquide dans des espaces définis. Le scanner injecté corps entier peut identifier les lésions et la source potentielle. Une méthode rapide ne devient pas un examen exhaustif ; son résultat doit être confronté à la physiologie et au mécanisme de la lésion.</p>
+<p>Dans une hémorragie digestive ou obstétricale, mobiliser le circuit de la spécialité. Une même baisse d’hémoglobine peut conduire à des examens et à des gestes différents selon le siège. La leçonD62 explique la conséquence hématologique et les principes transversaux ; elle ne remplace pas la monographie de chaque source.</p>
+'''+key('Un examen a de la valeur s’il répond à la question clinique au bon moment. Il ne doit pas devenir un délai inutile avant une hémostase urgente.'),'TRAUMA','ESGE','PPH-CH')
+
+sec('e-4','Préparer la transfusion et analyser une réaction', '''
+<p>Avant transfusion, la procédureHUG2025 prévoit la vérification de l’identité et de la concordance entre documents et produit, du groupe, des contrôles de compatibilité et des conditions du produit. Le laboratoire doit connaître les antécédents transfusionnels et les informations utiles. Les délais et exceptions relèvent de la procédure institutionnelle.</p>
+<p>Une réaction suspecte nécessite d’abord la conduite clinique immédiate. L’investigation peut ensuite comprendre contrôle documentaire, groupe, recherche d’anticorps, compatibilité et test direct à l’antiglobuline. Les marqueurs de destruction érythrocytaire aident à rechercher une hémolyse ; des prélèvements bactériologiques peuvent être requis si une contamination est discutée.</p>
+<p>SelonSwissmedic2024, une réaction hémolytique peut être immédiate ou retardée. Une baisse d’hémoglobine, une réponse insuffisante à la transfusion, un ictère ou des urines foncées doivent être interprétés avec le contexte. Une dyspnée nouvelle peut relever d’une surcharge, d’une atteinte pulmonaire, d’une allergie ou d’une autre cause : ne pas conclure seulement « encore anémique ».</p>
+''','HUG-TRANS','SWISSMED')
+
+sec('e-5','Bilan martial et contrôle après stabilisation', '''
+<p>Le bilan martial répond à une question de récupération : existe-t-il un manque de fer qui limite la production ? La ferritine, la saturation de la transferrine et l’hémogramme doivent être interprétés ensemble et selon l’inflammation. Un résultat isolé ne résume pas tous les contextes.</p>
+<p>Après l’accouchement, l’OMS2025 souligne que la ferritine est sensible à l’inflammation et ne convient pas comme critère isolé immédiat pour établir une carence. Le contexte de perte, l’anémie antérieure et les autres données guident une évaluation spécialisée. LaFI deFerinject exige de son côté une carence confirmée par des analyses appropriées ; cette exigence n’est pas supprimée par le recours à une recommandation générale.</p>
+<p>Pour juger la réponse à une supplémentation parFerinject, saFI propose de réévaluer l’hémoglobine au plus tôt quatre semaines après la dernière administration. Ce délai concerne l’évaluation du traitement martial : il ne signifie jamais qu’il faut attendre quatre semaines pour contrôler une numération si un saignement ou une aggravation sont suspectés.</p>
+''','MEDIX','FERINJECT','WHO-PPH')
