@@ -17,7 +17,7 @@ L'état réel se lit dans `organisation/CYCLES_CLAUDE.json` (ne jamais se fier �
 - Distributeur d'agents : skill `.claude/skills/agent-distributor/SKILL.md`, veille `tools/distributor_veille.py`.
 - Veille Codex : `tools/clov2_veille.py --boucle 600` ; lire les messages de Codex (issue 97) et les pondérer.
 - **Tout refus ou blocage est transmis aussitôt à Codex** (commentaire dans l'issue 97) : il est là pour assainir le chemin (Vial, 15.10.2026).
-- Délégation de Vial : `docs/collaboration/instructions/DELEGATION_VIAL_2026-10-15.md`.
+- Délégation de Vial : [texte prouvé le plus récent, commit `34840aac8123079578cbe0966144b00e0f28e986`](https://github.com/vialdjoukang-spec/Medina/blob/34840aac8123079578cbe0966144b00e0f28e986/docs/collaboration/instructions/DELEGATION_VIAL_2026-10-15.md), 15 octobre 2026, 14:29 Europe/Zurich, non fusionné (pull requests 98 et 100). Le fichier local du même nom reste l’état de 14:07 et n’est pas réimporté. Index : [docs/collaboration/REFERENCES_NAVIGATION.md](docs/collaboration/REFERENCES_NAVIGATION.md).
 - Revues auteur **datées après le démarrage du cycle** de la leçon (la garde refuse toute preuve antérieure) : une leçon
   préparée en avance reçoit une vraie revue auteur dans son cycle, jamais une date réécrite.
 - Matrice suisse : la matrice auteur reste « pending_independent_review » ; un agent contrôleur distinct produit
