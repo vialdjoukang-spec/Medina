@@ -1,0 +1,316 @@
+{
+  "mission": "ALPHA1-CLAUDE-G94-LANG",
+  "code": "G94",
+  "type_audit": "linguistique",
+  "base_sha": "103745baaa38c76f18288758cc7f689e5091ccdb",
+  "base_sha_manifeste": "523832d9ef6097607d3443f4398deee9cd0add11",
+  "generation": 1,
+  "branche": "claude/alpha1/g94-lang-g1",
+  "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G94-LANG",
+  "conversation": "alpha1-claude-g94-lang",
+  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+  "modele_effort": "conforme au manifeste",
+  "date_debut": null,
+  "date_debut_note": "Heure de début non enregistrée par l'agent exécutant ; date_fin donnée par l'horloge système.",
+  "date_fin": "2026-10-16T10:04:00Z",
+  "lecture": {
+    "fichiers": [
+      "chapters/G94/G94_a.html",
+      "chapters/G94/G94_b.html",
+      "chapters/G94/G94_c.html",
+      "chapters/G94/G94_d.html",
+      "chapters/G94/G94_pop1.html",
+      "chapters/G94/G94_pop2.html",
+      "glossary/g94.py"
+    ],
+    "empreintes_conformes": true,
+    "empreintes_calculees": {
+      "chapters/G94/G94_a.html": "aaf39f1711235dbd2bba87ba783c7ccf8d140f0481392d111b480324f69e82f9",
+      "chapters/G94/G94_b.html": "f02424776cf20457405eb099932daa7a65580df4bec51b90dfdb4309b4f86c5f",
+      "chapters/G94/G94_c.html": "5dc6eadb460966db80798bbc21d9e560ca716100f3cc346f73b152402aa386fb",
+      "chapters/G94/G94_d.html": "31a88b94264b6b09c9b0bfa39caff77f3389d4ce5d87a61e0da54e6457e450f4",
+      "chapters/G94/G94_pop1.html": "cf197693b89a0b1cab204f9cefa074deee1659a75f03d9d3eeea4c5d644ec051",
+      "chapters/G94/G94_pop2.html": "1d019766dbc666a326450dbb3edf5a94e9eaadfa6f4f9e5888a15dc12cc50c98",
+      "glossary/g94.py": "bcfcd5bfcfdfd91c530e42dfa9c626ee095f8cef260cdc646012ac72e299e74f"
+    }
+  },
+  "premiere_verification": "Recalcul des SHA-256 des 7 fichiers contre .medina/missions/ALPHA1-CLAUDE-G94-LANG.json (tous conformes) ; lecture intégrale de la consigne, du protocole, du guide de rédaction STYLE_REDACTION.md, du PROMPT_VERITE et des 7 fichiers de la leçon ; contrôle des abréviations par build_medina.audit() sur les sources avant et après application simulée des propositions (résultat {} dans les deux cas).",
+  "synthese": {
+    "nombre_propositions": 123,
+    "renvois_medicaux": 21,
+    "propositions_par_categorie": {
+      "phrase_nominale": 62,
+      "registre": 20,
+      "syntaxe": 14,
+      "ambiguité": 10,
+      "grammaire": 6,
+      "calque": 6,
+      "intitulé": 2,
+      "cohérence": 2,
+      "répétition": 1
+    },
+    "propositions_par_fichier": {
+      "chapters/G94/G94_a.html": 22,
+      "chapters/G94/G94_b.html": 22,
+      "chapters/G94/G94_c.html": 15,
+      "chapters/G94/G94_d.html": 7,
+      "chapters/G94/G94_pop1.html": 19,
+      "chapters/G94/G94_pop2.html": 37,
+      "glossary/g94.py": 1
+    },
+    "constats_hors_perimetre": 0,
+    "note_ids": "Identifiants P-001 à P-123 attribués dans l’ordre des fichiers puis de leur position dans le fichier."
+  },
+  "propositions_fichier": "propositions.json",
+  "verification_unicite": {
+    "methode": "script Python : ancien.count(fichier) == 1 pour chacune des 123 propositions ; absence de chevauchement entre propositions d'un même fichier ; application simulée en mémoire, puis build_medina.audit() sur les six fichiers HTML et compile() du glossaire g94.py ; comparaison des nombres de l'ancien et du nouveau",
+    "toutes_uniques": true,
+    "sans_chevauchement": true,
+    "audit_abreviations_avant": {
+      "chapters/G94/G94_a.html": {},
+      "chapters/G94/G94_b.html": {},
+      "chapters/G94/G94_c.html": {},
+      "chapters/G94/G94_d.html": {},
+      "chapters/G94/G94_pop1.html": {},
+      "chapters/G94/G94_pop2.html": {}
+    },
+    "audit_abreviations_apres_application": {
+      "chapters/G94/G94_a.html": {},
+      "chapters/G94/G94_b.html": {},
+      "chapters/G94/G94_c.html": {},
+      "chapters/G94/G94_d.html": {},
+      "chapters/G94/G94_pop1.html": {},
+      "chapters/G94/G94_pop2.html": {}
+    },
+    "glossaire_compile_apres_application": true,
+    "propositions_dont_les_nombres_different": [],
+    "note_nombres": "Aucune proposition ne modifie, ajoute ou retire un nombre : la liste est vide si le fond numérique est inchangé."
+  },
+  "constats": [
+    {
+      "id": "R-01",
+      "fichier": "chapters/G94/G94_a.html",
+      "ancre": "Incidence d’environ 9 pour 100 000",
+      "categorie": "unité",
+      "explication": "Une incidence sans période est inexploitable (par an ?). La fenêtre g94-hsa (G94_pop2) répète la même formulation. Ajouter « par an » est un ajout de fait : à vérifier dans l’article de l’European Stroke Organization (2013).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-02",
+      "fichier": "chapters/G94/G94_a.html",
+      "ancre": "Encéphalopathie métabolique",
+      "categorie": "terminologie / classification",
+      "explication": "Le troisième pôle est nommé « métabolique » dans le tableau du § 1 (et dans G94.30 « maladies endocriniennes et métaboliques »), mais « carentielle » dans les objectifs du § 0 et dans le Pareto, tandis que la seule entité traitée est l’encéphalopathie de Wernicke (carence en thiamine) ; la fenêtre g94-cim précise que le code croix de la carence (E51) n’est pas vérifié. Le choix du nom du pôle relève de la classification : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-03",
+      "fichier": "chapters/G94/G94_a.html",
+      "ancre": "et sa présence interdit le traitement intrathécal",
+      "categorie": "force de la recommandation",
+      "explication": "La source rapportée dans G94_pop2 (g94-flux) dit que le traitement intrathécal « n’est pas approprié » en présence d’un blocage ; « interdit » est plus fort. Choisir entre « déconseille », « n’est pas approprié » et « interdit » modifie la portée de la recommandation.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-04",
+      "fichier": "chapters/G94/G94_a.html",
+      "ancre": "pas seulement chez l’alcoolique",
+      "categorie": "terminologie / périmètre",
+      "explication": "« L’alcoolique » (ici, § 6, § 12, cas 4 et fenêtres) est la formule de la recommandation EFNS 2010 ; la terminologie actuelle privilégie « patient présentant un trouble de l’usage de l’alcool ». Changer le terme modifie le périmètre des critères « deux signes sur quatre », définis chez l’alcoolique : à décider par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-05",
+      "fichier": "chapters/G94/G94_a.html",
+      "ancre": "une carence se constitue donc en quelques semaines",
+      "categorie": "causalité / chronologie",
+      "explication": "Le « donc » déduit un délai d’installation de la demi-vie (10 à 20 jours) ; la fenêtre g94-thiamine-meca ne donne que la demi-vie. L’inférence n’est pas dans la source Benerva citée.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-06",
+      "fichier": "chapters/G94/G94_b.html",
+      "ancre": "15 % des patients ont reçu une dérivation externe et 8 % des ponctions lombaires répétées",
+      "categorie": "dénominateur",
+      "explication": "Le tableau place ces pourcentages dans « la méningite bactérienne » et le lecteur les rapporte aux 577 épisodes. Les fenêtres (G94_pop2, g94-meningite-hydro) donnent 4 patients (15 %) et 2 patients (8 %) : les dénominateurs sont les 26 hydrocéphalies (4/26 = 15,4 % ; 2/26 = 7,7 %). Le dénominateur doit être explicité, ce qui ajoute une donnée.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-07",
+      "fichier": "chapters/G94/G94_b.html",
+      "ancre": "les patients dérivés étaient les plus graves",
+      "categorie": "causalité non sourcée",
+      "explication": "La fenêtre g94-meningite-hydro ne cite que « effectifs minimes et biais d’indication » ; l’affirmation que les patients dérivés étaient les plus graves n’y figure pas. À confirmer dans la source (résumé seul lu) ou à retirer.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-08",
+      "fichier": "chapters/G94/G94_b.html",
+      "ancre": "la reprise chirurgicale (8 %)",
+      "categorie": "cohérence terminologique",
+      "explication": "La fenêtre g94-dvp (G94_pop2) donne « externalisation, retrait ou révision 8 % » ; « reprise chirurgicale » est un autre périmètre. Choix du libellé à confirmer sur la source EANO-ESMO 2023.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-09",
+      "fichier": "chapters/G94/G94_pop1.html",
+      "ancre": "pour un score de 3 à 8, le rapport de risque est de 3,37",
+      "categorie": "nature de la mesure",
+      "explication": "La leçon emploie « rapport de risque » (ici), « odds ratio » (G94_a, G94_b, G94_c, G94_pop2), « hazard ratio » (g94-cibles) et « rapport de taux d’incidence ». Le type exact de mesure (risque relatif, rapport de risques instantanés) n’est pas précisé pour le score de Glasgow ; sa traduction française dépend de la source. À vérifier avant d’harmoniser.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-10",
+      "fichier": "chapters/G94/G94_d.html",
+      "ancre": "La recommandation sur les délires conseille d’éviter les agents neurotoxiques.",
+      "categorie": "source non identifiée",
+      "explication": "Aucune « recommandation sur les délires » ne figure dans les références de G94_b ni dans les fenêtres ; la phrase attribue un conseil à une source non nommée. À sourcer ou retirer.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-11",
+      "fichier": "chapters/G94/G94_d.html",
+      "ancre": "Préférer la voie orale lorsque c’est possible",
+      "categorie": "cohérence de la conduite",
+      "explication": "Pour la thiamine, la même phrase de la table p-3 préfère la voie orale, alors que l’encéphalopathie de Wernicke est traitée « de préférence par voie intraveineuse » (G94_b § 9, G94_d p-2). La portée du conseil (hors Wernicke ?) n’est pas dite ; à clarifier par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-12",
+      "fichier": "chapters/G94/G94_pop2.html",
+      "ancre": "Dexaméthasone : effet après 1 à 2 heures, jamais seule.",
+      "categorie": "généralisation",
+      "explication": "Le Pareto affirme « jamais seule » ; le texte (G94_b § 9, G94_d) limite la restriction à « l’œdème cérébral aigu menaçant ». Reformulation = changement de fond.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-13",
+      "fichier": "chapters/G94/G94_c.html",
+      "ancre": "une cellule vide signifie",
+      "categorie": "incohérence",
+      "explication": "Le tableau e-4 ne contient aucune cellule vide ; la phrase de lecture décrit une situation absente. Retrait ou ajout de cellules « non lu » = changement de fond.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-14",
+      "fichier": "chapters/G94/G94_c.html",
+      "ancre": "la rupture de la première permet l’entrée de cellules immunitaires",
+      "categorie": "causalité / force du terme",
+      "explication": "Le texte parle de « rupture » de la barrière, alors que le § 3 et les fenêtres disent « altération » ; de plus, « l’altération de la deuxième réduit l’adaptation du débit » et « celle de la troisième désorganise la communication » ne figurent pas dans les fenêtres (g94-sae-meca, g94-bhe). Mécanismes à sourcer ou à atténuer.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-15",
+      "fichier": "chapters/G94/G94_c.html",
+      "ancre": "reflètent l’hétérogénéité des populations et des définitions",
+      "categorie": "causalité non sourcée",
+      "explication": "La fenêtre g94-imagerie-sae dit seulement « fourchettes larges selon les séries » ; l’explication par l’hétérogénéité des populations et des définitions est une interprétation de la leçon.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-16",
+      "fichier": "chapters/G94/G94_c.html",
+      "ancre": "⁹⁹Tc-MAA",
+      "categorie": "notation isotopique",
+      "explication": "Le technétium-99m s’écrit ⁹⁹ᵐTc ; « ⁹⁹Tc » désigne l’isotope 99 stable (non métastable), alors que le texte écrit ailleurs « technétium-99m-MAA ». La correction implique un caractère (ᵐ, U+1D50) dont la couverture dans la police du lecteur n’est pas vérifiée : décision partagée entre audit médical et intégration.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-17",
+      "fichier": "chapters/G94/G94_pop2.html",
+      "ancre": "Une valeur de glucose du liquide paraît erronée dans la transcription de la source et n’est pas reprise.",
+      "categorie": "vérifiabilité",
+      "explication": "Remarque éditoriale non vérifiable par le lecteur : la valeur n’est pas donnée et la source n’est pas précisée. À reformuler par l’audit médical (soit donner la valeur vérifiée, soit supprimer la remarque).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-18",
+      "fichier": "chapters/G94/G94_pop1.html",
+      "ancre": "bactérien, fongique, à protozoaires ou viral sans précision",
+      "categorie": "portée d’une inclusion",
+      "explication": "« Sans précision » peut qualifier « viral » seul ou chacun des quatre types (renvois A41.9, B48.80, B60.80, B34.80). Toute correction de ponctuation fixerait un sens de classification : à trancher sur le texte BfArM.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-19",
+      "fichier": "chapters/G94/G94_b.html",
+      "ancre": "Critères officiels et paramètres décisifs",
+      "categorie": "intitulé",
+      "explication": "L’intitulé parle de critères « officiels » ; l’encadré réunit une définition tirée d’une revue narrative (encéphalopathie septique), un critère d’une recommandation EFNS de 2010 (Wernicke) et une classification EANO-ESMO. La fenêtre g94-mnemo précise « non critère officiel » pour les moyens mnémotechniques. Un intitulé exact est un choix de fond (« critères de référence » ?).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-20",
+      "fichier": "glossary/g94.py",
+      "ancre": "Protéine d’origine cérébrale mesurée dans le sang",
+      "categorie": "fenêtre rattachée",
+      "explication": "La clé S100B est rattachée à la fenêtre g94-eeg (électroencéphalogramme), qui ne traite pas ce marqueur sanguin ; la fenêtre adéquate n’existe pas. Rattachement à décider par l’intégration.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-21",
+      "fichier": "chapters/G94/G94_a.html",
+      "ancre": "liquide cérébrospinal",
+      "categorie": "terminologie suisse romande",
+      "explication": "La leçon emploie partout « liquide cérébrospinal » (une trentaine d’occurrences, clé de glossaire comprise), alors que la terminologie francophone usuelle en Suisse romande est « liquide céphalo-rachidien (LCR) ». Choix global non appliqué ici : il touche le glossaire, les clés et chaque fichier (voir les choix différés).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 2
+    }
+  ],
+  "differes": [
+    "Espaces insécables globales (avant ; : ! ?, dans les guillemets « », entre un nombre et « % » ou une unité) : non appliquées ni proposées une à une. Les sept fichiers ne contiennent aucun U+00A0 ni U+202F : la correction relève d'un traitement mécanique d'intégration (plusieurs centaines d'occurrences).",
+    "Harmonisation « liquide cérébrospinal » / « liquide céphalo-rachidien » : non appliquée (voir R-21)."
+  ],
+  "observations": [
+    "Structure (hors correction locale) : les quatre figures ne sont ni annoncées ni lues dans le texte, contrairement au § 4 du guide de rédaction ; la figure 2 répète sa légende dans une liste.",
+    "Les « Pareto » (neuf fenêtres) restent des listes de mots-clés : les puces nominales ou à l’infinitif des neuf fenêtres sont réécrites en phrases (propositions P-114 à P-122), les puces déjà verbales sont conservées.",
+    "Terminologie : « odds ratio », « hazard ratio » et « rapport de risque » coexistent ; « liquide cérébrospinal » est employé au lieu de « liquide céphalo-rachidien » (usage suisse romand) ; « résonance magnétique cérébrospinale » ; « glucose » et « glucide » alternent pour la règle de la thiamine (« avant tout glucide », « avant le glucose »). Aucune harmonisation proposée : elle touche aussi les clés de glossaire et relève d’un choix global (voir R-21 et R-09).",
+    "Nombres : « 4200 kJ », « 1000 » sans espace, « 100 000 » avec espace ; « tous les deux mois pendant six mois » (chiffres en toutes lettres) et « toutes les 6 à 12 semaines » (chiffres) : convention numérique à fixer globalement.",
+    "Les Pareto, tableaux et quiz utilisent des infinitifs et des groupes nominaux brefs dans les cellules (colonne « Erreur fréquente » du tableau e-2, options de quiz, tableaux de conduite) ; le guide les tolère dans les cellules à condition que le tableau soit introduit et lu. Aucune proposition sur ces cellules."
+  ],
+  "lacunes": [
+    "Aucune vérification médicale n’a été faite : les renvois_medicaux signalent des formulations dont la correction changerait le fond ; ils ne sont ni confirmés ni infirmés.",
+    "Aucun contrôle de rendu navigateur des propositions : l’application simulée a été faite en mémoire (texte uniquement) ; aucun fichier canonique n’est modifié.",
+    "Aucune lecture des sources primaires citées : les écarts avec les sources sont établis seulement par comparaison interne entre les sept fichiers de la leçon.",
+    "Aucun correcteur orthographique ou grammatical automatique n’était disponible dans l’environnement (ni aspell, ni hunspell, ni LanguageTool) : l’orthographe et la grammaire reposent sur la lecture intégrale des sept fichiers et sur un balayage des 665 mots à occurrence unique, sans coquille repérée.",
+    "La couverture du caractère ᵐ (U+1D50) par la police du lecteur n’a pas été testée (voir R-16)."
+  ],
+  "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée",
+  "figures": {
+    "portee_controle": "Le contrôle a porté sur le texte des figures (légendes, étiquettes, listes de légende), pas sur leur provenance ; la vérification de la provenance est transmise à l'audit MED.",
+    "inventaire": [
+      {
+        "figure": "Figure 2 (G94_c.html, régions cérébrales vulnérables et espaces du liquide)",
+        "classe": "ORIGINE_INCONNUE",
+        "statut": "réserve",
+        "note": "Seule figure anatomique dessinée (SVG : contour de tête, ventricules, tronc cérébral) ; sa légende la dit « schéma établi pour la leçon, non issu d'une source anatomique » et « non à l'échelle ». Provenance et exactitude topographique à vérifier par l'audit MED ; la règle des figures anatomiques d'origine IA s'applique. Défauts de forme : la légende numérotée figure deux fois (texte de la légende et liste ol), et un élément SVG vide (font-size 0) subsiste."
+      },
+      {
+        "figure": "Figures 1, 3, 4 (SVG de flux : séquence diagnostique, chaîne physiopathologique, thiamine et glucides)",
+        "classe": "non évaluée par ce rôle (schémas non anatomiques d’après leur légende)",
+        "statut": "transmis à l’audit MED",
+        "note": "Aucune provenance vérifiée. Forme : aucune des quatre figures n'est annoncée dans le texte ni suivie d'un paragraphe de lecture (guide de rédaction § 4)."
+      }
+    ]
+  }
+}
