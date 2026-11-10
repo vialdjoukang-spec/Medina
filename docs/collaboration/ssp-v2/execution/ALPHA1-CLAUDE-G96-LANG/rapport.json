@@ -1,0 +1,346 @@
+{
+  "mission": "ALPHA1-CLAUDE-G96-LANG",
+  "code": "G96",
+  "type_audit": "linguistique",
+  "base_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+  "generation": 1,
+  "branche": "claude/alpha1/g96-lang-g1",
+  "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G96-LANG",
+  "conversation": "alpha1-claude-g96-lang",
+  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+  "modele_effort": "conforme au manifeste",
+  "date_debut": null,
+  "date_fin": "2026-10-16T10:04:22Z",
+  "date_debut_note": "Heure de début non relevée au démarrage de l’audit ; aucune valeur estimée n’est présentée comme observée.",
+  "lecture": {
+    "fichiers": [
+      "chapters/G96/G96_a.html",
+      "chapters/G96/G96_b.html",
+      "chapters/G96/G96_c.html",
+      "chapters/G96/G96_d.html",
+      "chapters/G96/G96_pop1.html",
+      "chapters/G96/G96_pop2.html",
+      "glossary/g96.py"
+    ],
+    "empreintes_conformes": true,
+    "empreintes_calculees": {
+      "chapters/G96/G96_a.html": "113ef031198da128e77014cdebe14197de703252c52685dd3c81f352553f9f3e",
+      "chapters/G96/G96_b.html": "20bf46cc58410587c37db6dd4441a48ad20bf6a94b81a6a1b8268c1dd69aba90",
+      "chapters/G96/G96_c.html": "9c5f0454223cbe99bc6bc317c01cb4b309d084b057caed85bc366830253d37e8",
+      "chapters/G96/G96_d.html": "1890ce09d37565650d36101c65d97bb02303329a78fdba2137a990d1d9bb83c7",
+      "chapters/G96/G96_pop1.html": "06ba448da9a432338c8c5c0bf5b103883d8a0f75357ea385d841f6b0b5deb536",
+      "chapters/G96/G96_pop2.html": "7dbda920f55e5ba9b809f3a7d7ae1797418849e64f9eaa44e08d088e161cb7eb",
+      "glossary/g96.py": "6ce7baf084ee783ccd14aa421c746258cdf114221f82923a5db9393775fcae52"
+    }
+  },
+  "premiere_verification": "Recalcul des SHA-256 des 7 fichiers contre .medina/missions/ALPHA1-CLAUDE-G96-LANG.json (tous conformes) ; lecture intégrale des 7 fichiers ; contrôle des abréviations par build_medina.audit() sur les six fichiers HTML avant et après application simulée des propositions (résultat {} dans les deux cas) ; contrôle de l’absence de double espace, d’apostrophe droite, de mot doublé et d’espace manquant par script.",
+  "synthese": {
+    "nombre_propositions": 114,
+    "renvois_medicaux": 25,
+    "propositions_par_categorie": {
+      "répétition": 8,
+      "registre": 21,
+      "ponctuation": 5,
+      "ambiguïté": 17,
+      "typographie": 8,
+      "grammaire": 7,
+      "syntaxe": 42,
+      "cohérence": 6
+    },
+    "propositions_par_fichier": {
+      "chapters/G96/G96_a.html": 33,
+      "chapters/G96/G96_b.html": 30,
+      "chapters/G96/G96_c.html": 15,
+      "chapters/G96/G96_d.html": 6,
+      "chapters/G96/G96_pop1.html": 19,
+      "chapters/G96/G96_pop2.html": 10,
+      "glossary/g96.py": 1
+    }
+  },
+  "propositions_fichier": "propositions.json",
+  "verification_unicite": {
+    "methode": "script Python : ancien.count(fichier) == 1 pour chacune des 114 propositions ; absence de chevauchement entre propositions d’un même fichier ; application simulée en mémoire puis build_medina.audit() sur les six fichiers HTML et ast.parse sur glossary/g96.py",
+    "toutes_uniques": true,
+    "sans_chevauchement": true,
+    "audit_abreviations_apres_application": {
+      "chapters/G96/G96_a.html": {},
+      "chapters/G96/G96_b.html": {},
+      "chapters/G96/G96_c.html": {},
+      "chapters/G96/G96_d.html": {},
+      "chapters/G96/G96_pop1.html": {},
+      "chapters/G96/G96_pop2.html": {}
+    },
+    "glossaire_python_valide": true
+  },
+  "constats": [
+    {
+      "id": "R-01",
+      "fichier": "chapters/G96/G96_a.html",
+      "ancre": "fistule entre l’espace du liquide et une veine",
+      "categorie": "terminologie anatomique",
+      "explication": "L’expression « espace du liquide » (aussi G96_a section 3 « met l’espace du liquide en communication », G96_c section anatomie et légende de la figure 1, fenêtre g96-flv de G96_pop1) n’est pas un terme anatomique. L’arachnoïdite est décrite dans le même cours avec « l’espace sous-arachnoïdien ». Remplacer l’expression revient à désigner un compartiment anatomique précis : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-02",
+      "fichier": "chapters/G96/G96_a.html",
+      "ancre": "La série du centre de Fribourg classe les fuites spinales en trois types",
+      "categorie": "ambiguïté de source",
+      "explication": "« Fribourg » désigne ici (et dans « revue de Fribourg », « série de Fribourg ») un centre dont le pays n’est précisé dans aucun des sept fichiers. Un lecteur suisse comprend le canton de Fribourg ; or les références citées en fin de section 12 (Deutsches Ärzteblatt International, Neuroradiology) ne tranchent pas. L’identité du centre et la graphie correcte (Fribourg, Fribourg-en-Brisgau) relèvent de la lecture de la source.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-03",
+      "fichier": "chapters/G96/G96_a.html",
+      "ancre": "Cette divergence reflète l’essor de la myélographie dynamique, qui détecte désormais davantage de fistules.",
+      "categorie": "causalité",
+      "explication": "La phrase donne une explication causale (essor de la myélographie dynamique) à la différence de fréquences entre deux séries de dates différentes ; ni la section ni les fenêtres ne contiennent d’élément qui l’établisse. À sourcer ou à retirer par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-04",
+      "fichier": "chapters/G96/G96_a.html",
+      "ancre": "Dans chaque série les pourcentages totalisent plus de 100 %",
+      "categorie": "cohérence chiffrée",
+      "explication": "Après traumatisme, 46 + 44 + 15 + 11 = 116 %. Sans traumatisme, les trois pourcentages cités (30, 17, 16) totalisent 63 % : l’énoncé « dans chaque série » ne se vérifie pas dans le texte pour la seconde série (liste peut-être partielle). La précision ou la correction suppose de relire la source.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-05",
+      "fichier": "chapters/G96/G96_a.html",
+      "ancre": "le fait qu’un quart des hématomes sous-duraux du sujet de moins de 60 ans a cette origine",
+      "categorie": "modalité / fréquence",
+      "explication": "Le corps de la section dit « seraient dus » (conditionnel) ; l’encadré « À retenir » l’affirme à l’indicatif. Aligner le mode revient à fixer le niveau de certitude d’un chiffre épidémiologique : décision médicale.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-06",
+      "fichier": "chapters/G96/G96_a.html",
+      "ancre": "Une étude bernoise apporte une preuve causale.",
+      "categorie": "causalité",
+      "explication": "« Preuve causale » est tirée d’une comparaison avant/après de volumes ventriculaires ; la fenêtre g96-monro (G96_pop1) qualifie l’étude de « petit effectif, résumé seul lu ». Le degré de preuve annoncé est plus fort que celui de la fenêtre. Voir aussi R-23 (G96_c).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-07",
+      "fichier": "chapters/G96/G96_a.html",
+      "ancre": "dès environ quatre jours",
+      "categorie": "chronologie / chiffres",
+      "explication": "Le délai est écrit « dès environ quatre jours » (G96_a), « en environ quatre jours » (G96_c, section de physiologie) et « en quatre jours » (G96_pop1, g96-monro) : trois sens différents (au plus tôt, en moyenne, exactement). De plus, de 15,3 à 18,0 mL la hausse arithmétique est de 17,6 % alors que le texte cite 18,8 % « selon les auteurs, calculée sur les variations individuelles » : à vérifier dans la source.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-08",
+      "fichier": "chapters/G96/G96_a.html",
+      "ancre": "inférieure à 6 cm d’eau ou, le plus souvent, normale, mais non négative",
+      "categorie": "unités / cohérence",
+      "explication": "Le cours exprime la pression d’ouverture en « mm de liquide » (60 mm) ailleurs ; ici l’hypothèse bernoise est donnée en « cm d’eau » (6 cm d’eau, soit 60 mm d’eau). Harmoniser les unités et préciser « non négative » exige de relire la source.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-09",
+      "fichier": "chapters/G96/G96_a.html",
+      "ancre": "Plusieurs lésions rachidiennes sont retrouvées sous la fuite",
+      "categorie": "ambiguïté anatomique",
+      "explication": "« Sous la fuite » (reprise dans le tableau de la section 4 : « Retrouvés sous la fuite ») peut signifier en regard, en dessous (caudal) ou sous-jacent à la fuite. Le sens retenu modifie l’énoncé anatomique.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-10",
+      "fichier": "chapters/G96/G96_a.html",
+      "ancre": "Les formes rares sont à connaître car elles changent la gravité",
+      "categorie": "fréquence / cohérence chiffrée",
+      "explication": "Les « formes rares » incluent la douleur interscapulaire à 10,9 % et la démence frontotemporale de variante comportementale à 2,5 %. Dans G96_b (tableau de la section 8), « Coma, démence frontotemporale » est dit « rares (moins de 1 %) », ce qui contredit le 2,5 % de la section 5. Corriger un des deux chiffres ou le qualificatif « rares » est une décision médicale.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-11",
+      "fichier": "chapters/G96/G96_a.html",
+      "ancre": "consiste à se pencher en avant, assis, après un temps en décubitus",
+      "categorie": "omission",
+      "explication": "La phrase décrit la manœuvre (se pencher en avant, assis, après un temps en décubitus) sans dire ce qui est observé ; la fenêtre g96-reservoir précise « laisse s’écouler le liquide par le nez ». Ajouter le résultat est un ajout de fait.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-12",
+      "fichier": "chapters/G96/G96_b.html",
+      "ancre": "l’avis neuroradiologique tranche",
+      "categorie": "causalité / affirmation",
+      "explication": "La phrase vient d’annoncer que les sources lues ne détaillent aucun critère distinctif pour la malformation de Chiari et les céphalées cervicogènes ; elle affirme ensuite que l’avis neuroradiologique « tranche ». Cette affirmation n’a pas de source lue dans le cours : à sourcer ou à retirer.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-13",
+      "fichier": "chapters/G96/G96_b.html",
+      "ancre": "Pneumocéphalie, crise, abcès épidural, hydrocéphalie (rhinorrhée)",
+      "categorie": "terminologie",
+      "explication": "« Crise » sans qualificatif est ambigu (crise épileptique, comitiale, autre). Préciser le type de crise ajoute un fait que la section ne porte pas.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-14",
+      "fichier": "chapters/G96/G96_b.html",
+      "ancre": "(139 et 169 minutes selon le groupe)",
+      "categorie": "ambiguïté chiffrée",
+      "explication": "La phrase donne deux valeurs « selon le groupe » pour la céphalée résolue (89 % et 94 %) et pour la durée (139 et 169 minutes) sans dire quel groupe correspond à quelle valeur, ni lequel est le « sealing ». L’appariement est un fait de la source. « Résultats équivalents » avec 89 % et 94 % est en outre une qualification statistique à vérifier.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-15",
+      "fichier": "chapters/G96/G96_b.html",
+      "ancre": "relève d’un traitement endovasculaire envisageable en première ligne, avec patch ciblé et chirurgie",
+      "categorie": "ambiguïté de conduite",
+      "explication": "« Avec patch ciblé et chirurgie » peut signifier une association (traitement endovasculaire plus patch ciblé plus chirurgie) ou une liste d’options. Les deux lectures définissent des conduites différentes ; le choix suppose la source.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-16",
+      "fichier": "chapters/G96/G96_b.html",
+      "ancre": "Le risque est plus élevé quand le délai dépasse 10 semaines",
+      "categorie": "référent manquant",
+      "explication": "« Le délai » n’est pas défini (délai depuis le début des symptômes, avant le diagnostic, avant le traitement ?). La fenêtre g96-rebond (G96_pop1) répète « Délai de plus de 10 semaines » sans plus. Préciser le point de départ est un ajout de fait.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-17",
+      "fichier": "chapters/G96/G96_b.html",
+      "ancre": "on réévalue si elle est sévère après une à deux semaines",
+      "categorie": "ambiguïté chronologique",
+      "explication": "Deux lectures sont possibles : réévaluer après une à deux semaines si l’hypertension est sévère ; ou réévaluer si elle est encore sévère après une à deux semaines. La seconde implique une persistance. La fenêtre g96-rebond reprend la même formulation. Le choix de la lecture est clinique.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-18",
+      "fichier": "chapters/G96/G96_b.html",
+      "ancre": "l’évitement des efforts et des laxatifs",
+      "categorie": "ambiguïté de sens",
+      "explication": "La phrase se lit « on prescrit le repos, la tête surélevée à 30°, l’évitement des efforts et des laxatifs », ce qui peut signifier éviter les efforts et éviter les laxatifs, ou éviter les efforts et prescrire des laxatifs (pour prévenir l’effort de poussée). Les deux lectures sont opposées pour les laxatifs ; seule la source tranche.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-19",
+      "fichier": "chapters/G96/G96_b.html",
+      "ancre": "Un drain lombaire peut raccourcir la fuite.",
+      "categorie": "sens du verbe",
+      "explication": "« Raccourcir la fuite » est une métonymie ambiguë : raccourcir la durée de la fuite, la tarir, ou en réduire le débit. Chaque lecture est un énoncé différent sur l’effet du drain.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-20",
+      "fichier": "chapters/G96/G96_b.html",
+      "ancre": "avec un contrôle à trois mois après l’opération",
+      "categorie": "référent manquant",
+      "explication": "La relation entre « récupération plus lente » et « un contrôle à trois mois » n’est pas dite (récupération évaluée à trois mois ? effet mesuré lors d’un contrôle ?). La fenêtre et le tableau de références ne la précisent pas.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-21",
+      "fichier": "chapters/G96/G96_c.html",
+      "ancre": "Le liquide céphalorachidien est contenu dans les méninges",
+      "categorie": "précision anatomique",
+      "explication": "Le liquide est contenu dans l’espace sous-arachnoïdien (et les ventricules), c’est-à-dire entre deux des méninges ; la phrase suivante parle de la dure-mère comme « enveloppe externe ». Remplacer « dans les méninges » par un espace précis est une précision anatomique à valider.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-22",
+      "fichier": "chapters/G96/G96_c.html",
+      "ancre": "à droite, le volume sanguin intracrânien augmente en compensation",
+      "categorie": "figure / légende",
+      "explication": "Dans le schéma SVG de la figure 2, la paire de droite (« Sang ») est dessinée avec un rectangle intérieur de hauteur 80 à l’état « Normal » puis de hauteur 40 à l’état « Perte » : la hauteur de la grandeur dessinée diminue, alors que la légende dit que le volume sanguin augmente. La légende et le dessin se contredisent (contrôle fait sur les coordonnées du SVG, sans rendu navigateur). À corriger par l’audit médical et la production.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-23",
+      "fichier": "chapters/G96/G96_c.html",
+      "ancre": "apporte la preuve causale",
+      "categorie": "cohérence / degré de preuve",
+      "explication": "G96_a écrit « une preuve causale » ; G96_c écrit « la preuve causale » (article défini, sens plus fort). Voir R-06 ; l’alignement des deux formulations dépend du degré de preuve retenu.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-24",
+      "fichier": "chapters/G96/G96_pop1.html",
+      "ancre": "Extraits repris du dossier consacré à un autre cours du même cycle",
+      "categorie": "mention de fabrication",
+      "explication": "La mention décrit la provenance des extraits (dossier d’un autre cours du même cycle) et non un contenu médical. Elle est utile à la traçabilité mais déplacée dans une fenêtre destinée au lecteur du cours ; la retirer ou la déplacer vers les sources relève de la gouvernance, non d’une correction linguistique.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-25",
+      "fichier": "chapters/G96/G96_pop2.html",
+      "ancre": "Un éperon, une hernie discale ou une hypermobilité précèdent souvent la déchirure.",
+      "categorie": "chronologie / fréquence",
+      "explication": "Le Pareto affirme une antériorité (« précèdent ») et une fréquence (« souvent ») que la section 4 ne porte pas : le corps du cours dit que ces lésions sont « retrouvées » et qu’un trouble conjonctif « peut prédisposer ». Le Pareto change donc le niveau de certitude.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    }
+  ],
+  "differes": [
+    "Espaces insécables (avant ; : ! ? et %, dans les guillemets « », dans les nombres) : non appliquées, non proposées. Les sept fichiers ne contiennent aucun U+00A0 ni U+202F ; le choix est global au projet.",
+    "Nombres : « 100 000 » est écrit avec une espace ordinaire, « 2000 », « 3000 » et « 4000 » sans espace ; relève du même choix différé.",
+    "Libellés de liens interactifs : la parenthèse explicative incorporée au mot vert (« signe du halo (portée et limites) sur papier filtre », « acte ou le traumatisme qui précède (critères et codage) ») coupe la phrase ; convention d’interface du projet, non modifiée."
+  ],
+  "observations": [
+    "Phrases nominales : les cellules de tableau, les listes « Pareto » et l’encadré « Paramètres clés » restent en style télégraphique (toléré pour les cellules par STYLE_REDACTION § 2) ; seules les phrases nominales ou infinitives hors cellules ont fait l’objet de propositions. Plusieurs puces Pareto nominales subsistent (par exemple « Trois types de fuite, trois lieux : face ventrale, gaine, veine. »).",
+    "Acronyme SLEC : l’expansion française de l’article (« collection extradurale longitudinale spinale ») n’a pas les initiales S-L-E-C ; le glossaire donne l’expansion anglaise (Spinal Longitudinal Extradural CSF collection). Une mention « (de l’anglais … ) » ou l’emploi du terme anglais serait plus clair ; non proposé pour ne pas modifier le glossaire au-delà de la formulation.",
+    "Anglicisme « compliant » (G96_a, section 3 : « un compartiment spinal trop compliant ») : « distensible » est possible mais relève du vocabulaire de la physiologie ; non proposé.",
+    "Alternance « scanner » (G96_b, G96_c) et « tomodensitométrie » : usage tolérable en clinique suisse, non harmonisé.",
+    "Mentions du cours dans le cours (« le cours ne propose pas de conduite », « le cours n’y ajoute rien », « Dans ce cours » dans le glossaire) : elles énoncent des limites de sources et sont conservées ; elles relèvent de la politique de rédaction, non de la correction linguistique.",
+    "Glossaire : la définition de CIM-10-GM (« catalogue de ce projet ») décrit la fabrication du cours ; non modifiée pour ne pas retirer d’information de provenance.",
+    "Statut en tête de leçon (« Cycle Betta 41 · Revue par intelligence artificielle · Audit différé · Aucune validation médicale humaine ») : mention de gouvernance conservée."
+  ],
+  "lacunes": [
+    "Aucune vérification médicale n’a été faite : les renvois_medicaux signalent des formulations dont la correction changerait le fond ; ils ne sont ni confirmés ni infirmés.",
+    "Aucun contrôle de rendu navigateur des propositions : l’application simulée a été faite en mémoire, aucun fichier canonique n’est modifié ; le contrôle de la figure 2 (R-22) porte sur les coordonnées du SVG, sans rendu (aucun navigateur disponible dans l’environnement).",
+    "Aucune lecture des sources primaires citées : les écarts avec les sources sont établis seulement par comparaison interne entre les sept fichiers de la leçon.",
+    "Les propositions sur les unités (« battements par minute », « mL/min ») reprennent l’unité usuelle du même paramètre dans le même texte ; elles n’ont pas été confrontées à l’information professionnelle."
+  ],
+  "figures": {
+    "portee_controle": "Le contrôle a porté sur le texte des figures (légendes, étiquettes, cohérence avec le corps du cours) et, pour la figure 2, sur les coordonnées du SVG ; il n’a pas porté sur la provenance, transmise à l’audit MED.",
+    "inventaire": [
+      {
+        "figure": "Figure 1 (G96_c.html, types de fuite spinale)",
+        "classe": "ORIGINE_INCONNUE",
+        "statut": "réserve",
+        "note": "Schéma anatomique dessiné en SVG dans le code ; sa légende le dit « non calibré ». Les éléments dessinés (rectangles, cercle, traits) ne portent d’autre étiquette que « Dure-mère », 1, 2 et 3. Provenance et exactitude anatomique à vérifier par l’audit MED."
+      },
+      {
+        "figure": "Figure 2 (G96_c.html, volumes intracrâniens)",
+        "classe": "ORIGINE_INCONNUE",
+        "statut": "réserve",
+        "note": "Schéma de rectangles en SVG ; incohérence entre la légende et le dessin (voir R-22) : la hauteur du rectangle « Sang » diminue de 80 à 40 alors que la légende annonce une augmentation du volume sanguin."
+      },
+      {
+        "figure": "Trois icônes de la barre des sciences (G96_c.html)",
+        "classe": "non anatomique",
+        "statut": "sans objet",
+        "note": "Pictogrammes décoratifs identiques."
+      }
+    ]
+  },
+  "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+}
