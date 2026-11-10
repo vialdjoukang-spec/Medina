@@ -1,0 +1,268 @@
+{
+  "mission": "ALPHA1-CLAUDE-G93-LANG",
+  "code": "G93",
+  "type_audit": "linguistique",
+  "base_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+  "generation": 1,
+  "branche": "claude/alpha1/g93-lang-g1",
+  "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G93-LANG",
+  "conversation": "alpha1-claude-g93-lang",
+  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+  "modele_effort": "conforme au manifeste",
+  "date_debut": null,
+  "date_debut_note": "Heure de début non relevée par date -u au démarrage ; une valeur estimée est omise plutôt que présentée comme observée.",
+  "date_fin": "2026-10-16T10:07:45Z",
+  "lecture": {
+    "fichiers": [
+      "chapters/G93/G93_a.html",
+      "chapters/G93/G93_b.html",
+      "chapters/G93/G93_c.html",
+      "chapters/G93/G93_d.html",
+      "chapters/G93/G93_pop1.html",
+      "chapters/G93/G93_pop2.html",
+      "glossary/g93.py"
+    ],
+    "empreintes_conformes": true,
+    "empreintes_calculees": {
+      "chapters/G93/G93_a.html": "7ab97aa0441d815d10086ca0d5bcc2285cfc1346ea454ee03bcb0a9314c1db5d",
+      "chapters/G93/G93_b.html": "9428afdcf983676cb077a8c0022c5bc4962ae600c07706fccdd78099dd82649f",
+      "chapters/G93/G93_c.html": "c1f3eaaac77d0849442a35a1dd79e29a8ced858267de464e994ecdf7ec7f224a",
+      "chapters/G93/G93_d.html": "8fd850e020197eb549eaab71f7a9901eb4fe6a7b096a920888df3450a3915690",
+      "chapters/G93/G93_pop1.html": "e6aac9fa4bddf0b37c253e0e34823b8c7496df11bc9e2d8da8fda86d4c65763a",
+      "chapters/G93/G93_pop2.html": "51fc76691278628bcce21956e89b20a225a0dc5e61bbf104bacddf7573c39054",
+      "glossary/g93.py": "7496881c5712fb4d7eb337e2819ae08efe0f520e387d3583546c701092aff5b0"
+    }
+  },
+  "premiere_verification": "Recalcul des SHA-256 des 7 fichiers contre .medina/missions/ALPHA1-CLAUDE-G93-LANG.json (tous conformes) ; lecture intégrale des 7 fichiers ; contrôle des abréviations par build_medina.audit() sur les sources avant et après application simulée des propositions (résultat {} dans les deux cas) ; passage d’un correcteur orthographique français mécanique (pyspellchecker) sur le texte des 7 fichiers : aucun mot de langue courante mal orthographié, seuls des termes médicaux, noms propres et identifiants Python ressortent comme inconnus ; recherche mécanique de mots doublés, d’espaces avant la virgule et de phrases supérieures à 45 mots.",
+  "synthese": {
+    "nombre_propositions": 145,
+    "renvois_medicaux": 17,
+    "propositions_par_categorie": {
+      "syntaxe": 38,
+      "registre": 25,
+      "style": 25,
+      "ambiguïté": 17,
+      "terminologie": 13,
+      "grammaire": 11,
+      "typographie": 7,
+      "répétition": 7,
+      "cohérence": 2
+    },
+    "propositions_par_fichier": {
+      "chapters/G93/G93_a.html": 17,
+      "chapters/G93/G93_b.html": 45,
+      "chapters/G93/G93_c.html": 22,
+      "chapters/G93/G93_d.html": 12,
+      "chapters/G93/G93_pop1.html": 31,
+      "chapters/G93/G93_pop2.html": 17,
+      "glossary/g93.py": 1
+    },
+    "constats_hors_perimetre": 0
+  },
+  "propositions_fichier": "propositions.json",
+  "verification_unicite": {
+    "methode": "script Python : ancien.count(fichier) == 1 pour chacune des 145 propositions ; absence de chevauchement entre propositions d’un même fichier ; application simulée en mémoire, comparaison de la suite des balises HTML avant et après (identique), compilation du glossaire Python simulé, puis build_medina.audit() sur les six fichiers HTML simulés",
+    "toutes_uniques": true,
+    "sans_chevauchement": true,
+    "suite_des_balises_identique": true,
+    "audit_abreviations_avant": "{}",
+    "audit_abreviations_apres": "{}"
+  },
+  "constats": [
+    {
+      "id": "R-01",
+      "fichier": "chapters/G93/G93_a.html",
+      "ancre": "Le fil conducteur est unique : un cerveau enfermé dans un volume rigide tolère mal tout gonflement ou toute privation d’oxygène",
+      "categorie": "causalité/généralisation",
+      "nature": "renvoi_medical",
+      "explication": "Le « fil conducteur unique » est posé comme valable pour toute la leçon ; or l’encéphalomyélite myalgique, le syndrome de Reye (trouble métabolique) et les kystes arachnoïdiens ne relèvent pas d’un gonflement ni d’une privation d’oxygène dans un volume rigide. Reformuler change le périmètre affirmé : à trancher par l’audit médical.",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-02",
+      "fichier": "chapters/G93/G93_a.html",
+      "ancre": "plus de 90 à 95 % des patients sont obèses ; survenue",
+      "categorie": "fréquence/construction",
+      "nature": "renvoi_medical",
+      "explication": "« Plus de 90 à 95 % » associe un minorant (« plus de ») et une fourchette : l’expression est contradictoire en elle-même. Même formule dans le paragraphe de la partie 4 (« et plus de 90 à 95 % des patients sont obèses. Une prise »), où elle double en outre « des femmes obèses » dans la même phrase. Le choix entre « plus de 90 % » et « 90 à 95 % » est un chiffre : à trancher par l’audit médical d’après la source.",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-03",
+      "fichier": "chapters/G93/G93_a.html",
+      "ancre": "c’est la raison pour laquelle les traitements médicamenteux visent la sécrétion de liquide cérébrospinal",
+      "categorie": "causalité",
+      "nature": "renvoi_medical",
+      "explication": "L’ignorance de l’étiologie est présentée comme la raison du choix de cibler la sécrétion de liquide cérébrospinal. Le lien causal n’est pas établi par la source citée (la cible thérapeutique découle de l’efficacité de l’acétazolamide, non de l’étiologie inconnue). Reformulation = changement de fond.",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-04",
+      "fichier": "chapters/G93/G93_b.html",
+      "ancre": "mais une asymétrie existe aussi chez 50 % des sujets sains",
+      "categorie": "comparaison de deux objets",
+      "nature": "renvoi_medical",
+      "explication": "La phrase oppose une « sténose » (90 % des HII) à une « asymétrie » des sinus (50 % des sujets sains) : deux grandeurs différentes comparées par « mais … aussi ». Même juxtaposition dans G93_c (fiche Veinographie). Quelle grandeur doit être comparée est une question de fond : à trancher par l’audit médical.",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-05",
+      "fichier": "chapters/G93/G93_b.html",
+      "ancre": "Ils s’ordonnent comme suit, du plus utile au plus invasif.",
+      "categorie": "ordre annoncé",
+      "nature": "renvoi_medical",
+      "explication": "Le tableau suivant est présenté comme ordonné du plus utile au plus invasif ; l’étape 3 (prise en charge des céphalées) est moins invasive que l’étape 2 (acétazolamide) et aucune source ne classe l’utilité. L’annonce ou l’ordre doivent être corrigés sur le fond.",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-06",
+      "fichier": "chapters/G93/G93_b.html",
+      "ancre": "Tous les survivants sont suivis dans les trois mois (troubles cognitifs, émotionnels, fatigue)",
+      "categorie": "ambiguïté de fond",
+      "nature": "renvoi_medical",
+      "explication": "La parenthèse ne dit pas si ces troubles sont recherchés (dépistage) ou traités : « suivis (troubles…) » est ambigu. Le choix du verbe (rechercher, dépister, traiter) change la conduite décrite ; la source ERC-ESICM 2021 doit trancher.",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-07",
+      "fichier": "chapters/G93/G93_b.html",
+      "ancre": "Cette règle repose sur le fait que le niveau de conscience peut dépasser ce que l’examen clinique seul laisse voir.",
+      "categorie": "causalité non sourcée",
+      "nature": "renvoi_medical",
+      "explication": "La justification de la règle de classement « au niveau le plus élevé » est absente de la fenêtre g93-conscience (qui indique seulement le classement) et le résumé seul de la recommandation a été lu. À sourcer ou retirer.",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-08",
+      "fichier": "chapters/G93/G93_b.html",
+      "ancre": "parce que le malaise post-effort est le symptôme central que la gestion de l’énergie cherche à ne pas déclencher",
+      "categorie": "causalité non sourcée",
+      "nature": "renvoi_medical",
+      "explication": "Le « parce que » justifie la règle des deux tiers par le malaise post-effort ; la fenêtre g93-pacing énonce la règle sans cette justification. À sourcer ou retirer ; la correction de forme seule (proposition « vise à ne pas déclencher ») ne règle pas ce point.",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-09",
+      "fichier": "chapters/G93/G93_b.html",
+      "ancre": "La sévérité se classe en sévère (quasi confiné au domicile) et très sévère (quasi alité).",
+      "categorie": "omission",
+      "nature": "renvoi_medical",
+      "explication": "La phrase annonce que la sévérité « se classe en » deux niveaux ; les niveaux léger et modéré sont omis. Ajouter ou nuancer = changement de fond.",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-10",
+      "fichier": "chapters/G93/G93_b.html",
+      "ancre": "la famille et l’école sont impliquées",
+      "categorie": "ambiguïté de fond",
+      "nature": "renvoi_medical",
+      "explication": "« Impliquées » ne dit pas dans quoi (prise en charge, adaptation scolaire, facteur déclenchant) ; l’énoncé de fond est à préciser d’après EUROMENE 2021.",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-11",
+      "fichier": "chapters/G93/G93_b.html",
+      "ancre": "Le plan associe une intervention multicomposante de perte de poids (indice de masse corporelle inférieur à 35 : grade B) ou la chirurgie bariatrique (35 ou plus : grade A)",
+      "categorie": "cohérence du cas",
+      "nature": "renvoi_medical",
+      "explication": "La patiente de la vignette 1 a un indice de masse corporelle de 38 kg/m² (G93_a) : le cas devrait retenir la chirurgie bariatrique (grade A) et non présenter l’alternative « inférieur à 35 ». Le cas récapitulatif énumère les deux branches sans choisir. Rétablir la cohérence est une décision clinique (la proposition de forme remplace seulement « associe » par « comprend »).",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-12",
+      "fichier": "chapters/G93/G93_pop1.html",
+      "ancre": "pression du liquide supérieure à 250 mm (280 mm chez l’enfant obèse)",
+      "categorie": "unité",
+      "nature": "renvoi_medical",
+      "explication": "L’unité est incomplète (« mm » seul) alors que tous les autres seuils de la leçon sont en cm d’eau (25 et 28 cm d’eau) : 250 mm correspondrait à 25 cm. L’unité exacte et la substance (liquide cérébrospinal ou eau) sont un fait nominal à vérifier dans la source ; non corrigé par ce rôle.",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-13",
+      "fichier": "chapters/G93/G93_pop1.html",
+      "ancre": "Les traitements de l’œdème sont décrits dans la pharmacologie : l’osmothérapie",
+      "categorie": "renvoi interne",
+      "nature": "renvoi_medical",
+      "explication": "La fenêtre annonce que les traitements (dont craniectomie décompressive et hypothermie) sont « décrits dans la pharmacologie » ; l’onglet Pharmacologie (G93_d) ne traite ni la craniectomie ni l’hypothermie. Incohérence de contenu à résoudre par l’audit médical (ajout ou retrait).",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-14",
+      "fichier": "chapters/G93/G93_pop1.html",
+      "ancre": "estime à 2–4 le nombre de médecins spécialisés par million d’habitants",
+      "categorie": "ambiguïté de fond",
+      "nature": "renvoi_medical",
+      "explication": "« Estime à 2–4 le nombre » peut signifier un besoin (« il faut 2 à 4 médecins… ») ou un effectif existant ; le sens change la conclusion. À vérifier dans EUROMENE 2021.",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-15",
+      "fichier": "chapters/G93/G93_pop2.html",
+      "ancre": "Il n’existe pas de prophylaxie systématique.",
+      "categorie": "formulation médicale",
+      "nature": "renvoi_medical",
+      "explication": "« Il n’existe pas de prophylaxie » est littéralement inexact (la phrase parle d’une pratique, non d’une existence) ; le sens voulu paraît être « la prophylaxie systématique n’est pas recommandée » (ou « déconseillée »). Entre « non recommandée » et « déconseillée », la force de la recommandation ERC-ESICM 2021 est un fait à vérifier.",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-16",
+      "fichier": "chapters/G93/G93_pop2.html",
+      "ancre": "Mécanisme du risque",
+      "categorie": "intitulé",
+      "nature": "renvoi_medical",
+      "explication": "L’intitulé annonce un mécanisme, mais le paragraphe contient une définition du syndrome de Reye et une réserve sur la causalité ; aucun mécanisme n’est décrit. Renommer (« Risque » / « Définition ») ou ajouter le mécanisme relève du fond.",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-17",
+      "fichier": "glossary/g93.py",
+      "ancre": "('U','of UnResponsiveness'),('R','score')",
+      "categorie": "exactitude du développement",
+      "nature": "renvoi_medical",
+      "explication": "Le développement lettre à lettre attribue à la lettre R le mot « score », alors que le nom complet donné par la même entrée (« Full Outline of UnResponsiveness ») ne contient aucun mot « score » : les quatre lettres F-O-U-R ne correspondent pas aux quatre éléments listés (« of UnResponsiveness » est rattaché à U, R reçoit « score »). Correction nominale à sourcer ; non appliquée par ce rôle.",
+      "occurrences_ancre": 1
+    }
+  ],
+  "differes": [
+    "Espaces insécables globales : non appliquées, ni proposées. Les sept fichiers ne contiennent aucun U+00A0 ni U+202F. Volume mécaniquement relevé dans le texte (hors balises et attributs) : 159 espaces avant « ; », 166 avant « : », 14 avant « ? », 60 avant « % », 13 paires de guillemets « » à espaces ordinaires, environ 130 couples nombre-unité (mmHg, kPa, cm, mL, mg, kg, g, µg, °C, heures, minutes, mois, ans). Règle proposée pour un traitement mécanique unique par le coordinateur : espace insécable fine avant ; : ! ? %, espace insécable à l’intérieur des guillemets et entre un nombre et son unité, appliquée aux seuls nœuds de texte (jamais aux attributs, aux URL ni aux balises). Une proposition locale par occurrence serait inapplicable (extraits non uniques)."
+  ],
+  "observations": [
+    "Chiffres écrits « 20–22 mmHg », « 10–13 kPa », « 4,5 à 6,0 kPa » : l’intervalle est noté tantôt par un tiret demi-cadratin, tantôt par « à » (« 94 à 98 % », « 20 à 22 mmHg » en partie 3). Harmonisation typographique à décider globalement ; non proposée faute de forme canonique imposée.",
+    "Nombres : « 1235 » et « 1500 mg » sont écrits sans espace insécable de milliers, « 100 000 » avec espace ordinaire ; relève du choix différé sur les espaces insécables.",
+    "Les figures 1 à 4 ne sont annoncées ni commentées dans le texte courant (le mot « Figure » n’apparaît que dans l’étiquette accessible et la légende) : le guide de rédaction (§ 4) exige une annonce puis une lecture. Remarque de structure, non corrigée par une proposition locale.",
+    "Figure 3 : la légende dit « Les axes ne sont pas chiffrés » alors que le schéma porte l’étiquette « Au-delà du seuil de 20 à 22 mmHg » : chiffre dans un schéma déclaré non chiffré (à arbitrer par l’audit médical).",
+    "Le cours recourt à de nombreux encadrés « Piège » pour des avertissements de portée de lecture (« n’a pas été lu dans ce dossier / pour ce cours ») qui ne décrivent aucun piège clinique (g93-8 « Piège » sur la version 2025 de l’ERC-ESICM, g93-10, g93-12, d p-1). Intitulé à reconsidérer (par exemple « Limite de la source »).",
+    "De nombreuses fenêtres (g93-secondaires, g93-emsfc « Bilan », g93-mannitol « Contre-indications » et « Surveillance », g93-acetazolamide « Effets indésirables ») juxtaposent des mots-clés sous une étiquette, sans verbe : le guide de rédaction (§ 2) proscrit « l’énumération de mots-clés à la place d’une explication ». Seules les phrases nominales entières ont fait l’objet de propositions.",
+    "G93_pop1 (g93-cim, « Sous-catégories ») : un paragraphe de plus de 250 mots énumère douze sous-catégories ; le guide limite les paragraphes à trois à six phrases. Découpage proposé au rédacteur (un paragraphe par sous-catégorie), non réalisé ici car il suppose un remaniement de balisage.",
+    "Cellules de tableau à l’infinitif injonctif conservées (sans proposition) lorsque l’infinitif nomme l’action attendue dans une colonne « Mesure » ou « Piège » (G93_d p-4 : « Réévaluer la tolérance », « Évoquer un syndrome de Reye » ; G93_b « Cible » : « Éviter … ; viser … ») : à trancher selon la tolérance du guide pour les cellules brèves.",
+    "Terminologie : « pseudotumeur cérébrale » (G93_a) et « pseudotumor cerebri » (g93-friedman, g93-cim) désignent la même entité sous deux formes ; la forme latine n’est pas mise en italique. Harmonisation à décider.",
+    "« Sourcée / non sourcée » (G93_d) : néologisme fréquent dans le corpus MEDINA ; conservé, une alternative serait « référencée ».",
+    "Tableau 4 (G93_c) : l’en-tête « Lecture et lésion élémentaire » emprunte un terme de dermatologie qui s’applique mal aux valeurs de laboratoire ; conservé car il peut relever d’un gabarit commun."
+  ],
+  "lacunes": [
+    "Aucune vérification médicale n’a été faite : les renvois_medicaux signalent des formulations dont la correction changerait le fond ; ils ne sont ni confirmés ni infirmés.",
+    "Aucun contrôle de rendu navigateur des propositions : l’application simulée a été faite en mémoire, aucun fichier canonique n’est modifié.",
+    "Aucune lecture des sources primaires citées par la leçon : les écarts avec les sources sont établis seulement par comparaison interne entre les sept fichiers.",
+    "Le correcteur orthographique mécanique utilisé (pyspellchecker, dictionnaire français) ne vérifie ni les accords ni la syntaxe ; ceux-ci reposent sur la lecture intégrale. Aucun correcteur grammatical (type LanguageTool) n’était disponible dans l’environnement."
+  ],
+  "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée",
+  "figures": {
+    "portee_controle": "Le contrôle a porté sur le texte des figures (étiquettes accessibles, légendes, étiquettes internes des SVG), pas sur leur provenance. La vérification de la provenance est transmise à l'audit MED.",
+    "inventaire": [
+      {
+        "figure": "Figure 2 (G93_c.html, globe, nerf optique et gaine)",
+        "classe": "ORIGINE_INCONNUE",
+        "statut": "réserve",
+        "note": "Seule figure anatomique dessinée (SVG) ; sa légende la dit « ni à l’échelle ni calibrée ». Provenance à vérifier par l'audit MED ; la règle des figures anatomiques d’origine IA s’applique."
+      },
+      {
+        "figure": "Figures 1, 3, 4 (SVG : compartiments de Monro-Kellie, courbe pression-volume, cellule et canaux)",
+        "classe": "non évaluée par ce rôle (schémas conceptuels non anatomiques d'après leur légende)",
+        "statut": "transmis à l'audit MED",
+        "note": "Aucune provenance vérifiée. Figure 1 : étiquette accessible « loi de Monro-Kellie » harmonisée par la proposition correspondante. Figure 3 : voir observation sur le chiffre « 20 à 22 mmHg » dans un schéma déclaré non chiffré."
+      }
+    ]
+  },
+  "worktree_base": "103745baaa38c76f18288758cc7f689e5091ccdb",
+  "worktree_base_note": "Worktree démarré sur le HEAD de main portant l’approbation de la mission (fusion de la PR #203) ; base_sha du manifeste (523832d9) est son ancêtre ; sources figées identiques, empreintes SHA-256 conformes. Garde check exécutée avec --base 103745baaa38c76f18288758cc7f689e5091ccdb : passed."
+}
