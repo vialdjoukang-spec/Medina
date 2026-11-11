@@ -1,5 +1,13 @@
 # Autonomie des moteurs, publication Alpha et 7_Starter
 
+## Consigne nocturne du 16 octobre 2026 — à lire au démarrage
+
+Codex et Claude lisent maintenant [l'ordre Vial Starter nocturne, partage équitable et STOP 77](STARTER_NUIT_77_2026-10-16.md), transmis dans la PR #178. Il précise la demande de renforcement du code et de reprise des tours, les preuves d'exécution attendues et le partage du reliquat. Ce renvoi fait partie du point d'entrée Starter déjà prescrit par AGENTS.md ; il ne nécessite pas de connaître l'URL de la PR pour retrouver l'ordre.
+
+La fenêtre de relance nocturne se termine le 16 octobre 2026 à 08 h 00 Europe/Zurich ; ne pas la réactiver lors d'une session ultérieure à cette échéance. Tout nouvel ordre d'arrêt de Vial prévaut. L'ancien `/medina off` du contrôle #97 reste applicable à l'ancien moteur de déblocage, qui n'est pas réactivé par ce document ; toute nouvelle commande d'arrêt postérieure au présent lancement s'applique aussi aux nouvelles relances.
+
+L'ordre et ce renvoi ne prouvent pas que les Starters ou leurs agents ont démarré. Le contrat ci-dessous reste conservé, notamment ses preuves de clôture et son plafond sans remise à zéro.
+
 Autorité : nouvel ordre direct de Vial du15octobre2026, Europe/Zurich. Cet ordre remplace l’obligation précédente d’un courtier commun aux environnements Codex et Claude. Les règles médicales, droits des images, attributions et réservations demeurent applicables.
 
 ## Indépendance et publication
