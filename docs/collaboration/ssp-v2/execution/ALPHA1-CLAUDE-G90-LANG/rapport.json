@@ -1,0 +1,381 @@
+{
+  "mission": "ALPHA1-CLAUDE-G90-LANG",
+  "code": "G90",
+  "type_audit": "linguistique",
+  "base_sha": "103745baaa38c76f18288758cc7f689e5091ccdb",
+  "generation": 1,
+  "branche": "claude/alpha1/g90-lang-g1",
+  "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G90-LANG",
+  "conversation": "alpha1-claude-g90-lang",
+  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+  "modele_effort": "conforme au manifeste",
+  "date_debut": null,
+  "date_fin": "2026-10-16T09:33:27Z",
+  "lecture": {
+    "fichiers": [
+      "chapters/G90/G90_a.html",
+      "chapters/G90/G90_b.html",
+      "chapters/G90/G90_c.html",
+      "chapters/G90/G90_d.html",
+      "chapters/G90/G90_pop1.html",
+      "chapters/G90/G90_pop2.html",
+      "glossary/g90.py"
+    ],
+    "empreintes_conformes": true,
+    "empreintes_calculees": {
+      "chapters/G90/G90_a.html": "fdaaebb2dcb13a81cc4bd7c4dd906e993dfcd089b5ff04cbe58e5fde1e9b7e54",
+      "chapters/G90/G90_b.html": "6ff54866a1cf9160409501d2fa408871d6b5b9191702e663b3b65a2f546954f3",
+      "chapters/G90/G90_c.html": "904b67f35bb6b69fc30c47293381c07bed1ce4f911aa9f398732ff8a66be634b",
+      "chapters/G90/G90_d.html": "a3ac03dd846222d3cb0feeb28d288c326290b57883d5580661f644aa28a6c1f1",
+      "chapters/G90/G90_pop1.html": "14390a528d6368ca795f96630086496cd8c4351cf165da930cfeb50ef2a476e7",
+      "chapters/G90/G90_pop2.html": "1539d41f3809060c9eae10d179b9d5101020214ba975d161865753adbf5b6a8d",
+      "glossary/g90.py": "529495ade0c5d43c613ffa9f1ebb83d4e91387c24f9fcbada4f90560aac5b5df"
+    }
+  },
+  "premiere_verification": "Recalcul des SHA-256 des 7 fichiers contre .medina/missions/ALPHA1-CLAUDE-G90-LANG.json (tous conformes) ; lecture intégrale des sept fichiers (quatre onglets, deux fenêtres, glossaire) ; contrôle mécanique de la ponctuation et des mots répétés ; contrôle des abréviations par build_medina.audit() sur les sources avant et après application simulée des propositions (résultat {} dans les deux cas).",
+  "synthese": {
+    "nombre_propositions": 154,
+    "renvois_medicaux": 23,
+    "propositions_par_categorie": {
+      "syntaxe": 87,
+      "registre": 22,
+      "orthographe": 12,
+      "typographie": 7,
+      "grammaire": 7,
+      "cohérence": 6,
+      "ambiguïté": 6,
+      "ponctuation": 3,
+      "répétition": 3,
+      "unités": 1
+    },
+    "renvois_par_categorie": {
+      "ambiguïté": 4,
+      "cohérence": 4,
+      "logique": 3,
+      "terminologie": 3,
+      "fréquence": 2,
+      "causalité": 1,
+      "lexique": 1,
+      "accord": 1,
+      "intitulé de source": 1,
+      "source": 1,
+      "omission": 1,
+      "attribution": 1
+    },
+    "propositions_par_fichier": {
+      "chapters/G90/G90_a.html": 46,
+      "chapters/G90/G90_b.html": 24,
+      "chapters/G90/G90_c.html": 25,
+      "chapters/G90/G90_d.html": 11,
+      "chapters/G90/G90_pop1.html": 27,
+      "chapters/G90/G90_pop2.html": 20,
+      "glossary/g90.py": 1
+    },
+    "constats_hors_perimetre": 3
+  },
+  "propositions_fichier": "propositions.json",
+  "verification_unicite": {
+    "methode": "script Python : ancien.count(fichier) == 1 pour chacune des 154 propositions ; absence de chevauchement entre propositions d'un même fichier ; application simulée en mémoire (remplacements par position décroissante) puis build_medina.audit() == {} sur les six fichiers HTML et compile() du glossaire ; chaque ancre de renvoi est également unique dans son fichier.",
+    "toutes_uniques": true,
+    "sans_chevauchement": true,
+    "audit_abreviations_apres_application": {
+      "a": {},
+      "b": {},
+      "c": {},
+      "d": {},
+      "p1": {},
+      "p2": {}
+    },
+    "glossaire_compile": true,
+    "ancres_renvois_uniques": true
+  },
+  "constats": [
+    {
+      "id": "R-01",
+      "fichier": "chapters/G90/G90_a.html",
+      "ancre": "c’est-à-dire une accélération habituellement de 10 battements par minute ou moins",
+      "categorie": "logique",
+      "explication": "« Absence d’accélération cardiaque » est glosée par « une accélération de 10 battements par minute ou moins » : une accélération existe donc encore. L’équivalence entre « absente » et « ≤ 10 » est une convention clinique à formuler par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-02",
+      "fichier": "chapters/G90/G90_a.html",
+      "ancre": "après chirurgie thyroïdienne endoscopique : 0,03 à 0,48 %",
+      "categorie": "ambiguïté",
+      "explication": "Le dénominateur du pourcentage n’est pas nommé (0,03 à 0,48 % de quoi : des opérés, des interventions ?). La précision change la donnée chiffrée : à compléter par l’audit médical d’après la source (Xie 2025, lue en résumé).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-03",
+      "fichier": "chapters/G90/G90_a.html",
+      "ancre": "48 à 91 % des lésions au niveau ou au-dessus du 6e segment thoracique ; début habituel",
+      "categorie": "fréquence",
+      "explication": "Une fréquence se rapporte à des patients et non à des « lésions » : « 48 à 91 % des lésions » est incorrect. Le dénominateur exact (patients blessés médullaires au niveau ou au-dessus de T6 ? tous blessés médullaires ?) change la donnée chiffrée : à trancher par l’audit médical d’après Eldahan et Rabchevsky 2017. Même formule dans la fenêtre g90-da.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-04",
+      "fichier": "chapters/G90/G90_a.html",
+      "ancre": "la dysréflexie autonome devient rare dans le premier mois après la lésion (5,7 % seulement) et fréquente après 3 à 6 mois : un blessé médullaire récent n’est donc pas à l’abri",
+      "categorie": "causalité",
+      "explication": "Deux défauts de forme (« devient rare » sans état antérieur, « donc » qui tire de la rareté une absence d’immunité, alors que le sens est une opposition) dont la correction (« est rare … devient fréquente … n’est toutefois pas à l’abri ») redéfinit la chronologie et le lien logique. Les 5,7 % ne sont pas rapportés à un dénominateur. À trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-05",
+      "fichier": "chapters/G90/G90_a.html",
+      "ancre": "ou faux énophtalmos",
+      "categorie": "terminologie",
+      "explication": "Le terme français usuel est « énophtalmie » (« pseudo-énophtalmie » pour le faux enfoncement du globe) ; « énophtalmos » est un emprunt direct. L’expression figure aussi dans la fenêtre g90-horner. Choix lexical à valider avec la terminologie ophtalmologique.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-06",
+      "fichier": "chapters/G90/G90_a.html",
+      "ancre": "l’iris sans dilatateur actif ne s’ouvre plus : la dilatation est retardée",
+      "categorie": "cohérence",
+      "explication": "« Ne s’ouvre plus » (absence totale) et « la dilatation est retardée » (ralentissement) sont contradictoires dans la même phrase. Le choix entre « s’ouvre mal » et « s’ouvre avec retard » relève du physiologique : audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-07",
+      "fichier": "chapters/G90/G90_a.html",
+      "ancre": "considéré comme pathologique et non psychopathologique",
+      "categorie": "lexique",
+      "explication": "Le couple « pathologique / psychopathologique » est lexicalement bancal (« pathologique » s’oppose à « normal », non à « psychopathologique »). Une formulation correcte (par exemple « d’origine organique ») modifie l’énoncé médical sur l’étiologie : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-08",
+      "fichier": "chapters/G90/G90_a.html",
+      "ancre": "la rechercher d’abord est donc la première mesure thérapeutique",
+      "categorie": "logique",
+      "explication": "« Rechercher » une cause n’est pas une mesure thérapeutique ; la formulation exacte (retirer / réviser le médicament en cause ?) change la conduite énoncée : audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-09",
+      "fichier": "chapters/G90/G90_a.html",
+      "ancre": "dont 6 douloureux",
+      "categorie": "accord",
+      "explication": "« 7 étaient des dissections, dont 6 douloureux » : l’adjectif masculin renvoie à « Horner » et non à « dissections » (féminin). Le sens attendu (6 Horner douloureux parmi les 7 dissections ? 6 dissections douloureuses ?) engage le dénombrement : à lever par l’audit médical d’après Maamouri 2023.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-10",
+      "fichier": "chapters/G90/G90_b.html",
+      "ancre": "décrite comme pathognomonique)",
+      "categorie": "terminologie",
+      "explication": "« Pathognomonique » est un terme absolu (signe suffisant à lui seul) ; il figure dans l’onglet Examens et dans les fenêtres sous la même forme, rapporté à l’ESC 2018. Sa conservation, son atténuation ou son attribution exacte sont un choix médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-11",
+      "fichier": "chapters/G90/G90_b.html",
+      "ancre": "Spondylose cervicale de type artère carotide interne (perspective)",
+      "categorie": "intitulé de source",
+      "explication": "L’intitulé de cette référence, cité à l’appui de la dissection carotidienne, est peu intelligible (spondylose cervicale « de type artère carotide interne ») et sans lien visible avec un Horner. L’intitulé exact, la pertinence de la source et son niveau de preuve sont à vérifier par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-12",
+      "fichier": "chapters/G90/G90_b.html",
+      "ancre": "Cette conduite provient d’une revue américaine qui cite les recommandations du Veterans Affairs",
+      "categorie": "source",
+      "explication": "Le texte reconnaît lui-même que la conduite aiguë de la dysréflexie repose sur une source américaine, alors que la règle du projet exclut une recommandation américaine comme fondement d’une conduite. Hors périmètre linguistique : transmis à l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-13",
+      "fichier": "chapters/G90/G90_b.html",
+      "ancre": "avec pour objectifs la morbimortalité et la qualité de vie",
+      "categorie": "omission",
+      "explication": "Une morbimortalité ou une qualité de vie ne sont pas des objectifs en soi : le verbe manque (réduire la morbimortalité, améliorer la qualité de vie ?). Le sens attendu est évident mais le compléter revient à énoncer l’objectif d’une démarche de la Revue médicale suisse 2025 lue en résumé : audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-14",
+      "fichier": "chapters/G90/G90_b.html",
+      "ancre": "environ 12° au moins",
+      "categorie": "cohérence",
+      "explication": "« Environ » et « au moins » se contredisent (valeur approchée / minimum). La suite du cours écrit « lit incliné ≥ 12° » ou « environ 12° ou plus ». Le choix entre valeur approchée et seuil minimal engage la prescription : audit médical d’après le consensus AAS/EFAS.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-15",
+      "fichier": "chapters/G90/G90_b.html",
+      "ancre": "Aucune source lue ne traite la grossesse, l’insuffisance rénale ou hépatique pour ces entités ; la tachycardie posturale peut être déclenchée par une grossesse",
+      "categorie": "cohérence",
+      "explication": "La phrase affirme qu’aucune source ne traite la grossesse, puis cite la grossesse comme déclencheur de la tachycardie posturale. La nuance (conduite en grossesse non traitée, déclenchement traité) est une précision de fond : audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-16",
+      "fichier": "chapters/G90/G90_c.html",
+      "ancre": "l’apprentissage de la reconnaissance des prodromes et des manœuvres de contre-pression",
+      "categorie": "ambiguïté",
+      "explication": "On peut reconnaître des prodromes ; on pratique des manœuvres. « Apprentissage de la reconnaissance des … manœuvres » est ambigu (reconnaître ou exécuter ?). La fenêtre g90-ttt reprend la même formule. La précision change le contenu de l’éducation thérapeutique : audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-17",
+      "fichier": "chapters/G90/G90_c.html",
+      "ancre": "l’hypersensibilité atteint 40 % chez les hommes âgés sans symptôme",
+      "categorie": "cohérence",
+      "explication": "Le piège dit que l’hypersensibilité « atteint 40 % », alors que la section Fréquence (G90_a) et la fenêtre g90-sinus écrivent « jusqu’à 40 % ». Une valeur maximale n’est pas une valeur typique : le choix entre « jusqu’à 40 % » et « 40 % » modifie la donnée et relève de l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-18",
+      "fichier": "chapters/G90/G90_c.html",
+      "ancre": "qui interrompt la transmission dans les ganglions autonomes",
+      "categorie": "ambiguïté",
+      "explication": "L’antécédent du pronom « qui » (verbe au singulier) n’est pas déterminé : ganglionopathie, récepteur ou acétylcholine ; les anticorps (pluriel) sont exclus par l’accord. Désigner l’agent de l’interruption de transmission (anticorps bloquants ? maladie ?) est un énoncé physiopathologique : audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-19",
+      "fichier": "chapters/G90/G90_d.html",
+      "ancre": "La pharmacologie des affections autonomes est plus limitée que leur sémiologie",
+      "categorie": "logique",
+      "explication": "La comparaison oppose deux termes de nature différente (arsenal thérapeutique et richesse des signes). Le sens voulu (peu de médicaments pour des tableaux cliniques variés ?) est un jugement de fond : à confirmer par l’audit médical avant reformulation.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-20",
+      "fichier": "chapters/G90/G90_d.html",
+      "ancre": "bradycardie réflexe (atropine), rétention urinaire fréquente",
+      "categorie": "ambiguïté",
+      "explication": "La parenthèse « (atropine) » n’indique pas son rôle (traitement de la bradycardie ? médicament en cause ?). La fenêtre g90-midodrine la reprend. Elle engage une conduite : audit médical d’après l’information professionnelle.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-21",
+      "fichier": "chapters/G90/G90_d.html",
+      "ancre": "syndrome de perte de sel de l’hyperplasie congénitale",
+      "categorie": "terminologie",
+      "explication": "Le nom est incomplet : « hyperplasie congénitale » sans complément (des surrénales). La formule est reprise à l’identique dans la fenêtre g90-fludro. La précision du libellé de l’indication suisse est un énoncé de pharmacologie : audit médical d’après l’information professionnelle.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-22",
+      "fichier": "chapters/G90/G90_pop1.html",
+      "ancre": "48 à 91 % des lésions au niveau ou au-dessus du 6e segment thoracique selon la complétude",
+      "categorie": "fréquence",
+      "explication": "Même formule que dans G90_a : « % des lésions » au lieu de « % des patients ». Dénominateur à trancher par l’audit médical ; non corrigée ici.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-23",
+      "fichier": "chapters/G90/G90_pop2.html",
+      "ancre": "Le consensus de 2018 a introduit le seuil de 90 mmHg",
+      "categorie": "attribution",
+      "explication": "Cette fenêtre attribue le seuil de 90 mmHg au « consensus de 2018 », alors que la section 1 de G90_a l’attribue à l’ESC 2018 par rapport au consensus de 2011 ; deux textes de 2018 coexistent dans le cours (ESC et AAS/EFAS). La source citée au bout de la phrase est l’ESC. Le choix de l’attribution relève de l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    }
+  ],
+  "differes": [
+    "Espaces insécables globales (avant ; : ? et !, entre nombre et unité ou pourcentage) : non appliquées en masse, car chacune est une opération mécanique et non une reformulation, et le critère d'unicité interdit d'en faire des centaines de propositions. Les sept fichiers ne contiennent aucun U+00A0 ni U+202F. Volumes approximatifs hors balises : {\"a\": {\"point_virgule\": 39, \"deux_points\": 36, \"interrogation\": 0, \"pourcent\": 19, \"nombre_unite\": 31}, \"b\": {\"point_virgule\": 66, \"deux_points\": 35, \"interrogation\": 1, \"pourcent\": 18, \"nombre_unite\": 41}, \"c\": {\"point_virgule\": 44, \"deux_points\": 54, \"interrogation\": 14, \"pourcent\": 13, \"nombre_unite\": 48}, \"d\": {\"point_virgule\": 17, \"deux_points\": 10, \"interrogation\": 2, \"pourcent\": 0, \"nombre_unite\": 26}, \"pop1\": {\"point_virgule\": 46, \"deux_points\": 47, \"interrogation\": 0, \"pourcent\": 15, \"nombre_unite\": 29}, \"pop2\": {\"point_virgule\": 44, \"deux_points\": 63, \"interrogation\": 0, \"pourcent\": 15, \"nombre_unite\": 36}}. Seuls les guillemets français (6 occurrences : « neurogène », « brouillard cérébral », « à considérer », « malin », « pas de Horner », « vingt-dix ») et les séparateurs de milliers (4 occurrences) ont fait l'objet de propositions ponctuelles. Une règle globale sûre est : ' ;'→'\\u00a0;', ' :'→'\\u00a0:' (hors URL et attributs), ' ?'→'\\u00a0?', chiffre+' '+{mmHg, mg, g, mm, s, min, %, °}→ espace insécable.",
+    "Plages de valeurs : le cours mêle le tiret demi-cadratin (30–45 minutes, 140–159/90–99, 2–3 semaines, 15–45 ans, 5,5–26,2, 4e–5e segment) et la forme « de 2 à 3 mm », « 48 à 91 % ». Non uniformisées : le tiret est acceptable dans un tableau et change parfois la lecture (« à 30–45 minutes » = lecture à ce moment, non durée). Seules « 2–3 premières semaines » (G90_c) et « 15–45 ans » (G90_pop1) ont été corrigées lorsque la construction était fautive.",
+    "Références insérées en fin de phrase : les liens <a> suivent le texte sans parenthèses ni crochets (ex. « … dont 6 douloureux Syndrome de Claude Bernard-Horner (Maamouri 2023). »). Le rendu navigateur n'a pas été contrôlé : si le moteur les affiche en texte courant, une convention de délimitation est à décider globalement ; si le moteur les transforme en renvois, rien à faire. Non proposé en masse.",
+    "Pareto : les fenêtres de synthèse (pop2) sont rédigées en puces télégraphiques par construction ; seuls les fragments sans verbe, ambigus ou d'orthographe incohérente (4 cas) ont été repris."
+  ],
+  "observations": [
+    "Jargon de chantier : le cours emploie 36 fois « lu / lue / lues / non lu » (« causes lues », « conduite lue », « source lue en résumé »). Il traduit la règle « rien de mémoire » mais encombre le texte. Six occurrences ont été reformulées (trois en-têtes de colonnes, trois « conduite lue ») ; le reste relève d'un choix éditorial global.",
+    "Terminologie : « antihypotenseur » (huit occurrences, cinq fichiers) est aligné sur « antihypertenseur » et « prohypertenseur » ; « postganglionnaire » (dix occurrences) sur l'unique « post-ganglionnaires » ; « postprandiale » sur « post-prandiale » (deux occurrences) ; « surspécialisé ».",
+    "Le cours désigne parfois une société savante ou une année à la place du texte (« l'ESC 2018 distingue », « suit l'ESC 2018 », « Dose de l'ESC 2018 », « L'usage repose sur l'ESC 2018 ») ; six occurrences sont proposées en « les recommandations ESC 2018 ». Les mentions entre parenthèses « (ESC 2018, consensus fort) » et « (ESC 2018) » sont laissées.",
+    "« Horner » employé seul (comme nom de syndrome) est un raccourci cohérent dans tout le cours après la première définition ; non modifié.",
+    "Les titres des fenêtres et les étiquettes des boutons Pareto divergeaient pour trois paires ; trois propositions de cohérence (plan et deux boutons).",
+    "Le cours contient de nombreux infinitifs injonctifs et phrases nominales dans les cartes, les fenêtres et les corrigés ; le guide de rédaction (§ 2) les proscrit. Les cas où la reformulation ne touche que la syntaxe sont proposés (87 propositions de catégorie syntaxe) ; les listes de mots-clés de type Pareto et les cellules de tableaux sont laissées."
+  ],
+  "constats_hors_perimetre": [
+    {
+      "id": "H-01",
+      "fichier": "chapters/G90/G90_c.html",
+      "gravite_pressentie": "MAJEUR",
+      "constat": "L'onglet Sciences ne compte que trois sous-onglets (data-s : g90-s-anat, g90-s-physio, g90-s-genet) ; le sous-onglet « Sémiologie fondamentale et analytique » exigé par Vial est absent, et l'histologie et la biochimie ne sont pas représentées. Hors périmètre linguistique : transmis à l'audit MED (AGENTS.md)."
+    },
+    {
+      "id": "H-02",
+      "fichier": "chapters/G90/G90_b.html",
+      "gravite_pressentie": "à évaluer par MED",
+      "constat": "La conduite aiguë de la dysréflexie autonome repose sur une revue américaine (le texte le dit : section 8 « Limite des sources », onglet Examens cas 4, onglet Pharmacologie, fenêtre g90-da-urgence) ; la règle du projet exclut une recommandation américaine comme fondement d'une conduite. À arbitrer par l'audit MED."
+    },
+    {
+      "id": "H-03",
+      "fichier": "chapters/G90/G90_b.html",
+      "gravite_pressentie": "à évaluer par MED",
+      "constat": "Les références « Information professionnelle suisse Midodrin Substipharm (AIPS) » et « Information professionnelle suisse Florinef 0,1 mg (AIPS) » pointent vers la page d'accueil https://amiko.oddb.org (sans fiche précise) ; la date de consultation figure dans la liste des références (15 octobre 2026) mais pas l'identifiant de la fiche. À vérifier par l'audit MED."
+    }
+  ],
+  "figures": {
+    "portee_controle": "Le contrôle a porté sur le texte des six figures SVG (légendes, étiquettes, ponctuation), pas sur leur provenance. Les six sont des schémas de texte en boîtes et flèches (aucun dessin anatomique : uniquement des rectangles, des flèches et des textes), annoncés « Schéma didactique » dans leur légende.",
+    "inventaire": [
+      {
+        "figure": "Figure 1 (G90_a.html, voie oculosympathique)",
+        "classe": "schéma de texte, non anatomique",
+        "statut": "aucun défaut de langue"
+      },
+      {
+        "figure": "Figure 2 (G90_b.html, séquence devant une hypotension orthostatique)",
+        "classe": "schéma de texte, non anatomique",
+        "statut": "aucun défaut de langue"
+      },
+      {
+        "figure": "Figure 3 (G90_c.html, niveau de la lésion et conduite)",
+        "classe": "schéma de texte, non anatomique",
+        "statut": "un défaut de ponctuation (point-virgule orphelin en début de ligne) ; proposition de correction ; légende corrigée par une seconde proposition"
+      },
+      {
+        "figure": "Figure 4 (G90_c.html, arc du baroréflexe)",
+        "classe": "schéma de texte, non anatomique",
+        "statut": "aucun défaut de langue"
+      },
+      {
+        "figure": "Figure 5 (G90_c.html, dysréflexie autonome)",
+        "classe": "schéma de texte, non anatomique",
+        "statut": "aucun défaut de langue"
+      },
+      {
+        "figure": "Figure 6 (G90_c.html, mécanismes du SDRC)",
+        "classe": "schéma de texte, non anatomique",
+        "statut": "aucun défaut de langue"
+      }
+    ]
+  },
+  "worktree_base": "103745baaa38c76f18288758cc7f689e5091ccdb",
+  "worktree_base_note": "Le manifeste porte base_sha 523832d9ef6097607d3443f4398deee9cd0add11 ; la consigne de l'audit et le HEAD du worktree portent 103745baaa38c76f18288758cc7f689e5091ccdb. Les empreintes SHA-256 des sept fichiers sont conformes au manifeste dans les deux cas.",
+  "date_debut_note": "Heure de début non relevée au démarrage : date_debut laissée à null plutôt que d'être estimée.",
+  "lacunes": [
+    "Aucune vérification médicale n'a été faite : les renvois_medicaux signalent des formulations dont la correction changerait le fond ; ils ne sont ni confirmés ni infirmés.",
+    "Aucun contrôle de rendu navigateur des propositions : l'application simulée a été faite en mémoire, aucun fichier canonique n'est modifié.",
+    "Aucune lecture des sources primaires citées : les écarts avec les sources sont établis seulement par comparaison interne entre les sept fichiers de la leçon.",
+    "Aucun correcteur orthographique automatique n'était disponible dans l'environnement (hunspell, aspell, enchant absents) : l'orthographe a été contrôlée par relecture intégrale, par recherche de ponctuation doublée, de mots répétés et par inspection manuelle des 675 mots employés une seule fois.",
+    "Les espaces insécables avant les signes doubles et entre nombres et unités ne sont pas proposées en masse (voir differes)."
+  ],
+  "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+}
