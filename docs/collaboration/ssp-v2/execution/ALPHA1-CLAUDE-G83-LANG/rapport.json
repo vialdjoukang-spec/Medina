@@ -1,0 +1,254 @@
+{
+  "mission": "ALPHA1-CLAUDE-G83-LANG",
+  "code": "G83",
+  "type_audit": "linguistique",
+  "base_sha": "103745baaa38c76f18288758cc7f689e5091ccdb",
+  "base_sha_manifeste": "523832d9ef6097607d3443f4398deee9cd0add11",
+  "note_base": "Le worktree démarre sur 103745ba (main après PR #203) ; le manifeste cite la base 523832d9. Aucune différence entre ces deux commits pour les sept fichiers de la leçon (git diff vide, empreintes identiques).",
+  "generation": 1,
+  "branche": "claude/alpha1/g83-lang-g1",
+  "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G83-LANG",
+  "conversation": "alpha1-claude-g83-lang",
+  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+  "modele_effort": "conforme au manifeste",
+  "date_debut": null,
+  "date_fin": "2026-10-16T09:23:43Z",
+  "lecture": {
+    "fichiers": [
+      "chapters/G83/G83_a.html",
+      "chapters/G83/G83_b.html",
+      "chapters/G83/G83_c.html",
+      "chapters/G83/G83_d.html",
+      "chapters/G83/G83_pop1.html",
+      "chapters/G83/G83_pop2.html",
+      "glossary/g83.py"
+    ],
+    "empreintes_conformes": true,
+    "empreintes_calculees": {
+      "chapters/G83/G83_a.html": "88ec382964404b421b95a967ed9c6e0d4cdd1574647fe3b5c685cb9a1147ed69",
+      "chapters/G83/G83_b.html": "4464e998ebd105ed050fb8d38cb236c0c1e9ac9bd223a5b3044868b46e68f83a",
+      "chapters/G83/G83_c.html": "30dc4f6c38596723f271293a3c7172bf4bd108883b7a64e76ff81ceb4e57da0f",
+      "chapters/G83/G83_d.html": "3f352e64e65deeba4066653d6c99915a40e49c8e61fb9e55fbf17d2ce163310a",
+      "chapters/G83/G83_pop1.html": "dad0036767a4517026b70ae67d4da0dcf02aa4cf1c6dc7cc1e574aa62c37c675",
+      "chapters/G83/G83_pop2.html": "baf826595029449df37c9073cf7e5aa6b3bcbb57fd21ed3c9bbb5504c20b6f6c",
+      "glossary/g83.py": "f344ab883fc606267a42d75c07e023f35d946d863a2e52a9451adaa7ee81805d"
+    }
+  },
+  "premiere_verification": "Recalcul des SHA-256 des 7 fichiers contre .medina/missions/ALPHA1-CLAUDE-G83-LANG.json (tous conformes) ; lecture intégrale des 7 fichiers ; contrôle des abréviations par build_medina.audit() sur les sources avant et après application simulée des propositions (résultat {} dans les deux cas).",
+  "synthese": {
+    "nombre_propositions": 83,
+    "renvois_medicaux": 20,
+    "propositions_par_categorie": {
+      "syntaxe": 32,
+      "registre": 19,
+      "répétition": 10,
+      "cohérence": 7,
+      "ambiguïté": 7,
+      "grammaire": 6,
+      "ponctuation": 2
+    },
+    "constats_hors_perimetre": 0
+  },
+  "propositions_fichier": "propositions.json",
+  "verification_unicite": {
+    "methode": "script Python : ancien.count(fichier) == 1 pour chacune des 83 propositions ; absence de chevauchement entre propositions d’un même fichier ; application simulée en mémoire, comparaison des multiensembles de balises avant/après pour les six fichiers HTML, build_medina.audit() == {} sur les six fichiers HTML, compilation du glossaire modifié",
+    "toutes_uniques": true,
+    "sans_chevauchement": true,
+    "balises_identiques_apres_application": true,
+    "audit_abreviations_apres_application": {},
+    "glossaire_compile": true
+  },
+  "choix_differes": [
+    "Espaces insécables : aucun U+00A0 ni U+202F dans les sept fichiers (espaces avant « ; : ! ? », autour des guillemets « », avant « % » et les unités) ; la correction est globale, mécanique, et relève d’une passe d’intégration unique plutôt que de propositions locales.",
+    "Libellés « Réponse A/B » des cas cliniques : les boutons de choix ne portent pas de lettre visible dans les sources ; la correspondance dépend du moteur d’affichage, non vérifiée ici.",
+    "Lourdeur des phrases de plus de 40 mots dans les sections 2, 7 et 10 de G83_a et G83_b : le découpage exigerait de reconstruire des enchaînements causaux, laissé à la réécriture."
+  ],
+  "constats": [
+    {
+      "id": "R-01",
+      "fichier": "chapters/G83/G83_a.html",
+      "ancre": "dont l’examen peut s’inspirer",
+      "categorie": "ambiguïté de sens",
+      "explication": "« Deux causes iatrogènes dont l’examen peut s’inspirer » : le sens de « s’inspirer » est indéterminable (l’examen clinique doit-il rechercher ces causes ? l’anamnèse doit-elle les relever ? comme le dit la phrase suivante). Toute reformulation suppose de trancher l’intention médicale.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-02",
+      "fichier": "chapters/G83/G83_a.html",
+      "ancre": "a provoqué un syndrome de la queue de cheval avec arachnoïdite",
+      "categorie": "causalité",
+      "explication": "« A provoqué » affirme un lien causal pour deux cas publiés, alors que la fenêtre g83-iatrogene précise que ces cas isolés « ne démontrent pas un mécanisme ». Remplacer par « a précédé » ou « a été suivie de » modifie la force de l’affirmation : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-03",
+      "fichier": "chapters/G83/G83_a.html",
+      "ancre": "ne sont pas deux maladies, mais deux moments d’une même évolution ; elle a une valeur pronostique",
+      "categorie": "ambiguïté de référence et de fond",
+      "explication": "Le pronom « elle » peut reprendre la classification de Gleave et MacFarlane ou l’évolution ; l’énoncé « deux moments d’une même évolution » (le CESR succède-t-il toujours au CESI ?) n’est étayé par aucune fenêtre. Corriger la référence revient à choisir le sens : renvoi.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-04",
+      "fichier": "chapters/G83/G83_a.html",
+      "ancre": "En Suisse, la prévalence est évaluée à environ 0,04 % parmi les patients qui consultent pour une lombalgie, et le syndrome complique environ 2 % des hernies discales lombaires.",
+      "categorie": "portée de la mention géographique",
+      "explication": "Le complément « En Suisse » porte-t-il sur les deux chiffres ? La fenêtre g83-incidence attribue 0,04 % à la Revue Médicale Suisse 2010 et 2 % à Kögl 2024 (source allemande). Séparer les deux propositions revient à décider de la portée géographique : à confirmer par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-05",
+      "fichier": "chapters/G83/G83_a.html",
+      "ancre": "<td>Guider par imagerie</td>",
+      "categorie": "recommandation non sourcée",
+      "explication": "Infinitif injonctif qui énonce une recommandation (guider les injections par imagerie) ; la leçon ne rapporte que des cas où l’injection n’était pas guidée. Reformuler en phrase complète exige de décider si c’est une recommandation, un constat ou une hypothèse.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-06",
+      "fichier": "chapters/G83/G83_a.html",
+      "ancre": "Rapporter la complication au geste (cas publiés)",
+      "categorie": "ambiguïté de sens",
+      "explication": "« Rapporter la complication au geste » peut signifier la rattacher causalement au geste ou la déclarer. Le sens retenu détermine la reformulation : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-07",
+      "fichier": "chapters/G83/G83_a.html",
+      "ancre": "c’est la coquille du texte source, conservée ici telle quelle",
+      "categorie": "exactitude terminologique",
+      "explication": "La graphie « déefférentation » (G83.5) est présentée comme une coquille. Le terme « déefférentation » (privation d’efférences) est régulièrement formé et employé dans la littérature neurologique française pour le locked-in syndrome. La qualification de « coquille » est donc à vérifier contre le libellé de l’OFS ; aucune correction linguistique n’est proposée sans cette vérification.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-08",
+      "fichier": "chapters/G83/G83_pop1.html",
+      "ancre": "ou si elle est ancienne, de longue date et de cause non précisée",
+      "categorie": "cohérence interne",
+      "explication": "La fenêtre énumère trois attributs (« ancienne, de longue date et de cause non précisée ») alors que G83_a, G83_b et G83_pop2 n’en citent que deux (« ancienne et de cause non précisée »). « Ancienne » et « de longue date » sont redondants en français, mais la note de la source (BfArM) peut en comporter trois : supprimer l’un risquerait de retirer une information sourcée.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-09",
+      "fichier": "chapters/G83/G83_b.html",
+      "ancre": "Le retard est d’abord médical",
+      "categorie": "généralisation",
+      "explication": "Généralisation à partir d’une série de 24 patients opérés après 48 heures (imputable au médecin dans 20 cas) : « d’abord médical » fait d’une répartition observée une règle. À nuancer ou sourcer par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-10",
+      "fichier": "chapters/G83/G83_b.html",
+      "ancre": "85 hommes pour 52 femmes",
+      "categorie": "cohérence numérique",
+      "explication": "85 + 52 = 137 patients pour une série de 139 ; 89 + 46 + 3 = 138 formes pour 139 cas. Les effectifs peuvent tenir à des données manquantes dans la source de 1986, mais la leçon ne le dit pas. Vérification dans la source nécessaire ; non corrigé ici.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-11",
+      "fichier": "chapters/G83/G83_b.html",
+      "ancre": "peut les précéder",
+      "categorie": "référence du pronom",
+      "explication": "Dans « Un pontine warning syndrome peut les précéder », « les » reprend « l’infarctus et l’hémorragie » ; or la fenêtre g83-warning ne rattache le syndrome d’alerte qu’à l’infarctus basilaire. Corriger revient à restreindre une affirmation médicale.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-12",
+      "fichier": "chapters/G83/G83_b.html",
+      "ancre": "elle améliore le devenir fonctionnel et réduit la mortalité",
+      "categorie": "causalité",
+      "explication": "Double effet de la réadaptation précoce (devenir fonctionnel, mortalité) affirmé sans source ni nuance dans la phrase ni dans les fenêtres associées (g83-communication ne traite pas de réadaptation). À sourcer ou nuancer.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-13",
+      "fichier": "chapters/G83/G83_b.html",
+      "ancre": "La spasticité justifie souvent le",
+      "categorie": "fréquence",
+      "explication": "« Justifie souvent le baclofène intrathécal » contredit la restriction de G83_d (spasticité chronique grave, réfractaire aux antispastiques oraux) : l’indication est étroite. À nuancer par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-14",
+      "fichier": "chapters/G83/G83_b.html",
+      "ancre": "Les soignants sous-estiment le bien-être",
+      "categorie": "généralisation",
+      "explication": "Généralisation à tous les soignants à partir d’un pourcentage (9 %) d’une enquête européenne. À nuancer.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-15",
+      "fichier": "chapters/G83/G83_b.html",
+      "ancre": "comme le montrent les deux cas suisses cités plus haut, qui gardaient des séquelles à deux ans",
+      "categorie": "causalité",
+      "explication": "Deux cas isolés « montrent » la nécessité du bilan neuro-urologique ; ils illustrent des séquelles persistantes, ils ne démontrent pas l’intérêt du bilan. À reformuler par l’audit médical (comparer G83_c, e-4 : « illustre l’intérêt d’un suivi organisé »).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-16",
+      "fichier": "chapters/G83/G83_b.html",
+      "ancre": "Décompression urgente, au plus tard dans les 48 heures",
+      "categorie": "cohérence de fond",
+      "explication": "L’encadré fixe « au plus tard dans les 48 heures », alors que le piège de la même section écrit que « le seuil est un repère statistique, non une permission » et que la décompression est urgente « en général dans les 24 heures ». La proposition syntaxique ne tranche pas ce qui reste une tension de fond.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-17",
+      "fichier": "chapters/G83/G83_c.html",
+      "ancre": "série suisse (8 cas sur 24 patients opérés après 48 heures)",
+      "categorie": "attribution de source",
+      "explication": "La série de 24 patients opérés après 48 heures n’est pas qualifiée de suisse dans G83_b ni dans les fenêtres (revue de 2025, JBJS Reviews). L’adjectif « suisse » est à vérifier ou à retirer.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-18",
+      "fichier": "chapters/G83/G83_c.html",
+      "ancre": "la récupération distale est plus probable que la proximale",
+      "categorie": "non-séquitur",
+      "explication": "Dans l’encadré « Science → traitement » consacré à la reperfusion basilaire, l’énoncé sur la récupération distale ne découle pas du traitement et provient de la fenêtre g83-communication (enquête). Le lien avec la reperfusion est à justifier ou à retirer.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-19",
+      "fichier": "chapters/G83/G83_c.html",
+      "ancre": "le cours renvoie au dossier de la leçon G82",
+      "categorie": "renvoi à une autre leçon",
+      "explication": "La leçon renvoie à G82 pour les modalités du bilan neuro-urologique ; le contenu de G82 n’est pas dans le périmètre de cet audit et le renvoi n’est pas vérifiable ici.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-20",
+      "fichier": "chapters/G83/G83_d.html",
+      "ancre": "Test de 25 à 50 µg, paliers de 25 µg à au moins 24 heures",
+      "categorie": "cohérence numérique",
+      "explication": "L’encadré « À retenir » de cette leçon et le paragraphe des paramètres clés (section 13 de G83_b : « test de 25 à 50 µg ») évoquent une plage, alors que le tableau p-2 et la fenêtre g83-test-baclofene écrivent « 25 ou 50 µg » (deux doses initiales possibles). La plage laisse entendre que toute dose intermédiaire est possible : à harmoniser par l’audit médical, avec l’information professionnelle.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    }
+  ],
+  "lacunes": [
+    "Libellés officiels de l’OFS et note d’usage du BfArM non relus dans cet audit (périmètre linguistique) : la graphie « déefférentation » et la triple formule « ancienne, de longue date et de cause non précisée » sont donc seulement signalées (R-07, R-08).",
+    "Les sources médicales citées n’ont pas été relues : aucune affirmation de fond n’a été vérifiée ni modifiée.",
+    "Aucun rendu navigateur des propositions n’a été effectué : la vérification est textuelle (unicité, balises, abréviations)."
+  ],
+  "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+}
