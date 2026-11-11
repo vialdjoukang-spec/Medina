@@ -1,0 +1,120 @@
+{
+  "mission": "ALPHA1-CODEX-D69-LANG",
+  "code": "D69",
+  "intitule": "Purpura et autres affections hémorragiques",
+  "modele": "gpt-6.1-sol",
+  "effort": "medium",
+  "heure_utc": "2026-10-15T18:26:04.185968+00:00",
+  "base_worktree_sha": "f664dd9e8da71f647dd3dc4da18f509f8517959c",
+  "source_snapshot_sha": "bfc4576b88a4ce3bb82fb56e291a9d8c2f6bf996",
+  "source_files_sha256": {
+    "chapters/D69/D69_a.html": "14075c039e3600746e9a845188cb15a0c555ec5777d04fc7bfa8a8481874026b",
+    "chapters/D69/D69_b.html": "25f50abd097b374ca8c51354b45f1136613d25ca4e729b2550c40efbbbe6d046",
+    "chapters/D69/D69_c.html": "6d3d2efd7759a71dd8a27c8526c1f866ccd02e7d8cf3cffd6862aa39f231b876",
+    "chapters/D69/D69_d.html": "ed9bcdddb22006604b3b568609a4b7fa982dedecd947109fa27ef7f698ab160b",
+    "chapters/D69/D69_pop1.html": "78740d600e6d02be8759391331cb1d9d20e786c7993810dfa2aba3c10b30d387",
+    "chapters/D69/D69_pop2.html": "7eb68b65856bb297277dfef510dd729191ad38205ff5b8b7481fe7d6b8961c72",
+    "glossary/d69.py": "7ec1b7ba188dca3058dc465bd15cc761a5cdf37a481cab330b7de4816f6c1043"
+  },
+  "statut": "lecture_textuelle_integrale_et_propositions_locales_livrees_avec_reserves",
+  "type": "linguistique locale sans audit médical croisé",
+  "lecture": {
+    "fichiers_entiers": [
+      "chapters/D69/D69_a.html",
+      "chapters/D69/D69_b.html",
+      "chapters/D69/D69_c.html",
+      "chapters/D69/D69_d.html",
+      "chapters/D69/D69_pop1.html",
+      "chapters/D69/D69_pop2.html",
+      "glossary/d69.py"
+    ],
+    "surfaces": [
+      "4 onglets",
+      "fenêtres",
+      "tableaux",
+      "légendes/textes de figures",
+      "quiz/cas et réponses",
+      "résumés",
+      "glossaire local entier"
+    ],
+    "methode": "Extraction html.parser et lecture intégrale segmentée réelle. Tranches tronquées de a (3.4 à 4.2) et pop2 (18000 à 25400 caractères) récupérées et relues.",
+    "limites": [
+      "Pas de navigateur ni inspection visuelle des pixels des images ; audit des textes et légendes.",
+      "Glossaires partagés runtime non lus ; seule la définition locale conditionnelle est auditée.",
+      "Références lues comme texte du cours, sans validation clinique ni lecture de leurs publications en ligne.",
+      "Deltas MED parallèles non lus/non validés."
+    ]
+  },
+  "propositions": {
+    "nombre": 23,
+    "fichier": "propositions.json",
+    "patch": "propositions.patch",
+    "copies": "draft/chapters/D69",
+    "statut": "propositions en copies réservées, aucune source canonique modifiée"
+  },
+  "invariants_verifies": {
+    "empreintes_sources_conformes": true,
+    "balises_attributs_ordre_liens_ids_data_k_identiques": true,
+    "suite_nombres_identique": true,
+    "faits": "Relecture locale de toutes les paires ; valeurs/unités/conditions/négations/degrés de certitude conservés ; ambiguïtés cliniques réservées.",
+    "preuve": "controles.json"
+  },
+  "reserves_pour_auditeur_medical": [
+    {
+      "id": "MED-01",
+      "fichier": "chapters/D69/D69_c.html",
+      "texte": "Il répond à trois questions : le chiffre est-il réel, les autres lignées sont-elles normales, et la coagulation plasmatique est-elle intacte ?",
+      "question": "L’hémogramme avec frottis est-il supposé répondre à la coagulation plasmatique ? Ambiguïté entre bilan de base et examen isolé ; aucune réécriture clinique."
+    },
+    {
+      "id": "MED-02",
+      "fichier": "chapters/D69/D69_c.html",
+      "texte": "Des valeurs normales éliminent une coagulation intravasculaire disséminée.",
+      "question": "Vérifier la portée absolue de éliminent, répétée dans résumés/glossaire ; aucune suppression de certitude."
+    },
+    {
+      "id": "MED-03",
+      "fichier": "chapters/D69/D69_pop1.html",
+      "texte": "Un résultat positif est rarement un faux positif, puisque la spécificité est de 98 %.",
+      "question": "Le passage semble déduire la probabilité de faux positif après résultat positif de la seule spécificité. Clarifier avec l’auditeur médical ; aucun calcul de VPP ajouté."
+    },
+    {
+      "id": "MED-04",
+      "fichier": "chapters/D69/D69_d.html",
+      "texte": "des doses élevées sont sans risque à court terme (10 jours au plus)",
+      "question": "Portée absolue de sans risque à comparer au libellé suisse. La langue seule ne doit pas atténuer un degré de certitude médical."
+    },
+    {
+      "id": "MED-05",
+      "fichier": "chapters/D69/D69_pop2.html",
+      "texte": "Formule : dose = minimum (1 mg/kg ; 80 mg).",
+      "question": "Dimensions différentes entre mg/kg et mg : préciser après validation si le poids doit apparaître dans la formule. Aucune formule modifiée."
+    },
+    {
+      "id": "MED-06",
+      "fichier": "chapters/D69/D69_pop1.html",
+      "texte": "Le frottis montre des schizocytes, à répéter car ils peuvent manquer au début",
+      "question": "Construction grammaticale réparée en faisant répéter la recherche ; le sens initial montre a été conservé. Le médecin peut préférer une formulation conditionnelle selon la situation."
+    },
+    {
+      "id": "MED-07",
+      "fichier": "chapters/D69/D69_b.html",
+      "texte": "la dexaméthasone est contre-indiquée",
+      "question": "Le degré contre-indiqué pendant la grossesse est clinique ; à arbitrer par l’auditeur médical, sans simple atténuation linguistique."
+    },
+    {
+      "id": "MED-08",
+      "fichier": "chapters/D69/D69_b.html",
+      "texte": "aucune information professionnelle suisse n’a été trouvée, il ne doit donc pas être présenté comme disponible en Suisse",
+      "question": "Absence de résultat de recherche et absence de disponibilité sont des constats distincts ; ne pas arbitrer par une retouche linguistique."
+    },
+    {
+      "id": "MED-09",
+      "fichier": "chapters/D69/D69_c.html",
+      "texte": "Elle est exclue de D69 (le purpura thrombotique thrombocytopénique relève de M31.1) et se confirme par le dosage d’ADAMTS13",
+      "question": "Le pronom Elle semble viser la microangiopathie entière : confirmer le périmètre de la confirmation ADAMTS13. Aucun pronom remplacé par une entité clinique sans arbitrage."
+    }
+  ],
+  "suite": "Relire deltas MED avant intégration ; arbitrage clinique des réserves au médecin.",
+  "publication": "aucune ; ni push ni merge ni release"
+}
