@@ -1,0 +1,798 @@
+{
+ "controles": 78,
+ "verdicts_controles": {
+  "CORRECT": 73,
+  "ARRONDI": 2,
+  "FAUX": 3,
+  "NON_VERIFIABLE": 0
+ },
+ "occurrences_rattachees": 337,
+ "verdicts_occurrences": {
+  "CORRECT": 329,
+  "ARRONDI": 4,
+  "FAUX": 4,
+  "NON_VERIFIABLE": 0
+ },
+ "resultats": [
+  {
+   "id": "K01",
+   "attendu": 65,
+   "trouve": 65,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "PAS actuelle − PAS de base = 170 − 105",
+   "source": "S1 § 3.3.6.a",
+   "note": ""
+  },
+  {
+   "id": "K02",
+   "attendu": 125,
+   "trouve": 125,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "seuil = base + 20 (définition : > 20 mmHg)",
+   "source": "S1 § 3.3.6.a",
+   "note": ""
+  },
+  {
+   "id": "K03",
+   "attendu": 45,
+   "trouve": 45,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "dépassement du seuil = 65 − 20",
+   "source": "S1 § 3.3.6.a",
+   "note": ""
+  },
+  {
+   "id": "K04",
+   "attendu": true,
+   "trouve": true,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "hausse > 20 → définition remplie",
+   "source": "S1 § 3.3.6.a",
+   "note": ""
+  },
+  {
+   "id": "K05",
+   "attendu": 18,
+   "trouve": 18,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "hausse = 118 − 100",
+   "source": "S1 § 3.3.6.a",
+   "note": ""
+  },
+  {
+   "id": "K06",
+   "attendu": false,
+   "trouve": false,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "18 > 20 ? → non (bonne réponse « Non »)",
+   "source": "S1 § 3.3.6.a",
+   "note": ""
+  },
+  {
+   "id": "K07",
+   "attendu": "hausse ≤ 20 : définition non remplie",
+   "trouve": "hausse ≤ 20 : définition non remplie",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "Pareto cas : « Hausse de 20 mmHg ou moins » cohérent avec « plus de 20 »",
+   "source": "S1 § 3.3.6.a",
+   "note": ""
+  },
+  {
+   "id": "K08",
+   "attendu": 11,
+   "trouve": 11,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "droite 5+4+2+0+0",
+   "source": "S2 cotation 0–5",
+   "note": ""
+  },
+  {
+   "id": "K09",
+   "attendu": 9,
+   "trouve": 9,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "gauche 5+3+1+0+0",
+   "source": "S2 cotation 0–5",
+   "note": ""
+  },
+  {
+   "id": "K10",
+   "attendu": 20,
+   "trouve": 20,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "UEMS = 11 + 9",
+   "source": "S2",
+   "note": ""
+  },
+  {
+   "id": "K11",
+   "attendu": 50,
+   "trouve": 50,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "maximum membres supérieurs = 5 muscles × 5 × 2 côtés",
+   "source": "S2",
+   "note": ""
+  },
+  {
+   "id": "K12",
+   "attendu": 50,
+   "trouve": 50,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "maximum membres inférieurs = 5 muscles × 5 × 2 côtés",
+   "source": "S2",
+   "note": ""
+  },
+  {
+   "id": "K13",
+   "attendu": 25,
+   "trouve": 25,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "maximum par côté au membre supérieur = 5 × 5",
+   "source": "S2",
+   "note": ""
+  },
+  {
+   "id": "K14",
+   "attendu": "C6",
+   "trouve": "C6",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "niveau moteur droit : muscle le plus bas ≥ 3, sus-jacents à 5",
+   "source": "S2 motor level",
+   "note": ""
+  },
+  {
+   "id": "K15",
+   "attendu": "C6",
+   "trouve": "C6",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "niveau moteur gauche",
+   "source": "S2 motor level",
+   "note": ""
+  },
+  {
+   "id": "K16",
+   "attendu": "C5",
+   "trouve": "C5",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "NLI = plus rostral de {S-D C6, S-G C5, M-D C6, M-G C6}",
+   "source": "S2 NLI",
+   "note": ""
+  },
+  {
+   "id": "K17",
+   "attendu": 56,
+   "trouve": 56,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "sensibilité : 28 points × cotation max 2 = 56 par modalité et par côté",
+   "source": "S2",
+   "note": ""
+  },
+  {
+   "id": "K18",
+   "attendu": 10,
+   "trouve": 10,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "dix muscles clés C5–T1 et L2–S1 (5 + 5)",
+   "source": "S2",
+   "note": ""
+  },
+  {
+   "id": "K19",
+   "attendu": "B",
+   "trouve": "B",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "S4–S5 sensitif présent, VAC absente, aucune motricité sous le niveau → B",
+   "source": "S2 AIS B",
+   "note": ""
+  },
+  {
+   "id": "K20",
+   "attendu": "incomplet",
+   "trouve": "incomplet",
+   "ecart": "différent",
+   "verdict": "FAUX",
+   "formule": "Critère C/D : statut moteur incomplet = VAC OU (sensitif incomplet + motricité > 3 niveaux sous le niveau moteur, muscles clés ou non clés)",
+   "source": "S2 AIS C",
+   "note": "Le tableau g82-2 et la fenêtre g82-ais réduisent ce critère à « motricité préservée » : critère incomplet (constat C05)."
+  },
+  {
+   "id": "K20A",
+   "attendu": "moitié des muscles clés sous le NLI cotés ≥ 3",
+   "trouve": "moitié des muscles clés sous le NLI cotés ≥ 3",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "seuil C/D (moins de la moitié vs au moins la moitié) ; seuil 3 = mouvement contre la pesanteur",
+   "source": "S2 AIS C/D",
+   "note": ""
+  },
+  {
+   "id": "K21",
+   "attendu": "G82.12",
+   "trouve": "G82.12",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "G82.1 (paraplégie spastique) + 5e caractère 2 (chronique complète)",
+   "source": "S3",
+   "note": ""
+  },
+  {
+   "id": "K22",
+   "attendu": "G82.64!",
+   "trouve": "G82.64!",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "T10 ∈ [T7–T10] → G82.64!",
+   "source": "S3 G82.6-!",
+   "note": ""
+  },
+  {
+   "id": "K23",
+   "attendu": true,
+   "trouve": true,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "10 h > 8 h → MPSS non proposée",
+   "source": "S6",
+   "note": ""
+  },
+  {
+   "id": "K24",
+   "attendu": "24 h",
+   "trouve": "24 h",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "décompression ≤ 24 h",
+   "source": "S4",
+   "note": ""
+  },
+  {
+   "id": "K25",
+   "attendu": "75–80 / 90–95 mmHg ; 3–7 j",
+   "trouve": "75–80 / 90–95 mmHg ; 3–7 j",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "PAM cibles et durée",
+   "source": "S5",
+   "note": ""
+  },
+  {
+   "id": "K26",
+   "attendu": "72 h",
+   "trouve": "72 h",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "thromboprophylaxie dans les 72 h",
+   "source": "S7",
+   "note": ""
+  },
+  {
+   "id": "K27",
+   "attendu": 2.32,
+   "trouve": 2.32,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "SMR ≈ √(2,10 × 2,56)",
+   "source": "S9",
+   "note": ""
+  },
+  {
+   "id": "K28",
+   "attendu": 3.62,
+   "trouve": 3.62,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "HR ≈ √(2,18 × 6,02)",
+   "source": "S13",
+   "note": ""
+  },
+  {
+   "id": "K29",
+   "attendu": 2.82,
+   "trouve": 2.76,
+   "ecart": 0.06,
+   "verdict": "CORRECT",
+   "formule": "RR ≈ √(1,60 × 4,98) (IC asymétrique attendu, tolérance 0,10)",
+   "source": "S4",
+   "note": "Écart 0,06 compatible avec un intervalle asymétrique publié ; valeurs identiques au résumé S4."
+  },
+  {
+   "id": "K30",
+   "attendu": 43.3,
+   "trouve": 43.3,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "Kirshblum : 122/282 urodynamiques",
+   "source": "S16",
+   "note": ""
+  },
+  {
+   "id": "K31",
+   "attendu": 76.2,
+   "trouve": 76.2,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "Kirshblum : 93/122 épisodes",
+   "source": "S16",
+   "note": ""
+  },
+  {
+   "id": "K32",
+   "attendu": "examens (282 urodynamiques chez 70 personnes)",
+   "trouve": "patients",
+   "ecart": "différent",
+   "verdict": "FAUX",
+   "formule": "fenêtre g82-urodynamique : « chez 43,3 % des patients »",
+   "source": "S16",
+   "note": "Le dénominateur est le nombre d’examens, non de patients (constat C10)."
+  },
+  {
+   "id": "K33",
+   "attendu": 11.1,
+   "trouve": 11.1,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "Hirsch : 2 décès / 18 cas",
+   "source": "S17",
+   "note": ""
+  },
+  {
+   "id": "K34",
+   "attendu": 83.3,
+   "trouve": 83.3,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "Hirsch : 15/18 atteintes SNC (leçon : 83 %)",
+   "source": "S17",
+   "note": ""
+  },
+  {
+   "id": "K35",
+   "attendu": 88.9,
+   "trouve": 88.9,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "Hirsch : déclencheurs vésico-intestinaux 89 % ≈ 16/18",
+   "source": "S17",
+   "note": ""
+  },
+  {
+   "id": "K36",
+   "attendu": 21.6,
+   "trouve": 21.6,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "aide à domicile : 280/1294 (leçon : 22 %)",
+   "source": "S14",
+   "note": ""
+  },
+  {
+   "id": "K37",
+   "attendu": "environ 53 à 60 %",
+   "trouve": "environ 54 à 60 %",
+   "ecart": null,
+   "verdict": "ARRONDI",
+   "formule": "Pareto épidémiologie : bornes 53,3 % et 59,8 % → arrondi 53 à 60 %",
+   "source": "S11, S12",
+   "note": "53,3 arrondi à 54 au lieu de 53 (constat C14, mineur)."
+  },
+  {
+   "id": "K38",
+   "attendu": "51 à 53,5 ans",
+   "trouve": "51 à 53,5 ans",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "Pareto : âges médians des deux échantillons",
+   "source": "S11, S12",
+   "note": ""
+  },
+  {
+   "id": "K39",
+   "attendu": 15,
+   "trouve": 15,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "jour 1 : 5 mg × 3 (départ 3 × 5 mg, +5 mg par prise tous les 3 jours)",
+   "source": "S20 Posologie",
+   "note": ""
+  },
+  {
+   "id": "K40",
+   "attendu": 30,
+   "trouve": 30,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "jour 4 : 10 mg × 3 (départ 3 × 5 mg, +5 mg par prise tous les 3 jours)",
+   "source": "S20 Posologie",
+   "note": ""
+  },
+  {
+   "id": "K41",
+   "attendu": 45,
+   "trouve": 45,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "jour 7 : 15 mg × 3 (départ 3 × 5 mg, +5 mg par prise tous les 3 jours)",
+   "source": "S20 Posologie",
+   "note": ""
+  },
+  {
+   "id": "K42",
+   "attendu": 60,
+   "trouve": 60,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "jour 10 : 20 mg × 3 (départ 3 × 5 mg, +5 mg par prise tous les 3 jours)",
+   "source": "S20 Posologie",
+   "note": ""
+  },
+  {
+   "id": "K43",
+   "attendu": 75,
+   "trouve": 75,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "jour 13 : 25 mg × 3 (départ 3 × 5 mg, +5 mg par prise tous les 3 jours)",
+   "source": "S20 Posologie",
+   "note": ""
+  },
+  {
+   "id": "K44",
+   "attendu": true,
+   "trouve": true,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "paliers ≤ 80 mg/j (borne haute habituelle) ; 30 mg/j atteint au jour 4",
+   "source": "S20",
+   "note": ""
+  },
+  {
+   "id": "K45",
+   "attendu": true,
+   "trouve": true,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "quiz 6 : 60 mg/j dans la fourchette 30–80",
+   "source": "S20",
+   "note": ""
+  },
+  {
+   "id": "K46",
+   "attendu": "5 mg = ½ comprimé sécable à 10 mg",
+   "trouve": "5 mg = ½ comprimé sécable à 10 mg",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "faisabilité galénique en Suisse (10 et 25 mg sécables)",
+   "source": "S20 Forme",
+   "note": ""
+  },
+  {
+   "id": "K47",
+   "attendu": "environ 5 mg/j chez l’hémodialysé chronique",
+   "trouve": "environ 5 mg/j chez l’insuffisant rénal",
+   "ecart": null,
+   "verdict": "ARRONDI",
+   "formule": "FI : dose de départ ~5 mg/j précisée pour l’hémodialyse chronique",
+   "source": "S20 Insuffisance rénale",
+   "note": "Généralisation à toute insuffisance rénale (constat C08, mineur)."
+  },
+  {
+   "id": "K48",
+   "attendu": "≈ 3 semaines",
+   "trouve": "≈ 3 semaines",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "arrêt progressif (FI : après une utilisation > 2–3 mois)",
+   "source": "S20",
+   "note": ""
+  },
+  {
+   "id": "K49",
+   "attendu": "6 à 8 semaines",
+   "trouve": "6 à 8 semaines",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "réévaluation après dose maximale",
+   "source": "S20",
+   "note": ""
+  },
+  {
+   "id": "K50",
+   "attendu": "100–120 mg/j sous surveillance hospitalière",
+   "trouve": "100–120 mg/j sous surveillance hospitalière",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "dose haute",
+   "source": "S20",
+   "note": ""
+  },
+  {
+   "id": "K51",
+   "attendu": 7.5,
+   "trouve": 7.5,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "départ 2,5 mg × 3 = 7,5 mg/j",
+   "source": "S22",
+   "note": ""
+  },
+  {
+   "id": "K52",
+   "attendu": 2.5,
+   "trouve": 2.5,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "2,5 mg = ½ comprimé à 5 mg (comprimé divisible)",
+   "source": "S22 Forme",
+   "note": ""
+  },
+  {
+   "id": "K53",
+   "attendu": true,
+   "trouve": true,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "entretien 10–15 mg/j ≤ maximum 20 mg/j",
+   "source": "S22",
+   "note": ""
+  },
+  {
+   "id": "K54",
+   "attendu": 20,
+   "trouve": 20,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "maximum 20 mg/j = 4 prises × 5 mg",
+   "source": "S22",
+   "note": ""
+  },
+  {
+   "id": "K55",
+   "attendu": "3 jours consécutifs (de préférence)",
+   "trouve": "2 à 3 jours",
+   "ecart": "différent",
+   "verdict": "FAUX",
+   "formule": "durée du calendrier mictionnel",
+   "source": "S1 § 3.3.4.a",
+   "note": "Constat C09 (mineur)."
+  },
+  {
+   "id": "K56",
+   "attendu": "2 à 3 fois",
+   "trouve": "2 à 3 fois",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "débitmétrie et résidu répétés",
+   "source": "S1 § 3.3.7.b",
+   "note": ""
+  },
+  {
+   "id": "K57",
+   "attendu": "≈ 6 mois ; 1 an ; 1–2 ans",
+   "trouve": "≈ 6 mois ; 1 an ; 1–2 ans",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "rythme du suivi",
+   "source": "S1 § 3.7.1",
+   "note": ""
+  },
+  {
+   "id": "K58",
+   "attendu": 900,
+   "trouve": 900,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "bolus 30 mg/kg × 30 kg (exemple de la proposition)",
+   "source": "S24 Swisspeddose",
+   "note": ""
+  },
+  {
+   "id": "K59",
+   "attendu": 3726,
+   "trouve": 3726,
+   "ecart": 0.0,
+   "verdict": "CORRECT",
+   "formule": "5,4 mg/kg/h × 30 kg × 23 h (exemple de la proposition)",
+   "source": "S24 Swisspeddose",
+   "note": ""
+  },
+  {
+   "id": "K60",
+   "attendu": "19,9–49,7 /million/an ; 621 vs 213",
+   "trouve": "19,9–49,7 /million/an ; 621 vs 213",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "concordance leçon ↔ source lue (comparaison de transcription)",
+   "source": "S8",
+   "note": ""
+  },
+  {
+   "id": "K61",
+   "attendu": "SMR 2,32 (2,10–2,56)",
+   "trouve": "SMR 2,32 (2,10–2,56)",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "concordance leçon ↔ source lue (comparaison de transcription)",
+   "source": "S9",
+   "note": ""
+  },
+  {
+   "id": "K62",
+   "attendu": "EV 80,6 % (H) 76,9 % (F) ; 45,1 vs 28,7 années",
+   "trouve": "EV 80,6 % (H) 76,9 % (F) ; 45,1 vs 28,7 années",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "concordance leçon ↔ source lue (comparaison de transcription)",
+   "source": "S10",
+   "note": ""
+  },
+  {
+   "id": "K63",
+   "attendu": "SMR NTSCI 1,6 ; CV 39,8 % ; néoplasies 22 % ; infections 9,9 %",
+   "trouve": "SMR NTSCI 1,6 ; CV 39,8 % ; néoplasies 22 % ; infections 9,9 %",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "concordance leçon ↔ source lue (comparaison de transcription)",
+   "source": "S18",
+   "note": ""
+  },
+  {
+   "id": "K64",
+   "attendu": "HR malin 10 ; infectieux 2,6 ; vasculaire 2,5",
+   "trouve": "HR malin 10 ; infectieux 2,6 ; vasculaire 2,5",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "concordance leçon ↔ source lue (comparaison de transcription)",
+   "source": "S19",
+   "note": ""
+  },
+  {
+   "id": "K65",
+   "attendu": "HR perdus de vue 3,62",
+   "trouve": "HR perdus de vue 3,62",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "concordance leçon ↔ source lue (comparaison de transcription)",
+   "source": "S13",
+   "note": ""
+  },
+  {
+   "id": "K66",
+   "attendu": "âge 53,5 ; 69,6 % H ; 53,3 % para ; 53,7 % MI ; 5,2 mois",
+   "trouve": "âge 53,5 ; 69,6 % H ; 53,3 % para ; 53,7 % MI ; 5,2 mois",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "concordance leçon ↔ source lue (comparaison de transcription)",
+   "source": "S11",
+   "note": ""
+  },
+  {
+   "id": "K67",
+   "attendu": "77,7 % H ; 73,7 % trauma ; 59,8 % para ; 51 ans",
+   "trouve": "77,7 % H ; 73,7 % trauma ; 59,8 % para ; 51 ans",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "concordance leçon ↔ source lue (comparaison de transcription)",
+   "source": "S12",
+   "note": ""
+  },
+  {
+   "id": "K68",
+   "attendu": "un tiers à haut risque CV ; ~40 % syndrome cardiométabolique",
+   "trouve": "un tiers à haut risque CV ; ~40 % syndrome cardiométabolique",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "concordance leçon ↔ source lue (comparaison de transcription)",
+   "source": "S11, S15",
+   "note": ""
+  },
+  {
+   "id": "K69",
+   "attendu": "22 % ; 6 h/semaine",
+   "trouve": "22 % ; 6 h/semaine",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "concordance leçon ↔ source lue (comparaison de transcription)",
+   "source": "S14",
+   "note": ""
+  },
+  {
+   "id": "K70",
+   "attendu": "58,8 % ; 69,4 % non traités",
+   "trouve": "58,8 % ; 69,4 % non traités",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "concordance leçon ↔ source lue (comparaison de transcription)",
+   "source": "S21",
+   "note": ""
+  },
+  {
+   "id": "K71",
+   "attendu": "cancer de vessie × 16 à 28",
+   "trouve": "cancer de vessie × 16 à 28",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "concordance leçon ↔ source lue (comparaison de transcription)",
+   "source": "S23",
+   "note": ""
+  },
+  {
+   "id": "K72",
+   "attendu": "6,4 ; 12,5 ; 15,8 mois (moyennes)",
+   "trouve": "6,4 ; 12,5 ; 15,8 mois (moyennes)",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "concordance leçon ↔ source lue (comparaison de transcription)",
+   "source": "S25",
+   "note": ""
+  },
+  {
+   "id": "K73",
+   "attendu": "prévalence 280–906 /million",
+   "trouve": "prévalence 280–906 /million",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "concordance leçon ↔ source lue (comparaison de transcription)",
+   "source": "S1 tableau 2",
+   "note": ""
+  },
+  {
+   "id": "K74",
+   "attendu": "NDO/DSD jusqu’à 95 % ; DU jusqu’à 83 %",
+   "trouve": "NDO/DSD jusqu’à 95 % ; DU jusqu’à 83 %",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "concordance leçon ↔ source lue (comparaison de transcription)",
+   "source": "S1 tableau 2",
+   "note": ""
+  },
+  {
+   "id": "K75",
+   "attendu": "ZPP motrice 35,2 % des lésions incomplètes ; 100 % AIS B",
+   "trouve": "ZPP motrice 35,2 % des lésions incomplètes ; 100 % AIS B",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "concordance leçon ↔ source lue (comparaison de transcription)",
+   "source": "S26",
+   "note": ""
+  },
+  {
+   "id": "K76",
+   "attendu": "RR 2,76 (1,60–4,98) ; +4,50 points",
+   "trouve": "RR 2,76 (1,60–4,98) ; +4,50 points",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "concordance leçon ↔ source lue (comparaison de transcription)",
+   "source": "S4",
+   "note": ""
+  },
+  {
+   "id": "K77",
+   "attendu": "G82.60! C1–C3 … G82.67! S2–S5",
+   "trouve": "G82.60! C1–C3 … G82.67! S2–S5",
+   "ecart": null,
+   "verdict": "CORRECT",
+   "formule": "concordance leçon ↔ source lue (comparaison de transcription)",
+   "source": "S3",
+   "note": ""
+  }
+ ]
+}
