@@ -1,0 +1,974 @@
+{
+ "mission": "ALPHA1-CLAUDE-G91-MED",
+ "code": "G91",
+ "type_audit": "medical",
+ "base_sha": "103745baaa38c76f18288758cc7f689e5091ccdb",
+ "source_snapshot_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "manifest_base_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "worktree_base_note": "Mission démarrée sur la base 103745ba ; sources figées identiques au manifeste (base 523832d9) : empreintes SHA-256 conformes.",
+ "generation": 1,
+ "branche": "claude/alpha1/g91-med-g1",
+ "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G91-MED",
+ "conversation": "alpha1-claude-g91-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-16T09:12:00Z",
+ "date_fin": "2026-10-16T09:50:00Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G91/G91_a.html",
+   "chapters/G91/G91_b.html",
+   "chapters/G91/G91_c.html",
+   "chapters/G91/G91_d.html",
+   "chapters/G91/G91_pop1.html",
+   "chapters/G91/G91_pop2.html",
+   "glossary/g91.py"
+  ],
+  "empreintes_conformes": true,
+  "empreintes": {
+   "chapters/G91/G91_a.html": {
+    "sha256": "a98860131104456b3a4733c245f4a526962cbc6b7fdcbb736015ecbb8d837bb9",
+    "manifeste": "a98860131104456b3a4733c245f4a526962cbc6b7fdcbb736015ecbb8d837bb9",
+    "conforme": true
+   },
+   "chapters/G91/G91_b.html": {
+    "sha256": "527324d272458707f7d72ce30202615bf924dfe9e14a1fe3f0990539641d0cf5",
+    "manifeste": "527324d272458707f7d72ce30202615bf924dfe9e14a1fe3f0990539641d0cf5",
+    "conforme": true
+   },
+   "chapters/G91/G91_c.html": {
+    "sha256": "9377b43d1d79ab41beedb2c3ba167c0d3fcdfad7da2812e6563879b943aea052",
+    "manifeste": "9377b43d1d79ab41beedb2c3ba167c0d3fcdfad7da2812e6563879b943aea052",
+    "conforme": true
+   },
+   "chapters/G91/G91_d.html": {
+    "sha256": "3c42ce3e299046159b115d84edd577639015dfcfc20c995cf20f0d7245398b1d",
+    "manifeste": "3c42ce3e299046159b115d84edd577639015dfcfc20c995cf20f0d7245398b1d",
+    "conforme": true
+   },
+   "chapters/G91/G91_pop1.html": {
+    "sha256": "07e288fdeabacdfd74c9bfa29ca947a6221b3ee70c269327e5ca8c24ec0b363c",
+    "manifeste": "07e288fdeabacdfd74c9bfa29ca947a6221b3ee70c269327e5ca8c24ec0b363c",
+    "conforme": true
+   },
+   "chapters/G91/G91_pop2.html": {
+    "sha256": "592496a74f3f0648c4339364ffe1865652569666fef43731ede635aef1fe34e6",
+    "manifeste": "592496a74f3f0648c4339364ffe1865652569666fef43731ede635aef1fe34e6",
+    "conforme": true
+   },
+   "glossary/g91.py": {
+    "sha256": "059ae1961c774bc37c5b691fd51d13b84ad20cd6f1945f8a366ba0de89e166a7",
+    "manifeste": "059ae1961c774bc37c5b691fd51d13b84ad20cd6f1945f8a366ba0de89e166a7",
+    "conforme": true
+   }
+  }
+ },
+ "premiere_source_lue": {
+  "source_id": "S1",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905302/",
+  "section": "« Diagnostic criteria for possible iNPH » et « probable iNPH » (texte intégral PMC)"
+ },
+ "synthese": {
+  "BLOQUANT": 0,
+  "MAJEUR": 8,
+  "MINEUR": 13,
+  "ENRICHISSEMENT": 5
+ },
+ "controles": {
+  "test_v7_static": "G91 mots 11262 fenêtres 53 quiz 4 pareto 10 — OK",
+  "audit_sciences": "échec : 4 disciplines de 146 à 195 mots, quatre libellés absents (C02)",
+  "image_clo_finder_inventory": "5 figures SVG, aucune image",
+  "rendu_390px": "Chromium : texte des SVG existants 6,7–7,3 px ; SVG proposés 11,9 px, aucun débordement",
+  "propositions_classes_fermees": "conformes, aucun style en ligne",
+  "propositions_ancres_uniques": "21 remplacements de G91_mineurs.html présents une seule fois (script)"
+ },
+ "calculs": {
+  "total_releves": 664,
+  "grandeurs": 438,
+  "non_calculables": 226,
+  "concordance_source": 424,
+  "valeurs_de_vignette": 13,
+  "lacune_declaree_par_la_lecon": 1,
+  "non_rapprochees": 0,
+  "calculables": 45,
+  "recalcules": 45,
+  "correct": 31,
+  "arrondi": 11,
+  "faux": 3,
+  "non_verifiables": 0,
+  "informatifs_audit": 8,
+  "script": "calculs/verifier.py",
+  "faux_constats": [
+   "C09 (R10)",
+   "C10 (R30)",
+   "C11 (R13)"
+  ],
+  "note": "Aucune dose, aucun débit, aucune vitesse de correction ni aucun seuil faux par rapport à la source ; la posologie pédiatrique d’acétazolamide, exacte, dépasse les doses adultes chez l’adolescent (R36, C06)."
+ },
+ "constats": [
+  {
+   "id": "C01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G91/G91_c.html",
+   "ancre": "data-s=\"g91-s-anat\"",
+   "constat": "Le sous-onglet « Sémiologie fondamentale et analytique » est absent. Décompte réel des data-s de G91_c.html : 4 (g91-s-anat, g91-s-histo, g91-s-physio, g91-s-bioch) ; aucun g91-s-semio, aucun marqueur data-semiology-clinical dans pA. La sémiologie existante (îlot g91-5, cartes nourrisson et enfant, triade, signes frontaux) est descriptive : pas de technique d’examen du nourrisson, pas d’examen de la dérivation, pas de regroupement syndromique, pas de raisonnement en étapes ni de cas sur la valeur d’un signe.",
+   "preuve": [
+    {
+     "source_id": "S19",
+     "section": "chap. 5 et 6.1",
+     "citation_courte": "Allen Altersklassen gemeinsam ist die Zunahme des Kopfumfanges bzw. das Ausbrechen aus der Perzentile"
+    },
+    {
+     "source_id": "S2",
+     "section": "Diagnosis",
+     "citation_courte": "bulging fontanelle, splayed skull sutures, up gaze paresis"
+    },
+    {
+     "source_id": "S1",
+     "section": "CQ-1",
+     "citation_courte": "small-step gait, magnet gait, and broad-based gait"
+    }
+   ],
+   "proposition": "propositions/G91_c_semio.html (bouton g91-tab-semio, panneau g91-s-semio, neuf sections data-semiology, figure non anatomique lisible à 390 px, trois cas corrigés) ; propositions/G91_a_semio_clinique.html (section data-semiology-clinical=\"G91\" dans g91-5) ; propositions/G91_pop1_semio.html (six fenêtres g91-sm-*) ; propositions/glossary_g91_ajouts.py.",
+   "justification": "Mécanisme : sans technique ni valeur du signe, le lecteur ne sait pas passer d’un périmètre crânien ou d’une marche à une hypothèse. Conséquence : l’examen fédéral et la pratique exigent ce passage, et l’enfant dérivé n’est pas examiné. Décision : exigence de Vial du 15.10.2026 ; MAJEUR, bloquant pour la clôture.",
+   "ancre_occurrences": 1,
+   "bloquant_cloture": true,
+   "decompte_data_s": 4
+  },
+  {
+   "id": "C02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G91/G91_c.html",
+   "ancre": "<b>Corrélation clinique.</b> Un obstacle à l’aqueduc",
+   "constat": "tests/audit_sciences.py (base 103745ba) échoue sur les quatre disciplines : anatomie 195 mots, histologie 146, physiologie 153, biochimie 147, pour un minimum de 280 ; aucune ne porte les libellés « Science → clinique. », « Science → examen. », « Science → traitement. », « À retenir. » (encadrés « Corrélation clinique. »).",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Choroid plexus epithelium",
+     "citation_courte": "the ventricular ependymal wall does not serve a secretory function"
+    },
+    {
+     "source_id": "S2",
+     "section": "Box 1",
+     "citation_courte": "The ependyma in humans is not fully developed until 6 months after term birth"
+    },
+    {
+     "source_id": "S1",
+     "section": "Imaging",
+     "citation_courte": "even if EI is <0.3 … it is acceptable to diagnose possible iNPH"
+    }
+   ],
+   "proposition": "propositions/G91_c_sciences_liens.html (paragraphe sourcé et quatre encadrés par discipline).",
+   "justification": "Mécanisme : le contrat des sciences vérifie le lien science → décision. Conséquence : la leçon échoue au contrôle automatique et ses sciences restent minces. Décision : compléter et renommer les encadrés.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C03",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G91/G91_c.html",
+   "ancre": "data-s=\"g91-s-bioch\"",
+   "constat": "La discipline Génétique est absente alors que l’étiologie congénitale (L1CAM, sténose de l’aqueduc) est citée en g91-4. Le validateur semiology de tools/starter_codex.py exige au moins six boutons data-s : la leçon n’en aurait que cinq avec la sémiologie.",
+   "preuve": [
+    {
+     "source_id": "S19",
+     "section": "chap. 3.7",
+     "citation_courte": "Mutationen in L1CAM-Gen werden bei ca. 10% aller männlichen Patienten mit einer isolierten Form des Hydrozephalus nachgewiesen"
+    },
+    {
+     "source_id": "S2",
+     "section": "Mechanisms",
+     "citation_courte": "mutations in L1CAM result in disordered neuronal migration"
+    }
+   ],
+   "proposition": "propositions/G91_c_genetique.html (discipline g91-s-gen de 444 mots, figure non anatomique, quatre encadrés, Pareto).",
+   "justification": "Mécanisme : le mode de transmission fixe le risque familial. Conséquence : un garçon avec pouces en adduction n’est pas orienté vers le conseil génétique. Décision : ajouter la discipline ; condition technique de clôture.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G91/G91_a.html",
+   "ancre": "aucune recommandation suisse ni européenne spécifique à l’hydrocéphalie n’a pu être lue",
+   "constat": "Hiérarchie des sources non respectée pour l’enfant : la ligne directrice européenne S2k AWMF 006-102 « Hydrozephalus im Kindesalter » (sociétés allemandes et autrichiennes, état 17.04.2025) existe et est accessible ; la leçon fonde l’îlot g91-9 et la surveillance de l’enfant sur une revue nord-américaine. Points absents : IRM de référence et scanner réservé à l’urgence, tout symptôme neurologique nouveau chez l’enfant dérivé = dysfonction jusqu’à preuve du contraire avec appel immédiat du neurochirurgien, contrôle au moins annuel du périmètre crânien, indications des cathéters imprégnés, ETV des formes non communicantes.",
+   "preuve": [
+    {
+     "source_id": "S19",
+     "section": "Empfehlung 25",
+     "citation_courte": "Bis zur Falsifizierung soll bei Shuntpatienten bei neu aufgetretener neurologischer Symptomatik eine Shuntfehlfunktion ausgeschlossen werden"
+    },
+    {
+     "source_id": "S19",
+     "section": "Empfehlung 22",
+     "citation_courte": "Die kranielle Computertomografie soll … vor allem der Notfallsituation vorbehalten sein"
+    },
+    {
+     "source_id": "S19",
+     "section": "Empfehlung 24",
+     "citation_courte": "mindestens jährlich"
+    }
+   ],
+   "proposition": "propositions/G91_b_1.html (six insertions sourcées dans g91-0, g91-6, g91-7, g91-9, g91-10, g91-11).",
+   "justification": "Mécanisme : la source européenne applicable prime sur une revue nord-américaine. Conséquence : l’enfant dérivé symptomatique n’a pas de conduite européenne explicite. Décision : intégrer la ligne directrice et corriger l’affirmation de g91-0.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C05",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G91/G91_d.html",
+   "ancre": "Hypertension intracrânienne (enfant, hors AMM)",
+   "constat": "Le tableau de g91-p-1 présente l’« hypertension intracrânienne (enfant) » comme un phénotype de l’hydrocéphalie traité par acétazolamide. La source vise l’hypertension intracrânienne idiopathique de l’enfant, maladie distincte ; la ligne directrice européenne n’attend des médicaments aucun succès durable dans l’hydrocéphalie et rapporte un essai randomisé sans bénéfice. Risque : retarder la dérivation d’une hydrocéphalie hypertensive.",
+   "preuve": [
+    {
+     "source_id": "S2",
+     "section": "Management",
+     "citation_courte": "Acetazolamide can be used to treat select paediatric patients with idiopathic intracranial hypertension … although the efficacy is limited"
+    },
+    {
+     "source_id": "S19",
+     "section": "7.1",
+     "citation_courte": "lassen in der Regel keinen dauerhaften Therapieerfolg erwarten"
+    },
+    {
+     "source_id": "S18",
+     "section": "Posologie",
+     "citation_courte": "l'administration chez les enfants et les adolescents n'a pas été étudiée"
+    }
+   ],
+   "proposition": "propositions/G91_d_1.html, bloc C05 (deux lignes de tableau et un piège).",
+   "justification": "Mécanisme : l’acétazolamide réduit la sécrétion sans lever l’obstacle. Conséquence : un traitement médical d’attente expose à l’aggravation d’une hypertension intracrânienne. Décision : distinguer l’IIH et écrire que la dérivation est le traitement.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C06",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G91/G91_d.html",
+   "ancre": "8–10 mg/kg/dose, 3 fois par jour, per os ; maximum 100 mg/kg/jour",
+   "constat": "La posologie pédiatrique reprend fidèlement la ligne Swisspeddose, mais sans signaler qu’elle ne fixe aucun plafond absolu : le recalcul (R36) donne 2000 mg/j à 20 kg et 6000 mg/j à 60 kg, au-delà de toutes les doses orales adultes de la FI (≤ 1000 mg/j) ; la même base plafonne l’épilepsie à 1000 mg/j. La leçon omet aussi que la FI n’a pas étudié l’enfant, que l’acétazolamide peut ralentir la croissance, et que SwissPedDose n’est plus mis à jour depuis fin 2025.",
+   "preuve": [
+    {
+     "source_id": "S18",
+     "section": "Swisspeddose",
+     "citation_courte": "8 - 10 mg/kg/dose … 3 … 100 mg/kg/jour"
+    },
+    {
+     "source_id": "S18",
+     "section": "Posologie, Glaucome et Épilepsie",
+     "citation_courte": "250-1000 mg"
+    },
+    {
+     "source_id": "S18",
+     "section": "Effets indésirables",
+     "citation_courte": "L'administration d'acétazolamide chez l'enfant peut provoquer un ralentissement de la croissance"
+    },
+    {
+     "source_id": "S20",
+     "section": "SwissPedDose",
+     "citation_courte": "dès fin 2025 … ne sont pas mises à jour par l'OFSP"
+    }
+   ],
+   "proposition": "propositions/G91_d_1.html, bloc C06 (ligne de tableau, calcul de contrôle, piège).",
+   "justification": "Mécanisme : une limite par kilogramme croît sans fin avec le poids. Conséquence : chez l’adolescent lourd, la limite autorise une dose six fois supérieure aux doses adultes. Décision : écrire le calcul, l’absence de plafond et la décision spécialisée.",
+   "ancre_occurrences": 1,
+   "calcul": "R34–R36"
+  },
+  {
+   "id": "C07",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G91/G91_d.html",
+   "ancre": "l’information professionnelle ne précise pas de fréquence de contrôle dans les passages lus",
+   "constat": "Le tableau de g91-p-3 écrit quatre fois « Conduite non détaillée dans le passage lu », alors que la FI suisse datée de juillet 2026 donne la conduite : arrêt immédiat et contre-indication définitive après PEAG ; arrêt, traitement de soutien et aucune réadministration après œdème pulmonaire non cardiogénique ; correction de l’acidose par bicarbonate ; surveillance de la formule sanguine et des électrolytes avant et pendant le traitement. Sont omis les réactions mortelles aux sulfamides (SJS/NET, agranulocytose, anémie aplasique), l’épanchement choroïdien, et les interactions avec phénytoïne, ciclosporine, lithium, diurétiques et digoxine.",
+   "preuve": [
+    {
+     "source_id": "S18",
+     "section": "Mises en garde",
+     "citation_courte": "En cas de diagnostic de PEAG, le traitement par acétazolamide doit être interrompu et toute administration ultérieure d'acétazolamide est contre-indiquée"
+    },
+    {
+     "source_id": "S18",
+     "section": "Mises en garde",
+     "citation_courte": "La surveillance des cellules sanguines et des niveaux d'électrolytes est recommandée avant le début du traitement, puis régulièrement"
+    },
+    {
+     "source_id": "S18",
+     "section": "Effets indésirables",
+     "citation_courte": "On peut remédier à l'acidose métabolique par la prise de bicarbonate"
+    }
+   ],
+   "proposition": "propositions/G91_d_1.html, bloc C07 (six lignes de tableau, phrase de surveillance, interactions).",
+   "justification": "Mécanisme : la FI datée fixe la conduite. Conséquence : un effet grave reste sans conduite dans la leçon. Décision : reprendre la FI.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C08",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G91/G91_b.html",
+   "ancre": "Moins efficace dans cet essai",
+   "constat": "Le tableau des dérivations de l’iNPH présente la ventriculocisternostomie comme « moins efficace dans cet essai ». La ligne directrice japonaise juge l’ETV sans efficacité suggérée dans l’hydrocéphalie communicante, signale que l’essai brésilien a pu inclure des formes congénitales tardives et cite une mortalité de 3,2 % contre 0,5 % et des complications de 17,9 % contre 11,8 % dans une comparaison de registre américaine.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "CQ-10",
+     "citation_courte": "ETV treatment for communicating hydrocephalus with decreased CSF turnover is suggested to have no efficacy"
+    },
+    {
+     "source_id": "S1",
+     "section": "CQ-10",
+     "citation_courte": "a mortality of 3.2% vs. 0.5%, respectively, and surgical complication rates of 17.9% vs. 11.8%"
+    }
+   ],
+   "proposition": "propositions/G91_b_etv.html.",
+   "justification": "Mécanisme : l’ETV contourne un obstacle ; l’iNPH est communicante. Conséquence : présenter l’ETV comme une option moins efficace laisse croire à une alternative. Décision : écrire qu’elle n’est pas retenue dans l’iNPH.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C09",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G91/G91_b.html",
+   "ancre": "et 92 % des 16 opérés en ont une à 6 semaines.",
+   "constat": "Calcul faux (R10) : 92 % de 16 n’est pas un effectif entier (14/16 = 87,5 % ; 15/16 = 93,8 %). La source rapporte 92 % parmi les 12 patients revus à la première consultation postopératoire (11/12 = 91,7 %). Même erreur dans la fenêtre g91-lausanne.",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "Results",
+     "citation_courte": "Among the 12 patients seen at the first postoperative consultation"
+    },
+    {
+     "source_id": "S8",
+     "section": "Abstract",
+     "citation_courte": "A total of 92% reported gait improvement at 6 weeks"
+    }
+   ],
+   "proposition": "propositions/G91_mineurs.html (C09, deux remplacements).",
+   "justification": "Dénominateur faux sans conséquence décisionnelle ; corriger.",
+   "ancre_occurrences": 1,
+   "calcul": "R10, R11"
+  },
+  {
+   "id": "C10",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G91/G91_c.html",
+   "ancre": "révèle 25,7 % de répondeurs supplémentaires",
+   "constat": "Calcul faux (R29, R30) : 25,7 % est la part des répondeurs repérés seulement en double tâche (29/113), non un surcroît de 25,7 % par rapport à la marche simple (29/84 = 34,5 %). Même formulation dans g91-marche et pareto-g91-examens.",
+   "preuve": [
+    {
+     "source_id": "S9",
+     "section": "Results",
+     "citation_courte": "25.7% of responders were identified only through dual-task conditions"
+    }
+   ],
+   "proposition": "propositions/G91_mineurs.html (C10, trois remplacements).",
+   "justification": "Lecture du pourcentage ; corriger.",
+   "ancre_occurrences": 1,
+   "calcul": "R29, R30"
+  },
+  {
+   "id": "C11",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G91/G91_pop1.html",
+   "ancre": "apathie 70,3 %",
+   "constat": "Attribution fausse (R13) : l’apathie de 70,3 % vient d’une enquête japonaise distincte sur les symptômes comportementaux, non de la série de 26 patients ; 70,3 % de 26 n’est pas un effectif entier.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Characteristics and evaluation of cognitive impairment",
+     "citation_courte": "A BPSD survey conducted in Japan reported that apathy was seen at a rate of 70.3%"
+    }
+   ],
+   "proposition": "propositions/G91_mineurs.html (C11).",
+   "justification": "Attribution ; corriger.",
+   "ancre_occurrences": 1,
+   "calcul": "R13"
+  },
+  {
+   "id": "C12",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G91/G91_b.html",
+   "ancre": "rapporte à 1 an une amélioration chez 69 %",
+   "constat": "Dénominateur non précisé : les pourcentages de l’étude Eu-iNPH portent sur les 115 patients réexaminés à 12 mois, non sur les 142 inclus (R24 : 81 %).",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "Abstract",
+     "citation_courte": "Re-examinations, 12 months after surgery, were performed in 115 patients"
+    }
+   ],
+   "proposition": "propositions/G91_mineurs.html (C12, deux remplacements).",
+   "justification": "Précision méthodologique.",
+   "ancre_occurrences": 1,
+   "calcul": "R24"
+  },
+  {
+   "id": "C13",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G91/G91_a.html",
+   "ancre": "Pollakiurie et impériosité 90,9 %",
+   "constat": "La source écrit « 90.9% experience urine dribbling » ; « pollakiurie et impériosité » n’est pas ce que dit la version lue. Le caractère d’incontinence par impériosité est, lui, sourcé.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Characteristics and evaluation of urinary incontinence",
+     "citation_courte": "90.9% experience urine dribbling, and 74.5% urinary incontinence"
+    }
+   ],
+   "proposition": "propositions/G91_mineurs.html (C13).",
+   "justification": "Fidélité à la source.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C14",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G91/G91_c.html",
+   "ancre": "Technique de mesure non détaillée dans le dossier",
+   "constat": "La technique de l’angle calleux et la définition de l’index d’Evans figurent dans la source lue ; la leçon les dit absentes. La leçon ne dit pas non plus qu’un index d’Evans d’au plus 0,3 n’exclut pas l’iNPH (z-EI > 0,42, BVR < 1,0, angle calleux < 90°).",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "Imaging",
+     "citation_courte": "measured at the slice through the posterior commissure (PC) and perpendicular to the … AC–PC line"
+    },
+    {
+     "source_id": "S1",
+     "section": "Imaging",
+     "citation_courte": "even if EI is <0.3 … it is acceptable to diagnose possible iNPH"
+    }
+   ],
+   "proposition": "propositions/G91_mineurs.html (C14, deux remplacements) ; G91_c_sciences_liens.html (anatomie).",
+   "justification": "Interprétation d’imagerie plus juste.",
+   "ancre_occurrences": 1,
+   "calcul": "R44, R45"
+  },
+  {
+   "id": "C15",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G91/G91_c.html",
+   "ancre": "Le drainage continu n’est pas supérieur au tap test",
+   "constat": "Surinterprétation : la source dit que la supériorité du drainage continu n’est pas établie, non qu’il n’est pas supérieur.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "CQ-6",
+     "citation_courte": "It has not been established whether the continuous CSF drainage test is more predictive"
+    }
+   ],
+   "proposition": "propositions/G91_mineurs.html (C15, deux remplacements).",
+   "justification": "Nuance.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C16",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G91/G91_b.html",
+   "ancre": "le drainage est recommandé en cas de baisse de vigilance",
+   "constat": "La recommandation ESO présente le drainage en cas de baisse de vigilance comme une déclaration d’experts (résumé grand public ; tableau 3 non lu) ; l’indication clinique ou radiologique est débattue et l’EVD a ses risques propres, non cités.",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "Résumé grand public",
+     "citation_courte": "drainage is recommended when there is a reduced level of consciousness"
+    },
+    {
+     "source_id": "S3",
+     "section": "PICO 7",
+     "citation_courte": "there is a debate regarding the indications for EVD placement"
+    }
+   ],
+   "proposition": "propositions/G91_mineurs.html (C16).",
+   "justification": "Nature de la preuve.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C17",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G91/G91_b.html",
+   "ancre": "une pression fixe à 12 cmH2O a produit 9 hyperdrainages sur 34",
+   "constat": "Présentation partielle : l’essai en double aveugle ne montre pas de différence d’efficacité et la ligne directrice juge le réglage initial à 12 cmH2O adéquat ; la dérivation lombo-péritonéale, d’efficacité comparable dans SINPHONI-2 et majoritaire au Japon (55,1 %), est réduite à « alternative ».",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "CQ-13",
+     "citation_courte": "There were no differences in efficacy between the two groups"
+    },
+    {
+     "source_id": "S1",
+     "section": "CQ-13",
+     "citation_courte": "initially setting the pressure at 12 cmH2O is adequate"
+    },
+    {
+     "source_id": "S1",
+     "section": "CQ-10",
+     "citation_courte": "LP shunts for 55.1%"
+    }
+   ],
+   "proposition": "propositions/G91_mineurs.html (C17, deux remplacements).",
+   "justification": "Équilibre de la présentation.",
+   "ancre_occurrences": 1,
+   "calcul": "R22"
+  },
+  {
+   "id": "C18",
+   "gravite": "MINEUR",
+   "fichier": "glossary/g91.py",
+   "ancre": "sigle de la base Swisspeddose pour l’usage hors AMM",
+   "constat": "Le glossaire définit HARM comme l’usage hors autorisation, sans source. Swisspeddose affiche aussi « HARM » pour des usages autorisés (céfazoline, utilisation générale) ; la base reposait sur des recommandations harmonisées. Le statut hors autorisation de l’acétazolamide pédiatrique découle de la FI (enfants non étudiés).",
+   "preuve": [
+    {
+     "source_id": "S21",
+     "section": "Swisspeddose",
+     "citation_courte": "Indication: Utilisation générale … Type d'utilisation: HARM"
+    },
+    {
+     "source_id": "S20",
+     "section": "SwissPedDose",
+     "citation_courte": "harmoniser les dosages de 230 substances actives"
+    }
+   ],
+   "proposition": "propositions/G91_d_1.html, bloc C18.",
+   "justification": "Définition non sourcée ; corriger.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C19",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G91/G91_pop2.html",
+   "ancre": "PENS +0,21 m/s à 3 mois",
+   "constat": "« +0,21 m/s » (Pareto et paramètres clés de g91-13) présente la différence entre groupes comme un gain absolu (le gain du bras actif est 0,23 m/s) ; 0,23 − 0,03 = 0,20 (R16), la source calcule 0,21 sur des moyennes non arrondies. La leçon mêle aussi mmH2O et cmH2O (R22, R47).",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "Abstract",
+     "citation_courte": "resulting in a treatment difference of 0.21 m per second"
+    }
+   ],
+   "proposition": "propositions/G91_mineurs.html (C19, trois remplacements).",
+   "justification": "Arrondi et formulation.",
+   "ancre_occurrences": 1,
+   "calcul": "R16, R22, R47"
+  },
+  {
+   "id": "C20",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G91/G91_c.html",
+   "ancre": "Figure 2 — Schéma anatomique simplifié",
+   "constat": "Les cinq SVG (viewBox de 640) rendent un texte de 6,7 à 7,3 px à 390 px (mesure Chromium) : illisible sur téléphone. La figure 2, faite de rectangles et d’ellipses, est légendée « schéma anatomique » alors qu’elle n’est qu’un schéma de circulation ; aucune structure anatomique n’est dessinée.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "—",
+     "citation_courte": "Règle de Vial du 15.10.2026 sur les figures anatomiques IA (classement SCHEMA_NON_ANATOMIQUE)"
+    }
+   ],
+   "proposition": "propositions/G91_mineurs.html (C20).",
+   "justification": "Lisibilité et exactitude de la légende.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C21",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G91/G91_d.html",
+   "ancre": "le cathéter à l’argent n’est pas supérieur (5,9 %)",
+   "constat": "Les cathéters imprégnés d’antibiotiques sont présentés comme mesure générale ; la ligne directrice européenne en précise les indications et la ligne directrice japonaise rappelle le risque de résistance.",
+   "preuve": [
+    {
+     "source_id": "S19",
+     "section": "Empfehlung 49",
+     "citation_courte": "Antibiotika-beschichtete Shuntsysteme sollen nach Infektionen … und im Rahmen der Erstanlage eingesetzt werden"
+    },
+    {
+     "source_id": "S1",
+     "section": "CQ-12",
+     "citation_courte": "AICs should only be used as required"
+    }
+   ],
+   "proposition": "propositions/G91_mineurs.html (C21) ; G91_b_1.html (bloc 5).",
+   "justification": "Indication précisée.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C22",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G91/G91_a.html",
+   "ancre": "Aucune donnée suisse d’incidence de l’hydrocéphalie n’a été trouvée",
+   "constat": "Rubrique 16 « Spécificités suisses » absente (AI, aptitude à la conduite, remboursement LS/LiMA des valves, carte de valve) ; aucune donnée suisse d’épidémiologie. Seules les études de Lausanne et Bâle sont suisses.",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "Methods",
+     "citation_courte": "Lausanne University Hospitals (Switzerland)"
+    },
+    {
+     "source_id": "S9",
+     "section": "Author information",
+     "citation_courte": "University Department of Geriatric Medicine FELIX PLATTER, Basel"
+    }
+   ],
+   "proposition": "Recherche ciblée à conduire (OFSP, AI, SSN, Swiss Medical Forum) ; aucune proposition rédigée faute de source lue.",
+   "justification": "Lacune déclarée.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C23",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G91/G91_b.html",
+   "ancre": "Chez le prématuré, des solutions temporaires existent",
+   "constat": "Les signes précoces de l’hydrocéphalie post-hémorragique du prématuré (hausse du besoin en oxygène, hyperglycémie, chute de l’hématocrite) et la sémiologie selon l’âge manquent.",
+   "preuve": [
+    {
+     "source_id": "S19",
+     "section": "chap. 5",
+     "citation_courte": "Erhöhung des O2-Bedarfs, Erhöhung des Blutzuckers, Abfall des Hämatokrits"
+    }
+   ],
+   "proposition": "propositions/G91_c_semio.html (section urgency) et G91_a_semio_clinique.html.",
+   "justification": "Situation particulière.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C24",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G91/G91_d.html",
+   "ancre": "L’antibioprophylaxie peropératoire est mentionnée par la ligne directrice japonaise sans autre détail dans le dossier.",
+   "constat": "L’antibioprophylaxie de la dérivation est documentée par la FI suisse de la céfazoline et Swisspeddose (30 mg/kg i.v. 30–60 min avant, répétée après 4 h) et par la ligne directrice européenne (30 mg/kg ; PIGS 25 mg/kg).",
+   "preuve": [
+    {
+     "source_id": "S21",
+     "section": "Swisspeddose",
+     "citation_courte": "30 mg/kg/dose … 30 à 60 minutes avant l'intervention, répéter la dose après 4 heures"
+    },
+    {
+     "source_id": "S19",
+     "section": "Empfehlung 39",
+     "citation_courte": "Cefazolin mit 30 mg/KG i.v. als single-shot"
+    }
+   ],
+   "proposition": "propositions/G91_d_1.html, bloc C24.",
+   "justification": "Point pratique documenté.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C25",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G91/G91_c.html",
+   "ancre": "La cognition et la vessie s’améliorent plus tard que la marche.",
+   "constat": "Absents : faux négatifs du test de soustraction plus fréquents avec la durée des symptômes ; tests de dynamique du LCS (pression de base, ondes B, résistance à l’écoulement) ; probabilité de réponse quand triade et DESH coexistent.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "CQ-6",
+     "citation_courte": "the longer the period between appearance of symptoms and CSF drainage, the higher the frequency of false negatives"
+    },
+    {
+     "source_id": "S1",
+     "section": "CQ-8",
+     "citation_courte": "High outflow resistance (Rout) of the CSF measured by infusion test correlates with effective shunt intervention"
+    }
+   ],
+   "proposition": "propositions/G91_c_sciences_liens.html (physiologie) et G91_c_semio.html (interprétation).",
+   "justification": "Examens et interprétation.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C26",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G91/G91_b.html",
+   "ancre": "tous les 3 mois jusqu’à 18 mois",
+   "constat": "Le suivi de l’enfant dérivé ne dispose d’aucun rythme européen : la ligne directrice AWMF demande au moins un contrôle annuel du périmètre crânien et du développement, et une carte de valve.",
+   "preuve": [
+    {
+     "source_id": "S19",
+     "section": "Empfehlung 24",
+     "citation_courte": "ab dem Säuglingsalter mindestens jährlich"
+    },
+    {
+     "source_id": "S19",
+     "section": "7.7",
+     "citation_courte": "Jedes Kind benötigt einen Ventilausweis"
+    }
+   ],
+   "proposition": "propositions/G91_b_1.html (bloc 6).",
+   "justification": "Suivi.",
+   "ancre_occurrences": 1
+  }
+ ],
+ "matrice_20": [
+  {
+   "rang": 1,
+   "rubrique": "Question clinique et enjeu pour l’examen fédéral",
+   "statut": "couvert",
+   "ancre": "g91-0 (deux vignettes, cinq objectifs)"
+  },
+  {
+   "rang": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "couvert",
+   "ancre": "g91-1, g91-cim ; codes conformes à S16"
+  },
+  {
+   "rang": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "couvert",
+   "ancre": "g91-1 (communicante/obstructive, classification japonaise, CHiA)"
+  },
+  {
+   "rang": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "partiel",
+   "ancre": "g91-2 ; aucune donnée suisse ; données suédoises via S1 (C22)"
+  },
+  {
+   "rang": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "partiel",
+   "ancre": "g91-3 complet ; sciences sous le seuil (C02)"
+  },
+  {
+   "rang": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "partiel",
+   "ancre": "g91-4 ; génétique absente des sciences (C03)"
+  },
+  {
+   "rang": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "partiel",
+   "ancre": "g91-5 ; fréquences de l’iNPH, aucune chez l’enfant (lacune)"
+  },
+  {
+   "rang": 8,
+   "rubrique": "Examen clinique (signes, Se/Sp)",
+   "statut": "partiel",
+   "ancre": "g91-5 ; aucune technique d’examen de l’enfant ni de la dérivation ; sémiologie absente (C01)"
+  },
+  {
+   "rang": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "partiel",
+   "ancre": "g91-7 alert ; conduite européenne de l’enfant dérivé absente (C04)"
+  },
+  {
+   "rang": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "couvert",
+   "ancre": "e-1 à e-4 ; nuances C14, C15, C25"
+  },
+  {
+   "rang": 11,
+   "rubrique": "Diagnostic différentiel",
+   "statut": "couvert",
+   "ancre": "g91-6 (Alzheimer, synucléinopathies, vasculaire)"
+  },
+  {
+   "rang": 12,
+   "rubrique": "Prise en charge suisse",
+   "statut": "partiel",
+   "ancre": "g91-8 (Lausanne), g91-9 ; source européenne pédiatrique absente (C04) ; ETV (C08) ; acétazolamide (C05–C07)"
+  },
+  {
+   "rang": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "couvert",
+   "ancre": "g91-10, g91-11"
+  },
+  {
+   "rang": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "partiel",
+   "ancre": "g91-11 ; rythme européen absent (C26)"
+  },
+  {
+   "rang": 15,
+   "rubrique": "Situations particulières",
+   "statut": "partiel",
+   "ancre": "g91-12 ; prématuré sans sémiologie (C23)"
+  },
+  {
+   "rang": 16,
+   "rubrique": "Spécificités suisses",
+   "statut": "absent",
+   "ancre": "aucune (C22)"
+  },
+  {
+   "rang": 17,
+   "rubrique": "Critères formels du diagnostic",
+   "statut": "couvert",
+   "ancre": "g91-13 alert (critères japonais, conformes à S1)"
+  },
+  {
+   "rang": 18,
+   "rubrique": "Paramètres clés chiffrés",
+   "statut": "couvert",
+   "ancre": "g91-13 key ; formulation PENS (C19)"
+  },
+  {
+   "rang": 19,
+   "rubrique": "Sous-codes CIM-10-GM couverts",
+   "statut": "couvert",
+   "ancre": "g91-1 (G91.0 à G91.9)"
+  },
+  {
+   "rang": 20,
+   "rubrique": "Points d’examen fédéral",
+   "statut": "partiel",
+   "ancre": "objectifs de g91-0 ; aucun rattachement PROFILES"
+  },
+  {
+   "rang": 21,
+   "rubrique": "Sémiologie fondamentale et analytique",
+   "statut": "absent",
+   "ancre": "aucun g91-s-semio (C01)"
+  }
+ ],
+ "semiologie": {
+  "statut": "absente",
+  "decompte_data_s": 4,
+  "data_s": [
+   "g91-s-anat",
+   "g91-s-histo",
+   "g91-s-physio",
+   "g91-s-bioch"
+  ],
+  "sous_onglet_semio": false,
+  "gravite": "MAJEUR",
+  "bloquant_cloture_cours_et_lot": true,
+  "constat_id": "C01",
+  "fondamentale": {
+   "statut": "partielle dans l’onglet 1, absente comme discipline",
+   "ancres": [
+    "g91-5",
+    "g91-bebe",
+    "g91-htic",
+    "g91-triade",
+    "g91-marche",
+    "g91-front"
+   ],
+   "manques": "technique d’examen du nourrisson, examen de la dérivation, mécanisme par signe, normal avant pathologique, valeur chiffrée chez l’enfant (non disponible dans les sources lues : LACUNE), pièges"
+  },
+  "analytique": {
+   "statut": "absente",
+   "ancres": [],
+   "manques": "regroupement syndromique, raisonnement en cinq étapes, examen systématique, trois cas corrigés"
+  },
+  "proposition": [
+   "propositions/G91_c_semio.html",
+   "propositions/G91_a_semio_clinique.html",
+   "propositions/G91_pop1_semio.html",
+   "propositions/glossary_g91_ajouts.py",
+   "propositions/G91_c_genetique.html (sixième data-s)"
+  ],
+  "grille_SEM": {
+   "SEM-01": "non (aucun data-s g91-s-semio)",
+   "SEM-02": "non",
+   "SEM-03": "non (audit_sciences échoue, C02)",
+   "SEM-04": "oui (test_v7 --static G91 : OK sur la leçon actuelle)",
+   "SEM-05": "non",
+   "SEM-06": "non",
+   "SEM-07": "non",
+   "SEM-08": "non",
+   "SEM-09": "non",
+   "SEM-10": "non",
+   "SEM-11": "non",
+   "SEM-12": "non",
+   "SEM-13": "non (pas d’alert sémiologique ; l’alert g91-7 existe)",
+   "SEM-14": "non",
+   "SEM-15": "non",
+   "SEM-16": "non",
+   "SEM-17": "non (quatre quiz en e-5, aucun sur la valeur d’un signe ou une limite)",
+   "SEM-18": "non",
+   "SEM-19": "non évaluable (absente)",
+   "SEM-20": "non évaluable",
+   "SEM-21": "non évaluable",
+   "SEM-22": "non (bouton absent)",
+   "SEM-23": "non (aucune capture possible)",
+   "SEM-24": "oui (statut « revue IA, distincte d’une validation médicale humaine » dans chap-head)"
+  }
+ },
+ "figures": [
+  {
+   "ancre": "aria-label=\"Figure 1 — Circuit du liquide cérébrospinal et deux sites d’obstacle\"",
+   "fichier": "chapters/G91/G91_a.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "SVG examiné : quatre rectangles et flèches ; texte rendu 6,7–12,3 px à 390 px",
+   "constat_id": "C20",
+   "ancre_occurrences": 1
+  },
+  {
+   "ancre": "aria-label=\"Figure 2 — Voies du LCS et sites d’obstacle\"",
+   "fichier": "chapters/G91/G91_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "ellipses et rectangles, aucune structure anatomique ; légende « schéma anatomique » inexacte ; 7,3 px",
+   "constat_id": "C20",
+   "ancre_occurrences": 1
+  },
+  {
+   "ancre": "aria-label=\"Figure 3 — Cellule épithéliale du plexus choroïde\"",
+   "fichier": "chapters/G91/G91_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "un rectangle légendé ; 7,3 px",
+   "constat_id": "C20",
+   "ancre_occurrences": 1
+  },
+  {
+   "ancre": "aria-label=\"Figure 4 — Équilibre production et résorption\"",
+   "fichier": "chapters/G91/G91_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "trois rectangles ; 7,3 px",
+   "constat_id": "C20",
+   "ancre_occurrences": 1
+  },
+  {
+   "ancre": "aria-label=\"Figure 5 — Cible de l’acétazolamide\"",
+   "fichier": "chapters/G91/G91_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "trois rectangles ; 7,3 px",
+   "constat_id": "C20",
+   "ancre_occurrences": 1
+  }
+ ],
+ "figures_synthese": {
+  "total": 5,
+  "ANATOMIQUE_IA": 0,
+  "ORIGINE_INCONNUE": 0,
+  "SCHEMA_NON_ANATOMIQUE": 5,
+  "IMAGE_SOURCEE": 0,
+  "methode": "python3 tools/image_clo_finder.py inventory G91 ; rendu Chromium à 390 px (conteneur 358 px)"
+ },
+ "verifications_conformes": [
+  "CIM-10-GM 2024 : G91.0 à G91.9, inclusion et exclusions [S16]",
+  "Épidémiologie iNPH (3,7 ; 8,9 ; 5,9 ; 1,5 ; 1,6 % ; 175, 400, 660, 53/100 000 ; 2–10 et 30–60/100 000 ; AVIM 6–12 et 17 %/an) [S1]",
+  "Épidémiologie pédiatrique et pronostic de l’enfant [S2]",
+  "Triade, signes frontaux, troubles urinaires, critères possible/probable/certaine, imagerie, test de soustraction, résultats des dérivations, Kiefer, coût-efficacité [S1]",
+  "Lausanne : 86 patients, 94,2/75,6/60,5 %, 44 → 27, 16 opérés [S8]",
+  "PENS : 99 patients, 110 contre > 400 mmH2O, 0,23/0,03/0,21 m/s, 24/46, 12/2, 59/28 % [S5]",
+  "Eu-iNPH : 13 centres, 142 patients, 69/84 %, 53 → 82 %, 28 % [S7]",
+  "BASICS : 1605 patients, 21 centres, 6,0/2,2/5,9 %, HR 0,38, échec 25 % [S6]",
+  "ESO 2026 : 25 %, 40 %, EVD et engagement, 70/35, ULTRA OR 1,23 [S3]",
+  "Hyperdrainage (Delphi de 18 experts, définitions par âge) [S12]",
+  "Neuropsychiatrie, synucléinopathie, CHiA, neuropsychologie Eu-iNPH [S10 ; S11 ; S13 ; S14]",
+  "Acétazolamide : indications suisses (œdèmes cérébraux, pas d’hydrocéphalie), contre-indications, interaction avec l’ASA à haute dose, grossesse, FI juillet 2026 ; Swisspeddose 8–10 mg/kg/dose ×3, max 100 mg/kg/j [S18]",
+  "Physiologie et histologie du LCS (épendyme non sécrétoire, 30–40 %, NKCC1 ≈ 50 %, granulations matures dans la petite enfance) [S4 ; S2]"
+ ],
+ "lacunes": [
+  "Aucune recommandation ni source de sémiologie suisse : WebSearch « hydrocéphalie à pression normale Revue Médicale Suisse OR Swiss Medical Forum Normaldruckhydrozephalus » sans article suisse.",
+  "Ligne directrice allemande S1 030-063 (Normaldruckhydrozephalus, 2018, « abgelaufen ») : PDF du registre AWMF renvoyé en HTML (anti-robot), page du registre bloquée ; texte non lu.",
+  "ESO 2026 : tableau 3 (recommandations et déclarations de consensus) en image, non lu ; la déclaration PICO 7 n’est lue que dans le résumé grand public.",
+  "Résumés seuls : PENS, BASICS, Eu-iNPH, Bâle, méta-analyse neuropsychiatrique, Pyrgelis, hyperdrainage, Tullberg, Hellström, Fakhry, Carswell, Lancet 2016.",
+  "AWMF 006-102 : les fréquences des graphiques de la série de 107 enfants ne sont pas lisibles dans le texte extrait.",
+  "Aucune sensibilité ni spécificité des signes du nourrisson dans les sources lues ; mécanisme de la parésie du regard vers le haut non détaillé.",
+  "Spécificités suisses (AI, aptitude à la conduite, remboursement LS/LiMA) : non recherchées dans cet audit faute de source ciblée identifiée.",
+  "Recommandation PIGS (2005) lue seulement par citation de l’AWMF ; développement littéral de HARM non publié dans les sources lues.",
+  "BfArM et page OFSP SwissPedDose lus par un outil de synthèse (citations limitées).",
+  "Captures SEM-22 et SEM-23 impossibles : aucune sémiologie publiée."
+ ],
+ "propositions": [
+  "G91_c_semio.html",
+  "G91_a_semio_clinique.html",
+  "G91_pop1_semio.html",
+  "G91_c_genetique.html",
+  "G91_c_sciences_liens.html",
+  "G91_b_1.html",
+  "G91_b_etv.html",
+  "G91_d_1.html",
+  "G91_mineurs.html",
+  "glossary_g91_ajouts.py"
+ ],
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+}
