@@ -1,0 +1,978 @@
+{
+  "chapter": "A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)",
+  "reviewer": "Codex /root/review_plan, distinct de l’auteur Pharmacologie",
+  "author_reviewed": "Codex /root/claude_spec",
+  "generated_at_utc": "2026-10-08T13:13:46.663153+00:00",
+  "base_commit": "db06b1fae3c27e93050850df44c3eb23fcd60164",
+  "audited_source_commit": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
+  "state": "contrelecture_favorable_sur_perimetre_pharmacologie_relu",
+  "conclusion": "Les quatre ajustements demandés sont appliqués et directement relus. Aucune erreur de dose ou contradiction clinique majeure confirmée dans D et les huit monographies ; contrelecture favorable sur ce périmètre, sans clôture externe du chapitre ni autorisation d’injection.",
+  "confirmed_medical_blockers": [],
+  "cross_review_external_Claude": false,
+  "medical_certification": false,
+  "canonical_injection_authorized": false,
+  "scope": {
+    "D": "quatresections,lusintégralementavecquizetdeuxtablesdoses/tablefoyer/tablemonitoring",
+    "pop2": "quinzetemplateslusintégralement,huitmonographiesetseptPareto",
+    "independence_limits": "Pareto Examens/Sciences : contrôle d’intégration et cohérence des fragments dont cet auditeur est l’auteur ; pas une deuxième lecture médicale indépendante. Les assertions non pharmacologiques des autres Pareto doivent aussi relever de leurs auteurs/contrelecteurs Pathologie."
+  },
+  "reviewed_files": [
+    {
+      "path": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_d.html",
+      "sha256": "85c0d9a2e122a11b485d50fd27437847d146ca4e2231cf2afda82a62a57c2756",
+      "bytes": 24976
+    },
+    {
+      "path": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_pop2.html",
+      "sha256": "e7093e7453ac0fbe9d63aee17094a8a25893e899ebdd8d5936b70ddc10fbedc0",
+      "bytes": 61532
+    }
+  ],
+  "checks": [
+    {
+      "id": "NORAD_BASE",
+      "claim_checked": "Noradrénaline : produits prêts à l’emploi,8–12µg/min70kg,table1µg/kg/min ;30µg/min non plafond universel",
+      "source_ids": "norad_swiss",
+      "location": "D2/a41-norad/ParetoPharma",
+      "result": "concordant_sur_les_extraits_lus"
+    },
+    {
+      "id": "NORAD_CALCUL",
+      "claim_checked": "70kg×0,1=7µg/min=420µg/h ;0,10mg/mL→4,2mL/h,0,20→2,1 ;1µg/kg/min→4,2mg/h",
+      "source_ids": "norad_swiss",
+      "location": "D2quiz/a41-norad",
+      "result": "concordant_sur_les_extraits_lus"
+    },
+    {
+      "id": "VASO",
+      "claim_checked": "Argipressine0,01→0,03UI/min,paliers15–20min ;40UI/50mL=0,8 ;0,03→2,25mL/h ;pasbolus",
+      "source_ids": "empressin",
+      "location": "D2/a41-vaso",
+      "result": "concordant_sur_les_extraits_lus"
+    },
+    {
+      "id": "HYDRO",
+      "claim_checked": "200mg/j=50q6h ;repère0,25µg/kg/min+4h identifié2021 ;nonimposé2026 ;notice suisse sans routinechocseptique",
+      "source_ids": "pmc2021/ssc2026/solucortef",
+      "location": "D1-D2/a41-hydro",
+      "result": "concordant_sur_les_extraits_lus"
+    },
+    {
+      "id": "DOBUTAMINE",
+      "claim_checked": "Suisse2,5–10µg/kg/min,40exceptionnel ;sepsis dansindications ;asthme/sulfitescontre-indication du produit",
+      "source_ids": "dobutrex",
+      "location": "D2-D3/a41-dobutamine",
+      "result": "concordant_sur_les_extraits_lus"
+    },
+    {
+      "id": "PIPTAZO",
+      "claim_checked": "Suisse30min,4/0,5greconstitution20mL ;50–150final ;max50mLeauinjectableseulement ;rénal4,5q8hDFG20–40/q12h2–19",
+      "source_ids": "piptazo_swiss",
+      "location": "D2/a41-piptazo",
+      "result": "concordant_sur_les_extraits_lus"
+    },
+    {
+      "id": "PIPTAZO_BORDERS",
+      "claim_checked": "Charge4,5g30min immédiatementpremière dose4h,puisq6–8hfonctionnormale ;exclusionsdialyses,protocoleétrangerhorsmodalitésautorisées",
+      "source_ids": "nhs_borders_piptazo",
+      "location": "D2/a41-piptazo",
+      "result": "concordant_sur_les_extraits_lus"
+    },
+    {
+      "id": "VANCO",
+      "claim_checked": "Charge25–30mg/kg ;entretien15–20q8–12h,max2gparentretien ;pasréductionchargedupatienttrèsgravepourreinseul ;≥60minet≤10mg/min→1g≥100min",
+      "source_ids": "vanco_selected",
+      "location": "D2/a41-vanco",
+      "result": "concordant_sur_les_extraits_lus"
+    },
+    {
+      "id": "VANCO_AUC",
+      "claim_checked": "SARMinvasif,AUC400–600mg·h/L24hCMI1mg/L,objectif24–48h ;notuniversel,distinctcreux",
+      "source_ids": "idsa_vanco",
+      "location": "D3/a41-vanco",
+      "result": "concordant_sur_les_extraits_lus"
+    },
+    {
+      "id": "GENTA",
+      "claim_checked": "NoticeNardia3mg/kg/j3doses,5dansinfectionvitale3–4doses ;pics10–12/creux2mglconventionnel ;EAU6–7mg/kgqd clairementdistinct",
+      "source_ids": "genta_selected/eau_uro2026",
+      "location": "D2/a41-genta",
+      "result": "concordant_sur_les_extraits_lus"
+    },
+    {
+      "id": "ADRENALINE",
+      "claim_checked": "0,05–2µg/kg/min sourceUSDailyMed identifiée ;informationAguettant suisse CPR/anaphylaxie distincte ;aucuneautorisation suisse de plageUSinférée",
+      "source_ids": "dailymed_adr/refdata_adr",
+      "location": "D2/a41-adrenaline",
+      "result": "concordant_sur_les_extraits_lus"
+    },
+    {
+      "id": "MECANISMES",
+      "claim_checked": "α1/GqPLC revue10443582,ratmyosine9581541 ;V1a/Gq modèlecellulairehumain25697345 ;récepteurnucléaire1279685 ;dexaméthasone10218970 réduitexpressioniNOS,nonenzyme directechezchaquepatient",
+      "source_ids": "pubmed_10443582/pubmed_9581541/pubmed_25697345/pubmed_1279685/pubmed_10218970",
+      "location": "monographies",
+      "result": "concordant_sur_les_extraits_lus"
+    },
+    {
+      "id": "MERINO",
+      "claim_checked": "23/18712,3%vs7/1913,7% ;noninfériorité non démontrée pourbactériémiesceftriaxonerésistantes ;limitesdufoyer/schéma préservées",
+      "source_ids": "europepmc_merino",
+      "location": "D1/a41-piptazo/ParetoPharma",
+      "result": "concordant_sur_les_extraits_lus"
+    },
+    {
+      "id": "TOXICITES",
+      "claim_checked": "Natrémieetmuscle hydro ;hypoNaargipressine ;néphro/otoGentamicine,associationVancoPipTazo ;incompatibilitéGentamélangéeβlactamine ;grossessebornesnotice",
+      "source_ids": "notices7produits",
+      "location": "D3etmonographies",
+      "result": "concordant_sur_les_extraits_lus"
+    },
+    {
+      "id": "BICARBONATE",
+      "claim_checked": "Groupe95contre_hémodynamie_acidemielactiqueConditionnelFaible ;96pourchoc+pH≤7,2+AKIN2/3ConditionnelTrèsfaible",
+      "source_ids": "ssc2026",
+      "location": "D4/ParetoPharma",
+      "result": "concordant_sur_les_extraits_lus"
+    }
+  ],
+  "sources_read": [
+    {
+      "id": "norad_swiss",
+      "title": "Noradrenalin Sintetica",
+      "version_read": "octobre 2020",
+      "url": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&lang=FR&authNr=67023",
+      "raw_path": "/tmp/a41-pharma-sources/norad_swiss.raw",
+      "readable_path": "/tmp/a41-pharma-sources/norad_swiss.txt",
+      "raw_sha256_verified": "c03f2bd39e1a7255954163f6aecf7f642aa425920d863f15eea2fa589d57d94f",
+      "readable_sha256_verified": "1069b405985da89707f4e111fee361e6fad6f1786acf38bb2ed35d5466a825a5",
+      "read_mode": "passages ciblés de la notice ou recommandation officielle"
+    },
+    {
+      "id": "empressin",
+      "title": "Empressin",
+      "version_read": "septembre 2025",
+      "url": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&lang=FR&authNr=66180",
+      "raw_path": "/tmp/a41-pharma-sources/empressin.raw",
+      "readable_path": "/tmp/a41-pharma-sources/empressin.txt",
+      "raw_sha256_verified": "070a459beea8fcc09c8d000161b280b4b234574ee9e2562a741854d9a83d0159",
+      "readable_sha256_verified": "c7dcfd00ca980c6827de473d6c4e6f5e51af0e71500ae20ae7bd6e7b23131b6e",
+      "read_mode": "passages ciblés de la notice ou recommandation officielle"
+    },
+    {
+      "id": "solucortef",
+      "title": "Solu-Cortef",
+      "version_read": "octobre 2025",
+      "url": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&lang=FR&authNr=23533",
+      "raw_path": "/tmp/a41-pharma-sources/solucortef.raw",
+      "readable_path": "/tmp/a41-pharma-sources/solucortef.txt",
+      "raw_sha256_verified": "90cc4cda2787c6075663e1ff11803759bd728d5a8237266dc09f49982e966120",
+      "readable_sha256_verified": "670f9f2b2a500dfc4add6c7c326b225f4afe17a7732810ae81463b4d51ffdcfa",
+      "read_mode": "passages ciblés de la notice ou recommandation officielle"
+    },
+    {
+      "id": "piptazo_swiss",
+      "title": "Piperacillin/Tazobactam Labatec",
+      "version_read": "mars 2026",
+      "url": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&lang=FR&authNr=60142",
+      "raw_path": "/tmp/a41-pharma-sources/piptazo_swiss.raw",
+      "readable_path": "/tmp/a41-pharma-sources/piptazo_swiss.txt",
+      "raw_sha256_verified": "3adbda6aa103389a6cd504144ec26fd0ae00d59b5bc9358a73caf40a15a56fe9",
+      "readable_sha256_verified": "5044eeba8ba67cd225e9dbcfbf081a62bcf9c780619fc456dae34d1cff42df6e",
+      "read_mode": "passages ciblés de la notice ou recommandation officielle"
+    },
+    {
+      "id": "dobutrex",
+      "title": "Dobutrex",
+      "version_read": "juin 2023",
+      "url": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&lang=FR&authNr=45687",
+      "raw_path": "/tmp/a41-pharma-sources/dobutrex.raw",
+      "readable_path": "/tmp/a41-pharma-sources/dobutrex.txt",
+      "raw_sha256_verified": "56925dbc5faf491feda1a988e40ef3431317b5bd019ae2979907155e4a7b544b",
+      "readable_sha256_verified": "b4e8415d3742b687cb1620f8dc6b125b78bf4764bfa4ae3b710b468cfefd64ff",
+      "read_mode": "passages ciblés de la notice ou recommandation officielle"
+    },
+    {
+      "id": "vanco_selected",
+      "title": "Vancomycin Labatec i.v.",
+      "version_read": "mars 2026",
+      "url": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&lang=FR&authNr=59766",
+      "raw_path": "/tmp/a41-pharma-sources/vanco_selected.raw",
+      "readable_path": "/tmp/a41-pharma-sources/vanco_selected.txt",
+      "raw_sha256_verified": "666d5e3a931769498b66800718083b889bb39dd087ef3acb00d12524d12806a4",
+      "readable_sha256_verified": "9dd82470f22d75385145c921f3ee85306aa363eca4160e9debf38ced248b7896",
+      "read_mode": "passages ciblés de la notice ou recommandation officielle"
+    },
+    {
+      "id": "genta_selected",
+      "title": "Gentamicine Nardia",
+      "version_read": "août 2024",
+      "url": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&lang=FR&authNr=70800",
+      "raw_path": "/tmp/a41-pharma-sources/genta_selected.raw",
+      "readable_path": "/tmp/a41-pharma-sources/genta_selected.txt",
+      "raw_sha256_verified": "82e8be6862f5b8b0f90dcf37efcb4854f9c4435d22beec433b504926ee2130e6",
+      "readable_sha256_verified": "9bfde835535cd35faa79d2262da054947fa28fc35d22d94f0f939e227cfc0ab3",
+      "read_mode": "passages ciblés de la notice ou recommandation officielle"
+    },
+    {
+      "id": "ssc2026",
+      "title": "Surviving Sepsis Campaign 2026",
+      "version_read": "23mars2026",
+      "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+      "raw_path": "/tmp/a41-pharma-sources/ssc2026.raw",
+      "readable_path": "/tmp/a41-pharma-sources/ssc2026.txt",
+      "raw_sha256_verified": "6266900db8ffb882bff477792023b20f24ece8387bbff854062b5b8b2788bcd1",
+      "readable_sha256_verified": "87ae9ea327cb94f3185d5d006a509af601044e34bffa581417e391987825239d",
+      "read_mode": "passages ciblés de la notice ou recommandation officielle"
+    },
+    {
+      "id": "pmc2021",
+      "title": "Surviving Sepsis Campaign 2021",
+      "version_read": "2021",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/",
+      "raw_path": "/tmp/a41-pharma-sources/pmc2021.raw",
+      "readable_path": "/tmp/a41-pharma-sources/pmc2021.txt",
+      "raw_sha256_verified": "59987a3ccbb78857ed62a113e583bb474c16169fd8480bc82b0604c66c11b861",
+      "readable_sha256_verified": "dbbca2c0931108639e48baec1c596079d447455234861e4af184726306796102",
+      "read_mode": "passages ciblés de la notice ou recommandation officielle"
+    },
+    {
+      "id": "nhs_borders_piptazo",
+      "title": "National Health Service Borders, perfusionprolongée",
+      "version_read": "révision30avril2025 ;prochaine30avril2028",
+      "url": "https://www.rightdecisions.scot.nhs.uk/antimicrobial-prescribing-nhs-borders/speciality-guidelines/intravenous-piperacillintazobactam-in-adults-in-critical-care-via-extended-infusion/",
+      "raw_path": "/tmp/a41-pharma-sources/nhs_borders_piptazo.raw",
+      "readable_path": "/tmp/a41-pharma-sources/nhs_borders_piptazo.txt",
+      "raw_sha256_verified": "932f8b0690e794f870d1c6b6c9c640fd0cd23e1910e0c59da6e672d070dfc4bb",
+      "readable_sha256_verified": "3b293c1b22f9888769a347f02d862cd2f2c3ae0354ab175f8733d3b807cc1968",
+      "read_mode": "passages ciblés de la notice ou recommandation officielle"
+    },
+    {
+      "id": "idsa_vanco",
+      "title": "Consensus vancomycineASHP/IDSA",
+      "version_read": "2020",
+      "url": "https://www.idsociety.org/practice-guideline/vancomycin/",
+      "raw_path": "/tmp/a41-pharma-sources/idsa_vanco.raw",
+      "readable_path": "/tmp/a41-pharma-sources/idsa_vanco.txt",
+      "raw_sha256_verified": "2c0d5ac58447e8af2116e86a9dd0fba1fde3e0ae8a53c55168fcfd98fded0069",
+      "readable_sha256_verified": "2cccfab52cd879e7db79afa2362b8451b319b8d36c4e85a4d286534bbbff8626",
+      "read_mode": "passages ciblés de la notice ou recommandation officielle"
+    },
+    {
+      "id": "eau_uro2026",
+      "title": "Guideline UrologicalInfections",
+      "version_read": "2026,PDFlié2026-05-18",
+      "url": "https://uroweb.org/guidelines/urological-infections/chapter/the-guideline",
+      "raw_path": "/tmp/a41-pharma-sources/eau_uro2026.raw",
+      "readable_path": "/tmp/a41-pharma-sources/eau_uro2026.txt",
+      "raw_sha256_verified": "038de14c3d1b068c3638b0bfa9bd334a13e6ca54aa72b19c31d4ef09331e4c7c",
+      "readable_sha256_verified": "7c732e7db6b74c26f0b362dcfb6c5f74fc2931bef6f297c2eb1b4f63d0391322",
+      "read_mode": "passages ciblés de la notice ou recommandation officielle"
+    },
+    {
+      "id": "europepmc_merino",
+      "title": "MERINO",
+      "version_read": "2018",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30208454/",
+      "raw_path": "/tmp/a41-pharma-sources/europepmc_merino.raw",
+      "readable_path": null,
+      "raw_sha256_verified": "baaca19c64c2ab4c594878b4011daa3d12e228bb86e06199b5a137cddee1cf3c",
+      "read_mode": "résumé original dans le cache EuropePMC ; texte intégral non revendiqué"
+    },
+    {
+      "id": "refdata_adr",
+      "title": "AdrénalineAguettant 0,1 mg/mL",
+      "version_read": "juin2023",
+      "url": "https://files.refdata.ch/simis-public-prod/MedicinalDocuments/c89e6131eda34f99a715e62c7aa92ade-fr.html",
+      "raw_path": "/tmp/a41-pharma-sources/refdata_adr.raw",
+      "readable_path": "/tmp/a41-pharma-sources/refdata_adr.txt",
+      "raw_sha256_verified": "ea64a96903010655b77b70c8339f87abb4914fcc8cd722059d61fe50e4b4072a",
+      "readable_sha256_verified": "9f5f85d44d88c0e748822c50cd325d37ea1ab660768e1ec3f7bab0993f03a56e",
+      "read_mode": "passages ciblés de la notice ou recommandation officielle"
+    },
+    {
+      "id": "dailymed_adr",
+      "title": "Adrenalin",
+      "version_read": "miseàjour26déc2025 ;résumé10/2025 ettexte07/2025",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fd8dd51-0aeb-43dd-9de0-c11b0330b15e",
+      "raw_path": "/tmp/a41-pharma-sources/dailymed_adr.raw",
+      "readable_path": "/tmp/a41-pharma-sources/dailymed_adr.txt",
+      "raw_sha256_verified": "4d876492492f7b69fb39fff76648a115f6897aae00a78a99c374807bc0b7c388",
+      "readable_sha256_verified": "0117ac5697632f5505fb1009f15cccfedeb43edafa44b05e57d611e586a9d87d",
+      "read_mode": "passages ciblés de la notice ou recommandation officielle"
+    },
+    {
+      "id": "pubmed_10443582",
+      "title": "Alpha 1-adrenoceptor subtypes",
+      "version_read": "1999",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10443582/",
+      "raw_path": "/tmp/a41-pharma-sources/alpha_classic.raw",
+      "raw_sha256_verified": "96ff5f95d60e41c2ac2dcf04138bd17acf75a0ee906771dcd7e31743bd9659cc",
+      "read_mode": "résumé original dans le cache EuropePMC ; texte intégral non revendiqué"
+    },
+    {
+      "id": "pubmed_9581541",
+      "title": "Alpha 1-adrenoceptor-mediated phosphorylation of myosin in rat-tail arterial smooth muscle",
+      "version_read": "1997",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9581541/",
+      "raw_path": "/tmp/a41-pharma-sources/alpha_classic.raw",
+      "raw_sha256_verified": "96ff5f95d60e41c2ac2dcf04138bd17acf75a0ee906771dcd7e31743bd9659cc",
+      "read_mode": "résumé original dans le cache EuropePMC ; texte intégral non revendiqué"
+    },
+    {
+      "id": "pubmed_10218970",
+      "title": "Differential inhibitory actions by glucocorticoid and aspirin on cytokine-induced nitric oxide production in vascular smooth muscle cells",
+      "version_read": "1999",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10218970/",
+      "raw_path": "/tmp/a41-pharma-sources/europepmc_nos_vascular.raw",
+      "raw_sha256_verified": "d876b1d3dc8d880edce468e231f24192f3ccd053a078dfd78c6247d5ec894f1c",
+      "read_mode": "résumé original dans le cache EuropePMC ; texte intégral non revendiqué"
+    },
+    {
+      "id": "pubmed_1279685",
+      "title": "A mechanism for the antiinflammatory effects of corticosteroids",
+      "version_read": "1992",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1279685/",
+      "raw_path": "/tmp/a41-pharma-sources/gr_nuclear.raw",
+      "raw_sha256_verified": "8d66645ec091e04c7fdf7e041c432964fe3dc807e00d1bdea93ca73d0b20fbb5",
+      "read_mode": "résumé original dans le cache EuropePMC ; texte intégral non revendiqué"
+    },
+    {
+      "id": "pubmed_25697345",
+      "title": "Arginine vasopressin inhibits adipogenesis in human adipose-derived stem cells",
+      "version_read": "2015",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25697345/",
+      "raw_path": "/tmp/a41-pharma-sources/vaso_v1a.raw",
+      "raw_sha256_verified": "d253185bf148e3888e01947a8b7ec9f3671e10c319ab405d05e54fa3616bdd60",
+      "read_mode": "résumé original dans le cache EuropePMC ; texte intégral non revendiqué"
+    },
+    {
+      "id": "pubmed_9054839",
+      "title": "Vasopressin deficiency contributes to the vasodilation of septic shock",
+      "version_read": "1997",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9054839/",
+      "raw_path": "/tmp/a41-pharma-sources/europepmc_vasopressin_deficiency.raw",
+      "raw_sha256_verified": "b5a3a8ab1e10115a431f68a1878f045807ba92c8c1889637e1e4952d64680832",
+      "read_mode": "résumé original dans le cache EuropePMC ; texte intégral non revendiqué"
+    }
+  ],
+  "sources_count": 21,
+  "findings": [
+    {
+      "id": "PH-C01",
+      "severity": "mineure_a_corriger_pour_coherence_clinique",
+      "status": "corrige_et_delta_contrelu",
+      "file": "A41_pop2.html",
+      "location": "pareto-a41-trait",
+      "quote": "la dobutamine s’ajoute, ou l’adrénaline seule est employée, en cas de dysfonction cardiaque",
+      "evidence": "Groupe61 et D1/a41-dobutamine exigent hypoperfusion persistante malgrévolumeetpressionadéquats. Le Pareto ometcesconditions.",
+      "requested_fix": "Ajouter avec hypoperfusion persistante malgré un volume et une pression adéquats.",
+      "source": "Surviving Sepsis Campaign2026 groupe61",
+      "delta_verified": true
+    },
+    {
+      "id": "PH-C02",
+      "severity": "mineure_de_generalisation",
+      "status": "corrige_et_delta_contrelu",
+      "file": "A41_pop2.html",
+      "location": "pareto-a41-physio",
+      "quote": "s’accompagne d’une immunodépression",
+      "evidence": "Formulation universelle alors que C/Sciences et les preuves de tissus sélectionnés ne démontrent pas un trajet uniforme.",
+      "requested_fix": "peut s’associer à une diminution de fonctions immunitaires, qui expose aux infections secondaires.",
+      "source": "C/pareto-a41-sciences ; BoomerPMC3361243 contexte postmortem",
+      "delta_verified": true
+    },
+    {
+      "id": "PH-C03",
+      "severity": "precision_editoriale_quantite_active",
+      "status": "corrige_et_delta_contrelu",
+      "file": "A41_d.html / A41_pop2.html",
+      "location": "D2/a41-hydro",
+      "quote": "100 ou250mg de succinate sodique d’hydrocortisone",
+      "evidence": "Composition Solu-Cortef donne100/250mg d’hydrocortisone sousforme de succinate sodique. La précision éviteunelectureenmassedesel ; aucune erreur du régime200mg/jconfirmée.",
+      "requested_fix": "100 ou250mg d’hydrocortisone sousforme de succinate sodique.",
+      "source": "solucortef Composition",
+      "delta_verified": true
+    },
+    {
+      "id": "PH-C04",
+      "severity": "mineure_de_tracabilite",
+      "status": "corrige_et_delta_contrelu",
+      "file": "A41_d.html",
+      "location": "D4",
+      "quote": "suggestions défavorables2026 sanscertitude pourchaquegroupe",
+      "evidence": "Sens des énoncés conforme maisforce/certitudeincomplètementexplicitée horsbicarbonate96. ESP24attendaitforcetcertainte.",
+      "requested_fix": "Ajouter conditionnelles ; faiblepourterlipressine/lévosimendan/vitamineC/immunoglobulines/polymyxineB, trèsfaiblepourbêtabloquants/autrespurifications/vitamineD/probiotiques/XueBiJing/antipyrétiquespronostic ;95faible/96trèsfaible.",
+      "source": "ssc2026 groupes54,62,64,80–86,88,95–96",
+      "delta_verified": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "audit_examens_sciences_pharmacologie-16",
+      "author_status": "correction_proposee_non_cloturee",
+      "independent_review": "correction_concordante_sur_perimetre_lu",
+      "original_major": false,
+      "limits": "Pas clôture du chapitre ou certification ; observation16 limitée aux pagers D."
+    },
+    {
+      "id": "audit_examens_sciences_pharmacologie-17",
+      "author_status": "correction_proposee_non_cloturee",
+      "independent_review": "correction_concordante_sur_perimetre_lu",
+      "original_major": true,
+      "limits": "Correction contrevalidée dans le périmètre de ce rapport ; registre externe et injection sous décision de la racine."
+    },
+    {
+      "id": "audit_examens_sciences_pharmacologie-18",
+      "author_status": "correction_proposee_non_cloturee",
+      "independent_review": "correction_concordante_sur_perimetre_lu",
+      "original_major": true,
+      "limits": "Correction contrevalidée dans le périmètre de ce rapport ; registre externe et injection sous décision de la racine."
+    },
+    {
+      "id": "audit_examens_sciences_pharmacologie-19",
+      "author_status": "correction_proposee_non_cloturee",
+      "independent_review": "correction_concordante_sur_perimetre_lu",
+      "original_major": true,
+      "limits": "Correction contrevalidée dans le périmètre de ce rapport ; registre externe et injection sous décision de la racine."
+    },
+    {
+      "id": "audit_examens_sciences_pharmacologie-20",
+      "author_status": "correction_proposee_non_cloturee",
+      "independent_review": "correction_concordante_sur_perimetre_lu",
+      "original_major": true,
+      "limits": "Correction contrevalidée dans le périmètre de ce rapport ; registre externe et injection sous décision de la racine."
+    },
+    {
+      "id": "audit_examens_sciences_pharmacologie-21",
+      "author_status": "correction_proposee_non_cloturee",
+      "independent_review": "correction_concordante_sur_perimetre_lu",
+      "original_major": false,
+      "limits": "Correction contrevalidée dans le périmètre de ce rapport ; registre externe et injection sous décision de la racine."
+    },
+    {
+      "id": "audit_examens_sciences_pharmacologie-22",
+      "author_status": "correction_proposee_non_cloturee",
+      "independent_review": "correction_concordante_sur_perimetre_lu",
+      "original_major": false,
+      "limits": "Correction contrevalidée dans le périmètre de ce rapport ; registre externe et injection sous décision de la racine."
+    },
+    {
+      "id": "audit_examens_sciences_pharmacologie-23",
+      "author_status": "correction_proposee_non_cloturee",
+      "independent_review": "correction_concordante_sur_perimetre_lu",
+      "original_major": false,
+      "limits": "Correction contrevalidée dans le périmètre de ce rapport ; registre externe et injection sous décision de la racine."
+    },
+    {
+      "id": "audit_examens_sciences_pharmacologie-24",
+      "author_status": "correction_proposee_non_cloturee",
+      "independent_review": "contenu_et_gradations_completes_concordantes_sur_perimetre_lu",
+      "original_major": false,
+      "limits": "Correction contrevalidée dans le périmètre de ce rapport ; registre externe et injection sous décision de la racine."
+    },
+    {
+      "id": "audit_examens_sciences_pharmacologie-25",
+      "author_status": "correction_proposee_non_cloturee",
+      "independent_review": "correction_concordante_sur_perimetre_lu",
+      "original_major": false,
+      "limits": "Correction contrevalidée dans le périmètre de ce rapport ; registre externe et injection sous décision de la racine."
+    },
+    {
+      "id": "audit_examens_sciences_pharmacologie-26",
+      "author_status": "correction_proposee_non_cloturee",
+      "independent_review": "correction_concordante_sur_perimetre_lu",
+      "original_major": false,
+      "limits": "Correction contrevalidée dans le périmètre de ce rapport ; registre externe et injection sous décision de la racine."
+    }
+  ],
+  "arithmetic": {
+    "norepinephrine70kg01ugkgmin_ugmin": 7.0,
+    "norepinephrine70kg01ugkgmin_mLh_01mgmL": 4.2,
+    "norepinephrine70kg01ugkgmin_mLh_02mgmL": 2.1,
+    "vasopressin003UImin_08UImL_mLh": 2.2499999999999996,
+    "vancomycin1g_10mgmin_min": 100.0
+  },
+  "limitations": [
+    "Lecture indépendante des extraits primaires et notices reçus ; résumés distingués des articles complets. Aucun nouvel essai intégral non reçu n’est revendiqué.",
+    "Les quatre réserves sont prouvées par le texte courant, ses conditions internes et les énoncés officiels ; un403 ancien n’est pas un défaut clinique.",
+    "La discordance de dates DailyMed est conservée par l’auteur ; la dose0,05–2 figure effectivement sur les deux surfaces lues.",
+    "Compilation et parcours navigateur confiés à la sentinelle technique ; aucune exécution du code entrant, aucune modification source/canonique/Git par cet auditeur pour cette contrelecture.",
+    "Cette contrelecture interne Codex ne remplace pas l’audit externe Claude du chapitre entier et ne valide pas le chapitre suivant."
+  ],
+  "delta_review": {
+    "at_utc": "2026-10-08T12:32:07.770423+00:00",
+    "initial_reviewed_files": [
+      {
+        "path": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_d.html",
+        "sha256": "96151f27e12d0329bbabaad64ac98b28a05f0913721fae0cca60efaf8c22a9d6"
+      },
+      {
+        "path": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_pop2.html",
+        "sha256": "2e11143b01de68f3628ca9630fe0c674cf123578cf588b94144a75895a2502b1"
+      }
+    ],
+    "new_hashes": {
+      "A41_d.html": "035ad19066501be205ffdaf9315f20335143ff48c21d4a7e55c14a677aaf2b2f",
+      "A41_pop2.html": "a90b0922a92f337151effd773a246de11efac6b2af4664ca41f2fe1cf1f0ee49"
+    },
+    "verification": "D2/D4 et fenêtres hydro/Pareto physio/trait relus ; dosesetcritèresne sont paschangésendehorsdesprécisionsdemandées ; gradesrecoupésaveccartes54/62/64/80–86/88/95–96."
+  },
+  "science_pareto_delta": {
+    "at_utc": "2026-10-08T12:37:44.843747+00:00",
+    "former_pop2_sha256": "a90b0922a92f337151effd773a246de11efac6b2af4664ca41f2fe1cf1f0ee49",
+    "new_pop2_sha256": "e000821655ef2126980b2b43f8d92c196ded19a68e7b2c3f38cdb7a53ecccd47",
+    "read_scope": "Six items complets Pareto Sciences de l’auteur Pharmacologie relus, avec équations/nombres/limites comparés aux sources et C.",
+    "result": "Concordance : PAM/DC/RVS/PVC compatibleunits ; CaO₂1,34/0,003 fractiong/dL ; DO₂×10L/min 933→539 ; NO/guanylatecanaux bornés ; TF/PC-S ; LDH/PDH hétérogènes ; ATP/HLA-DR tissuspécifiques.",
+    "independence_limitation": "Les formules et données existent déjà dans C rédigé par cet auditeur : contrôle d’intégration et cohérence, pas deuxième certification médicale de ses propres assertions."
+  },
+  "external_link_attributes_delta": {
+    "at_utc": "2026-10-08T12:49:52.755727+00:00",
+    "old_sha256_verified": "e000821655ef2126980b2b43f8d92c196ded19a68e7b2c3f38cdb7a53ecccd47",
+    "new_sha256_verified": "3a84fc423c7b1bafc84e1cf9fa59040a5139a9072d974ce474d6098f740293bb",
+    "snapshot_path": "/tmp/a41-pharma-sources/pop2-before-external-link-attributes.html",
+    "snapshot_matches_previous_independent_receipt": true,
+    "candidate_path": "/workspace/Medina/livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_pop2.html",
+    "changed_external_anchor_count": 19,
+    "added_attributes": {
+      "target": "_blank",
+      "rel": "noopener"
+    },
+    "all_other_anchor_markup_identical": true,
+    "removing_only_new_attributes_restores_previous_bytes": true,
+    "restored_sha256": "e000821655ef2126980b2b43f8d92c196ded19a68e7b2c3f38cdb7a53ecccd47",
+    "text_dose_pareto_url_changes": false,
+    "changes": [
+      {
+        "href": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=67023",
+        "before": "<a href=\"https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=67023\">",
+        "after": "<a href=\"https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=67023\" target=\"_blank\" rel=\"noopener\">"
+      },
+      {
+        "href": "https://pubmed.ncbi.nlm.nih.gov/10443582/",
+        "before": "<a href=\"https://pubmed.ncbi.nlm.nih.gov/10443582/\">",
+        "after": "<a href=\"https://pubmed.ncbi.nlm.nih.gov/10443582/\" target=\"_blank\" rel=\"noopener\">"
+      },
+      {
+        "href": "https://pubmed.ncbi.nlm.nih.gov/9581541/",
+        "before": "<a href=\"https://pubmed.ncbi.nlm.nih.gov/9581541/\">",
+        "after": "<a href=\"https://pubmed.ncbi.nlm.nih.gov/9581541/\" target=\"_blank\" rel=\"noopener\">"
+      },
+      {
+        "href": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=66180",
+        "before": "<a href=\"https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=66180\">",
+        "after": "<a href=\"https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=66180\" target=\"_blank\" rel=\"noopener\">"
+      },
+      {
+        "href": "https://pubmed.ncbi.nlm.nih.gov/9054839/",
+        "before": "<a href=\"https://pubmed.ncbi.nlm.nih.gov/9054839/\">",
+        "after": "<a href=\"https://pubmed.ncbi.nlm.nih.gov/9054839/\" target=\"_blank\" rel=\"noopener\">"
+      },
+      {
+        "href": "https://pubmed.ncbi.nlm.nih.gov/25697345/",
+        "before": "<a href=\"https://pubmed.ncbi.nlm.nih.gov/25697345/\">",
+        "after": "<a href=\"https://pubmed.ncbi.nlm.nih.gov/25697345/\" target=\"_blank\" rel=\"noopener\">"
+      },
+      {
+        "href": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=23533",
+        "before": "<a href=\"https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=23533\">",
+        "after": "<a href=\"https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=23533\" target=\"_blank\" rel=\"noopener\">"
+      },
+      {
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/",
+        "before": "<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/\">",
+        "after": "<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/\" target=\"_blank\" rel=\"noopener\">"
+      },
+      {
+        "href": "https://pubmed.ncbi.nlm.nih.gov/1279685/",
+        "before": "<a href=\"https://pubmed.ncbi.nlm.nih.gov/1279685/\">",
+        "after": "<a href=\"https://pubmed.ncbi.nlm.nih.gov/1279685/\" target=\"_blank\" rel=\"noopener\">"
+      },
+      {
+        "href": "https://pubmed.ncbi.nlm.nih.gov/10218970/",
+        "before": "<a href=\"https://pubmed.ncbi.nlm.nih.gov/10218970/\">",
+        "after": "<a href=\"https://pubmed.ncbi.nlm.nih.gov/10218970/\" target=\"_blank\" rel=\"noopener\">"
+      },
+      {
+        "href": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=60142",
+        "before": "<a href=\"https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=60142\">",
+        "after": "<a href=\"https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=60142\" target=\"_blank\" rel=\"noopener\">"
+      },
+      {
+        "href": "https://pubmed.ncbi.nlm.nih.gov/30208454/",
+        "before": "<a href=\"https://pubmed.ncbi.nlm.nih.gov/30208454/\">",
+        "after": "<a href=\"https://pubmed.ncbi.nlm.nih.gov/30208454/\" target=\"_blank\" rel=\"noopener\">"
+      },
+      {
+        "href": "https://www.rightdecisions.scot.nhs.uk/antimicrobial-prescribing-nhs-borders/speciality-guidelines/intravenous-piperacillintazobactam-in-adults-in-critical-care-via-extended-infusion/",
+        "before": "<a href=\"https://www.rightdecisions.scot.nhs.uk/antimicrobial-prescribing-nhs-borders/speciality-guidelines/intravenous-piperacillintazobactam-in-adults-in-critical-care-via-extended-infusion/\">",
+        "after": "<a href=\"https://www.rightdecisions.scot.nhs.uk/antimicrobial-prescribing-nhs-borders/speciality-guidelines/intravenous-piperacillintazobactam-in-adults-in-critical-care-via-extended-infusion/\" target=\"_blank\" rel=\"noopener\">"
+      },
+      {
+        "href": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=59766",
+        "before": "<a href=\"https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=59766\">",
+        "after": "<a href=\"https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=59766\" target=\"_blank\" rel=\"noopener\">"
+      },
+      {
+        "href": "https://www.idsociety.org/practice-guideline/vancomycin/",
+        "before": "<a href=\"https://www.idsociety.org/practice-guideline/vancomycin/\">",
+        "after": "<a href=\"https://www.idsociety.org/practice-guideline/vancomycin/\" target=\"_blank\" rel=\"noopener\">"
+      },
+      {
+        "href": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=70800",
+        "before": "<a href=\"https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=70800\">",
+        "after": "<a href=\"https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=70800\" target=\"_blank\" rel=\"noopener\">"
+      },
+      {
+        "href": "https://uroweb.org/guidelines/urological-infections/chapter/the-guideline",
+        "before": "<a href=\"https://uroweb.org/guidelines/urological-infections/chapter/the-guideline\">",
+        "after": "<a href=\"https://uroweb.org/guidelines/urological-infections/chapter/the-guideline\" target=\"_blank\" rel=\"noopener\">"
+      },
+      {
+        "href": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=45687",
+        "before": "<a href=\"https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=45687\">",
+        "after": "<a href=\"https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&amp;lang=FR&amp;authNr=45687\" target=\"_blank\" rel=\"noopener\">"
+      },
+      {
+        "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fd8dd51-0aeb-43dd-9de0-c11b0330b15e",
+        "before": "<a href=\"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fd8dd51-0aeb-43dd-9de0-c11b0330b15e\">",
+        "after": "<a href=\"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3fd8dd51-0aeb-43dd-9de0-c11b0330b15e\" target=\"_blank\" rel=\"noopener\">"
+      }
+    ],
+    "medical_re_review_needed_for_this_delta": false,
+    "reviewer": "Codex /root/review_plan"
+  },
+  "green_drug_buttons_and_source_captions_delta": {
+    "at_utc": "2026-10-08T13:05:12.827321+00:00",
+    "reviewer": "Codex /root/review_plan",
+    "D": {
+      "old_sha256": "035ad19066501be205ffdaf9315f20335143ff48c21d4a7e55c14a677aaf2b2f",
+      "new_sha256": "85c0d9a2e122a11b485d50fd27437847d146ca4e2231cf2afda82a62a57c2756",
+      "old_snapshot_path": "/tmp/a41-pharma-sources/D-before-drug-buttons.html",
+      "old_snapshot_matches_previous_independent_receipt": true,
+      "added_drug_buttons_count": 29,
+      "all_added_buttons_in_tables": true,
+      "all_targets_preexisting_defined": true,
+      "added_buttons": [
+        {
+          "name": "pipéracilline/tazobactam",
+          "data_k": "a41-piptazo",
+          "markup": "<button class=\"w\" data-k=\"a41-piptazo\">pipéracilline/tazobactam</button>"
+        },
+        {
+          "name": "Pipéracilline/tazobactam",
+          "data_k": "a41-piptazo",
+          "markup": "<button class=\"w\" data-k=\"a41-piptazo\">Pipéracilline/tazobactam</button>"
+        },
+        {
+          "name": "Pipéracilline/tazobactam",
+          "data_k": "a41-piptazo",
+          "markup": "<button class=\"w\" data-k=\"a41-piptazo\">Pipéracilline/tazobactam</button>"
+        },
+        {
+          "name": "pipéracilline/tazobactam",
+          "data_k": "a41-piptazo",
+          "markup": "<button class=\"w\" data-k=\"a41-piptazo\">pipéracilline/tazobactam</button>"
+        },
+        {
+          "name": "Noradrenalin Sintetica",
+          "data_k": "a41-norad",
+          "markup": "<button class=\"w\" data-k=\"a41-norad\">Noradrenalin Sintetica</button>"
+        },
+        {
+          "name": "noradrénaline",
+          "data_k": "a41-norad",
+          "markup": "<button class=\"w\" data-k=\"a41-norad\">noradrénaline</button>"
+        },
+        {
+          "name": "Empressin",
+          "data_k": "a41-vaso",
+          "markup": "<button class=\"w\" data-k=\"a41-vaso\">Empressin</button>"
+        },
+        {
+          "name": "argipressine",
+          "data_k": "a41-vaso",
+          "markup": "<button class=\"w\" data-k=\"a41-vaso\">argipressine</button>"
+        },
+        {
+          "name": "Solu-Cortef",
+          "data_k": "a41-hydro",
+          "markup": "<button class=\"w\" data-k=\"a41-hydro\">Solu-Cortef</button>"
+        },
+        {
+          "name": "hydrocortisone",
+          "data_k": "a41-hydro",
+          "markup": "<button class=\"w\" data-k=\"a41-hydro\">hydrocortisone</button>"
+        },
+        {
+          "name": "Dobutrex",
+          "data_k": "a41-dobutamine",
+          "markup": "<button class=\"w\" data-k=\"a41-dobutamine\">Dobutrex</button>"
+        },
+        {
+          "name": "dobutamine",
+          "data_k": "a41-dobutamine",
+          "markup": "<button class=\"w\" data-k=\"a41-dobutamine\">dobutamine</button>"
+        },
+        {
+          "name": "Adrénaline",
+          "data_k": "a41-adrenaline",
+          "markup": "<button class=\"w\" data-k=\"a41-adrenaline\">Adrénaline</button>"
+        },
+        {
+          "name": "Adrenalin",
+          "data_k": "a41-adrenaline",
+          "markup": "<button class=\"w\" data-k=\"a41-adrenaline\">Adrenalin</button>"
+        },
+        {
+          "name": "Adrénaline Aguettant",
+          "data_k": "a41-adrenaline",
+          "markup": "<button class=\"w\" data-k=\"a41-adrenaline\">Adrénaline Aguettant</button>"
+        },
+        {
+          "name": "Pipéracilline/tazobactam",
+          "data_k": "a41-piptazo",
+          "markup": "<button class=\"w\" data-k=\"a41-piptazo\">Pipéracilline/tazobactam</button>"
+        },
+        {
+          "name": "Vancomycin Labatec",
+          "data_k": "a41-vanco",
+          "markup": "<button class=\"w\" data-k=\"a41-vanco\">Vancomycin Labatec</button>"
+        },
+        {
+          "name": "Gentamicine Nardia",
+          "data_k": "a41-genta",
+          "markup": "<button class=\"w\" data-k=\"a41-genta\">Gentamicine Nardia</button>"
+        },
+        {
+          "name": "Noradrénaline",
+          "data_k": "a41-norad",
+          "markup": "<button class=\"w\" data-k=\"a41-norad\">Noradrénaline</button>"
+        },
+        {
+          "name": "adrénaline",
+          "data_k": "a41-adrenaline",
+          "markup": "<button class=\"w\" data-k=\"a41-adrenaline\">adrénaline</button>"
+        },
+        {
+          "name": "adrénaline",
+          "data_k": "a41-adrenaline",
+          "markup": "<button class=\"w\" data-k=\"a41-adrenaline\">adrénaline</button>"
+        },
+        {
+          "name": "Argipressine",
+          "data_k": "a41-vaso",
+          "markup": "<button class=\"w\" data-k=\"a41-vaso\">Argipressine</button>"
+        },
+        {
+          "name": "Hydrocortisone",
+          "data_k": "a41-hydro",
+          "markup": "<button class=\"w\" data-k=\"a41-hydro\">Hydrocortisone</button>"
+        },
+        {
+          "name": "Dobutamine",
+          "data_k": "a41-dobutamine",
+          "markup": "<button class=\"w\" data-k=\"a41-dobutamine\">Dobutamine</button>"
+        },
+        {
+          "name": "Dobutrex",
+          "data_k": "a41-dobutamine",
+          "markup": "<button class=\"w\" data-k=\"a41-dobutamine\">Dobutrex</button>"
+        },
+        {
+          "name": "Vancomycine",
+          "data_k": "a41-vanco",
+          "markup": "<button class=\"w\" data-k=\"a41-vanco\">Vancomycine</button>"
+        },
+        {
+          "name": "gentamicine",
+          "data_k": "a41-genta",
+          "markup": "<button class=\"w\" data-k=\"a41-genta\">gentamicine</button>"
+        },
+        {
+          "name": "gentamicine",
+          "data_k": "a41-genta",
+          "markup": "<button class=\"w\" data-k=\"a41-genta\">gentamicine</button>"
+        },
+        {
+          "name": "vancomycine",
+          "data_k": "a41-vanco",
+          "markup": "<button class=\"w\" data-k=\"a41-vanco\">vancomycine</button>"
+        }
+      ],
+      "normalizing_only_added_wrappers_restores_previous_bytes": true,
+      "restored_sha256": "035ad19066501be205ffdaf9315f20335143ff48c21d4a7e55c14a677aaf2b2f",
+      "clinical_text_dose_condition_and_previous_URL_changes": false
+    },
+    "pop2": {
+      "old_sha256": "3a84fc423c7b1bafc84e1cf9fa59040a5139a9072d974ce474d6098f740293bb",
+      "new_sha256": "40ef9207b5533b9992742eb2b2813cf3ab11c61d228cec794cb11ed730c7ddb1",
+      "old_snapshot_path": "/tmp/a41-pharma-sources/pop2-before-sccm2026-sources.html",
+      "old_snapshot_matches_previous_independent_receipt": true,
+      "source_caption_count": 4,
+      "added_source_links_count": 7,
+      "new_links": [
+        {
+          "window": "a41-norad",
+          "group_id": 53,
+          "href": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026#RecomGroup-53",
+          "label": "Surviving Sepsis Campaign 2026, recommandation 53 : noradrénaline de première intention"
+        },
+        {
+          "window": "a41-hydro",
+          "group_id": 79,
+          "href": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026#RecomGroup-79",
+          "label": "Surviving Sepsis Campaign 2026, recommandation 79 : corticostéroïdes intraveineux dans le choc septique"
+        },
+        {
+          "window": "a41-dobutamine",
+          "group_id": 60,
+          "href": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026#RecomGroup-60",
+          "label": "Surviving Sepsis Campaign 2026, recommandation 60 : conditions de l’inotropie"
+        },
+        {
+          "window": "a41-dobutamine",
+          "group_id": 61,
+          "href": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026#RecomGroup-61",
+          "label": "Surviving Sepsis Campaign 2026, recommandation 61 : dobutamine ajoutée ou adrénaline seule"
+        },
+        {
+          "window": "a41-adrenaline",
+          "group_id": 58,
+          "href": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026#RecomGroup-58",
+          "label": "Surviving Sepsis Campaign 2026, recommandation 58 : vasopresseur si dysfonction cardiaque"
+        },
+        {
+          "window": "a41-adrenaline",
+          "group_id": 60,
+          "href": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026#RecomGroup-60",
+          "label": "Surviving Sepsis Campaign 2026, recommandation 60 : conditions de l’inotropie"
+        },
+        {
+          "window": "a41-adrenaline",
+          "group_id": 61,
+          "href": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026#RecomGroup-61",
+          "label": "Surviving Sepsis Campaign 2026, recommandation 61 : dobutamine ajoutée ou adrénaline seule"
+        }
+      ],
+      "captions": [
+        {
+          "window": "a41-norad",
+          "markup": "<div class=\"src\">Prise en charge actualisée : <a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026#RecomGroup-53\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, recommandation 53 : noradrénaline de première intention</a>. Page SCCM publiée le 23 mars 2026, consultée le 8 octobre 2026. Les notices de présentation et d’administration citées ci-dessus conservent leur date et leur portée.</div>"
+        },
+        {
+          "window": "a41-hydro",
+          "markup": "<div class=\"src\">Prise en charge actualisée : <a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026#RecomGroup-79\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, recommandation 79 : corticostéroïdes intraveineux dans le choc septique</a>. Page SCCM publiée le 23 mars 2026, consultée le 8 octobre 2026. Les notices de présentation et d’administration citées ci-dessus conservent leur date et leur portée.</div>"
+        },
+        {
+          "window": "a41-dobutamine",
+          "markup": "<div class=\"src\">Prise en charge actualisée : <a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026#RecomGroup-60\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, recommandation 60 : conditions de l’inotropie</a> ; <a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026#RecomGroup-61\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, recommandation 61 : dobutamine ajoutée ou adrénaline seule</a>. Page SCCM publiée le 23 mars 2026, consultée le 8 octobre 2026. Les notices de présentation et d’administration citées ci-dessus conservent leur date et leur portée.</div>"
+        },
+        {
+          "window": "a41-adrenaline",
+          "markup": "<div class=\"src\">Prise en charge actualisée : <a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026#RecomGroup-58\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, recommandation 58 : vasopresseur si dysfonction cardiaque</a> ; <a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026#RecomGroup-60\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, recommandation 60 : conditions de l’inotropie</a> ; <a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026#RecomGroup-61\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, recommandation 61 : dobutamine ajoutée ou adrénaline seule</a>. Page SCCM publiée le 23 mars 2026, consultée le 8 octobre 2026. Les notices de présentation et d’administration citées ci-dessus conservent leur date et leur portée.</div>"
+        }
+      ],
+      "normalizing_only_added_captions_restores_previous_bytes": true,
+      "restored_sha256": "3a84fc423c7b1bafc84e1cf9fa59040a5139a9072d974ce474d6098f740293bb",
+      "clinical_text_dose_condition_and_previous_URL_changes": false,
+      "source_publication_date_verified": "2026-03-23",
+      "date_of_consultation": "2026-10-08",
+      "source_primary_html_sha256": "6266900db8ffb882bff477792023b20f24ece8387bbff854062b5b8b2788bcd1",
+      "source_cards_re_read": [
+        {
+          "page_order": 53,
+          "sccm_group_id": 53,
+          "statement_and_certainty": "For adults with septic shock, we “recommend” using norepinephrine as the first-line agent over dopamine, epinephrine, or selepressin.\nCertainty of evidence: High for dopamine, low for epinephrine and selepressin",
+          "strength": "Strong",
+          "category": "Vasopressors",
+          "remarks": "",
+          "raw_fragment_sha256": "9f5b4f77e366a0dcc8f9cfb33ba1098e06672b2b59dade7c8440f7d559df39ed"
+        },
+        {
+          "page_order": 58,
+          "sccm_group_id": 58,
+          "statement_and_certainty": "For adults with septic shock with concomitant cardiac dysfunction, we “suggest” using either norepinephrine or epinephrine as first line vasopressor.\nCertainty of evidence: Very low",
+          "strength": "Conditional",
+          "category": "Vasopressors",
+          "remarks": "Remarks\nNorepinephrine may be preferred in patients with tachyarrhythmia or significant sinus tachycardia. Conversely, epinephrine may be preferred in patients with bradyarrhythmia or significant sinus bradycardia.",
+          "raw_fragment_sha256": "aa00b648f1e4e6d315d464b81bb5f64757b52deb9ae1f9a7346d8e13a9fad403"
+        },
+        {
+          "page_order": 59,
+          "sccm_group_id": 59,
+          "statement_and_certainty": "For adults with refractory septic shock and escalating vasopressor requirements, there is “insufficient evidence” to make a recommendation on IV methylene blue.",
+          "strength": null,
+          "category": "Methylene blue",
+          "remarks": "Remarks\nAlthough methylene blue may improve blood pressure, there is insufficient evidence to determine if its use as rescue therapy improves survival; some patients with potentially treatable disease may value a trial.\n“In our practice,” 69% of panelists “never” or “almost never” use methylene blue as rescue therapy, 23% “sometimes” use it, 6% “usually” use it, and 1.5% “almost always” use it.",
+          "raw_fragment_sha256": "f3bc454ebb8987e3f0043023ef026a221e82b7c2afb8d5dae9530849321acf59",
+          "strength_html_label": "hide",
+          "recommendation_status": "insufficient_evidence_no_recommendation"
+        },
+        {
+          "page_order": 60,
+          "sccm_group_id": 60,
+          "statement_and_certainty": "For adults with septic shock and cardiac dysfunction with persistent hypoperfusion despite adequate fluid status and arterial blood pressure, we “suggest” using inotropes over no inotropes.\nCertainty of evidence: Very low",
+          "strength": "Conditional",
+          "category": "Inotropes",
+          "remarks": "Remarks\nFor patients requiring vasopressors to maintain MAP at target, inotropes should be used in addition to (not instead of) vasopressors.",
+          "raw_fragment_sha256": "7b6ad581f3b7156c76c427aec10ebeb23ccfa1ecfd0a07964263435577c604c9"
+        },
+        {
+          "page_order": 61,
+          "sccm_group_id": 61,
+          "statement_and_certainty": "For adults with septic shock with persistent hypoperfusion and cardiac dysfunction despite adequate fluid resuscitation and arterial blood pressure, we “suggest” adding dobutamine to norepinephrine or using epinephrine alone.\nCertainty of evidence: Very low",
+          "strength": "Conditional",
+          "category": "Inotropes",
+          "remarks": "Remarks\nData were insufficient to make a recommendation for dobutamine vs. milrinone.",
+          "raw_fragment_sha256": "ddd2e1fdd00a6f9e86db1f4c634c74ce0b89dc49e0361a12f21aed139ab19db6"
+        },
+        {
+          "page_order": 79,
+          "sccm_group_id": 79,
+          "statement_and_certainty": "For adults with septic shock, we “suggest” using IV corticosteroids.\nCertainty of evidence: Low",
+          "strength": "Conditional",
+          "category": "IV Corticosteroids",
+          "remarks": "",
+          "raw_fragment_sha256": "99548b697538137ae1342f9c7334267325f20dec4e242603224e56e932a93d6c"
+        }
+      ],
+      "card59_not_used_for_inotropy": true
+    },
+    "conclusion": "Périmètre des deux deltas prouvé par reconstruction exacte ; légendes compatibles avec les groupes primaires indiqués. Avis précédent conservé, sans certification ni décision d’injection."
+  },
+  "vasopressin_source_caption_delta": {
+    "at_utc": "2026-10-08T13:13:46.663153+00:00",
+    "reviewer": "Codex /root/review_plan",
+    "old_sha256": "40ef9207b5533b9992742eb2b2813cf3ab11c61d228cec794cb11ed730c7ddb1",
+    "new_sha256": "e7093e7453ac0fbe9d63aee17094a8a25893e899ebdd8d5936b70ddc10fbedc0",
+    "old_snapshot_path": "/tmp/a41-pharma-sources/pop2-before-vasopressin-source.html",
+    "old_snapshot_matches_previous_independent_receipt": true,
+    "window": "a41-vaso",
+    "added_source_caption_count": 1,
+    "added_source_link_count": 1,
+    "caption_markup": "<div class=\"src\">Prise en charge actualisée : <a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026#RecomGroup-56\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, recommandation 56 : ajout de vasopressine lorsque les besoins de noradrénaline augmentent</a>. Page SCCM publiée le 23 mars 2026, consultée le 8 octobre 2026. La notice suisse et le repère de 2021 cités ci-dessus conservent leur date et leur portée.</div>",
+    "href": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026#RecomGroup-56",
+    "new_anchor_attributes_verified": {
+      "target": "_blank",
+      "rel": "noopener",
+      "data-reference-source": "1"
+    },
+    "source_publication_date_verified": "2026-03-23",
+    "date_of_consultation": "2026-10-08",
+    "primary_html_sha256": "6266900db8ffb882bff477792023b20f24ece8387bbff854062b5b8b2788bcd1",
+    "primary_card_re_read": {
+      "page_order": 56,
+      "sccm_group_id": 56,
+      "statement_and_certainty": "For adults with septic shock on escalating doses of norepinephrine, we “suggest” adding vasopressin.\nCertainty of evidence: Moderate",
+      "strength": "Conditional",
+      "category": "Vasopressors",
+      "remarks": "",
+      "raw_fragment_sha256": "cf5c70207bd14024b2c82bcbccd6a5437316b0f44b4460a89cdf2a9c0780faa8"
+    },
+    "only_added_source_caption_removed_restores_previous_bytes": true,
+    "restored_sha256": "40ef9207b5533b9992742eb2b2813cf3ab11c61d228cec794cb11ed730c7ddb1",
+    "old_clinical_text_dose_condition_Pareto_and_URL_changes": false,
+    "notice_and_2021_threshold_scope_preserved": true,
+    "conclusion": "Légende fidèle au groupe 56 : ajout de vasopressine si les besoins de noradrénaline augmentent, recommandation conditionnelle, certitude modérée. Avis favorable limité à ce delta de source ; les limites antérieures, l’absence de certification et les réserves ESP03/07 sont conservées."
+  }
+}

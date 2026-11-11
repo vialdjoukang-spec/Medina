@@ -1,0 +1,816 @@
+{
+  "schema_version": 1,
+  "chapter": "A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)",
+  "observation_id": "audit_examens_sciences_pharmacologie-03",
+  "author": "/root/test_allocation",
+  "role": "Mission complémentaire sources, lecture seule ; aucun HTML/registre/canonique/Git modifié.",
+  "written_at_utc": "2026-10-08T12:35:10.380048+00:00",
+  "status": "PARTIAL_SWISS_ARTERIAL_PRIMARY_FOUND_CURRENT_CALCULATED_BICARBONATE_RESERVE_REMAINS",
+  "summary": "Viollier publie trois plages directement artérielles vérifiées :pH7,35–7,45 ;PaCO2femme32–45/homme35–48mmHg ;PaO2 83–108mmHg. Il publie séparément un bicarbonate standard artériel21–29mmol/L, à ne pas assimiler au bicarbonate actuel/calculé. Des plages et une formule de trou anionique sérique/plasmatique sont disponibles, pas une validation du trou artériel ni d’un calcul mélangeant matrices.",
+  "coverage": {
+    "ph_arterial": {
+      "supported": true,
+      "source_id": "viollier_ph_arterial"
+    },
+    "paco2_arterial": {
+      "supported": true,
+      "source_id": "viollier_pco2_arterial",
+      "limitation": "sexospécifique"
+    },
+    "pao2_arterial": {
+      "supported": true,
+      "source_id": "viollier_po2_arterial",
+      "limitation": "conditionsFiO2/âge/altitude non indiquées"
+    },
+    "current_calculated_bicarbonate_arterial": {
+      "supported": false,
+      "reserve": "Le seul intervalle artériel trouvé concerne Standard-Bikarbonat ; bicarbonates enzymatiques sérum/plasma distincts."
+    },
+    "anion_gap_arterial_or_mixed_matrix_case": {
+      "supported": false,
+      "reserve": "Intervalles et formule publiés pour sérum/plasma ; pas équivalence démontrée avec artériel ou mélange matrices."
+    },
+    "serum_plasma_anion_gap_comparator_and_formula": {
+      "supported": true,
+      "source_id": "medics_aniongap_leaf",
+      "formula_as_printed": "Anionenlücke = [Natrium] - [Chlorid] - [Bicarbonat]",
+      "range": "8.0 - 16.0 mmol/L"
+    }
+  },
+  "primary_sources_actually_obtained_and_read": [
+    {
+      "source_id": "viollier_arterial",
+      "publisher": "Viollier AG, Suisse",
+      "title": "Arterielle Blutgasanalyse, profil14126",
+      "role": "contexte du profil artériel",
+      "url": "https://www.viollier.ch/de/analysis/14126",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-08T12:25:42.184873+00:00",
+      "cache_html": "/workspace/medina-env/a41-normes-arterielles/viollier_arterial.html",
+      "cache_text": "/workspace/medina-env/a41-normes-arterielles/viollier_arterial.txt",
+      "sha256": "671b6f710c520f54c53cf5f7b4e6c714f77f741c87704e18802a508cd2e95534",
+      "bytes": 160887,
+      "editorial_version_date": null,
+      "editorial_version_date_note": "Aucune date éditoriale ou version explicite identifiée dans le texte de fiche, ni dans datePublished/dateModified/Stand:/Version:. Date de consultation seulement ; en-tête HTTP et assets non utilisés pour inventer une version.",
+      "matrix_actually_stated": "Blut arteriell (Hinweis beachten)",
+      "exact_quotes_after_html_whitespace_normalization": [
+        "Arterielle Blutgasanalyse",
+        "Material Blut arteriell (Hinweis beachten) Kapillare, Li-Heparin",
+        "Blutgase: pH, pCO2, pO2, Bikarbonat inkl"
+      ],
+      "reference_values": null,
+      "limits": [
+        "Profil artériel explicite, mais ne donne pas à lui seul les intervalles ; les analyses individuelles sont nécessaires.",
+        "Kapillare est ici le récipient mentionné par la fiche ; ne pas transformer Blut arteriell en prélèvement capillaire."
+      ]
+    },
+    {
+      "source_id": "viollier_ph_arterial",
+      "publisher": "Viollier AG, Suisse",
+      "title": "pH arteriell, analyse14136",
+      "role": "plage artérielle directement vérifiée",
+      "url": "https://www.viollier.ch/de/analysis/14136",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-08T12:26:22.354632+00:00",
+      "cache_html": "/workspace/medina-env/a41-normes-arterielles/viollier_ph_arterial.html",
+      "cache_text": "/workspace/medina-env/a41-normes-arterielles/viollier_ph_arterial.txt",
+      "sha256": "b4eb09c25ace67b313c926d53f28effce9f879e0149bca03c555a33bd3b38719",
+      "bytes": 149660,
+      "editorial_version_date": null,
+      "editorial_version_date_note": "Aucune date éditoriale ou version explicite identifiée dans le texte de fiche, ni dans datePublished/dateModified/Stand:/Version:. Date de consultation seulement ; en-tête HTTP et assets non utilisés pour inventer une version.",
+      "matrix_actually_stated": "Blut arteriell (Hinweis beachten)",
+      "exact_quotes_after_html_whitespace_normalization": [
+        "pH arteriell",
+        "Material Blut arteriell (Hinweis beachten) Kapillare, Li-Heparin",
+        "Referenzwerte Wert Sex 7.35 - 7.45 f+m"
+      ],
+      "reference_values": [
+        {
+          "range_as_printed": "7.35 - 7.45",
+          "unit_as_printed": null,
+          "sex_as_printed": "f+m",
+          "age_as_printed": null
+        }
+      ],
+      "limits": [
+        "Sans unité imprimée dans la colonne de référence ; pH sans unité.",
+        "Température de mesure, âge, altitude et conditions physiologiques non détaillés dans la fiche."
+      ]
+    },
+    {
+      "source_id": "viollier_pco2_arterial",
+      "publisher": "Viollier AG, Suisse",
+      "title": "pCO2 arteriell, analyse14146",
+      "role": "plages artérielles sexospécifiques directement vérifiées",
+      "url": "https://www.viollier.ch/de/analysis/14146",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-08T12:26:22.355330+00:00",
+      "cache_html": "/workspace/medina-env/a41-normes-arterielles/viollier_pco2_arterial.html",
+      "cache_text": "/workspace/medina-env/a41-normes-arterielles/viollier_pco2_arterial.txt",
+      "sha256": "fede6726648fdae2b6b2b8cdcc22c20d3867a51e802a2380e750634edfc48b43",
+      "bytes": 150811,
+      "editorial_version_date": null,
+      "editorial_version_date_note": "Aucune date éditoriale ou version explicite identifiée dans le texte de fiche, ni dans datePublished/dateModified/Stand:/Version:. Date de consultation seulement ; en-tête HTTP et assets non utilisés pour inventer une version.",
+      "matrix_actually_stated": "Blut arteriell (Hinweis beachten)",
+      "exact_quotes_after_html_whitespace_normalization": [
+        "pCO2 arteriell",
+        "Material Blut arteriell (Hinweis beachten) Kapillare, Li-Heparin",
+        "Referenzwerte Wert Alter Sex 32.0 - 45.0 mmHg >= 0 Y f 35.0 - 48.0 mmHg >= 0 Y m"
+      ],
+      "reference_values": [
+        {
+          "range_as_printed": "32.0 - 45.0",
+          "unit_as_printed": "mmHg",
+          "sex_as_printed": "f",
+          "age_as_printed": ">= 0 Y"
+        },
+        {
+          "range_as_printed": "35.0 - 48.0",
+          "unit_as_printed": "mmHg",
+          "sex_as_printed": "m",
+          "age_as_printed": ">= 0 Y"
+        }
+      ],
+      "limits": [
+        "Deux plages selon le sexe : aucune plage universelle35–45mmHg ne peut être attribuée à cette fiche.",
+        "La fiche imprime âge>=0Y ; ne pas inventer une restriction éditoriale adulte."
+      ]
+    },
+    {
+      "source_id": "viollier_po2_arterial",
+      "publisher": "Viollier AG, Suisse",
+      "title": "pO2 arteriell, analyse14156",
+      "role": "plage artérielle directement vérifiée",
+      "url": "https://www.viollier.ch/de/analysis/14156",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-08T12:26:22.355810+00:00",
+      "cache_html": "/workspace/medina-env/a41-normes-arterielles/viollier_po2_arterial.html",
+      "cache_text": "/workspace/medina-env/a41-normes-arterielles/viollier_po2_arterial.txt",
+      "sha256": "c575c37110f162be2b1c5f60b277afd82cd6e22447f8bc49e6f2f8e3854ca609",
+      "bytes": 149668,
+      "editorial_version_date": null,
+      "editorial_version_date_note": "Aucune date éditoriale ou version explicite identifiée dans le texte de fiche, ni dans datePublished/dateModified/Stand:/Version:. Date de consultation seulement ; en-tête HTTP et assets non utilisés pour inventer une version.",
+      "matrix_actually_stated": "Blut arteriell (Hinweis beachten)",
+      "exact_quotes_after_html_whitespace_normalization": [
+        "pO2 arteriell",
+        "Material Blut arteriell (Hinweis beachten) Kapillare, Li-Heparin",
+        "Referenzwerte Wert Sex 83.0 - 108.0 mmHg f+m"
+      ],
+      "reference_values": [
+        {
+          "range_as_printed": "83.0 - 108.0",
+          "unit_as_printed": "mmHg",
+          "sex_as_printed": "f+m",
+          "age_as_printed": null
+        }
+      ],
+      "limits": [
+        "FiO2, altitude et âge non précisés dans l’intervalle consulté ; ne pas présenter83–108comme cible thérapeutique ou norme universelle indépendamment du contexte."
+      ]
+    },
+    {
+      "source_id": "viollier_standard_bicarb_arterial",
+      "publisher": "Viollier AG, Suisse",
+      "title": "Standard-Bikarbonat, analyse14157",
+      "role": "comparateur artériel standard, distinct du bicarbonate actuel/calculé demandé",
+      "url": "https://www.viollier.ch/de/analysis/14157",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-08T12:26:22.356290+00:00",
+      "cache_html": "/workspace/medina-env/a41-normes-arterielles/viollier_standard_bicarb_arterial.html",
+      "cache_text": "/workspace/medina-env/a41-normes-arterielles/viollier_standard_bicarb_arterial.txt",
+      "sha256": "ecca341ca71beb1c161b25ed480dd12dfb2126532c627f7f1d49fee439d295d0",
+      "bytes": 150333,
+      "editorial_version_date": null,
+      "editorial_version_date_note": "Aucune date éditoriale ou version explicite identifiée dans le texte de fiche, ni dans datePublished/dateModified/Stand:/Version:. Date de consultation seulement ; en-tête HTTP et assets non utilisés pour inventer une version.",
+      "matrix_actually_stated": "Blut arteriell (Hinweis beachten)",
+      "exact_quotes_after_html_whitespace_normalization": [
+        "Standard-Bikarbonat",
+        "Material Blut arteriell (Hinweis beachten) Kapillare, Li-Heparin",
+        "Referenzwerte Wert Sex 21.0 - 29.0 mmol/L f+m"
+      ],
+      "reference_values": [
+        {
+          "range_as_printed": "21.0 - 29.0",
+          "unit_as_printed": "mmol/L",
+          "sex_as_printed": "f+m",
+          "age_as_printed": null
+        }
+      ],
+      "limits": [
+        "Le titre est Standard-Bikarbonat. La fiche ne dit pas bicarbonate actuel, ne décrit pas le calcul à partir du pH/PaCO2 et ne démontre pas l’équivalence avec le résultat calculé du cas.",
+        "La méthode affichée est Ionenselektive Elektrode(ISE) ; cette seule étiquette ne permet pas de qualifier le bicarbonate actuel/calculé.",
+        "Ne pas remplacer une plage de bicarbonate actuel/calculé par21–29 au motif que la matrice est artérielle."
+      ]
+    },
+    {
+      "source_id": "viollier_aniongap",
+      "publisher": "Viollier AG, Suisse",
+      "title": "Anionenlücke, profil10260",
+      "role": "matrice du profil parent du trou anionique",
+      "url": "https://www.viollier.ch/de/analysis/10260",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-08T12:25:42.187364+00:00",
+      "cache_html": "/workspace/medina-env/a41-normes-arterielles/viollier_aniongap.html",
+      "cache_text": "/workspace/medina-env/a41-normes-arterielles/viollier_aniongap.txt",
+      "sha256": "82cc340b0fe3e915a18f2c77a83537f30ee35ca6262ddd7cac22f25680ab718e",
+      "bytes": 154471,
+      "editorial_version_date": null,
+      "editorial_version_date_note": "Aucune date éditoriale ou version explicite identifiée dans le texte de fiche, ni dans datePublished/dateModified/Stand:/Version:. Date de consultation seulement ; en-tête HTTP et assets non utilisés pour inventer une version.",
+      "matrix_actually_stated": "Serum zentrifugiert und ungeöffnet",
+      "exact_quotes_after_html_whitespace_normalization": [
+        "Material Serum zentrifugiert und ungeöffnet Serum-Gel-Tube, goldgelb (1)",
+        "Chlorid cl Serum",
+        "Natrium na Serum",
+        "Anionenlücke ani ani",
+        "Bicarbonat co2 Serum zentrifugiert und ungeöffnet"
+      ],
+      "reference_values": null,
+      "limits": [
+        "Matrice sérique du profil explicite ; pas matrice artérielle.",
+        "Composants énumérés, sans formule mathématique publiée dans ce profil."
+      ]
+    },
+    {
+      "source_id": "viollier_aniongap_result",
+      "publisher": "Viollier AG, Suisse",
+      "title": "Anionenlücke, résultat10245",
+      "role": "comparateur sérique par lien de profil, pas référence artérielle",
+      "url": "https://www.viollier.ch/de/analysis/10245",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-08T12:26:22.356778+00:00",
+      "cache_html": "/workspace/medina-env/a41-normes-arterielles/viollier_aniongap_result.html",
+      "cache_text": "/workspace/medina-env/a41-normes-arterielles/viollier_aniongap_result.txt",
+      "sha256": "f5ba07b27f82da7300ee953a536b7a1dee825e536365f14edb6263df8521c0ff",
+      "bytes": 145113,
+      "editorial_version_date": null,
+      "editorial_version_date_note": "Aucune date éditoriale ou version explicite identifiée dans le texte de fiche, ni dans datePublished/dateModified/Stand:/Version:. Date de consultation seulement ; en-tête HTTP et assets non utilisés pour inventer une version.",
+      "matrix_actually_stated": "Non imprimée sur10245 ; sérum explicite dans profil parent10260",
+      "exact_quotes_after_html_whitespace_normalization": [
+        "Anionenlücke",
+        "Referenzwerte Wert Sex 3 - 11 mmol/L f+m"
+      ],
+      "reference_values": [
+        {
+          "range_as_printed": "3 - 11",
+          "unit_as_printed": "mmol/L",
+          "sex_as_printed": "f+m",
+          "age_as_printed": null
+        }
+      ],
+      "limits": [
+        "La feuille résultat10245 ne précise pas sa matrice ; son profil parent10260 indique sérum.",
+        "Ni formule ni correction d’albumine ni conventionavec/sanspotassium publiées dans cette feuille ; ne pas inventer ces détails.",
+        "Ne pas appliquer automatiquement3–11 à un trou calculé en mélangeant sodium/chlorure sériques et bicarbonate de gazométrie."
+      ]
+    },
+    {
+      "source_id": "viollier_bicarbonate",
+      "publisher": "Viollier AG, Suisse",
+      "title": "Bicarbonat, analyse10236",
+      "role": "comparateur sérique dosé",
+      "url": "https://www.viollier.ch/de/analysis/10236",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-08T12:25:42.186863+00:00",
+      "cache_html": "/workspace/medina-env/a41-normes-arterielles/viollier_bicarbonate.html",
+      "cache_text": "/workspace/medina-env/a41-normes-arterielles/viollier_bicarbonate.txt",
+      "sha256": "b8fefb2fa77b86d313ac8094f874ff7108c9fd06d55a2c133a2a0bbb53abf120",
+      "bytes": 149100,
+      "editorial_version_date": null,
+      "editorial_version_date_note": "Aucune date éditoriale ou version explicite identifiée dans le texte de fiche, ni dans datePublished/dateModified/Stand:/Version:. Date de consultation seulement ; en-tête HTTP et assets non utilisés pour inventer une version.",
+      "matrix_actually_stated": "Serum zentrifugiert und ungeöffnet",
+      "exact_quotes_after_html_whitespace_normalization": [
+        "Material Serum zentrifugiert und ungeöffnet Serum-Gel-Tube, goldgelb (1)",
+        "Methode Enzymatisch",
+        "Referenzwerte Wert Sex 20.0 - 31.0 mmol/L f+m"
+      ],
+      "reference_values": [
+        {
+          "range_as_printed": "20.0 - 31.0",
+          "unit_as_printed": "mmol/L",
+          "sex_as_printed": "f+m",
+          "age_as_printed": null
+        }
+      ],
+      "limits": [
+        "Sérique et enzymatique ; pas gazométrie artérielle ni bicarbonate calculé à partir du pH/PaCO2."
+      ]
+    },
+    {
+      "source_id": "medics_blutgas_leaf",
+      "publisher": "Medics Labor AG, Bern, Suisse",
+      "title": "Blutgasanalyse, catalogue Medics",
+      "role": "limite d’accès à une gazométrie de ce labo",
+      "url": "https://www.medics.ch/analysenverzeichnis/blutgasanalyse",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-08T12:29:30.537460+00:00",
+      "cache_html": "/workspace/medina-env/a41-normes-arterielles/medics_blutgas_leaf.html",
+      "cache_text": "/workspace/medina-env/a41-normes-arterielles/medics_blutgas_leaf.txt",
+      "sha256": "a983e203c61f0ebf53ef0647758422ef949b6511d70a0e7d570b0a9b71e80388",
+      "bytes": 43641,
+      "editorial_version_date": null,
+      "editorial_version_date_note": "Aucune date éditoriale ou version explicite identifiée dans le texte de fiche, ni dans datePublished/dateModified/Stand:/Version:. Date de consultation seulement ; en-tête HTTP et assets non utilisés pour inventer une version.",
+      "matrix_actually_stated": null,
+      "exact_quotes_after_html_whitespace_normalization": [
+        "Aufgrund der geringen Stabilität ist eine Blutgasanalytik nicht möglich, diese muss in Spitäler vor Ort durchgeführt werden.",
+        "Analytik wird aufgrund der geringen Stabilität nicht angeboten"
+      ],
+      "reference_values": null,
+      "limits": [
+        "Aucune table de normes artérielles sur cette fiche ; elle précise que l’analyse doit se faire à l’hôpital sur place."
+      ]
+    },
+    {
+      "source_id": "medics_bicarbonate_leaf",
+      "publisher": "Medics Labor AG, Bern, Suisse",
+      "title": "Bicarbonat, codebic, Medics",
+      "role": "comparateur sérum/plasma dosé",
+      "url": "https://www.medics.ch/analysenverzeichnis/bic",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-08T12:29:30.538146+00:00",
+      "cache_html": "/workspace/medina-env/a41-normes-arterielles/medics_bicarbonate_leaf.html",
+      "cache_text": "/workspace/medina-env/a41-normes-arterielles/medics_bicarbonate_leaf.txt",
+      "sha256": "e8e59b613f1d46f4a00ffff7d7467746885eebd1a992a44b6fb0527b6c7f291a",
+      "bytes": 49679,
+      "editorial_version_date": null,
+      "editorial_version_date_note": "Aucune date éditoriale ou version explicite identifiée dans le texte de fiche, ni dans datePublished/dateModified/Stand:/Version:. Date de consultation seulement ; en-tête HTTP et assets non utilisés pour inventer une version.",
+      "matrix_actually_stated": "Serum (ungeöffnet) ; alternativeLi-Heparin-Plasma (ungeöffnet)",
+      "exact_quotes_after_html_whitespace_normalization": [
+        "Methode Enzymatische Methode (KC) Hersteller Roche Einheit mmol/L Referenzbereich 22.0 - 29.0 mmol/L",
+        "Material Serum (ungeöffnet) Alternativmaterial: Li-Heparin-Plasma (ungeöffnet)"
+      ],
+      "reference_values": [
+        {
+          "range_as_printed": "22.0 - 29.0",
+          "unit_as_printed": "mmol/L",
+          "sex_as_printed": null,
+          "age_as_printed": null
+        }
+      ],
+      "limits": [
+        "Enzymatique Roche, sérum/plasma non ouvert ; pas bicarbonate actuel/calculé d’une gazométrie artérielle."
+      ]
+    },
+    {
+      "source_id": "medics_aniongap_leaf",
+      "publisher": "Medics Labor AG, Bern, Suisse",
+      "title": "Anionenlücke, profilanionl, Medics",
+      "role": "formule et intervalle sérum/plasma directement vérifiés",
+      "url": "https://www.medics.ch/analysenverzeichnis/anionl",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-08T12:29:30.538608+00:00",
+      "cache_html": "/workspace/medina-env/a41-normes-arterielles/medics_aniongap_leaf.html",
+      "cache_text": "/workspace/medina-env/a41-normes-arterielles/medics_aniongap_leaf.txt",
+      "sha256": "5718cf9780325117193f7934f2c1f717b9db4ccdb01de6b1bf9c6be238dcfe66",
+      "bytes": 49477,
+      "editorial_version_date": null,
+      "editorial_version_date_note": "Aucune date éditoriale ou version explicite identifiée dans le texte de fiche, ni dans datePublished/dateModified/Stand:/Version:. Date de consultation seulement ; en-tête HTTP et assets non utilisés pour inventer une version.",
+      "matrix_actually_stated": "Serum (ungeöffnet) ; alternativeLi-Heparin-Plasma (ungeöffnet)",
+      "exact_quotes_after_html_whitespace_normalization": [
+        "Die Anionenlücke im Serum/Plasma bezeichnet die Differenz zwischen der Konzentration des wichtigsten Kations (Natrium) und der Summe der beiden häufigsten Anionen (Chlorid und Bicarbonat).",
+        "Anionenlücke = [Natrium] - [Chlorid] - [Bicarbonat]",
+        "Methode Berechnung Hersteller Roche Einheit mmol/L Referenzbereich 8.0 - 16.0 mmol/L",
+        "Material Serum (ungeöffnet) Alternativmaterial: Li-Heparin-Plasma (ungeöffnet)",
+        "Eine erniedrigte Anionenlücke kann bei Hypalbuminämie oder Hämodilution auftreten."
+      ],
+      "reference_values": [
+        {
+          "range_as_printed": "8.0 - 16.0",
+          "unit_as_printed": "mmol/L",
+          "sex_as_printed": null,
+          "age_as_printed": null
+        }
+      ],
+      "limits": [
+        "Formule sanspotassium explicite et intervalle8–16, mais cadre sérum/plasma seulement.",
+        "Ne démontre ni équivalence avec trou obtenu en mélangeant différentes matrices, ni référence artérielle.",
+        "Hypoalbuminémie/hémodilution mentionnées, sans formule de correction chiffrée dans cette fiche."
+      ]
+    }
+  ],
+  "access_scope": [
+    {
+      "institution": "Viollier",
+      "performed": "Catalogue complet statique, profil artériel, analysespH/PaCO2/PaO2/bicarbonate standard, profilveineux de contrôle et résultats/profil sériques bicarbonate/trou anionique.",
+      "result": "Trois plages artérielles réelles et comparateurs distincts. Aucun bicarbonate actuel/calculé ni date éditoriale obtenus."
+    },
+    {
+      "institution": "Medics",
+      "performed": "Catalogue,3recherches ciblées GET(Blutgas/Bicarbonat/Anionenlücke), puis3fiches atteintes par liens réels.",
+      "result": "Gazométrie non proposée ; bicarbonate et trou anionique sérum/plasma, formule sansK explicite."
+    },
+    {
+      "institution": "labor team",
+      "performed": "Catalogue HTML, lecture seule du JavaScript public pour reproduire l’API de recherche GET,2requêtes publiquesBlutgas/Bicarbonat. AucunJavaScript exécuté.",
+      "result": "Blutgas=count0 ;Bicarbonat=3hits de calcium contenant ce mot dans le contexte, aucune norme bicarbonate artérielle obtenue."
+    },
+    {
+      "institution": "Unilabs",
+      "performed": "Accueil et catalogueConfigurationPage publics.",
+      "result": "Page de configuration consultéeHTTP200, aucune fiche artérielle identifiée dans cette lecture HTML. Pas affirmation d’absence dans tout le catalogue."
+    },
+    {
+      "institution": "Risch",
+      "performed": "Accueil et RiBook public.",
+      "result": "Application monopage obtenueHTTP200 ; aucun tableau de normes rendu dans HTML. Catalogue dynamique non parcouru exhaustivement."
+    },
+    {
+      "institution": "Hirslanden",
+      "performed": "Accueil public.",
+      "result": "Aucune fiche de normes atteinte depuis cette lecture d’accueil ; pas affirmation d’absence institutionnelle."
+    }
+  ],
+  "clinical_primary_access_ledger": [
+    {
+      "label": "viollier_home",
+      "requested_url": "https://www.viollier.ch/",
+      "final_url": "https://www.viollier.ch/de",
+      "at_utc": "2026-10-08T12:24:52.520301+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/viollier_home.html",
+      "bytes": 368132,
+      "sha256": "822eebcf1b036b0680070b9c7f7aa634f4e7c8523ed3f653f042f25b95b313fc"
+    },
+    {
+      "label": "unilabs_home",
+      "requested_url": "https://www.unilabs.ch/",
+      "final_url": "https://unilabs.ch/fr",
+      "at_utc": "2026-10-08T12:24:52.521149+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/unilabs_home.html",
+      "bytes": 525119,
+      "sha256": "21bd6ae473d68d72fb737a2b98df6aeb47227b11c2d3ba89a38b34930fa5541c"
+    },
+    {
+      "label": "medics_home",
+      "requested_url": "https://www.medics.ch/",
+      "final_url": "https://www.medics.ch/",
+      "at_utc": "2026-10-08T12:24:52.521583+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/medics_home.html",
+      "bytes": 58235,
+      "sha256": "c29110308f3b0129b28a968569b11472977983e3957bd8167007ebf1bd8a12ae"
+    },
+    {
+      "label": "hirslanden_home",
+      "requested_url": "https://www.hirslanden.ch/",
+      "final_url": "https://www.hirslanden.ch/de/corporate/home.html",
+      "at_utc": "2026-10-08T12:24:52.522068+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/hirslanden_home.html",
+      "bytes": 89871,
+      "sha256": "650647c3801b47654402f6a34fd163a77d933e84bc19f875682890a480fd4f07"
+    },
+    {
+      "label": "risch_home",
+      "requested_url": "https://www.risch.ch/",
+      "final_url": "https://www.risch.ch/de",
+      "at_utc": "2026-10-08T12:24:52.522460+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/risch_home.html",
+      "bytes": 96985,
+      "sha256": "36565d94844e3f523c99f71394c9b0cb7021bdd2bdb0540fd18ca93ead3173e7"
+    },
+    {
+      "label": "team_home",
+      "requested_url": "https://www.laborteam.ch/",
+      "final_url": "https://www.laborteam.ch/",
+      "at_utc": "2026-10-08T12:24:52.522945+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/team_home.html",
+      "bytes": 321973,
+      "sha256": "c022eebfc4753281b26379c6a75b3ac86589c3e5bff9a31de93c623e894306f2"
+    },
+    {
+      "label": "viollier_catalog",
+      "requested_url": "https://www.viollier.ch/de/analysenverzeichnis",
+      "final_url": "https://www.viollier.ch/de/analysenverzeichnis",
+      "at_utc": "2026-10-08T12:25:14.865563+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/viollier_catalog.html",
+      "bytes": 1720246,
+      "sha256": "77158774f8a74ca2c3a2009fd91e8cb3e397966024e4ca31c933c3151e226ae7"
+    },
+    {
+      "label": "unilabs_catalog",
+      "requested_url": "https://catalogue.unilabs.ch/Pages/ConfigurationPage.aspx",
+      "final_url": "https://catalogue.unilabs.ch/Pages/ConfigurationPage.aspx",
+      "at_utc": "2026-10-08T12:25:14.866247+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/unilabs_catalog.html",
+      "bytes": 59643,
+      "sha256": "254499eb25d627e82c252c582f7e23530854a0ff571e0d5b8c0717168de6c4dc"
+    },
+    {
+      "label": "medics_catalog",
+      "requested_url": "https://www.medics.ch/loesungen/analysenverzeichnis",
+      "final_url": "https://www.medics.ch/loesungen/analysenverzeichnis",
+      "at_utc": "2026-10-08T12:25:14.866695+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/medics_catalog.html",
+      "bytes": 66372,
+      "sha256": "721faf92a1b7385ab6f60e0584e1bc96d5c93a86bdd34de526a37ce7a0ddff21"
+    },
+    {
+      "label": "risch_catalog",
+      "requested_url": "https://ribook.risch.ch/",
+      "final_url": "https://ribook.risch.ch/",
+      "at_utc": "2026-10-08T12:25:14.867187+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/risch_catalog.html",
+      "bytes": 4603,
+      "sha256": "68adc61ec6ac4c4c12ca5bf2123a63e48a4ee4ccb7bdf1c8965f70fefa799dde"
+    },
+    {
+      "label": "team_catalog",
+      "requested_url": "https://www.laborteam.ch/de/analysen/analysenverzeichnis",
+      "final_url": "https://www.laborteam.ch/de/analysen/analysenverzeichnis",
+      "at_utc": "2026-10-08T12:25:14.867574+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/team_catalog.html",
+      "bytes": 299536,
+      "sha256": "25e411bdfe7574d260e0c80faaf41e5760280716e0ed25d863faa33aec4a33ae"
+    },
+    {
+      "label": "viollier_arterial",
+      "requested_url": "https://www.viollier.ch/de/analysis/14126",
+      "final_url": "https://www.viollier.ch/de/analysis/14126",
+      "at_utc": "2026-10-08T12:25:42.184873+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/viollier_arterial.html",
+      "bytes": 160887,
+      "sha256": "671b6f710c520f54c53cf5f7b4e6c714f77f741c87704e18802a508cd2e95534"
+    },
+    {
+      "label": "viollier_venous_control",
+      "requested_url": "https://www.viollier.ch/de/analysis/14127",
+      "final_url": "https://www.viollier.ch/de/analysis/14127",
+      "at_utc": "2026-10-08T12:25:42.185785+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/viollier_venous_control.html",
+      "bytes": 160066,
+      "sha256": "d7d6ede629e8805e37ad986d98572e08b4aa934bcdbe84f6b19d54e7f51dd796"
+    },
+    {
+      "label": "viollier_bicarbonate",
+      "requested_url": "https://www.viollier.ch/de/analysis/10236",
+      "final_url": "https://www.viollier.ch/de/analysis/10236",
+      "at_utc": "2026-10-08T12:25:42.186863+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/viollier_bicarbonate.html",
+      "bytes": 149100,
+      "sha256": "b8fefb2fa77b86d313ac8094f874ff7108c9fd06d55a2c133a2a0bbb53abf120"
+    },
+    {
+      "label": "viollier_aniongap",
+      "requested_url": "https://www.viollier.ch/de/analysis/10260",
+      "final_url": "https://www.viollier.ch/de/analysis/10260",
+      "at_utc": "2026-10-08T12:25:42.187364+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/viollier_aniongap.html",
+      "bytes": 154471,
+      "sha256": "82cc340b0fe3e915a18f2c77a83537f30ee35ca6262ddd7cac22f25680ab718e"
+    },
+    {
+      "label": "viollier_ph_arterial",
+      "requested_url": "https://www.viollier.ch/de/analysis/14136",
+      "final_url": "https://www.viollier.ch/de/analysis/14136",
+      "at_utc": "2026-10-08T12:26:22.354632+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/viollier_ph_arterial.html",
+      "bytes": 149660,
+      "sha256": "b4eb09c25ace67b313c926d53f28effce9f879e0149bca03c555a33bd3b38719"
+    },
+    {
+      "label": "viollier_pco2_arterial",
+      "requested_url": "https://www.viollier.ch/de/analysis/14146",
+      "final_url": "https://www.viollier.ch/de/analysis/14146",
+      "at_utc": "2026-10-08T12:26:22.355330+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/viollier_pco2_arterial.html",
+      "bytes": 150811,
+      "sha256": "fede6726648fdae2b6b2b8cdcc22c20d3867a51e802a2380e750634edfc48b43"
+    },
+    {
+      "label": "viollier_po2_arterial",
+      "requested_url": "https://www.viollier.ch/de/analysis/14156",
+      "final_url": "https://www.viollier.ch/de/analysis/14156",
+      "at_utc": "2026-10-08T12:26:22.355810+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/viollier_po2_arterial.html",
+      "bytes": 149668,
+      "sha256": "c575c37110f162be2b1c5f60b277afd82cd6e22447f8bc49e6f2f8e3854ca609"
+    },
+    {
+      "label": "viollier_standard_bicarb_arterial",
+      "requested_url": "https://www.viollier.ch/de/analysis/14157",
+      "final_url": "https://www.viollier.ch/de/analysis/14157",
+      "at_utc": "2026-10-08T12:26:22.356290+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/viollier_standard_bicarb_arterial.html",
+      "bytes": 150333,
+      "sha256": "ecca341ca71beb1c161b25ed480dd12dfb2126532c627f7f1d49fee439d295d0"
+    },
+    {
+      "label": "viollier_aniongap_result",
+      "requested_url": "https://www.viollier.ch/de/analysis/10245",
+      "final_url": "https://www.viollier.ch/de/analysis/10245",
+      "at_utc": "2026-10-08T12:26:22.356778+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/viollier_aniongap_result.html",
+      "bytes": 145113,
+      "sha256": "f5ba07b27f82da7300ee953a536b7a1dee825e536365f14edb6263df8521c0ff"
+    },
+    {
+      "label": "medics_blutgas_search",
+      "requested_url": "https://www.medics.ch/loesungen/analysenverzeichnis?keys=Blutgas",
+      "final_url": "https://www.medics.ch/loesungen/analysenverzeichnis?keys=Blutgas",
+      "at_utc": "2026-10-08T12:27:47.876136+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/medics_blutgas_search.html",
+      "bytes": 54735,
+      "sha256": "66e08960eea9cd3b76b1e07380f68ad05f8fac3755c12132d2e92e65f8410121"
+    },
+    {
+      "label": "medics_bicarbonate_search",
+      "requested_url": "https://www.medics.ch/loesungen/analysenverzeichnis?keys=Bicarbonat",
+      "final_url": "https://www.medics.ch/loesungen/analysenverzeichnis?keys=Bicarbonat",
+      "at_utc": "2026-10-08T12:27:47.876981+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/medics_bicarbonate_search.html",
+      "bytes": 55263,
+      "sha256": "44bd270d7e45ebb2f592e999c0bb008330cafffa85b948651087a51e8f429bf7"
+    },
+    {
+      "label": "medics_aniongap_search",
+      "requested_url": "https://www.medics.ch/loesungen/analysenverzeichnis?keys=Anionenl%C3%BCcke",
+      "final_url": "https://www.medics.ch/loesungen/analysenverzeichnis?keys=Anionenl%C3%BCcke",
+      "at_utc": "2026-10-08T12:27:47.877496+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/medics_aniongap_search.html",
+      "bytes": 55432,
+      "sha256": "d39cc5bce0e2d54335b2b2618ec4e9ba83a691f8cd77b6e16433bf0bd992e331"
+    },
+    {
+      "label": "team_api_inspection",
+      "requested_url": "https://www.laborteam.ch/_Resources/Static/Packages/JvMTECH.Site/Scripts/Main.js?h=4c1c9e19",
+      "final_url": "https://www.laborteam.ch/_Resources/Static/Packages/JvMTECH.Site/Scripts/Main.js?h=4c1c9e19",
+      "at_utc": "2026-10-08T12:27:47.877955+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/team_api_inspection.html",
+      "bytes": 45,
+      "sha256": "3cade4177c32f5bb8fdae995c34603a050135a4983e7010735e49ac507d4a5d8"
+    },
+    {
+      "label": "medics_blutgas_leaf",
+      "requested_url": "https://www.medics.ch/analysenverzeichnis/blutgasanalyse",
+      "final_url": "https://www.medics.ch/analysenverzeichnis/blutgasanalyse",
+      "at_utc": "2026-10-08T12:29:30.537460+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/medics_blutgas_leaf.html",
+      "bytes": 43641,
+      "sha256": "a983e203c61f0ebf53ef0647758422ef949b6511d70a0e7d570b0a9b71e80388"
+    },
+    {
+      "label": "medics_bicarbonate_leaf",
+      "requested_url": "https://www.medics.ch/analysenverzeichnis/bic",
+      "final_url": "https://www.medics.ch/analysenverzeichnis/bic",
+      "at_utc": "2026-10-08T12:29:30.538146+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/medics_bicarbonate_leaf.html",
+      "bytes": 49679,
+      "sha256": "e8e59b613f1d46f4a00ffff7d7467746885eebd1a992a44b6fb0527b6c7f291a"
+    },
+    {
+      "label": "medics_aniongap_leaf",
+      "requested_url": "https://www.medics.ch/analysenverzeichnis/anionl",
+      "final_url": "https://www.medics.ch/analysenverzeichnis/anionl",
+      "at_utc": "2026-10-08T12:29:30.538608+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/medics_aniongap_leaf.html",
+      "bytes": 49477,
+      "sha256": "5718cf9780325117193f7934f2c1f717b9db4ccdb01de6b1bf9c6be238dcfe66"
+    },
+    {
+      "label": "team_api_read_code",
+      "requested_url": "https://www.laborteam.ch/_Resources/Static/Packages/JvMTECH.Base/Scripts/Main.js?h=162f6135",
+      "final_url": "https://www.laborteam.ch/_Resources/Static/Packages/JvMTECH.Base/Scripts/Main.js?h=162f6135",
+      "at_utc": "2026-10-08T12:29:30.539002+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/team_api_read_code.html",
+      "bytes": 453493,
+      "sha256": "99f6b9104b185f54c47383b8ca6562a395b06b43f66b24e10391ac6d67cfee4d"
+    },
+    {
+      "label": "team_blutgas_search",
+      "requested_url": "https://www.laborteam.ch/api/de/search-profile/?term=Blutgas&page=1&perPage=50&sortBy=name&sortDirection=asc",
+      "final_url": "https://www.laborteam.ch/api/de/search-profile/?term=Blutgas&page=1&perPage=50&sortBy=name&sortDirection=asc",
+      "at_utc": "2026-10-08T12:30:47.610170+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/team_blutgas_search.json",
+      "bytes": 21,
+      "sha256": "c2fcf0630e2c195d6894ed0b61537cad3ba33db72cec918761ddf3ae36dc93a5"
+    },
+    {
+      "label": "team_bicarbonate_search",
+      "requested_url": "https://www.laborteam.ch/api/de/search-profile/?term=Bicarbonat&page=1&perPage=50&sortBy=name&sortDirection=asc",
+      "final_url": "https://www.laborteam.ch/api/de/search-profile/?term=Bicarbonat&page=1&perPage=50&sortBy=name&sortDirection=asc",
+      "at_utc": "2026-10-08T12:30:47.610982+00:00",
+      "http_status": 200,
+      "cache": "/workspace/medina-env/a41-normes-arterielles/team_bicarbonate_search.json",
+      "bytes": 6806,
+      "sha256": "005edf3e08576eb6e20caafa91b43f9f72a35197a4f9e6797425ed39c684a470"
+    }
+  ],
+  "search_discovery_access": [
+    {
+      "query": "site:viollier.ch Blutgasanalyse arteriell Referenzwerte",
+      "url": "https://www.google.com/search?q=site%3Aviollier.ch%20Blutgasanalyse%20arteriell%20Referenzwerte",
+      "at_utc": "2026-10-08T12:24:07.632943+00:00",
+      "http_status": 200,
+      "error": null,
+      "bytes": 92114,
+      "sha256": "fdb2576843a3b494e7f5a4f39330d569f75d02d93043915b03068bd61c1ba1bb",
+      "use": "Discovery only; no snippet used as clinical proof. Google returned JavaScript challenge; Bing returned unrelated results."
+    },
+    {
+      "query": "site:unilabs.ch gazométrie artérielle pH",
+      "url": "https://www.google.com/search?q=site%3Aunilabs.ch%20gazom%C3%A9trie%20art%C3%A9rielle%20pH",
+      "at_utc": "2026-10-08T12:24:07.633640+00:00",
+      "http_status": 200,
+      "error": null,
+      "bytes": 92331,
+      "sha256": "bfec2acfe56d70c39c81b457acd4468b26d4b8343dddc3b9f64760282fed222f",
+      "use": "Discovery only; no snippet used as clinical proof. Google returned JavaScript challenge; Bing returned unrelated results."
+    },
+    {
+      "query": "site:hirslanden.ch Blutgasanalyse Referenzwerte",
+      "url": "https://www.google.com/search?q=site%3Ahirslanden.ch%20Blutgasanalyse%20Referenzwerte",
+      "at_utc": "2026-10-08T12:24:07.634168+00:00",
+      "http_status": 200,
+      "error": null,
+      "bytes": 92212,
+      "sha256": "f125b7e9a912daedb7ab007400f8d739ed4c23ff05fb9a3992286f327da8f605",
+      "use": "Discovery only; no snippet used as clinical proof. Google returned JavaScript challenge; Bing returned unrelated results."
+    },
+    {
+      "query": "site:medics.ch Blutgasanalyse arteriell",
+      "url": "https://www.google.com/search?q=site%3Amedics.ch%20Blutgasanalyse%20arteriell",
+      "at_utc": "2026-10-08T12:24:07.634791+00:00",
+      "http_status": 200,
+      "error": null,
+      "bytes": 92198,
+      "sha256": "5abddd9d4fbc266d67198901bc5e19904c47e17f722f3bb7a24ccea757226d98",
+      "use": "Discovery only; no snippet used as clinical proof. Google returned JavaScript challenge; Bing returned unrelated results."
+    },
+    {
+      "query": "site:viollier.ch Blutgasanalyse arteriell Referenzwerte",
+      "url": "https://www.bing.com/search?format=rss&q=site%3Aviollier.ch%20Blutgasanalyse%20arteriell%20Referenzwerte",
+      "at_utc": "2026-10-08T12:24:22.576473+00:00",
+      "http_status": 200,
+      "error": null,
+      "bytes": 5642,
+      "sha256": "3ae42d910211fa40ac885f088a055d405c28c62e298ce0c1ce5e1df39171df15",
+      "use": "Discovery only; no snippet used as clinical proof. Google returned JavaScript challenge; Bing returned unrelated results."
+    },
+    {
+      "query": "site:unilabs.ch gazométrie artérielle pH",
+      "url": "https://www.bing.com/search?format=rss&q=site%3Aunilabs.ch%20gazom%C3%A9trie%20art%C3%A9rielle%20pH",
+      "at_utc": "2026-10-08T12:24:22.577372+00:00",
+      "http_status": 200,
+      "error": null,
+      "bytes": 3725,
+      "sha256": "5f1c21eabb630abf8c18d8ac357d2c33a58602fdc8e0b643acf846f75088f590",
+      "use": "Discovery only; no snippet used as clinical proof. Google returned JavaScript challenge; Bing returned unrelated results."
+    },
+    {
+      "query": "site:hirslanden.ch Blutgasanalyse Referenzwerte",
+      "url": "https://www.bing.com/search?format=rss&q=site%3Ahirslanden.ch%20Blutgasanalyse%20Referenzwerte",
+      "at_utc": "2026-10-08T12:24:22.578109+00:00",
+      "http_status": 200,
+      "error": null,
+      "bytes": 5646,
+      "sha256": "e7dc6f19a848aa440f38b7e93c560075c98411f51f9b70d3b7fa2a014b6bd84c",
+      "use": "Discovery only; no snippet used as clinical proof. Google returned JavaScript challenge; Bing returned unrelated results."
+    },
+    {
+      "query": "site:medics.ch Blutgasanalyse arteriell",
+      "url": "https://www.bing.com/search?format=rss&q=site%3Amedics.ch%20Blutgasanalyse%20arteriell",
+      "at_utc": "2026-10-08T12:24:22.578617+00:00",
+      "http_status": 200,
+      "error": null,
+      "bytes": 4607,
+      "sha256": "16d1723d159f2709fd7e037d77ab4abb959afa1c40d994b2f0ecf0684a1c45d7",
+      "use": "Discovery only; no snippet used as clinical proof. Google returned JavaScript challenge; Bing returned unrelated results."
+    }
+  ],
+  "publication_date_policy": "Date de consultation08.10.2026 et captureSHA explicites. Aucune date de version/publication attribuée par déduction depuiscopyright, URLasset, Last-Modified ou en-têteHTTP.",
+  "proposals_for_source_owner": [
+    "Utiliser les trois fiches artérielles de Viollier avec unités, sexes et citation datée de consultation ; ne pas transformer32–45/35–48en35–45universel.",
+    "Si utile à l’explication, présenter bicarbonate standard artériel et comparateurs sériques dans des lignes distinctes nommées ; conserver réserve du bicarbonate actuel/calculé.",
+    "La formule sansK et l’intervalle8–16deMedics sont une source primaire suisse de trou sérique/plasmatique, pas une justification d’assimilation de matrices.",
+    "GarderESP03explicitement partielle tant que la plage du bicarbonate actuel/calculé artériel et la convention/matrice du trou du cas ne sont pas réellement sourcées."
+  ],
+  "no_change_to_candidate_sources": true,
+  "no_git_mutation": true,
+  "source_coverage_claim": "Périmètre borné ; aucune conclusion d’inexistence d’un manuel suisse public en dehors des pages consultées. Aucune valeur étrangère présentée comme suisse."
+}

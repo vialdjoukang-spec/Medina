@@ -1,0 +1,1358 @@
+{
+  "schema_version": 1,
+  "chapter": "A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)",
+  "author": "/root/test_allocation",
+  "role": "Auteur Pathologie2",
+  "written_at_utc": "2026-10-08T12:21:38.434054+00:00",
+  "proposal_status": "PROPOSED_NOT_CLAUDE_CROSS_REVIEW_CLOSED",
+  "base_commit": "db06b1fae3c27e93050850df44c3eb23fcd60164",
+  "audited_base": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
+  "owned_files": {
+    "A41_b.html": {
+      "relative_path": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_b.html",
+      "before_sha256": "e8934903adb6be13d606bb06928342489e97b34d5214899ee8a5da397060d16f",
+      "after_sha256": "b3955084555b603f56f905cdaf54407f1c06603bde38dc80930776e5860c1ace",
+      "before_bytes": 87707,
+      "after_bytes": 94798,
+      "data-k_preserved": true,
+      "data-k_count": 32,
+      "data-pop_preserved": true,
+      "data-pop_count": 0,
+      "id_preserved": true,
+      "id_count": 6,
+      "data-ok_preserved": true,
+      "data-ok_count": 6,
+      "previous_frozen_sha256": "f984a8a7d5ec710460aa248823ae633f77e4f6a8876884982ccb53d6429f4c48",
+      "latest_author_delta_at_utc": "2026-10-08T13:03:16.582077+00:00"
+    },
+    "A41_pop_pa.html": {
+      "relative_path": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_pop_pa.html",
+      "before_sha256": "06d04dd469584b9e5d94233c01da7d40524d668c438626d81c95d3c2df3aac35",
+      "after_sha256": "f383ad214398215420af0474e35d53478a6688bbfea14721ff3c8c9bba1e560d",
+      "before_bytes": 58354,
+      "after_bytes": 74108,
+      "data-k_preserved": true,
+      "data-k_count": 2,
+      "data-pop_preserved": true,
+      "data-pop_count": 32,
+      "id_preserved": true,
+      "id_count": 0,
+      "data-ok_preserved": true,
+      "data-ok_count": 0,
+      "templates_changed": [
+        "a41-news2",
+        "a41-bacteriemie",
+        "a41-postsepsis",
+        "a41-pam",
+        "a41-cortico",
+        "a41-fasciite",
+        "a41-refractaire",
+        "a41-sdra",
+        "a41-remplissage",
+        "a41-oxygene",
+        "a41-mesures",
+        "a41-vaccins"
+      ],
+      "templates_unchanged_count": 20,
+      "previous_frozen_sha256": "6e80bc70610be83c8e17927fec8b9b885ca59867e5336da0c85b1b5e6116623f",
+      "latest_author_delta_at_utc": "2026-10-08T13:12:27.732912+00:00"
+    }
+  },
+  "scope": {
+    "canonical_sources": "read_only",
+    "registry": "read_only",
+    "glossary_and_justification_bank": "read_only; proposals sent to root",
+    "git_mutations": 0,
+    "subagents_spawned": 0
+  },
+  "counts": {
+    "pathologie2_observations": 16,
+    "major_proposed": 2,
+    "minor_proposed": 10,
+    "editorial_proposed": 4,
+    "pathologie1_popup_components_proposed": 7,
+    "claude_cross_review_closed": 0
+  },
+  "observations": [
+    {
+      "observation_id": "audit_pathologie_2-01",
+      "severity": "majeure",
+      "original_repere": "a41-12, premier paragraphe « Définition Sepsis-3, 2016 »",
+      "correction": "La définition causale Sepsis-3 est rétablie en a41-12 ; SOFA≥2 est distingué comme critère opérationnel. La légende de figure 2 est alignée.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "status": "proposed_in_owned_sources",
+      "external_dependency": null
+    },
+    {
+      "observation_id": "audit_pathologie_2-02",
+      "severity": "majeure",
+      "original_repere": "a41-9, § 9.3 « Restaurer la perfusion : le remplissage » ; fenêtre a41-remplissage, rubrique « Choix du soluté »",
+      "correction": "Le corps explique les raisons générales ; a41-remplissage détaille mécanisme du chlorure, SMART/BaSICS/PLUS, 6S, SAFE/ALBIOS et leurs limites. Grades 2026 vérifiés sur SCCM.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "status": "proposed_in_owned_sources",
+      "external_dependency": null
+    },
+    {
+      "observation_id": "audit_pathologie_2-03",
+      "severity": "mineure",
+      "original_repere": "a41-7, § 7.2 « Le dépistage à l’hôpital », deuxième paragraphe",
+      "correction": "NEWS/NEWS2/MEWS et SIRS sont présentés comme alternatives, sans hiérarchie entre eux.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "status": "proposed_in_owned_sources",
+      "external_dependency": null
+    },
+    {
+      "observation_id": "audit_pathologie_2-04",
+      "severity": "mineure",
+      "original_repere": "a41-8, § 8.1, tableau des signes imposant une action immédiate, ligne « Purpura qui s’étend »",
+      "correction": "Purpura : antibiotique immédiat ; hémocultures possibles seulement sans retard ; aucun autre examen préalable.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "status": "proposed_in_owned_sources",
+      "external_dependency": null
+    },
+    {
+      "observation_id": "audit_pathologie_2-05",
+      "severity": "mineure",
+      "original_repere": "a41-8, § 8.1 ligne « Hypotension persistante » et commentaire ; § 8.5 ; § 11.8, ligne « 40 minutes »",
+      "correction": "Seuil de pression lié à l’âge et hypoperfusion distincts. Mme R. reçoit la noradrénaline pour marbrures/recoloration4s/confusion, pas pour la seule pression60.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "status": "proposed_in_owned_sources",
+      "external_dependency": null
+    },
+    {
+      "observation_id": "audit_pathologie_2-06",
+      "severity": "mineure",
+      "original_repere": "a41-9, § 9.8, tableau de surveillance, ligne « Glycémie »",
+      "correction": "Surveillance glycémique : cible usuelle8–10mmol/L après insuline (SSC2021), seuil initial10 conservé (SSC2026), prévention de l’hypoglycémie. Popup mesures aligné.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "status": "proposed_in_owned_sources",
+      "external_dependency": null
+    },
+    {
+      "observation_id": "audit_pathologie_2-07",
+      "severity": "mineure",
+      "original_repere": "a41-12, paragraphe « Paramètres décisionnels »",
+      "correction": "Le résumé du choc réfractaire comprend absence de réponse au remplissage, hypoperfusion persistante et équivalent noradrénaline base>0,5.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "status": "proposed_in_owned_sources",
+      "external_dependency": null
+    },
+    {
+      "observation_id": "audit_pathologie_2-08",
+      "severity": "mineure",
+      "original_repere": "a41-8 § 8.2 ; a41-9 § 9.6 ; a41-12 ; fenêtres a41-refractaire, a41-norad, a41-vaso, a41-hydro",
+      "correction": "§9.4 précise noradrénaline base ; seuils et consensus sont alignés dans b/pop_pa. Les fenêtres norad/vaso/hydro de pop2 appartiennent à Claude_spec.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "status": "proposed_in_owned_sources",
+      "external_dependency": {
+        "owner": "claude_spec",
+        "files": [
+          "A41_pop2.html"
+        ],
+        "templates": [
+          "a41-norad",
+          "a41-vaso",
+          "a41-hydro"
+        ],
+        "required": "Précision base/sel et cohérence des seuils, confirmation à réunir avec son rapport."
+      }
+    },
+    {
+      "observation_id": "audit_pathologie_2-09",
+      "severity": "mineure",
+      "original_repere": "a41-11, paragraphe « Retour au cas clinique »",
+      "correction": "Antibiothérapie empirique séparée du traitement documenté : foyer/écologie/risque puis antibiogramme.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "status": "proposed_in_owned_sources",
+      "external_dependency": null
+    },
+    {
+      "observation_id": "audit_pathologie_2-10",
+      "severity": "mineure",
+      "original_repere": "a41-10, § 10.3, premier paragraphe",
+      "correction": "Chao2014 : cohorte taïwanaise31 070survivants appariés ; association, cas les plus graves, pas preuve causale générale.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "status": "proposed_in_owned_sources",
+      "external_dependency": null
+    },
+    {
+      "observation_id": "audit_pathologie_2-11",
+      "severity": "mineure",
+      "original_repere": "a41-10, § 10.4 ; fenêtre a41-vaccins, rubrique « Pneumocoque »",
+      "correction": "CAPITA : PCV13,84 496adultes≥65ans, premiers épisodes per protocole à sérotypes vaccinaux ; absence d’effet démontré toutes causes, sans extrapolation aux autres valences.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "status": "proposed_in_owned_sources",
+      "external_dependency": null
+    },
+    {
+      "observation_id": "audit_pathologie_2-12",
+      "severity": "mineure",
+      "original_repere": "a41-9, § 9.4 et § 9.3",
+      "correction": "SOAPII explique le risque d’arythmies sous dopamine. ProCESS/ARISE/ProMISe expliquent l’abandon du protocole fixe sans prétendre tester directement tous les tests dynamiques ni le volume30mL/kg.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "status": "proposed_in_owned_sources",
+      "external_dependency": null
+    },
+    {
+      "observation_id": "audit_pathologie_2-13",
+      "severity": "redactionnelle",
+      "original_repere": "a41-12, phrase d’annonce",
+      "correction": "Introduction a41-12 reformulée directement autour du problème médical ; accord fautif retiré.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "status": "proposed_in_owned_sources",
+      "external_dependency": null
+    },
+    {
+      "observation_id": "audit_pathologie_2-14",
+      "severity": "redactionnelle",
+      "original_repere": "Fin du fichier, liens de navigation",
+      "correction": "Navigation : Section précédente / Section suivante.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "status": "proposed_in_owned_sources",
+      "external_dependency": null
+    },
+    {
+      "observation_id": "audit_pathologie_2-15",
+      "severity": "redactionnelle",
+      "original_repere": "a41-10, § 10.1, deuxième paragraphe",
+      "correction": "Phase aiguë explicitée avant l’élimination active, y compris vasopresseurs encore élevés ; retrait seulement une fois cette phase terminée.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "status": "proposed_in_owned_sources",
+      "external_dependency": null
+    },
+    {
+      "observation_id": "audit_pathologie_2-16",
+      "severity": "redactionnelle",
+      "original_repere": "a41-9, § 9.7, tableau du soutien des organes",
+      "correction": "Ventilation non invasive et héparine de bas poids moléculaire développées dans le tableau ; oxygène popup aligné.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "status": "proposed_in_owned_sources",
+      "external_dependency": null
+    }
+  ],
+  "pathologie1_dependencies": [
+    {
+      "observation_id": "audit_pathologie_1-06",
+      "file": "A41_pop_pa.html",
+      "template": "a41-news2",
+      "correction": "Introduction du barème centrée sur le niveau d’alerte ; a41-sofa reste à sentinelle_medicale.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "scope": "Owned popup component only; other files remain with their authors."
+    },
+    {
+      "observation_id": "audit_pathologie_1-09",
+      "file": "A41_pop_pa.html",
+      "template": "a41-postsepsis",
+      "correction": "Mortalité Swiss2025 cumulative proche30%, incluant22,3%hospitaliers ; corps et Pareto sont hors de ces deux fichiers.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "scope": "Owned popup component only; other files remain with their authors."
+    },
+    {
+      "observation_id": "audit_pathologie_1-10",
+      "file": "A41_pop_pa.html",
+      "template": "a41-pam",
+      "correction": "Pression systémique de remplissage liée au volume contraint/tonus veineux ; primaire Hamzaoui2010 et limites observationnelles.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "scope": "Owned popup component only; other files remain with their authors."
+    },
+    {
+      "observation_id": "audit_pathologie_1-22",
+      "file": "A41_pop_pa.html",
+      "template": "a41-cortico",
+      "correction": "Aldostérone préservée ; hyperkaliémie non attendue sous insuffisance induite, sans fausse réassurance.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "scope": "Owned popup component only; other files remain with their authors."
+    },
+    {
+      "observation_id": "audit_pathologie_1-23",
+      "file": "A41_pop_pa.html",
+      "template": "a41-pam",
+      "correction": "SEPSISPAM : sous-groupe hypertendu, pas gain de mortalité, risque de fibrillation atriale.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "scope": "Owned popup component only; other files remain with their authors."
+    },
+    {
+      "observation_id": "audit_pathologie_1-24",
+      "file": "A41_pop_pa.html",
+      "template": "a41-bacteriemie",
+      "correction": "BALANCE : non-infériorité7/14jours et population sélectionnée, exclusions explicites.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "scope": "Owned popup component only; other files remain with their authors."
+    },
+    {
+      "observation_id": "audit_pathologie_1-25",
+      "file": "A41_pop_pa.html",
+      "template": "a41-fasciite",
+      "correction": "Chirurgie immédiate ; six heures n’est pas une cible d’attente pour une infection nécrosante.",
+      "correction_proposed": true,
+      "cross_review_closed": false,
+      "scope": "Owned popup component only; other files remain with their authors."
+    }
+  ],
+  "primary_sources_read": [
+    {
+      "source_id": "PMID29485925",
+      "title": "Balanced Crystalloids versus Saline in Critically Ill Adults.",
+      "authors": "Semler MW, Self WH, Wanderer JP, Ehrenfeld JM, Wang L, Byrne DW, Stollings JL, Kumar AB, Hughes CG, Hernandez A, Guillamondegui OD, May AK, Weavind L, Casey JD, Siew ED, Shaw AD, Bernard GR, Rice TW, SMART Investigators and the Pragmatic Critical Care Research Group.",
+      "publication_date": "2018-02-27",
+      "primary_url": "https://pubmed.ncbi.nlm.nih.gov/29485925/",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A29485925+AND+SRC%3AMED&format=json&resultType=core",
+      "retrieved_at_utc": "2026-10-08T11:29:07.000968+00:00",
+      "status": 200,
+      "cache": "/workspace/medina-env/a41-pathologie2/29485925.json",
+      "sha256": "24111619d24327266801b5b90dae104fb1b236e26eef378bb5f476517d974133",
+      "read_level": "primary_abstract",
+      "read_scope": "Résumé : SMART, plan en grappes, critère composite rénal, résultats et mortalité distincte.",
+      "passage_locator": "JSON resultList.result : source=MED, id=29485925, champ abstractText"
+    },
+    {
+      "source_id": "PMID34375394",
+      "title": "Effect of Intravenous Fluid Treatment With a Balanced Solution vs 0.9% Saline Solution on Mortality in Critically Ill Patients: The BaSICS Randomized Clinical Trial.",
+      "authors": "Zampieri FG, Machado FR, Biondi RS, Freitas FGR, Veiga VC, Figueiredo RC, Lovato WJ, Amêndola CP, Serpa-Neto A, Paranhos JLR, Guedes MAV, Lúcio EA, Oliveira-Júnior LC, Lisboa TC, Lacerda FH, Maia IS, Grion CMC, Assunção MSC, Manoel ALO, Silva-Junior JM, Duarte P, Soares RM, Miranda TA, de Lima LM, Gurgel RM, Paisani DM, Corrêa TD, Azevedo LCP, Kellum JA, Damiani LP, Brandão da Silva N, Cavalcanti AB, BaSICS investigators and the BRICNet members.",
+      "publication_date": "2021-08-10",
+      "primary_url": "https://pubmed.ncbi.nlm.nih.gov/34375394/",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A34375394+AND+SRC%3AMED&format=json&resultType=core",
+      "retrieved_at_utc": "2026-10-08T11:29:07.002171+00:00",
+      "status": 200,
+      "cache": "/workspace/medina-env/a41-pathologie2/34375394.json",
+      "sha256": "8e84b80b4e65037144178ae2d215939e3c35f53448d341b0a1bb7083dca30f11",
+      "read_level": "primary_abstract",
+      "read_scope": "Résumé : BaSICS, randomisés/analysés, admissions chirurgicales, mortalité à 90 jours.",
+      "passage_locator": "JSON resultList.result : source=MED, id=34375394, champ abstractText"
+    },
+    {
+      "source_id": "PMID35041780",
+      "title": "Balanced Multielectrolyte Solution versus Saline in Critically Ill Adults.",
+      "authors": "Finfer S, Micallef S, Hammond N, Navarra L, Bellomo R, Billot L, Delaney A, Gallagher M, Gattas D, Li Q, Mackle D, Mysore J, Saxena M, Taylor C, Young P, Myburgh J, PLUS Study Investigators and the Australian New Zealand Intensive Care Society Clinical Trials Group.",
+      "publication_date": "2022-01-18",
+      "primary_url": "https://pubmed.ncbi.nlm.nih.gov/35041780/",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A35041780+AND+SRC%3AMED&format=json&resultType=core",
+      "retrieved_at_utc": "2026-10-08T11:29:07.001783+00:00",
+      "status": 200,
+      "cache": "/workspace/medina-env/a41-pathologie2/35041780.json",
+      "sha256": "95ae9ce95747c405694a16d33e6dbe2fe1b3b0ec26e15e1f29088abbbccb393d",
+      "read_level": "primary_abstract",
+      "read_scope": "Résumé : PLUS, mortalité et épuration, absence de différence démontrée.",
+      "passage_locator": "JSON resultList.result : source=MED, id=35041780, champ abstractText"
+    },
+    {
+      "source_id": "PMID22738085",
+      "title": "Hydroxyethyl starch 130/0.42 versus Ringer's acetate in severe sepsis.",
+      "authors": "Perner A, Haase N, Guttormsen AB, Tenhunen J, Klemenzson G, Åneman A, Madsen KR, Møller MH, Elkjær JM, Poulsen LM, Bendtsen A, Winding R, Steensen M, Berezowicz P, Søe-Jensen P, Bestle M, Strand K, Wiis J, White JO, Thornberg KJ, Quist L, Nielsen J, Andersen LH, Holst LB, Thormar K, Kjældgaard AL, Fabritius ML, Mondrup F, Pott FC, Møller TP, Winkel P, Wetterslev J, 6S Trial Group, Scandinavian Critical Care Trials Group.",
+      "publication_date": "2012-06-27",
+      "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22738085/",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A22738085+AND+SRC%3AMED&format=json&resultType=core",
+      "retrieved_at_utc": "2026-10-08T11:30:30.247421+00:00",
+      "status": 200,
+      "cache": "/workspace/medina-env/a41-pathologie2/22738085.json",
+      "sha256": "f8e5066716a93b2438dc84687c356005fba4e16e7602e2bad814c9e28d117381",
+      "read_level": "primary_abstract",
+      "read_scope": "Résumé : 6S, mortalité et épuration ; 798 patients analysés.",
+      "passage_locator": "JSON resultList.result : source=MED, id=22738085, champ abstractText"
+    },
+    {
+      "source_id": "PMID15163774",
+      "title": "A comparison of albumin and saline for fluid resuscitation in the intensive care unit.",
+      "authors": "Finfer S, Bellomo R, Boyce N, French J, Myburgh J, Norton R, SAFE Study Investigators.",
+      "publication_date": "2004-05-01",
+      "primary_url": "https://pubmed.ncbi.nlm.nih.gov/15163774/",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A15163774+AND+SRC%3AMED&format=json&resultType=core",
+      "retrieved_at_utc": "2026-10-08T11:30:30.711782+00:00",
+      "status": 200,
+      "cache": "/workspace/medina-env/a41-pathologie2/15163774.json",
+      "sha256": "0feab56834269401113bbd99394b2bd3b05a3cc1ac31df439f37a69a152007e6",
+      "read_level": "primary_abstract",
+      "read_scope": "Résumé : SAFE, population hétérogène et mortalité à 28 jours.",
+      "passage_locator": "JSON resultList.result : source=MED, id=15163774, champ abstractText"
+    },
+    {
+      "source_id": "PMID24635772",
+      "title": "Albumin replacement in patients with severe sepsis or septic shock.",
+      "authors": "Caironi P, Tognoni G, Masson S, Fumagalli R, Pesenti A, Romero M, Fanizza C, Caspani L, Faenza S, Grasselli G, Iapichino G, Antonelli M, Parrini V, Fiore G, Latini R, Gattinoni L, ALBIOS Study Investigators.",
+      "publication_date": "2014-03-18",
+      "primary_url": "https://pubmed.ncbi.nlm.nih.gov/24635772/",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A24635772+AND+SRC%3AMED&format=json&resultType=core",
+      "retrieved_at_utc": "2026-10-08T11:29:07.007216+00:00",
+      "status": 200,
+      "cache": "/workspace/medina-env/a41-pathologie2/24635772.json",
+      "sha256": "a03718c38bf384597f944edd623b6312bd37dcba0685b9849f421fc8947e275a",
+      "read_level": "primary_abstract",
+      "read_scope": "Résumé : ALBIOS, pression/bilan hydrique, absence de gain de survie à 28/90 jours.",
+      "passage_locator": "JSON resultList.result : source=MED, id=24635772, champ abstractText"
+    },
+    {
+      "source_id": "PMID20200382",
+      "title": "Comparison of dopamine and norepinephrine in the treatment of shock.",
+      "authors": "De Backer D, Biston P, Devriendt J, Madl C, Chochrad D, Aldecoa C, Brasseur A, Defrance P, Gottignies P, Vincent JL, SOAP II Investigators.",
+      "publication_date": "2010-03-01",
+      "primary_url": "https://pubmed.ncbi.nlm.nih.gov/20200382/",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A20200382+AND+SRC%3AMED&format=json&resultType=core",
+      "retrieved_at_utc": "2026-10-08T11:29:07.011409+00:00",
+      "status": 200,
+      "cache": "/workspace/medina-env/a41-pathologie2/20200382.json",
+      "sha256": "5683cfc45f8ce788d1bf03f3658eaefe176806981354079124a696e85239ce6a",
+      "read_level": "primary_abstract",
+      "read_scope": "Résumé : SOAP II, arythmies et mortalité, population de chocs non exclusivement septiques.",
+      "passage_locator": "JSON resultList.result : source=MED, id=20200382, champ abstractText"
+    },
+    {
+      "source_id": "PMID24635773",
+      "title": "A randomized trial of protocol-based care for early septic shock.",
+      "authors": "ProCESS Investigators, Yealy DM, Kellum JA, Huang DT, Barnato AE, Weissfeld LA, Pike F, Terndrup T, Wang HE, Hou PC, LoVecchio F, Filbin MR, Shapiro NI, Angus DC.",
+      "publication_date": "2014-03-18",
+      "primary_url": "https://pubmed.ncbi.nlm.nih.gov/24635773/",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A24635773+AND+SRC%3AMED&format=json&resultType=core",
+      "retrieved_at_utc": "2026-10-08T11:29:07.992141+00:00",
+      "status": 200,
+      "cache": "/workspace/medina-env/a41-pathologie2/24635773.json",
+      "sha256": "f1ecb5981e95d07bbaa9bedc8e3c16b76e0c15dadce7803e5b3730212fa55f0e",
+      "read_level": "primary_abstract",
+      "read_scope": "Résumé : ProCESS, protocole/cibles centrales, absence de bénéfice.",
+      "passage_locator": "JSON resultList.result : source=MED, id=24635773, champ abstractText"
+    },
+    {
+      "source_id": "PMID25272316",
+      "title": "Goal-directed resuscitation for patients with early septic shock.",
+      "authors": "ARISE Investigators, ANZICS Clinical Trials Group, Peake SL, Delaney A, Bailey M, Bellomo R, Cameron PA, Cooper DJ, Higgins AM, Holdgate A, Howe BD, Webb SA, Williams P.",
+      "publication_date": "2014-10-01",
+      "primary_url": "https://pubmed.ncbi.nlm.nih.gov/25272316/",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A25272316+AND+SRC%3AMED&format=json&resultType=core",
+      "retrieved_at_utc": "2026-10-08T11:29:08.124730+00:00",
+      "status": 200,
+      "cache": "/workspace/medina-env/a41-pathologie2/25272316.json",
+      "sha256": "d641daa4f573dfd43d4259d55e318554551d616e0f811cea66bbc952a0574190",
+      "read_level": "primary_abstract",
+      "read_scope": "Résumé : ARISE, protocole/cibles centrales, absence de bénéfice.",
+      "passage_locator": "JSON resultList.result : source=MED, id=25272316, champ abstractText"
+    },
+    {
+      "source_id": "PMID25776532",
+      "title": "Trial of early, goal-directed resuscitation for septic shock.",
+      "authors": "Mouncey PR, Osborn TM, Power GS, Harrison DA, Sadique MZ, Grieve RD, Jahan R, Harvey SE, Bell D, Bion JF, Coats TJ, Singer M, Young JD, Rowan KM, ProMISe Trial Investigators.",
+      "publication_date": "2015-03-17",
+      "primary_url": "https://pubmed.ncbi.nlm.nih.gov/25776532/",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A25776532+AND+SRC%3AMED&format=json&resultType=core",
+      "retrieved_at_utc": "2026-10-08T11:29:08.277996+00:00",
+      "status": 200,
+      "cache": "/workspace/medina-env/a41-pathologie2/25776532.json",
+      "sha256": "878055b7eb4ef708d3613eb1ce83721f389652d46b06fc255213e80fe7bea712",
+      "read_level": "primary_abstract",
+      "read_scope": "Résumé : ProMISe, protocole/cibles centrales, absence de bénéfice.",
+      "passage_locator": "JSON resultList.result : source=MED, id=25776532, champ abstractText"
+    },
+    {
+      "source_id": "PMID25210792",
+      "title": "Association of postdischarge rehabilitation with mortality in intensive care unit survivors of sepsis.",
+      "authors": "Chao PW, Shih CJ, Lee YJ, Tseng CM, Kuo SC, Shih YN, Chou KT, Tarng DC, Li SY, Ou SM, Chen YT.",
+      "publication_date": "2014-11-01",
+      "primary_url": "https://pubmed.ncbi.nlm.nih.gov/25210792/",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A25210792+AND+SRC%3AMED&format=json&resultType=core",
+      "retrieved_at_utc": "2026-10-08T11:29:08.315599+00:00",
+      "status": 200,
+      "cache": "/workspace/medina-env/a41-pathologie2/25210792.json",
+      "sha256": "2aa486ea81298e18bff9ac5034d7a3f06244a1e25f52d5fe6060f4987007f1fd",
+      "read_level": "primary_abstract",
+      "read_scope": "Résumé : Chao, appariement par score de propension et bénéfice associé aux cas graves seulement.",
+      "passage_locator": "JSON resultList.result : source=MED, id=25210792, champ abstractText"
+    },
+    {
+      "source_id": "PMID25785969",
+      "title": "Polysaccharide conjugate vaccine against pneumococcal pneumonia in adults.",
+      "authors": "Bonten MJ, Huijts SM, Bolkenbaas M, Webber C, Patterson S, Gault S, van Werkhoven CH, van Deursen AM, Sanders EA, Verheij TJ, Patton M, McDonough A, Moradoghli-Haftvani A, Smith H, Mellelieu T, Pride MW, Crowther G, Schmoele-Thoma B, Scott DA, Jansen KU, Lobatto R, Oosterman B, Visser N, Caspers E, Smorenburg A, Emini EA, Gruber WC, Grobbee DE.",
+      "publication_date": "2015-03-01",
+      "primary_url": "https://pubmed.ncbi.nlm.nih.gov/25785969/",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A25785969+AND+SRC%3AMED&format=json&resultType=core",
+      "retrieved_at_utc": "2026-10-08T11:29:08.392901+00:00",
+      "status": 200,
+      "cache": "/workspace/medina-env/a41-pathologie2/25785969.json",
+      "sha256": "5655645664bcd494d8c67a57c98dbe5e09fcc6f60e48cd12220d34eac32057f3",
+      "read_level": "primary_abstract",
+      "read_scope": "Résumé : CAPITA, PCV13, premiers épisodes per protocole, sérotypes vaccinaux et pneumonies toutes causes.",
+      "passage_locator": "JSON resultList.result : source=MED, id=25785969, champ abstractText"
+    },
+    {
+      "source_id": "PMID24635770",
+      "title": "High versus low blood-pressure target in patients with septic shock.",
+      "authors": "Asfar P, Meziani F, Hamel JF, Grelon F, Megarbane B, Anguel N, Mira JP, Dequin PF, Gergaud S, Weiss N, Legay F, Le Tulzo Y, Conrad M, Robert R, Gonzalez F, Guitton C, Tamion F, Tonnelier JM, Guezennec P, Van Der Linden T, Vieillard-Baron A, Mariotte E, Pradel G, Lesieur O, Ricard JD, Hervé F, du Cheyron D, Guerin C, Mercat A, Teboul JL, Radermacher P, SEPSISPAM Investigators.",
+      "publication_date": "2014-03-18",
+      "primary_url": "https://pubmed.ncbi.nlm.nih.gov/24635770/",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A24635770+AND+SRC%3AMED&format=json&resultType=core",
+      "retrieved_at_utc": "2026-10-08T11:29:08.500409+00:00",
+      "status": 200,
+      "cache": "/workspace/medina-env/a41-pathologie2/24635770.json",
+      "sha256": "0a94f4986d0be8fea14c91d89d8353fd163c16d0510bd5734b6acab0fc410bf3",
+      "read_level": "primary_abstract",
+      "read_scope": "Résumé : SEPSISPAM, sous-groupe hypertendu, absence de gain de mortalité et fibrillation atriale.",
+      "passage_locator": "JSON resultList.result : source=MED, id=24635770, champ abstractText"
+    },
+    {
+      "source_id": "PMID39565030",
+      "title": "Antibiotic Treatment for 7 versus 14 Days in Patients with Bloodstream Infections.",
+      "authors": "BALANCE Investigators, for the Canadian Critical Care Trials Group, the Association of Medical Microbiology and Infectious Disease Canada Clinical Research Network, the Australian and New Zealand Intensive Care Society Clinical Trials Group, and the Australasian Society for Infectious Diseases Clinical Research Network, Daneman N, Rishu A, Pinto R, Rogers BA, Shehabi Y, Parke R, Cook D, Arabi Y, Muscedere J, Reynolds S, Hall R, Dwivedi DB, McArthur C, McGuinness S, Yahav D, Coburn B, Geagea A, Das P, Shin P, Detsky M, Morris A, Fralick M, Powis JE, Kandel C, Sligl W, Bagshaw SM, Singhal N, Belley-Cote E, Whitlock R, Khwaja K, Morpeth S, Kazemi A, Williams A, MacFadden DR, McIntyre L, Tsang J, Lamontagne F, Carignan A, Marshall J, Friedrich JO, Cirone R, Downing M, Graham C, Davis J, Duan E, Neary J, Evans G, Alraddadi B, Al Johani S, Martin C, Elsayed S, Ball I, Lauzier F, Turgeon A, Stelfox HT, Conly J, McDonald EG, Lee TC, Sullivan R, Grant J, Kagan I, Young P, Lawrence C, O'Callaghan K, Eustace M, Choong K, Aslanian P, Buehner U, Havey T, Binnie A, Prazak J, Reeve B, Litton E, Lother S, Kumar A, Zarychanski R, Hoffman T, Paterson D, Daley P, Commons RJ, Charbonney E, Naud JF, Roberts S, Tiruvoipati R, Gupta S, Wood G, Shum O, Miyakis S, Dodek P, Kwok C, Fowler RA, The BALANCE Investigators, for the Canadian Critical Care Trials Group, the Association of Medical Microbiology and Infectious Disease Canada Clinical Research Network, the Australian and New Zealand Intensive Care Society Clinical Trials Group, and the Australasian Society for Infectious Diseases Clinical Research Network\n.",
+      "publication_date": "2024-11-20",
+      "primary_url": "https://pubmed.ncbi.nlm.nih.gov/39565030/",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A39565030+AND+SRC%3AMED&format=json&resultType=core",
+      "retrieved_at_utc": "2026-10-08T11:29:08.518025+00:00",
+      "status": 200,
+      "cache": "/workspace/medina-env/a41-pathologie2/39565030.json",
+      "sha256": "011cf691ae81ae8d3760b47186f86f9f3b34ebc717a3d336fe5f6838b870a6a4",
+      "read_level": "primary_abstract",
+      "read_scope": "Résumé : BALANCE, non-infériorité 7/14 jours et exclusions.",
+      "passage_locator": "JSON resultList.result : source=MED, id=39565030, champ abstractText"
+    },
+    {
+      "source_id": "PMID41874620",
+      "title": "Clinical criteria for the definition of refractory septic shock: a joint Delphi consensus from the Society of Critical Care Medicine (SCCM) and European Society of Intensive Care Medicine (ESICM).",
+      "authors": "Leone M, Myatra SN, Dugar S, Wieruszewski PM, Russell L, Evans L, Delamarre L, Sharif S, Chew MS, Gong MN, Hernández G, Schorr C, Lakbar I, Smith SE, Martin-Loeches I, Annane D, Balik M, Cecconi M, De Backer D, Donadello K, Dünser MW, Einav S, Ferrer R, Juffermans N, Hamzaoui O, Landoni G, Levy B, McKenzie C, Monnet X, Ostermann M, Spies C, Singer M, Theodorakopulou M, Topeli A, Barreto E, Bauer SR, Busse LW, Coopersmith CM, Deutschman C, Holder AL, Kamaleswaran R, Legrand M, Martin GS, Maves RC, Nazer L, Nunnally ME, Prescott HC, Rincon T, Sacha GL, Seymour CW, Arabi YM, Besen BAMP, Cavalcanti AB, Deane AM, Finfer S, Hammond N, Ibarra-Estrada M, Kattan E, Kotani Y, Machado FR, Ospina-Tascón GA, Mer M, Young PJ, Rochwerg B, Khanna AK.",
+      "publication_date": "2026-03-24",
+      "primary_url": "https://pubmed.ncbi.nlm.nih.gov/41874620/",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41874620+AND+SRC%3AMED&format=json&resultType=core",
+      "retrieved_at_utc": "2026-10-08T11:29:08.534067+00:00",
+      "status": 200,
+      "cache": "/workspace/medina-env/a41-pathologie2/41874620.json",
+      "sha256": "78ff22db3a347a5a8784fa236c2a29dbec43b294ca07fc2aa59ec621b5349501",
+      "read_level": "primary_abstract",
+      "read_scope": "Résumé : consensus Delphi 2026, absence de réponse au remplissage et équivalent noradrénaline base.",
+      "passage_locator": "JSON resultList.result : source=MED, id=41874620, champ abstractText"
+    },
+    {
+      "source_id": "PMID22580944",
+      "title": "A randomized, controlled, double-blind crossover study on the effects of 2-L infusions of 0.9% saline and plasma-lyte® 148 on renal blood flow velocity and renal cortical tissue perfusion in healthy volunteers.",
+      "authors": "Chowdhury AH, Cox EF, Francis ST, Lobo DN.",
+      "publication_date": "2012-07-01",
+      "primary_url": "https://pubmed.ncbi.nlm.nih.gov/22580944/",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A22580944+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+      "retrieved_at_utc": "2026-10-08T11:32:51.414676+00:00",
+      "status": 200,
+      "cache": "/workspace/medina-env/a41-pathologie2/22580944.json",
+      "sha256": "013a17a82a8e646f4fd33231dfe35b00ac1a52986d77133489420331ab30eda2",
+      "read_level": "primary_abstract",
+      "read_scope": "Résumé : Chowdhury, 12 volontaires sains, perfusion rénale ; pas de critère de survie.",
+      "passage_locator": "JSON resultList.result : source=MED, id=22580944, champ abstractText"
+    },
+    {
+      "source_id": "PMID6826732",
+      "title": "Regulation of renal blood flow by plasma chloride.",
+      "authors": "Wilcox CS.",
+      "publication_date": "1983-03-01",
+      "primary_url": "https://pubmed.ncbi.nlm.nih.gov/6826732/",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Regulation+of+renal+blood+flow+by+plasma+chloride%22&format=json&resultType=core&pageSize=5",
+      "retrieved_at_utc": "2026-10-08T11:32:52.210229+00:00",
+      "status": 200,
+      "cache": "/workspace/medina-env/a41-pathologie2/chloride-wilcox.json",
+      "sha256": "7fe035cc3310d49c705310217b912094716c588cf17963949b938508dd380bd3",
+      "read_level": "primary_abstract",
+      "read_scope": "Résumé : Wilcox, expérience rénale et relation chlorure/vasoconstriction/filtration ; mécanisme expérimental.",
+      "passage_locator": "JSON resultList.result : source=MED, id=6826732, champ abstractText"
+    },
+    {
+      "source_id": "PMID11393388",
+      "title": "Hydroxyethyl starch-induced renal insufficiency after plasma exchange in a patient with polymyositis and liver cirrhosis.",
+      "authors": "Peron S, Mouthon L, Guettier C, Brechignac S, Cohen P, Guillevin L.",
+      "publication_date": "2001-05-01",
+      "primary_url": "https://pubmed.ncbi.nlm.nih.gov/11393388/",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A11393388+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+      "retrieved_at_utc": "2026-10-08T11:32:52.671872+00:00",
+      "status": 200,
+      "cache": "/workspace/medina-env/a41-pathologie2/hes-biopsy.json",
+      "sha256": "fa664e7c48a5f015c22df6b15efc26b90315c7069c8811b6366803f5e9e8dc98",
+      "read_level": "primary_abstract",
+      "read_scope": "Résumé : Peron, biopsie et ciclosporine concomitante ; cas confondu, pas preuve isolée de causalité.",
+      "passage_locator": "JSON resultList.result : source=MED, id=11393388, champ abstractText"
+    },
+    {
+      "source_id": "PMC8486643",
+      "title": "Evans et coll., Surviving Sepsis Campaign 2021",
+      "primary_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8486643/fullTextXML",
+      "retrieved_at_utc": "2026-10-08T11:29:08.681355+00:00",
+      "status": 200,
+      "cache": "/workspace/medina-env/a41-pathologie2/PMC8486643.xml",
+      "sha256": "d2be2ebc4667315e15db145476d6a3f6ece077ea0c738f858b134633b78065f6",
+      "read_level": "targeted_sections_full_text",
+      "read_scope": "Texte intégral : Fluid management et son Rationale, Glucose control/Remark/Rationale, Mean arterial pressure.",
+      "passage_locator": "XML article/body/sec : titres et paragraphes nommés dans read_scope"
+    },
+    {
+      "source_id": "PMC11180513",
+      "title": "Beuschlein et coll., ESE/Endocrine Society 2024",
+      "primary_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11180513/",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11180513/fullTextXML",
+      "retrieved_at_utc": "2026-10-08T11:29:09.102198+00:00",
+      "status": 200,
+      "cache": "/workspace/medina-env/a41-pathologie2/PMC11180513.xml",
+      "sha256": "448be798a014648974d38939ae22b8fd8576acc9f81fec754b079352c77c2163",
+      "read_level": "targeted_sections_full_text",
+      "read_scope": "Texte intégral : R3.1, Table 8, crise surrénalienne et fonction minéralocorticoïde préservée.",
+      "passage_locator": "XML article/body/sec : titres et paragraphes nommés dans read_scope"
+    },
+    {
+      "source_id": "PMC2945123",
+      "title": "Hamzaoui et coll., 2010",
+      "primary_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2945123/",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2945123/fullTextXML",
+      "retrieved_at_utc": "2026-10-08T11:38:42.867455+00:00",
+      "status": 200,
+      "cache": "/workspace/medina-env/a41-pathologie2/PMC2945123.xml",
+      "sha256": "0eafb5ffbaced218088d1343e0b6b23a78277c45f0e809b39bb495d253e2e4cf",
+      "read_level": "targeted_sections_full_text",
+      "read_scope": "Texte intégral : Introduction, Discussion, limitations ; capacitance veineuse, précharge et absence de preuve de survie.",
+      "passage_locator": "XML article/body/sec : titres et paragraphes nommés dans read_scope"
+    },
+    {
+      "source_id": "PMC4968574",
+      "title": "Singer et coll., Sepsis-3, 2016",
+      "primary_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4968574/",
+      "status": 200,
+      "status_provenance": "Capture HTTP200 fournie par sentinelle_medicale ; définition/Box 3 relues ici. Endpoint EuropePMC fullTextXML essayé ici : HTTP500.",
+      "cache": "/tmp/a41-p1-sepsis3.html",
+      "text_cache": "/tmp/a41-p1-sepsis3.txt",
+      "sha256": "edb8cbcc8a47a01733aa9ba6acf7300bb2d77092b6c0a3999f38e98672adaa64",
+      "read_level": "targeted_sections_full_text",
+      "read_scope": "Definition of Sepsis, Box 3, critères SOFA/choc/qSOFA.",
+      "passage_locator": "Texte : Definition of Sepsis puis Box 3. New Terms and Definitions."
+    },
+    {
+      "source_id": "SCCM_SSC2026",
+      "title": "Prescott, Antonelli et coll., Surviving Sepsis Campaign 2026 : page officielle des énoncés",
+      "publication_date": "2026-03-23",
+      "primary_url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-08T11:27:34.132479+00:00",
+      "cache": "/tmp/a41-pharma-sources/ssc2026.raw",
+      "text_cache": "/tmp/a41-pharma-sources/ssc2026.txt",
+      "sha256": "6266900db8ffb882bff477792023b20f24ece8387bbff854062b5b8b2788bcd1",
+      "read_level": "official_statements_certainty_and_remarks",
+      "read_scope": "Screening, Blood culture, MAP, Fluid type, Dynamic measures, Vasopressors, Insulin therapy, Active fluid removal. Les rationales de l’article intégral 2026 ne sont pas revendiquées.",
+      "passage_locator": "Énoncés 10–14,43–49,53 et traitements associés ; cartes centrales /workspace/medina-env/reprise-a41/sources/ssc2026.cards.json."
+    },
+    {
+      "source_id": "SWISSMEDIC67023",
+      "title": "Noradrenalin Sintetica, information professionnelle suisse",
+      "primary_url": "https://www.swissmedicinfo.ch/ShowText.aspx?textType=FI&lang=FR&authNr=67023",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-08T11:27:34.131034+00:00",
+      "cache": "/tmp/a41-pharma-sources/norad_swiss.raw",
+      "sha256": "c03f2bd39e1a7255954163f6aecf7f642aa425920d863f15eea2fa589d57d94f",
+      "read_level": "composition_and_titration_tables",
+      "read_scope": "Noradrenalinum (ut Noradrenalini tartras), tableaux de titration explicitement noradrénaline base ; aucun rapport numérique sel/base ajouté.",
+      "passage_locator": "Composition, Posologie et tableaux libellés noradrénaline base ; attention glyphes Symbol de μ."
+    },
+    {
+      "source_id": "SWISS_SEPSIS2025",
+      "title": "Swiss Sepsis Report 2025, version 25.1",
+      "cache": "/tmp/a41-p1-swissreport.pdf",
+      "text_cache": "/tmp/a41-p1-swissreport.txt",
+      "status": 200,
+      "status_provenance": "Capture officielle HTTP200 obtenue par sentinelle_medicale ; passages du texte relus ici.",
+      "sha256": "1b1c2bb4d149dcdb7fbae83705641854a0bcab2495c10e90739dc65bc77f8afc",
+      "read_level": "targeted_report_sections",
+      "read_scope": "Pages 6–7 : décès hospitaliers ≥65 ans ; section 3.3.5/figure 4 page14 : mortalité cumulative.",
+      "passage_locator": "IN-HOSPITAL MORTALITY / Older adults ≥65 years ; Mortality rates are cumulative."
+    },
+    {
+      "source_id": "SSC2026_PUBLISHER_CORRECTION",
+      "title": "Publisher Correction: Surviving Sepsis Campaign: international guidelines for management of sepsis and septic shock2026",
+      "publication_date": "2026-05-05",
+      "primary_url": "https://doi.org/10.1007/s00134-026-08410-9",
+      "status": 200,
+      "status_provenance": "Capture primaire HTTP200 obtenue par sentinelle_technique ; paragraphe correctif relu ici.",
+      "read_at_utc": "2026-10-08T11:59:58.037545+00:00",
+      "cache": "/workspace/medina-env/reprise-a41/sources/ssc2026_publisher_correction.html",
+      "text_cache": "/workspace/medina-env/reprise-a41/sources/ssc2026_publisher_correction.txt",
+      "sha256": "a1f34b5e0f2143c190622c5cc8f1026c0c7a04c9ab9c2b36e9319d6a9b33c64e",
+      "read_level": "full_correction_body",
+      "read_scope": "Quatre noms recevaient un c terminal ajouté à la composition. Aucun changement clinique ni de gradation décrit ; aucun lien établi avec128/129énoncés."
+    }
+  ],
+  "exact_primary_passages": [
+    {
+      "source_id": "PMC4968574",
+      "quote": "Sepsis is defined as life-threatening organ dysfunction caused by a dysregulated host response to infection.",
+      "cache": "/tmp/a41-p1-sepsis3.txt",
+      "locator": "Definition of Sepsis / Box3"
+    },
+    {
+      "source_id": "PMC8486643",
+      "quote": "potential adverse effects that include hyperchloremic metabolic acidosis, renal vasoconstriction",
+      "cache": "/workspace/medina-env/a41-pathologie2/PMC8486643.xml",
+      "locator": "p beginning Fluid therapy is a key part of the resuscitation…"
+    },
+    {
+      "source_id": "PMC8486643",
+      "quote": "Following initiation of an insulin therapy, a typical target blood glucose range is 144–180 mg/dL (8–10 mmol/L)",
+      "cache": "/workspace/medina-env/a41-pathologie2/PMC8486643.xml",
+      "locator": "Glucose control : Remark ; XML espace insécable à normaliser pour recherche"
+    },
+    {
+      "source_id": "PMC11180513",
+      "quote": "mineralocorticoid function is expected to be preserved in glucocorticoid-induced adrenal insufficiency",
+      "cache": "/workspace/medina-env/a41-pathologie2/PMC11180513.xml",
+      "locator": "p beginning Secretion of the mineralocorticoid aldosterone…"
+    },
+    {
+      "source_id": "PMC2945123",
+      "quote": "increase in cardiac preload secondary to the α-agonist-mediated decrease in systemic venous capacitance",
+      "cache": "/workspace/medina-env/a41-pathologie2/PMC2945123.xml",
+      "locator": "Introduction, p beginning International recommendations have placed…"
+    },
+    {
+      "source_id": "PMID41874620",
+      "quote": "are fluid unresponsive, require a norepinephrine base equivalent dose greater than 0.5",
+      "cache": "/workspace/medina-env/a41-pathologie2/41874620.json",
+      "locator": "abstractText Conclusions"
+    },
+    {
+      "source_id": "SWISS_SEPSIS2025",
+      "quote": "Mortality rates are cumulative, meaning that the numbers at 30, 180, and 360 days represent the total deaths up to that point in time.",
+      "cache": "/tmp/a41-p1-swissreport.txt",
+      "locator": "Figure4 page14"
+    },
+    {
+      "source_id": "PMC8486643",
+      "passage": "The largest trial of a volume- and pressure-limited strategy showed 9% absolute decrease in mortality in ARDS patients ventilated with tidal volumes of 6 mL/kg compared with 12 mL/ kg predicted body weight (PBW), and aiming for plateau pressure ≤ 30 cm H2O [424].",
+      "locator": "Mechanical ventilation, rationale, paragraph Several meta-analyses…"
+    },
+    {
+      "source_id": "PMC11180513",
+      "passage": "If the patient is already taking hydrocortisone ≥200 mg daily, prednisone ≥50 mg daily, or dexamethasone ≥6-8 mg daily, there is typically no need to increase the dose",
+      "locator": "Table8 Moderate and major stress, first remark."
+    }
+  ],
+  "justification_proposals_for_root": [
+    {
+      "id": "a41-j-solutes",
+      "title": "Pourquoi préférer un cristalloïde équilibré sans promettre un gain de survie ?",
+      "match": [
+        {
+          "file": "A41_b.html",
+          "anchor": "a41-9",
+          "text": "Le chlorure de sodium à 0,9 % expose à l’acidose hyperchlorémique et à une baisse de perfusion rénale.",
+          "occurrences_in_anchor": 1,
+          "outside_button": true,
+          "contains_markup": false
+        }
+      ],
+      "explanation": [
+        "La perfusion dépend du volume et du tonus vasculaire. Une solution riche en chlorure peut ajouter une acidose hyperchlorémique."
+      ],
+      "mechanism": [
+        "Wilcox décrit une vasoconstriction rénale corrélée au chlorure dans une expérience rénale.",
+        "Chowdhury observe une baisse de perfusion corticale après2LdeNaCl0,9% chez12hommes sains.",
+        "SMART trouve un effet modeste sur un critère rénal composite ; BaSICS et PLUS ne démontrent pas de gain de mortalité."
+      ],
+      "implication": "Un cristalloïde équilibré est suggéré par SSC2026 ; type, volume et tolérance restent individualisés.",
+      "limits": [
+        "Étude physiologique de petite taille, sans sepsis ni survie.",
+        "SMART : un centre, randomisation en grappes, critère composite ; populations/critères diffèrent entre essais.",
+        "BaSICS/PLUS négatifs sur mortalité ne prouvent pas une équivalence absolue ; éviter extrapolation aux traumatismes crâniens."
+      ],
+      "sources": [
+        {
+          "title": "SSC2021, Fluid management",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/",
+          "verified_source_id": "PMC8486643",
+          "passage_locator": "XML p commençant Fluid therapy is a key part… puis normal saline…"
+        },
+        {
+          "title": "Wilcox1983",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6826732/",
+          "verified_source_id": "PMID6826732",
+          "passage_locator": "chloride-wilcox.json : abstractText, conclusion hyperchloremia produces…"
+        },
+        {
+          "title": "Chowdhury2012",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22580944/",
+          "verified_source_id": "PMID22580944",
+          "passage_locator": "22580944.json : abstractText Methods/Results/Conclusions"
+        },
+        {
+          "title": "SMART2018",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29485925/",
+          "verified_source_id": "PMID29485925",
+          "passage_locator": "29485925.json : abstractText Results,14.3%vs15.4%"
+        },
+        {
+          "title": "BaSICS2021",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34375394/",
+          "verified_source_id": "PMID34375394",
+          "passage_locator": "34375394.json : abstractText Results,26.4%vs27.2%"
+        },
+        {
+          "title": "PLUS2022",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35041780/",
+          "verified_source_id": "PMID35041780",
+          "passage_locator": "35041780.json : abstractText Results,21.8%vs22.0%"
+        }
+      ],
+      "authoring_status": "Proposal for root, bank not edited here"
+    },
+    {
+      "id": "a41-j-vasopresseur-arythmies",
+      "title": "Pourquoi la dopamine est-elle moins sûre que la noradrénaline ?",
+      "match": [
+        {
+          "file": "A41_b.html",
+          "anchor": "a41-9",
+          "text": "Dans SOAP II (2010 ; 1 679 patients en choc), les arythmies étaient plus fréquentes sous dopamine : 24,1 % contre 12,4 %.",
+          "occurrences_in_anchor": 1,
+          "outside_button": true,
+          "contains_markup": false
+        }
+      ],
+      "explanation": [
+        "La restauration de pression ne suffit pas à rendre deux vasopresseurs également sûrs."
+      ],
+      "mechanism": [
+        "SOAPII compare dopamine et noradrénaline dans une population de chocs.",
+        "Les événements rythmiques sont plus nombreux sous dopamine."
+      ],
+      "implication": "La noradrénaline est préférée notamment pour limiter les arythmies ; elle reste titrée sur pression et perfusion.",
+      "limits": [
+        "Pas de différence significative de mortalité globale à28jours ; population non exclusivement septique."
+      ],
+      "sources": [
+        {
+          "title": "DeBacker2010, SOAPII",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20200382/",
+          "verified_source_id": "PMID20200382",
+          "passage_locator": "20200382.json : abstractText Results,207events24.1%vs102events12.4%"
+        },
+        {
+          "title": "SSC2026, Vasopressors",
+          "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+          "verified_source_id": "SCCM_SSC2026",
+          "passage_locator": "ssc2026.cards.json : carte53"
+        }
+      ],
+      "authoring_status": "Proposal for root, bank not edited here"
+    },
+    {
+      "id": "a41-j-perfusion-dynamique",
+      "title": "Pourquoi abandonner un protocole obligatoire de cibles centrales ?",
+      "match": [
+        {
+          "file": "A41_b.html",
+          "anchor": "a41-9",
+          "text": "Les essais ProCESS (2014), ARISE (2014) et ProMISe (2015) n’ont pas montré de gain de survie avec l’ancienne réanimation protocolisée.",
+          "occurrences_in_anchor": 1,
+          "outside_button": true,
+          "contains_markup": false
+        }
+      ],
+      "explanation": [
+        "Un protocole fixe de pression veineuse et de saturation centrale ne teste pas à lui seul la réponse à un nouvel apport."
+      ],
+      "mechanism": [
+        "Trois essais multicentriques comparent le protocole ancien aux soins usuels sans gain de survie.",
+        "La SSC2026 suggère séparément des mesures dynamiques pour vérifier une augmentation possible du débit."
+      ],
+      "implication": "Le médecin réévalue chaque bolus et évite de poursuivre un apport sans réponse ou avec intolérance pulmonaire.",
+      "limits": [
+        "Les essais du protocole ne comparent pas directement chaque test dynamique.",
+        "Ils n’établissent pas un volume initial universel30mL/kg ; le grade2026 de ce volume est conditionnel/faible, lu sur la page officielle."
+      ],
+      "sources": [
+        {
+          "title": "ProCESS2014",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24635773/",
+          "verified_source_id": "PMID24635773",
+          "passage_locator": "24635773.json : abstractText Methods/Results/Conclusions"
+        },
+        {
+          "title": "ARISE2014",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25272316/",
+          "verified_source_id": "PMID25272316",
+          "passage_locator": "25272316.json : abstractText Methods/Conclusions"
+        },
+        {
+          "title": "ProMISe2015",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25776532/",
+          "verified_source_id": "PMID25776532",
+          "passage_locator": "25776532.json : abstractText Results/Conclusions"
+        },
+        {
+          "title": "SSC2026, Resuscitation",
+          "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+          "verified_source_id": "SCCM_SSC2026",
+          "passage_locator": "ssc2026.cards.json : cartes10et49"
+        }
+      ],
+      "authoring_status": "Proposal for root, bank not edited here"
+    },
+    {
+      "id": "a41-j-glycemie",
+      "title": "Pourquoi viser habituellement8à10mmol/L après début de l’insuline ?",
+      "match": [
+        {
+          "file": "A41_b.html",
+          "anchor": "a41-9",
+          "text": "La cible glycémique usuelle de 8 à 10 mmol/L vient de la Surviving Sepsis Campaign 2021.",
+          "occurrences_in_anchor": 1,
+          "outside_button": true,
+          "contains_markup": false
+        }
+      ],
+      "explanation": [
+        "Seuil de début et cible après le début sont deux décisions différentes."
+      ],
+      "mechanism": [
+        "Le stress et les corticostéroïdes favorisent l’hyperglycémie.",
+        "La SSC2021 décrit un surcroît d’hypoglycémies sous les cibles plus basses sans gain de mortalité."
+      ],
+      "implication": "L’insuline débute dès10mmol/L selon SSC2026 ; l’entretien suit le protocole de surveillance et évite l’hypoglycémie.",
+      "limits": [
+        "La cible8–10 vient de SSC2021 ; elle n’est pas présentée comme un nouveau grade2026.",
+        "Les mesures sont adaptées au protocole, aux modifications de débit et au contexte individuel."
+      ],
+      "sources": [
+        {
+          "title": "SSC2021, Glucose control",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/",
+          "verified_source_id": "PMC8486643",
+          "passage_locator": "XML section Glucose control : Remark typical target144–180mg/dL(8–10mmol/L) ; Rationale p Target concentrations…four to nine-fold…"
+        },
+        {
+          "title": "SSC2026, Insulin therapy",
+          "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+          "verified_source_id": "SCCM_SSC2026",
+          "passage_locator": "ssc2026.txt : For adults…initiating insulin therapy…≥180mg/dL"
+        }
+      ],
+      "authoring_status": "Proposal for root, bank not edited here"
+    }
+  ],
+  "glossary_proposals_for_root": [
+    {
+      "term": "Sepsis",
+      "proposal": "Dysfonction d’organe menaçant la vie, causée par une réponse dérégulée de l’hôte à une infection ; hausse aiguë SOFA≥2 comme critère opérationnel.",
+      "source_id": "PMC4968574"
+    },
+    {
+      "term": "Noradrénaline",
+      "proposal": "Les seuils cités sont exprimés en noradrénaline base ; tartrate et base ne sont pas interchangeables. Aucun facteur numérique non vérifié.",
+      "source_id": "SWISSMEDIC67023"
+    },
+    {
+      "term": "CMI",
+      "observation": "Entrée existante a(CMI,…) dans glossary/i33.py, liée à i33-cmi. Contrôle de disponibilité de cette fenêtre dans le fragment courant confié à root."
+    }
+  ],
+  "local_checks": {
+    "data_k_data_pop_id_quiz_values": "Unchanged counters compared with exact audited sources; movement of screening triggers within the paragraph allowed.",
+    "html_parser": "No new stack issues. A41_pop_pa:0issues; A41_b:two unmatched closingdiv already present in the source fragment before edits, unchanged. This does not replace integrated browser/build controls.",
+    "source_match_checks": "4 proposed bank matches are exact, unique in a41-9, outside buttons, without markup.",
+    "build_and_browser": "Not run by this author; technical sentinel independently verifies assembled candidate."
+  },
+  "remaining_actions": [
+    {
+      "action": "Relecture croisée Claude au nouveau SHA ; aucune observation n’est déclarée clôturée ici."
+    },
+    {
+      "action": "Contrôles indépendants de la version assemblée, puis décision d’injection par root."
+    }
+  ],
+  "source_limits": [
+    "Page officielle2026 et rectificatif5mai2026 obtenus et lus ; seul le texte intégral2026 reste à vérifier. Les rationales ajoutés sont attribués aux versions/essais effectivement lus, sans nouvelle valeur ni grade2026 inventé.",
+    "Wilcox : mécanisme expérimental ; Chowdhury :12volontaires sains, pas de mortalité.",
+    "Peron : cas biopsié avec ciclosporine concomitante, pas preuve causale isolée ; exclusion des amidons justifiée par essai6S et énoncéSSC.",
+    "Les résumés primaires donnent les résultats insérés ; une lecture intégrale des essais n’est pas revendiquée.",
+    "Deux premiers identifiants bibliographiques de recherche,22697525et15084812, renvoyaient à des titres sans rapport ; ils ont été rejetés et ne sont pas cités. Identifiants corrects6S22738085/SAFE15163774 lus.",
+    "EuropePMC XML de Sepsis3 et de Wilcox:HTTP500 ; Sepsis3 récupéré par la capture primaire d’un autre auteur ; Wilcox utilisé au niveau résumé seulement."
+  ],
+  "revision_note": "Gel après quatre réserves de la contrelecture indépendante P1, 2026-10-08T12:10:49.806351+00:00. Définition/cible du choc, oligurie multifactorielle, poids prédit de ventilation et couverture de stress adaptés. Empreintes et quatre matches exacts vérifiés automatiquement. Pas de changement canonical, banque, ni autre fichier HTML.",
+  "additional_cross_review_corrections": [
+    {
+      "id": "P1-crossreview-case-shock",
+      "reviewer": "sentinelle_medicale",
+      "status": "proposed_corrected",
+      "anchors": [
+        "a41-8",
+        "a41-11",
+        "a41-12"
+      ],
+      "description": "Distinguer diagnostic clinique du choc, seuil formel Sepsis-3 ≥65 sous vasopresseur et cible initiale 60–65 dès65ans ; conserver les valeurs du cas."
+    },
+    {
+      "id": "P1-crossreview-oliguria",
+      "reviewer": "sentinelle_medicale",
+      "status": "proposed_corrected",
+      "anchor": "a41-9",
+      "description": "Retirer attribution comparative non établie de l’oligurie à l’obstruction unilatérale ; reconnaître hypoperfusion et atteinte rénale septique, drainage indiqué et absence de remplissage automatique."
+    },
+    {
+      "id": "P1-crossreview-ventilation-weight",
+      "reviewer": "sentinelle_medicale",
+      "status": "proposed_corrected",
+      "locations": [
+        "b support table",
+        "a41-sdra",
+        "a41-oxygene"
+      ],
+      "description": "Ventilation protectrice6mL/kg de poids prédit à partir de la taille ; distinguer poids réel de remplissage.",
+      "source": "PMC8486643, Mechanical ventilation rationale, PBW."
+    },
+    {
+      "id": "P1-crossreview-stress-dose",
+      "reviewer": "sentinelle_medicale",
+      "status": "proposed_corrected",
+      "locations": [
+        "b hydrocortisone and summaries",
+        "a41-cortico"
+      ],
+      "description": "Risque surrénalien non écarté + glucocorticoïdes déjà reçus ; soushydrocortisone≥200mg/j ouprednisone≥50mg/j augmentation habituellement inutile, voie adaptée siabsorption incertaine. MmeR inchangée.",
+      "source": "PMC11180513, R3.1 and Table8."
+    }
+  ],
+  "external_dependency_checks": [
+    {
+      "observation_id": "audit_pathologie_2-08",
+      "file": "A41_pop2.html",
+      "sha256": "2e11143b01de68f3628ca9630fe0c674cf123578cf588b94144a75895a2502b1",
+      "templates": [
+        "a41-norad",
+        "a41-vaso",
+        "a41-hydro"
+      ],
+      "status": "owner_confirmation_received_and_base_salt_wording_checked",
+      "read_at_utc": "2026-10-08T12:21:38.434054+00:00",
+      "findings": [
+        "Notice67023 : concentrations et toutes doses en noradrénaline base ; tartrate non interchangeable numériquement, pas de ratio sel/base inventé.",
+        "Vasopressine : repère0,25–0,5 µg/kg/min explicitement base, issu2021 et non seuil obligatoire2026.",
+        "Hydrocortisone : repère ≥0,25 µg/kg/min et au moins4h explicitement2021, non obligatoire2026.",
+        "Pareto diagnostic : seuil réfractaire >0,5 µg/kg/min d’équivalent noradrénaline base, hypoperfusion persistante et absence de réponse aux fluides présents."
+      ],
+      "limits": "Vérification ciblée des unités et versions, pas certification indépendante de toutes les monographies ni clôture de l’audit Claude."
+    }
+  ],
+  "independent_review_received": {
+    "reviewer": "/root/sentinelle_medicale",
+    "report_json": "docs/collaboration/reviews/2026-10-08/A41_REPRISE_MULTIAGENT/CONTRELECTURE_PATHOLOGIE2.json",
+    "report_markdown": "docs/collaboration/reviews/2026-10-08/A41_REPRISE_MULTIAGENT/CONTRELECTURE_PATHOLOGIE2.md",
+    "finding": "Avis favorable dans périmètre déclaré après relecture réelle des quatre deltas ;16composantes P2 et7dépendances fenêtres P1, pop2 hors de sa contrelecture.",
+    "claude_cross_review_closed": false
+  },
+  "author_deltas": [
+    {
+      "at_utc": "2026-10-08T13:03:16.582077+00:00",
+      "reason": "Consigne utilisateur accès au texte applicable depuis les fenêtres ; delta de liens/captions uniquement",
+      "old_sha256": "e9b464ba7bf3f371e64cde359906ded7037165211cf8b5d77e9de533d241a13f",
+      "new_sha256": "6e80bc70610be83c8e17927fec8b9b885ca59867e5336da0c85b1b5e6116623f",
+      "new_bytes": 72740,
+      "before_snapshot": "/tmp/A41_pop_pa.avant_liens_20261008.html",
+      "added_link_count": 5,
+      "per_window": [
+        {
+          "template": "a41-pam",
+          "href": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+          "caption": "Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : pression moyenne, énoncés 13–14.",
+          "added_markup": "<div class=\"lab\" data-reference-scope=\"a41-pam\">Texte de référence applicable</div><ul><li><a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : pression moyenne, énoncés 13–14.</a></li></ul>",
+          "source_groups_really_read": [
+            13,
+            14
+          ],
+          "read_mode": "official_statements_targeted",
+          "all_previous_content_byte_preserved": true
+        },
+        {
+          "template": "a41-remplissage",
+          "href": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+          "caption": "Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : remplissage et solutés, énoncés 10–11 et 43–49.",
+          "added_markup": "<div class=\"lab\" data-reference-scope=\"a41-remplissage\">Texte de référence applicable</div><ul><li><a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : remplissage et solutés, énoncés 10–11 et 43–49.</a></li></ul>",
+          "source_groups_really_read": [
+            10,
+            11,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "read_mode": "official_statements_targeted",
+          "all_previous_content_byte_preserved": true
+        },
+        {
+          "template": "a41-refractaire",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/41874620/",
+          "caption": "Leone et coll., 2026 : consensus Delphi sur le choc réfractaire, résumé primaire (PMID 41874620).",
+          "added_markup": "<div class=\"lab\" data-reference-scope=\"a41-refractaire\">Texte de référence applicable</div><ul><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/41874620/\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Leone et coll., 2026 : consensus Delphi sur le choc réfractaire, résumé primaire (PMID 41874620).</a></li></ul>",
+          "source_groups_really_read": [],
+          "read_mode": "primary_abstract",
+          "all_previous_content_byte_preserved": true
+        },
+        {
+          "template": "a41-desescalade",
+          "href": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+          "caption": "Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : désescalade 36–37, durée 39 et procalcitonine 40.",
+          "added_markup": "<div class=\"lab\" data-reference-scope=\"a41-desescalade\">Texte de référence applicable</div><ul><li><a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : désescalade 36–37, durée 39 et procalcitonine 40.</a></li></ul>",
+          "source_groups_really_read": [
+            36,
+            37,
+            39,
+            40
+          ],
+          "read_mode": "official_statements_targeted",
+          "all_previous_content_byte_preserved": true
+        },
+        {
+          "template": "a41-delai-atb",
+          "href": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+          "caption": "Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : initiation de l’antibiotique, énoncés 16–20.",
+          "added_markup": "<div class=\"lab\" data-reference-scope=\"a41-delai-atb\">Texte de référence applicable</div><ul><li><a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : initiation de l’antibiotique, énoncés 16–20.</a></li></ul>",
+          "source_groups_really_read": [
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "read_mode": "official_statements_targeted",
+          "all_previous_content_byte_preserved": true
+        }
+      ],
+      "all_previous_bytes_restored_by_removing_added_blocks": true,
+      "clinical_text_unchanged": true,
+      "old_attributes_and_targets_unchanged": true,
+      "primary_source_evidence": {
+        "sccm_cards_path": "/workspace/medina-env/reprise-a41/sources/ssc2026.cards.json",
+        "sccm_primary_sha256": "6266900db8ffb882bff477792023b20f24ece8387bbff854062b5b8b2788bcd1",
+        "leone_cache": "/workspace/medina-env/a41-pathologie2/41874620.json",
+        "leone_sha256": "78ff22db3a347a5a8784fa236c2a29dbec43b294ca07fc2aa59ec621b5349501",
+        "leone_read_mode": "primary_abstract_not_full_text"
+      },
+      "independent_review_pending": "/root/sentinelle_medicale",
+      "external_Claude_closed": false
+    },
+    {
+      "at_utc": "2026-10-08T13:03:16.582077+00:00",
+      "reason": "Trois libellés de support d’organes rendus interactifs via fenêtres existantes, dernière passe utilisateur",
+      "old_sha256": "f984a8a7d5ec710460aa248823ae633f77e4f6a8876884982ccb53d6429f4c48",
+      "new_sha256": "b3955084555b603f56f905cdaf54407f1c06603bde38dc80930776e5860c1ace",
+      "new_bytes": 94798,
+      "before_snapshot": "/tmp/A41_b.avant_markup_20261008.html",
+      "scope": "Seuls libellés des trois cellules Domaine du tableau support d’organes ; aucun chiffre, dose, cible, grade ou contenu de cellule modifié.",
+      "buttons": [
+        {
+          "label": "Oxygène",
+          "data_k": "a41-oxygene",
+          "existing_template_found_once": true,
+          "markup": "<button class=\"w\" data-k=\"a41-oxygene\">Oxygène</button>"
+        },
+        {
+          "label": "Syndrome de détresse respiratoire aiguë",
+          "data_k": "a41-sdra",
+          "existing_template_found_once": true,
+          "markup": "<button class=\"w\" data-k=\"a41-sdra\">Syndrome de détresse respiratoire aiguë</button>"
+        },
+        {
+          "label": "Glycémie",
+          "data_k": "a41-mesures",
+          "existing_template_found_once": true,
+          "markup": "<button class=\"w\" data-k=\"a41-mesures\">Glycémie</button>"
+        }
+      ],
+      "text_and_all_previous_bytes_restored_by_removing_buttons": true,
+      "source_targets_existing": true,
+      "clinical_content_unchanged": true,
+      "independent_review_pending": "/root/sentinelle_medicale",
+      "external_Claude_closed": false
+    },
+    {
+      "at_utc": "2026-10-08T13:12:27.732912+00:00",
+      "reason": "Dernier accès documentaire demandé pour les trois fenêtres liées au tableau support d’organes B ; trois blocs source uniquement",
+      "old_sha256": "6e80bc70610be83c8e17927fec8b9b885ca59867e5336da0c85b1b5e6116623f",
+      "new_sha256": "f383ad214398215420af0474e35d53478a6688bbfea14721ff3c8c9bba1e560d",
+      "new_bytes": 74108,
+      "before_snapshot": "/tmp/A41_pop_pa.avant_support_liens_20261008.html",
+      "scope": "a41-oxygene, a41-sdra et a41-mesures : trois liens/captions, sans enrichissement clinique",
+      "added_link_count": 3,
+      "per_window": [
+        {
+          "template": "a41-oxygene",
+          "caption": "Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : oxygénation et haut débit, énoncés 66–68.",
+          "href": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+          "added_markup": "<div class=\"lab\" data-reference-scope=\"a41-oxygene\">Texte de référence applicable</div><ul><li><a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : oxygénation et haut débit, énoncés 66–68.</a></li></ul>",
+          "source_groups_really_read": [
+            66,
+            67,
+            68
+          ],
+          "exact_cards_read": [
+            {
+              "page_order": 66,
+              "sccm_group_id": 66,
+              "statement_and_certainty": "For adults with sepsis and acute hypoxemic respiratory failure, we “suggest” titrating FIO2 to target either higher, more liberal oxygen levels or lower, conservative oxygen levels depending on patient factors and resource limitations.\nCertainty of evidence: Low",
+              "strength": "Conditional",
+              "category": "Oxygen targets",
+              "remarks": "Remarks\nAlthough there was variability across trials informing this recommendation, most used a lower target of approximately 90-93% SpO2 and a higher target of SpO2 ≥ 96.\n“In our practice”, panelists target SpO2 between 90% (IQR 90-92%) to 96% (IQR 94-98%) for patients with sepsis and acute hypoxemic respiratory failure.",
+              "raw_fragment_sha256": "b20ebbe74c417fad429b46113e041c4e0922edf8b529aebe4895f49c896ec506"
+            },
+            {
+              "page_order": 67,
+              "sccm_group_id": 67,
+              "statement_and_certainty": "For adults with sepsis and acute hypoxemic respiratory failure, we “suggest” using HFNC therapy over conventional oxygen therapy.\nCertainty of evidence: Very low",
+              "strength": "Conditional",
+              "category": "Respiratory support",
+              "remarks": "Remarks\nThis recommendation pertains to patients with a PaO2/FIO2 ratio < 200 or SpO2/FIO2 ratio < 235.",
+              "raw_fragment_sha256": "9745d202665978218e3f7de2818fe4b78682931747dbb964ed3722d72e9abea9"
+            },
+            {
+              "page_order": 68,
+              "sccm_group_id": 68,
+              "statement_and_certainty": "For adults with sepsis and acute hypoxemic respiratory failure, we “suggest” using HFNC as the initial therapy over noninvasive positive pressure ventilation.\nCertainty of evidence: Low",
+              "strength": "Conditional",
+              "category": "Respiratory support",
+              "remarks": "",
+              "raw_fragment_sha256": "7d29da43410f97a82d7c7980f1eb5de22c3e5aab7df8233ab42281d1e850e38d"
+            }
+          ],
+          "all_previous_window_bytes_preserved": true
+        },
+        {
+          "template": "a41-sdra",
+          "caption": "Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : ventilation protectrice et décubitus ventral, énoncés 71, 73 et 76.",
+          "href": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+          "added_markup": "<div class=\"lab\" data-reference-scope=\"a41-sdra\">Texte de référence applicable</div><ul><li><a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : ventilation protectrice et décubitus ventral, énoncés 71, 73 et 76.</a></li></ul>",
+          "source_groups_really_read": [
+            71,
+            73,
+            76
+          ],
+          "exact_cards_read": [
+            {
+              "page_order": 71,
+              "sccm_group_id": 71,
+              "statement_and_certainty": "For adults with sepsis and ARDS, we “recommend” using a low tidal volume ventilation strategy (6 mL/kg) over a high tidal volume strategy (> 10 mL/kg).\nCertainty of evidence: High",
+              "strength": "Strong",
+              "category": "Mechanical ventilation",
+              "remarks": "",
+              "raw_fragment_sha256": "406a387267912b9f551988e6f5a3626f17dc5757c4ca1256cc2e1fd56013d2bc"
+            },
+            {
+              "page_order": 73,
+              "sccm_group_id": 73,
+              "statement_and_certainty": "For adults with sepsis and ARDS, we “recommend” using an upper limited goal for plateau pressure of 30 cm H2O) over higher plateau pressures.\nCertainty of evidence: High",
+              "strength": "Strong",
+              "category": "Mechanical ventilation",
+              "remarks": "",
+              "raw_fragment_sha256": "c214cc5db00f07090f2338bacb7c898b19efa7030e60b039f5f2522162a0e8a7"
+            },
+            {
+              "page_order": 76,
+              "sccm_group_id": 76,
+              "statement_and_certainty": "For adults with sepsis and moderate-severe ARDS, we “suggest” using prone ventilation for greater than 12 hr daily.\nCertainty of evidence: Moderate",
+              "strength": "Conditional",
+              "category": "Mechanical ventilation",
+              "remarks": "",
+              "raw_fragment_sha256": "112f572076d7e4f968d02e72498bb913ade25619c6ad5ff2cd05c14f66a3d789"
+            }
+          ],
+          "all_previous_window_bytes_preserved": true
+        },
+        {
+          "template": "a41-mesures",
+          "caption": "Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : seuil de début de l’insuline, énoncé 92.",
+          "href": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+          "added_markup": "<div class=\"lab\" data-reference-scope=\"a41-mesures\">Texte de référence applicable</div><ul><li><a href=\"https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026\" target=\"_blank\" rel=\"noopener\" data-reference-source=\"1\">Surviving Sepsis Campaign 2026, SCCM, publiée le 23 mars 2026 : seuil de début de l’insuline, énoncé 92.</a></li></ul>",
+          "source_groups_really_read": [
+            92
+          ],
+          "exact_cards_read": [
+            {
+              "page_order": 92,
+              "sccm_group_id": 92,
+              "statement_and_certainty": "For adults with sepsis or septic shock, we “recommend” initiating insulin therapy at a glucose level of ≥ 180 mg/dL (10 mmol/L).\nCertainty of evidence: Moderate",
+              "strength": "Strong",
+              "category": "Insulin therapy",
+              "remarks": "",
+              "raw_fragment_sha256": "8d91ccf2e834b036bd0300242b2cd71a76dca95e39b9abcadb2f4027ee36d7b1"
+            }
+          ],
+          "all_previous_window_bytes_preserved": true
+        }
+      ],
+      "all_previous_bytes_restored_by_removing_added_blocks": true,
+      "clinical_text_doses_grades_targets_and_old_URLs_unchanged": true,
+      "existing_2021_reference_retained_distinct": true,
+      "source_capture": {
+        "cards_path": "/workspace/medina-env/reprise-a41/sources/ssc2026.cards.json",
+        "cards_sha256": "9a6720d374231b047c8116149f5519775a9613feaac430a40a3c11a078a799b3",
+        "primary_path": "/workspace/medina-env/reprise-a41/sources/ssc2026.primary.html",
+        "primary_sha256": "6266900db8ffb882bff477792023b20f24ece8387bbff854062b5b8b2788bcd1",
+        "count": 129,
+        "read_mode": "official_statements_targeted",
+        "publication_date": "2026-03-23"
+      },
+      "independent_review_pending": "/root/sentinelle_medicale",
+      "author_source_freeze_after_this_delta": true,
+      "external_Claude_closed": false
+    }
+  ],
+  "current_owned_snapshot": {
+    "at_utc": "2026-10-08T13:12:27.732912+00:00",
+    "A41_pop_pa.html": {
+      "path": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_pop_pa.html",
+      "sha256": "f383ad214398215420af0474e35d53478a6688bbfea14721ff3c8c9bba1e560d",
+      "bytes": 74108
+    },
+    "A41_b.html": {
+      "path": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_b.html",
+      "sha256": "b3955084555b603f56f905cdaf54407f1c06603bde38dc80930776e5860c1ace",
+      "bytes": 94798
+    }
+  },
+  "last_delta_counter_review_received": {
+    "recorded_at_utc": "2026-10-08T13:19:00.770671+00:00",
+    "review_report": "docs/collaboration/reviews/2026-10-08/A41_REPRISE_MULTIAGENT/CONTRELECTURE_PATHOLOGIE2.json",
+    "review_report_sha256": "1d9a10a8199f6ff19c3300c45efd86e63e75c7c04d2a5d5308ffee01282f69d8",
+    "selector": "editorial_delta_reviews[1]",
+    "reviewer": "/root/sentinelle_medicale",
+    "scope": "Trois seuls blocs de liens/captions oxygène/SDRA/mesures, réellement lus ; aucune phrase clinique ni dose modifiée.",
+    "decision": "FAVORABLE_AU_DELTA_DOCUMENTAIRE_FINAL",
+    "final_source_sha256": "f383ad214398215420af0474e35d53478a6688bbfea14721ff3c8c9bba1e560d",
+    "external_Claude_closed": false,
+    "browser_check_claimed": false,
+    "author_source_frozen": true
+  },
+  "previous_delta_counter_review_receipts": [
+    {
+      "recorded_at_utc": "2026-10-08T13:06:23.068350+00:00",
+      "review_report": "docs/collaboration/reviews/2026-10-08/A41_REPRISE_MULTIAGENT/CONTRELECTURE_PATHOLOGIE2.json",
+      "review_report_sha256": "51ec5612f02742d366188496f9a9132c9ccee494fb5ddaf55fb980980295dd43",
+      "selector": "editorial_delta_reviews[-1]",
+      "reviewer": "/root/sentinelle_medicale",
+      "scope": "Trois wrappers de boutons du tableau support dans b et cinq blocs de références dans pop_pa, effectivement lus et identité inverse vérifiée. Aucun énoncé clinique nouveau.",
+      "decision": "FAVORABLE_AU_DELTA_EDITORIAL_CIBLE",
+      "final_sources": {
+        "A41_b.html": "b3955084555b603f56f905cdaf54407f1c06603bde38dc80930776e5860c1ace",
+        "A41_pop_pa.html": "6e80bc70610be83c8e17927fec8b9b885ca59867e5336da0c85b1b5e6116623f"
+      },
+      "external_Claude_closed": false,
+      "browser_check_claimed": false
+    }
+  ]
+}

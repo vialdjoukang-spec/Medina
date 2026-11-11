@@ -1,0 +1,825 @@
+{
+  "chapter": "A41 — Sepsis et choc septique de l’adulte (I-03-Infectiologie)",
+  "reviewer": "Codex / claude_spec",
+  "role": "contrelecture indépendante de C/fenêtres review_plan ; auteur D/pop2 déclaré séparément",
+  "generated_at_utc": "2026-10-08T12:40:57.475973+00:00",
+  "base_commit": "db06b1fae3c27e93050850df44c3eb23fcd60164",
+  "audited_source_commit": "39b7ff0cc585c59ffbb99fb448940daa1950b34d",
+  "state": "contrelecture_C_terminee_favorable_avec_reserves_03_07_non_closes",
+  "external_Claude_audit_replaced": false,
+  "external_Claude_audit_closed": false,
+  "injection_authorized": false,
+  "scope": {
+    "read_entirely": [
+      "A41_c.html pE et pS",
+      "A41_pop_sciences_revision.html quatre fenêtres"
+    ],
+    "sections": [
+      "a41-e-1",
+      "a41-e-2",
+      "a41-e-3",
+      "a41-e-4",
+      "a41-e-5",
+      "a41-s-1",
+      "a41-s-2",
+      "a41-s-3",
+      "a41-s-4"
+    ],
+    "windows": [
+      "a41-pct",
+      "a41-crp",
+      "a41-gaz-read",
+      "a41-science-reading"
+    ],
+    "figures": 4,
+    "quiz_read": 4,
+    "pareto_dependencies": [
+      "pareto-a41-examens",
+      "pareto-a41-sciences"
+    ],
+    "independence_exception": "Cet auditeur est auteur de ces Pareto et du reste de pop2 ; validation indépendante par review_plan, pas auto-certification."
+  },
+  "files": [
+    {
+      "path": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_c.html",
+      "sha256": "fdf9991f19aa93552ca94f52cdb3487637e64c85b79040d7608bc8d39c0da2dc",
+      "bytes": 60580,
+      "canonical_path": "chapters/A41/A41_c.html",
+      "canonical_sha256": "7b0767d8485e7b17c9d4d963621d722b640812cee6664554a147223105db3180",
+      "canonical_unchanged_since_audit": true,
+      "canonical_modified_by_reviewer": false
+    },
+    {
+      "path": "livraisons/Livraison Codex/I-03-Infectiologie/lots/2026-10-08-A41/sources/chapters/A41/A41_pop_sciences_revision.html",
+      "sha256": "dd5ceeba3e8a346f2da2b4ebbe5c9f7015cc7e819f941ddc475ae89e2a1d234e",
+      "bytes": 14741,
+      "canonical_path": "chapters/A41/A41_pop_sciences_revision.html",
+      "canonical_sha256": "46d45aca44d3adb8ed104f7506221126c6cf4f8a355bdea035eb901b6b97832b",
+      "canonical_unchanged_since_audit": true,
+      "canonical_modified_by_reviewer": false
+    }
+  ],
+  "author_report": {
+    "path": "docs/collaboration/reviews/2026-10-08/A41_REPRISE_MULTIAGENT/EXAMENS_SCIENCES.json",
+    "sha256_at_review": "096daa406fbddb237bdba031fc723b94a784b0c083d1a0e611b9153cca84e971"
+  },
+  "observations": [
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-01",
+      "original_severity": "majeure",
+      "assessment": "favorable_sur_preuves_relues",
+      "candidate_location": "a41-e-1 ; a41-pct ; a41-crp",
+      "finding": "PCT/CRP définies, normes HUG datées, cinétiques bornées, limites précoces/localisées et exemples Delannoy/Wu. Les XML JATS lus confirment la cohorte postopératoire de32 adultes :5 classés septiques et11 non septiques, sans différence significative des pics PCT. Wu361/119 ne donne aucun seuil universel ; hémocultures seules ne prouvent pas toute absence d’infection. Arrêt PCT+clinique conditionnel/faible et début clinique seule conditionnel/très faible.",
+      "source_ids": [
+        "11232031",
+        "7989463",
+        "8473487",
+        "PMC161431_text",
+        "HUG_PCT_3940",
+        "HUG_CRP_3877",
+        "26947523",
+        "PMC2811936_text",
+        "PMC7031592_text"
+      ],
+      "original_external_audit_closed": false
+    },
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-02",
+      "original_severity": "majeure",
+      "assessment": "favorable_sur_preuves_relues",
+      "candidate_location": "a41-e-2",
+      "finding": "Au moins deux paires,8–10mL/flacon adulte et≤10 selon procédure CHUV. Rendements Lee89,7/98,2 % bornés aux épisodes sélectionnés ; Cheng31,4→19,4 % après antibiotiques sans retard dangereux préconisé. Délai cathéter/périphérie≥2h : même organisme, volumes égaux et prélèvements couplés.",
+      "source_ids": [
+        "CHUV_CULT_01510",
+        "17881544",
+        "31525774",
+        "PMC4039170_text"
+      ],
+      "original_external_audit_closed": false
+    },
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-03",
+      "original_severity": "majeure",
+      "assessment": "partielle_reserve_majeure_maintenue",
+      "candidate_location": "a41-e-3 ; a41-gaz-read",
+      "finding": "Delta Viollier artériel pH7,35–7,45 ; PaCO2 femmes32–45/hommes35–48mmHg ; PaO2 83–108mmHg ; bicarbonate STANDARD21–29mmol/L. Medics formule sansK et intervalle8–16mmol/L sérum/plasma, profil Viollier3–11 distinct sans formule sur feuille résultat. Copies primaires et empreintes directement vérifiées. Reste intervalle bicarbonate ACTUEL et applicabilité exacte des profils au calcul artériel/mixte : aucune substitution standard/actuel/plasma admise.",
+      "source_ids": [
+        "viollier_ph_arterial",
+        "viollier_pco2_arterial",
+        "viollier_po2_arterial",
+        "viollier_standard_bicarb_arterial",
+        "viollier_aniongap_result",
+        "viollier_aniongap",
+        "medics_aniongap_leaf",
+        "PMC6695455_text",
+        "CHUV_GAZ_00717"
+      ],
+      "original_external_audit_closed": false
+    },
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-04",
+      "original_severity": "mineure",
+      "assessment": "favorable_sur_preuves_relues",
+      "candidate_location": "a41-e-3",
+      "finding": "Ancienne assertion nourri/jeûne retirée. Préanalyse seringue CHUV distingue délai, air, mélange et absence de refroidissement ; tube plasma USZ et stockage/garrot ne sont pas assimilés à la seringue.",
+      "source_ids": [
+        "CHUV_GAZ_00717",
+        "USZ_LACTATE"
+      ],
+      "original_external_audit_closed": false
+    },
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-05",
+      "original_severity": "mineure",
+      "assessment": "favorable_sur_preuves_relues",
+      "candidate_location": "a41-e-3",
+      "finding": "USZ0,5–2,2mmol/L borné au plasmaNaF/méthode enzymatique, sans version affichée ; consultation connue. HUG plaquettes150–450×10^9/L date03.06.2026. Ancienne norme générale0,5–1,5 retirée. Unités HUG lactate discordantes restent inutilisées.",
+      "source_ids": [
+        "USZ_LACTATE",
+        "HUG_FS_2663"
+      ],
+      "original_external_audit_closed": false
+    },
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-06",
+      "original_severity": "redactionnelle",
+      "assessment": "favorable_sur_preuves_relues",
+      "candidate_location": "a41-e-1 ; a41-e-3",
+      "finding": "Questions/examens et gazométrie/SOFA expliqués en phrases complètes ; terminologie pression partielle et ancrage de gazométrie corrigés. Niveau résumé conservé dans le cours, détails de transport XML réservés au rapport.",
+      "source_ids": [
+        "PMC6695455_text"
+      ],
+      "original_external_audit_closed": false
+    },
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-07",
+      "original_severity": "mineure",
+      "assessment": "partielle_reserve_mineure_maintenue",
+      "candidate_location": "a41-e-4",
+      "finding": "Principe échographique, fonction ventriculaire, veine cave et confondants présents. Non-évaluation par recommandation50 ne devient ni interdiction ni bénéfice prouvé. Décompression infectée/obstruée urgente conforme EAU3.4.2. Contraste : pesée bénéfice/risque formulée, mais source spécifique/protocole non établi ; observation non close.",
+      "source_ids": [
+        "EAU_UROLITHIASIS_2026"
+      ],
+      "original_external_audit_closed": false
+    },
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-08",
+      "original_severity": "mineure",
+      "assessment": "favorable_sur_preuves_relues",
+      "candidate_location": "a41-e-5, quiz1",
+      "finding": "Nouvelle confusion/polypnée avec infection incertaine et absence de choc rendent le cas cohérent avec sepsis possible : investigation rapide puis antibiotique≤3h si suspicion persistante. Aucun délai automatique pour tout patient stable.",
+      "source_ids": [],
+      "original_external_audit_closed": false
+    },
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-09",
+      "original_severity": "mineure",
+      "assessment": "favorable_sur_preuves_relues",
+      "candidate_location": "a41-e-5, quiz3",
+      "finding": "Priorité au drainage anatomique sans garantie de bénéfice individuel ; contrôle du foyer idéalement≤6h conditionnel/très faible explicité.",
+      "source_ids": [],
+      "original_external_audit_closed": false
+    },
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-10",
+      "original_severity": "mineure",
+      "assessment": "favorable_sur_preuves_relues",
+      "candidate_location": "a41-e-1",
+      "finding": "Dépistage NEWS/NEWS2/MEWS/SIRS préféré à qSOFA seul, forte/modérée ; SOFA de dysfonction distinct de la décision de dépistage.",
+      "source_ids": [],
+      "original_external_audit_closed": false
+    },
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-11",
+      "original_severity": "majeure",
+      "assessment": "favorable_sur_perimetre_lu",
+      "candidate_location": "a41-s-1 à a41-s-4",
+      "finding": "Normal avant pathologique ; NO/guanylate/canaux, réponse adrénergique et vasopressine bornés ; TF/thrombine/fibrine, protéinesC/S/antithrombine et fibrinolyse reliés avec modèle humain expérimental et cohorte Faust21 enfants. Mitochondrie/ATP et immunité/HLA-DR décrivent associations et tissus sélectionnés, sans cible thérapeutique universelle. Sources mécanistiques distinctes des recommandations cliniques.",
+      "source_ids": [
+        "11795672",
+        "18838946",
+        "9054839",
+        "11496851",
+        "8636534",
+        "14717968",
+        "11372037",
+        "12133657",
+        "9851930",
+        "7989463",
+        "22187279",
+        "PMC3361243_text"
+      ],
+      "original_external_audit_closed": false
+    },
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-12",
+      "original_severity": "mineure",
+      "assessment": "favorable_sur_preuves_relues",
+      "candidate_location": "a41-s-3 ; a41-science-reading",
+      "finding": "PAM≈DC×RVS+PVC exige unités compatibles ; CaO2 enmL/dL, Hb g/dL, SaO2 fraction, PaO2mmHg ; DO2 ajoute×10 avec DCenL/min. Exercice933→539mL/min correct et sans seuil transfusionnel. Hb140g/L concorde avec intervalle HUG ; débit/saturation/PaO2 sont hypothèses déclarées.",
+      "source_ids": [
+        "PMC13390545_text",
+        "HUG_FS_2663"
+      ],
+      "original_external_audit_closed": false
+    },
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-13",
+      "original_severity": "mineure",
+      "assessment": "favorable_apres_delta_documentaire",
+      "candidate_location": "a41-s-3 ; a41-science-reading",
+      "finding": "LDH, production/utilisation et cinétique correctement distinctes. PDH humaine parfois augmentée et inhibition animale tardive non universalisées ; production pulmonaire possible bornée. Le chiffre rénal30 % a été retiré par le rédacteur faute d’extrait exporté vérifiable ; la fonction rénale subsiste sans pourcentage inventé.",
+      "source_ids": [
+        "PMC4421917_text",
+        "12133657"
+      ],
+      "original_external_audit_closed": false
+    },
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-14",
+      "original_severity": "mineure",
+      "assessment": "favorable_sur_preuves_relues",
+      "candidate_location": "a41-s-4",
+      "finding": "Culture concordante avec foyer documente infection ; contamination/colonisation demeurent alternatives, et infection seule ne suffit pas à dysfonction causale du sepsis.",
+      "source_ids": [],
+      "original_external_audit_closed": false
+    },
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-15",
+      "original_severity": "redactionnelle",
+      "assessment": "favorable_C_Pareto_validé_par_autre_relecteur",
+      "candidate_location": "a41-s-1 à a41-s-4 ; pareto-a41-sciences",
+      "finding": "Douze anciennes clés fusionnées en quatre encadrés disciplinaires. Le Pareto pop2 a cet auditeur comme auteur : équations/calculs et chaînes mécanistiques ajoutés ; review_plan déclare relecture indépendante favorable du gel e000821655ef2126980b2b43f8d92c196ded19a68e7b2c3f38cdb7a53ecccd47. Aucune auto-certification du Pareto.",
+      "source_ids": [],
+      "original_external_audit_closed": false
+    },
+    {
+      "observation_id": "audit_examens_sciences_pharmacologie-16",
+      "original_severity": "redactionnelle",
+      "assessment": "favorable_apres_delta_editorial",
+      "candidate_location": "figures et navigation C/D",
+      "finding": "Figures Sciences désormais4–7 après Pathologie1–3. Anatomie/Histologie ont un départ normal explicite ; légendes et limites complètes. Aucun libellé Îlot observé dans les contrôles de navigation concernés.",
+      "source_ids": [],
+      "original_external_audit_closed": false
+    }
+  ],
+  "primary_and_review_evidence_read": [
+    {
+      "id": "9054839",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9054839/",
+      "title": "Vasopressin deficiency contributes to the vasodilation of septic shock.",
+      "kind": "primary_research",
+      "read_mode": "abstract_xml_not_full_text",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "12133657",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12133657/",
+      "title": "Association between mitochondrial dysfunction and severity and outcome of septic shock.",
+      "kind": "primary_research",
+      "read_mode": "abstract_xml_not_full_text",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "22187279",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22187279/",
+      "title": "Immunosuppression in patients who die of sepsis and multiple organ failure.",
+      "kind": "primary_research",
+      "read_mode": "abstract_xml_not_full_text",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "7989463",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7989463/",
+      "title": "Procalcitonin increase after endotoxin injection in normal subjects.",
+      "kind": "primary_research",
+      "read_mode": "abstract_xml_not_full_text",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "11232031",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11232031/",
+      "title": "Ubiquitous expression of the calcitonin-i gene in multiple tissues in response to sepsis.",
+      "kind": "primary_research",
+      "read_mode": "abstract_xml_not_full_text",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "8473487",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8473487/",
+      "title": "Metabolic and scintigraphic studies of radioiodinated human C-reactive protein in health and disease.",
+      "kind": "primary_research",
+      "read_mode": "abstract_xml_not_full_text",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "31525774",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31525774/",
+      "title": "Blood Culture Results Before and After Antimicrobial Administration in Patients With Severe Manifestations of Sepsis: A Diagnostic Study.",
+      "kind": "primary_research",
+      "read_mode": "abstract_xml_not_full_text",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "17881544",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17881544/",
+      "title": "Detection of bloodstream infections in adults: how many blood cultures are needed?",
+      "kind": "primary_research",
+      "read_mode": "abstract_xml_not_full_text",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "26947523",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26947523/",
+      "title": "Efficacy and safety of procalcitonin guidance in reducing the duration of antibiotic treatment in critically ill patients: a randomised, controlled, open-label trial.",
+      "kind": "primary_research",
+      "read_mode": "abstract_xml_not_full_text",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "11795672",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11795672/",
+      "title": "Differential involvement of guanylate cyclase and potassium channels in nitric oxide-induced hyporesponsiveness to phenylephrine in endotoxemic rats.",
+      "kind": "primary_research",
+      "read_mode": "abstract_xml_not_full_text",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "18838946",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18838946/",
+      "title": "Variable effects of inhibiting iNOS and closing the vascular ATP-sensitive potassium channel (via its pore-forming and sulfonylurea receptor subunits) in endotoxic shock.",
+      "kind": "primary_research",
+      "read_mode": "abstract_xml_not_full_text",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "11496851",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11496851/",
+      "title": "Dysfunction of endothelial protein C activation in severe meningococcal sepsis.",
+      "kind": "primary_research",
+      "read_mode": "abstract_xml_not_full_text",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "9851930",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9851930/",
+      "title": "Defective LPS signaling in C3H/HeJ and C57BL/10ScCr mice: mutations in Tlr4 gene.",
+      "kind": "primary_research",
+      "read_mode": "abstract_xml_not_full_text",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "HUG_PCT_3940",
+      "url": "https://rpa.hug.ch/lvert/rpa/inf/fiches/FICHE_3940_.html",
+      "kind": "official_swiss_laboratory_primary",
+      "sha256": "71e3ef0ec37abd82fe2a1cf422a918caa3fb7052f49df3b2d2e644aa33e46186",
+      "bytes": 6739,
+      "read_mode": "public_fiche_html_full",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "HUG_CRP_3877",
+      "url": "https://rpa.hug.ch/lvert/rpa/inf/fiches/FICHE_3877_.html",
+      "kind": "official_swiss_laboratory_primary",
+      "sha256": "fa245f950625ab0b161919e6e59041a3984d6e7e98a6044e6b303fc57c138bbf",
+      "bytes": 3898,
+      "read_mode": "public_fiche_html_full",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "HUG_FS_2663",
+      "url": "https://rpa.hug.ch/lvert/rpa/inf/fiches/FICHE_2663_.html",
+      "kind": "official_swiss_laboratory_primary",
+      "sha256": "0d3d6746d84557f39d4e3fa2609f9ac3dc7458e32aadcba6bcbd064b82d33b35",
+      "bytes": 8468,
+      "read_mode": "public_fiche_html_full",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "CHUV_GAZ_00717",
+      "url": "https://catalogue.chuv.ch/analyses-examens/laboratoires/fiche/DLA_INV_01_00717/gazometrie-arterielle",
+      "kind": "official_swiss_laboratory_primary",
+      "sha256": "3a7bd96fcba812b61dd6c915b3682cbef812c677631d5dcada8d07f7800b3a20",
+      "bytes": 39352,
+      "read_mode": "public_fiche_html_full",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "CHUV_CULT_01510",
+      "url": "https://catalogue.chuv.ch/analyses-examens/laboratoires/fiche/DLA_INV_01_01510/hemoculture-chez-ladulte",
+      "kind": "official_swiss_laboratory_primary",
+      "sha256": "f1e3b1199cab2852727e2d19a7e4e4c18f41b8b86f22b4945dbe00f6177ff009",
+      "bytes": 45089,
+      "read_mode": "public_fiche_html_full",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "PMC4421917_text",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC4421917/unicode",
+      "kind": "review",
+      "sha256": "2b865c49f8e2e9b2119c9896d21094cf39f6410aa7e5b1f344cc0287e4f15001",
+      "bytes": 124419,
+      "read_mode": "targeted_full_text_passages",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "PMC3361243_text",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC3361243/unicode",
+      "kind": "primary_research",
+      "sha256": "94c5532ad01d2288d5638ad2dea9636127cede20005484aea78db1cdb1283e76",
+      "bytes": 123899,
+      "read_mode": "targeted_full_text_passages",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "PMC4039170_text",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC4039170/unicode",
+      "kind": "guideline_primary",
+      "sha256": "76361e512d50972e5dba94cae7ab103e82d4abe5fe167199065f683f766929c1",
+      "bytes": 605350,
+      "read_mode": "targeted_full_text_passages",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "8636534",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=8636534,14717968,11372037&retmode=xml",
+      "title": "Coagulation inhibitor substitution during sepsis.",
+      "kind": "review",
+      "read_mode": "official_NCBI_XML_abstract",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "14717968",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=8636534,14717968,11372037&retmode=xml",
+      "title": "Recombinant nematode anticoagulant protein c2, an inhibitor of tissue factor/factor VIIa, attenuates coagulation and the interleukin-10 response in human endotoxemia.",
+      "kind": "primary_research",
+      "read_mode": "official_NCBI_XML_abstract",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "11372037",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=8636534,14717968,11372037&retmode=xml",
+      "title": "Tissue factor pathway inhibitor does not influence inflammatory pathways during human endotoxemia.",
+      "kind": "primary_research",
+      "read_mode": "official_NCBI_XML_abstract",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "PMC13390545_text",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=13390545&retmode=xml",
+      "title": "Post-operative oxygen delivery and delirium after cardiac surgery with cardiopulmonary bypass: A multisite retrospective cohort study of 1,690 patients",
+      "kind": "primary_research",
+      "sha256": "137bdadc5ca214840bdacf6dfddcdc6cef1bf6cb3aaa4656d97d1d41d8070722",
+      "bytes": 105223,
+      "read_mode": "targeted_full_text_passages",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "PMC6695455_text",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=6695455&retmode=xml",
+      "title": "Diagnosis and management of metabolic acidosis: guidelines from a French expert panel",
+      "kind": "guideline_primary",
+      "sha256": "0017b16a14e918dbd32fdbc5ffc0ac9762bde91df26609d7a9eb62ae2466ef28",
+      "bytes": 228031,
+      "read_mode": "targeted_full_text_passages",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "PMC161431_text",
+      "url": "https://www.jci.org/articles/view/18921",
+      "title": "C-reactive protein: a critical update",
+      "kind": "review",
+      "sha256": "e1477ac50f68d73f8c06263d7cba1f0231fbfe1423ffcd0b956accc1456b19f4",
+      "bytes": 142329,
+      "read_mode": "targeted_publisher_full_text_passages",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "USZ_LACTATE",
+      "url": "https://vademecum.usz.ch/Analysis/?entryID=161",
+      "sha256": "19aae1ae1e3a19df69377a7d0cd0a16220f9a0d33e363a092b72bb1f75e97b7f",
+      "bytes": 19152,
+      "read_mode": "source_cache_supplied_by_independent_agent_and_text_read",
+      "source_revision_date": null,
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "USZ_BICARBONATE_PLASMA",
+      "url": "https://vademecum.usz.ch/Analysis/?entryID=35",
+      "sha256": "e8b8f92c6e45da7cfa9b7e2398b54d0dd0f6861fbe1eee19c0e39c8a22741546",
+      "bytes": 19535,
+      "read_mode": "source_cache_supplied_by_independent_agent_and_text_read",
+      "source_revision_date": null,
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "EAU_UROLITHIASIS_2026",
+      "url": "https://uroweb.org/guidelines/urolithiasis/chapter/guidelines",
+      "kind": "guideline_primary",
+      "sha256": "ca25624c3f752f2d17e17e7535f6fe6ddb7d3fd05ead138a6005bc0e2d644536",
+      "cache_path": "/workspace/medina-env/reprise-a41/sources/pathologie1/a41-p1-eau-urolithiasis.html",
+      "read_mode": "targeted_full_text_passages",
+      "reviewer_read_mode": "extraits_primaires_ou_revue_fournis_dans_rapport_auteur",
+      "raw_file_hash_independently_verified": false,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "PMC2811936_text",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC2811936/unicode",
+      "kind": "primary_research",
+      "sha256": "fdf8dc947ed5fb7b3d8e7e2ad9a63edce3f214fc40827944edae2830d635a5b1",
+      "bytes": 83243,
+      "cache_path": "/tmp/a41-pct-PMC2811936.xml",
+      "read_mode": "targeted_full_text_passages_after_independent_supply",
+      "reviewer_read_mode": "lecture_directe_passages_XML_JATS_cache_primaire",
+      "raw_file_hash_independently_verified": true,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "PMC7031592_text",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC7031592/unicode",
+      "kind": "primary_research",
+      "sha256": "e06008473c758a1152e64ea667ea15a48b6043c9e7a1c2ad3b61b47371b5bb56",
+      "bytes": 73328,
+      "cache_path": "/tmp/a41-pct-PMC7031592.xml",
+      "read_mode": "targeted_full_text_passages_after_independent_supply",
+      "reviewer_read_mode": "lecture_directe_passages_XML_JATS_cache_primaire",
+      "raw_file_hash_independently_verified": true,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "viollier_ph_arterial",
+      "url": "https://www.viollier.ch/de/analysis/14136",
+      "kind": "official_swiss_laboratory_primary",
+      "sha256": "b4eb09c25ace67b313c926d53f28effce9f879e0149bca03c555a33bd3b38719",
+      "bytes": 149660,
+      "cache_path": "/workspace/medina-env/a41-normes-arterielles/viollier_ph_arterial.html",
+      "read_mode": "targeted_cache_passages_directly_read",
+      "source_revision_date": null,
+      "read_on": "2026-10-08",
+      "reviewer_read_mode": "lecture_directe_cache_HTML_primaire_des_intervalles_et_matrices",
+      "raw_file_hash_independently_verified": true,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "viollier_pco2_arterial",
+      "url": "https://www.viollier.ch/de/analysis/14146",
+      "kind": "official_swiss_laboratory_primary",
+      "sha256": "fede6726648fdae2b6b2b8cdcc22c20d3867a51e802a2380e750634edfc48b43",
+      "bytes": 150811,
+      "cache_path": "/workspace/medina-env/a41-normes-arterielles/viollier_pco2_arterial.html",
+      "read_mode": "targeted_cache_passages_directly_read",
+      "source_revision_date": null,
+      "read_on": "2026-10-08",
+      "reviewer_read_mode": "lecture_directe_cache_HTML_primaire_des_intervalles_et_matrices",
+      "raw_file_hash_independently_verified": true,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "viollier_po2_arterial",
+      "url": "https://www.viollier.ch/de/analysis/14156",
+      "kind": "official_swiss_laboratory_primary",
+      "sha256": "c575c37110f162be2b1c5f60b277afd82cd6e22447f8bc49e6f2f8e3854ca609",
+      "bytes": 149668,
+      "cache_path": "/workspace/medina-env/a41-normes-arterielles/viollier_po2_arterial.html",
+      "read_mode": "targeted_cache_passages_directly_read",
+      "source_revision_date": null,
+      "read_on": "2026-10-08",
+      "reviewer_read_mode": "lecture_directe_cache_HTML_primaire_des_intervalles_et_matrices",
+      "raw_file_hash_independently_verified": true,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "viollier_standard_bicarb_arterial",
+      "url": "https://www.viollier.ch/de/analysis/14157",
+      "kind": "official_swiss_laboratory_primary",
+      "sha256": "ecca341ca71beb1c161b25ed480dd12dfb2126532c627f7f1d49fee439d295d0",
+      "bytes": 150333,
+      "cache_path": "/workspace/medina-env/a41-normes-arterielles/viollier_standard_bicarb_arterial.html",
+      "read_mode": "targeted_cache_passages_directly_read",
+      "source_revision_date": null,
+      "read_on": "2026-10-08",
+      "reviewer_read_mode": "lecture_directe_cache_HTML_primaire_des_intervalles_et_matrices",
+      "raw_file_hash_independently_verified": true,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "viollier_aniongap_result",
+      "url": "https://www.viollier.ch/de/analysis/10245",
+      "kind": "official_swiss_laboratory_primary",
+      "sha256": "f5ba07b27f82da7300ee953a536b7a1dee825e536365f14edb6263df8521c0ff",
+      "bytes": 145113,
+      "cache_path": "/workspace/medina-env/a41-normes-arterielles/viollier_aniongap_result.html",
+      "read_mode": "targeted_cache_passages_directly_read",
+      "source_revision_date": null,
+      "read_on": "2026-10-08",
+      "reviewer_read_mode": "lecture_directe_cache_HTML_primaire_des_intervalles_et_matrices",
+      "raw_file_hash_independently_verified": true,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "viollier_aniongap",
+      "url": "https://www.viollier.ch/de/analysis/10260",
+      "kind": "official_swiss_laboratory_primary",
+      "sha256": "82cc340b0fe3e915a18f2c77a83537f30ee35ca6262ddd7cac22f25680ab718e",
+      "bytes": 154471,
+      "cache_path": "/workspace/medina-env/a41-normes-arterielles/viollier_aniongap.html",
+      "read_mode": "targeted_cache_passages_directly_read",
+      "source_revision_date": null,
+      "read_on": "2026-10-08",
+      "reviewer_read_mode": "lecture_directe_cache_HTML_primaire_des_intervalles_et_matrices",
+      "raw_file_hash_independently_verified": true,
+      "raw_independently_fetched_by_reviewer": false
+    },
+    {
+      "id": "medics_aniongap_leaf",
+      "url": "https://www.medics.ch/analysenverzeichnis/anionl",
+      "kind": "official_swiss_laboratory_primary",
+      "sha256": "5718cf9780325117193f7934f2c1f717b9db4ccdb01de6b1bf9c6be238dcfe66",
+      "bytes": 49477,
+      "cache_path": "/workspace/medina-env/a41-normes-arterielles/medics_aniongap_leaf.html",
+      "read_mode": "targeted_cache_passages_directly_read",
+      "source_revision_date": null,
+      "read_on": "2026-10-08",
+      "reviewer_read_mode": "lecture_directe_cache_HTML_primaire_des_intervalles_et_matrices",
+      "raw_file_hash_independently_verified": true,
+      "raw_independently_fetched_by_reviewer": false
+    }
+  ],
+  "source_read_limits": [
+    "Résumés XML et extraits officiels fournis relus ; réception URL ne signifie pas lecture intégrale de tous les articles.",
+    "Provenance des captures exportées attribuée au rédacteur ; aucune seconde requête HTTP indépendante revendiquée pour ces captures.",
+    "XML JATS Delannoy/Wu et sept caches Viollier/Medics directement parcourus avec SHA vérifiés ; autres études restent lues en résumés ou extraits ciblés.",
+    "Une page refusée ou un HTML cookies ne produit aucune valeur médicale."
+  ],
+  "recommendations_2026_evidence": {
+    "path": "/workspace/medina-env/reprise-a41/sources/ssc2026.cards.json",
+    "source_sha256": "6266900db8ffb882bff477792023b20f24ece8387bbff854062b5b8b2788bcd1",
+    "groups_reviewed_for_C": [
+      4,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      40,
+      50,
+      51,
+      65
+    ],
+    "note": "Cartes officielles et remarques relues ; elles ne servent pas de preuve primaire de mécanisme."
+  },
+  "calculations_recomputed": {
+    "PCT_5_to_0_8_decrease_percent": 84.0,
+    "Winter_HCO3_12_expected_PaCO2_mmHg": 26.0,
+    "Winter_interval_mmHg": [
+      24.0,
+      28.0
+    ],
+    "PaCO2_20_interpretation": "alcalose respiratoire associée dans exercice d’acidose métabolique",
+    "anion_gap_140_minus106_minus12_mmol_L": 22.0,
+    "albumin20_correction_mmol_L": 27.0,
+    "PaO2_80_FiO2_0_4_ratio_mmHg": 200.0,
+    "CaO2_Hb14_sat_0_98_PaO2_90_mL_dL": 18.6548,
+    "DO2_Hb140_DC5_mL_min": 932.7400000000001,
+    "DO2_Hb80_DC5_mL_min": 538.7800000000001
+  },
+  "local_static_checks": {
+    "duplicate_ids": [],
+    "duplicate_templates": [],
+    "missing_local_window_targets": [],
+    "missing_data_cover_ids": [],
+    "owned_candidate_sha256": {
+      "A41_d.html": "035ad19066501be205ffdaf9315f20335143ff48c21d4a7e55c14a677aaf2b2f",
+      "A41_pop2.html": "e000821655ef2126980b2b43f8d92c196ded19a68e7b2c3f38cdb7a53ecccd47"
+    },
+    "canonical_sha256": {
+      "A41_d.html": "508f1452d42ef543ba1fd7519150b98d3c71d2e11ef84cc91907376010aab204",
+      "A41_pop2.html": "107ab25cb44237f62721bb5bfa85bb593f363bfa216c81438626647b067a14bd"
+    },
+    "canonical_unchanged": true,
+    "d_sections": 4,
+    "pop2_templates": 15,
+    "pop2_paretos": 7,
+    "figures_C_numbers": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ]
+  },
+  "browser_or_app_tests_claimed": false,
+  "findings_resolved_during_review": [
+    {
+      "id": "CRP_PROVENANCE",
+      "prior_problem": "ExportPMC161431 bibliographique sans passage clinique6h/48h/IL6.",
+      "resolution": "Rédacteur a reçu JCI18921 réel142329octets SHA e1477ac50f68d73f8c06263d7cba1f0231fbfe1423ffcd0b956accc1456b19f4 ; extraits cliniques relus et concordants.",
+      "currently_blocking": false
+    },
+    {
+      "id": "SCIENCE_NORMAL_BASELINE",
+      "prior_problem": "Figures Anatomie/Histologie démarraient au pathologique.",
+      "resolution": "Fonction normale ajoutée par auteur ; lecture effectuée.",
+      "currently_blocking": false
+    },
+    {
+      "id": "PCT_PRIMARY_EXAMPLES",
+      "prior_problem": "Causes non infectieuses spécifiques seulement génériques.",
+      "resolution": "Delta Delannoy/Wu lu, populations et limites cohérentes.",
+      "currently_blocking": false
+    },
+    {
+      "id": "RENAL_PERCENT_PROVENANCE",
+      "prior_problem": "Chiffre rénal30 % absent des passages exportés reçus.",
+      "resolution": "Rédacteur a retiré ce chiffre, sans attribuer une constante au sepsis ; aucun chiffre médicalement faux déclaré sans preuve.",
+      "currently_blocking": false
+    },
+    {
+      "id": "FIGURE_NUMBERING",
+      "prior_problem": "Sciences1–4 recoupait Pathologie1–3.",
+      "resolution": "Rédacteur C a passé les figures à4–7.",
+      "currently_blocking": false
+    }
+  ],
+  "remaining_reserves": [
+    {
+      "observation": "audit_examens_sciences_pharmacologie-03",
+      "severity": "majeure",
+      "kind": "contrat documentaire encore partiel malgré delta suisse substantiel",
+      "requires": "Intervalle de bicarbonate actuel artériel et applicabilité exacte des profils anioniques au mesuré/calculé utilisés ; aucune substitution standard/actuel/plasma.",
+      "blocking_full_closure": true
+    },
+    {
+      "observation": "audit_examens_sciences_pharmacologie-07",
+      "severity": "mineure",
+      "kind": "traçabilité contraste",
+      "requires": "Source spécifique accessible de pesée bénéfice/risque ; aucun protocole inventé.",
+      "blocking_full_closure": true
+    }
+  ],
+  "decision": "Favorable à la poursuite de validation du candidat identifié, avec réserves03/07 ouvertes. Aucun nouveau dosage faux ou calcul faux démontré dans C sur les preuves relues. Aucune clôture globale ni remplacement de l’audit externe Claude requis avant injection.",
+  "source_edits_in_cross_review": false,
+  "git_mutation": false,
+  "downloaded_code_executed": false,
+  "canonical_injection": false,
+  "publication": false
+}
