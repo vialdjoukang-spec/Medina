@@ -1,0 +1,114 @@
+{
+  "mission": "ALPHA1-CODEX-D64-LANG",
+  "code": "D64",
+  "intitule": "Autres anémies",
+  "modele": "gpt-6.1-sol",
+  "effort": "medium",
+  "heure_utc": "2026-10-15T18:28:27.773833+00:00",
+  "base_worktree_sha": "f664dd9e8da71f647dd3dc4da18f509f8517959c",
+  "source_snapshot_sha": "bfc4576b88a4ce3bb82fb56e291a9d8c2f6bf996",
+  "source_files_sha256": {
+    "chapters/D64/D64_a.html": "1e7bcf527fe27650e43c718551e5e322d30d3f2622e8e2f3680cac226440f30e",
+    "chapters/D64/D64_b.html": "629698cca358305be6b22d8c5d15774575e3484f637101271c11193d636d70b6",
+    "chapters/D64/D64_c.html": "17b07b8fbee4ef4260aeced15274d6a93cf973a850d97964ab24545559dcff21",
+    "chapters/D64/D64_d.html": "19fdc9572d5e465f5c5546ceb15631884bcee1c123ec61d7ffd5d53471f1e66d",
+    "chapters/D64/D64_pop1.html": "9db552ebdc604fd7e0a4141bdb1dc2fb625f0b0fd9b386300034d39ffaf7be6b",
+    "chapters/D64/D64_pop2.html": "9d3d797f0462d79a6525182e0ad1254256c28cdc7a83ee46d42e6e53b55e5063",
+    "glossary/d64.py": "65fc806c9d033ddffd436aae2aef0c705ecd9918196e04c237a8049177c1357b"
+  },
+  "statut": "lecture_textuelle_integrale_et_propositions_locales_livrees_avec_reserves",
+  "type": "linguistique locale sans audit médical croisé",
+  "lecture": {
+    "fichiers_entiers": [
+      "chapters/D64/D64_a.html",
+      "chapters/D64/D64_b.html",
+      "chapters/D64/D64_c.html",
+      "chapters/D64/D64_d.html",
+      "chapters/D64/D64_pop1.html",
+      "chapters/D64/D64_pop2.html",
+      "glossary/d64.py"
+    ],
+    "surfaces": [
+      "4 onglets",
+      "toutes fenêtres locales",
+      "tableaux",
+      "légendes et textes des figures",
+      "quiz/cas et réponses",
+      "résumés",
+      "glossaire Python local entier"
+    ],
+    "methode": "Lecture réelle du texte extrait par html.parser ; a,b,c,pop1,pop2 en segments recouvrants, d entier, glossaire entier. Aucune sortie tronquée D64. Socle réutilisé et attribué I63/G01/D69.",
+    "limites": [
+      "Absence de contrôle visuel des pixels et de rendu navigateur ; légendes et textes embarqués lus.",
+      "Glossaires partagés runtime conditionnellement prioritaires non audités.",
+      "Références bibliographiques lues comme texte du cours ; aucun audit clinique ni vérification des publications en ligne.",
+      "Deltas MED parallèles non lus et non validés."
+    ]
+  },
+  "propositions": {
+    "nombre": 25,
+    "fichier": "propositions.json",
+    "patch": "propositions.patch",
+    "copies": "draft/chapters/D64",
+    "statut": "copies réservées seulement"
+  },
+  "invariants_verifies": {
+    "empreintes_conformes": true,
+    "balises_attributs_ordre_liens_ids_data_k_identiques": true,
+    "suite_nombres_identique": true,
+    "faits": "Relecture locale des 25 paires ; chiffres/unités/négations/conditions/populations/degrés de certitude conservés. Ambiguïtés de sens causal et clinique laissées hors patch.",
+    "preuve": "controles.json"
+  },
+  "reserves_pour_auditeur_medical": [
+    {
+      "id": "MED-01",
+      "fichier": "chapters/D64/D64_b.html",
+      "texte": "La concentration d’hémoglobine diminue la capacité de transport de l’oxygène",
+      "question": "Le sujet paraît avoir perdu le mot diminution : confirmer « La diminution de la concentration… réduit… ». Non appliqué car le sens causal de la phrase serait réparé."
+    },
+    {
+      "id": "MED-02",
+      "fichier": "chapters/D64/D64_a.html",
+      "texte": "au moins 15 % de sidéroblastes en couronne peut remplacer la démonstration de la mutation",
+      "question": "Le médecin doit confirmer l’objet et la portée de substitution à SF3B1 ; une correction grammaticale seule ne certifie pas ce critère."
+    },
+    {
+      "id": "MED-03",
+      "fichier": "chapters/D64/D64_b.html",
+      "texte": "la régression après correction confirme l’imputabilité",
+      "question": "Le corps du cours dit que l’amélioration soutient sans preuve absolue, surtout si plusieurs interventions changent. Harmoniser le degré de certitude médical, sans le réduire automatiquement."
+    },
+    {
+      "id": "MED-04",
+      "fichier": "chapters/D64/D64_c.html",
+      "texte": "70–120 G/L Zone intermédiaire, hyporégénérative ; ≥ 120 G/L Anémie régénérative",
+      "question": "Les bornes se recouvrent à 120 dans la présentation tabulaire. Vérifier la borne exacte et son attribution ; aucun signe changé."
+    },
+    {
+      "id": "MED-05",
+      "fichier": "chapters/D64/D64_d.html",
+      "texte": "Exjade associé aux ... ou à des plaquettes inférieures à 50 G/L",
+      "question": "La phrase coordonne des associations médicamenteuses et une thrombopénie ; une réécriture exige de confirmer quelle condition majore le risque et comment."
+    },
+    {
+      "id": "MED-06",
+      "fichier": "glossary/d64.py",
+      "texte": "Unité érythroïde formant des colonies explosives",
+      "question": "Traduction de burst/colonie : vérifier le terme français spécialisé retenu avant une modification terminologique, sans inventer un développement."
+    },
+    {
+      "id": "MED-07",
+      "fichier": "chapters/D64/D64_b.html",
+      "texte": "les marqueurs de renouvellement de l’hémoglobine peuvent être augmentés",
+      "question": "Renouvellement de l’hémoglobine ou des hématies : le référent biologique doit être confirmé avant simplification."
+    },
+    {
+      "id": "MED-08",
+      "fichier": "chapters/D64/D64_pop1.html",
+      "texte": "La pyridoxine peut améliorer ALAS2. SLC25A38 concerne ... et est habituellement réfractaire.",
+      "question": "Le résumé prend les symboles de gènes comme sujets de l’amélioration/réfractarité. La réécriture devrait nommer la forme clinique ; confirmer les formulations pour conserver les degrés de réponse."
+    }
+  ],
+  "suite": "Arbitrage médical des réserves et relecture effective des deltas MED avant intégration.",
+  "publication": "aucune au moment du rapport ; ni merge ni release"
+}
