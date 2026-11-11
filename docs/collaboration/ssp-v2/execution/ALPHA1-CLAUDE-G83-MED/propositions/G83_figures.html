@@ -1,0 +1,21 @@
+<!-- Propositions ALPHA1-CLAUDE-G83-MED pour les figures (constats C06 et C07, MAJEUR ; règle de Vial du 15.10.2026,
+     docs/collaboration/instructions/FIGURES_ANATOMIQUES_IA_2026-10-15.md).
+     Inventaire : python3 tools/image_clo_finder.py inventory G83 → 5 figures SVG en ligne, aucune image <img>.
+     Origine : les sept fichiers de la leçon ont été introduits par le commit 71fdb467 (auteur Claude, « Betta : injection directe des cycles 31 à 40 »),
+     sans source iconographique : l'origine IA des SVG est démontrée.
+       Figure 1 (G83_a.html, îlot g83-2, aria-label « Figure 1 — Moelle, cône et queue de cheval ») : moelle, cône et racines dessinés → ANATOMIQUE_IA (C06).
+       Figure 2 (G83_b.html, îlot g83-6, « Séquence diagnostique ») : algorithme en quatre boîtes → SCHEMA_NON_ANATOMIQUE, recevable ; chaque boîte est sourcée dans le texte (S6, S10, S11, S3).
+       Figure 3 (G83_b.html, îlot g83-9, « Tronc cérébral et locked-in syndrome ») : trois étages du tronc cérébral dessinés avec un trajet → ANATOMIQUE_IA (C07).
+       Figure 4 (G83_c.html, discipline g83-s-tronc, « Regard horizontal et vertical ») : deux boîtes fonctionnelles et deux flèches, sans forme anatomique → SCHEMA_NON_ANATOMIQUE, recevable (S17).
+       Figure 5 (G83_c.html, discipline g83-s-stat, « Tableau diagnostique ») : tableau 2 × 2 → SCHEMA_NON_ANATOMIQUE, recevable.
+     Recherche d'originaux : python3 tools/image_clo_finder.py candidates --direct "Gray cauda equina" → « commons: HTTP 429; cooldown stored, no retry ».
+     Conformément à la consigne du moteur, aucun nouvel essai n'a été fait ; aucun candidat n'est proposé (LACUNE).
+     Proposition provisoire, sans perte d'information : retirer le dessin et conserver le texte de la légende en paragraphe, jusqu'à l'obtention
+     d'un original sourcé et licencié (planche de Gray du domaine public ou figure CC BY d'un article en libre accès) avec contrôle visuel.
+     Les remplacements ci-dessous ne retirent aucun fait : chaque énoncé des figures figure déjà dans le texte de l'îlot. -->
+
+<!-- C06 — chapters/G83/G83_a.html, îlot g83-2 : remplacer tout l'élément <figure> dont l'aria-label est « Figure 1 — Moelle, cône et queue de cheval » par : -->
+<p>La moelle se termine vers la 2e vertèbre lombaire ; sous ce niveau ne descendent que les racines lombaires et sacrées, et les racines de la 2e à la 5e sacrée commandent la vessie, l’intestin, la sensibilité du périnée et la fonction sexuelle [S5].</p>
+
+<!-- C07 — chapters/G83/G83_b.html, îlot g83-9 : remplacer tout l'élément <figure> dont l'aria-label est « Figure 3 — Tronc cérébral et locked-in syndrome » par : -->
+<p>Trois niveaux du tronc cérébral expliquent le tableau : le mésencéphale commande le regard vertical et la paupière, préservés dans la forme classique ; la base du pont porte les faisceaux corticospinaux et corticobulbaires, dont la lésion produit le syndrome ; la formation réticulée pontique paramédiane commande le regard horizontal [S17].</p>
