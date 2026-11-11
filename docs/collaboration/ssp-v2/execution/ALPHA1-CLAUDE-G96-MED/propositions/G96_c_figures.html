@@ -1,0 +1,24 @@
+<!-- Proposition ALPHA1-CLAUDE-G96-MED, constats C05, C06 et C17 (figures de G96_c.html).
+     Revue IA, aucune validation médicale humaine ; aucune image n’est publiée sans contrôle visuel et vérification de licence par l’intégrateur. -->
+
+<!-- (1) C05 et C17 — Figure 2 (g96-s-physio-cours) : remplacer tout le <figure aria-label="Volumes intracrâniens">…</figure> par la version ci-dessous.
+     Erreur corrigée : dans l’original, le rectangle « Sang / Perte » (x=460, hauteur 40) est plus bas que « Sang / Normal » (x=360, hauteur 80) :
+     la figure montre une baisse du sang, à l’inverse de sa légende et de la doctrine de Monro-Kellie [S5]. Police rendue à 390 px : 11,7 px (au lieu de 7,3 px). -->
+<figure aria-label="Volumes intracrâniens"><svg viewBox="0 0 460 260" role="img" aria-label="Figure 2 — Doctrine de Monro-Kellie : après la fuite, le volume de liquide diminue et le volume sanguin intracrânien augmente pour le compenser ; schéma qualitatif" font-size="15"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="30" y="40" width="80" height="170"/><rect x="30" y="130" width="80" height="80"/><rect x="130" y="40" width="80" height="170"/><rect x="130" y="170" width="80" height="40"/><rect x="250" y="40" width="80" height="170"/><rect x="250" y="150" width="80" height="60"/><rect x="350" y="40" width="80" height="170"/><rect x="350" y="100" width="80" height="110"/></g><g fill="currentColor" text-anchor="middle"><text x="120" y="25">Liquide</text><text x="340" y="25">Sang</text><text x="70" y="235">Normal</text><text x="170" y="235">Fuite</text><text x="290" y="235">Normal</text><text x="390" y="235">Fuite</text><text x="170" y="160">↓</text><text x="390" y="90">↑</text></g></svg><figcaption>Figure 2 — Schéma didactique non calibré de la doctrine de Monro-Kellie. À gauche, le volume de liquide diminue après la fuite ; à droite, le volume sanguin intracrânien augmente en compensation. Les hauteurs ne représentent aucune mesure. D’après S5.</figcaption></figure>
+
+<!-- (2) C06 et C17 — Figure 1 (g96-s-anat-cours) : dessin SVG de la dure-mère et des trois types de fuite, créé par l’agent de rédaction du cycle Betta 41
+     (rapport de rédaction : « 2 figures SVG ») : classe ANATOMIQUE_IA (règle de Vial du 15.10.2026), constat MAJEUR. Police rendue 7,8 px à 390 px.
+     Remplacement : retrait du SVG et insertion d’un original réel sourcé. Trois candidats, tous issus d’un article sous licence CC BY 4.0
+     (Luetzen N, Dovi-Akue P, Fung C, Beck J, Urbach H. Neuroradiology 2021;63:1765–1772, doi:10.1007/s00234-021-02766-z, PMC8528761 ;
+     la licence de l’article couvre les images « unless indicated otherwise in a credit line » ; aucune mention contraire relevée dans le XML des figures).
+     Contrôle visuel des images NON réalisé par l’audit : il reste à faire avant publication.
+       a) Fig. 2 — type 1, myélographie dynamique par soustraction numérique en procubitus, fuite ventrale L1/2
+          https://pmc.ncbi.nlm.nih.gov/articles/PMC8528761/figure/Fig2/ (fichier 234_2021_2766_Fig2_HTML.jpg)
+       b) Fig. 4 — type 2, myélographie en décubitus latéral droit, diverticule méningé Th10/11 qui fuit
+          https://pmc.ncbi.nlm.nih.gov/articles/PMC8528761/figure/Fig4/ (fichier 234_2021_2766_Fig4_HTML.jpg)
+       c) Fig. 6 — type 3, fistule liquido-veineuse Th10/11 et embolisation par voie azygos
+          https://pmc.ncbi.nlm.nih.gov/articles/PMC8528761/figure/Fig6/ (fichier 234_2021_2766_Fig6_HTML.jpg)
+     Attribution proposée : « Luetzen N et al., Neuroradiology 2021, figure n, CC BY 4.0 ; recadrage éventuel signalé ». -->
+<figure aria-label="Types de fuite spinale"><img src="assets/img/g96/luetzen2021_fig4.jpg" alt="Myélographie en décubitus latéral droit montrant un diverticule méningé qui fuit au niveau Th10/11, puis une myélotomodensitométrie montrant le contraste extradural d’une fuite proximale"><figcaption>Figure 1 — Fuite de type 2 : diverticule méningé qui fuit (myélographie en décubitus latéral, puis tomodensitométrie). Luetzen N et collaborateurs, Neuroradiology 2021, figure 4, licence CC BY 4.0. La déchirure ventrale (type 1) et la fistule liquido-veineuse (type 3) sont illustrées par les figures 2 et 6 du même article.</figcaption></figure>
+<!-- Le texte de l’îlot (trois lieux anatomiques, liste ordonnée des trois types) est conservé ; seule la figure change.
+     Note : la figure faite d’une image réelle avec alt et figcaption attribuée déclenche un faux positif connu de tests/audit_sciences.py (SEM-03, précision du coordinateur). -->

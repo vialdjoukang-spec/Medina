@@ -1,0 +1,15 @@
+<!-- Proposition ALPHA1-CLAUDE-G96-MED, constats C07 (MAJEUR, calcul), C18 et C19 (MINEURS) — chapters/G96/G96_a.html.
+     Références [Sx] : sources.json de ce dossier. -->
+
+<!-- (1) C07 — g96-2, ancre : « Dans chaque série les pourcentages totalisent plus de 100 % ; les sources lues n’expliquent pas cet écart, et l’existence de fuites à plusieurs sites n’est qu’une hypothèse. »
+     Recalcul (calculs/resultats.json, P03 et P04) : 46 + 44 + 15 + 11 = 116 % ; 30 + 17 + 16 = 63 %. La seconde série ne dépasse pas 100 %.
+     De plus, la première série décrit les sites de lésion des fractures de la base antérieure, non les sites de fuite [S12, Introduction]. -->
+<p data-src="S12">Pour la rhinorrhée, les sites diffèrent selon la cause. Après traumatisme, une revue systématique situe les lésions des fractures de la base antérieure à l’ethmoïde et à la lame criblée (46 %), au sinus frontal (44 %), au toit orbitaire (15 %) et au sphénoïde (11 %) ; le total de 116 % implique, si tous les pourcentages portent sur les mêmes patients, que certains ont plusieurs sites lésés ; la source ne le précise pas. Sans traumatisme, dans l’hypertension intracrânienne idiopathique, les défauts siègent surtout au sphénoïde (30 %), puis à l’ethmoïde (17 %) et à la lame criblée (16 %) ; ces trois sites totalisent 63 %, le reste n’étant pas détaillé par la source.</p>
+
+<!-- (2) C18 — g96-2, ancre : « L’incidence de l’hypotension intracrânienne spontanée est estimée à 3,7 pour 100 000 personnes par an dans le consensus britannique de 2023 » -->
+<p data-src="S2 S5">L’incidence de l’hypotension intracrânienne spontanée est estimée à 3,7 pour 100 000 personnes par an par une étude communautaire de Beverly Hills (2006–2020), citée par le consensus britannique de 2023, et à environ 5 pour 100 000 par an dans la revue de Fribourg, qui l’extrapole d’une étude de Los Angeles. Les deux valeurs viennent de Californie ; aucune n’est une mesure suisse ou européenne.</p>
+
+<!-- (3) C19 — g96-1, après « l’écoulement après ponction lombaire en est exclu et relève de G97.0 », ajouter : -->
+<p data-src="S1">La même classification range ailleurs deux situations voisines : la fistule de liquide céphalorachidien postopératoire relève de G97.80, et la baisse de la pression intracrânienne après une dérivation ventriculaire de G97.2. Une rhinorrhée apparue après une chirurgie de la base du crâne ne se code donc pas G96.0.</p>
+<!-- et ajouter au glossaire (glossary/g96.py, boucle des codes) : ('G97.80', 'Fistule de liquide céphalorachidien postopératoire', 'Code de la fistule apparue après une intervention ; distinct de G96.0.'),
+     ('G97.2', 'Baisse de la pression intracrânienne après dérivation ventriculaire', 'Code distinct de l’hypotension intracrânienne spontanée (G96.0).') -->
