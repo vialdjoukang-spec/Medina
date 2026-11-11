@@ -1,0 +1,34 @@
+<!-- Proposition d'audit ALPHA1-CLAUDE-G80-MED — figures (constats C07 MAJEUR, C18 MINEUR).
+     Règle de Vial du 15.10.2026 (docs/collaboration/instructions/FIGURES_ANATOMIQUES_IA_2026-10-15.md).
+     Mesure de lisibilité : taille rendue = font-size × 358 / largeur du viewBox (largeur utile 390 px − 2 × 16 px), calcul scripté. -->
+
+<!-- 1. chapters/G80/G80_c.html, discipline g80-s-anat : Figure 2 (ANATOMIQUE_IA, origine démontrée : commit 71fdb467,
+        « Betta : injection directe des cycles 31 à 40 », auteur Claude). Retrait de la figure entière
+        (<figure><svg viewBox="0 0 640 260" … Figure 2 — Hanche centrée et hanche déplacée … </figure>) et remplacement provisoire : -->
+<!-- nouveau -->
+<p>Le tableau remplace provisoirement le schéma de hanche, retiré parce qu’il s’agissait d’un dessin anatomique non sourcé. Il donne les repères radiologiques que la surveillance utilise.</p>
+<table class="t"><thead><tr><th>Repère</th><th>Hanche en place</th><th>Hanche déplacée</th><th>Source</th></tr></thead><tbody>
+<tr><td>Pourcentage de migration de Reimers</td><td>40 % ou moins</td><td>Plus de 40 %</td><td>[S9]</td></tr>
+<tr><td>Zone intermédiaire surveillée</td><td colspan="2">33 à 39 % : 9 % des 212 enfants ; contrôle radiographique supplémentaire au-delà de 33 %</td><td>[S9]</td></tr>
+<tr><td>Amplitude passive</td><td colspan="2">Pas de différence significative au moment du déplacement : mauvais indicateur</td><td>[S9]</td></tr>
+</tbody></table>
+<p>Le tableau se lit ligne par ligne : seul le pourcentage de migration, mesuré sur la radiographie, distingue la hanche déplacée ; l’examen de l’amplitude ne la reconnaît pas.</p>
+<!-- Candidat iconographique (au plus 3) : 1 seul trouvé avant le délai d'attente Commons (HTTP 429 au 2e essai, aucun nouvel essai) :
+     « File:Ball and Socket Joint (Hip joint).svg », https://commons.wikimedia.org/wiki/File:Ball_and_Socket_Joint_(Hip_joint).svg,
+     auteur Kcotton15, CC BY-SA 4.0, « Own work », 2015 ; anatomie générale de la hanche (fémur, col, tête, acétabulum, labrum, bassin),
+     ne montre pas la migration. Contrôle visuel non réalisé ; publication_ready = false. Attribution proposée :
+     « Kcotton15, Ball and Socket Joint (Hip joint), Wikimedia Commons, CC BY-SA 4.0 ». Une radiographie de migration de Reimers
+     sourcée et licenciée reste à trouver. -->
+
+<!-- 2. chapters/G80/G80_c.html, discipline g80-s-physio : Figure 3 (SCHEMA_NON_ANATOMIQUE) — C18 : le mot « Spastique » est placé
+        dans la moitié supérieure (« mouvement augmenté »), ce que la source ne dit pas (S4 ne décrit pour la forme spastique que le tonus). -->
+<!-- ancien -->
+<text x="480" y="115" font-size="16" font-weight="bold">Spastique</text><text x="480" y="135">tonus augmenté</text>
+<!-- nouveau -->
+<text x="560" y="145" font-size="16" font-weight="bold">Spastique</text><text x="560" y="165">tonus augmenté (mouvement non classé)</text>
+
+<!-- 3. Lisibilité à 390 px (C18) : les cinq figures ont un viewBox de 640 de large ; les textes rendus mesurent 7,3 à 8,9 px
+        (Figure 1 : 8,4 ; Figure 2 : 7,3–8,4 ; Figure 3 : 8,4–8,9 ; Figure 4 : 7,8 ; Figure 5 : 7,8–8,9), sous le seuil de 11–12 px
+        retenu pour G71. Proposition : redessiner chaque schéma non anatomique dans un viewBox de 360 de large avec un corps de 13
+        (12,9 px rendus), comme la Figure S1 de G80_c_semio.html. Dans la Figure 5, la ligne « Baclofène : récepteur GABA-B →
+        libération réduite » (corps 14, environ 50 caractères) déborde visuellement la boîte de 280 de large. -->
