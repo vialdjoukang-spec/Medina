@@ -1,0 +1,302 @@
+{
+  "mission": "ALPHA1-CLAUDE-G81-LANG",
+  "code": "G81",
+  "type_audit": "linguistique",
+  "base_sha": "103745baaa38c76f18288758cc7f689e5091ccdb",
+  "generation": 1,
+  "branche": "claude/alpha1/g81-lang-g1",
+  "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G81-LANG",
+  "conversation": "alpha1-claude-g81-lang",
+  "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+  "modele_effort": "conforme au manifeste",
+  "date_debut": null,
+  "date_fin": "2026-10-16T09:27:48Z",
+  "date_debut_note": "Heure de début non relevée par date -u au démarrage ; aucune valeur estimée n’est présentée comme observée.",
+  "lecture": {
+    "fichiers": [
+      "chapters/G81/G81_a.html",
+      "chapters/G81/G81_b.html",
+      "chapters/G81/G81_c.html",
+      "chapters/G81/G81_d.html",
+      "chapters/G81/G81_pop1.html",
+      "chapters/G81/G81_pop2.html",
+      "glossary/g81.py"
+    ],
+    "empreintes_conformes": true,
+    "empreintes_calculees": {
+      "chapters/G81/G81_a.html": "344cce244a5da2a9b5dce1422e45b147b70bc5a67eb2a83a5ce97cc241eb1529",
+      "chapters/G81/G81_b.html": "7ee69ceba5caac9a22a33e7c83ee0f1915219519b718e53969a51269c72b1b02",
+      "chapters/G81/G81_c.html": "82ff88a1c0b60430bee6ac6d4545bc14ec888d7be7890b4e2e8734c2a8463d72",
+      "chapters/G81/G81_d.html": "266495a90c3b3cc393b07c4bcde1f5fb1c7540e1410c962229716fc64a6b8aa1",
+      "chapters/G81/G81_pop1.html": "880f69b98d06cb8e1435dd70d41cfbd1eac00d7d40bb80c769f00a5a23d806b4",
+      "chapters/G81/G81_pop2.html": "14db67d061cdf9bea0e2283b9321a9a7a9d9986695e77a50c1c2d05133687339",
+      "glossary/g81.py": "c556b8bab3d1dd3638ca552ede266ad5c5ecccba0d86f29c2de26eea8551db2d"
+    },
+    "note_base": "Le manifeste fixe base_sha 523832d9 ; le worktree est sur 103745ba (descendant). Aucun des sept fichiers de la leçon n’a changé entre les deux commits (empreintes identiques au manifeste)."
+  },
+  "premiere_verification": "Recalcul des SHA-256 des 7 fichiers contre .medina/missions/ALPHA1-CLAUDE-G81-LANG.json (tous conformes) ; lecture intégrale des 7 fichiers ; contrôle des abréviations par build_medina.audit() sur les six fichiers HTML avant (résultat {}) puis après application simulée des propositions (résultat {}).",
+  "synthese": {
+    "nombre_propositions": 98,
+    "renvois_medicaux": 21,
+    "propositions_par_categorie": {
+      "syntaxe": 37,
+      "grammaire": 12,
+      "registre": 12,
+      "ambiguïté": 11,
+      "cohérence": 11,
+      "terminologie": 5,
+      "typographie": 3,
+      "répétition": 2,
+      "orthographe": 2,
+      "précision": 2,
+      "ponctuation": 1
+    },
+    "propositions_par_fichier": {
+      "chapters/G81/G81_a.html": 25,
+      "chapters/G81/G81_b.html": 28,
+      "chapters/G81/G81_c.html": 16,
+      "chapters/G81/G81_d.html": 20,
+      "chapters/G81/G81_pop1.html": 2,
+      "chapters/G81/G81_pop2.html": 5,
+      "glossary/g81.py": 2
+    }
+  },
+  "propositions_fichier": "propositions.json",
+  "verification_unicite": {
+    "methode": "script Python : ancien.count(fichier) == 1 pour chacune des 98 propositions ; absence de chevauchement entre propositions d’un même fichier (intervalles disjoints) ; application simulée en mémoire sur une copie temporaire du dépôt (glossaire et moteur inclus) ; build_medina.audit() == {} sur les six fichiers HTML ; mêmes comptes de balises (button, b, p, div, section, span, template, table, td, tr, h3, h4, svg, text) et mêmes clés data-k avant et après ; aucune valeur numérique perdue (le seul chiffre nouveau, « 81 », provient de « G81 » écrit dans la phrase P-06).",
+    "toutes_uniques": true,
+    "sans_chevauchement": true,
+    "audit_abreviations_apres_application": {},
+    "glossaire_charge_apres_application": true
+  },
+  "constats": [
+    {
+      "id": "R-01",
+      "fichier": "chapters/G81/G81_a.html",
+      "ancre": "Entité distincte du bloc.",
+      "categorie": "classification",
+      "explication": "Le tableau place G83.5 (syndrome de verrouillage) parmi les codes « à ne pas confondre » avec le critère « Entité distincte du bloc », alors que la même section situe G83 dans le bloc G80–G83 et que le glossaire (g81.py) écrit « Code voisin de G81 dans le même bloc de la classification ». Le critère de distinction est donc contradictoire ou mal formulé. Le corriger suppose de choisir le fait de classification exact (par exemple une entité distincte de G81 au sein du bloc) : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-02",
+      "fichier": "chapters/G81/G81_a.html",
+      "ancre": "Le Babinski apparaît tôt ; la spasticité plus tard.",
+      "categorie": "chronologie",
+      "explication": "La phrase précédente range le signe de Babinski parmi les signes positifs qui « viennent ensuite » (après les signes négatifs) ; la phrase ci-dessus le dit précoce, et la figure 1 l’oppose à une spasticité « plus tardive ». Le Babinski est donc à la fois « ensuite » et « tôt ». Reformuler la chronologie des signes positifs change le fond : à trancher par l’audit médical (P-10 ne corrige que la forme « le Babinski » → « le signe de Babinski »).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-03",
+      "fichier": "chapters/G81/G81_a.html",
+      "ancre": "Lésion</text><text x=\"68\" y=\"52\">du neurone",
+      "categorie": "précision",
+      "explication": "Dans la figure 1, la première boîte porte l’étiquette « Lésion du neurone », sans « moteur supérieur » : le neurone lésé n’est pas identifié, alors que le titre de la figure parle du « motoneurone supérieur ». Compléter l’étiquette précise la lésion en cause (lésion du motoneurone supérieur ou de la voie descendante) et modifie le schéma : à trancher par l’audit médical (contrainte de largeur de la boîte à vérifier au rendu).",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-04",
+      "fichier": "chapters/G81/G81_a.html",
+      "ancre": "multiplie le risque de spasticité (rapport de cotes,",
+      "categorie": "statistique/causalité",
+      "explication": "Un rapport de cotes de 6,57 n’est pas un multiplicateur du risque ; le glossaire (clé « OR ») et la fenêtre g81-prevalence le précisent (« ce n’est pas un risque absolu »). « Multiplie le risque » présente donc l’OR comme un risque relatif. La reformulation correcte (« multiplie les cotes ») ou l’abandon du verbe change l’énoncé statistique : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-05",
+      "fichier": "chapters/G81/G81_a.html",
+      "ancre": "La spasticité traduit un déséquilibre facilitation/inhibition, une plasticité de la moelle et une part mécanique du muscle qui se raccourcit.",
+      "categorie": "causalité/définition",
+      "explication": "L’épilogue de la section 3 range la « part mécanique du muscle » parmi ce que « traduit » la spasticité. Or la sous-section 3.4 et la fenêtre g81-intrinseque présentent cette part comme une hypertonie non réflexe, distincte de la spasticité (qui est réflexe et dépendante de la vitesse). L’épilogue omet par ailleurs la plasticité cérébrale citée en 3.3 (« plasticité spinale et cérébrale »). Toute correction modifie l’énoncé physiopathologique : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-06",
+      "fichier": "chapters/G81/G81_a.html",
+      "ancre": "Parésie sévère et AVC hémorragique : facteurs de risque de spasticité.",
+      "categorie": "cohérence chiffrée",
+      "explication": "L’épilogue de la section 4 parle de « parésie sévère », alors que le corps du texte (OR 6,57) et la fenêtre g81-prevalence parlent de « parésie modérée à sévère ». P-15 conserve volontairement « sévère » ; l’alignement sur « modérée à sévère » est une correction de fond (graduation de la parésie) : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-07",
+      "fichier": "chapters/G81/G81_a.html",
+      "ancre": "Un patient qui tousse en mangeant ou qui s’étouffe est un patient à dépister avant toute alimentation orale.",
+      "categorie": "logique/conduite",
+      "explication": "La phrase est inexacte dans sa logique : un patient qui tousse en mangeant a déjà mangé ; le dépistage de la dysphagie est recommandé chez tous les patients avant toute alimentation orale (voir 8.2 et 9.2), non seulement chez ceux qui toussent. En outre « L’hémiparésie … masque parfois un trouble de la déglutition » attribue à l’hémiparésie un masquage dont le sujet réel est l’apparence « seulement faible » du patient. Reformuler change la conduite énoncée : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-08",
+      "fichier": "chapters/G81/G81_a.html",
+      "ancre": "Les patients sont plus jeunes, plus souvent des femmes, avec moins de facteurs de risque vasculaire et des symptômes moins sévères.",
+      "categorie": "comparaison implicite",
+      "explication": "Les comparatifs (« plus jeunes », « moins sévères ») n’ont pas de terme de comparaison dans la phrase. Le terme est vraisemblablement « les patients ayant un AVC » (voir la fenêtre g81-mimics), mais l’expliciter revient à ajouter un fait de comparaison que la phrase ne porte pas : à confirmer par l’audit médical avant ajout.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-09",
+      "fichier": "chapters/G81/G81_a.html",
+      "ancre": "sans précision, ancienne ou de longue date avec une cause non précisée",
+      "categorie": "codage",
+      "explication": "La règle d’usage du code primaire/supplémentaire est formulée de trois manières : ici « sans précision, ancienne ou de longue date avec une cause non précisée » (portée de « avec une cause non précisée » ambiguë : concerne-t-elle les trois cas ou le seul cas de longue date ?), dans l’épilogue de la section 1 (« la cause est inconnue ou ancienne »), et dans l’encadré de la section 12 (« la cause est non précisée ou ancienne »). Les trois énoncés ne sont pas équivalents (« inconnue » ≠ « non précisée »). Les harmoniser suppose de relire le texte du BfArM : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-10",
+      "fichier": "chapters/G81/G81_a.html",
+      "ancre": "Le dossier de recherche ne distingue pas hémiparésie et hémiplégie",
+      "categorie": "registre/portée",
+      "explication": "Le mot « dossier » (36 occurrences dans les sept fichiers, dont « le dossier ne contient pas… », « ce dossier ») désigne la base de sources de fabrication du cours, vocabulaire interne que la règle d’annonce pédagogique proscrit (« aucune formule de chantier »). Le remplacer par « la classification » ou « la source » change l’objet de l’assertion (limite des sources lues versus propriété de la classification) : à trancher par l’audit médical, au cas par cas.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-11",
+      "fichier": "chapters/G81/G81_b.html",
+      "ancre": "Ils agissent sur la part mécanique du muscle, que les médicaments n’atteignent pas.",
+      "categorie": "absolu",
+      "explication": "« Que les médicaments n’atteignent pas » est un énoncé absolu. La sous-section 3.4 dit que les médicaments agissent « surtout » sur la part réflexe, ce qui laisse une action partielle possible sur la part intrinsèque. Nuancer ou conserver l’absolu change le fond : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-12",
+      "fichier": "chapters/G81/G81_b.html",
+      "ancre": "expliquent mal l’échec dans la majorité des situations ; l’immunogénicité n’est pas la cause la plus fréquente de non-réponse",
+      "categorie": "contradiction chiffrée",
+      "explication": "Le paragraphe affirme que les anticorps neutralisants « expliquent mal l’échec dans la majorité des situations » et ne sont « pas la cause la plus fréquente », alors que la section e-4 et la fenêtre g81-immuno donnent une sensibilité de 56 % pour expliquer une non-réponse secondaire (ils l’expliqueraient donc dans plus de la moitié des cas où elle survient). Les deux énoncés ne sont pas conciliables sans précision sur la population (1 % de tous les patients versus non-répondeurs secondaires). La phrase ne peut pas être réécrite sans trancher cette incohérence : à trancher par l’audit médical. Les deux propositions de la phrase sont en outre redondantes.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-13",
+      "fichier": "chapters/G81/G81_b.html",
+      "ancre": "sont les complications fréquentes.",
+      "categorie": "fréquence",
+      "explication": "L’encadré d’urgence qualifie le risque de chute et la douleur de « complications fréquentes », alors que la section 5.2 précise que « le dossier ne donne aucune fréquence » des symptômes séquellaires ; le déterminant « les » suppose en outre une liste exhaustive. Remplacer « les complications fréquentes » par « des complications possibles » change le fond : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-14",
+      "fichier": "chapters/G81/G81_b.html",
+      "ancre": "traiter l’une soulage souvent l’autre",
+      "categorie": "fréquence",
+      "explication": "« Souvent » quantifie un effet que la fenêtre g81-douleur énonce au mode du possible (« Traiter l’une peut soulager l’autre »). Remplacer par « peut soulager » est une correction de fréquence : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-15",
+      "fichier": "chapters/G81/G81_b.html",
+      "ancre": "Thérapie de groupe spécifique non inférieure (équilibre, vitesse, endurance)",
+      "categorie": "comparaison implicite",
+      "explication": "« Non inférieure » n’a pas de terme de comparaison dans la cellule ; le libellé de la ligne (« Groupe ou individuel ») suggère « à la thérapie individuelle ». Expliciter ajoute un fait de comparaison : à confirmer par l’audit médical avant ajout.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-16",
+      "fichier": "chapters/G81/G81_b.html",
+      "ancre": "augmentation du tonus dépendante de la vitesse d’étirement",
+      "categorie": "définition",
+      "explication": "L’encadré des critères formels résume la définition de Lance par « augmentation du tonus dépendante de la vitesse d’étirement », alors que la fenêtre g81-lance (reprise du texte de Trompetto 2014) la formule : « augmentation, dépendante de la vitesse, des réflexes toniques d’étirement ». « Tonus » et « réflexes toniques d’étirement » ne sont pas synonymes (voir 3.4 : le tonus comporte une part non réflexe). Harmoniser change la définition : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-17",
+      "fichier": "chapters/G81/G81_c.html",
+      "ancre": "la biologie vient ensuite",
+      "categorie": "omission",
+      "explication": "Le paragraphe de lecture du tableau e-1 range « la biologie » entre l’imagerie et les échelles, alors que le tableau ne contient aucun examen biologique et que le dossier n’en documente aucun. L’affirmation est donc non sourcée ; la supprimer ou la sourcer change le fond : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-18",
+      "fichier": "chapters/G81/G81_c.html",
+      "ancre": "d’où une amélioration en deux semaines et un effet maximal en quatre à six semaines",
+      "categorie": "causalité",
+      "explication": "Le connecteur « d’où » fait du relâchement local du muscle la cause du délai d’apparition de l’effet (2 semaines, puis 4 à 6 semaines). Cette causalité n’est pas portée par l’information professionnelle citée, qui donne seulement les délais. Le remplacer par « avec » est une correction de causalité : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-19",
+      "fichier": "chapters/G81/G81_d.html",
+      "ancre": "rétention urinaire en cas d’hypertonie sphinctérienne",
+      "categorie": "précaution",
+      "explication": "La précaution « rétention urinaire en cas d’hypertonie sphinctérienne » est ambiguë : s’agit-il d’une rétention urinaire existante (par hypertonie du sphincter) qui impose la prudence, ou d’un risque de rétention en cas d’hypertonie ? La fenêtre g81-baclofene la réduit à « rétention urinaire ». Seule l’information professionnelle (Liorésal) permet de trancher : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-20",
+      "fichier": "chapters/G81/G81_d.html",
+      "ancre": "n’ont pas été lues en entier",
+      "categorie": "cohérence",
+      "explication": "La section p-5 dit que les informations professionnelles de Dysport®, Xeomin et Liorésal intrathécal® « n’ont pas été lues en entier », alors que p-1, p-2 et les fenêtres g81-botox et g81-intrathecal disent « textes non lus » et « n’a pas été lu ». Lu partiellement ou non lu : état de lecture à consigner par l’audit médical, car il détermine la prudence du cours.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    },
+    {
+      "id": "R-21",
+      "fichier": "chapters/G81/G81_pop1.html",
+      "ancre": "niveau de preuve très faible",
+      "categorie": "cohérence",
+      "explication": "La fenêtre g81-todd juge le niveau de preuve de la paralysie de Todd « très faible », la section 4 (G81_a) dit « faible » pour le même rapport de cas. Une seule graduation doit être retenue : à trancher par l’audit médical.",
+      "nature": "renvoi_medical",
+      "occurrences_ancre": 1
+    }
+  ],
+  "differes": [
+    "Espaces insécables globales (avant ; : ! ?, dans les guillemets « », dans les nombres) : non appliquées, ni proposées. Les sept fichiers ne contiennent aucun U+00A0 ni U+202F (442 occurrences d’une espace ordinaire avant ; : ! ? dans le texte des six fichiers HTML) ; la correction relève d’une passe mécanique unique, non d’un choix local.",
+    "Harmonisation des plages de valeurs : tiret « - » (2018-2019, 2014-2022), demi-cadratin « – » (50–200 U, 4,5–9 h) et « à » / « et » coexistent ; choix éditorial différé.",
+    "Écriture « Liorésal » avec ou sans ® (quiz et feedback de 9.4 sans ®, sections p-1 et p-4 avec ®) : harmonisation limitée à BOTOX® et Xeomin® (P-46, P-50, P-52, P-76, P-78, P-88, P-95 ; Dysport® et Liorésal intrathécal® portent déjà ®) ; le reste est différé."
+  ],
+  "observations": [
+    "Annonce pédagogique : « Ce cours poursuit cinq objectifs » (section 0) décrit le cours lui-même, ce que STYLE_REDACTION § 3 proscrit ; la remplacer exige de réécrire le paragraphe entier (changement de structure), non une formulation locale. Même remarque pour « Ce cours ne chiffre donc pas… », « Ce cours ne les détaille pas », « Ce cours retient la version… » et « Ce cours ne donne ni indication précise… » (fenêtre g81-intrathecal).",
+    "Vocabulaire de fabrication : « le dossier » (36 occurrences), « sources lues », « lacune assumée », « résumé seul lu ». Ces tours portent un fait sur l’état de lecture des sources ; ils sont conservés (voir R-10).",
+    "Anglicismes conservés : thumb rolling test, forearm rolling, index finger rolling, pronator drift (noms d’épreuves sans équivalent français établi dans la leçon), abstract (« l’abstract et la question PICO 3 »), « paquet de transfert » (calque de transfer package, section 9.3), Swiss Medical Forum. Leur remplacement exige un choix terminologique de l’audit médical.",
+    "Listes « Pareto » et encadrés « Paramètres clés » : puces nominales et valeurs symboliques (≤, ×, +) conservées car elles résument des valeurs ; seules les phrases rédigées ont été reprises.",
+    "Intervalle de réinjection exprimé en mois pour le membre supérieur (« 2 mois ») et en semaines pour le membre inférieur (« 12 semaines ») : unités différentes pour une comparaison immédiate ; fond non modifié.",
+    "Libellé « Piège » (balise trap) employé pour des limites de sources (section 4, e-2, p-5) : intitulé de classe, non modifié.",
+    "Le tableau du différentiel (7.1) répète le rang « 1 » pour deux hypothèses et classe « par gravité » une paralysie de Todd avant les pseudo-AVC sans critère de gravité explicite : choix de présentation à confirmer."
+  ],
+  "figures": {
+    "portee_controle": "Le contrôle a porté sur le texte des figures (légendes, étiquettes), pas sur leur provenance.",
+    "inventaire": [
+      {
+        "figure": "Figure 1 (G81_a.html, chronologie du syndrome du motoneurone supérieur)",
+        "classe": "schéma SVG non anatomique",
+        "statut": "transmis à l’audit MED",
+        "note": "Étiquette « Lésion du neurone » incomplète (voir R-03). Aucune provenance vérifiée."
+      },
+      {
+        "figure": "Figure 2 (G81_b.html, séquence diagnostique)",
+        "classe": "schéma SVG non anatomique",
+        "statut": "transmis à l’audit MED",
+        "note": "Légende conforme ; la proposition P-27 corrige le mot « simulateurs » de la légende."
+      }
+    ]
+  },
+  "lacunes": [
+    "Aucune vérification médicale n’a été faite : les renvois_medicaux signalent des formulations dont la correction changerait le fond ; ils ne sont ni confirmés ni infirmés.",
+    "Aucune lecture des sources primaires citées : les écarts avec les sources sont établis seulement par comparaison interne entre les sept fichiers de la leçon.",
+    "Aucun contrôle de rendu navigateur des propositions : l’application simulée a été faite en mémoire sur une copie temporaire ; aucun fichier canonique n’est modifié.",
+    "Le choix « simulateur » → « pseudo-AVC » (P-01, P-02, P-24, P-26, P-27, P-28, P-35) repose sur le sens usuel de « simulateur » en français médical (patient qui feint) et sur le glossaire interne de la leçon (« pseudo-AVC (imitateurs de l’AVC) ») ; aucune ressource terminologique externe n’a été consultée.",
+    "Les 98 propositions sont jugées « fond inchangé » par comparaison avec le reste de la leçon ; quelques-unes aident à lever une ambiguïté en retenant la lecture que le contexte impose (P-05, P-20, P-23, P-25, P-31, P-41, P-67, P-68, P-92) : l’auditeur médical doit les relire avant intégration."
+  ],
+  "mention": "Audit IA — revue distincte d'une validation médicale humaine ; aucune source canonique modifiée"
+}
