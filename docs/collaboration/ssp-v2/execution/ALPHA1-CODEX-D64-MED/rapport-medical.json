@@ -1,0 +1,216 @@
+{
+  "mission": "ALPHA1-CODEX-D64-MED",
+  "code": "D64",
+  "titre": "Autres anémies",
+  "model": "gpt-6.1-sol",
+  "effort": "high",
+  "base_sha": "f664dd9e8da71f647dd3dc4da18f509f8517959c",
+  "source_snapshot_sha": "bfc4576b88a4ce3bb82fb56e291a9d8c2f6bf996",
+  "date_utc": "2026-10-15T18:38:35.254639+00:00",
+  "statut": "AUDIT_LIVRE_AVEC_RESERVES_BLOQUANTES",
+  "validation_medicale_humaine": false,
+  "audit_croise": false,
+  "scope": "Lecture intégrale7sources et6figures ; contrôle externe ciblé, aucune complétude clinique exhaustive revendiquée.",
+  "source_files_sha256": {
+    "chapters/D64/D64_a.html": "1e7bcf527fe27650e43c718551e5e322d30d3f2622e8e2f3680cac226440f30e",
+    "chapters/D64/D64_b.html": "629698cca358305be6b22d8c5d15774575e3484f637101271c11193d636d70b6",
+    "chapters/D64/D64_c.html": "17b07b8fbee4ef4260aeced15274d6a93cf973a850d97964ab24545559dcff21",
+    "chapters/D64/D64_d.html": "19fdc9572d5e465f5c5546ceb15631884bcee1c123ec61d7ffd5d53471f1e66d",
+    "chapters/D64/D64_pop1.html": "9db552ebdc604fd7e0a4141bdb1dc2fb625f0b0fd9b386300034d39ffaf7be6b",
+    "chapters/D64/D64_pop2.html": "9d3d797f0462d79a6525182e0ad1254256c28cdc7a83ee46d42e6e53b55e5063",
+    "glossary/d64.py": "65fc806c9d033ddffd436aae2aef0c705ecd9918196e04c237a8049177c1357b"
+  },
+  "gravites": {
+    "P0": "Risque critique directement démontré",
+    "P1": "Diagnostic ou sécurité médicamenteuse affectés",
+    "P2": "Précision, enrichissement ou preuve à compléter"
+  },
+  "constats": [
+    {
+      "id": "D64-F01",
+      "gravite": "P1",
+      "ancrages": [
+        "chapters/D64/D64_b.html#d64-a09-partie-5"
+      ],
+      "texte_concerne": "Analyse de l’hémoglobine normale et fer abondant → aspiration Perls indiquée",
+      "constat": "Une analyse des fractions Hb normale ne clôt pas la recherche de globinopathie : certaines alpha-thalassémies/CNV et variants instables requièrent un test ciblé. La table transforme une orientation en indication trop automatique.",
+      "proposition": "Confronter frottis, antécédents, expositions et tests globines adaptés ; discuter avec hématologie génétique et/ou aspiration Perls si suspicion sidéroblastique persistante. Le séquençage peut parfois éviter la moelle.",
+      "sources": [
+        "S7",
+        "S9"
+      ],
+      "nature": "correction",
+      "statut": "OUVERT — proposition non appliquée"
+    },
+    {
+      "id": "D64-F02",
+      "gravite": "P1",
+      "ancrages": [
+        "chapters/D64/D64_d.html#d64-p01-partie-4"
+      ],
+      "texte_concerne": "NTDT : 10mg/kg ; maximum20mg/kg",
+      "constat": "Le plafond20 omet le sous-plafond de sécurité de la FI du comprimé dispersible : sans mesure LIC et ferritine≤2000, ne pas dépasser10mg/kg. Si dose>10 et LIC<7 ou ferritine≤2000, réduire à≤10.",
+      "proposition": "Ajouter ces deux conditions à la ligne NTDT et les relier à la surveillance. Elles concernent la thalassémie NTDT autorisée et ne créent pas une indication dans les autres anémies D64.",
+      "sources": [
+        "S18"
+      ],
+      "nature": "correction",
+      "statut": "OUVERT — proposition non appliquée"
+    },
+    {
+      "id": "D64-F03",
+      "gravite": "P1",
+      "ancrages": [
+        "chapters/D64/D64_d.html#d64-p02-partie-2",
+        "chapters/D64/D64_pop2.html#d64-p01-w2"
+      ],
+      "texte_concerne": "Le centre évalue ces risques avant le début et les surveille",
+      "constat": "Le cours donne une dose hors indication de peg-IFN mais pas de calendrier opérationnel de numération/biochimie ni de conduite devant toxicité psychiatrique ou cytopénie. La FI contient un calendrier concret, pour hépatites.",
+      "proposition": "Exiger un protocole de centre avant emploi hors indication. Décrire bilan initial NFS/biochimie/thyroïde et clinique psychiatrique, contrôle précoce. À titre de repère de sécurité de la FI hépatite : sang à2et4semaines, biochimie à4semaines, puis au moins toutes4semaines ; ne pas transposer sans adaptation les seuils ni doses des essais hépatite à CDA. Urgence si idées suicidaires.",
+      "sources": [
+        "S19",
+        "S11"
+      ],
+      "nature": "correction",
+      "statut": "OUVERT — proposition non appliquée"
+    },
+    {
+      "id": "D64-F04",
+      "gravite": "P2",
+      "ancrages": [
+        "chapters/D64/D64_b.html#d64-a09"
+      ],
+      "texte_concerne": "Trois mécanismes seulement produisent une anémie",
+      "constat": "Formulation exhaustive incompatible avec la définition par concentration et la branche hémodilution du successeur HUG2022 ; le propre popup a01 évoque déjà le volume.",
+      "proposition": "Dire trois mécanismes de diminution de masse érythrocytaire ; ajouter dilution plasmatique (grossesse, cirrhose, paraprotéinémie selon HUG) et interprétation clinique avant bilan invasif.",
+      "sources": [
+        "S2"
+      ],
+      "nature": "correction",
+      "statut": "OUVERT — proposition non appliquée"
+    },
+    {
+      "id": "D64-F05",
+      "gravite": "P2",
+      "ancrages": [
+        "chapters/D64/D64_c.html#d64-s03-partie-3",
+        "assets/img/cycle2/d64/05-heme-2020.png"
+      ],
+      "texte_concerne": "ALAS ... en libérant de l’eau",
+      "constat": "Le texte reprend une erreur du schéma publié. La réaction ALAS produit ALA, CoA et CO2 ; libération d’eau non conforme à IUBMB/Rhea.",
+      "proposition": "Corriger le texte et afficher un erratum explicite sous la figure. Toute modification ou substitution de l’image exige une mission distincte sur les assets ; aucune altération ici.",
+      "sources": [
+        "S14",
+        "S15"
+      ],
+      "nature": "correction",
+      "statut": "OUVERT — proposition non appliquée"
+    },
+    {
+      "id": "D64-F06",
+      "gravite": "P2",
+      "ancrages": [
+        "chapters/D64/D64_c.html#d64-e03-partie-1",
+        "chapters/D64/D64_pop2.html#d64-e03-w3"
+      ],
+      "texte_concerne": "Saturation<16% considérée diagnostique d’une carence",
+      "constat": "La phrase rapporte fidèlement LUKS, mais ne distingue pas stock épuisé et restriction de disponibilité sous inflammation. Une restriction fonctionnelle peut abaisser TSAT sans épuisement des stocks ; le cours insiste surtout sur le piège inverse de transferrine basse.",
+      "proposition": "Conserver attribution locale du seuil, expliquer disponibilité du fer, ferritine/CRP/contexte, carence absolue versus fonctionnelle ; ne pas déduire une prescription de fer de TSAT seule.",
+      "sources": [
+        "S16",
+        "S13"
+      ],
+      "nature": "enrichissement",
+      "statut": "OUVERT — proposition non appliquée"
+    },
+    {
+      "id": "D64-F07",
+      "gravite": "P2",
+      "ancrages": [
+        "chapters/D64/D64_a.html#d64-a02",
+        "chapters/D64/D64_c.html#d64-e01"
+      ],
+      "texte_concerne": "Référentiel HUG2013 répété",
+      "constat": "Un successeur institutionnel HUG2022 a réellement été retrouvé. Les chiffres Hb/réticulocytes et urgence étudiés sont largement conservés ; les présenter comme seulement issus2013 manque actualisation.",
+      "proposition": "Remplacer/compléter les références cliniques par HUG2022 après concordance passage par passage. Conserver2013 comme historique, ne pas remplacer aveuglément toutes les citations.",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "nature": "enrichissement",
+      "statut": "OUVERT — proposition non appliquée"
+    },
+    {
+      "id": "D64-F08",
+      "gravite": "P2",
+      "ancrages": [
+        "chapters/D64/D64_a.html#d64-a02",
+        "chapters/D64/D64_b.html#d64-a10"
+      ],
+      "texte_concerne": "Seuils Hb120/130 et tolérance clinique",
+      "constat": "Enrichissement utile : HUG2022 précise niveau de la mer et baisse>10% avec symptômes pouvant justifier investigation malgré Hb au-dessus du seuil. Les valeurs de diagnostic ne sont pas des seuils de transfusion.",
+      "proposition": "Ajouter la population non enceinte et niveau de la mer, variation par rapport au basal ; distinguer classification grave<80g/L de seuils urgents≤70 ou70–80 à risque cardiovasculaire.",
+      "sources": [
+        "S2",
+        "S5"
+      ],
+      "nature": "enrichissement",
+      "statut": "OUVERT — proposition non appliquée"
+    },
+    {
+      "id": "D64-F09",
+      "gravite": "P2",
+      "ancrages": [
+        "chapters/D64/D64_c.html#d64-e02",
+        "chapters/D64/D64_c.html#d64-e03"
+      ],
+      "texte_concerne": "Décompte idéal200 ou100 si pauvre cellularité ; seuils5/15%",
+      "constat": "Les définitions sont confirmées ; manque une explication de l’incertitude de comptage près des seuils. GFHC donne des intervalles suffisamment larges pour nuancer un chiffre isolé.",
+      "proposition": "Ajouter exemple :5% sur100cellules donne IC95%2–11%, contre2–9% sur200 ; contrôle technique, décompte/relecture si décision proche du seuil, intégration génétique/clonale.",
+      "sources": [
+        "S8"
+      ],
+      "nature": "enrichissement",
+      "statut": "OUVERT — proposition non appliquée"
+    },
+    {
+      "id": "D64-F10",
+      "gravite": "P2",
+      "ancrages": [
+        "chapters/D64/D64_d.html#d64-p01-partie-4",
+        "chapters/D64/D64_pop2.html#d64-p01-w2"
+      ],
+      "texte_concerne": "Pegasys associé au chiffre générique30–50µg/semaine",
+      "constat": "La revue2019 consultée ne nomme pas alfa2a dans ce passage. La série primaire2020, résumé éditeur lu, utilise90–180µg initialement puis adaptation chez7patients dépendants des transfusions. Elle ne démontre pas que30–50 soit faux ; la provenance du produit exact reste insuffisante pour un tableau posologique.",
+      "proposition": "Garder le caractère observationnel mais retirer l’apparence de dose prescriptive Pegasys ; préciser molécule et population de chaque série seulement après lecture primaire intégrale. Ne pas substituer90–180 à30–50 comme recette.",
+      "sources": [
+        "S11",
+        "S19",
+        "S21"
+      ],
+      "nature": "lacune_documentaire",
+      "statut": "OUVERT — proposition non appliquée"
+    }
+  ],
+  "compteurs": {
+    "P0": 0,
+    "P1": 3,
+    "P2": 7
+  },
+  "limites_globales": [
+    "Pas de lecture primaire exhaustive de tous faits du cours.",
+    "20rubriques restent LACUNE, chaque réserve est précisée.",
+    "Absence de P0 identifié ne certifie pas absence de risque.",
+    "Patch partiel non appliqué ; constats restent ouverts jusqu’au circuit de correction.",
+    "Pas de capture navigateur, revalidation des licences ni validation médicale humaine."
+  ],
+  "complement_iconographie": {
+    "date_utc": "2026-10-15T18:51:44.602070+00:00",
+    "inventaire": "inventaire-figures.json",
+    "sources": "sources-iconographie.json",
+    "statut": "RÉSERVES_OUVERTES",
+    "figures": 6,
+    "anatomie_ia_prouvee": 0,
+    "limite": "Aucune certification absence IA ; chaîne binaire locale-original non prouvée ; D69 licences externes non relues ; D64 adaptation source amont non relue. Compteurs médicaux antérieurs inchangés, réserves iconographiques comptées séparément."
+  }
+}
