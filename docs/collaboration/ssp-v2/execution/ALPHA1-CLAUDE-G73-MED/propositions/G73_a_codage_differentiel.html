@@ -1,0 +1,24 @@
+<!-- Proposition ALPHA1-CLAUDE-G73-MED : C07 (MAJEUR) codage de la forme non tumorale ; C10 (MAJEUR) différentiel myasthénie–SMLE ;
+     C22 (ENRICHISSEMENT) épidémiologie chiffrée pour la Suisse ; C21 et C25 (ENRICHISSEMENT) technique électrophysiologique et facilitation.
+     Cibles : G73_a.html (g73-1, g73-2), G73_b.html (g73-9), G73_c.html (g73-e-2), G73_pop1.html (g73-codage, g73-smle, g73-facilitation), glossary/g73.py (clé SMLE).
+     Références [Sx] : sources.json de ce dossier. Calculs : calculs/verifier.py (prev_suisse, inc_suisse, lr_*). -->
+
+<!-- C07-a — g73-1, après le tableau des huit sous-catégories : -->
+<div class="trap"><span class="k">Piège</span> G73.1* « Lambert-Eaton-Syndrom » est lié au code † d’une maladie tumorale (C00–D48†) [S1]. La forme non tumorale, majoritaire dans les centres de référence (77 % à Leiden [S7]), ne peut donc pas recevoir ce couple de codes : l’index alphabétique la classe en G70.8 « Lambert-Eaton-Syndrom, nicht bei Neubildung » [S2]. Cette entrée a été lue dans une republication non officielle de l’index 2026 ; elle doit être confirmée dans l’index officiel 2024 avant tout usage de codage. Sous G73.0*, l’amyotrophie diabétique est citée avec les codes E10–E14†, quatrième position .4 [S1].</div>
+<!-- C07-b — glossary/g73.py, clé SMLE : « Elle est classée G73.1*. » → « Sa forme tumorale est classée G73.1* avec le code † de la tumeur ; la forme non tumorale relève de G70.8 selon l’index alphabétique. »
+     C07-c — fenêtre g73-smle, bloc « Deux formes » : ajouter « Seule la forme tumorale se code G73.1* ; la forme non tumorale relève de G70.8 [S2]. »
+     C07-d — fenêtre g73-codage, bloc « Exemple » : « Un syndrome de Lambert-Eaton paranéoplasique se note avec un code de maladie tumorale (C00–D48†) et G73.1*. » est exact ;
+     ajouter : « Un syndrome de Lambert-Eaton sans tumeur se note G70.8, code ordinaire, sans astérisque [S2]. » -->
+
+<!-- C10 — g73-9 : remplacer la ligne « Myasthénie » du tableau et la phrase « Le dossier ne fournit pas de critères différentiels détaillés entre la myasthénie et le SMLE ; … » par : -->
+<tr><td>Myasthénie</td><td>Symptômes oculobulbaires souvent inauguraux, réflexes normaux, pas de dysautonomie [S18] ; dans le SMLE, la faiblesse débute aux membres inférieurs et n’atteint les muscles oculaires et bulbaires qu’en dernier [S3]. Un incrément d’au moins 60 % est rare dans une myasthénie : un faux positif sur 23 myasthénies et syndromes congénitaux [S5]. L’amifampridine n’apporte rien en ajout à la pyridostigmine dans la myasthénie à anticorps anti-récepteur de l’acétylcholine (20 patients) [S23]</td><td>Électrophysiologie, anticorps anti-récepteur de l’acétylcholine et anti-VGCC ; ne pas appliquer le traitement du SMLE à la myasthénie</td></tr>
+<p>La myasthénie est le diagnostic le plus souvent porté à tort devant un SMLE [S18]. Trois signes cliniques les séparent : l’ordre d’atteinte, les réflexes et la dysautonomie. Un patient de 62 ans qui a d’abord une faiblesse des cuisses, des réflexes abolis et la bouche sèche, sans ptosis, a donc un tableau de SMLE et non de myasthénie, jusqu’à preuve électrophysiologique.</p>
+
+<!-- C22 — g73-2 : remplacer « Aucune donnée épidémiologique suisse n’a été trouvée pour ce cours. » par : -->
+<p>Aucune donnée épidémiologique suisse n’a été trouvée. La même revue néerlandaise rapporte une incidence d’environ 0,04 pour 100 000 habitants par an [S8]. Appliqués aux 9 048 900 habitants de la Suisse à la fin de 2024 [S31], ces taux font attendre environ 27 patients vivant avec un SMLE et 3 à 4 nouveaux cas par an ; il s’agit d’une extrapolation, non d’une mesure suisse. Un médecin de famille n’en verra donc peut-être aucun dans sa carrière, ce qui rend la reconnaissance de la triade d’autant plus importante.</p>
+
+<!-- C21 — g73-e-2 : ajouter avant le premier exemple chiffré : -->
+<p>La technique conditionne le résultat. Dans l’étude de Leiden, les patients suspendaient l’amifampridine et la pyridostigmine au moins 12 heures avant l’examen ; la peau était à au moins 32 °C ; l’amplitude était mesurée au repos puis immédiatement après 10 ou 30 secondes de contraction volontaire ; un décrément anormal correspondait à une baisse d’au moins 10 % lors d’une stimulation à basse fréquence [S5]. L’abducteur du cinquième doigt suffit le plus souvent [S18] ; à Leiden, la sensibilité au seuil de 60 % était de 74,2 % à l’hypothénar seul, contre 77,8 % tous muscles confondus [S5].</p>
+
+<!-- C25 — fenêtre g73-facilitation, bloc « Limite » : remplacer par : -->
+<div class="lab">Valeur et limite</div><p>Après un effort bref d’environ 10 secondes, la force ou le réflexe s’améliore chez un tiers des patients seulement [S18] : la présence du signe oriente fortement, son absence n’exclut rien. Il ne remplace pas l’électrophysiologie, obligatoire pour confirmer la suspicion [S3].</p>

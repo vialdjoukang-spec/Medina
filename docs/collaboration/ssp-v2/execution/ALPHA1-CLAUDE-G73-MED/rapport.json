@@ -1,0 +1,962 @@
+{
+ "mission": "ALPHA1-CLAUDE-G73-MED",
+ "code": "G73",
+ "type_audit": "medical",
+ "base_sha": "103745baaa38c76f18288758cc7f689e5091ccdb",
+ "source_snapshot_sha": "523832d9ef6097607d3443f4398deee9cd0add11",
+ "base_note": "Branche créée sur 103745ba (main) ; le manifeste fige les sources à 523832d9 ; empreintes SHA-256 des 7 fichiers identiques au manifeste.",
+ "generation": 1,
+ "branche": "claude/alpha1/g73-med-g1",
+ "worktree": "/tmp/claude-0/-home-user-Medina/bd99f81d-6b1e-5698-bd58-22e14f9e16b4/scratchpad/missions/ALPHA1-CLAUDE-G73-MED",
+ "conversation": "alpha1-claude-g73-med",
+ "agent_executant": "sous-agent Claude Code (voir accusé issue 107)",
+ "modele_effort": "conforme au manifeste",
+ "date_debut": "2026-10-16T09:18:28Z",
+ "date_fin": "2026-10-16T09:43:14Z",
+ "lecture": {
+  "fichiers": [
+   "chapters/G73/G73_a.html",
+   "chapters/G73/G73_b.html",
+   "chapters/G73/G73_c.html",
+   "chapters/G73/G73_d.html",
+   "chapters/G73/G73_pop1.html",
+   "chapters/G73/G73_pop2.html",
+   "glossary/g73.py"
+  ],
+  "empreintes_conformes": true,
+  "empreintes": {
+   "chapters/G73/G73_a.html": {
+    "sha256": "1445858feac6db9667a779f86052f7ef4176050797b4f7628ba11ab2c363d976",
+    "manifeste": "1445858feac6db9667a779f86052f7ef4176050797b4f7628ba11ab2c363d976",
+    "conforme": true
+   },
+   "chapters/G73/G73_b.html": {
+    "sha256": "5a1819434a676e1037b00fa29a5c1f526dc8e49bc7a8b40aa63146ba1c41fbac",
+    "manifeste": "5a1819434a676e1037b00fa29a5c1f526dc8e49bc7a8b40aa63146ba1c41fbac",
+    "conforme": true
+   },
+   "chapters/G73/G73_c.html": {
+    "sha256": "d8d898fcffaa948d7f46961dc64ff50624a424d80a8fbe6066d6138acaea44b3",
+    "manifeste": "d8d898fcffaa948d7f46961dc64ff50624a424d80a8fbe6066d6138acaea44b3",
+    "conforme": true
+   },
+   "chapters/G73/G73_d.html": {
+    "sha256": "0598676f8095debc7ef07a9965ac88195264d806458e126b3722fca6d30555af",
+    "manifeste": "0598676f8095debc7ef07a9965ac88195264d806458e126b3722fca6d30555af",
+    "conforme": true
+   },
+   "chapters/G73/G73_pop1.html": {
+    "sha256": "5bffd06c3b6f2859a14912fff551312fdf7e14a83c12ca34e638acb7b04c40b6",
+    "manifeste": "5bffd06c3b6f2859a14912fff551312fdf7e14a83c12ca34e638acb7b04c40b6",
+    "conforme": true
+   },
+   "chapters/G73/G73_pop2.html": {
+    "sha256": "95548f459b19e4528e826653d01adbaf2aae8c91b6d3172d0548706ac04c31e7",
+    "manifeste": "95548f459b19e4528e826653d01adbaf2aae8c91b6d3172d0548706ac04c31e7",
+    "conforme": true
+   },
+   "glossary/g73.py": {
+    "sha256": "ef2fc778a6d2e0fa24a4e649ec88290b4fe9c6695842a225926dc1f0f2a90dc8",
+    "manifeste": "ef2fc778a6d2e0fa24a4e649ec88290b4fe9c6695842a225926dc1f0f2a90dc8",
+    "conforme": true
+   }
+  },
+  "lus_en_entier": true
+ },
+ "premiere_source_lue": {
+  "source_id": "S1",
+  "url": "https://klassifikationen.bfarm.de/icd-10-gm/kode-suche/htmlgm2024/block-g70-g73.htm",
+  "section": "G73.0* à G73.7* et G70.8 (liste systématique)"
+ },
+ "synthese": {
+  "BLOQUANT": 0,
+  "MAJEUR": 11,
+  "MINEUR": 9,
+  "ENRICHISSEMENT": 7
+ },
+ "controles": {
+  "test_v7_static": "G73 mots 13342 fenêtres 32 quiz 5 pareto 9 — OK",
+  "audit_sciences": "failed : 14 erreurs (C02)",
+  "image_clo_finder_inventory": "3 figures, toutes vectorielles, schémas en boîtes sans structure anatomique",
+  "svg_390px": "mesure Chromium : 1 dépassement (C20) ; figure proposée sans dépassement (texte 11,9 px)",
+  "propositions_classes_fermees": "conformes (alert, card, fb, ilot, k, key, lab, quiz ui, sci, src, t, trap, w) ; aucun style en ligne",
+  "ancres_constats": "chaque ancre trouvée au moins une fois dans son fichier (ancre_occurrences)"
+ },
+ "calculs": {
+  "total_releves": 469,
+  "calculables": 417,
+  "recalcules": 417,
+  "correct": 389,
+  "arrondi": 4,
+  "faux": 10,
+  "non_verifiables": 14,
+  "non_grandeurs_exclues": 52,
+  "calculs_derives": 45,
+  "propositions_verifiees": 40,
+  "propositions_fausses": 0,
+  "script": "calculs/verifier.py",
+  "inventaire": "calculs/inventaire.py → calculs/inventaire.json",
+  "resultats": "calculs/resultats.json",
+  "faux_detail": "8 attributions fausses (arrêts tous motifs présentés comme arrêts pour effets indésirables, C03) ; 2 descripteurs faux (moyenne écrite médiane, C12)",
+  "non_verifiables_detail": "3 vignettes dont le DELTA-P n’est pas exactement calculable (items manquants, C06) ; 5 occurrences 38 %/38 patients (C13) ; 2 incohérences n/N internes à S7 (C14) ; 4 « 3 ou 4 prises » (C15)",
+  "posologies": "toutes les doses de Firdapse® (15, 5, 10, 20, 60, 80 mg ; paliers 4–5 j et 7 j) conformes à la FI suisse de janvier 2022 ; Mestinon® : 1,5 h et 75–81 % conformes à la FI de juin 2020",
+  "bloquant_calcul": 0
+ },
+ "constats": [
+  {
+   "id": "C01",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G73/G73_c.html",
+   "ancre": "data-s=\"g73-s-physio\"",
+   "constat": "Le sous-onglet « Sémiologie fondamentale et analytique » est absent. Décompte réel des data-s de G73_c.html : 4 (g73-s-physio, g73-s-immu, g73-s-elec, g73-s-bioch) ; aucun g73-s-semio. Des éléments sémiologiques existent dans l’onglet 1 (g73-0, g73-4 : triade, facilitation, dysautonomie), sans technique d’examen, sans valeur chiffrée par signe, sans regroupement syndromique ni raisonnement du signe au diagnostic.",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "Lambert-Eaton Myasthenic Syndrome",
+     "citation_courte": "About 90% of patients have symptoms of autonomic dysfunction"
+    },
+    {
+     "source_id": "S4",
+     "section": "Table 1",
+     "citation_courte": "Bulbar/neck weakness 24/44 (55%) 11/43 (26%)"
+    },
+    {
+     "source_id": "S18",
+     "section": "Symptoms and findings",
+     "citation_courte": "PEF was observed only in one-third of LEMS patients"
+    }
+   ],
+   "proposition": "propositions/G73_c_semio.html (bouton g73-tab-semio et panneau g73-s-semio, neuf sections data-semiology, figure de raisonnement non anatomique mesurée à 390 px, trois cas corrigés) et propositions/G73_pop_semio.html (quatre fenêtres g73-sm-*).",
+   "justification": "Mécanisme : sans technique ni valeur par signe, le lecteur ne sait pas transformer une faiblesse fluctuante en hypothèse de jonction présynaptique. Conséquence : le différentiel avec la myasthénie, piège classique, reste non enseigné. Décision : exigence de Vial du 15.10.2026 ; MAJEUR, bloquant pour la clôture du cours et du lot.",
+   "bloquant_cloture": true,
+   "decompte_data_s": 4,
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C02",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G73/G73_c.html",
+   "ancre": "id=\"g73-s-elec-body\"",
+   "constat": "Le contrôle tests/audit_sciences.py échoue (14 erreurs) : aucune des quatre disciplines ne porte « Science → examen. », « Science → traitement. » et « À retenir. » ; g73-s-immu n’a aucune figure ; g73-s-elec compte 245 mots (< 280). Les sciences totalisent 1202 mots pour 4 disciplines.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "2.3 Electrodiagnostic testing",
+     "citation_courte": "first CMAP amplitude measured immediately after 10 or 30 s of voluntary contraction"
+    },
+    {
+     "source_id": "S16",
+     "section": "Mises en garde",
+     "citation_courte": "surveillée régulièrement sur le plan clinique et électrophysiologique"
+    }
+   ],
+   "proposition": "propositions/G73_c_sciences.html (douze encadrés de corrélation sourcés, complément de g73-s-elec, consigne de figure non anatomique pour g73-s-immu).",
+   "justification": "Mécanisme : les corrélations science → examen → traitement sont le contrat de l’onglet 3. Conséquence : le contrôle machine échoue et la leçon n’est pas publiable comme close. Décision : MAJEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C03",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G73/G73_b.html",
+   "ancre": "les arrêts pour effets indésirables ont concerné 50 % des patients sous azathioprine, 38 % sous prednisolone et 32 % sous pyridostigmine",
+   "constat": "Attribution chiffrée fausse, répétée 8 fois (g73-12, g73-p-3, tableau g73-p-4, fenêtre g73-immuno) : 50 %, 38 % et 32 % sont les arrêts TOUS MOTIFS ; les effets indésirables expliquent 80 % des arrêts de l’azathioprine (≈ 40 % des patients), 39 % de ceux de la prednisolone (≈ 15 %) et 50 % de ceux de la pyridostigmine (≈ 16 %). Recalcul : calculs/verifier.py (aza_arret_EI, pred_arret_EI, pyr_arret_EI).",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "Résumé",
+     "citation_courte": "azathioprine, prednisolone and pyridostigmine were discontinued by 50%, 38% and 32% of patients, respectively, often due to adverse effects"
+    },
+    {
+     "source_id": "S7",
+     "section": "Results",
+     "citation_courte": "Prednisolone was discontinued in 38% of patients, most commonly due to remission or side effects (both 39%). Azathioprine was discontinued in 50% of patients, most commonly due to side effects (80%)"
+    }
+   ],
+   "proposition": "propositions/G73_corrections_chiffres.html, blocs C03-a à C03-d.",
+   "justification": "Mécanisme : confondre arrêt et arrêt pour toxicité surestime d’un facteur 2,5 la toxicité de la prednisolone. Conséquence : un choix immunosuppresseur fondé sur un chiffre faux. Décision : MAJEUR (résultat chiffré faux).",
+   "occurrences": 8,
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C04",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G73/G73_b.html",
+   "ancre": "Surdosage : arrêter et assurer le soutien respiratoire ; crise myasthénique : renforcer le traitement",
+   "constat": "Urgence « crise cholinergique sous pyridostigmine » sans l’antidote prévu par l’information suisse : atropine 1 à 2 mg IV lente, répétée toutes les 5 à 30 minutes selon les besoins (absent de g73-11, g73-p-3 et de la fenêtre g73-mestinon).",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "Surdosage",
+     "citation_courte": "L'antidote spécifique consistera à administrer 1 à 2 mg de sulfate d'atropine lentement par voie intraveineuse. Selon les besoins, la même dose doit être administrée à intervalles de 5 à 30 minutes."
+    }
+   ],
+   "proposition": "propositions/G73_b_urgences.html, blocs (1), (2) et (4).",
+   "justification": "Mécanisme : le surdosage en inhibiteur de cholinestérase entraîne bronchorrhée, bradyarythmie et collapsus muscariniques que l’atropine antagonise. Conséquence : geste vital omis dans un îlot d’urgence. Décision : MAJEUR (point décisionnel d’urgence non documenté alors que la FI suisse lue le contient).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C05",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G73/G73_b.html",
+   "ancre": "Le dossier ne documente pas la correction du potassium",
+   "constat": "Paralysie périodique hypokaliémique thyréotoxique classée urgence vitale (arythmies) sans aucune conduite : ni ECG, ni surveillance de la kaliémie, ni risque d’hyperkaliémie de rebond, ni bêtabloquant non sélectif. La source citée (S15) est physiopathologique ; elle donne néanmoins le rapport potassium/créatinine urinaire < 2,5 et les signes ECG qui imposent une prise en charge urgente.",
+   "preuve": [
+    {
+     "source_id": "S15",
+     "section": "Clinical manifestations",
+     "citation_courte": "electrocardiographic changes attributable to hypokalemia—including ST depression, U waves, and QT prolongation—should prompt urgent intervention"
+    },
+    {
+     "source_id": "S27",
+     "section": "Résumé",
+     "citation_courte": "His potassium level rose from 1.7 mEq/L to 5.6 mEq/L within six hours post-repletion cessation"
+    },
+    {
+     "source_id": "S28",
+     "section": "Résumé",
+     "citation_courte": "After oral propranolol, 3 mg/kg, serum potassium and phosphate concentrations increased promptly in 2 hours"
+    }
+   ],
+   "proposition": "propositions/G73_b_urgences.html, blocs (2), (3) et (5) ; niveau de preuve explicitement faible (observations isolées) ; aucune dose de potassium fixée.",
+   "justification": "Mécanisme : l’hypokaliémie vient d’un transfert vers les cellules qui s’inverse en fin d’épisode. Conséquence : une correction massive non surveillée expose à une hyperkaliémie de rebond, une absence de surveillance ECG aux arythmies. Décision : MAJEUR ; LACUNE : aucune recommandation suisse ou européenne lue.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C06",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G73/G73_b.html",
+   "ancre": "Le dossier ne donne ni la pondération exacte des items, ni le seuil du Karnofsky.",
+   "constat": "Score DELTA-P non calculable par l’étudiant : le cours déclare la pondération et le seuil du Karnofsky absents alors que la source citée et lue en texte intégral (S4) les donne (un point par item, Karnofsky < 70, signes des trois premiers mois). La même affirmation figure dans la fenêtre g73-deltap et dans l’alerte g73-p-6.",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Table 1",
+     "citation_courte": "Karnofsky performance score < 70 23/44 (52%) 10/43 (23%)"
+    },
+    {
+     "source_id": "S4",
+     "section": "Methods",
+     "citation_courte": "a correct score of 1 meant the patient had SCLC"
+    },
+    {
+     "source_id": "S4",
+     "section": "Table 1, note a",
+     "citation_courte": "Females scored as not affected"
+    }
+   ],
+   "proposition": "propositions/G73_b_scores.html, blocs (1) et (2) : tableau des six items avec fréquences, exemple calculé sur la vignette de g73-0 (au moins 3 points).",
+   "justification": "Mécanisme : un score sans grille ne se recompte pas. Conséquence : le calendrier de TEP-TDM, qui dépend du score, devient inapplicable. Décision : MAJEUR (score mal décrit, exigence CALCULS).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C07",
+   "gravite": "MAJEUR",
+   "fichier": "glossary/g73.py",
+   "ancre": "Elle est classée G73.1*.",
+   "constat": "Codage inexact de la forme non tumorale : G73.1* est lié à C00–D48† ; la forme non tumorale (77 % à Leiden) relève de G70.8 « Lambert-Eaton-Syndrom, nicht bei Neubildung » selon l’index alphabétique. Le glossaire (clé SMLE) et la fenêtre g73-smle présentent les deux formes sous G73.1*. En outre, G73.0* cite E10–E14† « quatrième position .4 », omis du tableau g73-1.",
+   "preuve": [
+    {
+     "source_id": "S1",
+     "section": "G73.1* et G73.0*",
+     "citation_courte": "G73.1* Lambert-Eaton-Syndrom (C00-D48†) ; diabetischer Amyotrophie (E10-E14†, vierte Stelle .4)"
+    },
+    {
+     "source_id": "S2",
+     "section": "index alphabétique",
+     "citation_courte": "G70.8 Lambert-Eaton-Syndrom, nicht bei Neubildung"
+    }
+   ],
+   "proposition": "propositions/G73_a_codage_differentiel.html, blocs C07-a à C07-d.",
+   "justification": "Mécanisme : un code astérisque exige une maladie causale codée par une croix. Conséquence : trois quarts des patients seraient mal codés. Décision : MAJEUR (définition et périmètre) ; S2 est une republication non officielle de l’index 2026 : LACUNE de confirmation dans l’index officiel 2024.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C08",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G73/G73_b.html",
+   "ancre": "Y penser et notifier les autorités sanitaires",
+   "constat": "Botulisme : la spécificité suisse manque. La déclaration d’une suspicion clinique se fait par téléphone, dans les 2 heures, au médecin cantonal et à l’OFSP ; l’antitoxine est disponible à la Pharmacie de l’armée. La formule « notifier les autorités sanitaires » vient d’une source japonaise.",
+   "preuve": [
+    {
+     "source_id": "S19",
+     "section": "Déclaration",
+     "citation_courte": "Tout cas de botulisme alimentaire doit être déclaré dans un délai de deux heures."
+    },
+    {
+     "source_id": "S19",
+     "section": "Antitoxine",
+     "citation_courte": "En Suisse, l'antitoxine est disponible auprès de la pharmacie de l'armée."
+    }
+   ],
+   "proposition": "propositions/G73_b_urgences.html, blocs (1) et (2).",
+   "justification": "Mécanisme : la déclaration rapide sert à retrouver la source et à prévenir d’autres intoxications. Conséquence : rubrique 16 (spécificités suisses) et urgence incomplètes pour l’examen fédéral. Décision : MAJEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C09",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G73/G73_a.html",
+   "ancre": "Le médecin documente la valeur et l’évolution, sans conclure à une gravité à partir du seul chiffre.",
+   "constat": "Le piège de la myosite aiguë bénigne de l’enfant omet les drapeaux rouges de la même source : récidive, créatine kinase > 10 × la limite supérieure, fonction rénale anormale, urines foncées, bandelette positive sans hématies, myoglobinurie ; au-delà de 15 000 U/L, risque accru d’insuffisance rénale aiguë et hospitalisation.",
+   "preuve": [
+    {
+     "source_id": "S12",
+     "section": "Introduction",
+     "citation_courte": "CPK elevations greater than ten times the upper limit of normal, abnormal renal function, dark urine, heme-positive dipstick in the absence of red blood cells"
+    },
+    {
+     "source_id": "S12",
+     "section": "Methods",
+     "citation_courte": "values above 15,000 U/L indicating an increased risk of acute kidney injury"
+    }
+   ],
+   "proposition": "propositions/G73_b_urgences.html, bloc (6).",
+   "justification": "Mécanisme : la myoglobine libérée par la nécrose est néphrotoxique. Conséquence : la formule actuelle peut faire méconnaître une rhabdomyolyse. Décision : MAJEUR (point décisionnel incomplet).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C10",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G73/G73_b.html",
+   "ancre": "Le dossier ne fournit pas de critères différentiels détaillés entre la myasthénie et le SMLE",
+   "constat": "Différentiel principal non enseigné (rubrique 11, point d’examen fédéral) alors que des discriminants sourcés existent : début oculobulbaire dans la myasthénie, réflexes normaux, absence de dysautonomie ; ordre d’extension ascendant du SMLE ; incrément ≥ 60 % rare dans la myasthénie (spécificité 95,7 %).",
+   "preuve": [
+    {
+     "source_id": "S18",
+     "section": "Symptoms and findings",
+     "citation_courte": "oculobulbar symptoms, which are common initial symptoms in MG, are rare in LEMS ... In MG, reflexes are normal and dysautonomic symptoms are absent"
+    },
+    {
+     "source_id": "S3",
+     "section": "Lambert-Eaton",
+     "citation_courte": "starts in the lower limbs ... finally the ocular and bulbar muscles"
+    },
+    {
+     "source_id": "S5",
+     "section": "Results",
+     "citation_courte": "specificity was 95.7% for the 60% threshold"
+    }
+   ],
+   "proposition": "propositions/G73_a_codage_differentiel.html, bloc C10 ; propositions/G73_c_semio.html, section differentials.",
+   "justification": "Mécanisme : défaut présynaptique contre défaut postsynaptique. Conséquence : erreur diagnostique la plus fréquente non prévenue. Décision : MAJEUR. S18 est une revue d’un auteur américain, utilisée pour la sémiologie descriptive, non pour un seuil de conduite.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C11",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G73/G73_a.html",
+   "ancre": "chez une patiente, la créatine kinase atteignait 6 106 U/L malgré l’hormonothérapie",
+   "constat": "Cas publié mal restitué : le patient est un homme de 50 ans ; la CK passe de 6 106 à 7 020 U/L après une semaine d’hormones ajoutées ; corticoïdes et immunosuppresseurs ont été efficaces, alors que le cours écrit « traitement non documenté » (fenêtre g73-srp, g73-p-5).",
+   "preuve": [
+    {
+     "source_id": "S20",
+     "section": "Résumé",
+     "citation_courte": "A 50-year-old male ... CK level of 6,106 U/L ... even higher CK (7,020 U/L) ... Treatment of corticosteroid and immunosuppressive agents achieved a positive clinical and biochemical response"
+    }
+   ],
+   "proposition": "propositions/G73_corrections_chiffres.html, bloc C11.",
+   "justification": "Mécanisme : fidélité à la source. Conséquence : sans effet décisionnel direct. Décision : MINEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C12",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G73/G73_a.html",
+   "ancre": "avec un séjour médian de 3,2 jours",
+   "constat": "Descripteur statistique erroné (2 occurrences : g73-7 et fenêtre g73-myosite-enfant) : 3,2 jours est une moyenne (Table 1 : moyenne 3,2 ± 1,1) ; le résumé dit « median ». Les 63 % d’influenza B comprennent 2 co-infections (influenza B seule : 28/47 = 59,6 %).",
+   "preuve": [
+    {
+     "source_id": "S12",
+     "section": "Table 1",
+     "citation_courte": "Length of stay, days Mean (SD) 3.2 (1.1) ... Influenza B 28 (59.6) ... Influenza B and M. pneumoniae 2 (4.3)"
+    }
+   ],
+   "proposition": "propositions/G73_corrections_chiffres.html, bloc C12.",
+   "justification": "Mécanisme : moyenne et médiane ne se substituent pas. Conséquence : aucune décision ne change. Décision : MINEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C13",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G73/G73_a.html",
+   "ancre": "Registre néerlando-belge, 38 patients SMLE",
+   "constat": "38 % de 38 patients ne correspond à aucun effectif entier (14/38 = 36,8 % ; 15/38 = 39,5 %) : le dénominateur réel n’est pas donné par le résumé ; les données sont déclarées par les patients et concernent tous les SMLE, alors que le commentaire de g73-2 et g73-s-immu l’applique à la forme non tumorale.",
+   "preuve": [
+    {
+     "source_id": "S9",
+     "section": "Résumé",
+     "citation_courte": "38 Lambert-Eaton myasthenic syndrome (LEMS) patients ... 38% of LEMS patients"
+    }
+   ],
+   "proposition": "propositions/G73_corrections_chiffres.html, bloc C13.",
+   "justification": "Mécanisme : un pourcentage doit correspondre à son effectif. Conséquence : surinterprétation légère. Décision : MINEUR (énoncé incomplet, NON_VERIFIABLE).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C14",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G73/G73_a.html",
+   "ancre": "accompagne le SMLE chez environ un patient sur deux ou sur trois, selon les séries",
+   "constat": "La fraction cancéreuse de la cohorte de Leiden est de 16/70 = 22,9 %, soit moins d’un patient sur quatre, non « un sur trois ». Par ailleurs, la source S7 imprime « 14/34 (44 %) » pour l’immunosuppression à 5 ans alors que 14/34 = 41,2 % : la valeur du cours (44 %) suit la source, l’incohérence est celle de la source.",
+   "preuve": [
+    {
+     "source_id": "S7",
+     "section": "Table 1",
+     "citation_courte": "Number of patients, n (%) 70 (100) 16 (23) 54 (77)"
+    },
+    {
+     "source_id": "S7",
+     "section": "Results",
+     "citation_courte": "14/34 (44%) patients receiving immunosuppressive treatment at 5 years"
+    }
+   ],
+   "proposition": "propositions/G73_corrections_chiffres.html, bloc C14.",
+   "justification": "Mécanisme : rapport n/N. Conséquence : aucune. Décision : MINEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C15",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G73/G73_d.html",
+   "ancre": "15 mg/jour en 3 ou 4 prises avec les repas",
+   "constat": "Posologie non réalisable telle qu’écrite : 15 mg en 4 prises = 3,75 mg, impossible avec le comprimé à 10 mg sécable en deux moitiés de 5 mg ; la dose initiale correspond à 3 × 5 mg. Le libellé « trois ou quatre fois par jour » de la FI vaut pour l’ensemble du traitement.",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "Posologie usuelle",
+     "citation_courte": "trois ou quatre fois par jour avec les repas. La dose initiale recommandée est de 15 mg"
+    },
+    {
+     "source_id": "S16",
+     "section": "Forme pharmaceutique",
+     "citation_courte": "Comprimé à 10 mg ... peut être divisé en deux moitiés égales"
+    }
+   ],
+   "proposition": "propositions/G73_d_fi.html, bloc C15.",
+   "justification": "Mécanisme : arithmétique des prises (calculs/verifier.py, firdapse_15mg_4prises). Conséquence : risque de confusion à l’instauration. Décision : MINEUR (énoncé à préciser).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C16",
+   "gravite": "MAJEUR",
+   "fichier": "chapters/G73/G73_d.html",
+   "ancre": "Les anticholinergiques réduisent l’effet des deux substances.",
+   "constat": "Points décisionnels de la FI Firdapse® omis : interrompre le traitement en cas de crise convulsive ; les cholinergiques, dont la pyridostigmine (associée chez 59 % des patients de Leiden dans les 6 premiers mois), augmentent l’effet des deux produits ; les myorelaxants dépolarisants et non dépolarisants réduisent l’effet des deux produits ; dans la forme non paranéoplasique, évaluation complète du rapport bénéfice-risque (schwannomes chez le rat) ; effets très fréquents omis (hyperhidrose, sueurs froides).",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "Crises d'épilepsie",
+     "citation_courte": "En cas de crise convulsive, le traitement doit être interrompu."
+    },
+    {
+     "source_id": "S16",
+     "section": "Interactions",
+     "citation_courte": "médicaments ayant des effets cholinergiques ... peut entraîner un effet accru des deux produits"
+    },
+    {
+     "source_id": "S16",
+     "section": "Cancérogénicité",
+     "citation_courte": "forme non paranéoplasique du SMLE ne doit être envisagée qu'après une évaluation complète du rapport bénéfice-risque"
+    },
+    {
+     "source_id": "S7",
+     "section": "Results",
+     "citation_courte": "Within the first 6 months 59/65 (91%) patients used amifampridine, of whom 38/65 (59%) combined this treatment with pyridostigmine"
+    }
+   ],
+   "proposition": "propositions/G73_d_fi.html, bloc C16.",
+   "justification": "Mécanisme : addition des effets cholinergiques et seuil épileptogène dose-dépendant. Conséquence : interaction fréquente et conduite en cas de crise non enseignées. Décision : MAJEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C17",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G73/G73_d.html",
+   "ancre": "Asthme, BPCO, bradycardie, bloc auriculo-ventriculaire, insuffisance cardiaque décompensée, hypotension, ulcère, épilepsie, parkinsonisme, hyperthyroïdie",
+   "constat": "Liste de prudence de Mestinon® incomplète (occlusion coronaire récente, vagotonie, affections rénales, intervention gastro-intestinale, diabète) ; adaptation possible en insuffisance rénale (demi-vie jusqu’à × 4) absente ; Mestinon retard® n’a que la myasthénie grave pour indication.",
+   "preuve": [
+    {
+     "source_id": "S17",
+     "section": "Mises en garde",
+     "citation_courte": "occlusion coronaire récente; hypotension; vagotonie; affections rénales; ulcère gastro-duodénal; intervention gastro-intestinale ... diabète sucré"
+    },
+    {
+     "source_id": "S17",
+     "section": "Cinétique",
+     "citation_courte": "la valeur des demi-vies d'élimination peut être multipliée jusqu'à quatre fois environ"
+    }
+   ],
+   "proposition": "propositions/G73_d_fi.html, bloc C17.",
+   "justification": "Mécanisme : élimination rénale inchangée de 75 à 81 %. Conséquence : faible pour un usage hors indication. Décision : MINEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C18",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G73/G73_a.html",
+   "ancre": "dont 87 % dans la Région européenne de l’Organisation mondiale de la santé",
+   "constat": "La source donne 87 % dans le résumé mais 86 % (56 912/65 818 = 86,5 %) dans les résultats ; la donnée suisse (4 cas, 1994 et 2009) n’est pas exploitée.",
+   "preuve": [
+    {
+     "source_id": "S13",
+     "section": "Results",
+     "citation_courte": "The European Region accounted for 86% of cases (56,912), of which 28,564 (50%) occurred in Romania"
+    },
+    {
+     "source_id": "S13",
+     "section": "Table 2",
+     "citation_courte": "Switzerland 1994, 2009 4"
+    }
+   ],
+   "proposition": "propositions/G73_corrections_chiffres.html, bloc C18.",
+   "justification": "Mécanisme : arrondi incohérent interne à la source. Conséquence : aucune. Décision : MINEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C19",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G73/G73_b.html",
+   "ancre": "soit un PAMC de repos bas avec incrément supérieur à 60 % après contraction maximale",
+   "constat": "Seuil d’incrément écrit tantôt « supérieur à 60 % » (critères g73-10, g73-14, fenêtre g73-increment), tantôt « ≥ 60 % » / « au moins 60 % » (g73-14 paramètres, Paretos, figure). Les deux sont sourcés mais de deux études différentes (S4 « over 60% » ; S5 et S7 « ≥ 60 % »).",
+   "preuve": [
+    {
+     "source_id": "S4",
+     "section": "Methods",
+     "citation_courte": "incremental responses of over 60% after maximal voluntary contraction"
+    },
+    {
+     "source_id": "S7",
+     "section": "Methods",
+     "citation_courte": "abnormal decrement and ≥60% increment on repetitive nerve stimulation"
+    }
+   ],
+   "proposition": "propositions/G73_corrections_chiffres.html, bloc C19.",
+   "justification": "Mécanisme : bornes incluses ou exclues. Conséquence : un incrément de 60 % exactement change de classe. Décision : MINEUR (SEM-20, cohérence des seuils).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C20",
+   "gravite": "MINEUR",
+   "fichier": "chapters/G73/G73_c.html",
+   "ancre": "Synthèse basse (mTOR, IGF-1) · dégradation haute (FOXO)",
+   "constat": "Figure « Myopathie cortisonique » : la deuxième ligne déborde de son cadre à 390 px (mesure Chromium : texte de 9,1 à 410,9 pour un cadre de 12 à 408 dans un viewBox de 420, police de repli) ; le dernier cadre de la figure « Chaîne de la transmission » mêle maillon et maladie.",
+   "preuve": [
+    {
+     "source_id": "S26",
+     "section": "Résumé",
+     "citation_courte": "inhibition of muscle protein synthesis (via the mTOR/IGF-1 pathway) and activation of protein degradation systems"
+    }
+   ],
+   "proposition": "propositions/G73_c_sciences.html, bloc C20.",
+   "justification": "Mécanisme : lisibilité mobile. Conséquence : esthétique. Décision : MINEUR.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C21",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G73/G73_c.html",
+   "ancre": "L’examen mesure l’amplitude du",
+   "constat": "Technique électrophysiologique non décrite : suspension de l’amifampridine et de la pyridostigmine 12 h avant, peau ≥ 32 °C, mesure immédiate après 10 ou 30 s de contraction, décrément anormal ≥ 10 %, sensibilité 74,2 % à l’hypothénar seul.",
+   "preuve": [
+    {
+     "source_id": "S5",
+     "section": "2.3 Electrodiagnostic testing",
+     "citation_courte": "refrain from using 3,4‐diaminopyridine or pyridostigmine at least 12 h before investigation ... skin temperature of at least 32°C"
+    }
+   ],
+   "proposition": "propositions/G73_a_codage_differentiel.html, bloc C21.",
+   "justification": "Rubrique 10 (examens : technique et pièges). ENRICHISSEMENT.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C22",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G73/G73_a.html",
+   "ancre": "Aucune donnée épidémiologique suisse n’a été trouvée pour ce cours.",
+   "constat": "Épidémiologie complétable : incidence 0,04/100 000/an (S8) ; extrapolation à la population suisse 2024 (9 048 900) : ≈ 27 patients prévalents et 3 à 4 nouveaux cas par an, présentée comme extrapolation.",
+   "preuve": [
+    {
+     "source_id": "S8",
+     "section": "Table 2",
+     "citation_courte": "Lambert-Eaton myasthenic syndrome 0.04 0.03 –0.048 2 0.3 0.25–0.40 5"
+    },
+    {
+     "source_id": "S31",
+     "section": "Communiqué",
+     "citation_courte": "9 048 900 d’habitants au 31 décembre"
+    }
+   ],
+   "proposition": "propositions/G73_a_codage_differentiel.html, bloc C22.",
+   "justification": "Rubrique 4. Calculs : verifier.py (prev_suisse, inc_suisse). ENRICHISSEMENT.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C23",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G73/G73_d.html",
+   "ancre": "Le remboursement de Firdapse® par la liste des spécialités n’est pas vérifié.",
+   "constat": "La lacune est levée par la FI lue : Firdapse® figure sur la liste des spécialités (B, SL), prix public 1567,25 francs les 100 comprimés, soit ≈ 94 francs par jour à 60 mg/j.",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "Présentation",
+     "citation_courte": "FIRDAPSE, tabletten 100 Tablette(n), EFP 1425.98, PP 1567.25, ev.ep.e.c. [B, SL, SB 10%]"
+    }
+   ],
+   "proposition": "propositions/G73_d_fi.html, bloc C23.",
+   "justification": "Rubrique 16. ENRICHISSEMENT.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C24",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G73/G73_b.html",
+   "ancre": "Exemples publiés : SMLE avec anticorps VGCC sans cancer au diagnostic = 6 (probable)",
+   "constat": "Grille PNS-Care non restituée : les exemples 6, 9 et 5 sont exacts (recalculés) mais non recalculables par le lecteur ; la grille (Table 5) et la classe « risque intermédiaire » des anticorps P/Q VGCC (Table 2) sont à ajouter.",
+   "preuve": [
+    {
+     "source_id": "S3",
+     "section": "Table 5",
+     "citation_courte": "High-risk phenotypes 3 ... Intermediate risk antibody (30%–70%) 2 ... Not found (or not consistent) but follow-up <2 y 1"
+    },
+    {
+     "source_id": "S3",
+     "section": "Table 2",
+     "citation_courte": "P/Q VGCC ... 50 (LEMS)"
+    }
+   ],
+   "proposition": "propositions/G73_b_scores.html, bloc (3).",
+   "justification": "Rubrique 17. ENRICHISSEMENT.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C25",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G73/G73_pop1.html",
+   "ancre": "Le dossier décrit le signe, mais ne documente ni sa sensibilité ni son mécanisme cellulaire.",
+   "constat": "Valeur de la facilitation post-effort disponible : observée chez un tiers des patients seulement, après un effort d’environ 10 s.",
+   "preuve": [
+    {
+     "source_id": "S18",
+     "section": "Symptoms and findings",
+     "citation_courte": "After brief muscle exercise (e.g., for 10 s) ... PEF was observed only in one-third of LEMS patients"
+    }
+   ],
+   "proposition": "propositions/G73_a_codage_differentiel.html, bloc C25 ; propositions/G73_pop_semio.html (g73-sm-reflexes).",
+   "justification": "Rubrique 8. ENRICHISSEMENT (source américaine descriptive).",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C26",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G73/G73_pop1.html",
+   "ancre": "Le rattachement CIM n’est pas vérifié. Le dossier ne documente ni le traitement ni la correction du potassium.",
+   "constat": "Paralysie thyréotoxique : épidémiologie (2 % des thyrotoxicoses chinoises ou japonaises, 0,1–0,2 % ailleurs, ≈ 95 % d’hommes) et examens discriminants (rapport K/créatinine urinaire < 2,5 ; T4 libre élevée, TSH effondrée) lus dans S15.",
+   "preuve": [
+    {
+     "source_id": "S15",
+     "section": "Introduction",
+     "citation_courte": "THPP has been reported in 2% of individuals with thyrotoxicosis, while in non-Asians, it affects only 0.1% to 0.2%"
+    },
+    {
+     "source_id": "S15",
+     "section": "Clinical manifestations",
+     "citation_courte": "urinary potassium/creatinine ratio below 2.5"
+    }
+   ],
+   "proposition": "propositions/G73_b_urgences.html, bloc (5).",
+   "justification": "Rubriques 4 et 10. ENRICHISSEMENT.",
+   "ancre_occurrences": 1
+  },
+  {
+   "id": "C27",
+   "gravite": "ENRICHISSEMENT",
+   "fichier": "chapters/G73/G73_d.html",
+   "ancre": "Firdapse® ne s’utilise pas pendant la grossesse",
+   "constat": "Aptitude à la conduite non traitée (rubrique 16) : la FI Firdapse® cite somnolence, vertiges, crises et vision floue ; la FI Mestinon® cite myosis et troubles de l’accommodation.",
+   "preuve": [
+    {
+     "source_id": "S16",
+     "section": "Effet sur l’aptitude à la conduite",
+     "citation_courte": "peut avoir une influence sur l'aptitude à conduire des véhicules"
+    },
+    {
+     "source_id": "S17",
+     "section": "Aptitude à la conduite",
+     "citation_courte": "l'acuité visuelle et donc la capacité de réaction ... peuvent être altérées"
+    }
+   ],
+   "proposition": "propositions/G73_d_fi.html, bloc C27.",
+   "justification": "Rubrique 16. ENRICHISSEMENT.",
+   "ancre_occurrences": 1
+  }
+ ],
+ "matrice_20": [
+  {
+   "rang": 1,
+   "rubrique": "Question clinique et enjeu pour l’examen fédéral",
+   "statut": "couvert",
+   "ancre": "g73-0 (vignette, trois questions)"
+  },
+  {
+   "rang": 2,
+   "rubrique": "Définition et périmètre CIM-10-GM",
+   "statut": "partiel",
+   "ancre": "g73-1 ; forme non tumorale hors G73.1* non signalée (C07)"
+  },
+  {
+   "rang": 3,
+   "rubrique": "Classifications et stades",
+   "statut": "partiel",
+   "ancre": "g73-1 (deux familles), g73-14 (PNS-Care sans grille, C24)"
+  },
+  {
+   "rang": 4,
+   "rubrique": "Épidémiologie suisse puis européenne",
+   "statut": "partiel",
+   "ancre": "g73-2 ; aucune donnée suisse, incidence absente (C22)"
+  },
+  {
+   "rang": 5,
+   "rubrique": "Normal → pathologique",
+   "statut": "couvert",
+   "ancre": "g73-3, g73-s-physio, g73-s-elec"
+  },
+  {
+   "rang": 6,
+   "rubrique": "Étiologies et facteurs de risque",
+   "statut": "couvert",
+   "ancre": "g73-2, g73-5 à g73-8, g73-10.2"
+  },
+  {
+   "rang": 7,
+   "rubrique": "Anamnèse et symptômes (fréquences)",
+   "statut": "partiel",
+   "ancre": "g73-4 ; fréquences par symptôme absentes alors que S4 Table 1 les donne (C01)"
+  },
+  {
+   "rang": 8,
+   "rubrique": "Examen clinique (signes, sensibilité/spécificité)",
+   "statut": "partiel",
+   "ancre": "g73-4, fenêtre g73-facilitation ; technique et valeur absentes (C01, C25)"
+  },
+  {
+   "rang": 9,
+   "rubrique": "Drapeaux rouges et urgences",
+   "statut": "partiel",
+   "ancre": "g73-11 ; atropine, déclaration suisse, potassium, drapeaux de rhabdomyolyse absents (C04, C05, C08, C09)"
+  },
+  {
+   "rang": 10,
+   "rubrique": "Examens complémentaires",
+   "statut": "couvert",
+   "ancre": "g73-e-1 à g73-e-6 ; technique non décrite (C21)"
+  },
+  {
+   "rang": 11,
+   "rubrique": "Diagnostic différentiel",
+   "statut": "partiel",
+   "ancre": "g73-9 ; myasthénie sans discriminant (C10)"
+  },
+  {
+   "rang": 12,
+   "rubrique": "Prise en charge suisse (FI datées)",
+   "statut": "partiel",
+   "ancre": "g73-12, g73-p-1 à g73-p-6 ; FI lues, points décisionnels omis (C03, C15, C16, C17)"
+  },
+  {
+   "rang": 13,
+   "rubrique": "Complications et pronostic",
+   "statut": "couvert",
+   "ancre": "g73-13 (S6 vérifié)"
+  },
+  {
+   "rang": 14,
+   "rubrique": "Suivi, prévention, dépistage",
+   "statut": "couvert",
+   "ancre": "g73-10.3, g73-13.1, g73-e-4"
+  },
+  {
+   "rang": 15,
+   "rubrique": "Situations particulières",
+   "statut": "couvert",
+   "ancre": "g73-13.2 (rein, foie, grossesse, enfant, NAT2)"
+  },
+  {
+   "rang": 16,
+   "rubrique": "Spécificités suisses",
+   "statut": "partiel",
+   "ancre": "indication Swissmedic présente ; LS, conduite, déclaration du botulisme absentes (C08, C23, C27)"
+  },
+  {
+   "rang": 17,
+   "rubrique": "Critères formels du diagnostic (div.alert)",
+   "statut": "couvert",
+   "ancre": "g73-14 div.alert ; grille PNS-Care à ajouter (C24)"
+  },
+  {
+   "rang": 18,
+   "rubrique": "Paramètres clés chiffrés (div.key)",
+   "statut": "couvert",
+   "ancre": "g73-14 div.key ; valeurs recalculées conformes"
+  },
+  {
+   "rang": 19,
+   "rubrique": "Sous-codes CIM-10-GM couverts",
+   "statut": "partiel",
+   "ancre": "G73.0*–G73.7* listés ; G73.0, G73.3, G73.6, G73.7 sans source clinique ; G70.8 non cité (C07)"
+  },
+  {
+   "rang": 20,
+   "rubrique": "Points d’examen fédéral",
+   "statut": "partiel",
+   "ancre": "triade, DELTA-P, incrément présents ; différentiel myasthénie absent (C10)"
+  }
+ ],
+ "rubrique_21": {
+  "rubrique": "Sémiologie fondamentale et analytique",
+  "statut": "absent",
+  "constat_id": "C01"
+ },
+ "semiologie": {
+  "statut": "absente",
+  "decompte_data_s": 4,
+  "data_s": [
+   "g73-s-physio",
+   "g73-s-immu",
+   "g73-s-elec",
+   "g73-s-bioch"
+  ],
+  "sous_onglet_semio": false,
+  "gravite": "MAJEUR",
+  "bloquant_cloture_cours_et_lot": true,
+  "constat_id": "C01",
+  "fondamentale": {
+   "statut": "partielle dans l’onglet 1, absente comme discipline",
+   "ancres": [
+    "g73-0",
+    "g73-4",
+    "g73-facilitation",
+    "g73-deltap"
+   ],
+   "manques": "technique par signe, normal, fréquence par symptôme (disponible dans S4 Table 1), valeur de la facilitation (S18), pièges"
+  },
+  "analytique": {
+   "statut": "absente",
+   "ancres": [],
+   "manques": "regroupement syndromique, raisonnement en cinq étapes, examen systématique, synthèse présentée, cas corrigés, différentiel myasthénie"
+  },
+  "grille_SEM": {
+   "SEM-01": "non",
+   "SEM-02": "non",
+   "SEM-03": "non (audit_sciences en échec, C02)",
+   "SEM-04": "oui (test_v7 --static OK pour l’existant)",
+   "SEM-05": "non",
+   "SEM-06": "non",
+   "SEM-07": "partiel",
+   "SEM-08": "non",
+   "SEM-09": "non",
+   "SEM-10": "partiel (g73-4 div.trap)",
+   "SEM-11": "non",
+   "SEM-12": "non",
+   "SEM-13": "partiel (g73-11 sans atropine)",
+   "SEM-14": "non (C10)",
+   "SEM-15": "non",
+   "SEM-16": "non",
+   "SEM-17": "non",
+   "SEM-18": "non applicable",
+   "SEM-19": "oui pour l’existant",
+   "SEM-20": "non (C19)",
+   "SEM-21": "sans objet",
+   "SEM-22": "non vérifiable sans sous-onglet",
+   "SEM-23": "non (aucune capture)",
+   "SEM-24": "oui"
+  },
+  "proposition": [
+   "propositions/G73_c_semio.html",
+   "propositions/G73_pop_semio.html"
+  ],
+  "sources_semiologie": [
+   "S3",
+   "S4",
+   "S5",
+   "S7",
+   "S15",
+   "S16",
+   "S17",
+   "S18",
+   "S19",
+   "S24",
+   "S26",
+   "S30",
+   "S32"
+  ],
+  "lacune": "aucune source universitaire suisse ou européenne de sémiologie neuromusculaire lue ; S18 est une revue d’un auteur américain, utilisée pour la description, sans seuil décisionnel"
+ },
+ "figures": [
+  {
+   "ancre": "aria-label=\"Chaîne de la transmission neuromusculaire\"",
+   "fichier": "chapters/G73/G73_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "5 boîtes ; texte 12,8 px à 390 px, sans dépassement ; dernier libellé ambigu (C20)"
+  },
+  {
+   "ancre": "aria-label=\"Calcul de l’incrément\"",
+   "fichier": "chapters/G73/G73_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "formule exacte (S5) ; sans dépassement"
+  },
+  {
+   "ancre": "aria-label=\"Myopathie cortisonique\"",
+   "fichier": "chapters/G73/G73_c.html",
+   "classe": "SCHEMA_NON_ANATOMIQUE",
+   "verification": "dépassement de la deuxième ligne (C20)",
+   "constat_id": "C20"
+  }
+ ],
+ "figures_synthese": {
+  "total": 3,
+  "ANATOMIQUE_IA": 0,
+  "ORIGINE_INCONNUE": 0,
+  "SCHEMA_NON_ANATOMIQUE": 3,
+  "IMAGE_SOURCEE": 0,
+  "methode": "python3 tools/image_clo_finder.py inventory G73 ; lecture du SVG ; mesure Chromium à 390 px"
+ },
+ "verifications_conformes": [
+  "Critères PNS-Care : SMLE phénotype à haut risque ; défini ≥ 8 ; exemples 6, 9, 5 recalculés [S3]",
+  "DELTA-P : risques 0 ; 18,8 ; 45 ; 55,5 ; 85,7 ; 87,5 ; 100 % ; aire 82,5 % ; 84,5 % à cinq items ; patient à 1 point et CBPC à 25 mois [S4]",
+  "Calendrier TEP-TDM selon DELTA-P et cinétique 91 % / 98 % (40/44, 43/44) [S4]",
+  "Incrément : 156 patients, 63 SMLE ; 77,8 % (49/63), 98,9 % (92/93), 58,7 % (37/63) ; exemples (3,6 − 2,0) ÷ 2,0, (2,7 − 1,5) ÷ 1,5 et (4,5 − 2,5) ÷ 2,5 = 80 % [S5]",
+  "Survie 17 contre 7,0 mois ; 62 % (39/63) puis 85 % autonomes ; SF-36 physique 55,9 contre 76,3 [S6]",
+  "Leiden : 70 patients, 66 % de femmes, 54 ans, 77 % non tumoraux, 91 % sous amifampridine à 6 mois, 57 %, 58 %, 7 %, 81 % [S7]",
+  "Cochrane : 4 essais, 54 participants, QMG 2,44 (IC imprimé 3,6–1,22), PAMC 1,36 mV (0,99–1,72) ; IVIg 9 participants, 8 semaines [S10]",
+  "Méta-analyse 2021 : 6 essais, 115 patients, QMG −2,76, PAMC +1,34 mV [S11]",
+  "Firdapse® : 15 mg/j, paliers de 5 mg tous les 4–5 j, 60 mg/j, dose unique ≤ 20 mg, 80 mg/j par paliers de 7 j ; insuffisance légère 10 mg/j, modérée à sévère 5 mg/j ; contre-indications ; demi-vie 2,5 h et 4 h ; 93–100 % urinaire [S16]",
+  "Mestinon® : indications, contre-indications, demi-vie 1,5 h, 75–81 % rénal inchangé [S17]",
+  "Prévalence 0,3/100 000 [S8] ; 1 sur 300 et 1,6–8,9 par million [S3] ; SOX2 61 %, spécificité > 90 % [S14] ; trichinellose 65 818 cas, 42 décès, 41 pays, 261 rapports [S13]",
+  "CIM-10-GM 2024 : huit sous-catégories G73 et codes † conformes [S1]"
+ ],
+ "lacunes": [
+  "Aucune recommandation suisse ni européenne spécifique du SMLE trouvée (WebSearch « Lambert-Eaton Swiss Medical Forum OR Revue Médicale Suisse » sans résultat suisse) ; les sources de conduite restent des cohortes néerlandaises et britanniques et les FI suisses.",
+  "Codage de la forme non tumorale : G70.8 lu dans une republication non officielle de l’index 2026 (icd-code.de) ; l’index alphabétique officiel BfArM 2024 n’a pas été lu.",
+  "Paralysie périodique thyréotoxique : aucune source suisse ou européenne de conduite ; seules deux observations (Japon, Taïwan) étayent la prudence de correction et le bêtabloquant ; aucune dose de potassium n’est proposée.",
+  "Revue Cochrane 2011 : texte intégral inaccessible (Europe PMC erreur 500) ; résumé PubMed lu.",
+  "Registre néerlando-belge (S9) : résumé seul ; dénominateur des 38 % inconnu.",
+  "Lipka 2024 (Handb Clin Neurol), Tawara 2025, Onishi 2025, Solé 2026, Shi 2022 : résumés seuls.",
+  "Aucune source universitaire suisse ou européenne de sémiologie neuromusculaire lue ; la valeur de la facilitation vient d’une revue d’un auteur américain (descriptive).",
+  "Captures réelles (SEM-22, SEM-23) non réalisées : aucun sous-onglet à capturer ; la mesure SVG a utilisé la police de repli de Chromium (Atkinson Hyperlegible non installée).",
+  "G73.0*, G73.3*, G73.6*, G73.7* : aucune source clinique recherchée au-delà de la classification dans cet audit (périmètre identique au cours).",
+  "Recalculs : 417 grandeurs calculables sur 417 rattachées à une règle et recalculées ; aucune occurrence non rattachée. L’audit des calculs est clos."
+ ],
+ "propositions": [
+  "G73_a_codage_differentiel.html",
+  "G73_b_scores.html",
+  "G73_b_urgences.html",
+  "G73_c_sciences.html",
+  "G73_c_semio.html",
+  "G73_corrections_chiffres.html",
+  "G73_d_fi.html",
+  "G73_pop_semio.html"
+ ],
+ "mention": "Audit IA — revue distincte d’une validation médicale humaine ; aucune source canonique modifiée"
+}

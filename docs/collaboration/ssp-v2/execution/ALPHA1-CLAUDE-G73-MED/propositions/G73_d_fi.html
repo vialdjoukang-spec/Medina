@@ -1,0 +1,32 @@
+<!-- Proposition ALPHA1-CLAUDE-G73-MED : pharmacologie selon les informations professionnelles suisses lues le 16.10.2026.
+     C15 (MINEUR) prises de 15 mg ; C16 (MAJEUR) points décisionnels omis de la FI Firdapse® ; C17 (MINEUR) FI Mestinon® ;
+     C23 (ENRICHISSEMENT) liste des spécialités et coût ; C27 (ENRICHISSEMENT) aptitude à la conduite.
+     Cibles : G73_d.html (g73-p-2, g73-p-3, g73-p-6), G73_pop2.html (g73-firdapse-poso, g73-firdapse-ci, g73-firdapse-ei, g73-mestinon), G73_pop1.html (g73-lacunes).
+     Calculs (prises, paliers, coût journalier) : calculs/verifier.py, clés firdapse_*. Références [Sx] : sources.json de ce dossier. -->
+
+<!-- C15 — g73-p-2, tableau, ligne « Adulte standard ».
+ANCIEN : <td>15 mg/jour en 3 ou 4 prises avec les repas</td>
+NOUVEAU : -->
+<td>15 mg/jour, soit 5 mg (un demi-comprimé à 10 mg sécable) trois fois par jour avec les repas ; la répartition en quatre prises devient possible à partir de 20 mg/jour [S16]</td>
+<!-- même précision dans la fenêtre g73-firdapse-poso : « Dose de départ de 15 mg par jour en 3 ou 4 prises avec les repas. » →
+     « Dose de départ de 15 mg par jour, soit 5 mg trois fois par jour avec les repas (comprimé à 10 mg sécable en deux moitiés égales). » -->
+
+<!-- C16 — g73-p-2 : ajouter après le paragraphe « Plusieurs précautions découlent du mécanisme… » : -->
+<p>Quatre consignes de l’information suisse complètent ces précautions [S16]. En cas de crise convulsive, le traitement doit être interrompu. Les médicaments cholinergiques, dont les inhibiteurs de la cholinestérase comme la pyridostigmine, augmentent l’effet des deux produits : l’association, fréquente dans le SMLE, doit être prise en compte. Les myorelaxants dépolarisants (suxaméthonium) et non dépolarisants réduisent l’effet des deux produits, ce que l’anesthésiste doit savoir. Dans la forme non paranéoplasique, l’amifampridine ne s’envisage qu’après une évaluation complète du rapport bénéfice-risque, en raison des schwannomes observés chez le rat. La dépendance à la dose se vérifie en pratique : à Leiden, la seule crise convulsive rapportée est survenue à 120 mg/jour, au-delà du plafond suisse de 80 mg/jour, et n’a pas récidivé après réduction [S7].</p>
+<!-- et, dans la fenêtre g73-firdapse-ei, compléter la ligne « Très fréquents » : « … nausées, hyperhidrose, sueurs froides, hypoesthésie et paresthésies buccales » ;
+     ligne « Fréquence inconnue » : « … convulsions, chorée, myoclonies, somnolence, vision floue, troubles du rythme, palpitations, syndrome de Raynaud, crise d’asthme, élévation des transaminases » [S16]. -->
+
+<!-- C27 — g73-p-2 (fin) et fenêtre g73-firdapse-ci : -->
+<div class="key"><b>Aptitude à la conduite.</b> Somnolence, vertiges, crises d’épilepsie et vision floue sous amifampridine peuvent diminuer l’aptitude à conduire ou à utiliser des machines [S16]. Sous pyridostigmine, un myosis ou un trouble de l’accommodation peut aussi l’altérer [S17]. Le médecin en informe le patient.</div>
+
+<!-- C17 — g73-p-3, tableau, ligne « Prudence », et fenêtre g73-mestinon.
+ANCIEN : <td>Asthme, BPCO, bradycardie, bloc auriculo-ventriculaire, insuffisance cardiaque décompensée, hypotension, ulcère, épilepsie, parkinsonisme, hyperthyroïdie</td>
+NOUVEAU : -->
+<td>Asthme et BPCO (très grande prudence), bradycardie, bloc auriculo-ventriculaire, insuffisance cardiaque décompensée, occlusion coronaire récente, hypotension, vagotonie, affections rénales, ulcère gastroduodénal, intervention gastro-intestinale, épilepsie, syndrome parkinsonien, hyperthyroïdie, diabète sucré [S17]</td>
+<!-- ligne « Cinétique » : ajouter « En insuffisance rénale, la demi-vie peut être multipliée jusqu’à quatre et la dose doit parfois être réduite [S17]. »
+     paragraphe d’indication : « … retient l’atonie intestinale, la constipation atonique et la myasthénie grave » →
+     « … retient l’atonie intestinale, la constipation atonique et la myasthénie grave pour les comprimés et dragées, la seule myasthénie grave pour Mestinon retard® » [S17]. -->
+
+<!-- C23 — g73-p-6, div.alert « Lacunes à connaître » : retirer « Le remboursement de Firdapse® par la liste des spécialités n’est pas vérifié. » et ajouter après le div.alert : -->
+<div class="key"><b>Remboursement et coût.</b> Firdapse® (100 comprimés à 10 mg) figure sur la liste des spécialités, catégorie de remise B, au prix public de 1567,25 francs [S16]. À la dose de 60 mg/jour, soit 6 comprimés, une boîte dure environ 17 jours et le traitement coûte environ 94 francs par jour, soit environ 2820 francs par mois de 30 jours. Ce coût justifie de vérifier régulièrement l’efficacité clinique et électrophysiologique, comme le demande l’information suisse [S16].</div>
+<!-- même suppression dans la fenêtre g73-lacunes : « le remboursement de Firdapse® » est retiré de « Ce qui manque ». -->

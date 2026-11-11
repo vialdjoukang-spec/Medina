@@ -1,0 +1,28 @@
+<!-- Proposition ALPHA1-CLAUDE-G73-MED, constats C06 (MAJEUR) et C24 (ENRICHISSEMENT) : scores DELTA-P et PNS-Care.
+     Cibles : îlot g73-10 (G73_b.html, sous-partie 10.2), fenêtre g73-deltap (G73_pop1.html), div.alert de g73-14 (G73_b.html),
+     div.alert g73-p-6 (G73_d.html : retirer « Le score DELTA-P n’est pas lu… les tableaux PNS-Care ne sont pas restitués »).
+     Toutes les sommes sont recalculées par calculs/verifier.py (clés pns_*, deltap_*). Références [Sx] : sources.json de ce dossier. -->
+
+<!-- (1) g73-10, 10.2 : remplacer la dernière phrase « Le dossier ne donne ni la pondération exacte des items, ni le seuil du Karnofsky. » par : -->
+<p>Chaque item vaut un point, ce qui donne un score de 0 à 6 ; les items se relèvent dans les trois premiers mois après le début des symptômes [S4]. Le tableau suivant donne les six items tels que la cohorte prospective les définit.</p>
+<table class="t"><thead><tr><th>Lettre</th><th>Item (1 point s’il est présent)</th><th>Avec cancer / sans cancer (S4)</th></tr></thead><tbody>
+<tr><td>D</td><td>Symptômes bulbaires ou cervicaux</td><td>55 % / 26 %</td></tr>
+<tr><td>E</td><td>Dysfonction érectile (coté 0 chez la femme)</td><td>56 % / 47 % des hommes</td></tr>
+<tr><td>L</td><td>Perte de poids d’au moins 5 %</td><td>61 % / 19 %</td></tr>
+<tr><td>T</td><td>Tabagisme au début du syndrome</td><td>66 % / 16 %</td></tr>
+<tr><td>A</td><td>Âge de début d’au moins 50 ans</td><td>91 % / 70 %</td></tr>
+<tr><td>P</td><td>Indice de Karnofsky inférieur à 70</td><td>52 % / 23 %</td></tr>
+</tbody></table>
+<p>Le tableau se lit item par item. Le tabagisme et la perte de poids séparent le mieux les deux groupes ; l’âge, présent chez 70 % des patients sans cancer, sépare peu à lui seul, ce qui explique qu’un score élevé exige l’association de plusieurs items. Exemple : l’homme de 61 ans de la question clinique (îlot 0) fume et a perdu 6 % de son poids en trois mois ; il cumule au moins trois points (A, T, L). Son risque est d’au moins 55,5 %, et le calendrier prévoit une TEP-TDM au diagnostic, à 3 mois puis tous les 6 mois pendant 2 ans [S4].</p>
+
+<!-- (2) fenêtre g73-deltap : remplacer le bloc « Limite » par : -->
+<div class="lab">Calcul</div><p>Un point par item présent dans les trois premiers mois : D symptômes bulbaires, E dysfonction érectile (0 chez la femme), L perte de poids ≥ 5 %, T tabagisme au début, A âge de début ≥ 50 ans, P Karnofsky &lt; 70 [S4].</p><div class="lab">Limite</div><p>Un patient à score 1 a eu son CBPC 25 mois après le diagnostic : le score ne s’emploie pas seul. La cohorte prospective comptait moins de patients à faible risque que l’étude initiale (18,8 % contre 35 % à 0 ou 1 point) [S4].</p>
+
+<!-- (3) g73-14 : ajouter dans le div.alert, après « Exemples publiés : … = 5 (possible). », la grille : -->
+<table class="t"><thead><tr><th>Niveau du score PNS-Care</th><th>Points</th></tr></thead><tbody>
+<tr><td>Phénotype à haut risque (dont le SMLE) / à risque intermédiaire / sans association</td><td>3 / 2 / 0</td></tr>
+<tr><td>Anticorps à haut risque (cancer &gt; 70 %) / à risque intermédiaire (30–70 %, dont P/Q VGCC) / faible ou négatif</td><td>3 / 2 / 0</td></tr>
+<tr><td>Cancer trouvé et concordant / non trouvé avec suivi &lt; 2 ans / non trouvé avec suivi ≥ 2 ans</td><td>4 / 1 / 0</td></tr>
+<tr><td>Défini / probable / possible / non paranéoplasique</td><td>≥ 8 / 6–7 / 4–5 / ≤ 3</td></tr>
+</tbody></table>
+<p>La grille permet de refaire les exemples : SMLE (3) avec anticorps P/Q VGCC (2) sans cancer à un suivi de moins de 2 ans (1) donne 6 ; un CBPC trouvé à 18 mois remplace le 1 par 4 et donne 9 ; l’absence de cancer après plus de 2 ans remplace le 1 par 0 et donne 5. Sans cancer, le maximum est 7 : c’est pourquoi le niveau « défini » exige un cancer [S3]. Les anticorps P/Q VGCC sont classés à risque intermédiaire parce qu’environ 50 % des SMLE ont un cancer [S3].</p>
